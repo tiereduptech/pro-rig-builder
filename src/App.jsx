@@ -81,7 +81,19 @@ const SF={cores:(v,p)=>p&&p.threads?v+"C/"+p.threads+"T":v+"C",sticks:(v,p)=>{if
 const fmt=(k,v,p)=>v==null?"—":(SF[k]?SF[k](v,p):String(v));
 
 // ── Map old category names and make all parts available ──
-const P = SEED_PARTS.map(p => p.c === "Cooler" ? {...p, c: "CPUCooler"} : p);
+// Filter: Option A strict — hide products where all known retailers report inStock:false.
+// Products with no `deals` object (legacy entries not yet processed by verify-asins.js)
+// remain visible so the catalog doesn't shrink during the migration period.
+// fp() below falls back to SEED_PARTS, so filtered products in existing community builds still render.
+const isAvailable = p => {
+  if (!p.deals || typeof p.deals !== "object") return true;
+  const retailerKeys = Object.keys(p.deals).filter(k => p.deals[k] && typeof p.deals[k] === "object" && p.deals[k].price);
+  if (!retailerKeys.length) return true;
+  return retailerKeys.some(k => p.deals[k].inStock !== false);
+};
+const P = SEED_PARTS
+  .map(p => p.c === "Cooler" ? {...p, c: "CPUCooler"} : p)
+  .filter(isAvailable);
 
 // ── Price helpers — handles new multi-retailer deals structure ──
 const bestPrice = p => {
