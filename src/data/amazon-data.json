@@ -1,0 +1,2282 @@
+{
+  "AMD Ryzen 9 9950X": {
+    "asin": "B0D6NNRBGP",
+    "image": "https://m.media-amazon.com/images/I/61dukbEGziL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 9 9900X": {
+    "asin": "B0D6NN87T8",
+    "image": "https://m.media-amazon.com/images/I/61dukbEGziL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 9700X": {
+    "asin": "B0D6NMDNNX",
+    "image": "https://m.media-amazon.com/images/I/61F3ZChalyL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 5 9600X": {
+    "asin": "B0D6NN6TM7",
+    "image": "https://m.media-amazon.com/images/I/61RfWUr4kvL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 9 9950X3D": {
+    "asin": "B0DVZSG8D5",
+    "image": "https://m.media-amazon.com/images/I/71hZfMZNZuL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 9 9900X3D": {
+    "asin": "B0DWGWN8GY",
+    "image": "https://m.media-amazon.com/images/I/51iH16H8wgL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 9800X3D": {
+    "asin": "B0DKFMSMYK",
+    "image": "https://m.media-amazon.com/images/I/71aHvYUgX1L._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 8700G": {
+    "asin": "B0CQ4JBKW3",
+    "image": "https://m.media-amazon.com/images/I/61nRX0W6fhL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 5 8600G": {
+    "asin": "B0CQ4GYTTX",
+    "image": "https://m.media-amazon.com/images/I/615TPN-DayL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 5 8500G": {
+    "asin": "B0CQ4JV8D5",
+    "image": "https://m.media-amazon.com/images/I/51193NWpmHL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 3 8300G": {
+    "asin": "B07STGHZK8",
+    "image": "https://m.media-amazon.com/images/I/81DdgQpbMqL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 9 7950X": {
+    "asin": "B0BBHD5D8Y",
+    "image": "https://m.media-amazon.com/images/I/5116zdA9uyL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 9 7950X3D": {
+    "asin": "B0BTRH9MNS",
+    "image": "https://m.media-amazon.com/images/I/51jNS8epPeL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 9 7900X": {
+    "asin": "B0BBJ59WJ4",
+    "image": "https://m.media-amazon.com/images/I/51OEiWrUtqL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 9 7900X3D": {
+    "asin": "B0BTRRNK7T",
+    "image": "https://m.media-amazon.com/images/I/51xW-O-H5gL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 9 7900": {
+    "asin": "B0BBJ59WJ4",
+    "image": "https://m.media-amazon.com/images/I/51OEiWrUtqL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 7800X3D": {
+    "asin": "B0BTZB7F88",
+    "image": "https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 7700X": {
+    "asin": "B0BBHHT8LY",
+    "image": "https://m.media-amazon.com/images/I/51hfER1cZVL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 7700": {
+    "asin": "B0BBHHT8LY",
+    "image": "https://m.media-amazon.com/images/I/51hfER1cZVL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 5 7600X": {
+    "asin": "B0BBJDS62N",
+    "image": "https://m.media-amazon.com/images/I/51m7L9bQI8L._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 5 7600": {
+    "asin": "B0BBJDS62N",
+    "image": "https://m.media-amazon.com/images/I/51m7L9bQI8L._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 5 7500F": {
+    "asin": "B0D1CK42PV",
+    "image": "https://m.media-amazon.com/images/I/71SwhaQlpAL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 9 5950X": {
+    "asin": "B0815Y8J9N",
+    "image": "https://m.media-amazon.com/images/I/61ISSSA+x+L._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 9 5900X": {
+    "asin": "B0D6NMCZG1",
+    "image": "https://m.media-amazon.com/images/I/51cCp1eCm5L._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 9 5900": {
+    "asin": "B0D6NMCZG1",
+    "image": "https://m.media-amazon.com/images/I/51cCp1eCm5L._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 5800X": {
+    "asin": "B0815XFSGK",
+    "image": "https://m.media-amazon.com/images/I/61IIbwz-+ML._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 5800X3D": {
+    "asin": "B0D6NNDQ92",
+    "image": "https://m.media-amazon.com/images/I/51kIHB4GNYL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 5800": {
+    "asin": "B0815XFSGK",
+    "image": "https://m.media-amazon.com/images/I/61IIbwz-+ML._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 5700X": {
+    "asin": "B09VCHQHZ6",
+    "image": "https://m.media-amazon.com/images/I/51gRv8z+K6L._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 5700X3D": {
+    "asin": "B09VCHQHZ6",
+    "image": "https://m.media-amazon.com/images/I/51gRv8z+K6L._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 5700": {
+    "asin": "B0CQ4HPJYV",
+    "image": "https://m.media-amazon.com/images/I/71jxHGiiiNL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 5 5600X": {
+    "asin": "B08166SLDF",
+    "image": "https://m.media-amazon.com/images/I/51ld6RR8IrL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 5 5600": {
+    "asin": "B09VCHR1VH",
+    "image": "https://m.media-amazon.com/images/I/51So7GoGvxL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 5 5500": {
+    "asin": "B09VCJ171S",
+    "image": "https://m.media-amazon.com/images/I/51So7GoGvxL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 5 5600G": {
+    "asin": "B092L9GF5N",
+    "image": "https://m.media-amazon.com/images/I/51f2hkWjTlL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 5700G": {
+    "asin": "B091J3NYVF",
+    "image": "https://m.media-amazon.com/images/I/51D3DrDmwkL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 3 5300G": {
+    "asin": "B09VCJ171S",
+    "image": "https://m.media-amazon.com/images/I/51So7GoGvxL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 9 3950X": {
+    "asin": "B07ZTYKLZW",
+    "image": "https://m.media-amazon.com/images/I/7122uH4-hfL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 9 3900X": {
+    "asin": "B07SXMZLP9",
+    "image": "https://m.media-amazon.com/images/I/71ZANS0SSDL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 3800X": {
+    "asin": "B07SXMZLPJ",
+    "image": "https://m.media-amazon.com/images/I/71pKM87P6nL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 7 3700X": {
+    "asin": "B07SXMZLPK",
+    "image": "https://m.media-amazon.com/images/I/61wZ8-ijoWL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 5 3600": {
+    "asin": "B09VCJ171S",
+    "image": "https://m.media-amazon.com/images/I/51So7GoGvxL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 5 3600X": {
+    "asin": "B09VCJ171S",
+    "image": "https://m.media-amazon.com/images/I/51So7GoGvxL._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 3 3300X": {
+    "asin": "B0876YS2T4",
+    "image": "https://m.media-amazon.com/images/I/61L6qbhLx0L._AC_SL300_.jpg"
+  },
+  "AMD Ryzen 3 3100": {
+    "asin": "B0876Y2TMZ",
+    "image": "https://m.media-amazon.com/images/I/61L6qbhLx0L._AC_SL300_.jpg"
+  },
+  "Intel Core Ultra 9 285K": {
+    "asin": "B0DFKC99VL",
+    "image": "https://m.media-amazon.com/images/I/51xxm7JkJ6L._AC_SL300_.jpg"
+  },
+  "Intel Core Ultra 7 265K": {
+    "asin": "B0DFK2MH2D",
+    "image": "https://m.media-amazon.com/images/I/51gf0NAUHkL._AC_SL300_.jpg"
+  },
+  "Intel Core Ultra 7 265KF": {
+    "asin": "B0DFK2WHF8",
+    "image": "https://m.media-amazon.com/images/I/513c8GtpBBL._AC_SL300_.jpg"
+  },
+  "Intel Core Ultra 5 245K": {
+    "asin": "B0DFK2P311",
+    "image": "https://m.media-amazon.com/images/I/51vTDOi0KCL._AC_SL300_.jpg"
+  },
+  "Intel Core Ultra 5 245KF": {
+    "asin": "B0DFK8HHK4",
+    "image": "https://m.media-amazon.com/images/I/51ppFJC5HWL._AC_SL300_.jpg"
+  },
+  "Intel Core i9-14900K": {
+    "asin": "B0CGJDKLB8",
+    "image": "https://m.media-amazon.com/images/I/619ytLAytAL._AC_SL300_.jpg"
+  },
+  "Intel Core i9-14900KF": {
+    "asin": "B0CGJDBCTK",
+    "image": "https://m.media-amazon.com/images/I/51Ekrj4Mj8L._AC_SL300_.jpg"
+  },
+  "Intel Core i9-14900": {
+    "asin": "B0CGJDKLB8",
+    "image": "https://m.media-amazon.com/images/I/619ytLAytAL._AC_SL300_.jpg"
+  },
+  "Intel Core i9-14900F": {
+    "asin": "B0CQ1FC8WZ",
+    "image": "https://m.media-amazon.com/images/I/61V7UZLVhqL._AC_SL300_.jpg"
+  },
+  "Intel Core i7-14700K": {
+    "asin": "B0CQ1P2TRN",
+    "image": "https://m.media-amazon.com/images/I/51EL514uLrL._AC_SL300_.jpg"
+  },
+  "Intel Core i7-14700KF": {
+    "asin": "B0CQ1P2TRN",
+    "image": "https://m.media-amazon.com/images/I/51EL514uLrL._AC_SL300_.jpg"
+  },
+  "Intel Core i7-14700": {
+    "asin": "B0CQ1P2TRN",
+    "image": "https://m.media-amazon.com/images/I/51EL514uLrL._AC_SL300_.jpg"
+  },
+  "Intel Core i7-14700F": {
+    "asin": "B0CQ1P2TRN",
+    "image": "https://m.media-amazon.com/images/I/51EL514uLrL._AC_SL300_.jpg"
+  },
+  "Intel Core i5-14600K": {
+    "asin": "B0CGJ4MLC8",
+    "image": "https://m.media-amazon.com/images/I/61DK+cQvKOL._AC_SL300_.jpg"
+  },
+  "Intel Core i5-14600KF": {
+    "asin": "B0CGJ4MLC8",
+    "image": "https://m.media-amazon.com/images/I/61DK+cQvKOL._AC_SL300_.jpg"
+  },
+  "Intel Core i5-14600": {
+    "asin": "B0CGJ4MLC8",
+    "image": "https://m.media-amazon.com/images/I/61DK+cQvKOL._AC_SL300_.jpg"
+  },
+  "Intel Core i5-14500": {
+    "asin": "B0CQ27H8VY",
+    "image": "https://m.media-amazon.com/images/I/61LuKyXGbKL._AC_SL300_.jpg"
+  },
+  "Intel Core i5-14400": {
+    "asin": "B0CQ1M1YXM",
+    "image": "https://m.media-amazon.com/images/I/61LuKyXGbKL._AC_SL300_.jpg"
+  },
+  "Intel Core i5-14400F": {
+    "asin": "B0GR95TBL7",
+    "image": "https://m.media-amazon.com/images/I/61IgclF1FEL._AC_SL300_.jpg"
+  },
+  "Intel Core i3-14100": {
+    "asin": "B0CQ1S3L53",
+    "image": "https://m.media-amazon.com/images/I/61kohX2+keL._AC_SL300_.jpg"
+  },
+  "Intel Core i3-14100F": {
+    "asin": "B0CQ1MN1Y2",
+    "image": "https://m.media-amazon.com/images/I/61ust7LcxQL._AC_SL300_.jpg"
+  },
+  "Intel Core i9-13900K": {
+    "asin": "B0BCF54SR1",
+    "image": "https://m.media-amazon.com/images/I/61My4F2-XUL._AC_SL300_.jpg"
+  },
+  "Intel Core i9-13900KF": {
+    "asin": "B0BCFM3CJ4",
+    "image": "https://m.media-amazon.com/images/I/61-+pgXU1vL._AC_SL300_.jpg"
+  },
+  "Intel Core i7-13700K": {
+    "asin": "B0CGJ41C9W",
+    "image": "https://m.media-amazon.com/images/I/61aAAg73uLL._AC_SL300_.jpg"
+  },
+  "Intel Core i7-13700KF": {
+    "asin": "B0BCDL7F5W",
+    "image": "https://m.media-amazon.com/images/I/61IUbGdPo6L._AC_SL300_.jpg"
+  },
+  "Intel Core i5-13600K": {
+    "asin": "B0BCDR9M33",
+    "image": "https://m.media-amazon.com/images/I/61lNEpDfdcL._AC_SL300_.jpg"
+  },
+  "Intel Core i5-13600KF": {
+    "asin": "B0BCF5CZ16",
+    "image": "https://m.media-amazon.com/images/I/61LzzuUNhKL._AC_SL300_.jpg"
+  },
+  "Intel Core i5-13500": {
+    "asin": "B0BQ6CFDCX",
+    "image": "https://m.media-amazon.com/images/I/61zccOnimHL._AC_SL300_.jpg"
+  },
+  "Intel Core i5-13400": {
+    "asin": "B0BQ68QB6R",
+    "image": "https://m.media-amazon.com/images/I/61zccOnimHL._AC_SL300_.jpg"
+  },
+  "Intel Core i5-13400F": {
+    "asin": "B09FXFJW2F",
+    "image": "https://m.media-amazon.com/images/I/51ldM0r7NML._AC_SL300_.jpg"
+  },
+  "Intel Core i3-13100": {
+    "asin": "B0BN5Z8MDR",
+    "image": "https://m.media-amazon.com/images/I/51bTD19mGpL._AC_SL300_.jpg"
+  },
+  "Intel Core i3-13100F": {
+    "asin": "B0BN5ZG6J4",
+    "image": "https://m.media-amazon.com/images/I/41XsVrkh8XL._AC_SL300_.jpg"
+  },
+  "Intel Core i9-12900K": {
+    "asin": "B09FXDLX95",
+    "image": "https://m.media-amazon.com/images/I/51klBAsxGHL._AC_SL300_.jpg"
+  },
+  "Intel Core i9-12900KF": {
+    "asin": "B09FWYK5M9",
+    "image": "https://m.media-amazon.com/images/I/51CUAct4KVL._AC_SL300_.jpg"
+  },
+  "Intel Core i7-12700K": {
+    "asin": "B09FXNVDBJ",
+    "image": "https://m.media-amazon.com/images/I/51NlTpm+7KL._AC_SL300_.jpg"
+  },
+  "Intel Core i7-12700KF": {
+    "asin": "B09FXKHN7M",
+    "image": "https://m.media-amazon.com/images/I/51AqEkc2BuL._AC_SL300_.jpg"
+  },
+  "Intel Core i5-12600K": {
+    "asin": "B09FX4D72T",
+    "image": "https://m.media-amazon.com/images/I/51ugNYlDT1L._AC_SL300_.jpg"
+  },
+  "Intel Core i5-12600KF": {
+    "asin": "B09FXFJW2F",
+    "image": "https://m.media-amazon.com/images/I/51ldM0r7NML._AC_SL300_.jpg"
+  },
+  "Intel Core i5-12400": {
+    "asin": "B09NMPD8V2",
+    "image": "https://m.media-amazon.com/images/I/51V+MalhMHL._AC_SL300_.jpg"
+  },
+  "Intel Core i5-12400F": {
+    "asin": "B09NPJRDGD",
+    "image": "https://m.media-amazon.com/images/I/51EwtPjHkIL._AC_SL300_.jpg"
+  },
+  "Intel Core i3-12100": {
+    "asin": "B09NPHJLPT",
+    "image": "https://m.media-amazon.com/images/I/51Cbvw+ScJL._AC_SL300_.jpg"
+  },
+  "Intel Core i3-12100F": {
+    "asin": "B09NPJX7PV",
+    "image": "https://m.media-amazon.com/images/I/515Tz7tiCyL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9965": {
+    "asin": "B0FJ6L3Y66",
+    "image": "https://m.media-amazon.com/images/I/51ZlohJq4mL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9755": {
+    "asin": "B0CT6DDDLQ",
+    "image": "https://m.media-amazon.com/images/I/51J1rnDqZ7L._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9575F": {
+    "asin": "B0DVZSG8D5",
+    "image": "https://m.media-amazon.com/images/I/71hZfMZNZuL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9555": {
+    "asin": "B0CNHC1G6X",
+    "image": "https://m.media-amazon.com/images/I/61N+OEdVTeL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9475F": {
+    "asin": "B0FMRX1XQS",
+    "image": "https://m.media-amazon.com/images/I/61QAZe-bHNL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9455": {
+    "asin": "B0CNHC1G6X",
+    "image": "https://m.media-amazon.com/images/I/61N+OEdVTeL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9375F": {
+    "asin": "B0C3TJCXYN",
+    "image": "https://m.media-amazon.com/images/I/31KVg-Q3f8L._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9355": {
+    "asin": "B0CFQBLBSM",
+    "image": "https://m.media-amazon.com/images/I/61N+OEdVTeL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9275F": {
+    "asin": "B0B5VK3HVC",
+    "image": "https://m.media-amazon.com/images/I/815vcnYRMQL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9255": {
+    "asin": "B0CJZYRBR1",
+    "image": "https://m.media-amazon.com/images/I/51zjTMdjl7L._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9175F": {
+    "asin": "B0CNHC1G6X",
+    "image": "https://m.media-amazon.com/images/I/61N+OEdVTeL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9115": {
+    "asin": "B0FMRX1XQS",
+    "image": "https://m.media-amazon.com/images/I/61QAZe-bHNL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9654": {
+    "asin": "B0DTCMCRSS",
+    "image": "https://m.media-amazon.com/images/I/31KVg-Q3f8L._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9554": {
+    "asin": "B0CNHC1G6X",
+    "image": "https://m.media-amazon.com/images/I/61N+OEdVTeL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9474F": {
+    "asin": "B0B5VK3HVC",
+    "image": "https://m.media-amazon.com/images/I/815vcnYRMQL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9354": {
+    "asin": "B0CJZYRBR1",
+    "image": "https://m.media-amazon.com/images/I/51zjTMdjl7L._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9254": {
+    "asin": "B0CFQBLBSM",
+    "image": "https://m.media-amazon.com/images/I/61N+OEdVTeL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 9124": {
+    "asin": "B0CFQBLBSM",
+    "image": "https://m.media-amazon.com/images/I/61N+OEdVTeL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 4565P": {
+    "asin": "B0GXB485G5",
+    "image": "https://m.media-amazon.com/images/I/41rNY4dki5L._AC_SL300_.jpg"
+  },
+  "AMD EPYC 4345P": {
+    "asin": "B0GTPZCHHZ",
+    "image": "https://m.media-amazon.com/images/I/51tqggQ-mUL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 4364P": {
+    "asin": "B0FMRY71JH",
+    "image": "https://m.media-amazon.com/images/I/61QAZe-bHNL._AC_SL300_.jpg"
+  },
+  "AMD EPYC 4245P": {
+    "asin": "B0FTB8N35Z",
+    "image": "https://m.media-amazon.com/images/I/51tqggQ-mUL._AC_SL300_.jpg"
+  },
+  "Intel Xeon w9-3595X": {
+    "asin": "B0BYSVKFCR",
+    "image": "https://m.media-amazon.com/images/I/51TYvm3N64L._AC_SL300_.jpg"
+  },
+  "Intel Xeon w9-3545": {
+    "asin": "B09DVNYNDG",
+    "image": "https://m.media-amazon.com/images/I/61AUFswBnDL._AC_SL300_.jpg"
+  },
+  "Intel Xeon w9-3495X": {
+    "asin": "B08585WQ23",
+    "image": "https://m.media-amazon.com/images/I/81eoV5SY8RL._AC_SL300_.jpg"
+  },
+  "Intel Xeon w7-3465X": {
+    "asin": "B0BYSVKFCR",
+    "image": "https://m.media-amazon.com/images/I/51TYvm3N64L._AC_SL300_.jpg"
+  },
+  "Intel Xeon w7-2495X": {
+    "asin": "B01DTYQH4G",
+    "image": "https://m.media-amazon.com/images/I/618BDFLRn3L._AC_SL300_.jpg"
+  },
+  "Intel Xeon w5-3435X": {
+    "asin": "B0C4PZJ71R",
+    "image": "https://m.media-amazon.com/images/I/41Dio7xbdOL._AC_SL300_.jpg"
+  },
+  "Intel Xeon w5-2465X": {
+    "asin": "B0C4PZJ71R",
+    "image": "https://m.media-amazon.com/images/I/41Dio7xbdOL._AC_SL300_.jpg"
+  },
+  "Intel Xeon w3-2435": {
+    "asin": "B07ZN7B2TT",
+    "image": "https://m.media-amazon.com/images/I/61GLoc-X7yL._AC_SL300_.jpg"
+  },
+  "Intel Xeon w3-2425": {
+    "asin": "B0CY1N6LQX",
+    "image": "https://m.media-amazon.com/images/I/61SCbNwzG9L._AC_SL300_.jpg"
+  },
+  "Intel Xeon 6980P": {
+    "asin": "B0B4ST8L5S",
+    "image": "https://m.media-amazon.com/images/I/51xN6DTyeqL._AC_SL300_.jpg"
+  },
+  "Intel Xeon 6960P": {
+    "asin": "B01DTYQH4G",
+    "image": "https://m.media-amazon.com/images/I/618BDFLRn3L._AC_SL300_.jpg"
+  },
+  "Intel Xeon 6900P": {
+    "asin": "B07H9JSTHG",
+    "image": "https://m.media-amazon.com/images/I/71YXc7h6MrL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 5090": {
+    "asin": "B0DS2WQZ2M",
+    "image": "https://m.media-amazon.com/images/I/811IbTkEvnL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 5080": {
+    "asin": "B0DS2R6948",
+    "image": "https://m.media-amazon.com/images/I/71lZess7M8L._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 5070 Ti": {
+    "asin": "B0DTRC7782",
+    "image": "https://m.media-amazon.com/images/I/812BZZHeKTL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 5070": {
+    "asin": "B0DTQMLX4F",
+    "image": "https://m.media-amazon.com/images/I/71kUODqPVoL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 5060 Ti": {
+    "asin": "B0F7WB6LSH",
+    "image": "https://m.media-amazon.com/images/I/81kYKB0Aj5L._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 5060": {
+    "asin": "B0F8LDHQ7Y",
+    "image": "https://m.media-amazon.com/images/I/71ii5ow8slL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 4090": {
+    "asin": "B0BJFRT43X",
+    "image": "https://m.media-amazon.com/images/I/514QPBuqGyL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 4080 SUPER": {
+    "asin": "B0DTFYPGWS",
+    "image": "https://m.media-amazon.com/images/I/81rCZZvkIVL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 4080": {
+    "asin": "B0BMZ9TGH1",
+    "image": "https://m.media-amazon.com/images/I/71m9FJCubXL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 4070 Ti SUPER": {
+    "asin": "B0D1B5DDVS",
+    "image": "https://m.media-amazon.com/images/I/81bKcBbcemL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 4070 Ti": {
+    "asin": "B0BQTSV2GG",
+    "image": "https://m.media-amazon.com/images/I/81XIr69BtVL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 4070 SUPER": {
+    "asin": "B0DHG3S1P7",
+    "image": "https://m.media-amazon.com/images/I/81PChIf5pwL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 4070": {
+    "asin": "B0D3JBCBKC",
+    "image": "https://m.media-amazon.com/images/I/81rryZLBohL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 4060 Ti 16GB": {
+    "asin": "B0F7WB6LSH",
+    "image": "https://m.media-amazon.com/images/I/81kYKB0Aj5L._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 4060 Ti 8GB": {
+    "asin": "B0F8PR9L3X",
+    "image": "https://m.media-amazon.com/images/I/81i5KcFKysL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 4060": {
+    "asin": "B0CQKRRZ9K",
+    "image": "https://m.media-amazon.com/images/I/71wv2w6edAL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 3090 Ti": {
+    "asin": "B09GWB753L",
+    "image": "https://m.media-amazon.com/images/I/61wx-RzpxLL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 3090": {
+    "asin": "B09GWB753L",
+    "image": "https://m.media-amazon.com/images/I/61wx-RzpxLL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 3080 Ti": {
+    "asin": "B09WSC85GP",
+    "image": "https://m.media-amazon.com/images/I/61eZu-Gk9TS._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 3080 12GB": {
+    "asin": "B09WSC85GP",
+    "image": "https://m.media-amazon.com/images/I/61eZu-Gk9TS._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 3080 10GB": {
+    "asin": "B0CS32B2BL",
+    "image": "https://m.media-amazon.com/images/I/51Rq9lTbn-L._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 3070 Ti": {
+    "asin": "B09B38Z7DB",
+    "image": "https://m.media-amazon.com/images/I/81t7Ga7nyxS._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 3070": {
+    "asin": "B08MYCN952",
+    "image": "https://m.media-amazon.com/images/I/51c63ubHJyL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 3060 Ti": {
+    "asin": "B09SZKN2NX",
+    "image": "https://m.media-amazon.com/images/I/81uFpNyjm5L._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 3060 12GB": {
+    "asin": "B08WPRMVWB",
+    "image": "https://m.media-amazon.com/images/I/71tduSp8ooL._AC_SL300_.jpg"
+  },
+  "NVIDIA GeForce RTX 3050 8GB": {
+    "asin": "B0CQ716WMZ",
+    "image": "https://m.media-amazon.com/images/I/714J6o2Ug7L._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 9070 XT": {
+    "asin": "B0DW4FRCQR",
+    "image": "https://m.media-amazon.com/images/I/71R7fXnFGCL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 9070": {
+    "asin": "B0DTTKCTRD",
+    "image": "https://m.media-amazon.com/images/I/611Xx8c9puL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 9060 XT": {
+    "asin": "B0F91KM1CK",
+    "image": "https://m.media-amazon.com/images/I/71L08TQedJL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 9060": {
+    "asin": "B0F91KM1CK",
+    "image": "https://m.media-amazon.com/images/I/71L08TQedJL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 7900 XTX": {
+    "asin": "B0BNLSDRKB",
+    "image": "https://m.media-amazon.com/images/I/41fOuNCg2mL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 7900 XT": {
+    "asin": "B0BNLSDRKB",
+    "image": "https://m.media-amazon.com/images/I/41fOuNCg2mL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 7900 GRE": {
+    "asin": "B0BNLSDRKB",
+    "image": "https://m.media-amazon.com/images/I/41fOuNCg2mL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 7800 XT": {
+    "asin": "B0DQF23NLJ",
+    "image": "https://m.media-amazon.com/images/I/612bL8UL2IL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 7700 XT": {
+    "asin": "B0CHK2345D",
+    "image": "https://m.media-amazon.com/images/I/61tneI9kg4L._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 7600 XT": {
+    "asin": "B0CHK2345D",
+    "image": "https://m.media-amazon.com/images/I/61tneI9kg4L._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 7600": {
+    "asin": "B0DR25XD68",
+    "image": "https://m.media-amazon.com/images/I/619fohQ4gKL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 6950 XT": {
+    "asin": "B09VYDTVGY",
+    "image": "https://m.media-amazon.com/images/I/81FTVf0jQCL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 6900 XT": {
+    "asin": "B08Q2R71CS",
+    "image": "https://m.media-amazon.com/images/I/81U5H5c0jyL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 6800 XT": {
+    "asin": "B0F91KM1CK",
+    "image": "https://m.media-amazon.com/images/I/71L08TQedJL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 6800": {
+    "asin": "B0DFMMF59C",
+    "image": "https://m.media-amazon.com/images/I/71LckgU8r2L._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 6750 XT": {
+    "asin": "B0CHK2345D",
+    "image": "https://m.media-amazon.com/images/I/61tneI9kg4L._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 6700 XT": {
+    "asin": "B08YWRFSQB",
+    "image": "https://m.media-amazon.com/images/I/611yWUN2+NL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 6650 XT": {
+    "asin": "B0D5N2BQQQ",
+    "image": "https://m.media-amazon.com/images/I/81COVHz80LL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 6600 XT": {
+    "asin": "B09LFLTXW9",
+    "image": "https://m.media-amazon.com/images/I/81+x9UtG9iL._AC_SL300_.jpg"
+  },
+  "AMD Radeon RX 6600": {
+    "asin": "B09J8VCFWN",
+    "image": "https://m.media-amazon.com/images/I/61n6JjRZBGL._AC_SL300_.jpg"
+  },
+  "Intel Arc B580": {
+    "asin": "B0DNV4NWF7",
+    "image": "https://m.media-amazon.com/images/I/81igM3aW65L._AC_SL300_.jpg"
+  },
+  "Intel Arc B570": {
+    "asin": "B0DQYM2MHX",
+    "image": "https://m.media-amazon.com/images/I/61AqKwSmJlL._AC_SL300_.jpg"
+  },
+  "Intel Arc A770 16GB": {
+    "asin": "B0CDM3QK7Q",
+    "image": "https://m.media-amazon.com/images/I/71X6uBcNk3L._AC_SL300_.jpg"
+  },
+  "Intel Arc A750": {
+    "asin": "B0BNYXRTFN",
+    "image": "https://m.media-amazon.com/images/I/618n+u4X9iL._AC_SL300_.jpg"
+  },
+  "Intel Arc A580": {
+    "asin": "B0CJGSP9R7",
+    "image": "https://m.media-amazon.com/images/I/615WP+sz02L._AC_SL300_.jpg"
+  },
+  "NVIDIA RTX 6000 Ada": {
+    "asin": "B0BNYR4VX8",
+    "image": "https://m.media-amazon.com/images/I/61I-uAU9XGL._AC_SL300_.jpg"
+  },
+  "NVIDIA RTX 5000 Ada": {
+    "asin": "B0CXPZSWPX",
+    "image": "https://m.media-amazon.com/images/I/41Tm5fJzBgL._AC_SL300_.jpg"
+  },
+  "NVIDIA RTX 4500 Ada": {
+    "asin": "B0DLWT24H9",
+    "image": "https://m.media-amazon.com/images/I/31WyLPWBs2L._AC_SL300_.jpg"
+  },
+  "NVIDIA RTX 4000 Ada": {
+    "asin": "B0DLWP2KN9",
+    "image": "https://m.media-amazon.com/images/I/31EJSY7nROL._AC_SL300_.jpg"
+  },
+  "NVIDIA RTX 2000 Ada": {
+    "asin": "B0DCJLJJQ7",
+    "image": "https://m.media-amazon.com/images/I/51PPIpeIZkL._AC_SL300_.jpg"
+  },
+  "NVIDIA RTX A6000": {
+    "asin": "B09BDH8VZV",
+    "image": "https://m.media-amazon.com/images/I/51+9unnbV6L._AC_SL300_.jpg"
+  },
+  "NVIDIA RTX A5000": {
+    "asin": "B09G1Y6ZGT",
+    "image": "https://m.media-amazon.com/images/I/41C7y8yVVWL._AC_SL300_.jpg"
+  },
+  "NVIDIA RTX A4000": {
+    "asin": "B09G21MBW2",
+    "image": "https://m.media-amazon.com/images/I/41TBE+A2kLL._AC_SL300_.jpg"
+  },
+  "AMD Radeon PRO W7900": {
+    "asin": "B0C5DK4R3G",
+    "image": "https://m.media-amazon.com/images/I/51RD4y5M6NL._AC_SL300_.jpg"
+  },
+  "AMD Radeon PRO W7800": {
+    "asin": "B0C5DLBMTP",
+    "image": "https://m.media-amazon.com/images/I/61dDG+1KuiL._AC_SL300_.jpg"
+  },
+  "AMD Radeon PRO W7700": {
+    "asin": "B0CQ8R7J1M",
+    "image": "https://m.media-amazon.com/images/I/51aJs0h8faL._AC_SL300_.jpg"
+  },
+  "AMD Radeon PRO W7600": {
+    "asin": "B0CK29X5GV",
+    "image": "https://m.media-amazon.com/images/I/61RbI2gLKUL._AC_SL300_.jpg"
+  },
+  "AMD Radeon PRO W7500": {
+    "asin": "B0CK2DB8NY",
+    "image": "https://m.media-amazon.com/images/I/61MSUMWwYqL._AC_SL300_.jpg"
+  },
+  "NVIDIA H100 PCIe": {
+    "asin": "B0D9J1KZZX",
+    "image": "https://m.media-amazon.com/images/I/41XzibJupDL._AC_SL300_.jpg"
+  },
+  "NVIDIA L40S": {
+    "asin": "B0FMG2FB76",
+    "image": "https://m.media-amazon.com/images/I/513EM8V5G9L._AC_SL300_.jpg"
+  },
+  "NVIDIA A100 PCIe 80GB": {
+    "asin": "B08X13X6HF",
+    "image": "https://m.media-amazon.com/images/I/313ccMYlGeL._AC_SL300_.jpg"
+  },
+  "NVIDIA L4": {
+    "asin": "B0D9J1KZZX",
+    "image": "https://m.media-amazon.com/images/I/41XzibJupDL._AC_SL300_.jpg"
+  },
+  "NVIDIA A40": {
+    "asin": "B09N95N3PW",
+    "image": "https://m.media-amazon.com/images/I/21cHpbCtnrL._AC_SL300_.jpg"
+  },
+  "AMD Instinct MI300X": {
+    "asin": "B009IOCCD2",
+    "image": "https://m.media-amazon.com/images/I/512Io5hXDrL._AC_SL300_.jpg"
+  },
+  "AMD Instinct MI250X": {
+    "asin": "B0BZLPHY5G",
+    "image": "https://m.media-amazon.com/images/I/610bdmEZs6L._AC_SL300_.jpg"
+  },
+  "AMD Instinct MI210": {
+    "asin": "B0CR5RJYL3",
+    "image": "https://m.media-amazon.com/images/I/512Io5hXDrL._AC_SL300_.jpg"
+  },
+  "ASUS Dual RTX 4060 OC": {
+    "asin": "B0F8PR9L3X",
+    "image": "https://m.media-amazon.com/images/I/81i5KcFKysL._AC_SL300_.jpg"
+  },
+  "Intel Arc A770 LE": {
+    "asin": "B0CDM3QK7Q",
+    "image": "https://m.media-amazon.com/images/I/71X6uBcNk3L._AC_SL300_.jpg"
+  },
+  "Creative Sound BlasterX AE-5 Plus": {
+    "asin": "B086QN3WNX",
+    "image": "https://m.media-amazon.com/images/I/51jWT0jiR8L._AC_SL300_.jpg"
+  },
+  "ASUS Xonar AE 7.1": {
+    "asin": "B077DGQFTF",
+    "image": "https://m.media-amazon.com/images/I/81wzz9ujAeL._AC_SL300_.jpg"
+  },
+  "ASUS XG-C100C 10GbE": {
+    "asin": "B072N84DG6",
+    "image": "https://m.media-amazon.com/images/I/61GEGmLyn8L._AC_SL300_.jpg"
+  },
+  "TP-Link TX401 10GbE": {
+    "asin": "B0FHZGXZH7",
+    "image": "https://m.media-amazon.com/images/I/61c-YqEutLL._AC_SL300_.jpg"
+  },
+  "Intel AX210 WiFi 6E PCIe": {
+    "asin": "B07X462KRK",
+    "image": "https://m.media-amazon.com/images/I/61wExGBapNL._AC_SL300_.jpg"
+  },
+  "TP-Link Archer TX55E WiFi 6 AX3000": {
+    "asin": "B09PRB1MZM",
+    "image": "https://m.media-amazon.com/images/I/513FfctgOBL._AC_SL300_.jpg"
+  },
+  "LG WH16NS40 Blu-ray Writer": {
+    "asin": "B09GLM1L9C",
+    "image": "https://m.media-amazon.com/images/I/61+eDphekEL._AC_SL300_.jpg"
+  },
+  "ASUS DRW-24B1ST DVD Writer": {
+    "asin": "B0033Z2BAQ",
+    "image": "https://m.media-amazon.com/images/I/61SHnK1hFsL._AC_SL300_.jpg"
+  },
+  "CableMod Pro ModMesh Full Kit": {
+    "asin": "B0799F4XWF",
+    "image": "https://m.media-amazon.com/images/I/61grMVnGb0L._AC_SL300_.jpg"
+  },
+  "Asiahorse Sleeved Extension 6-Pack": {
+    "asin": "B08KD9T7SG",
+    "image": "https://m.media-amazon.com/images/I/719j6fnrp-L._AC_SL300_.jpg"
+  },
+  "Lian Li Strimer Plus V2 24-Pin": {
+    "asin": "B0DJVRVGS1",
+    "image": "https://m.media-amazon.com/images/I/61DLTcYia+L._AC_SL300_.jpg"
+  },
+  "Lian Li Strimer Plus V2 GPU 16-Pin": {
+    "asin": "B0DRLD3KV2",
+    "image": "https://m.media-amazon.com/images/I/61PlpDGBYjL._AC_SL300_.jpg"
+  },
+  "Windows 11 Home": {
+    "asin": "B07Q8JGCSQ",
+    "image": "https://m.media-amazon.com/images/I/719bgx+IiYL._AC_SL300_.jpg"
+  },
+  "Home": {
+    "asin": "B00HSC9F2C",
+    "image": "https://m.media-amazon.com/images/I/81ViEehuSvL._AC_SL300_.jpg"
+  },
+  "Windows 11 Pro": {
+    "asin": "B09WCTTXQ6",
+    "image": "https://m.media-amazon.com/images/I/61R6ivLSfrL._AC_SL300_.jpg"
+  },
+  "Pro": {
+    "asin": "B08GB58KD5",
+    "image": "https://m.media-amazon.com/images/I/81Nzlrfud+L._AC_SL300_.jpg"
+  },
+  "Keychron Q1 Pro 75%": {
+    "asin": "B0CSYMTLZK",
+    "image": "https://m.media-amazon.com/images/I/616rea0RO4L._AC_SL300_.jpg"
+  },
+  "Razer Huntsman V3 Pro TKL": {
+    "asin": "B0CG7C1NVP",
+    "image": "https://m.media-amazon.com/images/I/81y14ID9oHL._AC_SL300_.jpg"
+  },
+  "Wooting 60HE": {
+    "asin": "B0G4LH7KMM",
+    "image": "https://m.media-amazon.com/images/I/61Qmeh+O2yL._AC_SL300_.jpg"
+  },
+  "Corsair K70 MAX RGB": {
+    "asin": "B0G4LH7KMM",
+    "image": "https://m.media-amazon.com/images/I/71FQQjIHBwL._AC_SL300_.jpg"
+  },
+  "Logitech G Pro X TKL": {
+    "asin": "B0G4LH7KMM",
+    "image": "https://m.media-amazon.com/images/I/618ldB2HRcL._AC_SL300_.jpg"
+  },
+  "Logitech G Pro X Superlight 2": {
+    "asin": "B0CW25XR5R",
+    "image": "https://m.media-amazon.com/images/I/51A7UNY7YeL._AC_SL300_.jpg"
+  },
+  "Razer Viper V3 Pro": {
+    "asin": "B0GMLBSSTD",
+    "image": "https://m.media-amazon.com/images/I/61fPqQWtXfL._AC_SL300_.jpg"
+  },
+  "Pulsar X2V2 Mini": {
+    "asin": "B0CH9XHFW8",
+    "image": "https://m.media-amazon.com/images/I/51l91SLLXgL._AC_SL300_.jpg"
+  },
+  "Razer DeathAdder V3": {
+    "asin": "B0CSP61VR4",
+    "image": "https://m.media-amazon.com/images/I/71j6PDIwegL._AC_SL300_.jpg"
+  },
+  "Endgame Gear OP1we": {
+    "asin": "B0FB8VWW8Y",
+    "image": "https://m.media-amazon.com/images/I/51AZ5dBIl+L._AC_SL300_.jpg"
+  },
+  "SteelSeries Arctis Nova Pro Wireless": {
+    "asin": "B0DGZLHN8G",
+    "image": "https://m.media-amazon.com/images/I/614IQytqAuL._AC_SL300_.jpg"
+  },
+  "HyperX Cloud III Wireless": {
+    "asin": "B0F6NZWPTC",
+    "image": "https://m.media-amazon.com/images/I/71mqaEv2KRL._AC_SL300_.jpg"
+  },
+  "Sennheiser HD 560S": {
+    "asin": "B0BKT8N1Z9",
+    "image": "https://m.media-amazon.com/images/I/71z2y-w+hmL._AC_SL300_.jpg"
+  },
+  "beyerdynamic DT 900 Pro X": {
+    "asin": "B0011UB9CQ",
+    "image": "https://m.media-amazon.com/images/I/71TIcDv5GoL._AC_SL300_.jpg"
+  },
+  "Elgato Facecam Pro 4K60": {
+    "asin": "B0CJHZ92P6",
+    "image": "https://m.media-amazon.com/images/I/61eXN9erjAL._AC_SL300_.jpg"
+  },
+  "4K": {
+    "asin": "B0GH24N7PK",
+    "image": "https://m.media-amazon.com/images/I/81h8JoG568L._AC_SL300_.jpg"
+  },
+  "Logitech Brio 4K Pro": {
+    "asin": "B0CJHZ92P6",
+    "image": "https://m.media-amazon.com/images/I/51KIsAkiqqL._AC_SL300_.jpg"
+  },
+  "Razer Kiyo Pro Ultra": {
+    "asin": "B0FX37Y9W5",
+    "image": "https://m.media-amazon.com/images/I/71h3tVULepL._AC_SL300_.jpg"
+  },
+  "Elgato Wave:3": {
+    "asin": "B088HHWC47",
+    "image": "https://m.media-amazon.com/images/I/61KjhEX33JL._AC_SL300_.jpg"
+  },
+  "Cardioid": {
+    "asin": "B09MZNC8GS",
+    "image": "https://m.media-amazon.com/images/I/51Gf9yCORmL._AC_SL300_.jpg"
+  },
+  "HyperX QuadCast S RGB": {
+    "asin": "B0BMFQP2ZZ",
+    "image": "https://m.media-amazon.com/images/I/71yLcw8yj6L._AC_SL300_.jpg"
+  },
+  "Multi": {
+    "asin": "B003UEJAQ8",
+    "image": "https://m.media-amazon.com/images/I/712sy9LDh8L._AC_SL300_.jpg"
+  },
+  "Rode NT-USB Mini": {
+    "asin": "B0BMFQP2ZZ",
+    "image": "https://m.media-amazon.com/images/I/51mi31NUkvL._AC_SL300_.jpg"
+  },
+  "Blue Yeti X": {
+    "asin": "B0D458QDVN",
+    "image": "https://m.media-amazon.com/images/I/61KTMvS5JBL._AC_SL300_.jpg"
+  },
+  "Artisan Hien FX XL": {
+    "asin": "B07F61BYQP",
+    "image": "https://m.media-amazon.com/images/I/816eLoKstjL._AC_SL300_.jpg"
+  },
+  "SteelSeries QcK Heavy XXL": {
+    "asin": "B0D1Y45577",
+    "image": "https://m.media-amazon.com/images/I/31AROTdFEzL._AC_SL300_.jpg"
+  },
+  "Corsair MM700 RGB Extended": {
+    "asin": "B08QSNNV5H",
+    "image": "https://m.media-amazon.com/images/I/615s+xM099L._AC_SL300_.jpg"
+  },
+  "Secretlab Titan Evo 2024": {
+    "asin": "B0DP5SY554",
+    "image": "https://m.media-amazon.com/images/I/41UZRUxHa4L._AC_SL300_.jpg"
+  },
+  "Herman Miller Aeron Remastered": {
+    "asin": "B0FXFB9XS7",
+    "image": "https://m.media-amazon.com/images/I/71bqxAIlESL._AC_SL300_.jpg"
+  },
+  "Autonomous ErgoChair Pro+": {
+    "asin": "B0FL2K8B2W",
+    "image": "https://m.media-amazon.com/images/I/61YR-loNGqL._AC_SL300_.jpg"
+  },
+  "Razer Iskur V2": {
+    "asin": "B0GFPWZ82H",
+    "image": "https://m.media-amazon.com/images/I/71JMbeac-qL._AC_SL300_.jpg"
+  },
+  "UPLIFT V2 60\\": {
+    "asin": "B07RS4TPVW",
+    "image": "https://m.media-amazon.com/images/I/51wc75lHBcL._AC_SL300_.jpg"
+  },
+  "Secretlab Magnus Pro": {
+    "asin": "B0FYPFP25T",
+    "image": "https://m.media-amazon.com/images/I/51AvUmwkGoL._AC_SL300_.jpg"
+  },
+  "IKEA BEKANT Sit/Stand 63\\": {
+    "asin": "B0C3WND2QB",
+    "image": "https://m.media-amazon.com/images/I/71S0A6685fL._AC_SL300_.jpg"
+  },
+  "Noctua NT-H1 Thermal Paste": {
+    "asin": "B0F4M5DZK9",
+    "image": "https://m.media-amazon.com/images/I/71mgIgscT3L._AC_SL300_.jpg"
+  },
+  "Thermal Grizzly Kryonaut": {
+    "asin": "B08W3TK3KS",
+    "image": "https://m.media-amazon.com/images/I/51xjL8-xVxL._AC_SL300_.jpg"
+  },
+  "Samsung T7 Shield 2TB": {
+    "asin": "B0F4D3MFGQ",
+    "image": "https://m.media-amazon.com/images/I/61CKrZWOcrL._AC_SL300_.jpg"
+  },
+  "WD My Passport 5TB": {
+    "asin": "B07VP5X239",
+    "image": "https://m.media-amazon.com/images/I/51tXR09l5qL._AC_SL300_.jpg"
+  },
+  "Norton 360 Deluxe (5 Devices, 1 Year)": {
+    "asin": "B07VGCN1K2",
+    "image": "https://m.media-amazon.com/images/I/71dIA+61J2L._AC_SL300_.jpg"
+  },
+  "1 Year": {
+    "asin": "B0DSBR5JJR",
+    "image": "https://m.media-amazon.com/images/I/71BxCuAQohL._AC_SL300_.jpg"
+  },
+  "Bitdefender Total Security (5 Devices, 1 Year)": {
+    "asin": "B0DTKQ5P7B",
+    "image": "https://m.media-amazon.com/images/I/61LKM7+acPL._AC_SL300_.jpg"
+  },
+  "LG GP65NB60 External DVD Writer": {
+    "asin": "B0DP2LV27P",
+    "image": "https://m.media-amazon.com/images/I/51Nceaz4WwL._AC_SL300_.jpg"
+  },
+  "CyberPower CP1500PFCLCD 1500VA UPS": {
+    "asin": "B0B354X985",
+    "image": "https://m.media-amazon.com/images/I/617WOwlPeDL._AC_SL300_.jpg"
+  },
+  "APC BX1500M 1500VA UPS": {
+    "asin": "B00429N19W",
+    "image": "https://m.media-amazon.com/images/I/51TsApt1OpL._AC_SL300_.jpg"
+  },
+  "APC BE600M1 600VA UPS": {
+    "asin": "B00429N19W",
+    "image": "https://m.media-amazon.com/images/I/61-O0p1npOL._AC_SL300_.jpg"
+  },
+  "Corsair Vengeance DDR5 32GB (2x16GB) 6000MHz CL30": {
+    "asin": "B0C4KQ9N79",
+    "image": "https://m.media-amazon.com/images/I/717xrBf92wL._AC_SL300_.jpg"
+  },
+  "Corsair Vengeance DDR5 32GB (2x16GB) 5600MHz CL36": {
+    "asin": "B0CJ8ZHMVF",
+    "image": "https://m.media-amazon.com/images/I/717xrBf92wL._AC_SL300_.jpg"
+  },
+  "Corsair Vengeance RGB DDR5 32GB (2x16GB) 6400MHz CL32": {
+    "asin": "B0CQCK7TYW",
+    "image": "https://m.media-amazon.com/images/I/61D2DDpDITL._AC_SL300_.jpg"
+  },
+  "Corsair Vengeance DDR5 64GB (2x32GB) 5600MHz CL40": {
+    "asin": "B09WN2H42Y",
+    "image": "https://m.media-amazon.com/images/I/71AV5PQu1yL._AC_SL300_.jpg"
+  },
+  "Corsair Dominator Titanium DDR5 32GB (2x16GB) 7200MHz CL34": {
+    "asin": "B0CQCK7TYW",
+    "image": "https://m.media-amazon.com/images/I/61FvCy+l77L._AC_SL300_.jpg"
+  },
+  "Corsair Dominator Titanium DDR5 64GB (2x32GB) 6400MHz CL32": {
+    "asin": "B0CQCK7TYW",
+    "image": "https://m.media-amazon.com/images/I/611o1NX2HvL._AC_SL300_.jpg"
+  },
+  "G.Skill Trident Z5 RGB DDR5 32GB (2x16GB) 6400MHz CL32": {
+    "asin": "B0BF8FVLSL",
+    "image": "https://m.media-amazon.com/images/I/61mydyeMZEL._AC_SL300_.jpg"
+  },
+  "G.Skill Trident Z5 Neo DDR5 32GB (2x16GB) 6000MHz CL30": {
+    "asin": "B0BF8FVLSL",
+    "image": "https://m.media-amazon.com/images/I/61mydyeMZEL._AC_SL300_.jpg"
+  },
+  "G.Skill Trident Z5 RGB DDR5 64GB (2x32GB) 6000MHz CL30": {
+    "asin": "B0D6XT9VSL",
+    "image": "https://m.media-amazon.com/images/I/61mydyeMZEL._AC_SL300_.jpg"
+  },
+  "G.Skill Flare X5 DDR5 32GB (2x16GB) 6000MHz CL30": {
+    "asin": "B0C4KQ9N79",
+    "image": "https://m.media-amazon.com/images/I/61wPLbOcDwL._AC_SL300_.jpg"
+  },
+  "G.Skill Ripjaws S5 DDR5 32GB (2x16GB) 5600MHz CL28": {
+    "asin": "B0BJ181PX7",
+    "image": "https://m.media-amazon.com/images/I/61fsoD+5vhL._AC_SL300_.jpg"
+  },
+  "G.Skill Ripjaws S5 DDR5 32GB (2x16GB) 6000MHz CL30": {
+    "asin": "B0C4KQ9N79",
+    "image": "https://m.media-amazon.com/images/I/71CrmOfjDDL._AC_SL300_.jpg"
+  },
+  "G.Skill Trident Z5 Royal DDR5 32GB (2x16GB) 7600MHz CL36": {
+    "asin": "B0DD2LKVMD",
+    "image": "https://m.media-amazon.com/images/I/61fVKzifdDL._AC_SL300_.jpg"
+  },
+  "Kingston FURY Beast DDR5 32GB (2x16GB) 5600MHz CL36": {
+    "asin": "B0BD5PN65B",
+    "image": "https://m.media-amazon.com/images/I/71Y-MK6-fsL._AC_SL300_.jpg"
+  },
+  "Kingston FURY Beast DDR5 32GB (2x16GB) 6000MHz CL30": {
+    "asin": "B0C4KQ9N79",
+    "image": "https://m.media-amazon.com/images/I/717cPftxQgL._AC_SL300_.jpg"
+  },
+  "Kingston FURY Beast DDR5 64GB (2x32GB) 5600MHz CL40": {
+    "asin": "B0GVPVQ7W3",
+    "image": "https://m.media-amazon.com/images/I/71Y-MK6-fsL._AC_SL300_.jpg"
+  },
+  "Kingston FURY Renegade DDR5 32GB (2x16GB) 7200MHz CL34": {
+    "asin": "B0BMQTXZ3Q",
+    "image": "https://m.media-amazon.com/images/I/71gKWkAmh1L._AC_SL300_.jpg"
+  },
+  "TeamGroup T-Force Delta RGB DDR5 32GB (2x16GB) 6000MHz CL30": {
+    "asin": "B0C4KQ9N79",
+    "image": "https://m.media-amazon.com/images/I/81ov4cFmdaL._AC_SL300_.jpg"
+  },
+  "TeamGroup T-Force Vulcan DDR5 32GB (2x16GB) 5200MHz CL40": {
+    "asin": "B0C4KQ9N79",
+    "image": "https://m.media-amazon.com/images/I/71xyaY6wuLL._AC_SL300_.jpg"
+  },
+  "TeamGroup T-Force Vulcan DDR5 32GB (2x16GB) 5600MHz CL36": {
+    "asin": "B0C4KQ9N79",
+    "image": "https://m.media-amazon.com/images/I/81hdicO40nL._AC_SL300_.jpg"
+  },
+  "Crucial DDR5 32GB (2x16GB) 4800MHz CL40": {
+    "asin": "B0GVPVQ7W3",
+    "image": "https://m.media-amazon.com/images/I/51PLQhgVmmL._AC_SL300_.jpg"
+  },
+  "Crucial Pro DDR5 32GB (2x16GB) 5600MHz CL36": {
+    "asin": "B0C2B7W1W4",
+    "image": "https://m.media-amazon.com/images/I/51qZqQI02oL._AC_SL300_.jpg"
+  },
+  "Kingston Server Premier DDR5 32GB ECC 4800MHz": {
+    "asin": "B0GVPVQ7W3",
+    "image": "https://m.media-amazon.com/images/I/710sWDmSKwL._AC_SL300_.jpg"
+  },
+  "Kingston Server Premier DDR5 64GB ECC 4800MHz": {
+    "asin": "B0GVPVQ7W3",
+    "image": "https://m.media-amazon.com/images/I/710sWDmSKwL._AC_SL300_.jpg"
+  },
+  "Samsung DDR5 64GB ECC RDIMM 4800MHz": {
+    "asin": "B0GVPVQ7W3",
+    "image": "https://m.media-amazon.com/images/I/71TvUKXQMaL._AC_SL300_.jpg"
+  },
+  "Micron DDR5 32GB ECC RDIMM 5600MHz": {
+    "asin": "B0GVPYMVSR",
+    "image": "https://m.media-amazon.com/images/I/51qZqQI02oL._AC_SL300_.jpg"
+  },
+  "Corsair Vengeance LPX DDR4 32GB (2x16GB) 3600MHz CL18": {
+    "asin": "B07RW6Z692",
+    "image": "https://m.media-amazon.com/images/I/61wCOVcyvFL._AC_SL300_.jpg"
+  },
+  "Corsair Vengeance LPX DDR4 16GB (2x8GB) 3200MHz CL16": {
+    "asin": "B07RS1G6XW",
+    "image": "https://m.media-amazon.com/images/I/51Y7ugfDRWS._AC_SL300_.jpg"
+  },
+  "G.Skill Ripjaws V DDR4 32GB (2x16GB) 3600MHz CL18": {
+    "asin": "B087XHN92L",
+    "image": "https://m.media-amazon.com/images/I/618SEnJR1nL._AC_SL300_.jpg"
+  },
+  "G.Skill Ripjaws V DDR4 16GB (2x8GB) 3200MHz CL16": {
+    "asin": "B015FXXBW0",
+    "image": "https://m.media-amazon.com/images/I/618SEnJR1nL._AC_SL300_.jpg"
+  },
+  "G.Skill Trident Z RGB DDR4 32GB (2x16GB) 3600MHz CL16": {
+    "asin": "B08176KLZT",
+    "image": "https://m.media-amazon.com/images/I/61l4EStxhnL._AC_SL300_.jpg"
+  },
+  "Kingston FURY Beast DDR4 32GB (2x16GB) 3200MHz CL16": {
+    "asin": "B0D53MTHPQ",
+    "image": "https://m.media-amazon.com/images/I/61uXihcspuL._AC_SL300_.jpg"
+  },
+  "Kingston FURY Beast DDR4 16GB (2x8GB) 3200MHz CL16": {
+    "asin": "B097K2WBL3",
+    "image": "https://m.media-amazon.com/images/I/61uXihcspuL._AC_SL300_.jpg"
+  },
+  "Crucial Ballistix DDR4 32GB (2x16GB) 3600MHz CL16": {
+    "asin": "B07RW6Z692",
+    "image": "https://m.media-amazon.com/images/I/61wCOVcyvFL._AC_SL300_.jpg"
+  },
+  "TeamGroup T-Force Vulcan Z DDR4 32GB (2x16GB) 3200MHz CL16": {
+    "asin": "B0B9Y24ZM5",
+    "image": "https://m.media-amazon.com/images/I/71xyaY6wuLL._AC_SL300_.jpg"
+  },
+  "Kingston Server Premier DDR4 32GB ECC 3200MHz": {
+    "asin": "B0GVGMHZ2C",
+    "image": "https://m.media-amazon.com/images/I/710sWDmSKwL._AC_SL300_.jpg"
+  },
+  "Samsung DDR4 64GB ECC RDIMM 3200MHz": {
+    "asin": "B0GVGMHZ2C",
+    "image": "https://m.media-amazon.com/images/I/51ohzIUp8wL._AC_SL300_.jpg"
+  },
+  "Crucial T700 2TB NVMe Gen5": {
+    "asin": "B0C3K2WRPV",
+    "image": "https://m.media-amazon.com/images/I/51LpPKFIPCL._AC_SL300_.jpg"
+  },
+  "Crucial T700 1TB NVMe Gen5": {
+    "asin": "B0F9XN4DCC",
+    "image": "https://m.media-amazon.com/images/I/51WMvihHRvL._AC_SL300_.jpg"
+  },
+  "Samsung 990 EVO Plus 2TB NVMe Gen5": {
+    "asin": "B0DHLCRF91",
+    "image": "https://m.media-amazon.com/images/I/61nq7N0igEL._AC_SL300_.jpg"
+  },
+  "Samsung 990 EVO Plus 1TB NVMe Gen5": {
+    "asin": "B0DHLFWBQ1",
+    "image": "https://m.media-amazon.com/images/I/61ciknSL0lL._AC_SL300_.jpg"
+  },
+  "Corsair MP700 PRO 2TB NVMe Gen5": {
+    "asin": "B0FV33S11L",
+    "image": "https://m.media-amazon.com/images/I/51+dzbnWF9L._AC_SL300_.jpg"
+  },
+  "WD Black SN850X 2TB NVMe Gen4": {
+    "asin": "B0B7CMZ3QH",
+    "image": "https://m.media-amazon.com/images/I/61jQCrK6mFL._AC_SL300_.jpg"
+  },
+  "Samsung 990 Pro 2TB NVMe Gen4": {
+    "asin": "B0DZK9C789",
+    "image": "https://m.media-amazon.com/images/I/71OWtcxKgvL._AC_SL300_.jpg"
+  },
+  "Samsung 990 Pro 1TB NVMe Gen4": {
+    "asin": "B0FCRN54V8",
+    "image": "https://m.media-amazon.com/images/I/61ZL9Qpo1-L._AC_SL300_.jpg"
+  },
+  "WD Black SN850X 1TB NVMe Gen4": {
+    "asin": "B0B7CKVCCV",
+    "image": "https://m.media-amazon.com/images/I/61jQCrK6mFL._AC_SL300_.jpg"
+  },
+  "Samsung 980 Pro 1TB NVMe Gen4": {
+    "asin": "B0FCRN54V8",
+    "image": "https://m.media-amazon.com/images/I/61ZL9Qpo1-L._AC_SL300_.jpg"
+  },
+  "SK Hynix Platinum P41 2TB NVMe Gen4": {
+    "asin": "B0FCRN54V8",
+    "image": "https://m.media-amazon.com/images/I/71RGTZJJuqL._AC_SL300_.jpg"
+  },
+  "SK Hynix Platinum P41 1TB NVMe Gen4": {
+    "asin": "B0FCRN54V8",
+    "image": "https://m.media-amazon.com/images/I/71RGTZJJuqL._AC_SL300_.jpg"
+  },
+  "Crucial T500 2TB NVMe Gen4": {
+    "asin": "B0CK2TC9XQ",
+    "image": "https://m.media-amazon.com/images/I/51oXLC2JFHL._AC_SL300_.jpg"
+  },
+  "Crucial T500 1TB NVMe Gen4": {
+    "asin": "B0CK39YR9V",
+    "image": "https://m.media-amazon.com/images/I/51oXLC2JFHL._AC_SL300_.jpg"
+  },
+  "WD Blue SN580 1TB NVMe Gen4": {
+    "asin": "B0DN7CYYSD",
+    "image": "https://m.media-amazon.com/images/I/61uDl4amtnL._AC_SL300_.jpg"
+  },
+  "WD Blue SN580 2TB NVMe Gen4": {
+    "asin": "B0FCRN54V8",
+    "image": "https://m.media-amazon.com/images/I/41SXOXTpk9L._AC_SL300_.jpg"
+  },
+  "Kingston NV2 1TB NVMe Gen4": {
+    "asin": "B0FCRN54V8",
+    "image": "https://m.media-amazon.com/images/I/71c5uuoM1bL._AC_SL300_.jpg"
+  },
+  "Kingston NV2 2TB NVMe Gen4": {
+    "asin": "B0CJRTVLJ2",
+    "image": "https://m.media-amazon.com/images/I/71sYA7JZeOL._AC_SL300_.jpg"
+  },
+  "Sabrent Rocket 4 Plus 2TB NVMe Gen4": {
+    "asin": "B0C4KQ9N79",
+    "image": "https://m.media-amazon.com/images/I/81Gzo38hxFL._AC_SL300_.jpg"
+  },
+  "Sabrent Rocket 4 Plus 1TB NVMe Gen4": {
+    "asin": "B0FCRN54V8",
+    "image": "https://m.media-amazon.com/images/I/61xUGWnP7nL._AC_SL300_.jpg"
+  },
+  "Samsung 870 EVO 1TB SATA SSD": {
+    "asin": "B0DF2DC3R4",
+    "image": "https://m.media-amazon.com/images/I/911ujeCkGfL._AC_SL300_.jpg"
+  },
+  "Samsung 870 EVO 2TB SATA SSD": {
+    "asin": "B0DZK9C789",
+    "image": "https://m.media-amazon.com/images/I/81lTp8HlFmL._AC_SL300_.jpg"
+  },
+  "Samsung 870 EVO 500GB SATA SSD": {
+    "asin": "B08QBMD6P4",
+    "image": "https://m.media-amazon.com/images/I/911ujeCkGfL._AC_SL300_.jpg"
+  },
+  "Crucial MX500 1TB SATA SSD": {
+    "asin": "B0DF2DC3R4",
+    "image": "https://m.media-amazon.com/images/I/71duypVENNL._AC_SL300_.jpg"
+  },
+  "Crucial MX500 2TB SATA SSD": {
+    "asin": "B07YD5F561",
+    "image": "https://m.media-amazon.com/images/I/51zhuXxYuRL._AC_SL300_.jpg"
+  },
+  "WD Blue SA510 1TB SATA SSD": {
+    "asin": "B0DZK9C789",
+    "image": "https://m.media-amazon.com/images/I/71DvBmAUduL._AC_SL300_.jpg"
+  },
+  "Kingston A400 480GB SATA SSD": {
+    "asin": "B0DF2DC3R4",
+    "image": "https://m.media-amazon.com/images/I/81+9rUcRVTL._AC_SL300_.jpg"
+  },
+  "Seagate Barracuda 2TB 7200RPM HDD": {
+    "asin": "B07H2RR55Q",
+    "image": "https://m.media-amazon.com/images/I/71V1jd3s9dL._AC_SL300_.jpg"
+  },
+  "Seagate Barracuda 4TB 5400RPM HDD": {
+    "asin": "B01LXCE9W9",
+    "image": "https://m.media-amazon.com/images/I/713+86COo+L._AC_SL300_.jpg"
+  },
+  "Seagate Barracuda 8TB 5400RPM HDD": {
+    "asin": "B07H289S7C",
+    "image": "https://m.media-amazon.com/images/I/71dpms8gexL._AC_SL300_.jpg"
+  },
+  "WD Blue 1TB 7200RPM HDD": {
+    "asin": "B0088PUEPK",
+    "image": "https://m.media-amazon.com/images/I/61SJW7MrePL._AC_SL300_.jpg"
+  },
+  "WD Blue 2TB 5400RPM HDD": {
+    "asin": "B0FWCNQW1H",
+    "image": "https://m.media-amazon.com/images/I/61ErAVf-IXL._AC_SL300_.jpg"
+  },
+  "WD Blue 4TB 5400RPM HDD": {
+    "asin": "B0FY2MVB6D",
+    "image": "https://m.media-amazon.com/images/I/71V87AgKx4L._AC_SL300_.jpg"
+  },
+  "WD Red Plus 4TB NAS HDD": {
+    "asin": "B0BDXSK2K7",
+    "image": "https://m.media-amazon.com/images/I/81wgF5tXOJL._AC_SL300_.jpg"
+  },
+  "WD Red Plus 8TB NAS HDD": {
+    "asin": "B0CMQ6SK7W",
+    "image": "https://m.media-amazon.com/images/I/81S-Gug4DmL._AC_SL300_.jpg"
+  },
+  "Seagate IronWolf 4TB NAS HDD": {
+    "asin": "B0B94MF4LP",
+    "image": "https://m.media-amazon.com/images/I/612rhQRXetL._AC_SL300_.jpg"
+  },
+  "Seagate IronWolf 8TB NAS HDD": {
+    "asin": "B0B94MF4LP",
+    "image": "https://m.media-amazon.com/images/I/61jLzkP63bL._AC_SL300_.jpg"
+  },
+  "Toshiba X300 8TB 7200RPM HDD": {
+    "asin": "B074LK3XHJ",
+    "image": "https://m.media-amazon.com/images/I/7155s7O9U3L._AC_SL300_.jpg"
+  },
+  "Samsung PM9A3 1.92TB NVMe U.2 Gen4": {
+    "asin": "B0DZK9C789",
+    "image": "https://m.media-amazon.com/images/I/41bMxbAqIcL._AC_SL300_.jpg"
+  },
+  "Micron 7450 Pro 1.92TB NVMe U.2 Gen4": {
+    "asin": "B0BHCL7HTL",
+    "image": "https://m.media-amazon.com/images/I/61-TU37meXL._AC_SL300_.jpg"
+  },
+  "ASUS ROG Crosshair X870E Hero": {
+    "asin": "B0DDZSP2BG",
+    "image": "https://m.media-amazon.com/images/I/81o1in2ebRL._AC_SL300_.jpg"
+  },
+  "5GbE": {
+    "asin": "B0FKBL3LR7",
+    "image": "https://m.media-amazon.com/images/I/61CqcnXZnsL._AC_SL300_.jpg"
+  },
+  "ASUS ROG Strix X870E-E Gaming WiFi": {
+    "asin": "B0DDZNZF76",
+    "image": "https://m.media-amazon.com/images/I/81MDzB7gqwL._AC_SL300_.jpg"
+  },
+  "MSI MEG X870E Ace": {
+    "asin": "B0G4P65W1J",
+    "image": "https://m.media-amazon.com/images/I/81832KcB1QL._AC_SL300_.jpg"
+  },
+  "10GbE": {
+    "asin": "B0FLKHXQ3D",
+    "image": "https://m.media-amazon.com/images/I/718xvEy8p0L._AC_SL300_.jpg"
+  },
+  "MSI MAG X870 Tomahawk WiFi": {
+    "asin": "B0DG3HK897",
+    "image": "https://m.media-amazon.com/images/I/81nfqnOn8JL._AC_SL300_.jpg"
+  },
+  "2.5GbE": {
+    "asin": "B0GFCM8HZT",
+    "image": "https://m.media-amazon.com/images/I/612ZK+3GsQL._AC_SL300_.jpg"
+  },
+  "Gigabyte X870E AORUS Master": {
+    "asin": "B0GP5Y8BXH",
+    "image": "https://m.media-amazon.com/images/I/71ZClOiiwCL._AC_SL300_.jpg"
+  },
+  "Gigabyte B650 AORUS Elite AX": {
+    "asin": "B0GP5Y8BXH",
+    "image": "https://m.media-amazon.com/images/I/71ipZ0RboTL._AC_SL300_.jpg"
+  },
+  "MSI MAG B650 Tomahawk WiFi": {
+    "asin": "B0BHCCNSRH",
+    "image": "https://m.media-amazon.com/images/I/71TYAcZ4J8L._AC_SL300_.jpg"
+  },
+  "ASUS ROG Strix B650E-F Gaming WiFi": {
+    "asin": "B0BHMTYZKZ",
+    "image": "https://m.media-amazon.com/images/I/814z1MeUZyL._AC_SL300_.jpg"
+  },
+  "ASUS TUF Gaming B650-Plus WiFi": {
+    "asin": "B0BHN7GGBQ",
+    "image": "https://m.media-amazon.com/images/I/81ogi-krqkL._AC_SL300_.jpg"
+  },
+  "MSI PRO B650-P WiFi": {
+    "asin": "B0BHBT5BD3",
+    "image": "https://m.media-amazon.com/images/I/71kNTT8-YaL._AC_SL300_.jpg"
+  },
+  "ASRock B650M-HDV/M.2": {
+    "asin": "B0BY6YRT41",
+    "image": "https://m.media-amazon.com/images/I/71DQoMnri9L._AC_SL300_.jpg"
+  },
+  "1GbE": {
+    "asin": "B0FNWHSPXF",
+    "image": "https://m.media-amazon.com/images/I/51Zf-5oEWdL._AC_SL300_.jpg"
+  },
+  "ASRock A620M-HDV/M.2+": {
+    "asin": "B0C1ZY1ZBH",
+    "image": "https://m.media-amazon.com/images/I/71Goe+I62ZL._AC_SL300_.jpg"
+  },
+  "ASUS ROG Strix B550-F Gaming WiFi II": {
+    "asin": "B09GP7P1XS",
+    "image": "https://m.media-amazon.com/images/I/81S9D7bqEzL._AC_SL300_.jpg"
+  },
+  "MSI MAG B550 Tomahawk": {
+    "asin": "B09ZJ73LDY",
+    "image": "https://m.media-amazon.com/images/I/61SdW0kfwQL._AC_SL300_.jpg"
+  },
+  "Gigabyte B550 AORUS Pro V2": {
+    "asin": "B08KGVH7YC",
+    "image": "https://m.media-amazon.com/images/I/71F98oJ0QNL._AC_SL300_.jpg"
+  },
+  "ASRock B550M Steel Legend": {
+    "asin": "B0BZQ1TNW8",
+    "image": "https://m.media-amazon.com/images/I/71tCMY0ve4L._AC_SL300_.jpg"
+  },
+  "MSI B450 Tomahawk MAX II": {
+    "asin": "B08L598DYN",
+    "image": "https://m.media-amazon.com/images/I/61dC+ExLsvL._AC_SL300_.jpg"
+  },
+  "ASUS ROG Maximus Z890 Hero": {
+    "asin": "B0DGWWRTPV",
+    "image": "https://m.media-amazon.com/images/I/71A8CyIhnrL._AC_SL300_.jpg"
+  },
+  "MSI MEG Z890 Ace": {
+    "asin": "B0DJPTRP57",
+    "image": "https://m.media-amazon.com/images/I/81AttfJprCL._AC_SL300_.jpg"
+  },
+  "MSI MAG Z890 Tomahawk WiFi": {
+    "asin": "B0DH6SF5LB",
+    "image": "https://m.media-amazon.com/images/I/810DDvs6N2L._AC_SL300_.jpg"
+  },
+  "Gigabyte Z890 AORUS Elite WiFi7": {
+    "asin": "B0FR671G1H",
+    "image": "https://m.media-amazon.com/images/I/71-Z4zqjwwL._AC_SL300_.jpg"
+  },
+  "ASUS TUF Gaming Z890-Plus WiFi": {
+    "asin": "B0DGWNVCHL",
+    "image": "https://m.media-amazon.com/images/I/81vTzY-rwYL._AC_SL300_.jpg"
+  },
+  "ASUS ROG Maximus Z790 Hero": {
+    "asin": "B0BG6M53DG",
+    "image": "https://m.media-amazon.com/images/I/81CpgF-+P4L._AC_SL300_.jpg"
+  },
+  "MSI MAG Z790 Tomahawk WiFi": {
+    "asin": "B0BL8K1YH1",
+    "image": "https://m.media-amazon.com/images/I/81aRnPKw8TL._AC_SL300_.jpg"
+  },
+  "Gigabyte Z790 AORUS Elite AX": {
+    "asin": "B0BH9DXY38",
+    "image": "https://m.media-amazon.com/images/I/81a48Z1GciL._AC_SL300_.jpg"
+  },
+  "ASUS TUF Gaming B760M-Plus WiFi D4": {
+    "asin": "B0BR8TRLRB",
+    "image": "https://m.media-amazon.com/images/I/81KbfKFNDAL._AC_SL300_.jpg"
+  },
+  "MSI PRO B760M-A WiFi DDR4": {
+    "asin": "B0BPB484K5",
+    "image": "https://m.media-amazon.com/images/I/610KBD5NsmL._AC_SL300_.jpg"
+  },
+  "Gigabyte B760M DS3H DDR4": {
+    "asin": "B0FR671G1H",
+    "image": "https://m.media-amazon.com/images/I/71Xx8c3bUVL._AC_SL300_.jpg"
+  },
+  "ASRock B760M Pro RS/D4": {
+    "asin": "B0C2C96LDL",
+    "image": "https://m.media-amazon.com/images/I/71RVYwj2r-L._AC_SL300_.jpg"
+  },
+  "Supermicro H13SSL-N (SP5)": {
+    "asin": "B0C6BR2JN6",
+    "image": "https://m.media-amazon.com/images/I/81P+ksQKKSL._AC_SL300_.jpg"
+  },
+  "2x 1GbE": {
+    "asin": "B0FVYB1Q6K",
+    "image": "https://m.media-amazon.com/images/I/61QrtYF4pbL._AC_SL300_.jpg"
+  },
+  "ASUS Pro WS WRX90E-SAGE SE (sWRX90)": {
+    "asin": "B0CQRYXWWQ",
+    "image": "https://m.media-amazon.com/images/I/71nzQJEHXDL._AC_SL300_.jpg"
+  },
+  "2x 10GbE": {
+    "asin": "B0DS4KC7Y3",
+    "image": "https://m.media-amazon.com/images/I/61pso2uktbL._AC_SL300_.jpg"
+  },
+  "ASRock Rack ROMED8-2T (SP3)": {
+    "asin": "B0BCXYTPDJ",
+    "image": "https://m.media-amazon.com/images/I/81CzYPzabJL._AC_SL300_.jpg"
+  },
+  "ASUS WS C621E SAGE (LGA3647)": {
+    "asin": "B0BZGGW2JP",
+    "image": "https://m.media-amazon.com/images/I/71HSI71xKiL._AC_SL300_.jpg"
+  },
+  "Corsair RM1200x SHIFT ATX 3.0": {
+    "asin": "B0BP88MYM4",
+    "image": "https://m.media-amazon.com/images/I/811oS15In2L._AC_SL300_.jpg"
+  },
+  "Corsair RM1000x ATX 3.0": {
+    "asin": "B0FLGMTSRQ",
+    "image": "https://m.media-amazon.com/images/I/71Xai-xG7wL._AC_SL300_.jpg"
+  },
+  "Corsair RM850x (2024)": {
+    "asin": "B0FLFGG1CC",
+    "image": "https://m.media-amazon.com/images/I/71Un8wbFMnL._AC_SL300_.jpg"
+  },
+  "Corsair RM750e ATX 3.0": {
+    "asin": "B0FLFGGDK3",
+    "image": "https://m.media-amazon.com/images/I/71ifAJ6M-uL._AC_SL300_.jpg"
+  },
+  "Seasonic PRIME TX-1600 ATX 3.0": {
+    "asin": "B0C572JWW9",
+    "image": "https://m.media-amazon.com/images/I/81Yv-PyM+ML._AC_SL300_.jpg"
+  },
+  "Seasonic PRIME TX-1300 ATX 3.0": {
+    "asin": "B0C572JWW9",
+    "image": "https://m.media-amazon.com/images/I/81Yv-PyM+ML._AC_SL300_.jpg"
+  },
+  "Seasonic Focus GX-850 ATX 3.0": {
+    "asin": "B0DLFMTX12",
+    "image": "https://m.media-amazon.com/images/I/813ZtCaWlvL._AC_SL300_.jpg"
+  },
+  "Seasonic Focus GX-750 ATX 3.0": {
+    "asin": "B0DLFM4YNM",
+    "image": "https://m.media-amazon.com/images/I/816Ka97cDyL._AC_SL300_.jpg"
+  },
+  "be quiet! Dark Power 13 1000W": {
+    "asin": "B0BV6CWS2Z",
+    "image": "https://m.media-amazon.com/images/I/81HxCfuGyeL._AC_SL300_.jpg"
+  },
+  "be quiet! Straight Power 12 850W": {
+    "asin": "B0FBXX1D17",
+    "image": "https://m.media-amazon.com/images/I/71uZg195moL._AC_SL300_.jpg"
+  },
+  "be quiet! Pure Power 12 M 750W": {
+    "asin": "B0FBXX1D17",
+    "image": "https://m.media-amazon.com/images/I/71-f9oX7bEL._AC_SL300_.jpg"
+  },
+  "EVGA SuperNOVA 1000 G7": {
+    "asin": "B0BZWZYTWJ",
+    "image": "https://m.media-amazon.com/images/I/71xR3Be4QyL._AC_SL300_.jpg"
+  },
+  "EVGA SuperNOVA 850 G7": {
+    "asin": "B010HWDOH6",
+    "image": "https://m.media-amazon.com/images/I/719RpF3y6LL._AC_SL300_.jpg"
+  },
+  "EVGA SuperNOVA 650 G7": {
+    "asin": "B08DZY15CW",
+    "image": "https://m.media-amazon.com/images/I/71TBlXU8+mL._AC_SL300_.jpg"
+  },
+  "Thermaltake Toughpower GF3 850W": {
+    "asin": "B0DJ6DGHCP",
+    "image": "https://m.media-amazon.com/images/I/7150fqSZ6HL._AC_SL300_.jpg"
+  },
+  "Thermaltake Toughpower GF3 1200W": {
+    "asin": "B0BF4YRCK8",
+    "image": "https://m.media-amazon.com/images/I/71f4AbFGD0L._AC_SL300_.jpg"
+  },
+  "Corsair CX650M": {
+    "asin": "B0FJYN5GWD",
+    "image": "https://m.media-amazon.com/images/I/81rcVNyNkfL._AC_SL300_.jpg"
+  },
+  "Corsair CX550M": {
+    "asin": "B0CQMQY2V2",
+    "image": "https://m.media-amazon.com/images/I/71V8e069n-L._AC_SL300_.jpg"
+  },
+  "Corsair SF750 SFX Platinum": {
+    "asin": "B0D45QCZHX",
+    "image": "https://m.media-amazon.com/images/I/716AZ6NQNuL._AC_SL300_.jpg"
+  },
+  "Corsair SF1000L SFX-L ATX 3.0": {
+    "asin": "B0D45RN3KZ",
+    "image": "https://m.media-amazon.com/images/I/71hc33n08pL._AC_SL300_.jpg"
+  },
+  "Cooler Master V850 SFX Gold": {
+    "asin": "B097Q9DB5G",
+    "image": "https://m.media-amazon.com/images/I/715YJHOqTHL._AC_SL300_.jpg"
+  },
+  "Lian Li SP750": {
+    "asin": "B0FJC6FM1C",
+    "image": "https://m.media-amazon.com/images/I/71ZENGaJTVL._AC_SL300_.jpg"
+  },
+  "Seasonic PRIME TX-1000": {
+    "asin": "B0C572JWW9",
+    "image": "https://m.media-amazon.com/images/I/81Yv-PyM+ML._AC_SL300_.jpg"
+  },
+  "Corsair HX1500i": {
+    "asin": "B0F1NGKBK3",
+    "image": "https://m.media-amazon.com/images/I/61p3tq9e2TL._AC_SL300_.jpg"
+  },
+  "be quiet! Dark Power 13 1300W": {
+    "asin": "B0BV6CWS2Z",
+    "image": "https://m.media-amazon.com/images/I/81HxCfuGyeL._AC_SL300_.jpg"
+  },
+  "Corsair iCUE 5000T RGB": {
+    "asin": "B09K1YNJTR",
+    "image": "https://m.media-amazon.com/images/I/81GtKCrsDEL._AC_SL300_.jpg"
+  },
+  "Lian Li O11 Dynamic EVO": {
+    "asin": "B0FN7FJ2CM",
+    "image": "https://m.media-amazon.com/images/I/711KCafWTAL._AC_SL300_.jpg"
+  },
+  "Corsair iCUE 7000X RGB": {
+    "asin": "B0F3XP5B84",
+    "image": "https://m.media-amazon.com/images/I/61z1IyBuI8L._AC_SL300_.jpg"
+  },
+  "Fractal Design North": {
+    "asin": "B09V8HNWW9",
+    "image": "https://m.media-amazon.com/images/I/71MSloBQcCL._AC_SL300_.jpg"
+  },
+  "NZXT H7 Flow (2024)": {
+    "asin": "B0CV4RYKLF",
+    "image": "https://m.media-amazon.com/images/I/81t+IADQUQL._AC_SL300_.jpg"
+  },
+  "Corsair 4000D Airflow": {
+    "asin": "B0DFHNV7TK",
+    "image": "https://m.media-amazon.com/images/I/61-u3G8Bg9L._AC_SL300_.jpg"
+  },
+  "Fractal Design Meshify 2 Compact": {
+    "asin": "B0822Y6H34",
+    "image": "https://m.media-amazon.com/images/I/81ksFDP-WxL._AC_SL300_.jpg"
+  },
+  "Phanteks XT Pro Ultra": {
+    "asin": "B0D2MK6NML",
+    "image": "https://m.media-amazon.com/images/I/51wAv5q4adL._AC_SL300_.jpg"
+  },
+  "HYTE Y60": {
+    "asin": "B0BGVWX5H8",
+    "image": "https://m.media-amazon.com/images/I/71TuyBKv0UL._AC_SL300_.jpg"
+  },
+  "Lian Li Lancool III": {
+    "asin": "B0B9WF5FW1",
+    "image": "https://m.media-amazon.com/images/I/71YoZkLbHWL._AC_SL300_.jpg"
+  },
+  "Montech AIR 903 MAX": {
+    "asin": "B0G4LH7KMM",
+    "image": "https://m.media-amazon.com/images/I/818kQMjezKL._AC_SL300_.jpg"
+  },
+  "Cooler Master HAF 700 EVO": {
+    "asin": "B09TL7Z2DZ",
+    "image": "https://m.media-amazon.com/images/I/61hC6R08S+L._AC_SL300_.jpg"
+  },
+  "be quiet! Dark Base Pro 901": {
+    "asin": "B0CWH71LQF",
+    "image": "https://m.media-amazon.com/images/I/61IhAP9l3LL._AC_SL300_.jpg"
+  },
+  "NZXT H5 Flow": {
+    "asin": "B0D2MK6NML",
+    "image": "https://m.media-amazon.com/images/I/51wAv5q4adL._AC_SL300_.jpg"
+  },
+  "Thermaltake Core P3 TG Pro": {
+    "asin": "B08FSQTLNV",
+    "image": "https://m.media-amazon.com/images/I/61LzjC43m6L._AC_SL300_.jpg"
+  },
+  "Lian Li A4-H2O": {
+    "asin": "B09T73JG49",
+    "image": "https://m.media-amazon.com/images/I/71oGbnMju5L._AC_SL300_.jpg"
+  },
+  "SSUPD Meshroom S": {
+    "asin": "B0FFBC7QMP",
+    "image": "https://m.media-amazon.com/images/I/91Hq-FTbmDL._AC_SL300_.jpg"
+  },
+  "Cooler Master NR200P MAX": {
+    "asin": "B09CF4YGJ8",
+    "image": "https://m.media-amazon.com/images/I/71-0V9OHxYL._AC_SL300_.jpg"
+  },
+  "Fractal Design Terra": {
+    "asin": "B09DKPXSFJ",
+    "image": "https://m.media-amazon.com/images/I/71gPj-tUmyL._AC_SL300_.jpg"
+  },
+  "Fractal Design Define 7 XL": {
+    "asin": "B08146GB6Y",
+    "image": "https://m.media-amazon.com/images/I/71VBHEeEYSL._AC_SL300_.jpg"
+  },
+  "Noctua NH-D15": {
+    "asin": "B0D5B6MXJF",
+    "image": "https://m.media-amazon.com/images/I/81i9YOlnPEL._AC_SL300_.jpg"
+  },
+  "Noctua NH-D15 G2": {
+    "asin": "B0FXGWKHND",
+    "image": "https://m.media-amazon.com/images/I/81w3r3ePupL._AC_SL300_.jpg"
+  },
+  "Noctua NH-U12A": {
+    "asin": "B098XP1Y38",
+    "image": "https://m.media-amazon.com/images/I/81Ww6xZa1aL._AC_SL300_.jpg"
+  },
+  "Noctua NH-U12S Redux": {
+    "asin": "B07Y88BNYZ",
+    "image": "https://m.media-amazon.com/images/I/81Qu6DEtTlL._AC_SL300_.jpg"
+  },
+  "Noctua NH-L9a-AM5": {
+    "asin": "B0BNL8ZM1T",
+    "image": "https://m.media-amazon.com/images/I/81n4HFa4rKL._AC_SL300_.jpg"
+  },
+  "be quiet! Dark Rock Pro 5": {
+    "asin": "B0CJY3DYQ3",
+    "image": "https://m.media-amazon.com/images/I/71kNp+hhyEL._AC_SL300_.jpg"
+  },
+  "be quiet! Dark Rock 4": {
+    "asin": "B0D3NXLZ1T",
+    "image": "https://m.media-amazon.com/images/I/71Zvkf1gx9L._AC_SL300_.jpg"
+  },
+  "DeepCool AK620": {
+    "asin": "B09LGY38L4",
+    "image": "https://m.media-amazon.com/images/I/71j6VKsz-fL._AC_SL300_.jpg"
+  },
+  "DeepCool Assassin IV": {
+    "asin": "B0FVS4JKWX",
+    "image": "https://m.media-amazon.com/images/I/61pfjJWuZWL._AC_SL300_.jpg"
+  },
+  "Thermalright Peerless Assassin 120 SE": {
+    "asin": "B0CL8Z43L8",
+    "image": "https://m.media-amazon.com/images/I/71j6VKsz-fL._AC_SL300_.jpg"
+  },
+  "Thermalright Burst Assassin 120": {
+    "asin": "B0D93X1TKG",
+    "image": "https://m.media-amazon.com/images/I/61Xddix0VKL._AC_SL300_.jpg"
+  },
+  "ID-COOLING SE-226-XT": {
+    "asin": "B0FX3HVG7X",
+    "image": "https://m.media-amazon.com/images/I/61DiTuSqDrL._AC_SL300_.jpg"
+  },
+  "Corsair iCUE H150i Elite LCD XT": {
+    "asin": "B0DF7CZ9D8",
+    "image": "https://m.media-amazon.com/images/I/718andDifNL._AC_SL300_.jpg"
+  },
+  "Corsair iCUE H100i Elite Capellix XT": {
+    "asin": "B0D6BF3RXL",
+    "image": "https://m.media-amazon.com/images/I/81AqrhMWDzL._AC_SL300_.jpg"
+  },
+  "NZXT Kraken 360": {
+    "asin": "B0F5SZK3WX",
+    "image": "https://m.media-amazon.com/images/I/51J3l5syD+L._AC_SL300_.jpg"
+  },
+  "NZXT Kraken 240": {
+    "asin": "B0F5SGK5Q7",
+    "image": "https://m.media-amazon.com/images/I/61HGp8olR1L._AC_SL300_.jpg"
+  },
+  "Arctic Liquid Freezer II 360": {
+    "asin": "B0DLWGG85P",
+    "image": "https://m.media-amazon.com/images/I/61NTew7Du+L._AC_SL300_.jpg"
+  },
+  "Arctic Liquid Freezer II 280": {
+    "asin": "B0DLWFCVSD",
+    "image": "https://m.media-amazon.com/images/I/61PKQBqmTEL._AC_SL300_.jpg"
+  },
+  "Arctic Liquid Freezer II 240": {
+    "asin": "B0DLWFCVSD",
+    "image": "https://m.media-amazon.com/images/I/71p2ud1LCWL._AC_SL300_.jpg"
+  },
+  "be quiet! Pure Loop 2 FX 360": {
+    "asin": "B0B7NTFMFD",
+    "image": "https://m.media-amazon.com/images/I/714HYKhUWDL._AC_SL300_.jpg"
+  },
+  "DeepCool LT720": {
+    "asin": "B0DLWGG85P",
+    "image": "https://m.media-amazon.com/images/I/61NTew7Du+L._AC_SL300_.jpg"
+  },
+  "Lian Li Galahad II Trinity 360": {
+    "asin": "B0CDF9WYLY",
+    "image": "https://m.media-amazon.com/images/I/717-NilSKVL._AC_SL300_.jpg"
+  },
+  "EK-AIO 360 D-RGB": {
+    "asin": "B0C1N56ZDC",
+    "image": "https://m.media-amazon.com/images/I/51-ILP9h2PL._AC_SL300_.jpg"
+  },
+  "Noctua NF-A12x25 PWM": {
+    "asin": "B09C6DQDNT",
+    "image": "https://m.media-amazon.com/images/I/91mh5IBa9OL._AC_SL300_.jpg"
+  },
+  "Noctua NF-A14 PWM": {
+    "asin": "B07655KF5C",
+    "image": "https://m.media-amazon.com/images/I/81QZ4VI-nvL._AC_SL300_.jpg"
+  },
+  "Noctua NF-A12x25 PWM 3-Pack": {
+    "asin": "B09C6DQDNT",
+    "image": "https://m.media-amazon.com/images/I/91mh5IBa9OL._AC_SL300_.jpg"
+  },
+  "Arctic P12 PST 5-Pack": {
+    "asin": "B0FJRYPLWJ",
+    "image": "https://m.media-amazon.com/images/I/71zrv43p18L._AC_SL300_.jpg"
+  },
+  "Arctic P14 PST 5-Pack": {
+    "asin": "B0DPX94PSL",
+    "image": "https://m.media-amazon.com/images/I/71vwdEvncJL._AC_SL300_.jpg"
+  },
+  "Corsair iCUE SP120 RGB Elite 3-Pack": {
+    "asin": "B0D49Q4CGM",
+    "image": "https://m.media-amazon.com/images/I/61kznszNyhL._AC_SL300_.jpg"
+  },
+  "Corsair iCUE AF120 RGB Elite 3-Pack": {
+    "asin": "B0CSSXZKJB",
+    "image": "https://m.media-amazon.com/images/I/71GZ+Nyev-L._AC_SL300_.jpg"
+  },
+  "Lian Li UNI FAN SL-INF 120 3-Pack": {
+    "asin": "B0B4P5S94P",
+    "image": "https://m.media-amazon.com/images/I/71xzV2pwgQL._AC_SL300_.jpg"
+  },
+  "be quiet! Silent Wings 4 120mm": {
+    "asin": "B0FBXX1D17",
+    "image": "https://m.media-amazon.com/images/I/61fKd0gyi0L._AC_SL300_.jpg"
+  },
+  "be quiet! Silent Wings 4 140mm": {
+    "asin": "B0B744J87R",
+    "image": "https://m.media-amazon.com/images/I/716zudlI1JL._AC_SL300_.jpg"
+  },
+  "be quiet! Light Wings 120mm 3-Pack": {
+    "asin": "B0DGLDGVJH",
+    "image": "https://m.media-amazon.com/images/I/51ozRJMEXtL._AC_SL300_.jpg"
+  },
+  "Phanteks T30-120": {
+    "asin": "B09B2LTXCN",
+    "image": "https://m.media-amazon.com/images/I/81vtNcOm8sL._AC_SL300_.jpg"
+  },
+  "DeepCool FK120 3-Pack": {
+    "asin": "B0FBWCZQ6H",
+    "image": "https://m.media-amazon.com/images/I/61BaLucbJiL._AC_SL300_.jpg"
+  },
+  "Thermalright TL-C12C-S 3-Pack": {
+    "asin": "B0FQ293XFQ",
+    "image": "https://m.media-amazon.com/images/I/61JuOzL3F1L._AC_SL300_.jpg"
+  },
+  "LG UltraGear 27GP850-B 27in 1440p 165Hz": {
+    "asin": "B0D1VW3JBM",
+    "image": "https://m.media-amazon.com/images/I/71PVdlAD4lL._AC_SL300_.jpg"
+  },
+  "Samsung Odyssey G7 28in 4K 144Hz": {
+    "asin": "B0BGVYQ8CC",
+    "image": "https://m.media-amazon.com/images/I/81F6CeKEkzL._AC_SL300_.jpg"
+  },
+  "ASUS ROG Swift PG27AQN 27in 1440p 360Hz": {
+    "asin": "B0DD2ZB3DZ",
+    "image": "https://m.media-amazon.com/images/I/81h+bGseNZL._AC_SL300_.jpg"
+  },
+  "Dell S2722DGM 27in 1440p 165Hz": {
+    "asin": "B0DD2ZB3DZ",
+    "image": "https://m.media-amazon.com/images/I/71E--5UD9vL._AC_SL300_.jpg"
+  },
+  "MSI MAG274QRF-QD 27in 1440p 165Hz": {
+    "asin": "B0DD2ZB3DZ",
+    "image": "https://m.media-amazon.com/images/I/819A4zPQ69L._AC_SL300_.jpg"
+  },
+  "Samsung Odyssey OLED G8 34in UW 175Hz": {
+    "asin": "B0DD2ZB3DZ",
+    "image": "https://m.media-amazon.com/images/I/61A+NquiOBL._AC_SL300_.jpg"
+  },
+  "LG 27GR95QE 27in 1440p 240Hz OLED": {
+    "asin": "B0DF786923",
+    "image": "https://m.media-amazon.com/images/I/81y-MFsA+GL._AC_SL300_.jpg"
+  },
+  "ASUS ProArt PA278QV 27in 1440p IPS": {
+    "asin": "B0DD2ZB3DZ",
+    "image": "https://m.media-amazon.com/images/I/81CFn-NfutL._AC_SL300_.jpg"
+  },
+  "AOC 24G2SP 24in 1080p 165Hz": {
+    "asin": "B0FC9F29VG",
+    "image": "https://m.media-amazon.com/images/I/71-o8B5FMTL._AC_SL300_.jpg"
+  },
+  "Gigabyte M27Q X 27in 1440p 240Hz": {
+    "asin": "B0FVFTMGDM",
+    "image": "https://m.media-amazon.com/images/I/81BnR0uMC8L._AC_SL300_.jpg"
+  },
+  "BenQ Zowie XL2546K 24.5in 1080p 240Hz": {
+    "asin": "B0FNNH6Y4G",
+    "image": "https://m.media-amazon.com/images/I/51AYrm8gi+L._AC_SL300_.jpg"
+  },
+  "BenQ PD2705Q 27in 1440p USB-C": {
+    "asin": "B0FNNH6Y4G",
+    "image": "https://m.media-amazon.com/images/I/71oYICHguhL._AC_SL300_.jpg"
+  },
+  "LG 32UN880-B 32in 4K Ergo USB-C": {
+    "asin": "B09N3G9T16",
+    "image": "https://m.media-amazon.com/images/I/81jl0VvT1KL._AC_SL300_.jpg"
+  },
+  "Samsung Odyssey Neo G9 57in Dual 4K 240Hz": {
+    "asin": "B0C595Y7CT",
+    "image": "https://m.media-amazon.com/images/I/61A+NquiOBL._AC_SL300_.jpg"
+  },
+  "ASUS ROG Swift PG42UQ 42in 4K 138Hz OLED": {
+    "asin": "B0C595Y7CT",
+    "image": "https://m.media-amazon.com/images/I/91jpo5oarTL._AC_SL300_.jpg"
+  },
+  "ASUS ROG Strix RTX 5090 OC": {
+    "asin": "B0DS2WQZ2M",
+    "image": "https://m.media-amazon.com/images/I/811IbTkEvnL._AC_SL300_.jpg"
+  },
+  "MSI RTX 5090 SUPRIM Liquid X": {
+    "asin": "B0F5DMVY82",
+    "image": "https://m.media-amazon.com/images/I/618bg7YJGpL._AC_SL300_.jpg"
+  },
+  "Gigabyte AORUS RTX 5090 MASTER": {
+    "asin": "B0DT7GHQMD",
+    "image": "https://m.media-amazon.com/images/I/71cfrt9r7tL._AC_SL300_.jpg"
+  },
+  "ZOTAC RTX 5090 AMP Extreme AIRO": {
+    "asin": "B0DV64SCM8",
+    "image": "https://m.media-amazon.com/images/I/71ovNPmeqoL._AC_SL300_.jpg"
+  },
+  "ASUS TUF RTX 5080 OC": {
+    "asin": "B0DQSMMCSH",
+    "image": "https://m.media-amazon.com/images/I/71WSd4clFZL._AC_SL300_.jpg"
+  },
+  "MSI RTX 5080 Gaming X Trio": {
+    "asin": "B0BX6LGM2X",
+    "image": "https://m.media-amazon.com/images/I/71n9sxFO9dL._AC_SL300_.jpg"
+  },
+  "Gigabyte RTX 5080 AORUS MASTER": {
+    "asin": "B0DT7HVT16",
+    "image": "https://m.media-amazon.com/images/I/71orj9hPxiL._AC_SL300_.jpg"
+  },
+  "ASUS ROG Strix RTX 5070 Ti OC": {
+    "asin": "B0F8LGTHJD",
+    "image": "https://m.media-amazon.com/images/I/81tYKg1osaL._AC_SL300_.jpg"
+  },
+  "MSI RTX 5070 Ti Gaming X Trio": {
+    "asin": "B0DV9GMDLR",
+    "image": "https://m.media-amazon.com/images/I/71qDAG4CFLL._AC_SL300_.jpg"
+  },
+  "ASUS Dual RTX 5070 OC": {
+    "asin": "B0DS6WPTLL",
+    "image": "https://m.media-amazon.com/images/I/81S9fi6ViFL._AC_SL300_.jpg"
+  },
+  "MSI RTX 5070 Ventus 3X OC": {
+    "asin": "B0DYG7KB27",
+    "image": "https://m.media-amazon.com/images/I/81rLJMXHXTL._AC_SL300_.jpg"
+  },
+  "Gigabyte RTX 5070 Gaming OC": {
+    "asin": "B0DTR3JK3Y",
+    "image": "https://m.media-amazon.com/images/I/718suf-wttL._AC_SL300_.jpg"
+  },
+  "ASUS ROG Strix RTX 4090 OC": {
+    "asin": "B0BGT61797",
+    "image": "https://m.media-amazon.com/images/I/815d7TTP5UL._AC_SL300_.jpg"
+  },
+  "MSI RTX 4090 SUPRIM X": {
+    "asin": "B09YD4FJ5R",
+    "image": "https://m.media-amazon.com/images/I/71mKnFnBj+L._AC_SL300_.jpg"
+  },
+  "Gigabyte RTX 4090 AORUS MASTER": {
+    "asin": "B0BGP87RQ2",
+    "image": "https://m.media-amazon.com/images/I/71weEUoPsyL._AC_SL300_.jpg"
+  },
+  "ASUS TUF RTX 4070 Ti SUPER OC": {
+    "asin": "B0CS3X3DTG",
+    "image": "https://m.media-amazon.com/images/I/71jjBcnQqyL._AC_SL300_.jpg"
+  },
+  "MSI RTX 4070 Ti SUPER Gaming X Trio": {
+    "asin": "B0CSG7FJH3",
+    "image": "https://m.media-amazon.com/images/I/71aeIYigEnL._AC_SL300_.jpg"
+  },
+  "ASUS Dual RTX 4070 SUPER OC": {
+    "asin": "B0DHG3S1P7",
+    "image": "https://m.media-amazon.com/images/I/81PChIf5pwL._AC_SL300_.jpg"
+  },
+  "MSI RTX 4070 SUPER Ventus 2X OC": {
+    "asin": "B0CS3YQZQH",
+    "image": "https://m.media-amazon.com/images/I/51e7Cg9xDeL._AC_SL300_.jpg"
+  },
+  "MSI RTX 4060 Ti Ventus 2X OC": {
+    "asin": "B0CBK7BRL9",
+    "image": "https://m.media-amazon.com/images/I/71FPIhwplIL._AC_SL300_.jpg"
+  },
+  "ASUS Dual RTX 4060 Ti OC": {
+    "asin": "B0C42GBMNZ",
+    "image": "https://m.media-amazon.com/images/I/81sIB+hIqhL._AC_SL300_.jpg"
+  },
+  "Gigabyte RTX 4060 Windforce OC": {
+    "asin": "B0CQKRRZ9K",
+    "image": "https://m.media-amazon.com/images/I/71wv2w6edAL._AC_SL300_.jpg"
+  },
+  "EVGA RTX 4060 XC Gaming": {
+    "asin": "B08WM28PVH",
+    "image": "https://m.media-amazon.com/images/I/81k6bxrB2YL._AC_SL300_.jpg"
+  },
+  "SAPPHIRE Nitro+ RX 9070 XT": {
+    "asin": "B0DW4FRCQR",
+    "image": "https://m.media-amazon.com/images/I/81anmp7jb6L._AC_SL300_.jpg"
+  },
+  "PowerColor Red Devil RX 9070 XT": {
+    "asin": "B0DW4FRCQR",
+    "image": "https://m.media-amazon.com/images/I/71BHpQLBvXL._AC_SL300_.jpg"
+  },
+  "XFX Speedster MERC310 RX 9070 XT": {
+    "asin": "B0DW4FRCQR",
+    "image": "https://m.media-amazon.com/images/I/61c71quJnlL._AC_SL300_.jpg"
+  },
+  "ASRock RX 9070 XT Taichi OC": {
+    "asin": "B0DW4FRCQR",
+    "image": "https://m.media-amazon.com/images/I/613MWdeckuL._AC_SL300_.jpg"
+  },
+  "SAPPHIRE Nitro+ RX 7900 XTX": {
+    "asin": "B0BR6JWP1Q",
+    "image": "https://m.media-amazon.com/images/I/81tvHo10s2L._AC_SL300_.jpg"
+  },
+  "PowerColor Red Devil RX 7900 XTX": {
+    "asin": "B0BMWGMX5B",
+    "image": "https://m.media-amazon.com/images/I/81skgrznGqL._AC_SL300_.jpg"
+  },
+  "SAPPHIRE Pulse RX 7800 XT": {
+    "asin": "B0CGM19NMS",
+    "image": "https://m.media-amazon.com/images/I/81LrgyAxfmL._AC_SL300_.jpg"
+  },
+  "XFX Speedster MERC310 RX 7800 XT": {
+    "asin": "B0CGM92TW8",
+    "image": "https://m.media-amazon.com/images/I/71FOTrbdncL._AC_SL300_.jpg"
+  },
+  "PowerColor Red Devil RX 7800 XT": {
+    "asin": "B0CWD7DNTB",
+    "image": "https://m.media-amazon.com/images/I/71BHpQLBvXL._AC_SL300_.jpg"
+  },
+  "ASRock RX 7800 XT Challenger OC": {
+    "asin": "B0CHK2345D",
+    "image": "https://m.media-amazon.com/images/I/61tneI9kg4L._AC_SL300_.jpg"
+  },
+  "SAPPHIRE Pulse RX 7700 XT": {
+    "asin": "B0DTHMPWFR",
+    "image": "https://m.media-amazon.com/images/I/71CC7BfXjGL._AC_SL300_.jpg"
+  },
+  "XFX Speedster SWFT210 RX 7700 XT": {
+    "asin": "B0D9QKXJDK",
+    "image": "https://m.media-amazon.com/images/I/61-D5GncsNL._AC_SL300_.jpg"
+  },
+  "MSI RX 7600 MECH 2X": {
+    "asin": "B0C4F9GSLM",
+    "image": "https://m.media-amazon.com/images/I/718GiZA71YL._AC_SL300_.jpg"
+  },
+  "SAPPHIRE Pulse RX 7600": {
+    "asin": "B0CTD21LW1",
+    "image": "https://m.media-amazon.com/images/I/71C+FycLQ8L._AC_SL300_.jpg"
+  },
+  "ASRock RX 7600 Challenger": {
+    "asin": "B0C626FFG2",
+    "image": "https://m.media-amazon.com/images/I/612GZBgV5TL._AC_SL300_.jpg"
+  },
+  "NVIDIA H200 PCIe": {
+    "asin": "B0D9J1KZZX",
+    "image": "https://m.media-amazon.com/images/I/41XzibJupDL._AC_SL300_.jpg"
+  },
+  "NVIDIA A2": {
+    "asin": "B09SLD1D91",
+    "image": "https://m.media-amazon.com/images/I/51ovCyjPWTL._AC_SL300_.jpg"
+  },
+  "Gigabyte B650M DS3H": {
+    "asin": "B0CH92B3S2",
+    "image": "https://m.media-amazon.com/images/I/717dNLOQHPL._AC_SL300_.jpg"
+  },
+  "MSI MAG B850 Tomahawk WiFi": {
+    "asin": "B0DT58JK2W",
+    "image": "https://m.media-amazon.com/images/I/81-l3VI4K7L._AC_SL300_.jpg"
+  },
+  "ASUS TUF Gaming B850-Plus WiFi": {
+    "asin": "B0DPLPLR88",
+    "image": "https://m.media-amazon.com/images/I/81Feh+ggmWL._AC_SL300_.jpg"
+  },
+  "Gigabyte B850 AORUS Elite WiFi7": {
+    "asin": "B0GP5Y8BXH",
+    "image": "https://m.media-amazon.com/images/I/71rZeGkdRnL._AC_SL300_.jpg"
+  },
+  "ASRock B850M Pro RS WiFi": {
+    "asin": "B0DRTWM32Q",
+    "image": "https://m.media-amazon.com/images/I/81rpHhH4rDL._AC_SL300_.jpg"
+  },
+  "MSI PRO Z890-A WiFi": {
+    "asin": "B0DH6W5M6R",
+    "image": "https://m.media-amazon.com/images/I/81CK0fFtjIL._AC_SL300_.jpg"
+  },
+  "Gigabyte Z890 AORUS Pro WiFi7": {
+    "asin": "B0DJP8NFWP",
+    "image": "https://m.media-amazon.com/images/I/71Mules4AtL._AC_SL300_.jpg"
+  },
+  "ASRock Z890 Taichi": {
+    "asin": "B0DJRP9CWD",
+    "image": "https://m.media-amazon.com/images/I/81s5Iu8+u8L._AC_SL300_.jpg"
+  },
+  "MSI PRO Z790-A WiFi DDR4": {
+    "asin": "B0G3TWBHYC",
+    "image": "https://m.media-amazon.com/images/I/81rZ8wPkVmL._AC_SL300_.jpg"
+  },
+  "ASUS PRIME B660M-A D4": {
+    "asin": "B0BR8S9KTT",
+    "image": "https://m.media-amazon.com/images/I/81VNRxCFeDL._AC_SL300_.jpg"
+  },
+  "Gigabyte B660M DS3H DDR4": {
+    "asin": "B083R7SWF5",
+    "image": "https://m.media-amazon.com/images/I/81K+5-5fBIL._AC_SL300_.jpg"
+  },
+  "ASUS ROG Strix X570-E Gaming WiFi II": {
+    "asin": "B09GP7P1XS",
+    "image": "https://m.media-amazon.com/images/I/81S9D7bqEzL._AC_SL300_.jpg"
+  },
+  "Gigabyte B550M K": {
+    "asin": "B0FR671G1H",
+    "image": "https://m.media-amazon.com/images/I/71Gm7vworoL._AC_SL300_.jpg"
+  },
+  "ASRock B550 Phantom Gaming 4": {
+    "asin": "B089VTZ83Q",
+    "image": "https://m.media-amazon.com/images/I/71FDkdGx1gL._AC_SL300_.jpg"
+  },
+  "MSI MPG B550 Gaming Plus": {
+    "asin": "B0FBTB431C",
+    "image": "https://m.media-amazon.com/images/I/91oChAepmRL._AC_SL300_.jpg"
+  },
+  "ASUS ROG Strix B650E-I Gaming WiFi": {
+    "asin": "B0BP9LJBP8",
+    "image": "https://m.media-amazon.com/images/I/81BPi2SezeL._AC_SL300_.jpg"
+  },
+  "Gigabyte B650I AORUS Ultra": {
+    "asin": "B0GP5Y8BXH",
+    "image": "https://m.media-amazon.com/images/I/81WQLq7I8AL._AC_SL300_.jpg"
+  },
+  "ASUS ROG Strix Z790-I Gaming WiFi": {
+    "asin": "B0DHCQ1MPZ",
+    "image": "https://m.media-amazon.com/images/I/81rydJMfVxL._AC_SL300_.jpg"
+  },
+  "Corsair 3500X Mid-Tower": {
+    "asin": "B0CZVN6KY5",
+    "image": "https://m.media-amazon.com/images/I/71j8fhiZsRL._AC_SL300_.jpg"
+  },
+  "be quiet! Pure Base 500DX": {
+    "asin": "B0DYM1C6LB",
+    "image": "https://m.media-amazon.com/images/I/71TXxZJy-rL._AC_SL300_.jpg"
+  },
+  "Phanteks Eclipse G500A": {
+    "asin": "B0BMPD1CVP",
+    "image": "https://m.media-amazon.com/images/I/81JDiPfS3ML._AC_SL300_.jpg"
+  },
+  "Cooler Master MasterBox TD500 Mesh V2": {
+    "asin": "B0BP4B8QX3",
+    "image": "https://m.media-amazon.com/images/I/81mlDtLolEL._AC_SL300_.jpg"
+  },
+  "Lian Li Lancool 216": {
+    "asin": "B0BN3SY5XW",
+    "image": "https://m.media-amazon.com/images/I/71vLpHR6e4L._AC_SL300_.jpg"
+  },
+  "NZXT H9 Flow": {
+    "asin": "B0DQPQ5KN7",
+    "image": "https://m.media-amazon.com/images/I/713NuIfbhZL._AC_SL300_.jpg"
+  },
+  "Corsair 2500X Mid-Tower": {
+    "asin": "B0CTR45PV8",
+    "image": "https://m.media-amazon.com/images/I/61ayf4c+FBL._AC_SL300_.jpg"
+  },
+  "DeepCool CH510": {
+    "asin": "B0FX68NXSN",
+    "image": "https://m.media-amazon.com/images/I/614rheGgGvL._AC_SL300_.jpg"
+  },
+  "Fractal Design Pop Air": {
+    "asin": "B08C2XKPNK",
+    "image": "https://m.media-amazon.com/images/I/71vS9BCo5vL._AC_SL300_.jpg"
+  },
+  "Montech X3 Mesh": {
+    "asin": "B0F9WB5Y9R",
+    "image": "https://m.media-amazon.com/images/I/71+Mowup0SL._AC_SL300_.jpg"
+  },
+  "MSI MAG A850GL PCIE5": {
+    "asin": "B0CB9MSJ5N",
+    "image": "https://m.media-amazon.com/images/I/71b3DFHWd7L._AC_SL300_.jpg"
+  },
+  "MSI MAG A750GL PCIE5": {
+    "asin": "B0CC3QBGDL",
+    "image": "https://m.media-amazon.com/images/I/716c-SjLwPL._AC_SL300_.jpg"
+  },
+  "DeepCool PX1200G": {
+    "asin": "B0DXVPBJJ2",
+    "image": "https://m.media-amazon.com/images/I/71KQQqOt5HL._AC_SL300_.jpg"
+  },
+  "DeepCool PX850G": {
+    "asin": "B0FM7HZK5F",
+    "image": "https://m.media-amazon.com/images/I/71huUpR2FVL._AC_SL300_.jpg"
+  },
+  "Thermaltake Smart 600W": {
+    "asin": "B014W3EMAO",
+    "image": "https://m.media-amazon.com/images/I/71GNnNSyIrL._AC_SL300_.jpg"
+  },
+  "EVGA 600 BR": {
+    "asin": "B014W3EMAO",
+    "image": "https://m.media-amazon.com/images/I/71GNnNSyIrL._AC_SL300_.jpg"
+  },
+  "Corsair RM650": {
+    "asin": "B0FLG4M8S2",
+    "image": "https://m.media-amazon.com/images/I/71Le6arh1+L._AC_SL300_.jpg"
+  },
+  "ASUS ROG Thor 1200P2": {
+    "asin": "B0FFYB49YH",
+    "image": "https://m.media-amazon.com/images/I/814nsveacVL._AC_SL300_.jpg"
+  },
+  "FSP Hydro G PRO 850W": {
+    "asin": "B0CGGMBP61",
+    "image": "https://m.media-amazon.com/images/I/61DPtem6YYL._AC_SL300_.jpg"
+  },
+  "Phanteks Revolt ATX 3.0 1000W": {
+    "asin": "B0CCV79718",
+    "image": "https://m.media-amazon.com/images/I/81xFunOlQsL._AC_SL300_.jpg"
+  },
+  "Corsair K70 RGB PRO": {
+    "asin": "B09NCMHTSB",
+    "image": "https://m.media-amazon.com/images/I/71GIaV46CvL._AC_SL300_.jpg"
+  },
+  "Razer Huntsman V3 TKL": {
+    "asin": "B0DGZLHN8G",
+    "image": "https://m.media-amazon.com/images/I/71zigHBIuiL._AC_SL300_.jpg"
+  },
+  "Razer BlackWidow V4": {
+    "asin": "B0DD5S8TM8",
+    "image": "https://m.media-amazon.com/images/I/71zigHBIuiL._AC_SL300_.jpg"
+  },
+  "Logitech G915 TKL Lightspeed": {
+    "asin": "B07QQB9VCV",
+    "image": "https://m.media-amazon.com/images/I/61o4uq5xTZL._AC_SL300_.jpg"
+  },
+  "Keychron Q1 Pro": {
+    "asin": "B0CR1JHZ6R",
+    "image": "https://m.media-amazon.com/images/I/614tWo3DlIL._AC_SL300_.jpg"
+  },
+  "Keychron V6": {
+    "asin": "B0G1YCS2H4",
+    "image": "https://m.media-amazon.com/images/I/71-tsb8e+OL._AC_SL300_.jpg"
+  },
+  "Ducky One 3 TKL": {
+    "asin": "B0DGZLHN8G",
+    "image": "https://m.media-amazon.com/images/I/71JUxUfS3QL._AC_SL300_.jpg"
+  },
+  "SteelSeries Apex Pro TKL (2023)": {
+    "asin": "B0DGZLHN8G",
+    "image": "https://m.media-amazon.com/images/I/713vLZcw3FL._AC_SL300_.jpg"
+  },
+  "Razer DeathAdder V3 Pro": {
+    "asin": "B0B6XZLNHQ",
+    "image": "https://m.media-amazon.com/images/I/71fRKz9pUnL._AC_SL300_.jpg"
+  },
+  "Pulsar X2 Mini": {
+    "asin": "B0FN7HCZT1",
+    "image": "https://m.media-amazon.com/images/I/61eVhPZ4OcL._AC_SL300_.jpg"
+  },
+  "Logitech G502 X Plus": {
+    "asin": "B0CW25XR5R",
+    "image": "https://m.media-amazon.com/images/I/61A0MX5s2xL._AC_SL300_.jpg"
+  },
+  "Corsair M75 Air Wireless": {
+    "asin": "B0G4LH7KMM",
+    "image": "https://m.media-amazon.com/images/I/61UG3YVcW-L._AC_SL300_.jpg"
+  },
+  "SteelSeries Aerox 5 Wireless": {
+    "asin": "B0F6BDV5Q8",
+    "image": "https://m.media-amazon.com/images/I/61Ibl7dJyUL._AC_SL300_.jpg"
+  },
+  "Zowie EC2-CW": {
+    "asin": "B0DJTXYTPD",
+    "image": "https://m.media-amazon.com/images/I/61wqy33Y28L._AC_SL300_.jpg"
+  },
+  "Razer Basilisk V3 Pro": {
+    "asin": "B0DG837JYP",
+    "image": "https://m.media-amazon.com/images/I/71L-flqtTwL._AC_SL300_.jpg"
+  },
+  "Logitech G Pro X 2 Lightspeed": {
+    "asin": "B0CZX86R9F",
+    "image": "https://m.media-amazon.com/images/I/51Vqs9NufmL._AC_SL300_.jpg"
+  },
+  "Razer BlackShark V2 Pro (2023)": {
+    "asin": "B0FDP42BTF",
+    "image": "https://m.media-amazon.com/images/I/71NOztzbq2L._AC_SL300_.jpg"
+  },
+  "Corsair Virtuoso RGB Wireless XT": {
+    "asin": "B0D2HKCMBP",
+    "image": "https://m.media-amazon.com/images/I/71xK0oPvBLL._AC_SL300_.jpg"
+  },
+  "SteelSeries Arctis Nova 7 Wireless": {
+    "asin": "B0FRP537FV",
+    "image": "https://m.media-amazon.com/images/I/61N0FDEDN5L._AC_SL300_.jpg"
+  },
+  "Razer Kraken V4 Pro": {
+    "asin": "B0DQB2YPMH",
+    "image": "https://m.media-amazon.com/images/I/71CZaYipN1L._AC_SL300_.jpg"
+  },
+  "HyperX Cloud Alpha Wireless": {
+    "asin": "B0B8PGDMWK",
+    "image": "https://m.media-amazon.com/images/I/61QuSjmveAL._AC_SL300_.jpg"
+  },
+  "Beyerdynamic DT 900 Pro X": {
+    "asin": "B0011UB9CQ",
+    "image": "https://m.media-amazon.com/images/I/71TIcDv5GoL._AC_SL300_.jpg"
+  },
+  "Audio-Technica ATH-M50x": {
+    "asin": "B0BKT8N1Z9",
+    "image": "https://m.media-amazon.com/images/I/71QcmhS1P7L._AC_SL300_.jpg"
+  }
+}
