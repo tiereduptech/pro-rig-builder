@@ -76,8 +76,8 @@ const BUILDER_SECTIONS=[
   {id:"peripherals",label:"Peripherals",icon:"🖥️",cats:PERIPH_CATS},
   {id:"accessories",label:"Accessories",icon:"🎒",cats:ACCESSORY_CATS},
 ];
-const SL={cores:"Cores/Threads",socket:"Socket",tdp:"TDP",bench:"Score",vram:"VRAM",cap:"Capacity",speed:"Speed",ff:"Form Factor",wifi:"WiFi",storageType:"Type",watts:"Watts",eff:"Rating",modular:"Modular",panel:"Panel",res:"Resolution",refresh:"Refresh",screenSize:"Screen",switches:"Switches",layout:"Layout",wireless:"Wireless",baseClock:"Base Clock",boostClock:"Boost Clock",threads:"Threads",length:"Length",pwr:"Power",seq_r:"Read",seq_w:"Write",cl:"CAS Latency",ramType:"Type",chipset:"Chipset",coolerType:"Type",noise:"Noise",tdp_rating:"TDP Rating",fans_inc:"Fans Included",maxGPU:"Max GPU Length",maxCooler:"Max Cooler",cfm:"Airflow",size:"Size",sensor:"Sensor",dpi:"DPI",weight:"Weight",driver:"Driver",mic:"Mic",hsType:"Type",mouseType:"Type",segment:"Use Case",arch:"Architecture",pcie:"PCIe",tg:"Glass Panel",usb_c:"USB-C",mobo:"Mobo Support",drive25:"2.5in Bays",drive35:"3.5in Bays",memType:"Memory",memSlots:"RAM Slots",maxMem:"Max RAM",m2Slots:"M.2 Slots",lan:"Ethernet",ecc:"ECC",rgb:"RGB",rgbType:"RGB Type",rgbConnector:"RGB Connector",color:"Color",igpu:"iGPU",igpuName:"iGPU Name",vcache:"V-Cache",serverCPU:"Server",pCores:"P-Cores",eCores:"E-Cores",l3:"L3 Cache",nm:"Process",bus:"Bus Width",slots:"Slot Width",interface:"Interface",dram:"DRAM Cache",tlc:"NAND Type",pack:"Pack",atx3:"ATX 3.0",radSize:"Radiator",rads:"AIO Support",height:"Height",fans:"Fans",fanSize:"Fan Size",response:"Response",sync:"Adaptive Sync",hdr:"HDR",curved:"Curved",hotswap:"Hot-Swap",pollingRate:"Polling Rate",shape:"Grip",anc:"ANC",surroundSound:"Surround",openBack:"Open Back",autofocus:"Autofocus",fov:"FOV",pattern:"Pattern",sampleRate:"Sample Rate",bitDepth:"Bit Depth",connection:"Connection",connector:"Fan Connector",channels:"Channels",snr:"SNR",hasAmp:"Headphone Amp",lanSpeed:"Speed",ports:"Ports",wifiStandard:"WiFi",bt:"Bluetooth",driveType:"Drive Type",readSpeed:"Read Speed",writeSpeed:"Write Speed",memSpeed:"Memory Speed*",audio:"Audio",sticks:"Sticks",voltage:"Voltage",cuda:"CUDA Cores",boost:"Boost Clock",tier:"Suggested Use",sp:"Stream Processors",xeCores:"Xe Cores",maxMemSpeed:"Max RAM Speed",sata:"SATA Ports",pciSlots:"PCIe Slots",impedance:"Max Impedance",formFactor:"Form Factor",digitalOut:"Digital Output",pcieLane:"PCIe Lane",profile:"Profile",wol:"Wake-on-LAN",vlan:"VLAN",pxe:"PXE Boot",maxSpeed:"Max Speed",antennas:"Antennas",band:"Band",heatsink:"Heatsink",dacChip:"DAC Chip",outputPower:"Output Power"};
-const SF={cores:(v,p)=>p&&p.threads?v+"C/"+p.threads+"T":v+"C",sticks:(v,p)=>{if(!v)return v;const total=p&&(p.cap||p.capacity);if(total&&v>0){const per=Math.round(total/v);return v+"x"+per+"GB";}return v+"x";},tdp:v=>v+"W",vram:v=>v+"GB",cap:v=>typeof v==="number"?(v>=1000?(v/1000)+"TB":v+"GB"):v,speed:v=>v+"MHz",watts:v=>v+"W",wifi:v=>v||"None",refresh:v=>v+"Hz",screenSize:v=>v+'in',bench:v=>v+"%",baseClock:v=>v+"GHz",boostClock:v=>v+"GHz",length:v=>v+"mm",seq_r:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",seq_w:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",noise:v=>{const n=typeof v==="number"?v:parseFloat(v);if(isNaN(n))return v;const ref=n<=15?"Near silent":n<=20?"Whisper quiet":n<=25?"Library quiet":n<=30?"Quiet room":n<=35?"Light hum":n<=40?"Noticeable":"Loud";return n+"dBA\n"+ref;},tdp_rating:v=>v+"W",maxGPU:v=>v+"mm",maxCooler:v=>v+"mm",cfm:v=>typeof v==="number"?v.toFixed(1)+" CFM":v,dpi:v=>v>=1000?(v/1000)+"K":v,weight:v=>v+"g",cl:v=>"CL"+v,driver:v=>v+"mm",height:v=>v+"mm",voltage:v=>v+"V",boost:v=>v+"MHz",tier:v=>typeof v==="string"?v.charAt(0).toUpperCase()+v.slice(1):v,snr:v=>v+"dB",sampleRate:v=>v+"kHz",lanSpeed:v=>v,tg:v=>v?"Yes":"No",usb_c:v=>v?"Yes":"No",ecc:v=>v?"Yes":"No",rgb:v=>v?"Yes":"No",igpu:v=>v?"Yes":"No",vcache:v=>v?"Yes":"No",serverCPU:v=>v?"Yes":"No",atx3:v=>v?"Yes":"No",dram:v=>v?"Yes":"No",wireless:v=>v?"Yes":"No",curved:v=>v?"Yes":"No",hotswap:v=>v?"Yes":"No",anc:v=>v?"Yes":"No",mic:v=>typeof v==="boolean"?(v?"Yes":"No"):v,hasAmp:v=>v?"Yes":"No",autofocus:v=>v?"Yes":"No",wol:v=>v?"Yes":"No",vlan:v=>v?"Yes":"No",pxe:v=>v?"Yes":"No",digitalOut:v=>v?"Yes":"No",heatsink:v=>v?"Yes":"No",impedance:v=>v+"Ω",rads:v=>{if(!v)return"None";const sizes=String(v).split(",").map(s=>s.trim());const max=Math.max(...sizes.map(s=>parseInt(s)||0));return max>=360?"Up to 360mm":max>=280?"Up to 280mm":max>=240?"Up to 240mm":max>=120?"120mm only":"None";}};
+const SL={cores:"Cores/Threads",socket:"Socket",tdp:"TDP",bench:"Score",vram:"VRAM",cap:"Capacity",speed:"Speed",ff:"Form Factor",wifi:"WiFi",storageType:"Type",watts:"Watts",eff:"Rating",modular:"Modular",panel:"Panel",res:"Resolution",refresh:"Refresh",screenSize:"Screen",switches:"Switches",layout:"Layout",wireless:"Wireless",baseClock:"Base Clock",boostClock:"Boost Clock",threads:"Threads",length:"Length",pwr:"Power",seq_r:"Read",seq_w:"Write",cl:"CAS Latency",ramType:"Type",chipset:"Chipset",coolerType:"Type",noise:"Noise",tdp_rating:"TDP Rating",fans_inc:"Fans Included",maxGPU:"Max GPU Length",maxCooler:"Max Cooler",cfm:"Airflow",size:"Size",sensor:"Sensor",dpi:"DPI",weight:"Weight",driver:"Driver",mic:"Mic",hsType:"Type",mouseType:"Type",segment:"Use Case",arch:"Architecture",pcie:"PCIe",tg:"Glass Panel",usb_c:"USB-C",mobo:"Mobo Support",drive25:"2.5in Bays",drive35:"3.5in Bays",memType:"Memory",memSlots:"RAM Slots",maxMem:"Max RAM",m2Slots:"M.2 Slots",lan:"Ethernet",ecc:"ECC",rgb:"RGB",rgbType:"RGB Type",rgbConnector:"RGB Connector",color:"Color",igpu:"iGPU",igpuName:"iGPU Name",vcache:"V-Cache",serverCPU:"Server",pCores:"P-Cores",eCores:"E-Cores",l3:"L3 Cache",nm:"Process",bus:"Bus Width",slots:"Slot Width",interface:"Interface",dram:"DRAM Cache",tlc:"NAND Type",pack:"Pack",atx3:"ATX 3.0",radSize:"Radiator",rads:"AIO Support",height:"Height",fans:"Fans",fanSize:"Fan Size",response:"Response",sync:"Adaptive Sync",hdr:"HDR",curved:"Curved",hotswap:"Hot-Swap",pollingRate:"Polling Rate",shape:"Grip",anc:"ANC",surroundSound:"Surround",openBack:"Open Back",autofocus:"Autofocus",fov:"FOV",pattern:"Pattern",sampleRate:"Sample Rate",bitDepth:"Bit Depth",connection:"Connection",connector:"Fan Connector",channels:"Channels",snr:"SNR",hasAmp:"Headphone Amp",lanSpeed:"Speed",ports:"Ports",wifiStandard:"WiFi",bt:"Bluetooth",driveType:"Drive Type",readSpeed:"Read Speed",writeSpeed:"Write Speed",memSpeed:"Memory Speed*",audio:"Audio",sticks:"Sticks",voltage:"Voltage",cuda:"CUDA Cores",boost:"Boost Clock",tier:"Suggested Use",sp:"Stream Processors",xeCores:"Xe Cores",maxMemSpeed:"Max RAM Speed",sata:"SATA Ports",pciSlots:"PCIe Slots",impedance:"Max Impedance",formFactor:"Form Factor",digitalOut:"Digital Output",pcieLane:"PCIe Lane",profile:"Profile",wol:"Wake-on-LAN",vlan:"VLAN",pxe:"PXE Boot",maxSpeed:"Max Speed",antennas:"Antennas",band:"Band",heatsink:"Heatsink",dacChip:"DAC Chip",outputPower:"Output Power",upc:"UPC"};
+const SF={cores:(v,p)=>p&&p.threads?v+"C/"+p.threads+"T":v+"C",sticks:(v,p)=>{if(!v)return v;const total=p&&(p.cap||p.capacity);if(total&&v>0){const per=Math.round(total/v);return v+"x"+per+"GB";}return v+"x";},tdp:v=>v+"W",vram:v=>v+"GB",cap:v=>typeof v==="number"?(v>=1000?(v/1000)+"TB":v+"GB"):v,speed:v=>v+"MHz",watts:v=>v+"W",wifi:v=>v||"None",refresh:v=>v+"Hz",screenSize:v=>v+'in',bench:v=>v+"%",baseClock:v=>v+"GHz",boostClock:v=>v+"GHz",length:v=>v+"mm",seq_r:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",seq_w:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",noise:v=>{const n=typeof v==="number"?v:parseFloat(v);if(isNaN(n))return v;const ref=n<=15?"Near silent":n<=20?"Whisper quiet":n<=25?"Library quiet":n<=30?"Quiet room":n<=35?"Light hum":n<=40?"Noticeable":"Loud";return n+"dBA\n"+ref;},tdp_rating:v=>v+"W",maxGPU:v=>v+"mm",maxCooler:v=>v+"mm",cfm:v=>typeof v==="number"?v.toFixed(1)+" CFM":v,dpi:v=>v>=1000?(v/1000)+"K":v,weight:v=>v+"g",cl:v=>"CL"+v,driver:v=>v+"mm",height:v=>v+"mm",voltage:v=>v+"V",boost:v=>v+"MHz",tier:v=>typeof v==="string"?v.charAt(0).toUpperCase()+v.slice(1):v,snr:v=>v+"dB",sampleRate:v=>v+"kHz",lanSpeed:v=>v,tg:v=>v?"Yes":"No",usb_c:v=>v?"Yes":"No",ecc:v=>v?"Yes":"No",rgb:v=>v?"Yes":"No",igpu:v=>v?"Yes":"No",vcache:v=>v?"Yes":"No",serverCPU:v=>v?"Yes":"No",atx3:v=>v?"Yes":"No",dram:v=>v?"Yes":"No",wireless:v=>v?"Yes":"No",curved:v=>v?"Yes":"No",hotswap:v=>v?"Yes":"No",anc:v=>v?"Yes":"No",mic:v=>typeof v==="boolean"?(v?"Yes":"No"):v,hasAmp:v=>v?"Yes":"No",autofocus:v=>v?"Yes":"No",wol:v=>v?"Yes":"No",vlan:v=>v?"Yes":"No",pxe:v=>v?"Yes":"No",digitalOut:v=>v?"Yes":"No",heatsink:v=>v?"Yes":"No",impedance:v=>v+"Ω",upc:v=>{if(!v)return"—";const list=String(v).split(",").map(x=>x.trim()).filter(Boolean);return list.length>1?list[0]+" (+"+(list.length-1)+")":list[0];},rads:v=>{if(!v)return"None";const sizes=String(v).split(",").map(s=>s.trim());const max=Math.max(...sizes.map(s=>parseInt(s)||0));return max>=360?"Up to 360mm":max>=280?"Up to 280mm":max>=240?"Up to 240mm":max>=120?"120mm only":"None";}};
 const fmt=(k,v,p)=>v==null?"—":(SF[k]?SF[k](v,p):String(v));
 
 // ── Map old category names and make all parts available ──
@@ -1072,7 +1072,7 @@ function BuilderPage({th}){
     if(cat==="CPUCooler")return `${p.coolType} · ${p.coolerH||"?"}mm`;
     if(cat==="CaseFan")return `${p.fanSize}mm · ${p.packQty||1}x · ${p.airflow||"?"}CFM`;
     if(cat==="Monitor")return `${p.size}" ${p.panel} ${p.resolution} ${p.refreshRate}Hz`;
-    return Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","uid"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").slice(0,2).map(([k,v])=>`${fmt(k,v)}`).join(" · ");};
+    return Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","uid","upc"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").slice(0,2).map(([k,v])=>`${fmt(k,v)}`).join(" · ");};
 
   // ── Render a builder section ──
   const renderSection=(section)=>{
@@ -1206,7 +1206,61 @@ function BuilderPage({th}){
 
 
 /* ═══ COMMUNITY ═══ */
-function CommunityPage({th}){return <div className="fade" style={{maxWidth:900,margin:"0 auto",padding:"28px 20px"}}><h2 style={{fontFamily:"var(--ff)",fontSize:20,fontWeight:800,color:"var(--txt)",marginBottom:16}}>Community Builds</h2><div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>{BUILDS.map(b=>{const parts=b.ids.map(fp).filter(Boolean);const tot=parts.reduce((s,p)=>s+$(p),0);return <div key={b.id} style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:16}}><div style={{display:"flex",justifyContent:"space-between"}}><div><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>{b.nm}</div><div style={{fontSize:10,color:"var(--dim)",fontFamily:"var(--ff)"}}>by {b.by}</div></div><span style={{fontFamily:"var(--mono)",fontSize:12,color:"var(--amber)",fontWeight:600}}>▲{b.v}</span></div><p style={{fontSize:11,color:"var(--dim)",margin:"6px 0",fontFamily:"var(--ff)"}}>{b.d}</p><div style={{display:"flex",gap:3}}>{b.tags.map(t=><Tag key={t} color="var(--sky)">{t}</Tag>)}</div><div style={{marginTop:10,paddingTop:8,borderTop:"1px solid var(--bdr)"}}>{parts.map(p=><div key={p.id} style={{display:"flex",justifyContent:"space-between",padding:"2px 0"}}><span style={{fontSize:10,color:"var(--txt)",fontFamily:"var(--ff)"}}>{ic(p)} {p.n}</span><span style={{fontSize:10,color:"var(--mint)",fontFamily:"var(--mono)"}}>${$(p)}</span></div>)}</div><div style={{display:"flex",justifyContent:"space-between",marginTop:8,paddingTop:6,borderTop:"1px solid var(--bdr)"}}><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>Total</span><span style={{fontFamily:"var(--mono)",fontSize:16,color:"var(--mint)",fontWeight:700}}>${tot}</span></div></div>})}</div></div>}
+function CommunityPage({th}){
+  const tierColor=t=>t==="Excellent"?"var(--mint)":t==="Great"?"var(--sky)":t==="Smooth"?"var(--amber)":t==="Playable"?"var(--rose)":"var(--mute)";
+  return <div className="fade" style={{maxWidth:900,margin:"0 auto",padding:"28px 20px"}}>
+    <h2 style={{fontFamily:"var(--ff)",fontSize:20,fontWeight:800,color:"var(--txt)",marginBottom:16}}>Community Builds</h2>
+    <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>
+      {BUILDS.map(b=>{
+        const parts=b.ids.map(fp).filter(Boolean);
+        const tot=parts.reduce((s,p)=>s+$(p),0);
+        const gpu=parts.find(p=>p.c==="GPU");
+        const cpu=parts.find(p=>p.c==="CPU");
+        const gpuKey=gpu?matchGPU(gpu.n):null;
+        const cpuKey=cpu?matchCPU(cpu.n):null;
+        const fpsGames=(gpuKey&&cpuKey)?estimateAllGames(gpuKey,cpuKey,"1080p","Ultra").slice(0,10):[];
+        const avgFps=fpsGames.length?Math.round(fpsGames.reduce((s,g)=>s+g.fps,0)/fpsGames.length):0;
+        return <div key={b.id} style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:16}}>
+          <div style={{display:"flex",justifyContent:"space-between"}}>
+            <div>
+              <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>{b.nm}</div>
+              <div style={{fontSize:10,color:"var(--dim)",fontFamily:"var(--ff)"}}>by {b.by}</div>
+            </div>
+            <span style={{fontFamily:"var(--mono)",fontSize:12,color:"var(--amber)",fontWeight:600}}>▲{b.v}</span>
+          </div>
+          <p style={{fontSize:11,color:"var(--dim)",margin:"6px 0",fontFamily:"var(--ff)"}}>{b.d}</p>
+          <div style={{display:"flex",gap:3}}>{b.tags.map(t=><Tag key={t} color="var(--sky)">{t}</Tag>)}</div>
+          <div style={{marginTop:10,paddingTop:8,borderTop:"1px solid var(--bdr)"}}>
+            {parts.map(p=><div key={p.id} style={{display:"flex",justifyContent:"space-between",padding:"2px 0"}}>
+              <span style={{fontSize:10,color:"var(--txt)",fontFamily:"var(--ff)"}}>{ic(p)} {p.n}</span>
+              <span style={{fontSize:10,color:"var(--mint)",fontFamily:"var(--mono)"}}>${$(p)}</span>
+            </div>)}
+          </div>
+          {fpsGames.length>0&&<div style={{marginTop:10,paddingTop:8,borderTop:"1px solid var(--bdr)"}}>
+            <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
+              <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",letterSpacing:0.5}}>PERFORMANCE @ 1080p ULTRA</span>
+              <span style={{fontFamily:"var(--mono)",fontSize:11,fontWeight:700,color:"var(--sky)"}}>{avgFps} AVG FPS</span>
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"2px 10px"}}>
+              {fpsGames.map(g=>{
+                const game=GAMES.find(x=>x.name===g.game);
+                const color=tierColor(g.tier);
+                return <div key={g.game} style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"1px 0",minWidth:0}}>
+                  <span style={{fontSize:10,color:"var(--txt)",fontFamily:"var(--ff)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis",flex:1,minWidth:0}} title={g.game}>{game?.icon||"🎮"} {g.game}</span>
+                  <span style={{fontSize:10,color,fontFamily:"var(--mono)",fontWeight:700,marginLeft:4,flexShrink:0}}>{g.fps}</span>
+                </div>;
+              })}
+            </div>
+          </div>}
+          <div style={{display:"flex",justifyContent:"space-between",marginTop:8,paddingTop:6,borderTop:"1px solid var(--bdr)"}}>
+            <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>Total</span>
+            <span style={{fontFamily:"var(--mono)",fontSize:16,color:"var(--mint)",fontWeight:700}}>${tot}</span>
+          </div>
+        </div>;
+      })}
+    </div>
+  </div>;
+}
 
 /* ═══ TOOLS ═══ */
 function ToolsPage({th}){
@@ -1214,8 +1268,6 @@ function ToolsPage({th}){
   // FPS tool state
   const [selGPU,setSelGPU]=useState("");const [selCPU,setSelCPU]=useState("");const [selRes,setSelRes]=useState("1080p");const [selQual,setSelQual]=useState("Ultra");const [fpsResults,setFpsResults]=useState(null);
   const [selRAMSpeed,setSelRAMSpeed]=useState(5600);const [selRAMCap,setSelRAMCap]=useState(32);const [selRAMType,setSelRAMType]=useState("DDR5");
-  // Auto-build state
-  const [budget,setBudget]=useState(1500);const [use,setUse]=useState("gaming");const [autoResult,setAutoResult]=useState(null);
   // Compare state
   const [cA,setCA]=useState("");const [cB,setCB]=useState("");const [cmpResult,setCmpResult]=useState(null);
 
@@ -1239,8 +1291,6 @@ function ToolsPage({th}){
     }
     setFpsLoading(false);
   };
-
-  const autoBuild=()=>{const alloc=use==="gaming"?{GPU:.4,CPU:.2,RAM:.08,Motherboard:.12,Storage:.08,PSU:.06,Case:.04,Cooler:.04}:{CPU:.3,GPU:.25,RAM:.1,Motherboard:.12,Storage:.1,PSU:.06,Case:.04,Cooler:.04};const picks={};for(const cat of BUILD_CATS){const t=budget*(alloc[cat]||.05);const o=P.filter(p=>p.c===cat&&$(p)<=t*1.3);if(o.length){o.sort((a,b)=>(b.bench||b.r*20)-(a.bench||a.r*20));picks[cat]=o[0];}}if(picks.CPU&&picks.Motherboard&&picks.CPU.socket!==picks.Motherboard.socket){const fx=P.filter(p=>p.c==="Motherboard"&&p.socket===picks.CPU.socket&&$(p)<=budget*.15);if(fx.length)picks.Motherboard=fx[0];}setAutoResult(picks);};
 
   const cmp=()=>{const a=SEED_PARTS.find(p=>p.n.toLowerCase().includes(cA.toLowerCase()));const b=SEED_PARTS.find(p=>p.n.toLowerCase().includes(cB.toLowerCase()));if(a&&b)setCmpResult({a,b});};
 
@@ -1274,7 +1324,7 @@ function ToolsPage({th}){
     setBnLoading(false);
   };
 
-  const tabs=[{id:"fps",l:"🎮 FPS Estimator",c:"var(--sky)"},{id:"bn",l:"🔬 Bottleneck",c:"var(--rose)"},{id:"willitrun",l:"🕹️ Will It Run?",c:"var(--amber)"},{id:"buildcmp",l:"📊 Compare Builds",c:"var(--violet)"},{id:"wizard",l:"🧙 Build Wizard",c:"var(--mint)"},{id:"power",l:"⚡ Power Calc",c:"var(--sky)"},{id:"auto",l:"🤖 Auto-Build",c:"var(--mint)"},{id:"cmp",l:"⚖️ Compare Parts",c:"var(--violet)"}];
+  const tabs=[{id:"fps",l:"🎮 FPS Estimator",c:"var(--sky)"},{id:"bn",l:"🔬 Bottleneck",c:"var(--rose)"},{id:"willitrun",l:"🕹️ Will It Run?",c:"var(--amber)"},{id:"buildcmp",l:"📊 Compare Builds",c:"var(--violet)"},{id:"wizard",l:"🧙 Build Wizard",c:"var(--mint)"},{id:"power",l:"⚡ Power Calculator",c:"var(--sky)"},{id:"cmp",l:"⚖️ Compare Parts",c:"var(--violet)"}];
 
   // Will It Run state
   const [wirGame,setWirGame]=useState("");const [wirGPU,setWirGPU]=useState("");const [wirCPU,setWirCPU]=useState("");const [wirRes,setWirRes]=useState("1080p");const [wirResult,setWirResult]=useState(null);
@@ -1512,20 +1562,6 @@ function ToolsPage({th}){
       </div>
     </div>}
 
-    {/* ═══ AUTO-BUILD ═══ */}
-    {tool==="auto"&&<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16}}>
-      <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20}}>
-        <h3 style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",marginBottom:12}}>Auto-Build by Budget</h3>
-        <div style={{marginBottom:12}}><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginBottom:4}}>BUDGET</div><div style={{display:"flex",alignItems:"center",gap:8}}><input type="range" min={500} max={4000} step={100} value={budget} onChange={e=>setBudget(+e.target.value)} style={{flex:1}}/><span style={{fontFamily:"var(--mono)",fontSize:16,color:"var(--mint)",fontWeight:700}}>${budget}</span></div></div>
-        <div style={{display:"flex",gap:6,marginBottom:14}}>{["gaming","work"].map(u=><button key={u} onClick={()=>setUse(u)} style={{padding:"5px 12px",borderRadius:5,fontSize:11,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:use===u?"var(--mint3)":"transparent",color:use===u?"var(--mint)":"var(--dim)",border:`1px solid ${use===u?"var(--mint2)":"var(--bdr)"}`}}>{u==="gaming"?"🎮 Gaming":"💼 Work"}</button>)}</div>
-        <button onClick={autoBuild} style={{width:"100%",padding:"8px 0",borderRadius:6,background:"var(--mint)",border:"none",fontFamily:"var(--ff)",fontSize:12,fontWeight:700,color:"var(--bg)",cursor:"pointer"}}>Generate Build</button>
-      </div>
-      <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20,minHeight:180}}>
-        {!autoResult&&<div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"var(--mute)",fontFamily:"var(--ff)",fontSize:13}}>Set budget and click Generate →</div>}
-        {autoResult&&<><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)",letterSpacing:1,marginBottom:10}}>RECOMMENDED BUILD — ${budget}</div>{Object.entries(autoResult).map(([cat,p])=><div key={cat} style={{display:"flex",justifyContent:"space-between",padding:"4px 0",borderBottom:"1px solid var(--bdr)"}}><span style={{fontSize:11,color:"var(--txt)",fontFamily:"var(--ff)"}}>{ic(p)} {p.n}</span><span style={{fontSize:10,color:"var(--mint)",fontFamily:"var(--mono)"}}>${$(p)}</span></div>)}<div style={{display:"flex",justifyContent:"space-between",marginTop:8}}><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>Total</span><span style={{fontFamily:"var(--mono)",fontSize:16,color:"var(--mint)",fontWeight:700}}>${Object.values(autoResult).reduce((s,p)=>s+$(p),0)}</span></div></>}
-      </div>
-    </div>}
-
     {/* ═══ COMPARE ═══ */}
     {tool==="cmp"&&<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16}}>
       <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20}}>
@@ -1548,9 +1584,9 @@ function ToolsPage({th}){
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginBottom:4}}>SELECT GAME</div>
           <select value={wirGame} onChange={e=>setWirGame(e.target.value)} style={inp}><option value="">Choose a game...</option>{GAMES.map(g=><option key={g.name} value={g.name}>{g.name}</option>)}</select>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>YOUR GPU</div>
-          <SearchSelect opts={gpuParts.map(g=>({value:g.n,label:g.n,detail:`${g.vram}GB · ${g.b}`}))} value={wirGPU} onChange={setWirGPU} placeholder="Select GPU..."/>
+          <SearchSelect options={gpuParts.map(g=>({value:g.n,label:g.n,detail:`${g.vram}GB · ${g.b}`}))} value={wirGPU} onChange={setWirGPU} placeholder="Select GPU..."/>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>YOUR CPU</div>
-          <SearchSelect opts={cpuParts.filter(c=>!c.serverCPU).map(c=>({value:c.n,label:c.n,detail:`${c.cores}C · ${c.b}`}))} value={wirCPU} onChange={setWirCPU} placeholder="Select CPU..."/>
+          <SearchSelect options={cpuParts.filter(c=>!c.serverCPU).map(c=>({value:c.n,label:c.n,detail:`${c.cores}C · ${c.b}`}))} value={wirCPU} onChange={setWirCPU} placeholder="Select CPU..."/>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>RESOLUTION</div>
           <div style={{display:"flex",gap:4}}>{["1080p","1440p","4K"].map(r=><button key={r} onClick={()=>setWirRes(r)} style={{flex:1,padding:6,borderRadius:5,fontSize:10,fontFamily:"var(--mono)",fontWeight:600,cursor:"pointer",background:wirRes===r?"var(--amber)":"var(--bg4)",color:wirRes===r?"#fff":"var(--dim)",border:`1px solid ${wirRes===r?"var(--amber)":"var(--bdr)"}`}}>{r}</button>)}</div>
           <button onClick={()=>{if(!wirGame||!wirGPU||!wirCPU)return;const gpu=matchGPU(wirGPU)||wirGPU;const cpu=matchCPU(wirCPU)||wirCPU;const results=["Low","Medium","High","Ultra"].map(q=>{const fps=estimateFPS(gpu,cpu,wirGame,wirRes,q);return{quality:q,fps:fps?.fps||0};});setWirResult({game:wirGame,gpu:wirGPU,cpu:wirCPU,res:wirRes,settings:results});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--amber)",border:"none",fontSize:13,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>🕹️ Check Performance</button>
@@ -1578,9 +1614,9 @@ function ToolsPage({th}){
         {["Build A","Build B"].map((label,bi)=>{const st=bi===0?bcBuildA:bcBuildB;const set=bi===0?setBcBuildA:setBcBuildB;return <div key={label} style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:16}}>
           <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",marginBottom:10}}>{label}</div>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginBottom:4}}>GPU</div>
-          <SearchSelect opts={gpuParts.map(g=>({value:g.n,label:g.n,detail:`${g.vram}GB · $${$(g)}`}))} value={st.gpu} onChange={v=>set(p=>({...p,gpu:v}))} placeholder="Select GPU..."/>
+          <SearchSelect options={gpuParts.map(g=>({value:g.n,label:g.n,detail:`${g.vram}GB · $${$(g)}`}))} value={st.gpu} onChange={v=>set(p=>({...p,gpu:v}))} placeholder="Select GPU..."/>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>CPU</div>
-          <SearchSelect opts={cpuParts.filter(c=>!c.serverCPU).map(c=>({value:c.n,label:c.n,detail:`${c.cores}C · $${$(c)}`}))} value={st.cpu} onChange={v=>set(p=>({...p,cpu:v}))} placeholder="Select CPU..."/>
+          <SearchSelect options={cpuParts.filter(c=>!c.serverCPU).map(c=>({value:c.n,label:c.n,detail:`${c.cores}C · $${$(c)}`}))} value={st.cpu} onChange={v=>set(p=>({...p,cpu:v}))} placeholder="Select CPU..."/>
         </div>})}
       </div>
       <button onClick={()=>{if(!bcBuildA.gpu||!bcBuildA.cpu||!bcBuildB.gpu||!bcBuildB.cpu)return;const gA=gpuParts.find(p=>p.n===bcBuildA.gpu);const cA2=cpuParts.find(p=>p.n===bcBuildA.cpu);const gB=gpuParts.find(p=>p.n===bcBuildB.gpu);const cB2=cpuParts.find(p=>p.n===bcBuildB.cpu);const fpsA=estimateAllGames(matchGPU(bcBuildA.gpu)||bcBuildA.gpu,matchCPU(bcBuildA.cpu)||bcBuildA.cpu,"1080p","Ultra");const fpsB=estimateAllGames(matchGPU(bcBuildB.gpu)||bcBuildB.gpu,matchCPU(bcBuildB.cpu)||bcBuildB.cpu,"1080p","Ultra");const costA=(gA?$(gA):0)+(cA2?$(cA2):0);const costB=(gB?$(gB):0)+(cB2?$(cB2):0);const avgA=fpsA.length?Math.round(fpsA.reduce((s,g)=>s+g.fps,0)/fpsA.length):0;const avgB=fpsB.length?Math.round(fpsB.reduce((s,g)=>s+g.fps,0)/fpsB.length):0;setBcResult({a:{gpu:bcBuildA.gpu,cpu:bcBuildA.cpu,cost:costA,avgFps:avgA,tdp:(gA?.tdp||0)+(cA2?.tdp||0),games:fpsA},b:{gpu:bcBuildB.gpu,cpu:bcBuildB.cpu,cost:costB,avgFps:avgB,tdp:(gB?.tdp||0)+(cB2?.tdp||0),games:fpsB}});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--violet)",border:"none",fontSize:13,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>📊 Compare Builds</button>
@@ -1661,9 +1697,9 @@ function ToolsPage({th}){
       <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20}}>
         <h3 style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",marginBottom:12}}>Power Consumption Calculator</h3>
         <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginBottom:4}}>GPU</div>
-        <SearchSelect opts={gpuParts.map(g=>({value:g.n,label:g.n,detail:`TDP: ${g.tdp}W`}))} value={pwGPU} onChange={setPwGPU} placeholder="Select GPU..."/>
+        <SearchSelect options={gpuParts.map(g=>({value:g.n,label:g.n,detail:`TDP: ${g.tdp}W`}))} value={pwGPU} onChange={setPwGPU} placeholder="Select GPU..."/>
         <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>CPU</div>
-        <SearchSelect opts={cpuParts.filter(c=>!c.serverCPU).map(c=>({value:c.n,label:c.n,detail:`TDP: ${c.tdp}W`}))} value={pwCPU} onChange={setPwCPU} placeholder="Select CPU..."/>
+        <SearchSelect options={cpuParts.filter(c=>!c.serverCPU).map(c=>({value:c.n,label:c.n,detail:`TDP: ${c.tdp}W`}))} value={pwCPU} onChange={setPwCPU} placeholder="Select CPU..."/>
         <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>CASE FANS</div>
         <input type="range" min={0} max={10} value={pwFans} onChange={e=>setPwFans(+e.target.value)} style={{width:"100%"}}/>
         <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--txt)",textAlign:"center"}}>{pwFans} fans</div>
