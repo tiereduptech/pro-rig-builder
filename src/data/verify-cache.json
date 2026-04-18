@@ -2297,5 +2297,115 @@
     "amazonImage": "https://m.media-amazon.com/images/I/61R6ivLSfrL._AC_SL300_.jpg",
     "priceOk": true,
     "titleMatch": true
+  },
+  "Keychron Q1 Pro 75%": {
+    "verified": true,
+    "match": true,
+    "asin": "B0CSYMTLZK",
+    "amazonTitle": "Keychron Q6 Max QMK/VIA Bluetooth Wireless /2.4 GHz/USB-C Wired Custom Mechanical Keyboard, Full Size Programmable Knob RGB Backlit Hot-Swappable Gateron Red Switch for Mac Windows Linux - Black",
+    "upcs": [],
+    "amazonPrice": 203.99,
+    "amazonImage": "https://m.media-amazon.com/images/I/61hzh2EDXkL._AC_SL300_.jpg",
+    "priceOk": true,
+    "titleMatch": true
+  },
+  "Razer Huntsman V3 Pro TKL": {
+    "verified": true,
+    "match": true,
+    "asin": "B0CG7C1NVP",
+    "amazonTitle": "Razer Huntsman V3 Pro Mini 60% Esports Gaming Keyboard: Analog Optical Switches - Razer Snap Tap - Rapid Trigger - Adjustable Actuation - Dual-Purpose Mod Keys - Doubleshot PBT Keycaps - Black",
+    "upcs": [],
+    "amazonPrice": 155,
+    "amazonImage": "https://m.media-amazon.com/images/I/71h9WW-ew-L._AC_SL300_.jpg",
+    "priceOk": true,
+    "titleMatch": true
+  },
+  "Wooting 60HE": {
+    "verified": true,
+    "match": false,
+    "asin": "B0G4LH7KMM",
+    "amazonTitle": "EPOMAKER TH99 PRO 96% Mechanical Keyboard with Screen &amp; Knob, 10000mAh, 2.4Ghz/BT, Hot Swap, Custom Driver, RGB Backlight, PBT Keycap, Wireless Gaming Keyboard for PC/Mac (Pink, Creamy Jade)",
+    "upcs": [],
+    "amazonPrice": 80.99,
+    "amazonImage": "https://m.media-amazon.com/images/I/61Af27ytVJL._AC_SL300_.jpg",
+    "priceOk": true,
+    "titleMatch": false
+  },
+  "Corsair K70 MAX RGB": {
+    "verified": true,
+    "match": false,
+    "asin": "B0G4LH7KMM",
+    "amazonTitle": "EPOMAKER TH99 PRO 96% Mechanical Keyboard with Screen &amp; Knob, 10000mAh, 2.4Ghz/BT, Hot Swap, Custom Driver, RGB Backlight, PBT Keycap, Wireless Gaming Keyboard for PC/Mac (Pink, Creamy Jade)",
+    "upcs": [],
+    "amazonPrice": 80.99,
+    "amazonImage": "https://m.media-amazon.com/images/I/61Af27ytVJL._AC_SL300_.jpg",
+    "priceOk": true,
+    "titleMatch": false
+  },
+  "Logitech G Pro X TKL": {
+    "verified": true,
+    "match": false,
+    "asin": "B0G4LH7KMM",
+    "amazonTitle": "EPOMAKER TH99 PRO 96% Mechanical Keyboard with Screen &amp; Knob, 10000mAh, 2.4Ghz/BT, Hot Swap, Custom Driver, RGB Backlight, PBT Keycap, Wireless Gaming Keyboard for PC/Mac (Pink, Creamy Jade)",
+    "upcs": [],
+    "amazonPrice": 80.99,
+    "amazonImage": "https://m.media-amazon.com/images/I/61Af27ytVJL._AC_SL300_.jpg",
+    "priceOk": true,
+    "titleMatch": false
+  },
+  "Logitech G Pro X Superlight 2": {
+    "verified": true,
+    "match": false,
+    "asin": "B0CW25XR5R",
+    "amazonTitle": "Razer Viper V3 Pro Wireless Esports Gaming Mouse: Symmetrical - 54g Lightweight - 8K Polling - 35K DPI Optical Sensor - Gen3 Optical Switches - 8 Programmable Buttons - 95 Hr Battery - Black",
+    "upcs": [],
+    "amazonPrice": 119.99,
+    "amazonImage": "https://m.media-amazon.com/images/I/61BJ2MpgTTL._AC_SL300_.jpg",
+    "priceOk": true,
+    "titleMatch": false
+  },
+  "Razer Viper V3 Pro": {
+    "verified": true,
+    "match": true,
+    "asin": "B0GMLBSSTD",
+    "amazonTitle": "Razer Viper V4 Pro Wireless Esports Gaming Mouse – 49g Ultra Lightweight, Fast &amp; Precise, 50K DPI Optical Sensor, 8K Polling, Gen-4 Optical Switches, Scroll Wheel, USB-C Charging, for PC &amp; Mac – Black",
+    "upcs": [],
+    "amazonPrice": 159.99,
+    "amazonImage": "https://m.media-amazon.com/images/I/51Vqc9mwhLL._AC_SL300_.jpg",
+    "priceOk": true,
+    "titleMatch": true
+  },
+  "Pulsar X2V2 Mini": {
+    "verified": true,
+    "match": true,
+    "asin": "B0CH9XHFW8",
+    "amazonTitle": "Pulsar Gaming Gears X2V2 mini Wireless Gaming Mouse, Ultra Lightweight 1.80 oz (51 g), Symmetrical, Optical Switch, 2.4 Ghz 1 ms, 26000 DPI, PAW3395 Sensor (Mini, Wireless, White)",
+    "upcs": [],
+    "amazonPrice": 54.99,
+    "amazonImage": "https://m.media-amazon.com/images/I/51l91SLLXgL._AC_SL300_.jpg",
+    "priceOk": true,
+    "titleMatch": true
+  },
+  "Razer DeathAdder V3": {
+    "verified": true,
+    "match": false,
+    "asin": "B0CSP61VR4",
+    "amazonTitle": "GravaStar Mercury M2 Wireless Gaming Mouse with 26,000 DPI, PAW3395DM Sensor -79g Lightweight Hollowed-Out Design -5 Programmable Buttons -5 Dynamic Lightsync RGB",
+    "upcs": [],
+    "amazonPrice": 63.95,
+    "amazonImage": "https://m.media-amazon.com/images/I/61+jneMKiGL._AC_SL300_.jpg",
+    "priceOk": true,
+    "titleMatch": false
+  },
+  "Endgame Gear OP1we": {
+    "verified": true,
+    "match": true,
+    "asin": "B0FB8VWW8Y",
+    "amazonTitle": "ENDGAME GEAR OP1 8k v2 Black – Esports Gaming Mouse with Cable, 30K DPI Optical Sensor, 8000Hz Polling, Hot-Swappable Switches &amp; Claw-Grip Design",
+    "upcs": [],
+    "amazonPrice": 89.99,
+    "amazonImage": "https://m.media-amazon.com/images/I/411DhErtDkL._AC_SL300_.jpg",
+    "priceOk": true,
+    "titleMatch": true
   }
 }
