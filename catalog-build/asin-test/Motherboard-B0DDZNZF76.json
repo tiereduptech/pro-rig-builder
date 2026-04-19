@@ -1,0 +1,419 @@
+{
+  "type": "amazon_product_info",
+  "rank_group": 1,
+  "rank_absolute": 1,
+  "position": "right",
+  "xpath": "/html[1]/body[1]/div[1]",
+  "title": "ASUS ROG Strix X870E-E Gaming WiFi AMD AM5 X870 ATX Motherboard 18+2+2 Power Stages, Dynamic OC Switcher, Core Flex, DDR5 AEMP, WiFi 7, 5X M.2, PCIe® 5.0, Q-Release Slim, USB4®, AI OCing & Networking",
+  "details": "Amazon.com Return Policy : You may return any new computer purchased from Amazon.com that is \"dead on arrival,\" arrives in damaged condition, or is still in unopened boxes, for a full refund within 30 days of purchase. Amazon.com reserves the right to test \"dead on arrival\" returns and impose a customer fee equal to 15 percent of the product sales price if the customer misrepresents the condition of the product. Any returned computer that is damaged through customer misuse, is missing parts, or is in unsellable condition due to customer tampering will result in the customer being charged a higher restocking fee based on the condition of the product. Amazon.com will not accept returns of any desktop or notebook computer more than 30 days after you receive the shipment. New, used, and refurbished products purchased from Marketplace vendors are subject to the returns policy of the individual vendor.",
+  "image_url": "https://m.media-amazon.com/images/I/81MDzB7gqwL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+  "author": "Visit the ASUS Store",
+  "data_asin": "B0DDZNZF76",
+  "parent_asin": null,
+  "product_asins": null,
+  "price_from": 394.99,
+  "price_to": 479.99,
+  "percentage_discount": 18,
+  "currency": "USD",
+  "is_amazon_choice": true,
+  "rating": {
+    "type": "rating_element",
+    "position": "left",
+    "rating_type": "Max5",
+    "value": 4.3,
+    "votes_count": 446,
+    "rating_max": 5
+  },
+  "is_newer_model_available": false,
+  "is_prime_video": false,
+  "applicable_vouchers": null,
+  "newer_model": null,
+  "categories": [
+    {
+      "category": "Electronics",
+      "url": "https://amazon.com/electronics-store/b/ref=dp_bc_1?ie=UTF8&node=172282"
+    },
+    {
+      "category": "Computers & Accessories",
+      "url": "https://amazon.com/computer-pc-hardware-accessories-add-ons/b/ref=dp_bc_2?ie=UTF8&node=541966"
+    },
+    {
+      "category": "Computer Components",
+      "url": "https://amazon.com/PC-Parts-Components/b/ref=dp_bc_3?ie=UTF8&node=193870011"
+    },
+    {
+      "category": "Internal Components",
+      "url": "https://amazon.com/b/ref=dp_bc_4?ie=UTF8&node=17923671011"
+    },
+    {
+      "category": "Motherboards",
+      "url": "https://amazon.com/Motherboards-Computer-Add-Ons-Computers/b/ref=dp_bc_5?ie=UTF8&node=1048424"
+    }
+  ],
+  "product_information": [
+    {
+      "type": "product_information_extended_item",
+      "section_name": "Product Description",
+      "contents": [
+        {
+          "type": "product_information_rows",
+          "title": null,
+          "rows": [
+            {
+              "type": "product_information_text_row",
+              "text": "The ROG Strix X870E-E Gaming WiFi engineered to harness the full potential of AMD Ryzen™ 9000 Series processors. Featuring PCIe® 5.0, AI Overclocking, AI Cooling II, AI Networking II, AEMP, setup streamlined while performance is maximized. USB4® Type-C, WiFi 7, 5Gb ensure top-tier connectivity, robust heatsinks keep M.2 drives cool."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "product_information_details_item",
+      "section_name": "Features & Specs",
+      "body": {
+        "Processor Socket": "Socket AM5",
+        "Compatible Devices": "Personal Computer",
+        "Compatible Processors": "AMD Ryzen™ 9000 & 8000 & 7000 Series",
+        "Chipset Type": "AMD X870",
+        "Memory Clock Speed": "320 MHz",
+        "Platform": "Windows 10, Windows 11",
+        "CPU Model": "AMD Ryzen 7",
+        "Memory Storage Capacity": "192 GB",
+        "Ram Memory Maximum Size": "192 GB",
+        "Main Power Connector Type": "24-Pin",
+        "Graphics Card Interface": "PCI Express",
+        "Memory Slots Available": "4",
+        "Number of Ports": "32",
+        "S/PDIF Connector Type": "Optical",
+        "System Bus Standard Supported": "SATA 3",
+        "Total SATA Ports": "6",
+        "Total Usb Ports": "7",
+        "Number of Ethernet Ports": "1",
+        "Total Number of HDMI Ports": "1",
+        "Total PCIe Ports": "2"
+      }
+    },
+    {
+      "type": "product_information_details_item",
+      "section_name": "Item details",
+      "body": {
+        "Brand": "ASUS",
+        "Model Name": "ROG STRIX X870E-E GAMING WIFI",
+        "Model Number": "ROG STRIX X870E-E GAMING WIFI",
+        "Manufacturer": "ASUS",
+        "UPC": "197105724167",
+        "Item Weight": "2.4 Kilograms",
+        "Unit Count": "1.0 Count",
+        "Warranty Description": "3 years",
+        "Best Sellers Rank": "#11 in Computer Motherboards",
+        "ASIN": "B0DDZNZF76",
+        "Customer Reviews": "4.3 out of 5 stars"
+      }
+    },
+    {
+      "type": "product_information_details_item",
+      "section_name": "Additional details",
+      "body": {
+        "Item Dimensions L x W x H": "3.4\"L x 14.4\"W x 11.1\"H"
+      }
+    },
+    {
+      "type": "product_information_extended_item",
+      "section_name": "From the manufacturer",
+      "contents": [
+        {
+          "type": "product_information_rows",
+          "title": null,
+          "rows": [
+            {
+              "type": "product_information_image_row",
+              "alt": " ",
+              "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/6ca7e09a-f818-4444-9536-160942b651d1.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+            },
+            {
+              "type": "product_information_image_row",
+              "alt": " ",
+              "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/8cbbfb73-c1f0-432e-812e-7fca1c354b30.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+            },
+            {
+              "type": "product_information_image_row",
+              "alt": " ",
+              "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/32a9843a-82c5-4bf8-9f3b-6d9449e984b5.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+            },
+            {
+              "type": "product_information_image_row",
+              "alt": " ",
+              "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/9006a15d-5dcd-4a20-8c9c-a7b34589d795.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+            },
+            {
+              "type": "product_information_image_row",
+              "alt": " ",
+              "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/91c5f9ea-50fb-4077-b0e3-e014c23b5b0f.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+            },
+            {
+              "type": "product_information_image_row",
+              "alt": " ",
+              "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/2434b2a1-c99e-41b7-b08a-1a985eddb953.__CR0,0,1464,600_PT0_SX1464_V1___.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "product_images_list": [
+    "https://m.media-amazon.com/images/I/81MDzB7gqwL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81mTWfJqm+L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81aSS64UIWL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71GZLiB04aL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81orHDS71bL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81NaB0IopdL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/510Z+tEHnpL.SS40_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg"
+  ],
+  "product_videos_list": [
+    "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/ec7112c8-a2ee-41e1-9bf3-ab41040ae12d/default.jobtemplate.hls.m3u8",
+    "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/c5ddb232-c894-4f45-ad31-bbee202dbc44/default.vertical.jobtemplate.hls.m3u8",
+    "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/fbef266c-dfb0-4d47-ae9f-080e05a098cf/default.jobtemplate.hls.m3u8",
+    "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/cced09c9-7a8e-4979-a2c4-201aee710e0c/default.jobtemplate.hls.m3u8",
+    "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/06087618-9d00-4c12-90cf-17f939a06d14/default.jobtemplate.hls.m3u8",
+    "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/c0c94b13-0a5e-4d2c-810c-f282ba09d3db/default.jobtemplate.hls.m3u8",
+    "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/d94c526e-c634-4ca8-98b8-dc83298dbc99/default.jobtemplate.hls.m3u8"
+  ],
+  "description": "About this item  Ready for Advanced AI PC: Designed for the future of AI computing, with the power and connectivity needed for demanding AI applications.\nAMD AM5 Socket: Ready for AMD Ryzen 9000, 8000 and 7000 series desktop processors.\nIntelligent Control: ASUS-exclusive AI Overclocking, AI Cooling II, AI Networking and AEMP to simplify setup and improve performance.\nROG Strix Overclocking technologies: Dynamic OC Switcher, Core Flex, Asynchronous Clock and PBO Enhancement.\nRobust Power Solution: 18 plus 2 plus 2 power solution rated for 110A per stage with dual ProCool II power connectors, high-quality alloy chokes and durable capacitors to support multi-core processors.\nOptimized Thermal Design: Massive heatsinks with integrated I/O cover, high-conductivity thermal pads, and connected with an L-shaped heat-pipe.\nLatest M.2 Support: Three onboard PCIe 5.0 M.2 slots, and two PCIe 4.0 M.2 slots, all with substantial cooling solutions.\nAbundant Connectivity: Dual USB4 Type-C ports, USB 20Gbps Type-C front-panel connector, one USB 10Gbps port with PD 3.0 up to 30W and USB Wattage Watcher, nine additional USB 10Gbps ports, PCIe 5.0 x16 SafeSlots, HDMI port\nHigh-Performance Networking: On-board WiFi 7 (802.11be) with Realtek 5 Gb Ethernet.\nDIY Friendly Design: PCIe Slot Q-Release Slim, M.2 Q-Latch, M.2 Q-Release, M.2 Q-Slide, Q-Antenna, Q-Dashboard, Q-Code, Q-LED, Start button, BIOS FlashBack button, Clear CMOS button and pre-mounted I/O shield.\nShow more   See more product details",
+  "is_available": true,
+  "top_local_reviews": [
+    {
+      "type": "amazon_review_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[36]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[3]/span[1]/div[1]/div[1]/div[2]/div[3]/ul[1]/li[1]/span[1]/div[1]/div[1]",
+      "verified": true,
+      "subtitle": "Reviewed in the United States on January 30, 2026",
+      "helpful_votes": 10,
+      "images": null,
+      "videos": null,
+      "user_profile": {
+        "name": "T. Nguyen",
+        "avatar": "https://m.media-amazon.com/images/S/amazon-avatars-global/default.png",
+        "url": "https://amazon.com/gp/profile/amzn1.account.AHDOLTZ7P6GZUTY3T6SLAE6YTXVA",
+        "reviews_count": null,
+        "locations": "US"
+      },
+      "title": "The #1 World Best Motherboard!",
+      "url": "https://amazon.com/gp/customer-reviews/RQZXJY9I5EWB3/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8",
+      "review_text": "The ASUS ROG Strix X870E‑E Gaming WiFi is a premium motherboard, and while it definitely sits on the higher end of the price range, it delivers the kind of quality and convenience that make the investment worthwhile.\nOne of its biggest strengths is the AI overclocking system. Instead of spending time fine‑tuning CPU voltages and stability parameters manually, the board’s AI tools handle the heavy lifting for you. In practice, this saved a significant amount of time and still produced stable, optimized results—perfect for users who want high performance without hours of trial‑and‑error tweaking.\nBeyond that, the board offers:\n• Excellent build quality with a clean layout and strong power delivery\n• Wide connectivity options, including next‑gen PCIe and multiple high-speed USB ports\n• Great thermals and robust heatsinks for sustained performance\n• Polished BIOS with intuitive controls and advanced features for enthusiasts\nIf you're looking for a top-tier AM5 motherboard that combines performance, automation, and reliability, the X870E‑E Gaming WiFi is an outstanding choice—especially for users who appreciate ASUS's AI tuning features, 9/10 for a product review from me.",
+      "publication_date": "2026-01-30 00:00:00 +00:00",
+      "rating": {
+        "rating_type": "Max5",
+        "value": 5,
+        "votes_count": null,
+        "rating_max": 5
+      }
+    },
+    {
+      "type": "amazon_review_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[36]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[3]/span[1]/div[1]/div[1]/div[2]/div[3]/ul[1]/li[2]/span[1]/div[1]/div[1]",
+      "verified": true,
+      "subtitle": "Reviewed in the United States on February 6, 2025",
+      "helpful_votes": 35,
+      "images": null,
+      "videos": null,
+      "user_profile": {
+        "name": "JDub",
+        "avatar": "https://m.media-amazon.com/images/S/amazon-avatars-global/default.png",
+        "url": "https://amazon.com/gp/profile/amzn1.account.AHOUN4PWCOA7MVNWJ4QRDU6VXZOA",
+        "reviews_count": null,
+        "locations": "US"
+      },
+      "title": "Amazing (but chonky) X870E board!",
+      "url": "https://amazon.com/gp/customer-reviews/R3JGKW6KS9FBYN/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8",
+      "review_text": "I've used almost exclusively ASUS motherboards going all the way back to the 1990's and I don't honestly recall ever having problems with them.  I've purchased everything from the top end ASUS motherboards to their entry level motherboards over the last 30 odd years (though I've tended towards their high end boards since the early 2000s) I can say they all just work and do what they claim they will do.\nThis board continues that tradition of rock solid performance from ASUS and I'm very happy with my purchase.  I also enjoy my first opening of the motherboard box like a kid on Christmas, and this board really stood out as one of the best looking boards I've purchased in the last 10 years or so.  The first thing I noticed with this one after the obvious visual appeal was the weight.  I was upgraded from the X570 to the X870E with this and this motherboards has a lot of aluminum and a lot of weight!  To call this thing chonky is an absolutely fair statement.\nThe trade of with all that aluminum of course, is cooler temperatures for your VRM (which is totally overkill for the 9950X!) and cooler temperatures and better performance of your NVMe drives both Gen5 (My Gen5 NVMe drive stays at a relatively cool 42c!).  My Gen4 NVMe drives hover right around 44c, I was worried about the heat in the Gen5, turns out with this particular board that is a non-issue.\nThe latest BIOS (1003 as of this writing) improves gaming performance with the 9950X and works beautifully to park your unused cores to better improve your frame rates.  If I had one complaint with my upgrade is that training DDR5 is a slow process.  Fortunately you only have to do that once (more if you're tweaking your memory) but for me it's select the non-tweaked profile in BIOS and it's been rock solid since (I had issues with the tweaked profile crashing games, and switched to the standard one, and the problems went away).\nI settled on this particular board as it had all the features I was looking for, at a price I thought was reasonable.  I did my research and while I did briefly consider an ASRock motherboard I ended up settling on this for both the lanes for the NVMe and keeping my graphics card PCIE slot at x16!  It also has amazing connectivity on the rear I/O shield.  All that and my great experience with ASUS motherboards is why I picked this.  In my opinion, you can't go wrong with ASUS motherboards.",
+      "publication_date": "2025-02-06 00:00:00 +00:00",
+      "rating": {
+        "rating_type": "Max5",
+        "value": 5,
+        "votes_count": null,
+        "rating_max": 5
+      }
+    },
+    {
+      "type": "amazon_review_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[36]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[3]/span[1]/div[1]/div[1]/div[2]/div[3]/ul[1]/li[3]/span[1]/div[1]/div[1]",
+      "verified": true,
+      "subtitle": "Reviewed in the United States on January 21, 2026",
+      "helpful_votes": 3,
+      "images": null,
+      "videos": null,
+      "user_profile": {
+        "name": "Savana",
+        "avatar": "https://m.media-amazon.com/images/S/amazon-avatars-global/default.png",
+        "url": "https://amazon.com/gp/profile/amzn1.account.AGMSLYZJB5CWC3RY2SYT23NLPO6A",
+        "reviews_count": null,
+        "locations": "US"
+      },
+      "title": "Best on the market",
+      "url": "https://amazon.com/gp/customer-reviews/R23GUJ0CCRGBG4/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8",
+      "review_text": "The ASUS ROG Strix X850E-E is an absolute powerhouse and easily one of the best high-end motherboards I’ve ever used. From build quality to performance and features, it delivers excellence across the board.\nFirst, the **build quality and design** are top-tier. The board feels incredibly solid, with premium components, reinforced PCIe slots, and excellent heatsink coverage. The ROG Strix aesthetic is clean and aggressive without being overdone, and the RGB lighting is tasteful and easy to sync with ASUS Aura.\n**Performance is outstanding.** Power delivery is rock-solid, making it perfect for high-end CPUs and overclocking. Even under heavy workloads or gaming sessions, the system remains stable and cool thanks to the excellent VRM design and thermal management.\nThe **connectivity and features** are where this board truly shines. With PCIe 5.0 support, blazing-fast M.2 slots, USB4/USB-C options, Wi-Fi 7, and 2.5G Ethernet, it’s completely future-proof. ASUS BIOS is intuitive and powerful, making tweaking, tuning, and setup very straightforward—even for users who aren’t hardcore overclockers.\nAudio quality is also impressive, delivering clear and immersive sound, and the onboard troubleshooting features (Q-Code, BIOS FlashBack, etc.) make building and upgrading stress-free.\nOverall, the ASUS ROG Strix X850E-E is a **premium motherboard that justifies its price** with exceptional performance, reliability, and cutting-edge features. If you’re building a high-end gaming or workstation PC and want a board that will last for years, this one is an easy recommendation. Thank you for this motherboard",
+      "publication_date": "2026-01-21 00:00:00 +00:00",
+      "rating": {
+        "rating_type": "Max5",
+        "value": 5,
+        "votes_count": null,
+        "rating_max": 5
+      }
+    }
+  ],
+  "top_global_reviews": [
+    {
+      "type": "amazon_review_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[36]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[3]/span[2]/span[1]/div[2]/div[1]/ul[1]/li[1]/span[1]/div[1]/div[1]",
+      "verified": true,
+      "subtitle": "Reviewed in Brazil on January 22, 2026",
+      "helpful_votes": null,
+      "images": null,
+      "videos": null,
+      "user_profile": {
+        "name": "Vinicius",
+        "avatar": "https://m.media-amazon.com/images/S/amazon-avatars-global/default.png",
+        "url": null,
+        "reviews_count": null,
+        "locations": "BR"
+      },
+      "title": "ótima placa",
+      "url": null,
+      "review_text": "Apesar do preço cumpre muito bem o seu papel, topo de linha",
+      "publication_date": "2026-01-22 00:00:00 +00:00",
+      "rating": {
+        "rating_type": "Max5",
+        "value": 5,
+        "votes_count": null,
+        "rating_max": 5
+      }
+    },
+    {
+      "type": "amazon_review_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[36]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[3]/span[2]/span[1]/div[2]/div[1]/ul[1]/li[2]/span[1]/div[1]/div[1]",
+      "verified": true,
+      "subtitle": "Reviewed in France on March 19, 2026",
+      "helpful_votes": null,
+      "images": null,
+      "videos": null,
+      "user_profile": {
+        "name": "JH",
+        "avatar": "https://m.media-amazon.com/images/S/amazon-avatars-global/default.png",
+        "url": null,
+        "reviews_count": null,
+        "locations": "FR"
+      },
+      "title": "Très bien",
+      "url": null,
+      "review_text": "Carte mère acheté pour équiper un 9950x3D fonctionne bien je n'ai pas eu de problème.",
+      "publication_date": "2026-03-19 00:00:00 +00:00",
+      "rating": {
+        "rating_type": "Max5",
+        "value": 5,
+        "votes_count": null,
+        "rating_max": 5
+      }
+    },
+    {
+      "type": "amazon_review_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[36]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[3]/span[2]/span[1]/div[2]/div[1]/ul[1]/li[3]/span[1]/div[1]/div[1]",
+      "verified": true,
+      "subtitle": "Reviewed in Canada on December 18, 2025",
+      "helpful_votes": null,
+      "images": null,
+      "videos": null,
+      "user_profile": {
+        "name": "Bruce67",
+        "avatar": "https://m.media-amazon.com/images/S/amazon-avatars-global/default.png",
+        "url": null,
+        "reviews_count": null,
+        "locations": "CA"
+      },
+      "title": "Fantastic Motherboard",
+      "url": null,
+      "review_text": "I'm very impressed and satisfied with this mobo. It has an excellent bios layout making it easy to navigate. There are a plethora of overclocking options that I've been playing with. Overclocks with a Ryzen 7700x very well. There are an abundant  connectivity options available. I haven't experienced issues that other users have mentioned. Love the fact that it's going to support the next generation Amd cpus. There are several solutions to the long memory learning boot times on YouTube found in the bios. The Bios Q dashboard is a welcome feature showing hardware connections and corresponding bios settings. This is definitely the best Amd board I've owned and one of the best out there. All nvme installation must be tooless for the next generation just like other current boards. I have decided to give Asus another chance since their customer relations debacle. From my experience EVGA had the best customer service in the industry. If they don't get it right adios for good.",
+      "publication_date": "2025-12-18 00:00:00 +00:00",
+      "rating": {
+        "rating_type": "Max5",
+        "value": 5,
+        "votes_count": null,
+        "rating_max": 5
+      }
+    },
+    {
+      "type": "amazon_review_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[36]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[3]/span[2]/span[1]/div[2]/div[1]/ul[1]/li[4]/span[1]/div[1]/div[1]",
+      "verified": true,
+      "subtitle": "Reviewed in Italy on February 20, 2026",
+      "helpful_votes": null,
+      "images": null,
+      "videos": null,
+      "user_profile": {
+        "name": "Cristian",
+        "avatar": "https://m.media-amazon.com/images/S/amazon-avatars-global/default.png",
+        "url": null,
+        "reviews_count": null,
+        "locations": "IT"
+      },
+      "title": "ASUS ROG Strix X870E-E Gaming WiFi: Qualitá costruttiva TOP",
+      "url": null,
+      "review_text": "Wow!!!! Appena ho preso la scatola in mano mi son detto: ma quanto pesa??? Poi, aprendo la scatola e osservandola da vicino ho capito il perché: qualitá costruttiva davvero top. Materiali di qualitá, solida, esteticamente bellissima. Dalle foto sembra più “plasticosa” come molte MB, ma appena la avrete in mano cambierete subito opinione. Personalmente la migliore MB mai avuta. Pagata quasi a metá prezzo grazie ad un offerta lampo…grazie Amazon!!! Non posso dire ancora nulla sulle prestazioni perché sto ancora assemblando e mi mancano ancora diversi elementi…spero entro l'anno di trovare un po di RAM a prezzi umani😭😭😭😭",
+      "publication_date": "2026-02-20 00:00:00 +00:00",
+      "rating": {
+        "rating_type": "Max5",
+        "value": 5,
+        "votes_count": null,
+        "rating_max": 5
+      }
+    },
+    {
+      "type": "amazon_review_item",
+      "rank_group": 0,
+      "rank_absolute": 0,
+      "position": "left",
+      "xpath": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[36]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[3]/span[2]/span[1]/div[2]/div[1]/ul[1]/li[5]/span[1]/div[1]/div[1]",
+      "verified": true,
+      "subtitle": "Reviewed in Saudi Arabia on March 10, 2026",
+      "helpful_votes": null,
+      "images": null,
+      "videos": null,
+      "user_profile": {
+        "name": "Hani Alshaikh",
+        "avatar": "https://m.media-amazon.com/images/S/amazon-avatars-global/default.png",
+        "url": null,
+        "reviews_count": null,
+        "locations": "SA"
+      },
+      "title": "رائع",
+      "url": null,
+      "review_text": "رائع",
+      "publication_date": "2026-03-10 00:00:00 +00:00",
+      "rating": {
+        "rating_type": "Max5",
+        "value": 5,
+        "votes_count": null,
+        "rating_max": 5
+      }
+    }
+  ]
+}

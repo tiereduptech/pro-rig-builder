@@ -1,0 +1,20 @@
+{
+  "completedAt": "2026-04-19T02:05:53.879Z",
+  "queriesSubmitted": 164,
+  "queriesCompleted": 164,
+  "queriesTimedOut": 0,
+  "rawItemsTotal": 9734,
+  "keptAfterFilters": 3229,
+  "perCategory": {
+    "Case": 299,
+    "GPU": 301,
+    "Storage": 453,
+    "Monitor": 402,
+    "CPU": 182,
+    "Motherboard": 419,
+    "CPUCooler": 304,
+    "PSU": 257,
+    "RAM": 316,
+    "CaseFan": 296
+  }
+}

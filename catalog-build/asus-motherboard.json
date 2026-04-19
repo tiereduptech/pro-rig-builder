@@ -1,0 +1,735 @@
+[
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ROG STRIX X870E-E GAMING WIFI7 NEO",
+    "mpn": "90MB1P20-M0VAY0",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/38460501-ED11-4ADB-B4DD-6C9FE5BE2684/w717/h525",
+    "specs": {
+      "series": "ROG",
+      "socket": "AM5",
+      "chipset": "X870E"
+    },
+    "sourceUrl": "https://rog.asus.com/us/motherboards/rog-strix/rog-strix-x870e-e-gaming-wifi7-neo/",
+    "scrapedAt": "2026-04-19T00:21:52.170Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ROG STRIX X870E-A GAMING WIFI7 NEO",
+    "mpn": "90MB1P30-M0VAY0",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/756787E1-B351-4D52-BE4D-6F6D4677707F/w717/h525",
+    "specs": {
+      "series": "ROG",
+      "socket": "AM5",
+      "chipset": "X870E"
+    },
+    "sourceUrl": "https://rog.asus.com/us/motherboards/rog-strix/rog-strix-x870e-a-gaming-wifi7-neo/",
+    "scrapedAt": "2026-04-19T00:21:55.021Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ROG STRIX B850-F GAMING WIFI7 NEO",
+    "mpn": "90MB1NX0-M0VAY0",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/36695645-0F1D-4CBC-855B-6E3F6CCC38D4/w717/h525",
+    "specs": {
+      "series": "ROG",
+      "socket": "AM5",
+      "chipset": "B850"
+    },
+    "sourceUrl": "https://rog.asus.com/us/motherboards/rog-strix/rog-strix-b850-f-gaming-wifi7-neo/",
+    "scrapedAt": "2026-04-19T00:21:56.903Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ROG CROSSHAIR X870E GLACIAL",
+    "mpn": "90MB1NQ0-M0VAY0",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/EED05902-600D-4D1F-979B-CE73C4334101/w717/h525",
+    "specs": {
+      "series": "ROG",
+      "socket": "AM5",
+      "chipset": "X870E"
+    },
+    "sourceUrl": "https://rog.asus.com/us/motherboards/rog-crosshair/rog-crosshair-x870e-glacial/",
+    "scrapedAt": "2026-04-19T00:21:59.352Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ROG CROSSHAIR X870E DARK HERO",
+    "mpn": "90MB1NT0-M0VAY0",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/32F561D3-87D9-4BC7-92A9-57308DD2681A/w717/h525",
+    "specs": {
+      "series": "ROG",
+      "socket": "AM5",
+      "chipset": "X870E"
+    },
+    "sourceUrl": "https://rog.asus.com/us/motherboards/rog-crosshair/rog-crosshair-x870e-dark-hero/",
+    "scrapedAt": "2026-04-19T00:22:01.148Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ROG STRIX X870E-E GAMING WIFI7 R2/USBC CARD",
+    "mpn": null,
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/85E0F79F-A5FD-41B6-92AB-3CFE0B0651A7/w717/h525",
+    "specs": {
+      "series": "ROG",
+      "socket": "AM5",
+      "chipset": "X870E"
+    },
+    "sourceUrl": "https://rog.asus.com/us/motherboards/rog-strix/rog-strix-x870e-e-gaming-wifi7-r2-usbc-card/",
+    "scrapedAt": "2026-04-19T00:22:03.580Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ROG STRIX X870E-H GAMING WIFI7 HATSUNE MIKU EDITION",
+    "mpn": "90MB1MA0-MVAAY0",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/0B993BB9-71CC-4730-8C0A-B4429F37DAA5/w717/h525",
+    "specs": {
+      "series": "ROG",
+      "socket": "AM5",
+      "chipset": "X870E"
+    },
+    "sourceUrl": "https://rog.asus.com/us/motherboards/rog-strix/rog-strix-x870e-h-gaming-wifi7-hatsune-miku-edition/",
+    "scrapedAt": "2026-04-19T00:22:05.969Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ROG CROSSHAIR X870E HERO BTF",
+    "mpn": "90MB1MX0-M0VAY0",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/7494F846-CFB8-499F-A22C-EFD8FAA80AF3/w717/h525",
+    "specs": {
+      "series": "ROG",
+      "socket": "AM5",
+      "chipset": "X870E"
+    },
+    "sourceUrl": "https://rog.asus.com/us/motherboards/rog-crosshair/rog-crosshair-x870e-hero-btf/",
+    "scrapedAt": "2026-04-19T00:22:07.721Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ROG STRIX X870E-H GAMING WIFI7",
+    "mpn": "90MB1M90-MVAAY0",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/ECA2FAD2-4440-4992-88C0-D6EA20EFCADD/w717/h525",
+    "specs": {
+      "series": "ROG",
+      "socket": "AM5",
+      "chipset": "X870E"
+    },
+    "sourceUrl": "https://rog.asus.com/us/motherboards/rog-strix/rog-strix-x870e-h-gaming-wifi7/",
+    "scrapedAt": "2026-04-19T00:22:09.322Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ROG STRIX B850-G GAMING WIFI",
+    "mpn": null,
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/3B93D6AC-5E1C-416D-9C8B-C40994B6ED8A/w717/h525",
+    "specs": {
+      "series": "ROG",
+      "socket": "AM5",
+      "chipset": "B850"
+    },
+    "sourceUrl": "https://rog.asus.com/us/motherboards/rog-strix/rog-strix-b850-g-gaming-wifi/",
+    "scrapedAt": "2026-04-19T00:22:11.385Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ROG CROSSHAIR X870E EXTREME",
+    "mpn": "90MB1LB0-MVAAY0",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/2AE4F74D-8055-4752-B7CC-CABB53467CDC/w717/h525",
+    "specs": {
+      "series": "ROG",
+      "socket": "AM5",
+      "chipset": "X870E"
+    },
+    "sourceUrl": "https://rog.asus.com/us/motherboards/rog-crosshair/rog-crosshair-x870e-extreme/",
+    "scrapedAt": "2026-04-19T00:22:13.749Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ROG CROSSHAIR X870E APEX",
+    "mpn": "90MB1KR0-MVAAY0",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/646659B5-60C1-4177-8F37-9C3FAD27EB74/w717/h525",
+    "specs": {
+      "series": "ROG",
+      "socket": "AM5",
+      "chipset": "X870E"
+    },
+    "sourceUrl": "https://rog.asus.com/us/motherboards/rog-crosshair/rog-crosshair-x870e-apex/",
+    "scrapedAt": "2026-04-19T00:22:16.947Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING X870-PRO WIFI7 W NEO",
+    "mpn": "35722",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/e00ca301-570a-4213-a787-64d3330906e2/w185",
+    "specs": {
+      "series": "TUF Gaming",
+      "chipset": "X870"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x870-pro-wifi7-w-neo/",
+    "scrapedAt": "2026-04-19T00:22:18.797Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING B850-PRO WIFI7 W NEO",
+    "mpn": "35717",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/820e256b-e6d8-4b32-a83c-7dce87421076/w185",
+    "specs": {
+      "series": "TUF Gaming",
+      "chipset": "B850"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850-pro-wifi7-w-neo/",
+    "scrapedAt": "2026-04-19T00:22:25.034Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING A620AM-PLUS WIFI",
+    "mpn": "33466",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/4a6f4a4e-e762-4694-a97d-18131e24db20/w185",
+    "specs": {
+      "series": "TUF Gaming"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-a620am-plus-wifi/",
+    "scrapedAt": "2026-04-19T00:22:28.280Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING B850M-PLUS WIFI7",
+    "mpn": "33373",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/75c5b76c-8df3-4da5-9eea-ddb11c6e4447/w185",
+    "specs": {
+      "series": "TUF Gaming"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850m-plus-wifi7/",
+    "scrapedAt": "2026-04-19T00:22:30.029Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING B850M-PLUS WIFI7 W",
+    "mpn": "32356",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/cec52f54-ab55-4e9f-a23a-247ff1f1983f/w185",
+    "specs": {
+      "series": "TUF Gaming"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850m-plus-wifi7-w/",
+    "scrapedAt": "2026-04-19T00:22:33.969Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING B850M-E WIFI",
+    "mpn": "32252",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/903de645-a7e8-4102-8d6f-b821f128a545/w185",
+    "specs": {
+      "series": "TUF Gaming"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850m-e-wifi/",
+    "scrapedAt": "2026-04-19T00:22:36.938Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING B650EM-E WIFI",
+    "mpn": "32187",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/0d1e5a24-3ec8-41a6-b480-659a0c48f591/w185",
+    "specs": {
+      "series": "TUF Gaming"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650em-e-wifi/",
+    "scrapedAt": "2026-04-19T00:22:43.630Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING X870E-PLUS WIFI7",
+    "mpn": "32238",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/a385eb33-672e-4848-92bb-3b2db26d5860/w185",
+    "specs": {
+      "series": "TUF Gaming",
+      "chipset": "X870E"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x870e-plus-wifi7/",
+    "scrapedAt": "2026-04-19T00:22:46.712Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING B850-BTF WIFI W",
+    "mpn": "31008",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/a53ab700-c5ca-41b0-a1ae-17083f4c172e/w185",
+    "specs": {
+      "series": "TUF Gaming",
+      "chipset": "B850"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850-btf-wifi-w/",
+    "scrapedAt": "2026-04-19T00:22:49.030Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING B650E-PLUS WIFI",
+    "mpn": "31105",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/9cf8a9ee-1625-40a5-9aee-3d4712968239/w185",
+    "specs": {
+      "series": "TUF Gaming",
+      "socket": "AM5",
+      "chipset": "B650E"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650e-plus-wifi/",
+    "scrapedAt": "2026-04-19T00:22:51.942Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING B650E-E WIFI",
+    "mpn": "31074",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/29170ff3-2b9a-4d75-ad9b-a5d798e4cd39/w185",
+    "specs": {
+      "series": "TUF Gaming",
+      "socket": "AM5",
+      "chipset": "B650E"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650e-e-wifi/",
+    "scrapedAt": "2026-04-19T00:22:56.591Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING B850-E WIFI",
+    "mpn": "31054",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/7a540c58-792b-4359-acbb-3361ec4682c8/w185",
+    "specs": {
+      "series": "TUF Gaming",
+      "chipset": "B850"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850-e-wifi/",
+    "scrapedAt": "2026-04-19T00:22:59.103Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING B860-PLUS WIFI",
+    "mpn": "30922",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/83aad58f-b7fe-4790-8e1a-b8e2805f5c77/w185",
+    "specs": {
+      "series": "TUF Gaming",
+      "chipset": "B860"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b860-plus-wifi/",
+    "scrapedAt": "2026-04-19T00:23:05.950Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING B860M-PLUS WIFI",
+    "mpn": "30806",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/2cb8e12a-d1ad-4baf-b543-d57979bf56a9/w185",
+    "specs": {
+      "series": "TUF Gaming"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b860m-plus-wifi/",
+    "scrapedAt": "2026-04-19T00:23:08.064Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING B850M-PLUS WIFI",
+    "mpn": "30792",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/c5b8e8fb-7dc1-4912-89af-3fd005d9f4d5/w185",
+    "specs": {
+      "series": "TUF Gaming"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850m-plus-wifi/",
+    "scrapedAt": "2026-04-19T00:23:09.838Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING B850-PLUS WIFI",
+    "mpn": "30804",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/4fa02c46-d242-4d73-a8e6-aebb298a1b09/w185",
+    "specs": {
+      "series": "TUF Gaming",
+      "chipset": "B850"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850-plus-wifi/",
+    "scrapedAt": "2026-04-19T00:23:12.553Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING Z890-PRO WIFI",
+    "mpn": "29694",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/39faf6c8-2a17-4ccb-add0-cb25556c398e/w185",
+    "specs": {
+      "series": "TUF Gaming",
+      "chipset": "Z890"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-z890-pro-wifi/",
+    "scrapedAt": "2026-04-19T00:23:15.181Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING Z890-PLUS WIFI",
+    "mpn": "29693",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/e8c6fe24-aba5-44cf-a13e-abef2679fdd2/w185",
+    "specs": {
+      "series": "TUF Gaming",
+      "chipset": "Z890"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-z890-plus-wifi/",
+    "scrapedAt": "2026-04-19T00:23:17.982Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING X870-PLUS WIFI",
+    "mpn": "28600",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/64c122cf-1bab-4bac-aa97-591e1573dd29/w185",
+    "specs": {
+      "series": "TUF Gaming",
+      "chipset": "X870"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x870-plus-wifi/",
+    "scrapedAt": "2026-04-19T00:23:21.111Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "TUF GAMING Z790-BTF WIFI",
+    "mpn": "25147",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/0c25fcbd-2f09-4e00-9a50-c0067f0c6bc8/w185",
+    "specs": {
+      "series": "TUF Gaming",
+      "chipset": "Z790"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-z790-btf-wifi/",
+    "scrapedAt": "2026-04-19T00:23:25.249Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME B840-PLUS WIFI-CSM",
+    "mpn": "30810",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/057801f1-8404-46c7-a497-5201c6bb817a/w185",
+    "specs": {
+      "series": "Prime",
+      "chipset": "B840"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/csm/prime-b840-plus-wifi-csm/",
+    "scrapedAt": "2026-04-19T00:23:27.576Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME B760M-K D4",
+    "mpn": "22359",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/59b1f230-39da-495a-9a57-4d35fa1562b4/w185",
+    "specs": {
+      "series": "Prime",
+      "socket": "LGA1700",
+      "chipset": "B760"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/prime/prime-b760m-k-d4/",
+    "scrapedAt": "2026-04-19T00:23:34.946Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME H810M-E-CSM",
+    "mpn": "33383",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/97bbcf57-f98f-4b44-aa09-370269484049/w185",
+    "specs": {
+      "series": "Prime"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/csm/prime-h810m-e-csm/",
+    "scrapedAt": "2026-04-19T00:23:40.203Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME B650EM-A WIFI-CSM",
+    "mpn": "32278",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/82960d58-8628-4aa5-8e98-4b6cec318467/w185",
+    "specs": {
+      "series": "Prime",
+      "socket": "AM5",
+      "chipset": "B650"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/csm/prime-b650em-a-wifi-csm/",
+    "scrapedAt": "2026-04-19T00:23:46.226Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME B650EM-A WIFI",
+    "mpn": "32211",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/82960d58-8628-4aa5-8e98-4b6cec318467/w185",
+    "specs": {
+      "series": "Prime",
+      "socket": "AM5",
+      "chipset": "B650"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/prime/prime-b650em-a-wifi/",
+    "scrapedAt": "2026-04-19T00:23:48.403Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME B850M-A-CSM",
+    "mpn": "31176",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/76b988b8-d160-4e1d-b2fe-eedd8b7bc0ba/w185",
+    "specs": {
+      "series": "Prime"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/csm/prime-b850m-a-csm/",
+    "scrapedAt": "2026-04-19T00:23:53.094Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME B850M-A WIFI-CSM",
+    "mpn": "31174",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/13635e6a-00a8-498c-a5af-9499813ee8fd/w185",
+    "specs": {
+      "series": "Prime"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/csm/prime-b850m-a-wifi-csm/",
+    "scrapedAt": "2026-04-19T00:24:00.037Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME B850-PLUS WIFI-CSM",
+    "mpn": "30995",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/8dc45671-bc2a-45c7-abcb-abb65088f819/w185",
+    "specs": {
+      "series": "Prime",
+      "chipset": "B850"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/csm/prime-b850-plus-wifi-csm/",
+    "scrapedAt": "2026-04-19T00:24:02.118Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME B850-PLUS WIFI",
+    "mpn": "30990",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/8dc45671-bc2a-45c7-abcb-abb65088f819/w185",
+    "specs": {
+      "series": "Prime",
+      "chipset": "B850"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/prime/prime-b850-plus-wifi/",
+    "scrapedAt": "2026-04-19T00:24:03.955Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME B860-PLUS WIFI-CSM",
+    "mpn": "30937",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/ffe2dcbc-7f15-4bf4-b9ce-3f9ca09b5c4a/w185",
+    "specs": {
+      "series": "Prime",
+      "chipset": "B860"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/csm/prime-b860-plus-wifi-csm/",
+    "scrapedAt": "2026-04-19T00:24:10.580Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME H810M-A-CSM",
+    "mpn": "30964",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/bc6b7bbd-b693-4574-b3bf-a8ae8ce8453d/w185",
+    "specs": {
+      "series": "Prime"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/csm/prime-h810m-a-csm/",
+    "scrapedAt": "2026-04-19T00:24:16.882Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME H810M-A WIFI-CSM",
+    "mpn": "30963",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/2b5b3651-6412-48ab-86ab-b295078289eb/w185",
+    "specs": {
+      "series": "Prime"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/csm/prime-h810m-a-wifi-csm/",
+    "scrapedAt": "2026-04-19T00:24:23.101Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME B860M-A WIFI-CSM",
+    "mpn": "30884",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/d5dd8420-dc54-4b8c-bd81-70e8590a802b/w185",
+    "specs": {
+      "series": "Prime"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/csm/prime-b860m-a-wifi-csm/",
+    "scrapedAt": "2026-04-19T00:24:26.388Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME B860-PLUS WIFI",
+    "mpn": "30844",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/ffe2dcbc-7f15-4bf4-b9ce-3f9ca09b5c4a/w185",
+    "specs": {
+      "series": "Prime",
+      "chipset": "B860"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/prime/prime-b860-plus-wifi/",
+    "scrapedAt": "2026-04-19T00:24:28.618Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME B840M-A WIFI-CSM",
+    "mpn": "30828",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/8f19c569-0ee9-4a97-96e9-bb38d082087b/w185",
+    "specs": {
+      "series": "Prime",
+      "chipset": "X870"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/csm/prime-b840m-a-wifi-csm/",
+    "scrapedAt": "2026-04-19T00:24:34.290Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME B840-PLUS WIFI",
+    "mpn": "30799",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/057801f1-8404-46c7-a497-5201c6bb817a/w185",
+    "specs": {
+      "series": "Prime",
+      "chipset": "B840"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/prime/prime-b840-plus-wifi/",
+    "scrapedAt": "2026-04-19T00:24:38.396Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME Z890M-PLUS WIFI",
+    "mpn": "29692",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/5625b742-4b7f-484f-befa-298662e13f68/w185",
+    "specs": {
+      "series": "Prime",
+      "chipset": "Z890"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/prime/prime-z890m-plus-wifi/",
+    "scrapedAt": "2026-04-19T00:24:41.833Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME Z890-P WIFI",
+    "mpn": "29668",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/755af9c8-c0ab-4640-9fe1-44545958537a/w185",
+    "specs": {
+      "series": "Prime",
+      "chipset": "Z890"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/prime/prime-z890-p-wifi/",
+    "scrapedAt": "2026-04-19T00:24:44.330Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME B650-PLUS WIFI",
+    "mpn": "29681",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/c2fa1386-221a-4263-9928-51ff27a40790/w185",
+    "specs": {
+      "series": "Prime",
+      "socket": "AM5",
+      "chipset": "B650"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/prime/prime-b650-plus-wifi/",
+    "scrapedAt": "2026-04-19T00:24:47.318Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "PRIME X870-P-CSM",
+    "mpn": "28636",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/d200b7c1-0b28-4bb5-a18c-afb4f7eb5cb3/w185",
+    "specs": {
+      "series": "Prime",
+      "chipset": "X870"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/csm/prime-x870-p-csm/",
+    "scrapedAt": "2026-04-19T00:24:54.091Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ProArt B850-CREATOR WIFI NEO",
+    "mpn": "34672",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/691f8768-bb36-4f12-b623-0df1061fe2f4/w185",
+    "specs": {
+      "series": "ProArt",
+      "chipset": "B850"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/proart/proart-b850-creator-wifi-neo/",
+    "scrapedAt": "2026-04-19T00:24:57.008Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ProArt Z890-CREATOR WIFI",
+    "mpn": "30710",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/89be36ca-e0db-49ca-94c4-5cc8d0ad14d9/w185",
+    "specs": {
+      "series": "ProArt",
+      "chipset": "Z890"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/proart/proart-z890-creator-wifi/",
+    "scrapedAt": "2026-04-19T00:24:59.581Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ProArt X870E-CREATOR WIFI",
+    "mpn": "28629",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/935d02ef-5ed8-4475-aead-1bfbc3324eee/w185",
+    "specs": {
+      "series": "ProArt",
+      "chipset": "X870E"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/proart/proart-x870e-creator-wifi/",
+    "scrapedAt": "2026-04-19T00:25:04.177Z"
+  },
+  {
+    "brand": "ASUS",
+    "category": "Motherboard",
+    "name": "ProArt Z790-CREATOR WIFI",
+    "mpn": "21164",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/fe64f38f-9f58-4722-b2b0-723379b316be/w185",
+    "specs": {
+      "series": "ProArt",
+      "chipset": "Z790"
+    },
+    "sourceUrl": "https://www.asus.com/us/motherboards-components/motherboards/proart/proart-z790-creator-wifi/",
+    "scrapedAt": "2026-04-19T00:25:07.904Z"
+  }
+]

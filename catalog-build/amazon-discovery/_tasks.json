@@ -1,0 +1,986 @@
+[
+  {
+    "id": "04190502-1670-0209-0000-4105a4ff4b1e",
+    "keyword": "motherboard X870E",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-36ce3df8bb4e",
+    "keyword": "motherboard X870",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-3b450ab0fd5a",
+    "keyword": "motherboard B850",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-2ee92896f2d4",
+    "keyword": "motherboard B840",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-7f403bd80084",
+    "keyword": "motherboard A620",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-bbd52e132c57",
+    "keyword": "motherboard X670E",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-a79202adb4bf",
+    "keyword": "motherboard X670",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-03d7ab1eb669",
+    "keyword": "motherboard B650E",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-4dedc75b5107",
+    "keyword": "motherboard B650",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-3d778a43cd76",
+    "keyword": "motherboard Z890",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-6574f7bb8d90",
+    "keyword": "motherboard B860",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-ef52bb1bf324",
+    "keyword": "motherboard H810",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-6d4716cdac9d",
+    "keyword": "motherboard Z790",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-f6a2e3bec970",
+    "keyword": "motherboard B760",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-cba2985a4bee",
+    "keyword": "motherboard H610",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-f46147e0cac7",
+    "keyword": "ASUS ROG motherboard AM5",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-f55596c4ac31",
+    "keyword": "ASUS TUF motherboard",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-b4fc55a52e08",
+    "keyword": "MSI MEG motherboard",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-1a44db84756b",
+    "keyword": "MSI MPG motherboard",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-1ec58a7ed7df",
+    "keyword": "MSI MAG motherboard",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-9c592b8369f8",
+    "keyword": "Gigabyte AORUS motherboard",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-6b080ee95763",
+    "keyword": "Gigabyte motherboard AM5",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-49d6284f0eb9",
+    "keyword": "ASRock Taichi motherboard",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-7cfbdd2fc2df",
+    "keyword": "ASRock Steel Legend motherboard",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-92aa7a46e6a0",
+    "keyword": "NZXT motherboard",
+    "category": "Motherboard",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-cb8ea15c4b4a",
+    "keyword": "Ryzen 9 9950X",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-b274a95df634",
+    "keyword": "Ryzen 9 9900X",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-f71ff0254338",
+    "keyword": "Ryzen 7 9800X3D",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-ca206c4d687e",
+    "keyword": "Ryzen 7 9700X",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-3b5bafa57e05",
+    "keyword": "Ryzen 5 9600X",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-4306c2e03d3d",
+    "keyword": "Ryzen 9 7950X3D",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-f88a9a6c8bdf",
+    "keyword": "Ryzen 9 7950X",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-4428b3747269",
+    "keyword": "Ryzen 9 7900X",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-d3bcddb5a076",
+    "keyword": "Ryzen 7 7800X3D",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-d931cf5f2f8f",
+    "keyword": "Ryzen 7 7700X",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-8715a8f48003",
+    "keyword": "Ryzen 5 7600X",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-62816186cd65",
+    "keyword": "Intel Core Ultra 9 285K",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-8508111b9afd",
+    "keyword": "Intel Core Ultra 7 265K",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-ee7c0ffbdf53",
+    "keyword": "Intel Core Ultra 5 245K",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-5b9a23699c62",
+    "keyword": "Intel Core i9 14900K",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-2659447c531a",
+    "keyword": "Intel Core i7 14700K",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-30aa2c938783",
+    "keyword": "Intel Core i5 14600K",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-8e7975954bf7",
+    "keyword": "Intel Core i9 13900K",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-f5d52e6ded45",
+    "keyword": "Intel Core i7 13700K",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-586e35568279",
+    "keyword": "Intel Core i5 13600K",
+    "category": "CPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-70d8fe2dc79b",
+    "keyword": "RTX 5090",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-4b1aed2e160c",
+    "keyword": "RTX 5080",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-d2a5ec8d5397",
+    "keyword": "RTX 5070 Ti",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-89d8ecf1b93e",
+    "keyword": "RTX 5070",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-dd27f9de2c0e",
+    "keyword": "RTX 5060 Ti",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-7ecb7b4368d8",
+    "keyword": "RTX 5060",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-b2edf2f7c9a4",
+    "keyword": "RTX 4090",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-7048dec101ce",
+    "keyword": "RTX 4080 Super",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-d08ebde4a35a",
+    "keyword": "RTX 4070 Ti Super",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-f22d89d3942c",
+    "keyword": "RTX 4070 Super",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-10cb12c477b9",
+    "keyword": "RTX 4060 Ti",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-12256d801c83",
+    "keyword": "Radeon RX 9070 XT",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-a7b74e226c01",
+    "keyword": "Radeon RX 9070",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-2aa819bceab5",
+    "keyword": "Radeon RX 7900 XTX",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-820766e4439b",
+    "keyword": "Radeon RX 7800 XT",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-447377458384",
+    "keyword": "Radeon RX 7700 XT",
+    "category": "GPU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-7f52760e7014",
+    "keyword": "DDR5 32GB 6000",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-417eb48445af",
+    "keyword": "DDR5 32GB 6400",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-c2d91d6a1b21",
+    "keyword": "DDR5 32GB 7200",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-7e9ab169dbcc",
+    "keyword": "DDR5 64GB 6000",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-674c5c1d6adb",
+    "keyword": "DDR5 64GB 6400",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-7388af181bca",
+    "keyword": "DDR5 96GB",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-cf83153831b3",
+    "keyword": "DDR5 16GB 6000",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-b7f739fb6986",
+    "keyword": "Corsair Vengeance DDR5",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-233ef9f99d2c",
+    "keyword": "G.Skill Trident Z5 DDR5",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-b8bbf8da9648",
+    "keyword": "Kingston Fury Beast DDR5",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-c3d63602a1e6",
+    "keyword": "Crucial Pro DDR5",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-f2708538bd92",
+    "keyword": "TeamGroup T-Force DDR5",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-ea0e570fcc85",
+    "keyword": "DDR4 32GB 3600",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-8e9dc51c2ce6",
+    "keyword": "DDR4 16GB 3200",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-445cdcc749ee",
+    "keyword": "Corsair Vengeance DDR4",
+    "category": "RAM",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-4b43a67f19fe",
+    "keyword": "2TB NVMe Gen5 SSD",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-492585c4ed6d",
+    "keyword": "4TB NVMe Gen5 SSD",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-97b7c37827fe",
+    "keyword": "1TB NVMe Gen5 SSD",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-1c710ec835c9",
+    "keyword": "2TB NVMe Gen4 SSD",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-7d58612ec1d6",
+    "keyword": "4TB NVMe Gen4 SSD",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-b8df0bb55c2f",
+    "keyword": "1TB NVMe Gen4 SSD",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-851f6d299d17",
+    "keyword": "500GB NVMe SSD",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-0de2bacd4bd3",
+    "keyword": "Samsung 990 Pro",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-a4e78007df40",
+    "keyword": "Samsung 990 EVO",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-7648794e187a",
+    "keyword": "WD Black SN850X",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-82a1e6cd9623",
+    "keyword": "WD Blue SN5000",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-50ff6f442f89",
+    "keyword": "Crucial T705",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-e48155f92e6f",
+    "keyword": "Crucial T500",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-21cb4949d2eb",
+    "keyword": "Seagate FireCuda",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-6e1208d8ff80",
+    "keyword": "Samsung 870 EVO",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-f434c0604716",
+    "keyword": "Crucial MX500",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-cbcd7385a1ff",
+    "keyword": "2TB SATA SSD",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-fa132c95f554",
+    "keyword": "Seagate Barracuda 4TB",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-3270c4a5e71a",
+    "keyword": "WD Red Plus NAS",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-1a29824a1b4b",
+    "keyword": "Seagate IronWolf",
+    "category": "Storage",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-7c6adb660493",
+    "keyword": "1000W PSU 80 Plus Gold",
+    "category": "PSU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-eac784f433d7",
+    "keyword": "850W PSU 80 Plus Gold",
+    "category": "PSU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-cc2711fedd76",
+    "keyword": "750W PSU 80 Plus Gold",
+    "category": "PSU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190502-1670-0209-0000-375d79d816e6",
+    "keyword": "1200W PSU 80 Plus Platinum",
+    "category": "PSU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-77c01517512a",
+    "keyword": "850W PSU 80 Plus Platinum",
+    "category": "PSU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-1d96389479a4",
+    "keyword": "650W PSU 80 Plus Bronze",
+    "category": "PSU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-08870982e53e",
+    "keyword": "550W PSU 80 Plus Bronze",
+    "category": "PSU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-9ad46e65b214",
+    "keyword": "Corsair RMx PSU",
+    "category": "PSU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-1cca1577a3ad",
+    "keyword": "Corsair HX PSU",
+    "category": "PSU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-97b0779fd6a4",
+    "keyword": "EVGA SuperNOVA PSU",
+    "category": "PSU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-5aa700554cac",
+    "keyword": "Seasonic Focus PSU",
+    "category": "PSU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-2292fb88cc90",
+    "keyword": "be quiet! PSU",
+    "category": "PSU",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-d2f053f04cec",
+    "keyword": "ATX PC case tempered glass",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-3113f9a6696a",
+    "keyword": "ATX mid tower case",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-46431162f1c8",
+    "keyword": "mATX PC case",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-56157d36880f",
+    "keyword": "mini ITX PC case",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-25222fa43efd",
+    "keyword": "full tower PC case",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-fdfa159b0d00",
+    "keyword": "E-ATX PC case",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-ed4ce7c286ae",
+    "keyword": "Lian Li O11 Dynamic",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-b39db24272fa",
+    "keyword": "Fractal Design Meshify",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-2fa8ab903bd6",
+    "keyword": "Fractal Design North",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-5d195365fd2d",
+    "keyword": "NZXT H9",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-6652b0b30ece",
+    "keyword": "NZXT H7",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-007f32ded9c9",
+    "keyword": "Corsair iCUE PC case",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-35dba9eef9c0",
+    "keyword": "Phanteks Eclipse case",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-eb10dcf73f71",
+    "keyword": "be quiet! Pure Base",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-cbb312529b56",
+    "keyword": "HYTE Y40",
+    "category": "Case",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-8cca3972e488",
+    "keyword": "Noctua NH-D15",
+    "category": "CPUCooler",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-d85f73687441",
+    "keyword": "Noctua NH-U12A",
+    "category": "CPUCooler",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-56f7460e1302",
+    "keyword": "be quiet! Dark Rock Pro",
+    "category": "CPUCooler",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-be4fc24dad7d",
+    "keyword": "Thermalright Peerless Assassin",
+    "category": "CPUCooler",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-62808084f162",
+    "keyword": "Deepcool AK620",
+    "category": "CPUCooler",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-e0731fdac535",
+    "keyword": "360mm AIO liquid cooler",
+    "category": "CPUCooler",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-0d6ab78eb7ea",
+    "keyword": "Arctic Liquid Freezer II 360",
+    "category": "CPUCooler",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-63760319a5ab",
+    "keyword": "Corsair iCUE H150i",
+    "category": "CPUCooler",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-887be0bad3bc",
+    "keyword": "NZXT Kraken 360",
+    "category": "CPUCooler",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-aca19a984c4f",
+    "keyword": "Lian Li Galahad II",
+    "category": "CPUCooler",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-56bbfbb210aa",
+    "keyword": "240mm AIO liquid cooler",
+    "category": "CPUCooler",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-db594ccd7c43",
+    "keyword": "Arctic Liquid Freezer II 240",
+    "category": "CPUCooler",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-0ab99f146555",
+    "keyword": "Corsair iCUE H100i",
+    "category": "CPUCooler",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-3241f2980aa4",
+    "keyword": "Cooler Master Hyper 212",
+    "category": "CPUCooler",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-1743efbdab52",
+    "keyword": "4K 144Hz gaming monitor",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-91c1995de8b9",
+    "keyword": "4K 240Hz OLED monitor",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-1bab9668236f",
+    "keyword": "1440p 240Hz gaming monitor",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-442a83e1105d",
+    "keyword": "1440p 180Hz monitor",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-78553b65b710",
+    "keyword": "1080p 240Hz gaming monitor",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-f956738ec3d3",
+    "keyword": "ultrawide gaming monitor 1440p",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-91cf0da20545",
+    "keyword": "ultrawide 3440x1440 OLED",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-9aaff5a2e533",
+    "keyword": "LG UltraGear OLED",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-73b7c776188c",
+    "keyword": "Samsung Odyssey OLED",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-5a8851361655",
+    "keyword": "ASUS ROG Swift OLED",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-6c680a4d06a8",
+    "keyword": "Alienware QD-OLED",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-eb6addd1207a",
+    "keyword": "Gigabyte Aorus FO32U2P",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-ed40f0596ec5",
+    "keyword": "4K IPS monitor 27 inch",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-deea1bd791ea",
+    "keyword": "32 inch 4K monitor",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-315e73a48ae5",
+    "keyword": "portable monitor USB-C",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-13d044132733",
+    "keyword": "24 inch IPS monitor 1080p",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-183dd6c6492a",
+    "keyword": "27 inch 1440p IPS",
+    "category": "Monitor",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-ed5955ead2db",
+    "keyword": "120mm case fan RGB",
+    "category": "CaseFan",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-f88c0906ff4a",
+    "keyword": "140mm case fan RGB",
+    "category": "CaseFan",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-39c6e1900bb7",
+    "keyword": "120mm PWM case fan",
+    "category": "CaseFan",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-5a2a1fb202b8",
+    "keyword": "140mm PWM case fan",
+    "category": "CaseFan",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-481c264656eb",
+    "keyword": "Noctua NF-A12x25",
+    "category": "CaseFan",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-2c32eeed5464",
+    "keyword": "Noctua NF-A14",
+    "category": "CaseFan",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-f29358e19c4a",
+    "keyword": "Corsair iCUE QL120",
+    "category": "CaseFan",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-2692d881c8fe",
+    "keyword": "Lian Li UNI Fan",
+    "category": "CaseFan",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-3c45fc238a3c",
+    "keyword": "Arctic P12 PWM",
+    "category": "CaseFan",
+    "cost": 0.001
+  },
+  {
+    "id": "04190503-1670-0209-0000-aa59a0d9e24c",
+    "keyword": "be quiet! Silent Wings",
+    "category": "CaseFan",
+    "cost": 0.001
+  }
+]
