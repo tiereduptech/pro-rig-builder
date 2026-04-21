@@ -7837,7 +7837,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 2000,
-    "interface": "PCIe Gen 5 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 12400,
     "seq_w": 11800,
@@ -7849,7 +7849,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0C3K2WRPV?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 5,
+    "nand": "TLC"
   },
   {
     "id": 7038,
@@ -7862,7 +7864,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 1000,
-    "interface": "PCIe Gen 5 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 12400,
     "seq_w": 11800,
@@ -7874,7 +7876,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0F9XN4DCC?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 5,
+    "nand": "TLC"
   },
   {
     "id": 7039,
@@ -7887,7 +7891,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 2000,
-    "interface": "PCIe Gen 5 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 10000,
     "seq_w": 10000,
@@ -7899,7 +7903,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DHLCRF91?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 5,
+    "nand": "TLC"
   },
   {
     "id": 7040,
@@ -7912,7 +7918,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 1000,
-    "interface": "PCIe Gen 5 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 10000,
     "seq_w": 10000,
@@ -7924,7 +7930,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DHLFWBQ1?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 5,
+    "nand": "TLC"
   },
   {
     "id": 7041,
@@ -7937,7 +7945,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 2000,
-    "interface": "PCIe Gen 5 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 12400,
     "seq_w": 11800,
@@ -7949,7 +7957,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FV33S11L?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 5,
+    "nand": "TLC"
   },
   {
     "id": 7042,
@@ -7962,7 +7972,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 2000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 7300,
     "seq_w": 6600,
@@ -7974,7 +7984,10 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0B7CMZ3QH?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC",
+    "rpm": 7200
   },
   {
     "id": 7043,
@@ -7987,7 +8000,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 2000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 7450,
     "seq_w": 6900,
@@ -7999,7 +8012,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DZK9C789?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC"
   },
   {
     "id": 7044,
@@ -8012,7 +8027,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 1000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 7450,
     "seq_w": 6900,
@@ -8024,7 +8039,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FCRN54V8?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC"
   },
   {
     "id": 7045,
@@ -8037,7 +8054,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 1000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 7300,
     "seq_w": 6300,
@@ -8049,7 +8066,10 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0B7CKVCCV?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC",
+    "rpm": 7200
   },
   {
     "id": 7046,
@@ -8062,7 +8082,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 1000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 7000,
     "seq_w": 5000,
@@ -8074,7 +8094,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FCRN54V8?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC"
   },
   {
     "id": 7047,
@@ -8087,7 +8109,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 2000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 7000,
     "seq_w": 6500,
@@ -8099,7 +8121,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FCRN54V8?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC"
   },
   {
     "id": 7048,
@@ -8112,7 +8136,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 1000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 7000,
     "seq_w": 6500,
@@ -8124,7 +8148,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FCRN54V8?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC"
   },
   {
     "id": 7049,
@@ -8137,7 +8163,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 2000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 7400,
     "seq_w": 7000,
@@ -8149,7 +8175,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CK2TC9XQ?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC"
   },
   {
     "id": 7050,
@@ -8162,7 +8190,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 1000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 7400,
     "seq_w": 7000,
@@ -8174,7 +8202,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CK39YR9V?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC"
   },
   {
     "id": 7051,
@@ -8187,7 +8217,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 1000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 4150,
     "seq_w": 4150,
@@ -8199,7 +8229,10 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DN7CYYSD?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC",
+    "rpm": 7200
   },
   {
     "id": 7052,
@@ -8212,7 +8245,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 2000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 4150,
     "seq_w": 4150,
@@ -8224,7 +8257,10 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FCRN54V8?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC",
+    "rpm": 7200
   },
   {
     "id": 7053,
@@ -8237,7 +8273,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 1000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 3500,
     "seq_w": 2100,
@@ -8249,7 +8285,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FCRN54V8?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "QLC"
   },
   {
     "id": 7054,
@@ -8262,7 +8300,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 2000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 3500,
     "seq_w": 2800,
@@ -8274,7 +8312,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CJRTVLJ2?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "QLC"
   },
   {
     "id": 7055,
@@ -8287,7 +8327,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 2000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 7100,
     "seq_w": 6600,
@@ -8299,7 +8339,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0C4KQ9N79?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC"
   },
   {
     "id": 7056,
@@ -8312,7 +8354,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 1000,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "M.2 2280",
     "seq_r": 7100,
     "seq_w": 6600,
@@ -8324,7 +8366,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FCRN54V8?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC"
   },
   {
     "id": 7057,
@@ -8338,7 +8382,7 @@ export const PARTS = [
     "storageType": "SATA",
     "cap": 1000,
     "interface": "SATA",
-    "ff": "2.5 inch",
+    "ff": "2.5\"",
     "seq_r": 560,
     "seq_w": 530,
     "tlc": true,
@@ -8349,7 +8393,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DF2DC3R4?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "nand": "TLC"
   },
   {
     "id": 7058,
@@ -8363,7 +8408,7 @@ export const PARTS = [
     "storageType": "SATA",
     "cap": 2000,
     "interface": "SATA",
-    "ff": "2.5 inch",
+    "ff": "2.5\"",
     "seq_r": 560,
     "seq_w": 530,
     "tlc": true,
@@ -8374,7 +8419,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DZK9C789?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "nand": "TLC"
   },
   {
     "id": 7059,
@@ -8388,7 +8434,7 @@ export const PARTS = [
     "storageType": "SATA",
     "cap": 500,
     "interface": "SATA",
-    "ff": "2.5 inch",
+    "ff": "2.5\"",
     "seq_r": 560,
     "seq_w": 530,
     "tlc": true,
@@ -8399,7 +8445,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B08QBMD6P4?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "nand": "TLC"
   },
   {
     "id": 7060,
@@ -8413,7 +8460,7 @@ export const PARTS = [
     "storageType": "SATA",
     "cap": 1000,
     "interface": "SATA",
-    "ff": "2.5 inch",
+    "ff": "2.5\"",
     "seq_r": 560,
     "seq_w": 510,
     "tlc": true,
@@ -8424,7 +8471,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DF2DC3R4?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "nand": "TLC"
   },
   {
     "id": 7061,
@@ -8438,7 +8486,7 @@ export const PARTS = [
     "storageType": "SATA",
     "cap": 2000,
     "interface": "SATA",
-    "ff": "2.5 inch",
+    "ff": "2.5\"",
     "seq_r": 560,
     "seq_w": 510,
     "tlc": true,
@@ -8449,7 +8497,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B07YD5F561?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "nand": "TLC"
   },
   {
     "id": 7062,
@@ -8463,7 +8512,7 @@ export const PARTS = [
     "storageType": "SATA",
     "cap": 1000,
     "interface": "SATA",
-    "ff": "2.5 inch",
+    "ff": "2.5\"",
     "seq_r": 560,
     "seq_w": 520,
     "tlc": true,
@@ -8474,7 +8523,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DZK9C789?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "nand": "TLC",
+    "rpm": 7200
   },
   {
     "id": 7063,
@@ -8488,7 +8539,7 @@ export const PARTS = [
     "storageType": "SATA",
     "cap": 480,
     "interface": "SATA",
-    "ff": "2.5 inch",
+    "ff": "2.5\"",
     "seq_r": 500,
     "seq_w": 450,
     "tlc": false,
@@ -8499,7 +8550,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DF2DC3R4?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "nand": "TLC"
   },
   {
     "id": 7064,
@@ -8513,7 +8565,7 @@ export const PARTS = [
     "storageType": "HDD",
     "cap": 2000,
     "interface": "SATA",
-    "ff": "3.5 inch",
+    "ff": "3.5\"",
     "seq_r": 220,
     "seq_w": 220,
     "rpm": 7200,
@@ -8537,7 +8589,7 @@ export const PARTS = [
     "storageType": "HDD",
     "cap": 4000,
     "interface": "SATA",
-    "ff": "3.5 inch",
+    "ff": "3.5\"",
     "seq_r": 190,
     "seq_w": 190,
     "rpm": 5400,
@@ -8561,7 +8613,7 @@ export const PARTS = [
     "storageType": "HDD",
     "cap": 8000,
     "interface": "SATA",
-    "ff": "3.5 inch",
+    "ff": "3.5\"",
     "seq_r": 190,
     "seq_w": 190,
     "rpm": 5400,
@@ -8585,7 +8637,7 @@ export const PARTS = [
     "storageType": "HDD",
     "cap": 1000,
     "interface": "SATA",
-    "ff": "3.5 inch",
+    "ff": "3.5\"",
     "seq_r": 150,
     "seq_w": 150,
     "rpm": 7200,
@@ -8609,7 +8661,7 @@ export const PARTS = [
     "storageType": "HDD",
     "cap": 2000,
     "interface": "SATA",
-    "ff": "3.5 inch",
+    "ff": "3.5\"",
     "seq_r": 150,
     "seq_w": 150,
     "rpm": 5400,
@@ -8633,7 +8685,7 @@ export const PARTS = [
     "storageType": "HDD",
     "cap": 4000,
     "interface": "SATA",
-    "ff": "3.5 inch",
+    "ff": "3.5\"",
     "seq_r": 175,
     "seq_w": 175,
     "rpm": 5400,
@@ -8657,7 +8709,7 @@ export const PARTS = [
     "storageType": "HDD",
     "cap": 4000,
     "interface": "SATA",
-    "ff": "3.5 inch",
+    "ff": "3.5\"",
     "seq_r": 180,
     "seq_w": 180,
     "rpm": 5400,
@@ -8681,7 +8733,7 @@ export const PARTS = [
     "storageType": "HDD",
     "cap": 8000,
     "interface": "SATA",
-    "ff": "3.5 inch",
+    "ff": "3.5\"",
     "seq_r": 210,
     "seq_w": 210,
     "rpm": 7200,
@@ -8705,7 +8757,7 @@ export const PARTS = [
     "storageType": "HDD",
     "cap": 4000,
     "interface": "SATA",
-    "ff": "3.5 inch",
+    "ff": "3.5\"",
     "seq_r": 180,
     "seq_w": 180,
     "rpm": 5400,
@@ -8729,7 +8781,7 @@ export const PARTS = [
     "storageType": "HDD",
     "cap": 8000,
     "interface": "SATA",
-    "ff": "3.5 inch",
+    "ff": "3.5\"",
     "seq_r": 210,
     "seq_w": 210,
     "rpm": 7200,
@@ -8753,7 +8805,7 @@ export const PARTS = [
     "storageType": "HDD",
     "cap": 8000,
     "interface": "SATA",
-    "ff": "3.5 inch",
+    "ff": "3.5\"",
     "seq_r": 270,
     "seq_w": 270,
     "rpm": 7200,
@@ -8776,7 +8828,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 1920,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "U.2",
     "seq_r": 6500,
     "seq_w": 2000,
@@ -8788,7 +8840,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DZK9C789?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC"
   },
   {
     "id": 7076,
@@ -8801,7 +8855,7 @@ export const PARTS = [
     "r": 4.5,
     "storageType": "NVMe",
     "cap": 1920,
-    "interface": "PCIe Gen 4 x4",
+    "interface": "NVMe",
     "ff": "U.2",
     "seq_r": 6800,
     "seq_w": 2700,
@@ -8813,7 +8867,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BHCL7HTL?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "pcie": 4,
+    "nand": "TLC"
   },
   {
     "id": 7077,
@@ -67020,8 +67076,9 @@ export const PARTS = [
     "weight": "260 Grams",
     "cap": 5000,
     "form": "HDD",
-    "ff": "Portable",
-    "storageType": "HDD"
+    "storageType": "HDD",
+    "interface": "USB",
+    "rpm": 5400
   },
   {
     "id": 15683,
@@ -67056,9 +67113,14 @@ export const PARTS = [
     "weight": "0.02 Pounds",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7450,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15684,
@@ -67093,8 +67155,13 @@ export const PARTS = [
     "weight": "0.19 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15685,
@@ -67129,9 +67196,14 @@ export const PARTS = [
     "weight": "0.02 Pounds",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7450,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15686,
@@ -67161,9 +67233,14 @@ export const PARTS = [
     "weight": "0.01 Pounds",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 6000,
+    "seq_w": 5000,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15687,
@@ -67193,9 +67270,14 @@ export const PARTS = [
     "weight": "10 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7100,
+    "seq_w": 6000,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15688,
@@ -67225,8 +67307,13 @@ export const PARTS = [
     "weight": "0.06 Kilograms",
     "cap": 240,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 540,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15689,
@@ -67256,9 +67343,14 @@ export const PARTS = [
     "weight": "10 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "2280 M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7100,
+    "seq_w": 6000,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15690,
@@ -67289,9 +67381,14 @@ export const PARTS = [
     "weight": "6.53 g",
     "cap": 500,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 6000,
+    "seq_w": 5000,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15691,
@@ -67327,9 +67424,14 @@ export const PARTS = [
     "weight": "0.02 Pounds",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14800,
+    "seq_w": 13400,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15692,
@@ -67359,9 +67461,14 @@ export const PARTS = [
     "weight": "0.24 Ounces",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14900,
+    "seq_w": 13800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15693,
@@ -67390,9 +67497,14 @@ export const PARTS = [
     "weight": "0.08 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7350,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15694,
@@ -67423,8 +67535,13 @@ export const PARTS = [
     "weight": "0.05 Pounds",
     "cap": 480,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 500,
+    "seq_w": 450,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15695,
@@ -67459,8 +67576,13 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 540,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15696,
@@ -67495,8 +67617,13 @@ export const PARTS = [
     "weight": "0.19 Pounds",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15697,
@@ -67532,9 +67659,14 @@ export const PARTS = [
     "weight": "0.02 Pounds",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2 (2280)",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7450,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15698,
@@ -67565,8 +67697,14 @@ export const PARTS = [
     "weight": "0.08 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 520,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 15699,
@@ -67597,8 +67735,10 @@ export const PARTS = [
     "weight": "167 Grams",
     "cap": 2000,
     "form": "HDD",
-    "ff": "2.5-inch",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "USB",
+    "rpm": 5400
   },
   {
     "id": 15700,
@@ -67629,7 +67769,14 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7300,
+    "seq_w": 6600,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 15701,
@@ -67660,7 +67807,13 @@ export const PARTS = [
     "weight": "0.06 Pounds",
     "cap": 2000,
     "form": "NVMe",
-    "ff": "Custom"
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7000,
+    "seq_w": 5200,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 15702,
@@ -67690,8 +67843,10 @@ export const PARTS = [
     "weight": "1.65 Pounds",
     "cap": 10000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 15703,
@@ -67721,9 +67876,14 @@ export const PARTS = [
     "weight": "10 Grams",
     "cap": 500,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7100,
+    "seq_w": 6000,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15704,
@@ -67753,8 +67913,13 @@ export const PARTS = [
     "weight": "45 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15705,
@@ -67783,8 +67948,11 @@ export const PARTS = [
     "mpn": "CT2000X9SSD902",
     "weight": "32 Grams",
     "cap": 2000,
-    "ff": "Portable",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "interface": "USB",
+    "seq_r": 1050,
+    "seq_w": 1050,
+    "nand": "TLC"
   },
   {
     "id": 15706,
@@ -67813,9 +67981,14 @@ export const PARTS = [
     "weight": "0.06 Pounds",
     "cap": 256,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "m 2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 3500,
+    "seq_w": 3000,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15707,
@@ -67845,8 +68018,13 @@ export const PARTS = [
     "weight": "46 Grams",
     "cap": 256,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 520,
+    "seq_w": 430,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15708,
@@ -67877,9 +68055,15 @@ export const PARTS = [
     "weight": "0.01 Pounds",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7250,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": false,
+    "rpm": 7200
   },
   {
     "id": 15709,
@@ -67915,8 +68099,14 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "SSD"
+    "ff": "M.2 2280",
+    "storageType": "SSD",
+    "interface": "NVMe",
+    "pcie": 5,
+    "seq_r": 7250,
+    "seq_w": 6300,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15710,
@@ -67946,9 +68136,14 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2 (2280)",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 1700,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15711,
@@ -67977,8 +68172,13 @@ export const PARTS = [
     "weight": "35 Grams",
     "cap": 512,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 520,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15712,
@@ -68007,8 +68207,12 @@ export const PARTS = [
     "mpn": "CT4000X10SSD9-02",
     "weight": "32 Grams",
     "cap": 4000,
-    "ff": "2.5-inch",
-    "storageType": "SSD"
+    "ff": "2.5\"",
+    "storageType": "SSD",
+    "seq_r": 2100,
+    "interface": "USB",
+    "seq_w": 2000,
+    "nand": "TLC"
   },
   {
     "id": 15713,
@@ -68036,9 +68240,14 @@ export const PARTS = [
     "mpn": "3f18df96-b2f4-46cf-b297-b9c29940122b",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen3",
+    "pcie": 3,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2400,
+    "seq_w": 1900,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15714,
@@ -68069,7 +68278,13 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7400,
+    "seq_w": 6300,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15715,
@@ -68098,8 +68313,12 @@ export const PARTS = [
     "mpn": "CT8000X10SSD9-02",
     "weight": "32 Grams",
     "cap": 8000,
-    "ff": "2.5-inch",
-    "storageType": "SSD"
+    "ff": "2.5\"",
+    "storageType": "SSD",
+    "seq_r": 2100,
+    "interface": "USB",
+    "seq_w": 2000,
+    "nand": "TLC"
   },
   {
     "id": 15716,
@@ -68134,9 +68353,14 @@ export const PARTS = [
     "weight": "0.02 Pounds",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14800,
+    "seq_w": 13400,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15717,
@@ -68166,36 +68390,10 @@ export const PARTS = [
     "weight": "1.06 Pounds",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
-  },
-  {
-    "id": 15718,
-    "n": "NAS DXP2800 2-Bay Desktop All-Round Ideal for Content Creators and Enthusiasts, Intel N100 Quad-core CPU, 8GB DDR5 RAM",
-    "img": "https://m.media-amazon.com/images/I/61WvMIHMDcL._AC_SL1500_.jpg",
-    "c": "Storage",
-    "b": "UGREEN",
-    "pr": 389.99,
-    "msrp": 439.99,
-    "r": 4.5,
-    "asin": "B0D22HBFK1",
-    "reviews": 922,
-    "deals": {
-      "amazon": {
-        "price": 389.99,
-        "url": "https://www.amazon.com/dp/B0D22HBFK1?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "discount": 11,
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/619OudxjmeL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/714BB05dWlL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61NlzRLXGOL._AC_SL1500_.jpg"
-    ],
-    "mpn": "DXP2800,2-Bay (Diskless)",
-    "weight": "2.58 Kilograms",
-    "form": "NVMe"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 15719,
@@ -68225,9 +68423,14 @@ export const PARTS = [
     "weight": "0.26 Ounces",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14900,
+    "seq_w": 13800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15720,
@@ -68257,8 +68460,14 @@ export const PARTS = [
     "weight": "4.5 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "ff": "M.2 (2280)",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7400,
+    "seq_w": 6300,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15721,
@@ -68289,8 +68498,13 @@ export const PARTS = [
     "weight": "0.09 Pounds",
     "cap": 240,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 500,
+    "seq_w": 450,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15722,
@@ -68320,9 +68534,14 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 256,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M.2 2280 (80mm) form factor",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2200,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15723,
@@ -68353,8 +68572,13 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 256,
     "form": "NVMe",
-    "ff": "laptop",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "interface": "NVMe",
+    "pcie": 3,
+    "seq_r": 2100,
+    "seq_w": 1700,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15724,
@@ -68384,9 +68608,14 @@ export const PARTS = [
     "weight": "0.3 Ounces",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M.2 2280 (80mm) form factor",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2200,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15725,
@@ -68415,8 +68644,11 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 520
   },
   {
     "id": 15726,
@@ -68451,9 +68683,14 @@ export const PARTS = [
     "weight": "0.02 Pounds",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14800,
+    "seq_w": 13400,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15727,
@@ -68483,9 +68720,14 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15728,
@@ -68514,9 +68756,14 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 4800,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15729,
@@ -68545,8 +68792,13 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 512,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15730,
@@ -68575,8 +68827,12 @@ export const PARTS = [
     "mpn": "X12-Black-512 GB",
     "cap": 512,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "seq_w_inferred": true
   },
   {
     "id": 15731,
@@ -68605,9 +68861,14 @@ export const PARTS = [
     "weight": "0.06 Kilograms",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7100,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15732,
@@ -68639,7 +68900,14 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7300,
+    "seq_w": 6600,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 15733,
@@ -68674,8 +68942,10 @@ export const PARTS = [
     "weight": "1.5 Pounds",
     "cap": 8000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15734,
@@ -68706,8 +68976,14 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 512,
     "form": "NVMe",
-    "ff": "M 2",
-    "storageType": "SSD"
+    "ff": "M.2 2280",
+    "storageType": "SSD",
+    "interface": "NVMe",
+    "pcie": 3,
+    "seq_r": 2100,
+    "seq_w": 1700,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15735,
@@ -68738,9 +69014,14 @@ export const PARTS = [
     "weight": "0.06 Pounds",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "m 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7450,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15736,
@@ -68770,8 +69051,14 @@ export const PARTS = [
     "weight": "5.44 Grams",
     "cap": 500,
     "form": "NVMe",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 3,
+    "seq_r": 2400,
+    "seq_w": 1500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15737,
@@ -68801,9 +69088,14 @@ export const PARTS = [
     "weight": "2.6 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2230",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7100,
+    "seq_w": 6000,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15738,
@@ -68833,8 +69125,10 @@ export const PARTS = [
     "weight": "780 Grams",
     "cap": 28000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15739,
@@ -68863,9 +69157,14 @@ export const PARTS = [
     "weight": "35 Grams",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2400,
+    "seq_w": 1800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15740,
@@ -68895,9 +69194,14 @@ export const PARTS = [
     "weight": "6.5 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 11000,
+    "seq_w": 9550,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15741,
@@ -68928,9 +69232,15 @@ export const PARTS = [
     "weight": "7.5 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14900,
+    "seq_w": 14000,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 15742,
@@ -68959,9 +69269,14 @@ export const PARTS = [
     "mpn": "CSSD-F2000GBMP600MNR2",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2230",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 4950,
+    "seq_w": 4250,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15743,
@@ -68989,8 +69304,14 @@ export const PARTS = [
     "mpn": "GM998",
     "cap": 1000,
     "form": "NVMe",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7300,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15744,
@@ -69019,9 +69340,14 @@ export const PARTS = [
     "mpn": "CSSD-F1000GBMP600MNR2",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2230",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 4950,
+    "seq_w": 4250,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15745,
@@ -69050,8 +69376,13 @@ export const PARTS = [
     "mpn": "A55",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15746,
@@ -69080,8 +69411,14 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "pcie": 3,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15747,
@@ -69113,7 +69450,14 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7300,
+    "seq_w": 6600,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 15748,
@@ -69148,8 +69492,13 @@ export const PARTS = [
     "weight": "54 Grams",
     "cap": 500,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15749,
@@ -69179,9 +69528,14 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M.2 2280 (80mm) form factor",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2200,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15750,
@@ -69211,8 +69565,14 @@ export const PARTS = [
     "weight": "60 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 520,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 15751,
@@ -69242,8 +69602,10 @@ export const PARTS = [
     "weight": "0.92 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15752,
@@ -69274,8 +69636,10 @@ export const PARTS = [
     "weight": "0.2 Pounds",
     "cap": 5000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15753,
@@ -69305,9 +69669,14 @@ export const PARTS = [
     "weight": "6 Grams",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 1800,
+    "seq_w": 1500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15754,
@@ -69336,8 +69705,13 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 520,
+    "seq_w": 450,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15755,
@@ -69368,9 +69742,14 @@ export const PARTS = [
     "weight": "0.01 Pounds",
     "cap": 500,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7250,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15756,
@@ -69400,8 +69779,13 @@ export const PARTS = [
     "weight": "35.1 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 540,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15757,
@@ -69430,8 +69814,11 @@ export const PARTS = [
     "mpn": "CT4000X10PROSSD902",
     "weight": "42 Grams",
     "cap": 4000,
-    "ff": "Portable",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "interface": "USB",
+    "seq_r": 2100,
+    "seq_w": 2000,
+    "nand": "TLC"
   },
   {
     "id": 15758,
@@ -69460,8 +69847,11 @@ export const PARTS = [
     "mpn": "CT2000X10PROSSD902",
     "weight": "42 Grams",
     "cap": 2000,
-    "ff": "Portable",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "interface": "USB",
+    "seq_r": 2100,
+    "seq_w": 2000,
+    "nand": "TLC"
   },
   {
     "id": 15759,
@@ -69491,8 +69881,12 @@ export const PARTS = [
     "mpn": "765441344235",
     "cap": 512,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "seq_w_inferred": true
   },
   {
     "id": 15760,
@@ -69522,9 +69916,14 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15761,
@@ -69555,7 +69954,14 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "rpm": 7200,
+    "seq_r": 5500,
+    "seq_w": 5000,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15762,
@@ -69584,8 +69990,11 @@ export const PARTS = [
     "mpn": "TS256GESD310C",
     "weight": "0.01 Pounds",
     "cap": 256,
-    "ff": "Portable",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "interface": "USB",
+    "seq_r": 1050,
+    "seq_w": 950,
+    "nand": "TLC"
   },
   {
     "id": 15763,
@@ -69615,9 +70024,14 @@ export const PARTS = [
     "weight": "2.6 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2230",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7100,
+    "seq_w": 6000,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15764,
@@ -69647,8 +70061,10 @@ export const PARTS = [
     "weight": "640 Grams",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15765,
@@ -69678,9 +70094,14 @@ export const PARTS = [
     "weight": "1.23 Ounces",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7100,
+    "seq_w": 6000,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15766,
@@ -69709,9 +70130,14 @@ export const PARTS = [
     "weight": "0.24 Ounces",
     "cap": 256,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15767,
@@ -69739,9 +70165,14 @@ export const PARTS = [
     "mpn": "S501-128Go",
     "cap": 128,
     "form": "NVMe",
-    "pcie": "Gen3",
+    "pcie": 3,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15768,
@@ -69771,8 +70202,10 @@ export const PARTS = [
     "weight": "1.4 Pounds",
     "cap": 6000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 15769,
@@ -69802,7 +70235,13 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7000,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15770,
@@ -69832,8 +70271,10 @@ export const PARTS = [
     "weight": "0.55 Pounds",
     "cap": 6000,
     "form": "HDD",
-    "ff": "2.5-inch",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "USB",
+    "rpm": 7200
   },
   {
     "id": 15771,
@@ -69862,8 +70303,14 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 512,
     "form": "NVMe",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2050,
+    "pcie": 3,
+    "seq_w": 1800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15772,
@@ -69893,9 +70340,14 @@ export const PARTS = [
     "weight": "1.17 Ounces",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14900,
+    "seq_w": 13800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15773,
@@ -69925,9 +70377,14 @@ export const PARTS = [
     "weight": "5.4 Grams",
     "cap": 500,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4200,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15774,
@@ -69956,8 +70413,13 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 450,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15775,
@@ -69982,8 +70444,10 @@ export const PARTS = [
     "weight": "1.7 Pounds",
     "cap": 12000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15776,
@@ -70012,8 +70476,13 @@ export const PARTS = [
     "mpn": "MZ-77E500B/EU",
     "weight": "3.12 Ounces",
     "cap": 500,
-    "ff": "2.5-inch",
-    "storageType": "SSD"
+    "ff": "2.5\"",
+    "storageType": "SSD",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15777,
@@ -70043,9 +70512,14 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4200,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15778,
@@ -70075,9 +70549,14 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2 (2280)",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4200,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15779,
@@ -70106,8 +70585,13 @@ export const PARTS = [
     "weight": "0.13 Pounds",
     "cap": 512,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 500,
+    "seq_w": 480,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15780,
@@ -70137,9 +70621,14 @@ export const PARTS = [
     "weight": "20 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2200,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15781,
@@ -70170,9 +70659,14 @@ export const PARTS = [
     "weight": "0.01 Pounds",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 6000,
+    "seq_w": 5000,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15782,
@@ -70202,8 +70696,13 @@ export const PARTS = [
     "weight": "0.1 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 540,
+    "nand": "TLC",
+    "seq_w": 490,
+    "dram": false
   },
   {
     "id": 15783,
@@ -70233,8 +70732,12 @@ export const PARTS = [
     "weight": "20 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 500,
+    "nand": "QLC"
   },
   {
     "id": 15784,
@@ -70264,8 +70767,13 @@ export const PARTS = [
     "weight": "60 Grams",
     "cap": 500,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 540,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15785,
@@ -70294,9 +70802,14 @@ export const PARTS = [
     "weight": "0.06 Pounds",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "m 2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 3500,
+    "seq_w": 3000,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15786,
@@ -70325,8 +70838,13 @@ export const PARTS = [
     "weight": "1.6 Ounces",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15787,
@@ -70355,9 +70873,14 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "m 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 4900,
+    "seq_w": 4500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15788,
@@ -70386,8 +70909,12 @@ export const PARTS = [
     "mpn": "dffb3111-b2ee-4c18-9d0b-cb68a7707f7c",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "seq_w_inferred": true
   },
   {
     "id": 15789,
@@ -70417,8 +70944,14 @@ export const PARTS = [
     "weight": "0.15 Ounces",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 5400
   },
   {
     "id": 15790,
@@ -70447,8 +70980,14 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 500,
     "form": "NVMe",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 6300,
+    "pcie": 4,
+    "seq_w": 6600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15791,
@@ -70479,8 +71018,13 @@ export const PARTS = [
     "weight": "0.12 Pounds",
     "cap": 500,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15792,
@@ -70510,7 +71054,13 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7100,
+    "pcie": 4,
+    "seq_w": 6600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15793,
@@ -70540,8 +71090,13 @@ export const PARTS = [
     "weight": "2.12 Ounces",
     "cap": 512,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 450,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15794,
@@ -70570,9 +71125,14 @@ export const PARTS = [
     "mpn": "1 tb",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2400,
+    "seq_w": 1800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15795,
@@ -70601,9 +71161,14 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 500,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 4700,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15796,
@@ -70632,7 +71197,13 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 3,
+    "seq_r": 2100,
+    "seq_w": 1800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15797,
@@ -70663,9 +71234,14 @@ export const PARTS = [
     "weight": "0.11 Pounds",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15798,
@@ -70694,9 +71270,14 @@ export const PARTS = [
     "mpn": "FN955",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15799,
@@ -70726,8 +71307,10 @@ export const PARTS = [
     "weight": "0.65 Kilograms",
     "cap": 6000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 15800,
@@ -70758,9 +71341,15 @@ export const PARTS = [
     "weight": "7.5 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14900,
+    "seq_w": 14000,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 15801,
@@ -70790,9 +71379,14 @@ export const PARTS = [
     "weight": "0.21 Ounces",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15802,
@@ -70821,9 +71415,14 @@ export const PARTS = [
     "mpn": "NV7400",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7450,
+    "seq_w": 6800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15803,
@@ -70852,7 +71451,12 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 128,
     "form": "NVMe",
-    "storageType": "SATA"
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15804,
@@ -70881,8 +71485,12 @@ export const PARTS = [
     "weight": "36.1 Grams",
     "cap": 256,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "seq_w_inferred": true
   },
   {
     "id": 15805,
@@ -70910,9 +71518,14 @@ export const PARTS = [
     "mpn": "FX550",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen3",
+    "pcie": 3,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 3200,
+    "seq_w": 2800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15806,
@@ -70940,8 +71553,14 @@ export const PARTS = [
     "weight": "20 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "ff": "M 2",
-    "storageType": "SSD"
+    "ff": "M.2 2280",
+    "storageType": "SSD",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 3500,
+    "seq_w": 2700,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15807,
@@ -70970,8 +71589,10 @@ export const PARTS = [
     "weight": "190 Grams",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15808,
@@ -70999,8 +71620,10 @@ export const PARTS = [
     "weight": "1.7 Pounds",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15809,
@@ -71029,9 +71652,14 @@ export const PARTS = [
     "weight": "9.07 g",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "nand": "TLC",
+    "seq_r": 5000,
+    "seq_w": 4500,
+    "dram": false
   },
   {
     "id": 15810,
@@ -71061,8 +71689,10 @@ export const PARTS = [
     "weight": "0.84 Kilograms",
     "cap": 22000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15811,
@@ -71092,9 +71722,14 @@ export const PARTS = [
     "weight": "1.2 Ounces",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14900,
+    "seq_w": 13800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15812,
@@ -71125,9 +71760,14 @@ export const PARTS = [
     "weight": "1.17 Ounces",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14900,
+    "seq_w": 13800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15813,
@@ -71156,8 +71796,13 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 450,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15814,
@@ -71185,8 +71830,10 @@ export const PARTS = [
     "mpn": "ST14000NM001G",
     "cap": 14000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15815,
@@ -71215,9 +71862,14 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 256,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2200,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15816,
@@ -71246,8 +71898,13 @@ export const PARTS = [
     "mpn": "A55",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15817,
@@ -71283,7 +71940,13 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7100,
+    "seq_w": 6000,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15818,
@@ -71312,8 +71975,14 @@ export const PARTS = [
     "weight": "6.8 Grams",
     "cap": 512,
     "form": "NVMe",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 1800,
+    "nand": "TLC",
+    "pcie": 3,
+    "seq_w": 1500,
+    "dram": false
   },
   {
     "id": 15819,
@@ -71343,8 +72012,13 @@ export const PARTS = [
     "weight": "0.12 Pounds",
     "cap": 2000,
     "form": "NVMe",
-    "ff": "compact",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7000,
+    "seq_w": 5100,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15820,
@@ -71375,9 +72049,15 @@ export const PARTS = [
     "weight": "0.01 Pounds",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5150,
+    "seq_w": 4900,
+    "nand": "TLC",
+    "dram": false,
+    "rpm": 7200
   },
   {
     "id": 15821,
@@ -71406,8 +72086,13 @@ export const PARTS = [
     "weight": "37 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15822,
@@ -71438,8 +72123,13 @@ export const PARTS = [
     "weight": "0.19 Pounds",
     "cap": 8000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "QLC",
+    "dram": true
   },
   {
     "id": 15823,
@@ -71469,8 +72159,13 @@ export const PARTS = [
     "weight": "54 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15824,
@@ -71500,8 +72195,10 @@ export const PARTS = [
     "weight": "1.4 Pounds",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15825,
@@ -71531,8 +72228,13 @@ export const PARTS = [
     "weight": "34 Grams",
     "cap": 512,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 450,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15826,
@@ -71561,8 +72263,13 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 512,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "nand": "TLC",
+    "seq_r": 550,
+    "seq_w": 500,
+    "dram": false
   },
   {
     "id": 15827,
@@ -71592,8 +72299,13 @@ export const PARTS = [
     "weight": "45 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15828,
@@ -71622,8 +72334,13 @@ export const PARTS = [
     "weight": "38 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15829,
@@ -71658,8 +72375,13 @@ export const PARTS = [
     "weight": "38 Grams",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 500,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15830,
@@ -71689,8 +72411,13 @@ export const PARTS = [
     "weight": "35.1 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 540,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15831,
@@ -71720,9 +72447,14 @@ export const PARTS = [
     "weight": "6 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 1800,
+    "seq_w": 1500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15832,
@@ -71751,9 +72483,14 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 500,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 4900,
+    "seq_w": 4500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15833,
@@ -71783,9 +72520,14 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15834,
@@ -71814,9 +72556,15 @@ export const PARTS = [
     "weight": "24 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7000,
+    "seq_w": 5300,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 15835,
@@ -71846,8 +72594,10 @@ export const PARTS = [
     "weight": "1.4 Pounds",
     "cap": 6000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15836,
@@ -71877,7 +72627,13 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7000,
+    "pcie": 4,
+    "seq_w": 6600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15837,
@@ -71908,7 +72664,14 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "rpm": 7200,
+    "seq_r": 5500,
+    "seq_w": 5000,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15838,
@@ -71937,8 +72700,13 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 512,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15839,
@@ -71967,8 +72735,13 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 256,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15840,
@@ -71997,8 +72770,13 @@ export const PARTS = [
     "weight": "0.5 Ounces",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 500,
+    "seq_w": 450,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15841,
@@ -72028,8 +72806,10 @@ export const PARTS = [
     "weight": "0.2 Kilograms",
     "cap": 4000,
     "form": "HDD",
-    "ff": "2.5-inch",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "USB",
+    "rpm": 5400
   },
   {
     "id": 15842,
@@ -72058,8 +72838,13 @@ export const PARTS = [
     "mpn": "WDBAWY0010BBK-WESN",
     "weight": "2.72 ounces",
     "cap": 1000,
-    "ff": "2.5-inch",
-    "storageType": "SSD"
+    "ff": "2.5\"",
+    "storageType": "SSD",
+    "seq_r": 2000,
+    "interface": "USB",
+    "seq_w": 2000,
+    "nand": "TLC",
+    "rpm": 7200
   },
   {
     "id": 15843,
@@ -72088,9 +72873,14 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15844,
@@ -72120,9 +72910,14 @@ export const PARTS = [
     "weight": "9.9 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M.2 (2280)",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14500,
+    "seq_w": 12700,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15845,
@@ -72152,9 +72947,14 @@ export const PARTS = [
     "weight": "9.9 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M.2 (2280)",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14500,
+    "seq_w": 12700,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15846,
@@ -72184,9 +72984,14 @@ export const PARTS = [
     "weight": "6.5 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 11000,
+    "seq_w": 9550,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15847,
@@ -72215,9 +73020,14 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15848,
@@ -72246,9 +73056,14 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14000,
+    "seq_w": 13000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15849,
@@ -72278,9 +73093,12 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7000,
+    "seq_w": 6500
   },
   {
     "id": 15850,
@@ -72310,7 +73128,13 @@ export const PARTS = [
     "cap": 500,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 6300,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15851,
@@ -72341,9 +73165,15 @@ export const PARTS = [
     "weight": "7.5 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14900,
+    "seq_w": 14000,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 15852,
@@ -72374,8 +73204,13 @@ export const PARTS = [
     "weight": "45 Grams",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15853,
@@ -72405,9 +73240,14 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15854,
@@ -72436,9 +73276,14 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 6400,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15855,
@@ -72468,8 +73313,10 @@ export const PARTS = [
     "weight": "1.4 Pounds",
     "cap": 10000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15856,
@@ -72498,9 +73345,14 @@ export const PARTS = [
     "mpn": "NV7400",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7450,
+    "seq_w": 6800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15857,
@@ -72530,8 +73382,14 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2230",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 3,
+    "seq_r": 3300,
+    "seq_w": 2600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15858,
@@ -72561,8 +73419,14 @@ export const PARTS = [
     "weight": "32 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7400,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15859,
@@ -72592,8 +73456,10 @@ export const PARTS = [
     "weight": "0.69 Kilograms",
     "cap": 16000,
     "form": "HDD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15860,
@@ -72621,8 +73487,13 @@ export const PARTS = [
     "mpn": "ASU630SS-1T92Q-R",
     "cap": 1920,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "seq_r": 520,
+    "interface": "SATA",
+    "seq_w": 450,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15861,
@@ -72652,8 +73523,14 @@ export const PARTS = [
     "weight": "2.59 g",
     "cap": 500,
     "form": "NVMe",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "ff": "M.2 2230",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 6000,
+    "seq_w": 5000,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15862,
@@ -72682,9 +73559,14 @@ export const PARTS = [
     "weight": "0.06 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "seq_w": 6800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15863,
@@ -72713,8 +73595,14 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2150,
+    "pcie": 3,
+    "seq_w": 1800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15864,
@@ -72744,8 +73632,10 @@ export const PARTS = [
     "weight": "1.5 Pounds",
     "cap": 14000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15865,
@@ -72774,8 +73664,13 @@ export const PARTS = [
     "weight": "0.06 Kilograms",
     "cap": 512,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 450,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15866,
@@ -72804,8 +73699,13 @@ export const PARTS = [
     "weight": "0.06 Kilograms",
     "cap": 120,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 450,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15867,
@@ -72836,8 +73736,13 @@ export const PARTS = [
     "weight": "0.09 Kilograms",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SSD"
+    "ff": "2.5\"",
+    "storageType": "SSD",
+    "interface": "SATA",
+    "seq_r": 540,
+    "seq_w": 480,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15868,
@@ -72867,8 +73772,9 @@ export const PARTS = [
     "weight": "1.5 Pounds",
     "cap": 14000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "rpm": 7200
   },
   {
     "id": 15869,
@@ -72898,9 +73804,12 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2500,
+    "seq_w": 2500
   },
   {
     "id": 15870,
@@ -72928,8 +73837,14 @@ export const PARTS = [
     "mpn": "GM988",
     "cap": 2000,
     "form": "NVMe",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7300,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15871,
@@ -72959,9 +73874,14 @@ export const PARTS = [
     "weight": "5.4 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4200,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15872,
@@ -72991,8 +73911,13 @@ export const PARTS = [
     "weight": "0.07 Kilograms",
     "cap": 960,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "nand": "TLC",
+    "seq_r": 550,
+    "seq_w": 500,
+    "dram": false
   },
   {
     "id": 15873,
@@ -73017,8 +73942,9 @@ export const PARTS = [
     "weight": "0.7 Kilograms",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "rpm": 7200
   },
   {
     "id": 15874,
@@ -73047,9 +73973,14 @@ export const PARTS = [
     "weight": "27 Grams",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2200,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15875,
@@ -73078,9 +74009,14 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2400,
+    "seq_w": 1800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15876,
@@ -73109,8 +74045,12 @@ export const PARTS = [
     "weight": "30.6 Grams",
     "cap": 512,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "seq_w_inferred": true
   },
   {
     "id": 15877,
@@ -73139,65 +74079,14 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "2280",
-    "storageType": "NVMe"
-  },
-  {
-    "id": 15878,
-    "n": "3 Bay Hard Drive Enclosure for 2.5“/3.5\" SATA HDD/SSD with USB A/C 3.0, Hard Drive Enclosure Support Hot Swappable, T...",
-    "img": "https://m.media-amazon.com/images/I/51Yh6QzTDzL._SL1500_.jpg",
-    "c": "Storage",
-    "b": "Cenmate",
-    "pr": 49.99,
-    "msrp": 49.99,
-    "r": 4.6,
-    "asin": "B0GCMZ85Y3",
-    "reviews": 43,
-    "deals": {
-      "amazon": {
-        "price": 49.99,
-        "url": "https://www.amazon.com/dp/B0GCMZ85Y3?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71JXlbMrlPL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71iM5ifGLDL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61vLkwu0ufL._SL1500_.jpg"
-    ],
-    "weight": "0.26 Kilograms",
-    "form": "SATA SSD",
-    "storageType": "SATA"
-  },
-  {
-    "id": 15879,
-    "n": "6Gbps Hard Drive Enclosure for 3.5/2.5 Inch SATA SSD HDD Aluminum USB C HDD Enclosure Up to 30TB, 3.5 Hard Drive Encl...",
-    "img": "https://m.media-amazon.com/images/I/61yNfCTUHCL._AC_SL1500_.jpg",
-    "c": "Storage",
-    "b": "ACASIS",
-    "pr": 28.49,
-    "msrp": 29.99,
-    "r": 4.4,
-    "asin": "B0GHQRSLZ1",
-    "reviews": 20,
-    "deals": {
-      "amazon": {
-        "price": 28.49,
-        "url": "https://www.amazon.com/dp/B0GHQRSLZ1?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "discount": 5,
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71o7ra9pG9L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71xFJ7vomCL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71HpUm6ydZL._AC_SL1500_.jpg"
-    ],
-    "upc": "686585053824",
-    "cap": 30000,
-    "form": "SATA SSD",
-    "storageType": "SATA"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15880,
@@ -73226,8 +74115,14 @@ export const PARTS = [
     "weight": "27 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "pcie": 4,
+    "seq_w": 4500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15881,
@@ -73255,8 +74150,13 @@ export const PARTS = [
     "mpn": "FN960",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "seq_w": 6800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15882,
@@ -73284,8 +74184,13 @@ export const PARTS = [
     "mpn": "FN950",
     "cap": 500,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15883,
@@ -73315,8 +74220,10 @@ export const PARTS = [
     "weight": "720 Grams",
     "cap": 10000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15884,
@@ -73346,8 +74253,13 @@ export const PARTS = [
     "weight": "0.04 Kilograms",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 510,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15885,
@@ -73377,8 +74289,13 @@ export const PARTS = [
     "weight": "51 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 520,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15886,
@@ -73408,9 +74325,15 @@ export const PARTS = [
     "weight": "0.2 Ounces",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen3",
+    "pcie": 3,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2400,
+    "seq_w": 1950,
+    "nand": "TLC",
+    "dram": false,
+    "rpm": 7200
   },
   {
     "id": 15887,
@@ -73440,8 +74363,14 @@ export const PARTS = [
     "weight": "0.12 Pounds",
     "cap": 1000,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 3,
+    "seq_r": 3500,
+    "seq_w": 2500,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15888,
@@ -73471,8 +74400,13 @@ export const PARTS = [
     "weight": "0.06 Kilograms",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 540,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15889,
@@ -73500,9 +74434,15 @@ export const PARTS = [
     "weight": "0.01 Pounds",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5150,
+    "seq_w": 4900,
+    "nand": "TLC",
+    "dram": false,
+    "rpm": 7200
   },
   {
     "id": 15890,
@@ -73531,8 +74471,13 @@ export const PARTS = [
     "weight": "46 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "QLC",
+    "dram": true
   },
   {
     "id": 15891,
@@ -73562,8 +74507,10 @@ export const PARTS = [
     "weight": "600 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 15892,
@@ -73592,8 +74539,13 @@ export const PARTS = [
     "weight": "2.08 ounces",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 520,
+    "nand": "TLC",
+    "seq_w": 500,
+    "dram": false
   },
   {
     "id": 15893,
@@ -73623,8 +74575,13 @@ export const PARTS = [
     "weight": "9.07 g",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 510,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15894,
@@ -73654,8 +74611,10 @@ export const PARTS = [
     "weight": "2.43 Pounds",
     "cap": 8000,
     "form": "HDD",
-    "ff": "2.5-inch",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "USB",
+    "rpm": 5400
   },
   {
     "id": 15895,
@@ -73685,8 +74644,10 @@ export const PARTS = [
     "weight": "14.7 Ounces",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15896,
@@ -73715,9 +74676,14 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7450,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15897,
@@ -73747,8 +74713,10 @@ export const PARTS = [
     "weight": "1.8 Ounces",
     "cap": 3000,
     "form": "SATA SSD",
-    "ff": "2.5 in|3.5 in",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 15898,
@@ -73779,9 +74747,14 @@ export const PARTS = [
     "weight": "6.6 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 6000,
+    "seq_w": 5000,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15899,
@@ -73811,9 +74784,14 @@ export const PARTS = [
     "weight": "8.1 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15900,
@@ -73843,9 +74821,14 @@ export const PARTS = [
     "weight": "10 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7100,
+    "seq_w": 6000,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 15901,
@@ -73875,9 +74858,15 @@ export const PARTS = [
     "weight": "0.85 Ounces",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "3.5-inch",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "3.5\"",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7000,
+    "seq_w": 5300,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 15902,
@@ -73907,8 +74896,10 @@ export const PARTS = [
     "weight": "660 Grams",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 15903,
@@ -73938,9 +74929,15 @@ export const PARTS = [
     "weight": "0.01 Pounds",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 4150,
+    "seq_w": 4150,
+    "nand": "TLC",
+    "dram": false,
+    "rpm": 7200
   },
   {
     "id": 15904,
@@ -73970,8 +74967,13 @@ export const PARTS = [
     "weight": "46 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 520,
+    "seq_w": 430,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15905,
@@ -74000,8 +75002,13 @@ export const PARTS = [
     "weight": "45 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15906,
@@ -74031,8 +75038,10 @@ export const PARTS = [
     "weight": "1.4 Pounds",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15907,
@@ -74062,8 +75071,12 @@ export const PARTS = [
     "weight": "0.21 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "rpm": 7200,
+    "seq_r": 140,
+    "seq_w": 140
   },
   {
     "id": 15908,
@@ -74094,8 +75107,13 @@ export const PARTS = [
     "weight": "0.07 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 535,
+    "seq_w": 450,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15909,
@@ -74125,9 +75143,14 @@ export const PARTS = [
     "weight": "10 Grams",
     "cap": 500,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 7000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15910,
@@ -74157,8 +75180,12 @@ export const PARTS = [
     "weight": "0.2 Pounds",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "rpm": 7200,
+    "seq_r": 140,
+    "seq_w": 140
   },
   {
     "id": 15911,
@@ -74183,8 +75210,14 @@ export const PARTS = [
     "weight": "9.07 g",
     "cap": 250,
     "form": "NVMe",
-    "ff": "Compact M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 3,
+    "seq_r": 3200,
+    "seq_w": 1900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15912,
@@ -74214,8 +75247,10 @@ export const PARTS = [
     "weight": "0.7 Kilograms",
     "cap": 6000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15913,
@@ -74245,9 +75280,14 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "seq_w": 6800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15914,
@@ -74276,9 +75316,14 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "seq_w": 6800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15915,
@@ -74307,9 +75352,14 @@ export const PARTS = [
     "mpn": "UD902280",
     "cap": 500,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15916,
@@ -74339,8 +75389,9 @@ export const PARTS = [
     "weight": "167 Grams",
     "cap": 2000,
     "form": "HDD",
-    "ff": "2.5-inch",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "USB"
   },
   {
     "id": 15917,
@@ -74370,9 +75421,14 @@ export const PARTS = [
     "weight": "20 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "m 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2230",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 3400,
+    "seq_w": 3000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15918,
@@ -74402,8 +75458,10 @@ export const PARTS = [
     "weight": "0.45 Kilograms",
     "cap": 3000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 15919,
@@ -74433,8 +75491,10 @@ export const PARTS = [
     "weight": "1.68 Pounds",
     "cap": 8000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15920,
@@ -74464,8 +75524,10 @@ export const PARTS = [
     "weight": "266 Grams",
     "cap": 5000,
     "form": "HDD",
-    "ff": "2.5-inch",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "USB",
+    "rpm": 5400
   },
   {
     "id": 15921,
@@ -74495,8 +75557,9 @@ export const PARTS = [
     "weight": "167 Grams",
     "cap": 2000,
     "form": "HDD",
-    "ff": "2.5-inch",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "USB"
   },
   {
     "id": 15922,
@@ -74525,8 +75588,13 @@ export const PARTS = [
     "mpn": "FS810-512GB",
     "cap": 512,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15923,
@@ -74556,9 +75624,14 @@ export const PARTS = [
     "weight": "35 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 7000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15924,
@@ -74588,9 +75661,14 @@ export const PARTS = [
     "weight": "35 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 7000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15925,
@@ -74616,8 +75694,14 @@ export const PARTS = [
     "weight": "1.22 Ounces",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 5400
   },
   {
     "id": 15926,
@@ -74641,8 +75725,14 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 5,
+    "seq_r": 7250,
+    "seq_w": 6300,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15927,
@@ -74672,8 +75762,15 @@ export const PARTS = [
     "weight": "5.7 Grams",
     "cap": 500,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "rpm": 7200,
+    "seq_r": 5500,
+    "seq_w": 5000,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15928,
@@ -74705,7 +75802,14 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "rpm": 7200,
+    "seq_r": 5500,
+    "seq_w": 5000,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15929,
@@ -74735,8 +75839,12 @@ export const PARTS = [
     "weight": "96 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200,
+    "seq_r": 140,
+    "seq_w": 140
   },
   {
     "id": 15930,
@@ -74765,8 +75873,13 @@ export const PARTS = [
     "weight": "0.12 Pounds",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15931,
@@ -74795,8 +75908,13 @@ export const PARTS = [
     "mpn": "FX815",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 450,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15932,
@@ -74826,9 +75944,14 @@ export const PARTS = [
     "weight": "5 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2242",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 3400,
+    "seq_w": 3000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15933,
@@ -74858,8 +75981,10 @@ export const PARTS = [
     "weight": "1.7 Pounds",
     "cap": 12000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15934,
@@ -74888,9 +76013,14 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7250,
+    "seq_w": 6300,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15935,
@@ -74920,9 +76050,12 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "SATA",
+    "rpm": 7200,
+    "nand": "QLC"
   },
   {
     "id": 15936,
@@ -74951,9 +76084,14 @@ export const PARTS = [
     "weight": "49.89 Grams",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2800,
+    "seq_w": 2200,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15937,
@@ -74982,7 +76120,10 @@ export const PARTS = [
     "mpn": "CT4000X6SSD9",
     "weight": "40.5 Grams",
     "cap": 4000,
-    "ff": "Portable"
+    "interface": "USB",
+    "seq_r": 800,
+    "seq_w": 800,
+    "nand": "TLC"
   },
   {
     "id": 15938,
@@ -75011,9 +76152,14 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15939,
@@ -75042,8 +76188,14 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 3,
+    "seq_r": 2100,
+    "seq_w": 1800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15940,
@@ -75073,8 +76225,13 @@ export const PARTS = [
     "weight": "45 Grams",
     "cap": 250,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15941,
@@ -75104,9 +76261,14 @@ export const PARTS = [
     "weight": "0.11 Pounds",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15942,
@@ -75137,9 +76299,14 @@ export const PARTS = [
     "weight": "0.11 Pounds",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15943,
@@ -75168,9 +76335,14 @@ export const PARTS = [
     "weight": "0.02 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 6700,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15944,
@@ -75200,9 +76372,14 @@ export const PARTS = [
     "weight": "9.9 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M.2 (2280)",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14500,
+    "seq_w": 12700,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15945,
@@ -75232,8 +76409,10 @@ export const PARTS = [
     "weight": "1.3 Pounds",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15946,
@@ -75262,9 +76441,14 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15947,
@@ -75294,9 +76478,14 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 11000,
+    "seq_w": 9550,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15948,
@@ -75326,9 +76515,14 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 11000,
+    "seq_w": 9550,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15949,
@@ -75355,8 +76549,13 @@ export const PARTS = [
     "weight": "44.6 Grams",
     "cap": 500,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15950,
@@ -75386,8 +76585,13 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 512,
     "form": "NVMe",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15951,
@@ -75416,9 +76620,14 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "seq_w": 6800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15952,
@@ -75446,8 +76655,13 @@ export const PARTS = [
     "mpn": "NT-XXX 2280",
     "cap": 4000,
     "form": "NVMe",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15953,
@@ -75475,8 +76689,13 @@ export const PARTS = [
     "mpn": "NT-2TB 2280",
     "cap": 2000,
     "form": "NVMe",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15954,
@@ -75505,8 +76724,13 @@ export const PARTS = [
     "mpn": "3a38dbaf-2032-422f-82d5-88d439028e95",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "nand": "TLC",
+    "seq_r": 560,
+    "seq_w": 520,
+    "dram": true
   },
   {
     "id": 15955,
@@ -75535,9 +76759,14 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 7000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15956,
@@ -75565,8 +76794,10 @@ export const PARTS = [
     "weight": "780 Grams",
     "cap": 8000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15957,
@@ -75594,9 +76825,14 @@ export const PARTS = [
     "mpn": "C910",
     "cap": 500,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14000,
+    "seq_w": 13000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15958,
@@ -75625,9 +76861,14 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14000,
+    "seq_w": 13000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15959,
@@ -75656,9 +76897,14 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14000,
+    "seq_w": 13000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15960,
@@ -75688,9 +76934,12 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7000,
+    "seq_w": 6500
   },
   {
     "id": 15961,
@@ -75721,9 +76970,12 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7000,
+    "seq_w": 6000
   },
   {
     "id": 15962,
@@ -75753,8 +77005,13 @@ export const PARTS = [
     "weight": "57 Grams",
     "cap": 8000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "QLC",
+    "dram": true
   },
   {
     "id": 15963,
@@ -75785,9 +77042,15 @@ export const PARTS = [
     "weight": "0.02 Pounds",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen3",
+    "pcie": 3,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "SATA",
+    "rpm": 5400,
+    "seq_r": 3430,
+    "seq_w": 2900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15964,
@@ -75817,8 +77080,10 @@ export const PARTS = [
     "weight": "0.7 Kilograms",
     "cap": 12000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15965,
@@ -75847,8 +77112,13 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "ff": "m.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15966,
@@ -75878,7 +77148,13 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7000,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15967,
@@ -75907,8 +77183,10 @@ export const PARTS = [
     "weight": "0.83 Kilograms",
     "cap": 14000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 15968,
@@ -75937,9 +77215,14 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "nand": "TLC",
+    "seq_w": 4500,
+    "dram": false
   },
   {
     "id": 15969,
@@ -75969,9 +77252,14 @@ export const PARTS = [
     "weight": "0.21 Ounces",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15970,
@@ -76000,9 +77288,14 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7450,
+    "nand": "TLC",
+    "seq_w": 6700,
+    "dram": true
   },
   {
     "id": 15971,
@@ -76031,9 +77324,14 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 6400,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15972,
@@ -76063,8 +77361,10 @@ export const PARTS = [
     "weight": "720 Grams",
     "cap": 8000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15973,
@@ -76099,8 +77399,10 @@ export const PARTS = [
     "weight": "672 Grams",
     "cap": 16000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15974,
@@ -76135,8 +77437,10 @@ export const PARTS = [
     "weight": "670 Grams",
     "cap": 12000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 15975,
@@ -76166,9 +77470,14 @@ export const PARTS = [
     "weight": "3 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2230",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15976,
@@ -76197,8 +77506,10 @@ export const PARTS = [
     "weight": "1.43 Pounds",
     "cap": 10000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 15977,
@@ -76228,9 +77539,14 @@ export const PARTS = [
     "weight": "55 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 12400,
+    "seq_w": 11800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15978,
@@ -76260,9 +77576,14 @@ export const PARTS = [
     "weight": "55 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 12400,
+    "seq_w": 11800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15979,
@@ -76294,7 +77615,14 @@ export const PARTS = [
     "cap": 500,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "rpm": 7200,
+    "seq_r": 7250,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15980,
@@ -76326,7 +77654,14 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "rpm": 7200,
+    "seq_r": 7250,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15981,
@@ -76357,7 +77692,14 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "rpm": 7200,
+    "seq_r": 7250,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15982,
@@ -76386,8 +77728,13 @@ export const PARTS = [
     "weight": "44.6 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15983,
@@ -76416,9 +77763,14 @@ export const PARTS = [
     "weight": "0.06 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7450,
+    "nand": "TLC",
+    "seq_w": 6700,
+    "dram": true
   },
   {
     "id": 15984,
@@ -76447,8 +77799,14 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7450,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15985,
@@ -76478,8 +77836,13 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 500,
+    "seq_w": 450,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15986,
@@ -76509,8 +77872,12 @@ export const PARTS = [
     "weight": "0.21 Pounds",
     "cap": 500,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "rpm": 7200,
+    "seq_r": 140,
+    "seq_w": 140
   },
   {
     "id": 15987,
@@ -76534,7 +77901,7 @@ export const PARTS = [
     "weight": "620 Grams",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
+    "ff": "3.5\"",
     "storageType": "HDD"
   },
   {
@@ -76561,8 +77928,10 @@ export const PARTS = [
     "weight": "0.27 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 15989,
@@ -76591,7 +77960,13 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "pcie": 4,
+    "seq_w": 4800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15990,
@@ -76622,7 +77997,12 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "SATA"
+    "storageType": "SATA",
+    "interface": "NVMe",
+    "seq_r": 560,
+    "seq_w": 520,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15991,
@@ -76652,9 +78032,14 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 12400,
+    "seq_w": 11800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15992,
@@ -76684,9 +78069,14 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 12400,
+    "seq_w": 11800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15993,
@@ -76715,8 +78105,12 @@ export const PARTS = [
     "weight": "37 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "seq_w_inferred": true
   },
   {
     "id": 15994,
@@ -76745,9 +78139,14 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 3000,
+    "nand": "QLC",
+    "seq_w": 2800,
+    "dram": false
   },
   {
     "id": 15995,
@@ -76777,9 +78176,14 @@ export const PARTS = [
     "weight": "55 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M.2 (2280)",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14500,
+    "seq_w": 12700,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15996,
@@ -76808,8 +78212,12 @@ export const PARTS = [
     "weight": "36.1 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "seq_w_inferred": true
   },
   {
     "id": 15997,
@@ -76839,8 +78247,13 @@ export const PARTS = [
     "weight": "32.7 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 545,
+    "seq_w": 545,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 15998,
@@ -76870,9 +78283,14 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 10000,
+    "seq_w": 10000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 15999,
@@ -76902,9 +78320,14 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 10000,
+    "seq_w": 10000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16000,
@@ -76934,9 +78357,14 @@ export const PARTS = [
     "mpn": "CSSD-F4000GBMP700MCR",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2242",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 10000,
+    "seq_w": 10000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16001,
@@ -76968,7 +78396,13 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7400,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16002,
@@ -76997,8 +78431,9 @@ export const PARTS = [
     "mpn": "ST4000DM000/CR/2YR",
     "cap": 4000,
     "form": "HDD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA"
   },
   {
     "id": 16003,
@@ -77028,8 +78463,14 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7400,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16004,
@@ -77059,8 +78500,14 @@ export const PARTS = [
     "weight": "4.5 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "ff": "M.2 (0.87 inches)",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7400,
+    "seq_w": 6300,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16005,
@@ -77089,8 +78536,9 @@ export const PARTS = [
     "mpn": "MG04ACA400N",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "rpm": 7200
   },
   {
     "id": 16006,
@@ -77118,8 +78566,10 @@ export const PARTS = [
     "weight": "1.54 Pounds",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16007,
@@ -77148,8 +78598,10 @@ export const PARTS = [
     "weight": "1.58 Pounds",
     "cap": 6000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16008,
@@ -77178,9 +78630,14 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "nand": "TLC",
+    "seq_r": 5000,
+    "seq_w": 4500,
+    "dram": false
   },
   {
     "id": 16009,
@@ -77209,9 +78666,14 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "nand": "TLC",
+    "seq_r": 5000,
+    "seq_w": 4500,
+    "dram": false
   },
   {
     "id": 16010,
@@ -77241,8 +78703,13 @@ export const PARTS = [
     "mpn": "GS-SSD-NAS-512GB-2PK-B",
     "cap": 512,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SSD"
+    "ff": "2.5\"",
+    "storageType": "SSD",
+    "interface": "SATA",
+    "seq_r": 540,
+    "seq_w": 480,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16011,
@@ -77272,8 +78739,10 @@ export const PARTS = [
     "mpn": "ST12000DM0007-CR/5YR",
     "cap": 12000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16012,
@@ -77302,8 +78771,13 @@ export const PARTS = [
     "weight": "900 Milligrams",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16013,
@@ -77333,8 +78807,10 @@ export const PARTS = [
     "weight": "0.65 Kilograms",
     "cap": 6000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16014,
@@ -77363,8 +78839,9 @@ export const PARTS = [
     "weight": "1.54 Pounds",
     "cap": 4000,
     "form": "HDD",
-    "ff": "Other",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "rpm": 7200
   },
   {
     "id": 16015,
@@ -77393,9 +78870,14 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "2.28 inches",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "2.5\"",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16016,
@@ -77425,9 +78907,13 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 3400,
+    "seq_w": 2900,
+    "nand": "TLC"
   },
   {
     "id": 16017,
@@ -77456,8 +78942,13 @@ export const PARTS = [
     "weight": "45.6 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16018,
@@ -77487,7 +78978,7 @@ export const PARTS = [
     "weight": "91 Grams",
     "cap": 500,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
+    "ff": "2.5\"",
     "storageType": "HDD"
   },
   {
@@ -77511,8 +79002,10 @@ export const PARTS = [
     "mpn": "WD5000AZLX-cr",
     "cap": 500,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16020,
@@ -77541,8 +79034,10 @@ export const PARTS = [
     "weight": "0.75 Kilograms",
     "cap": 8000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 16021,
@@ -77571,9 +79066,14 @@ export const PARTS = [
     "weight": "0.21 Ounces",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 3500,
+    "seq_w": 2600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16022,
@@ -77602,9 +79102,14 @@ export const PARTS = [
     "weight": "20 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "nand": "TLC",
+    "seq_r": 7300,
+    "seq_w": 6500,
+    "dram": false
   },
   {
     "id": 16023,
@@ -77632,8 +79137,10 @@ export const PARTS = [
     "mpn": "WD40EFPX-AJP",
     "cap": 4000,
     "form": "HDD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 16024,
@@ -77662,8 +79169,14 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "ff": "M.2 (2280)",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7450,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16025,
@@ -77693,8 +79206,13 @@ export const PARTS = [
     "weight": "0.11 Pounds",
     "cap": 500,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "nand": "TLC",
+    "seq_r": 560,
+    "seq_w": 540,
+    "dram": true
   },
   {
     "id": 16026,
@@ -77724,8 +79242,10 @@ export const PARTS = [
     "weight": "1.4 Pounds",
     "cap": 10000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16027,
@@ -77753,8 +79273,10 @@ export const PARTS = [
     "mpn": "WD60EFPX-AJP",
     "cap": 6000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 16028,
@@ -77783,8 +79305,10 @@ export const PARTS = [
     "mpn": "Exos ST24000NM000C",
     "cap": 24000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16029,
@@ -77814,9 +79338,14 @@ export const PARTS = [
     "weight": "40.8 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 6700,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16030,
@@ -77845,8 +79374,10 @@ export const PARTS = [
     "mpn": "WDBRJY0160HNC-WRSN",
     "cap": 16000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16031,
@@ -77876,7 +79407,13 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "ff": "M.2 2280",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7400,
+    "seq_w": 7000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16032,
@@ -77906,9 +79443,12 @@ export const PARTS = [
     "weight": "0.04 Kilograms",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 6000,
+    "seq_w": 6000
   },
   {
     "id": 16033,
@@ -77936,9 +79476,14 @@ export const PARTS = [
     "mpn": "GM988",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16034,
@@ -77968,9 +79513,14 @@ export const PARTS = [
     "weight": "10 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen3",
+    "pcie": 3,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 3300,
+    "seq_w": 3100,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16035,
@@ -77998,9 +79548,14 @@ export const PARTS = [
     "mpn": "GM988",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7200,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16036,
@@ -78029,9 +79584,14 @@ export const PARTS = [
     "weight": "10 Grams",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen3",
+    "pcie": 3,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2100,
+    "seq_w": 1700,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16037,
@@ -78059,9 +79619,14 @@ export const PARTS = [
     "mpn": "ON2000PRO",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2000,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16038,
@@ -78090,9 +79655,14 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen3",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 3,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2200,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16039,
@@ -78122,9 +79692,14 @@ export const PARTS = [
     "weight": "6.4 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7000,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16040,
@@ -78152,9 +79727,14 @@ export const PARTS = [
     "mpn": "ON2000PRO",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2000,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16041,
@@ -78183,8 +79763,10 @@ export const PARTS = [
     "mpn": "ST4000LM024-cr",
     "cap": 4000,
     "form": "HDD",
-    "ff": "2.5-inch",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16042,
@@ -78219,9 +79801,13 @@ export const PARTS = [
     "weight": "0.02 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "Bar",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7100,
+    "seq_w": 6000,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 16043,
@@ -78250,9 +79836,14 @@ export const PARTS = [
     "weight": "5.6 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 2100,
+    "seq_w": 1700,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16044,
@@ -78282,9 +79873,14 @@ export const PARTS = [
     "weight": "0.04 Kilograms",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14500,
+    "seq_w": 13000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16045,
@@ -78314,9 +79910,14 @@ export const PARTS = [
     "weight": "1.6 ounces",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14500,
+    "seq_w": 13000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16046,
@@ -78346,7 +79947,13 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "ff": "Portable"
+    "ff": "M.2 2280",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7450,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16047,
@@ -78375,9 +79982,14 @@ export const PARTS = [
     "mpn": "LNM109P001T-RNNNU",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14500,
+    "seq_w": 13000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16048,
@@ -78406,9 +80018,14 @@ export const PARTS = [
     "weight": "0.07 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14700,
+    "seq_w": 13400,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16049,
@@ -78438,9 +80055,14 @@ export const PARTS = [
     "weight": "6.35 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14500,
+    "seq_w": 12000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16050,
@@ -78469,9 +80091,14 @@ export const PARTS = [
     "weight": "0.07 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7450,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16051,
@@ -78500,9 +80127,14 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16052,
@@ -78531,9 +80163,14 @@ export const PARTS = [
     "weight": "1.28 ounces",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "nand": "TLC",
+    "seq_r": 14500,
+    "seq_w": 12700,
+    "dram": true
   },
   {
     "id": 16053,
@@ -78561,9 +80198,14 @@ export const PARTS = [
     "mpn": "SIX SSD - 10",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14300,
+    "seq_w": 11500,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16054,
@@ -78592,9 +80234,14 @@ export const PARTS = [
     "weight": "0.11 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14300,
+    "seq_w": 11500,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16055,
@@ -78622,9 +80269,14 @@ export const PARTS = [
     "mpn": "SIX SSD - 11",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14300,
+    "seq_w": 11500,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16056,
@@ -78653,8 +80305,14 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 7450,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16057,
@@ -78679,8 +80337,10 @@ export const PARTS = [
     "weight": "1.65 Pounds",
     "cap": 3000,
     "form": "HDD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16058,
@@ -78705,8 +80365,10 @@ export const PARTS = [
     "weight": "695 Grams",
     "cap": 16000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16059,
@@ -78734,8 +80396,15 @@ export const PARTS = [
     "mpn": "WDS400T4B0E-EC",
     "cap": 4000,
     "form": "NVMe",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5500,
+    "rpm": 7200,
+    "pcie": 4,
+    "seq_w": 5000,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16060,
@@ -78764,8 +80433,14 @@ export const PARTS = [
     "weight": "0.08 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "pcie": 3,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16061,
@@ -78794,8 +80469,14 @@ export const PARTS = [
     "weight": "0.07 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "pcie": 3,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16062,
@@ -78824,8 +80505,14 @@ export const PARTS = [
     "weight": "0.08 Kilograms",
     "cap": 4000,
     "form": "NVMe",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "pcie": 3,
+    "seq_w": 1600,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16063,
@@ -78856,9 +80543,15 @@ export const PARTS = [
     "weight": "60 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7000,
+    "seq_w": 5300,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 16064,
@@ -78888,8 +80581,10 @@ export const PARTS = [
     "weight": "134 Grams",
     "cap": 4000,
     "form": "HDD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SAS",
+    "rpm": 7200
   },
   {
     "id": 16065,
@@ -78919,7 +80614,7 @@ export const PARTS = [
     "weight": "0.1 Kilograms",
     "cap": 500,
     "form": "HDD",
-    "ff": "2.5-inch",
+    "ff": "2.5\"",
     "storageType": "HDD"
   },
   {
@@ -78949,9 +80644,14 @@ export const PARTS = [
     "weight": "0.08 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7450,
+    "nand": "TLC",
+    "seq_w": 6800,
+    "dram": true
   },
   {
     "id": 16067,
@@ -78978,8 +80678,14 @@ export const PARTS = [
     "mpn": "P400VP2TBM28H",
     "cap": 2000,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "seq_r": 5000,
+    "seq_w": 4800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16068,
@@ -79004,8 +80710,12 @@ export const PARTS = [
     "mpn": "FireCuda",
     "cap": 500,
     "form": "SATA SSD",
-    "ff": "2,5",
-    "storageType": "HDD"
+    "ff": "2.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200,
+    "seq_r": 140,
+    "seq_w": 140
   },
   {
     "id": 16069,
@@ -79035,9 +80745,14 @@ export const PARTS = [
     "weight": "1.6 ounces",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7400,
+    "seq_w": 7000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16070,
@@ -79067,9 +80782,14 @@ export const PARTS = [
     "weight": "5.4 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4200,
+    "nand": "QLC",
+    "dram": false
   },
   {
     "id": 16071,
@@ -79099,8 +80819,12 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 550,
+    "seq_w": 500,
+    "seq_w_inferred": true
   },
   {
     "id": 16072,
@@ -79130,9 +80854,14 @@ export const PARTS = [
     "mpn": "GST-M2-2T-PCIE4",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "SATA",
+    "seq_r": 540,
+    "seq_w": 480,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16073,
@@ -79162,9 +80891,14 @@ export const PARTS = [
     "mpn": "GS-PCIe-SSD-Gen4-GT6470-1TB-1PK-R",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "SATA",
+    "seq_r": 540,
+    "seq_w": 480,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16074,
@@ -79195,9 +80929,14 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 12000,
+    "seq_w": 11000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16075,
@@ -79225,9 +80964,14 @@ export const PARTS = [
     "mpn": "ad2TBG55M2P",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "2.5-inch",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "2.5\"",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 10300,
+    "seq_w": 9500,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16076,
@@ -79256,9 +81000,14 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "2.5-inch",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "2.5\"",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 10200,
+    "seq_w": 9500,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16077,
@@ -79287,8 +81036,14 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 500,
     "form": "NVMe",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 6300,
+    "pcie": 4,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16078,
@@ -79313,8 +81068,10 @@ export const PARTS = [
     "weight": "1.5 Pounds",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16079,
@@ -79343,7 +81100,13 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7000,
+    "pcie": 4,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16080,
@@ -79374,8 +81137,10 @@ export const PARTS = [
     "weight": "1.7 Pounds",
     "cap": 2000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16081,
@@ -79405,8 +81170,10 @@ export const PARTS = [
     "weight": "0.67 Kilograms",
     "cap": 14000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16082,
@@ -79441,9 +81208,15 @@ export const PARTS = [
     "mpn": "BLACK SN850X",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "seq_w": 6600,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 16083,
@@ -79472,8 +81245,12 @@ export const PARTS = [
     "weight": "6.95 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC"
   },
   {
     "id": 16084,
@@ -79503,9 +81280,14 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
+    "pcie": 5,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14900,
+    "seq_w": 14000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16085,
@@ -79534,9 +81316,14 @@ export const PARTS = [
     "weight": "35 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7200,
+    "seq_w": 6500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16086,
@@ -79566,9 +81353,14 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14900,
+    "seq_w": 14000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16087,
@@ -79596,9 +81388,14 @@ export const PARTS = [
     "mpn": "S910 Pro-2TB",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14000,
+    "seq_w": 12000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16088,
@@ -79627,9 +81424,14 @@ export const PARTS = [
     "weight": "0.06 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen5",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 5,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 14000,
+    "seq_w": 12000,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16089,
@@ -79664,8 +81466,14 @@ export const PARTS = [
     "weight": "6.5 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 5,
+    "seq_r": 11000,
+    "seq_w": 9550,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16090,
@@ -79694,9 +81502,14 @@ export const PARTS = [
     "weight": "28 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M 2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7450,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16091,
@@ -79726,9 +81539,12 @@ export const PARTS = [
     "weight": "20 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
+    "pcie": 4,
     "ff": "M.2 2280",
-    "storageType": "NVMe"
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7200,
+    "seq_w": 6850
   },
   {
     "id": 16092,
@@ -79757,8 +81573,14 @@ export const PARTS = [
     "weight": "27 Grams",
     "cap": 500,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "pcie": 4,
+    "seq_w": 4500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16093,
@@ -79788,9 +81610,14 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "SATA",
+    "seq_r": 540,
+    "seq_w": 480,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16094,
@@ -79819,8 +81646,14 @@ export const PARTS = [
     "weight": "0.7 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "pcie": 4,
+    "seq_w": 4500,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16095,
@@ -79848,8 +81681,13 @@ export const PARTS = [
     "mpn": "CT500MX500SSD1T",
     "cap": 500,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 510,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16096,
@@ -79879,9 +81717,15 @@ export const PARTS = [
     "weight": "24 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "NVMe SSD",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "seq_w": 6600,
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 16097,
@@ -79909,8 +81753,10 @@ export const PARTS = [
     "mpn": "ST4000DM004",
     "cap": 4000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16098,
@@ -79940,8 +81786,13 @@ export const PARTS = [
     "weight": "0.38 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 560,
+    "seq_w": 530,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16099,
@@ -79969,8 +81820,13 @@ export const PARTS = [
     "mpn": "FN960",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "seq_w": 6800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16100,
@@ -79998,8 +81854,13 @@ export const PARTS = [
     "mpn": "FN960",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7300,
+    "seq_w": 6800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16101,
@@ -80029,8 +81890,10 @@ export const PARTS = [
     "mpn": "ST16000NM003G",
     "cap": 16000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 16102,
@@ -80059,8 +81922,10 @@ export const PARTS = [
     "mpn": "TS-464-8G-US",
     "cap": 12000,
     "form": "HDD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 16103,
@@ -80088,8 +81953,12 @@ export const PARTS = [
     "mpn": "X5DP-1TB",
     "weight": "1.4 Grams",
     "form": "SATA SSD",
-    "ff": "2.5-inch",
-    "storageType": "SATA"
+    "ff": "2.5\"",
+    "storageType": "SATA",
+    "interface": "SATA",
+    "seq_r": 540,
+    "seq_w": 500,
+    "seq_w_inferred": true
   },
   {
     "id": 16104,
@@ -80119,9 +81988,14 @@ export const PARTS = [
     "weight": "0.09 Pounds",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7000,
+    "seq_w": 6550,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16105,
@@ -80151,8 +82025,14 @@ export const PARTS = [
     "mpn": "CT1000T710SSD8-JP",
     "cap": 1000,
     "form": "NVMe",
-    "ff": "M.2",
-    "storageType": "NVMe"
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 5,
+    "seq_r": 14900,
+    "seq_w": 13800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16106,
@@ -80182,9 +82062,14 @@ export const PARTS = [
     "weight": "0.02 Pounds",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "ff": "M.2 (2280)",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "ff": "M.2 2280",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 7450,
+    "seq_w": 6900,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16107,
@@ -80212,8 +82097,13 @@ export const PARTS = [
     "mpn": "FN950",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4",
-    "storageType": "NVMe"
+    "pcie": 4,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "seq_r": 5000,
+    "seq_w": 4800,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16108,
@@ -80244,8 +82134,10 @@ export const PARTS = [
     "weight": "0.14 Kilograms",
     "cap": 6000,
     "form": "SATA SSD",
-    "ff": "3.5-inch",
-    "storageType": "HDD"
+    "ff": "3.5\"",
+    "storageType": "HDD",
+    "interface": "SATA",
+    "rpm": 5400
   },
   {
     "id": 16109,
@@ -100625,14 +102517,15 @@ export const PARTS = [
     },
     "cap": 500,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 3 x4",
-    "pcie": "Gen3",
+    "interface": "NVMe",
+    "pcie": 3,
     "seq_r": 3500,
     "seq_w": 3300,
     "nand": "MLC",
     "heatsink": false,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16852,
@@ -100654,14 +102547,15 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 3 x4",
-    "pcie": "Gen3",
+    "interface": "NVMe",
+    "pcie": 3,
     "seq_r": 3500,
     "seq_w": 3300,
     "nand": "MLC",
     "heatsink": false,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16853,
@@ -100683,14 +102577,15 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 3 x4",
-    "pcie": "Gen3",
+    "interface": "NVMe",
+    "pcie": 3,
     "seq_r": 3500,
     "seq_w": 3300,
     "nand": "TLC",
     "heatsink": false,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16854,
@@ -100716,7 +102611,8 @@ export const PARTS = [
     "seq_r": 535,
     "seq_w": 500,
     "nand": "3D NAND",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16855,
@@ -100743,7 +102639,8 @@ export const PARTS = [
     "seq_w": 515,
     "nand": "3D NAND",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16856,
@@ -100771,7 +102668,8 @@ export const PARTS = [
     "nand": "V-NAND",
     "heatsink": false,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16857,
@@ -100798,7 +102696,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "V-NAND",
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16858,
@@ -100820,14 +102719,15 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7000,
     "seq_w": 5100,
     "nand": "V-NAND",
     "heatsink": false,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16859,
@@ -100854,7 +102754,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "V-NAND",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16860,
@@ -100881,7 +102782,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "V-NAND",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16861,
@@ -100903,14 +102805,15 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7000,
     "seq_w": 5100,
     "nand": "V-NAND",
     "heatsink": false,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16862,
@@ -100938,7 +102841,8 @@ export const PARTS = [
     "nand": "V-NAND",
     "heatsink": false,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16863,
@@ -100966,7 +102870,8 @@ export const PARTS = [
     "nand": "V-NAND",
     "heatsink": false,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16864,
@@ -100994,7 +102899,8 @@ export const PARTS = [
     "nand": "V-NAND",
     "heatsink": false,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16865,
@@ -101021,7 +102927,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "3D NAND",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16866,
@@ -101048,7 +102955,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "3D NAND",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16867,
@@ -101070,13 +102978,15 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 5150,
     "seq_w": 4900,
     "nand": "TLC",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false,
+    "rpm": 7200
   },
   {
     "id": 16868,
@@ -101102,7 +103012,9 @@ export const PARTS = [
     "seq_r": 560,
     "seq_w": 520,
     "nand": "3D NAND",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 16869,
@@ -101124,13 +103036,15 @@ export const PARTS = [
     },
     "cap": 4000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7300,
     "seq_w": 6600,
     "nand": "TLC",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 16870,
@@ -101152,13 +103066,15 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7300,
     "seq_w": 6350,
     "nand": "TLC",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 16871,
@@ -101184,7 +103100,9 @@ export const PARTS = [
     "seq_r": 560,
     "seq_w": 520,
     "nand": "3D NAND",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 16872,
@@ -101210,7 +103128,9 @@ export const PARTS = [
     "seq_r": 560,
     "seq_w": 520,
     "nand": "3D NAND",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 16873,
@@ -101232,12 +103152,15 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2230",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 5150,
     "seq_w": 4850,
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "nand": "TLC",
+    "dram": false,
+    "rpm": 7200
   },
   {
     "id": 16874,
@@ -101259,12 +103182,14 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7450,
     "seq_w": 6900,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16875,
@@ -101286,13 +103211,14 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7400,
     "seq_w": 7000,
     "nand": "3D TLC",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16876,
@@ -101318,7 +103244,9 @@ export const PARTS = [
     "seq_r": 560,
     "seq_w": 530,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "nand": "QLC",
+    "dram": true
   },
   {
     "id": 16877,
@@ -101340,12 +103268,14 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7450,
     "seq_w": 6900,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16878,
@@ -101367,13 +103297,15 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7450,
     "seq_w": 6900,
     "heatsink": true,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16879,
@@ -101395,12 +103327,14 @@ export const PARTS = [
     },
     "cap": 4000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7450,
     "seq_w": 6900,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16880,
@@ -101422,12 +103356,13 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 5000,
     "seq_w": 4200,
     "nand": "TLC",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16881,
@@ -101449,12 +103384,13 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 5000,
     "seq_w": 4200,
     "nand": "TLC",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16882,
@@ -101476,13 +103412,14 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7400,
     "seq_w": 6900,
     "nand": "3D TLC",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16883,
@@ -101504,13 +103441,14 @@ export const PARTS = [
     },
     "cap": 4000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7400,
     "seq_w": 6800,
     "nand": "3D TLC",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16884,
@@ -101532,13 +103470,14 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7400,
     "seq_w": 7000,
     "nand": "3D TLC",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16885,
@@ -101560,11 +103499,14 @@ export const PARTS = [
     },
     "cap": 4000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 5500,
     "seq_w": 5000,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "rpm": 7200,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16886,
@@ -101586,13 +103528,14 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 5000,
     "seq_w": 4200,
     "nand": "TLC",
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16887,
@@ -101614,13 +103557,14 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 5000,
     "seq_w": 4200,
     "nand": "TLC",
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16888,
@@ -101642,13 +103586,15 @@ export const PARTS = [
     },
     "cap": 8000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7200,
     "seq_w": 6600,
     "nand": "3D TLC",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 16889,
@@ -101675,7 +103621,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "3D NAND",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16890,
@@ -101697,12 +103644,13 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7150,
     "seq_w": 6300,
     "nand": "TLC",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16891,
@@ -101724,12 +103672,13 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7250,
     "seq_w": 6300,
     "nand": "TLC",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16892,
@@ -101751,11 +103700,14 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7250,
     "seq_w": 6900,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "nand": "TLC",
+    "dram": false,
+    "rpm": 7200
   },
   {
     "id": 16893,
@@ -101777,11 +103729,14 @@ export const PARTS = [
     },
     "cap": 4000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7250,
     "seq_w": 6900,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "nand": "TLC",
+    "dram": false,
+    "rpm": 7200
   },
   {
     "id": 16894,
@@ -101803,11 +103758,14 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7250,
     "seq_w": 6900,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "nand": "TLC",
+    "dram": false,
+    "rpm": 7200
   },
   {
     "id": 16895,
@@ -101829,13 +103787,14 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7150,
     "seq_w": 6300,
     "nand": "TLC",
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16896,
@@ -101857,13 +103816,14 @@ export const PARTS = [
     },
     "cap": 4000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7250,
     "seq_w": 6300,
     "nand": "TLC",
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16897,
@@ -101885,13 +103845,14 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7250,
     "seq_w": 6300,
     "nand": "TLC",
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16898,
@@ -101913,12 +103874,14 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 11000,
     "seq_w": 9500,
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16899,
@@ -101940,13 +103903,14 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14700,
     "seq_w": 13300,
     "nand": "V-NAND",
     "heatsink": true,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16900,
@@ -101968,13 +103932,14 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14700,
     "seq_w": 13400,
     "nand": "V-NAND",
     "heatsink": true,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16901,
@@ -101996,13 +103961,14 @@ export const PARTS = [
     },
     "cap": 4000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14800,
     "seq_w": 13400,
     "nand": "V-NAND",
     "heatsink": true,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16902,
@@ -102024,12 +103990,15 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14900,
     "seq_w": 14000,
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 16903,
@@ -102051,12 +104020,15 @@ export const PARTS = [
     },
     "cap": 4000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14900,
     "seq_w": 14000,
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 16904,
@@ -102078,12 +104050,15 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14900,
     "seq_w": 11000,
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "nand": "TLC",
+    "dram": true,
+    "rpm": 7200
   },
   {
     "id": 16905,
@@ -102105,13 +104080,14 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14900,
     "seq_w": 13700,
     "nand": "3D NAND",
     "heatsink": true,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16906,
@@ -102133,13 +104109,14 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14500,
     "seq_w": 13800,
     "nand": "3D NAND",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16907,
@@ -102161,13 +104138,14 @@ export const PARTS = [
     },
     "cap": 4000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14500,
     "seq_w": 13800,
     "nand": "3D NAND",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16908,
@@ -102189,13 +104167,14 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14900,
     "seq_w": 13700,
     "nand": "3D NAND",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16909,
@@ -102217,13 +104196,14 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14500,
     "seq_w": 13800,
     "nand": "3D NAND",
     "heatsink": true,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16910,
@@ -102245,13 +104225,14 @@ export const PARTS = [
     },
     "cap": 4000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14500,
     "seq_w": 13800,
     "nand": "3D NAND",
     "heatsink": true,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16911,
@@ -102273,14 +104254,15 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14700,
     "seq_w": 13400,
     "nand": "V-NAND",
     "heatsink": true,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16912,
@@ -102302,11 +104284,14 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7100,
     "seq_w": 6700,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "rpm": 7200,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16913,
@@ -102328,11 +104313,14 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 7100,
     "seq_w": 6700,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "rpm": 7200,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16914,
@@ -102354,11 +104342,14 @@ export const PARTS = [
     },
     "cap": 4000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 6900,
     "seq_w": 6700,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "rpm": 7200,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16915,
@@ -102380,14 +104371,15 @@ export const PARTS = [
     },
     "cap": 8000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14800,
     "seq_w": 13400,
     "nand": "V-NAND",
     "heatsink": true,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16916,
@@ -102409,14 +104401,15 @@ export const PARTS = [
     },
     "cap": 4000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 5 x4",
-    "pcie": "Gen5",
+    "interface": "NVMe",
+    "pcie": 5,
     "seq_r": 14800,
     "seq_w": 13400,
     "nand": "V-NAND",
     "heatsink": true,
     "condition": "refurbished",
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": true
   },
   {
     "id": 16917,
@@ -102438,9 +104431,13 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2230",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
-    "storageType": "SSD"
+    "interface": "NVMe",
+    "pcie": 4,
+    "storageType": "SSD",
+    "seq_r": 7000,
+    "seq_w": 6400,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16918,
@@ -102462,9 +104459,13 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
-    "storageType": "SSD"
+    "interface": "NVMe",
+    "pcie": 4,
+    "storageType": "SSD",
+    "seq_r": 7000,
+    "seq_w": 6400,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16919,
@@ -102486,9 +104487,13 @@ export const PARTS = [
     },
     "cap": 5000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
-    "storageType": "SSD"
+    "interface": "NVMe",
+    "pcie": 4,
+    "storageType": "SSD",
+    "seq_r": 7000,
+    "seq_w": 6400,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16920,
@@ -102510,9 +104515,13 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
-    "storageType": "SSD"
+    "interface": "NVMe",
+    "pcie": 4,
+    "storageType": "SSD",
+    "seq_r": 7000,
+    "seq_w": 6800,
+    "nand": "TLC",
+    "dram": true
   },
   {
     "id": 16921,
@@ -102534,13 +104543,14 @@ export const PARTS = [
     },
     "cap": 500,
     "form": "M.2",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
+    "interface": "NVMe",
+    "pcie": 4,
     "seq_r": 4700,
     "seq_w": 1700,
     "nand": "3D NAND",
     "heatsink": false,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "dram": false
   },
   {
     "id": 16922,
@@ -102562,9 +104572,13 @@ export const PARTS = [
     },
     "cap": 2000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
-    "storageType": "SSD"
+    "interface": "NVMe",
+    "pcie": 4,
+    "storageType": "SSD",
+    "seq_r": 7300,
+    "seq_w": 6700,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16923,
@@ -102586,9 +104600,13 @@ export const PARTS = [
     },
     "cap": 4000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
-    "storageType": "SSD"
+    "interface": "NVMe",
+    "pcie": 4,
+    "storageType": "SSD",
+    "seq_r": 7300,
+    "seq_w": 6700,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16924,
@@ -102610,9 +104628,13 @@ export const PARTS = [
     },
     "cap": 1000,
     "form": "M.2 2280",
-    "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4",
-    "storageType": "SSD"
+    "interface": "NVMe",
+    "pcie": 4,
+    "storageType": "SSD",
+    "seq_r": 7300,
+    "seq_w": 6700,
+    "nand": "TLC",
+    "dram": false
   },
   {
     "id": 16925,
@@ -102638,7 +104660,8 @@ export const PARTS = [
     "seq_r": 180,
     "seq_w": 180,
     "heatsink": false,
-    "storageType": "HDD"
+    "storageType": "HDD",
+    "rpm": 5400
   },
   {
     "id": 16926,
@@ -102686,8 +104709,9 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "interface": "USB-C (USB 3.1 Gen1)",
-    "storageType": "HDD"
+    "interface": "USB",
+    "storageType": "HDD",
+    "pcie": 3
   },
   {
     "id": 16928,
@@ -102708,8 +104732,9 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "interface": "USB-C (USB 3.1 Gen1)",
-    "storageType": "HDD"
+    "interface": "USB",
+    "storageType": "HDD",
+    "pcie": 3
   },
   {
     "id": 16929,
@@ -102730,8 +104755,9 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "interface": "Micro-USB B",
-    "storageType": "HDD"
+    "interface": "USB",
+    "storageType": "HDD",
+    "rpm": 7200
   },
   {
     "id": 16930,
@@ -102752,8 +104778,9 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "interface": "Micro-USB B",
-    "storageType": "HDD"
+    "interface": "USB",
+    "storageType": "HDD",
+    "rpm": 7200
   },
   {
     "id": 16931,
@@ -102802,7 +104829,8 @@ export const PARTS = [
     "form": "3.5 in.",
     "interface": "SATA",
     "heatsink": false,
-    "storageType": "HDD"
+    "storageType": "HDD",
+    "rpm": 7200
   },
   {
     "id": 16933,
