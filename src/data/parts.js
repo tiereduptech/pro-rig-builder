@@ -15755,7 +15755,11 @@ export const PARTS = [
     "mpn": "Q300L",
     "weight": "480 Grams",
     "ff": "mATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "maxGPU": 360,
+    "maxCooler": 158,
+    "fans_inc": 1,
+    "rads": "120mm,140mm,240mm"
   },
   {
     "id": 14046,
@@ -15785,7 +15789,11 @@ export const PARTS = [
     "weight": "26.4 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 395,
+    "maxCooler": 167,
+    "fans_inc": 0,
+    "rads": "120mm,240mm,280mm,360mm"
   },
   {
     "id": 14047,
@@ -15844,7 +15852,11 @@ export const PARTS = [
     "mpn": "LAN217X",
     "weight": "10.5 Kilograms",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 415,
+    "maxCooler": 190,
+    "fans_inc": 5,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14049,
@@ -15965,7 +15977,11 @@ export const PARTS = [
     "mpn": "O11DMIV2FX",
     "weight": "12.46 Kilograms",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 395,
+    "maxCooler": 170,
+    "fans_inc": 0,
+    "rads": "120mm,240mm,280mm,360mm"
   },
   {
     "id": 14053,
@@ -16001,7 +16017,11 @@ export const PARTS = [
     "weight": "9.5 Kilograms",
     "tower": "Mid",
     "ff": "ATX",
-    "tg": false
+    "tg": false,
+    "maxGPU": 413,
+    "maxCooler": 155,
+    "rads": "140mm,360mm",
+    "fans_inc": 2
   },
   {
     "id": 14054,
@@ -16030,7 +16050,11 @@ export const PARTS = [
     "upc": "840353050594",
     "mpn": "O11DMIV2X",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 395,
+    "maxCooler": 170,
+    "fans_inc": 0,
+    "rads": "120mm,240mm,280mm,360mm"
   },
   {
     "id": 14055,
@@ -16067,7 +16091,10 @@ export const PARTS = [
     "tower": "Mid",
     "ff": "ATX",
     "tg": true,
-    "fans_inc": 3
+    "fans_inc": 3,
+    "maxGPU": 365,
+    "maxCooler": 163,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14056,
@@ -16156,7 +16183,12 @@ export const PARTS = [
     "mpn": "Ridge",
     "weight": "5.5 Kilograms",
     "ff": "Mini-ITX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "maxGPU": 325,
+    "maxCooler": 70,
+    "rads": "120mm,280mm",
+    "drive25": 4,
+    "fans_inc": 0
   },
   {
     "id": 14059,
@@ -16185,7 +16217,11 @@ export const PARTS = [
     "mpn": "FLUX PRO",
     "weight": "29 Pounds",
     "tower": "Full",
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "maxGPU": 400,
+    "maxCooler": 185,
+    "fans_inc": 6,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14060,
@@ -16304,7 +16340,11 @@ export const PARTS = [
     "weight": "32.63 Pounds",
     "tg": true,
     "ff": "E-ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "maxGPU": 426,
+    "maxCooler": 167,
+    "fans_inc": 0,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14064,
@@ -16436,7 +16476,10 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "fans_inc": 1
+    "fans_inc": 1,
+    "maxGPU": 435,
+    "maxCooler": 165,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14068,
@@ -16500,7 +16543,11 @@ export const PARTS = [
     "mpn": "A3X.US",
     "weight": "11.02 Pounds",
     "ff": "mATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "maxGPU": 365,
+    "maxCooler": 173,
+    "fans_inc": 0,
+    "rads": "120mm,240mm,280mm,360mm"
   },
   {
     "id": 14070,
@@ -16535,7 +16582,11 @@ export const PARTS = [
     "mpn": "3500X RS-R ARGB",
     "tower": "Mid",
     "ff": "ATX",
-    "tg": true
+    "tg": true,
+    "maxGPU": 400,
+    "maxCooler": 170,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14071,
@@ -16639,7 +16690,11 @@ export const PARTS = [
     "weight": "9400 Grams",
     "tower": "Mid",
     "ff": "ATX",
-    "tg": true
+    "tg": true,
+    "maxGPU": 365,
+    "maxCooler": 163,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14074,
@@ -16669,7 +16724,11 @@ export const PARTS = [
     "weight": "25.57 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 452,
+    "maxCooler": 171,
+    "fans_inc": 0,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14075,
@@ -16705,7 +16764,11 @@ export const PARTS = [
     "weight": "9400 Grams",
     "tower": "Mid",
     "ff": "ATX",
-    "tg": true
+    "tg": true,
+    "maxGPU": 365,
+    "maxCooler": 163,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14076,
@@ -16735,7 +16798,10 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "fans_inc": 6
+    "fans_inc": 6,
+    "maxGPU": 340,
+    "maxCooler": 160,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14077,
@@ -16939,7 +17005,11 @@ export const PARTS = [
     ],
     "mpn": "Z20",
     "tower": "Mini",
-    "ff": "mATX"
+    "ff": "mATX",
+    "maxGPU": 345,
+    "maxCooler": 170,
+    "fans_inc": 0,
+    "rads": "120mm,240mm,280mm,360mm"
   },
   {
     "id": 14085,
@@ -16968,7 +17038,11 @@ export const PARTS = [
     "mpn": "AP201",
     "weight": "12.7 Pounds",
     "ff": "mATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "maxGPU": 338,
+    "maxCooler": 170,
+    "fans_inc": 0,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14086,
@@ -16997,7 +17071,11 @@ export const PARTS = [
     "weight": "9.14 Kilograms",
     "tower": "Mid",
     "tg": true,
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "maxGPU": 400,
+    "maxCooler": 175,
+    "fans_inc": 4,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14087,
@@ -17033,7 +17111,10 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "E-ATX",
-    "fans_inc": 3
+    "fans_inc": 3,
+    "maxGPU": 400,
+    "maxCooler": 180,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14088,
@@ -17093,7 +17174,11 @@ export const PARTS = [
     "weight": "14.1 Kilograms",
     "tower": "Full",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 498,
+    "maxCooler": 185,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm,480mm"
   },
   {
     "id": 14090,
@@ -17128,7 +17213,11 @@ export const PARTS = [
     "mpn": "FRAME 4000D RS",
     "weight": "8.2 Kilograms",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 360,
+    "maxCooler": 170,
+    "fans_inc": 2,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14091,
@@ -17193,7 +17282,11 @@ export const PARTS = [
     "weight": "13400 Grams",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 435,
+    "maxCooler": 165,
+    "fans_inc": 4,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14093,
@@ -17382,7 +17475,10 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "fans_inc": 1
+    "fans_inc": 1,
+    "maxGPU": 435,
+    "maxCooler": 165,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14099,
@@ -17623,7 +17719,11 @@ export const PARTS = [
     "weight": "26.2 Pounds",
     "ff": "E-ATX",
     "tower": "Full",
-    "tg": true
+    "tg": true,
+    "maxGPU": 413,
+    "maxCooler": 185,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14107,
@@ -17654,7 +17754,11 @@ export const PARTS = [
     "weight": "9.5 Kilograms",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 355,
+    "maxCooler": 170,
+    "fans_inc": 2,
+    "rads": "120mm,240mm,360mm"
   },
   {
     "id": 14108,
@@ -17685,7 +17789,11 @@ export const PARTS = [
     "weight": "9.5 Kilograms",
     "tower": "Mid",
     "ff": "ATX",
-    "tg": false
+    "tg": false,
+    "maxGPU": 355,
+    "maxCooler": 170,
+    "fans_inc": 2,
+    "rads": "120mm,240mm,360mm"
   },
   {
     "id": 14109,
@@ -17809,7 +17917,11 @@ export const PARTS = [
     "mpn": "Terra Graphite",
     "weight": "4 Kilograms",
     "ff": "Mini-ITX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "maxGPU": 322,
+    "maxCooler": 77,
+    "fans_inc": 0,
+    "rads": "120mm"
   },
   {
     "id": 14113,
@@ -17865,7 +17977,11 @@ export const PARTS = [
     "mpn": "CORSAIR 4000D RS",
     "weight": "17.2 Pounds",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 360,
+    "maxCooler": 170,
+    "fans_inc": 2,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14115,
@@ -17895,7 +18011,11 @@ export const PARTS = [
     "weight": "26.1 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 163,
+    "fans_inc": 4,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14116,
@@ -17961,7 +18081,10 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "E-ATX",
-    "fans_inc": 3
+    "fans_inc": 3,
+    "maxGPU": 400,
+    "maxCooler": 180,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14118,
@@ -17997,7 +18120,10 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "E-ATX",
-    "fans_inc": 3
+    "fans_inc": 3,
+    "maxGPU": 400,
+    "maxCooler": 180,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14119,
@@ -18115,7 +18241,11 @@ export const PARTS = [
     "mpn": "C8 Wood",
     "weight": "10.39 Kilograms",
     "tower": "Full",
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "maxGPU": 400,
+    "maxCooler": 175,
+    "fans_inc": 0,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14123,
@@ -18145,7 +18275,11 @@ export const PARTS = [
     "weight": "13 Kilograms",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 461,
+    "maxCooler": 188,
+    "fans_inc": 5,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14124,
@@ -18268,7 +18402,11 @@ export const PARTS = [
     "weight": "17.83 Kilograms",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 440,
+    "maxCooler": 180,
+    "fans_inc": 0,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14128,
@@ -18355,7 +18493,11 @@ export const PARTS = [
     "mpn": "N3",
     "weight": "3900 Grams",
     "ff": "Mini-ITX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "maxGPU": 250,
+    "maxCooler": 130,
+    "fans_inc": 1,
+    "rads": "120mm"
   },
   {
     "id": 14131,
@@ -18444,7 +18586,11 @@ export const PARTS = [
     "weight": "19.01 Kilograms",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 440,
+    "maxCooler": 180,
+    "fans_inc": 0,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14134,
@@ -18472,7 +18618,11 @@ export const PARTS = [
     "mpn": "C6",
     "ff": "mATX",
     "tower": "Mid",
-    "tg": false
+    "tg": false,
+    "maxGPU": 310,
+    "maxCooler": 140,
+    "fans_inc": 0,
+    "rads": "120mm,240mm"
   },
   {
     "id": 14135,
@@ -18501,7 +18651,11 @@ export const PARTS = [
     "mpn": "N2 Black",
     "weight": "3.65 Kilograms",
     "ff": "Mini-ITX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "maxGPU": 220,
+    "maxCooler": 48,
+    "fans_inc": 1,
+    "rads": "120mm"
   },
   {
     "id": 14136,
@@ -18650,7 +18804,11 @@ export const PARTS = [
     "weight": "9.8 Pounds",
     "tg": true,
     "ff": "mATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "maxGPU": 365,
+    "maxCooler": 165,
+    "fans_inc": 0,
+    "rads": "120mm,240mm"
   },
   {
     "id": 14141,
@@ -18738,7 +18896,11 @@ export const PARTS = [
     "upc": "843276107185",
     "mpn": "Meshify 3 Ambience Pro RGB Black TG Light Tint",
     "weight": "8.5 Kilograms",
-    "tg": true
+    "tg": true,
+    "maxGPU": 440,
+    "maxCooler": 185,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14144,
@@ -18766,7 +18928,11 @@ export const PARTS = [
     "upc": "843276107239",
     "mpn": "Meshify 3 XL Ambience Pro RGB Black TG Light Tint",
     "weight": "13300 Grams",
-    "tg": true
+    "tg": true,
+    "maxGPU": 498,
+    "maxCooler": 185,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm,480mm"
   },
   {
     "id": 14145,
@@ -18941,7 +19107,11 @@ export const PARTS = [
     "mpn": "Cubix",
     "weight": "5.73 Pounds",
     "tower": "Mini",
-    "ff": "mATX"
+    "ff": "mATX",
+    "maxGPU": 340,
+    "maxCooler": 160,
+    "fans_inc": 2,
+    "rads": "120mm,240mm,280mm"
   },
   {
     "id": 14151,
@@ -18997,7 +19167,11 @@ export const PARTS = [
     ],
     "upc": "843276107161",
     "mpn": "Meshify 3 Black Solid",
-    "weight": "8500 Grams"
+    "weight": "8500 Grams",
+    "maxGPU": 440,
+    "maxCooler": 185,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14153,
@@ -19026,7 +19200,11 @@ export const PARTS = [
     "mpn": "FRAME 4000D",
     "weight": "17.2 Pounds",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 360,
+    "maxCooler": 170,
+    "fans_inc": 2,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14154,
@@ -19086,7 +19264,11 @@ export const PARTS = [
     "mpn": "HYTE Y70 Touch Infinite Modern Aesthetic Case - Black Cherry",
     "weight": "24.4 Pounds",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 446,
+    "maxCooler": 170,
+    "fans_inc": 0,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14156,
@@ -19121,7 +19303,11 @@ export const PARTS = [
     "weight": "19 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 375,
+    "maxCooler": 154,
+    "fans_inc": 0,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14157,
@@ -19152,7 +19338,11 @@ export const PARTS = [
     "weight": "24.3 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 446,
+    "maxCooler": 170,
+    "fans_inc": 0,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14158,
@@ -19182,7 +19372,11 @@ export const PARTS = [
     "weight": "5 Kilograms",
     "tower": "Full",
     "ff": "E-ATX",
-    "tg": false
+    "tg": false,
+    "maxGPU": 413,
+    "maxCooler": 185,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14159,
@@ -19212,7 +19406,11 @@ export const PARTS = [
     "mpn": "NR200 White",
     "weight": "4.8 Kilograms",
     "ff": "Mini-ITX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "maxGPU": 330,
+    "maxCooler": 155,
+    "fans_inc": 2,
+    "rads": "120mm,240mm,280mm"
   },
   {
     "id": 14160,
@@ -19242,7 +19440,11 @@ export const PARTS = [
     "mpn": "NR200 Black",
     "weight": "4.8 Kilograms",
     "ff": "Mini-ITX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "maxGPU": 330,
+    "maxCooler": 155,
+    "fans_inc": 2,
+    "rads": "120mm,240mm,280mm"
   },
   {
     "id": 14161,
@@ -19329,7 +19531,11 @@ export const PARTS = [
     "mpn": "PERFORMANCE 1 FT",
     "weight": "12.55 Kilograms",
     "tower": "Full",
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "maxGPU": 430,
+    "maxCooler": 180,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14164,
@@ -19359,7 +19565,11 @@ export const PARTS = [
     "weight": "1000 Grams",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 365,
+    "maxCooler": 165,
+    "fans_inc": 2,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14165,
@@ -19420,7 +19630,10 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "tower": "Mid",
-    "fans_inc": 2
+    "fans_inc": 2,
+    "maxGPU": 432,
+    "maxCooler": 185,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14167,
@@ -19449,7 +19662,11 @@ export const PARTS = [
     "mpn": "Ridge White",
     "weight": "5.5 Kilograms",
     "ff": "Mini-ITX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "maxGPU": 325,
+    "maxCooler": 70,
+    "fans_inc": 0,
+    "rads": "120mm,240mm"
   },
   {
     "id": 14168,
@@ -19507,7 +19724,11 @@ export const PARTS = [
     "weight": "12 Kilograms",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 395,
+    "maxCooler": 167,
+    "fans_inc": 0,
+    "rads": "120mm,240mm,280mm,360mm"
   },
   {
     "id": 14172,
@@ -19538,7 +19759,11 @@ export const PARTS = [
     "weight": "10.5 Kilograms",
     "tower": "Full",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 190,
+    "fans_inc": 4,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14173,
@@ -19626,7 +19851,10 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "mATX",
-    "fans_inc": 4
+    "fans_inc": 4,
+    "maxGPU": 400,
+    "maxCooler": 180,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14176,
@@ -19655,7 +19883,11 @@ export const PARTS = [
     "mpn": "AIR 903 MAX",
     "weight": "15.1 Pounds",
     "tower": "Mid",
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "maxGPU": 400,
+    "maxCooler": 175,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14177,
@@ -19711,7 +19943,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61fPhe70sDL._AC_SL1500_.jpg"
     ],
     "mpn": "be quiet! LIGHT BASE 600 LX White",
-    "weight": "12.1 Kilograms"
+    "weight": "12.1 Kilograms",
+    "maxGPU": 410,
+    "maxCooler": 180,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14179,
@@ -19745,7 +19981,11 @@ export const PARTS = [
     "mpn": "NZXT H7 Flow RGB 2024",
     "weight": "11.26 Kilograms",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 185,
+    "fans_inc": 2,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14180,
@@ -19811,7 +20051,11 @@ export const PARTS = [
     "weight": "20.35 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 170,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14182,
@@ -19899,7 +20143,11 @@ export const PARTS = [
     "mpn": "GR701 ROG HYPERION",
     "weight": "24.95 Kilograms",
     "tower": "Full",
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "maxGPU": 466,
+    "maxCooler": 190,
+    "fans_inc": 4,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14185,
@@ -19929,7 +20177,11 @@ export const PARTS = [
     "weight": "9.5 Kilograms",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 390,
+    "maxCooler": 167,
+    "fans_inc": 4,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14186,
@@ -19955,7 +20207,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61fPhe70sDL._AC_SL1500_.jpg"
     ],
     "mpn": "be quiet! LIGHT BASE 600 DX Black",
-    "weight": "6 Kilograms"
+    "weight": "6 Kilograms",
+    "maxGPU": 410,
+    "maxCooler": 180,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14187,
@@ -20013,7 +20269,11 @@ export const PARTS = [
     "weight": "10.5 Kilograms",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 491,
+    "maxCooler": 185,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14189,
@@ -20044,7 +20304,11 @@ export const PARTS = [
     "weight": "12.7 Kilograms",
     "tower": "Full",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 190,
+    "fans_inc": 4,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14190,
@@ -20073,7 +20337,11 @@ export const PARTS = [
     "mpn": "C8 ARGB",
     "weight": "14000 Grams",
     "tower": "Full",
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "maxGPU": 400,
+    "maxCooler": 175,
+    "fans_inc": 0,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14191,
@@ -20244,7 +20512,11 @@ export const PARTS = [
     "mpn": "Mood Black",
     "weight": "4.6 Kilograms",
     "ff": "Mini-ITX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "maxGPU": 325,
+    "maxCooler": 85,
+    "fans_inc": 0,
+    "rads": "120mm,240mm"
   },
   {
     "id": 14197,
@@ -20680,7 +20952,11 @@ export const PARTS = [
     "upc": "843276107208",
     "mpn": "Meshify 3 Ambience Pro RGB White TG Clear Tint",
     "weight": "11.05 Kilograms",
-    "tg": true
+    "tg": true,
+    "maxGPU": 440,
+    "maxCooler": 185,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14212,
@@ -20769,7 +21045,11 @@ export const PARTS = [
     "mpn": "GR701 ROG HYPERION WHITE EDITION",
     "weight": "55.6 Pounds",
     "tower": "Full",
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "maxGPU": 466,
+    "maxCooler": 190,
+    "fans_inc": 4,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14215,
@@ -20797,7 +21077,11 @@ export const PARTS = [
     "mpn": "C6-ITX",
     "ff": "Mini-ITX",
     "tower": "Mini",
-    "tg": false
+    "tg": false,
+    "maxGPU": 310,
+    "maxCooler": 140,
+    "fans_inc": 0,
+    "rads": "120mm,240mm"
   },
   {
     "id": 14216,
@@ -20882,7 +21166,11 @@ export const PARTS = [
     "mpn": "TK-1",
     "weight": "7.6 Kilograms",
     "tower": "Mini",
-    "ff": "mATX"
+    "ff": "mATX",
+    "maxGPU": 400,
+    "maxCooler": 165,
+    "fans_inc": 0,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14219,
@@ -21028,7 +21316,11 @@ export const PARTS = [
     "mpn": "SUGO 16",
     "weight": "1 Pounds",
     "ff": "Mini-ITX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "maxGPU": 335,
+    "maxCooler": 75,
+    "fans_inc": 0,
+    "rads": "120mm"
   },
   {
     "id": 14224,
@@ -21058,7 +21350,10 @@ export const PARTS = [
     "weight": "10 Kilograms",
     "tower": "Mid",
     "ff": "ATX",
-    "fans_inc": 3
+    "fans_inc": 3,
+    "maxGPU": 415,
+    "maxCooler": 190,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14225,
@@ -21200,7 +21495,11 @@ export const PARTS = [
     "mpn": "5000T LX RGB",
     "weight": "14.04 Kilograms",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 170,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14230,
@@ -21236,7 +21535,11 @@ export const PARTS = [
     "weight": "9.3 Kilograms",
     "tower": "Mid",
     "ff": "ATX",
-    "tg": true
+    "tg": true,
+    "maxGPU": 400,
+    "maxCooler": 170,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14231,
@@ -21352,7 +21655,11 @@ export const PARTS = [
     "mpn": "Pure Base 501 LX Black",
     "weight": "7.8 Kilograms",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "maxGPU": 369,
+    "maxCooler": 170,
+    "fans_inc": 4,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14235,
@@ -21550,7 +21857,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61w0Qe40iNL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/61CmPXBy0fL._SL1500_.jpg"
     ],
-    "dimensions": "4.84\"L x 14.25\"W x 1.1\"H"
+    "dimensions": "4.84\"L x 14.25\"W x 1.1\"H",
+    "maxGPU": 400,
+    "maxCooler": 170,
+    "fans_inc": 6,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14242,
@@ -21866,7 +22177,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71UAZw06QkL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71QQU2Vln3L._AC_SL1500_.jpg"
     ],
-    "mpn": "BGW83"
+    "mpn": "BGW83",
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14253,
@@ -21897,7 +22212,11 @@ export const PARTS = [
     "weight": "8.82 Pounds",
     "ff": "Mini-ITX",
     "tower": "Mini",
-    "tg": false
+    "tg": false,
+    "maxGPU": 330,
+    "maxCooler": 155,
+    "fans_inc": 2,
+    "rads": "120mm,240mm,280mm"
   },
   {
     "id": 14254,
@@ -22040,7 +22359,11 @@ export const PARTS = [
     "weight": "9.36 Kilograms",
     "tg": true,
     "ff": "mATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "maxGPU": 395,
+    "maxCooler": 170,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14259,
@@ -22069,7 +22392,11 @@ export const PARTS = [
     "mpn": "O11 Vision",
     "tg": true,
     "ff": "E-ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "maxGPU": 452,
+    "maxCooler": 171,
+    "fans_inc": 0,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14260,
@@ -22156,7 +22483,11 @@ export const PARTS = [
     "weight": "9.41 Kilograms",
     "tg": true,
     "ff": "mATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "maxGPU": 395,
+    "maxCooler": 170,
+    "fans_inc": 3,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14263,
@@ -22362,7 +22693,11 @@ export const PARTS = [
     "weight": "39.7 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "maxGPU": 450,
+    "maxCooler": 190,
+    "fans_inc": 4,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 14270,
@@ -22475,7 +22810,11 @@ export const PARTS = [
     ],
     "mpn": "N10",
     "ff": "Mini-ITX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "maxGPU": 200,
+    "maxCooler": 70,
+    "fans_inc": 0,
+    "rads": "120mm"
   },
   {
     "id": 14274,
@@ -22503,7 +22842,11 @@ export const PARTS = [
     "upc": "810216230173",
     "mpn": "Lian Li O11 Dynamic EVO RGB",
     "ff": "mATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "maxGPU": 426,
+    "maxCooler": 167,
+    "fans_inc": 0,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 14275,
@@ -22532,7 +22875,11 @@ export const PARTS = [
     "weight": "7.1 Pounds",
     "tg": true,
     "ff": "mATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "maxGPU": 340,
+    "maxCooler": 160,
+    "fans_inc": 2,
+    "rads": "120mm,240mm,280mm"
   },
   {
     "id": 14276,
@@ -80018,7 +80365,8 @@ export const PARTS = [
     "fans_max": 11,
     "ff": "E-ATX",
     "maxGPU": 200,
-    "maxCooler": 190
+    "maxCooler": 190,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm,480mm"
   },
   {
     "id": 16113,
@@ -80046,7 +80394,8 @@ export const PARTS = [
     "fans_max": 4,
     "ff": "mATX",
     "maxGPU": 350,
-    "maxCooler": 148
+    "maxCooler": 148,
+    "rads": "120mm"
   },
   {
     "id": 16114,
@@ -80106,7 +80455,8 @@ export const PARTS = [
     "fans_max": 12,
     "ff": "ATX",
     "maxGPU": 450,
-    "maxCooler": 190
+    "maxCooler": 190,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm,480mm"
   },
   {
     "id": 16116,
@@ -80136,7 +80486,8 @@ export const PARTS = [
     "fans_max": 6,
     "ff": "ATX",
     "maxGPU": 422,
-    "maxCooler": 183
+    "maxCooler": 183,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16117,
@@ -80166,7 +80517,8 @@ export const PARTS = [
     "fans_max": 6,
     "ff": "ATX",
     "maxGPU": 360,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16118,
@@ -80196,7 +80548,8 @@ export const PARTS = [
     "fans_max": 9,
     "ff": "ATX",
     "maxGPU": 365,
-    "maxCooler": 163
+    "maxCooler": 163,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16119,
@@ -80226,7 +80579,8 @@ export const PARTS = [
     "fans_max": 8,
     "ff": "mATX",
     "maxGPU": 400,
-    "maxCooler": 200
+    "maxCooler": 200,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16120,
@@ -80256,7 +80610,8 @@ export const PARTS = [
     "fans_max": 8,
     "ff": "mATX",
     "maxGPU": 400,
-    "maxCooler": 200
+    "maxCooler": 200,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16121,
@@ -80286,7 +80641,8 @@ export const PARTS = [
     "fans_max": 8,
     "ff": "mATX",
     "maxGPU": 400,
-    "maxCooler": 200
+    "maxCooler": 200,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16122,
@@ -80316,7 +80672,8 @@ export const PARTS = [
     "fans_max": 8,
     "ff": "mATX",
     "maxGPU": 400,
-    "maxCooler": 200
+    "maxCooler": 200,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16123,
@@ -80346,7 +80703,8 @@ export const PARTS = [
     "fans_max": 8,
     "ff": "mATX",
     "maxGPU": 400,
-    "maxCooler": 200
+    "maxCooler": 200,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16124,
@@ -80376,7 +80734,8 @@ export const PARTS = [
     "fans_max": 8,
     "ff": "mATX",
     "maxGPU": 400,
-    "maxCooler": 200
+    "maxCooler": 200,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16125,
@@ -80404,7 +80763,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 422,
-    "maxCooler": 180
+    "maxCooler": 180,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 16126,
@@ -80432,7 +80792,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 422,
-    "maxCooler": 180
+    "maxCooler": 180,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 16127,
@@ -80460,7 +80821,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "Mini-ITX",
     "maxGPU": 410,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16128,
@@ -80488,7 +80850,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "Mini-ITX",
     "maxGPU": 410,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16129,
@@ -80516,7 +80879,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "Mini-ITX",
     "maxGPU": 410,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16130,
@@ -80546,7 +80910,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 410,
-    "maxCooler": 185
+    "maxCooler": 185,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16131,
@@ -80576,7 +80941,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 410,
-    "maxCooler": 185
+    "maxCooler": 185,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16132,
@@ -80606,7 +80972,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 410,
-    "maxCooler": 185
+    "maxCooler": 185,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16133,
@@ -80636,7 +81003,8 @@ export const PARTS = [
     "fans_max": 8,
     "ff": "ATX",
     "maxGPU": 410,
-    "maxCooler": 175
+    "maxCooler": 175,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16134,
@@ -80666,7 +81034,8 @@ export const PARTS = [
     "fans_max": 8,
     "ff": "ATX",
     "maxGPU": 410,
-    "maxCooler": 175
+    "maxCooler": 175,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16135,
@@ -80696,7 +81065,8 @@ export const PARTS = [
     "fans_max": 8,
     "ff": "ATX",
     "maxGPU": 410,
-    "maxCooler": 175
+    "maxCooler": 175,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16136,
@@ -80726,7 +81096,8 @@ export const PARTS = [
     "fans_max": 8,
     "ff": "ATX",
     "maxGPU": 410,
-    "maxCooler": 175
+    "maxCooler": 175,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16137,
@@ -80756,7 +81127,8 @@ export const PARTS = [
     "fans_max": 3,
     "ff": "ATX",
     "maxGPU": 428,
-    "maxCooler": 120
+    "maxCooler": 120,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16138,
@@ -80784,7 +81156,8 @@ export const PARTS = [
     "fans_max": 1,
     "ff": "Mini-ITX",
     "maxGPU": 322,
-    "maxCooler": 77
+    "maxCooler": 77,
+    "rads": "120mm"
   },
   {
     "id": 16139,
@@ -80812,7 +81185,8 @@ export const PARTS = [
     "fans_max": 5,
     "ff": "ATX",
     "maxGPU": 405,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16140,
@@ -80840,7 +81214,8 @@ export const PARTS = [
     "fans_max": 7,
     "ff": "E-ATX",
     "maxGPU": 413,
-    "maxCooler": 185
+    "maxCooler": 185,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 16141,
@@ -80868,7 +81243,8 @@ export const PARTS = [
     "fans_max": 6,
     "ff": "ATX",
     "maxGPU": 355,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "rads": "120mm,240mm,360mm"
   },
   {
     "id": 16142,
@@ -81198,7 +81574,8 @@ export const PARTS = [
     "fans_max": 12,
     "ff": "ATX",
     "maxGPU": 430,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16153,
@@ -81228,7 +81605,8 @@ export const PARTS = [
     "fans_max": 12,
     "ff": "ATX",
     "maxGPU": 430,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16154,
@@ -81258,7 +81636,8 @@ export const PARTS = [
     "fans_max": 12,
     "ff": "ATX",
     "maxGPU": 430,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16155,
@@ -81286,7 +81665,8 @@ export const PARTS = [
     "fans_max": 7,
     "ff": "E-ATX",
     "maxGPU": 413,
-    "maxCooler": 185
+    "maxCooler": 185,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 16156,
@@ -81342,7 +81722,8 @@ export const PARTS = [
     "fans_max": 6,
     "ff": "ATX",
     "maxGPU": 355,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "rads": "120mm,240mm,360mm"
   },
   {
     "id": 16158,
@@ -81370,7 +81751,8 @@ export const PARTS = [
     "fans_max": 7,
     "ff": "ATX",
     "maxGPU": 375,
-    "maxCooler": 160
+    "maxCooler": 160,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16159,
@@ -81398,7 +81780,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 422,
-    "maxCooler": 180
+    "maxCooler": 180,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 16160,
@@ -81872,7 +82255,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 459,
-    "maxCooler": 165
+    "maxCooler": 165,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16176,
@@ -81900,7 +82284,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 459,
-    "maxCooler": 165
+    "maxCooler": 165,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16177,
@@ -81928,7 +82313,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 459,
-    "maxCooler": 165
+    "maxCooler": 165,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16178,
@@ -82100,7 +82486,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 410,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16184,
@@ -82128,7 +82515,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 410,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16185,
@@ -82186,7 +82574,8 @@ export const PARTS = [
     "fans_max": 6,
     "ff": "E-ATX",
     "maxGPU": 455,
-    "maxCooler": 185
+    "maxCooler": 185,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 16187,
@@ -82242,7 +82631,8 @@ export const PARTS = [
     "fans_max": 9,
     "ff": "ATX",
     "maxGPU": 413,
-    "maxCooler": 185
+    "maxCooler": 185,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 16189,
@@ -82328,7 +82718,8 @@ export const PARTS = [
     "fans_max": 9,
     "ff": "E-ATX",
     "maxGPU": 491,
-    "maxCooler": 185
+    "maxCooler": 185,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 16192,
@@ -82356,7 +82747,8 @@ export const PARTS = [
     "fans_max": 3,
     "ff": "ATX",
     "maxGPU": 405,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "rads": "120mm,140mm,240mm,280mm,360mm"
   },
   {
     "id": 16193,
@@ -82384,7 +82776,8 @@ export const PARTS = [
     "fans_max": 6,
     "ff": "ATX",
     "maxGPU": 355,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "rads": "120mm,240mm,360mm"
   },
   {
     "id": 16194,
@@ -82412,7 +82805,8 @@ export const PARTS = [
     "fans_max": 9,
     "ff": "E-ATX",
     "maxGPU": 413,
-    "maxCooler": 185
+    "maxCooler": 185,
+    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
   },
   {
     "id": 16195,
