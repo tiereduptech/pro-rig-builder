@@ -5617,246 +5617,6 @@ export const PARTS = [
     }
   },
   {
-    "id": 6064,
-    "n": "NVIDIA H100 PCIe",
-    "img": "https://m.media-amazon.com/images/I/41XzibJupDL._AC_SL300_.jpg",
-    "c": "GPU",
-    "b": "NVIDIA",
-    "pr": 30000,
-    "msrp": 30000,
-    "r": 4.8,
-    "vram": 80,
-    "memType": "HBM3",
-    "bus": 5120,
-    "tdp": 350,
-    "length": 267,
-    "slots": 2,
-    "pwr": "2x 8-pin",
-    "pcie": "5.0",
-    "cuda": 14592,
-    "boost": 1620,
-    "arch": "Hopper",
-    "type": "datacenter",
-    "bench": 99,
-    "deals": {
-      "amazon": {
-        "price": 30000,
-        "url": "https://www.amazon.com/dp/B0D9J1KZZX?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 6065,
-    "n": "NVIDIA L40S",
-    "img": "https://m.media-amazon.com/images/I/41UW1TtsdoL._AC_SL300_.jpg",
-    "c": "GPU",
-    "b": "NVIDIA",
-    "pr": 8000,
-    "msrp": 8000,
-    "r": 4.8,
-    "vram": 48,
-    "memType": "GDDR6",
-    "bus": 384,
-    "tdp": 350,
-    "length": 267,
-    "slots": 2,
-    "pwr": "2x 8-pin",
-    "pcie": "4.0",
-    "cuda": 18176,
-    "boost": 2520,
-    "arch": "Ada Lovelace",
-    "type": "datacenter",
-    "bench": 96,
-    "deals": {
-      "amazon": {
-        "price": 6599,
-        "url": "https://www.amazon.com/dp/B0FMG2FB76?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 6066,
-    "n": "NVIDIA A100 PCIe 80GB",
-    "img": "https://m.media-amazon.com/images/I/313ccMYlGeL._AC_SL300_.jpg",
-    "c": "GPU",
-    "b": "NVIDIA",
-    "pr": 15000,
-    "msrp": 15000,
-    "r": 4.8,
-    "vram": 80,
-    "memType": "HBM2e",
-    "bus": 5120,
-    "tdp": 300,
-    "length": 267,
-    "slots": 2,
-    "pwr": "1x 8-pin",
-    "pcie": "4.0",
-    "cuda": 6912,
-    "boost": 1410,
-    "arch": "Ampere",
-    "type": "datacenter",
-    "bench": 88,
-    "deals": {
-      "amazon": {
-        "price": 4518,
-        "url": "https://www.amazon.com/dp/B08X13X6HF?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 6067,
-    "n": "NVIDIA L4",
-    "img": "https://m.media-amazon.com/images/I/41XzibJupDL._AC_SL300_.jpg",
-    "c": "GPU",
-    "b": "NVIDIA",
-    "pr": 3500,
-    "msrp": 3500,
-    "r": 4.5,
-    "vram": 24,
-    "memType": "GDDR6",
-    "bus": 192,
-    "tdp": 72,
-    "length": 168,
-    "slots": 1,
-    "pwr": "none",
-    "pcie": "4.0",
-    "cuda": 7680,
-    "boost": 2040,
-    "arch": "Ada Lovelace",
-    "type": "datacenter",
-    "bench": 65,
-    "deals": {
-      "amazon": {
-        "price": 3299,
-        "url": "https://www.amazon.com/dp/B0D9J1KZZX?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 6068,
-    "n": "NVIDIA A40",
-    "img": "https://m.media-amazon.com/images/I/21cHpbCtnrL._AC_SL300_.jpg",
-    "c": "GPU",
-    "b": "NVIDIA",
-    "pr": 5500,
-    "msrp": 5500,
-    "r": 4.6,
-    "vram": 48,
-    "memType": "GDDR6",
-    "bus": 384,
-    "tdp": 300,
-    "length": 267,
-    "slots": 2,
-    "pwr": "1x 8-pin",
-    "pcie": "4.0",
-    "cuda": 10752,
-    "boost": 1740,
-    "arch": "Ampere",
-    "type": "datacenter",
-    "bench": 78,
-    "deals": {
-      "amazon": {
-        "price": 5999,
-        "url": "https://www.amazon.com/dp/B09N95N3PW?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 6069,
-    "n": "AMD Instinct MI300X",
-    "img": "https://m.media-amazon.com/images/I/512Io5hXDrL._AC_SL300_.jpg",
-    "c": "GPU",
-    "b": "AMD",
-    "pr": 15000,
-    "msrp": 15000,
-    "r": 4.8,
-    "vram": 192,
-    "memType": "HBM3",
-    "bus": 8192,
-    "tdp": 750,
-    "length": 267,
-    "slots": 2,
-    "pwr": "2x 8-pin",
-    "pcie": "5.0",
-    "cuda": 19456,
-    "boost": 2100,
-    "arch": "CDNA 3",
-    "type": "datacenter",
-    "bench": 99,
-    "deals": {
-      "amazon": {
-        "price": 15000,
-        "url": "https://www.amazon.com/dp/B009IOCCD2?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 6070,
-    "n": "AMD Instinct MI250X",
-    "img": "https://m.media-amazon.com/images/I/610bdmEZs6L._AC_SL300_.jpg",
-    "c": "GPU",
-    "b": "AMD",
-    "pr": 12000,
-    "msrp": 12000,
-    "r": 4.8,
-    "vram": 128,
-    "memType": "HBM2e",
-    "bus": 8192,
-    "tdp": 500,
-    "length": 267,
-    "slots": 2,
-    "pwr": "2x 8-pin",
-    "pcie": "4.0",
-    "cuda": 14080,
-    "boost": 1700,
-    "arch": "CDNA 2",
-    "type": "datacenter",
-    "bench": 90,
-    "deals": {
-      "amazon": {
-        "price": 12000,
-        "url": "https://www.amazon.com/dp/B0BZLPHY5G?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 6071,
-    "n": "AMD Instinct MI210",
-    "img": "https://m.media-amazon.com/images/I/512Io5hXDrL._AC_SL300_.jpg",
-    "c": "GPU",
-    "b": "AMD",
-    "pr": 7500,
-    "msrp": 7500,
-    "r": 4.6,
-    "vram": 64,
-    "memType": "HBM2e",
-    "bus": 4096,
-    "tdp": 300,
-    "length": 267,
-    "slots": 2,
-    "pwr": "2x 8-pin",
-    "pcie": "4.0",
-    "cuda": 6656,
-    "boost": 1700,
-    "arch": "CDNA 2",
-    "type": "datacenter",
-    "bench": 72,
-    "deals": {
-      "amazon": {
-        "price": 3899,
-        "url": "https://www.amazon.com/dp/B0CR5RJYL3?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
     "id": 1030,
     "n": "AMD Ryzen 7 7700",
     "img": "https://m.media-amazon.com/images/I/51hfER1cZVL._AC_SL300_.jpg",
@@ -5931,7 +5691,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0F8PR9L3X?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "length": 245
   },
   {
     "id": 2041,
@@ -5956,7 +5717,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CDM3QK7Q?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "length": 267
   },
   {
     "id": 11001,
@@ -12889,7 +12651,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 21760
+    "cuda": 21760,
+    "bench": 100
   },
   {
     "id": 8001,
@@ -12918,7 +12681,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 21760
+    "cuda": 21760,
+    "bench": 100
   },
   {
     "id": 8002,
@@ -12947,7 +12711,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 21760
+    "cuda": 21760,
+    "bench": 100
   },
   {
     "id": 8003,
@@ -12976,7 +12741,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 21760
+    "cuda": 21760,
+    "bench": 100
   },
   {
     "id": 8004,
@@ -13005,7 +12771,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 10752
+    "cuda": 10752,
+    "bench": 78
   },
   {
     "id": 8005,
@@ -13034,7 +12801,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 10752
+    "cuda": 10752,
+    "bench": 78
   },
   {
     "id": 8006,
@@ -13063,7 +12831,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 10752
+    "cuda": 10752,
+    "bench": 78
   },
   {
     "id": 8007,
@@ -13092,7 +12861,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 8960
+    "cuda": 8960,
+    "bench": 68
   },
   {
     "id": 8008,
@@ -13121,7 +12891,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 8960
+    "cuda": 8960,
+    "bench": 68
   },
   {
     "id": 8009,
@@ -13150,7 +12921,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 6144
+    "cuda": 6144,
+    "bench": 55
   },
   {
     "id": 8010,
@@ -13179,7 +12951,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 6144
+    "cuda": 6144,
+    "bench": 55
   },
   {
     "id": 8011,
@@ -13208,7 +12981,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 6144
+    "cuda": 6144,
+    "bench": 55
   },
   {
     "id": 8012,
@@ -13237,7 +13011,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 16384
+    "cuda": 16384,
+    "bench": 85
   },
   {
     "id": 8013,
@@ -13266,7 +13041,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 16384
+    "cuda": 16384,
+    "bench": 85
   },
   {
     "id": 8014,
@@ -13295,7 +13071,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 16384
+    "cuda": 16384,
+    "bench": 85
   },
   {
     "id": 8015,
@@ -13324,7 +13101,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 8448
+    "cuda": 8448,
+    "bench": 62
   },
   {
     "id": 8016,
@@ -13353,7 +13131,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 8448
+    "cuda": 8448,
+    "bench": 62
   },
   {
     "id": 8017,
@@ -13382,7 +13161,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 7168
+    "cuda": 7168,
+    "bench": 53
   },
   {
     "id": 8018,
@@ -13411,7 +13191,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 7168
+    "cuda": 7168,
+    "bench": 53
   },
   {
     "id": 8019,
@@ -13440,7 +13221,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 4352
+    "cuda": 4352,
+    "bench": 36
   },
   {
     "id": 8020,
@@ -13469,7 +13251,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 4352
+    "cuda": 4352,
+    "bench": 36
   },
   {
     "id": 8021,
@@ -13498,7 +13281,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 3072
+    "cuda": 3072,
+    "bench": 30
   },
   {
     "id": 8022,
@@ -13527,7 +13311,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 3072
+    "cuda": 3072,
+    "bench": 30
   },
   {
     "id": 8023,
@@ -13556,7 +13341,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 3072
+    "cuda": 3072,
+    "bench": 30
   },
   {
     "id": 8024,
@@ -13585,7 +13371,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 4096
+    "sp": 4096,
+    "bench": 62
   },
   {
     "id": 8025,
@@ -13614,7 +13401,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 4096
+    "sp": 4096,
+    "bench": 62
   },
   {
     "id": 8026,
@@ -13643,7 +13431,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 4096
+    "sp": 4096,
+    "bench": 62
   },
   {
     "id": 8027,
@@ -13672,7 +13461,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 4096
+    "sp": 4096,
+    "bench": 62
   },
   {
     "id": 8028,
@@ -13701,7 +13491,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 6144
+    "sp": 6144,
+    "bench": 65
   },
   {
     "id": 8029,
@@ -13730,7 +13521,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 6144
+    "sp": 6144,
+    "bench": 65
   },
   {
     "id": 8030,
@@ -13759,7 +13551,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 3840
+    "sp": 3840,
+    "bench": 42
   },
   {
     "id": 8031,
@@ -13788,7 +13581,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 3840
+    "sp": 3840,
+    "bench": 42
   },
   {
     "id": 8032,
@@ -13817,7 +13611,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 3840
+    "sp": 3840,
+    "bench": 42
   },
   {
     "id": 8033,
@@ -13846,7 +13641,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 3840
+    "sp": 3840,
+    "bench": 42
   },
   {
     "id": 8034,
@@ -13875,7 +13671,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 3456
+    "sp": 3456,
+    "bench": 35
   },
   {
     "id": 8035,
@@ -13904,7 +13701,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 3456
+    "sp": 3456,
+    "bench": 35
   },
   {
     "id": 8036,
@@ -13933,7 +13731,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 2048
+    "sp": 2048,
+    "bench": 24
   },
   {
     "id": 8037,
@@ -13962,7 +13761,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 2048
+    "sp": 2048,
+    "bench": 24
   },
   {
     "id": 8038,
@@ -13991,152 +13791,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "sp": 2048
-  },
-  {
-    "id": 8039,
-    "n": "NVIDIA H200 PCIe",
-    "img": "https://m.media-amazon.com/images/I/41XzibJupDL._AC_SL300_.jpg",
-    "c": "GPU",
-    "b": "NVIDIA",
-    "pr": 32999,
-    "msrp": 32999,
-    "r": 4.5,
-    "vram": 141,
-    "memType": "HBM3e",
-    "bus": 6144,
-    "tdp": 700,
-    "length": 267,
-    "slots": 2,
-    "pwr": "1x 16-pin",
-    "pcie": "5.0",
-    "boost": 1980,
-    "arch": "Hopper",
-    "segment": "server",
-    "deals": {
-      "amazon": {
-        "price": 32999,
-        "url": "https://www.amazon.com/dp/B0D9J1KZZX?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "cuda": 16896
-  },
-  {
-    "id": 8040,
-    "n": "NVIDIA H100 PCIe",
-    "img": "https://m.media-amazon.com/images/I/41XzibJupDL._AC_SL300_.jpg",
-    "c": "GPU",
-    "b": "NVIDIA",
-    "pr": 29999,
-    "msrp": 29999,
-    "r": 4.5,
-    "vram": 80,
-    "memType": "HBM3",
-    "bus": 5120,
-    "tdp": 350,
-    "length": 267,
-    "slots": 2,
-    "pwr": "1x 16-pin",
-    "pcie": "5.0",
-    "boost": 1845,
-    "arch": "Hopper",
-    "segment": "server",
-    "deals": {
-      "amazon": {
-        "price": 29999,
-        "url": "https://www.amazon.com/dp/B0D9J1KZZX?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "cuda": 14592
-  },
-  {
-    "id": 8041,
-    "n": "NVIDIA A100 PCIe 80GB",
-    "img": "https://m.media-amazon.com/images/I/313ccMYlGeL._AC_SL300_.jpg",
-    "c": "GPU",
-    "b": "NVIDIA",
-    "pr": 15000,
-    "msrp": 15000,
-    "r": 4.5,
-    "vram": 80,
-    "memType": "HBM2e",
-    "bus": 5120,
-    "tdp": 300,
-    "length": 267,
-    "slots": 2,
-    "pwr": "1x 8-pin",
-    "pcie": "4.0",
-    "boost": 1410,
-    "arch": "Ampere",
-    "segment": "server",
-    "deals": {
-      "amazon": {
-        "price": 4518,
-        "url": "https://www.amazon.com/dp/B08X13X6HF?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "cuda": 6912
-  },
-  {
-    "id": 8042,
-    "n": "NVIDIA L40S",
-    "img": "https://m.media-amazon.com/images/I/41UW1TtsdoL._AC_SL300_.jpg",
-    "c": "GPU",
-    "b": "NVIDIA",
-    "pr": 8999,
-    "msrp": 8999,
-    "r": 4.5,
-    "vram": 48,
-    "memType": "GDDR6",
-    "bus": 384,
-    "tdp": 350,
-    "length": 267,
-    "slots": 2,
-    "pwr": "1x 16-pin",
-    "pcie": "4.0",
-    "boost": 2520,
-    "arch": "Ada Lovelace",
-    "segment": "server",
-    "deals": {
-      "amazon": {
-        "price": 6599,
-        "url": "https://www.amazon.com/dp/B0FMG2FB76?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "cuda": 18176
-  },
-  {
-    "id": 8043,
-    "n": "NVIDIA L4",
-    "img": "https://m.media-amazon.com/images/I/41XzibJupDL._AC_SL300_.jpg",
-    "c": "GPU",
-    "b": "NVIDIA",
-    "pr": 3999,
-    "msrp": 3999,
-    "r": 4.5,
-    "vram": 24,
-    "memType": "GDDR6",
-    "bus": 192,
-    "tdp": 72,
-    "length": 168,
-    "slots": 1,
-    "pwr": "none",
-    "pcie": "4.0",
-    "boost": 2040,
-    "arch": "Ada Lovelace",
-    "segment": "server",
-    "deals": {
-      "amazon": {
-        "price": 3299,
-        "url": "https://www.amazon.com/dp/B0D9J1KZZX?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "cuda": 7680
+    "sp": 2048,
+    "bench": 24
   },
   {
     "id": 8044,
@@ -14165,36 +13821,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "cuda": 1280
-  },
-  {
-    "id": 8045,
-    "n": "AMD Instinct MI300X",
-    "img": "https://m.media-amazon.com/images/I/512Io5hXDrL._AC_SL300_.jpg",
-    "c": "GPU",
-    "b": "AMD",
-    "pr": 14999,
-    "msrp": 14999,
-    "r": 4.5,
-    "vram": 192,
-    "memType": "HBM3",
-    "bus": 8192,
-    "tdp": 750,
-    "length": 267,
-    "slots": 2,
-    "pwr": "2x 8-pin",
-    "pcie": "5.0",
-    "boost": 2100,
-    "arch": "CDNA 3",
-    "segment": "server",
-    "deals": {
-      "amazon": {
-        "price": 14999,
-        "url": "https://www.amazon.com/dp/B009IOCCD2?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "sp": 19456
+    "cuda": 1280,
+    "bench": 10
   },
   {
     "id": 8046,
@@ -39170,7 +38798,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "GeForce RTX 5060",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 150,
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 14833,
@@ -39203,7 +38834,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 3050",
     "interface": "PCI-Express x16",
-    "generation": "RTX 30"
+    "generation": "RTX 30",
+    "tdp": 130,
+    "length": 225,
+    "bench": 22
   },
   {
     "id": 14834,
@@ -39241,7 +38875,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "RX 9060XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000"
+    "generation": "RX 9000",
+    "tdp": 180,
+    "length": 260,
+    "bench": 40
   },
   {
     "id": 14835,
@@ -39274,7 +38911,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "AMD RX9070",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000"
+    "generation": "RX 9000",
+    "tdp": 304,
+    "length": 290,
+    "bench": 62
   },
   {
     "id": 14836,
@@ -39308,7 +38948,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "AMD Radeon RX 9060 XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000"
+    "generation": "RX 9000",
+    "tdp": 180,
+    "length": 260,
+    "bench": 40
   },
   {
     "id": 14837,
@@ -39345,7 +38988,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "RTX 5060TI",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14838,
@@ -39378,7 +39024,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 575,
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 14839,
@@ -39415,7 +39064,10 @@ export const PARTS = [
     "vram": "16GB",
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 5080",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14840,
@@ -39453,7 +39105,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14841,
@@ -39485,7 +39140,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14842,
@@ -39516,7 +39174,10 @@ export const PARTS = [
     "vram": "8GB",
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5060 Ti",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14843,
@@ -39554,7 +39215,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "RX 9070XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000"
+    "generation": "RX 9000",
+    "tdp": 304,
+    "length": 290,
+    "bench": 62
   },
   {
     "id": 14844,
@@ -39587,7 +39251,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 575,
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 14845,
@@ -39623,7 +39290,10 @@ export const PARTS = [
     "vram": "16GB",
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5080",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14846,
@@ -39660,7 +39330,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI Express 4.0",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14847,
@@ -39692,7 +39365,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "AMD Radeon RX 9070 XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000"
+    "generation": "RX 9000",
+    "tdp": 304,
+    "length": 290,
+    "bench": 62
   },
   {
     "id": 14848,
@@ -39725,7 +39401,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14849,
@@ -39758,7 +39437,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14850,
@@ -39797,7 +39479,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14851,
@@ -39829,7 +39514,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5060Ti",
     "interface": "PCI-Express x8",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14852,
@@ -39861,7 +39549,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 160,
+    "length": 245,
+    "bench": 36
   },
   {
     "id": 14853,
@@ -39894,7 +39585,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "AMD Radeon RX 7600",
     "interface": "PCI Express",
-    "generation": "RX 7000"
+    "generation": "RX 7000",
+    "tdp": 165,
+    "length": 240,
+    "bench": 24
   },
   {
     "id": 14854,
@@ -39926,7 +39620,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "Radeon RX 9060 XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000"
+    "generation": "RX 9000",
+    "tdp": 180,
+    "length": 260,
+    "bench": 40
   },
   {
     "id": 14855,
@@ -39958,7 +39655,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 220,
+    "length": 290,
+    "bench": 53
   },
   {
     "id": 14856,
@@ -39991,7 +39691,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 200,
+    "length": 285,
+    "bench": 48
   },
   {
     "id": 14857,
@@ -40024,7 +39727,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 160,
+    "length": 245,
+    "bench": 36
   },
   {
     "id": 14858,
@@ -40055,7 +39761,10 @@ export const PARTS = [
     "vram": "12GB",
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070 SUPER",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 220,
+    "length": 290,
+    "bench": 53
   },
   {
     "id": 14859,
@@ -40087,7 +39796,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "Radeon RX 9070 XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000"
+    "generation": "RX 9000",
+    "tdp": 304,
+    "length": 290,
+    "bench": 62
   },
   {
     "id": 14860,
@@ -40120,7 +39832,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "AMD Radeon RX 7800 XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 7000"
+    "generation": "RX 7000",
+    "tdp": 263,
+    "length": 267,
+    "bench": 42
   },
   {
     "id": 14861,
@@ -40152,7 +39867,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 285,
+    "length": 305,
+    "bench": 58
   },
   {
     "id": 14862,
@@ -40182,7 +39900,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4080 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 320,
+    "length": 310,
+    "bench": 73
   },
   {
     "id": 14863,
@@ -40212,7 +39933,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4080 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 320,
+    "length": 310,
+    "bench": 73
   },
   {
     "id": 14864,
@@ -40239,7 +39963,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4080 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 320,
+    "length": 310,
+    "bench": 73
   },
   {
     "id": 14865,
@@ -40272,7 +39999,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 160,
+    "length": 245,
+    "bench": 36
   },
   {
     "id": 14866,
@@ -40303,7 +40033,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "5500XT",
     "interface": "PCI Express",
-    "generation": "RX 6000"
+    "generation": "RX 6000",
+    "tdp": 130,
+    "length": 210,
+    "bench": 14
   },
   {
     "id": 14867,
@@ -40334,7 +40067,10 @@ export const PARTS = [
     "vram": "16GB",
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4080 SUPER",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 320,
+    "length": 310,
+    "bench": 73
   },
   {
     "id": 14868,
@@ -40365,7 +40101,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "AMD Radeon RX 7900 XT",
     "interface": "PCI Express",
-    "generation": "RX 7000"
+    "generation": "RX 7000",
+    "tdp": 315,
+    "length": 276,
+    "bench": 58
   },
   {
     "id": 14869,
@@ -40398,7 +40137,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4080",
     "interface": "PCI Express",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 320,
+    "length": 310,
+    "bench": 70
   },
   {
     "id": 14870,
@@ -40431,7 +40173,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 220,
+    "length": 290,
+    "bench": 53
   },
   {
     "id": 14871,
@@ -40464,7 +40209,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14872,
@@ -40496,7 +40244,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14873,
@@ -40528,7 +40279,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 160,
+    "length": 245,
+    "bench": 36
   },
   {
     "id": 14874,
@@ -40559,7 +40313,10 @@ export const PARTS = [
     "vram": "8GB",
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 4060",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 115,
+    "length": 245,
+    "bench": 30
   },
   {
     "id": 14875,
@@ -40587,7 +40344,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070 Ti SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 285,
+    "length": 305,
+    "bench": 62
   },
   {
     "id": 14876,
@@ -40618,7 +40378,10 @@ export const PARTS = [
     "vram": "8GB",
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5060",
-    "interface": "PCI-Express x8"
+    "interface": "PCI-Express x8",
+    "tdp": 150,
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 14877,
@@ -40650,7 +40413,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4080 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 320,
+    "length": 310,
+    "bench": 73
   },
   {
     "id": 14878,
@@ -40682,7 +40448,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14879,
@@ -40714,7 +40483,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4090",
     "interface": "PCI-Express x4",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 450,
+    "length": 336,
+    "bench": 85
   },
   {
     "id": 14880,
@@ -40745,7 +40517,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 5070",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 250,
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 14881,
@@ -40776,7 +40551,10 @@ export const PARTS = [
     "vram": "16GB",
     "vramType": "SGRAM",
     "chipset": "NVIDIA GeForce RTX 4070 Ti SUPER",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 285,
+    "length": 305,
+    "bench": 62
   },
   {
     "id": 14882,
@@ -40808,7 +40586,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 220,
+    "length": 290,
+    "bench": 53
   },
   {
     "id": 14883,
@@ -40839,7 +40620,10 @@ export const PARTS = [
     "vram": "8GB",
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 4060 Ti",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 160,
+    "length": 245,
+    "bench": 36
   },
   {
     "id": 14884,
@@ -40871,7 +40655,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070 Ti SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 220,
+    "length": 290,
+    "bench": 53
   },
   {
     "id": 14885,
@@ -40902,7 +40689,10 @@ export const PARTS = [
     "vram": "16GB",
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4080",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 320,
+    "length": 310,
+    "bench": 70
   },
   {
     "id": 14886,
@@ -40933,7 +40723,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "AMD Radeon RX 7900 XTX",
     "interface": "PCI-Express x16",
-    "generation": "RX 7000"
+    "generation": "RX 7000",
+    "tdp": 355,
+    "length": 287,
+    "bench": 65
   },
   {
     "id": 14887,
@@ -40967,7 +40760,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 160,
+    "length": 245,
+    "bench": 36
   },
   {
     "id": 14888,
@@ -40998,7 +40794,10 @@ export const PARTS = [
     "vram": "16GB",
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5060 Ti",
-    "interface": "PCI-Express x8"
+    "interface": "PCI-Express x8",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14889,
@@ -41034,7 +40833,10 @@ export const PARTS = [
     "vram": "32GB",
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5090",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 575,
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 14890,
@@ -41066,7 +40868,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14891,
@@ -41096,7 +40901,10 @@ export const PARTS = [
     "vram": "16GB",
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070 Ti SUPER",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 285,
+    "length": 305,
+    "bench": 62
   },
   {
     "id": 14892,
@@ -41128,7 +40936,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070 Ti SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 285,
+    "length": 305,
+    "bench": 62
   },
   {
     "id": 14893,
@@ -41160,7 +40971,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 160,
+    "length": 245,
+    "bench": 36
   },
   {
     "id": 14894,
@@ -41192,7 +41006,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "AMD Radeon RX 6700 XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 6000"
+    "generation": "RX 6000",
+    "tdp": 230,
+    "length": 267,
+    "bench": 30
   },
   {
     "id": 14895,
@@ -41224,7 +41041,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14896,
@@ -41255,7 +41075,10 @@ export const PARTS = [
     "vram": "8GB",
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 4060 Ti",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 160,
+    "length": 245,
+    "bench": 36
   },
   {
     "id": 14897,
@@ -41287,7 +41110,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070 Ti SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 285,
+    "length": 305,
+    "bench": 62
   },
   {
     "id": 14898,
@@ -41319,7 +41145,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "GeForce RTX 5060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14899,
@@ -41357,7 +41186,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14900,
@@ -41395,7 +41227,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14901,
@@ -41426,7 +41261,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 575,
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 14902,
@@ -41458,7 +41296,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4080 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 320,
+    "length": 310,
+    "bench": 73
   },
   {
     "id": 14903,
@@ -41491,7 +41332,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "AMD Radeon RX 7700 XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 7000"
+    "generation": "RX 7000",
+    "tdp": 245,
+    "length": 267,
+    "bench": 35
   },
   {
     "id": 14904,
@@ -41524,7 +41368,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "AMD Radeon RX 9070",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000"
+    "generation": "RX 9000",
+    "tdp": 220,
+    "length": 285,
+    "bench": 52
   },
   {
     "id": 14905,
@@ -41554,7 +41401,10 @@ export const PARTS = [
     "weight": "1000 Grams",
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5080",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14906,
@@ -41586,7 +41436,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 575,
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 14907,
@@ -41619,7 +41472,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14908,
@@ -41651,7 +41507,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 285,
+    "length": 305,
+    "bench": 62
   },
   {
     "id": 14909,
@@ -41681,7 +41540,10 @@ export const PARTS = [
     "model": "RTX 4070",
     "chipset": "NVIDIA GeForce RTX 4070",
     "interface": "PCI Express",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 200,
+    "length": 285,
+    "bench": 48
   },
   {
     "id": 14910,
@@ -41711,7 +41573,10 @@ export const PARTS = [
     "vram": "8GB",
     "vramType": "GDDR6",
     "chipset": "AMD Radeon Pro W5700",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 205,
+    "length": 240,
+    "bench": 20
   },
   {
     "id": 14911,
@@ -41743,7 +41608,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 575,
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 14912,
@@ -41774,7 +41642,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 220,
+    "length": 290,
+    "bench": 53
   },
   {
     "id": 14913,
@@ -41806,7 +41677,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "RTX 5080",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14914,
@@ -41838,7 +41712,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14915,
@@ -41871,7 +41748,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 160,
+    "length": 245,
+    "bench": 36
   },
   {
     "id": 14916,
@@ -41907,7 +41787,10 @@ export const PARTS = [
     "vram": "8GB",
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5060 Ti",
-    "interface": "PCI-Express x8"
+    "interface": "PCI-Express x8",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14917,
@@ -41937,7 +41820,10 @@ export const PARTS = [
     "vram": "6GB",
     "vramType": "Shared",
     "chipset": "NVIDIA GeForce GTX1660 SUPER",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 125,
+    "length": 225,
+    "bench": 18
   },
   {
     "id": 14918,
@@ -41970,7 +41856,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14919,
@@ -42003,7 +41892,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070 SUPER",
     "interface": "PCI, PCI Express",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 220,
+    "length": 290,
+    "bench": 53
   },
   {
     "id": 14920,
@@ -42036,7 +41928,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "GeForce RTX 5060",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 150,
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 14921,
@@ -42070,7 +41965,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5070",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 250,
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 14922,
@@ -42097,7 +41995,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4070",
     "interface": "PCI Express",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 220,
+    "length": 290,
+    "bench": 53
   },
   {
     "id": 14923,
@@ -42129,7 +42030,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "GeForce RTX 5060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14924,
@@ -42163,7 +42067,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14925,
@@ -42195,7 +42102,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14926,
@@ -42227,7 +42137,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 3090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 30"
+    "generation": "RTX 30",
+    "tdp": 350,
+    "length": 313,
+    "bench": 60
   },
   {
     "id": 14927,
@@ -42265,7 +42178,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14928,
@@ -42298,7 +42214,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 5060",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 150,
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 14929,
@@ -42330,7 +42249,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "GeForce RTX 5060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14930,
@@ -42362,7 +42284,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "AMD Radeon RX 9070",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000"
+    "generation": "RX 9000",
+    "tdp": 220,
+    "length": 285,
+    "bench": 52
   },
   {
     "id": 14931,
@@ -42392,7 +42317,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 575,
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 14932,
@@ -42421,7 +42349,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 160,
+    "length": 245,
+    "bench": 36
   },
   {
     "id": 14933,
@@ -42453,7 +42384,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 3080",
     "interface": "PCI-Express x8",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 320,
+    "length": 310,
+    "bench": 73
   },
   {
     "id": 14934,
@@ -42485,7 +42419,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 575,
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 14935,
@@ -42518,7 +42455,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "RTX 5090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 575,
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 14936,
@@ -42549,7 +42489,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14937,
@@ -42580,7 +42523,10 @@ export const PARTS = [
     "vram": "16GB",
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5060 Ti",
-    "interface": "PCI-Express x16"
+    "interface": "PCI-Express x16",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14938,
@@ -42610,7 +42556,10 @@ export const PARTS = [
     "vramType": "GDDR6",
     "chipset": "AMD Radeon RX 9070XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000"
+    "generation": "RX 9000",
+    "tdp": 304,
+    "length": 290,
+    "bench": 62
   },
   {
     "id": 14939,
@@ -42644,7 +42593,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 360,
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 14940,
@@ -42675,7 +42627,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 180,
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 14941,
@@ -42707,7 +42662,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 575,
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 14942,
@@ -42740,7 +42698,10 @@ export const PARTS = [
     "vramType": "GDDR7",
     "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI Express",
-    "generation": "RTX 50"
+    "generation": "RTX 50",
+    "tdp": 575,
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 14943,
@@ -42772,7 +42733,10 @@ export const PARTS = [
     "vramType": "GDDR6X",
     "chipset": "NVIDIA GeForce RTX 4090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40"
+    "generation": "RTX 40",
+    "tdp": 450,
+    "length": 336,
+    "bench": 85
   },
   {
     "id": 14944,
@@ -86321,7 +86285,9 @@ export const PARTS = [
     "tdp": 170,
     "recommendedPSU": 650,
     "pcie": "Gen4",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 235,
+    "bench": 28
   },
   {
     "id": 16328,
@@ -86350,7 +86316,9 @@ export const PARTS = [
     "tdp": 212,
     "recommendedPSU": 550,
     "pcie": "Gen4",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 235,
+    "bench": 28
   },
   {
     "id": 16329,
@@ -86379,7 +86347,9 @@ export const PARTS = [
     "tdp": 180,
     "recommendedPSU": 500,
     "pcie": "Gen4",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 240,
+    "bench": 24
   },
   {
     "id": 16330,
@@ -86408,7 +86378,9 @@ export const PARTS = [
     "tdp": 160,
     "recommendedPSU": 550,
     "pcie": "Gen4",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 245,
+    "bench": 36
   },
   {
     "id": 16331,
@@ -86437,7 +86409,9 @@ export const PARTS = [
     "tdp": 160,
     "recommendedPSU": 550,
     "pcie": "Gen4",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 245,
+    "bench": 36
   },
   {
     "id": 16332,
@@ -86466,7 +86440,9 @@ export const PARTS = [
     "tdp": 130,
     "recommendedPSU": 550,
     "pcie": "Gen4",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 225,
+    "bench": 22
   },
   {
     "id": 16333,
@@ -86495,7 +86471,9 @@ export const PARTS = [
     "tdp": 130,
     "recommendedPSU": 550,
     "pcie": "Gen4",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 225,
+    "bench": 22
   },
   {
     "id": 16334,
@@ -86524,7 +86502,9 @@ export const PARTS = [
     "tdp": 130,
     "recommendedPSU": 550,
     "pcie": "Gen4",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 240,
+    "bench": 24
   },
   {
     "id": 16335,
@@ -86552,7 +86532,9 @@ export const PARTS = [
     "tdp": 190,
     "recommendedPSU": 600,
     "pcie": "Gen4",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 270,
+    "bench": 28
   },
   {
     "id": 16336,
@@ -86581,7 +86563,9 @@ export const PARTS = [
     "tdp": 360,
     "recommendedPSU": 850,
     "pcie": "Gen5",
-    "slots": "3-slot"
+    "slots": "3-slot",
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 16337,
@@ -86610,7 +86594,9 @@ export const PARTS = [
     "tdp": 360,
     "recommendedPSU": 850,
     "pcie": "Gen5",
-    "slots": "3-slot"
+    "slots": "3-slot",
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 16338,
@@ -86639,7 +86625,9 @@ export const PARTS = [
     "tdp": 360,
     "recommendedPSU": 1000,
     "pcie": "Gen5",
-    "slots": "4-slot"
+    "slots": "4-slot",
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 16339,
@@ -86668,7 +86656,9 @@ export const PARTS = [
     "tdp": 400,
     "recommendedPSU": 1000,
     "pcie": "Gen5",
-    "slots": "4-slot"
+    "slots": "4-slot",
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 16340,
@@ -86697,7 +86687,9 @@ export const PARTS = [
     "tdp": 360,
     "recommendedPSU": 1000,
     "pcie": "Gen5",
-    "slots": "4-slot"
+    "slots": "4-slot",
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 16341,
@@ -86726,7 +86718,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16342,
@@ -86755,7 +86749,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "3-slot"
+    "slots": "3-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16343,
@@ -86784,7 +86780,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16344,
@@ -86813,7 +86811,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 850,
     "pcie": "Gen5",
-    "slots": "3-slot"
+    "slots": "3-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16345,
@@ -86842,7 +86842,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16346,
@@ -86871,7 +86873,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16347,
@@ -86900,7 +86904,9 @@ export const PARTS = [
     "tdp": 360,
     "recommendedPSU": 850,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 16348,
@@ -86929,7 +86935,9 @@ export const PARTS = [
     "tdp": 360,
     "recommendedPSU": 850,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 16349,
@@ -86958,7 +86966,9 @@ export const PARTS = [
     "tdp": 81,
     "recommendedPSU": 300,
     "pcie": "Gen4",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 225,
+    "bench": 22
   },
   {
     "id": 16350,
@@ -86987,7 +86997,9 @@ export const PARTS = [
     "tdp": 360,
     "recommendedPSU": 850,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 16351,
@@ -87016,7 +87028,9 @@ export const PARTS = [
     "tdp": 600,
     "recommendedPSU": 1000,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 16352,
@@ -87045,7 +87059,9 @@ export const PARTS = [
     "tdp": 575,
     "recommendedPSU": 1000,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 16353,
@@ -87072,7 +87088,10 @@ export const PARTS = [
     "boostClock": 2.6,
     "recommendedPSU": 600,
     "pcie": "Gen4",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "tdp": 150,
+    "length": 270,
+    "bench": 22
   },
   {
     "id": 16354,
@@ -87101,7 +87120,9 @@ export const PARTS = [
     "tdp": 575,
     "recommendedPSU": 1000,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 16355,
@@ -87130,7 +87151,9 @@ export const PARTS = [
     "tdp": 600,
     "recommendedPSU": 1000,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 16356,
@@ -87159,7 +87182,9 @@ export const PARTS = [
     "tdp": 360,
     "recommendedPSU": 850,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 16357,
@@ -87188,7 +87213,9 @@ export const PARTS = [
     "tdp": 360,
     "recommendedPSU": 850,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 16358,
@@ -87217,7 +87244,9 @@ export const PARTS = [
     "tdp": 360,
     "recommendedPSU": 850,
     "pcie": "Gen5",
-    "slots": "3-slot"
+    "slots": "3-slot",
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 16359,
@@ -87246,7 +87275,9 @@ export const PARTS = [
     "tdp": 575,
     "recommendedPSU": 1000,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 16360,
@@ -87275,7 +87306,9 @@ export const PARTS = [
     "tdp": 600,
     "recommendedPSU": 1000,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 330,
+    "bench": 100
   },
   {
     "id": 16361,
@@ -87304,7 +87337,9 @@ export const PARTS = [
     "tdp": 424,
     "recommendedPSU": 850,
     "pcie": "Gen5",
-    "slots": "2.7-slot"
+    "slots": "2.7-slot",
+    "length": 290,
+    "bench": 62
   },
   {
     "id": 16362,
@@ -87333,7 +87368,9 @@ export const PARTS = [
     "tdp": 320,
     "recommendedPSU": 850,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16363,
@@ -87362,7 +87399,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16364,
@@ -87391,7 +87430,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16365,
@@ -87420,7 +87461,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16366,
@@ -87449,7 +87492,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16367,
@@ -87478,7 +87523,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 650,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16368,
@@ -87507,7 +87554,9 @@ export const PARTS = [
     "tdp": 245,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16369,
@@ -87536,7 +87585,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 650,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16370,
@@ -87565,7 +87616,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 650,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16371,
@@ -87594,7 +87647,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16372,
@@ -87623,7 +87678,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16373,
@@ -87652,7 +87709,9 @@ export const PARTS = [
     "tdp": 340,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 290,
+    "bench": 62
   },
   {
     "id": 16374,
@@ -87681,7 +87740,9 @@ export const PARTS = [
     "tdp": 245,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 285,
+    "bench": 52
   },
   {
     "id": 16375,
@@ -87710,7 +87771,9 @@ export const PARTS = [
     "tdp": 304,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 290,
+    "bench": 62
   },
   {
     "id": 16376,
@@ -87739,7 +87802,9 @@ export const PARTS = [
     "tdp": 304,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 290,
+    "bench": 62
   },
   {
     "id": 16377,
@@ -87768,7 +87833,9 @@ export const PARTS = [
     "tdp": 245,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 285,
+    "bench": 52
   },
   {
     "id": 16378,
@@ -87797,7 +87864,9 @@ export const PARTS = [
     "tdp": 340,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 290,
+    "bench": 62
   },
   {
     "id": 16379,
@@ -87826,7 +87895,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16380,
@@ -87855,7 +87926,9 @@ export const PARTS = [
     "tdp": 245,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 285,
+    "bench": 52
   },
   {
     "id": 16381,
@@ -87884,7 +87957,9 @@ export const PARTS = [
     "tdp": 340,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 290,
+    "bench": 62
   },
   {
     "id": 16382,
@@ -87913,7 +87988,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.7-slot"
+    "slots": "2.7-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16383,
@@ -87942,7 +88019,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16384,
@@ -87971,7 +88050,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 650,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16385,
@@ -88000,7 +88081,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 16386,
@@ -88029,7 +88112,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 16387,
@@ -88058,7 +88143,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 16388,
@@ -88087,7 +88174,9 @@ export const PARTS = [
     "tdp": 180,
     "recommendedPSU": 650,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 16389,
@@ -88116,7 +88205,9 @@ export const PARTS = [
     "tdp": 180,
     "recommendedPSU": 650,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 16390,
@@ -88145,7 +88236,9 @@ export const PARTS = [
     "tdp": 180,
     "recommendedPSU": 650,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 16391,
@@ -88174,7 +88267,9 @@ export const PARTS = [
     "tdp": 180,
     "recommendedPSU": 650,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 16392,
@@ -88203,7 +88298,9 @@ export const PARTS = [
     "tdp": 145,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 16393,
@@ -88232,7 +88329,9 @@ export const PARTS = [
     "tdp": 180,
     "recommendedPSU": 600,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 16394,
@@ -88261,7 +88360,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 16395,
@@ -88290,7 +88391,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16396,
@@ -88319,7 +88422,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 16397,
@@ -88348,7 +88453,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 16398,
@@ -88377,7 +88484,9 @@ export const PARTS = [
     "tdp": 145,
     "recommendedPSU": 450,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 16399,
@@ -88406,7 +88515,9 @@ export const PARTS = [
     "tdp": 145,
     "recommendedPSU": 500,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 16400,
@@ -88435,7 +88546,9 @@ export const PARTS = [
     "tdp": 155,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 16401,
@@ -88464,7 +88577,9 @@ export const PARTS = [
     "tdp": 155,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 16402,
@@ -88493,7 +88608,9 @@ export const PARTS = [
     "tdp": 155,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 16403,
@@ -88522,7 +88639,9 @@ export const PARTS = [
     "tdp": 155,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 16404,
@@ -88551,7 +88670,9 @@ export const PARTS = [
     "tdp": 155,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 16405,
@@ -88580,7 +88701,9 @@ export const PARTS = [
     "tdp": 182,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "3-slot"
+    "slots": "3-slot",
+    "length": 260,
+    "bench": 40
   },
   {
     "id": 16406,
@@ -88609,7 +88732,9 @@ export const PARTS = [
     "tdp": 182,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 260,
+    "bench": 40
   },
   {
     "id": 16407,
@@ -88638,7 +88763,9 @@ export const PARTS = [
     "tdp": 182,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "3.5-slot"
+    "slots": "3.5-slot",
+    "length": 260,
+    "bench": 40
   },
   {
     "id": 16408,
@@ -88667,7 +88794,9 @@ export const PARTS = [
     "tdp": 182,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 260,
+    "bench": 40
   },
   {
     "id": 16409,
@@ -88696,7 +88825,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 250,
+    "bench": 38
   },
   {
     "id": 16410,
@@ -88725,7 +88856,9 @@ export const PARTS = [
     "tdp": 217,
     "recommendedPSU": 450,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 260,
+    "bench": 40
   },
   {
     "id": 16411,
@@ -88754,7 +88887,9 @@ export const PARTS = [
     "tdp": 180,
     "recommendedPSU": 600,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 16412,
@@ -88783,7 +88918,9 @@ export const PARTS = [
     "tdp": 217,
     "recommendedPSU": 450,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 260,
+    "bench": 40
   },
   {
     "id": 16413,
@@ -88812,7 +88949,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 650,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16414,
@@ -88841,7 +88980,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 650,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16415,
@@ -88870,7 +89011,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 650,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16416,
@@ -88899,7 +89042,9 @@ export const PARTS = [
     "tdp": 180,
     "recommendedPSU": 600,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 16417,
@@ -88928,7 +89073,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "3.25-slot"
+    "slots": "3.25-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16418,
@@ -88957,7 +89104,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 850,
     "pcie": "Gen5",
-    "slots": "3.25-slot"
+    "slots": "3.25-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16419,
@@ -88986,7 +89135,9 @@ export const PARTS = [
     "tdp": 180,
     "recommendedPSU": 600,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 16420,
@@ -89015,7 +89166,9 @@ export const PARTS = [
     "tdp": 130,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 240,
+    "bench": 30
   },
   {
     "id": 16421,
@@ -89044,7 +89197,9 @@ export const PARTS = [
     "tdp": 130,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 240,
+    "bench": 30
   },
   {
     "id": 16422,
@@ -89073,7 +89228,9 @@ export const PARTS = [
     "tdp": 130,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 240,
+    "bench": 30
   },
   {
     "id": 16423,
@@ -89102,7 +89259,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 240,
+    "bench": 30
   },
   {
     "id": 16424,
@@ -89131,7 +89290,9 @@ export const PARTS = [
     "tdp": 130,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 240,
+    "bench": 30
   },
   {
     "id": 16425,
@@ -89160,7 +89321,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 550,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 16426,
@@ -89189,7 +89352,9 @@ export const PARTS = [
     "tdp": 182,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "2-slot"
+    "slots": "2-slot",
+    "length": 260,
+    "bench": 40
   },
   {
     "id": 16427,
@@ -89218,7 +89383,9 @@ export const PARTS = [
     "tdp": 182,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "3-slot"
+    "slots": "3-slot",
+    "length": 260,
+    "bench": 40
   },
   {
     "id": 16428,
@@ -89247,7 +89414,9 @@ export const PARTS = [
     "tdp": 180,
     "recommendedPSU": 600,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 260,
+    "bench": 45
   },
   {
     "id": 16429,
@@ -89274,7 +89443,10 @@ export const PARTS = [
     "boostClock": 2.97,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "3-slot"
+    "slots": "3-slot",
+    "tdp": 304,
+    "length": 290,
+    "bench": 62
   },
   {
     "id": 16430,
@@ -89301,7 +89473,10 @@ export const PARTS = [
     "boostClock": 2.52,
     "recommendedPSU": 700,
     "pcie": "Gen5",
-    "slots": "3-slot"
+    "slots": "3-slot",
+    "tdp": 220,
+    "length": 285,
+    "bench": 52
   },
   {
     "id": 16431,
@@ -89328,7 +89503,10 @@ export const PARTS = [
     "boostClock": 2.97,
     "recommendedPSU": 800,
     "pcie": "Gen5",
-    "slots": "3-slot"
+    "slots": "3-slot",
+    "tdp": 304,
+    "length": 290,
+    "bench": 62
   },
   {
     "id": 16432,
@@ -89357,7 +89535,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 650,
     "pcie": "Gen5",
-    "slots": "2.7-slot"
+    "slots": "2.7-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16433,
@@ -89386,7 +89566,9 @@ export const PARTS = [
     "tdp": 250,
     "recommendedPSU": 650,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 290,
+    "bench": 55
   },
   {
     "id": 16434,
@@ -89415,7 +89597,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16435,
@@ -89444,7 +89628,9 @@ export const PARTS = [
     "tdp": 300,
     "recommendedPSU": 750,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 305,
+    "bench": 68
   },
   {
     "id": 16436,
@@ -89473,7 +89659,9 @@ export const PARTS = [
     "tdp": 360,
     "recommendedPSU": 850,
     "pcie": "Gen5",
-    "slots": "2.5-slot"
+    "slots": "2.5-slot",
+    "length": 310,
+    "bench": 78
   },
   {
     "id": 16437,
