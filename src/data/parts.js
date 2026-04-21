@@ -6945,7 +6945,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 85
+    "value": 85,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7001,
@@ -6972,7 +6974,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 92
+    "value": 92,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7002,
@@ -6999,7 +7003,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 63
+    "value": 63,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7003,
@@ -7026,7 +7032,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 91
+    "value": 91,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7004,
@@ -7053,7 +7061,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 39
+    "value": 39,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7005,
@@ -7080,7 +7090,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 53
+    "value": 53,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7006,
@@ -7107,7 +7119,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 63
+    "value": 63,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7007,
@@ -7134,7 +7148,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 74
+    "value": 74,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7008,
@@ -7161,7 +7177,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 74
+    "value": 74,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7009,
@@ -7188,7 +7206,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 85
+    "value": 85,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7010,
@@ -7215,7 +7235,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 85
+    "value": 85,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7011,
@@ -7242,7 +7264,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 85
+    "value": 85,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7012,
@@ -7269,7 +7293,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 4
+    "value": 4,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7013,
@@ -7296,7 +7322,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 100
+    "value": 100,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7014,
@@ -7323,7 +7351,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 85
+    "value": 85,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7015,
@@ -7350,7 +7380,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 95
+    "value": 95,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7016,
@@ -7377,7 +7409,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 49
+    "value": 49,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7017,
@@ -7404,7 +7438,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 92
+    "value": 92,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7018,
@@ -7431,7 +7467,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 100
+    "value": 100,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7019,
@@ -7458,7 +7496,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 100
+    "value": 100,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7020,
@@ -7485,7 +7525,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 100
+    "value": 100,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7021,
@@ -7512,7 +7554,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 92
+    "value": 92,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7022,
@@ -7539,7 +7583,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 50
+    "value": 50,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7023,
@@ -7566,7 +7612,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 56
+    "value": 56,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7024,
@@ -7593,7 +7641,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 18
+    "value": 18,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7025,
@@ -7620,7 +7670,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 53
+    "value": 53,
+    "memType": "DDR5",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7026,
@@ -7647,7 +7699,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 73
+    "value": 73,
+    "memType": "DDR4",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7027,
@@ -7674,7 +7728,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 52
+    "value": 52,
+    "memType": "DDR4",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7028,
@@ -7701,7 +7757,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 82
+    "value": 82,
+    "memType": "DDR4",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7029,
@@ -7728,7 +7786,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 61
+    "value": 61,
+    "memType": "DDR4",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7030,
@@ -7755,7 +7815,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 54
+    "value": 54,
+    "memType": "DDR4",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7031,
@@ -7782,7 +7844,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 79
+    "value": 79,
+    "memType": "DDR4",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7032,
@@ -7809,7 +7873,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 64
+    "value": 64,
+    "memType": "DDR4",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7033,
@@ -7836,7 +7902,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 66
+    "value": 66,
+    "memType": "DDR4",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7034,
@@ -7863,7 +7931,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 93
+    "value": 93,
+    "memType": "DDR4",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7035,
@@ -7890,7 +7960,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 8
+    "value": 8,
+    "memType": "DDR4",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7036,
@@ -7917,7 +7989,9 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 28
+    "value": 28,
+    "memType": "DDR4",
+    "formFactor": "UDIMM"
   },
   {
     "id": 7037,
@@ -63681,7 +63755,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 65,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15485,
@@ -63718,7 +63796,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 91,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15486,
@@ -63754,7 +63836,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "2x16GB",
     "speed": 5600,
-    "sticks": 2
+    "sticks": 2,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 85,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15487,
@@ -63786,7 +63872,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 48,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15488,
@@ -63818,7 +63908,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 100,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15489,
@@ -63846,7 +63940,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "16GB",
     "speed": 3200,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 46,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15490,
@@ -63883,7 +63981,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 5200,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.1,
+    "rgb": false,
+    "value": 24,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15491,
@@ -63921,7 +64023,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 38
+    "cl": 38,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 69,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15492,
@@ -63950,30 +64056,12 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "2x8GB",
     "sticks": 2,
-    "cl": 19
-  },
-  {
-    "id": 15493,
-    "n": "Vengeance RGB DDR5 Light Enhancement Kit (No Physical Memory) – Black",
-    "img": "https://m.media-amazon.com/images/I/716jiyFhdSL._AC_SL1500_.jpg",
-    "c": "RAM",
-    "b": "Corsair",
-    "pr": 34.99,
-    "msrp": 34.99,
-    "r": 4.7,
-    "asin": "B0DNTQJGN1",
-    "reviews": 343,
-    "deals": {
-      "amazon": {
-        "price": 34.99,
-        "url": "https://www.amazon.com/dp/B0DNTQJGN1?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "upc": "840006688419",
-    "mpn": "CORSAIR VENGEANCE Light Enhancement Kit",
-    "weight": "0.1 Kilograms",
-    "memType": "DDR5"
+    "cl": 19,
+    "speed": 2666,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 60,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15494,
@@ -64005,7 +64093,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 39,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15495,
@@ -64037,7 +64129,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 20,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15496,
@@ -64074,7 +64170,11 @@ export const PARTS = [
     "cap": "1x16GB",
     "speed": 3200,
     "sticks": 1,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 43,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15497,
@@ -64107,7 +64207,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 45,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15498,
@@ -64139,7 +64243,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 5200,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.1,
+    "rgb": true,
+    "value": 12,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15499,
@@ -64176,7 +64284,11 @@ export const PARTS = [
     "cap": "1x16GB",
     "speed": 5600,
     "sticks": 1,
-    "cl": 48
+    "cl": 48,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 51,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15500,
@@ -64213,7 +64325,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 100,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15501,
@@ -64249,7 +64365,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "16GB",
     "speed": 3200,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 31,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15502,
@@ -64286,7 +64406,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 85,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15503,
@@ -64316,7 +64440,11 @@ export const PARTS = [
     "weight": "9.4 Grams",
     "memType": "DDR5",
     "cap": "32GB",
-    "speed": 5600
+    "speed": 5600,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 84,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15504,
@@ -64347,7 +64475,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "2x16GB",
     "speed": 3200,
-    "sticks": 2
+    "sticks": 2,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 70,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15505,
@@ -64380,7 +64512,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 45,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15506,
@@ -64410,7 +64546,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 100,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15507,
@@ -64441,7 +64581,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "8GB",
     "speed": 3200,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 2,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15508,
@@ -64471,7 +64615,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 53,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15509,
@@ -64503,7 +64651,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 74,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15510,
@@ -64535,7 +64687,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 41,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15511,
@@ -64572,7 +64728,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 38
+    "cl": 38,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 99,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15512,
@@ -64604,7 +64764,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 37,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15513,
@@ -64636,7 +64800,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 5200,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.1,
+    "rgb": false,
+    "value": 12,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15514,
@@ -64669,7 +64837,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 48,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15515,
@@ -64696,7 +64868,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "16GB",
     "speed": 3200,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 59,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15516,
@@ -64734,7 +64910,11 @@ export const PARTS = [
     "cap": "1x32GB",
     "speed": 5600,
     "sticks": 1,
-    "cl": 48
+    "cl": 48,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 100,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15517,
@@ -64766,7 +64946,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 5600,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 51,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15518,
@@ -64798,7 +64982,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 15,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15519,
@@ -64830,7 +65018,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 54,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15520,
@@ -64862,7 +65054,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 99,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15521,
@@ -64899,7 +65095,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 94,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15522,
@@ -64930,7 +65130,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "32GB",
     "speed": 4800,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.1,
+    "rgb": false,
+    "value": 72,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15523,
@@ -64961,7 +65165,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "16GB",
     "speed": 3200,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 35,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15524,
@@ -64991,7 +65199,11 @@ export const PARTS = [
     "weight": "18.8 Grams",
     "memType": "DDR5",
     "cap": "96GB",
-    "speed": 5600
+    "speed": 5600,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 100,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15525,
@@ -65022,7 +65234,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 38,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15526,
@@ -65054,7 +65270,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 96,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15527,
@@ -65090,7 +65310,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "2x32GB",
     "speed": 5600,
-    "sticks": 2
+    "sticks": 2,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 78,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15528,
@@ -65120,7 +65344,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "16GB",
     "speed": 3200,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 78,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15529,
@@ -65153,7 +65381,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 58,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15530,
@@ -65186,7 +65418,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 52,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15531,
@@ -65217,7 +65453,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "16GB",
     "speed": 3200,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 33,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15532,
@@ -65248,7 +65488,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.4,
+    "rgb": true,
+    "value": 51,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15533,
@@ -65279,7 +65523,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "2x8GB",
     "speed": 5600,
-    "sticks": 2
+    "sticks": 2,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 23,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15534,
@@ -65310,7 +65558,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 45,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15535,
@@ -65342,7 +65594,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 38
+    "cl": 38,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 85,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15536,
@@ -65373,7 +65629,11 @@ export const PARTS = [
     "cap": "1x16GB",
     "speed": 6000,
     "sticks": 1,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 48,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15537,
@@ -65406,7 +65666,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 66,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15538,
@@ -65436,7 +65700,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 21,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15539,
@@ -65464,7 +65732,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "16GB",
     "speed": 3200,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 44,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15540,
@@ -65496,7 +65768,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 44,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15541,
@@ -65526,7 +65802,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 79,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15542,
@@ -65550,7 +65830,11 @@ export const PARTS = [
     "upc": "036725543034",
     "memType": "DDR4",
     "cap": "16GB",
-    "speed": 3200
+    "speed": 3200,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 58,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15543,
@@ -65587,7 +65871,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 38
+    "cl": 38,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 85,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15544,
@@ -65613,7 +65901,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 57,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15545,
@@ -65645,7 +65937,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15546,
@@ -65676,7 +65972,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "16GB",
     "speed": 3200,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 40,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15547,
@@ -65702,7 +66002,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "16GB",
     "speed": 3200,
-    "cl": 20
+    "cl": 20,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 33,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15548,
@@ -65734,7 +66038,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 27,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15549,
@@ -65765,7 +66073,12 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "2x16GB",
     "sticks": 2,
-    "cl": 17
+    "cl": 17,
+    "speed": 2400,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 39,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15550,
@@ -65797,7 +66110,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 21,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15551,
@@ -65834,7 +66151,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 37,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15552,
@@ -65867,7 +66188,11 @@ export const PARTS = [
     "cap": "2x48GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.4,
+    "rgb": true,
+    "value": 53,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15553,
@@ -65898,7 +66223,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 21,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15554,
@@ -65936,7 +66265,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 78,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15555,
@@ -65968,7 +66301,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 31,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15556,
@@ -66005,7 +66342,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 5200,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.25,
+    "rgb": false,
+    "value": 77,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15557,
@@ -66042,7 +66383,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 26,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15558,
@@ -66073,7 +66418,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 85,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15559,
@@ -66105,7 +66454,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 4800,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.1,
+    "rgb": false,
+    "value": 27,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15560,
@@ -66138,7 +66491,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.4,
+    "rgb": true,
+    "value": 55,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15561,
@@ -66170,7 +66527,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 27,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15562,
@@ -66202,7 +66563,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 69,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15563,
@@ -66233,7 +66598,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "32GB",
     "speed": 3600,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15564,
@@ -66262,7 +66631,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 21,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15565,
@@ -66295,7 +66668,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 5600,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 29,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15566,
@@ -66326,7 +66703,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 34,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15567,
@@ -66358,7 +66739,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 79,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15568,
@@ -66390,7 +66775,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 31,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15569,
@@ -66422,7 +66811,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15570,
@@ -66455,7 +66848,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 45,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15571,
@@ -66487,7 +66884,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.4,
+    "rgb": true,
+    "value": 35,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15572,
@@ -66518,7 +66919,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 38
+    "cl": 38,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 54,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15573,
@@ -66551,7 +66956,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 69,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15574,
@@ -66583,7 +66992,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 9,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15575,
@@ -66615,7 +67028,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 5200,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.1,
+    "rgb": false,
+    "value": 27,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15576,
@@ -66646,7 +67063,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "2x16GB",
     "speed": 6000,
-    "sticks": 2
+    "sticks": 2,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 56,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15577,
@@ -66678,7 +67099,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 74,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15578,
@@ -66710,7 +67135,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 17,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15579,
@@ -66742,7 +67171,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 43,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15580,
@@ -66773,7 +67206,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 74,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15581,
@@ -66802,7 +67239,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 4000,
     "sticks": 2,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.4,
+    "rgb": true,
+    "value": 48,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15582,
@@ -66834,7 +67275,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 20
+    "cl": 20,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 41,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15583,
@@ -66865,7 +67310,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 38
+    "cl": 38,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 41,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15584,
@@ -66897,7 +67346,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 64,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15585,
@@ -66928,7 +67381,12 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "16GB",
     "speed": 5200,
-    "cl": 40
+    "cl": 40,
+    "sticks": 2,
+    "voltage": 1.1,
+    "rgb": true,
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15586,
@@ -66959,7 +67417,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "8GB",
     "speed": 3200,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15587,
@@ -66990,7 +67452,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 5600,
     "sticks": 2,
-    "cl": 46
+    "cl": 46,
+    "voltage": 1.1,
+    "rgb": false,
+    "value": 0,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15588,
@@ -67022,7 +67488,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 5600,
     "sticks": 2,
-    "cl": 48
+    "cl": 48,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 60,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15589,
@@ -67052,7 +67522,11 @@ export const PARTS = [
     "weight": "0.5 Kilograms",
     "memType": "DDR4",
     "cap": "32GB",
-    "speed": 3200
+    "speed": 3200,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15590,
@@ -67085,7 +67559,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 33,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15591,
@@ -67117,7 +67595,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 38
+    "cl": 38,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 52,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15592,
@@ -67149,7 +67631,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 20
+    "cl": 20,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 60,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15593,
@@ -67179,7 +67665,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 21,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15594,
@@ -67211,7 +67701,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 67,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15595,
@@ -67241,7 +67735,11 @@ export const PARTS = [
     "cap": "2x48GB",
     "speed": 5600,
     "sticks": 2,
-    "cl": 46
+    "cl": 46,
+    "voltage": 1.1,
+    "rgb": false,
+    "value": 100,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15596,
@@ -67272,7 +67770,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 50,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15597,
@@ -67302,7 +67804,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 39,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15598,
@@ -67333,7 +67839,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "16GB",
     "speed": 5600,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 47,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15599,
@@ -67365,7 +67875,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 52,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15600,
@@ -67395,7 +67909,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 69,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15601,
@@ -67427,7 +67945,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 5200,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.25,
+    "rgb": true,
+    "value": 30,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15602,
@@ -67460,7 +67982,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.4,
+    "rgb": true,
+    "value": 36,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15603,
@@ -67490,7 +68016,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 41,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15604,
@@ -67520,7 +68050,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 67,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15605,
@@ -67550,7 +68084,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 63,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15606,
@@ -67580,7 +68118,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 49,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15607,
@@ -67612,7 +68154,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 5600,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.25,
+    "rgb": false,
+    "value": 74,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15608,
@@ -67644,7 +68190,11 @@ export const PARTS = [
     "cap": "4x32GB",
     "speed": 3600,
     "sticks": 4,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 57,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15609,
@@ -67674,7 +68224,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 53,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15610,
@@ -67704,7 +68258,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 39,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15611,
@@ -67736,7 +68294,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 5600,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 34,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15612,
@@ -67766,7 +68328,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "2x16GB",
     "speed": 7200,
-    "sticks": 2
+    "sticks": 2,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 23,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15613,
@@ -67797,7 +68363,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 93,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15614,
@@ -67828,7 +68398,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 65,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15615,
@@ -67861,7 +68435,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.4,
+    "rgb": true,
+    "value": 25,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15616,
@@ -67894,7 +68472,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.4,
+    "rgb": true,
+    "value": 49,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15617,
@@ -67927,7 +68509,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 38
+    "cl": 38,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 40,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15618,
@@ -67955,7 +68541,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "2x8GB",
     "speed": 3200,
-    "sticks": 2
+    "sticks": 2,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 37,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15619,
@@ -67986,7 +68576,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 61,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15620,
@@ -68018,7 +68612,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15621,
@@ -68050,7 +68648,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.4,
+    "rgb": true,
+    "value": 65,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15622,
@@ -68082,7 +68684,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 5200,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.1,
+    "rgb": false,
+    "value": 8,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15623,
@@ -68113,7 +68719,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "32GB",
     "speed": 6000,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 48,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15624,
@@ -68144,7 +68754,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.4,
+    "rgb": true,
+    "value": 89,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15625,
@@ -68181,7 +68795,11 @@ export const PARTS = [
     "cap": "2x48GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 100,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15626,
@@ -68212,7 +68830,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 7200,
     "sticks": 2,
-    "cl": 34
+    "cl": 34,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 57,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15627,
@@ -68243,7 +68865,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 46,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15628,
@@ -68274,7 +68900,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 32,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15629,
@@ -68305,7 +68935,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "16GB",
     "speed": 5600,
-    "cl": 46
+    "cl": 46,
+    "voltage": 1.1,
+    "rgb": false,
+    "value": 3,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15630,
@@ -68336,7 +68970,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 30,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15631,
@@ -68368,7 +69006,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.4,
+    "rgb": true,
+    "value": 11,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15632,
@@ -68399,7 +69041,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "16GB",
     "speed": 6000,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 41,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15633,
@@ -68430,7 +69076,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "32GB",
     "speed": 5600,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 10,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15634,
@@ -68454,7 +69104,11 @@ export const PARTS = [
     "mpn": "Mta16Atf2G64",
     "memType": "DDR4",
     "cap": "16GB",
-    "speed": 3200
+    "speed": 3200,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 60,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15635,
@@ -68485,7 +69139,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 3200,
     "sticks": 2,
-    "cl": 16
+    "cl": 16,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 99,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15636,
@@ -68517,7 +69175,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 5600,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 47,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15637,
@@ -68548,7 +69210,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 7200,
     "sticks": 2,
-    "cl": 34
+    "cl": 34,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 57,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15638,
@@ -68579,7 +69245,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "32GB",
     "speed": 6000,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 41,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15639,
@@ -68604,7 +69274,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 79,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15640,
@@ -68634,7 +69308,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 7200,
     "sticks": 2,
-    "cl": 34
+    "cl": 34,
+    "voltage": 1.4,
+    "rgb": true,
+    "value": 60,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15641,
@@ -68663,7 +69341,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 4800,
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.1,
+    "rgb": false,
+    "value": 92,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15642,
@@ -68694,7 +69376,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 76,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15643,
@@ -68724,7 +69410,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 56,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15644,
@@ -68755,7 +69445,11 @@ export const PARTS = [
     "cap": "2x48GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 99,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15645,
@@ -68785,7 +69479,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 48,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15646,
@@ -68817,7 +69515,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 100,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15647,
@@ -68847,7 +69549,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "2x16GB",
     "speed": 6000,
-    "sticks": 2
+    "sticks": 2,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 85,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15648,
@@ -68874,7 +69580,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 19
+    "cl": 19,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 12,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15649,
@@ -68906,7 +69616,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 99,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15650,
@@ -68937,7 +69651,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "64GB",
     "speed": 6000,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 48,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15651,
@@ -68968,7 +69686,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "64GB",
     "speed": 6400,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 62,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15652,
@@ -68999,7 +69721,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "32GB",
     "speed": 6000,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 79,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15653,
@@ -69030,7 +69756,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "16GB",
     "speed": 3200,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 78,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15654,
@@ -69060,7 +69790,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 42,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15655,
@@ -69090,7 +69824,11 @@ export const PARTS = [
     "cap": "4x8GB",
     "speed": 3600,
     "sticks": 4,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15656,
@@ -69121,7 +69859,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "8GB",
     "speed": 5600,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15657,
@@ -69150,7 +69892,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "32GB",
     "speed": 6000,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 96,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15658,
@@ -69183,7 +69929,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 68,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15659,
@@ -69213,7 +69963,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "32GB",
     "speed": 6000,
-    "cl": 30
+    "cl": 30,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 56,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15660,
@@ -69244,7 +69998,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "16GB",
     "speed": 6000,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 57,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15661,
@@ -69276,7 +70034,11 @@ export const PARTS = [
     "cap": "2x32GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 38
+    "cl": 38,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 52,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15662,
@@ -69308,7 +70070,11 @@ export const PARTS = [
     "cap": "2x8GB",
     "speed": 5600,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 26,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15663,
@@ -69340,7 +70106,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "48GB",
     "speed": 6000,
-    "cl": 28
+    "cl": 28,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 96,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15664,
@@ -69370,7 +70140,12 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "2x24GB",
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "speed": 8000,
+    "voltage": 1.4,
+    "rgb": true,
+    "value": 100,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15665,
@@ -69400,7 +70175,12 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "2x24GB",
     "sticks": 2,
-    "cl": 40
+    "cl": 40,
+    "speed": 8200,
+    "voltage": 1.4,
+    "rgb": true,
+    "value": 100,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15666,
@@ -69430,7 +70210,11 @@ export const PARTS = [
     "cap": "2x48GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 28
+    "cl": 28,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 85,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15667,
@@ -69455,7 +70239,11 @@ export const PARTS = [
     "weight": "34 Grams",
     "memType": "DDR5",
     "cap": "16GB",
-    "speed": 5600
+    "speed": 5600,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15668,
@@ -69485,7 +70273,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "16GB",
     "speed": 5600,
-    "cl": 46
+    "cl": 46,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 60,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15669,
@@ -69515,7 +70307,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 7200,
     "sticks": 2,
-    "cl": 34
+    "cl": 34,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 78,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15670,
@@ -69545,7 +70341,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "32GB",
     "speed": 3200,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 78,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15671,
@@ -69577,7 +70377,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 32
+    "cl": 32,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 39,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15672,
@@ -69609,7 +70413,11 @@ export const PARTS = [
     "cap": "4x16GB",
     "speed": 6000,
     "sticks": 4,
-    "cl": 40
+    "cl": 40,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 9,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15673,
@@ -69636,7 +70444,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6000,
     "sticks": 2,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 68,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15674,
@@ -69667,7 +70479,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "64GB",
     "speed": 5600,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 16,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15675,
@@ -69697,7 +70513,11 @@ export const PARTS = [
     "cap": "2x48GB",
     "speed": 5600,
     "sticks": 2,
-    "cl": 46
+    "cl": 46,
+    "voltage": 1.1,
+    "rgb": false,
+    "value": 89,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15676,
@@ -69722,7 +70542,11 @@ export const PARTS = [
     "memType": "DDR4",
     "cap": "16GB",
     "speed": 3200,
-    "cl": 22
+    "cl": 22,
+    "voltage": 1.2,
+    "rgb": false,
+    "value": 59,
+    "formFactor": "SODIMM"
   },
   {
     "id": 15677,
@@ -69753,7 +70577,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 6400,
     "sticks": 2,
-    "cl": 38
+    "cl": 38,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 14,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15678,
@@ -69784,7 +70612,11 @@ export const PARTS = [
     "memType": "DDR5",
     "cap": "32GB",
     "speed": 5600,
-    "cl": 36
+    "cl": 36,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 11,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15679,
@@ -69814,7 +70646,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 7200,
     "sticks": 2,
-    "cl": 34
+    "cl": 34,
+    "voltage": 1.4,
+    "rgb": false,
+    "value": 60,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15680,
@@ -69844,7 +70680,11 @@ export const PARTS = [
     "weight": "34 Grams",
     "memType": "DDR5",
     "cap": "32GB",
-    "speed": 5600
+    "speed": 5600,
+    "voltage": 1.35,
+    "rgb": false,
+    "value": 13,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15681,
@@ -69874,7 +70714,11 @@ export const PARTS = [
     "cap": "2x16GB",
     "speed": 3600,
     "sticks": 2,
-    "cl": 18
+    "cl": 18,
+    "voltage": 1.35,
+    "rgb": true,
+    "value": 73,
+    "formFactor": "UDIMM"
   },
   {
     "id": 15682,
@@ -105289,7 +106133,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.35,
-    "value": 1
+    "value": 1,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16815,
@@ -105318,7 +106163,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.2,
-    "value": 4
+    "value": 4,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16816,
@@ -105347,7 +106193,8 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "voltage": 1.35,
-    "value": 1
+    "value": 1,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16817,
@@ -105376,7 +106223,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.35,
-    "value": 4
+    "value": 4,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16818,
@@ -105405,7 +106253,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.2,
-    "value": 0
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16819,
@@ -105434,7 +106283,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.1,
-    "value": 3
+    "value": 3,
+    "formFactor": "SODIMM"
   },
   {
     "id": 16820,
@@ -105463,7 +106313,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.1,
-    "value": 1
+    "value": 1,
+    "formFactor": "SODIMM"
   },
   {
     "id": 16821,
@@ -105492,7 +106343,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.4,
-    "value": 1
+    "value": 1,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16822,
@@ -105521,7 +106373,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.2,
-    "value": 8
+    "value": 8,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16823,
@@ -105550,7 +106403,8 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "voltage": 1.45,
-    "value": 6
+    "value": 6,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16824,
@@ -105579,7 +106433,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.1,
-    "value": 11
+    "value": 11,
+    "formFactor": "SODIMM"
   },
   {
     "id": 16825,
@@ -105608,7 +106463,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.4,
-    "value": 6
+    "value": 6,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16826,
@@ -105637,7 +106493,8 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "voltage": 1.35,
-    "value": 8
+    "value": 8,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16827,
@@ -105666,7 +106523,8 @@ export const PARTS = [
     "rgb": true,
     "color": "Gray",
     "voltage": 1.4,
-    "value": 4
+    "value": 4,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16828,
@@ -105695,7 +106553,8 @@ export const PARTS = [
     "rgb": true,
     "color": "Gray",
     "voltage": 1.4,
-    "value": 0
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16829,
@@ -105724,7 +106583,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.1,
-    "value": 10
+    "value": 10,
+    "formFactor": "SODIMM"
   },
   {
     "id": 16830,
@@ -105753,7 +106613,8 @@ export const PARTS = [
     "rgb": true,
     "color": "Gray",
     "voltage": 1.4,
-    "value": 1
+    "value": 1,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16831,
@@ -105782,7 +106643,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Gray",
     "voltage": 1.4,
-    "value": 1
+    "value": 1,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16832,
@@ -105811,7 +106673,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.35,
-    "value": 10
+    "value": 10,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16833,
@@ -105840,7 +106703,8 @@ export const PARTS = [
     "rgb": true,
     "color": "Gray",
     "voltage": 1.35,
-    "value": 4
+    "value": 4,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16834,
@@ -105869,7 +106733,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Gray",
     "voltage": 1.35,
-    "value": 5
+    "value": 5,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16835,
@@ -105898,7 +106763,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.4,
-    "value": 1
+    "value": 1,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16836,
@@ -105927,7 +106793,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.1,
-    "value": 11
+    "value": 11,
+    "formFactor": "SODIMM"
   },
   {
     "id": 16837,
@@ -105956,7 +106823,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.1,
-    "value": 10
+    "value": 10,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16838,
@@ -105985,7 +106853,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.35,
-    "value": 12
+    "value": 12,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16839,
@@ -106014,7 +106883,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.35,
-    "value": 11
+    "value": 11,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16840,
@@ -106043,7 +106913,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.1,
-    "value": 6
+    "value": 6,
+    "formFactor": "SODIMM"
   },
   {
     "id": 16841,
@@ -106072,7 +106943,8 @@ export const PARTS = [
     "rgb": true,
     "color": "Gray",
     "voltage": 1.4,
-    "value": 5
+    "value": 5,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16842,
@@ -106101,7 +106973,8 @@ export const PARTS = [
     "rgb": true,
     "color": "Gray",
     "voltage": 1.35,
-    "value": 13
+    "value": 13,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16843,
@@ -106130,7 +107003,8 @@ export const PARTS = [
     "rgb": true,
     "color": "Gray",
     "voltage": 1.4,
-    "value": 0
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16844,
@@ -106159,7 +107033,8 @@ export const PARTS = [
     "rgb": true,
     "color": "White",
     "voltage": 1.4,
-    "value": 0
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16845,
@@ -106188,7 +107063,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Gray",
     "voltage": 1.35,
-    "value": 9
+    "value": 9,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16846,
@@ -106217,7 +107093,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.35,
-    "value": 9
+    "value": 9,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16847,
@@ -106246,7 +107123,8 @@ export const PARTS = [
     "rgb": true,
     "color": "Gray",
     "voltage": 1.25,
-    "value": 0
+    "value": 0,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16848,
@@ -106275,7 +107153,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "voltage": 1.1,
-    "value": 0
+    "value": 0,
+    "formFactor": "SODIMM"
   },
   {
     "id": 16849,
@@ -106304,7 +107183,8 @@ export const PARTS = [
     "rgb": false,
     "color": "Gray",
     "voltage": 1.35,
-    "value": 3
+    "value": 3,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16850,
@@ -106333,7 +107213,8 @@ export const PARTS = [
     "rgb": true,
     "color": "Gray",
     "voltage": 1.35,
-    "value": 3
+    "value": 3,
+    "formFactor": "UDIMM"
   },
   {
     "id": 16851,
