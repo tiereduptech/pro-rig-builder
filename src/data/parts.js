@@ -6087,7 +6087,6 @@ export const PARTS = [
     "pr": 69,
     "msrp": 79,
     "r": 4.3,
-    "driveType": "Blu-ray Writer",
     "iface": "SATA",
     "deals": {
       "amazon": {
@@ -6095,7 +6094,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09GLM1L9C?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "storageType": "Blu-ray Writer"
   },
   {
     "id": 11101,
@@ -6106,7 +6106,6 @@ export const PARTS = [
     "pr": 19,
     "msrp": 24,
     "r": 4.2,
-    "driveType": "DVD Writer",
     "iface": "SATA",
     "deals": {
       "amazon": {
@@ -6114,7 +6113,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0033Z2BAQ?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "storageType": "DVD Writer"
   },
   {
     "id": 12001,
@@ -6943,14 +6943,14 @@ export const PARTS = [
     "capacity": 2000,
     "interface": "USB-C 3.2",
     "speed": 1050,
-    "formFactor": "Portable SSD",
     "deals": {
       "amazon": {
         "price": 129,
         "url": "https://www.amazon.com/dp/B0F4D3MFGQ?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "ff": "Portable SSD"
   },
   {
     "id": 14011,
@@ -6964,14 +6964,14 @@ export const PARTS = [
     "capacity": 5000,
     "interface": "USB 3.0",
     "speed": 120,
-    "formFactor": "Portable HDD",
     "deals": {
       "amazon": {
         "price": 158,
         "url": "https://www.amazon.com/dp/B07VP5X239?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "ff": "Portable HDD"
   },
   {
     "id": 14020,
@@ -7026,7 +7026,6 @@ export const PARTS = [
     "pr": 24,
     "msrp": 29,
     "r": 4.3,
-    "driveType": "DVD Writer",
     "interface": "USB 2.0",
     "deals": {
       "amazon": {
@@ -7034,7 +7033,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DP2LV27P?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "storageType": "DVD Writer"
   },
   {
     "id": 14040,
@@ -7049,14 +7049,14 @@ export const PARTS = [
     "watts": 1000,
     "runtime": "12min @ half load",
     "outlets": 12,
-    "formFactor": "Tower",
     "deals": {
       "amazon": {
         "price": 360,
         "url": "https://www.amazon.com/dp/B0B354X985?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "ff": "Tower"
   },
   {
     "id": 14041,
@@ -7071,14 +7071,14 @@ export const PARTS = [
     "watts": 900,
     "runtime": "10min @ half load",
     "outlets": 6,
-    "formFactor": "Tower",
     "deals": {
       "amazon": {
         "price": 240,
         "url": "https://www.amazon.com/dp/B00429N19W?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "ff": "Tower"
   },
   {
     "id": 14042,
@@ -7093,14 +7093,14 @@ export const PARTS = [
     "watts": 330,
     "runtime": "8min @ half load",
     "outlets": 7,
-    "formFactor": "Compact",
     "deals": {
       "amazon": {
         "price": 64,
         "url": "https://www.amazon.com/dp/B00429N19W?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "ff": "Compact"
   },
   {
     "id": 7000,
@@ -9382,7 +9382,7 @@ export const PARTS = [
     "m2Slots": 1,
     "sata": 2,
     "pcie": "4.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "1GbE",
     "usb_c": false,
     "audio": "Realtek ALC897",
@@ -9413,7 +9413,7 @@ export const PARTS = [
     "m2Slots": 1,
     "sata": 2,
     "pcie": "4.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "1GbE",
     "usb_c": false,
     "audio": "Realtek ALC897",
@@ -9475,7 +9475,7 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 6,
     "pcie": "4.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "2.5GbE",
     "usb_c": true,
     "audio": "Realtek ALC1200",
@@ -9506,7 +9506,7 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 6,
     "pcie": "4.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "2.5GbE",
     "usb_c": true,
     "audio": "Realtek ALC1220",
@@ -9537,7 +9537,7 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 6,
     "pcie": "4.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "1GbE",
     "usb_c": false,
     "audio": "Realtek ALC897",
@@ -9568,7 +9568,7 @@ export const PARTS = [
     "m2Slots": 1,
     "sata": 6,
     "pcie": "3.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "1GbE",
     "usb_c": false,
     "audio": "Realtek ALC892",
@@ -9909,7 +9909,7 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 4,
     "pcie": "4.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "1GbE",
     "usb_c": false,
     "audio": "Realtek ALC897",
@@ -9940,7 +9940,7 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 4,
     "pcie": "4.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "1GbE",
     "usb_c": false,
     "audio": "Realtek ALC897",
@@ -9971,7 +9971,7 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 8,
     "pcie": "5.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "2x 1GbE",
     "usb_c": false,
     "audio": null,
@@ -10002,7 +10002,7 @@ export const PARTS = [
     "m2Slots": 4,
     "sata": 8,
     "pcie": "5.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "2x 10GbE",
     "usb_c": true,
     "audio": null,
@@ -10033,7 +10033,7 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 8,
     "pcie": "4.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "2x 10GbE",
     "usb_c": false,
     "audio": null,
@@ -10064,7 +10064,7 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 10,
     "pcie": "3.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "2x 1GbE",
     "usb_c": true,
     "audio": null,
@@ -14176,7 +14176,7 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 4,
     "pcie": "4.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "1GbE",
     "usb_c": false,
     "audio": "Realtek ALC897",
@@ -14455,7 +14455,7 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 4,
     "pcie": "4.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "2.5GbE",
     "usb_c": true,
     "audio": "Realtek ALC897",
@@ -14486,7 +14486,7 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 4,
     "pcie": "4.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "1GbE",
     "usb_c": false,
     "audio": "Realtek ALC897",
@@ -14548,7 +14548,7 @@ export const PARTS = [
     "m2Slots": 1,
     "sata": 4,
     "pcie": "4.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "1GbE",
     "usb_c": false,
     "audio": "Realtek ALC887",
@@ -14579,7 +14579,7 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 6,
     "pcie": "4.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "1GbE",
     "usb_c": false,
     "audio": "Realtek ALC897",
@@ -14610,7 +14610,7 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 6,
     "pcie": "4.0",
-    "wifi": null,
+    "wifi": "None",
     "lan": "2.5GbE",
     "usb_c": true,
     "audio": "Realtek ALC1200",
@@ -15986,9 +15986,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61RqTxSRmnL._AC_SL1500_.jpg"
     ],
     "mpn": "CP-CASE-DR-EC2-BK",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14044,
@@ -16015,9 +16015,9 @@ export const PARTS = [
     ],
     "mpn": "XR-B",
     "weight": "14.46 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14045,
@@ -16046,7 +16046,7 @@ export const PARTS = [
     "upc": "884102095313884102038006",
     "mpn": "Q300L",
     "weight": "480 Grams",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14046,
@@ -16074,9 +16074,9 @@ export const PARTS = [
     "upc": "840353046634",
     "mpn": "O11 Vision Compact White",
     "weight": "26.4 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14047,
@@ -16103,9 +16103,9 @@ export const PARTS = [
     ],
     "mpn": "Y6",
     "weight": "7.68 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14048,
@@ -16133,8 +16133,8 @@ export const PARTS = [
     "upc": "840353046597",
     "mpn": "LAN217X",
     "weight": "10.5 Kilograms",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14049,
@@ -16161,9 +16161,9 @@ export const PARTS = [
     ],
     "mpn": "NN8",
     "weight": "5.7 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14050,
@@ -16191,9 +16191,9 @@ export const PARTS = [
     ],
     "mpn": "K2",
     "weight": "8 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14051,
@@ -16220,8 +16220,8 @@ export const PARTS = [
     ],
     "upc": "840353052642",
     "mpn": "V100 Mini",
-    "formFactor": "mATX",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14052,
@@ -16250,8 +16250,8 @@ export const PARTS = [
     "upc": "840353050617",
     "mpn": "O11DMIV2FX",
     "weight": "12.46 Kilograms",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14053,
@@ -16285,8 +16285,8 @@ export const PARTS = [
     "upc": "843276104702",
     "mpn": "North Charcoal Black",
     "weight": "9.5 Kilograms",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14054,
@@ -16314,8 +16314,8 @@ export const PARTS = [
     ],
     "upc": "840353050594",
     "mpn": "O11DMIV2X",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14055,
@@ -16377,9 +16377,9 @@ export const PARTS = [
     ],
     "mpn": "Y6",
     "weight": "17.77 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14057,
@@ -16407,8 +16407,8 @@ export const PARTS = [
     "upc": "350584834813798813001504809185333428841163054246809385182369012304358152863121544286806293514329803982760661513560266910807034591845898029635965846764214570",
     "mpn": "Versa H21",
     "weight": "9.3 Pounds",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14058,
@@ -16436,7 +16436,7 @@ export const PARTS = [
     "upc": "843276106096",
     "mpn": "Ridge",
     "weight": "5.5 Kilograms",
-    "formFactor": "ITX"
+    "ff": "ITX"
   },
   {
     "id": 14059,
@@ -16464,8 +16464,8 @@ export const PARTS = [
     "upc": "761345101486",
     "mpn": "FLUX PRO",
     "weight": "29 Pounds",
-    "formFactor": "E-ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 14060,
@@ -16493,9 +16493,9 @@ export const PARTS = [
     ],
     "mpn": "K2",
     "weight": "15 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14061,
@@ -16521,8 +16521,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/91x7U8iEMqL._AC_SL1500_.jpg"
     ],
     "mpn": "F600",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14062,
@@ -16550,7 +16550,7 @@ export const PARTS = [
     "upc": "850059070284",
     "mpn": "Classico MAX",
     "weight": "8.96 Kilograms",
-    "formFactor": "E-ATX"
+    "ff": "E-ATX"
   },
   {
     "id": 14063,
@@ -16578,8 +16578,8 @@ export const PARTS = [
     "upc": "840353045071",
     "mpn": "O11D EVO RGB",
     "weight": "32.63 Pounds",
-    "formFactor": "E-ATX",
-    "tg": true
+    "tg": true,
+    "ff": "E-ATX"
   },
   {
     "id": 14064,
@@ -16605,9 +16605,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81ZcBlYQX7L._AC_SL1500_.jpg"
     ],
     "mpn": "621",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14065,
@@ -16635,8 +16635,8 @@ export const PARTS = [
     "upc": "840353046573",
     "mpn": "Lancool 207 Black",
     "weight": "19.95 Pounds",
-    "formFactor": "ATX",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14066,
@@ -16669,8 +16669,8 @@ export const PARTS = [
     "upc": "841163095348",
     "mpn": "View 170 TG ARGB",
     "weight": "10.25 Pounds",
-    "formFactor": "mATX",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14067,
@@ -16704,9 +16704,9 @@ export const PARTS = [
     "upc": "810074847858",
     "mpn": "NZXT H9",
     "weight": "12.5 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14068,
@@ -16740,7 +16740,7 @@ export const PARTS = [
     "upc": "810074848046",
     "mpn": "NZXT H3",
     "weight": "4800 Grams",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14069,
@@ -16768,7 +16768,7 @@ export const PARTS = [
     "upc": "840353046429",
     "mpn": "A3X.US",
     "weight": "11.02 Pounds",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14070,
@@ -16834,7 +16834,7 @@ export const PARTS = [
     "upc": "810074848404",
     "mpn": "NZXT H2",
     "weight": "4.55 Kilograms",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14072,
@@ -16867,8 +16867,8 @@ export const PARTS = [
     "upc": "840006636427",
     "mpn": "7000D AIRFLOW",
     "weight": "41.23 Pounds",
-    "formFactor": "ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "ATX"
   },
   {
     "id": 14073,
@@ -16930,9 +16930,9 @@ export const PARTS = [
     "upc": "840353045057",
     "mpn": "O11 Vision Black",
     "weight": "25.57 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14075,
@@ -16993,9 +16993,9 @@ export const PARTS = [
     ],
     "mpn": "X3 Mesh Black",
     "weight": "5420 Grams",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14077,
@@ -17023,8 +17023,8 @@ export const PARTS = [
     "upc": "823884209099",
     "mpn": "T6",
     "weight": "8 Pounds",
-    "formFactor": "mATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "mATX"
   },
   {
     "id": 14078,
@@ -17052,9 +17052,9 @@ export const PARTS = [
     ],
     "mpn": "Y6",
     "weight": "14.64 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14079,
@@ -17082,9 +17082,9 @@ export const PARTS = [
     "upc": "848475010175",
     "mpn": "AURA GC1 ELITE WH",
     "weight": "4900 Grams",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14080,
@@ -17113,36 +17113,8 @@ export const PARTS = [
     "upc": "884102021862745734218344112840362542",
     "mpn": "Cooler Master NSE-200-KKN1 Cooler Master USA N200 - Mini Tower Computer Cas",
     "weight": "9.5 Pounds",
-    "formFactor": "mATX",
-    "tower": "Mini"
-  },
-  {
-    "id": 14081,
-    "n": "Vertical GPU Card Holder Kit V3 White , PCIe 4.0 5.0 Motherboards GPUs RTX 5090 RX 9070 XT, ABS Casing",
-    "img": "https://m.media-amazon.com/images/I/613q2PacnBL._SL1500_.jpg",
-    "c": "Case",
-    "b": "Cooler Master",
-    "pr": 49.99,
-    "msrp": 49.99,
-    "r": 4.5,
-    "asin": "B0BRBX5LD9",
-    "reviews": 712,
-    "deals": {
-      "amazon": {
-        "price": 49.99,
-        "url": "https://www.amazon.com/dp/B0BRBX5LD9?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71uPINr5tML._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71R0P0MDuhL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71QFA+4en7L._SL1500_.jpg"
-    ],
-    "upc": "884102106507",
-    "mpn": "Vertical GPU Card Holder Kit V3 White",
-    "weight": "810 Grams",
-    "formFactor": "mATX"
+    "tower": "Mini",
+    "ff": "mATX"
   },
   {
     "id": 14082,
@@ -17169,9 +17141,9 @@ export const PARTS = [
     ],
     "upc": "848475007298",
     "mpn": "TALOS E3 MESH WH",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14083,
@@ -17198,8 +17170,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/91UcPRKckaL._AC_SL1500_.jpg"
     ],
     "mpn": "F300",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14084,
@@ -17225,8 +17197,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61rvgsF0irL._AC_SL1500_.jpg"
     ],
     "mpn": "Z20",
-    "formFactor": "mATX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "ff": "mATX"
   },
   {
     "id": 14085,
@@ -17254,7 +17226,7 @@ export const PARTS = [
     "upc": "197105675377195553771801",
     "mpn": "AP201",
     "weight": "12.7 Pounds",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14086,
@@ -17281,9 +17253,9 @@ export const PARTS = [
     ],
     "mpn": "AIR 903 MAX BLACK",
     "weight": "9.14 Kilograms",
-    "formFactor": "E-ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "E-ATX"
   },
   {
     "id": 14087,
@@ -17316,9 +17288,9 @@ export const PARTS = [
     "upc": "841163094198",
     "mpn": "View 270 Plus TG ARGB Black",
     "weight": "14 Pounds",
-    "formFactor": "E-ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "E-ATX"
   },
   {
     "id": 14088,
@@ -17346,8 +17318,8 @@ export const PARTS = [
     ],
     "mpn": "Aqua 3",
     "weight": "4.17 Kilograms",
-    "formFactor": "mATX",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14089,
@@ -17375,9 +17347,9 @@ export const PARTS = [
     "upc": "843276102562",
     "mpn": "Meshify 2 XL",
     "weight": "14.1 Kilograms",
-    "formFactor": "ATX",
     "tower": "Full",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14090,
@@ -17439,7 +17411,7 @@ export const PARTS = [
     ],
     "mpn": "Cypress 3 Wood",
     "weight": "4.3 Kilograms",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14092,
@@ -17473,9 +17445,9 @@ export const PARTS = [
     "upc": "810074847889",
     "mpn": "NZXT H9",
     "weight": "13400 Grams",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14093,
@@ -17502,8 +17474,8 @@ export const PARTS = [
     ],
     "mpn": "V3",
     "weight": "4.88 Kilograms",
-    "formFactor": "mATX",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14094,
@@ -17531,8 +17503,8 @@ export const PARTS = [
     "upc": "840353044685",
     "mpn": "O11DEXL-X_US",
     "weight": "43 Pounds",
-    "formFactor": "E-ATX",
-    "tg": true
+    "tg": true,
+    "ff": "E-ATX"
   },
   {
     "id": 14095,
@@ -17559,7 +17531,7 @@ export const PARTS = [
     ],
     "mpn": "D32",
     "weight": "5.44 Kilograms",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14096,
@@ -17593,8 +17565,8 @@ export const PARTS = [
     "upc": "841163095300",
     "mpn": "View 380 Black",
     "weight": "15.28 Pounds",
-    "formFactor": "ATX",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14097,
@@ -17620,8 +17592,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61Tiqf8NLrL._AC_SL1200_.jpg"
     ],
     "mpn": "OV303",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14098,
@@ -17655,9 +17627,9 @@ export const PARTS = [
     "upc": "810074847872",
     "mpn": "NZXT H9",
     "weight": "12600 Grams",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14099,
@@ -17800,9 +17772,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81pZ6ePvu4L._AC_SL1500_.jpg"
     ],
     "mpn": "P4",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14104,
@@ -17829,9 +17801,9 @@ export const PARTS = [
     ],
     "upc": "840353048621",
     "mpn": "V100X",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14105,
@@ -17859,9 +17831,9 @@ export const PARTS = [
     "upc": "884102134340",
     "mpn": "QUBE 540",
     "weight": "17.9 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14106,
@@ -17889,7 +17861,7 @@ export const PARTS = [
     ],
     "mpn": "North XL Momentum",
     "weight": "26.2 Pounds",
-    "formFactor": "E-ATX"
+    "ff": "E-ATX"
   },
   {
     "id": 14107,
@@ -17918,9 +17890,9 @@ export const PARTS = [
     "upc": "726597324939843276104733",
     "mpn": "North Chalk White TG Clear",
     "weight": "9.5 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14108,
@@ -17949,8 +17921,8 @@ export const PARTS = [
     "upc": "843276104726",
     "mpn": "North Chalk White",
     "weight": "9.5 Kilograms",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14109,
@@ -17979,9 +17951,9 @@ export const PARTS = [
     "upc": "848475009544",
     "mpn": "AURA GC1 ELITE ARGB",
     "weight": "4900 Grams",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14110,
@@ -18009,8 +17981,8 @@ export const PARTS = [
     "upc": "823884209075",
     "mpn": "S3",
     "weight": "8.38 Pounds",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14111,
@@ -18038,9 +18010,9 @@ export const PARTS = [
     "upc": "761345100335",
     "mpn": "C5 ARGB",
     "weight": "7.6 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14112,
@@ -18073,7 +18045,7 @@ export const PARTS = [
     "upc": "843276103989",
     "mpn": "Terra Graphite",
     "weight": "4 Kilograms",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14113,
@@ -18099,8 +18071,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81aGwc5Ic8L._AC_SL1500_.jpg"
     ],
     "mpn": "M3",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14114,
@@ -18128,8 +18100,8 @@ export const PARTS = [
     "upc": "840440485551",
     "mpn": "CORSAIR 4000D RS",
     "weight": "17.2 Pounds",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14115,
@@ -18157,9 +18129,9 @@ export const PARTS = [
     ],
     "mpn": "KING 95 PRO",
     "weight": "26.1 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14116,
@@ -18187,9 +18159,9 @@ export const PARTS = [
     ],
     "mpn": "Aqua 7",
     "weight": "7.1 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14117,
@@ -18222,9 +18194,9 @@ export const PARTS = [
     "upc": "841163094211",
     "mpn": "Thermaltake View 270 Plus TG ARGB Matcha Green",
     "weight": "14 Pounds",
-    "formFactor": "E-ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "E-ATX"
   },
   {
     "id": 14118,
@@ -18257,9 +18229,9 @@ export const PARTS = [
     "upc": "841163094228",
     "mpn": "View 270 Plus TG ARGB Hydrangea Blue",
     "weight": "14 Pounds",
-    "formFactor": "E-ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "E-ATX"
   },
   {
     "id": 14119,
@@ -18287,9 +18259,9 @@ export const PARTS = [
     "upc": "848475009933",
     "mpn": "ATLAS E1",
     "weight": "10.1 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14120,
@@ -18315,9 +18287,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61jT8bdEyAL._AC_SX679_.jpg"
     ],
     "mpn": "M5",
-    "formFactor": "E-ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "E-ATX"
   },
   {
     "id": 14121,
@@ -18344,9 +18316,9 @@ export const PARTS = [
     ],
     "mpn": "DS900",
     "weight": "15 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14122,
@@ -18374,8 +18346,8 @@ export const PARTS = [
     "upc": "761345100793",
     "mpn": "C8 Wood",
     "weight": "10.39 Kilograms",
-    "formFactor": "E-ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 14123,
@@ -18403,9 +18375,9 @@ export const PARTS = [
     "upc": "843276102319",
     "mpn": "Torrent RGB Black - Light tint tempered glass panels",
     "weight": "13 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14124,
@@ -18439,9 +18411,9 @@ export const PARTS = [
     "upc": "841163095256",
     "mpn": "Tower 600 Black",
     "weight": "21.4 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14125,
@@ -18467,8 +18439,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/91dxRho2WdL._AC_SL1500_.jpg"
     ],
     "mpn": "K6",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14126,
@@ -18494,8 +18466,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/715IRxVDaTL._AC_SL1500_.jpg"
     ],
     "mpn": "DB330M PC CASE",
-    "formFactor": "mATX",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14127,
@@ -18523,9 +18495,9 @@ export const PARTS = [
     "upc": "842946112153",
     "mpn": "HS 420",
     "weight": "17.83 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14128,
@@ -18553,9 +18525,9 @@ export const PARTS = [
     ],
     "mpn": "Y6",
     "weight": "15 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14129,
@@ -18582,8 +18554,8 @@ export const PARTS = [
     ],
     "mpn": "DY470",
     "weight": "22 Pounds",
-    "formFactor": "ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "ATX"
   },
   {
     "id": 14130,
@@ -18611,7 +18583,7 @@ export const PARTS = [
     ],
     "mpn": "N3",
     "weight": "3900 Grams",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14131,
@@ -18640,8 +18612,8 @@ export const PARTS = [
     "upc": "698596435810",
     "mpn": "H1",
     "weight": "11 Pounds",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14132,
@@ -18668,8 +18640,8 @@ export const PARTS = [
     ],
     "upc": "761345776882",
     "mpn": "VSK4000E-U3_US",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14133,
@@ -18697,9 +18669,9 @@ export const PARTS = [
     "upc": "842946112177",
     "mpn": "HS",
     "weight": "19.01 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14134,
@@ -18725,7 +18697,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61-BNMP9LpL._AC_SL1280_.jpg"
     ],
     "mpn": "C6",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14135,
@@ -18753,7 +18725,7 @@ export const PARTS = [
     ],
     "mpn": "N2 Black",
     "weight": "3.65 Kilograms",
-    "formFactor": "ITX"
+    "ff": "ITX"
   },
   {
     "id": 14136,
@@ -18842,7 +18814,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61ofJL3J5fL._AC_SL1500_.jpg"
     ],
     "mpn": "D32",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14139,
@@ -18897,8 +18869,8 @@ export const PARTS = [
     "upc": "884102120077",
     "mpn": "Elite 301 Lite",
     "weight": "9.8 Pounds",
-    "formFactor": "mATX",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14141,
@@ -18925,7 +18897,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81MVmUxKb6L._AC_SL1500_.jpg"
     ],
     "mpn": "F100",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14142,
@@ -18953,9 +18925,9 @@ export const PARTS = [
     "upc": "197105798373",
     "mpn": "A31 TG Black",
     "weight": "18.1 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14143,
@@ -19038,7 +19010,7 @@ export const PARTS = [
     "upc": "761345102537",
     "mpn": "Flux M",
     "weight": "14 Pounds",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14146,
@@ -19094,8 +19066,8 @@ export const PARTS = [
     ],
     "mpn": "Air Cross",
     "weight": "8 Kilograms",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14148,
@@ -19123,7 +19095,7 @@ export const PARTS = [
     ],
     "mpn": "WD200 PC CASE",
     "weight": "10.8 Pounds",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14149,
@@ -19178,8 +19150,8 @@ export const PARTS = [
     ],
     "mpn": "Cubix",
     "weight": "5.73 Pounds",
-    "formFactor": "mATX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "ff": "mATX"
   },
   {
     "id": 14151,
@@ -19207,7 +19179,7 @@ export const PARTS = [
     ],
     "mpn": "MiniArt 4",
     "weight": "4 Kilograms",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14152,
@@ -19262,8 +19234,8 @@ export const PARTS = [
     "upc": "840440417903",
     "mpn": "FRAME 4000D",
     "weight": "17.2 Pounds",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14154,
@@ -19291,8 +19263,8 @@ export const PARTS = [
     "upc": "840006603047",
     "mpn": "680X",
     "weight": "25.57 Pounds",
-    "formFactor": "ATX",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14155,
@@ -19321,8 +19293,8 @@ export const PARTS = [
     "upc": "848604049298",
     "mpn": "HYTE Y70 Touch Infinite Modern Aesthetic Case - Black Cherry",
     "weight": "24.4 Pounds",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14156,
@@ -19355,9 +19327,9 @@ export const PARTS = [
     "upc": "848604044279",
     "mpn": "Y40",
     "weight": "19 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14157,
@@ -19386,9 +19358,9 @@ export const PARTS = [
     "upc": "848604045658",
     "mpn": "CS-HYTE-Y70-BW",
     "weight": "24.3 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14158,
@@ -19416,8 +19388,8 @@ export const PARTS = [
     "upc": "843276106553",
     "mpn": "North XL",
     "weight": "5 Kilograms",
-    "formFactor": "E-ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 14159,
@@ -19446,7 +19418,7 @@ export const PARTS = [
     "upc": "884102079061",
     "mpn": "NR200 White",
     "weight": "4.8 Kilograms",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14160,
@@ -19475,7 +19447,7 @@ export const PARTS = [
     "upc": "884102079054",
     "mpn": "NR200 Black",
     "weight": "4.8 Kilograms",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14161,
@@ -19502,8 +19474,8 @@ export const PARTS = [
     ],
     "mpn": "FD-CA-FOCUS-BK-W",
     "weight": "5.7 Kilograms",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14162,
@@ -19532,7 +19504,7 @@ export const PARTS = [
     "upc": "710931111026",
     "mpn": "Pure Base 600",
     "weight": "7440 Grams",
-    "formFactor": "ATX"
+    "ff": "ATX"
   },
   {
     "id": 14163,
@@ -19560,8 +19532,8 @@ export const PARTS = [
     "upc": "761345100885",
     "mpn": "PERFORMANCE 1 FT",
     "weight": "12.55 Kilograms",
-    "formFactor": "E-ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 14164,
@@ -19589,9 +19561,9 @@ export const PARTS = [
     "upc": "810074843645",
     "mpn": "H5 Flow",
     "weight": "1000 Grams",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14165,
@@ -19619,7 +19591,7 @@ export const PARTS = [
     "upc": "844761017415",
     "mpn": "SilverStone Technology Ultra Compact Mini-ITX Computer Case with Mesh Front Panel",
     "weight": "5.4 Pounds",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14166,
@@ -19647,8 +19619,8 @@ export const PARTS = [
     ],
     "mpn": "BGW39",
     "weight": "13.2 Kilograms",
-    "formFactor": "ATX",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14167,
@@ -19676,7 +19648,7 @@ export const PARTS = [
     "upc": "843276106102827676009249",
     "mpn": "Ridge White",
     "weight": "5.5 Kilograms",
-    "formFactor": "ITX"
+    "ff": "ITX"
   },
   {
     "id": 14168,
@@ -19703,34 +19675,7 @@ export const PARTS = [
     ],
     "mpn": "SKY3B",
     "weight": "18.41 Pounds",
-    "formFactor": "ATX"
-  },
-  {
-    "id": 14169,
-    "n": "iCUE LC100 Case Accent Lighting Panels - Mini Triangle - 9X Tile Starter Kit (81 RGB LEDs with Light Diffusion, Simpl...",
-    "img": "https://m.media-amazon.com/images/I/51FTvW19qML._AC_SL1200_.jpg",
-    "c": "Case",
-    "b": "Corsair",
-    "pr": 34.95,
-    "msrp": 34.95,
-    "r": 3.5,
-    "asin": "B09R3L5B6B",
-    "reviews": 363,
-    "deals": {
-      "amazon": {
-        "price": 34.95,
-        "url": "https://www.amazon.com/dp/B09R3L5B6B?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/61OyxpMcVbL._AC_SL1200_.jpg",
-      "https://m.media-amazon.com/images/I/310va6EwI6L._AC_SL1200_.jpg",
-      "https://m.media-amazon.com/images/I/41Cj9tcAI8L._AC_SL1200_.jpg"
-    ],
-    "upc": "840006650720",
-    "mpn": "CL-9011114-WW",
-    "weight": "0.14 Kilograms"
+    "ff": "ATX"
   },
   {
     "id": 14170,
@@ -19757,36 +19702,9 @@ export const PARTS = [
     ],
     "mpn": "O11 Vision Compact",
     "weight": "12 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
-  },
-  {
-    "id": 14171,
-    "n": "Accessory Universal 4-Slots Vertical GPU Card Holder Kit Black, Premium Gen 4 Riser Cable PCI-E 4.0 x16-200mm, PCIe 3...",
-    "img": "https://m.media-amazon.com/images/I/51uJ69WbnCL._AC_SL1050_.jpg",
-    "c": "Case",
-    "b": "Lian Li",
-    "pr": 59,
-    "msrp": 59,
-    "r": 4.2,
-    "asin": "B0CF9MS1HG",
-    "reviews": 334,
-    "deals": {
-      "amazon": {
-        "price": 59,
-        "url": "https://www.amazon.com/dp/B0CF9MS1HG?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/51avg21LPuL._AC_SX679_.jpg",
-      "https://m.media-amazon.com/images/I/41ZPPD7s7zL._AC_SX679_.jpg",
-      "https://m.media-amazon.com/images/I/6186xNlJcPL._AC_SX679_.jpg"
-    ],
-    "mpn": "VG4-4-V2X",
-    "weight": "730 Grams",
-    "formFactor": "E-ATX"
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14172,
@@ -19815,9 +19733,9 @@ export const PARTS = [
     "upc": "195553888035197105675681",
     "mpn": "GT502/BLK/TG//",
     "weight": "10.5 Kilograms",
-    "formFactor": "ATX",
     "tower": "Full",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14173,
@@ -19845,9 +19763,9 @@ export const PARTS = [
     "upc": "850077978814",
     "mpn": "C280 Black",
     "weight": "17.64 Pounds",
-    "formFactor": "E-ATX",
     "tower": "Full",
-    "tg": true
+    "tg": true,
+    "ff": "E-ATX"
   },
   {
     "id": 14174,
@@ -19874,7 +19792,7 @@ export const PARTS = [
     ],
     "mpn": "MATX Case",
     "weight": "2.2 Kilograms",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14175,
@@ -19901,9 +19819,9 @@ export const PARTS = [
     ],
     "mpn": "MPG SEKIRA 100R",
     "weight": "9.5 Kilograms",
-    "formFactor": "mATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14176,
@@ -19931,8 +19849,8 @@ export const PARTS = [
     ],
     "mpn": "AIR 903 MAX",
     "weight": "15.1 Pounds",
-    "formFactor": "E-ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "E-ATX"
   },
   {
     "id": 14177,
@@ -19961,7 +19879,7 @@ export const PARTS = [
     "upc": "848604041797",
     "mpn": "Revolt 3",
     "weight": "11 Pounds",
-    "formFactor": "ITX"
+    "ff": "ITX"
   },
   {
     "id": 14178,
@@ -20020,8 +19938,8 @@ export const PARTS = [
     "upc": "810074845571",
     "mpn": "NZXT H7 Flow RGB 2024",
     "weight": "11.26 Kilograms",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14180,
@@ -20049,9 +19967,9 @@ export const PARTS = [
     ],
     "upc": "703387780885",
     "mpn": "SAMA NEVIEW 4503 Gaming Case",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14181,
@@ -20085,9 +20003,9 @@ export const PARTS = [
     "upc": "840006688396",
     "mpn": "iCUE LINK 3500X RGB",
     "weight": "20.35 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14182,
@@ -20115,7 +20033,7 @@ export const PARTS = [
     "upc": "884102099786",
     "mpn": "HAF 700",
     "weight": "19.6 Kilograms",
-    "formFactor": "E-ATX"
+    "ff": "E-ATX"
   },
   {
     "id": 14183,
@@ -20142,8 +20060,8 @@ export const PARTS = [
     ],
     "mpn": "M1",
     "weight": "5.85 Kilograms",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14184,
@@ -20171,8 +20089,8 @@ export const PARTS = [
     "upc": "195553982771",
     "mpn": "GR701 ROG HYPERION",
     "weight": "24.95 Kilograms",
-    "formFactor": "E-ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 14185,
@@ -20200,9 +20118,9 @@ export const PARTS = [
     "upc": "843276102906",
     "mpn": "FD-C-TOR1C-02",
     "weight": "9.5 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14186,
@@ -20256,9 +20174,9 @@ export const PARTS = [
     ],
     "mpn": "V60",
     "weight": "8.2 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14188,
@@ -20284,9 +20202,9 @@ export const PARTS = [
     "upc": "843276102449",
     "mpn": "FD-C-MES2A-03",
     "weight": "10.5 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14189,
@@ -20315,9 +20233,9 @@ export const PARTS = [
     "upc": "195553943000",
     "mpn": "GT502/WHT/TG//",
     "weight": "12.7 Kilograms",
-    "formFactor": "ATX",
     "tower": "Full",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14190,
@@ -20345,8 +20263,8 @@ export const PARTS = [
     "upc": "761345100229",
     "mpn": "C8 ARGB",
     "weight": "14000 Grams",
-    "formFactor": "E-ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 14191,
@@ -20374,9 +20292,9 @@ export const PARTS = [
     "upc": "840353042988",
     "mpn": "LANCOOL 205 MESH RGB - TYPE C - ATX - Black",
     "weight": "8.1 Kilograms",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14192,
@@ -20461,7 +20379,7 @@ export const PARTS = [
     ],
     "upc": "840353052680",
     "mpn": "VG4-5-V4W",
-    "formFactor": "ATX"
+    "ff": "ATX"
   },
   {
     "id": 14195,
@@ -20513,7 +20431,7 @@ export const PARTS = [
     ],
     "mpn": "Mood Black",
     "weight": "4.6 Kilograms",
-    "formFactor": "ITX"
+    "ff": "ITX"
   },
   {
     "id": 14197,
@@ -20541,7 +20459,7 @@ export const PARTS = [
     "upc": "197105338500",
     "mpn": "PA602 ProArt Case",
     "weight": "35.5 Pounds",
-    "formFactor": "E-ATX"
+    "ff": "E-ATX"
   },
   {
     "id": 14198,
@@ -20569,7 +20487,7 @@ export const PARTS = [
     ],
     "mpn": "Mini PC",
     "weight": "1.14 Kilograms",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14199,
@@ -20598,8 +20516,8 @@ export const PARTS = [
     "upc": "716841595024",
     "mpn": "SUMIX-500",
     "weight": "3.24 Kilograms",
-    "formFactor": "mATX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "ff": "mATX"
   },
   {
     "id": 14200,
@@ -20627,9 +20545,9 @@ export const PARTS = [
     "upc": "841163083673",
     "mpn": "View 200 TG ARGB Black",
     "weight": "4.8 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14201,
@@ -20656,9 +20574,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/818wnHT1CuL._AC_SL1500_.jpg"
     ],
     "mpn": "SZSKYING ATX Mid-Tower PC Gaming Case",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14202,
@@ -20685,8 +20603,8 @@ export const PARTS = [
     ],
     "mpn": "BF360 Flow",
     "weight": "14.79 Kilograms",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14203,
@@ -20713,7 +20631,7 @@ export const PARTS = [
     ],
     "mpn": "Mirage 4",
     "weight": "4.45 Kilograms",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14204,
@@ -20740,7 +20658,7 @@ export const PARTS = [
     ],
     "mpn": "Cypress 3 ARGB",
     "weight": "4.36 Kilograms",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14205,
@@ -20767,8 +20685,8 @@ export const PARTS = [
     ],
     "mpn": "C275P PC CASE",
     "weight": "7.3 Pounds",
-    "formFactor": "ITX",
-    "tg": true
+    "tg": true,
+    "ff": "ITX"
   },
   {
     "id": 14206,
@@ -20796,9 +20714,9 @@ export const PARTS = [
     "upc": "841163089934",
     "mpn": "Ceres 300 Matcha Green",
     "weight": "17.2 Pounds",
-    "formFactor": "E-ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "E-ATX"
   },
   {
     "id": 14207,
@@ -20825,7 +20743,7 @@ export const PARTS = [
     ],
     "mpn": "CHOPIN MAX.SILVER",
     "weight": "4.85 Pounds",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14208,
@@ -20881,9 +20799,9 @@ export const PARTS = [
     ],
     "mpn": "DS900",
     "weight": "14 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14210,
@@ -20910,9 +20828,9 @@ export const PARTS = [
     ],
     "mpn": "M5 Vent",
     "weight": "11.41 Kilograms",
-    "formFactor": "E-ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "E-ATX"
   },
   {
     "id": 14211,
@@ -20967,8 +20885,8 @@ export const PARTS = [
     ],
     "mpn": "Aqua 3 Air",
     "weight": "4.2 Kilograms",
-    "formFactor": "mATX",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14213,
@@ -20995,9 +20913,9 @@ export const PARTS = [
     ],
     "mpn": "CS-X921",
     "weight": "12 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14214,
@@ -21026,8 +20944,8 @@ export const PARTS = [
     "upc": "197105173224",
     "mpn": "GR701 ROG HYPERION WHITE EDITION",
     "weight": "55.6 Pounds",
-    "formFactor": "E-ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 14215,
@@ -21053,7 +20971,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71hbSrJhcmL._AC_SL1500_.jpg"
     ],
     "mpn": "C6-ITX",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14216,
@@ -21080,7 +20998,7 @@ export const PARTS = [
     ],
     "mpn": "3.ATX",
     "weight": "2 Kilograms",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14217,
@@ -21107,8 +21025,8 @@ export const PARTS = [
     ],
     "upc": "850050943952",
     "mpn": "M06",
-    "formFactor": "mATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "mATX"
   },
   {
     "id": 14218,
@@ -21135,8 +21053,8 @@ export const PARTS = [
     ],
     "mpn": "TK-1",
     "weight": "7.6 Kilograms",
-    "formFactor": "mATX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "ff": "mATX"
   },
   {
     "id": 14219,
@@ -21162,9 +21080,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/51VDAmtQsVL._AC_SL1116_.jpg"
     ],
     "mpn": "OV403",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14220,
@@ -21220,9 +21138,9 @@ export const PARTS = [
     ],
     "mpn": "H2",
     "weight": "7.35 Kilograms",
-    "formFactor": "ATX",
     "tower": "Full",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14222,
@@ -21250,8 +21168,8 @@ export const PARTS = [
     ],
     "mpn": "GEO-M8-COW",
     "weight": "14 Kilograms",
-    "formFactor": "E-ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "E-ATX"
   },
   {
     "id": 14223,
@@ -21279,7 +21197,7 @@ export const PARTS = [
     "upc": "844761024802",
     "mpn": "SUGO 16",
     "weight": "1 Pounds",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14224,
@@ -21307,8 +21225,8 @@ export const PARTS = [
     "upc": "840353051409",
     "mpn": "LAN217INFX",
     "weight": "10 Kilograms",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14225,
@@ -21336,9 +21254,9 @@ export const PARTS = [
     ],
     "upc": "197105654655",
     "mpn": "PROART PA401 WOOD TG PWM BLACK",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14226,
@@ -21365,8 +21283,8 @@ export const PARTS = [
     ],
     "mpn": "V12",
     "weight": "14.33 Pounds",
-    "formFactor": "mATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "mATX"
   },
   {
     "id": 14227,
@@ -21392,8 +21310,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71+UVjvtzTL._AC_SL1500_.jpg"
     ],
     "mpn": "TK-0",
-    "formFactor": "ITX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "ff": "ITX"
   },
   {
     "id": 14228,
@@ -21420,8 +21338,8 @@ export const PARTS = [
     ],
     "mpn": "AIR NOVA",
     "weight": "11.6 Pounds",
-    "formFactor": "E-ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 14229,
@@ -21449,8 +21367,8 @@ export const PARTS = [
     "upc": "840440487739",
     "mpn": "5000T LX RGB",
     "weight": "14.04 Kilograms",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14230,
@@ -21510,9 +21428,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/615akv9okNL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71c4uqBX-VL._AC_SL1500_.jpg"
     ],
-    "formFactor": "mATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14232,
@@ -21541,8 +21459,8 @@ export const PARTS = [
     "upc": "848604051949",
     "mpn": "HYTE X50 Modern Performance Case - Matcha Milk",
     "weight": "25.8 Pounds",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14233,
@@ -21569,7 +21487,7 @@ export const PARTS = [
     ],
     "mpn": "X5M-Black",
     "weight": "14.3 Pounds",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14234,
@@ -21597,8 +21515,8 @@ export const PARTS = [
     ],
     "mpn": "Pure Base 501 LX Black",
     "weight": "7.8 Kilograms",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14235,
@@ -21626,8 +21544,8 @@ export const PARTS = [
     "upc": "841163097229",
     "mpn": "The Tower 250 Black",
     "weight": "19 Pounds",
-    "formFactor": "Mini-ITX",
-    "tower": "Mini"
+    "tower": "Mini",
+    "ff": "Mini-ITX"
   },
   {
     "id": 14236,
@@ -21654,9 +21572,9 @@ export const PARTS = [
     ],
     "mpn": "CS-I802",
     "weight": "12 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14237,
@@ -21683,9 +21601,9 @@ export const PARTS = [
     ],
     "mpn": "CS-I802",
     "weight": "12 Pounds",
-    "formFactor": "mATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14238,
@@ -21713,8 +21631,8 @@ export const PARTS = [
     ],
     "mpn": "X5-White",
     "weight": "14.3 Pounds",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14239,
@@ -21741,9 +21659,9 @@ export const PARTS = [
     ],
     "mpn": "AI Raider XL",
     "weight": "19.44 Kilograms",
-    "formFactor": "E-ATX",
     "tower": "Full",
-    "tg": true
+    "tg": true,
+    "ff": "E-ATX"
   },
   {
     "id": 14240,
@@ -21824,8 +21742,8 @@ export const PARTS = [
     ],
     "mpn": "H2",
     "weight": "11 Pounds",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14243,
@@ -21852,7 +21770,7 @@ export const PARTS = [
     ],
     "mpn": "FLOATRON F1",
     "weight": "5.26 Kilograms",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14244,
@@ -21880,8 +21798,8 @@ export const PARTS = [
     ],
     "mpn": "TK-3",
     "weight": "16.09 Pounds",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14245,
@@ -21908,7 +21826,7 @@ export const PARTS = [
     ],
     "mpn": "L280M",
     "weight": "16.53 Pounds",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14246,
@@ -21937,8 +21855,8 @@ export const PARTS = [
     "upc": "840033402965",
     "mpn": "ACPCC00015A",
     "weight": "15.4 Kilograms",
-    "formFactor": "E-ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 14247,
@@ -21965,9 +21883,9 @@ export const PARTS = [
     ],
     "upc": "850077978593",
     "mpn": "DF-DY460-BK-4F",
-    "formFactor": "ATX",
     "tower": "Full",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14248,
@@ -21995,8 +21913,8 @@ export const PARTS = [
     "upc": "848475012476",
     "mpn": "ATHENA M4M WOOD",
     "weight": "5.62 Kilograms",
-    "formFactor": "ATX",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14249,
@@ -22023,9 +21941,9 @@ export const PARTS = [
     ],
     "mpn": "GR3",
     "weight": "18.9 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14250,
@@ -22052,7 +21970,7 @@ export const PARTS = [
     ],
     "mpn": "PS091",
     "weight": "3.38 Kilograms",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14251,
@@ -22079,9 +21997,9 @@ export const PARTS = [
     ],
     "mpn": "ZQBE",
     "weight": "10.98 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14252,
@@ -22136,7 +22054,7 @@ export const PARTS = [
     "upc": "884102131684",
     "mpn": "NR200P V3",
     "weight": "8.82 Pounds",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14254,
@@ -22163,7 +22081,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61dtntt7hOL._AC_SL1500_.jpg"
     ],
     "mpn": "D200",
-    "formFactor": "ATX"
+    "ff": "ATX"
   },
   {
     "id": 14255,
@@ -22191,8 +22109,8 @@ export const PARTS = [
     ],
     "upc": "840951136157",
     "mpn": "THOR NAS PRO",
-    "formFactor": "E-ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 14256,
@@ -22218,7 +22136,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71u3-s9W-+L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/813qsTkXxvL._AC_SL1500_.jpg"
     ],
-    "formFactor": "ATX"
+    "ff": "ATX"
   },
   {
     "id": 14257,
@@ -22245,9 +22163,9 @@ export const PARTS = [
     ],
     "upc": "747474821303",
     "mpn": "DIY-mATX06-Wood Black",
-    "formFactor": "mATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14258,
@@ -22275,8 +22193,8 @@ export const PARTS = [
     "upc": "843276109653",
     "mpn": "Epoch",
     "weight": "9.36 Kilograms",
-    "formFactor": "mATX",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14259,
@@ -22303,8 +22221,8 @@ export const PARTS = [
     ],
     "upc": "840353044890",
     "mpn": "O11 Vision",
-    "formFactor": "E-ATX",
-    "tg": true
+    "tg": true,
+    "ff": "E-ATX"
   },
   {
     "id": 14260,
@@ -22330,8 +22248,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71n6Ijrzn7L._AC_SL1500_.jpg"
     ],
     "mpn": "M1",
-    "formFactor": "mATX",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14261,
@@ -22358,8 +22276,8 @@ export const PARTS = [
     ],
     "mpn": "H3",
     "weight": "15 Pounds",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14262,
@@ -22387,8 +22305,8 @@ export const PARTS = [
     "upc": "843276109660",
     "mpn": "Epoch",
     "weight": "9.41 Kilograms",
-    "formFactor": "mATX",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14263,
@@ -22415,8 +22333,8 @@ export const PARTS = [
     ],
     "mpn": "BF360 Flow",
     "weight": "13.63 Kilograms",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14264,
@@ -22443,8 +22361,8 @@ export const PARTS = [
     ],
     "mpn": "BF360 Flow",
     "weight": "13.63 Kilograms",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14265,
@@ -22504,7 +22422,7 @@ export const PARTS = [
     ],
     "mpn": "L300",
     "weight": "5.3 Pounds",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14267,
@@ -22530,7 +22448,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71sEPR9+GpL._AC_SL1500_.jpg"
     ],
     "mpn": "T9",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14268,
@@ -22557,8 +22475,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71ABGuI0T0L._AC_SL1500_.jpg"
     ],
     "mpn": "D400",
-    "formFactor": "ATX",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14269,
@@ -22586,9 +22504,9 @@ export const PARTS = [
     "upc": "199291061187",
     "mpn": "ROG STRIX HELIOS II GX601S BLACK",
     "weight": "39.7 Pounds",
-    "formFactor": "E-ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "E-ATX"
   },
   {
     "id": 14270,
@@ -22616,9 +22534,9 @@ export const PARTS = [
     "upc": "886523303640",
     "mpn": "Eclipse",
     "weight": "19 Pounds",
-    "formFactor": "ATX",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14271,
@@ -22646,8 +22564,8 @@ export const PARTS = [
     "upc": "840033402972",
     "mpn": "ACPCC00014A",
     "weight": "15.4 Kilograms",
-    "formFactor": "E-ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 14272,
@@ -22672,7 +22590,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71v6j+mcArL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71bnxjFhqVL._AC_SL1500_.jpg"
     ],
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14273,
@@ -22698,7 +22616,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71Q5JxUWPkL._AC_SL1500_.jpg"
     ],
     "mpn": "N10",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14274,
@@ -22725,7 +22643,7 @@ export const PARTS = [
     ],
     "upc": "810216230173",
     "mpn": "Lian Li O11 Dynamic EVO RGB",
-    "formFactor": "mATX"
+    "ff": "mATX"
   },
   {
     "id": 14275,
@@ -22752,8 +22670,8 @@ export const PARTS = [
     ],
     "mpn": "Cubix-G",
     "weight": "7.1 Pounds",
-    "formFactor": "mATX",
-    "tg": true
+    "tg": true,
+    "ff": "mATX"
   },
   {
     "id": 14276,
@@ -22781,8 +22699,8 @@ export const PARTS = [
     "upc": "884102134999",
     "mpn": "C700",
     "weight": "70 Pounds",
-    "formFactor": "ATX",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "ATX"
   },
   {
     "id": 14277,
@@ -45094,10 +45012,11 @@ export const PARTS = [
     "weight": "1250 Grams",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6"
   },
   {
     "id": 15025,
@@ -45133,10 +45052,11 @@ export const PARTS = [
     "weight": "4.25 Pounds",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15026,
@@ -45172,10 +45092,11 @@ export const PARTS = [
     "weight": "1990 Grams",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15027,
@@ -45211,10 +45132,11 @@ export const PARTS = [
     "weight": "4.35 Pounds",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15028,
@@ -45244,10 +45166,11 @@ export const PARTS = [
     "weight": "2.3 Kilograms",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15029,
@@ -45283,10 +45206,11 @@ export const PARTS = [
     "weight": "2.49 Kilograms",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15030,
@@ -45322,10 +45246,11 @@ export const PARTS = [
     "weight": "3.7 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15031,
@@ -45361,10 +45286,11 @@ export const PARTS = [
     "weight": "3.5 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15032,
@@ -45393,10 +45319,11 @@ export const PARTS = [
     "mpn": "9800X3DMAGX870ETMKWF",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15033,
@@ -45425,10 +45352,11 @@ export const PARTS = [
     "mpn": "9850X3DMAGX870ETMKWF",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15034,
@@ -45457,10 +45385,11 @@ export const PARTS = [
     "mpn": "7600XTUFGAMB650EEWF",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15035,
@@ -45489,10 +45418,11 @@ export const PARTS = [
     "mpn": "9700XTUFGAMB850PLWF",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15036,
@@ -45523,7 +45453,8 @@ export const PARTS = [
     "chipset": "B650",
     "memType": "DRAM",
     "maxMem": 192,
-    "memSlots": 2
+    "memSlots": 2,
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15037,
@@ -45552,10 +45483,11 @@ export const PARTS = [
     "mpn": "7700XB650GAMINGXAXV2",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 156,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15038,
@@ -45578,7 +45510,8 @@ export const PARTS = [
     "discount": 40,
     "mpn": "7600X",
     "socket": "AM5",
-    "chipset": "B650"
+    "chipset": "B650",
+    "wifi": "None"
   },
   {
     "id": 15039,
@@ -45607,10 +45540,11 @@ export const PARTS = [
     "mpn": "9900XMAGX870ETMKWF",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15040,
@@ -45639,10 +45573,11 @@ export const PARTS = [
     "mpn": "7800X3DATUFGAMB850PL",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15041,
@@ -45672,10 +45607,11 @@ export const PARTS = [
     "mpn": "9800X3DGGX870EALWF",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15042,
@@ -45704,10 +45640,11 @@ export const PARTS = [
     "mpn": "7800X3DATUFGAMB650EEWF",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15043,
@@ -45737,10 +45674,11 @@ export const PARTS = [
     "mpn": "9700XGGB850GAMWF6",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6"
   },
   {
     "id": 15044,
@@ -45771,7 +45709,8 @@ export const PARTS = [
     "chipset": "700 SERIES",
     "memType": "DDR4",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15045,
@@ -45800,10 +45739,11 @@ export const PARTS = [
     "mpn": "9950X3DASUSX870EEROGSGAMWF",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15046,
@@ -45832,10 +45772,11 @@ export const PARTS = [
     "mpn": "9800X3DTUFGAMB850PLWF",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15047,
@@ -45866,10 +45807,11 @@ export const PARTS = [
     "weight": "760 Grams",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15048,
@@ -45900,10 +45842,11 @@ export const PARTS = [
     "weight": "1.1 Kilograms",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15049,
@@ -45934,10 +45877,11 @@ export const PARTS = [
     "weight": "1.3 Pounds",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6"
   },
   {
     "id": 15050,
@@ -45973,10 +45917,11 @@ export const PARTS = [
     "weight": "2 Pounds",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15051,
@@ -46007,10 +45952,11 @@ export const PARTS = [
     "weight": "1.48 Kilograms",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15052,
@@ -46041,9 +45987,10 @@ export const PARTS = [
     "weight": "5.55 Pounds",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15053,
@@ -46079,10 +46026,11 @@ export const PARTS = [
     "weight": "2.9 Pounds",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15054,
@@ -46118,10 +46066,11 @@ export const PARTS = [
     "weight": "3.5 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15055,
@@ -46150,10 +46099,11 @@ export const PARTS = [
     "mpn": "B650E MAX GAMING WIFI W",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15056,
@@ -46183,10 +46133,11 @@ export const PARTS = [
     "weight": "2.55 Pounds",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 6"
   },
   {
     "id": 15057,
@@ -46221,10 +46172,11 @@ export const PARTS = [
     "weight": "3.46 Pounds",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15058,
@@ -46254,10 +46206,11 @@ export const PARTS = [
     "weight": "874 Grams",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15059,
@@ -46292,10 +46245,11 @@ export const PARTS = [
     "mpn": "ROG STRIX B850-A GAMING WIFI",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15060,
@@ -46325,10 +46279,11 @@ export const PARTS = [
     "weight": "730 Grams",
     "socket": "AM4",
     "chipset": "B450",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 32,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15061,
@@ -46363,10 +46318,11 @@ export const PARTS = [
     "weight": "1.23 Kilograms",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15062,
@@ -46397,10 +46353,11 @@ export const PARTS = [
     "weight": "2.9 Pounds",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15063,
@@ -46436,10 +46393,11 @@ export const PARTS = [
     "weight": "500 Grams",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15064,
@@ -46469,10 +46427,11 @@ export const PARTS = [
     "weight": "1500 Grams",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15065,
@@ -46507,10 +46466,11 @@ export const PARTS = [
     "weight": "2000 Grams",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15066,
@@ -46545,10 +46505,11 @@ export const PARTS = [
     "mpn": "B850 AORUS ELITE WIFI7 ICE",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15067,
@@ -46584,10 +46545,11 @@ export const PARTS = [
     "weight": "4 Pounds",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15068,
@@ -46622,10 +46584,11 @@ export const PARTS = [
     "weight": "5.07 Pounds",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15069,
@@ -46660,10 +46623,11 @@ export const PARTS = [
     "mpn": "B850M AORUS ELITE WIFI6E ICE",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15070,
@@ -46693,10 +46657,11 @@ export const PARTS = [
     "mpn": "Z790-AYW WIFI W II",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15071,
@@ -46732,10 +46697,11 @@ export const PARTS = [
     "weight": "3.2 Pounds",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15072,
@@ -46766,10 +46732,11 @@ export const PARTS = [
     "weight": "1.5 Pounds",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 96,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15073,
@@ -46799,10 +46766,11 @@ export const PARTS = [
     "weight": "425 Grams",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "Mini-ITX",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "None"
   },
   {
     "id": 15074,
@@ -46833,10 +46801,11 @@ export const PARTS = [
     "weight": "3.7 Pounds",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15075,
@@ -46864,7 +46833,8 @@ export const PARTS = [
     "chipset": "B550",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15076,
@@ -46895,10 +46865,11 @@ export const PARTS = [
     "weight": "1.7 Pounds",
     "socket": "LGA1700",
     "chipset": "H610",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15077,
@@ -46929,10 +46900,11 @@ export const PARTS = [
     "weight": "4 Pounds",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15078,
@@ -46963,10 +46935,11 @@ export const PARTS = [
     "weight": "1.4 Kilograms",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15079,
@@ -47000,10 +46973,11 @@ export const PARTS = [
     "mpn": "X870E AORUS PRO ICE",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15080,
@@ -47033,10 +47007,11 @@ export const PARTS = [
     "mpn": "B650M GAMING PLUS WIFI",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15081,
@@ -47065,10 +47040,11 @@ export const PARTS = [
     "weight": "1011 Grams",
     "socket": "AM4",
     "chipset": "B450",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15082,
@@ -47098,10 +47074,11 @@ export const PARTS = [
     "weight": "1 Kilograms",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "Mini-ITX",
     "memType": "DDR5",
     "maxMem": 32,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "WiFi"
   },
   {
     "id": 15083,
@@ -47131,10 +47108,11 @@ export const PARTS = [
     "mpn": "MAG B550 TOMAHAWK MAX WIFI",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15084,
@@ -47165,10 +47143,11 @@ export const PARTS = [
     "weight": "1600 Grams",
     "socket": "LGA1700",
     "chipset": "Z790 D5",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15085,
@@ -47199,10 +47178,11 @@ export const PARTS = [
     "weight": "1600 Grams",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6"
   },
   {
     "id": 15086,
@@ -47235,7 +47215,8 @@ export const PARTS = [
     "chipset": "B760",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15087,
@@ -47271,10 +47252,11 @@ export const PARTS = [
     "weight": "1 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15088,
@@ -47309,10 +47291,11 @@ export const PARTS = [
     "mpn": "B850M GAMING X WIFI6E",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15089,
@@ -47341,10 +47324,11 @@ export const PARTS = [
     "weight": "1814 Grams",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15090,
@@ -47372,10 +47356,11 @@ export const PARTS = [
     "mpn": "B850I LIGHTNING WIFI",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "Mini-ITX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15091,
@@ -47411,10 +47396,11 @@ export const PARTS = [
     "weight": "1.2 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15092,
@@ -47449,10 +47435,11 @@ export const PARTS = [
     "weight": "694 Grams",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15093,
@@ -47483,10 +47470,11 @@ export const PARTS = [
     "weight": "2.7 Kilograms",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15094,
@@ -47515,10 +47503,11 @@ export const PARTS = [
     "weight": "4.4 Pounds",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "E-ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "E-ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15095,
@@ -47554,9 +47543,10 @@ export const PARTS = [
     "weight": "1280 Grams",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "mATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15096,
@@ -47587,10 +47577,11 @@ export const PARTS = [
     "weight": "2.7 Pounds",
     "socket": "AM5",
     "chipset": "AM5",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15097,
@@ -47621,7 +47612,8 @@ export const PARTS = [
     "chipset": "B450",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi"
   },
   {
     "id": 15098,
@@ -47651,10 +47643,11 @@ export const PARTS = [
     "mpn": "PRIME B760M-K D4",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 256,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15099,
@@ -47684,10 +47677,11 @@ export const PARTS = [
     "weight": "9.3 Pounds",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15100,
@@ -47717,9 +47711,10 @@ export const PARTS = [
     "mpn": "B850 Tomahawk WiFi",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15101,
@@ -47751,7 +47746,8 @@ export const PARTS = [
     "chipset": "785E",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 5"
   },
   {
     "id": 15102,
@@ -47782,7 +47778,8 @@ export const PARTS = [
     "chipset": "A520",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "wifi": "None"
   },
   {
     "id": 15103,
@@ -47812,10 +47809,11 @@ export const PARTS = [
     "weight": "2 Pounds",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15104,
@@ -47846,10 +47844,11 @@ export const PARTS = [
     "weight": "1.45 Kilograms",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15105,
@@ -47878,10 +47877,11 @@ export const PARTS = [
     "weight": "2.6 Pounds",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15106,
@@ -47912,10 +47912,11 @@ export const PARTS = [
     "weight": "2.51 Pounds",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15107,
@@ -47945,10 +47946,11 @@ export const PARTS = [
     "weight": "1 Pounds",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15108,
@@ -47979,10 +47981,11 @@ export const PARTS = [
     "weight": "1000 Grams",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15109,
@@ -48011,10 +48014,11 @@ export const PARTS = [
     "weight": "0.98 Kilograms",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15110,
@@ -48045,10 +48049,11 @@ export const PARTS = [
     "weight": "2720 Grams",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15111,
@@ -48078,10 +48083,11 @@ export const PARTS = [
     "mpn": "A620I AX",
     "socket": "AM5",
     "chipset": "A620",
-    "formFactor": "Mini-ITX",
     "memType": "DDR5",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "None"
   },
   {
     "id": 15112,
@@ -48117,10 +48123,11 @@ export const PARTS = [
     "weight": "5.35 Pounds",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15113,
@@ -48150,10 +48157,11 @@ export const PARTS = [
     "weight": "1.6 Pounds",
     "socket": "LGA1700",
     "chipset": "H610",
-    "formFactor": "Mini-ITX",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "None"
   },
   {
     "id": 15114,
@@ -48189,10 +48197,11 @@ export const PARTS = [
     "weight": "4 Pounds",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15115,
@@ -48227,10 +48236,11 @@ export const PARTS = [
     "weight": "2318 Grams",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15116,
@@ -48260,9 +48270,10 @@ export const PARTS = [
     "mpn": "MAG B850 TOMAHAWK MAX WIFI V1",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15117,
@@ -48291,10 +48302,11 @@ export const PARTS = [
     "weight": "0.98 Kilograms",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 96,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15118,
@@ -48322,10 +48334,11 @@ export const PARTS = [
     "mpn": "B760M PG RIPTIDE WIFI",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15119,
@@ -48358,7 +48371,8 @@ export const PARTS = [
     "chipset": "H610",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "wifi": "None"
   },
   {
     "id": 15120,
@@ -48394,10 +48408,11 @@ export const PARTS = [
     "weight": "3.5 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15121,
@@ -48426,9 +48441,10 @@ export const PARTS = [
     "mpn": "MSI A520M-A PRO V1",
     "socket": "AM4",
     "chipset": "A520",
-    "formFactor": "mATX",
     "memType": "DDR4",
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15122,
@@ -48456,10 +48472,11 @@ export const PARTS = [
     "mpn": "B850M-X R2.0",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15123,
@@ -48493,10 +48510,11 @@ export const PARTS = [
     "mpn": "Z890 GAMING PLUS WIFI",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15124,
@@ -48526,10 +48544,11 @@ export const PARTS = [
     "mpn": "A620M S2H",
     "socket": "AM5",
     "chipset": "A620",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 96,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15125,
@@ -48565,10 +48584,11 @@ export const PARTS = [
     "weight": "5.4 Pounds",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15126,
@@ -48598,10 +48618,11 @@ export const PARTS = [
     "weight": "5.9 Pounds",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15127,
@@ -48634,7 +48655,8 @@ export const PARTS = [
     "chipset": "X870E",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 7"
   },
   {
     "id": 15128,
@@ -48663,10 +48685,11 @@ export const PARTS = [
     "mpn": "PRO B860M-A WiFi",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15129,
@@ -48697,10 +48720,11 @@ export const PARTS = [
     "weight": "2.3 Pounds",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15130,
@@ -48735,10 +48759,11 @@ export const PARTS = [
     "mpn": "X870E Gaming Plus WiFi",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 1
+    "memSlots": 1,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15131,
@@ -48769,10 +48794,11 @@ export const PARTS = [
     "weight": "4.34 Pounds",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15132,
@@ -48808,10 +48834,11 @@ export const PARTS = [
     "weight": "3.2 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15133,
@@ -48837,7 +48864,8 @@ export const PARTS = [
     ],
     "weight": "1.32 pounds",
     "socket": "LGA1700",
-    "formFactor": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "wifi": "None"
   },
   {
     "id": 15134,
@@ -48867,10 +48895,11 @@ export const PARTS = [
     "weight": "9.7 Pounds",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15135,
@@ -48906,10 +48935,11 @@ export const PARTS = [
     "weight": "3.8 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15136,
@@ -48939,10 +48969,11 @@ export const PARTS = [
     "weight": "1.2 Kilograms",
     "socket": "AM4",
     "chipset": "570X",
-    "formFactor": "ATX",
     "memType": "DIMM",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15137,
@@ -48971,10 +49002,11 @@ export const PARTS = [
     "weight": "1.3 Kilograms",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15138,
@@ -49004,10 +49036,11 @@ export const PARTS = [
     "weight": "1.1 Kilograms",
     "socket": "AM4",
     "chipset": "570X",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15139,
@@ -49037,10 +49070,11 @@ export const PARTS = [
     "weight": "350 Grams",
     "socket": "AM4",
     "chipset": "X570",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 1000,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ATX",
+    "wifi": "WiFi 5"
   },
   {
     "id": 15140,
@@ -49069,10 +49103,11 @@ export const PARTS = [
     "weight": "800 Grams",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15141,
@@ -49104,7 +49139,8 @@ export const PARTS = [
     "chipset": "B550",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15142,
@@ -49140,10 +49176,11 @@ export const PARTS = [
     "weight": "1320 Grams",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15143,
@@ -49175,7 +49212,8 @@ export const PARTS = [
     "chipset": "A520M",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 1
+    "memSlots": 1,
+    "wifi": "None"
   },
   {
     "id": 15144,
@@ -49205,10 +49243,11 @@ export const PARTS = [
     "weight": "1.19 Grams",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15145,
@@ -49237,10 +49276,11 @@ export const PARTS = [
     "weight": "1.2 Kilograms",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15146,
@@ -49270,10 +49310,11 @@ export const PARTS = [
     "weight": "1.36 Kilograms",
     "socket": "LGA1151",
     "chipset": "Z390",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15147,
@@ -49302,10 +49343,11 @@ export const PARTS = [
     "weight": "1 Kilograms",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15148,
@@ -49333,10 +49375,11 @@ export const PARTS = [
     "weight": "1270 Grams",
     "socket": "LGA1151",
     "chipset": "Z390",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 5"
   },
   {
     "id": 15149,
@@ -49366,7 +49409,8 @@ export const PARTS = [
     "chipset": "A520",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "wifi": "None"
   },
   {
     "id": 15150,
@@ -49396,10 +49440,11 @@ export const PARTS = [
     "weight": "1.49 Kilograms",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15151,
@@ -49429,10 +49474,11 @@ export const PARTS = [
     "weight": "2 Pounds",
     "socket": "LGA1700",
     "chipset": "Z690",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15152,
@@ -49462,10 +49508,11 @@ export const PARTS = [
     "weight": "1.5 Kilograms",
     "socket": "LGA1200",
     "chipset": "Z490",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15153,
@@ -49495,10 +49542,11 @@ export const PARTS = [
     "weight": "1.4 Kilograms",
     "socket": "LGA1151",
     "chipset": "Z390",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 17600,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15154,
@@ -49528,10 +49576,11 @@ export const PARTS = [
     "mpn": "MPG B550 Gaming Plus",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15155,
@@ -49560,10 +49609,11 @@ export const PARTS = [
     "weight": "1.18 Kilograms",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15156,
@@ -49593,10 +49643,11 @@ export const PARTS = [
     "weight": "1 Pounds",
     "socket": "LGA1151",
     "chipset": "Z390",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 1000,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15157,
@@ -49627,10 +49678,11 @@ export const PARTS = [
     "weight": "2018 Grams",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15158,
@@ -49659,10 +49711,11 @@ export const PARTS = [
     "weight": "1.5 Kilograms",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memType": "DDR",
     "maxMem": 128,
-    "memSlots": 1
+    "memSlots": 1,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15159,
@@ -49693,10 +49746,11 @@ export const PARTS = [
     "weight": "1900 Grams",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15160,
@@ -49731,10 +49785,11 @@ export const PARTS = [
     "weight": "4 Pounds",
     "socket": "AM5",
     "chipset": "X670E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15161,
@@ -49764,10 +49819,11 @@ export const PARTS = [
     "weight": "3.7 Pounds",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 1
+    "memSlots": 1,
+    "ff": "ATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15162,
@@ -49796,10 +49852,11 @@ export const PARTS = [
     "weight": "0.1 Kilograms",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15163,
@@ -49832,7 +49889,8 @@ export const PARTS = [
     "chipset": "X570",
     "memType": "DIMM",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi"
   },
   {
     "id": 15164,
@@ -49867,10 +49925,11 @@ export const PARTS = [
     "weight": "2590 Grams",
     "socket": "LGA1700",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15165,
@@ -49901,7 +49960,8 @@ export const PARTS = [
     "chipset": "H610",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15166,
@@ -49930,10 +49990,11 @@ export const PARTS = [
     "weight": "1500 Grams",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15167,
@@ -49962,10 +50023,11 @@ export const PARTS = [
     "mpn": "X670E GAMING PLUS WIFI",
     "socket": "AM5",
     "chipset": "X670E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15168,
@@ -49996,10 +50058,11 @@ export const PARTS = [
     "weight": "1.04 Kilograms",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15169,
@@ -50029,10 +50092,11 @@ export const PARTS = [
     "weight": "1 Kilograms",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15170,
@@ -50063,7 +50127,8 @@ export const PARTS = [
     "chipset": "X670",
     "memType": "DDR",
     "maxMem": 1,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 7"
   },
   {
     "id": 15171,
@@ -50093,10 +50158,11 @@ export const PARTS = [
     "weight": "480 Grams",
     "socket": "LGA1700",
     "chipset": "H610",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 1,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15172,
@@ -50128,7 +50194,8 @@ export const PARTS = [
     "chipset": "B550",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 6"
   },
   {
     "id": 15173,
@@ -50157,10 +50224,11 @@ export const PARTS = [
     "weight": "2 Kilograms",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15174,
@@ -50190,10 +50258,11 @@ export const PARTS = [
     "weight": "777 Grams",
     "socket": "LGA1700",
     "chipset": "H610",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15175,
@@ -50222,10 +50291,11 @@ export const PARTS = [
     "weight": "1.7 Kilograms",
     "socket": "AM5",
     "chipset": "X670",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 0.01,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15176,
@@ -50257,7 +50327,8 @@ export const PARTS = [
     "chipset": "B760",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15177,
@@ -50287,10 +50358,11 @@ export const PARTS = [
     "weight": "794 Grams",
     "socket": "AM5",
     "chipset": "A620",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15178,
@@ -50321,10 +50393,11 @@ export const PARTS = [
     "weight": "0.82 Kilograms",
     "socket": "LGA1700",
     "chipset": "H610",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15179,
@@ -50353,10 +50426,11 @@ export const PARTS = [
     "weight": "2.2 Pounds",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15180,
@@ -50386,10 +50460,11 @@ export const PARTS = [
     "weight": "1.6 Kilograms",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15181,
@@ -50420,7 +50495,8 @@ export const PARTS = [
     "chipset": "B550",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 7"
   },
   {
     "id": 15182,
@@ -50450,10 +50526,11 @@ export const PARTS = [
     "mpn": "B760M GAMING PLUS WIFI DDR4",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15183,
@@ -50484,10 +50561,11 @@ export const PARTS = [
     "weight": "1 Pounds",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "Mini-ITX",
     "memType": "DDR5",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "WiFi"
   },
   {
     "id": 15184,
@@ -50518,7 +50596,8 @@ export const PARTS = [
     "chipset": "B650",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15185,
@@ -50547,10 +50626,11 @@ export const PARTS = [
     "weight": "1 Kilograms",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "ATX",
     "memType": "DDR",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15186,
@@ -50579,10 +50659,11 @@ export const PARTS = [
     "mpn": "H610M S2H V2 DDR4",
     "socket": "LGA1700",
     "chipset": "H610",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15187,
@@ -50611,10 +50692,11 @@ export const PARTS = [
     "weight": "1385 Grams",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15188,
@@ -50643,10 +50725,11 @@ export const PARTS = [
     "weight": "1 Kilograms",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15189,
@@ -50676,10 +50759,11 @@ export const PARTS = [
     "weight": "4 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15190,
@@ -50708,10 +50792,11 @@ export const PARTS = [
     "weight": "1.6 Kilograms",
     "socket": "AM5",
     "chipset": "X670",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15191,
@@ -50740,10 +50825,11 @@ export const PARTS = [
     "weight": "1 Kilograms",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15192,
@@ -50772,10 +50858,11 @@ export const PARTS = [
     "weight": "1.6 Kilograms",
     "socket": "AM5",
     "chipset": "X670",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15193,
@@ -50805,10 +50892,11 @@ export const PARTS = [
     "mpn": "MSI MAG B650 Tomahawk",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15194,
@@ -50836,10 +50924,11 @@ export const PARTS = [
     "mpn": "90-MXBMN0-A0UAYZ",
     "socket": "AM5",
     "chipset": "A620",
-    "formFactor": "Mini-ITX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "WiFi"
   },
   {
     "id": 15195,
@@ -50869,10 +50958,11 @@ export const PARTS = [
     "weight": "810 Grams",
     "socket": "AM5",
     "chipset": "A6",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15196,
@@ -50903,7 +50993,8 @@ export const PARTS = [
     "chipset": "X870",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi"
   },
   {
     "id": 15197,
@@ -50933,10 +51024,11 @@ export const PARTS = [
     "weight": "16 ounces",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 64,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15198,
@@ -50967,10 +51059,11 @@ export const PARTS = [
     "weight": "16 ounces",
     "socket": "LGA1700",
     "chipset": "INTEL",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 64,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15199,
@@ -50999,10 +51092,11 @@ export const PARTS = [
     "weight": "2.4 Pounds",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15200,
@@ -51032,10 +51126,11 @@ export const PARTS = [
     "mpn": "B650E AORUS ELITE X AX ICE",
     "socket": "AM5",
     "chipset": "B650E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15201,
@@ -51065,10 +51160,11 @@ export const PARTS = [
     "weight": "5 Pounds",
     "socket": "LGA1700",
     "chipset": "Z690",
-    "formFactor": "E-ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "E-ATX",
+    "wifi": "None"
   },
   {
     "id": 15202,
@@ -51097,10 +51193,11 @@ export const PARTS = [
     "weight": "4.4 Pounds",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15203,
@@ -51129,10 +51226,11 @@ export const PARTS = [
     "weight": "528 Grams",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15204,
@@ -51163,7 +51261,8 @@ export const PARTS = [
     "chipset": "X670E",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 7"
   },
   {
     "id": 15205,
@@ -51192,10 +51291,11 @@ export const PARTS = [
     "weight": "0.85 Kilograms",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ITX",
     "memType": "DDR5",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ITX",
+    "wifi": "WiFi"
   },
   {
     "id": 15206,
@@ -51226,7 +51326,8 @@ export const PARTS = [
     "chipset": "B760",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi"
   },
   {
     "id": 15207,
@@ -51256,10 +51357,11 @@ export const PARTS = [
     "weight": "5 Pounds",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15208,
@@ -51287,10 +51389,11 @@ export const PARTS = [
     "mpn": "90-MXBG60-A0UAYZ",
     "socket": "LGA1200",
     "chipset": "H470",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15209,
@@ -51322,7 +51425,8 @@ export const PARTS = [
     "chipset": "B550",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15210,
@@ -51358,10 +51462,11 @@ export const PARTS = [
     "weight": "1.7 Kilograms",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15211,
@@ -51390,10 +51495,11 @@ export const PARTS = [
     "weight": "4.5 Pounds",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15212,
@@ -51423,10 +51529,11 @@ export const PARTS = [
     "weight": "2 Kilograms",
     "socket": "AM5",
     "chipset": "X670",
-    "formFactor": "E-ATX",
     "memType": "DDR5",
     "maxMem": 1024,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "E-ATX",
+    "wifi": "None"
   },
   {
     "id": 15213,
@@ -51457,7 +51564,8 @@ export const PARTS = [
     "chipset": "B650",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15214,
@@ -51488,7 +51596,8 @@ export const PARTS = [
     "chipset": "B650",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15215,
@@ -51518,10 +51627,11 @@ export const PARTS = [
     "mpn": "Z790 AORUS PRO X WIFI7",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15216,
@@ -51551,10 +51661,11 @@ export const PARTS = [
     "weight": "1000 Grams",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15217,
@@ -51583,9 +51694,10 @@ export const PARTS = [
     "mpn": "PRO B650-S WiFi",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15218,
@@ -51616,7 +51728,8 @@ export const PARTS = [
     "chipset": "X670",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15219,
@@ -51648,7 +51761,8 @@ export const PARTS = [
     "chipset": "X670E",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15220,
@@ -51684,10 +51798,11 @@ export const PARTS = [
     "weight": "4.94 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15221,
@@ -51718,7 +51833,8 @@ export const PARTS = [
     "chipset": "B650",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi"
   },
   {
     "id": 15222,
@@ -51748,10 +51864,11 @@ export const PARTS = [
     "weight": "2 Pounds",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "Mini-ITX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "None"
   },
   {
     "id": 15223,
@@ -51783,7 +51900,8 @@ export const PARTS = [
     "chipset": "A620",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi"
   },
   {
     "id": 15224,
@@ -51812,10 +51930,11 @@ export const PARTS = [
     "weight": "1.2 Kilograms",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15225,
@@ -51845,10 +51964,11 @@ export const PARTS = [
     "mpn": "B650 AERO G",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15226,
@@ -51878,10 +51998,11 @@ export const PARTS = [
     "weight": "8 Pounds",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "E-ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "E-ATX",
+    "wifi": "None"
   },
   {
     "id": 15227,
@@ -51910,9 +52031,10 @@ export const PARTS = [
     "mpn": "MSI X870 Gaming Plus WiFi",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15228,
@@ -51941,10 +52063,11 @@ export const PARTS = [
     "weight": "1 Kilograms",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15229,
@@ -51975,10 +52098,11 @@ export const PARTS = [
     "weight": "0.8 Kilograms",
     "socket": "LGA1700",
     "chipset": "H610",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 64,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15230,
@@ -52009,7 +52133,8 @@ export const PARTS = [
     "chipset": "Z890",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 7"
   },
   {
     "id": 15231,
@@ -52040,10 +52165,11 @@ export const PARTS = [
     "weight": "1315 Grams",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "Mini-ITX",
     "memType": "DDR5",
     "maxMem": 96,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "Mini-ITX",
+    "wifi": "WiFi"
   },
   {
     "id": 15232,
@@ -52074,7 +52200,8 @@ export const PARTS = [
     "chipset": "H610",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "wifi": "None"
   },
   {
     "id": 15233,
@@ -52105,10 +52232,11 @@ export const PARTS = [
     "weight": "2.7 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15234,
@@ -52137,10 +52265,11 @@ export const PARTS = [
     "mpn": "B650M Pro X3D WiFi",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15235,
@@ -52169,10 +52298,11 @@ export const PARTS = [
     "weight": "1.2 Kilograms",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15236,
@@ -52201,10 +52331,11 @@ export const PARTS = [
     "weight": "2.7 Kilograms",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15237,
@@ -52234,10 +52365,11 @@ export const PARTS = [
     "weight": "1.78 Kilograms",
     "socket": "LGA1700",
     "chipset": "INTEL",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15238,
@@ -52268,10 +52400,11 @@ export const PARTS = [
     "weight": "2 Pounds",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "Mini-ITX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15239,
@@ -52302,10 +52435,11 @@ export const PARTS = [
     "weight": "3 Pounds",
     "socket": "AM5",
     "chipset": "B840",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 3
+    "memSlots": 3,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15240,
@@ -52335,10 +52469,11 @@ export const PARTS = [
     "weight": "3.7 Pounds",
     "socket": "LGA1850",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15241,
@@ -52368,10 +52503,11 @@ export const PARTS = [
     "weight": "1.3 Pounds",
     "socket": "LGA1700",
     "chipset": "H610",
-    "formFactor": "Mini-ITX",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "None"
   },
   {
     "id": 15242,
@@ -52400,10 +52536,11 @@ export const PARTS = [
     "weight": "1 Grams",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ITX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ITX",
+    "wifi": "WiFi"
   },
   {
     "id": 15243,
@@ -52433,10 +52570,11 @@ export const PARTS = [
     "weight": "3.03 Kilograms",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "E-ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "E-ATX",
+    "wifi": "None"
   },
   {
     "id": 15244,
@@ -52466,10 +52604,11 @@ export const PARTS = [
     "weight": "3 Pounds",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 64,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15245,
@@ -52498,10 +52637,11 @@ export const PARTS = [
     "weight": "1.1 Kilograms",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "Mini-ITX",
     "memType": "DDR5",
     "maxMem": 96,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15246,
@@ -52530,9 +52670,10 @@ export const PARTS = [
     "mpn": "265KZ890AYWWFW",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15247,
@@ -52562,9 +52703,10 @@ export const PARTS = [
     "mpn": "B850 GAMING PLUS WIFI V1",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15248,
@@ -52595,7 +52737,8 @@ export const PARTS = [
     "chipset": "H610",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "wifi": "None"
   },
   {
     "id": 15249,
@@ -52626,7 +52769,8 @@ export const PARTS = [
     "chipset": "Z890",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 7"
   },
   {
     "id": 15250,
@@ -52657,10 +52801,11 @@ export const PARTS = [
     "weight": "1.55 Kilograms",
     "socket": "AM5",
     "chipset": "785E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15251,
@@ -52690,10 +52835,11 @@ export const PARTS = [
     "mpn": "B850M DS3H",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15252,
@@ -52724,10 +52870,11 @@ export const PARTS = [
     "weight": "0.89 Kilograms",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15253,
@@ -52756,10 +52903,11 @@ export const PARTS = [
     "weight": "9 Grams",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15254,
@@ -52788,10 +52936,11 @@ export const PARTS = [
     "weight": "1.8 Pounds",
     "socket": "AM5",
     "chipset": "A620 AM5",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6"
   },
   {
     "id": 15255,
@@ -52822,10 +52971,11 @@ export const PARTS = [
     "weight": "5.6 Pounds",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15256,
@@ -52856,7 +53006,8 @@ export const PARTS = [
     "chipset": "Z890",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 7"
   },
   {
     "id": 15257,
@@ -52886,10 +53037,11 @@ export const PARTS = [
     "weight": "1.61 Kilograms",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15258,
@@ -52918,10 +53070,11 @@ export const PARTS = [
     "mpn": "B650E MAX GAMING WIFI",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15259,
@@ -52952,10 +53105,11 @@ export const PARTS = [
     "weight": "5 Pounds",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15260,
@@ -52989,10 +53143,11 @@ export const PARTS = [
     "mpn": "Z890 AORUS ELITE WIFI7 ICE",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15261,
@@ -53023,7 +53178,8 @@ export const PARTS = [
     "chipset": "X670E",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "wifi": "None"
   },
   {
     "id": 15262,
@@ -53053,10 +53209,11 @@ export const PARTS = [
     "weight": "1.6 Pounds",
     "socket": "LGA1151",
     "chipset": "H110",
-    "formFactor": "mATX",
     "memType": "SDRAM",
     "maxMem": 32,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15263,
@@ -53086,9 +53243,10 @@ export const PARTS = [
     "mpn": "B860M AORUS ELITE WIFI6E ICE",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "mATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15264,
@@ -53118,9 +53276,10 @@ export const PARTS = [
     "weight": "1.47 Kilograms",
     "socket": null,
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15265,
@@ -53151,10 +53310,11 @@ export const PARTS = [
     "weight": "2.3 Pounds",
     "socket": "AM5",
     "chipset": "AM5",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 129,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15266,
@@ -53183,10 +53343,11 @@ export const PARTS = [
     "mpn": "MSI PRO B760-VC WiFi",
     "socket": "LGA1700",
     "chipset": "CORE 12TH & 13TH GEN",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 64,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15267,
@@ -53217,7 +53378,8 @@ export const PARTS = [
     "chipset": "A620",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "wifi": "None"
   },
   {
     "id": 15268,
@@ -53247,10 +53409,11 @@ export const PARTS = [
     "mpn": "Z790 MAX GAMING WIFI7",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15269,
@@ -53279,10 +53442,11 @@ export const PARTS = [
     "weight": "1 Kilograms",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15270,
@@ -53311,10 +53475,11 @@ export const PARTS = [
     "weight": "2.4 Kilograms",
     "socket": "LGA2066",
     "chipset": "インテルX299",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 256,
-    "memSlots": 8
+    "memSlots": 8,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15271,
@@ -53348,10 +53513,11 @@ export const PARTS = [
     "mpn": "Z890PWIFI",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15272,
@@ -53381,7 +53547,8 @@ export const PARTS = [
     "chipset": "YES",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15273,
@@ -53411,10 +53578,11 @@ export const PARTS = [
     "mpn": "B860 Tomahawk WiFi",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15274,
@@ -53445,10 +53613,11 @@ export const PARTS = [
     "weight": "2.9 Pounds",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15275,
@@ -53478,10 +53647,11 @@ export const PARTS = [
     "mpn": "TUF GAMING B860M-PLUS WIFI",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15276,
@@ -53510,9 +53680,10 @@ export const PARTS = [
     "mpn": "PRO B650M-A WIFI V1",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "mATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15277,
@@ -53548,10 +53719,11 @@ export const PARTS = [
     "weight": "2.3 Pounds",
     "socket": "AM5",
     "chipset": "B840",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15278,
@@ -53580,10 +53752,11 @@ export const PARTS = [
     "weight": "1 Kilograms",
     "socket": "AM5",
     "chipset": "A620",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15279,
@@ -53612,10 +53785,11 @@ export const PARTS = [
     "mpn": "N9-X87XT-W1",
     "socket": "AM5",
     "chipset": "870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15280,
@@ -53644,9 +53818,10 @@ export const PARTS = [
     "mpn": "N9-Z89XT-B1",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15281,
@@ -53675,10 +53850,11 @@ export const PARTS = [
     "weight": "0.98 Kilograms",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15282,
@@ -53707,10 +53883,11 @@ export const PARTS = [
     "mpn": "MPG X570S CARBON EK X",
     "socket": "AM4",
     "chipset": "570X",
-    "formFactor": "ATX",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15283,
@@ -53746,10 +53923,11 @@ export const PARTS = [
     "weight": "1.7 Kilograms",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15284,
@@ -53778,9 +53956,10 @@ export const PARTS = [
     "mpn": "MSI Z790 GAMING PLUS WIFI-AMZ",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15285,
@@ -53809,10 +53988,11 @@ export const PARTS = [
     "weight": "860 Grams",
     "socket": "LGA1700",
     "chipset": "H610",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 1,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15286,
@@ -53846,10 +54026,11 @@ export const PARTS = [
     "mpn": "MPG B850I Edge TI WiFi",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "Mini-ITX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "WiFi"
   },
   {
     "id": 15287,
@@ -53879,10 +54060,11 @@ export const PARTS = [
     "mpn": "B850 AI TOP",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15288,
@@ -53912,10 +54094,11 @@ export const PARTS = [
     "weight": "3.2 Pounds",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 64,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15289,
@@ -53946,10 +54129,11 @@ export const PARTS = [
     "weight": "880 Grams",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15290,
@@ -53978,9 +54162,10 @@ export const PARTS = [
     "mpn": "B860 DS3H WIFI6E",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15291,
@@ -54016,10 +54201,11 @@ export const PARTS = [
     "weight": "4.2 Pounds",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15292,
@@ -54054,10 +54240,11 @@ export const PARTS = [
     "mpn": "B850 MLG Edition",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15293,
@@ -54087,7 +54274,8 @@ export const PARTS = [
     "chipset": "B650",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15294,
@@ -54121,9 +54309,10 @@ export const PARTS = [
     "mpn": "ROG STRIX Z890-F GAMING WIFI",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15295,
@@ -54153,10 +54342,11 @@ export const PARTS = [
     "weight": "1 Kilograms",
     "socket": "AM5",
     "chipset": "B840",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15296,
@@ -54186,9 +54376,10 @@ export const PARTS = [
     "mpn": "H610M S2H V2",
     "socket": "LGA1700",
     "chipset": "H610",
-    "formFactor": "mATX",
     "memType": "DDR5",
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15297,
@@ -54218,10 +54409,11 @@ export const PARTS = [
     "mpn": "MAG Z790 Tomahawk WiFi",
     "socket": "LGA1700",
     "chipset": "INTEL",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15298,
@@ -54252,7 +54444,8 @@ export const PARTS = [
     "chipset": "A620",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15299,
@@ -54281,10 +54474,11 @@ export const PARTS = [
     "weight": "0.6 Kilograms",
     "socket": "LGA1700",
     "chipset": "Q670",
-    "formFactor": "Mini-ITX",
     "memType": "DDR5",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "None"
   },
   {
     "id": 15300,
@@ -54314,10 +54508,11 @@ export const PARTS = [
     "weight": "1.5 Pounds",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15301,
@@ -54347,9 +54542,10 @@ export const PARTS = [
     "mpn": "B650M-P",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "mATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15302,
@@ -54380,9 +54576,10 @@ export const PARTS = [
     "weight": "2.8 Pounds",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "Mini-ITX",
     "memType": "DDR5",
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "None"
   },
   {
     "id": 15303,
@@ -54411,10 +54608,11 @@ export const PARTS = [
     "weight": "2 Kilograms",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15304,
@@ -54443,10 +54641,11 @@ export const PARTS = [
     "mpn": "H97-STRONG",
     "socket": "LGA1150",
     "chipset": "H97",
-    "formFactor": "Mini-ITX",
     "memType": "DDR",
     "maxMem": 16,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "Mini-ITX",
+    "wifi": "None"
   },
   {
     "id": 15305,
@@ -54475,10 +54674,11 @@ export const PARTS = [
     "weight": "3 Pounds",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15306,
@@ -54507,9 +54707,10 @@ export const PARTS = [
     "mpn": "X870-P",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15307,
@@ -54538,9 +54739,10 @@ export const PARTS = [
     "mpn": "B860 AORUS ELITE WIFI7 ICE",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15308,
@@ -54571,9 +54773,10 @@ export const PARTS = [
     "weight": "2.6 Pounds",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "mATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15309,
@@ -54602,10 +54805,11 @@ export const PARTS = [
     "weight": "1 Kilograms",
     "socket": "AM5",
     "chipset": "X670E",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15310,
@@ -54628,10 +54832,11 @@ export const PARTS = [
     "mpn": "B550M PRO SE",
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15311,
@@ -54662,10 +54867,11 @@ export const PARTS = [
     "weight": "3.7 Pounds",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15312,
@@ -54695,10 +54901,11 @@ export const PARTS = [
     "weight": "3.4 Pounds",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15313,
@@ -54729,9 +54936,10 @@ export const PARTS = [
     "weight": "4.2 Pounds",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15314,
@@ -54761,9 +54969,10 @@ export const PARTS = [
     "mpn": "B860M AORUS ELITE WIFI6E",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "mATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15315,
@@ -54794,7 +55003,8 @@ export const PARTS = [
     "chipset": "B840",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15316,
@@ -54823,10 +55033,11 @@ export const PARTS = [
     "mpn": "TUF GAMING B650-E WIFI",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15317,
@@ -54859,7 +55070,8 @@ export const PARTS = [
     "chipset": "AM5",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi"
   },
   {
     "id": 15318,
@@ -54888,10 +55100,11 @@ export const PARTS = [
     "mpn": "MSI MAG Z790 Tomahawk MAX",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 64,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15319,
@@ -54922,10 +55135,11 @@ export const PARTS = [
     "weight": "2000 Grams",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15320,
@@ -54956,7 +55170,8 @@ export const PARTS = [
     "chipset": "B660",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15321,
@@ -54987,7 +55202,8 @@ export const PARTS = [
     "chipset": "B860",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 7"
   },
   {
     "id": 15322,
@@ -55015,10 +55231,11 @@ export const PARTS = [
     "mpn": "X99 D8",
     "socket": "LGA2011-3",
     "chipset": "C612",
-    "formFactor": "E-ATX",
     "memType": "DDR4",
     "maxMem": 256,
-    "memSlots": 8
+    "memSlots": 8,
+    "ff": "E-ATX",
+    "wifi": "None"
   },
   {
     "id": 15323,
@@ -55048,10 +55265,11 @@ export const PARTS = [
     "weight": "4.45 Pounds",
     "socket": "AM5",
     "chipset": "AMD",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15324,
@@ -55083,7 +55301,8 @@ export const PARTS = [
     "chipset": "X870",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 7"
   },
   {
     "id": 15325,
@@ -55110,7 +55329,8 @@ export const PARTS = [
     ],
     "upc": "618996786503",
     "mpn": "14400PRO760MPD4",
-    "socket": "LGA1700"
+    "socket": "LGA1700",
+    "wifi": "None"
   },
   {
     "id": 15326,
@@ -55139,10 +55359,11 @@ export const PARTS = [
     "weight": "1000 Grams",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15327,
@@ -55172,9 +55393,10 @@ export const PARTS = [
     "mpn": "MAG X870E Tomahawk WiFi",
     "socket": "AM5",
     "chipset": "X670E",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15328,
@@ -55210,10 +55432,11 @@ export const PARTS = [
     "weight": "3805 Grams",
     "socket": "LGA1851",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15329,
@@ -55243,9 +55466,10 @@ export const PARTS = [
     "mpn": "MSI PRO H610M-G DDR4 V1",
     "socket": "LGA1700",
     "chipset": "H610",
-    "formFactor": "mATX",
     "memType": "DDR4",
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15330,
@@ -55277,7 +55501,8 @@ export const PARTS = [
     "chipset": "H610",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "wifi": "None"
   },
   {
     "id": 15331,
@@ -55307,10 +55532,11 @@ export const PARTS = [
     "weight": "2.7 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15332,
@@ -55339,9 +55565,10 @@ export const PARTS = [
     "weight": "0.06 Grams",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15333,
@@ -55370,10 +55597,11 @@ export const PARTS = [
     "weight": "0.5 Kilograms",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15334,
@@ -55402,9 +55630,10 @@ export const PARTS = [
     "mpn": "265KFZ890AYWWFW",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15335,
@@ -55433,10 +55662,11 @@ export const PARTS = [
     "weight": "910 Grams",
     "socket": "AM5",
     "chipset": "AMD",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15336,
@@ -55465,10 +55695,11 @@ export const PARTS = [
     "weight": "1 Kilograms",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15337,
@@ -55498,10 +55729,11 @@ export const PARTS = [
     "weight": "2 Pounds",
     "socket": "LGA1851",
     "chipset": "H810",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 96,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15338,
@@ -55531,10 +55763,11 @@ export const PARTS = [
     "weight": "2.3 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15339,
@@ -55565,10 +55798,11 @@ export const PARTS = [
     "weight": "1.59 Kilograms",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15340,
@@ -55598,10 +55832,11 @@ export const PARTS = [
     "weight": "1.72 Kilograms",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15341,
@@ -55629,10 +55864,11 @@ export const PARTS = [
     "mpn": "B860M-X WIFI",
     "socket": "LGA1851",
     "chipset": "Z790",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15342,
@@ -55664,7 +55900,8 @@ export const PARTS = [
     "chipset": "B860M",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15343,
@@ -55694,10 +55931,11 @@ export const PARTS = [
     "weight": "2.1 Pounds",
     "socket": "AM5",
     "chipset": "B840",
-    "formFactor": "mATX",
     "memType": "DDR6, DDR6, DDR6",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15344,
@@ -55726,10 +55964,11 @@ export const PARTS = [
     "mpn": "TUF GAMING B850M-PLUS WIFI7",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15345,
@@ -55759,7 +55998,8 @@ export const PARTS = [
     "chipset": "H110",
     "memType": "DDR4",
     "maxMem": 32,
-    "memSlots": 2
+    "memSlots": 2,
+    "wifi": "None"
   },
   {
     "id": 15346,
@@ -55788,10 +56028,11 @@ export const PARTS = [
     "weight": "2 Kilograms",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15347,
@@ -55819,10 +56060,11 @@ export const PARTS = [
     "mpn": "H610H7-M2",
     "socket": "LGA1700",
     "chipset": "H610",
-    "formFactor": "mATX",
     "memType": "DDR4",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15348,
@@ -55849,10 +56091,11 @@ export const PARTS = [
     "mpn": "A620AM-HVS",
     "socket": "AM5",
     "chipset": "A620",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15349,
@@ -55882,10 +56125,11 @@ export const PARTS = [
     "weight": "1012 Grams",
     "socket": "LGA1700",
     "chipset": "Q670",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15350,
@@ -55914,10 +56158,11 @@ export const PARTS = [
     "mpn": "MEG Z890 UNIFY-X",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 126,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15351,
@@ -55948,7 +56193,8 @@ export const PARTS = [
     "chipset": "B860",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15352,
@@ -55979,10 +56225,11 @@ export const PARTS = [
     "weight": "3.95 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15353,
@@ -56013,7 +56260,8 @@ export const PARTS = [
     "chipset": "X870",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 7"
   },
   {
     "id": 15354,
@@ -56041,10 +56289,11 @@ export const PARTS = [
     "mpn": "B860M-X",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15355,
@@ -56074,9 +56323,10 @@ export const PARTS = [
     "mpn": "B860M GAMING X WIFI6E",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "mATX",
     "memType": "DDR5",
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15356,
@@ -56107,10 +56357,11 @@ export const PARTS = [
     "weight": "1750 Grams",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15357,
@@ -56145,10 +56396,11 @@ export const PARTS = [
     "mpn": "Z790 EAGLE AX",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memType": "DDR5 SDRAM",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15358,
@@ -56179,10 +56431,11 @@ export const PARTS = [
     "weight": "2 Pounds",
     "socket": "LGA1851",
     "chipset": "H810",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 96,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15359,
@@ -56212,10 +56465,11 @@ export const PARTS = [
     "weight": "2.2 Pounds",
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15360,
@@ -56244,10 +56498,11 @@ export const PARTS = [
     "mpn": "B760M DS3H WIFI6E GEN5",
     "socket": "LGA1700",
     "chipset": "B760",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 15361,
@@ -56277,10 +56532,11 @@ export const PARTS = [
     "weight": "3.2 Pounds",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15362,
@@ -56309,10 +56565,11 @@ export const PARTS = [
     "mpn": "Z890M AORUS ELITE WIFI7",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "mATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15363,
@@ -56344,7 +56601,8 @@ export const PARTS = [
     "chipset": "Z890",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "WiFi 7"
   },
   {
     "id": 15364,
@@ -56374,10 +56632,11 @@ export const PARTS = [
     "mpn": "PRO B860-P WIFI",
     "socket": "LGA1851",
     "chipset": "B860",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15365,
@@ -56413,10 +56672,11 @@ export const PARTS = [
     "weight": "5.2 Pounds",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15366,
@@ -56446,10 +56706,11 @@ export const PARTS = [
     "weight": "1.1 Pounds",
     "socket": "LGA1851",
     "chipset": "H810",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15367,
@@ -56480,7 +56741,8 @@ export const PARTS = [
     "chipset": "H610 EXPRESS",
     "memType": "DDR5",
     "maxMem": 64,
-    "memSlots": 2
+    "memSlots": 2,
+    "wifi": "None"
   },
   {
     "id": 15368,
@@ -56510,10 +56772,11 @@ export const PARTS = [
     "weight": "2.09 Kilograms",
     "socket": "AM5",
     "chipset": "X670E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15369,
@@ -56542,10 +56805,11 @@ export const PARTS = [
     "mpn": "PRO H810I WIFI",
     "socket": "LGA1851",
     "chipset": "H810",
-    "formFactor": "ITX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ITX",
+    "wifi": "WiFi"
   },
   {
     "id": 15370,
@@ -56574,10 +56838,11 @@ export const PARTS = [
     "weight": "4.4 Pounds",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15371,
@@ -56608,7 +56873,8 @@ export const PARTS = [
     "chipset": "H610",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "wifi": "None"
   },
   {
     "id": 15372,
@@ -56639,7 +56905,8 @@ export const PARTS = [
     "chipset": "H610",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "wifi": "None"
   },
   {
     "id": 15373,
@@ -56669,10 +56936,11 @@ export const PARTS = [
     "mpn": "B650 AORUS ELITE AX ICE",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15374,
@@ -56703,7 +56971,8 @@ export const PARTS = [
     "chipset": "B760",
     "memType": "DDR4",
     "maxMem": 128,
-    "memSlots": 4
+    "memSlots": 4,
+    "wifi": "None"
   },
   {
     "id": 15375,
@@ -56733,10 +57002,11 @@ export const PARTS = [
     "mpn": "9600XB650EMAXGAMWF",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15376,
@@ -56767,10 +57037,11 @@ export const PARTS = [
     "weight": "4.4 Pounds",
     "socket": "AM5",
     "chipset": "X870E",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15377,
@@ -56800,10 +57071,11 @@ export const PARTS = [
     "mpn": "MPG X870I Edge TI EVO WiFi",
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ITX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "ITX",
+    "wifi": "WiFi"
   },
   {
     "id": 15378,
@@ -56832,10 +57104,11 @@ export const PARTS = [
     "weight": "0.67 Kilograms",
     "socket": "AM5",
     "chipset": "X670",
-    "formFactor": "Mini-ITX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 1
+    "memSlots": 1,
+    "ff": "Mini-ITX",
+    "wifi": "None"
   },
   {
     "id": 15379,
@@ -56863,10 +57136,11 @@ export const PARTS = [
     "mpn": "H810M-X",
     "socket": "LGA1851",
     "chipset": "H810",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15380,
@@ -56897,7 +57171,8 @@ export const PARTS = [
     "chipset": "H810",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "wifi": "None"
   },
   {
     "id": 15381,
@@ -56924,10 +57199,11 @@ export const PARTS = [
     "mpn": "H810M-X WIFI",
     "socket": "LGA1851",
     "chipset": "H810",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15382,
@@ -56957,10 +57233,11 @@ export const PARTS = [
     "weight": "6 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 128,
-    "memSlots": 2
+    "memSlots": 2,
+    "ff": "mATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15383,
@@ -56988,7 +57265,8 @@ export const PARTS = [
     "upc": "618996791484",
     "mpn": "14600KB760MDS3HAXD4",
     "socket": "LGA1700",
-    "formFactor": "mATX"
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15384,
@@ -57018,10 +57296,11 @@ export const PARTS = [
     "weight": "7.9 Pounds",
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 15385,
@@ -57051,10 +57330,11 @@ export const PARTS = [
     "weight": "1.1 Pounds",
     "socket": "AM5",
     "chipset": "B840",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi"
   },
   {
     "id": 15386,
@@ -57084,10 +57364,11 @@ export const PARTS = [
     "mpn": "B650M C V3",
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "mATX",
     "memType": "DDR5",
     "maxMem": 192,
-    "memSlots": 3
+    "memSlots": 3,
+    "ff": "mATX",
+    "wifi": "None"
   },
   {
     "id": 15387,
@@ -57116,10 +57397,11 @@ export const PARTS = [
     "weight": "2 Kilograms",
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memType": "DDR5",
     "maxMem": 256,
-    "memSlots": 4
+    "memSlots": 4,
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 15388,
@@ -65861,7 +66143,8 @@ export const PARTS = [
     "weight": "260 Grams",
     "cap": 5000,
     "form": "HDD",
-    "formFactor": "Portable"
+    "ff": "Portable",
+    "storageType": "HDD"
   },
   {
     "id": 15683,
@@ -65897,7 +66180,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15684,
@@ -65932,7 +66216,8 @@ export const PARTS = [
     "weight": "0.19 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15685,
@@ -65968,7 +66253,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15686,
@@ -65999,7 +66285,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15687,
@@ -66030,7 +66317,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15688,
@@ -66060,7 +66348,8 @@ export const PARTS = [
     "weight": "0.06 Kilograms",
     "cap": 240,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15689,
@@ -66091,7 +66380,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "2280 M.2"
+    "ff": "2280 M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15690,
@@ -66123,7 +66413,8 @@ export const PARTS = [
     "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15691,
@@ -66160,7 +66451,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15692,
@@ -66191,7 +66483,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15693,
@@ -66221,7 +66514,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15694,
@@ -66252,7 +66546,8 @@ export const PARTS = [
     "weight": "0.05 Pounds",
     "cap": 480,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15695,
@@ -66287,7 +66582,8 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15696,
@@ -66322,7 +66618,8 @@ export const PARTS = [
     "weight": "0.19 Pounds",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15697,
@@ -66359,7 +66656,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 (2280)"
+    "ff": "M.2 (2280)",
+    "storageType": "NVMe"
   },
   {
     "id": 15698,
@@ -66390,7 +66688,8 @@ export const PARTS = [
     "weight": "0.08 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15699,
@@ -66421,7 +66720,8 @@ export const PARTS = [
     "weight": "167 Grams",
     "cap": 2000,
     "form": "HDD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15700,
@@ -66451,7 +66751,8 @@ export const PARTS = [
     "weight": "30.4 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15701,
@@ -66482,7 +66783,7 @@ export const PARTS = [
     "weight": "0.06 Pounds",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "Custom"
+    "ff": "Custom"
   },
   {
     "id": 15702,
@@ -66512,7 +66813,8 @@ export const PARTS = [
     "weight": "1.65 Pounds",
     "cap": 10000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15703,
@@ -66543,7 +66845,8 @@ export const PARTS = [
     "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15704,
@@ -66573,7 +66876,8 @@ export const PARTS = [
     "weight": "45 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15705,
@@ -66602,7 +66906,8 @@ export const PARTS = [
     "mpn": "CT2000X9SSD902",
     "weight": "32 Grams",
     "cap": 2000,
-    "formFactor": "Portable"
+    "ff": "Portable",
+    "storageType": "SSD"
   },
   {
     "id": 15706,
@@ -66632,7 +66937,8 @@ export const PARTS = [
     "cap": 256,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "m 2"
+    "ff": "m 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15707,
@@ -66662,7 +66968,8 @@ export const PARTS = [
     "weight": "46 Grams",
     "cap": 256,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15708,
@@ -66694,7 +67001,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15709,
@@ -66730,7 +67038,8 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "SSD"
   },
   {
     "id": 15710,
@@ -66761,7 +67070,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 (2280)"
+    "ff": "M.2 (2280)",
+    "storageType": "NVMe"
   },
   {
     "id": 15711,
@@ -66790,7 +67100,8 @@ export const PARTS = [
     "weight": "35 Grams",
     "cap": 512,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15712,
@@ -66819,7 +67130,8 @@ export const PARTS = [
     "mpn": "CT4000X10SSD9-02",
     "weight": "32 Grams",
     "cap": 4000,
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SSD"
   },
   {
     "id": 15713,
@@ -66848,7 +67160,8 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15714,
@@ -66878,7 +67191,8 @@ export const PARTS = [
     "weight": "4.5 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15715,
@@ -66907,7 +67221,8 @@ export const PARTS = [
     "mpn": "CT8000X10SSD9-02",
     "weight": "32 Grams",
     "cap": 8000,
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SSD"
   },
   {
     "id": 15716,
@@ -66943,7 +67258,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15717,
@@ -66973,7 +67289,8 @@ export const PARTS = [
     "weight": "1.06 Pounds",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15718,
@@ -67032,7 +67349,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15720,
@@ -67062,7 +67380,8 @@ export const PARTS = [
     "weight": "4.5 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M.2 (2280)"
+    "ff": "M.2 (2280)",
+    "storageType": "NVMe"
   },
   {
     "id": 15721,
@@ -67093,7 +67412,8 @@ export const PARTS = [
     "weight": "0.09 Pounds",
     "cap": 240,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15722,
@@ -67124,7 +67444,8 @@ export const PARTS = [
     "cap": 256,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M.2 2280 (80mm) form factor"
+    "ff": "M.2 2280 (80mm) form factor",
+    "storageType": "NVMe"
   },
   {
     "id": 15723,
@@ -67155,7 +67476,8 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 256,
     "form": "NVMe",
-    "formFactor": "laptop"
+    "ff": "laptop",
+    "storageType": "SSD"
   },
   {
     "id": 15724,
@@ -67186,7 +67508,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M.2 2280 (80mm) form factor"
+    "ff": "M.2 2280 (80mm) form factor",
+    "storageType": "NVMe"
   },
   {
     "id": 15725,
@@ -67215,7 +67538,8 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15726,
@@ -67251,7 +67575,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15727,
@@ -67282,7 +67607,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15728,
@@ -67312,7 +67638,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15729,
@@ -67341,7 +67668,8 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 512,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15730,
@@ -67370,7 +67698,8 @@ export const PARTS = [
     "mpn": "X12-Black-512 GB",
     "cap": 512,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15731,
@@ -67400,7 +67729,8 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15732,
@@ -67431,7 +67761,8 @@ export const PARTS = [
     "weight": "7.5 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15733,
@@ -67466,7 +67797,8 @@ export const PARTS = [
     "weight": "1.5 Pounds",
     "cap": 8000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15734,
@@ -67497,7 +67829,8 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 512,
     "form": "NVMe",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "SSD"
   },
   {
     "id": 15735,
@@ -67529,7 +67862,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "m 2"
+    "ff": "m 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15736,
@@ -67559,7 +67893,8 @@ export const PARTS = [
     "weight": "5.44 Grams",
     "cap": 500,
     "form": "NVMe",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15737,
@@ -67590,7 +67925,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15738,
@@ -67620,7 +67956,8 @@ export const PARTS = [
     "weight": "780 Grams",
     "cap": 28000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15739,
@@ -67650,7 +67987,8 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15740,
@@ -67681,7 +68019,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15741,
@@ -67713,7 +68052,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15742,
@@ -67743,7 +68083,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2230"
+    "ff": "M.2 2230",
+    "storageType": "NVMe"
   },
   {
     "id": 15743,
@@ -67771,7 +68112,8 @@ export const PARTS = [
     "mpn": "GM998",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15744,
@@ -67801,7 +68143,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2230"
+    "ff": "M.2 2230",
+    "storageType": "NVMe"
   },
   {
     "id": 15745,
@@ -67830,7 +68173,8 @@ export const PARTS = [
     "mpn": "A55",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15746,
@@ -67859,7 +68203,8 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15747,
@@ -67890,7 +68235,8 @@ export const PARTS = [
     "weight": "24 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15748,
@@ -67925,7 +68271,8 @@ export const PARTS = [
     "weight": "54 Grams",
     "cap": 500,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15749,
@@ -67956,7 +68303,8 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M.2 2280 (80mm) form factor"
+    "ff": "M.2 2280 (80mm) form factor",
+    "storageType": "NVMe"
   },
   {
     "id": 15750,
@@ -67986,7 +68334,8 @@ export const PARTS = [
     "weight": "60 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15751,
@@ -68016,7 +68365,8 @@ export const PARTS = [
     "weight": "0.92 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15752,
@@ -68047,7 +68397,8 @@ export const PARTS = [
     "weight": "0.2 Pounds",
     "cap": 5000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15753,
@@ -68078,7 +68429,8 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15754,
@@ -68107,7 +68459,8 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15755,
@@ -68139,7 +68492,8 @@ export const PARTS = [
     "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15756,
@@ -68169,7 +68523,8 @@ export const PARTS = [
     "weight": "35.1 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15757,
@@ -68198,7 +68553,8 @@ export const PARTS = [
     "mpn": "CT4000X10PROSSD902",
     "weight": "42 Grams",
     "cap": 4000,
-    "formFactor": "Portable"
+    "ff": "Portable",
+    "storageType": "SSD"
   },
   {
     "id": 15758,
@@ -68227,7 +68583,8 @@ export const PARTS = [
     "mpn": "CT2000X10PROSSD902",
     "weight": "42 Grams",
     "cap": 2000,
-    "formFactor": "Portable"
+    "ff": "Portable",
+    "storageType": "SSD"
   },
   {
     "id": 15759,
@@ -68257,7 +68614,8 @@ export const PARTS = [
     "mpn": "765441344235",
     "cap": 512,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15760,
@@ -68288,7 +68646,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15761,
@@ -68318,7 +68677,8 @@ export const PARTS = [
     "weight": "5.7 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15762,
@@ -68347,7 +68707,8 @@ export const PARTS = [
     "mpn": "TS256GESD310C",
     "weight": "0.01 Pounds",
     "cap": 256,
-    "formFactor": "Portable"
+    "ff": "Portable",
+    "storageType": "SSD"
   },
   {
     "id": 15763,
@@ -68378,7 +68739,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15764,
@@ -68408,7 +68770,8 @@ export const PARTS = [
     "weight": "640 Grams",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15765,
@@ -68439,7 +68802,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15766,
@@ -68469,7 +68833,8 @@ export const PARTS = [
     "cap": 256,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15767,
@@ -68498,7 +68863,8 @@ export const PARTS = [
     "cap": 128,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15768,
@@ -68528,7 +68894,8 @@ export const PARTS = [
     "weight": "1.4 Pounds",
     "cap": 6000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15769,
@@ -68557,7 +68924,8 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15770,
@@ -68587,7 +68955,8 @@ export const PARTS = [
     "weight": "0.55 Pounds",
     "cap": 6000,
     "form": "HDD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15771,
@@ -68616,7 +68985,8 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 512,
     "form": "NVMe",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15772,
@@ -68647,7 +69017,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15773,
@@ -68678,7 +69049,8 @@ export const PARTS = [
     "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15774,
@@ -68707,7 +69079,8 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15775,
@@ -68732,7 +69105,8 @@ export const PARTS = [
     "weight": "1.7 Pounds",
     "cap": 12000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15776,
@@ -68761,7 +69135,8 @@ export const PARTS = [
     "mpn": "MZ-77E500B/EU",
     "weight": "3.12 Ounces",
     "cap": 500,
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SSD"
   },
   {
     "id": 15777,
@@ -68792,7 +69167,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15778,
@@ -68823,7 +69199,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 (2280)"
+    "ff": "M.2 (2280)",
+    "storageType": "NVMe"
   },
   {
     "id": 15779,
@@ -68852,7 +69229,8 @@ export const PARTS = [
     "weight": "0.13 Pounds",
     "cap": 512,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15780,
@@ -68883,7 +69261,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15781,
@@ -68915,7 +69294,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15782,
@@ -68945,7 +69325,8 @@ export const PARTS = [
     "weight": "0.1 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15783,
@@ -68975,7 +69356,8 @@ export const PARTS = [
     "weight": "20 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15784,
@@ -69005,7 +69387,8 @@ export const PARTS = [
     "weight": "60 Grams",
     "cap": 500,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15785,
@@ -69035,7 +69418,8 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "m 2"
+    "ff": "m 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15786,
@@ -69064,7 +69448,8 @@ export const PARTS = [
     "weight": "1.6 Ounces",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15787,
@@ -69094,7 +69479,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "m 2"
+    "ff": "m 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15788,
@@ -69123,7 +69509,8 @@ export const PARTS = [
     "mpn": "dffb3111-b2ee-4c18-9d0b-cb68a7707f7c",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15789,
@@ -69153,7 +69540,8 @@ export const PARTS = [
     "weight": "0.15 Ounces",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15790,
@@ -69182,7 +69570,8 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 500,
     "form": "NVMe",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15791,
@@ -69213,7 +69602,8 @@ export const PARTS = [
     "weight": "0.12 Pounds",
     "cap": 500,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15792,
@@ -69242,7 +69632,8 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15793,
@@ -69272,7 +69663,8 @@ export const PARTS = [
     "weight": "2.12 Ounces",
     "cap": 512,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15794,
@@ -69302,7 +69694,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15795,
@@ -69332,7 +69725,8 @@ export const PARTS = [
     "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15796,
@@ -69360,7 +69754,8 @@ export const PARTS = [
     "mpn": "P320P512GM28",
     "cap": 512,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15797,
@@ -69392,7 +69787,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15798,
@@ -69422,7 +69818,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15799,
@@ -69452,7 +69849,8 @@ export const PARTS = [
     "weight": "0.65 Kilograms",
     "cap": 6000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15800,
@@ -69484,7 +69882,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15801,
@@ -69515,7 +69914,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15802,
@@ -69545,7 +69945,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15803,
@@ -69573,7 +69974,8 @@ export const PARTS = [
     "mpn": "S201",
     "weight": "0.03 Kilograms",
     "cap": 128,
-    "form": "NVMe"
+    "form": "NVMe",
+    "storageType": "SATA"
   },
   {
     "id": 15804,
@@ -69602,7 +70004,8 @@ export const PARTS = [
     "weight": "36.1 Grams",
     "cap": 256,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15805,
@@ -69631,7 +70034,8 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15806,
@@ -69659,7 +70063,8 @@ export const PARTS = [
     "weight": "20 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "SSD"
   },
   {
     "id": 15807,
@@ -69688,7 +70093,8 @@ export const PARTS = [
     "weight": "190 Grams",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15808,
@@ -69716,7 +70122,8 @@ export const PARTS = [
     "weight": "1.7 Pounds",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15809,
@@ -69746,7 +70153,8 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15810,
@@ -69776,7 +70184,8 @@ export const PARTS = [
     "weight": "0.84 Kilograms",
     "cap": 22000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15811,
@@ -69807,7 +70216,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15812,
@@ -69839,7 +70249,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15813,
@@ -69868,7 +70279,8 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15814,
@@ -69896,7 +70308,8 @@ export const PARTS = [
     "mpn": "ST14000NM001G",
     "cap": 14000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15815,
@@ -69926,7 +70339,8 @@ export const PARTS = [
     "cap": 256,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15816,
@@ -69955,7 +70369,8 @@ export const PARTS = [
     "mpn": "A55",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15817,
@@ -69990,7 +70405,8 @@ export const PARTS = [
     "weight": "23 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15818,
@@ -70019,7 +70435,8 @@ export const PARTS = [
     "weight": "6.8 Grams",
     "cap": 512,
     "form": "NVMe",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15819,
@@ -70049,7 +70466,8 @@ export const PARTS = [
     "weight": "0.12 Pounds",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "compact"
+    "ff": "compact",
+    "storageType": "NVMe"
   },
   {
     "id": 15820,
@@ -70081,7 +70499,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15821,
@@ -70110,7 +70529,8 @@ export const PARTS = [
     "weight": "37 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15822,
@@ -70141,7 +70561,8 @@ export const PARTS = [
     "weight": "0.19 Pounds",
     "cap": 8000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15823,
@@ -70171,7 +70592,8 @@ export const PARTS = [
     "weight": "54 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15824,
@@ -70201,7 +70623,8 @@ export const PARTS = [
     "weight": "1.4 Pounds",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15825,
@@ -70231,7 +70654,8 @@ export const PARTS = [
     "weight": "34 Grams",
     "cap": 512,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15826,
@@ -70260,7 +70684,8 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 512,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15827,
@@ -70290,7 +70715,8 @@ export const PARTS = [
     "weight": "45 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15828,
@@ -70319,7 +70745,8 @@ export const PARTS = [
     "weight": "38 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15829,
@@ -70354,7 +70781,8 @@ export const PARTS = [
     "weight": "38 Grams",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15830,
@@ -70384,7 +70812,8 @@ export const PARTS = [
     "weight": "35.1 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15831,
@@ -70415,7 +70844,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15832,
@@ -70445,7 +70875,8 @@ export const PARTS = [
     "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15833,
@@ -70476,7 +70907,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15834,
@@ -70506,7 +70938,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15835,
@@ -70536,7 +70969,8 @@ export const PARTS = [
     "weight": "1.4 Pounds",
     "cap": 6000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15836,
@@ -70565,7 +70999,8 @@ export const PARTS = [
     "weight": "0.03 Kilograms",
     "cap": 4000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15837,
@@ -70595,7 +71030,8 @@ export const PARTS = [
     "weight": "5.7 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15838,
@@ -70624,7 +71060,8 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 512,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15839,
@@ -70653,7 +71090,8 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 256,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15840,
@@ -70682,7 +71120,8 @@ export const PARTS = [
     "weight": "0.5 Ounces",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15841,
@@ -70712,7 +71151,8 @@ export const PARTS = [
     "weight": "0.2 Kilograms",
     "cap": 4000,
     "form": "HDD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15842,
@@ -70741,7 +71181,8 @@ export const PARTS = [
     "mpn": "WDBAWY0010BBK-WESN",
     "weight": "2.72 ounces",
     "cap": 1000,
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SSD"
   },
   {
     "id": 15843,
@@ -70771,7 +71212,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15844,
@@ -70802,7 +71244,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 (2280)"
+    "ff": "M.2 (2280)",
+    "storageType": "NVMe"
   },
   {
     "id": 15845,
@@ -70833,7 +71276,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 (2280)"
+    "ff": "M.2 (2280)",
+    "storageType": "NVMe"
   },
   {
     "id": 15846,
@@ -70864,7 +71308,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15847,
@@ -70894,7 +71339,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15848,
@@ -70924,7 +71370,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15849,
@@ -70955,7 +71402,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15850,
@@ -70984,7 +71432,8 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 500,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15851,
@@ -71016,7 +71465,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15852,
@@ -71047,7 +71497,8 @@ export const PARTS = [
     "weight": "45 Grams",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15853,
@@ -71078,7 +71529,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15854,
@@ -71108,7 +71560,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15855,
@@ -71138,7 +71591,8 @@ export const PARTS = [
     "weight": "1.4 Pounds",
     "cap": 10000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15856,
@@ -71168,7 +71622,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15857,
@@ -71198,7 +71653,8 @@ export const PARTS = [
     "weight": "30 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15858,
@@ -71228,7 +71684,8 @@ export const PARTS = [
     "weight": "32 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15859,
@@ -71258,7 +71715,8 @@ export const PARTS = [
     "weight": "0.69 Kilograms",
     "cap": 16000,
     "form": "HDD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15860,
@@ -71286,7 +71744,8 @@ export const PARTS = [
     "mpn": "ASU630SS-1T92Q-R",
     "cap": 1920,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15861,
@@ -71316,7 +71775,8 @@ export const PARTS = [
     "weight": "2.59 g",
     "cap": 500,
     "form": "NVMe",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15862,
@@ -71346,7 +71806,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15863,
@@ -71375,7 +71836,8 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15864,
@@ -71405,7 +71867,8 @@ export const PARTS = [
     "weight": "1.5 Pounds",
     "cap": 14000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15865,
@@ -71434,7 +71897,8 @@ export const PARTS = [
     "weight": "0.06 Kilograms",
     "cap": 512,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15866,
@@ -71463,7 +71927,8 @@ export const PARTS = [
     "weight": "0.06 Kilograms",
     "cap": 120,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15867,
@@ -71494,7 +71959,8 @@ export const PARTS = [
     "weight": "0.09 Kilograms",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SSD"
   },
   {
     "id": 15868,
@@ -71524,7 +71990,8 @@ export const PARTS = [
     "weight": "1.5 Pounds",
     "cap": 14000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15869,
@@ -71555,7 +72022,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15870,
@@ -71583,7 +72051,8 @@ export const PARTS = [
     "mpn": "GM988",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15871,
@@ -71614,7 +72083,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15872,
@@ -71644,7 +72114,8 @@ export const PARTS = [
     "weight": "0.07 Kilograms",
     "cap": 960,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15873,
@@ -71669,7 +72140,8 @@ export const PARTS = [
     "weight": "0.7 Kilograms",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15874,
@@ -71699,7 +72171,8 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15875,
@@ -71729,7 +72202,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15876,
@@ -71758,7 +72232,8 @@ export const PARTS = [
     "weight": "30.6 Grams",
     "cap": 512,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15877,
@@ -71788,7 +72263,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "2280"
+    "ff": "2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15878,
@@ -71814,7 +72290,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61vLkwu0ufL._SL1500_.jpg"
     ],
     "weight": "0.26 Kilograms",
-    "form": "SATA SSD"
+    "form": "SATA SSD",
+    "storageType": "SATA"
   },
   {
     "id": 15879,
@@ -71842,7 +72319,8 @@ export const PARTS = [
     ],
     "upc": "686585053824",
     "cap": 30000,
-    "form": "SATA SSD"
+    "form": "SATA SSD",
+    "storageType": "SATA"
   },
   {
     "id": 15880,
@@ -71871,7 +72349,8 @@ export const PARTS = [
     "weight": "27 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15881,
@@ -71899,7 +72378,8 @@ export const PARTS = [
     "mpn": "FN960",
     "cap": 1000,
     "form": "NVMe",
-    "pcie": "Gen4"
+    "pcie": "Gen4",
+    "storageType": "NVMe"
   },
   {
     "id": 15882,
@@ -71927,7 +72407,8 @@ export const PARTS = [
     "mpn": "FN950",
     "cap": 500,
     "form": "NVMe",
-    "pcie": "Gen4"
+    "pcie": "Gen4",
+    "storageType": "NVMe"
   },
   {
     "id": 15883,
@@ -71957,7 +72438,8 @@ export const PARTS = [
     "weight": "720 Grams",
     "cap": 10000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15884,
@@ -71987,7 +72469,8 @@ export const PARTS = [
     "weight": "0.04 Kilograms",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15885,
@@ -72017,7 +72500,8 @@ export const PARTS = [
     "weight": "51 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15886,
@@ -72048,7 +72532,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15887,
@@ -72078,7 +72563,8 @@ export const PARTS = [
     "weight": "0.12 Pounds",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15888,
@@ -72108,7 +72594,8 @@ export const PARTS = [
     "weight": "0.06 Kilograms",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15889,
@@ -72137,7 +72624,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15890,
@@ -72166,7 +72654,8 @@ export const PARTS = [
     "weight": "46 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15891,
@@ -72196,7 +72685,8 @@ export const PARTS = [
     "weight": "600 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15892,
@@ -72225,7 +72715,8 @@ export const PARTS = [
     "weight": "2.08 ounces",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15893,
@@ -72255,7 +72746,8 @@ export const PARTS = [
     "weight": "9.07 g",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15894,
@@ -72285,7 +72777,8 @@ export const PARTS = [
     "weight": "2.43 Pounds",
     "cap": 8000,
     "form": "HDD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15895,
@@ -72315,7 +72808,8 @@ export const PARTS = [
     "weight": "14.7 Ounces",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15896,
@@ -72345,7 +72839,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15897,
@@ -72375,7 +72870,8 @@ export const PARTS = [
     "weight": "1.8 Ounces",
     "cap": 3000,
     "form": "SATA SSD",
-    "formFactor": "2.5 in|3.5 in"
+    "ff": "2.5 in|3.5 in",
+    "storageType": "HDD"
   },
   {
     "id": 15898,
@@ -72407,7 +72903,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15899,
@@ -72438,7 +72935,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15900,
@@ -72469,7 +72967,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15901,
@@ -72500,7 +72999,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "NVMe"
   },
   {
     "id": 15902,
@@ -72530,7 +73030,8 @@ export const PARTS = [
     "weight": "660 Grams",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15903,
@@ -72561,7 +73062,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15904,
@@ -72591,7 +73093,8 @@ export const PARTS = [
     "weight": "46 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15905,
@@ -72620,7 +73123,8 @@ export const PARTS = [
     "weight": "45 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15906,
@@ -72650,7 +73154,8 @@ export const PARTS = [
     "weight": "1.4 Pounds",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15907,
@@ -72680,7 +73185,8 @@ export const PARTS = [
     "weight": "0.21 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15908,
@@ -72711,7 +73217,8 @@ export const PARTS = [
     "weight": "0.07 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15909,
@@ -72742,7 +73249,8 @@ export const PARTS = [
     "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15910,
@@ -72772,7 +73280,8 @@ export const PARTS = [
     "weight": "0.2 Pounds",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15911,
@@ -72797,7 +73306,8 @@ export const PARTS = [
     "weight": "9.07 g",
     "cap": 250,
     "form": "NVMe",
-    "formFactor": "Compact M.2"
+    "ff": "Compact M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15912,
@@ -72827,7 +73337,8 @@ export const PARTS = [
     "weight": "0.7 Kilograms",
     "cap": 6000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15913,
@@ -72858,7 +73369,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15914,
@@ -72888,7 +73400,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15915,
@@ -72918,7 +73431,8 @@ export const PARTS = [
     "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15916,
@@ -72948,7 +73462,8 @@ export const PARTS = [
     "weight": "167 Grams",
     "cap": 2000,
     "form": "HDD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15917,
@@ -72979,7 +73494,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "m 2"
+    "ff": "m 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15918,
@@ -73009,7 +73525,8 @@ export const PARTS = [
     "weight": "0.45 Kilograms",
     "cap": 3000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15919,
@@ -73039,7 +73556,8 @@ export const PARTS = [
     "weight": "1.68 Pounds",
     "cap": 8000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15920,
@@ -73069,7 +73587,8 @@ export const PARTS = [
     "weight": "266 Grams",
     "cap": 5000,
     "form": "HDD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15921,
@@ -73099,7 +73618,8 @@ export const PARTS = [
     "weight": "167 Grams",
     "cap": 2000,
     "form": "HDD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15922,
@@ -73128,7 +73648,8 @@ export const PARTS = [
     "mpn": "FS810-512GB",
     "cap": 512,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15923,
@@ -73159,7 +73680,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15924,
@@ -73190,7 +73712,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15925,
@@ -73216,7 +73739,8 @@ export const PARTS = [
     "weight": "1.22 Ounces",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15926,
@@ -73240,7 +73764,8 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15927,
@@ -73270,7 +73795,8 @@ export const PARTS = [
     "weight": "5.7 Grams",
     "cap": 500,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15928,
@@ -73301,7 +73827,8 @@ export const PARTS = [
     "weight": "5.7 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15929,
@@ -73331,7 +73858,8 @@ export const PARTS = [
     "weight": "96 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15930,
@@ -73360,7 +73888,8 @@ export const PARTS = [
     "weight": "0.12 Pounds",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15931,
@@ -73389,7 +73918,8 @@ export const PARTS = [
     "mpn": "FX815",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15932,
@@ -73420,7 +73950,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2242"
+    "ff": "M.2 2242",
+    "storageType": "NVMe"
   },
   {
     "id": 15933,
@@ -73450,7 +73981,8 @@ export const PARTS = [
     "weight": "1.7 Pounds",
     "cap": 12000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15934,
@@ -73480,7 +74012,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15935,
@@ -73511,7 +74044,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15936,
@@ -73541,7 +74075,8 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15937,
@@ -73570,7 +74105,7 @@ export const PARTS = [
     "mpn": "CT4000X6SSD9",
     "weight": "40.5 Grams",
     "cap": 4000,
-    "formFactor": "Portable"
+    "ff": "Portable"
   },
   {
     "id": 15938,
@@ -73600,7 +74135,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15939,
@@ -73629,7 +74165,8 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15940,
@@ -73659,7 +74196,8 @@ export const PARTS = [
     "weight": "45 Grams",
     "cap": 250,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15941,
@@ -73690,7 +74228,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15942,
@@ -73722,7 +74261,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15943,
@@ -73752,7 +74292,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15944,
@@ -73783,7 +74324,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 (2280)"
+    "ff": "M.2 (2280)",
+    "storageType": "NVMe"
   },
   {
     "id": 15945,
@@ -73813,7 +74355,8 @@ export const PARTS = [
     "weight": "1.3 Pounds",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15946,
@@ -73843,7 +74386,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15947,
@@ -73874,7 +74418,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15948,
@@ -73905,7 +74450,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15949,
@@ -73932,7 +74478,8 @@ export const PARTS = [
     "weight": "44.6 Grams",
     "cap": 500,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15950,
@@ -73962,7 +74509,8 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "cap": 512,
     "form": "NVMe",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15951,
@@ -73992,7 +74540,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15952,
@@ -74020,7 +74569,8 @@ export const PARTS = [
     "mpn": "NT-XXX 2280",
     "cap": 4000,
     "form": "NVMe",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15953,
@@ -74048,7 +74598,8 @@ export const PARTS = [
     "mpn": "NT-2TB 2280",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 15954,
@@ -74077,7 +74628,8 @@ export const PARTS = [
     "mpn": "3a38dbaf-2032-422f-82d5-88d439028e95",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15955,
@@ -74107,7 +74659,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15956,
@@ -74135,7 +74688,8 @@ export const PARTS = [
     "weight": "780 Grams",
     "cap": 8000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15957,
@@ -74164,7 +74718,8 @@ export const PARTS = [
     "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15958,
@@ -74194,7 +74749,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15959,
@@ -74224,7 +74780,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15960,
@@ -74255,7 +74812,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15961,
@@ -74287,7 +74845,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15962,
@@ -74317,7 +74876,8 @@ export const PARTS = [
     "weight": "57 Grams",
     "cap": 8000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15963,
@@ -74349,7 +74909,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15964,
@@ -74379,7 +74940,8 @@ export const PARTS = [
     "weight": "0.7 Kilograms",
     "cap": 12000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15965,
@@ -74408,7 +74970,8 @@ export const PARTS = [
     "weight": "7 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "m.2"
+    "ff": "m.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15966,
@@ -74437,7 +75000,8 @@ export const PARTS = [
     "weight": "8 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15967,
@@ -74466,7 +75030,8 @@ export const PARTS = [
     "weight": "0.83 Kilograms",
     "cap": 14000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15968,
@@ -74496,7 +75061,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15969,
@@ -74527,7 +75093,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15970,
@@ -74557,7 +75124,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15971,
@@ -74587,7 +75155,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15972,
@@ -74617,7 +75186,8 @@ export const PARTS = [
     "weight": "720 Grams",
     "cap": 8000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15973,
@@ -74652,7 +75222,8 @@ export const PARTS = [
     "weight": "672 Grams",
     "cap": 16000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15974,
@@ -74687,7 +75258,8 @@ export const PARTS = [
     "weight": "670 Grams",
     "cap": 12000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15975,
@@ -74718,7 +75290,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15976,
@@ -74747,7 +75320,8 @@ export const PARTS = [
     "weight": "1.43 Pounds",
     "cap": 10000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15977,
@@ -74778,7 +75352,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15978,
@@ -74809,7 +75384,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15979,
@@ -74840,7 +75416,8 @@ export const PARTS = [
     "weight": "5.7 Grams",
     "cap": 500,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15980,
@@ -74871,7 +75448,8 @@ export const PARTS = [
     "weight": "5.7 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15981,
@@ -74901,7 +75479,8 @@ export const PARTS = [
     "weight": "5.7 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15982,
@@ -74930,7 +75509,8 @@ export const PARTS = [
     "weight": "44.6 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15983,
@@ -74960,7 +75540,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15984,
@@ -74989,7 +75570,8 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 15985,
@@ -75019,7 +75601,8 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15986,
@@ -75049,7 +75632,8 @@ export const PARTS = [
     "weight": "0.21 Pounds",
     "cap": 500,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15987,
@@ -75073,7 +75657,8 @@ export const PARTS = [
     "weight": "620 Grams",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15988,
@@ -75099,7 +75684,8 @@ export const PARTS = [
     "weight": "0.27 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 15989,
@@ -75127,7 +75713,8 @@ export const PARTS = [
     "mpn": "FX660",
     "cap": 4000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15990,
@@ -75157,7 +75744,8 @@ export const PARTS = [
     "weight": "6 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "SATA"
   },
   {
     "id": 15991,
@@ -75188,7 +75776,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15992,
@@ -75219,7 +75808,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15993,
@@ -75248,7 +75838,8 @@ export const PARTS = [
     "weight": "37 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15994,
@@ -75278,7 +75869,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 15995,
@@ -75309,7 +75901,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 (2280)"
+    "ff": "M.2 (2280)",
+    "storageType": "NVMe"
   },
   {
     "id": 15996,
@@ -75338,7 +75931,8 @@ export const PARTS = [
     "weight": "36.1 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15997,
@@ -75368,7 +75962,8 @@ export const PARTS = [
     "weight": "32.7 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 15998,
@@ -75399,7 +75994,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 15999,
@@ -75430,7 +76026,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16000,
@@ -75461,7 +76058,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 16001,
@@ -75492,7 +76090,8 @@ export const PARTS = [
     "weight": "18 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16002,
@@ -75521,7 +76120,8 @@ export const PARTS = [
     "mpn": "ST4000DM000/CR/2YR",
     "cap": 4000,
     "form": "HDD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16003,
@@ -75551,7 +76151,8 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 16004,
@@ -75581,7 +76182,8 @@ export const PARTS = [
     "weight": "4.5 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "formFactor": "M.2 (0.87 inches)"
+    "ff": "M.2 (0.87 inches)",
+    "storageType": "NVMe"
   },
   {
     "id": 16005,
@@ -75610,7 +76212,8 @@ export const PARTS = [
     "mpn": "MG04ACA400N",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16006,
@@ -75638,7 +76241,8 @@ export const PARTS = [
     "weight": "1.54 Pounds",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16007,
@@ -75667,7 +76271,8 @@ export const PARTS = [
     "weight": "1.58 Pounds",
     "cap": 6000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16008,
@@ -75697,7 +76302,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16009,
@@ -75727,7 +76333,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16010,
@@ -75757,7 +76364,8 @@ export const PARTS = [
     "mpn": "GS-SSD-NAS-512GB-2PK-B",
     "cap": 512,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SSD"
   },
   {
     "id": 16011,
@@ -75787,7 +76395,8 @@ export const PARTS = [
     "mpn": "ST12000DM0007-CR/5YR",
     "cap": 12000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16012,
@@ -75816,7 +76425,8 @@ export const PARTS = [
     "weight": "900 Milligrams",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 16013,
@@ -75846,7 +76456,8 @@ export const PARTS = [
     "weight": "0.65 Kilograms",
     "cap": 6000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16014,
@@ -75875,7 +76486,8 @@ export const PARTS = [
     "weight": "1.54 Pounds",
     "cap": 4000,
     "form": "HDD",
-    "formFactor": "Other"
+    "ff": "Other",
+    "storageType": "HDD"
   },
   {
     "id": 16015,
@@ -75905,7 +76517,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "2.28 inches"
+    "ff": "2.28 inches",
+    "storageType": "NVMe"
   },
   {
     "id": 16016,
@@ -75936,7 +76549,8 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 16017,
@@ -75965,7 +76579,8 @@ export const PARTS = [
     "weight": "45.6 Grams",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 16018,
@@ -75995,7 +76610,8 @@ export const PARTS = [
     "weight": "91 Grams",
     "cap": 500,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16019,
@@ -76018,7 +76634,8 @@ export const PARTS = [
     "mpn": "WD5000AZLX-cr",
     "cap": 500,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16020,
@@ -76047,7 +76664,8 @@ export const PARTS = [
     "weight": "0.75 Kilograms",
     "cap": 8000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16021,
@@ -76077,7 +76695,8 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 16022,
@@ -76107,7 +76726,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16023,
@@ -76135,7 +76755,8 @@ export const PARTS = [
     "mpn": "WD40EFPX-AJP",
     "cap": 4000,
     "form": "HDD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16024,
@@ -76164,7 +76785,8 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M.2 (2280)"
+    "ff": "M.2 (2280)",
+    "storageType": "NVMe"
   },
   {
     "id": 16025,
@@ -76194,7 +76816,8 @@ export const PARTS = [
     "weight": "0.11 Pounds",
     "cap": 500,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 16026,
@@ -76224,7 +76847,8 @@ export const PARTS = [
     "weight": "1.4 Pounds",
     "cap": 10000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16027,
@@ -76252,7 +76876,8 @@ export const PARTS = [
     "mpn": "WD60EFPX-AJP",
     "cap": 6000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16028,
@@ -76281,7 +76906,8 @@ export const PARTS = [
     "mpn": "Exos ST24000NM000C",
     "cap": 24000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16029,
@@ -76312,7 +76938,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16030,
@@ -76341,7 +76968,8 @@ export const PARTS = [
     "mpn": "WDBRJY0160HNC-WRSN",
     "cap": 16000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16031,
@@ -76370,7 +76998,8 @@ export const PARTS = [
     "mpn": "CT2000T500SSD5JP",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "SSD"
   },
   {
     "id": 16032,
@@ -76401,7 +77030,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16033,
@@ -76430,7 +77060,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 16034,
@@ -76461,7 +77092,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16035,
@@ -76490,7 +77122,8 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 16036,
@@ -76520,7 +77153,8 @@ export const PARTS = [
     "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16037,
@@ -76549,7 +77183,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16038,
@@ -76579,7 +77214,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen3",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 16039,
@@ -76610,7 +77246,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16040,
@@ -76639,7 +77276,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16041,
@@ -76668,7 +77306,8 @@ export const PARTS = [
     "mpn": "ST4000LM024-cr",
     "cap": 4000,
     "form": "HDD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16042,
@@ -76704,7 +77343,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "Bar"
+    "ff": "Bar",
+    "storageType": "NVMe"
   },
   {
     "id": 16043,
@@ -76734,7 +77374,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16044,
@@ -76765,7 +77406,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16045,
@@ -76796,7 +77438,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16046,
@@ -76826,7 +77469,7 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "Portable"
+    "ff": "Portable"
   },
   {
     "id": 16047,
@@ -76856,7 +77499,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16048,
@@ -76886,7 +77530,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16049,
@@ -76917,7 +77562,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16050,
@@ -76947,7 +77593,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 16051,
@@ -76977,7 +77624,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 16052,
@@ -77007,7 +77655,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16053,
@@ -77036,7 +77685,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16054,
@@ -77066,7 +77716,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16055,
@@ -77095,7 +77746,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16056,
@@ -77124,7 +77776,8 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 4000,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16057,
@@ -77149,7 +77802,8 @@ export const PARTS = [
     "weight": "1.65 Pounds",
     "cap": 3000,
     "form": "HDD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16058,
@@ -77174,7 +77828,8 @@ export const PARTS = [
     "weight": "695 Grams",
     "cap": 16000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16059,
@@ -77202,7 +77857,8 @@ export const PARTS = [
     "mpn": "WDS400T4B0E-EC",
     "cap": 4000,
     "form": "NVMe",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 16060,
@@ -77231,7 +77887,8 @@ export const PARTS = [
     "weight": "0.08 Kilograms",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 16061,
@@ -77260,7 +77917,8 @@ export const PARTS = [
     "weight": "0.07 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 16062,
@@ -77289,7 +77947,8 @@ export const PARTS = [
     "weight": "0.08 Kilograms",
     "cap": 4000,
     "form": "NVMe",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 16063,
@@ -77321,7 +77980,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 16064,
@@ -77351,7 +78011,8 @@ export const PARTS = [
     "weight": "134 Grams",
     "cap": 4000,
     "form": "HDD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16065,
@@ -77381,7 +78042,8 @@ export const PARTS = [
     "weight": "0.1 Kilograms",
     "cap": 500,
     "form": "HDD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16066,
@@ -77411,7 +78073,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16067,
@@ -77438,7 +78101,8 @@ export const PARTS = [
     "mpn": "P400VP2TBM28H",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16068,
@@ -77463,7 +78127,8 @@ export const PARTS = [
     "mpn": "FireCuda",
     "cap": 500,
     "form": "SATA SSD",
-    "formFactor": "2,5"
+    "ff": "2,5",
+    "storageType": "HDD"
   },
   {
     "id": 16069,
@@ -77494,7 +78159,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16070,
@@ -77525,7 +78191,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16071,
@@ -77555,7 +78222,8 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 16072,
@@ -77586,7 +78254,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16073,
@@ -77617,7 +78286,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 16074,
@@ -77649,7 +78319,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16075,
@@ -77678,7 +78349,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "NVMe"
   },
   {
     "id": 16076,
@@ -77708,7 +78380,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "NVMe"
   },
   {
     "id": 16077,
@@ -77737,7 +78410,8 @@ export const PARTS = [
     "weight": "9 Grams",
     "cap": 500,
     "form": "NVMe",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 16078,
@@ -77762,7 +78436,8 @@ export const PARTS = [
     "weight": "1.5 Pounds",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16079,
@@ -77790,7 +78465,8 @@ export const PARTS = [
     "mpn": "B0FLY16HRX",
     "weight": "8 Grams",
     "cap": 4000,
-    "form": "NVMe"
+    "form": "NVMe",
+    "storageType": "NVMe"
   },
   {
     "id": 16080,
@@ -77821,7 +78497,8 @@ export const PARTS = [
     "weight": "1.7 Pounds",
     "cap": 2000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16081,
@@ -77851,7 +78528,8 @@ export const PARTS = [
     "weight": "0.67 Kilograms",
     "cap": 14000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16082,
@@ -77887,7 +78565,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16083,
@@ -77916,7 +78595,8 @@ export const PARTS = [
     "weight": "6.95 Grams",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 16084,
@@ -77947,7 +78627,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16085,
@@ -77977,7 +78658,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16086,
@@ -78008,7 +78690,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16087,
@@ -78037,7 +78720,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 16088,
@@ -78067,7 +78751,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 16089,
@@ -78102,7 +78787,8 @@ export const PARTS = [
     "weight": "6.5 Grams",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16090,
@@ -78132,7 +78818,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M 2"
+    "ff": "M 2",
+    "storageType": "NVMe"
   },
   {
     "id": 16091,
@@ -78163,7 +78850,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 2280"
+    "ff": "M.2 2280",
+    "storageType": "NVMe"
   },
   {
     "id": 16092,
@@ -78192,7 +78880,8 @@ export const PARTS = [
     "weight": "27 Grams",
     "cap": 500,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16093,
@@ -78223,7 +78912,8 @@ export const PARTS = [
     "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M2"
+    "ff": "M2",
+    "storageType": "NVMe"
   },
   {
     "id": 16094,
@@ -78252,7 +78942,8 @@ export const PARTS = [
     "weight": "0.7 Kilograms",
     "cap": 2000,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16095,
@@ -78280,7 +78971,8 @@ export const PARTS = [
     "mpn": "CT500MX500SSD1T",
     "cap": 500,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 16096,
@@ -78311,7 +79003,8 @@ export const PARTS = [
     "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "NVMe SSD"
+    "ff": "NVMe SSD",
+    "storageType": "NVMe"
   },
   {
     "id": 16097,
@@ -78339,7 +79032,8 @@ export const PARTS = [
     "mpn": "ST4000DM004",
     "cap": 4000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16098,
@@ -78369,7 +79063,8 @@ export const PARTS = [
     "weight": "0.38 Pounds",
     "cap": 1000,
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 16099,
@@ -78397,7 +79092,8 @@ export const PARTS = [
     "mpn": "FN960",
     "cap": 512,
     "form": "NVMe",
-    "pcie": "Gen4"
+    "pcie": "Gen4",
+    "storageType": "NVMe"
   },
   {
     "id": 16100,
@@ -78425,7 +79121,8 @@ export const PARTS = [
     "mpn": "FN960",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4"
+    "pcie": "Gen4",
+    "storageType": "NVMe"
   },
   {
     "id": 16101,
@@ -78455,7 +79152,8 @@ export const PARTS = [
     "mpn": "ST16000NM003G",
     "cap": 16000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16102,
@@ -78484,7 +79182,8 @@ export const PARTS = [
     "mpn": "TS-464-8G-US",
     "cap": 12000,
     "form": "HDD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16103,
@@ -78512,7 +79211,8 @@ export const PARTS = [
     "mpn": "X5DP-1TB",
     "weight": "1.4 Grams",
     "form": "SATA SSD",
-    "formFactor": "2.5-inch"
+    "ff": "2.5-inch",
+    "storageType": "SATA"
   },
   {
     "id": 16104,
@@ -78543,7 +79243,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16105,
@@ -78573,7 +79274,8 @@ export const PARTS = [
     "mpn": "CT1000T710SSD8-JP",
     "cap": 1000,
     "form": "NVMe",
-    "formFactor": "M.2"
+    "ff": "M.2",
+    "storageType": "NVMe"
   },
   {
     "id": 16106,
@@ -78604,7 +79306,8 @@ export const PARTS = [
     "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
-    "formFactor": "M.2 (2280)"
+    "ff": "M.2 (2280)",
+    "storageType": "NVMe"
   },
   {
     "id": 16107,
@@ -78632,7 +79335,8 @@ export const PARTS = [
     "mpn": "FN950",
     "cap": 4000,
     "form": "NVMe",
-    "pcie": "Gen4"
+    "pcie": "Gen4",
+    "storageType": "NVMe"
   },
   {
     "id": 16108,
@@ -78663,7 +79367,8 @@ export const PARTS = [
     "weight": "0.14 Kilograms",
     "cap": 6000,
     "form": "SATA SSD",
-    "formFactor": "3.5-inch"
+    "ff": "3.5-inch",
+    "storageType": "HDD"
   },
   {
     "id": 16109,
@@ -78683,7 +79388,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "microATX",
     "tower": "Mid",
     "tg": true,
     "color": "Black/Blue",
@@ -78692,8 +79396,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 1,
     "fans_max": 5,
-    "maxGpuLen": 350,
-    "maxCoolerHeight": 155
+    "ff": "microATX",
+    "maxGPU": 350,
+    "maxCooler": 155
   },
   {
     "id": 16110,
@@ -78713,7 +79418,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
@@ -78722,8 +79426,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 1,
     "fans_max": 7,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 160.02
+    "ff": "Mini-ITX",
+    "maxGPU": 400,
+    "maxCooler": 160.02
   },
   {
     "id": 16111,
@@ -78743,7 +79448,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "microATX",
     "tower": "Mini",
     "tg": false,
     "color": "Black",
@@ -78752,8 +79456,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 1,
     "fans_max": 5,
-    "maxGpuLen": 350,
-    "maxCoolerHeight": 155
+    "ff": "microATX",
+    "maxGPU": 350,
+    "maxCooler": 155
   },
   {
     "id": 16112,
@@ -78773,7 +79478,6 @@ export const PARTS = [
         "inStock": false
       }
     },
-    "formFactor": "EATX",
     "tower": "Full",
     "tg": false,
     "color": "Black",
@@ -78782,8 +79486,9 @@ export const PARTS = [
     "drive25": 10,
     "fans_inc": 9,
     "fans_max": 11,
-    "maxGpuLen": 200,
-    "maxCoolerHeight": 190
+    "ff": "EATX",
+    "maxGPU": 200,
+    "maxCooler": 190
   },
   {
     "id": 16113,
@@ -78803,15 +79508,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "microATX",
     "tower": "Mini",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 1,
     "fans_max": 4,
-    "maxGpuLen": 350,
-    "maxCoolerHeight": 148
+    "ff": "microATX",
+    "maxGPU": 350,
+    "maxCooler": 148
   },
   {
     "id": 16114,
@@ -78831,7 +79536,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "microATX",
     "tower": "Mini",
     "tg": true,
     "color": "White",
@@ -78840,8 +79544,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 1,
     "fans_max": 5,
-    "maxGpuLen": 350,
-    "maxCoolerHeight": 165
+    "ff": "microATX",
+    "maxGPU": 350,
+    "maxCooler": 165
   },
   {
     "id": 16115,
@@ -78861,7 +79566,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Full",
     "tg": false,
     "color": "Black",
@@ -78870,8 +79574,9 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 4,
     "fans_max": 12,
-    "maxGpuLen": 450,
-    "maxCoolerHeight": 190
+    "ff": "ATX",
+    "maxGPU": 450,
+    "maxCooler": 190
   },
   {
     "id": 16116,
@@ -78891,7 +79596,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": true,
     "color": "Red",
@@ -78900,8 +79604,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 7,
     "fans_max": 6,
-    "maxGpuLen": 422,
-    "maxCoolerHeight": 183
+    "ff": "ATX",
+    "maxGPU": 422,
+    "maxCooler": 183
   },
   {
     "id": 16117,
@@ -78921,7 +79626,6 @@ export const PARTS = [
         "inStock": false
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
@@ -78930,8 +79634,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 3,
     "fans_max": 6,
-    "maxGpuLen": 360,
-    "maxCoolerHeight": 170
+    "ff": "ATX",
+    "maxGPU": 360,
+    "maxCooler": 170
   },
   {
     "id": 16118,
@@ -78951,7 +79656,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
@@ -78960,8 +79664,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 3,
     "fans_max": 9,
-    "maxGpuLen": 365,
-    "maxCoolerHeight": 163
+    "ff": "ATX",
+    "maxGPU": 365,
+    "maxCooler": 163
   },
   {
     "id": 16119,
@@ -78981,7 +79686,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "microATX",
     "tower": "Mini",
     "tg": false,
     "color": "Black",
@@ -78990,8 +79694,9 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 2,
     "fans_max": 8,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 200
+    "ff": "microATX",
+    "maxGPU": 400,
+    "maxCooler": 200
   },
   {
     "id": 16120,
@@ -79011,7 +79716,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "microATX",
     "tower": "Mini",
     "tg": false,
     "color": "Turquoise",
@@ -79020,8 +79724,9 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 2,
     "fans_max": 8,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 200
+    "ff": "microATX",
+    "maxGPU": 400,
+    "maxCooler": 200
   },
   {
     "id": 16121,
@@ -79041,7 +79746,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "microATX",
     "tower": "Mini",
     "tg": false,
     "color": "Bumblebee Yellow",
@@ -79050,8 +79754,9 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 2,
     "fans_max": 8,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 200
+    "ff": "microATX",
+    "maxGPU": 400,
+    "maxCooler": 200
   },
   {
     "id": 16122,
@@ -79071,7 +79776,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "microATX",
     "tower": "Mini",
     "tg": false,
     "color": "Snow",
@@ -79080,8 +79784,9 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 2,
     "fans_max": 8,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 200
+    "ff": "microATX",
+    "maxGPU": 400,
+    "maxCooler": 200
   },
   {
     "id": 16123,
@@ -79101,7 +79806,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "microATX",
     "tower": "Mini",
     "tg": false,
     "color": "Matcha Green",
@@ -79110,8 +79814,9 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 2,
     "fans_max": 8,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 200
+    "ff": "microATX",
+    "maxGPU": 400,
+    "maxCooler": 200
   },
   {
     "id": 16124,
@@ -79131,7 +79836,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "microATX",
     "tower": "Mini",
     "tg": false,
     "color": "Hydrangea Blue",
@@ -79140,8 +79844,9 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 2,
     "fans_max": 8,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 200
+    "ff": "microATX",
+    "maxGPU": 400,
+    "maxCooler": 200
   },
   {
     "id": 16125,
@@ -79161,15 +79866,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Full",
     "tg": true,
     "color": "White",
     "rgb": false,
     "fans_inc": 0,
     "fans_max": 10,
-    "maxGpuLen": 422,
-    "maxCoolerHeight": 180
+    "ff": "ATX",
+    "maxGPU": 422,
+    "maxCooler": 180
   },
   {
     "id": 16126,
@@ -79189,15 +79894,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Full",
     "tg": false,
     "color": "Black/Red",
     "rgb": false,
     "fans_inc": 0,
     "fans_max": 10,
-    "maxGpuLen": 422,
-    "maxCoolerHeight": 180
+    "ff": "ATX",
+    "maxGPU": 422,
+    "maxCooler": 180
   },
   {
     "id": 16127,
@@ -79217,15 +79922,15 @@ export const PARTS = [
         "inStock": false
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
     "rgb": false,
     "fans_inc": 3,
     "fans_max": 10,
-    "maxGpuLen": 410,
-    "maxCoolerHeight": 170
+    "ff": "Mini-ITX",
+    "maxGPU": 410,
+    "maxCooler": 170
   },
   {
     "id": 16128,
@@ -79245,15 +79950,15 @@ export const PARTS = [
         "inStock": false
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": true,
     "fans_inc": 3,
     "fans_max": 10,
-    "maxGpuLen": 410,
-    "maxCoolerHeight": 170
+    "ff": "Mini-ITX",
+    "maxGPU": 410,
+    "maxCooler": 170
   },
   {
     "id": 16129,
@@ -79273,15 +79978,15 @@ export const PARTS = [
         "inStock": false
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": true,
     "fans_inc": 3,
     "fans_max": 10,
-    "maxGpuLen": 410,
-    "maxCoolerHeight": 170
+    "ff": "Mini-ITX",
+    "maxGPU": 410,
+    "maxCooler": 170
   },
   {
     "id": 16130,
@@ -79301,7 +80006,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
@@ -79310,8 +80014,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 3,
     "fans_max": 10,
-    "maxGpuLen": 410,
-    "maxCoolerHeight": 185
+    "ff": "ATX",
+    "maxGPU": 410,
+    "maxCooler": 185
   },
   {
     "id": 16131,
@@ -79331,7 +80036,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
@@ -79340,8 +80044,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 3,
     "fans_max": 10,
-    "maxGpuLen": 410,
-    "maxCoolerHeight": 185
+    "ff": "ATX",
+    "maxGPU": 410,
+    "maxCooler": 185
   },
   {
     "id": 16132,
@@ -79361,7 +80066,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
@@ -79370,8 +80074,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 3,
     "fans_max": 10,
-    "maxGpuLen": 410,
-    "maxCoolerHeight": 185
+    "ff": "ATX",
+    "maxGPU": 410,
+    "maxCooler": 185
   },
   {
     "id": 16133,
@@ -79391,7 +80096,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
@@ -79400,8 +80104,9 @@ export const PARTS = [
     "drive25": 1,
     "fans_inc": 2,
     "fans_max": 8,
-    "maxGpuLen": 410,
-    "maxCoolerHeight": 175
+    "ff": "ATX",
+    "maxGPU": 410,
+    "maxCooler": 175
   },
   {
     "id": 16134,
@@ -79421,7 +80126,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
@@ -79430,8 +80134,9 @@ export const PARTS = [
     "drive25": 1,
     "fans_inc": 2,
     "fans_max": 8,
-    "maxGpuLen": 410,
-    "maxCoolerHeight": 175
+    "ff": "ATX",
+    "maxGPU": 410,
+    "maxCooler": 175
   },
   {
     "id": 16135,
@@ -79451,7 +80156,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
@@ -79460,8 +80164,9 @@ export const PARTS = [
     "drive25": 1,
     "fans_inc": 2,
     "fans_max": 8,
-    "maxGpuLen": 410,
-    "maxCoolerHeight": 175
+    "ff": "ATX",
+    "maxGPU": 410,
+    "maxCooler": 175
   },
   {
     "id": 16136,
@@ -79481,7 +80186,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
@@ -79490,8 +80194,9 @@ export const PARTS = [
     "drive25": 1,
     "fans_inc": 2,
     "fans_max": 8,
-    "maxGpuLen": 410,
-    "maxCoolerHeight": 175
+    "ff": "ATX",
+    "maxGPU": 410,
+    "maxCooler": 175
   },
   {
     "id": 16137,
@@ -79511,7 +80216,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Snow",
@@ -79520,8 +80224,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 3,
     "fans_max": 3,
-    "maxGpuLen": 428,
-    "maxCoolerHeight": 120
+    "ff": "ATX",
+    "maxGPU": 428,
+    "maxCooler": 120
   },
   {
     "id": 16138,
@@ -79541,15 +80246,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mini",
     "tg": false,
     "color": "Jade",
     "rgb": false,
     "fans_inc": 0,
     "fans_max": 1,
-    "maxGpuLen": 322,
-    "maxCoolerHeight": 77
+    "ff": "Mini-ITX",
+    "maxGPU": 322,
+    "maxCooler": 77
   },
   {
     "id": 16139,
@@ -79569,15 +80274,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 2,
     "fans_max": 5,
-    "maxGpuLen": 405,
-    "maxCoolerHeight": 170
+    "ff": "ATX",
+    "maxGPU": 405,
+    "maxCooler": 170
   },
   {
     "id": 16140,
@@ -79597,15 +80302,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "EATX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
     "rgb": false,
     "fans_inc": 3,
     "fans_max": 7,
-    "maxGpuLen": 413,
-    "maxCoolerHeight": 185
+    "ff": "EATX",
+    "maxGPU": 413,
+    "maxCooler": 185
   },
   {
     "id": 16141,
@@ -79625,15 +80330,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 2,
     "fans_max": 6,
-    "maxGpuLen": 355,
-    "maxCoolerHeight": 170
+    "ff": "ATX",
+    "maxGPU": 355,
+    "maxCooler": 170
   },
   {
     "id": 16142,
@@ -79653,7 +80358,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
@@ -79662,8 +80366,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 0,
     "fans_max": 11,
-    "maxGpuLen": 415,
-    "maxCoolerHeight": 166
+    "ff": "ATX",
+    "maxGPU": 415,
+    "maxCooler": 166
   },
   {
     "id": 16143,
@@ -79683,7 +80388,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Matcha Green",
@@ -79692,8 +80396,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 4,
     "fans_max": 10,
-    "maxGpuLen": 415,
-    "maxCoolerHeight": 160
+    "ff": "ATX",
+    "maxGPU": 415,
+    "maxCooler": 160
   },
   {
     "id": 16144,
@@ -79713,7 +80418,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Snow",
@@ -79722,8 +80426,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 2,
     "fans_max": 13,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 200
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 200
   },
   {
     "id": 16145,
@@ -79743,7 +80448,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Hydrangea Blue",
@@ -79752,8 +80456,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 2,
     "fans_max": 13,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 200
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 200
   },
   {
     "id": 16146,
@@ -79773,7 +80478,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Matcha Green",
@@ -79782,8 +80486,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 2,
     "fans_max": 13,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 200
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 200
   },
   {
     "id": 16147,
@@ -79803,7 +80508,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Snow",
@@ -79812,8 +80516,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 4,
     "fans_max": 10,
-    "maxGpuLen": 415,
-    "maxCoolerHeight": 160
+    "ff": "ATX",
+    "maxGPU": 415,
+    "maxCooler": 160
   },
   {
     "id": 16148,
@@ -79833,7 +80538,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Snow",
@@ -79842,8 +80546,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 0,
     "fans_max": 11,
-    "maxGpuLen": 415,
-    "maxCoolerHeight": 166
+    "ff": "ATX",
+    "maxGPU": 415,
+    "maxCooler": 166
   },
   {
     "id": 16149,
@@ -79863,7 +80568,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Gravel Sand",
@@ -79872,8 +80576,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 0,
     "fans_max": 11,
-    "maxGpuLen": 415,
-    "maxCoolerHeight": 166
+    "ff": "ATX",
+    "maxGPU": 415,
+    "maxCooler": 166
   },
   {
     "id": 16150,
@@ -79893,7 +80598,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Matcha Green",
@@ -79902,8 +80606,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 0,
     "fans_max": 11,
-    "maxGpuLen": 415,
-    "maxCoolerHeight": 166
+    "ff": "ATX",
+    "maxGPU": 415,
+    "maxCooler": 166
   },
   {
     "id": 16151,
@@ -79923,7 +80628,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Hydrangea Blue",
@@ -79932,8 +80636,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 4,
     "fans_max": 10,
-    "maxGpuLen": 415,
-    "maxCoolerHeight": 160
+    "ff": "ATX",
+    "maxGPU": 415,
+    "maxCooler": 160
   },
   {
     "id": 16152,
@@ -79953,7 +80658,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
@@ -79962,8 +80666,9 @@ export const PARTS = [
     "drive25": 4,
     "fans_inc": 3,
     "fans_max": 12,
-    "maxGpuLen": 430,
-    "maxCoolerHeight": 170
+    "ff": "ATX",
+    "maxGPU": 430,
+    "maxCooler": 170
   },
   {
     "id": 16153,
@@ -79983,7 +80688,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
@@ -79992,8 +80696,9 @@ export const PARTS = [
     "drive25": 4,
     "fans_inc": 3,
     "fans_max": 12,
-    "maxGpuLen": 430,
-    "maxCoolerHeight": 170
+    "ff": "ATX",
+    "maxGPU": 430,
+    "maxCooler": 170
   },
   {
     "id": 16154,
@@ -80013,7 +80718,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
@@ -80022,8 +80726,9 @@ export const PARTS = [
     "drive25": 4,
     "fans_inc": 3,
     "fans_max": 12,
-    "maxGpuLen": 430,
-    "maxCoolerHeight": 170
+    "ff": "ATX",
+    "maxGPU": 430,
+    "maxCooler": 170
   },
   {
     "id": 16155,
@@ -80043,15 +80748,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "EATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 3,
     "fans_max": 7,
-    "maxGpuLen": 413,
-    "maxCoolerHeight": 185
+    "ff": "EATX",
+    "maxGPU": 413,
+    "maxCooler": 185
   },
   {
     "id": 16156,
@@ -80071,15 +80776,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 2,
     "fans_max": 9,
-    "maxGpuLen": 440,
-    "maxCoolerHeight": 180
+    "ff": "ATX",
+    "maxGPU": 440,
+    "maxCooler": 180
   },
   {
     "id": 16157,
@@ -80099,15 +80804,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
     "rgb": false,
     "fans_inc": 2,
     "fans_max": 6,
-    "maxGpuLen": 355,
-    "maxCoolerHeight": 170
+    "ff": "ATX",
+    "maxGPU": 355,
+    "maxCooler": 170
   },
   {
     "id": 16158,
@@ -80127,15 +80832,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Full",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 0,
     "fans_max": 7,
-    "maxGpuLen": 375,
-    "maxCoolerHeight": 160
+    "ff": "ATX",
+    "maxGPU": 375,
+    "maxCooler": 160
   },
   {
     "id": 16159,
@@ -80155,15 +80860,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 0,
     "fans_max": 10,
-    "maxGpuLen": 422,
-    "maxCoolerHeight": 180
+    "ff": "ATX",
+    "maxGPU": 422,
+    "maxCooler": 180
   },
   {
     "id": 16160,
@@ -80183,7 +80888,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mini",
     "tg": false,
     "color": "Mint Strawberry",
@@ -80192,8 +80896,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 0,
     "fans_max": 2,
-    "maxGpuLen": 360,
-    "maxCoolerHeight": 68
+    "ff": "Mini-ITX",
+    "maxGPU": 360,
+    "maxCooler": 68
   },
   {
     "id": 16161,
@@ -80213,7 +80918,6 @@ export const PARTS = [
         "inStock": false
       }
     },
-    "formFactor": "ATX",
     "tg": false,
     "color": "Gravel Sand",
     "rgb": true,
@@ -80221,8 +80925,9 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 4,
     "fans_max": 10,
-    "maxGpuLen": 420,
-    "maxCoolerHeight": 160
+    "ff": "ATX",
+    "maxGPU": 420,
+    "maxCooler": 160
   },
   {
     "id": 16162,
@@ -80242,7 +80947,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tg": false,
     "color": "Bubble Pink",
     "rgb": false,
@@ -80250,8 +80954,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 2,
     "fans_max": 13,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 200
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 200
   },
   {
     "id": 16163,
@@ -80271,7 +80976,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tg": false,
     "color": "Future Dusk",
     "rgb": false,
@@ -80279,8 +80983,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 2,
     "fans_max": 13,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 200
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 200
   },
   {
     "id": 16164,
@@ -80300,7 +81005,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mini",
     "tg": false,
     "color": "Snow",
@@ -80309,8 +81013,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 0,
     "fans_max": 2,
-    "maxGpuLen": 360,
-    "maxCoolerHeight": 68
+    "ff": "Mini-ITX",
+    "maxGPU": 360,
+    "maxCooler": 68
   },
   {
     "id": 16165,
@@ -80330,7 +81035,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mini",
     "tg": false,
     "color": "Matcha Green",
@@ -80339,8 +81043,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 0,
     "fans_max": 2,
-    "maxGpuLen": 360,
-    "maxCoolerHeight": 68
+    "ff": "Mini-ITX",
+    "maxGPU": 360,
+    "maxCooler": 68
   },
   {
     "id": 16166,
@@ -80360,7 +81065,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mini",
     "tg": false,
     "color": "Bubble Pink",
@@ -80369,8 +81073,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 0,
     "fans_max": 2,
-    "maxGpuLen": 360,
-    "maxCoolerHeight": 68
+    "ff": "Mini-ITX",
+    "maxGPU": 360,
+    "maxCooler": 68
   },
   {
     "id": 16167,
@@ -80390,7 +81095,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mini",
     "tg": false,
     "color": "Hydrangea Blue",
@@ -80399,8 +81103,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 0,
     "fans_max": 2,
-    "maxGpuLen": 360,
-    "maxCoolerHeight": 68
+    "ff": "Mini-ITX",
+    "maxGPU": 360,
+    "maxCooler": 68
   },
   {
     "id": 16168,
@@ -80420,7 +81125,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tg": false,
     "color": "Snow",
     "rgb": true,
@@ -80428,8 +81132,9 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 4,
     "fans_max": 10,
-    "maxGpuLen": 420,
-    "maxCoolerHeight": 160
+    "ff": "ATX",
+    "maxGPU": 420,
+    "maxCooler": 160
   },
   {
     "id": 16169,
@@ -80449,7 +81154,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "microATX",
     "tower": "Mid",
     "tg": false,
     "color": "Snow",
@@ -80458,8 +81162,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 3,
     "fans_max": 6,
-    "maxGpuLen": 340,
-    "maxCoolerHeight": 160
+    "ff": "microATX",
+    "maxGPU": 340,
+    "maxCooler": 160
   },
   {
     "id": 16170,
@@ -80479,7 +81184,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tg": false,
     "color": "Bubble Pink",
     "rgb": true,
@@ -80487,8 +81191,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 4,
     "fans_max": 10,
-    "maxGpuLen": 415,
-    "maxCoolerHeight": 160
+    "ff": "ATX",
+    "maxGPU": 415,
+    "maxCooler": 160
   },
   {
     "id": 16171,
@@ -80508,7 +81213,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mini",
     "tg": false,
     "color": "Black",
@@ -80517,8 +81221,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 0,
     "fans_max": 2,
-    "maxGpuLen": 360,
-    "maxCoolerHeight": 68
+    "ff": "Mini-ITX",
+    "maxGPU": 360,
+    "maxCooler": 68
   },
   {
     "id": 16172,
@@ -80538,7 +81243,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tg": false,
     "color": "Black",
     "rgb": true,
@@ -80546,8 +81250,9 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 4,
     "fans_max": 10,
-    "maxGpuLen": 420,
-    "maxCoolerHeight": 160
+    "ff": "ATX",
+    "maxGPU": 420,
+    "maxCooler": 160
   },
   {
     "id": 16173,
@@ -80567,15 +81272,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 4,
     "fans_max": 10,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 166
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 166
   },
   {
     "id": 16174,
@@ -80595,15 +81300,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 4,
     "fans_max": 10,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 160
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 160
   },
   {
     "id": 16175,
@@ -80623,15 +81328,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
     "rgb": true,
     "fans_inc": 4,
     "fans_max": 10,
-    "maxGpuLen": 459,
-    "maxCoolerHeight": 165
+    "ff": "ATX",
+    "maxGPU": 459,
+    "maxCooler": 165
   },
   {
     "id": 16176,
@@ -80651,15 +81356,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
     "rgb": true,
     "fans_inc": 4,
     "fans_max": 10,
-    "maxGpuLen": 459,
-    "maxCoolerHeight": 165
+    "ff": "ATX",
+    "maxGPU": 459,
+    "maxCooler": 165
   },
   {
     "id": 16177,
@@ -80679,15 +81384,15 @@ export const PARTS = [
         "inStock": false
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": true,
     "fans_inc": 4,
     "fans_max": 10,
-    "maxGpuLen": 459,
-    "maxCoolerHeight": 165
+    "ff": "ATX",
+    "maxGPU": 459,
+    "maxCooler": 165
   },
   {
     "id": 16178,
@@ -80707,7 +81412,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "microATX",
     "tower": "Mini",
     "tg": false,
     "color": "White",
@@ -80716,8 +81420,9 @@ export const PARTS = [
     "drive25": 1,
     "fans_inc": 1,
     "fans_max": 7,
-    "maxGpuLen": 377,
-    "maxCoolerHeight": 170
+    "ff": "microATX",
+    "maxGPU": 377,
+    "maxCooler": 170
   },
   {
     "id": 16179,
@@ -80737,7 +81442,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
@@ -80746,8 +81450,9 @@ export const PARTS = [
     "drive25": 4,
     "fans_inc": 3,
     "fans_max": 13,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 165
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 165
   },
   {
     "id": 16180,
@@ -80767,15 +81472,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
     "rgb": false,
     "fans_inc": 4,
     "fans_max": 14,
-    "maxGpuLen": 450,
-    "maxCoolerHeight": 175
+    "ff": "Mini-ITX",
+    "maxGPU": 450,
+    "maxCooler": 175
   },
   {
     "id": 16181,
@@ -80795,15 +81500,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": true,
     "fans_inc": 4,
     "fans_max": 14,
-    "maxGpuLen": 450,
-    "maxCoolerHeight": 175
+    "ff": "Mini-ITX",
+    "maxGPU": 450,
+    "maxCooler": 175
   },
   {
     "id": 16182,
@@ -80823,15 +81528,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
     "rgb": true,
     "fans_inc": 4,
     "fans_max": 14,
-    "maxGpuLen": 450,
-    "maxCoolerHeight": 175
+    "ff": "Mini-ITX",
+    "maxGPU": 450,
+    "maxCooler": 175
   },
   {
     "id": 16183,
@@ -80851,15 +81556,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
     "rgb": true,
     "fans_inc": 3,
     "fans_max": 10,
-    "maxGpuLen": 410,
-    "maxCoolerHeight": 170
+    "ff": "ATX",
+    "maxGPU": 410,
+    "maxCooler": 170
   },
   {
     "id": 16184,
@@ -80879,15 +81584,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
     "rgb": true,
     "fans_inc": 3,
     "fans_max": 10,
-    "maxGpuLen": 410,
-    "maxCoolerHeight": 170
+    "ff": "ATX",
+    "maxGPU": 410,
+    "maxCooler": 170
   },
   {
     "id": 16185,
@@ -80907,7 +81612,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "Mini-ITX",
     "tower": "Mid",
     "tg": false,
     "color": "White",
@@ -80916,8 +81620,9 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 3,
     "fans_max": 10,
-    "maxGpuLen": 460,
-    "maxCoolerHeight": 185
+    "ff": "Mini-ITX",
+    "maxGPU": 460,
+    "maxCooler": 185
   },
   {
     "id": 16186,
@@ -80937,15 +81642,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "EATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": true,
     "fans_inc": 4,
     "fans_max": 6,
-    "maxGpuLen": 455,
-    "maxCoolerHeight": 185
+    "ff": "EATX",
+    "maxGPU": 455,
+    "maxCooler": 185
   },
   {
     "id": 16187,
@@ -80965,15 +81670,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 2,
     "fans_max": 6,
-    "maxGpuLen": 380,
-    "maxCoolerHeight": 165
+    "ff": "ATX",
+    "maxGPU": 380,
+    "maxCooler": 165
   },
   {
     "id": 16188,
@@ -80993,15 +81698,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 3,
     "fans_max": 9,
-    "maxGpuLen": 413,
-    "maxCoolerHeight": 185
+    "ff": "ATX",
+    "maxGPU": 413,
+    "maxCooler": 185
   },
   {
     "id": 16189,
@@ -81021,15 +81726,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black and Red",
     "rgb": false,
     "fans_inc": 4,
     "fans_max": 10,
-    "maxGpuLen": 400,
-    "maxCoolerHeight": 165
+    "ff": "ATX",
+    "maxGPU": 400,
+    "maxCooler": 165
   },
   {
     "id": 16190,
@@ -81049,7 +81754,6 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Full",
     "tg": false,
     "color": "Future Dusk",
@@ -81058,8 +81762,9 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 0,
     "fans_max": 10,
-    "maxGpuLen": 480,
-    "maxCoolerHeight": 175
+    "ff": "ATX",
+    "maxGPU": 480,
+    "maxCooler": 175
   },
   {
     "id": 16191,
@@ -81079,15 +81784,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "EATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 3,
     "fans_max": 9,
-    "maxGpuLen": 491,
-    "maxCoolerHeight": 185
+    "ff": "EATX",
+    "maxGPU": 491,
+    "maxCooler": 185
   },
   {
     "id": 16192,
@@ -81107,15 +81812,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 3,
     "fans_max": 3,
-    "maxGpuLen": 405,
-    "maxCoolerHeight": 170
+    "ff": "ATX",
+    "maxGPU": 405,
+    "maxCooler": 170
   },
   {
     "id": 16193,
@@ -81135,15 +81840,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "ATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 3,
     "fans_max": 6,
-    "maxGpuLen": 355,
-    "maxCoolerHeight": 170
+    "ff": "ATX",
+    "maxGPU": 355,
+    "maxCooler": 170
   },
   {
     "id": 16194,
@@ -81163,15 +81868,15 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "formFactor": "EATX",
     "tower": "Mid",
     "tg": false,
     "color": "Black",
     "rgb": false,
     "fans_inc": 3,
     "fans_max": 9,
-    "maxGpuLen": 413,
-    "maxCoolerHeight": 185
+    "ff": "EATX",
+    "maxGPU": 413,
+    "maxCooler": 185
   },
   {
     "id": 16195,
@@ -95372,13 +96077,13 @@ export const PARTS = [
     },
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "128 gigabytes",
     "memType": "DDR4",
     "m2Slots": 2,
     "wifi": "None",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16722,
@@ -95400,13 +96105,13 @@ export const PARTS = [
     },
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "128 gigabytes",
     "memType": "DDR4",
     "m2Slots": 2,
     "wifi": "WiFi 6",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16723,
@@ -95428,13 +96133,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "128 gigabytes",
     "memType": "DDR5",
     "m2Slots": 3,
     "wifi": "WiFi 6",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16724,
@@ -95456,13 +96161,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "128 gigabytes",
     "memType": "DDR5",
     "m2Slots": 3,
     "wifi": "WiFi 6",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16725,
@@ -95484,13 +96189,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "192 gigabytes",
     "memType": "DDR5",
     "m2Slots": 3,
     "wifi": "WiFi 6",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16726,
@@ -95512,13 +96217,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "B650",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 2,
     "wifi": "WiFi 6",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16727,
@@ -95540,13 +96245,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "X670",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "192 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
     "wifi": "WiFi 6",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16728,
@@ -95568,13 +96273,13 @@ export const PARTS = [
     },
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "128 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
     "wifi": "WiFi 6",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16729,
@@ -95596,12 +96301,13 @@ export const PARTS = [
     },
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "192 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16730,
@@ -95623,13 +96329,13 @@ export const PARTS = [
     },
     "socket": "LGA1700",
     "chipset": "Z790",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "192 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
     "wifi": "WiFi 6",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16731,
@@ -95651,12 +96357,13 @@ export const PARTS = [
     },
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "192 gigabytes",
     "memType": "DDR5",
     "m2Slots": 6,
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16732,
@@ -95678,12 +96385,13 @@ export const PARTS = [
     },
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "192 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16733,
@@ -95705,12 +96413,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "192 gigabytes",
     "memType": "DDR5",
     "m2Slots": 5,
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16734,
@@ -95732,12 +96441,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "192 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16735,
@@ -95759,12 +96469,13 @@ export const PARTS = [
     },
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 2,
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16736,
@@ -95786,13 +96497,13 @@ export const PARTS = [
     },
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 5,
     "wifi": "WiFi 6",
-    "color": "White"
+    "color": "White",
+    "ff": "ATX"
   },
   {
     "id": 16737,
@@ -95814,12 +96525,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16738,
@@ -95841,12 +96553,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 3,
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16739,
@@ -95868,12 +96581,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memSlots": 3,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16740,
@@ -95895,12 +96609,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memSlots": 3,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16741,
@@ -95922,13 +96637,13 @@ export const PARTS = [
     },
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "microATX",
     "memSlots": 2,
     "maxMem": "128 gigabytes",
     "memType": "DDR4",
     "m2Slots": 2,
     "wifi": "WiFi 6",
-    "color": "Black"
+    "color": "Black",
+    "ff": "microATX"
   },
   {
     "id": 16742,
@@ -95950,13 +96665,13 @@ export const PARTS = [
     },
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 5,
     "wifi": "WiFi 6",
-    "color": "White"
+    "color": "White",
+    "ff": "ATX"
   },
   {
     "id": 16743,
@@ -95978,13 +96693,13 @@ export const PARTS = [
     },
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "192 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
     "wifi": "WiFi 6",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16744,
@@ -96006,12 +96721,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 3,
-    "color": "White"
+    "color": "White",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16745,
@@ -96033,12 +96749,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX",
+    "wifi": "None"
   },
   {
     "id": 16746,
@@ -96060,12 +96777,13 @@ export const PARTS = [
     },
     "socket": "AM4",
     "chipset": "B550",
-    "formFactor": "microATX",
     "memSlots": 4,
     "maxMem": "128 gigabytes",
     "memType": "DDR4",
     "m2Slots": 2,
-    "color": "Black"
+    "color": "Black",
+    "ff": "microATX",
+    "wifi": "WiFi 6E"
   },
   {
     "id": 16747,
@@ -96087,12 +96805,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
-    "color": "White"
+    "color": "White",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16748,
@@ -96114,12 +96833,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
-    "color": "Gray White/Matt"
+    "color": "Gray White/Matt",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16749,
@@ -96141,12 +96861,13 @@ export const PARTS = [
     },
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "Mini-ITX",
     "memSlots": 2,
     "maxMem": "128 gigabytes",
     "memType": "DDR5",
     "m2Slots": 2,
-    "color": "Gray White/Matt"
+    "color": "Gray White/Matt",
+    "ff": "Mini-ITX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16750,
@@ -96168,13 +96889,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 3,
     "wifi": "WiFi 6",
-    "color": "White"
+    "color": "White",
+    "ff": "ATX"
   },
   {
     "id": 16751,
@@ -96196,12 +96917,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "microATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 3,
-    "color": "White"
+    "color": "White",
+    "ff": "microATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16752,
@@ -96223,12 +96945,13 @@ export const PARTS = [
     },
     "socket": "LGA1851",
     "chipset": "Z890",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16753,
@@ -96250,13 +96973,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
     "wifi": "WiFi 6",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16754,
@@ -96278,12 +97001,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "EATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 7,
-    "color": "Black"
+    "color": "Black",
+    "ff": "EATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16755,
@@ -96305,12 +97029,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16756,
@@ -96332,12 +97057,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "X870",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 3,
-    "color": "Black/Sliver"
+    "color": "Black/Sliver",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16757,
@@ -96359,12 +97085,13 @@ export const PARTS = [
     },
     "socket": "AM5",
     "chipset": "B850",
-    "formFactor": "ATX",
     "memSlots": 4,
     "maxMem": "256 gigabytes",
     "memType": "DDR5",
     "m2Slots": 4,
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX",
+    "wifi": "WiFi 7"
   },
   {
     "id": 16758,
@@ -96384,7 +97111,7 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "driveType": "DVD/CD"
+    "storageType": "DVD/CD"
   },
   {
     "id": 16759,
@@ -96407,10 +97134,10 @@ export const PARTS = [
     "watts": 700,
     "eff": "White",
     "modular": "None",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16760,
@@ -96453,10 +97180,10 @@ export const PARTS = [
     "watts": 600,
     "eff": "Gold",
     "modular": "None",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16762,
@@ -96479,10 +97206,10 @@ export const PARTS = [
     "watts": 1650,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16763,
@@ -96505,10 +97232,10 @@ export const PARTS = [
     "watts": 850,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16764,
@@ -96531,9 +97258,9 @@ export const PARTS = [
     "watts": 750,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16765,
@@ -96556,9 +97283,9 @@ export const PARTS = [
     "watts": 850,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
-    "rgb": false
+    "rgb": false,
+    "ff": "ATX"
   },
   {
     "id": 16766,
@@ -96581,9 +97308,9 @@ export const PARTS = [
     "watts": 1200,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
-    "rgb": false
+    "rgb": false,
+    "ff": "ATX"
   },
   {
     "id": 16767,
@@ -96606,9 +97333,9 @@ export const PARTS = [
     "watts": 1050,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
-    "rgb": false
+    "rgb": false,
+    "ff": "ATX"
   },
   {
     "id": 16768,
@@ -96631,9 +97358,9 @@ export const PARTS = [
     "watts": 850,
     "eff": "Bronze",
     "modular": "Semi",
-    "formFactor": "ATX",
     "color": "Black",
-    "rgb": false
+    "rgb": false,
+    "ff": "ATX"
   },
   {
     "id": 16769,
@@ -96656,9 +97383,9 @@ export const PARTS = [
     "watts": 650,
     "eff": "Bronze",
     "modular": "Semi",
-    "formFactor": "ATX",
     "color": "Black",
-    "rgb": true
+    "rgb": true,
+    "ff": "ATX"
   },
   {
     "id": 16770,
@@ -96681,9 +97408,9 @@ export const PARTS = [
     "watts": 750,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
-    "rgb": false
+    "rgb": false,
+    "ff": "ATX"
   },
   {
     "id": 16771,
@@ -96706,10 +97433,10 @@ export const PARTS = [
     "watts": 1200,
     "eff": "Platinum",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16772,
@@ -96732,8 +97459,8 @@ export const PARTS = [
     "watts": 850,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
-    "color": "White"
+    "color": "White",
+    "ff": "ATX"
   },
   {
     "id": 16773,
@@ -96756,8 +97483,8 @@ export const PARTS = [
     "watts": 1200,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
-    "color": "White"
+    "color": "White",
+    "ff": "ATX"
   },
   {
     "id": 16774,
@@ -96780,9 +97507,9 @@ export const PARTS = [
     "watts": 1200,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
-    "rgb": false
+    "rgb": false,
+    "ff": "ATX"
   },
   {
     "id": 16775,
@@ -96805,8 +97532,8 @@ export const PARTS = [
     "watts": 1000,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
-    "color": "White"
+    "color": "White",
+    "ff": "ATX"
   },
   {
     "id": 16776,
@@ -96829,8 +97556,8 @@ export const PARTS = [
     "watts": 1500,
     "eff": "Platinum",
     "modular": "Full",
-    "formFactor": "ATX",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16777,
@@ -96853,10 +97580,10 @@ export const PARTS = [
     "watts": 1000,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16778,
@@ -96879,10 +97606,10 @@ export const PARTS = [
     "watts": 850,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16779,
@@ -96905,10 +97632,10 @@ export const PARTS = [
     "watts": 1000,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16780,
@@ -96931,10 +97658,10 @@ export const PARTS = [
     "watts": 750,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16781,
@@ -96957,10 +97684,10 @@ export const PARTS = [
     "watts": 1200,
     "eff": "Platinum",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16782,
@@ -96983,10 +97710,10 @@ export const PARTS = [
     "watts": 1000,
     "eff": "Platinum",
     "modular": "Full",
-    "formFactor": "SFX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "SFX"
   },
   {
     "id": 16783,
@@ -97009,10 +97736,10 @@ export const PARTS = [
     "watts": 1500,
     "eff": "Platinum",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16784,
@@ -97035,10 +97762,10 @@ export const PARTS = [
     "watts": 1200,
     "eff": "Platinum",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16785,
@@ -97061,9 +97788,9 @@ export const PARTS = [
     "watts": 750,
     "eff": "Bronze",
     "modular": "None",
-    "formFactor": "ATX",
     "color": "Black",
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16786,
@@ -97086,9 +97813,9 @@ export const PARTS = [
     "watts": 650,
     "eff": "Bronze",
     "modular": "None",
-    "formFactor": "ATX",
     "color": "Black",
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16787,
@@ -97111,10 +97838,10 @@ export const PARTS = [
     "watts": 1000,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "White",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16788,
@@ -97137,10 +97864,10 @@ export const PARTS = [
     "watts": 850,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "White",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16789,
@@ -97163,10 +97890,10 @@ export const PARTS = [
     "watts": 750,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "White",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16790,
@@ -97189,10 +97916,10 @@ export const PARTS = [
     "watts": 850,
     "eff": "Platinum",
     "modular": "Full",
-    "formFactor": "SFX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "SFX"
   },
   {
     "id": 16791,
@@ -97215,10 +97942,10 @@ export const PARTS = [
     "watts": 500,
     "eff": "White",
     "modular": "None",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16792,
@@ -97241,10 +97968,10 @@ export const PARTS = [
     "watts": 700,
     "eff": "White",
     "modular": "None",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16793,
@@ -97267,10 +97994,10 @@ export const PARTS = [
     "watts": 1050,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Snow",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16794,
@@ -97293,10 +98020,10 @@ export const PARTS = [
     "watts": 750,
     "eff": "Platinum",
     "modular": "Full",
-    "formFactor": "SFX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "SFX"
   },
   {
     "id": 16795,
@@ -97319,8 +98046,8 @@ export const PARTS = [
     "watts": 1600,
     "eff": "Titanium",
     "modular": "Full",
-    "formFactor": "ATX",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16796,
@@ -97343,8 +98070,8 @@ export const PARTS = [
     "watts": 850,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16797,
@@ -97367,8 +98094,8 @@ export const PARTS = [
     "watts": 650,
     "eff": "Bronze",
     "modular": "Semi",
-    "formFactor": "ATX",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16798,
@@ -97391,10 +98118,10 @@ export const PARTS = [
     "watts": 750,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16799,
@@ -97417,10 +98144,10 @@ export const PARTS = [
     "watts": 650,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16800,
@@ -97443,10 +98170,10 @@ export const PARTS = [
     "watts": 850,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16801,
@@ -97469,10 +98196,10 @@ export const PARTS = [
     "watts": 1000,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16802,
@@ -97495,9 +98222,9 @@ export const PARTS = [
     "watts": 750,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
-    "rgb": false
+    "rgb": false,
+    "ff": "ATX"
   },
   {
     "id": 16803,
@@ -97520,9 +98247,9 @@ export const PARTS = [
     "watts": 1000,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
-    "rgb": false
+    "rgb": false,
+    "ff": "ATX"
   },
   {
     "id": 16804,
@@ -97545,10 +98272,10 @@ export const PARTS = [
     "watts": 850,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black & Red",
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16805,
@@ -97571,9 +98298,9 @@ export const PARTS = [
     "watts": 1000,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Snow",
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16806,
@@ -97596,9 +98323,9 @@ export const PARTS = [
     "watts": 850,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16807,
@@ -97621,9 +98348,9 @@ export const PARTS = [
     "watts": 750,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16808,
@@ -97646,9 +98373,9 @@ export const PARTS = [
     "watts": 850,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Snow",
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16809,
@@ -97671,9 +98398,9 @@ export const PARTS = [
     "watts": 1000,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16810,
@@ -97696,9 +98423,9 @@ export const PARTS = [
     "watts": 1200,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
     "color": "Black",
-    "fans": 1
+    "fans": 1,
+    "ff": "ATX"
   },
   {
     "id": 16811,
@@ -97721,8 +98448,8 @@ export const PARTS = [
     "watts": 650,
     "eff": "Bronze",
     "modular": "None",
-    "formFactor": "ATX",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16812,
@@ -97745,8 +98472,8 @@ export const PARTS = [
     "watts": 750,
     "eff": "Bronze",
     "modular": "None",
-    "formFactor": "ATX",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16813,
@@ -97769,8 +98496,8 @@ export const PARTS = [
     "watts": 850,
     "eff": "Gold",
     "modular": "Full",
-    "formFactor": "ATX",
-    "color": "Black"
+    "color": "Black",
+    "ff": "ATX"
   },
   {
     "id": 16814,
@@ -98827,7 +99554,6 @@ export const PARTS = [
       }
     },
     "cap": 500,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 3 x4",
     "pcie": "Gen3",
@@ -98835,7 +99561,8 @@ export const PARTS = [
     "seq_w": 3300,
     "nand": "MLC",
     "heatsink": false,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16852,
@@ -98856,7 +99583,6 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 3 x4",
     "pcie": "Gen3",
@@ -98864,7 +99590,8 @@ export const PARTS = [
     "seq_w": 3300,
     "nand": "MLC",
     "heatsink": false,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16853,
@@ -98885,7 +99612,6 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 3 x4",
     "pcie": "Gen3",
@@ -98893,7 +99619,8 @@ export const PARTS = [
     "seq_w": 3300,
     "nand": "TLC",
     "heatsink": false,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16854,
@@ -98914,12 +99641,12 @@ export const PARTS = [
       }
     },
     "cap": 250,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 535,
     "seq_w": 500,
-    "nand": "3D NAND"
+    "nand": "3D NAND",
+    "storageType": "SSD"
   },
   {
     "id": 16855,
@@ -98940,13 +99667,13 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 535,
     "seq_w": 515,
     "nand": "3D NAND",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16856,
@@ -98967,14 +99694,14 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 560,
     "seq_w": 530,
     "nand": "V-NAND",
     "heatsink": false,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16857,
@@ -98995,13 +99722,13 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 560,
     "seq_w": 530,
     "nand": "V-NAND",
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16858,
@@ -99022,7 +99749,6 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
@@ -99030,7 +99756,8 @@ export const PARTS = [
     "seq_w": 5100,
     "nand": "V-NAND",
     "heatsink": false,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16859,
@@ -99051,13 +99778,13 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 560,
     "seq_w": 530,
     "nand": "V-NAND",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16860,
@@ -99078,13 +99805,13 @@ export const PARTS = [
       }
     },
     "cap": 500,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 560,
     "seq_w": 530,
     "nand": "V-NAND",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16861,
@@ -99105,7 +99832,6 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
@@ -99113,7 +99839,8 @@ export const PARTS = [
     "seq_w": 5100,
     "nand": "V-NAND",
     "heatsink": false,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16862,
@@ -99134,14 +99861,14 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 560,
     "seq_w": 530,
     "nand": "V-NAND",
     "heatsink": false,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16863,
@@ -99162,14 +99889,14 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 560,
     "seq_w": 530,
     "nand": "V-NAND",
     "heatsink": false,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16864,
@@ -99190,14 +99917,14 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 560,
     "seq_w": 530,
     "nand": "V-NAND",
     "heatsink": false,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16865,
@@ -99218,13 +99945,13 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 550,
     "seq_w": 530,
     "nand": "3D NAND",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16866,
@@ -99245,13 +99972,13 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 540,
     "seq_w": 500,
     "nand": "3D NAND",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16867,
@@ -99272,14 +99999,14 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 5150,
     "seq_w": 4900,
     "nand": "TLC",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16868,
@@ -99300,12 +100027,12 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 560,
     "seq_w": 520,
-    "nand": "3D NAND"
+    "nand": "3D NAND",
+    "storageType": "SSD"
   },
   {
     "id": 16869,
@@ -99326,14 +100053,14 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7300,
     "seq_w": 6600,
     "nand": "TLC",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16870,
@@ -99354,14 +100081,14 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7300,
     "seq_w": 6350,
     "nand": "TLC",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16871,
@@ -99382,12 +100109,12 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 560,
     "seq_w": 520,
-    "nand": "3D NAND"
+    "nand": "3D NAND",
+    "storageType": "SSD"
   },
   {
     "id": 16872,
@@ -99408,12 +100135,12 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 560,
     "seq_w": 520,
-    "nand": "3D NAND"
+    "nand": "3D NAND",
+    "storageType": "SSD"
   },
   {
     "id": 16873,
@@ -99434,13 +100161,13 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2230",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 5150,
     "seq_w": 4850,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16874,
@@ -99461,13 +100188,13 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7450,
     "seq_w": 6900,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16875,
@@ -99488,14 +100215,14 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7400,
     "seq_w": 7000,
     "nand": "3D TLC",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16876,
@@ -99516,12 +100243,12 @@ export const PARTS = [
       }
     },
     "cap": 8000,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 560,
     "seq_w": 530,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16877,
@@ -99542,13 +100269,13 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7450,
     "seq_w": 6900,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16878,
@@ -99569,14 +100296,14 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7450,
     "seq_w": 6900,
     "heatsink": true,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16879,
@@ -99597,13 +100324,13 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7450,
     "seq_w": 6900,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16880,
@@ -99624,13 +100351,13 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 5000,
     "seq_w": 4200,
-    "nand": "TLC"
+    "nand": "TLC",
+    "storageType": "SSD"
   },
   {
     "id": 16881,
@@ -99651,13 +100378,13 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 5000,
     "seq_w": 4200,
-    "nand": "TLC"
+    "nand": "TLC",
+    "storageType": "SSD"
   },
   {
     "id": 16882,
@@ -99678,14 +100405,14 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7400,
     "seq_w": 6900,
     "nand": "3D TLC",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16883,
@@ -99706,14 +100433,14 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7400,
     "seq_w": 6800,
     "nand": "3D TLC",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16884,
@@ -99734,14 +100461,14 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7400,
     "seq_w": 7000,
     "nand": "3D TLC",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16885,
@@ -99762,12 +100489,12 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 5500,
-    "seq_w": 5000
+    "seq_w": 5000,
+    "storageType": "SSD"
   },
   {
     "id": 16886,
@@ -99788,14 +100515,14 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 5000,
     "seq_w": 4200,
     "nand": "TLC",
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16887,
@@ -99816,14 +100543,14 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 5000,
     "seq_w": 4200,
     "nand": "TLC",
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16888,
@@ -99844,14 +100571,14 @@ export const PARTS = [
       }
     },
     "cap": 8000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7200,
     "seq_w": 6600,
     "nand": "3D TLC",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16889,
@@ -99872,13 +100599,13 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 540,
     "seq_w": 500,
     "nand": "3D NAND",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16890,
@@ -99899,13 +100626,13 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7150,
     "seq_w": 6300,
-    "nand": "TLC"
+    "nand": "TLC",
+    "storageType": "SSD"
   },
   {
     "id": 16891,
@@ -99926,13 +100653,13 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7250,
     "seq_w": 6300,
-    "nand": "TLC"
+    "nand": "TLC",
+    "storageType": "SSD"
   },
   {
     "id": 16892,
@@ -99953,12 +100680,12 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7250,
-    "seq_w": 6900
+    "seq_w": 6900,
+    "storageType": "SSD"
   },
   {
     "id": 16893,
@@ -99979,12 +100706,12 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7250,
-    "seq_w": 6900
+    "seq_w": 6900,
+    "storageType": "SSD"
   },
   {
     "id": 16894,
@@ -100005,12 +100732,12 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7250,
-    "seq_w": 6900
+    "seq_w": 6900,
+    "storageType": "SSD"
   },
   {
     "id": 16895,
@@ -100031,14 +100758,14 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7150,
     "seq_w": 6300,
     "nand": "TLC",
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16896,
@@ -100059,14 +100786,14 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7250,
     "seq_w": 6300,
     "nand": "TLC",
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16897,
@@ -100087,14 +100814,14 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7250,
     "seq_w": 6300,
     "nand": "TLC",
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16898,
@@ -100115,13 +100842,13 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
     "seq_r": 11000,
     "seq_w": 9500,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16899,
@@ -100142,14 +100869,14 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
     "seq_r": 14700,
     "seq_w": 13300,
     "nand": "V-NAND",
-    "heatsink": true
+    "heatsink": true,
+    "storageType": "SSD"
   },
   {
     "id": 16900,
@@ -100170,14 +100897,14 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
     "seq_r": 14700,
     "seq_w": 13400,
     "nand": "V-NAND",
-    "heatsink": true
+    "heatsink": true,
+    "storageType": "SSD"
   },
   {
     "id": 16901,
@@ -100198,14 +100925,14 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
     "seq_r": 14800,
     "seq_w": 13400,
     "nand": "V-NAND",
-    "heatsink": true
+    "heatsink": true,
+    "storageType": "SSD"
   },
   {
     "id": 16902,
@@ -100226,13 +100953,13 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
     "seq_r": 14900,
     "seq_w": 14000,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16903,
@@ -100253,13 +100980,13 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
     "seq_r": 14900,
     "seq_w": 14000,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16904,
@@ -100280,13 +101007,13 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
     "seq_r": 14900,
     "seq_w": 11000,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16905,
@@ -100307,14 +101034,14 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
     "seq_r": 14900,
     "seq_w": 13700,
     "nand": "3D NAND",
-    "heatsink": true
+    "heatsink": true,
+    "storageType": "SSD"
   },
   {
     "id": 16906,
@@ -100335,14 +101062,14 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
     "seq_r": 14500,
     "seq_w": 13800,
     "nand": "3D NAND",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16907,
@@ -100363,14 +101090,14 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
     "seq_r": 14500,
     "seq_w": 13800,
     "nand": "3D NAND",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16908,
@@ -100391,14 +101118,14 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
     "seq_r": 14900,
     "seq_w": 13700,
     "nand": "3D NAND",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16909,
@@ -100419,14 +101146,14 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
     "seq_r": 14500,
     "seq_w": 13800,
     "nand": "3D NAND",
-    "heatsink": true
+    "heatsink": true,
+    "storageType": "SSD"
   },
   {
     "id": 16910,
@@ -100447,14 +101174,14 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
     "seq_r": 14500,
     "seq_w": 13800,
     "nand": "3D NAND",
-    "heatsink": true
+    "heatsink": true,
+    "storageType": "SSD"
   },
   {
     "id": 16911,
@@ -100475,7 +101202,6 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
@@ -100483,7 +101209,8 @@ export const PARTS = [
     "seq_w": 13400,
     "nand": "V-NAND",
     "heatsink": true,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16912,
@@ -100504,12 +101231,12 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7100,
-    "seq_w": 6700
+    "seq_w": 6700,
+    "storageType": "SSD"
   },
   {
     "id": 16913,
@@ -100530,12 +101257,12 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 7100,
-    "seq_w": 6700
+    "seq_w": 6700,
+    "storageType": "SSD"
   },
   {
     "id": 16914,
@@ -100556,12 +101283,12 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 6900,
-    "seq_w": 6700
+    "seq_w": 6700,
+    "storageType": "SSD"
   },
   {
     "id": 16915,
@@ -100582,7 +101309,6 @@ export const PARTS = [
       }
     },
     "cap": 8000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
@@ -100590,7 +101316,8 @@ export const PARTS = [
     "seq_w": 13400,
     "nand": "V-NAND",
     "heatsink": true,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16916,
@@ -100611,7 +101338,6 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 5 x4",
     "pcie": "Gen5",
@@ -100619,7 +101345,8 @@ export const PARTS = [
     "seq_w": 13400,
     "nand": "V-NAND",
     "heatsink": true,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "storageType": "SSD"
   },
   {
     "id": 16917,
@@ -100640,10 +101367,10 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2230",
     "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4"
+    "pcie": "Gen4",
+    "storageType": "SSD"
   },
   {
     "id": 16918,
@@ -100664,10 +101391,10 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4"
+    "pcie": "Gen4",
+    "storageType": "SSD"
   },
   {
     "id": 16919,
@@ -100688,10 +101415,10 @@ export const PARTS = [
       }
     },
     "cap": 5000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4"
+    "pcie": "Gen4",
+    "storageType": "SSD"
   },
   {
     "id": 16920,
@@ -100712,10 +101439,10 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4"
+    "pcie": "Gen4",
+    "storageType": "SSD"
   },
   {
     "id": 16921,
@@ -100736,14 +101463,14 @@ export const PARTS = [
       }
     },
     "cap": 500,
-    "driveType": "SSD",
     "form": "M.2",
     "interface": "PCIe Gen 4 x4",
     "pcie": "Gen4",
     "seq_r": 4700,
     "seq_w": 1700,
     "nand": "3D NAND",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "SSD"
   },
   {
     "id": 16922,
@@ -100764,10 +101491,10 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4"
+    "pcie": "Gen4",
+    "storageType": "SSD"
   },
   {
     "id": 16923,
@@ -100788,10 +101515,10 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4"
+    "pcie": "Gen4",
+    "storageType": "SSD"
   },
   {
     "id": 16924,
@@ -100812,10 +101539,10 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "SSD",
     "form": "M.2 2280",
     "interface": "PCIe Gen 4 x4",
-    "pcie": "Gen4"
+    "pcie": "Gen4",
+    "storageType": "SSD"
   },
   {
     "id": 16925,
@@ -100836,12 +101563,12 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 180,
     "seq_w": 180,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16926,
@@ -100862,13 +101589,13 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "HDD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 149,
     "seq_w": 149,
     "rpm": 5400,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16927,
@@ -100889,8 +101616,8 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "HDD",
-    "interface": "USB-C (USB 3.1 Gen1)"
+    "interface": "USB-C (USB 3.1 Gen1)",
+    "storageType": "HDD"
   },
   {
     "id": 16928,
@@ -100911,8 +101638,8 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "HDD",
-    "interface": "USB-C (USB 3.1 Gen1)"
+    "interface": "USB-C (USB 3.1 Gen1)",
+    "storageType": "HDD"
   },
   {
     "id": 16929,
@@ -100933,8 +101660,8 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "HDD",
-    "interface": "Micro-USB B"
+    "interface": "Micro-USB B",
+    "storageType": "HDD"
   },
   {
     "id": 16930,
@@ -100955,8 +101682,8 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "HDD",
-    "interface": "Micro-USB B"
+    "interface": "Micro-USB B",
+    "storageType": "HDD"
   },
   {
     "id": 16931,
@@ -100977,11 +101704,11 @@ export const PARTS = [
       }
     },
     "cap": 8000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "rpm": 7200,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16932,
@@ -101002,10 +101729,10 @@ export const PARTS = [
       }
     },
     "cap": 8000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16933,
@@ -101026,13 +101753,13 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 175,
     "seq_w": 175,
     "rpm": 5400,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16934,
@@ -101053,13 +101780,13 @@ export const PARTS = [
       }
     },
     "cap": 18000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 272,
     "seq_w": 272,
     "rpm": 7200,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16935,
@@ -101080,13 +101807,13 @@ export const PARTS = [
       }
     },
     "cap": 8000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 215,
     "seq_w": 215,
     "rpm": 5400,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16936,
@@ -101107,12 +101834,12 @@ export const PARTS = [
       }
     },
     "cap": 8000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 215,
     "seq_w": 215,
-    "rpm": 5400
+    "rpm": 5400,
+    "storageType": "HDD"
   },
   {
     "id": 16937,
@@ -101133,12 +101860,12 @@ export const PARTS = [
       }
     },
     "cap": 6000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 180,
     "seq_w": 180,
-    "rpm": 5400
+    "rpm": 5400,
+    "storageType": "HDD"
   },
   {
     "id": 16938,
@@ -101159,12 +101886,12 @@ export const PARTS = [
       }
     },
     "cap": 8000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 215,
     "seq_w": 215,
-    "rpm": 5640
+    "rpm": 5640,
+    "storageType": "HDD"
   },
   {
     "id": 16939,
@@ -101185,13 +101912,13 @@ export const PARTS = [
       }
     },
     "cap": 20000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 285,
     "seq_w": 285,
     "rpm": 7200,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16940,
@@ -101212,13 +101939,13 @@ export const PARTS = [
       }
     },
     "cap": 12000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 210,
     "seq_w": 210,
     "rpm": 7200,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16941,
@@ -101239,13 +101966,13 @@ export const PARTS = [
       }
     },
     "cap": 8000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 210,
     "seq_w": 210,
     "rpm": 7200,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16942,
@@ -101266,13 +101993,13 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 220,
     "seq_w": 220,
     "rpm": 7200,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16943,
@@ -101293,13 +102020,13 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 190,
     "seq_w": 190,
     "rpm": 5400,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16944,
@@ -101320,13 +102047,13 @@ export const PARTS = [
       }
     },
     "cap": 8000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 190,
     "seq_w": 190,
     "rpm": 5400,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16945,
@@ -101347,13 +102074,13 @@ export const PARTS = [
       }
     },
     "cap": 24000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 285,
     "seq_w": 285,
     "rpm": 7200,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16946,
@@ -101374,13 +102101,13 @@ export const PARTS = [
       }
     },
     "cap": 6000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 256,
     "seq_w": 256,
     "rpm": 7200,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16947,
@@ -101401,12 +102128,12 @@ export const PARTS = [
       }
     },
     "cap": 4000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 175,
     "seq_w": 175,
-    "rpm": 5400
+    "rpm": 5400,
+    "storageType": "HDD"
   },
   {
     "id": 16948,
@@ -101427,12 +102154,12 @@ export const PARTS = [
       }
     },
     "cap": 6000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 170,
     "seq_w": 170,
-    "rpm": 5400
+    "rpm": 5400,
+    "storageType": "HDD"
   },
   {
     "id": 16949,
@@ -101453,13 +102180,13 @@ export const PARTS = [
       }
     },
     "cap": 2000,
-    "driveType": "HDD",
     "form": "3.5 in.",
     "interface": "SATA",
     "seq_r": 147,
     "seq_w": 147,
     "rpm": 7200,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   },
   {
     "id": 16950,
@@ -101480,13 +102207,13 @@ export const PARTS = [
       }
     },
     "cap": 1000,
-    "driveType": "HDD",
     "form": "2.5 in.",
     "interface": "SATA",
     "seq_r": 150,
     "seq_w": 150,
     "rpm": 5400,
-    "heatsink": false
+    "heatsink": false,
+    "storageType": "HDD"
   }
 ];
 
