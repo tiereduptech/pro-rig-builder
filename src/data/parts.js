@@ -15348,7 +15348,8 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 0
+    "value": 0,
+    "rgb": true
   },
   {
     "id": 8082,
@@ -60077,7 +60078,13 @@ export const PARTS = [
     "weight": "2.94 Kilograms",
     "watts": 750,
     "color": "Black",
-    "value": 38
+    "value": 38,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 160,
+    "modular": "Full",
+    "eff": "Gold"
   },
   {
     "id": 15389,
@@ -60114,7 +60121,12 @@ export const PARTS = [
     "watts": 850,
     "modular": "Full",
     "color": "Black",
-    "value": 28
+    "value": 28,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 160,
+    "eff": "Gold"
   },
   {
     "id": 15390,
@@ -60146,7 +60158,11 @@ export const PARTS = [
     "watts": 700,
     "eff": "White",
     "color": "White",
-    "value": 80
+    "value": 80,
+    "ff": "ATX",
+    "fanSize": 120,
+    "depth": 140,
+    "modular": "Non"
   },
   {
     "id": 15391,
@@ -60176,7 +60192,9 @@ export const PARTS = [
     "watts": 650,
     "eff": "Gold",
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "ff": "ATX",
+    "modular": "Non"
   },
   {
     "id": 15392,
@@ -60208,7 +60226,9 @@ export const PARTS = [
     "eff": "Bronze",
     "modular": "Semi",
     "color": "Black",
-    "value": 89
+    "value": 89,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15393,
@@ -60240,7 +60260,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 77
+    "value": 77,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15394,
@@ -60273,7 +60295,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 83
+    "value": 83,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15395,
@@ -60305,7 +60329,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 69
+    "value": 69,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15396,
@@ -60338,7 +60364,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 69
+    "value": 69,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15397,
@@ -60376,7 +60404,8 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 56
+    "value": 56,
+    "ff": "ATX"
   },
   {
     "id": 15398,
@@ -60406,7 +60435,10 @@ export const PARTS = [
     "watts": 1000,
     "modular": "Full",
     "color": "Black",
-    "value": 23
+    "value": 23,
+    "ff": "ATX",
+    "atx3": true,
+    "eff": "Gold"
   },
   {
     "id": 15399,
@@ -60443,7 +60475,12 @@ export const PARTS = [
     "watts": 1000,
     "modular": "Full",
     "color": "Black",
-    "value": 27
+    "value": 27,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 160,
+    "eff": "Gold"
   },
   {
     "id": 15400,
@@ -60475,7 +60512,12 @@ export const PARTS = [
     "watts": 1200,
     "modular": "Full",
     "color": "Black",
-    "value": 0
+    "value": 0,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 180,
+    "eff": "Platinum"
   },
   {
     "id": 15401,
@@ -60503,7 +60545,11 @@ export const PARTS = [
     "weight": "3.46 Kilograms",
     "watts": 1000,
     "color": "Black",
-    "value": 26
+    "value": 26,
+    "ff": "ATX",
+    "atx3": true,
+    "modular": "Full",
+    "eff": "Platinum"
   },
   {
     "id": 15402,
@@ -60540,7 +60586,11 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 53
+    "value": 53,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 150
   },
   {
     "id": 15403,
@@ -60569,7 +60619,10 @@ export const PARTS = [
     "watts": 650,
     "eff": "Gold",
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "ff": "ATX",
+    "atx3": true,
+    "modular": "Non"
   },
   {
     "id": 15404,
@@ -60599,7 +60652,9 @@ export const PARTS = [
     "watts": 650,
     "eff": "Bronze",
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "modular": "Non",
+    "ff": "ATX"
   },
   {
     "id": 15405,
@@ -60631,7 +60686,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 69
+    "value": 69,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15406,
@@ -60663,7 +60720,11 @@ export const PARTS = [
     "watts": 650,
     "eff": "Bronze",
     "color": "Black",
-    "value": 50
+    "value": 50,
+    "ff": "ATX",
+    "modular": "Non",
+    "fanSize": 120,
+    "depth": 150
   },
   {
     "id": 15407,
@@ -60696,7 +60757,11 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 18
+    "value": 18,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 160
   },
   {
     "id": 15408,
@@ -60726,7 +60791,12 @@ export const PARTS = [
     "watts": 750,
     "eff": "Platinum",
     "color": "Black",
-    "value": 0
+    "value": 0,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 160,
+    "modular": "Full"
   },
   {
     "id": 15409,
@@ -60757,7 +60827,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "White",
-    "value": 69
+    "value": 69,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15410,
@@ -60787,7 +60859,10 @@ export const PARTS = [
     "watts": 1200,
     "modular": "Full",
     "color": "Black",
-    "value": 26
+    "value": 26,
+    "ff": "ATX",
+    "atx3": true,
+    "eff": "Gold"
   },
   {
     "id": 15411,
@@ -60817,7 +60892,10 @@ export const PARTS = [
     "watts": 850,
     "modular": "Full",
     "color": "Black",
-    "value": 36
+    "value": 36,
+    "ff": "ATX",
+    "atx3": true,
+    "eff": "Gold"
   },
   {
     "id": 15412,
@@ -60855,7 +60933,11 @@ export const PARTS = [
     "eff": "Platinum",
     "modular": "Full",
     "color": "Black",
-    "value": 9
+    "value": 9,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 180
   },
   {
     "id": 15413,
@@ -60887,7 +60969,11 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 17
+    "value": 17,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 160
   },
   {
     "id": 15414,
@@ -60918,7 +61004,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 76
+    "value": 76,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15415,
@@ -60956,7 +61044,11 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 41
+    "value": 41,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 150
   },
   {
     "id": 15416,
@@ -60988,7 +61080,11 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "White",
-    "value": 62
+    "value": 62,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 160
   },
   {
     "id": 15417,
@@ -61020,7 +61116,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 76
+    "value": 76,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15418,
@@ -61049,7 +61147,11 @@ export const PARTS = [
     "weight": "3.33 Kilograms",
     "watts": 750,
     "color": "Black",
-    "value": 34
+    "value": 34,
+    "ff": "ATX",
+    "atx3": true,
+    "modular": "Full",
+    "eff": "Platinum"
   },
   {
     "id": 15419,
@@ -61080,7 +61182,9 @@ export const PARTS = [
     "watts": 600,
     "eff": "Gold",
     "color": "Black",
-    "value": 86
+    "value": 86,
+    "ff": "ATX",
+    "modular": "Non"
   },
   {
     "id": 15420,
@@ -61118,7 +61222,11 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 37
+    "value": 37,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 150
   },
   {
     "id": 15421,
@@ -61150,7 +61258,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 65
+    "value": 65,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15422,
@@ -61188,7 +61298,11 @@ export const PARTS = [
     "eff": "Bronze",
     "modular": "Semi",
     "color": "Black",
-    "value": 51
+    "value": 51,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 140
   },
   {
     "id": 15423,
@@ -61220,7 +61334,10 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 55
+    "value": 55,
+    "ff": "ATX",
+    "fanSize": 135,
+    "depth": 160
   },
   {
     "id": 15424,
@@ -61250,7 +61367,8 @@ export const PARTS = [
     "eff": "Bronze",
     "modular": "Semi",
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "ff": "ATX"
   },
   {
     "id": 15425,
@@ -61281,7 +61399,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 37
+    "value": 37,
+    "ff": "SFX",
+    "atx3": true
   },
   {
     "id": 15426,
@@ -61313,7 +61433,10 @@ export const PARTS = [
     "watts": 650,
     "eff": "Gold",
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "ff": "ATX",
+    "atx3": true,
+    "modular": "Non"
   },
   {
     "id": 15427,
@@ -61344,7 +61467,12 @@ export const PARTS = [
     "watts": 1500,
     "modular": "Full",
     "color": "Black",
-    "value": 0
+    "value": 0,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 180,
+    "eff": "Platinum"
   },
   {
     "id": 15428,
@@ -61376,7 +61504,10 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 1
+    "value": 1,
+    "fanSize": 135,
+    "depth": 160,
+    "ff": "ATX"
   },
   {
     "id": 15429,
@@ -61406,7 +61537,8 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 75
+    "value": 75,
+    "ff": "ATX"
   },
   {
     "id": 15430,
@@ -61439,7 +61571,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 19
+    "value": 19,
+    "ff": "SFX",
+    "atx3": true
   },
   {
     "id": 15431,
@@ -61470,7 +61604,8 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 81
+    "value": 81,
+    "ff": "ATX"
   },
   {
     "id": 15432,
@@ -61503,7 +61638,8 @@ export const PARTS = [
     "eff": "Bronze",
     "modular": "Semi",
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "ff": "ATX"
   },
   {
     "id": 15433,
@@ -61532,7 +61668,9 @@ export const PARTS = [
     "watts": 550,
     "eff": "Bronze",
     "color": "Black",
-    "value": 86
+    "value": 86,
+    "ff": "ATX",
+    "modular": "Non"
   },
   {
     "id": 15434,
@@ -61564,7 +61702,11 @@ export const PARTS = [
     "watts": 750,
     "eff": "Bronze",
     "color": "Black",
-    "value": 50
+    "value": 50,
+    "ff": "ATX",
+    "modular": "Non",
+    "fanSize": 120,
+    "depth": 150
   },
   {
     "id": 15435,
@@ -61596,7 +61738,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 81
+    "value": 81,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15436,
@@ -61628,7 +61772,10 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 45
+    "value": 45,
+    "fanSize": 120,
+    "depth": 150,
+    "ff": "ATX"
   },
   {
     "id": 15437,
@@ -61652,7 +61799,12 @@ export const PARTS = [
     "weight": "2990 Grams",
     "watts": 1000,
     "color": "Black",
-    "value": 26
+    "value": 26,
+    "ff": "ATX",
+    "fanSize": 120,
+    "depth": 160,
+    "modular": "Full",
+    "eff": "Gold"
   },
   {
     "id": 15438,
@@ -61684,7 +61836,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Semi",
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15439,
@@ -61715,7 +61869,9 @@ export const PARTS = [
     "watts": 600,
     "eff": "Bronze",
     "color": "Black",
-    "value": 68
+    "value": 68,
+    "ff": "ATX",
+    "modular": "Non"
   },
   {
     "id": 15440,
@@ -61748,7 +61904,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 63
+    "value": 63,
+    "atx3": true,
+    "ff": "ATX"
   },
   {
     "id": 15441,
@@ -61780,7 +61938,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 76
+    "value": 76,
+    "rgb": true,
+    "ff": "ATX"
   },
   {
     "id": 15442,
@@ -61812,7 +61972,10 @@ export const PARTS = [
     "eff": "Platinum",
     "modular": "Full",
     "color": "Black",
-    "value": 0
+    "value": 0,
+    "ff": "ATX",
+    "fanSize": 135,
+    "depth": 180
   },
   {
     "id": 15443,
@@ -61842,7 +62005,9 @@ export const PARTS = [
     "watts": 550,
     "eff": "Bronze",
     "color": "Black",
-    "value": 40
+    "value": 40,
+    "ff": "ATX",
+    "modular": "Non"
   },
   {
     "id": 15444,
@@ -61872,7 +62037,9 @@ export const PARTS = [
     "watts": 600,
     "eff": "Gold",
     "color": "Black",
-    "value": 7
+    "value": 7,
+    "ff": "SFX",
+    "modular": "Full"
   },
   {
     "id": 15445,
@@ -61901,7 +62068,9 @@ export const PARTS = [
     "watts": 600,
     "eff": "Gold",
     "color": "Black",
-    "value": 58
+    "value": 58,
+    "ff": "ATX",
+    "modular": "Non"
   },
   {
     "id": 15446,
@@ -61930,7 +62099,10 @@ export const PARTS = [
     "watts": 750,
     "eff": "Gold",
     "color": "Black",
-    "value": 62
+    "value": 62,
+    "ff": "ATX",
+    "atx3": true,
+    "modular": "Non"
   },
   {
     "id": 15447,
@@ -61961,7 +62133,8 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 0
+    "value": 0,
+    "ff": "SFX-L"
   },
   {
     "id": 15448,
@@ -61993,7 +62166,8 @@ export const PARTS = [
     "eff": "Platinum",
     "modular": "Full",
     "color": "Black",
-    "value": 6
+    "value": 6,
+    "ff": "ATX"
   },
   {
     "id": 15449,
@@ -62026,7 +62200,11 @@ export const PARTS = [
     "eff": "Platinum",
     "modular": "Full",
     "color": "Black",
-    "value": 14
+    "value": 14,
+    "ff": "SFX",
+    "atx3": true,
+    "fanSize": 92,
+    "depth": 130
   },
   {
     "id": 15450,
@@ -62057,7 +62235,8 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 62
+    "value": 62,
+    "ff": "ATX"
   },
   {
     "id": 15451,
@@ -62087,13 +62266,15 @@ export const PARTS = [
     "watts": 600,
     "eff": "Bronze",
     "color": "Black",
-    "value": 95
+    "value": 95,
+    "ff": "ATX",
+    "modular": "Non"
   },
   {
     "id": 15452,
     "n": "iCUE ARGB PSU Cable Strips – 2X 200mm LED Strips – 100 RGB LEDs Per Strip – Fits Any PSU Cable – Motherboard 5V ARGB ...",
     "img": "https://m.media-amazon.com/images/I/71n8Z4L2DqL._AC_SL1500_.jpg",
-    "c": "PSU",
+    "c": "ExtensionCables",
     "b": "Corsair",
     "pr": 59.99,
     "msrp": 59.99,
@@ -62145,7 +62326,10 @@ export const PARTS = [
     "watts": 1000,
     "eff": "Gold",
     "color": "Black",
-    "value": 96
+    "value": 96,
+    "ff": "ATX",
+    "atx3": true,
+    "modular": "Non"
   },
   {
     "id": 15454,
@@ -62177,7 +62361,11 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 65
+    "value": 65,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 160
   },
   {
     "id": 15455,
@@ -62209,7 +62397,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 70
+    "value": 70,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15456,
@@ -62241,7 +62431,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 61
+    "value": 61,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15457,
@@ -62271,7 +62463,11 @@ export const PARTS = [
     "watts": 850,
     "modular": "Full",
     "color": "Black",
-    "value": 54
+    "value": 54,
+    "fanSize": 135,
+    "depth": 160,
+    "ff": "ATX",
+    "eff": "Gold"
   },
   {
     "id": 15458,
@@ -62300,7 +62496,12 @@ export const PARTS = [
     "watts": 650,
     "eff": "Gold",
     "color": "Black",
-    "value": 69
+    "value": 69,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 160,
+    "modular": "Semi"
   },
   {
     "id": 15459,
@@ -62331,7 +62532,9 @@ export const PARTS = [
     "watts": 650,
     "eff": "Bronze",
     "color": "Black",
-    "value": 67
+    "value": 67,
+    "ff": "ATX",
+    "modular": "Non"
   },
   {
     "id": 15460,
@@ -62360,7 +62563,12 @@ export const PARTS = [
     "watts": 1300,
     "eff": "Titanium",
     "color": "Black",
-    "value": 0
+    "value": 0,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 175,
+    "modular": "Full"
   },
   {
     "id": 15461,
@@ -62390,7 +62598,9 @@ export const PARTS = [
     "watts": 1000,
     "eff": "Gold",
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "modular": "Non",
+    "ff": "ATX"
   },
   {
     "id": 15462,
@@ -62422,7 +62632,8 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Semi",
     "color": "Black",
-    "value": 17
+    "value": 17,
+    "ff": "ATX"
   },
   {
     "id": 15463,
@@ -62452,7 +62663,9 @@ export const PARTS = [
     "eff": "Platinum",
     "modular": "Full",
     "color": "Black",
-    "value": 47
+    "value": 47,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15464,
@@ -62483,7 +62696,9 @@ export const PARTS = [
     "watts": 650,
     "eff": "Bronze",
     "color": "Black",
-    "value": 75
+    "value": 75,
+    "modular": "Non",
+    "ff": "ATX"
   },
   {
     "id": 15465,
@@ -62513,7 +62728,9 @@ export const PARTS = [
     "watts": 750,
     "eff": "Bronze",
     "color": "Black",
-    "value": 66
+    "value": 66,
+    "modular": "Non",
+    "ff": "ATX"
   },
   {
     "id": 15466,
@@ -62543,7 +62760,9 @@ export const PARTS = [
     "watts": 550,
     "eff": "Bronze",
     "color": "Black",
-    "value": 57
+    "value": 57,
+    "modular": "Non",
+    "ff": "ATX"
   },
   {
     "id": 15467,
@@ -62573,7 +62792,9 @@ export const PARTS = [
     "watts": 550,
     "eff": "Bronze",
     "color": "Black",
-    "value": 69
+    "value": 69,
+    "ff": "ATX",
+    "modular": "Non"
   },
   {
     "id": 15468,
@@ -62604,7 +62825,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Semi",
     "color": "Black",
-    "value": 98
+    "value": 98,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15469,
@@ -62635,7 +62858,8 @@ export const PARTS = [
     "eff": "Bronze",
     "modular": "Semi",
     "color": "Black",
-    "value": 63
+    "value": 63,
+    "ff": "SFX"
   },
   {
     "id": 15470,
@@ -62664,7 +62888,10 @@ export const PARTS = [
     "watts": 650,
     "eff": "Bronze",
     "color": "Black",
-    "value": 67
+    "value": 67,
+    "ff": "ATX",
+    "rgb": true,
+    "modular": "Non"
   },
   {
     "id": 15471,
@@ -62694,7 +62921,10 @@ export const PARTS = [
     "watts": 650,
     "eff": "Gold",
     "color": "Black",
-    "value": 89
+    "value": 89,
+    "ff": "ATX",
+    "atx3": true,
+    "modular": "Full"
   },
   {
     "id": 15472,
@@ -62723,7 +62953,10 @@ export const PARTS = [
     "watts": 850,
     "modular": "Full",
     "color": "Black",
-    "value": 37
+    "value": 37,
+    "ff": "ATX",
+    "atx3": true,
+    "eff": "Gold"
   },
   {
     "id": 15473,
@@ -62754,7 +62987,9 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 39
+    "value": 39,
+    "ff": "ATX",
+    "atx3": true
   },
   {
     "id": 15474,
@@ -62783,7 +63018,9 @@ export const PARTS = [
     "watts": 750,
     "eff": "Gold",
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "modular": "Non",
+    "ff": "ATX"
   },
   {
     "id": 15475,
@@ -62814,7 +63051,9 @@ export const PARTS = [
     "watts": 550,
     "eff": "Bronze",
     "color": "Black",
-    "value": 37
+    "value": 37,
+    "ff": "ATX",
+    "modular": "Full"
   },
   {
     "id": 15476,
@@ -62845,13 +63084,18 @@ export const PARTS = [
     "watts": 1000,
     "modular": "Full",
     "color": "Black",
-    "value": 32
+    "value": 32,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 160,
+    "eff": "Gold"
   },
   {
     "id": 15477,
     "n": "Elite Premium Type 4 Individual Sleeved PSU Cable Pro Kit – Low-Profile Cable Combs, Triple-Mesh Paracord Sleeve, Com...",
     "img": "https://m.media-amazon.com/images/I/81HjyCQzmbL._AC_SL1500_.jpg",
-    "c": "PSU",
+    "c": "ExtensionCables",
     "b": "Corsair",
     "pr": 79.99,
     "msrp": 79.99,
@@ -62904,7 +63148,10 @@ export const PARTS = [
     "eff": "Gold",
     "modular": "Full",
     "color": "Black",
-    "value": 71
+    "value": 71,
+    "ff": "ATX",
+    "fanSize": 135,
+    "depth": 160
   },
   {
     "id": 15479,
@@ -62934,7 +63181,9 @@ export const PARTS = [
     "watts": 850,
     "eff": "Gold",
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "modular": "Non",
+    "ff": "ATX"
   },
   {
     "id": 15480,
@@ -62970,7 +63219,12 @@ export const PARTS = [
     "watts": 750,
     "modular": "Semi",
     "color": "Black",
-    "value": 44
+    "value": 44,
+    "ff": "ATX",
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 150,
+    "eff": "Bronze"
   },
   {
     "id": 15481,
@@ -63001,7 +63255,10 @@ export const PARTS = [
     "watts": 850,
     "modular": "Full",
     "color": "Black",
-    "value": 93
+    "value": 93,
+    "ff": "ATX",
+    "atx3": true,
+    "eff": "Gold"
   },
   {
     "id": 15482,
@@ -63032,7 +63289,10 @@ export const PARTS = [
     "eff": "Platinum",
     "modular": "Full",
     "color": "Black",
-    "value": 79
+    "value": 79,
+    "ff": "ATX",
+    "atx3": true,
+    "rgb": true
   },
   {
     "id": 15483,
@@ -63063,7 +63323,9 @@ export const PARTS = [
     "watts": 1000,
     "eff": "Gold",
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "ff": "ATX",
+    "modular": "Non"
   },
   {
     "id": 15484,
@@ -103111,13 +103373,15 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 70
+    "value": 70,
+    "fanSize": 120,
+    "depth": 140
   },
   {
     "id": 16760,
     "n": "CORSAIR - 12-Pin GPU Power Cable, Sleeved - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6437/6437465_sd.jpg",
-    "c": "PSU",
+    "c": "ExtensionCables",
     "b": "CORSAIR",
     "pr": 19.99,
     "msrp": 19.99,
@@ -103185,7 +103449,10 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 20
+    "value": 20,
+    "atx3": true,
+    "fanSize": 140,
+    "depth": 170
   },
   {
     "id": 16763,
@@ -103212,7 +103479,10 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 39
+    "value": 39,
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 150
   },
   {
     "id": 16764,
@@ -103238,7 +103508,10 @@ export const PARTS = [
     "color": "Black",
     "fans": 1,
     "ff": "ATX",
-    "value": 45
+    "value": 45,
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 150
   },
   {
     "id": 16765,
@@ -103264,7 +103537,8 @@ export const PARTS = [
     "color": "Black",
     "rgb": false,
     "ff": "ATX",
-    "value": 44
+    "value": 44,
+    "atx3": true
   },
   {
     "id": 16766,
@@ -103290,7 +103564,8 @@ export const PARTS = [
     "color": "Black",
     "rgb": false,
     "ff": "ATX",
-    "value": 26
+    "value": 26,
+    "atx3": true
   },
   {
     "id": 16767,
@@ -103316,7 +103591,8 @@ export const PARTS = [
     "color": "Black",
     "rgb": false,
     "ff": "ATX",
-    "value": 36
+    "value": 36,
+    "atx3": true
   },
   {
     "id": 16768,
@@ -103342,7 +103618,10 @@ export const PARTS = [
     "color": "Black",
     "rgb": false,
     "ff": "ATX",
-    "value": 44
+    "value": 44,
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 140
   },
   {
     "id": 16769,
@@ -103368,7 +103647,10 @@ export const PARTS = [
     "color": "Black",
     "rgb": true,
     "ff": "ATX",
-    "value": 52
+    "value": 52,
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 140
   },
   {
     "id": 16770,
@@ -103421,7 +103703,9 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 7
+    "value": 7,
+    "fanSize": 135,
+    "depth": 180
   },
   {
     "id": 16772,
@@ -103446,7 +103730,8 @@ export const PARTS = [
     "modular": "Full",
     "color": "White",
     "ff": "ATX",
-    "value": 34
+    "value": 34,
+    "atx3": true
   },
   {
     "id": 16773,
@@ -103471,7 +103756,8 @@ export const PARTS = [
     "modular": "Full",
     "color": "White",
     "ff": "ATX",
-    "value": 33
+    "value": 33,
+    "atx3": true
   },
   {
     "id": 16774,
@@ -103497,7 +103783,8 @@ export const PARTS = [
     "color": "Black",
     "rgb": false,
     "ff": "ATX",
-    "value": 37
+    "value": 37,
+    "atx3": true
   },
   {
     "id": 16775,
@@ -103522,7 +103809,8 @@ export const PARTS = [
     "modular": "Full",
     "color": "White",
     "ff": "ATX",
-    "value": 38
+    "value": 38,
+    "atx3": true
   },
   {
     "id": 16776,
@@ -103547,7 +103835,8 @@ export const PARTS = [
     "modular": "Full",
     "color": "Black",
     "ff": "ATX",
-    "value": 11
+    "value": 11,
+    "atx3": true
   },
   {
     "id": 16777,
@@ -103574,7 +103863,9 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 12
+    "value": 12,
+    "fanSize": 135,
+    "depth": 160
   },
   {
     "id": 16778,
@@ -103601,7 +103892,9 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 15
+    "value": 15,
+    "fanSize": 135,
+    "depth": 160
   },
   {
     "id": 16779,
@@ -103628,7 +103921,10 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 41
+    "value": 41,
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 150
   },
   {
     "id": 16780,
@@ -103655,7 +103951,10 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 51
+    "value": 51,
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 160
   },
   {
     "id": 16781,
@@ -103682,7 +103981,10 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 18
+    "value": 18,
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 160
   },
   {
     "id": 16782,
@@ -103709,7 +104011,8 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "SFX",
-    "value": 17
+    "value": 17,
+    "atx3": true
   },
   {
     "id": 16783,
@@ -103736,7 +104039,10 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 9
+    "value": 9,
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 180
   },
   {
     "id": 16784,
@@ -103763,7 +104069,10 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 6
+    "value": 6,
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 180
   },
   {
     "id": 16785,
@@ -103789,7 +104098,9 @@ export const PARTS = [
     "color": "Black",
     "fans": 1,
     "ff": "ATX",
-    "value": 66
+    "value": 66,
+    "fanSize": 120,
+    "depth": 150
   },
   {
     "id": 16786,
@@ -103815,7 +104126,9 @@ export const PARTS = [
     "color": "Black",
     "fans": 1,
     "ff": "ATX",
-    "value": 67
+    "value": 67,
+    "fanSize": 120,
+    "depth": 150
   },
   {
     "id": 16787,
@@ -103842,7 +104155,10 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 15
+    "value": 15,
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 160
   },
   {
     "id": 16788,
@@ -103869,7 +104185,10 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 20
+    "value": 20,
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 160
   },
   {
     "id": 16789,
@@ -103896,7 +104215,10 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 42
+    "value": 42,
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 160
   },
   {
     "id": 16790,
@@ -103923,7 +104245,8 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "SFX",
-    "value": 14
+    "value": 14,
+    "atx3": true
   },
   {
     "id": 16791,
@@ -103950,7 +104273,9 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 54
+    "value": 54,
+    "fanSize": 120,
+    "depth": 140
   },
   {
     "id": 16792,
@@ -103977,7 +104302,9 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 61
+    "value": 61,
+    "fanSize": 120,
+    "depth": 140
   },
   {
     "id": 16793,
@@ -104004,7 +104331,8 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 44
+    "value": 44,
+    "atx3": true
   },
   {
     "id": 16794,
@@ -104031,7 +104359,8 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "SFX",
-    "value": 11
+    "value": 11,
+    "atx3": true
   },
   {
     "id": 16795,
@@ -104056,7 +104385,10 @@ export const PARTS = [
     "modular": "Full",
     "color": "Black",
     "ff": "ATX",
-    "value": 0
+    "value": 0,
+    "atx3": true,
+    "fanSize": 135,
+    "depth": 190
   },
   {
     "id": 16796,
@@ -104081,7 +104413,8 @@ export const PARTS = [
     "modular": "Full",
     "color": "Black",
     "ff": "ATX",
-    "value": 44
+    "value": 44,
+    "atx3": true
   },
   {
     "id": 16797,
@@ -104106,7 +104439,10 @@ export const PARTS = [
     "modular": "Semi",
     "color": "Black",
     "ff": "ATX",
-    "value": 32
+    "value": 32,
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 150
   },
   {
     "id": 16798,
@@ -104133,7 +104469,10 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 51
+    "value": 51,
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 150
   },
   {
     "id": 16799,
@@ -104160,7 +104499,10 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 46
+    "value": 46,
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 150
   },
   {
     "id": 16800,
@@ -104187,7 +104529,10 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 31
+    "value": 31,
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 150
   },
   {
     "id": 16801,
@@ -104214,7 +104559,10 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 33
+    "value": 33,
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 150
   },
   {
     "id": 16802,
@@ -104240,7 +104588,8 @@ export const PARTS = [
     "color": "Black",
     "rgb": false,
     "ff": "ATX",
-    "value": 51
+    "value": 51,
+    "atx3": true
   },
   {
     "id": 16803,
@@ -104266,7 +104615,8 @@ export const PARTS = [
     "color": "Black",
     "rgb": false,
     "ff": "ATX",
-    "value": 47
+    "value": 47,
+    "atx3": true
   },
   {
     "id": 16804,
@@ -104293,7 +104643,8 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 21
+    "value": 21,
+    "atx3": true
   },
   {
     "id": 16805,
@@ -104319,7 +104670,10 @@ export const PARTS = [
     "color": "Snow",
     "fans": 1,
     "ff": "ATX",
-    "value": 33
+    "value": 33,
+    "atx3": true,
+    "fanSize": 140,
+    "depth": 170
   },
   {
     "id": 16806,
@@ -104345,7 +104699,10 @@ export const PARTS = [
     "color": "Black",
     "fans": 1,
     "ff": "ATX",
-    "value": 44
+    "value": 44,
+    "atx3": true,
+    "fanSize": 140,
+    "depth": 170
   },
   {
     "id": 16807,
@@ -104371,7 +104728,10 @@ export const PARTS = [
     "color": "Black",
     "fans": 1,
     "ff": "ATX",
-    "value": 51
+    "value": 51,
+    "atx3": true,
+    "fanSize": 140,
+    "depth": 170
   },
   {
     "id": 16808,
@@ -104397,7 +104757,10 @@ export const PARTS = [
     "color": "Snow",
     "fans": 1,
     "ff": "ATX",
-    "value": 53
+    "value": 53,
+    "atx3": true,
+    "fanSize": 140,
+    "depth": 170
   },
   {
     "id": 16809,
@@ -104423,7 +104786,10 @@ export const PARTS = [
     "color": "Black",
     "fans": 1,
     "ff": "ATX",
-    "value": 33
+    "value": 33,
+    "atx3": true,
+    "fanSize": 140,
+    "depth": 170
   },
   {
     "id": 16810,
@@ -104449,7 +104815,10 @@ export const PARTS = [
     "color": "Black",
     "fans": 1,
     "ff": "ATX",
-    "value": 33
+    "value": 33,
+    "atx3": true,
+    "fanSize": 140,
+    "depth": 170
   },
   {
     "id": 16811,
@@ -104474,7 +104843,10 @@ export const PARTS = [
     "modular": "None",
     "color": "Black",
     "ff": "ATX",
-    "value": 52
+    "value": 52,
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 150
   },
   {
     "id": 16812,
@@ -104499,7 +104871,10 @@ export const PARTS = [
     "modular": "None",
     "color": "Black",
     "ff": "ATX",
-    "value": 53
+    "value": 53,
+    "atx3": true,
+    "fanSize": 120,
+    "depth": 150
   },
   {
     "id": 16813,
