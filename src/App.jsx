@@ -331,11 +331,11 @@ function CatThumb({ cat, thumbs, setThumb, removeThumb, size = 48, editable = tr
 
   return (
     <div
-      style={{ width: size, height: size, borderRadius: rounded, overflow: "hidden", position: "relative", flexShrink: 0, background: "var(--bg4)", border: "1px solid var(--bdr)", display: "flex", alignItems: "center", justifyContent: "center" }}
+      style={{ width: size, height: size, borderRadius: rounded, overflow: "hidden", position: "relative", flexShrink: 0, background: "#fff", border: "none", display: "flex", alignItems: "center", justifyContent: "center" }}
       onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
     >
       {displaySrc ? (
-        <img src={displaySrc} alt={meta?.label} onError={() => setImgErr(true)} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+        <img src={displaySrc} alt={meta?.label} onError={() => setImgErr(true)} style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} />
       ) : (
         <span style={{ fontSize: size * 0.45, lineHeight: 1 }}>{meta?.icon || "📦"}</span>
       )}
