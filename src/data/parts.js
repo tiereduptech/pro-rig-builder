@@ -110431,6 +110431,874 @@ export const PARTS = [
         "inStock": true
       }
     }
+  },
+  {
+    "id": 17191,
+    "n": "Lian Li US88 V1 8.8\" Universal Screen Black",
+    "img": "https://m.media-amazon.com/images/I/71RkR5VdGcL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "Lian Li",
+    "pr": 99,
+    "msrp": 119,
+    "r": 4.5,
+    "reviews": 180,
+    "asin": "B0FKH3NK1H",
+    "size": 8.8,
+    "resolution": "1920x480",
+    "refresh": 60,
+    "connection": "USB",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 500,
+    "ecosystem": "L-Connect",
+    "deals": {
+      "amazon": {
+        "price": 99,
+        "url": "https://www.amazon.com/dp/B0FKH3NK1H?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17192,
+    "n": "Lian Li US88 V1 8.8\" Universal Screen White",
+    "img": "https://m.media-amazon.com/images/I/71RkR5VdGcL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "Lian Li",
+    "pr": 99,
+    "msrp": 119,
+    "r": 4.5,
+    "reviews": 120,
+    "asin": "B0FKH57YQP",
+    "size": 8.8,
+    "resolution": "1920x480",
+    "refresh": 60,
+    "connection": "USB",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 500,
+    "ecosystem": "L-Connect",
+    "deals": {
+      "amazon": {
+        "price": 99,
+        "url": "https://www.amazon.com/dp/B0FKH57YQP?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17193,
+    "n": "Thermalright Trofeo Vision 9.16\" LCD Black",
+    "img": "https://m.media-amazon.com/images/I/61hPTp5x9fL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "Thermalright",
+    "pr": 79,
+    "msrp": 99,
+    "r": 4.4,
+    "reviews": 95,
+    "asin": "B0G1BXWTYF",
+    "size": 9.16,
+    "resolution": "1920x480",
+    "refresh": 60,
+    "connection": "USB",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 400,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 79,
+        "url": "https://www.amazon.com/dp/B0G1BXWTYF?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17194,
+    "n": "Jungle Leopard 9.16\" LCD Mini Secondary Monitor 1920x480 IPS White",
+    "img": "https://m.media-amazon.com/images/I/61BzxS9hyIL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "Jungle Leopard",
+    "pr": 55,
+    "msrp": 79,
+    "r": 4.3,
+    "reviews": 420,
+    "asin": "B0D7NWVLBJ",
+    "size": 9.16,
+    "resolution": "1920x480",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 400,
+    "ecosystem": "Standalone",
+    "deals": {
+      "amazon": {
+        "price": 55,
+        "url": "https://www.amazon.com/dp/B0D7NWVLBJ?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17195,
+    "n": "AISHICHEN 11.26\" Mini Monitor FHD 1920x440 IPS HDMI Type-C",
+    "img": "https://m.media-amazon.com/images/I/71lZc0vwryL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "AISHICHEN",
+    "pr": 99,
+    "msrp": 129,
+    "r": 4.3,
+    "reviews": 350,
+    "asin": "B0FKFQGRJL",
+    "size": 11.26,
+    "resolution": "1920x440",
+    "refresh": 60,
+    "connection": "HDMI",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 500,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 99,
+        "url": "https://www.amazon.com/dp/B0FKFQGRJL?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17196,
+    "n": "AISHICHEN 8.8\" PC Temperature Display IPS USB Mini Screen AIDA64",
+    "img": "https://m.media-amazon.com/images/I/61Y2j4ASyHL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "AISHICHEN",
+    "pr": 45,
+    "msrp": 59,
+    "r": 4.2,
+    "reviews": 680,
+    "asin": "B0D5Q3BKJS",
+    "size": 8.8,
+    "resolution": "1920x480",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 300,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 45,
+        "url": "https://www.amazon.com/dp/B0D5Q3BKJS?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17197,
+    "n": "ZHAOCAILIN 11.3\" Mini Monitor FHD IPS 1920x440 LCD AIDA64",
+    "img": "https://m.media-amazon.com/images/I/71IrVMKzLLL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "ZHAOCAILIN",
+    "pr": 89,
+    "msrp": 119,
+    "r": 4.3,
+    "reviews": 280,
+    "asin": "B0FCDH6XBF",
+    "size": 11.3,
+    "resolution": "1920x440",
+    "refresh": 60,
+    "connection": "HDMI",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 400,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 89,
+        "url": "https://www.amazon.com/dp/B0FCDH6XBF?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17198,
+    "n": "wisecoco 12.3\" Secondary Monitor IPS Stretched Bar 1920x720 HDMI USB-C",
+    "img": "https://m.media-amazon.com/images/I/61WE3D5TiYL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "wisecoco",
+    "pr": 179,
+    "msrp": 229,
+    "r": 4.3,
+    "reviews": 840,
+    "asin": "B0BHVB1XXM",
+    "size": 12.3,
+    "resolution": "1920x720",
+    "refresh": 60,
+    "connection": "HDMI",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Desk Stand",
+    "brightness": 400,
+    "ecosystem": "Standalone",
+    "deals": {
+      "amazon": {
+        "price": 179,
+        "url": "https://www.amazon.com/dp/B0BHVB1XXM?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17199,
+    "n": "wisecoco 12.6\" Touch Screen Monitor Secondary 1920x515 HDMI",
+    "img": "https://m.media-amazon.com/images/I/61IZoMS4lPL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "wisecoco",
+    "pr": 199,
+    "msrp": 259,
+    "r": 4.2,
+    "reviews": 320,
+    "asin": "B0C9LS4W5Z",
+    "size": 12.6,
+    "resolution": "1920x515",
+    "refresh": 60,
+    "connection": "HDMI",
+    "panelType": "IPS",
+    "touch": true,
+    "mount": "Desk Stand",
+    "brightness": 400,
+    "ecosystem": "Standalone",
+    "deals": {
+      "amazon": {
+        "price": 199,
+        "url": "https://www.amazon.com/dp/B0C9LS4W5Z?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17200,
+    "n": "wisecoco 7.84\" Mini Monitor 1280x400 USB-C Single-Cable AIDA64",
+    "img": "https://m.media-amazon.com/images/I/61dTYoAhJ2L._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "wisecoco",
+    "pr": 65,
+    "msrp": 89,
+    "r": 4.2,
+    "reviews": 560,
+    "asin": "B0C4HZRB7Q",
+    "size": 7.84,
+    "resolution": "1280x400",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 300,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 65,
+        "url": "https://www.amazon.com/dp/B0C4HZRB7Q?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17201,
+    "n": "hokistudio 8.8\" 1920x480 IPS LCD Screen AIDA64 DIY Kit",
+    "img": "https://m.media-amazon.com/images/I/61AaTaF3xuL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "hokistudio",
+    "pr": 59,
+    "msrp": 79,
+    "r": 4.2,
+    "reviews": 190,
+    "asin": "B086R3BT36",
+    "size": 8.8,
+    "resolution": "1920x480",
+    "refresh": 60,
+    "connection": "HDMI",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 350,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 59,
+        "url": "https://www.amazon.com/dp/B086R3BT36?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17202,
+    "n": "EDIY 5\" IPS USB Mini Screen AIDA64 800x480 Type-C",
+    "img": "https://m.media-amazon.com/images/I/61X2z83UJmL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "EDIY",
+    "pr": 29,
+    "msrp": 39,
+    "r": 4.2,
+    "reviews": 2400,
+    "asin": "B0B7BK8ZRR",
+    "size": 5,
+    "resolution": "800x480",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 300,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 29,
+        "url": "https://www.amazon.com/dp/B0B7BK8ZRR?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17203,
+    "n": "EDIY 3.5\" IPS USB Mini Screen AIDA64 Type-C Sub Screen",
+    "img": "https://m.media-amazon.com/images/I/61-EtwsZGuL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "EDIY",
+    "pr": 19,
+    "msrp": 29,
+    "r": 4.1,
+    "reviews": 1800,
+    "asin": "B09TTHZYSH",
+    "size": 3.5,
+    "resolution": "320x480",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 250,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 19,
+        "url": "https://www.amazon.com/dp/B09TTHZYSH?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17204,
+    "n": "ASHATA 5\" USB Mini Screen AIDA64 CPU GPU Data Monitor Type-C",
+    "img": "https://m.media-amazon.com/images/I/71tmYYhLYpL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "ASHATA",
+    "pr": 25,
+    "msrp": 39,
+    "r": 4.1,
+    "reviews": 1200,
+    "asin": "B0C28D2W2B",
+    "size": 5,
+    "resolution": "800x480",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 300,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 25,
+        "url": "https://www.amazon.com/dp/B0C28D2W2B?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17205,
+    "n": "ASHATA 7.9\" IPS USB Mini Screen AIDA64 CPU Monitor Raspberry Pi",
+    "img": "https://m.media-amazon.com/images/I/71Qt6DdY1mL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "ASHATA",
+    "pr": 45,
+    "msrp": 59,
+    "r": 4.2,
+    "reviews": 680,
+    "asin": "B0BV1W1366",
+    "size": 7.9,
+    "resolution": "1280x400",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 300,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 45,
+        "url": "https://www.amazon.com/dp/B0BV1W1366?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17206,
+    "n": "ASHATA 3.5\" PC Case Screen AIDA64 USB Type-C Sub Screen Black",
+    "img": "https://m.media-amazon.com/images/I/61L8YeLBI4L._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "ASHATA",
+    "pr": 19,
+    "msrp": 29,
+    "r": 4.1,
+    "reviews": 1500,
+    "asin": "B0BTMMD9P4",
+    "size": 3.5,
+    "resolution": "320x480",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 250,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 19,
+        "url": "https://www.amazon.com/dp/B0BTMMD9P4?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17207,
+    "n": "WOWNOVA PC Temperature Display ARGB Case IPS USB Mini Screen Black",
+    "img": "https://m.media-amazon.com/images/I/61Nj5YQ6qyL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "WOWNOVA",
+    "pr": 35,
+    "msrp": 49,
+    "r": 4.3,
+    "reviews": 890,
+    "asin": "B0BXTHCWZC",
+    "size": 3.5,
+    "resolution": "480x320",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 300,
+    "ecosystem": "Standalone",
+    "deals": {
+      "amazon": {
+        "price": 35,
+        "url": "https://www.amazon.com/dp/B0BXTHCWZC?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17208,
+    "n": "WOWNOVA 5\" Computer Temp Monitor ARGB PC Case Sensor Panel Type-C",
+    "img": "https://m.media-amazon.com/images/I/61cZZbSTbgL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "WOWNOVA",
+    "pr": 42,
+    "msrp": 59,
+    "r": 4.3,
+    "reviews": 520,
+    "asin": "B0CMBD5F5Y",
+    "size": 5,
+    "resolution": "800x480",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 300,
+    "ecosystem": "Standalone",
+    "deals": {
+      "amazon": {
+        "price": 42,
+        "url": "https://www.amazon.com/dp/B0CMBD5F5Y?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17209,
+    "n": "WOWNOVA English Version Computer Temp Monitor ARGB PC Display",
+    "img": "https://m.media-amazon.com/images/I/61G4H8kj93L._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "WOWNOVA",
+    "pr": 39,
+    "msrp": 55,
+    "r": 4.2,
+    "reviews": 180,
+    "asin": "B0FDPV8N6K",
+    "size": 3.5,
+    "resolution": "480x320",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 300,
+    "ecosystem": "Standalone",
+    "deals": {
+      "amazon": {
+        "price": 39,
+        "url": "https://www.amazon.com/dp/B0FDPV8N6K?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17210,
+    "n": "Ransanx 3.5\" IPS USB Mini Screen AIDA64 with Stand and Cable",
+    "img": "https://m.media-amazon.com/images/I/61Y-Q8OUYLL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "Ransanx",
+    "pr": 22,
+    "msrp": 35,
+    "r": 4.2,
+    "reviews": 2100,
+    "asin": "B0BRR2MWQY",
+    "size": 3.5,
+    "resolution": "480x320",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Desk Stand",
+    "brightness": 250,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 22,
+        "url": "https://www.amazon.com/dp/B0BRR2MWQY?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17211,
+    "n": "Hosyond 5\" USB-C Mini Monitor 1024x600 IPS Windows Laptop",
+    "img": "https://m.media-amazon.com/images/I/61RRV7uLgDL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "Hosyond",
+    "pr": 49,
+    "msrp": 69,
+    "r": 4.3,
+    "reviews": 420,
+    "asin": "B0CG6PNR1T",
+    "size": 5,
+    "resolution": "1024x600",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 350,
+    "ecosystem": "Standalone",
+    "deals": {
+      "amazon": {
+        "price": 49,
+        "url": "https://www.amazon.com/dp/B0CG6PNR1T?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17212,
+    "n": "7\" HD LCD Display 1024x600 IPS 178° HDMI for AIDA64",
+    "img": "https://m.media-amazon.com/images/I/61XUVa-9M5L._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "Generic",
+    "pr": 45,
+    "msrp": 59,
+    "r": 4.1,
+    "reviews": 890,
+    "asin": "B083WJ2MX8",
+    "size": 7,
+    "resolution": "1024x600",
+    "refresh": 60,
+    "connection": "HDMI",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 300,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 45,
+        "url": "https://www.amazon.com/dp/B083WJ2MX8?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17213,
+    "n": "GeeekPi 11.26\" 1920x440 HDMI LCD Capacitive Touch Screen",
+    "img": "https://m.media-amazon.com/images/I/71RbBfUfwSL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "GeeekPi",
+    "pr": 139,
+    "msrp": 169,
+    "r": 4.4,
+    "reviews": 260,
+    "asin": "B0CP9VVJDS",
+    "size": 11.26,
+    "resolution": "1920x440",
+    "refresh": 60,
+    "connection": "HDMI",
+    "panelType": "IPS",
+    "touch": true,
+    "mount": "Universal",
+    "brightness": 400,
+    "ecosystem": "Standalone",
+    "deals": {
+      "amazon": {
+        "price": 139,
+        "url": "https://www.amazon.com/dp/B0CP9VVJDS?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17214,
+    "n": "BZIZU 8.8\" PC Mini Monitor IPS 1920x480 USB Type-C AIDA64 Display",
+    "img": "https://m.media-amazon.com/images/I/61BvqcNUc5L._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "BZIZU",
+    "pr": 55,
+    "msrp": 79,
+    "r": 4.2,
+    "reviews": 420,
+    "asin": "B0D1QX3TY1",
+    "size": 8.8,
+    "resolution": "1920x480",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 350,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 55,
+        "url": "https://www.amazon.com/dp/B0D1QX3TY1?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17215,
+    "n": "Mnpctech 5\" HDMI LCD Display Kit with 120mm Fan Mount Bracket",
+    "img": "https://m.media-amazon.com/images/I/51TMDlVH7qL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "Mnpctech",
+    "pr": 89,
+    "msrp": 109,
+    "r": 4.3,
+    "reviews": 75,
+    "asin": "B0C3X4PY2K",
+    "size": 5,
+    "resolution": "800x480",
+    "refresh": 60,
+    "connection": "HDMI",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "120mm Fan",
+    "brightness": 300,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 89,
+        "url": "https://www.amazon.com/dp/B0C3X4PY2K?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17216,
+    "n": "Waveshare 7.9\" Bar Type HDMI IPS LCD 400x1280 Raspberry Pi Compatible",
+    "img": "https://m.media-amazon.com/images/I/61rMFl-bNUL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "Waveshare",
+    "pr": 79,
+    "msrp": 99,
+    "r": 4.3,
+    "reviews": 310,
+    "asin": "B0919DHY4J",
+    "size": 7.9,
+    "resolution": "400x1280",
+    "refresh": 60,
+    "connection": "HDMI",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 300,
+    "ecosystem": "Standalone",
+    "deals": {
+      "amazon": {
+        "price": 79,
+        "url": "https://www.amazon.com/dp/B0919DHY4J?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17217,
+    "n": "Fysetc 3.5\" IPS USB AIDA64 Sub Display with Metal Housing",
+    "img": "https://m.media-amazon.com/images/I/61KFB2M7B5L._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "Fysetc",
+    "pr": 26,
+    "msrp": 39,
+    "r": 4.1,
+    "reviews": 340,
+    "asin": "B0DBGR3S9R",
+    "size": 3.5,
+    "resolution": "480x320",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 250,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 26,
+        "url": "https://www.amazon.com/dp/B0DBGR3S9R?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17218,
+    "n": "wisecoco 10.3\" Touchscreen 400cd/m² IPS 1920x720 HDMI USB-C Travel",
+    "img": "https://m.media-amazon.com/images/I/61wTg0o2rQL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "wisecoco",
+    "pr": 229,
+    "msrp": 299,
+    "r": 4.3,
+    "reviews": 280,
+    "asin": "B0C73XTG6W",
+    "size": 10.3,
+    "resolution": "1920x720",
+    "refresh": 60,
+    "connection": "HDMI",
+    "panelType": "IPS",
+    "touch": true,
+    "mount": "Desk Stand",
+    "brightness": 400,
+    "ecosystem": "Standalone",
+    "deals": {
+      "amazon": {
+        "price": 229,
+        "url": "https://www.amazon.com/dp/B0C73XTG6W?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17219,
+    "n": "AISHICHEN 4.88\" USB Mini Screen AIDA64 CPU GPU PC Temp Display",
+    "img": "https://m.media-amazon.com/images/I/61dD3AtRMvL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "AISHICHEN",
+    "pr": 28,
+    "msrp": 39,
+    "r": 4.1,
+    "reviews": 280,
+    "asin": "B0D9MHMCPK",
+    "size": 4.88,
+    "resolution": "720x720",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 300,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 28,
+        "url": "https://www.amazon.com/dp/B0D9MHMCPK?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17220,
+    "n": "Jungle Leopard 8.8\" LCD Screen 1920x480 IPS USB Type-C Black",
+    "img": "https://m.media-amazon.com/images/I/61L5ApxVmXL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "Jungle Leopard",
+    "pr": 49,
+    "msrp": 69,
+    "r": 4.3,
+    "reviews": 520,
+    "asin": "B0DBQFBZR8",
+    "size": 8.8,
+    "resolution": "1920x480",
+    "refresh": 60,
+    "connection": "USB-C",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 350,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 49,
+        "url": "https://www.amazon.com/dp/B0DBQFBZR8?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17221,
+    "n": "AsiaHorse 7\" IPS Color Screen PC Case AIDA64 HDMI with ARGB Frame",
+    "img": "https://m.media-amazon.com/images/I/61oU-c3J1UL._AC_SL300_.jpg",
+    "c": "InternalDisplay",
+    "b": "AsiaHorse",
+    "pr": 69,
+    "msrp": 89,
+    "r": 4.3,
+    "reviews": 140,
+    "asin": "B0DQK8R6YZ",
+    "size": 7,
+    "resolution": "1024x600",
+    "refresh": 60,
+    "connection": "HDMI",
+    "panelType": "IPS",
+    "touch": false,
+    "mount": "Universal",
+    "brightness": 300,
+    "ecosystem": "AIDA64",
+    "deals": {
+      "amazon": {
+        "price": 69,
+        "url": "https://www.amazon.com/dp/B0DQK8R6YZ?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
   }
 ];
 

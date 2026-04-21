@@ -42,7 +42,9 @@ const CAT={
   OpticalDrive:{icon:"💿",label:"Optical Drives",singular:"Optical Drive",desc:"Blu-ray & DVD drives",cols:["driveType","readSpeed","writeSpeed"],filters:{driveType:{label:"Type",type:"check"},interface:{label:"Interface",type:"check"}}},
   InternalLCD:{icon:"📺",label:"Internal LCDs",singular:"Internal LCD",desc:"Case-mounted monitoring screens",cols:[]},
   ExtensionCables:{icon:"🔗",label:"Extension Cables",singular:"Cable Kit",desc:"Sleeved PSU extensions",cols:[],multi:true,maxQty:4},
-  OS:{icon:"🪟",label:"Operating Systems",singular:"OS",desc:"Windows & Linux",cols:[]},
+  
+  InternalDisplay:{icon:"🖥️",label:"Internal Displays",singular:"Display",desc:"LCD/IPS screens for inside your PC case",cols:["size","resolution","connection"],filters:{size:{label:"Screen Size",type:"check"},connection:{label:"Connection",type:"check"},panelType:{label:"Panel",type:"check"},ecosystem:{label:"Ecosystem",type:"check"},touch:{label:"Touchscreen",type:"bool"}}},
+OS:{icon:"🪟",label:"Operating Systems",singular:"OS",desc:"Windows & Linux",cols:[]},
   // Peripherals
   Monitor:{icon:"🖥️",label:"Monitors",singular:"Monitor",desc:"Gaming & productivity",cols:["screenSize","res","refresh","panel"],multi:true,maxQty:4,filters:{screenSize:{label:"Screen Size",type:"check"},res:{label:"Resolution",type:"check"},refresh:{label:"Refresh Rate",type:"check"},panel:{label:"Panel Type",type:"check"},sync:{label:"Adaptive Sync",type:"check"},hdr:{label:"HDR",type:"check"},response:{label:"Response Time",type:"range",unit:"ms"}}},
   Keyboard:{icon:"⌨️",label:"Keyboards",singular:"Keyboard",desc:"Mechanical & membrane",cols:["switches","layout","wireless"],filters:{switches:{label:"Switch Type",type:"check"},layout:{label:"Layout",type:"check"},wireless:{label:"Wireless",type:"bool"},rgb:{label:"RGB",type:"bool"}}},
