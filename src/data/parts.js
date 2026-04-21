@@ -33154,7 +33154,9 @@ export const PARTS = [
     "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4/TR5/TR4",
     "fans_inc": 3,
     "rgb": false,
-    "value": 26
+    "value": 26,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14585,
@@ -33188,7 +33190,9 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": true,
-    "value": 17
+    "value": 17,
+    "tdp_rating": 125,
+    "tdp_rating_est": true
   },
   {
     "id": 14587,
@@ -33296,7 +33300,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 40
+    "value": 40,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14590,
@@ -33329,7 +33335,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 38
+    "value": 38,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14591,
@@ -33467,7 +33475,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 69
+    "value": 69,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14595,
@@ -33570,7 +33580,9 @@ export const PARTS = [
     "compatibility": "Desktop, Laptop",
     "fans_inc": 3,
     "rgb": false,
-    "value": 46
+    "value": 46,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14598,
@@ -33672,7 +33684,9 @@ export const PARTS = [
     "compatibility": "Cpu",
     "fans_inc": 3,
     "rgb": true,
-    "value": 1
+    "value": 1,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14601,
@@ -33706,7 +33720,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 48
+    "value": 48,
+    "tdp_rating": 320,
+    "tdp_rating_est": true
   },
   {
     "id": 14602,
@@ -33740,7 +33756,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 89
+    "value": 89,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14603,
@@ -33772,7 +33790,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 30
+    "value": 30,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14604,
@@ -33943,7 +33963,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 68
+    "value": 68,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14609,
@@ -33977,7 +33999,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 88
+    "value": 88,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14610,
@@ -34052,7 +34076,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 3
+    "value": 3,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14612,
@@ -34085,7 +34111,9 @@ export const PARTS = [
     "compatibility": "Cpu, Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 30
+    "value": 30,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14613,
@@ -34118,7 +34146,9 @@ export const PARTS = [
     "compatibility": "Cpu",
     "fans_inc": 3,
     "rgb": true,
-    "value": 1
+    "value": 1,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14614,
@@ -34187,7 +34217,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 51
+    "value": 51,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14616,
@@ -34255,7 +34287,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 48
+    "value": 48,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14618,
@@ -34288,7 +34322,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 4
+    "value": 4,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14619,
@@ -34321,7 +34357,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 57
+    "value": 57,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14620,
@@ -34352,7 +34390,9 @@ export const PARTS = [
     "compatibility": "Cpu",
     "fans_inc": 3,
     "rgb": false,
-    "value": 58
+    "value": 58,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14621,
@@ -34460,7 +34500,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 7
+    "value": 7,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14624,
@@ -34598,7 +34640,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 92
+    "value": 92,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14628,
@@ -34631,7 +34675,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": false,
-    "value": 24
+    "value": 24,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14629,
@@ -34801,7 +34847,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 6
+    "value": 6,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14634,
@@ -34840,7 +34888,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 22
+    "value": 22,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14635,
@@ -34908,7 +34958,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 42
+    "value": 42,
+    "tdp_rating": 320,
+    "tdp_rating_est": true
   },
   {
     "id": 14637,
@@ -34948,7 +35000,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 10
+    "value": 10,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14638,
@@ -35023,7 +35077,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 6
+    "value": 6,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14640,
@@ -35057,7 +35113,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 0
+    "value": 0,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14641,
@@ -35157,7 +35215,9 @@ export const PARTS = [
     "compatibility": "Cpu",
     "fans_inc": 3,
     "rgb": false,
-    "value": 93
+    "value": 93,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14644,
@@ -35189,7 +35249,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": false,
-    "value": 52
+    "value": 52,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14645,
@@ -35223,7 +35285,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 91
+    "value": 91,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14646,
@@ -35292,7 +35356,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 30
+    "value": 30,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14648,
@@ -35359,7 +35425,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 4
+    "value": 4,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14650,
@@ -35398,7 +35466,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 24
+    "value": 24,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14651,
@@ -35430,7 +35500,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 17
+    "value": 17,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14652,
@@ -35469,7 +35541,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 34
+    "value": 34,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14653,
@@ -35502,7 +35576,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 38
+    "value": 38,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14654,
@@ -35570,7 +35646,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 91
+    "value": 91,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14656,
@@ -35604,7 +35682,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": true,
-    "value": 24
+    "value": 24,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14657,
@@ -35743,7 +35823,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 57
+    "value": 57,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14661,
@@ -35923,7 +36005,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": true,
-    "value": 11
+    "value": 11,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14666,
@@ -36024,7 +36108,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 0
+    "value": 0,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14669,
@@ -36092,7 +36178,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 0
+    "value": 0,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14671,
@@ -36124,7 +36212,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": false,
-    "value": 72
+    "value": 72,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14672,
@@ -36162,7 +36252,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 8
+    "value": 8,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14673,
@@ -36194,7 +36286,9 @@ export const PARTS = [
     "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4/TR5/TR4",
     "fans_inc": 2,
     "rgb": false,
-    "value": 17
+    "value": 17,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14674,
@@ -36261,7 +36355,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 42
+    "value": 42,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14676,
@@ -36300,7 +36396,9 @@ export const PARTS = [
     "compatibility": "supports the latest AMD and Intel CPU sockets, including AM5 and LGA 1851",
     "fans_inc": 3,
     "rgb": true,
-    "value": 15
+    "value": 15,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14677,
@@ -36464,7 +36562,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 59
+    "value": 59,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14682,
@@ -36600,7 +36700,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 49
+    "value": 49,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14686,
@@ -36634,7 +36736,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 0
+    "value": 0,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14687,
@@ -36738,7 +36842,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 75
+    "value": 75,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14690,
@@ -36948,7 +37054,9 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": true,
-    "value": 2
+    "value": 2,
+    "tdp_rating": 125,
+    "tdp_rating_est": true
   },
   {
     "id": 14696,
@@ -37022,7 +37130,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 30
+    "value": 30,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14698,
@@ -37060,7 +37170,9 @@ export const PARTS = [
     "compatibility": "Desktop, Server",
     "fans_inc": 2,
     "rgb": true,
-    "value": 0
+    "value": 0,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14699,
@@ -37093,7 +37205,9 @@ export const PARTS = [
     "compatibility": "Gaming Console",
     "fans_inc": 2,
     "rgb": true,
-    "value": 61
+    "value": 61,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14700,
@@ -37198,7 +37312,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 34
+    "value": 34,
+    "tdp_rating": 230,
+    "tdp_rating_est": true
   },
   {
     "id": 14704,
@@ -37269,7 +37385,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 26
+    "value": 26,
+    "tdp_rating": 230,
+    "tdp_rating_est": true
   },
   {
     "id": 14706,
@@ -37302,7 +37420,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 28
+    "value": 28,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14707,
@@ -37335,7 +37455,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 27
+    "value": 27,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14708,
@@ -37368,7 +37490,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 37
+    "value": 37,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14710,
@@ -37402,7 +37526,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 28
+    "value": 28,
+    "tdp_rating": 230,
+    "tdp_rating_est": true
   },
   {
     "id": 14711,
@@ -37436,7 +37562,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 24
+    "value": 24,
+    "tdp_rating": 230,
+    "tdp_rating_est": true
   },
   {
     "id": 14712,
@@ -37469,7 +37597,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 60
+    "value": 60,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14713,
@@ -37503,7 +37633,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 7
+    "value": 7,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14714,
@@ -37571,7 +37703,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": false,
-    "value": 0
+    "value": 0,
+    "tdp_rating": 230,
+    "tdp_rating_est": true
   },
   {
     "id": 14716,
@@ -37605,7 +37739,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 33
+    "value": 33,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14717,
@@ -37804,7 +37940,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 47
+    "value": 47,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14723,
@@ -37837,7 +37975,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": true,
-    "value": 0
+    "value": 0,
+    "tdp_rating": 230,
+    "tdp_rating_est": true
   },
   {
     "id": 14724,
@@ -37905,7 +38045,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 13
+    "value": 13,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14726,
@@ -37973,7 +38115,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 90
+    "value": 90,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14728,
@@ -38012,7 +38156,9 @@ export const PARTS = [
     "compatibility": "supports the latest AMD and Intel CPU sockets, including AM5 and LGA 1851",
     "fans_inc": 2,
     "rgb": true,
-    "value": 13
+    "value": 13,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14729,
@@ -38044,7 +38190,9 @@ export const PARTS = [
     "compatibility": "Cpu",
     "fans_inc": 2,
     "rgb": false,
-    "value": 54
+    "value": 54,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14730,
@@ -38077,7 +38225,9 @@ export const PARTS = [
     "compatibility": "Cpu",
     "fans_inc": 3,
     "rgb": true,
-    "value": 93
+    "value": 93,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14731,
@@ -38110,7 +38260,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 69
+    "value": 69,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14732,
@@ -38145,7 +38297,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 50
+    "value": 50,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14733,
@@ -38214,7 +38368,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 43
+    "value": 43,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14735,
@@ -38284,7 +38440,9 @@ export const PARTS = [
     "compatibility": "Cpu, Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 36
+    "value": 36,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14737,
@@ -38316,7 +38474,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": false,
-    "value": 25
+    "value": 25,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14738,
@@ -38348,7 +38508,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": false,
-    "value": 18
+    "value": 18,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14739,
@@ -38381,7 +38543,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 13
+    "value": 13,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14740,
@@ -38413,7 +38577,9 @@ export const PARTS = [
     "compatibility": "Desktop, computer",
     "fans_inc": 3,
     "rgb": true,
-    "value": 34
+    "value": 34,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14741,
@@ -38446,7 +38612,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 91
+    "value": 91,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14742,
@@ -38583,7 +38751,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 46
+    "value": 46,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14746,
@@ -38617,7 +38787,9 @@ export const PARTS = [
     "compatibility": "Cpu, Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 39
+    "value": 39,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14747,
@@ -38677,7 +38849,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 41
+    "value": 41,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14749,
@@ -38711,7 +38885,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 37
+    "value": 37,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14750,
@@ -38779,7 +38955,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 67
+    "value": 67,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14752,
@@ -38840,7 +39018,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 32
+    "value": 32,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14754,
@@ -38872,7 +39052,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 24
+    "value": 24,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14755,
@@ -38939,7 +39121,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 61
+    "value": 61,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14757,
@@ -38972,7 +39156,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 97
+    "value": 97,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14758,
@@ -39005,7 +39191,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 67
+    "value": 67,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14759,
@@ -39038,7 +39226,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 93
+    "value": 93,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14760,
@@ -39104,7 +39294,9 @@ export const PARTS = [
     "compatibility": "Cpu",
     "fans_inc": 2,
     "rgb": true,
-    "value": 46
+    "value": 46,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14762,
@@ -39137,7 +39329,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 67
+    "value": 67,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14763,
@@ -39204,7 +39398,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 55
+    "value": 55,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14765,
@@ -39306,7 +39502,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 0
+    "value": 0,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14768,
@@ -39340,7 +39538,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 87
+    "value": 87,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14769,
@@ -39373,7 +39573,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 63
+    "value": 63,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14770,
@@ -39406,7 +39608,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 53
+    "value": 53,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14771,
@@ -39471,7 +39675,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 24
+    "value": 24,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14773,
@@ -39501,7 +39707,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 0
+    "value": 0,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14774,
@@ -39533,7 +39741,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 71
+    "value": 71,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14775,
@@ -39634,7 +39844,9 @@ export const PARTS = [
     "compatibility": "Cpu",
     "fans_inc": 3,
     "rgb": true,
-    "value": 3
+    "value": 3,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14778,
@@ -39667,7 +39879,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 47
+    "value": 47,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14779,
@@ -39701,7 +39915,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 13
+    "value": 13,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14780,
@@ -39733,7 +39949,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 77
+    "value": 77,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14781,
@@ -39766,7 +39984,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 0
+    "value": 0,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14782,
@@ -39799,7 +40019,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 41
+    "value": 41,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14783,
@@ -39892,7 +40114,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 37
+    "value": 37,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14786,
@@ -39925,7 +40149,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 43
+    "value": 43,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14787,
@@ -39958,7 +40184,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 62
+    "value": 62,
+    "tdp_rating": 320,
+    "tdp_rating_est": true
   },
   {
     "id": 14788,
@@ -39991,7 +40219,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 67
+    "value": 67,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14789,
@@ -40059,7 +40289,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 89
+    "value": 89,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14791,
@@ -40126,7 +40358,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 37
+    "value": 37,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14793,
@@ -40158,7 +40392,9 @@ export const PARTS = [
     "compatibility": "Cpu",
     "fans_inc": 3,
     "rgb": true,
-    "value": 22
+    "value": 22,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14794,
@@ -40261,7 +40497,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 7
+    "value": 7,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14797,
@@ -40292,7 +40530,9 @@ export const PARTS = [
     "compatibility": "Computer Case",
     "fans_inc": 3,
     "rgb": true,
-    "value": 87
+    "value": 87,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14798,
@@ -40323,7 +40563,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": false,
-    "value": 52
+    "value": 52,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14799,
@@ -40356,7 +40598,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 41
+    "value": 41,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14800,
@@ -40387,7 +40631,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 27
+    "value": 27,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14801,
@@ -40417,7 +40663,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 0
+    "value": 0,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14803,
@@ -40450,7 +40698,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 27
+    "value": 27,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14804,
@@ -40483,7 +40733,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 50
+    "value": 50,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14805,
@@ -40515,7 +40767,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 30
+    "value": 30,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14806,
@@ -40548,7 +40802,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 46
+    "value": 46,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14807,
@@ -40581,7 +40837,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 57
+    "value": 57,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14808,
@@ -40675,7 +40933,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 34
+    "value": 34,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14811,
@@ -40709,7 +40969,9 @@ export const PARTS = [
     "compatibility": "Cpu, Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 10
+    "value": 10,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14812,
@@ -40740,7 +41002,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 33
+    "value": 33,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14813,
@@ -40772,7 +41036,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 21
+    "value": 21,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14814,
@@ -40805,7 +41071,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": false,
-    "value": 37
+    "value": 37,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14815,
@@ -40837,7 +41105,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 11
+    "value": 11,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14816,
@@ -40903,7 +41173,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 9
+    "value": 9,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14818,
@@ -40937,7 +41209,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 0
+    "value": 0,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14819,
@@ -40970,7 +41244,9 @@ export const PARTS = [
     "compatibility": "Desktop, Gaming Console",
     "fans_inc": 2,
     "rgb": true,
-    "value": 38
+    "value": 38,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14820,
@@ -41000,7 +41276,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 15
+    "value": 15,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14821,
@@ -41033,7 +41311,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 2,
     "rgb": true,
-    "value": 10
+    "value": 10,
+    "tdp_rating": 230,
+    "tdp_rating_est": true
   },
   {
     "id": 14822,
@@ -41100,7 +41380,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 55
+    "value": 55,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14824,
@@ -41132,7 +41414,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": true,
-    "value": 22
+    "value": 22,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14825,
@@ -41197,7 +41481,9 @@ export const PARTS = [
     "compatibility": "Desktop",
     "fans_inc": 3,
     "rgb": false,
-    "value": 10
+    "value": 10,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14827,
@@ -41230,7 +41516,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 26
+    "value": 26,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 14828,
@@ -41263,7 +41551,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 21
+    "value": 21,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14829,
@@ -41365,7 +41655,9 @@ export const PARTS = [
     "fans_inc": 3,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 24
+    "value": 24,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 14832,
@@ -91699,7 +91991,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket H4 (LGA 1151)",
-    "value": 2
+    "value": 2,
+    "tdp_rating": 125,
+    "tdp_rating_est": true
   },
   {
     "id": 16293,
@@ -91729,7 +92023,9 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "socketsSupported": "Socket R4 (LGA 2066)",
-    "value": 8
+    "value": 8,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16294,
@@ -91759,7 +92055,9 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "socketsSupported": "Socket LGA 1700",
-    "value": 79
+    "value": 79,
+    "tdp_rating": 230,
+    "tdp_rating_est": true
   },
   {
     "id": 16295,
@@ -91789,7 +92087,9 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "socketsSupported": "Socket AM4 (PGA 1331)",
-    "value": 4
+    "value": 4,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16296,
@@ -91819,7 +92119,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket LGA 1700",
-    "value": 26
+    "value": 26,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16297,
@@ -91849,7 +92151,9 @@ export const PARTS = [
     "rgb": true,
     "color": "White",
     "socketsSupported": "Socket LGA 1700",
-    "value": 8
+    "value": 8,
+    "tdp_rating": 125,
+    "tdp_rating_est": true
   },
   {
     "id": 16298,
@@ -91879,7 +92183,9 @@ export const PARTS = [
     "rgb": true,
     "color": "White",
     "socketsSupported": "Socket LGA 1700",
-    "value": 20
+    "value": 20,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 16299,
@@ -91909,7 +92215,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket LGA 1700",
-    "value": 30
+    "value": 30,
+    "tdp_rating": 320,
+    "tdp_rating_est": true
   },
   {
     "id": 16300,
@@ -91939,7 +92247,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket LGA 1700",
-    "value": 18
+    "value": 18,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16301,
@@ -91969,7 +92279,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket LGA 1700",
-    "value": 5
+    "value": 5,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 16302,
@@ -91999,7 +92311,9 @@ export const PARTS = [
     "rgb": true,
     "color": "White",
     "socketsSupported": "Socket LGA 1700",
-    "value": 45
+    "value": 45,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16303,
@@ -92029,7 +92343,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket LGA 1700",
-    "value": 33
+    "value": 33,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 16304,
@@ -92059,7 +92375,9 @@ export const PARTS = [
     "rgb": true,
     "color": "White",
     "socketsSupported": "Socket AM4 (PGA 1331)",
-    "value": 30
+    "value": 30,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 16305,
@@ -92089,7 +92407,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket AM4 (PGA 1331)",
-    "value": 40
+    "value": 40,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16306,
@@ -92119,7 +92439,9 @@ export const PARTS = [
     "rgb": true,
     "color": "White",
     "socketsSupported": "Socket AM4 (PGA 1331)",
-    "value": 40
+    "value": 40,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16307,
@@ -92149,7 +92471,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket AM4 (PGA 1331)",
-    "value": 17
+    "value": 17,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16308,
@@ -92179,7 +92503,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket LGA 1851",
-    "value": 20
+    "value": 20,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 16309,
@@ -92209,7 +92535,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket AM4 (PGA 1331)",
-    "value": 10
+    "value": 10,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16310,
@@ -92239,7 +92567,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket AM4 (PGA 1331)",
-    "value": 30
+    "value": 30,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 16311,
@@ -92269,7 +92599,9 @@ export const PARTS = [
     "rgb": true,
     "color": "White",
     "socketsSupported": "Socket AM4 (PGA 1331)",
-    "value": 17
+    "value": 17,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16312,
@@ -92299,7 +92631,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket LGA 1700",
-    "value": 6
+    "value": 6,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 16313,
@@ -92329,7 +92663,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket LGA 1700",
-    "value": 5
+    "value": 5,
+    "tdp_rating": 230,
+    "tdp_rating_est": true
   },
   {
     "id": 16314,
@@ -92359,7 +92695,9 @@ export const PARTS = [
     "rgb": true,
     "color": "White",
     "socketsSupported": "Socket LGA 1700",
-    "value": 3
+    "value": 3,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16315,
@@ -92389,7 +92727,9 @@ export const PARTS = [
     "rgb": true,
     "color": "White",
     "socketsSupported": "Socket LGA 1700",
-    "value": 9
+    "value": 9,
+    "tdp_rating": 230,
+    "tdp_rating_est": true
   },
   {
     "id": 16316,
@@ -92419,7 +92759,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket H3 (LGA 1150)",
-    "value": 13
+    "value": 13,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 16317,
@@ -92449,7 +92791,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket AM4 (PGA 1331)",
-    "value": 28
+    "value": 28,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16318,
@@ -92479,7 +92823,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket AM4 (PGA 1331)",
-    "value": 27
+    "value": 27,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 16319,
@@ -92509,7 +92855,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket AM4 (PGA 1331)",
-    "value": 46
+    "value": 46,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16320,
@@ -92539,7 +92887,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket AM5 (LGA 1718)",
-    "value": 11
+    "value": 11,
+    "tdp_rating": 320,
+    "tdp_rating_est": true
   },
   {
     "id": 16321,
@@ -92569,7 +92919,9 @@ export const PARTS = [
     "rgb": false,
     "color": "Black",
     "socketsSupported": "Socket AM5 (LGA 1718)",
-    "value": 17
+    "value": 17,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16322,
@@ -92599,7 +92951,9 @@ export const PARTS = [
     "rgb": false,
     "color": "White",
     "socketsSupported": "Socket LGA 1851",
-    "value": 8
+    "value": 8,
+    "tdp_rating": 200,
+    "tdp_rating_est": true
   },
   {
     "id": 16323,
@@ -92629,7 +92983,9 @@ export const PARTS = [
     "rgb": true,
     "color": "White",
     "socketsSupported": "Socket LGA 1700",
-    "value": 18
+    "value": 18,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16324,
@@ -92659,7 +93015,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket LGA 1700",
-    "value": 17
+    "value": 17,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16325,
@@ -92689,7 +93047,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black & Red",
     "socketsSupported": "Socket LGA 1700",
-    "value": 22
+    "value": 22,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16326,
@@ -92719,7 +93079,9 @@ export const PARTS = [
     "rgb": true,
     "color": "Black",
     "socketsSupported": "Socket R4 (LGA 2066)",
-    "value": 0
+    "value": 0,
+    "tdp_rating": 280,
+    "tdp_rating_est": true
   },
   {
     "id": 16327,
