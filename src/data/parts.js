@@ -10823,7 +10823,8 @@ export const PARTS = [
     },
     "tower": "Full",
     "ff": "E-ATX",
-    "value": 7
+    "value": 7,
+    "rgb": true
   },
   {
     "id": 7136,
@@ -10864,7 +10865,8 @@ export const PARTS = [
     },
     "tower": "Full",
     "ff": "E-ATX",
-    "value": 17
+    "value": 17,
+    "rgb": false
   },
   {
     "id": 7137,
@@ -10906,7 +10908,8 @@ export const PARTS = [
     },
     "tower": "Full",
     "ff": "E-ATX",
-    "value": 11
+    "value": 11,
+    "rgb": true
   },
   {
     "id": 7138,
@@ -10945,7 +10948,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 20
+    "value": 20,
+    "rgb": false
   },
   {
     "id": 7139,
@@ -10985,7 +10989,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 72
+    "value": 72,
+    "rgb": false
   },
   {
     "id": 7140,
@@ -11025,7 +11030,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 51
+    "value": 51,
+    "rgb": false
   },
   {
     "id": 7141,
@@ -11065,7 +11071,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 18
+    "value": 18,
+    "rgb": false
   },
   {
     "id": 7142,
@@ -11105,7 +11112,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 22
+    "value": 22,
+    "rgb": false
   },
   {
     "id": 7143,
@@ -11144,7 +11152,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 14
+    "value": 14,
+    "rgb": false
   },
   {
     "id": 7144,
@@ -11185,7 +11194,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 14
+    "value": 14,
+    "rgb": false
   },
   {
     "id": 7145,
@@ -11226,7 +11236,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 52
+    "value": 52,
+    "rgb": false
   },
   {
     "id": 7146,
@@ -11268,7 +11279,8 @@ export const PARTS = [
     },
     "tower": "Full",
     "ff": "E-ATX",
-    "value": 0
+    "value": 0,
+    "rgb": false
   },
   {
     "id": 7147,
@@ -11310,7 +11322,8 @@ export const PARTS = [
     },
     "tower": "Full",
     "ff": "E-ATX",
-    "value": 11
+    "value": 11,
+    "rgb": false
   },
   {
     "id": 7148,
@@ -11349,7 +11362,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 56
+    "value": 56,
+    "rgb": false
   },
   {
     "id": 7149,
@@ -11389,7 +11403,8 @@ export const PARTS = [
     },
     "tower": "Mini",
     "ff": "Mini-ITX",
-    "value": 22
+    "value": 22,
+    "rgb": false
   },
   {
     "id": 7150,
@@ -11424,7 +11439,8 @@ export const PARTS = [
     },
     "tower": "Mini",
     "ff": "Mini-ITX",
-    "value": 20
+    "value": 20,
+    "rgb": false
   },
   {
     "id": 7151,
@@ -11460,7 +11476,8 @@ export const PARTS = [
     },
     "tower": "Mini",
     "ff": "Mini-ITX",
-    "value": 19
+    "value": 19,
+    "rgb": false
   },
   {
     "id": 7152,
@@ -11496,7 +11513,8 @@ export const PARTS = [
     },
     "tower": "Mini",
     "ff": "Mini-ITX",
-    "value": 0
+    "value": 0,
+    "rgb": false
   },
   {
     "id": 7153,
@@ -11514,7 +11532,10 @@ export const PARTS = [
     "maxCooler": 77,
     "fans_inc": 0,
     "fan_slots": 2,
-    "rads": [],
+    "rads": [
+      120,
+      240
+    ],
     "drive25": 1,
     "drive35": 0,
     "usb_c": true,
@@ -11528,7 +11549,8 @@ export const PARTS = [
     },
     "tower": "Mini",
     "ff": "Mini-ITX",
-    "value": 19
+    "value": 19,
+    "rgb": false
   },
   {
     "id": 7154,
@@ -11570,7 +11592,8 @@ export const PARTS = [
     },
     "tower": "Full",
     "ff": "E-ATX",
-    "value": 5
+    "value": 5,
+    "rgb": false
   },
   {
     "id": 7155,
@@ -14929,7 +14952,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 65
+    "value": 65,
+    "rgb": false
   },
   {
     "id": 8065,
@@ -14969,7 +14993,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 38
+    "value": 38,
+    "rgb": false
   },
   {
     "id": 8066,
@@ -15010,7 +15035,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 49
+    "value": 49,
+    "rgb": false
   },
   {
     "id": 8067,
@@ -15050,7 +15076,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 35
+    "value": 35,
+    "rgb": false
   },
   {
     "id": 8068,
@@ -15090,7 +15117,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 42
+    "value": 42,
+    "rgb": false
   },
   {
     "id": 8069,
@@ -15131,7 +15159,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 4
+    "value": 4,
+    "rgb": false
   },
   {
     "id": 8070,
@@ -15170,7 +15199,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 22
+    "value": 22,
+    "rgb": false
   },
   {
     "id": 8071,
@@ -15210,7 +15240,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 81
+    "value": 81,
+    "rgb": false
   },
   {
     "id": 8072,
@@ -15249,7 +15280,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 33
+    "value": 33,
+    "rgb": false
   },
   {
     "id": 8073,
@@ -15289,7 +15321,8 @@ export const PARTS = [
     },
     "tower": "Mid",
     "ff": "ATX",
-    "value": 15
+    "value": 15,
+    "rgb": false
   },
   {
     "id": 8074,
@@ -16236,7 +16269,22 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 96
+    "value": 96,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": true,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 400,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14044,
@@ -16267,7 +16315,21 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 3,
-    "value": 77
+    "value": 77,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14045,
@@ -16306,7 +16368,14 @@ export const PARTS = [
       140,
       240
     ],
-    "value": 100
+    "value": 100,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ]
   },
   {
     "id": 14046,
@@ -16346,7 +16415,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 34
+    "value": 34,
+    "rgb": false,
+    "color": "White",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14047,
@@ -16377,7 +16452,15 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 3,
-    "value": 93
+    "value": 93,
+    "rgb": false,
+    "rads": [
+      360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14048,
@@ -16418,7 +16501,13 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 37
+    "value": 37,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14049,
@@ -16449,7 +16538,12 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 6,
-    "value": 79
+    "value": 79,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14050,
@@ -16481,7 +16575,12 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 6,
-    "value": 72
+    "value": 72,
+    "rgb": true,
+    "usb_c": true,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14051,
@@ -16512,7 +16611,15 @@ export const PARTS = [
     "ff": "mATX",
     "tower": "Mid",
     "fans_inc": 4,
-    "value": 89
+    "value": 89,
+    "rgb": true,
+    "usb_c": false,
+    "maxGPU": 320,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240
+    ]
   },
   {
     "id": 14052,
@@ -16552,7 +16659,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 45
+    "value": 45,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14053,
@@ -16596,7 +16709,12 @@ export const PARTS = [
       360
     ],
     "fans_inc": 2,
-    "value": 35
+    "value": 35,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14054,
@@ -16635,7 +16753,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 55
+    "value": 55,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14055,
@@ -16682,7 +16806,10 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 48
+    "value": 48,
+    "rgb": true,
+    "color": "Black",
+    "usb_c": false
   },
   {
     "id": 14056,
@@ -16714,7 +16841,15 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 6,
-    "value": 74
+    "value": 74,
+    "rgb": true,
+    "rads": [
+      360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14057,
@@ -16744,7 +16879,20 @@ export const PARTS = [
     "weight": "9.3 Pounds",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 90
+    "value": 90,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 310,
+    "maxCooler": 155,
+    "rads": [
+      120,
+      240
+    ]
   },
   {
     "id": 14058,
@@ -16782,7 +16930,14 @@ export const PARTS = [
     ],
     "drive25": 4,
     "fans_inc": 0,
-    "value": 24
+    "value": 24,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ]
   },
   {
     "id": 14059,
@@ -16822,7 +16977,10 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 15
+    "value": 15,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false
   },
   {
     "id": 14060,
@@ -16854,7 +17012,12 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 7,
-    "value": 51
+    "value": 51,
+    "rgb": true,
+    "usb_c": true,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14061,
@@ -16884,7 +17047,21 @@ export const PARTS = [
     "ff": "ATX",
     "tg": true,
     "fans_inc": 7,
-    "value": 67
+    "value": 67,
+    "rgb": true,
+    "usb_c": true,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14062,
@@ -16914,7 +17091,26 @@ export const PARTS = [
     "weight": "8.96 Kilograms",
     "ff": "E-ATX",
     "tower": "Full",
-    "value": 42
+    "value": 42,
+    "tg": false,
+    "rgb": false,
+    "fans_inc": 4,
+    "color": "Black",
+    "usb_c": false,
+    "drive35": 10,
+    "drive25": 3,
+    "mobo": [
+      "E-ATX"
+    ],
+    "maxGPU": 420,
+    "maxCooler": 185,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14063,
@@ -16955,7 +17151,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 20
+    "value": 20,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "E-ATX",
+      "ATX"
+    ]
   },
   {
     "id": 14064,
@@ -16985,7 +17187,12 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 4,
-    "value": 96
+    "value": 96,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14065,
@@ -17016,7 +17223,22 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "tower": "Mid",
-    "value": 61
+    "value": 61,
+    "rgb": true,
+    "fans_inc": 2,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 400,
+    "maxCooler": 175,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14066,
@@ -17053,7 +17275,19 @@ export const PARTS = [
     "ff": "mATX",
     "tower": "Mid",
     "fans_inc": 3,
-    "value": 93
+    "value": 93,
+    "rgb": true,
+    "color": "Black",
+    "rads": [
+      280
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160
   },
   {
     "id": 14067,
@@ -17100,7 +17334,12 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 35
+    "value": 35,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14068,
@@ -17136,7 +17375,24 @@ export const PARTS = [
     "weight": "4800 Grams",
     "ff": "mATX",
     "tower": "Mid",
-    "value": 93
+    "value": 93,
+    "tg": false,
+    "rgb": false,
+    "fans_inc": 1,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ],
+    "maxGPU": 365,
+    "maxCooler": 165,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14069,
@@ -17175,7 +17431,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 71
+    "value": 71,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "mATX"
+    ]
   },
   {
     "id": 14070,
@@ -17221,7 +17483,9 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 61
+    "value": 61,
+    "rgb": true,
+    "usb_c": false
   },
   {
     "id": 14071,
@@ -17256,7 +17520,22 @@ export const PARTS = [
     "weight": "4.55 Kilograms",
     "ff": "Mini-ITX",
     "tower": "Mini",
-    "value": 24
+    "value": 24,
+    "tg": false,
+    "rgb": false,
+    "fans_inc": 2,
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ],
+    "maxGPU": 365,
+    "maxCooler": 165,
+    "rads": [
+      120,
+      140,
+      240,
+      280
+    ]
   },
   {
     "id": 14072,
@@ -17291,7 +17570,24 @@ export const PARTS = [
     "weight": "41.23 Pounds",
     "tower": "Full",
     "ff": "ATX",
-    "value": 3
+    "value": 3,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 450,
+    "maxCooler": 190,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420,
+      480
+    ]
   },
   {
     "id": 14073,
@@ -17338,7 +17634,9 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 66
+    "value": 66,
+    "rgb": false,
+    "usb_c": false
   },
   {
     "id": 14074,
@@ -17379,7 +17677,12 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 28
+    "value": 28,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14075,
@@ -17426,7 +17729,9 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 56
+    "value": 56,
+    "rgb": false,
+    "usb_c": false
   },
   {
     "id": 14076,
@@ -17466,7 +17771,12 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 70
+    "value": 70,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14077,
@@ -17496,7 +17806,18 @@ export const PARTS = [
     "weight": "8 Pounds",
     "tower": "Mid",
     "ff": "mATX",
-    "value": 99
+    "value": 99,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 290,
+    "maxCooler": 145,
+    "rads": [
+      120
+    ]
   },
   {
     "id": 14078,
@@ -17527,7 +17848,12 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 57
+    "value": 57,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14079,
@@ -17559,7 +17885,13 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 4,
-    "value": 88
+    "value": 88,
+    "rgb": true,
+    "color": "White",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14080,
@@ -17590,7 +17922,20 @@ export const PARTS = [
     "weight": "9.5 Pounds",
     "tower": "Mini",
     "ff": "mATX",
-    "value": 86
+    "value": 86,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "mATX",
+      "ITX"
+    ],
+    "maxGPU": 355,
+    "maxCooler": 175,
+    "rads": [
+      120,
+      240
+    ]
   },
   {
     "id": 14082,
@@ -17620,7 +17965,13 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 100
+    "value": 100,
+    "rgb": true,
+    "color": "White",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14083,
@@ -17649,7 +18000,23 @@ export const PARTS = [
     "mpn": "F300",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 91
+    "value": 91,
+    "tg": false,
+    "rgb": true,
+    "fans_inc": 4,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14084,
@@ -17686,7 +18053,14 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 48
+    "value": 48,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "mATX"
+    ]
   },
   {
     "id": 14085,
@@ -17726,7 +18100,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 55
+    "value": 55,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14086,
@@ -17767,7 +18147,12 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 66
+    "value": 66,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "E-ATX"
+    ]
   },
   {
     "id": 14087,
@@ -17813,7 +18198,14 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 77
+    "value": 77,
+    "rgb": true,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "E-ATX",
+      "ATX"
+    ]
   },
   {
     "id": 14088,
@@ -17844,7 +18236,22 @@ export const PARTS = [
     "tg": true,
     "ff": "mATX",
     "tower": "Mid",
-    "value": 99
+    "value": 99,
+    "rgb": true,
+    "fans_inc": 3,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ],
+    "maxGPU": 335,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14089,
@@ -17887,7 +18294,13 @@ export const PARTS = [
       420,
       480
     ],
-    "value": 9
+    "value": 9,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14090,
@@ -17933,7 +18346,10 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 61
+    "value": 61,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false
   },
   {
     "id": 14091,
@@ -17963,7 +18379,21 @@ export const PARTS = [
     "weight": "4.3 Kilograms",
     "ff": "mATX",
     "tower": "Mid",
-    "value": 91
+    "value": 91,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ],
+    "maxGPU": 335,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14092,
@@ -18010,7 +18440,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 6
+    "value": 6,
+    "rgb": true,
+    "color": "White",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14093,
@@ -18041,7 +18477,19 @@ export const PARTS = [
     "ff": "mATX",
     "tower": "Mid",
     "fans_inc": 3,
-    "value": 100
+    "value": 100,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "mATX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14094,
@@ -18072,7 +18520,18 @@ export const PARTS = [
     "tg": true,
     "ff": "E-ATX",
     "tower": "Full",
-    "value": 6
+    "value": 6,
+    "rgb": true,
+    "rads": [
+      280,
+      420
+    ],
+    "usb_c": false,
+    "mobo": [
+      "E-ATX"
+    ],
+    "maxGPU": 458,
+    "maxCooler": 167
   },
   {
     "id": 14095,
@@ -18101,7 +18560,23 @@ export const PARTS = [
     "weight": "5.44 Kilograms",
     "ff": "mATX",
     "tower": "Mid",
-    "value": 71
+    "value": 71,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ],
+    "maxGPU": 338,
+    "maxCooler": 165,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14096,
@@ -18139,7 +18614,22 @@ export const PARTS = [
     "ff": "ATX",
     "tower": "Mid",
     "fans_inc": 4,
-    "value": 68
+    "value": 68,
+    "rgb": true,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 400,
+    "maxCooler": 185,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14097,
@@ -18167,7 +18657,23 @@ export const PARTS = [
     "mpn": "OV303",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 58
+    "value": 58,
+    "tg": false,
+    "rgb": true,
+    "fans_inc": 4,
+    "usb_c": true,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14098,
@@ -18214,7 +18720,12 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 24
+    "value": 24,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14099,
@@ -18245,7 +18756,9 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 6,
-    "value": 74
+    "value": 74,
+    "rgb": true,
+    "usb_c": true
   },
   {
     "id": 14100,
@@ -18278,7 +18791,9 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 9,
-    "value": 44
+    "value": 44,
+    "rgb": true,
+    "usb_c": true
   },
   {
     "id": 14101,
@@ -18314,7 +18829,18 @@ export const PARTS = [
     "tower": "Mid",
     "ff": "ATX",
     "tg": true,
-    "value": 37
+    "value": 37,
+    "rgb": true,
+    "usb_c": false,
+    "maxGPU": 400,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14102,
@@ -18341,7 +18867,17 @@ export const PARTS = [
     ],
     "upc": "844761029371",
     "mpn": "FLP02W",
-    "value": 7
+    "value": 7,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "maxGPU": 400,
+    "maxCooler": 165,
+    "rads": [
+      120,
+      240,
+      360
+    ]
   },
   {
     "id": 14103,
@@ -18371,7 +18907,12 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 7,
-    "value": 59
+    "value": 59,
+    "rgb": true,
+    "usb_c": true,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14104,
@@ -18401,7 +18942,21 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 93
+    "value": 93,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 400,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14105,
@@ -18432,7 +18987,21 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 66
+    "value": 66,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 410,
+    "maxCooler": 180,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14106,
@@ -18474,7 +19043,10 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 11
+    "value": 11,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false
   },
   {
     "id": 14107,
@@ -18514,7 +19086,10 @@ export const PARTS = [
       240,
       360
     ],
-    "value": 35
+    "value": 35,
+    "rgb": false,
+    "color": "White",
+    "usb_c": false
   },
   {
     "id": 14108,
@@ -18554,7 +19129,13 @@ export const PARTS = [
       240,
       360
     ],
-    "value": 35
+    "value": 35,
+    "rgb": false,
+    "color": "White",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14109,
@@ -18586,7 +19167,13 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 100
+    "value": 100,
+    "rgb": true,
+    "fans_inc": 4,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14110,
@@ -18616,7 +19203,20 @@ export const PARTS = [
     "weight": "8.38 Pounds",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 90
+    "value": 90,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240
+    ]
   },
   {
     "id": 14111,
@@ -18647,7 +19247,21 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 39
+    "value": 39,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 400,
+    "maxCooler": 175,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14112,
@@ -18688,7 +19302,13 @@ export const PARTS = [
     "rads": [
       120
     ],
-    "value": 12
+    "value": 12,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ]
   },
   {
     "id": 14113,
@@ -18716,7 +19336,22 @@ export const PARTS = [
     "mpn": "M3",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 62
+    "value": 62,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14114,
@@ -18756,7 +19391,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 45
+    "value": 45,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14115,
@@ -18797,7 +19438,12 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 27
+    "value": 27,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14116,
@@ -18828,7 +19474,21 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 62
+    "value": 62,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 400,
+    "maxCooler": 175,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14117,
@@ -18874,7 +19534,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 64
+    "value": 64,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "E-ATX",
+      "ATX"
+    ]
   },
   {
     "id": 14118,
@@ -18920,7 +19586,14 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 64
+    "value": 64,
+    "rgb": true,
+    "color": "Blue",
+    "usb_c": false,
+    "mobo": [
+      "E-ATX",
+      "ATX"
+    ]
   },
   {
     "id": 14119,
@@ -18952,7 +19625,12 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 3,
-    "value": 68
+    "value": 68,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14120,
@@ -18981,7 +19659,23 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "E-ATX",
-    "value": 20
+    "value": 20,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "E-ATX",
+      "ATX"
+    ],
+    "maxGPU": 430,
+    "maxCooler": 185,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 14121,
@@ -19012,7 +19706,21 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 4,
-    "value": 55
+    "value": 55,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14122,
@@ -19052,7 +19760,10 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 35
+    "value": 35,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false
   },
   {
     "id": 14123,
@@ -19094,7 +19805,10 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 11
+    "value": 11,
+    "rgb": true,
+    "color": "Black",
+    "usb_c": false
   },
   {
     "id": 14124,
@@ -19131,7 +19845,22 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 16
+    "value": 16,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14125,
@@ -19160,7 +19889,22 @@ export const PARTS = [
     "tower": "Mid",
     "ff": "ATX",
     "fans_inc": 6,
-    "value": 83
+    "value": 83,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14126,
@@ -19190,7 +19934,20 @@ export const PARTS = [
     "ff": "mATX",
     "tower": "Mid",
     "fans_inc": 3,
-    "value": 70
+    "value": 70,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14127,
@@ -19232,7 +19989,13 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 5
+    "value": 5,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14128,
@@ -19263,7 +20026,16 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 74
+    "value": 74,
+    "rgb": true,
+    "fans_inc": 3,
+    "rads": [
+      360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14129,
@@ -19292,7 +20064,23 @@ export const PARTS = [
     "weight": "22 Pounds",
     "tower": "Full",
     "ff": "ATX",
-    "value": 23
+    "value": 23,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 430,
+    "maxCooler": 185,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 14130,
@@ -19328,7 +20116,13 @@ export const PARTS = [
     "rads": [
       120
     ],
-    "value": 19
+    "value": 19,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ]
   },
   {
     "id": 14131,
@@ -19360,7 +20154,22 @@ export const PARTS = [
     "tower": "Mid",
     "ff": "ATX",
     "fans_inc": 7,
-    "value": 61
+    "value": 61,
+    "tg": false,
+    "rgb": true,
+    "usb_c": true,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14132,
@@ -19389,7 +20198,14 @@ export const PARTS = [
     "mpn": "VSK4000E-U3_US",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 67
+    "value": 67,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14133,
@@ -19431,7 +20247,13 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 0
+    "value": 0,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14134,
@@ -19467,7 +20289,13 @@ export const PARTS = [
       120,
       240
     ],
-    "value": 88
+    "value": 88,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "mATX"
+    ]
   },
   {
     "id": 14135,
@@ -19503,7 +20331,14 @@ export const PARTS = [
     "rads": [
       120
     ],
-    "value": 28
+    "value": 28,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ]
   },
   {
     "id": 14136,
@@ -19539,7 +20374,20 @@ export const PARTS = [
     "weight": "12.7 Kilograms",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 20
+    "value": 20,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "maxGPU": 400,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 14137,
@@ -19570,7 +20418,10 @@ export const PARTS = [
     "weight": "13.92 Kilograms",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 11
+    "value": 11,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false
   },
   {
     "id": 14138,
@@ -19598,7 +20449,21 @@ export const PARTS = [
     "mpn": "D32",
     "ff": "mATX",
     "tower": "Mid",
-    "value": 79
+    "value": 79,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14139,
@@ -19625,7 +20490,20 @@ export const PARTS = [
     ],
     "mpn": "Pure Base 501",
     "weight": "7.2 Kilograms",
-    "value": 57
+    "value": 57,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "maxGPU": 392,
+    "maxCooler": 190,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14140,
@@ -19664,7 +20542,12 @@ export const PARTS = [
       120,
       240
     ],
-    "value": 100
+    "value": 100,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "mATX"
+    ]
   },
   {
     "id": 14141,
@@ -19694,7 +20577,20 @@ export const PARTS = [
     "ff": "mATX",
     "tower": "Mid",
     "fans_inc": 3,
-    "value": 100
+    "value": 100,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "mATX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14142,
@@ -19725,7 +20621,22 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 83
+    "value": 83,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14143,
@@ -19766,7 +20677,10 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 11
+    "value": 11,
+    "rgb": true,
+    "color": "Black",
+    "usb_c": false
   },
   {
     "id": 14144,
@@ -19807,7 +20721,10 @@ export const PARTS = [
       420,
       480
     ],
-    "value": 1
+    "value": 1,
+    "rgb": true,
+    "color": "Black",
+    "usb_c": false
   },
   {
     "id": 14145,
@@ -19837,7 +20754,10 @@ export const PARTS = [
     "weight": "14 Pounds",
     "ff": "mATX",
     "tower": "Mid",
-    "value": 72
+    "value": 72,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false
   },
   {
     "id": 14146,
@@ -19868,7 +20788,10 @@ export const PARTS = [
     "weight": "13.92 Kilograms",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 3
+    "value": 3,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false
   },
   {
     "id": 14147,
@@ -19897,7 +20820,21 @@ export const PARTS = [
     "weight": "8 Kilograms",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 54
+    "value": 54,
+    "tg": false,
+    "rgb": false,
+    "fans_inc": 2,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 335,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14148,
@@ -19928,7 +20865,21 @@ export const PARTS = [
     "ff": "mATX",
     "tower": "Mid",
     "fans_inc": 1,
-    "value": 50
+    "value": 50,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14149,
@@ -19959,7 +20910,18 @@ export const PARTS = [
     "tower": "Mid",
     "ff": "ATX",
     "tg": true,
-    "value": 22
+    "value": 22,
+    "rgb": true,
+    "usb_c": false,
+    "maxGPU": 400,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14150,
@@ -19996,7 +20958,14 @@ export const PARTS = [
       240,
       280
     ],
-    "value": 100
+    "value": 100,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "mATX",
+      "ITX"
+    ]
   },
   {
     "id": 14151,
@@ -20026,7 +20995,17 @@ export const PARTS = [
     "weight": "4 Kilograms",
     "ff": "mATX",
     "tower": "Mid",
-    "value": 100
+    "value": 100,
+    "tg": false,
+    "rgb": false,
+    "fans_inc": 2,
+    "rads": [
+      240
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14152,
@@ -20065,7 +21044,11 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 19
+    "value": 19,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false
   },
   {
     "id": 14153,
@@ -20105,7 +21088,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 21
+    "value": 21,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14154,
@@ -20136,7 +21125,13 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "tower": "Mid",
-    "value": 3
+    "value": 3,
+    "rgb": true,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14155,
@@ -20178,7 +21173,14 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 0
+    "value": 0,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14156,
@@ -20224,7 +21226,12 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 32
+    "value": 32,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14157,
@@ -20267,7 +21274,12 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 13
+    "value": 13,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14158,
@@ -20309,7 +21321,13 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 14
+    "value": 14,
+    "rgb": false,
+    "color": "White",
+    "usb_c": false,
+    "mobo": [
+      "E-ATX"
+    ]
   },
   {
     "id": 14159,
@@ -20348,7 +21366,13 @@ export const PARTS = [
       240,
       280
     ],
-    "value": 71
+    "value": 71,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ]
   },
   {
     "id": 14160,
@@ -20387,7 +21411,13 @@ export const PARTS = [
       240,
       280
     ],
-    "value": 60
+    "value": 60,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ]
   },
   {
     "id": 14161,
@@ -20416,7 +21446,14 @@ export const PARTS = [
     "weight": "5.7 Kilograms",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 81
+    "value": 81,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14162,
@@ -20447,7 +21484,22 @@ export const PARTS = [
     "weight": "7440 Grams",
     "ff": "ATX",
     "tower": "Mid",
-    "value": 42
+    "value": 42,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 369,
+    "maxCooler": 190,
+    "rads": [
+      120,
+      140,
+      240,
+      280
+    ]
   },
   {
     "id": 14163,
@@ -20488,7 +21540,10 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 25
+    "value": 25,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false
   },
   {
     "id": 14164,
@@ -20529,7 +21584,12 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 37
+    "value": 37,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14165,
@@ -20560,7 +21620,18 @@ export const PARTS = [
     "ff": "Mini-ITX",
     "tower": "Mini",
     "tg": false,
-    "value": 70
+    "value": 70,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ],
+    "maxGPU": 267,
+    "maxCooler": 61,
+    "rads": [
+      120
+    ]
   },
   {
     "id": 14166,
@@ -20602,7 +21673,12 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 16
+    "value": 16,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14167,
@@ -20639,7 +21715,14 @@ export const PARTS = [
       120,
       240
     ],
-    "value": 24
+    "value": 24,
+    "tg": false,
+    "rgb": false,
+    "color": "White",
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ]
   },
   {
     "id": 14168,
@@ -20669,7 +21752,12 @@ export const PARTS = [
     "ff": "ATX",
     "tower": "Mid",
     "tg": true,
-    "value": 53
+    "value": 53,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14170,
@@ -20708,7 +21796,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 8
+    "value": 8,
+    "rgb": false,
+    "color": "White",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14172,
@@ -20750,7 +21844,12 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 17
+    "value": 17,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14173,
@@ -20781,7 +21880,23 @@ export const PARTS = [
     "tower": "Full",
     "tg": true,
     "ff": "E-ATX",
-    "value": 38
+    "value": 38,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "E-ATX",
+      "ATX"
+    ],
+    "maxGPU": 430,
+    "maxCooler": 185,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 14174,
@@ -20810,7 +21925,22 @@ export const PARTS = [
     "weight": "2.2 Kilograms",
     "ff": "mATX",
     "tower": "Mid",
-    "value": 100
+    "value": 100,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX",
+      "ITX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14175,
@@ -20851,7 +21981,9 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 91
+    "value": 91,
+    "rgb": true,
+    "usb_c": true
   },
   {
     "id": 14176,
@@ -20892,7 +22024,13 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 64
+    "value": 64,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "E-ATX"
+    ]
   },
   {
     "id": 14177,
@@ -20923,7 +22061,21 @@ export const PARTS = [
     "weight": "11 Pounds",
     "ff": "Mini-ITX",
     "tower": "Mini",
-    "value": 45
+    "value": 45,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ],
+    "maxGPU": 335,
+    "maxCooler": 140,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14178,
@@ -20961,7 +22113,11 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 20
+    "value": 20,
+    "tg": false,
+    "rgb": true,
+    "color": "White",
+    "usb_c": false
   },
   {
     "id": 14179,
@@ -21006,7 +22162,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 23
+    "value": 23,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14180,
@@ -21037,7 +22199,12 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 82
+    "value": 82,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14181,
@@ -21084,7 +22251,12 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 29
+    "value": 29,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14182,
@@ -21115,7 +22287,22 @@ export const PARTS = [
     "ff": "E-ATX",
     "tower": "Full",
     "tg": false,
-    "value": 0
+    "value": 0,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "E-ATX"
+    ],
+    "maxGPU": 430,
+    "maxCooler": 185,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 14183,
@@ -21145,7 +22332,22 @@ export const PARTS = [
     "tower": "Mid",
     "ff": "ATX",
     "fans_inc": 4,
-    "value": 68
+    "value": 68,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14184,
@@ -21186,7 +22388,13 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 0
+    "value": 0,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "E-ATX"
+    ]
   },
   {
     "id": 14185,
@@ -21227,7 +22435,10 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 14
+    "value": 14,
+    "rgb": true,
+    "color": "Black",
+    "usb_c": false
   },
   {
     "id": 14186,
@@ -21265,7 +22476,11 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 32
+    "value": 32,
+    "tg": false,
+    "rgb": true,
+    "color": "Black",
+    "usb_c": false
   },
   {
     "id": 14187,
@@ -21296,7 +22511,9 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 57
+    "value": 57,
+    "rgb": true,
+    "usb_c": false
   },
   {
     "id": 14188,
@@ -21336,7 +22553,13 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 16
+    "value": 16,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14189,
@@ -21378,7 +22601,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 23
+    "value": 23,
+    "rgb": false,
+    "color": "White",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14190,
@@ -21418,7 +22647,10 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 15
+    "value": 15,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false
   },
   {
     "id": 14191,
@@ -21450,7 +22682,21 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 3,
-    "value": 35
+    "value": 35,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14192,
@@ -21482,7 +22728,19 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 41
+    "value": 41,
+    "rgb": true,
+    "color": "White",
+    "usb_c": false,
+    "maxGPU": 400,
+    "maxCooler": 175,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14193,
@@ -21511,7 +22769,10 @@ export const PARTS = [
     "mpn": "NESO P1",
     "weight": "14.42 Kilograms",
     "tg": true,
-    "value": 8
+    "value": 8,
+    "rgb": true,
+    "color": "White",
+    "usb_c": false
   },
   {
     "id": 14194,
@@ -21540,7 +22801,13 @@ export const PARTS = [
     "mpn": "VG4-5-V4W",
     "ff": "ATX",
     "tower": "Mid",
-    "value": 62
+    "value": 62,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14195,
@@ -21565,7 +22832,10 @@ export const PARTS = [
     ],
     "mpn": "Window Side Panel (Pure Base)",
     "weight": "2 Kilograms",
-    "value": 9
+    "value": 9,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false
   },
   {
     "id": 14196,
@@ -21602,7 +22872,11 @@ export const PARTS = [
       120,
       240
     ],
-    "value": 27
+    "value": 27,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false
   },
   {
     "id": 14197,
@@ -21632,7 +22906,19 @@ export const PARTS = [
     "weight": "35.5 Pounds",
     "ff": "E-ATX",
     "tower": "Full",
-    "value": 0
+    "value": 0,
+    "tg": false,
+    "rgb": false,
+    "rads": [
+      420
+    ],
+    "usb_c": false,
+    "mobo": [
+      "E-ATX",
+      "ATX"
+    ],
+    "maxGPU": 430,
+    "maxCooler": 185
   },
   {
     "id": 14198,
@@ -21662,7 +22948,19 @@ export const PARTS = [
     "weight": "1.14 Kilograms",
     "ff": "Mini-ITX",
     "tower": "Mini",
-    "value": 64
+    "value": 64,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ],
+    "maxGPU": 320,
+    "maxCooler": 140,
+    "rads": [
+      120,
+      240
+    ]
   },
   {
     "id": 14199,
@@ -21693,7 +22991,20 @@ export const PARTS = [
     "weight": "3.24 Kilograms",
     "tower": "Mini",
     "ff": "mATX",
-    "value": 100
+    "value": 100,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "ITX"
+    ],
+    "maxGPU": 320,
+    "maxCooler": 140,
+    "rads": [
+      120,
+      240
+    ]
   },
   {
     "id": 14200,
@@ -21724,7 +23035,13 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 52
+    "value": 52,
+    "rgb": true,
+    "fans_inc": 3,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14201,
@@ -21754,7 +23071,9 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 28
+    "value": 28,
+    "rgb": true,
+    "usb_c": true
   },
   {
     "id": 14202,
@@ -21783,7 +23102,13 @@ export const PARTS = [
     "weight": "14.79 Kilograms",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 8
+    "value": 8,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14203,
@@ -21812,7 +23137,18 @@ export const PARTS = [
     "weight": "4.45 Kilograms",
     "ff": "mATX",
     "tower": "Mid",
-    "value": 91
+    "value": 91,
+    "tg": false,
+    "rgb": false,
+    "rads": [
+      240
+    ],
+    "usb_c": false,
+    "mobo": [
+      "mATX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160
   },
   {
     "id": 14204,
@@ -21841,7 +23177,21 @@ export const PARTS = [
     "weight": "4.36 Kilograms",
     "ff": "mATX",
     "tower": "Mid",
-    "value": 86
+    "value": 86,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14205,
@@ -21872,7 +23222,18 @@ export const PARTS = [
     "ff": "Mini-ITX",
     "tower": "Mini",
     "fans_inc": 3,
-    "value": 58
+    "value": 58,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ],
+    "maxGPU": 320,
+    "maxCooler": 140,
+    "rads": [
+      120,
+      240
+    ]
   },
   {
     "id": 14206,
@@ -21903,7 +23264,22 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "E-ATX",
-    "value": 35
+    "value": 35,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "E-ATX"
+    ],
+    "maxGPU": 430,
+    "maxCooler": 185,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 14207,
@@ -21932,7 +23308,16 @@ export const PARTS = [
     "weight": "4.85 Pounds",
     "ff": "Mini-ITX",
     "tower": "Mini",
-    "value": 19
+    "value": 19,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ],
+    "maxGPU": 220,
+    "maxCooler": 44,
+    "rads": []
   },
   {
     "id": 14208,
@@ -21964,7 +23349,20 @@ export const PARTS = [
     "tower": "Full",
     "ff": "E-ATX",
     "fans_inc": 4,
-    "value": 0
+    "value": 0,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false,
+    "maxGPU": 430,
+    "maxCooler": 185,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 14209,
@@ -21994,7 +23392,21 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 56
+    "value": 56,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14210,
@@ -22024,7 +23436,23 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "E-ATX",
-    "value": 19
+    "value": 19,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "E-ATX",
+      "ATX"
+    ],
+    "maxGPU": 430,
+    "maxCooler": 185,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 14211,
@@ -22064,7 +23492,10 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 4
+    "value": 4,
+    "rgb": true,
+    "color": "White",
+    "usb_c": false
   },
   {
     "id": 14212,
@@ -22095,7 +23526,22 @@ export const PARTS = [
     "tg": true,
     "ff": "mATX",
     "tower": "Mid",
-    "value": 100
+    "value": 100,
+    "rgb": true,
+    "fans_inc": 3,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ],
+    "maxGPU": 335,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14213,
@@ -22125,7 +23571,13 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 40
+    "value": 40,
+    "rgb": true,
+    "fans_inc": 6,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14214,
@@ -22167,7 +23619,14 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 0
+    "value": 0,
+    "tg": false,
+    "rgb": false,
+    "color": "White",
+    "usb_c": false,
+    "mobo": [
+      "E-ATX"
+    ]
   },
   {
     "id": 14215,
@@ -22203,7 +23662,13 @@ export const PARTS = [
       120,
       240
     ],
-    "value": 86
+    "value": 86,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ]
   },
   {
     "id": 14216,
@@ -22232,7 +23697,21 @@ export const PARTS = [
     "weight": "2 Kilograms",
     "ff": "mATX",
     "tower": "Mid",
-    "value": 78
+    "value": 78,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "mATX",
+      "ITX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14217,
@@ -22262,7 +23741,20 @@ export const PARTS = [
     "tower": "Mid",
     "ff": "mATX",
     "tg": false,
-    "value": 66
+    "value": 66,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "mATX",
+      "ITX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14218,
@@ -22301,7 +23793,14 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 22
+    "value": 22,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14219,
@@ -22330,7 +23829,22 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 62
+    "value": 62,
+    "rgb": true,
+    "fans_inc": 4,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14220,
@@ -22361,7 +23875,12 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 96
+    "value": 96,
+    "rgb": true,
+    "rads": [
+      360
+    ],
+    "usb_c": false
   },
   {
     "id": 14221,
@@ -22392,7 +23911,12 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 6,
-    "value": 52
+    "value": 52,
+    "rgb": true,
+    "usb_c": true,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14222,
@@ -22422,7 +23946,24 @@ export const PARTS = [
     "weight": "14 Kilograms",
     "tower": "Mid",
     "ff": "E-ATX",
-    "value": 16
+    "value": 16,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "E-ATX",
+      "ATX"
+    ],
+    "maxGPU": 430,
+    "maxCooler": 185,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 14223,
@@ -22458,7 +23999,14 @@ export const PARTS = [
     "rads": [
       120
     ],
-    "value": 51
+    "value": 51,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ]
   },
   {
     "id": 14224,
@@ -22499,7 +24047,13 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 33
+    "value": 33,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14225,
@@ -22530,7 +24084,21 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 30
+    "value": 30,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14226,
@@ -22559,7 +24127,14 @@ export const PARTS = [
     "weight": "14.33 Pounds",
     "tower": "Mid",
     "ff": "mATX",
-    "value": 29
+    "value": 29,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14227,
@@ -22587,7 +24162,20 @@ export const PARTS = [
     "mpn": "TK-0",
     "tower": "Mini",
     "ff": "Mini-ITX",
-    "value": 29
+    "value": 29,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ],
+    "maxGPU": 320,
+    "maxCooler": 140,
+    "rads": [
+      120,
+      240
+    ]
   },
   {
     "id": 14228,
@@ -22616,7 +24204,19 @@ export const PARTS = [
     "weight": "11.6 Pounds",
     "tower": "Full",
     "ff": "E-ATX",
-    "value": 26
+    "value": 26,
+    "tg": false,
+    "rgb": false,
+    "rads": [
+      420
+    ],
+    "usb_c": false,
+    "mobo": [
+      "E-ATX",
+      "ATX"
+    ],
+    "maxGPU": 430,
+    "maxCooler": 185
   },
   {
     "id": 14229,
@@ -22656,7 +24256,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 0
+    "value": 0,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14230,
@@ -22703,7 +24309,9 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 23
+    "value": 23,
+    "rgb": true,
+    "usb_c": false
   },
   {
     "id": 14231,
@@ -22732,7 +24340,12 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "mATX",
-    "value": 84
+    "value": 84,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14232,
@@ -22763,7 +24376,22 @@ export const PARTS = [
     "weight": "25.8 Pounds",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 27
+    "value": 27,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14233,
@@ -22793,7 +24421,13 @@ export const PARTS = [
     "ff": "mATX",
     "tower": "Mid",
     "fans_inc": 4,
-    "value": 90
+    "value": 90,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14234,
@@ -22833,7 +24467,14 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 33
+    "value": 33,
+    "tg": false,
+    "rgb": true,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14235,
@@ -22863,7 +24504,20 @@ export const PARTS = [
     "weight": "19 Pounds",
     "tower": "Mini",
     "ff": "Mini-ITX",
-    "value": 32
+    "value": 32,
+    "tg": false,
+    "rgb": false,
+    "fans_inc": 2,
+    "color": "Black",
+    "rads": [
+      360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ],
+    "maxGPU": 320,
+    "maxCooler": 140
   },
   {
     "id": 14236,
@@ -22893,7 +24547,12 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 72
+    "value": 72,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14237,
@@ -22923,7 +24582,12 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "mATX",
-    "value": 72
+    "value": 72,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14238,
@@ -22953,7 +24617,23 @@ export const PARTS = [
     "weight": "14.3 Pounds",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 73
+    "value": 73,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14239,
@@ -22983,7 +24663,23 @@ export const PARTS = [
     "tower": "Full",
     "tg": true,
     "ff": "E-ATX",
-    "value": 0
+    "value": 0,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "E-ATX",
+      "ATX"
+    ],
+    "maxGPU": 430,
+    "maxCooler": 185,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 14240,
@@ -23012,7 +24708,10 @@ export const PARTS = [
     "upc": "840353046351",
     "mpn": "SUP01W.US",
     "weight": "24.47 Pounds",
-    "value": 72
+    "value": 72,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false
   },
   {
     "id": 14241,
@@ -23048,7 +24747,10 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 100
+    "value": 100,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false
   },
   {
     "id": 14242,
@@ -23078,7 +24780,14 @@ export const PARTS = [
     "weight": "11 Pounds",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 40
+    "value": 40,
+    "tg": false,
+    "rgb": true,
+    "fans_inc": 6,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14243,
@@ -23107,7 +24816,21 @@ export const PARTS = [
     "weight": "5.26 Kilograms",
     "ff": "mATX",
     "tower": "Mid",
-    "value": 20
+    "value": 20,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14244,
@@ -23137,7 +24860,14 @@ export const PARTS = [
     "weight": "16.09 Pounds",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 33
+    "value": 33,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14245,
@@ -23166,7 +24896,21 @@ export const PARTS = [
     "weight": "16.53 Pounds",
     "ff": "mATX",
     "tower": "Mid",
-    "value": 36
+    "value": 36,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14246,
@@ -23197,7 +24941,16 @@ export const PARTS = [
     "weight": "15.4 Kilograms",
     "tower": "Full",
     "ff": "E-ATX",
-    "value": 32
+    "value": 32,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "rads": [
+      420
+    ],
+    "usb_c": false,
+    "maxGPU": 360,
+    "maxCooler": 170
   },
   {
     "id": 14247,
@@ -23227,7 +24980,22 @@ export const PARTS = [
     "tower": "Full",
     "tg": true,
     "ff": "ATX",
-    "value": 28
+    "value": 28,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 430,
+    "maxCooler": 185,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 14248,
@@ -23258,7 +25026,9 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "tower": "Mid",
-    "value": 61
+    "value": 61,
+    "rgb": false,
+    "usb_c": false
   },
   {
     "id": 14249,
@@ -23289,7 +25059,9 @@ export const PARTS = [
     "tg": true,
     "ff": "ATX",
     "fans_inc": 5,
-    "value": 27
+    "value": 27,
+    "rgb": true,
+    "usb_c": false
   },
   {
     "id": 14250,
@@ -23318,7 +25090,22 @@ export const PARTS = [
     "weight": "3.38 Kilograms",
     "ff": "mATX",
     "tower": "Mid",
-    "value": 90
+    "value": 90,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX",
+      "ITX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14251,
@@ -23348,7 +25135,12 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 70
+    "value": 70,
+    "rgb": true,
+    "usb_c": true,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14252,
@@ -23385,7 +25177,10 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 45
+    "value": 45,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false
   },
   {
     "id": 14253,
@@ -23425,7 +25220,12 @@ export const PARTS = [
       240,
       280
     ],
-    "value": 27
+    "value": 27,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ]
   },
   {
     "id": 14254,
@@ -23454,7 +25254,14 @@ export const PARTS = [
     "mpn": "D200",
     "ff": "ATX",
     "tower": "Mid",
-    "value": 46
+    "value": 46,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14255,
@@ -23484,7 +25291,10 @@ export const PARTS = [
     "mpn": "THOR NAS PRO",
     "tower": "Full",
     "ff": "E-ATX",
-    "value": 6
+    "value": 6,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false
   },
   {
     "id": 14256,
@@ -23512,7 +25322,14 @@ export const PARTS = [
     ],
     "ff": "ATX",
     "tower": "Mid",
-    "value": 28
+    "value": 28,
+    "tg": false,
+    "rgb": false,
+    "color": "Gray",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14257,
@@ -23542,7 +25359,17 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "mATX",
-    "value": 70
+    "value": 70,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14258,
@@ -23583,7 +25410,10 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 42
+    "value": 42,
+    "rgb": false,
+    "color": "White",
+    "usb_c": false
   },
   {
     "id": 14259,
@@ -23623,7 +25453,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 28
+    "value": 28,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "E-ATX"
+    ]
   },
   {
     "id": 14260,
@@ -23653,7 +25489,20 @@ export const PARTS = [
     "ff": "mATX",
     "tower": "Mid",
     "fans_inc": 3,
-    "value": 96
+    "value": 96,
+    "rgb": true,
+    "usb_c": true,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ],
+    "maxGPU": 330,
+    "maxCooler": 160,
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 14261,
@@ -23682,7 +25531,22 @@ export const PARTS = [
     "weight": "15 Pounds",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 40
+    "value": 40,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14262,
@@ -23723,7 +25587,10 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 31
+    "value": 31,
+    "rgb": true,
+    "color": "Black",
+    "usb_c": false
   },
   {
     "id": 14263,
@@ -23752,7 +25619,13 @@ export const PARTS = [
     "weight": "13.63 Kilograms",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 15
+    "value": 15,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14264,
@@ -23781,7 +25654,13 @@ export const PARTS = [
     "weight": "13.63 Kilograms",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 15
+    "value": 15,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14265,
@@ -23817,7 +25696,12 @@ export const PARTS = [
     "tower": "Full",
     "ff": "E-ATX",
     "tg": true,
-    "value": 16
+    "value": 16,
+    "rgb": false,
+    "rads": [
+      420
+    ],
+    "usb_c": false
   },
   {
     "id": 14266,
@@ -23847,7 +25731,18 @@ export const PARTS = [
     "ff": "Mini-ITX",
     "tower": "Mini",
     "tg": false,
-    "value": 48
+    "value": 48,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ],
+    "maxGPU": 320,
+    "maxCooler": 140,
+    "rads": [
+      120,
+      240
+    ]
   },
   {
     "id": 14267,
@@ -23876,7 +25771,18 @@ export const PARTS = [
     "ff": "Mini-ITX",
     "tower": "Mini",
     "tg": false,
-    "value": 15
+    "value": 15,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ],
+    "maxGPU": 320,
+    "maxCooler": 140,
+    "rads": [
+      120,
+      240
+    ]
   },
   {
     "id": 14268,
@@ -23905,7 +25811,23 @@ export const PARTS = [
     "mpn": "D400",
     "tower": "Mid",
     "ff": "ATX",
-    "value": 37
+    "value": 37,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 380,
+    "maxCooler": 170,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14269,
@@ -23947,7 +25869,12 @@ export const PARTS = [
       360,
       420
     ],
-    "value": 0
+    "value": 0,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "E-ATX"
+    ]
   },
   {
     "id": 14270,
@@ -23978,7 +25905,21 @@ export const PARTS = [
     "tower": "Mid",
     "tg": true,
     "ff": "ATX",
-    "value": 14
+    "value": 14,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "maxGPU": 400,
+    "maxCooler": 185,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 14271,
@@ -24008,7 +25949,16 @@ export const PARTS = [
     "weight": "15.4 Kilograms",
     "tower": "Full",
     "ff": "E-ATX",
-    "value": 35
+    "value": 35,
+    "tg": false,
+    "rgb": false,
+    "color": "White",
+    "rads": [
+      420
+    ],
+    "usb_c": false,
+    "maxGPU": 360,
+    "maxCooler": 170
   },
   {
     "id": 14272,
@@ -24036,7 +25986,20 @@ export const PARTS = [
     "ff": "Mini-ITX",
     "tower": "Mini",
     "fans_inc": 2,
-    "value": 100
+    "value": 100,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "ITX"
+    ],
+    "maxGPU": 320,
+    "maxCooler": 140,
+    "rads": [
+      120,
+      240
+    ]
   },
   {
     "id": 14273,
@@ -24070,7 +26033,14 @@ export const PARTS = [
     "rads": [
       120
     ],
-    "value": 73
+    "value": 73,
+    "tg": false,
+    "rgb": false,
+    "color": "Black",
+    "usb_c": false,
+    "mobo": [
+      "ITX"
+    ]
   },
   {
     "id": 14274,
@@ -24109,7 +26079,13 @@ export const PARTS = [
       280,
       360
     ],
-    "value": 0
+    "value": 0,
+    "tg": false,
+    "rgb": true,
+    "usb_c": false,
+    "mobo": [
+      "mATX"
+    ]
   },
   {
     "id": 14275,
@@ -24147,7 +26123,13 @@ export const PARTS = [
       240,
       280
     ],
-    "value": 100
+    "value": 100,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ]
   },
   {
     "id": 14276,
@@ -24177,7 +26159,13 @@ export const PARTS = [
     "weight": "70 Pounds",
     "tower": "Full",
     "ff": "ATX",
-    "value": 0
+    "value": 0,
+    "tg": false,
+    "rgb": false,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 14277,
@@ -86764,7 +88752,8 @@ export const PARTS = [
     "fans_max": 5,
     "ff": "mATX",
     "maxGPU": 350,
-    "maxCooler": 155
+    "maxCooler": 155,
+    "usb_c": false
   },
   {
     "id": 16110,
@@ -86794,7 +88783,8 @@ export const PARTS = [
     "fans_max": 7,
     "ff": "Mini-ITX",
     "maxGPU": 400,
-    "maxCooler": 160.02
+    "maxCooler": 160.02,
+    "usb_c": false
   },
   {
     "id": 16111,
@@ -86824,7 +88814,11 @@ export const PARTS = [
     "fans_max": 5,
     "ff": "mATX",
     "maxGPU": 350,
-    "maxCooler": 155
+    "maxCooler": 155,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 16112,
@@ -86863,6 +88857,10 @@ export const PARTS = [
       360,
       420,
       480
+    ],
+    "usb_c": false,
+    "mobo": [
+      "E-ATX"
     ]
   },
   {
@@ -86894,6 +88892,10 @@ export const PARTS = [
     "maxCooler": 148,
     "rads": [
       120
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -86924,7 +88926,11 @@ export const PARTS = [
     "fans_max": 5,
     "ff": "mATX",
     "maxGPU": 350,
-    "maxCooler": 165
+    "maxCooler": 165,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 16115,
@@ -86963,6 +88969,10 @@ export const PARTS = [
       360,
       420,
       480
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87000,6 +89010,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87037,6 +89051,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87074,6 +89092,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87111,6 +89133,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87148,6 +89174,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87185,6 +89215,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87222,6 +89256,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87259,6 +89297,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87296,6 +89338,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87332,6 +89378,10 @@ export const PARTS = [
       280,
       360,
       420
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87368,6 +89418,10 @@ export const PARTS = [
       280,
       360,
       420
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87403,6 +89457,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87438,6 +89496,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87473,6 +89535,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87510,6 +89576,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87547,6 +89617,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87584,6 +89658,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87621,6 +89699,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87658,6 +89740,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87695,6 +89781,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87732,6 +89822,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87769,6 +89863,11 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "E-ATX",
+      "ATX"
     ]
   },
   {
@@ -87800,6 +89899,10 @@ export const PARTS = [
     "maxCooler": 77,
     "rads": [
       120
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ITX"
     ]
   },
   {
@@ -87835,6 +89938,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -87871,7 +89978,8 @@ export const PARTS = [
       280,
       360,
       420
-    ]
+    ],
+    "usb_c": false
   },
   {
     "id": 16141,
@@ -87904,7 +90012,8 @@ export const PARTS = [
       120,
       240,
       360
-    ]
+    ],
+    "usb_c": false
   },
   {
     "id": 16142,
@@ -87934,7 +90043,11 @@ export const PARTS = [
     "fans_max": 11,
     "ff": "ATX",
     "maxGPU": 415,
-    "maxCooler": 166
+    "maxCooler": 166,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 16143,
@@ -87964,7 +90077,18 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 415,
-    "maxCooler": 160
+    "maxCooler": 160,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16144,
@@ -87994,7 +90118,11 @@ export const PARTS = [
     "fans_max": 13,
     "ff": "ATX",
     "maxGPU": 400,
-    "maxCooler": 200
+    "maxCooler": 200,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 16145,
@@ -88024,7 +90152,11 @@ export const PARTS = [
     "fans_max": 13,
     "ff": "ATX",
     "maxGPU": 400,
-    "maxCooler": 200
+    "maxCooler": 200,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 16146,
@@ -88054,7 +90186,11 @@ export const PARTS = [
     "fans_max": 13,
     "ff": "ATX",
     "maxGPU": 400,
-    "maxCooler": 200
+    "maxCooler": 200,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 16147,
@@ -88084,7 +90220,18 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 415,
-    "maxCooler": 160
+    "maxCooler": 160,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16148,
@@ -88114,7 +90261,11 @@ export const PARTS = [
     "fans_max": 11,
     "ff": "ATX",
     "maxGPU": 415,
-    "maxCooler": 166
+    "maxCooler": 166,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 16149,
@@ -88144,7 +90295,11 @@ export const PARTS = [
     "fans_max": 11,
     "ff": "ATX",
     "maxGPU": 415,
-    "maxCooler": 166
+    "maxCooler": 166,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 16150,
@@ -88174,7 +90329,11 @@ export const PARTS = [
     "fans_max": 11,
     "ff": "ATX",
     "maxGPU": 415,
-    "maxCooler": 166
+    "maxCooler": 166,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 16151,
@@ -88204,7 +90363,18 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 415,
-    "maxCooler": 160
+    "maxCooler": 160,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16152,
@@ -88241,6 +90411,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -88278,6 +90452,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -88315,6 +90493,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -88351,7 +90533,8 @@ export const PARTS = [
       280,
       360,
       420
-    ]
+    ],
+    "usb_c": false
   },
   {
     "id": 16156,
@@ -88379,7 +90562,18 @@ export const PARTS = [
     "fans_max": 9,
     "ff": "ATX",
     "maxGPU": 440,
-    "maxCooler": 180
+    "maxCooler": 180,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16157,
@@ -88412,7 +90606,8 @@ export const PARTS = [
       120,
       240,
       360
-    ]
+    ],
+    "usb_c": false
   },
   {
     "id": 16158,
@@ -88447,6 +90642,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -88483,6 +90682,10 @@ export const PARTS = [
       280,
       360,
       420
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -88513,7 +90716,8 @@ export const PARTS = [
     "fans_max": 2,
     "ff": "Mini-ITX",
     "maxGPU": 360,
-    "maxCooler": 68
+    "maxCooler": 68,
+    "usb_c": false
   },
   {
     "id": 16161,
@@ -88543,7 +90747,18 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 420,
     "maxCooler": 160,
-    "tower": "Mid"
+    "tower": "Mid",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16162,
@@ -88573,7 +90788,11 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 400,
     "maxCooler": 200,
-    "tower": "Mid"
+    "tower": "Mid",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 16163,
@@ -88603,7 +90822,11 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 400,
     "maxCooler": 200,
-    "tower": "Mid"
+    "tower": "Mid",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 16164,
@@ -88633,7 +90856,8 @@ export const PARTS = [
     "fans_max": 2,
     "ff": "Mini-ITX",
     "maxGPU": 360,
-    "maxCooler": 68
+    "maxCooler": 68,
+    "usb_c": false
   },
   {
     "id": 16165,
@@ -88663,7 +90887,8 @@ export const PARTS = [
     "fans_max": 2,
     "ff": "Mini-ITX",
     "maxGPU": 360,
-    "maxCooler": 68
+    "maxCooler": 68,
+    "usb_c": false
   },
   {
     "id": 16166,
@@ -88693,7 +90918,8 @@ export const PARTS = [
     "fans_max": 2,
     "ff": "Mini-ITX",
     "maxGPU": 360,
-    "maxCooler": 68
+    "maxCooler": 68,
+    "usb_c": false
   },
   {
     "id": 16167,
@@ -88723,7 +90949,8 @@ export const PARTS = [
     "fans_max": 2,
     "ff": "Mini-ITX",
     "maxGPU": 360,
-    "maxCooler": 68
+    "maxCooler": 68,
+    "usb_c": false
   },
   {
     "id": 16168,
@@ -88753,7 +90980,18 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 420,
     "maxCooler": 160,
-    "tower": "Mid"
+    "tower": "Mid",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16169,
@@ -88783,7 +91021,18 @@ export const PARTS = [
     "fans_max": 6,
     "ff": "mATX",
     "maxGPU": 340,
-    "maxCooler": 160
+    "maxCooler": 160,
+    "usb_c": false,
+    "mobo": [
+      "ATX",
+      "mATX"
+    ],
+    "rads": [
+      120,
+      140,
+      240,
+      280
+    ]
   },
   {
     "id": 16170,
@@ -88813,7 +91062,18 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 415,
     "maxCooler": 160,
-    "tower": "Mid"
+    "tower": "Mid",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16171,
@@ -88843,7 +91103,8 @@ export const PARTS = [
     "fans_max": 2,
     "ff": "Mini-ITX",
     "maxGPU": 360,
-    "maxCooler": 68
+    "maxCooler": 68,
+    "usb_c": false
   },
   {
     "id": 16172,
@@ -88873,7 +91134,18 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 420,
     "maxCooler": 160,
-    "tower": "Mid"
+    "tower": "Mid",
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16173,
@@ -88901,7 +91173,18 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 400,
-    "maxCooler": 166
+    "maxCooler": 166,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16174,
@@ -88929,7 +91212,18 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 400,
-    "maxCooler": 160
+    "maxCooler": 160,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16175,
@@ -88964,6 +91258,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -88999,6 +91297,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -89034,6 +91336,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -89064,7 +91370,18 @@ export const PARTS = [
     "fans_max": 7,
     "ff": "mATX",
     "maxGPU": 377,
-    "maxCooler": 170
+    "maxCooler": 170,
+    "usb_c": false,
+    "mobo": [
+      "mATX"
+    ],
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16179,
@@ -89094,7 +91411,18 @@ export const PARTS = [
     "fans_max": 13,
     "ff": "ATX",
     "maxGPU": 400,
-    "maxCooler": 165
+    "maxCooler": 165,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16180,
@@ -89122,7 +91450,16 @@ export const PARTS = [
     "fans_max": 14,
     "ff": "Mini-ITX",
     "maxGPU": 450,
-    "maxCooler": 175
+    "maxCooler": 175,
+    "usb_c": false,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 16181,
@@ -89150,7 +91487,16 @@ export const PARTS = [
     "fans_max": 14,
     "ff": "Mini-ITX",
     "maxGPU": 450,
-    "maxCooler": 175
+    "maxCooler": 175,
+    "usb_c": false,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 16182,
@@ -89178,7 +91524,16 @@ export const PARTS = [
     "fans_max": 14,
     "ff": "Mini-ITX",
     "maxGPU": 450,
-    "maxCooler": 175
+    "maxCooler": 175,
+    "usb_c": false,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 16183,
@@ -89213,6 +91568,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -89248,7 +91607,8 @@ export const PARTS = [
       240,
       280,
       360
-    ]
+    ],
+    "usb_c": false
   },
   {
     "id": 16185,
@@ -89278,7 +91638,15 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "Mini-ITX",
     "maxGPU": 460,
-    "maxCooler": 185
+    "maxCooler": 185,
+    "usb_c": false,
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16186,
@@ -89314,6 +91682,12 @@ export const PARTS = [
       280,
       360,
       420
+    ],
+    "usb_c": false,
+    "mobo": [
+      "E-ATX",
+      "mATX",
+      "ITX"
     ]
   },
   {
@@ -89342,7 +91716,17 @@ export const PARTS = [
     "fans_max": 6,
     "ff": "ATX",
     "maxGPU": 380,
-    "maxCooler": 165
+    "maxCooler": 165,
+    "usb_c": false,
+    "mobo": [
+      "mATX",
+      "ITX"
+    ],
+    "rads": [
+      120,
+      240,
+      280
+    ]
   },
   {
     "id": 16188,
@@ -89378,6 +91762,12 @@ export const PARTS = [
       280,
       360,
       420
+    ],
+    "usb_c": false,
+    "mobo": [
+      "E-ATX",
+      "mATX",
+      "ITX"
     ]
   },
   {
@@ -89406,7 +91796,18 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 400,
-    "maxCooler": 165
+    "maxCooler": 165,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ],
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16190,
@@ -89436,7 +91837,11 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 480,
-    "maxCooler": 175
+    "maxCooler": 175,
+    "usb_c": false,
+    "mobo": [
+      "ATX"
+    ]
   },
   {
     "id": 16191,
@@ -89472,6 +91877,10 @@ export const PARTS = [
       280,
       360,
       420
+    ],
+    "usb_c": false,
+    "mobo": [
+      "E-ATX"
     ]
   },
   {
@@ -89507,6 +91916,10 @@ export const PARTS = [
       240,
       280,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "ATX"
     ]
   },
   {
@@ -89540,6 +91953,10 @@ export const PARTS = [
       120,
       240,
       360
+    ],
+    "usb_c": false,
+    "mobo": [
+      "E-ATX"
     ]
   },
   {
@@ -89576,6 +91993,10 @@ export const PARTS = [
       280,
       360,
       420
+    ],
+    "usb_c": false,
+    "mobo": [
+      "E-ATX"
     ]
   },
   {
