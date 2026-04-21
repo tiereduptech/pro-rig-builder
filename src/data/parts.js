@@ -16301,7 +16301,11 @@ export const PARTS = [
     "maxGPU": 360,
     "maxCooler": 158,
     "fans_inc": 1,
-    "rads": "120mm,140mm,240mm",
+    "rads": [
+      120,
+      140,
+      240
+    ],
     "value": 100
   },
   {
@@ -16336,7 +16340,12 @@ export const PARTS = [
     "maxGPU": 395,
     "maxCooler": 167,
     "fans_inc": 0,
-    "rads": "120mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      240,
+      280,
+      360
+    ],
     "value": 34
   },
   {
@@ -16401,7 +16410,14 @@ export const PARTS = [
     "maxGPU": 415,
     "maxCooler": 190,
     "fans_inc": 5,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 37
   },
   {
@@ -16530,7 +16546,12 @@ export const PARTS = [
     "maxGPU": 395,
     "maxCooler": 170,
     "fans_inc": 0,
-    "rads": "120mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      240,
+      280,
+      360
+    ],
     "value": 45
   },
   {
@@ -16570,7 +16591,10 @@ export const PARTS = [
     "tg": false,
     "maxGPU": 413,
     "maxCooler": 155,
-    "rads": "140mm,360mm",
+    "rads": [
+      140,
+      360
+    ],
     "fans_inc": 2,
     "value": 35
   },
@@ -16605,7 +16629,12 @@ export const PARTS = [
     "maxGPU": 395,
     "maxCooler": 170,
     "fans_inc": 0,
-    "rads": "120mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      240,
+      280,
+      360
+    ],
     "value": 55
   },
   {
@@ -16646,7 +16675,13 @@ export const PARTS = [
     "fans_inc": 3,
     "maxGPU": 365,
     "maxCooler": 163,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 48
   },
   {
@@ -16741,7 +16776,10 @@ export const PARTS = [
     "tower": "Mini",
     "maxGPU": 325,
     "maxCooler": 70,
-    "rads": "120mm,280mm",
+    "rads": [
+      120,
+      280
+    ],
     "drive25": 4,
     "fans_inc": 0,
     "value": 24
@@ -16777,7 +16815,13 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 185,
     "fans_inc": 6,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 15
   },
   {
@@ -16904,7 +16948,13 @@ export const PARTS = [
     "maxGPU": 426,
     "maxCooler": 167,
     "fans_inc": 0,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 20
   },
   {
@@ -17043,7 +17093,13 @@ export const PARTS = [
     "fans_inc": 1,
     "maxGPU": 435,
     "maxCooler": 165,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 35
   },
   {
@@ -17113,7 +17169,12 @@ export const PARTS = [
     "maxGPU": 365,
     "maxCooler": 173,
     "fans_inc": 0,
-    "rads": "120mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      240,
+      280,
+      360
+    ],
     "value": 71
   },
   {
@@ -17153,7 +17214,13 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 170,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 61
   },
   {
@@ -17264,7 +17331,13 @@ export const PARTS = [
     "maxGPU": 365,
     "maxCooler": 163,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 66
   },
   {
@@ -17299,7 +17372,13 @@ export const PARTS = [
     "maxGPU": 452,
     "maxCooler": 171,
     "fans_inc": 0,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 28
   },
   {
@@ -17340,7 +17419,13 @@ export const PARTS = [
     "maxGPU": 365,
     "maxCooler": 163,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 56
   },
   {
@@ -17374,7 +17459,13 @@ export const PARTS = [
     "fans_inc": 6,
     "maxGPU": 340,
     "maxCooler": 160,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 70
   },
   {
@@ -17589,7 +17680,12 @@ export const PARTS = [
     "maxGPU": 345,
     "maxCooler": 170,
     "fans_inc": 0,
-    "rads": "120mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      240,
+      280,
+      360
+    ],
     "value": 48
   },
   {
@@ -17623,7 +17719,13 @@ export const PARTS = [
     "maxGPU": 338,
     "maxCooler": 170,
     "fans_inc": 0,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 55
   },
   {
@@ -17657,7 +17759,14 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 175,
     "fans_inc": 4,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 66
   },
   {
@@ -17697,7 +17806,13 @@ export const PARTS = [
     "fans_inc": 3,
     "maxGPU": 400,
     "maxCooler": 180,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 77
   },
   {
@@ -17763,7 +17878,15 @@ export const PARTS = [
     "maxGPU": 498,
     "maxCooler": 185,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm,480mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420,
+      480
+    ],
     "value": 9
   },
   {
@@ -17803,7 +17926,13 @@ export const PARTS = [
     "maxGPU": 360,
     "maxCooler": 170,
     "fans_inc": 2,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 61
   },
   {
@@ -17874,7 +18003,13 @@ export const PARTS = [
     "maxGPU": 435,
     "maxCooler": 165,
     "fans_inc": 4,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 6
   },
   {
@@ -18072,7 +18207,13 @@ export const PARTS = [
     "fans_inc": 1,
     "maxGPU": 435,
     "maxCooler": 165,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 24
   },
   {
@@ -18325,7 +18466,14 @@ export const PARTS = [
     "maxGPU": 413,
     "maxCooler": 185,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 11
   },
   {
@@ -18361,7 +18509,11 @@ export const PARTS = [
     "maxGPU": 355,
     "maxCooler": 170,
     "fans_inc": 2,
-    "rads": "120mm,240mm,360mm",
+    "rads": [
+      120,
+      240,
+      360
+    ],
     "value": 35
   },
   {
@@ -18397,7 +18549,11 @@ export const PARTS = [
     "maxGPU": 355,
     "maxCooler": 170,
     "fans_inc": 2,
-    "rads": "120mm,240mm,360mm",
+    "rads": [
+      120,
+      240,
+      360
+    ],
     "value": 35
   },
   {
@@ -18529,7 +18685,9 @@ export const PARTS = [
     "maxGPU": 322,
     "maxCooler": 77,
     "fans_inc": 0,
-    "rads": "120mm",
+    "rads": [
+      120
+    ],
     "value": 12
   },
   {
@@ -18591,7 +18749,13 @@ export const PARTS = [
     "maxGPU": 360,
     "maxCooler": 170,
     "fans_inc": 2,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 45
   },
   {
@@ -18626,7 +18790,13 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 163,
     "fans_inc": 4,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 27
   },
   {
@@ -18697,7 +18867,13 @@ export const PARTS = [
     "fans_inc": 3,
     "maxGPU": 400,
     "maxCooler": 180,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 64
   },
   {
@@ -18737,7 +18913,13 @@ export const PARTS = [
     "fans_inc": 3,
     "maxGPU": 400,
     "maxCooler": 180,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 64
   },
   {
@@ -18863,7 +19045,13 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 175,
     "fans_inc": 0,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 35
   },
   {
@@ -18898,7 +19086,14 @@ export const PARTS = [
     "maxGPU": 461,
     "maxCooler": 188,
     "fans_inc": 5,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 11
   },
   {
@@ -19029,7 +19224,14 @@ export const PARTS = [
     "maxGPU": 440,
     "maxCooler": 180,
     "fans_inc": 0,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 5
   },
   {
@@ -19123,7 +19325,9 @@ export const PARTS = [
     "maxGPU": 250,
     "maxCooler": 130,
     "fans_inc": 1,
-    "rads": "120mm",
+    "rads": [
+      120
+    ],
     "value": 19
   },
   {
@@ -19219,7 +19423,14 @@ export const PARTS = [
     "maxGPU": 440,
     "maxCooler": 180,
     "fans_inc": 0,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 0
   },
   {
@@ -19252,7 +19463,10 @@ export const PARTS = [
     "maxGPU": 310,
     "maxCooler": 140,
     "fans_inc": 0,
-    "rads": "120mm,240mm",
+    "rads": [
+      120,
+      240
+    ],
     "value": 88
   },
   {
@@ -19286,7 +19500,9 @@ export const PARTS = [
     "maxGPU": 220,
     "maxCooler": 48,
     "fans_inc": 1,
-    "rads": "120mm",
+    "rads": [
+      120
+    ],
     "value": 28
   },
   {
@@ -19444,7 +19660,10 @@ export const PARTS = [
     "maxGPU": 365,
     "maxCooler": 165,
     "fans_inc": 0,
-    "rads": "120mm,240mm",
+    "rads": [
+      120,
+      240
+    ],
     "value": 100
   },
   {
@@ -19539,7 +19758,14 @@ export const PARTS = [
     "maxGPU": 440,
     "maxCooler": 185,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 11
   },
   {
@@ -19572,7 +19798,15 @@ export const PARTS = [
     "maxGPU": 498,
     "maxCooler": 185,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm,480mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420,
+      480
+    ],
     "value": 1
   },
   {
@@ -19757,7 +19991,11 @@ export const PARTS = [
     "maxGPU": 340,
     "maxCooler": 160,
     "fans_inc": 2,
-    "rads": "120mm,240mm,280mm",
+    "rads": [
+      120,
+      240,
+      280
+    ],
     "value": 100
   },
   {
@@ -19819,7 +20057,14 @@ export const PARTS = [
     "maxGPU": 440,
     "maxCooler": 185,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 19
   },
   {
@@ -19853,7 +20098,13 @@ export const PARTS = [
     "maxGPU": 360,
     "maxCooler": 170,
     "fans_inc": 2,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 21
   },
   {
@@ -19919,7 +20170,14 @@ export const PARTS = [
     "maxGPU": 446,
     "maxCooler": 170,
     "fans_inc": 0,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 0
   },
   {
@@ -19959,7 +20217,13 @@ export const PARTS = [
     "maxGPU": 375,
     "maxCooler": 154,
     "fans_inc": 0,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 32
   },
   {
@@ -19995,7 +20259,14 @@ export const PARTS = [
     "maxGPU": 446,
     "maxCooler": 170,
     "fans_inc": 0,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 13
   },
   {
@@ -20030,7 +20301,14 @@ export const PARTS = [
     "maxGPU": 413,
     "maxCooler": 185,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 14
   },
   {
@@ -20065,7 +20343,11 @@ export const PARTS = [
     "maxGPU": 330,
     "maxCooler": 155,
     "fans_inc": 2,
-    "rads": "120mm,240mm,280mm",
+    "rads": [
+      120,
+      240,
+      280
+    ],
     "value": 71
   },
   {
@@ -20100,7 +20382,11 @@ export const PARTS = [
     "maxGPU": 330,
     "maxCooler": 155,
     "fans_inc": 2,
-    "rads": "120mm,240mm,280mm",
+    "rads": [
+      120,
+      240,
+      280
+    ],
     "value": 60
   },
   {
@@ -20194,7 +20480,14 @@ export const PARTS = [
     "maxGPU": 430,
     "maxCooler": 180,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 25
   },
   {
@@ -20229,7 +20522,13 @@ export const PARTS = [
     "maxGPU": 365,
     "maxCooler": 165,
     "fans_inc": 2,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 37
   },
   {
@@ -20295,7 +20594,14 @@ export const PARTS = [
     "fans_inc": 2,
     "maxGPU": 432,
     "maxCooler": 185,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 16
   },
   {
@@ -20329,7 +20635,10 @@ export const PARTS = [
     "maxGPU": 325,
     "maxCooler": 70,
     "fans_inc": 0,
-    "rads": "120mm,240mm",
+    "rads": [
+      120,
+      240
+    ],
     "value": 24
   },
   {
@@ -20393,7 +20702,12 @@ export const PARTS = [
     "maxGPU": 395,
     "maxCooler": 167,
     "fans_inc": 0,
-    "rads": "120mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      240,
+      280,
+      360
+    ],
     "value": 8
   },
   {
@@ -20429,7 +20743,13 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 190,
     "fans_inc": 4,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 17
   },
   {
@@ -20523,7 +20843,14 @@ export const PARTS = [
     "fans_inc": 4,
     "maxGPU": 400,
     "maxCooler": 180,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 91
   },
   {
@@ -20557,7 +20884,14 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 175,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 64
   },
   {
@@ -20619,7 +20953,14 @@ export const PARTS = [
     "maxGPU": 410,
     "maxCooler": 180,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 20
   },
   {
@@ -20658,7 +20999,13 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 185,
     "fans_inc": 2,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 23
   },
   {
@@ -20730,7 +21077,13 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 170,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 29
   },
   {
@@ -20825,7 +21178,14 @@ export const PARTS = [
     "maxGPU": 466,
     "maxCooler": 190,
     "fans_inc": 4,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 0
   },
   {
@@ -20860,7 +21220,13 @@ export const PARTS = [
     "maxGPU": 390,
     "maxCooler": 167,
     "fans_inc": 4,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 14
   },
   {
@@ -20891,7 +21257,14 @@ export const PARTS = [
     "maxGPU": 410,
     "maxCooler": 180,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 32
   },
   {
@@ -20955,7 +21328,14 @@ export const PARTS = [
     "maxGPU": 491,
     "maxCooler": 185,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 16
   },
   {
@@ -20991,7 +21371,13 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 190,
     "fans_inc": 4,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 23
   },
   {
@@ -21025,7 +21411,13 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 175,
     "fans_inc": 0,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 15
   },
   {
@@ -21206,7 +21598,10 @@ export const PARTS = [
     "maxGPU": 325,
     "maxCooler": 85,
     "fans_inc": 0,
-    "rads": "120mm,240mm",
+    "rads": [
+      120,
+      240
+    ],
     "value": 27
   },
   {
@@ -21661,7 +22056,14 @@ export const PARTS = [
     "maxGPU": 440,
     "maxCooler": 185,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 4
   },
   {
@@ -21757,7 +22159,14 @@ export const PARTS = [
     "maxGPU": 466,
     "maxCooler": 190,
     "fans_inc": 4,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 0
   },
   {
@@ -21790,7 +22199,10 @@ export const PARTS = [
     "maxGPU": 310,
     "maxCooler": 140,
     "fans_inc": 0,
-    "rads": "120mm,240mm",
+    "rads": [
+      120,
+      240
+    ],
     "value": 86
   },
   {
@@ -21882,7 +22294,13 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 165,
     "fans_inc": 0,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 22
   },
   {
@@ -22037,7 +22455,9 @@ export const PARTS = [
     "maxGPU": 335,
     "maxCooler": 75,
     "fans_inc": 0,
-    "rads": "120mm",
+    "rads": [
+      120
+    ],
     "value": 51
   },
   {
@@ -22071,7 +22491,14 @@ export const PARTS = [
     "fans_inc": 3,
     "maxGPU": 415,
     "maxCooler": 190,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 33
   },
   {
@@ -22222,7 +22649,13 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 170,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 0
   },
   {
@@ -22263,7 +22696,13 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 170,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 23
   },
   {
@@ -22387,7 +22826,13 @@ export const PARTS = [
     "maxGPU": 369,
     "maxCooler": 170,
     "fans_inc": 4,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 33
   },
   {
@@ -22596,7 +23041,13 @@ export const PARTS = [
     "maxGPU": 400,
     "maxCooler": 170,
     "fans_inc": 6,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 100
   },
   {
@@ -22927,7 +23378,13 @@ export const PARTS = [
     "maxGPU": 380,
     "maxCooler": 170,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 45
   },
   {
@@ -22963,7 +23420,11 @@ export const PARTS = [
     "maxGPU": 330,
     "maxCooler": 155,
     "fans_inc": 2,
-    "rads": "120mm,240mm,280mm",
+    "rads": [
+      120,
+      240,
+      280
+    ],
     "value": 27
   },
   {
@@ -23115,7 +23576,13 @@ export const PARTS = [
     "maxGPU": 395,
     "maxCooler": 170,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 42
   },
   {
@@ -23149,7 +23616,13 @@ export const PARTS = [
     "maxGPU": 452,
     "maxCooler": 171,
     "fans_inc": 0,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 28
   },
   {
@@ -23243,7 +23716,13 @@ export const PARTS = [
     "maxGPU": 395,
     "maxCooler": 170,
     "fans_inc": 3,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 31
   },
   {
@@ -23460,7 +23939,14 @@ export const PARTS = [
     "maxGPU": 450,
     "maxCooler": 190,
     "fans_inc": 4,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ],
     "value": 0
   },
   {
@@ -23581,7 +24067,9 @@ export const PARTS = [
     "maxGPU": 200,
     "maxCooler": 70,
     "fans_inc": 0,
-    "rads": "120mm",
+    "rads": [
+      120
+    ],
     "value": 73
   },
   {
@@ -23614,7 +24102,13 @@ export const PARTS = [
     "maxGPU": 426,
     "maxCooler": 167,
     "fans_inc": 0,
-    "rads": "120mm,140mm,240mm,280mm,360mm",
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ],
     "value": 0
   },
   {
@@ -23648,7 +24142,11 @@ export const PARTS = [
     "maxGPU": 340,
     "maxCooler": 160,
     "fans_inc": 2,
-    "rads": "120mm,240mm,280mm",
+    "rads": [
+      120,
+      240,
+      280
+    ],
     "value": 100
   },
   {
@@ -86357,7 +86855,15 @@ export const PARTS = [
     "ff": "E-ATX",
     "maxGPU": 200,
     "maxCooler": 190,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm,480mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420,
+      480
+    ]
   },
   {
     "id": 16113,
@@ -86386,7 +86892,9 @@ export const PARTS = [
     "ff": "mATX",
     "maxGPU": 350,
     "maxCooler": 148,
-    "rads": "120mm"
+    "rads": [
+      120
+    ]
   },
   {
     "id": 16114,
@@ -86447,7 +86955,15 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 450,
     "maxCooler": 190,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm,480mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420,
+      480
+    ]
   },
   {
     "id": 16116,
@@ -86478,7 +86994,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 422,
     "maxCooler": 183,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16117,
@@ -86509,7 +87031,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 360,
     "maxCooler": 170,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16118,
@@ -86540,7 +87068,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 365,
     "maxCooler": 163,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16119,
@@ -86571,7 +87105,13 @@ export const PARTS = [
     "ff": "mATX",
     "maxGPU": 400,
     "maxCooler": 200,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16120,
@@ -86602,7 +87142,13 @@ export const PARTS = [
     "ff": "mATX",
     "maxGPU": 400,
     "maxCooler": 200,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16121,
@@ -86633,7 +87179,13 @@ export const PARTS = [
     "ff": "mATX",
     "maxGPU": 400,
     "maxCooler": 200,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16122,
@@ -86664,7 +87216,13 @@ export const PARTS = [
     "ff": "mATX",
     "maxGPU": 400,
     "maxCooler": 200,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16123,
@@ -86695,7 +87253,13 @@ export const PARTS = [
     "ff": "mATX",
     "maxGPU": 400,
     "maxCooler": 200,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16124,
@@ -86726,7 +87290,13 @@ export const PARTS = [
     "ff": "mATX",
     "maxGPU": 400,
     "maxCooler": 200,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16125,
@@ -86755,7 +87325,14 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 422,
     "maxCooler": 180,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 16126,
@@ -86784,7 +87361,14 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 422,
     "maxCooler": 180,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 16127,
@@ -86813,7 +87397,13 @@ export const PARTS = [
     "ff": "Mini-ITX",
     "maxGPU": 410,
     "maxCooler": 170,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16128,
@@ -86842,7 +87432,13 @@ export const PARTS = [
     "ff": "Mini-ITX",
     "maxGPU": 410,
     "maxCooler": 170,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16129,
@@ -86871,7 +87467,13 @@ export const PARTS = [
     "ff": "Mini-ITX",
     "maxGPU": 410,
     "maxCooler": 170,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16130,
@@ -86902,7 +87504,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 410,
     "maxCooler": 185,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16131,
@@ -86933,7 +87541,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 410,
     "maxCooler": 185,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16132,
@@ -86964,7 +87578,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 410,
     "maxCooler": 185,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16133,
@@ -86995,7 +87615,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 410,
     "maxCooler": 175,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16134,
@@ -87026,7 +87652,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 410,
     "maxCooler": 175,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16135,
@@ -87057,7 +87689,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 410,
     "maxCooler": 175,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16136,
@@ -87088,7 +87726,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 410,
     "maxCooler": 175,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16137,
@@ -87119,7 +87763,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 428,
     "maxCooler": 120,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16138,
@@ -87148,7 +87798,9 @@ export const PARTS = [
     "ff": "Mini-ITX",
     "maxGPU": 322,
     "maxCooler": 77,
-    "rads": "120mm"
+    "rads": [
+      120
+    ]
   },
   {
     "id": 16139,
@@ -87177,7 +87829,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 405,
     "maxCooler": 170,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16140,
@@ -87206,7 +87864,14 @@ export const PARTS = [
     "ff": "E-ATX",
     "maxGPU": 413,
     "maxCooler": 185,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 16141,
@@ -87235,7 +87900,11 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 355,
     "maxCooler": 170,
-    "rads": "120mm,240mm,360mm"
+    "rads": [
+      120,
+      240,
+      360
+    ]
   },
   {
     "id": 16142,
@@ -87566,7 +88235,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 430,
     "maxCooler": 170,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16153,
@@ -87597,7 +88272,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 430,
     "maxCooler": 170,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16154,
@@ -87628,7 +88309,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 430,
     "maxCooler": 170,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16155,
@@ -87657,7 +88344,14 @@ export const PARTS = [
     "ff": "E-ATX",
     "maxGPU": 413,
     "maxCooler": 185,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 16156,
@@ -87714,7 +88408,11 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 355,
     "maxCooler": 170,
-    "rads": "120mm,240mm,360mm"
+    "rads": [
+      120,
+      240,
+      360
+    ]
   },
   {
     "id": 16158,
@@ -87743,7 +88441,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 375,
     "maxCooler": 160,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16159,
@@ -87772,7 +88476,14 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 422,
     "maxCooler": 180,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 16160,
@@ -88247,7 +88958,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 459,
     "maxCooler": 165,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16176,
@@ -88276,7 +88993,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 459,
     "maxCooler": 165,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16177,
@@ -88305,7 +89028,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 459,
     "maxCooler": 165,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16178,
@@ -88478,7 +89207,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 410,
     "maxCooler": 170,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16184,
@@ -88507,7 +89242,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 410,
     "maxCooler": 170,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16185,
@@ -88566,7 +89307,14 @@ export const PARTS = [
     "ff": "E-ATX",
     "maxGPU": 455,
     "maxCooler": 185,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 16187,
@@ -88623,7 +89371,14 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 413,
     "maxCooler": 185,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 16189,
@@ -88710,7 +89465,14 @@ export const PARTS = [
     "ff": "E-ATX",
     "maxGPU": 491,
     "maxCooler": 185,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 16192,
@@ -88739,7 +89501,13 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 405,
     "maxCooler": 170,
-    "rads": "120mm,140mm,240mm,280mm,360mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360
+    ]
   },
   {
     "id": 16193,
@@ -88768,7 +89536,11 @@ export const PARTS = [
     "ff": "ATX",
     "maxGPU": 355,
     "maxCooler": 170,
-    "rads": "120mm,240mm,360mm"
+    "rads": [
+      120,
+      240,
+      360
+    ]
   },
   {
     "id": 16194,
@@ -88797,7 +89569,14 @@ export const PARTS = [
     "ff": "E-ATX",
     "maxGPU": 413,
     "maxCooler": 185,
-    "rads": "120mm,140mm,240mm,280mm,360mm,420mm"
+    "rads": [
+      120,
+      140,
+      240,
+      280,
+      360,
+      420
+    ]
   },
   {
     "id": 16195,
