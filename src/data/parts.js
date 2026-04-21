@@ -24717,7 +24717,7 @@ export const PARTS = [
     "id": 14241,
     "n": "​JONSBO ZA-360WR (Reverse) PC Case Fan,All(3)-in-One,Single Frame Unit with 3x120mm 3Pin ARGB Fans",
     "img": "https://m.media-amazon.com/images/I/61VgI-Cg7rL._SL1500_.jpg",
-    "c": "Case",
+    "c": "CaseFan",
     "b": "Jonsbo",
     "pr": 43.99,
     "msrp": 43.99,
@@ -24737,20 +24737,16 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61CmPXBy0fL._SL1500_.jpg"
     ],
     "dimensions": "4.84\"L x 14.25\"W x 1.1\"H",
-    "maxGPU": 400,
-    "maxCooler": 170,
-    "fans_inc": 6,
-    "rads": [
-      120,
-      140,
-      240,
-      280,
-      360
-    ],
     "value": 100,
-    "tg": false,
     "rgb": true,
-    "usb_c": false
+    "size": 120,
+    "pack": 3,
+    "rgbType": "ARGB",
+    "pwm": true,
+    "cfm": 65.8,
+    "rpm": 2200,
+    "noise": 33,
+    "fans_inc": 3
   },
   {
     "id": 14242,
