@@ -140,7 +140,7 @@ const BUILDS=[
 
 const fp=id=>P.find(p=>p.id===id)||SEED_PARTS.find(p=>p.id===id);
 const ic=p=>CAT[p.c]?.icon||"📦";
-const uv=(cat,f)=>[...new Set(P.filter(p=>p.c===cat&&p[f]!=null).map(p=>String(p[f])))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
+const uv=(cat,f,extract)=>{const items=P.filter(p=>p.c===cat&&p[f]!=null);const vals=extract?items.map(p=>extract(p)).filter(v=>v!=null&&v!==""):items.map(p=>String(p[f]));return [...new Set(vals)].sort((a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true}));};
 
 /* ═══ RETAILER PRICE COMPARISON COMPONENT ═══ */
 function PriceCompare({part}) {
@@ -563,7 +563,7 @@ function SearchPage({activeCat,th}){
   const sel=c=>{setCat(c);setBrands([]);setMarketplaces([]);setSf({});setQ("");setMaxPr(5000);setMinPr(0);setMinR(0);setCpO(false);};
   const catP=cat?P.filter(p=>p.c===cat):P;const allBr=[...new Set(catP.map(p=>p.b))].sort();const allMarkets=[...new Set(catP.flatMap(p=>p.deals&&typeof p.deals==="object"?Object.keys(p.deals).filter(k=>p.deals[k]&&typeof p.deals[k]==="object"&&p.deals[k].price):[]))].sort();const cols=cat?(CAT[cat]?.cols||[]):[];const prMx=Math.max(...catP.map(p=>$(p)),100);
   const togSf=(col,val)=>setSf(pv=>{const c=pv[col]||[];return{...pv,[col]:c.includes(val)?c.filter(v=>v!==val):[...c,val]};});
-  const list=useMemo(()=>{let r=catP;if(q)r=r.filter(p=>p.n.toLowerCase().includes(q.toLowerCase())||p.b.toLowerCase().includes(q.toLowerCase()));if(brands.length)r=r.filter(p=>brands.includes(p.b));if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price));r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);if(minR)r=r.filter(p=>p.r>=minR);if(cpO)r=r.filter(p=>p.cp);Object.entries(sf).forEach(([key,vals])=>{if(key.endsWith("_max")){const field=key.replace("_max","");r=r.filter(p=>p[field]==null||p[field]<=vals);}else if(Array.isArray(vals)&&vals.length){r=r.filter(p=>{const pv=String(p[key]!=null?!!p[key]?p[key]:"false":"false");return vals.includes(pv)||vals.includes(String(p[key]));});}});const [sk,sd]=sort.split("-");r=[...r].sort((a,b)=>{const va=sk==="price"?$(a):sk==="rating"?a.r:sk==="value"?(a.bench||0)/Math.max($(a)/100,1):(a.bench||0);const vb=sk==="price"?$(b):sk==="rating"?b.r:sk==="value"?(b.bench||0)/Math.max($(b)/100,1):(b.bench||0);return sd==="asc"?va-vb:vb-va;});return r;},[cat,q,brands,marketplaces,maxPr,minPr,minR,cpO,sf,sort]);
+  const list=useMemo(()=>{let r=catP;if(q)r=r.filter(p=>p.n.toLowerCase().includes(q.toLowerCase())||p.b.toLowerCase().includes(q.toLowerCase()));if(brands.length)r=r.filter(p=>brands.includes(p.b));if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price));r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);if(minR)r=r.filter(p=>p.r>=minR);if(cpO)r=r.filter(p=>p.cp);Object.entries(sf).forEach(([key,vals])=>{if(key.endsWith("_max")){const field=key.replace("_max","");r=r.filter(p=>p[field]==null||p[field]<=vals);}else if(Array.isArray(vals)&&vals.length){r=r.filter(p=>{const pv=String(p[key]!=null?!!p[key]?p[key]:"false":"false");const cfg=cat&&CAT[cat]?.filters?.[key];const ev=cfg?.extract?cfg.extract(p):null;return vals.includes(pv)||vals.includes(String(p[key]))||(ev!=null&&vals.includes(ev));});}});const [sk,sd]=sort.split("-");r=[...r].sort((a,b)=>{const va=sk==="price"?$(a):sk==="rating"?a.r:sk==="value"?(a.value!=null?a.value:(a.bench||0)/Math.max($(a)/100,1)):(a.bench||0);const vb=sk==="price"?$(b):sk==="rating"?b.r:sk==="value"?(b.value!=null?b.value:(b.bench||0)/Math.max($(b)/100,1)):(b.bench||0);return sd==="asc"?va-vb:vb-va;});return r;},[cat,q,brands,marketplaces,maxPr,minPr,minR,cpO,sf,sort]);
   const ac=[brands.length,marketplaces.length,cpO,minR,maxPr<prMx,minPr>0,...Object.values(sf).map(v=>v.length)].filter(Boolean).length;
 
   if(!cat) return <CategoryBrowse sel={sel} th={th} CATS={CATS} CAT={CAT} P={P} CatThumb={CatThumb}/>;
@@ -610,10 +610,12 @@ function SearchPage({activeCat,th}){
             </FG>;
           }
           // Default: checkbox filter
-          const opts=uv(cat,field);
+          const opts=uv(cat,field,cfg.extract);
           if(!opts.length)return null;
+          const matchVal=cfg.extract?(p,v)=>cfg.extract(p)===v:(p,v)=>String(p[field])===v;
+          const lbl=cfg.extract?(v)=>String(v):(v)=>fmt(field,isNaN(v)?v:+v);
           return <FG key={field} label={cfg.label.toUpperCase()}>
-            {(showAll[field]?opts:opts.slice(0,20)).map(v=><Chk key={v} label={fmt(field,isNaN(v)?v:+v)} checked={(sf[field]||[]).includes(v)} onChange={()=>togSf(field,v)} count={catP.filter(p=>String(p[field])===v).length}/>)}
+            {(showAll[field]?opts:opts.slice(0,20)).map(v=><Chk key={v} label={lbl(v)} checked={(sf[field]||[]).includes(v)} onChange={()=>togSf(field,v)} count={catP.filter(p=>matchVal(p,v)).length}/>)}
             {opts.length>20&&<button onClick={()=>setShowAll(s=>({...s,[field]:!s[field]}))} style={{background:'none',border:'none',padding:'4px 0',cursor:'pointer',fontFamily:'var(--mono)',fontSize:9,color:'var(--sky)',textAlign:'left',width:'100%'}}>{showAll[field]?'- show less':'+ '+(opts.length-20)+' more'}</button>}
           </FG>;
         })}
