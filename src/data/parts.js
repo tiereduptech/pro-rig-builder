@@ -91721,7 +91721,7 @@ export const PARTS = [
     },
     "coolerType": "AIO",
     "fanSize": 120,
-    "radSize": 394.97,
+    "radSize": 360,
     "noise": 28.1,
     "rpm": 2500,
     "cfm": 72.7,
