@@ -3674,7 +3674,7 @@ export const PARTS = [
     "msrp": 4499,
     "r": 4.6,
     "socket": "LGA4710",
-    "cores": 48,
+    "cores": 128,
     "threads": 96,
     "baseClock": 2.8,
     "boostClock": 4.1,
@@ -10472,7 +10472,6 @@ export const PARTS = [
     "pr": 399,
     "msrp": 399,
     "r": 4.5,
-    "ff": "Full Tower",
     "mobo": [
       "E-ATX",
       "ATX",
@@ -10500,7 +10499,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09K1YNJTR?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 7136,
@@ -10511,7 +10512,6 @@ export const PARTS = [
     "pr": 169,
     "msrp": 169,
     "r": 4.5,
-    "ff": "Full Tower",
     "mobo": [
       "E-ATX",
       "ATX",
@@ -10539,7 +10539,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FN7FJ2CM?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 7137,
@@ -10550,7 +10552,6 @@ export const PARTS = [
     "pr": 349,
     "msrp": 349,
     "r": 4.5,
-    "ff": "Full Tower",
     "mobo": [
       "E-ATX",
       "ATX",
@@ -10579,7 +10580,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0F3XP5B84?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 7138,
@@ -10590,7 +10593,6 @@ export const PARTS = [
     "pr": 139,
     "msrp": 139,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -10616,7 +10618,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09V8HNWW9?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 7139,
@@ -10627,7 +10631,6 @@ export const PARTS = [
     "pr": 129,
     "msrp": 129,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -10654,7 +10657,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CV4RYKLF?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 7140,
@@ -10665,7 +10670,6 @@ export const PARTS = [
     "pr": 104,
     "msrp": 104,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -10692,7 +10696,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DFHNV7TK?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 7141,
@@ -10703,7 +10709,6 @@ export const PARTS = [
     "pr": 139,
     "msrp": 139,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -10730,7 +10735,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0822Y6H34?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 7142,
@@ -10741,7 +10748,6 @@ export const PARTS = [
     "pr": 149,
     "msrp": 149,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -10768,7 +10774,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0D2MK6NML?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 7143,
@@ -10779,7 +10787,6 @@ export const PARTS = [
     "pr": 199,
     "msrp": 199,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -10805,7 +10812,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BGVWX5H8?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 7144,
@@ -10816,7 +10825,6 @@ export const PARTS = [
     "pr": 139,
     "msrp": 139,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "E-ATX",
       "ATX",
@@ -10844,7 +10852,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0B9WF5FW1?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 7145,
@@ -10855,7 +10865,6 @@ export const PARTS = [
     "pr": 89,
     "msrp": 89,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "E-ATX",
       "ATX",
@@ -10883,7 +10892,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0G4LH7KMM?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 7146,
@@ -10894,7 +10905,6 @@ export const PARTS = [
     "pr": 499,
     "msrp": 499,
     "r": 4.5,
-    "ff": "Full Tower",
     "mobo": [
       "E-ATX",
       "ATX",
@@ -10923,7 +10933,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09TL7Z2DZ?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 7147,
@@ -10934,7 +10946,6 @@ export const PARTS = [
     "pr": 299,
     "msrp": 299,
     "r": 4.5,
-    "ff": "Full Tower",
     "mobo": [
       "E-ATX",
       "ATX",
@@ -10963,7 +10974,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CWH71LQF?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 7148,
@@ -10974,7 +10987,6 @@ export const PARTS = [
     "pr": 94,
     "msrp": 94,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -11000,7 +11012,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0D2MK6NML?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 7149,
@@ -11011,7 +11025,6 @@ export const PARTS = [
     "pr": 149,
     "msrp": 149,
     "r": 4.5,
-    "ff": "Open Frame",
     "mobo": [
       "ATX",
       "mATX",
@@ -11038,7 +11051,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B08FSQTLNV?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mini",
+    "ff": "Mini-ITX"
   },
   {
     "id": 7150,
@@ -11049,7 +11064,6 @@ export const PARTS = [
     "pr": 129,
     "msrp": 129,
     "r": 4.5,
-    "ff": "SFF",
     "mobo": [
       "ITX"
     ],
@@ -11071,7 +11085,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09T73JG49?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mini",
+    "ff": "Mini-ITX"
   },
   {
     "id": 7151,
@@ -11082,7 +11098,6 @@ export const PARTS = [
     "pr": 129,
     "msrp": 129,
     "r": 4.5,
-    "ff": "SFF",
     "mobo": [
       "ITX"
     ],
@@ -11105,7 +11120,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FFBC7QMP?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mini",
+    "ff": "Mini-ITX"
   },
   {
     "id": 7152,
@@ -11116,7 +11133,6 @@ export const PARTS = [
     "pr": 349,
     "msrp": 349,
     "r": 4.5,
-    "ff": "SFF",
     "mobo": [
       "ITX"
     ],
@@ -11139,7 +11155,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09CF4YGJ8?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mini",
+    "ff": "Mini-ITX"
   },
   {
     "id": 7153,
@@ -11150,7 +11168,6 @@ export const PARTS = [
     "pr": 149,
     "msrp": 149,
     "r": 4.5,
-    "ff": "SFF",
     "mobo": [
       "ITX"
     ],
@@ -11169,7 +11186,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09DKPXSFJ?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mini",
+    "ff": "Mini-ITX"
   },
   {
     "id": 7154,
@@ -11180,7 +11199,6 @@ export const PARTS = [
     "pr": 249,
     "msrp": 249,
     "r": 4.5,
-    "ff": "Full Tower",
     "mobo": [
       "E-ATX",
       "ATX",
@@ -11209,7 +11227,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B08146GB6Y?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Full",
+    "ff": "E-ATX"
   },
   {
     "id": 7155,
@@ -14391,7 +14411,6 @@ export const PARTS = [
     "pr": 109,
     "msrp": 109,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -14417,7 +14436,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CZVN6KY5?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 8065,
@@ -14428,7 +14449,6 @@ export const PARTS = [
     "pr": 99,
     "msrp": 99,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -14455,7 +14475,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DYM1C6LB?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 8066,
@@ -14466,7 +14488,6 @@ export const PARTS = [
     "pr": 129,
     "msrp": 129,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "E-ATX",
       "ATX",
@@ -14494,7 +14515,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BMPD1CVP?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 8067,
@@ -14505,7 +14528,6 @@ export const PARTS = [
     "pr": 109,
     "msrp": 109,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -14532,7 +14554,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BP4B8QX3?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 8068,
@@ -14543,7 +14567,6 @@ export const PARTS = [
     "pr": 89,
     "msrp": 89,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -14570,7 +14593,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BN3SY5XW?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 8069,
@@ -14581,7 +14606,6 @@ export const PARTS = [
     "pr": 159,
     "msrp": 159,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "E-ATX",
       "ATX",
@@ -14609,7 +14633,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DQPQ5KN7?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 8070,
@@ -14620,7 +14646,6 @@ export const PARTS = [
     "pr": 139,
     "msrp": 139,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -14646,7 +14671,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CTR45PV8?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 8071,
@@ -14657,7 +14684,6 @@ export const PARTS = [
     "pr": 64,
     "msrp": 64,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -14684,7 +14710,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FX68NXSN?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 8072,
@@ -14695,7 +14723,6 @@ export const PARTS = [
     "pr": 79,
     "msrp": 79,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -14721,7 +14748,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B08C2XKPNK?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 8073,
@@ -14732,7 +14761,6 @@ export const PARTS = [
     "pr": 69,
     "msrp": 69,
     "r": 4.5,
-    "ff": "Mid Tower",
     "mobo": [
       "ATX",
       "mATX",
@@ -14759,7 +14787,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0F9WB5Y9R?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 8074,
@@ -15694,7 +15724,8 @@ export const PARTS = [
     "weight": "14.46 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 3
   },
   {
     "id": 14045,
@@ -15723,7 +15754,8 @@ export const PARTS = [
     "upc": "884102095313884102038006",
     "mpn": "Q300L",
     "weight": "480 Grams",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14046,
@@ -15782,7 +15814,8 @@ export const PARTS = [
     "weight": "7.68 Kilograms",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 3
   },
   {
     "id": 14048,
@@ -15840,7 +15873,8 @@ export const PARTS = [
     "weight": "5.7 Kilograms",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 6
   },
   {
     "id": 14050,
@@ -15870,7 +15904,8 @@ export const PARTS = [
     "weight": "8 Kilograms",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 6
   },
   {
     "id": 14051,
@@ -15898,7 +15933,9 @@ export const PARTS = [
     "upc": "840353052642",
     "mpn": "V100 Mini",
     "tg": true,
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid",
+    "fans_inc": 4
   },
   {
     "id": 14052,
@@ -15963,7 +16000,8 @@ export const PARTS = [
     "mpn": "North Charcoal Black",
     "weight": "9.5 Kilograms",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "tg": false
   },
   {
     "id": 14054,
@@ -16026,7 +16064,10 @@ export const PARTS = [
     "upc": "810074844161",
     "mpn": "H6 Flow RGB",
     "weight": "9400 Grams",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX",
+    "tg": true,
+    "fans_inc": 3
   },
   {
     "id": 14056,
@@ -16056,7 +16097,8 @@ export const PARTS = [
     "weight": "17.77 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 6
   },
   {
     "id": 14057,
@@ -16113,7 +16155,8 @@ export const PARTS = [
     "upc": "843276106096",
     "mpn": "Ridge",
     "weight": "5.5 Kilograms",
-    "ff": "ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini"
   },
   {
     "id": 14059,
@@ -16172,7 +16215,8 @@ export const PARTS = [
     "weight": "15 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 7
   },
   {
     "id": 14061,
@@ -16199,7 +16243,9 @@ export const PARTS = [
     ],
     "mpn": "F600",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "tg": true,
+    "fans_inc": 7
   },
   {
     "id": 14062,
@@ -16227,7 +16273,8 @@ export const PARTS = [
     "upc": "850059070284",
     "mpn": "Classico MAX",
     "weight": "8.96 Kilograms",
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "tower": "Full"
   },
   {
     "id": 14063,
@@ -16256,7 +16303,8 @@ export const PARTS = [
     "mpn": "O11D EVO RGB",
     "weight": "32.63 Pounds",
     "tg": true,
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "tower": "Full"
   },
   {
     "id": 14064,
@@ -16284,7 +16332,8 @@ export const PARTS = [
     "mpn": "621",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 4
   },
   {
     "id": 14065,
@@ -16313,7 +16362,8 @@ export const PARTS = [
     "mpn": "Lancool 207 Black",
     "weight": "19.95 Pounds",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "tower": "Mid"
   },
   {
     "id": 14066,
@@ -16347,7 +16397,9 @@ export const PARTS = [
     "mpn": "View 170 TG ARGB",
     "weight": "10.25 Pounds",
     "tg": true,
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid",
+    "fans_inc": 3
   },
   {
     "id": 14067,
@@ -16383,7 +16435,8 @@ export const PARTS = [
     "weight": "12.5 Kilograms",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 1
   },
   {
     "id": 14068,
@@ -16417,7 +16470,8 @@ export const PARTS = [
     "upc": "810074848046",
     "mpn": "NZXT H3",
     "weight": "4800 Grams",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14069,
@@ -16445,7 +16499,8 @@ export const PARTS = [
     "upc": "840353046429",
     "mpn": "A3X.US",
     "weight": "11.02 Pounds",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14070,
@@ -16478,7 +16533,9 @@ export const PARTS = [
     ],
     "upc": "840440407096",
     "mpn": "3500X RS-R ARGB",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX",
+    "tg": true
   },
   {
     "id": 14071,
@@ -16511,7 +16568,8 @@ export const PARTS = [
     "upc": "810074848404",
     "mpn": "NZXT H2",
     "weight": "4.55 Kilograms",
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini"
   },
   {
     "id": 14072,
@@ -16579,7 +16637,9 @@ export const PARTS = [
     "upc": "810074844130",
     "mpn": "H6 Flow",
     "weight": "9400 Grams",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX",
+    "tg": true
   },
   {
     "id": 14074,
@@ -16643,7 +16703,9 @@ export const PARTS = [
     "upc": "810074844147",
     "mpn": "H6 Flow",
     "weight": "9400 Grams",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX",
+    "tg": true
   },
   {
     "id": 14076,
@@ -16672,7 +16734,8 @@ export const PARTS = [
     "weight": "5420 Grams",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 6
   },
   {
     "id": 14077,
@@ -16761,7 +16824,8 @@ export const PARTS = [
     "weight": "4900 Grams",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 4
   },
   {
     "id": 14080,
@@ -16903,7 +16967,8 @@ export const PARTS = [
     "upc": "197105675377195553771801",
     "mpn": "AP201",
     "weight": "12.7 Pounds",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14086,
@@ -16967,7 +17032,8 @@ export const PARTS = [
     "weight": "14 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "fans_inc": 3
   },
   {
     "id": 14088,
@@ -16996,7 +17062,8 @@ export const PARTS = [
     "mpn": "Aqua 3",
     "weight": "4.17 Kilograms",
     "tg": true,
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14089,
@@ -17060,7 +17127,8 @@ export const PARTS = [
     "upc": "840440496571",
     "mpn": "FRAME 4000D RS",
     "weight": "8.2 Kilograms",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14091,
@@ -17088,7 +17156,8 @@ export const PARTS = [
     ],
     "mpn": "Cypress 3 Wood",
     "weight": "4.3 Kilograms",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14092,
@@ -17152,7 +17221,9 @@ export const PARTS = [
     "mpn": "V3",
     "weight": "4.88 Kilograms",
     "tg": true,
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid",
+    "fans_inc": 3
   },
   {
     "id": 14094,
@@ -17181,7 +17252,8 @@ export const PARTS = [
     "mpn": "O11DEXL-X_US",
     "weight": "43 Pounds",
     "tg": true,
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "tower": "Full"
   },
   {
     "id": 14095,
@@ -17208,7 +17280,8 @@ export const PARTS = [
     ],
     "mpn": "D32",
     "weight": "5.44 Kilograms",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14096,
@@ -17243,7 +17316,9 @@ export const PARTS = [
     "mpn": "View 380 Black",
     "weight": "15.28 Pounds",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "tower": "Mid",
+    "fans_inc": 4
   },
   {
     "id": 14097,
@@ -17306,7 +17381,8 @@ export const PARTS = [
     "weight": "12600 Grams",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 1
   },
   {
     "id": 14099,
@@ -17334,7 +17410,9 @@ export const PARTS = [
     ],
     "mpn": "G8",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX",
+    "fans_inc": 6
   },
   {
     "id": 14100,
@@ -17364,7 +17442,9 @@ export const PARTS = [
     "mpn": "K9",
     "weight": "13.5 Pounds",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX",
+    "fans_inc": 9
   },
   {
     "id": 14101,
@@ -17397,7 +17477,9 @@ export const PARTS = [
     ],
     "upc": "840440402770",
     "mpn": "FRAME 4500X RS-R",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX",
+    "tg": true
   },
   {
     "id": 14102,
@@ -17451,7 +17533,8 @@ export const PARTS = [
     "mpn": "P4",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 7
   },
   {
     "id": 14104,
@@ -17538,7 +17621,9 @@ export const PARTS = [
     ],
     "mpn": "North XL Momentum",
     "weight": "26.2 Pounds",
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "tower": "Full",
+    "tg": true
   },
   {
     "id": 14107,
@@ -17599,7 +17684,8 @@ export const PARTS = [
     "mpn": "North Chalk White",
     "weight": "9.5 Kilograms",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "tg": false
   },
   {
     "id": 14109,
@@ -17722,7 +17808,8 @@ export const PARTS = [
     "upc": "843276103989",
     "mpn": "Terra Graphite",
     "weight": "4 Kilograms",
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini"
   },
   {
     "id": 14113,
@@ -17873,7 +17960,8 @@ export const PARTS = [
     "weight": "14 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "fans_inc": 3
   },
   {
     "id": 14118,
@@ -17908,7 +17996,8 @@ export const PARTS = [
     "weight": "14 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "fans_inc": 3
   },
   {
     "id": 14119,
@@ -17938,7 +18027,8 @@ export const PARTS = [
     "weight": "10.1 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 3
   },
   {
     "id": 14120,
@@ -17995,7 +18085,8 @@ export const PARTS = [
     "weight": "15 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 4
   },
   {
     "id": 14122,
@@ -18117,7 +18208,8 @@ export const PARTS = [
     ],
     "mpn": "K6",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 6
   },
   {
     "id": 14126,
@@ -18144,7 +18236,9 @@ export const PARTS = [
     ],
     "mpn": "DB330M PC CASE",
     "tg": true,
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid",
+    "fans_inc": 3
   },
   {
     "id": 14127,
@@ -18260,7 +18354,8 @@ export const PARTS = [
     ],
     "mpn": "N3",
     "weight": "3900 Grams",
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini"
   },
   {
     "id": 14131,
@@ -18290,7 +18385,8 @@ export const PARTS = [
     "mpn": "H1",
     "weight": "11 Pounds",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 7
   },
   {
     "id": 14132,
@@ -18374,7 +18470,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61-BNMP9LpL._AC_SL1280_.jpg"
     ],
     "mpn": "C6",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid",
+    "tg": false
   },
   {
     "id": 14135,
@@ -18402,7 +18500,8 @@ export const PARTS = [
     ],
     "mpn": "N2 Black",
     "weight": "3.65 Kilograms",
-    "ff": "ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini"
   },
   {
     "id": 14136,
@@ -18436,7 +18535,8 @@ export const PARTS = [
     "upc": "840440491279",
     "mpn": "FRAME 5000D RS",
     "weight": "12.7 Kilograms",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14137,
@@ -18465,7 +18565,8 @@ export const PARTS = [
     "upc": "840440406556",
     "mpn": "AIR 5400 RS-R ARGB",
     "weight": "13.92 Kilograms",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14138,
@@ -18491,7 +18592,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61ofJL3J5fL._AC_SL1500_.jpg"
     ],
     "mpn": "D32",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14139,
@@ -18547,7 +18649,8 @@ export const PARTS = [
     "mpn": "Elite 301 Lite",
     "weight": "9.8 Pounds",
     "tg": true,
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14141,
@@ -18574,7 +18677,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81MVmUxKb6L._AC_SL1500_.jpg"
     ],
     "mpn": "F100",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid",
+    "fans_inc": 3
   },
   {
     "id": 14142,
@@ -18632,7 +18737,8 @@ export const PARTS = [
     ],
     "upc": "843276107185",
     "mpn": "Meshify 3 Ambience Pro RGB Black TG Light Tint",
-    "weight": "8.5 Kilograms"
+    "weight": "8.5 Kilograms",
+    "tg": true
   },
   {
     "id": 14144,
@@ -18659,7 +18765,8 @@ export const PARTS = [
     ],
     "upc": "843276107239",
     "mpn": "Meshify 3 XL Ambience Pro RGB Black TG Light Tint",
-    "weight": "13300 Grams"
+    "weight": "13300 Grams",
+    "tg": true
   },
   {
     "id": 14145,
@@ -18687,7 +18794,8 @@ export const PARTS = [
     "upc": "761345102537",
     "mpn": "Flux M",
     "weight": "14 Pounds",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14146,
@@ -18716,7 +18824,8 @@ export const PARTS = [
     "upc": "840440406570",
     "mpn": "AIR 5400 LX-R RGB iCUE LINK",
     "weight": "13.92 Kilograms",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX"
   },
   {
     "id": 14147,
@@ -18772,7 +18881,9 @@ export const PARTS = [
     ],
     "mpn": "WD200 PC CASE",
     "weight": "10.8 Pounds",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid",
+    "fans_inc": 1
   },
   {
     "id": 14149,
@@ -18800,7 +18911,9 @@ export const PARTS = [
     ],
     "upc": "840440402794",
     "mpn": "FRAME 4500X LX-R",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX",
+    "tg": true
   },
   {
     "id": 14150,
@@ -18856,7 +18969,8 @@ export const PARTS = [
     ],
     "mpn": "MiniArt 4",
     "weight": "4 Kilograms",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14152,
@@ -18941,7 +19055,8 @@ export const PARTS = [
     "mpn": "680X",
     "weight": "25.57 Pounds",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "tower": "Mid"
   },
   {
     "id": 14155,
@@ -19066,7 +19181,8 @@ export const PARTS = [
     "mpn": "North XL",
     "weight": "5 Kilograms",
     "tower": "Full",
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "tg": false
   },
   {
     "id": 14159,
@@ -19095,7 +19211,8 @@ export const PARTS = [
     "upc": "884102079061",
     "mpn": "NR200 White",
     "weight": "4.8 Kilograms",
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini"
   },
   {
     "id": 14160,
@@ -19124,7 +19241,8 @@ export const PARTS = [
     "upc": "884102079054",
     "mpn": "NR200 Black",
     "weight": "4.8 Kilograms",
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini"
   },
   {
     "id": 14161,
@@ -19181,7 +19299,8 @@ export const PARTS = [
     "upc": "710931111026",
     "mpn": "Pure Base 600",
     "weight": "7440 Grams",
-    "ff": "ATX"
+    "ff": "ATX",
+    "tower": "Mid"
   },
   {
     "id": 14163,
@@ -19268,7 +19387,9 @@ export const PARTS = [
     "upc": "844761017415",
     "mpn": "SilverStone Technology Ultra Compact Mini-ITX Computer Case with Mesh Front Panel",
     "weight": "5.4 Pounds",
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini",
+    "tg": false
   },
   {
     "id": 14166,
@@ -19297,7 +19418,9 @@ export const PARTS = [
     "mpn": "BGW39",
     "weight": "13.2 Kilograms",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "tower": "Mid",
+    "fans_inc": 2
   },
   {
     "id": 14167,
@@ -19325,7 +19448,8 @@ export const PARTS = [
     "upc": "843276106102827676009249",
     "mpn": "Ridge White",
     "weight": "5.5 Kilograms",
-    "ff": "ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini"
   },
   {
     "id": 14168,
@@ -19352,7 +19476,9 @@ export const PARTS = [
     ],
     "mpn": "SKY3B",
     "weight": "18.41 Pounds",
-    "ff": "ATX"
+    "ff": "ATX",
+    "tower": "Mid",
+    "tg": true
   },
   {
     "id": 14170,
@@ -19469,7 +19595,8 @@ export const PARTS = [
     ],
     "mpn": "MATX Case",
     "weight": "2.2 Kilograms",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14175,
@@ -19498,7 +19625,8 @@ export const PARTS = [
     "weight": "9.5 Kilograms",
     "tower": "Mid",
     "tg": true,
-    "ff": "mATX"
+    "ff": "mATX",
+    "fans_inc": 4
   },
   {
     "id": 14176,
@@ -19556,7 +19684,8 @@ export const PARTS = [
     "upc": "848604041797",
     "mpn": "Revolt 3",
     "weight": "11 Pounds",
-    "ff": "ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini"
   },
   {
     "id": 14178,
@@ -19710,7 +19839,9 @@ export const PARTS = [
     "upc": "884102099786",
     "mpn": "HAF 700",
     "weight": "19.6 Kilograms",
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "tower": "Full",
+    "tg": false
   },
   {
     "id": 14183,
@@ -19738,7 +19869,8 @@ export const PARTS = [
     "mpn": "M1",
     "weight": "5.85 Kilograms",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 4
   },
   {
     "id": 14184,
@@ -19971,7 +20103,8 @@ export const PARTS = [
     "weight": "8.1 Kilograms",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 3
   },
   {
     "id": 14192,
@@ -20001,7 +20134,8 @@ export const PARTS = [
     "mpn": "MAG PANO M100R PZ",
     "weight": "11.75 Kilograms",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14193,
@@ -20056,7 +20190,8 @@ export const PARTS = [
     ],
     "upc": "840353052680",
     "mpn": "VG4-5-V4W",
-    "ff": "ATX"
+    "ff": "ATX",
+    "tower": "Mid"
   },
   {
     "id": 14195,
@@ -20108,7 +20243,8 @@ export const PARTS = [
     ],
     "mpn": "Mood Black",
     "weight": "4.6 Kilograms",
-    "ff": "ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini"
   },
   {
     "id": 14197,
@@ -20136,7 +20272,8 @@ export const PARTS = [
     "upc": "197105338500",
     "mpn": "PA602 ProArt Case",
     "weight": "35.5 Pounds",
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "tower": "Full"
   },
   {
     "id": 14198,
@@ -20164,7 +20301,8 @@ export const PARTS = [
     ],
     "mpn": "Mini PC",
     "weight": "1.14 Kilograms",
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini"
   },
   {
     "id": 14199,
@@ -20308,7 +20446,8 @@ export const PARTS = [
     ],
     "mpn": "Mirage 4",
     "weight": "4.45 Kilograms",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14204,
@@ -20335,7 +20474,8 @@ export const PARTS = [
     ],
     "mpn": "Cypress 3 ARGB",
     "weight": "4.36 Kilograms",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14205,
@@ -20363,7 +20503,9 @@ export const PARTS = [
     "mpn": "C275P PC CASE",
     "weight": "7.3 Pounds",
     "tg": true,
-    "ff": "ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini",
+    "fans_inc": 3
   },
   {
     "id": 14206,
@@ -20420,7 +20562,8 @@ export const PARTS = [
     ],
     "mpn": "CHOPIN MAX.SILVER",
     "weight": "4.85 Pounds",
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini"
   },
   {
     "id": 14208,
@@ -20449,7 +20592,9 @@ export const PARTS = [
     "upc": "840006682189",
     "mpn": "CORSAIR 9000D RGB AIRFLOW",
     "weight": "29.1 Kilograms",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "E-ATX",
+    "fans_inc": 4
   },
   {
     "id": 14209,
@@ -20534,7 +20679,8 @@ export const PARTS = [
     ],
     "upc": "843276107208",
     "mpn": "Meshify 3 Ambience Pro RGB White TG Clear Tint",
-    "weight": "11.05 Kilograms"
+    "weight": "11.05 Kilograms",
+    "tg": true
   },
   {
     "id": 14212,
@@ -20563,7 +20709,8 @@ export const PARTS = [
     "mpn": "Aqua 3 Air",
     "weight": "4.2 Kilograms",
     "tg": true,
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14213,
@@ -20648,7 +20795,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71hbSrJhcmL._AC_SL1500_.jpg"
     ],
     "mpn": "C6-ITX",
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini",
+    "tg": false
   },
   {
     "id": 14216,
@@ -20675,7 +20824,8 @@ export const PARTS = [
     ],
     "mpn": "3.ATX",
     "weight": "2 Kilograms",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14217,
@@ -20703,7 +20853,8 @@ export const PARTS = [
     "upc": "850050943952",
     "mpn": "M06",
     "tower": "Mid",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tg": false
   },
   {
     "id": 14218,
@@ -20788,7 +20939,8 @@ export const PARTS = [
     "mpn": "SAMA Case V50",
     "weight": "11.46 Pounds",
     "tower": "Mid",
-    "tg": true
+    "tg": true,
+    "ff": "ATX"
   },
   {
     "id": 14221,
@@ -20817,7 +20969,8 @@ export const PARTS = [
     "weight": "7.35 Kilograms",
     "tower": "Full",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 6
   },
   {
     "id": 14222,
@@ -20874,7 +21027,8 @@ export const PARTS = [
     "upc": "844761024802",
     "mpn": "SUGO 16",
     "weight": "1 Pounds",
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini"
   },
   {
     "id": 14224,
@@ -20903,7 +21057,8 @@ export const PARTS = [
     "mpn": "LAN217INFX",
     "weight": "10 Kilograms",
     "tower": "Mid",
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 3
   },
   {
     "id": 14225,
@@ -20988,7 +21143,7 @@ export const PARTS = [
     ],
     "mpn": "TK-0",
     "tower": "Mini",
-    "ff": "ITX"
+    "ff": "Mini-ITX"
   },
   {
     "id": 14228,
@@ -21079,7 +21234,9 @@ export const PARTS = [
     "upc": "840440407119",
     "mpn": "3500X LX-R RGB",
     "weight": "9.3 Kilograms",
-    "tower": "Mid"
+    "tower": "Mid",
+    "ff": "ATX",
+    "tg": true
   },
   {
     "id": 14231,
@@ -21164,7 +21321,9 @@ export const PARTS = [
     ],
     "mpn": "X5M-Black",
     "weight": "14.3 Pounds",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid",
+    "fans_inc": 4
   },
   {
     "id": 14234,
@@ -21447,7 +21606,8 @@ export const PARTS = [
     ],
     "mpn": "FLOATRON F1",
     "weight": "5.26 Kilograms",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14244,
@@ -21503,7 +21663,8 @@ export const PARTS = [
     ],
     "mpn": "L280M",
     "weight": "16.53 Pounds",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14246,
@@ -21591,7 +21752,8 @@ export const PARTS = [
     "mpn": "ATHENA M4M WOOD",
     "weight": "5.62 Kilograms",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "tower": "Mid"
   },
   {
     "id": 14249,
@@ -21620,7 +21782,8 @@ export const PARTS = [
     "weight": "18.9 Pounds",
     "tower": "Mid",
     "tg": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fans_inc": 5
   },
   {
     "id": 14250,
@@ -21647,7 +21810,8 @@ export const PARTS = [
     ],
     "mpn": "PS091",
     "weight": "3.38 Kilograms",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14251,
@@ -21731,7 +21895,9 @@ export const PARTS = [
     "upc": "884102131684",
     "mpn": "NR200P V3",
     "weight": "8.82 Pounds",
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini",
+    "tg": false
   },
   {
     "id": 14254,
@@ -21758,7 +21924,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61dtntt7hOL._AC_SL1500_.jpg"
     ],
     "mpn": "D200",
-    "ff": "ATX"
+    "ff": "ATX",
+    "tower": "Mid"
   },
   {
     "id": 14255,
@@ -21813,7 +21980,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71u3-s9W-+L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/813qsTkXxvL._AC_SL1500_.jpg"
     ],
-    "ff": "ATX"
+    "ff": "ATX",
+    "tower": "Mid"
   },
   {
     "id": 14257,
@@ -21871,7 +22039,8 @@ export const PARTS = [
     "mpn": "Epoch",
     "weight": "9.36 Kilograms",
     "tg": true,
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14259,
@@ -21899,7 +22068,8 @@ export const PARTS = [
     "upc": "840353044890",
     "mpn": "O11 Vision",
     "tg": true,
-    "ff": "E-ATX"
+    "ff": "E-ATX",
+    "tower": "Full"
   },
   {
     "id": 14260,
@@ -21926,7 +22096,9 @@ export const PARTS = [
     ],
     "mpn": "M1",
     "tg": true,
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid",
+    "fans_inc": 3
   },
   {
     "id": 14261,
@@ -21983,7 +22155,8 @@ export const PARTS = [
     "mpn": "Epoch",
     "weight": "9.41 Kilograms",
     "tg": true,
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14263,
@@ -22072,7 +22245,9 @@ export const PARTS = [
     "upc": "840480300197",
     "mpn": "View 600 TG Black",
     "weight": "32 Pounds",
-    "tower": "Full"
+    "tower": "Full",
+    "ff": "E-ATX",
+    "tg": true
   },
   {
     "id": 14266,
@@ -22099,7 +22274,9 @@ export const PARTS = [
     ],
     "mpn": "L300",
     "weight": "5.3 Pounds",
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini",
+    "tg": false
   },
   {
     "id": 14267,
@@ -22125,7 +22302,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71sEPR9+GpL._AC_SL1500_.jpg"
     ],
     "mpn": "T9",
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini",
+    "tg": false
   },
   {
     "id": 14268,
@@ -22267,7 +22446,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71v6j+mcArL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71bnxjFhqVL._AC_SL1500_.jpg"
     ],
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini",
+    "fans_inc": 2
   },
   {
     "id": 14273,
@@ -22293,7 +22474,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71Q5JxUWPkL._AC_SL1500_.jpg"
     ],
     "mpn": "N10",
-    "ff": "Mini-ITX"
+    "ff": "Mini-ITX",
+    "tower": "Mini"
   },
   {
     "id": 14274,
@@ -22320,7 +22502,8 @@ export const PARTS = [
     ],
     "upc": "810216230173",
     "mpn": "Lian Li O11 Dynamic EVO RGB",
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14275,
@@ -22348,7 +22531,8 @@ export const PARTS = [
     "mpn": "Cubix-G",
     "weight": "7.1 Pounds",
     "tg": true,
-    "ff": "mATX"
+    "ff": "mATX",
+    "tower": "Mid"
   },
   {
     "id": 14276,
@@ -30087,36 +30271,6 @@ export const PARTS = [
     "color": "Black"
   },
   {
-    "id": 14535,
-    "n": "Tower Desktop ECT1250 - Intel Core Ultra 7-265 Processor, UHD Graphics, 32GB Memory",
-    "img": "https://m.media-amazon.com/images/I/71M7tXAPK7L._AC_SL1500_.jpg",
-    "c": "CPU",
-    "b": "Dell",
-    "pr": 905.99,
-    "msrp": 905.99,
-    "r": 4.4,
-    "asin": "B0F3P5NF56",
-    "reviews": 259,
-    "deals": {
-      "amazon": {
-        "price": 905.99,
-        "url": "https://www.amazon.com/dp/B0F3P5NF56?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71LZop2mF+L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71zRF9KckUL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71cTfxPgabL._AC_SL1500_.jpg"
-    ],
-    "upc": "884116429432",
-    "mpn": "DECT1250-7432BLK-PUS",
-    "weight": "14.65 Pounds",
-    "socket": "LGA ",
-    "cores": 20,
-    "baseClock": 2.4
-  },
-  {
     "id": 14536,
     "n": "Ryzen™ 7 9850X3D Desktop Processor",
     "img": "https://m.media-amazon.com/images/I/71KDfkysoeL._AC_SL1500_.jpg",
@@ -30149,7 +30303,10 @@ export const PARTS = [
     "weight": "0.2 Pounds",
     "socket": "AM5",
     "cores": 8,
-    "baseClock": 4.7
+    "baseClock": 4.7,
+    "tdp": 120,
+    "threads": 16,
+    "bench": 75
   },
   {
     "id": 14537,
@@ -30177,98 +30334,11 @@ export const PARTS = [
     "upc": "730143317160",
     "socket": "AM5",
     "model": "7600X3D",
-    "series": "Ryzen 5"
-  },
-  {
-    "id": 14538,
-    "n": "Slim Desktop ECS1250 - Intel Core Ultra 5-225 Processor, UHD Graphics, 16GB Memory",
-    "img": "https://m.media-amazon.com/images/I/71EOWZUy29L._AC_SL1500_.jpg",
-    "c": "CPU",
-    "b": "Dell",
-    "pr": 638,
-    "msrp": 638,
-    "r": 4.5,
-    "asin": "B0F2TM49KQ",
-    "reviews": 151,
-    "deals": {
-      "amazon": {
-        "price": 638,
-        "url": "https://www.amazon.com/dp/B0F2TM49KQ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71DedatIKTL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71HoKDhUW1L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/81sEcjmhrvL._AC_SL1500_.jpg"
-    ],
-    "upc": "884116488194",
-    "mpn": "DECS1250-5194BLK-PUS",
-    "weight": "7.69 Pounds",
-    "socket": "LGA1700",
-    "cores": 10,
-    "baseClock": 2.7
-  },
-  {
-    "id": 14539,
-    "n": "OmniBook AI Laptop Computer | Intel Ultra 9 285H | 32GB RAM, 1TB SSD | 16” Touchscreen | Long Battery Life and Fast C...",
-    "img": "https://m.media-amazon.com/images/I/719Ea+bm3BL._AC_SL1500_.jpg",
-    "c": "CPU",
-    "b": "HP",
-    "pr": 1389,
-    "msrp": 1999,
-    "r": 4.2,
-    "asin": "B0GKNRNYT5",
-    "reviews": 56,
-    "deals": {
-      "amazon": {
-        "price": 1389,
-        "url": "https://www.amazon.com/dp/B0GKNRNYT5?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "discount": 31,
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71vdmgsyu4L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/91nAbczDUqL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61xK1fbVmwL._AC_SL1500_.jpg"
-    ],
-    "upc": "197497696561",
-    "mpn": "5",
-    "weight": "4.3 Pounds",
-    "cores": 16,
-    "baseClock": 2.9
-  },
-  {
-    "id": 14540,
-    "n": "GT13 PRO Mini PC, Intel Core i9-13900HK (14C/20T, up to 5.4GHz)",
-    "img": "https://m.media-amazon.com/images/I/61bratqsBqL._AC_SL1454_.jpg",
-    "c": "CPU",
-    "b": "GEEKOM",
-    "pr": 709,
-    "msrp": 709,
-    "r": 4.6,
-    "asin": "B0G1LQZ1YZ",
-    "reviews": 6,
-    "deals": {
-      "amazon": {
-        "price": 709,
-        "url": "https://www.amazon.com/dp/B0G1LQZ1YZ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/81Fx89QzHbL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/712dfUf-PpL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71Cr4g4l19L._AC_SL1500_.jpg"
-    ],
-    "upc": "810190723555",
-    "mpn": "GT13PROI913900HK-161TB",
-    "socket": "BGA",
-    "cores": 14,
-    "baseClock": 5.4,
-    "model": "13900HK",
-    "series": "Core i9"
+    "series": "Ryzen 5",
+    "tdp": 65,
+    "cores": 6,
+    "threads": 12,
+    "bench": 54
   },
   {
     "id": 14541,
@@ -30300,7 +30370,10 @@ export const PARTS = [
     "cores": 8,
     "baseClock": 4,
     "model": "1600X",
-    "series": "Ryzen 5"
+    "series": "Ryzen 5",
+    "tdp": 95,
+    "threads": 12,
+    "bench": 12
   },
   {
     "id": 14542,
@@ -30329,10 +30402,13 @@ export const PARTS = [
     "mpn": "BX8071512600K",
     "weight": "0.04 Kilograms",
     "socket": "LGA1700",
-    "cores": 1,
+    "cores": 10,
     "baseClock": 3.7,
     "model": "12600K",
-    "series": "Core i5"
+    "series": "Core i5",
+    "tdp": 125,
+    "threads": 16,
+    "bench": 46
   },
   {
     "id": 14543,
@@ -30363,7 +30439,10 @@ export const PARTS = [
     "cores": 8,
     "baseClock": 3.4,
     "model": "13700KF",
-    "series": "Core i7"
+    "series": "Core i7",
+    "tdp": 125,
+    "threads": 24,
+    "bench": 68
   },
   {
     "id": 14544,
@@ -30393,42 +30472,13 @@ export const PARTS = [
     "mpn": "BX8071512600KF",
     "weight": "0.5 Grams",
     "socket": "LGA1700",
-    "cores": 1,
+    "cores": 10,
     "baseClock": 2.8,
     "model": "12600KF",
-    "series": "Core i5"
-  },
-  {
-    "id": 14545,
-    "n": "Azure 3 Desktop PC, Ryzen 5 9600X 3.9 Ghz (5.4GHz Turbo), NVIDIA RTX 5060 Ti 16GB",
-    "img": "https://m.media-amazon.com/images/I/81s0vVbPHdL._AC_SL1500_.jpg",
-    "c": "CPU",
-    "b": "Skytech Gaming",
-    "pr": 1349.99,
-    "msrp": 1349.99,
-    "r": 4.5,
-    "asin": "B0F4Z1JXLP",
-    "reviews": 374,
-    "deals": {
-      "amazon": {
-        "price": 1349.99,
-        "url": "https://www.amazon.com/dp/B0F4Z1JXLP?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/81s0vVbPHdL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/819Rv-pcDzL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/81PdwrHOwRL._AC_SL1500_.jpg"
-    ],
-    "upc": "810123735921",
-    "mpn": "ST-AZURE3-1910-B-AM",
-    "weight": "13.9 Kilograms",
-    "socket": "AM5",
-    "cores": 6,
-    "baseClock": 3.9,
-    "model": "9600X",
-    "series": "Ryzen 5"
+    "series": "Core i5",
+    "tdp": 125,
+    "threads": 16,
+    "bench": 46
   },
   {
     "id": 14546,
@@ -30459,7 +30509,10 @@ export const PARTS = [
     "weight": "8 Ounces",
     "socket": "AM5",
     "cores": 6,
-    "baseClock": 4700
+    "baseClock": 4700,
+    "tdp": 65,
+    "threads": 12,
+    "bench": 42
   },
   {
     "id": 14547,
@@ -30490,39 +30543,10 @@ export const PARTS = [
     "cores": 24,
     "baseClock": 2.2,
     "model": "13900KF",
-    "series": "Core i9"
-  },
-  {
-    "id": 14548,
-    "n": "Azure 3 Desktop PC, Ryzen 7 7700X 4.5 GHz (5.4GHz), NVIDIA RTX 4060 8GB",
-    "img": "https://m.media-amazon.com/images/I/71gtoidr0kL._AC_SL1200_.jpg",
-    "c": "CPU",
-    "b": "Skytech Gaming",
-    "pr": 1429.99,
-    "msrp": 1429.99,
-    "r": 4.3,
-    "asin": "B0F4DJM7PJ",
-    "reviews": 228,
-    "deals": {
-      "amazon": {
-        "price": 1429.99,
-        "url": "https://www.amazon.com/dp/B0F4DJM7PJ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71VFcZuaStL._AC_SL1200_.jpg",
-      "https://m.media-amazon.com/images/I/61DHsYof8IL._AC_SL1200_.jpg",
-      "https://m.media-amazon.com/images/I/611PSmdbxTL._AC_SL1000_.jpg"
-    ],
-    "upc": "810123735136",
-    "mpn": "ST-AZURE3-1831-W-AM",
-    "weight": "14.74 Kilograms",
-    "socket": "AM5",
-    "cores": 8,
-    "baseClock": 4.5,
-    "model": "7700X",
-    "series": "Ryzen 7"
+    "series": "Core i9",
+    "tdp": 125,
+    "threads": 32,
+    "bench": 82
   },
   {
     "id": 14549,
@@ -30551,7 +30575,10 @@ export const PARTS = [
     "weight": "0.44 Kilograms",
     "socket": "LGA1700",
     "cores": 12,
-    "baseClock": 4.9
+    "baseClock": 4.9,
+    "tdp": 65,
+    "threads": 20,
+    "bench": 50
   },
   {
     "id": 14550,
@@ -30580,7 +30607,10 @@ export const PARTS = [
     "weight": "8 Ounces",
     "socket": "AM5",
     "cores": 8,
-    "baseClock": 5000
+    "baseClock": 5000,
+    "tdp": 65,
+    "threads": 16,
+    "bench": 56
   },
   {
     "id": 14551,
@@ -30611,7 +30641,10 @@ export const PARTS = [
     "cores": 10,
     "baseClock": 1.8,
     "model": "14400",
-    "series": "Core I5"
+    "series": "Core I5",
+    "tdp": 65,
+    "threads": 16,
+    "bench": 42
   },
   {
     "id": 14552,
@@ -30642,7 +30675,10 @@ export const PARTS = [
     "weight": "449 Grams",
     "socket": "LGA1700",
     "cores": 6,
-    "baseClock": 3
+    "baseClock": 3,
+    "tdp": 65,
+    "threads": 12,
+    "bench": 32
   },
   {
     "id": 14553,
@@ -30671,7 +30707,11 @@ export const PARTS = [
     "mpn": "9950X3DMAGX870ETMKWF",
     "socket": "AM5",
     "model": "9950X3D",
-    "series": "Ryzen 9"
+    "series": "Ryzen 9",
+    "tdp": 170,
+    "cores": 16,
+    "threads": 32,
+    "bench": 100
   },
   {
     "id": 14554,
@@ -30700,7 +30740,11 @@ export const PARTS = [
     "mpn": "9950XMAGX870ETMKWF",
     "socket": "AM5",
     "model": "9950X",
-    "series": "Ryzen 9"
+    "series": "Ryzen 9",
+    "tdp": 170,
+    "cores": 16,
+    "threads": 32,
+    "bench": 96
   },
   {
     "id": 14555,
@@ -30725,7 +30769,10 @@ export const PARTS = [
     "cores": 8,
     "baseClock": 3.8,
     "model": "7700",
-    "series": "Ryzen 7"
+    "series": "Ryzen 7",
+    "tdp": 65,
+    "threads": 16,
+    "bench": 58
   },
   {
     "id": 14556,
@@ -30755,7 +30802,10 @@ export const PARTS = [
     "cores": 24,
     "baseClock": 4.6,
     "model": "13900KS",
-    "series": "Core I9"
+    "series": "Core I9",
+    "tdp": 150,
+    "threads": 32,
+    "bench": 88
   },
   {
     "id": 14557,
@@ -30787,7 +30837,10 @@ export const PARTS = [
     "cores": 8,
     "baseClock": 3.8,
     "model": "9700X",
-    "series": "Ryzen 7"
+    "series": "Ryzen 7",
+    "tdp": 65,
+    "threads": 16,
+    "bench": 68
   },
   {
     "id": 14558,
@@ -30813,7 +30866,10 @@ export const PARTS = [
     "cores": 24,
     "baseClock": 6.2,
     "model": "14900KS",
-    "series": "Core i9"
+    "series": "Core i9",
+    "tdp": 150,
+    "threads": 32,
+    "bench": 90
   },
   {
     "id": 14559,
@@ -30836,10 +30892,13 @@ export const PARTS = [
     "upc": "730143318167",
     "mpn": "100-100001904WOF",
     "socket": "AM5",
-    "cores": 1,
+    "cores": 6,
     "baseClock": 4.5,
     "model": "7500X3D",
-    "series": "Ryzen 5"
+    "series": "Ryzen 5",
+    "tdp": 65,
+    "threads": 12,
+    "bench": 52
   },
   {
     "id": 14560,
@@ -30868,7 +30927,11 @@ export const PARTS = [
     "mpn": "7800X3DROGSB650AGWF",
     "socket": "AM5",
     "model": "7800X3D",
-    "series": "Ryzen 7"
+    "series": "Ryzen 7",
+    "tdp": 120,
+    "cores": 8,
+    "threads": 16,
+    "bench": 68
   },
   {
     "id": 14561,
@@ -30894,7 +30957,10 @@ export const PARTS = [
     "cores": 12,
     "baseClock": 5.6,
     "model": "7900X",
-    "series": "Ryzen 9"
+    "series": "Ryzen 9",
+    "tdp": 170,
+    "threads": 24,
+    "bench": 78
   },
   {
     "id": 14562,
@@ -30926,39 +30992,10 @@ export const PARTS = [
     "cores": 8,
     "baseClock": 3.8,
     "model": "9700X",
-    "series": "Ryzen 7"
-  },
-  {
-    "id": 14563,
-    "n": "Shadow Desktop PC, Ryzen 5 7600X 4.7 GHz (5.3GHz), AMD RX 7600 8GB",
-    "img": "https://m.media-amazon.com/images/I/61cNRKN3atL._AC_.jpg",
-    "c": "CPU",
-    "b": "Skytech Gaming",
-    "pr": 1099.99,
-    "msrp": 1099.99,
-    "r": 3.8,
-    "asin": "B0D2GYKHHD",
-    "reviews": 16,
-    "deals": {
-      "amazon": {
-        "price": 1099.99,
-        "url": "https://www.amazon.com/dp/B0D2GYKHHD?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/61FyGl3NUtL._AC_SL1000_.jpg",
-      "https://m.media-amazon.com/images/I/71J0S8nxp6L._AC_SL1000_.jpg",
-      "https://m.media-amazon.com/images/I/61PRaxafv6L._AC_SL1000_.jpg"
-    ],
-    "upc": "810113998497",
-    "mpn": "ST-SHADOW4-1259-B-AM",
-    "weight": "12.72 Kilograms",
-    "socket": "AM5",
-    "cores": 6,
-    "baseClock": 4.7,
-    "model": "7600X",
-    "series": "Ryzen 5"
+    "series": "Ryzen 7",
+    "tdp": 65,
+    "threads": 16,
+    "bench": 68
   },
   {
     "id": 14564,
@@ -30987,7 +31024,11 @@ export const PARTS = [
     "mpn": "9700XB850GAMPLWF",
     "socket": "AM5",
     "model": "9700X",
-    "series": "Ryzen 7"
+    "series": "Ryzen 7",
+    "tdp": 65,
+    "cores": 8,
+    "threads": 16,
+    "bench": 68
   },
   {
     "id": 14565,
@@ -31016,7 +31057,11 @@ export const PARTS = [
     "mpn": "7700XB650EMAXGAMWF",
     "socket": "AM5",
     "model": "7700X",
-    "series": "Ryzen 7"
+    "series": "Ryzen 7",
+    "tdp": 105,
+    "cores": 8,
+    "threads": 16,
+    "bench": 62
   },
   {
     "id": 14566,
@@ -31042,7 +31087,10 @@ export const PARTS = [
     "cores": 6,
     "baseClock": 2.3,
     "model": "8400T",
-    "series": "Core i5"
+    "series": "Core i5",
+    "tdp": 35,
+    "threads": 6,
+    "bench": 12
   },
   {
     "id": 14567,
@@ -31072,7 +31120,10 @@ export const PARTS = [
     "baseClock": 2.5,
     "arch": "Raptor Lake",
     "model": "14700K",
-    "series": "Core i7"
+    "series": "Core i7",
+    "tdp": 125,
+    "threads": 28,
+    "bench": 74
   },
   {
     "id": 14568,
@@ -31102,7 +31153,11 @@ export const PARTS = [
     "mpn": "9600XPROB850PWF",
     "socket": "AM5",
     "model": "9600X",
-    "series": "Ryzen 5"
+    "series": "Ryzen 5",
+    "tdp": 65,
+    "cores": 6,
+    "threads": 12,
+    "bench": 58
   },
   {
     "id": 14569,
@@ -31131,7 +31186,11 @@ export const PARTS = [
     "mpn": "7800X3DGGB850GAMWF6",
     "socket": "AM5",
     "model": "7800X3D",
-    "series": "Ryzen 7"
+    "series": "Ryzen 7",
+    "tdp": 120,
+    "cores": 8,
+    "threads": 16,
+    "bench": 68
   },
   {
     "id": 14570,
@@ -31156,7 +31215,10 @@ export const PARTS = [
     "socket": "LGA1700",
     "cores": 10,
     "model": "13400F",
-    "series": "Core I5"
+    "series": "Core I5",
+    "tdp": 65,
+    "threads": 16,
+    "bench": 38
   },
   {
     "id": 14571,
@@ -31184,8 +31246,11 @@ export const PARTS = [
     "upc": "618996786572",
     "mpn": "265KFZ890GAMPLWF",
     "socket": "LGA1851",
-    "cores": 1,
-    "baseClock": 5.5
+    "cores": 20,
+    "baseClock": 5.5,
+    "tdp": 125,
+    "threads": 20,
+    "bench": 72
   },
   {
     "id": 14572,
@@ -31215,7 +31280,11 @@ export const PARTS = [
     "mpn": "7700XB850GAMPLWF",
     "socket": "AM5",
     "model": "7700X",
-    "series": "Ryzen 7"
+    "series": "Ryzen 7",
+    "tdp": 105,
+    "cores": 8,
+    "threads": 16,
+    "bench": 62
   },
   {
     "id": 14573,
@@ -31247,7 +31316,10 @@ export const PARTS = [
     "baseClock": 3,
     "arch": "Raptor Lake",
     "model": "13900K",
-    "series": "Core i9"
+    "series": "Core i9",
+    "tdp": 125,
+    "threads": 32,
+    "bench": 82
   },
   {
     "id": 14574,
@@ -31275,7 +31347,10 @@ export const PARTS = [
     "mpn": "225F",
     "socket": "LGA1851",
     "cores": 10,
-    "baseClock": 3.3
+    "baseClock": 3.3,
+    "tdp": 65,
+    "threads": 10,
+    "bench": 44
   },
   {
     "id": 14575,
@@ -31305,7 +31380,10 @@ export const PARTS = [
     "baseClock": 2.6,
     "arch": "Raptor Lake",
     "model": "14600KF",
-    "series": "Core i5"
+    "series": "Core i5",
+    "tdp": 125,
+    "threads": 20,
+    "bench": 58
   },
   {
     "id": 14576,
@@ -31334,38 +31412,11 @@ export const PARTS = [
     "mpn": "9900XASUSX870EEROGSGAMWF",
     "socket": "AM5",
     "model": "9900X",
-    "series": "Ryzen 9"
-  },
-  {
-    "id": 14577,
-    "n": "CPU AIO Combo - AMD Ryzen 7 9700X Processor with MSI MAG Coreliquid A13 360 AIO ARGB CPU Liquid Cooler 360mm Radiator...",
-    "img": "https://m.media-amazon.com/images/I/61kynJnRHpL._SL1500_.jpg",
-    "c": "CPU",
-    "b": "Micro Center",
-    "pr": 349.99,
-    "msrp": 349.99,
-    "r": 4.5,
-    "asin": "B0FP4WDRN5",
-    "reviews": 5,
-    "deals": {
-      "amazon": {
-        "price": 349.99,
-        "url": "https://www.amazon.com/dp/B0FP4WDRN5?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/61gh38UK6AL._SL1155_.jpg",
-      "https://m.media-amazon.com/images/I/616GMIUKHrL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/51XRGk1B+cL._SL1500_.jpg"
-    ],
-    "upc": "618996791385",
-    "mpn": "9700XMSICLA13360BL",
-    "socket": "AM5",
-    "cores": 8,
-    "baseClock": 5.5,
-    "model": "9700X",
-    "series": "Ryzen 7"
+    "series": "Ryzen 9",
+    "tdp": 120,
+    "cores": 12,
+    "threads": 24,
+    "bench": 82
   },
   {
     "id": 14578,
@@ -31396,7 +31447,10 @@ export const PARTS = [
     "cores": 8,
     "baseClock": 4.5,
     "model": "7700X",
-    "series": "Ryzen 7"
+    "series": "Ryzen 7",
+    "tdp": 105,
+    "threads": 16,
+    "bench": 62
   },
   {
     "id": 14579,
@@ -31425,39 +31479,11 @@ export const PARTS = [
     "mpn": "7950XX670EGAMPLWF",
     "socket": "AM5",
     "model": "7950X",
-    "series": "Ryzen 9"
-  },
-  {
-    "id": 14580,
-    "n": "Vivobook 16 Laptop: Intel Core i9-13900H, 32GB RAM, 1TB SSD",
-    "img": "https://m.media-amazon.com/images/I/510TttKW59L._AC_SL1000_.jpg",
-    "c": "CPU",
-    "b": "ASUS",
-    "pr": 1199.99,
-    "msrp": 1199.99,
-    "r": 4,
-    "asin": "B0DP7SZKLM",
-    "reviews": 5,
-    "deals": {
-      "amazon": {
-        "price": 1199.99,
-        "url": "https://www.amazon.com/dp/B0DP7SZKLM?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/51kATeKONoL._AC_SL1000_.jpg",
-      "https://m.media-amazon.com/images/I/512dkcg1CIL._AC_SL1000_.jpg",
-      "https://m.media-amazon.com/images/I/41aIQNI3h5L._AC_SL1000_.jpg"
-    ],
-    "upc": "197105633308",
-    "mpn": "i9-13900H",
-    "weight": "6.24 Pounds",
-    "socket": "LGA1700",
-    "cores": 14,
-    "baseClock": 1.9,
-    "model": "13900H",
-    "series": "Core i9"
+    "series": "Ryzen 9",
+    "tdp": 170,
+    "cores": 16,
+    "threads": 32,
+    "bench": 90
   },
   {
     "id": 14581,
@@ -31486,7 +31512,11 @@ export const PARTS = [
     "mpn": "7600X3DB65EMAXGMWF",
     "socket": "AM5",
     "model": "7600X3D",
-    "series": "Ryzen 5"
+    "series": "Ryzen 5",
+    "tdp": 65,
+    "cores": 6,
+    "threads": 12,
+    "bench": 54
   },
   {
     "id": 14582,
@@ -38796,9 +38826,7 @@ export const PARTS = [
     "model": "RTX 5060",
     "vram": "32GB",
     "vramType": "GDDR7",
-    "chipset": "GeForce RTX 5060",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 150,
     "length": 250,
     "bench": 38
@@ -38832,9 +38860,7 @@ export const PARTS = [
     "model": "RTX 3050",
     "vram": "6GB",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 3050",
     "interface": "PCI-Express x16",
-    "generation": "RTX 30",
     "tdp": 130,
     "length": 225,
     "bench": 22
@@ -38873,9 +38899,7 @@ export const PARTS = [
     "model": "RX 9060 XT",
     "vram": "16GB",
     "vramType": "GDDR6",
-    "chipset": "RX 9060XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000",
     "tdp": 180,
     "length": 260,
     "bench": 40
@@ -38909,9 +38933,7 @@ export const PARTS = [
     "weight": "1500 Grams",
     "model": "RX 9070 XT",
     "vramType": "GDDR6",
-    "chipset": "AMD RX9070",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000",
     "tdp": 304,
     "length": 290,
     "bench": 62
@@ -38946,9 +38968,7 @@ export const PARTS = [
     "model": "RX 9060 XT",
     "vram": "16GB",
     "vramType": "GDDR6",
-    "chipset": "AMD Radeon RX 9060 XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000",
     "tdp": 180,
     "length": 260,
     "bench": 40
@@ -38986,9 +39006,7 @@ export const PARTS = [
     "model": "RTX 5060 Ti",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "RTX 5060TI",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 180,
     "length": 260,
     "bench": 45
@@ -39022,9 +39040,7 @@ export const PARTS = [
     "model": "RTX 5090",
     "vram": "32GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 575,
     "length": 330,
     "bench": 100
@@ -39063,7 +39079,6 @@ export const PARTS = [
     "weight": "599 Grams",
     "vram": "16GB",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
@@ -39103,9 +39118,7 @@ export const PARTS = [
     "model": "RTX 5080",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -39138,9 +39151,7 @@ export const PARTS = [
     "model": "RTX 5080",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -39173,7 +39184,6 @@ export const PARTS = [
     "weight": "0.66 Kilograms",
     "vram": "8GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
@@ -39213,9 +39223,7 @@ export const PARTS = [
     "model": "RX 9070 XT",
     "vram": "16GB",
     "vramType": "GDDR6",
-    "chipset": "RX 9070XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000",
     "tdp": 304,
     "length": 290,
     "bench": 62
@@ -39249,9 +39257,7 @@ export const PARTS = [
     "model": "RTX 5090",
     "vram": "32GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 575,
     "length": 330,
     "bench": 100
@@ -39289,7 +39295,6 @@ export const PARTS = [
     "weight": "5 Pounds",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
@@ -39328,9 +39333,7 @@ export const PARTS = [
     "weight": "2 Pounds",
     "model": "RTX 5080",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI Express 4.0",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -39363,9 +39366,7 @@ export const PARTS = [
     "weight": "3.7 Pounds",
     "model": "RX 9070 XT",
     "vramType": "GDDR6",
-    "chipset": "AMD Radeon RX 9070 XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000",
     "tdp": 304,
     "length": 290,
     "bench": 62
@@ -39399,9 +39400,7 @@ export const PARTS = [
     "model": "RTX 5080",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -39435,9 +39434,7 @@ export const PARTS = [
     "model": "RTX 5060 Ti",
     "vram": "8GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 180,
     "length": 260,
     "bench": 45
@@ -39477,9 +39474,7 @@ export const PARTS = [
     "model": "RTX 5060 Ti",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 180,
     "length": 260,
     "bench": 45
@@ -39512,9 +39507,7 @@ export const PARTS = [
     "model": "RTX 5060 Ti",
     "vram": "8GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5060Ti",
     "interface": "PCI-Express x8",
-    "generation": "RTX 50",
     "tdp": 180,
     "length": 260,
     "bench": 45
@@ -39547,9 +39540,7 @@ export const PARTS = [
     "model": "RTX 4060 Ti",
     "vram": "16GB",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 160,
     "length": 245,
     "bench": 36
@@ -39583,9 +39574,7 @@ export const PARTS = [
     "model": "RX 7600",
     "vram": "8GB",
     "vramType": "GDDR6",
-    "chipset": "AMD Radeon RX 7600",
     "interface": "PCI Express",
-    "generation": "RX 7000",
     "tdp": 165,
     "length": 240,
     "bench": 24
@@ -39618,9 +39607,7 @@ export const PARTS = [
     "model": "RX 9060 XT",
     "vram": "16GB",
     "vramType": "GDDR6",
-    "chipset": "Radeon RX 9060 XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000",
     "tdp": 180,
     "length": 260,
     "bench": 40
@@ -39653,9 +39640,7 @@ export const PARTS = [
     "model": "RTX 4070 Super",
     "vram": "12GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 220,
     "length": 290,
     "bench": 53
@@ -39689,9 +39674,7 @@ export const PARTS = [
     "model": "RTX 4070",
     "vram": "12GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 200,
     "length": 285,
     "bench": 48
@@ -39725,9 +39708,7 @@ export const PARTS = [
     "model": "RTX 4060 Ti",
     "vram": "8GB",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 40",
     "tdp": 160,
     "length": 245,
     "bench": 36
@@ -39760,7 +39741,6 @@ export const PARTS = [
     "weight": "1 Kilograms",
     "vram": "12GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070 SUPER",
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 290,
@@ -39794,9 +39774,7 @@ export const PARTS = [
     "model": "RX 9070 XT",
     "vram": "16GB",
     "vramType": "GDDR6",
-    "chipset": "Radeon RX 9070 XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000",
     "tdp": 304,
     "length": 290,
     "bench": 62
@@ -39830,9 +39808,7 @@ export const PARTS = [
     "model": "RX 7800 XT",
     "vram": "16GB",
     "vramType": "GDDR6",
-    "chipset": "AMD Radeon RX 7800 XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 7000",
     "tdp": 263,
     "length": 267,
     "bench": 42
@@ -39865,9 +39841,7 @@ export const PARTS = [
     "model": "RTX 4070 Ti",
     "vram": "12GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 40",
     "tdp": 285,
     "length": 305,
     "bench": 58
@@ -39898,9 +39872,7 @@ export const PARTS = [
     "model": "RTX 4080 Super",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4080 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 320,
     "length": 310,
     "bench": 73
@@ -39931,9 +39903,7 @@ export const PARTS = [
     "model": "RTX 4080 Super",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4080 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 320,
     "length": 310,
     "bench": 73
@@ -39961,9 +39931,7 @@ export const PARTS = [
     "model": "RTX 4080 Super",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4080 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 320,
     "length": 310,
     "bench": 73
@@ -39997,9 +39965,7 @@ export const PARTS = [
     "model": "RTX 4060 Ti",
     "vram": "8GB",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 160,
     "length": 245,
     "bench": 36
@@ -40031,9 +39997,7 @@ export const PARTS = [
     "model": "RX 5500 XT",
     "vram": "8GB",
     "vramType": "GDDR6",
-    "chipset": "5500XT",
     "interface": "PCI Express",
-    "generation": "RX 6000",
     "tdp": 130,
     "length": 210,
     "bench": 14
@@ -40066,7 +40030,6 @@ export const PARTS = [
     "weight": "1.1 Kilograms",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4080 SUPER",
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
@@ -40099,9 +40062,7 @@ export const PARTS = [
     "weight": "0.8 Kilograms",
     "model": "RX 7900 XT",
     "vramType": "GDDR6",
-    "chipset": "AMD Radeon RX 7900 XT",
     "interface": "PCI Express",
-    "generation": "RX 7000",
     "tdp": 315,
     "length": 276,
     "bench": 58
@@ -40135,9 +40096,7 @@ export const PARTS = [
     "model": "RTX 4080",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4080",
     "interface": "PCI Express",
-    "generation": "RTX 40",
     "tdp": 320,
     "length": 310,
     "bench": 70
@@ -40171,9 +40130,7 @@ export const PARTS = [
     "model": "RTX 4070 Super",
     "vram": "12GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 220,
     "length": 290,
     "bench": 53
@@ -40207,9 +40164,7 @@ export const PARTS = [
     "model": "RTX 5060 Ti",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 180,
     "length": 260,
     "bench": 45
@@ -40242,9 +40197,7 @@ export const PARTS = [
     "model": "RTX 5060 Ti",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 180,
     "length": 260,
     "bench": 45
@@ -40277,9 +40230,7 @@ export const PARTS = [
     "model": "RTX 4060 Ti",
     "vram": "8GB",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 160,
     "length": 245,
     "bench": 36
@@ -40312,7 +40263,6 @@ export const PARTS = [
     "weight": "454 Grams",
     "vram": "8GB",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 4060",
     "interface": "PCI-Express x16",
     "tdp": 115,
     "length": 245,
@@ -40342,9 +40292,7 @@ export const PARTS = [
     "model": "RTX 4070 Ti Super",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070 Ti SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 285,
     "length": 305,
     "bench": 62
@@ -40377,7 +40325,6 @@ export const PARTS = [
     "weight": "1.01 Kilograms",
     "vram": "8GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5060",
     "interface": "PCI-Express x8",
     "tdp": 150,
     "length": 250,
@@ -40411,9 +40358,7 @@ export const PARTS = [
     "model": "RTX 4080 Super",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4080 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 320,
     "length": 310,
     "bench": 73
@@ -40446,9 +40391,7 @@ export const PARTS = [
     "model": "RTX 5080",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -40481,9 +40424,7 @@ export const PARTS = [
     "model": "RTX 4090",
     "vram": "24GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4090",
     "interface": "PCI-Express x4",
-    "generation": "RTX 40",
     "tdp": 450,
     "length": 336,
     "bench": 85
@@ -40515,9 +40456,7 @@ export const PARTS = [
     "weight": "724 Grams",
     "model": "RTX 5070",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 5070",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 250,
     "length": 290,
     "bench": 55
@@ -40550,7 +40489,6 @@ export const PARTS = [
     "weight": "1.8 Kilograms",
     "vram": "16GB",
     "vramType": "SGRAM",
-    "chipset": "NVIDIA GeForce RTX 4070 Ti SUPER",
     "interface": "PCI-Express x16",
     "tdp": 285,
     "length": 305,
@@ -40584,9 +40522,7 @@ export const PARTS = [
     "model": "RTX 4070 Super",
     "vram": "12GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 220,
     "length": 290,
     "bench": 53
@@ -40619,7 +40555,6 @@ export const PARTS = [
     "weight": "998 Grams",
     "vram": "8GB",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
@@ -40653,9 +40588,7 @@ export const PARTS = [
     "model": "RTX 4070 Super",
     "vram": "12GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070 Ti SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 220,
     "length": 290,
     "bench": 53
@@ -40688,7 +40621,6 @@ export const PARTS = [
     "weight": "7.8 Ounces",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4080",
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
@@ -40721,9 +40653,7 @@ export const PARTS = [
     "mpn": "GAMING TRIO",
     "model": "RX 7900 XT",
     "vramType": "GDDR6",
-    "chipset": "AMD Radeon RX 7900 XTX",
     "interface": "PCI-Express x16",
-    "generation": "RX 7000",
     "tdp": 355,
     "length": 287,
     "bench": 65
@@ -40758,9 +40688,7 @@ export const PARTS = [
     "model": "RTX 4060 Ti",
     "vram": "8GB",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 160,
     "length": 245,
     "bench": 36
@@ -40793,7 +40721,6 @@ export const PARTS = [
     "weight": "1.13 Kilograms",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI-Express x8",
     "tdp": 180,
     "length": 260,
@@ -40832,7 +40759,6 @@ export const PARTS = [
     "weight": "1500 Grams",
     "vram": "32GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI-Express x16",
     "tdp": 575,
     "length": 330,
@@ -40866,9 +40792,7 @@ export const PARTS = [
     "model": "RTX 5080",
     "vram": "16GB",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -40900,7 +40824,6 @@ export const PARTS = [
     "weight": "1200 Grams",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070 Ti SUPER",
     "interface": "PCI-Express x16",
     "tdp": 285,
     "length": 305,
@@ -40934,9 +40857,7 @@ export const PARTS = [
     "model": "RTX 4070 Ti Super",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070 Ti SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 285,
     "length": 305,
     "bench": 62
@@ -40969,9 +40890,7 @@ export const PARTS = [
     "model": "RTX 4060 Ti",
     "vram": "8GB",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 160,
     "length": 245,
     "bench": 36
@@ -41004,9 +40923,7 @@ export const PARTS = [
     "model": "RX 6700 XT",
     "vram": "12GB",
     "vramType": "GDDR6",
-    "chipset": "AMD Radeon RX 6700 XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 6000",
     "tdp": 230,
     "length": 267,
     "bench": 30
@@ -41039,9 +40956,7 @@ export const PARTS = [
     "model": "RTX 5060 Ti",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 180,
     "length": 260,
     "bench": 45
@@ -41074,7 +40989,6 @@ export const PARTS = [
     "weight": "1.4 Pounds",
     "vram": "8GB",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
@@ -41108,9 +41022,7 @@ export const PARTS = [
     "model": "RTX 4070 Ti Super",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070 Ti SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 285,
     "length": 305,
     "bench": 62
@@ -41143,9 +41055,7 @@ export const PARTS = [
     "model": "RTX 5060 Ti",
     "vram": "8GB",
     "vramType": "GDDR7",
-    "chipset": "GeForce RTX 5060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 180,
     "length": 260,
     "bench": 45
@@ -41184,9 +41094,7 @@ export const PARTS = [
     "model": "RTX 5080",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -41225,9 +41133,7 @@ export const PARTS = [
     "model": "RTX 5060 Ti",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 180,
     "length": 260,
     "bench": 45
@@ -41259,9 +41165,7 @@ export const PARTS = [
     "weight": "2 Kilograms",
     "model": "RTX 5090",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 575,
     "length": 330,
     "bench": 100
@@ -41294,9 +41198,7 @@ export const PARTS = [
     "model": "RTX 4080 Super",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4080 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 320,
     "length": 310,
     "bench": 73
@@ -41330,9 +41232,7 @@ export const PARTS = [
     "model": "RX 7700 XT",
     "vram": "12GB",
     "vramType": "GDDR6X",
-    "chipset": "AMD Radeon RX 7700 XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 7000",
     "tdp": 245,
     "length": 267,
     "bench": 35
@@ -41366,9 +41266,7 @@ export const PARTS = [
     "model": "RX 9070",
     "vram": "16GB",
     "vramType": "GDDR6",
-    "chipset": "AMD Radeon RX 9070",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000",
     "tdp": 220,
     "length": 285,
     "bench": 52
@@ -41400,7 +41298,6 @@ export const PARTS = [
     "mpn": "PNY GeForce RTX™ 5080 Triple Fan GPU",
     "weight": "1000 Grams",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
@@ -41434,9 +41331,7 @@ export const PARTS = [
     "model": "RTX 5090",
     "vram": "32GB",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 575,
     "length": 330,
     "bench": 100
@@ -41470,9 +41365,7 @@ export const PARTS = [
     "model": "RTX 5080",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -41505,9 +41398,7 @@ export const PARTS = [
     "model": "RTX 4070 Ti Super",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 285,
     "length": 305,
     "bench": 62
@@ -41538,9 +41429,7 @@ export const PARTS = [
     "upc": "812674025339",
     "mpn": "Founder's Edition (FE)",
     "model": "RTX 4070",
-    "chipset": "NVIDIA GeForce RTX 4070",
     "interface": "PCI Express",
-    "generation": "RTX 40",
     "tdp": 200,
     "length": 285,
     "bench": 48
@@ -41572,7 +41461,6 @@ export const PARTS = [
     "weight": "1 Grams",
     "vram": "8GB",
     "vramType": "GDDR6",
-    "chipset": "AMD Radeon Pro W5700",
     "interface": "PCI-Express x16",
     "tdp": 205,
     "length": 240,
@@ -41606,9 +41494,7 @@ export const PARTS = [
     "model": "RTX 5090",
     "vram": "32GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 575,
     "length": 330,
     "bench": 100
@@ -41640,9 +41526,7 @@ export const PARTS = [
     "model": "RTX 4070 Super",
     "vram": "12GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070 SUPER",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 220,
     "length": 290,
     "bench": 53
@@ -41675,9 +41559,7 @@ export const PARTS = [
     "model": "RTX 5080",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "RTX 5080",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -41710,9 +41592,7 @@ export const PARTS = [
     "model": "RTX 5080",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -41746,9 +41626,7 @@ export const PARTS = [
     "model": "RTX 4060 Ti",
     "vram": "16GB",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 40",
     "tdp": 160,
     "length": 245,
     "bench": 36
@@ -41786,7 +41664,6 @@ export const PARTS = [
     "mpn": "GeForce RTX™ 5060 Ti",
     "vram": "8GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI-Express x8",
     "tdp": 180,
     "length": 260,
@@ -41819,7 +41696,6 @@ export const PARTS = [
     "mpn": "GeForce GTX 1660 Super",
     "vram": "6GB",
     "vramType": "Shared",
-    "chipset": "NVIDIA GeForce GTX1660 SUPER",
     "interface": "PCI-Express x16",
     "tdp": 125,
     "length": 225,
@@ -41854,9 +41730,7 @@ export const PARTS = [
     "model": "RTX 5080",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -41890,9 +41764,7 @@ export const PARTS = [
     "model": "RTX 4070 Super",
     "vram": "12GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070 SUPER",
     "interface": "PCI, PCI Express",
-    "generation": "RTX 40",
     "tdp": 220,
     "length": 290,
     "bench": 53
@@ -41926,9 +41798,7 @@ export const PARTS = [
     "model": "RTX 5060",
     "vram": "8GB",
     "vramType": "GDDR7",
-    "chipset": "GeForce RTX 5060",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 150,
     "length": 250,
     "bench": 38
@@ -41963,9 +41833,7 @@ export const PARTS = [
     "model": "RTX 5070",
     "vram": "12GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5070",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 250,
     "length": 290,
     "bench": 55
@@ -41993,9 +41861,7 @@ export const PARTS = [
     "model": "RTX 4070 Super",
     "vram": "12GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4070",
     "interface": "PCI Express",
-    "generation": "RTX 40",
     "tdp": 220,
     "length": 290,
     "bench": 53
@@ -42028,9 +41894,7 @@ export const PARTS = [
     "model": "RTX 5060 Ti",
     "vram": "8GB",
     "vramType": "GDDR7",
-    "chipset": "GeForce RTX 5060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 180,
     "length": 260,
     "bench": 45
@@ -42065,9 +41929,7 @@ export const PARTS = [
     "model": "RTX 5080",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -42100,9 +41962,7 @@ export const PARTS = [
     "model": "RTX 5080",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -42135,9 +41995,7 @@ export const PARTS = [
     "model": "RTX 3090",
     "vram": "24GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 3090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 30",
     "tdp": 350,
     "length": 313,
     "bench": 60
@@ -42176,9 +42034,7 @@ export const PARTS = [
     "model": "RTX 5080",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -42212,9 +42068,7 @@ export const PARTS = [
     "model": "RTX 5060",
     "vram": "8GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 5060",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 150,
     "length": 250,
     "bench": 38
@@ -42247,9 +42101,7 @@ export const PARTS = [
     "model": "RTX 5060 Ti",
     "vram": "8GB",
     "vramType": "GDDR7",
-    "chipset": "GeForce RTX 5060 Ti",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 180,
     "length": 260,
     "bench": 45
@@ -42282,9 +42134,7 @@ export const PARTS = [
     "weight": "2.4 Pounds",
     "model": "RX 9070",
     "vramType": "GDDR6",
-    "chipset": "AMD Radeon RX 9070",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000",
     "tdp": 220,
     "length": 285,
     "bench": 52
@@ -42315,9 +42165,7 @@ export const PARTS = [
     "mpn": "RTX 5090",
     "model": "RTX 5090",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 575,
     "length": 330,
     "bench": 100
@@ -42347,9 +42195,7 @@ export const PARTS = [
     "mpn": "NVIDIA GeForce RTX 4060Ti",
     "model": "RTX 4060",
     "vramType": "GDDR6",
-    "chipset": "NVIDIA GeForce RTX 4060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 40",
     "tdp": 160,
     "length": 245,
     "bench": 36
@@ -42382,9 +42228,7 @@ export const PARTS = [
     "model": "RTX 4080 Super",
     "vram": "16GB",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 3080",
     "interface": "PCI-Express x8",
-    "generation": "RTX 40",
     "tdp": 320,
     "length": 310,
     "bench": 73
@@ -42417,9 +42261,7 @@ export const PARTS = [
     "model": "RTX 5090",
     "vram": "32GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 575,
     "length": 330,
     "bench": 100
@@ -42453,9 +42295,7 @@ export const PARTS = [
     "model": "RTX 5090",
     "vram": "32GB",
     "vramType": "GDDR7",
-    "chipset": "RTX 5090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 575,
     "length": 330,
     "bench": 100
@@ -42487,9 +42327,7 @@ export const PARTS = [
     "mpn": "ZOTAC GAMING GeForce RTX 5080 SOLID CORE",
     "model": "RTX 5080",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI-Express x16",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -42522,7 +42360,6 @@ export const PARTS = [
     "weight": "2 Pounds",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
@@ -42554,9 +42391,7 @@ export const PARTS = [
     "mpn": "RX 9070 XT",
     "model": "RX 9070 XT",
     "vramType": "GDDR6",
-    "chipset": "AMD Radeon RX 9070XT",
     "interface": "PCI-Express x16",
-    "generation": "RX 9000",
     "tdp": 304,
     "length": 290,
     "bench": 62
@@ -42591,9 +42426,7 @@ export const PARTS = [
     "model": "RTX 5080",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5080",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 360,
     "length": 310,
     "bench": 78
@@ -42625,9 +42458,7 @@ export const PARTS = [
     "model": "RTX 5060 Ti",
     "vram": "16GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5060 Ti",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 180,
     "length": 260,
     "bench": 45
@@ -42660,9 +42491,7 @@ export const PARTS = [
     "model": "RTX 5090",
     "vram": "32GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 575,
     "length": 330,
     "bench": 100
@@ -42696,9 +42525,7 @@ export const PARTS = [
     "model": "RTX 5090",
     "vram": "32GB",
     "vramType": "GDDR7",
-    "chipset": "NVIDIA GeForce RTX 5090",
     "interface": "PCI Express",
-    "generation": "RTX 50",
     "tdp": 575,
     "length": 330,
     "bench": 100
@@ -42731,9 +42558,7 @@ export const PARTS = [
     "mpn": "GeForce RTX 4090 Founders Edition 24GB GDDR6X",
     "model": "RTX 4090",
     "vramType": "GDDR6X",
-    "chipset": "NVIDIA GeForce RTX 4090",
     "interface": "PCI-Express x16",
-    "generation": "RTX 40",
     "tdp": 450,
     "length": 336,
     "bench": 85
@@ -80101,7 +79926,7 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 1,
     "fans_max": 5,
-    "ff": "microATX",
+    "ff": "mATX",
     "maxGPU": 350,
     "maxCooler": 155
   },
@@ -80161,7 +79986,7 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 1,
     "fans_max": 5,
-    "ff": "microATX",
+    "ff": "mATX",
     "maxGPU": 350,
     "maxCooler": 155
   },
@@ -80191,7 +80016,7 @@ export const PARTS = [
     "drive25": 10,
     "fans_inc": 9,
     "fans_max": 11,
-    "ff": "EATX",
+    "ff": "E-ATX",
     "maxGPU": 200,
     "maxCooler": 190
   },
@@ -80219,7 +80044,7 @@ export const PARTS = [
     "rgb": false,
     "fans_inc": 1,
     "fans_max": 4,
-    "ff": "microATX",
+    "ff": "mATX",
     "maxGPU": 350,
     "maxCooler": 148
   },
@@ -80249,7 +80074,7 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 1,
     "fans_max": 5,
-    "ff": "microATX",
+    "ff": "mATX",
     "maxGPU": 350,
     "maxCooler": 165
   },
@@ -80399,7 +80224,7 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 2,
     "fans_max": 8,
-    "ff": "microATX",
+    "ff": "mATX",
     "maxGPU": 400,
     "maxCooler": 200
   },
@@ -80429,7 +80254,7 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 2,
     "fans_max": 8,
-    "ff": "microATX",
+    "ff": "mATX",
     "maxGPU": 400,
     "maxCooler": 200
   },
@@ -80459,7 +80284,7 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 2,
     "fans_max": 8,
-    "ff": "microATX",
+    "ff": "mATX",
     "maxGPU": 400,
     "maxCooler": 200
   },
@@ -80489,7 +80314,7 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 2,
     "fans_max": 8,
-    "ff": "microATX",
+    "ff": "mATX",
     "maxGPU": 400,
     "maxCooler": 200
   },
@@ -80519,7 +80344,7 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 2,
     "fans_max": 8,
-    "ff": "microATX",
+    "ff": "mATX",
     "maxGPU": 400,
     "maxCooler": 200
   },
@@ -80549,7 +80374,7 @@ export const PARTS = [
     "drive25": 3,
     "fans_inc": 2,
     "fans_max": 8,
-    "ff": "microATX",
+    "ff": "mATX",
     "maxGPU": 400,
     "maxCooler": 200
   },
@@ -81013,7 +80838,7 @@ export const PARTS = [
     "rgb": false,
     "fans_inc": 3,
     "fans_max": 7,
-    "ff": "EATX",
+    "ff": "E-ATX",
     "maxGPU": 413,
     "maxCooler": 185
   },
@@ -81459,7 +81284,7 @@ export const PARTS = [
     "rgb": false,
     "fans_inc": 3,
     "fans_max": 7,
-    "ff": "EATX",
+    "ff": "E-ATX",
     "maxGPU": 413,
     "maxCooler": 185
   },
@@ -81632,7 +81457,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 420,
-    "maxCooler": 160
+    "maxCooler": 160,
+    "tower": "Mid"
   },
   {
     "id": 16162,
@@ -81661,7 +81487,8 @@ export const PARTS = [
     "fans_max": 13,
     "ff": "ATX",
     "maxGPU": 400,
-    "maxCooler": 200
+    "maxCooler": 200,
+    "tower": "Mid"
   },
   {
     "id": 16163,
@@ -81690,7 +81517,8 @@ export const PARTS = [
     "fans_max": 13,
     "ff": "ATX",
     "maxGPU": 400,
-    "maxCooler": 200
+    "maxCooler": 200,
+    "tower": "Mid"
   },
   {
     "id": 16164,
@@ -81839,7 +81667,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 420,
-    "maxCooler": 160
+    "maxCooler": 160,
+    "tower": "Mid"
   },
   {
     "id": 16169,
@@ -81867,7 +81696,7 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 3,
     "fans_max": 6,
-    "ff": "microATX",
+    "ff": "mATX",
     "maxGPU": 340,
     "maxCooler": 160
   },
@@ -81898,7 +81727,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 415,
-    "maxCooler": 160
+    "maxCooler": 160,
+    "tower": "Mid"
   },
   {
     "id": 16171,
@@ -81957,7 +81787,8 @@ export const PARTS = [
     "fans_max": 10,
     "ff": "ATX",
     "maxGPU": 420,
-    "maxCooler": 160
+    "maxCooler": 160,
+    "tower": "Mid"
   },
   {
     "id": 16173,
@@ -82125,7 +81956,7 @@ export const PARTS = [
     "drive25": 1,
     "fans_inc": 1,
     "fans_max": 7,
-    "ff": "microATX",
+    "ff": "mATX",
     "maxGPU": 377,
     "maxCooler": 170
   },
@@ -82353,7 +82184,7 @@ export const PARTS = [
     "rgb": true,
     "fans_inc": 4,
     "fans_max": 6,
-    "ff": "EATX",
+    "ff": "E-ATX",
     "maxGPU": 455,
     "maxCooler": 185
   },
@@ -82495,7 +82326,7 @@ export const PARTS = [
     "rgb": false,
     "fans_inc": 3,
     "fans_max": 9,
-    "ff": "EATX",
+    "ff": "E-ATX",
     "maxGPU": 491,
     "maxCooler": 185
   },
@@ -82579,7 +82410,7 @@ export const PARTS = [
     "rgb": false,
     "fans_inc": 3,
     "fans_max": 9,
-    "ff": "EATX",
+    "ff": "E-ATX",
     "maxGPU": 413,
     "maxCooler": 185
   },
@@ -84365,7 +84196,8 @@ export const PARTS = [
     "igpu": false,
     "memType": "DDR4",
     "maxMem": "128 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 28
   },
   {
     "id": 16263,
@@ -84396,7 +84228,8 @@ export const PARTS = [
     "igpuName": "AMD Radeon",
     "memType": "DDR5",
     "maxMem": "128 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 78
   },
   {
     "id": 16264,
@@ -84427,7 +84260,8 @@ export const PARTS = [
     "igpuName": "AMD Radeon",
     "memType": "DDR5",
     "maxMem": "128 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 62
   },
   {
     "id": 16265,
@@ -84458,7 +84292,8 @@ export const PARTS = [
     "igpuName": "AMD Radeon",
     "memType": "DDR5",
     "maxMem": "128 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 52
   },
   {
     "id": 16266,
@@ -84489,7 +84324,8 @@ export const PARTS = [
     "igpuName": "AMD Radeon",
     "memType": "DDR5",
     "maxMem": "128 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 68
   },
   {
     "id": 16267,
@@ -84520,7 +84356,8 @@ export const PARTS = [
     "igpuName": "Intel UHD Graphics 770",
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 86
   },
   {
     "id": 16268,
@@ -84551,7 +84388,8 @@ export const PARTS = [
     "igpuName": "Intel UHD Graphics 770",
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 74
   },
   {
     "id": 16269,
@@ -84582,7 +84420,8 @@ export const PARTS = [
     "igpuName": "Intel UHD Graphics 770",
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 58
   },
   {
     "id": 16270,
@@ -84612,7 +84451,8 @@ export const PARTS = [
     "igpu": false,
     "memType": "DDR4",
     "maxMem": "128 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 52
   },
   {
     "id": 16271,
@@ -84642,7 +84482,8 @@ export const PARTS = [
     "igpu": false,
     "memType": "DDR4",
     "maxMem": "128 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 62
   },
   {
     "id": 16272,
@@ -84673,7 +84514,8 @@ export const PARTS = [
     "igpuName": "AMD Radeon",
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 96
   },
   {
     "id": 16273,
@@ -84704,7 +84546,8 @@ export const PARTS = [
     "igpuName": "AMD Radeon",
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 82
   },
   {
     "id": 16274,
@@ -84735,7 +84578,8 @@ export const PARTS = [
     "igpuName": "AMD Radeon",
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 68
   },
   {
     "id": 16275,
@@ -84766,7 +84610,8 @@ export const PARTS = [
     "igpuName": "AMD Radeon",
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 58
   },
   {
     "id": 16276,
@@ -84797,7 +84642,8 @@ export const PARTS = [
     "igpuName": "Intel Graphics",
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 58
   },
   {
     "id": 16277,
@@ -84828,7 +84674,8 @@ export const PARTS = [
     "igpuName": "Intel Graphics",
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 85
   },
   {
     "id": 16278,
@@ -84859,7 +84706,8 @@ export const PARTS = [
     "igpuName": "Intel Graphics",
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 72
   },
   {
     "id": 16279,
@@ -84890,7 +84738,8 @@ export const PARTS = [
     "igpuName": "AMD Radeon",
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 72
   },
   {
     "id": 16280,
@@ -84921,7 +84770,8 @@ export const PARTS = [
     "igpuName": "AMD Radeon",
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 88
   },
   {
     "id": 16281,
@@ -84952,7 +84802,8 @@ export const PARTS = [
     "igpuName": "AMD Radeon",
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 100
   },
   {
     "id": 16282,
@@ -84982,7 +84833,8 @@ export const PARTS = [
     "igpu": false,
     "memType": "DDR5",
     "maxMem": "1000 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 72
   },
   {
     "id": 16283,
@@ -85012,7 +84864,8 @@ export const PARTS = [
     "igpu": false,
     "memType": "DDR5",
     "maxMem": "1000 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 82
   },
   {
     "id": 16284,
@@ -85042,7 +84895,8 @@ export const PARTS = [
     "igpu": false,
     "memType": "DDR5",
     "maxMem": "1000 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 92
   },
   {
     "id": 16285,
@@ -85073,7 +84927,8 @@ export const PARTS = [
     "igpuName": "Intel Graphics",
     "memType": "DDR5",
     "maxMem": "256 gigabytes",
-    "unlocked": true
+    "unlocked": true,
+    "bench": 76
   },
   {
     "id": 16286,
@@ -86277,7 +86132,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 3060",
-    "generation": "RTX 30",
     "vram": 12,
     "vramType": "GDDR6",
     "baseClock": 1.32,
@@ -86308,7 +86162,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 3060",
-    "generation": "RTX 30",
     "vram": 12,
     "vramType": "GDDR6",
     "baseClock": 1.32,
@@ -86339,7 +86192,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 6650 XT",
-    "generation": "RX 6000",
     "vram": 8,
     "vramType": "GDDR6",
     "baseClock": 2.41,
@@ -86370,7 +86222,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 4060 Ti",
-    "generation": "RTX 40",
     "vram": 8,
     "vramType": "GDDR6",
     "baseClock": 2.31,
@@ -86401,7 +86252,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 4060 Ti",
-    "generation": "RTX 40",
     "vram": 8,
     "vramType": "GDDR6",
     "baseClock": 2.535,
@@ -86432,7 +86282,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 3050",
-    "generation": "RTX 30",
     "vram": 8,
     "vramType": "GDDR6",
     "baseClock": 1.55,
@@ -86463,7 +86312,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 3050",
-    "generation": "RTX 30",
     "vram": 6,
     "vramType": "GDDR6",
     "baseClock": 1.55,
@@ -86494,7 +86342,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 7600",
-    "generation": "RX 7000",
     "vram": 8,
     "vramType": "GDDR6",
     "baseClock": 1.72,
@@ -86555,7 +86402,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5080",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.7,
@@ -86586,7 +86432,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5080",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.65,
@@ -86617,7 +86462,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5090",
-    "generation": "RTX 50",
     "vram": 32,
     "vramType": "GDDR7",
     "baseClock": 2.4,
@@ -86648,7 +86492,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5090",
-    "generation": "RTX 50",
     "vram": 32,
     "vramType": "GDDR7",
     "baseClock": 2.58,
@@ -86679,7 +86522,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5090",
-    "generation": "RTX 50",
     "vram": 32,
     "vramType": "GDDR7",
     "baseClock": 2.55,
@@ -86710,7 +86552,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.557,
@@ -86741,7 +86582,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.61,
@@ -86772,7 +86612,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.497,
@@ -86803,7 +86642,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.588,
@@ -86834,7 +86672,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.452,
@@ -86865,7 +86702,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.16,
@@ -86896,7 +86732,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5080",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.7,
@@ -86927,7 +86762,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5080",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.6,
@@ -86958,7 +86792,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 3050",
-    "generation": "RTX 30",
     "vram": 6,
     "vramType": "GDDR6",
     "baseClock": 1.5,
@@ -86989,7 +86822,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5080",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.73,
@@ -87020,7 +86852,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5090",
-    "generation": "RTX 50",
     "vram": 32,
     "vramType": "GDDR7",
     "baseClock": 2.407,
@@ -87051,7 +86882,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5090",
-    "generation": "RTX 50",
     "vram": 32,
     "vramType": "GDDR7",
     "baseClock": 2.407,
@@ -87112,7 +86942,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5090",
-    "generation": "RTX 50",
     "vram": 32,
     "vramType": "GDDR7",
     "baseClock": 2.48,
@@ -87143,7 +86972,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5090",
-    "generation": "RTX 50",
     "vram": 32,
     "vramType": "GDDR7",
     "baseClock": 2.5,
@@ -87174,7 +87002,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5080",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.73,
@@ -87205,7 +87032,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5080",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.67,
@@ -87236,7 +87062,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5080",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.3,
@@ -87267,7 +87092,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5090",
-    "generation": "RTX 50",
     "vram": 32,
     "vramType": "GDDR7",
     "baseClock": 2.02,
@@ -87298,7 +87122,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5090",
-    "generation": "RTX 50",
     "vram": 32,
     "vramType": "GDDR7",
     "baseClock": 2.407,
@@ -87329,7 +87152,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9070 XT",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 2.52,
@@ -87360,7 +87182,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2,
@@ -87391,7 +87212,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.588,
@@ -87422,7 +87242,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.542,
@@ -87453,7 +87272,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.497,
@@ -87484,7 +87302,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.588,
@@ -87515,7 +87332,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.625,
@@ -87546,7 +87362,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.452,
@@ -87577,7 +87392,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.235,
@@ -87608,7 +87422,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.325,
@@ -87639,7 +87452,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.295,
@@ -87670,7 +87482,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.295,
@@ -87701,7 +87512,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9070 XT",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 1.87,
@@ -87732,7 +87542,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9070",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 1.44,
@@ -87763,7 +87572,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9070 XT",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 1.66,
@@ -87794,7 +87602,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9070 XT",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 1.66,
@@ -87825,7 +87632,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9070",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 1.44,
@@ -87856,7 +87662,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9070 XT",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 1.87,
@@ -87887,7 +87692,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.4,
@@ -87918,7 +87722,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9070",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 1.44,
@@ -87949,7 +87752,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9070 XT",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 1.87,
@@ -87980,7 +87782,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.512,
@@ -88011,7 +87812,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.512,
@@ -88042,7 +87842,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.56,
@@ -88073,7 +87872,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.617,
@@ -88104,7 +87902,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.572,
@@ -88135,7 +87932,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060 Ti",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.617,
@@ -88166,7 +87962,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.572,
@@ -88197,7 +87992,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.572,
@@ -88228,7 +88022,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.572,
@@ -88259,7 +88052,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.572,
@@ -88290,7 +88082,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.28,
@@ -88321,7 +88112,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.41,
@@ -88352,7 +88142,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.407,
@@ -88383,7 +88172,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2,
@@ -88414,7 +88202,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.565,
@@ -88445,7 +88232,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.497,
@@ -88476,7 +88262,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.497,
@@ -88507,7 +88292,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.497,
@@ -88538,7 +88322,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.28,
@@ -88569,7 +88352,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.28,
@@ -88600,7 +88382,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.28,
@@ -88631,7 +88412,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.28,
@@ -88662,7 +88442,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 4060",
-    "generation": "RTX 40",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.28,
@@ -88693,7 +88472,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9060 XT",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 1.9,
@@ -88724,7 +88502,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9060 XT",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 1.9,
@@ -88755,7 +88532,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9060 XT",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 1.9,
@@ -88786,7 +88562,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9060 XT",
-    "generation": "RX 9000",
     "vram": 8,
     "vramType": "GDDR6",
     "baseClock": 1.9,
@@ -88817,7 +88592,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.497,
@@ -88848,7 +88622,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9060 XT",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 3.13,
@@ -88879,7 +88652,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060 Ti",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.407,
@@ -88910,7 +88682,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9060 XT",
-    "generation": "RX 9000",
     "vram": 8,
     "vramType": "GDDR6",
     "baseClock": 3.13,
@@ -88941,7 +88712,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.325,
@@ -88972,7 +88742,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.325,
@@ -89003,7 +88772,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.325,
@@ -89034,7 +88802,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060 Ti",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.4,
@@ -89065,7 +88832,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.655,
@@ -89096,7 +88862,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.602,
@@ -89127,7 +88892,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060 Ti",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.407,
@@ -89158,7 +88922,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5050",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR6",
     "baseClock": 2.602,
@@ -89189,7 +88952,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5050",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR6",
     "baseClock": 2.63,
@@ -89220,7 +88982,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5050",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR6",
     "baseClock": 2.602,
@@ -89251,7 +89012,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5050",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR6",
     "baseClock": 2.647,
@@ -89282,7 +89042,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5050",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR6",
     "baseClock": 2.572,
@@ -89313,7 +89072,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.602,
@@ -89344,7 +89102,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9060 XT",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 1.9,
@@ -89375,7 +89132,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9060 XT",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 1.9,
@@ -89406,7 +89162,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5060 Ti",
-    "generation": "RTX 50",
     "vram": 8,
     "vramType": "GDDR7",
     "baseClock": 2.4,
@@ -89436,7 +89191,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9070 XT",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 2.4,
@@ -89466,7 +89220,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9070",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 2.07,
@@ -89496,7 +89249,6 @@ export const PARTS = [
       }
     },
     "model": "Radeon RX 9070 XT",
-    "generation": "RX 9000",
     "vram": 16,
     "vramType": "GDDR6",
     "baseClock": 2.4,
@@ -89527,7 +89279,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.63,
@@ -89558,7 +89309,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070",
-    "generation": "RTX 50",
     "vram": 12,
     "vramType": "GDDR7",
     "baseClock": 2.325,
@@ -89589,7 +89339,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.29,
@@ -89620,7 +89369,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5070 Ti",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.29,
@@ -89651,7 +89399,6 @@ export const PARTS = [
       }
     },
     "model": "GeForce RTX 5080",
-    "generation": "RTX 50",
     "vram": 16,
     "vramType": "GDDR7",
     "baseClock": 2.29,
