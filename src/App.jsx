@@ -78,7 +78,7 @@ const BUILDER_SECTIONS=[
   {id:"accessories",label:"Accessories",icon:"🎒",cats:ACCESSORY_CATS},
 ];
 const SL={cores:"Cores/Threads",socket:"Socket",tdp:"TDP",bench:"Score",vram:"VRAM",cap:"Capacity",speed:"Speed",ff:"Form Factor",wifi:"WiFi",storageType:"Type",watts:"Watts",eff:"Rating",modular:"Modular",panel:"Panel",res:"Resolution",refresh:"Refresh",screenSize:"Screen",switches:"Switches",layout:"Layout",wireless:"Wireless",baseClock:"Base Clock",boostClock:"Boost Clock",threads:"Threads",length:"Length",pwr:"Power",seq_r:"Read",seq_w:"Write",cl:"CAS Latency",ramType:"Type",chipset:"Chipset",coolerType:"Type",noise:"Noise",tdp_rating:"TDP Rating",fans_inc:"Fans Included",maxGPU:"Max GPU Length",maxCooler:"Max Cooler",cfm:"Airflow",size:"Size",sensor:"Sensor",dpi:"DPI",weight:"Weight",driver:"Driver",mic:"Mic",hsType:"Type",mouseType:"Type",segment:"Use Case",arch:"Architecture",pcie:"PCIe",tg:"Glass Panel",usb_c:"USB-C",mobo:"Mobo Support",drive25:"2.5in Bays",drive35:"3.5in Bays",memType:"Memory",memSlots:"RAM Slots",maxMem:"Max RAM",m2Slots:"M.2 Slots",lan:"Ethernet",ecc:"ECC",rgb:"RGB",rgbType:"RGB Type",rgbConnector:"RGB Connector",color:"Color",igpu:"iGPU",igpuName:"iGPU Name",vcache:"V-Cache",serverCPU:"Server",pCores:"P-Cores",eCores:"E-Cores",l3:"L3 Cache",nm:"Process",bus:"Bus Width",slots:"Slot Width",interface:"Interface",dram:"DRAM Cache",tlc:"NAND Type",pack:"Pack",atx3:"ATX 3.0",radSize:"Radiator",rads:"AIO Support",height:"Height",fans:"Fans",fanSize:"Fan Size",response:"Response",sync:"Adaptive Sync",hdr:"HDR",curved:"Curved",hotswap:"Hot-Swap",pollingRate:"Polling Rate",shape:"Grip",anc:"ANC",surroundSound:"Surround",openBack:"Open Back",autofocus:"Autofocus",fov:"FOV",pattern:"Pattern",sampleRate:"Sample Rate",bitDepth:"Bit Depth",connection:"Connection",connector:"Fan Connector",channels:"Channels",snr:"SNR",hasAmp:"Headphone Amp",lanSpeed:"Speed",ports:"Ports",wifiStandard:"WiFi",bt:"Bluetooth",driveType:"Drive Type",readSpeed:"Read Speed",writeSpeed:"Write Speed",memSpeed:"Memory Speed*",audio:"Audio",sticks:"Sticks",voltage:"Voltage",cuda:"CUDA Cores",boost:"Boost Clock",tier:"Suggested Use",sp:"Stream Processors",xeCores:"Xe Cores",maxMemSpeed:"Max RAM Speed",sata:"SATA Ports",pciSlots:"PCIe Slots",impedance:"Max Impedance",formFactor:"Form Factor",digitalOut:"Digital Output",pcieLane:"PCIe Lane",profile:"Profile",wol:"Wake-on-LAN",vlan:"VLAN",pxe:"PXE Boot",maxSpeed:"Max Speed",antennas:"Antennas",band:"Band",heatsink:"Heatsink",dacChip:"DAC Chip",outputPower:"Output Power",upc:"UPC",mpn:"Model #",model:"Model",generation:"Generation",vramType:"VRAM Type",dimensions:"Dimensions",form:"Form",tower:"Tower",series:"Series",compatibility:"Compatibility",contrast:"Contrast",rpm:"RPM"};
-const SF={cores:(v,p)=>p&&p.threads?v+"C/"+p.threads+"T":v+"C",sticks:(v,p)=>{if(!v)return v;const total=p&&(p.cap||p.capacity);if(total&&v>0){const per=Math.round(total/v);return v+"x"+per+"GB";}return v+"x";},tdp:v=>v+"W",vram:v=>typeof v==="number"?v+"GB":v,cap:v=>typeof v==="number"?(v>=1000?(v/1000)+"TB":v+"GB"):v,speed:v=>v+"MHz",watts:v=>v+"W",wifi:v=>v||"None",refresh:v=>v+"Hz",screenSize:v=>v+'"',bench:v=>v+"%",baseClock:v=>v+"GHz",boostClock:v=>v+"GHz",length:v=>v+"mm",seq_r:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",seq_w:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",noise:v=>{const n=typeof v==="number"?v:parseFloat(v);if(isNaN(n))return v;const ref=n<=15?"Near silent":n<=20?"Whisper quiet":n<=25?"Library quiet":n<=30?"Quiet room":n<=35?"Light hum":n<=40?"Noticeable":"Loud";return n+"dBA\n"+ref;},tdp_rating:v=>v+"W",maxGPU:v=>v+"mm",maxCooler:v=>v+"mm",cfm:v=>typeof v==="number"?v.toFixed(1)+" CFM":v,dpi:v=>v>=1000?(v/1000)+"K":v,weight:v=>{if(v==null)return"—";if(typeof v==="number")return v+"g";const s=String(v);let m=s.match(/([\d.]+)\s*(kilogram|kg)/i);if(m)return(parseFloat(m[1])*2.20462).toFixed(1)+" lbs";m=s.match(/([\d.]+)\s*(gram|g)\b/i);if(m)return(parseFloat(m[1])/453.592).toFixed(2)+" lbs";m=s.match(/([\d.]+)\s*(pound|lb|lbs)/i);if(m)return parseFloat(m[1]).toFixed(1)+" lbs";m=s.match(/([\d.]+)\s*(ounce|oz)/i);if(m)return(parseFloat(m[1])/16).toFixed(2)+" lbs";return s;},cl:v=>"CL"+v,driver:v=>v+"mm",height:v=>v+"mm",voltage:v=>v+"V",boost:v=>v+"MHz",tier:v=>typeof v==="string"?v.charAt(0).toUpperCase()+v.slice(1):v,snr:v=>v+"dB",sampleRate:v=>v+"kHz",lanSpeed:v=>v,tg:v=>v?"Yes":"No",usb_c:v=>v?"Yes":"No",ecc:v=>v?"Yes":"No",rgb:v=>v?"Yes":"No",igpu:v=>v?"Yes":"No",vcache:v=>v?"Yes":"No",serverCPU:v=>v?"Yes":"No",atx3:v=>v?"Yes":"No",dram:v=>v?"Yes":"No",wireless:v=>v?"Yes":"No",curved:v=>v?"Yes":"No",hotswap:v=>v?"Yes":"No",anc:v=>v?"Yes":"No",mic:v=>typeof v==="boolean"?(v?"Yes":"No"):v,hasAmp:v=>v?"Yes":"No",autofocus:v=>v?"Yes":"No",wol:v=>v?"Yes":"No",vlan:v=>v?"Yes":"No",pxe:v=>v?"Yes":"No",digitalOut:v=>v?"Yes":"No",heatsink:v=>v?"Yes":"No",pwm:v=>v?"Yes":"No",impedance:v=>v+"Ω",pcie:v=>String(v).startsWith("Gen")?v:"Gen"+v,fanSize:v=>typeof v==="number"?v+"mm":v,fans_inc:v=>v+(v===1?" fan":" fans"),socket:v=>typeof v==="string"?v.toUpperCase():v,chipset:v=>typeof v==="string"?v.toUpperCase():v,memType:v=>typeof v==="string"?v.toUpperCase():v,panel:v=>typeof v==="string"?v.toUpperCase():v,upc:v=>{if(!v)return"—";const list=String(v).split(",").map(x=>x.trim()).filter(Boolean);return list.length>1?list[0]+" (+"+(list.length-1)+")":list[0];},rads:v=>{if(!v)return"None";const sizes=String(v).split(",").map(s=>s.trim());const max=Math.max(...sizes.map(s=>parseInt(s)||0));return max>=360?"Up to 360mm":max>=280?"Up to 280mm":max>=240?"Up to 240mm":max>=120?"120mm only":"None";}};
+const SF={cores:(v,p)=>p&&p.threads?v+"C/"+p.threads+"T":v+"C",sticks:(v,p)=>{if(!v)return v;const total=p&&(p.cap||p.capacity);if(total&&v>0){const per=Math.round(total/v);return v+"x"+per+"GB";}return v+"x";},tdp:v=>v+"W",vram:v=>typeof v==="number"?v+"GB":v,cap:v=>typeof v==="number"?(v>=1000?(Math.round(v/100)/10).toString().replace(/\.0$/,"")+"TB":v+"GB"):v,speed:v=>v+"MHz",watts:v=>v+"W",wifi:v=>v||"None",refresh:v=>v+"Hz",screenSize:v=>v+'"',bench:v=>v+"%",baseClock:v=>v+"GHz",boostClock:v=>v+"GHz",length:v=>v+"mm",seq_r:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",seq_w:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",noise:v=>{const n=typeof v==="number"?v:parseFloat(v);if(isNaN(n))return v;const ref=n<=15?"Near silent":n<=20?"Whisper quiet":n<=25?"Library quiet":n<=30?"Quiet room":n<=35?"Light hum":n<=40?"Noticeable":"Loud";return n+"dBA\n"+ref;},tdp_rating:v=>v+"W",maxGPU:v=>v+"mm",maxCooler:v=>v+"mm",cfm:v=>typeof v==="number"?v.toFixed(1)+" CFM":v,dpi:v=>v>=1000?(v/1000)+"K":v,weight:v=>{if(v==null)return"—";if(typeof v==="number")return v+"g";const s=String(v);let m=s.match(/([\d.]+)\s*(kilogram|kg)/i);if(m)return(parseFloat(m[1])*2.20462).toFixed(1)+" lbs";m=s.match(/([\d.]+)\s*(gram|g)\b/i);if(m)return(parseFloat(m[1])/453.592).toFixed(2)+" lbs";m=s.match(/([\d.]+)\s*(pound|lb|lbs)/i);if(m)return parseFloat(m[1]).toFixed(1)+" lbs";m=s.match(/([\d.]+)\s*(ounce|oz)/i);if(m)return(parseFloat(m[1])/16).toFixed(2)+" lbs";return s;},cl:v=>"CL"+v,driver:v=>v+"mm",height:v=>v+"mm",voltage:v=>v+"V",boost:v=>v+"MHz",tier:v=>typeof v==="string"?v.charAt(0).toUpperCase()+v.slice(1):v,snr:v=>v+"dB",sampleRate:v=>v+"kHz",lanSpeed:v=>v,tg:v=>v?"Yes":"No",usb_c:v=>v?"Yes":"No",ecc:v=>v?"Yes":"No",rgb:v=>v?"Yes":"No",igpu:v=>v?"Yes":"No",vcache:v=>v?"Yes":"No",serverCPU:v=>v?"Yes":"No",atx3:v=>v?"Yes":"No",dram:v=>v?"Yes":"No",wireless:v=>v?"Yes":"No",curved:v=>v?"Yes":"No",hotswap:v=>v?"Yes":"No",anc:v=>v?"Yes":"No",mic:v=>typeof v==="boolean"?(v?"Yes":"No"):v,hasAmp:v=>v?"Yes":"No",autofocus:v=>v?"Yes":"No",wol:v=>v?"Yes":"No",vlan:v=>v?"Yes":"No",pxe:v=>v?"Yes":"No",digitalOut:v=>v?"Yes":"No",heatsink:v=>v?"Yes":"No",pwm:v=>v?"Yes":"No",impedance:v=>v+"Ω",pcie:v=>String(v).startsWith("Gen")?v:"Gen"+v,fanSize:v=>typeof v==="number"?v+"mm":v,fans_inc:v=>v+(v===1?" fan":" fans"),socket:v=>typeof v==="string"?v.toUpperCase():v,chipset:v=>typeof v==="string"?v.toUpperCase():v,memType:v=>typeof v==="string"?v.toUpperCase():v,panel:v=>typeof v==="string"?v.toUpperCase():v,upc:v=>{if(!v)return"—";const list=String(v).split(",").map(x=>x.trim()).filter(Boolean);return list.length>1?list[0]+" (+"+(list.length-1)+")":list[0];},rads:v=>{if(!v)return"None";const sizes=String(v).split(",").map(s=>s.trim());const max=Math.max(...sizes.map(s=>parseInt(s)||0));return max>=360?"Up to 360mm":max>=280?"Up to 280mm":max>=240?"Up to 240mm":max>=120?"120mm only":"None";}};
 const fmt=(k,v,p)=>v==null?"—":(SF[k]?SF[k](v,p):String(v));
 
 // ── Map old category names and make all parts available ──
@@ -108,6 +108,7 @@ const $ = p => {
   return (p.off && p.off > 0) ? base - p.off : base;
 };
 const msrp = p => p.msrp || p.pr;
+const fmtPrice = n => { if (n == null) return '0'; const r = Math.round(n * 100) / 100; return r % 1 === 0 ? String(r) : r.toFixed(2); };
 const retailers = p => {
   if (!p.deals || typeof p.deals !== "object") return [];
   return Object.entries(p.deals)
@@ -155,7 +156,7 @@ function PriceCompare({part}) {
             {i===0 && <Tag color="var(--mint)">BEST</Tag>}
             {!r.inStock && <Tag color="var(--rose)">OOS</Tag>}
           </div>
-          <span style={{fontFamily:"var(--mono)",fontSize:12,fontWeight:700,color:i===0?"var(--mint)":"var(--txt)"}}>${r.price}</span>
+          <span style={{fontFamily:"var(--mono)",fontSize:12,fontWeight:700,color:i===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
         </a>
       ))}
     </div>
@@ -170,7 +171,7 @@ const css=`@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;4
 .mega-in{animation:mIn .2s cubic-bezier(.16,1,.3,1)}@keyframes mIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
 .fade{animation:fIn .35s cubic-bezier(.16,1,.3,1)}@keyframes fIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 .card{background:var(--card,var(--bg2));border-radius:16px;border:1px solid var(--bdr);box-shadow:var(--shadowSm);transition:all .25s cubic-bezier(.16,1,.3,1)}.card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
-input[type=range]{-webkit-appearance:none;background:transparent;cursor:pointer}input[type=range]::-webkit-slider-track{height:6px;border-radius:3px;background:var(--bdr2)}input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--accent);margin-top:-6px;border:2px solid var(--bg);box-shadow:0 2px 8px rgba(255,107,53,.4)}input[type=range]::-moz-range-track{height:6px;border-radius:3px;background:var(--bdr2);border:none}input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--accent);border:2px solid var(--bg);box-shadow:0 2px 8px rgba(255,107,53,.4)}select{-webkit-appearance:none}
+input[type=range]{-webkit-appearance:none;background:transparent;cursor:pointer}input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:#c8bfb2}input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--accent);margin-top:-5px;border:2px solid var(--bg2);box-shadow:0 1px 3px rgba(0,0,0,.15)}input[type=range]::-moz-range-track{height:6px;border-radius:3px;background:#c8bfb2;border:none}input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--accent);border:2px solid var(--bg);box-shadow:0 2px 8px rgba(255,107,53,.4)}select{-webkit-appearance:none}
 @media(max-width:768px){.hero-grid{grid-template-columns:1fr!important}.cat-grid{grid-template-columns:repeat(3,1fr)!important}.deals-grid{grid-template-columns:1fr!important}.how-grid{grid-template-columns:1fr!important}.search-layout{grid-template-columns:1fr!important}.footer-grid{grid-template-columns:1fr 1fr!important;gap:20px!important}.hero-stats{grid-template-columns:1fr 1fr!important}}
 @media(max-width:480px){.cat-grid{grid-template-columns:repeat(2,1fr)!important}.footer-grid{grid-template-columns:1fr!important}}`;
 
@@ -363,7 +364,7 @@ function MegaMenu({onSelect,onClose,th}){
   return <div className="mega-in" style={{position:"absolute",top:"100%",left:0,right:0,background:"var(--bg2)",borderBottom:"1px solid var(--bdr2)",zIndex:100,padding:"20px 0"}} onMouseLeave={onClose}>
     <div style={{maxWidth:960,margin:"0 auto",display:"flex",gap:32,padding:"0 24px"}}>
       {G.map(g=><div key={g.t} style={{flex:1}}><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)",letterSpacing:2,marginBottom:10,fontWeight:600}}>{g.t.toUpperCase()}</div>{g.cats.map(c=>{const m=CAT[c];return <button key={c} onClick={()=>{onSelect(c);onClose();}} style={{display:"flex",alignItems:"center",gap:8,padding:"7px 8px",borderRadius:6,background:"transparent",border:"none",cursor:"pointer",textAlign:"left",color:"var(--txt)",fontFamily:"var(--ff)",width:"100%"}}><CatThumb cat={c} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={32} rounded={6} editable={false}/><div style={{flex:1}}><div style={{fontSize:12,fontWeight:600}}>{m.label}</div><div style={{fontSize:9,color:"var(--dim)"}}>{m.desc}</div></div><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)"}}>{P.filter(p=>p.c===c).length}</span></button>})}</div>)}
-      <div style={{width:180,background:"var(--bg3)",borderRadius:10,padding:14}}><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--amber)",letterSpacing:1,marginBottom:6}}>🔥 TRENDING</div>{P.filter(p=>p.bench>=95).slice(0,3).map(p=><div key={p.id} style={{display:"flex",justifyContent:"space-between",padding:"5px 0",borderBottom:"1px solid var(--bdr)"}}><span style={{fontSize:11,color:"var(--txt)"}}>{p.n}</span><span style={{fontSize:10,color:"var(--mint)",fontFamily:"var(--mono)",fontWeight:600}}>${$(p)}</span></div>)}</div>
+      <div style={{width:180,background:"var(--bg3)",borderRadius:10,padding:14}}><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--amber)",letterSpacing:1,marginBottom:6}}>🔥 TRENDING</div>{P.filter(p=>p.bench>=95).slice(0,3).map(p=><div key={p.id} style={{display:"flex",justifyContent:"space-between",padding:"5px 0",borderBottom:"1px solid var(--bdr)"}}><span style={{fontSize:11,color:"var(--txt)"}}>{p.n}</span><span style={{fontSize:10,color:"var(--mint)",fontFamily:"var(--mono)",fontWeight:600}}>${fmtPrice($(p))}</span></div>)}</div>
     </div>
   </div>;
 }
@@ -501,8 +502,8 @@ function HomePage({go,browse,th}){
                 </div>
               </div>
               <div style={{textAlign:"right",flexShrink:0}}>
-                <div style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:"var(--accent)"}}>${$(p)}</div>
-                <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--mute)",textDecoration:"line-through"}}>${p.msrp||p.pr}</div>
+                <div style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:"var(--accent)"}}>${fmtPrice($(p))}</div>
+                <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>
               </div>
             </button>)}
           </div>
@@ -524,7 +525,7 @@ function HomePage({go,browse,th}){
                 <Stars r={p.r} s={10}/>
               </div>
               <div style={{width:90}}><SBar v={p.bench}/></div>
-              <div style={{fontFamily:"var(--mono)",fontSize:14,fontWeight:700,color:"var(--accent)",minWidth:45,textAlign:"right"}}>${$(p)}</div>
+              <div style={{fontFamily:"var(--mono)",fontSize:14,fontWeight:700,color:"var(--accent)",minWidth:45,textAlign:"right"}}>${fmtPrice($(p))}</div>
             </button>)}
           </div>
         </div>
@@ -554,6 +555,7 @@ function HomePage({go,browse,th}){
 function SearchPage({activeCat,th}){
   const [cat,setCat]=useState(activeCat||"");const [q,setQ]=useState("");const [brands,setBrands]=useState([]);const [marketplaces,setMarketplaces]=useState([]);const [maxPr,setMaxPr]=useState(5000);const [minPr,setMinPr]=useState(0);const [minR,setMinR]=useState(0);const [cpO,setCpO]=useState(false);const [sf,setSf]=useState({});const [sort,setSort]=useState("price-asc");
   const [expanded,setExpanded]=useState(null);
+  const [showAll,setShowAll]=useState({});
   useEffect(()=>{if(activeCat)setCat(activeCat);},[activeCat]);
   const sel=c=>{setCat(c);setBrands([]);setMarketplaces([]);setSf({});setQ("");setMaxPr(5000);setMinPr(0);setMinR(0);setCpO(false);};
   const catP=cat?P.filter(p=>p.c===cat):P;const allBr=[...new Set(catP.map(p=>p.b))].sort();const allMarkets=[...new Set(catP.flatMap(p=>p.deals&&typeof p.deals==="object"?Object.keys(p.deals).filter(k=>p.deals[k]&&typeof p.deals[k]==="object"&&p.deals[k].price):[]))].sort();const cols=cat?(CAT[cat]?.cols||[]):[];const prMx=Math.max(...catP.map(p=>$(p)),100);
@@ -578,7 +580,7 @@ function SearchPage({activeCat,th}){
           <input type="range" min={0} max={Math.ceil(prMx/50)*50} value={Math.min(maxPr,Math.ceil(prMx/50)*50)} onChange={e=>setMaxPr(+e.target.value)} style={{width:"100%"}}/>
           <div style={{display:"flex",justifyContent:"space-between",marginTop:2}}><span style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--mute)"}}>${minPr}</span><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)",fontWeight:600}}>to ${maxPr>=5000?"∞":"$"+maxPr}</span></div>
         </FG>
-        <FG label="BRAND" open={true}>{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={catP.filter(p=>p.b===b).length}/>)}</FG>
+        <FG label="BRAND">{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={catP.filter(p=>p.b===b).length}/>)}</FG>
         {allMarkets.length>0&&<FG label="MARKETPLACE" open={true}>{allMarkets.map(m=>{const cap=m.charAt(0).toUpperCase()+m.slice(1);const cnt=catP.filter(p=>p.deals&&typeof p.deals==="object"&&p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price).length;return <Chk key={m} label={cap} checked={marketplaces.includes(m)} onChange={()=>setMarketplaces(p=>p.includes(m)?p.filter(x=>x!==m):[...p,m])} count={cnt}/>;})}</FG>}
         <FG label="RATING">{[4.5,4,0].map(rv=><Chk key={rv} label={rv?`${rv}+ ★`:"All"} checked={minR===rv} onChange={()=>setMinR(minR===rv?0:rv)}/>)}</FG>
         {/* Category-specific filters */}
@@ -609,8 +611,8 @@ function SearchPage({activeCat,th}){
           const opts=uv(cat,field);
           if(!opts.length)return null;
           return <FG key={field} label={cfg.label.toUpperCase()}>
-            {opts.slice(0,20).map(v=><Chk key={v} label={fmt(field,isNaN(v)?v:+v)} checked={(sf[field]||[]).includes(v)} onChange={()=>togSf(field,v)} count={catP.filter(p=>String(p[field])===v).length}/>)}
-            {opts.length>20&&<span style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)"}}>+{opts.length-20} more</span>}
+            {(showAll[field]?opts:opts.slice(0,20)).map(v=><Chk key={v} label={fmt(field,isNaN(v)?v:+v)} checked={(sf[field]||[]).includes(v)} onChange={()=>togSf(field,v)} count={catP.filter(p=>String(p[field])===v).length}/>)}
+            {opts.length>20&&<button onClick={()=>setShowAll(s=>({...s,[field]:!s[field]}))} style={{background:'none',border:'none',padding:'4px 0',cursor:'pointer',fontFamily:'var(--mono)',fontSize:9,color:'var(--sky)',textAlign:'left',width:'100%'}}>{showAll[field]?'- show less':'+ '+(opts.length-20)+' more'}</button>}
           </FG>;
         })}
       </div>
@@ -642,7 +644,7 @@ function SearchPage({activeCat,th}){
               <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}>{p.img?<img src={p.img} alt="" style={{width:40,height:40,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:18,width:40,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2}}><span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}</div></div></div>
               {cols.map(col=>{const v=p[col];const fmtVal=fmt(col,v,p);return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:typeof fmtVal==="string"&&fmtVal.includes("\n")?<div><div style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal.split("\n")[0]}</div><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{fmtVal.split("\n")[1]}</div></div>:<span style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal}</span>}</div>})}
               {(()=>{if(p.bench==null)return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)"}}>—</span></div>;const ratio=Math.round((p.bench/Math.max($(p)/100,1))*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:800,color:gc}}>{grade}</span></div>;})()}
-              <div style={{textAlign:"right"}}>{(p.msrp&&p.msrp>$(p)||p.off>0)&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--mute)",textDecoration:"line-through"}}>${p.msrp||p.pr}</div>}<div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--mint)"}}>${$(p)}</div>{rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{rr.length} stores</div>}</div>
+              <div style={{textAlign:"right"}}>{(p.msrp&&p.msrp>$(p)||p.off>0)&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>}<div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</div>{rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{rr.length} stores</div>}</div>
               <div style={{display:"flex",justifyContent:"flex-end"}} onClick={e=>{e.stopPropagation();setExpanded(isExp?null:p.id);}}>
                 <button style={{background:isExp?"var(--bg4)":"var(--mint)",border:isExp?"1px solid var(--mint)":"none",borderRadius:6,padding:"6px 14px",cursor:"pointer",fontFamily:"var(--ff)",fontSize:10,fontWeight:700,color:isExp?"var(--mint)":"var(--bg)",transition:"all .15s"}}>{isExp?"Close":"Buy →"}</button>
               </div>
@@ -674,13 +676,13 @@ function SearchPage({activeCat,th}){
                           <div style={{fontFamily:"var(--ff)",fontSize:11,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
                         </div>
                         <div style={{display:"flex",alignItems:"center",gap:12}}>
-                          <span style={{fontFamily:"var(--ff)",fontSize:20,fontWeight:800,color:ri===0?"var(--mint)":"var(--txt)"}}>${r.price}</span>
+                          <span style={{fontFamily:"var(--ff)",fontSize:20,fontWeight:800,color:ri===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
                           <div style={{background:ri===0?"var(--mint)":"var(--bg3)",border:ri===0?"none":"1px solid var(--bdr2)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:11,fontWeight:700,color:ri===0?"var(--bg)":"var(--txt)"}}>Buy →</div>
                         </div>
                       </a>
                     ):<a href={p.deals?.amazon?.url||"#"} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"14px 16px",borderRadius:8,background:"var(--mint3)",border:"1px solid var(--mint)33",textDecoration:"none"}}>
                         <div><span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>Amazon</span><div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--sky)",marginTop:3}}>✓ In Stock</div></div>
-                        <div style={{display:"flex",alignItems:"center",gap:12}}><span style={{fontFamily:"var(--ff)",fontSize:20,fontWeight:800,color:"var(--mint)"}}>${$(p)}</span><div style={{background:"var(--mint)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:11,fontWeight:700,color:"var(--bg)"}}>Buy →</div></div>
+                        <div style={{display:"flex",alignItems:"center",gap:12}}><span style={{fontFamily:"var(--ff)",fontSize:20,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span><div style={{background:"var(--mint)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:11,fontWeight:700,color:"var(--bg)"}}>Buy →</div></div>
                       </a>}
                     {rr.length>0&&ALL_RETAILERS.filter(name=>!rr.some(r=>r.name===name)).map(name=>{
                       const cap=name.charAt(0).toUpperCase()+name.slice(1);
@@ -695,7 +697,7 @@ function SearchPage({activeCat,th}){
                   </div>
                   {(p.r||p.reviews)&&<div style={{marginTop:10,display:"flex",justifyContent:"center",padding:"8px 0"}}><ReviewStars rating={p.r} reviews={p.reviews} size="md"/></div>}
                   {rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)",textAlign:"center",marginTop:8}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(rr[rr.length-1].price-rr[0].price).toFixed(2)}</span> at {rr[0].name} vs {rr[rr.length-1].name}</div>}
-                  {p.msrp&&p.msrp>$(p)&&<div style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:6,background:"var(--bg4)",border:"1px solid var(--bdr)",marginTop:8}}><span style={{fontSize:16}}>💰</span><div style={{flex:1}}><div style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>Below MSRP</div><div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)"}}>Was <span style={{textDecoration:"line-through"}}>${p.msrp}</span> → ${$(p)}</div></div><span style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--mint)"}}>{Math.round((1-$(p)/p.msrp)*100)}% off</span></div>}
+                  {p.msrp&&p.msrp>$(p)&&<div style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:6,background:"var(--bg4)",border:"1px solid var(--bdr)",marginTop:8}}><span style={{fontSize:16}}>💰</span><div style={{flex:1}}><div style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>Below MSRP</div><div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)"}}>Was <span style={{textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span> → ${fmtPrice($(p))}</div></div><span style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--mint)"}}>{Math.round((1-$(p)/p.msrp)*100)}% off</span></div>}
                   {/* Product Image */}
                   {p.img&&<div style={{marginTop:14,background:"var(--bg4)",borderRadius:10,padding:16,display:"flex",alignItems:"center",justifyContent:"center"}}>
                     <img src={p.img.replace('_AC_SL300_','_AC_SL500_')} alt={p.n} style={{maxWidth:"100%",maxHeight:220,objectFit:"contain",borderRadius:6}}/>
@@ -713,7 +715,7 @@ function SearchPage({activeCat,th}){
                       <div><div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)"}}>{ratio.toFixed(1)}</div><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:gc}}>{gl}</div></div>
                     </div>
                     <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",lineHeight:1.6,background:"var(--bg2)",borderRadius:8,padding:"10px 12px"}}>
-                      Performance ({p.bench}%) ÷ Price (${$(p)}) = <span style={{color:"var(--txt)",fontWeight:600}}>{ratio.toFixed(1)}</span><br/>
+                      Performance ({p.bench}%) ÷ Price (${fmtPrice($(p))}) = <span style={{color:"var(--txt)",fontWeight:600}}>{ratio.toFixed(1)}</span><br/>
                       <span style={{color:"var(--mute)"}}>S ≥28 · A ≥20 · B ≥14 · C ≥8 · D &lt;8</span>
                     </div></div>;})()}
                 </div>}
@@ -991,8 +993,8 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
               </div>
               {cols.map(col=>{const v=p[col];return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:<span style={{fontFamily:"var(--mono)",fontSize:10,color:v!=null?"var(--txt)":"var(--mute)"}}>{fmt(col,v)}</span>}</div>})}
               <div style={{textAlign:"right"}}>
-                {(p.msrp&&p.msrp>$(p))&&<div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--mute)",textDecoration:"line-through"}}>${p.msrp}</div>}
-                <div style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--mint)"}}>${$(p)}</div>
+                {(p.msrp&&p.msrp>$(p))&&<div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</div>}
+                <div style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</div>
               </div>
               <div style={{display:"flex",justifyContent:"center"}} onClick={e=>e.stopPropagation()}>
                 <button onClick={()=>onAdd(p)} style={{background:"var(--mint)",border:"none",borderRadius:5,padding:"5px 12px",cursor:"pointer",fontFamily:"var(--mono)",fontSize:9,fontWeight:700,color:"var(--bg)"}}>+ Add</button>
@@ -1157,13 +1159,13 @@ function BuilderPage({th}){
                   <div style={{display:"flex",gap:4,alignItems:"center",marginTop:1}}><span style={{fontSize:9,color:"var(--dim)"}}>{part.b}</span><Stars r={part.r} s={8}/>{part.cp&&<Tag color="var(--amber)">-${part.off}</Tag>}</div></div>
                 :isMulti&&parts.length?<div>{parts.map((p,pi)=><div key={p.uid} style={{display:"flex",alignItems:"center",gap:4,marginBottom:1}}>
                     <span style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--txt)",flex:1}}>{p.n}</span>
-                    <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)"}}>${$(p)}</span>
+                    <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)"}}>${fmtPrice($(p))}</span>
                     <button onClick={e=>{e.stopPropagation();delMulti(cat,p.uid);}} style={{background:"none",border:"none",color:"var(--rose)",fontSize:10,cursor:"pointer",padding:0}}>✕</button>
                   </div>)}{canAdd&&<button onClick={e=>{e.stopPropagation();setPicking(cat);}} style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--sky)",background:"none",border:"none",cursor:"pointer",padding:0}}>+ Add another</button>}</div>
                 :<button onClick={e=>{e.stopPropagation();setPicking(isPicking2?null:cat);}} style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--sky)",background:"var(--sky)08",border:"1px dashed var(--sky)33",borderRadius:5,padding:"4px 10px",cursor:"pointer"}}>+ Choose {meta.singular||cat}</button>}
               </div>
               <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--txt)",opacity:.7}}>{part?specSummary(cat,part):isMulti&&parts.length?parts.length+" selected":""}</div>
-              <div style={{textAlign:"right"}}>{part?<div style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--mint)"}}>${$(part)}</div>
+              <div style={{textAlign:"right"}}>{part?<div style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(part))}</div>
                 :isMulti&&parts.length?<div style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--mint)"}}>${parts.reduce((s,p)=>s+$(p),0)}</div>
                 :<span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--mute)"}}>—</span>}</div>
               <div style={{textAlign:"center"}}>{part&&<button onClick={e=>{e.stopPropagation();del(cat);}} style={{background:"none",border:"none",color:"var(--rose)",fontSize:12,cursor:"pointer",opacity:.5}}>✕</button>}</div>
@@ -1276,7 +1278,7 @@ function CommunityPage({th}){
           <div style={{marginTop:10,paddingTop:8,borderTop:"1px solid var(--bdr)"}}>
             {parts.map(p=><div key={p.id} style={{display:"flex",justifyContent:"space-between",padding:"2px 0"}}>
               <span style={{fontSize:10,color:"var(--txt)",fontFamily:"var(--ff)"}}>{ic(p)} {p.n}</span>
-              <span style={{fontSize:10,color:"var(--mint)",fontFamily:"var(--mono)"}}>${$(p)}</span>
+              <span style={{fontSize:10,color:"var(--mint)",fontFamily:"var(--mono)"}}>${fmtPrice($(p))}</span>
             </div>)}
           </div>
           {fpsGames.length>0&&<div style={{marginTop:10,paddingTop:8,borderTop:"1px solid var(--bdr)"}}>
@@ -1615,7 +1617,7 @@ function ToolsPage({th}){
       </div>
       <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20,minHeight:180}}>
         {!cmpResult&&<div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"var(--mute)",fontFamily:"var(--ff)",fontSize:13}}>Enter two parts to compare →</div>}
-        {cmpResult&&<><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--violet)",letterSpacing:1,marginBottom:10}}>COMPARISON</div><div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>{[cmpResult.a,cmpResult.b].map(p=><div key={p.id} style={{textAlign:"center"}}><div style={{fontSize:20}}>{ic(p)}</div><div style={{fontSize:12,fontWeight:600,color:"var(--txt)",marginTop:3,fontFamily:"var(--ff)"}}>{p.n}</div><div style={{fontSize:9,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</div><div style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:"var(--mint)",marginTop:4}}>${$(p)}</div><Stars r={p.r}/>{p.bench!=null&&<div style={{marginTop:4}}><SBar v={p.bench}/></div>}</div>)}</div>{cmpResult.a.bench!=null&&cmpResult.b.bench!=null&&<div style={{marginTop:10,padding:6,borderRadius:6,background:"#a78bfa15",textAlign:"center",fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--violet)"}}>{cmpResult.a.bench>cmpResult.b.bench?`${cmpResult.a.n} is ${cmpResult.a.bench-cmpResult.b.bench}% faster`:cmpResult.b.bench>cmpResult.a.bench?`${cmpResult.b.n} is ${cmpResult.b.bench-cmpResult.a.bench}% faster`:"Tied!"}</div>}</>}
+        {cmpResult&&<><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--violet)",letterSpacing:1,marginBottom:10}}>COMPARISON</div><div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>{[cmpResult.a,cmpResult.b].map(p=><div key={p.id} style={{textAlign:"center"}}><div style={{fontSize:20}}>{ic(p)}</div><div style={{fontSize:12,fontWeight:600,color:"var(--txt)",marginTop:3,fontFamily:"var(--ff)"}}>{p.n}</div><div style={{fontSize:9,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</div><div style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:"var(--mint)",marginTop:4}}>${fmtPrice($(p))}</div><Stars r={p.r}/>{p.bench!=null&&<div style={{marginTop:4}}><SBar v={p.bench}/></div>}</div>)}</div>{cmpResult.a.bench!=null&&cmpResult.b.bench!=null&&<div style={{marginTop:10,padding:6,borderRadius:6,background:"#a78bfa15",textAlign:"center",fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--violet)"}}>{cmpResult.a.bench>cmpResult.b.bench?`${cmpResult.a.n} is ${cmpResult.a.bench-cmpResult.b.bench}% faster`:cmpResult.b.bench>cmpResult.a.bench?`${cmpResult.b.n} is ${cmpResult.b.bench-cmpResult.a.bench}% faster`:"Tied!"}</div>}</>}
       </div>
     </div>}
 
@@ -1724,7 +1726,7 @@ function ToolsPage({th}){
               <span style={{fontSize:14}}>{CAT[cat]?.icon}</span>
               <div><div style={{fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--txt)"}}>{p.n}</div><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>{CAT[cat]?.singular}</div></div>
             </div>
-            <span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--mint)"}}>${$(p)}</span>
+            <span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</span>
           </div>)}
           <div style={{display:"flex",justifyContent:"space-between",padding:"10px 10px",marginTop:8,borderTop:"1px solid var(--bdr)"}}>
             <span style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>Total</span>
@@ -1871,7 +1873,7 @@ function UpgradePage(){
         {part.bench&&<div style={{marginTop:4,width:"60%"}}><SBar v={part.bench}/></div>}
       </div>
       <div style={{textAlign:"right",flexShrink:0}}>
-        <div style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:"var(--accent)"}}>${$(part)}</div>
+        <div style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:"var(--accent)"}}>${fmtPrice($(part))}</div>
         {best&&<a href={best.url} target="_blank" rel="noopener noreferrer" style={{display:"inline-block",marginTop:4,padding:"4px 10px",borderRadius:6,background:"var(--accent)",color:"#fff",fontFamily:"var(--mono)",fontSize:9,fontWeight:700,textDecoration:"none"}}>Buy at {best.name} →</a>}
       </div>
     </div>;

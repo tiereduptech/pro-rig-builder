@@ -8074,8 +8074,8 @@ export const PARTS = [
     "msrp": 229,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "2TB",
-    "interface": "5.0",
+    "cap": 2000,
+    "interface": "PCIe Gen 5 x4",
     "ff": "M.2 2280",
     "seq_r": 12400,
     "seq_w": 11800,
@@ -8099,8 +8099,8 @@ export const PARTS = [
     "msrp": 149,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "1TB",
-    "interface": "5.0",
+    "cap": 1000,
+    "interface": "PCIe Gen 5 x4",
     "ff": "M.2 2280",
     "seq_r": 12400,
     "seq_w": 11800,
@@ -8124,8 +8124,8 @@ export const PARTS = [
     "msrp": 169,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "2TB",
-    "interface": "5.0",
+    "cap": 2000,
+    "interface": "PCIe Gen 5 x4",
     "ff": "M.2 2280",
     "seq_r": 10000,
     "seq_w": 10000,
@@ -8149,8 +8149,8 @@ export const PARTS = [
     "msrp": 99,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "1TB",
-    "interface": "5.0",
+    "cap": 1000,
+    "interface": "PCIe Gen 5 x4",
     "ff": "M.2 2280",
     "seq_r": 10000,
     "seq_w": 10000,
@@ -8174,8 +8174,8 @@ export const PARTS = [
     "msrp": 219,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "2TB",
-    "interface": "5.0",
+    "cap": 2000,
+    "interface": "PCIe Gen 5 x4",
     "ff": "M.2 2280",
     "seq_r": 12400,
     "seq_w": 11800,
@@ -8199,8 +8199,8 @@ export const PARTS = [
     "msrp": 129,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "2TB",
-    "interface": "4.0",
+    "cap": 2000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 7300,
     "seq_w": 6600,
@@ -8224,8 +8224,8 @@ export const PARTS = [
     "msrp": 139,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "2TB",
-    "interface": "4.0",
+    "cap": 2000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 7450,
     "seq_w": 6900,
@@ -8249,8 +8249,8 @@ export const PARTS = [
     "msrp": 89,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "1TB",
-    "interface": "4.0",
+    "cap": 1000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 7450,
     "seq_w": 6900,
@@ -8274,8 +8274,8 @@ export const PARTS = [
     "msrp": 79,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "1TB",
-    "interface": "4.0",
+    "cap": 1000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 7300,
     "seq_w": 6300,
@@ -8299,8 +8299,8 @@ export const PARTS = [
     "msrp": 79,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "1TB",
-    "interface": "4.0",
+    "cap": 1000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 7000,
     "seq_w": 5000,
@@ -8324,8 +8324,8 @@ export const PARTS = [
     "msrp": 129,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "2TB",
-    "interface": "4.0",
+    "cap": 2000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 7000,
     "seq_w": 6500,
@@ -8349,8 +8349,8 @@ export const PARTS = [
     "msrp": 69,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "1TB",
-    "interface": "4.0",
+    "cap": 1000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 7000,
     "seq_w": 6500,
@@ -8374,8 +8374,8 @@ export const PARTS = [
     "msrp": 119,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "2TB",
-    "interface": "4.0",
+    "cap": 2000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 7400,
     "seq_w": 7000,
@@ -8399,8 +8399,8 @@ export const PARTS = [
     "msrp": 69,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "1TB",
-    "interface": "4.0",
+    "cap": 1000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 7400,
     "seq_w": 7000,
@@ -8424,8 +8424,8 @@ export const PARTS = [
     "msrp": 54,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "1TB",
-    "interface": "4.0",
+    "cap": 1000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 4150,
     "seq_w": 4150,
@@ -8449,8 +8449,8 @@ export const PARTS = [
     "msrp": 99,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "2TB",
-    "interface": "4.0",
+    "cap": 2000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 4150,
     "seq_w": 4150,
@@ -8474,8 +8474,8 @@ export const PARTS = [
     "msrp": 39,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "1TB",
-    "interface": "4.0",
+    "cap": 1000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 3500,
     "seq_w": 2100,
@@ -8499,8 +8499,8 @@ export const PARTS = [
     "msrp": 74,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "2TB",
-    "interface": "4.0",
+    "cap": 2000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 3500,
     "seq_w": 2800,
@@ -8524,8 +8524,8 @@ export const PARTS = [
     "msrp": 129,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "2TB",
-    "interface": "4.0",
+    "cap": 2000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 7100,
     "seq_w": 6600,
@@ -8549,8 +8549,8 @@ export const PARTS = [
     "msrp": 79,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "1TB",
-    "interface": "4.0",
+    "cap": 1000,
+    "interface": "PCIe Gen 4 x4",
     "ff": "M.2 2280",
     "seq_r": 7100,
     "seq_w": 6600,
@@ -8574,8 +8574,8 @@ export const PARTS = [
     "msrp": 79,
     "r": 4.5,
     "storageType": "SATA",
-    "cap": "1TB",
-    "interface": "SATA III",
+    "cap": 1000,
+    "interface": "SATA",
     "ff": "2.5 inch",
     "seq_r": 560,
     "seq_w": 530,
@@ -8599,8 +8599,8 @@ export const PARTS = [
     "msrp": 139,
     "r": 4.5,
     "storageType": "SATA",
-    "cap": "2TB",
-    "interface": "SATA III",
+    "cap": 2000,
+    "interface": "SATA",
     "ff": "2.5 inch",
     "seq_r": 560,
     "seq_w": 530,
@@ -8624,8 +8624,8 @@ export const PARTS = [
     "msrp": 44,
     "r": 4.5,
     "storageType": "SATA",
-    "cap": "500GB",
-    "interface": "SATA III",
+    "cap": 500,
+    "interface": "SATA",
     "ff": "2.5 inch",
     "seq_r": 560,
     "seq_w": 530,
@@ -8649,8 +8649,8 @@ export const PARTS = [
     "msrp": 59,
     "r": 4.5,
     "storageType": "SATA",
-    "cap": "1TB",
-    "interface": "SATA III",
+    "cap": 1000,
+    "interface": "SATA",
     "ff": "2.5 inch",
     "seq_r": 560,
     "seq_w": 510,
@@ -8674,8 +8674,8 @@ export const PARTS = [
     "msrp": 99,
     "r": 4.5,
     "storageType": "SATA",
-    "cap": "2TB",
-    "interface": "SATA III",
+    "cap": 2000,
+    "interface": "SATA",
     "ff": "2.5 inch",
     "seq_r": 560,
     "seq_w": 510,
@@ -8699,8 +8699,8 @@ export const PARTS = [
     "msrp": 59,
     "r": 4.5,
     "storageType": "SATA",
-    "cap": "1TB",
-    "interface": "SATA III",
+    "cap": 1000,
+    "interface": "SATA",
     "ff": "2.5 inch",
     "seq_r": 560,
     "seq_w": 520,
@@ -8724,8 +8724,8 @@ export const PARTS = [
     "msrp": 29,
     "r": 4.5,
     "storageType": "SATA",
-    "cap": "480GB",
-    "interface": "SATA III",
+    "cap": 480,
+    "interface": "SATA",
     "ff": "2.5 inch",
     "seq_r": 500,
     "seq_w": 450,
@@ -8749,8 +8749,8 @@ export const PARTS = [
     "msrp": 54,
     "r": 4.5,
     "storageType": "HDD",
-    "cap": "2TB",
-    "interface": "SATA III",
+    "cap": 2000,
+    "interface": "SATA",
     "ff": "3.5 inch",
     "seq_r": 220,
     "seq_w": 220,
@@ -8773,8 +8773,8 @@ export const PARTS = [
     "msrp": 74,
     "r": 4.5,
     "storageType": "HDD",
-    "cap": "4TB",
-    "interface": "SATA III",
+    "cap": 4000,
+    "interface": "SATA",
     "ff": "3.5 inch",
     "seq_r": 190,
     "seq_w": 190,
@@ -8797,8 +8797,8 @@ export const PARTS = [
     "msrp": 119,
     "r": 4.5,
     "storageType": "HDD",
-    "cap": "8TB",
-    "interface": "SATA III",
+    "cap": 8000,
+    "interface": "SATA",
     "ff": "3.5 inch",
     "seq_r": 190,
     "seq_w": 190,
@@ -8821,8 +8821,8 @@ export const PARTS = [
     "msrp": 39,
     "r": 4.5,
     "storageType": "HDD",
-    "cap": "1TB",
-    "interface": "SATA III",
+    "cap": 1000,
+    "interface": "SATA",
     "ff": "3.5 inch",
     "seq_r": 150,
     "seq_w": 150,
@@ -8845,8 +8845,8 @@ export const PARTS = [
     "msrp": 49,
     "r": 4.5,
     "storageType": "HDD",
-    "cap": "2TB",
-    "interface": "SATA III",
+    "cap": 2000,
+    "interface": "SATA",
     "ff": "3.5 inch",
     "seq_r": 150,
     "seq_w": 150,
@@ -8869,8 +8869,8 @@ export const PARTS = [
     "msrp": 69,
     "r": 4.5,
     "storageType": "HDD",
-    "cap": "4TB",
-    "interface": "SATA III",
+    "cap": 4000,
+    "interface": "SATA",
     "ff": "3.5 inch",
     "seq_r": 175,
     "seq_w": 175,
@@ -8893,8 +8893,8 @@ export const PARTS = [
     "msrp": 89,
     "r": 4.5,
     "storageType": "HDD",
-    "cap": "4TB",
-    "interface": "SATA III",
+    "cap": 4000,
+    "interface": "SATA",
     "ff": "3.5 inch",
     "seq_r": 180,
     "seq_w": 180,
@@ -8917,8 +8917,8 @@ export const PARTS = [
     "msrp": 169,
     "r": 4.5,
     "storageType": "HDD",
-    "cap": "8TB",
-    "interface": "SATA III",
+    "cap": 8000,
+    "interface": "SATA",
     "ff": "3.5 inch",
     "seq_r": 210,
     "seq_w": 210,
@@ -8941,8 +8941,8 @@ export const PARTS = [
     "msrp": 89,
     "r": 4.5,
     "storageType": "HDD",
-    "cap": "4TB",
-    "interface": "SATA III",
+    "cap": 4000,
+    "interface": "SATA",
     "ff": "3.5 inch",
     "seq_r": 180,
     "seq_w": 180,
@@ -8965,8 +8965,8 @@ export const PARTS = [
     "msrp": 149,
     "r": 4.5,
     "storageType": "HDD",
-    "cap": "8TB",
-    "interface": "SATA III",
+    "cap": 8000,
+    "interface": "SATA",
     "ff": "3.5 inch",
     "seq_r": 210,
     "seq_w": 210,
@@ -8989,8 +8989,8 @@ export const PARTS = [
     "msrp": 139,
     "r": 4.5,
     "storageType": "HDD",
-    "cap": "8TB",
-    "interface": "SATA III",
+    "cap": 8000,
+    "interface": "SATA",
     "ff": "3.5 inch",
     "seq_r": 270,
     "seq_w": 270,
@@ -9013,8 +9013,8 @@ export const PARTS = [
     "msrp": 299,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "1.92TB",
-    "interface": "4.0",
+    "cap": 1920,
+    "interface": "PCIe Gen 4 x4",
     "ff": "U.2",
     "seq_r": 6500,
     "seq_w": 2000,
@@ -9038,8 +9038,8 @@ export const PARTS = [
     "msrp": 279,
     "r": 4.5,
     "storageType": "NVMe",
-    "cap": "1.92TB",
-    "interface": "4.0",
+    "cap": 1920,
+    "interface": "PCIe Gen 4 x4",
     "ff": "U.2",
     "seq_r": 6800,
     "seq_w": 2700,
@@ -65859,7 +65859,7 @@ export const PARTS = [
     "upc": "763649138168",
     "mpn": "STGX5000400",
     "weight": "260 Grams",
-    "cap": "5 TB",
+    "cap": 5000,
     "form": "HDD",
     "formFactor": "Portable"
   },
@@ -65894,7 +65894,7 @@ export const PARTS = [
     "upc": "887276657004",
     "mpn": "MZ-V9P1T0B/AM",
     "weight": "0.02 Pounds",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -65930,7 +65930,7 @@ export const PARTS = [
     "upc": "887276431970",
     "mpn": "MZ-77E1T0B/AM",
     "weight": "0.19 Pounds",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -65965,7 +65965,7 @@ export const PARTS = [
     "upc": "887276657011",
     "mpn": "MZ-V9P2T0B/AM",
     "weight": "0.02 Pounds",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -65996,7 +65996,7 @@ export const PARTS = [
     "upc": "740617344790",
     "mpn": "SNV3S/1000G",
     "weight": "0.01 Pounds",
-    "cap": "1000 GB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -66027,7 +66027,7 @@ export const PARTS = [
     "upc": "649528943613",
     "mpn": "CT2000P310SSD801",
     "weight": "10 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -66058,7 +66058,7 @@ export const PARTS = [
     "upc": "649528787323",
     "mpn": "CT240BX500SSD1",
     "weight": "0.06 Kilograms",
-    "cap": "240 GB",
+    "cap": 240,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -66088,7 +66088,7 @@ export const PARTS = [
     "upc": "649528943644",
     "mpn": "CT1000P310SSD801",
     "weight": "10 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "2280 M.2"
@@ -66120,7 +66120,7 @@ export const PARTS = [
     "upc": "740617344806",
     "mpn": "SNV3S/500G",
     "weight": "6.53 g",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -66157,7 +66157,7 @@ export const PARTS = [
     "upc": "887276904917",
     "mpn": "MZ-VAP1T0B/AM",
     "weight": "0.02 Pounds",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M2"
@@ -66188,7 +66188,7 @@ export const PARTS = [
     "upc": "649528947130",
     "mpn": "CT2000T710SSD8-01",
     "weight": "0.24 Ounces",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -66218,7 +66218,7 @@ export const PARTS = [
     ],
     "mpn": "SIX SSD - 26",
     "weight": "0.08 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -66250,7 +66250,7 @@ export const PARTS = [
     "upc": "740617263442",
     "mpn": "SA400S37/480G",
     "weight": "0.05 Pounds",
-    "cap": "480 GB",
+    "cap": 480,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -66285,7 +66285,7 @@ export const PARTS = [
     "upc": "649528821553",
     "mpn": "CT1000BX500SSD1",
     "weight": "0.03 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -66320,7 +66320,7 @@ export const PARTS = [
     "upc": "887276431963",
     "mpn": "MZ-77E2T0B/AM",
     "weight": "0.19 Pounds",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -66356,7 +66356,7 @@ export const PARTS = [
     "upc": "887276795195",
     "mpn": "MZ-V9P4T0B/AM",
     "weight": "0.02 Pounds",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 (2280)"
@@ -66388,7 +66388,7 @@ export const PARTS = [
     "upc": "803788465302",
     "mpn": "WDS100T3B0A",
     "weight": "0.08 Pounds",
-    "cap": "1000 GB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -66419,7 +66419,7 @@ export const PARTS = [
     "upc": "763649161548",
     "mpn": "STKX2000400",
     "weight": "167 Grams",
-    "cap": "2000 GB",
+    "cap": 2000,
     "form": "HDD",
     "formFactor": "2.5-inch"
   },
@@ -66449,7 +66449,7 @@ export const PARTS = [
     "upc": "619659198053",
     "mpn": "WDBBYV0010BNC-WRSN",
     "weight": "30.4 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -66480,7 +66480,7 @@ export const PARTS = [
     "upc": "619659215019",
     "mpn": "WDBMPH0020BNC-WCSN",
     "weight": "0.06 Pounds",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "Custom"
   },
@@ -66510,7 +66510,7 @@ export const PARTS = [
     "upc": "718037906201",
     "mpn": "WD100EFGX-SPCPLN0",
     "weight": "1.65 Pounds",
-    "cap": "10 TB",
+    "cap": 10000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -66540,7 +66540,7 @@ export const PARTS = [
     "upc": "649528943637",
     "mpn": "CT500P310SSD801",
     "weight": "10 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -66571,7 +66571,7 @@ export const PARTS = [
     "upc": "765441060470",
     "mpn": "T253TZ001T0C101",
     "weight": "45 Grams",
-    "cap": "1024 GB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -66601,7 +66601,7 @@ export const PARTS = [
     "upc": "649528939562",
     "mpn": "CT2000X9SSD902",
     "weight": "32 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "formFactor": "Portable"
   },
   {
@@ -66629,7 +66629,7 @@ export const PARTS = [
     ],
     "mpn": "S500 Pro",
     "weight": "0.06 Pounds",
-    "cap": "256 GB",
+    "cap": 256,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "m 2"
@@ -66660,7 +66660,7 @@ export const PARTS = [
     "upc": "814914026809",
     "mpn": "P210",
     "weight": "46 Grams",
-    "cap": "256 GB",
+    "cap": 256,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -66691,7 +66691,7 @@ export const PARTS = [
     "upc": "718037893211",
     "mpn": "WDS200T4X0E",
     "weight": "0.01 Pounds",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -66728,7 +66728,7 @@ export const PARTS = [
     "upc": "887276843667",
     "mpn": "MZ-V9S4T0B/AM",
     "weight": "9 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -66758,7 +66758,7 @@ export const PARTS = [
     "upc": "887184012834",
     "mpn": "BL.9BWWR.106",
     "weight": "9 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 (2280)"
@@ -66788,7 +66788,7 @@ export const PARTS = [
     ],
     "mpn": "在庫がありません",
     "weight": "35 Grams",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -66818,7 +66818,7 @@ export const PARTS = [
     "upc": "649528946904",
     "mpn": "CT4000X10SSD9-02",
     "weight": "32 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "formFactor": "2.5-inch"
   },
   {
@@ -66845,7 +66845,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71SX3KviVDL._AC_SL1500_.jpg"
     ],
     "mpn": "3f18df96-b2f4-46cf-b297-b9c29940122b",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M.2 2280"
@@ -66876,7 +66876,7 @@ export const PARTS = [
     "upc": "887184017457",
     "mpn": "GM7-2TB",
     "weight": "4.5 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -66906,7 +66906,7 @@ export const PARTS = [
     "upc": "649528946881",
     "mpn": "CT8000X10SSD9-02",
     "weight": "32 Grams",
-    "cap": "8 TB",
+    "cap": 8000,
     "formFactor": "2.5-inch"
   },
   {
@@ -66940,7 +66940,7 @@ export const PARTS = [
     "upc": "887276904900",
     "mpn": "MZ-VAP2T0B/AM",
     "weight": "0.02 Pounds",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M2"
@@ -66971,7 +66971,7 @@ export const PARTS = [
     "upc": "763649175903",
     "mpn": "ST4000VXZ16",
     "weight": "1.06 Pounds",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -67001,7 +67001,6 @@ export const PARTS = [
     ],
     "mpn": "DXP2800,2-Bay (Diskless)",
     "weight": "2.58 Kilograms",
-    "cap": "76 TB",
     "form": "NVMe"
   },
   {
@@ -67030,7 +67029,7 @@ export const PARTS = [
     "upc": "649528947147",
     "mpn": "CT4000T710SSD8-01",
     "weight": "0.26 Ounces",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -67061,7 +67060,7 @@ export const PARTS = [
     "upc": "887184017440",
     "mpn": "BL.9BWWR.118",
     "weight": "4.5 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M.2 (2280)"
   },
@@ -67092,7 +67091,7 @@ export const PARTS = [
     "upc": "740617261219",
     "mpn": "SA400S37/240G",
     "weight": "0.09 Pounds",
-    "cap": "240 GB",
+    "cap": 240,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -67122,7 +67121,7 @@ export const PARTS = [
     "upc": "886576048512886576049519",
     "mpn": "P34A60",
     "weight": "8 Grams",
-    "cap": "256 GB",
+    "cap": 256,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M.2 2280 (80mm) form factor"
@@ -67154,7 +67153,7 @@ export const PARTS = [
     "upc": "814914026519",
     "mpn": "P300P256GM28",
     "weight": "9 Grams",
-    "cap": "256 GB",
+    "cap": 256,
     "form": "NVMe",
     "formFactor": "laptop"
   },
@@ -67184,7 +67183,7 @@ export const PARTS = [
     "upc": "886576059006886576048536886576049496",
     "mpn": "FIN-SP001TBP34A60M28",
     "weight": "0.3 Ounces",
-    "cap": "1000 GB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M.2 2280 (80mm) form factor"
@@ -67214,7 +67213,7 @@ export const PARTS = [
     ],
     "mpn": "P3-2TB",
     "weight": "30 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -67249,7 +67248,7 @@ export const PARTS = [
     "upc": "887276904894",
     "mpn": "MZ-VAP4T0B/AM",
     "weight": "0.02 Pounds",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M2"
@@ -67280,7 +67279,7 @@ export const PARTS = [
     "upc": "886576064789",
     "mpn": "SP01KGBP44UD9005",
     "weight": "8 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -67310,7 +67309,7 @@ export const PARTS = [
     ],
     "mpn": "S690Q",
     "weight": "7 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -67340,7 +67339,7 @@ export const PARTS = [
     ],
     "mpn": "S501Q",
     "weight": "7 Grams",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -67369,7 +67368,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/712hgdfBpUL._AC_SL1500_.jpg"
     ],
     "mpn": "X12-Black-512 GB",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -67398,7 +67397,7 @@ export const PARTS = [
     ],
     "mpn": "SIX SSD - 3",
     "weight": "0.06 Kilograms",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -67430,7 +67429,7 @@ export const PARTS = [
     "upc": "718037891378",
     "mpn": "WDS400T2X0E",
     "weight": "7.5 Grams",
-    "cap": "4000 GB",
+    "cap": 4000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -67465,7 +67464,7 @@ export const PARTS = [
     "upc": "718037858470",
     "mpn": "WD8002FZBX",
     "weight": "1.5 Pounds",
-    "cap": "8 TB",
+    "cap": 8000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -67496,7 +67495,7 @@ export const PARTS = [
     "upc": "814914026526",
     "mpn": "P300P512GM28",
     "weight": "9 Grams",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "formFactor": "M 2"
   },
@@ -67527,7 +67526,7 @@ export const PARTS = [
     "upc": "887276656991",
     "mpn": "MZ-V9P2T0CW",
     "weight": "0.06 Pounds",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "m 2"
@@ -67558,7 +67557,7 @@ export const PARTS = [
     "upc": "619659208264",
     "mpn": "SDSSDA3N-500G-G26",
     "weight": "5.44 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "formFactor": "M 2"
   },
@@ -67588,7 +67587,7 @@ export const PARTS = [
     "upc": "649528942265",
     "mpn": "CT2000P310SSD2",
     "weight": "2.6 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -67619,7 +67618,7 @@ export const PARTS = [
     "upc": "763649184202",
     "mpn": "ST28000NT000",
     "weight": "780 Grams",
-    "cap": "28 TB",
+    "cap": 28000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -67648,7 +67647,7 @@ export const PARTS = [
     ],
     "mpn": "512 gb",
     "weight": "35 Grams",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M 2"
@@ -67679,7 +67678,7 @@ export const PARTS = [
     "upc": "649528946782",
     "mpn": "CT2000P510SSD8-01",
     "weight": "6.5 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -67711,7 +67710,7 @@ export const PARTS = [
     "upc": "619659220860",
     "mpn": "WDS200T1X0M",
     "weight": "7.5 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -67741,7 +67740,7 @@ export const PARTS = [
     ],
     "upc": "840006688785",
     "mpn": "CSSD-F2000GBMP600MNR2",
-    "cap": "2000 GB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2230"
@@ -67770,7 +67769,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81wSBDwl4DL._AC_SL1500_.jpg"
     ],
     "mpn": "GM998",
-    "cap": "1TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M2"
   },
@@ -67799,7 +67798,7 @@ export const PARTS = [
     ],
     "upc": "840006688778",
     "mpn": "CSSD-F1000GBMP600MNR2",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2230"
@@ -67829,7 +67828,7 @@ export const PARTS = [
     ],
     "upc": "886576091617",
     "mpn": "A55",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -67858,7 +67857,7 @@ export const PARTS = [
     ],
     "mpn": "GM528",
     "weight": "0.03 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M2"
   },
@@ -67889,7 +67888,7 @@ export const PARTS = [
     "upc": "718037891309",
     "mpn": "WDS200T2XHE",
     "weight": "24 Grams",
-    "cap": "2000 GB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -67924,7 +67923,7 @@ export const PARTS = [
     "upc": "751492629957",
     "mpn": "SSD7CS900-500-RB",
     "weight": "54 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -67954,7 +67953,7 @@ export const PARTS = [
     "upc": "886576049526886576048529",
     "mpn": "P34A60",
     "weight": "8 Grams",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M.2 2280 (80mm) form factor"
@@ -67985,7 +67984,7 @@ export const PARTS = [
     "upc": "718037884660",
     "mpn": "WDS200T3B0A",
     "weight": "60 Grams",
-    "cap": "2000 GB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -68015,7 +68014,7 @@ export const PARTS = [
     "upc": "763649128213",
     "mpn": "ST1000DMZ10",
     "weight": "0.92 Pounds",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -68046,7 +68045,7 @@ export const PARTS = [
     "upc": "763649091647",
     "mpn": "ST5000LM000",
     "weight": "0.2 Pounds",
-    "cap": "5 TB",
+    "cap": 5000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -68076,7 +68075,7 @@ export const PARTS = [
     "upc": "765441048089",
     "mpn": "TM8FP6512G0C101",
     "weight": "6 Grams",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M 2"
@@ -68106,7 +68105,7 @@ export const PARTS = [
     ],
     "mpn": "ASU650SS-1TT-R",
     "weight": "30 Grams",
-    "cap": "1024 GB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -68137,7 +68136,7 @@ export const PARTS = [
     "upc": "718037893662",
     "mpn": "WDS500G4X0E-00CJA0",
     "weight": "0.01 Pounds",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -68168,7 +68167,7 @@ export const PARTS = [
     "upc": "649528939463",
     "mpn": "CT2000BX500SSD101",
     "weight": "35.1 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -68198,7 +68197,7 @@ export const PARTS = [
     "upc": "649528939548",
     "mpn": "CT4000X10PROSSD902",
     "weight": "42 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "formFactor": "Portable"
   },
   {
@@ -68227,7 +68226,7 @@ export const PARTS = [
     "upc": "649528939531",
     "mpn": "CT2000X10PROSSD902",
     "weight": "42 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "formFactor": "Portable"
   },
   {
@@ -68256,7 +68255,7 @@ export const PARTS = [
     ],
     "upc": "765441344235",
     "mpn": "765441344235",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -68286,7 +68285,7 @@ export const PARTS = [
     "upc": "886576067612",
     "mpn": "SP02KGBP44UD9005AY",
     "weight": "8 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -68317,7 +68316,7 @@ export const PARTS = [
     "upc": "718037894843",
     "mpn": "WDS100T4B0E",
     "weight": "5.7 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -68347,7 +68346,7 @@ export const PARTS = [
     "upc": "760557861928",
     "mpn": "TS256GESD310C",
     "weight": "0.01 Pounds",
-    "cap": "256 GB",
+    "cap": 256,
     "formFactor": "Portable"
   },
   {
@@ -68376,7 +68375,7 @@ export const PARTS = [
     "upc": "649528942272",
     "mpn": "CT1000P310SSD2",
     "weight": "2.6 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -68407,7 +68406,7 @@ export const PARTS = [
     "upc": "763649177013",
     "mpn": "ST4000NT001",
     "weight": "640 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -68437,7 +68436,7 @@ export const PARTS = [
     "upc": "649528947284",
     "mpn": "CT1000P310SSD5-01",
     "weight": "1.23 Ounces",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -68467,7 +68466,7 @@ export const PARTS = [
     ],
     "mpn": "S501-256Go",
     "weight": "0.24 Ounces",
-    "cap": "256 GB",
+    "cap": 256,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M 2"
@@ -68496,7 +68495,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81ugy3Qjx8L._AC_SL1500_.jpg"
     ],
     "mpn": "S501-128Go",
-    "cap": "128 GB",
+    "cap": 128,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M.2 2280"
@@ -68527,7 +68526,7 @@ export const PARTS = [
     "upc": "763649129111",
     "mpn": "ST6000VXZ01",
     "weight": "1.4 Pounds",
-    "cap": "6 TB",
+    "cap": 6000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -68556,7 +68555,7 @@ export const PARTS = [
     ],
     "mpn": "S880ER",
     "weight": "8 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -68586,7 +68585,7 @@ export const PARTS = [
     "upc": "718037904108",
     "mpn": "WDBZ7D0060BBK-WESN",
     "weight": "0.55 Pounds",
-    "cap": "6 TB",
+    "cap": 6000,
     "form": "HDD",
     "formFactor": "2.5-inch"
   },
@@ -68615,7 +68614,7 @@ export const PARTS = [
     ],
     "mpn": "EN680E_512GB",
     "weight": "7 Grams",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "formFactor": "M2"
   },
@@ -68645,7 +68644,7 @@ export const PARTS = [
     "upc": "649528947161",
     "mpn": "CT2000T710SSD5-01",
     "weight": "1.17 Ounces",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -68676,7 +68675,7 @@ export const PARTS = [
     "upc": "718037904634",
     "mpn": "WDS500G4G0E",
     "weight": "5.4 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -68706,7 +68705,7 @@ export const PARTS = [
     ],
     "mpn": "S201",
     "weight": "0.05 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -68731,7 +68730,7 @@ export const PARTS = [
     "upc": "718037907888",
     "mpn": "WD120EAGZ-SPCRJB0",
     "weight": "1.7 Pounds",
-    "cap": "12 TB",
+    "cap": 12000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -68761,7 +68760,7 @@ export const PARTS = [
     ],
     "mpn": "MZ-77E500B/EU",
     "weight": "3.12 Ounces",
-    "cap": "500 GB",
+    "cap": 500,
     "formFactor": "2.5-inch"
   },
   {
@@ -68790,7 +68789,7 @@ export const PARTS = [
     "upc": "649528918840",
     "mpn": "CT2000P3PSSD8",
     "weight": "0.01 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -68821,7 +68820,7 @@ export const PARTS = [
     "upc": "649528918833",
     "mpn": "CT1000P3PSSD8",
     "weight": "0.01 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 (2280)"
@@ -68851,7 +68850,7 @@ export const PARTS = [
     ],
     "mpn": "S101",
     "weight": "0.13 Pounds",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -68881,7 +68880,7 @@ export const PARTS = [
     "upc": "886576048741",
     "mpn": "P34A60",
     "weight": "20 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M 2"
@@ -68913,7 +68912,7 @@ export const PARTS = [
     "upc": "740617344783",
     "mpn": "SNV3S/2000G",
     "weight": "0.01 Pounds",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -68944,7 +68943,7 @@ export const PARTS = [
     "upc": "765441052604",
     "mpn": "AX2",
     "weight": "0.1 Pounds",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -68974,7 +68973,7 @@ export const PARTS = [
     "upc": "765441065710",
     "mpn": "T253X7002T0C101",
     "weight": "20 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -69004,7 +69003,7 @@ export const PARTS = [
     "upc": "649528929693",
     "mpn": "CT500BX500SSD1",
     "weight": "60 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -69033,7 +69032,7 @@ export const PARTS = [
     ],
     "mpn": "S500 Pro",
     "weight": "0.06 Pounds",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "m 2"
@@ -69063,7 +69062,7 @@ export const PARTS = [
     ],
     "mpn": "S101Q",
     "weight": "1.6 Ounces",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -69092,7 +69091,7 @@ export const PARTS = [
     ],
     "mpn": "S660",
     "weight": "30 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "m 2"
@@ -69122,7 +69121,7 @@ export const PARTS = [
     ],
     "upc": "765441344242",
     "mpn": "dffb3111-b2ee-4c18-9d0b-cb68a7707f7c",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -69152,7 +69151,7 @@ export const PARTS = [
     "upc": "718037872384",
     "mpn": "WDS100T1R0A",
     "weight": "0.15 Ounces",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -69181,7 +69180,7 @@ export const PARTS = [
     ],
     "mpn": "FX991",
     "weight": "0.03 Kilograms",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "formFactor": "M 2"
   },
@@ -69212,7 +69211,7 @@ export const PARTS = [
     "upc": "619659197131",
     "mpn": "SDSSDH3-500G-G26",
     "weight": "0.12 Pounds",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -69241,7 +69240,7 @@ export const PARTS = [
     ],
     "mpn": "FX991",
     "weight": "0.03 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -69271,7 +69270,7 @@ export const PARTS = [
     "upc": "702571098850",
     "mpn": "FX815",
     "weight": "2.12 Ounces",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -69300,7 +69299,7 @@ export const PARTS = [
     ],
     "upc": "784124682556",
     "mpn": "1 tb",
-    "cap": "1024 GB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M 2"
@@ -69330,7 +69329,7 @@ export const PARTS = [
     ],
     "mpn": "690Q",
     "weight": "8 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -69359,7 +69358,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/51U7e5wqwEL._AC_SL1200_.jpg"
     ],
     "mpn": "P320P512GM28",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -69390,7 +69389,7 @@ export const PARTS = [
     "upc": "843367131488",
     "mpn": "LNM790X001T-RN9NU",
     "weight": "0.11 Pounds",
-    "cap": "1000 GB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -69420,7 +69419,7 @@ export const PARTS = [
     ],
     "upc": "702571099116",
     "mpn": "FN955",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -69451,7 +69450,7 @@ export const PARTS = [
     "upc": "735858340977718037857077",
     "mpn": "WD60PURZ",
     "weight": "0.65 Kilograms",
-    "cap": "6 TB",
+    "cap": 6000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -69482,7 +69481,7 @@ export const PARTS = [
     "upc": "619659220884",
     "mpn": "WDS100T1X0M",
     "weight": "7.5 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -69513,7 +69512,7 @@ export const PARTS = [
     "upc": "649528946157",
     "mpn": "CT1000E100SSD8",
     "weight": "0.21 Ounces",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -69543,7 +69542,7 @@ export const PARTS = [
     ],
     "upc": "887184019024",
     "mpn": "NV7400",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -69573,7 +69572,7 @@ export const PARTS = [
     ],
     "mpn": "S201",
     "weight": "0.03 Kilograms",
-    "cap": "128 GB",
+    "cap": 128,
     "form": "NVMe"
   },
   {
@@ -69601,7 +69600,7 @@ export const PARTS = [
     ],
     "mpn": "5c295cc5-3b2e-425f-8299-e4ce6bcf035b",
     "weight": "36.1 Grams",
-    "cap": "256 GB",
+    "cap": 256,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -69629,7 +69628,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81hiTz5L+uL._AC_SL1500_.jpg"
     ],
     "mpn": "FX550",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M.2 2280"
@@ -69658,7 +69657,7 @@ export const PARTS = [
     ],
     "mpn": "P400LP1KGM28H",
     "weight": "20 Grams",
-    "cap": "1024 GB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M 2"
   },
@@ -69687,7 +69686,7 @@ export const PARTS = [
     "upc": "763649091661763649078983",
     "mpn": "ST4000LM024",
     "weight": "190 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -69715,7 +69714,7 @@ export const PARTS = [
     "upc": "763649070147",
     "mpn": "ST4000NM0035",
     "weight": "1.7 Pounds",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -69744,7 +69743,7 @@ export const PARTS = [
     ],
     "mpn": "TM8FFE512G0C129",
     "weight": "9.07 g",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -69775,7 +69774,7 @@ export const PARTS = [
     "upc": "703670607905",
     "mpn": "ST22000NM000C",
     "weight": "0.84 Kilograms",
-    "cap": "22 TB",
+    "cap": 22000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -69805,7 +69804,7 @@ export const PARTS = [
     "upc": "649528947178",
     "mpn": "CT4000T710SSD5-01",
     "weight": "1.2 Ounces",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -69837,7 +69836,7 @@ export const PARTS = [
     "upc": "649528947154",
     "mpn": "CT1000T710SSD5-01",
     "weight": "1.17 Ounces",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -69867,7 +69866,7 @@ export const PARTS = [
     ],
     "mpn": "S201",
     "weight": "0.05 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -69895,7 +69894,7 @@ export const PARTS = [
     ],
     "upc": "786513310781",
     "mpn": "ST14000NM001G",
-    "cap": "14 TB",
+    "cap": 14000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -69924,7 +69923,7 @@ export const PARTS = [
     ],
     "mpn": "GM328",
     "weight": "0.03 Kilograms",
-    "cap": "256 GB",
+    "cap": 256,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M2"
@@ -69954,7 +69953,7 @@ export const PARTS = [
     ],
     "upc": "886576091624",
     "mpn": "A55",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -69989,7 +69988,7 @@ export const PARTS = [
     "upc": "649528942241",
     "mpn": "CT2000P310SSD8",
     "weight": "23 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -70018,7 +70017,7 @@ export const PARTS = [
     ],
     "mpn": "CN600",
     "weight": "6.8 Grams",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "formFactor": "M2"
   },
@@ -70048,7 +70047,7 @@ export const PARTS = [
     "upc": "887276456430",
     "mpn": "MZ-V8P2T0B",
     "weight": "0.12 Pounds",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "compact"
   },
@@ -70079,7 +70078,7 @@ export const PARTS = [
     "upc": "718037887357",
     "mpn": "WDS200T3X0E",
     "weight": "0.01 Pounds",
-    "cap": "2000 GB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -70109,7 +70108,7 @@ export const PARTS = [
     ],
     "mpn": "S101",
     "weight": "37 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -70140,7 +70139,7 @@ export const PARTS = [
     "upc": "887276417868",
     "mpn": "MZ-77Q8T0B/AM",
     "weight": "0.19 Pounds",
-    "cap": "8 TB",
+    "cap": 8000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -70170,7 +70169,7 @@ export const PARTS = [
     "upc": "751492784908",
     "mpn": "SSD7CS900-2TBKIT-RB",
     "weight": "54 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -70200,7 +70199,7 @@ export const PARTS = [
     "upc": "763649129678",
     "mpn": "ST4000VN008",
     "weight": "1.4 Pounds",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -70230,7 +70229,7 @@ export const PARTS = [
     "upc": "791350395402791392167036843367116232",
     "mpn": "LNS100-512AMZN",
     "weight": "34 Grams",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -70259,7 +70258,7 @@ export const PARTS = [
     ],
     "mpn": "P3-512GB",
     "weight": "0.01 Kilograms",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -70289,7 +70288,7 @@ export const PARTS = [
     "upc": "765441060487",
     "mpn": "T253TZ002T0C101",
     "weight": "45 Grams",
-    "cap": "2000 GB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -70318,7 +70317,7 @@ export const PARTS = [
     ],
     "mpn": "S101Q",
     "weight": "38 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -70353,7 +70352,7 @@ export const PARTS = [
     "upc": "649528942258",
     "mpn": "S101Q",
     "weight": "38 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -70383,7 +70382,7 @@ export const PARTS = [
     "upc": "649528939456",
     "mpn": "CT1000BX500SSD101",
     "weight": "35.1 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -70413,7 +70412,7 @@ export const PARTS = [
     "upc": "765441047969",
     "mpn": "TM8FP6001T0C101",
     "weight": "6 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M.2"
@@ -70443,7 +70442,7 @@ export const PARTS = [
     ],
     "mpn": "S660",
     "weight": "30 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -70474,7 +70473,7 @@ export const PARTS = [
     "upc": "886576070445",
     "mpn": "SP04KGBP44UD9005AY",
     "weight": "8 Grams",
-    "cap": "4000 GB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -70504,7 +70503,7 @@ export const PARTS = [
     ],
     "mpn": "WDBBKW0010BBK-WRSN",
     "weight": "24 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -70535,7 +70534,7 @@ export const PARTS = [
     "upc": "763649129197",
     "mpn": "ST6000DMZ03",
     "weight": "1.4 Pounds",
-    "cap": "6 TB",
+    "cap": 6000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -70564,7 +70563,7 @@ export const PARTS = [
     ],
     "mpn": "FX991",
     "weight": "0.03 Kilograms",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -70594,7 +70593,7 @@ export const PARTS = [
     "upc": "718037893228",
     "mpn": "WDS200T4B0E",
     "weight": "5.7 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -70623,7 +70622,7 @@ export const PARTS = [
     ],
     "mpn": "P220S512G25",
     "weight": "30 Grams",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -70652,7 +70651,7 @@ export const PARTS = [
     ],
     "mpn": "P220S256G25",
     "weight": "30 Grams",
-    "cap": "256 GB",
+    "cap": 256,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -70681,7 +70680,7 @@ export const PARTS = [
     ],
     "mpn": "Y20-2T",
     "weight": "0.5 Ounces",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -70711,7 +70710,7 @@ export const PARTS = [
     "upc": "763649132418",
     "mpn": "STHP4000400",
     "weight": "0.2 Kilograms",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "HDD",
     "formFactor": "2.5-inch"
   },
@@ -70741,7 +70740,7 @@ export const PARTS = [
     "upc": "619659189235",
     "mpn": "WDBAWY0010BBK-WESN",
     "weight": "2.72 ounces",
-    "cap": "1 TB",
+    "cap": 1000,
     "formFactor": "2.5-inch"
   },
   {
@@ -70769,7 +70768,7 @@ export const PARTS = [
     ],
     "mpn": "S690",
     "weight": "7 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -70800,7 +70799,7 @@ export const PARTS = [
     "upc": "649528940209",
     "mpn": "CT4000T705SSD3",
     "weight": "9.9 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 (2280)"
@@ -70831,7 +70830,7 @@ export const PARTS = [
     "upc": "649528940162",
     "mpn": "CT1000T705SSD3",
     "weight": "9.9 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 (2280)"
@@ -70862,7 +70861,7 @@ export const PARTS = [
     "upc": "649528946799",
     "mpn": "CT1000P510SSD8-01",
     "weight": "6.5 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -70892,7 +70891,7 @@ export const PARTS = [
     ],
     "mpn": "FN955",
     "weight": "8 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -70922,7 +70921,7 @@ export const PARTS = [
     ],
     "mpn": "K01TBM2SP0-C91",
     "weight": "30 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -70953,7 +70952,7 @@ export const PARTS = [
     "upc": "886576073651",
     "mpn": "SP04KGBP44US7505",
     "weight": "8 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -70983,7 +70982,7 @@ export const PARTS = [
     ],
     "mpn": "S880E",
     "weight": "8 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -71014,7 +71013,7 @@ export const PARTS = [
     "upc": "619659220891",
     "mpn": "WDS400T1X0M",
     "weight": "7.5 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -71046,7 +71045,7 @@ export const PARTS = [
     "upc": "765441366022",
     "mpn": "T253TY004T0C101",
     "weight": "45 Grams",
-    "cap": "4000 GB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -71076,7 +71075,7 @@ export const PARTS = [
     "upc": "763649161753",
     "mpn": "ZP1000GM3A013",
     "weight": "8 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -71106,7 +71105,7 @@ export const PARTS = [
     ],
     "mpn": "VP4300L1TBM28H",
     "weight": "9 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -71137,7 +71136,7 @@ export const PARTS = [
     "upc": "763649146446",
     "mpn": "ST10000VNZ008",
     "weight": "1.4 Pounds",
-    "cap": "10 TB",
+    "cap": 10000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -71166,7 +71165,7 @@ export const PARTS = [
     ],
     "upc": "887184019017",
     "mpn": "NV7400",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -71197,7 +71196,7 @@ export const PARTS = [
     "upc": "751492756271",
     "mpn": "M280CS2230-1TB-RB",
     "weight": "30 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -71227,7 +71226,7 @@ export const PARTS = [
     "upc": "765441062061",
     "mpn": "TM8FPK001T0C101",
     "weight": "32 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M 2"
   },
@@ -71257,7 +71256,7 @@ export const PARTS = [
     "upc": "763649175231",
     "mpn": "ST16000NM002H",
     "weight": "0.69 Kilograms",
-    "cap": "16 TB",
+    "cap": 16000,
     "form": "HDD",
     "formFactor": "3.5-inch"
   },
@@ -71285,7 +71284,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71fhfJnzPGL._AC_SL1500_.jpg"
     ],
     "mpn": "ASU630SS-1T92Q-R",
-    "cap": "1920 GB",
+    "cap": 1920,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -71315,7 +71314,7 @@ export const PARTS = [
     "upc": "740617349962",
     "mpn": "SNV3SM3/500G",
     "weight": "2.59 g",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "formFactor": "M2"
   },
@@ -71344,7 +71343,7 @@ export const PARTS = [
     ],
     "mpn": "FX910",
     "weight": "0.06 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M2"
@@ -71374,7 +71373,7 @@ export const PARTS = [
     ],
     "mpn": "EN680E_2TB",
     "weight": "7 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M2"
   },
@@ -71404,7 +71403,7 @@ export const PARTS = [
     "upc": "751889128032",
     "mpn": "Exos X14",
     "weight": "1.5 Pounds",
-    "cap": "14 TB",
+    "cap": 14000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -71433,7 +71432,7 @@ export const PARTS = [
     ],
     "mpn": "S201",
     "weight": "0.06 Kilograms",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -71462,7 +71461,7 @@ export const PARTS = [
     ],
     "mpn": "B0G92L5RRP",
     "weight": "0.06 Kilograms",
-    "cap": "120 GB",
+    "cap": 120,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -71493,7 +71492,7 @@ export const PARTS = [
     "upc": "804272762556804272762532",
     "mpn": "GS-SSD-8400-1TBX2-B",
     "weight": "0.09 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -71523,7 +71522,7 @@ export const PARTS = [
     "upc": "810064873386",
     "mpn": "MD14TSATA25672NAS/5YR",
     "weight": "1.5 Pounds",
-    "cap": "14 TB",
+    "cap": 14000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -71553,7 +71552,7 @@ export const PARTS = [
     "upc": "843367137039",
     "mpn": "LNQ780X001T-RNNNU",
     "weight": "0.05 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -71582,7 +71581,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81wSBDwl4DL._AC_SL1500_.jpg"
     ],
     "mpn": "GM988",
-    "cap": "2TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M2"
   },
@@ -71612,7 +71611,7 @@ export const PARTS = [
     "upc": "718037907154",
     "mpn": "WDS100T4G0E",
     "weight": "5.4 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -71643,7 +71642,7 @@ export const PARTS = [
     "upc": "731969867563",
     "mpn": "S1-S3A-960G",
     "weight": "0.07 Kilograms",
-    "cap": "960 GB",
+    "cap": 960,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -71668,7 +71667,7 @@ export const PARTS = [
     "upc": "807320171621638266369397014444446379763649030004",
     "mpn": "ST4000NM0033",
     "weight": "0.7 Kilograms",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -71697,7 +71696,7 @@ export const PARTS = [
     ],
     "mpn": "GM328",
     "weight": "27 Grams",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M2"
@@ -71727,7 +71726,7 @@ export const PARTS = [
     ],
     "mpn": "ALEG-710-1TCS",
     "weight": "9 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M 2"
@@ -71757,7 +71756,7 @@ export const PARTS = [
     ],
     "mpn": "X12",
     "weight": "30.6 Grams",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -71786,7 +71785,7 @@ export const PARTS = [
     ],
     "mpn": "Vansuny 2TB NVMe M.2 SSD",
     "weight": "0.05 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "2280"
@@ -71842,7 +71841,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71HpUm6ydZL._AC_SL1500_.jpg"
     ],
     "upc": "686585053824",
-    "cap": "30TB",
+    "cap": 30000,
     "form": "SATA SSD"
   },
   {
@@ -71870,7 +71869,7 @@ export const PARTS = [
     ],
     "mpn": "P410P1TBM28H",
     "weight": "27 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -71898,7 +71897,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71qc8LWZekL._AC_SL1500_.jpg"
     ],
     "mpn": "FN960",
-    "cap": "1TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4"
   },
@@ -71926,7 +71925,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71D+ug5AgtL._AC_SL1500_.jpg"
     ],
     "mpn": "FN950",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4"
   },
@@ -71956,7 +71955,7 @@ export const PARTS = [
     "upc": "763649170861",
     "mpn": "ST10000VNZ00",
     "weight": "720 Grams",
-    "cap": "10 TB",
+    "cap": 10000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -71986,7 +71985,7 @@ export const PARTS = [
     "upc": "649528787392649528785060649528785152",
     "mpn": "CT1000MX500SSD1",
     "weight": "0.04 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -72016,7 +72015,7 @@ export const PARTS = [
     "upc": "887276232294",
     "mpn": "896RC",
     "weight": "51 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -72046,7 +72045,7 @@ export const PARTS = [
     "upc": "718037868738",
     "mpn": "WDS100T2B0C",
     "weight": "0.2 Ounces",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M.2 2280"
@@ -72077,7 +72076,7 @@ export const PARTS = [
     "upc": "887276261898",
     "mpn": "MZ-V7E1T0BW",
     "weight": "0.12 Pounds",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -72107,7 +72106,7 @@ export const PARTS = [
     "upc": "649528821607",
     "mpn": "CT2000BX500SSD1Z",
     "weight": "0.06 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -72135,7 +72134,7 @@ export const PARTS = [
     "upc": "718037887333",
     "mpn": "WDS100T3X0E",
     "weight": "0.01 Pounds",
-    "cap": "1000 GB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -72165,7 +72164,7 @@ export const PARTS = [
     "upc": "767531891759",
     "mpn": "MZ-77Q1T0BW",
     "weight": "46 Grams",
-    "cap": "1000 GB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -72195,7 +72194,7 @@ export const PARTS = [
     "upc": "722076537906734646399937726407826851163120542888012300418942012304983897012304314158809190588530608729689508191120098029809387573196",
     "mpn": "AU-44LB-F32X",
     "weight": "600 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -72224,7 +72223,7 @@ export const PARTS = [
     ],
     "mpn": "S101",
     "weight": "2.08 ounces",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -72254,7 +72253,7 @@ export const PARTS = [
     "upc": "649528785107689851333989174859423133649528785152",
     "mpn": "CT1000MX500SSD1Z",
     "weight": "9.07 g",
-    "cap": "1024 GB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -72284,7 +72283,7 @@ export const PARTS = [
     "upc": "763649127322763649161210",
     "mpn": "STGY8000400",
     "weight": "2.43 Pounds",
-    "cap": "8 TB",
+    "cap": 8000,
     "form": "HDD",
     "formFactor": "2.5-inch"
   },
@@ -72314,7 +72313,7 @@ export const PARTS = [
     "upc": "000000101981763649098240763649117835",
     "mpn": "ST1000DM010",
     "weight": "14.7 Ounces",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -72343,7 +72342,7 @@ export const PARTS = [
     ],
     "mpn": "MZ-V9P4T0BW",
     "weight": "9 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -72374,7 +72373,7 @@ export const PARTS = [
     "upc": "718037861074",
     "mpn": "WD30EFAX",
     "weight": "1.8 Ounces",
-    "cap": "3 TB",
+    "cap": 3000,
     "form": "SATA SSD",
     "formFactor": "2.5 in|3.5 in"
   },
@@ -72405,7 +72404,7 @@ export const PARTS = [
     "upc": "740617346602",
     "mpn": "SNV3S/4000G",
     "weight": "6.6 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M2"
@@ -72436,7 +72435,7 @@ export const PARTS = [
     "upc": "763649167564",
     "mpn": "ZP2000GM3A023",
     "weight": "8.1 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -72467,7 +72466,7 @@ export const PARTS = [
     "upc": "649528943620",
     "mpn": "CT4000P310SSD801",
     "weight": "10 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -72498,7 +72497,7 @@ export const PARTS = [
     "upc": "718037875910",
     "mpn": "WDS100T1XHE",
     "weight": "0.85 Ounces",
-    "cap": "1000 GB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "3.5-inch"
@@ -72529,7 +72528,7 @@ export const PARTS = [
     "upc": "718037858173",
     "mpn": "WD40EZAZ",
     "weight": "660 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -72559,7 +72558,7 @@ export const PARTS = [
     "upc": "718037902449",
     "mpn": "WDS200T3B0E",
     "weight": "0.01 Pounds",
-    "cap": "2000 GB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -72590,7 +72589,7 @@ export const PARTS = [
     "upc": "814914026830",
     "mpn": "P210S2TB25",
     "weight": "46 Grams",
-    "cap": "2000 GB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -72619,7 +72618,7 @@ export const PARTS = [
     "upc": "767531763285",
     "mpn": "MZ-77E1T0BW",
     "weight": "45 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -72649,7 +72648,7 @@ export const PARTS = [
     "upc": "763649129180763649117842763649110218",
     "mpn": "ST2000DM006",
     "weight": "1.4 Pounds",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -72679,7 +72678,7 @@ export const PARTS = [
     "upc": "763649129166",
     "mpn": "ST1000LX015",
     "weight": "0.21 Pounds",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -72710,7 +72709,7 @@ export const PARTS = [
     "upc": "619659195830",
     "mpn": "SDSSDA-1T00-G27",
     "weight": "0.07 Pounds",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -72740,7 +72739,7 @@ export const PARTS = [
     "upc": "649528939258",
     "mpn": "CT500T500SSD8",
     "weight": "10 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -72771,7 +72770,7 @@ export const PARTS = [
     "upc": "763649118085763649071212",
     "mpn": "ST2000LX001",
     "weight": "0.2 Pounds",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -72796,7 +72795,7 @@ export const PARTS = [
     "upc": "887276185309",
     "mpn": "MZ-V6E250BW",
     "weight": "9.07 g",
-    "cap": "250 GB",
+    "cap": 250,
     "form": "NVMe",
     "formFactor": "Compact M.2"
   },
@@ -72826,7 +72825,7 @@ export const PARTS = [
     "upc": "718037855943",
     "mpn": "WD6003FFBX-SPMU3N0",
     "weight": "0.7 Kilograms",
-    "cap": "6 TB",
+    "cap": 6000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -72856,7 +72855,7 @@ export const PARTS = [
     ],
     "mpn": "S880",
     "weight": "8 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -72886,7 +72885,7 @@ export const PARTS = [
     ],
     "mpn": "S880",
     "weight": "8 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -72916,7 +72915,7 @@ export const PARTS = [
     ],
     "upc": "886576064772",
     "mpn": "UD902280",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -72947,7 +72946,7 @@ export const PARTS = [
     "upc": "763649177143",
     "mpn": "STLX2000402",
     "weight": "167 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "HDD",
     "formFactor": "2.5-inch"
   },
@@ -72977,7 +72976,7 @@ export const PARTS = [
     "upc": "840025259379",
     "mpn": "SB-2130-1TB",
     "weight": "20 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "m 2"
@@ -73008,7 +73007,7 @@ export const PARTS = [
     "upc": "718037856735",
     "mpn": "WD30PURZ",
     "weight": "0.45 Kilograms",
-    "cap": "3000 GB",
+    "cap": 3000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -73038,7 +73037,7 @@ export const PARTS = [
     "upc": "763649138342",
     "mpn": "ST8000NEZ01",
     "weight": "1.68 Pounds",
-    "cap": "8 TB",
+    "cap": 8000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -73068,7 +73067,7 @@ export const PARTS = [
     "upc": "763649160404",
     "mpn": "STKL5000400",
     "weight": "266 Grams",
-    "cap": "5 TB",
+    "cap": 5000,
     "form": "HDD",
     "formFactor": "2.5-inch"
   },
@@ -73098,7 +73097,7 @@ export const PARTS = [
     "upc": "763649160343",
     "mpn": "STKL2000400",
     "weight": "167 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "HDD",
     "formFactor": "2.5-inch"
   },
@@ -73127,7 +73126,7 @@ export const PARTS = [
     ],
     "upc": "300692116431",
     "mpn": "FS810-512GB",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -73157,7 +73156,7 @@ export const PARTS = [
     "upc": "649528940001",
     "mpn": "CT2000T500SSD5",
     "weight": "35 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -73188,7 +73187,7 @@ export const PARTS = [
     "upc": "649528940018",
     "mpn": "CT1000T500SSD5",
     "weight": "35 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -73215,7 +73214,7 @@ export const PARTS = [
     "upc": "718037903613",
     "mpn": "WDS200T2R0A",
     "weight": "1.22 Ounces",
-    "cap": "2000 GB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -73239,7 +73238,7 @@ export const PARTS = [
     },
     "mpn": "MZ-V9S2T0BW",
     "weight": "9 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -73269,7 +73268,7 @@ export const PARTS = [
     "upc": "718037894850",
     "mpn": "WDS500G4B0E",
     "weight": "5.7 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -73300,7 +73299,7 @@ export const PARTS = [
     "upc": "718037898384",
     "mpn": "WDS400T4B0E",
     "weight": "5.7 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -73330,7 +73329,7 @@ export const PARTS = [
     "upc": "763649118078763649069073",
     "mpn": "ST1000LX015",
     "weight": "96 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -73359,7 +73358,7 @@ export const PARTS = [
     "upc": "619659201876",
     "mpn": "SDSSDH3-2T00-G26",
     "weight": "0.12 Pounds",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -73388,7 +73387,7 @@ export const PARTS = [
     ],
     "upc": "702571098874",
     "mpn": "FX815",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -73418,7 +73417,7 @@ export const PARTS = [
     "upc": "840025267909",
     "mpn": "SB-2742-4TB",
     "weight": "5 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2242"
@@ -73449,7 +73448,7 @@ export const PARTS = [
     "upc": "763649177051",
     "mpn": "ST12000NT001",
     "weight": "1.7 Pounds",
-    "cap": "12 TB",
+    "cap": 12000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -73478,7 +73477,7 @@ export const PARTS = [
     ],
     "mpn": "MZ-V9S4T0BW",
     "weight": "9 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -73509,7 +73508,7 @@ export const PARTS = [
     "upc": "763649147474",
     "mpn": "ZP1000CV3A001",
     "weight": "7 Grams",
-    "cap": "1000 GB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M 2"
@@ -73539,7 +73538,7 @@ export const PARTS = [
     ],
     "mpn": "ORICO-J10 series",
     "weight": "49.89 Grams",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M 2"
@@ -73570,7 +73569,7 @@ export const PARTS = [
     "upc": "649528905765",
     "mpn": "CT4000X6SSD9",
     "weight": "40.5 Grams",
-    "cap": "4000 GB",
+    "cap": 4000,
     "formFactor": "Portable"
   },
   {
@@ -73598,7 +73597,7 @@ export const PARTS = [
     ],
     "mpn": "S690Q",
     "weight": "7 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M2"
@@ -73628,7 +73627,7 @@ export const PARTS = [
     ],
     "mpn": "P320P1TBM28",
     "weight": "0.01 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -73658,7 +73657,7 @@ export const PARTS = [
     "upc": "767531700303",
     "mpn": "MZ-77E250BW",
     "weight": "45 Grams",
-    "cap": "250 GB",
+    "cap": 250,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -73688,7 +73687,7 @@ export const PARTS = [
     "upc": "843367131501",
     "mpn": "LNM790X004T-RN9NU",
     "weight": "0.11 Pounds",
-    "cap": "4000 GB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -73720,7 +73719,7 @@ export const PARTS = [
     "upc": "843367131495",
     "mpn": "LNM790X002T-RN9NU",
     "weight": "0.11 Pounds",
-    "cap": "2000 GB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -73750,7 +73749,7 @@ export const PARTS = [
     ],
     "mpn": "XG7000-2TB",
     "weight": "0.02 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -73781,7 +73780,7 @@ export const PARTS = [
     "upc": "649528940179",
     "mpn": "CT2000T705SSD3",
     "weight": "9.9 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 (2280)"
@@ -73812,7 +73811,7 @@ export const PARTS = [
     "upc": "763649117866763649097861763649110546",
     "mpn": "ST4000DM005",
     "weight": "1.3 Pounds",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -73841,7 +73840,7 @@ export const PARTS = [
     ],
     "mpn": "FN955",
     "weight": "8 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M2"
@@ -73872,7 +73871,7 @@ export const PARTS = [
     "upc": "649528946805",
     "mpn": "CT1000P510SSD5-01",
     "weight": "30 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -73903,7 +73902,7 @@ export const PARTS = [
     "upc": "649528946812",
     "mpn": "CT2000P510SSD5-01",
     "weight": "30 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2"
@@ -73931,7 +73930,7 @@ export const PARTS = [
     ],
     "mpn": "MZ-77E500B/EC",
     "weight": "44.6 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -73961,7 +73960,7 @@ export const PARTS = [
     "upc": "746060350562",
     "mpn": "NT-512",
     "weight": "0.01 Kilograms",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "formFactor": "M2"
   },
@@ -73990,7 +73989,7 @@ export const PARTS = [
     ],
     "mpn": "EN870",
     "weight": "0.03 Kilograms",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -74019,7 +74018,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71n8zvweynL._AC_SL1500_.jpg"
     ],
     "mpn": "NT-XXX 2280",
-    "cap": "4000 GB",
+    "cap": 4000,
     "form": "NVMe",
     "formFactor": "M2"
   },
@@ -74047,7 +74046,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71n8zvweynL._AC_SL1500_.jpg"
     ],
     "mpn": "NT-2TB 2280",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M2"
   },
@@ -74076,7 +74075,7 @@ export const PARTS = [
     ],
     "upc": "618996757343",
     "mpn": "3a38dbaf-2032-422f-82d5-88d439028e95",
-    "cap": "2000 GB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -74105,7 +74104,7 @@ export const PARTS = [
     ],
     "mpn": "EN870",
     "weight": "0.03 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -74134,7 +74133,7 @@ export const PARTS = [
     "upc": "763649098196763649117965763649110874",
     "mpn": "ST8000VN0022",
     "weight": "780 Grams",
-    "cap": "8 TB",
+    "cap": 8000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -74162,7 +74161,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71jl4jdY2sL._AC_SL1328_.jpg"
     ],
     "mpn": "C910",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -74192,7 +74191,7 @@ export const PARTS = [
     ],
     "mpn": "K04TBM2SP0-C91",
     "weight": "30 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -74222,7 +74221,7 @@ export const PARTS = [
     ],
     "mpn": "K02TBM2SP0-C91",
     "weight": "30 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -74253,7 +74252,7 @@ export const PARTS = [
     "upc": "886576073644",
     "mpn": "SP02KGBP44US7505",
     "weight": "8 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -74285,7 +74284,7 @@ export const PARTS = [
     "upc": "886576073637",
     "mpn": "SP01KGBP44US7505",
     "weight": "8 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -74316,7 +74315,7 @@ export const PARTS = [
     "upc": "767531901595",
     "mpn": "MZ-77Q8T0BW",
     "weight": "57 Grams",
-    "cap": "8 TB",
+    "cap": 8000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -74347,7 +74346,7 @@ export const PARTS = [
     "upc": "718037891330",
     "mpn": "WDS200T1R0C",
     "weight": "0.02 Pounds",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M.2 2280"
@@ -74378,7 +74377,7 @@ export const PARTS = [
     "upc": "657768594274",
     "mpn": "ST12000NM0127",
     "weight": "0.7 Kilograms",
-    "cap": "12 TB",
+    "cap": 12000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -74407,7 +74406,7 @@ export const PARTS = [
     ],
     "mpn": "S501Q",
     "weight": "7 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "m.2"
   },
@@ -74436,7 +74435,7 @@ export const PARTS = [
     ],
     "mpn": "S880E",
     "weight": "8 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -74465,7 +74464,7 @@ export const PARTS = [
     "upc": "718037884356",
     "mpn": "WDBAVV0140HNC-WRSN",
     "weight": "0.83 Kilograms",
-    "cap": "14000 GB",
+    "cap": 14000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -74494,7 +74493,7 @@ export const PARTS = [
     ],
     "mpn": "EN760",
     "weight": "0.05 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -74525,7 +74524,7 @@ export const PARTS = [
     "upc": "649528946164",
     "mpn": "CT2000E100SSD8",
     "weight": "0.21 Ounces",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -74555,7 +74554,7 @@ export const PARTS = [
     ],
     "mpn": "HB7450",
     "weight": "8 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -74585,7 +74584,7 @@ export const PARTS = [
     ],
     "mpn": "VP4300L4TBM28H",
     "weight": "0.01 Kilograms",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -74616,7 +74615,7 @@ export const PARTS = [
     "upc": "763649176993",
     "mpn": "ST8000NTZ01",
     "weight": "720 Grams",
-    "cap": "8 TB",
+    "cap": 8000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -74651,7 +74650,7 @@ export const PARTS = [
     "upc": "763649177037",
     "mpn": "ST16000NTZ01",
     "weight": "672 Grams",
-    "cap": "16 TB",
+    "cap": 16000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -74686,7 +74685,7 @@ export const PARTS = [
     "upc": "763649177051",
     "mpn": "ST12000NTZ01",
     "weight": "670 Grams",
-    "cap": "12 TB",
+    "cap": 12000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -74716,7 +74715,7 @@ export const PARTS = [
     "upc": "886576073613886576073682",
     "mpn": "SU02KGBP44UD9007MM",
     "weight": "3 Grams",
-    "cap": "2000 GB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -74746,7 +74745,7 @@ export const PARTS = [
     "upc": "718037847689",
     "mpn": "WD100EFAX",
     "weight": "1.43 Pounds",
-    "cap": "10 TB",
+    "cap": 10000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -74776,7 +74775,7 @@ export const PARTS = [
     "upc": "649528936721",
     "mpn": "CT4000T700SSD5",
     "weight": "55 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M 2"
@@ -74807,7 +74806,7 @@ export const PARTS = [
     "upc": "649528936714",
     "mpn": "CT1000T700SSD5",
     "weight": "55 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M 2"
@@ -74839,7 +74838,7 @@ export const PARTS = [
     "upc": "718037906287",
     "mpn": "WDS500G5B0E",
     "weight": "5.7 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -74870,7 +74869,7 @@ export const PARTS = [
     "upc": "718037906263",
     "mpn": "WDS200T5B0E",
     "weight": "5.7 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -74900,7 +74899,7 @@ export const PARTS = [
     "upc": "718037906256",
     "mpn": "WDS100T5B0E",
     "weight": "5.7 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -74929,7 +74928,7 @@ export const PARTS = [
     ],
     "mpn": "MZ-77E1T0B/EC",
     "weight": "44.6 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -74958,7 +74957,7 @@ export const PARTS = [
     ],
     "mpn": "IG740PRO",
     "weight": "0.06 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -74988,7 +74987,7 @@ export const PARTS = [
     ],
     "mpn": "MZ-V9P2T0B-IT/EC",
     "weight": "9 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -75018,7 +75017,7 @@ export const PARTS = [
     ],
     "mpn": "Vansuny-2TB-SATA3",
     "weight": "0.05 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -75048,7 +75047,7 @@ export const PARTS = [
     "upc": "763649129159",
     "mpn": "ST500LX025",
     "weight": "0.21 Pounds",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -75072,7 +75071,7 @@ export const PARTS = [
     },
     "mpn": "ST4000DXZ05",
     "weight": "620 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -75098,7 +75097,7 @@ export const PARTS = [
     "upc": "718037804149",
     "mpn": "WD10JFCX",
     "weight": "0.27 Pounds",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -75126,7 +75125,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81KZ3CU95JL._AC_SL1500_.jpg"
     ],
     "mpn": "FX660",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -75156,7 +75155,7 @@ export const PARTS = [
     "upc": "760557845218",
     "mpn": "TS2TMTS830S",
     "weight": "6 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -75186,7 +75185,7 @@ export const PARTS = [
     "upc": "840006675181",
     "mpn": "CSSD-F4000GBMP700PNH",
     "weight": "0.01 Kilograms",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -75217,7 +75216,7 @@ export const PARTS = [
     "upc": "840006675143",
     "mpn": "CSSD-F2000GBMP700PNH",
     "weight": "0.01 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -75247,7 +75246,7 @@ export const PARTS = [
     ],
     "mpn": "RS550",
     "weight": "37 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -75276,7 +75275,7 @@ export const PARTS = [
     ],
     "mpn": "Jps600-4tb",
     "weight": "0.03 Kilograms",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M 2"
@@ -75307,7 +75306,7 @@ export const PARTS = [
     "upc": "649528940339",
     "mpn": "CT2000T705SSD5",
     "weight": "55 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 (2280)"
@@ -75337,7 +75336,7 @@ export const PARTS = [
     ],
     "mpn": "59423611-b59f-4603-ac82-8b1b7fd7f151",
     "weight": "36.1 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -75367,7 +75366,7 @@ export const PARTS = [
     "upc": "619659217952",
     "mpn": "SDSSDA-1T00-G28",
     "weight": "32.7 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -75397,7 +75396,7 @@ export const PARTS = [
     "upc": "840440487838",
     "mpn": "CSSD-F1000GBMP700ENH",
     "weight": "0.01 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -75428,7 +75427,7 @@ export const PARTS = [
     "upc": "840440401292840440487869",
     "mpn": "CSSD-F2000GBMP700ENH",
     "weight": "0.01 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -75459,7 +75458,7 @@ export const PARTS = [
     ],
     "upc": "840440416388",
     "mpn": "CSSD-F4000GBMP700MCR",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M2"
@@ -75491,7 +75490,7 @@ export const PARTS = [
     "upc": "765441062078",
     "mpn": "TM8FPK002T0C101",
     "weight": "18 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -75520,7 +75519,7 @@ export const PARTS = [
     ],
     "upc": "683332074316",
     "mpn": "ST4000DM000/CR/2YR",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "HDD",
     "formFactor": "3.5-inch"
   },
@@ -75550,7 +75549,7 @@ export const PARTS = [
     ],
     "mpn": "ad2TBA93M2P",
     "weight": "0.05 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M 2"
   },
@@ -75580,7 +75579,7 @@ export const PARTS = [
     "upc": "887184017464",
     "mpn": "GM7-4TB",
     "weight": "4.5 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "formFactor": "M.2 (0.87 inches)"
   },
@@ -75609,7 +75608,7 @@ export const PARTS = [
     ],
     "upc": "751889056960",
     "mpn": "MG04ACA400N",
-    "cap": "4000 GB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -75637,7 +75636,7 @@ export const PARTS = [
     "upc": "806291843889112840369954803982988980763649030004",
     "mpn": "ST4000NM0033",
     "weight": "1.54 Pounds",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -75666,7 +75665,7 @@ export const PARTS = [
     ],
     "mpn": "WD6002FFWX",
     "weight": "1.58 Pounds",
-    "cap": "6000 GB",
+    "cap": 6000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -75695,7 +75694,7 @@ export const PARTS = [
     ],
     "mpn": "TM8FFE001T0C129",
     "weight": "7 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -75725,7 +75724,7 @@ export const PARTS = [
     ],
     "mpn": "TM8FFE002T0C129",
     "weight": "7 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -75756,7 +75755,7 @@ export const PARTS = [
     ],
     "upc": "804272769982",
     "mpn": "GS-SSD-NAS-512GB-2PK-B",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -75786,7 +75785,7 @@ export const PARTS = [
     ],
     "upc": "703669904107",
     "mpn": "ST12000DM0007-CR/5YR",
-    "cap": "12 TB",
+    "cap": 12000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -75815,7 +75814,7 @@ export const PARTS = [
     "upc": "887276429595",
     "mpn": "MZ-77E1T0BW",
     "weight": "900 Milligrams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -75845,7 +75844,7 @@ export const PARTS = [
     "upc": "763649110881763649117958",
     "mpn": "ST6000VN0041",
     "weight": "0.65 Kilograms",
-    "cap": "6 TB",
+    "cap": 6000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -75874,7 +75873,7 @@ export const PARTS = [
     "upc": "102930719356151903520826763649029992804066532884076364902991",
     "mpn": "ST4000NM0023",
     "weight": "1.54 Pounds",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "HDD",
     "formFactor": "Other"
   },
@@ -75903,7 +75902,7 @@ export const PARTS = [
     ],
     "mpn": "TM8FFD002T0C101",
     "weight": "7 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "2.28 inches"
@@ -75934,7 +75933,7 @@ export const PARTS = [
     ],
     "mpn": "X15-Black-512G",
     "weight": "0.03 Kilograms",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M 2"
@@ -75964,7 +75963,7 @@ export const PARTS = [
     ],
     "mpn": "MZ-77E2T0B/EC",
     "weight": "45.6 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -75994,7 +75993,7 @@ export const PARTS = [
     "upc": "763649069103763649118061",
     "mpn": "ST500LX025",
     "weight": "91 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -76017,7 +76016,7 @@ export const PARTS = [
       }
     },
     "mpn": "WD5000AZLX-cr",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -76046,7 +76045,7 @@ export const PARTS = [
     ],
     "mpn": "WD80EFPX-AJP",
     "weight": "0.75 Kilograms",
-    "cap": "8 TB",
+    "cap": 8000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -76075,7 +76074,7 @@ export const PARTS = [
     ],
     "mpn": "KOOTION",
     "weight": "0.21 Ounces",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M 2"
@@ -76105,7 +76104,7 @@ export const PARTS = [
     ],
     "mpn": "X400-2TB 2280",
     "weight": "20 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -76134,7 +76133,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71aJfQAdj5L._AC_SL1500_.jpg"
     ],
     "mpn": "WD40EFPX-AJP",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "HDD",
     "formFactor": "3.5-inch"
   },
@@ -76163,7 +76162,7 @@ export const PARTS = [
     ],
     "mpn": "MZ-V9P1T0B-IT/EC",
     "weight": "9 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M.2 (2280)"
   },
@@ -76193,7 +76192,7 @@ export const PARTS = [
     "upc": "763649144886",
     "mpn": "ZA500GM10001",
     "weight": "0.11 Pounds",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -76223,7 +76222,7 @@ export const PARTS = [
     "upc": "718037847719",
     "mpn": "WD101KFBX",
     "weight": "1.4 Pounds",
-    "cap": "10 TB",
+    "cap": 10000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -76251,7 +76250,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/612GemWIXzL._AC_SL1200_.jpg"
     ],
     "mpn": "WD60EFPX-AJP",
-    "cap": "6 TB",
+    "cap": 6000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -76280,7 +76279,7 @@ export const PARTS = [
     ],
     "upc": "703670659652",
     "mpn": "Exos ST24000NM000C",
-    "cap": "24 TB",
+    "cap": 24000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -76310,7 +76309,7 @@ export const PARTS = [
     "upc": "887184022338",
     "mpn": "GM7000HS-4TB",
     "weight": "40.8 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -76340,7 +76339,7 @@ export const PARTS = [
     ],
     "upc": "718037884851",
     "mpn": "WDBRJY0160HNC-WRSN",
-    "cap": "16 TB",
+    "cap": 16000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -76369,7 +76368,7 @@ export const PARTS = [
     ],
     "upc": "649528939999",
     "mpn": "CT2000T500SSD5JP",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M.2 2280"
   },
@@ -76399,7 +76398,7 @@ export const PARTS = [
     "upc": "843367137053",
     "mpn": "LNQ780X004T-RNNNU",
     "weight": "0.04 Kilograms",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -76428,7 +76427,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81wSBDwl4DL._AC_SL1500_.jpg"
     ],
     "mpn": "GM988",
-    "cap": "4TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M2"
@@ -76459,7 +76458,7 @@ export const PARTS = [
     ],
     "mpn": "DP700PSSD-1TB",
     "weight": "10 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M.2 2280"
@@ -76488,7 +76487,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81wSBDwl4DL._AC_SL1500_.jpg"
     ],
     "mpn": "GM988",
-    "cap": "512GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M2"
@@ -76518,7 +76517,7 @@ export const PARTS = [
     ],
     "mpn": "DP700PSSD-512GB",
     "weight": "10 Grams",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M.2 2280"
@@ -76547,7 +76546,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71v50ci1jIL._AC_SL1500_.jpg"
     ],
     "mpn": "ON2000PRO",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2"
@@ -76577,7 +76576,7 @@ export const PARTS = [
     ],
     "mpn": "GM328",
     "weight": "0.03 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen3",
     "formFactor": "M2"
@@ -76608,7 +76607,7 @@ export const PARTS = [
     "upc": "887184019390",
     "mpn": "FA200-4TB",
     "weight": "6.4 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -76637,7 +76636,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71v50ci1jIL._AC_SL1500_.jpg"
     ],
     "mpn": "ON2000PRO",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2"
@@ -76667,7 +76666,7 @@ export const PARTS = [
     ],
     "upc": "647213692754",
     "mpn": "ST4000LM024-cr",
-    "cap": "4000 GB",
+    "cap": 4000,
     "form": "HDD",
     "formFactor": "2.5-inch"
   },
@@ -76702,7 +76701,7 @@ export const PARTS = [
     "upc": "649528942081",
     "mpn": "CT1000P310SSD8",
     "weight": "0.02 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "Bar"
@@ -76732,7 +76731,7 @@ export const PARTS = [
     ],
     "mpn": "LVD10Z001TG8",
     "weight": "5.6 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -76763,7 +76762,7 @@ export const PARTS = [
     "upc": "843367136834",
     "mpn": "LNM109P004T-RNNNU",
     "weight": "0.04 Kilograms",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2"
@@ -76794,7 +76793,7 @@ export const PARTS = [
     "upc": "843367136827",
     "mpn": "LNM109P002T-RNNNU",
     "weight": "1.6 ounces",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -76825,7 +76824,7 @@ export const PARTS = [
     "upc": "887276638348",
     "mpn": "MZ-V9P2T0BW",
     "weight": "9 Grams",
-    "cap": "2000 GB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "Portable"
   },
@@ -76854,7 +76853,7 @@ export const PARTS = [
     ],
     "upc": "843367136810",
     "mpn": "LNM109P001T-RNNNU",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -76884,7 +76883,7 @@ export const PARTS = [
     ],
     "mpn": "SKH-P51-2TB",
     "weight": "0.07 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -76915,7 +76914,7 @@ export const PARTS = [
     "upc": "887184022710",
     "mpn": "X570-1TB",
     "weight": "6.35 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -76945,7 +76944,7 @@ export const PARTS = [
     ],
     "mpn": "990 PRO",
     "weight": "0.07 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -76975,7 +76974,7 @@ export const PARTS = [
     ],
     "mpn": "TM8FFD004T0C101",
     "weight": "7 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -77005,7 +77004,7 @@ export const PARTS = [
     ],
     "mpn": "TM8FFL004T0C129",
     "weight": "1.28 ounces",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -77034,7 +77033,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81lt+f7y0zL._AC_SL1500_.jpg"
     ],
     "mpn": "SIX SSD - 10",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -77064,7 +77063,7 @@ export const PARTS = [
     ],
     "mpn": "SIX SSD - 12",
     "weight": "0.11 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -77093,7 +77092,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81lt+f7y0zL._AC_SL1500_.jpg"
     ],
     "mpn": "SIX SSD - 11",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -77123,7 +77122,7 @@ export const PARTS = [
     ],
     "mpn": "MZ-V9P4T0B-IT/EC",
     "weight": "9 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -77148,7 +77147,7 @@ export const PARTS = [
     "upc": "715663215516",
     "mpn": "ST3000DM008",
     "weight": "1.65 Pounds",
-    "cap": "3 TB",
+    "cap": 3000,
     "form": "HDD",
     "formFactor": "3.5-inch"
   },
@@ -77173,7 +77172,7 @@ export const PARTS = [
     "upc": "763649185285",
     "mpn": "ST16000DM001",
     "weight": "695 Grams",
-    "cap": "16 TB",
+    "cap": 16000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -77201,7 +77200,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71wOsuWLSKL._AC_SL1500_.jpg"
     ],
     "mpn": "WDS400T4B0E-EC",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "formFactor": "M 2"
   },
@@ -77230,7 +77229,7 @@ export const PARTS = [
     ],
     "mpn": "GM988H",
     "weight": "0.08 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M2"
   },
@@ -77259,7 +77258,7 @@ export const PARTS = [
     ],
     "mpn": "GM988H",
     "weight": "0.07 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M2"
   },
@@ -77288,7 +77287,7 @@ export const PARTS = [
     ],
     "mpn": "GM988H",
     "weight": "0.08 Kilograms",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "formFactor": "M2"
   },
@@ -77319,7 +77318,7 @@ export const PARTS = [
     "upc": "619659183493",
     "mpn": "0619659183493",
     "weight": "60 Grams",
-    "cap": "2000 GB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -77350,7 +77349,7 @@ export const PARTS = [
     "upc": "014444446423",
     "mpn": "ST4000NM0023",
     "weight": "134 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "HDD",
     "formFactor": "3.5-inch"
   },
@@ -77380,7 +77379,7 @@ export const PARTS = [
     "upc": "718037787039",
     "mpn": "WD5000LUCT",
     "weight": "0.1 Kilograms",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "HDD",
     "formFactor": "2.5-inch"
   },
@@ -77409,7 +77408,7 @@ export const PARTS = [
     ],
     "mpn": "FN990",
     "weight": "0.08 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -77437,7 +77436,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61r3L0bUS+L._AC_SL1500_.jpg"
     ],
     "mpn": "P400VP2TBM28H",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -77462,7 +77461,7 @@ export const PARTS = [
     "discount": 22,
     "upc": "603784328522",
     "mpn": "FireCuda",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "SATA SSD",
     "formFactor": "2,5"
   },
@@ -77492,7 +77491,7 @@ export const PARTS = [
     "upc": "824142326930",
     "mpn": "SPATIUM M480 PRO PCIe 4.0 NVMe M.2 4TB",
     "weight": "1.6 ounces",
-    "cap": "4000 GB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -77523,7 +77522,7 @@ export const PARTS = [
     "upc": "718037904610",
     "mpn": "WDS200T4G0E",
     "weight": "5.4 Grams",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -77554,7 +77553,7 @@ export const PARTS = [
     ],
     "mpn": "X12-Black-1TB",
     "weight": "0.05 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -77584,7 +77583,7 @@ export const PARTS = [
     ],
     "upc": "804272779950",
     "mpn": "GST-M2-2T-PCIE4",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -77615,7 +77614,7 @@ export const PARTS = [
     ],
     "upc": "804272764925",
     "mpn": "GS-PCIe-SSD-Gen4-GT6470-1TB-1PK-R",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M2"
@@ -77647,7 +77646,7 @@ export const PARTS = [
     "upc": "751492781822",
     "mpn": "M280CS3150XHS-1TB-RB",
     "weight": "0.05 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -77676,7 +77675,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/8103rFfJJPL._AC_SL1500_.jpg"
     ],
     "mpn": "ad2TBG55M2P",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "2.5-inch"
@@ -77706,7 +77705,7 @@ export const PARTS = [
     ],
     "mpn": "ad1TBG55M2P",
     "weight": "0.03 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "2.5-inch"
@@ -77736,7 +77735,7 @@ export const PARTS = [
     ],
     "mpn": "EN880E",
     "weight": "9 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "formFactor": "M2"
   },
@@ -77761,7 +77760,7 @@ export const PARTS = [
     "discount": 10,
     "mpn": "ST4000NM0115/CR",
     "weight": "1.5 Pounds",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -77790,7 +77789,7 @@ export const PARTS = [
     ],
     "mpn": "B0FLY16HRX",
     "weight": "8 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe"
   },
   {
@@ -77820,7 +77819,7 @@ export const PARTS = [
     "upc": "763649176344763649176986",
     "mpn": "ST2000NT001",
     "weight": "1.7 Pounds",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -77850,7 +77849,7 @@ export const PARTS = [
     "upc": "763649176283763649177044",
     "mpn": "ST14000NT001",
     "weight": "0.67 Kilograms",
-    "cap": "14 TB",
+    "cap": 14000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -77885,7 +77884,7 @@ export const PARTS = [
     ],
     "upc": "619659193447",
     "mpn": "BLACK SN850X",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -77915,7 +77914,7 @@ export const PARTS = [
     ],
     "mpn": "OS001",
     "weight": "6.95 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -77945,7 +77944,7 @@ export const PARTS = [
     "upc": "751492799933",
     "mpn": "M280CS3250-1TB-TB",
     "weight": "0.01 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2 2280"
@@ -77975,7 +77974,7 @@ export const PARTS = [
     ],
     "mpn": "XE600",
     "weight": "35 Grams",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -78006,7 +78005,7 @@ export const PARTS = [
     "upc": "751492799940",
     "mpn": "M280CS3250-2TB-TB",
     "weight": "0.01 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M.2"
@@ -78035,7 +78034,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71Nd4oVWUPL._AC_SL1500_.jpg"
     ],
     "mpn": "S910 Pro-2TB",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M2"
@@ -78065,7 +78064,7 @@ export const PARTS = [
     ],
     "mpn": "S910 Pro-1TB",
     "weight": "0.06 Kilograms",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen5",
     "formFactor": "M2"
@@ -78101,7 +78100,7 @@ export const PARTS = [
     "upc": "649528946072",
     "mpn": "CT2000P510SSD8",
     "weight": "6.5 Grams",
-    "cap": "2048 GB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -78130,7 +78129,7 @@ export const PARTS = [
     ],
     "mpn": "MZ-V9P4T0GW",
     "weight": "28 Grams",
-    "cap": "4000 GB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M 2"
@@ -78161,7 +78160,7 @@ export const PARTS = [
     ],
     "mpn": "ARSDSLK-1TB",
     "weight": "20 Grams",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 2280"
@@ -78191,7 +78190,7 @@ export const PARTS = [
     ],
     "mpn": "P410P500GM28H",
     "weight": "27 Grams",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -78221,7 +78220,7 @@ export const PARTS = [
     "upc": "804272764932",
     "mpn": "GS-PCIe-SSD-Gen4-GT6470-2TB-1PK-R",
     "weight": "0.01 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M2"
@@ -78251,7 +78250,7 @@ export const PARTS = [
     ],
     "mpn": "P410P2TBM28H",
     "weight": "0.7 Kilograms",
-    "cap": "2 TB",
+    "cap": 2000,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -78279,7 +78278,7 @@ export const PARTS = [
     ],
     "upc": "649528787385",
     "mpn": "CT500MX500SSD1T",
-    "cap": "500 GB",
+    "cap": 500,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -78309,7 +78308,7 @@ export const PARTS = [
     "upc": "619659193447619659193065",
     "mpn": "_BLACK SN850X",
     "weight": "24 Grams",
-    "cap": "1000 GB",
+    "cap": 1000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "NVMe SSD"
@@ -78338,7 +78337,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61UOrsnSsnL._AC_SL1500_.jpg"
     ],
     "mpn": "ST4000DM004",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -78368,7 +78367,7 @@ export const PARTS = [
     "upc": "196641016668",
     "mpn": "E2SAMMZ77E1T0B",
     "weight": "0.38 Pounds",
-    "cap": "1024 GB",
+    "cap": 1000,
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -78396,7 +78395,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71qc8LWZekL._AC_SL1500_.jpg"
     ],
     "mpn": "FN960",
-    "cap": "512 GB",
+    "cap": 512,
     "form": "NVMe",
     "pcie": "Gen4"
   },
@@ -78424,7 +78423,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71qc8LWZekL._AC_SL1500_.jpg"
     ],
     "mpn": "FN960",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4"
   },
@@ -78454,7 +78453,7 @@ export const PARTS = [
     ],
     "upc": "649661182641",
     "mpn": "ST16000NM003G",
-    "cap": "16 TB",
+    "cap": 16000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
@@ -78483,7 +78482,7 @@ export const PARTS = [
     ],
     "upc": "885022027064",
     "mpn": "TS-464-8G-US",
-    "cap": "12000 GB",
+    "cap": 12000,
     "form": "HDD",
     "formFactor": "3.5-inch"
   },
@@ -78512,7 +78511,6 @@ export const PARTS = [
     ],
     "mpn": "X5DP-1TB",
     "weight": "1.4 Grams",
-    "cap": "1000 TB",
     "form": "SATA SSD",
     "formFactor": "2.5-inch"
   },
@@ -78542,7 +78540,7 @@ export const PARTS = [
     "upc": "798239063124",
     "mpn": "MP600 PRO LPX",
     "weight": "0.09 Pounds",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2"
@@ -78573,7 +78571,7 @@ export const PARTS = [
     ],
     "upc": "649528947048",
     "mpn": "CT1000T710SSD8-JP",
-    "cap": "1 TB",
+    "cap": 1000,
     "form": "NVMe",
     "formFactor": "M.2"
   },
@@ -78603,7 +78601,7 @@ export const PARTS = [
     "upc": "196641133570",
     "mpn": "E99SAMMZV9P4T0B",
     "weight": "0.02 Pounds",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4",
     "formFactor": "M.2 (2280)"
@@ -78632,7 +78630,7 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71D+ug5AgtL._AC_SL1500_.jpg"
     ],
     "mpn": "FN950",
-    "cap": "4 TB",
+    "cap": 4000,
     "form": "NVMe",
     "pcie": "Gen4"
   },
@@ -78663,7 +78661,7 @@ export const PARTS = [
     "upc": "603784366050",
     "mpn": "WD60EFRX#CR",
     "weight": "0.14 Kilograms",
-    "cap": "6000 GB",
+    "cap": 6000,
     "form": "SATA SSD",
     "formFactor": "3.5-inch"
   },
