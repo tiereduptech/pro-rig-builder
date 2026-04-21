@@ -10098,7 +10098,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BP88MYM4?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7111,
@@ -10122,7 +10123,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FLGMTSRQ?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7112,
@@ -10146,7 +10148,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FLFGG1CC?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7113,
@@ -10170,7 +10173,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FLFGGDK3?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7114,
@@ -10194,7 +10198,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0C572JWW9?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7115,
@@ -10218,7 +10223,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0C572JWW9?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7116,
@@ -10242,7 +10248,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DLFMTX12?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7117,
@@ -10266,7 +10273,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DLFM4YNM?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7118,
@@ -10290,7 +10298,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BV6CWS2Z?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7119,
@@ -10314,7 +10323,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FBXX1D17?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7120,
@@ -10338,7 +10348,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FBXX1D17?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7121,
@@ -10362,7 +10373,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BZWZYTWJ?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7122,
@@ -10386,7 +10398,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B010HWDOH6?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7123,
@@ -10410,7 +10423,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B08DZY15CW?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7124,
@@ -10434,7 +10448,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DJ6DGHCP?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7125,
@@ -10458,7 +10473,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BF4YRCK8?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7126,
@@ -10482,7 +10498,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FJYN5GWD?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7127,
@@ -10506,7 +10523,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CQMQY2V2?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7128,
@@ -10530,7 +10548,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0D45QCZHX?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7129,
@@ -10554,7 +10573,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0D45RN3KZ?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7130,
@@ -10578,7 +10598,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B097Q9DB5G?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7131,
@@ -10602,7 +10623,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FJC6FM1C?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7132,
@@ -10626,7 +10648,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0C572JWW9?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7133,
@@ -10650,7 +10673,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0F1NGKBK3?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7134,
@@ -10674,7 +10698,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BV6CWS2Z?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7135,
@@ -12108,7 +12133,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09C6DQDNT?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7179,
@@ -12130,7 +12156,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B07655KF5C?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7180,
@@ -12152,7 +12179,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09C6DQDNT?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7181,
@@ -12174,7 +12202,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FJRYPLWJ?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7182,
@@ -12196,7 +12225,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DPX94PSL?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7183,
@@ -12218,7 +12248,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0D49Q4CGM?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "RGB"
   },
   {
     "id": 7184,
@@ -12240,7 +12271,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CSSXZKJB?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "RGB"
   },
   {
     "id": 7185,
@@ -12262,7 +12294,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0B4P5S94P?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7186,
@@ -12284,7 +12317,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FBXX1D17?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7187,
@@ -12306,7 +12340,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0B744J87R?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7188,
@@ -12328,7 +12363,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DGLDGVJH?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7189,
@@ -12350,7 +12386,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09B2LTXCN?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7190,
@@ -12372,7 +12409,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FBWCZQ6H?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7191,
@@ -12394,7 +12432,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FQ293XFQ?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 7192,
@@ -15116,7 +15155,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CB9MSJ5N?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 8075,
@@ -15140,7 +15180,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CC3QBGDL?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 8076,
@@ -15164,7 +15205,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DXVPBJJ2?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 8077,
@@ -15188,7 +15230,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FM7HZK5F?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 8078,
@@ -15212,7 +15255,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B014W3EMAO?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 8079,
@@ -15236,7 +15280,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B014W3EMAO?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 8080,
@@ -15260,7 +15305,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FLG4M8S2?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 8081,
@@ -15284,7 +15330,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FFYB49YH?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 8082,
@@ -15308,7 +15355,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CGGMBP61?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 8083,
@@ -15332,7 +15380,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CCV79718?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "color": "Black"
   },
   {
     "id": 8084,
@@ -22725,9 +22774,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71omde7rVfL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71X3JDFoNyL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "rgb": true,
-    "noise": 29
+    "noise": 29,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14278,
@@ -22754,10 +22804,11 @@ export const PARTS = [
     ],
     "upc": "840353049291",
     "weight": "0.84 Kilograms",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 29.8
+    "noise": 29.8,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14279,
@@ -22785,8 +22836,9 @@ export const PARTS = [
     "upc": "840006609124",
     "mpn": "CORSAIR iCUE 220T RGB Airflow Tempered Glass Mid-Tower Smart Case, Black",
     "weight": "14.33 Pounds",
-    "fanSize": "120 Millimeters",
-    "rgb": true
+    "rgb": true,
+    "size": "120 Millimeters",
+    "color": "Black"
   },
   {
     "id": 14280,
@@ -22812,7 +22864,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71D9eEF4DYL._AC_SL1500_.jpg"
     ],
     "mpn": "BG035",
-    "weight": "6.95 Kilograms"
+    "weight": "6.95 Kilograms",
+    "color": "White"
   },
   {
     "id": 14281,
@@ -22845,9 +22898,10 @@ export const PARTS = [
     "upc": "840006694328",
     "mpn": "4000D RGB AIRFLOW",
     "weight": "17.85 Pounds",
-    "fanSize": "120 Millimeters",
     "rgb": true,
-    "fans_inc": 3
+    "fans_inc": 3,
+    "size": "120 Millimeters",
+    "color": "RGB"
   },
   {
     "id": 14282,
@@ -22875,9 +22929,10 @@ export const PARTS = [
     ],
     "mpn": "BGW64",
     "weight": "12.3 Kilograms",
-    "fanSize": "140 Millimeters",
     "rgb": true,
-    "pwm": true
+    "pwm": true,
+    "size": "140 Millimeters",
+    "color": "Black"
   },
   {
     "id": 14283,
@@ -22904,7 +22959,8 @@ export const PARTS = [
     ],
     "mpn": "BG039",
     "weight": "12.6 Kilograms",
-    "fanSize": "120 Millimeters"
+    "size": "120 Millimeters",
+    "color": "Black"
   },
   {
     "id": 14284,
@@ -22932,9 +22988,10 @@ export const PARTS = [
     ],
     "upc": "840033402774",
     "weight": "185 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "fans_inc": 5
+    "fans_inc": 5,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14285,
@@ -22961,9 +23018,10 @@ export const PARTS = [
     ],
     "upc": "841501110368",
     "weight": "0.13 Kilograms",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 25.1
+    "noise": 25.1,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14286,
@@ -22988,9 +23046,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71LFZ3bGM6L._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71tftKSWTVL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "fans_inc": 3,
-    "noise": 32.1
+    "noise": 32.1,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14287,
@@ -23017,8 +23076,9 @@ export const PARTS = [
     ],
     "upc": "840033402750",
     "weight": "183 Grams",
-    "fanSize": "120mm",
-    "pwm": true
+    "pwm": true,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14288,
@@ -23045,9 +23105,10 @@ export const PARTS = [
     ],
     "upc": "901001810035841501110399",
     "weight": "360 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 22.6
+    "noise": 22.6,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14289,
@@ -23075,9 +23136,10 @@ export const PARTS = [
     ],
     "upc": "872767009554",
     "weight": "16 ounces",
-    "fanSize": "120mm",
     "fans_inc": 5,
-    "noise": 0.3
+    "noise": 0.3,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14290,
@@ -23105,10 +23167,11 @@ export const PARTS = [
     ],
     "upc": "840006684121",
     "weight": "0.4 Pounds",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 36
+    "noise": 36,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14291,
@@ -23135,9 +23198,10 @@ export const PARTS = [
     ],
     "upc": "772467848401772467848456",
     "weight": "100 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 0.5
+    "noise": 0.5,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14292,
@@ -23164,11 +23228,12 @@ export const PARTS = [
     ],
     "upc": "764035263525",
     "weight": "100 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 5,
-    "noise": 25.6
+    "noise": 25.6,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14293,
@@ -23194,9 +23259,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/714aFbMOHOL._SL1500_.jpg"
     ],
     "weight": "310 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 22.5
+    "noise": 22.5,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14294,
@@ -23224,7 +23290,8 @@ export const PARTS = [
     ],
     "weight": "1.86 ounces",
     "rgb": true,
-    "pwm": true
+    "pwm": true,
+    "color": "RGB"
   },
   {
     "id": 14295,
@@ -23250,9 +23317,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81pQdEbqewL._AC_SL1500_.jpg"
     ],
     "upc": "782386481320842431014375737007519975",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 43.5
+    "noise": 43.5,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14296,
@@ -23280,10 +23348,11 @@ export const PARTS = [
     ],
     "upc": "840033401692",
     "weight": "85 Grams",
-    "fanSize": "120mm",
     "pwm": true,
     "fans_inc": 3,
-    "noise": 0.3
+    "noise": 0.3,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14297,
@@ -23309,10 +23378,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71c1sdY1uZL._SL1500_.jpg"
     ],
     "upc": "850059070246",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 27.7
+    "noise": 27.7,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14298,
@@ -23339,9 +23409,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61pIfZx3YlL._SL1500_.jpg"
     ],
     "weight": "0.15 Kilograms",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 25.5
+    "noise": 25.5,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14299,
@@ -23368,9 +23439,10 @@ export const PARTS = [
     ],
     "upc": "840033402798",
     "weight": "185 Grams",
-    "fanSize": "120mm",
     "rgb": true,
-    "pwm": true
+    "pwm": true,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14300,
@@ -23397,7 +23469,8 @@ export const PARTS = [
     ],
     "weight": "0.58 Kilograms",
     "pwm": true,
-    "noise": 22.5
+    "noise": 22.5,
+    "color": "Black"
   },
   {
     "id": 14301,
@@ -23424,11 +23497,12 @@ export const PARTS = [
     ],
     "upc": "814256022231",
     "weight": "100 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 28.2
+    "noise": 28.2,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14302,
@@ -23455,8 +23529,9 @@ export const PARTS = [
     ],
     "upc": "840033402767",
     "weight": "185 Grams",
-    "fanSize": "120mm",
-    "pwm": true
+    "pwm": true,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14303,
@@ -23483,11 +23558,12 @@ export const PARTS = [
     ],
     "upc": "840033403399",
     "weight": "172 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 0.08
+    "noise": 0.08,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14304,
@@ -23514,10 +23590,11 @@ export const PARTS = [
     ],
     "upc": "840033402804",
     "weight": "185 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "fans_inc": 3
+    "fans_inc": 3,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14305,
@@ -23544,7 +23621,8 @@ export const PARTS = [
     ],
     "weight": "0.51 Kilograms",
     "pwm": true,
-    "noise": 24.8
+    "noise": 24.8,
+    "color": "Black"
   },
   {
     "id": 14306,
@@ -23571,9 +23649,10 @@ export const PARTS = [
     ],
     "upc": "842431012319",
     "weight": "0.15 Kilograms",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 25.8
+    "noise": 25.8,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14307,
@@ -23600,9 +23679,10 @@ export const PARTS = [
     ],
     "upc": "897337035856807320183174863121543135846764214280782386480576842431014337841501190025731215278051",
     "weight": "0.2 Kilograms",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 24.6
+    "noise": 24.6,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14308,
@@ -23629,9 +23709,10 @@ export const PARTS = [
     ],
     "upc": "872767009271",
     "weight": "145 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 0.3
+    "noise": 0.3,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14309,
@@ -23659,7 +23740,8 @@ export const PARTS = [
     "upc": "809185325676808111662878782386485816172302657906172302886290112840359818842431014177102930672927731215275456172304221594809385174869804066543880132017920726163121136789132017749549782386477972168141421501",
     "weight": "205 Grams",
     "pwm": true,
-    "noise": 19.9
+    "noise": 19.9,
+    "color": "Black"
   },
   {
     "id": 14310,
@@ -23686,7 +23768,8 @@ export const PARTS = [
     ],
     "weight": "0.28 Kilograms",
     "pwm": true,
-    "noise": 23.9
+    "noise": 23.9,
+    "color": "Black"
   },
   {
     "id": 14311,
@@ -23714,9 +23797,10 @@ export const PARTS = [
     ],
     "upc": "827676014038735280754014",
     "weight": "310 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 36.9
+    "noise": 36.9,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14312,
@@ -23743,10 +23827,11 @@ export const PARTS = [
     ],
     "upc": "772467848326772467848432772467848487",
     "weight": "100 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 25.6
+    "noise": 25.6,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14313,
@@ -23779,9 +23864,10 @@ export const PARTS = [
     ],
     "upc": "840006697947",
     "weight": "1.42 Pounds",
-    "fanSize": "120mm",
     "rgb": true,
-    "noise": 37
+    "noise": 37,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14314,
@@ -23813,10 +23899,11 @@ export const PARTS = [
     ],
     "upc": "810074843027",
     "weight": "174 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 33.88
+    "noise": 33.88,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14315,
@@ -23842,9 +23929,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61CyHJ62HJL._SL1500_.jpg"
     ],
     "upc": "772467848395",
-    "fanSize": "120mm",
     "rgb": true,
-    "noise": 25.6
+    "noise": 25.6,
+    "size": "120mm",
+    "color": "White"
   },
   {
     "id": 14316,
@@ -23872,7 +23960,8 @@ export const PARTS = [
     "upc": "841501110474",
     "weight": "0.1 Kilograms",
     "pwm": true,
-    "noise": 23.6
+    "noise": 23.6,
+    "color": "Black"
   },
   {
     "id": 14317,
@@ -23899,7 +23988,8 @@ export const PARTS = [
     ],
     "upc": "841501110467",
     "pwm": true,
-    "noise": 23.9
+    "noise": 23.9,
+    "color": "Black"
   },
   {
     "id": 14318,
@@ -23931,9 +24021,10 @@ export const PARTS = [
     ],
     "upc": "840006684206",
     "weight": "6.4 ounces",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 36
+    "noise": 36,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14319,
@@ -23960,9 +24051,10 @@ export const PARTS = [
     ],
     "upc": "794713055470",
     "weight": "0.01 Ounces",
-    "fanSize": "120mm",
     "fans_inc": 2,
-    "noise": 23
+    "noise": 23,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14320,
@@ -23990,11 +24082,12 @@ export const PARTS = [
     ],
     "upc": "814256020343",
     "weight": "0.18 Kilograms",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 28.2
+    "noise": 28.2,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14321,
@@ -24020,9 +24113,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/51VS5vQOIFL._SX35_SY46._CR0,0,35,46_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg"
     ],
     "weight": "0.15 Kilograms",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 30.9
+    "noise": 30.9,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14322,
@@ -24049,7 +24143,8 @@ export const PARTS = [
     ],
     "weight": "0.55 Pounds",
     "rgb": true,
-    "noise": 29
+    "noise": 29,
+    "color": "Black"
   },
   {
     "id": 14323,
@@ -24072,9 +24167,10 @@ export const PARTS = [
     "additionalImages": [
       "https://m.media-amazon.com/images/I/51zDZntdirL._SX35_SY46._CR0,0,35,46_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg"
     ],
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 25.5
+    "noise": 25.5,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14324,
@@ -24101,10 +24197,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71LDVTtT8RL._SL1500_.jpg"
     ],
     "weight": "700 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 29.2
+    "noise": 29.2,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14325,
@@ -24131,7 +24228,8 @@ export const PARTS = [
     ],
     "upc": "840353048485",
     "rgb": true,
-    "noise": 32.2
+    "noise": 32.2,
+    "color": "Black"
   },
   {
     "id": 14326,
@@ -24164,10 +24262,11 @@ export const PARTS = [
     ],
     "upc": "840440494652",
     "weight": "1.19 Pounds",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 34.6
+    "noise": 34.6,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14327,
@@ -24194,9 +24293,10 @@ export const PARTS = [
     ],
     "upc": "840033403061",
     "weight": "237 Grams",
-    "fanSize": "140mm",
     "rgb": true,
-    "pwm": true
+    "pwm": true,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14328,
@@ -24223,8 +24323,9 @@ export const PARTS = [
     ],
     "upc": "840033403047",
     "weight": "240 Grams",
-    "fanSize": "140mm",
-    "pwm": true
+    "pwm": true,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14329,
@@ -24250,9 +24351,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71Po9SdxWGL._SL1500_.jpg"
     ],
     "weight": "0.26 Kilograms",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 24.8
+    "noise": 24.8,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14330,
@@ -24279,11 +24381,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71+IBQr-F1L._SL1500_.jpg"
     ],
     "upc": "767461801682",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 23.2
+    "noise": 23.2,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14331,
@@ -24309,11 +24412,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71g+qnZ3FrL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71fI+-9GSJL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 7,
-    "noise": 19
+    "noise": 19,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14332,
@@ -24340,9 +24444,10 @@ export const PARTS = [
     ],
     "upc": "172304222300808111654668842431014009804066535816132018224762731215276927191120056883115970710160168141420245782941813023809185316612809385165881013591007457782386479440",
     "weight": "299 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 22.4
+    "noise": 22.4,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14333,
@@ -24369,9 +24474,10 @@ export const PARTS = [
     ],
     "upc": "842431014412808114327767804067727944801947310715804904196162809395327460",
     "weight": "305 Milligrams",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 41.3
+    "noise": 41.3,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14334,
@@ -24398,9 +24504,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61BkEmEUUgL._SL1500_.jpg"
     ],
     "weight": "310 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 31.2
+    "noise": 31.2,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14335,
@@ -24426,9 +24533,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/619qBfL1udL._SL1500_.jpg"
     ],
     "weight": "310 Grams",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 36.8
+    "noise": 36.8,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14336,
@@ -24455,10 +24563,11 @@ export const PARTS = [
     ],
     "upc": "840006684152",
     "weight": "0.93 Pounds",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 36
+    "noise": 36,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14337,
@@ -24485,10 +24594,11 @@ export const PARTS = [
     ],
     "upc": "840006684145",
     "weight": "0.46 Pounds",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 36
+    "noise": 36,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14338,
@@ -24520,10 +24630,11 @@ export const PARTS = [
     ],
     "upc": "840006680918",
     "weight": "0.37 Pounds",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 36
+    "noise": 36,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14339,
@@ -24550,9 +24661,10 @@ export const PARTS = [
     ],
     "upc": "840006684237",
     "weight": "0.93 Pounds",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 36
+    "noise": 36,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14340,
@@ -24580,9 +24692,10 @@ export const PARTS = [
     ],
     "upc": "840033402095",
     "weight": "245 Grams",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 0.1
+    "noise": 0.1,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14341,
@@ -24608,9 +24721,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61wchrwMaqL._SL1500_.jpg"
     ],
     "upc": "764035263785",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 25.6
+    "noise": 25.6,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14342,
@@ -24634,9 +24748,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/51zDZntdirL._SX35_SY46._CR0,0,35,46_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg"
     ],
     "weight": "506 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 30.9
+    "noise": 30.9,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14343,
@@ -24663,10 +24778,11 @@ export const PARTS = [
     ],
     "upc": "796520302716",
     "weight": "100 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 25.6
+    "noise": 25.6,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14344,
@@ -24693,11 +24809,12 @@ export const PARTS = [
     ],
     "upc": "772123558989",
     "weight": "100 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 23.2
+    "noise": 23.2,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14345,
@@ -24723,10 +24840,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71v-CFE3etL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71gacoRpc0L._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 29
+    "noise": 29,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14346,
@@ -24753,8 +24871,9 @@ export const PARTS = [
     ],
     "upc": "764035265840",
     "weight": "100 Grams",
-    "fanSize": "120mm",
-    "noise": 25.6
+    "noise": 25.6,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14347,
@@ -24780,9 +24899,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71tkBHZ7axL._SL1500_.jpg"
     ],
     "weight": "0.36 Kilograms",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 24.8
+    "noise": 24.8,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14348,
@@ -24808,9 +24928,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/51VS5vQOIFL._SX35_SY46._CR0,0,35,46_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg"
     ],
     "weight": "210 Grams",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 21.9
+    "noise": 21.9,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14349,
@@ -24836,9 +24957,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/51VS5vQOIFL._SX35_SY46._CR0,0,35,46_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg"
     ],
     "weight": "220 Grams",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 30.5
+    "noise": 30.5,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14350,
@@ -24864,7 +24986,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/712cYPr6KgL._SL1500_.jpg"
     ],
     "pwm": true,
-    "noise": 24.8
+    "noise": 24.8,
+    "color": "Black"
   },
   {
     "id": 14351,
@@ -24890,10 +25013,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71pHA1d-hdL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71TQzMPdmzL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 29.2
+    "noise": 29.2,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14352,
@@ -24920,8 +25044,9 @@ export const PARTS = [
     ],
     "upc": "840033403054",
     "weight": "242 Grams",
-    "fanSize": "140mm",
-    "pwm": true
+    "pwm": true,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14353,
@@ -24949,7 +25074,8 @@ export const PARTS = [
     "upc": "840353048072",
     "weight": "450 Grams",
     "rgb": true,
-    "noise": 33
+    "noise": 33,
+    "color": "Black"
   },
   {
     "id": 14354,
@@ -24976,7 +25102,8 @@ export const PARTS = [
     ],
     "upc": "840353048058",
     "rgb": true,
-    "noise": 31
+    "noise": 31,
+    "color": "Black"
   },
   {
     "id": 14355,
@@ -25003,10 +25130,11 @@ export const PARTS = [
     ],
     "upc": "840033403115",
     "weight": "237 Grams",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "fans_inc": 3
+    "fans_inc": 3,
+    "size": "140mm",
+    "color": "RGB"
   },
   {
     "id": 14356,
@@ -25033,11 +25161,12 @@ export const PARTS = [
     ],
     "upc": "884102127236",
     "weight": "4.8 ounces",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 30
+    "noise": 30,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14357,
@@ -25064,9 +25193,10 @@ export const PARTS = [
     ],
     "upc": "840033402811",
     "weight": "185 Grams",
-    "fanSize": "120mm",
     "rgb": true,
-    "pwm": true
+    "pwm": true,
+    "size": "120mm",
+    "color": "White"
   },
   {
     "id": 14358,
@@ -25091,10 +25221,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61odu5fVlWL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71vexSqv8wL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 30
+    "noise": 30,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14359,
@@ -25124,7 +25255,8 @@ export const PARTS = [
     "weight": "81 Grams",
     "pwm": true,
     "fans_inc": 5,
-    "noise": 0.3
+    "noise": 0.3,
+    "color": "Black"
   },
   {
     "id": 14360,
@@ -25151,9 +25283,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61EL-l+bNAL._SL1500_.jpg"
     ],
     "upc": "840353047488",
-    "fanSize": "120mm",
     "rgb": true,
-    "noise": 31
+    "noise": 31,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14361,
@@ -25180,11 +25313,12 @@ export const PARTS = [
     ],
     "upc": "840033403351",
     "weight": "184 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 0.08
+    "noise": 0.08,
+    "size": "120mm",
+    "color": "White"
   },
   {
     "id": 14362,
@@ -25211,11 +25345,12 @@ export const PARTS = [
     ],
     "upc": "769047388075",
     "weight": "100 Grams",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 26.4
+    "noise": 26.4,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14363,
@@ -25242,8 +25377,9 @@ export const PARTS = [
     ],
     "upc": "840033402781",
     "weight": "185 Grams",
-    "fanSize": "120mm",
-    "pwm": true
+    "pwm": true,
+    "size": "120mm",
+    "color": "White"
   },
   {
     "id": 14364,
@@ -25270,11 +25406,12 @@ export const PARTS = [
     ],
     "upc": "840033403443",
     "weight": "253 Grams",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 0.08
+    "noise": 0.08,
+    "size": "140mm",
+    "color": "RGB"
   },
   {
     "id": 14365,
@@ -25296,7 +25433,8 @@ export const PARTS = [
     },
     "upc": "840353043558",
     "rgb": true,
-    "pwm": true
+    "pwm": true,
+    "color": "Black"
   },
   {
     "id": 14366,
@@ -25323,10 +25461,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61ewK1wlbwL._SL1000_.jpg"
     ],
     "weight": "140 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 29
+    "noise": 29,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14367,
@@ -25353,11 +25492,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61jJUgQCrVL._SL1000_.jpg"
     ],
     "weight": "1.27 Pounds",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 29
+    "noise": 29,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14368,
@@ -25384,7 +25524,8 @@ export const PARTS = [
     ],
     "upc": "840353048683",
     "rgb": true,
-    "noise": 20
+    "noise": 20,
+    "color": "Black"
   },
   {
     "id": 14369,
@@ -25410,8 +25551,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61gF4IrdxdL._SL1000_.jpg"
     ],
     "upc": "809395424008812348012641",
-    "fanSize": "140mm",
-    "noise": 23
+    "noise": 23,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14370,
@@ -25438,9 +25580,10 @@ export const PARTS = [
     ],
     "upc": "841501110405",
     "weight": "195 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 22.4
+    "noise": 22.4,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14371,
@@ -25467,9 +25610,10 @@ export const PARTS = [
     ],
     "upc": "841501110351",
     "weight": "0.53 Pounds",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 19.8
+    "noise": 19.8,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14372,
@@ -25496,9 +25640,10 @@ export const PARTS = [
     ],
     "upc": "808111663660863121543098731215276828846764214297807320183181842431014252809394261574803982961709",
     "weight": "6.4 ounces",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 17.8
+    "noise": 17.8,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14373,
@@ -25525,11 +25670,12 @@ export const PARTS = [
     ],
     "upc": "840033401050",
     "weight": "1.1 Pounds",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 0.3
+    "noise": 0.3,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14374,
@@ -25557,9 +25703,10 @@ export const PARTS = [
     ],
     "upc": "827676014953",
     "weight": "310 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 18.9
+    "noise": 18.9,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14375,
@@ -25591,9 +25738,10 @@ export const PARTS = [
     ],
     "upc": "810074843058",
     "weight": "208 Grams",
-    "fanSize": "140mm",
     "rgb": true,
-    "noise": 34.48
+    "noise": 34.48,
+    "size": "140mm",
+    "color": "White"
   },
   {
     "id": 14376,
@@ -25621,10 +25769,11 @@ export const PARTS = [
     ],
     "upc": "840033400954",
     "weight": "5.6 Ounces",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 0.3
+    "noise": 0.3,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14377,
@@ -25651,9 +25800,10 @@ export const PARTS = [
     ],
     "upc": "840006697954",
     "weight": "0.49 Pounds",
-    "fanSize": "140mm",
     "rgb": true,
-    "noise": 37
+    "noise": 37,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14378,
@@ -25680,8 +25830,9 @@ export const PARTS = [
     ],
     "upc": "872767009486",
     "weight": "229 Grams",
-    "fanSize": "140mm",
-    "noise": 3
+    "noise": 3,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14379,
@@ -25708,10 +25859,11 @@ export const PARTS = [
     ],
     "upc": "872767009547840033401043",
     "weight": "970 Grams",
-    "fanSize": "140mm",
     "pwm": true,
     "fans_inc": 5,
-    "noise": 3
+    "noise": 3,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14380,
@@ -25737,9 +25889,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61aPn33hZbL._SL1500_.jpg"
     ],
     "weight": "282 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 31
+    "noise": 31,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14381,
@@ -25765,9 +25918,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81tXE4c-BHL._SL1500_.jpg"
     ],
     "upc": "841501110252",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 21.4
+    "noise": 21.4,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14382,
@@ -25794,10 +25948,11 @@ export const PARTS = [
     ],
     "upc": "840006688709",
     "weight": "8.16 ounces",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 38.3
+    "noise": 38.3,
+    "size": "140mm",
+    "color": "RGB"
   },
   {
     "id": 14383,
@@ -25825,10 +25980,11 @@ export const PARTS = [
     ],
     "upc": "884102099793",
     "weight": "0.5 Pounds",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 27
+    "noise": 27,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14384,
@@ -25853,9 +26009,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71G7RMbDhqL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71F2K48nA8L._SL1500_.jpg"
     ],
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 21.9
+    "noise": 21.9,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14385,
@@ -25887,10 +26044,11 @@ export const PARTS = [
     ],
     "upc": "841163087893",
     "weight": "2.6 Pounds",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 25.8
+    "noise": 25.8,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14386,
@@ -25917,10 +26075,11 @@ export const PARTS = [
     ],
     "upc": "772123560579",
     "weight": "100 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 23.2
+    "noise": 23.2,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14387,
@@ -25945,10 +26104,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71D9wK+OsKL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71Q2vU9+uXL._AC_SL1500_.jpg"
     ],
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 25
+    "noise": 25,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14388,
@@ -25974,11 +26134,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/6128jv3vW7L._SL1500_.jpg"
     ],
     "upc": "764035266502",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 5,
-    "noise": 25.6
+    "noise": 25.6,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14389,
@@ -26004,9 +26165,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61N4iRd+IDL._SL1500_.jpg"
     ],
     "upc": "755225219132",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 26.4
+    "noise": 26.4,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14390,
@@ -26031,10 +26193,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71QZw5Dj1PL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/617QRHzm2HL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 29
+    "noise": 29,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14391,
@@ -26060,11 +26223,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71--Uw301LL._SL1500_.jpg"
     ],
     "weight": "14.4 ounces",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 23
+    "noise": 23,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14392,
@@ -26090,10 +26254,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71OqM+lklTL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71PQX0okiDL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 25
+    "noise": 25,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14393,
@@ -26120,8 +26285,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/51VS5vQOIFL._SX35_SY46._CR0,0,35,46_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg"
     ],
     "weight": "170 Grams",
-    "fanSize": "120mm",
-    "noise": 25.5
+    "noise": 25.5,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14394,
@@ -26148,10 +26314,11 @@ export const PARTS = [
     ],
     "upc": "840033403269",
     "weight": "172 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 0.08
+    "noise": 0.08,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14395,
@@ -26178,9 +26345,10 @@ export const PARTS = [
     ],
     "upc": "840033403092",
     "weight": "237 Grams",
-    "fanSize": "140mm",
     "rgb": true,
-    "pwm": true
+    "pwm": true,
+    "size": "140mm",
+    "color": "White"
   },
   {
     "id": 14396,
@@ -26206,9 +26374,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/717yBAuwDBL._SL1500_.jpg"
     ],
     "upc": "769047388068",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 26.4
+    "noise": 26.4,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14397,
@@ -26234,10 +26403,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/614nRQ9jxjL._SL1500_.jpg"
     ],
     "upc": "769047388082",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 26.4
+    "noise": 26.4,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14398,
@@ -26263,7 +26433,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/715Z+MIlZAL._SL1500_.jpg"
     ],
     "weight": "750 Grams",
-    "fanSize": "120mm"
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14399,
@@ -26295,11 +26466,12 @@ export const PARTS = [
     ],
     "upc": "841163097281",
     "weight": "1 Pounds",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 25.2
+    "noise": 25.2,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14400,
@@ -26325,10 +26497,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/714XipaRdcL._SL1500_.jpg"
     ],
     "weight": "580 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 30
+    "noise": 30,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14401,
@@ -26355,8 +26528,9 @@ export const PARTS = [
     ],
     "upc": "840033402828",
     "weight": "185 Grams",
-    "fanSize": "120mm",
-    "pwm": true
+    "pwm": true,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14402,
@@ -26382,9 +26556,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71g6+pvgknL._SL1500_.jpg"
     ],
     "upc": "840353048690",
-    "fanSize": "120mm",
     "rgb": true,
-    "noise": 28.5
+    "noise": 28.5,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14403,
@@ -26410,10 +26585,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71rrgWgyD6L._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71CnTWnUx6L._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "pwm": true,
     "fans_inc": 3,
-    "noise": 37.2
+    "noise": 37.2,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14404,
@@ -26440,10 +26616,11 @@ export const PARTS = [
     ],
     "upc": "840033403436",
     "weight": "248 Grams",
-    "fanSize": "140mm",
     "pwm": true,
     "fans_inc": 3,
-    "noise": 0.08
+    "noise": 0.08,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14405,
@@ -26470,9 +26647,10 @@ export const PARTS = [
     ],
     "upc": "840033403368",
     "weight": "167 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 0.08
+    "noise": 0.08,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14406,
@@ -26502,7 +26680,8 @@ export const PARTS = [
     "weight": "179 Grams",
     "rgb": true,
     "pwm": true,
-    "noise": 23
+    "noise": 23,
+    "color": "Black"
   },
   {
     "id": 14407,
@@ -26527,10 +26706,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81H8jTmMGnL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71TLPuPipiL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 28
+    "noise": 28,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14408,
@@ -26557,9 +26737,10 @@ export const PARTS = [
     ],
     "upc": "764035264423",
     "weight": "100 Grams",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 26.4
+    "noise": 26.4,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14409,
@@ -26586,10 +26767,11 @@ export const PARTS = [
     ],
     "upc": "843591032421689341102408",
     "weight": "0.36 Pounds",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 24.8
+    "noise": 24.8,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14410,
@@ -26616,10 +26798,11 @@ export const PARTS = [
     ],
     "upc": "840006636649",
     "weight": "0.12 Kilograms",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 26.5
+    "noise": 26.5,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14411,
@@ -26646,9 +26829,10 @@ export const PARTS = [
     ],
     "upc": "840033400930",
     "weight": "85 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 0.3
+    "noise": 0.3,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14412,
@@ -26675,11 +26859,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71sEZwIEc7L._SL1500_.jpg"
     ],
     "weight": "20 Grams",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 23.3
+    "noise": 23.3,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14413,
@@ -26706,10 +26891,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/51Bavx5Xn+L._SL1500_.jpg"
     ],
     "weight": "1 Kilograms",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 23.3
+    "noise": 23.3,
+    "size": "140mm",
+    "color": "White"
   },
   {
     "id": 14414,
@@ -26736,10 +26922,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71iXrF1pkQL._SL1500_.jpg"
     ],
     "weight": "100 Grams",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 31
+    "noise": 31,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14415,
@@ -26764,10 +26951,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71kpIWhlFtL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81WfGIaQOaL._AC_SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "rgb": true,
     "fans_inc": 3,
-    "noise": 17.6
+    "noise": 17.6,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14416,
@@ -26795,9 +26983,10 @@ export const PARTS = [
     ],
     "upc": "840033401111",
     "weight": "3.8 Ounces",
-    "fanSize": "120mm",
     "fans_inc": 5,
-    "noise": 0.3
+    "noise": 0.3,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14417,
@@ -26825,9 +27014,10 @@ export const PARTS = [
     ],
     "upc": "840033400916",
     "weight": "6.8 Ounces",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 0.3
+    "noise": 0.3,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14418,
@@ -26854,9 +27044,10 @@ export const PARTS = [
     ],
     "upc": "872767009530",
     "weight": "6.8 Ounces",
-    "fanSize": "140mm",
     "fans_inc": 5,
-    "noise": 0.3
+    "noise": 0.3,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14419,
@@ -26883,10 +27074,11 @@ export const PARTS = [
     ],
     "upc": "840006637769",
     "weight": "0.12 Kilograms",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 18
+    "noise": 18,
+    "size": "120mm",
+    "color": "White"
   },
   {
     "id": 14420,
@@ -26913,9 +27105,10 @@ export const PARTS = [
     ],
     "upc": "841501110412",
     "weight": "0.2 Kilograms",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 17.8
+    "noise": 17.8,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14421,
@@ -26943,7 +27136,8 @@ export const PARTS = [
     "upc": "815671019943",
     "weight": "7.2 ounces",
     "rgb": true,
-    "noise": 27.5
+    "noise": 27.5,
+    "color": "Black"
   },
   {
     "id": 14422,
@@ -26970,9 +27164,10 @@ export const PARTS = [
     ],
     "upc": "842431012326",
     "weight": "0.15 Kilograms",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 19.6
+    "noise": 19.6,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14423,
@@ -26999,9 +27194,10 @@ export const PARTS = [
     ],
     "upc": "841501110436",
     "weight": "0.32 Kilograms",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 24.6
+    "noise": 24.6,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14424,
@@ -27028,9 +27224,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71JGShjbAbL._SL1500_.jpg"
     ],
     "weight": "175 Grams",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 14.9
+    "noise": 14.9,
+    "size": "140mm",
+    "color": "White"
   },
   {
     "id": 14425,
@@ -27057,8 +27254,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71JGShjbAbL._SL1500_.jpg"
     ],
     "weight": "0.1 Kilograms",
-    "fanSize": "140mm",
-    "noise": 14.7
+    "noise": 14.7,
+    "size": "140mm",
+    "color": "White"
   },
   {
     "id": 14426,
@@ -27085,8 +27283,9 @@ export const PARTS = [
     ],
     "upc": "731215276033842431012333",
     "weight": "0.7 Pounds",
-    "fanSize": "140mm",
-    "noise": 19.6
+    "noise": 19.6,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14427,
@@ -27114,9 +27313,10 @@ export const PARTS = [
     ],
     "upc": "872767009301",
     "weight": "5.1 Ounces",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 0.3
+    "noise": 0.3,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14428,
@@ -27141,11 +27341,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71QvXvqFbrL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/61gZ4txQ1WL._SL1500_.jpg"
     ],
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 33.5
+    "noise": 33.5,
+    "size": "140mm",
+    "color": "RGB"
   },
   {
     "id": 14429,
@@ -27172,9 +27373,10 @@ export const PARTS = [
     ],
     "upc": "842431014191",
     "weight": "340 Grams",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 19.2
+    "noise": 19.2,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14430,
@@ -27199,8 +27401,9 @@ export const PARTS = [
     ],
     "upc": "842431013576168141421808191120015996172302658972132017920672163121136536",
     "weight": "0.5 Pounds",
-    "fanSize": "120mm",
-    "noise": 19.8
+    "noise": 19.8,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14431,
@@ -27233,10 +27436,11 @@ export const PARTS = [
     ],
     "upc": "840006688723",
     "weight": "0.37 Pounds",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 37.7
+    "noise": 37.7,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14432,
@@ -27263,9 +27467,10 @@ export const PARTS = [
     ],
     "upc": "804067218879842431014399804904101173801940470881807320187714731215279539",
     "weight": "0.2 Kilograms",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 31.5
+    "noise": 31.5,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14433,
@@ -27298,10 +27503,11 @@ export const PARTS = [
     ],
     "upc": "840006682882",
     "weight": "5.92 ounces",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 36
+    "noise": 36,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14434,
@@ -27328,8 +27534,9 @@ export const PARTS = [
     ],
     "upc": "163121136741168141421518149067199996172302657852102930672903842431014221132017920740",
     "weight": "180 Grams",
-    "fanSize": "140mm",
-    "noise": 11.9
+    "noise": 11.9,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14435,
@@ -27357,9 +27564,10 @@ export const PARTS = [
     ],
     "upc": "840033401685",
     "weight": "109 Grams",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 0.3
+    "noise": 0.3,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14436,
@@ -27386,8 +27594,9 @@ export const PARTS = [
     ],
     "upc": "841501110382",
     "weight": "0.36 Kilograms",
-    "fanSize": "120mm",
-    "noise": 22.6
+    "noise": 22.6,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14437,
@@ -27414,10 +27623,11 @@ export const PARTS = [
     ],
     "upc": "840033401319",
     "weight": "210 Grams",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 0.3
+    "noise": 0.3,
+    "size": "140mm",
+    "color": "RGB"
   },
   {
     "id": 14438,
@@ -27444,7 +27654,8 @@ export const PARTS = [
     ],
     "upc": "840353044654",
     "rgb": true,
-    "noise": 35
+    "noise": 35,
+    "color": "Black"
   },
   {
     "id": 14439,
@@ -27471,9 +27682,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61aPn33hZbL._SL1500_.jpg"
     ],
     "weight": "165 Grams",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 20.6
+    "noise": 20.6,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14440,
@@ -27500,8 +27712,9 @@ export const PARTS = [
     ],
     "upc": "842431014214863121543111809394261567807320183167012302282459803982961662012302284583846764214273731215278518",
     "weight": "0.34 Kilograms",
-    "fanSize": "140mm",
-    "noise": 19.2
+    "noise": 19.2,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14441,
@@ -27527,9 +27740,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61Bzu49AspL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/61aPn33hZbL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 30.9
+    "noise": 30.9,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14442,
@@ -27556,10 +27770,11 @@ export const PARTS = [
     ],
     "upc": "840353041042",
     "weight": "7 Kilograms",
-    "fanSize": "120mm",
     "rgb": true,
     "fans_inc": 3,
-    "noise": 25
+    "noise": 25,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14443,
@@ -27586,9 +27801,10 @@ export const PARTS = [
     ],
     "upc": "192876984529192876984512",
     "weight": "200 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 22.5
+    "noise": 22.5,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14444,
@@ -27614,10 +27830,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71KFCvMUk5L._SL1500_.jpg"
     ],
     "weight": "0.02 Pounds",
-    "fanSize": "120mm",
     "rgb": true,
     "fans_inc": 5,
-    "noise": 25
+    "noise": 25,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14445,
@@ -27649,9 +27866,10 @@ export const PARTS = [
     ],
     "upc": "841163089361",
     "weight": "1 Kilograms",
-    "fanSize": "120mm",
     "rgb": true,
-    "noise": 32.5
+    "noise": 32.5,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14446,
@@ -27677,10 +27895,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61rdE9szzQL._SL1200_.jpg"
     ],
     "upc": "840353042629",
-    "fanSize": "120mm",
     "rgb": true,
     "fans_inc": 3,
-    "noise": 29
+    "noise": 29,
+    "size": "120mm",
+    "color": "White"
   },
   {
     "id": 14447,
@@ -27707,7 +27926,8 @@ export const PARTS = [
     ],
     "weight": "0.31 Kilograms",
     "pwm": true,
-    "noise": 31.5
+    "noise": 31.5,
+    "color": "Black"
   },
   {
     "id": 14448,
@@ -27735,9 +27955,10 @@ export const PARTS = [
     ],
     "upc": "840033400763",
     "weight": "3.7 Ounces",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 0.3
+    "noise": 0.3,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14449,
@@ -27764,9 +27985,10 @@ export const PARTS = [
     ],
     "upc": "842431014405",
     "weight": "11.2 ounces",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 31.5
+    "noise": 31.5,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14450,
@@ -27792,9 +28014,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71J-RzgD12L._AC_SL1500_.jpg"
     ],
     "weight": "100 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 12.1
+    "noise": 12.1,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14451,
@@ -27821,8 +28044,9 @@ export const PARTS = [
     ],
     "upc": "841501110375",
     "weight": "360 Grams",
-    "fanSize": "120mm",
-    "noise": 12.1
+    "noise": 12.1,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14452,
@@ -27849,8 +28073,9 @@ export const PARTS = [
     ],
     "upc": "810074844420",
     "weight": "176 Grams",
-    "fanSize": "140mm",
-    "noise": 29.8
+    "noise": 29.8,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14453,
@@ -27877,10 +28102,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61T3rJp+t0L._SL1000_.jpg"
     ],
     "upc": "810074840972",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 36
+    "noise": 36,
+    "size": "140mm",
+    "color": "RGB"
   },
   {
     "id": 14454,
@@ -27907,10 +28133,11 @@ export const PARTS = [
     ],
     "upc": "840006637790",
     "weight": "0.36 Kilograms",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 18
+    "noise": 18,
+    "size": "140mm",
+    "color": "White"
   },
   {
     "id": 14455,
@@ -27936,9 +28163,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81QxpaaTE6L._AC_SL1500_.jpg"
     ],
     "weight": "7.4 ounces",
-    "fanSize": "120mm",
     "rgb": true,
-    "pwm": true
+    "pwm": true,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14456,
@@ -27965,9 +28193,10 @@ export const PARTS = [
     ],
     "upc": "841501110276",
     "weight": "330 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 22.4
+    "noise": 22.4,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14457,
@@ -27993,9 +28222,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81lVG2HPCPL._SL1500_.jpg"
     ],
     "weight": "0.22 Kilograms",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 30.5
+    "noise": 30.5,
+    "size": "140mm",
+    "color": "White"
   },
   {
     "id": 14458,
@@ -28023,7 +28253,8 @@ export const PARTS = [
     ],
     "weight": "1.5 Kilograms",
     "rgb": true,
-    "noise": 36.8
+    "noise": 36.8,
+    "color": "Black"
   },
   {
     "id": 14459,
@@ -28048,10 +28279,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61E6polAQPL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/61bVkt0VD1L._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "pwm": true,
     "fans_inc": 3,
-    "noise": 28
+    "noise": 28,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14460,
@@ -28076,8 +28308,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61t5xur5+KL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/61DOy+jT+rL._SL1495_.jpg"
     ],
-    "fanSize": "120mm",
-    "pwm": true
+    "pwm": true,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14461,
@@ -28104,9 +28337,10 @@ export const PARTS = [
     ],
     "upc": "841163086377",
     "weight": "16 ounces",
-    "fanSize": "140mm",
     "rgb": true,
-    "noise": 30.5
+    "noise": 30.5,
+    "size": "140mm",
+    "color": "White"
   },
   {
     "id": 14462,
@@ -28132,10 +28366,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61N4iRd+IDL._SL1500_.jpg"
     ],
     "upc": "755225212959",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 26.4
+    "noise": 26.4,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14463,
@@ -28160,10 +28395,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71D9wK+OsKL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71Q2vU9+uXL._AC_SL1500_.jpg"
     ],
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 25
+    "noise": 25,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14464,
@@ -28190,9 +28426,10 @@ export const PARTS = [
     ],
     "upc": "841501110238",
     "weight": "0.2 Kilograms",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 24.6
+    "noise": 24.6,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14465,
@@ -28218,7 +28455,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/51Cb86yxJtL._SX522_.jpg"
     ],
     "upc": "840353043398",
-    "noise": 29.2
+    "noise": 29.2,
+    "color": "Black"
   },
   {
     "id": 14466,
@@ -28244,10 +28482,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61by7lxhH7L._SL1500_.jpg"
     ],
     "weight": "442.4 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "fans_inc": 3,
-    "noise": 20
+    "noise": 20,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14467,
@@ -28274,8 +28513,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71SdAgNX1UL._SL1500_.jpg"
     ],
     "weight": "13.47 Ounces",
-    "fanSize": "140mm",
-    "noise": 46
+    "noise": 46,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14468,
@@ -28302,11 +28542,12 @@ export const PARTS = [
     ],
     "upc": "755225219460",
     "weight": "100 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 25.6
+    "noise": 25.6,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14469,
@@ -28333,7 +28574,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61aIL8TUrhL._SL1500_.jpg"
     ],
     "weight": "300 Grams",
-    "noise": 32.1
+    "noise": 32.1,
+    "color": "White"
   },
   {
     "id": 14470,
@@ -28360,9 +28602,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61tCqdH0inL._SL1200_.jpg"
     ],
     "upc": "840353042599",
-    "fanSize": "120mm",
     "rgb": true,
-    "noise": 29
+    "noise": 29,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14471,
@@ -28387,11 +28630,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71wjF61k1vL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71vkWCcNYPL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 30.4
+    "noise": 30.4,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14472,
@@ -28417,10 +28661,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/51Oi-PztZmL._SL1000_.jpg"
     ],
     "weight": "129 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 29
+    "noise": 29,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14473,
@@ -28447,7 +28692,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71IDyiz9LrL._SL1500_.jpg"
     ],
     "upc": "768365211614",
-    "noise": 20
+    "noise": 20,
+    "color": "Black"
   },
   {
     "id": 14474,
@@ -28473,8 +28719,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/91+fLkETdTL._AC_SL1500_.jpg"
     ],
     "upc": "803983042070842431014382804904094147",
-    "fanSize": "140mm",
-    "noise": 31.5
+    "noise": 31.5,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14475,
@@ -28495,7 +28742,8 @@ export const PARTS = [
       }
     },
     "upc": "840353042612",
-    "noise": 15
+    "noise": 15,
+    "color": "Black"
   },
   {
     "id": 14476,
@@ -28521,7 +28769,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/510wodu0bPL._AC_SL1001_.jpg"
     ],
     "upc": "707870737899",
-    "noise": 20
+    "noise": 20,
+    "color": "Black"
   },
   {
     "id": 14477,
@@ -28548,9 +28797,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61ezne8pj7L._SL1500_.jpg"
     ],
     "weight": "0.23 Kilograms",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 39.9
+    "noise": 39.9,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14478,
@@ -28577,10 +28827,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71P9zKT2kkL._SL1500_.jpg"
     ],
     "weight": "0.69 Kilograms",
-    "fanSize": "120mm",
     "pwm": true,
     "fans_inc": 3,
-    "noise": 39.9
+    "noise": 39.9,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14479,
@@ -28607,7 +28858,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71H9V4dU5xL._SL1500_.jpg"
     ],
     "weight": "310 Grams",
-    "rgb": true
+    "rgb": true,
+    "color": "RGB"
   },
   {
     "id": 14480,
@@ -28634,9 +28886,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61Sj2hcSbML._SL1500_.jpg"
     ],
     "weight": "0.28 Kilograms",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 39.9
+    "noise": 39.9,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14481,
@@ -28661,10 +28914,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71omde7rVfL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71X3JDFoNyL._SL1500_.jpg"
     ],
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 29
+    "noise": 29,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14482,
@@ -28689,7 +28943,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/91on6lCCUQL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/91+fLkETdTL._SL1500_.jpg"
     ],
-    "noise": 31.5
+    "noise": 31.5,
+    "color": "Black"
   },
   {
     "id": 14483,
@@ -28715,9 +28970,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81qClJ9EaTL._SL1500_.jpg"
     ],
     "weight": "300 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 22.6
+    "noise": 22.6,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14484,
@@ -28744,9 +29000,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/51J5VTodQJL._SX522_.jpg"
     ],
     "weight": "10.8 ounces",
-    "fanSize": "140mm",
     "rgb": true,
-    "pwm": true
+    "pwm": true,
+    "size": "140mm",
+    "color": "RGB"
   },
   {
     "id": 14485,
@@ -28773,10 +29030,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/51VlSDHGGKL._SX522_.jpg"
     ],
     "weight": "1.76 pounds",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "fans_inc": 3
+    "fans_inc": 3,
+    "size": "140mm",
+    "color": "RGB"
   },
   {
     "id": 14486,
@@ -28802,9 +29060,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/715CwTCsJZL._SL1500_.jpg"
     ],
     "upc": "769047391365",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 26.4
+    "noise": 26.4,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14487,
@@ -28829,9 +29088,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71RXmfxKKCL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71WWI0aXCwL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "fans_inc": 3,
-    "noise": 27.2
+    "noise": 27.2,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14488,
@@ -28857,11 +29117,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81tLZNqLC7L._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/61gHYX8Qp0L._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 29.2
+    "noise": 29.2,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14489,
@@ -28887,11 +29148,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/711fQJNKoYL._SL1500_.jpg"
     ],
     "weight": "1.41 Pounds",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 31.6
+    "noise": 31.6,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14490,
@@ -28917,7 +29179,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61ALUcJMZIL._SL1500_.jpg"
     ],
     "weight": "9.9 Grams",
-    "rgb": true
+    "rgb": true,
+    "color": "RGB"
   },
   {
     "id": 14491,
@@ -28945,8 +29208,9 @@ export const PARTS = [
     ],
     "mpn": "Pure Base 501",
     "weight": "6.7 Kilograms",
-    "fanSize": "140 Millimeters",
-    "pwm": true
+    "pwm": true,
+    "size": "140 Millimeters",
+    "color": "Black"
   },
   {
     "id": 14492,
@@ -28972,9 +29236,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/717fwAF6USL._AC_SL1500_.jpg"
     ],
     "weight": "176 Grams",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 24.8
+    "noise": 24.8,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14493,
@@ -29000,8 +29265,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71k7NUVc7UL._SL1500_.jpg"
     ],
     "weight": "354 Grams",
-    "fanSize": "120mm",
-    "noise": 23.9
+    "noise": 23.9,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14494,
@@ -29028,10 +29294,11 @@ export const PARTS = [
     ],
     "upc": "840006640141",
     "weight": "0.2 Kilograms",
-    "fanSize": "140mm",
     "rgb": true,
     "fans_inc": 2,
-    "noise": 32
+    "noise": 32,
+    "size": "140mm",
+    "color": "White"
   },
   {
     "id": 14495,
@@ -29057,9 +29324,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/718aHPAq-EL._SL1500_.jpg"
     ],
     "weight": "0.37 Pounds",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 11.4
+    "noise": 11.4,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14496,
@@ -29085,11 +29353,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71Jwd3DNJmL._SL1500_.jpg"
     ],
     "weight": "1.4 Pounds",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 33.55
+    "noise": 33.55,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14497,
@@ -29116,10 +29385,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61kdc-amGbL._SL1200_.jpg"
     ],
     "upc": "840353044005",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 28
+    "noise": 28,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14498,
@@ -29145,7 +29415,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71U97cU4-zL._SL1500_.jpg"
     ],
     "weight": "92.29 Grams",
-    "fanSize": "120mm"
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14499,
@@ -29171,11 +29442,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61PLgCh1w3L._SL1500_.jpg"
     ],
     "weight": "450 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 31
+    "noise": 31,
+    "size": "120mm",
+    "color": "White"
   },
   {
     "id": 14500,
@@ -29202,7 +29474,8 @@ export const PARTS = [
     ],
     "upc": "840353048188",
     "weight": "0.06 Kilograms",
-    "pwm": true
+    "pwm": true,
+    "color": "Black"
   },
   {
     "id": 14501,
@@ -29229,8 +29502,9 @@ export const PARTS = [
     ],
     "mpn": "NF-A14x25r G2 PWM Sx2-PP",
     "weight": "176 Grams",
-    "fanSize": "140mm",
-    "pwm": true
+    "pwm": true,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14502,
@@ -29257,10 +29531,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61ReSgNPltL._SL1000_.jpg"
     ],
     "weight": "450 Grams",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 29
+    "noise": 29,
+    "size": "120mm",
+    "color": "RGB"
   },
   {
     "id": 14503,
@@ -29287,9 +29562,10 @@ export const PARTS = [
     ],
     "upc": "884102127212",
     "weight": "0.3 Pounds",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 30
+    "noise": 30,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14504,
@@ -29315,9 +29591,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/711-TSua3SL._SL1500_.jpg"
     ],
     "weight": "195 Grams",
-    "fanSize": "120mm",
     "pwm": true,
-    "noise": 11.8
+    "noise": 11.8,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14505,
@@ -29343,9 +29620,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/91B41J1ogIL._SL1500_.jpg"
     ],
     "weight": "315 Grams",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 41.3
+    "noise": 41.3,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14506,
@@ -29372,8 +29650,9 @@ export const PARTS = [
     ],
     "upc": "840033403078",
     "weight": "242 Grams",
-    "fanSize": "140mm",
-    "pwm": true
+    "pwm": true,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14507,
@@ -29396,11 +29675,12 @@ export const PARTS = [
     "discount": 10,
     "upc": "840033401326",
     "weight": "159 Grams",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 0.3
+    "noise": 0.3,
+    "size": "140mm",
+    "color": "RGB"
   },
   {
     "id": 14508,
@@ -29425,11 +29705,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/718oYEMvVLL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71LLQyDRVYL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 29
+    "noise": 29,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14509,
@@ -29454,10 +29735,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71W+HkHrSsL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71J+z-nUeXL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 37
+    "noise": 37,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14510,
@@ -29483,10 +29765,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71BXIk-CGHL._SL1500_.jpg"
     ],
     "upc": "850059070321",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 29
+    "noise": 29,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14511,
@@ -29513,7 +29796,8 @@ export const PARTS = [
     ],
     "mpn": "EZDIY-FAB Adapter Cable",
     "weight": "0.03 Kilograms",
-    "rgb": true
+    "rgb": true,
+    "color": "RGB"
   },
   {
     "id": 14512,
@@ -29538,9 +29822,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71xfrx6rZeL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71Uvu2vtspL._AC_SL1500_.jpg"
     ],
-    "fanSize": "140mm",
     "rgb": true,
-    "noise": 27.9
+    "noise": 27.9,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14513,
@@ -29560,9 +29845,10 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": "120mm",
     "rgb": true,
-    "noise": 32
+    "noise": 32,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14514,
@@ -29589,10 +29875,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61mDXvMtF1L._SL1500_.jpg"
     ],
     "weight": "0.19 Kilograms",
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
-    "noise": 31
+    "noise": 31,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14515,
@@ -29615,7 +29902,8 @@ export const PARTS = [
     "discount": 15,
     "upc": "840353045637",
     "weight": "0.7 Pounds",
-    "noise": 28.6
+    "noise": 28.6,
+    "color": "Black"
   },
   {
     "id": 14516,
@@ -29641,9 +29929,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/715CwTCsJZL._SL1500_.jpg"
     ],
     "upc": "764035264430",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 1500
+    "noise": 1500,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14517,
@@ -29668,11 +29957,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71i6AXucx1L._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/61TiLCiNTqL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "noise": 28
+    "noise": 28,
+    "size": "120mm",
+    "color": "White"
   },
   {
     "id": 14518,
@@ -29700,7 +29990,8 @@ export const PARTS = [
     "weight": "0.39 Pounds",
     "rgb": true,
     "pwm": true,
-    "noise": 29.2
+    "noise": 29.2,
+    "color": "Black"
   },
   {
     "id": 14519,
@@ -29725,10 +30016,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71LI0+CX+vL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/61l4-9Q3k-L._SL1500_.jpg"
     ],
-    "fanSize": "140mm",
     "pwm": true,
     "fans_inc": 3,
-    "noise": 36.2
+    "noise": 36.2,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14520,
@@ -29755,8 +30047,9 @@ export const PARTS = [
     ],
     "upc": "703670547751",
     "weight": "0.19 Kilograms",
-    "fanSize": "120mm",
-    "noise": 25
+    "noise": 25,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14521,
@@ -29783,10 +30076,11 @@ export const PARTS = [
     ],
     "upc": "840033403429",
     "weight": "253 Grams",
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 0.08
+    "noise": 0.08,
+    "size": "140mm",
+    "color": "RGB"
   },
   {
     "id": 14522,
@@ -29811,10 +30105,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71O9oVicFvL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71CiOz95FOL._SL1500_.jpg"
     ],
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 30
+    "noise": 30,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14523,
@@ -29840,9 +30135,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/51h0UaGMUuL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71TkC2RmIAL._SL1500_.jpg"
     ],
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 1
+    "noise": 1,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14524,
@@ -29869,10 +30165,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/713v59inFCL._SL1500_.jpg"
     ],
     "weight": "10.56 ounces",
-    "fanSize": "120mm",
     "pwm": true,
     "fans_inc": 3,
-    "noise": 25
+    "noise": 25,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14525,
@@ -29894,7 +30191,8 @@ export const PARTS = [
     },
     "discount": 12,
     "upc": "840353045644",
-    "noise": 28.6
+    "noise": 28.6,
+    "color": "White"
   },
   {
     "id": 14526,
@@ -29920,10 +30218,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71KCsn0mp7L._SL1500_.jpg"
     ],
     "weight": "0.7 Pounds",
-    "fanSize": "120mm",
     "pwm": true,
     "fans_inc": 3,
-    "noise": 23.6
+    "noise": 23.6,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14527,
@@ -29949,9 +30248,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/71Xz5TUoPfL._SL1500_.jpg"
     ],
     "weight": "0.38 Kilograms",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 24.8
+    "noise": 24.8,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14528,
@@ -29977,9 +30277,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/915nG0bo6LL._SL1500_.jpg"
     ],
     "weight": "315 Grams",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 31.5
+    "noise": 31.5,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14529,
@@ -30007,7 +30308,8 @@ export const PARTS = [
     "upc": "798239063643",
     "weight": "4.7 Pounds",
     "rgb": true,
-    "noise": 37
+    "noise": 37,
+    "color": "RGB"
   },
   {
     "id": 14530,
@@ -30033,9 +30335,10 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/716RI5Vg-JL._SL1500_.jpg"
     ],
     "weight": "0.2 Kilograms",
-    "fanSize": "140mm",
     "pwm": true,
-    "noise": 24.8
+    "noise": 24.8,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14531,
@@ -30060,10 +30363,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61RQmKg6irL._SL1000_.jpg",
       "https://m.media-amazon.com/images/I/61cj72+OVvL._SL1000_.jpg"
     ],
-    "fanSize": "140mm",
     "rgb": true,
     "pwm": true,
-    "noise": 29
+    "noise": 29,
+    "size": "140mm",
+    "color": "Black"
   },
   {
     "id": 14532,
@@ -30092,7 +30396,8 @@ export const PARTS = [
     "weight": "3.68 Pounds",
     "rgb": true,
     "fans_inc": 3,
-    "noise": 36
+    "noise": 36,
+    "color": "RGB"
   },
   {
     "id": 14533,
@@ -30121,7 +30426,8 @@ export const PARTS = [
     "weight": "2.9 Pounds",
     "rgb": true,
     "fans_inc": 2,
-    "noise": 36
+    "noise": 36,
+    "color": "Black"
   },
   {
     "id": 14534,
@@ -30146,10 +30452,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/611Jr-YeqNL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71lcaDDgruL._SL1500_.jpg"
     ],
-    "fanSize": "120mm",
     "pwm": true,
     "fans_inc": 3,
-    "noise": 25.6
+    "noise": 25.6,
+    "size": "120mm",
+    "color": "Black"
   },
   {
     "id": 14535,
@@ -57428,7 +57735,8 @@ export const PARTS = [
     ],
     "mpn": "BP026US",
     "weight": "2.94 Kilograms",
-    "watts": 750
+    "watts": 750,
+    "color": "Black"
   },
   {
     "id": 15389,
@@ -57463,7 +57771,8 @@ export const PARTS = [
     "mpn": "CP-9020296-NA",
     "weight": "3.37 Pounds",
     "watts": 850,
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15390,
@@ -57493,7 +57802,8 @@ export const PARTS = [
     "mpn": "SPD-0700NP",
     "weight": "1 Kilograms",
     "watts": 700,
-    "eff": "White"
+    "eff": "White",
+    "color": "White"
   },
   {
     "id": 15391,
@@ -57521,7 +57831,8 @@ export const PARTS = [
     ],
     "upc": "609015775622",
     "watts": 650,
-    "eff": "Gold"
+    "eff": "Gold",
+    "color": "Black"
   },
   {
     "id": 15392,
@@ -57551,7 +57862,8 @@ export const PARTS = [
     "mpn": "VSB650",
     "watts": 650,
     "eff": "Bronze",
-    "modular": "Semi"
+    "modular": "Semi",
+    "color": "Black"
   },
   {
     "id": 15393,
@@ -57581,7 +57893,8 @@ export const PARTS = [
     "mpn": "VMG750",
     "watts": 750,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15394,
@@ -57612,7 +57925,8 @@ export const PARTS = [
     "weight": "5.5 Pounds",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15395,
@@ -57642,7 +57956,8 @@ export const PARTS = [
     "weight": "51.18 Ounces",
     "watts": 1000,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15396,
@@ -57673,7 +57988,8 @@ export const PARTS = [
     "weight": "5.5 Pounds",
     "watts": 1000,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15397,
@@ -57709,7 +58025,8 @@ export const PARTS = [
     "weight": "3.4 Pounds",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15398,
@@ -57737,7 +58054,8 @@ export const PARTS = [
     "upc": "840353046924",
     "mpn": "EG1000G.WH",
     "watts": 1000,
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15399,
@@ -57772,7 +58090,8 @@ export const PARTS = [
     "mpn": "CP-9020297-NA",
     "weight": "3.62 Pounds",
     "watts": 1000,
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15400,
@@ -57802,7 +58121,8 @@ export const PARTS = [
     "mpn": "CP-9020307-NA",
     "weight": "5.3 Pounds",
     "watts": 1200,
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15401,
@@ -57828,7 +58148,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61+dV0HnaHL._AC_SL1500_.jpg"
     ],
     "weight": "3.46 Kilograms",
-    "watts": 1000
+    "watts": 1000,
+    "color": "Black"
   },
   {
     "id": 15402,
@@ -57863,7 +58184,8 @@ export const PARTS = [
     "mpn": "PA-8G3BB-US",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15403,
@@ -57890,7 +58212,8 @@ export const PARTS = [
     ],
     "mpn": "90-UXR065-GNUAA2",
     "watts": 650,
-    "eff": "Gold"
+    "eff": "Gold",
+    "color": "Black"
   },
   {
     "id": 15404,
@@ -57918,7 +58241,8 @@ export const PARTS = [
     "mpn": "HU-XI-201",
     "weight": "4.36 Pounds",
     "watts": 650,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "color": "Black"
   },
   {
     "id": 15405,
@@ -57948,7 +58272,8 @@ export const PARTS = [
     "weight": "5.7 Pounds",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15406,
@@ -57978,7 +58303,8 @@ export const PARTS = [
     "mpn": "CP-9020278-NA",
     "weight": "4.2 Pounds",
     "watts": 650,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "color": "Black"
   },
   {
     "id": 15407,
@@ -58009,7 +58335,8 @@ export const PARTS = [
     "weight": "4.2 Pounds",
     "watts": 1000,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15408,
@@ -58037,7 +58364,8 @@ export const PARTS = [
     ],
     "mpn": "BN518",
     "watts": 750,
-    "eff": "Platinum"
+    "eff": "Platinum",
+    "color": "Black"
   },
   {
     "id": 15409,
@@ -58066,7 +58394,8 @@ export const PARTS = [
     "mpn": "1000G5",
     "watts": 1000,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "White"
   },
   {
     "id": 15410,
@@ -58094,7 +58423,8 @@ export const PARTS = [
     "upc": "840353047853",
     "mpn": "EG1200G.BH",
     "watts": 1200,
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15411,
@@ -58122,7 +58452,8 @@ export const PARTS = [
     "upc": "840353047020",
     "weight": "7.52 Pounds",
     "watts": 850,
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15412,
@@ -58158,7 +58489,8 @@ export const PARTS = [
     "weight": "4.4 Pounds",
     "watts": 1000,
     "eff": "Platinum",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15413,
@@ -58188,7 +58520,8 @@ export const PARTS = [
     "weight": "3.75 Pounds",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15414,
@@ -58217,7 +58550,8 @@ export const PARTS = [
     "weight": "3.3 Pounds",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15415,
@@ -58253,7 +58587,8 @@ export const PARTS = [
     "weight": "7.87 Pounds",
     "watts": 1000,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15416,
@@ -58283,7 +58618,8 @@ export const PARTS = [
     "weight": "3.75 Pounds",
     "watts": 750,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "White"
   },
   {
     "id": 15417,
@@ -58313,7 +58649,8 @@ export const PARTS = [
     "weight": "2.59 Kilograms",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15418,
@@ -58340,7 +58677,8 @@ export const PARTS = [
     ],
     "mpn": "BP006US",
     "weight": "3.33 Kilograms",
-    "watts": 750
+    "watts": 750,
+    "color": "Black"
   },
   {
     "id": 15419,
@@ -58369,7 +58707,8 @@ export const PARTS = [
     "mpn": "ATX-RP600W",
     "weight": "4.5 Pounds",
     "watts": 600,
-    "eff": "Gold"
+    "eff": "Gold",
+    "color": "Black"
   },
   {
     "id": 15420,
@@ -58405,7 +58744,8 @@ export const PARTS = [
     "weight": "7.78 Pounds",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15421,
@@ -58435,7 +58775,8 @@ export const PARTS = [
     "weight": "5.1 Pounds",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15422,
@@ -58471,7 +58812,8 @@ export const PARTS = [
     "weight": "3.6 Pounds",
     "watts": 650,
     "eff": "Bronze",
-    "modular": "Semi"
+    "modular": "Semi",
+    "color": "Black"
   },
   {
     "id": 15423,
@@ -58501,7 +58843,8 @@ export const PARTS = [
     "weight": "2 Kilograms",
     "watts": 1000,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15424,
@@ -58529,7 +58872,8 @@ export const PARTS = [
     "mpn": "AGV750",
     "watts": 750,
     "eff": "Bronze",
-    "modular": "Semi"
+    "modular": "Semi",
+    "color": "Black"
   },
   {
     "id": 15425,
@@ -58558,7 +58902,8 @@ export const PARTS = [
     "mpn": "850SFX",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15426,
@@ -58588,7 +58933,8 @@ export const PARTS = [
     "mpn": "VNG650",
     "weight": "2.8 Pounds",
     "watts": 650,
-    "eff": "Gold"
+    "eff": "Gold",
+    "color": "Black"
   },
   {
     "id": 15427,
@@ -58617,7 +58963,8 @@ export const PARTS = [
     "mpn": "CP-9020269-NA",
     "weight": "5.2 Pounds",
     "watts": 1500,
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15428,
@@ -58647,7 +58994,8 @@ export const PARTS = [
     "weight": "3.66 Pounds",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15429,
@@ -58675,7 +59023,8 @@ export const PARTS = [
     "mpn": "AGT 1000Watt",
     "watts": 1000,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15430,
@@ -58706,7 +59055,8 @@ export const PARTS = [
     "weight": "3.1 Pounds",
     "watts": 750,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15431,
@@ -58735,7 +59085,8 @@ export const PARTS = [
     "mpn": "AGT 850Watt",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15432,
@@ -58766,7 +59117,8 @@ export const PARTS = [
     "weight": "4 Pounds",
     "watts": 750,
     "eff": "Bronze",
-    "modular": "Semi"
+    "modular": "Semi",
+    "color": "Black"
   },
   {
     "id": 15433,
@@ -58793,7 +59145,8 @@ export const PARTS = [
     ],
     "mpn": "AGW550",
     "watts": 550,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "color": "Black"
   },
   {
     "id": 15434,
@@ -58823,7 +59176,8 @@ export const PARTS = [
     "mpn": "CP-9020279-NA",
     "weight": "4.41 Pounds",
     "watts": 750,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "color": "Black"
   },
   {
     "id": 15435,
@@ -58853,7 +59207,8 @@ export const PARTS = [
     "mpn": "ES1000",
     "watts": 1000,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15436,
@@ -58883,7 +59238,8 @@ export const PARTS = [
     "weight": "2.68 Kilograms",
     "watts": 750,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15437,
@@ -58905,7 +59261,8 @@ export const PARTS = [
     },
     "mpn": "BP028EU",
     "weight": "2990 Grams",
-    "watts": 1000
+    "watts": 1000,
+    "color": "Black"
   },
   {
     "id": 15438,
@@ -58935,7 +59292,8 @@ export const PARTS = [
     "weight": "1.95 Kilograms",
     "watts": 1000,
     "eff": "Gold",
-    "modular": "Semi"
+    "modular": "Semi",
+    "color": "Black"
   },
   {
     "id": 15439,
@@ -58964,7 +59322,8 @@ export const PARTS = [
     "mpn": "ZM600-GVII-A",
     "weight": "3.3 Pounds",
     "watts": 600,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "color": "Black"
   },
   {
     "id": 15440,
@@ -58995,7 +59354,8 @@ export const PARTS = [
     "weight": "5.76 Pounds",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15441,
@@ -59025,7 +59385,8 @@ export const PARTS = [
     "weight": "2.07 Kilograms",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15442,
@@ -59055,7 +59416,8 @@ export const PARTS = [
     "weight": "2.4 Kilograms",
     "watts": 1500,
     "eff": "Platinum",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15443,
@@ -59083,7 +59445,8 @@ export const PARTS = [
     "upc": "844761014513",
     "mpn": "SST-ET550-B",
     "watts": 550,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "color": "Black"
   },
   {
     "id": 15444,
@@ -59111,7 +59474,8 @@ export const PARTS = [
     "mpn": "BN639",
     "weight": "1.16 Kilograms",
     "watts": 600,
-    "eff": "Gold"
+    "eff": "Gold",
+    "color": "Black"
   },
   {
     "id": 15445,
@@ -59138,7 +59502,8 @@ export const PARTS = [
     ],
     "weight": "1.86 Kilograms",
     "watts": 600,
-    "eff": "Gold"
+    "eff": "Gold",
+    "color": "Black"
   },
   {
     "id": 15446,
@@ -59165,7 +59530,8 @@ export const PARTS = [
     ],
     "weight": "4.1 Pounds",
     "watts": 750,
-    "eff": "Gold"
+    "eff": "Gold",
+    "color": "Black"
   },
   {
     "id": 15447,
@@ -59194,7 +59560,8 @@ export const PARTS = [
     "weight": "1.16 Kilograms",
     "watts": 600,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15448,
@@ -59224,7 +59591,8 @@ export const PARTS = [
     "weight": "3.68 Kilograms",
     "watts": 1200,
     "eff": "Platinum",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15449,
@@ -59255,7 +59623,8 @@ export const PARTS = [
     "weight": "2.31 Pounds",
     "watts": 850,
     "eff": "Platinum",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15450,
@@ -59284,7 +59653,8 @@ export const PARTS = [
     "mpn": "PSU006",
     "watts": 750,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15451,
@@ -59312,7 +59682,8 @@ export const PARTS = [
     "upc": "837344006814",
     "mpn": "JUPITER600W",
     "watts": 600,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "color": "Black"
   },
   {
     "id": 15452,
@@ -59338,7 +59709,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81sNVcVyE-L._AC_SL1500_.jpg"
     ],
     "upc": "840006662211",
-    "weight": "1.97 ounces"
+    "weight": "1.97 ounces",
+    "color": "Black"
   },
   {
     "id": 15453,
@@ -59367,7 +59739,8 @@ export const PARTS = [
     "mpn": "ATX-PR1000W PCIE5.0",
     "weight": "2.25 Kilograms",
     "watts": 1000,
-    "eff": "Gold"
+    "eff": "Gold",
+    "color": "Black"
   },
   {
     "id": 15454,
@@ -59397,7 +59770,8 @@ export const PARTS = [
     "weight": "3.4 Pounds",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15455,
@@ -59427,7 +59801,8 @@ export const PARTS = [
     "weight": "3.5 Pounds",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15456,
@@ -59457,7 +59832,8 @@ export const PARTS = [
     "weight": "2.81 Pounds",
     "watts": 750,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15457,
@@ -59485,7 +59861,8 @@ export const PARTS = [
     "mpn": "RM850X",
     "weight": "1.7 Kilograms",
     "watts": 850,
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15458,
@@ -59512,7 +59889,8 @@ export const PARTS = [
     ],
     "mpn": "BP002US",
     "watts": 650,
-    "eff": "Gold"
+    "eff": "Gold",
+    "color": "Black"
   },
   {
     "id": 15459,
@@ -59541,7 +59919,8 @@ export const PARTS = [
     "mpn": "AK930GMP210",
     "weight": "500 Grams",
     "watts": 650,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "color": "Black"
   },
   {
     "id": 15460,
@@ -59568,7 +59947,8 @@ export const PARTS = [
     ],
     "mpn": "BN500",
     "watts": 1300,
-    "eff": "Titanium"
+    "eff": "Titanium",
+    "color": "Black"
   },
   {
     "id": 15461,
@@ -59596,7 +59976,8 @@ export const PARTS = [
     "mpn": "TF1000W",
     "weight": "2 Kilograms",
     "watts": 1000,
-    "eff": "Gold"
+    "eff": "Gold",
+    "color": "Black"
   },
   {
     "id": 15462,
@@ -59626,7 +60007,8 @@ export const PARTS = [
     "weight": "4.41 Pounds",
     "watts": 550,
     "eff": "Gold",
-    "modular": "Semi"
+    "modular": "Semi",
+    "color": "Black"
   },
   {
     "id": 15463,
@@ -59654,7 +60036,8 @@ export const PARTS = [
     "mpn": "RGB-Smart 1300 PRO",
     "watts": 1300,
     "eff": "Platinum",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15464,
@@ -59683,7 +60066,8 @@ export const PARTS = [
     "mpn": "YK650L",
     "weight": "3.62 Pounds",
     "watts": 650,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "color": "Black"
   },
   {
     "id": 15465,
@@ -59711,7 +60095,8 @@ export const PARTS = [
     "mpn": "YK750",
     "weight": "3.62 Pounds",
     "watts": 750,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "color": "Black"
   },
   {
     "id": 15466,
@@ -59739,7 +60124,8 @@ export const PARTS = [
     "mpn": "YK550",
     "weight": "3.6 Pounds",
     "watts": 550,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "color": "Black"
   },
   {
     "id": 15467,
@@ -59767,7 +60153,8 @@ export const PARTS = [
     "mpn": "GD550S",
     "weight": "3.5 Pounds",
     "watts": 550,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "color": "Black"
   },
   {
     "id": 15468,
@@ -59796,7 +60183,8 @@ export const PARTS = [
     "mpn": "ATX-PM850W PCIE5",
     "watts": 850,
     "eff": "Gold",
-    "modular": "Semi"
+    "modular": "Semi",
+    "color": "Black"
   },
   {
     "id": 15469,
@@ -59825,7 +60213,8 @@ export const PARTS = [
     "weight": "1.36 Kilograms",
     "watts": 550,
     "eff": "Bronze",
-    "modular": "Semi"
+    "modular": "Semi",
+    "color": "Black"
   },
   {
     "id": 15470,
@@ -59852,7 +60241,8 @@ export const PARTS = [
     ],
     "mpn": "GD650S",
     "watts": 650,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "color": "Black"
   },
   {
     "id": 15471,
@@ -59880,7 +60270,8 @@ export const PARTS = [
     "mpn": "RX650AED",
     "weight": "3 Pounds",
     "watts": 650,
-    "eff": "Gold"
+    "eff": "Gold",
+    "color": "Black"
   },
   {
     "id": 15472,
@@ -59907,7 +60298,8 @@ export const PARTS = [
     ],
     "mpn": "ORA PRO G1",
     "watts": 850,
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15473,
@@ -59936,7 +60328,8 @@ export const PARTS = [
     "weight": "3.87 Kilograms",
     "watts": 1200,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15474,
@@ -59963,7 +60356,8 @@ export const PARTS = [
     ],
     "mpn": "750W",
     "watts": 750,
-    "eff": "Gold"
+    "eff": "Gold",
+    "color": "Black"
   },
   {
     "id": 15475,
@@ -59992,7 +60386,8 @@ export const PARTS = [
     "upc": "844761016906",
     "mpn": "SST-ST55F-PB",
     "watts": 550,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "color": "Black"
   },
   {
     "id": 15476,
@@ -60021,7 +60416,8 @@ export const PARTS = [
     "mpn": "RMx",
     "weight": "6.88 Pounds",
     "watts": 1000,
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15477,
@@ -60047,7 +60443,8 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81ZMduoge3L._AC_SL1500_.jpg"
     ],
     "upc": "840440497561",
-    "weight": "1.54 Pounds"
+    "weight": "1.54 Pounds",
+    "color": "Black"
   },
   {
     "id": 15478,
@@ -60077,7 +60474,8 @@ export const PARTS = [
     "weight": "1.66 Kilograms",
     "watts": 1000,
     "eff": "Gold",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15479,
@@ -60105,7 +60503,8 @@ export const PARTS = [
     "mpn": "TF850W",
     "weight": "2 Kilograms",
     "watts": 850,
-    "eff": "Gold"
+    "eff": "Gold",
+    "color": "Black"
   },
   {
     "id": 15480,
@@ -60139,7 +60538,8 @@ export const PARTS = [
     "mpn": "CP-9020311-NA",
     "weight": "4.03 Pounds",
     "watts": 750,
-    "modular": "Semi"
+    "modular": "Semi",
+    "color": "Black"
   },
   {
     "id": 15481,
@@ -60168,7 +60568,8 @@ export const PARTS = [
     "mpn": "ATX-SL850W",
     "weight": "4.8 Pounds",
     "watts": 850,
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15482,
@@ -60197,7 +60598,8 @@ export const PARTS = [
     "mpn": "ATX-MT1200W ATX3.0 PCIE5",
     "watts": 1200,
     "eff": "Platinum",
-    "modular": "Full"
+    "modular": "Full",
+    "color": "Black"
   },
   {
     "id": 15483,
@@ -60226,7 +60628,8 @@ export const PARTS = [
     "mpn": "ATX1000W",
     "weight": "1.7 Kilograms",
     "watts": 1000,
-    "eff": "Gold"
+    "eff": "Gold",
+    "color": "Black"
   },
   {
     "id": 15484,
@@ -60256,7 +60659,9 @@ export const PARTS = [
     "weight": "0.11 Pounds",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15485,
@@ -60291,7 +60696,9 @@ export const PARTS = [
     "weight": "0.11 Pounds",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15486,
@@ -60326,7 +60733,8 @@ export const PARTS = [
     "weight": "17.3 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 2
   },
   {
     "id": 15487,
@@ -60356,7 +60764,9 @@ export const PARTS = [
     "weight": "0.02 Pounds",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 22
   },
   {
     "id": 15488,
@@ -60386,7 +60796,9 @@ export const PARTS = [
     "weight": "0.22 Pounds",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15489,
@@ -60413,7 +60825,8 @@ export const PARTS = [
     ],
     "memType": "DDR4",
     "cap": "16GB",
-    "speed": 3200
+    "speed": 3200,
+    "cl": 22
   },
   {
     "id": 15490,
@@ -60448,7 +60861,9 @@ export const PARTS = [
     "weight": "0.08 Pounds",
     "memType": "DDR5",
     "cap": "2x8GB",
-    "speed": 5200
+    "speed": 5200,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15491,
@@ -60484,7 +60899,9 @@ export const PARTS = [
     "weight": "0.08 Pounds",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 38
   },
   {
     "id": 15492,
@@ -60511,7 +60928,9 @@ export const PARTS = [
     ],
     "mpn": "Black Owl",
     "memType": "DDR4",
-    "cap": "2x8GB"
+    "cap": "2x8GB",
+    "sticks": 2,
+    "cl": 19
   },
   {
     "id": 15493,
@@ -60564,7 +60983,9 @@ export const PARTS = [
     "weight": "0.11 Pounds",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15495,
@@ -60594,7 +61015,9 @@ export const PARTS = [
     "weight": "1.31 ounces",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15496,
@@ -60629,7 +61052,9 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "memType": "DDR4",
     "cap": "1x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 1,
+    "cl": 22
   },
   {
     "id": 15497,
@@ -60660,7 +61085,9 @@ export const PARTS = [
     "weight": "0.21 Pounds",
     "memType": "DDR4",
     "cap": "2x8GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15498,
@@ -60690,7 +61117,9 @@ export const PARTS = [
     "weight": "0.11 Pounds",
     "memType": "DDR5",
     "cap": "2x8GB",
-    "speed": 5200
+    "speed": 5200,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15499,
@@ -60725,7 +61154,9 @@ export const PARTS = [
     "weight": "0.02 Pounds",
     "memType": "DDR5",
     "cap": "1x16GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 1,
+    "cl": 48
   },
   {
     "id": 15500,
@@ -60760,7 +61191,9 @@ export const PARTS = [
     "weight": "33 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15501,
@@ -60795,7 +61228,8 @@ export const PARTS = [
     "weight": "0.02 Pounds",
     "memType": "DDR4",
     "cap": "16GB",
-    "speed": 3200
+    "speed": 3200,
+    "cl": 22
   },
   {
     "id": 15502,
@@ -60830,7 +61264,9 @@ export const PARTS = [
     "weight": "33 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15503,
@@ -60890,7 +61326,8 @@ export const PARTS = [
     "weight": "0.32 Ounces",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2
   },
   {
     "id": 15505,
@@ -60921,7 +61358,9 @@ export const PARTS = [
     "weight": "0.01 Kilograms",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15506,
@@ -60949,7 +61388,9 @@ export const PARTS = [
     ],
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15507,
@@ -60979,7 +61420,8 @@ export const PARTS = [
     "weight": "36.05 Grams",
     "memType": "DDR4",
     "cap": "8GB",
-    "speed": 3200
+    "speed": 3200,
+    "cl": 16
   },
   {
     "id": 15508,
@@ -61007,7 +61449,9 @@ export const PARTS = [
     "mpn": "Black Owl",
     "memType": "DDR4",
     "cap": "2x8GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15509,
@@ -61037,7 +61481,9 @@ export const PARTS = [
     "weight": "120 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15510,
@@ -61067,7 +61513,9 @@ export const PARTS = [
     "weight": "6.6 Ounces",
     "memType": "DDR4",
     "cap": "2x32GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 18
   },
   {
     "id": 15511,
@@ -61102,7 +61550,9 @@ export const PARTS = [
     "weight": "33 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 38
   },
   {
     "id": 15512,
@@ -61132,7 +61582,9 @@ export const PARTS = [
     "weight": "0.28 Pounds",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15513,
@@ -61162,7 +61614,9 @@ export const PARTS = [
     "weight": "0.04 Pounds",
     "memType": "DDR5",
     "cap": "2x8GB",
-    "speed": 5200
+    "speed": 5200,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15514,
@@ -61193,7 +61647,9 @@ export const PARTS = [
     "weight": "0.25 Pounds",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15515,
@@ -61219,7 +61675,8 @@ export const PARTS = [
     "weight": "1 Grams",
     "memType": "DDR4",
     "cap": "16GB",
-    "speed": 3200
+    "speed": 3200,
+    "cl": 22
   },
   {
     "id": 15516,
@@ -61255,7 +61712,9 @@ export const PARTS = [
     "weight": "9.98 g",
     "memType": "DDR5",
     "cap": "1x32GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 1,
+    "cl": 48
   },
   {
     "id": 15517,
@@ -61285,7 +61744,9 @@ export const PARTS = [
     "weight": "69 Grams",
     "memType": "DDR5",
     "cap": "2x8GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15518,
@@ -61315,7 +61776,9 @@ export const PARTS = [
     "weight": "4.38 ounces",
     "memType": "DDR4",
     "cap": "2x8GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15519,
@@ -61345,7 +61808,9 @@ export const PARTS = [
     "mpn": "Value Gaming",
     "memType": "DDR4",
     "cap": "2x8GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15520,
@@ -61375,7 +61840,9 @@ export const PARTS = [
     "mpn": "Silicon Power Value Gaming",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15521,
@@ -61410,7 +61877,9 @@ export const PARTS = [
     "weight": "0.12 Kilograms",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 18
   },
   {
     "id": 15522,
@@ -61440,7 +61909,8 @@ export const PARTS = [
     "weight": "0.29 Ounces",
     "memType": "DDR5",
     "cap": "32GB",
-    "speed": 4800
+    "speed": 4800,
+    "cl": 40
   },
   {
     "id": 15523,
@@ -61470,7 +61940,8 @@ export const PARTS = [
     "weight": "36.05 Grams",
     "memType": "DDR4",
     "cap": "16GB",
-    "speed": 3200
+    "speed": 3200,
+    "cl": 16
   },
   {
     "id": 15524,
@@ -61529,7 +62000,9 @@ export const PARTS = [
     "weight": "5.3 ounces",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15526,
@@ -61559,7 +62032,9 @@ export const PARTS = [
     "weight": "41 Grams",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15527,
@@ -61594,7 +62069,8 @@ export const PARTS = [
     "weight": "32.6 Grams",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 2
   },
   {
     "id": 15528,
@@ -61623,7 +62099,8 @@ export const PARTS = [
     "upc": "765441345133",
     "memType": "DDR4",
     "cap": "16GB",
-    "speed": 3200
+    "speed": 3200,
+    "cl": 22
   },
   {
     "id": 15529,
@@ -61654,7 +62131,9 @@ export const PARTS = [
     "weight": "0.17 Kilograms",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15530,
@@ -61685,7 +62164,9 @@ export const PARTS = [
     "weight": "50 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15531,
@@ -61715,7 +62196,8 @@ export const PARTS = [
     "weight": "11 Grams",
     "memType": "DDR4",
     "cap": "16GB",
-    "speed": 3200
+    "speed": 3200,
+    "cl": 22
   },
   {
     "id": 15532,
@@ -61744,7 +62226,9 @@ export const PARTS = [
     "weight": "170 Grams",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15533,
@@ -61774,7 +62258,8 @@ export const PARTS = [
     "weight": "34.6 Grams",
     "memType": "DDR5",
     "cap": "2x8GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 2
   },
   {
     "id": 15534,
@@ -61803,7 +62288,9 @@ export const PARTS = [
     "mpn": "Pinnacle Konduit",
     "memType": "DDR4",
     "cap": "2x8GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15535,
@@ -61833,7 +62320,9 @@ export const PARTS = [
     "weight": "0.1 Kilograms",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 38
   },
   {
     "id": 15536,
@@ -61862,7 +62351,9 @@ export const PARTS = [
     "weight": "52 Grams",
     "memType": "DDR5",
     "cap": "1x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 1,
+    "cl": 30
   },
   {
     "id": 15537,
@@ -61893,7 +62384,9 @@ export const PARTS = [
     "weight": "2.08 Ounces",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15538,
@@ -61921,7 +62414,9 @@ export const PARTS = [
     "mpn": "Velocity",
     "memType": "DDR4",
     "cap": "2x8GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 22
   },
   {
     "id": 15539,
@@ -61948,7 +62443,8 @@ export const PARTS = [
     ],
     "memType": "DDR4",
     "cap": "16GB",
-    "speed": 3200
+    "speed": 3200,
+    "cl": 22
   },
   {
     "id": 15540,
@@ -61978,7 +62474,9 @@ export const PARTS = [
     "weight": "37 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15541,
@@ -62006,7 +62504,9 @@ export const PARTS = [
     "mpn": "LD5U32G60C30BR-RGD",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15542,
@@ -62065,7 +62565,9 @@ export const PARTS = [
     "weight": "0.11 Pounds",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 38
   },
   {
     "id": 15544,
@@ -62089,7 +62591,9 @@ export const PARTS = [
     "mpn": "M471A2K43EB1-CWE or M471A2K43DB1-CWE",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 22
   },
   {
     "id": 15545,
@@ -62119,7 +62623,9 @@ export const PARTS = [
     "weight": "0.27 Pounds",
     "memType": "DDR4",
     "cap": "2x8GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15546,
@@ -62149,7 +62655,8 @@ export const PARTS = [
     "weight": "0.03 Pounds",
     "memType": "DDR4",
     "cap": "16GB",
-    "speed": 3200
+    "speed": 3200,
+    "cl": 22
   },
   {
     "id": 15547,
@@ -62174,7 +62681,8 @@ export const PARTS = [
     "weight": "7.6 Grams",
     "memType": "DDR4",
     "cap": "16GB",
-    "speed": 3200
+    "speed": 3200,
+    "cl": 20
   },
   {
     "id": 15548,
@@ -62204,7 +62712,9 @@ export const PARTS = [
     "weight": "5.29 Ounces",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 18
   },
   {
     "id": 15549,
@@ -62233,7 +62743,9 @@ export const PARTS = [
     "mpn": "Timetec",
     "weight": "0.07 Pounds",
     "memType": "DDR4",
-    "cap": "2x16GB"
+    "cap": "2x16GB",
+    "sticks": 2,
+    "cl": 17
   },
   {
     "id": 15550,
@@ -62263,7 +62775,9 @@ export const PARTS = [
     "weight": "0.21 Pounds",
     "memType": "DDR4",
     "cap": "2x8GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15551,
@@ -62298,7 +62812,9 @@ export const PARTS = [
     "weight": "0.11 Pounds",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15552,
@@ -62329,7 +62845,9 @@ export const PARTS = [
     "weight": "0.05 Kilograms",
     "memType": "DDR5",
     "cap": "2x48GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15553,
@@ -62358,7 +62876,9 @@ export const PARTS = [
     "mpn": "TED432G3200C22DC01",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 22
   },
   {
     "id": 15554,
@@ -62394,7 +62914,9 @@ export const PARTS = [
     "weight": "8 Grams",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 22
   },
   {
     "id": 15555,
@@ -62424,7 +62946,9 @@ export const PARTS = [
     "weight": "100 Grams",
     "memType": "DDR4",
     "cap": "2x8GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 18
   },
   {
     "id": 15556,
@@ -62459,7 +62983,9 @@ export const PARTS = [
     "weight": "0.04 Kilograms",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 5200
+    "speed": 5200,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15557,
@@ -62494,7 +63020,9 @@ export const PARTS = [
     "weight": "0.08 Pounds",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15558,
@@ -62523,7 +63051,9 @@ export const PARTS = [
     "upc": "765441350373",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 22
   },
   {
     "id": 15559,
@@ -62553,7 +63083,9 @@ export const PARTS = [
     "weight": "18 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 4800
+    "speed": 4800,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15560,
@@ -62584,7 +63116,9 @@ export const PARTS = [
     "weight": "0.11 Pounds",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15561,
@@ -62614,7 +63148,9 @@ export const PARTS = [
     "weight": "0.08 Pounds",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15562,
@@ -62644,7 +63180,9 @@ export const PARTS = [
     "weight": "0.08 Pounds",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15563,
@@ -62674,7 +63212,8 @@ export const PARTS = [
     "weight": "36.05 Grams",
     "memType": "DDR4",
     "cap": "32GB",
-    "speed": 3600
+    "speed": 3600,
+    "cl": 18
   },
   {
     "id": 15564,
@@ -62701,7 +63240,9 @@ export const PARTS = [
     ],
     "memType": "DDR4",
     "cap": "2x8GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 22
   },
   {
     "id": 15565,
@@ -62732,7 +63273,9 @@ export const PARTS = [
     "weight": "15.23 Grams",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15566,
@@ -62761,7 +63304,9 @@ export const PARTS = [
     "weight": "1.04 Ounces",
     "memType": "DDR4",
     "cap": "2x8GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 22
   },
   {
     "id": 15567,
@@ -62791,7 +63336,9 @@ export const PARTS = [
     "mpn": "Performance",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 22
   },
   {
     "id": 15568,
@@ -62821,7 +63368,9 @@ export const PARTS = [
     "weight": "1 Grams",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 18
   },
   {
     "id": 15569,
@@ -62851,7 +63400,9 @@ export const PARTS = [
     "weight": "72.1 Grams",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 18
   },
   {
     "id": 15570,
@@ -62882,7 +63433,9 @@ export const PARTS = [
     "weight": "100 Grams",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15571,
@@ -62912,7 +63465,9 @@ export const PARTS = [
     "weight": "45 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15572,
@@ -62941,7 +63496,9 @@ export const PARTS = [
     "mpn": "VULCAN DDR5 DESKTOP MEMORY",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 38
   },
   {
     "id": 15573,
@@ -62972,7 +63529,9 @@ export const PARTS = [
     "weight": "60 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15574,
@@ -63002,7 +63561,9 @@ export const PARTS = [
     "weight": "72.1 Grams",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15575,
@@ -63032,7 +63593,9 @@ export const PARTS = [
     "weight": "77 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 5200
+    "speed": 5200,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15576,
@@ -63062,7 +63625,8 @@ export const PARTS = [
     "weight": "34 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2
   },
   {
     "id": 15577,
@@ -63092,7 +63656,9 @@ export const PARTS = [
     "weight": "69 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15578,
@@ -63122,7 +63688,9 @@ export const PARTS = [
     "weight": "0.11 Pounds",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15579,
@@ -63152,7 +63720,9 @@ export const PARTS = [
     "weight": "50 Grams",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 18
   },
   {
     "id": 15580,
@@ -63181,7 +63751,9 @@ export const PARTS = [
     "weight": "104 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15581,
@@ -63208,7 +63780,9 @@ export const PARTS = [
     ],
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 4000
+    "speed": 4000,
+    "sticks": 2,
+    "cl": 18
   },
   {
     "id": 15582,
@@ -63238,7 +63812,9 @@ export const PARTS = [
     "weight": "48 Grams",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 20
   },
   {
     "id": 15583,
@@ -63267,7 +63843,9 @@ export const PARTS = [
     "mpn": "DELTAα",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 38
   },
   {
     "id": 15584,
@@ -63297,7 +63875,9 @@ export const PARTS = [
     "weight": "0.09 Kilograms",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 18
   },
   {
     "id": 15585,
@@ -63327,7 +63907,8 @@ export const PARTS = [
     "weight": "90 Grams",
     "memType": "DDR5",
     "cap": "16GB",
-    "speed": 5200
+    "speed": 5200,
+    "cl": 40
   },
   {
     "id": 15586,
@@ -63357,7 +63938,8 @@ export const PARTS = [
     "weight": "38.95 Grams",
     "memType": "DDR4",
     "cap": "8GB",
-    "speed": 3200
+    "speed": 3200,
+    "cl": 16
   },
   {
     "id": 15587,
@@ -63386,7 +63968,9 @@ export const PARTS = [
     "mpn": "TED516G56C448ADC-S06",
     "memType": "DDR5",
     "cap": "2x8GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 2,
+    "cl": 46
   },
   {
     "id": 15588,
@@ -63416,7 +64000,9 @@ export const PARTS = [
     "weight": "0.02 Pounds",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 2,
+    "cl": 48
   },
   {
     "id": 15589,
@@ -63477,7 +64063,9 @@ export const PARTS = [
     "weight": "2.08 Ounces",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15591,
@@ -63507,7 +64095,9 @@ export const PARTS = [
     "weight": "100 Grams",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 38
   },
   {
     "id": 15592,
@@ -63537,7 +64127,9 @@ export const PARTS = [
     "weight": "72 Grams",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 20
   },
   {
     "id": 15593,
@@ -63565,7 +64157,9 @@ export const PARTS = [
     "weight": "130 Grams",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 18
   },
   {
     "id": 15594,
@@ -63595,7 +64189,9 @@ export const PARTS = [
     "weight": "14 Grams",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15595,
@@ -63623,7 +64219,9 @@ export const PARTS = [
     "mpn": "DDR5",
     "memType": "DDR5",
     "cap": "2x48GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 2,
+    "cl": 46
   },
   {
     "id": 15596,
@@ -63652,7 +64250,9 @@ export const PARTS = [
     "weight": "180 Grams",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15597,
@@ -63680,7 +64280,9 @@ export const PARTS = [
     "mpn": "AEGIS",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15598,
@@ -63710,7 +64312,8 @@ export const PARTS = [
     "weight": "45 Grams",
     "memType": "DDR5",
     "cap": "16GB",
-    "speed": 5600
+    "speed": 5600,
+    "cl": 36
   },
   {
     "id": 15599,
@@ -63740,7 +64343,9 @@ export const PARTS = [
     "weight": "72 Grams",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15600,
@@ -63768,7 +64373,9 @@ export const PARTS = [
     "mpn": "fanxiang",
     "memType": "DDR4",
     "cap": "2x32GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 22
   },
   {
     "id": 15601,
@@ -63798,7 +64405,9 @@ export const PARTS = [
     "weight": "1.76 ounces",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 5200
+    "speed": 5200,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15602,
@@ -63829,7 +64438,9 @@ export const PARTS = [
     "weight": "113 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15603,
@@ -63857,7 +64468,9 @@ export const PARTS = [
     "mpn": "CRAS V RGB",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15604,
@@ -63885,7 +64498,9 @@ export const PARTS = [
     "mpn": "CRAS V RGB",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15605,
@@ -63913,7 +64528,9 @@ export const PARTS = [
     "mpn": "CRAS V RGB",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15606,
@@ -63941,7 +64558,9 @@ export const PARTS = [
     "mpn": "CRAS V RGB",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15607,
@@ -63971,7 +64590,9 @@ export const PARTS = [
     "weight": "0.08 Pounds",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15608,
@@ -64001,7 +64622,9 @@ export const PARTS = [
     "weight": "150 Grams",
     "memType": "DDR4",
     "cap": "4x32GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 4,
+    "cl": 18
   },
   {
     "id": 15609,
@@ -64029,7 +64652,9 @@ export const PARTS = [
     "mpn": "fanxiang RGB",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15610,
@@ -64057,7 +64682,9 @@ export const PARTS = [
     ],
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15611,
@@ -64087,7 +64714,9 @@ export const PARTS = [
     "weight": "100 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15612,
@@ -64116,7 +64745,8 @@ export const PARTS = [
     "weight": "20 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 7200
+    "speed": 7200,
+    "sticks": 2
   },
   {
     "id": 15613,
@@ -64145,7 +64775,9 @@ export const PARTS = [
     "weight": "69 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15614,
@@ -64174,7 +64806,9 @@ export const PARTS = [
     "weight": "46 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15615,
@@ -64205,7 +64839,9 @@ export const PARTS = [
     "weight": "42 Grams",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15616,
@@ -64236,7 +64872,9 @@ export const PARTS = [
     "weight": "37 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15617,
@@ -64267,7 +64905,9 @@ export const PARTS = [
     "weight": "40.27 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 38
   },
   {
     "id": 15618,
@@ -64294,7 +64934,8 @@ export const PARTS = [
     ],
     "memType": "DDR4",
     "cap": "2x8GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2
   },
   {
     "id": 15619,
@@ -64323,7 +64964,9 @@ export const PARTS = [
     "weight": "0.1 Kilograms",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15620,
@@ -64353,7 +64996,9 @@ export const PARTS = [
     "weight": "2.72 ounces",
     "memType": "DDR4",
     "cap": "2x8GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15621,
@@ -64383,7 +65028,9 @@ export const PARTS = [
     "weight": "0.4 Pounds",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15622,
@@ -64413,7 +65060,9 @@ export const PARTS = [
     "weight": "0.08 Pounds",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 5200
+    "speed": 5200,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15623,
@@ -64443,7 +65092,8 @@ export const PARTS = [
     "weight": "141 Grams",
     "memType": "DDR5",
     "cap": "32GB",
-    "speed": 6000
+    "speed": 6000,
+    "cl": 30
   },
   {
     "id": 15624,
@@ -64472,7 +65122,9 @@ export const PARTS = [
     "mpn": "LD5U16G64C30BR-RGD",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15625,
@@ -64507,7 +65159,9 @@ export const PARTS = [
     "weight": "0.08 Pounds",
     "memType": "DDR5",
     "cap": "2x48GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15626,
@@ -64536,7 +65190,9 @@ export const PARTS = [
     "mpn": "Expert DDR5",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 7200
+    "speed": 7200,
+    "sticks": 2,
+    "cl": 34
   },
   {
     "id": 15627,
@@ -64565,7 +65221,9 @@ export const PARTS = [
     "mpn": "Trident Z5 Royal",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15628,
@@ -64594,7 +65252,9 @@ export const PARTS = [
     "mpn": "Trident Z5 Royal Neo",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15629,
@@ -64624,7 +65284,8 @@ export const PARTS = [
     "weight": "0.03 Pounds",
     "memType": "DDR5",
     "cap": "16GB",
-    "speed": 5600
+    "speed": 5600,
+    "cl": 46
   },
   {
     "id": 15630,
@@ -64653,7 +65314,9 @@ export const PARTS = [
     "mpn": "Vulcan DDR5",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15631,
@@ -64683,7 +65346,9 @@ export const PARTS = [
     "weight": "113 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15632,
@@ -64713,7 +65378,8 @@ export const PARTS = [
     "weight": "45 Grams",
     "memType": "DDR5",
     "cap": "16GB",
-    "speed": 6000
+    "speed": 6000,
+    "cl": 36
   },
   {
     "id": 15633,
@@ -64743,7 +65409,8 @@ export const PARTS = [
     "weight": "39 Grams",
     "memType": "DDR5",
     "cap": "32GB",
-    "speed": 5600
+    "speed": 5600,
+    "cl": 40
   },
   {
     "id": 15634,
@@ -64796,7 +65463,9 @@ export const PARTS = [
     "weight": "33 Grams",
     "memType": "DDR4",
     "cap": "2x8GB",
-    "speed": 3200
+    "speed": 3200,
+    "sticks": 2,
+    "cl": 16
   },
   {
     "id": 15636,
@@ -64826,7 +65495,9 @@ export const PARTS = [
     "weight": "100 Grams",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15637,
@@ -64855,7 +65526,9 @@ export const PARTS = [
     "mpn": "ddr5",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 7200
+    "speed": 7200,
+    "sticks": 2,
+    "cl": 34
   },
   {
     "id": 15638,
@@ -64885,7 +65558,8 @@ export const PARTS = [
     "weight": "87.5 Grams",
     "memType": "DDR5",
     "cap": "32GB",
-    "speed": 6000
+    "speed": 6000,
+    "cl": 30
   },
   {
     "id": 15639,
@@ -64908,7 +65582,9 @@ export const PARTS = [
     "mpn": "Viper Elite 5",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15640,
@@ -64936,7 +65612,9 @@ export const PARTS = [
     "mpn": "CRAS V RGB",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 7200
+    "speed": 7200,
+    "sticks": 2,
+    "cl": 34
   },
   {
     "id": 15641,
@@ -64963,7 +65641,9 @@ export const PARTS = [
     ],
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 4800
+    "speed": 4800,
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15642,
@@ -64992,7 +65672,9 @@ export const PARTS = [
     "mpn": "Zenith RGB",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 18
   },
   {
     "id": 15643,
@@ -65020,7 +65702,9 @@ export const PARTS = [
     "mpn": "Bolt V",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15644,
@@ -65049,7 +65733,9 @@ export const PARTS = [
     "mpn": "RipJaws M5 RGB",
     "memType": "DDR5",
     "cap": "2x48GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15645,
@@ -65077,7 +65763,9 @@ export const PARTS = [
     "mpn": "BOLT V",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15646,
@@ -65107,7 +65795,9 @@ export const PARTS = [
     "mpn": "SU032GXLWU60CFDKSN",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15647,
@@ -65136,7 +65826,8 @@ export const PARTS = [
     "weight": "191 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2
   },
   {
     "id": 15648,
@@ -65161,7 +65852,9 @@ export const PARTS = [
     "weight": "0.1 Kilograms",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 19
   },
   {
     "id": 15649,
@@ -65191,7 +65884,9 @@ export const PARTS = [
     "weight": "30 Grams",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15650,
@@ -65221,7 +65916,8 @@ export const PARTS = [
     "weight": "140.6 Grams",
     "memType": "DDR5",
     "cap": "64GB",
-    "speed": 6000
+    "speed": 6000,
+    "cl": 30
   },
   {
     "id": 15651,
@@ -65251,7 +65947,8 @@ export const PARTS = [
     "weight": "190 Grams",
     "memType": "DDR5",
     "cap": "64GB",
-    "speed": 6400
+    "speed": 6400,
+    "cl": 30
   },
   {
     "id": 15652,
@@ -65281,7 +65978,8 @@ export const PARTS = [
     "weight": "190 Grams",
     "memType": "DDR5",
     "cap": "32GB",
-    "speed": 6000
+    "speed": 6000,
+    "cl": 30
   },
   {
     "id": 15653,
@@ -65311,7 +66009,8 @@ export const PARTS = [
     "mpn": "Pinnacle",
     "memType": "DDR4",
     "cap": "16GB",
-    "speed": 3200
+    "speed": 3200,
+    "cl": 22
   },
   {
     "id": 15654,
@@ -65339,7 +66038,9 @@ export const PARTS = [
     "weight": "6.24 ounces",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 30
   },
   {
     "id": 15655,
@@ -65367,7 +66068,9 @@ export const PARTS = [
     "weight": "144.2 Grams",
     "memType": "DDR4",
     "cap": "4x8GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 4,
+    "cl": 18
   },
   {
     "id": 15656,
@@ -65397,7 +66100,8 @@ export const PARTS = [
     "weight": "1.4 Ounces",
     "memType": "DDR5",
     "cap": "8GB",
-    "speed": 5600
+    "speed": 5600,
+    "cl": 40
   },
   {
     "id": 15657,
@@ -65425,7 +66129,8 @@ export const PARTS = [
     "mpn": "Acclamator",
     "memType": "DDR5",
     "cap": "32GB",
-    "speed": 6000
+    "speed": 6000,
+    "cl": 40
   },
   {
     "id": 15658,
@@ -65456,7 +66161,9 @@ export const PARTS = [
     "weight": "41.8 Grams",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15659,
@@ -65485,7 +66192,8 @@ export const PARTS = [
     "mpn": "BL.9BWWA.439",
     "memType": "DDR5",
     "cap": "32GB",
-    "speed": 6000
+    "speed": 6000,
+    "cl": 30
   },
   {
     "id": 15660,
@@ -65515,7 +66223,8 @@ export const PARTS = [
     "weight": "34 Grams",
     "memType": "DDR5",
     "cap": "16GB",
-    "speed": 6000
+    "speed": 6000,
+    "cl": 36
   },
   {
     "id": 15661,
@@ -65545,7 +66254,9 @@ export const PARTS = [
     "weight": "0.14 Kilograms",
     "memType": "DDR5",
     "cap": "2x32GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 38
   },
   {
     "id": 15662,
@@ -65575,7 +66286,9 @@ export const PARTS = [
     "weight": "0.2 Pounds",
     "memType": "DDR5",
     "cap": "2x8GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15663,
@@ -65606,7 +66319,8 @@ export const PARTS = [
     "weight": "140.6 Grams",
     "memType": "DDR5",
     "cap": "48GB",
-    "speed": 6000
+    "speed": 6000,
+    "cl": 28
   },
   {
     "id": 15664,
@@ -65634,7 +66348,9 @@ export const PARTS = [
     "upc": "848354047094",
     "mpn": "Trident Z5 Neo RGB Series",
     "memType": "DDR5",
-    "cap": "2x24GB"
+    "cap": "2x24GB",
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15665,
@@ -65662,7 +66378,9 @@ export const PARTS = [
     "upc": "848354047544",
     "mpn": "Trident Z5 CK RGB Series",
     "memType": "DDR5",
-    "cap": "2x24GB"
+    "cap": "2x24GB",
+    "sticks": 2,
+    "cl": 40
   },
   {
     "id": 15666,
@@ -65690,7 +66408,9 @@ export const PARTS = [
     "mpn": "Elite 5 Ultra",
     "memType": "DDR5",
     "cap": "2x48GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 28
   },
   {
     "id": 15667,
@@ -65744,7 +66464,8 @@ export const PARTS = [
     "mpn": "SD200",
     "memType": "DDR5",
     "cap": "16GB",
-    "speed": 5600
+    "speed": 5600,
+    "cl": 46
   },
   {
     "id": 15669,
@@ -65772,7 +66493,9 @@ export const PARTS = [
     "mpn": "Bolt V",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 7200
+    "speed": 7200,
+    "sticks": 2,
+    "cl": 34
   },
   {
     "id": 15670,
@@ -65801,7 +66524,8 @@ export const PARTS = [
     "weight": "30 Grams",
     "memType": "DDR4",
     "cap": "32GB",
-    "speed": 3200
+    "speed": 3200,
+    "cl": 22
   },
   {
     "id": 15671,
@@ -65831,7 +66555,9 @@ export const PARTS = [
     "weight": "37 Grams",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 32
   },
   {
     "id": 15672,
@@ -65861,7 +66587,9 @@ export const PARTS = [
     "weight": "91.07 Grams",
     "memType": "DDR5",
     "cap": "4x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 4,
+    "cl": 40
   },
   {
     "id": 15673,
@@ -65886,7 +66614,9 @@ export const PARTS = [
     "weight": "0.08 Pounds",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6000
+    "speed": 6000,
+    "sticks": 2,
+    "cl": 36
   },
   {
     "id": 15674,
@@ -65916,7 +66646,8 @@ export const PARTS = [
     "weight": "0.04 Pounds",
     "memType": "DDR5",
     "cap": "64GB",
-    "speed": 5600
+    "speed": 5600,
+    "cl": 36
   },
   {
     "id": 15675,
@@ -65944,7 +66675,9 @@ export const PARTS = [
     "mpn": "Ripjaws DDR5 SO-DIMM",
     "memType": "DDR5",
     "cap": "2x48GB",
-    "speed": 5600
+    "speed": 5600,
+    "sticks": 2,
+    "cl": 46
   },
   {
     "id": 15676,
@@ -65968,7 +66701,8 @@ export const PARTS = [
     "mpn": "M471",
     "memType": "DDR4",
     "cap": "16GB",
-    "speed": 3200
+    "speed": 3200,
+    "cl": 22
   },
   {
     "id": 15677,
@@ -65997,7 +66731,9 @@ export const PARTS = [
     "weight": "0.08 Kilograms",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 6400
+    "speed": 6400,
+    "sticks": 2,
+    "cl": 38
   },
   {
     "id": 15678,
@@ -66027,7 +66763,8 @@ export const PARTS = [
     "weight": "0.07 Pounds",
     "memType": "DDR5",
     "cap": "32GB",
-    "speed": 5600
+    "speed": 5600,
+    "cl": 36
   },
   {
     "id": 15679,
@@ -66055,7 +66792,9 @@ export const PARTS = [
     "mpn": "T-Force XTREEM",
     "memType": "DDR5",
     "cap": "2x16GB",
-    "speed": 7200
+    "speed": 7200,
+    "sticks": 2,
+    "cl": 34
   },
   {
     "id": 15680,
@@ -66113,7 +66852,9 @@ export const PARTS = [
     "mpn": "Eryx Tatacius",
     "memType": "DDR4",
     "cap": "2x16GB",
-    "speed": 3600
+    "speed": 3600,
+    "sticks": 2,
+    "cl": 18
   },
   {
     "id": 15682,
@@ -81896,14 +82637,14 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 40.6,
     "noise": 26,
     "rpm": 1500,
     "rgb": true,
     "pwm": true,
     "fans_inc": 1,
-    "color": "Blue"
+    "color": "Blue",
+    "size": 120
   },
   {
     "id": 16196,
@@ -81923,14 +82664,14 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 40.6,
     "noise": 24.6,
     "rpm": 1500,
     "rgb": true,
     "pwm": false,
     "fans_inc": 1,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16197,
@@ -81950,14 +82691,14 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 200,
     "cfm": 129,
     "noise": 34.48,
     "rpm": 800,
     "rgb": false,
     "pwm": false,
     "fans_inc": 1,
-    "color": "Black"
+    "color": "Black",
+    "size": 200
   },
   {
     "id": 16198,
@@ -81977,14 +82718,14 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 57.05,
     "noise": 25.8,
     "rpm": 2000,
     "rgb": true,
     "pwm": true,
     "fans_inc": 2,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16199,
@@ -82004,14 +82745,14 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 140,
     "cfm": 81.6,
     "noise": 38.8,
     "rpm": 2000,
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "color": "White"
+    "color": "White",
+    "size": 140
   },
   {
     "id": 16200,
@@ -82031,14 +82772,14 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 57.06,
     "noise": 25.8,
     "rpm": 2000,
     "rgb": false,
     "pwm": true,
     "fans_inc": 2,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16201,
@@ -82058,14 +82799,14 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 57.06,
     "noise": 25.8,
     "rpm": 2000,
     "rgb": false,
     "pwm": true,
     "fans_inc": 2,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16202,
@@ -82085,14 +82826,14 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 57.06,
     "noise": 25.8,
     "rpm": 2000,
     "rgb": true,
     "pwm": true,
     "fans_inc": 2,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16203,
@@ -82112,14 +82853,14 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 63.1,
     "noise": 37,
     "rpm": 2400,
     "rgb": true,
     "pwm": false,
     "fans_inc": 3,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16204,
@@ -82139,14 +82880,14 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 140,
     "cfm": 82.5,
     "noise": 37,
     "rpm": 2000,
     "rgb": true,
     "pwm": false,
     "fans_inc": 2,
-    "color": "Black"
+    "color": "Black",
+    "size": 140
   },
   {
     "id": 16205,
@@ -82166,13 +82907,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 50.18,
     "noise": 27.5,
     "rpm": 1800,
     "rgb": true,
     "fans_inc": 1,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16206,
@@ -82192,13 +82933,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 140,
     "cfm": 84.75,
     "noise": 36,
     "rpm": 1800,
     "rgb": true,
     "fans_inc": 1,
-    "color": "White"
+    "color": "White",
+    "size": 140
   },
   {
     "id": 16207,
@@ -82218,13 +82959,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 48.58,
     "noise": 29,
     "rpm": 1800,
     "rgb": true,
     "fans_inc": 1,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16208,
@@ -82244,13 +82985,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 50.18,
     "noise": 27.5,
     "rpm": 1800,
     "rgb": true,
     "fans_inc": 1,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16209,
@@ -82270,13 +83011,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 48.58,
     "noise": 29,
     "rpm": 1800,
     "rgb": true,
     "fans_inc": 1,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16210,
@@ -82296,13 +83037,13 @@ export const PARTS = [
         "inStock": false
       }
     },
-    "fanSize": 120,
     "cfm": 78.86,
     "noise": 33.88,
     "rpm": 1800,
     "rgb": true,
     "fans_inc": 1,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16211,
@@ -82322,13 +83063,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 74.2,
     "noise": 36,
     "rpm": 2100,
     "rgb": true,
     "fans_inc": 1,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16212,
@@ -82348,13 +83089,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 74.2,
     "noise": 36,
     "rpm": 2100,
     "rgb": false,
     "fans_inc": 1,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16213,
@@ -82374,13 +83115,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 74.2,
     "noise": 36,
     "rpm": 2100,
     "rgb": true,
     "fans_inc": 3,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16214,
@@ -82400,13 +83141,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 74.2,
     "noise": 36,
     "rpm": 2100,
     "rgb": true,
     "fans_inc": 3,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16215,
@@ -82426,13 +83167,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 69.9,
     "noise": 36,
     "rpm": 2400,
     "rgb": true,
     "fans_inc": 3,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16216,
@@ -82452,13 +83193,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 69.9,
     "noise": 36,
     "rpm": 2400,
     "rgb": true,
     "fans_inc": 3,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16217,
@@ -82478,13 +83219,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 72.8,
     "noise": 36,
     "rpm": 2100,
     "rgb": false,
     "fans_inc": 3,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16218,
@@ -82504,13 +83245,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 69.9,
     "noise": 36,
     "rpm": 2400,
     "rgb": true,
     "fans_inc": 1,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16219,
@@ -82530,14 +83271,14 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 68,
     "noise": 28.5,
     "rpm": 2000,
     "rgb": true,
     "pwm": false,
     "fans_inc": 3,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16220,
@@ -82557,13 +83298,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 72.8,
     "noise": 36,
     "rpm": 2100,
     "rgb": false,
     "fans_inc": 3,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16221,
@@ -82583,13 +83324,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 75.12,
     "noise": 30,
     "rpm": 2400,
     "rgb": true,
     "fans_inc": 2,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16222,
@@ -82609,13 +83350,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 140,
     "cfm": 98.61,
     "noise": 34.5,
     "rpm": 2000,
     "rgb": true,
     "fans_inc": 2,
-    "color": "Black"
+    "color": "Black",
+    "size": 140
   },
   {
     "id": 16223,
@@ -82635,13 +83376,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 75.12,
     "noise": 30,
     "rpm": 2400,
     "rgb": true,
     "fans_inc": 2,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16224,
@@ -82661,13 +83402,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 75.12,
     "noise": 30,
     "rpm": 2400,
     "rgb": true,
     "fans_inc": 3,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16225,
@@ -82687,13 +83428,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 75.12,
     "noise": 30,
     "rpm": 2400,
     "rgb": true,
     "fans_inc": 3,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16226,
@@ -82713,13 +83454,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 140,
     "cfm": 98.61,
     "noise": 34.5,
     "rpm": 2000,
     "rgb": true,
     "fans_inc": 2,
-    "color": "White"
+    "color": "White",
+    "size": 140
   },
   {
     "id": 16227,
@@ -82739,13 +83480,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 66.7,
     "noise": 37.7,
     "rpm": 2400,
     "rgb": true,
     "fans_inc": 3,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16228,
@@ -82765,13 +83506,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 66.7,
     "noise": 37.7,
     "rpm": 2400,
     "rgb": true,
     "fans_inc": 1,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16229,
@@ -82791,13 +83532,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 66.7,
     "noise": 37.7,
     "rpm": 2400,
     "rgb": true,
     "fans_inc": 3,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16230,
@@ -82817,13 +83558,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 200,
     "cfm": 131.6,
     "noise": 27.2,
     "rpm": 900,
     "rgb": true,
     "fans_inc": 1,
-    "color": "White"
+    "color": "White",
+    "size": 200
   },
   {
     "id": 16231,
@@ -82843,13 +83584,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 200,
     "cfm": 131.6,
     "noise": 27.2,
     "rpm": 900,
     "rgb": false,
     "fans_inc": 1,
-    "color": "Black"
+    "color": "Black",
+    "size": 200
   },
   {
     "id": 16232,
@@ -82869,13 +83610,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 66.1,
     "noise": 25.2,
     "rpm": 1500,
     "rgb": true,
     "fans_inc": 3,
-    "color": "Snow"
+    "color": "Snow",
+    "size": 120
   },
   {
     "id": 16233,
@@ -82895,13 +83636,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 68,
     "noise": 28.5,
     "rpm": 2000,
     "rgb": true,
     "fans_inc": 3,
-    "color": "Gravel Sand"
+    "color": "Gravel Sand",
+    "size": 120
   },
   {
     "id": 16234,
@@ -82921,13 +83662,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 68,
     "noise": 28.5,
     "rpm": 2000,
     "rgb": true,
     "fans_inc": 3,
-    "color": "Bubble Pink"
+    "color": "Bubble Pink",
+    "size": 120
   },
   {
     "id": 16235,
@@ -82947,13 +83688,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 57.11,
     "noise": 30.6,
     "rpm": 2000,
     "rgb": true,
     "fans_inc": 3,
-    "color": "Snow"
+    "color": "Snow",
+    "size": 120
   },
   {
     "id": 16236,
@@ -82973,13 +83714,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 68,
     "noise": 28.5,
     "rpm": 2000,
     "rgb": true,
     "fans_inc": 3,
-    "color": "Racing Green"
+    "color": "Racing Green",
+    "size": 120
   },
   {
     "id": 16237,
@@ -82999,13 +83740,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 68,
     "noise": 28.5,
     "rpm": 2000,
     "rgb": true,
     "fans_inc": 3,
-    "color": "Bumblebee"
+    "color": "Bumblebee",
+    "size": 120
   },
   {
     "id": 16238,
@@ -83025,13 +83766,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 200,
     "cfm": 131.6,
     "noise": 27.2,
     "rpm": 900,
     "rgb": false,
     "fans_inc": 1,
-    "color": "White"
+    "color": "White",
+    "size": 200
   },
   {
     "id": 16239,
@@ -83051,13 +83792,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 68,
     "noise": 28.5,
     "rpm": 2000,
     "rgb": true,
     "fans_inc": 3,
-    "color": "Hydrangea Blue"
+    "color": "Hydrangea Blue",
+    "size": 120
   },
   {
     "id": 16240,
@@ -83077,13 +83818,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 200,
     "cfm": 131.6,
     "noise": 27.2,
     "rpm": 900,
     "rgb": true,
     "fans_inc": 1,
-    "color": "Black"
+    "color": "Black",
+    "size": 200
   },
   {
     "id": 16241,
@@ -83103,13 +83844,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 68,
     "noise": 28.5,
     "rpm": 2000,
     "rgb": true,
     "fans_inc": 3,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16242,
@@ -83129,13 +83870,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 68,
     "noise": 28.5,
     "rpm": 2000,
     "rgb": true,
     "fans_inc": 3,
-    "color": "Matcha Green"
+    "color": "Matcha Green",
+    "size": 120
   },
   {
     "id": 16243,
@@ -83155,13 +83896,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 65.82,
     "noise": 34.6,
     "rpm": 2100,
     "rgb": false,
     "fans_inc": 3,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16244,
@@ -83181,13 +83922,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 140,
     "cfm": 98.61,
     "noise": 34.5,
     "rpm": 2000,
     "rgb": true,
     "fans_inc": 3,
-    "color": "White"
+    "color": "White",
+    "size": 140
   },
   {
     "id": 16245,
@@ -83207,13 +83948,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 140,
     "cfm": 98.61,
     "noise": 34.5,
     "rpm": 2000,
     "rgb": true,
     "fans_inc": 3,
-    "color": "Black"
+    "color": "Black",
+    "size": 140
   },
   {
     "id": 16246,
@@ -83233,13 +83974,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 75.05,
     "noise": 31.9,
     "rpm": 2800,
     "rgb": true,
     "fans_inc": 3,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16247,
@@ -83259,13 +84000,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 73.47,
     "noise": 30,
     "rpm": 2400,
     "rgb": false,
     "fans_inc": 2,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16248,
@@ -83285,13 +84026,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 140,
     "cfm": 93.2,
     "noise": 30,
     "rpm": 2400,
     "rgb": false,
     "fans_inc": 2,
-    "color": "Black"
+    "color": "Black",
+    "size": 140
   },
   {
     "id": 16249,
@@ -83311,13 +84052,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 75.05,
     "noise": 31.9,
     "rpm": 2800,
     "rgb": true,
     "fans_inc": 2,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16250,
@@ -83337,13 +84078,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 74.47,
     "noise": 30,
     "rpm": 2400,
     "rgb": false,
     "fans_inc": 3,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16251,
@@ -83363,13 +84104,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 140,
     "cfm": 104,
     "noise": 41,
     "rpm": 3100,
     "rgb": true,
     "fans_inc": 1,
-    "color": "Black"
+    "color": "Black",
+    "size": 140
   },
   {
     "id": 16252,
@@ -83389,13 +84130,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 360,
     "cfm": 104,
     "noise": 41,
     "rpm": 3100,
     "rgb": true,
     "fans_inc": 3,
-    "color": "White"
+    "color": "White",
+    "size": 360
   },
   {
     "id": 16253,
@@ -83415,13 +84156,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 104,
     "noise": 41,
     "rpm": 3100,
     "rgb": true,
     "fans_inc": 1,
-    "color": "White"
+    "color": "White",
+    "size": 120
   },
   {
     "id": 16254,
@@ -83441,13 +84182,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 360,
     "cfm": 104,
     "noise": 41,
     "rpm": 3100,
     "rgb": true,
     "fans_inc": 3,
-    "color": "Black"
+    "color": "Black",
+    "size": 360
   },
   {
     "id": 16255,
@@ -83467,13 +84208,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 280,
     "cfm": 104,
     "noise": 41,
     "rpm": 3100,
     "rgb": true,
     "fans_inc": 2,
-    "color": "White"
+    "color": "White",
+    "size": 280
   },
   {
     "id": 16256,
@@ -83493,13 +84234,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 140,
     "cfm": 104,
     "noise": 41,
     "rpm": 3100,
     "rgb": true,
     "fans_inc": 1,
-    "color": "White"
+    "color": "White",
+    "size": 140
   },
   {
     "id": 16257,
@@ -83519,13 +84260,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 240,
     "cfm": 104,
     "noise": 41,
     "rpm": 3100,
     "rgb": true,
     "fans_inc": 2,
-    "color": "Black"
+    "color": "Black",
+    "size": 240
   },
   {
     "id": 16258,
@@ -83545,13 +84286,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 104,
     "noise": 41,
     "rpm": 3100,
     "rgb": true,
     "fans_inc": 1,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16259,
@@ -83571,13 +84312,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 240,
     "cfm": 104,
     "noise": 41,
     "rpm": 3100,
     "rgb": true,
     "fans_inc": 2,
-    "color": "White"
+    "color": "White",
+    "size": 240
   },
   {
     "id": 16260,
@@ -83597,13 +84338,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 280,
     "cfm": 104,
     "noise": 41,
     "rpm": 3100,
     "rgb": true,
     "fans_inc": 2,
-    "color": "Black"
+    "color": "Black",
+    "size": 280
   },
   {
     "id": 16261,
@@ -83623,14 +84364,14 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "fanSize": 120,
     "cfm": 59.34,
     "noise": 25.7,
     "rpm": 2000,
     "rgb": true,
     "pwm": true,
     "fans_inc": 3,
-    "color": "Black"
+    "color": "Black",
+    "size": 120
   },
   {
     "id": 16262,
