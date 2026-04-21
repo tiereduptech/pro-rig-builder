@@ -1,112 +1,165 @@
+#!/usr/bin/env node
 /**
- * impact-test.js — v3 pagination diagnostic
+ * impact-test.js — diagnostic for Impact /Catalogs/ItemSearch endpoint
  *
- * Filters don't work on our Creator tier. Now we need to know:
- *   1. What pagination mechanism does Impact use? (Page=N, Offset=N, cursor-based?)
- *   2. What's the max PageSize? (100, 500, 1000, higher?)
- *   3. What fields does the full response envelope contain?
+ * v2: Fixed Query syntax — Impact needs string values in single quotes.
  *
- * Once we know, we can write an efficient bulk downloader.
+ * Usage:
+ *   railway run node impact-test.js
+ *   railway run node impact-test.js --keyword="GPU"
+ *   railway run node impact-test.js --keyword="CPU" --maxprice=500
+ *   railway run node impact-test.js --noquery       # no Query filter, just keyword
  */
 
 const SID = process.env.IMPACT_ACCOUNT_SID;
 const TOKEN = process.env.IMPACT_AUTH_TOKEN;
+
 if (!SID || !TOKEN) {
-  console.error('✗ Missing IMPACT env vars. Run: railway run node impact-test.js');
+  console.error('ERROR: IMPACT_ACCOUNT_SID and IMPACT_AUTH_TOKEN env vars required.');
   process.exit(1);
 }
-const AUTH = 'Basic ' + Buffer.from(`${SID}:${TOKEN}`).toString('base64');
-const BASE = `https://api.impact.com/Mediapartners/${SID}`;
 
-async function impactGet(path, params = {}) {
-  const url = new URL(BASE + path);
-  for (const [k, v] of Object.entries(params)) url.searchParams.set(k, v);
-  const start = Date.now();
-  const res = await fetch(url.toString(), {
-    headers: { Authorization: AUTH, Accept: 'application/json' },
-  });
-  const elapsed = Date.now() - start;
-  const text = await res.text();
-  return { ok: res.ok, status: res.status, url: url.toString(), body: text, elapsed };
+const args = {};
+for (const arg of process.argv.slice(2)) {
+  const [k, v] = arg.replace(/^--/, '').split('=');
+  args[k] = v ?? true;
 }
 
-async function main() {
-  console.log('── Impact Pagination Diagnostic ──\n');
+const KEYWORD = args.keyword || 'graphics card';
+const PAGE_SIZE = parseInt(args.pagesize || '10');
+const MAX_PRICE = args.maxprice ? parseInt(args.maxprice) : null;
+const NO_QUERY = !!args.noquery;
 
-  // Test 1: Pull page 1 with PageSize=5 and dump FULL envelope structure
-  console.log('1. Dumping full response envelope structure (PageSize=5)...');
-  const r1 = await impactGet('/Catalogs/28060/Items', { PageSize: 5 });
-  if (!r1.ok) {
-    console.error(`   ✗ HTTP ${r1.status}: ${r1.body.slice(0, 300)}`);
+// Impact Query syntax: string values MUST be in single quotes.
+// Operators: = != > >= < <= AND
+// Per docs: "string values need to be in single quotes. e.g., (Color = 'Navy')"
+let queryExpr = null;
+if (!NO_QUERY) {
+  queryExpr = "StockAvailability = 'InStock'";
+  if (MAX_PRICE) queryExpr += ` AND CurrentPrice <= ${MAX_PRICE}`;
+}
+
+const basicAuth = Buffer.from(`${SID}:${TOKEN}`).toString('base64');
+const params = new URLSearchParams({
+  Keyword: KEYWORD,
+  PageSize: String(PAGE_SIZE),
+});
+if (queryExpr) params.append('Query', queryExpr);
+
+const url = `https://api.impact.com/Mediapartners/${SID}/Catalogs/ItemSearch?${params}`;
+
+console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+console.log('Impact /Catalogs/ItemSearch diagnostic (v2)');
+console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+console.log('Keyword:    ', KEYWORD);
+console.log('Max price:  ', MAX_PRICE || 'no limit');
+console.log('Page size:  ', PAGE_SIZE);
+console.log('Query expr: ', queryExpr || '(none)');
+console.log('URL:        ', url);
+console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
+
+(async () => {
+  try {
+    const resp = await fetch(url, {
+      method: 'GET',
+      headers: {
+        Authorization: `Basic ${basicAuth}`,
+        Accept: 'application/json',
+      },
+    });
+
+    console.log(`HTTP ${resp.status} ${resp.statusText}`);
+    console.log(`Content-Type: ${resp.headers.get('content-type')}\n`);
+
+    const text = await resp.text();
+
+    if (!resp.ok) {
+      console.log('ERROR RESPONSE BODY:');
+      console.log(text.slice(0, 2000));
+      process.exit(2);
+    }
+
+    let data;
+    try {
+      data = JSON.parse(text);
+    } catch (e) {
+      console.log('Response was not JSON. Raw body:');
+      console.log(text.slice(0, 2000));
+      process.exit(3);
+    }
+
+    const topKeys = Object.keys(data);
+    console.log('TOP-LEVEL RESPONSE KEYS:', topKeys.join(', '));
+    if (data['@total']) console.log('Total matching (across all pages):', data['@total']);
+    if (data['@numpages']) console.log('Pages total:', data['@numpages']);
+
+    const items = data.Items || data.CatalogItems || data.items || [];
+    console.log(`\nITEMS RETURNED: ${items.length}\n`);
+
+    if (items.length === 0) {
+      console.log('⚠️  No items returned.');
+      console.log('\nFull response:');
+      console.log(JSON.stringify(data, null, 2).slice(0, 3000));
+      process.exit(0);
+    }
+
+    const campaigns = new Map();
+    for (const item of items) {
+      const name = item.CampaignName || 'Unknown';
+      const id = item.CampaignId || 'unknown';
+      const key = `${name} (${id})`;
+      campaigns.set(key, (campaigns.get(key) || 0) + 1);
+    }
+
+    console.log('CAMPAIGNS IN RESULTS:');
+    for (const [k, v] of campaigns) {
+      console.log(`   ${v.toString().padStart(3)} × ${k}`);
+    }
+
+    console.log('\nSAMPLE ITEM:');
+    const first = items[0];
+    console.log(JSON.stringify({
+      CampaignName: first.CampaignName,
+      Name: first.Name,
+      CatalogItemId: first.CatalogItemId,
+      Manufacturer: first.Manufacturer,
+      CurrentPrice: first.CurrentPrice,
+      OriginalPrice: first.OriginalPrice,
+      Currency: first.Currency,
+      StockAvailability: first.StockAvailability,
+      Url: first.Url,
+      ImageUrl: first.ImageUrl,
+      Gtin: first.Gtin,
+      Mpn: first.Mpn,
+      Asin: first.Asin,
+      Category: first.Category,
+      SubCategory: first.SubCategory,
+    }, null, 2));
+
+    const fieldStats = {
+      Url: 0, ImageUrl: 0, Gtin: 0, Mpn: 0, Asin: 0,
+      CurrentPrice: 0, StockAvailability: 0, Manufacturer: 0, Category: 0,
+    };
+    for (const item of items) {
+      for (const key of Object.keys(fieldStats)) {
+        if (item[key] && String(item[key]).trim() !== '') fieldStats[key]++;
+      }
+    }
+    console.log(`\nFIELD DENSITY (out of ${items.length} items):`);
+    for (const [k, v] of Object.entries(fieldStats)) {
+      console.log(`   ${k.padEnd(20)} ${v}/${items.length}`);
+    }
+
+    console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+    const hasBestBuy = [...campaigns.keys()].some(k => /best\s*buy/i.test(k));
+    if (hasBestBuy) {
+      console.log('✅ Best Buy found — ItemSearch works for you.');
+    } else {
+      console.log('⚠️  Best Buy not in results.');
+      console.log('   Campaigns found above. Check Impact dashboard for active brands.');
+    }
+  } catch (err) {
+    console.error('Fatal error:', err.message);
     process.exit(1);
   }
-  const envelope = JSON.parse(r1.body);
-  const topLevelKeys = Object.keys(envelope);
-  console.log(`   ✓ Top-level keys in response: ${topLevelKeys.join(', ')}`);
-  for (const k of topLevelKeys) {
-    if (k === 'Items') {
-      console.log(`     ${k}: Array[${envelope[k].length}]`);
-    } else {
-      const v = envelope[k];
-      const display = typeof v === 'string' ? `"${v.slice(0, 80)}"` : JSON.stringify(v).slice(0, 100);
-      console.log(`     ${k}: ${display}`);
-    }
-  }
-
-  // Test 2: Try various PageSize values to find the cap
-  console.log('\n2. Finding max PageSize (times the response)...');
-  for (const size of [100, 500, 1000, 5000]) {
-    const r = await impactGet('/Catalogs/28060/Items', { PageSize: size });
-    if (!r.ok) {
-      console.log(`   PageSize=${size}: ✗ HTTP ${r.status}`);
-      continue;
-    }
-    const d = JSON.parse(r.body);
-    console.log(`   PageSize=${size}: ${d.Items?.length || 0} items returned, ${r.elapsed}ms`);
-  }
-
-  // Test 3: Try pagination methods
-  console.log('\n3. Testing pagination mechanisms (PageSize=5 across calls)...');
-
-  // Standard: Page=N
-  const p1 = await impactGet('/Catalogs/28060/Items', { PageSize: 5, Page: 1 });
-  const p2 = await impactGet('/Catalogs/28060/Items', { PageSize: 5, Page: 2 });
-  const d1 = JSON.parse(p1.body);
-  const d2 = JSON.parse(p2.body);
-  const firstId1 = d1.Items?.[0]?.CatalogItemId || d1.Items?.[0]?.Id || 'unknown';
-  const firstId2 = d2.Items?.[0]?.CatalogItemId || d2.Items?.[0]?.Id || 'unknown';
-  console.log(`   Page=1 first item id: ${firstId1}`);
-  console.log(`   Page=2 first item id: ${firstId2}`);
-  console.log(`   Page=N pagination ${firstId1 !== firstId2 ? '✓ WORKS' : '✗ returns same data'}`);
-
-  // Alternative: Offset=N
-  const o0 = await impactGet('/Catalogs/28060/Items', { PageSize: 5, Offset: 0 });
-  const o5 = await impactGet('/Catalogs/28060/Items', { PageSize: 5, Offset: 5 });
-  const od0 = JSON.parse(o0.body);
-  const od5 = JSON.parse(o5.body);
-  const firstIdO0 = od0.Items?.[0]?.CatalogItemId || od0.Items?.[0]?.Id || 'unknown';
-  const firstIdO5 = od5.Items?.[0]?.CatalogItemId || od5.Items?.[0]?.Id || 'unknown';
-  console.log(`   Offset=0 first item id: ${firstIdO0}`);
-  console.log(`   Offset=5 first item id: ${firstIdO5}`);
-  console.log(`   Offset=N pagination ${firstIdO0 !== firstIdO5 ? '✓ WORKS' : '✗ returns same data'}`);
-
-  // Test 4: Show what an Items[0] looks like in full (to see ALL available fields)
-  console.log('\n4. Full field list on a sample item (first 30 fields):');
-  const sample = d1.Items?.[0];
-  if (sample) {
-    const fieldNames = Object.keys(sample);
-    console.log(`   Total fields on item: ${fieldNames.length}`);
-    for (const k of fieldNames.slice(0, 30)) {
-      const v = sample[k];
-      const display = v === null ? 'null'
-                    : typeof v === 'string' ? `"${v.slice(0, 60)}"`
-                    : JSON.stringify(v).slice(0, 60);
-      console.log(`     ${k.padEnd(30)} ${display}`);
-    }
-    if (fieldNames.length > 30) console.log(`     ...and ${fieldNames.length - 30} more`);
-  }
-
-  console.log('\nDone. Based on max PageSize + pagination method, I can write the bulk downloader.');
-}
-
-main().catch(e => { console.error('\n✗ FATAL:', e); process.exit(1); });
+})();

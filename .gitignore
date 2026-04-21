@@ -8,3 +8,8 @@ dist/
 Thumbs.db
 .vscode/
 .idea/
+
+catalog-build/
+src/data/parts.js.backup-*
+bestbuy-test-response.json
+impact-test-output.txt

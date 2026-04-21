@@ -639,7 +639,7 @@ function SearchPage({activeCat,th}){
           const rr=retailers(p);
           return <div key={p.id}>
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`2.5fr ${cols.map(()=>"1fr").join(" ")} 60px 80px 70px`,gap:8,padding:"10px 12px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0,transition:"background .2s"}}>
-              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}>{p.img?<img src={p.img} alt="" style={{width:40,height:40,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:18,width:40,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2}}><span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}</div></div></div>
+              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}>{p.img?<img src={p.img} alt="" style={{width:40,height:40,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:18,width:40,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2}}><span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}</div></div></div>
               {cols.map(col=>{const v=p[col];const fmtVal=fmt(col,v,p);return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:typeof fmtVal==="string"&&fmtVal.includes("\n")?<div><div style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal.split("\n")[0]}</div><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{fmtVal.split("\n")[1]}</div></div>:<span style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal}</span>}</div>})}
               {(()=>{if(p.bench==null)return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)"}}>—</span></div>;const ratio=Math.round((p.bench/Math.max($(p)/100,1))*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:800,color:gc}}>{grade}</span></div>;})()}
               <div style={{textAlign:"right"}}>{(p.msrp&&p.msrp>$(p)||p.off>0)&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--mute)",textDecoration:"line-through"}}>${p.msrp||p.pr}</div>}<div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--mint)"}}>${$(p)}</div>{rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{rr.length} stores</div>}</div>
@@ -654,7 +654,7 @@ function SearchPage({activeCat,th}){
                 <div>
                   <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",letterSpacing:1,marginBottom:10,fontWeight:700,textTransform:"uppercase"}}>Specifications</div>
                   <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"0 20px"}}>
-                    {Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").map(([k,v])=>
+                    {Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","condition"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").map(([k,v])=>
                       <div key={k} style={{display:"flex",justifyContent:"space-between",padding:"5px 0",borderBottom:"1px solid var(--bdr)"}}>
                         <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)"}}>{SL[k]||k}</span>
                         <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--txt)",fontWeight:600}}>{fmt(k,v)}</span>
@@ -985,7 +985,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
                   <div style={{display:"flex",alignItems:"center",gap:4,marginTop:1}}>
                     <span style={{fontSize:10,color:"var(--dim)"}}>{p.b}</span>
                     <Stars r={p.r} s={9}/>
-                    {p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}
+                    {p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}
                   </div>
                 </div>
               </div>
@@ -1002,7 +1002,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
             {isExp&&<div style={{background:"var(--bg3)",borderRadius:"0 0 8px 8px",padding:"12px 16px",marginBottom:4,border:"1px solid var(--bdr)",borderTop:"none"}}>
               <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)",letterSpacing:1.5,marginBottom:8,fontWeight:600}}>SPECIFICATIONS</div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:"0 20px"}}>
-                {Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","uid","reviews","asin","discount","listPrice","percentageDiscount","fullTitle","description","enrichedAt","additionalImages","amazonCategories","applicableVouchers","boughtPastMonth","isAmazonChoice","isBestSeller","isAvailable","currency","discoveredVia","discoveredAt","sourceFile","imageUrl","amazonUrl","category","brand","name","title","specs"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").map(([k,v])=>
+                {Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","condition","uid","reviews","asin","discount","listPrice","percentageDiscount","fullTitle","description","enrichedAt","additionalImages","amazonCategories","applicableVouchers","boughtPastMonth","isAmazonChoice","isBestSeller","isAvailable","currency","discoveredVia","discoveredAt","sourceFile","imageUrl","amazonUrl","category","brand","name","title","specs"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").map(([k,v])=>
                   <div key={k} style={{display:"flex",justifyContent:"space-between",padding:"3px 0",borderBottom:"1px solid var(--bdr)"}}>
                     <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>{SL[k]||k}</span>
                     <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--txt)",fontWeight:500}}>{fmt(k,v)}</span>
@@ -1115,7 +1115,7 @@ function BuilderPage({th}){
     if(cat==="CPUCooler")return `${p.coolType} · ${p.coolerH||"?"}mm`;
     if(cat==="CaseFan")return `${p.fanSize}mm · ${p.packQty||1}x · ${p.airflow||"?"}CFM`;
     if(cat==="Monitor")return `${p.size}" ${p.panel} ${p.resolution} ${p.refreshRate}Hz`;
-    return Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","uid","upc"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").slice(0,2).map(([k,v])=>`${fmt(k,v)}`).join(" · ");};
+    return Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","condition","uid","upc"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").slice(0,2).map(([k,v])=>`${fmt(k,v)}`).join(" · ");};
 
   // ── Render a builder section ──
   const renderSection=(section)=>{
