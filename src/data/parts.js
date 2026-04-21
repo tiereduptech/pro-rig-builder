@@ -12211,7 +12211,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 50
+    "value": 50,
+    "rpm": 2000,
+    "pwm": true
   },
   {
     "id": 7179,
@@ -12235,7 +12237,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 91
+    "value": 91,
+    "rpm": 1500,
+    "pwm": true
   },
   {
     "id": 7180,
@@ -12259,7 +12263,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 50
+    "value": 50,
+    "rpm": 2000,
+    "pwm": true
   },
   {
     "id": 7181,
@@ -12283,7 +12289,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "rpm": 1800,
+    "pwm": true
   },
   {
     "id": 7182,
@@ -12307,7 +12315,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 72
+    "value": 72,
+    "rpm": 1700,
+    "pwm": true
   },
   {
     "id": 7183,
@@ -12331,7 +12341,10 @@ export const PARTS = [
       }
     },
     "color": "RGB",
-    "value": 51
+    "value": 51,
+    "rpm": 1800,
+    "pwm": true,
+    "rgbType": "ARGB"
   },
   {
     "id": 7184,
@@ -12355,7 +12368,10 @@ export const PARTS = [
       }
     },
     "color": "RGB",
-    "value": 21
+    "value": 21,
+    "rpm": 1800,
+    "pwm": true,
+    "rgbType": "ARGB"
   },
   {
     "id": 7185,
@@ -12379,7 +12395,10 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 25
+    "value": 25,
+    "rpm": 1900,
+    "pwm": true,
+    "rgbType": "ARGB"
   },
   {
     "id": 7186,
@@ -12403,7 +12422,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "rpm": 1600,
+    "pwm": true
   },
   {
     "id": 7187,
@@ -12427,7 +12448,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "rpm": 1100,
+    "pwm": true
   },
   {
     "id": 7188,
@@ -12451,7 +12474,10 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 38
+    "value": 38,
+    "rpm": 1700,
+    "pwm": true,
+    "rgbType": "ARGB"
   },
   {
     "id": 7189,
@@ -12475,14 +12501,16 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 73
+    "value": 73,
+    "rpm": 2000,
+    "pwm": true
   },
   {
     "id": 7190,
     "n": "DeepCool FK120 3-Pack",
     "img": "https://m.media-amazon.com/images/I/61BaLucbJiL._AC_SL300_.jpg",
     "c": "CaseFan",
-    "b": "Deepcool",
+    "b": "DeepCool",
     "pr": 29,
     "msrp": 29,
     "r": 4.5,
@@ -12499,7 +12527,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 75
+    "value": 75,
+    "rpm": 1850,
+    "pwm": true
   },
   {
     "id": 7191,
@@ -12523,7 +12553,10 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 100
+    "value": 100,
+    "rpm": 1550,
+    "pwm": true,
+    "rgbType": "ARGB"
   },
   {
     "id": 7192,
@@ -23559,7 +23592,12 @@ export const PARTS = [
     "noise": 29,
     "size": "120mm",
     "color": "Black",
-    "value": 5
+    "value": 5,
+    "cfm": 58.5,
+    "rpm": 1800,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14278,
@@ -23591,162 +23629,11 @@ export const PARTS = [
     "noise": 29.8,
     "size": "120mm",
     "color": "RGB",
-    "value": 3
-  },
-  {
-    "id": 14279,
-    "n": "iCUE 220T RGB Airflow Tempered Glass Mid-Tower Smart ATX Case - High Airflow - Three Included SP120 RGB PRO Fans - Black",
-    "img": "https://m.media-amazon.com/images/I/716we1trrIL._AC_SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "Corsair",
-    "pr": 179.99,
-    "msrp": 179.99,
-    "r": 4.7,
-    "asin": "B07RW8GLQJ",
-    "reviews": 8681,
-    "deals": {
-      "amazon": {
-        "price": 179.99,
-        "url": "https://www.amazon.com/dp/B07RW8GLQJ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/81YV417rI4L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71hnKJI6mHL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71TE3JtMCnL._AC_SL1500_.jpg"
-    ],
-    "upc": "840006609124",
-    "mpn": "CORSAIR iCUE 220T RGB Airflow Tempered Glass Mid-Tower Smart Case, Black",
-    "weight": "14.33 Pounds",
-    "rgb": true,
-    "size": "120 Millimeters",
-    "color": "Black",
-    "value": 0
-  },
-  {
-    "id": 14280,
-    "n": "Pure Base 500 ATX Midi Tower PC Case | Two Pre-Installed Silent Wings 2 Fans| White | BG035",
-    "img": "https://m.media-amazon.com/images/I/513qUuaD84L._AC_SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "be quiet!",
-    "pr": 119.99,
-    "msrp": 119.99,
-    "r": 4.7,
-    "asin": "B07TSG8G2H",
-    "reviews": 335,
-    "deals": {
-      "amazon": {
-        "price": 119.99,
-        "url": "https://www.amazon.com/dp/B07TSG8G2H?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71MV0IENrNL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61aONe2SY1L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71D9eEF4DYL._AC_SL1500_.jpg"
-    ],
-    "mpn": "BG035",
-    "weight": "6.95 Kilograms",
-    "color": "White"
-  },
-  {
-    "id": 14281,
-    "n": "iCUE 4000D RGB Airflow Mid-Tower Case - 3X AF120 RGB Elite Fans - iCUE Lighting Node PRO Controller - High-Airflow De...",
-    "img": "https://m.media-amazon.com/images/I/81BJl9d8iHL._AC_SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "Corsair",
-    "pr": 149.99,
-    "msrp": 149.99,
-    "r": 4.5,
-    "asin": "B0BKC5RY3H",
-    "reviews": 261,
-    "deals": {
-      "amazon": {
-        "price": 149.99,
-        "url": "https://www.amazon.com/dp/B0BKC5RY3H?tag=tiereduptech-20",
-        "inStock": true
-      },
-      "bestbuy": {
-        "price": 119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6530797&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6530797.p%3FskuId%3D6530797",
-        "inStock": false
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71t7fvDnMbL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/81fxSeJXW+L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/814x0O2fVOL._AC_SL1500_.jpg"
-    ],
-    "upc": "840006694328",
-    "mpn": "4000D RGB AIRFLOW",
-    "weight": "17.85 Pounds",
-    "rgb": true,
-    "fans_inc": 3,
-    "size": "120 Millimeters",
-    "color": "RGB",
-    "value": 0
-  },
-  {
-    "id": 14282,
-    "n": "Shadow Base 800 FX - ARGB - 4 Light Wings 140mm PWM Fans - Mid-Tower PC Gaming Case - 420mm radiators or E-ATX mother...",
-    "img": "https://m.media-amazon.com/images/I/71Gbnab-MuL._AC_SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "be quiet!",
-    "pr": 119.9,
-    "msrp": 129.9,
-    "r": 4.6,
-    "asin": "B0C597FL85",
-    "reviews": 225,
-    "deals": {
-      "amazon": {
-        "price": 119.9,
-        "url": "https://www.amazon.com/dp/B0C597FL85?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "discount": 8,
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/81sk2htlbqL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/616vrX1OERL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61x1jMHU2zL._AC_SL1500_.jpg"
-    ],
-    "mpn": "BGW64",
-    "weight": "12.3 Kilograms",
-    "rgb": true,
-    "pwm": true,
-    "size": "140 Millimeters",
-    "color": "Black",
-    "value": 0
-  },
-  {
-    "id": 14283,
-    "n": "Silent Base 802 ATX Midi Tower PC Case | 3 Pre-Installed Pure Wings 2 Fans | Sound Insulated | Black | BG039",
-    "img": "https://m.media-amazon.com/images/I/614fuD1ETwL._AC_SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "be quiet!",
-    "pr": 189.89,
-    "msrp": 189.89,
-    "r": 4.7,
-    "asin": "B08NW5741Z",
-    "reviews": 231,
-    "deals": {
-      "amazon": {
-        "price": 189.89,
-        "url": "https://www.amazon.com/dp/B08NW5741Z?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/611PKWobZpL._AC_SL1200_.jpg",
-      "https://m.media-amazon.com/images/I/71R11uSNCoL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/716nisc4ckL._AC_SL1500_.jpg"
-    ],
-    "mpn": "BG039",
-    "weight": "12.6 Kilograms",
-    "size": "120 Millimeters",
-    "color": "Black"
+    "value": 3,
+    "cfm": 68.5,
+    "rpm": 2150,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14284,
@@ -23777,7 +23664,12 @@ export const PARTS = [
     "pwm": true,
     "fans_inc": 5,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 56.3,
+    "rpm": 3000,
+    "noise": 39.5,
+    "rgb": false,
+    "pack": 5
   },
   {
     "id": 14285,
@@ -23807,7 +23699,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 25.1,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 70.7,
+    "rpm": 1700,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14286,
@@ -23835,7 +23731,12 @@ export const PARTS = [
     "fans_inc": 3,
     "noise": 32.1,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 44,
+    "rpm": 1200,
+    "pwm": false,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14287,
@@ -23864,7 +23765,12 @@ export const PARTS = [
     "weight": "183 Grams",
     "pwm": true,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 56.3,
+    "rpm": 3000,
+    "noise": 39.5,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14288,
@@ -23894,7 +23800,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 22.6,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 60.1,
+    "rpm": 2000,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14289,
@@ -23925,7 +23835,12 @@ export const PARTS = [
     "fans_inc": 5,
     "noise": 0.3,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 53,
+    "rpm": 1800,
+    "pwm": true,
+    "rgb": false,
+    "pack": 5
   },
   {
     "id": 14290,
@@ -23958,7 +23873,11 @@ export const PARTS = [
     "noise": 36,
     "size": "120mm",
     "color": "Black",
-    "value": 16
+    "value": 16,
+    "cfm": 55.1,
+    "rpm": 1800,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14291,
@@ -23988,7 +23907,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 0.5,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 66.17,
+    "rpm": 1550,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14292,
@@ -24021,7 +23944,11 @@ export const PARTS = [
     "noise": 25.6,
     "size": "120mm",
     "color": "Black",
-    "value": 13
+    "value": 13,
+    "cfm": 66.17,
+    "rpm": 1550,
+    "rgbType": "ARGB",
+    "pack": 5
   },
   {
     "id": 14293,
@@ -24050,37 +23977,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 22.5,
     "size": "120mm",
-    "color": "Black"
-  },
-  {
-    "id": 14294,
-    "n": "Commander Duo iCUE Link RGB Lighting and PWM ARGB Fan Controller â€“ Control 12 Daisy-Chained PWM Fans, Two Flexible ...",
-    "img": "https://m.media-amazon.com/images/I/81X4IXjHjDL._AC_SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "Corsair",
-    "pr": 34.99,
-    "msrp": 39.99,
-    "r": 4.4,
-    "asin": "B0FJ2TTTQ5",
-    "reviews": 239,
-    "deals": {
-      "amazon": {
-        "price": 34.99,
-        "url": "https://www.amazon.com/dp/B0FJ2TTTQ5?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "discount": 13,
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/81XuEIm9aNL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/91KsspnT4OL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/91tN2oRAFKL._AC_SL1500_.jpg"
-    ],
-    "weight": "1.86 ounces",
-    "rgb": true,
-    "pwm": true,
-    "color": "RGB",
-    "value": 6
+    "color": "Black",
+    "cfm": 60.1,
+    "rpm": 2000,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14295,
@@ -24109,7 +24010,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 43.5,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 109.9,
+    "rpm": 3000,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14296,
@@ -24141,7 +24046,11 @@ export const PARTS = [
     "fans_inc": 3,
     "noise": 0.3,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 34,
+    "rpm": 1800,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14297,
@@ -24172,7 +24081,11 @@ export const PARTS = [
     "noise": 27.7,
     "size": "120mm",
     "color": "Black",
-    "value": 19
+    "value": 19,
+    "cfm": 55,
+    "rpm": 1500,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14298,
@@ -24202,7 +24115,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 25.5,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 40.6,
+    "rpm": 1600,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14299,
@@ -24233,7 +24150,12 @@ export const PARTS = [
     "pwm": true,
     "size": "120mm",
     "color": "RGB",
-    "value": 23
+    "value": 23,
+    "cfm": 56.3,
+    "rpm": 3000,
+    "noise": 39.5,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14300,
@@ -24261,7 +24183,12 @@ export const PARTS = [
     "weight": "0.58 Kilograms",
     "pwm": true,
     "noise": 22.5,
-    "color": "Black"
+    "color": "Black",
+    "size": 120,
+    "cfm": 60.1,
+    "rpm": 2000,
+    "rgb": false,
+    "pack": 2
   },
   {
     "id": 14301,
@@ -24294,7 +24221,11 @@ export const PARTS = [
     "noise": 28.2,
     "size": "120mm",
     "color": "Black",
-    "value": 9
+    "value": 9,
+    "cfm": 73.43,
+    "rpm": 2000,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14302,
@@ -24323,7 +24254,12 @@ export const PARTS = [
     "weight": "185 Grams",
     "pwm": true,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 56.3,
+    "rpm": 3000,
+    "noise": 39.5,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14303,
@@ -24356,7 +24292,11 @@ export const PARTS = [
     "noise": 0.08,
     "size": "120mm",
     "color": "RGB",
-    "value": 8
+    "value": 8,
+    "cfm": 56.3,
+    "rpm": 3000,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14304,
@@ -24388,7 +24328,12 @@ export const PARTS = [
     "fans_inc": 3,
     "size": "120mm",
     "color": "RGB",
-    "value": 8
+    "value": 8,
+    "cfm": 56.3,
+    "rpm": 3000,
+    "noise": 39.5,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14305,
@@ -24416,7 +24361,12 @@ export const PARTS = [
     "weight": "0.51 Kilograms",
     "pwm": true,
     "noise": 24.8,
-    "color": "Black"
+    "color": "Black",
+    "size": 140,
+    "cfm": 82.5,
+    "rpm": 1500,
+    "rgb": false,
+    "pack": 2
   },
   {
     "id": 14306,
@@ -24446,7 +24396,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 25.8,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 78.6,
+    "rpm": 1500,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14307,
@@ -24476,7 +24430,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 24.6,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 82.5,
+    "rpm": 1500,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14308,
@@ -24506,7 +24464,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 0.3,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 53,
+    "rpm": 1800,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14309,
@@ -24535,7 +24497,12 @@ export const PARTS = [
     "weight": "205 Grams",
     "pwm": true,
     "noise": 19.9,
-    "color": "Black"
+    "color": "Black",
+    "size": 92,
+    "cfm": 33.8,
+    "rpm": 2500,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14310,
@@ -24563,7 +24530,12 @@ export const PARTS = [
     "weight": "0.28 Kilograms",
     "pwm": true,
     "noise": 23.9,
-    "color": "Black"
+    "color": "Black",
+    "size": 120,
+    "cfm": 55.4,
+    "rpm": 1850,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14311,
@@ -24594,7 +24566,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 36.9,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 77.9,
+    "rpm": 3000,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14312,
@@ -24626,7 +24602,11 @@ export const PARTS = [
     "noise": 25.6,
     "size": "120mm",
     "color": "Black",
-    "value": 22
+    "value": 22,
+    "cfm": 66.17,
+    "rpm": 1550,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14313,
@@ -24663,7 +24643,12 @@ export const PARTS = [
     "noise": 37,
     "size": "120mm",
     "color": "Black",
-    "value": 0
+    "value": 0,
+    "cfm": 64,
+    "rpm": 2400,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14314,
@@ -24700,7 +24685,11 @@ export const PARTS = [
     "noise": 33.88,
     "size": "120mm",
     "color": "RGB",
-    "value": 13
+    "value": 13,
+    "cfm": 56.5,
+    "rpm": 1800,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14315,
@@ -24730,7 +24719,12 @@ export const PARTS = [
     "noise": 25.6,
     "size": "120mm",
     "color": "White",
-    "value": 21
+    "value": 21,
+    "cfm": 66.17,
+    "rpm": 1550,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14316,
@@ -24759,7 +24753,12 @@ export const PARTS = [
     "weight": "0.1 Kilograms",
     "pwm": true,
     "noise": 23.6,
-    "color": "Black"
+    "color": "Black",
+    "size": 92,
+    "cfm": 33.8,
+    "rpm": 2500,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14317,
@@ -24787,7 +24786,12 @@ export const PARTS = [
     "upc": "841501110467",
     "pwm": true,
     "noise": 23.9,
-    "color": "Black"
+    "color": "Black",
+    "size": 120,
+    "cfm": 55.4,
+    "rpm": 1850,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14318,
@@ -24822,7 +24826,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 36,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 55.1,
+    "rpm": 1800,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14319,
@@ -24852,7 +24860,12 @@ export const PARTS = [
     "fans_inc": 2,
     "noise": 23,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 50,
+    "rpm": 1200,
+    "pwm": false,
+    "rgb": false,
+    "pack": 2
   },
   {
     "id": 14320,
@@ -24886,7 +24899,11 @@ export const PARTS = [
     "noise": 28.2,
     "size": "120mm",
     "color": "Black",
-    "value": 11
+    "value": 11,
+    "cfm": 73.43,
+    "rpm": 2000,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14321,
@@ -24915,7 +24932,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 30.9,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 59,
+    "rpm": 2100,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14322,
@@ -24944,7 +24965,13 @@ export const PARTS = [
     "rgb": true,
     "noise": 29,
     "color": "Black",
-    "value": 7
+    "value": 7,
+    "size": 120,
+    "cfm": 61.3,
+    "rpm": 1900,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14323,
@@ -24970,7 +24997,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 25.5,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 59,
+    "rpm": 2100,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14324,
@@ -25002,7 +25033,11 @@ export const PARTS = [
     "noise": 29.2,
     "size": "120mm",
     "color": "Black",
-    "value": 6
+    "value": 6,
+    "cfm": 50,
+    "rpm": 2000,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14325,
@@ -25031,7 +25066,13 @@ export const PARTS = [
     "rgb": true,
     "noise": 32.2,
     "color": "Black",
-    "value": 0
+    "value": 0,
+    "size": 120,
+    "cfm": 61.3,
+    "rpm": 1900,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14326,
@@ -25069,7 +25110,11 @@ export const PARTS = [
     "noise": 34.6,
     "size": "120mm",
     "color": "RGB",
-    "value": 4
+    "value": 4,
+    "cfm": 55.1,
+    "rpm": 1800,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14327,
@@ -25100,7 +25145,12 @@ export const PARTS = [
     "pwm": true,
     "size": "140mm",
     "color": "Black",
-    "value": 20
+    "value": 20,
+    "cfm": 72.8,
+    "rpm": 2500,
+    "noise": 34.5,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14328,
@@ -25129,7 +25179,12 @@ export const PARTS = [
     "weight": "240 Grams",
     "pwm": true,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 72.8,
+    "rpm": 2500,
+    "noise": 34.5,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14329,
@@ -25158,7 +25213,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 24.8,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 82.5,
+    "rpm": 1500,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14330,
@@ -25191,7 +25250,11 @@ export const PARTS = [
     "noise": 23.2,
     "size": "120mm",
     "color": "Black",
-    "value": 9
+    "value": 9,
+    "cfm": 60,
+    "rpm": 1500,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14331,
@@ -25223,7 +25286,11 @@ export const PARTS = [
     "noise": 19,
     "size": "120mm",
     "color": "Black",
-    "value": 7
+    "value": 7,
+    "cfm": 55,
+    "rpm": 2000,
+    "rgbType": "ARGB",
+    "pack": 7
   },
   {
     "id": 14332,
@@ -25253,7 +25320,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 22.4,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 55,
+    "rpm": 1500,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14333,
@@ -25283,7 +25354,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 41.3,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 158.5,
+    "rpm": 3000,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14334,
@@ -25313,7 +25388,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 31.2,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 78.5,
+    "rpm": 2500,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14335,
@@ -25342,7 +25421,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 36.8,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 110.5,
+    "rpm": 2400,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14336,
@@ -25374,7 +25457,11 @@ export const PARTS = [
     "noise": 36,
     "size": "140mm",
     "color": "Black",
-    "value": 3
+    "value": 3,
+    "cfm": 68.9,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 14337,
@@ -25406,7 +25493,11 @@ export const PARTS = [
     "noise": 36,
     "size": "140mm",
     "color": "Black",
-    "value": 10
+    "value": 10,
+    "cfm": 68.9,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14338,
@@ -25443,7 +25534,11 @@ export const PARTS = [
     "noise": 36,
     "size": "120mm",
     "color": "Black",
-    "value": 6
+    "value": 6,
+    "cfm": 67.8,
+    "rpm": 2100,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14339,
@@ -25473,7 +25568,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 36,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 68.9,
+    "rpm": 1600,
+    "rgb": false,
+    "pack": 2
   },
   {
     "id": 14340,
@@ -25504,7 +25603,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 0.1,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 119,
+    "rpm": 2800,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14341,
@@ -25533,7 +25636,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 25.6,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 66.17,
+    "rpm": 1550,
+    "rgb": false,
+    "pack": 5
   },
   {
     "id": 14342,
@@ -25560,7 +25667,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 30.9,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 59,
+    "rpm": 2100,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14343,
@@ -25625,7 +25736,11 @@ export const PARTS = [
     "noise": 23.2,
     "size": "120mm",
     "color": "Black",
-    "value": 16
+    "value": 16,
+    "cfm": 66.17,
+    "rpm": 1550,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14345,
@@ -25656,7 +25771,11 @@ export const PARTS = [
     "noise": 29,
     "size": "120mm",
     "color": "RGB",
-    "value": 5
+    "value": 5,
+    "cfm": 50,
+    "rpm": 2000,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14346,
@@ -25685,7 +25804,12 @@ export const PARTS = [
     "weight": "100 Grams",
     "noise": 25.6,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 66.17,
+    "rpm": 1550,
+    "pwm": true,
+    "rgb": false,
+    "pack": 5
   },
   {
     "id": 14347,
@@ -25714,7 +25838,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 24.8,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 82.5,
+    "rpm": 1500,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14348,
@@ -25743,7 +25871,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 21.9,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 51.7,
+    "rpm": 1400,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14349,
@@ -25772,7 +25904,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 30.5,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 51.7,
+    "rpm": 1400,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14350,
@@ -25799,7 +25935,12 @@ export const PARTS = [
     ],
     "pwm": true,
     "noise": 24.8,
-    "color": "Black"
+    "color": "Black",
+    "size": 140,
+    "cfm": 82.5,
+    "rpm": 1500,
+    "rgb": false,
+    "pack": 2
   },
   {
     "id": 14351,
@@ -25830,7 +25971,11 @@ export const PARTS = [
     "noise": 29.2,
     "size": "120mm",
     "color": "Black",
-    "value": 5
+    "value": 5,
+    "cfm": 50,
+    "rpm": 2000,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14352,
@@ -25859,7 +26004,12 @@ export const PARTS = [
     "weight": "242 Grams",
     "pwm": true,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 72.8,
+    "rpm": 2500,
+    "noise": 34.5,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14353,
@@ -25889,7 +26039,13 @@ export const PARTS = [
     "rgb": true,
     "noise": 33,
     "color": "Black",
-    "value": 0
+    "value": 0,
+    "size": 120,
+    "cfm": 68.5,
+    "rpm": 2600,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14354,
@@ -25918,7 +26074,13 @@ export const PARTS = [
     "rgb": true,
     "noise": 31,
     "color": "Black",
-    "value": 4
+    "value": 4,
+    "size": 120,
+    "cfm": 68.5,
+    "rpm": 2600,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14355,
@@ -25950,7 +26112,12 @@ export const PARTS = [
     "fans_inc": 3,
     "size": "140mm",
     "color": "RGB",
-    "value": 7
+    "value": 7,
+    "cfm": 72.8,
+    "rpm": 2500,
+    "noise": 34.5,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14356,
@@ -25983,7 +26150,11 @@ export const PARTS = [
     "noise": 30,
     "size": "120mm",
     "color": "Black",
-    "value": 6
+    "value": 6,
+    "cfm": 47,
+    "rpm": 1800,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14357,
@@ -26014,7 +26185,12 @@ export const PARTS = [
     "pwm": true,
     "size": "120mm",
     "color": "White",
-    "value": 21
+    "value": 21,
+    "cfm": 56.3,
+    "rpm": 3000,
+    "noise": 39.5,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14358,
@@ -26044,7 +26220,11 @@ export const PARTS = [
     "noise": 30,
     "size": "120mm",
     "color": "Black",
-    "value": 3
+    "value": 3,
+    "cfm": 68,
+    "rpm": 1850,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14359,
@@ -26075,7 +26255,12 @@ export const PARTS = [
     "pwm": true,
     "fans_inc": 5,
     "noise": 0.3,
-    "color": "Black"
+    "color": "Black",
+    "size": 80,
+    "cfm": 31,
+    "rpm": 3000,
+    "rgb": false,
+    "pack": 5
   },
   {
     "id": 14360,
@@ -26106,7 +26291,12 @@ export const PARTS = [
     "noise": 31,
     "size": "120mm",
     "color": "RGB",
-    "value": 1
+    "value": 1,
+    "cfm": 58.54,
+    "rpm": 1900,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14361,
@@ -26139,7 +26329,11 @@ export const PARTS = [
     "noise": 0.08,
     "size": "120mm",
     "color": "White",
-    "value": 8
+    "value": 8,
+    "cfm": 56.3,
+    "rpm": 3000,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14362,
@@ -26172,7 +26366,11 @@ export const PARTS = [
     "noise": 26.4,
     "size": "140mm",
     "color": "Black",
-    "value": 15
+    "value": 15,
+    "cfm": 73.73,
+    "rpm": 1500,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14363,
@@ -26201,7 +26399,12 @@ export const PARTS = [
     "weight": "185 Grams",
     "pwm": true,
     "size": "120mm",
-    "color": "White"
+    "color": "White",
+    "cfm": 56.3,
+    "rpm": 3000,
+    "noise": 39.5,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14364,
@@ -26234,31 +26437,11 @@ export const PARTS = [
     "noise": 0.08,
     "size": "140mm",
     "color": "RGB",
-    "value": 7
-  },
-  {
-    "id": 14365,
-    "n": "UNI Fan SL-Infinity Fan Hub Controller – 4-Pin PWM & 5V 3-Pin ARGB Control Box, Compatible with SL-INF 120/140 Series...",
-    "img": "https://m.media-amazon.com/images/I/61g4a2F271L._SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "Lian Li",
-    "pr": 33.99,
-    "msrp": 33.99,
-    "r": 4.2,
-    "asin": "B0D5JPX1LJ",
-    "reviews": 67,
-    "deals": {
-      "amazon": {
-        "price": 33.99,
-        "url": "https://www.amazon.com/dp/B0D5JPX1LJ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "upc": "840353043558",
-    "rgb": true,
-    "pwm": true,
-    "color": "Black",
-    "value": 7
+    "value": 7,
+    "cfm": 72.8,
+    "rpm": 2500,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14366,
@@ -26290,7 +26473,11 @@ export const PARTS = [
     "noise": 29,
     "size": "120mm",
     "color": "RGB",
-    "value": 17
+    "value": 17,
+    "cfm": 55,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14367,
@@ -26323,7 +26510,11 @@ export const PARTS = [
     "noise": 29,
     "size": "120mm",
     "color": "Black",
-    "value": 12
+    "value": 12,
+    "cfm": 55,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14368,
@@ -26352,7 +26543,13 @@ export const PARTS = [
     "rgb": true,
     "noise": 20,
     "color": "Black",
-    "value": 1
+    "value": 1,
+    "size": 120,
+    "cfm": 61.3,
+    "rpm": 1900,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14369,
@@ -26380,7 +26577,12 @@ export const PARTS = [
     "upc": "809395424008812348012641",
     "noise": 23,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 55,
+    "rpm": 1000,
+    "pwm": false,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14370,
@@ -26410,7 +26612,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 22.4,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 55,
+    "rpm": 1500,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14371,
@@ -26440,7 +26646,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 19.8,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 54.3,
+    "rpm": 1300,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14372,
@@ -26470,7 +26680,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 17.8,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 63.3,
+    "rpm": 1200,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14373,
@@ -26503,7 +26717,11 @@ export const PARTS = [
     "noise": 0.3,
     "size": "120mm",
     "color": "RGB",
-    "value": 4
+    "value": 4,
+    "cfm": 48.8,
+    "rpm": 2000,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14374,
@@ -26534,7 +26752,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 18.9,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 55.5,
+    "rpm": 1600,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14375,
@@ -26570,7 +26792,12 @@ export const PARTS = [
     "noise": 34.48,
     "size": "140mm",
     "color": "White",
-    "value": 12
+    "value": 12,
+    "cfm": 50,
+    "rpm": 1800,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14376,
@@ -26603,7 +26830,11 @@ export const PARTS = [
     "noise": 0.3,
     "size": "120mm",
     "color": "RGB",
-    "value": 19
+    "value": 19,
+    "cfm": 48.8,
+    "rpm": 2000,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14377,
@@ -26634,7 +26865,12 @@ export const PARTS = [
     "noise": 37,
     "size": "140mm",
     "color": "Black",
-    "value": 2
+    "value": 2,
+    "cfm": 77,
+    "rpm": 2000,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14378,
@@ -26663,7 +26899,12 @@ export const PARTS = [
     "weight": "229 Grams",
     "noise": 3,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 72.8,
+    "rpm": 1700,
+    "pwm": false,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14379,
@@ -26694,7 +26935,11 @@ export const PARTS = [
     "fans_inc": 5,
     "noise": 3,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 72.8,
+    "rpm": 1700,
+    "rgb": false,
+    "pack": 5
   },
   {
     "id": 14380,
@@ -26723,7 +26968,12 @@ export const PARTS = [
     "pwm": true,
     "noise": 31,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 63.8,
+    "rpm": 2100,
+    "rgb": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14381,
@@ -26752,7 +27002,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 21.4,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 60.1,
+    "rpm": 2000,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14382,
@@ -26784,7 +27038,11 @@ export const PARTS = [
     "noise": 38.3,
     "size": "140mm",
     "color": "RGB",
-    "value": 3
+    "value": 3,
+    "cfm": 74.9,
+    "rpm": 2000,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14383,
@@ -26817,7 +27075,11 @@ export const PARTS = [
     "noise": 27,
     "size": "120mm",
     "color": "Black",
-    "value": 16
+    "value": 16,
+    "cfm": 47.2,
+    "rpm": 1800,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14384,
@@ -26845,44 +27107,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 21.9,
     "size": "140mm",
-    "color": "Black"
-  },
-  {
-    "id": 14385,
-    "n": "TH120 ARGB Sync V2 CPU Liquid Cooler/AlO Liquid Cooling/Fan 120mm*1/PWM 500~2000 RPM/Mirror Waterblock/MB ARGB Sync C...",
-    "img": "https://m.media-amazon.com/images/I/61az54iPHML._SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "Thermaltake",
-    "pr": 79.99,
-    "msrp": 79.99,
-    "r": 4.4,
-    "asin": "B0CCXNXVFC",
-    "reviews": 277,
-    "deals": {
-      "amazon": {
-        "price": 79.99,
-        "url": "https://www.amazon.com/dp/B0CCXNXVFC?tag=tiereduptech-20",
-        "inStock": true
-      },
-      "bestbuy": {
-        "price": 79.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569193&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6569193.p%3FskuId%3D6569193",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/81sypysFLDL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/81AZcK5kDZL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/81pew054iUL._SL1500_.jpg"
-    ],
-    "upc": "841163087893",
-    "weight": "2.6 Pounds",
-    "rgb": true,
-    "pwm": true,
-    "noise": 25.8,
-    "size": "120mm",
     "color": "Black",
-    "value": 1
+    "cfm": 78.8,
+    "rpm": 1900,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14386,
@@ -26914,7 +27143,11 @@ export const PARTS = [
     "noise": 23.2,
     "size": "120mm",
     "color": "Black",
-    "value": 22
+    "value": 22,
+    "cfm": 66.17,
+    "rpm": 1550,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14387,
@@ -26944,7 +27177,11 @@ export const PARTS = [
     "noise": 25,
     "size": "140mm",
     "color": "Black",
-    "value": 13
+    "value": 13,
+    "cfm": 65,
+    "rpm": 1500,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 14388,
@@ -26976,7 +27213,11 @@ export const PARTS = [
     "noise": 25.6,
     "size": "120mm",
     "color": "Black",
-    "value": 14
+    "value": 14,
+    "cfm": 66.17,
+    "rpm": 1550,
+    "rgbType": "ARGB",
+    "pack": 5
   },
   {
     "id": 14389,
@@ -27005,7 +27246,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 26.4,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 73.73,
+    "rpm": 1500,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14390,
@@ -27035,7 +27280,11 @@ export const PARTS = [
     "noise": 29,
     "size": "120mm",
     "color": "Black",
-    "value": 4
+    "value": 4,
+    "cfm": 71,
+    "rpm": 1850,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14391,
@@ -27067,7 +27316,11 @@ export const PARTS = [
     "noise": 23,
     "size": "120mm",
     "color": "Black",
-    "value": 30
+    "value": 30,
+    "cfm": 52,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14392,
@@ -27098,7 +27351,11 @@ export const PARTS = [
     "noise": 25,
     "size": "120mm",
     "color": "RGB",
-    "value": 7
+    "value": 7,
+    "cfm": 55,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 5
   },
   {
     "id": 14393,
@@ -27127,7 +27384,12 @@ export const PARTS = [
     "weight": "170 Grams",
     "noise": 25.5,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 40.6,
+    "rpm": 1600,
+    "pwm": true,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14394,
@@ -27159,7 +27421,11 @@ export const PARTS = [
     "noise": 0.08,
     "size": "120mm",
     "color": "RGB",
-    "value": 22
+    "value": 22,
+    "cfm": 56.3,
+    "rpm": 3000,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14395,
@@ -27190,7 +27456,12 @@ export const PARTS = [
     "pwm": true,
     "size": "140mm",
     "color": "White",
-    "value": 18
+    "value": 18,
+    "cfm": 72.8,
+    "rpm": 2500,
+    "noise": 34.5,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14396,
@@ -27219,7 +27490,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 26.4,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 73.73,
+    "rpm": 1500,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14397,
@@ -27250,34 +27525,11 @@ export const PARTS = [
     "noise": 26.4,
     "size": "140mm",
     "color": "Black",
-    "value": 16
-  },
-  {
-    "id": 14398,
-    "n": "NV-FS1, Desk, Room and Multi-Purpose Fan Set with Award-Winning NF-A12x25 120mm Fan",
-    "img": "https://m.media-amazon.com/images/I/71Y4MQ1IL6L._SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "Noctua",
-    "pr": 109.95,
-    "msrp": 109.95,
-    "r": 4.1,
-    "asin": "B0D179T54Q",
-    "reviews": 76,
-    "deals": {
-      "amazon": {
-        "price": 109.95,
-        "url": "https://www.amazon.com/dp/B0D179T54Q?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71-juyAHVkL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71lJImqeMDL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/715Z+MIlZAL._SL1500_.jpg"
-    ],
-    "weight": "750 Grams",
-    "size": "120mm",
-    "color": "Black"
+    "value": 16,
+    "cfm": 73.73,
+    "rpm": 1500,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14399,
@@ -27315,7 +27567,11 @@ export const PARTS = [
     "noise": 25.2,
     "size": "120mm",
     "color": "Black",
-    "value": 8
+    "value": 8,
+    "cfm": 40,
+    "rpm": 1500,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14400,
@@ -27346,7 +27602,11 @@ export const PARTS = [
     "noise": 30,
     "size": "120mm",
     "color": "RGB",
-    "value": 3
+    "value": 3,
+    "cfm": 58.5,
+    "rpm": 1800,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14401,
@@ -27375,7 +27635,12 @@ export const PARTS = [
     "weight": "185 Grams",
     "pwm": true,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 56.3,
+    "rpm": 3000,
+    "noise": 39.5,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14402,
@@ -27405,37 +27670,12 @@ export const PARTS = [
     "noise": 28.5,
     "size": "120mm",
     "color": "Black",
-    "value": 1
-  },
-  {
-    "id": 14403,
-    "n": "Pure Loop 3 360mm All-in-One Water Cooling for Overclocked AMD/Intel Systems, 3X Pure Wings 3 120mm PWM High-Speed Fa...",
-    "img": "https://m.media-amazon.com/images/I/61C-aKmrrVL._SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "be quiet!",
-    "pr": 99.9,
-    "msrp": 114.9,
-    "r": 4.5,
-    "asin": "B0FLWMYX2F",
-    "reviews": 34,
-    "deals": {
-      "amazon": {
-        "price": 99.9,
-        "url": "https://www.amazon.com/dp/B0FLWMYX2F?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "discount": 13,
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/61ySNmScsbL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71rrgWgyD6L._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71CnTWnUx6L._SL1500_.jpg"
-    ],
+    "value": 1,
+    "cfm": 61.3,
+    "rpm": 1900,
     "pwm": true,
-    "fans_inc": 3,
-    "noise": 37.2,
-    "size": "120mm",
-    "color": "Black"
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14404,
@@ -27466,7 +27706,11 @@ export const PARTS = [
     "fans_inc": 3,
     "noise": 0.08,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 72.8,
+    "rpm": 2500,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14405,
@@ -27496,7 +27740,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 0.08,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 56.3,
+    "rpm": 3000,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14406,
@@ -27528,7 +27776,12 @@ export const PARTS = [
     "pwm": true,
     "noise": 23,
     "color": "Black",
-    "value": 22
+    "value": 22,
+    "size": 120,
+    "cfm": 58.54,
+    "rpm": 2000,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14407,
@@ -27558,7 +27811,11 @@ export const PARTS = [
     "noise": 28,
     "size": "120mm",
     "color": "Black",
-    "value": 10
+    "value": 10,
+    "cfm": 50,
+    "rpm": 1500,
+    "rgbType": "ARGB",
+    "pack": 6
   },
   {
     "id": 14408,
@@ -27588,7 +27845,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 26.4,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 73.73,
+    "rpm": 1500,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14409,
@@ -27620,7 +27881,11 @@ export const PARTS = [
     "noise": 24.8,
     "size": "120mm",
     "color": "RGB",
-    "value": 10
+    "value": 10,
+    "cfm": 43.25,
+    "rpm": 1500,
+    "rgbType": "RGB",
+    "pack": 1
   },
   {
     "id": 14410,
@@ -27652,7 +27917,11 @@ export const PARTS = [
     "noise": 26.5,
     "size": "120mm",
     "color": "RGB",
-    "value": 13
+    "value": 13,
+    "cfm": 52,
+    "rpm": 1800,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14411,
@@ -27715,7 +27984,11 @@ export const PARTS = [
     "noise": 23.3,
     "size": "140mm",
     "color": "Black",
-    "value": 2
+    "value": 2,
+    "cfm": 71.4,
+    "rpm": 1700,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14413,
@@ -27747,7 +28020,11 @@ export const PARTS = [
     "noise": 23.3,
     "size": "140mm",
     "color": "White",
-    "value": 3
+    "value": 3,
+    "cfm": 71.4,
+    "rpm": 1700,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14414,
@@ -27779,7 +28056,11 @@ export const PARTS = [
     "noise": 31,
     "size": "140mm",
     "color": "Black",
-    "value": 11
+    "value": 11,
+    "cfm": 98.6,
+    "rpm": 2500,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14415,
@@ -27809,7 +28090,12 @@ export const PARTS = [
     "noise": 17.6,
     "size": "120mm",
     "color": "RGB",
-    "value": 13
+    "value": 13,
+    "cfm": 44,
+    "rpm": 1200,
+    "pwm": false,
+    "rgbType": "RGB",
+    "pack": 3
   },
   {
     "id": 14416,
@@ -27933,7 +28219,11 @@ export const PARTS = [
     "noise": 18,
     "size": "120mm",
     "color": "White",
-    "value": 7
+    "value": 7,
+    "cfm": 52,
+    "rpm": 1800,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14420,
@@ -27963,7 +28253,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 17.8,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 63.3,
+    "rpm": 1200,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14421,
@@ -27993,7 +28287,13 @@ export const PARTS = [
     "rgb": true,
     "noise": 27.5,
     "color": "Black",
-    "value": 9
+    "value": 9,
+    "size": 140,
+    "cfm": 50,
+    "rpm": 1800,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14422,
@@ -28023,7 +28323,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 19.6,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 64.9,
+    "rpm": 1200,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14423,
@@ -28053,7 +28357,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 24.6,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 78.7,
+    "rpm": 1500,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14424,
@@ -28083,7 +28391,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 14.9,
     "size": "140mm",
-    "color": "White"
+    "color": "White",
+    "cfm": 61.2,
+    "rpm": 900,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14425,
@@ -28112,7 +28424,12 @@ export const PARTS = [
     "weight": "0.1 Kilograms",
     "noise": 14.7,
     "size": "140mm",
-    "color": "White"
+    "color": "White",
+    "cfm": 61.2,
+    "rpm": 900,
+    "pwm": true,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14426,
@@ -28141,7 +28458,12 @@ export const PARTS = [
     "weight": "0.7 Pounds",
     "noise": 19.6,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 64.9,
+    "rpm": 1200,
+    "pwm": false,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14427,
@@ -28172,7 +28494,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 0.3,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 53,
+    "rpm": 1800,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14428,
@@ -28203,7 +28529,11 @@ export const PARTS = [
     "noise": 33.5,
     "size": "140mm",
     "color": "RGB",
-    "value": 10
+    "value": 10,
+    "cfm": 65,
+    "rpm": 1500,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14429,
@@ -28233,7 +28563,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 19.2,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 78.7,
+    "rpm": 1500,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14430,
@@ -28298,7 +28632,11 @@ export const PARTS = [
     "noise": 37.7,
     "size": "120mm",
     "color": "RGB",
-    "value": 5
+    "value": 5,
+    "cfm": 52,
+    "rpm": 2000,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14432,
@@ -28366,7 +28704,11 @@ export const PARTS = [
     "noise": 36,
     "size": "120mm",
     "color": "RGB",
-    "value": 7
+    "value": 7,
+    "cfm": 52,
+    "rpm": 2000,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14434,
@@ -28490,35 +28832,6 @@ export const PARTS = [
     "value": 12
   },
   {
-    "id": 14438,
-    "n": "GA II Trinity SL-INF 360MM - AIO Liquid Cooler -Pre-Installed ARGB Daisy-chainable Radiator Fans or UNI Fan SL-INF Fa...",
-    "img": "https://m.media-amazon.com/images/I/61GMvzXd7sL._AC_SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "Lian Li",
-    "pr": 189.99,
-    "msrp": 189.99,
-    "r": 4.3,
-    "asin": "B0CDF6GYM1",
-    "reviews": 622,
-    "deals": {
-      "amazon": {
-        "price": 189.99,
-        "url": "https://www.amazon.com/dp/B0CDF6GYM1?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/61N5beI9wnL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71+VFVysjeL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/716UQwAQoWL._AC_SL1500_.jpg"
-    ],
-    "upc": "840353044654",
-    "rgb": true,
-    "noise": 35,
-    "color": "Black",
-    "value": 0
-  },
-  {
     "id": 14439,
     "n": "Light Wings LX 140mm PWM Fan, Illuminated hub, Frosted Fan Blades",
     "img": "https://m.media-amazon.com/images/I/611j0-d7u8L._SL1200_.jpg",
@@ -28546,7 +28859,12 @@ export const PARTS = [
     "pwm": true,
     "noise": 20.6,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 71.4,
+    "rpm": 1700,
+    "rgb": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14440,
@@ -28604,7 +28922,12 @@ export const PARTS = [
     "pwm": true,
     "noise": 30.9,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 63.8,
+    "rpm": 2100,
+    "rgb": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14442,
@@ -28636,7 +28959,12 @@ export const PARTS = [
     "noise": 25,
     "size": "120mm",
     "color": "Black",
-    "value": 1
+    "value": 1,
+    "cfm": 56,
+    "rpm": 1900,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14443,
@@ -28666,7 +28994,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 22.5,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 63,
+    "rpm": 1800,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14444,
@@ -28697,7 +29029,12 @@ export const PARTS = [
     "noise": 25,
     "size": "120mm",
     "color": "RGB",
-    "value": 7
+    "value": 7,
+    "cfm": 44,
+    "rpm": 1200,
+    "pwm": false,
+    "rgbType": "RGB",
+    "pack": 5
   },
   {
     "id": 14445,
@@ -28733,7 +29070,12 @@ export const PARTS = [
     "noise": 32.5,
     "size": "120mm",
     "color": "Black",
-    "value": 1
+    "value": 1,
+    "cfm": 54.7,
+    "rpm": 2000,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14446,
@@ -28764,7 +29106,12 @@ export const PARTS = [
     "noise": 29,
     "size": "120mm",
     "color": "White",
-    "value": 1
+    "value": 1,
+    "cfm": 61.3,
+    "rpm": 1900,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14447,
@@ -28940,7 +29287,12 @@ export const PARTS = [
     "weight": "176 Grams",
     "noise": 29.8,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 50,
+    "rpm": 1000,
+    "pwm": true,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14453,
@@ -28972,7 +29324,11 @@ export const PARTS = [
     "noise": 36,
     "size": "140mm",
     "color": "RGB",
-    "value": 5
+    "value": 5,
+    "cfm": 50,
+    "rpm": 1800,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 14454,
@@ -29004,7 +29360,11 @@ export const PARTS = [
     "noise": 18,
     "size": "140mm",
     "color": "White",
-    "value": 3
+    "value": 3,
+    "cfm": 68,
+    "rpm": 1400,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 14455,
@@ -29034,7 +29394,12 @@ export const PARTS = [
     "pwm": true,
     "size": "120mm",
     "color": "Black",
-    "value": 3
+    "value": 3,
+    "cfm": 84,
+    "rpm": 2100,
+    "noise": 35,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14456,
@@ -29093,37 +29458,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 30.5,
     "size": "140mm",
-    "color": "White"
-  },
-  {
-    "id": 14458,
-    "n": "Light Loop 360mm | All in One Water Cooling System | Quiet CPU Cooler | ARGB CPU Cooling Block | Customizable ARGB wi...",
-    "img": "https://m.media-amazon.com/images/I/51dYiLJ2TZL._SL1200_.jpg",
-    "c": "CaseFan",
-    "b": "be quiet!",
-    "pr": 123.9,
-    "msrp": 144.9,
-    "r": 4.8,
-    "asin": "B0DDR5NNFP",
-    "reviews": 313,
-    "deals": {
-      "amazon": {
-        "price": 123.9,
-        "url": "https://www.amazon.com/dp/B0DDR5NNFP?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "discount": 14,
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71kXUWK+yVL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61JAixUUDDL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/51csG+ikbGL._SL1500_.jpg"
-    ],
-    "weight": "1.5 Kilograms",
-    "rgb": true,
-    "noise": 36.8,
-    "color": "Black",
-    "value": 0
+    "color": "White",
+    "cfm": 78.8,
+    "rpm": 1900,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14459,
@@ -29152,7 +29491,11 @@ export const PARTS = [
     "fans_inc": 3,
     "noise": 28,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 75,
+    "rpm": 2200,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14460,
@@ -29179,7 +29522,12 @@ export const PARTS = [
     ],
     "pwm": true,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 55,
+    "rpm": 1500,
+    "noise": 25,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14461,
@@ -29210,7 +29558,12 @@ export const PARTS = [
     "noise": 30.5,
     "size": "140mm",
     "color": "White",
-    "value": 5
+    "value": 5,
+    "cfm": 60.93,
+    "rpm": 1500,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 14462,
@@ -29241,7 +29594,11 @@ export const PARTS = [
     "noise": 26.4,
     "size": "140mm",
     "color": "Black",
-    "value": 34
+    "value": 34,
+    "cfm": 73.73,
+    "rpm": 1500,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14463,
@@ -29271,7 +29628,11 @@ export const PARTS = [
     "noise": 25,
     "size": "140mm",
     "color": "Black",
-    "value": 5
+    "value": 5,
+    "cfm": 65,
+    "rpm": 1500,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14464,
@@ -29328,7 +29689,14 @@ export const PARTS = [
     ],
     "upc": "840353043398",
     "noise": 29.2,
-    "color": "Black"
+    "color": "Black",
+    "size": 120,
+    "cfm": 58.54,
+    "rpm": 1900,
+    "pwm": true,
+    "rgb": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14466,
@@ -29359,7 +29727,12 @@ export const PARTS = [
     "noise": 20,
     "size": "120mm",
     "color": "RGB",
-    "value": 17
+    "value": 17,
+    "cfm": 44,
+    "rpm": 1200,
+    "pwm": false,
+    "rgbType": "RGB",
+    "pack": 3
   },
   {
     "id": 14467,
@@ -29388,7 +29761,12 @@ export const PARTS = [
     "weight": "13.47 Ounces",
     "noise": 46,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 95,
+    "rpm": 3000,
+    "pwm": false,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14468,
@@ -29421,7 +29799,11 @@ export const PARTS = [
     "noise": 25.6,
     "size": "120mm",
     "color": "Black",
-    "value": 21
+    "value": 21,
+    "cfm": 66.17,
+    "rpm": 1550,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14469,
@@ -29449,7 +29831,13 @@ export const PARTS = [
     ],
     "weight": "300 Grams",
     "noise": 32.1,
-    "color": "White"
+    "color": "White",
+    "size": 120,
+    "cfm": 65.8,
+    "rpm": 2200,
+    "pwm": true,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14470,
@@ -29480,7 +29868,12 @@ export const PARTS = [
     "noise": 29,
     "size": "120mm",
     "color": "Black",
-    "value": 8
+    "value": 8,
+    "cfm": 61.3,
+    "rpm": 1900,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14471,
@@ -29511,7 +29904,11 @@ export const PARTS = [
     "noise": 30.4,
     "size": "120mm",
     "color": "Black",
-    "value": 5
+    "value": 5,
+    "cfm": 50,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14472,
@@ -29542,35 +29939,11 @@ export const PARTS = [
     "noise": 29,
     "size": "120mm",
     "color": "RGB",
-    "value": 30
-  },
-  {
-    "id": 14473,
-    "n": "2Packs Motor Cooling Fan,30mm ESC Cooling Fan 28000RPM RC Model HeatSink Fan for 1/8 1/10 1/12 Scale RC Car Truck 540...",
-    "img": "https://m.media-amazon.com/images/I/71Gg8oogHqL._SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "SHENZHEN SURPASS TECH CO.,LTD",
-    "pr": 25.19,
-    "msrp": 27.99,
-    "r": 4.7,
-    "asin": "B0F8NGYGGG",
-    "reviews": 194,
-    "deals": {
-      "amazon": {
-        "price": 25.19,
-        "url": "https://www.amazon.com/dp/B0F8NGYGGG?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "discount": 10,
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71ToMo+OIKL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/719s09+C6dL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71IDyiz9LrL._SL1500_.jpg"
-    ],
-    "upc": "768365211614",
-    "noise": 20,
-    "color": "Black"
+    "value": 30,
+    "cfm": 55,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14474,
@@ -29620,34 +29993,14 @@ export const PARTS = [
     },
     "upc": "840353042612",
     "noise": 15,
-    "color": "Black"
-  },
-  {
-    "id": 14476,
-    "n": "Left and Right Side CPU Cooling Fan Assembly for Apple MacBook Pro 15\" A1286 (2008, 2009, 2010",
-    "img": "https://m.media-amazon.com/images/I/61Jp5jv9iSL._AC_SL1001_.jpg",
-    "c": "CaseFan",
-    "b": "MG62090V1-Q030-S99",
-    "pr": 22.99,
-    "msrp": 22.99,
-    "r": 4.3,
-    "asin": "B01KI1NJEE",
-    "reviews": 168,
-    "deals": {
-      "amazon": {
-        "price": 22.99,
-        "url": "https://www.amazon.com/dp/B01KI1NJEE?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/51R0fL3N2KL._AC_SL1001_.jpg",
-      "https://m.media-amazon.com/images/I/51w62WX52IL._AC_SL1001_.jpg",
-      "https://m.media-amazon.com/images/I/510wodu0bPL._AC_SL1001_.jpg"
-    ],
-    "upc": "707870737899",
-    "noise": 20,
-    "color": "Black"
+    "color": "Black",
+    "size": 120,
+    "cfm": 61.3,
+    "rpm": 1900,
+    "pwm": true,
+    "rgb": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14477,
@@ -29677,7 +30030,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 39.9,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 66,
+    "rpm": 2000,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14478,
@@ -29708,36 +30065,11 @@ export const PARTS = [
     "fans_inc": 3,
     "noise": 39.9,
     "size": "120mm",
-    "color": "Black"
-  },
-  {
-    "id": 14479,
-    "n": "CR-1200 RGB 92mm CPU Cooler RGB PC Fan for Intel i3/i5 and AMD CPUs Cooling Efficient Processors, high Cooling Potent...",
-    "img": "https://m.media-amazon.com/images/I/71KGxh--X7L._SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "Jonsbo",
-    "pr": 14.99,
-    "msrp": 16.99,
-    "r": 4.2,
-    "asin": "B08DP1Y9GJ",
-    "reviews": 131,
-    "deals": {
-      "amazon": {
-        "price": 14.99,
-        "url": "https://www.amazon.com/dp/B08DP1Y9GJ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "discount": 12,
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71CaieF0EUL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/712oLoSWOZL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71H9V4dU5xL._SL1500_.jpg"
-    ],
-    "weight": "310 Grams",
-    "rgb": true,
-    "color": "RGB",
-    "value": 19
+    "color": "Black",
+    "cfm": 66,
+    "rpm": 2000,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14480,
@@ -29767,7 +30099,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 39.9,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 80,
+    "rpm": 1800,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14481,
@@ -29797,7 +30133,11 @@ export const PARTS = [
     "noise": 29,
     "size": "140mm",
     "color": "Black",
-    "value": 15
+    "value": 15,
+    "cfm": 68,
+    "rpm": 1800,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14482,
@@ -29883,7 +30223,12 @@ export const PARTS = [
     "pwm": true,
     "size": "140mm",
     "color": "RGB",
-    "value": 20
+    "value": 20,
+    "cfm": 70,
+    "rpm": 1600,
+    "noise": 28,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14485,
@@ -29915,7 +30260,12 @@ export const PARTS = [
     "fans_inc": 3,
     "size": "140mm",
     "color": "RGB",
-    "value": 4
+    "value": 4,
+    "cfm": 70,
+    "rpm": 1600,
+    "noise": 28,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14486,
@@ -29944,7 +30294,12 @@ export const PARTS = [
     "pwm": true,
     "noise": 26.4,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 73.73,
+    "rpm": 1500,
+    "rgb": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14487,
@@ -29972,7 +30327,12 @@ export const PARTS = [
     "fans_inc": 3,
     "noise": 27.2,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 55,
+    "rpm": 1500,
+    "pwm": true,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14488,
@@ -30004,7 +30364,11 @@ export const PARTS = [
     "noise": 29.2,
     "size": "120mm",
     "color": "Black",
-    "value": 6
+    "value": 6,
+    "cfm": 50,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14489,
@@ -30036,65 +30400,10 @@ export const PARTS = [
     "noise": 31.6,
     "size": "120mm",
     "color": "Black",
-    "value": 6
-  },
-  {
-    "id": 14490,
-    "n": "RGB Splitter for Corsair RGB HUB, Lighting Node Core and iCUE Commander CORE XT, 4 Pin Male to Female Fan Extension C...",
-    "img": "https://m.media-amazon.com/images/I/61RFdbbB+PL._SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "COMeap",
-    "pr": 9.99,
-    "msrp": 9.99,
-    "r": 4.6,
-    "asin": "B0D1R6ZW8B",
-    "reviews": 86,
-    "deals": {
-      "amazon": {
-        "price": 9.99,
-        "url": "https://www.amazon.com/dp/B0D1R6ZW8B?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/61kl5TKpGCL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/617mFBA3qVL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61ALUcJMZIL._SL1500_.jpg"
-    ],
-    "weight": "9.9 Grams",
-    "rgb": true,
-    "color": "RGB",
-    "value": 30
-  },
-  {
-    "id": 14491,
-    "n": "Pure Base 501 Black ATX Case | 2 Preinstalled Pure Wings 3 140mm PWM Fans | Optimized Air Pressure | Compact PC Case ...",
-    "img": "https://m.media-amazon.com/images/I/51js57sSRdL._AC_SL1400_.jpg",
-    "c": "CaseFan",
-    "b": "be quiet!",
-    "pr": 99.9,
-    "msrp": 109.9,
-    "r": 4.6,
-    "asin": "B0DGXQL5T9",
-    "reviews": 70,
-    "deals": {
-      "amazon": {
-        "price": 99.9,
-        "url": "https://www.amazon.com/dp/B0DGXQL5T9?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "discount": 9,
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71730EQNLwL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71W7B7YjqiL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/714qV1d19JL._AC_SL1500_.jpg"
-    ],
-    "mpn": "Pure Base 501",
-    "weight": "6.7 Kilograms",
-    "pwm": true,
-    "size": "140 Millimeters",
-    "color": "Black"
+    "value": 6,
+    "cfm": 55,
+    "rpm": 2000,
+    "pack": 1
   },
   {
     "id": 14492,
@@ -30183,7 +30492,12 @@ export const PARTS = [
     "noise": 32,
     "size": "140mm",
     "color": "White",
-    "value": 5
+    "value": 5,
+    "cfm": 91.3,
+    "rpm": 2000,
+    "pwm": true,
+    "rgbType": "RGB",
+    "pack": 2
   },
   {
     "id": 14495,
@@ -30244,14 +30558,18 @@ export const PARTS = [
     "noise": 33.55,
     "size": "120mm",
     "color": "Black",
-    "value": 16
+    "value": 16,
+    "cfm": 60,
+    "rpm": 2200,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14497,
     "n": "Lian Li UNI FAN SL-Infinity ARGB PWM Case Fan - 140mm, 6.5 Inches, Desktop-Computer-Fans",
     "img": "https://m.media-amazon.com/images/I/518U9hjWSRL._SL1200_.jpg",
     "c": "CaseFan",
-    "b": "Lian-Li",
+    "b": "Lian Li",
     "pr": 32.91,
     "msrp": 36.42,
     "r": 4.7,
@@ -30276,7 +30594,11 @@ export const PARTS = [
     "noise": 28,
     "size": "140mm",
     "color": "Black",
-    "value": 7
+    "value": 7,
+    "cfm": 73.2,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14498,
@@ -30335,35 +30657,11 @@ export const PARTS = [
     "noise": 31,
     "size": "120mm",
     "color": "White",
-    "value": 0
-  },
-  {
-    "id": 14500,
-    "n": "UNI Fan L-Wireless Controller for Computer Fans, Works with SL-Infinity, CL Wireless",
-    "img": "https://m.media-amazon.com/images/I/61k04Jd4v6L._AC_SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "Lian Li",
-    "pr": 39.99,
-    "msrp": 39.99,
-    "r": 4.5,
-    "asin": "B0DPHMGDB1",
-    "reviews": 51,
-    "deals": {
-      "amazon": {
-        "price": 39.99,
-        "url": "https://www.amazon.com/dp/B0DPHMGDB1?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71zrPUy4ogL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/716j8nED8OL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71BiZ2EHURL._AC_SL1500_.jpg"
-    ],
-    "upc": "840353048188",
-    "weight": "0.06 Kilograms",
-    "pwm": true,
-    "color": "Black"
+    "value": 0,
+    "cfm": 68.5,
+    "rpm": 2600,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14501,
@@ -30424,7 +30722,11 @@ export const PARTS = [
     "noise": 29,
     "size": "120mm",
     "color": "RGB",
-    "value": 15
+    "value": 15,
+    "cfm": 55,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14503,
@@ -30454,7 +30756,12 @@ export const PARTS = [
     "pwm": true,
     "noise": 30,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 47,
+    "rpm": 1800,
+    "rgb": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14504,
@@ -30541,7 +30848,12 @@ export const PARTS = [
     "weight": "242 Grams",
     "pwm": true,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 72.8,
+    "rpm": 2500,
+    "noise": 34.5,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14507,
@@ -30601,7 +30913,11 @@ export const PARTS = [
     "noise": 29,
     "size": "120mm",
     "color": "Black",
-    "value": 5
+    "value": 5,
+    "cfm": 55,
+    "rpm": 2000,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14509,
@@ -30631,7 +30947,11 @@ export const PARTS = [
     "noise": 37,
     "size": "120mm",
     "color": "Black",
-    "value": 4
+    "value": 4,
+    "cfm": 55,
+    "rpm": 1800,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14510,
@@ -30662,36 +30982,11 @@ export const PARTS = [
     "noise": 29,
     "size": "140mm",
     "color": "Black",
-    "value": 20
-  },
-  {
-    "id": 14511,
-    "n": "Adapter Cable Compatible with Corsair RGB Fan, ML/LL/QL/SP/HD Series, for Connecting to Standard 5V 3-Pin ARGB Header...",
-    "img": "https://m.media-amazon.com/images/I/61kuWRWP4rL._AC_SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "EZDIY-FAB",
-    "pr": 12.99,
-    "msrp": 12.99,
-    "r": 4.4,
-    "asin": "B0C7FM5KKF",
-    "reviews": 27,
-    "deals": {
-      "amazon": {
-        "price": 12.99,
-        "url": "https://www.amazon.com/dp/B0C7FM5KKF?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/615LJ6AfH4L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/81o47EQlVIL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71OCU7xn5HL._AC_SL1500_.jpg"
-    ],
-    "mpn": "EZDIY-FAB Adapter Cable",
-    "weight": "0.03 Kilograms",
-    "rgb": true,
-    "color": "RGB",
-    "value": 22
+    "value": 20,
+    "cfm": 65,
+    "rpm": 1400,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14512,
@@ -30720,7 +31015,12 @@ export const PARTS = [
     "noise": 27.9,
     "size": "140mm",
     "color": "Black",
-    "value": 18
+    "value": 18,
+    "cfm": 68,
+    "rpm": 1600,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14513,
@@ -30744,7 +31044,12 @@ export const PARTS = [
     "noise": 32,
     "size": "120mm",
     "color": "Black",
-    "value": 0
+    "value": 0,
+    "cfm": 61.3,
+    "rpm": 1900,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14514,
@@ -30776,7 +31081,11 @@ export const PARTS = [
     "noise": 31,
     "size": "120mm",
     "color": "Black",
-    "value": 35
+    "value": 35,
+    "cfm": 55,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14515,
@@ -30800,14 +31109,21 @@ export const PARTS = [
     "upc": "840353045637",
     "weight": "0.7 Pounds",
     "noise": 28.6,
-    "color": "Black"
+    "color": "Black",
+    "size": 140,
+    "cfm": 73.2,
+    "rpm": 1600,
+    "pwm": true,
+    "rgb": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14516,
     "n": "Thermalright TL-C14C-S X3 CPU Fan,with High Speed 1500RPM,140MM Quiet PWM Fan",
     "img": "https://m.media-amazon.com/images/I/71VsPTxLseL._SL1500_.jpg",
     "c": "CaseFan",
-    "b": "Thermalright T",
+    "b": "Thermalright",
     "pr": 17.9,
     "msrp": 17.9,
     "r": 4.8,
@@ -30829,7 +31145,12 @@ export const PARTS = [
     "pwm": true,
     "noise": 1500,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 73.73,
+    "rpm": 1500,
+    "rgb": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14517,
@@ -30860,7 +31181,11 @@ export const PARTS = [
     "noise": 28,
     "size": "120mm",
     "color": "White",
-    "value": 10
+    "value": 10,
+    "cfm": 55,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14518,
@@ -30890,7 +31215,12 @@ export const PARTS = [
     "pwm": true,
     "noise": 29.2,
     "color": "Black",
-    "value": 19
+    "value": 19,
+    "size": 140,
+    "cfm": 75,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14519,
@@ -30919,7 +31249,11 @@ export const PARTS = [
     "fans_inc": 3,
     "noise": 36.2,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 70,
+    "rpm": 1700,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14520,
@@ -30948,7 +31282,12 @@ export const PARTS = [
     "weight": "0.19 Kilograms",
     "noise": 25,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 58.1,
+    "rpm": 2400,
+    "pwm": true,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14521,
@@ -30980,7 +31319,11 @@ export const PARTS = [
     "noise": 0.08,
     "size": "140mm",
     "color": "RGB",
-    "value": 18
+    "value": 18,
+    "cfm": 72.8,
+    "rpm": 2500,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14522,
@@ -31010,7 +31353,11 @@ export const PARTS = [
     "noise": 30,
     "size": "140mm",
     "color": "Black",
-    "value": 19
+    "value": 19,
+    "cfm": 65,
+    "rpm": 1500,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 14523,
@@ -31039,7 +31386,11 @@ export const PARTS = [
     "pwm": true,
     "noise": 1,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 73.2,
+    "rpm": 2000,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 14524,
@@ -31070,7 +31421,11 @@ export const PARTS = [
     "fans_inc": 3,
     "noise": 25,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 58,
+    "rpm": 2000,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14525,
@@ -31093,7 +31448,14 @@ export const PARTS = [
     "discount": 12,
     "upc": "840353045644",
     "noise": 28.6,
-    "color": "White"
+    "color": "White",
+    "size": 140,
+    "cfm": 73.2,
+    "rpm": 1600,
+    "pwm": true,
+    "rgb": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14526,
@@ -31123,7 +31485,11 @@ export const PARTS = [
     "fans_inc": 3,
     "noise": 23.6,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 55,
+    "rpm": 1600,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14527,
@@ -31184,36 +31550,6 @@ export const PARTS = [
     "color": "Black"
   },
   {
-    "id": 14529,
-    "n": "iCUE Link H170i RGB Liquid CPU Cooler - 420mm AIO - QX140 RGB Fans - Fits Intel® LGA 1700, AMD® AM5 - iCUE Link Syste...",
-    "img": "https://m.media-amazon.com/images/I/61y2UPA3bGL._SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "Corsair",
-    "pr": 149.99,
-    "msrp": 149.99,
-    "r": 3.1,
-    "asin": "B0FJ49TQDG",
-    "reviews": 4,
-    "deals": {
-      "amazon": {
-        "price": 149.99,
-        "url": "https://www.amazon.com/dp/B0FJ49TQDG?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/51vxkSpLNcL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/6109-9GwnpL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/518Q6jrt-yL._SL1500_.jpg"
-    ],
-    "upc": "798239063643",
-    "weight": "4.7 Pounds",
-    "rgb": true,
-    "noise": 37,
-    "color": "RGB",
-    "value": 0
-  },
-  {
     "id": 14530,
     "n": "NF-A14x25r G2 PWM chromax.Black, Premium-Quality Quiet Round-Frame 140mm PC Fan (Black)",
     "img": "https://m.media-amazon.com/images/I/81O90JFR-ZL._SL1500_.jpg",
@@ -31270,69 +31606,11 @@ export const PARTS = [
     "noise": 29,
     "size": "140mm",
     "color": "Black",
-    "value": 13
-  },
-  {
-    "id": 14532,
-    "n": "iCUE Link Titan 360 RX RGB Liquid CPU Cooler – 360mm AIO – Low-Noise – Intel LGA 1851/1700, AMD AM5/AM4-3X RX120 RGB ...",
-    "img": "https://m.media-amazon.com/images/I/61FuA6nzNGL._SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "Corsair",
-    "pr": 118.9,
-    "msrp": 118.9,
-    "r": 2.9,
-    "asin": "B0FRPWY3C8",
-    "reviews": 3,
-    "deals": {
-      "amazon": {
-        "price": 118.9,
-        "url": "https://www.amazon.com/dp/B0FRPWY3C8?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71iZswrdubL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71Nxz-r-CbL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/719b9vMnZOL._SL1500_.jpg"
-    ],
-    "upc": "798239063315",
-    "weight": "3.68 Pounds",
-    "rgb": true,
-    "fans_inc": 3,
-    "noise": 36,
-    "color": "RGB",
-    "value": 0
-  },
-  {
-    "id": 14533,
-    "n": "Nautilus 240 RS ARGB Liquid CPU Cooler – 240mm AIO – Low-Noise – Direct Motherboard Connection – Daisy-Chain – Intel ...",
-    "img": "https://m.media-amazon.com/images/I/71BI2N5ZN1L._SL1500_.jpg",
-    "c": "CaseFan",
-    "b": "Corsair",
-    "pr": 71.99,
-    "msrp": 71.99,
-    "r": 3.4,
-    "asin": "B0FRPMHJGX",
-    "reviews": 3,
-    "deals": {
-      "amazon": {
-        "price": 71.99,
-        "url": "https://www.amazon.com/dp/B0FRPMHJGX?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71TrfpltVEL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71WXJ-XQSkL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/51LbtmXPIrL._SX522_.jpg"
-    ],
-    "upc": "798239063322",
-    "weight": "2.9 Pounds",
-    "rgb": true,
-    "fans_inc": 2,
-    "noise": 36,
-    "color": "Black",
-    "value": 1
+    "value": 13,
+    "cfm": 65,
+    "rpm": 1600,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 14534,
@@ -31361,7 +31639,11 @@ export const PARTS = [
     "fans_inc": 3,
     "noise": 25.6,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "cfm": 66.17,
+    "rpm": 1500,
+    "rgb": false,
+    "pack": 3
   },
   {
     "id": 14536,
@@ -87657,7 +87939,8 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "Blue",
     "size": 120,
-    "value": 95
+    "value": 95,
+    "pack": 1
   },
   {
     "id": 16196,
@@ -87685,7 +87968,8 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "White",
     "size": 120,
-    "value": 95
+    "value": 95,
+    "pack": 1
   },
   {
     "id": 16197,
@@ -87713,7 +87997,8 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "Black",
     "size": 200,
-    "value": 100
+    "value": 100,
+    "pack": 1
   },
   {
     "id": 16198,
@@ -87741,7 +88026,9 @@ export const PARTS = [
     "fans_inc": 2,
     "color": "Black",
     "size": 120,
-    "value": 85
+    "value": 85,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 16199,
@@ -87769,7 +88056,9 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "White",
     "size": 140,
-    "value": 26
+    "value": 26,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16200,
@@ -87797,7 +88086,8 @@ export const PARTS = [
     "fans_inc": 2,
     "color": "Black",
     "size": 120,
-    "value": 72
+    "value": 72,
+    "pack": 2
   },
   {
     "id": 16201,
@@ -87825,7 +88115,8 @@ export const PARTS = [
     "fans_inc": 2,
     "color": "White",
     "size": 120,
-    "value": 72
+    "value": 72,
+    "pack": 2
   },
   {
     "id": 16202,
@@ -87853,14 +88144,16 @@ export const PARTS = [
     "fans_inc": 2,
     "color": "White",
     "size": 120,
-    "value": 60
+    "value": 60,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 16203,
     "n": "CORSAIR - iCUE LINK QX120 RGB 120mm PWM Computer Case Fan with iCUE LINK System Hub Kit (3-pack) - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6549/6549153_sd.jpg",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 109.99,
     "msrp": 169.99,
     "r": 0,
@@ -87881,14 +88174,16 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "White",
     "size": 120,
-    "value": 19
+    "value": 19,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16204,
     "n": "CORSAIR - iCUE LINK QX140 RGB 140mm PWM Computer Case Fan with iCUE LINK System Hub Kit (2-pack) - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6549/6549170_sd.jpg",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 149.99,
     "msrp": 149.99,
     "r": 0,
@@ -87909,7 +88204,9 @@ export const PARTS = [
     "fans_inc": 2,
     "color": "Black",
     "size": 140,
-    "value": 17
+    "value": 17,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 16205,
@@ -87936,7 +88233,10 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "Black",
     "size": 120,
-    "value": 76
+    "value": 76,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16206,
@@ -87963,7 +88263,10 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "White",
     "size": 140,
-    "value": 86
+    "value": 86,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16207,
@@ -87990,7 +88293,10 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "Black",
     "size": 120,
-    "value": 63
+    "value": 63,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16208,
@@ -88017,7 +88323,10 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "White",
     "size": 120,
-    "value": 76
+    "value": 76,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16209,
@@ -88044,7 +88353,10 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "White",
     "size": 120,
-    "value": 61
+    "value": 61,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16210,
@@ -88071,14 +88383,17 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "White",
     "size": 120,
-    "value": 100
+    "value": 100,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16211,
     "n": "CORSAIR - iCUE LINK RX120 RGB 120mm PWM Computer Case Fan Expansion Fan - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6577/6577052_sd.jpg",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 26.99,
     "msrp": 34.99,
     "r": 0,
@@ -88098,14 +88413,17 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "White",
     "size": 120,
-    "value": 100
+    "value": 100,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16212,
     "n": "CORSAIR - iCUE LINK RX120 120mm PWM Computer Case Fan Expansion Fan - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6577/6577053_sd.jpg",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 15.99,
     "msrp": 29.99,
     "r": 0,
@@ -88125,14 +88443,16 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "Black",
     "size": 120,
-    "value": 100
+    "value": 100,
+    "pwm": true,
+    "pack": 1
   },
   {
     "id": 16213,
     "n": "CORSAIR - iCUE LINK RX120 RGB 120mm PWM Computer Case Fan Starter Kit (3-pack) - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6577/6577059_sd.jpg",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 84.99,
     "msrp": 104.99,
     "r": 0,
@@ -88152,14 +88472,17 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Black",
     "size": 120,
-    "value": 30
+    "value": 30,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16214,
     "n": "CORSAIR - iCUE LINK RX120 RGB 120mm PWM Computer Case Fan Starter Kit (3-pack) - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6577/6577060_sd.jpg",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 84.99,
     "msrp": 104.99,
     "r": 0,
@@ -88179,14 +88502,17 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "White",
     "size": 120,
-    "value": 30
+    "value": 30,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16215,
     "n": "CORSAIR - iCUE LINK LX120 RGB 120mm PWM Case Fans Starter Kit (3-pack) - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/2d89bf3d-e558-4814-9abe-2ccf8cc279e3.jpg",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 84.99,
     "msrp": 139.99,
     "r": 0,
@@ -88206,14 +88532,17 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "White",
     "size": 120,
-    "value": 28
+    "value": 28,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16216,
     "n": "CORSAIR - iCUE LINK LX120 RGB 120mm PWM Case Fans Starter Kit (3-pack) - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/0590707e-27c1-439a-84b1-7bf02b900388.jpg",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 84.99,
     "msrp": 139.99,
     "r": 0,
@@ -88233,14 +88562,17 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Black",
     "size": 120,
-    "value": 28
+    "value": 28,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16217,
     "n": "CORSAIR - RS120 ARGB 120mm PWM Case Fans (3-pack) - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/488f2079-6541-416d-b664-a39d1268ee45.jpg",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 34.99,
     "msrp": 59.99,
     "r": 0,
@@ -88260,14 +88592,17 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Black",
     "size": 120,
-    "value": 65
+    "value": 65,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16218,
     "n": "CORSAIR - iCUE LINK LX120 RGB 120mm PWM Single Case Fan Expansion - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/223b62d1-0a6e-4361-837a-134bc40c7f0c.jpg",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 44.99,
     "msrp": 44.99,
     "r": 0,
@@ -88287,7 +88622,10 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "White",
     "size": 120,
-    "value": 55
+    "value": 55,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16219,
@@ -88315,14 +88653,16 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Black",
     "size": 120,
-    "value": 40
+    "value": 40,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16220,
     "n": "CORSAIR - RS120 ARGB 120mm PWM Case Fans (3-pack) - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/272c4f19-6dab-4624-8bb9-33124a0948d6.png",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 34.99,
     "msrp": 59.99,
     "r": 0,
@@ -88342,7 +88682,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "White",
     "size": 120,
-    "value": 65
+    "value": 65,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16221,
@@ -88369,7 +88712,10 @@ export const PARTS = [
     "fans_inc": 2,
     "color": "Black",
     "size": 120,
-    "value": 77
+    "value": 77,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 16222,
@@ -88396,7 +88742,10 @@ export const PARTS = [
     "fans_inc": 2,
     "color": "Black",
     "size": 140,
-    "value": 86
+    "value": 86,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 16223,
@@ -88423,7 +88772,10 @@ export const PARTS = [
     "fans_inc": 2,
     "color": "White",
     "size": 120,
-    "value": 90
+    "value": 90,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 16224,
@@ -88450,7 +88802,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Black",
     "size": 120,
-    "value": 53
+    "value": 53,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16225,
@@ -88477,7 +88832,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "White",
     "size": 120,
-    "value": 53
+    "value": 53,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16226,
@@ -88504,14 +88862,17 @@ export const PARTS = [
     "fans_inc": 2,
     "color": "White",
     "size": 140,
-    "value": 86
+    "value": 86,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 16227,
     "n": "CORSAIR - iCUE LINK LX120-R RGB 120mm PWM Reverse Blade Computer Case Fan Starter Kit (3-pack) - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/82033cf3-58f3-4217-81d6-cbb32ca91513.png",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 99.99,
     "msrp": 139.99,
     "r": 0,
@@ -88531,14 +88892,17 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Black",
     "size": 120,
-    "value": 22
+    "value": 22,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16228,
     "n": "CORSAIR - iCUE LINK LX120-R RGB 120mm PWM Reverse Blade Computer Case Expansion Fan - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f5ef3dfc-94ca-4e81-bd49-b513420becd6.png",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 44.99,
     "msrp": 44.99,
     "r": 0,
@@ -88558,14 +88922,17 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "Black",
     "size": 120,
-    "value": 53
+    "value": 53,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16229,
     "n": "CORSAIR - iCUE LINK LX120-R RGB 120mm PWM Reverse Blade Computer Case Fan Starter Kit (3-pack) - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/76d76905-a4da-481d-97ab-3ce2c9f625ef.png",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 114.99,
     "msrp": 139.99,
     "r": 0,
@@ -88585,7 +88952,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "White",
     "size": 120,
-    "value": 19
+    "value": 19,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16230,
@@ -88612,7 +88982,10 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "White",
     "size": 200,
-    "value": 100
+    "value": 100,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16231,
@@ -88639,7 +89012,9 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "Black",
     "size": 200,
-    "value": 100
+    "value": 100,
+    "pwm": true,
+    "pack": 1
   },
   {
     "id": 16232,
@@ -88666,7 +89041,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Snow",
     "size": 120,
-    "value": 81
+    "value": 81,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16233,
@@ -88693,7 +89071,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Gravel Sand",
     "size": 120,
-    "value": 40
+    "value": 40,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16234,
@@ -88720,7 +89101,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Bubble Pink",
     "size": 120,
-    "value": 40
+    "value": 40,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16235,
@@ -88747,7 +89131,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Snow",
     "size": 120,
-    "value": 25
+    "value": 25,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16236,
@@ -88774,7 +89161,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Racing Green",
     "size": 120,
-    "value": 40
+    "value": 40,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16237,
@@ -88801,7 +89191,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Bumblebee",
     "size": 120,
-    "value": 40
+    "value": 40,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16238,
@@ -88828,7 +89221,9 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "White",
     "size": 200,
-    "value": 100
+    "value": 100,
+    "pwm": true,
+    "pack": 1
   },
   {
     "id": 16239,
@@ -88855,7 +89250,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Hydrangea Blue",
     "size": 120,
-    "value": 40
+    "value": 40,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16240,
@@ -88882,7 +89280,10 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "Black",
     "size": 200,
-    "value": 100
+    "value": 100,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16241,
@@ -88909,7 +89310,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "White",
     "size": 120,
-    "value": 40
+    "value": 40,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16242,
@@ -88936,14 +89340,17 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Matcha Green",
     "size": 120,
-    "value": 40
+    "value": 40,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16243,
     "n": "CORSAIR - RS120-R ARGB 120mm PWM Reverse Case Fans Triple Pack - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/30d8295d-0f4d-45d6-86de-2a50e13a6d25.png",
     "c": "CaseFan",
-    "b": "CORSAIR",
+    "b": "Corsair",
     "pr": 41.99,
     "msrp": 59.99,
     "r": 0,
@@ -88963,7 +89370,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "White",
     "size": 120,
-    "value": 49
+    "value": 49,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16244,
@@ -88990,7 +89400,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "White",
     "size": 140,
-    "value": 62
+    "value": 62,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16245,
@@ -89017,142 +89430,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Black",
     "size": 140,
-    "value": 62
-  },
-  {
-    "id": 16246,
-    "n": "NZXT - Kraken Plus RGB 360mm Radiator CPU Liquid Cooler (1 x F360 RGB Core single-frame fan) with 1.54\" Square LCD - Whi",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/fb50185e-a3e6-415b-8363-a86df20f15b3.png",
-    "c": "CaseFan",
-    "b": "NZXT",
-    "pr": 208.99,
-    "msrp": 219.99,
-    "r": 0,
-    "upc": "810074845359",
-    "mpn": "RL-KR360-W2",
-    "deals": {
-      "bestbuy": {
-        "price": 208.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630944&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6630944.p%3FskuId%3D6630944",
-        "inStock": true
-      }
-    },
-    "cfm": 75.05,
-    "noise": 31.9,
-    "rpm": 2800,
-    "rgb": true,
-    "fans_inc": 3,
-    "color": "White",
-    "size": 120,
-    "value": 10
-  },
-  {
-    "id": 16247,
-    "n": "NZXT - Kraken Plus 240mm Radiator CPU Liquid Cooler (2 x 120mm F120P Fans) with 1.54\" Square LCD - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8c5ffce7-6b32-4f9d-a8dd-2c6f0f279faf.png",
-    "c": "CaseFan",
-    "b": "NZXT",
-    "pr": 99.99,
-    "msrp": 139.99,
-    "r": 0,
-    "upc": "810074845281",
-    "mpn": "RL-KN240-B2",
-    "deals": {
-      "bestbuy": {
-        "price": 99.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630945&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6630945.p%3FskuId%3D6630945",
-        "inStock": true
-      }
-    },
-    "cfm": 73.47,
-    "noise": 30,
-    "rpm": 2400,
-    "rgb": false,
-    "fans_inc": 2,
-    "color": "Black",
-    "size": 120,
-    "value": 21
-  },
-  {
-    "id": 16248,
-    "n": "NZXT - Kraken Plus 280mm Radiator CPU Liquid Cooler (2 x 140mm F140P Fans) with 1.54\" Square LCD - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/3aea37b8-6afd-410b-b884-4ce82f24d748.png",
-    "c": "CaseFan",
-    "b": "NZXT",
-    "pr": 129.99,
-    "msrp": 159.99,
-    "r": 0,
-    "upc": "810074845298",
-    "mpn": "RL-KN280-B2",
-    "deals": {
-      "bestbuy": {
-        "price": 129.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630947&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6630947.p%3FskuId%3D6630947",
-        "inStock": true
-      }
-    },
-    "cfm": 93.2,
-    "noise": 30,
-    "rpm": 2400,
-    "rgb": false,
-    "fans_inc": 2,
-    "color": "Black",
-    "size": 140,
-    "value": 20
-  },
-  {
-    "id": 16249,
-    "n": "NZXT - Kraken Plus RGB 240mm Radiator CPU Liquid Cooler (1 x F240 RGB Core single-frame fan) with 1.54\" Square LCD - Whi",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1601955c-f5a0-49aa-b1a5-174a8ea80265.png",
-    "c": "CaseFan",
-    "b": "NZXT",
-    "pr": 109.99,
-    "msrp": 179.99,
-    "r": 0,
-    "upc": "810074845311",
-    "mpn": "RL-KR240-W2",
-    "deals": {
-      "bestbuy": {
-        "price": 109.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630948&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6630948.p%3FskuId%3D6630948",
-        "inStock": true
-      }
-    },
-    "cfm": 75.05,
-    "noise": 31.9,
-    "rpm": 2800,
-    "rgb": true,
-    "fans_inc": 2,
-    "color": "White",
-    "size": 120,
-    "value": 22
-  },
-  {
-    "id": 16250,
-    "n": "NZXT - Kraken Plus 360mm Radiator CPU Liquid Cooler (3 x 120mm F120P Fans) with 1.54\" Square LCD - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/41cdb3fe-34ed-44ba-a5ff-02c98b6551ce.png",
-    "c": "CaseFan",
-    "b": "NZXT",
-    "pr": 149.99,
-    "msrp": 179.99,
-    "r": 0,
-    "upc": "810074845304",
-    "mpn": "RL-KN360-B2",
-    "deals": {
-      "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630949&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6630949.p%3FskuId%3D6630949",
-        "inStock": true
-      }
-    },
-    "cfm": 74.47,
-    "noise": 30,
-    "rpm": 2400,
-    "rgb": false,
-    "fans_inc": 3,
-    "color": "Black",
-    "size": 120,
-    "value": 13
+    "value": 62,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16251,
@@ -89179,7 +89460,10 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "Black",
     "size": 140,
-    "value": 77
+    "value": 77,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16252,
@@ -89206,7 +89490,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "White",
     "size": 360,
-    "value": 28
+    "value": 28,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16253,
@@ -89233,7 +89520,10 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "White",
     "size": 120,
-    "value": 80
+    "value": 80,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16254,
@@ -89260,7 +89550,10 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Black",
     "size": 360,
-    "value": 28
+    "value": 28,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16255,
@@ -89287,7 +89580,10 @@ export const PARTS = [
     "fans_inc": 2,
     "color": "White",
     "size": 280,
-    "value": 39
+    "value": 39,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 16256,
@@ -89314,7 +89610,10 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "White",
     "size": 140,
-    "value": 77
+    "value": 77,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16257,
@@ -89341,7 +89640,10 @@ export const PARTS = [
     "fans_inc": 2,
     "color": "Black",
     "size": 240,
-    "value": 41
+    "value": 41,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 16258,
@@ -89368,7 +89670,10 @@ export const PARTS = [
     "fans_inc": 1,
     "color": "Black",
     "size": 120,
-    "value": 80
+    "value": 80,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 1
   },
   {
     "id": 16259,
@@ -89395,7 +89700,10 @@ export const PARTS = [
     "fans_inc": 2,
     "color": "White",
     "size": 240,
-    "value": 41
+    "value": 41,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 16260,
@@ -89422,7 +89730,10 @@ export const PARTS = [
     "fans_inc": 2,
     "color": "Black",
     "size": 280,
-    "value": 39
+    "value": 39,
+    "pwm": true,
+    "rgbType": "ARGB",
+    "pack": 2
   },
   {
     "id": 16261,
@@ -89450,7 +89761,9 @@ export const PARTS = [
     "fans_inc": 3,
     "color": "Black",
     "size": 120,
-    "value": 33
+    "value": 33,
+    "rgbType": "ARGB",
+    "pack": 3
   },
   {
     "id": 16262,
