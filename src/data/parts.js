@@ -11993,7 +11993,9 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0C1N56ZDC?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 7178,
@@ -31991,7 +31993,12 @@ export const PARTS = [
     ],
     "coolerType": "Air",
     "noise": 34.8,
-    "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4"
+    "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4",
+    "height": 155,
+    "tdp_rating": 180,
+    "fans_inc": 1,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14583,
@@ -32055,7 +32062,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 38.8,
-    "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4/TR5/TR4"
+    "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4/TR5/TR4",
+    "fans_inc": 3,
+    "rgb": false
   },
   {
     "id": 14585,
@@ -32084,36 +32093,11 @@ export const PARTS = [
     "weight": "1.5 Pounds",
     "coolerType": "AIO",
     "noise": 28,
-    "compatibility": "Radiator"
-  },
-  {
-    "id": 14586,
-    "n": "MasterFan MF140 Halo Fan, Duo-Ring ARGB Customizable Lighting, 140mm PWM Static Pressure",
-    "img": "https://m.media-amazon.com/images/I/71NKYcqwW-L._AC_SL1500_.jpg",
-    "c": "CPUCooler",
-    "b": "Cooler Master",
-    "pr": 24.99,
-    "msrp": 24.99,
-    "r": 4.6,
-    "asin": "B08Y67FWYR",
-    "reviews": 5591,
-    "deals": {
-      "amazon": {
-        "price": 24.99,
-        "url": "https://www.amazon.com/dp/B08Y67FWYR?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71vRAtmB4bL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/81rIfPKOncL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71cbkHu5HfL._AC_SL1500_.jpg"
-    ],
-    "upc": "884102085987",
-    "weight": "215 Grams",
-    "coolerType": "AIO",
-    "noise": 30,
-    "compatibility": "Desktop"
+    "compatibility": "Radiator",
+    "radSize": 120,
+    "fans_inc": 1,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14587,
@@ -32380,7 +32364,12 @@ export const PARTS = [
     "upc": "755225218449",
     "weight": "100 Grams",
     "noise": 25,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "coolerType": "AIO",
+    "radSize": 240,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14595,
@@ -32409,7 +32398,12 @@ export const PARTS = [
     "weight": "454 Grams",
     "coolerType": "Air",
     "noise": 25.6,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 157,
+    "tdp_rating": 245,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14596,
@@ -32473,7 +32467,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 36,
-    "compatibility": "Desktop, Laptop"
+    "compatibility": "Desktop, Laptop",
+    "fans_inc": 3,
+    "rgb": false
   },
   {
     "id": 14598,
@@ -32570,7 +32566,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 27.86,
-    "compatibility": "Cpu"
+    "compatibility": "Cpu",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14601,
@@ -32631,7 +32629,12 @@ export const PARTS = [
     "upc": "755225218456",
     "weight": "100 Grams",
     "noise": 23,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "coolerType": "AIO",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14603,
@@ -32660,7 +32663,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 30,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14604,
@@ -32824,7 +32829,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 27.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14609,
@@ -32852,7 +32859,12 @@ export const PARTS = [
     "upc": "780366840037",
     "weight": "100 Grams",
     "noise": 1,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "coolerType": "AIO",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14610,
@@ -32955,7 +32967,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 39.5,
-    "compatibility": "Cpu, Desktop"
+    "compatibility": "Cpu, Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14613,
@@ -32985,7 +32999,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 27.86,
-    "compatibility": "Cpu"
+    "compatibility": "Cpu",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14614,
@@ -33049,7 +33065,10 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 28.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14616,
@@ -33078,7 +33097,12 @@ export const PARTS = [
     "weight": "1400 Grams",
     "coolerType": "Air",
     "noise": 34.8,
-    "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4"
+    "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4",
+    "height": 162,
+    "tdp_rating": 220,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14617,
@@ -33106,7 +33130,11 @@ export const PARTS = [
     "upc": "753873527777",
     "coolerType": "AIO",
     "noise": 29.8,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 240,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14618,
@@ -33135,7 +33163,10 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 33,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14619,
@@ -33195,7 +33226,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 39.8,
-    "compatibility": "Cpu"
+    "compatibility": "Cpu",
+    "fans_inc": 3,
+    "rgb": false
   },
   {
     "id": 14621,
@@ -33298,7 +33331,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 36,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14624,
@@ -33428,7 +33463,11 @@ export const PARTS = [
     "weight": "100 Grams",
     "coolerType": "AIO",
     "noise": 27.7,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14628,
@@ -33458,7 +33497,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 36,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": false
   },
   {
     "id": 14629,
@@ -33519,7 +33560,12 @@ export const PARTS = [
     "weight": "1190 Grams",
     "coolerType": "Air",
     "noise": 27.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 157,
+    "tdp_rating": 260,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14631,
@@ -33655,7 +33701,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 20,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14635,
@@ -33961,7 +34009,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 30,
-    "compatibility": "Cpu"
+    "compatibility": "Cpu",
+    "fans_inc": 3,
+    "rgb": false
   },
   {
     "id": 14644,
@@ -33990,7 +34040,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 35.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": false
   },
   {
     "id": 14645,
@@ -34019,7 +34071,11 @@ export const PARTS = [
     "weight": "100 Grams",
     "coolerType": "AIO",
     "noise": 25.6,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14646,
@@ -34084,7 +34140,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 27,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14648,
@@ -34113,7 +34171,12 @@ export const PARTS = [
     "weight": "100 Grams",
     "coolerType": "Air",
     "noise": 29.8,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 154,
+    "tdp_rating": 210,
+    "fans_inc": 1,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14649,
@@ -34142,7 +34205,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 33,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14650,
@@ -34178,7 +34243,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 31.9,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14651,
@@ -34205,7 +34272,11 @@ export const PARTS = [
     ],
     "upc": "840353052161",
     "coolerType": "AIO",
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14652,
@@ -34241,7 +34312,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 31.9,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14653,
@@ -34269,7 +34342,11 @@ export const PARTS = [
     "upc": "739538428627",
     "coolerType": "AIO",
     "noise": 28.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14654,
@@ -34331,7 +34408,11 @@ export const PARTS = [
     "weight": "100 Grams",
     "coolerType": "AIO",
     "noise": 29.8,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14656,
@@ -34393,7 +34474,12 @@ export const PARTS = [
     "weight": "3 Pounds",
     "coolerType": "Air",
     "noise": 34.8,
-    "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4"
+    "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4",
+    "height": 162,
+    "tdp_rating": 220,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14658,
@@ -34523,7 +34609,12 @@ export const PARTS = [
     "weight": "1.63 Kilograms",
     "coolerType": "Air",
     "noise": 14,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 155,
+    "tdp_rating": 200,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14662,
@@ -34552,7 +34643,12 @@ export const PARTS = [
     "weight": "1 Pounds",
     "noise": 22.8,
     "compatibility": "Desktop",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "height": 110,
+    "tdp_rating": 140,
+    "fans_inc": 1,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14663,
@@ -34719,7 +34815,12 @@ export const PARTS = [
     ],
     "coolerType": "Air",
     "noise": 25,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 158,
+    "tdp_rating": 180,
+    "fans_inc": 1,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14668,
@@ -34847,7 +34948,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 35.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": false
   },
   {
     "id": 14672,
@@ -34882,7 +34985,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 20,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14673,
@@ -34911,7 +35016,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 36.9,
-    "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4/TR5/TR4"
+    "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4/TR5/TR4",
+    "fans_inc": 2,
+    "rgb": false
   },
   {
     "id": 14674,
@@ -34939,7 +35046,12 @@ export const PARTS = [
     "upc": "769047388983",
     "coolerType": "Air",
     "noise": 29.8,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 154,
+    "tdp_rating": 210,
+    "fans_inc": 1,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14675,
@@ -34967,7 +35079,11 @@ export const PARTS = [
     "weight": "4.2 Pounds",
     "coolerType": "AIO",
     "noise": 28,
-    "compatibility": "Gaming Computer"
+    "compatibility": "Gaming Computer",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14676,
@@ -35003,7 +35119,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 31.9,
-    "compatibility": "supports the latest AMD and Intel CPU sockets, including AM5 and LGA 1851"
+    "compatibility": "supports the latest AMD and Intel CPU sockets, including AM5 and LGA 1851",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14677,
@@ -35058,7 +35176,12 @@ export const PARTS = [
     "upc": "764035263945",
     "coolerType": "Air",
     "noise": 25.6,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 160,
+    "tdp_rating": 265,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14679,
@@ -35086,7 +35209,12 @@ export const PARTS = [
     ],
     "coolerType": "Air",
     "noise": 33.5,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 162,
+    "tdp_rating": 270,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14680,
@@ -35114,7 +35242,12 @@ export const PARTS = [
     "weight": "1110 Grams",
     "noise": 22.8,
     "compatibility": "Desktop",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "height": 110,
+    "tdp_rating": 140,
+    "fans_inc": 1,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14681,
@@ -35145,7 +35278,10 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 23,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14682,
@@ -35275,7 +35411,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 36,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14686,
@@ -35372,7 +35510,12 @@ export const PARTS = [
     "weight": "2.5 Pounds",
     "coolerType": "Air",
     "noise": 32.5,
-    "compatibility": "Cpu"
+    "compatibility": "Cpu",
+    "height": 164,
+    "tdp_rating": 280,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14689,
@@ -35400,7 +35543,11 @@ export const PARTS = [
     "upc": "769047388211",
     "coolerType": "AIO",
     "noise": 25.6,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 240,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14690,
@@ -35533,7 +35680,12 @@ export const PARTS = [
     ],
     "coolerType": "Air",
     "noise": 34.8,
-    "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4"
+    "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4",
+    "height": 162,
+    "tdp_rating": 220,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14694,
@@ -35595,7 +35747,11 @@ export const PARTS = [
     "weight": "0.88 Kilograms",
     "coolerType": "AIO",
     "noise": 21,
-    "compatibility": "PC"
+    "compatibility": "PC",
+    "radSize": 120,
+    "fans_inc": 1,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14696,
@@ -35665,7 +35821,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 36,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14698,
@@ -35700,7 +35858,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 36,
-    "compatibility": "Desktop, Server"
+    "compatibility": "Desktop, Server",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14699,
@@ -35730,7 +35890,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 30.8,
-    "compatibility": "Gaming Console"
+    "compatibility": "Gaming Console",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14700,
@@ -35800,34 +35962,6 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false
-  },
-  {
-    "id": 14702,
-    "n": "NA-HC4 chromax.White, Heatsink Cover for NH-D15, NH-D15S & NH-D15 SE-AM4 (White)",
-    "img": "https://m.media-amazon.com/images/I/81MJr+dkZuL._AC_SL1500_.jpg",
-    "c": "CPUCooler",
-    "b": "Noctua",
-    "pr": 29.95,
-    "msrp": 29.95,
-    "r": 4.8,
-    "asin": "B076575LND",
-    "reviews": 867,
-    "deals": {
-      "amazon": {
-        "price": 29.95,
-        "url": "https://www.amazon.com/dp/B076575LND?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/8175GBYZOWL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/9149DbOe+4L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71a7cg6VLSL._AC_SL1500_.jpg"
-    ],
-    "upc": "841501120435",
-    "weight": "0.38 Kilograms",
-    "coolerType": "Air",
-    "compatibility": "Socket AM4"
   },
   {
     "id": 14703,
@@ -36028,33 +36162,6 @@ export const PARTS = [
     "rgb": false
   },
   {
-    "id": 14709,
-    "n": "NA-HC3 chromax.Black.swap, Heatsink Cover for NH-D15, NH-D15S & NH-D15 SE-AM4 (Black)",
-    "img": "https://m.media-amazon.com/images/I/815TSiRYtbL._AC_SL1500_.jpg",
-    "c": "CPUCooler",
-    "b": "Noctua",
-    "pr": 29.95,
-    "msrp": 29.95,
-    "r": 4.8,
-    "asin": "B076569Y8X",
-    "reviews": 661,
-    "deals": {
-      "amazon": {
-        "price": 29.95,
-        "url": "https://www.amazon.com/dp/B076569Y8X?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/81A0+OTgrPL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71AnYfAbGTL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/91xwF9ZlTCL._AC_SL1500_.jpg"
-    ],
-    "upc": "841501120411",
-    "coolerType": "Air",
-    "compatibility": "Socket AM4"
-  },
-  {
     "id": 14710,
     "n": "Liquid Freezer III Pro 280 A-RGB (White) - AIO CPU Cooler, 2 x 140 mm Water Cooling, 38 mm Radiator",
     "img": "https://m.media-amazon.com/images/I/615OSSgphLL._SL1500_.jpg",
@@ -36148,7 +36255,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 27.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14713,
@@ -36179,7 +36288,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 29,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14714,
@@ -36243,7 +36354,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "280",
     "noise": 35,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": false
   },
   {
     "id": 14716,
@@ -36436,7 +36549,9 @@ export const PARTS = [
     ],
     "coolerType": "AIO",
     "noise": 25,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "rgb": true,
+    "fans_inc": 3
   },
   {
     "id": 14722,
@@ -36464,7 +36579,11 @@ export const PARTS = [
     "weight": "1900 Grams",
     "coolerType": "AIO",
     "noise": 33,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14723,
@@ -36492,7 +36611,11 @@ export const PARTS = [
     "upc": "815671016652",
     "coolerType": "AIO",
     "noise": 33,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 280,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14724,
@@ -36521,7 +36644,12 @@ export const PARTS = [
     "weight": "1.8 Kilograms",
     "coolerType": "Air",
     "noise": 28,
-    "compatibility": "AMD:AM4/AM5, Intel LGA18XX/1700/1200/115X"
+    "compatibility": "AMD:AM4/AM5, Intel LGA18XX/1700/1200/115X",
+    "height": 157,
+    "tdp_rating": 245,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14725,
@@ -36549,7 +36677,11 @@ export const PARTS = [
     "weight": "3.6 Pounds",
     "coolerType": "AIO",
     "noise": 29.8,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14726,
@@ -36578,7 +36710,12 @@ export const PARTS = [
     "weight": "1.35 Kilograms",
     "coolerType": "Air",
     "noise": 32.5,
-    "compatibility": "Cpu"
+    "compatibility": "Cpu",
+    "height": 158,
+    "tdp_rating": 245,
+    "fans_inc": 2,
+    "sockets": "AM5",
+    "rgb": true
   },
   {
     "id": 14727,
@@ -36606,7 +36743,11 @@ export const PARTS = [
     "upc": "755225220954",
     "coolerType": "AIO",
     "noise": 23,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14728,
@@ -36642,7 +36783,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 30,
-    "compatibility": "supports the latest AMD and Intel CPU sockets, including AM5 and LGA 1851"
+    "compatibility": "supports the latest AMD and Intel CPU sockets, including AM5 and LGA 1851",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14729,
@@ -36671,7 +36814,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 30,
-    "compatibility": "Cpu"
+    "compatibility": "Cpu",
+    "fans_inc": 2,
+    "rgb": false
   },
   {
     "id": 14730,
@@ -36701,7 +36846,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 30,
-    "compatibility": "Cpu"
+    "compatibility": "Cpu",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14731,
@@ -36730,7 +36877,10 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 23,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14732,
@@ -36760,7 +36910,11 @@ export const PARTS = [
     "weight": "3.95 Pounds",
     "coolerType": "AIO",
     "noise": 25,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14733,
@@ -36788,7 +36942,12 @@ export const PARTS = [
     ],
     "coolerType": "Air",
     "noise": 29.9,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 157,
+    "tdp_rating": 260,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14734,
@@ -36818,7 +36977,11 @@ export const PARTS = [
     "weight": "3.7 Pounds",
     "coolerType": "AIO",
     "noise": 25,
-    "compatibility": "Cpu, Desktop"
+    "compatibility": "Cpu, Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14735,
@@ -36884,7 +37047,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 30,
-    "compatibility": "Cpu, Desktop"
+    "compatibility": "Cpu, Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14737,
@@ -36913,7 +37078,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 29.8,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": false
   },
   {
     "id": 14738,
@@ -36942,7 +37109,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 29.8,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": false
   },
   {
     "id": 14739,
@@ -36972,7 +37141,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 37.6,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14740,
@@ -37001,7 +37172,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 34,
-    "compatibility": "Desktop, computer"
+    "compatibility": "Desktop, computer",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14741,
@@ -37029,7 +37202,11 @@ export const PARTS = [
     "upc": "755225315896",
     "coolerType": "AIO",
     "noise": 28.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14742,
@@ -37124,7 +37301,12 @@ export const PARTS = [
     "weight": "2.45 Pounds",
     "coolerType": "Air",
     "noise": 27.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 158,
+    "tdp_rating": 200,
+    "fans_inc": 1,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14745,
@@ -37155,7 +37337,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 14.4,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14746,
@@ -37186,7 +37370,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 30,
-    "compatibility": "Cpu, Desktop"
+    "compatibility": "Cpu, Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14747,
@@ -37243,7 +37429,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 23,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14749,
@@ -37272,7 +37460,11 @@ export const PARTS = [
     "upc": "765026044796",
     "coolerType": "AIO",
     "noise": 23,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 240,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14750,
@@ -37334,7 +37526,11 @@ export const PARTS = [
     "upc": "765026044758",
     "coolerType": "AIO",
     "noise": 23,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14752,
@@ -37392,7 +37588,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 30,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14754,
@@ -37421,7 +37619,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 0.02,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14755,
@@ -37449,7 +37649,12 @@ export const PARTS = [
     "upc": "710421182284",
     "coolerType": "Air",
     "noise": 25.6,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 61,
+    "tdp_rating": 180,
+    "fans_inc": 1,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14756,
@@ -37509,7 +37714,11 @@ export const PARTS = [
     "upc": "755225865636",
     "coolerType": "AIO",
     "noise": 23,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14758,
@@ -37537,7 +37746,11 @@ export const PARTS = [
     "upc": "765026043461",
     "coolerType": "AIO",
     "noise": 25.6,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 240,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14759,
@@ -37565,7 +37778,11 @@ export const PARTS = [
     "upc": "765026043485",
     "coolerType": "AIO",
     "noise": 25.6,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14760,
@@ -37627,7 +37844,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 27.76,
-    "compatibility": "Cpu"
+    "compatibility": "Cpu",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14762,
@@ -37720,7 +37939,11 @@ export const PARTS = [
     "weight": "4.05 Pounds",
     "coolerType": "AIO",
     "noise": 24.8,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14765,
@@ -37782,7 +38005,12 @@ export const PARTS = [
     "upc": "764035266861",
     "coolerType": "Air",
     "noise": 25.6,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 160,
+    "tdp_rating": 265,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14767,
@@ -37843,7 +38071,11 @@ export const PARTS = [
     "upc": "764035263204",
     "coolerType": "AIO",
     "noise": 28.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14769,
@@ -37871,7 +38103,11 @@ export const PARTS = [
     "upc": "764035263181",
     "coolerType": "AIO",
     "noise": 28.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 240,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14770,
@@ -37899,7 +38135,11 @@ export const PARTS = [
     "upc": "769047391662",
     "coolerType": "AIO",
     "noise": 22.1,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14771,
@@ -37927,7 +38167,12 @@ export const PARTS = [
     ],
     "coolerType": "Air",
     "noise": 24.3,
-    "compatibility": "Intel Socket: LGA 115x/12xx/17xx; AMD Socket: AM5, AM4"
+    "compatibility": "Intel Socket: LGA 115x/12xx/17xx; AMD Socket: AM5, AM4",
+    "height": 158,
+    "tdp_rating": 200,
+    "fans_inc": 1,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14772,
@@ -37955,7 +38200,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 28,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14773,
@@ -37980,7 +38227,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/61TiyXAA+FL._SL1200_.jpg",
       "https://m.media-amazon.com/images/I/41yBIru97BL._SL1200_.jpg"
     ],
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "radSize": 240,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14774,
@@ -38009,7 +38260,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 30,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14775,
@@ -38070,7 +38323,12 @@ export const PARTS = [
     "weight": "2 Pounds",
     "coolerType": "Air",
     "noise": 25.6,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 155,
+    "tdp_rating": 200,
+    "fans_inc": 1,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14777,
@@ -38100,7 +38358,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 37.7,
-    "compatibility": "Cpu"
+    "compatibility": "Cpu",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14778,
@@ -38128,7 +38388,11 @@ export const PARTS = [
     "upc": "764035263389",
     "coolerType": "AIO",
     "noise": 22.1,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 240,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14779,
@@ -38190,7 +38454,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 33,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14781,
@@ -38251,7 +38517,10 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 22.1,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14783,
@@ -38307,7 +38576,12 @@ export const PARTS = [
     "upc": "850070935463",
     "coolerType": "Air",
     "noise": 29,
-    "compatibility": "Intel LGA 115X/1200/1700/1851 & AMD AM4/AM5"
+    "compatibility": "Intel LGA 115X/1200/1700/1851 & AMD AM4/AM5",
+    "height": 154,
+    "tdp_rating": 220,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14785,
@@ -38335,7 +38609,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 27.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14786,
@@ -38363,7 +38639,11 @@ export const PARTS = [
     "upc": "769047390283",
     "coolerType": "AIO",
     "noise": 29.8,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14787,
@@ -38424,7 +38704,10 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 25.6,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14789,
@@ -38453,7 +38736,12 @@ export const PARTS = [
     "weight": "1.12 Pounds",
     "coolerType": "Air",
     "noise": 30.04,
-    "compatibility": "Cpu, Desktop"
+    "compatibility": "Cpu, Desktop",
+    "height": 130,
+    "tdp_rating": 100,
+    "fans_inc": 1,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14790,
@@ -38483,7 +38771,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 32,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14791,
@@ -38546,7 +38836,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 14.4,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14793,
@@ -38575,7 +38867,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 15,
-    "compatibility": "Cpu"
+    "compatibility": "Cpu",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14794,
@@ -38605,7 +38899,12 @@ export const PARTS = [
     "weight": "2.54 Pounds",
     "coolerType": "Air",
     "noise": 29.8,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 157,
+    "tdp_rating": 245,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14795,
@@ -38633,7 +38932,12 @@ export const PARTS = [
     "upc": "762316195718",
     "weight": "1.89 Kilograms",
     "coolerType": "Air",
-    "compatibility": "AM5, LGA1700"
+    "compatibility": "AM5, LGA1700",
+    "height": 160,
+    "tdp_rating": 265,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14796,
@@ -38663,7 +38967,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 35.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14797,
@@ -38691,7 +38997,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 36,
-    "compatibility": "Computer Case"
+    "compatibility": "Computer Case",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14798,
@@ -38719,7 +39027,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 35.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": false
   },
   {
     "id": 14799,
@@ -38748,7 +39058,10 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 23,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14800,
@@ -38776,7 +39089,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 29.9,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14801,
@@ -38803,36 +39118,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 20,
-    "compatibility": "Desktop"
-  },
-  {
-    "id": 14802,
-    "n": "HAF 500 Pro High Airflow Mid-Tower ATX Gaming Case|Power|Thermal, Hyper 212 Halo CPU Cooler, MWE 650W Gold PSU",
-    "img": "https://m.media-amazon.com/images/I/81XiEjhmHiL._AC_SL1500_.jpg",
-    "c": "CPUCooler",
-    "b": "Cooler Master",
-    "pr": 169.81,
-    "msrp": 169.81,
-    "r": 4.9,
-    "asin": "B0DWRDN3RM",
-    "reviews": 28,
-    "deals": {
-      "amazon": {
-        "price": 169.81,
-        "url": "https://www.amazon.com/dp/B0DWRDN3RM?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71ygliGTO1L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71yuUJ12PKL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71-XBmI2WEL._AC_SL1500_.jpg"
-    ],
-    "upc": "884102115899",
-    "mpn": "HAF 5 Pro",
-    "weight": "31 Pounds",
-    "coolerType": "Air",
-    "compatibility": "E-ATX motherboards, high-end GPUs (up to Nvidia RTX 5090), various radiator sizes, 650W power supply, and high-performance CPU coolers"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14803,
@@ -38894,7 +39182,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 36,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14805,
@@ -38923,7 +39213,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 31.4,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14806,
@@ -38953,7 +39245,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 33.8,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14807,
@@ -38982,7 +39276,10 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 22.1,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14808,
@@ -39070,7 +39367,11 @@ export const PARTS = [
     "upc": "197105904989",
     "weight": "5.15 Pounds",
     "coolerType": "AIO",
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14811,
@@ -39101,7 +39402,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 38.5,
-    "compatibility": "Cpu, Desktop"
+    "compatibility": "Cpu, Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14812,
@@ -39129,7 +39432,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 27,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14813,
@@ -39158,7 +39463,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 27,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14814,
@@ -39188,7 +39495,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "240",
     "noise": 35.4,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": false
   },
   {
     "id": 14815,
@@ -39217,7 +39526,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 39.9,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14816,
@@ -39245,7 +39556,12 @@ export const PARTS = [
     "weight": "3.2 Pounds",
     "coolerType": "Air",
     "noise": 34.17,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 157,
+    "tdp_rating": 245,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14817,
@@ -39274,7 +39590,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 20,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14818,
@@ -39337,7 +39655,9 @@ export const PARTS = [
     "weight": "4 Pounds",
     "coolerType": "AIO",
     "radSize": "240",
-    "compatibility": "Desktop, Gaming Console"
+    "compatibility": "Desktop, Gaming Console",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14820,
@@ -39362,7 +39682,11 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/41xNN5HdjOL._SL1500_.jpg",
       "https://m.media-amazon.com/images/I/51kZP0rTi9L._SL1500_.jpg"
     ],
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14821,
@@ -39392,7 +39716,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "280",
     "noise": 123,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 2,
+    "rgb": true
   },
   {
     "id": 14822,
@@ -39455,7 +39781,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 39.9,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14824,
@@ -39484,7 +39812,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 34.8,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": true
   },
   {
     "id": 14825,
@@ -39545,7 +39875,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "radSize": "360",
     "noise": 29.8,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "fans_inc": 3,
+    "rgb": false
   },
   {
     "id": 14827,
@@ -39637,7 +39969,12 @@ export const PARTS = [
     "upc": "739538428634",
     "coolerType": "Air",
     "noise": 25.6,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 160,
+    "tdp_rating": 265,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14830,
@@ -39666,7 +40003,12 @@ export const PARTS = [
     "weight": "1.57 Pounds",
     "coolerType": "Air",
     "noise": 23.85,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "height": 129,
+    "tdp_rating": 180,
+    "fans_inc": 2,
+    "sockets": "AM5,AM4,LGA1700,LGA1200",
+    "rgb": false
   },
   {
     "id": 14831,
@@ -39694,7 +40036,11 @@ export const PARTS = [
     "upc": "199291047860",
     "coolerType": "AIO",
     "noise": 37.4,
-    "compatibility": "Desktop, Laptop"
+    "compatibility": "Desktop, Laptop",
+    "radSize": 360,
+    "fans_inc": 3,
+    "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
+    "rgb": true
   },
   {
     "id": 14832,
@@ -87740,35 +88086,10 @@ export const PARTS = [
     "fans_inc": 1,
     "rgb": false,
     "color": "Black/White",
-    "socketsSupported": "Socket R4 (LGA 2066)"
-  },
-  {
-    "id": 16287,
-    "n": "Thermaltake - UX200 5V Motherboard ARGB Sync 16.8 Million Colors 15 Addressable LED Intel/AMD Universal CPU Cooler - Bla",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6459/6459365_sd.jpg",
-    "c": "CPUCooler",
-    "b": "Thermaltake",
-    "pr": 39.99,
-    "msrp": 39.99,
-    "r": 0,
-    "upc": "841163071618",
-    "mpn": "CL-P065-AL12SW-A",
-    "deals": {
-      "bestbuy": {
-        "price": 39.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6459365&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6459365.p%3FskuId%3D6459365",
-        "inStock": true
-      }
-    },
-    "coolerType": "Air",
-    "fanSize": 120,
-    "noise": 26.33,
-    "rpm": 1500,
-    "cfm": 43.34,
-    "fans_inc": 1,
-    "rgb": true,
-    "color": "Black",
-    "socketsSupported": "Socket R4 (LGA 2066)"
+    "socketsSupported": "Socket R4 (LGA 2066)",
+    "height": 155,
+    "tdp_rating": 140,
+    "sockets": "AM5,AM4,LGA1700,LGA1200"
   },
   {
     "id": 16288,
@@ -87796,7 +88117,10 @@ export const PARTS = [
     "fans_inc": 2,
     "rgb": false,
     "color": "Black/Silver",
-    "socketsSupported": "Socket LGA 1700"
+    "socketsSupported": "Socket LGA 1700",
+    "height": 155,
+    "tdp_rating": 180,
+    "sockets": "AM5,AM4,LGA1700,LGA1200"
   },
   {
     "id": 16289,
@@ -87824,35 +88148,10 @@ export const PARTS = [
     "fans_inc": 1,
     "rgb": false,
     "color": "Black",
-    "socketsSupported": "Socket LGA 1700"
-  },
-  {
-    "id": 16290,
-    "n": "Thermaltake - UX200 SE ARGB Lighting CPU Cooler - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6539/6539983_sd.jpg",
-    "c": "CPUCooler",
-    "b": "Thermaltake",
-    "pr": 29.99,
-    "msrp": 29.99,
-    "r": 0,
-    "upc": "841163080542",
-    "mpn": "CL-P105-AL12SW-A",
-    "deals": {
-      "bestbuy": {
-        "price": 29.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6539983&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6539983.p%3FskuId%3D6539983",
-        "inStock": true
-      }
-    },
-    "coolerType": "Air",
-    "fanSize": 120,
-    "noise": 25,
-    "rpm": 1800,
-    "cfm": 62.72,
-    "fans_inc": 1,
-    "rgb": true,
-    "color": "Black",
-    "socketsSupported": "Socket LGA 1700"
+    "socketsSupported": "Socket LGA 1700",
+    "height": 155,
+    "tdp_rating": 140,
+    "sockets": "AM5,AM4,LGA1700,LGA1200"
   },
   {
     "id": 16291,
