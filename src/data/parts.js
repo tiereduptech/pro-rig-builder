@@ -14422,7 +14422,7 @@ export const PARTS = [
     "r": 4.5,
     "socket": "AM5",
     "chipset": "B650E",
-    "ff": "ITX",
+    "ff": "Mini-ITX",
     "memSlots": 2,
     "memType": "DDR5",
     "maxMem": 96,
@@ -14453,7 +14453,7 @@ export const PARTS = [
     "r": 4.5,
     "socket": "AM5",
     "chipset": "B650",
-    "ff": "ITX",
+    "ff": "Mini-ITX",
     "memSlots": 2,
     "memType": "DDR5",
     "maxMem": 96,
@@ -14484,7 +14484,7 @@ export const PARTS = [
     "r": 4.5,
     "socket": "LGA1700",
     "chipset": "Z790",
-    "ff": "ITX",
+    "ff": "Mini-ITX",
     "memSlots": 2,
     "memType": "DDR5",
     "maxMem": 96,
@@ -46794,7 +46794,8 @@ export const PARTS = [
     "memType": "DRAM",
     "maxMem": 192,
     "memSlots": 2,
-    "wifi": "WiFi 6E"
+    "wifi": "WiFi 6E",
+    "ff": "ATX"
   },
   {
     "id": 15037,
@@ -46851,7 +46852,8 @@ export const PARTS = [
     "mpn": "7600X",
     "socket": "AM5",
     "chipset": "B650",
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "ATX"
   },
   {
     "id": 15039,
@@ -47050,7 +47052,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 192,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15045,
@@ -48174,7 +48177,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 128,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "ATX"
   },
   {
     "id": 15076,
@@ -48556,7 +48560,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 128,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15087,
@@ -48953,7 +48958,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 128,
     "memSlots": 4,
-    "wifi": "WiFi"
+    "wifi": "WiFi",
+    "ff": "mATX"
   },
   {
     "id": 15098,
@@ -49087,7 +49093,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 128,
     "memSlots": 4,
-    "wifi": "WiFi 5"
+    "wifi": "WiFi 5",
+    "ff": "mATX"
   },
   {
     "id": 15102,
@@ -49119,7 +49126,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 64,
     "memSlots": 2,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15103,
@@ -49712,7 +49720,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 64,
     "memSlots": 2,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15120,
@@ -49996,7 +50005,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "ff": "ATX"
   },
   {
     "id": 15128,
@@ -50480,7 +50490,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 128,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "ATX"
   },
   {
     "id": 15142,
@@ -50553,7 +50564,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 64,
     "memSlots": 1,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15144,
@@ -50750,7 +50762,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 64,
     "memSlots": 2,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15150,
@@ -51230,7 +51243,8 @@ export const PARTS = [
     "memType": "DIMM",
     "maxMem": 128,
     "memSlots": 4,
-    "wifi": "WiFi"
+    "wifi": "WiFi",
+    "ff": "ATX"
   },
   {
     "id": 15164,
@@ -51301,7 +51315,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 64,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15166,
@@ -51468,7 +51483,8 @@ export const PARTS = [
     "memType": "DDR",
     "maxMem": 1,
     "memSlots": 4,
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "ff": "ATX"
   },
   {
     "id": 15171,
@@ -51501,7 +51517,7 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 1,
     "memSlots": 2,
-    "ff": "ATX",
+    "ff": "mATX",
     "wifi": "None"
   },
   {
@@ -51535,7 +51551,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 128,
     "memSlots": 4,
-    "wifi": "WiFi 6"
+    "wifi": "WiFi 6",
+    "ff": "mATX"
   },
   {
     "id": 15173,
@@ -51668,7 +51685,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 128,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15177,
@@ -51836,7 +51854,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "ff": "ATX"
   },
   {
     "id": 15182,
@@ -51937,7 +51956,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 192,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15185,
@@ -52334,7 +52354,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 192,
     "memSlots": 4,
-    "wifi": "WiFi"
+    "wifi": "WiFi",
+    "ff": "ATX"
   },
   {
     "id": 15197,
@@ -52602,7 +52623,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "ff": "ATX"
   },
   {
     "id": 15205,
@@ -52634,7 +52656,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 64,
     "memSlots": 2,
-    "ff": "ITX",
+    "ff": "Mini-ITX",
     "wifi": "WiFi"
   },
   {
@@ -52667,7 +52689,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "WiFi"
+    "wifi": "WiFi",
+    "ff": "mATX"
   },
   {
     "id": 15207,
@@ -52766,7 +52789,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 128,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "ATX"
   },
   {
     "id": 15210,
@@ -52905,7 +52929,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 192,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "ATX"
   },
   {
     "id": 15214,
@@ -52937,7 +52962,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "ATX"
   },
   {
     "id": 15215,
@@ -53069,7 +53095,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 128,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "ATX"
   },
   {
     "id": 15219,
@@ -53102,7 +53129,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "WiFi 6E"
+    "wifi": "WiFi 6E",
+    "ff": "mATX"
   },
   {
     "id": 15220,
@@ -53174,7 +53202,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "WiFi"
+    "wifi": "WiFi",
+    "ff": "mATX"
   },
   {
     "id": 15222,
@@ -53241,7 +53270,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 128,
     "memSlots": 4,
-    "wifi": "WiFi"
+    "wifi": "WiFi",
+    "ff": "mATX"
   },
   {
     "id": 15224,
@@ -53474,7 +53504,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "ff": "ATX"
   },
   {
     "id": 15231,
@@ -53541,7 +53572,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 64,
     "memSlots": 2,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15233,
@@ -53879,7 +53911,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 128,
     "memSlots": 2,
-    "ff": "ITX",
+    "ff": "Mini-ITX",
     "wifi": "WiFi"
   },
   {
@@ -54078,7 +54110,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 64,
     "memSlots": 2,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15249,
@@ -54110,7 +54143,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "ff": "ATX"
   },
   {
     "id": 15250,
@@ -54246,7 +54280,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 128,
     "memSlots": 2,
-    "ff": "ATX",
+    "ff": "Mini-ITX",
     "wifi": "WiFi"
   },
   {
@@ -54347,7 +54381,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "ff": "ATX"
   },
   {
     "id": 15257,
@@ -54519,7 +54554,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 128,
     "memSlots": 2,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "Mini-ITX"
   },
   {
     "id": 15262,
@@ -54719,7 +54755,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 128,
     "memSlots": 2,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15268,
@@ -54888,7 +54925,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "ATX"
   },
   {
     "id": 15273,
@@ -55615,7 +55653,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 128,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "Mini-ITX"
   },
   {
     "id": 15294,
@@ -55785,7 +55824,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 192,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15299,
@@ -56344,7 +56384,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15316,
@@ -56411,7 +56452,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 128,
     "memSlots": 4,
-    "wifi": "WiFi"
+    "wifi": "WiFi",
+    "ff": "ATX"
   },
   {
     "id": 15318,
@@ -56511,7 +56553,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "WiFi 6E"
+    "wifi": "WiFi 6E",
+    "ff": "ATX"
   },
   {
     "id": 15321,
@@ -56543,7 +56586,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "ff": "ATX"
   },
   {
     "id": 15322,
@@ -56642,7 +56686,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "ff": "mATX"
   },
   {
     "id": 15325,
@@ -56842,7 +56887,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 64,
     "memSlots": 2,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15331,
@@ -57241,7 +57287,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15343,
@@ -57339,7 +57386,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 32,
     "memSlots": 2,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "ATX"
   },
   {
     "id": 15346,
@@ -57534,7 +57582,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "ATX"
   },
   {
     "id": 15352,
@@ -57601,7 +57650,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "ff": "mATX"
   },
   {
     "id": 15354,
@@ -57942,7 +57992,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 256,
     "memSlots": 4,
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "ff": "mATX"
   },
   {
     "id": 15364,
@@ -58082,7 +58133,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 64,
     "memSlots": 2,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "Mini-ITX"
   },
   {
     "id": 15368,
@@ -58148,7 +58200,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 128,
     "memSlots": 2,
-    "ff": "ITX",
+    "ff": "Mini-ITX",
     "wifi": "WiFi"
   },
   {
@@ -58214,7 +58266,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 128,
     "memSlots": 2,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15372,
@@ -58246,7 +58299,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 128,
     "memSlots": 2,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15373,
@@ -58312,7 +58366,8 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": 128,
     "memSlots": 4,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15375,
@@ -58414,7 +58469,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 128,
     "memSlots": 2,
-    "ff": "ITX",
+    "ff": "Mini-ITX",
     "wifi": "WiFi"
   },
   {
@@ -58512,7 +58567,8 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": 128,
     "memSlots": 2,
-    "wifi": "None"
+    "wifi": "None",
+    "ff": "mATX"
   },
   {
     "id": 15381,
@@ -100402,7 +100458,7 @@ export const PARTS = [
     "m2Slots": 2,
     "wifi": "WiFi 6",
     "color": "Black",
-    "ff": "microATX"
+    "ff": "mATX"
   },
   {
     "id": 16742,
@@ -100541,7 +100597,7 @@ export const PARTS = [
     "memType": "DDR4",
     "m2Slots": 2,
     "color": "Black",
-    "ff": "microATX",
+    "ff": "mATX",
     "wifi": "WiFi 6E"
   },
   {
@@ -100681,7 +100737,7 @@ export const PARTS = [
     "memType": "DDR5",
     "m2Slots": 3,
     "color": "White",
-    "ff": "microATX",
+    "ff": "mATX",
     "wifi": "WiFi 7"
   },
   {
@@ -100765,7 +100821,7 @@ export const PARTS = [
     "memType": "DDR5",
     "m2Slots": 7,
     "color": "Black",
-    "ff": "EATX",
+    "ff": "E-ATX",
     "wifi": "WiFi 7"
   },
   {
