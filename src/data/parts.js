@@ -5776,7 +5776,15 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B072N84DG6?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "lanSpeed": "10GbE",
+    "ports": 1,
+    "pcieLane": "x4",
+    "profile": "Full Height",
+    "connector": "RJ45",
+    "wol": true,
+    "vlan": false,
+    "pxe": false
   },
   {
     "id": 11011,
@@ -5796,7 +5804,15 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0FHZGXZH7?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "lanSpeed": "10GbE",
+    "ports": 1,
+    "pcieLane": "x4",
+    "profile": "Full Height",
+    "connector": "RJ45",
+    "wol": true,
+    "vlan": false,
+    "pxe": false
   },
   {
     "id": 11020,
@@ -5817,7 +5833,14 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B07X462KRK?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "bt": "BT 5.3",
+    "antennas": 2,
+    "band": "Tri-Band",
+    "pcieLane": "x1",
+    "heatsink": false,
+    "maxSpeed": 5400,
+    "chipset": "Intel AX210"
   },
   {
     "id": 11021,
@@ -5838,7 +5861,14 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09PRB1MZM?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "antennas": 2,
+    "maxSpeed": 3000,
+    "band": "Dual-Band",
+    "pcieLane": "x1",
+    "heatsink": false,
+    "bt": "BT 5.2",
+    "chipset": "Intel AX200"
   },
   {
     "id": 11100,
@@ -5857,7 +5887,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "storageType": "Blu-ray Writer"
+    "storageType": "Blu-ray Writer",
+    "driveType": "Blu-ray Writer",
+    "interface": "SATA",
+    "formFactor": "5.25\"",
+    "mdisc": false,
+    "readSpeed": "16x BD / 16x DVD",
+    "writeSpeed": "16x BD-R"
   },
   {
     "id": 11101,
@@ -5876,7 +5912,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "storageType": "DVD Writer"
+    "storageType": "DVD Writer",
+    "driveType": "DVD Writer",
+    "interface": "SATA",
+    "formFactor": "5.25\"",
+    "mdisc": false,
+    "readSpeed": "48x CD / 16x DVD",
+    "writeSpeed": "24x DVD±R"
   },
   {
     "id": 12001,
@@ -103659,7 +103701,13 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "storageType": "DVD/CD"
+    "storageType": "DVD/CD",
+    "driveType": "DVD Writer",
+    "interface": "SATA",
+    "formFactor": "5.25\"",
+    "mdisc": false,
+    "readSpeed": "48x CD / 16x DVD",
+    "writeSpeed": "24x DVD±R"
   },
   {
     "id": 16759,
@@ -109204,1497 +109252,6 @@ export const PARTS = [
     "value": 3
   },
   {
-    "id": 17000,
-    "n": "Insignia™ - USB to Ethernet Adapter - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6483/6483535cv11d.jpg",
-    "c": "EthernetCard",
-    "b": "Insignia™",
-    "pr": 20,
-    "msrp": 20,
-    "r": 4.8,
-    "reviews": 934,
-    "upc": "600603326141",
-    "mpn": "NS-PA3U6EV2",
-    "deals": {
-      "bestbuy": {
-        "price": 20,
-        "url": "https://api.bestbuy.com/click/-/6483535/pdp",
-        "inStock": true,
-        "sku": "6483535"
-      }
-    }
-  },
-  {
-    "id": 17001,
-    "n": "j5create - USB 3.0 Gigabit Ethernet Adapter - Silver",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/2001/2001047_sd.jpg",
-    "c": "EthernetCard",
-    "b": "j5create",
-    "pr": 25,
-    "msrp": 25,
-    "r": 4.7,
-    "reviews": 2456,
-    "upc": "847626000164",
-    "mpn": "JUE130",
-    "deals": {
-      "bestbuy": {
-        "price": 25,
-        "url": "https://api.bestbuy.com/click/-/2001047/pdp",
-        "inStock": true,
-        "sku": "2001047"
-      }
-    }
-  },
-  {
-    "id": 17002,
-    "n": "Insignia™ - USB-C to Ethernet Adapter - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6521/6521726_sd.jpg",
-    "c": "EthernetCard",
-    "b": "Insignia™",
-    "pr": 20,
-    "msrp": 20,
-    "r": 4.8,
-    "reviews": 451,
-    "upc": "600603315398",
-    "mpn": "NS-PA3CELB23",
-    "deals": {
-      "bestbuy": {
-        "price": 20,
-        "url": "https://api.bestbuy.com/click/-/6521726/pdp",
-        "inStock": true,
-        "sku": "6521726"
-      }
-    }
-  },
-  {
-    "id": 17004,
-    "n": "Belkin - USB-C to Ethernet + Charge Adapter with gigabit Ethernet port and USB Power Delivery up to 100W - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/89a8b6bc-fdce-49d5-af85-45a7105af29a.png",
-    "c": "EthernetCard",
-    "b": "Belkin",
-    "pr": 35,
-    "msrp": 35,
-    "r": 4.7,
-    "reviews": 46,
-    "upc": "745883877584",
-    "mpn": "INC019BTBK",
-    "deals": {
-      "bestbuy": {
-        "price": 35,
-        "url": "https://api.bestbuy.com/click/-/6576736/pdp",
-        "inStock": true,
-        "sku": "6576736"
-      }
-    }
-  },
-  {
-    "id": 17005,
-    "n": "Best Buy essentials™ - USB-C to Ethernet Adapter - White",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6523/6523711ld.jpg",
-    "c": "EthernetCard",
-    "b": "Best Buy essentials™",
-    "pr": 15,
-    "msrp": 15,
-    "r": 4.8,
-    "reviews": 663,
-    "upc": "600603315374",
-    "mpn": "BE-PA2CEW23",
-    "deals": {
-      "bestbuy": {
-        "price": 15,
-        "url": "https://api.bestbuy.com/click/-/6523711/pdp",
-        "inStock": true,
-        "sku": "6523711"
-      }
-    }
-  },
-  {
-    "id": 17006,
-    "n": "Logitech - Logi USB-C to Ethernet Adapter for Logi Dock - Black",
-    "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6579/6579390cv11d.jpg",
-    "c": "EthernetCard",
-    "b": "Logitech",
-    "pr": 50,
-    "msrp": 50,
-    "r": 0,
-    "reviews": 0,
-    "upc": "097855188434",
-    "mpn": "952-000149",
-    "deals": {
-      "bestbuy": {
-        "price": 50,
-        "url": "https://api.bestbuy.com/click/-/6579390/pdp",
-        "inStock": true,
-        "sku": "6579390"
-      }
-    }
-  },
-  {
-    "id": 17030,
-    "n": "GIGABYTE - B850 EAGLE WIFI6E (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 6E Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/61e2c2af-2140-43de-b880-1dce7afbe322.jpg",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 81,
-    "msrp": 200,
-    "r": 5,
-    "reviews": 1,
-    "upc": "889523046302",
-    "mpn": "B850 EAGLE WIFI6E",
-    "deals": {
-      "bestbuy": {
-        "price": 81,
-        "url": "https://api.bestbuy.com/click/-/6619027/pdp",
-        "inStock": true,
-        "sku": "6619027"
-      }
-    }
-  },
-  {
-    "id": 17031,
-    "n": "GIGABYTE - B850M EAGLE WIFI6E (Socket AM5) AMD B850 Micro-ATX DDR5 Wi-Fi 6E Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8cb4776b-ef2e-4952-98f5-b052cf13c4a7.png",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 150,
-    "msrp": 165,
-    "r": 5,
-    "reviews": 1,
-    "upc": "889523049693",
-    "mpn": "B850M EAGLE WIFI6E",
-    "deals": {
-      "bestbuy": {
-        "price": 150,
-        "url": "https://api.bestbuy.com/click/-/6637465/pdp",
-        "inStock": true,
-        "sku": "6637465"
-      }
-    }
-  },
-  {
-    "id": 17032,
-    "n": "MSI - MAG B650 Tomahawk WIFI (Socket AM5) AMD B650 ATX DDR5 Wi-Fi 6E Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/62c0920e-7df4-44f3-a871-5488ddd543d1.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 220,
-    "msrp": 220,
-    "r": 4.6,
-    "reviews": 494,
-    "upc": "824142301036",
-    "mpn": "MAG B650 TOMAHAWK WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 220,
-        "url": "https://api.bestbuy.com/click/-/6528249/pdp",
-        "inStock": true,
-        "sku": "6528249"
-      }
-    }
-  },
-  {
-    "id": 17033,
-    "n": "MSI - PRO B650-P WIFI (Socket AM5) AMD B650 ATX DDR5 Wi-Fi 6E Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6528/6528250_sd.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 150,
-    "msrp": 200,
-    "r": 4.7,
-    "reviews": 72,
-    "upc": "824142301050",
-    "mpn": "PRO B650-P WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 150,
-        "url": "https://api.bestbuy.com/click/-/6528250/pdp",
-        "inStock": true,
-        "sku": "6528250"
-      }
-    }
-  },
-  {
-    "id": 17034,
-    "n": "MSI - MPG X670E CARBON WIFI (Socket AM5) AMD X670 ATX DDR5 Wi-Fi 6E Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c4a9f4db-7f7b-46d1-acfc-d1a51bc95be2.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 480,
-    "msrp": 480,
-    "r": 4.4,
-    "reviews": 36,
-    "upc": "824142299333",
-    "mpn": "MPG X670E CARBON WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 480,
-        "url": "https://api.bestbuy.com/click/-/6528253/pdp",
-        "inStock": true,
-        "sku": "6528253"
-      }
-    }
-  },
-  {
-    "id": 17035,
-    "n": "ASUS - PRIME B840-PLUS WIFI (Socket AM5) AMD B840 ATX DDR5 Wi-Fi 6E Motherboard - White",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/dcb2a854-48a9-4ab7-a97b-36deb008e468.png",
-    "c": "WiFiCard",
-    "b": "ASUS",
-    "pr": 101,
-    "msrp": 200,
-    "r": 4.3,
-    "reviews": 4,
-    "upc": "197105797277",
-    "mpn": "PRIME B840-PLUS WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 101,
-        "url": "https://api.bestbuy.com/click/-/6612913/pdp",
-        "inStock": true,
-        "sku": "6612913"
-      }
-    }
-  },
-  {
-    "id": 17036,
-    "n": "GIGABYTE - B850M GAMING X WIFI6E (Socket AM5) AMD B850 mATX DDR5 Wi-Fi 6E Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ae8aa528-8109-4462-8745-397d84551eba.jpg",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 150,
-    "msrp": 180,
-    "r": 4.7,
-    "reviews": 6,
-    "upc": "889523046166",
-    "mpn": "B850M GAMING X WIFI6E",
-    "deals": {
-      "bestbuy": {
-        "price": 150,
-        "url": "https://api.bestbuy.com/click/-/6619033/pdp",
-        "inStock": true,
-        "sku": "6619033"
-      }
-    }
-  },
-  {
-    "id": 17037,
-    "n": "MSI - PRO B550M-VC WIFI (Socket AM4) AMD B550 MATX DDR4 Wi-Fi 6E Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/e4ee2982-6d86-45ab-b4ac-dd6148a5d372.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 100,
-    "msrp": 120,
-    "r": 4.8,
-    "reviews": 17,
-    "upc": "824142299258",
-    "mpn": "PRO B550M-VC WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 100,
-        "url": "https://api.bestbuy.com/click/-/6629572/pdp",
-        "inStock": true,
-        "sku": "6629572"
-      }
-    }
-  },
-  {
-    "id": 17038,
-    "n": "MSI - PRO B850-S WIFI6E(Socket AM5) AMD B850 ATX DDR5 Wi-Fi 6E Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d3247c90-3b91-4d63-8bb3-933d4f6542be.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 150,
-    "msrp": 170,
-    "r": 5,
-    "reviews": 1,
-    "upc": "824142433577",
-    "mpn": "PRO B850-S WIFI6E",
-    "deals": {
-      "bestbuy": {
-        "price": 150,
-        "url": "https://api.bestbuy.com/click/-/6665011/pdp",
-        "inStock": true,
-        "sku": "6665011"
-      }
-    }
-  },
-  {
-    "id": 17039,
-    "n": "MSI - B850 GAMING PLUS WIFI6E (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 6E Motherboard - Gray",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/18afc25a-9760-43e6-b974-c188b7401357.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 150,
-    "msrp": 180,
-    "r": 0,
-    "reviews": 0,
-    "upc": "824142433560",
-    "mpn": "B850 GAMING PLUS WIFI6E",
-    "deals": {
-      "bestbuy": {
-        "price": 150,
-        "url": "https://api.bestbuy.com/click/-/6665014/pdp",
-        "inStock": true,
-        "sku": "6665014"
-      }
-    }
-  },
-  {
-    "id": 17040,
-    "n": "MSI - Z790 GAMING PLUS WIFI (Socket LGA 1700) Intel Z790 ATX DDR5 Wi-Fi 6E Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6571/6571301_sd.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 190,
-    "msrp": 220,
-    "r": 4.8,
-    "reviews": 148,
-    "upc": "824142334898",
-    "mpn": "Z790 GAMING PLUS WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 190,
-        "url": "https://api.bestbuy.com/click/-/6571301/pdp",
-        "inStock": true,
-        "sku": "6571301"
-      }
-    }
-  },
-  {
-    "id": 17041,
-    "n": "GIGABYTE - B850M EAGLE WIFI6E ICE (Socket AM5) AMD B850 Micro-ATX DDR5 Wi-Fi 6E Motherboard - White",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/0d3f4a21-99d4-4d14-9883-fadbc120a9a7.png",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 160,
-    "msrp": 165,
-    "r": 5,
-    "reviews": 5,
-    "upc": "889523049679",
-    "mpn": "B850M EAGLE WIFI6E ICE",
-    "deals": {
-      "bestbuy": {
-        "price": 160,
-        "url": "https://api.bestbuy.com/click/-/6637462/pdp",
-        "inStock": true,
-        "sku": "6637462"
-      }
-    }
-  },
-  {
-    "id": 17042,
-    "n": "ASUS - ROG STRIX B650-A GAMING WIFI (Socket AM5) AMD B650 ATX DDR5 Wi-Fi 6E Motherboard - White",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6582/6582203_sd.jpg",
-    "c": "WiFiCard",
-    "b": "ASUS",
-    "pr": 140,
-    "msrp": 250,
-    "r": 4.8,
-    "reviews": 71,
-    "upc": "195553917766",
-    "mpn": "ROG STRIX B650-A GAMING WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 140,
-        "url": "https://api.bestbuy.com/click/-/6582203/pdp",
-        "inStock": true,
-        "sku": "6582203"
-      }
-    }
-  },
-  {
-    "id": 17043,
-    "n": "ASUS - TUF GAMING Z790-PLUS WIFI (Socket LGA 1700) Intel Z790 ATX DDR5 Wi-Fi 6E Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6571/6571645_sd.jpg",
-    "c": "WiFiCard",
-    "b": "ASUS",
-    "pr": 220,
-    "msrp": 250,
-    "r": 4.7,
-    "reviews": 93,
-    "upc": "197105014503",
-    "mpn": "TUF GAMING Z790-PLUS WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 220,
-        "url": "https://api.bestbuy.com/click/-/6571645/pdp",
-        "inStock": true,
-        "sku": "6571645"
-      }
-    }
-  },
-  {
-    "id": 17044,
-    "n": "ASUS - ROG STRIX B650E-F GAMING WIFI (Socket AM5) AMD B650E ATX DDR5 Wi-Fi 6E Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6523/6523721_sd.jpg",
-    "c": "WiFiCard",
-    "b": "ASUS",
-    "pr": 146,
-    "msrp": 290,
-    "r": 4.2,
-    "reviews": 98,
-    "upc": "195553944038",
-    "mpn": "ROG STRIX B650E-F GAMING WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 146,
-        "url": "https://api.bestbuy.com/click/-/6523721/pdp",
-        "inStock": true,
-        "sku": "6523721"
-      }
-    }
-  },
-  {
-    "id": 17055,
-    "n": "GIGABYTE - X870 EAGLE WIFI7 (Socket AM5) AMD X870 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d7615aa2-61c9-44dc-b633-b49817d54fdf.jpg",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 170,
-    "msrp": 255,
-    "r": 4.8,
-    "reviews": 46,
-    "upc": "889523045312",
-    "mpn": "X870 EAGLE WIFI7",
-    "deals": {
-      "bestbuy": {
-        "price": 170,
-        "url": "https://api.bestbuy.com/click/-/6602648/pdp",
-        "inStock": true,
-        "sku": "6602648"
-      }
-    }
-  },
-  {
-    "id": 17056,
-    "n": "MSI - PRO Z890-A WIFI (Socket LGA 1851) Intel Z890 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c7bdf5c4-348a-4527-b42f-478fef7c2401.png",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 230,
-    "msrp": 230,
-    "r": 4.5,
-    "reviews": 15,
-    "upc": "824142382233",
-    "mpn": "PRO Z890-A WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 230,
-        "url": "https://api.bestbuy.com/click/-/6601461/pdp",
-        "inStock": true,
-        "sku": "6601461"
-      }
-    }
-  },
-  {
-    "id": 17057,
-    "n": "GIGABYTE - X870 AORUS ELITE WIFI7 (Socket AM5) AMD X870 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/bd76eac6-2c5e-45d6-b436-f0c63bab0afa.jpg",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 230,
-    "msrp": 320,
-    "r": 4.8,
-    "reviews": 84,
-    "upc": "889523045213",
-    "mpn": "X870 AORUS ELITE WIFI7",
-    "deals": {
-      "bestbuy": {
-        "price": 230,
-        "url": "https://api.bestbuy.com/click/-/6602645/pdp",
-        "inStock": true,
-        "sku": "6602645"
-      }
-    }
-  },
-  {
-    "id": 17058,
-    "n": "MSI - PRO X870-P WIFI (Socket AM5) AMD X870 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6b443f79-49ca-4fdf-ab78-1ea26ba5d410.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 180,
-    "msrp": 230,
-    "r": 4.2,
-    "reviews": 10,
-    "upc": "824142380987",
-    "mpn": "PRO X870-P WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 180,
-        "url": "https://api.bestbuy.com/click/-/6604425/pdp",
-        "inStock": true,
-        "sku": "6604425"
-      }
-    }
-  },
-  {
-    "id": 17059,
-    "n": "MSI - MAG X870 TOMAHAWK WIFI (Socket AM5) AMD X870 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5abbdad4-1e71-4e98-a5ba-f3bad6724bec.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 240,
-    "msrp": 260,
-    "r": 4.7,
-    "reviews": 19,
-    "upc": "824142380499",
-    "mpn": "MAG X870 TOMAHAWK WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 240,
-        "url": "https://api.bestbuy.com/click/-/6604428/pdp",
-        "inStock": true,
-        "sku": "6604428"
-      }
-    }
-  },
-  {
-    "id": 17060,
-    "n": "MSI - MPG X870E CARBON WIFI (Socket AM5) AMD X870E ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5fc5d153-4422-41de-86f2-73ec5d6496b0.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 430,
-    "msrp": 430,
-    "r": 4.8,
-    "reviews": 30,
-    "upc": "824142382219",
-    "mpn": "MPG X870E CARBON WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 430,
-        "url": "https://api.bestbuy.com/click/-/6604429/pdp",
-        "inStock": true,
-        "sku": "6604429"
-      }
-    }
-  },
-  {
-    "id": 17061,
-    "n": "MSI - PRO B850-P WIFI (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c5231d9c-23dd-476e-9d60-662aa87cac89.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 241,
-    "msrp": 241,
-    "r": 4.4,
-    "reviews": 7,
-    "upc": "824142392607",
-    "mpn": "PRO B850-P WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 241,
-        "url": "https://api.bestbuy.com/click/-/6616912/pdp",
-        "inStock": true,
-        "sku": "6616912"
-      }
-    }
-  },
-  {
-    "id": 17062,
-    "n": "MSI - X870 GAMING PLUS WIFI (Socket AM5) AMD X870 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8de964dd-9256-4e0f-b562-d84f840ec8e1.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 270,
-    "msrp": 270,
-    "r": 4.9,
-    "reviews": 22,
-    "upc": "824142390528",
-    "mpn": "X870 GAMING PLUS WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 270,
-        "url": "https://api.bestbuy.com/click/-/6616914/pdp",
-        "inStock": true,
-        "sku": "6616914"
-      }
-    }
-  },
-  {
-    "id": 17063,
-    "n": "MSI - B850 GAMING PLUS WIFI (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8c17de16-a33d-41df-91a3-9610539d36f8.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 170,
-    "msrp": 210,
-    "r": 4.9,
-    "reviews": 12,
-    "upc": "824142392133",
-    "mpn": "B850 GAMING PLUS WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 170,
-        "url": "https://api.bestbuy.com/click/-/6616915/pdp",
-        "inStock": true,
-        "sku": "6616915"
-      }
-    }
-  },
-  {
-    "id": 17064,
-    "n": "MSI - MAG X870E TOMAHAWK WIFI (Socket AM5) AMD X870 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/80d7e347-61de-487a-b328-1728e2f916f7.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 323,
-    "msrp": 330,
-    "r": 4.7,
-    "reviews": 131,
-    "upc": "824142395660",
-    "mpn": "MAG X870E TOMAHAWK WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 323,
-        "url": "https://api.bestbuy.com/click/-/6616917/pdp",
-        "inStock": true,
-        "sku": "6616917"
-      }
-    }
-  },
-  {
-    "id": 17065,
-    "n": "GIGABYTE - B850 AORUS ELITE WIFI7 (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c2e20f2e-c721-477c-b73a-8608c6e9447d.jpg",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 210,
-    "msrp": 255,
-    "r": 4.7,
-    "reviews": 12,
-    "upc": "889523046067",
-    "mpn": "B850 AORUS ELITE WIFI7",
-    "deals": {
-      "bestbuy": {
-        "price": 210,
-        "url": "https://api.bestbuy.com/click/-/6619031/pdp",
-        "inStock": true,
-        "sku": "6619031"
-      }
-    }
-  },
-  {
-    "id": 17066,
-    "n": "GIGABYTE - X870E AORUS ELITE WIFI7 (Socket AM5)AMD X870E ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4edc43ab-b1cb-4590-9f8e-f11d7c0a69b2.jpg",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 280,
-    "msrp": 355,
-    "r": 5,
-    "reviews": 1,
-    "upc": "889523045237",
-    "mpn": "X870E AORUS ELITE WIFI7",
-    "deals": {
-      "bestbuy": {
-        "price": 280,
-        "url": "https://api.bestbuy.com/click/-/6635871/pdp",
-        "inStock": true,
-        "sku": "6635871"
-      }
-    }
-  },
-  {
-    "id": 17067,
-    "n": "MSI - X870E GAMING PLUS WIFI (Socket AM5) AMD X870E ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6a5bc42c-6623-4af5-8cc0-a39f0f000cae.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 220,
-    "msrp": 240,
-    "r": 5,
-    "reviews": 4,
-    "upc": "824142425473",
-    "mpn": "X870E GAMING PLUS WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 220,
-        "url": "https://api.bestbuy.com/click/-/6636989/pdp",
-        "inStock": true,
-        "sku": "6636989"
-      }
-    }
-  },
-  {
-    "id": 17068,
-    "n": "GIGABYTE - B850 EAGLE WIFI7 ICE (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Motherboard - White",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/92835343-9d0d-4ad0-835c-b50516031e44.png",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 180,
-    "msrp": 210,
-    "r": 4,
-    "reviews": 1,
-    "upc": "889523049730",
-    "mpn": "B850 EAGLE WIFI7 ICE",
-    "deals": {
-      "bestbuy": {
-        "price": 180,
-        "url": "https://api.bestbuy.com/click/-/6637469/pdp",
-        "inStock": true,
-        "sku": "6637469"
-      }
-    }
-  },
-  {
-    "id": 17069,
-    "n": "GIGABYTE - Z890 AORUS ELITE WIFI7 (Socket LGA 1851) Intel Z890 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/719666bd-c8cf-4dcc-b75e-8fcfaf02d4da.jpg",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 200,
-    "msrp": 290,
-    "r": 5,
-    "reviews": 1,
-    "upc": "889523045121",
-    "mpn": "Z890 AORUS ELITE WIFI7",
-    "deals": {
-      "bestbuy": {
-        "price": 200,
-        "url": "https://api.bestbuy.com/click/-/6604420/pdp",
-        "inStock": true,
-        "sku": "6604420"
-      }
-    }
-  },
-  {
-    "id": 17070,
-    "n": "MSI - Z890 GAMING PLUS WIFI (Socket LGA 1851) Intel Z890 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8ffc00ce-c524-4f0b-9178-495541411fe6.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 210,
-    "msrp": 210,
-    "r": 4.9,
-    "reviews": 7,
-    "upc": "824142381465",
-    "mpn": "Z890 GAMING PLUS WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 210,
-        "url": "https://api.bestbuy.com/click/-/6604427/pdp",
-        "inStock": true,
-        "sku": "6604427"
-      }
-    }
-  },
-  {
-    "id": 17077,
-    "n": "ASUS - USB-BT500 Bluetooth 5.0 Adapter - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6428/6428133_sd.jpg",
-    "c": "WiFiCard",
-    "b": "ASUS",
-    "pr": 20,
-    "msrp": 20,
-    "r": 4.6,
-    "reviews": 2093,
-    "upc": "192876476772",
-    "mpn": "USB-BT500",
-    "deals": {
-      "bestbuy": {
-        "price": 20,
-        "url": "https://api.bestbuy.com/click/-/6428133/pdp",
-        "inStock": true,
-        "sku": "6428133"
-      }
-    }
-  },
-  {
-    "id": 17083,
-    "n": "Insignia™ - Bluetooth 5.0 USB Adapter for Laptops and Desktops Compatible with Windows 8.1, 10, and 11 - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6500/6500986cv11d.jpg",
-    "c": "WiFiCard",
-    "b": "Insignia™",
-    "pr": 15,
-    "msrp": 15,
-    "r": 4.5,
-    "reviews": 668,
-    "upc": "600603316654",
-    "mpn": "NS-PA3BT5A2B22",
-    "deals": {
-      "bestbuy": {
-        "price": 15,
-        "url": "https://api.bestbuy.com/click/-/6500986/pdp",
-        "inStock": true,
-        "sku": "6500986"
-      }
-    }
-  },
-  {
-    "id": 17084,
-    "n": "ASUS - MA-25 2.5Gbps Ethernet over Coax MoCA Adapter (2-pack) - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f3aac8ef-5bf6-4e7b-94ff-6efc5bc7a125.jpg",
-    "c": "EthernetCard",
-    "b": "ASUS",
-    "pr": 150,
-    "msrp": 150,
-    "r": 4.7,
-    "reviews": 17,
-    "upc": "195553705103",
-    "mpn": "MA-25 2-PK",
-    "deals": {
-      "bestbuy": {
-        "price": 150,
-        "url": "https://api.bestbuy.com/click/-/6618203/pdp",
-        "inStock": true,
-        "sku": "6618203"
-      }
-    }
-  },
-  {
-    "id": 17102,
-    "n": "GIGABYTE - H810M GAMING WIFI6 (Socket LGA 1851) Intel H810 mATX DDR5 Wi-Fi 6 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1f6a8584-0458-4668-b16d-df7e0ef69ce9.jpg",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 66,
-    "msrp": 145,
-    "r": 0,
-    "reviews": 0,
-    "upc": "889523047941",
-    "mpn": "H810M GAMING WIFI6",
-    "deals": {
-      "bestbuy": {
-        "price": 66,
-        "url": "https://api.bestbuy.com/click/-/6637842/pdp",
-        "inStock": true,
-        "sku": "6637842"
-      }
-    }
-  },
-  {
-    "id": 17103,
-    "n": "MSI - B550 TOMAHAWK MAX WIFI (Socket AM4) AMD B550 ATX DDR4 Wi-Fi 6E Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6504/6504286_sd.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 160,
-    "msrp": 160,
-    "r": 4.7,
-    "reviews": 840,
-    "upc": "824142286685",
-    "mpn": "B550TMHWKWIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 160,
-        "url": "https://api.bestbuy.com/click/-/6504286/pdp",
-        "inStock": true,
-        "sku": "6504286"
-      }
-    }
-  },
-  {
-    "id": 17113,
-    "n": "MSI - B550M PRO-VDH WIFI (Socket AM4) AMD B550 MATX DDR4 Wi-Fi 6 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/e65d6dce-c1a4-4d3c-9827-e6529e9cd959.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 95,
-    "msrp": 110,
-    "r": 3.8,
-    "reviews": 10,
-    "upc": "824142219393",
-    "mpn": "B550M PRO-VDH WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 95,
-        "url": "https://api.bestbuy.com/click/-/6629564/pdp",
-        "inStock": true,
-        "sku": "6629564"
-      }
-    }
-  },
-  {
-    "id": 17119,
-    "n": "MSI - PRO Z890-P WIFI (Socket LGA 1851) Intel Z890 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/94df817c-ceb9-4111-bea4-2cdabb6ec90f.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 230,
-    "msrp": 240,
-    "r": 5,
-    "reviews": 1,
-    "upc": "824142381458",
-    "mpn": "PRO Z890-P WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 230,
-        "url": "https://api.bestbuy.com/click/-/6604430/pdp",
-        "inStock": true,
-        "sku": "6604430"
-      }
-    }
-  },
-  {
-    "id": 17120,
-    "n": "MSI - MPG X870E CARBON MAX WIFI (Socket AM5) AMD X870E ATX DDR5 Wi-Fi 7 Ryzen 9000 / 8000 / 7000 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/864be33a-fab6-4bef-b057-0eecc55352f7.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 500,
-    "msrp": 500,
-    "r": 0,
-    "reviews": 0,
-    "upc": "824142451267",
-    "mpn": "MPG X870E CARBON MAX WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 500,
-        "url": "https://api.bestbuy.com/click/-/6676836/pdp",
-        "inStock": true,
-        "sku": "6676836"
-      }
-    }
-  },
-  {
-    "id": 17121,
-    "n": "MSI - MAG X870E GAMING MAX WIFI (Socket AM5) AMD X870E ATX DDR5 Wi-Fi 7 Ryzen 9000 / 8000 / 7000 Motherboard - Black/Sliver",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/b41f3bcc-a967-4a6a-8f22-12703883e0e3.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 260,
-    "msrp": 260,
-    "r": 0,
-    "reviews": 0,
-    "upc": "824142448717",
-    "mpn": "MAG X870E GAMING MAX WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 260,
-        "url": "https://api.bestbuy.com/click/-/6676837/pdp",
-        "inStock": true,
-        "sku": "6676837"
-      }
-    }
-  },
-  {
-    "id": 17122,
-    "n": "GIGABYTE - B850 AORUS ELITE WIFI7 (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Motherboard - White",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ae825e23-eb25-45b3-b592-efefc87361ee.jpg",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 230,
-    "msrp": 255,
-    "r": 4.7,
-    "reviews": 12,
-    "upc": "889523045947",
-    "mpn": "B850 AORUS ELITE WIFI7 ICE",
-    "deals": {
-      "bestbuy": {
-        "price": 230,
-        "url": "https://api.bestbuy.com/click/-/6619029/pdp",
-        "inStock": true,
-        "sku": "6619029"
-      }
-    }
-  },
-  {
-    "id": 17123,
-    "n": "MSI - B850 EDGE TI WIFI (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Motherboard - Gray",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d8b6474e-8d0a-43f3-8053-fa23b8313d86.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 280,
-    "msrp": 310,
-    "r": 5,
-    "reviews": 6,
-    "upc": "824142395349",
-    "mpn": "MPG B850 EDGE TI WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 280,
-        "url": "https://api.bestbuy.com/click/-/6629578/pdp",
-        "inStock": true,
-        "sku": "6629578"
-      }
-    }
-  },
-  {
-    "id": 17124,
-    "n": "ASUS - TUF GAMING X870-PLUS WIFI (Socket AM5) AMD X870 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4d2890e4-b3d7-4818-9db2-caeb104d5538.png",
-    "c": "WiFiCard",
-    "b": "ASUS",
-    "pr": 280,
-    "msrp": 280,
-    "r": 4.6,
-    "reviews": 166,
-    "upc": "197105723603",
-    "mpn": "TUF GAMING X870-PLUS WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 280,
-        "url": "https://api.bestbuy.com/click/-/6601394/pdp",
-        "inStock": true,
-        "sku": "6601394"
-      }
-    }
-  },
-  {
-    "id": 17125,
-    "n": "GIGABYTE - X870 AORUS ELITE WIFI7 ICE (Socket AM5) AMD X870 ATX DDR5 Wi-Fi 7 Motherboard - White",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8d46c47f-233b-43d3-8668-058d8af1ff9b.jpg",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 240,
-    "msrp": 320,
-    "r": 4.9,
-    "reviews": 73,
-    "upc": "889523045176",
-    "mpn": "X870 AORUS ELITE WIFI7 ICE",
-    "deals": {
-      "bestbuy": {
-        "price": 240,
-        "url": "https://api.bestbuy.com/click/-/6602647/pdp",
-        "inStock": true,
-        "sku": "6602647"
-      }
-    }
-  },
-  {
-    "id": 17126,
-    "n": "ASUS - ROG STRIX B850-A GAMING WIFI (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Motherboard - White",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7fba94b0-6853-48b0-8a2d-3f8cd43ee128.png",
-    "c": "WiFiCard",
-    "b": "ASUS",
-    "pr": 230,
-    "msrp": 290,
-    "r": 4.7,
-    "reviews": 142,
-    "upc": "197105772670",
-    "mpn": "ROG STRIX B850-A GAMING WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 230,
-        "url": "https://api.bestbuy.com/click/-/6612912/pdp",
-        "inStock": true,
-        "sku": "6612912"
-      }
-    }
-  },
-  {
-    "id": 17127,
-    "n": "MSI - MAG B850 TOMAHAWK MAX WIFI (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f2f9a05d-e6b2-471c-b019-aeaa0b2bb366.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 210,
-    "msrp": 230,
-    "r": 4.8,
-    "reviews": 131,
-    "upc": "824142395356",
-    "mpn": "MAG B850 TOMAHAWK MAX WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 210,
-        "url": "https://api.bestbuy.com/click/-/6616918/pdp",
-        "inStock": true,
-        "sku": "6616918"
-      }
-    }
-  },
-  {
-    "id": 17128,
-    "n": "ASUS - TUF GAMING B650E-PLUS WIFI (Socket AM5) AMD B650 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f5960e0a-d7cd-4c0a-bbba-81f95cb3b703.png",
-    "c": "WiFiCard",
-    "b": "ASUS",
-    "pr": 190,
-    "msrp": 190,
-    "r": 4.7,
-    "reviews": 46,
-    "upc": "197105995482",
-    "mpn": "TUF GAMING B650E-PLUS WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 190,
-        "url": "https://api.bestbuy.com/click/-/6625649/pdp",
-        "inStock": true,
-        "sku": "6625649"
-      }
-    }
-  },
-  {
-    "id": 17129,
-    "n": "GIGABYTE - X870E AORUS ELITE WIFI7 ICE (Socket AM5) AMD X870E ATX DDR5 Wi-Fi 7 Motherboard - White",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f20505fb-e953-4445-aed7-ec048fe3922c.png",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 355,
-    "msrp": 355,
-    "r": 5,
-    "reviews": 3,
-    "upc": "889523049617",
-    "mpn": "X870E AORUS ELITE WIFI7 ICE",
-    "deals": {
-      "bestbuy": {
-        "price": 355,
-        "url": "https://api.bestbuy.com/click/-/6635872/pdp",
-        "inStock": true,
-        "sku": "6635872"
-      }
-    }
-  },
-  {
-    "id": 17130,
-    "n": "MSI - MAG B850 TOMAHAWK MAX WIFI II (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Ryzen 9000 / 8000 / 7000 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/a0eedcf1-6c0e-422f-b809-329bfb5ee981.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 270,
-    "msrp": 270,
-    "r": 0,
-    "reviews": 0,
-    "upc": "824142453995",
-    "mpn": "MAG B850 TOMAHAWK MAX WIFI II",
-    "deals": {
-      "bestbuy": {
-        "price": 270,
-        "url": "https://api.bestbuy.com/click/-/6676840/pdp",
-        "inStock": true,
-        "sku": "6676840"
-      }
-    }
-  },
-  {
-    "id": 17131,
-    "n": "MSI - MAG Z790 TOMAHAWK MAX WIFI (Socket LGA 1700) Intel Z790 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6571/6571302_sd.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 304,
-    "msrp": 304,
-    "r": 4.6,
-    "reviews": 104,
-    "upc": "824142336250",
-    "mpn": "MAG Z790 TOMAHAWK MAX WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 304,
-        "url": "https://api.bestbuy.com/click/-/6571302/pdp",
-        "inStock": true,
-        "sku": "6571302"
-      }
-    }
-  },
-  {
-    "id": 17132,
-    "n": "ASUS - TUF GAMING Z890-PLUS WIFI (Socket LGA 1851) Intel Z890 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/0af6e39e-45cc-4d89-9cae-6d8bb1bc02f1.png",
-    "c": "WiFiCard",
-    "b": "ASUS",
-    "pr": 269,
-    "msrp": 280,
-    "r": 4.9,
-    "reviews": 31,
-    "upc": "197105763920",
-    "mpn": "TUF GAMING Z890-PLUS WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 269,
-        "url": "https://api.bestbuy.com/click/-/6601255/pdp",
-        "inStock": true,
-        "sku": "6601255"
-      }
-    }
-  },
-  {
-    "id": 17133,
-    "n": "GIGABYTE - Z890 AORUS ELITE WIFI7 ICE (Socket LGA 1851) Intel Z890 ATX DDR5 Wi-Fi 7 Motherboard - White",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1586b43c-308c-4faf-9362-828356b9142a.jpg",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 200,
-    "msrp": 290,
-    "r": 4.6,
-    "reviews": 5,
-    "upc": "889523045596",
-    "mpn": "Z890 AORUS ELITE WIFI7 ICE",
-    "deals": {
-      "bestbuy": {
-        "price": 200,
-        "url": "https://api.bestbuy.com/click/-/6604423/pdp",
-        "inStock": true,
-        "sku": "6604423"
-      }
-    }
-  },
-  {
-    "id": 17134,
-    "n": "MSI - PRO Z890-S WIFI PZ (Socket 1851) Intel Z890 ATX DDR5 Wi-Fi 7 Motherboard - Gray White",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/90de0420-ec86-4c79-b6b3-eb391167472f.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 210,
-    "msrp": 250,
-    "r": 4.7,
-    "reviews": 3,
-    "upc": "824142394205",
-    "mpn": "PRO Z890-S WIFI PZ",
-    "deals": {
-      "bestbuy": {
-        "price": 210,
-        "url": "https://api.bestbuy.com/click/-/6629579/pdp",
-        "inStock": true,
-        "sku": "6629579"
-      }
-    }
-  },
-  {
-    "id": 17135,
-    "n": "MSI - B850 GAMING PLUS WIFI PZ (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Motherboard - Gray White/Matt",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8dd759a5-bc46-4dcf-9a11-8070d1ffeb5d.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 250,
-    "msrp": 250,
-    "r": 0,
-    "reviews": 0,
-    "upc": "824142433553",
-    "mpn": "B850 GAMING PLUS WIFI PZ",
-    "deals": {
-      "bestbuy": {
-        "price": 250,
-        "url": "https://api.bestbuy.com/click/-/6641931/pdp",
-        "inStock": true,
-        "sku": "6641931"
-      }
-    }
-  },
-  {
-    "id": 17136,
-    "n": "MSI - MPG B850I EDGE TI WIFI (Socket AM5) AMD B850 IATX DDR5 Wi-Fi 7 Motherboard - Gray White/Matt",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4a19da5b-d0cc-4b15-915b-ed6bfa73a2e5.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 290,
-    "msrp": 290,
-    "r": 3,
-    "reviews": 1,
-    "upc": "824142431061",
-    "mpn": "MPG B850I EDGE TI WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 290,
-        "url": "https://api.bestbuy.com/click/-/6641933/pdp",
-        "inStock": true,
-        "sku": "6641933"
-      }
-    }
-  },
-  {
-    "id": 17137,
-    "n": "MSI - MPG Z890I EDGE TI WIFI (Socket 1851) Intel Z890 Mini-ITX DDR5 Wi-Fi 7 Motherboard - Gray White/Matt",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/bc7d129b-5a35-4d0c-b934-c1bdc7ce2d62.jpg",
-    "c": "WiFiCard",
-    "b": "MSI",
-    "pr": 300,
-    "msrp": 300,
-    "r": 5,
-    "reviews": 2,
-    "upc": "824142388099",
-    "mpn": "MPG Z890I EDGE TI WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 300,
-        "url": "https://api.bestbuy.com/click/-/6641932/pdp",
-        "inStock": true,
-        "sku": "6641932"
-      }
-    }
-  },
-  {
-    "id": 17138,
-    "n": "ASUS - ROG STRIX X870-F GAMING WIFI (Socket AM5) AMD X870 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7410aaa4-e6b9-4462-b14b-1d3f52139e7a.png",
-    "c": "WiFiCard",
-    "b": "ASUS",
-    "pr": 420,
-    "msrp": 420,
-    "r": 4.5,
-    "reviews": 93,
-    "upc": "197105732049",
-    "mpn": "ROG STRIX X870-F GAMING WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 420,
-        "url": "https://api.bestbuy.com/click/-/6601434/pdp",
-        "inStock": true,
-        "sku": "6601434"
-      }
-    }
-  },
-  {
-    "id": 17139,
-    "n": "ASUS - ROG Strix B850-F GAMING WIFI (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/3298c3e2-703b-41b4-8352-1890a744f0b8.png",
-    "c": "WiFiCard",
-    "b": "ASUS",
-    "pr": 282,
-    "msrp": 300,
-    "r": 4.8,
-    "reviews": 55,
-    "upc": "197105771017",
-    "mpn": "ROG STRIX B850-F GAMING WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 282,
-        "url": "https://api.bestbuy.com/click/-/6612911/pdp",
-        "inStock": true,
-        "sku": "6612911"
-      }
-    }
-  },
-  {
-    "id": 17140,
-    "n": "ASUS - ROG STRIX Z890-F GAMING WIFI (Socket LGA 1851) Intel Z890 ATX DDR5 Wi-Fi 7 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/a2475ff1-1f6a-484f-a28c-c1ab19f425df.png",
-    "c": "WiFiCard",
-    "b": "ASUS",
-    "pr": 350,
-    "msrp": 350,
-    "r": 5,
-    "reviews": 10,
-    "upc": "197105755925",
-    "mpn": "ROG STRIX Z890-F GAMING WIFI",
-    "deals": {
-      "bestbuy": {
-        "price": 350,
-        "url": "https://api.bestbuy.com/click/-/6601252/pdp",
-        "inStock": true,
-        "sku": "6601252"
-      }
-    }
-  },
-  {
-    "id": 17141,
-    "n": "GIGABYTE - B550M GAMING X WIFI6E (Socket AM4) AMD B550 Micro-ATX DDR4 Wi-Fi 6 Motherboard - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c0728892-0281-4dfe-8ebf-e1c4be623371.jpg",
-    "c": "WiFiCard",
-    "b": "GIGABYTE",
-    "pr": 155,
-    "msrp": 155,
-    "r": 5,
-    "reviews": 3,
-    "upc": "889523048740",
-    "mpn": "B550M GAMING X WIFI6",
-    "deals": {
-      "bestbuy": {
-        "price": 155,
-        "url": "https://api.bestbuy.com/click/-/6637466/pdp",
-        "inStock": true,
-        "sku": "6637466"
-      }
-    }
-  },
-  {
-    "id": 17142,
-    "n": "j5create - ScreenCast 4K Wireless Display Adapter - White",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6465/6465110_sd.jpg",
-    "c": "WiFiCard",
-    "b": "j5create",
-    "pr": 80,
-    "msrp": 80,
-    "r": 3.9,
-    "reviews": 187,
-    "upc": "847626005695",
-    "mpn": "JVAW76",
-    "deals": {
-      "bestbuy": {
-        "price": 80,
-        "url": "https://api.bestbuy.com/click/-/6465110/pdp",
-        "inStock": true,
-        "sku": "6465110"
-      }
-    }
-  },
-  {
-    "id": 17143,
-    "n": "SVS - SoundPath Tri-Band Wireless Audio Adapter - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6462/6462525_sd.jpg",
-    "c": "WiFiCard",
-    "b": "SVS",
-    "pr": 200,
-    "msrp": 200,
-    "r": 4.6,
-    "reviews": 9,
-    "upc": "856677007886",
-    "mpn": "SOUNDPATH TRI-BAND ADAPTER",
-    "deals": {
-      "bestbuy": {
-        "price": 200,
-        "url": "https://api.bestbuy.com/click/-/6462525/pdp",
-        "inStock": true,
-        "sku": "6462525"
-      }
-    }
-  },
-  {
-    "id": 17144,
-    "n": "SVS - SoundPath Wireless Audio Adapter - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6394/6394992_sd.jpg",
-    "c": "WiFiCard",
-    "b": "SVS",
-    "pr": 180,
-    "msrp": 180,
-    "r": 4.3,
-    "reviews": 54,
-    "upc": "856677007626",
-    "mpn": "SVS SOUNDPATH WIRELESS AUDIO A",
-    "deals": {
-      "bestbuy": {
-        "price": 180,
-        "url": "https://api.bestbuy.com/click/-/6394992/pdp",
-        "inStock": true,
-        "sku": "6394992"
-      }
-    }
-  },
-  {
-    "id": 17145,
-    "n": "Cricket Wireless - Sim Card - Multi",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/add6421a-b468-4b09-b8a3-4f0a40caee2e.jpg",
-    "c": "WiFiCard",
-    "b": "Cricket Wireless",
-    "pr": 10,
-    "msrp": 10,
-    "r": 0,
-    "reviews": 0,
-    "upc": "711868003972",
-    "mpn": "SSGN5010",
-    "deals": {
-      "bestbuy": {
-        "price": 10,
-        "url": "https://api.bestbuy.com/click/-/6623784/pdp",
-        "inStock": true,
-        "sku": "6623784"
-      }
-    }
-  },
-  {
-    "id": 17146,
-    "n": "Samsung - Magnet Wireless Charger and 45W Travel Adapter - Dark Gray",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c001c2ad-dbb6-4736-bf1f-fd31ff21ae9f.jpg",
-    "c": "WiFiCard",
-    "b": "Samsung",
-    "pr": 60,
-    "msrp": 75,
-    "r": 4.5,
-    "reviews": 20,
-    "upc": "198957270352",
-    "mpn": "EP-P2900TBEGUS",
-    "deals": {
-      "bestbuy": {
-        "price": 60,
-        "url": "https://api.bestbuy.com/click/-/6669031/pdp",
-        "inStock": true,
-        "sku": "6669031"
-      }
-    }
-  },
-  {
     "id": 17147,
     "n": "Creative Sound Blaster Audigy FX V2 PCIe",
     "img": "https://m.media-amazon.com/images/I/61tT1K4FZvL._AC_SL300_.jpg",
@@ -111240,7 +109797,8 @@ export const PARTS = [
     "profile": "Full Height",
     "wol": true,
     "vlan": true,
-    "pxe": true
+    "pxe": true,
+    "connector": "RJ45"
   },
   {
     "id": 17168,
@@ -111267,7 +109825,8 @@ export const PARTS = [
     "profile": "Full Height",
     "wol": true,
     "vlan": true,
-    "pxe": true
+    "pxe": true,
+    "connector": "RJ45"
   },
   {
     "id": 17169,
@@ -111322,7 +109881,8 @@ export const PARTS = [
     "profile": "Full Height",
     "wol": true,
     "vlan": true,
-    "pxe": false
+    "pxe": false,
+    "connector": "RJ45"
   },
   {
     "id": 17171,
@@ -111349,7 +109909,8 @@ export const PARTS = [
     "profile": "Low Profile",
     "wol": true,
     "vlan": true,
-    "pxe": false
+    "pxe": false,
+    "connector": "RJ45"
   },
   {
     "id": 17172,
@@ -111376,7 +109937,8 @@ export const PARTS = [
     "profile": "Full Height",
     "wol": true,
     "vlan": true,
-    "pxe": false
+    "pxe": false,
+    "connector": "RJ45"
   },
   {
     "id": 17173,
@@ -111403,7 +109965,8 @@ export const PARTS = [
     "profile": "Full Height",
     "wol": true,
     "vlan": true,
-    "pxe": false
+    "pxe": false,
+    "connector": "RJ45"
   },
   {
     "id": 17174,
@@ -111430,7 +109993,8 @@ export const PARTS = [
     "profile": "Full Height",
     "wol": true,
     "vlan": true,
-    "pxe": true
+    "pxe": true,
+    "connector": "RJ45"
   },
   {
     "id": 17175,
@@ -111457,7 +110021,8 @@ export const PARTS = [
     "profile": "Full Height",
     "wol": true,
     "vlan": true,
-    "pxe": true
+    "pxe": true,
+    "connector": "RJ45"
   },
   {
     "id": 17176,
@@ -111484,7 +110049,8 @@ export const PARTS = [
     "profile": "Low Profile",
     "wol": true,
     "vlan": false,
-    "pxe": false
+    "pxe": false,
+    "connector": "RJ45"
   },
   {
     "id": 17177,
@@ -111511,7 +110077,8 @@ export const PARTS = [
     "profile": "Low Profile",
     "wol": true,
     "vlan": false,
-    "pxe": false
+    "pxe": false,
+    "connector": "RJ45"
   },
   {
     "id": 17178,
@@ -111538,7 +110105,332 @@ export const PARTS = [
     "profile": "Full Height",
     "wol": true,
     "vlan": true,
-    "pxe": true
+    "pxe": true,
+    "connector": "RJ45"
+  },
+  {
+    "id": 17179,
+    "n": "Intel BE200 WiFi 7 M.2 Tri-Band Module (OEM)",
+    "img": "https://m.media-amazon.com/images/I/61N5dUK5g6L._AC_SL300_.jpg",
+    "c": "WiFiCard",
+    "b": "Intel",
+    "pr": 39,
+    "msrp": 49,
+    "r": 4.4,
+    "reviews": 420,
+    "asin": "B0CRDPKLY1",
+    "wifiStandard": "WiFi 7",
+    "maxSpeed": 5800,
+    "bt": "BT 5.4",
+    "antennas": 2,
+    "band": "Tri-Band",
+    "pcieLane": "x1",
+    "chipset": "Intel BE200",
+    "heatsink": false,
+    "deals": {
+      "amazon": {
+        "price": 39,
+        "url": "https://www.amazon.com/dp/B0CRDPKLY1?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17180,
+    "n": "TP-Link Archer TBE550E WiFi 7 BE9300 Tri-Band PCIe Card",
+    "img": "https://m.media-amazon.com/images/I/71lmSJb8OiL._AC_SL300_.jpg",
+    "c": "WiFiCard",
+    "b": "TP-Link",
+    "pr": 99,
+    "msrp": 129,
+    "r": 4.5,
+    "reviews": 310,
+    "asin": "B0D5WGDYH8",
+    "wifiStandard": "WiFi 7",
+    "maxSpeed": 9300,
+    "bt": "BT 5.4",
+    "antennas": 2,
+    "band": "Tri-Band",
+    "pcieLane": "x1",
+    "chipset": "MediaTek WiFi 7",
+    "heatsink": true,
+    "deals": {
+      "amazon": {
+        "price": 99,
+        "url": "https://www.amazon.com/dp/B0D5WGDYH8?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17181,
+    "n": "ASUS PCE-BE92BT WiFi 7 Tri-Band BE9300 PCIe Adapter",
+    "img": "https://m.media-amazon.com/images/I/71VQ6dPAQxL._AC_SL300_.jpg",
+    "c": "WiFiCard",
+    "b": "ASUS",
+    "pr": 119,
+    "msrp": 149,
+    "r": 4.5,
+    "reviews": 240,
+    "asin": "B0CPFFLYSB",
+    "wifiStandard": "WiFi 7",
+    "maxSpeed": 9300,
+    "bt": "BT 5.4",
+    "antennas": 3,
+    "band": "Tri-Band",
+    "pcieLane": "x1",
+    "chipset": "MediaTek WiFi 7",
+    "heatsink": true,
+    "deals": {
+      "amazon": {
+        "price": 119,
+        "url": "https://www.amazon.com/dp/B0CPFFLYSB?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17182,
+    "n": "ASUS PCE-AXE58BT WiFi 6E PCIe Adapter AX5400 Tri-Band",
+    "img": "https://m.media-amazon.com/images/I/71I4hx-e3qL._AC_SL300_.jpg",
+    "c": "WiFiCard",
+    "b": "ASUS",
+    "pr": 79,
+    "msrp": 99,
+    "r": 4.5,
+    "reviews": 3200,
+    "asin": "B09L8QY9GH",
+    "wifiStandard": "WiFi 6E",
+    "maxSpeed": 5400,
+    "bt": "BT 5.2",
+    "antennas": 2,
+    "band": "Tri-Band",
+    "pcieLane": "x1",
+    "chipset": "Intel AX210",
+    "heatsink": true,
+    "deals": {
+      "amazon": {
+        "price": 79,
+        "url": "https://www.amazon.com/dp/B09L8QY9GH?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17183,
+    "n": "TP-Link Archer TXE75E WiFi 6E AXE5400 PCIe Card",
+    "img": "https://m.media-amazon.com/images/I/71Nz3-uWDCL._AC_SL300_.jpg",
+    "c": "WiFiCard",
+    "b": "TP-Link",
+    "pr": 69,
+    "msrp": 89,
+    "r": 4.5,
+    "reviews": 4100,
+    "asin": "B0BXZ8F3WS",
+    "wifiStandard": "WiFi 6E",
+    "maxSpeed": 5400,
+    "bt": "BT 5.3",
+    "antennas": 2,
+    "band": "Tri-Band",
+    "pcieLane": "x1",
+    "chipset": "Intel AX210",
+    "heatsink": true,
+    "deals": {
+      "amazon": {
+        "price": 69,
+        "url": "https://www.amazon.com/dp/B0BXZ8F3WS?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17184,
+    "n": "Ubit AX210S WiFi 6E PCIe Card AX5400 Tri-Band",
+    "img": "https://m.media-amazon.com/images/I/71n+5LFkhHL._AC_SL300_.jpg",
+    "c": "WiFiCard",
+    "b": "Ubit",
+    "pr": 39,
+    "msrp": 54,
+    "r": 4.3,
+    "reviews": 5800,
+    "asin": "B09F6MSR2C",
+    "wifiStandard": "WiFi 6E",
+    "maxSpeed": 5400,
+    "bt": "BT 5.3",
+    "antennas": 2,
+    "band": "Tri-Band",
+    "pcieLane": "x1",
+    "chipset": "Intel AX210",
+    "heatsink": true,
+    "deals": {
+      "amazon": {
+        "price": 39,
+        "url": "https://www.amazon.com/dp/B09F6MSR2C?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17185,
+    "n": "Fenvi FV-AXE3000 WiFi 6E AX210 PCIe Tri-Band Card",
+    "img": "https://m.media-amazon.com/images/I/71fZj-KR5FL._AC_SL300_.jpg",
+    "c": "WiFiCard",
+    "b": "Fenvi",
+    "pr": 35,
+    "msrp": 49,
+    "r": 4.3,
+    "reviews": 3900,
+    "asin": "B09VWRCS2X",
+    "wifiStandard": "WiFi 6E",
+    "maxSpeed": 5400,
+    "bt": "BT 5.3",
+    "antennas": 2,
+    "band": "Tri-Band",
+    "pcieLane": "x1",
+    "chipset": "Intel AX210",
+    "heatsink": false,
+    "deals": {
+      "amazon": {
+        "price": 35,
+        "url": "https://www.amazon.com/dp/B09VWRCS2X?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17186,
+    "n": "OKN WiFi 6E AX5400 PCIe WiFi Card Intel AX210 Tri-Band",
+    "img": "https://m.media-amazon.com/images/I/71GBOz0Ky1L._AC_SL300_.jpg",
+    "c": "WiFiCard",
+    "b": "OKN",
+    "pr": 34,
+    "msrp": 45,
+    "r": 4.3,
+    "reviews": 6200,
+    "asin": "B09Y5BTQM4",
+    "wifiStandard": "WiFi 6E",
+    "maxSpeed": 5400,
+    "bt": "BT 5.3",
+    "antennas": 2,
+    "band": "Tri-Band",
+    "pcieLane": "x1",
+    "chipset": "Intel AX210",
+    "heatsink": false,
+    "deals": {
+      "amazon": {
+        "price": 34,
+        "url": "https://www.amazon.com/dp/B09Y5BTQM4?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17187,
+    "n": "Wavlink AXE5400 WiFi 6E PCIe Card with Magnetic Antennas",
+    "img": "https://m.media-amazon.com/images/I/71Yk4PBpIIL._AC_SL300_.jpg",
+    "c": "WiFiCard",
+    "b": "Wavlink",
+    "pr": 42,
+    "msrp": 59,
+    "r": 4.4,
+    "reviews": 1400,
+    "asin": "B0BGH5XFPK",
+    "wifiStandard": "WiFi 6E",
+    "maxSpeed": 5400,
+    "bt": "BT 5.3",
+    "antennas": 2,
+    "band": "Tri-Band",
+    "pcieLane": "x1",
+    "chipset": "Intel AX210",
+    "heatsink": true,
+    "deals": {
+      "amazon": {
+        "price": 42,
+        "url": "https://www.amazon.com/dp/B0BGH5XFPK?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17188,
+    "n": "Gigabyte GC-WBAX210 WiFi 6E AX210 PCIe Expansion Card",
+    "img": "https://m.media-amazon.com/images/I/61MzG04UW2L._AC_SL300_.jpg",
+    "c": "WiFiCard",
+    "b": "GIGABYTE",
+    "pr": 39,
+    "msrp": 49,
+    "r": 4.3,
+    "reviews": 480,
+    "asin": "B0BHZCD8DD",
+    "wifiStandard": "WiFi 6E",
+    "maxSpeed": 5400,
+    "bt": "BT 5.3",
+    "antennas": 2,
+    "band": "Tri-Band",
+    "pcieLane": "x1",
+    "chipset": "Intel AX210",
+    "heatsink": false,
+    "deals": {
+      "amazon": {
+        "price": 39,
+        "url": "https://www.amazon.com/dp/B0BHZCD8DD?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17189,
+    "n": "TP-Link Archer TX3000E WiFi 6 AX3000 PCIe Card",
+    "img": "https://m.media-amazon.com/images/I/61Pw6FwLY-L._AC_SL300_.jpg",
+    "c": "WiFiCard",
+    "b": "TP-Link",
+    "pr": 49,
+    "msrp": 69,
+    "r": 4.5,
+    "reviews": 18000,
+    "asin": "B07YC3RRCH",
+    "wifiStandard": "WiFi 6",
+    "maxSpeed": 3000,
+    "bt": "BT 5.0",
+    "antennas": 2,
+    "band": "Dual-Band",
+    "pcieLane": "x1",
+    "chipset": "Intel AX200",
+    "heatsink": true,
+    "deals": {
+      "amazon": {
+        "price": 49,
+        "url": "https://www.amazon.com/dp/B07YC3RRCH?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
+  },
+  {
+    "id": 17190,
+    "n": "Fenvi AX3000 WiFi 6 PCIe Card Intel AX200 Bluetooth 5.2",
+    "img": "https://m.media-amazon.com/images/I/61kcZ0P4KcL._AC_SL300_.jpg",
+    "c": "WiFiCard",
+    "b": "Fenvi",
+    "pr": 29,
+    "msrp": 39,
+    "r": 4.4,
+    "reviews": 5800,
+    "asin": "B08TLZMZJG",
+    "wifiStandard": "WiFi 6",
+    "maxSpeed": 3000,
+    "bt": "BT 5.2",
+    "antennas": 2,
+    "band": "Dual-Band",
+    "pcieLane": "x1",
+    "chipset": "Intel AX200",
+    "heatsink": false,
+    "deals": {
+      "amazon": {
+        "price": 29,
+        "url": "https://www.amazon.com/dp/B08TLZMZJG?tag=tiereduptech-20",
+        "inStock": true
+      }
+    }
   }
 ];
 
