@@ -106,10 +106,7 @@ const bestPrice = p => {
   if (!retailerKeys.length) return p.pr;
   return Math.min(...retailerKeys.map(k => p.deals[k].price));
 };
-const $ = p => {
-  const base = bestPrice(p);
-  return (p.off && p.off > 0) ? base - p.off : base;
-};
+const $ = p => bestPrice(p);
 const msrp = p => p.msrp || p.pr;
 const fmtPrice = n => { if (n == null) return '0'; const r = Math.round(n * 100) / 100; return r % 1 === 0 ? String(r) : r.toFixed(2); };
 const retailers = p => {
@@ -457,100 +454,97 @@ function HomePage({go,browse,th}){
       </div>
     </div>
 
-    {/* ── CORE COMPONENTS — large featured grid ── */}
-    <div style={{maxWidth:1200,margin:"0 auto",padding:"56px 32px 40px"}}>
-      <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",marginBottom:24}}>
-        <div>
-          <h2 style={{fontFamily:"var(--ff)",fontSize:28,fontWeight:800,color:"var(--txt)"}}>Core Components</h2>
-          <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginTop:4}}>The essential parts for your build</p>
-        </div>
-        <button onClick={()=>go("search")} style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--accent)",background:"none",border:"none",cursor:"pointer",fontWeight:600}}>View All →</button>
-      </div>
-      <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:12}}>
-        {coreCats.map(c=>{const m=CAT[c];const cnt=P.filter(p=>p.c===c).length;
-          return <button key={c} onClick={()=>{browse(c);go("search");}} style={{background:"var(--bg2)",borderRadius:20,border:"1px solid var(--bdr)",padding:0,cursor:"pointer",overflow:"hidden",textAlign:"left",transition:"all .3s cubic-bezier(.16,1,.3,1)",boxShadow:"var(--shadowSm,none)"}}
-            onMouseEnter={e=>{e.currentTarget.style.transform="translateY(-4px)";e.currentTarget.style.boxShadow="0 8px 32px rgba(0,0,0,.12)";}}
-            onMouseLeave={e=>{e.currentTarget.style.transform="none";e.currentTarget.style.boxShadow="var(--shadowSm,none)";}}>
-            <div style={{height:100,background:"var(--bg3)",display:"flex",alignItems:"center",justifyContent:"center",borderBottom:"1px solid var(--bdr)"}}>
-              <CatThumb cat={c} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={64} rounded={14} editable={false}/>
-            </div>
-            <div style={{padding:"14px 16px"}}>
-              <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>{m.label}</div>
-              <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)",marginTop:2}}>{m.desc}</div>
-              <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",marginTop:6,fontWeight:500}}>{cnt} products →</div>
-            </div>
-          </button>})}
-      </div>
-    </div>
 
-    {/* ── DEALS + TOP PERFORMERS — asymmetric split ── */}
-    <div style={{maxWidth:1200,margin:"0 auto",padding:"0 32px 48px"}}>
-      <div style={{display:"grid",gridTemplateColumns:"1.1fr 0.9fr",gap:24}}>
-        {/* Deals — large card */}
-        <div style={{background:"var(--bg2)",borderRadius:20,border:"1px solid var(--bdr)",padding:24,boxShadow:"var(--shadowSm,none)"}}>
-          <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:16}}>
-            <h2 style={{fontFamily:"var(--ff)",fontSize:20,fontWeight:700,color:"var(--txt)"}}>Best Deals</h2>
-            <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:600,background:"var(--accent3)",padding:"4px 10px",borderRadius:8}}>{totalDeals} active</span>
+    {/* 2-COLUMN LAYOUT: categories (left) + deals/top sidebar (right) */}
+    <div style={{maxWidth:1200,margin:"0 auto",padding:"56px 32px 48px",display:"grid",gridTemplateColumns:"1fr 340px",gap:32,alignItems:"start"}}>
+      {/* LEFT COLUMN — Core Components + More Categories */}
+      <div>
+        <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",marginBottom:24}}>
+          <div>
+            <h2 style={{fontFamily:"var(--ff)",fontSize:28,fontWeight:800,color:"var(--txt)"}}>Core Components</h2>
+            <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginTop:4}}>The essential parts for your build</p>
           </div>
-          <div style={{display:"flex",flexDirection:"column",gap:6}}>
-            {deals.map(p=><button key={p.id} onClick={()=>{browse(p.c);go("search");}} style={{display:"flex",alignItems:"center",gap:12,width:"100%",background:"var(--bg3)",borderRadius:14,padding:"12px 16px",cursor:"pointer",textAlign:"left",border:"1px solid transparent",transition:"all .2s"}}
-              onMouseEnter={e=>e.currentTarget.style.borderColor="var(--amber)33"}
-              onMouseLeave={e=>e.currentTarget.style.borderColor="transparent"}>
-              <div style={{width:40,height:40,borderRadius:10,background:"var(--bg4)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:18,flexShrink:0}}>{ic(p)}</div>
-              <div style={{flex:1,minWidth:0}}>
-                <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
-                <div style={{display:"flex",gap:6,marginTop:3,alignItems:"center"}}>
-                  <Tag color="var(--amber)">{p.cp}</Tag>
-                  <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--amber)",fontWeight:600}}>Save ${p.off}</span>
-                </div>
-              </div>
-              <div style={{textAlign:"right",flexShrink:0}}>
-                <div style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:"var(--accent)"}}>${fmtPrice($(p))}</div>
-                <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>
-              </div>
-            </button>)}
-          </div>
+          <button onClick={()=>go("search")} style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--accent)",background:"none",border:"none",cursor:"pointer",fontWeight:600}}>View All →</button>
         </div>
-
-        {/* Top performers */}
-        <div style={{background:"var(--bg2)",borderRadius:20,border:"1px solid var(--bdr)",padding:24,boxShadow:"var(--shadowSm,none)"}}>
-          <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:16}}>
-            <h2 style={{fontFamily:"var(--ff)",fontSize:20,fontWeight:700,color:"var(--txt)"}}>Top Performers</h2>
-            <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--sky)",fontWeight:600}}>by benchmark</span>
-          </div>
-          <div style={{display:"flex",flexDirection:"column",gap:6}}>
-            {top.map(p=><button key={p.id} onClick={()=>{browse(p.c);go("search");}} style={{display:"flex",alignItems:"center",gap:12,width:"100%",background:"var(--bg3)",borderRadius:14,padding:"12px 16px",cursor:"pointer",textAlign:"left",border:"1px solid transparent",transition:"all .2s"}}
-              onMouseEnter={e=>e.currentTarget.style.borderColor="var(--sky)33"}
-              onMouseLeave={e=>e.currentTarget.style.borderColor="transparent"}>
-              <div style={{width:40,height:40,borderRadius:10,background:"var(--bg4)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:18,flexShrink:0}}>{ic(p)}</div>
-              <div style={{flex:1}}>
-                <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>{p.n}</div>
-                <Stars r={p.r} s={10}/>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:12}}>
+          {coreCats.map(c=>{const m=CAT[c];const cnt=P.filter(p=>p.c===c).length;
+            return <button key={c} onClick={()=>{browse(c);go("search");}} style={{background:"var(--bg2)",borderRadius:20,border:"1px solid var(--bdr)",padding:0,cursor:"pointer",overflow:"hidden",textAlign:"left",transition:"all .3s cubic-bezier(.16,1,.3,1)",boxShadow:"var(--shadowSm,none)"}}
+              onMouseEnter={e=>{e.currentTarget.style.transform="translateY(-4px)";e.currentTarget.style.boxShadow="0 8px 32px rgba(0,0,0,.12)";}}
+              onMouseLeave={e=>{e.currentTarget.style.transform="none";e.currentTarget.style.boxShadow="var(--shadowSm,none)";}}>
+              <div style={{height:100,background:"var(--bg3)",display:"flex",alignItems:"center",justifyContent:"center",borderBottom:"1px solid var(--bdr)"}}>
+                <CatThumb cat={c} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={64} rounded={14} editable={false}/>
               </div>
-              <div style={{width:90}}><SBar v={p.bench}/></div>
-              <div style={{fontFamily:"var(--mono)",fontSize:14,fontWeight:700,color:"var(--accent)",minWidth:45,textAlign:"right"}}>${fmtPrice($(p))}</div>
-            </button>)}
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {/* ── MORE CATEGORIES — compact pills ── */}
-    {otherCats.length>0&&<div style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)",borderBottom:"1px solid var(--bdr)"}}>
-      <div style={{maxWidth:1200,margin:"0 auto",padding:"40px 32px"}}>
-        <h3 style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:700,color:"var(--txt)",marginBottom:16}}>More Categories</h3>
-        <div style={{display:"flex",flexWrap:"wrap",gap:8}}>
-          {otherCats.map(c=>{const m=CAT[c];const cnt=P.filter(p=>p.c===c).length;
-            return <button key={c} onClick={()=>{browse(c);go("search");}} style={{display:"flex",alignItems:"center",gap:8,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:12,padding:"8px 16px 8px 10px",cursor:"pointer",transition:"all .2s"}}
-              onMouseEnter={e=>{e.currentTarget.style.borderColor="var(--accent)44";e.currentTarget.style.background="var(--bg4)";}}
-              onMouseLeave={e=>{e.currentTarget.style.borderColor="var(--bdr)";e.currentTarget.style.background="var(--bg3)";}}>
-              <span style={{fontSize:16}}>{m.icon}</span>
-              <span style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>{m.label}</span>
-              <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)"}}>{cnt}</span>
+              <div style={{padding:"14px 16px"}}>
+                <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>{m.label}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)",marginTop:2}}>{m.desc}</div>
+                <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",marginTop:6,fontWeight:500}}>{cnt} products →</div>
+              </div>
             </button>})}
         </div>
+
+        {/* More Categories — inline below Core Components */}
+        {otherCats.length>0&&<div style={{marginTop:36}}>
+          <h3 style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:700,color:"var(--txt)",marginBottom:16}}>More Categories</h3>
+          <div style={{display:"flex",flexWrap:"wrap",gap:8}}>
+            {otherCats.map(c=>{const m=CAT[c];const cnt=P.filter(p=>p.c===c).length;
+              return <button key={c} onClick={()=>{browse(c);go("search");}} style={{display:"flex",alignItems:"center",gap:8,background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:"8px 16px 8px 10px",cursor:"pointer",transition:"all .2s"}}
+                onMouseEnter={e=>{e.currentTarget.style.borderColor="var(--accent)44";e.currentTarget.style.background="var(--bg3)";}}
+                onMouseLeave={e=>{e.currentTarget.style.borderColor="var(--bdr)";e.currentTarget.style.background="var(--bg2)";}}>
+                <span style={{fontSize:16}}>{m.icon}</span>
+                <span style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>{m.label}</span>
+                <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)"}}>{cnt}</span>
+              </button>})}
+          </div>
+        </div>}
       </div>
-    </div>}
+
+      {/* RIGHT SIDEBAR — Best Deals + Top Performers */}
+      <div style={{display:"flex",flexDirection:"column",gap:16,position:"sticky",top:80}}>
+        {/* Best Deals */}
+        <div style={{background:"var(--bg2)",borderRadius:20,border:"1px solid var(--bdr)",padding:18,boxShadow:"var(--shadowSm,none)"}}>
+          <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:14}}>
+            <h2 style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)"}}>Best Deals</h2>
+            <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--accent)",fontWeight:600,background:"var(--accent3)",padding:"3px 8px",borderRadius:6}}>{totalDeals} active</span>
+          </div>
+          <div style={{display:"flex",flexDirection:"column",gap:6}}>
+            {deals.slice(0,5).map(p=>{const rr=retailers(p);const url=rr[0]?.url;return <button key={p.id} onClick={()=>{if(url)window.open(url,"_blank","noopener,noreferrer");else{browse(p.c);go("search");}}} style={{display:"flex",alignItems:"center",gap:10,width:"100%",background:"var(--bg3)",borderRadius:10,padding:"10px 12px",cursor:"pointer",textAlign:"left",border:"1px solid transparent",transition:"all .2s"}}
+              onMouseEnter={e=>e.currentTarget.style.borderColor="var(--amber)33"}
+              onMouseLeave={e=>e.currentTarget.style.borderColor="transparent"}>
+              <div style={{width:36,height:36,borderRadius:8,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0,overflow:"hidden"}}>{p.img?<img src={p.img} alt="" style={{width:"100%",height:"100%",objectFit:"contain"}}/>:ic(p)}</div>
+              <div style={{flex:1,minWidth:0}}>
+                <div style={{fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
+                <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--amber)",fontWeight:600,marginTop:1}}>Save ${p.off}</div>
+              </div>
+              <div style={{textAlign:"right",flexShrink:0}}>
+                <div style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--accent)"}}>${fmtPrice($(p))}</div>
+                <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>
+              </div>
+            </button>;})}
+          </div>
+        </div>
+
+        {/* Top Performers */}
+        <div style={{background:"var(--bg2)",borderRadius:20,border:"1px solid var(--bdr)",padding:18,boxShadow:"var(--shadowSm,none)"}}>
+          <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:14}}>
+            <h2 style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)"}}>Top Performers</h2>
+            <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--sky)",fontWeight:600}}>by benchmark</span>
+          </div>
+          <div style={{display:"flex",flexDirection:"column",gap:6}}>
+            {top.slice(0,5).map(p=>{const rr=retailers(p);const url=rr[0]?.url;return <button key={p.id} onClick={()=>{if(url)window.open(url,"_blank","noopener,noreferrer");else{browse(p.c);go("search");}}} style={{display:"flex",alignItems:"center",gap:10,width:"100%",background:"var(--bg3)",borderRadius:10,padding:"10px 12px",cursor:"pointer",textAlign:"left",border:"1px solid transparent",transition:"all .2s"}}
+              onMouseEnter={e=>e.currentTarget.style.borderColor="var(--sky)33"}
+              onMouseLeave={e=>e.currentTarget.style.borderColor="transparent"}>
+              <div style={{width:36,height:36,borderRadius:8,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0,overflow:"hidden"}}>{p.img?<img src={p.img} alt="" style={{width:"100%",height:"100%",objectFit:"contain"}}/>:ic(p)}</div>
+              <div style={{flex:1,minWidth:0}}>
+                <div style={{fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
+                <Stars r={p.r} s={9}/>
+              </div>
+              <div style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--accent)",minWidth:40,textAlign:"right",flexShrink:0}}>${fmtPrice($(p))}</div>
+            </button>;})}
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>;
 }
 
@@ -645,7 +639,7 @@ function SearchPage({activeCat,th}){
           const rr=retailers(p);
           return <div key={p.id}>
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`4fr ${cols.map(()=>"1fr").join(" ")} 60px 80px 70px`,gap:8,padding:"10px 12px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0,transition:"background .2s"}}>
-              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}>{p.img?<img src={p.img} alt="" style={{width:40,height:40,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:18,width:40,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2}}><span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}</div></div></div>
+              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}>{p.img?<img src={p.img} alt="" style={{width:40,height:40,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:18,width:40,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2}}><span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
               {cols.map(col=>{const v=p[col];const fmtVal=fmt(col,v,p);return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:typeof fmtVal==="string"&&fmtVal.includes("\n")?<div><div style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal.split("\n")[0]}</div><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{fmtVal.split("\n")[1]}</div></div>:<span style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal}</span>}</div>})}
               {(()=>{if(p.bench==null)return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)"}}>—</span></div>;const ratio=Math.round((p.bench/Math.max($(p)/100,1))*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:800,color:gc}}>{grade}</span></div>;})()}
               <div style={{textAlign:"right"}}>{(p.msrp&&p.msrp>$(p)||p.off>0)&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>}<div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</div>{rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{rr.length} stores</div>}</div>
@@ -943,7 +937,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
             <input type="number" placeholder="Max" value={prMax>=99999?"":prMax} onChange={e=>setPrMax(+e.target.value||99999)} style={{width:"50%",background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:4,padding:"4px 6px",fontSize:10,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none"}}/>
           </div>
         </FG>
-        <FG label="BRAND" open={true}>{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={compatList.filter(p=>p.b===b).length}/>)}</FG>
+        <FG label="BRAND">{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={compatList.filter(p=>p.b===b).length}/>)}</FG>
         <FG label="RATING">{[4.5,4,0].map(rv=><Chk key={rv} label={rv?`${rv}+ ★`:"All"} checked={minR===rv} onChange={()=>setMinR(minR===rv?0:rv)}/>)}</FG>
         {/* Dynamic spec filters based on category cols */}
         {cols.filter(col=>col!=="bench").map(col=>{
@@ -985,13 +979,13 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
           return <div key={p.id}>
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`2fr ${cols.map(()=>"1fr").join(" ")} 80px 80px`,gap:6,padding:"8px 10px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)08":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0}}>
               <div style={{display:"flex",alignItems:"center",gap:8,minWidth:0}}>
-                <span style={{fontSize:16}}>{meta.icon}</span>
+                {p.img?<img src={p.img} alt="" style={{width:36,height:36,objectFit:"contain",borderRadius:6,background:"#fff",flexShrink:0}}/>:<span style={{fontSize:16}}>{meta.icon}</span>}
                 <div style={{minWidth:0}}>
                   <div style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div>
                   <div style={{display:"flex",alignItems:"center",gap:4,marginTop:1}}>
                     <span style={{fontSize:10,color:"var(--dim)"}}>{p.b}</span>
                     <Stars r={p.r} s={9}/>
-                    {p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}
+                    {p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}
                   </div>
                 </div>
               </div>
@@ -1096,7 +1090,7 @@ function BuilderPage({th}){
   const allIssues=[...issues,...warnings];
 
   // Smart compat filter for part picker
-  const compat=cat=>{let r=P.filter(x=>x.c===cat);
+  const compat=cat=>{let r=P.filter(x=>x.c===cat&&!x.bundle);
     if(cpu&&cat==="Motherboard")r=r.filter(x=>x.socket===cpu.socket);
     if(mobo&&cat==="CPU")r=r.filter(x=>x.socket===mobo.socket);
     if(mobo&&cat==="RAM"&&mobo.memType)r=r.filter(x=>x.memType===mobo.memType);

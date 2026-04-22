@@ -505,7 +505,7 @@ export const PARTS = [
   {
     "id": 5017,
     "n": "AMD Ryzen 7 7700X",
-    "img": "https://m.media-amazon.com/images/I/51hfER1cZVL._AC_SL300_.jpg",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6519/6519477cv11d.jpg",
     "c": "CPU",
     "b": "AMD",
     "pr": 399,
@@ -529,35 +529,10 @@ export const PARTS = [
         "price": 246,
         "url": "https://www.amazon.com/dp/B0BBHHT8LY?tag=tiereduptech-20",
         "inStock": true
-      }
-    }
-  },
-  {
-    "id": 5018,
-    "n": "AMD Ryzen 7 7700",
-    "img": "https://m.media-amazon.com/images/I/51hfER1cZVL._AC_SL300_.jpg",
-    "c": "CPU",
-    "b": "AMD",
-    "pr": 329,
-    "msrp": 329,
-    "r": 4.7,
-    "socket": "AM5",
-    "cores": 8,
-    "threads": 16,
-    "baseClock": 3.8,
-    "boostClock": 5.3,
-    "tdp": 65,
-    "memType": "DDR5",
-    "maxMem": 5200,
-    "l3": 32,
-    "igpu": true,
-    "igpuName": "Radeon Graphics",
-    "arch": "Zen 4",
-    "bench": 79,
-    "deals": {
-      "amazon": {
-        "price": 246,
-        "url": "https://www.amazon.com/dp/B0BBHHT8LY?tag=tiereduptech-20",
+      },
+      "bestbuy": {
+        "price": 399.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6519477&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6519477.p%3FskuId%3D6519477",
         "inStock": true
       }
     }
@@ -5617,34 +5592,6 @@ export const PARTS = [
     }
   },
   {
-    "id": 1030,
-    "n": "AMD Ryzen 7 7700",
-    "img": "https://m.media-amazon.com/images/I/51hfER1cZVL._AC_SL300_.jpg",
-    "c": "CPU",
-    "b": "AMD",
-    "pr": 229,
-    "msrp": 329,
-    "r": 4.7,
-    "socket": "AM5",
-    "cores": 8,
-    "threads": 16,
-    "baseClock": 3.8,
-    "boostClock": 5.3,
-    "tdp": 65,
-    "memType": "DDR5",
-    "maxMem": 5200,
-    "bench": 85,
-    "cp": "SALE",
-    "off": 100,
-    "deals": {
-      "amazon": {
-        "price": 246,
-        "url": "https://www.amazon.com/dp/B0BBHHT8LY?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
     "id": 1031,
     "n": "AMD Ryzen 5 8600G",
     "img": "https://m.media-amazon.com/images/I/615TPN-DayL._AC_SL300_.jpg",
@@ -6797,14 +6744,12 @@ export const PARTS = [
     "img": "https://m.media-amazon.com/images/I/71OFYR9xzUL._AC_SL300_.jpg",
     "c": "Antivirus",
     "b": "Norton",
-    "pr": 29,
+    "pr": 40,
     "msrp": 89,
     "r": 4.3,
     "vendor": "Norton",
     "duration": "1 Year",
     "devices": 5,
-    "cp": "SALE",
-    "off": 60,
     "deals": {
       "amazon": {
         "price": 40,
@@ -7506,8 +7451,8 @@ export const PARTS = [
     "img": "https://m.media-amazon.com/images/I/51PLQhgVmmL._AC_SL300_.jpg",
     "c": "RAM",
     "b": "Crucial",
-    "pr": 54,
-    "msrp": 54,
+    "pr": 85,
+    "msrp": 120,
     "r": 4.5,
     "ramType": "DDR5",
     "cap": 32,
@@ -7520,8 +7465,8 @@ export const PARTS = [
     "height": 31,
     "deals": {
       "amazon": {
-        "price": 54,
-        "url": "https://www.amazon.com/dp/B0GVPVQ7W3?tag=tiereduptech-20",
+        "price": 85,
+        "url": "https://www.amazon.com/dp/B09HW9886B?tag=tiereduptech-20",
         "inStock": true
       }
     },
@@ -32247,7 +32192,8 @@ export const PARTS = [
     "tdp": 170,
     "cores": 16,
     "threads": 32,
-    "bench": 100
+    "bench": 100,
+    "bundle": true
   },
   {
     "id": 14554,
@@ -32280,17 +32226,18 @@ export const PARTS = [
     "tdp": 170,
     "cores": 16,
     "threads": 32,
-    "bench": 96
+    "bench": 96,
+    "bundle": true
   },
   {
     "id": 14555,
-    "n": "Ryzen 7 7700 Processor 3.8 GHz 32 MB L3",
+    "n": "AMD Ryzen 7 7700",
     "img": "https://m.media-amazon.com/images/I/41q7n0SPYLL._AC_SL1000_.jpg",
     "c": "CPU",
     "b": "AMD",
     "pr": 239.98,
     "msrp": 239.98,
-    "r": 4.2,
+    "r": 4.7,
     "asin": "B0C3T39N6P",
     "reviews": 58,
     "deals": {
@@ -32308,7 +32255,7 @@ export const PARTS = [
     "series": "Ryzen 7",
     "tdp": 65,
     "threads": 16,
-    "bench": 58
+    "bench": 80
   },
   {
     "id": 14556,
@@ -32564,7 +32511,8 @@ export const PARTS = [
     "tdp": 65,
     "cores": 8,
     "threads": 16,
-    "bench": 68
+    "bench": 68,
+    "bundle": true
   },
   {
     "id": 14565,
@@ -32597,7 +32545,8 @@ export const PARTS = [
     "tdp": 105,
     "cores": 8,
     "threads": 16,
-    "bench": 62
+    "bench": 62,
+    "bundle": true
   },
   {
     "id": 14566,
@@ -32693,7 +32642,8 @@ export const PARTS = [
     "tdp": 65,
     "cores": 6,
     "threads": 12,
-    "bench": 58
+    "bench": 58,
+    "bundle": true
   },
   {
     "id": 14569,
@@ -32726,7 +32676,8 @@ export const PARTS = [
     "tdp": 120,
     "cores": 8,
     "threads": 16,
-    "bench": 68
+    "bench": 68,
+    "bundle": true
   },
   {
     "id": 14570,
@@ -32786,7 +32737,8 @@ export const PARTS = [
     "baseClock": 5.5,
     "tdp": 125,
     "threads": 20,
-    "bench": 72
+    "bench": 72,
+    "bundle": true
   },
   {
     "id": 14572,
@@ -32820,7 +32772,8 @@ export const PARTS = [
     "tdp": 105,
     "cores": 8,
     "threads": 16,
-    "bench": 62
+    "bench": 62,
+    "bundle": true
   },
   {
     "id": 14573,
@@ -32952,41 +32905,8 @@ export const PARTS = [
     "tdp": 120,
     "cores": 12,
     "threads": 24,
-    "bench": 82
-  },
-  {
-    "id": 14578,
-    "n": "Shadow Gaming PC, AMD Ryzen 7 7700X 4.5GHz, NVIDIA RTX 5060",
-    "img": "https://m.media-amazon.com/images/I/61YJYPTQ12L._AC_SL1000_.jpg",
-    "c": "CPU",
-    "b": "Skytech Gaming",
-    "pr": 1499.99,
-    "msrp": 1499.99,
-    "r": 4,
-    "asin": "B0G2RHGK5F",
-    "reviews": 5,
-    "deals": {
-      "amazon": {
-        "price": 1499.99,
-        "url": "https://www.amazon.com/dp/B0G2RHGK5F?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/61D4gSA3a5L._AC_SL1000_.jpg",
-      "https://m.media-amazon.com/images/I/617qnPNZsHL._AC_SL1000_.jpg",
-      "https://m.media-amazon.com/images/I/71ud1tGNd-L._AC_SL1000_.jpg"
-    ],
-    "upc": "810202183308",
-    "mpn": "ST-SHADOW4-2662-B-AM",
-    "socket": "AM5",
-    "cores": 8,
-    "baseClock": 4.5,
-    "model": "7700X",
-    "series": "Ryzen 7",
-    "tdp": 105,
-    "threads": 16,
-    "bench": 62
+    "bench": 82,
+    "bundle": true
   },
   {
     "id": 14579,
@@ -33019,7 +32939,8 @@ export const PARTS = [
     "tdp": 170,
     "cores": 16,
     "threads": 32,
-    "bench": 90
+    "bench": 90,
+    "bundle": true
   },
   {
     "id": 14581,
@@ -33052,7 +32973,8 @@ export const PARTS = [
     "tdp": 65,
     "cores": 6,
     "threads": 12,
-    "bench": 54
+    "bench": 54,
+    "bundle": true
   },
   {
     "id": 14582,
@@ -48290,7 +48212,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 0
+    "value": 0,
+    "bundle": true
   },
   {
     "id": 15033,
@@ -48324,7 +48247,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 0
+    "value": 0,
+    "bundle": true
   },
   {
     "id": 15034,
@@ -48358,7 +48282,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 15
+    "value": 15,
+    "bundle": true
   },
   {
     "id": 15035,
@@ -48392,7 +48317,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 2
+    "value": 2,
+    "bundle": true
   },
   {
     "id": 15036,
@@ -48426,7 +48352,8 @@ export const PARTS = [
     "memSlots": 2,
     "wifi": "WiFi 6E",
     "ff": "ATX",
-    "value": 1
+    "value": 1,
+    "bundle": true
   },
   {
     "id": 15037,
@@ -48460,7 +48387,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 9
+    "value": 9,
+    "bundle": true
   },
   {
     "id": 15038,
@@ -48521,7 +48449,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 0
+    "value": 0,
+    "bundle": true
   },
   {
     "id": 15040,
@@ -48555,7 +48484,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 0
+    "value": 0,
+    "bundle": true
   },
   {
     "id": 15041,
@@ -48590,7 +48520,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 0
+    "value": 0,
+    "bundle": true
   },
   {
     "id": 15042,
@@ -48624,7 +48555,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 0
+    "value": 0,
+    "bundle": true
   },
   {
     "id": 15043,
@@ -48659,7 +48591,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6",
-    "value": 8
+    "value": 8,
+    "bundle": true
   },
   {
     "id": 15044,
@@ -48693,7 +48626,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "mATX",
-    "value": 8
+    "value": 8,
+    "bundle": true
   },
   {
     "id": 15045,
@@ -48727,7 +48661,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 0
+    "value": 0,
+    "bundle": true
   },
   {
     "id": 15046,
@@ -48761,7 +48696,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 0
+    "value": 0,
+    "bundle": true
   },
   {
     "id": 15047,
@@ -50653,7 +50589,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi",
     "ff": "mATX",
-    "value": 29
+    "value": 29,
+    "bundle": true
   },
   {
     "id": 15098,
@@ -55890,7 +55827,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 4
+    "value": 4,
+    "bundle": true
   },
   {
     "id": 15247,
@@ -58639,7 +58577,8 @@ export const PARTS = [
     "mpn": "14400PRO760MPD4",
     "socket": "LGA1700",
     "wifi": "None",
-    "value": 11
+    "value": 11,
+    "bundle": true
   },
   {
     "id": 15326,
@@ -58952,7 +58891,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 2
+    "value": 2,
+    "bundle": true
   },
   {
     "id": 15335,
@@ -60375,7 +60315,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 16
+    "value": 16,
+    "bundle": true
   },
   {
     "id": 15376,
@@ -60645,7 +60586,8 @@ export const PARTS = [
     "ff": "mATX",
     "wifi": "None",
     "chipset": "B760",
-    "value": 3
+    "value": 3,
+    "bundle": true
   },
   {
     "id": 15384,
@@ -91139,38 +91081,6 @@ export const PARTS = [
     "maxMem": "128 gigabytes",
     "unlocked": true,
     "bench": 78
-  },
-  {
-    "id": 16264,
-    "n": "AMD - Ryzen 7 7700X 8-Core - 16-Thread 4.5GHz (5.4 GHz Max Boost) Socket AM5 105W Unlocked Desktop Processor - Silver",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6519/6519477cv11d.jpg",
-    "c": "CPU",
-    "b": "AMD",
-    "pr": 399.99,
-    "msrp": 399.99,
-    "r": 0,
-    "upc": "730143314428",
-    "mpn": "100-100000591WOF",
-    "deals": {
-      "bestbuy": {
-        "price": 399.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6519477&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6519477.p%3FskuId%3D6519477",
-        "inStock": true
-      }
-    },
-    "cores": 8,
-    "threads": 16,
-    "baseClock": 4.5,
-    "boostClock": 5.4,
-    "tdp": 105,
-    "socket": "AM5",
-    "l3": 32,
-    "igpu": true,
-    "igpuName": "AMD Radeon",
-    "memType": "DDR5",
-    "maxMem": "128 gigabytes",
-    "unlocked": true,
-    "bench": 62
   },
   {
     "id": 16265,
