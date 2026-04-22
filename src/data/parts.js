@@ -50,7 +50,7 @@ export const PARTS = [
     "bench": 99,
     "deals": {
       "amazon": {
-        "price": 363,
+        "price": 343.25,
         "url": "https://www.amazon.com/dp/B0D6NN87T8?tag=tiereduptech-20",
         "inStock": true
       }
@@ -873,7 +873,7 @@ export const PARTS = [
     "bench": 59,
     "deals": {
       "amazon": {
-        "price": 163,
+        "price": 178,
         "url": "https://www.amazon.com/dp/B0CQ4HPJYV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1017,7 +1017,7 @@ export const PARTS = [
     "bench": 59,
     "deals": {
       "amazon": {
-        "price": 198,
+        "price": 208.14,
         "url": "https://www.amazon.com/dp/B091J3NYVF?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1075,7 +1075,7 @@ export const PARTS = [
     "bench": 56,
     "deals": {
       "amazon": {
-        "price": 349,
+        "price": 229.99,
         "url": "https://www.amazon.com/dp/B07ZTYKLZW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1103,7 +1103,7 @@ export const PARTS = [
     "bench": 56,
     "deals": {
       "amazon": {
-        "price": 306,
+        "price": 249.9,
         "url": "https://www.amazon.com/dp/B07SXMZLP9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1131,7 +1131,7 @@ export const PARTS = [
     "bench": 48,
     "deals": {
       "amazon": {
-        "price": 320,
+        "price": 459.95,
         "url": "https://www.amazon.com/dp/B07SXMZLPJ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1243,7 +1243,7 @@ export const PARTS = [
     "bench": 41,
     "deals": {
       "amazon": {
-        "price": 78,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0876YS2T4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1271,7 +1271,7 @@ export const PARTS = [
     "bench": 35,
     "deals": {
       "amazon": {
-        "price": 78,
+        "price": 59.99,
         "url": "https://www.amazon.com/dp/B0876Y2TMZ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1427,7 +1427,7 @@ export const PARTS = [
     "bench": 82,
     "deals": {
       "amazon": {
-        "price": 170,
+        "price": 189,
         "url": "https://www.amazon.com/dp/B0DFK8HHK4?tag=tiereduptech-20",
         "inStock": true
       }
