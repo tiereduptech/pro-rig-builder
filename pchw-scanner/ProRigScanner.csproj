@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <AssemblyName>ProRigScanner</AssemblyName>
+    <RootNamespace>ProRigScanner</RootNamespace>
+    <Version>2.0.0</Version>
+    <Authors>TieredUp Tech, Inc.</Authors>
+    <Company>TieredUp Tech, Inc.</Company>
+    <Product>Pro Rig Builder Scanner</Product>
+    <Description>Scans your PC hardware and finds upgrade paths on prorigbuilder.com</Description>
+    <Copyright>© 2026 TieredUp Tech, Inc.</Copyright>
+    <PublishTrimmed>false</PublishTrimmed>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>assets\prorigbuilder.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\tiereduptech-logo-trans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Program.cs" />
+  </ItemGroup>
+</Project>

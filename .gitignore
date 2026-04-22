@@ -13,3 +13,48 @@ catalog-build/
 src/data/parts.js.backup-*
 bestbuy-test-response.json
 impact-test-output.txt
+
+# Scanner build artifacts
+pchw-scanner/bin/
+pchw-scanner/obj/
+pchw-scanner/publish/
+
+# Verifier reports (contain API response data, can regenerate)
+verify-reports/
+
+# Local scrape data (large files)
+bestbuy-full-scrape.json
+bestbuy-scrape-report.json
+scraped-skus.txt
+bb-query.txt
+bb-variables.txt
+
+# Scanner build artifacts
+pchw-scanner/bin/
+pchw-scanner/obj/
+pchw-scanner/publish/
+
+# Verifier reports (can regenerate)
+verify-reports/
+
+# Local scrape data
+bestbuy-full-scrape.json
+bestbuy-scrape-report.json
+scraped-skus.txt
+bb-query.txt
+bb-variables.txt
+
+# Scanner build artifacts
+pchw-scanner/bin/
+pchw-scanner/obj/
+pchw-scanner/publish/
+
+# Verifier reports (can regenerate)
+verify-reports/
+
+# Local scrape data
+bestbuy-full-scrape.json
+bestbuy-scrape-report.json
+scraped-skus.txt
+bb-query.txt
+bb-variables.txt
