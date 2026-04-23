@@ -11,14 +11,23 @@
 //
 //  Bench scale: 0-100, calibrated against PassMark G3D Mark (GPUs) and
 //  PassMark CPU Mark (CPUs). RTX 4090 = 100, Ryzen 9 9950X3D = 100 anchor.
-//  Storage has bench when PassMark data matched (~38% of catalog); undefined
-//  otherwise — upgrade logic handles both paths.
+//  Storage/RAM bench may be undefined — all code guards for this.
 // =============================================================================
 
 import React, { useState, useEffect, useMemo } from "react";
 import { PARTS as RAW_PARTS } from "./data/parts.js";
 
-const PARTS = RAW_PARTS.filter(p => !p.needsReview);
+// Filter out quarantined and non-gaming GPUs once at load time.
+// segment:"server"|"workstation" + name-based fallback (Quadro, Tesla, A-series, Pro W)
+const isWorkstationGPU = (p) => {
+  if (p.c !== "GPU") return false;
+  if (p.segment === "server" || p.segment === "workstation") return true;
+  const n = (p.n || "").toUpperCase();
+  if (/\b(QUADRO|TESLA|RTX\s*A\d{4}|NVIDIA\s*A\d+\b|RADEON\s*PRO\s*W|FIREPRO)\b/.test(n)) return true;
+  return false;
+};
+
+const PARTS = RAW_PARTS.filter(p => !p.needsReview && !isWorkstationGPU(p));
 
 // ─── CONFIG ─────────────────────────────────────────────────────────
 const TOP_N_GPU      = 4;
@@ -27,9 +36,7 @@ const TOP_N_RAM      = 3;
 const TOP_N_STORAGE  = 3;
 const MIN_IMPROVEMENT = 0.10;   // 10% bench gain required for GPU/CPU recs
 
-// Budget split (normal path — no platform refresh)
 const SPLIT_NORMAL  = { gpu: 0.65, cpu: 0.20, ram: 0.10, storage: 0.05 };
-// Budget split (platform refresh — need new mobo + RAM)
 const SPLIT_REFRESH = { gpu: 0.40, cpu: 0.20, ram: 0.15, mobo: 0.15, storage: 0.10 };
 
 // ─── URL PARAM PARSING ──────────────────────────────────────────────
@@ -106,71 +113,51 @@ function inferCPUSocket(model, brand) {
 function socketToDDR(socket) {
   if (socket === "AM5" || socket === "LGA1851") return "DDR5";
   if (socket === "AM4" || socket === "LGA1200" || socket === "LGA1151") return "DDR4";
-  return null; // LGA1700 supports both — let mobo decide
+  return null;
 }
 
-// ─── BASELINE BENCHMARKS (for hardware not in sales catalog) ────────
-// Calibrated to PassMark G3D Mark, RTX 4090 = 100 anchor.
-// Values for recent cards taken from actual catalog averages; older cards
-// estimated by PassMark score ratio.
+// ─── BASELINE BENCHMARKS ────────────────────────────────────────────
 const GPU_BASELINE_BENCH = {
-  // Older NVIDIA (pre-RTX 3000)
   "GTX 1030": 4, "GTX 1050": 6, "GTX 1050 TI": 9, "GTX 1060": 12,
   "GTX 1070": 17, "GTX 1070 TI": 20, "GTX 1080": 22, "GTX 1080 TI": 28,
   "GTX 1630": 7, "GTX 1650": 11, "GTX 1650 SUPER": 14, "GTX 1660": 15, "GTX 1660 SUPER": 18, "GTX 1660 TI": 19,
   "RTX 2060": 22, "RTX 2060 SUPER": 26, "RTX 2070": 27, "RTX 2070 SUPER": 30,
   "RTX 2080": 32, "RTX 2080 SUPER": 34, "RTX 2080 TI": 40,
-  // RTX 3000 series — calibrated from actual catalog data
   "RTX 3050": 25, "RTX 3060": 49, "RTX 3060 TI": 55, "RTX 3070": 60, "RTX 3070 TI": 63,
   "RTX 3080": 71, "RTX 3080 TI": 78, "RTX 3090": 73, "RTX 3090 TI": 80,
-  // RTX 4000 series — from catalog averages
   "RTX 4060": 57, "RTX 4060 TI": 58, "RTX 4070": 81, "RTX 4070 SUPER": 80,
   "RTX 4070 TI": 85, "RTX 4070 TI SUPER": 85, "RTX 4080": 91, "RTX 4080 SUPER": 93, "RTX 4090": 100,
-  // RTX 5000 series — from catalog averages
   "RTX 5050": 40, "RTX 5060": 55, "RTX 5060 TI": 62, "RTX 5070": 82, "RTX 5070 TI": 87,
   "RTX 5080": 95, "RTX 5090": 100,
-  // AMD RX
   "RX 550": 3, "RX 560": 5, "RX 570": 9, "RX 580": 11, "RX 590": 13,
   "RX 5500 XT": 13, "RX 5600 XT": 18, "RX 5700": 22, "RX 5700 XT": 26,
   "RX 6500 XT": 18, "RX 6600": 30, "RX 6600 XT": 36, "RX 6650 XT": 38, "RX 6700 XT": 45,
   "RX 6750 XT": 48, "RX 6800": 55, "RX 6800 XT": 62, "RX 6900 XT": 66, "RX 6950 XT": 70,
   "RX 7600": 38, "RX 7600 XT": 42, "RX 7700 XT": 60, "RX 7800 XT": 64, "RX 7900 GRE": 72,
   "RX 7900 XT": 81, "RX 7900 XTX": 83,
-  // Intel Arc
   "ARC A310": 8, "ARC A380": 11, "ARC A580": 28, "ARC A750": 40, "ARC A770": 45,
   "ARC B580": 42, "ARC B570": 38,
-  // Integrated
   "UHD GRAPHICS": 2, "IRIS XE": 4, "RADEON GRAPHICS": 6, "VEGA": 8,
 };
 
-// Calibrated to PassMark CPU Mark, Ryzen 9 9950X3D = 100 anchor.
-// CPU scale is intentionally compressed at the top — differences between
-// high-end CPUs are narrower in PassMark than in raw core count.
 const CPU_BASELINE_BENCH = {
-  // Intel 6th-11th gen
   "6100": 8, "6300": 10, "6500": 13, "6600": 15, "6700": 18, "6700K": 19,
   "7100": 9, "7300": 11, "7400": 13, "7500": 15, "7600": 17, "7700": 19, "7700K": 21,
   "8100": 12, "8300": 14, "8400": 17, "8500": 19, "8600": 21, "8600K": 23, "8700": 25, "8700K": 27,
   "9100": 14, "9300": 16, "9400": 19, "9500": 21, "9600K": 24, "9700K": 28, "9900K": 32,
-  "10100": 15, "10300": 18, "10400": 22, "10500": 24, "10600K": 28, "10700K": 32, "10900K": 38,
+  "10100": 15, "10105": 15, "10300": 18, "10400": 22, "10500": 24, "10600K": 28, "10700K": 32, "10900K": 38,
   "11400": 24, "11600K": 30, "11700K": 36, "11900K": 42,
-  // Intel 12th-14th gen (catalog-calibrated)
   "12100": 20, "12400": 28, "12600K": 39, "12700K": 49, "12900K": 59,
   "13400": 35, "13600K": 53, "13700K": 65, "13900K": 83,
   "14400": 36, "14600K": 78, "14700K": 74, "14900K": 83,
-  // Intel Core Ultra (15th gen / LGA1851)
   "245K": 62, "245KF": 62, "265K": 70, "265KF": 70, "285K": 85,
-  // AMD Ryzen 1000-3000 (AM4)
   "1600": 12, "1700": 14, "1800X": 16, "1600X": 13,
   "2600": 15, "2700": 18, "2700X": 20,
   "3600": 22, "3700X": 28, "3800X": 30, "3900X": 38, "3950X": 45,
-  // AMD Ryzen 5000 (AM4) — catalog-calibrated
   "5600": 28, "5600X": 31, "5700X": 36, "5800X": 39, "5800X3D": 72,
   "5900X": 48, "5950X": 56,
-  // AMD Ryzen 7000 (AM5) — catalog-calibrated
   "7600": 38, "7600X": 40, "7700": 48, "7700X": 51, "7800X3D": 70,
   "7900": 68, "7900X": 73, "7950X": 89, "7950X3D": 88,
-  // AMD Ryzen 9000 (AM5) — catalog-calibrated
   "9600X": 45, "9700X": 53, "9800X3D": 80, "9900X": 78, "9900X3D": 85,
   "9950X": 94, "9950X3D": 100,
 };
@@ -207,7 +194,7 @@ function findCatalogMatch(type, scannerName) {
       if (hit) return hit;
     }
     const b = lookupGPUBaseline(scannerName);
-    if (b) return { n: "Current: " + b.name, bench: b.bench, isBaseline: true };
+    if (b && b.bench > 0) return { n: "Current: " + b.name, bench: b.bench, isBaseline: true };
     return null;
   }
   if (type === "CPU") {
@@ -217,7 +204,7 @@ function findCatalogMatch(type, scannerName) {
     if (hit) return hit;
     const b = lookupCPUBaseline(cpu.model);
     const inferredSocket = inferCPUSocket(cpu.model, cpu.brand);
-    if (b) return { n: "Current: " + b.name, bench: b.bench, socket: inferredSocket, brand: cpu.brand, isBaseline: true };
+    if (b && b.bench > 0) return { n: "Current: " + b.name, bench: b.bench, socket: inferredSocket, brand: cpu.brand, isBaseline: true };
     return null;
   }
   return null;
@@ -225,9 +212,11 @@ function findCatalogMatch(type, scannerName) {
 
 // ─── PRICE / RETAILER ───────────────────────────────────────────────
 function bestPrice(p) {
-  if (p?.deals?.amazon?.price) return p.deals.amazon.price;
-  if (p?.deals?.bestbuy?.price) return p.deals.bestbuy.price;
-  return p?.pr || 0;
+  const amazonPrice = Number(p?.deals?.amazon?.price);
+  if (amazonPrice > 0) return amazonPrice;
+  const bestbuyPrice = Number(p?.deals?.bestbuy?.price);
+  if (bestbuyPrice > 0) return bestbuyPrice;
+  return Number(p?.pr) || 0;
 }
 function retailerUrl(p) {
   if (p?.deals?.amazon?.url) return { url: p.deals.amazon.url, name: "Amazon" };
@@ -257,16 +246,18 @@ function needsPlatformRefresh(currentCPU, cpuModel, rawSocket) {
 }
 
 // ─── RECOMMENDATION ENGINES ─────────────────────────────────────────
-// GPU — top N cards by perf-per-dollar that beat current by 10%+
 function recommendGPUs(currentGPU, budget, topN = TOP_N_GPU) {
-  if (!currentGPU?.bench) return [];
+  if (!currentGPU || !currentGPU.bench || currentGPU.bench <= 0) return [];
+  if (!budget || budget <= 0) return [];
   const target = currentGPU.bench * (1 + MIN_IMPROVEMENT);
-  const pool = PARTS.filter(p =>
-    p.c === "GPU" && !p.bundle && p.bench != null &&
-    p.bench >= target && bestPrice(p) <= budget && bestPrice(p) > 0
-  );
+  const pool = PARTS.filter(p => {
+    if (p.c !== "GPU" || p.bundle) return false;
+    if (p.bench == null || p.bench < target) return false;
+    const price = bestPrice(p);
+    if (price <= 0 || price > budget) return false;
+    return true;
+  });
   pool.sort((a, b) => (b.bench / bestPrice(b)) - (a.bench / bestPrice(a)));
-  // de-dup by model to avoid 3 variants of the same card
   const seen = new Set();
   const out = [];
   for (const p of pool) {
@@ -279,16 +270,18 @@ function recommendGPUs(currentGPU, budget, topN = TOP_N_GPU) {
   return out;
 }
 
-// CPU — STRICT same-socket filter (no cross-platform AMD/Intel mixing)
 function recommendCPUs(currentCPU, budget, topN = TOP_N_CPU) {
-  if (!currentCPU?.bench || !currentCPU.socket) return [];
+  if (!currentCPU || !currentCPU.bench || currentCPU.bench <= 0 || !currentCPU.socket) return [];
+  if (!budget || budget <= 0) return [];
   const target = currentCPU.bench * (1 + MIN_IMPROVEMENT);
-  const pool = PARTS.filter(p =>
-    p.c === "CPU" && !p.bundle && p.bench != null &&
-    p.socket === currentCPU.socket &&
-    p.bench >= target &&
-    bestPrice(p) <= budget && bestPrice(p) > 0
-  );
+  const pool = PARTS.filter(p => {
+    if (p.c !== "CPU" || p.bundle) return false;
+    if (p.bench == null || p.bench < target) return false;
+    if (p.socket !== currentCPU.socket) return false;
+    const price = bestPrice(p);
+    if (price <= 0 || price > budget) return false;
+    return true;
+  });
   pool.sort((a, b) => (b.bench / bestPrice(b)) - (a.bench / bestPrice(a)));
   const seen = new Set();
   const out = [];
@@ -302,10 +295,8 @@ function recommendCPUs(currentCPU, budget, topN = TOP_N_CPU) {
   return out;
 }
 
-// Platform swap: full CPU+Mobo+RAM change. Only offered if it beats the best
-// same-socket CPU upgrade by 30%+ in perf-per-dollar.
 function recommendPlatformSwap(currentCPU, budget, sameSocketBest) {
-  if (!currentCPU?.bench) return null;
+  if (!currentCPU || !currentCPU.bench || currentCPU.bench <= 0) return null;
   const swapSockets = currentCPU.brand === "Intel"
     ? ["AM5"]
     : currentCPU.brand === "AMD"
@@ -331,13 +322,11 @@ function recommendPlatformSwap(currentCPU, budget, sameSocketBest) {
     if (!best || ppd > best.ppd) best = { cpu, mobo, ram, total, ppd, socket, ddr };
   }
   if (!best) return null;
-
   const sameSocketPPD = sameSocketBest ? (sameSocketBest.bench / bestPrice(sameSocketBest)) : 0;
   if (sameSocketPPD > 0 && best.ppd < sameSocketPPD * 1.30) return null;
   return best;
 }
 
-// RAM — respect slot count, bench-aware where available, falls back to speed
 function recommendRAMs(specs, budget, topN = TOP_N_RAM) {
   const currentSticks = parseInt(specs.ram_sticks) || 0;
   const currentUsed   = parseInt(specs.ram_used_slots) || currentSticks;
@@ -349,29 +338,17 @@ function recommendRAMs(specs, budget, topN = TOP_N_RAM) {
 
   const pool = PARTS.filter(p => {
     if (p.c !== "RAM" || p.bundle) return false;
-    if (bestPrice(p) > budget || bestPrice(p) <= 0) return false;
-
+    const price = bestPrice(p);
+    if (price <= 0 || price > budget) return false;
     const nameDdr = /DDR5/i.test(p.n) ? "DDR5" : /DDR4/i.test(p.n) ? "DDR4" : null;
     const partType = p.ramType || nameDdr;
     if (currentType && partType && partType !== currentType) return false;
-
     if (p.cap != null && p.cap < currentCapGB) return false;
-
-    // If all slots are filled, only offer kits with matching stick count
     if (allSlotsFilled && p.sticks != null && p.sticks !== currentSticks) return false;
-
-    // Must be faster than current — compare by bench if present, else by speed
-    if (p.bench != null && currentSpeed) {
-      // We don't have a bench for the user's current RAM, so fall back to speed check
-      if (p.speed != null && p.speed <= currentSpeed) return false;
-    } else if (currentSpeed && p.speed != null && p.speed <= currentSpeed) {
-      return false;
-    }
-
+    if (currentSpeed && p.speed != null && p.speed <= currentSpeed) return false;
     return true;
   });
 
-  // Rank: bench first if available, else speed/price
   pool.sort((a, b) => {
     if (a.bench != null && b.bench != null) {
       return (b.bench / bestPrice(b)) - (a.bench / bestPrice(a));
@@ -391,8 +368,6 @@ function recommendRAMs(specs, budget, topN = TOP_N_RAM) {
   return out;
 }
 
-// Storage — hard capacity floor, bench-aware ranking when available,
-// falls back to tier-based (Gen5 > Gen4 > Gen3 > SATA SSD > HDD) when bench undefined
 function recommendStorages(wantGB, wantType, budget, topN = TOP_N_STORAGE) {
   if (!wantGB || !wantType) return [];
   const isHDD = wantType === "HDD";
@@ -423,18 +398,13 @@ function recommendStorages(wantGB, wantType, budget, topN = TOP_N_STORAGE) {
   const working = inBudget.length ? inBudget : byCapacity;
 
   working.sort((a, b) => {
-    // Prefer higher tier (Gen5 > Gen4 > Gen3 > SATA > HDD)
     const t = tierOf(b) - tierOf(a);
     if (t !== 0) return t;
-    // Within same tier, prefer higher bench if both have it
     if (a.bench != null && b.bench != null) {
-      // Rank by bench-per-dollar within tier
       return (b.bench / bestPrice(b)) - (a.bench / bestPrice(a));
     }
-    // If only one has bench, prefer the one with bench
     if (a.bench != null && b.bench == null) return -1;
     if (b.bench != null && a.bench == null) return 1;
-    // Neither has bench — cheaper first
     return bestPrice(a) - bestPrice(b);
   });
 
@@ -450,7 +420,6 @@ function recommendStorages(wantGB, wantType, budget, topN = TOP_N_STORAGE) {
   return out;
 }
 
-// Bottleneck analysis — bench values are on a comparable 0-100 scale
 function analyzeBottleneck(currentCPU, currentGPU) {
   if (!currentCPU?.bench || !currentGPU?.bench) return null;
   const ratio = currentCPU.bench / currentGPU.bench;
@@ -480,7 +449,8 @@ export default function UpgradePage() {
   const analysis = useMemo(() => {
     if (!specs) return null;
 
-    const budget = parseInt(specs.budget) || 1000;
+    // Coerce string inputs from scanner URL to numbers
+    const budget = Number(specs.budget) || 1000;
     const currentGPU = findCatalogMatch("GPU", specs.gpu);
     const currentCPU = findCatalogMatch("CPU", specs.cpu);
     const cpuModel = extractCPUModel(specs.cpu);
@@ -502,7 +472,7 @@ export default function UpgradePage() {
 
     const ramRecs = recommendRAMs(specs, budgetRAM);
 
-    const storageWant = parseInt(specs.add_storage_gb) || 0;
+    const storageWant = Number(specs.add_storage_gb) || 0;
     const storageType = specs.add_storage_type || "";
     const storageRecs = storageWant > 0
       ? recommendStorages(storageWant, storageType, budgetStorage)
@@ -520,6 +490,19 @@ export default function UpgradePage() {
     if (ramRecs[0])     estCost += bestPrice(ramRecs[0]);
     if (storageRecs[0]) estCost += bestPrice(storageRecs[0]);
 
+    // Dev diagnostics — exposed for debugging via window.__upgradeAnalysis
+    if (typeof window !== "undefined") {
+      window.__upgradeAnalysis = {
+        budget, budgetGPU, budgetCPU, budgetRAM, budgetStorage,
+        currentGPU: currentGPU ? { name: currentGPU.n, bench: currentGPU.bench, isBaseline: !!currentGPU.isBaseline } : null,
+        currentCPU: currentCPU ? { name: currentCPU.n, bench: currentCPU.bench, socket: currentCPU.socket, isBaseline: !!currentCPU.isBaseline } : null,
+        gpuTarget: currentGPU?.bench ? (currentGPU.bench * 1.1).toFixed(1) : null,
+        cpuTarget: currentCPU?.bench ? (currentCPU.bench * 1.1).toFixed(1) : null,
+        gpuRecs: gpuRecs.map(p => ({ n: p.n, bench: p.bench, price: bestPrice(p) })),
+        cpuRecs: cpuRecs.map(p => ({ n: p.n, bench: p.bench, price: bestPrice(p) })),
+      };
+    }
+
     return {
       budget, budgetGPU, budgetCPU, budgetRAM, budgetMobo, budgetStorage,
       currentGPU, currentCPU, refresh,
@@ -534,7 +517,7 @@ export default function UpgradePage() {
   if (!specs)  return <MissingSpecsView />;
 
   const a = analysis;
-  const allSlotsFilled = parseInt(specs.ram_used_slots) >= parseInt(specs.ram_total_slots) && parseInt(specs.ram_total_slots) > 0;
+  const allSlotsFilled = Number(specs.ram_used_slots) >= Number(specs.ram_total_slots) && Number(specs.ram_total_slots) > 0;
 
   return (
     <div style={{minHeight:"100vh", background:"var(--bg)"}}>
@@ -550,10 +533,10 @@ export default function UpgradePage() {
           title="GPU Upgrades"
           color="#4ADE80"
           icon="🟢"
-          description="These GPUs would improve your gaming performance. Check PSU wattage compatibility before purchasing."
+          description={`These GPUs would improve your gaming performance. Budget: $${a.budgetGPU.toLocaleString()}. Check PSU wattage compatibility before purchasing.`}
           items={a.gpuRecs}
           baseline={a.currentGPU}
-          emptyMsg="No GPU upgrades within budget offer 10%+ improvement over your current card."
+          emptyMsg={`No GPU upgrades within $${a.budgetGPU.toLocaleString()} offer 10%+ improvement over your current card. Try increasing your budget.`}
         />
 
         <UpgradeSection
@@ -561,11 +544,11 @@ export default function UpgradePage() {
           color="#F87171"
           icon="🔴"
           description={a.currentCPU?.socket
-            ? `Filtered to ${a.currentCPU.socket}-compatible CPUs that work with your motherboard.`
-            : "CPU upgrades compatible with your current motherboard."}
+            ? `Filtered to ${a.currentCPU.socket}-compatible CPUs. Budget: $${a.budgetCPU.toLocaleString()}.`
+            : `CPU upgrades compatible with your current motherboard. Budget: $${a.budgetCPU.toLocaleString()}.`}
           items={a.cpuRecs}
           baseline={a.currentCPU}
-          emptyMsg="No same-socket CPU upgrades within budget offer 10%+ improvement. See platform swap below."
+          emptyMsg={`No same-socket CPU upgrades within $${a.budgetCPU.toLocaleString()} offer 10%+ improvement. See platform swap below if available.`}
         />
 
         {a.platformSwap && <PlatformSwapCard swap={a.platformSwap} currentBrand={a.currentCPU?.brand} />}
@@ -754,7 +737,7 @@ function UpgradeSection({title, color, icon, description, warning, items, baseli
 function UpgradeRow({part, color, baseline}) {
   const price = bestPrice(part);
   const retailer = retailerUrl(part);
-  const improvement = (baseline?.bench != null && part.bench != null)
+  const improvement = (baseline?.bench != null && baseline.bench > 0 && part.bench != null)
     ? Math.round(((part.bench - baseline.bench) / baseline.bench) * 100)
     : null;
   return (
