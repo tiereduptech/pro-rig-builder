@@ -5,20 +5,17 @@
 //  Copyright © 2026 TieredUp Tech, Inc. — All rights reserved.
 //  Proprietary and confidential. See project LICENSE for terms.
 //
-//  Reads URL hash (#upgrade?specs=base64(json)) from the scanner,
-//  analyzes the user's current hardware against the live catalog,
-//  and returns ranked, budget-aware upgrade recommendations.
+//  Auto-selects the best full build within budget (GPU + CPU + RAM + Storage),
+//  with 10% overage allowed when it meaningfully improves the build.
+//  Shows 2-3 alternatives per category + CPU cooler add-ons (separate budget)
+//  ONLY when user's current cooler can't handle the recommended CPU's TDP.
 //
-//  Bench scale: 0-100, calibrated against PassMark G3D Mark (GPUs) and
-//  PassMark CPU Mark (CPUs). RTX 4090 = 100, Ryzen 9 9950X3D = 100 anchor.
-//  Storage/RAM bench may be undefined — all code guards for this.
+//  Bench scale: 0-100 (PassMark G3D/CPU Mark calibrated, RTX 4090 = 100).
 // =============================================================================
 
 import React, { useState, useEffect, useMemo } from "react";
 import { PARTS as RAW_PARTS } from "./data/parts.js";
 
-// Filter out quarantined and non-gaming GPUs once at load time.
-// segment:"server"|"workstation" + name-based fallback (Quadro, Tesla, A-series, Pro W)
 const isWorkstationGPU = (p) => {
   if (p.c !== "GPU") return false;
   if (p.segment === "server" || p.segment === "workstation") return true;
@@ -30,16 +27,31 @@ const isWorkstationGPU = (p) => {
 const PARTS = RAW_PARTS.filter(p => !p.needsReview && !isWorkstationGPU(p));
 
 // ─── CONFIG ─────────────────────────────────────────────────────────
-const TOP_N_GPU      = 4;
-const TOP_N_CPU      = 4;
-const TOP_N_RAM      = 3;
-const TOP_N_STORAGE  = 3;
-const MIN_IMPROVEMENT = 0.10;   // 10% bench gain required for GPU/CPU recs
+const MIN_IMPROVEMENT = 0.10;
+const BUDGET_OVERAGE  = 0.10;
+const N_ALTERNATIVES  = 3;
+const COOLER_TDP_HEADROOM = 1.15;
 
-const SPLIT_NORMAL  = { gpu: 0.65, cpu: 0.20, ram: 0.10, storage: 0.05 };
-const SPLIT_REFRESH = { gpu: 0.40, cpu: 0.20, ram: 0.15, mobo: 0.15, storage: 0.10 };
+// Cooler type → estimated max TDP capacity (used to check if replacement needed)
+const COOLER_TDP_CAPACITY = {
+  "stock":       65,
+  "budget_air":  120,
+  "aio_120":     150,
+  "aio_240":     220,
+  "aio_360":     300,
+  "unknown":     0,   // 0 = always recommend coolers (we don't know what they have)
+};
 
-// ─── URL PARAM PARSING ──────────────────────────────────────────────
+const COOLER_LABELS = {
+  "stock":       "your stock cooler (~65W)",
+  "budget_air":  "your budget air cooler (~120W)",
+  "aio_120":     "your 120mm AIO (~150W)",
+  "aio_240":     "your 240mm AIO (~220W)",
+  "aio_360":     "your 360mm AIO (~300W)",
+  "unknown":     "your current cooler",
+};
+
+// ─── URL PARSING ────────────────────────────────────────────────────
 function parseSpecs() {
   try {
     const hash = window.location.hash.split("?")[1] || "";
@@ -53,7 +65,7 @@ function parseSpecs() {
   }
 }
 
-// ─── COMPONENT NAME EXTRACTION ──────────────────────────────────────
+// ─── NAME EXTRACTION ────────────────────────────────────────────────
 function extractGPUModel(name) {
   if (!name) return null;
   const n = name.toUpperCase();
@@ -86,13 +98,11 @@ function intelGeneration(model) {
   if (num >= 10000) return Math.floor(num / 1000);
   return Math.floor(num / 100);
 }
-
 function amdGeneration(model) {
   if (!model) return null;
   const m = model.match(/^(\d)/);
   return m ? parseInt(m[1]) : null;
 }
-
 function inferCPUSocket(model, brand) {
   if (!model) return null;
   if (brand === "Intel") {
@@ -109,14 +119,13 @@ function inferCPUSocket(model, brand) {
   }
   return null;
 }
-
 function socketToDDR(socket) {
   if (socket === "AM5" || socket === "LGA1851") return "DDR5";
   if (socket === "AM4" || socket === "LGA1200" || socket === "LGA1151") return "DDR4";
   return null;
 }
 
-// ─── BASELINE BENCHMARKS ────────────────────────────────────────────
+// ─── BASELINE TABLES (PassMark-calibrated) ──────────────────────────
 const GPU_BASELINE_BENCH = {
   "GTX 1030": 4, "GTX 1050": 6, "GTX 1050 TI": 9, "GTX 1060": 12,
   "GTX 1070": 17, "GTX 1070 TI": 20, "GTX 1080": 22, "GTX 1080 TI": 28,
@@ -171,7 +180,6 @@ function lookupGPUBaseline(name) {
   }
   return bestKey ? { bench: GPU_BASELINE_BENCH[bestKey], name: bestKey } : null;
 }
-
 function lookupCPUBaseline(model) {
   if (!model) return null;
   const m = model.toUpperCase();
@@ -224,7 +232,7 @@ function retailerUrl(p) {
   return null;
 }
 
-// ─── PLATFORM REFRESH DETECTION ─────────────────────────────────────
+// ─── PLATFORM REFRESH ───────────────────────────────────────────────
 function needsPlatformRefresh(currentCPU, cpuModel, rawSocket) {
   if (!cpuModel) return { refresh: false };
   if (rawSocket && /^AM[123]$|^FM[12]$|^939|^754|^AM3\+/.test(rawSocket)) {
@@ -245,16 +253,15 @@ function needsPlatformRefresh(currentCPU, cpuModel, rawSocket) {
   return { refresh: false };
 }
 
-// ─── RECOMMENDATION ENGINES ─────────────────────────────────────────
-function recommendGPUs(currentGPU, budget, topN = TOP_N_GPU) {
-  if (!currentGPU || !currentGPU.bench || currentGPU.bench <= 0) return [];
-  if (!budget || budget <= 0) return [];
+// ─── CANDIDATE POOLS ────────────────────────────────────────────────
+function candidateGPUs(currentGPU, maxPrice) {
+  if (!currentGPU?.bench) return [];
   const target = currentGPU.bench * (1 + MIN_IMPROVEMENT);
   const pool = PARTS.filter(p => {
     if (p.c !== "GPU" || p.bundle) return false;
     if (p.bench == null || p.bench < target) return false;
     const price = bestPrice(p);
-    if (price <= 0 || price > budget) return false;
+    if (price <= 0 || price > maxPrice) return false;
     return true;
   });
   pool.sort((a, b) => (b.bench / bestPrice(b)) - (a.bench / bestPrice(a)));
@@ -265,21 +272,19 @@ function recommendGPUs(currentGPU, budget, topN = TOP_N_GPU) {
     if (seen.has(key)) continue;
     seen.add(key);
     out.push(p);
-    if (out.length >= topN) break;
   }
   return out;
 }
 
-function recommendCPUs(currentCPU, budget, topN = TOP_N_CPU) {
-  if (!currentCPU || !currentCPU.bench || currentCPU.bench <= 0 || !currentCPU.socket) return [];
-  if (!budget || budget <= 0) return [];
+function candidateCPUs(currentCPU, maxPrice) {
+  if (!currentCPU?.bench || !currentCPU.socket) return [];
   const target = currentCPU.bench * (1 + MIN_IMPROVEMENT);
   const pool = PARTS.filter(p => {
     if (p.c !== "CPU" || p.bundle) return false;
     if (p.bench == null || p.bench < target) return false;
     if (p.socket !== currentCPU.socket) return false;
     const price = bestPrice(p);
-    if (price <= 0 || price > budget) return false;
+    if (price <= 0 || price > maxPrice) return false;
     return true;
   });
   pool.sort((a, b) => (b.bench / bestPrice(b)) - (a.bench / bestPrice(a)));
@@ -290,27 +295,192 @@ function recommendCPUs(currentCPU, budget, topN = TOP_N_CPU) {
     if (seen.has(key)) continue;
     seen.add(key);
     out.push(p);
-    if (out.length >= topN) break;
   }
   return out;
 }
 
-function recommendPlatformSwap(currentCPU, budget, sameSocketBest) {
-  if (!currentCPU || !currentCPU.bench || currentCPU.bench <= 0) return null;
-  const swapSockets = currentCPU.brand === "Intel"
-    ? ["AM5"]
-    : currentCPU.brand === "AMD"
-      ? ["LGA1700", "LGA1851"]
-      : [];
+function candidateRAMs(specs, maxPrice) {
+  const currentSticks = parseInt(specs.ram_sticks) || 0;
+  const currentUsed   = parseInt(specs.ram_used_slots) || currentSticks;
+  const currentTotal  = parseInt(specs.ram_total_slots) || currentSticks;
+  const currentCapGB  = parseInt(specs.ram_total) || 0;
+  const currentSpeed  = parseInt(specs.ram_speed) || 0;
+  const currentType   = specs.ram_type || "";
+  const allSlotsFilled = currentUsed >= currentTotal && currentTotal > 0;
 
+  const pool = PARTS.filter(p => {
+    if (p.c !== "RAM" || p.bundle) return false;
+    const price = bestPrice(p);
+    if (price <= 0 || price > maxPrice) return false;
+    const nameDdr = /DDR5/i.test(p.n) ? "DDR5" : /DDR4/i.test(p.n) ? "DDR4" : null;
+    const partType = p.ramType || nameDdr;
+    if (currentType && partType && partType !== currentType) return false;
+    if (p.cap != null && p.cap < currentCapGB) return false;
+    if (allSlotsFilled && p.sticks != null && p.sticks !== currentSticks) return false;
+    if (currentSpeed && p.speed != null && p.speed <= currentSpeed) return false;
+    return true;
+  });
+
+  pool.sort((a, b) => {
+    if (a.bench != null && b.bench != null) return (b.bench / bestPrice(b)) - (a.bench / bestPrice(a));
+    return ((b.speed || 0) / bestPrice(b)) - ((a.speed || 0) / bestPrice(a));
+  });
+
+  const seen = new Set();
+  const out = [];
+  for (const p of pool) {
+    const key = `${p.cap}-${p.sticks}-${p.speed}-${p.b || ""}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(p);
+  }
+  return out;
+}
+
+function candidateStorages(wantGB, wantType, maxPrice) {
+  if (!wantGB || !wantType) return [];
+  const isHDD = wantType === "HDD";
+  const pool = PARTS.filter(p => {
+    if (p.c !== "Storage" || p.bundle) return false;
+    if (p.cap == null || p.cap < wantGB) return false;
+    const price = bestPrice(p);
+    if (price <= 0 || price > maxPrice) return false;
+    const isHddProduct = /\bHDD\b|hard drive/i.test(p.n);
+    const isSsdProduct = /\bSSD\b|NVMe/i.test(p.n);
+    if (isHDD && !isHddProduct) return false;
+    if (!isHDD && !isSsdProduct) return false;
+    return true;
+  });
+  const tierOf = (p) => {
+    if (isHDD) return 0;
+    const n = p.n.toUpperCase();
+    if (/\bGEN\s*5\b|PCIE\s*5\.?0/.test(n)) return 5;
+    if (/\bGEN\s*4\b|PCIE\s*4\.?0/.test(n)) return 4;
+    if (/\bGEN\s*3\b|PCIE\s*3\.?0|NVMe/.test(n)) return 3;
+    if (/\bSSD\b/.test(n)) return 2;
+    return 1;
+  };
+  pool.sort((a, b) => {
+    const t = tierOf(b) - tierOf(a);
+    if (t !== 0) return t;
+    if (a.bench != null && b.bench != null) return (b.bench / bestPrice(b)) - (a.bench / bestPrice(a));
+    if (a.bench != null) return -1;
+    if (b.bench != null) return 1;
+    return bestPrice(a) - bestPrice(b);
+  });
+  const seen = new Set();
+  const out = [];
+  for (const p of pool) {
+    const key = `${p.cap}-${p.b || ""}-${p.n.slice(0, 20)}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(p);
+  }
+  return out;
+}
+
+// ─── COOLER RECOMMENDER ─────────────────────────────────────────────
+function recommendCoolers(newCPU) {
+  if (!newCPU || !newCPU.socket || !newCPU.tdp) return [];
+  const requiredTDP = Math.ceil(newCPU.tdp * COOLER_TDP_HEADROOM);
+  const pool = PARTS.filter(p => {
+    if (p.c !== "CPUCooler" || p.bundle) return false;
+    const price = bestPrice(p);
+    if (price <= 0) return false;
+    if (!Array.isArray(p.sockets) || !p.sockets.includes(newCPU.socket)) return false;
+    if (p.tdp_rating == null || p.tdp_rating < requiredTDP) return false;
+    return true;
+  });
+  if (!pool.length) return [];
+
+  const classify = (p) => {
+    const isAir = p.coolerType === "Air";
+    const price = bestPrice(p);
+    if (isAir && price < 60) return "cheap-air";
+    if (isAir) return "premium-air";
+    const n = p.n.toUpperCase();
+    if (/\b360\b|\b420\b/.test(n)) return "enthusiast-aio";
+    if (/\b240\b|\b280\b/.test(n)) return "entry-aio";
+    return "entry-aio";
+  };
+  const byClass = { "cheap-air": [], "premium-air": [], "entry-aio": [], "enthusiast-aio": [] };
+  for (const p of pool) byClass[classify(p)].push(p);
+  for (const cls of Object.keys(byClass)) {
+    byClass[cls].sort((a, b) => {
+      const pa = bestPrice(a), pb = bestPrice(b);
+      if (pa !== pb) return pa - pb;
+      return (b.tdp_rating || 0) - (a.tdp_rating || 0);
+    });
+  }
+  const picks = [];
+  for (const cls of ["cheap-air", "premium-air", "entry-aio", "enthusiast-aio"]) {
+    if (byClass[cls].length) picks.push({ cooler: byClass[cls][0], tier: cls });
+  }
+  if (picks.length < 3) {
+    const poolByPrice = [...pool].sort((a, b) => bestPrice(a) - bestPrice(b));
+    for (const p of poolByPrice) {
+      if (picks.length >= 4) break;
+      if (!picks.find(pick => pick.cooler.id === p.id)) picks.push({ cooler: p, tier: classify(p) });
+    }
+  }
+  return picks.slice(0, 4);
+}
+
+const COOLER_TIER_LABELS = {
+  "cheap-air": "Budget Air",
+  "premium-air": "Premium Air",
+  "entry-aio": "Entry AIO (240/280mm)",
+  "enthusiast-aio": "Enthusiast AIO (360/420mm)",
+};
+
+// ─── BUILD OPTIMIZER ────────────────────────────────────────────────
+function optimizeBuild(currentGPU, currentCPU, candidates, budget) {
+  const maxBudget = budget * (1 + BUDGET_OVERAGE);
+  const K_GPU = 8, K_CPU = 8, K_RAM = 5, K_STOR = 5;
+
+  const gpuPool = [null, ...candidates.gpus.slice(0, K_GPU)];
+  const cpuPool = [null, ...candidates.cpus.slice(0, K_CPU)];
+  const ramPool = [null, ...candidates.rams.slice(0, K_RAM)];
+  const stoPool = [null, ...candidates.storages.slice(0, K_STOR)];
+
+  const curG = currentGPU?.bench || 0;
+  const curC = currentCPU?.bench || 0;
+
+  let best = null;
+  for (const gpu of gpuPool) {
+    for (const cpu of cpuPool) {
+      for (const ram of ramPool) {
+        for (const sto of stoPool) {
+          const cost = (gpu ? bestPrice(gpu) : 0) + (cpu ? bestPrice(cpu) : 0) +
+                       (ram ? bestPrice(ram) : 0) + (sto ? bestPrice(sto) : 0);
+          if (cost <= 0 || cost > maxBudget) continue;
+          const gpuGain = gpu && curG > 0 ? ((gpu.bench - curG) / curG) * 100 : 0;
+          const cpuGain = cpu && curC > 0 ? ((cpu.bench - curC) / curC) * 100 : 0;
+          const score = gpuGain * 1.0 + cpuGain * 0.6 + (ram ? 5 : 0) + (sto ? 3 : 0);
+          const overPct = Math.max(0, (cost - budget) / budget);
+          const adjustedScore = score * (1 - overPct * 2);
+          if (!best || adjustedScore > best.adjustedScore) {
+            best = { gpu, cpu, ram, sto, cost, score, adjustedScore, overPct };
+          }
+        }
+      }
+    }
+  }
+  return best;
+}
+
+// ─── PLATFORM SWAP ──────────────────────────────────────────────────
+function findPlatformSwap(currentCPU, budget, sameSocketBest) {
+  if (!currentCPU || !currentCPU.bench) return null;
+  const swapSockets = currentCPU.brand === "Intel" ? ["AM5"]
+                    : currentCPU.brand === "AMD" ? ["LGA1700", "LGA1851"] : [];
   let best = null;
   for (const socket of swapSockets) {
     const cpu = PARTS.filter(p => p.c === "CPU" && !p.bundle && p.socket === socket && p.bench != null && bestPrice(p) > 0)
                      .sort((a, b) => (b.bench / bestPrice(b)) - (a.bench / bestPrice(a)))[0];
     if (!cpu) continue;
     const ddr = socketToDDR(socket) || "DDR5";
-    const mobo = PARTS.filter(p => p.c === "Motherboard" && !p.bundle && p.socket === socket &&
-                                   (!p.memType || p.memType === ddr) && bestPrice(p) > 0)
+    const mobo = PARTS.filter(p => p.c === "Motherboard" && !p.bundle && p.socket === socket && (!p.memType || p.memType === ddr) && bestPrice(p) > 0)
                       .sort((a, b) => bestPrice(a) - bestPrice(b))[0];
     if (!mobo) continue;
     const ram = PARTS.filter(p => p.c === "RAM" && new RegExp(ddr, "i").test(p.n) && p.cap >= 16 && bestPrice(p) > 0)
@@ -325,99 +495,6 @@ function recommendPlatformSwap(currentCPU, budget, sameSocketBest) {
   const sameSocketPPD = sameSocketBest ? (sameSocketBest.bench / bestPrice(sameSocketBest)) : 0;
   if (sameSocketPPD > 0 && best.ppd < sameSocketPPD * 1.30) return null;
   return best;
-}
-
-function recommendRAMs(specs, budget, topN = TOP_N_RAM) {
-  const currentSticks = parseInt(specs.ram_sticks) || 0;
-  const currentUsed   = parseInt(specs.ram_used_slots) || currentSticks;
-  const currentTotal  = parseInt(specs.ram_total_slots) || currentSticks;
-  const currentCapGB  = parseInt(specs.ram_total) || 0;
-  const currentSpeed  = parseInt(specs.ram_speed) || 0;
-  const currentType   = specs.ram_type || "";
-  const allSlotsFilled = currentUsed >= currentTotal && currentTotal > 0;
-
-  const pool = PARTS.filter(p => {
-    if (p.c !== "RAM" || p.bundle) return false;
-    const price = bestPrice(p);
-    if (price <= 0 || price > budget) return false;
-    const nameDdr = /DDR5/i.test(p.n) ? "DDR5" : /DDR4/i.test(p.n) ? "DDR4" : null;
-    const partType = p.ramType || nameDdr;
-    if (currentType && partType && partType !== currentType) return false;
-    if (p.cap != null && p.cap < currentCapGB) return false;
-    if (allSlotsFilled && p.sticks != null && p.sticks !== currentSticks) return false;
-    if (currentSpeed && p.speed != null && p.speed <= currentSpeed) return false;
-    return true;
-  });
-
-  pool.sort((a, b) => {
-    if (a.bench != null && b.bench != null) {
-      return (b.bench / bestPrice(b)) - (a.bench / bestPrice(a));
-    }
-    return ((b.speed || 0) / bestPrice(b)) - ((a.speed || 0) / bestPrice(a));
-  });
-
-  const seen = new Set();
-  const out = [];
-  for (const p of pool) {
-    const key = `${p.cap}-${p.sticks}-${p.speed}-${p.b || ""}`;
-    if (seen.has(key)) continue;
-    seen.add(key);
-    out.push(p);
-    if (out.length >= topN) break;
-  }
-  return out;
-}
-
-function recommendStorages(wantGB, wantType, budget, topN = TOP_N_STORAGE) {
-  if (!wantGB || !wantType) return [];
-  const isHDD = wantType === "HDD";
-
-  const byCapacity = PARTS.filter(p => {
-    if (p.c !== "Storage" || p.bundle) return false;
-    if (p.cap == null || p.cap < wantGB) return false;
-    if (bestPrice(p) <= 0) return false;
-    const isHddProduct = /\bHDD\b|hard drive/i.test(p.n);
-    const isSsdProduct = /\bSSD\b|NVMe/i.test(p.n);
-    if (isHDD && !isHddProduct) return false;
-    if (!isHDD && !isSsdProduct) return false;
-    return true;
-  });
-  if (!byCapacity.length) return [];
-
-  const tierOf = (p) => {
-    if (isHDD) return 0;
-    const n = p.n.toUpperCase();
-    if (/\bGEN\s*5\b|PCIE\s*5\.?0/.test(n)) return 5;
-    if (/\bGEN\s*4\b|PCIE\s*4\.?0/.test(n)) return 4;
-    if (/\bGEN\s*3\b|PCIE\s*3\.?0|NVMe/.test(n)) return 3;
-    if (/\bSSD\b/.test(n)) return 2;
-    return 1;
-  };
-
-  const inBudget = byCapacity.filter(p => bestPrice(p) <= budget);
-  const working = inBudget.length ? inBudget : byCapacity;
-
-  working.sort((a, b) => {
-    const t = tierOf(b) - tierOf(a);
-    if (t !== 0) return t;
-    if (a.bench != null && b.bench != null) {
-      return (b.bench / bestPrice(b)) - (a.bench / bestPrice(a));
-    }
-    if (a.bench != null && b.bench == null) return -1;
-    if (b.bench != null && a.bench == null) return 1;
-    return bestPrice(a) - bestPrice(b);
-  });
-
-  const seen = new Set();
-  const out = [];
-  for (const p of working) {
-    const key = `${p.cap}-${p.b || ""}-${p.n.slice(0, 20)}`;
-    if (seen.has(key)) continue;
-    seen.add(key);
-    out.push(p);
-    if (out.length >= topN) break;
-  }
-  return out;
 }
 
 function analyzeBottleneck(currentCPU, currentGPU) {
@@ -449,66 +526,59 @@ export default function UpgradePage() {
   const analysis = useMemo(() => {
     if (!specs) return null;
 
-    // Coerce string inputs from scanner URL to numbers
     const budget = Number(specs.budget) || 1000;
+    const maxBudget = budget * (1 + BUDGET_OVERAGE);
     const currentGPU = findCatalogMatch("GPU", specs.gpu);
     const currentCPU = findCatalogMatch("CPU", specs.cpu);
     const cpuModel = extractCPUModel(specs.cpu);
     const refresh = needsPlatformRefresh(currentCPU, cpuModel, specs.cpu_socket);
 
-    const split = refresh.refresh ? SPLIT_REFRESH : SPLIT_NORMAL;
-    const budgetGPU     = Math.round(budget * split.gpu);
-    const budgetCPU     = Math.round(budget * split.cpu);
-    const budgetRAM     = Math.round(budget * split.ram);
-    const budgetMobo    = refresh.refresh ? Math.round(budget * split.mobo) : 0;
-    const budgetStorage = Math.round(budget * split.storage);
-
-    const gpuRecs = recommendGPUs(currentGPU, budgetGPU);
-    const cpuRecs = recommendCPUs(currentCPU, budgetCPU);
-    const sameSocketBest = cpuRecs[0] || null;
-    const platformSwap = !refresh.refresh
-      ? recommendPlatformSwap(currentCPU, budget, sameSocketBest)
-      : null;
-
-    const ramRecs = recommendRAMs(specs, budgetRAM);
-
+    const gpus = candidateGPUs(currentGPU, maxBudget);
+    const cpus = candidateCPUs(currentCPU, maxBudget);
+    const rams = candidateRAMs(specs, maxBudget);
     const storageWant = Number(specs.add_storage_gb) || 0;
     const storageType = specs.add_storage_type || "";
-    const storageRecs = storageWant > 0
-      ? recommendStorages(storageWant, storageType, budgetStorage)
-      : [];
+    const storages = storageWant > 0 ? candidateStorages(storageWant, storageType, maxBudget) : [];
 
+    const recommendedBuild = optimizeBuild(currentGPU, currentCPU, { gpus, cpus, rams, storages }, budget);
+    const platformSwap = !refresh.refresh ? findPlatformSwap(currentCPU, budget, cpus[0]) : null;
     const bottleneck = analyzeBottleneck(currentCPU, currentGPU);
 
-    const newCpuTDP = cpuRecs[0]?.tdp ?? currentCPU?.tdp ?? 125;
-    const newGpuTDP = gpuRecs[0]?.tdp ?? currentGPU?.tdp ?? 200;
+    const newCpuTDP = recommendedBuild?.cpu?.tdp ?? currentCPU?.tdp ?? 125;
+    const newGpuTDP = recommendedBuild?.gpu?.tdp ?? currentGPU?.tdp ?? 200;
     const psuWattsNeeded = calculatePSU(newCpuTDP, newGpuTDP);
 
-    let estCost = 0;
-    if (gpuRecs[0])     estCost += bestPrice(gpuRecs[0]);
-    if (cpuRecs[0])     estCost += bestPrice(cpuRecs[0]);
-    if (ramRecs[0])     estCost += bestPrice(ramRecs[0]);
-    if (storageRecs[0]) estCost += bestPrice(storageRecs[0]);
+    // Cooler logic: only show add-ons when a new CPU is recommended AND user's current
+    // cooler is insufficient (or they don't know what they have).
+    const userCoolerType = specs.cooler_type || "unknown";
+    const userCoolerCapacity = COOLER_TDP_CAPACITY[userCoolerType] ?? 0;
+    const requiredTDP = recommendedBuild?.cpu ? Math.ceil(recommendedBuild.cpu.tdp * COOLER_TDP_HEADROOM) : 0;
+    const coolerNeeded = recommendedBuild?.cpu && (userCoolerCapacity === 0 || userCoolerCapacity < requiredTDP);
+    const coolerRecs = coolerNeeded ? recommendCoolers(recommendedBuild.cpu) : [];
 
-    // Dev diagnostics — exposed for debugging via window.__upgradeAnalysis
     if (typeof window !== "undefined") {
       window.__upgradeAnalysis = {
-        budget, budgetGPU, budgetCPU, budgetRAM, budgetStorage,
-        currentGPU: currentGPU ? { name: currentGPU.n, bench: currentGPU.bench, isBaseline: !!currentGPU.isBaseline } : null,
-        currentCPU: currentCPU ? { name: currentCPU.n, bench: currentCPU.bench, socket: currentCPU.socket, isBaseline: !!currentCPU.isBaseline } : null,
-        gpuTarget: currentGPU?.bench ? (currentGPU.bench * 1.1).toFixed(1) : null,
-        cpuTarget: currentCPU?.bench ? (currentCPU.bench * 1.1).toFixed(1) : null,
-        gpuRecs: gpuRecs.map(p => ({ n: p.n, bench: p.bench, price: bestPrice(p) })),
-        cpuRecs: cpuRecs.map(p => ({ n: p.n, bench: p.bench, price: bestPrice(p) })),
+        budget, maxBudget,
+        userCoolerType, userCoolerCapacity, requiredTDP, coolerNeeded,
+        currentGPU: currentGPU ? { name: currentGPU.n, bench: currentGPU.bench } : null,
+        currentCPU: currentCPU ? { name: currentCPU.n, bench: currentCPU.bench, socket: currentCPU.socket } : null,
+        poolCounts: { gpu: gpus.length, cpu: cpus.length, ram: rams.length, storage: storages.length, coolers: coolerRecs.length },
+        recommendedBuild: recommendedBuild ? {
+          cost: recommendedBuild.cost, overPct: (recommendedBuild.overPct * 100).toFixed(1) + "%",
+          gpu: recommendedBuild.gpu ? { n: recommendedBuild.gpu.n, bench: recommendedBuild.gpu.bench, price: bestPrice(recommendedBuild.gpu) } : null,
+          cpu: recommendedBuild.cpu ? { n: recommendedBuild.cpu.n, bench: recommendedBuild.cpu.bench, price: bestPrice(recommendedBuild.cpu), tdp: recommendedBuild.cpu.tdp } : null,
+          ram: recommendedBuild.ram ? { n: recommendedBuild.ram.n, price: bestPrice(recommendedBuild.ram) } : null,
+          sto: recommendedBuild.sto ? { n: recommendedBuild.sto.n, price: bestPrice(recommendedBuild.sto) } : null,
+        } : null,
       };
     }
 
     return {
-      budget, budgetGPU, budgetCPU, budgetRAM, budgetMobo, budgetStorage,
-      currentGPU, currentCPU, refresh,
-      gpuRecs, cpuRecs, ramRecs, storageRecs,
-      platformSwap, bottleneck,
-      psuWattsNeeded, estCost,
+      budget, maxBudget, refresh, bottleneck, psuWattsNeeded,
+      currentGPU, currentCPU,
+      gpus, cpus, rams, storages, coolerRecs, coolerNeeded,
+      userCoolerType, userCoolerCapacity, requiredTDP,
+      recommendedBuild, platformSwap,
       storageWant, storageType,
     };
   }, [specs]);
@@ -517,7 +587,13 @@ export default function UpgradePage() {
   if (!specs)  return <MissingSpecsView />;
 
   const a = analysis;
+  const rb = a.recommendedBuild;
   const allSlotsFilled = Number(specs.ram_used_slots) >= Number(specs.ram_total_slots) && Number(specs.ram_total_slots) > 0;
+
+  const gpuAlts = (rb?.gpu ? a.gpus.filter(p => p.id !== rb.gpu.id) : a.gpus).slice(0, N_ALTERNATIVES);
+  const cpuAlts = (rb?.cpu ? a.cpus.filter(p => p.id !== rb.cpu.id) : a.cpus).slice(0, N_ALTERNATIVES);
+  const ramAlts = (rb?.ram ? a.rams.filter(p => p.id !== rb.ram.id) : a.rams).slice(0, N_ALTERNATIVES);
+  const stoAlts = (rb?.sto ? a.storages.filter(p => p.id !== rb.sto.id) : a.storages).slice(0, N_ALTERNATIVES);
 
   return (
     <div style={{minHeight:"100vh", background:"var(--bg)"}}>
@@ -525,58 +601,46 @@ export default function UpgradePage() {
         <Header />
         <CurrentSystemCard specs={specs} analysis={a} />
         {a.refresh.refresh && <PlatformRefreshAlert reason={a.refresh.reason} />}
-        <BudgetBanner budget={a.budget} estCost={a.estCost} split={a.refresh.refresh ? SPLIT_REFRESH : SPLIT_NORMAL} />
+        <RecommendedBuildBanner budget={a.budget} build={rb} />
         {a.bottleneck && <BottleneckAnalysisCard bn={a.bottleneck} />}
         <PSUWarning watts={a.psuWattsNeeded} />
 
-        <UpgradeSection
-          title="GPU Upgrades"
-          color="#4ADE80"
-          icon="🟢"
-          description={`These GPUs would improve your gaming performance. Budget: $${a.budgetGPU.toLocaleString()}. Check PSU wattage compatibility before purchasing.`}
-          items={a.gpuRecs}
-          baseline={a.currentGPU}
-          emptyMsg={`No GPU upgrades within $${a.budgetGPU.toLocaleString()} offer 10%+ improvement over your current card. Try increasing your budget.`}
-        />
+        <UpgradeSection title="GPU" color="#4ADE80" icon="🟢"
+          selected={rb?.gpu} alternatives={gpuAlts} baseline={a.currentGPU}
+          emptyMsg="No GPU upgrades within budget offer 10%+ improvement over your current card."/>
 
-        <UpgradeSection
-          title="CPU Upgrades"
-          color="#F87171"
-          icon="🔴"
-          description={a.currentCPU?.socket
-            ? `Filtered to ${a.currentCPU.socket}-compatible CPUs. Budget: $${a.budgetCPU.toLocaleString()}.`
-            : `CPU upgrades compatible with your current motherboard. Budget: $${a.budgetCPU.toLocaleString()}.`}
-          items={a.cpuRecs}
-          baseline={a.currentCPU}
-          emptyMsg={`No same-socket CPU upgrades within $${a.budgetCPU.toLocaleString()} offer 10%+ improvement. See platform swap below if available.`}
-        />
+        <UpgradeSection title="CPU" color="#F87171" icon="🔴"
+          selected={rb?.cpu} alternatives={cpuAlts} baseline={a.currentCPU}
+          description={a.currentCPU?.socket ? `Filtered to ${a.currentCPU.socket}-compatible CPUs.` : null}
+          emptyMsg="No same-socket CPU upgrades within budget offer 10%+ improvement."/>
 
-        {a.platformSwap && <PlatformSwapCard swap={a.platformSwap} currentBrand={a.currentCPU?.brand} />}
+        {rb?.cpu && a.coolerNeeded && a.coolerRecs.length > 0 && (
+          <CoolerAddOnSection newCpu={rb.cpu} coolers={a.coolerRecs}
+            userCoolerType={a.userCoolerType} userCoolerCapacity={a.userCoolerCapacity} requiredTDP={a.requiredTDP}/>
+        )}
 
-        <UpgradeSection
-          title="RAM Upgrades"
-          color="#FFB020"
-          icon="⚡"
+        {rb?.cpu && !a.coolerNeeded && a.userCoolerType !== "unknown" && (
+          <CoolerOkBanner userCoolerType={a.userCoolerType} newCpu={rb.cpu} userCoolerCapacity={a.userCoolerCapacity}/>
+        )}
+
+        {a.platformSwap && <PlatformSwapCard swap={a.platformSwap} currentBrand={a.currentCPU?.brand}/>}
+
+        <UpgradeSection title="RAM" color="#FFB020" icon="⚡"
+          selected={rb?.ram} alternatives={ramAlts}
           description={allSlotsFilled
-            ? `All ${specs.ram_total_slots} slots are filled — only showing ${specs.ram_sticks}-stick kits that can fully replace your current RAM.`
-            : `Faster RAM improves CPU-bound games (Valorant, CS2, Fortnite).`}
-          warning={`RAM must match your motherboard's supported type (${specs.ram_type}). Check max supported speed in your motherboard manual.`}
-          items={a.ramRecs}
+            ? `All ${specs.ram_total_slots} slots are filled — only showing ${specs.ram_sticks}-stick kits.`
+            : `Faster RAM improves CPU-bound games.`}
+          warning={`RAM must match your motherboard's supported type (${specs.ram_type}).`}
           emptyMsg={allSlotsFilled
-            ? `No faster ${specs.ram_type} ${specs.ram_sticks}-stick kits at ≥${specs.ram_total}GB within budget. 4-stick high-speed kits are rare — consider switching to a 2-stick kit at higher speeds if you're willing to reduce stick count.`
-            : "No faster RAM kits found within budget."}
-        />
+            ? `No faster ${specs.ram_type} ${specs.ram_sticks}-stick kits at ≥${specs.ram_total}GB within budget.`
+            : "No faster RAM kits found within budget."}/>
 
-        {a.storageRecs.length > 0 && (
-          <UpgradeSection
-            title="Storage Upgrades"
-            color="#C084FC"
-            icon="💾"
-            description={`You asked for ${a.storageWant >= 1000 ? (a.storageWant/1000) + "TB" : a.storageWant + "GB"} of ${a.storageType} storage. Showing options that meet your capacity target.`}
-            warning={a.storageType !== "HDD" ? "Your motherboard needs a free M.2 slot. Check if it supports PCIe Gen 4 or Gen 5 NVMe drives." : null}
-            items={a.storageRecs}
-            emptyMsg={`No ${a.storageWant >= 1000 ? (a.storageWant/1000)+"TB" : a.storageWant+"GB"}+ ${a.storageType} options found within budget. Try a smaller capacity or a higher budget.`}
-          />
+        {a.storageWant > 0 && (
+          <UpgradeSection title="Storage" color="#C084FC" icon="💾"
+            selected={rb?.sto} alternatives={stoAlts}
+            description={`You asked for ${a.storageWant >= 1000 ? (a.storageWant/1000)+"TB" : a.storageWant+"GB"} ${a.storageType}.`}
+            warning={a.storageType !== "HDD" ? "Your motherboard needs a free M.2 slot." : null}
+            emptyMsg={`No matching storage within budget.`}/>
         )}
       </div>
     </div>
@@ -648,26 +712,26 @@ function PlatformRefreshAlert({reason}) {
   );
 }
 
-function BudgetBanner({budget, estCost, split}) {
-  const over = estCost > budget;
+function RecommendedBuildBanner({budget, build}) {
+  const cost = build?.cost || 0;
+  const over = cost > budget;
+  const overPct = budget > 0 ? ((cost - budget) / budget) * 100 : 0;
+  const unused = budget - cost;
   return (
     <div style={{background:"var(--bg2)", borderRadius:12, border:"1px solid var(--bdr)", padding:"16px 20px", marginBottom:20}}>
-      <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:12, flexWrap:"wrap", gap:12}}>
+      <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:12}}>
         <div>
           <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:600, letterSpacing:1.5}}>YOUR BUDGET</div>
           <div style={{fontFamily:"var(--ff)", fontSize:26, fontWeight:800, color:"var(--accent)"}}>${budget.toLocaleString()}</div>
         </div>
         <div style={{textAlign:"right"}}>
-          <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:600, letterSpacing:1.5}}>ESTIMATED TOTAL</div>
-          <div style={{fontFamily:"var(--ff)", fontSize:26, fontWeight:800, color: over ? "#FFB020" : "var(--txt)"}}>${estCost.toLocaleString()}</div>
-        </div>
-      </div>
-      <div style={{display:"flex", gap:6, flexWrap:"wrap"}}>
-        {Object.entries(split).map(([key, pct]) => (
-          <div key={key} style={{background:"var(--bg3)", padding:"4px 10px", borderRadius:6, fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)"}}>
-            <span style={{color:"var(--txt)", fontWeight:600}}>{key.toUpperCase()}</span> {Math.round(pct*100)}% · ${Math.round(budget*pct).toLocaleString()}
+          <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:600, letterSpacing:1.5}}>RECOMMENDED BUILD TOTAL</div>
+          <div style={{fontFamily:"var(--ff)", fontSize:26, fontWeight:800, color: over ? "#FFB020" : "var(--txt)"}}>
+            ${cost.toLocaleString()}
+            {over && <span style={{fontSize:12, marginLeft:8, fontWeight:600}}>(+{overPct.toFixed(0)}% over)</span>}
+            {!over && unused > 50 && <span style={{fontSize:12, marginLeft:8, fontWeight:500, color:"var(--dim)"}}>(${unused.toLocaleString()} unused)</span>}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
@@ -703,14 +767,25 @@ function PSUWarning({watts}) {
       <div>
         <div style={{fontFamily:"var(--ff)", fontSize:13, fontWeight:700, color:"var(--accent)", marginBottom:3}}>Check Your Power Supply Before Upgrading</div>
         <div style={{fontFamily:"var(--ff)", fontSize:12, color:"var(--dim)", lineHeight:1.5}}>
-          Look at the label on your PSU (inside your PC case) for the wattage rating. Your upgraded system will need at least <strong style={{color:"var(--txt)"}}>{watts}W</strong>. If your PSU doesn't have enough power, you'll need to upgrade it too. Also check that your PSU has the right PCIe power connectors for your new GPU.
+          Look at the label on your PSU for the wattage rating. Your upgraded system will need at least <strong style={{color:"var(--txt)"}}>{watts}W</strong>. If your PSU doesn't have enough power, you'll need to upgrade it too.
         </div>
       </div>
     </div>
   );
 }
 
-function UpgradeSection({title, color, icon, description, warning, items, baseline, emptyMsg}) {
+function UpgradeSection({title, color, icon, selected, alternatives, baseline, description, warning, emptyMsg}) {
+  if (!selected && (!alternatives || alternatives.length === 0)) {
+    return (
+      <div style={{background:"var(--bg2)", borderRadius:16, border:"1px solid var(--bdr)", padding:20, marginBottom:20}}>
+        <div style={{display:"flex", alignItems:"center", gap:8, marginBottom:6}}>
+          <span style={{fontSize:16}}>{icon}</span>
+          <div style={{fontFamily:"var(--ff)", fontSize:18, fontWeight:700, color:"var(--txt)"}}>{title}</div>
+        </div>
+        <div style={{fontFamily:"var(--ff)", fontSize:12, color:"var(--dim)", fontStyle:"italic", padding:"12px 0"}}>{emptyMsg}</div>
+      </div>
+    );
+  }
   return (
     <div style={{background:"var(--bg2)", borderRadius:16, border:"1px solid var(--bdr)", padding:20, marginBottom:20}}>
       <div style={{display:"flex", alignItems:"center", gap:8, marginBottom:6}}>
@@ -723,27 +798,42 @@ function UpgradeSection({title, color, icon, description, warning, items, baseli
           <span>⚠️</span><span>{warning}</span>
         </div>
       )}
-      {items.length === 0 ? (
-        <div style={{fontFamily:"var(--ff)", fontSize:12, color:"var(--dim)", fontStyle:"italic", padding:"12px 0"}}>{emptyMsg}</div>
-      ) : (
-        <div style={{display:"flex", flexDirection:"column", gap:8}}>
-          {items.map((p, i) => <UpgradeRow key={p.id || i} part={p} color={color} baseline={baseline}/>)}
+      {selected && (
+        <div style={{marginBottom:12}}>
+          <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--accent)", fontWeight:700, marginBottom:6, letterSpacing:1.5}}>RECOMMENDED</div>
+          <UpgradeRow part={selected} color={color} baseline={baseline} highlighted={true}/>
         </div>
+      )}
+      {alternatives && alternatives.length > 0 && (
+        <>
+          <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:600, marginTop:selected ? 14 : 0, marginBottom:6, letterSpacing:1.5}}>OTHER OPTIONS</div>
+          <div style={{display:"flex", flexDirection:"column", gap:6}}>
+            {alternatives.map((p, i) => <UpgradeRow key={p.id || i} part={p} color={color} baseline={baseline}/>)}
+          </div>
+        </>
       )}
     </div>
   );
 }
 
-function UpgradeRow({part, color, baseline}) {
+function UpgradeRow({part, color, baseline, highlighted}) {
   const price = bestPrice(part);
   const retailer = retailerUrl(part);
   const improvement = (baseline?.bench != null && baseline.bench > 0 && part.bench != null)
-    ? Math.round(((part.bench - baseline.bench) / baseline.bench) * 100)
-    : null;
+    ? Math.round(((part.bench - baseline.bench) / baseline.bench) * 100) : null;
+  const rowStyle = highlighted
+    ? {background:"var(--bg3)", borderRadius:10, padding:"14px 16px", display:"flex", alignItems:"center", gap:14, borderLeft:`4px solid ${color}`, boxShadow:`0 0 0 1px ${color}40`}
+    : {background:"var(--bg3)", borderRadius:8, padding:"10px 14px", display:"flex", alignItems:"center", gap:12, borderLeft:`2px solid ${color}80`, opacity:0.85};
+  const nameStyle = highlighted
+    ? {fontFamily:"var(--ff)", fontSize:14, fontWeight:700, color:"var(--txt)", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap"}
+    : {fontFamily:"var(--ff)", fontSize:13, fontWeight:600, color:"var(--txt)", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap"};
+  const priceStyle = highlighted
+    ? {fontFamily:"var(--ff)", fontSize:20, fontWeight:800, color:"var(--accent)"}
+    : {fontFamily:"var(--ff)", fontSize:15, fontWeight:700, color:"var(--accent)"};
   return (
-    <div style={{background:"var(--bg3)", borderRadius:10, padding:"12px 16px", display:"flex", alignItems:"center", gap:14, borderLeft:`3px solid ${color}`}}>
+    <div style={rowStyle}>
       <div style={{flex:1, minWidth:0}}>
-        <div style={{fontFamily:"var(--ff)", fontSize:14, fontWeight:700, color:"var(--txt)", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap"}}>{part.n}</div>
+        <div style={nameStyle}>{part.n}</div>
         <div style={{display:"flex", gap:10, marginTop:3, fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", flexWrap:"wrap"}}>
           {part.cap != null && <span>{part.cap >= 1000 ? (part.cap/1000)+"TB" : part.cap+"GB"}</span>}
           {part.sticks != null && <span>{part.sticks}×{part.cap ? Math.round(part.cap/part.sticks)+"GB" : ""}</span>}
@@ -755,10 +845,77 @@ function UpgradeRow({part, color, baseline}) {
         </div>
       </div>
       <div style={{textAlign:"right", flexShrink:0}}>
-        <div style={{fontFamily:"var(--ff)", fontSize:18, fontWeight:800, color:"var(--accent)"}}>${price}</div>
+        <div style={priceStyle}>${price}</div>
         {retailer && (
           <a href={retailer.url} target="_blank" rel="noopener noreferrer"
-             style={{display:"inline-block", marginTop:4, padding:"6px 12px", background:"var(--accent)", color:"#fff", textDecoration:"none", borderRadius:6, fontFamily:"var(--ff)", fontSize:11, fontWeight:700}}>
+             style={{display:"inline-block", marginTop:4, padding: highlighted ? "6px 14px" : "4px 10px", background:"var(--accent)", color:"#fff", textDecoration:"none", borderRadius:6, fontFamily:"var(--ff)", fontSize: highlighted ? 11 : 10, fontWeight:700}}>
+            Buy on {retailer.name} →
+          </a>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// Cooler add-on shown when user's current cooler can't handle the new CPU
+function CoolerAddOnSection({newCpu, coolers, userCoolerType, userCoolerCapacity, requiredTDP}) {
+  const userLabel = COOLER_LABELS[userCoolerType] || "your current cooler";
+  const capacityText = userCoolerCapacity > 0 ? `${userCoolerCapacity}W` : "unknown capacity";
+  return (
+    <div style={{background:"rgba(56,189,248,.06)", border:"1px solid var(--sky, #38BDF8)", borderRadius:12, padding:18, marginBottom:20}}>
+      <div style={{display:"flex", alignItems:"center", gap:8, marginBottom:8}}>
+        <span style={{fontSize:16}}>❄️</span>
+        <div style={{fontFamily:"var(--ff)", fontSize:15, fontWeight:700, color:"var(--txt)"}}>CPU Cooler — Add-On (Not In Budget)</div>
+      </div>
+      <div style={{fontFamily:"var(--ff)", fontSize:12, color:"var(--dim)", lineHeight:1.6, marginBottom:14}}>
+        The recommended <strong style={{color:"var(--txt)"}}>{newCpu.n}</strong> has a <strong style={{color:"var(--txt)"}}>{newCpu.tdp}W TDP</strong> and needs a cooler rated for at least <strong style={{color:"var(--txt)"}}>{requiredTDP}W</strong> with safety margin. {userCoolerType !== "unknown" ? <>Since you told us you have {userLabel} ({capacityText} capacity), you'll need a new cooler.</> : <>Since we don't know what cooler you have, here are safe options.</>} These coolers are <strong style={{color:"var(--accent)"}}>separate from your main build budget</strong>.
+      </div>
+      <div style={{display:"flex", flexDirection:"column", gap:6}}>
+        {coolers.map((rec, i) => <CoolerRow key={rec.cooler.id || i} rec={rec}/>)}
+      </div>
+    </div>
+  );
+}
+
+// Confirmation banner when user's existing cooler is sufficient
+function CoolerOkBanner({userCoolerType, newCpu, userCoolerCapacity}) {
+  const userLabel = COOLER_LABELS[userCoolerType] || "your current cooler";
+  return (
+    <div style={{background:"rgba(74,222,128,.06)", border:"1px solid #4ADE80", borderRadius:12, padding:"14px 18px", marginBottom:20, display:"flex", gap:10, alignItems:"flex-start"}}>
+      <span style={{fontSize:18}}>✓</span>
+      <div>
+        <div style={{fontFamily:"var(--ff)", fontSize:13, fontWeight:700, color:"#4ADE80", marginBottom:3}}>Your Cooler Is Good to Go</div>
+        <div style={{fontFamily:"var(--ff)", fontSize:12, color:"var(--dim)", lineHeight:1.5}}>
+          {userLabel} (up to {userCoolerCapacity}W) can handle the recommended <strong style={{color:"var(--txt)"}}>{newCpu.n}</strong> ({newCpu.tdp}W). No cooler upgrade needed.
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function CoolerRow({rec}) {
+  const { cooler, tier } = rec;
+  const price = bestPrice(cooler);
+  const retailer = retailerUrl(cooler);
+  const tierLabel = COOLER_TIER_LABELS[tier] || "Cooler";
+  return (
+    <div style={{background:"var(--bg3)", borderRadius:8, padding:"10px 14px", display:"flex", alignItems:"center", gap:12}}>
+      <div style={{flex:1, minWidth:0}}>
+        <div style={{display:"flex", gap:8, alignItems:"center", marginBottom:2}}>
+          <span style={{fontFamily:"var(--mono)", fontSize:9, color:"var(--sky, #38BDF8)", fontWeight:700, letterSpacing:1, padding:"2px 6px", background:"rgba(56,189,248,0.12)", borderRadius:4}}>{tierLabel}</span>
+        </div>
+        <div style={{fontFamily:"var(--ff)", fontSize:13, fontWeight:600, color:"var(--txt)", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap"}}>{cooler.n}</div>
+        <div style={{display:"flex", gap:10, marginTop:2, fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", flexWrap:"wrap"}}>
+          {cooler.tdp_rating && <span>rated {cooler.tdp_rating}W</span>}
+          {cooler.noise && <span>{cooler.noise} dBA</span>}
+          {cooler.height && <span>{cooler.height}mm tall</span>}
+        </div>
+      </div>
+      <div style={{textAlign:"right", flexShrink:0}}>
+        <div style={{fontFamily:"var(--ff)", fontSize:15, fontWeight:700, color:"var(--accent)"}}>${price}</div>
+        {retailer && (
+          <a href={retailer.url} target="_blank" rel="noopener noreferrer"
+             style={{display:"inline-block", marginTop:4, padding:"4px 10px", background:"var(--accent)", color:"#fff", textDecoration:"none", borderRadius:6, fontFamily:"var(--ff)", fontSize:10, fontWeight:700}}>
             Buy on {retailer.name} →
           </a>
         )}
@@ -768,7 +925,6 @@ function UpgradeRow({part, color, baseline}) {
 }
 
 function PlatformSwapCard({swap, currentBrand}) {
-  const total = swap.total;
   return (
     <div style={{background:"rgba(56,189,248,.06)", border:"1px solid var(--sky, #38BDF8)", borderRadius:12, padding:18, marginBottom:20}}>
       <div style={{display:"flex", alignItems:"center", gap:8, marginBottom:8}}>
@@ -785,7 +941,7 @@ function PlatformSwapCard({swap, currentBrand}) {
       </div>
       <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", paddingTop:10, borderTop:"1px solid var(--bdr)"}}>
         <div style={{fontFamily:"var(--ff)", fontSize:13, fontWeight:600, color:"var(--dim)"}}>Platform swap total</div>
-        <div style={{fontFamily:"var(--ff)", fontSize:20, fontWeight:800, color:"var(--accent)"}}>${total.toLocaleString()}</div>
+        <div style={{fontFamily:"var(--ff)", fontSize:20, fontWeight:800, color:"var(--accent)"}}>${swap.total.toLocaleString()}</div>
       </div>
     </div>
   );

@@ -12,10 +12,6 @@
 //  No portion of this file may be reproduced, distributed, modified,
 //  reverse-engineered, decompiled, or used to create derivative works —
 //  in whole or in part — without prior written permission from the author.
-//
-//  Unauthorized copying, publication, or redistribution of this file,
-//  in any medium, is strictly prohibited and constitutes a violation of
-//  United States and international copyright law.
 // =============================================================================
 
 using System;
@@ -35,17 +31,21 @@ namespace ProRigScanner
     public partial class MainWindow : Window
     {
         const string PROD_URL = "https://prorigbuilder.com";
-        const string DEV_URL = "http://localhost:3000";
+        const string DEV_URL  = "http://localhost:3000";
 
         string _baseUrl = PROD_URL;
-        int _budget = 1000;
+        int    _budget = 1000;
         string _storageChoice = "no";
-        string _storageType = "";
-        int _extraStorageGB = 0;
+        string _storageType   = "";
+        int    _extraStorageGB = 0;
+        string _coolerType    = "";   // stock | budget_air | aio_120 | aio_240 | aio_360 | unknown
         Button _selectedYesNo = null;
-        Button _selectedType = null;
-        Button _selectedSize = null;
+        Button _selectedType  = null;
+        Button _selectedSize  = null;
+        Button _selectedCooler = null;
         string _finalUrl = "";
+
+        int _currentPage = 1;      // 1=budget, 2=storage, 3=cooler, 4=review
 
         public MainWindow()
         {
@@ -56,15 +56,69 @@ namespace ProRigScanner
                 SelectButton(StorageNoBtn, ref _selectedYesNo);
                 _storageChoice = "no";
                 UpdateBudgetLabelFromSlider();
+                ShowPage(1);
             };
         }
 
-        void TitleBar_MouseDown(object sender, MouseButtonEventArgs e)
+        // ============================================================
+        // PAGE NAVIGATION
+        // ============================================================
+        void ShowPage(int page)
         {
-            if (e.LeftButton == MouseButtonState.Pressed) this.DragMove();
-        }
-        void CloseButton_Click(object sender, RoutedEventArgs e) => Close();
+            _currentPage = page;
 
+            Page1_Budget.Visibility  = page == 1 ? Visibility.Visible : Visibility.Collapsed;
+            Page2_Storage.Visibility = page == 2 ? Visibility.Visible : Visibility.Collapsed;
+            Page3_Cooler.Visibility  = page == 3 ? Visibility.Visible : Visibility.Collapsed;
+            Page4_Review.Visibility  = page == 4 ? Visibility.Visible : Visibility.Collapsed;
+
+            Step1Dot.Fill = (SolidColorBrush)FindResource(page >= 1 ? "Accent" : "Border");
+            Step2Dot.Fill = (SolidColorBrush)FindResource(page >= 2 ? "Accent" : "Border");
+            Step3Dot.Fill = (SolidColorBrush)FindResource(page >= 3 ? "Accent" : "Border");
+            Step4Dot.Fill = (SolidColorBrush)FindResource(page >= 4 ? "Accent" : "Border");
+
+            BackButton.Visibility = page > 1 ? Visibility.Visible : Visibility.Collapsed;
+            NextButton.Content = page == 4 ? "Start Scan  →" : "Next  →";
+            NextButton.IsEnabled = CanAdvance(page);
+
+            if (page == 4) BuildReviewPanel();
+        }
+
+        bool CanAdvance(int page)
+        {
+            switch (page)
+            {
+                case 1: return _budget > 0;
+                case 2:
+                    if (_storageChoice == "no") return true;
+                    if (_storageChoice == "yes" && !string.IsNullOrEmpty(_storageType) && _extraStorageGB > 0) return true;
+                    return false;
+                case 3: return !string.IsNullOrEmpty(_coolerType);
+                case 4: return true;
+                default: return false;
+            }
+        }
+
+        void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (_currentPage > 1) ShowPage(_currentPage - 1);
+        }
+
+        void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (_currentPage < 4)
+            {
+                if (CanAdvance(_currentPage)) ShowPage(_currentPage + 1);
+            }
+            else
+            {
+                ScanButton_Click(sender, e);
+            }
+        }
+
+        // ============================================================
+        // PAGE 1 — BUDGET
+        // ============================================================
         void BudgetSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             UpdateBudgetLabelFromSlider();
@@ -77,8 +131,12 @@ namespace ProRigScanner
             int snapped = (int)(Math.Round(raw / 25.0) * 25);
             _budget = snapped;
             BudgetLabel.Text = "$" + _budget.ToString("N0");
+            if (NextButton != null) NextButton.IsEnabled = CanAdvance(_currentPage);
         }
 
+        // ============================================================
+        // PAGE 2 — STORAGE
+        // ============================================================
         void StorageYesNo_Click(object sender, RoutedEventArgs e)
         {
             var btn = (Button)sender;
@@ -100,6 +158,7 @@ namespace ProRigScanner
                 _storageType = "";
                 _extraStorageGB = 0;
             }
+            NextButton.IsEnabled = CanAdvance(_currentPage);
         }
 
         void StorageType_Click(object sender, RoutedEventArgs e)
@@ -132,6 +191,7 @@ namespace ProRigScanner
             StorageSizePanel.Visibility = Visibility.Visible;
             _selectedSize = null;
             _extraStorageGB = 0;
+            NextButton.IsEnabled = CanAdvance(_currentPage);
         }
 
         void StorageSize_Click(object sender, RoutedEventArgs e)
@@ -139,23 +199,110 @@ namespace ProRigScanner
             var btn = (Button)sender;
             SelectButton(btn, ref _selectedSize);
             _extraStorageGB = (int)btn.Tag;
+            NextButton.IsEnabled = CanAdvance(_currentPage);
         }
 
-        void SelectButton(Button btn, ref Button selectedRef)
+        // ============================================================
+        // PAGE 3 — CPU COOLER
+        // ============================================================
+        void Cooler_Click(object sender, RoutedEventArgs e)
         {
-            if (selectedRef != null)
-            {
-                selectedRef.BorderBrush = (SolidColorBrush)FindResource("Border");
-                selectedRef.Background = (SolidColorBrush)FindResource("Bg3");
-            }
-            btn.BorderBrush = (SolidColorBrush)FindResource("Accent");
-            btn.Background = new SolidColorBrush(Color.FromRgb(0x28, 0x1C, 0x14));
-            selectedRef = btn;
+            var btn = (Button)sender;
+            SelectButton(btn, ref _selectedCooler);
+            _coolerType = (string)btn.Tag;
+            NextButton.IsEnabled = CanAdvance(_currentPage);
         }
 
+        // ============================================================
+        // PAGE 4 — REVIEW
+        // ============================================================
+        void BuildReviewPanel()
+        {
+            ReviewPanel.Children.Clear();
+
+            AddReviewRow("Budget", $"${_budget:N0}", "");
+            if (_storageChoice == "yes")
+            {
+                string sizeLabel = _extraStorageGB >= 1000 ? $"{_extraStorageGB / 1000} TB" : $"{_extraStorageGB} GB";
+                AddReviewRow("Extra storage", $"{sizeLabel} {_storageType}", "");
+            }
+            else
+            {
+                AddReviewRow("Extra storage", "Skipped", "keeping current drives only");
+            }
+            AddReviewRow("CPU cooler", CoolerLabel(_coolerType), CoolerTDPNote(_coolerType));
+        }
+
+        string CoolerLabel(string key) => key switch
+        {
+            "stock"       => "Stock Cooler",
+            "budget_air"  => "Budget Air Cooler",
+            "aio_120"     => "120mm AIO",
+            "aio_240"     => "240mm AIO",
+            "aio_360"     => "360mm AIO",
+            "unknown"     => "Not sure",
+            _             => "—"
+        };
+        string CoolerTDPNote(string key) => key switch
+        {
+            "stock"       => "~65W TDP capacity",
+            "budget_air"  => "~120W TDP capacity",
+            "aio_120"     => "~150W TDP capacity",
+            "aio_240"     => "~220W TDP capacity",
+            "aio_360"     => "~300W TDP capacity",
+            "unknown"     => "We'll recommend options based on your new CPU",
+            _             => ""
+        };
+
+        void AddReviewRow(string label, string value, string note)
+        {
+            var row = new DockPanel { Margin = new Thickness(0, 6, 0, 6) };
+            var labelTB = new TextBlock
+            {
+                Text = label.ToUpper(),
+                Width = 120,
+                FontSize = 11,
+                FontWeight = FontWeights.Bold,
+                Foreground = (SolidColorBrush)FindResource("Dim"),
+                VerticalAlignment = VerticalAlignment.Center
+            };
+            DockPanel.SetDock(labelTB, Dock.Left);
+
+            var stack = new StackPanel();
+            stack.Children.Add(new TextBlock
+            {
+                Text = value,
+                FontSize = 14,
+                FontWeight = FontWeights.Bold,
+                Foreground = (SolidColorBrush)FindResource("Text")
+            });
+            if (!string.IsNullOrEmpty(note))
+            {
+                stack.Children.Add(new TextBlock
+                {
+                    Text = note,
+                    FontSize = 11,
+                    Foreground = (SolidColorBrush)FindResource("Mute"),
+                    Margin = new Thickness(0, 2, 0, 0)
+                });
+            }
+            row.Children.Add(labelTB);
+            row.Children.Add(stack);
+            ReviewPanel.Children.Add(row);
+        }
+
+        // ============================================================
+        // SCAN
+        // ============================================================
         async void ScanButton_Click(object sender, RoutedEventArgs e)
         {
-            InputView.Visibility = Visibility.Collapsed;
+            Page1_Budget.Visibility = Visibility.Collapsed;
+            Page2_Storage.Visibility = Visibility.Collapsed;
+            Page3_Cooler.Visibility = Visibility.Collapsed;
+            Page4_Review.Visibility = Visibility.Collapsed;
+            NavBar.Visibility = Visibility.Collapsed;
+            StepIndicator.Visibility = Visibility.Collapsed;
+
             ScanView.Visibility = Visibility.Visible;
             ScanSteps.Children.Clear();
 
@@ -228,40 +375,25 @@ namespace ProRigScanner
             ScanView.Visibility = Visibility.Collapsed;
             DoneView.Visibility = Visibility.Visible;
             BuildSummary(specs);
-            _finalUrl = BuildURL(specs, _budget, _extraStorageGB, _storageType, _baseUrl);
+            _finalUrl = BuildURL(specs, _budget, _extraStorageGB, _storageType, _coolerType, _baseUrl);
         }
 
         // ============================================================
-        // SUMMARY — larger fonts, more detail
+        // SUMMARY
         // ============================================================
         void BuildSummary(SystemSpecs specs)
         {
             SummaryPanel.Children.Clear();
-            AddSummaryRow("CPU",
-                specs.CPU.Name,
-                $"{specs.CPU.Cores} cores / {specs.CPU.Threads} threads · {specs.CPU.MaxClockGHz:F1} GHz",
-                "#38BDF8");
-            AddSummaryRow("GPU",
-                specs.GPU.Name,
-                $"{specs.GPU.VRAM_MB / 1024} GB VRAM",
-                "#4ADE80");
+            AddSummaryRow("CPU", specs.CPU.Name, $"{specs.CPU.Cores} cores / {specs.CPU.Threads} threads · {specs.CPU.MaxClockGHz:F1} GHz", "#38BDF8");
+            AddSummaryRow("GPU", specs.GPU.Name, $"{specs.GPU.VRAM_MB / 1024} GB VRAM", "#4ADE80");
             string ramDetail = $"{specs.RAM.Sticks}× {specs.RAM.StickSizeGB}GB · {specs.RAM.UsedSlots}/{specs.RAM.TotalSlots} slots used";
             if (!string.IsNullOrEmpty(specs.RAM.SlotLabels)) ramDetail += $" ({specs.RAM.SlotLabels})";
-            AddSummaryRow("RAM",
-                $"{specs.RAM.TotalGB}GB {specs.RAM.Type} @ {specs.RAM.SpeedMHz}MHz",
-                ramDetail,
-                "#FFB020");
+            AddSummaryRow("RAM", $"{specs.RAM.TotalGB}GB {specs.RAM.Type} @ {specs.RAM.SpeedMHz}MHz", ramDetail, "#FFB020");
             foreach (var d in specs.Storage.Take(3))
             {
-                AddSummaryRow("Disk",
-                    d.Model,
-                    $"{d.SizeGB}GB · {d.Type}",
-                    "#C084FC");
+                AddSummaryRow("Disk", d.Model, $"{d.SizeGB}GB · {d.Type}", "#C084FC");
             }
-            AddSummaryRow("MOBO",
-                specs.Motherboard.Product,
-                specs.Motherboard.Manufacturer,
-                "#9090A0");
+            AddSummaryRow("MOBO", specs.Motherboard.Product, specs.Motherboard.Manufacturer, "#9090A0");
         }
 
         void AddSummaryRow(string label, string name, string detail, string colorHex)
@@ -305,8 +437,70 @@ namespace ProRigScanner
             catch (Exception ex) { MessageBox.Show("Could not open browser:\n" + ex.Message + "\n\nURL:\n" + _finalUrl, "Error"); }
         }
 
+        void TitleBar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed) this.DragMove();
+        }
+        void CloseButton_Click(object sender, RoutedEventArgs e) => Close();
+
+        void SelectButton(Button btn, ref Button selectedRef)
+        {
+            if (selectedRef != null)
+            {
+                selectedRef.BorderBrush = (SolidColorBrush)FindResource("Border");
+                selectedRef.Background = (SolidColorBrush)FindResource("Bg3");
+            }
+            btn.BorderBrush = (SolidColorBrush)FindResource("Accent");
+            btn.Background = new SolidColorBrush(Color.FromRgb(0x28, 0x1C, 0x14));
+            selectedRef = btn;
+        }
+
         // ============================================================
-        // HARDWARE DETECTION
+        // URL BUILDER — now includes cooler_type
+        // ============================================================
+        string BuildURL(SystemSpecs specs, int budget, int extraStorageGB, string extraStorageType, string coolerType, string baseUrl)
+        {
+            var data = new Dictionary<string, string>
+            {
+                ["cpu"] = specs.CPU.Name,
+                ["cpu_cores"] = specs.CPU.Cores.ToString(),
+                ["cpu_threads"] = specs.CPU.Threads.ToString(),
+                ["cpu_clock"] = specs.CPU.MaxClockGHz.ToString("F1"),
+                ["cpu_socket"] = specs.CPU.Socket,
+                ["gpu"] = specs.GPU.Name,
+                ["gpu_vram"] = (specs.GPU.VRAM_MB / 1024).ToString(),
+                ["ram_total"] = specs.RAM.TotalGB.ToString(),
+                ["ram_type"] = specs.RAM.Type,
+                ["ram_speed"] = specs.RAM.SpeedMHz.ToString(),
+                ["ram_sticks"] = specs.RAM.Sticks.ToString(),
+                ["ram_total_slots"] = specs.RAM.TotalSlots.ToString(),
+                ["ram_used_slots"] = specs.RAM.UsedSlots.ToString(),
+                ["ram_slot_labels"] = specs.RAM.SlotLabels ?? "",
+                ["mobo"] = specs.Motherboard.Product,
+                ["mobo_mfr"] = specs.Motherboard.Manufacturer,
+                ["budget"] = budget.ToString(),
+                ["add_storage_gb"] = extraStorageGB.ToString(),
+                ["add_storage_type"] = extraStorageType ?? "",
+                ["cooler_type"] = coolerType ?? "",
+            };
+            for (int i = 0; i < Math.Min(specs.Storage.Count, 4); i++)
+            {
+                data[$"disk{i}_model"] = specs.Storage[i].Model;
+                data[$"disk{i}_size"] = specs.Storage[i].SizeGB.ToString();
+                data[$"disk{i}_type"] = specs.Storage[i].Type;
+            }
+            var jsonPairs = data.Select(kv => $"\"{Escape(kv.Key)}\":\"{Escape(kv.Value)}\"");
+            string json = "{" + string.Join(",", jsonPairs) + "}";
+            string encoded = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(json));
+            return $"{baseUrl}/#upgrade?specs={WebUtility.UrlEncode(encoded)}";
+        }
+
+        string Clean(string s) => s.Trim().Replace("  ", " ").Replace("(R)", "").Replace("(TM)", "").Replace("(tm)", "");
+        string Truncate(string s, int max) => s.Length > max ? s[..(max - 2)] + ".." : s;
+        string Escape(string s) => s.Replace("\\", "\\\\").Replace("\"", "\\\"").Replace("\n", "").Replace("\r", "");
+
+        // ============================================================
+        // HARDWARE DETECTION — unchanged
         // ============================================================
         CPUInfo GetCPU()
         {
@@ -329,7 +523,6 @@ namespace ProRigScanner
             return info;
         }
 
-        // FIXED: always prefer name-based VRAM lookup for discrete cards
         GPUInfo GetGPU()
         {
             var info = new GPUInfo();
@@ -340,18 +533,15 @@ namespace ProRigScanner
                 {
                     string name = obj["Name"]?.ToString() ?? "";
                     if (name.Contains("Microsoft Basic")) continue;
-                    // Skip integrated when discrete already found
                     bool isIntegrated = name.Contains("Intel") && name.Contains("Graphics") && !name.Contains("Arc");
                     if (isIntegrated && !string.IsNullOrEmpty(info.Name) && info.Name != "Unknown") continue;
                     if (isIntegrated && !string.IsNullOrEmpty(info.Name) && info.Name.Contains("NVIDIA")) continue;
                     if (isIntegrated && !string.IsNullOrEmpty(info.Name) && info.Name.Contains("Radeon")) continue;
                     if (isIntegrated && !string.IsNullOrEmpty(info.Name) && info.Name.Contains("RTX")) continue;
                     info.Name = Clean(name);
-                    // First try name-based lookup (reliable for modern discrete cards)
                     long namedVram = GuessVRAM(info.Name);
                     long wmiVram = 0;
                     try { wmiVram = Convert.ToInt64(obj["AdapterRAM"] ?? 0) / (1024 * 1024); } catch { }
-                    // Use named lookup if it returned a real value, otherwise fall back to WMI
                     info.VRAM_MB = namedVram > 0 ? namedVram : wmiVram;
                     if (info.VRAM_MB <= 0 || info.VRAM_MB > 65536) info.VRAM_MB = 8 * 1024;
                     info.DriverVersion = obj["DriverVersion"]?.ToString() ?? "";
@@ -362,13 +552,11 @@ namespace ProRigScanner
             return info;
         }
 
-        // NEW: gets slot names + total/used slot count
         RAMInfo GetRAM()
         {
             var info = new RAMInfo();
             try
             {
-                // Total physical slots from the memory array
                 int totalSlots = 0;
                 try
                 {
@@ -462,53 +650,10 @@ namespace ProRigScanner
             return info;
         }
 
-        string BuildURL(SystemSpecs specs, int budget, int extraStorageGB, string extraStorageType, string baseUrl)
-        {
-            var data = new Dictionary<string, string>
-            {
-                ["cpu"] = specs.CPU.Name,
-                ["cpu_cores"] = specs.CPU.Cores.ToString(),
-                ["cpu_threads"] = specs.CPU.Threads.ToString(),
-                ["cpu_clock"] = specs.CPU.MaxClockGHz.ToString("F1"),
-                ["cpu_socket"] = specs.CPU.Socket,
-                ["gpu"] = specs.GPU.Name,
-                ["gpu_vram"] = (specs.GPU.VRAM_MB / 1024).ToString(),
-                ["ram_total"] = specs.RAM.TotalGB.ToString(),
-                ["ram_type"] = specs.RAM.Type,
-                ["ram_speed"] = specs.RAM.SpeedMHz.ToString(),
-                ["ram_sticks"] = specs.RAM.Sticks.ToString(),
-                ["ram_total_slots"] = specs.RAM.TotalSlots.ToString(),
-                ["ram_used_slots"] = specs.RAM.UsedSlots.ToString(),
-                ["ram_slot_labels"] = specs.RAM.SlotLabels ?? "",
-                ["mobo"] = specs.Motherboard.Product,
-                ["mobo_mfr"] = specs.Motherboard.Manufacturer,
-                ["budget"] = budget.ToString(),
-                ["add_storage_gb"] = extraStorageGB.ToString(),
-                ["add_storage_type"] = extraStorageType ?? "",
-            };
-            for (int i = 0; i < Math.Min(specs.Storage.Count, 4); i++)
-            {
-                data[$"disk{i}_model"] = specs.Storage[i].Model;
-                data[$"disk{i}_size"] = specs.Storage[i].SizeGB.ToString();
-                data[$"disk{i}_type"] = specs.Storage[i].Type;
-            }
-            var jsonPairs = data.Select(kv => $"\"{Escape(kv.Key)}\":\"{Escape(kv.Value)}\"");
-            string json = "{" + string.Join(",", jsonPairs) + "}";
-            string encoded = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(json));
-            return $"{baseUrl}/#upgrade?specs={WebUtility.UrlEncode(encoded)}";
-        }
-
-        string Clean(string s) => s.Trim().Replace("  ", " ").Replace("(R)", "").Replace("(TM)", "").Replace("(tm)", "");
-        string Truncate(string s, int max) => s.Length > max ? s[..(max - 2)] + ".." : s;
-        string Escape(string s) => s.Replace("\\", "\\\\").Replace("\"", "\\\"").Replace("\n", "").Replace("\r", "");
-
-        // Extended VRAM lookup (more cards, more accurate)
         long GuessVRAM(string n)
         {
             if (string.IsNullOrEmpty(n)) return 0;
             var u = n.ToUpper();
-
-            // NVIDIA RTX 50 series
             if (u.Contains("5090")) return 32 * 1024;
             if (u.Contains("5080 SUPER")) return 24 * 1024;
             if (u.Contains("5080")) return 16 * 1024;
@@ -517,8 +662,6 @@ namespace ProRigScanner
             if (u.Contains("5070")) return 12 * 1024;
             if (u.Contains("5060 TI")) return 16 * 1024;
             if (u.Contains("5060")) return 8 * 1024;
-
-            // NVIDIA RTX 40 series
             if (u.Contains("4090")) return 24 * 1024;
             if (u.Contains("4080 SUPER")) return 16 * 1024;
             if (u.Contains("4080")) return 16 * 1024;
@@ -526,10 +669,8 @@ namespace ProRigScanner
             if (u.Contains("4070 TI")) return 12 * 1024;
             if (u.Contains("4070 SUPER")) return 12 * 1024;
             if (u.Contains("4070")) return 12 * 1024;
-            if (u.Contains("4060 TI")) return 8 * 1024;  // 8 or 16GB variants exist; default 8
+            if (u.Contains("4060 TI")) return 8 * 1024;
             if (u.Contains("4060")) return 8 * 1024;
-
-            // NVIDIA RTX 30 series
             if (u.Contains("3090 TI")) return 24 * 1024;
             if (u.Contains("3090")) return 24 * 1024;
             if (u.Contains("3080 TI")) return 12 * 1024;
@@ -539,27 +680,19 @@ namespace ProRigScanner
             if (u.Contains("3060 TI")) return 8 * 1024;
             if (u.Contains("3060")) return 12 * 1024;
             if (u.Contains("3050")) return 8 * 1024;
-
-            // NVIDIA RTX 20 series
             if (u.Contains("2080 TI")) return 11 * 1024;
             if (u.Contains("2080")) return 8 * 1024;
             if (u.Contains("2070")) return 8 * 1024;
             if (u.Contains("2060")) return 6 * 1024;
-
-            // NVIDIA GTX 16 series
             if (u.Contains("1660 TI")) return 6 * 1024;
             if (u.Contains("1660")) return 6 * 1024;
             if (u.Contains("1650")) return 4 * 1024;
-
-            // AMD RX 7000
             if (u.Contains("7900 XTX")) return 24 * 1024;
             if (u.Contains("7900 XT")) return 20 * 1024;
             if (u.Contains("7800 XT")) return 16 * 1024;
             if (u.Contains("7700 XT")) return 12 * 1024;
             if (u.Contains("7600 XT")) return 16 * 1024;
             if (u.Contains("7600")) return 8 * 1024;
-
-            // AMD RX 6000
             if (u.Contains("6950 XT")) return 16 * 1024;
             if (u.Contains("6900 XT")) return 16 * 1024;
             if (u.Contains("6800 XT")) return 16 * 1024;
@@ -570,15 +703,12 @@ namespace ProRigScanner
             if (u.Contains("6650 XT")) return 8 * 1024;
             if (u.Contains("6600 XT")) return 8 * 1024;
             if (u.Contains("6600")) return 8 * 1024;
-
-            // Intel Arc
             if (u.Contains("ARC A770")) return 16 * 1024;
             if (u.Contains("ARC A750")) return 8 * 1024;
             if (u.Contains("ARC A580")) return 8 * 1024;
             if (u.Contains("ARC B580")) return 12 * 1024;
             if (u.Contains("ARC B570")) return 10 * 1024;
-
-            return 0; // unknown — caller falls back to WMI or default
+            return 0;
         }
     }
 

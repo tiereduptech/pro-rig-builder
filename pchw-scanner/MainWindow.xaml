@@ -19,6 +19,7 @@
         <SolidColorBrush x:Key="Dim"      Color="#B8B8C8"/>
         <SolidColorBrush x:Key="Mute"     Color="#8A8A98"/>
         <SolidColorBrush x:Key="Accent"   Color="#FF8A3D"/>
+        <SolidColorBrush x:Key="AccentDim" Color="#4F341F"/>
         <SolidColorBrush x:Key="Amber"    Color="#FFB020"/>
         <SolidColorBrush x:Key="Green"    Color="#4ADE80"/>
 
@@ -44,6 +45,30 @@
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="border" Property="Background" Value="#FF9A4D"/></Trigger>
                             <Trigger Property="IsPressed" Value="True"><Setter TargetName="border" Property="Background" Value="#EF7A2D"/></Trigger>
+                            <Trigger Property="IsEnabled" Value="False"><Setter TargetName="border" Property="Background" Value="#3A2A20"/><Setter Property="Foreground" Value="{StaticResource Mute}"/></Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="SecondaryButton" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource Bg3}"/>
+            <Setter Property="Foreground" Value="{StaticResource Dim}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Padding" Value="20,12"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Border}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="border" Property="Background" Value="#232330"/><Setter Property="Foreground" Value="{StaticResource Text}"/></Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
@@ -64,6 +89,31 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource Accent}"/>
+                                <Setter TargetName="border" Property="Background" Value="#232330"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Cooler selection card — larger with illustration + TDP info -->
+        <Style x:Key="CoolerCard" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource Bg3}"/>
+            <Setter Property="Foreground" Value="{StaticResource Text}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Border}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Margin" Value="6"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="12" Padding="10">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                         <ControlTemplate.Triggers>
@@ -158,11 +208,10 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <!-- ═══ TITLE BAR with real TowerLogo ═══ -->
+            <!-- ═══ TITLE BAR ═══ -->
             <Border Grid.Row="0" Background="Transparent" MouseLeftButtonDown="TitleBar_MouseDown" Padding="20,12,8,8">
                 <Grid>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                        <!-- TowerLogo SVG ported to XAML shapes. Frame = 30px wide, 36px tall -->
                         <Canvas Width="30" Height="36" Margin="0,0,10,0">
                             <Rectangle Canvas.Left="0" Canvas.Top="0" Width="30" Height="36" RadiusX="4" RadiusY="4" Stroke="{StaticResource Accent}" StrokeThickness="1" Opacity="0.3"/>
                             <Rectangle Canvas.Left="4" Canvas.Top="4" Width="22" Height="6" RadiusX="2" RadiusY="2" Fill="{StaticResource TowerGradient}"/>
@@ -180,36 +229,51 @@
                 </Grid>
             </Border>
 
+            <!-- ═══ STEP INDICATOR (horizontal progress dots) ═══ -->
+            <StackPanel x:Name="StepIndicator" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,4">
+                <Ellipse x:Name="Step1Dot" Width="8" Height="8" Fill="{StaticResource Accent}" Margin="3,0"/>
+                <Ellipse x:Name="Step2Dot" Width="8" Height="8" Fill="{StaticResource Border}" Margin="3,0"/>
+                <Ellipse x:Name="Step3Dot" Width="8" Height="8" Fill="{StaticResource Border}" Margin="3,0"/>
+                <Ellipse x:Name="Step4Dot" Width="8" Height="8" Fill="{StaticResource Border}" Margin="3,0"/>
+            </StackPanel>
+
             <Grid Grid.Row="1" Margin="32,8,32,16">
 
-                <!-- ── INPUT VIEW ── -->
-                <StackPanel x:Name="InputView" Visibility="Visible">
-                    <TextBlock Text="System Scanner" FontSize="30" FontWeight="Bold" Foreground="{StaticResource Text}" Margin="0,4,0,2"/>
-                    <TextBlock Text="Scan your PC and get upgrade recommendations tailored to your budget." Foreground="{StaticResource Dim}" FontSize="13" Margin="0,0,0,24"/>
+                <!-- ═══ PAGE 1: BUDGET ═══ -->
+                <StackPanel x:Name="Page1_Budget" Visibility="Visible">
+                    <TextBlock Text="Step 1 of 4  ·  Budget" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Accent}" Margin="0,4,0,6"/>
+                    <TextBlock Text="What's your upgrade budget?" FontSize="26" FontWeight="Bold" Foreground="{StaticResource Text}" Margin="0,0,0,6"/>
+                    <TextBlock Text="Set the maximum you want to spend on your upgrade." Foreground="{StaticResource Dim}" FontSize="13" Margin="0,0,0,24"/>
 
-                    <!-- Budget section -->
-                    <Border Background="{StaticResource Bg2}" CornerRadius="12" Padding="22,18" Margin="0,0,0,14">
+                    <Border Background="{StaticResource Bg2}" CornerRadius="12" Padding="24,22" Margin="0,0,0,20">
                         <StackPanel>
-                            <DockPanel Margin="0,0,0,12">
+                            <DockPanel Margin="0,0,0,16">
                                 <StackPanel DockPanel.Dock="Left">
                                     <TextBlock Text="UPGRADE BUDGET" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Dim}"/>
-                                    <TextBlock Text="Maximum you want to spend total" FontSize="12" Foreground="{StaticResource Dim}" Margin="0,2,0,0"/>
+                                    <TextBlock Text="We'll auto-pick the best value within this" FontSize="12" Foreground="{StaticResource Dim}" Margin="0,2,0,0"/>
                                 </StackPanel>
-                                <TextBlock x:Name="BudgetLabel" Text="$1,000" DockPanel.Dock="Right" FontSize="28" FontWeight="Bold" Foreground="{StaticResource Accent}" HorizontalAlignment="Right"/>
+                                <TextBlock x:Name="BudgetLabel" Text="$1,000" DockPanel.Dock="Right" FontSize="32" FontWeight="Bold" Foreground="{StaticResource Accent}" HorizontalAlignment="Right"/>
                             </DockPanel>
                             <Slider x:Name="BudgetSlider" Style="{StaticResource OrangeSlider}" Value="50" ValueChanged="BudgetSlider_ValueChanged"/>
-                            <DockPanel Margin="0,6,0,0">
+                            <DockPanel Margin="0,8,0,0">
                                 <TextBlock Text="$300" FontSize="10" Foreground="{StaticResource Mute}" FontFamily="Consolas"/>
                                 <TextBlock Text="$8,000" FontSize="10" Foreground="{StaticResource Mute}" FontFamily="Consolas" HorizontalAlignment="Right"/>
                             </DockPanel>
                         </StackPanel>
                     </Border>
 
-                    <!-- Storage — Step 1: yes/no -->
+                    <TextBlock Text="💡  Your budget covers GPU, CPU, RAM, and storage upgrades. CPU coolers and power supplies are treated as separate add-ons so they don't eat into your main build." FontSize="11" Foreground="{StaticResource Mute}" TextWrapping="Wrap" LineHeight="18" Margin="4,0,4,0"/>
+                </StackPanel>
+
+                <!-- ═══ PAGE 2: STORAGE ═══ -->
+                <StackPanel x:Name="Page2_Storage" Visibility="Collapsed">
+                    <TextBlock Text="Step 2 of 4  ·  Storage" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Accent}" Margin="0,4,0,6"/>
+                    <TextBlock Text="Need more storage?" FontSize="26" FontWeight="Bold" Foreground="{StaticResource Text}" Margin="0,0,0,6"/>
+                    <TextBlock Text="Optional — add an extra drive on top of what you already have." Foreground="{StaticResource Dim}" FontSize="13" Margin="0,0,0,20"/>
+
                     <Border Background="{StaticResource Bg2}" CornerRadius="12" Padding="22,18" Margin="0,0,0,14">
                         <StackPanel>
-                            <TextBlock Text="ADD EXTRA STORAGE?" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Dim}"/>
-                            <TextBlock Text="Optional — add another drive to your build" FontSize="12" Foreground="{StaticResource Dim}" Margin="0,2,0,12"/>
+                            <TextBlock Text="ADD EXTRA STORAGE?" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Dim}" Margin="0,0,0,10"/>
                             <UniformGrid Columns="2" Height="68">
                                 <Button x:Name="StorageNoBtn" Tag="no" Style="{StaticResource OptionCard}" Click="StorageYesNo_Click">
                                     <StackPanel>
@@ -225,7 +289,6 @@
                                 </Button>
                             </UniformGrid>
 
-                            <!-- Step 2: HDD vs SSD (hidden until Yes) -->
                             <StackPanel x:Name="StorageTypePanel" Visibility="Collapsed" Margin="0,14,0,0">
                                 <TextBlock Text="DRIVE TYPE" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Dim}" Margin="0,0,0,8"/>
                                 <UniformGrid Columns="2" Height="68">
@@ -244,20 +307,179 @@
                                 </UniformGrid>
                             </StackPanel>
 
-                            <!-- Step 3: size (hidden until type chosen) -->
                             <StackPanel x:Name="StorageSizePanel" Visibility="Collapsed" Margin="0,14,0,0">
                                 <TextBlock Text="SIZE" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Dim}" Margin="0,0,0,8"/>
-                                <UniformGrid x:Name="StorageSizes" Columns="4" Height="64">
-                                    <!-- Populated dynamically based on type: SSD = 500GB/1TB/2TB/4TB; HDD = 1TB/2TB/4TB/8TB -->
-                                </UniformGrid>
+                                <UniformGrid x:Name="StorageSizes" Columns="4" Height="64"/>
                             </StackPanel>
                         </StackPanel>
                     </Border>
-
-                    <Button Content="⚡  Scan My PC" Style="{StaticResource PrimaryButton}" HorizontalAlignment="Stretch" Height="52" Margin="0,4,0,0" Click="ScanButton_Click"/>
                 </StackPanel>
 
-                <!-- ── SCAN VIEW ── -->
+                <!-- ═══ PAGE 3: CPU COOLER ═══ -->
+                <StackPanel x:Name="Page3_Cooler" Visibility="Collapsed">
+                    <TextBlock Text="Step 3 of 4  ·  CPU Cooler" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Accent}" Margin="0,4,0,6"/>
+                    <TextBlock Text="What type of CPU cooler do you have?" FontSize="22" FontWeight="Bold" Foreground="{StaticResource Text}" Margin="0,0,0,6"/>
+                    <TextBlock Text="This helps us know if your current cooler can handle a CPU upgrade, or if you'll need a new one." Foreground="{StaticResource Dim}" FontSize="12" TextWrapping="Wrap" Margin="0,0,0,14"/>
+
+                    <!-- 3 columns x 2 rows of cooler options -->
+                    <UniformGrid Columns="3" Rows="2" Height="400">
+
+                        <!-- STOCK COOLER -->
+                        <Button x:Name="CoolerStockBtn" Tag="stock" Style="{StaticResource CoolerCard}" Click="Cooler_Click">
+                            <StackPanel>
+                                <Canvas Width="130" Height="110" HorizontalAlignment="Center">
+                                    <!-- Circular heatsink disc -->
+                                    <Ellipse Canvas.Left="20" Canvas.Top="50" Width="90" Height="30" Fill="#2A2A36" Stroke="{StaticResource Accent}" StrokeThickness="1"/>
+                                    <!-- Fan on top -->
+                                    <Ellipse Canvas.Left="30" Canvas.Top="30" Width="70" Height="30" Fill="#16161E" Stroke="{StaticResource Accent}" StrokeThickness="1.5"/>
+                                    <Ellipse Canvas.Left="60" Canvas.Top="40" Width="10" Height="10" Fill="{StaticResource Accent}"/>
+                                    <!-- Fan blades (simple lines from center) -->
+                                    <Line X1="65" Y1="45" X2="40" Y2="35" Stroke="{StaticResource Mute}" StrokeThickness="1.5"/>
+                                    <Line X1="65" Y1="45" X2="90" Y2="35" Stroke="{StaticResource Mute}" StrokeThickness="1.5"/>
+                                    <Line X1="65" Y1="45" X2="40" Y2="55" Stroke="{StaticResource Mute}" StrokeThickness="1.5"/>
+                                    <Line X1="65" Y1="45" X2="90" Y2="55" Stroke="{StaticResource Mute}" StrokeThickness="1.5"/>
+                                    <!-- Base -->
+                                    <Rectangle Canvas.Left="35" Canvas.Top="78" Width="60" Height="6" Fill="#3A3A46"/>
+                                </Canvas>
+                                <TextBlock Text="Stock Cooler" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,2,0,2"/>
+                                <TextBlock Text="Came with CPU" FontSize="10" Foreground="{StaticResource Mute}" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Up to ~65W" FontSize="10" Foreground="{StaticResource Accent}" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- BUDGET AIR -->
+                        <Button x:Name="CoolerBudgetAirBtn" Tag="budget_air" Style="{StaticResource CoolerCard}" Click="Cooler_Click">
+                            <StackPanel>
+                                <Canvas Width="130" Height="110" HorizontalAlignment="Center">
+                                    <!-- Heatsink tower (tall with fins) -->
+                                    <Rectangle Canvas.Left="50" Canvas.Top="15" Width="30" Height="70" Fill="#2A2A36" Stroke="{StaticResource Accent}" StrokeThickness="1"/>
+                                    <!-- Fin lines -->
+                                    <Line X1="50" Y1="25" X2="80" Y2="25" Stroke="{StaticResource Mute}" StrokeThickness="0.5"/>
+                                    <Line X1="50" Y1="32" X2="80" Y2="32" Stroke="{StaticResource Mute}" StrokeThickness="0.5"/>
+                                    <Line X1="50" Y1="39" X2="80" Y2="39" Stroke="{StaticResource Mute}" StrokeThickness="0.5"/>
+                                    <Line X1="50" Y1="46" X2="80" Y2="46" Stroke="{StaticResource Mute}" StrokeThickness="0.5"/>
+                                    <Line X1="50" Y1="53" X2="80" Y2="53" Stroke="{StaticResource Mute}" StrokeThickness="0.5"/>
+                                    <Line X1="50" Y1="60" X2="80" Y2="60" Stroke="{StaticResource Mute}" StrokeThickness="0.5"/>
+                                    <Line X1="50" Y1="67" X2="80" Y2="67" Stroke="{StaticResource Mute}" StrokeThickness="0.5"/>
+                                    <Line X1="50" Y1="74" X2="80" Y2="74" Stroke="{StaticResource Mute}" StrokeThickness="0.5"/>
+                                    <!-- Fan on side (circle) -->
+                                    <Ellipse Canvas.Left="80" Canvas.Top="25" Width="40" Height="40" Fill="#16161E" Stroke="{StaticResource Accent}" StrokeThickness="1.5"/>
+                                    <Ellipse Canvas.Left="95" Canvas.Top="40" Width="10" Height="10" Fill="{StaticResource Accent}"/>
+                                    <!-- Base -->
+                                    <Rectangle Canvas.Left="45" Canvas.Top="82" Width="40" Height="5" Fill="#3A3A46"/>
+                                </Canvas>
+                                <TextBlock Text="Budget Air Cooler" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,2,0,2"/>
+                                <TextBlock Text="Small tower, 1 fan" FontSize="10" Foreground="{StaticResource Mute}" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Up to ~120W" FontSize="10" Foreground="{StaticResource Accent}" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- 120MM AIO -->
+                        <Button x:Name="Cooler120Btn" Tag="aio_120" Style="{StaticResource CoolerCard}" Click="Cooler_Click">
+                            <StackPanel>
+                                <Canvas Width="130" Height="110" HorizontalAlignment="Center">
+                                    <!-- Radiator (1 fan size) -->
+                                    <Rectangle Canvas.Left="15" Canvas.Top="20" Width="40" Height="45" Fill="#2A2A36" Stroke="{StaticResource Accent}" StrokeThickness="1"/>
+                                    <!-- Radiator fins -->
+                                    <Line X1="15" Y1="28" X2="55" Y2="28" Stroke="{StaticResource Mute}" StrokeThickness="0.5"/>
+                                    <Line X1="15" Y1="35" X2="55" Y2="35" Stroke="{StaticResource Mute}" StrokeThickness="0.5"/>
+                                    <Line X1="15" Y1="42" X2="55" Y2="42" Stroke="{StaticResource Mute}" StrokeThickness="0.5"/>
+                                    <Line X1="15" Y1="49" X2="55" Y2="49" Stroke="{StaticResource Mute}" StrokeThickness="0.5"/>
+                                    <Line X1="15" Y1="56" X2="55" Y2="56" Stroke="{StaticResource Mute}" StrokeThickness="0.5"/>
+                                    <!-- Tubes -->
+                                    <Path Stroke="{StaticResource Accent}" StrokeThickness="2.5" Data="M 55,35 Q 80,35 90,50 Q 100,65 95,75"/>
+                                    <Path Stroke="{StaticResource Accent}" StrokeThickness="2.5" Data="M 55,50 Q 75,50 85,60 Q 95,70 95,80"/>
+                                    <!-- Pump -->
+                                    <Ellipse Canvas.Left="85" Canvas.Top="72" Width="26" Height="26" Fill="#16161E" Stroke="{StaticResource Accent}" StrokeThickness="1.5"/>
+                                    <Ellipse Canvas.Left="94" Canvas.Top="81" Width="8" Height="8" Fill="{StaticResource Accent}"/>
+                                </Canvas>
+                                <TextBlock Text="120mm AIO" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,2,0,2"/>
+                                <TextBlock Text="Single-fan radiator" FontSize="10" Foreground="{StaticResource Mute}" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Up to ~150W" FontSize="10" Foreground="{StaticResource Accent}" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- 240MM AIO -->
+                        <Button x:Name="Cooler240Btn" Tag="aio_240" Style="{StaticResource CoolerCard}" Click="Cooler_Click">
+                            <StackPanel>
+                                <Canvas Width="130" Height="110" HorizontalAlignment="Center">
+                                    <!-- Radiator (2 fan size) -->
+                                    <Rectangle Canvas.Left="8" Canvas.Top="20" Width="75" Height="35" Fill="#2A2A36" Stroke="{StaticResource Accent}" StrokeThickness="1"/>
+                                    <!-- Fan slots inside -->
+                                    <Ellipse Canvas.Left="12" Canvas.Top="23" Width="28" Height="28" Fill="#16161E" Stroke="{StaticResource Mute}" StrokeThickness="0.8"/>
+                                    <Ellipse Canvas.Left="23" Canvas.Top="34" Width="6" Height="6" Fill="{StaticResource Mute}"/>
+                                    <Ellipse Canvas.Left="50" Canvas.Top="23" Width="28" Height="28" Fill="#16161E" Stroke="{StaticResource Mute}" StrokeThickness="0.8"/>
+                                    <Ellipse Canvas.Left="61" Canvas.Top="34" Width="6" Height="6" Fill="{StaticResource Mute}"/>
+                                    <!-- Tubes -->
+                                    <Path Stroke="{StaticResource Accent}" StrokeThickness="2.5" Data="M 83,32 Q 105,35 105,55 Q 105,70 100,80"/>
+                                    <Path Stroke="{StaticResource Accent}" StrokeThickness="2.5" Data="M 83,45 Q 98,50 100,65 Q 100,75 100,85"/>
+                                    <!-- Pump -->
+                                    <Ellipse Canvas.Left="85" Canvas.Top="78" Width="30" Height="30" Fill="#16161E" Stroke="{StaticResource Accent}" StrokeThickness="1.5"/>
+                                    <Ellipse Canvas.Left="95" Canvas.Top="88" Width="10" Height="10" Fill="{StaticResource Accent}"/>
+                                </Canvas>
+                                <TextBlock Text="240mm AIO" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,2,0,2"/>
+                                <TextBlock Text="Dual-fan radiator" FontSize="10" Foreground="{StaticResource Mute}" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Up to ~220W" FontSize="10" Foreground="{StaticResource Accent}" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- 360MM AIO -->
+                        <Button x:Name="Cooler360Btn" Tag="aio_360" Style="{StaticResource CoolerCard}" Click="Cooler_Click">
+                            <StackPanel>
+                                <Canvas Width="130" Height="110" HorizontalAlignment="Center">
+                                    <!-- Radiator (3 fan size, longer) -->
+                                    <Rectangle Canvas.Left="2" Canvas.Top="20" Width="100" Height="28" Fill="#2A2A36" Stroke="{StaticResource Accent}" StrokeThickness="1"/>
+                                    <!-- 3 fan slots -->
+                                    <Ellipse Canvas.Left="4" Canvas.Top="22" Width="24" Height="24" Fill="#16161E" Stroke="{StaticResource Mute}" StrokeThickness="0.8"/>
+                                    <Ellipse Canvas.Left="13" Canvas.Top="31" Width="6" Height="6" Fill="{StaticResource Mute}"/>
+                                    <Ellipse Canvas.Left="30" Canvas.Top="22" Width="24" Height="24" Fill="#16161E" Stroke="{StaticResource Mute}" StrokeThickness="0.8"/>
+                                    <Ellipse Canvas.Left="39" Canvas.Top="31" Width="6" Height="6" Fill="{StaticResource Mute}"/>
+                                    <Ellipse Canvas.Left="56" Canvas.Top="22" Width="24" Height="24" Fill="#16161E" Stroke="{StaticResource Mute}" StrokeThickness="0.8"/>
+                                    <Ellipse Canvas.Left="65" Canvas.Top="31" Width="6" Height="6" Fill="{StaticResource Mute}"/>
+                                    <!-- Tubes -->
+                                    <Path Stroke="{StaticResource Accent}" StrokeThickness="2.5" Data="M 102,28 Q 120,35 118,60 Q 115,78 108,85"/>
+                                    <Path Stroke="{StaticResource Accent}" StrokeThickness="2.5" Data="M 102,40 Q 115,50 112,70 Q 108,82 102,88"/>
+                                    <!-- Pump -->
+                                    <Ellipse Canvas.Left="85" Canvas.Top="78" Width="32" Height="32" Fill="#16161E" Stroke="{StaticResource Accent}" StrokeThickness="1.5"/>
+                                    <Ellipse Canvas.Left="96" Canvas.Top="89" Width="10" Height="10" Fill="{StaticResource Accent}"/>
+                                </Canvas>
+                                <TextBlock Text="360mm AIO" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,2,0,2"/>
+                                <TextBlock Text="Triple-fan radiator" FontSize="10" Foreground="{StaticResource Mute}" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Up to ~300W" FontSize="10" Foreground="{StaticResource Accent}" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- I DON'T KNOW -->
+                        <Button x:Name="CoolerUnknownBtn" Tag="unknown" Style="{StaticResource CoolerCard}" Click="Cooler_Click">
+                            <StackPanel>
+                                <Canvas Width="130" Height="110" HorizontalAlignment="Center">
+                                    <!-- Big question mark in a circle -->
+                                    <Ellipse Canvas.Left="35" Canvas.Top="15" Width="60" Height="60" Fill="#16161E" Stroke="{StaticResource Mute}" StrokeThickness="1.5" StrokeDashArray="4,3"/>
+                                    <TextBlock Canvas.Left="50" Canvas.Top="22" Text="?" FontSize="48" FontWeight="Bold" Foreground="{StaticResource Mute}"/>
+                                </Canvas>
+                                <TextBlock Text="I'm not sure" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,2,0,2"/>
+                                <TextBlock Text="We'll suggest options" FontSize="10" Foreground="{StaticResource Mute}" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Safe default" FontSize="10" Foreground="{StaticResource Accent}" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                            </StackPanel>
+                        </Button>
+
+                    </UniformGrid>
+                </StackPanel>
+
+                <!-- ═══ PAGE 4: REVIEW + SCAN BUTTON ═══ -->
+                <StackPanel x:Name="Page4_Review" Visibility="Collapsed">
+                    <TextBlock Text="Step 4 of 4  ·  Ready to Scan" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Accent}" Margin="0,4,0,6"/>
+                    <TextBlock Text="Review your choices" FontSize="26" FontWeight="Bold" Foreground="{StaticResource Text}" Margin="0,0,0,6"/>
+                    <TextBlock Text="Scanning takes about 10 seconds. We'll detect your hardware and open your personalized upgrade page." Foreground="{StaticResource Dim}" FontSize="13" Margin="0,0,0,20"/>
+
+                    <Border Background="{StaticResource Bg2}" CornerRadius="12" Padding="22,18" Margin="0,0,0,20">
+                        <StackPanel x:Name="ReviewPanel"/>
+                    </Border>
+
+                    <Button Content="⚡  Start Scan" Style="{StaticResource PrimaryButton}" HorizontalAlignment="Stretch" Height="56" Click="ScanButton_Click"/>
+                </StackPanel>
+
+                <!-- ═══ SCAN VIEW (during scan) ═══ -->
                 <StackPanel x:Name="ScanView" Visibility="Collapsed">
                     <TextBlock Text="Scanning Your System" FontSize="28" FontWeight="Bold" Foreground="{StaticResource Text}" Margin="0,4,0,4"/>
                     <TextBlock Text="Analyzing your hardware configuration..." FontSize="13" Foreground="{StaticResource Dim}" Margin="0,0,0,24"/>
@@ -266,7 +488,7 @@
                     </Border>
                 </StackPanel>
 
-                <!-- ── DONE VIEW ── -->
+                <!-- ═══ DONE VIEW ═══ -->
                 <StackPanel x:Name="DoneView" Visibility="Collapsed">
                     <TextBlock Text="Scan Complete" FontSize="28" FontWeight="Bold" Foreground="{StaticResource Green}" Margin="0,4,0,4"/>
                     <TextBlock Text="Opening your personalized upgrade page..." FontSize="13" Foreground="{StaticResource Dim}" Margin="0,0,0,20"/>
@@ -277,21 +499,26 @@
                 </StackPanel>
             </Grid>
 
-            <!-- ═══ FOOTER ═══ -->
-            <Border Grid.Row="2" Background="#0A0A10" CornerRadius="0,0,16,16" Padding="20,12" BorderThickness="0,1,0,0" BorderBrush="{StaticResource Border}">
+            <!-- ═══ NAV FOOTER (Back / Next buttons) — visible only during wizard pages ═══ -->
+            <Border x:Name="NavBar" Grid.Row="2" Background="{StaticResource Bg2}" Padding="20,12" BorderThickness="0,1,0,0" BorderBrush="{StaticResource Border}">
+                <DockPanel>
+                    <Button x:Name="BackButton" Content="← Back" Style="{StaticResource SecondaryButton}" MinWidth="110" Click="BackButton_Click" DockPanel.Dock="Left" Visibility="Collapsed"/>
+                    <Button x:Name="NextButton" Content="Next →" Style="{StaticResource PrimaryButton}" MinWidth="130" Click="NextButton_Click" DockPanel.Dock="Right" HorizontalAlignment="Right"/>
+                </DockPanel>
+            </Border>
+
+            <!-- ═══ FOOTER (branding) — always visible ═══ -->
+            <Border Grid.Row="2" Background="#0A0A10" CornerRadius="0,0,16,16" Padding="20,8" BorderThickness="0,1,0,0" BorderBrush="{StaticResource Border}" x:Name="BrandFooter" Visibility="Collapsed">
                 <DockPanel>
                     <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
-                        <Image Source="assets/tiereduptech-logo-trans.png" Width="28" Height="28" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                        <Image Source="assets/tiereduptech-logo-trans.png" Width="22" Height="22" Margin="0,0,10,0" VerticalAlignment="Center"/>
                         <StackPanel VerticalAlignment="Center">
                             <TextBlock FontSize="10" Foreground="{StaticResource Dim}">
                                 <Run Text="Created by " /><Run Text="TieredUp Tech, Inc." FontWeight="Bold" Foreground="{StaticResource Text}"/>
                             </TextBlock>
-                            <TextBlock FontSize="9" Foreground="{StaticResource Mute}" FontFamily="Consolas">
-                                <Run Text="tiereduptech.com"/><Run Text=" · "/><Run Text="support@tiereduptech.com"/>
-                            </TextBlock>
                         </StackPanel>
                     </StackPanel>
-                    <TextBlock DockPanel.Dock="Right" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="9" Foreground="{StaticResource Mute}" FontFamily="Consolas" Text="v2.0"/>
+                    <TextBlock DockPanel.Dock="Right" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="9" Foreground="{StaticResource Mute}" FontFamily="Consolas" Text="v2.1"/>
                 </DockPanel>
             </Border>
         </Grid>
