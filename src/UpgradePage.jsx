@@ -340,6 +340,9 @@ function candidateRAMs(specs, maxPrice) {
 function candidateStorages(wantGB, wantType, maxPrice) {
   if (!wantGB || !wantType) return [];
   const isHDD = wantType === "HDD";
+  const isSSD = wantType === "SSD";
+  const isAny = wantType === "ANY" || wantType === "";
+
   const pool = PARTS.filter(p => {
     if (p.c !== "Storage" || p.bundle) return false;
     if (p.cap == null || p.cap < wantGB) return false;
@@ -348,19 +351,32 @@ function candidateStorages(wantGB, wantType, maxPrice) {
     const isHddProduct = /\bHDD\b|hard drive/i.test(p.n);
     const isSsdProduct = /\bSSD\b|NVMe/i.test(p.n);
     if (isHDD && !isHddProduct) return false;
-    if (!isHDD && !isSsdProduct) return false;
+    if (isSSD && !isSsdProduct) return false;
+    if (isAny && !isHddProduct && !isSsdProduct) return false;
     return true;
   });
+
   const tierOf = (p) => {
-    if (isHDD) return 0;
     const n = p.n.toUpperCase();
+    const isHddProduct = /\bHDD\b|hard drive/i.test(p.n);
+    if (isHddProduct) return 0;   // HDD always lowest tier
     if (/\bGEN\s*5\b|PCIE\s*5\.?0/.test(n)) return 5;
     if (/\bGEN\s*4\b|PCIE\s*4\.?0/.test(n)) return 4;
     if (/\bGEN\s*3\b|PCIE\s*3\.?0|NVMe/.test(n)) return 3;
     if (/\bSSD\b/.test(n)) return 2;
     return 1;
   };
+
+  // For ANY type: rank by value-per-dollar (price/GB), with SSDs slightly favored
+  // when price is comparable. Otherwise keep the original tier-first ranking.
   pool.sort((a, b) => {
+    if (isAny) {
+      // Best bang-for-buck: minimize price/GB first, then prefer higher tier on tie
+      const ppGB_a = bestPrice(a) / a.cap;
+      const ppGB_b = bestPrice(b) / b.cap;
+      if (Math.abs(ppGB_a - ppGB_b) > 0.005) return ppGB_a - ppGB_b;
+      return tierOf(b) - tierOf(a);
+    }
     const t = tierOf(b) - tierOf(a);
     if (t !== 0) return t;
     if (a.bench != null && b.bench != null) return (b.bench / bestPrice(b)) - (a.bench / bestPrice(a));
@@ -368,6 +384,7 @@ function candidateStorages(wantGB, wantType, maxPrice) {
     if (b.bench != null) return 1;
     return bestPrice(a) - bestPrice(b);
   });
+
   const seen = new Set();
   const out = [];
   for (const p of pool) {
@@ -721,8 +738,8 @@ export default function UpgradePage() {
         {a.storageWant > 0 && (
           <UpgradeSection title="Storage" color="#C084FC" icon="💾"
             selected={rb?.sto} alternatives={stoAlts}
-            description={`You asked for ${a.storageWant >= 1000 ? (a.storageWant/1000)+"TB" : a.storageWant+"GB"} ${a.storageType}.`}
-            warning={a.storageType !== "HDD" ? "Your motherboard needs a free M.2 slot." : null}
+            description={`You asked for ${a.storageWant >= 1000 ? (a.storageWant/1000)+"TB" : a.storageWant+"GB"}${a.storageType === "ANY" || a.storageType === "" ? " (any type — showing best value)" : " " + a.storageType}.`}
+            warning={a.storageType === "SSD" ? "Your motherboard needs a free M.2 slot for NVMe drives." : null}
             emptyMsg={`No matching storage within budget.`}/>
         )}
       </div>

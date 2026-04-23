@@ -168,9 +168,19 @@ namespace ProRigScanner
             _storageType = (string)btn.Tag;
 
             StorageSizes.Children.Clear();
-            var sizes = _storageType == "HDD"
-                ? new (int gb, string label)[] { (1000, "1 TB"), (2000, "2 TB"), (4000, "4 TB"), (8000, "8 TB") }
-                : new (int gb, string label)[] { (500, "500 GB"), (1000, "1 TB"), (2000, "2 TB"), (4000, "4 TB") };
+            // HDD: 1TB/2TB/4TB/8TB (HDDs start at 1TB to be worth buying)
+            // SSD: 500GB/1TB/2TB/4TB
+            // ANY: 1TB/2TB/4TB/8TB (inclusive range - website will pick best value type)
+            (int gb, string label)[] sizes;
+            if (_storageType == "HDD")
+                sizes = new[] { (1000, "1 TB"), (2000, "2 TB"), (4000, "4 TB"), (8000, "8 TB") };
+            else if (_storageType == "SSD")
+                sizes = new[] { (500, "500 GB"), (1000, "1 TB"), (2000, "2 TB"), (4000, "4 TB") };
+            else // ANY
+                sizes = new[] { (1000, "1 TB"), (2000, "2 TB"), (4000, "4 TB"), (8000, "8 TB") };
+
+            // Subtitle shown under the size label
+            string subtitle = _storageType == "ANY" ? "any type" : _storageType;
 
             foreach (var (gb, label) in sizes)
             {
@@ -182,7 +192,7 @@ namespace ProRigScanner
                 };
                 var stack = new StackPanel();
                 stack.Children.Add(new TextBlock { Text = label, FontSize = 15, FontWeight = FontWeights.Bold, HorizontalAlignment = HorizontalAlignment.Center });
-                stack.Children.Add(new TextBlock { Text = _storageType, FontSize = 10, Foreground = (SolidColorBrush)FindResource("Dim"), HorizontalAlignment = HorizontalAlignment.Center });
+                stack.Children.Add(new TextBlock { Text = subtitle, FontSize = 10, Foreground = (SolidColorBrush)FindResource("Dim"), HorizontalAlignment = HorizontalAlignment.Center });
                 sizeBtn.Content = stack;
                 sizeBtn.Click += StorageSize_Click;
                 StorageSizes.Children.Add(sizeBtn);
@@ -224,7 +234,8 @@ namespace ProRigScanner
             if (_storageChoice == "yes")
             {
                 string sizeLabel = _extraStorageGB >= 1000 ? $"{_extraStorageGB / 1000} TB" : $"{_extraStorageGB} GB";
-                AddReviewRow("Extra storage", $"{sizeLabel} {_storageType}", "");
+                string typeLabel = _storageType == "ANY" ? "(any type)" : _storageType;
+                AddReviewRow("Extra storage", $"{sizeLabel} {typeLabel}", "");
             }
             else
             {
