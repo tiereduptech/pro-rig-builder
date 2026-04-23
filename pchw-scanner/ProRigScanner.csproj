@@ -8,19 +8,36 @@
     <SelfContained>true</SelfContained>
     <AssemblyName>ProRigScanner</AssemblyName>
     <RootNamespace>ProRigScanner</RootNamespace>
+
+    <!-- Versioning -->
     <Version>2.0.0</Version>
-    <Authors>TieredUp Tech, Inc.</Authors>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
+    <InformationalVersion>2.0.0</InformationalVersion>
+
+    <!-- Copyright / ownership metadata (embedded in exe properties) -->
+    <Authors>Coby / TieredUp Tech, Inc.</Authors>
     <Company>TieredUp Tech, Inc.</Company>
     <Product>Pro Rig Builder Scanner</Product>
-    <Description>Scans your PC hardware and finds upgrade paths on prorigbuilder.com</Description>
-    <Copyright>© 2026 TieredUp Tech, Inc.</Copyright>
+    <AssemblyTitle>Pro Rig Builder Scanner</AssemblyTitle>
+    <Description>Scans your PC hardware and finds upgrade paths on prorigbuilder.com. Proprietary software — unauthorized reproduction or reverse engineering is prohibited.</Description>
+    <Copyright>Copyright © 2026 TieredUp Tech, Inc. All rights reserved.</Copyright>
+    <Trademark>Pro Rig Builder™ is a trademark of TieredUp Tech, Inc.</Trademark>
+
     <PublishTrimmed>false</PublishTrimmed>
     <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>assets\prorigbuilder.ico</ApplicationIcon>
+
+    <!-- Deterministic builds (same source = same binary hash - helps prove authorship) -->
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="System.Management" Version="8.0.0" />
+    <PackageReference Include="Obfuscar" Version="2.2.50">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="assets\tiereduptech-logo-trans.png" />
@@ -28,4 +45,11 @@
   <ItemGroup>
     <None Remove="Program.cs" />
   </ItemGroup>
+
+  <!-- Obfuscation (optional - pass /p:Obfuscate=true to enable) -->
+  <Target Name="ObfuscateAssembly" AfterTargets="Build" Condition="'$(Configuration)'=='Release' AND '$(Obfuscate)'=='true'">
+    <Message Text="=== Obfuscating ProRigScanner.dll ===" Importance="high" />
+    <Exec Command="&quot;$(Obfuscar)&quot; Obfuscar.xml" WorkingDirectory="$(MSBuildProjectDirectory)" />
+    <Copy SourceFiles="$(OutputPath)Obfuscated\ProRigScanner.dll" DestinationFolder="$(OutputPath)" OverwriteReadOnlyFiles="true" />
+  </Target>
 </Project>

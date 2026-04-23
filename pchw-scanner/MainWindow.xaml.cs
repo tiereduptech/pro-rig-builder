@@ -1,3 +1,23 @@
+// =============================================================================
+//  Pro Rig Scanner  —  MainWindow
+//  Part of the Pro Rig Builder ecosystem (https://prorigbuilder.com)
+//
+//  Copyright © 2026 TieredUp Tech, Inc. — All rights reserved.
+//  Author:   Coby / TieredUp Tech, Inc.
+//  Created:  2026
+//
+//  PROPRIETARY AND CONFIDENTIAL
+//  This source file and the ideas, designs, and implementation details it
+//  contains are the exclusive intellectual property of TieredUp Tech, Inc.
+//  No portion of this file may be reproduced, distributed, modified,
+//  reverse-engineered, decompiled, or used to create derivative works —
+//  in whole or in part — without prior written permission from the author.
+//
+//  Unauthorized copying, publication, or redistribution of this file,
+//  in any medium, is strictly prohibited and constitutes a violation of
+//  United States and international copyright law.
+// =============================================================================
+
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
