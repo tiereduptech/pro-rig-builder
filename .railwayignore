@@ -1,0 +1,20 @@
+# Exclude WPF scanner (not part of the web build)
+pchw-scanner/
+
+# Exclude PassMark cache files and scripts (only used locally for catalog maintenance)
+passmark-*.json
+fetch-passmark-*.js
+normalize-*.js
+diagnose-*.js
+verify-catalog-asins.js
+repair-broken-asins.js
+seed-asin-overrides.js
+
+# Exclude any parts.js backups made by normalizer scripts
+src/data/parts.js.backup-*
+
+# Exclude local dev files
+.env
+.env.local
+*.log
+.DS_Store
