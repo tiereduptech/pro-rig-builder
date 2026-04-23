@@ -8,6 +8,11 @@
 //  Reads URL hash (#upgrade?specs=base64(json)) from the scanner,
 //  analyzes the user's current hardware against the live catalog,
 //  and returns ranked, budget-aware upgrade recommendations.
+//
+//  Bench scale: 0-100, calibrated against PassMark G3D Mark (GPUs) and
+//  PassMark CPU Mark (CPUs). RTX 4090 = 100, Ryzen 9 9950X3D = 100 anchor.
+//  Storage has bench when PassMark data matched (~38% of catalog); undefined
+//  otherwise — upgrade logic handles both paths.
 // =============================================================================
 
 import React, { useState, useEffect, useMemo } from "react";
@@ -20,7 +25,7 @@ const TOP_N_GPU      = 4;
 const TOP_N_CPU      = 4;
 const TOP_N_RAM      = 3;
 const TOP_N_STORAGE  = 3;
-const MIN_IMPROVEMENT = 0.10;   // require 10%+ bench gain to recommend
+const MIN_IMPROVEMENT = 0.10;   // 10% bench gain required for GPU/CPU recs
 
 // Budget split (normal path — no platform refresh)
 const SPLIT_NORMAL  = { gpu: 0.65, cpu: 0.20, ram: 0.10, storage: 0.05 };
@@ -105,36 +110,69 @@ function socketToDDR(socket) {
 }
 
 // ─── BASELINE BENCHMARKS (for hardware not in sales catalog) ────────
+// Calibrated to PassMark G3D Mark, RTX 4090 = 100 anchor.
+// Values for recent cards taken from actual catalog averages; older cards
+// estimated by PassMark score ratio.
 const GPU_BASELINE_BENCH = {
-  "GTX 1030": 6, "GTX 1050": 8, "GTX 1050 TI": 10, "GTX 1060": 13,
-  "GTX 1070": 17, "GTX 1070 TI": 19, "GTX 1080": 22, "GTX 1080 TI": 26,
-  "GTX 1630": 7, "GTX 1650": 11, "GTX 1650 SUPER": 13, "GTX 1660": 14, "GTX 1660 SUPER": 18, "GTX 1660 TI": 19,
+  // Older NVIDIA (pre-RTX 3000)
+  "GTX 1030": 4, "GTX 1050": 6, "GTX 1050 TI": 9, "GTX 1060": 12,
+  "GTX 1070": 17, "GTX 1070 TI": 20, "GTX 1080": 22, "GTX 1080 TI": 28,
+  "GTX 1630": 7, "GTX 1650": 11, "GTX 1650 SUPER": 14, "GTX 1660": 15, "GTX 1660 SUPER": 18, "GTX 1660 TI": 19,
   "RTX 2060": 22, "RTX 2060 SUPER": 26, "RTX 2070": 27, "RTX 2070 SUPER": 30,
-  "RTX 2080": 32, "RTX 2080 SUPER": 33, "RTX 2080 TI": 36,
-  "RTX 3050": 22, "RTX 3060": 28, "RTX 3060 TI": 36, "RTX 3070": 40, "RTX 3070 TI": 43,
-  "RTX 3080": 50, "RTX 3080 TI": 58, "RTX 3090": 60, "RTX 3090 TI": 65,
-  "RTX 4060": 42, "RTX 4060 TI": 48, "RTX 4070": 58, "RTX 4070 SUPER": 65,
-  "RTX 4070 TI": 70, "RTX 4070 TI SUPER": 75, "RTX 4080": 82, "RTX 4080 SUPER": 85, "RTX 4090": 100,
-  "RX 550": 5, "RX 560": 7, "RX 570": 11, "RX 580": 13, "RX 590": 14,
-  "RX 5500 XT": 14, "RX 5600 XT": 20, "RX 5700": 23, "RX 5700 XT": 26,
-  "UHD GRAPHICS": 2, "IRIS XE": 4, "ARC A310": 8, "ARC A380": 11,
+  "RTX 2080": 32, "RTX 2080 SUPER": 34, "RTX 2080 TI": 40,
+  // RTX 3000 series — calibrated from actual catalog data
+  "RTX 3050": 25, "RTX 3060": 49, "RTX 3060 TI": 55, "RTX 3070": 60, "RTX 3070 TI": 63,
+  "RTX 3080": 71, "RTX 3080 TI": 78, "RTX 3090": 73, "RTX 3090 TI": 80,
+  // RTX 4000 series — from catalog averages
+  "RTX 4060": 57, "RTX 4060 TI": 58, "RTX 4070": 81, "RTX 4070 SUPER": 80,
+  "RTX 4070 TI": 85, "RTX 4070 TI SUPER": 85, "RTX 4080": 91, "RTX 4080 SUPER": 93, "RTX 4090": 100,
+  // RTX 5000 series — from catalog averages
+  "RTX 5050": 40, "RTX 5060": 55, "RTX 5060 TI": 62, "RTX 5070": 82, "RTX 5070 TI": 87,
+  "RTX 5080": 95, "RTX 5090": 100,
+  // AMD RX
+  "RX 550": 3, "RX 560": 5, "RX 570": 9, "RX 580": 11, "RX 590": 13,
+  "RX 5500 XT": 13, "RX 5600 XT": 18, "RX 5700": 22, "RX 5700 XT": 26,
+  "RX 6500 XT": 18, "RX 6600": 30, "RX 6600 XT": 36, "RX 6650 XT": 38, "RX 6700 XT": 45,
+  "RX 6750 XT": 48, "RX 6800": 55, "RX 6800 XT": 62, "RX 6900 XT": 66, "RX 6950 XT": 70,
+  "RX 7600": 38, "RX 7600 XT": 42, "RX 7700 XT": 60, "RX 7800 XT": 64, "RX 7900 GRE": 72,
+  "RX 7900 XT": 81, "RX 7900 XTX": 83,
+  // Intel Arc
+  "ARC A310": 8, "ARC A380": 11, "ARC A580": 28, "ARC A750": 40, "ARC A770": 45,
+  "ARC B580": 42, "ARC B570": 38,
+  // Integrated
+  "UHD GRAPHICS": 2, "IRIS XE": 4, "RADEON GRAPHICS": 6, "VEGA": 8,
 };
 
+// Calibrated to PassMark CPU Mark, Ryzen 9 9950X3D = 100 anchor.
+// CPU scale is intentionally compressed at the top — differences between
+// high-end CPUs are narrower in PassMark than in raw core count.
 const CPU_BASELINE_BENCH = {
-  "6100": 30, "6300": 35, "6500": 40, "6600": 45, "6700": 50, "6700K": 52,
-  "7100": 32, "7300": 37, "7400": 40, "7500": 45, "7600": 48, "7700": 52, "7700K": 55,
-  "8100": 38, "8300": 42, "8400": 48, "8500": 52, "8600": 55, "8600K": 58, "8700": 62, "8700K": 65,
-  "9100": 42, "9300": 45, "9400": 52, "9500": 55, "9600K": 60, "9700K": 66, "9900K": 72,
-  "10100": 45, "10300": 50, "10400": 58, "10500": 62, "10600K": 68, "10700K": 74, "10900K": 80,
-  "11400": 62, "11600K": 70, "11700K": 76, "11900K": 82,
-  "12100": 60, "12400": 68, "12600K": 78, "12700K": 85, "12900K": 92,
-  "13400": 72, "13600K": 82, "13700K": 90, "13900K": 98,
-  "14400": 74, "14600K": 84, "14700K": 92, "14900K": 100,
-  "1600": 42, "1700": 48, "1800X": 52, "1600X": 45,
-  "2600": 48, "2700": 55, "2700X": 58,
-  "3600": 55, "3700X": 64, "3800X": 66, "3900X": 75, "3950X": 82,
-  "5600": 62, "5600X": 65, "5700X": 70, "5800X": 74, "5900X": 82, "5950X": 90,
-  "7600": 75, "7600X": 78, "7700": 82, "7700X": 84, "7900": 88, "7900X": 92, "7950X": 98,
+  // Intel 6th-11th gen
+  "6100": 8, "6300": 10, "6500": 13, "6600": 15, "6700": 18, "6700K": 19,
+  "7100": 9, "7300": 11, "7400": 13, "7500": 15, "7600": 17, "7700": 19, "7700K": 21,
+  "8100": 12, "8300": 14, "8400": 17, "8500": 19, "8600": 21, "8600K": 23, "8700": 25, "8700K": 27,
+  "9100": 14, "9300": 16, "9400": 19, "9500": 21, "9600K": 24, "9700K": 28, "9900K": 32,
+  "10100": 15, "10300": 18, "10400": 22, "10500": 24, "10600K": 28, "10700K": 32, "10900K": 38,
+  "11400": 24, "11600K": 30, "11700K": 36, "11900K": 42,
+  // Intel 12th-14th gen (catalog-calibrated)
+  "12100": 20, "12400": 28, "12600K": 39, "12700K": 49, "12900K": 59,
+  "13400": 35, "13600K": 53, "13700K": 65, "13900K": 83,
+  "14400": 36, "14600K": 78, "14700K": 74, "14900K": 83,
+  // Intel Core Ultra (15th gen / LGA1851)
+  "245K": 62, "245KF": 62, "265K": 70, "265KF": 70, "285K": 85,
+  // AMD Ryzen 1000-3000 (AM4)
+  "1600": 12, "1700": 14, "1800X": 16, "1600X": 13,
+  "2600": 15, "2700": 18, "2700X": 20,
+  "3600": 22, "3700X": 28, "3800X": 30, "3900X": 38, "3950X": 45,
+  // AMD Ryzen 5000 (AM4) — catalog-calibrated
+  "5600": 28, "5600X": 31, "5700X": 36, "5800X": 39, "5800X3D": 72,
+  "5900X": 48, "5950X": 56,
+  // AMD Ryzen 7000 (AM5) — catalog-calibrated
+  "7600": 38, "7600X": 40, "7700": 48, "7700X": 51, "7800X3D": 70,
+  "7900": 68, "7900X": 73, "7950X": 89, "7950X3D": 88,
+  // AMD Ryzen 9000 (AM5) — catalog-calibrated
+  "9600X": 45, "9700X": 53, "9800X3D": 80, "9900X": 78, "9900X3D": 85,
+  "9950X": 94, "9950X3D": 100,
 };
 
 function lookupGPUBaseline(name) {
@@ -165,7 +203,7 @@ function findCatalogMatch(type, scannerName) {
     const model = extractGPUModel(scannerName);
     if (model) {
       const modelUpper = model.toUpperCase();
-      const hit = pool.find(p => p.n.toUpperCase().includes(modelUpper));
+      const hit = pool.find(p => p.n.toUpperCase().includes(modelUpper) && p.bench != null);
       if (hit) return hit;
     }
     const b = lookupGPUBaseline(scannerName);
@@ -175,7 +213,7 @@ function findCatalogMatch(type, scannerName) {
   if (type === "CPU") {
     const cpu = extractCPUModel(scannerName);
     if (!cpu) return null;
-    const hit = pool.find(p => p.n.toUpperCase().includes(cpu.model));
+    const hit = pool.find(p => p.n.toUpperCase().includes(cpu.model) && p.bench != null);
     if (hit) return hit;
     const b = lookupCPUBaseline(cpu.model);
     const inferredSocket = inferCPUSocket(cpu.model, cpu.brand);
@@ -187,13 +225,9 @@ function findCatalogMatch(type, scannerName) {
 
 // ─── PRICE / RETAILER ───────────────────────────────────────────────
 function bestPrice(p) {
-  if (!p?.deals || typeof p.deals !== "object") return p?.pr || 0;
-  const retailers = Object.entries(p.deals).filter(([k, v]) => v && typeof v === "object" && v.price);
-  if (!retailers.length) return p?.pr || 0;
-  // Prefer in-stock retailers; fall back to any retailer only if none are in stock
-  const inStock = retailers.filter(([k, v]) => v.inStock !== false);
-  const pool = inStock.length ? inStock : retailers;
-  return Math.min(...pool.map(([k, v]) => v.price));
+  if (p?.deals?.amazon?.price) return p.deals.amazon.price;
+  if (p?.deals?.bestbuy?.price) return p.deals.bestbuy.price;
+  return p?.pr || 0;
 }
 function retailerUrl(p) {
   if (p?.deals?.amazon?.url) return { url: p.deals.amazon.url, name: "Amazon" };
@@ -211,11 +245,11 @@ function needsPlatformRefresh(currentCPU, cpuModel, rawSocket) {
     const gen = intelGeneration(cpuModel.model);
     if (gen && gen < 8) return { refresh: true, reason: `Intel ${gen}th gen is outdated — newer socket required` };
     if (gen === 8 || gen === 9) {
-      const has = PARTS.some(p => p.c === "CPU" && !p.bundle && p.socket === "LGA1151");
+      const has = PARTS.some(p => p.c === "CPU" && !p.bundle && p.socket === "LGA1151" && p.bench != null);
       if (!has) return { refresh: true, reason: `LGA1151 has no upgrade path in our catalog` };
     }
     if (gen === 10 || gen === 11) {
-      const has = PARTS.some(p => p.c === "CPU" && !p.bundle && p.socket === "LGA1200");
+      const has = PARTS.some(p => p.c === "CPU" && !p.bundle && p.socket === "LGA1200" && p.bench != null);
       if (!has) return { refresh: true, reason: `LGA1200 is dead-end — LGA1700 or LGA1851 recommended` };
     }
   }
@@ -245,13 +279,13 @@ function recommendGPUs(currentGPU, budget, topN = TOP_N_GPU) {
   return out;
 }
 
-// BUG FIX #2: CPU — STRICT same-socket filter (no cross-platform AMD/Intel mixing)
+// CPU — STRICT same-socket filter (no cross-platform AMD/Intel mixing)
 function recommendCPUs(currentCPU, budget, topN = TOP_N_CPU) {
   if (!currentCPU?.bench || !currentCPU.socket) return [];
   const target = currentCPU.bench * (1 + MIN_IMPROVEMENT);
   const pool = PARTS.filter(p =>
     p.c === "CPU" && !p.bundle && p.bench != null &&
-    p.socket === currentCPU.socket &&   // <-- HARD socket constraint
+    p.socket === currentCPU.socket &&
     p.bench >= target &&
     bestPrice(p) <= budget && bestPrice(p) > 0
   );
@@ -298,13 +332,12 @@ function recommendPlatformSwap(currentCPU, budget, sameSocketBest) {
   }
   if (!best) return null;
 
-  // Only return if swap is meaningfully better than staying on current socket
   const sameSocketPPD = sameSocketBest ? (sameSocketBest.bench / bestPrice(sameSocketBest)) : 0;
   if (sameSocketPPD > 0 && best.ppd < sameSocketPPD * 1.30) return null;
   return best;
 }
 
-// BUG FIX #3: RAM — respect slot count and current capacity
+// RAM — respect slot count, bench-aware where available, falls back to speed
 function recommendRAMs(specs, budget, topN = TOP_N_RAM) {
   const currentSticks = parseInt(specs.ram_sticks) || 0;
   const currentUsed   = parseInt(specs.ram_used_slots) || currentSticks;
@@ -318,26 +351,33 @@ function recommendRAMs(specs, budget, topN = TOP_N_RAM) {
     if (p.c !== "RAM" || p.bundle) return false;
     if (bestPrice(p) > budget || bestPrice(p) <= 0) return false;
 
-    // Same DDR generation
     const nameDdr = /DDR5/i.test(p.n) ? "DDR5" : /DDR4/i.test(p.n) ? "DDR4" : null;
     const partType = p.ramType || nameDdr;
     if (currentType && partType && partType !== currentType) return false;
 
-    // Capacity must match or exceed current
     if (p.cap != null && p.cap < currentCapGB) return false;
 
-    // HARD RULE: if all slots are filled, only offer kits with matching stick count.
-    // Mixing sticks across speeds forces the whole kit to run at the slowest speed.
+    // If all slots are filled, only offer kits with matching stick count
     if (allSlotsFilled && p.sticks != null && p.sticks !== currentSticks) return false;
 
-    // Must actually be faster than what user already has
-    if (currentSpeed && p.speed != null && p.speed <= currentSpeed) return false;
+    // Must be faster than current — compare by bench if present, else by speed
+    if (p.bench != null && currentSpeed) {
+      // We don't have a bench for the user's current RAM, so fall back to speed check
+      if (p.speed != null && p.speed <= currentSpeed) return false;
+    } else if (currentSpeed && p.speed != null && p.speed <= currentSpeed) {
+      return false;
+    }
 
     return true;
   });
 
-  // Rank: faster is better, cheaper is better. Perf-per-dollar proxy = speed / price.
-  pool.sort((a, b) => ((b.speed || 0) / bestPrice(b)) - ((a.speed || 0) / bestPrice(a)));
+  // Rank: bench first if available, else speed/price
+  pool.sort((a, b) => {
+    if (a.bench != null && b.bench != null) {
+      return (b.bench / bestPrice(b)) - (a.bench / bestPrice(a));
+    }
+    return ((b.speed || 0) / bestPrice(b)) - ((a.speed || 0) / bestPrice(a));
+  });
 
   const seen = new Set();
   const out = [];
@@ -351,12 +391,12 @@ function recommendRAMs(specs, budget, topN = TOP_N_RAM) {
   return out;
 }
 
-// BUG FIX #4: Storage — hard capacity floor, fall back to older gen to hit target
+// Storage — hard capacity floor, bench-aware ranking when available,
+// falls back to tier-based (Gen5 > Gen4 > Gen3 > SATA SSD > HDD) when bench undefined
 function recommendStorages(wantGB, wantType, budget, topN = TOP_N_STORAGE) {
   if (!wantGB || !wantType) return [];
   const isHDD = wantType === "HDD";
 
-  // Must meet requested capacity (hard floor, no shrinking)
   const byCapacity = PARTS.filter(p => {
     if (p.c !== "Storage" || p.bundle) return false;
     if (p.cap == null || p.cap < wantGB) return false;
@@ -369,24 +409,32 @@ function recommendStorages(wantGB, wantType, budget, topN = TOP_N_STORAGE) {
   });
   if (!byCapacity.length) return [];
 
-  // Tier by speed class for SSDs (prefer newer only if in-budget)
   const tierOf = (p) => {
     if (isHDD) return 0;
     const n = p.n.toUpperCase();
     if (/\bGEN\s*5\b|PCIE\s*5\.?0/.test(n)) return 5;
     if (/\bGEN\s*4\b|PCIE\s*4\.?0/.test(n)) return 4;
     if (/\bGEN\s*3\b|PCIE\s*3\.?0|NVMe/.test(n)) return 3;
-    if (/\bSSD\b/.test(n)) return 2; // SATA SSD
+    if (/\bSSD\b/.test(n)) return 2;
     return 1;
   };
 
   const inBudget = byCapacity.filter(p => bestPrice(p) <= budget);
-  // Prefer in-budget options; within in-budget, prefer highest gen at lowest price.
   const working = inBudget.length ? inBudget : byCapacity;
+
   working.sort((a, b) => {
-    // Higher tier first, then cheaper first
+    // Prefer higher tier (Gen5 > Gen4 > Gen3 > SATA > HDD)
     const t = tierOf(b) - tierOf(a);
     if (t !== 0) return t;
+    // Within same tier, prefer higher bench if both have it
+    if (a.bench != null && b.bench != null) {
+      // Rank by bench-per-dollar within tier
+      return (b.bench / bestPrice(b)) - (a.bench / bestPrice(a));
+    }
+    // If only one has bench, prefer the one with bench
+    if (a.bench != null && b.bench == null) return -1;
+    if (b.bench != null && a.bench == null) return 1;
+    // Neither has bench — cheaper first
     return bestPrice(a) - bestPrice(b);
   });
 
@@ -402,11 +450,9 @@ function recommendStorages(wantGB, wantType, budget, topN = TOP_N_STORAGE) {
   return out;
 }
 
-// Bottleneck analysis
+// Bottleneck analysis — bench values are on a comparable 0-100 scale
 function analyzeBottleneck(currentCPU, currentGPU) {
   if (!currentCPU?.bench || !currentGPU?.bench) return null;
-  // Normalize CPU and GPU bench onto comparable 0-100 scales.
-  // Catalog benches are already 0-100 for both. A healthy ratio is ~0.8-1.2 (CPU/GPU).
   const ratio = currentCPU.bench / currentGPU.bench;
   if (ratio < 0.75) {
     const severity = Math.round((1 - ratio) * 100);
@@ -419,7 +465,6 @@ function analyzeBottleneck(currentCPU, currentGPU) {
   return { who: "Balanced", severity: 0, text: "System is well balanced", detail: "Your CPU and GPU are closely matched. Any category upgrade will give proportional gains." };
 }
 
-// PSU
 function calculatePSU(cpuTDP, gpuTDP) {
   const raw = (cpuTDP || 100) + (gpuTDP || 200) + 150;
   return Math.ceil(raw / 100) * 100;
@@ -441,7 +486,6 @@ export default function UpgradePage() {
     const cpuModel = extractCPUModel(specs.cpu);
     const refresh = needsPlatformRefresh(currentCPU, cpuModel, specs.cpu_socket);
 
-    // Budget allocation
     const split = refresh.refresh ? SPLIT_REFRESH : SPLIT_NORMAL;
     const budgetGPU     = Math.round(budget * split.gpu);
     const budgetCPU     = Math.round(budget * split.cpu);
@@ -449,7 +493,6 @@ export default function UpgradePage() {
     const budgetMobo    = refresh.refresh ? Math.round(budget * split.mobo) : 0;
     const budgetStorage = Math.round(budget * split.storage);
 
-    // Recommendations
     const gpuRecs = recommendGPUs(currentGPU, budgetGPU);
     const cpuRecs = recommendCPUs(currentCPU, budgetCPU);
     const sameSocketBest = cpuRecs[0] || null;
@@ -471,7 +514,6 @@ export default function UpgradePage() {
     const newGpuTDP = gpuRecs[0]?.tdp ?? currentGPU?.tdp ?? 200;
     const psuWattsNeeded = calculatePSU(newCpuTDP, newGpuTDP);
 
-    // Total cost = top pick from each shown list (for budget banner)
     let estCost = 0;
     if (gpuRecs[0])     estCost += bestPrice(gpuRecs[0]);
     if (cpuRecs[0])     estCost += bestPrice(cpuRecs[0]);
@@ -500,7 +542,7 @@ export default function UpgradePage() {
         <Header />
         <CurrentSystemCard specs={specs} analysis={a} />
         {a.refresh.refresh && <PlatformRefreshAlert reason={a.refresh.reason} />}
-        <BudgetBanner budget={a.budget} estCost={a.estCost} split={a.refresh.refresh ? SPLIT_REFRESH : SPLIT_NORMAL} specs={specs} />
+        <BudgetBanner budget={a.budget} estCost={a.estCost} split={a.refresh.refresh ? SPLIT_REFRESH : SPLIT_NORMAL} />
         {a.bottleneck && <BottleneckAnalysisCard bn={a.bottleneck} />}
         <PSUWarning watts={a.psuWattsNeeded} />
 
@@ -623,10 +665,8 @@ function PlatformRefreshAlert({reason}) {
   );
 }
 
-// BUG FIX #1: Budget display
-function BudgetBanner({budget, estCost, split, specs}) {
+function BudgetBanner({budget, estCost, split}) {
   const over = estCost > budget;
-  const [expanded, setExpanded] = React.useState(false);
   return (
     <div style={{background:"var(--bg2)", borderRadius:12, border:"1px solid var(--bdr)", padding:"16px 20px", marginBottom:20}}>
       <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:12, flexWrap:"wrap", gap:12}}>
@@ -634,113 +674,17 @@ function BudgetBanner({budget, estCost, split, specs}) {
           <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:600, letterSpacing:1.5}}>YOUR BUDGET</div>
           <div style={{fontFamily:"var(--ff)", fontSize:26, fontWeight:800, color:"var(--accent)"}}>${budget.toLocaleString()}</div>
         </div>
-        <div style={{display:"flex", alignItems:"center", gap:16}}>
-          <div style={{textAlign:"right"}}>
-            <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:600, letterSpacing:1.5}}>ESTIMATED TOTAL</div>
-            <div style={{fontFamily:"var(--ff)", fontSize:26, fontWeight:800, color: over ? "#FFB020" : "var(--txt)"}}>${estCost.toLocaleString()}</div>
-          </div>
-          {specs && <button onClick={() => setExpanded(!expanded)} style={{padding:"8px 14px", borderRadius:8, fontSize:12, fontFamily:"var(--ff)", fontWeight:600, cursor:"pointer", background:expanded?"var(--accent)":"transparent", color:expanded?"var(--bg)":"var(--accent)", border:"1.5px solid var(--accent)"}}>
-            {expanded ? "Cancel" : "\u2699 Adjust"}
-          </button>}
+        <div style={{textAlign:"right"}}>
+          <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:600, letterSpacing:1.5}}>ESTIMATED TOTAL</div>
+          <div style={{fontFamily:"var(--ff)", fontSize:26, fontWeight:800, color: over ? "#FFB020" : "var(--txt)"}}>${estCost.toLocaleString()}</div>
         </div>
       </div>
       <div style={{display:"flex", gap:6, flexWrap:"wrap"}}>
         {Object.entries(split).map(([key, pct]) => (
           <div key={key} style={{background:"var(--bg3)", padding:"4px 10px", borderRadius:6, fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)"}}>
-            <span style={{color:"var(--txt)", fontWeight:600}}>{key.toUpperCase()}</span> {Math.round(pct*100)}% \u00b7 ${Math.round(budget*pct).toLocaleString()}
+            <span style={{color:"var(--txt)", fontWeight:600}}>{key.toUpperCase()}</span> {Math.round(pct*100)}% · ${Math.round(budget*pct).toLocaleString()}
           </div>
         ))}
-      </div>
-      {expanded && specs && <ReconfigurePanel specs={specs} initialBudget={budget} onClose={() => setExpanded(false)}/>}
-    </div>
-  );
-}
-
-function ReconfigurePanel({specs, initialBudget, onClose}) {
-  const MIN_BUDGET = 300;
-  const MAX_BUDGET = 8000;
-  const budgetToSlider = (b) => Math.pow((b - MIN_BUDGET) / (MAX_BUDGET - MIN_BUDGET), 1/2.5);
-  const sliderToBudget = (s) => Math.round(MIN_BUDGET + Math.pow(s, 2.5) * (MAX_BUDGET - MIN_BUDGET));
-  const [budget, setBudget] = React.useState(initialBudget);
-  const [sliderVal, setSliderVal] = React.useState(budgetToSlider(initialBudget));
-  const [usedOk, setUsedOk] = React.useState(specs.used_ok === true || specs.used_ok === "true");
-  const [addStorage, setAddStorage] = React.useState(!!specs.add_storage_gb);
-  const [storageType, setStorageType] = React.useState(specs.add_storage_type || "SSD");
-  const [storageSize, setStorageSize] = React.useState(specs.add_storage_gb || 1000);
-  const SSD_SIZES = [500, 1000, 2000, 4000];
-  const HDD_SIZES = [1000, 2000, 4000, 8000];
-  const sizes = storageType === "SSD" ? SSD_SIZES : HDD_SIZES;
-  const sizeLabel = (gb) => gb >= 1000 ? (gb/1000) + "TB" : gb + "GB";
-  const handleSliderChange = (e) => {
-    const s = parseFloat(e.target.value);
-    setSliderVal(s);
-    setBudget(sliderToBudget(s));
-  };
-  const handleReconfigure = () => {
-    const newSpecs = { ...specs, budget };
-    newSpecs.used_ok = usedOk;
-    if (addStorage) { newSpecs.add_storage_gb = storageSize; newSpecs.add_storage_type = storageType; }
-    else { delete newSpecs.add_storage_gb; delete newSpecs.add_storage_type; }
-    const encoded = btoa(JSON.stringify(newSpecs));
-    window.location.hash = "upgrade?specs=" + encodeURIComponent(encoded);
-    window.location.reload();
-  };
-  const labelStyle = {fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:600, letterSpacing:1.5, marginBottom:6, display:"block"};
-  return (
-    <div style={{marginTop:16, padding:"16px 18px", background:"var(--bg3)", borderRadius:10, border:"1px solid var(--bdr)"}}>
-      <div style={{marginBottom:18}}>
-        <label style={labelStyle}>BUDGET</label>
-        <div style={{fontFamily:"var(--ff)", fontSize:22, fontWeight:800, color:"var(--accent)", marginBottom:8}}>${budget.toLocaleString()}</div>
-        <input type="range" min={0} max={1} step={0.001} value={sliderVal} onChange={handleSliderChange} style={{width:"100%", accentColor:"var(--accent)"}}/>
-        <div style={{display:"flex", justifyContent:"space-between", fontFamily:"var(--mono)", fontSize:9, color:"var(--dim)", marginTop:4}}>
-          <span>$300</span><span>$1000</span><span>$3000</span><span>$8000</span>
-        </div>
-      </div>
-      <div style={{marginBottom:18, display:"flex", alignItems:"center", gap:12}}>
-        <label style={{...labelStyle, marginBottom:0, flex:1}}>INCLUDE USED PARTS</label>
-        <button onClick={() => setUsedOk(!usedOk)} style={{padding:"6px 14px", borderRadius:6, fontSize:11, fontFamily:"var(--ff)", fontWeight:600, cursor:"pointer", background:usedOk?"#F59E0B":"transparent", color:usedOk?"#1A1A20":"var(--dim)", border:usedOk?"1.5px solid #F59E0B":"1.5px solid var(--bdr)"}}>
-          {usedOk ? "ON" : "OFF"}
-        </button>
-      </div>
-      <div style={{marginBottom:18}}>
-        <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:addStorage?12:0}}>
-          <label style={{...labelStyle, marginBottom:0, flex:1}}>ADD STORAGE</label>
-          <button onClick={() => setAddStorage(!addStorage)} style={{padding:"6px 14px", borderRadius:6, fontSize:11, fontFamily:"var(--ff)", fontWeight:600, cursor:"pointer", background:addStorage?"var(--accent)":"transparent", color:addStorage?"var(--bg)":"var(--dim)", border:addStorage?"1.5px solid var(--accent)":"1.5px solid var(--bdr)"}}>
-            {addStorage ? "ON" : "OFF"}
-          </button>
-        </div>
-        {addStorage && (
-          <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:10}}>
-            <div>
-              <label style={labelStyle}>TYPE</label>
-              <div style={{display:"flex", gap:6}}>
-                {["SSD", "HDD"].map(t => (
-                  <button key={t} onClick={() => { setStorageType(t); setStorageSize((t === "SSD" ? SSD_SIZES : HDD_SIZES)[1]); }} style={{flex:1, padding:"7px 10px", borderRadius:6, fontSize:11, fontFamily:"var(--ff)", fontWeight:600, cursor:"pointer", background:storageType===t?"var(--accent)":"transparent", color:storageType===t?"var(--bg)":"var(--dim)", border:storageType===t?"1.5px solid var(--accent)":"1.5px solid var(--bdr)"}}>
-                    {t}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <div>
-              <label style={labelStyle}>SIZE</label>
-              <div style={{display:"flex", gap:4, flexWrap:"wrap"}}>
-                {sizes.map(sz => (
-                  <button key={sz} onClick={() => setStorageSize(sz)} style={{padding:"7px 10px", borderRadius:6, fontSize:11, fontFamily:"var(--ff)", fontWeight:600, cursor:"pointer", background:storageSize===sz?"var(--accent)":"transparent", color:storageSize===sz?"var(--bg)":"var(--dim)", border:storageSize===sz?"1.5px solid var(--accent)":"1.5px solid var(--bdr)"}}>
-                    {sizeLabel(sz)}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-      <div style={{display:"flex", gap:10, justifyContent:"flex-end"}}>
-        <button onClick={onClose} style={{padding:"10px 20px", borderRadius:8, fontSize:12, fontFamily:"var(--ff)", fontWeight:600, cursor:"pointer", background:"transparent", color:"var(--dim)", border:"1.5px solid var(--bdr)"}}>
-          Cancel
-        </button>
-        <button onClick={handleReconfigure} style={{padding:"10px 24px", borderRadius:8, fontSize:12, fontFamily:"var(--ff)", fontWeight:700, cursor:"pointer", background:"var(--accent)", color:"var(--bg)", border:"1.5px solid var(--accent)"}}>
-          Reconfigure \u2192
-        </button>
       </div>
     </div>
   );
@@ -810,7 +754,9 @@ function UpgradeSection({title, color, icon, description, warning, items, baseli
 function UpgradeRow({part, color, baseline}) {
   const price = bestPrice(part);
   const retailer = retailerUrl(part);
-  const improvement = baseline?.bench && part.bench ? Math.round(((part.bench - baseline.bench) / baseline.bench) * 100) : null;
+  const improvement = (baseline?.bench != null && part.bench != null)
+    ? Math.round(((part.bench - baseline.bench) / baseline.bench) * 100)
+    : null;
   return (
     <div style={{background:"var(--bg3)", borderRadius:10, padding:"12px 16px", display:"flex", alignItems:"center", gap:14, borderLeft:`3px solid ${color}`}}>
       <div style={{flex:1, minWidth:0}}>
@@ -821,9 +767,8 @@ function UpgradeRow({part, color, baseline}) {
           {part.speed && <span>{part.speed}MHz</span>}
           {part.socket && <span>{part.socket}</span>}
           {part.tdp && <span>{part.tdp}W</span>}
-          {part.bench && <span>bench {part.bench}</span>}
+          {part.bench != null && <span>bench {part.bench}</span>}
           {improvement != null && improvement > 0 && <span style={{color:"var(--accent)", fontWeight:700}}>+{improvement}% faster</span>}
-          {(part.used === true || part.condition === "used") && <span style={{color:"#F59E0B", fontWeight:700, background:"#F59E0B20", padding:"1px 6px", borderRadius:4, border:"1px solid #F59E0B40"}}>USED</span>}
         </div>
       </div>
       <div style={{textAlign:"right", flexShrink:0}}>
@@ -869,7 +814,6 @@ function SwapLine({label, part}) {
     <div style={{background:"var(--bg3)", borderRadius:6, padding:"8px 12px", display:"flex", alignItems:"center", gap:10}}>
       <div style={{minWidth:90, fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:700}}>{label.toUpperCase()}</div>
       <div style={{flex:1, minWidth:0, fontFamily:"var(--ff)", fontSize:12, fontWeight:600, color:"var(--txt)", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap"}}>{part.n}</div>
-      {(part.used === true || part.condition === "used") && <span style={{fontFamily:"var(--mono)", fontSize:9, fontWeight:900, letterSpacing:1, color:"#1A1A20", background:"#F59E0B", padding:"2px 6px", borderRadius:4}}>USED</span>}
       <div style={{fontFamily:"var(--ff)", fontSize:14, fontWeight:700, color:"var(--accent)"}}>${bestPrice(part)}</div>
       {retailer && <a href={retailer.url} target="_blank" rel="noopener noreferrer" style={{fontFamily:"var(--ff)", fontSize:10, color:"var(--accent)", textDecoration:"none", whiteSpace:"nowrap"}}>Buy →</a>}
     </div>
