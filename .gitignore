@@ -58,3 +58,4 @@ bestbuy-scrape-report.json
 scraped-skus.txt
 bb-query.txt
 bb-variables.txt
+src/data/parts.js.pre-cleanup-backup
