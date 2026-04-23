@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+  Obfuscar config for ProRigScanner (WPF .NET 8)
+
+  Conservative settings:
+  - KeepPublicApi=true   -> public types/methods keep their names (safer for WPF/XAML/JSON)
+  - HidePrivateApi=true  -> private types/methods get scrambled (the protection)
+  - RenameProperties=false -> leaves properties alone (protects JSON serialization + data binding)
+  - RenameEvents=false   -> leaves events alone (protects XAML event handlers)
+  - AnalyzeXaml=true     -> Obfuscar reads XAML/BAML so it won't rename things XAML needs
+-->
+<Obfuscator>
+  <Var name="InPath" value="bin\Release\net8.0-windows\win-x64" />
+  <Var name="OutPath" value="bin\Release\net8.0-windows\win-x64\Obfuscated" />
+
+  <Var name="KeepPublicApi" value="true" />
+  <Var name="HidePrivateApi" value="true" />
+  <Var name="RenameProperties" value="false" />
+  <Var name="RenameEvents" value="false" />
+  <Var name="RenameFields" value="true" />
+  <Var name="UseUnicodeNames" value="false" />
+  <Var name="AnalyzeXaml" value="true" />
+  <Var name="RegenerateDebugInfo" value="false" />
+
+  <Module file="$(InPath)\ProRigScanner.dll" />
+</Obfuscator>

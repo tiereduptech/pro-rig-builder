@@ -1,0 +1,1208 @@
+{
+  "AMD|Ryzen 9|9950X": {
+    "asin": "B0D6NNRBGP",
+    "productId": 5000,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 9|9900X": {
+    "asin": "B0D6NN87T8",
+    "productId": 5001,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 7|9700X": {
+    "asin": "B0D6NMDNNX",
+    "productId": 5002,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 5|9600X": {
+    "asin": "B0D6NN6TM7",
+    "productId": 5003,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 9|9950X3D": {
+    "asin": "B0DVZSG8D5",
+    "productId": 5004,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 9|9900X3D": {
+    "asin": "B0DWGWN8GY",
+    "productId": 5005,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 7|9800X3D": {
+    "asin": "B0DKFMSMYK",
+    "productId": 5006,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 7|8700G": {
+    "asin": "B0CQ4JBKW3",
+    "productId": 5007,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 5|8600G": {
+    "asin": "B0CQ4GYTTX",
+    "productId": 1031,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 5|8500G": {
+    "asin": "B0CQ4JV8D5",
+    "productId": 5009,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 9|7950X": {
+    "asin": "B0BBHD5D8Y",
+    "productId": 5011,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 9|7950X3D": {
+    "asin": "B0BTRH9MNS",
+    "productId": 5012,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 9|7900X": {
+    "asin": "B0BBJ59WJ4",
+    "productId": 5013,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 9|7900X3D": {
+    "asin": "B0BTRRNK7T",
+    "productId": 5014,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 9|7900": {
+    "asin": "B0BBJ59WJ4",
+    "productId": 5015,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 7|7800X3D": {
+    "asin": "B0BTZB7F88",
+    "productId": 5016,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 7|7700X": {
+    "asin": "B0BBHHT8LY",
+    "productId": 5017,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 5|7600X": {
+    "asin": "B0BBJDS62N",
+    "productId": 5019,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 5|7600": {
+    "asin": "B0BBJDS62N",
+    "productId": 5020,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 5|7500F": {
+    "asin": "B0D1CK42PV",
+    "productId": 5021,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 9|5950X": {
+    "asin": "B0815Y8J9N",
+    "productId": 5022,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 9|5900": {
+    "asin": "B0D6NMCZG1",
+    "productId": 5024,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 7|5800X": {
+    "asin": "B0815XFSGK",
+    "productId": 5025,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 7|5800": {
+    "asin": "B0815XFSGK",
+    "productId": 5027,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 7|5700X": {
+    "asin": "B09VCHQHZ6",
+    "productId": 5028,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 7|5700": {
+    "asin": "B0CQ4HPJYV",
+    "productId": 5030,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 5|5600X": {
+    "asin": "B08166SLDF",
+    "productId": 5031,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 5|5600": {
+    "asin": "B09VCHR1VH",
+    "productId": 5032,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 5|5500": {
+    "asin": "B09VCJ171S",
+    "productId": 5033,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 5|5600G": {
+    "asin": "B092L9GF5N",
+    "productId": 5034,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 7|5700G": {
+    "asin": "B091J3NYVF",
+    "productId": 5035,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 9|3950X": {
+    "asin": "B07ZTYKLZW",
+    "productId": 5037,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 9|3900X": {
+    "asin": "B07SXMZLP9",
+    "productId": 5038,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 7|3800X": {
+    "asin": "B07SXMZLPJ",
+    "productId": 5039,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 7|3700X": {
+    "asin": "B07SXMZLPK",
+    "productId": 5040,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 5|3600": {
+    "asin": "B09VCJ171S",
+    "productId": 5041,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 3|3300X": {
+    "asin": "B0876YS2T4",
+    "productId": 5043,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 3|3100": {
+    "asin": "B0876Y2TMZ",
+    "productId": 5044,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core Ultra 9|285K": {
+    "asin": "B0DFKC99VL",
+    "productId": 5045,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core Ultra 7|265K": {
+    "asin": "B0DFK2MH2D",
+    "productId": 5046,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core Ultra 7|265KF": {
+    "asin": "B0DFK2WHF8",
+    "productId": 5047,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core Ultra 5|245K": {
+    "asin": "B0DFK2P311",
+    "productId": 5048,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core Ultra 5|245KF": {
+    "asin": "B0DFK8HHK4",
+    "productId": 5049,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i9|14900K": {
+    "asin": "B0CGJDKLB8",
+    "productId": 5050,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i9|14900KF": {
+    "asin": "B0CGJDBCTK",
+    "productId": 5051,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i9|14900": {
+    "asin": "B0CGJDKLB8",
+    "productId": 5052,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i9|14900F": {
+    "asin": "B0CQ1FC8WZ",
+    "productId": 5053,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i5|14600KF": {
+    "asin": "B0CGJ4MLC8",
+    "productId": 5059,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i5|14600": {
+    "asin": "B0CGJ4MLC8",
+    "productId": 5060,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i5|14500": {
+    "asin": "B0CQ27H8VY",
+    "productId": 5061,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i5|14400": {
+    "asin": "B0CQ1M1YXM",
+    "productId": 5062,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i3|14100F": {
+    "asin": "B0CQ1MN1Y2",
+    "productId": 5065,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i7|13700KF": {
+    "asin": "B0BCDL7F5W",
+    "productId": 5069,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i5|13600K": {
+    "asin": "B0BCDR9M33",
+    "productId": 5070,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i5|13400": {
+    "asin": "B0BQ68QB6R",
+    "productId": 5073,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i3|13100": {
+    "asin": "B0BN5Z8MDR",
+    "productId": 5075,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i9|12900K": {
+    "asin": "B09FXDLX95",
+    "productId": 5077,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i9|12900KF": {
+    "asin": "B09FWYK5M9",
+    "productId": 5078,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i7|12700KF": {
+    "asin": "B09FXKHN7M",
+    "productId": 5080,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i5|12600K": {
+    "asin": "B09FX4D72T",
+    "productId": 5081,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i5|12600KF": {
+    "asin": "B09FXFJW2F",
+    "productId": 5082,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i5|12400": {
+    "asin": "B09NMPD8V2",
+    "productId": 5083,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i5|12400F": {
+    "asin": "B09NPJRDGD",
+    "productId": 5084,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i3|12100": {
+    "asin": "B09NPHJLPT",
+    "productId": 5085,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Core i3|12100F": {
+    "asin": "B09NPJX7PV",
+    "productId": 5086,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|5090": {
+    "asin": "B0DS2WQZ2M",
+    "productId": 8000,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|5080": {
+    "asin": "B0DSXJ5QF4",
+    "productId": 14848,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|5070 TI": {
+    "asin": "B0DTRC7782",
+    "productId": 6002,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|5070": {
+    "asin": "B0DTQMLX4F",
+    "productId": 6003,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|5060 TI": {
+    "asin": "B0G2B2VTG3",
+    "productId": 14849,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|5060": {
+    "asin": "B0F4LZ5YG7",
+    "productId": 14928,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|4090": {
+    "asin": "B0CPB3P36K",
+    "productId": 14943,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|4080 SUPER": {
+    "asin": "B0DTFYPGWS",
+    "productId": 6007,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|4080": {
+    "asin": "B0BMZ9TGH1",
+    "productId": 6008,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|4070 TI": {
+    "asin": "B0BQTSV2GG",
+    "productId": 6010,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|4070 SUPER": {
+    "asin": "B0CSBDWT1W",
+    "productId": 14884,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|4070": {
+    "asin": "B0BZHCQ6PF",
+    "productId": 14856,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|4060 TI": {
+    "asin": "B0C5BQ1HM6",
+    "productId": 14865,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|4060": {
+    "asin": "B0CQKRRZ9K",
+    "productId": 8022,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|3090 TI": {
+    "asin": "B09GWB753L",
+    "productId": 6016,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|3090": {
+    "asin": "B09GWB753L",
+    "productId": 6017,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|3080 TI": {
+    "asin": "B09WSC85GP",
+    "productId": 6018,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|3080": {
+    "asin": "B09WSC85GP",
+    "productId": 6019,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|3070 TI": {
+    "asin": "B09B38Z7DB",
+    "productId": 6021,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|3070": {
+    "asin": "B08MYCN952",
+    "productId": 6022,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|3060 TI": {
+    "asin": "B09SZKN2NX",
+    "productId": 6023,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|3050": {
+    "asin": "B0CVCG2VPK",
+    "productId": 14833,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|9070 XT": {
+    "asin": "B0F38GLLKR",
+    "productId": 14938,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|9070": {
+    "asin": "B0FRPW9V2Y",
+    "productId": 14930,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|9060 XT": {
+    "asin": "B0G2GMZTCN",
+    "productId": 14834,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|9060": {
+    "asin": "B0F91KM1CK",
+    "productId": 6029,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|7900 XTX": {
+    "asin": "B0BNLSDRKB",
+    "productId": 6030,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|7900 XT": {
+    "asin": "B0BNLSDRKB",
+    "productId": 6031,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|7900": {
+    "asin": "B0BNLSDRKB",
+    "productId": 6032,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|7700 XT": {
+    "asin": "B0CQRWMYQF",
+    "productId": 14903,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|7600 XT": {
+    "asin": "B0CHK2345D",
+    "productId": 6035,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|7600": {
+    "asin": "B0C5S9CHMG",
+    "productId": 14853,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|6900 XT": {
+    "asin": "B08Q2R71CS",
+    "productId": 6038,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|6800": {
+    "asin": "B0DFMMF59C",
+    "productId": 6040,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|6750 XT": {
+    "asin": "B0CHK2345D",
+    "productId": 6041,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Arc|B580": {
+    "asin": "B0DNV4NWF7",
+    "productId": 6046,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Arc|B570": {
+    "asin": "B0DQYM2MHX",
+    "productId": 6047,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Arc|A750": {
+    "asin": "B0BNYXRTFN",
+    "productId": 6049,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "INTEL|Arc|A580": {
+    "asin": "B0CJGSP9R7",
+    "productId": 6050,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|6000": {
+    "asin": "B0BNYR4VX8",
+    "productId": 6051,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|5000": {
+    "asin": "B0CXPZSWPX",
+    "productId": 6052,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|4500": {
+    "asin": "B0DLWT24H9",
+    "productId": 6053,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|4000": {
+    "asin": "B0DLWP2KN9",
+    "productId": 6054,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|2000": {
+    "asin": "B0DCJLJJQ7",
+    "productId": 6055,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "GSKILL|DDR5|32GB-7600": {
+    "asin": "B0DD2LKVMD",
+    "productId": 7012,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "KINGSTON|DDR5|32GB-7200": {
+    "asin": "B0BMQTXZ3Q",
+    "productId": 7016,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "KINGSTON|DDR4|32GB-3200": {
+    "asin": "B0GVGMHZ2C",
+    "productId": 7035,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "CRUCIAL|2TB|NVME": {
+    "asin": "B0C3K2WRPV",
+    "productId": 7037,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "CRUCIAL|1TB|NVME": {
+    "asin": "B0F9XN4DCC",
+    "productId": 7038,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "SAMSUNG|1TB|NVME": {
+    "asin": "B0DHLFWBQ1",
+    "productId": 7040,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "CORSAIR|2TB|NVME": {
+    "asin": "B0FV33S11L",
+    "productId": 7041,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "SAMSUNG|1TB|SATA": {
+    "asin": "B0DF2DC3R4",
+    "productId": 7057,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "CRUCIAL|1TB|SATA": {
+    "asin": "B0DF2DC3R4",
+    "productId": 7060,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WD|2TB|HDD": {
+    "asin": "B0FWCNQW1H",
+    "productId": 7068,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WD|4TB|HDD": {
+    "asin": "B0FY2MVB6D",
+    "productId": 7069,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WD|8TB|HDD": {
+    "asin": "B0CMQ6SK7W",
+    "productId": 7071,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "ASUS|MOBO|X870E": {
+    "asin": "B0F47J56S4",
+    "productId": 15045,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "MSI|MOBO|X870E": {
+    "asin": "B0F1FSQ119",
+    "productId": 15039,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "MSI|MOBO|B650": {
+    "asin": "B0BHCCNSRH",
+    "productId": 7083,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "ASUS|MOBO|B650E": {
+    "asin": "B0FKZSMMQK",
+    "productId": 15375,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "ASUS|MOBO|B650": {
+    "asin": "B0BHN7GGBQ",
+    "productId": 7085,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "ASROCK|MOBO|B650M": {
+    "asin": "B0BY6YRT41",
+    "productId": 7087,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "ASUS|MOBO|B550": {
+    "asin": "B09GP7P1XS",
+    "productId": 7089,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "MSI|MOBO|B550": {
+    "asin": "B09ZJ73LDY",
+    "productId": 7090,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "GIGABYTE|MOBO|B550": {
+    "asin": "B08KGVH7YC",
+    "productId": 7091,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "ASUS|MOBO|Z890": {
+    "asin": "B0F5DHXNSB",
+    "productId": 15246,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "MSI|MOBO|Z890": {
+    "asin": "B0DH6SF5LB",
+    "productId": 7096,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "MSI|MOBO|Z790": {
+    "asin": "B0BL8K1YH1",
+    "productId": 7100,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "GIGABYTE|MOBO|Z790": {
+    "asin": "B0BH9DXY38",
+    "productId": 7101,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "ASUS|MOBO|B760M": {
+    "asin": "B0BR8TRLRB",
+    "productId": 7102,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "MSI|MOBO|B760M": {
+    "asin": "B0BPB484K5",
+    "productId": 7103,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "ASROCK|MOBO|B760M": {
+    "asin": "B0C2C96LDL",
+    "productId": 7105,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "CORSAIR|CASE|ICUE": {
+    "asin": "B09K1YNJTR",
+    "productId": 7135,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "FRACTALDESIGN|CASE|NORTH": {
+    "asin": "B09V8HNWW9",
+    "productId": 7138,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "CORSAIR|CASE|4000D": {
+    "asin": "B0DFHNV7TK",
+    "productId": 7140,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "FRACTALDESIGN|CASE|MESHIFY": {
+    "asin": "B0822Y6H34",
+    "productId": 7141,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "COOLERMASTER|CASE|HAF": {
+    "asin": "B09TL7Z2DZ",
+    "productId": 7146,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NZXT|CASE|H5": {
+    "asin": "B0D2MK6NML",
+    "productId": 7148,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "LIANLI|CASE|A4-H2O": {
+    "asin": "B09T73JG49",
+    "productId": 7150,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "COOLERMASTER|CASE|NR200P": {
+    "asin": "B09CF4YGJ8",
+    "productId": 7152,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "FRACTALDESIGN|CASE|TERRA": {
+    "asin": "B09DKPXSFJ",
+    "productId": 7153,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "FRACTALDESIGN|CASE|DEFINE": {
+    "asin": "B08146GB6Y",
+    "productId": 7154,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|RTX|4070 TI SUPER": {
+    "asin": "B0CSK87B4R",
+    "productId": 14875,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|7800 XT": {
+    "asin": "B0CGHQ32S2",
+    "productId": 14860,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "GIGABYTE|MOBO|B650M": {
+    "asin": "B0CH92B3S2",
+    "productId": 8046,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "MSI|MOBO|B850": {
+    "asin": "B0DT58JK2W",
+    "productId": 8047,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "ASUS|MOBO|B850": {
+    "asin": "B0FKZWNSXW",
+    "productId": 15046,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "GIGABYTE|MOBO|B850": {
+    "asin": "B0GP5Y8BXH",
+    "productId": 8049,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "ASROCK|MOBO|B850M": {
+    "asin": "B0DRTWM32Q",
+    "productId": 8050,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "GIGABYTE|MOBO|Z890": {
+    "asin": "B0DJP8NFWP",
+    "productId": 8052,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "ASROCK|MOBO|Z890": {
+    "asin": "B0DJRP9CWD",
+    "productId": 8053,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "GIGABYTE|MOBO|B660M": {
+    "asin": "B083R7SWF5",
+    "productId": 8056,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "ASROCK|MOBO|B550": {
+    "asin": "B089VTZ83Q",
+    "productId": 8059,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "PHANTEKS|CASE|ECLIPSE": {
+    "asin": "B0BMPD1CVP",
+    "productId": 8066,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "COOLERMASTER|CASE|MASTERBOX": {
+    "asin": "B0BP4B8QX3",
+    "productId": 8067,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "LIANLI|CASE|LANCOOL": {
+    "asin": "B0BN3SY5XW",
+    "productId": 8068,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NZXT|CASE|H9": {
+    "asin": "B0DQPQ5KN7",
+    "productId": 8069,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "CORSAIR|CASE|2500X": {
+    "asin": "B0CTR45PV8",
+    "productId": 8070,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "FRACTALDESIGN|CASE|POP": {
+    "asin": "B08C2XKPNK",
+    "productId": 8072,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "MONTECH|CASE|X3": {
+    "asin": "B0F9WB5Y9R",
+    "productId": 8073,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "LIANLI|CASE|O11": {
+    "asin": "B0GHST7YY9",
+    "productId": 14274,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 7|7700": {
+    "asin": "B0C3T39N6P",
+    "productId": 14555,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|Ryzen 5|7600X3D": {
+    "asin": "B0FN3SVDFW",
+    "productId": 14581,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|5500 XT": {
+    "asin": "B0BS1G3B7P",
+    "productId": 14866,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "AMD|RX|6700 XT": {
+    "asin": "B08Z5M4KFM",
+    "productId": 14894,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "NVIDIA|GTX|1660 SUPER": {
+    "asin": "B0CJFFZTJC",
+    "productId": 14917,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "GIGABYTE|MOBO|B650": {
+    "asin": "B0D2NY1XMP",
+    "productId": 15037,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "GIGABYTE|MOBO|X870E": {
+    "asin": "B0FFSZ71T6",
+    "productId": 15041,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "GIGABYTE|MOBO|B760M": {
+    "asin": "B0FJCSW7L3",
+    "productId": 15044,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "ASROCK|MOBO|Z790M": {
+    "asin": "B0BJF1H163",
+    "productId": 15242,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "ASROCK|MOBO|B550M": {
+    "asin": "B0DQTFCZ53",
+    "productId": 15310,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "SILICONPOWER|DDR4|32GB-3600": {
+    "asin": "B09VZQMW1B",
+    "productId": 15642,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "PATRIOT|DDR4|32GB-3600": {
+    "asin": "B0B4HS1WV2",
+    "productId": 15648,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WESTERNDIGITAL|10TB|HDD": {
+    "asin": "B0F4R3YCL6",
+    "productId": 15702,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "SILICONPOWER|256GB|NVME": {
+    "asin": "B07ZGK3K4V",
+    "productId": 15722,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "SILICONPOWER|1TB|NVME": {
+    "asin": "B07ZGJVTZK",
+    "productId": 15724,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WESTERNDIGITAL|8TB|HDD": {
+    "asin": "B0D1V1SNDX",
+    "productId": 15733,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "SILICONPOWER|1TB|SSD": {
+    "asin": "B0G42FGS7V",
+    "productId": 15745,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "SILICONPOWER|512GB|NVME": {
+    "asin": "B07ZGJYLNL",
+    "productId": 15749,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "SILICONPOWER|2TB|NVME": {
+    "asin": "B0CF1H9SYQ",
+    "productId": 15975,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WESTERNDIGITAL|12TB|HDD": {
+    "asin": "B0F7MJV2X8",
+    "productId": 15775,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WESTERNDIGITAL|6TB|HDD": {
+    "asin": "B071V6SVK2",
+    "productId": 15799,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "SILICONPOWER|2TB|SSD": {
+    "asin": "B0G42YVQRJ",
+    "productId": 15816,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "SILICONPOWER|4TB|NVME": {
+    "asin": "B0CJ2N9485",
+    "productId": 15849,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WESTERNDIGITAL|1TB|NVME": {
+    "asin": "B0B4SQB1HY",
+    "productId": 15834,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WESTERNDIGITAL|1TB|SSD": {
+    "asin": "B09ZRD38D8",
+    "productId": 15842,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WD|8GB|M.2": {
+    "asin": "B07YFFX5MD",
+    "productId": 15886,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WD|16GB|M.2": {
+    "asin": "B0C8WPRM9T",
+    "productId": 15903,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "SILICONPOWER|500GB|NVME": {
+    "asin": "B0B218CQVD",
+    "productId": 15915,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WESTERNDIGITAL|10TB|SATA": {
+    "asin": "B0719498XY",
+    "productId": 15976,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WD|500GB|NVME": {
+    "asin": "B0FJ8VGNK8",
+    "productId": 15979,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WD|2TB|NVME": {
+    "asin": "B09C4BKTRV",
+    "productId": 16063,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WD|1TB|NVME": {
+    "asin": "B0FJ8QFWBQ",
+    "productId": 15981,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WD|6TB|SATA": {
+    "asin": "B0CKSS5VCF",
+    "productId": 16027,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "WD|8TB|SATA": {
+    "asin": "B0CP7CFNK4",
+    "productId": 16020,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  },
+  "SAMSUNG|2TB|M.2": {
+    "asin": "B0BXX1JJH8",
+    "productId": 16046,
+    "source": "verified",
+    "verifiedAt": "2026-04-22"
+  }
+}

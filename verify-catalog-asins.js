@@ -19,8 +19,9 @@
  *   - Always writes a report BEFORE changes
  */
 
-import { writeFileSync, existsSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
+import { canonicalizeProductName, extractModelToken } from './normalize-product-name.js';
 
 const LOGIN = process.env.DATAFORSEO_LOGIN;
 const PASSWORD = process.env.DATAFORSEO_PASSWORD;
@@ -49,6 +50,35 @@ const MAX_POLL_WAIT_MS = 1800000;
 const GET_CONCURRENCY = 8;
 const PRICE_DRIFT_THRESHOLD = 0.05;
 const ASIN_FIX_MIN_SCORE = 0.8;
+
+// ═══ STRATEGY 2: Known-good ASIN overrides table ═══
+let ASIN_OVERRIDES = {};
+const OVERRIDES_PATH = './src/data/asin-overrides.json';
+if (existsSync(OVERRIDES_PATH)) {
+  try {
+    ASIN_OVERRIDES = JSON.parse(readFileSync(OVERRIDES_PATH, 'utf8'));
+    console.log(`Loaded ${Object.keys(ASIN_OVERRIDES).length} known-good ASIN overrides`);
+  } catch (e) {
+    console.warn('Failed to load asin-overrides.json:', e.message);
+  }
+}
+
+function lookupKnownGoodASIN(product) {
+  const key = canonicalizeProductName(product.n, product.c);
+  if (!key) return null;
+  const entry = ASIN_OVERRIDES[key];
+  return entry ? { asin: entry.asin, source: 'known-good-table', score: 1.0 } : null;
+}
+
+// Strict model-token matching — "5900X" must NOT match "5900XT"
+function hasExactModelToken(storedName, candidateTitle, category) {
+  const storedModel = extractModelToken(storedName, category);
+  if (!storedModel) return false;
+  // Tokenize candidate title (split on whitespace/punctuation)
+  const tokens = candidateTitle.toUpperCase().split(/[\s,\-\/\(\)\[\]™®]+/).filter(Boolean);
+  return tokens.includes(storedModel.toUpperCase());
+}
+
 
 const args = process.argv.slice(2);
 const getFlag = (name, hasValue = false) => {
@@ -290,6 +320,11 @@ function applyFixes(parts, perProductFixes) {
       if (fix.newAsinPrice != null) p.deals.amazon.price = fix.newAsinPrice;
       productChanged = true;
     }
+    if (fix.needsReview) {
+      p.needsReview = true;
+      p.quarantinedAt = fix.quarantinedAt;
+      productChanged = true;
+    }
     if (productChanged) changed++;
   }
   return changed;
@@ -368,18 +403,50 @@ function writeReports(allIssues, asinRepairs, meta) {
   const asinRepairs = [];
   if (flags.fixAsins) {
     const mismatches = allIssues.filter(e => e.issues.some(i => i.type === 'title_mismatch'));
-    console.log(`\nASIN repair: searching for ${mismatches.length} mismatched products...`);
+    console.log(`\nStrategy 2 ASIN repair: ${mismatches.length} candidates...`);
+    let viaTable = 0, viaSearch = 0, viaQuarantine = 0;
     for (let i = 0; i < mismatches.length; i++) {
       const entry = mismatches[i];
       const product = byProduct.get(entry.productId);
-      process.stdout.write(`  ${i + 1}/${mismatches.length}: "${product.n.slice(0, 50)}"\r`);
-      const best = await findBestASIN(product);
+
+      // Step 1: try known-good table first
+      let best = lookupKnownGoodASIN(product);
+      if (best && best.asin !== entry.asin) {
+        viaTable++;
+        console.log(`  ${i+1}/${mismatches.length}: "${product.n.slice(0, 50)}" -> table hit ${best.asin}`);
+      } else {
+        best = null;
+      }
+
+      // Step 2: search Amazon + strict verify
       if (!best) {
+        const searchResult = await findBestASIN(product);
+        if (searchResult) {
+          const strictMatch = hasExactModelToken(product.n, searchResult.title || '', product.c);
+          if (strictMatch && searchResult.score >= 0.5) {
+            best = searchResult;
+            viaSearch++;
+            console.log(`  ${i+1}/${mismatches.length}: "${product.n.slice(0, 50)}" -> search hit ${best.asin} (score ${best.score})`);
+          } else {
+            console.log(`  ${i+1}/${mismatches.length}: "${product.n.slice(0, 50)}" -> quarantine (score ${searchResult.score}, strict=${strictMatch})`);
+          }
+        }
+      }
+
+      // Step 3: quarantine if no confident match
+      if (!best) {
+        viaQuarantine++;
         asinRepairs.push({ productId: entry.productId, category: entry.category, name: product.n,
-          oldAsin: entry.asin, newAsin: null, score: 0, applied: false });
+          oldAsin: entry.asin, newAsin: null, score: 0, applied: false, quarantined: true });
+        if (flags.autoFix) {
+          if (!perProductFixes[entry.productId]) perProductFixes[entry.productId] = {};
+          perProductFixes[entry.productId].needsReview = true;
+          perProductFixes[entry.productId].quarantinedAt = new Date().toISOString().slice(0, 10);
+        }
         continue;
       }
-      const apply = flags.autoFix && best.score >= ASIN_FIX_MIN_SCORE && best.asin !== entry.asin;
+
+      const apply = flags.autoFix && best.asin !== entry.asin;
       asinRepairs.push({ productId: entry.productId, category: entry.category, name: product.n,
         oldAsin: entry.asin, newAsin: best.asin, score: best.score, title: best.title, applied: apply });
       if (apply) {
@@ -388,7 +455,9 @@ function writeReports(allIssues, asinRepairs, meta) {
         if (best.price) perProductFixes[entry.productId].newAsinPrice = best.price;
       }
     }
-    console.log();
+    if (mismatches.length) {
+      console.log(`\nStrategy 2 summary: ${viaTable} via known-good table, ${viaSearch} via search, ${viaQuarantine} quarantined`);
+    }
   }
 
   const meta = {
