@@ -1,0 +1,210 @@
+{
+  "category": "cpu",
+  "stats": {
+    "posted": 70,
+    "completed": 70,
+    "matched": 33,
+    "skipped": 0,
+    "failed": 0
+  },
+  "results": [
+    {
+      "id": 10181,
+      "c": "CPU",
+      "n": "Core™ Ultra 5 Desktop Processor 225 10 cores (6 P-cores + 4 E-cores) up to 4.9 GHz",
+      "used": false
+    },
+    {
+      "id": 10182,
+      "c": "CPU",
+      "n": "Core™ Ultra 5 Desktop Processor 225F 10 cores (6 P-cores + 4 E-cores) up to 4.9 GHz",
+      "used": false
+    },
+    {
+      "id": 10183,
+      "c": "CPU",
+      "n": "Core i9-13900 Desktop Processor 24 cores (8 P-cores + 16 E-cores) 36MB Cache, up to 5.6 GHz",
+      "used": false
+    },
+    {
+      "id": 10184,
+      "c": "CPU",
+      "n": "Core i9 (12th Gen) i9-12900KS Gaming Desktop Processor with Integrated Graphics and Hexadeca-core (16 Core) 2.50 GHz",
+      "used": false
+    },
+    {
+      "id": 10185,
+      "c": "CPU",
+      "n": "Core i9 (12th Gen) i9-12900 Hexadeca-core (16 Core) 2.40 GHz Processor - Retail Pack",
+      "used": false
+    },
+    {
+      "id": 10186,
+      "c": "CPU",
+      "n": "ProDesk 400 G9 Business Desktop Computer, SFF Small Form Factor, 12th Gen Intel 12-Core i7-12700 Processor, 32GB DDR4 RAM, 1TB PCIe NVMe M.2 SSD, HDMI, DisplayPort, Windows 11, Black",
+      "used": false
+    },
+    {
+      "id": 10187,
+      "c": "CPU",
+      "n": "Core™ i5-12600 Desktop Processor 18MB Cache up to 4.80GHz",
+      "used": false
+    },
+    {
+      "id": 10188,
+      "c": "CPU",
+      "n": "Core i9-11900K Desktop Processor 8 Cores up to 5.3 GHz Unlocked LGA1200 (Intel 500 Series & Select 400 Series Chipset) 125W",
+      "used": false
+    },
+    {
+      "id": 10189,
+      "c": "CPU",
+      "n": "Core™ i9-11900KF Desktop Processor 8 Cores up to 5.3 GHz Unlocked LGA1200 (Intel® 500 Series & Select 400 Series Chipset) 125W",
+      "used": false
+    },
+    {
+      "id": 10190,
+      "c": "CPU",
+      "n": "Core™ i7-11700K Desktop Processor 8 Cores up to 5.0 GHz Unlocked LGA1200 (Intel 500 Series & Select 400 Series Chipset) 125W",
+      "used": false
+    },
+    {
+      "id": 10191,
+      "c": "CPU",
+      "n": "Core™ i7-11700KF Desktop Processor 8 Cores up to 5.0 GHz Unlocked LGA1200 (Intel® 500 Series & Select 400 Series Chipset) 125W",
+      "used": false
+    },
+    {
+      "id": 10192,
+      "c": "CPU",
+      "n": "Core™ i5-11600K Desktop Processor 6 Cores up to 4.9 GHz Unlocked LGA1200 (Intel® 500 Series & Select 400 Series Chipset) 125W",
+      "used": false
+    },
+    {
+      "id": 10193,
+      "c": "CPU",
+      "n": "Core™ i5-11500 Desktop Processor 6 Cores up to 4.6 GHz LGA1200 (Intel® 500 Series & Select 400 Series chipset) 65W",
+      "used": false
+    },
+    {
+      "id": 10194,
+      "c": "CPU",
+      "n": "Core™ i5-11400 Desktop Processor 6 Cores up to 4.4 GHz LGA1200 (Intel® 500 Series & Select 400 Series chipset) 65W",
+      "used": false
+    },
+    {
+      "id": 10195,
+      "c": "CPU",
+      "n": "Core i9-10900KF Desktop Processor 10 Cores up to 5.3 GHz Unlocked Without Processor Graphics LGA1200 (Intel 400 Series chipset) 125W",
+      "used": false
+    },
+    {
+      "id": 10196,
+      "c": "CPU",
+      "n": "Core i9-10900 Desktop Processor 10 Cores up to 5.2 GHz LGA 1200 (Intel 400 Series Chipset) 65W",
+      "used": false
+    },
+    {
+      "id": 10197,
+      "c": "CPU",
+      "n": "Core i7-10700K Desktop Processor 8 Cores up to 5.1 GHz Unlocked LGA1200 (Intel 400 Series Chipset) 125W (BX8070110700K)",
+      "used": false
+    },
+    {
+      "id": 10198,
+      "c": "CPU",
+      "n": "Core i7-10700KF Desktop Processor 8 Cores up to 5.1 GHz Unlocked Without Processor Graphics LGA1200 (Intel 400 Series chipset) 125W",
+      "used": false
+    },
+    {
+      "id": 10199,
+      "c": "CPU",
+      "n": "Intel Core i7-10700 Desktop Processor 8 Cores up to 4.8 GHz LGA 1200 (Intel 400 Series Chipset) 65W, BX8070110700 (Renewed)",
+      "used": true
+    },
+    {
+      "id": 10200,
+      "c": "CPU",
+      "n": "Core™ i7-10700F Desktop Processor 8 Cores up to 4.8 GHz Without Processor Graphics LGA1200 (Intel® 400 Series chipset) 65W",
+      "used": false
+    },
+    {
+      "id": 10201,
+      "c": "CPU",
+      "n": "Core i5-10600K Desktop Processor 6 Cores up to 4.8 GHz Unlocked LGA1200 (Intel 400 Series Chipset) 125W",
+      "used": false
+    },
+    {
+      "id": 10202,
+      "c": "CPU",
+      "n": "Core™ i5-10600KF Desktop Processor 6 Cores up to 4.8 GHz Unlocked Without Processor Graphics LGA 1200 (Intel® 400 Series chipset) 125W",
+      "used": false
+    },
+    {
+      "id": 10203,
+      "c": "CPU",
+      "n": "Intel Core i5-10500 Desktop Processor 6 Cores up to 4.5 GHz LGA1200 (Intel 400 Series chipset) 65W, Model Number: BX8070110500 (Renewed)",
+      "used": true
+    },
+    {
+      "id": 10204,
+      "c": "CPU",
+      "n": "Core i5-10400 Desktop Processor 6 Cores up to 4.3 GHz LGA1200 (Intel 400 Series Chipset) 65W, Model Number: BX8070110400",
+      "used": false
+    },
+    {
+      "id": 10205,
+      "c": "CPU",
+      "n": "Core i5-10400F Desktop Processor 6 Cores up to 4.3 GHz Without Processor Graphics LGA1200 (Intel 400 Series chipset) 65W, Model Number: BX8070110400F",
+      "used": false
+    },
+    {
+      "id": 10206,
+      "c": "CPU",
+      "n": "Core i3-10100 Desktop Processor 4 Cores up to 4.3 GHz LGA1200 (Intel 400 Series Chipset) 65W, Model Number: BX8070110100",
+      "used": false
+    },
+    {
+      "id": 10207,
+      "c": "CPU",
+      "n": "BX8070110105 CPU Core i3-10105 3.7 GHz Quad Core LGA1200 Processor",
+      "used": false
+    },
+    {
+      "id": 10208,
+      "c": "CPU",
+      "n": "Core i3-10105F 4-Core Comet Lake Processor 3.70GHz 8GT/s 6MB LGA 1200 CPU Retail",
+      "used": false
+    },
+    {
+      "id": 10209,
+      "c": "CPU",
+      "n": "Ryzen 5 4600G - 3.7 GHz - 6 Cores - 12 Threads - 8 MB Cache Memory - Socket AM4 - OEM",
+      "used": false
+    },
+    {
+      "id": 10210,
+      "c": "CPU",
+      "n": "Ryzen 3 4100 4-Core, 8-Thread Unlocked Desktop Processor with Wraith Stealth Cooler",
+      "used": false
+    },
+    {
+      "id": 10211,
+      "c": "CPU",
+      "n": "Ryzen 7 3800XT 8-core, 16-Threads Unlocked Desktop Processor",
+      "used": false
+    },
+    {
+      "id": 10212,
+      "c": "CPU",
+      "n": "2021 HP Pavilion Gaming Desktop Computer, AMD Ryzen 5 3500 Processor, 8GB RAM, 256GB PCIe NVMe SSD, GeForce GTX 1650 Super 4GB, Windows 10 Home",
+      "used": false
+    },
+    {
+      "id": 10213,
+      "c": "CPU",
+      "n": "Ryzen 5 3400G Computer CPU Processors (Radeon RX Vega 11 Integrated Graphics, 4 Core/8 Threads, 65W TDP, Socket AM4, 6MB L2+L3 Cache, Boost Frequency up to 4.2GHz, Wraith Stealth Fan)",
+      "used": false
+    }
+  ]
+}

@@ -1,0 +1,810 @@
+{
+  "category": "all",
+  "stats": {
+    "posted": 367,
+    "completed": 367,
+    "matched": 133,
+    "skipped": 0,
+    "failed": 0
+  },
+  "results": [
+    {
+      "id": 10211,
+      "c": "CPU",
+      "n": "Gaming PC Desktop Computer, Intel Core i3-10100F up to 4.3G, GeForce RTX 2060 6G, 16GB DDR4, 1TB SSD, WiFi, BT 5.0, RGB Fan x6, Windows 11 Home",
+      "used": false
+    },
+    {
+      "id": 30328,
+      "c": "GPU",
+      "n": "ASUS TUF Gaming NVIDIA GeForce RTX 4080 Super OC Edition Gaming Graphics Card (PCIe 4.0, 16GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30329,
+      "c": "GPU",
+      "n": "MSI Gaming GeForce RTX 4060 8GB GDRR6 128-Bit HDMI/DP Nvlink TORX Fan 4.0 Ada Lovelace Architecture Graphics Card (RTX 4060 Ventus 2X Black 8G OC) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30330,
+      "c": "GPU",
+      "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3090 Ti OC Edition Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30331,
+      "c": "GPU",
+      "n": "ASUS ROG Strix GeForce RTX 3090 OC Edition 24GB GDDR6X Gaming Graphics Card with Axial-tech Fans & Central Static Pressure Fan ROG-STRIX-RTX3090-O24G-GAMING (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30332,
+      "c": "GPU",
+      "n": "MSI Gaming GeForce RTX 3090 24GB GDRR6X 384-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC Graphics Card (RTX 3090 VENTUS 3X 24G OC) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30333,
+      "c": "GPU",
+      "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3080 Ti OC Edition Graphics Card (PCIe 4.0, 12GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30334,
+      "c": "GPU",
+      "n": "MSI Gaming GeForce RTX 3080 Ti Gaming X Trio 12G Computer Gaming Graphics Card 12GB GDRR6X 320-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC, NVIDIA GPU Video Cards for Gaming PC (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30335,
+      "c": "GPU",
+      "n": "GIGABYTE GeForce RTX 3080 Ti Gaming OC 12G Graphics Card, 3X WINDFORCE Fans, 12GB 384-Bit GDDR6X, GV-N308TGAMING OC-12GD Video Card (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30336,
+      "c": "GPU",
+      "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3080 Graphics Card (PCIe 4.0, 10GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30337,
+      "c": "GPU",
+      "n": "MSI Gaming GeForce RTX 3080 LHR 10GB GDRR6X 320-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC Graphics Card (RTX 3080 Ventus 3X 10G OC LHR) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30338,
+      "c": "GPU",
+      "n": "GIGABYTE GeForce RTX 3080 Gaming OC 10G (REV2.0) Graphics Card, 3X WINDFORCE Fans, LHR, 10GB 320-bit GDDR6X, GV-N3080GAMING OC-10GD REV2.0 Video Card (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30339,
+      "c": "GPU",
+      "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3070 Ti OC Edition Graphics Card (PCIe 4.0, 8GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30340,
+      "c": "GPU",
+      "n": "MSI Gaming GeForce RTX 3070 Ti Gaming X Trio 8G 8GB GDDR6X Graphics Card - NVIDIA Video Card GPU for Gaming PC, 256-Bit HDMI/DP Nvlink, Ampere Architecture Computer Graphics Cards (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30341,
+      "c": "GPU",
+      "n": "GIGABYTE GeForce RTX 3070 Ti Gaming OC 8G Graphics Card, WINDFORCE 3X Cooling System, 8GB 256-bit GDDR6X, GV-N307TGAMING OC-8GD Video Card (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30342,
+      "c": "GPU",
+      "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3070 OC Edition Graphics Card- PCIe 4.0, 8GB GDDR6, HDMI 2.1 , DisplayPort 1.4a, Dual Ball Fan Bearings (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30343,
+      "c": "GPU",
+      "n": "MSI Gaming GeForce RTX 3070 8GB GDRR6 256-Bit HDMI/DP TORX Fan 3.0 Ampere Architecture OC Graphics Card (RTX 3070 Ventus 3X OC) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30344,
+      "c": "GPU",
+      "n": "Gigabyte GeForce RTX 3070 Gaming OC 8G Graphics Card, 3X WINDFORCE Fans, 8GB 256-Bit GDDR6, GV-N3070GAMING OC-8GD Video Card (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30345,
+      "c": "GPU",
+      "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3060 Ti V2 OC Edition Graphics Card (PCIe 4.0, 8GB GDDR6, LHR, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade , GPU Tweak II) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30346,
+      "c": "GPU",
+      "n": "MSI Gaming GeForce RTX 3060 Ti LHR 8GB GDRR6 256-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC Graphics Card (RTX 3060 Ti Ventus 2X 8G OCV1 LHR) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30347,
+      "c": "GPU",
+      "n": "GIGABYTE AORUS GeForce RTX 3060 Ti Elite 8G (REV2.0) Graphics Card, 3X WINDFORCE Fans, LHR, 8GB 256-bit GDDR6, GV-N306TAORUS E-8GD REV2.0 Video Card (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30348,
+      "c": "GPU",
+      "n": "ASUS Phoenix NVIDIA GeForce RTX 3060 V2 Gaming Graphics Card- PCIe 4.0, 12GB GDDR6, HDMI, DisplayPort 1.4a, Axial-tech Fan Design, Protective Backplate, Dual ball fan bearings, Auto-Extreme (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30349,
+      "c": "GPU",
+      "n": "MSI Gaming GeForce RTX 2080 Ti GDRR6 352-bit HDMI/DP/USB Ray Tracing Turing Architecture Graphics Card (RTX 2080 TI Gaming X Trio) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30350,
+      "c": "GPU",
+      "n": "Gigabyte GeForce RTX 2080 Ti Turbo GV-N208TTURBO-11GC Graphics Card - 1.55 GHz Core - 11 GB GDDR6-352 Bit Bus Width - Fan Cooler - DirectX 12, Opengl 4.5-3 X DisplayPort - 1 x HDMI (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30351,
+      "c": "GPU",
+      "n": "ASUS ROG Strix GeForce RTX 2080 Super Advanced Overclocked 8G GDDR6 HDMI DP 1.4 USB Type-C Gaming Graphics Card (ROG-STRIX-RTX-2080S-A8G) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30352,
+      "c": "GPU",
+      "n": "MSI Gaming GeForce RTX 2080 Super 8GB GDRR6 256-Bit HDMI/DP Nvlink Torx Fan Turing Architecture Overclocked Graphics Card (RTX 2080 Super Ventus XS OC) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30353,
+      "c": "GPU",
+      "n": "MSI Gaming GeForce RTX 2080 8GB GDRR6 256-bit HDMI/DP/USB Ray Tracing Turing Architecture Graphics Card (RTX 2080 Ventus 8G) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30354,
+      "c": "GPU",
+      "n": "ASUS GeForce RTX 2070 Super Overclocked 8G EVO GDDR6 Dual-Fan Edition VR Ready HDMI DisplayPort Gaming Graphics Card (DUAL-RTX-2070S-O8G-EVO) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30355,
+      "c": "GPU",
+      "n": "MSI Gaming GeForce RTX 2070 Super 8GB GDRR6 256-bit HDMI/DP NVLink Torx Fan Turing Architecture Overclocked Graphics Card (RTX 2070 Super Ventus OC) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30356,
+      "c": "GPU",
+      "n": "Gigabyte GV-N207SWF3OC-8GD GeForce RTX 2070 Super Windforce OC 8G Graphics Card, 3X Windforce Fans, 8GB 256-Bit GDDR6, Video Card (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30357,
+      "c": "GPU",
+      "n": "ASUS Dual NVIDIA GeForce RTX 2070 EVO V2 OC Edition Gaming Graphics Card (DUAL-RTX2070 (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30358,
+      "c": "GPU",
+      "n": "MSI Gaming GeForce RTX 2070 8GB GDRR6 256-bit HDMI/DP/USB Ray Tracing Turing Architecture HDCP Graphics Card (RTX 2070 Ventus 8G), 1620 Mhz (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30359,
+      "c": "GPU",
+      "n": "ASUS ROG Strix GeForce RTX 2060 Super Advanced Overclocked EVO 8G GDDR6 HDMI DisplayPort USB Type-C Gaming Graphics Card (ROG-STRIX-RTX2060S-A8G-EVO-GAMING) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30360,
+      "c": "GPU",
+      "n": "MSI Gaming GeForce RTX 2060 Super 8GB GDRR6 256-Bit HDMI/DP G-Sync Turing Architecture Overclocked Graphics Card (RTX 2060 Super Ventus GP OC) (RTX 2060 Super Ventus GP OC) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30361,
+      "c": "GPU",
+      "n": "GIGABYTE GeForce RTX 2060 SUPER GAMING OC 8G Graphics Card, 3X Windforce Fans,8GB 256-bit GDDR6, GV-N206SGAMING OC-8GC Video Card (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30362,
+      "c": "GPU",
+      "n": "ASUS GeForce RTX 2060 Overclocked 6G GDDR6 Dual-Fan EVO Edition VR Ready HDMI DisplayPort DVI Graphics Card (DUAL-RTX2060-O6G-EVO) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30363,
+      "c": "GPU",
+      "n": "MSI Gaming GeForce RTX 2060 6GB GDRR6 192-bit HDMI/DP Ray Tracing Turing Architecture VR Ready Graphics Card (RTX 2060 Ventus 6G OC) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30364,
+      "c": "GPU",
+      "n": "GIGABYTE MSI Gaming Radeon RX 6900 XT Gaming Z Trio 16G 16GB GDDR6 256-Bit HDMI/DP Nvlink Torx Fan 4 AMD Graphics Card (RX 6900 XT Gaming Z Trio 16G)",
+      "used": false
+    },
+    {
+      "id": 30365,
+      "c": "GPU",
+      "n": "GIGABYTE MSI Gaming Radeon RX 6900 XT Gaming Z Trio 16G 16GB GDDR6 256-Bit HDMI/DP Nvlink Torx Fan 4 AMD Graphics Card (RX 6900 XT Gaming Z Trio 16G)",
+      "used": false
+    },
+    {
+      "id": 30366,
+      "c": "GPU",
+      "n": "GIGABYTE AMD Radeon RX 6800 XT Gaming OC 16G Graphics Card, 16GB of GDDR6 Memory, Powered by AMD RDNA 2, HDMI 2.1, WINDFORCE 3X Cooling System, GV-R68XTGAMING OC-16GD (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30367,
+      "c": "GPU",
+      "n": "MSI Gaming Radeon RX 6700 XT 192-bit 12GB GDDR6 DP/HDMI Dual Torx 3.0 Fans FreeSync DirectX 12 VR Ready OC Graphics Card (RX 6700 XT MECH 2X 12G OC) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30368,
+      "c": "GPU",
+      "n": "ASUS Dual AMD Radeon RX 6600 XT OC Edition 8GB GDDR6 Gaming Graphics Card (AMD RDNA 2, PCIe 4.0, 8GB GDDR6 Memory, HDMI 2.1, DisplayPort 1.4a, Axial-tech Fan Design, 0dB Technology) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30369,
+      "c": "GPU",
+      "n": "MSI Gaming AMD Radeon RX 6600 XT 8GB GDDR6 128-bit HDMI/DP 2602 MHz Boost Clock FreeSync DirectX 12 VR Ready OC Graphics Card (RX 6600 XT MECH 2X 8G OCV1) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30370,
+      "c": "GPU",
+      "n": "Gigabyte Radeon RX 6600 XT Eagle 8G Graphics Card, WINDFORCE 3X Cooling System, 8GB 128-bit GDDR6, GV-R66XTEAGLE-8GD Video Card (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30371,
+      "c": "GPU",
+      "n": "GIGABYTE Radeon RX 6600 Eagle 8G Graphics Card, WINDFORCE 3X Cooling System, 8GB 128-bit GDDR6, GV-R66EAGLE-8GD Video Card (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30372,
+      "c": "GPU",
+      "n": "MSI Gaming AMD Radeon RX 6500 XT 64-bit 4GB GDDR6 DP/HDMI PCIe 4 Torx Twin Fans FreeSync DirectX 12 VR Ready OC Graphics Card (RX 6500 XT MECH 2X 4G OC) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30373,
+      "c": "GPU",
+      "n": "GIGABYTE Radeon RX 6500 XT Gaming OC 4G Graphics Card, WINDFORCE 3X Cooling System, 4GB 64-bit GDDR6, GV-R65XTGAMING OC-4GD Video Card (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30374,
+      "c": "GPU",
+      "n": "ASUS DUAL AMD Radeon RX 5700 XT EVO OC Edition Gaming Graphics Card (PCIe 4.0, 8GB GDDR6 memory, HDMI, DisplayPort, 1440p, Axial-tech Fan Design, metal backplate) (DUAL-RX5700XT-O (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30375,
+      "c": "GPU",
+      "n": "MSI Gaming Radeon Rx 5700 Xt Boost Clock: 1925 MHz 256-bit 8GB GDDR6 DP/HDMI Dual Fans Crossfire Freesync Navi Architecture Graphics Card (RX 5700 Xt Mech OC) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30376,
+      "c": "GPU",
+      "n": "Gigabyte Gv-R57XTGAMING OC-8GD Radeon Rx 5700 Xt Gaming OC 8G Graphics Card, PCIe 4.0, 8GB 256-Bit GDDR6, Video Card (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30377,
+      "c": "GPU",
+      "n": "MSI Gaming Radeon RX 5700 Boost Clock: 1750 MHz 256-bit 8GB GDDR6 DP/HDMI Dual Torx 3.0 Fans Crossfire Navi AMD Radeon FreeSync Graphics Card (RX 5700 MECH GP OC) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30378,
+      "c": "GPU",
+      "n": "MSI Gaming Radeon RX 5500 XT Boost Clock: 1845 MHz 128-bit 4GB GDDR6 DP/HDMI Dual Torx 3.0 Fans Freesync VR Ready Graphics Card (RX 5500 XT MECH 4G OC) (Radeon RX 5500 XT MECH 4G OC) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30379,
+      "c": "GPU",
+      "n": "MSI VGA Graphic Cards RX 580 Gaming X 8G (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30380,
+      "c": "GPU",
+      "n": "A Pair Graphics Card Cooling Fan for ASUS AREZ Expedition RX 570, Mining RX 470, GTX 1060/1070/RX 480 Dual Series (PLD09210S12HH)",
+      "used": false
+    },
+    {
+      "id": 30381,
+      "c": "GPU",
+      "n": "MSI Gaming Radeon RX 570 256-bit 8GB GDRR5 DirectX 12 VR Ready CFX Graphcis Card (RX 570 ARMOR 8G OC) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30382,
+      "c": "GPU",
+      "n": "Gigabyte Radeon RX 570 Gaming 4GB Graphic Cards GV-RX570GAMING-4GD (Renewed)",
+      "used": true
+    },
+    {
+      "id": 30383,
+      "c": "GPU",
+      "n": "Sparkle Intel Arc B580 Titan OC, 12GB GDDR6, Torn Cooling 2.0, Axial Fan, Breathing Light, Metal Backplate, SB580T-12GOC",
+      "used": false
+    },
+    {
+      "id": 30384,
+      "c": "GPU",
+      "n": "Sparkle Intel Arc B570 Guardian OC Graphics Card, 10GB GDDR6, Torn Cooling 2.0, Axial Fan, Breathing Light, Metal Backplate, SB570G-10GOC",
+      "used": false
+    },
+    {
+      "id": 30385,
+      "c": "GPU",
+      "n": "Sparkle Intel Arc A770 ROC OC Edition, 16GB GDDR6, 2X DBB 100mm Fan, 2.5-Slot, Metal Backplate, SA770R-16GOC",
+      "used": false
+    },
+    {
+      "id": 30386,
+      "c": "GPU",
+      "n": "Sparkle Intel Arc A750 Titan OC Edition, 8GB GDDR6, ThermalSync, Torn Cooling, Axial Fan, Metal Backplate, SA750T-8GOC",
+      "used": false
+    },
+    {
+      "id": 30387,
+      "c": "GPU",
+      "n": "Sparkle Intel Arc A380 ELF, 6GB GDDR6, Single Fan, SA380E-6G",
+      "used": false
+    },
+    {
+      "id": 30388,
+      "c": "GPU",
+      "n": "This Cooling Fan for ASROCK Arc A380 Challenger ITX OC Graphics Card Version 95mm FDC10U12S9-C 0.45A 4 Pin",
+      "used": false
+    },
+    {
+      "id": 30389,
+      "c": "GPU",
+      "n": "Intel Arc A380 Challenger ITX 6GB OC Graphics Card | Single Slot ITX | 2250 MHz | 6GB GDDR6 | DisplayPort 2.0 | HDMI 2.0b | 0dB Cooling | 8K Support | 500W | DirectX 12 Ultimate | PCle 4.0",
+      "used": false
+    },
+    {
+      "id": 20452,
+      "c": "Motherboard",
+      "n": "CPU Motherboard Combo - Intel Core Ultra 7 265K 20-Cores Unlocked Desktop Processor with Msi PRO Z890-P WiFi ProSeries LGA 1851 ATX Motherboard",
+      "used": false
+    },
+    {
+      "id": 20453,
+      "c": "Motherboard",
+      "n": "Prime H810M-E-CSM Intel® H810 mATX Commercial CSM Motherboard, LGA 1851, DDR5, PCIe 4.0, M.2, 1G LAN, HDMI, USB 3.2, AI PC-Ready, ASUS Control Center Express Support for SMB & IT Deployments",
+      "used": false
+    },
+    {
+      "id": 20454,
+      "c": "Motherboard",
+      "n": "Prime H810M-E-CSM Intel® H810 mATX Commercial CSM Motherboard, LGA 1851, DDR5, PCIe 4.0, M.2, 1G LAN, HDMI, USB 3.2, AI PC-Ready, ASUS Control Center Express Support for SMB & IT Deployments",
+      "used": false
+    },
+    {
+      "id": 20455,
+      "c": "Motherboard",
+      "n": "MSI MPG Z790 Edge WiFi Gaming Motherboard (Supports 12th/13th Gen Intel Processors, LGA 1700, DDR5, PCIe 5.0, M.2, 2.5Gbps LAN, USB 3.2 Gen2, Wi-Fi 6E, ATX) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20456,
+      "c": "Motherboard",
+      "n": "GIGABYTE Z790 AORUS Elite AX (LGA 1700/ Intel Z790/ ATX/ DDR5/ Quad M.2/ PCIe 5.0/ USB 3.2 Gen2X2 Type-C/Intel WiFi 6E/ 2.5GbE LAN/Q-Flash Plus/PCIe EZ-Latch/Gaming Motherboard) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20457,
+      "c": "Motherboard",
+      "n": "MSI PRO Z690-A WiFi ProSeries Motherboard (ATX, 12th Gen Intel Core, LGA 1700 Socket, DDR5, PCIe 5, 2.5G LAN, M.2 Slots, Wi-Fi 6E) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20458,
+      "c": "Motherboard",
+      "n": "Prime B760M-A-CSM Intel B760 (LGA 1700) mATX CSM Commercial Motherboard PCIe 4.0, DDR5, 2X M.2, 2.5Gb LAN, DP, 2X HDMI™, SATA 6 Gbps, USB 3.2 Type-C, Aura Sync, ASUS Control Center Express",
+      "used": false
+    },
+    {
+      "id": 20459,
+      "c": "Motherboard",
+      "n": "ASUS Prime B760M-A AX LGA 1700(Intel® 12th&13th Gen) microATX Motherboard (PCIe® 4.0, 2xM.2 Slots, DDR5,Realtek 2.5 Gb LAN,WiFi 6, DP,Rear USB 3.2 Gen 2, Front USB 3.2 Gen 1 Type-C®) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20460,
+      "c": "Motherboard",
+      "n": "CPU Motherboard Combo - 14600K 14(6P+8E) Cores up to 5.3 GHz Unlocked Desktop Processor with GIGABYTE B760M DS3H AX DDR4 lga1700 Micro ATX Motherboard",
+      "used": false
+    },
+    {
+      "id": 20461,
+      "c": "Motherboard",
+      "n": "ASRock B760M Pro RS Motherboard DDR5 7200MHz HDMI DisplayPort eDP PCIe Gen5 (Graphics) 14th 13th 12th Gen Intel Core Processors LGA1700 192GB",
+      "used": false
+    },
+    {
+      "id": 20462,
+      "c": "Motherboard",
+      "n": "ASRock B760M Pro RS Motherboard DDR5 7200MHz HDMI DisplayPort eDP PCIe Gen5 (Graphics) 14th 13th 12th Gen Intel Core Processors LGA1700 192GB",
+      "used": false
+    },
+    {
+      "id": 20463,
+      "c": "Motherboard",
+      "n": "MSI PRO B660M-A CEC WiFi DDR4 V2 Micro ATX Motherboard (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20464,
+      "c": "Motherboard",
+      "n": "MSI PRO B660M-A CEC WiFi DDR4 V2 Micro ATX Motherboard (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20465,
+      "c": "Motherboard",
+      "n": "Prime H610M-A-CSM Intel® H610 (LGA 1700) CSM Business mATX Motherboard, with PCIe 4.0, 2X M.2, DDR5, 1GbE LAN, DP, HDMI™, VGA, USB 3.2 Gen 2 Ports, ASUS Control Center Express IT Management",
+      "used": false
+    },
+    {
+      "id": 20466,
+      "c": "Motherboard",
+      "n": "motherboards Fit for MSI H610M Bomber DDR4 Motherboard Intel H610 LGA1700 64GB Support I9-14900 I7-14700K I5-14400 I5-13600 CPU Matx",
+      "used": false
+    },
+    {
+      "id": 20467,
+      "c": "Motherboard",
+      "n": "Computer Motherboards Fit for ASRock Z490 Phantom Gaming 4/AX Motherboard Support I9-10900K I7-10700 I5 10400 I3-10300 CPU LGA1200 DDR4 4400MHz M.2 NVME ATX",
+      "used": false
+    },
+    {
+      "id": 20468,
+      "c": "Motherboard",
+      "n": "motherboards Fit for ASUS TUF Gaming B460M-PLUS Motherboard Supports LGA1200 Micro ATX Gaming",
+      "used": false
+    },
+    {
+      "id": 20469,
+      "c": "Motherboard",
+      "n": "pc Motherboard Fit for ASRock H470 Steel Legend Motherboard Intel LGA 1200 Support I9-11900F I5-11400F I3-10100F I3-10105 CPU M.2 NVMe SSD ATX",
+      "used": false
+    },
+    {
+      "id": 20470,
+      "c": "Motherboard",
+      "n": "pc Motherboard Fit for ASUS EX-H410M-V3 Motherboard Intel H510 LGA1200 DDR4 32GB M.2 Micro ATX Support I9-10900K I5-10400F I3-10300 CPU",
+      "used": false
+    },
+    {
+      "id": 20471,
+      "c": "Motherboard",
+      "n": "pc Motherboard Fit for ASUS EX-H410M-V3 Motherboard Intel H510 LGA1200 DDR4 32GB M.2 Micro ATX Support I9-10900K I5-10400F I3-10300 CPU",
+      "used": false
+    },
+    {
+      "id": 20472,
+      "c": "Motherboard",
+      "n": "Motherboard Fit for MSI H510M Bomber Motherboard Intel H510 LGA1200 Micro ATX 2xDDR4 HDMI VGA 1x M.2",
+      "used": false
+    },
+    {
+      "id": 20473,
+      "c": "Motherboard",
+      "n": "pc Motherboard Fit for MSI H510M Bomber Motherboard Intel H510 LGA1200 Micro ATX 2xDDR4 HDMI VGA 1x M.2",
+      "used": false
+    },
+    {
+      "id": 20474,
+      "c": "Motherboard",
+      "n": "pc Motherboard Fit for Gigabyte H410M H V3 Motherboard Intel H510 LGA1200 DDR4 32GB M.2 Micro ATX Support I9-10900K I5-10400F I3-10300 CPU",
+      "used": false
+    },
+    {
+      "id": 20475,
+      "c": "Motherboard",
+      "n": "pc Motherboard Fit for Gigabyte H410M H V3 Motherboard Intel H510 LGA1200 DDR4 32GB M.2 Micro ATX Support I9-10900K I5-10400F I3-10300 CPU",
+      "used": false
+    },
+    {
+      "id": 20476,
+      "c": "Motherboard",
+      "n": "motherboards Fit for ASUS Pro H410M-C2 Motherboard Socket LGA1200 CPU DDR4 2933 Memory Chipset H410 MATX Mainboard",
+      "used": false
+    },
+    {
+      "id": 20477,
+      "c": "Motherboard",
+      "n": "motherboards Fit for ASUS Pro H410M-C2 Motherboard Socket LGA1200 CPU DDR4 2933 Memory Chipset H410 MATX Mainboard",
+      "used": false
+    },
+    {
+      "id": 20478,
+      "c": "Motherboard",
+      "n": "Motherboard Fit for MSI H410M Bomber Motherboard Intel H410 LGA1200 Micro ATX 2xDDR4 HDMI VGA 1x M.2",
+      "used": false
+    },
+    {
+      "id": 20479,
+      "c": "Motherboard",
+      "n": "Motherboard Fit for MSI H410M Bomber Motherboard Intel H410 LGA1200 Micro ATX 2xDDR4 HDMI VGA 1x M.2",
+      "used": false
+    },
+    {
+      "id": 20480,
+      "c": "Motherboard",
+      "n": "AMD Ryzen 9 9950X3D CPU Processor with ASUS ROG Strix X870E-E R2 Gaming WiFi ATX Motherboard (WiFi 7, 5X M.2, PCIe 5.0, USB4 Type-C)",
+      "used": false
+    },
+    {
+      "id": 20481,
+      "c": "Motherboard",
+      "n": "MSI MAG X870E Tomahawk WiFi Motherboard, ATX - Supports AMD Ryzen 9000/8000 / 7000 Processors, AM5-80A SPS VRM, DDR5 Memory Boost 8400+ MT/s (OC), PCIe 5.0 x16, M.2 Gen5, Wi-Fi 7, 5G LAN (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20482,
+      "c": "Motherboard",
+      "n": "AMD Ryzen 7 9800X3D CPU Processor with GIGABYTE X870E AORUS Elite WIFI7 AM5 Motherboard (ATX, DDR5, 4X M.2, PCIe 5.0, USB4)",
+      "used": false
+    },
+    {
+      "id": 20483,
+      "c": "Motherboard",
+      "n": "MSI MAG X870E Tomahawk WiFi Motherboard, ATX - Supports AMD Ryzen 9000/8000 / 7000 Processors, AM5-80A SPS VRM, DDR5 Memory Boost 8400+ MT/s (OC), PCIe 5.0 x16, M.2 Gen5, Wi-Fi 7, 5G LAN (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20484,
+      "c": "Motherboard",
+      "n": "ASUS ROG Strix X670E-E Gaming Socket AM5(LGA 1718) Ryzen 7000 ATX Gaming Motherboard(18+2 Power Stages,PCIe® 5.0, DDR,4xM.2 Slots,USB 3.2 Gen 2x2, WiFi 6E,PCIe Slot Q-Release, M.2 Q-Latch) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20485,
+      "c": "Motherboard",
+      "n": "MSI MAG X670E Tomahawk WiFi Gaming Motherboard (AMD AM5, DDR5, PCIe 5.0, SATA 6Gb/s, M.2, USB 3.2 Gen 2, Wi-Fi 6E, 2.5Gbps LAN, HDMI/DP, ATX) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20486,
+      "c": "Motherboard",
+      "n": "ASUS ROG Strix X670E-E Gaming Socket AM5(LGA 1718) Ryzen 7000 ATX Gaming Motherboard(18+2 Power Stages,PCIe® 5.0, DDR,4xM.2 Slots,USB 3.2 Gen 2x2, WiFi 6E,PCIe Slot Q-Release, M.2 Q-Latch) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20487,
+      "c": "Motherboard",
+      "n": "MSI MAG X670E Tomahawk WiFi Gaming Motherboard (AMD AM5, DDR5, PCIe 5.0, SATA 6Gb/s, M.2, USB 3.2 Gen 2, Wi-Fi 6E, 2.5Gbps LAN, HDMI/DP, ATX) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20488,
+      "c": "Motherboard",
+      "n": "GIGABYTE X670 Gaming X AX V2 (AM5/ LGA 1718/ AMD/ X670/ ATX/ 5-Year Warranty/ DDR5/ PCIe 4.0 M.2/ PCIe 5.0/ USB 3.2 Gen1x2 Type-C/Wi-Fi 6E/ 2.5GbE LAN/Q-Flash Plus/PCIe EZ-Latch/Motherboard) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20489,
+      "c": "Motherboard",
+      "n": "ROG Strix B850-A Gaming WiFi AMD AM5 B850 ATX Motherboard 14+2+2 Power Stages, DDR5 AEMP, 2.5G LAN, WiFi 7 with Q-Antenna, 4X M.2, PCIe® 5.0, USB 20Gbps Type-C, AI Networking II, ASUS AI Advisor",
+      "used": false
+    },
+    {
+      "id": 20490,
+      "c": "Motherboard",
+      "n": "Pro WS B850M-ACE SE AMD AM5 B850 mATX MicroATX Business motherboard, PCIe 5.0 x 16, DDR5, 2x PCIe 5.0 M.2, PCIe 5.0 MCIO, U.2, 10G & 2.5G LAN, USB4®, ASUS Control Center Express Remote Management",
+      "used": false
+    },
+    {
+      "id": 20491,
+      "c": "Motherboard",
+      "n": "AMD Ryzen 7 7700X CPU Processor with MSI B850 Gaming PRO WIFI6E Motherboard (ATX, AM5, DDR5, M.2 Gen5, Wi-Fi 6E)",
+      "used": false
+    },
+    {
+      "id": 20492,
+      "c": "Motherboard",
+      "n": "AMD Ryzen 7 9700X CPU Processor with MSI B850 Gaming Plus WiFi Motherboard (ATX, AM5, DDR5, PCIe 5.0, M.2 Gen5, Wi-Fi 7, 5G LAN)",
+      "used": false
+    },
+    {
+      "id": 20493,
+      "c": "Motherboard",
+      "n": "MB ASRock AMD AM5 B850M Pro-A",
+      "used": false
+    },
+    {
+      "id": 20494,
+      "c": "Motherboard",
+      "n": "MB ASRock AMD AM5 B850M Pro-A",
+      "used": false
+    },
+    {
+      "id": 20495,
+      "c": "Motherboard",
+      "n": "AMD Ryzen 5 7600X CPU Processor Bundle with ASUS B650E MAX Gaming WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0, 3X M.2, Wi-Fi 6E)",
+      "used": false
+    },
+    {
+      "id": 20496,
+      "c": "Motherboard",
+      "n": "AMD Ryzen 5 9600X CPU Processor Bundle with ASUS B650E MAX Gaming WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0, 3X M.2, Wi-Fi 6E)",
+      "used": false
+    },
+    {
+      "id": 20497,
+      "c": "Motherboard",
+      "n": "ASUS Prime B650M-A AX II AMD B650 AM5 Ryzen™ Desktop 9000 8000 & 7000 Micro-ATX mATX Motherboard, DDR5, PCIe 5.0 M.2, 2.5Gb LAN, Wi-Fi 6, DisplayPort, HDMI®, BIOS Flashback™ (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20498,
+      "c": "Motherboard",
+      "n": "ASUS Prime B650M-A AX II AMD B650 AM5 Ryzen™ Desktop 9000 8000 & 7000 Micro-ATX mATX Motherboard, DDR5, PCIe 5.0 M.2, 2.5Gb LAN, Wi-Fi 6, DisplayPort, HDMI®, BIOS Flashback™ (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20499,
+      "c": "Motherboard",
+      "n": "MSI MAG B650 Tomahawk WiFi Computer Gaming Motherboard (AM5, ATX, DDR5, PCIe 4.0, M.2, SATA 6Gb/s, USB 3.2 Gen 2, HDMI/DP, Wi-Fi 6E, AMD Ryzen 7000 Series Processors) AMD PC Motherboards (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20500,
+      "c": "Motherboard",
+      "n": "MSI PRO B650M-A WIFI motherboard AMD B650 Socket AM5 micro ATX (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20501,
+      "c": "Motherboard",
+      "n": "GIGABYTE B650 Gaming X AX V2 (rev. 1.0) AM5 LGA 1718 AMD B650 ATX DDR5, Triple M.2, PCIe 5.0, USB 3.2 Gen2x2 Type-C, AMD Wi-Fi 6E, Realtek 2.5GbE LAN (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20502,
+      "c": "Motherboard",
+      "n": "GIGABYTE B650M C V3 (rev. 1.0) AM5 LGA 1718 AMD B650 M-ATX Motherboard with 5-Year Warranty, DDR5, PCIe 4.0 M.2, PCIe 4.0, USB 3.2 Gen1 Type-C, 1GbE LAN, Q-Flash Plus, EZ-Latch (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20503,
+      "c": "Motherboard",
+      "n": "motherboards Fit for ASUS Prime A620M K DDR5 AMD A620 Supports Up to 9000 Series Ryzen Motherboard Series AM5 Micro-ATX",
+      "used": false
+    },
+    {
+      "id": 20504,
+      "c": "Motherboard",
+      "n": "MSI PRO A620M-E ProSeries Motherboard (AMD 9000/8000/7000 Series Processors, AM5, DDR5, PCIe 4.0, SATA 6Gb/s, M.2, USB 3.2 Gen 1, DVI/HDMI, mATX) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20505,
+      "c": "Motherboard",
+      "n": "ASUS TUF GAMING X570-PLUS Motherboard ,WI-FI, Socket AM4, USB-C Gen2 AMD (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20506,
+      "c": "Motherboard",
+      "n": "ASRock X570 Pro 4 AM4/4DDR4/HDMI/DP/ATX Motherboard (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20507,
+      "c": "Motherboard",
+      "n": "AMD Ryzen 7 5800XT Desktop Processor with ASUS TUF Gaming B550-PLUS WiFi II AM4 ATX Gaming Motherboard (DDR4, PCIe 4.0, WiFi 6, 2.5Gb LAN, USB 3.2 Gen 2)",
+      "used": false
+    },
+    {
+      "id": 20508,
+      "c": "Motherboard",
+      "n": "ASUS Prime B550M-A WiFi II AMD AM4 (3rd Gen Ryzen™) Micro ATX Motherboard (PCIe 4.0, WiFi 6, ECC Memory, 1Gb LAN, HDMI 2.1/D-Sub, 4K@60HZ, Addressable Gen 2 RGB Header and Aura Sync) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20509,
+      "c": "Motherboard",
+      "n": "MSI MPG B550 GAMING PLUS Desktop Motherboard - AMD B550 Chipset - Socket AM4 - ATX",
+      "used": false
+    },
+    {
+      "id": 20510,
+      "c": "Motherboard",
+      "n": "MSI B550M PRO-VDH WiFi ProSeries Gaming Motherboard (AMD AM4, DDR4, PCIe 4.0, SATA 6Gb/s, M.2, USB 3.2 Gen 1, Wi-Fi, D-SUB/HDMI/DP, Micro-ATX) (Renewed)",
+      "used": true
+    },
+    {
+      "id": 20511,
+      "c": "Motherboard",
+      "n": "GIGABYTE B550 Eagle WIFI6 AMD AM4 ATX Motherboard, Supports Ryzen 5000/4000/3000 Processors, DDR4, 10+3 Power Phase, 2X M.2, PCIe 4.0, USB-C, WIFI6, GbE LAN, PCIe EZ-Latch, EZ-Latch, RGB Fusion",
+      "used": false
+    },
+    {
+      "id": 20512,
+      "c": "Motherboard",
+      "n": "Micro Center AMD Ryzen 5 5500 Desktop Processor with GIGABYTE B550 Eagle WIFI6 ATX Motherboard (AM4, DDR4, 2X M.2, PCIe 4.0, WIFI6, 1GbE LAN, EZ-Latch)",
+      "used": false
+    },
+    {
+      "id": 20513,
+      "c": "Motherboard",
+      "n": "B550M PRO SE - ASRock B550M Pro SE Gaming Desktop Motherboard - AMD PRO565 Chipset - Socket AM4 - Micro ATX - Ryzen 5, Ryzen 3 Processor Supported - 128 GB DDR4 SDRAM Maximum RAM - DIMM,",
+      "used": false
+    },
+    {
+      "id": 20514,
+      "c": "Motherboard",
+      "n": "B550M PRO SE - ASRock B550M Pro SE Gaming Desktop Motherboard - AMD PRO565 Chipset - Socket AM4 - Micro ATX - Ryzen 5, Ryzen 3 Processor Supported - 128 GB DDR4 SDRAM Maximum RAM - DIMM,",
+      "used": false
+    },
+    {
+      "id": 20515,
+      "c": "Motherboard",
+      "n": "Laptop I/O IO Shield Motherboard Backplate Bracket Replacement for ASUS Prime B450M-A II / B450M-K II",
+      "used": false
+    },
+    {
+      "id": 20516,
+      "c": "Motherboard",
+      "n": "AMD Ryzen 5 4500 Desktop Processor with ASUS TUF Gaming A520M-PLUS (WiFi) AM4 microATX Motherboard (M.2 Support, 802.11ac Wi-Fi, DisplayPort, HDMI)",
+      "used": false
+    },
+    {
+      "id": 20517,
+      "c": "Motherboard",
+      "n": "AMD Ryzen 5 5500 Desktop Processor with ASUS TUF Gaming A520M-PLUS (WiFi) AM4 microATX Motherboard (M.2 Support, 802.11ac Wi-Fi, DisplayPort, HDMI)",
+      "used": false
+    },
+    {
+      "id": 20518,
+      "c": "Motherboard",
+      "n": "AMD Ryzen 5 4500 Unlocked Desktop Processor with MSI A520M-A PRO Gaming Motherboard (AMD AM4, DDR4, PCIe 4.0, Micro-ATX),",
+      "used": false
+    },
+    {
+      "id": 20519,
+      "c": "Motherboard",
+      "n": "A520M S2H (AMD Ryzen AM4/MicroATX/4+3 Phases Digital PWM/Gigabyte Gaming GbE LAN/NVMe PCIe 3.0 x4 M.2/3 Display Interfaces/Q-Flash Plus/RGB Fusion 2.0/Motherboard)",
+      "used": false
+    },
+    {
+      "id": 20520,
+      "c": "Motherboard",
+      "n": "A520M S2H (AMD Ryzen AM4/MicroATX/4+3 Phases Digital PWM/Gigabyte Gaming GbE LAN/NVMe PCIe 3.0 x4 M.2/3 Display Interfaces/Q-Flash Plus/RGB Fusion 2.0/Motherboard)",
+      "used": false
+    },
+    {
+      "id": 20521,
+      "c": "Motherboard",
+      "n": "AMD Ryzen 5 5500 Desktop Processor with ASRock A520M-HDV AM4 DDR4 Motherboard",
+      "used": false
+    }
+  ]
+}

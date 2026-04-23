@@ -1062,230 +1062,6 @@ export const PARTS = [
     "quarantinedAt": "2026-04-23"
   },
   {
-    "id": 10037,
-    "n": "AMD Ryzen 9 3950X",
-    "img": "https://m.media-amazon.com/images/I/7122uH4-hfL._AC_SL300_.jpg",
-    "c": "CPU",
-    "b": "AMD",
-    "pr": 749,
-    "msrp": 749,
-    "r": 4.5,
-    "socket": "AM4",
-    "cores": 16,
-    "threads": 32,
-    "baseClock": 3.5,
-    "boostClock": 4.7,
-    "tdp": 105,
-    "memType": "DDR4",
-    "maxMem": 3200,
-    "l3": 64,
-    "arch": "Zen 2",
-    "bench": 56,
-    "deals": {
-      "amazon": {
-        "price": 229.99,
-        "url": "https://www.amazon.com/dp/B07ZTYKLZW?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 10038,
-    "n": "AMD Ryzen 9 3900X",
-    "img": "https://m.media-amazon.com/images/I/71ZANS0SSDL._AC_SL300_.jpg",
-    "c": "CPU",
-    "b": "AMD",
-    "pr": 499,
-    "msrp": 499,
-    "r": 4.5,
-    "socket": "AM4",
-    "cores": 12,
-    "threads": 24,
-    "baseClock": 3.8,
-    "boostClock": 4.6,
-    "tdp": 105,
-    "memType": "DDR4",
-    "maxMem": 3200,
-    "l3": 64,
-    "arch": "Zen 2",
-    "bench": 56,
-    "deals": {
-      "amazon": {
-        "price": 249.9,
-        "url": "https://www.amazon.com/dp/B07SXMZLP9?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 10039,
-    "n": "AMD Ryzen 7 3800X",
-    "img": "https://m.media-amazon.com/images/I/71pKM87P6nL._AC_SL300_.jpg",
-    "c": "CPU",
-    "b": "AMD",
-    "pr": 399,
-    "msrp": 399,
-    "r": 4.5,
-    "socket": "AM4",
-    "cores": 8,
-    "threads": 16,
-    "baseClock": 3.9,
-    "boostClock": 4.5,
-    "tdp": 105,
-    "memType": "DDR4",
-    "maxMem": 3200,
-    "l3": 32,
-    "arch": "Zen 2",
-    "bench": 48,
-    "deals": {
-      "amazon": {
-        "price": 459.95,
-        "url": "https://www.amazon.com/dp/B07SXMZLPJ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 10040,
-    "n": "AMD Ryzen 7 3700X",
-    "img": "https://m.media-amazon.com/images/I/61wZ8-ijoWL._AC_SL300_.jpg",
-    "c": "CPU",
-    "b": "AMD",
-    "pr": 329,
-    "msrp": 329,
-    "r": 4.5,
-    "socket": "AM4",
-    "cores": 8,
-    "threads": 16,
-    "baseClock": 3.6,
-    "boostClock": 4.4,
-    "tdp": 65,
-    "memType": "DDR4",
-    "maxMem": 3200,
-    "l3": 32,
-    "arch": "Zen 2",
-    "bench": 46,
-    "deals": {
-      "amazon": {
-        "price": 299,
-        "url": "https://www.amazon.com/dp/B07SXMZLPK?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 10041,
-    "n": "AMD Ryzen 5 3600",
-    "img": "https://m.media-amazon.com/images/I/51So7GoGvxL._AC_SL300_.jpg",
-    "c": "CPU",
-    "b": "AMD",
-    "pr": 199,
-    "msrp": 199,
-    "r": 4.5,
-    "socket": "AM4",
-    "cores": 6,
-    "threads": 12,
-    "baseClock": 3.6,
-    "boostClock": 4.2,
-    "tdp": 65,
-    "memType": "DDR4",
-    "maxMem": 3200,
-    "l3": 32,
-    "arch": "Zen 2",
-    "bench": 41,
-    "deals": {
-      "amazon": {
-        "price": 86,
-        "url": "https://www.amazon.com/dp/B09VCJ171S?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 10042,
-    "n": "AMD Ryzen 5 3600X",
-    "img": "https://m.media-amazon.com/images/I/51So7GoGvxL._AC_SL300_.jpg",
-    "c": "CPU",
-    "b": "AMD",
-    "pr": 249,
-    "msrp": 249,
-    "r": 4.5,
-    "socket": "AM4",
-    "cores": 6,
-    "threads": 12,
-    "baseClock": 3.8,
-    "boostClock": 4.4,
-    "tdp": 95,
-    "memType": "DDR4",
-    "maxMem": 3200,
-    "l3": 32,
-    "arch": "Zen 2",
-    "bench": 44,
-    "deals": {
-      "amazon": {
-        "price": 86,
-        "url": "https://www.amazon.com/dp/B07SQBFN2D?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 10043,
-    "n": "AMD Ryzen 3 3300X",
-    "img": "https://m.media-amazon.com/images/I/61L6qbhLx0L._AC_SL300_.jpg",
-    "c": "CPU",
-    "b": "AMD",
-    "pr": 119,
-    "msrp": 119,
-    "r": 4.5,
-    "socket": "AM4",
-    "cores": 4,
-    "threads": 8,
-    "baseClock": 3.8,
-    "boostClock": 4.3,
-    "tdp": 65,
-    "memType": "DDR4",
-    "maxMem": 3200,
-    "l3": 16,
-    "arch": "Zen 2",
-    "bench": 41,
-    "deals": {
-      "amazon": {
-        "price": 89.99,
-        "url": "https://www.amazon.com/dp/B0876YS2T4?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 10044,
-    "n": "AMD Ryzen 3 3100",
-    "img": "https://m.media-amazon.com/images/I/61L6qbhLx0L._AC_SL300_.jpg",
-    "c": "CPU",
-    "b": "AMD",
-    "pr": 99,
-    "msrp": 99,
-    "r": 4.5,
-    "socket": "AM4",
-    "cores": 4,
-    "threads": 8,
-    "baseClock": 3.6,
-    "boostClock": 3.9,
-    "tdp": 65,
-    "memType": "DDR4",
-    "maxMem": 3200,
-    "l3": 16,
-    "arch": "Zen 2",
-    "bench": 35,
-    "deals": {
-      "amazon": {
-        "price": 59.99,
-        "url": "https://www.amazon.com/dp/B0876Y2TMZ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
     "id": 10045,
     "n": "Intel Core Ultra 9 285K",
     "img": "https://m.media-amazon.com/images/I/51xxm7JkJ6L._AC_SL300_.jpg",
@@ -4516,6 +4292,723 @@ export const PARTS = [
     "maxMem": "256 gigabytes",
     "unlocked": true,
     "bench": 76
+  },
+  {
+    "id": 10181,
+    "c": "CPU",
+    "n": "Core™ Ultra 5 Desktop Processor 225 10 cores (6 P-cores + 4 E-cores) up to 4.9 GHz",
+    "b": "Intel",
+    "pr": 179.98,
+    "msrp": 179.98,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/613nf5pLwjL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 179.98,
+        "url": "https://www.amazon.com/dp/B0DT7DXXJT?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1851",
+    "cores": 10,
+    "threads": 10,
+    "boostClock": 4.9,
+    "tdp": 65,
+    "bench": 72
+  },
+  {
+    "id": 10182,
+    "c": "CPU",
+    "n": "Core™ Ultra 5 Desktop Processor 225F 10 cores (6 P-cores + 4 E-cores) up to 4.9 GHz",
+    "b": "Intel",
+    "pr": 162.27,
+    "msrp": 162.27,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/51JJfDCTQ3L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 162.27,
+        "url": "https://www.amazon.com/dp/B0DT7CW7VR?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1851",
+    "cores": 10,
+    "threads": 10,
+    "boostClock": 4.9,
+    "tdp": 65,
+    "bench": 72
+  },
+  {
+    "id": 10183,
+    "c": "CPU",
+    "n": "Core i9-13900 Desktop Processor 24 cores (8 P-cores + 16 E-cores) 36MB Cache, up to 5.6 GHz",
+    "b": "Intel",
+    "pr": 610.99,
+    "msrp": 610.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61amK1Xri+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 610.99,
+        "url": "https://www.amazon.com/dp/B0BQ69VJ1S?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "cores": 24,
+    "threads": 32,
+    "boostClock": 5.6,
+    "tdp": 65,
+    "bench": 87
+  },
+  {
+    "id": 10184,
+    "c": "CPU",
+    "n": "Core i9 (12th Gen) i9-12900KS Gaming Desktop Processor with Integrated Graphics and Hexadeca-core (16 Core) 2.50 GHz",
+    "b": "Intel",
+    "pr": 449.99,
+    "msrp": 449.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61vAL6P8pFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 449.99,
+        "url": "https://www.amazon.com/dp/B09RWL74GY?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "cores": 16,
+    "threads": 24,
+    "boostClock": 5.5,
+    "tdp": 150,
+    "bench": 86
+  },
+  {
+    "id": 10185,
+    "c": "CPU",
+    "n": "Core i9 (12th Gen) i9-12900 Hexadeca-core (16 Core) 2.40 GHz Processor - Retail Pack",
+    "b": "Intel",
+    "pr": 559.27,
+    "msrp": 559.27,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/5174O6xteoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 559.27,
+        "url": "https://www.amazon.com/dp/B09RPF28CG?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "cores": 16,
+    "threads": 24,
+    "boostClock": 5.1,
+    "tdp": 65,
+    "bench": 80
+  },
+  {
+    "id": 10186,
+    "c": "CPU",
+    "n": "ProDesk 400 G9 Business Desktop Computer, SFF Small Form Factor, 12th Gen Intel 12-Core i7-12700 Processor, 32GB DDR4 RAM, 1TB PCIe NVMe M.2 SSD, HDMI, DisplayPort, Windows 11, Black",
+    "b": "Intel",
+    "pr": 1099.99,
+    "msrp": 1099.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61fSuKY9kmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 1099.99,
+        "url": "https://www.amazon.com/dp/B0DYSK7VCS?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "cores": 12,
+    "threads": 20,
+    "boostClock": 4.9,
+    "tdp": 65,
+    "bench": 75
+  },
+  {
+    "id": 10187,
+    "c": "CPU",
+    "n": "Core™ i5-12600 Desktop Processor 18MB Cache up to 4.80GHz",
+    "b": "Intel",
+    "pr": 315,
+    "msrp": 315,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51DY7a--LrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 315,
+        "url": "https://www.amazon.com/dp/B09MDD882B?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "cores": 6,
+    "threads": 12,
+    "boostClock": 4.8,
+    "tdp": 65,
+    "bench": 62
+  },
+  {
+    "id": 10188,
+    "c": "CPU",
+    "n": "Core i9-11900K Desktop Processor 8 Cores up to 5.3 GHz Unlocked LGA1200 (Intel 500 Series & Select 400 Series Chipset) 125W",
+    "b": "Intel",
+    "pr": 429,
+    "msrp": 429,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71diouNMRHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 429,
+        "url": "https://www.amazon.com/dp/B08X6PPTTH?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 8,
+    "threads": 16,
+    "boostClock": 5.3,
+    "tdp": 125,
+    "bench": 72
+  },
+  {
+    "id": 10189,
+    "c": "CPU",
+    "n": "Core™ i9-11900KF Desktop Processor 8 Cores up to 5.3 GHz Unlocked LGA1200 (Intel® 500 Series & Select 400 Series Chipset) 125W",
+    "b": "Intel",
+    "pr": 439,
+    "msrp": 439,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71mWLdyy02L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 439,
+        "url": "https://www.amazon.com/dp/B08X6KQSZ1?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 8,
+    "threads": 16,
+    "boostClock": 5.3,
+    "tdp": 125,
+    "bench": 72
+  },
+  {
+    "id": 10190,
+    "c": "CPU",
+    "n": "Core™ i7-11700K Desktop Processor 8 Cores up to 5.0 GHz Unlocked LGA1200 (Intel 500 Series & Select 400 Series Chipset) 125W",
+    "b": "Intel",
+    "pr": 465.63,
+    "msrp": 465.63,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71idAEIDhvL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 465.63,
+        "url": "https://www.amazon.com/dp/B08X6ND3WP?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 8,
+    "threads": 16,
+    "boostClock": 5,
+    "tdp": 125,
+    "bench": 68
+  },
+  {
+    "id": 10191,
+    "c": "CPU",
+    "n": "Core™ i7-11700KF Desktop Processor 8 Cores up to 5.0 GHz Unlocked LGA1200 (Intel® 500 Series & Select 400 Series Chipset) 125W",
+    "b": "Intel",
+    "pr": 468.4,
+    "msrp": 468.4,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/719hXJ20arL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 468.4,
+        "url": "https://www.amazon.com/dp/B08X6NXNX7?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 8,
+    "threads": 16,
+    "boostClock": 5,
+    "tdp": 125,
+    "bench": 68
+  },
+  {
+    "id": 10192,
+    "c": "CPU",
+    "n": "Core™ i5-11600K Desktop Processor 6 Cores up to 4.9 GHz Unlocked LGA1200 (Intel® 500 Series & Select 400 Series Chipset) 125W",
+    "b": "Intel",
+    "pr": 199,
+    "msrp": 199,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71l9KM7GhzL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 199,
+        "url": "https://www.amazon.com/dp/B08X67YZBL?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 6,
+    "threads": 12,
+    "boostClock": 4.9,
+    "tdp": 125,
+    "bench": 62
+  },
+  {
+    "id": 10193,
+    "c": "CPU",
+    "n": "Core™ i5-11500 Desktop Processor 6 Cores up to 4.6 GHz LGA1200 (Intel® 500 Series & Select 400 Series chipset) 65W",
+    "b": "Intel",
+    "pr": 179,
+    "msrp": 179,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71CWKCABrqL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 179,
+        "url": "https://www.amazon.com/dp/B08X6BCPGD?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 6,
+    "threads": 12,
+    "boostClock": 4.6,
+    "tdp": 65,
+    "bench": 58
+  },
+  {
+    "id": 10194,
+    "c": "CPU",
+    "n": "Core™ i5-11400 Desktop Processor 6 Cores up to 4.4 GHz LGA1200 (Intel® 500 Series & Select 400 Series chipset) 65W",
+    "b": "Intel",
+    "pr": 186.5,
+    "msrp": 186.5,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71TxeMiYJSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 186.5,
+        "url": "https://www.amazon.com/dp/B08X6JPK4K?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 6,
+    "threads": 12,
+    "boostClock": 4.4,
+    "tdp": 65,
+    "bench": 55
+  },
+  {
+    "id": 10195,
+    "c": "CPU",
+    "n": "Core i9-10900KF Desktop Processor 10 Cores up to 5.3 GHz Unlocked Without Processor Graphics LGA1200 (Intel 400 Series chipset) 125W",
+    "b": "Intel",
+    "pr": 439,
+    "msrp": 439,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/81eoV5SY8RL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 439,
+        "url": "https://www.amazon.com/dp/B086MG1C7D?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 10,
+    "threads": 20,
+    "boostClock": 5.3,
+    "tdp": 125,
+    "bench": 66
+  },
+  {
+    "id": 10196,
+    "c": "CPU",
+    "n": "Core i9-10900 Desktop Processor 10 Cores up to 5.2 GHz LGA 1200 (Intel 400 Series Chipset) 65W",
+    "b": "Intel",
+    "pr": 582,
+    "msrp": 582,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71J2jBmoOaL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 582,
+        "url": "https://www.amazon.com/dp/B086ML4XSD?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 10,
+    "threads": 20,
+    "boostClock": 5.2,
+    "tdp": 65,
+    "bench": 63
+  },
+  {
+    "id": 10197,
+    "c": "CPU",
+    "n": "Core i7-10700K Desktop Processor 8 Cores up to 5.1 GHz Unlocked LGA1200 (Intel 400 Series Chipset) 125W (BX8070110700K)",
+    "b": "Intel",
+    "pr": 380.99,
+    "msrp": 380.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71P3chRzgNL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 380.99,
+        "url": "https://www.amazon.com/dp/B086ML4XSB?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 8,
+    "threads": 16,
+    "boostClock": 5.1,
+    "tdp": 125,
+    "bench": 60
+  },
+  {
+    "id": 10198,
+    "c": "CPU",
+    "n": "Core i7-10700KF Desktop Processor 8 Cores up to 5.1 GHz Unlocked Without Processor Graphics LGA1200 (Intel 400 Series chipset) 125W",
+    "b": "Intel",
+    "pr": 369.14,
+    "msrp": 369.14,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/714-1OvyFIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 369.14,
+        "url": "https://www.amazon.com/dp/B086MMS6FV?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 8,
+    "threads": 16,
+    "boostClock": 5.1,
+    "tdp": 125,
+    "bench": 60
+  },
+  {
+    "id": 10199,
+    "c": "CPU",
+    "n": "Intel Core i7-10700 Desktop Processor 8 Cores up to 4.8 GHz LGA 1200 (Intel 400 Series Chipset) 65W, BX8070110700 (Renewed)",
+    "b": "Intel",
+    "pr": 219.99,
+    "msrp": 219.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51PYWQKjDqL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 219.99,
+        "url": "https://www.amazon.com/dp/B09139KNX2?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 8,
+    "threads": 16,
+    "boostClock": 4.8,
+    "tdp": 65,
+    "bench": 57,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 10200,
+    "c": "CPU",
+    "n": "Core™ i7-10700F Desktop Processor 8 Cores up to 4.8 GHz Without Processor Graphics LGA1200 (Intel® 400 Series chipset) 65W",
+    "b": "Intel",
+    "pr": 299,
+    "msrp": 299,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51honjJxV7L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 299,
+        "url": "https://www.amazon.com/dp/B086MN2XYL?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 8,
+    "threads": 16,
+    "boostClock": 4.8,
+    "tdp": 65,
+    "bench": 57
+  },
+  {
+    "id": 10201,
+    "c": "CPU",
+    "n": "Core i5-10600K Desktop Processor 6 Cores up to 4.8 GHz Unlocked LGA1200 (Intel 400 Series Chipset) 125W",
+    "b": "Intel",
+    "pr": 249,
+    "msrp": 249,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/81eoV5SY8RL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 249,
+        "url": "https://www.amazon.com/dp/B086MHSH2C?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 6,
+    "threads": 12,
+    "boostClock": 4.8,
+    "tdp": 125,
+    "bench": 55
+  },
+  {
+    "id": 10202,
+    "c": "CPU",
+    "n": "Core™ i5-10600KF Desktop Processor 6 Cores up to 4.8 GHz Unlocked Without Processor Graphics LGA 1200 (Intel® 400 Series chipset) 125W",
+    "b": "Intel",
+    "pr": 231.45,
+    "msrp": 231.45,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81iQJf4PftL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 231.45,
+        "url": "https://www.amazon.com/dp/B086M8441R?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 6,
+    "threads": 12,
+    "boostClock": 4.8,
+    "tdp": 125,
+    "bench": 55
+  },
+  {
+    "id": 10203,
+    "c": "CPU",
+    "n": "Intel Core i5-10500 Desktop Processor 6 Cores up to 4.5 GHz LGA1200 (Intel 400 Series chipset) 65W, Model Number: BX8070110500 (Renewed)",
+    "b": "Intel",
+    "pr": 130,
+    "msrp": 130,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61juA4lrX6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 130,
+        "url": "https://www.amazon.com/dp/B096R3R522?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 6,
+    "threads": 12,
+    "boostClock": 4.5,
+    "tdp": 65,
+    "bench": 50,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 10204,
+    "c": "CPU",
+    "n": "Core i5-10400 Desktop Processor 6 Cores up to 4.3 GHz LGA1200 (Intel 400 Series Chipset) 65W, Model Number: BX8070110400",
+    "b": "Intel",
+    "pr": 184.16,
+    "msrp": 184.16,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/5109QxQi0IL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 184.16,
+        "url": "https://www.amazon.com/dp/B086MN38Q2?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 6,
+    "threads": 12,
+    "boostClock": 4.3,
+    "tdp": 65,
+    "bench": 46
+  },
+  {
+    "id": 10205,
+    "c": "CPU",
+    "n": "Core i5-10400F Desktop Processor 6 Cores up to 4.3 GHz Without Processor Graphics LGA1200 (Intel 400 Series chipset) 65W, Model Number: BX8070110400F",
+    "b": "Intel",
+    "pr": 147,
+    "msrp": 147,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51c31j500TL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 147,
+        "url": "https://www.amazon.com/dp/B086MHSTWN?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 6,
+    "threads": 12,
+    "boostClock": 4.3,
+    "tdp": 65,
+    "bench": 46
+  },
+  {
+    "id": 10206,
+    "c": "CPU",
+    "n": "Core i3-10100 Desktop Processor 4 Cores up to 4.3 GHz LGA1200 (Intel 400 Series Chipset) 65W, Model Number: BX8070110100",
+    "b": "Intel",
+    "pr": 159.94,
+    "msrp": 159.94,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/51AXYc+jykL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 159.94,
+        "url": "https://www.amazon.com/dp/B086MMRW87?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 4,
+    "threads": 8,
+    "boostClock": 4.3,
+    "tdp": 65,
+    "bench": 36
+  },
+  {
+    "id": 10207,
+    "c": "CPU",
+    "n": "BX8070110105 CPU Core i3-10105 3.7 GHz Quad Core LGA1200 Processor",
+    "b": "Intel",
+    "pr": 168.81,
+    "msrp": 168.81,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61mHdcn-DIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 168.81,
+        "url": "https://www.amazon.com/dp/B092ZGRHB5?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 4,
+    "threads": 8,
+    "boostClock": 4.4,
+    "tdp": 65,
+    "bench": 36
+  },
+  {
+    "id": 10208,
+    "c": "CPU",
+    "n": "Core i3-10105F 4-Core Comet Lake Processor 3.70GHz 8GT/s 6MB LGA 1200 CPU Retail",
+    "b": "Intel",
+    "pr": 101.6,
+    "msrp": 101.6,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81eoV5SY8RL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 101.6,
+        "url": "https://www.amazon.com/dp/B092CCJ2GZ?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 4,
+    "threads": 8,
+    "boostClock": 4.4,
+    "tdp": 65,
+    "bench": 36
+  },
+  {
+    "id": 10209,
+    "c": "CPU",
+    "n": "Ryzen 5 4600G - 3.7 GHz - 6 Cores - 12 Threads - 8 MB Cache Memory - Socket AM4 - OEM",
+    "b": "AMD",
+    "pr": 414,
+    "msrp": 414,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/41dKFmstTUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 414,
+        "url": "https://www.amazon.com/dp/B0D1CJW6MK?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "cores": 6,
+    "threads": 12,
+    "boostClock": 4.2,
+    "tdp": 65,
+    "bench": 38
+  },
+  {
+    "id": 10210,
+    "c": "CPU",
+    "n": "Ryzen 3 4100 4-Core, 8-Thread Unlocked Desktop Processor with Wraith Stealth Cooler",
+    "b": "AMD",
+    "pr": 100.7,
+    "msrp": 100.7,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71S4Zxo0yrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 100.7,
+        "url": "https://www.amazon.com/dp/B09VCRQVWM?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "cores": 4,
+    "threads": 8,
+    "boostClock": 4,
+    "tdp": 65,
+    "bench": 24
+  },
+  {
+    "id": 10211,
+    "c": "CPU",
+    "n": "Gaming PC Desktop Computer, Intel Core i3-10100F up to 4.3G, GeForce RTX 2060 6G, 16GB DDR4, 1TB SSD, WiFi, BT 5.0, RGB Fan x6, Windows 11 Home",
+    "b": "Intel",
+    "pr": 631.75,
+    "msrp": 631.75,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81L0K1nqfHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 631.75,
+        "url": "https://www.amazon.com/dp/B0FC6NRR6M?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "cores": 4,
+    "threads": 8,
+    "boostClock": 4.3,
+    "tdp": 65,
+    "bench": 36
   },
   {
     "id": 20000,
@@ -19959,6 +20452,1729 @@ export const PARTS = [
     "wifi": "WiFi 7"
   },
   {
+    "id": 20452,
+    "c": "Motherboard",
+    "n": "CPU Motherboard Combo - Intel Core Ultra 7 265K 20-Cores Unlocked Desktop Processor with Msi PRO Z890-P WiFi ProSeries LGA 1851 ATX Motherboard",
+    "b": "MSI",
+    "pr": 489.99,
+    "msrp": 489.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71dLe4zkTlL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 489.99,
+        "url": "https://www.amazon.com/dp/B0DY1TCGRD?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1851",
+    "chipset": "Z890",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "m2Slots": 4,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20453,
+    "c": "Motherboard",
+    "n": "Prime H810M-E-CSM Intel® H810 mATX Commercial CSM Motherboard, LGA 1851, DDR5, PCIe 4.0, M.2, 1G LAN, HDMI, USB 3.2, AI PC-Ready, ASUS Control Center Express Support for SMB & IT Deployments",
+    "b": "ASUS",
+    "pr": 109.99,
+    "msrp": 109.99,
+    "r": 3.3,
+    "img": "https://m.media-amazon.com/images/I/81+7cnEVpJL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 109.99,
+        "url": "https://www.amazon.com/dp/B0FSNGDGS3?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1851",
+    "chipset": "H810",
+    "memType": "DDR5",
+    "memSlots": 2,
+    "maxMem": 128,
+    "m2Slots": 2,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20454,
+    "c": "Motherboard",
+    "n": "Prime H810M-E-CSM Intel® H810 mATX Commercial CSM Motherboard, LGA 1851, DDR5, PCIe 4.0, M.2, 1G LAN, HDMI, USB 3.2, AI PC-Ready, ASUS Control Center Express Support for SMB & IT Deployments",
+    "b": "ASUS",
+    "pr": 109.99,
+    "msrp": 109.99,
+    "r": 3.3,
+    "img": "https://m.media-amazon.com/images/I/81+7cnEVpJL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 109.99,
+        "url": "https://www.amazon.com/dp/B0FSNGDGS3?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1851",
+    "chipset": "H810",
+    "memType": "DDR5",
+    "memSlots": 2,
+    "maxMem": 128,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20455,
+    "c": "Motherboard",
+    "n": "MSI MPG Z790 Edge WiFi Gaming Motherboard (Supports 12th/13th Gen Intel Processors, LGA 1700, DDR5, PCIe 5.0, M.2, 2.5Gbps LAN, USB 3.2 Gen2, Wi-Fi 6E, ATX) (Renewed)",
+    "b": "MSI",
+    "pr": 154.88,
+    "msrp": 154.88,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/81LfBZCmvuL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 154.88,
+        "url": "https://www.amazon.com/dp/B0CFWL42ZG?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "chipset": "Z790",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2Slots": 4,
+    "sata": 6,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20456,
+    "c": "Motherboard",
+    "n": "GIGABYTE Z790 AORUS Elite AX (LGA 1700/ Intel Z790/ ATX/ DDR5/ Quad M.2/ PCIe 5.0/ USB 3.2 Gen2X2 Type-C/Intel WiFi 6E/ 2.5GbE LAN/Q-Flash Plus/PCIe EZ-Latch/Gaming Motherboard) (Renewed)",
+    "b": "Gigabyte",
+    "pr": 149.99,
+    "msrp": 149.99,
+    "r": 3.4,
+    "img": "https://m.media-amazon.com/images/I/81a48Z1GciL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 149.99,
+        "url": "https://www.amazon.com/dp/B0BS5KZJ57?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "chipset": "Z790",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2Slots": 4,
+    "sata": 6,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20457,
+    "c": "Motherboard",
+    "n": "MSI PRO Z690-A WiFi ProSeries Motherboard (ATX, 12th Gen Intel Core, LGA 1700 Socket, DDR5, PCIe 5, 2.5G LAN, M.2 Slots, Wi-Fi 6E) (Renewed)",
+    "b": "MSI",
+    "pr": 109,
+    "msrp": 109,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81u+u4BP5+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 109,
+        "url": "https://www.amazon.com/dp/B09V6J13ZF?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "chipset": "Z690",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 4,
+    "sata": 6,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20458,
+    "c": "Motherboard",
+    "n": "Prime B760M-A-CSM Intel B760 (LGA 1700) mATX CSM Commercial Motherboard PCIe 4.0, DDR5, 2X M.2, 2.5Gb LAN, DP, 2X HDMI™, SATA 6 Gbps, USB 3.2 Type-C, Aura Sync, ASUS Control Center Express",
+    "b": "ASUS",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81867HxtJgL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 129.99,
+        "url": "https://www.amazon.com/dp/B0FH626TJ1?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "chipset": "B760",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2Slots": 3,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20459,
+    "c": "Motherboard",
+    "n": "ASUS Prime B760M-A AX LGA 1700(Intel® 12th&13th Gen) microATX Motherboard (PCIe® 4.0, 2xM.2 Slots, DDR5,Realtek 2.5 Gb LAN,WiFi 6, DP,Rear USB 3.2 Gen 2, Front USB 3.2 Gen 1 Type-C®) (Renewed)",
+    "b": "ASUS",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/91xYf9f0S0L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 89.99,
+        "url": "https://www.amazon.com/dp/B0DXSX1GXK?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "chipset": "B760",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2Slots": 2,
+    "sata": 4,
+    "ff": "Micro ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20460,
+    "c": "Motherboard",
+    "n": "CPU Motherboard Combo - 14600K 14(6P+8E) Cores up to 5.3 GHz Unlocked Desktop Processor with GIGABYTE B760M DS3H AX DDR4 lga1700 Micro ATX Motherboard",
+    "b": "Gigabyte",
+    "pr": 449.99,
+    "msrp": 449.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71xKsnIKqoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 449.99,
+        "url": "https://www.amazon.com/dp/B0FR513GN7?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "chipset": "B760",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2Slots": 2,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20461,
+    "c": "Motherboard",
+    "n": "ASRock B760M Pro RS Motherboard DDR5 7200MHz HDMI DisplayPort eDP PCIe Gen5 (Graphics) 14th 13th 12th Gen Intel Core Processors LGA1700 192GB",
+    "b": "ASRock",
+    "pr": 109.99,
+    "msrp": 109.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71RVYwj2r-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 109.99,
+        "url": "https://www.amazon.com/dp/B0C2C96LDL?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "chipset": "B760",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2Slots": 3,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20462,
+    "c": "Motherboard",
+    "n": "ASRock B760M Pro RS Motherboard DDR5 7200MHz HDMI DisplayPort eDP PCIe Gen5 (Graphics) 14th 13th 12th Gen Intel Core Processors LGA1700 192GB",
+    "b": "ASRock",
+    "pr": 109.99,
+    "msrp": 109.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71RVYwj2r-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 109.99,
+        "url": "https://www.amazon.com/dp/B0C2C96LDL?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "chipset": "B760",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2Slots": 2,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20463,
+    "c": "Motherboard",
+    "n": "MSI PRO B660M-A CEC WiFi DDR4 V2 Micro ATX Motherboard (Renewed)",
+    "b": "MSI",
+    "pr": 86,
+    "msrp": 86,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/611CIWe4IHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 86,
+        "url": "https://www.amazon.com/dp/B0DF8CPSKZ?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "chipset": "B660",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 2,
+    "sata": 4,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20464,
+    "c": "Motherboard",
+    "n": "MSI PRO B660M-A CEC WiFi DDR4 V2 Micro ATX Motherboard (Renewed)",
+    "b": "MSI",
+    "pr": 86,
+    "msrp": 86,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/611CIWe4IHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 86,
+        "url": "https://www.amazon.com/dp/B0DF8CPSKZ?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "chipset": "B660",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20465,
+    "c": "Motherboard",
+    "n": "Prime H610M-A-CSM Intel® H610 (LGA 1700) CSM Business mATX Motherboard, with PCIe 4.0, 2X M.2, DDR5, 1GbE LAN, DP, HDMI™, VGA, USB 3.2 Gen 2 Ports, ASUS Control Center Express IT Management",
+    "b": "ASUS",
+    "pr": 119.99,
+    "msrp": 119.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81D9MW1tU2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 119.99,
+        "url": "https://www.amazon.com/dp/B0FLMZ8H4Q?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "chipset": "H610",
+    "memType": "DDR5",
+    "memSlots": 2,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20466,
+    "c": "Motherboard",
+    "n": "motherboards Fit for MSI H610M Bomber DDR4 Motherboard Intel H610 LGA1700 64GB Support I9-14900 I7-14700K I5-14400 I5-13600 CPU Matx",
+    "b": "MSI",
+    "pr": 303.72,
+    "msrp": 303.72,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71IdTj-OYfL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 303.72,
+        "url": "https://www.amazon.com/dp/B0GCMN81F8?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1700",
+    "chipset": "H610",
+    "memType": "DDR5",
+    "memSlots": 2,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20467,
+    "c": "Motherboard",
+    "n": "Computer Motherboards Fit for ASRock Z490 Phantom Gaming 4/AX Motherboard Support I9-10900K I7-10700 I5 10400 I3-10300 CPU LGA1200 DDR4 4400MHz M.2 NVME ATX",
+    "b": "ASRock",
+    "pr": 198.02,
+    "msrp": 198.02,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/7136iFkrJhL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 198.02,
+        "url": "https://www.amazon.com/dp/B0GG9YNFNG?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "chipset": "Z490",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 3,
+    "sata": 6,
+    "ff": "ATX"
+  },
+  {
+    "id": 20468,
+    "c": "Motherboard",
+    "n": "motherboards Fit for ASUS TUF Gaming B460M-PLUS Motherboard Supports LGA1200 Micro ATX Gaming",
+    "b": "ASUS",
+    "pr": 139.74,
+    "msrp": 139.74,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81hwaZkAf-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 139.74,
+        "url": "https://www.amazon.com/dp/B0GRVGPK5S?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "chipset": "B460",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 1,
+    "sata": 6,
+    "ff": "ATX"
+  },
+  {
+    "id": 20469,
+    "c": "Motherboard",
+    "n": "pc Motherboard Fit for ASRock H470 Steel Legend Motherboard Intel LGA 1200 Support I9-11900F I5-11400F I3-10100F I3-10105 CPU M.2 NVMe SSD ATX",
+    "b": "ASRock",
+    "pr": 269.18,
+    "msrp": 269.18,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71gafn4iwbL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 269.18,
+        "url": "https://www.amazon.com/dp/B0GTZKMH6N?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "chipset": "H470",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 2,
+    "sata": 6,
+    "ff": "ATX"
+  },
+  {
+    "id": 20470,
+    "c": "Motherboard",
+    "n": "pc Motherboard Fit for ASUS EX-H410M-V3 Motherboard Intel H510 LGA1200 DDR4 32GB M.2 Micro ATX Support I9-10900K I5-10400F I3-10300 CPU",
+    "b": "ASUS",
+    "pr": 163.44,
+    "msrp": 163.44,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81CeXxhIigL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 163.44,
+        "url": "https://www.amazon.com/dp/B0GTZMBKPM?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "chipset": "H510",
+    "memType": "DDR4",
+    "memSlots": 2,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20471,
+    "c": "Motherboard",
+    "n": "pc Motherboard Fit for ASUS EX-H410M-V3 Motherboard Intel H510 LGA1200 DDR4 32GB M.2 Micro ATX Support I9-10900K I5-10400F I3-10300 CPU",
+    "b": "ASUS",
+    "pr": 163.44,
+    "msrp": 163.44,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81CeXxhIigL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 163.44,
+        "url": "https://www.amazon.com/dp/B0GTZMBKPM?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "chipset": "H510",
+    "memType": "DDR4",
+    "memSlots": 2,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20472,
+    "c": "Motherboard",
+    "n": "Motherboard Fit for MSI H510M Bomber Motherboard Intel H510 LGA1200 Micro ATX 2xDDR4 HDMI VGA 1x M.2",
+    "b": "MSI",
+    "pr": 166.6,
+    "msrp": 166.6,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/713DxeXWoEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 166.6,
+        "url": "https://www.amazon.com/dp/B0GFFBD1HV?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "chipset": "H510",
+    "memType": "DDR4",
+    "memSlots": 2,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20473,
+    "c": "Motherboard",
+    "n": "pc Motherboard Fit for MSI H510M Bomber Motherboard Intel H510 LGA1200 Micro ATX 2xDDR4 HDMI VGA 1x M.2",
+    "b": "MSI",
+    "pr": 166.6,
+    "msrp": 166.6,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/713DxeXWoEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 166.6,
+        "url": "https://www.amazon.com/dp/B0GQSZK7JP?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "chipset": "H510",
+    "memType": "DDR4",
+    "memSlots": 2,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20474,
+    "c": "Motherboard",
+    "n": "pc Motherboard Fit for Gigabyte H410M H V3 Motherboard Intel H510 LGA1200 DDR4 32GB M.2 Micro ATX Support I9-10900K I5-10400F I3-10300 CPU",
+    "b": "Gigabyte",
+    "pr": 169.76,
+    "msrp": 169.76,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81Z6F4xTqQL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 169.76,
+        "url": "https://www.amazon.com/dp/B0GXBJSZHJ?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "chipset": "H510",
+    "memType": "DDR4",
+    "memSlots": 2,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20475,
+    "c": "Motherboard",
+    "n": "pc Motherboard Fit for Gigabyte H410M H V3 Motherboard Intel H510 LGA1200 DDR4 32GB M.2 Micro ATX Support I9-10900K I5-10400F I3-10300 CPU",
+    "b": "Gigabyte",
+    "pr": 169.76,
+    "msrp": 169.76,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81Z6F4xTqQL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 169.76,
+        "url": "https://www.amazon.com/dp/B0GXBJSZHJ?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "chipset": "H510",
+    "memType": "DDR4",
+    "memSlots": 2,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20476,
+    "c": "Motherboard",
+    "n": "motherboards Fit for ASUS Pro H410M-C2 Motherboard Socket LGA1200 CPU DDR4 2933 Memory Chipset H410 MATX Mainboard",
+    "b": "ASUS",
+    "pr": 126.53,
+    "msrp": 126.53,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/710Wy9WlxJL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 126.53,
+        "url": "https://www.amazon.com/dp/B0GRR96LXM?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "chipset": "H410",
+    "memType": "DDR4",
+    "memSlots": 2,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20477,
+    "c": "Motherboard",
+    "n": "motherboards Fit for ASUS Pro H410M-C2 Motherboard Socket LGA1200 CPU DDR4 2933 Memory Chipset H410 MATX Mainboard",
+    "b": "ASUS",
+    "pr": 126.53,
+    "msrp": 126.53,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/710Wy9WlxJL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 126.53,
+        "url": "https://www.amazon.com/dp/B0GRR96LXM?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "chipset": "H410",
+    "memType": "DDR4",
+    "memSlots": 2,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20478,
+    "c": "Motherboard",
+    "n": "Motherboard Fit for MSI H410M Bomber Motherboard Intel H410 LGA1200 Micro ATX 2xDDR4 HDMI VGA 1x M.2",
+    "b": "MSI",
+    "pr": 149.24,
+    "msrp": 149.24,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/718Qy5+0E9L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 149.24,
+        "url": "https://www.amazon.com/dp/B0GW853YPZ?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "chipset": "H410",
+    "memType": "DDR4",
+    "memSlots": 2,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20479,
+    "c": "Motherboard",
+    "n": "Motherboard Fit for MSI H410M Bomber Motherboard Intel H410 LGA1200 Micro ATX 2xDDR4 HDMI VGA 1x M.2",
+    "b": "MSI",
+    "pr": 149.24,
+    "msrp": 149.24,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/718Qy5+0E9L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 149.24,
+        "url": "https://www.amazon.com/dp/B0GW853YPZ?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "LGA1200",
+    "chipset": "H410",
+    "memType": "DDR4",
+    "memSlots": 2,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20481,
+    "c": "Motherboard",
+    "n": "MSI MAG X870E Tomahawk WiFi Motherboard, ATX - Supports AMD Ryzen 9000/8000 / 7000 Processors, AM5-80A SPS VRM, DDR5 Memory Boost 8400+ MT/s (OC), PCIe 5.0 x16, M.2 Gen5, Wi-Fi 7, 5G LAN (Renewed)",
+    "b": "MSI",
+    "pr": 218.44,
+    "msrp": 218.44,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81ZRDFQt4kL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 218.44,
+        "url": "https://www.amazon.com/dp/B0F5TGYRLP?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "X870E",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 256,
+    "m2Slots": 4,
+    "sata": 4,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20483,
+    "c": "Motherboard",
+    "n": "MSI MAG X870E Tomahawk WiFi Motherboard, ATX - Supports AMD Ryzen 9000/8000 / 7000 Processors, AM5-80A SPS VRM, DDR5 Memory Boost 8400+ MT/s (OC), PCIe 5.0 x16, M.2 Gen5, Wi-Fi 7, 5G LAN (Renewed)",
+    "b": "MSI",
+    "pr": 218.44,
+    "msrp": 218.44,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81ZRDFQt4kL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 218.44,
+        "url": "https://www.amazon.com/dp/B0F5TGYRLP?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "X870",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2Slots": 3,
+    "sata": 4,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20484,
+    "c": "Motherboard",
+    "n": "ASUS ROG Strix X670E-E Gaming Socket AM5(LGA 1718) Ryzen 7000 ATX Gaming Motherboard(18+2 Power Stages,PCIe® 5.0, DDR,4xM.2 Slots,USB 3.2 Gen 2x2, WiFi 6E,PCIe Slot Q-Release, M.2 Q-Latch) (Renewed)",
+    "b": "ASUS",
+    "pr": 249.99,
+    "msrp": 249.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81ohPDfik0L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 249.99,
+        "url": "https://www.amazon.com/dp/B0CJ4FBL2S?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "X670E",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 4,
+    "sata": 4,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20485,
+    "c": "Motherboard",
+    "n": "MSI MAG X670E Tomahawk WiFi Gaming Motherboard (AMD AM5, DDR5, PCIe 5.0, SATA 6Gb/s, M.2, USB 3.2 Gen 2, Wi-Fi 6E, 2.5Gbps LAN, HDMI/DP, ATX) (Renewed)",
+    "b": "MSI",
+    "pr": 149.88,
+    "msrp": 149.88,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/816ESNZ4SpL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 149.88,
+        "url": "https://www.amazon.com/dp/B0CLMJ2RCR?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "X670E",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 4,
+    "sata": 4,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20486,
+    "c": "Motherboard",
+    "n": "ASUS ROG Strix X670E-E Gaming Socket AM5(LGA 1718) Ryzen 7000 ATX Gaming Motherboard(18+2 Power Stages,PCIe® 5.0, DDR,4xM.2 Slots,USB 3.2 Gen 2x2, WiFi 6E,PCIe Slot Q-Release, M.2 Q-Latch) (Renewed)",
+    "b": "ASUS",
+    "pr": 249.99,
+    "msrp": 249.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81ohPDfik0L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 249.99,
+        "url": "https://www.amazon.com/dp/B0CJ4FBL2S?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "X670",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 3,
+    "sata": 4,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20487,
+    "c": "Motherboard",
+    "n": "MSI MAG X670E Tomahawk WiFi Gaming Motherboard (AMD AM5, DDR5, PCIe 5.0, SATA 6Gb/s, M.2, USB 3.2 Gen 2, Wi-Fi 6E, 2.5Gbps LAN, HDMI/DP, ATX) (Renewed)",
+    "b": "MSI",
+    "pr": 149.88,
+    "msrp": 149.88,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/816ESNZ4SpL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 149.88,
+        "url": "https://www.amazon.com/dp/B0CLMJ2RCR?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "X670",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 3,
+    "sata": 4,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20488,
+    "c": "Motherboard",
+    "n": "GIGABYTE X670 Gaming X AX V2 (AM5/ LGA 1718/ AMD/ X670/ ATX/ 5-Year Warranty/ DDR5/ PCIe 4.0 M.2/ PCIe 5.0/ USB 3.2 Gen1x2 Type-C/Wi-Fi 6E/ 2.5GbE LAN/Q-Flash Plus/PCIe EZ-Latch/Motherboard) (Renewed)",
+    "b": "Gigabyte",
+    "pr": 139.99,
+    "msrp": 139.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81kDPsjQ2FL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 139.99,
+        "url": "https://www.amazon.com/dp/B0D4VS1Y82?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "X670",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 3,
+    "sata": 4,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20489,
+    "c": "Motherboard",
+    "n": "ROG Strix B850-A Gaming WiFi AMD AM5 B850 ATX Motherboard 14+2+2 Power Stages, DDR5 AEMP, 2.5G LAN, WiFi 7 with Q-Antenna, 4X M.2, PCIe® 5.0, USB 20Gbps Type-C, AI Networking II, ASUS AI Advisor",
+    "b": "ASUS",
+    "pr": 229.99,
+    "msrp": 229.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81ZJGsaELhL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 229.99,
+        "url": "https://www.amazon.com/dp/B0DPLP33YR?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "B850",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2Slots": 3,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20490,
+    "c": "Motherboard",
+    "n": "Pro WS B850M-ACE SE AMD AM5 B850 mATX MicroATX Business motherboard, PCIe 5.0 x 16, DDR5, 2x PCIe 5.0 M.2, PCIe 5.0 MCIO, U.2, 10G & 2.5G LAN, USB4®, ASUS Control Center Express Remote Management",
+    "b": "ASUS",
+    "pr": 359.99,
+    "msrp": 359.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71XyPIWMEdL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 359.99,
+        "url": "https://www.amazon.com/dp/B0FTPDCM57?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "B850",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2Slots": 2,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20491,
+    "c": "Motherboard",
+    "n": "AMD Ryzen 7 7700X CPU Processor with MSI B850 Gaming PRO WIFI6E Motherboard (ATX, AM5, DDR5, M.2 Gen5, Wi-Fi 6E)",
+    "b": "MSI",
+    "pr": 399.99,
+    "msrp": 399.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71sFrF2yfjL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 399.99,
+        "url": "https://www.amazon.com/dp/B0G25HLK8N?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "B850",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2Slots": 3,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20492,
+    "c": "Motherboard",
+    "n": "AMD Ryzen 7 9700X CPU Processor with MSI B850 Gaming Plus WiFi Motherboard (ATX, AM5, DDR5, PCIe 5.0, M.2 Gen5, Wi-Fi 7, 5G LAN)",
+    "b": "MSI",
+    "pr": 479.99,
+    "msrp": 479.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71zimrYHQzL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 479.99,
+        "url": "https://www.amazon.com/dp/B0F9993JBP?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "B850",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2Slots": 2,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20493,
+    "c": "Motherboard",
+    "n": "MB ASRock AMD AM5 B850M Pro-A",
+    "b": "ASRock",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71Y2Wie5r9L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 129.99,
+        "url": "https://www.amazon.com/dp/B0DS6LMZ84?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "B850",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2Slots": 3,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20494,
+    "c": "Motherboard",
+    "n": "MB ASRock AMD AM5 B850M Pro-A",
+    "b": "ASRock",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71Y2Wie5r9L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 129.99,
+        "url": "https://www.amazon.com/dp/B0DS6LMZ84?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "B850",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 192,
+    "m2Slots": 2,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20495,
+    "c": "Motherboard",
+    "n": "AMD Ryzen 5 7600X CPU Processor Bundle with ASUS B650E MAX Gaming WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0, 3X M.2, Wi-Fi 6E)",
+    "b": "ASUS",
+    "pr": 338.99,
+    "msrp": 338.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71EGM5Ey-RL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 338.99,
+        "url": "https://www.amazon.com/dp/B0FDW29DS5?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "B650E",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 3,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20496,
+    "c": "Motherboard",
+    "n": "AMD Ryzen 5 9600X CPU Processor Bundle with ASUS B650E MAX Gaming WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0, 3X M.2, Wi-Fi 6E)",
+    "b": "ASUS",
+    "pr": 349.99,
+    "msrp": 349.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71RGczuUZVL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 349.99,
+        "url": "https://www.amazon.com/dp/B0FKZSMMQK?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "B650E",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 2,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20497,
+    "c": "Motherboard",
+    "n": "ASUS Prime B650M-A AX II AMD B650 AM5 Ryzen™ Desktop 9000 8000 & 7000 Micro-ATX mATX Motherboard, DDR5, PCIe 5.0 M.2, 2.5Gb LAN, Wi-Fi 6, DisplayPort, HDMI®, BIOS Flashback™ (Renewed)",
+    "b": "ASUS",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/81QeWAsPmDL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 99.99,
+        "url": "https://www.amazon.com/dp/B0DKHV68LY?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "B650",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 2,
+    "sata": 4,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20498,
+    "c": "Motherboard",
+    "n": "ASUS Prime B650M-A AX II AMD B650 AM5 Ryzen™ Desktop 9000 8000 & 7000 Micro-ATX mATX Motherboard, DDR5, PCIe 5.0 M.2, 2.5Gb LAN, Wi-Fi 6, DisplayPort, HDMI®, BIOS Flashback™ (Renewed)",
+    "b": "ASUS",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/81QeWAsPmDL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 99.99,
+        "url": "https://www.amazon.com/dp/B0DKHV68LY?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "B650",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20499,
+    "c": "Motherboard",
+    "n": "MSI MAG B650 Tomahawk WiFi Computer Gaming Motherboard (AM5, ATX, DDR5, PCIe 4.0, M.2, SATA 6Gb/s, USB 3.2 Gen 2, HDMI/DP, Wi-Fi 6E, AMD Ryzen 7000 Series Processors) AMD PC Motherboards (Renewed)",
+    "b": "MSI",
+    "pr": 119.99,
+    "msrp": 119.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/81k4xzo++EL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 119.99,
+        "url": "https://www.amazon.com/dp/B0CBLMQ3KB?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "B650",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 2,
+    "sata": 4,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20500,
+    "c": "Motherboard",
+    "n": "MSI PRO B650M-A WIFI motherboard AMD B650 Socket AM5 micro ATX (Renewed)",
+    "b": "MSI",
+    "pr": 109.99,
+    "msrp": 109.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81r6gJjhzHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 109.99,
+        "url": "https://www.amazon.com/dp/B0CM2VZBDL?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "B650",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20501,
+    "c": "Motherboard",
+    "n": "GIGABYTE B650 Gaming X AX V2 (rev. 1.0) AM5 LGA 1718 AMD B650 ATX DDR5, Triple M.2, PCIe 5.0, USB 3.2 Gen2x2 Type-C, AMD Wi-Fi 6E, Realtek 2.5GbE LAN (Renewed)",
+    "b": "Gigabyte",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71i6SdfjnTL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 99.99,
+        "url": "https://www.amazon.com/dp/B0DK7XP67K?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "B650",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 2,
+    "sata": 4,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20502,
+    "c": "Motherboard",
+    "n": "GIGABYTE B650M C V3 (rev. 1.0) AM5 LGA 1718 AMD B650 M-ATX Motherboard with 5-Year Warranty, DDR5, PCIe 4.0 M.2, PCIe 4.0, USB 3.2 Gen1 Type-C, 1GbE LAN, Q-Flash Plus, EZ-Latch (Renewed)",
+    "b": "Gigabyte",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81Tz7RLosbL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 89.99,
+        "url": "https://www.amazon.com/dp/B0DYS8Z557?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "B650",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20503,
+    "c": "Motherboard",
+    "n": "motherboards Fit for ASUS Prime A620M K DDR5 AMD A620 Supports Up to 9000 Series Ryzen Motherboard Series AM5 Micro-ATX",
+    "b": "ASUS",
+    "pr": 213.93,
+    "msrp": 213.93,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/61ZvXTbsJbL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 213.93,
+        "url": "https://www.amazon.com/dp/B0GRQYDBT1?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "A620",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20504,
+    "c": "Motherboard",
+    "n": "MSI PRO A620M-E ProSeries Motherboard (AMD 9000/8000/7000 Series Processors, AM5, DDR5, PCIe 4.0, SATA 6Gb/s, M.2, USB 3.2 Gen 1, DVI/HDMI, mATX) (Renewed)",
+    "b": "MSI",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/91HwUtyF+XL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 79.99,
+        "url": "https://www.amazon.com/dp/B0CCVH9GJJ?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM5",
+    "chipset": "A620",
+    "memType": "DDR5",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20505,
+    "c": "Motherboard",
+    "n": "ASUS TUF GAMING X570-PLUS Motherboard ,WI-FI, Socket AM4, USB-C Gen2 AMD (Renewed)",
+    "b": "ASUS",
+    "pr": 179.99,
+    "msrp": 179.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/710hyHWebnL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 179.99,
+        "url": "https://www.amazon.com/dp/B083SRFQPH?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "X570",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 2,
+    "sata": 6,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20506,
+    "c": "Motherboard",
+    "n": "ASRock X570 Pro 4 AM4/4DDR4/HDMI/DP/ATX Motherboard (Renewed)",
+    "b": "ASRock",
+    "pr": 134.97,
+    "msrp": 134.97,
+    "r": 1,
+    "img": "https://m.media-amazon.com/images/I/811la5BES3L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 134.97,
+        "url": "https://www.amazon.com/dp/B0977LNWZM?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "X570",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 2,
+    "sata": 6,
+    "ff": "ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20507,
+    "c": "Motherboard",
+    "n": "AMD Ryzen 7 5800XT Desktop Processor with ASUS TUF Gaming B550-PLUS WiFi II AM4 ATX Gaming Motherboard (DDR4, PCIe 4.0, WiFi 6, 2.5Gb LAN, USB 3.2 Gen 2)",
+    "b": "ASUS",
+    "pr": 399.99,
+    "msrp": 399.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71P3pZUi50L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 399.99,
+        "url": "https://www.amazon.com/dp/B0GJCTWDDL?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "B550",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 2,
+    "sata": 6,
+    "ff": "ATX"
+  },
+  {
+    "id": 20508,
+    "c": "Motherboard",
+    "n": "ASUS Prime B550M-A WiFi II AMD AM4 (3rd Gen Ryzen™) Micro ATX Motherboard (PCIe 4.0, WiFi 6, ECC Memory, 1Gb LAN, HDMI 2.1/D-Sub, 4K@60HZ, Addressable Gen 2 RGB Header and Aura Sync) (Renewed)",
+    "b": "ASUS",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/51ZUnFrLVVL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 89.99,
+        "url": "https://www.amazon.com/dp/B0CJH7J89Z?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "B550",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 1,
+    "sata": 6,
+    "ff": "Micro ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20509,
+    "c": "Motherboard",
+    "n": "MSI MPG B550 GAMING PLUS Desktop Motherboard - AMD B550 Chipset - Socket AM4 - ATX",
+    "b": "MSI",
+    "pr": 98.77,
+    "msrp": 98.77,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/91U1BLqCk2S._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 98.77,
+        "url": "https://www.amazon.com/dp/B08QTYSJ14?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "B550",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 2,
+    "sata": 6,
+    "ff": "ATX"
+  },
+  {
+    "id": 20510,
+    "c": "Motherboard",
+    "n": "MSI B550M PRO-VDH WiFi ProSeries Gaming Motherboard (AMD AM4, DDR4, PCIe 4.0, SATA 6Gb/s, M.2, USB 3.2 Gen 1, Wi-Fi, D-SUB/HDMI/DP, Micro-ATX) (Renewed)",
+    "b": "MSI",
+    "pr": 89.88,
+    "msrp": 89.88,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/91beeVTo4pL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 89.88,
+        "url": "https://www.amazon.com/dp/B091ML54YP?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "B550",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 1,
+    "sata": 6,
+    "ff": "Micro ATX",
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 20511,
+    "c": "Motherboard",
+    "n": "GIGABYTE B550 Eagle WIFI6 AMD AM4 ATX Motherboard, Supports Ryzen 5000/4000/3000 Processors, DDR4, 10+3 Power Phase, 2X M.2, PCIe 4.0, USB-C, WIFI6, GbE LAN, PCIe EZ-Latch, EZ-Latch, RGB Fusion",
+    "b": "Gigabyte",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81HyYYlfU6L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 99.99,
+        "url": "https://www.amazon.com/dp/B0DXWWWTH8?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "B550",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 2,
+    "sata": 6,
+    "ff": "ATX"
+  },
+  {
+    "id": 20512,
+    "c": "Motherboard",
+    "n": "Micro Center AMD Ryzen 5 5500 Desktop Processor with GIGABYTE B550 Eagle WIFI6 ATX Motherboard (AM4, DDR4, 2X M.2, PCIe 4.0, WIFI6, 1GbE LAN, EZ-Latch)",
+    "b": "Gigabyte",
+    "pr": 229.99,
+    "msrp": 229.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71iYxp18kPL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 229.99,
+        "url": "https://www.amazon.com/dp/B0GJD391BP?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "B550",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 1,
+    "sata": 6,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20513,
+    "c": "Motherboard",
+    "n": "B550M PRO SE - ASRock B550M Pro SE Gaming Desktop Motherboard - AMD PRO565 Chipset - Socket AM4 - Micro ATX - Ryzen 5, Ryzen 3 Processor Supported - 128 GB DDR4 SDRAM Maximum RAM - DIMM,",
+    "b": "ASRock",
+    "pr": 139.99,
+    "msrp": 139.99,
+    "r": 3.5,
+    "img": "https://m.media-amazon.com/images/I/81BOjjCv3UL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 139.99,
+        "url": "https://www.amazon.com/dp/B0DQTFCZ53?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "B550",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 2,
+    "sata": 6,
+    "ff": "ATX"
+  },
+  {
+    "id": 20514,
+    "c": "Motherboard",
+    "n": "B550M PRO SE - ASRock B550M Pro SE Gaming Desktop Motherboard - AMD PRO565 Chipset - Socket AM4 - Micro ATX - Ryzen 5, Ryzen 3 Processor Supported - 128 GB DDR4 SDRAM Maximum RAM - DIMM,",
+    "b": "ASRock",
+    "pr": 139.99,
+    "msrp": 139.99,
+    "r": 3.5,
+    "img": "https://m.media-amazon.com/images/I/81BOjjCv3UL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 139.99,
+        "url": "https://www.amazon.com/dp/B0DQTFCZ53?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "B550",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 128,
+    "m2Slots": 1,
+    "sata": 6,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20516,
+    "c": "Motherboard",
+    "n": "AMD Ryzen 5 4500 Desktop Processor with ASUS TUF Gaming A520M-PLUS (WiFi) AM4 microATX Motherboard (M.2 Support, 802.11ac Wi-Fi, DisplayPort, HDMI)",
+    "b": "ASUS",
+    "pr": 198.99,
+    "msrp": 198.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71UN-n6StaL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 198.99,
+        "url": "https://www.amazon.com/dp/B0DWJV8VPL?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "A520",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20517,
+    "c": "Motherboard",
+    "n": "AMD Ryzen 5 5500 Desktop Processor with ASUS TUF Gaming A520M-PLUS (WiFi) AM4 microATX Motherboard (M.2 Support, 802.11ac Wi-Fi, DisplayPort, HDMI)",
+    "b": "ASUS",
+    "pr": 197.99,
+    "msrp": 197.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61WwvkO9HkL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 197.99,
+        "url": "https://www.amazon.com/dp/B0DWJJ417R?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "A520",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20518,
+    "c": "Motherboard",
+    "n": "AMD Ryzen 5 4500 Unlocked Desktop Processor with MSI A520M-A PRO Gaming Motherboard (AMD AM4, DDR4, PCIe 4.0, Micro-ATX),",
+    "b": "MSI",
+    "pr": 168.99,
+    "msrp": 168.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71auet7RqFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 168.99,
+        "url": "https://www.amazon.com/dp/B0CHHYY1F1?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "A520",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20519,
+    "c": "Motherboard",
+    "n": "A520M S2H (AMD Ryzen AM4/MicroATX/4+3 Phases Digital PWM/Gigabyte Gaming GbE LAN/NVMe PCIe 3.0 x4 M.2/3 Display Interfaces/Q-Flash Plus/RGB Fusion 2.0/Motherboard)",
+    "b": "Gigabyte",
+    "pr": 78.99,
+    "msrp": 78.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/91ce9mEOmLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 78.99,
+        "url": "https://www.amazon.com/dp/B08F7HPJ4F?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "A520",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
+    "id": 20520,
+    "c": "Motherboard",
+    "n": "A520M S2H (AMD Ryzen AM4/MicroATX/4+3 Phases Digital PWM/Gigabyte Gaming GbE LAN/NVMe PCIe 3.0 x4 M.2/3 Display Interfaces/Q-Flash Plus/RGB Fusion 2.0/Motherboard)",
+    "b": "Gigabyte",
+    "pr": 78.99,
+    "msrp": 78.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/91ce9mEOmLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 78.99,
+        "url": "https://www.amazon.com/dp/B08F7HPJ4F?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "A520",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "Micro ATX"
+  },
+  {
+    "id": 20521,
+    "c": "Motherboard",
+    "n": "AMD Ryzen 5 5500 Desktop Processor with ASRock A520M-HDV AM4 DDR4 Motherboard",
+    "b": "ASRock",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71x+MOX8C7L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 169.99,
+        "url": "https://www.amazon.com/dp/B0GQXNC543?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "socket": "AM4",
+    "chipset": "A520",
+    "memType": "DDR4",
+    "memSlots": 4,
+    "maxMem": 64,
+    "m2Slots": 1,
+    "sata": 4,
+    "ff": "ATX"
+  },
+  {
     "id": 30001,
     "n": "Intel Arc A770 LE",
     "img": "https://m.media-amazon.com/images/I/71X6uBcNk3L._AC_SL300_.jpg",
@@ -30074,6 +32290,1310 @@ export const PARTS = [
     "slots": "2.5-slot",
     "length": 310,
     "bench": 78
+  },
+  {
+    "id": 30328,
+    "c": "GPU",
+    "n": "ASUS TUF Gaming NVIDIA GeForce RTX 4080 Super OC Edition Gaming Graphics Card (PCIe 4.0, 16GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a) (Renewed)",
+    "b": "ASUS",
+    "pr": 1144.99,
+    "msrp": 1144.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81rCZZvkIVL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 1144.99,
+        "url": "https://www.amazon.com/dp/B0DTFYPGWS?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 320,
+    "bench": 76,
+    "vram": 16384,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30329,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce RTX 4060 8GB GDRR6 128-Bit HDMI/DP Nvlink TORX Fan 4.0 Ada Lovelace Architecture Graphics Card (RTX 4060 Ventus 2X Black 8G OC) (Renewed)",
+    "b": "MSI",
+    "pr": 329.99,
+    "msrp": 329.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71t1ClD2EtL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 329.99,
+        "url": "https://www.amazon.com/dp/B0CT69D3MP?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 115,
+    "bench": 32,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30330,
+    "c": "GPU",
+    "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3090 Ti OC Edition Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak) (Renewed)",
+    "b": "ASUS",
+    "pr": 1549.99,
+    "msrp": 1549.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81Y3qQfLqtL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 1549.99,
+        "url": "https://www.amazon.com/dp/B0BDXSQZY9?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 450,
+    "bench": 66,
+    "vram": 24576,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30331,
+    "c": "GPU",
+    "n": "ASUS ROG Strix GeForce RTX 3090 OC Edition 24GB GDDR6X Gaming Graphics Card with Axial-tech Fans & Central Static Pressure Fan ROG-STRIX-RTX3090-O24G-GAMING (Renewed)",
+    "b": "ASUS",
+    "pr": 1394.99,
+    "msrp": 1394.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/811EdNEM2RL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 1394.99,
+        "url": "https://www.amazon.com/dp/B09S1CJY5L?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 350,
+    "bench": 60,
+    "vram": 24576,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30332,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce RTX 3090 24GB GDRR6X 384-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC Graphics Card (RTX 3090 VENTUS 3X 24G OC) (Renewed)",
+    "b": "MSI",
+    "pr": 1379.99,
+    "msrp": 1379.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61MYs1QhuRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 1379.99,
+        "url": "https://www.amazon.com/dp/B094PSPVPC?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 350,
+    "bench": 60,
+    "vram": 24576,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30333,
+    "c": "GPU",
+    "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3080 Ti OC Edition Graphics Card (PCIe 4.0, 12GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II) (Renewed)",
+    "b": "ASUS",
+    "pr": 564.99,
+    "msrp": 564.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81+VQfLlOGS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 564.99,
+        "url": "https://www.amazon.com/dp/B09DXL2C1X?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 350,
+    "bench": 58,
+    "vram": 12288,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30334,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce RTX 3080 Ti Gaming X Trio 12G Computer Gaming Graphics Card 12GB GDRR6X 320-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC, NVIDIA GPU Video Cards for Gaming PC (Renewed)",
+    "b": "MSI",
+    "pr": 639.97,
+    "msrp": 639.97,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/81+EtD9L9uS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 639.97,
+        "url": "https://www.amazon.com/dp/B098SXKWGP?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 350,
+    "bench": 58,
+    "vram": 12288,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30335,
+    "c": "GPU",
+    "n": "GIGABYTE GeForce RTX 3080 Ti Gaming OC 12G Graphics Card, 3X WINDFORCE Fans, 12GB 384-Bit GDDR6X, GV-N308TGAMING OC-12GD Video Card (Renewed)",
+    "b": "Gigabyte",
+    "pr": 609.97,
+    "msrp": 609.97,
+    "r": 2.9,
+    "img": "https://m.media-amazon.com/images/I/71Z81Ai5GgL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 609.97,
+        "url": "https://www.amazon.com/dp/B09CMFP6H7?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 350,
+    "bench": 58,
+    "vram": 12288,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30336,
+    "c": "GPU",
+    "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3080 Graphics Card (PCIe 4.0, 10GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II) (Renewed)",
+    "b": "ASUS",
+    "pr": 429.99,
+    "msrp": 429.99,
+    "r": 3.2,
+    "img": "https://m.media-amazon.com/images/I/71JC7wBkaEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 429.99,
+        "url": "https://www.amazon.com/dp/B09S1DXTZP?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 320,
+    "bench": 52,
+    "vram": 10240,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30337,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce RTX 3080 LHR 10GB GDRR6X 320-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC Graphics Card (RTX 3080 Ventus 3X 10G OC LHR) (Renewed)",
+    "b": "MSI",
+    "pr": 439.99,
+    "msrp": 439.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71Z8T2mkLhL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 439.99,
+        "url": "https://www.amazon.com/dp/B09J1QCT9Y?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 320,
+    "bench": 52,
+    "vram": 10240,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30338,
+    "c": "GPU",
+    "n": "GIGABYTE GeForce RTX 3080 Gaming OC 10G (REV2.0) Graphics Card, 3X WINDFORCE Fans, LHR, 10GB 320-bit GDDR6X, GV-N3080GAMING OC-10GD REV2.0 Video Card (Renewed)",
+    "b": "Gigabyte",
+    "pr": 404.99,
+    "msrp": 404.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/71UStULnUyS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 404.99,
+        "url": "https://www.amazon.com/dp/B09XBG1YGX?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 320,
+    "bench": 52,
+    "vram": 10240,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30339,
+    "c": "GPU",
+    "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3070 Ti OC Edition Graphics Card (PCIe 4.0, 8GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II) (Renewed)",
+    "b": "ASUS",
+    "pr": 399.97,
+    "msrp": 399.97,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81t7Ga7nyxS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 399.97,
+        "url": "https://www.amazon.com/dp/B09B38Z7DB?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 290,
+    "bench": 44,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30340,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce RTX 3070 Ti Gaming X Trio 8G 8GB GDDR6X Graphics Card - NVIDIA Video Card GPU for Gaming PC, 256-Bit HDMI/DP Nvlink, Ampere Architecture Computer Graphics Cards (Renewed)",
+    "b": "MSI",
+    "pr": 384.97,
+    "msrp": 384.97,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/81XJZl7OOoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 384.97,
+        "url": "https://www.amazon.com/dp/B09D7JX24S?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 290,
+    "bench": 44,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30341,
+    "c": "GPU",
+    "n": "GIGABYTE GeForce RTX 3070 Ti Gaming OC 8G Graphics Card, WINDFORCE 3X Cooling System, 8GB 256-bit GDDR6X, GV-N307TGAMING OC-8GD Video Card (Renewed)",
+    "b": "Gigabyte",
+    "pr": 364.99,
+    "msrp": 364.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/81ZWSNdXNSS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 364.99,
+        "url": "https://www.amazon.com/dp/B09C642YHC?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 290,
+    "bench": 44,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30342,
+    "c": "GPU",
+    "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3070 OC Edition Graphics Card- PCIe 4.0, 8GB GDDR6, HDMI 2.1 , DisplayPort 1.4a, Dual Ball Fan Bearings (Renewed)",
+    "b": "ASUS",
+    "pr": 309.97,
+    "msrp": 309.97,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71WRO9tqmnL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 309.97,
+        "url": "https://www.amazon.com/dp/B098J6J3BT?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 220,
+    "bench": 40,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30343,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce RTX 3070 8GB GDRR6 256-Bit HDMI/DP TORX Fan 3.0 Ampere Architecture OC Graphics Card (RTX 3070 Ventus 3X OC) (Renewed)",
+    "b": "MSI",
+    "pr": 299.97,
+    "msrp": 299.97,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51PhjUJsBxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 299.97,
+        "url": "https://www.amazon.com/dp/B093X1Y8F4?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 220,
+    "bench": 40,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30344,
+    "c": "GPU",
+    "n": "Gigabyte GeForce RTX 3070 Gaming OC 8G Graphics Card, 3X WINDFORCE Fans, 8GB 256-Bit GDDR6, GV-N3070GAMING OC-8GD Video Card (Renewed)",
+    "b": "Gigabyte",
+    "pr": 281.19,
+    "msrp": 281.19,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/81jD95YAJYL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 281.19,
+        "url": "https://www.amazon.com/dp/B09D8LKJYY?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 220,
+    "bench": 40,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30345,
+    "c": "GPU",
+    "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3060 Ti V2 OC Edition Graphics Card (PCIe 4.0, 8GB GDDR6, LHR, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade , GPU Tweak II) (Renewed)",
+    "b": "ASUS",
+    "pr": 309.97,
+    "msrp": 309.97,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71bjQFz5HeL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 309.97,
+        "url": "https://www.amazon.com/dp/B09HP4L27C?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 200,
+    "bench": 35,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30346,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce RTX 3060 Ti LHR 8GB GDRR6 256-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC Graphics Card (RTX 3060 Ti Ventus 2X 8G OCV1 LHR) (Renewed)",
+    "b": "MSI",
+    "pr": 289.97,
+    "msrp": 289.97,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71A5jcQ289S._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 289.97,
+        "url": "https://www.amazon.com/dp/B097HVG91P?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 200,
+    "bench": 35,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30347,
+    "c": "GPU",
+    "n": "GIGABYTE AORUS GeForce RTX 3060 Ti Elite 8G (REV2.0) Graphics Card, 3X WINDFORCE Fans, LHR, 8GB 256-bit GDDR6, GV-N306TAORUS E-8GD REV2.0 Video Card (Renewed)",
+    "b": "Gigabyte",
+    "pr": 297,
+    "msrp": 297,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/71FAvxayuYL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 297,
+        "url": "https://www.amazon.com/dp/B09PFGV3ZM?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 200,
+    "bench": 35,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30348,
+    "c": "GPU",
+    "n": "ASUS Phoenix NVIDIA GeForce RTX 3060 V2 Gaming Graphics Card- PCIe 4.0, 12GB GDDR6, HDMI, DisplayPort 1.4a, Axial-tech Fan Design, Protective Backplate, Dual ball fan bearings, Auto-Extreme (Renewed)",
+    "b": "ASUS",
+    "pr": 359.99,
+    "msrp": 359.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/815YP0QCmXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 359.99,
+        "url": "https://www.amazon.com/dp/B0BLJD9FV4?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 170,
+    "bench": 28,
+    "vram": 12288,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30349,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce RTX 2080 Ti GDRR6 352-bit HDMI/DP/USB Ray Tracing Turing Architecture Graphics Card (RTX 2080 TI Gaming X Trio) (Renewed)",
+    "b": "MSI",
+    "pr": 339.99,
+    "msrp": 339.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/61VYVTc8wYL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 339.99,
+        "url": "https://www.amazon.com/dp/B07VR2GZMB?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 250,
+    "bench": 36,
+    "vram": 11264,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30350,
+    "c": "GPU",
+    "n": "Gigabyte GeForce RTX 2080 Ti Turbo GV-N208TTURBO-11GC Graphics Card - 1.55 GHz Core - 11 GB GDDR6-352 Bit Bus Width - Fan Cooler - DirectX 12, Opengl 4.5-3 X DisplayPort - 1 x HDMI (Renewed)",
+    "b": "Gigabyte",
+    "pr": 329.97,
+    "msrp": 329.97,
+    "r": 3.4,
+    "img": "https://m.media-amazon.com/images/I/512jGBX0N2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 329.97,
+        "url": "https://www.amazon.com/dp/B0CDJ5ZL4V?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 250,
+    "bench": 36,
+    "vram": 11264,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30351,
+    "c": "GPU",
+    "n": "ASUS ROG Strix GeForce RTX 2080 Super Advanced Overclocked 8G GDDR6 HDMI DP 1.4 USB Type-C Gaming Graphics Card (ROG-STRIX-RTX-2080S-A8G) (Renewed)",
+    "b": "ASUS",
+    "pr": 384.99,
+    "msrp": 384.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/41BBg6TwtmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 384.99,
+        "url": "https://www.amazon.com/dp/B08DHCLRXH?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 250,
+    "bench": 33,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30352,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce RTX 2080 Super 8GB GDRR6 256-Bit HDMI/DP Nvlink Torx Fan Turing Architecture Overclocked Graphics Card (RTX 2080 Super Ventus XS OC) (Renewed)",
+    "b": "MSI",
+    "pr": 314.97,
+    "msrp": 314.97,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/61M1b4J-mkL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 314.97,
+        "url": "https://www.amazon.com/dp/B08CLV8CKP?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 250,
+    "bench": 33,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30353,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce RTX 2080 8GB GDRR6 256-bit HDMI/DP/USB Ray Tracing Turing Architecture Graphics Card (RTX 2080 Ventus 8G) (Renewed)",
+    "b": "MSI",
+    "pr": 268.07,
+    "msrp": 268.07,
+    "r": 3,
+    "img": "https://m.media-amazon.com/images/I/61d3mKBiZgL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 268.07,
+        "url": "https://www.amazon.com/dp/B07XSDP7T3?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 215,
+    "bench": 32,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30354,
+    "c": "GPU",
+    "n": "ASUS GeForce RTX 2070 Super Overclocked 8G EVO GDDR6 Dual-Fan Edition VR Ready HDMI DisplayPort Gaming Graphics Card (DUAL-RTX-2070S-O8G-EVO) (Renewed)",
+    "b": "ASUS",
+    "pr": 274.99,
+    "msrp": 274.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61B+Vr+4o+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 274.99,
+        "url": "https://www.amazon.com/dp/B0868WVB2H?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 215,
+    "bench": 30,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30355,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce RTX 2070 Super 8GB GDRR6 256-bit HDMI/DP NVLink Torx Fan Turing Architecture Overclocked Graphics Card (RTX 2070 Super Ventus OC) (Renewed)",
+    "b": "MSI",
+    "pr": 294.97,
+    "msrp": 294.97,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/618iLMdmiEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 294.97,
+        "url": "https://www.amazon.com/dp/B08CL5J9WT?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 215,
+    "bench": 30,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30356,
+    "c": "GPU",
+    "n": "Gigabyte GV-N207SWF3OC-8GD GeForce RTX 2070 Super Windforce OC 8G Graphics Card, 3X Windforce Fans, 8GB 256-Bit GDDR6, Video Card (Renewed)",
+    "b": "Gigabyte",
+    "pr": 284.97,
+    "msrp": 284.97,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/612g83iYsTL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 284.97,
+        "url": "https://www.amazon.com/dp/B08HJN1W5B?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 215,
+    "bench": 30,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30357,
+    "c": "GPU",
+    "n": "ASUS Dual NVIDIA GeForce RTX 2070 EVO V2 OC Edition Gaming Graphics Card (DUAL-RTX2070 (Renewed)",
+    "b": "ASUS",
+    "pr": 299.99,
+    "msrp": 299.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/91agTSDcZsL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 299.99,
+        "url": "https://www.amazon.com/dp/B08LQPZBHF?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 175,
+    "bench": 27,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30358,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce RTX 2070 8GB GDRR6 256-bit HDMI/DP/USB Ray Tracing Turing Architecture HDCP Graphics Card (RTX 2070 Ventus 8G), 1620 Mhz (Renewed)",
+    "b": "MSI",
+    "pr": 254.97,
+    "msrp": 254.97,
+    "r": 2.7,
+    "img": "https://m.media-amazon.com/images/I/51PQWIhNU5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 254.97,
+        "url": "https://www.amazon.com/dp/B08467SHQ7?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 175,
+    "bench": 27,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30359,
+    "c": "GPU",
+    "n": "ASUS ROG Strix GeForce RTX 2060 Super Advanced Overclocked EVO 8G GDDR6 HDMI DisplayPort USB Type-C Gaming Graphics Card (ROG-STRIX-RTX2060S-A8G-EVO-GAMING) (Renewed)",
+    "b": "ASUS",
+    "pr": 274.97,
+    "msrp": 274.97,
+    "r": 3.5,
+    "img": "https://m.media-amazon.com/images/I/81gJgg9XedL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 274.97,
+        "url": "https://www.amazon.com/dp/B08KNXZD63?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 175,
+    "bench": 26,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30360,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce RTX 2060 Super 8GB GDRR6 256-Bit HDMI/DP G-Sync Turing Architecture Overclocked Graphics Card (RTX 2060 Super Ventus GP OC) (RTX 2060 Super Ventus GP OC) (Renewed)",
+    "b": "MSI",
+    "pr": 269.97,
+    "msrp": 269.97,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/61S-bkl9-RL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 269.97,
+        "url": "https://www.amazon.com/dp/B08HR46F9P?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 175,
+    "bench": 26,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30361,
+    "c": "GPU",
+    "n": "GIGABYTE GeForce RTX 2060 SUPER GAMING OC 8G Graphics Card, 3X Windforce Fans,8GB 256-bit GDDR6, GV-N206SGAMING OC-8GC Video Card (Renewed)",
+    "b": "Gigabyte",
+    "pr": 259.97,
+    "msrp": 259.97,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81a6UyDvH7L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 259.97,
+        "url": "https://www.amazon.com/dp/B08511RGBC?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 175,
+    "bench": 26,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30362,
+    "c": "GPU",
+    "n": "ASUS GeForce RTX 2060 Overclocked 6G GDDR6 Dual-Fan EVO Edition VR Ready HDMI DisplayPort DVI Graphics Card (DUAL-RTX2060-O6G-EVO) (Renewed)",
+    "b": "ASUS",
+    "pr": 219.97,
+    "msrp": 219.97,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/81murmTdjAL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 219.97,
+        "url": "https://www.amazon.com/dp/B08JJC6WLV?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 160,
+    "bench": 22,
+    "vram": 6144,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30363,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce RTX 2060 6GB GDRR6 192-bit HDMI/DP Ray Tracing Turing Architecture VR Ready Graphics Card (RTX 2060 Ventus 6G OC) (Renewed)",
+    "b": "MSI",
+    "pr": 219.97,
+    "msrp": 219.97,
+    "r": 3.5,
+    "img": "https://m.media-amazon.com/images/I/51e2gqSDgiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 219.97,
+        "url": "https://www.amazon.com/dp/B08668JVV7?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 160,
+    "bench": 22,
+    "vram": 6144,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30364,
+    "c": "GPU",
+    "n": "GIGABYTE MSI Gaming Radeon RX 6900 XT Gaming Z Trio 16G 16GB GDDR6 256-Bit HDMI/DP Nvlink Torx Fan 4 AMD Graphics Card (RX 6900 XT Gaming Z Trio 16G)",
+    "b": "MSI",
+    "pr": 689.99,
+    "msrp": 689.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61yb+mZNfuS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 689.99,
+        "url": "https://www.amazon.com/dp/B096M7NPNP?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 300,
+    "bench": 52,
+    "vram": 16384
+  },
+  {
+    "id": 30365,
+    "c": "GPU",
+    "n": "GIGABYTE MSI Gaming Radeon RX 6900 XT Gaming Z Trio 16G 16GB GDDR6 256-Bit HDMI/DP Nvlink Torx Fan 4 AMD Graphics Card (RX 6900 XT Gaming Z Trio 16G)",
+    "b": "Gigabyte",
+    "pr": 689.99,
+    "msrp": 689.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61yb+mZNfuS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 689.99,
+        "url": "https://www.amazon.com/dp/B096M7NPNP?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 300,
+    "bench": 52,
+    "vram": 16384
+  },
+  {
+    "id": 30366,
+    "c": "GPU",
+    "n": "GIGABYTE AMD Radeon RX 6800 XT Gaming OC 16G Graphics Card, 16GB of GDDR6 Memory, Powered by AMD RDNA 2, HDMI 2.1, WINDFORCE 3X Cooling System, GV-R68XTGAMING OC-16GD (Renewed)",
+    "b": "Gigabyte",
+    "pr": 459.99,
+    "msrp": 459.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81AR+89LNDS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 459.99,
+        "url": "https://www.amazon.com/dp/B096N2HQSK?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 300,
+    "bench": 48,
+    "vram": 16384,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30367,
+    "c": "GPU",
+    "n": "MSI Gaming Radeon RX 6700 XT 192-bit 12GB GDDR6 DP/HDMI Dual Torx 3.0 Fans FreeSync DirectX 12 VR Ready OC Graphics Card (RX 6700 XT MECH 2X 12G OC) (Renewed)",
+    "b": "MSI",
+    "pr": 399.97,
+    "msrp": 399.97,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/51FHrEcBIaL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 399.97,
+        "url": "https://www.amazon.com/dp/B094MKYVNS?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 230,
+    "bench": 38,
+    "vram": 12288,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30368,
+    "c": "GPU",
+    "n": "ASUS Dual AMD Radeon RX 6600 XT OC Edition 8GB GDDR6 Gaming Graphics Card (AMD RDNA 2, PCIe 4.0, 8GB GDDR6 Memory, HDMI 2.1, DisplayPort 1.4a, Axial-tech Fan Design, 0dB Technology) (Renewed)",
+    "b": "ASUS",
+    "pr": 319.97,
+    "msrp": 319.97,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/81SCA53SYnL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 319.97,
+        "url": "https://www.amazon.com/dp/B09JHTDG14?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 160,
+    "bench": 28,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30369,
+    "c": "GPU",
+    "n": "MSI Gaming AMD Radeon RX 6600 XT 8GB GDDR6 128-bit HDMI/DP 2602 MHz Boost Clock FreeSync DirectX 12 VR Ready OC Graphics Card (RX 6600 XT MECH 2X 8G OCV1) (Renewed)",
+    "b": "MSI",
+    "pr": 319.97,
+    "msrp": 319.97,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61lAl8On1pL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 319.97,
+        "url": "https://www.amazon.com/dp/B0BMF926BD?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 160,
+    "bench": 28,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30370,
+    "c": "GPU",
+    "n": "Gigabyte Radeon RX 6600 XT Eagle 8G Graphics Card, WINDFORCE 3X Cooling System, 8GB 128-bit GDDR6, GV-R66XTEAGLE-8GD Video Card (Renewed)",
+    "b": "Gigabyte",
+    "pr": 289.99,
+    "msrp": 289.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/710xfLBoFpL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 289.99,
+        "url": "https://www.amazon.com/dp/B0DDFLB1WJ?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 160,
+    "bench": 28,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30371,
+    "c": "GPU",
+    "n": "GIGABYTE Radeon RX 6600 Eagle 8G Graphics Card, WINDFORCE 3X Cooling System, 8GB 128-bit GDDR6, GV-R66EAGLE-8GD Video Card (Renewed)",
+    "b": "Gigabyte",
+    "pr": 274.99,
+    "msrp": 274.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/6121pomHteL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 274.99,
+        "url": "https://www.amazon.com/dp/B0B41DJFKF?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 132,
+    "bench": 24,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30372,
+    "c": "GPU",
+    "n": "MSI Gaming AMD Radeon RX 6500 XT 64-bit 4GB GDDR6 DP/HDMI PCIe 4 Torx Twin Fans FreeSync DirectX 12 VR Ready OC Graphics Card (RX 6500 XT MECH 2X 4G OC) (Renewed)",
+    "b": "MSI",
+    "pr": 156.44,
+    "msrp": 156.44,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71X7ZMV-gmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 156.44,
+        "url": "https://www.amazon.com/dp/B0BLH6KD8S?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 107,
+    "bench": 16,
+    "vram": 4096,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30373,
+    "c": "GPU",
+    "n": "GIGABYTE Radeon RX 6500 XT Gaming OC 4G Graphics Card, WINDFORCE 3X Cooling System, 4GB 64-bit GDDR6, GV-R65XTGAMING OC-4GD Video Card (Renewed)",
+    "b": "Gigabyte",
+    "pr": 159.97,
+    "msrp": 159.97,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71oyRDhifFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 159.97,
+        "url": "https://www.amazon.com/dp/B0B1C9QBSW?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 107,
+    "bench": 16,
+    "vram": 4096,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30374,
+    "c": "GPU",
+    "n": "ASUS DUAL AMD Radeon RX 5700 XT EVO OC Edition Gaming Graphics Card (PCIe 4.0, 8GB GDDR6 memory, HDMI, DisplayPort, 1440p, Axial-tech Fan Design, metal backplate) (DUAL-RX5700XT-O (Renewed)",
+    "b": "ASUS",
+    "pr": 214.97,
+    "msrp": 214.97,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81fwY4bwNWL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 214.97,
+        "url": "https://www.amazon.com/dp/B09RYM39RQ?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 225,
+    "bench": 26,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30375,
+    "c": "GPU",
+    "n": "MSI Gaming Radeon Rx 5700 Xt Boost Clock: 1925 MHz 256-bit 8GB GDDR6 DP/HDMI Dual Fans Crossfire Freesync Navi Architecture Graphics Card (RX 5700 Xt Mech OC) (Renewed)",
+    "b": "MSI",
+    "pr": 219.97,
+    "msrp": 219.97,
+    "r": 3.4,
+    "img": "https://m.media-amazon.com/images/I/5122hN8-HmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 219.97,
+        "url": "https://www.amazon.com/dp/B082QSXNYH?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 225,
+    "bench": 26,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30376,
+    "c": "GPU",
+    "n": "Gigabyte Gv-R57XTGAMING OC-8GD Radeon Rx 5700 Xt Gaming OC 8G Graphics Card, PCIe 4.0, 8GB 256-Bit GDDR6, Video Card (Renewed)",
+    "b": "Gigabyte",
+    "pr": 239.97,
+    "msrp": 239.97,
+    "r": 3.4,
+    "img": "https://m.media-amazon.com/images/I/816Hc0xgwvL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 239.97,
+        "url": "https://www.amazon.com/dp/B08JH7BLCM?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 225,
+    "bench": 26,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30377,
+    "c": "GPU",
+    "n": "MSI Gaming Radeon RX 5700 Boost Clock: 1750 MHz 256-bit 8GB GDDR6 DP/HDMI Dual Torx 3.0 Fans Crossfire Navi AMD Radeon FreeSync Graphics Card (RX 5700 MECH GP OC) (Renewed)",
+    "b": "MSI",
+    "pr": 204.97,
+    "msrp": 204.97,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51eQhfV-oQL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 204.97,
+        "url": "https://www.amazon.com/dp/B0DJFZQC3G?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 180,
+    "bench": 23,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30378,
+    "c": "GPU",
+    "n": "MSI Gaming Radeon RX 5500 XT Boost Clock: 1845 MHz 128-bit 4GB GDDR6 DP/HDMI Dual Torx 3.0 Fans Freesync VR Ready Graphics Card (RX 5500 XT MECH 4G OC) (Radeon RX 5500 XT MECH 4G OC) (Renewed)",
+    "b": "MSI",
+    "pr": 134.97,
+    "msrp": 134.97,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61wbdlqQeiS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 134.97,
+        "url": "https://www.amazon.com/dp/B0933N916K?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 130,
+    "bench": 14,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30379,
+    "c": "GPU",
+    "n": "MSI VGA Graphic Cards RX 580 Gaming X 8G (Renewed)",
+    "b": "MSI",
+    "pr": 139.97,
+    "msrp": 139.97,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81Q56tYaAFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 139.97,
+        "url": "https://www.amazon.com/dp/B0827GZNGF?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 185,
+    "bench": 13,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30381,
+    "c": "GPU",
+    "n": "MSI Gaming Radeon RX 570 256-bit 8GB GDRR5 DirectX 12 VR Ready CFX Graphcis Card (RX 570 ARMOR 8G OC) (Renewed)",
+    "b": "MSI",
+    "pr": 109.97,
+    "msrp": 109.97,
+    "r": 3.6,
+    "img": "https://m.media-amazon.com/images/I/61oF4vb63DL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 109.97,
+        "url": "https://www.amazon.com/dp/B07KQ9D24C?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 150,
+    "bench": 11,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30382,
+    "c": "GPU",
+    "n": "Gigabyte Radeon RX 570 Gaming 4GB Graphic Cards GV-RX570GAMING-4GD (Renewed)",
+    "b": "Gigabyte",
+    "pr": 109.99,
+    "msrp": 109.99,
+    "r": 3.1,
+    "img": "https://m.media-amazon.com/images/I/61pAm1soT2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 109.99,
+        "url": "https://www.amazon.com/dp/B07GSBJWMD?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 150,
+    "bench": 11,
+    "vram": 8192,
+    "used": true,
+    "condition": "used"
+  },
+  {
+    "id": 30383,
+    "c": "GPU",
+    "n": "Sparkle Intel Arc B580 Titan OC, 12GB GDDR6, Torn Cooling 2.0, Axial Fan, Breathing Light, Metal Backplate, SB580T-12GOC",
+    "b": "Sparkle",
+    "pr": 434.39,
+    "msrp": 434.39,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/7130pk1Eh0L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 434.39,
+        "url": "https://www.amazon.com/dp/B0DNMH4KQM?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 190,
+    "bench": 36,
+    "vram": 12288
+  },
+  {
+    "id": 30384,
+    "c": "GPU",
+    "n": "Sparkle Intel Arc B570 Guardian OC Graphics Card, 10GB GDDR6, Torn Cooling 2.0, Axial Fan, Breathing Light, Metal Backplate, SB570G-10GOC",
+    "b": "Sparkle",
+    "pr": 331.32,
+    "msrp": 331.32,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71qcFgjH5zL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 331.32,
+        "url": "https://www.amazon.com/dp/B0DR337DJG?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 150,
+    "bench": 30,
+    "vram": 10240
+  },
+  {
+    "id": 30385,
+    "c": "GPU",
+    "n": "Sparkle Intel Arc A770 ROC OC Edition, 16GB GDDR6, 2X DBB 100mm Fan, 2.5-Slot, Metal Backplate, SA770R-16GOC",
+    "b": "Sparkle",
+    "pr": 433.3,
+    "msrp": 433.3,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71i24iuoCxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 433.3,
+        "url": "https://www.amazon.com/dp/B0D1RGP56Y?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 225,
+    "bench": 32,
+    "vram": 16384
+  },
+  {
+    "id": 30386,
+    "c": "GPU",
+    "n": "Sparkle Intel Arc A750 Titan OC Edition, 8GB GDDR6, ThermalSync, Torn Cooling, Axial Fan, Metal Backplate, SA750T-8GOC",
+    "b": "Sparkle",
+    "pr": 308.05,
+    "msrp": 308.05,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61vbiY5lubL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 308.05,
+        "url": "https://www.amazon.com/dp/B0C74VLBH6?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 225,
+    "bench": 28,
+    "vram": 8192
+  },
+  {
+    "id": 30387,
+    "c": "GPU",
+    "n": "Sparkle Intel Arc A380 ELF, 6GB GDDR6, Single Fan, SA380E-6G",
+    "b": "Sparkle",
+    "pr": 212.56,
+    "msrp": 212.56,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61GgzvneScL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 212.56,
+        "url": "https://www.amazon.com/dp/B0C74RQV9K?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 75,
+    "bench": 12,
+    "vram": 6144
+  },
+  {
+    "id": 30389,
+    "c": "GPU",
+    "n": "Intel Arc A380 Challenger ITX 6GB OC Graphics Card | Single Slot ITX | 2250 MHz | 6GB GDDR6 | DisplayPort 2.0 | HDMI 2.0b | 0dB Cooling | 8K Support | 500W | DirectX 12 Ultimate | PCle 4.0",
+    "b": "Intel",
+    "pr": 139.99,
+    "msrp": 139.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/611GcTajUIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "price": 139.99,
+        "url": "https://www.amazon.com/dp/B0BFD8DSM3?tag=tiereduptech-20",
+        "inStock": true
+      }
+    },
+    "tdp": 75,
+    "bench": 12,
+    "vram": 6144
   },
   {
     "id": 40000,
