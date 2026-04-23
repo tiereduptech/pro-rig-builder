@@ -21292,81 +21292,6 @@ export const PARTS = [
     "ff": "ATX"
   },
   {
-    "id": 20516,
-    "c": "Motherboard",
-    "n": "AMD Ryzen 5 4500 Desktop Processor with ASUS TUF Gaming A520M-PLUS (WiFi) AM4 microATX Motherboard (M.2 Support, 802.11ac Wi-Fi, DisplayPort, HDMI)",
-    "b": "ASUS",
-    "pr": 198.99,
-    "msrp": 198.99,
-    "r": 5,
-    "img": "https://m.media-amazon.com/images/I/71UN-n6StaL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 198.99,
-        "url": "https://www.amazon.com/dp/B0DWJV8VPL?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "AM4",
-    "chipset": "A520",
-    "memType": "DDR4",
-    "memSlots": 4,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "ATX"
-  },
-  {
-    "id": 20517,
-    "c": "Motherboard",
-    "n": "AMD Ryzen 5 5500 Desktop Processor with ASUS TUF Gaming A520M-PLUS (WiFi) AM4 microATX Motherboard (M.2 Support, 802.11ac Wi-Fi, DisplayPort, HDMI)",
-    "b": "ASUS",
-    "pr": 197.99,
-    "msrp": 197.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/61WwvkO9HkL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 197.99,
-        "url": "https://www.amazon.com/dp/B0DWJJ417R?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "AM4",
-    "chipset": "A520",
-    "memType": "DDR4",
-    "memSlots": 4,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "Micro ATX"
-  },
-  {
-    "id": 20518,
-    "c": "Motherboard",
-    "n": "AMD Ryzen 5 4500 Unlocked Desktop Processor with MSI A520M-A PRO Gaming Motherboard (AMD AM4, DDR4, PCIe 4.0, Micro-ATX),",
-    "b": "MSI",
-    "pr": 168.99,
-    "msrp": 168.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/71auet7RqFL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 168.99,
-        "url": "https://www.amazon.com/dp/B0CHHYY1F1?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "AM4",
-    "chipset": "A520",
-    "memType": "DDR4",
-    "memSlots": 4,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "Micro ATX"
-  },
-  {
     "id": 20519,
     "c": "Motherboard",
     "n": "A520M S2H (AMD Ryzen AM4/MicroATX/4+3 Phases Digital PWM/Gigabyte Gaming GbE LAN/NVMe PCIe 3.0 x4 M.2/3 Display Interfaces/Q-Flash Plus/RGB Fusion 2.0/Motherboard)",
@@ -21379,31 +21304,6 @@ export const PARTS = [
       "amazon": {
         "price": 78.99,
         "url": "https://www.amazon.com/dp/B08F7HPJ4F?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "AM4",
-    "chipset": "A520",
-    "memType": "DDR4",
-    "memSlots": 4,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "ATX"
-  },
-  {
-    "id": 20521,
-    "c": "Motherboard",
-    "n": "AMD Ryzen 5 5500 Desktop Processor with ASRock A520M-HDV AM4 DDR4 Motherboard",
-    "b": "ASRock",
-    "pr": 169.99,
-    "msrp": 169.99,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/71x+MOX8C7L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 169.99,
-        "url": "https://www.amazon.com/dp/B0GQXNC543?tag=tiereduptech-20",
         "inStock": true
       }
     },

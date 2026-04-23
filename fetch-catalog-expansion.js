@@ -178,6 +178,9 @@ function resultMatchesTarget(item, target) {
   }
 
   if (target.category === 'Motherboard') {
+    // Reject CPU+mobo bundle listings (starts with processor model, not board brand)
+    if (/^(AMD|Intel)\s+(Ryzen|Core|Xeon)/i.test(item.title || '')) return false;
+    if (/\bprocessor\s+with\s+\w+\s+motherboard/i.test(item.title || '')) return false;
     // Must contain the chipset AND brand
     const brandMatch = title.includes(target.canonical.split(' ')[0].toUpperCase());
     const chipsetMatch = title.includes(target.spec.chipset.toUpperCase());
