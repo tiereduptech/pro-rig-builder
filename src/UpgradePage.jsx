@@ -306,19 +306,44 @@ function candidateRAMs(specs, maxPrice) {
   const currentCapGB  = parseInt(specs.ram_total) || 0;
   const currentSpeed  = parseInt(specs.ram_speed) || 0;
   const currentType   = specs.ram_type || "";
-  const allSlotsFilled = currentUsed >= currentTotal && currentTotal > 0;
+  const emptySlots = Math.max(0, currentTotal - currentUsed);
 
   const pool = PARTS.filter(p => {
     if (p.c !== "RAM" || p.bundle) return false;
     const price = bestPrice(p);
     if (price <= 0 || price > maxPrice) return false;
+
+    // DDR type must match
     const nameDdr = /DDR5/i.test(p.n) ? "DDR5" : /DDR4/i.test(p.n) ? "DDR4" : null;
     const partType = p.ramType || nameDdr;
     if (currentType && partType && partType !== currentType) return false;
+
+    // Total capacity must be at least current
     if (p.cap != null && p.cap < currentCapGB) return false;
-    if (allSlotsFilled && p.sticks != null && p.sticks !== currentSticks) return false;
-    if (currentSpeed && p.speed != null && p.speed <= currentSpeed) return false;
-    return true;
+
+    // Stick count rules — core compatibility logic.
+    // Reject items where we can't verify stick count since slot fit matters.
+    if (p.sticks == null) return false;
+
+    const kitSticks = p.sticks;
+
+    // CASE A: Additive — kit fits in empty slots alongside existing sticks.
+    // Works only if speeds match (mixing speeds = slower stick wins, often unstable).
+    const isAdditive = kitSticks <= emptySlots;
+    const speedMatches = currentSpeed > 0 && p.speed != null && p.speed === currentSpeed;
+
+    // CASE B: Replacement — kit fills enough slots to replace the current setup.
+    // Must be strictly faster than current (otherwise it's not an upgrade).
+    // Kit stick count must be ≥ currentUsed (so user isn't losing capacity
+    // from populated channels) and ≤ currentTotal (can't exceed slots).
+    const isReplacement =
+      kitSticks >= currentUsed &&
+      kitSticks <= currentTotal &&
+      p.speed != null && currentSpeed > 0 && p.speed > currentSpeed;
+
+    if (isAdditive && speedMatches) return true;
+    if (isReplacement) return true;
+    return false;
   });
 
   pool.sort((a, b) => {
@@ -694,6 +719,62 @@ export default function UpgradePage() {
   const ramAlts = (rb?.ram ? a.rams.filter(p => p.id !== rb.ram.id) : a.rams).slice(0, N_ALTERNATIVES);
   const stoAlts = (rb?.sto ? a.storages.filter(p => p.id !== rb.sto.id) : a.storages).slice(0, N_ALTERNATIVES);
 
+  // Build the section list dynamically — in-build (auto-selected) items first,
+  // optional (not selected by optimizer but still available) at the bottom under
+  // a divider. This keeps the most actionable recommendations top-of-page.
+  const gpuSection = (
+    <UpgradeSection key="gpu" title="GPU" color="#4ADE80" icon="🟢"
+      selected={rb?.gpu} alternatives={gpuAlts} baseline={a.currentGPU}
+      effectiveCpuBench={rb?.cpu?.bench || a.currentCPU?.bench || 0} checkBottleneck={true}
+      emptyMsg="No GPU upgrades within budget offer 10%+ improvement over your current card."/>
+  );
+  const cpuSection = (
+    <UpgradeSection key="cpu" title="CPU" color="#F87171" icon="🔴"
+      selected={rb?.cpu} alternatives={cpuAlts} baseline={a.currentCPU}
+      description={a.currentCPU?.socket ? `Filtered to ${a.currentCPU.socket}-compatible CPUs.` : null}
+      emptyMsg="No same-socket CPU upgrades within budget offer 10%+ improvement."/>
+  );
+  const ramSection = (() => {
+    const used = Number(specs.ram_used_slots) || 0;
+    const total = Number(specs.ram_total_slots) || 0;
+    const sticks = Number(specs.ram_sticks) || 0;
+    const speed = Number(specs.ram_speed) || 0;
+    let descText;
+    if (allSlotsFilled) {
+      descText = `All ${total} slots are in use. Only showing ${sticks}-stick kits that fully replace your current setup with faster RAM.`;
+    } else if (used > 0 && total > used) {
+      descText = `${used} of ${total} slots are used. Showing matching-speed kits (${speed}MHz) that add to your existing RAM, plus faster full-replacement kits.`;
+    } else {
+      descText = `Faster RAM improves CPU-bound games.`;
+    }
+    return (
+      <UpgradeSection key="ram" title="RAM" color="#FFB020" icon="⚡"
+        selected={rb?.ram} alternatives={ramAlts}
+        description={descText}
+        warning={`RAM must match your motherboard's supported type (${specs.ram_type}).`}
+        emptyMsg={allSlotsFilled
+          ? `No faster ${specs.ram_type} ${sticks}-stick replacement kits at ≥${specs.ram_total}GB within budget.`
+          : "No compatible RAM upgrade kits found within budget."}/>
+    );
+  })();
+  const storageSection = a.storageWant > 0 ? (
+    <UpgradeSection key="storage" title="Storage" color="#C084FC" icon="💾"
+      selected={rb?.sto} alternatives={stoAlts}
+      description={`You asked for ${a.storageWant >= 1000 ? (a.storageWant/1000)+"TB" : a.storageWant+"GB"}${a.storageType === "ANY" || a.storageType === "" ? " (any type — showing best value)" : " " + a.storageType}.`}
+      warning={a.storageType === "SSD" ? "Your motherboard needs a free M.2 slot for NVMe drives." : null}
+      emptyMsg={`No matching storage within budget.`}/>
+  ) : null;
+
+  // Classify each section by whether the optimizer picked something
+  const allSections = [
+    { el: gpuSection, inBuild: !!rb?.gpu },
+    { el: cpuSection, inBuild: !!rb?.cpu },
+    { el: ramSection, inBuild: !!rb?.ram },
+    ...(storageSection ? [{ el: storageSection, inBuild: !!rb?.sto }] : []),
+  ];
+  const inBuildSections = allSections.filter(s => s.inBuild).map(s => s.el);
+  const optionalSections = allSections.filter(s => !s.inBuild).map(s => s.el);
+
   return (
     <div style={{minHeight:"100vh", background:"var(--bg)"}}>
       <div style={{maxWidth:1100, margin:"0 auto", padding:"48px 32px"}}>
@@ -704,45 +785,39 @@ export default function UpgradePage() {
         {a.bottleneck && <BottleneckAnalysisCard bn={a.bottleneck} />}
         <PSUWarning watts={a.psuWattsNeeded} />
 
-        <UpgradeSection title="GPU" color="#4ADE80" icon="🟢"
-          selected={rb?.gpu} alternatives={gpuAlts} baseline={a.currentGPU}
-          effectiveCpuBench={rb?.cpu?.bench || a.currentCPU?.bench || 0} checkBottleneck={true}
-          emptyMsg="No GPU upgrades within budget offer 10%+ improvement over your current card."/>
+        {/* In-build sections (components auto-selected for the recommended build) */}
+        {inBuildSections}
 
-        <UpgradeSection title="CPU" color="#F87171" icon="🔴"
-          selected={rb?.cpu} alternatives={cpuAlts} baseline={a.currentCPU}
-          description={a.currentCPU?.socket ? `Filtered to ${a.currentCPU.socket}-compatible CPUs.` : null}
-          emptyMsg="No same-socket CPU upgrades within budget offer 10%+ improvement."/>
-
+        {/* Ancillary cards that belong with the in-build components */}
         {rb?.cpu && a.coolerNeeded && a.coolerRecs.length > 0 && (
           <CoolerAddOnSection newCpu={rb.cpu} coolers={a.coolerRecs}
             userCoolerType={a.userCoolerType} userCoolerCapacity={a.userCoolerCapacity} requiredTDP={a.requiredTDP}/>
         )}
-
         {rb?.cpu && !a.coolerNeeded && a.userCoolerType !== "unknown" && (
           <CoolerOkBanner userCoolerType={a.userCoolerType} newCpu={rb.cpu} userCoolerCapacity={a.userCoolerCapacity}/>
         )}
-
         {a.platformSwap && <PlatformSwapCard swap={a.platformSwap} currentBrand={a.currentCPU?.brand}/>}
 
-        <UpgradeSection title="RAM" color="#FFB020" icon="⚡"
-          selected={rb?.ram} alternatives={ramAlts}
-          description={allSlotsFilled
-            ? `All ${specs.ram_total_slots} slots are filled — only showing ${specs.ram_sticks}-stick kits.`
-            : `Faster RAM improves CPU-bound games.`}
-          warning={`RAM must match your motherboard's supported type (${specs.ram_type}).`}
-          emptyMsg={allSlotsFilled
-            ? `No faster ${specs.ram_type} ${specs.ram_sticks}-stick kits at ≥${specs.ram_total}GB within budget.`
-            : "No faster RAM kits found within budget."}/>
-
-        {a.storageWant > 0 && (
-          <UpgradeSection title="Storage" color="#C084FC" icon="💾"
-            selected={rb?.sto} alternatives={stoAlts}
-            description={`You asked for ${a.storageWant >= 1000 ? (a.storageWant/1000)+"TB" : a.storageWant+"GB"}${a.storageType === "ANY" || a.storageType === "" ? " (any type — showing best value)" : " " + a.storageType}.`}
-            warning={a.storageType === "SSD" ? "Your motherboard needs a free M.2 slot for NVMe drives." : null}
-            emptyMsg={`No matching storage within budget.`}/>
+        {/* Optional upgrades — not selected by the optimizer but still shown so user can browse */}
+        {optionalSections.length > 0 && (
+          <>
+            <OptionalUpgradesDivider />
+            {optionalSections}
+          </>
         )}
       </div>
+    </div>
+  );
+}
+
+function OptionalUpgradesDivider() {
+  return (
+    <div style={{margin:"30px 0 20px", display:"flex", alignItems:"center", gap:14}}>
+      <div style={{flex:1, height:1, background:"var(--bdr)"}}/>
+      <div style={{fontFamily:"var(--mono)", fontSize:11, color:"var(--dim)", fontWeight:700, letterSpacing:2}}>
+        OPTIONAL UPGRADES
+      </div>
+      <div style={{flex:1, height:1, background:"var(--bdr)"}}/>
     </div>
   );
 }
