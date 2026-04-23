@@ -434,6 +434,10 @@ const COOLER_TIER_LABELS = {
 };
 
 // ─── BUILD OPTIMIZER ────────────────────────────────────────────────
+// Recommended ratio: GPU bench ≤ ~3.5x CPU bench for balanced gaming.
+// Past that, CPU becomes the limiting factor and GPU performance is wasted.
+const MAX_GPU_CPU_BENCH_RATIO = 3.5;
+
 function optimizeBuild(currentGPU, currentCPU, candidates, budget) {
   const maxBudget = budget * (1 + BUDGET_OVERAGE);
   const K_GPU = 8, K_CPU = 8, K_RAM = 5, K_STOR = 5;
@@ -456,7 +460,23 @@ function optimizeBuild(currentGPU, currentCPU, candidates, budget) {
           if (cost <= 0 || cost > maxBudget) continue;
           const gpuGain = gpu && curG > 0 ? ((gpu.bench - curG) / curG) * 100 : 0;
           const cpuGain = cpu && curC > 0 ? ((cpu.bench - curC) / curC) * 100 : 0;
-          const score = gpuGain * 1.0 + cpuGain * 0.6 + (ram ? 5 : 0) + (sto ? 3 : 0);
+          let score = gpuGain * 1.0 + cpuGain * 0.6 + (ram ? 5 : 0) + (sto ? 3 : 0);
+
+          // Bottleneck penalty: compare selected GPU bench vs effective CPU bench
+          // (new CPU if being upgraded, else current CPU). If GPU is too strong
+          // for the CPU, scale down the score because real-world gaming perf
+          // will hit a CPU wall and the extra GPU spend is wasted.
+          const effectiveCPUBench = cpu?.bench || curC;
+          if (gpu?.bench && effectiveCPUBench > 0) {
+            const ratio = gpu.bench / effectiveCPUBench;
+            if (ratio > MAX_GPU_CPU_BENCH_RATIO) {
+              // Penalty ramps up the further past threshold (3.5x → 4x → 5x etc)
+              const overage = ratio / MAX_GPU_CPU_BENCH_RATIO;  // e.g. 5.4/3.5 = 1.54
+              const penalty = Math.min(0.6, (overage - 1) * 0.8);  // up to -60%
+              score *= (1 - penalty);
+            }
+          }
+
           const overPct = Math.max(0, (cost - budget) / budget);
           const adjustedScore = score * (1 - overPct * 2);
           if (!best || adjustedScore > best.adjustedScore) {
@@ -669,6 +689,7 @@ export default function UpgradePage() {
 
         <UpgradeSection title="GPU" color="#4ADE80" icon="🟢"
           selected={rb?.gpu} alternatives={gpuAlts} baseline={a.currentGPU}
+          effectiveCpuBench={rb?.cpu?.bench || a.currentCPU?.bench || 0} checkBottleneck={true}
           emptyMsg="No GPU upgrades within budget offer 10%+ improvement over your current card."/>
 
         <UpgradeSection title="CPU" color="#F87171" icon="🔴"
@@ -836,7 +857,7 @@ function PSUWarning({watts}) {
   );
 }
 
-function UpgradeSection({title, color, icon, selected, alternatives, baseline, description, warning, emptyMsg}) {
+function UpgradeSection({title, color, icon, selected, alternatives, baseline, description, warning, emptyMsg, effectiveCpuBench, checkBottleneck}) {
   if (!selected && (!alternatives || alternatives.length === 0)) {
     return (
       <div style={{background:"var(--bg2)", borderRadius:16, border:"1px solid var(--bdr)", padding:20, marginBottom:20}}>
@@ -863,14 +884,14 @@ function UpgradeSection({title, color, icon, selected, alternatives, baseline, d
       {selected && (
         <div style={{marginBottom:12}}>
           <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--accent)", fontWeight:700, marginBottom:6, letterSpacing:1.5}}>RECOMMENDED</div>
-          <UpgradeRow part={selected} color={color} baseline={baseline} highlighted={true}/>
+          <UpgradeRow part={selected} color={color} baseline={baseline} highlighted={true} effectiveCpuBench={effectiveCpuBench} checkBottleneck={checkBottleneck}/>
         </div>
       )}
       {alternatives && alternatives.length > 0 && (
         <>
           <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:600, marginTop:selected ? 14 : 0, marginBottom:6, letterSpacing:1.5}}>OTHER OPTIONS</div>
           <div style={{display:"flex", flexDirection:"column", gap:6}}>
-            {alternatives.map((p, i) => <UpgradeRow key={p.id || i} part={p} color={color} baseline={baseline}/>)}
+            {alternatives.map((p, i) => <UpgradeRow key={p.id || i} part={p} color={color} baseline={baseline} effectiveCpuBench={effectiveCpuBench} checkBottleneck={checkBottleneck}/>)}
           </div>
         </>
       )}
@@ -878,11 +899,20 @@ function UpgradeSection({title, color, icon, selected, alternatives, baseline, d
   );
 }
 
-function UpgradeRow({part, color, baseline, highlighted}) {
+function UpgradeRow({part, color, baseline, highlighted, effectiveCpuBench, checkBottleneck}) {
   const price = bestPrice(part);
   const retailer = retailerUrl(part);
   const improvement = (baseline?.bench != null && baseline.bench > 0 && part.bench != null)
     ? Math.round(((part.bench - baseline.bench) / baseline.bench) * 100) : null;
+
+  // Bottleneck check (only applied to GPUs via checkBottleneck prop)
+  let bottleneckSeverity = null;   // null | "mild" | "severe"
+  if (checkBottleneck && part?.bench && effectiveCpuBench > 0) {
+    const ratio = part.bench / effectiveCpuBench;
+    if (ratio > MAX_GPU_CPU_BENCH_RATIO * 1.5) bottleneckSeverity = "severe";
+    else if (ratio > MAX_GPU_CPU_BENCH_RATIO) bottleneckSeverity = "mild";
+  }
+
   const rowStyle = highlighted
     ? {background:"var(--bg3)", borderRadius:10, padding:"14px 16px", display:"flex", alignItems:"center", gap:14, borderLeft:`4px solid ${color}`, boxShadow:`0 0 0 1px ${color}40`}
     : {background:"var(--bg3)", borderRadius:8, padding:"10px 14px", display:"flex", alignItems:"center", gap:12, borderLeft:`2px solid ${color}80`, opacity:0.85};
@@ -892,11 +922,12 @@ function UpgradeRow({part, color, baseline, highlighted}) {
   const priceStyle = highlighted
     ? {fontFamily:"var(--ff)", fontSize:20, fontWeight:800, color:"var(--accent)"}
     : {fontFamily:"var(--ff)", fontSize:15, fontWeight:700, color:"var(--accent)"};
+
   return (
     <div style={rowStyle}>
       <div style={{flex:1, minWidth:0}}>
         <div style={nameStyle}>{part.n}</div>
-        <div style={{display:"flex", gap:10, marginTop:3, fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", flexWrap:"wrap"}}>
+        <div style={{display:"flex", gap:10, marginTop:3, fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", flexWrap:"wrap", alignItems:"center"}}>
           {part.cap != null && <span>{part.cap >= 1000 ? (part.cap/1000)+"TB" : part.cap+"GB"}</span>}
           {part.sticks != null && <span>{part.sticks}×{part.cap ? Math.round(part.cap/part.sticks)+"GB" : ""}</span>}
           {part.speed && <span>{part.speed}MHz</span>}
@@ -904,6 +935,16 @@ function UpgradeRow({part, color, baseline, highlighted}) {
           {part.tdp && <span>{part.tdp}W</span>}
           {part.bench != null && <span>bench {part.bench}</span>}
           {improvement != null && improvement > 0 && <span style={{color:"var(--accent)", fontWeight:700}}>+{improvement}% faster</span>}
+          {bottleneckSeverity === "mild" && (
+            <span style={{color:"#FFB020", fontWeight:700, background:"rgba(255,176,32,.12)", padding:"2px 6px", borderRadius:4}}>
+              ⚠ CPU BOTTLENECK
+            </span>
+          )}
+          {bottleneckSeverity === "severe" && (
+            <span style={{color:"#F87171", fontWeight:700, background:"rgba(248,113,113,.12)", padding:"2px 6px", borderRadius:4}}>
+              ⚠ SEVERE CPU BOTTLENECK
+            </span>
+          )}
         </div>
       </div>
       <div style={{textAlign:"right", flexShrink:0}}>
