@@ -4988,29 +4988,6 @@ export const PARTS = [
     "bench": 24
   },
   {
-    "id": 10211,
-    "c": "CPU",
-    "n": "Gaming PC Desktop Computer, Intel Core i3-10100F up to 4.3G, GeForce RTX 2060 6G, 16GB DDR4, 1TB SSD, WiFi, BT 5.0, RGB Fan x6, Windows 11 Home",
-    "b": "Intel",
-    "pr": 631.75,
-    "msrp": 631.75,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/81L0K1nqfHL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 631.75,
-        "url": "https://www.amazon.com/dp/B0FC6NRR6M?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1200",
-    "cores": 4,
-    "threads": 8,
-    "boostClock": 4.3,
-    "tdp": 65,
-    "bench": 36
-  },
-  {
     "id": 20000,
     "n": "ASUS ROG Crosshair X870E Hero",
     "img": "https://m.media-amazon.com/images/I/81o1in2ebRL._AC_SL300_.jpg",
@@ -20452,31 +20429,6 @@ export const PARTS = [
     "wifi": "WiFi 7"
   },
   {
-    "id": 20452,
-    "c": "Motherboard",
-    "n": "CPU Motherboard Combo - Intel Core Ultra 7 265K 20-Cores Unlocked Desktop Processor with Msi PRO Z890-P WiFi ProSeries LGA 1851 ATX Motherboard",
-    "b": "MSI",
-    "pr": 489.99,
-    "msrp": 489.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/71dLe4zkTlL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 489.99,
-        "url": "https://www.amazon.com/dp/B0DY1TCGRD?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1851",
-    "chipset": "Z890",
-    "memType": "DDR5",
-    "memSlots": 4,
-    "maxMem": 256,
-    "m2Slots": 4,
-    "sata": 4,
-    "ff": "ATX"
-  },
-  {
     "id": 20453,
     "c": "Motherboard",
     "n": "Prime H810M-E-CSM Intel® H810 mATX Commercial CSM Motherboard, LGA 1851, DDR5, PCIe 4.0, M.2, 1G LAN, HDMI, USB 3.2, AI PC-Ready, ASUS Control Center Express Support for SMB & IT Deployments",
@@ -20500,31 +20452,6 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 4,
     "ff": "ATX"
-  },
-  {
-    "id": 20454,
-    "c": "Motherboard",
-    "n": "Prime H810M-E-CSM Intel® H810 mATX Commercial CSM Motherboard, LGA 1851, DDR5, PCIe 4.0, M.2, 1G LAN, HDMI, USB 3.2, AI PC-Ready, ASUS Control Center Express Support for SMB & IT Deployments",
-    "b": "ASUS",
-    "pr": 109.99,
-    "msrp": 109.99,
-    "r": 3.3,
-    "img": "https://m.media-amazon.com/images/I/81+7cnEVpJL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 109.99,
-        "url": "https://www.amazon.com/dp/B0FSNGDGS3?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1851",
-    "chipset": "H810",
-    "memType": "DDR5",
-    "memSlots": 2,
-    "maxMem": 128,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "Micro ATX"
   },
   {
     "id": 20455,
@@ -20660,31 +20587,6 @@ export const PARTS = [
     "condition": "used"
   },
   {
-    "id": 20460,
-    "c": "Motherboard",
-    "n": "CPU Motherboard Combo - 14600K 14(6P+8E) Cores up to 5.3 GHz Unlocked Desktop Processor with GIGABYTE B760M DS3H AX DDR4 lga1700 Micro ATX Motherboard",
-    "b": "Gigabyte",
-    "pr": 449.99,
-    "msrp": 449.99,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/71xKsnIKqoL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 449.99,
-        "url": "https://www.amazon.com/dp/B0FR513GN7?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1700",
-    "chipset": "B760",
-    "memType": "DDR5",
-    "memSlots": 4,
-    "maxMem": 192,
-    "m2Slots": 2,
-    "sata": 4,
-    "ff": "Micro ATX"
-  },
-  {
     "id": 20461,
     "c": "Motherboard",
     "n": "ASRock B760M Pro RS Motherboard DDR5 7200MHz HDMI DisplayPort eDP PCIe Gen5 (Graphics) 14th 13th 12th Gen Intel Core Processors LGA1700 192GB",
@@ -20708,31 +20610,6 @@ export const PARTS = [
     "m2Slots": 3,
     "sata": 4,
     "ff": "ATX"
-  },
-  {
-    "id": 20462,
-    "c": "Motherboard",
-    "n": "ASRock B760M Pro RS Motherboard DDR5 7200MHz HDMI DisplayPort eDP PCIe Gen5 (Graphics) 14th 13th 12th Gen Intel Core Processors LGA1700 192GB",
-    "b": "ASRock",
-    "pr": 109.99,
-    "msrp": 109.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/71RVYwj2r-L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 109.99,
-        "url": "https://www.amazon.com/dp/B0C2C96LDL?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1700",
-    "chipset": "B760",
-    "memType": "DDR5",
-    "memSlots": 4,
-    "maxMem": 192,
-    "m2Slots": 2,
-    "sata": 4,
-    "ff": "Micro ATX"
   },
   {
     "id": 20463,
@@ -20762,33 +20639,6 @@ export const PARTS = [
     "condition": "used"
   },
   {
-    "id": 20464,
-    "c": "Motherboard",
-    "n": "MSI PRO B660M-A CEC WiFi DDR4 V2 Micro ATX Motherboard (Renewed)",
-    "b": "MSI",
-    "pr": 86,
-    "msrp": 86,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/611CIWe4IHL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 86,
-        "url": "https://www.amazon.com/dp/B0DF8CPSKZ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1700",
-    "chipset": "B660",
-    "memType": "DDR5",
-    "memSlots": 4,
-    "maxMem": 128,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "Micro ATX",
-    "used": true,
-    "condition": "used"
-  },
-  {
     "id": 20465,
     "c": "Motherboard",
     "n": "Prime H610M-A-CSM Intel® H610 (LGA 1700) CSM Business mATX Motherboard, with PCIe 4.0, 2X M.2, DDR5, 1GbE LAN, DP, HDMI™, VGA, USB 3.2 Gen 2 Ports, ASUS Control Center Express IT Management",
@@ -20814,356 +20664,6 @@ export const PARTS = [
     "ff": "ATX"
   },
   {
-    "id": 20466,
-    "c": "Motherboard",
-    "n": "motherboards Fit for MSI H610M Bomber DDR4 Motherboard Intel H610 LGA1700 64GB Support I9-14900 I7-14700K I5-14400 I5-13600 CPU Matx",
-    "b": "MSI",
-    "pr": 303.72,
-    "msrp": 303.72,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/71IdTj-OYfL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 303.72,
-        "url": "https://www.amazon.com/dp/B0GCMN81F8?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1700",
-    "chipset": "H610",
-    "memType": "DDR5",
-    "memSlots": 2,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "Micro ATX"
-  },
-  {
-    "id": 20467,
-    "c": "Motherboard",
-    "n": "Computer Motherboards Fit for ASRock Z490 Phantom Gaming 4/AX Motherboard Support I9-10900K I7-10700 I5 10400 I3-10300 CPU LGA1200 DDR4 4400MHz M.2 NVME ATX",
-    "b": "ASRock",
-    "pr": 198.02,
-    "msrp": 198.02,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/7136iFkrJhL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 198.02,
-        "url": "https://www.amazon.com/dp/B0GG9YNFNG?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1200",
-    "chipset": "Z490",
-    "memType": "DDR4",
-    "memSlots": 4,
-    "maxMem": 128,
-    "m2Slots": 3,
-    "sata": 6,
-    "ff": "ATX"
-  },
-  {
-    "id": 20468,
-    "c": "Motherboard",
-    "n": "motherboards Fit for ASUS TUF Gaming B460M-PLUS Motherboard Supports LGA1200 Micro ATX Gaming",
-    "b": "ASUS",
-    "pr": 139.74,
-    "msrp": 139.74,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/81hwaZkAf-L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 139.74,
-        "url": "https://www.amazon.com/dp/B0GRVGPK5S?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1200",
-    "chipset": "B460",
-    "memType": "DDR4",
-    "memSlots": 4,
-    "maxMem": 128,
-    "m2Slots": 1,
-    "sata": 6,
-    "ff": "ATX"
-  },
-  {
-    "id": 20469,
-    "c": "Motherboard",
-    "n": "pc Motherboard Fit for ASRock H470 Steel Legend Motherboard Intel LGA 1200 Support I9-11900F I5-11400F I3-10100F I3-10105 CPU M.2 NVMe SSD ATX",
-    "b": "ASRock",
-    "pr": 269.18,
-    "msrp": 269.18,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/71gafn4iwbL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 269.18,
-        "url": "https://www.amazon.com/dp/B0GTZKMH6N?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1200",
-    "chipset": "H470",
-    "memType": "DDR4",
-    "memSlots": 4,
-    "maxMem": 128,
-    "m2Slots": 2,
-    "sata": 6,
-    "ff": "ATX"
-  },
-  {
-    "id": 20470,
-    "c": "Motherboard",
-    "n": "pc Motherboard Fit for ASUS EX-H410M-V3 Motherboard Intel H510 LGA1200 DDR4 32GB M.2 Micro ATX Support I9-10900K I5-10400F I3-10300 CPU",
-    "b": "ASUS",
-    "pr": 163.44,
-    "msrp": 163.44,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/81CeXxhIigL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 163.44,
-        "url": "https://www.amazon.com/dp/B0GTZMBKPM?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1200",
-    "chipset": "H510",
-    "memType": "DDR4",
-    "memSlots": 2,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "ATX"
-  },
-  {
-    "id": 20471,
-    "c": "Motherboard",
-    "n": "pc Motherboard Fit for ASUS EX-H410M-V3 Motherboard Intel H510 LGA1200 DDR4 32GB M.2 Micro ATX Support I9-10900K I5-10400F I3-10300 CPU",
-    "b": "ASUS",
-    "pr": 163.44,
-    "msrp": 163.44,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/81CeXxhIigL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 163.44,
-        "url": "https://www.amazon.com/dp/B0GTZMBKPM?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1200",
-    "chipset": "H510",
-    "memType": "DDR4",
-    "memSlots": 2,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "Micro ATX"
-  },
-  {
-    "id": 20472,
-    "c": "Motherboard",
-    "n": "Motherboard Fit for MSI H510M Bomber Motherboard Intel H510 LGA1200 Micro ATX 2xDDR4 HDMI VGA 1x M.2",
-    "b": "MSI",
-    "pr": 166.6,
-    "msrp": 166.6,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/713DxeXWoEL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 166.6,
-        "url": "https://www.amazon.com/dp/B0GFFBD1HV?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1200",
-    "chipset": "H510",
-    "memType": "DDR4",
-    "memSlots": 2,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "ATX"
-  },
-  {
-    "id": 20473,
-    "c": "Motherboard",
-    "n": "pc Motherboard Fit for MSI H510M Bomber Motherboard Intel H510 LGA1200 Micro ATX 2xDDR4 HDMI VGA 1x M.2",
-    "b": "MSI",
-    "pr": 166.6,
-    "msrp": 166.6,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/713DxeXWoEL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 166.6,
-        "url": "https://www.amazon.com/dp/B0GQSZK7JP?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1200",
-    "chipset": "H510",
-    "memType": "DDR4",
-    "memSlots": 2,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "Micro ATX"
-  },
-  {
-    "id": 20474,
-    "c": "Motherboard",
-    "n": "pc Motherboard Fit for Gigabyte H410M H V3 Motherboard Intel H510 LGA1200 DDR4 32GB M.2 Micro ATX Support I9-10900K I5-10400F I3-10300 CPU",
-    "b": "Gigabyte",
-    "pr": 169.76,
-    "msrp": 169.76,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/81Z6F4xTqQL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 169.76,
-        "url": "https://www.amazon.com/dp/B0GXBJSZHJ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1200",
-    "chipset": "H510",
-    "memType": "DDR4",
-    "memSlots": 2,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "ATX"
-  },
-  {
-    "id": 20475,
-    "c": "Motherboard",
-    "n": "pc Motherboard Fit for Gigabyte H410M H V3 Motherboard Intel H510 LGA1200 DDR4 32GB M.2 Micro ATX Support I9-10900K I5-10400F I3-10300 CPU",
-    "b": "Gigabyte",
-    "pr": 169.76,
-    "msrp": 169.76,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/81Z6F4xTqQL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 169.76,
-        "url": "https://www.amazon.com/dp/B0GXBJSZHJ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1200",
-    "chipset": "H510",
-    "memType": "DDR4",
-    "memSlots": 2,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "Micro ATX"
-  },
-  {
-    "id": 20476,
-    "c": "Motherboard",
-    "n": "motherboards Fit for ASUS Pro H410M-C2 Motherboard Socket LGA1200 CPU DDR4 2933 Memory Chipset H410 MATX Mainboard",
-    "b": "ASUS",
-    "pr": 126.53,
-    "msrp": 126.53,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/710Wy9WlxJL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 126.53,
-        "url": "https://www.amazon.com/dp/B0GRR96LXM?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1200",
-    "chipset": "H410",
-    "memType": "DDR4",
-    "memSlots": 2,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "ATX"
-  },
-  {
-    "id": 20477,
-    "c": "Motherboard",
-    "n": "motherboards Fit for ASUS Pro H410M-C2 Motherboard Socket LGA1200 CPU DDR4 2933 Memory Chipset H410 MATX Mainboard",
-    "b": "ASUS",
-    "pr": 126.53,
-    "msrp": 126.53,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/710Wy9WlxJL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 126.53,
-        "url": "https://www.amazon.com/dp/B0GRR96LXM?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1200",
-    "chipset": "H410",
-    "memType": "DDR4",
-    "memSlots": 2,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "Micro ATX"
-  },
-  {
-    "id": 20478,
-    "c": "Motherboard",
-    "n": "Motherboard Fit for MSI H410M Bomber Motherboard Intel H410 LGA1200 Micro ATX 2xDDR4 HDMI VGA 1x M.2",
-    "b": "MSI",
-    "pr": 149.24,
-    "msrp": 149.24,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/718Qy5+0E9L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 149.24,
-        "url": "https://www.amazon.com/dp/B0GW853YPZ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1200",
-    "chipset": "H410",
-    "memType": "DDR4",
-    "memSlots": 2,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "ATX"
-  },
-  {
-    "id": 20479,
-    "c": "Motherboard",
-    "n": "Motherboard Fit for MSI H410M Bomber Motherboard Intel H410 LGA1200 Micro ATX 2xDDR4 HDMI VGA 1x M.2",
-    "b": "MSI",
-    "pr": 149.24,
-    "msrp": 149.24,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/718Qy5+0E9L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 149.24,
-        "url": "https://www.amazon.com/dp/B0GW853YPZ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "LGA1200",
-    "chipset": "H410",
-    "memType": "DDR4",
-    "memSlots": 2,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "Micro ATX"
-  },
-  {
     "id": 20481,
     "c": "Motherboard",
     "n": "MSI MAG X870E Tomahawk WiFi Motherboard, ATX - Supports AMD Ryzen 9000/8000 / 7000 Processors, AM5-80A SPS VRM, DDR5 Memory Boost 8400+ MT/s (OC), PCIe 5.0 x16, M.2 Gen5, Wi-Fi 7, 5G LAN (Renewed)",
@@ -21185,33 +20685,6 @@ export const PARTS = [
     "memSlots": 4,
     "maxMem": 256,
     "m2Slots": 4,
-    "sata": 4,
-    "ff": "ATX",
-    "used": true,
-    "condition": "used"
-  },
-  {
-    "id": 20483,
-    "c": "Motherboard",
-    "n": "MSI MAG X870E Tomahawk WiFi Motherboard, ATX - Supports AMD Ryzen 9000/8000 / 7000 Processors, AM5-80A SPS VRM, DDR5 Memory Boost 8400+ MT/s (OC), PCIe 5.0 x16, M.2 Gen5, Wi-Fi 7, 5G LAN (Renewed)",
-    "b": "MSI",
-    "pr": 218.44,
-    "msrp": 218.44,
-    "r": 5,
-    "img": "https://m.media-amazon.com/images/I/81ZRDFQt4kL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 218.44,
-        "url": "https://www.amazon.com/dp/B0F5TGYRLP?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "AM5",
-    "chipset": "X870",
-    "memType": "DDR5",
-    "memSlots": 4,
-    "maxMem": 192,
-    "m2Slots": 3,
     "sata": 4,
     "ff": "ATX",
     "used": true,
@@ -21266,60 +20739,6 @@ export const PARTS = [
     "memSlots": 4,
     "maxMem": 128,
     "m2Slots": 4,
-    "sata": 4,
-    "ff": "ATX",
-    "used": true,
-    "condition": "used"
-  },
-  {
-    "id": 20486,
-    "c": "Motherboard",
-    "n": "ASUS ROG Strix X670E-E Gaming Socket AM5(LGA 1718) Ryzen 7000 ATX Gaming Motherboard(18+2 Power Stages,PCIe® 5.0, DDR,4xM.2 Slots,USB 3.2 Gen 2x2, WiFi 6E,PCIe Slot Q-Release, M.2 Q-Latch) (Renewed)",
-    "b": "ASUS",
-    "pr": 249.99,
-    "msrp": 249.99,
-    "r": 5,
-    "img": "https://m.media-amazon.com/images/I/81ohPDfik0L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 249.99,
-        "url": "https://www.amazon.com/dp/B0CJ4FBL2S?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "AM5",
-    "chipset": "X670",
-    "memType": "DDR5",
-    "memSlots": 4,
-    "maxMem": 128,
-    "m2Slots": 3,
-    "sata": 4,
-    "ff": "ATX",
-    "used": true,
-    "condition": "used"
-  },
-  {
-    "id": 20487,
-    "c": "Motherboard",
-    "n": "MSI MAG X670E Tomahawk WiFi Gaming Motherboard (AMD AM5, DDR5, PCIe 5.0, SATA 6Gb/s, M.2, USB 3.2 Gen 2, Wi-Fi 6E, 2.5Gbps LAN, HDMI/DP, ATX) (Renewed)",
-    "b": "MSI",
-    "pr": 149.88,
-    "msrp": 149.88,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/816ESNZ4SpL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 149.88,
-        "url": "https://www.amazon.com/dp/B0CLMJ2RCR?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "AM5",
-    "chipset": "X670",
-    "memType": "DDR5",
-    "memSlots": 4,
-    "maxMem": 128,
-    "m2Slots": 3,
     "sata": 4,
     "ff": "ATX",
     "used": true,
@@ -21478,81 +20897,6 @@ export const PARTS = [
     "ff": "ATX"
   },
   {
-    "id": 20494,
-    "c": "Motherboard",
-    "n": "MB ASRock AMD AM5 B850M Pro-A",
-    "b": "ASRock",
-    "pr": 129.99,
-    "msrp": 129.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/71Y2Wie5r9L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 129.99,
-        "url": "https://www.amazon.com/dp/B0DS6LMZ84?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "AM5",
-    "chipset": "B850",
-    "memType": "DDR5",
-    "memSlots": 4,
-    "maxMem": 192,
-    "m2Slots": 2,
-    "sata": 4,
-    "ff": "Micro ATX"
-  },
-  {
-    "id": 20495,
-    "c": "Motherboard",
-    "n": "AMD Ryzen 5 7600X CPU Processor Bundle with ASUS B650E MAX Gaming WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0, 3X M.2, Wi-Fi 6E)",
-    "b": "ASUS",
-    "pr": 338.99,
-    "msrp": 338.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/71EGM5Ey-RL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 338.99,
-        "url": "https://www.amazon.com/dp/B0FDW29DS5?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "AM5",
-    "chipset": "B650E",
-    "memType": "DDR5",
-    "memSlots": 4,
-    "maxMem": 128,
-    "m2Slots": 3,
-    "sata": 4,
-    "ff": "ATX"
-  },
-  {
-    "id": 20496,
-    "c": "Motherboard",
-    "n": "AMD Ryzen 5 9600X CPU Processor Bundle with ASUS B650E MAX Gaming WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0, 3X M.2, Wi-Fi 6E)",
-    "b": "ASUS",
-    "pr": 349.99,
-    "msrp": 349.99,
-    "r": 5,
-    "img": "https://m.media-amazon.com/images/I/71RGczuUZVL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 349.99,
-        "url": "https://www.amazon.com/dp/B0FKZSMMQK?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "AM5",
-    "chipset": "B650E",
-    "memType": "DDR5",
-    "memSlots": 4,
-    "maxMem": 128,
-    "m2Slots": 2,
-    "sata": 4,
-    "ff": "Micro ATX"
-  },
-  {
     "id": 20497,
     "c": "Motherboard",
     "n": "ASUS Prime B650M-A AX II AMD B650 AM5 Ryzen™ Desktop 9000 8000 & 7000 Micro-ATX mATX Motherboard, DDR5, PCIe 5.0 M.2, 2.5Gb LAN, Wi-Fi 6, DisplayPort, HDMI®, BIOS Flashback™ (Renewed)",
@@ -21576,33 +20920,6 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 4,
     "ff": "ATX",
-    "used": true,
-    "condition": "used"
-  },
-  {
-    "id": 20498,
-    "c": "Motherboard",
-    "n": "ASUS Prime B650M-A AX II AMD B650 AM5 Ryzen™ Desktop 9000 8000 & 7000 Micro-ATX mATX Motherboard, DDR5, PCIe 5.0 M.2, 2.5Gb LAN, Wi-Fi 6, DisplayPort, HDMI®, BIOS Flashback™ (Renewed)",
-    "b": "ASUS",
-    "pr": 99.99,
-    "msrp": 99.99,
-    "r": 3.9,
-    "img": "https://m.media-amazon.com/images/I/81QeWAsPmDL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 99.99,
-        "url": "https://www.amazon.com/dp/B0DKHV68LY?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "AM5",
-    "chipset": "B650",
-    "memType": "DDR5",
-    "memSlots": 4,
-    "maxMem": 128,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "Micro ATX",
     "used": true,
     "condition": "used"
   },
@@ -21713,31 +21030,6 @@ export const PARTS = [
     "ff": "Micro ATX",
     "used": true,
     "condition": "used"
-  },
-  {
-    "id": 20503,
-    "c": "Motherboard",
-    "n": "motherboards Fit for ASUS Prime A620M K DDR5 AMD A620 Supports Up to 9000 Series Ryzen Motherboard Series AM5 Micro-ATX",
-    "b": "ASUS",
-    "pr": 213.93,
-    "msrp": 213.93,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/61ZvXTbsJbL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 213.93,
-        "url": "https://www.amazon.com/dp/B0GRQYDBT1?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "AM5",
-    "chipset": "A620",
-    "memType": "DDR5",
-    "memSlots": 4,
-    "maxMem": 128,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "Micro ATX"
   },
   {
     "id": 20504,
@@ -22000,31 +21292,6 @@ export const PARTS = [
     "ff": "ATX"
   },
   {
-    "id": 20514,
-    "c": "Motherboard",
-    "n": "B550M PRO SE - ASRock B550M Pro SE Gaming Desktop Motherboard - AMD PRO565 Chipset - Socket AM4 - Micro ATX - Ryzen 5, Ryzen 3 Processor Supported - 128 GB DDR4 SDRAM Maximum RAM - DIMM,",
-    "b": "ASRock",
-    "pr": 139.99,
-    "msrp": 139.99,
-    "r": 3.5,
-    "img": "https://m.media-amazon.com/images/I/81BOjjCv3UL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 139.99,
-        "url": "https://www.amazon.com/dp/B0DQTFCZ53?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "AM4",
-    "chipset": "B550",
-    "memType": "DDR4",
-    "memSlots": 4,
-    "maxMem": 128,
-    "m2Slots": 1,
-    "sata": 6,
-    "ff": "Micro ATX"
-  },
-  {
     "id": 20516,
     "c": "Motherboard",
     "n": "AMD Ryzen 5 4500 Desktop Processor with ASUS TUF Gaming A520M-PLUS (WiFi) AM4 microATX Motherboard (M.2 Support, 802.11ac Wi-Fi, DisplayPort, HDMI)",
@@ -22123,31 +21390,6 @@ export const PARTS = [
     "m2Slots": 1,
     "sata": 4,
     "ff": "ATX"
-  },
-  {
-    "id": 20520,
-    "c": "Motherboard",
-    "n": "A520M S2H (AMD Ryzen AM4/MicroATX/4+3 Phases Digital PWM/Gigabyte Gaming GbE LAN/NVMe PCIe 3.0 x4 M.2/3 Display Interfaces/Q-Flash Plus/RGB Fusion 2.0/Motherboard)",
-    "b": "Gigabyte",
-    "pr": 78.99,
-    "msrp": 78.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/91ce9mEOmLL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 78.99,
-        "url": "https://www.amazon.com/dp/B08F7HPJ4F?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "socket": "AM4",
-    "chipset": "A520",
-    "memType": "DDR4",
-    "memSlots": 4,
-    "maxMem": 64,
-    "m2Slots": 1,
-    "sata": 4,
-    "ff": "Micro ATX"
   },
   {
     "id": 20521,
@@ -33088,26 +32330,6 @@ export const PARTS = [
     "c": "GPU",
     "n": "GIGABYTE MSI Gaming Radeon RX 6900 XT Gaming Z Trio 16G 16GB GDDR6 256-Bit HDMI/DP Nvlink Torx Fan 4 AMD Graphics Card (RX 6900 XT Gaming Z Trio 16G)",
     "b": "MSI",
-    "pr": 689.99,
-    "msrp": 689.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/61yb+mZNfuS._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 689.99,
-        "url": "https://www.amazon.com/dp/B096M7NPNP?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "tdp": 300,
-    "bench": 52,
-    "vram": 16384
-  },
-  {
-    "id": 30365,
-    "c": "GPU",
-    "n": "GIGABYTE MSI Gaming Radeon RX 6900 XT Gaming Z Trio 16G 16GB GDDR6 256-Bit HDMI/DP Nvlink Torx Fan 4 AMD Graphics Card (RX 6900 XT Gaming Z Trio 16G)",
-    "b": "Gigabyte",
     "pr": 689.99,
     "msrp": 689.99,
     "r": 4.3,

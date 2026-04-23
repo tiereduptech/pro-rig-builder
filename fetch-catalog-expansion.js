@@ -154,6 +154,10 @@ async function getAmazonSearchResults(taskId) {
 
 // Helper: check if an Amazon result matches our target
 function resultMatchesTarget(item, target) {
+  // Reject counterfeit/aftermarket listings
+  const titleLower = (item.title || '').toLowerCase();
+  if (/\bfit\s+for\b|replacement\s+for|compatible\s+replacement/i.test(titleLower)) return false;
+  if (titleLower.startsWith("pc motherboard") || titleLower.startsWith("motherboards fit")) return false;
   const title = (item.title || '').toUpperCase();
   const canonical = target.canonical.toUpperCase();
 
