@@ -21330,7 +21330,7 @@ export const PARTS = [
     "tdp": 225,
     "pciPwr": 2,
     "slots": 2,
-    "bench": 52,
+    "bench": 35,
     "cp": "SALE",
     "off": 50,
     "deals": {
@@ -21363,7 +21363,7 @@ export const PARTS = [
     "boost": 2407,
     "arch": "Blackwell",
     "type": "gaming",
-    "bench": 99,
+    "bench": 100,
     "deals": {
       "amazon": {
         "price": 3890,
@@ -21393,7 +21393,7 @@ export const PARTS = [
     "boost": 2617,
     "arch": "Blackwell",
     "type": "gaming",
-    "bench": 90,
+    "bench": 94,
     "deals": {
       "amazon": {
         "price": 1490,
@@ -21423,7 +21423,7 @@ export const PARTS = [
     "boost": 2452,
     "arch": "Blackwell",
     "type": "gaming",
-    "bench": 84,
+    "bench": 85,
     "deals": {
       "amazon": {
         "price": 1100,
@@ -21453,7 +21453,7 @@ export const PARTS = [
     "boost": 2512,
     "arch": "Blackwell",
     "type": "gaming",
-    "bench": 78,
+    "bench": 76,
     "deals": {
       "amazon": {
         "price": 636,
@@ -21483,7 +21483,7 @@ export const PARTS = [
     "boost": 2457,
     "arch": "Blackwell",
     "type": "gaming",
-    "bench": 68,
+    "bench": 60,
     "deals": {
       "amazon": {
         "price": 574,
@@ -21513,7 +21513,7 @@ export const PARTS = [
     "boost": 2407,
     "arch": "Blackwell",
     "type": "gaming",
-    "bench": 58,
+    "bench": 55,
     "deals": {
       "amazon": {
         "price": 330,
@@ -21543,7 +21543,7 @@ export const PARTS = [
     "boost": 2520,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 95,
+    "bench": 100,
     "deals": {
       "amazon": {
         "price": 3226,
@@ -21573,7 +21573,7 @@ export const PARTS = [
     "boost": 2550,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 87,
+    "bench": 90,
     "deals": {
       "amazon": {
         "price": 1145,
@@ -21603,7 +21603,7 @@ export const PARTS = [
     "boost": 2505,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 85,
+    "bench": 90,
     "deals": {
       "amazon": {
         "price": 1565,
@@ -21633,7 +21633,7 @@ export const PARTS = [
     "boost": 2610,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 82,
+    "bench": 84,
     "deals": {
       "amazon": {
         "price": 889.99,
@@ -21663,7 +21663,7 @@ export const PARTS = [
     "boost": 2610,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 80,
+    "bench": 83,
     "deals": {
       "amazon": {
         "price": 789,
@@ -21693,7 +21693,7 @@ export const PARTS = [
     "boost": 2475,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 77,
+    "bench": 79,
     "deals": {
       "amazon": {
         "price": 610,
@@ -21723,7 +21723,7 @@ export const PARTS = [
     "boost": 2475,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 73,
+    "bench": 71,
     "deals": {
       "amazon": {
         "price": 500,
@@ -21753,7 +21753,7 @@ export const PARTS = [
     "boost": 2535,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 65,
+    "bench": 59,
     "deals": {
       "amazon": {
         "price": 574,
@@ -21783,7 +21783,7 @@ export const PARTS = [
     "boost": 2535,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 63,
+    "bench": 59,
     "deals": {
       "amazon": {
         "price": 357,
@@ -21813,7 +21813,7 @@ export const PARTS = [
     "boost": 2460,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 55,
+    "bench": 51,
     "deals": {
       "amazon": {
         "price": 320,
@@ -21843,7 +21843,7 @@ export const PARTS = [
     "boost": 1860,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 79,
+    "bench": 77,
     "deals": {
       "amazon": {
         "price": 1450,
@@ -21873,7 +21873,7 @@ export const PARTS = [
     "boost": 1695,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 76,
+    "bench": 70,
     "deals": {
       "amazon": {
         "price": 1450,
@@ -21903,7 +21903,7 @@ export const PARTS = [
     "boost": 1665,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 74,
+    "bench": 70,
     "deals": {
       "amazon": {
         "price": 650,
@@ -21933,7 +21933,7 @@ export const PARTS = [
     "boost": 1710,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 72,
+    "bench": 70,
     "deals": {
       "amazon": {
         "price": 650,
@@ -21993,7 +21993,7 @@ export const PARTS = [
     "boost": 1770,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 65,
+    "bench": 61,
     "deals": {
       "amazon": {
         "price": 400,
@@ -22023,7 +22023,7 @@ export const PARTS = [
     "boost": 1725,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 63,
+    "bench": 58,
     "deals": {
       "amazon": {
         "price": 384,
@@ -22053,7 +22053,7 @@ export const PARTS = [
     "boost": 1665,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 58,
+    "bench": 53,
     "deals": {
       "amazon": {
         "price": 365,
@@ -22083,7 +22083,7 @@ export const PARTS = [
     "boost": 1777,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 50,
+    "bench": 45,
     "deals": {
       "amazon": {
         "price": 419.22,
@@ -22113,7 +22113,7 @@ export const PARTS = [
     "boost": 1777,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 38,
+    "bench": 33,
     "deals": {
       "amazon": {
         "price": 230,
@@ -22143,7 +22143,7 @@ export const PARTS = [
     "boost": 2970,
     "arch": "RDNA 4",
     "type": "gaming",
-    "bench": 82,
+    "bench": 71,
     "deals": {
       "amazon": {
         "price": 720,
@@ -22173,7 +22173,7 @@ export const PARTS = [
     "boost": 2700,
     "arch": "RDNA 4",
     "type": "gaming",
-    "bench": 76,
+    "bench": 67,
     "deals": {
       "amazon": {
         "price": 620,
@@ -22203,7 +22203,7 @@ export const PARTS = [
     "boost": 2800,
     "arch": "RDNA 4",
     "type": "gaming",
-    "bench": 58,
+    "bench": 53,
     "deals": {
       "amazon": {
         "price": 460,
@@ -22233,7 +22233,7 @@ export const PARTS = [
     "boost": 2700,
     "arch": "RDNA 4",
     "type": "gaming",
-    "bench": 48,
+    "bench": 47,
     "deals": {
       "amazon": {
         "price": 460,
@@ -22263,7 +22263,7 @@ export const PARTS = [
     "boost": 2499,
     "arch": "RDNA 3",
     "type": "gaming",
-    "bench": 88,
+    "bench": 83,
     "deals": {
       "amazon": {
         "price": 680,
@@ -22293,7 +22293,7 @@ export const PARTS = [
     "boost": 2394,
     "arch": "RDNA 3",
     "type": "gaming",
-    "bench": 83,
+    "bench": 76,
     "deals": {
       "amazon": {
         "price": 680,
@@ -22323,7 +22323,7 @@ export const PARTS = [
     "boost": 2245,
     "arch": "RDNA 3",
     "type": "gaming",
-    "bench": 75,
+    "bench": 72,
     "deals": {
       "amazon": {
         "price": 680,
@@ -22353,7 +22353,7 @@ export const PARTS = [
     "boost": 2430,
     "arch": "RDNA 3",
     "type": "gaming",
-    "bench": 72,
+    "bench": 64,
     "deals": {
       "amazon": {
         "price": 579.99,
@@ -22383,7 +22383,7 @@ export const PARTS = [
     "boost": 2544,
     "arch": "RDNA 3",
     "type": "gaming",
-    "bench": 67,
+    "bench": 60,
     "deals": {
       "amazon": {
         "price": 310,
@@ -22413,7 +22413,7 @@ export const PARTS = [
     "boost": 2755,
     "arch": "RDNA 3",
     "type": "gaming",
-    "bench": 52,
+    "bench": 45,
     "deals": {
       "amazon": {
         "price": 310,
@@ -22443,7 +22443,7 @@ export const PARTS = [
     "boost": 2655,
     "arch": "RDNA 3",
     "type": "gaming",
-    "bench": 48,
+    "bench": 43,
     "deals": {
       "amazon": {
         "price": 320,
@@ -22473,7 +22473,7 @@ export const PARTS = [
     "boost": 2310,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 75,
+    "bench": 74,
     "deals": {
       "amazon": {
         "price": 619.99,
@@ -22503,7 +22503,7 @@ export const PARTS = [
     "boost": 2250,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 72,
+    "bench": 70,
     "deals": {
       "amazon": {
         "price": 700,
@@ -22565,7 +22565,7 @@ export const PARTS = [
     "boost": 2105,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 62,
+    "bench": 58,
     "deals": {
       "amazon": {
         "price": 450,
@@ -22595,7 +22595,7 @@ export const PARTS = [
     "boost": 2600,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 56,
+    "bench": 54,
     "deals": {
       "amazon": {
         "price": 310,
@@ -22625,7 +22625,7 @@ export const PARTS = [
     "boost": 2581,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 53,
+    "bench": 52,
     "deals": {
       "amazon": {
         "price": 369,
@@ -22655,7 +22655,7 @@ export const PARTS = [
     "boost": 2635,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 47,
+    "bench": 45,
     "deals": {
       "amazon": {
         "price": 349.99,
@@ -22685,7 +22685,7 @@ export const PARTS = [
     "boost": 2589,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 44,
+    "bench": 43,
     "deals": {
       "amazon": {
         "price": 319.99,
@@ -22745,7 +22745,7 @@ export const PARTS = [
     "boost": 2670,
     "arch": "Battlemage",
     "type": "gaming",
-    "bench": 48,
+    "bench": 42,
     "deals": {
       "amazon": {
         "price": 310,
@@ -22775,7 +22775,7 @@ export const PARTS = [
     "boost": 2500,
     "arch": "Battlemage",
     "type": "gaming",
-    "bench": 42,
+    "bench": 37,
     "deals": {
       "amazon": {
         "price": 260,
@@ -22805,7 +22805,7 @@ export const PARTS = [
     "boost": 2100,
     "arch": "Alchemist",
     "type": "gaming",
-    "bench": 46,
+    "bench": 35,
     "deals": {
       "amazon": {
         "price": 399.99,
@@ -22835,7 +22835,7 @@ export const PARTS = [
     "boost": 2050,
     "arch": "Alchemist",
     "type": "gaming",
-    "bench": 42,
+    "bench": 33,
     "deals": {
       "amazon": {
         "price": 220,
@@ -22865,7 +22865,7 @@ export const PARTS = [
     "boost": 1700,
     "arch": "Alchemist",
     "type": "gaming",
-    "bench": 35,
+    "bench": 32,
     "deals": {
       "amazon": {
         "price": 220,
@@ -22895,7 +22895,7 @@ export const PARTS = [
     "boost": 2505,
     "arch": "Ada Lovelace",
     "type": "workstation",
-    "bench": 96,
+    "bench": 75,
     "deals": {
       "amazon": {
         "price": 7980,
@@ -22925,7 +22925,7 @@ export const PARTS = [
     "boost": 2550,
     "arch": "Ada Lovelace",
     "type": "workstation",
-    "bench": 88,
+    "bench": 79,
     "deals": {
       "amazon": {
         "price": 3900,
@@ -22955,7 +22955,7 @@ export const PARTS = [
     "boost": 2580,
     "arch": "Ada Lovelace",
     "type": "workstation",
-    "bench": 78,
+    "bench": 75,
     "deals": {
       "amazon": {
         "price": 2700,
@@ -22985,7 +22985,7 @@ export const PARTS = [
     "boost": 2175,
     "arch": "Ada Lovelace",
     "type": "workstation",
-    "bench": 65,
+    "bench": 62,
     "deals": {
       "amazon": {
         "price": 1595,
@@ -23412,7 +23412,7 @@ export const PARTS = [
       }
     },
     "cuda": 10752,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30071,
@@ -23442,7 +23442,7 @@ export const PARTS = [
       }
     },
     "cuda": 10752,
-    "bench": 78
+    "bench": 95
   },
   {
     "id": 30072,
@@ -23472,7 +23472,7 @@ export const PARTS = [
       }
     },
     "cuda": 10752,
-    "bench": 78
+    "bench": 95
   },
   {
     "id": 30073,
@@ -23502,7 +23502,7 @@ export const PARTS = [
       }
     },
     "cuda": 8960,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30074,
@@ -23532,7 +23532,7 @@ export const PARTS = [
       }
     },
     "cuda": 8960,
-    "bench": 68
+    "bench": 86
   },
   {
     "id": 30075,
@@ -23562,7 +23562,7 @@ export const PARTS = [
       }
     },
     "cuda": 6144,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30076,
@@ -23592,7 +23592,7 @@ export const PARTS = [
       }
     },
     "cuda": 6144,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30077,
@@ -23622,7 +23622,7 @@ export const PARTS = [
       }
     },
     "cuda": 6144,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30078,
@@ -23652,7 +23652,7 @@ export const PARTS = [
       }
     },
     "cuda": 16384,
-    "bench": 85
+    "bench": 100
   },
   {
     "id": 30079,
@@ -23682,7 +23682,7 @@ export const PARTS = [
       }
     },
     "cuda": 16384,
-    "bench": 85
+    "bench": 100
   },
   {
     "id": 30080,
@@ -23712,7 +23712,7 @@ export const PARTS = [
       }
     },
     "cuda": 16384,
-    "bench": 85
+    "bench": 100
   },
   {
     "id": 30081,
@@ -23742,7 +23742,7 @@ export const PARTS = [
       }
     },
     "cuda": 8448,
-    "bench": 62
+    "bench": 85
   },
   {
     "id": 30082,
@@ -23772,7 +23772,7 @@ export const PARTS = [
       }
     },
     "cuda": 8448,
-    "bench": 62
+    "bench": 85
   },
   {
     "id": 30083,
@@ -23802,7 +23802,7 @@ export const PARTS = [
       }
     },
     "cuda": 7168,
-    "bench": 53
+    "bench": 80
   },
   {
     "id": 30084,
@@ -23832,7 +23832,7 @@ export const PARTS = [
       }
     },
     "cuda": 7168,
-    "bench": 53
+    "bench": 80
   },
   {
     "id": 30085,
@@ -23862,7 +23862,7 @@ export const PARTS = [
       }
     },
     "cuda": 4352,
-    "bench": 36
+    "bench": 61
   },
   {
     "id": 30086,
@@ -23892,7 +23892,7 @@ export const PARTS = [
       }
     },
     "cuda": 4352,
-    "bench": 36
+    "bench": 61
   },
   {
     "id": 30087,
@@ -23922,7 +23922,7 @@ export const PARTS = [
       }
     },
     "cuda": 3072,
-    "bench": 30
+    "bench": 52
   },
   {
     "id": 30088,
@@ -23952,7 +23952,7 @@ export const PARTS = [
       }
     },
     "cuda": 3072,
-    "bench": 30
+    "bench": 52
   },
   {
     "id": 30089,
@@ -23982,7 +23982,7 @@ export const PARTS = [
       }
     },
     "cuda": 3072,
-    "bench": 30
+    "bench": 51
   },
   {
     "id": 30090,
@@ -24012,7 +24012,7 @@ export const PARTS = [
       }
     },
     "sp": 4096,
-    "bench": 62
+    "bench": 71
   },
   {
     "id": 30091,
@@ -24042,7 +24042,7 @@ export const PARTS = [
       }
     },
     "sp": 4096,
-    "bench": 62
+    "bench": 71
   },
   {
     "id": 30092,
@@ -24072,7 +24072,7 @@ export const PARTS = [
       }
     },
     "sp": 4096,
-    "bench": 62
+    "bench": 71
   },
   {
     "id": 30093,
@@ -24102,7 +24102,7 @@ export const PARTS = [
       }
     },
     "sp": 4096,
-    "bench": 62
+    "bench": 72
   },
   {
     "id": 30094,
@@ -24132,7 +24132,7 @@ export const PARTS = [
       }
     },
     "sp": 6144,
-    "bench": 65
+    "bench": 83
   },
   {
     "id": 30095,
@@ -24162,7 +24162,7 @@ export const PARTS = [
       }
     },
     "sp": 6144,
-    "bench": 65
+    "bench": 83
   },
   {
     "id": 30096,
@@ -24192,7 +24192,7 @@ export const PARTS = [
       }
     },
     "sp": 3840,
-    "bench": 42
+    "bench": 64
   },
   {
     "id": 30097,
@@ -24222,7 +24222,7 @@ export const PARTS = [
       }
     },
     "sp": 3840,
-    "bench": 42
+    "bench": 64
   },
   {
     "id": 30098,
@@ -24252,7 +24252,7 @@ export const PARTS = [
       }
     },
     "sp": 3840,
-    "bench": 42
+    "bench": 64
   },
   {
     "id": 30099,
@@ -24282,7 +24282,7 @@ export const PARTS = [
       }
     },
     "sp": 3840,
-    "bench": 42
+    "bench": 65
   },
   {
     "id": 30100,
@@ -24312,7 +24312,7 @@ export const PARTS = [
       }
     },
     "sp": 3456,
-    "bench": 35
+    "bench": 60
   },
   {
     "id": 30101,
@@ -24342,7 +24342,7 @@ export const PARTS = [
       }
     },
     "sp": 3456,
-    "bench": 35
+    "bench": 60
   },
   {
     "id": 30102,
@@ -24372,7 +24372,7 @@ export const PARTS = [
       }
     },
     "sp": 2048,
-    "bench": 24
+    "bench": 43
   },
   {
     "id": 30103,
@@ -24402,7 +24402,7 @@ export const PARTS = [
       }
     },
     "sp": 2048,
-    "bench": 24
+    "bench": 43
   },
   {
     "id": 30104,
@@ -24432,7 +24432,7 @@ export const PARTS = [
       }
     },
     "sp": 2048,
-    "bench": 24
+    "bench": 43
   },
   {
     "id": 30105,
@@ -24496,7 +24496,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 130,
     "length": 225,
-    "bench": 22
+    "bench": 33
   },
   {
     "id": 30108,
@@ -24535,7 +24535,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 40
+    "bench": 54
   },
   {
     "id": 30109,
@@ -24569,7 +24569,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 304,
     "length": 290,
-    "bench": 62
+    "bench": 72
   },
   {
     "id": 30110,
@@ -24604,7 +24604,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 40
+    "bench": 53
   },
   {
     "id": 30111,
@@ -24642,7 +24642,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30112,
@@ -24715,7 +24715,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30114,
@@ -24754,7 +24754,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 94
   },
   {
     "id": 30115,
@@ -24787,7 +24787,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30116,
@@ -24820,7 +24820,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30117,
@@ -24859,7 +24859,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 304,
     "length": 290,
-    "bench": 62
+    "bench": 72
   },
   {
     "id": 30118,
@@ -24931,7 +24931,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30120,
@@ -24969,7 +24969,7 @@ export const PARTS = [
     "interface": "PCI Express 4.0",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 94
   },
   {
     "id": 30121,
@@ -25002,7 +25002,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 304,
     "length": 290,
-    "bench": 62
+    "bench": 72
   },
   {
     "id": 30122,
@@ -25036,7 +25036,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 95
   },
   {
     "id": 30123,
@@ -25070,7 +25070,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30124,
@@ -25110,7 +25110,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30125,
@@ -25143,7 +25143,7 @@ export const PARTS = [
     "interface": "PCI-Express x8",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30126,
@@ -25176,7 +25176,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
-    "bench": 36
+    "bench": 61
   },
   {
     "id": 30127,
@@ -25210,7 +25210,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 165,
     "length": 240,
-    "bench": 24
+    "bench": 44
   },
   {
     "id": 30128,
@@ -25243,7 +25243,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 40
+    "bench": 54
   },
   {
     "id": 30129,
@@ -25276,7 +25276,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 290,
-    "bench": 53
+    "bench": 80
   },
   {
     "id": 30130,
@@ -25310,7 +25310,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 200,
     "length": 285,
-    "bench": 48
+    "bench": 72
   },
   {
     "id": 30131,
@@ -25344,7 +25344,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 160,
     "length": 245,
-    "bench": 36
+    "bench": 59
   },
   {
     "id": 30132,
@@ -25377,7 +25377,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 290,
-    "bench": 53
+    "bench": 80
   },
   {
     "id": 30133,
@@ -25410,7 +25410,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 304,
     "length": 290,
-    "bench": 62
+    "bench": 72
   },
   {
     "id": 30134,
@@ -25444,7 +25444,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 263,
     "length": 267,
-    "bench": 42
+    "bench": 65
   },
   {
     "id": 30135,
@@ -25477,7 +25477,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 285,
     "length": 305,
-    "bench": 58
+    "bench": 85
   },
   {
     "id": 30136,
@@ -25508,7 +25508,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
-    "bench": 73
+    "bench": 90
   },
   {
     "id": 30137,
@@ -25539,7 +25539,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
-    "bench": 73
+    "bench": 92
   },
   {
     "id": 30138,
@@ -25567,7 +25567,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
-    "bench": 73
+    "bench": 92
   },
   {
     "id": 30139,
@@ -25601,7 +25601,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
-    "bench": 36
+    "bench": 60
   },
   {
     "id": 30140,
@@ -25633,7 +25633,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 130,
     "length": 210,
-    "bench": 14
+    "bench": 24
   },
   {
     "id": 30141,
@@ -25666,7 +25666,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
-    "bench": 73
+    "bench": 92
   },
   {
     "id": 30142,
@@ -25698,7 +25698,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 315,
     "length": 276,
-    "bench": 58
+    "bench": 76
   },
   {
     "id": 30143,
@@ -25732,7 +25732,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 320,
     "length": 310,
-    "bench": 70
+    "bench": 90
   },
   {
     "id": 30144,
@@ -25766,7 +25766,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 290,
-    "bench": 53
+    "bench": 80
   },
   {
     "id": 30145,
@@ -25800,7 +25800,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30146,
@@ -25833,7 +25833,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30147,
@@ -25866,7 +25866,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
-    "bench": 36
+    "bench": 61
   },
   {
     "id": 30148,
@@ -25899,7 +25899,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 115,
     "length": 245,
-    "bench": 30
+    "bench": 51
   },
   {
     "id": 30149,
@@ -25928,7 +25928,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 285,
     "length": 305,
-    "bench": 62
+    "bench": 85
   },
   {
     "id": 30150,
@@ -25961,7 +25961,7 @@ export const PARTS = [
     "interface": "PCI-Express x8",
     "tdp": 150,
     "length": 250,
-    "bench": 38
+    "bench": 56
   },
   {
     "id": 30151,
@@ -25994,7 +25994,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
-    "bench": 73
+    "bench": 90
   },
   {
     "id": 30152,
@@ -26027,7 +26027,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30153,
@@ -26060,7 +26060,7 @@ export const PARTS = [
     "interface": "PCI-Express x4",
     "tdp": 450,
     "length": 336,
-    "bench": 85
+    "bench": 100
   },
   {
     "id": 30154,
@@ -26092,7 +26092,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 250,
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30155,
@@ -26125,7 +26125,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 285,
     "length": 305,
-    "bench": 62
+    "bench": 85
   },
   {
     "id": 30156,
@@ -26158,7 +26158,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 290,
-    "bench": 53
+    "bench": 79
   },
   {
     "id": 30157,
@@ -26191,7 +26191,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
-    "bench": 36
+    "bench": 59
   },
   {
     "id": 30158,
@@ -26224,7 +26224,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 290,
-    "bench": 53
+    "bench": 79
   },
   {
     "id": 30159,
@@ -26257,7 +26257,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
-    "bench": 70
+    "bench": 90
   },
   {
     "id": 30160,
@@ -26289,7 +26289,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 355,
     "length": 287,
-    "bench": 65
+    "bench": 83
   },
   {
     "id": 30161,
@@ -26324,7 +26324,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
-    "bench": 36
+    "bench": 59
   },
   {
     "id": 30162,
@@ -26357,7 +26357,7 @@ export const PARTS = [
     "interface": "PCI-Express x8",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30163,
@@ -26428,7 +26428,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30165,
@@ -26460,7 +26460,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 285,
     "length": 305,
-    "bench": 62
+    "bench": 85
   },
   {
     "id": 30166,
@@ -26493,7 +26493,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 285,
     "length": 305,
-    "bench": 62
+    "bench": 85
   },
   {
     "id": 30167,
@@ -26526,7 +26526,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
-    "bench": 36
+    "bench": 61
   },
   {
     "id": 30168,
@@ -26559,7 +26559,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 230,
     "length": 267,
-    "bench": 30
+    "bench": 53
   },
   {
     "id": 30169,
@@ -26592,7 +26592,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30170,
@@ -26625,7 +26625,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
-    "bench": 36
+    "bench": 61
   },
   {
     "id": 30171,
@@ -26658,7 +26658,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 285,
     "length": 305,
-    "bench": 62
+    "bench": 85
   },
   {
     "id": 30172,
@@ -26691,7 +26691,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30173,
@@ -26730,7 +26730,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 94
   },
   {
     "id": 30174,
@@ -26769,7 +26769,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30175,
@@ -26834,7 +26834,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
-    "bench": 73
+    "bench": 92
   },
   {
     "id": 30177,
@@ -26868,7 +26868,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 245,
     "length": 267,
-    "bench": 35
+    "bench": 60
   },
   {
     "id": 30178,
@@ -26902,7 +26902,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 285,
-    "bench": 52
+    "bench": 68
   },
   {
     "id": 30179,
@@ -26934,7 +26934,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 94
   },
   {
     "id": 30180,
@@ -27001,7 +27001,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30182,
@@ -27034,7 +27034,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 285,
     "length": 305,
-    "bench": 62
+    "bench": 85
   },
   {
     "id": 30183,
@@ -27065,7 +27065,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 200,
     "length": 285,
-    "bench": 48
+    "bench": 71
   },
   {
     "id": 30184,
@@ -27162,7 +27162,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 290,
-    "bench": 53
+    "bench": 80
   },
   {
     "id": 30187,
@@ -27195,7 +27195,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30188,
@@ -27228,7 +27228,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 94
   },
   {
     "id": 30189,
@@ -27300,7 +27300,7 @@ export const PARTS = [
     "interface": "PCI-Express x8",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30191,
@@ -27332,7 +27332,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 125,
     "length": 225,
-    "bench": 18
+    "bench": 33
   },
   {
     "id": 30192,
@@ -27366,7 +27366,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30193,
@@ -27400,7 +27400,7 @@ export const PARTS = [
     "interface": "PCI, PCI Express",
     "tdp": 220,
     "length": 290,
-    "bench": 53
+    "bench": 79
   },
   {
     "id": 30194,
@@ -27434,7 +27434,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 150,
     "length": 250,
-    "bench": 38
+    "bench": 56
   },
   {
     "id": 30195,
@@ -27469,7 +27469,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 250,
     "length": 290,
-    "bench": 55
+    "bench": 76
   },
   {
     "id": 30196,
@@ -27497,7 +27497,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 220,
     "length": 290,
-    "bench": 53
+    "bench": 79
   },
   {
     "id": 30197,
@@ -27530,7 +27530,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 60
   },
   {
     "id": 30198,
@@ -27565,7 +27565,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30199,
@@ -27598,7 +27598,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30200,
@@ -27631,7 +27631,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 350,
     "length": 313,
-    "bench": 60
+    "bench": 70
   },
   {
     "id": 30201,
@@ -27670,7 +27670,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30202,
@@ -27704,7 +27704,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 150,
     "length": 250,
-    "bench": 38
+    "bench": 56
   },
   {
     "id": 30203,
@@ -27737,7 +27737,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30204,
@@ -27770,7 +27770,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 285,
-    "bench": 52
+    "bench": 68
   },
   {
     "id": 30205,
@@ -27831,7 +27831,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 160,
     "length": 245,
-    "bench": 36
+    "bench": 59
   },
   {
     "id": 30207,
@@ -27864,7 +27864,7 @@ export const PARTS = [
     "interface": "PCI-Express x8",
     "tdp": 320,
     "length": 310,
-    "bench": 73
+    "bench": 90
   },
   {
     "id": 30208,
@@ -27963,7 +27963,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 94
   },
   {
     "id": 30211,
@@ -27996,7 +27996,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 60
   },
   {
     "id": 30212,
@@ -28027,7 +28027,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 304,
     "length": 290,
-    "bench": 62
+    "bench": 71
   },
   {
     "id": 30213,
@@ -28062,7 +28062,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 360,
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30214,
@@ -28094,7 +28094,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 180,
     "length": 260,
-    "bench": 45
+    "bench": 60
   },
   {
     "id": 30215,
@@ -28194,7 +28194,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 450,
     "length": 336,
-    "bench": 85
+    "bench": 100
   },
   {
     "id": 30218,
@@ -28224,7 +28224,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 235,
-    "bench": 28
+    "bench": 45
   },
   {
     "id": 30219,
@@ -28254,7 +28254,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 235,
-    "bench": 28
+    "bench": 45
   },
   {
     "id": 30220,
@@ -28284,7 +28284,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 240,
-    "bench": 24
+    "bench": 45
   },
   {
     "id": 30221,
@@ -28314,7 +28314,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 245,
-    "bench": 36
+    "bench": 59
   },
   {
     "id": 30222,
@@ -28344,7 +28344,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 245,
-    "bench": 36
+    "bench": 61
   },
   {
     "id": 30223,
@@ -28374,7 +28374,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 225,
-    "bench": 22
+    "bench": 33
   },
   {
     "id": 30224,
@@ -28404,7 +28404,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 225,
-    "bench": 22
+    "bench": 33
   },
   {
     "id": 30225,
@@ -28434,7 +28434,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 240,
-    "bench": 24
+    "bench": 43
   },
   {
     "id": 30226,
@@ -28464,7 +28464,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 270,
-    "bench": 28
+    "bench": 42
   },
   {
     "id": 30227,
@@ -28494,7 +28494,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3-slot",
     "length": 310,
-    "bench": 78
+    "bench": 95
   },
   {
     "id": 30228,
@@ -28524,7 +28524,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3-slot",
     "length": 310,
-    "bench": 78
+    "bench": 94
   },
   {
     "id": 30229,
@@ -28614,7 +28614,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30233,
@@ -28644,7 +28644,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3-slot",
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30234,
@@ -28674,7 +28674,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30235,
@@ -28704,7 +28704,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3-slot",
     "length": 305,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30236,
@@ -28734,7 +28734,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 68
+    "bench": 85
   },
   {
     "id": 30237,
@@ -28764,7 +28764,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 55
+    "bench": 76
   },
   {
     "id": 30238,
@@ -28794,7 +28794,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30239,
@@ -28824,7 +28824,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30240,
@@ -28854,7 +28854,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 225,
-    "bench": 22
+    "bench": 33
   },
   {
     "id": 30241,
@@ -28884,7 +28884,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30242,
@@ -28974,7 +28974,7 @@ export const PARTS = [
     "slots": "2-slot",
     "tdp": 150,
     "length": 270,
-    "bench": 22
+    "bench": 38
   },
   {
     "id": 30245,
@@ -29064,7 +29064,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30248,
@@ -29094,7 +29094,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30249,
@@ -29124,7 +29124,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3-slot",
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30250,
@@ -29214,7 +29214,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.7-slot",
     "length": 290,
-    "bench": 62
+    "bench": 72
   },
   {
     "id": 30253,
@@ -29244,7 +29244,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30254,
@@ -29274,7 +29274,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 305,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30255,
@@ -29304,7 +29304,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30256,
@@ -29334,7 +29334,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30257,
@@ -29364,7 +29364,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 305,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30258,
@@ -29394,7 +29394,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30259,
@@ -29424,7 +29424,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 68
+    "bench": 86
   },
   {
     "id": 30260,
@@ -29454,7 +29454,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30261,
@@ -29484,7 +29484,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30262,
@@ -29514,7 +29514,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30263,
@@ -29544,7 +29544,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30264,
@@ -29574,7 +29574,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 290,
-    "bench": 62
+    "bench": 72
   },
   {
     "id": 30265,
@@ -29604,7 +29604,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 285,
-    "bench": 52
+    "bench": 68
   },
   {
     "id": 30266,
@@ -29634,7 +29634,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 290,
-    "bench": 62
+    "bench": 71
   },
   {
     "id": 30267,
@@ -29664,7 +29664,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 290,
-    "bench": 62
+    "bench": 71
   },
   {
     "id": 30268,
@@ -29694,7 +29694,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 285,
-    "bench": 52
+    "bench": 68
   },
   {
     "id": 30269,
@@ -29724,7 +29724,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 290,
-    "bench": 62
+    "bench": 72
   },
   {
     "id": 30270,
@@ -29754,7 +29754,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30271,
@@ -29784,7 +29784,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 285,
-    "bench": 52
+    "bench": 68
   },
   {
     "id": 30272,
@@ -29814,7 +29814,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 290,
-    "bench": 62
+    "bench": 72
   },
   {
     "id": 30273,
@@ -29844,7 +29844,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.7-slot",
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30274,
@@ -29874,7 +29874,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30275,
@@ -29904,7 +29904,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30276,
@@ -29934,7 +29934,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30277,
@@ -29964,7 +29964,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 45
+    "bench": 60
   },
   {
     "id": 30278,
@@ -29994,7 +29994,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30279,
@@ -30024,7 +30024,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30280,
@@ -30054,7 +30054,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30281,
@@ -30084,7 +30084,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30282,
@@ -30114,7 +30114,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30283,
@@ -30144,7 +30144,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 250,
-    "bench": 38
+    "bench": 55
   },
   {
     "id": 30284,
@@ -30174,7 +30174,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 45
+    "bench": 60
   },
   {
     "id": 30285,
@@ -30204,7 +30204,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30286,
@@ -30234,7 +30234,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30287,
@@ -30264,7 +30264,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 38
+    "bench": 56
   },
   {
     "id": 30288,
@@ -30294,7 +30294,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 38
+    "bench": 55
   },
   {
     "id": 30289,
@@ -30324,7 +30324,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 250,
-    "bench": 38
+    "bench": 56
   },
   {
     "id": 30290,
@@ -30354,7 +30354,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 250,
-    "bench": 38
+    "bench": 56
   },
   {
     "id": 30291,
@@ -30384,7 +30384,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 38
+    "bench": 56
   },
   {
     "id": 30292,
@@ -30414,7 +30414,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 38
+    "bench": 56
   },
   {
     "id": 30293,
@@ -30444,7 +30444,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 38
+    "bench": 56
   },
   {
     "id": 30294,
@@ -30474,7 +30474,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 38
+    "bench": 56
   },
   {
     "id": 30295,
@@ -30504,7 +30504,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 38
+    "bench": 56
   },
   {
     "id": 30296,
@@ -30534,7 +30534,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3-slot",
     "length": 260,
-    "bench": 40
+    "bench": 54
   },
   {
     "id": 30297,
@@ -30564,7 +30564,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 260,
-    "bench": 40
+    "bench": 53
   },
   {
     "id": 30298,
@@ -30594,7 +30594,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 260,
-    "bench": 40
+    "bench": 53
   },
   {
     "id": 30299,
@@ -30624,7 +30624,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 40
+    "bench": 54
   },
   {
     "id": 30300,
@@ -30654,7 +30654,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 38
+    "bench": 56
   },
   {
     "id": 30301,
@@ -30684,7 +30684,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 40
+    "bench": 54
   },
   {
     "id": 30302,
@@ -30714,7 +30714,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30303,
@@ -30744,7 +30744,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 40
+    "bench": 54
   },
   {
     "id": 30304,
@@ -30774,7 +30774,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30305,
@@ -30804,7 +30804,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30306,
@@ -30834,7 +30834,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30307,
@@ -30864,7 +30864,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30308,
@@ -30894,7 +30894,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.25-slot",
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30309,
@@ -30924,7 +30924,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.25-slot",
     "length": 305,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30310,
@@ -30954,7 +30954,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 45
+    "bench": 60
   },
   {
     "id": 30311,
@@ -30984,7 +30984,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 240,
-    "bench": 30
+    "bench": 46
   },
   {
     "id": 30312,
@@ -31014,7 +31014,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 240,
-    "bench": 30
+    "bench": 46
   },
   {
     "id": 30313,
@@ -31044,7 +31044,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 240,
-    "bench": 30
+    "bench": 46
   },
   {
     "id": 30314,
@@ -31074,7 +31074,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 240,
-    "bench": 30
+    "bench": 46
   },
   {
     "id": 30315,
@@ -31104,7 +31104,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 240,
-    "bench": 30
+    "bench": 46
   },
   {
     "id": 30316,
@@ -31134,7 +31134,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30318,
@@ -31164,7 +31164,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3-slot",
     "length": 260,
-    "bench": 40
+    "bench": 54
   },
   {
     "id": 30319,
@@ -31194,7 +31194,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 45
+    "bench": 61
   },
   {
     "id": 30320,
@@ -31223,7 +31223,7 @@ export const PARTS = [
     "slots": "3-slot",
     "tdp": 304,
     "length": 290,
-    "bench": 62
+    "bench": 71
   },
   {
     "id": 30321,
@@ -31252,7 +31252,7 @@ export const PARTS = [
     "slots": "3-slot",
     "tdp": 220,
     "length": 285,
-    "bench": 52
+    "bench": 67
   },
   {
     "id": 30322,
@@ -31281,7 +31281,7 @@ export const PARTS = [
     "slots": "3-slot",
     "tdp": 304,
     "length": 290,
-    "bench": 62
+    "bench": 71
   },
   {
     "id": 30323,
@@ -31311,7 +31311,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.7-slot",
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30324,
@@ -31341,7 +31341,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 55
+    "bench": 77
   },
   {
     "id": 30325,
@@ -31371,7 +31371,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30326,
@@ -31401,7 +31401,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 68
+    "bench": 87
   },
   {
     "id": 30327,
@@ -31431,7 +31431,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 310,
-    "bench": 78
+    "bench": 96
   },
   {
     "id": 30328,
@@ -31450,7 +31450,7 @@ export const PARTS = [
       }
     },
     "tdp": 320,
-    "bench": 76,
+    "bench": 92,
     "vram": 16384,
     "used": true,
     "condition": "used"
@@ -31472,7 +31472,7 @@ export const PARTS = [
       }
     },
     "tdp": 115,
-    "bench": 32,
+    "bench": 52,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -31494,7 +31494,7 @@ export const PARTS = [
       }
     },
     "tdp": 450,
-    "bench": 66,
+    "bench": 78,
     "vram": 24576,
     "used": true,
     "condition": "used"
@@ -31516,7 +31516,7 @@ export const PARTS = [
       }
     },
     "tdp": 350,
-    "bench": 60,
+    "bench": 71,
     "vram": 24576,
     "used": true,
     "condition": "used"
@@ -31538,7 +31538,7 @@ export const PARTS = [
       }
     },
     "tdp": 350,
-    "bench": 60,
+    "bench": 71,
     "vram": 24576,
     "used": true,
     "condition": "used"
@@ -31560,7 +31560,7 @@ export const PARTS = [
       }
     },
     "tdp": 350,
-    "bench": 58,
+    "bench": 72,
     "vram": 12288,
     "used": true,
     "condition": "used"
@@ -31582,7 +31582,7 @@ export const PARTS = [
       }
     },
     "tdp": 350,
-    "bench": 58,
+    "bench": 72,
     "vram": 12288,
     "used": true,
     "condition": "used"
@@ -31604,7 +31604,7 @@ export const PARTS = [
       }
     },
     "tdp": 350,
-    "bench": 58,
+    "bench": 72,
     "vram": 12288,
     "used": true,
     "condition": "used"
@@ -31626,7 +31626,7 @@ export const PARTS = [
       }
     },
     "tdp": 320,
-    "bench": 52,
+    "bench": 70,
     "vram": 10240,
     "used": true,
     "condition": "used"
@@ -31648,7 +31648,7 @@ export const PARTS = [
       }
     },
     "tdp": 320,
-    "bench": 52,
+    "bench": 71,
     "vram": 10240,
     "used": true,
     "condition": "used"
@@ -31670,7 +31670,7 @@ export const PARTS = [
       }
     },
     "tdp": 320,
-    "bench": 52,
+    "bench": 71,
     "vram": 10240,
     "used": true,
     "condition": "used"
@@ -31692,7 +31692,7 @@ export const PARTS = [
       }
     },
     "tdp": 290,
-    "bench": 44,
+    "bench": 62,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -31714,7 +31714,7 @@ export const PARTS = [
       }
     },
     "tdp": 290,
-    "bench": 44,
+    "bench": 62,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -31736,7 +31736,7 @@ export const PARTS = [
       }
     },
     "tdp": 290,
-    "bench": 44,
+    "bench": 62,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -31758,7 +31758,7 @@ export const PARTS = [
       }
     },
     "tdp": 220,
-    "bench": 40,
+    "bench": 59,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -31780,7 +31780,7 @@ export const PARTS = [
       }
     },
     "tdp": 220,
-    "bench": 40,
+    "bench": 59,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -31802,7 +31802,7 @@ export const PARTS = [
       }
     },
     "tdp": 220,
-    "bench": 40,
+    "bench": 59,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -31824,7 +31824,7 @@ export const PARTS = [
       }
     },
     "tdp": 200,
-    "bench": 35,
+    "bench": 54,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -31846,7 +31846,7 @@ export const PARTS = [
       }
     },
     "tdp": 200,
-    "bench": 35,
+    "bench": 54,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -31868,7 +31868,7 @@ export const PARTS = [
       }
     },
     "tdp": 200,
-    "bench": 35,
+    "bench": 54,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -31890,7 +31890,7 @@ export const PARTS = [
       }
     },
     "tdp": 170,
-    "bench": 28,
+    "bench": 45,
     "vram": 12288,
     "used": true,
     "condition": "used"
@@ -31912,7 +31912,7 @@ export const PARTS = [
       }
     },
     "tdp": 250,
-    "bench": 36,
+    "bench": 57,
     "vram": 11264,
     "used": true,
     "condition": "used"
@@ -31934,7 +31934,7 @@ export const PARTS = [
       }
     },
     "tdp": 250,
-    "bench": 36,
+    "bench": 56,
     "vram": 11264,
     "used": true,
     "condition": "used"
@@ -31956,7 +31956,7 @@ export const PARTS = [
       }
     },
     "tdp": 250,
-    "bench": 33,
+    "bench": 52,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -31978,7 +31978,7 @@ export const PARTS = [
       }
     },
     "tdp": 250,
-    "bench": 33,
+    "bench": 52,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32000,7 +32000,7 @@ export const PARTS = [
       }
     },
     "tdp": 215,
-    "bench": 32,
+    "bench": 49,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32022,7 +32022,7 @@ export const PARTS = [
       }
     },
     "tdp": 215,
-    "bench": 30,
+    "bench": 48,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32044,7 +32044,7 @@ export const PARTS = [
       }
     },
     "tdp": 215,
-    "bench": 30,
+    "bench": 49,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32066,7 +32066,7 @@ export const PARTS = [
       }
     },
     "tdp": 215,
-    "bench": 30,
+    "bench": 49,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32088,7 +32088,7 @@ export const PARTS = [
       }
     },
     "tdp": 175,
-    "bench": 27,
+    "bench": 43,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32110,7 +32110,7 @@ export const PARTS = [
       }
     },
     "tdp": 175,
-    "bench": 27,
+    "bench": 42,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32132,7 +32132,7 @@ export const PARTS = [
       }
     },
     "tdp": 175,
-    "bench": 26,
+    "bench": 44,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32154,7 +32154,7 @@ export const PARTS = [
       }
     },
     "tdp": 175,
-    "bench": 26,
+    "bench": 44,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32176,7 +32176,7 @@ export const PARTS = [
       }
     },
     "tdp": 175,
-    "bench": 26,
+    "bench": 44,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32198,7 +32198,7 @@ export const PARTS = [
       }
     },
     "tdp": 160,
-    "bench": 22,
+    "bench": 42,
     "vram": 6144,
     "used": true,
     "condition": "used"
@@ -32220,7 +32220,7 @@ export const PARTS = [
       }
     },
     "tdp": 160,
-    "bench": 22,
+    "bench": 43,
     "vram": 6144,
     "used": true,
     "condition": "used"
@@ -32242,7 +32242,7 @@ export const PARTS = [
       }
     },
     "tdp": 300,
-    "bench": 52,
+    "bench": 70,
     "vram": 16384
   },
   {
@@ -32262,7 +32262,7 @@ export const PARTS = [
       }
     },
     "tdp": 300,
-    "bench": 48,
+    "bench": 67,
     "vram": 16384,
     "used": true,
     "condition": "used"
@@ -32284,7 +32284,7 @@ export const PARTS = [
       }
     },
     "tdp": 230,
-    "bench": 38,
+    "bench": 53,
     "vram": 12288,
     "used": true,
     "condition": "used"
@@ -32306,7 +32306,7 @@ export const PARTS = [
       }
     },
     "tdp": 160,
-    "bench": 28,
+    "bench": 44,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32328,7 +32328,7 @@ export const PARTS = [
       }
     },
     "tdp": 160,
-    "bench": 28,
+    "bench": 44,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32350,7 +32350,7 @@ export const PARTS = [
       }
     },
     "tdp": 160,
-    "bench": 28,
+    "bench": 43,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32372,7 +32372,7 @@ export const PARTS = [
       }
     },
     "tdp": 132,
-    "bench": 24,
+    "bench": 40,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32394,7 +32394,7 @@ export const PARTS = [
       }
     },
     "tdp": 107,
-    "bench": 16,
+    "bench": 26,
     "vram": 4096,
     "used": true,
     "condition": "used"
@@ -32416,7 +32416,7 @@ export const PARTS = [
       }
     },
     "tdp": 107,
-    "bench": 16,
+    "bench": 26,
     "vram": 4096,
     "used": true,
     "condition": "used"
@@ -32438,7 +32438,7 @@ export const PARTS = [
       }
     },
     "tdp": 225,
-    "bench": 26,
+    "bench": 44,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32460,7 +32460,7 @@ export const PARTS = [
       }
     },
     "tdp": 225,
-    "bench": 26,
+    "bench": 44,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32482,7 +32482,7 @@ export const PARTS = [
       }
     },
     "tdp": 225,
-    "bench": 26,
+    "bench": 44,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32504,7 +32504,7 @@ export const PARTS = [
       }
     },
     "tdp": 180,
-    "bench": 23,
+    "bench": 38,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32526,7 +32526,7 @@ export const PARTS = [
       }
     },
     "tdp": 130,
-    "bench": 14,
+    "bench": 24,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32548,7 +32548,7 @@ export const PARTS = [
       }
     },
     "tdp": 185,
-    "bench": 13,
+    "bench": 23,
     "vram": 8192,
     "used": true,
     "condition": "used"
@@ -32614,7 +32614,7 @@ export const PARTS = [
       }
     },
     "tdp": 190,
-    "bench": 36,
+    "bench": 43,
     "vram": 12288
   },
   {
@@ -32634,7 +32634,7 @@ export const PARTS = [
       }
     },
     "tdp": 150,
-    "bench": 30,
+    "bench": 38,
     "vram": 10240
   },
   {
@@ -32654,7 +32654,7 @@ export const PARTS = [
       }
     },
     "tdp": 225,
-    "bench": 32,
+    "bench": 36,
     "vram": 16384
   },
   {
@@ -32674,7 +32674,7 @@ export const PARTS = [
       }
     },
     "tdp": 225,
-    "bench": 28,
+    "bench": 34,
     "vram": 8192
   },
   {
@@ -32694,7 +32694,7 @@ export const PARTS = [
       }
     },
     "tdp": 75,
-    "bench": 12,
+    "bench": 17,
     "vram": 6144
   },
   {
@@ -32714,7 +32714,7 @@ export const PARTS = [
       }
     },
     "tdp": 75,
-    "bench": 12,
+    "bench": 17,
     "vram": 6144
   },
   {

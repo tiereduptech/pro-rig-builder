@@ -31,7 +31,7 @@ function extractModel(rawName) {
   const name = cleanUnicode(rawName);
 
   // Skip mobile/laptop/workstation/pro variants
-  if (/\b(Laptop|Mobile|Max-Q|Max-P|Workstation|Quadro|Tesla|Ada Generation|Ada\b|RTX\s*PRO|RTX\s*A\d|Radeon\s*Pro\s*W\d|Pro\s*W\d)\b/i.test(name)) return null;
+  if (/\b(Laptop|Mobile|Max-Q|Max-P|Workstation|Quadro|Tesla|RTX\s*PRO|RTX\s*A\d|Radeon\s*Pro\s*W\d|Pro\s*W\d)\b/i.test(name)) return null;
   if (/\b(4090\s*D|5090\s*D)\b/i.test(name)) return null;
 
   const c = name
@@ -175,7 +175,7 @@ console.log('\nApplying changes to parts.js...');
 const lines = partsText.split('\n');
 const idToLine = new Map();
 lines.forEach((line, i) => {
-  const m = line.match(/\bid\s*:\s*(\d+)/);
+  const m = line.match(/"?id"?\s*:\s*(\d+)/);
   if (m) {
     const id = parseInt(m[1], 10);
     if (!idToLine.has(id)) idToLine.set(id, i);
@@ -190,13 +190,13 @@ for (const u of updates) {
 
   let replaced = false;
   for (let i = startLine; i < Math.min(startLine + 80, lines.length); i++) {
-    if (/\bbench\s*:\s*\d+/.test(lines[i])) {
-      lines[i] = lines[i].replace(/\bbench\s*:\s*\d+/, `bench: ${u.newBench}`);
+    if (/"?bench"?\s*:\s*\d+/.test(lines[i])) {
+      lines[i] = lines[i].replace(/("?bench"?\s*:\s*)\d+/, `$1${u.newBench}`);
       replaced = true;
       applied++;
       break;
     }
-    if (i > startLine && /\bid\s*:\s*\d+/.test(lines[i])) break;
+    if (i > startLine && /"?id"?\s*:\s*\d+/.test(lines[i])) break;
   }
   if (!replaced) failed++;
 }
