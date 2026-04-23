@@ -511,9 +511,70 @@ function analyzeBottleneck(currentCPU, currentGPU) {
   return { who: "Balanced", severity: 0, text: "System is well balanced", detail: "Your CPU and GPU are closely matched. Any category upgrade will give proportional gains." };
 }
 
-function calculatePSU(cpuTDP, gpuTDP) {
-  const raw = (cpuTDP || 100) + (gpuTDP || 200) + 150;
-  return Math.ceil(raw / 100) * 100;
+// Practical recommended PSU minimums by GPU model.
+// Sources: AMD/NVIDIA official specs, cross-referenced with real-world guides
+// (Tom's Hardware, GamersNexus, PCPartPicker, overclock.net). Values include
+// +~50W headroom over manufacturer "bare minimum" to safely cover transient
+// power spikes and provide efficiency margin (PSUs run best at 50-80% load).
+const GPU_PSU_MIN = {
+  // NVIDIA RTX 50 series
+  "RTX 5090": 1000, "RTX 5080": 850, "RTX 5070 TI": 750, "RTX 5070": 750,
+  "RTX 5060 TI": 600, "RTX 5060": 600, "RTX 5050": 550,
+  // NVIDIA RTX 40 series
+  "RTX 4090": 1000, "RTX 4080 SUPER": 850, "RTX 4080": 850,
+  "RTX 4070 TI SUPER": 750, "RTX 4070 TI": 750, "RTX 4070 SUPER": 750, "RTX 4070": 700,
+  "RTX 4060 TI": 600, "RTX 4060": 600,
+  // NVIDIA RTX 30 series
+  "RTX 3090 TI": 1000, "RTX 3090": 850, "RTX 3080 TI": 850, "RTX 3080": 800,
+  "RTX 3070 TI": 800, "RTX 3070": 700, "RTX 3060 TI": 650, "RTX 3060": 600, "RTX 3050": 600,
+  // NVIDIA RTX 20 series
+  "RTX 2080 TI": 750, "RTX 2080 SUPER": 700, "RTX 2080": 700,
+  "RTX 2070 SUPER": 700, "RTX 2070": 600, "RTX 2060 SUPER": 600, "RTX 2060": 550,
+  // NVIDIA GTX 16 series
+  "GTX 1660 TI": 500, "GTX 1660 SUPER": 500, "GTX 1660": 500,
+  "GTX 1650 SUPER": 400, "GTX 1650": 350, "GTX 1630": 350,
+  // NVIDIA GTX 10 series
+  "GTX 1080 TI": 650, "GTX 1080": 550, "GTX 1070 TI": 550, "GTX 1070": 550,
+  "GTX 1060": 450, "GTX 1050 TI": 350, "GTX 1050": 350, "GTX 1030": 300,
+  // AMD RX 7000
+  "RX 7900 XTX": 900, "RX 7900 XT": 850, "RX 7900 GRE": 800,
+  "RX 7800 XT": 750, "RX 7700 XT": 750, "RX 7600 XT": 600, "RX 7600": 600,
+  // AMD RX 6000
+  "RX 6950 XT": 900, "RX 6900 XT": 900, "RX 6800 XT": 800, "RX 6800": 700,
+  "RX 6750 XT": 700, "RX 6700 XT": 700, "RX 6700": 600,
+  "RX 6650 XT": 550, "RX 6600 XT": 550, "RX 6600": 500, "RX 6500 XT": 450,
+  // AMD RX 5000
+  "RX 5700 XT": 650, "RX 5700": 650, "RX 5600 XT": 600, "RX 5500 XT": 500,
+  // AMD RX 500
+  "RX 590": 550, "RX 580": 550, "RX 570": 500, "RX 560": 450, "RX 550": 400,
+  // Intel Arc
+  "ARC B580": 650, "ARC B570": 600, "ARC A770": 650, "ARC A750": 600,
+  "ARC A580": 600, "ARC A380": 450, "ARC A310": 400,
+};
+
+function lookupGPUPSUMin(gpuName) {
+  if (!gpuName) return 0;
+  const n = gpuName.toUpperCase();
+  let bestKey = null;
+  for (const key of Object.keys(GPU_PSU_MIN)) {
+    if (n.includes(key) && (!bestKey || key.length > bestKey.length)) bestKey = key;
+  }
+  return bestKey ? GPU_PSU_MIN[bestKey] : 0;
+}
+
+// Compute recommended PSU wattage accounting for:
+//   1) CPU TDP (sustained draw)
+//   2) GPU TDP × 1.8 (transient spikes can hit ~2x rated TDP)
+//   3) 100W overhead (fans, drives, RAM, motherboard, USB)
+//   4) Manufacturer-recommended minimum (whichever is higher)
+// Final number rounded up to nearest 50W.
+function calculatePSU(cpuTDP, gpuTDP, gpuName) {
+  const cpu = cpuTDP || 100;
+  const gpu = gpuTDP || 200;
+  const mathBased = (gpu * 1.8) + cpu + 100;
+  const roundedMath = Math.ceil(mathBased / 50) * 50;
+  const manufacturerMin = lookupGPUPSUMin(gpuName);
+  return Math.max(roundedMath, manufacturerMin);
 }
 
 // ─── MAIN COMPONENT ─────────────────────────────────────────────────
@@ -546,7 +607,8 @@ export default function UpgradePage() {
 
     const newCpuTDP = recommendedBuild?.cpu?.tdp ?? currentCPU?.tdp ?? 125;
     const newGpuTDP = recommendedBuild?.gpu?.tdp ?? currentGPU?.tdp ?? 200;
-    const psuWattsNeeded = calculatePSU(newCpuTDP, newGpuTDP);
+    const newGpuName = recommendedBuild?.gpu?.n ?? currentGPU?.n ?? "";
+    const psuWattsNeeded = calculatePSU(newCpuTDP, newGpuTDP, newGpuName);
 
     // Cooler logic: only show add-ons when a new CPU is recommended AND user's current
     // cooler is insufficient (or they don't know what they have).
