@@ -19,7 +19,7 @@ export const PARTS = [
     "maxMem": 5600,
     "l3": 64,
     "arch": "Zen 5",
-    "bench": 99,
+    "bench": 94,
     "deals": {
       "amazon": {
         "price": 520,
@@ -47,7 +47,7 @@ export const PARTS = [
     "maxMem": 5600,
     "l3": 64,
     "arch": "Zen 5",
-    "bench": 99,
+    "bench": 78,
     "deals": {
       "amazon": {
         "price": 343.25,
@@ -75,7 +75,7 @@ export const PARTS = [
     "maxMem": 5600,
     "l3": 32,
     "arch": "Zen 5",
-    "bench": 90,
+    "bench": 53,
     "deals": {
       "amazon": {
         "price": 305,
@@ -103,7 +103,7 @@ export const PARTS = [
     "maxMem": 5600,
     "l3": 32,
     "arch": "Zen 5",
-    "bench": 85,
+    "bench": 43,
     "deals": {
       "amazon": {
         "price": 184,
@@ -132,7 +132,7 @@ export const PARTS = [
     "l3": 128,
     "vcache": true,
     "arch": "Zen 5",
-    "bench": 99,
+    "bench": 100,
     "deals": {
       "amazon": {
         "price": 659,
@@ -161,7 +161,7 @@ export const PARTS = [
     "l3": 128,
     "vcache": true,
     "arch": "Zen 5",
-    "bench": 99,
+    "bench": 80,
     "deals": {
       "amazon": {
         "price": 569,
@@ -190,7 +190,7 @@ export const PARTS = [
     "l3": 96,
     "vcache": true,
     "arch": "Zen 5",
-    "bench": 99,
+    "bench": 57,
     "deals": {
       "amazon": {
         "price": 464,
@@ -220,7 +220,7 @@ export const PARTS = [
     "igpu": true,
     "igpuName": "Radeon 780M",
     "arch": "Zen 4",
-    "bench": 77,
+    "bench": 45,
     "deals": {
       "amazon": {
         "price": 254,
@@ -250,7 +250,7 @@ export const PARTS = [
     "igpu": true,
     "igpuName": "Radeon 740M",
     "arch": "Zen 4",
-    "bench": 72,
+    "bench": 36,
     "deals": {
       "amazon": {
         "price": 191,
@@ -280,7 +280,7 @@ export const PARTS = [
     "igpu": true,
     "igpuName": "Radeon 740M",
     "arch": "Zen 4",
-    "bench": 70,
+    "bench": 31,
     "deals": {
       "amazon": {
         "price": 140,
@@ -342,7 +342,7 @@ export const PARTS = [
     "igpu": true,
     "igpuName": "Radeon Graphics",
     "arch": "Zen 4",
-    "bench": 96,
+    "bench": 89,
     "deals": {
       "amazon": {
         "price": 500,
@@ -373,7 +373,7 @@ export const PARTS = [
     "igpuName": "Radeon Graphics",
     "vcache": true,
     "arch": "Zen 4",
-    "bench": 99,
+    "bench": 89,
     "deals": {
       "amazon": {
         "price": 630,
@@ -403,7 +403,7 @@ export const PARTS = [
     "igpu": true,
     "igpuName": "Radeon Graphics",
     "arch": "Zen 4",
-    "bench": 96,
+    "bench": 73,
     "deals": {
       "amazon": {
         "price": 307,
@@ -434,7 +434,7 @@ export const PARTS = [
     "igpuName": "Radeon Graphics",
     "vcache": true,
     "arch": "Zen 4",
-    "bench": 99,
+    "bench": 72,
     "deals": {
       "amazon": {
         "price": 760,
@@ -464,7 +464,7 @@ export const PARTS = [
     "igpu": true,
     "igpuName": "Radeon Graphics",
     "arch": "Zen 4",
-    "bench": 88,
+    "bench": 68,
     "deals": {
       "amazon": {
         "price": 307,
@@ -495,7 +495,7 @@ export const PARTS = [
     "igpuName": "Radeon Graphics",
     "vcache": true,
     "arch": "Zen 4",
-    "bench": 93,
+    "bench": 49,
     "deals": {
       "amazon": {
         "price": 380,
@@ -525,7 +525,7 @@ export const PARTS = [
     "igpu": true,
     "igpuName": "Radeon Graphics",
     "arch": "Zen 4",
-    "bench": 83,
+    "bench": 51,
     "deals": {
       "amazon": {
         "price": 246,
@@ -560,7 +560,7 @@ export const PARTS = [
     "igpu": true,
     "igpuName": "Radeon Graphics",
     "arch": "Zen 4",
-    "bench": 78,
+    "bench": 40,
     "deals": {
       "amazon": {
         "price": 177,
@@ -590,7 +590,7 @@ export const PARTS = [
     "igpu": true,
     "igpuName": "Radeon Graphics",
     "arch": "Zen 4",
-    "bench": 73,
+    "bench": 38,
     "deals": {
       "amazon": {
         "price": 177,
@@ -618,7 +618,7 @@ export const PARTS = [
     "maxMem": 5200,
     "l3": 32,
     "arch": "Zen 4",
-    "bench": 71,
+    "bench": 38,
     "deals": {
       "amazon": {
         "price": 148,
@@ -646,7 +646,7 @@ export const PARTS = [
     "maxMem": 3200,
     "l3": 64,
     "arch": "Zen 3",
-    "bench": 69,
+    "bench": 65,
     "deals": {
       "amazon": {
         "price": 349,
@@ -704,7 +704,7 @@ export const PARTS = [
     "maxMem": 3200,
     "l3": 64,
     "arch": "Zen 3",
-    "bench": 64,
+    "bench": 48,
     "deals": {
       "amazon": {
         "price": 309,
@@ -732,7 +732,7 @@ export const PARTS = [
     "maxMem": 3200,
     "l3": 32,
     "arch": "Zen 3",
-    "bench": 60,
+    "bench": 39,
     "deals": {
       "amazon": {
         "price": 224,
@@ -791,7 +791,7 @@ export const PARTS = [
     "maxMem": 3200,
     "l3": 32,
     "arch": "Zen 3",
-    "bench": 58,
+    "bench": 37,
     "deals": {
       "amazon": {
         "price": 224,
@@ -819,7 +819,7 @@ export const PARTS = [
     "maxMem": 3200,
     "l3": 32,
     "arch": "Zen 3",
-    "bench": 58,
+    "bench": 38,
     "deals": {
       "amazon": {
         "price": 210,
@@ -848,7 +848,7 @@ export const PARTS = [
     "l3": 96,
     "vcache": true,
     "arch": "Zen 3",
-    "bench": 64,
+    "bench": 37,
     "deals": {
       "amazon": {
         "price": 408,
@@ -876,7 +876,7 @@ export const PARTS = [
     "maxMem": 3200,
     "l3": 16,
     "arch": "Zen 3",
-    "bench": 59,
+    "bench": 35,
     "deals": {
       "amazon": {
         "price": 165,
@@ -904,7 +904,7 @@ export const PARTS = [
     "maxMem": 3200,
     "l3": 32,
     "arch": "Zen 3",
-    "bench": 56,
+    "bench": 31,
     "deals": {
       "amazon": {
         "price": 178,
@@ -932,7 +932,7 @@ export const PARTS = [
     "maxMem": 3200,
     "l3": 32,
     "arch": "Zen 3",
-    "bench": 53,
+    "bench": 31,
     "deals": {
       "amazon": {
         "price": 148,
@@ -960,7 +960,7 @@ export const PARTS = [
     "maxMem": 3200,
     "l3": 16,
     "arch": "Zen 3",
-    "bench": 50,
+    "bench": 27,
     "deals": {
       "amazon": {
         "price": 86,
@@ -990,7 +990,7 @@ export const PARTS = [
     "igpu": true,
     "igpuName": "Radeon Vega 7",
     "arch": "Zen 3",
-    "bench": 53,
+    "bench": 28,
     "deals": {
       "amazon": {
         "price": 184,
@@ -1020,7 +1020,7 @@ export const PARTS = [
     "igpu": true,
     "igpuName": "Radeon Vega 8",
     "arch": "Zen 3",
-    "bench": 59,
+    "bench": 35,
     "deals": {
       "amazon": {
         "price": 208.14,
@@ -1084,7 +1084,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 16,
     "arch": "Arrow Lake",
-    "bench": 91,
+    "bench": 96,
     "deals": {
       "amazon": {
         "price": 545,
@@ -1116,7 +1116,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 12,
     "arch": "Arrow Lake",
-    "bench": 86,
+    "bench": 84,
     "deals": {
       "amazon": {
         "price": 319,
@@ -1146,7 +1146,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 12,
     "arch": "Arrow Lake",
-    "bench": 86,
+    "bench": 83,
     "deals": {
       "amazon": {
         "price": 240,
@@ -1178,7 +1178,7 @@ export const PARTS = [
     "pCores": 6,
     "eCores": 8,
     "arch": "Arrow Lake",
-    "bench": 82,
+    "bench": 62,
     "deals": {
       "amazon": {
         "price": 200,
@@ -1208,7 +1208,7 @@ export const PARTS = [
     "pCores": 6,
     "eCores": 8,
     "arch": "Arrow Lake",
-    "bench": 82,
+    "bench": 62,
     "deals": {
       "amazon": {
         "price": 189,
@@ -1240,7 +1240,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 16,
     "arch": "Raptor Lake",
-    "bench": 91,
+    "bench": 83,
     "deals": {
       "amazon": {
         "price": 464,
@@ -1270,7 +1270,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 16,
     "arch": "Raptor Lake",
-    "bench": 91,
+    "bench": 83,
     "deals": {
       "amazon": {
         "price": 440,
@@ -1302,7 +1302,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 16,
     "arch": "Raptor Lake",
-    "bench": 82,
+    "bench": 64,
     "deals": {
       "amazon": {
         "price": 464,
@@ -1332,7 +1332,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 16,
     "arch": "Raptor Lake",
-    "bench": 82,
+    "bench": 66,
     "deals": {
       "amazon": {
         "price": 561,
@@ -1364,7 +1364,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 12,
     "arch": "Raptor Lake",
-    "bench": 85,
+    "bench": 74,
     "deals": {
       "amazon": {
         "price": 559.99,
@@ -1394,7 +1394,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 12,
     "arch": "Raptor Lake",
-    "bench": 85,
+    "bench": 74,
     "deals": {
       "amazon": {
         "price": 539.99,
@@ -1426,7 +1426,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 12,
     "arch": "Raptor Lake",
-    "bench": 76,
+    "bench": 58,
     "deals": {
       "amazon": {
         "price": 329.99,
@@ -1456,7 +1456,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 12,
     "arch": "Raptor Lake",
-    "bench": 76,
+    "bench": 59,
     "deals": {
       "amazon": {
         "price": 329.99,
@@ -1520,7 +1520,7 @@ export const PARTS = [
     "pCores": 6,
     "eCores": 8,
     "arch": "Raptor Lake",
-    "bench": 78,
+    "bench": 55,
     "deals": {
       "amazon": {
         "price": 257,
@@ -1552,7 +1552,7 @@ export const PARTS = [
     "pCores": 6,
     "eCores": 8,
     "arch": "Raptor Lake",
-    "bench": 73,
+    "bench": 51,
     "deals": {
       "amazon": {
         "price": 257,
@@ -1584,7 +1584,7 @@ export const PARTS = [
     "pCores": 6,
     "eCores": 8,
     "arch": "Raptor Lake",
-    "bench": 70,
+    "bench": 44,
     "deals": {
       "amazon": {
         "price": 479,
@@ -1616,7 +1616,7 @@ export const PARTS = [
     "pCores": 6,
     "eCores": 4,
     "arch": "Raptor Lake",
-    "bench": 63,
+    "bench": 36,
     "deals": {
       "amazon": {
         "price": 262,
@@ -1680,7 +1680,7 @@ export const PARTS = [
     "pCores": 4,
     "eCores": 0,
     "arch": "Raptor Lake",
-    "bench": 59,
+    "bench": 22,
     "deals": {
       "amazon": {
         "price": 144.97,
@@ -1710,7 +1710,7 @@ export const PARTS = [
     "pCores": 4,
     "eCores": 0,
     "arch": "Raptor Lake",
-    "bench": 59,
+    "bench": 22,
     "deals": {
       "amazon": {
         "price": 107,
@@ -1742,7 +1742,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 16,
     "arch": "Raptor Lake",
-    "bench": 86,
+    "bench": 83,
     "deals": {
       "amazon": {
         "price": 460.34,
@@ -1772,7 +1772,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 16,
     "arch": "Raptor Lake",
-    "bench": 86,
+    "bench": 82,
     "deals": {
       "amazon": {
         "price": 653.76,
@@ -1804,7 +1804,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 8,
     "arch": "Raptor Lake",
-    "bench": 79,
+    "bench": 65,
     "deals": {
       "amazon": {
         "price": 999.26,
@@ -1834,7 +1834,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 8,
     "arch": "Raptor Lake",
-    "bench": 79,
+    "bench": 65,
     "deals": {
       "amazon": {
         "price": 505,
@@ -1866,7 +1866,7 @@ export const PARTS = [
     "pCores": 6,
     "eCores": 8,
     "arch": "Raptor Lake",
-    "bench": 75,
+    "bench": 53,
     "deals": {
       "amazon": {
         "price": 319,
@@ -1896,7 +1896,7 @@ export const PARTS = [
     "pCores": 6,
     "eCores": 8,
     "arch": "Raptor Lake",
-    "bench": 75,
+    "bench": 53,
     "deals": {
       "amazon": {
         "price": 279.99,
@@ -1928,7 +1928,7 @@ export const PARTS = [
     "pCores": 6,
     "eCores": 8,
     "arch": "Raptor Lake",
-    "bench": 66,
+    "bench": 44,
     "deals": {
       "amazon": {
         "price": 279.99,
@@ -1960,7 +1960,7 @@ export const PARTS = [
     "pCores": 6,
     "eCores": 4,
     "arch": "Raptor Lake",
-    "bench": 61,
+    "bench": 34,
     "deals": {
       "amazon": {
         "price": 262,
@@ -2024,7 +2024,7 @@ export const PARTS = [
     "pCores": 4,
     "eCores": 0,
     "arch": "Raptor Lake",
-    "bench": 55,
+    "bench": 20,
     "deals": {
       "amazon": {
         "price": 232,
@@ -2054,7 +2054,7 @@ export const PARTS = [
     "pCores": 4,
     "eCores": 0,
     "arch": "Raptor Lake",
-    "bench": 55,
+    "bench": 21,
     "deals": {
       "amazon": {
         "price": 117.95,
@@ -2086,7 +2086,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 8,
     "arch": "Alder Lake",
-    "bench": 66,
+    "bench": 59,
     "deals": {
       "amazon": {
         "price": 353,
@@ -2116,7 +2116,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 8,
     "arch": "Alder Lake",
-    "bench": 66,
+    "bench": 58,
     "deals": {
       "amazon": {
         "price": 310,
@@ -2148,7 +2148,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 4,
     "arch": "Alder Lake",
-    "bench": 65,
+    "bench": 49,
     "deals": {
       "amazon": {
         "price": 265.99,
@@ -2178,7 +2178,7 @@ export const PARTS = [
     "pCores": 8,
     "eCores": 4,
     "arch": "Alder Lake",
-    "bench": 65,
+    "bench": 48,
     "deals": {
       "amazon": {
         "price": 263,
@@ -2210,7 +2210,7 @@ export const PARTS = [
     "pCores": 6,
     "eCores": 4,
     "arch": "Alder Lake",
-    "bench": 61,
+    "bench": 39,
     "deals": {
       "amazon": {
         "price": 188,
@@ -2240,7 +2240,7 @@ export const PARTS = [
     "pCores": 6,
     "eCores": 4,
     "arch": "Alder Lake",
-    "bench": 61,
+    "bench": 39,
     "deals": {
       "amazon": {
         "price": 159,
@@ -2272,7 +2272,7 @@ export const PARTS = [
     "pCores": 6,
     "eCores": 0,
     "arch": "Alder Lake",
-    "bench": 47,
+    "bench": 27,
     "deals": {
       "amazon": {
         "price": 216,
@@ -2302,7 +2302,7 @@ export const PARTS = [
     "pCores": 6,
     "eCores": 0,
     "arch": "Alder Lake",
-    "bench": 47,
+    "bench": 28,
     "deals": {
       "amazon": {
         "price": 149,
@@ -2334,7 +2334,7 @@ export const PARTS = [
     "pCores": 4,
     "eCores": 0,
     "arch": "Alder Lake",
-    "bench": 45,
+    "bench": 18,
     "deals": {
       "amazon": {
         "price": 241,
@@ -2364,7 +2364,7 @@ export const PARTS = [
     "pCores": 4,
     "eCores": 0,
     "arch": "Alder Lake",
-    "bench": 45,
+    "bench": 20,
     "deals": {
       "amazon": {
         "price": 94,
@@ -2409,7 +2409,7 @@ export const PARTS = [
     "baseClock": 4.7,
     "tdp": 120,
     "threads": 16,
-    "bench": 75
+    "bench": 59
   },
   {
     "id": 10122,
@@ -2441,7 +2441,7 @@ export const PARTS = [
     "tdp": 65,
     "cores": 6,
     "threads": 12,
-    "bench": 54
+    "bench": 37
   },
   {
     "id": 10123,
@@ -2476,7 +2476,7 @@ export const PARTS = [
     "series": "Ryzen 5",
     "tdp": 95,
     "threads": 12,
-    "bench": 12
+    "bench": 19
   },
   {
     "id": 10124,
@@ -2511,7 +2511,7 @@ export const PARTS = [
     "series": "Core i5",
     "tdp": 125,
     "threads": 16,
-    "bench": 46
+    "bench": 39
   },
   {
     "id": 10125,
@@ -2545,7 +2545,7 @@ export const PARTS = [
     "series": "Core i7",
     "tdp": 125,
     "threads": 24,
-    "bench": 68
+    "bench": 65
   },
   {
     "id": 10126,
@@ -2581,7 +2581,7 @@ export const PARTS = [
     "series": "Core i5",
     "tdp": 125,
     "threads": 16,
-    "bench": 46
+    "bench": 39
   },
   {
     "id": 10127,
@@ -2615,7 +2615,7 @@ export const PARTS = [
     "baseClock": 4700,
     "tdp": 65,
     "threads": 12,
-    "bench": 42
+    "bench": 35
   },
   {
     "id": 10128,
@@ -2681,7 +2681,7 @@ export const PARTS = [
     "baseClock": 4.9,
     "tdp": 65,
     "threads": 20,
-    "bench": 50
+    "bench": 43
   },
   {
     "id": 10130,
@@ -2713,7 +2713,7 @@ export const PARTS = [
     "baseClock": 5000,
     "tdp": 65,
     "threads": 16,
-    "bench": 56
+    "bench": 44
   },
   {
     "id": 10131,
@@ -2747,7 +2747,7 @@ export const PARTS = [
     "series": "Core I5",
     "tdp": 65,
     "threads": 16,
-    "bench": 42
+    "bench": 36
   },
   {
     "id": 10132,
@@ -2781,7 +2781,7 @@ export const PARTS = [
     "baseClock": 3,
     "tdp": 65,
     "threads": 12,
-    "bench": 32
+    "bench": 28
   },
   {
     "id": 10133,
@@ -2877,7 +2877,7 @@ export const PARTS = [
     "series": "Ryzen 7",
     "tdp": 65,
     "threads": 16,
-    "bench": 80
+    "bench": 49
   },
   {
     "id": 10136,
@@ -2910,7 +2910,7 @@ export const PARTS = [
     "series": "Core I9",
     "tdp": 150,
     "threads": 32,
-    "bench": 88
+    "bench": 86
   },
   {
     "id": 10138,
@@ -2939,7 +2939,7 @@ export const PARTS = [
     "series": "Core i9",
     "tdp": 150,
     "threads": 32,
-    "bench": 90
+    "bench": 86
   },
   {
     "id": 10139,
@@ -2968,7 +2968,7 @@ export const PARTS = [
     "series": "Ryzen 5",
     "tdp": 65,
     "threads": 12,
-    "bench": 52
+    "bench": 36
   },
   {
     "id": 10140,
@@ -3001,7 +3001,7 @@ export const PARTS = [
     "tdp": 120,
     "cores": 8,
     "threads": 16,
-    "bench": 68
+    "bench": 49
   },
   {
     "id": 10141,
@@ -3030,7 +3030,7 @@ export const PARTS = [
     "series": "Ryzen 9",
     "tdp": 170,
     "threads": 24,
-    "bench": 78
+    "bench": 73
   },
   {
     "id": 10142,
@@ -3065,7 +3065,7 @@ export const PARTS = [
     "series": "Ryzen 7",
     "tdp": 65,
     "threads": 16,
-    "bench": 68
+    "bench": 53
   },
   {
     "id": 10143,
@@ -3162,7 +3162,7 @@ export const PARTS = [
     "series": "Core i5",
     "tdp": 35,
     "threads": 6,
-    "bench": 12
+    "bench": 11
   },
   {
     "id": 10146,
@@ -3292,7 +3292,7 @@ export const PARTS = [
     "series": "Core I5",
     "tdp": 65,
     "threads": 16,
-    "bench": 38
+    "bench": 36
   },
   {
     "id": 10150,
@@ -3395,7 +3395,7 @@ export const PARTS = [
     "series": "Core i9",
     "tdp": 125,
     "threads": 32,
-    "bench": 82
+    "bench": 83
   },
   {
     "id": 10153,
@@ -3459,7 +3459,7 @@ export const PARTS = [
     "series": "Core i5",
     "tdp": 125,
     "threads": 20,
-    "bench": 58
+    "bench": 55
   },
   {
     "id": 10155,
@@ -3592,7 +3592,7 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": "128 gigabytes",
     "unlocked": true,
-    "bench": 28
+    "bench": 27
   },
   {
     "id": 10159,
@@ -3624,7 +3624,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "128 gigabytes",
     "unlocked": true,
-    "bench": 78
+    "bench": 73
   },
   {
     "id": 10160,
@@ -3656,7 +3656,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "128 gigabytes",
     "unlocked": true,
-    "bench": 52
+    "bench": 40
   },
   {
     "id": 10161,
@@ -3688,7 +3688,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "128 gigabytes",
     "unlocked": true,
-    "bench": 68
+    "bench": 49
   },
   {
     "id": 10162,
@@ -3720,7 +3720,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 86
+    "bench": 83
   },
   {
     "id": 10163,
@@ -3784,7 +3784,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 58
+    "bench": 55
   },
   {
     "id": 10165,
@@ -3815,7 +3815,7 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": "128 gigabytes",
     "unlocked": true,
-    "bench": 52
+    "bench": 40
   },
   {
     "id": 10166,
@@ -3846,7 +3846,7 @@ export const PARTS = [
     "memType": "DDR4",
     "maxMem": "128 gigabytes",
     "unlocked": true,
-    "bench": 62
+    "bench": 63
   },
   {
     "id": 10167,
@@ -3878,7 +3878,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 96
+    "bench": 94
   },
   {
     "id": 10168,
@@ -3910,7 +3910,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 82
+    "bench": 78
   },
   {
     "id": 10169,
@@ -3942,7 +3942,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 68
+    "bench": 53
   },
   {
     "id": 10170,
@@ -3974,7 +3974,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 58
+    "bench": 43
   },
   {
     "id": 10171,
@@ -4006,7 +4006,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 58
+    "bench": 62
   },
   {
     "id": 10172,
@@ -4038,7 +4038,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 85
+    "bench": 96
   },
   {
     "id": 10173,
@@ -4070,7 +4070,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 72
+    "bench": 84
   },
   {
     "id": 10174,
@@ -4102,7 +4102,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 72
+    "bench": 57
   },
   {
     "id": 10175,
@@ -4134,7 +4134,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 88
+    "bench": 80
   },
   {
     "id": 10176,
@@ -4291,7 +4291,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "256 gigabytes",
     "unlocked": true,
-    "bench": 76
+    "bench": 98
   },
   {
     "id": 10181,
@@ -4314,7 +4314,7 @@ export const PARTS = [
     "threads": 10,
     "boostClock": 4.9,
     "tdp": 65,
-    "bench": 72
+    "bench": 43
   },
   {
     "id": 10182,
@@ -4337,7 +4337,7 @@ export const PARTS = [
     "threads": 10,
     "boostClock": 4.9,
     "tdp": 65,
-    "bench": 72
+    "bench": 44
   },
   {
     "id": 10183,
@@ -4360,7 +4360,7 @@ export const PARTS = [
     "threads": 32,
     "boostClock": 5.6,
     "tdp": 65,
-    "bench": 87
+    "bench": 64
   },
   {
     "id": 10184,
@@ -4383,7 +4383,7 @@ export const PARTS = [
     "threads": 24,
     "boostClock": 5.5,
     "tdp": 150,
-    "bench": 86
+    "bench": 62
   },
   {
     "id": 10185,
@@ -4406,7 +4406,7 @@ export const PARTS = [
     "threads": 24,
     "boostClock": 5.1,
     "tdp": 65,
-    "bench": 80
+    "bench": 48
   },
   {
     "id": 10186,
@@ -4429,7 +4429,7 @@ export const PARTS = [
     "threads": 20,
     "boostClock": 4.9,
     "tdp": 65,
-    "bench": 75
+    "bench": 43
   },
   {
     "id": 10187,
@@ -4452,7 +4452,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.8,
     "tdp": 65,
-    "bench": 62
+    "bench": 30
   },
   {
     "id": 10188,
@@ -4475,7 +4475,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 5.3,
     "tdp": 125,
-    "bench": 72
+    "bench": 36
   },
   {
     "id": 10189,
@@ -4498,7 +4498,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 5.3,
     "tdp": 125,
-    "bench": 72
+    "bench": 35
   },
   {
     "id": 10190,
@@ -4521,7 +4521,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 5,
     "tdp": 125,
-    "bench": 68
+    "bench": 35
   },
   {
     "id": 10191,
@@ -4544,7 +4544,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 5,
     "tdp": 125,
-    "bench": 68
+    "bench": 34
   },
   {
     "id": 10192,
@@ -4567,7 +4567,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.9,
     "tdp": 125,
-    "bench": 62
+    "bench": 28
   },
   {
     "id": 10193,
@@ -4590,7 +4590,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.6,
     "tdp": 65,
-    "bench": 58
+    "bench": 24
   },
   {
     "id": 10194,
@@ -4613,7 +4613,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.4,
     "tdp": 65,
-    "bench": 55
+    "bench": 24
   },
   {
     "id": 10195,
@@ -4636,7 +4636,7 @@ export const PARTS = [
     "threads": 20,
     "boostClock": 5.3,
     "tdp": 125,
-    "bench": 66
+    "bench": 32
   },
   {
     "id": 10196,
@@ -4659,7 +4659,7 @@ export const PARTS = [
     "threads": 20,
     "boostClock": 5.2,
     "tdp": 65,
-    "bench": 63
+    "bench": 27
   },
   {
     "id": 10197,
@@ -4682,7 +4682,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 5.1,
     "tdp": 125,
-    "bench": 60
+    "bench": 26
   },
   {
     "id": 10198,
@@ -4705,7 +4705,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 5.1,
     "tdp": 125,
-    "bench": 60
+    "bench": 26
   },
   {
     "id": 10199,
@@ -4728,7 +4728,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 4.8,
     "tdp": 65,
-    "bench": 57,
+    "bench": 23,
     "used": true,
     "condition": "used"
   },
@@ -4753,7 +4753,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 4.8,
     "tdp": 65,
-    "bench": 57
+    "bench": 23
   },
   {
     "id": 10201,
@@ -4776,7 +4776,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.8,
     "tdp": 125,
-    "bench": 55
+    "bench": 20
   },
   {
     "id": 10202,
@@ -4799,7 +4799,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.8,
     "tdp": 125,
-    "bench": 55
+    "bench": 20
   },
   {
     "id": 10203,
@@ -4822,7 +4822,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.5,
     "tdp": 65,
-    "bench": 50,
+    "bench": 18,
     "used": true,
     "condition": "used"
   },
@@ -4847,7 +4847,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.3,
     "tdp": 65,
-    "bench": 46
+    "bench": 17
   },
   {
     "id": 10205,
@@ -4870,7 +4870,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.3,
     "tdp": 65,
-    "bench": 46
+    "bench": 17
   },
   {
     "id": 10206,
@@ -4893,7 +4893,7 @@ export const PARTS = [
     "threads": 8,
     "boostClock": 4.3,
     "tdp": 65,
-    "bench": 36
+    "bench": 12
   },
   {
     "id": 10207,
@@ -4916,7 +4916,7 @@ export const PARTS = [
     "threads": 8,
     "boostClock": 4.4,
     "tdp": 65,
-    "bench": 36
+    "bench": 12
   },
   {
     "id": 10208,
@@ -4939,7 +4939,7 @@ export const PARTS = [
     "threads": 8,
     "boostClock": 4.4,
     "tdp": 65,
-    "bench": 36
+    "bench": 13
   },
   {
     "id": 10209,
@@ -4962,7 +4962,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.2,
     "tdp": 65,
-    "bench": 38
+    "bench": 23
   },
   {
     "id": 10210,
@@ -4985,7 +4985,7 @@ export const PARTS = [
     "threads": 8,
     "boostClock": 4,
     "tdp": 65,
-    "bench": 24
+    "bench": 16
   },
   {
     "id": 20000,
