@@ -354,6 +354,56 @@ html, body, #root {
   [style*="padding: 40px 18px"] { padding: 28px 14px !important; }
 }
 
+/* === MOBILE FIX 6: builder part picker mobile layout === */
+.builder-picker-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+@media (max-width: 900px) {
+  .builder-picker-layout {
+    grid-template-columns: 1fr !important;
+    padding: 8px 12px !important;
+    max-width: 100vw !important;
+  }
+  .builder-picker-layout > div:first-of-type {
+    display: none !important;
+  }
+  .builder-picker-layout > div:last-of-type {
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .builder-picker-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 12px !important;
+    gap: 6px !important;
+  }
+  .builder-picker-row > * {
+    width: 100% !important;
+    text-align: left !important;
+    min-width: 0;
+  }
+}
+
+/* === MOBILE FIX 7: tools page mobile layout === */
+.tools-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+@media (max-width: 900px) {
+  .tools-layout {
+    grid-template-columns: 1fr !important;
+    padding: 8px 12px !important;
+    max-width: 100vw !important;
+  }
+  .tools-layout > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
 /* === MOBILE FIX 5: browse page mobile layout === */
 .browse-layout {
   display: grid;
@@ -2657,7 +2707,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
       </div>
     </div>
 
-    <div style={{display:"grid",gridTemplateColumns:"200px 1fr",gap:20}}>
+    <div className="builder-picker-layout" style={{gap:20,alignItems:"start"}}>
       {/* Sidebar filters */}
       <div>
         <FG label="PRICE RANGE" open={true}>
@@ -2875,7 +2925,7 @@ function BuilderPage({th}){
 
           return <div key={cat}>
             {/* Row */}
-            <div style={{display:"grid",gridTemplateColumns:"130px 1fr 180px 70px 40px",gap:0,padding:"10px 16px",alignItems:"center",borderBottom:"1px solid var(--bdr)",cursor:canAdd?"pointer":"default",background:isPicking2?"var(--sky)06":"transparent"}}
+            <div className="builder-picker-row" style={{display:"grid",gridTemplateColumns:"130px 1fr 180px 70px 40px",gap:0,padding:"10px 16px",alignItems:"center",borderBottom:"1px solid var(--bdr)",cursor:canAdd?"pointer":"default",background:isPicking2?"var(--sky)06":"transparent"}}
               onClick={()=>canAdd&&setPicking(isPicking2?null:cat)}>
               <div style={{display:"flex",alignItems:"center",gap:6}}>
                 <span style={{fontSize:14}}>{meta.icon}</span>
@@ -3117,7 +3167,7 @@ function ToolsPage({th}){
 
     {/* ═══ FPS ESTIMATOR ═══ */}
     {tool==="fps"&&<div>
-      <div style={{display:"grid",gridTemplateColumns:"300px 1fr",gap:20}}>
+      <div className="tools-layout" style={{gap:20,alignItems:"start"}}>
         {/* Config panel */}
         <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:20}}>
           <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--sky)",letterSpacing:1.5,marginBottom:12,fontWeight:600}}>SYSTEM CONFIG</div>
@@ -3224,7 +3274,7 @@ function ToolsPage({th}){
 
     {/* ═══ BOTTLENECK CALCULATOR ═══ */}
     {tool==="bn"&&<div>
-      <div style={{display:"grid",gridTemplateColumns:"320px 1fr",gap:20}}>
+      <div className="tools-layout" style={{gap:20,alignItems:"start"}}>
         {/* Config */}
         <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:20}}>
           <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--rose)",letterSpacing:1.5,marginBottom:12,fontWeight:600}}>BOTTLENECK CALCULATOR</div>
@@ -3351,7 +3401,7 @@ function ToolsPage({th}){
 
     {/* ═══ WILL IT RUN? ═══ */}
     {tool==="willitrun"&&<div>
-      <div style={{display:"grid",gridTemplateColumns:"300px 1fr",gap:20}}>
+      <div className="tools-layout" style={{gap:20,alignItems:"start"}}>
         <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20}}>
           <h3 style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",marginBottom:12}}>Will My PC Run This Game?</h3>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginBottom:4}}>SELECT GAME</div>
