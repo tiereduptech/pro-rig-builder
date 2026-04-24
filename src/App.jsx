@@ -351,6 +351,26 @@ html, body, #root {
   /* Even smaller padding */
   [style*="padding: 40px 18px"] { padding: 28px 14px !important; }
 }
+
+/* === MOBILE FIX 4: repeat(4,...) grids collapse to 2-col on mobile === */
+@media (max-width: 640px) {
+  [style*="repeat(4,1fr)"],
+  [style*="repeat(4, 1fr)"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  [style*="repeat(3,1fr)"],
+  [style*="repeat(3, 1fr)"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 420px) {
+  [style*="repeat(4,1fr)"],
+  [style*="repeat(4, 1fr)"],
+  [style*="repeat(3,1fr)"],
+  [style*="repeat(3, 1fr)"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
 `;
 
 /* ═══ COMPONENTS ═══ */
