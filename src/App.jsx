@@ -1125,7 +1125,7 @@ function ComparePage({go}) {
               {
                 i:"💰",
                 t:"Budget-aware upgrade recommendations",
-                d:"Tell us your budget and we find the biggest performance uplift per dollar. Refresh-needed detection for outdated platforms (old sockets, wrong RAM type). Competitors show you parts but won\u0027t tell you which upgrade actually matters for your specific rig."
+                d:"Tell us your budget and we find the biggest performance uplift per dollar. Refresh-needed detection for outdated platforms (old sockets, wrong RAM type). Competitors show you parts but won't tell you which upgrade actually matters for your specific rig."
               },
               {
                 i:"🎮",
@@ -1140,22 +1140,22 @@ function ComparePage({go}) {
               {
                 i:"🛍️",
                 t:"Real multi-retailer pricing, in-stock first",
-                d:"We compare live prices across Amazon, Best Buy, Newegg, B&H, and Antonline — and show you the in-stock retailer first, not just the cheapest (which is often out of stock). Newegg PC Builder shows only Newegg. Logical Increments doesn\u0027t track live prices at all."
+                d:"We compare live prices across Amazon, Best Buy, Newegg, B&H, and Antonline — and show you the in-stock retailer first, not just the cheapest (which is often out of stock). Newegg PC Builder shows only Newegg. Logical Increments doesn't track live prices at all."
               },
               {
                 i:"♻️",
                 t:"USED product flags",
-                d:"Used and refurbished GPUs and CPUs are clearly marked in our catalog. Save money, know what you\u0027re buying. No competitor clearly flags pre-owned listings."
+                d:"Used and refurbished GPUs and CPUs are clearly marked in our catalog. Save money, know what you're buying. No competitor clearly flags pre-owned listings."
               },
               {
                 i:"🎨",
                 t:"Actually good UX",
-                d:"Light & dark mode, mobile-optimized, advanced filters, fast search, and zero ads. PCPartPicker\u0027s interface hasn\u0027t significantly changed in years. Newegg is a retail funnel first, tool second."
+                d:"Light & dark mode, mobile-optimized, advanced filters, fast search, and zero ads. PCPartPicker's interface hasn't significantly changed in years. Newegg is a retail funnel first, tool second."
               },
               {
                 i:"🤝",
                 t:"Honest business model",
-                d:"Affiliate commissions only. No ads. No paid placement. No retailer bias. If a cheaper retailer exists without an affiliate deal, we\u0027ll still tell you. We would rather lose a commission than mislead you."
+                d:"Affiliate commissions only. No ads. No paid placement. No retailer bias. If a cheaper retailer exists without an affiliate deal, we'll still tell you. We would rather lose a commission than mislead you."
               },
             ].map(f => (
               <div key={f.t} style={{background:"var(--card)",borderRadius:14,padding:"26px 28px",border:"1px solid var(--bdr)"}}>
@@ -1181,10 +1181,10 @@ function ComparePage({go}) {
             <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)"}}>Pro Rig Builder vs. PCPartPicker</div>
           </div>
           <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
-            PCPartPicker is the best-known PC builder platform. It\u0027s solid: a large community build library, solid compatibility engine, real-time pricing across retailers. But it\u0027s also 15+ years old and shows it. Pro Rig Builder does everything PCPartPicker does — plus eight tools PCPartPicker doesn\u0027t have.
+            PCPartPicker is the best-known PC builder platform. It's solid: a large community build library, solid compatibility engine, real-time pricing across retailers. But it's also 15+ years old and shows it. Pro Rig Builder does everything PCPartPicker does — plus eight tools PCPartPicker doesn't have.
           </p>
           <div style={{background:"var(--bg3)",padding:"18px 22px",borderRadius:10}}>
-            <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>WHAT WE HAVE THAT PCPARTPICKER DOESN\u0027T</div>
+            <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>WHAT WE HAVE THAT PCPARTPICKER DOESN'T</div>
             <ul style={{paddingLeft:20,margin:0}}>
               <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Free Windows hardware scanner app</li>
               <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>FPS estimator and Will-It-Run checker for specific games</li>
@@ -1204,12 +1204,12 @@ function ComparePage({go}) {
             <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)"}}>Pro Rig Builder vs. Newegg PC Builder</div>
           </div>
           <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
-            Newegg\u0027s PC Builder is a shopping tool first, a builder tool second. It only shows Newegg inventory. Its AI "Build with AI" feature uses ChatGPT to generate recommendations, but pricing, stock, and inventory are Newegg-only — no comparison with Amazon, Best Buy, or anywhere else. The tool exists to drive purchases on Newegg.com.
+            Newegg's PC Builder is a shopping tool first, a builder tool second. It only shows Newegg inventory. Its AI "Build with AI" feature uses ChatGPT to generate recommendations, but pricing, stock, and inventory are Newegg-only — no comparison with Amazon, Best Buy, or anywhere else. The tool exists to drive purchases on Newegg.com.
           </p>
           <div style={{background:"var(--bg3)",padding:"18px 22px",borderRadius:10}}>
             <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>THE KEY DIFFERENCE</div>
             <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.7}}>
-              Pro Rig Builder compares pricing across <strong>five retailers</strong>. We\u0027re neutral — we\u0027ll recommend the best deal regardless of which retailer offers it. Newegg PC Builder is a Newegg sales tool. If Amazon is $50 cheaper, Newegg won\u0027t tell you.
+              Pro Rig Builder compares pricing across <strong>five retailers</strong>. We're neutral — we'll recommend the best deal regardless of which retailer offers it. Newegg PC Builder is a Newegg sales tool. If Amazon is $50 cheaper, Newegg won't tell you.
             </div>
           </div>
         </div>
@@ -1220,7 +1220,7 @@ function ComparePage({go}) {
             <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)"}}>Pro Rig Builder vs. Logical Increments</div>
           </div>
           <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
-            Logical Increments is a static build guide — not an interactive builder. Its "Grid" recommends parts for budget tiers (Excellent, Outstanding, Exceptional, etc.), updated manually by the team. There\u0027s no compatibility engine, no real-time pricing, no personalized recommendations. Good for beginners who want a curated list; limited for anyone building a specific rig.
+            Logical Increments is a static build guide — not an interactive builder. Its "Grid" recommends parts for budget tiers (Excellent, Outstanding, Exceptional, etc.), updated manually by the team. There's no compatibility engine, no real-time pricing, no personalized recommendations. Good for beginners who want a curated list; limited for anyone building a specific rig.
           </p>
           <div style={{background:"var(--bg3)",padding:"18px 22px",borderRadius:10}}>
             <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>THE KEY DIFFERENCE</div>
@@ -1236,7 +1236,7 @@ function ComparePage({go}) {
         <div style={{maxWidth:760,margin:"0 auto",padding:"56px 32px",textAlign:"center"}}>
           <h2 style={{fontFamily:"var(--ff)",fontSize:30,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5,marginBottom:14}}>Try the difference yourself</h2>
           <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.65,marginBottom:26}}>
-            Start a build, scan your existing rig, or browse parts with better filters than the competition. We\u0027re confident you\u0027ll see the difference within 30 seconds.
+            Start a build, scan your existing rig, or browse parts with better filters than the competition. We're confident you'll see the difference within 30 seconds.
           </p>
           <div style={{display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap"}}>
             <button onClick={()=>go("builder")} style={{padding:"14px 28px",borderRadius:12,fontSize:14,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 20px rgba(255,107,53,.3)"}}>Start Building →</button>
@@ -1264,6 +1264,271 @@ function SEO({title, description, canonical}) {
       <meta name="twitter:title" content={fullTitle}/>
       <meta name="twitter:description" content={desc}/>
     </Helmet>
+  );
+}
+
+// ═══ SEO VARIANT PAGES (target PCPartPicker keywords) ═══════════════
+
+// Reusable content block for consistency across variant pages
+function VariantCTA({go}) {
+  return (
+    <div style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)",marginTop:48}}>
+      <div style={{maxWidth:760,margin:"0 auto",padding:"52px 32px",textAlign:"center"}}>
+        <h2 style={{fontFamily:"var(--ff)",fontSize:28,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5,marginBottom:12}}>Ready to build smarter?</h2>
+        <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.7,marginBottom:24}}>
+          Every tool free. Zero ads. Real multi-retailer pricing. Plus our exclusive hardware scanner.
+        </p>
+        <div style={{display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap"}}>
+          <button onClick={()=>go("builder")} style={{padding:"14px 28px",borderRadius:12,fontSize:14,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 20px rgba(255,107,53,.3)"}}>Start Building →</button>
+          <button onClick={()=>go("scanner")} style={{padding:"14px 28px",borderRadius:12,fontSize:14,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>📥 Try the Scanner</button>
+          <button onClick={()=>go("compare")} style={{padding:"14px 28px",borderRadius:12,fontSize:14,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"transparent",color:"var(--txt)",border:"1px solid var(--bdr)"}}>Full Comparison</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── /vs-pcpartpicker ────────────────────────────────────────────
+function VsPcPartPickerPage({go}) {
+  return (
+    <div className="fade">
+      <SEO title="Pro Rig Builder vs PCPartPicker: A 2026 Feature Comparison" description="How Pro Rig Builder compares to PCPartPicker in 2026. Features, tools, pricing engine, and business model breakdown. Objective, factual comparison." canonical="https://prorigbuilder.com/#vs-pcpartpicker"/>
+      <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
+        <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
+        <div style={{maxWidth:900,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
+          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:11,fontWeight:700,letterSpacing:1.5,marginBottom:22}}>COMPARISON GUIDE</div>
+          <h1 style={{fontFamily:"var(--ff)",fontSize:42,fontWeight:800,color:"var(--txt)",letterSpacing:-1.2,lineHeight:1.12,marginBottom:16}}>Pro Rig Builder vs PCPartPicker: A 2026 Feature Comparison</h1>
+          <p style={{fontFamily:"var(--ff)",fontSize:16,color:"var(--dim)",lineHeight:1.65,maxWidth:720}}>
+            PCPartPicker has been the go-to PC builder platform for over a decade. Pro Rig Builder is the modern alternative with features PCPartPicker doesn't offer. Here's how we compare, side-by-side, with no hype.
+          </p>
+        </div>
+      </div>
+
+      <div style={{maxWidth:900,margin:"0 auto",padding:"48px 32px"}}>
+        <SectionHeading>The short answer</SectionHeading>
+        <Para>
+          <strong>PCPartPicker</strong> is an established platform with a large community, solid compatibility engine, and real-time pricing across retailers. It's ad-supported and works well for basic PC building.
+        </Para>
+        <Para>
+          <strong>Pro Rig Builder</strong> does everything PCPartPicker does, plus features they don't offer: a free hardware scanner app, FPS estimator, bottleneck calculator, budget-aware upgrade recommendations, and USED product flags. We're also ad-free.
+        </Para>
+
+        <SectionHeading>What PCPartPicker Has That We Also Have</SectionHeading>
+        <ul style={{paddingLeft:22,marginBottom:20}}>
+          <Bullet><strong>Compatibility engine</strong> — we match their coverage (socket, chipset, form factor, memory type, PSU wattage)</Bullet>
+          <Bullet><strong>Real-time multi-retailer pricing</strong> — both tools compare prices across Amazon, Best Buy, Newegg, and other retailers</Bullet>
+          <Bullet><strong>PC Builder tool</strong> — interactive builder with running totals</Bullet>
+          <Bullet><strong>Part browsing and filtering</strong> — large catalog of CPUs, GPUs, motherboards, RAM, etc.</Bullet>
+          <Bullet><strong>Build sharing and saving</strong> — both tools let you save your build for later reference</Bullet>
+        </ul>
+
+        <SectionHeading>What Pro Rig Builder Offers That PCPartPicker Does NOT</SectionHeading>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16,marginBottom:24}} className="how-grid">
+          {[
+            {i:"🔍", t:"Hardware Scanner App", d:"Download our free Windows app. It detects your hardware automatically and generates upgrade recommendations. PCPartPicker has no equivalent."},
+            {i:"🎮", t:"FPS Estimator", d:"See projected frames per second for popular games on your build before buying. PCPartPicker does not predict game-specific performance."},
+            {i:"⚖️", t:"Bottleneck Calculator", d:"Know whether your CPU or GPU is holding back performance, with percentage severity. PCPartPicker has no bottleneck tool."},
+            {i:"🕹️", t:"Will It Run Checker", d:"Check if your current PC can handle a specific game. PCPartPicker focuses on new builds, not gaming capability checks."},
+            {i:"💰", t:"Budget-Aware Upgrade Recs", d:"Tell us your budget and we'll tell you the biggest performance uplift. PCPartPicker shows parts but does not rank by budget impact."},
+            {i:"♻️", t:"USED Product Flags", d:"Pre-owned parts are clearly marked so you know what you're buying. PCPartPicker does not distinguish used listings."},
+            {i:"🧙", t:"Auto Build Wizard", d:"Give us a budget, we generate a balanced, compatible build. PCPartPicker is manual-only."},
+            {i:"🌗", t:"Light & Dark Mode", d:"Seamless theme switching. PCPartPicker has one theme."},
+          ].map(f => (
+            <div key={f.t} style={{background:"var(--card)",border:"1px solid var(--bdr)",borderRadius:12,padding:"22px 24px"}}>
+              <div style={{fontSize:26,marginBottom:10}}>{f.i}</div>
+              <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:8}}>{f.t}</div>
+              <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.65}}>{f.d}</div>
+            </div>
+          ))}
+        </div>
+
+        <SectionHeading>Business Model Differences</SectionHeading>
+        <Para>
+          <strong>PCPartPicker</strong> runs display advertising alongside affiliate commissions. You see banner ads, sidebar ads, and sponsored content. Their catalog listings can be influenced by advertisers.
+        </Para>
+        <Para>
+          <strong>Pro Rig Builder</strong> runs zero ads. Our only revenue is affiliate commissions when users click our links to retailers. Rankings are based purely on benchmark scores, price, and compatibility — not advertiser payments. If a non-affiliate retailer has a cheaper price, we still tell you.
+        </Para>
+
+        <SectionHeading>Which should you choose?</SectionHeading>
+        <ul style={{paddingLeft:22,marginBottom:24}}>
+          <Bullet><strong>Choose PCPartPicker</strong> if you want access to a large community of user-submitted completed builds or need deep legacy hardware data from many years back.</Bullet>
+          <Bullet><strong>Choose Pro Rig Builder</strong> if you want modern tools (scanner, FPS estimator, bottleneck calc, budget wizard), an ad-free experience, or budget-aware upgrade recommendations for an existing PC.</Bullet>
+        </ul>
+        <Para>
+          Or use both. They're complementary. Many of our users cross-reference between sites.
+        </Para>
+
+        <div style={{marginTop:32,padding:"20px 24px",background:"var(--bg3)",borderRadius:10,border:"1px solid var(--bdr)"}}>
+          <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",fontWeight:600,letterSpacing:1.5,marginBottom:6}}>NOTE</div>
+          <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",lineHeight:1.6}}>
+            This comparison is factual and based on features publicly available on both sites as of April 2026. Pro Rig Builder is not affiliated with PCPartPicker. For the full 24-feature comparison including Newegg and Logical Increments, see our <span onClick={()=>go("compare")} style={{color:"var(--accent)",cursor:"pointer",textDecoration:"underline"}}>full comparison page</span>.
+          </div>
+        </div>
+      </div>
+      <VariantCTA go={go}/>
+    </div>
+  );
+}
+
+// ─── /pcpartpicker-alternative ───────────────────────────────────
+function PcpAlternativePage({go}) {
+  return (
+    <div className="fade">
+      <SEO title="The Best PCPartPicker Alternative in 2026" description="Looking for a PCPartPicker alternative? Pro Rig Builder offers every feature plus hardware scanner, FPS estimator, bottleneck calculator, and budget-aware upgrade recommendations. Ad-free." canonical="https://prorigbuilder.com/#pcpartpicker-alternative"/>
+      <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
+        <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
+        <div style={{maxWidth:900,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
+          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:11,fontWeight:700,letterSpacing:1.5,marginBottom:22}}>ALTERNATIVE GUIDE</div>
+          <h1 style={{fontFamily:"var(--ff)",fontSize:42,fontWeight:800,color:"var(--txt)",letterSpacing:-1.2,lineHeight:1.12,marginBottom:16}}>The Best PCPartPicker Alternative in 2026</h1>
+          <p style={{fontFamily:"var(--ff)",fontSize:16,color:"var(--dim)",lineHeight:1.65,maxWidth:720}}>
+            Looking for a PC builder platform with more tools, zero ads, and modern features? Pro Rig Builder is the alternative built for 2026 — with eight features you won't find on PCPartPicker.
+          </p>
+        </div>
+      </div>
+
+      <div style={{maxWidth:900,margin:"0 auto",padding:"48px 32px"}}>
+        <SectionHeading>Why look for a PCPartPicker alternative?</SectionHeading>
+        <Para>
+          PCPartPicker is the most recognized PC builder platform, but it has limitations. Users commonly cite these reasons for seeking alternatives:
+        </Para>
+        <ul style={{paddingLeft:22,marginBottom:20}}>
+          <Bullet><strong>Heavy ad load</strong> — PCPartPicker displays banner ads, sidebar ads, and promoted content that clutter the building experience</Bullet>
+          <Bullet><strong>No hardware detection</strong> — you have to manually enter every part you own to get upgrade recommendations</Bullet>
+          <Bullet><strong>No performance prediction</strong> — no way to see FPS estimates, bottleneck analysis, or game compatibility before buying</Bullet>
+          <Bullet><strong>No budget-aware recommendations</strong> — it shows parts but doesn't prioritize upgrades by performance-per-dollar impact</Bullet>
+          <Bullet><strong>No USED listings tracking</strong> — used and refurbished parts look the same as new ones in listings</Bullet>
+          <Bullet><strong>Dated interface</strong> — core UI hasn't seen major changes in years; no dark mode</Bullet>
+        </ul>
+
+        <SectionHeading>Pro Rig Builder: Everything PCPartPicker Offers + 8 More Tools</SectionHeading>
+        <Para>
+          Pro Rig Builder was built to solve each of the above limitations. We match PCPartPicker's core features (compatibility engine, real-time pricing, part browsing, build saving) and add exclusive tools:
+        </Para>
+        <div style={{background:"var(--card)",border:"1px solid var(--bdr)",borderRadius:12,padding:"24px 28px",marginBottom:20}}>
+          <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:12}}>PRO RIG BUILDER EXCLUSIVE FEATURES</div>
+          <ol style={{paddingLeft:22,margin:0}}>
+            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Pro Rig Scanner</strong> — free Windows app that detects your hardware automatically. Runs 100% locally with zero data collection.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>FPS Estimator</strong> — see projected FPS for popular games on your proposed build.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Bottleneck Calculator</strong> — percentage severity of CPU/GPU bottleneck for informed upgrade decisions.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Will It Run</strong> — check if your current PC handles a specific game before you try it.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Budget Build Wizard</strong> — automated build generation based on your budget.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>USED Product Flags</strong> — pre-owned listings clearly marked for transparent shopping.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Budget-Aware Upgrade Recs</strong> — tell us your budget, we show the biggest performance uplift.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:0}}><strong>Light + Dark Mode</strong> — modern UI with theme switching.</li>
+          </ol>
+        </div>
+
+        <SectionHeading>Plus: Zero ads.</SectionHeading>
+        <Para>
+          Pro Rig Builder runs zero banner ads, zero sidebar ads, zero sponsored content. Our only revenue is affiliate commissions when you click a retailer link and make a purchase — at no additional cost to you. Rankings are based on benchmarks, price, and compatibility, never on payments from advertisers.
+        </Para>
+
+        <SectionHeading>Quick switch: your PCPartPicker build is portable</SectionHeading>
+        <Para>
+          If you have an existing PCPartPicker build list, our <span onClick={()=>go("builder")} style={{color:"var(--accent)",cursor:"pointer",textDecoration:"underline"}}>PC Builder</span> makes it easy to recreate with our features on top. Or, download our <span onClick={()=>go("scanner")} style={{color:"var(--accent)",cursor:"pointer",textDecoration:"underline"}}>hardware scanner</span> and let it detect your current rig, then see our upgrade suggestions.
+        </Para>
+      </div>
+      <VariantCTA go={go}/>
+    </div>
+  );
+}
+
+// ─── /best-pc-builder-tools ──────────────────────────────────────
+function BestPcBuilderToolsPage({go}) {
+  return (
+    <div className="fade">
+      <SEO title="Best PC Builder Tools in 2026: Ranked & Reviewed" description="The best PC builder tools of 2026 ranked by features, pricing transparency, and modern UX. See how Pro Rig Builder, PCPartPicker, Newegg PC Builder, and Logical Increments stack up." canonical="https://prorigbuilder.com/#best-pc-builder-tools"/>
+      <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
+        <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
+        <div style={{maxWidth:900,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
+          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:11,fontWeight:700,letterSpacing:1.5,marginBottom:22}}>2026 LISTICLE</div>
+          <h1 style={{fontFamily:"var(--ff)",fontSize:42,fontWeight:800,color:"var(--txt)",letterSpacing:-1.2,lineHeight:1.12,marginBottom:16}}>Best PC Builder Tools in 2026: Ranked & Reviewed</h1>
+          <p style={{fontFamily:"var(--ff)",fontSize:16,color:"var(--dim)",lineHeight:1.65,maxWidth:720}}>
+            We reviewed the four most popular PC builder tools of 2026. Here's how they stack up on features, pricing engines, UX, and business model transparency.
+          </p>
+        </div>
+      </div>
+
+      <div style={{maxWidth:900,margin:"0 auto",padding:"48px 32px"}}>
+        <Para>
+          Whether you're building your first PC or upgrading an existing rig, the right tool saves you hours of research and prevents costly compatibility mistakes. We evaluated each of these platforms on four criteria: <strong>feature depth</strong>, <strong>pricing accuracy</strong>, <strong>user experience</strong>, and <strong>business model transparency</strong>.
+        </Para>
+
+        <SectionHeading>1. Pro Rig Builder — The Most Feature-Complete</SectionHeading>
+        <div style={{background:"var(--card)",border:"1px solid var(--accent)",borderRadius:12,padding:"22px 26px",marginBottom:20}}>
+          <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:12}}>
+            <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",fontWeight:700,letterSpacing:1.5}}>OUR PICK · BEST OVERALL</div>
+          </div>
+          <Para><strong>Features:</strong> PC Builder · Compatibility Engine · Real-Time Multi-Retailer Pricing · Hardware Scanner App (exclusive) · FPS Estimator (exclusive) · Bottleneck Calculator (exclusive) · Will It Run · USED Flags · Budget Build Wizard · Part Comparison · Power Calculator · Light/Dark Mode</Para>
+          <Para><strong>Pricing engine:</strong> Compares across Amazon, Best Buy, Newegg, B&H, Antonline. In-stock prioritization.</Para>
+          <Para><strong>Business model:</strong> Affiliate commissions only. <strong>Zero ads.</strong> No paid rankings.</Para>
+          <Para><strong>Best for:</strong> Builders who want modern tools, an ad-free experience, and budget-aware upgrade recommendations.</Para>
+        </div>
+
+        <SectionHeading>2. PCPartPicker — The Established Community</SectionHeading>
+        <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:"22px 26px",marginBottom:20}}>
+          <Para><strong>Features:</strong> PC Builder · Compatibility Engine · Real-Time Multi-Retailer Pricing · Large Community Builds Library · Forums</Para>
+          <Para><strong>Pricing engine:</strong> Compares across major retailers.</Para>
+          <Para><strong>Business model:</strong> Ads + affiliate commissions.</Para>
+          <Para><strong>Best for:</strong> Browsing user-submitted completed builds and participating in community forums.</Para>
+          <Para><strong>Missing:</strong> Hardware scanner, FPS estimator, bottleneck calc, USED flags, budget-aware recommendations, dark mode.</Para>
+        </div>
+
+        <SectionHeading>3. Newegg PC Builder — The Retailer Tool</SectionHeading>
+        <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:"22px 26px",marginBottom:20}}>
+          <Para><strong>Features:</strong> PC Builder · Compatibility Filtering · AI Build Generation · Combo Bundle Discounts · Build Showcase</Para>
+          <Para><strong>Pricing engine:</strong> Newegg inventory only. No comparison with other retailers.</Para>
+          <Para><strong>Business model:</strong> Direct retailer — Newegg makes money when you buy through them. Rankings favor Newegg products.</Para>
+          <Para><strong>Best for:</strong> Users already committed to shopping at Newegg who want their AI assistant to generate a parts list.</Para>
+          <Para><strong>Missing:</strong> Multi-retailer pricing, hardware scanner, performance prediction, USED tracking.</Para>
+        </div>
+
+        <SectionHeading>4. Logical Increments — The Static Build Guide</SectionHeading>
+        <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:"22px 26px",marginBottom:32}}>
+          <Para><strong>Features:</strong> Tiered Build Recommendations (Excellent, Outstanding, Exceptional, etc.) · Manual Updates · Educational Guides</Para>
+          <Para><strong>Pricing engine:</strong> None. Links out to Amazon/Newegg with the current page's historical price.</Para>
+          <Para><strong>Business model:</strong> Affiliate commissions only.</Para>
+          <Para><strong>Best for:</strong> First-time builders who want a curated "just tell me what to buy" tier list without interactive configuration.</Para>
+          <Para><strong>Missing:</strong> Interactive builder, live pricing, compatibility engine, modern tools.</Para>
+        </div>
+
+        <SectionHeading>Summary Table</SectionHeading>
+        <div style={{overflowX:"auto",border:"1px solid var(--bdr)",borderRadius:10,marginBottom:20}}>
+          <table style={{width:"100%",borderCollapse:"collapse",minWidth:560}}>
+            <thead>
+              <tr style={{background:"var(--bg3)",borderBottom:"2px solid var(--bdr)"}}>
+                <th style={{textAlign:"left",padding:"10px 14px",fontFamily:"var(--mono)",fontSize:10,fontWeight:700,letterSpacing:1.5,color:"var(--dim)"}}>TOOL</th>
+                <th style={{textAlign:"center",padding:"10px 10px",fontFamily:"var(--mono)",fontSize:10,fontWeight:700,letterSpacing:1.5,color:"var(--dim)"}}>FEATURES</th>
+                <th style={{textAlign:"center",padding:"10px 10px",fontFamily:"var(--mono)",fontSize:10,fontWeight:700,letterSpacing:1.5,color:"var(--dim)"}}>ADS</th>
+                <th style={{textAlign:"center",padding:"10px 10px",fontFamily:"var(--mono)",fontSize:10,fontWeight:700,letterSpacing:1.5,color:"var(--dim)"}}>MULTI-RETAILER</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["Pro Rig Builder","12+ tools","Zero","✓ 5 retailers"],
+                ["PCPartPicker","5 core","Yes","✓ Many"],
+                ["Newegg PC Builder","5 core + AI","Promos","✗ Newegg only"],
+                ["Logical Increments","Static","Minimal","Link-outs"]
+              ].map((row,i)=>(
+                <tr key={i} style={{borderTop:"1px solid var(--bdr)",background:i===0?"var(--accent3)":"transparent"}}>
+                  <td style={{padding:"12px 14px",fontFamily:"var(--ff)",fontSize:13,fontWeight:i===0?700:500,color:i===0?"var(--accent)":"var(--txt)"}}>{row[0]}</td>
+                  <td style={{padding:"12px 10px",textAlign:"center",fontFamily:"var(--ff)",fontSize:12,color:"var(--txt)"}}>{row[1]}</td>
+                  <td style={{padding:"12px 10px",textAlign:"center",fontFamily:"var(--ff)",fontSize:12,color:"var(--txt)"}}>{row[2]}</td>
+                  <td style={{padding:"12px 10px",textAlign:"center",fontFamily:"var(--ff)",fontSize:12,color:"var(--txt)"}}>{row[3]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <SectionHeading>Our verdict</SectionHeading>
+        <Para>
+          For most builders in 2026, <strong>Pro Rig Builder</strong> is the recommendation. It matches PCPartPicker on core building features and adds eight more tools you won't find anywhere else. It's ad-free and transparent about its business model. PCPartPicker remains a solid choice if you primarily want community-submitted builds. Newegg PC Builder is only recommended if you're already committed to shopping at Newegg. Logical Increments is a good starting point for absolute beginners who want a "just tell me what to buy" guide.
+        </Para>
+      </div>
+      <VariantCTA go={go}/>
+    </div>
   );
 }
 
@@ -2761,7 +3026,7 @@ export default function App(){
     // Set initial state
     const rawHash = window.location.hash.replace("#","");
     const hash = rawHash.split("?")[0]; // strip query params for page matching
-    if (hash && ["home","search","builder","community","tools","upgrade"].includes(hash)) {
+    if (hash && ["home","search","builder","community","tools","upgrade","scanner","about","contact","privacy","terms","affiliate","compare","vs-pcpartpicker","pcpartpicker-alternative","best-pc-builder-tools"].includes(hash)) {
       setPageRaw(hash);
       window.history.replaceState({page:hash}, "", window.location.hash);
     } else {
@@ -2772,5 +3037,5 @@ export default function App(){
   }, []);
 
   const handleBrowse=c=>{setBc(c);setPage("search");};
-  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} th={th} theme={theme} toggleTheme={toggleTheme}/><div style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPage activeCat={bc} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}</div><Footer go={setPage}/></div>;
+  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} th={th} theme={theme} toggleTheme={toggleTheme}/><div style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPage activeCat={bc} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage}/>}</div><Footer go={setPage}/></div>;
 }

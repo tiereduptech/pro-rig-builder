@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Search engine verification -->
+    <meta name="google-site-verification" content="eb8MnWStZ3KXIptCGYbjllk0BykIq-68QGCH9ZEy-Gw" />
+    <meta name="msvalidate.01" content="D2735F74DDE6E0A01559652C16E02D2D" />
+
+    <!-- Primary Meta Tags -->
+    <title>Pro Rig Builder — Compare, Build & Save on PC Parts</title>
+    <meta name="title" content="Pro Rig Builder — Compare, Build & Save on PC Parts" />
+    <meta name="description" content="Compare PC components across Amazon, Best Buy, Newegg & more. Free Windows hardware scanner, compatibility engine, FPS estimator, and budget-aware upgrade recommendations." />
+    <meta name="keywords" content="PC builder, PC part picker, build a PC, PC components, compatibility checker, PC upgrade recommendations, PC hardware scanner, PCPartPicker alternative" />
+    <meta name="author" content="TieredUp Tech, Inc." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://prorigbuilder.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://prorigbuilder.com/" />
+    <meta property="og:title" content="Pro Rig Builder — Compare, Build & Save on PC Parts" />
+    <meta property="og:description" content="Compare PC components across Amazon, Best Buy, Newegg & more. Free Windows hardware scanner, compatibility engine, FPS estimator, and budget-aware upgrade recommendations." />
+    <meta property="og:site_name" content="Pro Rig Builder" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://prorigbuilder.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Pro Rig Builder - Compare PC parts, check compatibility, and build your dream rig" />
+    <meta name="twitter:image" content="https://prorigbuilder.com/og-image.png" />
+    <meta name="twitter:image:alt" content="Pro Rig Builder - PC parts comparison platform" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://prorigbuilder.com/" />
+    <meta name="twitter:title" content="Pro Rig Builder — Compare, Build & Save on PC Parts" />
+    <meta name="twitter:description" content="Compare PC components across Amazon, Best Buy, Newegg & more. Free Windows hardware scanner, compatibility engine, FPS estimator, and budget-aware upgrade recommendations." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 44'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23FF6B35'/%3E%3Cstop offset='100%25' stop-color='%23F5A623'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='36' height='44' rx='5' fill='%23FF6B35' opacity='.12'/%3E%3Crect x='5' y='5' width='26' height='7' rx='2' fill='url(%23g)'/%3E%3Crect x='5' y='15' width='26' height='5' rx='1.5' fill='%23FF6B35'/%3E%3Crect x='5' y='23' width='26' height='4' rx='1' fill='%23FF6B35' opacity='.7'/%3E%3Crect x='10' y='30' width='16' height='5' rx='1.5' fill='%23E85D2A'/%3E%3Crect x='5' y='38' width='26' height='3' rx='1' fill='%23FF6B35' opacity='.4'/%3E%3C/svg%3E" />
+
+    <!-- Theme colors -->
+    <meta name="theme-color" content="#FF6B35" />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-- Schema.org Organization markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Pro Rig Builder",
+      "alternateName": "prorigbuilder",
+      "url": "https://prorigbuilder.com",
+      "logo": "https://prorigbuilder.com/logo.png",
+      "description": "PC components comparison platform with hardware scanner, compatibility engine, and budget-aware upgrade recommendations.",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "TieredUp Tech, Inc.",
+        "url": "https://tiereduptech.com"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1812 N 16th St",
+        "addressLocality": "Orange",
+        "addressRegion": "TX",
+        "postalCode": "77630",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "email": "support@tiereduptech.com",
+        "availableLanguage": "English"
+      }
+    }
+    </script>
+
+    <!-- Schema.org WebSite markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Pro Rig Builder",
+      "url": "https://prorigbuilder.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://prorigbuilder.com/#search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Schema.org SoftwareApplication markup for scanner app -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Pro Rig Scanner",
+      "description": "Free Windows application that detects PC hardware and provides personalized upgrade recommendations. Runs 100% locally — no data collection.",
+      "operatingSystem": "Windows 10, Windows 11",
+      "applicationCategory": "UtilitiesApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TieredUp Tech, Inc."
+      },
+      "downloadUrl": "https://github.com/tiereduptech/pro-rig-builder/releases/latest/download/ProRigScanner.exe"
+    }
+    </script>
+      <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT03GMJY3B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-DT03GMJY3B", {
+        anonymize_ip: true,
+        send_page_view: true
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
