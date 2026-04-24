@@ -317,10 +317,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B07STGHZK8?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    }},
   {
     "id": 10012,
     "n": "AMD Ryzen 9 7950X",
@@ -681,10 +678,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B08164VTWH?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "needsReview": true,
-    "quarantinedAt": "2026-04-22"
-  },
+    }},
   {
     "id": 10024,
     "n": "AMD Ryzen 9 5900",
@@ -768,10 +762,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BM4W1L2G?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "needsReview": true,
-    "quarantinedAt": "2026-04-22"
-  },
+    }},
   {
     "id": 10027,
     "n": "AMD Ryzen 7 5800",
@@ -1057,10 +1048,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09VCJ171S?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    }},
   {
     "id": 10045,
     "n": "Intel Core Ultra 9 285K",
@@ -1495,10 +1483,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CGJ4MLC8?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    }},
   {
     "id": 10059,
     "n": "Intel Core i5-14600KF",
@@ -1653,10 +1638,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0GR95TBL7?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    }},
   {
     "id": 10064,
     "n": "Intel Core i3-14100",
@@ -1997,10 +1979,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09FXFJW2F?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    }},
   {
     "id": 10075,
     "n": "Intel Core i3-13100",
@@ -3368,8 +3347,6 @@ export const PARTS = [
   },
   {
     "id": 10152,
-    "needsReview": true,
-    "bundle": true,
     "n": "New Intel 13th Gen Raptor Lake Core i9-13900K CPU Upto 5.8GHz Boost Speed Best Gaming Overclocking Features for Z790 ...",
     "img": "https://m.media-amazon.com/images/I/515Atp1B7AL._AC_SL1280_.jpg",
     "c": "CPU",
@@ -6271,10 +6248,7 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 56,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 56},
   {
     "id": 20043,
     "n": "Gigabyte B660M DS3H DDR4",
@@ -6369,10 +6343,7 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 100,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 100},
   {
     "id": 20046,
     "n": "ASRock B550 Phantom Gaming 4",
@@ -22546,10 +22517,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0F91KM1CK?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    }},
   {
     "id": 30042,
     "n": "AMD Radeon RX 6800",
@@ -32750,10 +32718,7 @@ export const PARTS = [
     },
     "value": 85,
     "memType": "DDR5",
-    "formFactor": "UDIMM",
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "formFactor": "UDIMM"},
   {
     "id": 40001,
     "n": "Corsair Vengeance DDR5 32GB (2x16GB) 5600MHz CL36",
@@ -32811,10 +32776,7 @@ export const PARTS = [
     },
     "value": 63,
     "memType": "DDR5",
-    "formFactor": "UDIMM",
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "formFactor": "UDIMM"},
   {
     "id": 40003,
     "n": "Corsair Vengeance DDR5 64GB (2x32GB) 5600MHz CL40",
@@ -32872,10 +32834,7 @@ export const PARTS = [
     },
     "value": 39,
     "memType": "DDR5",
-    "formFactor": "UDIMM",
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "formFactor": "UDIMM"},
   {
     "id": 40005,
     "n": "Corsair Dominator Titanium DDR5 64GB (2x32GB) 6400MHz CL32",
@@ -32903,10 +32862,7 @@ export const PARTS = [
     },
     "value": 53,
     "memType": "DDR5",
-    "formFactor": "UDIMM",
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "formFactor": "UDIMM"},
   {
     "id": 40006,
     "n": "G.Skill Trident Z5 RGB DDR5 32GB (2x16GB) 6400MHz CL32",
@@ -33024,10 +32980,7 @@ export const PARTS = [
     },
     "value": 85,
     "memType": "DDR5",
-    "formFactor": "UDIMM",
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "formFactor": "UDIMM"},
   {
     "id": 40010,
     "n": "G.Skill Ripjaws S5 DDR5 32GB (2x16GB) 5600MHz CL28",
@@ -33085,10 +33038,7 @@ export const PARTS = [
     },
     "value": 85,
     "memType": "DDR5",
-    "formFactor": "UDIMM",
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "formFactor": "UDIMM"},
   {
     "id": 40012,
     "n": "G.Skill Trident Z5 Royal DDR5 32GB (2x16GB) 7600MHz CL36",
@@ -33176,10 +33126,7 @@ export const PARTS = [
     },
     "value": 85,
     "memType": "DDR5",
-    "formFactor": "UDIMM",
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "formFactor": "UDIMM"},
   {
     "id": 40015,
     "n": "Kingston FURY Beast DDR5 64GB (2x32GB) 5600MHz CL40",
@@ -33207,10 +33154,7 @@ export const PARTS = [
     },
     "value": 95,
     "memType": "DDR5",
-    "formFactor": "UDIMM",
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "formFactor": "UDIMM"},
   {
     "id": 40016,
     "n": "Kingston FURY Renegade DDR5 32GB (2x16GB) 7200MHz CL34",
@@ -33268,10 +33212,7 @@ export const PARTS = [
     },
     "value": 92,
     "memType": "DDR5",
-    "formFactor": "UDIMM",
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "formFactor": "UDIMM"},
   {
     "id": 40018,
     "n": "TeamGroup T-Force Vulcan DDR5 32GB (2x16GB) 5200MHz CL40",
@@ -33299,10 +33240,7 @@ export const PARTS = [
     },
     "value": 100,
     "memType": "DDR5",
-    "formFactor": "UDIMM",
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "formFactor": "UDIMM"},
   {
     "id": 40019,
     "n": "TeamGroup T-Force Vulcan DDR5 32GB (2x16GB) 5600MHz CL36",
@@ -33330,10 +33268,7 @@ export const PARTS = [
     },
     "value": 100,
     "memType": "DDR5",
-    "formFactor": "UDIMM",
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "formFactor": "UDIMM"},
   {
     "id": 40020,
     "n": "Crucial DDR5 32GB (2x16GB) 4800MHz CL40",
@@ -33451,10 +33386,7 @@ export const PARTS = [
     },
     "value": 56,
     "memType": "DDR5",
-    "formFactor": "UDIMM",
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "formFactor": "UDIMM"},
   {
     "id": 40024,
     "n": "Samsung DDR5 64GB ECC RDIMM 4800MHz",
@@ -33782,10 +33714,7 @@ export const PARTS = [
     },
     "value": 93,
     "memType": "DDR4",
-    "formFactor": "UDIMM",
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "formFactor": "UDIMM"},
   {
     "id": 40035,
     "n": "Kingston Server Premier DDR4 32GB ECC 3200MHz",
@@ -42503,10 +42432,7 @@ export const PARTS = [
     },
     "pcie": 4,
     "nand": "TLC",
-    "value": 86,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 86},
   {
     "id": 50011,
     "n": "SK Hynix Platinum P41 1TB NVMe Gen4",
@@ -42737,10 +42663,7 @@ export const PARTS = [
     },
     "pcie": 4,
     "nand": "TLC",
-    "value": 87,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 87},
   {
     "id": 50019,
     "n": "Sabrent Rocket 4 Plus 1TB NVMe Gen4",
@@ -42962,10 +42885,7 @@ export const PARTS = [
       }
     },
     "nand": "TLC",
-    "value": 26,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 26},
   {
     "id": 50027,
     "n": "Seagate Barracuda 2TB 7200RPM HDD",
@@ -43039,10 +42959,7 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 0,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 0},
   {
     "id": 50030,
     "n": "WD Blue 1TB 7200RPM HDD",
@@ -43191,10 +43108,7 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 1,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 1},
   {
     "id": 50036,
     "n": "Seagate IronWolf 8TB NAS HDD",
@@ -43271,10 +43185,7 @@ export const PARTS = [
     },
     "pcie": 4,
     "nand": "TLC",
-    "value": 33,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 33},
   {
     "id": 50039,
     "n": "Micron 7450 Pro 1.92TB NVMe U.2 Gen4",
@@ -43301,10 +43212,7 @@ export const PARTS = [
     },
     "pcie": 4,
     "nand": "TLC",
-    "value": 17,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 17},
   {
     "id": 50040,
     "n": "Portable 5TB External Hard Drive HDD – USB 3.0 for PC, Mac, PS4",
@@ -62158,10 +62066,7 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 29,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 29},
   {
     "id": 60010,
     "n": "be quiet! Pure Power 12 M 750W",
@@ -62186,10 +62091,7 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 19,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 19},
   {
     "id": 60011,
     "n": "EVGA SuperNOVA 1000 G7",
@@ -62214,10 +62116,7 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 33,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 33},
   {
     "id": 60012,
     "n": "EVGA SuperNOVA 850 G7",
@@ -62372,10 +62271,7 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 43,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 43},
   {
     "id": 60018,
     "n": "Corsair SF750 SFX Platinum",
@@ -62426,10 +62322,7 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 6,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 6},
   {
     "id": 60020,
     "n": "Cooler Master V850 SFX Gold",
@@ -62558,10 +62451,7 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 26,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 26},
   {
     "id": 60025,
     "n": "MSI MAG A850GL PCIE5",
@@ -62638,10 +62528,7 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 42,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 42},
   {
     "id": 60028,
     "n": "DeepCool PX850G",
@@ -62720,10 +62607,7 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 98,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 98},
   {
     "id": 60031,
     "n": "Corsair RM650",
@@ -62748,10 +62632,7 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 28,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "value": 28},
   {
     "id": 60032,
     "n": "ASUS ROG Thor 1200P2",
@@ -62777,10 +62658,7 @@ export const PARTS = [
     },
     "color": "Black",
     "value": 0,
-    "rgb": true,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "rgb": true},
   {
     "id": 60033,
     "n": "FSP Hydro G PRO 850W",
@@ -67941,10 +67819,7 @@ export const PARTS = [
     "tower": "Mini",
     "ff": "Mini-ITX",
     "value": 22,
-    "rgb": false,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "rgb": false},
   {
     "id": 70013,
     "n": "Lian Li A4-H2O",
@@ -68121,10 +67996,7 @@ export const PARTS = [
     "tower": "Mid",
     "ff": "ATX",
     "value": 38,
-    "rgb": false,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "rgb": false},
   {
     "id": 70020,
     "n": "Phanteks Eclipse G500A",
@@ -68279,10 +68151,7 @@ export const PARTS = [
     "tower": "Mid",
     "ff": "ATX",
     "value": 81,
-    "rgb": false,
-    "needsReview": true,
-    "quarantinedAt": "2026-04-23"
-  },
+    "rgb": false},
   {
     "id": 70026,
     "n": "Fractal Design Pop Air",
