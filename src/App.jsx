@@ -986,6 +986,260 @@ function AffiliatePage() {
   );
 }
 
+// ═══ COMPARISON PAGE ═══════════════════════════════════════════════
+function ComparePage({go}) {
+  // Feature data (factual, research-verified)
+  const features = [
+    {cat:"Core Tools", items:[
+      {f:"PC Part Builder", pb:true, pcpp:true, newegg:true, logical:"Static tables only"},
+      {f:"Live Multi-Retailer Pricing", pb:"Amazon + Best Buy + Newegg + B&H + Antonline", pcpp:"Yes", newegg:"Newegg only", logical:"Link-outs only"},
+      {f:"Compatibility Engine", pb:"18+ checks", pcpp:"Yes", newegg:"Basic filtering", logical:false},
+      {f:"Compatibility Warnings", pb:true, pcpp:true, newegg:true, logical:false},
+      {f:"Community Builds Library", pb:"Curated", pcpp:"Large public library", newegg:"User showcases", logical:false},
+    ]},
+    {cat:"Proprietary Tools (Exclusive to Pro Rig Builder)", items:[
+      {f:"Hardware Scanner App", pb:"✓ Free Windows app", pcpp:false, newegg:false, logical:false},
+      {f:"Budget-Aware Upgrade Recs", pb:true, pcpp:false, newegg:false, logical:false},
+      {f:"USED Product Flags", pb:true, pcpp:false, newegg:false, logical:false},
+      {f:"FPS Estimator", pb:"Per-game estimates", pcpp:false, newegg:false, logical:false},
+      {f:"Bottleneck Calculator", pb:true, pcpp:false, newegg:false, logical:false},
+      {f:"Will It Run Checker", pb:true, pcpp:false, newegg:false, logical:false},
+      {f:"Build-to-Build Comparison", pb:true, pcpp:false, newegg:"Side-by-side", logical:false},
+      {f:"Part-to-Part Comparison", pb:true, pcpp:false, newegg:false, logical:false},
+      {f:"Budget Build Wizard", pb:"Automated", pcpp:false, newegg:"AI-generated via ChatGPT", logical:"Static tiers"},
+      {f:"Power (PSU) Calculator", pb:true, pcpp:false, newegg:"Separate tool", logical:false},
+    ]},
+    {cat:"User Experience", items:[
+      {f:"Light & Dark Mode", pb:true, pcpp:false, newegg:false, logical:false},
+      {f:"Advanced Search & Filters", pb:"Multi-criteria filtering", pcpp:"Basic filters", newegg:"Newegg search", logical:false},
+      {f:"Mobile-Optimized", pb:true, pcpp:true, newegg:true, logical:true},
+      {f:"In-Stock Priority Pricing", pb:"Shows in-stock prices first", pcpp:false, newegg:"Newegg stock only", logical:false},
+      {f:"Real-Time Price Updates", pb:"Verified regularly", pcpp:"Yes", newegg:"Yes", logical:"Manual updates"},
+    ]},
+    {cat:"Business Model & Transparency", items:[
+      {f:"Revenue Model", pb:"Affiliate commissions only", pcpp:"Ads + affiliate", newegg:"Retailer (direct sales)", logical:"Affiliate commissions"},
+      {f:"Ads Shown to Users", pb:"Zero", pcpp:"Yes", newegg:"Product promotions", logical:"Minimal"},
+      {f:"Retailer Bias", pb:"None — ranks by price/performance", pcpp:"None", newegg:"Newegg-favored", logical:"None"},
+      {f:"Data Collection", pb:"Analytics only", pcpp:"Analytics + ads tracking", newegg:"Retailer tracking", logical:"Analytics only"},
+    ]},
+  ];
+
+  const competitors = [
+    {key:"pb", name:"Pro Rig Builder", badge:"YOU ARE HERE", color:"var(--accent)"},
+    {key:"pcpp", name:"PCPartPicker", color:"var(--sky)"},
+    {key:"newegg", name:"Newegg PC Builder", color:"var(--violet)"},
+    {key:"logical", name:"Logical Increments", color:"var(--amber)"},
+  ];
+
+  const renderCell = (val, isPb) => {
+    if (val === true) return <span style={{fontSize:18,color:isPb?"var(--accent)":"var(--mint)",fontWeight:700}}>✓</span>;
+    if (val === false) return <span style={{fontSize:18,color:"var(--mute)",fontWeight:700}}>✗</span>;
+    return <span style={{fontFamily:"var(--ff)",fontSize:11,color:isPb?"var(--accent)":"var(--txt)",fontWeight:isPb?700:500,lineHeight:1.3}}>{val}</span>;
+  };
+
+  return (
+    <div className="fade">
+      {/* HERO */}
+      <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
+        <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
+        <div style={{maxWidth:1100,margin:"0 auto",padding:"72px 32px 48px",position:"relative"}}>
+          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:11,fontWeight:700,letterSpacing:1.5,marginBottom:24}}>
+            WHY PRO RIG BUILDER
+          </div>
+          <h1 style={{fontFamily:"var(--ff)",fontSize:44,fontWeight:800,color:"var(--txt)",letterSpacing:-1.2,lineHeight:1.08,maxWidth:780}}>
+            How we compare to the <span style={{background:"linear-gradient(135deg, var(--accent), var(--amber))",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>other PC builder tools</span>
+          </h1>
+          <p style={{fontFamily:"var(--ff)",fontSize:16,color:"var(--dim)",marginTop:18,lineHeight:1.7,maxWidth:680}}>
+            An honest, factual comparison with PCPartPicker, Newegg PC Builder, and Logical Increments — the three biggest PC builder platforms. We focus on facts, not hype. You decide.
+          </p>
+        </div>
+      </div>
+
+      {/* BIG COMPARISON TABLE */}
+      <div style={{maxWidth:1100,margin:"0 auto",padding:"48px 32px 24px"}}>
+        <h2 style={{fontFamily:"var(--ff)",fontSize:28,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5,marginBottom:18}}>Feature-by-feature comparison</h2>
+        <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",marginBottom:24,lineHeight:1.6}}>
+          Green check = feature is available. Red X = feature is not available. Text = brief note on implementation. Last verified: April 2026.
+        </p>
+
+        <div style={{overflowX:"auto",border:"1px solid var(--bdr)",borderRadius:12,background:"var(--bg2)"}}>
+          <table style={{width:"100%",borderCollapse:"collapse",minWidth:720}}>
+            <thead>
+              <tr style={{background:"var(--bg3)",borderBottom:"2px solid var(--bdr)"}}>
+                <th style={{textAlign:"left",padding:"14px 16px",fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",fontWeight:700,letterSpacing:1.5,minWidth:180}}>FEATURE</th>
+                {competitors.map(c => (
+                  <th key={c.key} style={{textAlign:"center",padding:"14px 12px",minWidth:130}}>
+                    <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:c.color,marginBottom:c.badge?4:0}}>{c.name}</div>
+                    {c.badge && <div style={{display:"inline-block",background:c.color,color:"#fff",fontFamily:"var(--mono)",fontSize:9,fontWeight:800,padding:"2px 8px",borderRadius:4,letterSpacing:1}}>{c.badge}</div>}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {features.map((section, si) => (
+                <React.Fragment key={si}>
+                  <tr>
+                    <td colSpan={5} style={{padding:"14px 16px 8px",background:"var(--bg3)",borderTop:si===0?"none":"1px solid var(--bdr)",fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5}}>
+                      {section.cat.toUpperCase()}
+                    </td>
+                  </tr>
+                  {section.items.map((row, ri) => (
+                    <tr key={ri} style={{borderTop:"1px solid var(--bdr)"}}>
+                      <td style={{padding:"12px 16px",fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>{row.f}</td>
+                      <td style={{padding:"12px",textAlign:"center",background:"var(--accent3)"}}>{renderCell(row.pb, true)}</td>
+                      <td style={{padding:"12px",textAlign:"center"}}>{renderCell(row.pcpp)}</td>
+                      <td style={{padding:"12px",textAlign:"center"}}>{renderCell(row.newegg)}</td>
+                      <td style={{padding:"12px",textAlign:"center"}}>{renderCell(row.logical)}</td>
+                    </tr>
+                  ))}
+                </React.Fragment>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* DEEP DIVES */}
+      <div style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)",marginTop:48}}>
+        <div style={{maxWidth:1100,margin:"0 auto",padding:"56px 32px"}}>
+          <div style={{textAlign:"center",marginBottom:40}}>
+            <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",fontWeight:700,letterSpacing:2,marginBottom:8}}>DEEP DIVE</div>
+            <h2 style={{fontFamily:"var(--ff)",fontSize:32,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5}}>What actually sets us apart</h2>
+          </div>
+
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:24}} className="how-grid">
+            {[
+              {
+                i:"🔍",
+                t:"The only platform with a hardware scanner",
+                d:"Download our free Windows app and it detects your CPU, GPU, RAM, storage, and motherboard automatically. No typing part names. No guessing. No other PC builder tool offers this — not PCPartPicker, not Newegg, not Logical Increments."
+              },
+              {
+                i:"💰",
+                t:"Budget-aware upgrade recommendations",
+                d:"Tell us your budget and we find the biggest performance uplift per dollar. Refresh-needed detection for outdated platforms (old sockets, wrong RAM type). Competitors show you parts but won\u0027t tell you which upgrade actually matters for your specific rig."
+              },
+              {
+                i:"🎮",
+                t:"FPS estimator + Will-It-Run checker",
+                d:"See projected FPS for popular games on your build before you buy. Check if your existing PC can handle a specific game. Neither PCPartPicker nor Newegg offers game-specific performance prediction."
+              },
+              {
+                i:"⚖️",
+                t:"Bottleneck calculator",
+                d:"Know exactly whether your CPU or GPU is the weak link. Get specific percentage severity. Our bottleneck engine goes deeper than generic \u0022balanced build\u0022 recommendations other tools offer."
+              },
+              {
+                i:"🛍️",
+                t:"Real multi-retailer pricing, in-stock first",
+                d:"We compare live prices across Amazon, Best Buy, Newegg, B&H, and Antonline — and show you the in-stock retailer first, not just the cheapest (which is often out of stock). Newegg PC Builder shows only Newegg. Logical Increments doesn\u0027t track live prices at all."
+              },
+              {
+                i:"♻️",
+                t:"USED product flags",
+                d:"Used and refurbished GPUs and CPUs are clearly marked in our catalog. Save money, know what you\u0027re buying. No competitor clearly flags pre-owned listings."
+              },
+              {
+                i:"🎨",
+                t:"Actually good UX",
+                d:"Light & dark mode, mobile-optimized, advanced filters, fast search, and zero ads. PCPartPicker\u0027s interface hasn\u0027t significantly changed in years. Newegg is a retail funnel first, tool second."
+              },
+              {
+                i:"🤝",
+                t:"Honest business model",
+                d:"Affiliate commissions only. No ads. No paid placement. No retailer bias. If a cheaper retailer exists without an affiliate deal, we\u0027ll still tell you. We would rather lose a commission than mislead you."
+              },
+            ].map(f => (
+              <div key={f.t} style={{background:"var(--card)",borderRadius:14,padding:"26px 28px",border:"1px solid var(--bdr)"}}>
+                <div style={{fontSize:28,lineHeight:1,marginBottom:14}}>{f.i}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)",marginBottom:10,lineHeight:1.25}}>{f.t}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.7}}>{f.d}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* HEAD-TO-HEAD SECTIONS */}
+      <div style={{maxWidth:1000,margin:"0 auto",padding:"56px 32px"}}>
+        <div style={{textAlign:"center",marginBottom:40}}>
+          <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",fontWeight:700,letterSpacing:2,marginBottom:8}}>HEAD TO HEAD</div>
+          <h2 style={{fontFamily:"var(--ff)",fontSize:32,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5}}>Direct comparisons</h2>
+        </div>
+
+        {/* vs PCPartPicker */}
+        <div style={{background:"var(--bg2)",borderRadius:14,padding:"32px 34px",border:"1px solid var(--bdr)",marginBottom:24}}>
+          <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
+            <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)"}}>Pro Rig Builder vs. PCPartPicker</div>
+          </div>
+          <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
+            PCPartPicker is the best-known PC builder platform. It\u0027s solid: a large community build library, solid compatibility engine, real-time pricing across retailers. But it\u0027s also 15+ years old and shows it. Pro Rig Builder does everything PCPartPicker does — plus eight tools PCPartPicker doesn\u0027t have.
+          </p>
+          <div style={{background:"var(--bg3)",padding:"18px 22px",borderRadius:10}}>
+            <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>WHAT WE HAVE THAT PCPARTPICKER DOESN\u0027T</div>
+            <ul style={{paddingLeft:20,margin:0}}>
+              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Free Windows hardware scanner app</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>FPS estimator and Will-It-Run checker for specific games</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Bottleneck calculator with percentage severity</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>USED product flags</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Budget-aware automated upgrade recommendations</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Automated budget build wizard</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Light + dark mode</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:0}}>Zero ads (PCPartPicker is ad-supported)</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* vs Newegg */}
+        <div style={{background:"var(--bg2)",borderRadius:14,padding:"32px 34px",border:"1px solid var(--bdr)",marginBottom:24}}>
+          <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
+            <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)"}}>Pro Rig Builder vs. Newegg PC Builder</div>
+          </div>
+          <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
+            Newegg\u0027s PC Builder is a shopping tool first, a builder tool second. It only shows Newegg inventory. Its AI "Build with AI" feature uses ChatGPT to generate recommendations, but pricing, stock, and inventory are Newegg-only — no comparison with Amazon, Best Buy, or anywhere else. The tool exists to drive purchases on Newegg.com.
+          </p>
+          <div style={{background:"var(--bg3)",padding:"18px 22px",borderRadius:10}}>
+            <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>THE KEY DIFFERENCE</div>
+            <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.7}}>
+              Pro Rig Builder compares pricing across <strong>five retailers</strong>. We\u0027re neutral — we\u0027ll recommend the best deal regardless of which retailer offers it. Newegg PC Builder is a Newegg sales tool. If Amazon is $50 cheaper, Newegg won\u0027t tell you.
+            </div>
+          </div>
+        </div>
+
+        {/* vs Logical Increments */}
+        <div style={{background:"var(--bg2)",borderRadius:14,padding:"32px 34px",border:"1px solid var(--bdr)"}}>
+          <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
+            <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)"}}>Pro Rig Builder vs. Logical Increments</div>
+          </div>
+          <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
+            Logical Increments is a static build guide — not an interactive builder. Its "Grid" recommends parts for budget tiers (Excellent, Outstanding, Exceptional, etc.), updated manually by the team. There\u0027s no compatibility engine, no real-time pricing, no personalized recommendations. Good for beginners who want a curated list; limited for anyone building a specific rig.
+          </p>
+          <div style={{background:"var(--bg3)",padding:"18px 22px",borderRadius:10}}>
+            <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>THE KEY DIFFERENCE</div>
+            <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.7}}>
+              Logical Increments tells you what parts to buy. Pro Rig Builder lets you build, compare, validate, and benchmark — with your specific hardware, budget, and games. One is a cookbook. The other is a kitchen.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* BOTTOM CTA */}
+      <div style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)"}}>
+        <div style={{maxWidth:760,margin:"0 auto",padding:"56px 32px",textAlign:"center"}}>
+          <h2 style={{fontFamily:"var(--ff)",fontSize:30,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5,marginBottom:14}}>Try the difference yourself</h2>
+          <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.65,marginBottom:26}}>
+            Start a build, scan your existing rig, or browse parts with better filters than the competition. We\u0027re confident you\u0027ll see the difference within 30 seconds.
+          </p>
+          <div style={{display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap"}}>
+            <button onClick={()=>go("builder")} style={{padding:"14px 28px",borderRadius:12,fontSize:14,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 20px rgba(255,107,53,.3)"}}>Start Building →</button>
+            <button onClick={()=>go("scanner")} style={{padding:"14px 28px",borderRadius:12,fontSize:14,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>📥 Try the Scanner</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function HomePage({go,browse,th}){
   const deals=P.filter(p=>p.cp).sort((a,b)=>(b.off||0)-(a.off||0)).slice(0,6);
   const top=P.filter(p=>p.bench>=85).sort((a,b)=>(b.bench||0)-(a.bench||0)).slice(0,6);
@@ -2427,7 +2681,7 @@ function Footer({go}){
         </div>
         <div>
           <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Tools</div>
-          {[{l:"PC Builder",p:"builder"},{l:"Community Builds",p:"community"},{l:"Smart Tools",p:"tools"},{l:"Price Compare",p:"search"}].map(x=>
+          {[{l:"PC Builder",p:"builder"},{l:"Community Builds",p:"community"},{l:"Why Us",p:"compare"},{l:"Smart Tools",p:"tools"},{l:"Price Compare",p:"search"}].map(x=>
             <button key={x.l} onClick={()=>go(x.p)} style={{display:"block",fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left"}}>{x.l}</button>
           )}
         </div>
@@ -2490,5 +2744,5 @@ export default function App(){
   }, []);
 
   const handleBrowse=c=>{setBc(c);setPage("search");};
-  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} th={th} theme={theme} toggleTheme={toggleTheme}/><div style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPage activeCat={bc} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}</div><Footer go={setPage}/></div>;
+  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} th={th} theme={theme} toggleTheme={toggleTheme}/><div style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPage activeCat={bc} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}</div><Footer go={setPage}/></div>;
 }
