@@ -172,9 +172,9 @@ function PriceCompare({part}) {
 }
 
 /* ═══ STYLES ═══ */
-const css=`@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap');
-[data-theme="dark"]{--bg:#141418;--bg2:#1c1c22;--bg3:#232329;--bg4:#2c2c34;--bdr:rgba(255,255,255,0.06);--bdr2:rgba(255,255,255,0.1);--accent:#FF6B35;--accent2:#FF6B3540;--accent3:#FF6B3514;--mint:#FF6B35;--mint2:#FF6B3540;--mint3:#FF6B3514;--txt:#f0ede8;--dim:#908a80;--mute:#504a42;--amber:#f5a623;--rose:#ef4444;--sky:#38bdf8;--violet:#a78bfa;--ff:'Sora',system-ui,sans-serif;--mono:'DM Mono',monospace;--navbg:rgba(20,20,24,0.88);--heroGrad:linear-gradient(160deg,#141418 0%,#1e1410 40%,#141418 100%);--card:rgba(28,28,34,0.7);--shadow:0 4px 24px rgba(0,0,0,.25);--shadowSm:0 2px 8px rgba(0,0,0,.15)}
-[data-theme="light"]{--bg:#faf8f5;--bg2:#ffffff;--bg3:#f2efe8;--bg4:#e8e4dc;--bdr:rgba(120,100,80,0.1);--bdr2:rgba(120,100,80,0.15);--accent:#e85d2a;--accent2:#e85d2a40;--accent3:#e85d2a10;--mint:#e85d2a;--mint2:#e85d2a40;--mint3:#e85d2a10;--txt:#2a2420;--dim:#6a6258;--mute:#b8b0a4;--amber:#d4940a;--rose:#dc2626;--sky:#0284c7;--violet:#7c3aed;--ff:'Sora',system-ui,sans-serif;--mono:'DM Mono',monospace;--navbg:rgba(250,248,245,0.92);--heroGrad:linear-gradient(160deg,#faf8f5 0%,#fff4ec 40%,#faf8f5 100%);--card:rgba(255,255,255,0.8);--shadow:0 4px 24px rgba(80,60,30,.08);--shadowSm:0 2px 8px rgba(80,60,30,.05)}
+const css=`
+[data-theme="dark"]{--bg:#141418;--bg2:#1c1c22;--bg3:#232329;--bg4:#2c2c34;--bdr:rgba(255,255,255,0.06);--bdr2:rgba(255,255,255,0.1);--accent:#FF6B35;--accent2:#FF6B3540;--accent3:#FF6B3514;--mint:#FF6B35;--mint2:#FF6B3540;--mint3:#FF6B3514;--txt:#f0ede8;--dim:#a29d93;--mute:#6f685d;--amber:#f5a623;--rose:#ef4444;--sky:#38bdf8;--violet:#a78bfa;--ff:'Sora',system-ui,sans-serif;--mono:'DM Mono',monospace;--navbg:rgba(20,20,24,0.88);--heroGrad:linear-gradient(160deg,#141418 0%,#1e1410 40%,#141418 100%);--card:rgba(28,28,34,0.7);--shadow:0 4px 24px rgba(0,0,0,.25);--shadowSm:0 2px 8px rgba(0,0,0,.15)}
+[data-theme="light"]{--bg:#faf8f5;--bg2:#ffffff;--bg3:#f2efe8;--bg4:#e8e4dc;--bdr:rgba(120,100,80,0.1);--bdr2:rgba(120,100,80,0.15);--accent:#d94e1c;--accent2:#d94e1c40;--accent3:#d94e1c10;--mint:#d94e1c;--mint2:#d94e1c40;--mint3:#d94e1c10;--txt:#1f1a16;--dim:#5a5248;--mute:#8a8378;--amber:#d4940a;--rose:#dc2626;--sky:#0284c7;--violet:#7c3aed;--ff:'Sora',system-ui,sans-serif;--mono:'DM Mono',monospace;--navbg:rgba(250,248,245,0.92);--heroGrad:linear-gradient(160deg,#faf8f5 0%,#fff4ec 40%,#faf8f5 100%);--card:rgba(255,255,255,0.8);--shadow:0 4px 24px rgba(80,60,30,.08);--shadowSm:0 2px 8px rgba(80,60,30,.05)}
 *{box-sizing:border-box;margin:0}::selection{background:var(--accent3);color:var(--accent)}
 .mega-in{animation:mIn .2s cubic-bezier(.16,1,.3,1)}@keyframes mIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
 .fade{animation:fIn .35s cubic-bezier(.16,1,.3,1)}@keyframes fIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
@@ -340,7 +340,7 @@ function CatThumb({ cat, thumbs, setThumb, removeThumb, size = 48, editable = tr
       onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
     >
       {displaySrc ? (
-        <img src={displaySrc} alt={meta?.label} onError={() => setImgErr(true)} style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} />
+        <img loading="lazy" decoding="async" src={displaySrc} alt={meta?.label} onError={() => setImgErr(true)} style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} />
       ) : (
         <span style={{ fontSize: size * 0.45, lineHeight: 1 }}>{meta?.icon || "📦"}</span>
       )}
@@ -1769,7 +1769,7 @@ function HomePage({go,browse,th}){
             {deals.slice(0,5).map(p=>{const rr=retailers(p);const url=rr[0]?.url;return <button key={p.id} onClick={()=>{if(url)window.open(url,"_blank","noopener,noreferrer");else{browse(p.c);go("search");}}} style={{display:"flex",alignItems:"center",gap:10,width:"100%",background:"var(--bg3)",borderRadius:10,padding:"10px 12px",cursor:"pointer",textAlign:"left",border:"1px solid transparent",transition:"all .2s"}}
               onMouseEnter={e=>e.currentTarget.style.borderColor="var(--amber)33"}
               onMouseLeave={e=>e.currentTarget.style.borderColor="transparent"}>
-              <div style={{width:36,height:36,borderRadius:8,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0,overflow:"hidden"}}>{p.img?<img src={p.img} alt="" style={{width:"100%",height:"100%",objectFit:"contain"}}/>:ic(p)}</div>
+              <div style={{width:36,height:36,borderRadius:8,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0,overflow:"hidden"}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt="" style={{width:"100%",height:"100%",objectFit:"contain"}}/>:ic(p)}</div>
               <div style={{flex:1,minWidth:0}}>
                 <div style={{fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
                 <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--amber)",fontWeight:600,marginTop:1}}>Save ${p.off}</div>
@@ -1792,7 +1792,7 @@ function HomePage({go,browse,th}){
             {top.slice(0,5).map(p=>{const rr=retailers(p);const url=rr[0]?.url;return <button key={p.id} onClick={()=>{if(url)window.open(url,"_blank","noopener,noreferrer");else{browse(p.c);go("search");}}} style={{display:"flex",alignItems:"center",gap:10,width:"100%",background:"var(--bg3)",borderRadius:10,padding:"10px 12px",cursor:"pointer",textAlign:"left",border:"1px solid transparent",transition:"all .2s"}}
               onMouseEnter={e=>e.currentTarget.style.borderColor="var(--sky)33"}
               onMouseLeave={e=>e.currentTarget.style.borderColor="transparent"}>
-              <div style={{width:36,height:36,borderRadius:8,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0,overflow:"hidden"}}>{p.img?<img src={p.img} alt="" style={{width:"100%",height:"100%",objectFit:"contain"}}/>:ic(p)}</div>
+              <div style={{width:36,height:36,borderRadius:8,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0,overflow:"hidden"}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt="" style={{width:"100%",height:"100%",objectFit:"contain"}}/>:ic(p)}</div>
               <div style={{flex:1,minWidth:0}}>
                 <div style={{fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
                 <Stars r={p.r} s={9}/>
@@ -1899,7 +1899,7 @@ function SearchPage({activeCat,th}){
           return <div key={p.id}>
             {isExp && <ProductSchema p={p}/>}
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`4fr ${cols.map(()=>"1fr").join(" ")} 60px 80px 70px`,gap:8,padding:"10px 12px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0,transition:"background .2s"}}>
-              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}>{p.img?<img src={p.img} alt="" style={{width:40,height:40,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:18,width:40,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2}}><span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
+              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt="" style={{width:40,height:40,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:18,width:40,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2}}><span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
               {cols.map(col=>{const v=p[col];const fmtVal=fmt(col,v,p);return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:typeof fmtVal==="string"&&fmtVal.includes("\n")?<div><div style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal.split("\n")[0]}</div><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{fmtVal.split("\n")[1]}</div></div>:<span style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal}</span>}</div>})}
               {(()=>{if(p.bench==null)return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)"}}>—</span></div>;const ratio=Math.round((p.bench/Math.max($(p)/100,1))*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:800,color:gc}}>{grade}</span></div>;})()}
               <div style={{textAlign:"right"}}>{(p.msrp&&p.msrp>$(p)||p.off>0)&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>}<div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</div>{rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{rr.length} stores</div>}</div>
@@ -1958,7 +1958,7 @@ function SearchPage({activeCat,th}){
                   {p.msrp&&p.msrp>$(p)&&<div style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:6,background:"var(--bg4)",border:"1px solid var(--bdr)",marginTop:8}}><span style={{fontSize:16}}>💰</span><div style={{flex:1}}><div style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>Below MSRP</div><div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)"}}>Was <span style={{textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span> → ${fmtPrice($(p))}</div></div><span style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--mint)"}}>{Math.round((1-$(p)/p.msrp)*100)}% off</span></div>}
                   {/* Product Image */}
                   {(p.used===true||p.condition==="used")&&<div style={{marginTop:14,background:"linear-gradient(90deg,#F59E0B 0%,#D97706 100%)",color:"#1A1A20",padding:"10px 14px",borderRadius:8,fontFamily:"var(--ff)",fontSize:12,fontWeight:700,display:"flex",alignItems:"center",gap:10,border:"1px solid #D97706"}}><span style={{fontFamily:"var(--mono)",fontSize:11,fontWeight:900,letterSpacing:1.5,background:"#1A1A20",color:"#F59E0B",padding:"3px 8px",borderRadius:4}}>USED</span><span>Pre-owned item — check seller rating, condition notes, and return policy before purchasing.</span></div>}{p.img&&<div style={{marginTop:14,background:"var(--bg4)",borderRadius:10,padding:16,display:"flex",alignItems:"center",justifyContent:"center"}}>
-                    <img src={p.img.replace('_AC_SL300_','_AC_SL500_')} alt={p.n} style={{maxWidth:"100%",maxHeight:220,objectFit:"contain",borderRadius:6}}/>
+                    <img loading="lazy" decoding="async" src={p.img.replace('_AC_SL300_','_AC_SL500_')} alt={p.n} style={{maxWidth:"100%",maxHeight:220,objectFit:"contain",borderRadius:6}}/>
                   </div>}
                 </div>
               </div>
@@ -2240,7 +2240,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
             {isExp && <ProductSchema p={p}/>}
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`2fr ${cols.map(()=>"1fr").join(" ")} 80px 80px`,gap:6,padding:"8px 10px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)08":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0}}>
               <div style={{display:"flex",alignItems:"center",gap:8,minWidth:0}}>
-                {p.img?<img src={p.img} alt="" style={{width:36,height:36,objectFit:"contain",borderRadius:6,background:"#fff",flexShrink:0}}/>:<span style={{fontSize:16}}>{meta.icon}</span>}
+                {p.img?<img loading="lazy" decoding="async" src={p.img} alt="" style={{width:36,height:36,objectFit:"contain",borderRadius:6,background:"#fff",flexShrink:0}}/>:<span style={{fontSize:16}}>{meta.icon}</span>}
                 <div style={{minWidth:0}}>
                   <div style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div>
                   <div style={{display:"flex",alignItems:"center",gap:4,marginTop:1}}>
@@ -3037,13 +3037,13 @@ function ToolsPage({th}){
 function Footer({go}){
   return <footer style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)",marginTop:60}}>
     <div style={{maxWidth:1200,margin:"0 auto",padding:"48px 32px 32px"}}>
-      <div style={{display:"grid",gridTemplateColumns:"1.5fr 1fr 1fr 1fr",gap:40,marginBottom:32}}>
+      <div style={{display:"grid",gridTemplateColumns:"1.5fr 1fr 1fr 1fr 1fr",gap:40,marginBottom:32}}>
         <div>
           <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:12}}>
             <div style={{width:32,height:32,borderRadius:8,overflow:"hidden"}}><TowerLogo size={26}/></div>
             <div><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>Pro Rig</div><div style={{fontFamily:"var(--ff)",fontSize:8,fontWeight:500,color:"var(--dim)",letterSpacing:1.5}}>BUILDER</div></div>
           </div>
-          <p style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",lineHeight:1.7,maxWidth:280}}>Compare PC hardware prices across retailers, check compatibility, and build your dream rig for less. <a href="https://prorigbuilder.com" style={{color:"var(--accent)",textDecoration:"none"}}>prorigbuilder.com</a></p>
+          <p style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",lineHeight:1.7,maxWidth:280}}>Compare PC hardware prices across retailers, check compatibility, and build your dream rig for less. <a href="https://prorigbuilder.com" style={{color:"var(--accent)",textDecoration:"underline"}}>prorigbuilder.com</a></p>
         </div>
         <div>
           <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Browse</div>
@@ -3053,8 +3053,14 @@ function Footer({go}){
         </div>
         <div>
           <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Tools</div>
-          {[{l:"PC Builder",p:"builder"},{l:"Community Builds",p:"community"},{l:"Why Us",p:"compare"},{l:"Smart Tools",p:"tools"},{l:"Browse Prices",p:"search"}].map(x=>
+          {[{l:"PC Builder",p:"builder"},{l:"Community Builds",p:"community"},{l:"Smart Tools",p:"tools"},{l:"Browse Prices",p:"search"}].map(x=>
             <button key={x.l} onClick={()=>go(x.p)} style={{display:"block",fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left"}}>{x.l}</button>
+          )}
+        </div>
+        <div>
+          <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Guides</div>
+          {[{l:"Why Pro Rig Builder",p:"compare"},{l:"vs PCPartPicker",p:"vs-pcpartpicker"},{l:"PCPartPicker Alternative",p:"pcpartpicker-alternative"},{l:"Best PC Builder Tools",p:"best-pc-builder-tools"}].map(x=>
+            <button key={x.l} onClick={()=>go(x.p)} style={{display:"block",fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left",width:"auto"}}>{x.l}</button>
           )}
         </div>
         <div>
@@ -3065,7 +3071,7 @@ function Footer({go}){
         </div>
       </div>
       <div style={{borderTop:"1px solid var(--bdr)",paddingTop:20,display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:8}}>
-        <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)"}}>© {new Date().getFullYear()} Pro Rig Builder. Built and managed by <a href="https://tiereduptech.com" target="_blank" rel="noopener noreferrer" style={{color:"var(--accent)",textDecoration:"none",fontWeight:600}}>TieredUp Tech, Inc.</a> Prices and availability subject to change.</span>
+        <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)"}}>© {new Date().getFullYear()} Pro Rig Builder. Built and managed by <a href="https://tiereduptech.com" target="_blank" rel="noopener noreferrer" style={{color:"var(--accent)",textDecoration:"underline",fontWeight:600}}>TieredUp Tech, Inc.</a> Prices and availability subject to change.</span>
         <span style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--mute)"}}>As an Amazon Associate I earn from qualifying purchases. We may earn commissions from affiliate links.</span>
       </div>
     </div>
@@ -3116,5 +3122,5 @@ export default function App(){
   }, []);
 
   const handleBrowse=c=>{setBc(c);setPage("search");};
-  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} th={th} theme={theme} toggleTheme={toggleTheme}/><div style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPage activeCat={bc} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage}/>}</div><Footer go={setPage}/></div>;
+  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} th={th} theme={theme} toggleTheme={toggleTheme}/><main style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPage activeCat={bc} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage}/>}</main><Footer go={setPage}/></div>;
 }
