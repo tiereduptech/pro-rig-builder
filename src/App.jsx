@@ -181,7 +181,148 @@ const css=`
 .card{background:var(--card,var(--bg2));border-radius:16px;border:1px solid var(--bdr);box-shadow:var(--shadowSm);transition:all .25s cubic-bezier(.16,1,.3,1)}.card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
 input[type=range]{-webkit-appearance:none;background:transparent;cursor:pointer}input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:#c8bfb2}input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--accent);margin-top:-5px;border:2px solid var(--bg2);box-shadow:0 1px 3px rgba(0,0,0,.15)}input[type=range]::-moz-range-track{height:6px;border-radius:3px;background:#c8bfb2;border:none}input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--accent);border:2px solid var(--bg);box-shadow:0 2px 8px rgba(255,107,53,.4)}select{-webkit-appearance:none}
 @media(max-width:768px){.hero-grid{grid-template-columns:1fr!important}.cat-grid{grid-template-columns:repeat(3,1fr)!important}.deals-grid{grid-template-columns:1fr!important}.how-grid{grid-template-columns:1fr!important}.search-layout{grid-template-columns:1fr!important}.footer-grid{grid-template-columns:1fr 1fr!important;gap:20px!important}.hero-stats{grid-template-columns:1fr 1fr!important}}
-@media(max-width:480px){.cat-grid{grid-template-columns:repeat(2,1fr)!important}.footer-grid{grid-template-columns:1fr!important}}`;
+@media(max-width:480px){.cat-grid{grid-template-columns:repeat(2,1fr)!important}.footer-grid{grid-template-columns:1fr!important}}
+
+/* === MOBILE RESPONSIVE === */
+html, body { overflow-x: hidden; max-width: 100vw; }
+*, *::before, *::after { max-width: 100%; }
+
+/* Images never force page wider */
+img { max-width: 100%; height: auto; }
+
+/* Tables with minWidth inline should only horizontally scroll within their own container */
+table { max-width: 100%; }
+
+/* === TABLET (<=900px) === */
+@media (max-width: 900px) {
+  /* Reduce max container padding */
+  [data-mobile-pad] { padding: 48px 20px !important; }
+
+  /* Hero 3-column grid -> 1 column */
+  .hero-grid { grid-template-columns: 1fr !important; gap: 20px !important; text-align: center; }
+
+  /* how-grid (features 1fr 1fr 1fr / 1fr 1fr) -> 1 column */
+  .how-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
+}
+
+/* === MOBILE (<=640px) === */
+@media (max-width: 640px) {
+  /* Force any wide container (maxWidth 1000-1200) to have proper mobile padding */
+  body { font-size: 14px; }
+
+  /* Headlines shrink */
+  h1 { font-size: clamp(28px, 8vw, 40px) !important; letter-spacing: -0.5px !important; line-height: 1.12 !important; }
+  h2 { font-size: clamp(22px, 6vw, 30px) !important; }
+  h3 { font-size: clamp(18px, 5vw, 22px) !important; }
+
+  /* Footer 5-col grid -> 2-col */
+  footer > div > div:first-child {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px !important;
+  }
+
+  /* All multi-col grids collapse */
+  [style*="grid-template-columns"][style*="1fr 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  [style*="grid-template-columns"][style*="1fr 1fr"]:not(footer *) {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Reduce excessive padding */
+  [style*="padding: 72px 32px"], [style*="padding: 80px 32px"], [style*="padding: 64px 32px"], [style*="padding: 56px 32px"] {
+    padding: 40px 18px !important;
+  }
+  [style*="padding: 48px 32px"] {
+    padding: 32px 18px !important;
+  }
+  [style*="padding: 32px"] {
+    padding: 18px !important;
+  }
+
+  /* Tables inside overflow-x containers scroll themselves; ensure container doesn't stretch */
+  [style*="overflow-x"] { max-width: 100%; }
+
+  /* Keep nav compact */
+  nav button, nav a { padding: 6px 10px !important; font-size: 12px !important; }
+
+  /* Nav container: allow wrapping to 2 rows if needed */
+  nav > div { flex-wrap: wrap !important; gap: 6px !important; height: auto !important; padding: 10px 14px !important; }
+
+  /* Touch targets: pad footer buttons */
+  footer button { padding: 8px 0 !important; min-height: 32px; }
+
+  /* Hero padding on narrow screens */
+  [style*="padding:\"72px 32px"] { padding: 40px 18px !important; }
+
+  /* Pills/cards in grids become stack-friendly */
+  [style*="gridTemplateColumns"] { gap: 12px !important; }
+
+  /* Large wizard/tool grids */
+  [style*="gridTemplateColumns:\"2fr"], [style*="gridTemplateColumns:\"4fr"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+/* === MOBILE FIX 2: specific grid patterns === */
+@media (max-width: 900px) {
+  /* 2-col layout with fixed sidebar (home page: 1fr 340px) */
+  [style*="1fr 340px"] {
+    grid-template-columns: 1fr !important;
+  }
+  /* category grid: repeat(3,1fr) stays 3-col on tablet */
+}
+@media (max-width: 640px) {
+  /* Category grid: repeat(3,1fr) -> 2-col on mobile */
+  [style*="repeat(3,1fr)"], [style*="repeat(3, 1fr)"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  /* Sticky sidebar: unstick on mobile so it flows with content */
+  [style*="position:\"sticky"][style*="top:80"] {
+    position: static !important;
+  }
+}
+@media (max-width: 400px) {
+  /* Category grid: single column on very narrow */
+  [style*="repeat(3,1fr)"], [style*="repeat(3, 1fr)"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* === MOBILE FIX 3: home main grid === */
+.home-main-grid {
+  grid-template-columns: 1fr 340px;
+}
+@media (max-width: 900px) {
+  .home-main-grid {
+    grid-template-columns: 1fr !important;
+    padding: 32px 16px 32px !important;
+  }
+  .home-main-grid > div:last-child {
+    position: static !important;
+  }
+  .home-cat-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+/* Global safety: never allow horizontal scroll */
+html, body { overflow-x: hidden; max-width: 100vw; }
+
+/* === MOBILE FIX 2 === */
+
+/* === EXTRA SMALL (<=400px) === */
+@media (max-width: 400px) {
+  /* Footer 2-col -> 1-col */
+  footer > div > div:first-child {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Even smaller padding */
+  [style*="padding: 40px 18px"] { padding: 28px 14px !important; }
+}
+`;
 
 /* ═══ COMPONENTS ═══ */
 function Stars({r,s=11}){return <span style={{fontSize:s,color:"var(--amber)"}}>{"★".repeat(Math.round(r))}<span style={{color:"var(--dim)",fontSize:s-1,marginLeft:2}}>{r}</span></span>}
@@ -1715,7 +1856,7 @@ function HomePage({go,browse,th}){
 
 
     {/* 2-COLUMN LAYOUT: categories (left) + deals/top sidebar (right) */}
-    <div style={{maxWidth:1200,margin:"0 auto",padding:"56px 32px 48px",display:"grid",gridTemplateColumns:"1fr 340px",gap:32,alignItems:"start"}}>
+    <div className="home-main-grid" style={{maxWidth:1200,margin:"0 auto",padding:"56px 32px 48px",display:"grid",gap:32,alignItems:"start"}}>
       {/* LEFT COLUMN — Core Components + More Categories */}
       <div>
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",marginBottom:24}}>
@@ -1725,7 +1866,7 @@ function HomePage({go,browse,th}){
           </div>
           <button onClick={()=>go("search")} style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--accent)",background:"none",border:"none",cursor:"pointer",fontWeight:600}}>View All →</button>
         </div>
-        <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:12}}>
+        <div className="home-cat-grid" style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:12}}>
           {coreCats.map(c=>{const m=CAT[c];const cnt=P.filter(p=>p.c===c).length;
             return <button key={c} onClick={()=>{browse(c);go("search");}} style={{background:"var(--bg2)",borderRadius:20,border:"1px solid var(--bdr)",padding:0,cursor:"pointer",overflow:"hidden",textAlign:"left",transition:"all .3s cubic-bezier(.16,1,.3,1)",boxShadow:"var(--shadowSm,none)"}}
               onMouseEnter={e=>{e.currentTarget.style.transform="translateY(-4px)";e.currentTarget.style.boxShadow="0 8px 32px rgba(0,0,0,.12)";}}
