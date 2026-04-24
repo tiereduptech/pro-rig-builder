@@ -354,6 +354,13 @@ html, body, #root {
   [style*="padding: 40px 18px"] { padding: 28px 14px !important; }
 }
 
+/* === MOBILE FIX 8: direct sidebar hide === */
+@media (max-width: 900px) {
+  .builder-picker-sidebar {
+    display: none !important;
+  }
+}
+
 /* === MOBILE FIX 6: builder part picker mobile layout === */
 .builder-picker-layout {
   display: grid;
@@ -2709,7 +2716,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
 
     <div className="builder-picker-layout" style={{gap:20,alignItems:"start"}}>
       {/* Sidebar filters */}
-      <div>
+      <div className="builder-picker-sidebar">
         <FG label="PRICE RANGE" open={true}>
           <div style={{display:"flex",gap:6}}>
             <input type="number" placeholder="Min" value={prMin||""} onChange={e=>setPrMin(+e.target.value||0)} style={{width:"50%",background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:4,padding:"4px 6px",fontSize:10,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none"}}/>
