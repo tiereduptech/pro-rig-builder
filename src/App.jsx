@@ -297,37 +297,47 @@ table { max-width: 100%; }
 }
 @media (max-width: 900px) {
   .home-main-grid {
-    grid-template-columns: 1fr !important;
-    padding: 32px 12px 32px !important;
+    display: block !important;
+    padding: 24px 12px !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
   }
-  .home-main-grid > * {
-    min-width: 0;
-    max-width: 100%;
-    width: 100%;
-    box-sizing: border-box;
+  .home-main-grid > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 24px !important;
+    box-sizing: border-box !important;
+    min-width: 0 !important;
   }
   .home-main-grid > div:last-child {
     position: static !important;
-    width: 100% !important;
+    top: auto !important;
   }
   .home-cat-grid {
+    display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
-  .home-cat-grid > * {
-    min-width: 0;
-    max-width: 100%;
-    overflow: hidden;
-  }
-  /* Long product names in sidebar cards must not push width */
+  .home-cat-grid > button,
   .home-main-grid button {
-    min-width: 0;
-    max-width: 100%;
-    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+  .home-main-grid img {
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
-/* Global safety: never allow horizontal scroll */
-html, body { overflow-x: hidden; max-width: 100vw; }
-body * { max-width: 100vw; }
+html, body, #root {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
+}
 
 /* === MOBILE FIX 2 === */
 
