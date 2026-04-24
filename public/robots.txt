@@ -1,2 +1,9 @@
+# Pro Rig Builder robots.txt
+# Allow all crawlers to index everything
+
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /downloads/
+
+# Sitemap location
+Sitemap: https://prorigbuilder.com/sitemap.xml

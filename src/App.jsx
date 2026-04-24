@@ -1,4 +1,5 @@
-import React, { useState, useMemo, useEffect, useRef, useCallback } from "react";
+import React, { useState, useMemo, useEffect, useRef, useCallback } from "react"
+import { Helmet } from "react-helmet-async";;
 import { PARTS as RAW_SEED_PARTS } from "./data/parts.js";
 // Hide quarantined products from browse/builder/search
 const SEED_PARTS = RAW_SEED_PARTS.filter(p => !p.needsReview);
@@ -412,6 +413,7 @@ function Nav({page,setPage,onBrowse,th,theme,toggleTheme}){
 function ScannerPage({go}) {
   return (
     <div className="fade">
+      <SEO title="Pro Rig Scanner — Free PC Hardware Scanner for Windows" description="Download our free Windows app that detects your PC hardware automatically and recommends personalized upgrades within your budget. 100% private — no data collected." canonical="https://prorigbuilder.com/#scanner"/>
       {/* ── HERO ── */}
       <div style={{background:"var(--heroGrad)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
@@ -431,7 +433,7 @@ function ScannerPage({go}) {
               onMouseLeave={e=>e.currentTarget.style.transform="none"}>
               📥 Download for Windows
             </a>
-            <button onClick={()=>go("builder")} style={{padding:"14px 32px",borderRadius:14,fontSize:15,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>
+            <button onClick={()=>go("search")} style={{padding:"14px 32px",borderRadius:14,fontSize:15,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>
               Browse Parts Manually
             </button>
           </div>
@@ -558,6 +560,7 @@ function Bullet({children}) {
 function AboutPage({go}) {
   return (
     <PageShell title="About Pro Rig Builder" subtitle="Built by PC enthusiasts who got tired of jumping between ten tabs to price a build.">
+      <SEO title="About" description="Pro Rig Builder is a modern PC components platform built by TieredUp Tech, Inc. with unique tools including a hardware scanner, FPS estimator, bottleneck calculator, and more." canonical="https://prorigbuilder.com/#about"/>
       <SectionHeading>Our Story</SectionHeading>
       <Para>
         Pro Rig Builder launched on April 15, 2026, with a simple goal: make PC building faster, smarter, and more transparent. We noticed that existing PC builder sites forced users to manually paste part numbers, guess at compatibility, and navigate stale pricing data scattered across a dozen retailer pages. We knew we could do better.
@@ -616,6 +619,7 @@ function AboutPage({go}) {
 function ContactPage() {
   return (
     <PageShell title="Contact Us" subtitle="Questions, feedback, data corrections, partnership opportunities — we'd love to hear from you.">
+      <SEO title="Contact Us" description="Contact Pro Rig Builder for support, data corrections, partnerships, or press inquiries. Email support@tiereduptech.com or write to us in Orange, Texas." canonical="https://prorigbuilder.com/#contact"/>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:24,marginBottom:32}} className="how-grid">
         <div style={{background:"var(--card)",borderRadius:12,padding:"24px 26px",border:"1px solid var(--bdr)"}}>
           <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>EMAIL</div>
@@ -662,6 +666,7 @@ function ContactPage() {
 function PrivacyPage() {
   return (
     <PageShell title="Privacy Policy" subtitle="Last updated: April 23, 2026. We respect your privacy. Here's exactly what we collect, why, and how we protect it.">
+      <SEO title="Privacy Policy" description="Pro Rig Builder's privacy policy. We use Google Analytics for anonymous traffic insights. Our scanner runs 100% locally with zero data collection." canonical="https://prorigbuilder.com/#privacy"/>
       <SectionHeading>Overview</SectionHeading>
       <Para>
         Pro Rig Builder is operated by <strong>TieredUp Tech, Inc.</strong> ("we," "us," "our"). This Privacy Policy explains how we collect, use, and safeguard information when you visit <a href="https://prorigbuilder.com" style={{color:"var(--accent)"}}>prorigbuilder.com</a> or use our related services and applications.
@@ -790,6 +795,7 @@ function PrivacyPage() {
 function TermsPage() {
   return (
     <PageShell title="Terms of Use" subtitle="Last updated: April 23, 2026. Please read these terms carefully before using our services.">
+      <SEO title="Terms of Use" description="Pro Rig Builder Terms of Use. Operated by TieredUp Tech, Inc., a Texas S-Corp. Read full terms governing use of our website and Pro Rig Scanner application." canonical="https://prorigbuilder.com/#terms"/>
       <SectionHeading>Acceptance of Terms</SectionHeading>
       <Para>
         By accessing or using <a href="https://prorigbuilder.com" style={{color:"var(--accent)"}}>prorigbuilder.com</a>, the Pro Rig Scanner application, or any related service ("Services"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree, you may not use the Services.
@@ -913,6 +919,7 @@ function TermsPage() {
 function AffiliatePage() {
   return (
     <PageShell title="Affiliate Disclosure" subtitle="Transparency first: here's exactly how Pro Rig Builder earns revenue, and how our recommendations stay honest.">
+      <SEO title="Affiliate Disclosure" description="Pro Rig Builder's FTC-compliant affiliate disclosure. We earn commissions through Amazon Associates, Best Buy, Newegg, B&H, and Antonline — at no cost to you." canonical="https://prorigbuilder.com/#affiliate"/>
       <div style={{background:"var(--accent3)",border:"1px solid var(--accent)",borderRadius:12,padding:"20px 24px",marginBottom:28}}>
         <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:10}}>
           <span style={{fontSize:22}}>💡</span>
@@ -1039,6 +1046,7 @@ function ComparePage({go}) {
 
   return (
     <div className="fade">
+      <SEO title="Why Pro Rig Builder vs PCPartPicker, Newegg & Logical Increments" description="Factual comparison of Pro Rig Builder vs PCPartPicker, Newegg PC Builder, and Logical Increments. Features, pricing, tools, and business model breakdown." canonical="https://prorigbuilder.com/#compare"/>
       {/* HERO */}
       <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
@@ -1240,6 +1248,25 @@ function ComparePage({go}) {
   );
 }
 
+// ═══ SEO COMPONENT ═════════════════════════════════════════════════
+function SEO({title, description, canonical}) {
+  const fullTitle = title ? title + " | Pro Rig Builder" : "Pro Rig Builder — Compare, Build & Save on PC Parts";
+  const desc = description || "Compare PC components across Amazon, Best Buy, Newegg & more. Free Windows hardware scanner, compatibility engine, FPS estimator, and budget-aware upgrade recommendations.";
+  const url = canonical || "https://prorigbuilder.com/";
+  return (
+    <Helmet>
+      <title>{fullTitle}</title>
+      <meta name="description" content={desc}/>
+      <link rel="canonical" href={url}/>
+      <meta property="og:title" content={fullTitle}/>
+      <meta property="og:description" content={desc}/>
+      <meta property="og:url" content={url}/>
+      <meta name="twitter:title" content={fullTitle}/>
+      <meta name="twitter:description" content={desc}/>
+    </Helmet>
+  );
+}
+
 function HomePage({go,browse,th}){
   const deals=P.filter(p=>p.cp).sort((a,b)=>(b.off||0)-(a.off||0)).slice(0,6);
   const top=P.filter(p=>p.bench>=85).sort((a,b)=>(b.bench||0)-(a.bench||0)).slice(0,6);
@@ -1251,6 +1278,7 @@ function HomePage({go,browse,th}){
   const otherCats=CATS.filter(c=>!coreCats.includes(c));
 
   return <div className="fade">
+    <SEO description="Compare PC parts across Amazon, Best Buy, Newegg & more. Free hardware scanner, compatibility engine, FPS estimator, and budget-aware upgrade recommendations." canonical="https://prorigbuilder.com/"/>
     {/* ── HERO — full-width split layout ── */}
     <div style={{background:"var(--heroGrad)",position:"relative",overflow:"hidden"}}>
       <div style={{position:"absolute",top:"20%",right:"-5%",width:600,height:600,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.06) 0%, transparent 60%)",pointerEvents:"none"}}/>
@@ -2681,7 +2709,7 @@ function Footer({go}){
         </div>
         <div>
           <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Tools</div>
-          {[{l:"PC Builder",p:"builder"},{l:"Community Builds",p:"community"},{l:"Why Us",p:"compare"},{l:"Smart Tools",p:"tools"},{l:"Price Compare",p:"search"}].map(x=>
+          {[{l:"PC Builder",p:"builder"},{l:"Community Builds",p:"community"},{l:"Why Us",p:"compare"},{l:"Smart Tools",p:"tools"},{l:"Browse Prices",p:"search"}].map(x=>
             <button key={x.l} onClick={()=>go(x.p)} style={{display:"block",fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left"}}>{x.l}</button>
           )}
         </div>

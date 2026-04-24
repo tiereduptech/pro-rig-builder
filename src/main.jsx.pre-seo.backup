@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import { HelmetProvider } from 'react-helmet-async'
 
 // Polyfill window.storage for local dev (the Claude artifact has persistent storage,
 // but locally we'll use localStorage as a fallback)
@@ -34,8 +33,6 @@ if (!window.storage) {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HelmetProvider>
-      <App />
-    </HelmetProvider>
+    <App />
   </React.StrictMode>
 )
