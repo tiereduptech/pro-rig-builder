@@ -2096,6 +2096,22 @@ function HomePage({go,browse,th}){
 
 /* ═══ SEARCH PAGE ═══ */
 
+/* === BRAND RESOLVER === */
+// For CPUs, derives real CPU brand (Intel/AMD) from product name
+// even when seller brand (b field) is something like "Micro Center" or "INLAND"
+function resolveBrand(p) {
+  if (!p) return '';
+  if (p.c !== 'CPU') return p.b || '';
+  // If already Intel or AMD, use it
+  if (p.b === 'Intel' || p.b === 'AMD') return p.b;
+  // Parse name for CPU brand markers
+  const n = (p.n || '').toLowerCase();
+  if (/\bintel\b|\bcore\s*(ultra\s*)?i[3579]|\bxeon\b|\bpentium\b|\bceleron\b/i.test(n)) return 'Intel';
+  if (/\bamd\b|\bryzen\b|\bthreadripper\b|\bepyc\b|\bathlon\b/i.test(n)) return 'AMD';
+  return p.b || '';
+}
+/* === END BRAND RESOLVER === */
+
 /* === CATEGORY GUIDES === */
 const CATEGORY_GUIDES = {
   CPU: {
@@ -2242,14 +2258,14 @@ function MobileSearchPage({activeCat,th}){
   useEffect(()=>{if(activeCat)setCat(activeCat);},[activeCat]);
 
   const catP=cat?P.filter(p=>p.c===cat):P;
-  const allBr=[...new Set(catP.map(p=>p.b))].sort();
+  const allBr=[...new Set(catP.map(p=>resolveBrand(p)).filter(Boolean))].sort();
   const allMarkets=[...new Set(catP.flatMap(p=>p.deals&&typeof p.deals==="object"?Object.keys(p.deals).filter(k=>p.deals[k]&&typeof p.deals[k]==="object"&&p.deals[k].price):[]))].sort();
   const prMx=Math.max(...catP.map(p=>$(p)),100);
 
   const list=useMemo(()=>{
     let r=catP;
     if(q)r=r.filter(p=>p.n.toLowerCase().includes(q.toLowerCase())||p.b.toLowerCase().includes(q.toLowerCase()));
-    if(brands.length)r=r.filter(p=>brands.includes(p.b));
+    if(brands.length)r=r.filter(p=>brands.includes(resolveBrand(p)));
     if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price));
     r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);
     if(minR)r=r.filter(p=>p.r>=minR);
@@ -2417,7 +2433,7 @@ function MobileSearchPage({activeCat,th}){
           <div style={{display:"flex",flexWrap:"wrap",gap:6}}>
             {allBr.map(b=>{
               const on=brands.includes(b);
-              return <button key={b} onClick={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} style={{background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:18,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:12,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{b} <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)",marginLeft:2}}>{catP.filter(p=>p.b===b).length}</span></button>;
+              return <button key={b} onClick={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} style={{background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:18,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:12,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{b} <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)",marginLeft:2}}>{catP.filter(p=>resolveBrand(p)===b).length}</span></button>;
             })}
           </div>
         </div>}
@@ -2471,9 +2487,9 @@ function SearchPage({activeCat,th}){
   const [showAll,setShowAll]=useState({});
   useEffect(()=>{if(activeCat)setCat(activeCat);},[activeCat]);
   const sel=c=>{setCat(c);setBrands([]);setMarketplaces([]);setSf({});setQ("");setMaxPr(5000);setMinPr(0);setMinR(0);setCpO(false);};
-  const catP=cat?P.filter(p=>p.c===cat):P;const allBr=[...new Set(catP.map(p=>p.b))].sort();const allMarkets=[...new Set(catP.flatMap(p=>p.deals&&typeof p.deals==="object"?Object.keys(p.deals).filter(k=>p.deals[k]&&typeof p.deals[k]==="object"&&p.deals[k].price):[]))].sort();const cols=cat?(CAT[cat]?.cols||[]):[];const prMx=Math.max(...catP.map(p=>$(p)),100);
+  const catP=cat?P.filter(p=>p.c===cat):P;const allBr=[...new Set(catP.map(p=>resolveBrand(p)).filter(Boolean))].sort();const allMarkets=[...new Set(catP.flatMap(p=>p.deals&&typeof p.deals==="object"?Object.keys(p.deals).filter(k=>p.deals[k]&&typeof p.deals[k]==="object"&&p.deals[k].price):[]))].sort();const cols=cat?(CAT[cat]?.cols||[]):[];const prMx=Math.max(...catP.map(p=>$(p)),100);
   const togSf=(col,val)=>setSf(pv=>{const c=pv[col]||[];return{...pv,[col]:c.includes(val)?c.filter(v=>v!==val):[...c,val]};});
-  const list=useMemo(()=>{let r=catP;if(q)r=r.filter(p=>p.n.toLowerCase().includes(q.toLowerCase())||p.b.toLowerCase().includes(q.toLowerCase()));if(brands.length)r=r.filter(p=>brands.includes(p.b));if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price));r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);if(minR)r=r.filter(p=>p.r>=minR);if(cpO)r=r.filter(p=>p.cp);Object.entries(sf).forEach(([key,vals])=>{if(key.endsWith("_max")){const field=key.replace("_max","");r=r.filter(p=>p[field]==null||p[field]<=vals);}else if(Array.isArray(vals)&&vals.length){r=r.filter(p=>{const pv=String(p[key]!=null?!!p[key]?p[key]:"false":"false");const cfg=cat&&CAT[cat]?.filters?.[key];const ev=cfg?.extract?cfg.extract(p):null;return vals.includes(pv)||vals.includes(String(p[key]))||(ev!=null&&vals.includes(ev));});}});const [sk,sd]=sort.split("-");r=[...r].sort((a,b)=>{const va=sk==="price"?$(a):sk==="rating"?a.r:sk==="value"?(a.value!=null?a.value:(a.bench||0)/Math.max($(a)/100,1)):(a.bench||0);const vb=sk==="price"?$(b):sk==="rating"?b.r:sk==="value"?(b.value!=null?b.value:(b.bench||0)/Math.max($(b)/100,1)):(b.bench||0);return sd==="asc"?va-vb:vb-va;});return r;},[cat,q,brands,marketplaces,maxPr,minPr,minR,cpO,sf,sort]);
+  const list=useMemo(()=>{let r=catP;if(q)r=r.filter(p=>p.n.toLowerCase().includes(q.toLowerCase())||p.b.toLowerCase().includes(q.toLowerCase()));if(brands.length)r=r.filter(p=>brands.includes(resolveBrand(p)));if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price));r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);if(minR)r=r.filter(p=>p.r>=minR);if(cpO)r=r.filter(p=>p.cp);Object.entries(sf).forEach(([key,vals])=>{if(key.endsWith("_max")){const field=key.replace("_max","");r=r.filter(p=>p[field]==null||p[field]<=vals);}else if(Array.isArray(vals)&&vals.length){r=r.filter(p=>{const pv=String(p[key]!=null?!!p[key]?p[key]:"false":"false");const cfg=cat&&CAT[cat]?.filters?.[key];const ev=cfg?.extract?cfg.extract(p):null;return vals.includes(pv)||vals.includes(String(p[key]))||(ev!=null&&vals.includes(ev));});}});const [sk,sd]=sort.split("-");r=[...r].sort((a,b)=>{const va=sk==="price"?$(a):sk==="rating"?a.r:sk==="value"?(a.value!=null?a.value:(a.bench||0)/Math.max($(a)/100,1)):(a.bench||0);const vb=sk==="price"?$(b):sk==="rating"?b.r:sk==="value"?(b.value!=null?b.value:(b.bench||0)/Math.max($(b)/100,1)):(b.bench||0);return sd==="asc"?va-vb:vb-va;});return r;},[cat,q,brands,marketplaces,maxPr,minPr,minR,cpO,sf,sort]);
   const ac=[brands.length,marketplaces.length,cpO,minR,maxPr<prMx,minPr>0,...Object.values(sf).map(v=>v.length)].filter(Boolean).length;
 
   if(!cat) return <CategoryBrowse sel={sel} th={th} CATS={CATS} CAT={CAT} P={P} CatThumb={CatThumb}/>;
@@ -2493,7 +2509,7 @@ function SearchPage({activeCat,th}){
           <input type="range" min={0} max={Math.ceil(prMx/50)*50} value={Math.min(maxPr,Math.ceil(prMx/50)*50)} onChange={e=>setMaxPr(+e.target.value)} style={{width:"100%"}}/>
           <div style={{display:"flex",justifyContent:"space-between",marginTop:2}}><span style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--mute)"}}>${minPr}</span><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)",fontWeight:600}}>to ${maxPr>=5000?"∞":"$"+maxPr}</span></div>
         </FG>
-        <FG label="BRAND">{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={catP.filter(p=>p.b===b).length}/>)}</FG>
+        <FG label="BRAND">{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={catP.filter(p=>resolveBrand(p)===b).length}/>)}</FG>
         {allMarkets.length>0&&<FG label="MARKETPLACE" open={true}>{allMarkets.map(m=>{const cap=m.charAt(0).toUpperCase()+m.slice(1);const cnt=catP.filter(p=>p.deals&&typeof p.deals==="object"&&p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price).length;return <Chk key={m} label={cap} checked={marketplaces.includes(m)} onChange={()=>setMarketplaces(p=>p.includes(m)?p.filter(x=>x!==m):[...p,m])} count={cnt}/>;})}</FG>}
         <FG label="RATING">{[4.5,4,0].map(rv=><Chk key={rv} label={rv?`${rv}+ ★`:"All"} checked={minR===rv} onChange={()=>setMinR(minR===rv?0:rv)}/>)}</FG>
         {/* Category-specific filters */}
@@ -2819,12 +2835,12 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
   const [prMax,setPrMax]=useState(99999);
   const [expanded,setExpanded]=useState(null);
 
-  const allBr=[...new Set(compatList.map(p=>p.b))].sort();
+  const allBr=[...new Set(compatList.map(p=>resolveBrand(p)).filter(Boolean))].sort();
   const prMx=Math.max(...compatList.map(p=>$(p)),100);
 
   let list=compatList.filter(p=>{
     if(q&&!p.n.toLowerCase().includes(q.toLowerCase())&&!p.b.toLowerCase().includes(q.toLowerCase()))return false;
-    if(brands.length&&!brands.includes(p.b))return false;
+    if(brands.length&&!brands.includes(resolveBrand(p)))return false;
     if(minR&&p.r<minR)return false;
     if($(p)<prMin||$(p)>prMax)return false;
     return true;
@@ -2856,7 +2872,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
             <input type="number" placeholder="Max" value={prMax>=99999?"":prMax} onChange={e=>setPrMax(+e.target.value||99999)} style={{width:"50%",background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:4,padding:"4px 6px",fontSize:10,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none"}}/>
           </div>
         </FG>
-        <FG label="BRAND">{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={compatList.filter(p=>p.b===b).length}/>)}</FG>
+        <FG label="BRAND">{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={compatList.filter(p=>resolveBrand(p)===b).length}/>)}</FG>
         <FG label="RATING">{[4.5,4,0].map(rv=><Chk key={rv} label={rv?`${rv}+ ★`:"All"} checked={minR===rv} onChange={()=>setMinR(minR===rv?0:rv)}/>)}</FG>
         {/* Dynamic spec filters based on category cols */}
         {cols.filter(col=>col!=="bench").map(col=>{
@@ -2954,12 +2970,12 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti})
   const [expanded,setExpanded]=useState(null);
   const [filtersOpen,setFiltersOpen]=useState(false);
 
-  const allBr=[...new Set(compatList.map(p=>p.b))].sort();
+  const allBr=[...new Set(compatList.map(p=>resolveBrand(p)).filter(Boolean))].sort();
   const prMx=Math.max(...compatList.map(p=>$(p)),100);
 
   let list=compatList.filter(p=>{
     if(q&&!p.n.toLowerCase().includes(q.toLowerCase())&&!p.b.toLowerCase().includes(q.toLowerCase()))return false;
-    if(brands.length&&!brands.includes(p.b))return false;
+    if(brands.length&&!brands.includes(resolveBrand(p)))return false;
     if(minR&&p.r<minR)return false;
     if($(p)<prMin||$(p)>prMax)return false;
     return true;
@@ -3072,7 +3088,7 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti})
           <div style={{display:"flex",flexWrap:"wrap",gap:6}}>
             {allBr.map(b=>{
               const on=brands.includes(b);
-              return <button key={b} onClick={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} style={{background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:18,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:12,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{b} <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)",marginLeft:2}}>{compatList.filter(p=>p.b===b).length}</span></button>;
+              return <button key={b} onClick={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} style={{background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:18,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:12,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{b} <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)",marginLeft:2}}>{compatList.filter(p=>resolveBrand(p)===b).length}</span></button>;
             })}
           </div>
         </div>}
