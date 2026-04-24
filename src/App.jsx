@@ -298,17 +298,36 @@ table { max-width: 100%; }
 @media (max-width: 900px) {
   .home-main-grid {
     grid-template-columns: 1fr !important;
-    padding: 32px 16px 32px !important;
+    padding: 32px 12px 32px !important;
+  }
+  .home-main-grid > * {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
   .home-main-grid > div:last-child {
     position: static !important;
+    width: 100% !important;
   }
   .home-cat-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  .home-cat-grid > * {
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  /* Long product names in sidebar cards must not push width */
+  .home-main-grid button {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 /* Global safety: never allow horizontal scroll */
 html, body { overflow-x: hidden; max-width: 100vw; }
+body * { max-width: 100vw; }
 
 /* === MOBILE FIX 2 === */
 
