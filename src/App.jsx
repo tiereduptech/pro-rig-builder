@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useRef, useCallback } from "react";
+import React, { useState, useMemo, useEffect, useRef, useCallback } from "react";
 import { PARTS as RAW_SEED_PARTS } from "./data/parts.js";
 // Hide quarantined products from browse/builder/search
 const SEED_PARTS = RAW_SEED_PARTS.filter(p => !p.needsReview);
