@@ -2096,6 +2096,83 @@ function HomePage({go,browse,th}){
 
 /* ═══ SEARCH PAGE ═══ */
 
+/* === SMART SEARCH === */
+// Build a search blob from a product: name, brand, and relevant spec fields
+function buildSearchBlob(p) {
+  const parts = [
+    p.n || '',
+    p.b || '',
+    p.fullTitle || '',
+    p.model || '',
+    p.asin || '',
+    p.mpn || '',
+    // CPU specs
+    p.socket || '', p.arch || '', p.memType || '',
+    p.cores != null ? p.cores + 'core ' + p.cores + 'c' : '',
+    p.threads != null ? p.threads + 'thread ' + p.threads + 't' : '',
+    // GPU specs
+    p.vram != null ? p.vram + 'gb' : '',
+    // RAM specs
+    p.cap != null ? p.cap + 'gb' : '',
+    p.speed != null ? p.speed + 'mhz ' + p.speed : '',
+    p.cl != null ? 'cl' + p.cl : '',
+    p.sticks != null ? p.sticks + 'x ' + p.sticks + 'stick' : '',
+    // Storage
+    p.storageType || '', p.interface || '',
+    p.ff || '',
+    // Mobo
+    p.chipset || '',
+    // PSU
+    p.watts != null ? p.watts + 'w ' + p.watts + 'watt' : '',
+    p.eff || '',
+    // Monitor
+    p.res || '', p.refresh != null ? p.refresh + 'hz' : '',
+    p.panel || '',
+  ];
+  return parts.join(' ').toLowerCase();
+}
+
+// Synonyms: query token -> alternate(s). Both directions.
+const SEARCH_SYNONYMS = {
+  'ram': 'memory',
+  'memory': 'ram',
+  'gpu': 'graphics card video',
+  'graphics': 'gpu video',
+  'video': 'gpu graphics',
+  'cpu': 'processor',
+  'processor': 'cpu',
+  'mobo': 'motherboard',
+  'motherboard': 'mobo',
+  'psu': 'power supply',
+  'ssd': 'solid state nvme',
+  'hdd': 'hard drive',
+  'mhz': 'mhz',
+};
+
+// Match a single token against the blob, with synonym fallback
+function tokenMatches(token, blob) {
+  if (blob.includes(token)) return true;
+  const syn = SEARCH_SYNONYMS[token];
+  if (syn) {
+    for (const alt of syn.split(' ')) {
+      if (blob.includes(alt)) return true;
+    }
+  }
+  return false;
+}
+
+// Main smart match: returns true if all tokens in query match the product
+function smartMatch(p, query) {
+  if (!query) return true;
+  const blob = buildSearchBlob(p);
+  // Split query on whitespace, dashes, commas, slashes, parens
+  const tokens = query.toLowerCase().split(/[\s\-,\/\(\)]+/).filter(Boolean);
+  if (tokens.length === 0) return true;
+  // Every token must match somewhere
+  return tokens.every(t => tokenMatches(t, blob));
+}
+/* === END SMART SEARCH === */
+
 /* === BRAND RESOLVER === */
 // For CPUs, derives real CPU brand (Intel/AMD) from product name
 // even when seller brand (b field) is something like "Micro Center" or "INLAND"
@@ -2264,7 +2341,7 @@ function MobileSearchPage({activeCat,th}){
 
   const list=useMemo(()=>{
     let r=catP;
-    if(q)r=r.filter(p=>p.n.toLowerCase().includes(q.toLowerCase())||p.b.toLowerCase().includes(q.toLowerCase()));
+    if(q)r=r.filter(p=>smartMatch(p,q));
     if(brands.length)r=r.filter(p=>brands.includes(resolveBrand(p)));
     if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price));
     r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);
@@ -2489,7 +2566,7 @@ function SearchPage({activeCat,th}){
   const sel=c=>{setCat(c);setBrands([]);setMarketplaces([]);setSf({});setQ("");setMaxPr(5000);setMinPr(0);setMinR(0);setCpO(false);};
   const catP=cat?P.filter(p=>p.c===cat):P;const allBr=[...new Set(catP.map(p=>resolveBrand(p)).filter(Boolean))].sort();const allMarkets=[...new Set(catP.flatMap(p=>p.deals&&typeof p.deals==="object"?Object.keys(p.deals).filter(k=>p.deals[k]&&typeof p.deals[k]==="object"&&p.deals[k].price):[]))].sort();const cols=cat?(CAT[cat]?.cols||[]):[];const prMx=Math.max(...catP.map(p=>$(p)),100);
   const togSf=(col,val)=>setSf(pv=>{const c=pv[col]||[];return{...pv,[col]:c.includes(val)?c.filter(v=>v!==val):[...c,val]};});
-  const list=useMemo(()=>{let r=catP;if(q)r=r.filter(p=>p.n.toLowerCase().includes(q.toLowerCase())||p.b.toLowerCase().includes(q.toLowerCase()));if(brands.length)r=r.filter(p=>brands.includes(resolveBrand(p)));if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price));r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);if(minR)r=r.filter(p=>p.r>=minR);if(cpO)r=r.filter(p=>p.cp);Object.entries(sf).forEach(([key,vals])=>{if(key.endsWith("_max")){const field=key.replace("_max","");r=r.filter(p=>p[field]==null||p[field]<=vals);}else if(Array.isArray(vals)&&vals.length){r=r.filter(p=>{const pv=String(p[key]!=null?!!p[key]?p[key]:"false":"false");const cfg=cat&&CAT[cat]?.filters?.[key];const ev=cfg?.extract?cfg.extract(p):null;return vals.includes(pv)||vals.includes(String(p[key]))||(ev!=null&&vals.includes(ev));});}});const [sk,sd]=sort.split("-");r=[...r].sort((a,b)=>{const va=sk==="price"?$(a):sk==="rating"?a.r:sk==="value"?(a.value!=null?a.value:(a.bench||0)/Math.max($(a)/100,1)):(a.bench||0);const vb=sk==="price"?$(b):sk==="rating"?b.r:sk==="value"?(b.value!=null?b.value:(b.bench||0)/Math.max($(b)/100,1)):(b.bench||0);return sd==="asc"?va-vb:vb-va;});return r;},[cat,q,brands,marketplaces,maxPr,minPr,minR,cpO,sf,sort]);
+  const list=useMemo(()=>{let r=catP;if(q)r=r.filter(p=>smartMatch(p,q));if(brands.length)r=r.filter(p=>brands.includes(resolveBrand(p)));if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price));r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);if(minR)r=r.filter(p=>p.r>=minR);if(cpO)r=r.filter(p=>p.cp);Object.entries(sf).forEach(([key,vals])=>{if(key.endsWith("_max")){const field=key.replace("_max","");r=r.filter(p=>p[field]==null||p[field]<=vals);}else if(Array.isArray(vals)&&vals.length){r=r.filter(p=>{const pv=String(p[key]!=null?!!p[key]?p[key]:"false":"false");const cfg=cat&&CAT[cat]?.filters?.[key];const ev=cfg?.extract?cfg.extract(p):null;return vals.includes(pv)||vals.includes(String(p[key]))||(ev!=null&&vals.includes(ev));});}});const [sk,sd]=sort.split("-");r=[...r].sort((a,b)=>{const va=sk==="price"?$(a):sk==="rating"?a.r:sk==="value"?(a.value!=null?a.value:(a.bench||0)/Math.max($(a)/100,1)):(a.bench||0);const vb=sk==="price"?$(b):sk==="rating"?b.r:sk==="value"?(b.value!=null?b.value:(b.bench||0)/Math.max($(b)/100,1)):(b.bench||0);return sd==="asc"?va-vb:vb-va;});return r;},[cat,q,brands,marketplaces,maxPr,minPr,minR,cpO,sf,sort]);
   const ac=[brands.length,marketplaces.length,cpO,minR,maxPr<prMx,minPr>0,...Object.values(sf).map(v=>v.length)].filter(Boolean).length;
 
   if(!cat) return <CategoryBrowse sel={sel} th={th} CATS={CATS} CAT={CAT} P={P} CatThumb={CatThumb}/>;
@@ -2839,7 +2916,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
   const prMx=Math.max(...compatList.map(p=>$(p)),100);
 
   let list=compatList.filter(p=>{
-    if(q&&!p.n.toLowerCase().includes(q.toLowerCase())&&!p.b.toLowerCase().includes(q.toLowerCase()))return false;
+    if(q&&!smartMatch(p,q))return false;
     if(brands.length&&!brands.includes(resolveBrand(p)))return false;
     if(minR&&p.r<minR)return false;
     if($(p)<prMin||$(p)>prMax)return false;
@@ -2974,7 +3051,7 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti})
   const prMx=Math.max(...compatList.map(p=>$(p)),100);
 
   let list=compatList.filter(p=>{
-    if(q&&!p.n.toLowerCase().includes(q.toLowerCase())&&!p.b.toLowerCase().includes(q.toLowerCase()))return false;
+    if(q&&!smartMatch(p,q))return false;
     if(brands.length&&!brands.includes(resolveBrand(p)))return false;
     if(minR&&p.r<minR)return false;
     if($(p)<prMin||$(p)>prMax)return false;
