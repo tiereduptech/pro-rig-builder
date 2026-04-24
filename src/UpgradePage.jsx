@@ -149,7 +149,7 @@ const GPU_BASELINE_BENCH = {
   "UHD GRAPHICS": 2, "IRIS XE": 4, "RADEON GRAPHICS": 6, "VEGA": 8,
 };
 
-const CPU_BASELINE_BENCH = {
+const CPU_BASELINE_INTEL = {
   "6100": 8, "6300": 10, "6500": 13, "6600": 15, "6700": 18, "6700K": 19,
   "7100": 9, "7300": 11, "7400": 13, "7500": 15, "7600": 17, "7700": 19, "7700K": 21,
   "8100": 12, "8300": 14, "8400": 17, "8500": 19, "8600": 21, "8600K": 23, "8700": 25, "8700K": 27,
@@ -160,6 +160,9 @@ const CPU_BASELINE_BENCH = {
   "13400": 35, "13600K": 53, "13700K": 65, "13900K": 83,
   "14400": 36, "14600K": 78, "14700K": 74, "14900K": 83,
   "245K": 62, "245KF": 62, "265K": 70, "265KF": 70, "285K": 85,
+};
+
+const CPU_BASELINE_AMD = {
   "1600": 12, "1700": 14, "1800X": 16, "1600X": 13,
   "2600": 15, "2700": 18, "2700X": 20,
   "3600": 22, "3700X": 28, "3800X": 30, "3900X": 38, "3950X": 45,
@@ -168,7 +171,6 @@ const CPU_BASELINE_BENCH = {
   "7600": 38, "7600X": 40, "7700": 48, "7700X": 51, "7800X3D": 70,
   "7900": 68, "7900X": 73, "7950X": 89, "7950X3D": 88,
   "9600X": 45, "9700X": 53, "9800X3D": 80, "9900X": 78, "9900X3D": 85,
-  "9950X": 94, "9950X3D": 100,
 };
 
 function lookupGPUBaseline(name) {
@@ -180,14 +182,16 @@ function lookupGPUBaseline(name) {
   }
   return bestKey ? { bench: GPU_BASELINE_BENCH[bestKey], name: bestKey } : null;
 }
-function lookupCPUBaseline(model) {
+function lookupCPUBaseline(model, brand) {
   if (!model) return null;
   const m = model.toUpperCase();
+  const b = (brand || "").toUpperCase();
+  const table = (b.includes("AMD") || b.includes("RYZEN")) ? CPU_BASELINE_AMD : CPU_BASELINE_INTEL;
   let bestKey = null;
-  for (const key of Object.keys(CPU_BASELINE_BENCH)) {
+  for (const key of Object.keys(table)) {
     if ((m.startsWith(key) || m === key) && (!bestKey || key.length > bestKey.length)) bestKey = key;
   }
-  return bestKey ? { bench: CPU_BASELINE_BENCH[bestKey], name: bestKey } : null;
+  return bestKey ? { bench: table[bestKey], name: bestKey } : null;
 }
 
 // ─── CATALOG LOOKUP ─────────────────────────────────────────────────
@@ -210,7 +214,7 @@ function findCatalogMatch(type, scannerName) {
     if (!cpu) return null;
     const hit = pool.find(p => p.n.toUpperCase().includes(cpu.model) && p.bench != null);
     if (hit) return hit;
-    const b = lookupCPUBaseline(cpu.model);
+    const b = lookupCPUBaseline(cpu.model, cpu.brand);
     const inferredSocket = inferCPUSocket(cpu.model, cpu.brand);
     if (b && b.bench > 0) return { n: "Current: " + b.name, bench: b.bench, socket: inferredSocket, brand: cpu.brand, isBaseline: true };
     return null;
