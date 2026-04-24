@@ -1248,6 +1248,47 @@ function ComparePage({go}) {
   );
 }
 
+// ═══ PRODUCT SCHEMA HELPER ═════════════════════════════════════════
+// Emits Product JSON-LD via Helmet when a product is expanded (viewed in detail).
+// Google crawler sees this structured data for rich snippets in search results.
+function ProductSchema({p}) {
+  if (!p) return null;
+
+  const price = p.deals && typeof p.deals === "object"
+    ? Math.min(...Object.values(p.deals).filter(d => d && typeof d === "object" && d.price).map(d => d.price), p.pr || 9999)
+    : (p.pr || 0);
+
+  const retailers = p.deals && typeof p.deals === "object"
+    ? Object.entries(p.deals).filter(([_, d]) => d && typeof d === "object" && d.url)
+    : [];
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": p.n,
+    "brand": {"@type": "Brand", "name": p.b || "Unknown"},
+    "category": p.c,
+    ...(p.img ? {"image": p.img} : {}),
+    ...(p.r ? {"aggregateRating": {"@type": "AggregateRating", "ratingValue": p.r, "reviewCount": 10, "bestRating": 5}} : {}),
+    "offers": retailers.length > 0
+      ? retailers.map(([retailer, d]) => ({
+          "@type": "Offer",
+          "url": d.url,
+          "price": d.price,
+          "priceCurrency": "USD",
+          "availability": d.inStock !== false ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+          "seller": {"@type": "Organization", "name": retailer.charAt(0).toUpperCase() + retailer.slice(1)}
+        }))
+      : (price > 0 ? {"@type": "Offer", "price": price, "priceCurrency": "USD", "availability": "https://schema.org/InStock"} : undefined)
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    </Helmet>
+  );
+}
+
 // ═══ SEO COMPONENT ═════════════════════════════════════════════════
 function SEO({title, description, canonical, breadcrumb, faq}) {
   const fullTitle = title ? title + " | Pro Rig Builder" : "Pro Rig Builder — Compare, Build & Save on PC Parts";
@@ -1856,6 +1897,7 @@ function SearchPage({activeCat,th}){
           const isExp=expanded===p.id;
           const rr=retailers(p);
           return <div key={p.id}>
+            {isExp && <ProductSchema p={p}/>}
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`4fr ${cols.map(()=>"1fr").join(" ")} 60px 80px 70px`,gap:8,padding:"10px 12px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0,transition:"background .2s"}}>
               <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}>{p.img?<img src={p.img} alt="" style={{width:40,height:40,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:18,width:40,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2}}><span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
               {cols.map(col=>{const v=p[col];const fmtVal=fmt(col,v,p);return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:typeof fmtVal==="string"&&fmtVal.includes("\n")?<div><div style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal.split("\n")[0]}</div><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{fmtVal.split("\n")[1]}</div></div>:<span style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal}</span>}</div>})}
@@ -2195,6 +2237,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
         {list.map((p,i)=>{
           const isExp=expanded===p.id;
           return <div key={p.id}>
+            {isExp && <ProductSchema p={p}/>}
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`2fr ${cols.map(()=>"1fr").join(" ")} 80px 80px`,gap:6,padding:"8px 10px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)08":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0}}>
               <div style={{display:"flex",alignItems:"center",gap:8,minWidth:0}}>
                 {p.img?<img src={p.img} alt="" style={{width:36,height:36,objectFit:"contain",borderRadius:6,background:"#fff",flexShrink:0}}/>:<span style={{fontSize:16}}>{meta.icon}</span>}
