@@ -300,7 +300,7 @@ table { max-width: 100%; }
 @media (max-width: 900px) {
   .home-main-grid {
     display: block !important;
-    padding: 24px 12px !important;
+    padding: 24px 18px !important;
     max-width: 100vw !important;
     box-sizing: border-box !important;
   }
