@@ -470,10 +470,10 @@ function ScannerPage({go}) {
         </div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:24}} className="how-grid">
           {[
-            {i:"🔍",t:"No guessing required",d:"You don\'t need to know your CPU or GPU model. The scanner reads it directly from your PC. Accurate every time."},
-            {i:"🎯",t:"Budget-aware recommendations",d:"Tell us your budget — we\'ll recommend the biggest performance upgrade for the money, including motherboard/RAM if your platform is outdated."},
+            {i:"🔍",t:"No guessing required",d:"You don't need to know your CPU or GPU model. The scanner reads it directly from your PC. Accurate every time."},
+            {i:"🎯",t:"Budget-aware recommendations",d:"Tell us your budget — we'll recommend the biggest performance upgrade for the money, including motherboard/RAM if your platform is outdated."},
             {i:"🔒",t:"100% private by design",d:"Scans run entirely on your PC. We never see, store, or transmit your hardware details anywhere. Your data never leaves your machine. Period."},
-            {i:"💎",t:"Built exclusively here",d:"You won\'t find this feature on PCPartPicker, Newegg, or any other builder site. Pro Rig Builder is the only one offering it."},
+            {i:"💎",t:"Built exclusively here",d:"You won't find this feature on PCPartPicker, Newegg, or any other builder site. Pro Rig Builder is the only one offering it."},
           ].map(f=><div key={f.t} style={{background:"var(--card)",borderRadius:14,padding:"24px 22px",border:"1px solid var(--bdr)",display:"flex",gap:16,alignItems:"flex-start"}}>
             <div style={{fontSize:32,lineHeight:1}}>{f.i}</div>
             <div>
@@ -520,6 +520,469 @@ function ScannerPage({go}) {
         </div>
       </div>
     </div>
+  );
+}
+
+// ═══ STATIC CONTENT PAGES (About, Contact, Privacy, Terms, Affiliate) ═══
+
+function PageShell({title, subtitle, children}) {
+  return (
+    <div className="fade">
+      <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)"}}>
+        <div style={{maxWidth:860,margin:"0 auto",padding:"56px 32px 40px"}}>
+          <h1 style={{fontFamily:"var(--ff)",fontSize:40,fontWeight:800,color:"var(--txt)",letterSpacing:-1,lineHeight:1.1,marginBottom:subtitle?12:0}}>{title}</h1>
+          {subtitle && <p style={{fontFamily:"var(--ff)",fontSize:16,color:"var(--dim)",lineHeight:1.6,maxWidth:640}}>{subtitle}</p>}
+        </div>
+      </div>
+      <div style={{maxWidth:860,margin:"0 auto",padding:"48px 32px 64px"}}>
+        {children}
+      </div>
+    </div>
+  );
+}
+
+function SectionHeading({children}) {
+  return <h2 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:700,color:"var(--txt)",letterSpacing:-0.3,marginTop:36,marginBottom:14}}>{children}</h2>;
+}
+function SubHeading({children}) {
+  return <h3 style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)",marginTop:22,marginBottom:8}}>{children}</h3>;
+}
+function Para({children}) {
+  return <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:14}}>{children}</p>;
+}
+function Bullet({children}) {
+  return <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:8}}>{children}</li>;
+}
+
+// ─── ABOUT PAGE ───────────────────────────────────────────────────
+function AboutPage({go}) {
+  return (
+    <PageShell title="About Pro Rig Builder" subtitle="Built by PC enthusiasts who got tired of jumping between ten tabs to price a build.">
+      <SectionHeading>Our Story</SectionHeading>
+      <Para>
+        Pro Rig Builder launched on April 15, 2026, with a simple goal: make PC building faster, smarter, and more transparent. We noticed that existing PC builder sites forced users to manually paste part numbers, guess at compatibility, and navigate stale pricing data scattered across a dozen retailer pages. We knew we could do better.
+      </Para>
+      <Para>
+        So we built Pro Rig Builder from the ground up — with live multi-retailer pricing, an automated compatibility engine, benchmark-aware upgrade recommendations, and a proprietary hardware scanner app you won't find anywhere else. Every feature exists because a PC builder asked "why isn't there a tool that just does this for me?"
+      </Para>
+
+      <SectionHeading>What Makes Us Different</SectionHeading>
+      <Para>
+        We're the only PC builder platform that combines live retailer pricing, real compatibility validation, and a standalone hardware scanner in one place. Features unique to Pro Rig Builder include:
+      </Para>
+      <ul style={{paddingLeft:22,marginBottom:14}}>
+        <Bullet><strong>Pro Rig Scanner</strong> — our free Windows app detects your hardware and generates upgrade recommendations tailored to your budget. No one else offers this.</Bullet>
+        <Bullet><strong>USED product flags</strong> — we clearly mark pre-owned listings so you know what you're buying before you click.</Bullet>
+        <Bullet><strong>Budget-aware upgrade recommendations</strong> — tell us your budget and we'll find the biggest performance uplift for your dollar.</Bullet>
+        <Bullet><strong>Real-time multi-retailer pricing</strong> from Amazon, Best Buy, Newegg, and B&H (with more retailers coming).</Bullet>
+        <Bullet><strong>Smarter search & filtering</strong> — faster, more intuitive, with filter options no competitor matches.</Bullet>
+        <Bullet><strong>Compatibility engine & warnings</strong> — catches socket mismatches, clearance issues, PSU wattage problems, and RAM type conflicts automatically.</Bullet>
+        <Bullet><strong>FPS estimator</strong> — see projected frames per second for your build before you buy.</Bullet>
+        <Bullet><strong>Bottleneck calculator</strong> — know whether your CPU or GPU is holding you back.</Bullet>
+        <Bullet><strong>"Will It Run"</strong> — check if your existing PC can handle specific games.</Bullet>
+        <Bullet><strong>Build comparison</strong> — stack two builds side-by-side to see which wins on performance per dollar.</Bullet>
+        <Bullet><strong>Budget-automated build wizard</strong> — tell us your price ceiling and we'll build a balanced rig for you.</Bullet>
+        <Bullet><strong>Power calculator</strong> — we know exactly how much PSU wattage your rig needs.</Bullet>
+        <Bullet><strong>Part comparison tool</strong> — compare benchmarks, specs, and pricing across multiple parts instantly.</Bullet>
+        <Bullet><strong>Light & dark mode</strong> — seamless theme switching so you can build in whatever lighting suits you.</Bullet>
+      </ul>
+
+      <SectionHeading>The Company Behind It</SectionHeading>
+      <Para>
+        Pro Rig Builder is owned and operated by <strong>TieredUp Tech, Inc.</strong>, a Texas-incorporated S-Corp based in Orange, Texas. TieredUp Tech builds developer- and consumer-focused software products with a focus on transparency, speed, and genuine utility.
+      </Para>
+
+      <SectionHeading>Our Commitment</SectionHeading>
+      <Para>
+        We take data accuracy seriously. Our catalog of more than 3,000 PC components is verified continuously against retailer sources. Prices update regularly. Out-of-stock retailers are deprioritized automatically so you never see misleading pricing. If you spot a data issue, <span onClick={()=>go("contact")} style={{color:"var(--accent)",cursor:"pointer",textDecoration:"underline"}}>contact us</span> — we respond quickly.
+      </Para>
+      <Para>
+        We never manipulate rankings for advertisers. Our recommendations are based on actual benchmark performance, price, and compatibility — not who paid us most.
+      </Para>
+
+      <div style={{marginTop:40,padding:"24px 28px",background:"var(--card)",borderRadius:12,border:"1px solid var(--bdr)"}}>
+        <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)",marginBottom:10}}>Ready to build?</div>
+        <Para>Try the PC builder, or download our scanner to get upgrade recommendations for your current rig.</Para>
+        <div style={{display:"flex",gap:12,marginTop:14,flexWrap:"wrap"}}>
+          <button onClick={()=>go("builder")} style={{padding:"11px 22px",borderRadius:10,fontSize:13,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none"}}>Start Building →</button>
+          <button onClick={()=>go("scanner")} style={{padding:"11px 22px",borderRadius:10,fontSize:13,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>Try the Scanner</button>
+        </div>
+      </div>
+    </PageShell>
+  );
+}
+
+// ─── CONTACT PAGE ─────────────────────────────────────────────────
+function ContactPage() {
+  return (
+    <PageShell title="Contact Us" subtitle="Questions, feedback, data corrections, partnership opportunities — we'd love to hear from you.">
+      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:24,marginBottom:32}} className="how-grid">
+        <div style={{background:"var(--card)",borderRadius:12,padding:"24px 26px",border:"1px solid var(--bdr)"}}>
+          <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>EMAIL</div>
+          <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:8}}>General Support</div>
+          <a href="mailto:support@tiereduptech.com" style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--accent)",textDecoration:"none",fontWeight:600}}>support@tiereduptech.com</a>
+          <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.6,marginTop:12,marginBottom:0}}>
+            Use this email for all support questions, feature requests, data corrections, partnership inquiries, and anything else.
+          </p>
+        </div>
+        <div style={{background:"var(--card)",borderRadius:12,padding:"24px 26px",border:"1px solid var(--bdr)"}}>
+          <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>MAILING ADDRESS</div>
+          <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:8}}>TieredUp Tech, Inc.</div>
+          <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.6}}>
+            1812 N 16th St<br/>
+            Orange, TX 77630<br/>
+            United States
+          </div>
+        </div>
+      </div>
+
+      <SectionHeading>Response Time</SectionHeading>
+      <Para>
+        We aim to respond to all inquiries within <strong>24 business hours</strong>. Complex technical questions or data corrections may take longer if they require catalog updates.
+      </Para>
+
+      <SectionHeading>What to Include</SectionHeading>
+      <Para>For faster resolution, please include:</Para>
+      <ul style={{paddingLeft:22,marginBottom:14}}>
+        <Bullet>A clear description of what you're trying to do or what issue you encountered</Bullet>
+        <Bullet>The specific part, build, or page URL if applicable</Bullet>
+        <Bullet>Your browser and OS if reporting a bug</Bullet>
+        <Bullet>Screenshots when helpful</Bullet>
+      </ul>
+
+      <SectionHeading>Press & Partnerships</SectionHeading>
+      <Para>
+        For press inquiries, affiliate partnership requests, or business development, email <a href="mailto:support@tiereduptech.com" style={{color:"var(--accent)"}}>support@tiereduptech.com</a> and mention "Partnership" in the subject line.
+      </Para>
+    </PageShell>
+  );
+}
+
+// ─── PRIVACY POLICY ──────────────────────────────────────────────
+function PrivacyPage() {
+  return (
+    <PageShell title="Privacy Policy" subtitle="Last updated: April 23, 2026. We respect your privacy. Here's exactly what we collect, why, and how we protect it.">
+      <SectionHeading>Overview</SectionHeading>
+      <Para>
+        Pro Rig Builder is operated by <strong>TieredUp Tech, Inc.</strong> ("we," "us," "our"). This Privacy Policy explains how we collect, use, and safeguard information when you visit <a href="https://prorigbuilder.com" style={{color:"var(--accent)"}}>prorigbuilder.com</a> or use our related services and applications.
+      </Para>
+      <Para>
+        By using our services, you agree to the practices described in this Policy. If you do not agree, please do not use our services.
+      </Para>
+
+      <SectionHeading>Information We Collect</SectionHeading>
+      <SubHeading>Automatically Collected (Website)</SubHeading>
+      <Para>
+        When you visit our website, we use <strong>Google Analytics 4 (GA4)</strong> to understand how visitors interact with our site. This includes:
+      </Para>
+      <ul style={{paddingLeft:22,marginBottom:14}}>
+        <Bullet>IP address (anonymized by Google)</Bullet>
+        <Bullet>Browser type, operating system, device type</Bullet>
+        <Bullet>Pages visited, time on site, referrer URL</Bullet>
+        <Bullet>Approximate geographic location (country/region, not precise)</Bullet>
+        <Bullet>Interaction events (button clicks, scrolls, search queries)</Bullet>
+      </ul>
+      <Para>
+        GA4 uses cookies and similar technologies. You can opt out by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener" style={{color:"var(--accent)"}}>Google Analytics Opt-out Browser Add-on</a> or by using browser settings that block tracking.
+      </Para>
+
+      <SubHeading>Pro Rig Scanner (Desktop App)</SubHeading>
+      <Para>
+        Our Windows scanner application detects your PC hardware locally. <strong>We do not collect, store, or transmit your hardware data.</strong> All scanning and recommendation logic runs on your machine. When you click "Get Recommendations," only the resulting upgrade preferences are sent to your browser as a URL parameter — we do not log or retain this information.
+      </Para>
+
+      <SubHeading>Voluntarily Provided</SubHeading>
+      <Para>
+        If you email us at support@tiereduptech.com, we will receive your email address and the contents of your message. We use this information only to respond to you and retain it for reasonable record-keeping purposes.
+      </Para>
+
+      <SectionHeading>How We Use Information</SectionHeading>
+      <ul style={{paddingLeft:22,marginBottom:14}}>
+        <Bullet>To operate, maintain, and improve our website and services</Bullet>
+        <Bullet>To analyze traffic patterns and feature usage for product improvements</Bullet>
+        <Bullet>To respond to your inquiries and provide customer support</Bullet>
+        <Bullet>To comply with legal obligations and protect our legal rights</Bullet>
+        <Bullet>To detect and prevent fraud or abuse</Bullet>
+      </ul>
+
+      <SectionHeading>Affiliate Tracking</SectionHeading>
+      <Para>
+        When you click an affiliate link on our site (to Amazon, Best Buy, Newegg, B&H, Antonline, or another partner), the destination retailer may set cookies on your device to attribute the purchase to us. These cookies are set by the retailer, not by us, and are governed by each retailer's privacy policy.
+      </Para>
+      <Para>
+        We never see your purchase details — we only receive aggregate commission data from the retailer.
+      </Para>
+
+      <SectionHeading>Cookies</SectionHeading>
+      <Para>
+        We use cookies for:
+      </Para>
+      <ul style={{paddingLeft:22,marginBottom:14}}>
+        <Bullet><strong>Analytics</strong> — Google Analytics cookies to measure traffic and usage</Bullet>
+        <Bullet><strong>Preferences</strong> — to remember your theme (light/dark mode) and interface settings</Bullet>
+      </ul>
+      <Para>
+        You can disable cookies in your browser, but some features (like remembering your theme) may not work properly.
+      </Para>
+
+      <SectionHeading>Third-Party Services</SectionHeading>
+      <Para>
+        We link to and integrate with third-party services, including:
+      </Para>
+      <ul style={{paddingLeft:22,marginBottom:14}}>
+        <Bullet><strong>Google Analytics</strong> (analytics) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style={{color:"var(--accent)"}}>privacy policy</a></Bullet>
+        <Bullet><strong>Amazon Associates</strong> (affiliate links) — governed by Amazon's privacy policy</Bullet>
+        <Bullet><strong>Best Buy, Newegg, B&H, Antonline</strong> (affiliate links) — each governed by the retailer's privacy policy</Bullet>
+        <Bullet><strong>Railway</strong> (hosting) and <strong>Cloudflare</strong> (CDN) — infrastructure providers</Bullet>
+      </ul>
+      <Para>
+        We are not responsible for the privacy practices of third parties.
+      </Para>
+
+      <SectionHeading>Data Retention</SectionHeading>
+      <Para>
+        Analytics data is retained by Google for up to 14 months by default. Support emails are retained for up to 2 years unless legally required longer. We do not maintain user accounts or long-term user profiles.
+      </Para>
+
+      <SectionHeading>Your Rights</SectionHeading>
+      <Para>Depending on your jurisdiction, you may have the right to:</Para>
+      <ul style={{paddingLeft:22,marginBottom:14}}>
+        <Bullet>Access, correct, or delete your personal information we hold</Bullet>
+        <Bullet>Object to or restrict processing of your information</Bullet>
+        <Bullet>Withdraw consent to data collection (where applicable)</Bullet>
+        <Bullet>Receive a copy of your data in a portable format</Bullet>
+        <Bullet>Lodge a complaint with a supervisory authority</Bullet>
+      </ul>
+      <Para>
+        To exercise these rights, email us at <a href="mailto:support@tiereduptech.com" style={{color:"var(--accent)"}}>support@tiereduptech.com</a>.
+      </Para>
+
+      <SectionHeading>Children's Privacy</SectionHeading>
+      <Para>
+        Our services are not intended for children under 13. We do not knowingly collect information from children under 13. If you believe we have collected such information, please contact us and we will delete it.
+      </Para>
+
+      <SectionHeading>Data Security</SectionHeading>
+      <Para>
+        We implement reasonable technical and organizational security measures to protect your information. However, no internet transmission or electronic storage is 100% secure, and we cannot guarantee absolute security.
+      </Para>
+
+      <SectionHeading>Changes to This Policy</SectionHeading>
+      <Para>
+        We may update this Privacy Policy periodically. When we do, we will revise the "Last updated" date at the top. Material changes will be communicated via a prominent notice on the site.
+      </Para>
+
+      <SectionHeading>Contact Us</SectionHeading>
+      <Para>
+        Privacy questions? Email <a href="mailto:support@tiereduptech.com" style={{color:"var(--accent)"}}>support@tiereduptech.com</a> or write to us at:
+      </Para>
+      <Para>
+        TieredUp Tech, Inc.<br/>
+        1812 N 16th St<br/>
+        Orange, TX 77630<br/>
+        United States
+      </Para>
+    </PageShell>
+  );
+}
+
+// ─── TERMS OF USE ────────────────────────────────────────────────
+function TermsPage() {
+  return (
+    <PageShell title="Terms of Use" subtitle="Last updated: April 23, 2026. Please read these terms carefully before using our services.">
+      <SectionHeading>Acceptance of Terms</SectionHeading>
+      <Para>
+        By accessing or using <a href="https://prorigbuilder.com" style={{color:"var(--accent)"}}>prorigbuilder.com</a>, the Pro Rig Scanner application, or any related service ("Services"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree, you may not use the Services.
+      </Para>
+      <Para>
+        The Services are owned and operated by <strong>TieredUp Tech, Inc.</strong> ("Company," "we," "us," "our"), a Texas S-Corporation.
+      </Para>
+
+      <SectionHeading>Eligibility</SectionHeading>
+      <Para>
+        You must be at least 13 years old to use our Services. By using the Services, you represent that you meet this age requirement and that you have the legal capacity to enter into a binding agreement.
+      </Para>
+
+      <SectionHeading>Use of the Services</SectionHeading>
+      <Para>
+        Pro Rig Builder provides tools for comparing PC hardware prices, checking compatibility, generating builds, and related functionality. You may use the Services for personal, non-commercial purposes.
+      </Para>
+      <SubHeading>You agree NOT to:</SubHeading>
+      <ul style={{paddingLeft:22,marginBottom:14}}>
+        <Bullet>Scrape, crawl, or automate data collection from the Services without our written permission</Bullet>
+        <Bullet>Reverse-engineer, decompile, or otherwise attempt to extract source code</Bullet>
+        <Bullet>Use the Services to compete directly with Pro Rig Builder</Bullet>
+        <Bullet>Attempt to gain unauthorized access to our systems, other users' data, or any connected networks</Bullet>
+        <Bullet>Upload viruses, malware, or any malicious code</Bullet>
+        <Bullet>Use the Services for any illegal purpose or in violation of any applicable laws</Bullet>
+        <Bullet>Misrepresent your identity or affiliation</Bullet>
+        <Bullet>Interfere with or disrupt the Services or servers</Bullet>
+      </ul>
+
+      <SectionHeading>Pricing & Availability Information</SectionHeading>
+      <Para>
+        Pro Rig Builder aggregates pricing and availability data from third-party retailers. We make reasonable efforts to keep this information accurate and up-to-date, but <strong>we cannot guarantee that prices, stock status, or product specifications displayed are current at all times</strong>. Always verify pricing and availability on the retailer's website before making a purchase.
+      </Para>
+      <Para>
+        We are not responsible for errors, omissions, or outdated information. Reliance on our data is at your own risk.
+      </Para>
+
+      <SectionHeading>Compatibility & Build Recommendations</SectionHeading>
+      <Para>
+        Our compatibility engine, FPS estimator, bottleneck calculator, and other tools provide <strong>informed estimates and guidance</strong> based on manufacturer specifications and community data. These are not guarantees. Real-world performance varies based on many factors we cannot fully model.
+      </Para>
+      <Para>
+        You are solely responsible for verifying compatibility and suitability before purchasing components or assembling a PC.
+      </Para>
+
+      <SectionHeading>Affiliate Disclosure</SectionHeading>
+      <Para>
+        Pro Rig Builder participates in affiliate programs with Amazon Associates, Best Buy, Newegg, B&H Photo, Antonline, and others. When you click an affiliate link and make a purchase, we may receive a commission at no additional cost to you. See our <a href="#affiliate" style={{color:"var(--accent)"}}>Affiliate Disclosure</a> for more details.
+      </Para>
+
+      <SectionHeading>Intellectual Property</SectionHeading>
+      <Para>
+        All content on Pro Rig Builder — including the website design, code, logo, Pro Rig Scanner application, written content, and compiled product data — is owned by TieredUp Tech, Inc. or its licensors and protected by copyright, trademark, and other intellectual property laws.
+      </Para>
+      <Para>
+        You may not copy, modify, distribute, sell, or lease any part of the Services without our written permission. Product images, manufacturer logos, and specifications belong to their respective rights holders.
+      </Para>
+
+      <SectionHeading>Disclaimer of Warranties</SectionHeading>
+      <Para>
+        THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR ACCURACY.
+      </Para>
+      <Para>
+        WE DO NOT WARRANT THAT THE SERVICES WILL BE UNINTERRUPTED, ERROR-FREE, OR COMPLETELY SECURE.
+      </Para>
+
+      <SectionHeading>Limitation of Liability</SectionHeading>
+      <Para>
+        TO THE MAXIMUM EXTENT PERMITTED BY LAW, TIEREDUP TECH, INC., ITS AFFILIATES, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF PROFITS, DATA, OR GOODWILL, ARISING FROM YOUR USE OF THE SERVICES.
+      </Para>
+      <Para>
+        OUR AGGREGATE LIABILITY SHALL NOT EXCEED ONE HUNDRED U.S. DOLLARS ($100) OR THE AMOUNT YOU PAID US IN THE PAST TWELVE MONTHS, WHICHEVER IS GREATER.
+      </Para>
+
+      <SectionHeading>Indemnification</SectionHeading>
+      <Para>
+        You agree to defend, indemnify, and hold harmless TieredUp Tech, Inc. and its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including reasonable attorneys' fees) arising from your use of the Services or violation of these Terms.
+      </Para>
+
+      <SectionHeading>Third-Party Links</SectionHeading>
+      <Para>
+        Our Services contain links to third-party websites and services (retailers, manufacturers, review sites). We are not responsible for the content, privacy practices, or availability of third-party sites. You access third-party sites at your own risk.
+      </Para>
+
+      <SectionHeading>Termination</SectionHeading>
+      <Para>
+        We may suspend or terminate your access to the Services at any time for any reason, including violation of these Terms, without prior notice or liability.
+      </Para>
+
+      <SectionHeading>Governing Law & Jurisdiction</SectionHeading>
+      <Para>
+        These Terms are governed by the laws of the <strong>State of Texas, United States</strong>, without regard to conflict-of-law principles. Any dispute arising from these Terms or the Services shall be resolved exclusively in the state or federal courts located in Orange County, Texas.
+      </Para>
+
+      <SectionHeading>Changes to Terms</SectionHeading>
+      <Para>
+        We may modify these Terms at any time. Updates will be posted on this page with a revised "Last updated" date. Your continued use of the Services after changes constitutes acceptance of the modified Terms.
+      </Para>
+
+      <SectionHeading>Severability</SectionHeading>
+      <Para>
+        If any provision of these Terms is found unenforceable, the remaining provisions shall continue in full force and effect.
+      </Para>
+
+      <SectionHeading>Contact</SectionHeading>
+      <Para>
+        Questions about these Terms? Contact us at <a href="mailto:support@tiereduptech.com" style={{color:"var(--accent)"}}>support@tiereduptech.com</a>.
+      </Para>
+
+      <div style={{marginTop:40,padding:"20px 24px",background:"var(--bg3)",borderRadius:10,border:"1px solid var(--bdr)"}}>
+        <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",fontWeight:600,letterSpacing:1.5,marginBottom:6}}>DISCLAIMER</div>
+        <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",lineHeight:1.6}}>
+          These Terms of Use are provided for informational purposes and represent our standard operating agreement with users. They are not intended as and do not constitute legal advice. For specific legal questions, consult a licensed attorney.
+        </div>
+      </div>
+    </PageShell>
+  );
+}
+
+// ─── AFFILIATE DISCLOSURE ────────────────────────────────────────
+function AffiliatePage() {
+  return (
+    <PageShell title="Affiliate Disclosure" subtitle="Transparency first: here's exactly how Pro Rig Builder earns revenue, and how our recommendations stay honest.">
+      <div style={{background:"var(--accent3)",border:"1px solid var(--accent)",borderRadius:12,padding:"20px 24px",marginBottom:28}}>
+        <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:10}}>
+          <span style={{fontSize:22}}>💡</span>
+          <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)"}}>FTC-Compliant Summary</div>
+        </div>
+        <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.65}}>
+          Pro Rig Builder earns commissions through affiliate links. When you click a "Buy" button and complete a purchase, we may earn a small commission <strong>at no additional cost to you</strong>. Our recommendations are not influenced by commission rates — we rank products purely on performance, price, and compatibility.
+        </div>
+      </div>
+
+      <SectionHeading>What Are Affiliate Links?</SectionHeading>
+      <Para>
+        Affiliate links are special URLs that identify Pro Rig Builder as the source of a referral to a retailer. When you click one and make a qualifying purchase, the retailer pays Pro Rig Builder a small commission. The price you pay is identical to what you would pay if you navigated to the retailer directly — no markup, no hidden fees.
+      </Para>
+
+      <SectionHeading>Which Affiliate Programs We Participate In</SectionHeading>
+      <Para>Pro Rig Builder participates in the following affiliate programs:</Para>
+      <ul style={{paddingLeft:22,marginBottom:14}}>
+        <Bullet><strong>Amazon Associates</strong> — "As an Amazon Associate, we earn from qualifying purchases." Associate tag: <code style={{background:"var(--bg3)",padding:"2px 6px",borderRadius:4,fontFamily:"var(--mono)",fontSize:12}}>tiereduptech-20</code></Bullet>
+        <Bullet><strong>Best Buy Affiliate Program</strong> — commissions on qualifying purchases through Best Buy</Bullet>
+        <Bullet><strong>Newegg Affiliate Network</strong> (in progress) — launching soon</Bullet>
+        <Bullet><strong>B&H Photo Affiliate Program</strong> (in progress) — launching soon</Bullet>
+        <Bullet><strong>Antonline Affiliate Program</strong> (in progress) — launching soon</Bullet>
+      </ul>
+      <Para>
+        We may add or remove affiliate programs over time. This page will be updated to reflect current partnerships.
+      </Para>
+
+      <SectionHeading>How We Keep Recommendations Honest</SectionHeading>
+      <Para>
+        Our core value is trust. To protect that, we follow these principles:
+      </Para>
+      <ul style={{paddingLeft:22,marginBottom:14}}>
+        <Bullet><strong>No pay-for-placement.</strong> We do not accept payments or compensation to rank one product above another. Rankings are based on objective benchmark scores, verified specifications, and live pricing data.</Bullet>
+        <Bullet><strong>Best-price routing.</strong> If a retailer we don't have an affiliate link with has a cheaper price, we will tell you. We would rather lose a commission than mislead you.</Bullet>
+        <Bullet><strong>In-stock priority.</strong> We prioritize in-stock retailers over out-of-stock ones with lower prices, so you're seeing real purchasable options.</Bullet>
+        <Bullet><strong>No editorial bias.</strong> Our benchmark data, compatibility checks, FPS estimates, and bottleneck calculations are sourced from independent databases and publisher specifications, not affiliate partners.</Bullet>
+        <Bullet><strong>Full disclosure.</strong> Every outbound retail link is an affiliate link. This disclosure applies site-wide.</Bullet>
+      </ul>
+
+      <SectionHeading>What the Commissions Cover</SectionHeading>
+      <Para>
+        Affiliate revenue is how we fund Pro Rig Builder. Commissions cover:
+      </Para>
+      <ul style={{paddingLeft:22,marginBottom:14}}>
+        <Bullet>Server and infrastructure costs (hosting, CDN, database, API services)</Bullet>
+        <Bullet>Catalog data acquisition and continuous verification</Bullet>
+        <Bullet>Software development and maintenance</Bullet>
+        <Bullet>Customer support operations</Bullet>
+        <Bullet>Continued investment in new tools (FPS estimator, compatibility engine, scanner features)</Bullet>
+      </ul>
+      <Para>
+        We do not sell your data, run ads, or charge users. Affiliate commissions are our sole revenue source.
+      </Para>
+
+      <SectionHeading>Your Choice</SectionHeading>
+      <Para>
+        You are never obligated to click affiliate links. You may navigate directly to any retailer's website to complete a purchase. Using our links costs you nothing extra but helps support the continued operation and improvement of Pro Rig Builder.
+      </Para>
+
+      <SectionHeading>FTC Compliance</SectionHeading>
+      <Para>
+        This disclosure is made in accordance with the <strong>Federal Trade Commission's 16 CFR Part 255: "Guides Concerning the Use of Endorsements and Testimonials in Advertising."</strong> Our relationships with affiliate partners are disclosed site-wide, and material connections are made clear to consumers.
+      </Para>
+
+      <SectionHeading>Questions</SectionHeading>
+      <Para>
+        Questions about our affiliate relationships or how we use commission revenue? Contact <a href="mailto:support@tiereduptech.com" style={{color:"var(--accent)"}}>support@tiereduptech.com</a>. We're happy to explain anything further.
+      </Para>
+    </PageShell>
   );
 }
 
@@ -1970,8 +2433,8 @@ function Footer({go}){
         </div>
         <div>
           <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Legal</div>
-          {["About","Contact","Privacy Policy","Terms of Use","Affiliate Disclosure"].map(l=>
-            <div key={l} style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",padding:"4px 0",cursor:"pointer"}}>{l}</div>
+          {[{l:"About",p:"about"},{l:"Contact",p:"contact"},{l:"Privacy Policy",p:"privacy"},{l:"Terms of Use",p:"terms"},{l:"Affiliate Disclosure",p:"affiliate"}].map(x=>
+            <button key={x.l} onClick={()=>go(x.p)} style={{display:"block",fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left",width:"auto"}}>{x.l}</button>
           )}
         </div>
       </div>
@@ -2027,5 +2490,5 @@ export default function App(){
   }, []);
 
   const handleBrowse=c=>{setBc(c);setPage("search");};
-  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} th={th} theme={theme} toggleTheme={toggleTheme}/><div style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPage activeCat={bc} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}</div><Footer go={setPage}/></div>;
+  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} th={th} theme={theme} toggleTheme={toggleTheme}/><div style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPage activeCat={bc} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}</div><Footer go={setPage}/></div>;
 }
