@@ -560,7 +560,7 @@ function Bullet({children}) {
 function AboutPage({go}) {
   return (
     <PageShell title="About Pro Rig Builder" subtitle="Built by PC enthusiasts who got tired of jumping between ten tabs to price a build.">
-      <SEO title="About" description="Pro Rig Builder is a modern PC components platform built by TieredUp Tech, Inc. with unique tools including a hardware scanner, FPS estimator, bottleneck calculator, and more." canonical="https://prorigbuilder.com/#about" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"About",url:"https://prorigbuilder.com/#about"}]}/>
+      <SEO title="About" description="Pro Rig Builder is a modern PC components platform built by TieredUp Tech, Inc. with unique tools including a hardware scanner, FPS estimator, bottleneck calculator, and more." canonical="https://prorigbuilder.com/#about" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"About",url:"https://prorigbuilder.com/#about"}]} faq={[{"q":"Who is Pro Rig Builder?","a":"Pro Rig Builder is a PC components comparison platform operated by TieredUp Tech, Inc., a Texas S-Corporation. We launched on April 15, 2026, with the goal of making PC building faster, smarter, and more transparent."},{"q":"What makes Pro Rig Builder different from PCPartPicker?","a":"Pro Rig Builder offers a free Windows hardware scanner app, an FPS estimator, a bottleneck calculator, a Will-It-Run game checker, USED product flags, budget-aware upgrade recommendations, an automated budget build wizard, and a light/dark mode. None of these features are available on PCPartPicker."},{"q":"Is Pro Rig Builder free to use?","a":"Yes. All features, including the Pro Rig Scanner Windows app, are completely free. We earn revenue through affiliate commissions when users click our links to retailers - at no additional cost to you."},{"q":"Does Pro Rig Builder show ads?","a":"No. Pro Rig Builder displays zero ads. Our only revenue source is affiliate commissions."},{"q":"Where is Pro Rig Builder based?","a":"Pro Rig Builder is based in Orange, Texas, United States. Our parent company TieredUp Tech, Inc. is a Texas S-Corporation."}]}/>
       <SectionHeading>Our Story</SectionHeading>
       <Para>
         Pro Rig Builder launched on April 15, 2026, with a simple goal: make PC building faster, smarter, and more transparent. We noticed that existing PC builder sites forced users to manually paste part numbers, guess at compatibility, and navigate stale pricing data scattered across a dozen retailer pages. We knew we could do better.
@@ -1046,7 +1046,7 @@ function ComparePage({go}) {
 
   return (
     <div className="fade">
-      <SEO title="Why Pro Rig Builder vs PCPartPicker, Newegg & Logical Increments" description="Factual comparison of Pro Rig Builder vs PCPartPicker, Newegg PC Builder, and Logical Increments. Features, pricing, tools, and business model breakdown." canonical="https://prorigbuilder.com/#compare" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Compare",url:"https://prorigbuilder.com/#compare"}]}/>
+      <SEO title="Why Pro Rig Builder vs PCPartPicker, Newegg & Logical Increments" description="Factual comparison of Pro Rig Builder vs PCPartPicker, Newegg PC Builder, and Logical Increments. Features, pricing, tools, and business model breakdown." canonical="https://prorigbuilder.com/#compare" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Compare",url:"https://prorigbuilder.com/#compare"}]} faq={[{"q":"How does Pro Rig Builder compare to PCPartPicker?","a":"Pro Rig Builder matches PCPartPicker's core features and adds 8 exclusive features: hardware scanner, FPS estimator, bottleneck calculator, Will-It-Run checker, USED flags, budget-aware upgrade recommendations, budget build wizard, and light/dark mode. Pro Rig Builder also runs zero ads."},{"q":"How does Pro Rig Builder compare to Newegg PC Builder?","a":"Newegg PC Builder shows only Newegg inventory. Pro Rig Builder compares prices across five retailers (Amazon, Best Buy, Newegg, B&H, Antonline) and ranks parts neutrally with no retailer bias."},{"q":"How does Pro Rig Builder compare to Logical Increments?","a":"Logical Increments is a static tier-based build guide. Pro Rig Builder is an interactive platform with live pricing, compatibility validation, and modern tools that Logical Increments does not offer."},{"q":"Is Pro Rig Builder biased toward certain retailers?","a":"No. Pro Rig Builder ranks products by benchmark performance, price, and compatibility - never by affiliate commission rates."}]}/>
       {/* HERO */}
       <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
@@ -1249,7 +1249,7 @@ function ComparePage({go}) {
 }
 
 // ═══ SEO COMPONENT ═════════════════════════════════════════════════
-function SEO({title, description, canonical, breadcrumb}) {
+function SEO({title, description, canonical, breadcrumb, faq}) {
   const fullTitle = title ? title + " | Pro Rig Builder" : "Pro Rig Builder — Compare, Build & Save on PC Parts";
   const desc = description || "Compare PC components across Amazon, Best Buy, Newegg & more. Free Windows hardware scanner, compatibility engine, FPS estimator, and budget-aware upgrade recommendations.";
   const url = canonical || "https://prorigbuilder.com/";
@@ -1266,6 +1266,19 @@ function SEO({title, description, canonical, breadcrumb}) {
     }))
   } : null;
 
+  const faqSchema = faq && faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faq.map(q => ({
+      "@type": "Question",
+      "name": q.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": q.a
+      }
+    }))
+  } : null;
+
   return (
     <Helmet>
       <title>{fullTitle}</title>
@@ -1279,6 +1292,11 @@ function SEO({title, description, canonical, breadcrumb}) {
       {breadcrumbSchema && (
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
+        </script>
+      )}
+      {faqSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
         </script>
       )}
     </Helmet>
@@ -1310,7 +1328,7 @@ function VariantCTA({go}) {
 function VsPcPartPickerPage({go}) {
   return (
     <div className="fade">
-      <SEO title="Pro Rig Builder vs PCPartPicker: A 2026 Feature Comparison" description="How Pro Rig Builder compares to PCPartPicker in 2026. Features, tools, pricing engine, and business model breakdown. Objective, factual comparison." canonical="https://prorigbuilder.com/#vs-pcpartpicker" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Compare",url:"https://prorigbuilder.com/#compare"},{name:"vs PCPartPicker",url:"https://prorigbuilder.com/#vs-pcpartpicker"}]}/>
+      <SEO title="Pro Rig Builder vs PCPartPicker: A 2026 Feature Comparison" description="How Pro Rig Builder compares to PCPartPicker in 2026. Features, tools, pricing engine, and business model breakdown. Objective, factual comparison." canonical="https://prorigbuilder.com/#vs-pcpartpicker" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Compare",url:"https://prorigbuilder.com/#compare"},{name:"vs PCPartPicker",url:"https://prorigbuilder.com/#vs-pcpartpicker"}]} faq={[{"q":"Should I use Pro Rig Builder or PCPartPicker?","a":"Use Pro Rig Builder if you want modern tools (hardware scanner, FPS estimator, bottleneck calculator), an ad-free experience, or budget-aware upgrade recommendations. Use PCPartPicker if you primarily want access to a large community of user-submitted builds."},{"q":"Is Pro Rig Builder a PCPartPicker clone?","a":"No. Pro Rig Builder is a distinct platform with 8 exclusive features PCPartPicker does not offer. We built our compatibility engine, pricing system, and all tools from scratch."},{"q":"Can I use both Pro Rig Builder and PCPartPicker?","a":"Yes. Many users cross-reference between both platforms. They are complementary."},{"q":"Does Pro Rig Builder have more parts than PCPartPicker?","a":"Pro Rig Builder's catalog contains over 3,400 verified PC components as of April 2026, updated continuously. For current-generation hardware, both platforms have comprehensive coverage."}]}/>
       <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
         <div style={{maxWidth:900,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
