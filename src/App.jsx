@@ -426,7 +426,7 @@ function ScannerPage({go}) {
             Download our free Windows app, run a quick scan, and get personalized upgrade recommendations tailored to your budget. The scan runs 100% locally on your PC — we never see, store, or collect any of your hardware data. No other site offers this.
           </p>
           <div style={{display:"flex",gap:12,marginTop:32,flexWrap:"wrap"}}>
-            <a href="/downloads/ProRigScanner.exe" download style={{textDecoration:"none",padding:"14px 32px",borderRadius:14,fontSize:15,fontFamily:"var(--ff)",fontWeight:700,background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 24px rgba(255,107,53,.3)",display:"inline-flex",alignItems:"center",gap:8,transition:"transform .15s"}}
+            <a href="https://github.com/tiereduptech/pro-rig-builder/releases/latest/download/ProRigScanner.exe" download style={{textDecoration:"none",padding:"14px 32px",borderRadius:14,fontSize:15,fontFamily:"var(--ff)",fontWeight:700,background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 24px rgba(255,107,53,.3)",display:"inline-flex",alignItems:"center",gap:8,transition:"transform .15s"}}
               onMouseEnter={e=>e.currentTarget.style.transform="translateY(-1px)"}
               onMouseLeave={e=>e.currentTarget.style.transform="none"}>
               📥 Download for Windows
@@ -484,6 +484,24 @@ function ScannerPage({go}) {
         </div>
       </div>
 
+      {/* ── SMARTSCREEN REASSURANCE ── */}
+      <div style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)"}}>
+        <div style={{maxWidth:720,margin:"0 auto",padding:"48px 32px"}}>
+          <div style={{background:"var(--card)",border:"1px solid var(--bdr)",borderRadius:14,padding:"24px 26px"}}>
+            <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:12}}>
+              <span style={{fontSize:20}}>🛡️</span>
+              <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)"}}>Seeing a Windows warning?</div>
+            </div>
+            <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.7,marginBottom:12}}>
+              Windows SmartScreen may show a warning because Pro Rig Scanner is newly released. The app is <strong style={{color:"var(--txt)"}}>digitally signed by TieredUp Tech, Inc.</strong> (our parent company) and safe to run.
+            </p>
+            <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.7,marginBottom:0}}>
+              <strong style={{color:"var(--txt)"}}>To run it:</strong> Click <span style={{fontFamily:"var(--mono)",fontSize:12,background:"var(--bg4)",padding:"2px 8px",borderRadius:4,color:"var(--accent)"}}>More info</span> on the blue warning, then click <span style={{fontFamily:"var(--mono)",fontSize:12,background:"var(--bg4)",padding:"2px 8px",borderRadius:4,color:"var(--accent)"}}>Run anyway</span>. The warning will disappear automatically as more users download without issue.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* ── DOWNLOAD CTA ── */}
       <div style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)"}}>
         <div style={{maxWidth:720,margin:"0 auto",padding:"64px 32px",textAlign:"center"}}>
@@ -491,7 +509,7 @@ function ScannerPage({go}) {
           <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",marginBottom:28,lineHeight:1.65}}>
             Download the Pro Rig Scanner and get personalized recommendations in under a minute.
           </p>
-          <a href="/downloads/ProRigScanner.exe" download style={{textDecoration:"none",padding:"16px 40px",borderRadius:14,fontSize:16,fontFamily:"var(--ff)",fontWeight:700,background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 28px rgba(255,107,53,.35)",display:"inline-flex",alignItems:"center",gap:10,transition:"transform .15s"}}
+          <a href="https://github.com/tiereduptech/pro-rig-builder/releases/latest/download/ProRigScanner.exe" download style={{textDecoration:"none",padding:"16px 40px",borderRadius:14,fontSize:16,fontFamily:"var(--ff)",fontWeight:700,background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 28px rgba(255,107,53,.35)",display:"inline-flex",alignItems:"center",gap:10,transition:"transform .15s"}}
             onMouseEnter={e=>e.currentTarget.style.transform="translateY(-2px)"}
             onMouseLeave={e=>e.currentTarget.style.transform="none"}>
             📥 Download Pro Rig Scanner
