@@ -2972,6 +2972,8 @@ export const PARTS = [
   },
   {
     "id": 10140,
+    "needsReview": true,
+    "bundle": true,
     "n": "CPU Motherboard Kit AMD Ryzen 7 7800X3D Unlocked Desktop Processor with ASUS ROG Strix B650-A Gaming WiFi 6E AM5 Gami...",
     "img": "https://m.media-amazon.com/images/I/714qGFn81UL._AC_SL1500_.jpg",
     "c": "CPU",
@@ -3034,6 +3036,8 @@ export const PARTS = [
   },
   {
     "id": 10142,
+    "needsReview": true,
+    "bundle": true,
     "n": "Azure 3 Gaming PC, AMD Ryzen 7 9700X 3.8GHz, NVIDIA RTX 5060",
     "img": "https://m.media-amazon.com/images/I/71XMin+emqL._AC_SL1200_.jpg",
     "c": "CPU",
@@ -3364,6 +3368,8 @@ export const PARTS = [
   },
   {
     "id": 10152,
+    "needsReview": true,
+    "bundle": true,
     "n": "New Intel 13th Gen Raptor Lake Core i9-13900K CPU Upto 5.8GHz Boost Speed Best Gaming Overclocking Features for Z790 ...",
     "img": "https://m.media-amazon.com/images/I/515Atp1B7AL._AC_SL1280_.jpg",
     "c": "CPU",
