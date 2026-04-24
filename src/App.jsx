@@ -355,6 +355,10 @@ html, body, #root {
 }
 
 /* === MOBILE FIX 5: browse page mobile layout === */
+.browse-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
 @media (max-width: 900px) {
   .browse-layout {
     grid-template-columns: 1fr !important;
@@ -2049,7 +2053,7 @@ function SearchPage({activeCat,th}){
 
   return <div className="fade" style={{maxWidth:1080,margin:"0 auto",padding:"16px 20px"}}>
     <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:14}}><button onClick={()=>setCat("")} style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)",background:"none",border:"none",cursor:"pointer"}}>All Parts</button><span style={{color:"var(--mute)"}}>/</span><CatThumb cat={cat} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={24} rounded={4} editable={false}/><select value={cat} onChange={e=>sel(e.target.value)} style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--accent)",fontWeight:600,background:"none",border:"none",cursor:"pointer",outline:"none",padding:"2px 4px",appearance:"auto"}}>{CATS.map(c=><option key={c} value={c}>{CAT[c].label}</option>)}</select><div style={{flex:1}}/><span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)"}}>{list.length} results</span></div>
-    <div className="browse-layout" style={{display:"grid",gridTemplateColumns:"200px 1fr",gap:16,alignItems:"start"}}>
+    <div className="browse-layout" style={{gap:16,alignItems:"start"}}>
       {/* SIDEBAR */}
       <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:14,position:"sticky",top:64}}>
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:10}}><span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--mint)",fontWeight:600,letterSpacing:1}}>FILTERS</span>{ac>0&&<button onClick={()=>{setBrands([]);setMarketplaces([]);setMaxPr(5000);setMinPr(0);setMinR(0);setCpO(false);setSf({});}} style={{fontSize:9,color:"var(--rose)",background:"none",border:"none",cursor:"pointer",fontFamily:"var(--ff)"}}>Clear ({ac})</button>}</div>
