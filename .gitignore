@@ -60,3 +60,6 @@ bb-query.txt
 bb-variables.txt
 src/data/parts.js.pre-cleanup-backup
 src/data/parts.js.pre-*.backup
+
+# Scanner exe — too large for git, deploy via Railway separately
+public/downloads/ProRigScanner.exe
