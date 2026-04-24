@@ -293,7 +293,9 @@ table { max-width: 100%; }
 
 /* === MOBILE FIX 3: home main grid === */
 .home-main-grid {
+  display: grid;
   grid-template-columns: 1fr 340px;
+  padding: 56px 32px 48px;
 }
 @media (max-width: 900px) {
   .home-main-grid {
@@ -1905,7 +1907,7 @@ function HomePage({go,browse,th}){
 
 
     {/* 2-COLUMN LAYOUT: categories (left) + deals/top sidebar (right) */}
-    <div className="home-main-grid" style={{maxWidth:1200,margin:"0 auto",padding:"56px 32px 48px",display:"grid",gap:32,alignItems:"start"}}>
+    <div className="home-main-grid" style={{maxWidth:1200,margin:"0 auto",gap:32,alignItems:"start"}}>
       {/* LEFT COLUMN — Core Components + More Categories */}
       <div>
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",marginBottom:24}}>
