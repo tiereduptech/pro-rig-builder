@@ -413,7 +413,7 @@ function Nav({page,setPage,onBrowse,th,theme,toggleTheme}){
 function ScannerPage({go}) {
   return (
     <div className="fade">
-      <SEO title="Pro Rig Scanner — Free PC Hardware Scanner for Windows" description="Download our free Windows app that detects your PC hardware automatically and recommends personalized upgrades within your budget. 100% private — no data collected." canonical="https://prorigbuilder.com/#scanner"/>
+      <SEO title="Pro Rig Scanner — Free PC Hardware Scanner for Windows" description="Download our free Windows app that detects your PC hardware automatically and recommends personalized upgrades within your budget. 100% private — no data collected." canonical="https://prorigbuilder.com/#scanner" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Scanner",url:"https://prorigbuilder.com/#scanner"}]}/>
       {/* ── HERO ── */}
       <div style={{background:"var(--heroGrad)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
@@ -560,7 +560,7 @@ function Bullet({children}) {
 function AboutPage({go}) {
   return (
     <PageShell title="About Pro Rig Builder" subtitle="Built by PC enthusiasts who got tired of jumping between ten tabs to price a build.">
-      <SEO title="About" description="Pro Rig Builder is a modern PC components platform built by TieredUp Tech, Inc. with unique tools including a hardware scanner, FPS estimator, bottleneck calculator, and more." canonical="https://prorigbuilder.com/#about"/>
+      <SEO title="About" description="Pro Rig Builder is a modern PC components platform built by TieredUp Tech, Inc. with unique tools including a hardware scanner, FPS estimator, bottleneck calculator, and more." canonical="https://prorigbuilder.com/#about" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"About",url:"https://prorigbuilder.com/#about"}]}/>
       <SectionHeading>Our Story</SectionHeading>
       <Para>
         Pro Rig Builder launched on April 15, 2026, with a simple goal: make PC building faster, smarter, and more transparent. We noticed that existing PC builder sites forced users to manually paste part numbers, guess at compatibility, and navigate stale pricing data scattered across a dozen retailer pages. We knew we could do better.
@@ -619,7 +619,7 @@ function AboutPage({go}) {
 function ContactPage() {
   return (
     <PageShell title="Contact Us" subtitle="Questions, feedback, data corrections, partnership opportunities — we'd love to hear from you.">
-      <SEO title="Contact Us" description="Contact Pro Rig Builder for support, data corrections, partnerships, or press inquiries. Email support@tiereduptech.com or write to us in Orange, Texas." canonical="https://prorigbuilder.com/#contact"/>
+      <SEO title="Contact Us" description="Contact Pro Rig Builder for support, data corrections, partnerships, or press inquiries. Email support@tiereduptech.com or write to us in Orange, Texas." canonical="https://prorigbuilder.com/#contact" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Contact",url:"https://prorigbuilder.com/#contact"}]}/>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:24,marginBottom:32}} className="how-grid">
         <div style={{background:"var(--card)",borderRadius:12,padding:"24px 26px",border:"1px solid var(--bdr)"}}>
           <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>EMAIL</div>
@@ -666,7 +666,7 @@ function ContactPage() {
 function PrivacyPage() {
   return (
     <PageShell title="Privacy Policy" subtitle="Last updated: April 23, 2026. We respect your privacy. Here's exactly what we collect, why, and how we protect it.">
-      <SEO title="Privacy Policy" description="Pro Rig Builder's privacy policy. We use Google Analytics for anonymous traffic insights. Our scanner runs 100% locally with zero data collection." canonical="https://prorigbuilder.com/#privacy"/>
+      <SEO title="Privacy Policy" description="Pro Rig Builder's privacy policy. We use Google Analytics for anonymous traffic insights. Our scanner runs 100% locally with zero data collection." canonical="https://prorigbuilder.com/#privacy" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Privacy Policy",url:"https://prorigbuilder.com/#privacy"}]}/>
       <SectionHeading>Overview</SectionHeading>
       <Para>
         Pro Rig Builder is operated by <strong>TieredUp Tech, Inc.</strong> ("we," "us," "our"). This Privacy Policy explains how we collect, use, and safeguard information when you visit <a href="https://prorigbuilder.com" style={{color:"var(--accent)"}}>prorigbuilder.com</a> or use our related services and applications.
@@ -795,7 +795,7 @@ function PrivacyPage() {
 function TermsPage() {
   return (
     <PageShell title="Terms of Use" subtitle="Last updated: April 23, 2026. Please read these terms carefully before using our services.">
-      <SEO title="Terms of Use" description="Pro Rig Builder Terms of Use. Operated by TieredUp Tech, Inc., a Texas S-Corp. Read full terms governing use of our website and Pro Rig Scanner application." canonical="https://prorigbuilder.com/#terms"/>
+      <SEO title="Terms of Use" description="Pro Rig Builder Terms of Use. Operated by TieredUp Tech, Inc., a Texas S-Corp. Read full terms governing use of our website and Pro Rig Scanner application." canonical="https://prorigbuilder.com/#terms" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Terms",url:"https://prorigbuilder.com/#terms"}]}/>
       <SectionHeading>Acceptance of Terms</SectionHeading>
       <Para>
         By accessing or using <a href="https://prorigbuilder.com" style={{color:"var(--accent)"}}>prorigbuilder.com</a>, the Pro Rig Scanner application, or any related service ("Services"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree, you may not use the Services.
@@ -919,7 +919,7 @@ function TermsPage() {
 function AffiliatePage() {
   return (
     <PageShell title="Affiliate Disclosure" subtitle="Transparency first: here's exactly how Pro Rig Builder earns revenue, and how our recommendations stay honest.">
-      <SEO title="Affiliate Disclosure" description="Pro Rig Builder's FTC-compliant affiliate disclosure. We earn commissions through Amazon Associates, Best Buy, Newegg, B&H, and Antonline — at no cost to you." canonical="https://prorigbuilder.com/#affiliate"/>
+      <SEO title="Affiliate Disclosure" description="Pro Rig Builder's FTC-compliant affiliate disclosure. We earn commissions through Amazon Associates, Best Buy, Newegg, B&H, and Antonline — at no cost to you." canonical="https://prorigbuilder.com/#affiliate" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Affiliate Disclosure",url:"https://prorigbuilder.com/#affiliate"}]}/>
       <div style={{background:"var(--accent3)",border:"1px solid var(--accent)",borderRadius:12,padding:"20px 24px",marginBottom:28}}>
         <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:10}}>
           <span style={{fontSize:22}}>💡</span>
@@ -1046,7 +1046,7 @@ function ComparePage({go}) {
 
   return (
     <div className="fade">
-      <SEO title="Why Pro Rig Builder vs PCPartPicker, Newegg & Logical Increments" description="Factual comparison of Pro Rig Builder vs PCPartPicker, Newegg PC Builder, and Logical Increments. Features, pricing, tools, and business model breakdown." canonical="https://prorigbuilder.com/#compare"/>
+      <SEO title="Why Pro Rig Builder vs PCPartPicker, Newegg & Logical Increments" description="Factual comparison of Pro Rig Builder vs PCPartPicker, Newegg PC Builder, and Logical Increments. Features, pricing, tools, and business model breakdown." canonical="https://prorigbuilder.com/#compare" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Compare",url:"https://prorigbuilder.com/#compare"}]}/>
       {/* HERO */}
       <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
@@ -1249,10 +1249,23 @@ function ComparePage({go}) {
 }
 
 // ═══ SEO COMPONENT ═════════════════════════════════════════════════
-function SEO({title, description, canonical}) {
+function SEO({title, description, canonical, breadcrumb}) {
   const fullTitle = title ? title + " | Pro Rig Builder" : "Pro Rig Builder — Compare, Build & Save on PC Parts";
   const desc = description || "Compare PC components across Amazon, Best Buy, Newegg & more. Free Windows hardware scanner, compatibility engine, FPS estimator, and budget-aware upgrade recommendations.";
   const url = canonical || "https://prorigbuilder.com/";
+
+  // BreadcrumbList schema (if breadcrumb items provided)
+  const breadcrumbSchema = breadcrumb && breadcrumb.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumb.map((item, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "name": item.name,
+      "item": item.url
+    }))
+  } : null;
+
   return (
     <Helmet>
       <title>{fullTitle}</title>
@@ -1263,6 +1276,11 @@ function SEO({title, description, canonical}) {
       <meta property="og:url" content={url}/>
       <meta name="twitter:title" content={fullTitle}/>
       <meta name="twitter:description" content={desc}/>
+      {breadcrumbSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      )}
     </Helmet>
   );
 }
@@ -1292,7 +1310,7 @@ function VariantCTA({go}) {
 function VsPcPartPickerPage({go}) {
   return (
     <div className="fade">
-      <SEO title="Pro Rig Builder vs PCPartPicker: A 2026 Feature Comparison" description="How Pro Rig Builder compares to PCPartPicker in 2026. Features, tools, pricing engine, and business model breakdown. Objective, factual comparison." canonical="https://prorigbuilder.com/#vs-pcpartpicker"/>
+      <SEO title="Pro Rig Builder vs PCPartPicker: A 2026 Feature Comparison" description="How Pro Rig Builder compares to PCPartPicker in 2026. Features, tools, pricing engine, and business model breakdown. Objective, factual comparison." canonical="https://prorigbuilder.com/#vs-pcpartpicker" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Compare",url:"https://prorigbuilder.com/#compare"},{name:"vs PCPartPicker",url:"https://prorigbuilder.com/#vs-pcpartpicker"}]}/>
       <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
         <div style={{maxWidth:900,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
@@ -1375,7 +1393,7 @@ function VsPcPartPickerPage({go}) {
 function PcpAlternativePage({go}) {
   return (
     <div className="fade">
-      <SEO title="The Best PCPartPicker Alternative in 2026" description="Looking for a PCPartPicker alternative? Pro Rig Builder offers every feature plus hardware scanner, FPS estimator, bottleneck calculator, and budget-aware upgrade recommendations. Ad-free." canonical="https://prorigbuilder.com/#pcpartpicker-alternative"/>
+      <SEO title="The Best PCPartPicker Alternative in 2026" description="Looking for a PCPartPicker alternative? Pro Rig Builder offers every feature plus hardware scanner, FPS estimator, bottleneck calculator, and budget-aware upgrade recommendations. Ad-free." canonical="https://prorigbuilder.com/#pcpartpicker-alternative" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"PCPartPicker Alternative",url:"https://prorigbuilder.com/#pcpartpicker-alternative"}]}/>
       <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
         <div style={{maxWidth:900,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
@@ -1438,7 +1456,7 @@ function PcpAlternativePage({go}) {
 function BestPcBuilderToolsPage({go}) {
   return (
     <div className="fade">
-      <SEO title="Best PC Builder Tools in 2026: Ranked & Reviewed" description="The best PC builder tools of 2026 ranked by features, pricing transparency, and modern UX. See how Pro Rig Builder, PCPartPicker, Newegg PC Builder, and Logical Increments stack up." canonical="https://prorigbuilder.com/#best-pc-builder-tools"/>
+      <SEO title="Best PC Builder Tools in 2026: Ranked & Reviewed" description="The best PC builder tools of 2026 ranked by features, pricing transparency, and modern UX. See how Pro Rig Builder, PCPartPicker, Newegg PC Builder, and Logical Increments stack up." canonical="https://prorigbuilder.com/#best-pc-builder-tools" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Best PC Builder Tools",url:"https://prorigbuilder.com/#best-pc-builder-tools"}]}/>
       <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
         <div style={{maxWidth:900,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
