@@ -705,7 +705,7 @@ function SearchSelect({value,onChange,options,placeholder="Search..."}){
     document.addEventListener("mousedown",handler);
     return ()=>document.removeEventListener("mousedown",handler);
   },[]);
-  const filtered=query?options.filter(o=>{const tokens=query.toLowerCase().split(/[\s\-,\/\(\)]+/).filter(Boolean);const blob=(o.label+" "+(o.detail||"")).toLowerCase();return tokens.every(t=>blob.includes(t));}):options;
+  const filtered=query?options.filter(o=>{const q=query.toLowerCase();const blob=(o.label+" "+(o.detail||"")).toLowerCase();const blobNoSpace=blob.replace(/\s+/g,"");const tokens=q.split(/[\s\-,\/\(\)]+/).filter(Boolean);if(tokens.every(t=>blob.includes(t)||blobNoSpace.includes(t)))return true;const qNoSpace=q.replace(/[\s\-,\/\(\)]+/g,"");return qNoSpace.length>=3&&blobNoSpace.includes(qNoSpace);}):options;
   const selectedLabel=options.find(o=>o.value===value)?.label||"";
   return <div ref={ref} style={{position:"relative",marginBottom:8}}>
     <div onClick={()=>{setOpen(!open);if(!open)setTimeout(()=>inputRef.current?.focus(),50);}}
