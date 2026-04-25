@@ -110650,7 +110650,7 @@ export const PARTS = [
       }
     },
     "value": 37,
-    "bench": 64
+    "bench": 70
   },
   {
     "id": 95001,
@@ -110674,7 +110674,7 @@ export const PARTS = [
       }
     },
     "value": 50,
-    "bench": 69
+    "bench": 73
   },
   {
     "id": 95002,
@@ -110698,7 +110698,7 @@ export const PARTS = [
       }
     },
     "value": 0,
-    "bench": 39
+    "bench": 52
   },
   {
     "id": 95003,
@@ -110722,7 +110722,7 @@ export const PARTS = [
       }
     },
     "value": 16,
-    "bench": 64
+    "bench": 65
   },
   {
     "id": 95004,
@@ -110746,7 +110746,7 @@ export const PARTS = [
       }
     },
     "value": 16,
-    "bench": 89
+    "bench": 87
   },
   {
     "id": 95005,
@@ -110770,7 +110770,7 @@ export const PARTS = [
       }
     },
     "value": 25,
-    "bench": 64
+    "bench": 71
   },
   {
     "id": 95006,
@@ -110794,7 +110794,7 @@ export const PARTS = [
       }
     },
     "value": 100,
-    "bench": 69
+    "bench": 77
   },
   {
     "id": 95008,
@@ -110818,7 +110818,7 @@ export const PARTS = [
       }
     },
     "value": 40,
-    "bench": 44
+    "bench": 55
   },
   {
     "id": 95009,
@@ -110844,7 +110844,7 @@ export const PARTS = [
     "switches": "Mechanical",
     "wireless": true,
     "rgb": true,
-    "bench": 86
+    "bench": 81
   },
   {
     "id": 95010,
@@ -110870,7 +110870,7 @@ export const PARTS = [
     "switches": "Optical",
     "wireless": true,
     "rgb": true,
-    "bench": 89
+    "bench": 85
   },
   {
     "id": 95011,
@@ -110896,7 +110896,7 @@ export const PARTS = [
     "switches": "Mechanical",
     "wireless": false,
     "rgb": true,
-    "bench": 66
+    "bench": 71
   },
   {
     "id": 95012,
@@ -110924,7 +110924,7 @@ export const PARTS = [
     "rgb": true,
     "switches": "Mechanical",
     "wireless": false,
-    "bench": 61
+    "bench": 62
   },
   {
     "id": 95013,
@@ -110952,7 +110952,7 @@ export const PARTS = [
     "switches": "Mechanical",
     "wireless": true,
     "rgb": true,
-    "bench": 86
+    "bench": 75
   },
   {
     "id": 96000,
@@ -110976,7 +110976,7 @@ export const PARTS = [
       }
     },
     "value": 29,
-    "bench": 92
+    "bench": 100
   },
   {
     "id": 96003,
@@ -111000,7 +111000,7 @@ export const PARTS = [
       }
     },
     "value": 30,
-    "bench": 83
+    "bench": 92
   },
   {
     "id": 96004,
@@ -111024,7 +111024,7 @@ export const PARTS = [
       }
     },
     "value": 0,
-    "bench": 84
+    "bench": 88
   },
   {
     "id": 96006,
@@ -111048,7 +111048,7 @@ export const PARTS = [
       }
     },
     "value": 12,
-    "bench": 81
+    "bench": 85
   },
   {
     "id": 96007,
@@ -111072,7 +111072,7 @@ export const PARTS = [
       }
     },
     "value": 7,
-    "bench": 83
+    "bench": 81
   },
   {
     "id": 96008,
@@ -111096,7 +111096,7 @@ export const PARTS = [
       }
     },
     "value": 3,
-    "bench": 69
+    "bench": 53
   },
   {
     "id": 96009,
@@ -111120,7 +111120,7 @@ export const PARTS = [
       }
     },
     "value": 0,
-    "bench": 82
+    "bench": 84
   },
   {
     "id": 96010,
@@ -111144,7 +111144,7 @@ export const PARTS = [
     },
     "value": 11,
     "mouseType": "USB",
-    "bench": 82
+    "bench": 100
   },
   {
     "id": 96011,
@@ -111168,7 +111168,7 @@ export const PARTS = [
     },
     "value": 3,
     "mouseType": "Wireless",
-    "bench": 94
+    "bench": 100
   },
   {
     "id": 96012,
@@ -111192,7 +111192,7 @@ export const PARTS = [
     },
     "value": 100,
     "mouseType": "Wireless",
-    "bench": 83
+    "bench": 94
   },
   {
     "id": 96013,
@@ -111218,7 +111218,7 @@ export const PARTS = [
     },
     "value": 70,
     "mouseType": "Wireless",
-    "bench": 94
+    "bench": 100
   },
   {
     "id": 96014,
@@ -111242,7 +111242,7 @@ export const PARTS = [
     },
     "value": 40,
     "mouseType": "Wireless",
-    "bench": 81
+    "bench": 90
   },
   {
     "id": 97001,
@@ -111265,7 +111265,7 @@ export const PARTS = [
       }
     },
     "value": 6,
-    "bench": 76
+    "bench": 75
   },
   {
     "id": 97002,
@@ -111288,7 +111288,7 @@ export const PARTS = [
       }
     },
     "value": 64,
-    "bench": 79
+    "bench": 78
   },
   {
     "id": 97003,
@@ -111311,7 +111311,7 @@ export const PARTS = [
       }
     },
     "value": 100,
-    "bench": 76
+    "bench": 75
   },
   {
     "id": 97004,
@@ -111334,7 +111334,7 @@ export const PARTS = [
       }
     },
     "value": 0,
-    "bench": 76
+    "bench": 75
   },
   {
     "id": 97005,
@@ -111357,7 +111357,7 @@ export const PARTS = [
       }
     },
     "value": 40,
-    "bench": 69
+    "bench": 67
   },
   {
     "id": 97006,
@@ -111380,7 +111380,7 @@ export const PARTS = [
       }
     },
     "value": 28,
-    "bench": 94
+    "bench": 82
   },
   {
     "id": 97007,
@@ -111403,7 +111403,7 @@ export const PARTS = [
       }
     },
     "value": 28,
-    "bench": 76
+    "bench": 75
   },
   {
     "id": 97008,
@@ -111426,7 +111426,7 @@ export const PARTS = [
       }
     },
     "value": 40,
-    "bench": 47
+    "bench": 61
   },
   {
     "id": 97009,
@@ -111449,7 +111449,7 @@ export const PARTS = [
       }
     },
     "value": 65,
-    "bench": 47
+    "bench": 61
   },
   {
     "id": 97010,
@@ -111473,7 +111473,7 @@ export const PARTS = [
     },
     "value": 50,
     "hsType": "Wireless",
-    "bench": 94
+    "bench": 84
   },
   {
     "id": 97012,
@@ -111499,7 +111499,7 @@ export const PARTS = [
     },
     "value": 99,
     "hsType": "Wired",
-    "bench": 39
+    "bench": 54
   },
   {
     "id": 97013,
@@ -111523,7 +111523,7 @@ export const PARTS = [
     },
     "value": 48,
     "hsType": "Wired",
-    "bench": 47
+    "bench": 64
   },
   {
     "id": 97500,
@@ -111545,7 +111545,7 @@ export const PARTS = [
       }
     },
     "sampleRate": 96,
-    "bench": 69
+    "bench": 84
   },
   {
     "id": 97501,
@@ -111569,7 +111569,7 @@ export const PARTS = [
       }
     },
     "sampleRate": 96,
-    "bench": 73
+    "bench": 83
   },
   {
     "id": 97502,
@@ -111591,7 +111591,7 @@ export const PARTS = [
       }
     },
     "sampleRate": 48,
-    "bench": 63
+    "bench": 75
   },
   {
     "id": 97503,
@@ -111615,7 +111615,7 @@ export const PARTS = [
       }
     },
     "sampleRate": 48,
-    "bench": 68
+    "bench": 74
   },
   {
     "id": 98000,
@@ -111637,7 +111637,7 @@ export const PARTS = [
         "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578877&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578877.p%3FskuId%3D6578877", "price": 132.99, "inStock": true}
       }
     },
-    "bench": 100
+    "bench": 99
   },
   {
     "id": 98001,
@@ -111661,7 +111661,7 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "bench": 93
+    "bench": 86
   },
   {
     "id": 98002,
@@ -111685,7 +111685,7 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "bench": 93
+    "bench": 85
   },
   {
     "id": 98500,
@@ -111706,7 +111706,7 @@ export const PARTS = [
       }
     },
     "surface": "Hybrid",
-    "bench": 66
+    "bench": 73
   },
   {
     "id": 98501,
@@ -111727,7 +111727,7 @@ export const PARTS = [
       }
     },
     "surface": "Cloth",
-    "bench": 63
+    "bench": 59
   },
   {
     "id": 98502,
@@ -111751,7 +111751,7 @@ export const PARTS = [
       }
     },
     "surface": "Hard",
-    "bench": 67
+    "bench": 64
   },
   {
     "id": 98750,
@@ -112677,7 +112677,7 @@ export const PARTS = [
     "dpi": 25600,
     "mouseType": "Wired",
     "weight": 121,
-    "bench": 65
+    "bench": 74
   },
   {
     "id": 99973,
@@ -112693,7 +112693,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "sensor": "Optical",
     "weight": 99,
-    "bench": 68
+    "bench": 61
   },
   {
     "id": 99974,
@@ -112709,7 +112709,7 @@ export const PARTS = [
     "dpi": 1000,
     "mouseType": "Wireless",
     "weight": 134,
-    "bench": 45
+    "bench": 30
   },
   {
     "id": 99975,
@@ -112725,7 +112725,7 @@ export const PARTS = [
     "dpi": 8000,
     "mouseType": "Wired",
     "weight": 85,
-    "bench": 50
+    "bench": 46
   },
   {
     "id": 99976,
@@ -112741,7 +112741,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 114,
     "dpi": 25600,
-    "bench": 84
+    "bench": 89
   },
   {
     "id": 99977,
@@ -112757,7 +112757,7 @@ export const PARTS = [
     "dpi": 25600,
     "mouseType": "Wireless",
     "weight": 63,
-    "bench": 94
+    "bench": 88
   },
   {
     "id": 99978,
@@ -112773,7 +112773,7 @@ export const PARTS = [
     "dpi": 8000,
     "mouseType": "Wired",
     "weight": 110,
-    "bench": 44
+    "bench": 41
   },
   {
     "id": 99979,
@@ -112789,7 +112789,7 @@ export const PARTS = [
     "dpi": 6400,
     "mouseType": "Wired",
     "weight": 96,
-    "bench": 46
+    "bench": 40
   },
   {
     "id": 99980,
@@ -112805,7 +112805,7 @@ export const PARTS = [
     "dpi": 6400,
     "weight": 96,
     "mouseType": "Wired",
-    "bench": 46
+    "bench": 40
   },
   {
     "id": 99981,
@@ -112821,7 +112821,7 @@ export const PARTS = [
     "weight": 101,
     "dpi": 26000,
     "mouseType": "Wired",
-    "bench": 54
+    "bench": 57
   },
   {
     "id": 99982,
@@ -112837,7 +112837,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "sensor": "Advanced Optical",
     "weight": 135,
-    "bench": 47
+    "bench": 35
   },
   {
     "id": 99983,
@@ -112853,7 +112853,7 @@ export const PARTS = [
     "sensor": "Laser",
     "dpi": 1000,
     "weight": 135,
-    "bench": 45
+    "bench": 29
   },
   {
     "id": 99984,
@@ -112869,7 +112869,7 @@ export const PARTS = [
     "sensor": "Optical",
     "dpi": 4000,
     "weight": 135,
-    "bench": 50
+    "bench": 39
   },
   {
     "id": 99985,
@@ -112885,7 +112885,7 @@ export const PARTS = [
     "sensor": "Optical",
     "dpi": 4000,
     "weight": 125,
-    "bench": 50
+    "bench": 39
   },
   {
     "id": 99986,
@@ -112901,7 +112901,7 @@ export const PARTS = [
     "sensor": "Optical",
     "dpi": 4000,
     "weight": 125,
-    "bench": 50
+    "bench": 21
   },
   {
     "id": 99987,
@@ -112917,7 +112917,7 @@ export const PARTS = [
     "sensor": "Optical",
     "dpi": 8000,
     "weight": 141,
-    "bench": 55
+    "bench": 45
   },
   {
     "id": 99988,
@@ -112933,7 +112933,7 @@ export const PARTS = [
     "weight": 95,
     "mouseType": "Wireless",
     "dpi": 25600,
-    "bench": 90
+    "bench": 93
   },
   {
     "id": 99989,
@@ -112949,7 +112949,7 @@ export const PARTS = [
     "dpi": 12400,
     "mouseType": "Wired",
     "weight": 158,
-    "bench": 42
+    "bench": 39
   },
   {
     "id": 99990,
@@ -112965,7 +112965,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "sensor": "Optical",
     "weight": 130,
-    "bench": 55
+    "bench": 28
   },
   {
     "id": 99991,
@@ -112981,7 +112981,7 @@ export const PARTS = [
     "sensor": "Optical",
     "dpi": 7200,
     "weight": 110,
-    "bench": 40
+    "bench": 36
   },
   {
     "id": 99992,
@@ -112996,7 +112996,7 @@ export const PARTS = [
     "dpi": 8000,
     "mouseType": "Wireless",
     "weight": 110,
-    "bench": 49
+    "bench": 35
   },
   {
     "id": 99993,
@@ -113012,7 +113012,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "dpi": 2000,
     "weight": 86,
-    "bench": 57
+    "bench": 27
   },
   {
     "id": 99994,
@@ -113028,7 +113028,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 60,
     "dpi": 18000,
-    "bench": 74
+    "bench": 76
   },
   {
     "id": 99995,
@@ -113044,7 +113044,7 @@ export const PARTS = [
     "dpi": 16000,
     "mouseType": "Wireless",
     "weight": 105,
-    "bench": 64
+    "bench": 40
   },
   {
     "id": 99996,
@@ -113060,7 +113060,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "dpi": 25600,
     "weight": 89,
-    "bench": 75
+    "bench": 71
   },
   {
     "id": 99997,
@@ -113076,7 +113076,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "sensor": "HERO 2",
     "dpi": 32000,
-    "bench": 97
+    "bench": 91
   },
   {
     "id": 99998,
@@ -113092,7 +113092,7 @@ export const PARTS = [
     "sensor": "Optical",
     "dpi": 8000,
     "weight": 99,
-    "bench": 65
+    "bench": 55
   },
   {
     "id": 100000,
@@ -113108,7 +113108,7 @@ export const PARTS = [
     "dpi": 4000,
     "weight": 96,
     "mouseType": "Wireless",
-    "bench": 61
+    "bench": 32
   },
   {
     "id": 100001,
@@ -113124,7 +113124,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "dpi": 18000,
     "weight": 76,
-    "bench": 74
+    "bench": 70
   },
   {
     "id": 100002,
@@ -113140,7 +113140,7 @@ export const PARTS = [
     "sensor": "HERO 2",
     "dpi": 32000,
     "weight": 80,
-    "bench": 93
+    "bench": 86
   },
   {
     "id": 100003,
@@ -113156,7 +113156,7 @@ export const PARTS = [
     "weight": 82,
     "mouseType": "Wireless",
     "dpi": 30000,
-    "bench": 78
+    "bench": 81
   },
   {
     "id": 100004,
@@ -113172,7 +113172,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "dpi": 30000,
     "weight": 112,
-    "bench": 71
+    "bench": 69
   },
   {
     "id": 100005,
@@ -113188,7 +113188,7 @@ export const PARTS = [
     "sensor": "Optical",
     "dpi": 512,
     "weight": 259,
-    "bench": 47
+    "bench": 36
   },
   {
     "id": 100006,
@@ -113203,7 +113203,7 @@ export const PARTS = [
     "sensor": "Optical",
     "dpi": 12800,
     "mouseType": "Wired",
-    "bench": 39
+    "bench": 32
   },
   {
     "id": 100007,
@@ -113219,7 +113219,7 @@ export const PARTS = [
     "rgb": true,
     "wireless": false,
     "switches": "Membrane",
-    "bench": 52
+    "bench": 40
   },
   {
     "id": 100008,
@@ -113235,7 +113235,7 @@ export const PARTS = [
     "rgb": true,
     "layout": "TKL",
     "wireless": false,
-    "bench": 74
+    "bench": 81
   },
   {
     "id": 100009,
@@ -113251,7 +113251,7 @@ export const PARTS = [
     "rgb": true,
     "layout": "Compact",
     "wireless": false,
-    "bench": 46
+    "bench": 36
   },
   {
     "id": 100010,
@@ -113267,7 +113267,7 @@ export const PARTS = [
     "switches": "Scissor",
     "layout": "Full-Size",
     "rgb": false,
-    "bench": 59
+    "bench": 52
   },
   {
     "id": 100011,
@@ -113283,7 +113283,7 @@ export const PARTS = [
     "rgb": true,
     "switches": "Scissor",
     "layout": "75%",
-    "bench": 79
+    "bench": 64
   },
   {
     "id": 100012,
@@ -113299,7 +113299,7 @@ export const PARTS = [
     "layout": "75%",
     "wireless": true,
     "rgb": true,
-    "bench": 81
+    "bench": 72
   },
   {
     "id": 100013,
@@ -113315,7 +113315,7 @@ export const PARTS = [
     "rgb": true,
     "switches": "Membrane",
     "layout": "Full-Size",
-    "bench": 36
+    "bench": 18
   },
   {
     "id": 100014,
@@ -113331,7 +113331,7 @@ export const PARTS = [
     "wireless": true,
     "rgb": true,
     "layout": "96%",
-    "bench": 76
+    "bench": 62
   },
   {
     "id": 100015,
@@ -113347,7 +113347,7 @@ export const PARTS = [
     "rgb": true,
     "switches": "Scissor",
     "layout": "Full-Size",
-    "bench": 73
+    "bench": 56
   },
   {
     "id": 100016,
@@ -113363,7 +113363,7 @@ export const PARTS = [
     "layout": "75%",
     "wireless": true,
     "rgb": true,
-    "bench": 81
+    "bench": 66
   },
   {
     "id": 100017,
@@ -113379,7 +113379,7 @@ export const PARTS = [
     "layout": "Full-Size",
     "rgb": true,
     "wireless": false,
-    "bench": 61
+    "bench": 62
   },
   {
     "id": 100018,
@@ -113395,7 +113395,7 @@ export const PARTS = [
     "layout": "Full-Size",
     "wireless": false,
     "rgb": true,
-    "bench": 59
+    "bench": 58
   },
   {
     "id": 100019,
@@ -113411,7 +113411,7 @@ export const PARTS = [
     "layout": "TKL",
     "rgb": true,
     "wireless": false,
-    "bench": 64
+    "bench": 60
   },
   {
     "id": 100020,
@@ -113427,7 +113427,7 @@ export const PARTS = [
     "switches": "Scissor",
     "layout": "Compact",
     "rgb": false,
-    "bench": 48
+    "bench": 32
   },
   {
     "id": 100021,
@@ -113443,7 +113443,7 @@ export const PARTS = [
     "layout": "60%",
     "wireless": false,
     "rgb": true,
-    "bench": 69
+    "bench": 70
   },
   {
     "id": 100022,
@@ -113459,7 +113459,7 @@ export const PARTS = [
     "layout": "60%",
     "wireless": false,
     "rgb": true,
-    "bench": 64
+    "bench": 63
   },
   {
     "id": 100023,
@@ -113475,7 +113475,7 @@ export const PARTS = [
     "rgb": true,
     "layout": "Full-Size",
     "wireless": false,
-    "bench": 69
+    "bench": 76
   },
   {
     "id": 100024,
@@ -113491,7 +113491,7 @@ export const PARTS = [
     "rgb": true,
     "switches": "Membrane",
     "layout": "Full-Size",
-    "bench": 57
+    "bench": 29
   },
   {
     "id": 100025,
@@ -113507,7 +113507,7 @@ export const PARTS = [
     "rgb": true,
     "layout": "Full-Size",
     "wireless": false,
-    "bench": 64
+    "bench": 69
   },
   {
     "id": 100026,
@@ -113523,7 +113523,7 @@ export const PARTS = [
     "rgb": true,
     "switches": "Mechanical",
     "layout": "Full-Size",
-    "bench": 70
+    "bench": 52
   },
   {
     "id": 100027,
@@ -113539,7 +113539,7 @@ export const PARTS = [
     "rgb": true,
     "switches": "Mechanical",
     "layout": "Full-Size",
-    "bench": 70
+    "bench": 52
   },
   {
     "id": 100028,
@@ -113555,7 +113555,7 @@ export const PARTS = [
     "layout": "75%",
     "wireless": true,
     "rgb": true,
-    "bench": 81
+    "bench": 66
   },
   {
     "id": 100029,
@@ -113571,7 +113571,7 @@ export const PARTS = [
     "driver": 45,
     "mic": false,
     "anc": false,
-    "bench": 47
+    "bench": 63
   },
   {
     "id": 100030,
@@ -113585,7 +113585,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-BlackShark-V2-Gaming-Headset/dp/B086PKMZ21/ref=sr_1_3?crid=FK4L8RI5UBE6&dib=eyJ2IjoiMSJ9.2_GIWV0Rvm4YTK9_2SsAM5c_hAiaPjNBYetnCde6A7Cuwrnjk2l6Q1DVRn88J0Xx6-O3k6FjDsigD0cM1CwvmmJr56lDC9NoUKUzKoGvhq-v3E59veqD-j7IBRxo5Gs5WTsUZw__mLsdZW2rRSWlEcfb4pcexC4z9rWhneP2WcRMGm9S80oLlqN-Z9xgrjhhZpXuHKvPAeGtfi7k1f7lk72lLZLFQflfUbpw7grw-V8.a3asCWSi72Ngyj4aNWkT5Y9NJ3xwlVuXo3lDSn-jFLM&dib_tag=se&keywords=wired+gaming+headset&qid=1777130640&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=wired%2Bgaming%2Bheadset%2Caps%2C283&sr=8-3&tag=tiereduptech-20", "price":34.99, "inStock":true}},
     "hsType": "Wired",
     "driver": 50,
-    "bench": 45
+    "bench": 56
   },
   {
     "id": 100031,
@@ -113600,7 +113600,7 @@ export const PARTS = [
     "hsType": "Wired",
     "driver": 53,
     "mic": true,
-    "bench": 63
+    "bench": 67
   },
   {
     "id": 100032,
@@ -113616,7 +113616,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 68
+    "bench": 66
   },
   {
     "id": 100033,
@@ -113632,7 +113632,7 @@ export const PARTS = [
     "driver": 45,
     "mic": false,
     "anc": false,
-    "bench": 47
+    "bench": 62
   },
   {
     "id": 100034,
@@ -113648,7 +113648,7 @@ export const PARTS = [
     "driver": 40,
     "mic": false,
     "anc": false,
-    "bench": 44
+    "bench": 59
   },
   {
     "id": 100035,
@@ -113664,7 +113664,7 @@ export const PARTS = [
     "mic": true,
     "driver": 53,
     "anc": false,
-    "bench": 79
+    "bench": 78
   },
   {
     "id": 100036,
@@ -113680,7 +113680,7 @@ export const PARTS = [
     "driver": 40,
     "mic": false,
     "anc": false,
-    "bench": 44
+    "bench": 58
   },
   {
     "id": 100037,
@@ -113694,7 +113694,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-BlackShark-V2-Gaming-Headset/dp/B09PZG4R17/ref=sr_1_9?crid=CED7P2DJKA98&dib=eyJ2IjoiMSJ9.x0ppXXru9LXp0mrY-SbYVItpjpE02VLyR0PE9na1CPdwwgCEr45BASxsnO8_r4mO7YUrod8RlfmBiARIoh5hZ9qk6dG5GlsAGvvwWCBoWNfRV3CkbNkcl5ldJr-3SoohXqHFWHkSxerCYz6SkeZB4fp_HMaGuQ2oKoE54XmvKRhtXV02Wh2KbJj0JJwPlQp9IC1LJlRusNn_UFGpqhdZSAWVTVUtchOtSPsRtlbKNJ4.O8MLT6onGo_frPL58BRLWqGep_2h_apSsI2EICztsQg&dib_tag=se&keywords=Razer+Kraken&qid=1777130639&sprefix=Razer%2BKraken%2Caps%2C269&sr=8-9&tag=tiereduptech-20", "price":34.99, "inStock":true}},
     "hsType": "Wired",
     "driver": 50,
-    "bench": 45
+    "bench": 56
   },
   {
     "id": 100038,
@@ -113709,7 +113709,7 @@ export const PARTS = [
     "hsType": "Wired",
     "driver": 50,
     "mic": true,
-    "bench": 60
+    "bench": 64
   },
   {
     "id": 100039,
@@ -113725,7 +113725,7 @@ export const PARTS = [
     "driver": 40,
     "mic": false,
     "anc": false,
-    "bench": 34
+    "bench": 27
   },
   {
     "id": 100040,
@@ -113741,7 +113741,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 68
+    "bench": 65
   },
   {
     "id": 100041,
@@ -113757,7 +113757,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 68
+    "bench": 66
   },
   {
     "id": 100042,
@@ -113772,7 +113772,7 @@ export const PARTS = [
     "hsType": "USB",
     "driver": 40,
     "mic": true,
-    "bench": 53
+    "bench": 54
   },
   {
     "id": 100043,
@@ -113788,7 +113788,7 @@ export const PARTS = [
     "driver": 40,
     "mic": false,
     "anc": false,
-    "bench": 44
+    "bench": 58
   },
   {
     "id": 100044,
@@ -113804,7 +113804,7 @@ export const PARTS = [
     "hsType": "Wired",
     "driver": 40,
     "anc": false,
-    "bench": 44
+    "bench": 35
   },
   {
     "id": 100045,
@@ -113820,7 +113820,7 @@ export const PARTS = [
     "driver": 40,
     "mic": false,
     "anc": false,
-    "bench": 44
+    "bench": 58
   },
   {
     "id": 100046,
@@ -113836,7 +113836,7 @@ export const PARTS = [
     "driver": 38,
     "mic": false,
     "anc": false,
-    "bench": 39
+    "bench": 52
   },
   {
     "id": 100047,
@@ -113852,7 +113852,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 68
+    "bench": 66
   },
   {
     "id": 100048,
@@ -113868,7 +113868,7 @@ export const PARTS = [
     "driver": 38,
     "mic": false,
     "anc": false,
-    "bench": 39
+    "bench": 52
   },
   {
     "id": 100049,
@@ -113884,7 +113884,7 @@ export const PARTS = [
     "mic": true,
     "driver": 50,
     "anc": false,
-    "bench": 60
+    "bench": 63
   },
   {
     "id": 100050,
@@ -113900,7 +113900,7 @@ export const PARTS = [
     "hsType": "Wireless",
     "driver": 30,
     "mic": true,
-    "bench": 88
+    "bench": 81
   },
   {
     "id": 100051,
@@ -113916,7 +113916,7 @@ export const PARTS = [
     "hsType": "Wireless",
     "driver": 30,
     "mic": true,
-    "bench": 88
+    "bench": 81
   },
   {
     "id": 100052,
@@ -113931,7 +113931,7 @@ export const PARTS = [
     "hsType": "Wired",
     "driver": 50,
     "mic": true,
-    "bench": 50
+    "bench": 42
   },
   {
     "id": 100053,
@@ -113947,7 +113947,7 @@ export const PARTS = [
     "mic": true,
     "driver": 50,
     "anc": false,
-    "bench": 75
+    "bench": 74
   },
   {
     "id": 100054,
@@ -113963,7 +113963,7 @@ export const PARTS = [
     "driver": 40,
     "mic": false,
     "anc": false,
-    "bench": 44
+    "bench": 57
   },
   {
     "id": 100055,
@@ -113979,7 +113979,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 68
+    "bench": 64
   },
   {
     "id": 100056,
@@ -113995,7 +113995,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 53
+    "bench": 56
   },
   {
     "id": 100057,
@@ -114011,7 +114011,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 53
+    "bench": 55
   },
   {
     "id": 100058,
@@ -114027,7 +114027,7 @@ export const PARTS = [
     "driver": 38,
     "mic": false,
     "anc": false,
-    "bench": 39
+    "bench": 52
   },
   {
     "id": 100059,
@@ -114042,7 +114042,7 @@ export const PARTS = [
     "hsType": "Wireless",
     "driver": 60,
     "mic": true,
-    "bench": 78
+    "bench": 77
   },
   {
     "id": 100060,
@@ -114058,7 +114058,7 @@ export const PARTS = [
     "hsType": "Wired",
     "driver": 50,
     "anc": false,
-    "bench": 61
+    "bench": 65
   },
   {
     "id": 100061,
@@ -114074,7 +114074,7 @@ export const PARTS = [
     "mic": true,
     "driver": 50,
     "anc": false,
-    "bench": 75
+    "bench": 72
   },
   {
     "id": 100062,
@@ -114090,7 +114090,7 @@ export const PARTS = [
     "mic": true,
     "anc": true,
     "driver": 30,
-    "bench": 88
+    "bench": 82
   },
   {
     "id": 100063,
@@ -114106,7 +114106,7 @@ export const PARTS = [
     "mic": true,
     "driver": 50,
     "anc": false,
-    "bench": 50
+    "bench": 41
   },
   {
     "id": 100064,
@@ -114122,7 +114122,7 @@ export const PARTS = [
     "mic": true,
     "anc": true,
     "driver": 40,
-    "bench": 83
+    "bench": 58
   },
   {
     "id": 100065,
@@ -114137,7 +114137,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Multi-Pattern",
     "sampleRate": 48,
-    "bench": 83
+    "bench": 81
   },
   {
     "id": 100066,
@@ -114152,7 +114152,7 @@ export const PARTS = [
     "micType": "XLR",
     "pattern": "Cardioid",
     "sampleRate": 44,
-    "bench": 82
+    "bench": 86
   },
   {
     "id": 100067,
@@ -114167,7 +114167,7 @@ export const PARTS = [
     "micType": "XLR",
     "pattern": "Cardioid",
     "sampleRate": 0,
-    "bench": 91
+    "bench": 98
   },
   {
     "id": 100068,
@@ -114182,7 +114182,7 @@ export const PARTS = [
     "pattern": "Cardioid",
     "micType": "XLR",
     "sampleRate": 0,
-    "bench": 91
+    "bench": 98
   },
   {
     "id": 100069,
@@ -114197,7 +114197,7 @@ export const PARTS = [
     "micType": "XLR",
     "pattern": "Cardioid",
     "sampleRate": 0,
-    "bench": 91
+    "bench": 98
   },
   {
     "id": 100070,
@@ -114212,7 +114212,7 @@ export const PARTS = [
     "micType": "Wireless",
     "pattern": "Omnidirectional",
     "sampleRate": 48,
-    "bench": 69
+    "bench": 55
   },
   {
     "id": 100071,
@@ -114227,7 +114227,7 @@ export const PARTS = [
     "sampleRate": "48kHz",
     "micType": "Wireless",
     "pattern": "Omnidirectional",
-    "bench": 54
+    "bench": 49
   },
   {
     "id": 100072,
@@ -114242,7 +114242,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Cardioid",
     "sampleRate": 192,
-    "bench": 88
+    "bench": 69
   },
   {
     "id": 100073,
@@ -114257,7 +114257,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Cardioid",
     "sampleRate": 192,
-    "bench": 88
+    "bench": 68
   },
   {
     "id": 100074,
@@ -114272,7 +114272,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Cardioid",
     "sampleRate": 96,
-    "bench": 83
+    "bench": 81
   },
   {
     "id": 100075,
@@ -114287,7 +114287,7 @@ export const PARTS = [
     "micType": "XLR",
     "pattern": "Cardioid",
     "sampleRate": 0,
-    "bench": 90
+    "bench": 96
   },
   {
     "id": 100076,
@@ -114302,7 +114302,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Omnidirectional",
     "sampleRate": 48,
-    "bench": 71
+    "bench": 77
   },
   {
     "id": 100077,
@@ -114317,7 +114317,7 @@ export const PARTS = [
     "resolution": "1080p",
     "fps": 30,
     "autofocus": true,
-    "bench": 69
+    "bench": 66
   },
   {
     "id": 100078,
@@ -114332,7 +114332,7 @@ export const PARTS = [
     "resolution": "1080p",
     "fps": 30,
     "autofocus": true,
-    "bench": 69
+    "bench": 66
   },
   {
     "id": 100079,
@@ -114347,7 +114347,7 @@ export const PARTS = [
     "resolution": "1080p",
     "fps": 30,
     "autofocus": true,
-    "bench": 69
+    "bench": 66
   },
   {
     "id": 100080,
@@ -114362,7 +114362,7 @@ export const PARTS = [
     "resolution": "1080p",
     "fps": 30,
     "autofocus": true,
-    "bench": 69
+    "bench": 66
   },
   {
     "id": 100081,
@@ -114377,7 +114377,7 @@ export const PARTS = [
     "resolution": "1080p",
     "fps": 30,
     "autofocus": true,
-    "bench": 69
+    "bench": 66
   },
   {
     "id": 100082,
@@ -114392,7 +114392,7 @@ export const PARTS = [
     "resolution": "4K",
     "fps": 30,
     "autofocus": true,
-    "bench": 89
+    "bench": 69
   },
   {
     "id": 100083,
@@ -114407,7 +114407,7 @@ export const PARTS = [
     "resolution": "4K",
     "fps": 30,
     "autofocus": true,
-    "bench": 89
+    "bench": 70
   },
   {
     "id": 100084,
@@ -114422,7 +114422,7 @@ export const PARTS = [
     "resolution": "1080p",
     "autofocus": true,
     "fps": 30,
-    "bench": 64
+    "bench": 47
   },
   {
     "id": 100085,
@@ -114437,7 +114437,7 @@ export const PARTS = [
     "resolution": "4K",
     "fps": 30,
     "autofocus": true,
-    "bench": 89
+    "bench": 70
   },
   {
     "id": 100086,
@@ -114452,7 +114452,7 @@ export const PARTS = [
     "resolution": "1080p",
     "fps": 30,
     "autofocus": false,
-    "bench": 48
+    "bench": 49
   },
   {
     "id": 100087,
@@ -114467,7 +114467,7 @@ export const PARTS = [
     "resolution": "4K",
     "fps": 60,
     "autofocus": true,
-    "bench": 96
+    "bench": 76
   },
   {
     "id": 100088,
@@ -114482,7 +114482,7 @@ export const PARTS = [
     "resolution": "1080p",
     "fps": 100,
     "autofocus": true,
-    "bench": 74
+    "bench": 57
   },
   {
     "id": 100089,
@@ -114497,7 +114497,7 @@ export const PARTS = [
     "resolution": "4K",
     "fps": 60,
     "autofocus": true,
-    "bench": 100
+    "bench": 93
   },
   {
     "id": 100090,
@@ -114512,7 +114512,7 @@ export const PARTS = [
     "resolution": "4K",
     "fps": 60,
     "autofocus": true,
-    "bench": 100
+    "bench": 94
   },
   {
     "id": 100091,
@@ -114527,7 +114527,7 @@ export const PARTS = [
     "resolution": "4K",
     "fps": 30,
     "autofocus": true,
-    "bench": 94
+    "bench": 87
   },
   {
     "id": 100092,
@@ -114542,7 +114542,7 @@ export const PARTS = [
     "resolution": "1080p",
     "autofocus": false,
     "fps": 30,
-    "bench": 48
+    "bench": 49
   },
   {
     "id": 100093,
@@ -114557,7 +114557,7 @@ export const PARTS = [
     "resolution": "1080p",
     "fps": 30,
     "autofocus": true,
-    "bench": 68
+    "bench": 64
   },
   {
     "id": 100094,
@@ -114572,7 +114572,7 @@ export const PARTS = [
     "resolution": "1440p",
     "fps": 60,
     "autofocus": true,
-    "bench": 86
+    "bench": 83
   },
   {
     "id": 100095,
@@ -114586,7 +114586,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-Heavy-Cloth-Gaming-Mouse/dp/B000V7ARAU/ref=sr_1_1?crid=Q3S9LJ9PYQSO&dib=eyJ2IjoiMSJ9.yiE8bON2mh9qtX_zWZvqVu8QTIqvKs0sx1SYQmtrYtWjMbweE68ZKMA36GGOSGIbgN5qswevNdYkqO1fX142ZtjhZFqoP3TsV83UgEUhRPjZEtf0dbwZ_Yboh8gdqkRyYBi89NAzJPjNBRKVW6pgd2RuGpP1nZU6NivTX34bZ_YU4aqnLDlxEyaFqOpBNvRY8IttFoXRpR68rjxveL1Yo3uzg0ohPk_CbESs6Euy6frSarmhSZ0AXyj5MarC9gJbd4aGBKXJ_t3wuUtpr-x-E9VUqM17HNaUauqb2zEpYNc.X5pO14GJsj9lxHeWu_BbpA3PNJaR8MO_XNrXLDgjWo8&dib_tag=se&keywords=SteelSeries+QcK+Heavy&qid=1777130818&sprefix=SteelSeries%2BQcK%2BHeavy%2Caps%2C252&sr=8-1&tag=tiereduptech-20", "price":24.99, "inStock":true}},
     "padSize": "Large",
     "surface": "Cloth",
-    "bench": 84
+    "bench": 68
   },
   {
     "id": 100096,
@@ -114600,7 +114600,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-QcK-Cloth-Gaming-Mouse/dp/B000UVRU6G/ref=sr_1_4?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-4&tag=tiereduptech-20", "price":19.99, "inStock":true}},
     "padSize": "Large",
     "surface": "Cloth",
-    "bench": 84
+    "bench": 68
   },
   {
     "id": 100097,
@@ -114614,7 +114614,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-QcK-Gaming-Mouse-Pad-PC/dp/B0D1T1HZCC/ref=sr_1_5?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-5&tag=tiereduptech-20", "price":29.99, "inStock":true}},
     "surface": "Cloth",
     "padSize": "XXL",
-    "bench": 94
+    "bench": 75
   },
   {
     "id": 100098,
@@ -114628,7 +114628,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-QcK-Gaming-Surface-Optimized/dp/B000UEZ36W/ref=sr_1_8?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-8&tag=tiereduptech-20", "price":10.99, "inStock":true}},
     "padSize": "Medium",
     "surface": "Cloth",
-    "bench": 76
+    "bench": 62
   },
   {
     "id": 100099,
@@ -114642,7 +114642,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-Heavy-Cloth-Gaming-Mouse/dp/B00WAA2704/ref=sr_1_7?crid=0A983AQ8MDHC&dib=eyJ2IjoiMSJ9.oVqO6q8WNbpz_n9ytBDRHpkLNIy7YAqzI3_ecP5SaAwhjPoKJNXAlS0_X7Z7ifuQhpVzO2DzGhC8C30YZwo6FlA4BpCizKcQSCaPpbVKuRdXd6ITmF9Y_T29EbQQ-7xtF1dLJzvUp-hFxfawthhVtJOUZhaaUAlJxsMa-J1wyKWaHLB6Lwaeg0gV37dpQkpjVA5xp8_i_3NTRCITV9OG6-3V3hj280ZOQ3EZBi0UaoyqoB14-TK8zV5qHR-S2r3a_vpuew98mbkyp4aCIMezQkvu8OpGb4Z6jVIXsHx13Ag.Zbn_jD7k3vwdqR1gS9Sk_9NCkmvtfGHAsVm7-PZHhhQ&dib_tag=se&keywords=Glorious+3XL+mousepad&qid=1777130818&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Glorious%2B3XL%2Bmousepad%2Caps%2C247&sr=8-7&tag=tiereduptech-20", "price":29.99, "inStock":true}},
     "surface": "Cloth",
     "padSize": "XXL",
-    "bench": 94
+    "bench": 75
   },
   {
     "id": 100100,
@@ -114656,7 +114656,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Leather-Protector-Non-Slip-Blotter-Waterproof/dp/B082F5ZLS5/ref=sr_1_26?crid=O7OBLNC4EHMD&dib=eyJ2IjoiMSJ9.7Xc9D48WwXKjU77p2qN8MSKpy-X3YkcYB6YYmFy05y4WbI93DXPmuGuAoaWFEU4N-x2_QLeoyYhEZ5rmUqlHY6fsXnRIJIMrOCEX7EfbSpuIFVsKkAdVSnwFWn0xk4KTkQRlxmU0oltrC6e7ZqA7FkOpsky7D2y53miRPzGJiRdtYE7wQHYQ-HEVVH9zzV0fyp_e4qLnhjB2IBOXM35gLGLiIyjk7qFjXt_tNI8KwP0.DW4q6Z42gZJ29kitiWIHxXsCLd0UaXeGsou8hH7ZlzQ&dib_tag=se&keywords=desk+mat+XXL&qid=1777130821&sprefix=desk%2Bmat%2BXXL%2Caps%2C146&sr=8-26&xpid=eUCGAcyb4Bpy3&tag=tiereduptech-20", "price":13.99, "inStock":true}},
     "surface": "Hard",
     "padSize": "Large",
-    "bench": 78
+    "bench": 51
   },
   {
     "id": 100101,
@@ -114670,7 +114670,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/KTRIO-Stitched-Superior-Micro-Weave-Non-Slip/dp/B0788LMLZL/ref=sr_1_6?crid=KQDLJ9BDNTG8&dib=eyJ2IjoiMSJ9.RPajjEDW5WQ1_RKETkkiH8rxdiQknrxVAZAFks-5WBWM_Tg_w9rPwuB0sgsPiqKCAoq_iqni0B3CaAziGN1n5_TGYZ2aN6td-FfA_fnIsLaOTxv5xNVUAFUeMS7Dfx0ktBXcJ_jckh-EBUyl1K_6FLr6BWfmD4GDENLP14ifkkh_cWCcvLkC_arHvtIJjpozaIpJrTZPUbFtHclYGNiaEGB5x7rt6900Z_5BmD_DsgQv0eTssGbQdH6b-jZKcUtWOOOsOvdNvmKgO_7f7adb9AgPz2ZqH4qe9VNK0CZeZpE.Xa3P6q1V1p1-FR9EZQnE6aTdmAOjWIHrJlHmatcTpBE&dib_tag=se&keywords=large+gaming+mousepad&qid=1777130819&sprefix=large%2Bgaming%2Bmousepad%2Caps%2C152&sr=8-6&tag=tiereduptech-20", "price":13.97, "inStock":true}},
     "surface": "Cloth",
     "padSize": "XXL",
-    "bench": 84
+    "bench": 57
   },
   {
     "id": 100102,
@@ -114684,7 +114684,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-QcK-Gaming-Surface-Micro-Woven/dp/B07HZ6NZNJ/ref=sr_1_1?crid=47RFIWYR70UT&dib=eyJ2IjoiMSJ9.VDCgBIb85FjE4hXzJYcCAR4aBq7I69sER8UnhVNuXLSjX9pZYlM-qI3FpmXRCDVSM28CfjO3a0BFy8UandTxh79GwhCeMX0X5Le3nKqMbu2Hgcd1C0K0z_gwEd9cHESmgWWJsIcW4zFEhnfQHQAJ9_yIdhPOUjnVVvUOphOQYNEsAWtiMM-QpUxyzOLWPMUxtMtIryr8nisa9oSFR_EQFCKtWXRvgui2fc12BeG8zGo.bG89kX8dayL-Lct-A0TydbWCpgVwQyTJb_lKvle-s0M&dib_tag=se&keywords=SteelSeries+QcK+Prism&qid=1777130824&sprefix=SteelSeries%2BQcK%2BPrism%2Caps%2C197&sr=8-1&tag=tiereduptech-20", "price":44.99, "inStock":true}},
     "surface": "Cloth",
     "padSize": "Medium",
-    "bench": 76
+    "bench": 67
   },
   {
     "id": 100103,
@@ -114698,7 +114698,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Cmhoo-Professional-Large-Computer-35-4x15-7x0-1IN/dp/B01F0XHA5E/ref=sr_1_36?crid=KQDLJ9BDNTG8&dib=eyJ2IjoiMSJ9.RPajjEDW5WQ1_RKETkkiH8rxdiQknrxVAZAFks-5WBWM_Tg_w9rPwuB0sgsPiqKCAoq_iqni0B3CaAziGN1n5_TGYZ2aN6td-FfA_fnIsLaOTxv5xNVUAFUeMS7Dfx0ktBXcJ_jckh-EBUyl1K_6FLr6BWfmD4GDENLP14ifkkh_cWCcvLkC_arHvtIJjpozaIpJrTZPUbFtHclYGNiaEGB5x7rt6900Z_5BmD_DsgQv0eTssGbQdH6b-jZKcUtWOOOsOvdNvmKgO_7f7adb9AgPz2ZqH4qe9VNK0CZeZpE.Xa3P6q1V1p1-FR9EZQnE6aTdmAOjWIHrJlHmatcTpBE&dib_tag=se&keywords=large+gaming+mousepad&qid=1777130819&sprefix=large%2Bgaming%2Bmousepad%2Caps%2C152&sr=8-36&tag=tiereduptech-20", "price":13.98, "inStock":true}},
     "padSize": "Large",
     "surface": "Cloth",
-    "bench": 74
+    "bench": 51
   },
   {
     "id": 100104,
@@ -114712,7 +114712,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Mouse-Pad-Anti-Slip-Spill-Resistant/dp/B09DV56338/ref=sr_1_14?crid=6X92Q010DTS6&dib=eyJ2IjoiMSJ9.8zRBis50cNAcjldknHNTiqFVC1eD8OfG6EIsiJGwU-zVrcAmbtDslOYy7g2cm7YRBHuBFZtgdzxBU_MSLSz-wuybU4sJTot0PFE19VRstnBphB-IvLUA3XOKYNGsctkBPc3vN3vcPR024YwAb3Iw_crDLv7XZzk5Gb2g60lO6yb5sOlb8GMNounwKNAf1riwI2L8JcHhDCEOPIV8NS-wAEoXhbHfl6zmkoqMw2RKMfo.UrkV8gMKcupxnL3gS_hEem7Tp_qkmm5-T7p8CNW5Yuw&dib_tag=se&keywords=SteelSeries+QcK&qid=1777130819&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BQcK%2Caps%2C204&sr=8-14&tag=tiereduptech-20", "price":9.99, "inStock":true}},
     "surface": "Cloth",
     "padSize": "Medium",
-    "bench": 66
+    "bench": 44
   },
   {
     "id": 100105,
@@ -114726,7 +114726,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Gigantus-Cloth-Gaming-Mouse/dp/B0885FJ8CB/ref=sr_1_6?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-6&tag=tiereduptech-20", "price":26.98, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6417112&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6417112.p%3FskuId%3D6417112", "price": 26.99, "inStock": true}},
     "surface": "Cloth",
     "padSize": "XXL",
-    "bench": 94
+    "bench": 75
   },
   {
     "id": 100106,
@@ -114740,7 +114740,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/TEDNETGO-Large-Mouse-Pad-Gaming/dp/B08DS7FM9K/ref=sr_1_31?crid=0A983AQ8MDHC&dib=eyJ2IjoiMSJ9.oVqO6q8WNbpz_n9ytBDRHpkLNIy7YAqzI3_ecP5SaAwhjPoKJNXAlS0_X7Z7ifuQhpVzO2DzGhC8C30YZwo6FlA4BpCizKcQSCaPpbVKuRdXd6ITmF9Y_T29EbQQ-7xtF1dLJzvUp-hFxfawthhVtJOUZhaaUAlJxsMa-J1wyKWaHLB6Lwaeg0gV37dpQkpjVA5xp8_i_3NTRCITV9OG6-3V3hj280ZOQ3EZBi0UaoyqoB14-TK8zV5qHR-S2r3a_vpuew98mbkyp4aCIMezQkvu8OpGb4Z6jVIXsHx13Ag.Zbn_jD7k3vwdqR1gS9Sk_9NCkmvtfGHAsVm7-PZHhhQ&dib_tag=se&keywords=Glorious+3XL+mousepad&qid=1777130818&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Glorious%2B3XL%2Bmousepad%2Caps%2C247&sr=8-31&tag=tiereduptech-20", "price":8.42, "inStock":true}},
     "padSize": "XXL",
     "surface": "Cloth",
-    "bench": 84
+    "bench": 58
   },
   {
     "id": 100107,
@@ -114754,7 +114754,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/RGB-Mousepad-Led-Mouse-Large/dp/B08QFB5KVS/ref=sr_1_29?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-29&tag=tiereduptech-20", "price":13.99, "inStock":true}},
     "padSize": "Large",
     "surface": "Cloth",
-    "bench": 73
+    "bench": 54
   },
   {
     "id": 100108,
@@ -114768,7 +114768,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/HyperX-FURY-Optimized-Precision-450x400x4mm/dp/B072J47KJC/ref=sr_1_1?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-1&tag=tiereduptech-20", "price":29.99, "inStock":true}},
     "surface": "Cloth",
     "padSize": "Large",
-    "bench": 84
+    "bench": 68
   },
   {
     "id": 100109,
@@ -114782,7 +114782,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Goliathus-Extended-Chroma-Micro-Textured/dp/B07DG64YL9/ref=sr_1_2?crid=AE8OEQG4B6YA&dib=eyJ2IjoiMSJ9.zjAgFycW02ZIcvmii1yJk3D0qSwNGtz3K4lhUp_Dv4gLuzaPZiPzdSeBxd7Eu6iE7TZ_dJXHnk55no2gaoZOJBMCWme0ZUY8sMeJ6U87S8i1N9XbBHQvXqn0mIX2tXF6yRNR5gQOEP2cjO1VLtYKAQWibJQczHiV28-mJ52u9RNxAipfhV5VqsZOE1iGIWt86ialqG5erRQ3ycfer5L4LbURowX8o60hOyFdNgYq-kM.a65vdOAcw8NzasR7e_PLV-_vxm_HLRyZ60aMVj1P_RI&dib_tag=se&keywords=Razer+Goliathus+Extended&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BGoliathus%2BExtended%2Caps%2C285&sr=8-2&tag=tiereduptech-20", "price":57.69, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6318751&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6318751.p%3FskuId%3D6318751", "price": 59.99, "inStock": false}},
     "surface": "Cloth",
     "padSize": "XXL",
-    "bench": 94
+    "bench": 80
   },
   {
     "id": 100110,
@@ -114796,7 +114796,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/AmazonBasics-Large-Extended-Gaming-Computer/dp/B06X19FLTC/ref=sr_1_33?crid=0A983AQ8MDHC&dib=eyJ2IjoiMSJ9.oVqO6q8WNbpz_n9ytBDRHpkLNIy7YAqzI3_ecP5SaAwhjPoKJNXAlS0_X7Z7ifuQhpVzO2DzGhC8C30YZwo6FlA4BpCizKcQSCaPpbVKuRdXd6ITmF9Y_T29EbQQ-7xtF1dLJzvUp-hFxfawthhVtJOUZhaaUAlJxsMa-J1wyKWaHLB6Lwaeg0gV37dpQkpjVA5xp8_i_3NTRCITV9OG6-3V3hj280ZOQ3EZBi0UaoyqoB14-TK8zV5qHR-S2r3a_vpuew98mbkyp4aCIMezQkvu8OpGb4Z6jVIXsHx13Ag.Zbn_jD7k3vwdqR1gS9Sk_9NCkmvtfGHAsVm7-PZHhhQ&dib_tag=se&keywords=Glorious+3XL+mousepad&qid=1777130818&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Glorious%2B3XL%2Bmousepad%2Caps%2C247&sr=8-33&tag=tiereduptech-20", "price":13.59, "inStock":true}},
     "padSize": "XXL",
     "surface": "Cloth",
-    "bench": 83
+    "bench": 56
   },
   {
     "id": 100111,
@@ -114810,7 +114810,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-QcK-Gaming-Surface-Optimized/dp/B08BJDVWZ6/ref=sr_1_6?crid=0A983AQ8MDHC&dib=eyJ2IjoiMSJ9.oVqO6q8WNbpz_n9ytBDRHpkLNIy7YAqzI3_ecP5SaAwhjPoKJNXAlS0_X7Z7ifuQhpVzO2DzGhC8C30YZwo6FlA4BpCizKcQSCaPpbVKuRdXd6ITmF9Y_T29EbQQ-7xtF1dLJzvUp-hFxfawthhVtJOUZhaaUAlJxsMa-J1wyKWaHLB6Lwaeg0gV37dpQkpjVA5xp8_i_3NTRCITV9OG6-3V3hj280ZOQ3EZBi0UaoyqoB14-TK8zV5qHR-S2r3a_vpuew98mbkyp4aCIMezQkvu8OpGb4Z6jVIXsHx13Ag.Zbn_jD7k3vwdqR1gS9Sk_9NCkmvtfGHAsVm7-PZHhhQ&dib_tag=se&keywords=Glorious+3XL+mousepad&qid=1777130818&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Glorious%2B3XL%2Bmousepad%2Caps%2C247&sr=8-6&tag=tiereduptech-20", "price":54.99, "inStock":true}},
     "surface": "Cloth",
     "padSize": "XXL",
-    "bench": 94
+    "bench": 75
   },
   {
     "id": 100112,
@@ -114824,7 +114824,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/QIYI-Non-Slip-Waterproof-Mousepad-Computer/dp/B08JLW4KWN/ref=sr_1_32?crid=KQDLJ9BDNTG8&dib=eyJ2IjoiMSJ9.RPajjEDW5WQ1_RKETkkiH8rxdiQknrxVAZAFks-5WBWM_Tg_w9rPwuB0sgsPiqKCAoq_iqni0B3CaAziGN1n5_TGYZ2aN6td-FfA_fnIsLaOTxv5xNVUAFUeMS7Dfx0ktBXcJ_jckh-EBUyl1K_6FLr6BWfmD4GDENLP14ifkkh_cWCcvLkC_arHvtIJjpozaIpJrTZPUbFtHclYGNiaEGB5x7rt6900Z_5BmD_DsgQv0eTssGbQdH6b-jZKcUtWOOOsOvdNvmKgO_7f7adb9AgPz2ZqH4qe9VNK0CZeZpE.Xa3P6q1V1p1-FR9EZQnE6aTdmAOjWIHrJlHmatcTpBE&dib_tag=se&keywords=large+gaming+mousepad&qid=1777130819&sprefix=large%2Bgaming%2Bmousepad%2Caps%2C152&sr=8-32&tag=tiereduptech-20", "price":14.99, "inStock":true}},
     "padSize": "XXL",
     "surface": "Hard",
-    "bench": 88
+    "bench": 58
   },
   {
     "id": 100113,
@@ -114838,7 +114838,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Gaming-Mouse-Protector-Waterproof-Accessories/dp/B0CKMFL9CC/ref=sr_1_28?crid=KQDLJ9BDNTG8&dib=eyJ2IjoiMSJ9.RPajjEDW5WQ1_RKETkkiH8rxdiQknrxVAZAFks-5WBWM_Tg_w9rPwuB0sgsPiqKCAoq_iqni0B3CaAziGN1n5_TGYZ2aN6td-FfA_fnIsLaOTxv5xNVUAFUeMS7Dfx0ktBXcJ_jckh-EBUyl1K_6FLr6BWfmD4GDENLP14ifkkh_cWCcvLkC_arHvtIJjpozaIpJrTZPUbFtHclYGNiaEGB5x7rt6900Z_5BmD_DsgQv0eTssGbQdH6b-jZKcUtWOOOsOvdNvmKgO_7f7adb9AgPz2ZqH4qe9VNK0CZeZpE.Xa3P6q1V1p1-FR9EZQnE6aTdmAOjWIHrJlHmatcTpBE&dib_tag=se&keywords=large+gaming+mousepad&qid=1777130819&sprefix=large%2Bgaming%2Bmousepad%2Caps%2C152&sr=8-28&tag=tiereduptech-20", "price":9.99, "inStock":true}},
     "padSize": "XXL",
     "surface": "Cloth",
-    "bench": 84
+    "bench": 58
   },
   {
     "id": 100114,
@@ -115117,7 +115117,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 80,
     "dpi": 25600,
-    "bench": 75
+    "bench": 79
   },
   {
     "id": 100136,
@@ -115133,7 +115133,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 100,
     "dpi": 10000,
-    "bench": 59
+    "bench": 50
   },
   {
     "id": 100137,
@@ -115149,7 +115149,7 @@ export const PARTS = [
     "mouseType": "Wired",
     "weight": 87,
     "dpi": 25600,
-    "bench": 60
+    "bench": 61
   },
   {
     "id": 100138,
@@ -115165,7 +115165,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 110,
     "dpi": 12000,
-    "bench": 62
+    "bench": 56
   },
   {
     "id": 100139,
@@ -115181,7 +115181,7 @@ export const PARTS = [
     "mouseType": "Wired",
     "weight": 115,
     "dpi": 18000,
-    "bench": 50
+    "bench": 51
   },
   {
     "id": 100140,
@@ -115197,7 +115197,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 130,
     "dpi": 18000,
-    "bench": 60
+    "bench": 53
   },
   {
     "id": 100141,
@@ -115213,7 +115213,7 @@ export const PARTS = [
     "mouseType": "Wired",
     "weight": 100,
     "dpi": 16000,
-    "bench": 50
+    "bench": 52
   },
   {
     "id": 100142,
@@ -115229,7 +115229,7 @@ export const PARTS = [
     "mouseType": "Wired",
     "weight": 280,
     "dpi": 7200,
-    "bench": 36
+    "bench": 15
   },
   {
     "id": 100143,
@@ -115245,7 +115245,7 @@ export const PARTS = [
     "mouseType": "Wired",
     "weight": 122,
     "dpi": 18000,
-    "bench": 46
+    "bench": 45
   },
   {
     "id": 100144,
@@ -115261,7 +115261,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 133,
     "dpi": 18000,
-    "bench": 60
+    "bench": 54
   },
   {
     "id": 100145,
@@ -115277,7 +115277,7 @@ export const PARTS = [
     "mouseType": "Wired",
     "weight": 77,
     "dpi": 8500,
-    "bench": 54
+    "bench": 53
   },
   {
     "id": 100146,
@@ -115309,7 +115309,7 @@ export const PARTS = [
     "mouseType": "Wired",
     "weight": 68,
     "dpi": 8500,
-    "bench": 54
+    "bench": 59
   },
   {
     "id": 100148,
@@ -115325,7 +115325,7 @@ export const PARTS = [
     "mouseType": "Wired",
     "weight": 95,
     "dpi": 26000,
-    "bench": 60
+    "bench": 62
   },
   {
     "id": 100149,
@@ -115341,7 +115341,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 89,
     "dpi": 18000,
-    "bench": 70
+    "bench": 63
   },
   {
     "id": 100150,
@@ -115357,7 +115357,7 @@ export const PARTS = [
     "mouseType": "Wired",
     "weight": 59,
     "dpi": 16000,
-    "bench": 62
+    "bench": 72
   },
   {
     "id": 100151,
@@ -115373,7 +115373,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 85,
     "dpi": 8200,
-    "bench": 65
+    "bench": 57
   },
   {
     "id": 100152,
@@ -115389,7 +115389,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 69,
     "dpi": 19000,
-    "bench": 75
+    "bench": 77
   },
   {
     "id": 100153,
@@ -115405,7 +115405,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 91,
     "dpi": 30000,
-    "bench": 78
+    "bench": 75
   },
   {
     "id": 100154,
@@ -115421,7 +115421,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 168,
     "dpi": 19000,
-    "bench": 61
+    "bench": 55
   },
   {
     "id": 100155,
@@ -115437,7 +115437,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 54,
     "dpi": 36000,
-    "bench": 83
+    "bench": 89
   },
   {
     "id": 100156,
@@ -115453,7 +115453,7 @@ export const PARTS = [
     "mouseType": "Wired",
     "weight": 59,
     "dpi": 26000,
-    "bench": 66
+    "bench": 77
   },
   {
     "id": 100157,
@@ -115469,7 +115469,7 @@ export const PARTS = [
     "mouseType": "Wired",
     "weight": 58,
     "dpi": 8500,
-    "bench": 56
+    "bench": 61
   },
   {
     "id": 100158,
@@ -115501,7 +115501,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 60,
     "dpi": 32000,
-    "bench": 97
+    "bench": 100
   },
   {
     "id": 100160,
@@ -115517,7 +115517,7 @@ export const PARTS = [
     "mouseType": "Wired",
     "weight": 69,
     "dpi": 12400,
-    "bench": 57
+    "bench": 62
   },
   {
     "id": 100161,
@@ -115533,7 +115533,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 89,
     "dpi": 26000,
-    "bench": 74
+    "bench": 70
   },
   {
     "id": 100162,
@@ -115549,7 +115549,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 67,
     "dpi": 26000,
-    "bench": 79
+    "bench": 83
   },
   {
     "id": 100163,
@@ -115565,7 +115565,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 0,
     "dpi": 32000,
-    "bench": 79
+    "bench": 99
   },
   {
     "id": 100164,
@@ -115581,7 +115581,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 60,
     "dpi": 44000,
-    "bench": 97
+    "bench": 100
   },
   {
     "id": 100165,
@@ -115597,7 +115597,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 80,
     "dpi": 44000,
-    "bench": 88
+    "bench": 96
   },
   {
     "id": 100166,
@@ -115613,7 +115613,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 85,
     "dpi": 12400,
-    "bench": 68
+    "bench": 61
   },
   {
     "id": 100167,
@@ -115629,7 +115629,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 56,
     "dpi": 45000,
-    "bench": 84
+    "bench": 92
   },
   {
     "id": 100168,
@@ -115645,7 +115645,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 114,
     "dpi": 26000,
-    "bench": 69
+    "bench": 68
   },
   {
     "id": 100169,
@@ -115661,7 +115661,7 @@ export const PARTS = [
     "mouseType": "Wired",
     "weight": 55,
     "dpi": 26000,
-    "bench": 66
+    "bench": 78
   },
   {
     "id": 100170,
@@ -115677,7 +115677,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 66,
     "dpi": 26000,
-    "bench": 79
+    "bench": 84
   },
   {
     "id": 100171,
@@ -115693,7 +115693,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 69,
     "dpi": 26000,
-    "bench": 79
+    "bench": 83
   },
   {
     "id": 100172,
@@ -115709,7 +115709,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 36,
     "dpi": 26000,
-    "bench": 81
+    "bench": 86
   },
   {
     "id": 100173,
@@ -115725,7 +115725,7 @@ export const PARTS = [
     "dpi": 44000,
     "mouseType": "Wireless",
     "weight": 60,
-    "bench": 97
+    "bench": 100
   },
   {
     "id": 100174,
@@ -115741,7 +115741,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 0,
     "dpi": 18000,
-    "bench": 57
+    "bench": 67
   },
   {
     "id": 100175,
@@ -115757,7 +115757,7 @@ export const PARTS = [
     "sensor": "Optical",
     "weight": 61,
     "dpi": 44000,
-    "bench": 82
+    "bench": 89
   },
   {
     "id": 100176,
@@ -115773,7 +115773,7 @@ export const PARTS = [
     "mouseType": "Wireless",
     "weight": 49,
     "dpi": 45000,
-    "bench": 84
+    "bench": 92
   },
   {
     "id": 100177,
@@ -115789,7 +115789,7 @@ export const PARTS = [
     "layout": "Full-Size",
     "wireless": false,
     "rgb": true,
-    "bench": 47
+    "bench": 38
   },
   {
     "id": 100178,
@@ -115805,7 +115805,7 @@ export const PARTS = [
     "layout": "Full-Size",
     "wireless": false,
     "rgb": true,
-    "bench": 47
+    "bench": 39
   },
   {
     "id": 100180,
@@ -115821,7 +115821,7 @@ export const PARTS = [
     "layout": "Full-Size",
     "wireless": false,
     "rgb": true,
-    "bench": 61
+    "bench": 64
   },
   {
     "id": 100181,
@@ -115837,7 +115837,7 @@ export const PARTS = [
     "layout": "Full-Size",
     "wireless": false,
     "rgb": true,
-    "bench": 61
+    "bench": 64
   },
   {
     "id": 100182,
@@ -115853,7 +115853,7 @@ export const PARTS = [
     "layout": "TKL",
     "wireless": false,
     "rgb": true,
-    "bench": 66
+    "bench": 67
   },
   {
     "id": 100183,
@@ -115869,7 +115869,7 @@ export const PARTS = [
     "layout": "Full-Size",
     "wireless": false,
     "rgb": true,
-    "bench": 61
+    "bench": 64
   },
   {
     "id": 100184,
@@ -115885,7 +115885,7 @@ export const PARTS = [
     "layout": "65%",
     "wireless": false,
     "rgb": true,
-    "bench": 67
+    "bench": 68
   },
   {
     "id": 100185,
@@ -115901,7 +115901,7 @@ export const PARTS = [
     "layout": "60%",
     "wireless": false,
     "rgb": true,
-    "bench": 69
+    "bench": 75
   },
   {
     "id": 100186,
@@ -115917,7 +115917,7 @@ export const PARTS = [
     "layout": "65%",
     "wireless": true,
     "rgb": true,
-    "bench": 86
+    "bench": 76
   },
   {
     "id": 100187,
@@ -115933,7 +115933,7 @@ export const PARTS = [
     "layout": "Full-Size",
     "wireless": false,
     "rgb": true,
-    "bench": 47
+    "bench": 38
   },
   {
     "id": 100188,
@@ -115949,7 +115949,7 @@ export const PARTS = [
     "layout": "TKL",
     "wireless": false,
     "rgb": true,
-    "bench": 59
+    "bench": 53
   },
   {
     "id": 100190,
@@ -115965,7 +115965,7 @@ export const PARTS = [
     "layout": "TKL",
     "wireless": false,
     "rgb": true,
-    "bench": 69
+    "bench": 75
   },
   {
     "id": 100191,
@@ -115981,7 +115981,7 @@ export const PARTS = [
     "layout": "60%",
     "wireless": false,
     "rgb": true,
-    "bench": 66
+    "bench": 67
   },
   {
     "id": 100192,
@@ -115997,7 +115997,7 @@ export const PARTS = [
     "layout": "Full-Size",
     "wireless": false,
     "rgb": true,
-    "bench": 47
+    "bench": 38
   },
   {
     "id": 100193,
@@ -116013,7 +116013,7 @@ export const PARTS = [
     "layout": "TKL",
     "wireless": true,
     "rgb": true,
-    "bench": 86
+    "bench": 77
   },
   {
     "id": 100194,
@@ -116029,7 +116029,7 @@ export const PARTS = [
     "layout": "65%",
     "wireless": false,
     "rgb": true,
-    "bench": 59
+    "bench": 53
   },
   {
     "id": 100195,
@@ -116045,7 +116045,7 @@ export const PARTS = [
     "layout": "TKL",
     "wireless": false,
     "rgb": true,
-    "bench": 69
+    "bench": 74
   },
   {
     "id": 100196,
@@ -116061,7 +116061,7 @@ export const PARTS = [
     "layout": "Full-Size",
     "wireless": true,
     "rgb": true,
-    "bench": 80
+    "bench": 70
   },
   {
     "id": 100199,
@@ -116077,7 +116077,7 @@ export const PARTS = [
     "layout": "60%",
     "wireless": false,
     "rgb": true,
-    "bench": 69
+    "bench": 75
   },
   {
     "id": 100200,
@@ -116093,7 +116093,7 @@ export const PARTS = [
     "layout": "65%",
     "rgb": true,
     "wireless": false,
-    "bench": 69
+    "bench": 75
   },
   {
     "id": 100201,
@@ -116109,7 +116109,7 @@ export const PARTS = [
     "layout": "Full-Size",
     "wireless": false,
     "rgb": true,
-    "bench": 66
+    "bench": 72
   },
   {
     "id": 100203,
@@ -116125,7 +116125,7 @@ export const PARTS = [
     "layout": "TKL",
     "wireless": true,
     "rgb": true,
-    "bench": 86
+    "bench": 77
   },
   {
     "id": 100204,
@@ -116141,7 +116141,7 @@ export const PARTS = [
     "layout": "TKL",
     "wireless": true,
     "rgb": true,
-    "bench": 89
+    "bench": 84
   },
   {
     "id": 100205,
@@ -116157,7 +116157,7 @@ export const PARTS = [
     "layout": "Full-Size",
     "wireless": false,
     "rgb": true,
-    "bench": 66
+    "bench": 72
   },
   {
     "id": 100206,
@@ -116173,7 +116173,7 @@ export const PARTS = [
     "layout": "TKL",
     "wireless": true,
     "rgb": true,
-    "bench": 86
+    "bench": 77
   },
   {
     "id": 100207,
@@ -116189,7 +116189,7 @@ export const PARTS = [
     "wireless": false,
     "layout": "Full-Size",
     "rgb": true,
-    "bench": 66
+    "bench": 72
   },
   {
     "id": 100209,
@@ -116205,7 +116205,7 @@ export const PARTS = [
     "wireless": false,
     "switches": "Hall Effect",
     "rgb": true,
-    "bench": 74
+    "bench": 80
   },
   {
     "id": 100210,
@@ -116221,7 +116221,7 @@ export const PARTS = [
     "layout": "75%",
     "wireless": false,
     "rgb": true,
-    "bench": 71
+    "bench": 75
   },
   {
     "id": 100211,
@@ -116237,7 +116237,7 @@ export const PARTS = [
     "layout": "65%",
     "wireless": false,
     "rgb": true,
-    "bench": 71
+    "bench": 75
   },
   {
     "id": 100212,
@@ -116253,7 +116253,7 @@ export const PARTS = [
     "layout": "TKL",
     "wireless": false,
     "rgb": true,
-    "bench": 66
+    "bench": 71
   },
   {
     "id": 100213,
@@ -116269,7 +116269,7 @@ export const PARTS = [
     "layout": "TKL",
     "wireless": false,
     "rgb": false,
-    "bench": 50
+    "bench": 63
   },
   {
     "id": 100214,
@@ -116285,7 +116285,7 @@ export const PARTS = [
     "layout": "TKL",
     "wireless": false,
     "rgb": true,
-    "bench": 74
+    "bench": 82
   },
   {
     "id": 100215,
@@ -116301,7 +116301,7 @@ export const PARTS = [
     "wireless": true,
     "rgb": true,
     "switches": "Scissor",
-    "bench": 79
+    "bench": 60
   },
   {
     "id": 100216,
@@ -116317,7 +116317,7 @@ export const PARTS = [
     "layout": "75%",
     "wireless": true,
     "rgb": true,
-    "bench": 98
+    "bench": 97
   },
   {
     "id": 100217,
@@ -116333,7 +116333,7 @@ export const PARTS = [
     "layout": "75%",
     "wireless": true,
     "rgb": true,
-    "bench": 91
+    "bench": 85
   },
   {
     "id": 100218,
@@ -116349,7 +116349,7 @@ export const PARTS = [
     "layout": "75%",
     "wireless": false,
     "rgb": true,
-    "bench": 52
+    "bench": 42
   },
   {
     "id": 100219,
@@ -116365,7 +116365,7 @@ export const PARTS = [
     "layout": "96%",
     "wireless": false,
     "rgb": true,
-    "bench": 68
+    "bench": 76
   },
   {
     "id": 100220,
@@ -116381,7 +116381,7 @@ export const PARTS = [
     "layout": "96%",
     "wireless": false,
     "rgb": true,
-    "bench": 61
+    "bench": 64
   },
   {
     "id": 100221,
@@ -116397,7 +116397,7 @@ export const PARTS = [
     "layout": "Full-Size",
     "wireless": false,
     "rgb": true,
-    "bench": 69
+    "bench": 82
   },
   {
     "id": 100222,
@@ -116413,7 +116413,7 @@ export const PARTS = [
     "layout": "Full-Size",
     "wireless": false,
     "rgb": true,
-    "bench": 61
+    "bench": 64
   },
   {
     "id": 100223,
@@ -116429,7 +116429,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 69
+    "bench": 67
   },
   {
     "id": 100224,
@@ -116445,7 +116445,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 53
+    "bench": 55
   },
   {
     "id": 100225,
@@ -116461,7 +116461,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 54
+    "bench": 59
   },
   {
     "id": 100226,
@@ -116477,7 +116477,7 @@ export const PARTS = [
     "mic": true,
     "driver": 50,
     "anc": false,
-    "bench": 74
+    "bench": 79
   },
   {
     "id": 100227,
@@ -116493,7 +116493,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 68
+    "bench": 66
   },
   {
     "id": 100228,
@@ -116509,7 +116509,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 54
+    "bench": 57
   },
   {
     "id": 100229,
@@ -116525,7 +116525,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 69
+    "bench": 68
   },
   {
     "id": 100230,
@@ -116541,7 +116541,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 69
+    "bench": 68
   },
   {
     "id": 100231,
@@ -116557,7 +116557,7 @@ export const PARTS = [
     "mic": true,
     "driver": 50,
     "anc": false,
-    "bench": 75
+    "bench": 73
   },
   {
     "id": 100232,
@@ -116573,7 +116573,7 @@ export const PARTS = [
     "mic": true,
     "driver": 14,
     "anc": false,
-    "bench": 48
+    "bench": 40
   },
   {
     "id": 100233,
@@ -116589,7 +116589,7 @@ export const PARTS = [
     "mic": true,
     "driver": 50,
     "anc": false,
-    "bench": 61
+    "bench": 65
   },
   {
     "id": 100234,
@@ -116605,7 +116605,7 @@ export const PARTS = [
     "mic": true,
     "driver": 50,
     "anc": false,
-    "bench": 61
+    "bench": 65
   },
   {
     "id": 100235,
@@ -116621,7 +116621,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 69
+    "bench": 67
   },
   {
     "id": 100236,
@@ -116637,7 +116637,7 @@ export const PARTS = [
     "anc": true,
     "mic": true,
     "driver": 40,
-    "bench": 93
+    "bench": 88
   },
   {
     "id": 100237,
@@ -116653,7 +116653,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 53
+    "bench": 64
   },
   {
     "id": 100238,
@@ -116669,7 +116669,7 @@ export const PARTS = [
     "mic": true,
     "driver": 50,
     "anc": false,
-    "bench": 60
+    "bench": 64
   },
   {
     "id": 100239,
@@ -116701,7 +116701,7 @@ export const PARTS = [
     "anc": true,
     "mic": true,
     "driver": 8,
-    "bench": 88
+    "bench": 74
   },
   {
     "id": 100241,
@@ -116717,7 +116717,7 @@ export const PARTS = [
     "driver": 40,
     "mic": true,
     "anc": false,
-    "bench": 68
+    "bench": 74
   },
   {
     "id": 100242,
@@ -116733,7 +116733,7 @@ export const PARTS = [
     "mic": true,
     "driver": 50,
     "anc": false,
-    "bench": 61
+    "bench": 66
   },
   {
     "id": 100243,
@@ -116749,7 +116749,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 53
+    "bench": 55
   },
   {
     "id": 100244,
@@ -116765,7 +116765,7 @@ export const PARTS = [
     "mic": false,
     "driver": 40,
     "anc": false,
-    "bench": 44
+    "bench": 49
   },
   {
     "id": 100245,
@@ -116781,7 +116781,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 54
+    "bench": 57
   },
   {
     "id": 100246,
@@ -116797,7 +116797,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 54
+    "bench": 57
   },
   {
     "id": 100247,
@@ -116813,7 +116813,7 @@ export const PARTS = [
     "mic": true,
     "driver": 50,
     "anc": true,
-    "bench": 100
+    "bench": 89
   },
   {
     "id": 100248,
@@ -116829,7 +116829,7 @@ export const PARTS = [
     "mic": true,
     "driver": 50,
     "anc": true,
-    "bench": 100
+    "bench": 89
   },
   {
     "id": 100249,
@@ -116845,7 +116845,7 @@ export const PARTS = [
     "mic": true,
     "driver": 50,
     "anc": false,
-    "bench": 74
+    "bench": 71
   },
   {
     "id": 100250,
@@ -116861,7 +116861,7 @@ export const PARTS = [
     "anc": true,
     "mic": true,
     "driver": 6,
-    "bench": 87
+    "bench": 64
   },
   {
     "id": 100251,
@@ -116893,7 +116893,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 69
+    "bench": 67
   },
   {
     "id": 100253,
@@ -116909,7 +116909,7 @@ export const PARTS = [
     "mic": true,
     "driver": 50,
     "anc": false,
-    "bench": 76
+    "bench": 75
   },
   {
     "id": 100254,
@@ -116925,7 +116925,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 68
+    "bench": 66
   },
   {
     "id": 100255,
@@ -116941,7 +116941,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 69
+    "bench": 68
   },
   {
     "id": 100256,
@@ -116957,7 +116957,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 69
+    "bench": 70
   },
   {
     "id": 100257,
@@ -116989,7 +116989,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 68
+    "bench": 66
   },
   {
     "id": 100259,
@@ -117005,7 +117005,7 @@ export const PARTS = [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 69
+    "bench": 67
   },
   {
     "id": 100260,
@@ -117020,7 +117020,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Dynamic",
     "sampleRate": 44,
-    "bench": 67
+    "bench": 52
   },
   {
     "id": 100261,
@@ -117035,7 +117035,7 @@ export const PARTS = [
     "pattern": "Dynamic",
     "micType": "XLR",
     "sampleRate": 0,
-    "bench": 86
+    "bench": 96
   },
   {
     "id": 100262,
@@ -117050,7 +117050,7 @@ export const PARTS = [
     "micType": "XLR",
     "pattern": "Cardioid",
     "sampleRate": 0,
-    "bench": 91
+    "bench": 98
   },
   {
     "id": 100263,
@@ -117065,7 +117065,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Dynamic",
     "sampleRate": 48,
-    "bench": 72
+    "bench": 77
   },
   {
     "id": 100264,
@@ -117095,7 +117095,7 @@ export const PARTS = [
     "pattern": "Cardioid",
     "micType": "XLR",
     "sampleRate": 0,
-    "bench": 90
+    "bench": 87
   },
   {
     "id": 100266,
@@ -117110,7 +117110,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Cardioid",
     "sampleRate": 48,
-    "bench": 79
+    "bench": 83
   },
   {
     "id": 100267,
@@ -117125,7 +117125,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Cardioid",
     "sampleRate": 96,
-    "bench": 84
+    "bench": 90
   },
   {
     "id": 100268,
@@ -117140,7 +117140,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Cardioid",
     "sampleRate": 96,
-    "bench": 84
+    "bench": 64
   },
   {
     "id": 100269,
@@ -117155,7 +117155,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Cardioid",
     "sampleRate": 96,
-    "bench": 84
+    "bench": 65
   },
   {
     "id": 100270,
@@ -117170,7 +117170,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Multi-Pattern",
     "sampleRate": 48,
-    "bench": 84
+    "bench": 90
   },
   {
     "id": 100271,
@@ -117185,7 +117185,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Multi-Pattern",
     "sampleRate": 48,
-    "bench": 83
+    "bench": 89
   },
   {
     "id": 100272,
@@ -117200,7 +117200,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Cardioid",
     "sampleRate": 96,
-    "bench": 83
+    "bench": 81
   },
   {
     "id": 100273,
@@ -117215,7 +117215,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Cardioid",
     "sampleRate": 48,
-    "bench": 79
+    "bench": 83
   },
   {
     "id": 100274,
@@ -117230,7 +117230,7 @@ export const PARTS = [
     "pattern": "Cardioid",
     "micType": "XLR",
     "sampleRate": 0,
-    "bench": 91
+    "bench": 97
   },
   {
     "id": 100275,
@@ -117245,7 +117245,7 @@ export const PARTS = [
     "pattern": "Cardioid",
     "micType": "USB",
     "sampleRate": 48,
-    "bench": 78
+    "bench": 73
   },
   {
     "id": 100276,
@@ -117260,7 +117260,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Condenser",
     "sampleRate": 48,
-    "bench": 77
+    "bench": 73
   },
   {
     "id": 100277,
@@ -117275,7 +117275,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Multi-Pattern",
     "sampleRate": 96,
-    "bench": 89
+    "bench": 90
   },
   {
     "id": 100278,
@@ -117290,7 +117290,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Cardioid",
     "sampleRate": 96,
-    "bench": 83
+    "bench": 63
   },
   {
     "id": 100279,
@@ -117305,7 +117305,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Cardioid",
     "sampleRate": 192,
-    "bench": 90
+    "bench": 72
   },
   {
     "id": 100280,
@@ -117320,7 +117320,7 @@ export const PARTS = [
     "micType": "USB",
     "pattern": "Cardioid",
     "sampleRate": 96,
-    "bench": 84
+    "bench": 82
   },
   {
     "id": 100281,
@@ -117335,7 +117335,7 @@ export const PARTS = [
     "micType": "XLR",
     "pattern": "Cardioid",
     "sampleRate": 0,
-    "bench": 92
+    "bench": 99
   },
   {
     "id": 100282,
@@ -117350,7 +117350,7 @@ export const PARTS = [
     "resolution": "1080p",
     "autofocus": true,
     "fps": 30,
-    "bench": 69
+    "bench": 67
   },
   {
     "id": 100283,
@@ -117365,7 +117365,7 @@ export const PARTS = [
     "resolution": "1080p",
     "autofocus": true,
     "fps": 30,
-    "bench": 69
+    "bench": 67
   },
   {
     "id": 100284,
@@ -117380,7 +117380,7 @@ export const PARTS = [
     "resolution": "4K",
     "autofocus": true,
     "fps": 30,
-    "bench": 94
+    "bench": 89
   },
   {
     "id": 100285,
@@ -117395,7 +117395,7 @@ export const PARTS = [
     "resolution": "720p",
     "autofocus": true,
     "fps": 30,
-    "bench": 59
+    "bench": 51
   },
   {
     "id": 100286,
@@ -117410,7 +117410,7 @@ export const PARTS = [
     "resolution": "1080p",
     "autofocus": true,
     "fps": 30,
-    "bench": 69
+    "bench": 67
   },
   {
     "id": 100287,
@@ -117425,7 +117425,7 @@ export const PARTS = [
     "resolution": "1080p",
     "autofocus": true,
     "fps": 60,
-    "bench": 76
+    "bench": 72
   },
   {
     "id": 100288,
@@ -117440,7 +117440,7 @@ export const PARTS = [
     "resolution": "1080p",
     "autofocus": true,
     "fps": 30,
-    "bench": 69
+    "bench": 65
   },
   {
     "id": 100289,
@@ -117455,7 +117455,7 @@ export const PARTS = [
     "resolution": "1080p",
     "autofocus": true,
     "fps": 30,
-    "bench": 69
+    "bench": 66
   },
   {
     "id": 100290,
@@ -117470,7 +117470,7 @@ export const PARTS = [
     "resolution": "1080p",
     "autofocus": false,
     "fps": 30,
-    "bench": 49
+    "bench": 51
   },
   {
     "id": 100291,
@@ -117485,7 +117485,7 @@ export const PARTS = [
     "resolution": "4K",
     "autofocus": true,
     "fps": 60,
-    "bench": 100
+    "bench": 96
   },
   {
     "id": 100292,
@@ -117500,7 +117500,7 @@ export const PARTS = [
     "resolution": "4K",
     "autofocus": true,
     "fps": 30,
-    "bench": 94
+    "bench": 89
   },
   {
     "id": 100293,
@@ -117515,7 +117515,7 @@ export const PARTS = [
     "resolution": "4K",
     "autofocus": true,
     "fps": 30,
-    "bench": 95
+    "bench": 90
   },
   {
     "id": 100294,
@@ -117530,7 +117530,7 @@ export const PARTS = [
     "resolution": "720p",
     "autofocus": false,
     "fps": 30,
-    "bench": 39
+    "bench": 34
   },
   {
     "id": 100295,
@@ -117544,7 +117544,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=2822575&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F2822575.p%3FskuId%3D2822575","price":10.99,"inStock":true}},
     "surface": "Cloth",
     "padSize": "Medium",
-    "bench": 76
+    "bench": 63
   },
   {
     "id": 100296,
@@ -117558,7 +117558,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4384400&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4384400.p%3FskuId%3D4384400","price":6.99,"inStock":true}},
     "padSize": "Medium",
     "surface": "Cloth",
-    "bench": 76
+    "bench": 62
   },
   {
     "id": 100297,
@@ -117572,7 +117572,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5869549&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5869549.p%3FskuId%3D5869549","price":7.99,"inStock":true}},
     "surface": "Cloth",
     "padSize": "Small",
-    "bench": 70
+    "bench": 55
   },
   {
     "id": 100298,
@@ -117586,7 +117586,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6285961&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6285961.p%3FskuId%3D6285961","price":59.99,"inStock":true}},
     "surface": "Cloth",
     "padSize": "XXL",
-    "bench": 93
+    "bench": 79
   },
   {
     "id": 100299,
@@ -117600,7 +117600,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6428299&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6428299.p%3FskuId%3D6428299","price":32.99,"inStock":true}},
     "surface": "Cloth",
     "padSize": "XXL",
-    "bench": 94
+    "bench": 76
   },
   {
     "id": 100300,
@@ -117614,7 +117614,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6428301&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6428301.p%3FskuId%3D6428301","price":24.99,"inStock":true}},
     "surface": "Cloth",
     "padSize": "XXL",
-    "bench": 95
+    "bench": 77
   },
   {
     "id": 100301,
@@ -117628,7 +117628,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6476680&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6476680.p%3FskuId%3D6476680","price":49.99,"inStock":true}},
     "surface": "Hard",
     "padSize": "Medium",
-    "bench": 81
+    "bench": 70
   },
   {
     "id": 100302,
@@ -117642,7 +117642,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6482628&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6482628.p%3FskuId%3D6482628","price":49.99,"inStock":true}},
     "surface": "Hybrid",
     "padSize": "XXL",
-    "bench": 97
+    "bench": 81
   },
   {
     "id": 100303,
@@ -117656,7 +117656,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6499566&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6499566.p%3FskuId%3D6499566","price":29.99,"inStock":true}},
     "padSize": "XXL",
     "surface": "Cloth",
-    "bench": 94
+    "bench": 76
   },
   {
     "id": 100304,
@@ -117670,7 +117670,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6514575&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6514575.p%3FskuId%3D6514575","price":9.99,"inStock":true}},
     "surface": "Cloth",
     "padSize": "Small",
-    "bench": 70
+    "bench": 56
   },
   {
     "id": 100305,
@@ -117684,7 +117684,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6514577&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6514577.p%3FskuId%3D6514577","price":34.99,"inStock":true}},
     "surface": "Cloth",
     "padSize": "XL",
-    "bench": 88
+    "bench": 71
   },
   {
     "id": 100306,
@@ -117698,7 +117698,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6514578&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6514578.p%3FskuId%3D6514578","price":19.99,"inStock":true}},
     "surface": "Cloth",
     "padSize": "Large",
-    "bench": 84
+    "bench": 68
   },
   {
     "id": 100307,
@@ -117712,7 +117712,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578719&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578719.p%3FskuId%3D6578719","price":34.99,"inStock":true}},
     "surface": "Cloth",
     "padSize": "Large",
-    "bench": 84
+    "bench": 68
   },
   {
     "id": 100308,
@@ -117726,7 +117726,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586270&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586270.p%3FskuId%3D6586270","price":99.99,"inStock":false}},
     "surface": "Cloth",
     "padSize": "Medium",
-    "bench": 76
+    "bench": 68
   },
   {
     "id": 100309,
@@ -117740,7 +117740,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614722&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614722.p%3FskuId%3D6614722","price":49.99,"inStock":true}},
     "padSize": "XXL",
     "surface": "Cloth",
-    "bench": 94
+    "bench": 76
   },
   {
     "id": 100311,
@@ -117754,7 +117754,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6484056&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6484056.p%3FskuId%3D6484056","price":9.99,"inStock":true}},
     "padSize": "Medium",
     "surface": "Cloth",
-    "bench": 76
+    "bench": 63
   },
   {
     "id": 100312,
@@ -117768,7 +117768,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6484067&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6484067.p%3FskuId%3D6484067","price":19.99,"inStock":true}},
     "padSize": "XXL",
     "surface": "Cloth",
-    "bench": 94
+    "bench": 76
   }
 ];
 
