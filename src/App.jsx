@@ -545,6 +545,45 @@ html, body, #root {
   flex-shrink: 0;
   white-space: nowrap;
 }
+.wizard-row {
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color .15s, background .15s;
+}
+.wizard-row:hover {
+  border-color: var(--accent) !important;
+  background: var(--bg4) !important;
+}
+.wizard-row-buy {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--ff);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 5px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+.wizard-row:hover .wizard-row-buy {
+  background: var(--accent2);
+}
+.wizard-row-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+@media (max-width: 600px) {
+  .wizard-row-buy {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}
 @media (max-width: 600px) {
   .wizard-container {
     padding: 0 8px;
@@ -4262,13 +4301,16 @@ function ToolsPage({th}){
         {wizStep===3&&wizResult&&<div>
           <h3 style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:700,color:"var(--txt)",marginBottom:4}}>Your Recommended Build</h3>
           <p style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",marginBottom:16}}>${wizBudget} {wizUse} build · {wizPriority} priority</p>
-          {Object.entries(wizResult).map(([cat,p])=><div key={cat} className="wizard-row">
+          {Object.entries(wizResult).map(([cat,p])=>{const rr=retailers(p);const url=rr[0]?.url;return <a key={cat} href={url||'#'} target={url?"_blank":undefined} rel={url?"noopener noreferrer":undefined} onClick={url?undefined:e=>e.preventDefault()} className="wizard-row" style={{color:"inherit"}}>
             <div className="wizard-row-info">
               <div className="wizard-row-img">{p.img?<img loading="lazy" decoding="async" src={p.img} alt=""/>:CAT[cat]?.icon}</div>
               <div className="wizard-row-text"><div className="wizard-row-name">{p.n}</div><div className="wizard-row-cat">{CAT[cat]?.singular}</div></div>
             </div>
-            <span className="wizard-row-price">${fmtPrice($(p))}</span>
-          </div>)}
+            <div className="wizard-row-meta">
+              <span className="wizard-row-price">${fmtPrice($(p))}</span>
+              {url&&<span className="wizard-row-buy">Buy →</span>}
+            </div>
+          </a>;})}
           <div style={{display:"flex",justifyContent:"space-between",padding:"10px 10px",marginTop:8,borderTop:"1px solid var(--bdr)"}}>
             <span style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>Total</span>
             <span style={{fontFamily:"var(--mono)",fontSize:20,fontWeight:700,color:"var(--mint)"}}>${Object.values(wizResult).reduce((s,p)=>s+$(p),0)}</span>
