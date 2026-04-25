@@ -319,13 +319,13 @@ table { max-width: 100%; }
   footer button { padding: 8px 0 !important; min-height: 32px; }
 
   /* Hero padding on narrow screens */
-  [style*="padding:\"72px 32px"] { padding: 40px 18px !important; }
+  [style*="padding:72px 32px"] { padding: 40px 18px !important; }
 
   /* Pills/cards in grids become stack-friendly */
   [style*="gridTemplateColumns"] { gap: 12px !important; }
 
   /* Large wizard/tool grids */
-  [style*="gridTemplateColumns:\"2fr"], [style*="gridTemplateColumns:\"4fr"] {
+  [style*="gridTemplateColumns:2fr"], [style*="gridTemplateColumns:4fr"] {
     grid-template-columns: 1fr !important;
   }
 }
@@ -345,7 +345,7 @@ table { max-width: 100%; }
     grid-template-columns: repeat(2, 1fr) !important;
   }
   /* Sticky sidebar: unstick on mobile so it flows with content */
-  [style*="position:\"sticky"][style*="top:80"] {
+  [style*="position:sticky"][style*="top:80"] {
     position: static !important;
   }
 }
