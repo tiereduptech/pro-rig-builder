@@ -69,3 +69,4 @@ src/App.jsx.pre-*.backup
 src/UpgradePage.jsx.pre-*.backup
 # Patch scripts (one-time use)
 patch-*.mjs
+.prorig-github-token
