@@ -46,7 +46,7 @@ const CAT={
   WiFiCard:{icon:"📶",label:"WiFi Adapters",singular:"WiFi Card",desc:"WiFi 6E/7 PCIe cards",cols:["wifiStandard","maxSpeed","bt","antennas","pcieLane"],filters:{wifiStandard:{label:"WiFi Standard",type:"check"},bt:{label:"Bluetooth",type:"check"},antennas:{label:"Antennas",type:"check"},pcieLane:{label:"PCIe Lane",type:"check"},band:{label:"Band",type:"check"},heatsink:{label:"Heatsink",type:"bool"}}},
   OpticalDrive:{icon:"💿",label:"Optical Drives",singular:"Optical Drive",desc:"Blu-ray & DVD drives",cols:["driveType","readSpeed","writeSpeed"],filters:{driveType:{label:"Type",type:"check"},interface:{label:"Interface",type:"check"}}},
   InternalLCD:{icon:"📺",label:"Internal LCDs",singular:"Internal LCD",desc:"Case-mounted monitoring screens",cols:[]},
-  ExtensionCables:{icon:"🔗",label:"Extension Cables",singular:"Cable Kit",desc:"Sleeved PSU extensions",cols:[],multi:true,maxQty:4},
+  ExtensionCables:{icon:"🔗",label:"Extension Cables",singular:"Cable Kit",desc:"Sleeved PSU extensions",cols:["cableType","cableLength"],filters:{cableType:{label:"Type",type:"check"}},multi:true,maxQty:4},
   
   InternalDisplay:{icon:"🖥️",label:"Internal Displays",singular:"Display",desc:"LCD/IPS screens for inside your PC case",cols:["size","resolution","connection"],filters:{size:{label:"Screen Size",type:"check"},connection:{label:"Connection",type:"check"},panelType:{label:"Panel",type:"check"},ecosystem:{label:"Ecosystem",type:"check"},touch:{label:"Touchscreen",type:"bool"}}},
 OS:{icon:"🪟",label:"Operating Systems",singular:"OS",desc:"Windows & Linux",cols:[]},
@@ -55,9 +55,9 @@ OS:{icon:"🪟",label:"Operating Systems",singular:"OS",desc:"Windows & Linux",c
   Keyboard:{icon:"⌨️",label:"Keyboards",singular:"Keyboard",desc:"Mechanical & membrane",cols:["switches","layout","wireless"],filters:{switches:{label:"Switch Type",type:"check"},layout:{label:"Layout",type:"check"},wireless:{label:"Wireless",type:"bool"},rgb:{label:"RGB",type:"bool"}}},
   Mouse:{icon:"🖱️",label:"Mice",singular:"Mouse",desc:"Gaming & productivity mice",cols:["sensor","dpi","weight"],filters:{mouseType:{label:"Connectivity",type:"check"},weight:{label:"Weight",type:"range",unit:"g"},dpi:{label:"Max DPI",type:"range"}}},
   Headset:{icon:"🎧",label:"Headsets",singular:"Headset",desc:"Gaming & audiophile",cols:["hsType","driver","mic"],filters:{hsType:{label:"Connectivity",type:"check"},mic:{label:"Microphone",type:"bool"},anc:{label:"ANC",type:"bool"}}},
-  Webcam:{icon:"📷",label:"Webcams",singular:"Webcam",desc:"4K & 1080p cameras",cols:[]},
-  Microphone:{icon:"🎙️",label:"Microphones",singular:"Microphone",desc:"USB & XLR mics",cols:[]},
-  MousePad:{icon:"🖼️",label:"Mouse Pads",singular:"Mouse Pad",desc:"Cloth & hard surface",cols:[]},
+  Webcam:{icon:"📷",label:"Webcams",singular:"Webcam",desc:"4K & 1080p cameras",cols:["resolution","fps","autofocus"],filters:{resolution:{label:"Resolution",type:"check"},autofocus:{label:"Autofocus",type:"bool"}}},
+  Microphone:{icon:"🎙️",label:"Microphones",singular:"Microphone",desc:"USB & XLR mics",cols:["micType","pattern","sampleRate"],filters:{micType:{label:"Connection",type:"check"},pattern:{label:"Polar Pattern",type:"check"}}},
+  MousePad:{icon:"🖼️",label:"Mouse Pads",singular:"Mouse Pad",desc:"Cloth & hard surface",cols:["surface","padSize"],filters:{surface:{label:"Surface",type:"check"},padSize:{label:"Size",type:"check"}}},
   Chair:{icon:"💺",label:"Chairs",singular:"Chair",desc:"Gaming & ergonomic chairs",cols:[]},
   Desk:{icon:"🗄️",label:"Desks",singular:"Desk",desc:"Standing & fixed desks",cols:[]},
   // Accessories
