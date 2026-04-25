@@ -4169,8 +4169,8 @@ function ToolsPage({th}){
           <p style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",marginBottom:16}}>${wizBudget} {wizUse} build · {wizPriority} priority</p>
           {Object.entries(wizResult).map(([cat,p])=><div key={cat} style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"8px 10px",borderRadius:6,background:"var(--bg3)",marginBottom:4,border:"1px solid var(--bdr)"}}>
             <div style={{display:"flex",alignItems:"center",gap:8}}>
-              <span style={{fontSize:14}}>{CAT[cat]?.icon}</span>
-              <div><div style={{fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--txt)"}}>{p.n}</div><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>{CAT[cat]?.singular}</div></div>
+              <div style={{width:36,height:36,borderRadius:6,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:14,flexShrink:0,overflow:"hidden"}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt="" style={{width:"100%",height:"100%",objectFit:"contain"}}/>:CAT[cat]?.icon}</div>
+              <div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.n}</div><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>{CAT[cat]?.singular}</div></div>
             </div>
             <span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</span>
           </div>)}
