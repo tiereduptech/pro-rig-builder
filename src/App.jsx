@@ -3630,7 +3630,7 @@ function ToolsPage({th}){
       if(who==="CPU"){const better=Object.entries(CPU_SCORES).filter(([k,v])=>v>cpuScore).sort((a,b)=>a[1]-b[1])[0];if(better)cpuUpgrade={name:better[0],score:better[1],gain:Math.round((better[1]-cpuScore)/cpuScore*100)};}
       if(who==="GPU"){const better=Object.entries(GPU_SCORES).filter(([k,v])=>v>gpuScore&&v<gpuScore*1.5).sort((a,b)=>a[1]-b[1])[0];if(better)gpuUpgrade={name:better[0],score:better[1],gain:Math.round((better[1]-gpuScore)/gpuScore*100)};}
       const gameResults=["Cyberpunk 2077","Valorant","Fortnite","Elden Ring"].map(g=>{const r=estimateFPS(gpuKey,cpuKey,g,bnRes,"Ultra");return r;}).filter(Boolean);
-      console.log("[BOTTLENECK DEBUG]",{gpuKey,cpuKey,cpuMarkRaw:cpuProd?.cpuMark,g3dMarkRaw:gpuProd?.g3dMark,who,severity,cpuPct,gpuPct,ratio,bnRes});setBnResult({gpuKey,cpuKey,gpuScore,cpuScore,who,severity,cpuPct,gpuPct,ratio:Math.round(ratio*100),cpuUpgrade,gpuUpgrade,res:bnRes,gameResults});
+      setBnResult({gpuKey,cpuKey,gpuScore,cpuScore,who,severity,cpuPct,gpuPct,ratio:Math.round(ratio*100),cpuUpgrade,gpuUpgrade,res:bnRes,gameResults});
     }
     setBnLoading(false);
   };
