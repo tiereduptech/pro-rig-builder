@@ -115,12 +115,17 @@ const bestPrice = p => {
   return Math.min(...keys.map(k => p.deals[k].price));
 };
 const $ = p => bestPrice(p);
-const ACCESSORY_VALUE_CATS=new Set(["Mouse","Keyboard","Headset","Microphone","Webcam","MousePad","ExtensionCables","CPUCooler","CaseFan","Monitor"]);
+const VALUE_DIVISORS={
+  Mouse:15,Keyboard:15,Headset:15,Microphone:15,Webcam:15,MousePad:15,ExtensionCables:15,CaseFan:15,
+  CPUCooler:18,
+  Motherboard:50
+};
 const valueRatio=p=>{
   const b=p.bench||0;
   const pr=$(p);
   if(!pr||!b)return 0;
-  const divisor=ACCESSORY_VALUE_CATS.has(p.c)?Math.max(pr/15,1):Math.max(pr/100,1);
+  const div=VALUE_DIVISORS[p.c]||100;
+  const divisor=Math.max(pr/div,1);
   return b/divisor;
 };
 

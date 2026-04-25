@@ -5160,7 +5160,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 0
+    "value": 0,
+    "bench": 100
   },
   {
     "id": 20001,
@@ -5192,7 +5193,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 9
+    "value": 9,
+    "bench": 100
   },
   {
     "id": 20002,
@@ -5224,7 +5226,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 0
+    "value": 0,
+    "bench": 100
   },
   {
     "id": 20003,
@@ -5256,7 +5259,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 32
+    "value": 32,
+    "bench": 100
   },
   {
     "id": 20004,
@@ -5288,7 +5292,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 17
+    "value": 17,
+    "bench": 100
   },
   {
     "id": 20005,
@@ -5320,7 +5325,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 17
+    "value": 17,
+    "bench": 92
   },
   {
     "id": 20006,
@@ -5352,7 +5358,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 32
+    "value": 32,
+    "bench": 92
   },
   {
     "id": 20007,
@@ -5384,7 +5391,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 34
+    "value": 34,
+    "bench": 95
   },
   {
     "id": 20008,
@@ -5416,7 +5424,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 67
+    "value": 67,
+    "bench": 87
   },
   {
     "id": 20009,
@@ -5448,7 +5457,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 76
+    "value": 76,
+    "bench": 88
   },
   {
     "id": 20010,
@@ -5480,7 +5490,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 93
+    "value": 93,
+    "bench": 64
   },
   {
     "id": 20011,
@@ -5512,7 +5523,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 93
+    "value": 93,
+    "bench": 52
   },
   {
     "id": 20012,
@@ -5544,7 +5556,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 61
+    "value": 61,
+    "bench": 80
   },
   {
     "id": 20013,
@@ -5576,7 +5589,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 51
+    "value": 51,
+    "bench": 76
   },
   {
     "id": 20014,
@@ -5608,7 +5622,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 61
+    "value": 61,
+    "bench": 76
   },
   {
     "id": 20015,
@@ -5640,7 +5655,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 84
+    "value": 84,
+    "bench": 64
   },
   {
     "id": 20016,
@@ -5672,7 +5688,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 74
+    "value": 74,
+    "bench": 60
   },
   {
     "id": 20017,
@@ -5704,7 +5721,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 8
+    "value": 8,
+    "bench": 100
   },
   {
     "id": 20018,
@@ -5736,7 +5754,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 0
+    "value": 0,
+    "bench": 100
   },
   {
     "id": 20019,
@@ -5768,7 +5787,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 27
+    "value": 27,
+    "bench": 100
   },
   {
     "id": 20020,
@@ -5800,7 +5820,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 22
+    "value": 22,
+    "bench": 100
   },
   {
     "id": 20021,
@@ -5832,7 +5853,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 22
+    "value": 22,
+    "bench": 100
   },
   {
     "id": 20022,
@@ -5864,7 +5886,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 0
+    "value": 0,
+    "bench": 100
   },
   {
     "id": 20023,
@@ -5896,7 +5919,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 37
+    "value": 37,
+    "bench": 100
   },
   {
     "id": 20024,
@@ -5928,7 +5952,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 40
+    "value": 40,
+    "bench": 100
   },
   {
     "id": 20025,
@@ -5960,7 +5985,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 93
+    "value": 93,
+    "bench": 76
   },
   {
     "id": 20026,
@@ -5992,7 +6018,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 47
+    "value": 47,
+    "bench": 77
   },
   {
     "id": 20027,
@@ -6024,7 +6051,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 100
+    "value": 100,
+    "bench": 61
   },
   {
     "id": 20028,
@@ -6056,7 +6084,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 83
+    "value": 83,
+    "bench": 68
   },
   {
     "id": 20030,
@@ -6088,7 +6117,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 0
+    "value": 0,
+    "bench": 100
   },
   {
     "id": 20033,
@@ -6120,7 +6150,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 83
+    "value": 83,
+    "bench": 67
   },
   {
     "id": 20034,
@@ -6152,7 +6183,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 34
+    "value": 34,
+    "bench": 100
   },
   {
     "id": 20035,
@@ -6184,7 +6216,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 42
+    "value": 42,
+    "bench": 100
   },
   {
     "id": 20036,
@@ -6216,7 +6249,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 17
+    "value": 17,
+    "bench": 100
   },
   {
     "id": 20037,
@@ -6248,7 +6282,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 61
+    "value": 61,
+    "bench": 94
   },
   {
     "id": 20038,
@@ -6280,7 +6315,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 41
+    "value": 41,
+    "bench": 100
   },
   {
     "id": 20039,
@@ -6312,7 +6348,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 26
+    "value": 26,
+    "bench": 100
   },
   {
     "id": 20040,
@@ -6344,7 +6381,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 9
+    "value": 9,
+    "bench": 100
   },
   {
     "id": 20041,
@@ -6376,7 +6414,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 40
+    "value": 40,
+    "bench": 96
   },
   {
     "id": 20042,
@@ -6410,7 +6449,8 @@ export const PARTS = [
     },
     "value": 56,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 66
   },
   {
     "id": 20043,
@@ -6442,7 +6482,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 67
+    "value": 67,
+    "bench": 59
   },
   {
     "id": 20044,
@@ -6474,7 +6515,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 61
+    "value": 61,
+    "bench": 90
   },
   {
     "id": 20045,
@@ -6506,7 +6548,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 100
+    "value": 100,
+    "bench": 54
   },
   {
     "id": 20046,
@@ -6538,7 +6581,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 100
+    "value": 100,
+    "bench": 68
   },
   {
     "id": 20047,
@@ -6570,7 +6614,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 74
+    "value": 74,
+    "bench": 72
   },
   {
     "id": 20048,
@@ -6602,7 +6647,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 34
+    "value": 34,
+    "bench": 83
   },
   {
     "id": 20049,
@@ -6634,7 +6680,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 17
+    "value": 17,
+    "bench": 80
   },
   {
     "id": 20050,
@@ -6666,7 +6713,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 23
+    "value": 23,
+    "bench": 91
   },
   {
     "id": 20051,
@@ -6702,7 +6750,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6",
-    "value": 93
+    "value": 93,
+    "bench": 66
   },
   {
     "id": 20052,
@@ -6743,7 +6792,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 63
+    "value": 63,
+    "bench": 78
   },
   {
     "id": 20053,
@@ -6784,7 +6834,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 34
+    "value": 34,
+    "bench": 89
   },
   {
     "id": 20054,
@@ -6825,7 +6876,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 60
+    "value": 60,
+    "bench": 75
   },
   {
     "id": 20055,
@@ -6860,7 +6912,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 18
+    "value": 18,
+    "bench": 90
   },
   {
     "id": 20056,
@@ -6901,7 +6954,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 10
+    "value": 10,
+    "bench": 87
   },
   {
     "id": 20057,
@@ -6942,7 +6996,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 43
+    "value": 43,
+    "bench": 76
   },
   {
     "id": 20058,
@@ -6983,7 +7038,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 43
+    "value": 43,
+    "bench": 83
   },
   {
     "id": 20059,
@@ -7018,7 +7074,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 0,
-    "bundle": true
+    "bundle": true,
+    "bench": 78
   },
   {
     "id": 20060,
@@ -7053,7 +7110,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 0,
-    "bundle": true
+    "bundle": true,
+    "bench": 75
   },
   {
     "id": 20061,
@@ -7088,7 +7146,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 15,
-    "bundle": true
+    "bundle": true,
+    "bench": 68
   },
   {
     "id": 20062,
@@ -7123,7 +7182,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 2,
-    "bundle": true
+    "bundle": true,
+    "bench": 67
   },
   {
     "id": 20063,
@@ -7158,7 +7218,8 @@ export const PARTS = [
     "wifi": "WiFi 6E",
     "ff": "ATX",
     "value": 1,
-    "bundle": true
+    "bundle": true,
+    "bench": 69
   },
   {
     "id": 20064,
@@ -7193,7 +7254,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "None",
     "value": 9,
-    "bundle": true
+    "bundle": true,
+    "bench": 63
   },
   {
     "id": 20065,
@@ -7220,7 +7282,8 @@ export const PARTS = [
     "wifi": "None",
     "ff": "ATX",
     "memType": "DDR5",
-    "value": 17
+    "value": 17,
+    "bench": 62
   },
   {
     "id": 20066,
@@ -7255,7 +7318,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 0,
-    "bundle": true
+    "bundle": true,
+    "bench": 79
   },
   {
     "id": 20067,
@@ -7290,7 +7354,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 0,
-    "bundle": true
+    "bundle": true,
+    "bench": 70
   },
   {
     "id": 20068,
@@ -7326,7 +7391,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi 7",
     "value": 0,
-    "bundle": true
+    "bundle": true,
+    "bench": 79
   },
   {
     "id": 20069,
@@ -7361,7 +7427,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 0,
-    "bundle": true
+    "bundle": true,
+    "bench": 63
   },
   {
     "id": 20070,
@@ -7397,7 +7464,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi 6",
     "value": 8,
-    "bundle": true
+    "bundle": true,
+    "bench": 72
   },
   {
     "id": 20071,
@@ -7432,7 +7500,8 @@ export const PARTS = [
     "wifi": "None",
     "ff": "mATX",
     "value": 8,
-    "bundle": true
+    "bundle": true,
+    "bench": 57
   },
   {
     "id": 20072,
@@ -7467,7 +7536,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 0,
-    "bundle": true
+    "bundle": true,
+    "bench": 81
   },
   {
     "id": 20073,
@@ -7502,7 +7572,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 0,
-    "bundle": true
+    "bundle": true,
+    "bench": 72
   },
   {
     "id": 20074,
@@ -7538,7 +7609,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 100
+    "value": 100,
+    "bench": 59
   },
   {
     "id": 20075,
@@ -7574,7 +7646,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 99
+    "value": 99,
+    "bench": 61
   },
   {
     "id": 20076,
@@ -7610,7 +7683,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6",
-    "value": 74
+    "value": 74,
+    "bench": 66
   },
   {
     "id": 20077,
@@ -7651,7 +7725,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 96
+    "value": 96,
+    "bench": 62
   },
   {
     "id": 20078,
@@ -7687,7 +7762,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 100
+    "value": 100,
+    "bench": 63
   },
   {
     "id": 20079,
@@ -7723,7 +7799,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi",
     "memType": "DDR5",
-    "value": 32
+    "value": 32,
+    "bench": 86
   },
   {
     "id": 20080,
@@ -7764,7 +7841,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 39
+    "value": 39,
+    "bench": 81
   },
   {
     "id": 20081,
@@ -7805,7 +7883,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6E",
-    "value": 100
+    "value": 100,
+    "bench": 82
   },
   {
     "id": 20082,
@@ -7839,7 +7918,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 56
+    "value": 56,
+    "bench": 76
   },
   {
     "id": 20083,
@@ -7874,7 +7954,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 6",
-    "value": 92
+    "value": 92,
+    "bench": 59
   },
   {
     "id": 20084,
@@ -7914,7 +7995,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 63
+    "value": 63,
+    "bench": 71
   },
   {
     "id": 20085,
@@ -7949,7 +8031,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 75
+    "value": 75,
+    "bench": 64
   },
   {
     "id": 20086,
@@ -7989,7 +8072,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 31
+    "value": 31,
+    "bench": 82
   },
   {
     "id": 20087,
@@ -8024,7 +8108,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 100
+    "value": 100,
+    "bench": 48
   },
   {
     "id": 20088,
@@ -8064,7 +8149,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 29
+    "value": 29,
+    "bench": 93
   },
   {
     "id": 20089,
@@ -8100,7 +8186,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 2
+    "value": 2,
+    "bench": 82
   },
   {
     "id": 20090,
@@ -8141,7 +8228,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 96
+    "value": 96,
+    "bench": 59
   },
   {
     "id": 20091,
@@ -8176,7 +8264,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 80
+    "value": 80,
+    "bench": 63
   },
   {
     "id": 20092,
@@ -8216,7 +8305,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 26
+    "value": 26,
+    "bench": 93
   },
   {
     "id": 20093,
@@ -8256,7 +8346,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 28
+    "value": 28,
+    "bench": 88
   },
   {
     "id": 20094,
@@ -8297,7 +8388,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 44
+    "value": 44,
+    "bench": 87
   },
   {
     "id": 20095,
@@ -8337,7 +8429,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 21
+    "value": 21,
+    "bench": 93
   },
   {
     "id": 20096,
@@ -8377,7 +8470,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 6E",
-    "value": 44
+    "value": 44,
+    "bench": 84
   },
   {
     "id": 20097,
@@ -8412,7 +8506,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 46
+    "value": 46,
+    "bench": 79
   },
   {
     "id": 20098,
@@ -8453,7 +8548,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 41
+    "value": 41,
+    "bench": 77
   },
   {
     "id": 20099,
@@ -8489,7 +8585,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 96
+    "value": 96,
+    "bench": 65
   },
   {
     "id": 20100,
@@ -8524,7 +8621,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "None",
-    "value": 78
+    "value": 78,
+    "bench": 52
   },
   {
     "id": 20101,
@@ -8560,7 +8658,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 54
+    "value": 54,
+    "bench": 72
   },
   {
     "id": 20102,
@@ -8591,7 +8690,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "ATX",
-    "value": 87
+    "value": 87,
+    "bench": 60
   },
   {
     "id": 20103,
@@ -8627,7 +8727,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 96
+    "value": 96,
+    "bench": 48
   },
   {
     "id": 20104,
@@ -8663,7 +8764,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 21
+    "value": 21,
+    "bench": 83
   },
   {
     "id": 20105,
@@ -8699,7 +8801,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 61
+    "value": 61,
+    "bench": 73
   },
   {
     "id": 20106,
@@ -8738,7 +8841,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 15
+    "value": 15,
+    "bench": 86
   },
   {
     "id": 20107,
@@ -8773,7 +8877,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 81
+    "value": 81,
+    "bench": 70
   },
   {
     "id": 20108,
@@ -8807,7 +8912,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 100
+    "value": 100,
+    "bench": 51
   },
   {
     "id": 20109,
@@ -8842,7 +8948,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "WiFi",
-    "value": 42
+    "value": 42,
+    "bench": 62
   },
   {
     "id": 20110,
@@ -8877,7 +8984,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 72
+    "value": 72,
+    "bench": 65
   },
   {
     "id": 20111,
@@ -8913,7 +9021,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "ATX",
     "wifi": "None",
-    "value": 52
+    "value": 52,
+    "bench": 79
   },
   {
     "id": 20112,
@@ -8949,7 +9058,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6",
-    "value": 46
+    "value": 46,
+    "bench": 86
   },
   {
     "id": 20113,
@@ -8985,7 +9095,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "mATX",
-    "value": 65
+    "value": 65,
+    "bench": 65
   },
   {
     "id": 20114,
@@ -9026,7 +9137,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 23
+    "value": 23,
+    "bench": 82
   },
   {
     "id": 20115,
@@ -9066,7 +9178,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 6E",
-    "value": 51
+    "value": 51,
+    "bench": 79
   },
   {
     "id": 20116,
@@ -9100,7 +9213,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 47
+    "value": 47,
+    "bench": 77
   },
   {
     "id": 20117,
@@ -9133,7 +9247,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "WiFi 6E",
-    "value": 33
+    "value": 33,
+    "bench": 67
   },
   {
     "id": 20118,
@@ -9174,7 +9289,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 6E",
-    "value": 53
+    "value": 53,
+    "bench": 78
   },
   {
     "id": 20119,
@@ -9214,7 +9330,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 37
+    "value": 37,
+    "bench": 99
   },
   {
     "id": 20120,
@@ -9250,7 +9367,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 4
+    "value": 4,
+    "bench": 86
   },
   {
     "id": 20121,
@@ -9284,7 +9402,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "E-ATX",
     "wifi": "WiFi 7",
-    "value": 16
+    "value": 16,
+    "bench": 100
   },
   {
     "id": 20122,
@@ -9324,7 +9443,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 6E",
-    "value": 73
+    "value": 73,
+    "bench": 75
   },
   {
     "id": 20123,
@@ -9360,7 +9480,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 35
+    "value": 35,
+    "bench": 78
   },
   {
     "id": 20124,
@@ -9395,7 +9516,8 @@ export const PARTS = [
     "wifi": "WiFi",
     "ff": "mATX",
     "value": 29,
-    "bundle": true
+    "bundle": true,
+    "bench": 42
   },
   {
     "id": 20125,
@@ -9430,7 +9552,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 75
+    "value": 75,
+    "bench": 67
   },
   {
     "id": 20126,
@@ -9465,7 +9588,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "ATX",
     "wifi": "None",
-    "value": 0
+    "value": 0,
+    "bench": 91
   },
   {
     "id": 20127,
@@ -9499,7 +9623,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 20
+    "value": 20,
+    "bench": 71
   },
   {
     "id": 20128,
@@ -9534,7 +9659,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 5",
     "ff": "mATX",
-    "value": 96
+    "value": 96,
+    "bench": 55
   },
   {
     "id": 20129,
@@ -9568,7 +9694,8 @@ export const PARTS = [
     "memSlots": 2,
     "wifi": "None",
     "ff": "mATX",
-    "value": 100
+    "value": 100,
+    "bench": 46
   },
   {
     "id": 20130,
@@ -9603,7 +9730,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 51
+    "value": 51,
+    "bench": 71
   },
   {
     "id": 20131,
@@ -9639,7 +9767,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 67
+    "value": 67,
+    "bench": 74
   },
   {
     "id": 20132,
@@ -9673,7 +9802,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 86
+    "value": 86,
+    "bench": 63
   },
   {
     "id": 20133,
@@ -9709,7 +9839,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 43
+    "value": 43,
+    "bench": 81
   },
   {
     "id": 20134,
@@ -9744,7 +9875,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 63
+    "value": 63,
+    "bench": 79
   },
   {
     "id": 20135,
@@ -9780,7 +9912,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6E",
-    "value": 51
+    "value": 51,
+    "bench": 78
   },
   {
     "id": 20136,
@@ -9814,7 +9947,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 6E",
-    "value": 70
+    "value": 70,
+    "bench": 75
   },
   {
     "id": 20137,
@@ -9850,7 +9984,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 11
+    "value": 11,
+    "bench": 86
   },
   {
     "id": 20138,
@@ -9885,7 +10020,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "None",
-    "value": 76
+    "value": 76,
+    "bench": 47
   },
   {
     "id": 20139,
@@ -9926,7 +10062,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 17
+    "value": 17,
+    "bench": 86
   },
   {
     "id": 20140,
@@ -9961,7 +10098,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "None",
-    "value": 77
+    "value": 77,
+    "bench": 44
   },
   {
     "id": 20141,
@@ -10002,7 +10140,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 39
+    "value": 39,
+    "bench": 82
   },
   {
     "id": 20142,
@@ -10042,7 +10181,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 14
+    "value": 14,
+    "bench": 85
   },
   {
     "id": 20143,
@@ -10076,7 +10216,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 34
+    "value": 34,
+    "bench": 78
   },
   {
     "id": 20144,
@@ -10110,7 +10251,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 100
+    "value": 100,
+    "bench": 64
   },
   {
     "id": 20145,
@@ -10143,7 +10285,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 6E",
-    "value": 74
+    "value": 74,
+    "bench": 76
   },
   {
     "id": 20146,
@@ -10179,7 +10322,8 @@ export const PARTS = [
     "memSlots": 2,
     "wifi": "None",
     "ff": "mATX",
-    "value": 91
+    "value": 91,
+    "bench": 48
   },
   {
     "id": 20147,
@@ -10220,7 +10364,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 47
+    "value": 47,
+    "bench": 76
   },
   {
     "id": 20148,
@@ -10253,7 +10398,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 100
+    "value": 100,
+    "bench": 48
   },
   {
     "id": 20149,
@@ -10286,7 +10432,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 86
+    "value": 86,
+    "bench": 66
   },
   {
     "id": 20150,
@@ -10325,7 +10472,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 29
+    "value": 29,
+    "bench": 87
   },
   {
     "id": 20151,
@@ -10360,7 +10508,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 100
+    "value": 100,
+    "bench": 48
   },
   {
     "id": 20152,
@@ -10401,7 +10550,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 17
+    "value": 17,
+    "bench": 85
   },
   {
     "id": 20153,
@@ -10436,7 +10586,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 16
+    "value": 16,
+    "bench": 88
   },
   {
     "id": 20154,
@@ -10472,7 +10623,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 7",
     "ff": "ATX",
-    "value": 18
+    "value": 18,
+    "bench": 88
   },
   {
     "id": 20155,
@@ -10506,7 +10658,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 48
+    "value": 48,
+    "bench": 75
   },
   {
     "id": 20156,
@@ -10542,7 +10695,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 33
+    "value": 33,
+    "bench": 82
   },
   {
     "id": 20157,
@@ -10582,7 +10736,8 @@ export const PARTS = [
     "memSlots": 1,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 32
+    "value": 32,
+    "bench": 81
   },
   {
     "id": 20158,
@@ -10618,7 +10773,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 36
+    "value": 36,
+    "bench": 90
   },
   {
     "id": 20159,
@@ -10659,7 +10815,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "ATX",
     "wifi": "WiFi 6E",
-    "value": 59
+    "value": 59,
+    "bench": 81
   },
   {
     "id": 20160,
@@ -10689,7 +10846,8 @@ export const PARTS = [
     "wifi": "None",
     "memType": "DDR4",
     "chipset": "H610",
-    "value": 100
+    "value": 100,
+    "bench": 46
   },
   {
     "id": 20161,
@@ -10724,7 +10882,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 19
+    "value": 19,
+    "bench": 88
   },
   {
     "id": 20162,
@@ -10765,7 +10924,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6E",
-    "value": 64
+    "value": 64,
+    "bench": 86
   },
   {
     "id": 20163,
@@ -10800,7 +10960,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 15
+    "value": 15,
+    "bench": 71
   },
   {
     "id": 20164,
@@ -10834,7 +10995,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 38
+    "value": 38,
+    "bench": 67
   },
   {
     "id": 20165,
@@ -10869,7 +11031,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 23
+    "value": 23,
+    "bench": 70
   },
   {
     "id": 20166,
@@ -10904,7 +11067,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "ATX",
     "wifi": "WiFi 5",
-    "value": 14
+    "value": 14,
+    "bench": 76
   },
   {
     "id": 20167,
@@ -10938,7 +11102,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 47
+    "value": 47,
+    "bench": 61
   },
   {
     "id": 20168,
@@ -10973,7 +11138,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "ATX",
-    "value": 30
+    "value": 30,
+    "bench": 66
   },
   {
     "id": 20169,
@@ -11014,7 +11180,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 38
+    "value": 38,
+    "bench": 84
   },
   {
     "id": 20170,
@@ -11049,7 +11216,8 @@ export const PARTS = [
     "memSlots": 1,
     "wifi": "None",
     "ff": "mATX",
-    "value": 100
+    "value": 100,
+    "bench": 45
   },
   {
     "id": 20171,
@@ -11084,7 +11252,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 46
+    "value": 46,
+    "bench": 74
   },
   {
     "id": 20172,
@@ -11118,7 +11287,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 51
+    "value": 51,
+    "bench": 73
   },
   {
     "id": 20173,
@@ -11153,7 +11323,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 10
+    "value": 10,
+    "bench": 53
   },
   {
     "id": 20174,
@@ -11187,7 +11358,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 63
+    "value": 63,
+    "bench": 63
   },
   {
     "id": 20175,
@@ -11220,7 +11392,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 5",
-    "value": 33
+    "value": 33,
+    "bench": 50
   },
   {
     "id": 20176,
@@ -11253,7 +11426,8 @@ export const PARTS = [
     "memSlots": 2,
     "wifi": "None",
     "ff": "mATX",
-    "value": 100
+    "value": 100,
+    "bench": 47
   },
   {
     "id": 20177,
@@ -11288,7 +11462,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 38
+    "value": 38,
+    "bench": 73
   },
   {
     "id": 20178,
@@ -11323,7 +11498,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 32
+    "value": 32,
+    "bench": 79
   },
   {
     "id": 20179,
@@ -11358,7 +11534,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 9
+    "value": 9,
+    "bench": 69
   },
   {
     "id": 20180,
@@ -11393,7 +11570,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 18
+    "value": 18,
+    "bench": 64
   },
   {
     "id": 20181,
@@ -11428,7 +11606,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 87
+    "value": 87,
+    "bench": 60
   },
   {
     "id": 20182,
@@ -11462,7 +11641,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 27
+    "value": 27,
+    "bench": 68
   },
   {
     "id": 20183,
@@ -11497,7 +11677,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 19
+    "value": 19,
+    "bench": 55
   },
   {
     "id": 20184,
@@ -11533,7 +11714,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 32
+    "value": 32,
+    "bench": 76
   },
   {
     "id": 20185,
@@ -11567,7 +11749,8 @@ export const PARTS = [
     "memSlots": 1,
     "ff": "ATX",
     "wifi": "None",
-    "value": 38
+    "value": 38,
+    "bench": 80
   },
   {
     "id": 20186,
@@ -11603,7 +11786,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 38
+    "value": 38,
+    "bench": 71
   },
   {
     "id": 20187,
@@ -11643,7 +11827,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 17
+    "value": 17,
+    "bench": 82
   },
   {
     "id": 20188,
@@ -11678,7 +11863,8 @@ export const PARTS = [
     "memSlots": 1,
     "ff": "ATX",
     "wifi": "WiFi 6E",
-    "value": 7
+    "value": 7,
+    "bench": 77
   },
   {
     "id": 20189,
@@ -11712,7 +11898,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 74
+    "value": 74,
+    "bench": 64
   },
   {
     "id": 20190,
@@ -11748,7 +11935,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi",
     "ff": "ATX",
-    "value": 42
+    "value": 42,
+    "bench": 69
   },
   {
     "id": 20191,
@@ -11788,7 +11976,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 13
+    "value": 13,
+    "bench": 65
   },
   {
     "id": 20192,
@@ -11822,7 +12011,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "mATX",
-    "value": 84
+    "value": 84,
+    "bench": 50
   },
   {
     "id": 20193,
@@ -11856,7 +12046,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 12
+    "value": 12,
+    "bench": 87
   },
   {
     "id": 20194,
@@ -11890,7 +12081,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 22
+    "value": 22,
+    "bench": 79
   },
   {
     "id": 20195,
@@ -11926,7 +12118,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 60
+    "value": 60,
+    "bench": 70
   },
   {
     "id": 20196,
@@ -11961,7 +12154,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 40
+    "value": 40,
+    "bench": 78
   },
   {
     "id": 20197,
@@ -11995,7 +12189,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 7",
     "ff": "ATX",
-    "value": 28
+    "value": 28,
+    "bench": 83
   },
   {
     "id": 20198,
@@ -12030,7 +12225,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 86
+    "value": 86,
+    "bench": 44
   },
   {
     "id": 20199,
@@ -12065,7 +12261,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 6",
     "ff": "mATX",
-    "value": 40
+    "value": 40,
+    "bench": 64
   },
   {
     "id": 20200,
@@ -12099,7 +12296,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 8
+    "value": 8,
+    "bench": 85
   },
   {
     "id": 20201,
@@ -12134,7 +12332,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 47
+    "value": 47,
+    "bench": 46
   },
   {
     "id": 20202,
@@ -12168,7 +12367,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 15
+    "value": 15,
+    "bench": 76
   },
   {
     "id": 20203,
@@ -12203,7 +12403,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "mATX",
-    "value": 69
+    "value": 69,
+    "bench": 61
   },
   {
     "id": 20204,
@@ -12238,7 +12439,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 77
+    "value": 77,
+    "bench": 53
   },
   {
     "id": 20205,
@@ -12274,7 +12476,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 81
+    "value": 81,
+    "bench": 49
   },
   {
     "id": 20206,
@@ -12308,7 +12511,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 33
+    "value": 33,
+    "bench": 66
   },
   {
     "id": 20207,
@@ -12343,7 +12547,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 31
+    "value": 31,
+    "bench": 82
   },
   {
     "id": 20208,
@@ -12377,7 +12582,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 7",
     "ff": "ATX",
-    "value": 34
+    "value": 34,
+    "bench": 89
   },
   {
     "id": 20209,
@@ -12412,7 +12618,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 57
+    "value": 57,
+    "bench": 64
   },
   {
     "id": 20210,
@@ -12448,7 +12655,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "WiFi",
-    "value": 21
+    "value": 21,
+    "bench": 66
   },
   {
     "id": 20211,
@@ -12482,7 +12690,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "mATX",
-    "value": 85
+    "value": 85,
+    "bench": 68
   },
   {
     "id": 20212,
@@ -12516,7 +12725,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 26
+    "value": 26,
+    "bench": 72
   },
   {
     "id": 20213,
@@ -12550,7 +12760,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 69
+    "value": 69,
+    "bench": 43
   },
   {
     "id": 20214,
@@ -12584,7 +12795,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 38
+    "value": 38,
+    "bench": 79
   },
   {
     "id": 20215,
@@ -12618,7 +12830,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 61
+    "value": 61,
+    "bench": 70
   },
   {
     "id": 20216,
@@ -12653,7 +12866,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 39
+    "value": 39,
+    "bench": 77
   },
   {
     "id": 20217,
@@ -12687,7 +12901,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 28
+    "value": 28,
+    "bench": 80
   },
   {
     "id": 20218,
@@ -12721,7 +12936,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 20
+    "value": 20,
+    "bench": 82
   },
   {
     "id": 20219,
@@ -12755,7 +12971,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 25
+    "value": 25,
+    "bench": 83
   },
   {
     "id": 20220,
@@ -12790,7 +13007,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 62
+    "value": 62,
+    "bench": 73
   },
   {
     "id": 20221,
@@ -12823,7 +13041,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "WiFi",
-    "value": 20
+    "value": 20,
+    "bench": 52
   },
   {
     "id": 20222,
@@ -12858,7 +13077,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 62
+    "value": 62,
+    "bench": 51
   },
   {
     "id": 20223,
@@ -12892,7 +13112,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi",
     "ff": "ATX",
-    "value": 23
+    "value": 23,
+    "bench": 84
   },
   {
     "id": 20224,
@@ -12927,7 +13148,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 18
+    "value": 18,
+    "bench": 68
   },
   {
     "id": 20225,
@@ -12963,7 +13185,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 8
+    "value": 8,
+    "bench": 80
   },
   {
     "id": 20226,
@@ -12997,7 +13220,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 36
+    "value": 36,
+    "bench": 62
   },
   {
     "id": 20227,
@@ -13032,7 +13256,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 44
+    "value": 44,
+    "bench": 73
   },
   {
     "id": 20228,
@@ -13067,7 +13292,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "E-ATX",
     "wifi": "None",
-    "value": 3
+    "value": 3,
+    "bench": 90
   },
   {
     "id": 20229,
@@ -13101,7 +13327,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 43
+    "value": 43,
+    "bench": 84
   },
   {
     "id": 20230,
@@ -13135,7 +13362,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 43
+    "value": 43,
+    "bench": 61
   },
   {
     "id": 20231,
@@ -13169,7 +13397,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 7",
     "ff": "ATX",
-    "value": 39
+    "value": 39,
+    "bench": 85
   },
   {
     "id": 20232,
@@ -13203,7 +13432,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "WiFi",
-    "value": 17
+    "value": 17,
+    "bench": 66
   },
   {
     "id": 20233,
@@ -13237,7 +13467,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi",
     "ff": "mATX",
-    "value": 57
+    "value": 57,
+    "bench": 71
   },
   {
     "id": 20234,
@@ -13272,7 +13503,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 7
+    "value": 7,
+    "bench": 73
   },
   {
     "id": 20235,
@@ -13305,7 +13537,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 100
+    "value": 100,
+    "bench": 38
   },
   {
     "id": 20236,
@@ -13340,7 +13573,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "ATX",
-    "value": 72
+    "value": 72,
+    "bench": 63
   },
   {
     "id": 20237,
@@ -13381,7 +13615,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 16
+    "value": 16,
+    "bench": 89
   },
   {
     "id": 20238,
@@ -13415,7 +13650,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 31
+    "value": 31,
+    "bench": 85
   },
   {
     "id": 20239,
@@ -13450,7 +13686,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "E-ATX",
     "wifi": "None",
-    "value": 0
+    "value": 0,
+    "bench": 91
   },
   {
     "id": 20240,
@@ -13484,7 +13721,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "ATX",
-    "value": 13
+    "value": 13,
+    "bench": 76
   },
   {
     "id": 20241,
@@ -13518,7 +13756,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "ATX",
-    "value": 70
+    "value": 70,
+    "bench": 75
   },
   {
     "id": 20242,
@@ -13553,7 +13792,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 22
+    "value": 22,
+    "bench": 87
   },
   {
     "id": 20243,
@@ -13588,7 +13828,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 45
+    "value": 45,
+    "bench": 73
   },
   {
     "id": 20244,
@@ -13621,7 +13862,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 54
+    "value": 54,
+    "bench": 72
   },
   {
     "id": 20245,
@@ -13655,7 +13897,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "ATX",
-    "value": 9
+    "value": 9,
+    "bench": 76
   },
   {
     "id": 20246,
@@ -13690,7 +13933,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 6E",
     "ff": "mATX",
-    "value": 42
+    "value": 42,
+    "bench": 83
   },
   {
     "id": 20247,
@@ -13731,7 +13975,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 22
+    "value": 22,
+    "bench": 83
   },
   {
     "id": 20248,
@@ -13765,7 +14010,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi",
     "ff": "mATX",
-    "value": 69
+    "value": 69,
+    "bench": 75
   },
   {
     "id": 20249,
@@ -13800,7 +14046,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "None",
-    "value": 24
+    "value": 24,
+    "bench": 60
   },
   {
     "id": 20250,
@@ -13835,7 +14082,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi",
     "ff": "mATX",
-    "value": 47
+    "value": 47,
+    "bench": 55
   },
   {
     "id": 20251,
@@ -13869,7 +14117,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 81
+    "value": 81,
+    "bench": 71
   },
   {
     "id": 20252,
@@ -13904,7 +14153,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 30
+    "value": 30,
+    "bench": 70
   },
   {
     "id": 20253,
@@ -13939,7 +14189,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "E-ATX",
     "wifi": "None",
-    "value": 0
+    "value": 0,
+    "bench": 96
   },
   {
     "id": 20254,
@@ -13972,7 +14223,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 32
+    "value": 32,
+    "bench": 79
   },
   {
     "id": 20255,
@@ -14006,7 +14258,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 67
+    "value": 67,
+    "bench": 69
   },
   {
     "id": 20256,
@@ -14042,7 +14295,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 91
+    "value": 91,
+    "bench": 55
   },
   {
     "id": 20257,
@@ -14076,7 +14330,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 7",
     "ff": "ATX",
-    "value": 36
+    "value": 36,
+    "bench": 98
   },
   {
     "id": 20258,
@@ -14112,7 +14367,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "Mini-ITX",
     "wifi": "WiFi",
-    "value": 38
+    "value": 38,
+    "bench": 75
   },
   {
     "id": 20259,
@@ -14146,7 +14402,8 @@ export const PARTS = [
     "memSlots": 2,
     "wifi": "None",
     "ff": "mATX",
-    "value": 92
+    "value": 92,
+    "bench": 44
   },
   {
     "id": 20260,
@@ -14182,7 +14439,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 31
+    "value": 31,
+    "bench": 76
   },
   {
     "id": 20261,
@@ -14216,7 +14474,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 63
+    "value": 63,
+    "bench": 75
   },
   {
     "id": 20262,
@@ -14250,7 +14509,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 50
+    "value": 50,
+    "bench": 82
   },
   {
     "id": 20263,
@@ -14284,7 +14544,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 5
+    "value": 5,
+    "bench": 100
   },
   {
     "id": 20264,
@@ -14319,7 +14580,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 47
+    "value": 47,
+    "bench": 86
   },
   {
     "id": 20265,
@@ -14355,7 +14617,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "WiFi 6E",
-    "value": 36
+    "value": 36,
+    "bench": 73
   },
   {
     "id": 20266,
@@ -14391,7 +14654,8 @@ export const PARTS = [
     "memSlots": 3,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 51
+    "value": 51,
+    "bench": 69
   },
   {
     "id": 20267,
@@ -14426,7 +14690,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 14
+    "value": 14,
+    "bench": 85
   },
   {
     "id": 20268,
@@ -14461,7 +14726,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "None",
-    "value": 37
+    "value": 37,
+    "bench": 41
   },
   {
     "id": 20269,
@@ -14495,7 +14761,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "WiFi",
-    "value": 15
+    "value": 15,
+    "bench": 70
   },
   {
     "id": 20270,
@@ -14530,7 +14797,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "E-ATX",
     "wifi": "None",
-    "value": 0
+    "value": 0,
+    "bench": 92
   },
   {
     "id": 20271,
@@ -14565,7 +14833,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 67
+    "value": 67,
+    "bench": 69
   },
   {
     "id": 20272,
@@ -14599,7 +14868,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "WiFi 7",
-    "value": 4
+    "value": 4,
+    "bench": 78
   },
   {
     "id": 20273,
@@ -14633,7 +14903,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 4,
-    "bundle": true
+    "bundle": true,
+    "bench": 75
   },
   {
     "id": 20274,
@@ -14667,7 +14938,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 46
+    "value": 46,
+    "bench": 75
   },
   {
     "id": 20275,
@@ -14701,7 +14973,8 @@ export const PARTS = [
     "memSlots": 2,
     "wifi": "None",
     "ff": "mATX",
-    "value": 61
+    "value": 61,
+    "bench": 44
   },
   {
     "id": 20276,
@@ -14735,7 +15008,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 7",
     "ff": "ATX",
-    "value": 39
+    "value": 39,
+    "bench": 93
   },
   {
     "id": 20277,
@@ -14771,7 +15045,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 39
+    "value": 39,
+    "bench": 74
   },
   {
     "id": 20278,
@@ -14806,7 +15081,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 68
+    "value": 68,
+    "bench": 72
   },
   {
     "id": 20279,
@@ -14842,7 +15118,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 78
+    "value": 78,
+    "bench": 72
   },
   {
     "id": 20280,
@@ -14876,7 +15153,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "WiFi",
-    "value": 15
+    "value": 15,
+    "bench": 69
   },
   {
     "id": 20281,
@@ -14910,7 +15188,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6",
-    "value": 57
+    "value": 57,
+    "bench": 64
   },
   {
     "id": 20282,
@@ -14946,7 +15225,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 19
+    "value": 19,
+    "bench": 97
   },
   {
     "id": 20283,
@@ -14980,7 +15260,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 7",
     "ff": "ATX",
-    "value": 33
+    "value": 33,
+    "bench": 97
   },
   {
     "id": 20284,
@@ -15015,7 +15296,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 30
+    "value": 30,
+    "bench": 88
   },
   {
     "id": 20285,
@@ -15049,7 +15331,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 40
+    "value": 40,
+    "bench": 72
   },
   {
     "id": 20286,
@@ -15085,7 +15368,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 11
+    "value": 11,
+    "bench": 91
   },
   {
     "id": 20287,
@@ -15124,7 +15408,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 32
+    "value": 32,
+    "bench": 97
   },
   {
     "id": 20288,
@@ -15158,7 +15443,8 @@ export const PARTS = [
     "memSlots": 2,
     "wifi": "None",
     "ff": "Mini-ITX",
-    "value": 14
+    "value": 14,
+    "bench": 73
   },
   {
     "id": 20289,
@@ -15193,7 +15479,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 92
+    "value": 92,
+    "bench": 33
   },
   {
     "id": 20290,
@@ -15227,7 +15514,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 6E",
-    "value": 48
+    "value": 48,
+    "bench": 81
   },
   {
     "id": 20291,
@@ -15261,7 +15549,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 26
+    "value": 26,
+    "bench": 67
   },
   {
     "id": 20292,
@@ -15297,7 +15586,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 46
+    "value": 46,
+    "bench": 77
   },
   {
     "id": 20293,
@@ -15331,7 +15621,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 100
+    "value": 100,
+    "bench": 69
   },
   {
     "id": 20294,
@@ -15365,7 +15656,8 @@ export const PARTS = [
     "memSlots": 2,
     "wifi": "None",
     "ff": "mATX",
-    "value": 55
+    "value": 55,
+    "bench": 52
   },
   {
     "id": 20295,
@@ -15400,7 +15692,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 36
+    "value": 36,
+    "bench": 85
   },
   {
     "id": 20296,
@@ -15434,7 +15727,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 42
+    "value": 42,
+    "bench": 85
   },
   {
     "id": 20297,
@@ -15468,7 +15762,8 @@ export const PARTS = [
     "memSlots": 8,
     "ff": "ATX",
     "wifi": "None",
-    "value": 24
+    "value": 24,
+    "bench": 46
   },
   {
     "id": 20298,
@@ -15507,7 +15802,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 24
+    "value": 24,
+    "bench": 86
   },
   {
     "id": 20299,
@@ -15540,7 +15836,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "ATX",
-    "value": 13
+    "value": 13,
+    "bench": 81
   },
   {
     "id": 20300,
@@ -15575,7 +15872,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 44
+    "value": 44,
+    "bench": 82
   },
   {
     "id": 20301,
@@ -15611,7 +15909,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 81
+    "value": 81,
+    "bench": 63
   },
   {
     "id": 20302,
@@ -15646,7 +15945,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 29
+    "value": 29,
+    "bench": 71
   },
   {
     "id": 20303,
@@ -15679,7 +15979,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 52
+    "value": 52,
+    "bench": 70
   },
   {
     "id": 20304,
@@ -15720,7 +16021,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 75
+    "value": 75,
+    "bench": 68
   },
   {
     "id": 20305,
@@ -15754,7 +16056,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 57
+    "value": 57,
+    "bench": 57
   },
   {
     "id": 20306,
@@ -15788,7 +16091,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 8
+    "value": 8,
+    "bench": 70
   },
   {
     "id": 20307,
@@ -15821,7 +16125,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 10
+    "value": 10,
+    "bench": 75
   },
   {
     "id": 20308,
@@ -15855,7 +16160,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6E",
-    "value": 67
+    "value": 67,
+    "bench": 78
   },
   {
     "id": 20309,
@@ -15889,7 +16195,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 21
+    "value": 21,
+    "bench": 73
   },
   {
     "id": 20310,
@@ -15930,7 +16237,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 1
+    "value": 1,
+    "bench": 95
   },
   {
     "id": 20311,
@@ -15963,7 +16271,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 58
+    "value": 58,
+    "bench": 76
   },
   {
     "id": 20312,
@@ -15997,7 +16306,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 94
+    "value": 94,
+    "bench": 43
   },
   {
     "id": 20313,
@@ -16036,7 +16346,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "WiFi",
-    "value": 20
+    "value": 20,
+    "bench": 72
   },
   {
     "id": 20314,
@@ -16071,7 +16382,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 13
+    "value": 13,
+    "bench": 74
   },
   {
     "id": 20315,
@@ -16106,7 +16418,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 31
+    "value": 31,
+    "bench": 67
   },
   {
     "id": 20316,
@@ -16142,7 +16455,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 45
+    "value": 45,
+    "bench": 78
   },
   {
     "id": 20317,
@@ -16175,7 +16489,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6E",
-    "value": 53
+    "value": 53,
+    "bench": 77
   },
   {
     "id": 20318,
@@ -16216,7 +16531,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 33
+    "value": 33,
+    "bench": 88
   },
   {
     "id": 20319,
@@ -16256,7 +16572,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 31
+    "value": 31,
+    "bench": 80
   },
   {
     "id": 20320,
@@ -16289,7 +16606,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "Mini-ITX",
-    "value": 20
+    "value": 20,
+    "bench": 73
   },
   {
     "id": 20321,
@@ -16327,7 +16645,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 15
+    "value": 15,
+    "bench": 90
   },
   {
     "id": 20322,
@@ -16362,7 +16681,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 56
+    "value": 56,
+    "bench": 66
   },
   {
     "id": 20323,
@@ -16396,7 +16716,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 92
+    "value": 92,
+    "bench": 50
   },
   {
     "id": 20324,
@@ -16431,7 +16752,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 47
+    "value": 47,
+    "bench": 83
   },
   {
     "id": 20325,
@@ -16465,7 +16787,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "mATX",
-    "value": 50
+    "value": 50,
+    "bench": 58
   },
   {
     "id": 20326,
@@ -16499,7 +16822,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "None",
-    "value": 23
+    "value": 23,
+    "bench": 31
   },
   {
     "id": 20327,
@@ -16534,7 +16858,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 69
+    "value": 69,
+    "bench": 67
   },
   {
     "id": 20328,
@@ -16568,7 +16893,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 98
+    "value": 98,
+    "bench": 67
   },
   {
     "id": 20329,
@@ -16603,7 +16929,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "None",
-    "value": 33
+    "value": 33,
+    "bench": 69
   },
   {
     "id": 20330,
@@ -16637,7 +16964,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 19
+    "value": 19,
+    "bench": 88
   },
   {
     "id": 20331,
@@ -16671,7 +16999,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "None",
-    "value": 100
+    "value": 100,
+    "bench": 22
   },
   {
     "id": 20332,
@@ -16705,7 +17034,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 6E",
-    "value": 46
+    "value": 46,
+    "bench": 77
   },
   {
     "id": 20333,
@@ -16738,7 +17068,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 43
+    "value": 43,
+    "bench": 79
   },
   {
     "id": 20334,
@@ -16771,7 +17102,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 26
+    "value": 26,
+    "bench": 80
   },
   {
     "id": 20335,
@@ -16806,7 +17138,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 6E",
-    "value": 49
+    "value": 49,
+    "bench": 74
   },
   {
     "id": 20336,
@@ -16840,7 +17173,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 6E",
-    "value": 25
+    "value": 25,
+    "bench": 75
   },
   {
     "id": 20337,
@@ -16868,7 +17202,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 41
+    "value": 41,
+    "bench": 53
   },
   {
     "id": 20338,
@@ -16904,7 +17239,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6E",
-    "value": 52
+    "value": 52,
+    "bench": 80
   },
   {
     "id": 20339,
@@ -16939,7 +17275,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 32
+    "value": 32,
+    "bench": 77
   },
   {
     "id": 20340,
@@ -16974,7 +17311,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6E",
-    "value": 52
+    "value": 52,
+    "bench": 79
   },
   {
     "id": 20341,
@@ -17008,7 +17346,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 6E",
-    "value": 52
+    "value": 52,
+    "bench": 81
   },
   {
     "id": 20342,
@@ -17042,7 +17381,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "mATX",
-    "value": 38
+    "value": 38,
+    "bench": 69
   },
   {
     "id": 20343,
@@ -17076,7 +17416,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 40
+    "value": 40,
+    "bench": 75
   },
   {
     "id": 20344,
@@ -17112,7 +17453,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi",
     "ff": "ATX",
-    "value": 36
+    "value": 36,
+    "bench": 70
   },
   {
     "id": 20345,
@@ -17146,7 +17488,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 30
+    "value": 30,
+    "bench": 78
   },
   {
     "id": 20346,
@@ -17182,7 +17525,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 25
+    "value": 25,
+    "bench": 85
   },
   {
     "id": 20347,
@@ -17216,7 +17560,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 6E",
     "ff": "ATX",
-    "value": 60
+    "value": 60,
+    "bench": 83
   },
   {
     "id": 20348,
@@ -17250,7 +17595,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 7",
     "ff": "ATX",
-    "value": 17
+    "value": 17,
+    "bench": 88
   },
   {
     "id": 20349,
@@ -17283,7 +17629,8 @@ export const PARTS = [
     "memSlots": 8,
     "ff": "E-ATX",
     "wifi": "None",
-    "value": 28
+    "value": 28,
+    "bench": 39
   },
   {
     "id": 20350,
@@ -17318,7 +17665,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6E",
-    "value": 39
+    "value": 39,
+    "bench": 80
   },
   {
     "id": 20351,
@@ -17353,7 +17701,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 7",
     "ff": "mATX",
-    "value": 12
+    "value": 12,
+    "bench": 94
   },
   {
     "id": 20352,
@@ -17383,7 +17732,8 @@ export const PARTS = [
     "socket": "LGA1700",
     "wifi": "None",
     "value": 11,
-    "bundle": true
+    "bundle": true,
+    "bench": 31
   },
   {
     "id": 20353,
@@ -17417,7 +17767,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 47
+    "value": 47,
+    "bench": 88
   },
   {
     "id": 20354,
@@ -17451,7 +17802,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 38
+    "value": 38,
+    "bench": 86
   },
   {
     "id": 20355,
@@ -17492,7 +17844,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 0
+    "value": 0,
+    "bench": 100
   },
   {
     "id": 20356,
@@ -17526,7 +17879,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 82
+    "value": 82,
+    "bench": 43
   },
   {
     "id": 20357,
@@ -17561,7 +17915,8 @@ export const PARTS = [
     "memSlots": 2,
     "wifi": "None",
     "ff": "mATX",
-    "value": 83
+    "value": 83,
+    "bench": 42
   },
   {
     "id": 20358,
@@ -17596,7 +17951,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 30
+    "value": 30,
+    "bench": 76
   },
   {
     "id": 20359,
@@ -17629,7 +17985,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 20
+    "value": 20,
+    "bench": 91
   },
   {
     "id": 20360,
@@ -17663,7 +18020,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 71
+    "value": 71,
+    "bench": 79
   },
   {
     "id": 20361,
@@ -17697,7 +18055,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 2,
-    "bundle": true
+    "bundle": true,
+    "bench": 71
   },
   {
     "id": 20362,
@@ -17731,7 +18090,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 26
+    "value": 26,
+    "bench": 64
   },
   {
     "id": 20363,
@@ -17765,7 +18125,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 27
+    "value": 27,
+    "bench": 80
   },
   {
     "id": 20364,
@@ -17800,7 +18161,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 57
+    "value": 57,
+    "bench": 48
   },
   {
     "id": 20365,
@@ -17835,7 +18197,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 10
+    "value": 10,
+    "bench": 85
   },
   {
     "id": 20366,
@@ -17871,7 +18234,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 36
+    "value": 36,
+    "bench": 77
   },
   {
     "id": 20367,
@@ -17906,7 +18270,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 39
+    "value": 39,
+    "bench": 78
   },
   {
     "id": 20368,
@@ -17939,7 +18304,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "WiFi 6E",
-    "value": 73
+    "value": 73,
+    "bench": 75
   },
   {
     "id": 20369,
@@ -17974,7 +18340,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "mATX",
-    "value": 45
+    "value": 45,
+    "bench": 79
   },
   {
     "id": 20370,
@@ -18009,7 +18376,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 33
+    "value": 33,
+    "bench": 62
   },
   {
     "id": 20371,
@@ -18043,7 +18411,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 7",
-    "value": 25
+    "value": 25,
+    "bench": 84
   },
   {
     "id": 20372,
@@ -18076,7 +18445,8 @@ export const PARTS = [
     "memSlots": 2,
     "wifi": "None",
     "ff": "ATX",
-    "value": 63
+    "value": 63,
+    "bench": 23
   },
   {
     "id": 20373,
@@ -18110,7 +18480,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 5
+    "value": 5,
+    "bench": 95
   },
   {
     "id": 20374,
@@ -18143,7 +18514,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 100
+    "value": 100,
+    "bench": 33
   },
   {
     "id": 20375,
@@ -18175,7 +18547,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 94
+    "value": 94,
+    "bench": 51
   },
   {
     "id": 20376,
@@ -18210,7 +18583,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "None",
-    "value": 31
+    "value": 31,
+    "bench": 52
   },
   {
     "id": 20377,
@@ -18244,7 +18618,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "ATX",
     "wifi": "None",
-    "value": 0
+    "value": 0,
+    "bench": 79
   },
   {
     "id": 20378,
@@ -18278,7 +18653,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "ATX",
-    "value": 28
+    "value": 28,
+    "bench": 79
   },
   {
     "id": 20379,
@@ -18314,7 +18690,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6E",
-    "value": 59
+    "value": 59,
+    "bench": 86
   },
   {
     "id": 20380,
@@ -18348,7 +18725,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 7",
     "ff": "mATX",
-    "value": 10
+    "value": 10,
+    "bench": 93
   },
   {
     "id": 20381,
@@ -18381,7 +18759,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 70
+    "value": 70,
+    "bench": 67
   },
   {
     "id": 20382,
@@ -18415,7 +18794,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 6E",
-    "value": 51
+    "value": 51,
+    "bench": 76
   },
   {
     "id": 20383,
@@ -18451,7 +18831,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 6E",
-    "value": 29
+    "value": 29,
+    "bench": 83
   },
   {
     "id": 20384,
@@ -18491,7 +18872,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 64
+    "value": 64,
+    "bench": 84
   },
   {
     "id": 20385,
@@ -18527,7 +18909,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 79
+    "value": 79,
+    "bench": 53
   },
   {
     "id": 20386,
@@ -18562,7 +18945,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 71
+    "value": 71,
+    "bench": 80
   },
   {
     "id": 20387,
@@ -18596,7 +18980,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 6E",
-    "value": 47
+    "value": 47,
+    "bench": 69
   },
   {
     "id": 20388,
@@ -18631,7 +19016,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 0
+    "value": 0,
+    "bench": 89
   },
   {
     "id": 20389,
@@ -18665,7 +19051,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "mATX",
     "wifi": "WiFi 7",
-    "value": 33
+    "value": 33,
+    "bench": 100
   },
   {
     "id": 20390,
@@ -18700,7 +19087,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "WiFi 7",
     "ff": "mATX",
-    "value": 22
+    "value": 22,
+    "bench": 90
   },
   {
     "id": 20391,
@@ -18735,7 +19123,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 45
+    "value": 45,
+    "bench": 80
   },
   {
     "id": 20392,
@@ -18776,7 +19165,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 17
+    "value": 17,
+    "bench": 91
   },
   {
     "id": 20393,
@@ -18811,7 +19201,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 56
+    "value": 56,
+    "bench": 46
   },
   {
     "id": 20394,
@@ -18845,7 +19236,8 @@ export const PARTS = [
     "memSlots": 2,
     "wifi": "None",
     "ff": "Mini-ITX",
-    "value": 33
+    "value": 33,
+    "bench": 42
   },
   {
     "id": 20395,
@@ -18880,7 +19272,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 24
+    "value": 24,
+    "bench": 86
   },
   {
     "id": 20396,
@@ -18914,7 +19307,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "WiFi",
-    "value": 52
+    "value": 52,
+    "bench": 57
   },
   {
     "id": 20397,
@@ -18948,7 +19342,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 22
+    "value": 22,
+    "bench": 86
   },
   {
     "id": 20398,
@@ -18982,7 +19377,8 @@ export const PARTS = [
     "memSlots": 2,
     "wifi": "None",
     "ff": "mATX",
-    "value": 41
+    "value": 41,
+    "bench": 49
   },
   {
     "id": 20399,
@@ -19016,7 +19412,8 @@ export const PARTS = [
     "memSlots": 2,
     "wifi": "None",
     "ff": "mATX",
-    "value": 70
+    "value": 70,
+    "bench": 46
   },
   {
     "id": 20400,
@@ -19051,7 +19448,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 63
+    "value": 63,
+    "bench": 77
   },
   {
     "id": 20401,
@@ -19085,7 +19483,8 @@ export const PARTS = [
     "memSlots": 4,
     "wifi": "None",
     "ff": "mATX",
-    "value": 28
+    "value": 28,
+    "bench": 60
   },
   {
     "id": 20402,
@@ -19121,7 +19520,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 16,
-    "bundle": true
+    "bundle": true,
+    "bench": 69
   },
   {
     "id": 20403,
@@ -19157,7 +19557,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 33
+    "value": 33,
+    "bench": 87
   },
   {
     "id": 20404,
@@ -19192,7 +19593,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "Mini-ITX",
     "wifi": "WiFi",
-    "value": 7
+    "value": 7,
+    "bench": 75
   },
   {
     "id": 20405,
@@ -19226,7 +19628,8 @@ export const PARTS = [
     "memSlots": 1,
     "ff": "Mini-ITX",
     "wifi": "None",
-    "value": 19
+    "value": 19,
+    "bench": 74
   },
   {
     "id": 20406,
@@ -19259,7 +19662,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "None",
-    "value": 100
+    "value": 100,
+    "bench": 60
   },
   {
     "id": 20407,
@@ -19293,7 +19697,8 @@ export const PARTS = [
     "memSlots": 2,
     "wifi": "None",
     "ff": "mATX",
-    "value": 94
+    "value": 94,
+    "bench": 58
   },
   {
     "id": 20408,
@@ -19325,7 +19730,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 94
+    "value": 94,
+    "bench": 61
   },
   {
     "id": 20409,
@@ -19360,7 +19766,8 @@ export const PARTS = [
     "memSlots": 2,
     "ff": "mATX",
     "wifi": "WiFi",
-    "value": 33
+    "value": 33,
+    "bench": 65
   },
   {
     "id": 20410,
@@ -19392,7 +19799,8 @@ export const PARTS = [
     "wifi": "None",
     "chipset": "B760",
     "value": 3,
-    "bundle": true
+    "bundle": true,
+    "bench": 46
   },
   {
     "id": 20411,
@@ -19427,7 +19835,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "None",
-    "value": 28
+    "value": 28,
+    "bench": 85
   },
   {
     "id": 20412,
@@ -19462,7 +19871,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi",
-    "value": 18
+    "value": 18,
+    "bench": 63
   },
   {
     "id": 20413,
@@ -19497,7 +19907,8 @@ export const PARTS = [
     "memSlots": 3,
     "ff": "mATX",
     "wifi": "None",
-    "value": 100
+    "value": 100,
+    "bench": 69
   },
   {
     "id": 20414,
@@ -19531,7 +19942,8 @@ export const PARTS = [
     "memSlots": 4,
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "value": 11
+    "value": 11,
+    "bench": 100
   },
   {
     "id": 20415,
@@ -19559,7 +19971,8 @@ export const PARTS = [
     "m2Slots": 2,
     "wifi": "None",
     "color": "Black",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 58
   },
   {
     "id": 20416,
@@ -19587,7 +20000,8 @@ export const PARTS = [
     "m2Slots": 2,
     "wifi": "WiFi 6",
     "color": "Black",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 66
   },
   {
     "id": 20417,
@@ -19615,7 +20029,8 @@ export const PARTS = [
     "m2Slots": 3,
     "wifi": "WiFi 6",
     "color": "Black",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 78
   },
   {
     "id": 20418,
@@ -19643,7 +20058,8 @@ export const PARTS = [
     "m2Slots": 3,
     "wifi": "WiFi 6",
     "color": "Black",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 74
   },
   {
     "id": 20419,
@@ -19671,7 +20087,8 @@ export const PARTS = [
     "m2Slots": 3,
     "wifi": "WiFi 6",
     "color": "Black",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 78
   },
   {
     "id": 20420,
@@ -19699,7 +20116,8 @@ export const PARTS = [
     "m2Slots": 2,
     "wifi": "WiFi 6",
     "color": "Black",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 72
   },
   {
     "id": 20421,
@@ -19727,7 +20145,8 @@ export const PARTS = [
     "m2Slots": 4,
     "wifi": "WiFi 6",
     "color": "Black",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 86
   },
   {
     "id": 20422,
@@ -19755,7 +20174,8 @@ export const PARTS = [
     "m2Slots": 4,
     "wifi": "WiFi 6",
     "color": "Black",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 84
   },
   {
     "id": 20423,
@@ -19783,7 +20203,8 @@ export const PARTS = [
     "m2Slots": 4,
     "color": "Black",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 91
   },
   {
     "id": 20424,
@@ -19811,7 +20232,8 @@ export const PARTS = [
     "m2Slots": 4,
     "wifi": "WiFi 6",
     "color": "Black",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 78
   },
   {
     "id": 20425,
@@ -19839,7 +20261,8 @@ export const PARTS = [
     "m2Slots": 6,
     "color": "Black",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 100
   },
   {
     "id": 20426,
@@ -19867,7 +20290,8 @@ export const PARTS = [
     "m2Slots": 4,
     "color": "Black",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 92
   },
   {
     "id": 20427,
@@ -19895,7 +20319,8 @@ export const PARTS = [
     "m2Slots": 5,
     "color": "Black",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 100
   },
   {
     "id": 20428,
@@ -19923,7 +20348,8 @@ export const PARTS = [
     "m2Slots": 4,
     "color": "Black",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 91
   },
   {
     "id": 20429,
@@ -19951,7 +20377,8 @@ export const PARTS = [
     "m2Slots": 2,
     "color": "Black",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 88
   },
   {
     "id": 20430,
@@ -19979,7 +20406,8 @@ export const PARTS = [
     "m2Slots": 5,
     "wifi": "WiFi 6",
     "color": "White",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 86
   },
   {
     "id": 20431,
@@ -20007,7 +20435,8 @@ export const PARTS = [
     "m2Slots": 4,
     "color": "Black",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 91
   },
   {
     "id": 20432,
@@ -20035,7 +20464,8 @@ export const PARTS = [
     "m2Slots": 3,
     "color": "Black",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 85
   },
   {
     "id": 20433,
@@ -20063,7 +20493,8 @@ export const PARTS = [
     "m2Slots": 4,
     "color": "Black",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 88
   },
   {
     "id": 20434,
@@ -20091,7 +20522,8 @@ export const PARTS = [
     "m2Slots": 4,
     "color": "Black",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 83
   },
   {
     "id": 20435,
@@ -20119,7 +20551,8 @@ export const PARTS = [
     "m2Slots": 2,
     "wifi": "WiFi 6",
     "color": "Black",
-    "ff": "mATX"
+    "ff": "mATX",
+    "bench": 57
   },
   {
     "id": 20436,
@@ -20147,7 +20580,8 @@ export const PARTS = [
     "m2Slots": 5,
     "wifi": "WiFi 6",
     "color": "White",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 85
   },
   {
     "id": 20437,
@@ -20175,7 +20609,8 @@ export const PARTS = [
     "m2Slots": 4,
     "wifi": "WiFi 6",
     "color": "Black",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 82
   },
   {
     "id": 20438,
@@ -20203,7 +20638,8 @@ export const PARTS = [
     "m2Slots": 3,
     "color": "White",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 79
   },
   {
     "id": 20439,
@@ -20231,7 +20667,8 @@ export const PARTS = [
     "m2Slots": 4,
     "color": "Black",
     "ff": "ATX",
-    "wifi": "None"
+    "wifi": "None",
+    "bench": 80
   },
   {
     "id": 20440,
@@ -20259,7 +20696,8 @@ export const PARTS = [
     "m2Slots": 2,
     "color": "Black",
     "ff": "mATX",
-    "wifi": "WiFi 6E"
+    "wifi": "WiFi 6E",
+    "bench": 51
   },
   {
     "id": 20441,
@@ -20287,7 +20725,8 @@ export const PARTS = [
     "m2Slots": 4,
     "color": "White",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 76
   },
   {
     "id": 20442,
@@ -20315,7 +20754,8 @@ export const PARTS = [
     "m2Slots": 4,
     "color": "Gray White/Matt",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 82
   },
   {
     "id": 20443,
@@ -20343,7 +20783,8 @@ export const PARTS = [
     "m2Slots": 2,
     "color": "Gray White/Matt",
     "ff": "Mini-ITX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 85
   },
   {
     "id": 20444,
@@ -20371,7 +20812,8 @@ export const PARTS = [
     "m2Slots": 3,
     "wifi": "WiFi 6",
     "color": "White",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 82
   },
   {
     "id": 20445,
@@ -20399,7 +20841,8 @@ export const PARTS = [
     "m2Slots": 3,
     "color": "White",
     "ff": "mATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 78
   },
   {
     "id": 20446,
@@ -20427,7 +20870,8 @@ export const PARTS = [
     "m2Slots": 4,
     "color": "Black",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 96
   },
   {
     "id": 20447,
@@ -20455,7 +20899,8 @@ export const PARTS = [
     "m2Slots": 4,
     "wifi": "WiFi 6",
     "color": "Black",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 72
   },
   {
     "id": 20448,
@@ -20483,7 +20928,8 @@ export const PARTS = [
     "m2Slots": 7,
     "color": "Black",
     "ff": "E-ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 100
   },
   {
     "id": 20449,
@@ -20511,7 +20957,8 @@ export const PARTS = [
     "m2Slots": 4,
     "color": "Black",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 91
   },
   {
     "id": 20450,
@@ -20539,7 +20986,8 @@ export const PARTS = [
     "m2Slots": 3,
     "color": "Black/Sliver",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 85
   },
   {
     "id": 20451,
@@ -20567,7 +21015,8 @@ export const PARTS = [
     "m2Slots": 4,
     "color": "Black",
     "ff": "ATX",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bench": 86
   },
   {
     "id": 20453,
@@ -20592,7 +21041,8 @@ export const PARTS = [
     "maxMem": 128,
     "m2Slots": 2,
     "sata": 4,
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 49
   },
   {
     "id": 20455,
@@ -20619,7 +21069,8 @@ export const PARTS = [
     "sata": 6,
     "ff": "ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 90
   },
   {
     "id": 20456,
@@ -20646,7 +21097,8 @@ export const PARTS = [
     "sata": 6,
     "ff": "ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 85
   },
   {
     "id": 20457,
@@ -20673,7 +21125,8 @@ export const PARTS = [
     "sata": 6,
     "ff": "ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 82
   },
   {
     "id": 20458,
@@ -20698,7 +21151,8 @@ export const PARTS = [
     "maxMem": 192,
     "m2Slots": 3,
     "sata": 4,
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 73
   },
   {
     "id": 20459,
@@ -20725,7 +21179,8 @@ export const PARTS = [
     "sata": 4,
     "ff": "Micro ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 68
   },
   {
     "id": 20461,
@@ -20750,7 +21205,8 @@ export const PARTS = [
     "maxMem": 192,
     "m2Slots": 3,
     "sata": 4,
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 77
   },
   {
     "id": 20463,
@@ -20777,7 +21233,8 @@ export const PARTS = [
     "sata": 4,
     "ff": "ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 68
   },
   {
     "id": 20465,
@@ -20802,7 +21259,8 @@ export const PARTS = [
     "maxMem": 64,
     "m2Slots": 1,
     "sata": 4,
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 52
   },
   {
     "id": 20481,
@@ -20829,7 +21287,8 @@ export const PARTS = [
     "sata": 4,
     "ff": "ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 100
   },
   {
     "id": 20484,
@@ -20856,7 +21315,8 @@ export const PARTS = [
     "sata": 4,
     "ff": "ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 94
   },
   {
     "id": 20485,
@@ -20883,7 +21343,8 @@ export const PARTS = [
     "sata": 4,
     "ff": "ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 92
   },
   {
     "id": 20488,
@@ -20910,7 +21371,8 @@ export const PARTS = [
     "sata": 4,
     "ff": "ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 78
   },
   {
     "id": 20489,
@@ -20935,7 +21397,8 @@ export const PARTS = [
     "maxMem": 192,
     "m2Slots": 3,
     "sata": 4,
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 84
   },
   {
     "id": 20490,
@@ -20960,7 +21423,8 @@ export const PARTS = [
     "maxMem": 192,
     "m2Slots": 2,
     "sata": 4,
-    "ff": "Micro ATX"
+    "ff": "Micro ATX",
+    "bench": 84
   },
   {
     "id": 20491,
@@ -20985,7 +21449,8 @@ export const PARTS = [
     "maxMem": 192,
     "m2Slots": 3,
     "sata": 4,
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 82
   },
   {
     "id": 20492,
@@ -21010,7 +21475,8 @@ export const PARTS = [
     "maxMem": 192,
     "m2Slots": 2,
     "sata": 4,
-    "ff": "Micro ATX"
+    "ff": "Micro ATX",
+    "bench": 77
   },
   {
     "id": 20493,
@@ -21035,7 +21501,8 @@ export const PARTS = [
     "maxMem": 192,
     "m2Slots": 3,
     "sata": 4,
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 78
   },
   {
     "id": 20497,
@@ -21062,7 +21529,8 @@ export const PARTS = [
     "sata": 4,
     "ff": "ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 65
   },
   {
     "id": 20499,
@@ -21089,7 +21557,8 @@ export const PARTS = [
     "sata": 4,
     "ff": "ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 73
   },
   {
     "id": 20500,
@@ -21116,7 +21585,8 @@ export const PARTS = [
     "sata": 4,
     "ff": "Micro ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 65
   },
   {
     "id": 20501,
@@ -21143,7 +21613,8 @@ export const PARTS = [
     "sata": 4,
     "ff": "ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 73
   },
   {
     "id": 20502,
@@ -21170,7 +21641,8 @@ export const PARTS = [
     "sata": 4,
     "ff": "Micro ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 71
   },
   {
     "id": 20504,
@@ -21197,7 +21669,8 @@ export const PARTS = [
     "sata": 4,
     "ff": "Micro ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 53
   },
   {
     "id": 20505,
@@ -21224,7 +21697,8 @@ export const PARTS = [
     "sata": 6,
     "ff": "ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 71
   },
   {
     "id": 20506,
@@ -21251,7 +21725,8 @@ export const PARTS = [
     "sata": 6,
     "ff": "ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 51
   },
   {
     "id": 20507,
@@ -21276,7 +21751,8 @@ export const PARTS = [
     "maxMem": 128,
     "m2Slots": 2,
     "sata": 6,
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 62
   },
   {
     "id": 20508,
@@ -21303,7 +21779,8 @@ export const PARTS = [
     "sata": 6,
     "ff": "Micro ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 53
   },
   {
     "id": 20509,
@@ -21328,7 +21805,8 @@ export const PARTS = [
     "maxMem": 128,
     "m2Slots": 2,
     "sata": 6,
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 63
   },
   {
     "id": 20510,
@@ -21355,7 +21833,8 @@ export const PARTS = [
     "sata": 6,
     "ff": "Micro ATX",
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "bench": 58
   },
   {
     "id": 20511,
@@ -21380,7 +21859,8 @@ export const PARTS = [
     "maxMem": 128,
     "m2Slots": 2,
     "sata": 6,
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 65
   },
   {
     "id": 20512,
@@ -21405,7 +21885,8 @@ export const PARTS = [
     "maxMem": 128,
     "m2Slots": 1,
     "sata": 6,
-    "ff": "Micro ATX"
+    "ff": "Micro ATX",
+    "bench": 57
   },
   {
     "id": 20513,
@@ -21430,7 +21911,8 @@ export const PARTS = [
     "maxMem": 128,
     "m2Slots": 2,
     "sata": 6,
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 59
   },
   {
     "id": 20519,
@@ -21455,7 +21937,8 @@ export const PARTS = [
     "maxMem": 64,
     "m2Slots": 1,
     "sata": 4,
-    "ff": "ATX"
+    "ff": "ATX",
+    "bench": 60
   },
   {
     "id": 30001,
@@ -43024,7 +43507,8 @@ export const PARTS = [
     },
     "pcie": 4,
     "nand": "TLC",
-    "value": 86
+    "value": 86,
+    "bench": 83
   },
   {
     "id": 50011,
@@ -43052,7 +43536,8 @@ export const PARTS = [
     },
     "pcie": 4,
     "nand": "TLC",
-    "value": 100
+    "value": 100,
+    "bench": 83
   },
   {
     "id": 50012,
@@ -43258,7 +43743,8 @@ export const PARTS = [
     "nand": "TLC",
     "value": 87,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 83
   },
   {
     "id": 50019,
@@ -43288,7 +43774,8 @@ export const PARTS = [
     "nand": "TLC",
     "value": 100,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 83
   },
   {
     "id": 50020,
@@ -43343,7 +43830,8 @@ export const PARTS = [
       }
     },
     "nand": "TLC",
-    "value": 5
+    "value": 5,
+    "bench": 50
   },
   {
     "id": 50022,
@@ -43426,7 +43914,8 @@ export const PARTS = [
       }
     },
     "nand": "TLC",
-    "value": 2
+    "value": 2,
+    "bench": 50
   },
   {
     "id": 50025,
@@ -43454,7 +43943,8 @@ export const PARTS = [
     },
     "nand": "TLC",
     "rpm": 7200,
-    "value": 14
+    "value": 14,
+    "bench": 50
   },
   {
     "id": 50026,
@@ -43481,7 +43971,8 @@ export const PARTS = [
       }
     },
     "nand": "TLC",
-    "value": 26
+    "value": 26,
+    "bench": 40
   },
   {
     "id": 50027,
@@ -43506,7 +43997,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 3
+    "value": 3,
+    "bench": 25
   },
   {
     "id": 50028,
@@ -43531,7 +44023,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 0
+    "value": 0,
+    "bench": 20
   },
   {
     "id": 50029,
@@ -43558,7 +44051,8 @@ export const PARTS = [
     },
     "value": 0,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 20
   },
   {
     "id": 50030,
@@ -43583,7 +44077,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 1
+    "value": 1,
+    "bench": 20
   },
   {
     "id": 50031,
@@ -43608,7 +44103,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 1
+    "value": 1,
+    "bench": 20
   },
   {
     "id": 50032,
@@ -43633,7 +44129,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 0
+    "value": 0,
+    "bench": 20
   },
   {
     "id": 50033,
@@ -43658,7 +44155,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 0
+    "value": 0,
+    "bench": 20
   },
   {
     "id": 50034,
@@ -43683,7 +44181,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 0
+    "value": 0,
+    "bench": 25
   },
   {
     "id": 50035,
@@ -43708,7 +44207,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 1
+    "value": 1,
+    "bench": 20
   },
   {
     "id": 50036,
@@ -43733,7 +44233,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 0
+    "value": 0,
+    "bench": 25
   },
   {
     "id": 50037,
@@ -43758,7 +44259,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 0
+    "value": 0,
+    "bench": 30
   },
   {
     "id": 50038,
@@ -43788,7 +44290,8 @@ export const PARTS = [
     "nand": "TLC",
     "value": 33,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 75
   },
   {
     "id": 50039,
@@ -43818,7 +44321,8 @@ export const PARTS = [
     "nand": "TLC",
     "value": 17,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 75
   },
   {
     "id": 50040,
@@ -43851,7 +44355,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "USB",
     "rpm": 5400,
-    "value": 41
+    "value": 41,
+    "bench": 10
   },
   {
     "id": 50041,
@@ -44097,7 +44602,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 9
+    "value": 9,
+    "bench": 45
   },
   {
     "id": 50047,
@@ -44379,7 +44885,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 4
+    "value": 4,
+    "bench": 45
   },
   {
     "id": 50054,
@@ -44421,7 +44928,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "TLC",
     "dram": true,
-    "value": 0
+    "value": 0,
+    "bench": 50
   },
   {
     "id": 50055,
@@ -44505,7 +45013,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 2
+    "value": 2,
+    "bench": 50
   },
   {
     "id": 50057,
@@ -44540,7 +45049,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "USB",
     "rpm": 5400,
-    "value": 25
+    "value": 25,
+    "bench": 10
   },
   {
     "id": 50058,
@@ -44619,7 +45129,8 @@ export const PARTS = [
     "dram": true,
     "rpm": 7200,
     "storageType": "NVMe",
-    "value": 43
+    "value": 43,
+    "bench": 82
   },
   {
     "id": 50060,
@@ -44653,7 +45164,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 52
+    "value": 52,
+    "bench": 13
   },
   {
     "id": 50061,
@@ -44691,7 +45203,8 @@ export const PARTS = [
     "seq_w": 6000,
     "nand": "QLC",
     "dram": false,
-    "value": 88
+    "value": 88,
+    "bench": 74
   },
   {
     "id": 50062,
@@ -44728,7 +45241,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 4
+    "value": 4,
+    "bench": 45
   },
   {
     "id": 50063,
@@ -44762,7 +45276,8 @@ export const PARTS = [
     "seq_r": 1050,
     "seq_w": 1050,
     "nand": "TLC",
-    "value": 6
+    "value": 6,
+    "bench": 47
   },
   {
     "id": 50064,
@@ -44799,7 +45314,8 @@ export const PARTS = [
     "seq_w": 3000,
     "nand": "TLC",
     "dram": false,
-    "value": 92
+    "value": 92,
+    "bench": 57
   },
   {
     "id": 50065,
@@ -44961,7 +45477,8 @@ export const PARTS = [
     "seq_w": 1700,
     "nand": "TLC",
     "dram": false,
-    "value": 37
+    "value": 37,
+    "bench": 82
   },
   {
     "id": 50069,
@@ -44997,7 +45514,8 @@ export const PARTS = [
     "seq_w": 520,
     "nand": "TLC",
     "dram": false,
-    "value": 9
+    "value": 9,
+    "bench": 45
   },
   {
     "id": 50070,
@@ -45032,7 +45550,8 @@ export const PARTS = [
     "interface": "USB",
     "seq_w": 2000,
     "nand": "TLC",
-    "value": 6
+    "value": 6,
+    "bench": 37
   },
   {
     "id": 50071,
@@ -45068,7 +45587,8 @@ export const PARTS = [
     "seq_w": 1900,
     "nand": "TLC",
     "dram": false,
-    "value": 40
+    "value": 40,
+    "bench": 37
   },
   {
     "id": 50072,
@@ -45142,7 +45662,8 @@ export const PARTS = [
     "interface": "USB",
     "seq_w": 2000,
     "nand": "TLC",
-    "value": 2
+    "value": 2,
+    "bench": 37
   },
   {
     "id": 50074,
@@ -45220,7 +45741,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 48
+    "value": 48,
+    "bench": 10
   },
   {
     "id": 50076,
@@ -45375,7 +45897,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 49
+    "value": 49,
+    "bench": 37
   },
   {
     "id": 50080,
@@ -45452,7 +45975,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 21
+    "value": 21,
+    "bench": 37
   },
   {
     "id": 50082,
@@ -45486,7 +46010,8 @@ export const PARTS = [
     "interface": "SATA",
     "seq_r": 550,
     "seq_w": 520,
-    "value": 2
+    "value": 2,
+    "bench": 45
   },
   {
     "id": 50083,
@@ -45568,7 +46093,8 @@ export const PARTS = [
     "seq_w": 4800,
     "nand": "TLC",
     "dram": false,
-    "value": 48
+    "value": 48,
+    "bench": 67
   },
   {
     "id": 50085,
@@ -45642,7 +46168,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 8
+    "value": 8,
+    "bench": 45
   },
   {
     "id": 50087,
@@ -45677,7 +46204,8 @@ export const PARTS = [
     "seq_r": 550,
     "seq_w": 500,
     "seq_w_inferred": true,
-    "value": 9
+    "value": 9,
+    "bench": 30
   },
   {
     "id": 50088,
@@ -45714,7 +46242,8 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 100
+    "value": 100,
+    "bench": 80
   },
   {
     "id": 50089,
@@ -45794,7 +46323,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 44
+    "value": 44,
+    "bench": 10
   },
   {
     "id": 50091,
@@ -45873,7 +46403,8 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": true,
-    "value": 22
+    "value": 22,
+    "bench": 88
   },
   {
     "id": 50093,
@@ -45911,7 +46442,8 @@ export const PARTS = [
     "seq_w": 1500,
     "nand": "TLC",
     "dram": false,
-    "value": 31
+    "value": 31,
+    "bench": 37
   },
   {
     "id": 50094,
@@ -45984,7 +46516,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 55
+    "value": 55,
+    "bench": 15
   },
   {
     "id": 50096,
@@ -46021,7 +46554,8 @@ export const PARTS = [
     "seq_w": 1800,
     "nand": "TLC",
     "dram": false,
-    "value": 41
+    "value": 41,
+    "bench": 37
   },
   {
     "id": 50097,
@@ -46175,7 +46709,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 68
+    "value": 68,
+    "bench": 77
   },
   {
     "id": 50101,
@@ -46249,7 +46784,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "TLC",
     "dram": false,
-    "value": 4
+    "value": 4,
+    "bench": 50
   },
   {
     "id": 50103,
@@ -46286,7 +46822,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 50
+    "value": 50,
+    "bench": 57
   },
   {
     "id": 50104,
@@ -46369,7 +46906,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 6
+    "value": 6,
+    "bench": 45
   },
   {
     "id": 50106,
@@ -46407,7 +46945,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 29
+    "value": 29,
+    "bench": 37
   },
   {
     "id": 50107,
@@ -46445,7 +46984,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 1
+    "value": 1,
+    "bench": 50
   },
   {
     "id": 50108,
@@ -46479,7 +47019,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 16
+    "value": 16,
+    "bench": 10
   },
   {
     "id": 50109,
@@ -46514,7 +47055,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 37
+    "value": 37,
+    "bench": 10
   },
   {
     "id": 50110,
@@ -46552,7 +47094,8 @@ export const PARTS = [
     "seq_w": 1500,
     "nand": "TLC",
     "dram": false,
-    "value": 25
+    "value": 25,
+    "bench": 37
   },
   {
     "id": 50111,
@@ -46628,7 +47171,8 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": false,
-    "value": 66
+    "value": 66,
+    "bench": 80
   },
   {
     "id": 50113,
@@ -46665,7 +47209,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 30
   },
   {
     "id": 50114,
@@ -46699,7 +47244,8 @@ export const PARTS = [
     "seq_r": 2100,
     "seq_w": 2000,
     "nand": "TLC",
-    "value": 5
+    "value": 5,
+    "bench": 37
   },
   {
     "id": 50115,
@@ -46733,7 +47279,8 @@ export const PARTS = [
     "seq_r": 2100,
     "seq_w": 2000,
     "nand": "TLC",
-    "value": 8
+    "value": 8,
+    "bench": 37
   },
   {
     "id": 50116,
@@ -46769,7 +47316,8 @@ export const PARTS = [
     "seq_r": 550,
     "seq_w": 500,
     "seq_w_inferred": true,
-    "value": 9
+    "value": 9,
+    "bench": 45
   },
   {
     "id": 50117,
@@ -46807,7 +47355,8 @@ export const PARTS = [
     "seq_w": 4800,
     "nand": "TLC",
     "dram": false,
-    "value": 28
+    "value": 28,
+    "bench": 67
   },
   {
     "id": 50118,
@@ -46846,7 +47395,8 @@ export const PARTS = [
     "seq_w": 5000,
     "nand": "TLC",
     "dram": false,
-    "value": 39
+    "value": 39,
+    "bench": 59
   },
   {
     "id": 50119,
@@ -46880,7 +47430,8 @@ export const PARTS = [
     "seq_r": 1050,
     "seq_w": 950,
     "nand": "TLC",
-    "value": 24
+    "value": 24,
+    "bench": 47
   },
   {
     "id": 50120,
@@ -46953,7 +47504,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 39
+    "value": 39,
+    "bench": 10
   },
   {
     "id": 50122,
@@ -47101,7 +47653,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 33
+    "value": 33,
+    "bench": 10
   },
   {
     "id": 50126,
@@ -47173,7 +47726,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "USB",
     "rpm": 7200,
-    "value": 40
+    "value": 40,
+    "bench": 10
   },
   {
     "id": 50128,
@@ -47210,7 +47764,8 @@ export const PARTS = [
     "seq_w": 1800,
     "nand": "TLC",
     "dram": false,
-    "value": 38
+    "value": 38,
+    "bench": 37
   },
   {
     "id": 50129,
@@ -47248,7 +47803,8 @@ export const PARTS = [
     "seq_w": 13800,
     "nand": "TLC",
     "dram": true,
-    "value": 69
+    "value": 69,
+    "bench": 100
   },
   {
     "id": 50130,
@@ -47323,7 +47879,8 @@ export const PARTS = [
     "seq_w": 450,
     "nand": "TLC",
     "dram": false,
-    "value": 4
+    "value": 4,
+    "bench": 30
   },
   {
     "id": 50132,
@@ -47352,7 +47909,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 40
+    "value": 40,
+    "bench": 13
   },
   {
     "id": 50133,
@@ -47427,7 +47985,8 @@ export const PARTS = [
     "seq_w": 4200,
     "nand": "QLC",
     "dram": false,
-    "value": 24
+    "value": 24,
+    "bench": 62
   },
   {
     "id": 50135,
@@ -47502,7 +48061,8 @@ export const PARTS = [
     "seq_w": 480,
     "nand": "TLC",
     "dram": false,
-    "value": 7
+    "value": 7,
+    "bench": 40
   },
   {
     "id": 50137,
@@ -47540,7 +48100,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 11
+    "value": 11,
+    "bench": 37
   },
   {
     "id": 50138,
@@ -47617,7 +48178,8 @@ export const PARTS = [
     "nand": "TLC",
     "seq_w": 490,
     "dram": false,
-    "value": 4
+    "value": 4,
+    "bench": 45
   },
   {
     "id": 50140,
@@ -47653,7 +48215,8 @@ export const PARTS = [
     "seq_r": 560,
     "seq_w": 500,
     "nand": "QLC",
-    "value": 2
+    "value": 2,
+    "bench": 50
   },
   {
     "id": 50141,
@@ -47690,7 +48253,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 5
+    "value": 5,
+    "bench": 45
   },
   {
     "id": 50142,
@@ -47727,7 +48291,8 @@ export const PARTS = [
     "seq_w": 3000,
     "nand": "TLC",
     "dram": false,
-    "value": 57
+    "value": 57,
+    "bench": 57
   },
   {
     "id": 50143,
@@ -47763,7 +48328,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 5
+    "value": 5,
+    "bench": 50
   },
   {
     "id": 50144,
@@ -47836,7 +48402,8 @@ export const PARTS = [
     "seq_r": 550,
     "seq_w": 500,
     "seq_w_inferred": true,
-    "value": 5
+    "value": 5,
+    "bench": 45
   },
   {
     "id": 50146,
@@ -47874,7 +48441,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 5400,
-    "value": 2
+    "value": 2,
+    "bench": 50
   },
   {
     "id": 50147,
@@ -47911,7 +48479,8 @@ export const PARTS = [
     "seq_w": 6600,
     "nand": "TLC",
     "dram": false,
-    "value": 100
+    "value": 100,
+    "bench": 70
   },
   {
     "id": 50148,
@@ -47949,7 +48518,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "TLC",
     "dram": true,
-    "value": 5
+    "value": 5,
+    "bench": 50
   },
   {
     "id": 50149,
@@ -48024,7 +48594,8 @@ export const PARTS = [
     "seq_w": 450,
     "nand": "TLC",
     "dram": false,
-    "value": 9
+    "value": 9,
+    "bench": 45
   },
   {
     "id": 50151,
@@ -48061,7 +48632,8 @@ export const PARTS = [
     "seq_w": 1800,
     "nand": "TLC",
     "dram": false,
-    "value": 24
+    "value": 24,
+    "bench": 37
   },
   {
     "id": 50152,
@@ -48098,7 +48670,8 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 77
+    "value": 77,
+    "bench": 60
   },
   {
     "id": 50153,
@@ -48247,7 +48820,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 31
+    "value": 31,
+    "bench": 10
   },
   {
     "id": 50157,
@@ -48326,7 +48900,8 @@ export const PARTS = [
     "seq_w": 4500,
     "nand": "TLC",
     "dram": false,
-    "value": 47
+    "value": 47,
+    "bench": 67
   },
   {
     "id": 50159,
@@ -48363,7 +48938,8 @@ export const PARTS = [
     "seq_w": 6800,
     "nand": "TLC",
     "dram": true,
-    "value": 41
+    "value": 41,
+    "bench": 88
   },
   {
     "id": 50160,
@@ -48398,7 +48974,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 20
+    "value": 20,
+    "bench": 45
   },
   {
     "id": 50161,
@@ -48433,7 +49010,8 @@ export const PARTS = [
     "seq_r": 550,
     "seq_w": 500,
     "seq_w_inferred": true,
-    "value": 16
+    "value": 16,
+    "bench": 30
   },
   {
     "id": 50162,
@@ -48469,7 +49047,8 @@ export const PARTS = [
     "seq_w": 2800,
     "nand": "TLC",
     "dram": false,
-    "value": 56
+    "value": 56,
+    "bench": 50
   },
   {
     "id": 50163,
@@ -48539,7 +49118,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 39
+    "value": 39,
+    "bench": 10
   },
   {
     "id": 50165,
@@ -48571,7 +49151,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 39
+    "value": 39,
+    "bench": 10
   },
   {
     "id": 50166,
@@ -48608,7 +49189,8 @@ export const PARTS = [
     "seq_r": 5000,
     "seq_w": 4500,
     "dram": false,
-    "value": 64
+    "value": 64,
+    "bench": 67
   },
   {
     "id": 50167,
@@ -48642,7 +49224,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 76
+    "value": 76,
+    "bench": 15
   },
   {
     "id": 50168,
@@ -48680,7 +49263,8 @@ export const PARTS = [
     "seq_w": 13800,
     "nand": "TLC",
     "dram": true,
-    "value": 29
+    "value": 29,
+    "bench": 100
   },
   {
     "id": 50169,
@@ -48719,7 +49303,8 @@ export const PARTS = [
     "seq_w": 13800,
     "nand": "TLC",
     "dram": true,
-    "value": 100
+    "value": 100,
+    "bench": 100
   },
   {
     "id": 50170,
@@ -48755,7 +49340,8 @@ export const PARTS = [
     "seq_w": 450,
     "nand": "TLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 30
   },
   {
     "id": 50171,
@@ -48787,7 +49373,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 65
+    "value": 65,
+    "bench": 13
   },
   {
     "id": 50172,
@@ -48824,7 +49411,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 57
+    "value": 57,
+    "bench": 37
   },
   {
     "id": 50173,
@@ -48860,7 +49448,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "TLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 50
   },
   {
     "id": 50174,
@@ -48941,7 +49530,8 @@ export const PARTS = [
     "pcie": 3,
     "seq_w": 1500,
     "dram": false,
-    "value": 34
+    "value": 34,
+    "bench": 37
   },
   {
     "id": 50176,
@@ -49056,7 +49646,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 45
   },
   {
     "id": 50179,
@@ -49094,7 +49685,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "QLC",
     "dram": true,
-    "value": 0
+    "value": 0,
+    "bench": 50
   },
   {
     "id": 50180,
@@ -49131,7 +49723,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 45
   },
   {
     "id": 50181,
@@ -49165,7 +49758,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 24
+    "value": 24,
+    "bench": 10
   },
   {
     "id": 50182,
@@ -49202,7 +49796,8 @@ export const PARTS = [
     "seq_w": 450,
     "nand": "TLC",
     "dram": false,
-    "value": 5
+    "value": 5,
+    "bench": 45
   },
   {
     "id": 50183,
@@ -49238,7 +49833,8 @@ export const PARTS = [
     "seq_r": 550,
     "seq_w": 500,
     "dram": false,
-    "value": 8
+    "value": 8,
+    "bench": 45
   },
   {
     "id": 50184,
@@ -49275,7 +49871,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 45
   },
   {
     "id": 50185,
@@ -49311,7 +49908,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 50
   },
   {
     "id": 50186,
@@ -49353,7 +49951,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 0
+    "value": 0,
+    "bench": 40
   },
   {
     "id": 50187,
@@ -49390,7 +49989,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 45
   },
   {
     "id": 50188,
@@ -49428,7 +50028,8 @@ export const PARTS = [
     "seq_w": 1500,
     "nand": "TLC",
     "dram": false,
-    "value": 15
+    "value": 15,
+    "bench": 37
   },
   {
     "id": 50189,
@@ -49465,7 +50066,8 @@ export const PARTS = [
     "seq_w": 4500,
     "nand": "TLC",
     "dram": false,
-    "value": 77
+    "value": 77,
+    "bench": 57
   },
   {
     "id": 50190,
@@ -49503,7 +50105,8 @@ export const PARTS = [
     "seq_w": 4800,
     "nand": "TLC",
     "dram": false,
-    "value": 15
+    "value": 15,
+    "bench": 67
   },
   {
     "id": 50191,
@@ -49576,7 +50179,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 42
+    "value": 42,
+    "bench": 10
   },
   {
     "id": 50193,
@@ -49653,7 +50257,8 @@ export const PARTS = [
     "seq_w": 5000,
     "nand": "TLC",
     "dram": false,
-    "value": 28
+    "value": 28,
+    "bench": 59
   },
   {
     "id": 50195,
@@ -49689,7 +50294,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 9
+    "value": 9,
+    "bench": 45
   },
   {
     "id": 50196,
@@ -49762,7 +50368,8 @@ export const PARTS = [
     "seq_w": 450,
     "nand": "TLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 40
   },
   {
     "id": 50198,
@@ -49796,7 +50403,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "USB",
     "rpm": 5400,
-    "value": 36
+    "value": 36,
+    "bench": 10
   },
   {
     "id": 50199,
@@ -49832,7 +50440,8 @@ export const PARTS = [
     "seq_w": 2000,
     "nand": "TLC",
     "rpm": 7200,
-    "value": 12
+    "value": 12,
+    "bench": 37
   },
   {
     "id": 50200,
@@ -50062,7 +50671,8 @@ export const PARTS = [
     "seq_w": 13000,
     "nand": "TLC",
     "dram": true,
-    "value": 100
+    "value": 100,
+    "bench": 100
   },
   {
     "id": 50206,
@@ -50098,7 +50708,8 @@ export const PARTS = [
     "interface": "NVMe",
     "seq_r": 7000,
     "seq_w": 6500,
-    "value": 21
+    "value": 21,
+    "bench": 78
   },
   {
     "id": 50207,
@@ -50135,7 +50746,8 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 100
+    "value": 100,
+    "bench": 70
   },
   {
     "id": 50208,
@@ -50214,7 +50826,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 1
+    "value": 1,
+    "bench": 45
   },
   {
     "id": 50210,
@@ -50325,7 +50938,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 41
+    "value": 41,
+    "bench": 13
   },
   {
     "id": 50213,
@@ -50362,7 +50976,8 @@ export const PARTS = [
     "seq_w": 6800,
     "nand": "TLC",
     "dram": true,
-    "value": 65
+    "value": 65,
+    "bench": 88
   },
   {
     "id": 50214,
@@ -50400,7 +51015,8 @@ export const PARTS = [
     "seq_w": 2600,
     "nand": "TLC",
     "dram": false,
-    "value": 36
+    "value": 36,
+    "bench": 50
   },
   {
     "id": 50215,
@@ -50438,7 +51054,8 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": false,
-    "value": 61
+    "value": 61,
+    "bench": 85
   },
   {
     "id": 50216,
@@ -50472,7 +51089,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 45
+    "value": 45,
+    "bench": 15
   },
   {
     "id": 50217,
@@ -50507,7 +51125,8 @@ export const PARTS = [
     "seq_w": 450,
     "nand": "QLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 40
   },
   {
     "id": 50218,
@@ -50583,7 +51202,8 @@ export const PARTS = [
     "seq_w": 6800,
     "nand": "TLC",
     "dram": true,
-    "value": 38
+    "value": 38,
+    "bench": 83
   },
   {
     "id": 50220,
@@ -50620,7 +51240,8 @@ export const PARTS = [
     "seq_w": 1800,
     "nand": "TLC",
     "dram": false,
-    "value": 12
+    "value": 12,
+    "bench": 37
   },
   {
     "id": 50221,
@@ -50654,7 +51275,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 76
+    "value": 76,
+    "bench": 13
   },
   {
     "id": 50222,
@@ -50690,7 +51312,8 @@ export const PARTS = [
     "seq_w": 450,
     "nand": "TLC",
     "dram": false,
-    "value": 8
+    "value": 8,
+    "bench": 30
   },
   {
     "id": 50223,
@@ -50726,7 +51349,8 @@ export const PARTS = [
     "seq_w": 450,
     "nand": "TLC",
     "dram": false,
-    "value": 21
+    "value": 21,
+    "bench": 30
   },
   {
     "id": 50224,
@@ -50764,7 +51388,8 @@ export const PARTS = [
     "seq_w": 480,
     "nand": "TLC",
     "dram": false,
-    "value": 1
+    "value": 1,
+    "bench": 45
   },
   {
     "id": 50225,
@@ -50797,7 +51422,8 @@ export const PARTS = [
     "ff": "3.5\"",
     "storageType": "HDD",
     "rpm": 7200,
-    "value": 71
+    "value": 71,
+    "bench": 13
   },
   {
     "id": 50226,
@@ -50870,7 +51496,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 38
+    "value": 38,
+    "bench": 77
   },
   {
     "id": 50228,
@@ -50908,7 +51535,8 @@ export const PARTS = [
     "seq_w": 4200,
     "nand": "QLC",
     "dram": false,
-    "value": 49
+    "value": 49,
+    "bench": 62
   },
   {
     "id": 50229,
@@ -50945,7 +51573,8 @@ export const PARTS = [
     "seq_r": 550,
     "seq_w": 500,
     "dram": false,
-    "value": 6
+    "value": 6,
+    "bench": 45
   },
   {
     "id": 50230,
@@ -50973,7 +51602,8 @@ export const PARTS = [
     "ff": "3.5\"",
     "storageType": "HDD",
     "rpm": 7200,
-    "value": 39
+    "value": 39,
+    "bench": 10
   },
   {
     "id": 50231,
@@ -51010,7 +51640,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 38
+    "value": 38,
+    "bench": 37
   },
   {
     "id": 50232,
@@ -51083,7 +51714,8 @@ export const PARTS = [
     "seq_r": 550,
     "seq_w": 500,
     "seq_w_inferred": true,
-    "value": 8
+    "value": 8,
+    "bench": 45
   },
   {
     "id": 50234,
@@ -51120,7 +51752,8 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 41
+    "value": 41,
+    "bench": 80
   },
   {
     "id": 50235,
@@ -51157,7 +51790,8 @@ export const PARTS = [
     "seq_w": 4500,
     "nand": "TLC",
     "dram": false,
-    "value": 49
+    "value": 49,
+    "bench": 57
   },
   {
     "id": 50236,
@@ -51192,7 +51826,8 @@ export const PARTS = [
     "seq_w": 6800,
     "nand": "TLC",
     "dram": true,
-    "value": 68
+    "value": 68,
+    "bench": 83
   },
   {
     "id": 50237,
@@ -51227,7 +51862,8 @@ export const PARTS = [
     "seq_w": 4800,
     "nand": "TLC",
     "dram": false,
-    "value": 82
+    "value": 82,
+    "bench": 67
   },
   {
     "id": 50238,
@@ -51261,7 +51897,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 39
+    "value": 39,
+    "bench": 13
   },
   {
     "id": 50239,
@@ -51453,7 +52090,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 1
+    "value": 1,
+    "bench": 45
   },
   {
     "id": 50244,
@@ -51562,7 +52200,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 15
+    "value": 15,
+    "bench": 10
   },
   {
     "id": 50247,
@@ -51598,7 +52237,8 @@ export const PARTS = [
     "nand": "TLC",
     "seq_w": 500,
     "dram": false,
-    "value": 4
+    "value": 4,
+    "bench": 40
   },
   {
     "id": 50248,
@@ -51670,7 +52310,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "USB",
     "rpm": 5400,
-    "value": 50
+    "value": 50,
+    "bench": 10
   },
   {
     "id": 50250,
@@ -51704,7 +52345,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 14
+    "value": 14,
+    "bench": 10
   },
   {
     "id": 50251,
@@ -51776,7 +52418,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 18
+    "value": 18,
+    "bench": 10
   },
   {
     "id": 50253,
@@ -51968,7 +52611,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 34
+    "value": 34,
+    "bench": 10
   },
   {
     "id": 50258,
@@ -52045,7 +52689,8 @@ export const PARTS = [
     "seq_w": 430,
     "nand": "TLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 40
   },
   {
     "id": 50260,
@@ -52116,7 +52761,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 15
+    "value": 15,
+    "bench": 10
   },
   {
     "id": 50262,
@@ -52152,7 +52798,8 @@ export const PARTS = [
     "rpm": 7200,
     "seq_r": 140,
     "seq_w": 140,
-    "value": 0
+    "value": 0,
+    "bench": 25
   },
   {
     "id": 50263,
@@ -52190,7 +52837,8 @@ export const PARTS = [
     "seq_w": 450,
     "nand": "TLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 40
   },
   {
     "id": 50264,
@@ -52265,7 +52913,8 @@ export const PARTS = [
     "rpm": 7200,
     "seq_r": 140,
     "seq_w": 140,
-    "value": 0
+    "value": 0,
+    "bench": 25
   },
   {
     "id": 50266,
@@ -52333,7 +52982,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 19
+    "value": 19,
+    "bench": 10
   },
   {
     "id": 50268,
@@ -52447,7 +53097,8 @@ export const PARTS = [
     "seq_w": 4800,
     "nand": "TLC",
     "dram": false,
-    "value": 66
+    "value": 66,
+    "bench": 67
   },
   {
     "id": 50271,
@@ -52480,7 +53131,8 @@ export const PARTS = [
     "ff": "2.5\"",
     "storageType": "HDD",
     "interface": "USB",
-    "value": 13
+    "value": 13,
+    "bench": 10
   },
   {
     "id": 50272,
@@ -52518,7 +53170,8 @@ export const PARTS = [
     "seq_w": 3000,
     "nand": "TLC",
     "dram": true,
-    "value": 20
+    "value": 20,
+    "bench": 60
   },
   {
     "id": 50273,
@@ -52552,7 +53205,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 28
+    "value": 28,
+    "bench": 10
   },
   {
     "id": 50274,
@@ -52586,7 +53240,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 23
+    "value": 23,
+    "bench": 10
   },
   {
     "id": 50275,
@@ -52620,7 +53275,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "USB",
     "rpm": 5400,
-    "value": 45
+    "value": 45,
+    "bench": 10
   },
   {
     "id": 50276,
@@ -52653,7 +53309,8 @@ export const PARTS = [
     "ff": "2.5\"",
     "storageType": "HDD",
     "interface": "USB",
-    "value": 25
+    "value": 25,
+    "bench": 10
   },
   {
     "id": 50277,
@@ -52689,7 +53346,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 8
+    "value": 8,
+    "bench": 45
   },
   {
     "id": 50278,
@@ -52801,7 +53459,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 5400,
-    "value": 0
+    "value": 0,
+    "bench": 50
   },
   {
     "id": 50281,
@@ -52873,7 +53532,8 @@ export const PARTS = [
     "seq_w": 5000,
     "nand": "TLC",
     "dram": false,
-    "value": 40
+    "value": 40,
+    "bench": 59
   },
   {
     "id": 50283,
@@ -52950,7 +53610,8 @@ export const PARTS = [
     "rpm": 7200,
     "seq_r": 140,
     "seq_w": 140,
-    "value": 0
+    "value": 0,
+    "bench": 15
   },
   {
     "id": 50285,
@@ -52986,7 +53647,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "TLC",
     "dram": true,
-    "value": 0
+    "value": 0,
+    "bench": 50
   },
   {
     "id": 50286,
@@ -53022,7 +53684,8 @@ export const PARTS = [
     "seq_w": 450,
     "nand": "TLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 45
   },
   {
     "id": 50287,
@@ -53060,7 +53723,8 @@ export const PARTS = [
     "seq_w": 3000,
     "nand": "TLC",
     "dram": true,
-    "value": 6
+    "value": 6,
+    "bench": 60
   },
   {
     "id": 50288,
@@ -53094,7 +53758,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 52
+    "value": 52,
+    "bench": 13
   },
   {
     "id": 50289,
@@ -53206,7 +53871,8 @@ export const PARTS = [
     "seq_w": 2200,
     "nand": "TLC",
     "dram": false,
-    "value": 46
+    "value": 46,
+    "bench": 44
   },
   {
     "id": 50292,
@@ -53240,7 +53906,8 @@ export const PARTS = [
     "seq_w": 800,
     "nand": "TLC",
     "storageType": "SSD",
-    "value": 1
+    "value": 1,
+    "bench": 32
   },
   {
     "id": 50293,
@@ -53315,7 +53982,8 @@ export const PARTS = [
     "seq_w": 1800,
     "nand": "TLC",
     "dram": false,
-    "value": 19
+    "value": 19,
+    "bench": 37
   },
   {
     "id": 50295,
@@ -53352,7 +54020,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "TLC",
     "dram": true,
-    "value": 4
+    "value": 4,
+    "bench": 30
   },
   {
     "id": 50296,
@@ -53542,7 +54211,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 28
+    "value": 28,
+    "bench": 10
   },
   {
     "id": 50301,
@@ -53579,7 +54249,8 @@ export const PARTS = [
     "seq_w": 4800,
     "nand": "TLC",
     "dram": false,
-    "value": 14
+    "value": 14,
+    "bench": 67
   },
   {
     "id": 50302,
@@ -53729,7 +54400,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 9
+    "value": 9,
+    "bench": 45
   },
   {
     "id": 50306,
@@ -53802,7 +54474,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 1
+    "value": 1,
+    "bench": 45
   },
   {
     "id": 50308,
@@ -53837,7 +54510,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 3
+    "value": 3,
+    "bench": 45
   },
   {
     "id": 50309,
@@ -53873,7 +54547,8 @@ export const PARTS = [
     "seq_r": 560,
     "seq_w": 520,
     "dram": true,
-    "value": 2
+    "value": 2,
+    "bench": 50
   },
   {
     "id": 50310,
@@ -53943,7 +54618,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 31
+    "value": 31,
+    "bench": 10
   },
   {
     "id": 50312,
@@ -53979,7 +54655,8 @@ export const PARTS = [
     "seq_w": 13000,
     "nand": "TLC",
     "dram": true,
-    "value": 100
+    "value": 100,
+    "bench": 100
   },
   {
     "id": 50313,
@@ -54016,7 +54693,8 @@ export const PARTS = [
     "seq_w": 13000,
     "nand": "TLC",
     "dram": true,
-    "value": 43
+    "value": 43,
+    "bench": 100
   },
   {
     "id": 50314,
@@ -54053,7 +54731,8 @@ export const PARTS = [
     "seq_w": 13000,
     "nand": "TLC",
     "dram": true,
-    "value": 72
+    "value": 72,
+    "bench": 100
   },
   {
     "id": 50315,
@@ -54089,7 +54768,8 @@ export const PARTS = [
     "interface": "NVMe",
     "seq_r": 7000,
     "seq_w": 6500,
-    "value": 37
+    "value": 37,
+    "bench": 78
   },
   {
     "id": 50316,
@@ -54126,7 +54806,8 @@ export const PARTS = [
     "interface": "NVMe",
     "seq_r": 7000,
     "seq_w": 6000,
-    "value": 62
+    "value": 62,
+    "bench": 77
   },
   {
     "id": 50317,
@@ -54163,7 +54844,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "QLC",
     "dram": true,
-    "value": 0
+    "value": 0,
+    "bench": 50
   },
   {
     "id": 50318,
@@ -54203,7 +54885,8 @@ export const PARTS = [
     "seq_w": 2900,
     "nand": "TLC",
     "dram": true,
-    "value": 7
+    "value": 7,
+    "bench": 50
   },
   {
     "id": 50319,
@@ -54237,7 +54920,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 61
+    "value": 61,
+    "bench": 13
   },
   {
     "id": 50320,
@@ -54273,7 +54957,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 4
+    "value": 4,
+    "bench": 45
   },
   {
     "id": 50321,
@@ -54344,7 +55029,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 31
+    "value": 31,
+    "bench": 13
   },
   {
     "id": 50323,
@@ -54381,7 +55067,8 @@ export const PARTS = [
     "nand": "TLC",
     "seq_w": 4500,
     "dram": false,
-    "value": 47
+    "value": 47,
+    "bench": 67
   },
   {
     "id": 50324,
@@ -54530,7 +55217,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 33
+    "value": 33,
+    "bench": 10
   },
   {
     "id": 50328,
@@ -54569,7 +55257,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 54
+    "value": 54,
+    "bench": 15
   },
   {
     "id": 50329,
@@ -54608,7 +55297,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 52
+    "value": 52,
+    "bench": 13
   },
   {
     "id": 50330,
@@ -54646,7 +55336,8 @@ export const PARTS = [
     "seq_w": 4800,
     "nand": "TLC",
     "dram": false,
-    "value": 26
+    "value": 26,
+    "bench": 67
   },
   {
     "id": 50331,
@@ -54679,7 +55370,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 26
+    "value": 26,
+    "bench": 13
   },
   {
     "id": 50332,
@@ -54953,7 +55645,8 @@ export const PARTS = [
     "nand": "TLC",
     "seq_w": 6700,
     "dram": true,
-    "value": 40
+    "value": 40,
+    "bench": 88
   },
   {
     "id": 50339,
@@ -55028,7 +55721,8 @@ export const PARTS = [
     "seq_w": 450,
     "nand": "TLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 30
   },
   {
     "id": 50341,
@@ -55064,7 +55758,8 @@ export const PARTS = [
     "rpm": 7200,
     "seq_r": 140,
     "seq_w": 140,
-    "value": 0
+    "value": 0,
+    "bench": 25
   },
   {
     "id": 50342,
@@ -55090,7 +55785,8 @@ export const PARTS = [
     "form": "SATA SSD",
     "ff": "3.5\"",
     "storageType": "HDD",
-    "value": 25
+    "value": 25,
+    "bench": 10
   },
   {
     "id": 50343,
@@ -55120,7 +55816,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 11
+    "value": 11,
+    "bench": 10
   },
   {
     "id": 50344,
@@ -55156,7 +55853,8 @@ export const PARTS = [
     "seq_w": 4800,
     "nand": "TLC",
     "dram": false,
-    "value": 16
+    "value": 16,
+    "bench": 57
   },
   {
     "id": 50345,
@@ -55193,7 +55891,8 @@ export const PARTS = [
     "seq_w": 520,
     "nand": "TLC",
     "dram": true,
-    "value": 0
+    "value": 0,
+    "bench": 50
   },
   {
     "id": 50346,
@@ -55306,7 +56005,8 @@ export const PARTS = [
     "seq_r": 550,
     "seq_w": 500,
     "seq_w_inferred": true,
-    "value": 2
+    "value": 2,
+    "bench": 45
   },
   {
     "id": 50349,
@@ -55343,7 +56043,8 @@ export const PARTS = [
     "nand": "QLC",
     "seq_w": 2800,
     "dram": false,
-    "value": 11
+    "value": 11,
+    "bench": 45
   },
   {
     "id": 50350,
@@ -55417,7 +56118,8 @@ export const PARTS = [
     "seq_r": 550,
     "seq_w": 500,
     "seq_w_inferred": true,
-    "value": 2
+    "value": 2,
+    "bench": 30
   },
   {
     "id": 50352,
@@ -55454,7 +56156,8 @@ export const PARTS = [
     "seq_w": 545,
     "nand": "TLC",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 45
   },
   {
     "id": 50353,
@@ -55610,7 +56313,8 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": false,
-    "value": 38
+    "value": 38,
+    "bench": 85
   },
   {
     "id": 50357,
@@ -55642,7 +56346,8 @@ export const PARTS = [
     "ff": "3.5\"",
     "storageType": "HDD",
     "interface": "SATA",
-    "value": 39
+    "value": 39,
+    "bench": 10
   },
   {
     "id": 50358,
@@ -55752,7 +56457,8 @@ export const PARTS = [
     "ff": "3.5\"",
     "storageType": "HDD",
     "rpm": 7200,
-    "value": 48
+    "value": 48,
+    "bench": 10
   },
   {
     "id": 50361,
@@ -55784,7 +56490,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 40
+    "value": 40,
+    "bench": 10
   },
   {
     "id": 50362,
@@ -55817,7 +56524,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 23
+    "value": 23,
+    "bench": 10
   },
   {
     "id": 50363,
@@ -55854,7 +56562,8 @@ export const PARTS = [
     "seq_r": 5000,
     "seq_w": 4500,
     "dram": false,
-    "value": 42
+    "value": 42,
+    "bench": 67
   },
   {
     "id": 50364,
@@ -55891,7 +56600,8 @@ export const PARTS = [
     "seq_r": 5000,
     "seq_w": 4500,
     "dram": false,
-    "value": 25
+    "value": 25,
+    "bench": 67
   },
   {
     "id": 50365,
@@ -55928,7 +56638,8 @@ export const PARTS = [
     "seq_w": 480,
     "nand": "TLC",
     "dram": false,
-    "value": 3
+    "value": 3,
+    "bench": 45
   },
   {
     "id": 50366,
@@ -55962,7 +56673,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 59
+    "value": 59,
+    "bench": 13
   },
   {
     "id": 50367,
@@ -56033,7 +56745,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 25
+    "value": 25,
+    "bench": 10
   },
   {
     "id": 50369,
@@ -56065,7 +56778,8 @@ export const PARTS = [
     "ff": "3.5\"",
     "storageType": "HDD",
     "rpm": 7200,
-    "value": 54
+    "value": 54,
+    "bench": 10
   },
   {
     "id": 50370,
@@ -56102,7 +56816,8 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": false,
-    "value": 36
+    "value": 36,
+    "bench": 85
   },
   {
     "id": 50371,
@@ -56176,7 +56891,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "TLC",
     "dram": true,
-    "value": 0
+    "value": 0,
+    "bench": 50
   },
   {
     "id": 50373,
@@ -56208,7 +56924,8 @@ export const PARTS = [
     "form": "SATA SSD",
     "ff": "2.5\"",
     "storageType": "HDD",
-    "value": 10
+    "value": 10,
+    "bench": 10
   },
   {
     "id": 50374,
@@ -56235,7 +56952,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 14
+    "value": 14,
+    "bench": 10
   },
   {
     "id": 50375,
@@ -56268,7 +56986,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 33
+    "value": 33,
+    "bench": 10
   },
   {
     "id": 50376,
@@ -56305,7 +57024,8 @@ export const PARTS = [
     "seq_w": 2600,
     "nand": "TLC",
     "dram": false,
-    "value": 59
+    "value": 59,
+    "bench": 57
   },
   {
     "id": 50377,
@@ -56375,7 +57095,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 19
+    "value": 19,
+    "bench": 10
   },
   {
     "id": 50379,
@@ -56452,7 +57173,8 @@ export const PARTS = [
     "dram": true,
     "value": 6,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 50
   },
   {
     "id": 50381,
@@ -56486,7 +57208,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 23
+    "value": 23,
+    "bench": 13
   },
   {
     "id": 50382,
@@ -56518,7 +57241,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 34
+    "value": 34,
+    "bench": 10
   },
   {
     "id": 50383,
@@ -56551,7 +57275,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 63
+    "value": 63,
+    "bench": 15
   },
   {
     "id": 50384,
@@ -56623,7 +57348,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 32
+    "value": 32,
+    "bench": 15
   },
   {
     "id": 50386,
@@ -56734,7 +57460,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 21
+    "value": 21,
+    "bench": 77
   },
   {
     "id": 50389,
@@ -56772,7 +57499,8 @@ export const PARTS = [
     "seq_w": 3100,
     "nand": "TLC",
     "dram": false,
-    "value": 32
+    "value": 32,
+    "bench": 50
   },
   {
     "id": 50390,
@@ -56810,7 +57538,8 @@ export const PARTS = [
     "dram": false,
     "value": 100,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 77
   },
   {
     "id": 50391,
@@ -56847,7 +57576,8 @@ export const PARTS = [
     "seq_w": 1700,
     "nand": "TLC",
     "dram": false,
-    "value": 26
+    "value": 26,
+    "bench": 37
   },
   {
     "id": 50392,
@@ -56883,7 +57613,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 3
+    "value": 3,
+    "bench": 37
   },
   {
     "id": 50393,
@@ -56920,7 +57651,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 11
+    "value": 11,
+    "bench": 37
   },
   {
     "id": 50394,
@@ -56958,7 +57690,8 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 20
+    "value": 20,
+    "bench": 80
   },
   {
     "id": 50395,
@@ -56994,7 +57727,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 6
+    "value": 6,
+    "bench": 37
   },
   {
     "id": 50396,
@@ -57027,7 +57761,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 41
+    "value": 41,
+    "bench": 10
   },
   {
     "id": 50397,
@@ -57300,7 +58035,8 @@ export const PARTS = [
     "seq_w": 13400,
     "nand": "TLC",
     "dram": true,
-    "value": 48
+    "value": 48,
+    "bench": 100
   },
   {
     "id": 50404,
@@ -57338,7 +58074,8 @@ export const PARTS = [
     "seq_w": 12000,
     "nand": "TLC",
     "dram": true,
-    "value": 100
+    "value": 100,
+    "bench": 100
   },
   {
     "id": 50405,
@@ -57413,7 +58150,8 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": false,
-    "value": 22
+    "value": 22,
+    "bench": 85
   },
   {
     "id": 50407,
@@ -57450,7 +58188,8 @@ export const PARTS = [
     "seq_r": 14500,
     "seq_w": 12700,
     "dram": true,
-    "value": 42
+    "value": 42,
+    "bench": 100
   },
   {
     "id": 50408,
@@ -57629,7 +58368,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 35
+    "value": 35,
+    "bench": 10
   },
   {
     "id": 50413,
@@ -57658,7 +58398,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 53
+    "value": 53,
+    "bench": 15
   },
   {
     "id": 50414,
@@ -57733,7 +58474,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 63
+    "value": 63,
+    "bench": 77
   },
   {
     "id": 50416,
@@ -57770,7 +58512,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 37
+    "value": 37,
+    "bench": 77
   },
   {
     "id": 50417,
@@ -57807,7 +58550,8 @@ export const PARTS = [
     "seq_w": 1600,
     "nand": "TLC",
     "dram": false,
-    "value": 18
+    "value": 18,
+    "bench": 77
   },
   {
     "id": 50418,
@@ -57882,7 +58626,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SAS",
     "rpm": 7200,
-    "value": 50
+    "value": 50,
+    "bench": 10
   },
   {
     "id": 50420,
@@ -57914,7 +58659,8 @@ export const PARTS = [
     "form": "HDD",
     "ff": "2.5\"",
     "storageType": "HDD",
-    "value": 6
+    "value": 6,
+    "bench": 10
   },
   {
     "id": 50421,
@@ -57951,7 +58697,8 @@ export const PARTS = [
     "nand": "TLC",
     "seq_w": 6800,
     "dram": true,
-    "value": 35
+    "value": 35,
+    "bench": 88
   },
   {
     "id": 50422,
@@ -57986,7 +58733,8 @@ export const PARTS = [
     "seq_w": 4800,
     "nand": "TLC",
     "dram": false,
-    "value": 26
+    "value": 26,
+    "bench": 57
   },
   {
     "id": 50423,
@@ -58017,7 +58765,8 @@ export const PARTS = [
     "rpm": 7200,
     "seq_r": 140,
     "seq_w": 140,
-    "value": 2
+    "value": 2,
+    "bench": 15
   },
   {
     "id": 50424,
@@ -58094,7 +58843,8 @@ export const PARTS = [
     "seq_w": 4200,
     "nand": "QLC",
     "dram": false,
-    "value": 31
+    "value": 31,
+    "bench": 62
   },
   {
     "id": 50426,
@@ -58130,7 +58880,8 @@ export const PARTS = [
     "seq_r": 550,
     "seq_w": 500,
     "seq_w_inferred": true,
-    "value": 5
+    "value": 5,
+    "bench": 30
   },
   {
     "id": 50427,
@@ -58168,7 +58919,8 @@ export const PARTS = [
     "seq_w": 480,
     "nand": "TLC",
     "dram": false,
-    "value": 0
+    "value": 0,
+    "bench": 45
   },
   {
     "id": 50428,
@@ -58206,7 +58958,8 @@ export const PARTS = [
     "seq_w": 480,
     "nand": "TLC",
     "dram": false,
-    "value": 3
+    "value": 3,
+    "bench": 45
   },
   {
     "id": 50429,
@@ -58245,7 +58998,8 @@ export const PARTS = [
     "seq_w": 11000,
     "nand": "TLC",
     "dram": true,
-    "value": 100
+    "value": 100,
+    "bench": 100
   },
   {
     "id": 50430,
@@ -58281,7 +59035,8 @@ export const PARTS = [
     "seq_w": 9500,
     "nand": "TLC",
     "dram": true,
-    "value": 47
+    "value": 47,
+    "bench": 96
   },
   {
     "id": 50431,
@@ -58318,7 +59073,8 @@ export const PARTS = [
     "seq_w": 9500,
     "nand": "TLC",
     "dram": true,
-    "value": 78
+    "value": 78,
+    "bench": 96
   },
   {
     "id": 50432,
@@ -58355,7 +59111,8 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 100
+    "value": 100,
+    "bench": 70
   },
   {
     "id": 50433,
@@ -58384,7 +59141,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 35
+    "value": 35,
+    "bench": 10
   },
   {
     "id": 50434,
@@ -58420,7 +59178,8 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 23
+    "value": 23,
+    "bench": 80
   },
   {
     "id": 50435,
@@ -58455,7 +59214,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 20
+    "value": 20,
+    "bench": 10
   },
   {
     "id": 50436,
@@ -58489,7 +59249,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 36
+    "value": 36,
+    "bench": 13
   },
   {
     "id": 50437,
@@ -58533,7 +59294,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 32
+    "value": 32,
+    "bench": 83
   },
   {
     "id": 50438,
@@ -58568,7 +59330,8 @@ export const PARTS = [
     "seq_r": 560,
     "seq_w": 530,
     "nand": "TLC",
-    "value": 4
+    "value": 4,
+    "bench": 50
   },
   {
     "id": 50439,
@@ -58644,7 +59407,8 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 21
+    "value": 21,
+    "bench": 80
   },
   {
     "id": 50441,
@@ -58682,7 +59446,8 @@ export const PARTS = [
     "seq_w": 14000,
     "nand": "TLC",
     "dram": true,
-    "value": 52
+    "value": 52,
+    "bench": 100
   },
   {
     "id": 50442,
@@ -58718,7 +59483,8 @@ export const PARTS = [
     "seq_w": 12000,
     "nand": "TLC",
     "dram": true,
-    "value": 63
+    "value": 63,
+    "bench": 100
   },
   {
     "id": 50443,
@@ -58755,7 +59521,8 @@ export const PARTS = [
     "seq_w": 12000,
     "nand": "TLC",
     "dram": true,
-    "value": 100
+    "value": 100,
+    "bench": 100
   },
   {
     "id": 50444,
@@ -58873,7 +59640,8 @@ export const PARTS = [
     "interface": "NVMe",
     "seq_r": 7200,
     "seq_w": 6850,
-    "value": 67
+    "value": 67,
+    "bench": 78
   },
   {
     "id": 50447,
@@ -58910,7 +59678,8 @@ export const PARTS = [
     "seq_w": 4500,
     "nand": "TLC",
     "dram": false,
-    "value": 83
+    "value": 83,
+    "bench": 57
   },
   {
     "id": 50448,
@@ -58948,7 +59717,8 @@ export const PARTS = [
     "seq_w": 480,
     "nand": "TLC",
     "dram": false,
-    "value": 0
+    "value": 0,
+    "bench": 45
   },
   {
     "id": 50449,
@@ -59094,7 +59864,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 23
+    "value": 23,
+    "bench": 10
   },
   {
     "id": 50453,
@@ -59167,7 +59938,8 @@ export const PARTS = [
     "seq_w": 6800,
     "nand": "TLC",
     "dram": true,
-    "value": 100
+    "value": 100,
+    "bench": 83
   },
   {
     "id": 50455,
@@ -59202,7 +59974,8 @@ export const PARTS = [
     "seq_w": 6800,
     "nand": "TLC",
     "dram": true,
-    "value": 25
+    "value": 25,
+    "bench": 83
   },
   {
     "id": 50456,
@@ -59236,7 +60009,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "value": 54
+    "value": 54,
+    "bench": 15
   },
   {
     "id": 50457,
@@ -59269,7 +60043,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 15
+    "value": 15,
+    "bench": 13
   },
   {
     "id": 50458,
@@ -59303,7 +60078,8 @@ export const PARTS = [
     "seq_r": 540,
     "seq_w": 500,
     "seq_w_inferred": true,
-    "value": 4
+    "value": 4,
+    "bench": 45
   },
   {
     "id": 50459,
@@ -59455,7 +60231,8 @@ export const PARTS = [
     "seq_w": 4800,
     "nand": "TLC",
     "dram": false,
-    "value": 16
+    "value": 16,
+    "bench": 67
   },
   {
     "id": 50463,
@@ -59490,7 +60267,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 5400,
-    "value": 28
+    "value": 28,
+    "bench": 10
   },
   {
     "id": 50464,
@@ -59614,7 +60392,8 @@ export const PARTS = [
     "nand": "3D NAND",
     "storageType": "SSD",
     "dram": false,
-    "value": 9
+    "value": 9,
+    "bench": 40
   },
   {
     "id": 50468,
@@ -59643,7 +60422,8 @@ export const PARTS = [
     "heatsink": false,
     "storageType": "SSD",
     "dram": false,
-    "value": 3
+    "value": 3,
+    "bench": 40
   },
   {
     "id": 50469,
@@ -59703,7 +60483,8 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "SSD",
     "dram": true,
-    "value": 1
+    "value": 1,
+    "bench": 50
   },
   {
     "id": 50471,
@@ -59764,7 +60545,8 @@ export const PARTS = [
     "heatsink": false,
     "storageType": "SSD",
     "dram": true,
-    "value": 0
+    "value": 0,
+    "bench": 50
   },
   {
     "id": 50473,
@@ -59887,7 +60669,8 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "SSD",
     "dram": true,
-    "value": 3
+    "value": 3,
+    "bench": 50
   },
   {
     "id": 50477,
@@ -59917,7 +60700,8 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "SSD",
     "dram": true,
-    "value": 0
+    "value": 0,
+    "bench": 50
   },
   {
     "id": 50478,
@@ -59946,7 +60730,8 @@ export const PARTS = [
     "heatsink": false,
     "storageType": "SSD",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 45
   },
   {
     "id": 50479,
@@ -59975,7 +60760,8 @@ export const PARTS = [
     "heatsink": false,
     "storageType": "SSD",
     "dram": false,
-    "value": 2
+    "value": 2,
+    "bench": 45
   },
   {
     "id": 50480,
@@ -60036,7 +60822,8 @@ export const PARTS = [
     "storageType": "SSD",
     "dram": true,
     "rpm": 7200,
-    "value": 2
+    "value": 2,
+    "bench": 50
   },
   {
     "id": 50482,
@@ -60129,7 +60916,8 @@ export const PARTS = [
     "storageType": "SSD",
     "dram": true,
     "rpm": 7200,
-    "value": 0
+    "value": 0,
+    "bench": 50
   },
   {
     "id": 50485,
@@ -60158,7 +60946,8 @@ export const PARTS = [
     "storageType": "SSD",
     "dram": true,
     "rpm": 7200,
-    "value": 0
+    "value": 0,
+    "bench": 50
   },
   {
     "id": 50486,
@@ -60189,7 +60978,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "rpm": 7200,
-    "value": 22
+    "value": 22,
+    "bench": 57
   },
   {
     "id": 50487,
@@ -60280,7 +61070,8 @@ export const PARTS = [
     "storageType": "SSD",
     "nand": "QLC",
     "dram": true,
-    "value": 0
+    "value": 0,
+    "bench": 50
   },
   {
     "id": 50490,
@@ -60464,7 +61255,8 @@ export const PARTS = [
     "heatsink": false,
     "storageType": "SSD",
     "dram": true,
-    "value": 41
+    "value": 41,
+    "bench": 88
   },
   {
     "id": 50496,
@@ -60494,7 +61286,8 @@ export const PARTS = [
     "heatsink": false,
     "storageType": "SSD",
     "dram": true,
-    "value": 20
+    "value": 20,
+    "bench": 88
   },
   {
     "id": 50497,
@@ -60679,7 +61472,8 @@ export const PARTS = [
     "heatsink": false,
     "storageType": "SSD",
     "dram": false,
-    "value": 0
+    "value": 0,
+    "bench": 45
   },
   {
     "id": 50503,
@@ -60955,7 +61749,8 @@ export const PARTS = [
     "storageType": "SSD",
     "nand": "TLC",
     "dram": false,
-    "value": 100
+    "value": 100,
+    "bench": 85
   },
   {
     "id": 50512,
@@ -61079,7 +61874,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 34
+    "value": 34,
+    "bench": 100
   },
   {
     "id": 50516,
@@ -61110,7 +61906,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 17
+    "value": 17,
+    "bench": 100
   },
   {
     "id": 50517,
@@ -61141,7 +61938,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 70
+    "value": 70,
+    "bench": 100
   },
   {
     "id": 50518,
@@ -61171,7 +61969,8 @@ export const PARTS = [
     "heatsink": true,
     "storageType": "SSD",
     "dram": true,
-    "value": 100
+    "value": 100,
+    "bench": 100
   },
   {
     "id": 50519,
@@ -61201,7 +62000,8 @@ export const PARTS = [
     "heatsink": false,
     "storageType": "SSD",
     "dram": true,
-    "value": 71
+    "value": 71,
+    "bench": 100
   },
   {
     "id": 50520,
@@ -61231,7 +62031,8 @@ export const PARTS = [
     "heatsink": false,
     "storageType": "SSD",
     "dram": true,
-    "value": 39
+    "value": 39,
+    "bench": 100
   },
   {
     "id": 50522,
@@ -61261,7 +62062,8 @@ export const PARTS = [
     "heatsink": true,
     "storageType": "SSD",
     "dram": true,
-    "value": 67
+    "value": 67,
+    "bench": 100
   },
   {
     "id": 50523,
@@ -61291,7 +62093,8 @@ export const PARTS = [
     "heatsink": true,
     "storageType": "SSD",
     "dram": true,
-    "value": 38
+    "value": 38,
+    "bench": 100
   },
   {
     "id": 50524,
@@ -61415,7 +62218,8 @@ export const PARTS = [
     "rpm": 7200,
     "nand": "TLC",
     "dram": false,
-    "value": 10
+    "value": 10,
+    "bench": 75
   },
   {
     "id": 50528,
@@ -61508,7 +62312,8 @@ export const PARTS = [
     "seq_w": 6400,
     "nand": "TLC",
     "dram": true,
-    "value": 31
+    "value": 31,
+    "bench": 82
   },
   {
     "id": 50531,
@@ -61537,7 +62342,8 @@ export const PARTS = [
     "seq_w": 6400,
     "nand": "TLC",
     "dram": true,
-    "value": 31
+    "value": 31,
+    "bench": 82
   },
   {
     "id": 50532,
@@ -61566,7 +62372,8 @@ export const PARTS = [
     "seq_w": 6400,
     "nand": "TLC",
     "dram": true,
-    "value": 56
+    "value": 56,
+    "bench": 82
   },
   {
     "id": 50533,
@@ -61595,7 +62402,8 @@ export const PARTS = [
     "seq_w": 6800,
     "nand": "TLC",
     "dram": true,
-    "value": 24
+    "value": 24,
+    "bench": 83
   },
   {
     "id": 50534,
@@ -61625,7 +62433,8 @@ export const PARTS = [
     "heatsink": false,
     "storageType": "SSD",
     "dram": false,
-    "value": 61
+    "value": 61,
+    "bench": 55
   },
   {
     "id": 50535,
@@ -61654,7 +62463,8 @@ export const PARTS = [
     "seq_w": 6700,
     "nand": "TLC",
     "dram": false,
-    "value": 24
+    "value": 24,
+    "bench": 80
   },
   {
     "id": 50536,
@@ -61683,7 +62493,8 @@ export const PARTS = [
     "seq_w": 6700,
     "nand": "TLC",
     "dram": false,
-    "value": 12
+    "value": 12,
+    "bench": 80
   },
   {
     "id": 50537,
@@ -61712,7 +62523,8 @@ export const PARTS = [
     "seq_w": 6700,
     "nand": "TLC",
     "dram": false,
-    "value": 47
+    "value": 47,
+    "bench": 80
   },
   {
     "id": 50538,
@@ -61740,7 +62552,8 @@ export const PARTS = [
     "heatsink": false,
     "storageType": "HDD",
     "rpm": 5400,
-    "value": 0
+    "value": 0,
+    "bench": 20
   },
   {
     "id": 50539,
@@ -61768,7 +62581,8 @@ export const PARTS = [
     "rpm": 5400,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 1
+    "value": 1,
+    "bench": 15
   },
   {
     "id": 50540,
@@ -61792,7 +62606,8 @@ export const PARTS = [
     "interface": "USB",
     "storageType": "HDD",
     "pcie": 3,
-    "value": 24
+    "value": 24,
+    "bench": 10
   },
   {
     "id": 50541,
@@ -61816,7 +62631,8 @@ export const PARTS = [
     "interface": "USB",
     "storageType": "HDD",
     "pcie": 3,
-    "value": 34
+    "value": 34,
+    "bench": 10
   },
   {
     "id": 50542,
@@ -61840,7 +62656,8 @@ export const PARTS = [
     "interface": "USB",
     "storageType": "HDD",
     "rpm": 7200,
-    "value": 35
+    "value": 35,
+    "bench": 10
   },
   {
     "id": 50543,
@@ -61864,7 +62681,8 @@ export const PARTS = [
     "interface": "USB",
     "storageType": "HDD",
     "rpm": 7200,
-    "value": 25
+    "value": 25,
+    "bench": 10
   },
   {
     "id": 50544,
@@ -61890,7 +62708,8 @@ export const PARTS = [
     "rpm": 7200,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 70
+    "value": 70,
+    "bench": 10
   },
   {
     "id": 50545,
@@ -61916,7 +62735,8 @@ export const PARTS = [
     "heatsink": false,
     "storageType": "HDD",
     "rpm": 7200,
-    "value": 74
+    "value": 74,
+    "bench": 10
   },
   {
     "id": 50546,
@@ -61944,7 +62764,8 @@ export const PARTS = [
     "rpm": 5400,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 0
+    "value": 0,
+    "bench": 20
   },
   {
     "id": 50547,
@@ -61972,7 +62793,8 @@ export const PARTS = [
     "rpm": 7200,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 0
+    "value": 0,
+    "bench": 35
   },
   {
     "id": 50548,
@@ -62000,7 +62822,8 @@ export const PARTS = [
     "rpm": 5400,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 0
+    "value": 0,
+    "bench": 25
   },
   {
     "id": 50549,
@@ -62027,7 +62850,8 @@ export const PARTS = [
     "seq_w": 215,
     "rpm": 5400,
     "storageType": "HDD",
-    "value": 0
+    "value": 0,
+    "bench": 25
   },
   {
     "id": 50550,
@@ -62054,7 +62878,8 @@ export const PARTS = [
     "seq_w": 180,
     "rpm": 5400,
     "storageType": "HDD",
-    "value": 0
+    "value": 0,
+    "bench": 20
   },
   {
     "id": 50551,
@@ -62081,7 +62906,8 @@ export const PARTS = [
     "seq_w": 215,
     "rpm": 5640,
     "storageType": "HDD",
-    "value": 0
+    "value": 0,
+    "bench": 25
   },
   {
     "id": 50552,
@@ -62109,7 +62935,8 @@ export const PARTS = [
     "rpm": 7200,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 0
+    "value": 0,
+    "bench": 35
   },
   {
     "id": 50553,
@@ -62137,7 +62964,8 @@ export const PARTS = [
     "rpm": 7200,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 0
+    "value": 0,
+    "bench": 28
   },
   {
     "id": 50554,
@@ -62165,7 +62993,8 @@ export const PARTS = [
     "rpm": 7200,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 0
+    "value": 0,
+    "bench": 25
   },
   {
     "id": 50555,
@@ -62193,7 +63022,8 @@ export const PARTS = [
     "rpm": 7200,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 2
+    "value": 2,
+    "bench": 25
   },
   {
     "id": 50556,
@@ -62221,7 +63051,8 @@ export const PARTS = [
     "rpm": 5400,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 1
+    "value": 1,
+    "bench": 20
   },
   {
     "id": 50557,
@@ -62249,7 +63080,8 @@ export const PARTS = [
     "rpm": 5400,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 0
+    "value": 0,
+    "bench": 20
   },
   {
     "id": 50558,
@@ -62277,7 +63109,8 @@ export const PARTS = [
     "rpm": 7200,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 0
+    "value": 0,
+    "bench": 35
   },
   {
     "id": 50559,
@@ -62305,7 +63138,8 @@ export const PARTS = [
     "rpm": 7200,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 0
+    "value": 0,
+    "bench": 30
   },
   {
     "id": 50560,
@@ -62332,7 +63166,8 @@ export const PARTS = [
     "seq_w": 175,
     "rpm": 5400,
     "storageType": "HDD",
-    "value": 0
+    "value": 0,
+    "bench": 20
   },
   {
     "id": 50561,
@@ -62359,7 +63194,8 @@ export const PARTS = [
     "seq_w": 170,
     "rpm": 5400,
     "storageType": "HDD",
-    "value": 0
+    "value": 0,
+    "bench": 20
   },
   {
     "id": 50562,
@@ -62387,7 +63223,8 @@ export const PARTS = [
     "rpm": 7200,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 4
+    "value": 4,
+    "bench": 15
   },
   {
     "id": 50563,
@@ -62415,7 +63252,8 @@ export const PARTS = [
     "rpm": 5400,
     "heatsink": false,
     "storageType": "HDD",
-    "value": 3
+    "value": 3,
+    "bench": 20
   },
   {
     "id": 60000,
@@ -79402,7 +80240,9 @@ export const PARTS = [
     },
     "fans_inc": 2,
     "rgb": false,
-    "value": 3
+    "value": 3,
+    "bench": 90,
+    "cfm": 165
   },
   {
     "id": 80001,
@@ -79434,7 +80274,9 @@ export const PARTS = [
     },
     "fans_inc": 2,
     "rgb": false,
-    "value": 3
+    "value": 3,
+    "bench": 90,
+    "cfm": 175
   },
   {
     "id": 80002,
@@ -79466,7 +80308,9 @@ export const PARTS = [
     },
     "fans_inc": 2,
     "rgb": false,
-    "value": 7
+    "value": 7,
+    "bench": 68,
+    "cfm": 102
   },
   {
     "id": 80003,
@@ -79498,7 +80342,9 @@ export const PARTS = [
     },
     "fans_inc": 1,
     "rgb": false,
-    "value": 9
+    "value": 9,
+    "bench": 53,
+    "cfm": 60
   },
   {
     "id": 80004,
@@ -79527,7 +80373,9 @@ export const PARTS = [
     },
     "fans_inc": 1,
     "rgb": false,
-    "value": 11
+    "value": 11,
+    "bench": 29,
+    "cfm": 33
   },
   {
     "id": 80005,
@@ -79559,7 +80407,9 @@ export const PARTS = [
     },
     "fans_inc": 2,
     "rgb": false,
-    "value": 32
+    "value": 32,
+    "bench": 68,
+    "cfm": 110
   },
   {
     "id": 80006,
@@ -79591,7 +80441,9 @@ export const PARTS = [
     },
     "fans_inc": 1,
     "rgb": false,
-    "value": 32
+    "value": 32,
+    "bench": 57,
+    "cfm": 65
   },
   {
     "id": 80007,
@@ -79625,7 +80477,9 @@ export const PARTS = [
     "rgb": false,
     "value": 68,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 75,
+    "cfm": 132
   },
   {
     "id": 80008,
@@ -79659,7 +80513,9 @@ export const PARTS = [
     "rgb": false,
     "value": 27,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 78,
+    "cfm": 145
   },
   {
     "id": 80009,
@@ -79691,7 +80547,10 @@ export const PARTS = [
     },
     "fans_inc": 2,
     "rgb": false,
-    "value": 72
+    "value": 72,
+    "bench": 64,
+    "radSize": "120",
+    "cfm": 132
   },
   {
     "id": 80010,
@@ -79723,7 +80582,10 @@ export const PARTS = [
     },
     "fans_inc": 2,
     "rgb": true,
-    "value": 100
+    "value": 100,
+    "bench": 64,
+    "radSize": "120",
+    "cfm": 132
   },
   {
     "id": 80011,
@@ -79755,7 +80617,9 @@ export const PARTS = [
     },
     "fans_inc": 1,
     "rgb": false,
-    "value": 100
+    "value": 100,
+    "bench": 37,
+    "cfm": 84
   },
   {
     "id": 80012,
@@ -79789,7 +80653,10 @@ export const PARTS = [
     "rgb": true,
     "value": 10,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 89,
+    "height": 52,
+    "cfm": 174
   },
   {
     "id": 80013,
@@ -79823,7 +80690,10 @@ export const PARTS = [
     "rgb": true,
     "value": 30,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 64,
+    "height": 52,
+    "cfm": 116
   },
   {
     "id": 80014,
@@ -79855,7 +80725,10 @@ export const PARTS = [
     },
     "fans_inc": 3,
     "rgb": true,
-    "value": 19
+    "value": 19,
+    "bench": 94,
+    "height": 52,
+    "cfm": 213
   },
   {
     "id": 80015,
@@ -79887,7 +80760,10 @@ export const PARTS = [
     },
     "fans_inc": 2,
     "rgb": true,
-    "value": 19
+    "value": 19,
+    "bench": 69,
+    "height": 52,
+    "cfm": 142
   },
   {
     "id": 80016,
@@ -79919,7 +80795,10 @@ export const PARTS = [
     },
     "fans_inc": 3,
     "rgb": false,
-    "value": 48
+    "value": 48,
+    "bench": 100,
+    "height": 52,
+    "cfm": 200
   },
   {
     "id": 80017,
@@ -79951,7 +80830,10 @@ export const PARTS = [
     },
     "fans_inc": 2,
     "rgb": false,
-    "value": 28
+    "value": 28,
+    "bench": 91,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80018,
@@ -79983,7 +80865,10 @@ export const PARTS = [
     },
     "fans_inc": 2,
     "rgb": false,
-    "value": 34
+    "value": 34,
+    "bench": 81,
+    "height": 52,
+    "cfm": 130
   },
   {
     "id": 80019,
@@ -80015,7 +80900,10 @@ export const PARTS = [
     },
     "fans_inc": 3,
     "rgb": true,
-    "value": 80
+    "value": 80,
+    "bench": 95,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80020,
@@ -80049,7 +80937,10 @@ export const PARTS = [
     "rgb": false,
     "value": 30,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 86,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80021,
@@ -80081,7 +80972,10 @@ export const PARTS = [
     },
     "fans_inc": 3,
     "rgb": true,
-    "value": 10
+    "value": 10,
+    "bench": 100,
+    "height": 52,
+    "cfm": 165
   },
   {
     "id": 80022,
@@ -80115,7 +81009,10 @@ export const PARTS = [
     "rgb": true,
     "value": 32,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 95,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80023,
@@ -80149,7 +81046,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 59
+    "value": 59,
+    "bench": 42,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80024,
@@ -80184,7 +81084,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 6
+    "value": 6,
+    "bench": 54,
+    "radSize": "120",
+    "fanSize": 120,
+    "cfm": 60
   },
   {
     "id": 80025,
@@ -80219,7 +81123,12 @@ export const PARTS = [
     "rgb": false,
     "value": 26,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 83,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80026,
@@ -80255,7 +81164,11 @@ export const PARTS = [
     "rgb": true,
     "value": 17,
     "tdp_rating": 125,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 33,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 60
   },
   {
     "id": 80027,
@@ -80282,7 +81195,11 @@ export const PARTS = [
     ],
     "weight": "3.4 Pounds",
     "noise": 25.8,
-    "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4"
+    "compatibility": "Intel sockets: 1954/1851/1700/1200/1151/1150/1155 | AMD sockets: AM5/AM4",
+    "bench": 57,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "cfm": 110
   },
   {
     "id": 80028,
@@ -80323,7 +81240,11 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 95
+    "value": 95,
+    "bench": 46,
+    "radSize": "120",
+    "fanSize": 120,
+    "cfm": 56
   },
   {
     "id": 80029,
@@ -80365,7 +81286,11 @@ export const PARTS = [
     "rgb": true,
     "value": 40,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 81,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80030,
@@ -80400,7 +81325,11 @@ export const PARTS = [
     "rgb": false,
     "value": 38,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 99,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 200
   },
   {
     "id": 80031,
@@ -80435,7 +81364,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 90
+    "value": 90,
+    "bench": 66,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80032,
@@ -80470,7 +81403,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 93
+    "value": 93,
+    "bench": 66,
+    "radSize": "120",
+    "cfm": 132
   },
   {
     "id": 80033,
@@ -80504,7 +81440,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 82
+    "value": 82,
+    "bench": 62,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80034,
@@ -80540,7 +81480,11 @@ export const PARTS = [
     "rgb": true,
     "value": 69,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 74,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 132
   },
   {
     "id": 80035,
@@ -80575,7 +81519,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 87
+    "value": 87,
+    "bench": 54,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80036,
@@ -80609,7 +81556,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200,LGA1151",
     "rgb": false,
-    "value": 7
+    "value": 7,
+    "bench": 65,
+    "radSize": "140",
+    "fanSize": 140,
+    "cfm": 75
   },
   {
     "id": 80037,
@@ -80645,7 +81596,12 @@ export const PARTS = [
     "rgb": false,
     "value": 46,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 76,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80038,
@@ -80679,7 +81635,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 82
+    "value": 82,
+    "bench": 66,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80039,
@@ -80714,7 +81674,11 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 58
+    "value": 58,
+    "bench": 37,
+    "radSize": "120",
+    "fanSize": 120,
+    "cfm": 56
   },
   {
     "id": 80040,
@@ -80749,7 +81713,12 @@ export const PARTS = [
     "rgb": true,
     "value": 1,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 83,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80041,
@@ -80785,7 +81754,11 @@ export const PARTS = [
     "rgb": false,
     "value": 48,
     "tdp_rating": 320,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 100,
+    "fanSize": 140,
+    "height": 52,
+    "cfm": 240
   },
   {
     "id": 80042,
@@ -80821,7 +81794,11 @@ export const PARTS = [
     "rgb": true,
     "value": 89,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 90,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 132
   },
   {
     "id": 80043,
@@ -80855,7 +81832,12 @@ export const PARTS = [
     "rgb": true,
     "value": 30,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 79,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80044,
@@ -80889,7 +81871,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 82
+    "value": 82,
+    "bench": 66,
+    "radSize": "120",
+    "cfm": 132
   },
   {
     "id": 80045,
@@ -80923,7 +81908,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 85
+    "value": 85,
+    "bench": 66,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80046,
@@ -80957,7 +81946,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 13
+    "value": 13,
+    "bench": 42,
+    "fanSize": 92,
+    "cfm": 35
   },
   {
     "id": 80047,
@@ -80992,7 +81984,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200,LGA1151",
     "rgb": false,
-    "value": 9
+    "value": 9,
+    "bench": 65,
+    "radSize": "140",
+    "fanSize": 140,
+    "cfm": 75
   },
   {
     "id": 80048,
@@ -81028,7 +82024,12 @@ export const PARTS = [
     "rgb": true,
     "value": 68,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 92,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80049,
@@ -81064,7 +82065,11 @@ export const PARTS = [
     "rgb": true,
     "value": 88,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 100,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80050,
@@ -81099,7 +82104,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 67
+    "value": 67,
+    "bench": 65,
+    "radSize": "120",
+    "cfm": 132
   },
   {
     "id": 80051,
@@ -81141,7 +82149,11 @@ export const PARTS = [
     "rgb": true,
     "value": 3,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 89,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 213
   },
   {
     "id": 80052,
@@ -81176,7 +82188,12 @@ export const PARTS = [
     "rgb": true,
     "value": 30,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 55,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80053,
@@ -81211,7 +82228,12 @@ export const PARTS = [
     "rgb": true,
     "value": 1,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 83,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80054,
@@ -81245,7 +82267,9 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 0
+    "value": 0,
+    "bench": 36,
+    "cfm": 35
   },
   {
     "id": 80055,
@@ -81282,7 +82306,11 @@ export const PARTS = [
     "rgb": true,
     "value": 51,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 92,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80056,
@@ -81317,7 +82345,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 46
+    "value": 46,
+    "bench": 48,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80057,
@@ -81352,7 +82383,11 @@ export const PARTS = [
     "rgb": true,
     "value": 48,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 67,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80058,
@@ -81387,7 +82422,11 @@ export const PARTS = [
     "rgb": true,
     "value": 4,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 91,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80059,
@@ -81422,7 +82461,11 @@ export const PARTS = [
     "rgb": false,
     "value": 57,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 51,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80060,
@@ -81455,7 +82498,12 @@ export const PARTS = [
     "rgb": false,
     "value": 58,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 67,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80061,
@@ -81490,7 +82538,9 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 2
+    "value": 2,
+    "bench": 36,
+    "cfm": 35
   },
   {
     "id": 80062,
@@ -81525,7 +82575,9 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 11
+    "value": 11,
+    "bench": 51,
+    "cfm": 65
   },
   {
     "id": 80063,
@@ -81565,7 +82617,12 @@ export const PARTS = [
     "rgb": true,
     "value": 7,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 80,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80064,
@@ -81599,7 +82656,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 2
+    "value": 2,
+    "bench": 37,
+    "radSize": "120",
+    "cfm": 35
   },
   {
     "id": 80065,
@@ -81634,7 +82694,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200,LGA1151",
     "rgb": false,
-    "value": 9
+    "value": 9,
+    "bench": 65,
+    "radSize": "140",
+    "fanSize": 140,
+    "cfm": 75
   },
   {
     "id": 80066,
@@ -81669,7 +82733,11 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 10
+    "value": 10,
+    "bench": 60,
+    "radSize": "140",
+    "fanSize": 140,
+    "cfm": 75
   },
   {
     "id": 80067,
@@ -81705,7 +82773,11 @@ export const PARTS = [
     "rgb": true,
     "value": 92,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 91,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80068,
@@ -81740,7 +82812,12 @@ export const PARTS = [
     "rgb": false,
     "value": 24,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 53,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80069,
@@ -81774,7 +82851,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 10
+    "value": 10,
+    "bench": 52,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80070,
@@ -81808,7 +82888,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 100
+    "value": 100,
+    "bench": 32,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80071,
@@ -81842,7 +82925,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 4
+    "value": 4,
+    "bench": 87,
+    "fanSize": 140,
+    "cfm": 150
   },
   {
     "id": 80072,
@@ -81870,7 +82956,10 @@ export const PARTS = [
     "upc": "772467848753",
     "weight": "100 Grams",
     "noise": 1,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "bench": 68,
+    "radSize": "240",
+    "cfm": 120
   },
   {
     "id": 80073,
@@ -81912,7 +83001,11 @@ export const PARTS = [
     "rgb": true,
     "value": 6,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 67,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 142
   },
   {
     "id": 80074,
@@ -81953,7 +83046,12 @@ export const PARTS = [
     "rgb": true,
     "value": 22,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 100,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80075,
@@ -81987,7 +83085,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 85
+    "value": 85,
+    "bench": 66,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80076,
@@ -82023,7 +83125,11 @@ export const PARTS = [
     "rgb": false,
     "value": 42,
     "tdp_rating": 320,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 100,
+    "fanSize": 140,
+    "height": 52,
+    "cfm": 240
   },
   {
     "id": 80077,
@@ -82065,7 +83171,11 @@ export const PARTS = [
     "rgb": true,
     "value": 10,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 65,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 142
   },
   {
     "id": 80078,
@@ -82100,7 +83210,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 68
+    "value": 68,
+    "bench": 65,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80079,
@@ -82142,7 +83256,11 @@ export const PARTS = [
     "rgb": true,
     "value": 6,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 88,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 213
   },
   {
     "id": 80080,
@@ -82178,7 +83296,11 @@ export const PARTS = [
     "rgb": true,
     "value": 0,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 100,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80081,
@@ -82212,7 +83334,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 7
+    "value": 7,
+    "bench": 51,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80082,
@@ -82246,7 +83371,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 0
+    "value": 0,
+    "bench": 40,
+    "radSize": "120",
+    "cfm": 35
   },
   {
     "id": 80083,
@@ -82280,7 +83408,12 @@ export const PARTS = [
     "rgb": false,
     "value": 93,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 77,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80084,
@@ -82314,7 +83447,12 @@ export const PARTS = [
     "rgb": false,
     "value": 52,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 38,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80085,
@@ -82350,7 +83488,11 @@ export const PARTS = [
     "rgb": true,
     "value": 91,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 90,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 132
   },
   {
     "id": 80086,
@@ -82385,7 +83527,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 98
+    "value": 98,
+    "bench": 66,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80087,
@@ -82421,7 +83567,12 @@ export const PARTS = [
     "rgb": true,
     "value": 30,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 87,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80088,
@@ -82456,7 +83607,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 100
+    "value": 100,
+    "bench": 45,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80089,
@@ -82490,7 +83644,12 @@ export const PARTS = [
     "rgb": true,
     "value": 4,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 90,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80090,
@@ -82531,7 +83690,12 @@ export const PARTS = [
     "rgb": true,
     "value": 24,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 65,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80091,
@@ -82565,7 +83729,11 @@ export const PARTS = [
     "rgb": true,
     "value": 17,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 96,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80092,
@@ -82606,7 +83774,12 @@ export const PARTS = [
     "rgb": true,
     "value": 34,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 88,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80093,
@@ -82643,7 +83816,11 @@ export const PARTS = [
     "tdp_rating": 280,
     "tdp_rating_est": true,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 93,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80094,
@@ -82677,7 +83854,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 53
+    "value": 53,
+    "bench": 62,
+    "radSize": "120",
+    "cfm": 132
   },
   {
     "id": 80095,
@@ -82713,7 +83893,11 @@ export const PARTS = [
     "rgb": true,
     "value": 91,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 88,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 132
   },
   {
     "id": 80096,
@@ -82749,7 +83933,11 @@ export const PARTS = [
     "rgb": true,
     "value": 24,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 81,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80097,
@@ -82784,7 +83972,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 69
+    "value": 69,
+    "bench": 47,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80098,
@@ -82819,7 +84010,9 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 11
+    "value": 11,
+    "bench": 36,
+    "cfm": 35
   },
   {
     "id": 80099,
@@ -82854,7 +84047,11 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 15
+    "value": 15,
+    "bench": 52,
+    "radSize": "120",
+    "fanSize": 120,
+    "cfm": 60
   },
   {
     "id": 80100,
@@ -82890,7 +84087,11 @@ export const PARTS = [
     "rgb": false,
     "value": 57,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 39,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80101,
@@ -82925,7 +84126,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 46
+    "value": 46,
+    "bench": 72,
+    "fanSize": 140,
+    "cfm": 110
   },
   {
     "id": 80102,
@@ -82960,7 +84164,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 7
+    "value": 7,
+    "bench": 46,
+    "fanSize": 92,
+    "cfm": 35
   },
   {
     "id": 80103,
@@ -83001,7 +84208,11 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": true,
-    "value": 65
+    "value": 65,
+    "bench": 45,
+    "radSize": "120",
+    "fanSize": 120,
+    "cfm": 56
   },
   {
     "id": 80104,
@@ -83035,7 +84246,9 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 6
+    "value": 6,
+    "bench": 33,
+    "cfm": 35
   },
   {
     "id": 80105,
@@ -83072,7 +84285,11 @@ export const PARTS = [
     "rgb": true,
     "value": 11,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 78,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80106,
@@ -83106,7 +84323,11 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 100
+    "value": 100,
+    "bench": 37,
+    "radSize": "120",
+    "fanSize": 120,
+    "cfm": 56
   },
   {
     "id": 80107,
@@ -83139,7 +84360,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 80
+    "value": 80,
+    "bench": 36,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80108,
@@ -83175,7 +84399,11 @@ export const PARTS = [
     "rgb": true,
     "value": 0,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 81,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80109,
@@ -83209,7 +84437,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 80
+    "value": 80,
+    "bench": 50,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80110,
@@ -83245,7 +84476,11 @@ export const PARTS = [
     "rgb": true,
     "value": 0,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 81,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80111,
@@ -83279,7 +84514,12 @@ export const PARTS = [
     "rgb": false,
     "value": 72,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 63,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80112,
@@ -83319,7 +84559,12 @@ export const PARTS = [
     "rgb": true,
     "value": 8,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 77,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80113,
@@ -83353,7 +84598,12 @@ export const PARTS = [
     "rgb": false,
     "value": 17,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 60,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80114,
@@ -83387,7 +84637,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 100
+    "value": 100,
+    "bench": 45,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80115,
@@ -83422,7 +84675,11 @@ export const PARTS = [
     "rgb": true,
     "value": 42,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 83,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80116,
@@ -83463,7 +84720,12 @@ export const PARTS = [
     "rgb": true,
     "value": 15,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 84,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80117,
@@ -83490,7 +84752,10 @@ export const PARTS = [
     ],
     "upc": "755225219040",
     "noise": 28.2,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "bench": 34,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80118,
@@ -83524,7 +84789,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 84
+    "value": 84,
+    "bench": 58,
+    "radSize": "140",
+    "fanSize": 140,
+    "cfm": 75
   },
   {
     "id": 80119,
@@ -83558,7 +84827,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 49
+    "value": 49,
+    "bench": 34,
+    "radSize": "140",
+    "cfm": 75
   },
   {
     "id": 80120,
@@ -83592,7 +84864,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 7
+    "value": 7,
+    "bench": 45,
+    "fanSize": 92,
+    "cfm": 35
   },
   {
     "id": 80121,
@@ -83629,7 +84904,11 @@ export const PARTS = [
     "rgb": true,
     "value": 59,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 96,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80122,
@@ -83664,7 +84943,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 93
+    "value": 93,
+    "bench": 62,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80123,
@@ -83699,7 +84982,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 100
+    "value": 100,
+    "bench": 66,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80124,
@@ -83733,7 +85020,11 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 3
+    "value": 3,
+    "bench": 55,
+    "radSize": "140",
+    "fanSize": 140,
+    "cfm": 75
   },
   {
     "id": 80125,
@@ -83767,7 +85058,12 @@ export const PARTS = [
     "rgb": true,
     "value": 49,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 67,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80126,
@@ -83803,7 +85099,11 @@ export const PARTS = [
     "rgb": true,
     "value": 0,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 100,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80127,
@@ -83839,7 +85139,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 59
+    "value": 59,
+    "bench": 43,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80128,
@@ -83874,7 +85177,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": true,
-    "value": 15
+    "value": 15,
+    "bench": 66,
+    "radSize": "280",
+    "cfm": 145
   },
   {
     "id": 80129,
@@ -83909,7 +85215,11 @@ export const PARTS = [
     "rgb": true,
     "value": 75,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 72,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 132
   },
   {
     "id": 80130,
@@ -83943,7 +85253,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 31
+    "value": 31,
+    "bench": 58,
+    "radSize": "120",
+    "fanSize": 120,
+    "cfm": 132
   },
   {
     "id": 80131,
@@ -83983,7 +85297,11 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 94
+    "value": 94,
+    "bench": 44,
+    "radSize": "120",
+    "fanSize": 120,
+    "cfm": 56
   },
   {
     "id": 80132,
@@ -84017,7 +85335,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 47
+    "value": 47,
+    "bench": 62,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80133,
@@ -84051,7 +85373,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 53
+    "value": 53,
+    "bench": 47,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80134,
@@ -84086,7 +85411,11 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 17
+    "value": 17,
+    "bench": 60,
+    "radSize": "140",
+    "fanSize": 140,
+    "cfm": 75
   },
   {
     "id": 80135,
@@ -84121,7 +85450,11 @@ export const PARTS = [
     "rgb": true,
     "value": 2,
     "tdp_rating": 125,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 42,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 60
   },
   {
     "id": 80136,
@@ -84156,7 +85489,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200,LGA1151",
     "rgb": false,
-    "value": 11
+    "value": 11,
+    "bench": 65,
+    "radSize": "140",
+    "fanSize": 140,
+    "cfm": 75
   },
   {
     "id": 80137,
@@ -84197,7 +85534,12 @@ export const PARTS = [
     "rgb": true,
     "value": 30,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 58,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80138,
@@ -84237,7 +85579,12 @@ export const PARTS = [
     "rgb": true,
     "value": 0,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 57,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80139,
@@ -84272,7 +85619,12 @@ export const PARTS = [
     "rgb": true,
     "value": 61,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 50,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80140,
@@ -84308,7 +85660,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 22
+    "value": 22,
+    "bench": 55,
+    "fanSize": 120,
+    "cfm": 65
   },
   {
     "id": 80141,
@@ -84343,7 +85698,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 100
+    "value": 100,
+    "bench": 53,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80142,
@@ -84379,7 +85737,11 @@ export const PARTS = [
     "rgb": false,
     "value": 34,
     "tdp_rating": 230,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 96,
+    "fanSize": 140,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80143,
@@ -84415,7 +85777,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200,LGA1151",
     "rgb": false,
-    "value": 13
+    "value": 13,
+    "bench": 87,
+    "fanSize": 140,
+    "cfm": 150
   },
   {
     "id": 80144,
@@ -84452,7 +85817,11 @@ export const PARTS = [
     "rgb": false,
     "value": 26,
     "tdp_rating": 230,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 95,
+    "fanSize": 140,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80145,
@@ -84487,7 +85856,11 @@ export const PARTS = [
     "rgb": false,
     "value": 28,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 72,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 130
   },
   {
     "id": 80146,
@@ -84522,7 +85895,11 @@ export const PARTS = [
     "rgb": false,
     "value": 27,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 72,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 130
   },
   {
     "id": 80147,
@@ -84557,7 +85934,11 @@ export const PARTS = [
     "rgb": false,
     "value": 37,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 72,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 130
   },
   {
     "id": 80148,
@@ -84593,7 +85974,11 @@ export const PARTS = [
     "rgb": false,
     "value": 28,
     "tdp_rating": 230,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 95,
+    "fanSize": 140,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80149,
@@ -84629,7 +86014,11 @@ export const PARTS = [
     "rgb": false,
     "value": 24,
     "tdp_rating": 230,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 95,
+    "fanSize": 140,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80150,
@@ -84664,7 +86053,12 @@ export const PARTS = [
     "rgb": true,
     "value": 60,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 66,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80151,
@@ -84700,7 +86094,12 @@ export const PARTS = [
     "rgb": true,
     "value": 7,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 95,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80152,
@@ -84735,7 +86134,9 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 2
+    "value": 2,
+    "bench": 51,
+    "cfm": 35
   },
   {
     "id": 80153,
@@ -84770,7 +86171,12 @@ export const PARTS = [
     "rgb": false,
     "value": 0,
     "tdp_rating": 230,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 66,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 140,
+    "height": 52,
+    "cfm": 145
   },
   {
     "id": 80154,
@@ -84806,7 +86212,11 @@ export const PARTS = [
     "rgb": false,
     "value": 33,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 69,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 130
   },
   {
     "id": 80155,
@@ -84840,7 +86250,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 100
+    "value": 100,
+    "bench": 66,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80156,
@@ -84874,7 +86288,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 100
+    "value": 100,
+    "bench": 66,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80157,
@@ -84908,7 +86326,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 100
+    "value": 100,
+    "bench": 52,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80158,
@@ -84942,7 +86363,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 98
+    "value": 98,
+    "bench": 65,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80159,
@@ -84972,7 +86397,11 @@ export const PARTS = [
     "noise": 25,
     "compatibility": "Desktop",
     "rgb": true,
-    "fans_inc": 3
+    "fans_inc": 3,
+    "bench": 69,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80160,
@@ -85007,7 +86436,11 @@ export const PARTS = [
     "rgb": true,
     "value": 47,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 87,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80161,
@@ -85042,7 +86475,11 @@ export const PARTS = [
     "rgb": true,
     "value": 0,
     "tdp_rating": 230,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 69,
+    "fanSize": 140,
+    "height": 52,
+    "cfm": 145
   },
   {
     "id": 80162,
@@ -85077,7 +86514,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 48
+    "value": 48,
+    "bench": 40,
+    "cfm": 65
   },
   {
     "id": 80163,
@@ -85112,7 +86551,11 @@ export const PARTS = [
     "rgb": false,
     "value": 13,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 93,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80164,
@@ -85147,7 +86590,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5",
     "rgb": true,
-    "value": 30
+    "value": 30,
+    "bench": 35,
+    "cfm": 65
   },
   {
     "id": 80165,
@@ -85182,7 +86627,11 @@ export const PARTS = [
     "rgb": true,
     "value": 90,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 91,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 132
   },
   {
     "id": 80166,
@@ -85223,7 +86672,12 @@ export const PARTS = [
     "rgb": true,
     "value": 13,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 66,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80167,
@@ -85257,7 +86711,12 @@ export const PARTS = [
     "rgb": false,
     "value": 54,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 54,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80168,
@@ -85292,7 +86751,12 @@ export const PARTS = [
     "rgb": true,
     "value": 93,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 80,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80169,
@@ -85327,7 +86791,11 @@ export const PARTS = [
     "rgb": true,
     "value": 69,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 73,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 132
   },
   {
     "id": 80170,
@@ -85364,7 +86832,11 @@ export const PARTS = [
     "rgb": true,
     "value": 50,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 97,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80171,
@@ -85398,7 +86870,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 80
+    "value": 80,
+    "bench": 32,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80172,
@@ -85435,7 +86910,11 @@ export const PARTS = [
     "rgb": true,
     "value": 43,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 97,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80173,
@@ -85471,7 +86950,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": true,
-    "value": 42
+    "value": 42,
+    "bench": 49,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80174,
@@ -85507,7 +86989,12 @@ export const PARTS = [
     "rgb": true,
     "value": 36,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 69,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80175,
@@ -85541,7 +87028,12 @@ export const PARTS = [
     "rgb": false,
     "value": 25,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 95,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80176,
@@ -85575,7 +87067,12 @@ export const PARTS = [
     "rgb": false,
     "value": 18,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 72,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80177,
@@ -85610,7 +87107,12 @@ export const PARTS = [
     "rgb": true,
     "value": 13,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 58,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80178,
@@ -85644,7 +87146,12 @@ export const PARTS = [
     "rgb": true,
     "value": 34,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 78,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80179,
@@ -85679,7 +87186,11 @@ export const PARTS = [
     "rgb": false,
     "value": 91,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 89,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80180,
@@ -85713,7 +87224,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 82
+    "value": 82,
+    "bench": 65,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80181,
@@ -85747,7 +87262,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 82
+    "value": 82,
+    "bench": 65,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80182,
@@ -85782,7 +87301,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": true,
-    "value": 49
+    "value": 49,
+    "bench": 44,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80183,
@@ -85818,7 +87340,12 @@ export const PARTS = [
     "rgb": true,
     "value": 46,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 81,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80184,
@@ -85854,7 +87381,12 @@ export const PARTS = [
     "rgb": true,
     "value": 39,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 90,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80185,
@@ -85883,7 +87415,10 @@ export const PARTS = [
     "upc": "760329014088",
     "weight": "2 Kilograms",
     "noise": 27.7,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "bench": 56,
+    "radSize": "240",
+    "cfm": 120
   },
   {
     "id": 80186,
@@ -85916,7 +87451,12 @@ export const PARTS = [
     "rgb": true,
     "value": 41,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 61,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80187,
@@ -85952,7 +87492,11 @@ export const PARTS = [
     "rgb": true,
     "value": 37,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 73,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80188,
@@ -85986,7 +87530,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 4
+    "value": 4,
+    "bench": 86,
+    "fanSize": 140,
+    "cfm": 150
   },
   {
     "id": 80189,
@@ -86022,7 +87569,11 @@ export const PARTS = [
     "rgb": true,
     "value": 67,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 95,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80190,
@@ -86050,7 +87601,10 @@ export const PARTS = [
     ],
     "upc": "760329014101",
     "noise": 28,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "bench": 56,
+    "radSize": "240",
+    "cfm": 120
   },
   {
     "id": 80191,
@@ -86085,7 +87639,12 @@ export const PARTS = [
     "rgb": true,
     "value": 32,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 79,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80192,
@@ -86119,7 +87678,12 @@ export const PARTS = [
     "rgb": true,
     "value": 24,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 62,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80193,
@@ -86153,7 +87717,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": true,
-    "value": 89
+    "value": 89,
+    "bench": 49,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80194,
@@ -86188,7 +87755,11 @@ export const PARTS = [
     "rgb": true,
     "value": 61,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 67,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 95
   },
   {
     "id": 80195,
@@ -86223,7 +87794,11 @@ export const PARTS = [
     "rgb": true,
     "value": 97,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 92,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 132
   },
   {
     "id": 80196,
@@ -86258,7 +87833,11 @@ export const PARTS = [
     "rgb": true,
     "value": 67,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 71,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 132
   },
   {
     "id": 80197,
@@ -86293,7 +87872,11 @@ export const PARTS = [
     "rgb": true,
     "value": 93,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 92,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 132
   },
   {
     "id": 80198,
@@ -86326,7 +87909,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 87
+    "value": 87,
+    "bench": 61,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80199,
@@ -86361,7 +87948,12 @@ export const PARTS = [
     "rgb": true,
     "value": 46,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 58,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80200,
@@ -86396,7 +87988,11 @@ export const PARTS = [
     "rgb": true,
     "value": 67,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 69,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80201,
@@ -86430,7 +88026,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 87
+    "value": 87,
+    "bench": 61,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80202,
@@ -86465,7 +88065,11 @@ export const PARTS = [
     "rgb": true,
     "value": 55,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 86,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80203,
@@ -86500,7 +88104,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 88
+    "value": 88,
+    "bench": 62,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80204,
@@ -86534,7 +88142,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 78
+    "value": 78,
+    "bench": 59,
+    "radSize": "140",
+    "fanSize": 140,
+    "cfm": 75
   },
   {
     "id": 80205,
@@ -86569,7 +88181,11 @@ export const PARTS = [
     "rgb": true,
     "value": 0,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 95,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 165
   },
   {
     "id": 80206,
@@ -86605,7 +88221,11 @@ export const PARTS = [
     "rgb": false,
     "value": 87,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 90,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80207,
@@ -86640,7 +88260,11 @@ export const PARTS = [
     "rgb": false,
     "value": 63,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 67,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80208,
@@ -86675,7 +88299,11 @@ export const PARTS = [
     "rgb": true,
     "value": 53,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 94,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80209,
@@ -86709,7 +88337,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 100
+    "value": 100,
+    "bench": 33,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80210,
@@ -86742,7 +88373,12 @@ export const PARTS = [
     "rgb": true,
     "value": 24,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 50,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80211,
@@ -86774,7 +88410,11 @@ export const PARTS = [
     "rgb": true,
     "value": 0,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 73,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80212,
@@ -86808,7 +88448,12 @@ export const PARTS = [
     "rgb": true,
     "value": 71,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 82,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80213,
@@ -86842,7 +88487,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 100
+    "value": 100,
+    "bench": 66,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80214,
@@ -86876,7 +88525,10 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": true,
-    "value": 100
+    "value": 100,
+    "bench": 37,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80215,
@@ -86911,7 +88563,12 @@ export const PARTS = [
     "rgb": true,
     "value": 3,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 72,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80216,
@@ -86946,7 +88603,11 @@ export const PARTS = [
     "rgb": true,
     "value": 47,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 73,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80217,
@@ -86982,7 +88643,11 @@ export const PARTS = [
     "rgb": true,
     "value": 13,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 86,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 165
   },
   {
     "id": 80218,
@@ -87016,7 +88681,12 @@ export const PARTS = [
     "rgb": true,
     "value": 77,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 80,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80219,
@@ -87051,7 +88721,11 @@ export const PARTS = [
     "rgb": true,
     "value": 0,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 54,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80220,
@@ -87086,7 +88760,11 @@ export const PARTS = [
     "rgb": true,
     "value": 41,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 93,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80221,
@@ -87113,7 +88791,11 @@ export const PARTS = [
     ],
     "upc": "840353044852",
     "noise": 30,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "bench": 69,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "radSize": "360",
+    "cfm": 165
   },
   {
     "id": 80222,
@@ -87148,7 +88830,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 84
+    "value": 84,
+    "bench": 37,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80223,
@@ -87181,7 +88866,12 @@ export const PARTS = [
     "rgb": true,
     "value": 37,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 54,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80224,
@@ -87216,7 +88906,11 @@ export const PARTS = [
     "rgb": true,
     "value": 43,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 88,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80225,
@@ -87251,7 +88945,11 @@ export const PARTS = [
     "rgb": true,
     "value": 62,
     "tdp_rating": 320,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 86,
+    "fanSize": 140,
+    "height": 52,
+    "cfm": 220
   },
   {
     "id": 80226,
@@ -87286,7 +88984,11 @@ export const PARTS = [
     "rgb": true,
     "value": 67,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 71,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 132
   },
   {
     "id": 80227,
@@ -87321,7 +89023,9 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 22
+    "value": 22,
+    "bench": 31,
+    "cfm": 65
   },
   {
     "id": 80228,
@@ -87356,7 +89060,12 @@ export const PARTS = [
     "rgb": true,
     "value": 89,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 87,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80229,
@@ -87390,7 +89099,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 97
+    "value": 97,
+    "bench": 62,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80230,
@@ -87425,7 +89138,12 @@ export const PARTS = [
     "rgb": true,
     "value": 37,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 80,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80231,
@@ -87459,7 +89177,12 @@ export const PARTS = [
     "rgb": true,
     "value": 22,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 94,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80232,
@@ -87495,7 +89218,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": true,
-    "value": 100
+    "value": 100,
+    "bench": 37,
+    "radSize": "120",
+    "cfm": 60
   },
   {
     "id": 80233,
@@ -87529,7 +89255,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 62
+    "value": 62,
+    "bench": 55,
+    "radSize": "140",
+    "fanSize": 140,
+    "cfm": 75
   },
   {
     "id": 80234,
@@ -87564,7 +89294,12 @@ export const PARTS = [
     "rgb": true,
     "value": 7,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 83,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 165
   },
   {
     "id": 80235,
@@ -87597,7 +89332,12 @@ export const PARTS = [
     "rgb": true,
     "value": 87,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 71,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80236,
@@ -87630,7 +89370,12 @@ export const PARTS = [
     "rgb": false,
     "value": 52,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 39,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80237,
@@ -87665,7 +89410,11 @@ export const PARTS = [
     "rgb": true,
     "value": 41,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 72,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80238,
@@ -87698,7 +89447,12 @@ export const PARTS = [
     "rgb": true,
     "value": 27,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 56,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80239,
@@ -87730,7 +89484,12 @@ export const PARTS = [
     "rgb": true,
     "value": 0,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 100,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 165
   },
   {
     "id": 80240,
@@ -87765,7 +89524,11 @@ export const PARTS = [
     "rgb": true,
     "value": 27,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 90,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80241,
@@ -87800,7 +89563,12 @@ export const PARTS = [
     "rgb": true,
     "value": 50,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 49,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80242,
@@ -87834,7 +89602,12 @@ export const PARTS = [
     "rgb": true,
     "value": 30,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 88,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80243,
@@ -87869,7 +89642,12 @@ export const PARTS = [
     "rgb": true,
     "value": 46,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 52,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80244,
@@ -87904,7 +89682,11 @@ export const PARTS = [
     "rgb": true,
     "value": 57,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 97,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80245,
@@ -87937,7 +89719,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 77
+    "value": 77,
+    "bench": 65,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80246,
@@ -87964,7 +89750,10 @@ export const PARTS = [
     ],
     "upc": "765026043539",
     "noise": 27.7,
-    "compatibility": "Desktop"
+    "compatibility": "Desktop",
+    "bench": 49,
+    "radSize": "240",
+    "cfm": 120
   },
   {
     "id": 80247,
@@ -88000,7 +89789,11 @@ export const PARTS = [
     "rgb": true,
     "value": 34,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 93,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80248,
@@ -88036,7 +89829,12 @@ export const PARTS = [
     "rgb": true,
     "value": 10,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 73,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80249,
@@ -88069,7 +89867,12 @@ export const PARTS = [
     "rgb": true,
     "value": 33,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 55,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80250,
@@ -88103,7 +89906,12 @@ export const PARTS = [
     "rgb": true,
     "value": 21,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 89,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80251,
@@ -88138,7 +89946,12 @@ export const PARTS = [
     "rgb": false,
     "value": 37,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 42,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80252,
@@ -88172,7 +89985,12 @@ export const PARTS = [
     "rgb": true,
     "value": 11,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 78,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 165
   },
   {
     "id": 80253,
@@ -88206,7 +90024,9 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": true,
-    "value": 82
+    "value": 82,
+    "bench": 39,
+    "cfm": 65
   },
   {
     "id": 80254,
@@ -88240,7 +90060,12 @@ export const PARTS = [
     "rgb": true,
     "value": 9,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 100,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 165
   },
   {
     "id": 80255,
@@ -88276,7 +90101,11 @@ export const PARTS = [
     "rgb": true,
     "value": 0,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 79,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80256,
@@ -88311,7 +90140,12 @@ export const PARTS = [
     "rgb": true,
     "value": 38,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 70,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 120
   },
   {
     "id": 80257,
@@ -88343,7 +90177,11 @@ export const PARTS = [
     "rgb": true,
     "value": 15,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 92,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 165
   },
   {
     "id": 80258,
@@ -88378,7 +90216,12 @@ export const PARTS = [
     "rgb": true,
     "value": 10,
     "tdp_rating": 230,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 68,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 140,
+    "height": 52,
+    "cfm": 150
   },
   {
     "id": 80259,
@@ -88412,7 +90255,11 @@ export const PARTS = [
     "fans_inc": 1,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 0
+    "value": 0,
+    "bench": 53,
+    "radSize": "120",
+    "fanSize": 120,
+    "cfm": 60
   },
   {
     "id": 80260,
@@ -88447,7 +90294,12 @@ export const PARTS = [
     "rgb": true,
     "value": 55,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 83,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 165
   },
   {
     "id": 80261,
@@ -88481,7 +90333,12 @@ export const PARTS = [
     "rgb": true,
     "value": 22,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 87,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 165
   },
   {
     "id": 80262,
@@ -88515,7 +90372,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 97
+    "value": 97,
+    "bench": 62,
+    "radSize": "120",
+    "fanSize": 140,
+    "cfm": 132
   },
   {
     "id": 80263,
@@ -88548,7 +90409,12 @@ export const PARTS = [
     "rgb": false,
     "value": 10,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 92,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 165
   },
   {
     "id": 80264,
@@ -88583,7 +90449,11 @@ export const PARTS = [
     "rgb": true,
     "value": 26,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 63,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 116
   },
   {
     "id": 80265,
@@ -88618,7 +90488,11 @@ export const PARTS = [
     "rgb": true,
     "value": 21,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 83,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 165
   },
   {
     "id": 80266,
@@ -88652,7 +90526,11 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1851,LGA1700,LGA1200",
     "rgb": false,
-    "value": 82
+    "value": 82,
+    "bench": 59,
+    "radSize": "140",
+    "fanSize": 140,
+    "cfm": 75
   },
   {
     "id": 80267,
@@ -88687,7 +90565,10 @@ export const PARTS = [
     "fans_inc": 2,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "rgb": false,
-    "value": 100
+    "value": 100,
+    "bench": 75,
+    "fanSize": 140,
+    "cfm": 150
   },
   {
     "id": 80268,
@@ -88722,7 +90603,11 @@ export const PARTS = [
     "rgb": true,
     "value": 24,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 81,
+    "fanSize": 120,
+    "height": 52,
+    "cfm": 180
   },
   {
     "id": 80269,
@@ -88754,7 +90639,9 @@ export const PARTS = [
     "height": 155,
     "tdp_rating": 140,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
-    "value": 57
+    "value": 57,
+    "bench": 23,
+    "radSize": "120"
   },
   {
     "id": 80270,
@@ -88786,7 +90673,8 @@ export const PARTS = [
     "height": 155,
     "tdp_rating": 180,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
-    "value": 30
+    "value": 30,
+    "bench": 31
   },
   {
     "id": 80271,
@@ -88818,7 +90706,8 @@ export const PARTS = [
     "height": 155,
     "tdp_rating": 140,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
-    "value": 96
+    "value": 96,
+    "bench": 15
   },
   {
     "id": 80272,
@@ -88846,7 +90735,10 @@ export const PARTS = [
     "fans_inc": 1,
     "rgb": true,
     "color": "Black and ARGB",
-    "socketsSupported": "Socket LGA 1851"
+    "socketsSupported": "Socket LGA 1851",
+    "bench": 50,
+    "sockets": "LGA1700,AM5,AM4",
+    "height": 159
   },
   {
     "id": 80273,
@@ -88878,7 +90770,10 @@ export const PARTS = [
     "socketsSupported": "Socket H4 (LGA 1151)",
     "value": 2,
     "tdp_rating": 125,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 26,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80274,
@@ -88910,7 +90805,10 @@ export const PARTS = [
     "socketsSupported": "Socket R4 (LGA 2066)",
     "value": 8,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 55,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80275,
@@ -88942,7 +90840,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 79,
     "tdp_rating": 230,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 59,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80276,
@@ -88974,7 +90875,10 @@ export const PARTS = [
     "socketsSupported": "Socket AM4 (PGA 1331)",
     "value": 4,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 52,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80277,
@@ -89006,7 +90910,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 26,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 57,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80278,
@@ -89038,7 +90945,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 8,
     "tdp_rating": 125,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 23,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80279,
@@ -89070,7 +90980,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 20,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 39,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80280,
@@ -89102,7 +91015,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 30,
     "tdp_rating": 320,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 56,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80281,
@@ -89134,7 +91050,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 18,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 57,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80282,
@@ -89166,7 +91085,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 5,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 39,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80283,
@@ -89198,7 +91120,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 45,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 57,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80284,
@@ -89230,7 +91155,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 33,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 39,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80285,
@@ -89262,7 +91190,10 @@ export const PARTS = [
     "socketsSupported": "Socket AM4 (PGA 1331)",
     "value": 30,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 28,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80286,
@@ -89294,7 +91225,10 @@ export const PARTS = [
     "socketsSupported": "Socket AM4 (PGA 1331)",
     "value": 40,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 46,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80287,
@@ -89326,7 +91260,10 @@ export const PARTS = [
     "socketsSupported": "Socket AM4 (PGA 1331)",
     "value": 40,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 46,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80288,
@@ -89358,7 +91295,10 @@ export const PARTS = [
     "socketsSupported": "Socket AM4 (PGA 1331)",
     "value": 17,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 60,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80289,
@@ -89390,7 +91330,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1851",
     "value": 20,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 42,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80290,
@@ -89422,7 +91365,10 @@ export const PARTS = [
     "socketsSupported": "Socket AM4 (PGA 1331)",
     "value": 10,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 60,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80291,
@@ -89454,7 +91400,10 @@ export const PARTS = [
     "socketsSupported": "Socket AM4 (PGA 1331)",
     "value": 30,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 42,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80292,
@@ -89486,7 +91435,10 @@ export const PARTS = [
     "socketsSupported": "Socket AM4 (PGA 1331)",
     "value": 17,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 60,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80293,
@@ -89518,7 +91470,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 6,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 54,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80294,
@@ -89550,7 +91505,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 5,
     "tdp_rating": 230,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 62,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80295,
@@ -89582,7 +91540,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 3,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 72,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80296,
@@ -89614,7 +91575,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 9,
     "tdp_rating": 230,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 62,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80297,
@@ -89646,7 +91610,10 @@ export const PARTS = [
     "socketsSupported": "Socket H3 (LGA 1150)",
     "value": 13,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 49,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80298,
@@ -89678,7 +91645,10 @@ export const PARTS = [
     "socketsSupported": "Socket AM4 (PGA 1331)",
     "value": 28,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 80,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80299,
@@ -89710,7 +91680,10 @@ export const PARTS = [
     "socketsSupported": "Socket AM4 (PGA 1331)",
     "value": 27,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 57,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80300,
@@ -89742,7 +91715,10 @@ export const PARTS = [
     "socketsSupported": "Socket AM4 (PGA 1331)",
     "value": 46,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 75,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80301,
@@ -89774,7 +91750,10 @@ export const PARTS = [
     "socketsSupported": "Socket AM5 (LGA 1718)",
     "value": 11,
     "tdp_rating": 320,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 68,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80302,
@@ -89806,7 +91785,10 @@ export const PARTS = [
     "socketsSupported": "Socket AM5 (LGA 1718)",
     "value": 17,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 57,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80303,
@@ -89838,7 +91820,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1851",
     "value": 8,
     "tdp_rating": 200,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 39,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80304,
@@ -89870,7 +91855,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 18,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 75,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80306,
@@ -89902,7 +91890,10 @@ export const PARTS = [
     "socketsSupported": "Socket LGA 1700",
     "value": 22,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 62,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 80307,
@@ -89934,7 +91925,10 @@ export const PARTS = [
     "socketsSupported": "Socket R4 (LGA 2066)",
     "value": 0,
     "tdp_rating": 280,
-    "tdp_rating_est": true
+    "tdp_rating_est": true,
+    "bench": 68,
+    "sockets": "LGA1700,LGA1851,AM5,AM4",
+    "height": 52
   },
   {
     "id": 85000,
@@ -89960,7 +91954,8 @@ export const PARTS = [
     "color": "Black",
     "value": 50,
     "rpm": 2000,
-    "pwm": true
+    "pwm": true,
+    "bench": 74
   },
   {
     "id": 85001,
@@ -89986,7 +91981,8 @@ export const PARTS = [
     "color": "Black",
     "value": 91,
     "rpm": 1500,
-    "pwm": true
+    "pwm": true,
+    "bench": 81
   },
   {
     "id": 85002,
@@ -90012,7 +92008,8 @@ export const PARTS = [
     "color": "Black",
     "value": 50,
     "rpm": 2000,
-    "pwm": true
+    "pwm": true,
+    "bench": 78
   },
   {
     "id": 85003,
@@ -90038,7 +92035,8 @@ export const PARTS = [
     "color": "Black",
     "value": 100,
     "rpm": 1800,
-    "pwm": true
+    "pwm": true,
+    "bench": 71
   },
   {
     "id": 85004,
@@ -90064,7 +92062,8 @@ export const PARTS = [
     "color": "Black",
     "value": 72,
     "rpm": 1700,
-    "pwm": true
+    "pwm": true,
+    "bench": 80
   },
   {
     "id": 85005,
@@ -90093,7 +92092,8 @@ export const PARTS = [
     "pwm": true,
     "rgbType": "ARGB",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 82
   },
   {
     "id": 85006,
@@ -90122,7 +92122,8 @@ export const PARTS = [
     "pwm": true,
     "rgbType": "ARGB",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 70
   },
   {
     "id": 85007,
@@ -90149,7 +92150,8 @@ export const PARTS = [
     "value": 25,
     "rpm": 1900,
     "pwm": true,
-    "rgbType": "ARGB"
+    "rgbType": "ARGB",
+    "bench": 75
   },
   {
     "id": 85008,
@@ -90175,7 +92177,8 @@ export const PARTS = [
     "color": "Black",
     "value": 100,
     "rpm": 1600,
-    "pwm": true
+    "pwm": true,
+    "bench": 76
   },
   {
     "id": 85009,
@@ -90201,7 +92204,8 @@ export const PARTS = [
     "color": "Black",
     "value": 100,
     "rpm": 1100,
-    "pwm": true
+    "pwm": true,
+    "bench": 77
   },
   {
     "id": 85010,
@@ -90228,7 +92232,8 @@ export const PARTS = [
     "value": 38,
     "rpm": 1700,
     "pwm": true,
-    "rgbType": "ARGB"
+    "rgbType": "ARGB",
+    "bench": 78
   },
   {
     "id": 85011,
@@ -90256,7 +92261,8 @@ export const PARTS = [
     "rpm": 2000,
     "pwm": true,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 74
   },
   {
     "id": 85012,
@@ -90284,7 +92290,8 @@ export const PARTS = [
     "rpm": 1850,
     "pwm": true,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 66
   },
   {
     "id": 85013,
@@ -90311,7 +92318,8 @@ export const PARTS = [
     "value": 100,
     "rpm": 1550,
     "pwm": true,
-    "rgbType": "ARGB"
+    "rgbType": "ARGB",
+    "bench": 68
   },
   {
     "id": 85014,
@@ -90346,7 +92354,8 @@ export const PARTS = [
     "cfm": 65.8,
     "rpm": 2200,
     "noise": 33,
-    "fans_inc": 3
+    "fans_inc": 3,
+    "bench": 59
   },
   {
     "id": 85015,
@@ -90380,7 +92389,8 @@ export const PARTS = [
     "rpm": 1800,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 49
   },
   {
     "id": 85016,
@@ -90416,7 +92426,8 @@ export const PARTS = [
     "cfm": 68.5,
     "rpm": 2150,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 73
   },
   {
     "id": 85017,
@@ -90452,7 +92463,8 @@ export const PARTS = [
     "rpm": 3000,
     "noise": 39.5,
     "rgb": false,
-    "pack": 5
+    "pack": 5,
+    "bench": 58
   },
   {
     "id": 85018,
@@ -90486,7 +92498,8 @@ export const PARTS = [
     "cfm": 70.7,
     "rpm": 1700,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 70
   },
   {
     "id": 85019,
@@ -90519,7 +92532,8 @@ export const PARTS = [
     "rpm": 1200,
     "pwm": false,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 36
   },
   {
     "id": 85020,
@@ -90553,7 +92567,8 @@ export const PARTS = [
     "rpm": 3000,
     "noise": 39.5,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 55
   },
   {
     "id": 85021,
@@ -90587,7 +92602,8 @@ export const PARTS = [
     "cfm": 60.1,
     "rpm": 2000,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 73
   },
   {
     "id": 85022,
@@ -90623,7 +92639,8 @@ export const PARTS = [
     "rpm": 1800,
     "pwm": true,
     "rgb": false,
-    "pack": 5
+    "pack": 5,
+    "bench": 76
   },
   {
     "id": 85023,
@@ -90660,7 +92677,8 @@ export const PARTS = [
     "cfm": 55.1,
     "rpm": 1800,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 53
   },
   {
     "id": 85024,
@@ -90694,7 +92712,8 @@ export const PARTS = [
     "cfm": 66.17,
     "rpm": 1550,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 76
   },
   {
     "id": 85025,
@@ -90731,7 +92750,8 @@ export const PARTS = [
     "cfm": 66.17,
     "rpm": 1550,
     "rgbType": "ARGB",
-    "pack": 5
+    "pack": 5,
+    "bench": 71
   },
   {
     "id": 85026,
@@ -90764,7 +92784,8 @@ export const PARTS = [
     "cfm": 60.1,
     "rpm": 2000,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 73
   },
   {
     "id": 85027,
@@ -90797,7 +92818,8 @@ export const PARTS = [
     "cfm": 109.9,
     "rpm": 3000,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 71
   },
   {
     "id": 85028,
@@ -90833,7 +92855,8 @@ export const PARTS = [
     "cfm": 34,
     "rpm": 1800,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 66
   },
   {
     "id": 85029,
@@ -90868,7 +92891,8 @@ export const PARTS = [
     "cfm": 55,
     "rpm": 1500,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 52
   },
   {
     "id": 85030,
@@ -90902,7 +92926,8 @@ export const PARTS = [
     "cfm": 40.6,
     "rpm": 1600,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 65
   },
   {
     "id": 85031,
@@ -90938,7 +92963,8 @@ export const PARTS = [
     "rpm": 3000,
     "noise": 39.5,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 58
   },
   {
     "id": 85032,
@@ -90971,7 +92997,8 @@ export const PARTS = [
     "cfm": 60.1,
     "rpm": 2000,
     "rgb": false,
-    "pack": 2
+    "pack": 2,
+    "bench": 79
   },
   {
     "id": 85033,
@@ -91008,7 +93035,8 @@ export const PARTS = [
     "cfm": 73.43,
     "rpm": 2000,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 66
   },
   {
     "id": 85034,
@@ -91042,7 +93070,8 @@ export const PARTS = [
     "rpm": 3000,
     "noise": 39.5,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 53
   },
   {
     "id": 85035,
@@ -91079,7 +93108,8 @@ export const PARTS = [
     "cfm": 56.3,
     "rpm": 3000,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 83
   },
   {
     "id": 85036,
@@ -91116,7 +93146,8 @@ export const PARTS = [
     "rpm": 3000,
     "noise": 39.5,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 61
   },
   {
     "id": 85037,
@@ -91149,7 +93180,8 @@ export const PARTS = [
     "cfm": 82.5,
     "rpm": 1500,
     "rgb": false,
-    "pack": 2
+    "pack": 2,
+    "bench": 86
   },
   {
     "id": 85038,
@@ -91183,7 +93215,8 @@ export const PARTS = [
     "cfm": 78.6,
     "rpm": 1500,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 70
   },
   {
     "id": 85039,
@@ -91217,7 +93250,8 @@ export const PARTS = [
     "cfm": 82.5,
     "rpm": 1500,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 75
   },
   {
     "id": 85040,
@@ -91251,7 +93285,8 @@ export const PARTS = [
     "cfm": 53,
     "rpm": 1800,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 73
   },
   {
     "id": 85041,
@@ -91285,7 +93320,8 @@ export const PARTS = [
     "cfm": 33.8,
     "rpm": 2500,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 62
   },
   {
     "id": 85042,
@@ -91318,7 +93354,8 @@ export const PARTS = [
     "cfm": 55.4,
     "rpm": 1850,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 70
   },
   {
     "id": 85043,
@@ -91353,7 +93390,8 @@ export const PARTS = [
     "cfm": 77.9,
     "rpm": 3000,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 61
   },
   {
     "id": 85044,
@@ -91389,7 +93427,8 @@ export const PARTS = [
     "cfm": 66.17,
     "rpm": 1550,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 70
   },
   {
     "id": 85045,
@@ -91431,7 +93470,8 @@ export const PARTS = [
     "rpm": 2400,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 62
   },
   {
     "id": 85046,
@@ -91472,7 +93512,8 @@ export const PARTS = [
     "cfm": 56.5,
     "rpm": 1800,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 57
   },
   {
     "id": 85047,
@@ -91507,7 +93548,8 @@ export const PARTS = [
     "rpm": 1550,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 71
   },
   {
     "id": 85048,
@@ -91541,7 +93583,8 @@ export const PARTS = [
     "cfm": 33.8,
     "rpm": 2500,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 58
   },
   {
     "id": 85049,
@@ -91574,7 +93617,8 @@ export const PARTS = [
     "cfm": 55.4,
     "rpm": 1850,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 69
   },
   {
     "id": 85050,
@@ -91613,7 +93657,8 @@ export const PARTS = [
     "cfm": 55.1,
     "rpm": 1800,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 50
   },
   {
     "id": 85051,
@@ -91648,7 +93693,8 @@ export const PARTS = [
     "rpm": 1200,
     "pwm": false,
     "rgb": false,
-    "pack": 2
+    "pack": 2,
+    "bench": 42
   },
   {
     "id": 85052,
@@ -91686,7 +93732,8 @@ export const PARTS = [
     "cfm": 73.43,
     "rpm": 2000,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 68
   },
   {
     "id": 85053,
@@ -91719,7 +93766,8 @@ export const PARTS = [
     "cfm": 59,
     "rpm": 2100,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 58
   },
   {
     "id": 85054,
@@ -91754,7 +93802,8 @@ export const PARTS = [
     "rpm": 1900,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 73
   },
   {
     "id": 85055,
@@ -91784,7 +93833,8 @@ export const PARTS = [
     "cfm": 59,
     "rpm": 2100,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 71
   },
   {
     "id": 85056,
@@ -91820,7 +93870,8 @@ export const PARTS = [
     "cfm": 50,
     "rpm": 2000,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 55
   },
   {
     "id": 85057,
@@ -91855,7 +93906,8 @@ export const PARTS = [
     "rpm": 1900,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 71
   },
   {
     "id": 85058,
@@ -91897,7 +93949,8 @@ export const PARTS = [
     "cfm": 55.1,
     "rpm": 1800,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 59
   },
   {
     "id": 85059,
@@ -91933,7 +93986,8 @@ export const PARTS = [
     "rpm": 2500,
     "noise": 34.5,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 68
   },
   {
     "id": 85060,
@@ -91967,7 +94021,8 @@ export const PARTS = [
     "rpm": 2500,
     "noise": 34.5,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 63
   },
   {
     "id": 85061,
@@ -92000,7 +94055,8 @@ export const PARTS = [
     "cfm": 82.5,
     "rpm": 1500,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 74
   },
   {
     "id": 85062,
@@ -92037,7 +94093,8 @@ export const PARTS = [
     "cfm": 60,
     "rpm": 1500,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 68
   },
   {
     "id": 85063,
@@ -92073,7 +94130,8 @@ export const PARTS = [
     "cfm": 55,
     "rpm": 2000,
     "rgbType": "ARGB",
-    "pack": 7
+    "pack": 7,
+    "bench": 64
   },
   {
     "id": 85064,
@@ -92107,7 +94165,8 @@ export const PARTS = [
     "cfm": 55,
     "rpm": 1500,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 65
   },
   {
     "id": 85065,
@@ -92141,7 +94200,8 @@ export const PARTS = [
     "cfm": 158.5,
     "rpm": 3000,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 71
   },
   {
     "id": 85066,
@@ -92175,7 +94235,8 @@ export const PARTS = [
     "cfm": 78.5,
     "rpm": 2500,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 66
   },
   {
     "id": 85067,
@@ -92208,7 +94269,8 @@ export const PARTS = [
     "cfm": 110.5,
     "rpm": 2400,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 68
   },
   {
     "id": 85068,
@@ -92244,7 +94306,8 @@ export const PARTS = [
     "cfm": 68.9,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 60
   },
   {
     "id": 85069,
@@ -92280,7 +94343,8 @@ export const PARTS = [
     "cfm": 68.9,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 58
   },
   {
     "id": 85070,
@@ -92321,7 +94385,8 @@ export const PARTS = [
     "cfm": 67.8,
     "rpm": 2100,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 61
   },
   {
     "id": 85071,
@@ -92355,7 +94420,8 @@ export const PARTS = [
     "cfm": 68.9,
     "rpm": 1600,
     "rgb": false,
-    "pack": 2
+    "pack": 2,
+    "bench": 57
   },
   {
     "id": 85072,
@@ -92390,7 +94456,8 @@ export const PARTS = [
     "cfm": 119,
     "rpm": 2800,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 91
   },
   {
     "id": 85073,
@@ -92423,7 +94490,8 @@ export const PARTS = [
     "cfm": 66.17,
     "rpm": 1550,
     "rgb": false,
-    "pack": 5
+    "pack": 5,
+    "bench": 68
   },
   {
     "id": 85074,
@@ -92454,7 +94522,8 @@ export const PARTS = [
     "cfm": 59,
     "rpm": 2100,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 62
   },
   {
     "id": 85075,
@@ -92486,7 +94555,9 @@ export const PARTS = [
     "noise": 25.6,
     "size": "120mm",
     "color": "Black",
-    "value": 22
+    "value": 22,
+    "bench": 53,
+    "pack": 1
   },
   {
     "id": 85076,
@@ -92523,7 +94594,8 @@ export const PARTS = [
     "cfm": 66.17,
     "rpm": 1550,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 71
   },
   {
     "id": 85077,
@@ -92558,7 +94630,8 @@ export const PARTS = [
     "cfm": 50,
     "rpm": 2000,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 53
   },
   {
     "id": 85078,
@@ -92592,7 +94665,8 @@ export const PARTS = [
     "rpm": 1550,
     "pwm": true,
     "rgb": false,
-    "pack": 5
+    "pack": 5,
+    "bench": 68
   },
   {
     "id": 85079,
@@ -92625,7 +94699,8 @@ export const PARTS = [
     "cfm": 82.5,
     "rpm": 1500,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 75
   },
   {
     "id": 85080,
@@ -92658,7 +94733,8 @@ export const PARTS = [
     "cfm": 51.7,
     "rpm": 1400,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 66
   },
   {
     "id": 85081,
@@ -92691,7 +94767,8 @@ export const PARTS = [
     "cfm": 51.7,
     "rpm": 1400,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 53
   },
   {
     "id": 85082,
@@ -92723,7 +94800,8 @@ export const PARTS = [
     "cfm": 82.5,
     "rpm": 1500,
     "rgb": false,
-    "pack": 2
+    "pack": 2,
+    "bench": 85
   },
   {
     "id": 85083,
@@ -92758,7 +94836,8 @@ export const PARTS = [
     "cfm": 50,
     "rpm": 2000,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 55
   },
   {
     "id": 85084,
@@ -92792,7 +94871,8 @@ export const PARTS = [
     "rpm": 2500,
     "noise": 34.5,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 62
   },
   {
     "id": 85085,
@@ -92828,7 +94908,8 @@ export const PARTS = [
     "rpm": 2600,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 75
   },
   {
     "id": 85086,
@@ -92863,7 +94944,8 @@ export const PARTS = [
     "rpm": 2600,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 69
   },
   {
     "id": 85087,
@@ -92900,7 +94982,8 @@ export const PARTS = [
     "rpm": 2500,
     "noise": 34.5,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 72
   },
   {
     "id": 85088,
@@ -92937,7 +95020,8 @@ export const PARTS = [
     "cfm": 47,
     "rpm": 1800,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 62
   },
   {
     "id": 85089,
@@ -92973,7 +95057,8 @@ export const PARTS = [
     "rpm": 3000,
     "noise": 39.5,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 56
   },
   {
     "id": 85090,
@@ -93007,7 +95092,8 @@ export const PARTS = [
     "cfm": 68,
     "rpm": 1850,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 50
   },
   {
     "id": 85091,
@@ -93043,7 +95129,8 @@ export const PARTS = [
     "cfm": 31,
     "rpm": 3000,
     "rgb": false,
-    "pack": 5
+    "pack": 5,
+    "bench": 66
   },
   {
     "id": 85092,
@@ -93079,7 +95166,8 @@ export const PARTS = [
     "rpm": 1900,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 63
   },
   {
     "id": 85093,
@@ -93116,7 +95204,8 @@ export const PARTS = [
     "cfm": 56.3,
     "rpm": 3000,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 81
   },
   {
     "id": 85094,
@@ -93153,7 +95242,8 @@ export const PARTS = [
     "cfm": 73.73,
     "rpm": 1500,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 67
   },
   {
     "id": 85095,
@@ -93187,7 +95277,8 @@ export const PARTS = [
     "rpm": 3000,
     "noise": 39.5,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 52
   },
   {
     "id": 85096,
@@ -93224,7 +95315,8 @@ export const PARTS = [
     "cfm": 72.8,
     "rpm": 2500,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 90
   },
   {
     "id": 85097,
@@ -93260,7 +95352,8 @@ export const PARTS = [
     "cfm": 55,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 52
   },
   {
     "id": 85098,
@@ -93297,7 +95390,8 @@ export const PARTS = [
     "cfm": 55,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 47
   },
   {
     "id": 85099,
@@ -93332,7 +95426,8 @@ export const PARTS = [
     "rpm": 1900,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 84
   },
   {
     "id": 85100,
@@ -93365,7 +95460,8 @@ export const PARTS = [
     "rpm": 1000,
     "pwm": false,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 40
   },
   {
     "id": 85101,
@@ -93399,7 +95495,8 @@ export const PARTS = [
     "cfm": 55,
     "rpm": 1500,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 65
   },
   {
     "id": 85102,
@@ -93433,7 +95530,8 @@ export const PARTS = [
     "cfm": 54.3,
     "rpm": 1300,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 66
   },
   {
     "id": 85103,
@@ -93467,7 +95565,8 @@ export const PARTS = [
     "cfm": 63.3,
     "rpm": 1200,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 76
   },
   {
     "id": 85104,
@@ -93504,7 +95603,8 @@ export const PARTS = [
     "cfm": 48.8,
     "rpm": 2000,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 82
   },
   {
     "id": 85105,
@@ -93539,7 +95639,8 @@ export const PARTS = [
     "cfm": 55.5,
     "rpm": 1600,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 69
   },
   {
     "id": 85106,
@@ -93580,7 +95681,8 @@ export const PARTS = [
     "rpm": 1800,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 57
   },
   {
     "id": 85107,
@@ -93617,7 +95719,8 @@ export const PARTS = [
     "cfm": 48.8,
     "rpm": 2000,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 78
   },
   {
     "id": 85108,
@@ -93653,7 +95756,8 @@ export const PARTS = [
     "rpm": 2000,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 58
   },
   {
     "id": 85109,
@@ -93687,7 +95791,8 @@ export const PARTS = [
     "rpm": 1700,
     "pwm": false,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 72
   },
   {
     "id": 85110,
@@ -93722,7 +95827,8 @@ export const PARTS = [
     "cfm": 72.8,
     "rpm": 1700,
     "rgb": false,
-    "pack": 5
+    "pack": 5,
+    "bench": 81
   },
   {
     "id": 85111,
@@ -93756,7 +95862,8 @@ export const PARTS = [
     "rpm": 2100,
     "rgb": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 69
   },
   {
     "id": 85112,
@@ -93789,7 +95896,8 @@ export const PARTS = [
     "cfm": 60.1,
     "rpm": 2000,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 76
   },
   {
     "id": 85113,
@@ -93825,7 +95933,8 @@ export const PARTS = [
     "cfm": 74.9,
     "rpm": 2000,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 60
   },
   {
     "id": 85114,
@@ -93862,7 +95971,8 @@ export const PARTS = [
     "cfm": 47.2,
     "rpm": 1800,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 58
   },
   {
     "id": 85115,
@@ -93894,7 +96004,8 @@ export const PARTS = [
     "cfm": 78.8,
     "rpm": 1900,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 78
   },
   {
     "id": 85116,
@@ -93930,7 +96041,8 @@ export const PARTS = [
     "cfm": 66.17,
     "rpm": 1550,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 70
   },
   {
     "id": 85117,
@@ -93964,7 +96076,8 @@ export const PARTS = [
     "cfm": 65,
     "rpm": 1500,
     "rgbType": "ARGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 57
   },
   {
     "id": 85118,
@@ -94000,7 +96113,8 @@ export const PARTS = [
     "cfm": 66.17,
     "rpm": 1550,
     "rgbType": "ARGB",
-    "pack": 5
+    "pack": 5,
+    "bench": 71
   },
   {
     "id": 85119,
@@ -94033,7 +96147,8 @@ export const PARTS = [
     "cfm": 73.73,
     "rpm": 1500,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 59
   },
   {
     "id": 85120,
@@ -94067,7 +96182,8 @@ export const PARTS = [
     "cfm": 71,
     "rpm": 1850,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 52
   },
   {
     "id": 85121,
@@ -94103,7 +96219,8 @@ export const PARTS = [
     "cfm": 52,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 49
   },
   {
     "id": 85122,
@@ -94138,7 +96255,8 @@ export const PARTS = [
     "cfm": 55,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 5
+    "pack": 5,
+    "bench": 53
   },
   {
     "id": 85123,
@@ -94172,7 +96290,8 @@ export const PARTS = [
     "rpm": 1600,
     "pwm": true,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 61
   },
   {
     "id": 85124,
@@ -94208,7 +96327,8 @@ export const PARTS = [
     "cfm": 56.3,
     "rpm": 3000,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 80
   },
   {
     "id": 85125,
@@ -94244,7 +96364,8 @@ export const PARTS = [
     "rpm": 2500,
     "noise": 34.5,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 67
   },
   {
     "id": 85126,
@@ -94277,7 +96398,8 @@ export const PARTS = [
     "cfm": 73.73,
     "rpm": 1500,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 62
   },
   {
     "id": 85127,
@@ -94312,7 +96434,8 @@ export const PARTS = [
     "cfm": 73.73,
     "rpm": 1500,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 67
   },
   {
     "id": 85128,
@@ -94354,7 +96477,8 @@ export const PARTS = [
     "cfm": 40,
     "rpm": 1500,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 52
   },
   {
     "id": 85129,
@@ -94389,7 +96513,8 @@ export const PARTS = [
     "cfm": 58.5,
     "rpm": 1800,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 46
   },
   {
     "id": 85130,
@@ -94423,7 +96548,8 @@ export const PARTS = [
     "rpm": 3000,
     "noise": 39.5,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 51
   },
   {
     "id": 85131,
@@ -94458,7 +96584,8 @@ export const PARTS = [
     "rpm": 1900,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 71
   },
   {
     "id": 85132,
@@ -94493,7 +96620,8 @@ export const PARTS = [
     "cfm": 72.8,
     "rpm": 2500,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 82
   },
   {
     "id": 85133,
@@ -94527,7 +96655,8 @@ export const PARTS = [
     "cfm": 56.3,
     "rpm": 3000,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 78
   },
   {
     "id": 85134,
@@ -94564,7 +96693,8 @@ export const PARTS = [
     "cfm": 58.54,
     "rpm": 2000,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 70
   },
   {
     "id": 85135,
@@ -94598,7 +96728,8 @@ export const PARTS = [
     "cfm": 50,
     "rpm": 1500,
     "rgbType": "ARGB",
-    "pack": 6
+    "pack": 6,
+    "bench": 52
   },
   {
     "id": 85136,
@@ -94632,7 +96763,8 @@ export const PARTS = [
     "cfm": 73.73,
     "rpm": 1500,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 66
   },
   {
     "id": 85137,
@@ -94668,7 +96800,8 @@ export const PARTS = [
     "cfm": 43.25,
     "rpm": 1500,
     "rgbType": "RGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 68
   },
   {
     "id": 85138,
@@ -94704,7 +96837,8 @@ export const PARTS = [
     "cfm": 52,
     "rpm": 1800,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 64
   },
   {
     "id": 85139,
@@ -94734,7 +96868,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 0.3,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 64,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85140,
@@ -94771,7 +96908,8 @@ export const PARTS = [
     "cfm": 71.4,
     "rpm": 1700,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 77
   },
   {
     "id": 85141,
@@ -94807,7 +96945,8 @@ export const PARTS = [
     "cfm": 71.4,
     "rpm": 1700,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 77
   },
   {
     "id": 85142,
@@ -94843,7 +96982,8 @@ export const PARTS = [
     "cfm": 98.6,
     "rpm": 2500,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 74
   },
   {
     "id": 85143,
@@ -94878,7 +97018,8 @@ export const PARTS = [
     "rpm": 1200,
     "pwm": false,
     "rgbType": "RGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 54
   },
   {
     "id": 85144,
@@ -94909,7 +97050,10 @@ export const PARTS = [
     "fans_inc": 5,
     "noise": 0.3,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 63,
+    "rgb": false,
+    "pack": 5
   },
   {
     "id": 85145,
@@ -94940,7 +97084,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 0.3,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 64,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85146,
@@ -94970,7 +97117,10 @@ export const PARTS = [
     "fans_inc": 5,
     "noise": 0.3,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 63,
+    "rgb": false,
+    "pack": 5
   },
   {
     "id": 85147,
@@ -95006,7 +97156,8 @@ export const PARTS = [
     "cfm": 52,
     "rpm": 1800,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 76
   },
   {
     "id": 85148,
@@ -95040,7 +97191,8 @@ export const PARTS = [
     "cfm": 63.3,
     "rpm": 1200,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 75
   },
   {
     "id": 85149,
@@ -95076,7 +97228,8 @@ export const PARTS = [
     "rpm": 1800,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 71
   },
   {
     "id": 85150,
@@ -95110,7 +97263,8 @@ export const PARTS = [
     "cfm": 64.9,
     "rpm": 1200,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 71
   },
   {
     "id": 85151,
@@ -95144,7 +97298,8 @@ export const PARTS = [
     "cfm": 78.7,
     "rpm": 1500,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 70
   },
   {
     "id": 85152,
@@ -95178,7 +97333,8 @@ export const PARTS = [
     "cfm": 61.2,
     "rpm": 900,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 75
   },
   {
     "id": 85153,
@@ -95212,7 +97368,8 @@ export const PARTS = [
     "rpm": 900,
     "pwm": true,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 75
   },
   {
     "id": 85154,
@@ -95246,7 +97403,8 @@ export const PARTS = [
     "rpm": 1200,
     "pwm": false,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 65
   },
   {
     "id": 85155,
@@ -95281,7 +97439,8 @@ export const PARTS = [
     "cfm": 53,
     "rpm": 1800,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 72
   },
   {
     "id": 85156,
@@ -95316,7 +97475,8 @@ export const PARTS = [
     "cfm": 65,
     "rpm": 1500,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 47
   },
   {
     "id": 85157,
@@ -95350,7 +97510,8 @@ export const PARTS = [
     "cfm": 78.7,
     "rpm": 1500,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 74
   },
   {
     "id": 85158,
@@ -95377,7 +97538,11 @@ export const PARTS = [
     "weight": "0.5 Pounds",
     "noise": 19.8,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 56,
+    "rgb": false,
+    "pack": 1,
+    "pwm": false
   },
   {
     "id": 85159,
@@ -95419,7 +97584,8 @@ export const PARTS = [
     "cfm": 52,
     "rpm": 2000,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 55
   },
   {
     "id": 85160,
@@ -95449,7 +97615,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 31.5,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 48,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85161,
@@ -95491,7 +97660,8 @@ export const PARTS = [
     "cfm": 52,
     "rpm": 2000,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 55
   },
   {
     "id": 85162,
@@ -95520,7 +97690,11 @@ export const PARTS = [
     "weight": "180 Grams",
     "noise": 11.9,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 60,
+    "rgb": false,
+    "pack": 1,
+    "pwm": false
   },
   {
     "id": 85163,
@@ -95551,7 +97725,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 0.3,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 64,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85164,
@@ -95580,7 +97757,11 @@ export const PARTS = [
     "weight": "0.36 Kilograms",
     "noise": 22.6,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 52,
+    "rgb": false,
+    "pack": 1,
+    "pwm": false
   },
   {
     "id": 85165,
@@ -95612,7 +97793,9 @@ export const PARTS = [
     "noise": 0.3,
     "size": "140mm",
     "color": "RGB",
-    "value": 12
+    "value": 12,
+    "bench": 68,
+    "pack": 1
   },
   {
     "id": 85166,
@@ -95647,7 +97830,8 @@ export const PARTS = [
     "rpm": 1700,
     "rgb": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 76
   },
   {
     "id": 85167,
@@ -95676,7 +97860,11 @@ export const PARTS = [
     "weight": "0.34 Kilograms",
     "noise": 19.2,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 56,
+    "rgb": false,
+    "pack": 1,
+    "pwm": false
   },
   {
     "id": 85168,
@@ -95710,7 +97898,8 @@ export const PARTS = [
     "rpm": 2100,
     "rgb": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 65
   },
   {
     "id": 85169,
@@ -95747,7 +97936,8 @@ export const PARTS = [
     "rpm": 1900,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 71
   },
   {
     "id": 85170,
@@ -95781,7 +97971,8 @@ export const PARTS = [
     "cfm": 63,
     "rpm": 1800,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 64
   },
   {
     "id": 85171,
@@ -95817,7 +98008,8 @@ export const PARTS = [
     "rpm": 1200,
     "pwm": false,
     "rgbType": "RGB",
-    "pack": 5
+    "pack": 5,
+    "bench": 48
   },
   {
     "id": 85172,
@@ -95858,7 +98050,8 @@ export const PARTS = [
     "rpm": 2000,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 41
   },
   {
     "id": 85173,
@@ -95894,7 +98087,8 @@ export const PARTS = [
     "rpm": 1900,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 72
   },
   {
     "id": 85174,
@@ -95922,7 +98116,11 @@ export const PARTS = [
     "weight": "0.31 Kilograms",
     "pwm": true,
     "noise": 31.5,
-    "color": "Black"
+    "color": "Black",
+    "bench": 59,
+    "rgb": false,
+    "pack": 140,
+    "rpm": 2000
   },
   {
     "id": 85175,
@@ -95953,7 +98151,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 0.3,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 65,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85176,
@@ -95983,7 +98184,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 31.5,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 48,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85177,
@@ -96012,7 +98216,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 12.1,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 65,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85178,
@@ -96041,7 +98248,11 @@ export const PARTS = [
     "weight": "360 Grams",
     "noise": 12.1,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 60,
+    "rgb": false,
+    "pack": 1,
+    "pwm": false
   },
   {
     "id": 85179,
@@ -96075,7 +98286,8 @@ export const PARTS = [
     "rpm": 1000,
     "pwm": true,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 57
   },
   {
     "id": 85180,
@@ -96111,7 +98323,8 @@ export const PARTS = [
     "cfm": 50,
     "rpm": 1800,
     "rgbType": "ARGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 56
   },
   {
     "id": 85181,
@@ -96147,7 +98360,8 @@ export const PARTS = [
     "cfm": 68,
     "rpm": 1400,
     "rgbType": "ARGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 79
   },
   {
     "id": 85182,
@@ -96182,7 +98396,8 @@ export const PARTS = [
     "rpm": 2100,
     "noise": 35,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 68
   },
   {
     "id": 85183,
@@ -96212,7 +98427,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 22.4,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 56,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85184,
@@ -96245,7 +98463,8 @@ export const PARTS = [
     "cfm": 78.8,
     "rpm": 1900,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 61
   },
   {
     "id": 85185,
@@ -96278,7 +98497,8 @@ export const PARTS = [
     "cfm": 75,
     "rpm": 2200,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 56
   },
   {
     "id": 85186,
@@ -96310,7 +98530,8 @@ export const PARTS = [
     "rpm": 1500,
     "noise": 25,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 48
   },
   {
     "id": 85187,
@@ -96346,7 +98567,8 @@ export const PARTS = [
     "rpm": 1500,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 45
   },
   {
     "id": 85188,
@@ -96381,7 +98603,8 @@ export const PARTS = [
     "cfm": 73.73,
     "rpm": 1500,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 63
   },
   {
     "id": 85189,
@@ -96415,7 +98638,8 @@ export const PARTS = [
     "cfm": 65,
     "rpm": 1500,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 59
   },
   {
     "id": 85190,
@@ -96445,7 +98669,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 24.6,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 56,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85191,
@@ -96479,7 +98706,8 @@ export const PARTS = [
     "pwm": true,
     "rgb": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 68
   },
   {
     "id": 85192,
@@ -96515,7 +98743,8 @@ export const PARTS = [
     "rpm": 1200,
     "pwm": false,
     "rgbType": "RGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 51
   },
   {
     "id": 85193,
@@ -96549,7 +98778,8 @@ export const PARTS = [
     "rpm": 3000,
     "pwm": false,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 43
   },
   {
     "id": 85194,
@@ -96586,7 +98816,8 @@ export const PARTS = [
     "cfm": 66.17,
     "rpm": 1550,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 67
   },
   {
     "id": 85195,
@@ -96620,7 +98851,8 @@ export const PARTS = [
     "rpm": 2200,
     "pwm": true,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 66
   },
   {
     "id": 85196,
@@ -96656,7 +98888,8 @@ export const PARTS = [
     "rpm": 1900,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 68
   },
   {
     "id": 85197,
@@ -96691,7 +98924,8 @@ export const PARTS = [
     "cfm": 50,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 41
   },
   {
     "id": 85198,
@@ -96726,7 +98960,8 @@ export const PARTS = [
     "cfm": 55,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 47
   },
   {
     "id": 85199,
@@ -96754,7 +98989,11 @@ export const PARTS = [
     "upc": "803983042070842431014382804904094147",
     "noise": 31.5,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 42,
+    "rgb": false,
+    "pack": 1,
+    "pwm": false
   },
   {
     "id": 85200,
@@ -96783,7 +99022,8 @@ export const PARTS = [
     "pwm": true,
     "rgb": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 88
   },
   {
     "id": 85201,
@@ -96817,7 +99057,8 @@ export const PARTS = [
     "cfm": 66,
     "rpm": 2000,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 43
   },
   {
     "id": 85202,
@@ -96852,7 +99093,8 @@ export const PARTS = [
     "cfm": 66,
     "rpm": 2000,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 47
   },
   {
     "id": 85203,
@@ -96886,7 +99128,8 @@ export const PARTS = [
     "cfm": 80,
     "rpm": 1800,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 46
   },
   {
     "id": 85204,
@@ -96920,7 +99163,8 @@ export const PARTS = [
     "cfm": 68,
     "rpm": 1800,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 54
   },
   {
     "id": 85205,
@@ -96946,7 +99190,12 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/91+fLkETdTL._SL1500_.jpg"
     ],
     "noise": 31.5,
-    "color": "Black"
+    "color": "Black",
+    "bench": 52,
+    "rgb": false,
+    "pack": 140,
+    "rpm": 2000,
+    "pwm": false
   },
   {
     "id": 85206,
@@ -96975,7 +99224,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 22.6,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 58,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85207,
@@ -97011,7 +99263,8 @@ export const PARTS = [
     "rpm": 1600,
     "noise": 28,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 52
   },
   {
     "id": 85208,
@@ -97048,7 +99301,8 @@ export const PARTS = [
     "rpm": 1600,
     "noise": 28,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 56
   },
   {
     "id": 85209,
@@ -97082,7 +99336,8 @@ export const PARTS = [
     "rpm": 1500,
     "rgb": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 67
   },
   {
     "id": 85210,
@@ -97115,7 +99370,8 @@ export const PARTS = [
     "rpm": 1500,
     "pwm": true,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 42
   },
   {
     "id": 85211,
@@ -97151,7 +99407,8 @@ export const PARTS = [
     "cfm": 50,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 46
   },
   {
     "id": 85212,
@@ -97186,7 +99443,8 @@ export const PARTS = [
     "value": 6,
     "cfm": 55,
     "rpm": 2000,
-    "pack": 1
+    "pack": 1,
+    "bench": 43
   },
   {
     "id": 85213,
@@ -97215,7 +99473,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 24.8,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 58,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85214,
@@ -97243,7 +99504,10 @@ export const PARTS = [
     "weight": "354 Grams",
     "noise": 23.9,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 48,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85215,
@@ -97280,7 +99544,8 @@ export const PARTS = [
     "rpm": 2000,
     "pwm": true,
     "rgbType": "RGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 71
   },
   {
     "id": 85216,
@@ -97309,7 +99574,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 11.4,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 65,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85217,
@@ -97345,7 +99613,8 @@ export const PARTS = [
     "cfm": 60,
     "rpm": 2200,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 51
   },
   {
     "id": 85218,
@@ -97381,7 +99650,8 @@ export const PARTS = [
     "cfm": 73.2,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 69
   },
   {
     "id": 85219,
@@ -97408,7 +99678,10 @@ export const PARTS = [
     ],
     "weight": "92.29 Grams",
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 48,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85220,
@@ -97444,7 +99717,8 @@ export const PARTS = [
     "cfm": 68.5,
     "rpm": 2600,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 72
   },
   {
     "id": 85221,
@@ -97473,7 +99747,10 @@ export const PARTS = [
     "weight": "176 Grams",
     "pwm": true,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 55,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85222,
@@ -97509,7 +99786,8 @@ export const PARTS = [
     "cfm": 55,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 47
   },
   {
     "id": 85223,
@@ -97544,7 +99822,8 @@ export const PARTS = [
     "rpm": 1800,
     "rgb": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 56
   },
   {
     "id": 85224,
@@ -97573,7 +99852,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 11.8,
     "size": "120mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 65,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85225,
@@ -97602,7 +99884,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 41.3,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 44,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85226,
@@ -97636,7 +99921,8 @@ export const PARTS = [
     "rpm": 2500,
     "noise": 34.5,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 58
   },
   {
     "id": 85227,
@@ -97665,7 +99951,9 @@ export const PARTS = [
     "noise": 0.3,
     "size": "140mm",
     "color": "RGB",
-    "value": 4
+    "value": 4,
+    "bench": 73,
+    "pack": 3
   },
   {
     "id": 85228,
@@ -97700,7 +99988,8 @@ export const PARTS = [
     "cfm": 55,
     "rpm": 2000,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 48
   },
   {
     "id": 85229,
@@ -97734,7 +100023,8 @@ export const PARTS = [
     "cfm": 55,
     "rpm": 1800,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 43
   },
   {
     "id": 85230,
@@ -97769,7 +100059,8 @@ export const PARTS = [
     "cfm": 65,
     "rpm": 1400,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 50
   },
   {
     "id": 85231,
@@ -97803,7 +100094,8 @@ export const PARTS = [
     "rpm": 1600,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 53
   },
   {
     "id": 85232,
@@ -97832,7 +100124,8 @@ export const PARTS = [
     "rpm": 1900,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 68
   },
   {
     "id": 85233,
@@ -97868,7 +100161,8 @@ export const PARTS = [
     "cfm": 55,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 44
   },
   {
     "id": 85234,
@@ -97899,7 +100193,8 @@ export const PARTS = [
     "pwm": true,
     "rgb": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 76
   },
   {
     "id": 85235,
@@ -97933,7 +100228,8 @@ export const PARTS = [
     "rpm": 1500,
     "rgb": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 57
   },
   {
     "id": 85236,
@@ -97968,7 +100264,8 @@ export const PARTS = [
     "cfm": 55,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 50
   },
   {
     "id": 85237,
@@ -98003,7 +100300,8 @@ export const PARTS = [
     "cfm": 75,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 58
   },
   {
     "id": 85238,
@@ -98036,7 +100334,8 @@ export const PARTS = [
     "cfm": 70,
     "rpm": 1700,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 42
   },
   {
     "id": 85239,
@@ -98070,7 +100369,8 @@ export const PARTS = [
     "rpm": 2400,
     "pwm": true,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 63
   },
   {
     "id": 85240,
@@ -98106,7 +100406,8 @@ export const PARTS = [
     "cfm": 72.8,
     "rpm": 2500,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 82
   },
   {
     "id": 85241,
@@ -98140,7 +100441,8 @@ export const PARTS = [
     "cfm": 65,
     "rpm": 1500,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 44
   },
   {
     "id": 85242,
@@ -98173,7 +100475,8 @@ export const PARTS = [
     "cfm": 73.2,
     "rpm": 2000,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "bench": 77
   },
   {
     "id": 85243,
@@ -98208,7 +100511,8 @@ export const PARTS = [
     "cfm": 58,
     "rpm": 2000,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 57
   },
   {
     "id": 85244,
@@ -98238,7 +100542,8 @@ export const PARTS = [
     "pwm": true,
     "rgb": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 77
   },
   {
     "id": 85245,
@@ -98272,7 +100577,8 @@ export const PARTS = [
     "cfm": 55,
     "rpm": 1600,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 54
   },
   {
     "id": 85246,
@@ -98301,7 +100607,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 24.8,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 62,
+    "rgb": true,
+    "pack": 1
   },
   {
     "id": 85247,
@@ -98330,7 +100639,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 31.5,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 50,
+    "rgb": false,
+    "pack": 1
   },
   {
     "id": 85248,
@@ -98359,7 +100671,10 @@ export const PARTS = [
     "pwm": true,
     "noise": 24.8,
     "size": "140mm",
-    "color": "Black"
+    "color": "Black",
+    "bench": 62,
+    "rgb": true,
+    "pack": 1
   },
   {
     "id": 85249,
@@ -98393,7 +100708,8 @@ export const PARTS = [
     "cfm": 65,
     "rpm": 1600,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 44
   },
   {
     "id": 85250,
@@ -98426,7 +100742,8 @@ export const PARTS = [
     "cfm": 66.17,
     "rpm": 1500,
     "rgb": false,
-    "pack": 3
+    "pack": 3,
+    "bench": 61
   },
   {
     "id": 85251,
@@ -98455,7 +100772,8 @@ export const PARTS = [
     "color": "Blue",
     "size": 120,
     "value": 95,
-    "pack": 1
+    "pack": 1,
+    "bench": 46
   },
   {
     "id": 85252,
@@ -98484,7 +100802,8 @@ export const PARTS = [
     "color": "White",
     "size": 120,
     "value": 95,
-    "pack": 1
+    "pack": 1,
+    "bench": 41
   },
   {
     "id": 85253,
@@ -98513,7 +100832,8 @@ export const PARTS = [
     "color": "Black",
     "size": 200,
     "value": 100,
-    "pack": 1
+    "pack": 1,
+    "bench": 49
   },
   {
     "id": 85254,
@@ -98543,7 +100863,8 @@ export const PARTS = [
     "size": 120,
     "value": 85,
     "rgbType": "ARGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 50
   },
   {
     "id": 85255,
@@ -98573,7 +100894,8 @@ export const PARTS = [
     "size": 140,
     "value": 26,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 52
   },
   {
     "id": 85256,
@@ -98602,7 +100924,8 @@ export const PARTS = [
     "color": "Black",
     "size": 120,
     "value": 72,
-    "pack": 2
+    "pack": 2,
+    "bench": 47
   },
   {
     "id": 85257,
@@ -98631,7 +100954,8 @@ export const PARTS = [
     "color": "White",
     "size": 120,
     "value": 72,
-    "pack": 2
+    "pack": 2,
+    "bench": 47
   },
   {
     "id": 85258,
@@ -98661,7 +100985,8 @@ export const PARTS = [
     "size": 120,
     "value": 60,
     "rgbType": "ARGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 50
   },
   {
     "id": 85259,
@@ -98691,7 +101016,8 @@ export const PARTS = [
     "size": 120,
     "value": 19,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 58
   },
   {
     "id": 85260,
@@ -98721,7 +101047,8 @@ export const PARTS = [
     "size": 140,
     "value": 17,
     "rgbType": "ARGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 65
   },
   {
     "id": 85261,
@@ -98751,7 +101078,8 @@ export const PARTS = [
     "value": 76,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 62
   },
   {
     "id": 85262,
@@ -98781,7 +101109,8 @@ export const PARTS = [
     "value": 86,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 66
   },
   {
     "id": 85263,
@@ -98811,7 +101140,8 @@ export const PARTS = [
     "value": 63,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 62
   },
   {
     "id": 85264,
@@ -98841,7 +101171,8 @@ export const PARTS = [
     "value": 76,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 62
   },
   {
     "id": 85265,
@@ -98871,7 +101202,8 @@ export const PARTS = [
     "value": 61,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 62
   },
   {
     "id": 85266,
@@ -98901,7 +101233,8 @@ export const PARTS = [
     "value": 100,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 62
   },
   {
     "id": 85267,
@@ -98931,7 +101264,8 @@ export const PARTS = [
     "value": 100,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 59
   },
   {
     "id": 85268,
@@ -98960,7 +101294,8 @@ export const PARTS = [
     "size": 120,
     "value": 100,
     "pwm": true,
-    "pack": 1
+    "pack": 1,
+    "bench": 56
   },
   {
     "id": 85269,
@@ -98990,7 +101325,8 @@ export const PARTS = [
     "value": 30,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 63
   },
   {
     "id": 85270,
@@ -99020,7 +101356,8 @@ export const PARTS = [
     "value": 30,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 63
   },
   {
     "id": 85271,
@@ -99050,7 +101387,8 @@ export const PARTS = [
     "value": 28,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 63
   },
   {
     "id": 85272,
@@ -99080,7 +101418,8 @@ export const PARTS = [
     "value": 28,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 63
   },
   {
     "id": 85273,
@@ -99110,7 +101449,8 @@ export const PARTS = [
     "value": 65,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 60
   },
   {
     "id": 85274,
@@ -99140,7 +101480,8 @@ export const PARTS = [
     "value": 55,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 59
   },
   {
     "id": 85275,
@@ -99170,7 +101511,8 @@ export const PARTS = [
     "size": 120,
     "value": 40,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 48
   },
   {
     "id": 85276,
@@ -99200,7 +101542,8 @@ export const PARTS = [
     "value": 65,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 60
   },
   {
     "id": 85277,
@@ -99230,7 +101573,8 @@ export const PARTS = [
     "value": 77,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 71
   },
   {
     "id": 85278,
@@ -99260,7 +101604,8 @@ export const PARTS = [
     "value": 86,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 75
   },
   {
     "id": 85279,
@@ -99290,7 +101635,8 @@ export const PARTS = [
     "value": 90,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 71
   },
   {
     "id": 85280,
@@ -99320,7 +101666,8 @@ export const PARTS = [
     "value": 53,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 73
   },
   {
     "id": 85281,
@@ -99350,7 +101697,8 @@ export const PARTS = [
     "value": 53,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 73
   },
   {
     "id": 85282,
@@ -99380,7 +101728,8 @@ export const PARTS = [
     "value": 86,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 75
   },
   {
     "id": 85283,
@@ -99410,7 +101759,8 @@ export const PARTS = [
     "value": 22,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 63
   },
   {
     "id": 85284,
@@ -99440,7 +101790,8 @@ export const PARTS = [
     "value": 53,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 59
   },
   {
     "id": 85285,
@@ -99470,7 +101821,8 @@ export const PARTS = [
     "value": 19,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 63
   },
   {
     "id": 85286,
@@ -99500,7 +101852,8 @@ export const PARTS = [
     "value": 100,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 62
   },
   {
     "id": 85287,
@@ -99529,7 +101882,8 @@ export const PARTS = [
     "size": 200,
     "value": 100,
     "pwm": true,
-    "pack": 1
+    "pack": 1,
+    "bench": 59
   },
   {
     "id": 85288,
@@ -99559,7 +101913,8 @@ export const PARTS = [
     "value": 81,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 55
   },
   {
     "id": 85289,
@@ -99589,7 +101944,8 @@ export const PARTS = [
     "value": 40,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 53
   },
   {
     "id": 85290,
@@ -99619,7 +101975,8 @@ export const PARTS = [
     "value": 40,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 53
   },
   {
     "id": 85291,
@@ -99649,7 +102006,8 @@ export const PARTS = [
     "value": 25,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 43
   },
   {
     "id": 85292,
@@ -99679,7 +102037,8 @@ export const PARTS = [
     "value": 40,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 53
   },
   {
     "id": 85293,
@@ -99709,7 +102068,8 @@ export const PARTS = [
     "value": 40,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 53
   },
   {
     "id": 85294,
@@ -99738,7 +102098,8 @@ export const PARTS = [
     "size": 200,
     "value": 100,
     "pwm": true,
-    "pack": 1
+    "pack": 1,
+    "bench": 59
   },
   {
     "id": 85295,
@@ -99768,7 +102129,8 @@ export const PARTS = [
     "value": 40,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 53
   },
   {
     "id": 85296,
@@ -99798,7 +102160,8 @@ export const PARTS = [
     "value": 100,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 62
   },
   {
     "id": 85297,
@@ -99828,7 +102191,8 @@ export const PARTS = [
     "value": 40,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 53
   },
   {
     "id": 85298,
@@ -99858,7 +102222,8 @@ export const PARTS = [
     "value": 40,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 53
   },
   {
     "id": 85299,
@@ -99888,7 +102253,8 @@ export const PARTS = [
     "value": 49,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 61
   },
   {
     "id": 85300,
@@ -99918,7 +102284,8 @@ export const PARTS = [
     "value": 62,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 77
   },
   {
     "id": 85301,
@@ -99948,7 +102315,8 @@ export const PARTS = [
     "value": 62,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 77
   },
   {
     "id": 85302,
@@ -99978,7 +102346,8 @@ export const PARTS = [
     "value": 77,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 76
   },
   {
     "id": 85303,
@@ -100008,7 +102377,8 @@ export const PARTS = [
     "value": 28,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 84
   },
   {
     "id": 85304,
@@ -100038,7 +102408,8 @@ export const PARTS = [
     "value": 80,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 72
   },
   {
     "id": 85306,
@@ -100068,7 +102439,8 @@ export const PARTS = [
     "value": 39,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 82
   },
   {
     "id": 85307,
@@ -100098,7 +102470,8 @@ export const PARTS = [
     "value": 77,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 76
   },
   {
     "id": 85308,
@@ -100128,7 +102501,8 @@ export const PARTS = [
     "value": 41,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 2
+    "pack": 2,
+    "bench": 82
   },
   {
     "id": 85309,
@@ -100158,7 +102532,8 @@ export const PARTS = [
     "value": 80,
     "pwm": true,
     "rgbType": "ARGB",
-    "pack": 1
+    "pack": 1,
+    "bench": 72
   },
   {
     "id": 85312,
@@ -100188,7 +102563,8 @@ export const PARTS = [
     "size": 120,
     "value": 33,
     "rgbType": "ARGB",
-    "pack": 3
+    "pack": 3,
+    "bench": 52
   },
   {
     "id": 90000,
@@ -100219,7 +102595,8 @@ export const PARTS = [
     },
     "value": 36,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 89
   },
   {
     "id": 90001,
@@ -100248,7 +102625,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 22
+    "value": 22,
+    "bench": 95
   },
   {
     "id": 90002,
@@ -100279,7 +102657,8 @@ export const PARTS = [
     },
     "value": 34,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 100
   },
   {
     "id": 90003,
@@ -100310,7 +102689,8 @@ export const PARTS = [
     },
     "value": 46,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 82
   },
   {
     "id": 90004,
@@ -100342,7 +102722,8 @@ export const PARTS = [
     },
     "value": 38,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 89
   },
   {
     "id": 90005,
@@ -100374,7 +102755,8 @@ export const PARTS = [
     },
     "value": 24,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 100
   },
   {
     "id": 90006,
@@ -100403,7 +102785,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 50
+    "value": 50,
+    "bench": 100
   },
   {
     "id": 90007,
@@ -100435,7 +102818,8 @@ export const PARTS = [
     },
     "value": 17,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 61
   },
   {
     "id": 90008,
@@ -100466,7 +102850,8 @@ export const PARTS = [
     },
     "value": 100,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 74
   },
   {
     "id": 90009,
@@ -100498,7 +102883,8 @@ export const PARTS = [
     },
     "value": 50,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 95
   },
   {
     "id": 90010,
@@ -100529,7 +102915,8 @@ export const PARTS = [
     },
     "value": 30,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 64
   },
   {
     "id": 90011,
@@ -100561,7 +102948,8 @@ export const PARTS = [
     },
     "value": 5,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 54
   },
   {
     "id": 90012,
@@ -100593,7 +102981,8 @@ export const PARTS = [
     },
     "value": 6,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 68
   },
   {
     "id": 90013,
@@ -100625,7 +103014,8 @@ export const PARTS = [
     },
     "value": 13,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 100
   },
   {
     "id": 90014,
@@ -100656,7 +103046,8 @@ export const PARTS = [
     },
     "value": 17,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "bench": 100
   },
   {
     "id": 90015,
@@ -100689,7 +103080,9 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 100,
     "panel": "LED",
-    "response": "4 Milliseconds"
+    "response": "4 Milliseconds",
+    "bench": 42,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90016,
@@ -100721,7 +103114,10 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 240,
     "panel": "LED",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 71,
+    "sync": "FreeSync Premium",
+    "ports": "HDMI"
   },
   {
     "id": 90017,
@@ -100753,7 +103149,9 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 60,
     "panel": "IPS",
-    "response": "2 Milliseconds"
+    "response": "2 Milliseconds",
+    "bench": 50,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90018,
@@ -100785,7 +103183,11 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 240,
     "panel": "QD OLED",
-    "response": "0.03 Milliseconds"
+    "response": "0.03 Milliseconds",
+    "bench": 100,
+    "hdr": "HDR True Black 400",
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90019,
@@ -100816,7 +103218,9 @@ export const PARTS = [
     "screenSize": "18.5 Inches",
     "refresh": 100,
     "panel": "LCD",
-    "response": "3 Milliseconds"
+    "response": "3 Milliseconds",
+    "bench": 38,
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90020,
@@ -100848,7 +103252,10 @@ export const PARTS = [
     "res": "3440x1440 UW",
     "refresh": 165,
     "panel": "LCD",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 73,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90021,
@@ -100880,7 +103287,9 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 60,
     "panel": "LCD",
-    "response": "26 Milliseconds"
+    "response": "26 Milliseconds",
+    "bench": 40,
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90022,
@@ -100912,7 +103321,9 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 60,
     "panel": "IPS",
-    "response": "3 Milliseconds"
+    "response": "3 Milliseconds",
+    "bench": 46,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90023,
@@ -100943,7 +103354,9 @@ export const PARTS = [
     "screenSize": "15.6 Inches",
     "refresh": 60,
     "panel": "LCD",
-    "response": "6 Milliseconds"
+    "response": "6 Milliseconds",
+    "bench": 28,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90024,
@@ -100976,7 +103389,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 240,
     "panel": "LCD",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 81,
+    "sync": "G-Sync",
+    "ports": "DisplayPort"
   },
   {
     "id": 90025,
@@ -101007,7 +103423,11 @@ export const PARTS = [
     "screenSize": "18.5 Inches",
     "refresh": 120,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 59,
+    "hdr": "HDR",
+    "sync": "FreeSync",
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90026,
@@ -101039,7 +103459,10 @@ export const PARTS = [
     "refresh": 165,
     "panel": "LCD",
     "response": "2 Milliseconds",
-    "value": 91
+    "value": 91,
+    "bench": 73,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90027,
@@ -101071,7 +103494,10 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 100,
     "panel": "LCD",
-    "response": "3 Milliseconds"
+    "response": "3 Milliseconds",
+    "bench": 43,
+    "hdr": "HDR",
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90028,
@@ -101103,7 +103529,9 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 60,
     "panel": "LCD",
-    "response": "3 Milliseconds"
+    "response": "3 Milliseconds",
+    "bench": 36,
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90029,
@@ -101133,7 +103561,10 @@ export const PARTS = [
     "screenSize": "34 Inches",
     "refresh": 165,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 64,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90030,
@@ -101164,7 +103595,10 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 240,
     "panel": "VA",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 75,
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90031,
@@ -101195,7 +103629,10 @@ export const PARTS = [
     "res": "3440x1440 UW",
     "refresh": 165,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 77,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90032,
@@ -101226,7 +103663,9 @@ export const PARTS = [
     "screenSize": "15.6 Inches",
     "refresh": 60,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 47,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90033,
@@ -101252,7 +103691,9 @@ export const PARTS = [
       "https://m.media-amazon.com/images/I/81hfaPwjHpL._AC_SL1500_.jpg"
     ],
     "weight": "13 Pounds",
-    "screenSize": "57\""
+    "screenSize": "57\"",
+    "bench": 32,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90034,
@@ -101284,7 +103725,11 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 240,
     "panel": "OLED",
-    "response": "0.03 Milliseconds"
+    "response": "0.03 Milliseconds",
+    "bench": 100,
+    "hdr": "HDR True Black 400",
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90035,
@@ -101315,7 +103760,10 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 320,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 81,
+    "sync": "FreeSync Premium",
+    "ports": "DisplayPort"
   },
   {
     "id": 90036,
@@ -101347,7 +103795,10 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 300,
     "panel": "LED",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 73,
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90037,
@@ -101378,7 +103829,11 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 200,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 85,
+    "hdr": "HDR400",
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90038,
@@ -101410,7 +103865,10 @@ export const PARTS = [
     "res": "3440x1440 UW",
     "refresh": 165,
     "panel": "LED",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 74,
+    "sync": "FreeSync",
+    "ports": "DisplayPort"
   },
   {
     "id": 90039,
@@ -101442,7 +103900,9 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 120,
     "panel": "IPS",
-    "response": "5 Milliseconds"
+    "response": "5 Milliseconds",
+    "bench": 52,
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90040,
@@ -101474,7 +103934,9 @@ export const PARTS = [
     "res": "4K",
     "refresh": 60,
     "panel": "VA",
-    "response": "2 Milliseconds"
+    "response": "2 Milliseconds",
+    "bench": 63,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90041,
@@ -101506,7 +103968,10 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 280,
     "panel": "VA",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 75,
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90042,
@@ -101538,7 +104003,11 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 144,
     "panel": "LCD",
-    "response": "10 Milliseconds"
+    "response": "10 Milliseconds",
+    "bench": 60,
+    "hdr": "HDR",
+    "sync": "FreeSync",
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90043,
@@ -101569,7 +104038,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 180,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 81,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90044,
@@ -101599,7 +104071,10 @@ export const PARTS = [
     "screenSize": "34 Inches",
     "refresh": 180,
     "panel": "LED",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 57,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90045,
@@ -101631,7 +104106,9 @@ export const PARTS = [
     "res": "4K",
     "refresh": 60,
     "panel": "VA",
-    "response": "2 Milliseconds"
+    "response": "2 Milliseconds",
+    "bench": 63,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90046,
@@ -101662,7 +104139,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 240,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 89,
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90047,
@@ -101692,7 +104172,10 @@ export const PARTS = [
     "screenSize": "34 Inches",
     "refresh": 165,
     "panel": "VA",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 62,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90048,
@@ -101723,7 +104206,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 320,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 88,
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90049,
@@ -101755,7 +104241,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 180,
     "panel": "LED",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 73,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90050,
@@ -101786,7 +104275,9 @@ export const PARTS = [
     "res": "4K",
     "refresh": 60,
     "panel": "IPS",
-    "response": "5 Milliseconds"
+    "response": "5 Milliseconds",
+    "bench": 60,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90051,
@@ -101818,7 +104309,10 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 240,
     "panel": "VA",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 72,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90052,
@@ -101849,7 +104343,9 @@ export const PARTS = [
     "res": "4K",
     "refresh": 60,
     "panel": "LED",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 61,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90053,
@@ -101880,7 +104376,10 @@ export const PARTS = [
     "res": "4K",
     "refresh": 144,
     "panel": "VA",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 83,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90054,
@@ -101911,7 +104410,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 240,
     "panel": "VA",
-    "response": "3 Milliseconds"
+    "response": "3 Milliseconds",
+    "bench": 79,
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90055,
@@ -101942,7 +104444,9 @@ export const PARTS = [
     "res": "4K",
     "refresh": 60,
     "panel": "4K UHD, IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 70,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90056,
@@ -101974,7 +104478,11 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 240,
     "panel": "QHD",
-    "response": "0.03 Milliseconds"
+    "response": "0.03 Milliseconds",
+    "bench": 93,
+    "hdr": "HDR True Black 400",
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90057,
@@ -102004,7 +104512,11 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 500,
     "panel": "OLED",
-    "response": "0.03 Milliseconds"
+    "response": "0.03 Milliseconds",
+    "bench": 100,
+    "hdr": "HDR True Black 400",
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90058,
@@ -102036,7 +104548,11 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 540,
     "panel": "LCD, OLED",
-    "response": "0.2 Milliseconds"
+    "response": "0.2 Milliseconds",
+    "bench": 100,
+    "hdr": "HDR True Black 400",
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90059,
@@ -102066,7 +104582,11 @@ export const PARTS = [
     "res": "4K",
     "refresh": 320,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 100,
+    "hdr": "HDR400",
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90060,
@@ -102097,7 +104617,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 165,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 75,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90061,
@@ -102128,7 +104651,9 @@ export const PARTS = [
     "screenSize": "16 Inches",
     "refresh": 60,
     "panel": "LCD, LED",
-    "response": "5 Milliseconds"
+    "response": "5 Milliseconds",
+    "bench": 29,
+    "ports": "USB-C"
   },
   {
     "id": 90062,
@@ -102160,7 +104685,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 320,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 89,
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90063,
@@ -102192,7 +104720,10 @@ export const PARTS = [
     "res": "3440x1440 UW",
     "refresh": 200,
     "panel": "VA",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 77,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90064,
@@ -102224,7 +104755,9 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 120,
     "panel": "LED",
-    "response": "2 Milliseconds"
+    "response": "2 Milliseconds",
+    "bench": 59,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90065,
@@ -102256,7 +104789,11 @@ export const PARTS = [
     "res": "3440x1440 UW",
     "refresh": 175,
     "panel": "QD-OLED",
-    "response": "0.1 Milliseconds"
+    "response": "0.1 Milliseconds",
+    "bench": 100,
+    "hdr": "HDR True Black 400",
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90066,
@@ -102289,7 +104826,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 240,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 91,
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90067,
@@ -102321,7 +104861,11 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 240,
     "panel": "OLED",
-    "response": "0.03 Milliseconds"
+    "response": "0.03 Milliseconds",
+    "bench": 100,
+    "hdr": "HDR True Black 400",
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90068,
@@ -102353,7 +104897,9 @@ export const PARTS = [
     "res": "4K",
     "refresh": 60,
     "panel": "LED",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 62,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90069,
@@ -102384,7 +104930,9 @@ export const PARTS = [
     "screenSize": "32.2 Inches",
     "res": "4K",
     "refresh": 60,
-    "panel": "VA"
+    "panel": "VA",
+    "bench": 59,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90070,
@@ -102416,7 +104964,9 @@ export const PARTS = [
     "res": "4K",
     "refresh": 60,
     "panel": "LCD",
-    "response": "14 Milliseconds"
+    "response": "14 Milliseconds",
+    "bench": 50,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90071,
@@ -102448,7 +104998,10 @@ export const PARTS = [
     "res": "3440x1440 UW",
     "refresh": 240,
     "panel": "VA",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 86,
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90072,
@@ -102479,7 +105032,9 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 60,
     "panel": "LCD",
-    "response": "20 Milliseconds"
+    "response": "20 Milliseconds",
+    "bench": 30,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90073,
@@ -102511,7 +105066,10 @@ export const PARTS = [
     "res": "4K",
     "refresh": 320,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 99,
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90074,
@@ -102543,7 +105101,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 260,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 89,
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90075,
@@ -102575,7 +105136,10 @@ export const PARTS = [
     "res": "4K",
     "refresh": 144,
     "panel": "LED",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 78,
+    "sync": "Adaptive Sync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90076,
@@ -102607,7 +105171,11 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 165,
     "panel": "VA",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 80,
+    "hdr": "HDR400",
+    "sync": "FreeSync",
+    "ports": "1x HDMI"
   },
   {
     "id": 90077,
@@ -102639,7 +105207,11 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 360,
     "panel": "LCD",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 82,
+    "hdr": "HDR",
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90078,
@@ -102671,7 +105243,11 @@ export const PARTS = [
     "res": "4K",
     "refresh": 144,
     "panel": "LCD, Mini-LED",
-    "response": "4 Milliseconds"
+    "response": "4 Milliseconds",
+    "bench": 86,
+    "hdr": "HDR",
+    "sync": "G-Sync Ultimate",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90079,
@@ -102701,7 +105277,10 @@ export const PARTS = [
     "res": "3440x1440 UW",
     "refresh": 165,
     "panel": "VA",
-    "response": "21 Milliseconds"
+    "response": "21 Milliseconds",
+    "bench": 63,
+    "sync": "FreeSync",
+    "ports": "HDMI 2.1, DisplayPort"
   },
   {
     "id": 90080,
@@ -102732,7 +105311,10 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 60,
     "panel": "IPS",
-    "response": "3 Milliseconds"
+    "response": "3 Milliseconds",
+    "bench": 46,
+    "hdr": "HDR",
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90081,
@@ -102769,7 +105351,10 @@ export const PARTS = [
     "res": "4K",
     "refresh": 60,
     "panel": "LCD",
-    "response": "4 Milliseconds"
+    "response": "4 Milliseconds",
+    "bench": 53,
+    "hdr": "HDR10",
+    "ports": "USB-C"
   },
   {
     "id": 90082,
@@ -102801,7 +105386,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 165,
     "panel": "LCD, VA",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 76,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90083,
@@ -102832,7 +105420,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 210,
     "panel": "IPS, LCD",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 81,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90084,
@@ -102864,7 +105455,10 @@ export const PARTS = [
     "res": "4K",
     "refresh": 144,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 82,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90085,
@@ -102895,7 +105489,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 180,
     "panel": "LCD",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 73,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90086,
@@ -102926,7 +105523,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 180,
     "panel": "LCD",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 77,
+    "sync": "G-Sync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90087,
@@ -102957,7 +105557,10 @@ export const PARTS = [
     "screenSize": "34 Inches",
     "refresh": 100,
     "panel": "VA",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 44,
+    "hdr": "HDR",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90088,
@@ -102988,7 +105591,10 @@ export const PARTS = [
     "screenSize": "13.3 Inches",
     "res": "4K",
     "refresh": 60,
-    "panel": "LCD"
+    "panel": "LCD",
+    "bench": 55,
+    "hdr": "HDR",
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90089,
@@ -103019,7 +105625,10 @@ export const PARTS = [
     "res": "1080p",
     "refresh": 240,
     "panel": "IPS, LCD",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 80,
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90090,
@@ -103049,7 +105658,10 @@ export const PARTS = [
     "res": "1440p",
     "refresh": 300,
     "panel": "IPS, LCD",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 92,
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90091,
@@ -103080,7 +105692,10 @@ export const PARTS = [
     "res": "4K",
     "refresh": 144,
     "panel": "IPS",
-    "response": "2 Milliseconds"
+    "response": "2 Milliseconds",
+    "bench": 84,
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90092,
@@ -103112,7 +105727,11 @@ export const PARTS = [
     "res": "4K",
     "refresh": 240,
     "panel": "OLED",
-    "response": "0.03 Milliseconds"
+    "response": "0.03 Milliseconds",
+    "bench": 100,
+    "hdr": "HDR True Black 400",
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90093,
@@ -103142,7 +105761,9 @@ export const PARTS = [
     "res": "4K",
     "refresh": 60,
     "panel": "LED",
-    "response": "5 Milliseconds"
+    "response": "5 Milliseconds",
+    "bench": 46,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90094,
@@ -103173,7 +105794,10 @@ export const PARTS = [
     "res": "4K",
     "refresh": 160,
     "panel": "IPS",
-    "response": "1 Milliseconds"
+    "response": "1 Milliseconds",
+    "bench": 81,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90095,
@@ -103200,7 +105824,9 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "1000:1",
-    "value": 39
+    "value": 39,
+    "bench": 43,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90096,
@@ -103227,7 +105853,9 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "3000:1",
-    "value": 12
+    "value": 12,
+    "bench": 61,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90097,
@@ -103254,7 +105882,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "20,000,000:1",
-    "value": 35
+    "value": 35,
+    "bench": 32,
+    "ports": "HDMI"
   },
   {
     "id": 90098,
@@ -103281,7 +105911,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "8,000,000:1",
-    "value": 26
+    "value": 26,
+    "bench": 39,
+    "ports": "HDMI"
   },
   {
     "id": 90099,
@@ -103309,7 +105941,11 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 100
+    "value": 100,
+    "bench": 77,
+    "hdr": "HDR",
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90100,
@@ -103336,7 +105972,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "700:1",
-    "value": 6
+    "value": 6,
+    "bench": 36,
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90101,
@@ -103364,7 +106002,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "100,000:1",
     "condition": "refurbished",
-    "value": 17
+    "value": 17,
+    "bench": 49,
+    "sync": "FreeSync",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90102,
@@ -103392,7 +106033,9 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 33
+    "value": 33,
+    "bench": 20,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90103,
@@ -103420,7 +106063,9 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 15
+    "value": 15,
+    "bench": 25,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90104,
@@ -103448,7 +106093,9 @@ export const PARTS = [
     "curved": true,
     "contrast": "3000:1",
     "condition": "refurbished",
-    "value": 4
+    "value": 4,
+    "bench": 42,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90105,
@@ -103476,7 +106123,9 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 15
+    "value": 15,
+    "bench": 45,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90106,
@@ -103504,7 +106153,9 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 18
+    "value": 18,
+    "bench": 39,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90107,
@@ -103532,7 +106183,10 @@ export const PARTS = [
     "curved": true,
     "contrast": "3000:1",
     "condition": "refurbished",
-    "value": 79
+    "value": 79,
+    "bench": 40,
+    "sync": "FreeSync",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90108,
@@ -103560,7 +106214,9 @@ export const PARTS = [
     "curved": false,
     "contrast": "8,000,000:1",
     "condition": "refurbished",
-    "value": 3
+    "value": 3,
+    "bench": 56,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90109,
@@ -103588,7 +106244,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "5,000,000:1",
     "condition": "refurbished",
-    "value": 16
+    "value": 16,
+    "bench": 49,
+    "sync": "FreeSync",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90110,
@@ -103616,7 +106275,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "8,000,000:1",
     "condition": "refurbished",
-    "value": 15
+    "value": 15,
+    "bench": 39,
+    "hdr": "HDR",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90111,
@@ -103644,7 +106306,9 @@ export const PARTS = [
     "curved": false,
     "contrast": "1100:1",
     "condition": "refurbished",
-    "value": 0
+    "value": 0,
+    "bench": 33,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90112,
@@ -103672,7 +106336,9 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 23
+    "value": 23,
+    "bench": 36,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90113,
@@ -103700,7 +106366,9 @@ export const PARTS = [
     "curved": false,
     "contrast": "8,000,000:1",
     "condition": "refurbished",
-    "value": 17
+    "value": 17,
+    "bench": 36,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90114,
@@ -103728,7 +106396,9 @@ export const PARTS = [
     "curved": false,
     "contrast": "2,000,000:1",
     "condition": "refurbished",
-    "value": 10
+    "value": 10,
+    "bench": 49,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90115,
@@ -103756,7 +106426,9 @@ export const PARTS = [
     "curved": false,
     "contrast": "8,000,000:1",
     "condition": "refurbished",
-    "value": 16
+    "value": 16,
+    "bench": 36,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90116,
@@ -103784,7 +106456,10 @@ export const PARTS = [
     "curved": true,
     "contrast": "3000:1",
     "condition": "refurbished",
-    "value": 100
+    "value": 100,
+    "bench": 71,
+    "sync": "G-Sync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90117,
@@ -103812,7 +106487,11 @@ export const PARTS = [
     "curved": true,
     "contrast": "3000:1",
     "condition": "refurbished",
-    "value": 100
+    "value": 100,
+    "bench": 74,
+    "hdr": "HDR",
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90118,
@@ -103839,7 +106518,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "800:1",
-    "value": 15
+    "value": 15,
+    "bench": 36,
+    "ports": "USB-C"
   },
   {
     "id": 90119,
@@ -103867,7 +106548,9 @@ export const PARTS = [
     "curved": false,
     "contrast": "800:1",
     "condition": "refurbished",
-    "value": 51
+    "value": 51,
+    "bench": 36,
+    "ports": "USB-C"
   },
   {
     "id": 90120,
@@ -103895,7 +106578,9 @@ export const PARTS = [
     "curved": true,
     "contrast": "3000:1",
     "condition": "refurbished",
-    "value": 80
+    "value": 80,
+    "bench": 46,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90121,
@@ -103923,7 +106608,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 27
+    "value": 27,
+    "bench": 54,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90122,
@@ -103951,7 +106639,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "3,000,000:1",
     "condition": "refurbished",
-    "value": 100
+    "value": 100,
+    "bench": 81,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90123,
@@ -103979,7 +106670,10 @@ export const PARTS = [
     "curved": true,
     "contrast": "100,000,000:1",
     "condition": "refurbished",
-    "value": 100
+    "value": 100,
+    "bench": 54,
+    "sync": "FreeSync",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90124,
@@ -104007,7 +106701,11 @@ export const PARTS = [
     "curved": true,
     "contrast": "2500:1",
     "condition": "refurbished",
-    "value": 100
+    "value": 100,
+    "bench": 87,
+    "hdr": "HDR",
+    "sync": "G-Sync Compatible",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90125,
@@ -104035,7 +106733,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 100
+    "value": 100,
+    "bench": 77,
+    "sync": "G-Sync Compatible",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90126,
@@ -104063,7 +106764,11 @@ export const PARTS = [
     "curved": true,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 45
+    "value": 45,
+    "bench": 92,
+    "hdr": "HDR",
+    "sync": "G-Sync Compatible",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90127,
@@ -104091,7 +106796,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "1,000,000:1",
     "condition": "refurbished",
-    "value": 33
+    "value": 33,
+    "bench": 71,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90128,
@@ -104119,7 +106827,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 100
+    "value": 100,
+    "bench": 49,
+    "sync": "FreeSync",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90129,
@@ -104146,7 +106857,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "10,000,000:1",
-    "value": 9
+    "value": 9,
+    "bench": 51,
+    "ports": "HDMI"
   },
   {
     "id": 90130,
@@ -104174,7 +106887,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 25
+    "value": 25,
+    "bench": 48,
+    "sync": "FreeSync",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90131,
@@ -104201,7 +106917,9 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 24
+    "value": 24,
+    "bench": 31,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90132,
@@ -104229,7 +106947,10 @@ export const PARTS = [
     "curved": true,
     "contrast": "2500:1",
     "condition": "refurbished",
-    "value": 22
+    "value": 22,
+    "bench": 88,
+    "sync": "G-Sync Compatible",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90133,
@@ -104257,7 +106978,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 25
+    "value": 25,
+    "bench": 46,
+    "sync": "FreeSync",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90134,
@@ -104285,7 +107009,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "3000:1",
     "condition": "refurbished",
-    "value": 54
+    "value": 54,
+    "bench": 58,
+    "hdr": "HDR",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90135,
@@ -104312,7 +107039,9 @@ export const PARTS = [
     "response": 14,
     "curved": false,
     "contrast": "1000:1",
-    "value": 7
+    "value": 7,
+    "bench": 58,
+    "ports": "HDMI, DisplayPort, USB-C"
   },
   {
     "id": 90136,
@@ -104340,7 +107069,11 @@ export const PARTS = [
     "curved": false,
     "contrast": "2500:1",
     "condition": "refurbished",
-    "value": 12
+    "value": 12,
+    "bench": 59,
+    "hdr": "HDR",
+    "sync": "FreeSync",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90137,
@@ -104368,7 +107101,11 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 18
+    "value": 18,
+    "bench": 54,
+    "hdr": "HDR",
+    "sync": "FreeSync",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90138,
@@ -104396,7 +107133,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "12,000,000:1",
     "condition": "refurbished",
-    "value": 100
+    "value": 100,
+    "bench": 62,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90139,
@@ -104423,7 +107163,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 8
+    "value": 8,
+    "bench": 61,
+    "hdr": "HDR",
+    "ports": "HDMI, DisplayPort, USB-C"
   },
   {
     "id": 90140,
@@ -104450,7 +107193,11 @@ export const PARTS = [
     "curved": true,
     "contrast": "25,000:1",
     "condition": "refurbished",
-    "value": 100
+    "value": 100,
+    "bench": 76,
+    "hdr": "HDR",
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90141,
@@ -104478,7 +107225,11 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 75
+    "value": 75,
+    "bench": 49,
+    "hdr": "HDR",
+    "sync": "FreeSync",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90142,
@@ -104506,7 +107257,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "2500:1",
     "condition": "refurbished",
-    "value": 58
+    "value": 58,
+    "bench": 58,
+    "hdr": "HDR",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90143,
@@ -104533,7 +107287,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "10,000,000:1",
-    "value": 38
+    "value": 38,
+    "bench": 43,
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90144,
@@ -104561,7 +107318,11 @@ export const PARTS = [
     "curved": false,
     "contrast": "1000:1",
     "condition": "refurbished",
-    "value": 100
+    "value": 100,
+    "bench": 65,
+    "hdr": "HDR",
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90145,
@@ -104589,7 +107350,11 @@ export const PARTS = [
     "curved": true,
     "contrast": "700:1",
     "condition": "refurbished",
-    "value": 43
+    "value": 43,
+    "bench": 85,
+    "hdr": "HDR",
+    "sync": "G-Sync Ultimate",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90146,
@@ -104617,7 +107382,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "3,000,000:1",
     "condition": "refurbished",
-    "value": 16
+    "value": 16,
+    "bench": 61,
+    "sync": "FreeSync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90147,
@@ -104645,7 +107413,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "3,000,000:1",
     "condition": "refurbished",
-    "value": 3
+    "value": 3,
+    "bench": 67,
+    "sync": "FreeSync",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90148,
@@ -104673,7 +107444,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "10,000,000:1",
     "condition": "refurbished",
-    "value": 83
+    "value": 83,
+    "bench": 44,
+    "sync": "FreeSync",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90149,
@@ -104701,7 +107475,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "10,000,000:1",
     "condition": "refurbished",
-    "value": 91
+    "value": 91,
+    "bench": 48,
+    "sync": "FreeSync",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90150,
@@ -104728,7 +107505,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "800:1",
-    "value": 5
+    "value": 5,
+    "bench": 36,
+    "ports": "HDMI"
   },
   {
     "id": 90151,
@@ -104756,7 +107535,11 @@ export const PARTS = [
     "curved": true,
     "contrast": "1,000,000:1",
     "condition": "refurbished",
-    "value": 54
+    "value": 54,
+    "bench": 88,
+    "hdr": "HDR",
+    "sync": "G-Sync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90152,
@@ -104783,7 +107566,9 @@ export const PARTS = [
     "response": 8,
     "curved": false,
     "contrast": "1000:1",
-    "value": 6
+    "value": 6,
+    "bench": 36,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90153,
@@ -104809,7 +107594,9 @@ export const PARTS = [
     "response": 30,
     "curved": false,
     "contrast": "600:1",
-    "value": 4
+    "value": 4,
+    "bench": 25,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90154,
@@ -104835,7 +107622,9 @@ export const PARTS = [
     "response": 30,
     "curved": false,
     "contrast": "600:1",
-    "value": 0
+    "value": 0,
+    "bench": 25,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90155,
@@ -104861,7 +107650,9 @@ export const PARTS = [
     "response": 30,
     "curved": false,
     "contrast": "1000:1",
-    "value": 4
+    "value": 4,
+    "bench": 25,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90156,
@@ -104889,7 +107680,10 @@ export const PARTS = [
     "curved": true,
     "contrast": "80,000,000:1",
     "condition": "refurbished",
-    "value": 49
+    "value": 49,
+    "bench": 67,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90157,
@@ -104916,7 +107710,10 @@ export const PARTS = [
     "curved": false,
     "contrast": "3000:1",
     "condition": "refurbished",
-    "value": 27
+    "value": 27,
+    "bench": 41,
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90158,
@@ -104944,7 +107741,10 @@ export const PARTS = [
     "curved": true,
     "contrast": "80,000,000:1",
     "condition": "refurbished",
-    "value": 19
+    "value": 19,
+    "bench": 85,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90159,
@@ -104970,7 +107770,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1000:1",
-    "value": 36
+    "value": 36,
+    "bench": 45,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90160,
@@ -104996,7 +107798,9 @@ export const PARTS = [
     "panel": "VA",
     "curved": false,
     "contrast": "100,000:1",
-    "value": 5
+    "value": 5,
+    "bench": 60,
+    "ports": "HDMI, Thunderbolt"
   },
   {
     "id": 90161,
@@ -105022,7 +107826,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1000:1",
-    "value": 7
+    "value": 7,
+    "bench": 38,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90162,
@@ -105047,7 +107853,9 @@ export const PARTS = [
     "refresh": 60,
     "curved": false,
     "contrast": "1000:1",
-    "value": 0
+    "value": 0,
+    "bench": 30,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90163,
@@ -105072,7 +107880,9 @@ export const PARTS = [
     "refresh": 60,
     "curved": false,
     "contrast": "1000:1",
-    "value": 0
+    "value": 0,
+    "bench": 30,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90164,
@@ -105097,7 +107907,9 @@ export const PARTS = [
     "refresh": 60,
     "curved": false,
     "contrast": "1000:1",
-    "value": 0
+    "value": 0,
+    "bench": 30,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90165,
@@ -105122,7 +107934,9 @@ export const PARTS = [
     "refresh": 60,
     "curved": false,
     "contrast": "1000:1",
-    "value": 0
+    "value": 0,
+    "bench": 30,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90166,
@@ -105149,7 +107963,9 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "3000:1",
-    "value": 9
+    "value": 9,
+    "bench": 61,
+    "ports": "USB-C"
   },
   {
     "id": 90167,
@@ -105176,7 +107992,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 10
+    "value": 10,
+    "bench": 36,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90168,
@@ -105201,7 +108019,9 @@ export const PARTS = [
     "refresh": 120,
     "curved": false,
     "contrast": "1,000,000:1",
-    "value": 0
+    "value": 0,
+    "bench": 40,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90169,
@@ -105226,7 +108046,9 @@ export const PARTS = [
     "refresh": 120,
     "curved": false,
     "contrast": "1,000,000:1",
-    "value": 0
+    "value": 0,
+    "bench": 40,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90170,
@@ -105252,7 +108074,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1000:1",
-    "value": 13
+    "value": 13,
+    "bench": 52,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90171,
@@ -105279,7 +108103,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "50,000,000:1",
-    "value": 31
+    "value": 31,
+    "bench": 40,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90172,
@@ -105306,7 +108132,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "100,000,000:1",
-    "value": 20
+    "value": 20,
+    "bench": 41,
+    "ports": "HDMI"
   },
   {
     "id": 90173,
@@ -105333,7 +108161,9 @@ export const PARTS = [
     "response": 5,
     "curved": true,
     "contrast": "5,000,000:1",
-    "value": 12
+    "value": 12,
+    "bench": 54,
+    "ports": "HDMI"
   },
   {
     "id": 90174,
@@ -105360,7 +108190,11 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "3000:1",
-    "value": 25
+    "value": 25,
+    "bench": 55,
+    "hdr": "HDR10",
+    "sync": "FreeSync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90175,
@@ -105387,7 +108221,11 @@ export const PARTS = [
     "response": 5,
     "curved": true,
     "contrast": "4000:1",
-    "value": 19
+    "value": 19,
+    "bench": 57,
+    "hdr": "HDR10",
+    "sync": "FreeSync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90176,
@@ -105414,7 +108252,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "8,000,000:1",
-    "value": 5
+    "value": 5,
+    "bench": 61,
+    "ports": "HDMI"
   },
   {
     "id": 90177,
@@ -105441,7 +108281,9 @@ export const PARTS = [
     "response": 30,
     "curved": false,
     "contrast": "1200:01",
-    "value": 8
+    "value": 8,
+    "bench": 28,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90178,
@@ -105468,7 +108310,9 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "80,000,000:1",
-    "value": 14
+    "value": 14,
+    "bench": 70,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90179,
@@ -105495,7 +108339,10 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "100,000,000:1",
-    "value": 79
+    "value": 79,
+    "bench": 52,
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90180,
@@ -105520,7 +108367,9 @@ export const PARTS = [
     "refresh": 60,
     "curved": false,
     "contrast": "1000:1",
-    "value": 4
+    "value": 4,
+    "bench": 33,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90181,
@@ -105545,7 +108394,9 @@ export const PARTS = [
     "refresh": 60,
     "curved": false,
     "contrast": "1000:1",
-    "value": 25
+    "value": 25,
+    "bench": 30,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90182,
@@ -105570,7 +108421,9 @@ export const PARTS = [
     "refresh": 60,
     "curved": false,
     "contrast": "1000:1",
-    "value": 19
+    "value": 19,
+    "bench": 30,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90183,
@@ -105597,7 +108450,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "10,000:1",
-    "value": 1
+    "value": 1,
+    "bench": 36,
+    "ports": "Thunderbolt"
   },
   {
     "id": 90184,
@@ -105623,7 +108478,11 @@ export const PARTS = [
     "panel": "VA",
     "curved": false,
     "contrast": "3000:1",
-    "value": 25
+    "value": 25,
+    "bench": 57,
+    "hdr": "HDR10",
+    "sync": "FreeSync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90185,
@@ -105650,7 +108509,11 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "1000:1",
-    "value": 36
+    "value": 36,
+    "bench": 92,
+    "hdr": "HDR400",
+    "sync": "G-Sync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90186,
@@ -105676,7 +108539,10 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1000:1",
-    "value": 2
+    "value": 2,
+    "bench": 53,
+    "hdr": "HDR",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90187,
@@ -105702,7 +108568,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1000:1",
-    "value": 0
+    "value": 0,
+    "bench": 63,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90188,
@@ -105729,7 +108597,10 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "100,000,000:1",
-    "value": 27
+    "value": 27,
+    "bench": 52,
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90189,
@@ -105756,7 +108627,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 6
+    "value": 6,
+    "bench": 36,
+    "ports": "HDMI"
   },
   {
     "id": 90190,
@@ -105782,7 +108655,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "3000:1",
-    "value": 9
+    "value": 9,
+    "bench": 38,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90191,
@@ -105808,7 +108683,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "3000:1",
-    "value": 10
+    "value": 10,
+    "bench": 38,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90192,
@@ -105834,7 +108711,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1000:1",
-    "value": 3
+    "value": 3,
+    "bench": 38,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90193,
@@ -105861,7 +108740,9 @@ export const PARTS = [
     "response": 5,
     "curved": true,
     "contrast": "2000:1",
-    "value": 0
+    "value": 0,
+    "bench": 64,
+    "ports": "HDMI"
   },
   {
     "id": 90194,
@@ -105888,7 +108769,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "2000:1",
-    "value": 18
+    "value": 18,
+    "bench": 61,
+    "ports": "HDMI"
   },
   {
     "id": 90195,
@@ -105914,7 +108797,9 @@ export const PARTS = [
     "panel": "VA",
     "curved": true,
     "contrast": "3000:1",
-    "value": 20
+    "value": 20,
+    "bench": 46,
+    "ports": "HDMI"
   },
   {
     "id": 90196,
@@ -105941,7 +108826,9 @@ export const PARTS = [
     "response": 14,
     "curved": false,
     "contrast": "1000:1",
-    "value": 3
+    "value": 3,
+    "bench": 36,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90197,
@@ -105968,7 +108855,10 @@ export const PARTS = [
     "response": 1,
     "curved": true,
     "contrast": "3000:1",
-    "value": 38
+    "value": 38,
+    "bench": 66,
+    "sync": "FreeSync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90198,
@@ -105995,7 +108885,11 @@ export const PARTS = [
     "response": 5,
     "curved": true,
     "contrast": "3000:1",
-    "value": 20
+    "value": 20,
+    "bench": 57,
+    "hdr": "HDR10",
+    "sync": "FreeSync",
+    "ports": "Thunderbolt"
   },
   {
     "id": 90199,
@@ -106022,7 +108916,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "10,000,000:1",
-    "value": 35
+    "value": 35,
+    "bench": 40,
+    "ports": "HDMI"
   },
   {
     "id": 90200,
@@ -106049,7 +108945,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "10,000,000:1",
-    "value": 46
+    "value": 46,
+    "bench": 45,
+    "ports": "HDMI"
   },
   {
     "id": 90201,
@@ -106076,7 +108974,9 @@ export const PARTS = [
     "response": 7,
     "curved": false,
     "contrast": "10,000,000:1",
-    "value": 28
+    "value": 28,
+    "bench": 41,
+    "ports": "HDMI"
   },
   {
     "id": 90202,
@@ -106103,7 +109003,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "10,000,000:1",
-    "value": 31
+    "value": 31,
+    "bench": 45,
+    "ports": "HDMI"
   },
   {
     "id": 90203,
@@ -106129,7 +109031,9 @@ export const PARTS = [
     "response": 35,
     "curved": false,
     "contrast": "1100:1",
-    "value": 6
+    "value": 6,
+    "bench": 25,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90204,
@@ -106156,7 +109060,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 18
+    "value": 18,
+    "bench": 46,
+    "ports": "HDMI"
   },
   {
     "id": 90205,
@@ -106182,7 +109088,11 @@ export const PARTS = [
     "response": 0.03,
     "curved": true,
     "contrast": "1,500,000:1",
-    "value": 24
+    "value": 24,
+    "bench": 78,
+    "hdr": "HDR400",
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90206,
@@ -106208,7 +109118,11 @@ export const PARTS = [
     "response": 0.03,
     "curved": false,
     "contrast": "1,500,000:1",
-    "value": 44
+    "value": 44,
+    "bench": 88,
+    "hdr": "HDR400",
+    "sync": "FreeSync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90207,
@@ -106235,7 +109149,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 32
+    "value": 32,
+    "bench": 46,
+    "ports": "HDMI"
   },
   {
     "id": 90208,
@@ -106261,7 +109177,11 @@ export const PARTS = [
     "response": 0.03,
     "curved": false,
     "contrast": "1,500,000:1",
-    "value": 24
+    "value": 24,
+    "bench": 96,
+    "hdr": "HDR400",
+    "sync": "FreeSync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90209,
@@ -106288,7 +109208,10 @@ export const PARTS = [
     "response": 5,
     "curved": true,
     "contrast": "3000:1",
-    "value": 12
+    "value": 12,
+    "bench": 57,
+    "sync": "FreeSync",
+    "ports": "HDMI, DisplayPort, USB-C"
   },
   {
     "id": 90210,
@@ -106315,7 +109238,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 6
+    "value": 6,
+    "bench": 51,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90211,
@@ -106341,7 +109266,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1300:1",
-    "value": 67
+    "value": 67,
+    "bench": 47,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90212,
@@ -106367,7 +109294,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1300:1",
-    "value": 71
+    "value": 71,
+    "bench": 42,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90213,
@@ -106393,7 +109322,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1000:1",
-    "value": 5
+    "value": 5,
+    "bench": 64,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90214,
@@ -106420,7 +109351,11 @@ export const PARTS = [
     "response": 1,
     "curved": true,
     "contrast": "1000:1",
-    "value": 10
+    "value": 10,
+    "bench": 92,
+    "hdr": "HDR",
+    "sync": "G-Sync Compatible",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90215,
@@ -106447,7 +109382,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 9
+    "value": 9,
+    "bench": 57,
+    "hdr": "HDR10",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90216,
@@ -106474,7 +109412,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 8
+    "value": 8,
+    "bench": 61,
+    "hdr": "HDR10",
+    "ports": "HDMI"
   },
   {
     "id": 90217,
@@ -106501,7 +109442,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "20,000,000:1",
-    "value": 22
+    "value": 22,
+    "bench": 36,
+    "ports": "USB-C"
   },
   {
     "id": 90218,
@@ -106528,7 +109471,10 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "1300:1",
-    "value": 52
+    "value": 52,
+    "bench": 67,
+    "sync": "Adaptive Sync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90219,
@@ -106554,7 +109500,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "2000:1",
-    "value": 2
+    "value": 2,
+    "bench": 63,
+    "ports": "HDMI, DisplayPort, Thunderbolt"
   },
   {
     "id": 90220,
@@ -106580,7 +109528,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "3000:1",
-    "value": 1
+    "value": 1,
+    "bench": 64,
+    "ports": "USB-C"
   },
   {
     "id": 90221,
@@ -106606,7 +109556,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "3000:1",
-    "value": 0
+    "value": 0,
+    "bench": 64,
+    "ports": "USB-C"
   },
   {
     "id": 90222,
@@ -106633,7 +109585,9 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "1,000,000:1",
-    "value": 1
+    "value": 1,
+    "bench": 64,
+    "ports": "USB-C"
   },
   {
     "id": 90223,
@@ -106659,7 +109613,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 0
+    "value": 0,
+    "bench": 53,
+    "ports": "USB-C"
   },
   {
     "id": 90224,
@@ -106685,7 +109641,11 @@ export const PARTS = [
     "panel": "VA",
     "curved": true,
     "contrast": "3000:1",
-    "value": 10
+    "value": 10,
+    "bench": 59,
+    "hdr": "HDR10",
+    "sync": "FreeSync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90225,
@@ -106712,7 +109672,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 20
+    "value": 20,
+    "bench": 45,
+    "ports": "HDMI"
   },
   {
     "id": 90226,
@@ -106739,7 +109701,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 36
+    "value": 36,
+    "bench": 40,
+    "ports": "HDMI"
   },
   {
     "id": 90227,
@@ -106766,7 +109730,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 20
+    "value": 20,
+    "bench": 40,
+    "ports": "HDMI"
   },
   {
     "id": 90228,
@@ -106793,7 +109759,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 31
+    "value": 31,
+    "bench": 45,
+    "ports": "HDMI"
   },
   {
     "id": 90229,
@@ -106820,7 +109788,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 33
+    "value": 33,
+    "bench": 40,
+    "ports": "HDMI"
   },
   {
     "id": 90230,
@@ -106847,7 +109817,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 29
+    "value": 29,
+    "bench": 38,
+    "ports": "HDMI"
   },
   {
     "id": 90231,
@@ -106874,7 +109846,9 @@ export const PARTS = [
     "response": 14,
     "curved": false,
     "contrast": "1000:1",
-    "value": 18
+    "value": 18,
+    "bench": 33,
+    "ports": "HDMI"
   },
   {
     "id": 90232,
@@ -106901,7 +109875,9 @@ export const PARTS = [
     "response": 14,
     "curved": false,
     "contrast": "1000:1",
-    "value": 17
+    "value": 17,
+    "bench": 38,
+    "ports": "HDMI"
   },
   {
     "id": 90233,
@@ -106928,7 +109904,10 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "100,000,000:1",
-    "value": 71
+    "value": 71,
+    "bench": 58,
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90234,
@@ -106955,7 +109934,10 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "100,000,000:1",
-    "value": 64
+    "value": 64,
+    "bench": 63,
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90235,
@@ -106981,7 +109963,10 @@ export const PARTS = [
     "panel": "VA",
     "curved": false,
     "contrast": "3000:1",
-    "value": 9
+    "value": 9,
+    "bench": 60,
+    "hdr": "HDR10",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90236,
@@ -107007,7 +109992,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1000:1",
-    "value": 9
+    "value": 9,
+    "bench": 36,
+    "ports": "HDMI, DisplayPort, USB-C"
   },
   {
     "id": 90237,
@@ -107033,7 +110020,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1200:1",
-    "value": 5
+    "value": 5,
+    "bench": 63,
+    "ports": "HDMI, DisplayPort, USB-C"
   },
   {
     "id": 90238,
@@ -107059,7 +110048,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1200:1",
-    "value": 4
+    "value": 4,
+    "bench": 63,
+    "ports": "HDMI, DisplayPort, USB-C"
   },
   {
     "id": 90239,
@@ -107084,7 +110075,11 @@ export const PARTS = [
     "refresh": 144,
     "curved": false,
     "contrast": "1,000,000:1",
-    "value": 13
+    "value": 13,
+    "bench": 72,
+    "hdr": "HDR",
+    "sync": "FreeSync",
+    "ports": "USB-C"
   },
   {
     "id": 90240,
@@ -107109,7 +110104,11 @@ export const PARTS = [
     "refresh": 144,
     "curved": false,
     "contrast": "1,000,000:1",
-    "value": 16
+    "value": 16,
+    "bench": 72,
+    "hdr": "HDR",
+    "sync": "FreeSync",
+    "ports": "USB-C"
   },
   {
     "id": 90241,
@@ -107136,7 +110135,10 @@ export const PARTS = [
     "response": 1,
     "curved": true,
     "contrast": "3000:1",
-    "value": 44
+    "value": 44,
+    "bench": 66,
+    "sync": "FreeSync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90242,
@@ -107163,7 +110165,11 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "1000:1",
-    "value": 19
+    "value": 19,
+    "bench": 67,
+    "hdr": "HDR",
+    "sync": "Adaptive Sync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90243,
@@ -107190,7 +110196,11 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "1500:1",
-    "value": 80
+    "value": 80,
+    "bench": 61,
+    "hdr": "HDR",
+    "sync": "Adaptive Sync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90244,
@@ -107216,7 +110226,9 @@ export const PARTS = [
     "panel": "VA",
     "curved": true,
     "contrast": "3000:1",
-    "value": 9
+    "value": 9,
+    "bench": 56,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90245,
@@ -107242,7 +110254,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1000:1",
-    "value": 5
+    "value": 5,
+    "bench": 63,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90246,
@@ -107267,7 +110281,9 @@ export const PARTS = [
     "refresh": 120,
     "curved": false,
     "contrast": "1,000,000:1",
-    "value": 0
+    "value": 0,
+    "bench": 40,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90247,
@@ -107292,7 +110308,9 @@ export const PARTS = [
     "refresh": 120,
     "curved": false,
     "contrast": "1,000,000:1",
-    "value": 0
+    "value": 0,
+    "bench": 40,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90252,
@@ -107319,7 +110337,10 @@ export const PARTS = [
     "response": 5,
     "curved": true,
     "contrast": "3000:1",
-    "value": 28
+    "value": 28,
+    "bench": 54,
+    "hdr": "HDR10",
+    "ports": "HDMI"
   },
   {
     "id": 90253,
@@ -107346,7 +110367,9 @@ export const PARTS = [
     "response": 14,
     "curved": false,
     "contrast": "1000:1",
-    "value": 3
+    "value": 3,
+    "bench": 47,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90254,
@@ -107372,7 +110395,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1300:1",
-    "value": 40
+    "value": 40,
+    "bench": 42,
+    "ports": "HDMI, DisplayPort, USB-C"
   },
   {
     "id": 90255,
@@ -107398,7 +110423,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1300:1",
-    "value": 54
+    "value": 54,
+    "bench": 47,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90256,
@@ -107424,7 +110451,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1300:1",
-    "value": 34
+    "value": 34,
+    "bench": 47,
+    "ports": "HDMI, DisplayPort, USB-C"
   },
   {
     "id": 90257,
@@ -107451,7 +110480,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "3000:1",
-    "value": 30
+    "value": 30,
+    "bench": 39,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90258,
@@ -107478,7 +110509,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 8
+    "value": 8,
+    "bench": 40,
+    "ports": "HDMI"
   },
   {
     "id": 90259,
@@ -107505,7 +110538,10 @@ export const PARTS = [
     "response": 5,
     "curved": true,
     "contrast": "3000:1",
-    "value": 23
+    "value": 23,
+    "bench": 54,
+    "hdr": "HDR10",
+    "ports": "HDMI, DisplayPort, USB-C"
   },
   {
     "id": 90260,
@@ -107532,7 +110568,11 @@ export const PARTS = [
     "response": 1,
     "curved": true,
     "contrast": "100,000,000:1",
-    "value": 5
+    "value": 5,
+    "bench": 94,
+    "hdr": "HDR1000",
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90261,
@@ -107559,7 +110599,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 20
+    "value": 20,
+    "bench": 61,
+    "hdr": "HDR10",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90262,
@@ -107586,7 +110629,11 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "1500:1",
-    "value": 69
+    "value": 69,
+    "bench": 63,
+    "hdr": "HDR",
+    "sync": "Adaptive Sync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90263,
@@ -107613,7 +110660,11 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "1500:1",
-    "value": 93
+    "value": 93,
+    "bench": 63,
+    "hdr": "HDR",
+    "sync": "Adaptive Sync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90264,
@@ -107640,7 +110691,9 @@ export const PARTS = [
     "response": 4,
     "curved": true,
     "contrast": "3000:1",
-    "value": 41
+    "value": 41,
+    "bench": 46,
+    "ports": "HDMI"
   },
   {
     "id": 90265,
@@ -107667,7 +110720,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 71
+    "value": 71,
+    "bench": 43,
+    "ports": "HDMI"
   },
   {
     "id": 90266,
@@ -107694,7 +110749,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 67
+    "value": 67,
+    "bench": 45,
+    "ports": "HDMI"
   },
   {
     "id": 90267,
@@ -107721,7 +110778,9 @@ export const PARTS = [
     "response": 4,
     "curved": true,
     "contrast": "3000:1",
-    "value": 44
+    "value": 44,
+    "bench": 44,
+    "ports": "HDMI"
   },
   {
     "id": 90268,
@@ -107748,7 +110807,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 63
+    "value": 63,
+    "bench": 40,
+    "ports": "HDMI"
   },
   {
     "id": 90269,
@@ -107775,7 +110836,9 @@ export const PARTS = [
     "response": 4,
     "curved": true,
     "contrast": "4000:1",
-    "value": 34
+    "value": 34,
+    "bench": 46,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90270,
@@ -107802,7 +110865,9 @@ export const PARTS = [
     "response": 4,
     "curved": true,
     "contrast": "3000:1",
-    "value": 46
+    "value": 46,
+    "bench": 47,
+    "ports": "HDMI"
   },
   {
     "id": 90271,
@@ -107828,7 +110893,11 @@ export const PARTS = [
     "response": 0.03,
     "curved": true,
     "contrast": "1,500,000:1",
-    "value": 18
+    "value": 18,
+    "bench": 92,
+    "hdr": "HDR400",
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90272,
@@ -107854,7 +110923,11 @@ export const PARTS = [
     "response": 0.03,
     "curved": true,
     "contrast": "1,500,000:1",
-    "value": 33
+    "value": 33,
+    "bench": 90,
+    "hdr": "HDR400",
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90273,
@@ -107880,7 +110953,11 @@ export const PARTS = [
     "response": 0.03,
     "curved": true,
     "contrast": "1,500,000:1",
-    "value": 23
+    "value": 23,
+    "bench": 100,
+    "hdr": "HDR400",
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90274,
@@ -107907,7 +110984,10 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "1300:1",
-    "value": 40
+    "value": 40,
+    "bench": 67,
+    "sync": "Adaptive Sync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90275,
@@ -107932,7 +111012,11 @@ export const PARTS = [
     "refresh": 240,
     "curved": false,
     "contrast": "150,000:1",
-    "value": 22
+    "value": 22,
+    "bench": 94,
+    "hdr": "HDR True Black 400",
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90276,
@@ -107957,7 +111041,11 @@ export const PARTS = [
     "refresh": 240,
     "curved": false,
     "contrast": "150,000:1",
-    "value": 17
+    "value": 17,
+    "bench": 94,
+    "hdr": "HDR True Black 400",
+    "sync": "FreeSync Premium",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90277,
@@ -107983,7 +111071,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1200:1",
-    "value": 5
+    "value": 5,
+    "bench": 63,
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90278,
@@ -108009,7 +111099,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1300:1",
-    "value": 5
+    "value": 5,
+    "bench": 63,
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90279,
@@ -108035,7 +111127,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "2000:1",
-    "value": 4
+    "value": 4,
+    "bench": 63,
+    "ports": "HDMI, DisplayPort, USB-C"
   },
   {
     "id": 90280,
@@ -108061,7 +111155,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "2000:1",
-    "value": 3
+    "value": 3,
+    "bench": 63,
+    "ports": "HDMI, DisplayPort, USB-C"
   },
   {
     "id": 90281,
@@ -108088,7 +111184,10 @@ export const PARTS = [
     "response": 5,
     "curved": true,
     "contrast": "3000:1",
-    "value": 45
+    "value": 45,
+    "bench": 46,
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90282,
@@ -108115,7 +111214,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "3000:1",
-    "value": 11
+    "value": 11,
+    "bench": 58,
+    "hdr": "HDR10",
+    "ports": "USB-C"
   },
   {
     "id": 90283,
@@ -108142,7 +111244,9 @@ export const PARTS = [
     "response": 10,
     "curved": false,
     "contrast": "1000:1",
-    "value": 2
+    "value": 2,
+    "bench": 33,
+    "ports": "HDMI"
   },
   {
     "id": 90284,
@@ -108168,7 +111272,9 @@ export const PARTS = [
     "response": 10,
     "curved": false,
     "contrast": "1000:1",
-    "value": 6
+    "value": 6,
+    "bench": 25,
+    "ports": "HDMI"
   },
   {
     "id": 90285,
@@ -108195,7 +111301,10 @@ export const PARTS = [
     "response": 6,
     "curved": false,
     "contrast": "1000:1",
-    "value": 23
+    "value": 23,
+    "bench": 34,
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90286,
@@ -108221,7 +111330,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1000:1",
-    "value": 22
+    "value": 22,
+    "bench": 58,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90287,
@@ -108247,7 +111358,10 @@ export const PARTS = [
     "panel": "VA",
     "curved": false,
     "contrast": "3000:1",
-    "value": 7
+    "value": 7,
+    "bench": 60,
+    "hdr": "HDR10",
+    "ports": "DisplayPort, USB-C"
   },
   {
     "id": 90288,
@@ -108273,7 +111387,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1500:1",
-    "value": 7
+    "value": 7,
+    "bench": 23,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90289,
@@ -108300,7 +111416,10 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "1000:1",
-    "value": 14
+    "value": 14,
+    "bench": 64,
+    "hdr": "HDR",
+    "ports": "HDMI, DisplayPort, USB-C"
   },
   {
     "id": 90290,
@@ -108327,7 +111446,9 @@ export const PARTS = [
     "response": 8,
     "curved": false,
     "contrast": "1500:1",
-    "value": 46
+    "value": 46,
+    "bench": 45,
+    "ports": "HDMI"
   },
   {
     "id": 90291,
@@ -108354,7 +111475,9 @@ export const PARTS = [
     "response": 8,
     "curved": false,
     "contrast": "1500:1",
-    "value": 64
+    "value": 64,
+    "bench": 43,
+    "ports": "HDMI"
   },
   {
     "id": 90292,
@@ -108381,7 +111504,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 35
+    "value": 35,
+    "bench": 55,
+    "hdr": "HDR10",
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90293,
@@ -108408,7 +111534,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 40
+    "value": 40,
+    "bench": 55,
+    "hdr": "HDR10",
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90294,
@@ -108434,7 +111563,10 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "100,000:1",
-    "value": 93
+    "value": 93,
+    "bench": 54,
+    "sync": "Adaptive Sync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90295,
@@ -108461,7 +111593,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 14
+    "value": 14,
+    "bench": 40,
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90296,
@@ -108488,7 +111622,10 @@ export const PARTS = [
     "response": 8,
     "curved": false,
     "contrast": "1500:1",
-    "value": 30
+    "value": 30,
+    "bench": 76,
+    "sync": "FreeSync Premium",
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90297,
@@ -108515,7 +111652,11 @@ export const PARTS = [
     "response": 8,
     "curved": false,
     "contrast": "3000:1",
-    "value": 28
+    "value": 28,
+    "bench": 72,
+    "hdr": "HDR",
+    "sync": "FreeSync Premium",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90298,
@@ -108542,7 +111683,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 9
+    "value": 9,
+    "bench": 61,
+    "hdr": "HDR10",
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90299,
@@ -108569,7 +111713,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 3
+    "value": 3,
+    "bench": 36,
+    "hdr": "HDR",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90300,
@@ -108595,7 +111742,9 @@ export const PARTS = [
     "response": 15,
     "curved": false,
     "contrast": "1500:1",
-    "value": 2
+    "value": 2,
+    "bench": 25,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90301,
@@ -108621,7 +111770,9 @@ export const PARTS = [
     "response": 20,
     "curved": false,
     "contrast": "1000:1",
-    "value": 0
+    "value": 0,
+    "bench": 25,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90302,
@@ -108648,7 +111799,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 21
+    "value": 21,
+    "bench": 40,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90303,
@@ -108674,7 +111827,11 @@ export const PARTS = [
     "response": 0.03,
     "curved": false,
     "contrast": "1,500,000:1",
-    "value": 18
+    "value": 18,
+    "bench": 95,
+    "hdr": "HDR400",
+    "sync": "FreeSync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90304,
@@ -108701,7 +111858,10 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "3500:1",
-    "value": 36
+    "value": 36,
+    "bench": 61,
+    "hdr": "HDR",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90305,
@@ -108728,7 +111888,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "2000:1",
-    "value": 3
+    "value": 3,
+    "bench": 61,
+    "hdr": "HDR",
+    "ports": "HDMI"
   },
   {
     "id": 90306,
@@ -108755,7 +111918,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 11
+    "value": 11,
+    "bench": 65,
+    "ports": "HDMI"
   },
   {
     "id": 90307,
@@ -108782,7 +111947,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "10,000,000:1",
-    "value": 17
+    "value": 17,
+    "bench": 55,
+    "ports": "HDMI"
   },
   {
     "id": 90308,
@@ -108809,7 +111976,9 @@ export const PARTS = [
     "response": 14,
     "curved": false,
     "contrast": "2000:1",
-    "value": 3
+    "value": 3,
+    "bench": 37,
+    "ports": "HDMI, DisplayPort, Thunderbolt"
   },
   {
     "id": 90309,
@@ -108836,7 +112005,9 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "3000:1",
-    "value": 9
+    "value": 9,
+    "bench": 61,
+    "ports": "USB-C"
   },
   {
     "id": 90310,
@@ -108862,7 +112033,11 @@ export const PARTS = [
     "response": 0.03,
     "curved": false,
     "contrast": "1,000,000:1",
-    "value": 6
+    "value": 6,
+    "bench": 97,
+    "hdr": "HDR True Black 400",
+    "sync": "FreeSync",
+    "ports": "USB-C"
   },
   {
     "id": 90311,
@@ -108889,7 +112064,9 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "3000:1",
-    "value": 9
+    "value": 9,
+    "bench": 61,
+    "ports": "USB-C"
   },
   {
     "id": 90312,
@@ -108916,7 +112093,9 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "3000:1",
-    "value": 9
+    "value": 9,
+    "bench": 61,
+    "ports": "USB-C"
   },
   {
     "id": 90313,
@@ -108943,7 +112122,9 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "5000:1",
-    "value": 10
+    "value": 10,
+    "bench": 61,
+    "ports": "USB-C"
   },
   {
     "id": 90314,
@@ -108970,7 +112151,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 58
+    "value": 58,
+    "bench": 40,
+    "ports": "HDMI"
   },
   {
     "id": 90315,
@@ -108997,7 +112180,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "3000:1",
-    "value": 7
+    "value": 7,
+    "bench": 71,
+    "hdr": "HDR",
+    "ports": "HDMI"
   },
   {
     "id": 90316,
@@ -109024,7 +112210,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 49
+    "value": 49,
+    "bench": 40,
+    "ports": "HDMI"
   },
   {
     "id": 90317,
@@ -109051,7 +112239,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 17
+    "value": 17,
+    "bench": 61,
+    "hdr": "HDR10",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90318,
@@ -109078,7 +112269,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "3000:1",
-    "value": 13
+    "value": 13,
+    "bench": 58,
+    "hdr": "HDR10",
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90319,
@@ -109105,7 +112299,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 96
+    "value": 96,
+    "bench": 46,
+    "hdr": "HDR10",
+    "ports": "HDMI"
   },
   {
     "id": 90320,
@@ -109132,7 +112329,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 77
+    "value": 77,
+    "bench": 51,
+    "hdr": "HDR10",
+    "ports": "HDMI"
   },
   {
     "id": 90321,
@@ -109158,7 +112358,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1500:1",
-    "value": 12
+    "value": 12,
+    "bench": 57,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90322,
@@ -109185,7 +112387,11 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "10,000,000:1",
-    "value": 13
+    "value": 13,
+    "bench": 66,
+    "hdr": "HDR",
+    "sync": "FreeSync Premium",
+    "ports": "HDMI"
   },
   {
     "id": 90323,
@@ -109212,7 +112418,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "2000:1",
-    "value": 2
+    "value": 2,
+    "bench": 61,
+    "hdr": "HDR",
+    "ports": "HDMI"
   },
   {
     "id": 90325,
@@ -109239,7 +112448,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 12
+    "value": 12,
+    "bench": 65,
+    "ports": "HDMI"
   },
   {
     "id": 90326,
@@ -109266,7 +112477,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "3000:1",
-    "value": 8
+    "value": 8,
+    "bench": 71,
+    "hdr": "HDR",
+    "ports": "HDMI"
   },
   {
     "id": 90327,
@@ -109293,7 +112507,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 42
+    "value": 42,
+    "bench": 49,
+    "hdr": "HDR400",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90328,
@@ -109320,7 +112537,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 1
+    "value": 1,
+    "bench": 37,
+    "hdr": "HDR10",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90329,
@@ -109347,7 +112567,9 @@ export const PARTS = [
     "response": 6,
     "curved": false,
     "contrast": "1300:1",
-    "value": 31
+    "value": 31,
+    "bench": 50,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90330,
@@ -109374,7 +112596,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 13
+    "value": 13,
+    "bench": 55,
+    "ports": "HDMI"
   },
   {
     "id": 90331,
@@ -109401,7 +112625,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 56
+    "value": 56,
+    "bench": 45,
+    "ports": "HDMI"
   },
   {
     "id": 90332,
@@ -109428,7 +112654,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 20
+    "value": 20,
+    "bench": 55,
+    "ports": "HDMI"
   },
   {
     "id": 90333,
@@ -109455,7 +112683,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "3000:1",
-    "value": 51
+    "value": 51,
+    "bench": 36,
+    "ports": "HDMI"
   },
   {
     "id": 90334,
@@ -109482,7 +112712,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1500:1",
-    "value": 11
+    "value": 11,
+    "bench": 56,
+    "ports": "HDMI"
   },
   {
     "id": 90336,
@@ -109509,7 +112741,9 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "3000:1",
-    "value": 100
+    "value": 100,
+    "bench": 45,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90337,
@@ -109536,7 +112770,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 18
+    "value": 18,
+    "bench": 61,
+    "hdr": "HDR10",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90338,
@@ -109563,7 +112800,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "2000:1",
-    "value": 0
+    "value": 0,
+    "bench": 42,
+    "hdr": "HDR600",
+    "ports": "HDMI, DisplayPort, Thunderbolt"
   },
   {
     "id": 90339,
@@ -109589,7 +112829,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1200:1",
-    "value": 3
+    "value": 3,
+    "bench": 33,
+    "ports": "HDMI"
   },
   {
     "id": 90340,
@@ -109616,7 +112858,10 @@ export const PARTS = [
     "response": 6,
     "curved": false,
     "contrast": "800:1",
-    "value": 13
+    "value": 13,
+    "bench": 39,
+    "sync": "Adaptive Sync",
+    "ports": "HDMI"
   },
   {
     "id": 90341,
@@ -109643,7 +112888,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 59
+    "value": 59,
+    "bench": 40,
+    "ports": "HDMI"
   },
   {
     "id": 90342,
@@ -109670,7 +112917,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 54
+    "value": 54,
+    "bench": 43,
+    "ports": "HDMI"
   },
   {
     "id": 90343,
@@ -109697,7 +112946,11 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "1500:1",
-    "value": 100
+    "value": 100,
+    "bench": 67,
+    "hdr": "HDR",
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90344,
@@ -109723,7 +112976,10 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1200:1",
-    "value": 10
+    "value": 10,
+    "bench": 80,
+    "sync": "FreeSync",
+    "ports": "HDMI, DisplayPort, Thunderbolt"
   },
   {
     "id": 90345,
@@ -109750,7 +113006,9 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "1500:1",
-    "value": 43
+    "value": 43,
+    "bench": 49,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90346,
@@ -109777,7 +113035,9 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "1500:1",
-    "value": 52
+    "value": 52,
+    "bench": 48,
+    "ports": "HDMI"
   },
   {
     "id": 90347,
@@ -109804,7 +113064,9 @@ export const PARTS = [
     "response": 4,
     "curved": false,
     "contrast": "1300:1",
-    "value": 58
+    "value": 58,
+    "bench": 43,
+    "ports": "HDMI"
   },
   {
     "id": 90348,
@@ -109830,7 +113092,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1000:1",
-    "value": 15
+    "value": 15,
+    "bench": 33,
+    "ports": "HDMI"
   },
   {
     "id": 90349,
@@ -109856,7 +113120,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1200:1",
-    "value": 15
+    "value": 15,
+    "bench": 43,
+    "ports": "HDMI"
   },
   {
     "id": 90350,
@@ -109882,7 +113148,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1200:1",
-    "value": 3
+    "value": 3,
+    "bench": 33,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90351,
@@ -109909,7 +113177,11 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "1300:1",
-    "value": 100
+    "value": 100,
+    "bench": 67,
+    "hdr": "HDR",
+    "sync": "Adaptive Sync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90352,
@@ -109935,7 +113207,10 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1000:1",
-    "value": 27
+    "value": 27,
+    "bench": 41,
+    "sync": "Adaptive Sync",
+    "ports": "HDMI"
   },
   {
     "id": 90353,
@@ -109961,7 +113236,10 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1500:1",
-    "value": 86
+    "value": 86,
+    "bench": 55,
+    "sync": "Adaptive Sync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90354,
@@ -109988,7 +113266,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 18
+    "value": 18,
+    "bench": 35,
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90355,
@@ -110015,7 +113295,10 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "100,000,000:1",
-    "value": 86
+    "value": 86,
+    "bench": 62,
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90356,
@@ -110042,7 +113325,10 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "100,000,000:1",
-    "value": 77
+    "value": 77,
+    "bench": 67,
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90357,
@@ -110069,7 +113355,9 @@ export const PARTS = [
     "response": 0.5,
     "curved": false,
     "contrast": "1200:1",
-    "value": 28
+    "value": 28,
+    "bench": 45,
+    "ports": "USB-C"
   },
   {
     "id": 90358,
@@ -110096,7 +113384,10 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "3000:1",
-    "value": 14
+    "value": 14,
+    "bench": 57,
+    "hdr": "HDR10",
+    "ports": "HDMI"
   },
   {
     "id": 90359,
@@ -110123,7 +113414,10 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "1000:1",
-    "value": 86
+    "value": 86,
+    "bench": 65,
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90360,
@@ -110150,7 +113444,10 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "1000:1",
-    "value": 83
+    "value": 83,
+    "bench": 67,
+    "sync": "FreeSync",
+    "ports": "HDMI"
   },
   {
     "id": 90361,
@@ -110177,7 +113474,9 @@ export const PARTS = [
     "response": 6,
     "curved": false,
     "contrast": "1500:1",
-    "value": 38
+    "value": 38,
+    "bench": 51,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90362,
@@ -110204,7 +113503,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 25
+    "value": 25,
+    "bench": 43,
+    "ports": "HDMI, DisplayPort, USB-C"
   },
   {
     "id": 90363,
@@ -110231,7 +113532,9 @@ export const PARTS = [
     "response": 6,
     "curved": false,
     "contrast": "1300:1",
-    "value": 48
+    "value": 48,
+    "bench": 40,
+    "ports": "HDMI"
   },
   {
     "id": 90364,
@@ -110256,7 +113559,10 @@ export const PARTS = [
     "refresh": 144,
     "curved": false,
     "contrast": "1000:1",
-    "value": 40
+    "value": 40,
+    "bench": 47,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90365,
@@ -110281,7 +113587,10 @@ export const PARTS = [
     "refresh": 144,
     "curved": false,
     "contrast": "1200:1",
-    "value": 20
+    "value": 20,
+    "bench": 47,
+    "sync": "FreeSync",
+    "ports": "1x DisplayPort, 2x HDMI"
   },
   {
     "id": 90366,
@@ -110308,7 +113617,9 @@ export const PARTS = [
     "response": 6,
     "curved": false,
     "contrast": "1500:1",
-    "value": 33
+    "value": 33,
+    "bench": 46,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90367,
@@ -110335,7 +113646,9 @@ export const PARTS = [
     "response": 6,
     "curved": false,
     "contrast": "1300:1",
-    "value": 46
+    "value": 46,
+    "bench": 40,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90368,
@@ -110361,7 +113674,11 @@ export const PARTS = [
     "response": 0.03,
     "curved": false,
     "contrast": "1,500,000:1",
-    "value": 49
+    "value": 49,
+    "bench": 88,
+    "hdr": "HDR500",
+    "sync": "FreeSync",
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90369,
@@ -110388,7 +113705,11 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "1500:1",
-    "value": 86
+    "value": 86,
+    "bench": 65,
+    "hdr": "HDR",
+    "sync": "FreeSync",
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90370,
@@ -110415,7 +113736,11 @@ export const PARTS = [
     "response": 1,
     "curved": false,
     "contrast": "1500:1",
-    "value": 83
+    "value": 83,
+    "bench": 67,
+    "hdr": "HDR",
+    "sync": "FreeSync",
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90371,
@@ -110441,7 +113766,11 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1500:1",
-    "value": 95
+    "value": 95,
+    "bench": 58,
+    "hdr": "HDR",
+    "sync": "Adaptive Sync",
+    "ports": "HDMI"
   },
   {
     "id": 90372,
@@ -110468,7 +113797,9 @@ export const PARTS = [
     "response": 6,
     "curved": false,
     "contrast": "1500:1",
-    "value": 22
+    "value": 22,
+    "bench": 61,
+    "ports": "HDMI, DisplayPort"
   },
   {
     "id": 90373,
@@ -110494,7 +113825,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1300:1",
-    "value": 5
+    "value": 5,
+    "bench": 63,
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90374,
@@ -110520,7 +113853,9 @@ export const PARTS = [
     "panel": "IPS",
     "curved": false,
     "contrast": "1200:1",
-    "value": 5
+    "value": 5,
+    "bench": 63,
+    "ports": "HDMI, USB-C"
   },
   {
     "id": 90375,
@@ -110546,7 +113881,9 @@ export const PARTS = [
     "panel": "VA",
     "curved": true,
     "contrast": "3000:1",
-    "value": 10
+    "value": 10,
+    "bench": 62,
+    "ports": "HDMI, DisplayPort, USB-C"
   },
   {
     "id": 90376,
@@ -110572,7 +113909,9 @@ export const PARTS = [
     "panel": "VA",
     "curved": true,
     "contrast": "3000:1",
-    "value": 35
+    "value": 35,
+    "bench": 46,
+    "ports": "HDMI"
   },
   {
     "id": 90377,
@@ -110599,7 +113938,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "1000:1",
-    "value": 14
+    "value": 14,
+    "bench": 29,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90378,
@@ -110626,7 +113967,9 @@ export const PARTS = [
     "response": 5,
     "curved": false,
     "contrast": "8000:1",
-    "value": 23
+    "value": 23,
+    "bench": 35,
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 95000,
