@@ -1,0 +1,112 @@
+name: Catalog Verification
+
+on:
+  schedule:
+    # Tier 1 — every 2 days at 08:00 UTC (CPU/GPU/Mobo/RAM/Storage/PSU/Case)
+    - cron: '0 8 */2 * *'
+    # Tier 2 — every 3 days at 09:00 UTC (CPUCooler/CaseFan/Monitor)
+    - cron: '0 9 */3 * *'
+    # Tier 3 — Mondays at 10:00 UTC (peripherals)
+    - cron: '0 10 * * 1'
+    # Tier 4 — Mondays at 11:00 UTC (accessories)
+    - cron: '0 11 * * 1'
+  # Manual trigger for ad-hoc runs
+  workflow_dispatch:
+    inputs:
+      tier:
+        description: 'Tier to verify (1, 2, 3, or 4)'
+        required: true
+        default: '1'
+        type: choice
+        options:
+          - '1'
+          - '2'
+          - '3'
+          - '4'
+      fix_asins:
+        description: 'Also repair wrong ASINs (--fix-asins)'
+        required: false
+        default: true
+        type: boolean
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Determine tier from cron schedule
+        id: tier
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "tier=${{ github.event.inputs.tier }}" >> $GITHUB_OUTPUT
+            echo "fix_asins=${{ github.event.inputs.fix_asins }}" >> $GITHUB_OUTPUT
+          else
+            # Map cron schedule to tier number
+            case "${{ github.event.schedule }}" in
+              "0 8 */2 * *") echo "tier=1" >> $GITHUB_OUTPUT ;;
+              "0 9 */3 * *") echo "tier=2" >> $GITHUB_OUTPUT ;;
+              "0 10 * * 1")  echo "tier=3" >> $GITHUB_OUTPUT ;;
+              "0 11 * * 1")  echo "tier=4" >> $GITHUB_OUTPUT ;;
+              *)             echo "tier=1" >> $GITHUB_OUTPUT ;;
+            esac
+            echo "fix_asins=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run catalog verifier
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+        run: |
+          ARGS="--tier ${{ steps.tier.outputs.tier }} --auto-fix"
+          if [ "${{ steps.tier.outputs.fix_asins }}" = "true" ]; then
+            ARGS="$ARGS --fix-asins"
+          fi
+          echo "Running: node verify-catalog-asins.js $ARGS"
+          node verify-catalog-asins.js $ARGS
+
+      - name: Check for catalog changes
+        id: changes
+        run: |
+          if git diff --quiet src/data/parts.js; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes to parts.js"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Catalog changes detected"
+            git diff --stat src/data/parts.js
+          fi
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/parts.js
+          git commit -m "chore(catalog): tier ${{ steps.tier.outputs.tier }} auto-verification
+
+          Automated price/stock/ASIN updates via DataForSEO.
+          Triggered by: ${{ github.event_name }}"
+          git push
+
+      - name: Job summary
+        if: always()
+        run: |
+          echo "## Catalog Verification Results" >> $GITHUB_STEP_SUMMARY
+          echo "- **Tier**: ${{ steps.tier.outputs.tier }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Changes committed**: ${{ steps.changes.outputs.changed }}" >> $GITHUB_STEP_SUMMARY
