@@ -1916,10 +1916,10 @@ function BestPcBuilderToolsPage({go}) {
 }
 
 function HomePage({go,browse,th}){
-  const deals=P.filter(p=>p.cp).sort((a,b)=>(b.off||0)-(a.off||0)).slice(0,6);
+  const deals=P.filter(p=>isDeal(p)).sort((a,b)=>dealSavings(b)-dealSavings(a)).slice(0,6);
   const top=P.filter(p=>p.bench>=85).sort((a,b)=>(b.bench||0)-(a.bench||0)).slice(0,6);
   const totalParts=P.length;
-  const totalDeals=P.filter(p=>p.cp).length;
+  const totalDeals=P.filter(p=>isDeal(p)).length;
 
   // Split categories into groups for visual variety
   const coreCats=["Case","CPU","CPUCooler","Motherboard","RAM","GPU","Storage","PSU"];
@@ -2101,10 +2101,15 @@ function HomePage({go,browse,th}){
               <div style={{width:36,height:36,borderRadius:8,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0,overflow:"hidden"}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt="" style={{width:"100%",height:"100%",objectFit:"contain"}}/>:ic(p)}</div>
               <div style={{flex:1,minWidth:0}}>
                 <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
-                <Stars r={p.r} s={9}/>
+                <div style={{display:"flex",alignItems:"center",gap:6,marginTop:2,flexWrap:"wrap"}}>
+                  <Stars r={p.r} s={9}/>
+                  {isDeal(p)&&<>
+                    <span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL</span>
+                    <span style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--amber)",fontWeight:700}}>Save ${dealSavings(p)}</span>
+                  </>}
+                </div>
               </div>
-              <div style={{textAlign:"right",flexShrink:0,minWidth:80,display:"flex",flexDirection:"column",alignItems:"flex-end",gap:2}}>
-                {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL</span>}
+              <div style={{textAlign:"right",flexShrink:0,minWidth:80}}>
                 <div style={{fontFamily:"var(--mono)",fontSize:18,fontWeight:700,color:"var(--accent)"}}>${fmtPrice($(p))}</div>
                 {isDeal(p)&&<div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(msrp(p))}</div>}
               </div>
