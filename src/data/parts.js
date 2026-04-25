@@ -110646,7 +110646,7 @@ export const PARTS = [
       "amazon": {
         "price": 180,
         "url": "https://www.amazon.com/dp/B09NCMHTSB?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6558790&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6558790.p%3FskuId%3D6558790", "price": 79.99, "inStock": true}
       }
     },
     "value": 37
@@ -110669,7 +110669,7 @@ export const PARTS = [
       "amazon": {
         "price": 159,
         "url": "https://www.amazon.com/dp/B0DGZLHN8G?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6558753&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6558753.p%3FskuId%3D6558753", "price": 139.99, "inStock": true}
       }
     },
     "value": 50
@@ -110692,7 +110692,7 @@ export const PARTS = [
       "amazon": {
         "price": 290,
         "url": "https://www.amazon.com/dp/B0DD5S8TM8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611694&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6611694.p%3FskuId%3D6611694", "price": 119.99, "inStock": true}
       }
     },
     "value": 0
@@ -110715,7 +110715,7 @@ export const PARTS = [
       "amazon": {
         "price": 229,
         "url": "https://www.amazon.com/dp/B07QQB9VCV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595191&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595191.p%3FskuId%3D6595191", "price": 169.99, "inStock": true}
       }
     },
     "value": 16
@@ -110807,7 +110807,7 @@ export const PARTS = [
       "amazon": {
         "price": 174,
         "url": "https://www.amazon.com/dp/B0DGZLHN8G?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6519672&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6519672.p%3FskuId%3D6519672", "price": 119.99, "inStock": true}
       }
     },
     "value": 40
@@ -110944,7 +110944,7 @@ export const PARTS = [
       "amazon": {
         "price": 100,
         "url": "https://www.amazon.com/dp/B0B6XZLNHQ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6531757&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6531757.p%3FskuId%3D6531757", "price": 46.99, "inStock": true}
       }
     },
     "value": 29
@@ -110990,7 +110990,7 @@ export const PARTS = [
       "amazon": {
         "price": 159,
         "url": "https://www.amazon.com/dp/B0CW25XR5R?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6265133&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6265133.p%3FskuId%3D6265133", "price": 32.99, "inStock": true}
       }
     },
     "value": 0
@@ -111013,7 +111013,7 @@ export const PARTS = [
       "amazon": {
         "price": 129,
         "url": "https://www.amazon.com/dp/B0G4LH7KMM?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6558792&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6558792.p%3FskuId%3D6558792", "price": 19.99, "inStock": false}
       }
     },
     "value": 12
@@ -111036,7 +111036,7 @@ export const PARTS = [
       "amazon": {
         "price": 139,
         "url": "https://www.amazon.com/dp/B0F6BDV5Q8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6501454&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6501454.p%3FskuId%3D6501454", "price": 87.99, "inStock": true}
       }
     },
     "value": 7
@@ -111082,7 +111082,7 @@ export const PARTS = [
       "amazon": {
         "price": 159,
         "url": "https://www.amazon.com/dp/B0DG837JYP?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6475703&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6475703.p%3FskuId%3D6475703", "price": 36.99, "inStock": true}
       }
     },
     "value": 0
@@ -111126,7 +111126,7 @@ export const PARTS = [
       "amazon": {
         "price": 160,
         "url": "https://www.amazon.com/dp/B0GMLBSSTD?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6558751&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6558751.p%3FskuId%3D6558751", "price": 59.99, "inStock": true}
       }
     },
     "value": 3
@@ -111238,7 +111238,7 @@ export const PARTS = [
       "amazon": {
         "price": 150,
         "url": "https://www.amazon.com/dp/B0F6NZWPTC?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6542540&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6542540.p%3FskuId%3D6542540", "price": 57.99, "inStock": true}
       }
     },
     "value": 64
@@ -111260,7 +111260,7 @@ export const PARTS = [
       "amazon": {
         "price": 120,
         "url": "https://www.amazon.com/dp/B0FDP42BTF?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6417114&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6417114.p%3FskuId%3D6417114", "price": 34.99, "inStock": true}
       }
     },
     "value": 100
@@ -111282,7 +111282,7 @@ export const PARTS = [
       "amazon": {
         "price": 269,
         "url": "https://www.amazon.com/dp/B0D2HKCMBP?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6458875&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6458875.p%3FskuId%3D6458875", "price": 274.99, "inStock": true}
       }
     },
     "value": 0
@@ -111304,7 +111304,7 @@ export const PARTS = [
       "amazon": {
         "price": 180,
         "url": "https://www.amazon.com/dp/B0FRP537FV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6515789&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6515789.p%3FskuId%3D6515789", "price": 36.49, "inStock": true}
       }
     },
     "value": 40
@@ -111326,7 +111326,7 @@ export const PARTS = [
       "amazon": {
         "price": 200,
         "url": "https://www.amazon.com/dp/B0DQB2YPMH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586271&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586271.p%3FskuId%3D6586271", "price": 69.99, "inStock": true}
       }
     },
     "value": 28
@@ -111348,7 +111348,7 @@ export const PARTS = [
       "amazon": {
         "price": 199,
         "url": "https://www.amazon.com/dp/B0B8PGDMWK?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6499569&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6499569.p%3FskuId%3D6499569", "price": 119.99, "inStock": true}
       }
     },
     "value": 28
@@ -111481,7 +111481,7 @@ export const PARTS = [
       "amazon": {
         "price": 125,
         "url": "https://www.amazon.com/dp/B088HHWC47?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6667525&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6667525.p%3FskuId%3D6667525", "price": 69.99, "inStock": true}
       }
     }
   },
@@ -111503,7 +111503,7 @@ export const PARTS = [
       "amazon": {
         "price": 119,
         "url": "https://www.amazon.com/dp/B0BMFQP2ZZ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6434274&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6434274.p%3FskuId%3D6434274", "price": 159.99, "inStock": false}
       }
     }
   },
@@ -111566,7 +111566,7 @@ export const PARTS = [
       "amazon": {
         "price": 249,
         "url": "https://www.amazon.com/dp/B0CJHZ92P6?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578877&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578877.p%3FskuId%3D6578877", "price": 132.99, "inStock": true}
       }
     }
   },
@@ -111672,7 +111672,7 @@ export const PARTS = [
       "amazon": {
         "price": 24,
         "url": "https://www.amazon.com/dp/B08QSNNV5H?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6453152&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6453152.p%3FskuId%3D6453152", "price": 49.99, "inStock": true}
       }
     }
   },
@@ -112602,7 +112602,7 @@ export const PARTS = [
     "pr": 30,
     "msrp": 30,
     "r": 4.6,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-LIGHTSPEED-Wireless-Gaming-Mouse/dp/B07CMS5Q6N/ref=sr_1_15?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.qzSxRfgEb8GXM0VPkAEOEViyDp_oN__bDzhVWqVvrzRDyJTwxJeKkk6B6DPdl0cBxwXMvJOzGF9p5GdCSSPQLOx5AE_u8yZGPVnCrmKMDQXjVtyyal_wiMH0hURuFGkOek52LJY9wL-t59j2GXGTRaJQdScgJ-VlXflBEo5Ry8EBAhUpA2mMYw3ovQLXcscFNhazFnRD11zgv06IXjmL3AJquALR_RzbLpR0sISjjIw.utxJFYZ5KmvGiGBG-ZSNePYh57DW5nxvzHjomQLUKMA&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130427&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-15&tag=tiereduptech-20", "price":29.99, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-LIGHTSPEED-Wireless-Gaming-Mouse/dp/B07CMS5Q6N/ref=sr_1_15?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.qzSxRfgEb8GXM0VPkAEOEViyDp_oN__bDzhVWqVvrzRDyJTwxJeKkk6B6DPdl0cBxwXMvJOzGF9p5GdCSSPQLOx5AE_u8yZGPVnCrmKMDQXjVtyyal_wiMH0hURuFGkOek52LJY9wL-t59j2GXGTRaJQdScgJ-VlXflBEo5Ry8EBAhUpA2mMYw3ovQLXcscFNhazFnRD11zgv06IXjmL3AJquALR_RzbLpR0sISjjIw.utxJFYZ5KmvGiGBG-ZSNePYh57DW5nxvzHjomQLUKMA&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130427&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-15&tag=tiereduptech-20", "price":29.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6214343&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6214343.p%3FskuId%3D6214343", "price": 26.99, "inStock": true}}
   },
   {
     "id": 99974,
@@ -112624,7 +112624,7 @@ export const PARTS = [
     "pr": 24,
     "msrp": 24,
     "r": 4.6,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-LIGHTSYNC-Wired-Gaming-Mouse/dp/B07YN82X3B/ref=sr_1_39?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.6_hymEZnb5rt33n4BuhbtzFEtKF51viWFQoBog3Bti7XGuBjgUhWmMq20pQYeo4M5bwG_8sqJEW8ioR0ozbSJs8sY36jTN9NsA0YDdpJ1Di9MuIfRV3U0v04uqq6L90h-Am5UTOUAAGY_gB9uNlju6At6MUS43G_IYsT6xn90245e0sgFhFIp_0HmR9XrCq42ApzibxGXagGa5WPe_xk1bVsN6yXjFcAfuvj9K6SvzM.L-6M5Lp4f2JIUkH31LkVgotTSQPQ6RGP_DuX7W0UZQg&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130430&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-39&xpid=8t0njMCORdC1w&tag=tiereduptech-20", "price":24.02, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-LIGHTSYNC-Wired-Gaming-Mouse/dp/B07YN82X3B/ref=sr_1_39?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.6_hymEZnb5rt33n4BuhbtzFEtKF51viWFQoBog3Bti7XGuBjgUhWmMq20pQYeo4M5bwG_8sqJEW8ioR0ozbSJs8sY36jTN9NsA0YDdpJ1Di9MuIfRV3U0v04uqq6L90h-Am5UTOUAAGY_gB9uNlju6At6MUS43G_IYsT6xn90245e0sgFhFIp_0HmR9XrCq42ApzibxGXagGa5WPe_xk1bVsN6yXjFcAfuvj9K6SvzM.L-6M5Lp4f2JIUkH31LkVgotTSQPQ6RGP_DuX7W0UZQg&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130430&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-39&xpid=8t0njMCORdC1w&tag=tiereduptech-20", "price":24.02, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6420867&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6420867.p%3FskuId%3D6420867", "price": 21.99, "inStock": true}}
   },
   {
     "id": 99976,
@@ -112668,7 +112668,7 @@ export const PARTS = [
     "pr": 21,
     "msrp": 21,
     "r": 4.5,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Razer-DeathAdder-Essential-Gaming-Mouse/dp/B094Q1GJSD/ref=sr_1_13?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.qzSxRfgEb8GXM0VPkAEOEViyDp_oN__bDzhVWqVvrzRDyJTwxJeKkk6B6DPdl0cBxwXMvJOzGF9p5GdCSSPQLOx5AE_u8yZGPVnCrmKMDQXjVtyyal_wiMH0hURuFGkOek52LJY9wL-t59j2GXGTRaJQdScgJ-VlXflBEo5Ry8EBAhUpA2mMYw3ovQLXcscFNhazFnRD11zgv06IXjmL3AJquALR_RzbLpR0sISjjIw.utxJFYZ5KmvGiGBG-ZSNePYh57DW5nxvzHjomQLUKMA&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130427&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-13&tag=tiereduptech-20", "price":20.98, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Razer-DeathAdder-Essential-Gaming-Mouse/dp/B094Q1GJSD/ref=sr_1_13?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.qzSxRfgEb8GXM0VPkAEOEViyDp_oN__bDzhVWqVvrzRDyJTwxJeKkk6B6DPdl0cBxwXMvJOzGF9p5GdCSSPQLOx5AE_u8yZGPVnCrmKMDQXjVtyyal_wiMH0hURuFGkOek52LJY9wL-t59j2GXGTRaJQdScgJ-VlXflBEo5Ry8EBAhUpA2mMYw3ovQLXcscFNhazFnRD11zgv06IXjmL3AJquALR_RzbLpR0sISjjIw.utxJFYZ5KmvGiGBG-ZSNePYh57DW5nxvzHjomQLUKMA&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130427&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-13&tag=tiereduptech-20", "price":20.98, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6476689&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6476689.p%3FskuId%3D6476689", "price": 24.99, "inStock": true}}
   },
   {
     "id": 99980,
@@ -112767,7 +112767,7 @@ export const PARTS = [
     "pr": 60,
     "msrp": 60,
     "r": 4.5,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Lightspeed-Lightsync-Compatible-Lightweight/dp/B07NSSPV9S/ref=sr_1_11?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.UmsocjleeheWsQ4hrxqG662ywKjHvwfHFEECvF3lyCOuSeDbXR9V0azQarIlD49N47gCs5u2fIABUcvifBz6rutHUxdeBGeQAbq8YAvMzSa6LIR6_zGzt66DhMdVM0LzolQtU0kVC6W9WVl3odv07emU6pTSUdCaOZh5tJ6rv-5YkBklk1U_HjySywxttToCMtcFSA1Va43VRKAEXrMiMvYzCzozApPenzcOOiosgf8.rowg1Xka1E1u3lgVfJ-gRxQeCAqQdnw5fgi4B58kFNw&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130428&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-11&tag=tiereduptech-20", "price":59.99, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Lightspeed-Lightsync-Compatible-Lightweight/dp/B07NSSPV9S/ref=sr_1_11?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.UmsocjleeheWsQ4hrxqG662ywKjHvwfHFEECvF3lyCOuSeDbXR9V0azQarIlD49N47gCs5u2fIABUcvifBz6rutHUxdeBGeQAbq8YAvMzSa6LIR6_zGzt66DhMdVM0LzolQtU0kVC6W9WVl3odv07emU6pTSUdCaOZh5tJ6rv-5YkBklk1U_HjySywxttToCMtcFSA1Va43VRKAEXrMiMvYzCzozApPenzcOOiosgf8.rowg1Xka1E1u3lgVfJ-gRxQeCAqQdnw5fgi4B58kFNw&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130428&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-11&tag=tiereduptech-20", "price":59.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6333840&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6333840.p%3FskuId%3D6333840", "price": 59.99, "inStock": true}}
   },
   {
     "id": 99989,
@@ -112833,7 +112833,7 @@ export const PARTS = [
     "pr": 35,
     "msrp": 35,
     "r": 4.4,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Orochi-Mobile-Wireless-Gaming/dp/B0916N2LPZ/ref=sr_1_21?crid=IV29V2MB51EP&dib=eyJ2IjoiMSJ9.C8nOIcZFACVH26Sr4pdsY5LnNovz1_PHMC9qMvK1Bqb_uxdeHTDK2UC1v3DNcuqEspFw1byZz-wYM61vEzRXZUibvDn5qND0SDKO7Wd5W1OcqUt_6DEbd-zrl106mpt9MBMg77-SoGwm9gNKmobx2EUFK9aNoxukxWeBhRhDg8QP95VuwWB5BRHBBNIbz1Ar4T6dCe2UZMO8RYlOfE62C9uvvUCxufpk899QejgKsMQ.2TgkbcjSGKKPl3aKq4d8MM9SOh8yslsSWxAJTnAveA8&dib_tag=se&keywords=lightweight+gaming+mouse&qid=1777130429&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=lightweight%2Bgaming%2Bmouse%2Caps%2C177&sr=8-21&xpid=mwUOBLs-tm-BS&tag=tiereduptech-20", "price":34.99, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Orochi-Mobile-Wireless-Gaming/dp/B0916N2LPZ/ref=sr_1_21?crid=IV29V2MB51EP&dib=eyJ2IjoiMSJ9.C8nOIcZFACVH26Sr4pdsY5LnNovz1_PHMC9qMvK1Bqb_uxdeHTDK2UC1v3DNcuqEspFw1byZz-wYM61vEzRXZUibvDn5qND0SDKO7Wd5W1OcqUt_6DEbd-zrl106mpt9MBMg77-SoGwm9gNKmobx2EUFK9aNoxukxWeBhRhDg8QP95VuwWB5BRHBBNIbz1Ar4T6dCe2UZMO8RYlOfE62C9uvvUCxufpk899QejgKsMQ.2TgkbcjSGKKPl3aKq4d8MM9SOh8yslsSWxAJTnAveA8&dib_tag=se&keywords=lightweight+gaming+mouse&qid=1777130429&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=lightweight%2Bgaming%2Bmouse%2Caps%2C177&sr=8-21&xpid=mwUOBLs-tm-BS&tag=tiereduptech-20", "price":34.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6460407&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6460407.p%3FskuId%3D6460407", "price": 34.99, "inStock": false}}
   },
   {
     "id": 99995,
@@ -112976,7 +112976,7 @@ export const PARTS = [
     "pr": 32,
     "msrp": 32,
     "r": 4.5,
-    "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-Apex-Gaming-Keyboard-Anti-Ghosting/dp/B09FTNMT84/ref=sr_1_1?crid=OPT91HLYF34O&dib=eyJ2IjoiMSJ9.1PNtdznOJW6bwyOq65lPJlvrchECPTbSsv6I-W8wv88EWHmlDetmNdackOc7GNjICDZMWkv41KvsxBmYhteTXuDDmQNuPHzJP43Jhe3I3fqMo6WTpU_AQhj6cIkFtvHTxLaiu4KP3z-VVuGEU1DnDp3DkGkP9uZ3qIZ__jM44SoeR2E4xWKKpy6Hrnj6Uqhq6We_3oUAXxSMmEw-XIKhLe2byh-hExxl0qEHV9OCpOc.KQGxx5voJ2YZLEhgSPIphxpzgX1G93MEWfMtxMU0ook&dib_tag=se&keywords=TKL+gaming+keyboard&qid=1777130537&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=TKL%2Bgaming%2Bkeyboard%2Caps%2C114&sr=8-1&tag=tiereduptech-20", "price":31.99, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-Apex-Gaming-Keyboard-Anti-Ghosting/dp/B09FTNMT84/ref=sr_1_1?crid=OPT91HLYF34O&dib=eyJ2IjoiMSJ9.1PNtdznOJW6bwyOq65lPJlvrchECPTbSsv6I-W8wv88EWHmlDetmNdackOc7GNjICDZMWkv41KvsxBmYhteTXuDDmQNuPHzJP43Jhe3I3fqMo6WTpU_AQhj6cIkFtvHTxLaiu4KP3z-VVuGEU1DnDp3DkGkP9uZ3qIZ__jM44SoeR2E4xWKKpy6Hrnj6Uqhq6We_3oUAXxSMmEw-XIKhLe2byh-hExxl0qEHV9OCpOc.KQGxx5voJ2YZLEhgSPIphxpzgX1G93MEWfMtxMU0ook&dib_tag=se&keywords=TKL+gaming+keyboard&qid=1777130537&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=TKL%2Bgaming%2Bkeyboard%2Caps%2C114&sr=8-1&tag=tiereduptech-20", "price":31.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6396205&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6396205.p%3FskuId%3D6396205", "price": 49.99, "inStock": true}}
   },
   {
     "id": 100008,
@@ -113086,7 +113086,7 @@ export const PARTS = [
     "pr": 80,
     "msrp": 80,
     "r": 4.5,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Full-Size-Mechanical-Anti-Ghosting-Keys-White/dp/B08Z6X4NK3/ref=sr_1_33?crid=NWATW8520JZY&dib=eyJ2IjoiMSJ9.Z4E9CupUwJYFSbQ7zH3ab0A0okhAI_nkR9cE9cvthVXjyHfQdNG2jzrbzLdps46j3K030ciBtBYvdtoWiKS0vDRQbpYRnoMhKGju7W5jPHLoJSZSLsK7vxX0IGSNuX_c19OFdLPZB9IG7GX-7vJu82pQJUuzhgOv1PN10tuJn1Bsp0M_DuOqYwn7hkeKnxR8GAUugtyczQTZCZTN8KAxzQyDtLDMsN8tTwpWk1dXrxY.3uo0c2DRIVyRdgfFCAKBpMyKkoiIMEG4j_oUcRBAo9A&dib_tag=se&keywords=Razer+BlackWidow&qid=1777130538&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BBlackWidow%2Caps%2C198&sr=8-33&xpid=4GrddsFPi_Po6&tag=tiereduptech-20", "price":79.99, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Full-Size-Mechanical-Anti-Ghosting-Keys-White/dp/B08Z6X4NK3/ref=sr_1_33?crid=NWATW8520JZY&dib=eyJ2IjoiMSJ9.Z4E9CupUwJYFSbQ7zH3ab0A0okhAI_nkR9cE9cvthVXjyHfQdNG2jzrbzLdps46j3K030ciBtBYvdtoWiKS0vDRQbpYRnoMhKGju7W5jPHLoJSZSLsK7vxX0IGSNuX_c19OFdLPZB9IG7GX-7vJu82pQJUuzhgOv1PN10tuJn1Bsp0M_DuOqYwn7hkeKnxR8GAUugtyczQTZCZTN8KAxzQyDtLDMsN8tTwpWk1dXrxY.3uo0c2DRIVyRdgfFCAKBpMyKkoiIMEG4j_oUcRBAo9A&dib_tag=se&keywords=Razer+BlackWidow&qid=1777130538&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BBlackWidow%2Caps%2C198&sr=8-33&xpid=4GrddsFPi_Po6&tag=tiereduptech-20", "price":79.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6493152&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6493152.p%3FskuId%3D6493152", "price": 69.99, "inStock": false}}
   },
   {
     "id": 100018,
@@ -113251,7 +113251,7 @@ export const PARTS = [
     "pr": 70,
     "msrp": 70,
     "r": 4.4,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Turtle-Stealth-Wireless-Amplified-Headset-Nintendo/dp/B0CYWJJLBY/ref=sr_1_4?crid=MRVPSPTMXZV3&dib=eyJ2IjoiMSJ9.TGUcBFudkT26JpacVPP_qkh5IVdVYiy_Un7lqOx9ARf5ig5CPmtbtiGU-56-2992NPuNC0lDV9lezPZxKomcgHI3t1jGsZCc7jzw3fBa4nlu3TKRoqDjL28bU-70FhukaFDWlXga7v95I_BIIzF2h6IUu9Ssca7C7p0FgBG5LZ5_v9Enjz46FuHhAHLYpWnj3DWfJd8fCKhWLxclkEA_wFV22CFbgJx4XLRtSuHTWsU.ozAVXeiJ7pf-DjIrsg255D0lvCOFz9IzljDQfstezgg&dib_tag=se&keywords=wireless+gaming+headset&qid=1777130635&sprefix=wireless%2Bgaming%2Bheadset%2Caps%2C130&sr=8-4&tag=tiereduptech-20", "price":69.86, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Turtle-Stealth-Wireless-Amplified-Headset-Nintendo/dp/B0CYWJJLBY/ref=sr_1_4?crid=MRVPSPTMXZV3&dib=eyJ2IjoiMSJ9.TGUcBFudkT26JpacVPP_qkh5IVdVYiy_Un7lqOx9ARf5ig5CPmtbtiGU-56-2992NPuNC0lDV9lezPZxKomcgHI3t1jGsZCc7jzw3fBa4nlu3TKRoqDjL28bU-70FhukaFDWlXga7v95I_BIIzF2h6IUu9Ssca7C7p0FgBG5LZ5_v9Enjz46FuHhAHLYpWnj3DWfJd8fCKhWLxclkEA_wFV22CFbgJx4XLRtSuHTWsU.ozAVXeiJ7pf-DjIrsg255D0lvCOFz9IzljDQfstezgg&dib_tag=se&keywords=wireless+gaming+headset&qid=1777130635&sprefix=wireless%2Bgaming%2Bheadset%2Caps%2C130&sr=8-4&tag=tiereduptech-20", "price":69.86, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577935&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577935.p%3FskuId%3D6577935", "price": 69.99, "inStock": true}}
   },
   {
     "id": 100033,
@@ -113284,7 +113284,7 @@ export const PARTS = [
     "pr": 60,
     "msrp": 60,
     "r": 4.5,
-    "deals": {"amazon":{"url":"https://www.amazon.com/HyperX-Cloud-Gaming-Headset-KHX-HSCP-RD/dp/B00SAYCXWG/ref=sr_1_39?crid=GS25T10JQ3MC&dib=eyJ2IjoiMSJ9.lj-mOBnkc0mqMiZvd7MH2AdFIgtxslP0Ii9WJjZpr6ToFiRVu5i58h6i1VlLRAdrVTaYNBAFiRvGd3_QQIDIsDbUD0Ktl4jkiaCUYreNN1MTnmU2cJWJZKXdOyZPGs--2fkQDCkbrPWH4NFfR5sWpvVa7BF3n1gAFwJSbnfLAL91msRl788gfAVTqIRkBe5nSeL3P4Xr_FuB7qbuyZn7ZwZsXfpvE-FfVgvQkazHh_o._HwlrRPCoVH43P_tWHUrGFsvlrjeIv1OPMRFRmOKflc&dib_tag=se&keywords=SteelSeries+Arctis+Nova&qid=1777130636&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BArctis%2BNova%2Caps%2C159&sr=8-39&xpid=dGYW4tMVhPqrI&tag=tiereduptech-20", "price":59.99, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/HyperX-Cloud-Gaming-Headset-KHX-HSCP-RD/dp/B00SAYCXWG/ref=sr_1_39?crid=GS25T10JQ3MC&dib=eyJ2IjoiMSJ9.lj-mOBnkc0mqMiZvd7MH2AdFIgtxslP0Ii9WJjZpr6ToFiRVu5i58h6i1VlLRAdrVTaYNBAFiRvGd3_QQIDIsDbUD0Ktl4jkiaCUYreNN1MTnmU2cJWJZKXdOyZPGs--2fkQDCkbrPWH4NFfR5sWpvVa7BF3n1gAFwJSbnfLAL91msRl788gfAVTqIRkBe5nSeL3P4Xr_FuB7qbuyZn7ZwZsXfpvE-FfVgvQkazHh_o._HwlrRPCoVH43P_tWHUrGFsvlrjeIv1OPMRFRmOKflc&dib_tag=se&keywords=SteelSeries+Arctis+Nova&qid=1777130636&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BArctis%2BNova%2Caps%2C159&sr=8-39&xpid=dGYW4tMVhPqrI&tag=tiereduptech-20", "price":59.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581664&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6581664.p%3FskuId%3D6581664", "price": 119.99, "inStock": true}}
   },
   {
     "id": 100036,
@@ -113350,7 +113350,7 @@ export const PARTS = [
     "pr": 119,
     "msrp": 119,
     "r": 4.4,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Wireless-Headset-Black-Tico/dp/B081415GCS/ref=sr_1_38?crid=GS25T10JQ3MC&dib=eyJ2IjoiMSJ9.lj-mOBnkc0mqMiZvd7MH2AdFIgtxslP0Ii9WJjZpr6ToFiRVu5i58h6i1VlLRAdrVTaYNBAFiRvGd3_QQIDIsDbUD0Ktl4jkiaCUYreNN1MTnmU2cJWJZKXdOyZPGs--2fkQDCkbrPWH4NFfR5sWpvVa7BF3n1gAFwJSbnfLAL91msRl788gfAVTqIRkBe5nSeL3P4Xr_FuB7qbuyZn7ZwZsXfpvE-FfVgvQkazHh_o._HwlrRPCoVH43P_tWHUrGFsvlrjeIv1OPMRFRmOKflc&dib_tag=se&keywords=SteelSeries+Arctis+Nova&qid=1777130636&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BArctis%2BNova%2Caps%2C159&sr=8-38&xpid=dGYW4tMVhPqrI&tag=tiereduptech-20", "price":118.99, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Wireless-Headset-Black-Tico/dp/B081415GCS/ref=sr_1_38?crid=GS25T10JQ3MC&dib=eyJ2IjoiMSJ9.lj-mOBnkc0mqMiZvd7MH2AdFIgtxslP0Ii9WJjZpr6ToFiRVu5i58h6i1VlLRAdrVTaYNBAFiRvGd3_QQIDIsDbUD0Ktl4jkiaCUYreNN1MTnmU2cJWJZKXdOyZPGs--2fkQDCkbrPWH4NFfR5sWpvVa7BF3n1gAFwJSbnfLAL91msRl788gfAVTqIRkBe5nSeL3P4Xr_FuB7qbuyZn7ZwZsXfpvE-FfVgvQkazHh_o._HwlrRPCoVH43P_tWHUrGFsvlrjeIv1OPMRFRmOKflc&dib_tag=se&keywords=SteelSeries+Arctis+Nova&qid=1777130636&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BArctis%2BNova%2Caps%2C159&sr=8-38&xpid=dGYW4tMVhPqrI&tag=tiereduptech-20", "price":118.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6420856&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6420856.p%3FskuId%3D6420856", "price": 119.99, "inStock": true}}
   },
   {
     "id": 100042,
@@ -113416,7 +113416,7 @@ export const PARTS = [
     "pr": 40,
     "msrp": 40,
     "r": 4.4,
-    "deals": {"amazon":{"url":"https://www.amazon.com/HyperX-Cloud-Stinger-Core-Noise-Cancelling/dp/B08BTHXJFN/ref=sr_1_13?crid=MRVPSPTMXZV3&dib=eyJ2IjoiMSJ9.TGUcBFudkT26JpacVPP_qkh5IVdVYiy_Un7lqOx9ARf5ig5CPmtbtiGU-56-2992NPuNC0lDV9lezPZxKomcgHI3t1jGsZCc7jzw3fBa4nlu3TKRoqDjL28bU-70FhukaFDWlXga7v95I_BIIzF2h6IUu9Ssca7C7p0FgBG5LZ5_v9Enjz46FuHhAHLYpWnj3DWfJd8fCKhWLxclkEA_wFV22CFbgJx4XLRtSuHTWsU.ozAVXeiJ7pf-DjIrsg255D0lvCOFz9IzljDQfstezgg&dib_tag=se&keywords=wireless+gaming+headset&qid=1777130635&sprefix=wireless%2Bgaming%2Bheadset%2Caps%2C130&sr=8-13&tag=tiereduptech-20", "price":39.99, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/HyperX-Cloud-Stinger-Core-Noise-Cancelling/dp/B08BTHXJFN/ref=sr_1_13?crid=MRVPSPTMXZV3&dib=eyJ2IjoiMSJ9.TGUcBFudkT26JpacVPP_qkh5IVdVYiy_Un7lqOx9ARf5ig5CPmtbtiGU-56-2992NPuNC0lDV9lezPZxKomcgHI3t1jGsZCc7jzw3fBa4nlu3TKRoqDjL28bU-70FhukaFDWlXga7v95I_BIIzF2h6IUu9Ssca7C7p0FgBG5LZ5_v9Enjz46FuHhAHLYpWnj3DWfJd8fCKhWLxclkEA_wFV22CFbgJx4XLRtSuHTWsU.ozAVXeiJ7pf-DjIrsg255D0lvCOFz9IzljDQfstezgg&dib_tag=se&keywords=wireless+gaming+headset&qid=1777130635&sprefix=wireless%2Bgaming%2Bheadset%2Caps%2C130&sr=8-13&tag=tiereduptech-20", "price":39.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6557062&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6557062.p%3FskuId%3D6557062", "price": 24.99, "inStock": true}}
   },
   {
     "id": 100048,
@@ -113438,7 +113438,7 @@ export const PARTS = [
     "pr": 50,
     "msrp": 50,
     "r": 4.3,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Surround-Gaming-Headset-Leatherette/dp/B07MRMHML9/ref=sr_1_10?crid=FK4L8RI5UBE6&dib=eyJ2IjoiMSJ9.2_GIWV0Rvm4YTK9_2SsAM5c_hAiaPjNBYetnCde6A7Cuwrnjk2l6Q1DVRn88J0Xx6-O3k6FjDsigD0cM1CwvmmJr56lDC9NoUKUzKoGvhq-v3E59veqD-j7IBRxo5Gs5WTsUZw__mLsdZW2rRSWlEcfb4pcexC4z9rWhneP2WcRMGm9S80oLlqN-Z9xgrjhhZpXuHKvPAeGtfi7k1f7lk72lLZLFQflfUbpw7grw-V8.a3asCWSi72Ngyj4aNWkT5Y9NJ3xwlVuXo3lDSn-jFLM&dib_tag=se&keywords=wired+gaming+headset&qid=1777130640&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=wired%2Bgaming%2Bheadset%2Caps%2C283&sr=8-10&tag=tiereduptech-20", "price":49.67, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Surround-Gaming-Headset-Leatherette/dp/B07MRMHML9/ref=sr_1_10?crid=FK4L8RI5UBE6&dib=eyJ2IjoiMSJ9.2_GIWV0Rvm4YTK9_2SsAM5c_hAiaPjNBYetnCde6A7Cuwrnjk2l6Q1DVRn88J0Xx6-O3k6FjDsigD0cM1CwvmmJr56lDC9NoUKUzKoGvhq-v3E59veqD-j7IBRxo5Gs5WTsUZw__mLsdZW2rRSWlEcfb4pcexC4z9rWhneP2WcRMGm9S80oLlqN-Z9xgrjhhZpXuHKvPAeGtfi7k1f7lk72lLZLFQflfUbpw7grw-V8.a3asCWSi72Ngyj4aNWkT5Y9NJ3xwlVuXo3lDSn-jFLM&dib_tag=se&keywords=wired+gaming+headset&qid=1777130640&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=wired%2Bgaming%2Bheadset%2Caps%2C283&sr=8-10&tag=tiereduptech-20", "price":49.67, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6320789&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6320789.p%3FskuId%3D6320789", "price": 49.99, "inStock": true}}
   },
   {
     "id": 100050,
@@ -113482,7 +113482,7 @@ export const PARTS = [
     "pr": 109,
     "msrp": 109,
     "r": 4.4,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Stealth-Wireless-Multiplatform-Amplified-Headset-Nintendo/dp/B0CYWFH5Y9/ref=sr_1_21?crid=MRVPSPTMXZV3&dib=eyJ2IjoiMSJ9.TGUcBFudkT26JpacVPP_qkh5IVdVYiy_Un7lqOx9ARf5ig5CPmtbtiGU-56-2992NPuNC0lDV9lezPZxKomcgHI3t1jGsZCc7jzw3fBa4nlu3TKRoqDjL28bU-70FhukaFDWlXga7v95I_BIIzF2h6IUu9Ssca7C7p0FgBG5LZ5_v9Enjz46FuHhAHLYpWnj3DWfJd8fCKhWLxclkEA_wFV22CFbgJx4XLRtSuHTWsU.ozAVXeiJ7pf-DjIrsg255D0lvCOFz9IzljDQfstezgg&dib_tag=se&keywords=wireless+gaming+headset&qid=1777130635&sprefix=wireless%2Bgaming%2Bheadset%2Caps%2C130&sr=8-21&tag=tiereduptech-20", "price":109, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Stealth-Wireless-Multiplatform-Amplified-Headset-Nintendo/dp/B0CYWFH5Y9/ref=sr_1_21?crid=MRVPSPTMXZV3&dib=eyJ2IjoiMSJ9.TGUcBFudkT26JpacVPP_qkh5IVdVYiy_Un7lqOx9ARf5ig5CPmtbtiGU-56-2992NPuNC0lDV9lezPZxKomcgHI3t1jGsZCc7jzw3fBa4nlu3TKRoqDjL28bU-70FhukaFDWlXga7v95I_BIIzF2h6IUu9Ssca7C7p0FgBG5LZ5_v9Enjz46FuHhAHLYpWnj3DWfJd8fCKhWLxclkEA_wFV22CFbgJx4XLRtSuHTWsU.ozAVXeiJ7pf-DjIrsg255D0lvCOFz9IzljDQfstezgg&dib_tag=se&keywords=wireless+gaming+headset&qid=1777130635&sprefix=wireless%2Bgaming%2Bheadset%2Caps%2C130&sr=8-21&tag=tiereduptech-20", "price":109, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577966&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577966.p%3FskuId%3D6577966", "price": 109.99, "inStock": true}}
   },
   {
     "id": 100054,
@@ -113515,7 +113515,7 @@ export const PARTS = [
     "pr": 40,
     "msrp": 40,
     "r": 4.4,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Turtle-Multiplatform-Gaming-Headset-PlayStation-Console/dp/B0BVL17YJV/ref=sr_1_26?crid=MWA69BA6O2S0&dib=eyJ2IjoiMSJ9.3UiWvKLsvBkHuwBhZvfryDyswFQHmLKrmS7Fgssln48ZooWbuYNIaCZcjECSAB44DHmziU8-Sk5onkZbdc1klpHS_6-HHncNkBAfxkWLMO-_GjexFaNtxfXjWOz5fQ2yTf2bgJGCBmymYpE1LvGO94_LQPu3fZH3TFk8xemF-peSk1w-ikbEs5DxT66QwpGPjlJobuAbqtVnfjT-xy-1D485ShvP1mqgj_b7fjP9MX4.HtibCoYN4JBpAwzH8srqQYQ9H7CmJHC8JzQ5rRE3hfo&dib_tag=se&keywords=gaming+headset&qid=1777130642&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=gaming%2Bheadset%2Caps%2C124&sr=8-26&xpid=FrzMK5sY3y-vK&tag=tiereduptech-20", "price":39.99, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Turtle-Multiplatform-Gaming-Headset-PlayStation-Console/dp/B0BVL17YJV/ref=sr_1_26?crid=MWA69BA6O2S0&dib=eyJ2IjoiMSJ9.3UiWvKLsvBkHuwBhZvfryDyswFQHmLKrmS7Fgssln48ZooWbuYNIaCZcjECSAB44DHmziU8-Sk5onkZbdc1klpHS_6-HHncNkBAfxkWLMO-_GjexFaNtxfXjWOz5fQ2yTf2bgJGCBmymYpE1LvGO94_LQPu3fZH3TFk8xemF-peSk1w-ikbEs5DxT66QwpGPjlJobuAbqtVnfjT-xy-1D485ShvP1mqgj_b7fjP9MX4.HtibCoYN4JBpAwzH8srqQYQ9H7CmJHC8JzQ5rRE3hfo&dib_tag=se&keywords=gaming+headset&qid=1777130642&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=gaming%2Bheadset%2Caps%2C124&sr=8-26&xpid=FrzMK5sY3y-vK&tag=tiereduptech-20", "price":39.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9539004&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9539004.p%3FskuId%3D9539004", "price": 27.99, "inStock": true}}
   },
   {
     "id": 100057,
@@ -113548,7 +113548,7 @@ export const PARTS = [
     "pr": 199,
     "msrp": 199,
     "r": 4.4,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Turtle-Stealth-Wireless-Multiplatform-Amplified-Headset/dp/B0DBB38QK1/ref=sr_1_43?crid=4T8OVBV8PXP5&dib=eyJ2IjoiMSJ9.px1sIwBwkfr2cRl0JsJvGKkR9XFBK5TfzDREwXBsGWs6RxODMNJ7CIyVH5d2RQ4axOE6cG7XK-xJCiY8Uehv2yRhQcghsLwQDIST8ww-JJp5ArAQbHkJocHYxsmFBI02jm41Fr8ZBFDH_kx9LP9Mq5ujOV39yuBUjKesV8WZpNfQLnPLkFLqxnO8R6xA99fCl_Gu5QJFbJ9DHeOXXGgn71Daw6svC0a7pvy-PcoTkhQ.QsV-DhFvRag7jTLSX7luHykjDIGiUxfUJrIdRgRlsuE&dib_tag=se&keywords=Astro+A50&qid=1777130645&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Astro%2BA50%2Caps%2C182&sr=8-43&xpid=4IHOr9GSUVBfS&tag=tiereduptech-20", "price":199, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Turtle-Stealth-Wireless-Multiplatform-Amplified-Headset/dp/B0DBB38QK1/ref=sr_1_43?crid=4T8OVBV8PXP5&dib=eyJ2IjoiMSJ9.px1sIwBwkfr2cRl0JsJvGKkR9XFBK5TfzDREwXBsGWs6RxODMNJ7CIyVH5d2RQ4axOE6cG7XK-xJCiY8Uehv2yRhQcghsLwQDIST8ww-JJp5ArAQbHkJocHYxsmFBI02jm41Fr8ZBFDH_kx9LP9Mq5ujOV39yuBUjKesV8WZpNfQLnPLkFLqxnO8R6xA99fCl_Gu5QJFbJ9DHeOXXGgn71Daw6svC0a7pvy-PcoTkhQ.QsV-DhFvRag7jTLSX7luHykjDIGiUxfUJrIdRgRlsuE&dib_tag=se&keywords=Astro+A50&qid=1777130645&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Astro%2BA50%2Caps%2C182&sr=8-43&xpid=4IHOr9GSUVBfS&tag=tiereduptech-20", "price":199, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583838&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583838.p%3FskuId%3D6583838", "price": 199.99, "inStock": true}}
   },
   {
     "id": 100060,
@@ -114054,7 +114054,7 @@ export const PARTS = [
     "pr": 27,
     "msrp": 27,
     "r": 4.7,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Gigantus-Cloth-Gaming-Mouse/dp/B0885FJ8CB/ref=sr_1_6?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-6&tag=tiereduptech-20", "price":26.98, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Gigantus-Cloth-Gaming-Mouse/dp/B0885FJ8CB/ref=sr_1_6?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-6&tag=tiereduptech-20", "price":26.98, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6417112&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6417112.p%3FskuId%3D6417112", "price": 26.99, "inStock": true}}
   },
   {
     "id": 100106,
@@ -114098,7 +114098,7 @@ export const PARTS = [
     "pr": 58,
     "msrp": 58,
     "r": 4.7,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Goliathus-Extended-Chroma-Micro-Textured/dp/B07DG64YL9/ref=sr_1_2?crid=AE8OEQG4B6YA&dib=eyJ2IjoiMSJ9.zjAgFycW02ZIcvmii1yJk3D0qSwNGtz3K4lhUp_Dv4gLuzaPZiPzdSeBxd7Eu6iE7TZ_dJXHnk55no2gaoZOJBMCWme0ZUY8sMeJ6U87S8i1N9XbBHQvXqn0mIX2tXF6yRNR5gQOEP2cjO1VLtYKAQWibJQczHiV28-mJ52u9RNxAipfhV5VqsZOE1iGIWt86ialqG5erRQ3ycfer5L4LbURowX8o60hOyFdNgYq-kM.a65vdOAcw8NzasR7e_PLV-_vxm_HLRyZ60aMVj1P_RI&dib_tag=se&keywords=Razer+Goliathus+Extended&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BGoliathus%2BExtended%2Caps%2C285&sr=8-2&tag=tiereduptech-20", "price":57.69, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Goliathus-Extended-Chroma-Micro-Textured/dp/B07DG64YL9/ref=sr_1_2?crid=AE8OEQG4B6YA&dib=eyJ2IjoiMSJ9.zjAgFycW02ZIcvmii1yJk3D0qSwNGtz3K4lhUp_Dv4gLuzaPZiPzdSeBxd7Eu6iE7TZ_dJXHnk55no2gaoZOJBMCWme0ZUY8sMeJ6U87S8i1N9XbBHQvXqn0mIX2tXF6yRNR5gQOEP2cjO1VLtYKAQWibJQczHiV28-mJ52u9RNxAipfhV5VqsZOE1iGIWt86ialqG5erRQ3ycfer5L4LbURowX8o60hOyFdNgYq-kM.a65vdOAcw8NzasR7e_PLV-_vxm_HLRyZ60aMVj1P_RI&dib_tag=se&keywords=Razer+Goliathus+Extended&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BGoliathus%2BExtended%2Caps%2C285&sr=8-2&tag=tiereduptech-20", "price":57.69, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6318751&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6318751.p%3FskuId%3D6318751", "price": 59.99, "inStock": false}}
   },
   {
     "id": 100110,
@@ -114374,6 +114374,1965 @@ export const PARTS = [
     "msrp": 15,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo3NjQ3MDA0NTM4NjMxODAxOjE3NzcxMzEyNjQ6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDAwOTUxOTkzNzI4MDI6OjM6Og&url=%2FFrienda-Connectors-Disconnect-Automotive-Motorcycles%2Fdp%2FB09CTVLZLN%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.19965c16-2655-4a15-b57b-e942a2302fca%253Aamzn1.sym.19965c16-2655-4a15-b57b-e942a2302fca%26crid%3D4KACUMWFZEUW%26cv_ct_cx%3DEPS%2B8-pin%2Bextension%2Bcable%26keywords%3DEPS%2B8-pin%2Bextension%2Bcable%26pd_rd_i%3DB09CTVLZLN%26pd_rd_r%3D23c1e2e6-dc91-49b3-8278-e5630f25fdac%26pd_rd_w%3DlPYtn%26pd_rd_wg%3DorlLg%26pf_rd_p%3D19965c16-2655-4a15-b57b-e942a2302fca%26pf_rd_r%3DJ40YFRQYB3SFB7RKFTR9%26qid%3D1777131264%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DEPS%252B8pin%252Bextension%252Bcable%252Caps%252C170%26sr%3D1-4-19848dd4-d197-4a53-a445-4045457584e9-spons%26aref%3DPp95Ui8dG7%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1&aref=Pp95Ui8dG7&tag=tiereduptech-20", "price":14.95, "inStock":true}}
+  }
+,
+  {
+    "id": 100135,
+    "n": "Logitech - PRO Lightweight Wireless Optical Ambidextrous Gaming Mouse with RGB Lighting - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6265/6265132_sd.jpg",
+    "c": "Mouse",
+    "b": "Logitech",
+    "pr": 110,
+    "msrp": 110,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6265132&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6265132.p%3FskuId%3D6265132","price":109.99,"inStock":false}}
+  },
+  {
+    "id": 100136,
+    "n": "CORSAIR - HARPOON RGB Wireless FPS Optical Gaming Mouse with Bluetooth - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6316/6316173_sd.jpg",
+    "c": "Mouse",
+    "b": "Corsair",
+    "pr": 65,
+    "msrp": 65,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6316173&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6316173.p%3FskuId%3D6316173","price":64.99,"inStock":true}}
+  },
+  {
+    "id": 100137,
+    "n": "Logitech - G403 (Hero) Wired Optical Gaming Mouse - Wired - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/72475207-8146-41b8-a9eb-b6623601ab32.jpg",
+    "c": "Mouse",
+    "b": "Logitech",
+    "pr": 50,
+    "msrp": 50,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6333838&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6333838.p%3FskuId%3D6333838","price":49.99,"inStock":false}}
+  },
+  {
+    "id": 100138,
+    "n": "Logitech - G903 LIGHTSPEED Wireless Optical Gaming Ambidextrous Mouse with RGB Lighting - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6333/6333839_sd.jpg",
+    "c": "Mouse",
+    "b": "Logitech",
+    "pr": 98,
+    "msrp": 140,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6333839&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6333839.p%3FskuId%3D6333839","price":97.99,"inStock":true}}
+  },
+  {
+    "id": 100139,
+    "n": "CORSAIR - Nightsword RGB Tunable Wired FPS/MOBA/MMO Optical Gaming Mouse with Adjustable Weights - Wired - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6337/6337071_sd.jpg",
+    "c": "Mouse",
+    "b": "Corsair",
+    "pr": 96,
+    "msrp": 100,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6337071&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6337071.p%3FskuId%3D6337071","price":95.99,"inStock":true}}
+  },
+  {
+    "id": 100140,
+    "n": "CORSAIR - IRONCLAW RGB FPS/MOBA/MMO Wireless Optical Gaming Mouse - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6350/6350465_sd.jpg",
+    "c": "Mouse",
+    "b": "Corsair",
+    "pr": 90,
+    "msrp": 90,
+    "r": 4.2,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6350465&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6350465.p%3FskuId%3D6350465","price":89.99,"inStock":false}}
+  },
+  {
+    "id": 100141,
+    "n": "Razer - Viper Optical Gaming Ambidextrous Mouse with Chroma RGB Lighting - Wired - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6360/6360208_sd.jpg",
+    "c": "Mouse",
+    "b": "Razer",
+    "pr": 33,
+    "msrp": 80,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6360208&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6360208.p%3FskuId%3D6360208","price":32.99,"inStock":false}}
+  },
+  {
+    "id": 100142,
+    "n": "REDRAGON - Griffin M607 Wired Optical Gaming Mouse - Wired - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ed89a52d-e12f-4fbe-a199-99fcf17083c5.jpg",
+    "c": "Mouse",
+    "b": "Redragon",
+    "pr": 17,
+    "msrp": 17,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6391079&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6391079.p%3FskuId%3D6391079","price":16.99,"inStock":true}}
+  },
+  {
+    "id": 100143,
+    "n": "CORSAIR - Scimitar RGB Elite Wired MOBA/MMO Optical Gaming Mouse with 17 Programmable Buttons - Wired - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6393/6393997_sd.jpg",
+    "c": "Mouse",
+    "b": "Corsair",
+    "pr": 60,
+    "msrp": 90,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6393997&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6393997.p%3FskuId%3D6393997","price":59.99,"inStock":true}}
+  },
+  {
+    "id": 100144,
+    "n": "CORSAIR - DARK CORE RGB PRO Wireless FPS/MOBA/MMO Optical Gaming Mouse with Slipstream Technology - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6394/6394002_sd.jpg",
+    "c": "Mouse",
+    "b": "Corsair",
+    "pr": 100,
+    "msrp": 100,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6394002&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6394002.p%3FskuId%3D6394002","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100145,
+    "n": "SteelSeries - Rival 3 Lightweight Wired Optical Gaming Mouse with Brilliant Prism RGB Lighting - Wired - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6396/6396206_sd.jpg",
+    "c": "Mouse",
+    "b": "SteelSeries",
+    "pr": 20,
+    "msrp": 30,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6396206&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6396206.p%3FskuId%3D6396206","price":19.99,"inStock":false}}
+  },
+  {
+    "id": 100146,
+    "n": "SteelSeries - Rival 5 Wired Optical Gaming Mouse with RGB Lighting - Wired - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6459/6459644_sd.jpg",
+    "c": "Mouse",
+    "b": "SteelSeries",
+    "pr": 42,
+    "msrp": 70,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6459644&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6459644.p%3FskuId%3D6459644","price":41.64,"inStock":true}}
+  },
+  {
+    "id": 100147,
+    "n": "SteelSeries - Aerox 3 Super Light Honeycomb Wired RGB Optical Gaming Mouse - Wired - Onyx",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6485/6485231_sd.jpg",
+    "c": "Mouse",
+    "b": "SteelSeries",
+    "pr": 45,
+    "msrp": 70,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6485231&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6485231.p%3FskuId%3D6485231","price":44.99,"inStock":true}}
+  },
+  {
+    "id": 100148,
+    "n": "CORSAIR - M65 RGB Ultra Tunable Wired FPS Optical Gaming Mouse with Adjustable Weights - Wired - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6485/6485744_sd.jpg",
+    "c": "Mouse",
+    "b": "Corsair",
+    "pr": 60,
+    "msrp": 80,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6485744&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6485744.p%3FskuId%3D6485744","price":59.99,"inStock":true}}
+  },
+  {
+    "id": 100149,
+    "n": "SteelSeries - Aerox 9 Wireless Ultra Lightweight Honeycomb Water Resistant RGB Optical Gaming Mouse With 18 Programmable Buttons - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6501/6501463_sd.jpg",
+    "c": "Mouse",
+    "b": "SteelSeries",
+    "pr": 190,
+    "msrp": 190,
+    "r": 4.2,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6501463&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6501463.p%3FskuId%3D6501463","price":189.99,"inStock":true}}
+  },
+  {
+    "id": 100150,
+    "n": "HyperX - Pulsefire Haste Lightweight Wired Optical Gaming Mouse with RGB Lighting - Wired - Black/Red",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6504/6504265_sd.jpg",
+    "c": "Mouse",
+    "b": "HyperX",
+    "pr": 45,
+    "msrp": 50,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6504265&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6504265.p%3FskuId%3D6504265","price":44.99,"inStock":false}}
+  },
+  {
+    "id": 100151,
+    "n": "Logitech - G705 Aurora Collection Wireless Optical Gaming Mouse with Customizable LIGHTSYNC RGB Lighting - Wireless - White Mist",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6511/6511295_sd.jpg",
+    "c": "Mouse",
+    "b": "Logitech",
+    "pr": 70,
+    "msrp": 100,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6511295&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6511295.p%3FskuId%3D6511295","price":69.99,"inStock":true}}
+  },
+  {
+    "id": 100152,
+    "n": "Glorious - Model D Wireless Optical Honeycomb RGB Gaming Mouse - Wireless - Matte Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6519/6519203_sd.jpg",
+    "c": "Mouse",
+    "b": "Glorious",
+    "pr": 80,
+    "msrp": 80,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6519203&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6519203.p%3FskuId%3D6519203","price":79.99,"inStock":true}}
+  },
+  {
+    "id": 100153,
+    "n": "Razer - Naga V2 HyperSpeed MMO Optical Gaming Mouse with 19 Programmable Buttons - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d9407f5f-27de-4db5-b1b6-d47a8f5c65a9.jpg",
+    "c": "Mouse",
+    "b": "Razer",
+    "pr": 65,
+    "msrp": 100,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6521085&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6521085.p%3FskuId%3D6521085","price":64.98,"inStock":true}}
+  },
+  {
+    "id": 100154,
+    "n": "ASUS - ROG Spatha X Wireless Optical Gaming Mouse with 12 Programmable Buttons and Magnetic Charging Stand - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6529/6529371cv19d.jpg",
+    "c": "Mouse",
+    "b": "ASUS",
+    "pr": 127,
+    "msrp": 150,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6529371&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6529371.p%3FskuId%3D6529371","price":126.99,"inStock":true}}
+  },
+  {
+    "id": 100155,
+    "n": "ASUS - ROG Harpe Ace Aim Lab Edition Ultralight Wireless Optical Gaming Mouse with ROG SpeedNova Wireless Technology - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6537/6537579_sd.jpg",
+    "c": "Mouse",
+    "b": "ASUS",
+    "pr": 80,
+    "msrp": 100,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6537579&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6537579.p%3FskuId%3D6537579","price":79.99,"inStock":true}}
+  },
+  {
+    "id": 100156,
+    "n": "Glorious - Model O 2 Lightweight Wired Optical Gaming Mouse with BAMF 2.0 Sensor - Wired - Matte Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547950_sd.jpg",
+    "c": "Mouse",
+    "b": "Glorious",
+    "pr": 65,
+    "msrp": 65,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547950&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547950.p%3FskuId%3D6547950","price":64.99,"inStock":false}}
+  },
+  {
+    "id": 100157,
+    "n": "Razer - Cobra Lightweight Optical Gaming Mouse with Chroma RGB Lighting - Wired - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/647cc370-cfa2-4614-b299-ee40c54d2366.jpg",
+    "c": "Mouse",
+    "b": "Razer",
+    "pr": 30,
+    "msrp": 40,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6548181&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6548181.p%3FskuId%3D6548181","price":29.99,"inStock":true}}
+  },
+  {
+    "id": 100158,
+    "n": "Razer - Cobra Pro Optical Gaming Mouse with Chroma RGB Lighting - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ec8c9512-c2aa-4f5f-af67-3b226e3deffa.jpg",
+    "c": "Mouse",
+    "b": "Razer",
+    "pr": 100,
+    "msrp": 130,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6548182&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6548182.p%3FskuId%3D6548182","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100159,
+    "n": "Logitech - G PRO X SUPERLIGHT 2 LIGHTSPEED Lightweight Wireless Optical HERO 2 Sensor 44 000 DPI Gaming Mouse with 8K Polling - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d1f1a224-97c1-426c-b20f-a4abcfb69de6.jpg",
+    "c": "Mouse",
+    "b": "Logitech",
+    "pr": 150,
+    "msrp": 180,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6556754&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6556754.p%3FskuId%3D6556754","price":149.99,"inStock":true}}
+  },
+  {
+    "id": 100160,
+    "n": "CORSAIR - KATAR PRO Ultra-Light Wired FPS Optical Gaming Ambidextrous Mouse - Wired - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6558/6558788_sd.jpg",
+    "c": "Mouse",
+    "b": "Corsair",
+    "pr": 25,
+    "msrp": 30,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6558788&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6558788.p%3FskuId%3D6558788","price":24.99,"inStock":true}}
+  },
+  {
+    "id": 100161,
+    "n": "CORSAIR - M75 WIRELESS Lightweight Optical RGB Gaming Ambidextrous Mouse - Wireless - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6573/6573602_sd.jpg",
+    "c": "Mouse",
+    "b": "Corsair",
+    "pr": 65,
+    "msrp": 130,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6573602&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6573602.p%3FskuId%3D6573602","price":64.99,"inStock":true}}
+  },
+  {
+    "id": 100162,
+    "n": "Glorious - Model D 2 Wireless Optical RGB Gaming Mouse with 6 Programmable Buttons - Wireless - Matte Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6578/6578712_sd.jpg",
+    "c": "Mouse",
+    "b": "Glorious",
+    "pr": 100,
+    "msrp": 100,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578712&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578712.p%3FskuId%3D6578712","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100163,
+    "n": "Logitech - G309 LIGHTSPEED Lightweight Wireless Optical Gaming Mouse with HERO 25K Sensor - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/54e6e0af-0b4a-4c3a-9b47-b8073e234add.jpg",
+    "c": "Mouse",
+    "b": "Logitech",
+    "pr": 57,
+    "msrp": 90,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586068&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586068.p%3FskuId%3D6586068","price":57.49,"inStock":true}}
+  },
+  {
+    "id": 100164,
+    "n": "Logitech - PRO X Superlight 2 DEX Lightweight Wireless Optical HERO 2 Sensor 44 000 DPI Gaming Mouse with 5 Programmable Buttons - Wireless - Magenta",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1f3e2557-905e-4846-87d6-f1fdcaf3fa4a.jpg",
+    "c": "Mouse",
+    "b": "Logitech",
+    "pr": 150,
+    "msrp": 180,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595182&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595182.p%3FskuId%3D6595182","price":149.99,"inStock":true}}
+  },
+  {
+    "id": 100165,
+    "n": "Logitech - PRO 2 LIGHTSPEED Lightweight Optical HERO 44K DPI Gaming Mouse with 4 Customizable and Switchable Magnetic Side Buttons - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/bd2361f0-cfec-42e3-963d-8a373746b2f8.jpg",
+    "c": "Mouse",
+    "b": "Logitech",
+    "pr": 120,
+    "msrp": 150,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595185&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595185.p%3FskuId%3D6595185","price":119.99,"inStock":true}}
+  },
+  {
+    "id": 100166,
+    "n": "CORSAIR - M55 Wireless FPS Optical Gaming Ambidextrous Mouse with Slipstream Technology - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/717cf541-3255-4444-9d42-d5e65fa243bc.jpg",
+    "c": "Mouse",
+    "b": "Corsair",
+    "pr": 50,
+    "msrp": 50,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604495&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604495.p%3FskuId%3D6604495","price":49.99,"inStock":true}}
+  },
+  {
+    "id": 100167,
+    "n": "Razer - DeathAdder V4 Pro Lightweight Optical Gaming Mouse with 150 Hour Battery - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/84ca41e3-708c-4254-a8c6-91dc0ab2472e.jpg",
+    "c": "Mouse",
+    "b": "Razer",
+    "pr": 170,
+    "msrp": 170,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621764&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621764.p%3FskuId%3D6621764","price":169.99,"inStock":true}}
+  },
+  {
+    "id": 100168,
+    "n": "CORSAIR - Scimitar Elite Wireless SE MOBA/MMO Optical Gaming Mouse with 16 Programmable Buttons - Wireless - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6959571b-0529-425a-8528-69ebc70189c6.png",
+    "c": "Mouse",
+    "b": "Corsair",
+    "pr": 90,
+    "msrp": 140,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6622827&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6622827.p%3FskuId%3D6622827","price":89.99,"inStock":true}}
+  },
+  {
+    "id": 100169,
+    "n": "Glorious - Model O Eternal Lightweight Wired Optical Gaming Mouse with Dual-Zone RGB Lighting - Wired - Matte Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/0d24995a-22ec-468f-8beb-17c16d530200.jpg",
+    "c": "Mouse",
+    "b": "Glorious",
+    "pr": 40,
+    "msrp": 40,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6623863&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6623863.p%3FskuId%3D6623863","price":39.99,"inStock":true}}
+  },
+  {
+    "id": 100170,
+    "n": "Glorious - Model O3 Lightweight Wireless Optical Gaming Mouse with InfinitePlay Swappable Battery System & Charging Base Station - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/58cbcbe6-10db-432c-adf2-eeaf9bb5cc7f.png",
+    "c": "Mouse",
+    "b": "Glorious",
+    "pr": 160,
+    "msrp": 160,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636035&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636035.p%3FskuId%3D6636035","price":159.99,"inStock":true}}
+  },
+  {
+    "id": 100171,
+    "n": "Glorious - Model D3 Lightweight Wireless Optical Gaming Mouse with InfinitePlay Swappable Battery System & Charging Base Station - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/28e12655-acb6-4b69-b63a-5fc631805c59.png",
+    "c": "Mouse",
+    "b": "Glorious",
+    "pr": 100,
+    "msrp": 160,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636038&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636038.p%3FskuId%3D6636038","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100172,
+    "n": "CORSAIR - Sabre V2 Pro Ultralight FPS Optical Gaming Mouse - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/0e41f98d-b491-4c12-a7ea-b95027e3a3f8.png",
+    "c": "Mouse",
+    "b": "Corsair",
+    "pr": 100,
+    "msrp": 100,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637500&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637500.p%3FskuId%3D6637500","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100173,
+    "n": "Logitech - PRO X SUPERLIGHT 2 SE LIGHTSPEED Lightweight Wireless Gaming Mouse with Optical HERO 2 Sensor 44,000 DPI for PC - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/a5cc2524-cdb4-42be-8062-71d6a3d31a57.jpg",
+    "c": "Mouse",
+    "b": "Logitech",
+    "pr": 140,
+    "msrp": 140,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642549&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642549.p%3FskuId%3D6642549","price":139.99,"inStock":true}}
+  },
+  {
+    "id": 100174,
+    "n": "CORSAIR - IRONCLAW WIRELESS SE FPS/MOBA/MMO Optical Gaming Mouse - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/12df31fc-e9c3-449d-ba8f-ce33c527628e.png",
+    "c": "Mouse",
+    "b": "Corsair",
+    "pr": 70,
+    "msrp": 90,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6666378&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6666378.p%3FskuId%3D6666378","price":69.99,"inStock":true}}
+  },
+  {
+    "id": 100175,
+    "n": "Logitech - PRO X2 SUPERSTRIKE LIGHTSPEED Lightweight Wireless Gaming Mouse with Customizable Click Haptics for PC/Mac/Laptop - Wireless - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/27ab906a-c67f-4c9a-8826-85e554c35b57.jpg",
+    "c": "Mouse",
+    "b": "Logitech",
+    "pr": 180,
+    "msrp": 180,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6667851&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6667851.p%3FskuId%3D6667851","price":179.99,"inStock":true}}
+  },
+  {
+    "id": 100176,
+    "n": "Razer - Viper V4 Pro Ultra Lightweight Optical Gaming Mouse with 180 Hour Battery Life - 8k Polling Rate - Wireless - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/892c535a-002d-494b-b9f8-89fc86e02733.jpg",
+    "c": "Mouse",
+    "b": "Razer",
+    "pr": 160,
+    "msrp": 160,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669259&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669259.p%3FskuId%3D6669259","price":159.99,"inStock":true}}
+  },
+  {
+    "id": 100177,
+    "n": "Logitech - Prodigy G213 Full-size Wired Membrane Gaming Keyboard with RGB Backlighting for PC - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6e742e98-9df8-470a-abae-e3dcc96d0158.jpg",
+    "c": "Keyboard",
+    "b": "Logitech",
+    "pr": 50,
+    "msrp": 60,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5799701&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5799701.p%3FskuId%3D5799701","price":49.99,"inStock":true}}
+  },
+  {
+    "id": 100178,
+    "n": "HyperX - Alloy Core Full-size Wired Gaming Membrane Keyboard with RGB Lighting - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6283/6283508_sd.jpg",
+    "c": "Keyboard",
+    "b": "HyperX",
+    "pr": 37,
+    "msrp": 55,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6283508&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6283508.p%3FskuId%3D6283508","price":36.99,"inStock":true}}
+  },
+  {
+    "id": 100179,
+    "n": "HyperX - Wrist Rest - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6290/6290679_sd.jpg",
+    "c": "Keyboard",
+    "b": "HyperX",
+    "pr": 23,
+    "msrp": 23,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6290679&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6290679.p%3FskuId%3D6290679","price":22.99,"inStock":true}}
+  },
+  {
+    "id": 100180,
+    "n": "SteelSeries - Apex 7 Full Size Wired Mechanical Red Linear Switch Gaming Keyboard with Rapid Tap - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d0966d5c-c755-4420-b1c8-55bd8468ea83.jpg",
+    "c": "Keyboard",
+    "b": "SteelSeries",
+    "pr": 147,
+    "msrp": 160,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6346166&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6346166.p%3FskuId%3D6346166","price":146.99,"inStock":true}}
+  },
+  {
+    "id": 100181,
+    "n": "Logitech - G815 LIGHTSYNC Full-size Wired Mechanical GL Tactile Switch Gaming Keyboard with RGB Backlighting - Carbon",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/54b91105-3e16-423a-bddf-37462751e533.jpg",
+    "c": "Keyboard",
+    "b": "Logitech",
+    "pr": 160,
+    "msrp": 200,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6360840&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6360840.p%3FskuId%3D6360840","price":159.99,"inStock":false}}
+  },
+  {
+    "id": 100182,
+    "n": "Logitech - G PRO TKL Wired Mechanical GX Blue Clicky Switch Gaming Keyboard with RGB Backlighting for PC - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/a66d3207-ecc9-4ca1-b552-42c2d9629e93.jpg",
+    "c": "Keyboard",
+    "b": "Logitech",
+    "pr": 100,
+    "msrp": 120,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6372528&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6372528.p%3FskuId%3D6372528","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100183,
+    "n": "SteelSeries - Apex 5 Full Size Wired Mechanical Hybrid Blue Tactile & Clicky Switch Gaming Keyboard with RGB Backlighting - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/17f79a7d-7f24-4310-8b71-8192766c1869.jpg",
+    "c": "Keyboard",
+    "b": "SteelSeries",
+    "pr": 100,
+    "msrp": 100,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6396208&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6396208.p%3FskuId%3D6396208","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100184,
+    "n": "HyperX - Alloy Origins 65% Compact Wired Mechanical Red Linear Switch Gaming Keyboard with RGB Lighting - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6500/6500797_sd.jpg",
+    "c": "Keyboard",
+    "b": "HyperX",
+    "pr": 70,
+    "msrp": 115,
+    "r": 4.9,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6500797&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6500797.p%3FskuId%3D6500797","price":69.99,"inStock":true}}
+  },
+  {
+    "id": 100185,
+    "n": "Razer - Huntsman Mini 60% Wired Optical Clicky Switch Gaming Keyboard with Chroma RGB Backlighting - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/bc5bce35-ca08-45da-bcc3-8d6fb215154b.jpg",
+    "c": "Keyboard",
+    "b": "Razer",
+    "pr": 80,
+    "msrp": 120,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6417111&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6417111.p%3FskuId%3D6417111","price":79.99,"inStock":true}}
+  },
+  {
+    "id": 100186,
+    "n": "Razer - BlackWidow V3 Hyperspeed Phantom Edition 65% Mini Wireless Mechanical Gaming Keyboard with Chroma RGB Backlighting - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/96f6cff2-d12a-4800-8afe-c206f76fa893.jpg",
+    "c": "Keyboard",
+    "b": "Razer",
+    "pr": 100,
+    "msrp": 200,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6463502&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6463502.p%3FskuId%3D6463502","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100187,
+    "n": "CORSAIR - K55 RGB Pro Full-size Wired Dome Membrane Gaming Keyboard with Elgato Stream Deck Software Integration - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6453/6453150_sd.jpg",
+    "c": "Keyboard",
+    "b": "Corsair",
+    "pr": 60,
+    "msrp": 70,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6453150&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6453150.p%3FskuId%3D6453150","price":59.99,"inStock":true}}
+  },
+  {
+    "id": 100188,
+    "n": "REDRAGON - Kumara K552 RGB Wired TKL Gaming Mechanical Blue Switch Keyboard with RGB Backlighting - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d6d7d20c-7eec-440c-b02f-a24068d15643.jpg",
+    "c": "Keyboard",
+    "b": "Redragon",
+    "pr": 44,
+    "msrp": 44,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6458719&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6458719.p%3FskuId%3D6458719","price":43.99,"inStock":true}}
+  },
+  {
+    "id": 100189,
+    "n": "SteelSeries - PRISMCAPS – Universal Double Shot PBT Keycaps - White",
+    "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6459/6459649cv11d.jpg",
+    "c": "Keyboard",
+    "b": "SteelSeries",
+    "pr": 30,
+    "msrp": 30,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6459649&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6459649.p%3FskuId%3D6459649","price":29.99,"inStock":true}}
+  },
+  {
+    "id": 100190,
+    "n": "Razer - Huntsman V2 TKL Wired Optical Purple Clicky Switch Gaming Keyboard with Chroma RGB Backlighting - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d4a97d1d-04b2-4734-bcc6-594bb910c723.jpg",
+    "c": "Keyboard",
+    "b": "Razer",
+    "pr": 90,
+    "msrp": 150,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6475702&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6475702.p%3FskuId%3D6475702","price":89.99,"inStock":true}}
+  },
+  {
+    "id": 100191,
+    "n": "CORSAIR - K65 RGB Mini Wired 60% Mechanical Cherry MX SPEED Linear Switch Gaming Keyboard with PBT Double-Shot Keycaps - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6476/6476232_sd.jpg",
+    "c": "Keyboard",
+    "b": "Corsair",
+    "pr": 55,
+    "msrp": 110,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6476232&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6476232.p%3FskuId%3D6476232","price":54.99,"inStock":true}}
+  },
+  {
+    "id": 100192,
+    "n": "Razer - Ornata V3 X Full-Size Wired Membrane Gaming Keyboard with Chroma RGB Backlighting - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/b0aef232-b792-40a5-b09b-49d1331bd775.jpg",
+    "c": "Keyboard",
+    "b": "Razer",
+    "pr": 40,
+    "msrp": 40,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6502757&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6502757.p%3FskuId%3D6502757","price":39.99,"inStock":true}}
+  },
+  {
+    "id": 100193,
+    "n": "Logitech - G715 Aurora Collection TKL Wireless Mechanical Tactile Switch Gaming Keyboard for PC/Mac with Palm Rest Included - White Mist",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/01579c20-566e-4ca6-aed7-263e0dc745ab.jpg",
+    "c": "Keyboard",
+    "b": "Logitech",
+    "pr": 220,
+    "msrp": 220,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6511298&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6511298.p%3FskuId%3D6511298","price":219.99,"inStock":false}}
+  },
+  {
+    "id": 100194,
+    "n": "REDRAGON - K631-RGB 65% Wired Mechanical Red Switch Gaming Keyboard with RGB Backlighting - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/af692f06-044e-43d4-a4b3-ad7ac565fec0.jpg",
+    "c": "Keyboard",
+    "b": "Redragon",
+    "pr": 50,
+    "msrp": 50,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6515127&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6515127.p%3FskuId%3D6515127","price":49.99,"inStock":true}}
+  },
+  {
+    "id": 100195,
+    "n": "CORSAIR - K60 PRO TKL Wired Optical-Mechanical OPX Linear Switch Gaming Keyboard with per-key RGB Backlighting - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/e3641f4d-a8bc-4365-8bbb-4df95db08bcd.jpg",
+    "c": "Keyboard",
+    "b": "Corsair",
+    "pr": 75,
+    "msrp": 100,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6599034&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6599034.p%3FskuId%3D6599034","price":74.99,"inStock":true}}
+  },
+  {
+    "id": 100196,
+    "n": "CORSAIR - K100 Air Wireless Full-Size Bluetooth RGB Mechanical Cherry MX Ultra Low Profile Tactile Switch Gaming Keyboard - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6518/6518230_sd.jpg",
+    "c": "Keyboard",
+    "b": "Corsair",
+    "pr": 170,
+    "msrp": 330,
+    "r": 4.3,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6518230&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6518230.p%3FskuId%3D6518230","price":169.99,"inStock":true}}
+  },
+  {
+    "id": 100197,
+    "n": "Glorious - GPBT Gradient Universal Keycap Set Compatible with Most 100% 85% 80% TKL 60% Compact 75% Mechanical Keyboards - Celestial Fire",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6528/6528068_sd.jpg",
+    "c": "Keyboard",
+    "b": "Glorious",
+    "pr": 20,
+    "msrp": 100,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6528068&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6528068.p%3FskuId%3D6528068","price":19.99,"inStock":false}}
+  },
+  {
+    "id": 100198,
+    "n": "Glorious - Lubed Mechanical Keyboard 5-pin Hot Swappable Switches (36x) - Clicky - Raptor",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1f8bd56e-13fe-4a1a-ae3a-3db62ab5ec96.png",
+    "c": "Keyboard",
+    "b": "Glorious",
+    "pr": 25,
+    "msrp": 40,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547951&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547951.p%3FskuId%3D6547951","price":24.99,"inStock":true}}
+  },
+  {
+    "id": 100199,
+    "n": "SteelSeries - Apex 9 Mini 60% Wired Optical OptiPoint Adjustable Actuation Switch Gaming Keyboard with Rapid Tap - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/566f8eb6-46c5-4cad-bb25-1e76b73a7ee8.jpg",
+    "c": "Keyboard",
+    "b": "SteelSeries",
+    "pr": 105,
+    "msrp": 130,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6519664&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6519664.p%3FskuId%3D6519664","price":105,"inStock":true}}
+  },
+  {
+    "id": 100200,
+    "n": "CORSAIR - K65 PRO MINI RGB 65% Optical-Mechanical Gaming Keyboard Backlit RGB LED, OPX - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547466_sd.jpg",
+    "c": "Keyboard",
+    "b": "Corsair",
+    "pr": 80,
+    "msrp": 150,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547466&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547466.p%3FskuId%3D6547466","price":79.99,"inStock":true}}
+  },
+  {
+    "id": 100201,
+    "n": "Glorious - GMMK 2 Prebuilt 96% Full Size Wired Mechanical Linear Switch Gaming Keyboard with Hotswappable Switches - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547948_sd.jpg",
+    "c": "Keyboard",
+    "b": "Glorious",
+    "pr": 80,
+    "msrp": 120,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547948&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547948.p%3FskuId%3D6547948","price":79.99,"inStock":true}}
+  },
+  {
+    "id": 100202,
+    "n": "Glorious - Polychroma Universal RGB Keycaps for 100% 85% 80% TKL 60% Compact 75% Mechanical Keyboards - Translucent",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547954_sd.jpg",
+    "c": "Keyboard",
+    "b": "Glorious",
+    "pr": 34,
+    "msrp": 40,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547954&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547954.p%3FskuId%3D6547954","price":33.99,"inStock":false}}
+  },
+  {
+    "id": 100203,
+    "n": "Logitech - PRO X TKL LIGHTSPEED Wireless Mechanical Tactile Switch Gaming Keyboard with LIGHTSYNC RGB for PC - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/3d26a24f-526d-4924-945f-c8ec35f9ad05.jpg",
+    "c": "Keyboard",
+    "b": "Logitech",
+    "pr": 166,
+    "msrp": 220,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6556751&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6556751.p%3FskuId%3D6556751","price":165.99,"inStock":true}}
+  },
+  {
+    "id": 100204,
+    "n": "Logitech - PRO X 60 LIGHTSPEED TKL 60% Wireless Mechanical GX Optical Tactile Switch Gaming Keyboard with LIGHTSYNC RGB for PC - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/b56a9eac-32fc-4d33-a36d-46ac587633f4.png",
+    "c": "Keyboard",
+    "b": "Logitech",
+    "pr": 119,
+    "msrp": 180,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578084&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578084.p%3FskuId%3D6578084","price":118.97,"inStock":true}}
+  },
+  {
+    "id": 100205,
+    "n": "ASUS - ROG Strix Scope II X Full-size Wired Mechanical RGB Gaming Keyboard with Hot-Swappable ROG NX Snow Switches - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/2b0d2b83-4ddf-406d-aa05-4efa6626a970.jpg",
+    "c": "Keyboard",
+    "b": "ASUS",
+    "pr": 100,
+    "msrp": 130,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633432&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633432.p%3FskuId%3D6633432","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100206,
+    "n": "Logitech - G515 LIGHTSPEED TKL Wireless Mechanical Tactile (Brown) Switch Gaming Keyboard with LIGHTSYNC RGB - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6586/6586064_sd.png",
+    "c": "Keyboard",
+    "b": "Logitech",
+    "pr": 130,
+    "msrp": 160,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586064&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586064.p%3FskuId%3D6586064","price":129.99,"inStock":true}}
+  },
+  {
+    "id": 100207,
+    "n": "Glorious - GMMK 3 100% Wired Mechanical Linear Switch Gaming Keyboard with Hot-swappable Switches - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c8afb1ac-7d85-4f69-a1b7-720dbd0ee296.png",
+    "c": "Keyboard",
+    "b": "Glorious",
+    "pr": 165,
+    "msrp": 165,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586712&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586712.p%3FskuId%3D6586712","price":164.99,"inStock":true}}
+  },
+  {
+    "id": 100208,
+    "n": "Glorious - Polychroma Translucent Universal RGB Keycaps for 100% 85% 80% TKL 60% Compact 75% Mechanical Keyboards - Translucent V2",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ec9f5019-276e-4191-b83b-76005b089774.jpg",
+    "c": "Keyboard",
+    "b": "Glorious",
+    "pr": 40,
+    "msrp": 50,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586715&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586715.p%3FskuId%3D6586715","price":39.99,"inStock":true}}
+  },
+  {
+    "id": 100209,
+    "n": "Glorious - GMMK 3 HE 75% Wired Hall-Effect Linear Switch Gaming Keyboard with Rapid Trigger and Adjustable Actuation - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/a4e279da-7efe-47e2-a702-32c99393bb64.png",
+    "c": "Keyboard",
+    "b": "Glorious",
+    "pr": 171,
+    "msrp": 225,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586717&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586717.p%3FskuId%3D6586717","price":170.99,"inStock":true}}
+  },
+  {
+    "id": 100210,
+    "n": "Glorious - GMMK 3 PRO 75% Wired Mechanical Linear Switch Gaming Keyboard with Hot-swappable Switches - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/247c0096-2c3e-447b-89d6-610cbb4c5e9a.png",
+    "c": "Keyboard",
+    "b": "Glorious",
+    "pr": 300,
+    "msrp": 300,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586725&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586725.p%3FskuId%3D6586725","price":299.99,"inStock":true}}
+  },
+  {
+    "id": 100211,
+    "n": "Glorious - GMMK 3 65% Wired Mechanical Linear Switch Gaming Keyboard with Hot-swappable Switches - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4b5d4cd5-0808-4f1d-93b5-8d88342d4f9a.png",
+    "c": "Keyboard",
+    "b": "Glorious",
+    "pr": 116,
+    "msrp": 140,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586727&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586727.p%3FskuId%3D6586727","price":115.99,"inStock":true}}
+  },
+  {
+    "id": 100212,
+    "n": "DROP - CSTM80 TKL Wired Mechanical Gaming Keyboard with RGB Backlighting - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c73a8d20-8d2e-4163-b683-e852d3327771.jpg",
+    "c": "Keyboard",
+    "b": "Drop",
+    "pr": 129,
+    "msrp": 199,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589585&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589585.p%3FskuId%3D6589585","price":129,"inStock":true}}
+  },
+  {
+    "id": 100213,
+    "n": "DROP - The Lord of the Rings TKL Wired Speech Mechanical Gaming Keyboard - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6197e028-83d1-4b95-a185-101ba534405b.jpg",
+    "c": "Keyboard",
+    "b": "Drop",
+    "pr": 229,
+    "msrp": 229,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589586&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589586.p%3FskuId%3D6589586","price":229,"inStock":true}}
+  },
+  {
+    "id": 100214,
+    "n": "Logitech - PRO X TKL RAPID Wired Hall-Effect Gaming Keyboard with Magnetic Analog Switch and Customizable RGB Lighting for PC - Magenta",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/eb479c4d-9a13-47c7-b7a6-6f3cd731d691.jpg",
+    "c": "Keyboard",
+    "b": "Logitech",
+    "pr": 160,
+    "msrp": 190,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6599037&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6599037.p%3FskuId%3D6599037","price":159.99,"inStock":true}}
+  },
+  {
+    "id": 100215,
+    "n": "Razer - Joro Portable 75% Wireless Scissor Gaming Keyboard With Chroma RGB Backlighting - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ea6ffabd-9521-420f-8e64-8f36d76ed5a3.jpg",
+    "c": "Keyboard",
+    "b": "Razer",
+    "pr": 130,
+    "msrp": 140,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621500&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621500.p%3FskuId%3D6621500","price":129.99,"inStock":true}}
+  },
+  {
+    "id": 100216,
+    "n": "ASUS - ROG Falcata 75% Wireless Magnetic Hall Effect RGB Ergonomic Gaming Keyboard with Hot-Swappable ROG HFX V2 Switches - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/aced8755-79bc-4ec5-afe1-1d56d960d176.png",
+    "c": "Keyboard",
+    "b": "ASUS",
+    "pr": 350,
+    "msrp": 350,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633436&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633436.p%3FskuId%3D6633436","price":349.99,"inStock":true}}
+  },
+  {
+    "id": 100217,
+    "n": "ASUS - ROG Azoth X 75% Wireless Mechanical RGB Gaming Keyboard with Hot-Swappable ROG NX Snow Switches - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/2d3a224e-952f-452b-990b-ef62dad626b2.jpg",
+    "c": "Keyboard",
+    "b": "ASUS",
+    "pr": 225,
+    "msrp": 270,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633438&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633438.p%3FskuId%3D6633438","price":224.99,"inStock":true}}
+  },
+  {
+    "id": 100218,
+    "n": "Glorious - GMBK 75% Wired Membrane Gaming Keyboard with Swappable MX-Compatible Keycaps - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/dd50b8da-cc30-485a-8b30-fadda75c08a8.jpg",
+    "c": "Keyboard",
+    "b": "Glorious",
+    "pr": 50,
+    "msrp": 60,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636034&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636034.p%3FskuId%3D6636034","price":49.99,"inStock":true}}
+  },
+  {
+    "id": 100219,
+    "n": "CORSAIR - VANGUARD PRO 96 RGB Wired Magnetic MGX Linear Hall Effect 96% Gaming Keyboard with FlashTap SOCD+Rapid trigger - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/aa5ad82f-7c1b-49ab-9f1c-74419b440e4e.png",
+    "c": "Keyboard",
+    "b": "Corsair",
+    "pr": 190,
+    "msrp": 230,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637498&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637498.p%3FskuId%3D6637498","price":189.99,"inStock":true}}
+  },
+  {
+    "id": 100220,
+    "n": "CORSAIR - VANGUARD 96 RGB Wired MLX Quantum Linear Mechanical Switch 96% Gaming Keyboard with FlashTap SOCD - Dual Tone",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/9be10b95-8e90-4a5d-b85f-cbc6a7d8e8df.png",
+    "c": "Keyboard",
+    "b": "Corsair",
+    "pr": 150,
+    "msrp": 180,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637502&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637502.p%3FskuId%3D6637502","price":149.99,"inStock":true}}
+  },
+  {
+    "id": 100221,
+    "n": "Keychron - K10 HE 100% Custom Hall Effect Mechanical Gaming Keyboard with Programmable QMK Launcher Software - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/71a1417b-3d5f-45c1-99f0-24ab3c6d41b9.png",
+    "c": "Keyboard",
+    "b": "Keychron",
+    "pr": 145,
+    "msrp": 145,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644852&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644852.p%3FskuId%3D6644852","price":144.99,"inStock":true}}
+  },
+  {
+    "id": 100222,
+    "n": "CORSAIR - GALLEON 100 SD Stream Deck-Integrated Mechanical Gaming Keyboard - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/b5df4e82-0fef-4f7f-aa5e-67fecb5372c2.png",
+    "c": "Keyboard",
+    "b": "Corsair",
+    "pr": 350,
+    "msrp": 350,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6667833&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6667833.p%3FskuId%3D6667833","price":349.99,"inStock":true}}
+  },
+  {
+    "id": 100223,
+    "n": "Astro Gaming - A20 Gen 2 Wireless Over-the-Ear Gaming Headset for Xbox Series X|S, Xbox One, Windows, Mac OS - White/Green",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6423/6423471_sd.jpg",
+    "c": "Headset",
+    "b": "Astro Gaming",
+    "pr": 100,
+    "msrp": 100,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6423471&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6423471.p%3FskuId%3D6423471","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100224,
+    "n": "Astro Gaming - A10 Gen 2 Wired Over-the-Ear Gaming Headset for Windows, MacOS - Gray",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6498/6498042_sd.jpg",
+    "c": "Headset",
+    "b": "Astro Gaming",
+    "pr": 41,
+    "msrp": 70,
+    "r": 4.3,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6498042&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6498042.p%3FskuId%3D6498042","price":40.99,"inStock":true}}
+  },
+  {
+    "id": 100225,
+    "n": "HyperX - CloudX Stinger 2 Wired Gaming Headset for Xbox - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6557/6557061_sd.jpg",
+    "c": "Headset",
+    "b": "HyperX",
+    "pr": 50,
+    "msrp": 50,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6557061&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6557061.p%3FskuId%3D6557061","price":49.99,"inStock":true}}
+  },
+  {
+    "id": 100226,
+    "n": "Sony - PULSE Elite Wireless Gaming Headset - for PS5 - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6567/6567072_sd.jpg",
+    "c": "Headset",
+    "b": "Sony",
+    "pr": 150,
+    "msrp": 150,
+    "r": 4.1,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6567072&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6567072.p%3FskuId%3D6567072","price":149.99,"inStock":true}}
+  },
+  {
+    "id": 100227,
+    "n": "Logitech - G535 Lightspeed Wireless Over-the-Ear Gaming Headset for PS5, PS4, Windows - Black-Blue",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6582/6582440_sd.jpg",
+    "c": "Headset",
+    "b": "Logitech",
+    "pr": 100,
+    "msrp": 100,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6582440&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6582440.p%3FskuId%3D6582440","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100228,
+    "n": "Turtle Beach - Atlas 200 Wired Over-Ear Gaming Headset for PlayStation 5 & PlayStation 4 - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f4e584ed-c49d-4824-865e-ae6134d53fbd.png",
+    "c": "Headset",
+    "b": "Turtle Beach",
+    "pr": 60,
+    "msrp": 60,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641078&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641078.p%3FskuId%3D6641078","price":59.99,"inStock":true}}
+  },
+  {
+    "id": 100229,
+    "n": "Logitech - Astro A50 X LIGHTSPEED Wireless w/ PLAYSYNC Over-the-Ear Gaming Headset + Base Station for Xbox Series X|S, PS5, PC/MAC - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f8822b4f-9444-4631-bd1e-6911421f0006.jpg",
+    "c": "Headset",
+    "b": "Logitech",
+    "pr": 400,
+    "msrp": 400,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6572603&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6572603.p%3FskuId%3D6572603","price":399.99,"inStock":true}}
+  },
+  {
+    "id": 100230,
+    "n": "Logitech - Astro A20 X LIGHTSPEED Wireless Gaming Headset with 2-system PLAYSYNC for PS5, Xbox Series X|S, Nintendo Switch, PC - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4dc8c6c2-1acc-4d02-8433-5cb7aa486fc2.png",
+    "c": "Headset",
+    "b": "Logitech",
+    "pr": 180,
+    "msrp": 180,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641635&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641635.p%3FskuId%3D6641635","price":179.99,"inStock":true}}
+  },
+  {
+    "id": 100231,
+    "n": "Logitech - G935 Wireless Over-the-Ear Gaming Headset for Windows - Black/Blue",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/41f1983f-49a0-4646-88a3-33410ed752bd.jpg",
+    "c": "Headset",
+    "b": "Logitech",
+    "pr": 120,
+    "msrp": 180,
+    "r": 4.3,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6320787&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6320787.p%3FskuId%3D6320787","price":119.99,"inStock":true}}
+  },
+  {
+    "id": 100232,
+    "n": "Turtle Beach - Battle Buds In-Ear Gaming Headset for Mobile Gaming, Xbox Series X|S, Xbox One, PS5, PS4, PS4 Pro, PC & Mac - Black/Silver",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6373/6373474_sd.jpg",
+    "c": "Headset",
+    "b": "Turtle Beach",
+    "pr": 20,
+    "msrp": 30,
+    "r": 4.2,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6373474&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6373474.p%3FskuId%3D6373474","price":19.99,"inStock":false}}
+  },
+  {
+    "id": 100233,
+    "n": "Logitech - PRO X Wired Over-the-Ear Gaming Headset (2nd Generation):X 7.1 for PC,Xbox One,Xbox Series X|S,PS5,PS4, Nintendo Switch - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/2b2bb10e-e9a4-4c2e-9a57-254db2f1dc1f.jpg",
+    "c": "Headset",
+    "b": "Logitech",
+    "pr": 99,
+    "msrp": 130,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644061&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644061.p%3FskuId%3D6644061","price":99.13,"inStock":true}}
+  },
+  {
+    "id": 100234,
+    "n": "CORSAIR - HS80 RGB Wired Gaming Headset for PC - Carbon",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6506/6506968_sd.jpg",
+    "c": "Headset",
+    "b": "Corsair",
+    "pr": 80,
+    "msrp": 110,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6506968&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6506968.p%3FskuId%3D6506968","price":79.99,"inStock":true}}
+  },
+  {
+    "id": 100235,
+    "n": "Razer - Barracuda X 2022 Edition Wireless Over-the-Ear Gaming Headset for PC, Mac, Playstation, Switch, Steam Deck, Mobile - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d9557036-c529-48fc-8247-4f50508c87ef.jpg",
+    "c": "Headset",
+    "b": "Razer",
+    "pr": 80,
+    "msrp": 100,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6502762&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6502762.p%3FskuId%3D6502762","price":79.99,"inStock":true}}
+  },
+  {
+    "id": 100236,
+    "n": "Sony - INZONE H9 Wireless Noise Cancelling Gaming Headset, Perfect for PS5, PS4, PC - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6510/6510363ld.jpg",
+    "c": "Headset",
+    "b": "Sony",
+    "pr": 200,
+    "msrp": 330,
+    "r": 4.3,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6510363&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6510363.p%3FskuId%3D6510363","price":199.99,"inStock":true}}
+  },
+  {
+    "id": 100237,
+    "n": "Sony - INZONE H3 wired Gaming Headset for PC, PS5, PS4 - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6510/6510365ld.jpg",
+    "c": "Headset",
+    "b": "Sony",
+    "pr": 80,
+    "msrp": 120,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6510365&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6510365.p%3FskuId%3D6510365","price":79.99,"inStock":true}}
+  },
+  {
+    "id": 100238,
+    "n": "CORSAIR - HS55 SURROUND v2 Wired Gaming Headset for PC, Mac, PS5, PS4, Xbox, Switch, and Mobile - Carbon",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4d179250-037e-4943-b7bf-558e73f23b6e.jpg",
+    "c": "Headset",
+    "b": "Corsair",
+    "pr": 60,
+    "msrp": 60,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594139&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594139.p%3FskuId%3D6594139","price":59.99,"inStock":true}}
+  },
+  {
+    "id": 100239,
+    "n": "Logitech - PRO X 2 LIGHTSPEED Wireless Over-the-Ear Gaming Headset for PC, PS5, PS4, Nintendo Switch - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8a4f3c50-94a2-4036-b020-79e0700c15f0.jpg",
+    "c": "Headset",
+    "b": "Logitech",
+    "pr": 230,
+    "msrp": 280,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6544740&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6544740.p%3FskuId%3D6544740","price":229.99,"inStock":true}}
+  },
+  {
+    "id": 100240,
+    "n": "Sony - INZONE Buds Truly Wireless Noise Cancelling Gaming Earbuds, Perfect for PS5, PC - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6562/6562123_sd.jpg",
+    "c": "Headset",
+    "b": "Sony",
+    "pr": 180,
+    "msrp": 240,
+    "r": 4.3,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562123&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562123.p%3FskuId%3D6562123","price":179.99,"inStock":true}}
+  },
+  {
+    "id": 100241,
+    "n": "Sony - INZONE H5 Wireless Gaming Headset for PC, PS5, PS4 - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6562/6562124cv11d.jpg",
+    "c": "Headset",
+    "b": "Sony",
+    "pr": 158,
+    "msrp": 180,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562124&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562124.p%3FskuId%3D6562124","price":158,"inStock":true}}
+  },
+  {
+    "id": 100242,
+    "n": "CORSAIR - VIRTUOSO PRO Open Back Wired Gaming Headset for PC, Mac, PS5, PS4, Xbox, Switch, and Mobile - Carbon",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6562/6562867_sd.jpg",
+    "c": "Headset",
+    "b": "Corsair",
+    "pr": 178,
+    "msrp": 200,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562867&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562867.p%3FskuId%3D6562867","price":177.99,"inStock":true}}
+  },
+  {
+    "id": 100243,
+    "n": "HyperX - Cloud Mini Wired Headset for PC, PS5, PS4, Xbox Series X|S, Xbox One, Nintendo Switch, Chromebook, and Mobile - Blue/Red/Yellow",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6581/6581760_sd.jpg",
+    "c": "Headset",
+    "b": "HyperX",
+    "pr": 30,
+    "msrp": 30,
+    "r": 4.3,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581760&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6581760.p%3FskuId%3D6581760","price":29.99,"inStock":true}}
+  },
+  {
+    "id": 100244,
+    "n": "Razer - Kraken Kitty V3 X Wired Over-the-Ear Gaming Headset for PC, Mac, PlayStation, Nintendo Switch, Steam Deck, Mobile - Quartz",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8a8b1694-e11d-48ab-95ad-9bc29bde7c8d.jpg",
+    "c": "Headset",
+    "b": "Razer",
+    "pr": 50,
+    "msrp": 60,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6635946&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6635946.p%3FskuId%3D6635946","price":49.99,"inStock":true}}
+  },
+  {
+    "id": 100245,
+    "n": "JBL - Quantum 100X Wired Gaming Headset for Xbox, PC, Switch, PS5 and PS4 - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6587/6587294_sd.jpg",
+    "c": "Headset",
+    "b": "JBL",
+    "pr": 45,
+    "msrp": 45,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587294&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587294.p%3FskuId%3D6587294","price":44.99,"inStock":false}}
+  },
+  {
+    "id": 100246,
+    "n": "JBL - Quantum 100P Wired Gaming Headset for PS5, PS4, PC, and Switch - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6587/6587297_sd.jpg",
+    "c": "Headset",
+    "b": "JBL",
+    "pr": 45,
+    "msrp": 45,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587297&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587297.p%3FskuId%3D6587297","price":44.99,"inStock":false}}
+  },
+  {
+    "id": 100247,
+    "n": "JBL - Quantum 910X Wireless Gaming Headset for Xbox, PC, Switch, PS5 and PS4 - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6587/6587298_sd.jpg",
+    "c": "Headset",
+    "b": "JBL",
+    "pr": 330,
+    "msrp": 330,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587298&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587298.p%3FskuId%3D6587298","price":329.99,"inStock":true}}
+  },
+  {
+    "id": 100248,
+    "n": "JBL - Quantum 910P Wireless Gaming Headset for PS5, PS4, PC, and Switch - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6587/6587299_sd.jpg",
+    "c": "Headset",
+    "b": "JBL",
+    "pr": 330,
+    "msrp": 330,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587299&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587299.p%3FskuId%3D6587299","price":329.99,"inStock":false}}
+  },
+  {
+    "id": 100249,
+    "n": "CORSAIR - VIRTUOSO MAX Over-the-Ear Wireless Gaming Headset for PC, Mac, PS5, PS4, Switch and Mobile - Carbon",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c01eb712-a6e3-4ba2-a8eb-055fcdb16a04.jpg",
+    "c": "Headset",
+    "b": "Corsair",
+    "pr": 250,
+    "msrp": 300,
+    "r": 4.1,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594136&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594136.p%3FskuId%3D6594136","price":249.99,"inStock":true}}
+  },
+  {
+    "id": 100250,
+    "n": "SteelSeries - Arctis GameBuds True Wireless Noise Cancelling Gaming Earbuds for Xbox, PS5, PS4, PC, Switch, ROG Ally, Steam Deck - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d891bb99-fd4c-4ce9-a6ce-7ae7e9c0a505.jpg",
+    "c": "Headset",
+    "b": "SteelSeries",
+    "pr": 167,
+    "msrp": 200,
+    "r": 4.1,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594142&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594142.p%3FskuId%3D6594142","price":166.99,"inStock":true}}
+  },
+  {
+    "id": 100251,
+    "n": "Logitech - A50 LIGHTSPEED Wireless Gaming Headset + Base Station (Gen 5) for Xbox, PlayStation 5, PC/Mac or Nintendo Switch - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/cae3c48e-8228-4980-be7d-3672f3371a12.jpg",
+    "c": "Headset",
+    "b": "Logitech",
+    "pr": 260,
+    "msrp": 300,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595014&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595014.p%3FskuId%3D6595014","price":259.99,"inStock":true}}
+  },
+  {
+    "id": 100252,
+    "n": "SteelSeries - Arctis Pro Wireless DTS Headphone:X v2.0 Surround Sound Gaming Headset for PS4 and PC - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/e6effddf-3f89-4851-ae3d-35b424e70080.jpg",
+    "c": "Headset",
+    "b": "SteelSeries",
+    "pr": 280,
+    "msrp": 280,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595755&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595755.p%3FskuId%3D6595755","price":279.99,"inStock":false}}
+  },
+  {
+    "id": 100253,
+    "n": "CORSAIR - VOID v2 Wireless Gaming Headset for PC, PS5, PS4, Nintendo Switch, and Mobile - Carbon",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/dc82c16c-f51a-403b-ab86-acbd4605341c.png",
+    "c": "Headset",
+    "b": "Corsair",
+    "pr": 90,
+    "msrp": 130,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616893&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616893.p%3FskuId%3D6616893","price":89.99,"inStock":true}}
+  },
+  {
+    "id": 100254,
+    "n": "HyperX - Cloud Jet Dual Wireless Gaming Headset for PC, Mac, PS5, PS4, and Mobile - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4caeffe7-cc7d-44f0-8cbb-215454869a12.jpg",
+    "c": "Headset",
+    "b": "HyperX",
+    "pr": 50,
+    "msrp": 80,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618285&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618285.p%3FskuId%3D6618285","price":49.99,"inStock":true}}
+  },
+  {
+    "id": 100255,
+    "n": "Logitech - G522 LIGHTSPEED Wireless Bluetooth Over-the-Ear Gaming Headset for Windows - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d596441e-6054-485f-8b78-e949f4ce3aab.jpg",
+    "c": "Headset",
+    "b": "Logitech",
+    "pr": 160,
+    "msrp": 160,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629016&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629016.p%3FskuId%3D6629016","price":159.99,"inStock":true}}
+  },
+  {
+    "id": 100256,
+    "n": "Razer - BlackShark V3 X Hyperspeed Wireless Over-the-Ear Gaming Headset for PC, Mac, Playstation, Nintendo Switch, Smartphone - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/e4fc9a36-5d7f-498c-805e-dcca52e53f2f.jpg",
+    "c": "Headset",
+    "b": "Razer",
+    "pr": 75,
+    "msrp": 100,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632890&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632890.p%3FskuId%3D6632890","price":74.99,"inStock":true}}
+  },
+  {
+    "id": 100257,
+    "n": "Sony - INZONE E9 Wired In-Ear Monitor for Gaming - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/885ac256-d2d9-4f70-9c83-5ca2329d963d.jpg",
+    "c": "Headset",
+    "b": "Sony",
+    "pr": 140,
+    "msrp": 150,
+    "r": 4.2,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641368&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641368.p%3FskuId%3D6641368","price":139.99,"inStock":true}}
+  },
+  {
+    "id": 100258,
+    "n": "Logitech - G321 LIGHTSPEED Wireless Over-the-Ear Bluetooth Gaming Headset for Windows, PS4, PS5, Nintendo Switch, Mobile - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d1e1b63b-60a0-4b62-b001-8af367d88846.jpg",
+    "c": "Headset",
+    "b": "Logitech",
+    "pr": 60,
+    "msrp": 60,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642553&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642553.p%3FskuId%3D6642553","price":59.99,"inStock":true}}
+  },
+  {
+    "id": 100259,
+    "n": "HyperX - Cloud Flight 2 Wireless Gaming Headset for PC, PS5, PS4, Nintendo Switch, Mac, Mobile, and Bluetooth - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/763a1ba4-757d-4df1-b0d3-da344060764e.jpg",
+    "c": "Headset",
+    "b": "HyperX",
+    "pr": 120,
+    "msrp": 130,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642944&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642944.p%3FskuId%3D6642944","price":119.99,"inStock":true}}
+  },
+  {
+    "id": 100260,
+    "n": "Samson - Q2U Dynamic USB Microphone - Gray",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6361/6361715_sd.jpg",
+    "c": "Microphone",
+    "b": "Samson",
+    "pr": 100,
+    "msrp": 100,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6361715&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6361715.p%3FskuId%3D6361715","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100261,
+    "n": "RØDE - PODMIC Dynamic Podcasting Microphone - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6393/6393956_sd.jpg",
+    "c": "Microphone",
+    "b": "RØDE",
+    "pr": 100,
+    "msrp": 100,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6393956&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6393956.p%3FskuId%3D6393956","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100262,
+    "n": "Shure - MV7X Podcast Microphone – XLR Outputs for Podcasting, Live Streaming, Music Recording & Youtube Content - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6483/6483375_sd.jpg",
+    "c": "Microphone",
+    "b": "Shure",
+    "pr": 180,
+    "msrp": 200,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6483375&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6483375.p%3FskuId%3D6483375","price":179.99,"inStock":true}}
+  },
+  {
+    "id": 100263,
+    "n": "RØDE - PodMic USB - Versatile Dynamic Broadcast Microphone - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547472_sd.jpg",
+    "c": "Microphone",
+    "b": "RØDE",
+    "pr": 206,
+    "msrp": 210,
+    "r": 4.4,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547472&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547472.p%3FskuId%3D6547472","price":205.99,"inStock":true}}
+  },
+  {
+    "id": 100264,
+    "n": "Logitech - Yeti GX Wired Supercardioid Dynamic Gaming Microphone with LIGHTSYNC RGB Lights - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6556/6556755_sd.jpg",
+    "c": "Microphone",
+    "b": "Logitech",
+    "pr": 170,
+    "msrp": 170,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6556755&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6556755.p%3FskuId%3D6556755","price":169.99,"inStock":true}}
+  },
+  {
+    "id": 100265,
+    "n": "Logitech - Yeticaster GX Dynamic LIGHTSYNC RGB Gaming Microphone and Premium Broadcast Boom Arm - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6570/6570531_sd.jpg",
+    "c": "Microphone",
+    "b": "Logitech",
+    "pr": 270,
+    "msrp": 270,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6570531&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6570531.p%3FskuId%3D6570531","price":269.99,"inStock":true}}
+  },
+  {
+    "id": 100266,
+    "n": "Shure - MV7+ Podcast Microphone - USB-C & XLR Outputs for Podcasting, Live Streaming, Music Recording & Youtube Content - White",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d5ff4e7b-cc93-4787-960a-616893a383a0.jpg",
+    "c": "Microphone",
+    "b": "Shure",
+    "pr": 270,
+    "msrp": 300,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6576377&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6576377.p%3FskuId%3D6576377","price":269.99,"inStock":true}}
+  },
+  {
+    "id": 100267,
+    "n": "Shure - MV6 Gaming & Streaming USB Microphone - Plug & Play No drivers. No delays. Real-time Denoiser for Professional Sound - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f87967c8-0e79-4327-9c09-b48491b17564.jpg",
+    "c": "Microphone",
+    "b": "Shure",
+    "pr": 170,
+    "msrp": 170,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601728&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601728.p%3FskuId%3D6601728","price":169.99,"inStock":true}}
+  },
+  {
+    "id": 100268,
+    "n": "FIFINE - XLR/USB Wired Cardioid Dynamic Microphone with RGB Lighting - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/b7324f62-8634-4733-8fc6-e8d9cd810161.jpg",
+    "c": "Microphone",
+    "b": "FIFINE",
+    "pr": 55,
+    "msrp": 55,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601911&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601911.p%3FskuId%3D6601911","price":54.99,"inStock":true}}
+  },
+  {
+    "id": 100269,
+    "n": "FIFINE - AM8T Gaming Microphone Bundle – Studio-Quality Sound, USB/XLR, RGB Lighting, Arm Boom Stand - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/94b561da-ce86-4b19-a1eb-5f23669c0041.jpg",
+    "c": "Microphone",
+    "b": "FIFINE",
+    "pr": 68,
+    "msrp": 68,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6622725&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6622725.p%3FskuId%3D6622725","price":67.99,"inStock":true}}
+  },
+  {
+    "id": 100270,
+    "n": "Blue Microphones - Blue Yeti Professional Multi-Pattern USB Condenser Microphone - Blackout",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4758/4758301cv22d.jpg",
+    "c": "Microphone",
+    "b": "Blue",
+    "pr": 107,
+    "msrp": 140,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4758301&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4758301.p%3FskuId%3D4758301","price":106.99,"inStock":true}}
+  },
+  {
+    "id": 100271,
+    "n": "Blue Microphones - Blue Yeti Nano Premium Wired Multi-Pattern USB Condenser Microphone - Shadow Gray",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6277/6277346_sd.jpg",
+    "c": "Microphone",
+    "b": "Blue",
+    "pr": 100,
+    "msrp": 120,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6277346&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6277346.p%3FskuId%3D6277346","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100272,
+    "n": "Razer - Seiren V2 Pro Professional-grade USB Microphone - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1e8985c4-faa3-4879-8558-de33bcc3622e.jpg",
+    "c": "Microphone",
+    "b": "Razer",
+    "pr": 150,
+    "msrp": 150,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6480355&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6480355.p%3FskuId%3D6480355","price":149.99,"inStock":true}}
+  },
+  {
+    "id": 100273,
+    "n": "RØDE - NT-USB+ Wired Condenser Microphone with USB Type-C - Black/Blue",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6530/6530807_rd.jpg",
+    "c": "Microphone",
+    "b": "RØDE",
+    "pr": 169,
+    "msrp": 180,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6530807&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6530807.p%3FskuId%3D6530807","price":168.99,"inStock":true}}
+  },
+  {
+    "id": 100274,
+    "n": "RØDE - NT1 5th Generation Studio Condenser Microphone - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6540/6540970_sd.jpg",
+    "c": "Microphone",
+    "b": "RØDE",
+    "pr": 245,
+    "msrp": 250,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6540970&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6540970.p%3FskuId%3D6540970","price":244.99,"inStock":true}}
+  },
+  {
+    "id": 100275,
+    "n": "Logitech - Yeti Orb Wired Cardioid Condenser Gaming Microphone with LIGHTSYNC RGB Lights - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/29fdcd40-53c6-44dd-801b-d02e47fd3cd0.jpg",
+    "c": "Microphone",
+    "b": "Logitech",
+    "pr": 60,
+    "msrp": 70,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6556752&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6556752.p%3FskuId%3D6556752","price":59.99,"inStock":true}}
+  },
+  {
+    "id": 100276,
+    "n": "Razer - Seiren V3 Mini Wired Ultra-compact Condenser USB Microphone - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d055cf9a-8db8-4952-bcf9-d9e2e93bba7e.jpg",
+    "c": "Microphone",
+    "b": "Razer",
+    "pr": 41,
+    "msrp": 60,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6573619&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6573619.p%3FskuId%3D6573619","price":40.99,"inStock":true}}
+  },
+  {
+    "id": 100277,
+    "n": "HyperX - QuadCast 2 Wired Multi-Pattern USB Electret Condenser Microphone - Frost/Blue",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/34f4cfd1-c89e-4239-9347-188d7a2a1b50.jpg",
+    "c": "Microphone",
+    "b": "HyperX",
+    "pr": 110,
+    "msrp": 150,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618286&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618286.p%3FskuId%3D6618286","price":109.99,"inStock":true}}
+  },
+  {
+    "id": 100278,
+    "n": "FIFINE - Gaming Microphone and Stand Bundle - USB Cardioid Condenser with RGB - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/2356fc4b-9646-4323-bce1-2e116c42599c.jpg",
+    "c": "Microphone",
+    "b": "FIFINE",
+    "pr": 53,
+    "msrp": 53,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601910&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601910.p%3FskuId%3D6601910","price":52.99,"inStock":true}}
+  },
+  {
+    "id": 100279,
+    "n": "FIFINE - A6V USB Condenser Microphone with RGB Lighting - Plug & Play USB-C, Touch Mute for PC, PS5, Streaming - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f873acff-297d-4da6-ad43-aebcf4ab41ae.jpg",
+    "c": "Microphone",
+    "b": "FIFINE",
+    "pr": 33,
+    "msrp": 33,
+    "r": 4.9,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6622722&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6622722.p%3FskuId%3D6622722","price":32.99,"inStock":true}}
+  },
+  {
+    "id": 100280,
+    "n": "HyperX - SoloCast 2 Wired Cardioid USB-C Condenser Gaming Microphone - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/49fc5785-cd2c-4bcb-a5ba-0f3eaa6490ce.jpg",
+    "c": "Microphone",
+    "b": "HyperX",
+    "pr": 60,
+    "msrp": 60,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642761&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642761.p%3FskuId%3D6642761","price":59.99,"inStock":true}}
+  },
+  {
+    "id": 100281,
+    "n": "Shure - SM7B Podcast Microphone – XLR Outputs for Podcasting, Live Streaming, Music Recording & Youtube Content",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/68756c55-6853-43f0-b335-3f82038e7509.jpg",
+    "c": "Microphone",
+    "b": "Shure",
+    "pr": 396,
+    "msrp": 440,
+    "r": 4.9,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9135241&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9135241.p%3FskuId%3D9135241","price":395.99,"inStock":true}}
+  },
+  {
+    "id": 100282,
+    "n": "Logitech - Pro Webcam Full HD 1080 for Laptops with Ultra Wide Angle - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4503/4503702_sd.jpg",
+    "c": "Webcam",
+    "b": "Logitech",
+    "pr": 80,
+    "msrp": 100,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4503702&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4503702.p%3FskuId%3D4503702","price":79.99,"inStock":true}}
+  },
+  {
+    "id": 100283,
+    "n": "Logitech - C922 Pro Stream 1080 Video Streaming, Recording and Video Calling - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f7413b8e-efc2-4935-9e2d-0318ddf42faf.jpg",
+    "c": "Webcam",
+    "b": "Logitech",
+    "pr": 100,
+    "msrp": 120,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5579380&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5579380.p%3FskuId%3D5579380","price":99.99,"inStock":true}}
+  },
+  {
+    "id": 100284,
+    "n": "Logitech - 4K Pro 4096 x 2160 Webcam with Noise-Canceling Mic - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f31b45d4-ddf8-4326-b2c8-04ed2c57edf3.jpg",
+    "c": "Webcam",
+    "b": "Logitech",
+    "pr": 170,
+    "msrp": 170,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5761912&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5761912.p%3FskuId%3D5761912","price":169.99,"inStock":true}}
+  },
+  {
+    "id": 100285,
+    "n": "Logitech - Brio Ultra HD Pro 4096 x 2160 Business Webcam with RightLight 3 and Noise-Cancelling Dual Mics - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5914/5914400_rd.jpg",
+    "c": "Webcam",
+    "b": "Logitech",
+    "pr": 170,
+    "msrp": 170,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5914400&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5914400.p%3FskuId%3D5914400","price":169.99,"inStock":true}}
+  },
+  {
+    "id": 100286,
+    "n": "Logitech - C920s Pro 1080 Video Conferencing, Streaming, and Gaming Webcam with Privacy Shutter - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/52ec5ca1-61ef-43e6-921a-50424fc6b146.jpg",
+    "c": "Webcam",
+    "b": "Logitech",
+    "pr": 70,
+    "msrp": 70,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6321794&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6321794.p%3FskuId%3D6321794","price":69.99,"inStock":true}}
+  },
+  {
+    "id": 100287,
+    "n": "Logitech - StreamCam Plus 1080 Webcam for Live Streaming and Content Creation - Graphite",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6366/6366565_sd.jpg",
+    "c": "Webcam",
+    "b": "Logitech",
+    "pr": 162,
+    "msrp": 170,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6366565&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6366565.p%3FskuId%3D6366565","price":161.99,"inStock":true}}
+  },
+  {
+    "id": 100288,
+    "n": "Logitech - C920e Full HD 1080p Business Webcam - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6448/6448067_rd.jpg",
+    "c": "Webcam",
+    "b": "Logitech",
+    "pr": 70,
+    "msrp": 70,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6448067&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6448067.p%3FskuId%3D6448067","price":69.99,"inStock":true}}
+  },
+  {
+    "id": 100289,
+    "n": "Logitech - Brio 500 1920x1080p Webcam with Privacy Cover - Graphite",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6520/6520150_sd.jpg",
+    "c": "Webcam",
+    "b": "Logitech",
+    "pr": 130,
+    "msrp": 130,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6520150&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6520150.p%3FskuId%3D6520150","price":129.99,"inStock":true}}
+  },
+  {
+    "id": 100290,
+    "n": "Logitech - Brio 100 1080p Full HD Webcam for Meetings and Streaming - Graphite",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6550/6550199_sd.jpg",
+    "c": "Webcam",
+    "b": "Logitech",
+    "pr": 25,
+    "msrp": 40,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6550199&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6550199.p%3FskuId%3D6550199","price":24.99,"inStock":true}}
+  },
+  {
+    "id": 100291,
+    "n": "Logitech - MX Brio Ultra HD 4K Video Conference, Gaming and Streaming Webcam - Pale Gray",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6571/6571655_sd.jpg",
+    "c": "Webcam",
+    "b": "Logitech",
+    "pr": 200,
+    "msrp": 200,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571655&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6571655.p%3FskuId%3D6571655","price":199.99,"inStock":true}}
+  },
+  {
+    "id": 100292,
+    "n": "Insta360 - Link 2 PTZ 4K Webcam for Conferencing, Gaming & Streaming, 1/2\" Sensor, AI Tracking, works w/ Zoom, Teams, Twitch & more - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/72832f2b-d64a-43e6-9f03-3e23ceef8cde.jpg",
+    "c": "Webcam",
+    "b": "Insta360",
+    "pr": 200,
+    "msrp": 200,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595407&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595407.p%3FskuId%3D6595407","price":199.99,"inStock":true}}
+  },
+  {
+    "id": 100293,
+    "n": "Insta360 - Link 2C 4K Webcam for Conferencing, Gaming & Streaming, 1/2\" Sensor, AutoFraming, works w/ Zoom, Teams, Twitch & more - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/71b39eea-a042-4b5f-a39a-411d57d4ac31.jpg",
+    "c": "Webcam",
+    "b": "Insta360",
+    "pr": 150,
+    "msrp": 150,
+    "r": 4.9,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595408&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595408.p%3FskuId%3D6595408","price":149.99,"inStock":true}}
+  },
+  {
+    "id": 100294,
+    "n": "Logitech - C270 720 Webcam with Noise-Reducing Mics - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/be850aa4-4001-4b20-9be3-36ee8064fe04.jpg",
+    "c": "Webcam",
+    "b": "Logitech",
+    "pr": 20,
+    "msrp": 30,
+    "r": 4.5,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9928354&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9928354.p%3FskuId%3D9928354","price":19.99,"inStock":true}}
+  },
+  {
+    "id": 100295,
+    "n": "SteelSeries - QcK Cloth Gaming Mouse Pad (Medium) - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/2822/2822575_sd.jpg",
+    "c": "MousePad",
+    "b": "SteelSeries",
+    "pr": 11,
+    "msrp": 12,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=2822575&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F2822575.p%3FskuId%3D2822575","price":10.99,"inStock":true}}
+  },
+  {
+    "id": 100296,
+    "n": "CORSAIR - MM200 Gaming Mouse Pad - Medium - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4384/4384400_sd.jpg",
+    "c": "MousePad",
+    "b": "Corsair",
+    "pr": 7,
+    "msrp": 17,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4384400&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4384400.p%3FskuId%3D4384400","price":6.99,"inStock":true}}
+  },
+  {
+    "id": 100297,
+    "n": "Razer - Goliathus Mobile Stealth Edition Gaming Mouse Pad - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5869/5869549_sd.jpg",
+    "c": "MousePad",
+    "b": "Razer",
+    "pr": 8,
+    "msrp": 8,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5869549&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5869549.p%3FskuId%3D5869549","price":7.99,"inStock":true}}
+  },
+  {
+    "id": 100298,
+    "n": "SteelSeries - QcK Prism Cloth Gaming Mouse Pad with 2-Zone RGB Illumination XL - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6285/6285961cv18d.jpg",
+    "c": "MousePad",
+    "b": "SteelSeries",
+    "pr": 60,
+    "msrp": 60,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6285961&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6285961.p%3FskuId%3D6285961","price":59.99,"inStock":true}}
+  },
+  {
+    "id": 100299,
+    "n": "CORSAIR - MM300 PRO Gaming Mouse Pad with Premium Spill-Proof Cloth - Extended - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6428/6428299_sd.jpg",
+    "c": "MousePad",
+    "b": "Corsair",
+    "pr": 33,
+    "msrp": 33,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6428299&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6428299.p%3FskuId%3D6428299","price":32.99,"inStock":true}}
+  },
+  {
+    "id": 100300,
+    "n": "CORSAIR - MM350 PRO Premium Spill-Proof Cloth Gaming Mouse Pad – Extended XL - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6428/6428301_sd.jpg",
+    "c": "MousePad",
+    "b": "Corsair",
+    "pr": 25,
+    "msrp": 43,
+    "r": 4.9,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6428301&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6428301.p%3FskuId%3D6428301","price":24.99,"inStock":true}}
+  },
+  {
+    "id": 100301,
+    "n": "Razer - Firefly V2 Gaming Mouse Pad with Chroma RGB Lighting - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6476/6476680_sd.jpg",
+    "c": "MousePad",
+    "b": "Razer",
+    "pr": 50,
+    "msrp": 50,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6476680&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6476680.p%3FskuId%3D6476680","price":49.99,"inStock":true}}
+  },
+  {
+    "id": 100302,
+    "n": "Razer - Strider Hybrid Gaming Mouse Pad (XXL) - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6482/6482628_sd.jpg",
+    "c": "MousePad",
+    "b": "Razer",
+    "pr": 50,
+    "msrp": 50,
+    "r": 4.9,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6482628&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6482628.p%3FskuId%3D6482628","price":49.99,"inStock":true}}
+  },
+  {
+    "id": 100303,
+    "n": "HyperX - Pulsefire Mat Gaming Mouse Pad (XL) - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6499/6499566_sd.jpg",
+    "c": "MousePad",
+    "b": "HyperX",
+    "pr": 30,
+    "msrp": 30,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6499566&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6499566.p%3FskuId%3D6499566","price":29.99,"inStock":true}}
+  },
+  {
+    "id": 100304,
+    "n": "Logitech - G240 Cloth Gaming Mouse Pad with Rubber Base - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6514/6514575_sd.jpg",
+    "c": "MousePad",
+    "b": "Logitech",
+    "pr": 10,
+    "msrp": 10,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6514575&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6514575.p%3FskuId%3D6514575","price":9.99,"inStock":true}}
+  },
+  {
+    "id": 100305,
+    "n": "Logitech - G840 Cloth Gaming Mouse Pad with Rubber Base (Extra Large) - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/54bd742f-7721-4173-95a2-523033ca1fd8.jpg",
+    "c": "MousePad",
+    "b": "Logitech",
+    "pr": 35,
+    "msrp": 40,
+    "r": 4.6,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6514577&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6514577.p%3FskuId%3D6514577","price":34.99,"inStock":true}}
+  },
+  {
+    "id": 100306,
+    "n": "Logitech - G440 Cloth Gaming Mouse Pad with Rubber Base - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d8116eb8-4a45-4079-b20f-98825aacdcec.jpg",
+    "c": "MousePad",
+    "b": "Logitech",
+    "pr": 20,
+    "msrp": 20,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6514578&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6514578.p%3FskuId%3D6514578","price":19.99,"inStock":true}}
+  },
+  {
+    "id": 100307,
+    "n": "Glorious - Elements Ice Hybrid Glass Cloth Gaming Mouse Pad (Large) - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6578/6578719_sd.jpg",
+    "c": "MousePad",
+    "b": "Glorious",
+    "pr": 35,
+    "msrp": 35,
+    "r": 4.7,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578719&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578719.p%3FskuId%3D6578719","price":34.99,"inStock":true}}
+  },
+  {
+    "id": 100308,
+    "n": "Razer - Goliathus Micro-Textured Surface Gaming Mouse Pad with Chroma RGB Lighting - Fortnite Edition",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6586/6586270_sd.jpg",
+    "c": "MousePad",
+    "b": "Razer",
+    "pr": 100,
+    "msrp": 100,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586270&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586270.p%3FskuId%3D6586270","price":99.99,"inStock":false}}
+  },
+  {
+    "id": 100309,
+    "n": "SteelSeries - QcK Performance Gaming Mouse Pad XL - Balance - Black",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/39e9daf7-3ac0-437a-9f64-fb91d37ada27.jpg",
+    "c": "MousePad",
+    "b": "SteelSeries",
+    "pr": 50,
+    "msrp": 50,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614722&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614722.p%3FskuId%3D6614722","price":49.99,"inStock":true}}
+  },
+  {
+    "id": 100310,
+    "n": "Logitech - MX Palm Rest - Graphite",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6379/6379615cv13d.jpg",
+    "c": "MousePad",
+    "b": "Logitech",
+    "pr": 23,
+    "msrp": 23,
+    "r": 4.3,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379615&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379615.p%3FskuId%3D6379615","price":22.99,"inStock":true}}
+  },
+  {
+    "id": 100311,
+    "n": "Logitech - Mouse Pad Studio Series with Spill-Resistant Surface (Medium) - Darker Rose",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6484/6484056_sd.jpg",
+    "c": "MousePad",
+    "b": "Logitech",
+    "pr": 10,
+    "msrp": 10,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6484056&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6484056.p%3FskuId%3D6484056","price":9.99,"inStock":true}}
+  },
+  {
+    "id": 100312,
+    "n": "Logitech - Desk Mat Studio Series Extended Mouse Pad with Spill-resistant Durable Design (Large) - Darker Rose",
+    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/a5ff0a4f-b850-45de-abe4-3e4759da8e0e.jpg",
+    "c": "MousePad",
+    "b": "Logitech",
+    "pr": 20,
+    "msrp": 23,
+    "r": 4.8,
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6484067&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6484067.p%3FskuId%3D6484067","price":19.99,"inStock":true}}
   }
 ];
 

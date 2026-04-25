@@ -85,6 +85,15 @@ const CATEGORY_IDS = {
 
   // Optical — Internal DVD drives only (CD/DVD and Blu-ray empty at Best Buy)
   OpticalDrive: ['pcmcat189600050010'],
+
+  // Peripherals — accessories
+  Mouse:        ['pcmcat304600050013'],                              // Gaming Mice
+  Keyboard:     ['pcmcat304600050014'],                              // Gaming Keyboards
+  Headset:      ['pcmcat230800050019', 'pcmcat1572279759550'],       // PC Gaming Headsets + Gaming Headsets
+  Microphone:   ['pcmcat221400050015', 'pcmcat221400050014'],        // Condenser + Dynamic Microphones
+  Webcam:       ['abcat0515046'],                                    // Webcams
+  MousePad:     ['pcmcat1503427739152', 'abcat0515032'],             // Gaming Mouse Pads + Mouse Pads
+  // ExtensionCables: not stocked by Best Buy in any meaningful volume - skip
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -107,6 +116,7 @@ async function fetchPage(categoryIds, page = 1, pageSize = 100, attempt = 1) {
     'details', 'features',
     'color', 'weight', 'depth', 'height', 'width',
     'categoryPath',
+    'customerReviewAverage', 'customerReviewCount',
   ].join(',');
 
   const url = `https://api.bestbuy.com/v1/products((${filter}))?apiKey=${KEY}&page=${page}&pageSize=${pageSize}&show=${show}&format=json`;
@@ -218,6 +228,8 @@ function normalize(product, ourCategory) {
     retailer: 'bestbuy',
     ourCategory,
     onSale: product.onSale === true,
+    rating: product.customerReviewAverage ? parseFloat(product.customerReviewAverage) : null,
+    reviews: product.customerReviewCount || 0,
     // Merged spec fields (direct from details array, raw)
     _details: detailsToMap(product.details),
     _scalars: {
