@@ -3572,6 +3572,13 @@ const TOOL_SEO_DATA = {
       {q:'Does CPU choice matter for FPS?',a:'Yes, especially at 1080p where CPU is the main bottleneck. At 4K the GPU does most of the work. We weight CPU impact differently per resolution to give realistic estimates.'},
       {q:'What games can I check?',a:'Cyberpunk 2077, Valorant, Fortnite, Elden Ring, CS2, Call of Duty, Apex Legends, Baldurs Gate 3, Starfield, Hogwarts Legacy, Spider-Man, and more — 26 games total covering esports and AAA titles.'},
       {q:'Why is my GPU not in the list?',a:'We cover NVIDIA RTX 40/50, RTX 30/20 series, AMD RX 7000/9000/6000, Intel Arc A/B series. Older cards default to a closest-match baseline. Add a comment if you want yours added.'}
+    ],
+    howTo: [
+      'Pick your GPU from the dropdown - search by model like "RTX 4070 Ti" or "RX 9070 XT".',
+      'Pick your CPU - search by name like "Ryzen 7 7800X3D" or "Intel Core i7-13700K".',
+      'Choose your target resolution: 1080p, 1440p, or 4K.',
+      'Select quality preset (Low/Medium/High/Ultra) - we estimate FPS for all four.',
+      'Click "Estimate FPS" to see expected frame rates across 26 popular games.'
     ]
   },
   bn: {
@@ -3584,6 +3591,13 @@ const TOOL_SEO_DATA = {
       {q:'What is a balanced PC build?',a:'A build is balanced when both CPU and GPU are within ~10% of their ideal pairing for the resolution you play at. Our calculator reports "Balanced" when neither component holds back the other.'},
       {q:'Does resolution affect bottleneck?',a:'Yes, significantly. The same CPU + GPU pair can be CPU-bottlenecked at 1080p but balanced at 4K. We compute separate target scores for 1080p, 1440p, and 4K.'},
       {q:'Should I always upgrade the bottleneck?',a:'Not always. A 5-10% bottleneck is normal and not worth fixing. Upgrade when the bottleneck is 15%+ AND you actually game at the affected resolution.'}
+    ],
+    howTo: [
+      'Select your GPU from the dropdown.',
+      'Select your CPU.',
+      'Pick the resolution you actually play at (1080p stresses CPU more, 4K stresses GPU more).',
+      'Click "Analyze Bottleneck" to see which component is holding back performance.',
+      'Review the recommended upgrade path - we suggest the minimum upgrade to balance the build.'
     ]
   },
   willitrun: {
@@ -3596,6 +3610,13 @@ const TOOL_SEO_DATA = {
       {q:'What FPS counts as playable?',a:'For most singleplayer games, 60 FPS is the sweet spot. Competitive shooters benefit from 120-144+ FPS. We highlight which presets reach those targets.'},
       {q:'Are the FPS results accurate?',a:'Estimates are within ±10-15% of real-world performance. Driver versions, OS, background apps, RAM speed, and storage type can all affect actual FPS.'},
       {q:'Can I check older games?',a:'Most older AAA games run on virtually any modern PC. Our list focuses on demanding 2022-2026 titles where compatibility is the actual question.'}
+    ],
+    howTo: [
+      'Pick the game you want to check from the dropdown.',
+      'Select your GPU and CPU.',
+      'Choose the resolution you want to play at.',
+      'Click "Check Performance" to see expected FPS at Low, Medium, High, and Ultra.',
+      'Look for the highest preset that gives you 60+ FPS for smooth gameplay.'
     ]
   },
   buildcmp: {
@@ -3607,6 +3628,13 @@ const TOOL_SEO_DATA = {
       {q:'How do I compare PC builds?',a:'Pick a CPU and GPU for Build A, then for Build B. We score each on FPS, total price, and performance per dollar so you can pick the better value.'},
       {q:'What is performance per dollar?',a:'It measures how much gaming performance you get for every dollar spent on CPU + GPU. Higher is better. Useful when deciding between similar-priced configurations.'},
       {q:'Can I compare more than CPU + GPU?',a:'For now, we compare CPU + GPU since those drive 80%+ of gaming performance. RAM, storage, and PSU comparisons are on the roadmap.'}
+    ],
+    howTo: [
+      'Select Build A: pick a CPU and GPU combination.',
+      'Select Build B: pick a different CPU and GPU combination.',
+      'Click "Compare Builds" to see side-by-side results.',
+      'Review FPS estimates, total cost, and performance per dollar for both builds.',
+      'Use the winner to inform your next purchase decision.'
     ]
   },
   wizard: {
@@ -3619,6 +3647,13 @@ const TOOL_SEO_DATA = {
       {q:'What budget should I use?',a:'$700-1000 for 1080p gaming, $1200-1800 for 1440p, $2000+ for 4K. The wizard gives the best fit at any budget; quality scales with spend.'},
       {q:'Are the components compatible?',a:'Yes, the wizard validates CPU socket, RAM type (DDR4/DDR5), motherboard chipset, PSU wattage, and case form factor. Compatibility is checked end-to-end.'},
       {q:'Can I customize the wizard build?',a:'Yes, after generation you can swap any component in the PC Builder. The wizard gives you a starting point; you keep full control.'}
+    ],
+    howTo: [
+      'Set your total budget using the slider ($300 to $8,000).',
+      'Pick your target use case (gaming resolution, productivity, etc.).',
+      'Click "Generate Build" - we pick balanced compatible components within your budget.',
+      'Review the generated build with current pricing from Amazon, Best Buy, and others.',
+      'Send the build to PC Builder if you want to swap any individual components.'
     ]
   },
   power: {
@@ -3631,6 +3666,13 @@ const TOOL_SEO_DATA = {
       {q:'What does 80+ rating mean?',a:'80+ rates PSU efficiency at typical load: Bronze 82%+, Gold 87%+, Platinum 90%+. Higher is better but costs more. Gold is the sweet spot for most builds.'},
       {q:'Do I need a bigger PSU for overclocking?',a:'Yes, add another 10-20% on top of the 30% headroom for overclocked CPU + GPU builds. Power draw can spike well above stock TDP.'},
       {q:'Single rail vs multi rail PSU?',a:'For modern builds, single +12V rail is preferred. Multi-rail was useful before per-rail OCP, but single rail handles the high-power spikes of modern GPUs better.'}
+    ],
+    howTo: [
+      'Add your CPU and GPU - the highest-draw components.',
+      'Add storage drives, fans, RGB strips, and other peripherals.',
+      'See total wattage with safety headroom (30% extra).',
+      'Get a PSU wattage recommendation: 650W, 750W, 850W, 1000W, etc.',
+      'Filter PSUs by wattage and 80+ rating to find a good match.'
     ]
   },
   cmp: {
@@ -3642,6 +3684,13 @@ const TOOL_SEO_DATA = {
       {q:'How do I compare two CPUs or GPUs?',a:'Pick any two parts of the same category. We display specs, benchmark scores, current pricing across retailers, and deals side-by-side.'},
       {q:'What benchmark do you use?',a:'PassMark for CPU and GPU performance. PassMark is one of the largest community-driven benchmark databases with consistent multi-year data across millions of systems.'},
       {q:'Can I compare across retailers?',a:'Yes, we show current pricing for each part across Amazon, Best Buy, Newegg, B&H, and Antonline. The lowest in-stock price wins.'}
+    ],
+    howTo: [
+      'Pick category: CPU, GPU, motherboard, RAM, storage, etc.',
+      'Select Part A from the dropdown.',
+      'Select Part B (must be same category).',
+      'Click "Compare" to see all specs and prices side-by-side.',
+      'Review benchmarks, current deals, and which retailer has the best in-stock price.'
     ]
   }
 };
@@ -3773,7 +3822,16 @@ function ToolsPage({th}){
     {(()=>{const seo=TOOL_SEO_DATA[tool];const slug=TOOL_URL_SLUGS[tool];if(!seo)return null;return <SEO key={tool} title={seo.title} description={seo.description} canonical={`https://prorigbuilder.com/#tools/${slug}`} breadcrumb={[{name:'Home',url:'https://prorigbuilder.com/'},{name:'Smart Tools',url:'https://prorigbuilder.com/#tools'},{name:seo.h1,url:`https://prorigbuilder.com/#tools/${slug}`}]} faq={seo.faq}/>;})()}
     <h1 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)",marginBottom:4}}>{TOOL_SEO_DATA[tool]?.h1||'Smart Tools'}</h1>
     <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginBottom:20,maxWidth:720,lineHeight:1.5}}>{TOOL_SEO_DATA[tool]?.intro||'Estimate gaming performance, auto-generate builds, and compare parts.'}</p>
+    {/* === TOOL CONTENT === Tab navigation */}
     <div style={{display:"flex",gap:6,marginBottom:20,flexWrap:"wrap"}}>{tabs.map(t=><button key={t.id} onClick={()=>setTool(t.id)} style={{padding:"8px 14px",borderRadius:8,fontSize:11,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:tool===t.id?t.c+"18":"transparent",color:tool===t.id?t.c:"var(--dim)",border:`1.5px solid ${tool===t.id?t.c+"44":"var(--bdr)"}`,whiteSpace:"nowrap"}}>{t.l}</button>)}</div>
+
+    {/* === HOW-TO + FAQ CONTENT === */}
+    {TOOL_SEO_DATA[tool]?.howTo&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:"16px 20px",marginBottom:20}}>
+      <h2 style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",marginBottom:10}}>How to use the {TOOL_SEO_DATA[tool].h1}</h2>
+      <ol style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.7,paddingLeft:24,marginBottom:0}}>
+        {TOOL_SEO_DATA[tool].howTo.map((step,i)=><li key={i} style={{marginBottom:4}}>{step}</li>)}
+      </ol>
+    </div>}
 
     {/* ═══ FPS ESTIMATOR ═══ */}
     {tool==="fps"&&<div>
