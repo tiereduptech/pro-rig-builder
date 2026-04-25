@@ -135,6 +135,52 @@ const dealSavings = p => {
   return Math.round(ref - cur);
 };
 // === END DEAL DETECTION ===
+
+// === CLEAN DISPLAY NAME ===
+// Returns "Brand Make Model [Variant]" for cleaner dropdown display
+function cleanDisplayName(p) {
+  if (!p || !p.n) return '';
+  const name = p.n;
+  const brand = p.b || '';
+  const c = p.c;
+
+  if (c === 'CPU') {
+    let m = name.match(/(Intel)\s+Core\s+(Ultra\s+\d|i[3579])[\s-]*(\d{3,5}[A-Z]{0,3})/i);
+    if (m) return `Intel Core ${m[2].replace(/\s+/g,' ')}-${m[3].toUpperCase()}`;
+    m = name.match(/(AMD\s+)?Ryzen\s+(Threadripper(?:\s+PRO)?|\d)\s+(\d{4}[A-Z0-9]{0,4})/i);
+    if (m) return `AMD Ryzen ${m[2]} ${m[3].toUpperCase()}`;
+    return (brand + ' ' + name.replace(new RegExp('^' + brand + '\\s+', 'i'), '')).substring(0, 60).trim();
+  }
+
+  if (c === 'GPU') {
+    let m = name.match(/(RTX|GTX)\s*(\d{3,4})\s*(Ti\s*Super|Super|Ti)?/i);
+    if (m) {
+      const series = m[1].toUpperCase();
+      const num = m[2];
+      const suffix = m[3] ? ' ' + m[3].replace(/super/i,'SUPER').replace(/^ti$/i,'Ti').replace(/^Ti\s+SUPER$/i,'Ti SUPER') : '';
+      const afterModel = name.split(new RegExp(`${series}\\s*${num}\\s*${m[3]||''}\\s*`, 'i'))[1] || '';
+      const aibMatch = afterModel.match(/^([A-Z][A-Za-z0-9\s+]{0,30}?)(?=\s+(?:DLSS|GDDR|\d+GB|\d+-?bit|\d+\s*Gbps|PCIE?|Gaming\s+Graphics|Graphics\s+Card|with|,|\(|\d+MHz)|$)/i);
+      const aib = aibMatch ? ' ' + aibMatch[1].trim() : '';
+      return `${brand} GeForce ${series} ${num}${suffix}${aib}`.trim();
+    }
+    m = name.match(/(RX)\s*(\d{3,4})\s*(XT|XTX|GRE)?/i);
+    if (m) {
+      const suffix = m[3] ? ' ' + m[3].toUpperCase() : '';
+      const afterModel = name.split(new RegExp(`RX\\s*${m[2]}\\s*${m[3]||''}\\s*`, 'i'))[1] || '';
+      const aibMatch = afterModel.match(/^([A-Z][A-Za-z0-9\s+]{0,30}?)(?=\s+(?:GDDR|\d+GB|\d+-?bit|\d+\s*Gbps|PCIE?|Gaming\s+Graphics|Graphics\s+Card|with|,|\(|\d+MHz)|$)/i);
+      const aib = aibMatch ? ' ' + aibMatch[1].trim() : '';
+      return `${brand} Radeon RX ${m[2]}${suffix}${aib}`.trim();
+    }
+    m = name.match(/Arc\s+(A\d{3,4}|B\d{3,4})/i);
+    if (m) return `${brand} Arc ${m[1].toUpperCase()}`.trim();
+    return (brand + ' ' + name.replace(new RegExp('^' + brand + '\\s+', 'i'), '')).substring(0, 60).trim();
+  }
+
+  const cleaned = name.replace(/\s*[,\(].*$/, '').replace(/\s+(DLSS|GDDR\d+X?|PCIE?\s*[\d\.]+|\d+\s*-?\s*bit|\d+\s*Gbps?).*$/i, '').trim();
+  if (cleaned.length > 60) return cleaned.substring(0, 57) + '...';
+  return cleaned;
+}
+// === END CLEAN DISPLAY NAME ===
 const fmtPrice = n => { if (n == null) return '0'; const r = Math.round(n * 100) / 100; return r % 1 === 0 ? String(r) : r.toFixed(2); };
 const retailers = p => {
   if (!p.deals || typeof p.deals !== "object") return [];
@@ -416,7 +462,7 @@ html, body, #root {
 /* === MOBILE FIX 7: tools page mobile layout === */
 .tools-layout {
   display: grid;
-  grid-template-columns: 380px 1fr;
+  grid-template-columns: 300px 1fr;
 }
 @media (max-width: 900px) {
   .tools-layout {
@@ -525,7 +571,7 @@ function SearchSelect({value,onChange,options,placeholder="Search..."}){
     document.addEventListener("mousedown",handler);
     return ()=>document.removeEventListener("mousedown",handler);
   },[]);
-  const filtered=query?options.filter(o=>o.label.toLowerCase().includes(query.toLowerCase())):options;
+  const filtered=query?options.filter(o=>{const tokens=query.toLowerCase().split(/[\s\-,\/\(\)]+/).filter(Boolean);const blob=(o.label+" "+(o.detail||"")).toLowerCase();return tokens.every(t=>blob.includes(t));}):options;
   const selectedLabel=options.find(o=>o.value===value)?.label||"";
   return <div ref={ref} style={{position:"relative",marginBottom:8}}>
     <div onClick={()=>{setOpen(!open);if(!open)setTimeout(()=>inputRef.current?.focus(),50);}}
@@ -539,13 +585,13 @@ function SearchSelect({value,onChange,options,placeholder="Search..."}){
       }
       <span style={{fontSize:10,color:"var(--mute)",transition:"transform .2s",transform:open?"rotate(180deg)":"none",flexShrink:0}}>▾</span>
     </div>
-    {open&&<div style={{position:"absolute",top:"calc(100% + 4px)",left:0,right:0,background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,boxShadow:"0 8px 32px rgba(0,0,0,.15)",zIndex:50,maxHeight:240,overflowY:"auto",padding:4}}>
+    {open&&<div style={{position:"absolute",top:"calc(100% + 4px)",left:0,right:0,background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,boxShadow:"0 8px 32px rgba(0,0,0,.15)",zIndex:50,maxHeight:320,overflowY:"auto",padding:4}}>
       {filtered.length===0&&<div style={{padding:"12px 16px",fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)",textAlign:"center"}}>No results found</div>}
       {filtered.map(o=><button key={o.value} onClick={e=>{e.stopPropagation();onChange(o.value);setOpen(false);setQuery("");}}
         style={{display:"flex",alignItems:"center",gap:8,width:"100%",padding:"8px 12px",borderRadius:6,background:value===o.value?"var(--accent3)":"transparent",border:"none",cursor:"pointer",textAlign:"left",fontFamily:"var(--ff)",fontSize:12,color:value===o.value?"var(--accent)":"var(--txt)",transition:"background .1s"}}
         onMouseEnter={e=>{if(value!==o.value)e.currentTarget.style.background="var(--bg3)";}}
         onMouseLeave={e=>{if(value!==o.value)e.currentTarget.style.background="transparent";}}>
-        <span style={{flex:1,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{o.label}</span>
+        <span style={{flex:1,whiteSpace:"normal",wordBreak:"break-word",lineHeight:1.3}}>{o.label}</span>
         {o.detail&&<span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",flexShrink:0}}>{o.detail}</span>}
         {value===o.value&&<span style={{fontSize:11,color:"var(--accent)",flexShrink:0}}>✓</span>}
       </button>)}
@@ -3542,25 +3588,49 @@ function ToolsPage({th}){
     const gpuKey=matchGPU(bnGPU)||bnGPU;const cpuKey=matchCPU(bnCPU)||bnCPU;
     if(!gpuKey||!cpuKey)return;
     setBnLoading(true);
-    // Try API first
-    const apiResult=await apiFetch("/bottleneck/analyze",{gpu:bnGPU,cpu:bnCPU,resolution:bnRes});
+    // Skip API call - use accurate local PassMark-based calculation
+    const apiResult=null;
     if(apiResult&&apiResult.who){
       setBnResult({gpuKey:apiResult.gpu,cpuKey:apiResult.cpu,gpuScore:apiResult.gpuScore,cpuScore:apiResult.cpuScore,who:apiResult.who,severity:apiResult.severity,cpuPct:apiResult.who==="CPU"?apiResult.severity:0,gpuPct:apiResult.who==="GPU"?apiResult.severity:0,ratio:apiResult.ratio,cpuUpgrade:apiResult.cpuUpgrade,gpuUpgrade:apiResult.gpuUpgrade,res:bnRes,gameResults:apiResult.gameResults||[]});
     } else {
-      // Fallback to local
-      const gpuScore=GPU_SCORES[gpuKey]||100;const cpuScore=CPU_SCORES[cpuKey]||100;
-      const cpuWeight=bnRes==="4K"?0.5:bnRes==="1440p"?0.75:1.0;
-      const effectiveCPU=cpuScore*cpuWeight;
-      const ratio=effectiveCPU/gpuScore;
-      const cpuPct=Math.round(Math.max(0,(1-ratio))*100);
-      const gpuPct=Math.round(Math.max(0,(ratio-1))*100);
-      const who=ratio<0.85?"CPU":ratio>1.15?"GPU":"Balanced";
-      const severity=who==="CPU"?cpuPct:who==="GPU"?gpuPct:0;
+      // Fallback to local — uses raw PassMark scores when available
+      // Find product objects: bnGPU/bnCPU hold the full product name from the dropdown
+      const cpuProd=P.find(x=>x.c==="CPU"&&x.n===bnCPU);
+      const gpuProd=P.find(x=>x.c==="GPU"&&x.n===bnGPU);
+      let cpuPct,gpuPct,who,severity,ratio,gpuScore,cpuScore;
+      if(cpuProd?.cpuMark&&gpuProd?.g3dMark){
+        // Real PassMark scores: use empirical resolution-aware ratio
+        // The "ideal CPU mark" for a GPU at each resolution is roughly:
+        //   1080p: g3dMark * 1.40 (CPU work dominates)
+        //   1440p: g3dMark * 1.05 
+        //   4K:    g3dMark * 0.75 (GPU does heavy lifting)
+        const targetMultiplier=bnRes==="4K"?0.75:bnRes==="1440p"?1.05:1.40;
+        const idealCpuMark=gpuProd.g3dMark*targetMultiplier;
+        const cpuDeficit=Math.max(0,(idealCpuMark-cpuProd.cpuMark)/idealCpuMark);
+        const cpuOverkill=Math.max(0,(cpuProd.cpuMark-idealCpuMark*1.30)/(idealCpuMark*1.30));
+        cpuPct=Math.round(cpuDeficit*100);
+        gpuPct=Math.round(cpuOverkill*100);
+        who=cpuPct>=10?"CPU":gpuPct>=10?"GPU":"Balanced";
+        severity=who==="CPU"?cpuPct:who==="GPU"?gpuPct:0;
+        ratio=cpuProd.cpuMark/idealCpuMark;
+        gpuScore=gpuProd.bench||0;
+        cpuScore=cpuProd.bench||0;
+      } else {
+        // Fallback to old bench-based math if raw scores missing
+        gpuScore=GPU_SCORES[gpuKey]||100;cpuScore=CPU_SCORES[cpuKey]||100;
+        const cpuWeight=bnRes==="4K"?0.5:bnRes==="1440p"?0.75:1.0;
+        const effectiveCPU=cpuScore*cpuWeight;
+        ratio=effectiveCPU/gpuScore;
+        cpuPct=Math.round(Math.max(0,(1-ratio))*100);
+        gpuPct=Math.round(Math.max(0,(ratio-1))*100);
+        who=ratio<0.85?"CPU":ratio>1.15?"GPU":"Balanced";
+        severity=who==="CPU"?cpuPct:who==="GPU"?gpuPct:0;
+      }
       let cpuUpgrade=null,gpuUpgrade=null;
       if(who==="CPU"){const better=Object.entries(CPU_SCORES).filter(([k,v])=>v>cpuScore).sort((a,b)=>a[1]-b[1])[0];if(better)cpuUpgrade={name:better[0],score:better[1],gain:Math.round((better[1]-cpuScore)/cpuScore*100)};}
       if(who==="GPU"){const better=Object.entries(GPU_SCORES).filter(([k,v])=>v>gpuScore&&v<gpuScore*1.5).sort((a,b)=>a[1]-b[1])[0];if(better)gpuUpgrade={name:better[0],score:better[1],gain:Math.round((better[1]-gpuScore)/gpuScore*100)};}
       const gameResults=["Cyberpunk 2077","Valorant","Fortnite","Elden Ring"].map(g=>{const r=estimateFPS(gpuKey,cpuKey,g,bnRes,"Ultra");return r;}).filter(Boolean);
-      setBnResult({gpuKey,cpuKey,gpuScore,cpuScore,who,severity,cpuPct,gpuPct,ratio:Math.round(ratio*100),cpuUpgrade,gpuUpgrade,res:bnRes,gameResults});
+      console.log("[BOTTLENECK DEBUG]",{gpuKey,cpuKey,cpuMarkRaw:cpuProd?.cpuMark,g3dMarkRaw:gpuProd?.g3dMark,who,severity,cpuPct,gpuPct,ratio,bnRes});setBnResult({gpuKey,cpuKey,gpuScore,cpuScore,who,severity,cpuPct,gpuPct,ratio:Math.round(ratio*100),cpuUpgrade,gpuUpgrade,res:bnRes,gameResults});
     }
     setBnLoading(false);
   };
@@ -3592,11 +3662,11 @@ function ToolsPage({th}){
 
           <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginBottom:4}}>GPU</div>
           <SearchSelect value={selGPU} onChange={setSelGPU} placeholder="Search GPUs..."
-            options={gpuParts.sort((a,b)=>(b.bench||0)-(a.bench||0)).map(p=>({value:p.n,label:p.n,detail:p.vram+"GB"}))}/>
+            options={gpuParts.sort((a,b)=>(b.bench||0)-(a.bench||0)).map(p=>({value:p.n,label:cleanDisplayName(p),detail:p.vram+"GB"}))}/>
 
           <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginBottom:4}}>CPU</div>
           <SearchSelect value={selCPU} onChange={setSelCPU} placeholder="Search CPUs..."
-            options={cpuParts.sort((a,b)=>(b.bench||0)-(a.bench||0)).map(p=>({value:p.n,label:p.n,detail:p.cores+"C/"+( p.threads||p.cores*2)+"T"}))}/>
+            options={cpuParts.sort((a,b)=>(b.bench||0)-(a.bench||0)).map(p=>({value:p.n,label:cleanDisplayName(p),detail:p.cores+"C/"+( p.threads||p.cores*2)+"T"}))}/>
 
           <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginBottom:4}}>RESOLUTION</div>
           <div style={{display:"flex",gap:4,marginBottom:10}}>
@@ -3699,11 +3769,11 @@ function ToolsPage({th}){
 
           <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginBottom:4}}>GPU</div>
           <SearchSelect value={bnGPU} onChange={setBnGPU} placeholder="Search GPUs..."
-            options={gpuParts.sort((a,b)=>(b.bench||0)-(a.bench||0)).map(p=>({value:p.n,label:p.n,detail:p.vram+"GB"}))}/>
+            options={gpuParts.sort((a,b)=>(b.bench||0)-(a.bench||0)).map(p=>({value:p.n,label:cleanDisplayName(p),detail:p.vram+"GB"}))}/>
 
           <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginBottom:4}}>CPU</div>
           <SearchSelect value={bnCPU} onChange={setBnCPU} placeholder="Search CPUs..."
-            options={cpuParts.sort((a,b)=>(b.bench||0)-(a.bench||0)).map(p=>({value:p.n,label:p.n,detail:p.cores+"C"}))}/>
+            options={cpuParts.sort((a,b)=>(b.bench||0)-(a.bench||0)).map(p=>({value:p.n,label:cleanDisplayName(p),detail:p.cores+"C"}))}/>
 
           <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginBottom:4}}>RESOLUTION</div>
           <div style={{display:"flex",gap:4,marginBottom:14}}>
@@ -3825,9 +3895,9 @@ function ToolsPage({th}){
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginBottom:4}}>SELECT GAME</div>
           <select value={wirGame} onChange={e=>setWirGame(e.target.value)} style={inp}><option value="">Choose a game...</option>{GAMES.map(g=><option key={g.name} value={g.name}>{g.name}</option>)}</select>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>YOUR GPU</div>
-          <SearchSelect options={gpuParts.map(g=>({value:g.n,label:g.n,detail:`${g.vram}GB · ${g.b}`}))} value={wirGPU} onChange={setWirGPU} placeholder="Select GPU..."/>
+          <SearchSelect options={gpuParts.map(g=>({value:g.n,label:cleanDisplayName(g),detail:`${g.vram}GB · ${g.b}`}))} value={wirGPU} onChange={setWirGPU} placeholder="Select GPU..."/>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>YOUR CPU</div>
-          <SearchSelect options={cpuParts.filter(c=>!c.serverCPU).map(c=>({value:c.n,label:c.n,detail:`${c.cores}C · ${c.b}`}))} value={wirCPU} onChange={setWirCPU} placeholder="Select CPU..."/>
+          <SearchSelect options={cpuParts.filter(c=>!c.serverCPU).map(c=>({value:c.n,label:cleanDisplayName(c),detail:`${c.cores}C · ${c.b}`}))} value={wirCPU} onChange={setWirCPU} placeholder="Select CPU..."/>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>RESOLUTION</div>
           <div style={{display:"flex",gap:4}}>{["1080p","1440p","4K"].map(r=><button key={r} onClick={()=>setWirRes(r)} style={{flex:1,padding:6,borderRadius:5,fontSize:10,fontFamily:"var(--mono)",fontWeight:600,cursor:"pointer",background:wirRes===r?"var(--amber)":"var(--bg4)",color:wirRes===r?"#fff":"var(--dim)",border:`1px solid ${wirRes===r?"var(--amber)":"var(--bdr)"}`}}>{r}</button>)}</div>
           <button onClick={()=>{if(!wirGame||!wirGPU||!wirCPU)return;const gpu=matchGPU(wirGPU)||wirGPU;const cpu=matchCPU(wirCPU)||wirCPU;const results=["Low","Medium","High","Ultra"].map(q=>{const fps=estimateFPS(gpu,cpu,wirGame,wirRes,q);return{quality:q,fps:fps?.fps||0};});setWirResult({game:wirGame,gpu:wirGPU,cpu:wirCPU,res:wirRes,settings:results});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--amber)",border:"none",fontSize:13,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>🕹️ Check Performance</button>

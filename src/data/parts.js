@@ -2,6 +2,7 @@
 export const PARTS = [
   {
     "id": 10001,
+    "cpuMark": 65799,
     "n": "AMD Ryzen 9 9950X",
     "img": "https://m.media-amazon.com/images/I/61dukbEGziL._AC_SL300_.jpg",
     "c": "CPU",
@@ -30,6 +31,7 @@ export const PARTS = [
   },
   {
     "id": 10002,
+    "cpuMark": 54433,
     "n": "AMD Ryzen 9 9900X",
     "img": "https://m.media-amazon.com/images/I/61dukbEGziL._AC_SL300_.jpg",
     "c": "CPU",
@@ -58,6 +60,7 @@ export const PARTS = [
   },
   {
     "id": 10003,
+    "cpuMark": 37066,
     "n": "AMD Ryzen 7 9700X",
     "img": "https://m.media-amazon.com/images/I/61F3ZChalyL._AC_SL300_.jpg",
     "c": "CPU",
@@ -86,6 +89,7 @@ export const PARTS = [
   },
   {
     "id": 10004,
+    "cpuMark": 30071,
     "n": "AMD Ryzen 5 9600X",
     "img": "https://m.media-amazon.com/images/I/61RfWUr4kvL._AC_SL300_.jpg",
     "c": "CPU",
@@ -114,6 +118,7 @@ export const PARTS = [
   },
   {
     "id": 10005,
+    "cpuMark": 70206,
     "n": "AMD Ryzen 9 9950X3D",
     "img": "https://m.media-amazon.com/images/I/71hZfMZNZuL._AC_SL300_.jpg",
     "c": "CPU",
@@ -143,6 +148,7 @@ export const PARTS = [
   },
   {
     "id": 10006,
+    "cpuMark": 56212,
     "n": "AMD Ryzen 9 9900X3D",
     "img": "https://m.media-amazon.com/images/I/51iH16H8wgL._AC_SL300_.jpg",
     "c": "CPU",
@@ -172,6 +178,7 @@ export const PARTS = [
   },
   {
     "id": 10007,
+    "cpuMark": 39976,
     "n": "AMD Ryzen 7 9800X3D",
     "img": "https://m.media-amazon.com/images/I/71aHvYUgX1L._AC_SL300_.jpg",
     "c": "CPU",
@@ -201,6 +208,7 @@ export const PARTS = [
   },
   {
     "id": 10008,
+    "cpuMark": 31560,
     "n": "AMD Ryzen 7 8700G",
     "img": "https://m.media-amazon.com/images/I/61nRX0W6fhL._AC_SL300_.jpg",
     "c": "CPU",
@@ -231,6 +239,7 @@ export const PARTS = [
   },
   {
     "id": 10009,
+    "cpuMark": 25199,
     "n": "AMD Ryzen 5 8600G",
     "img": "https://m.media-amazon.com/images/I/615TPN-DayL._AC_SL300_.jpg",
     "c": "CPU",
@@ -261,6 +270,7 @@ export const PARTS = [
   },
   {
     "id": 10010,
+    "cpuMark": 21438,
     "n": "AMD Ryzen 5 8500G",
     "img": "https://m.media-amazon.com/images/I/51193NWpmHL._AC_SL300_.jpg",
     "c": "CPU",
@@ -323,6 +333,7 @@ export const PARTS = [
   },
   {
     "id": 10012,
+    "cpuMark": 62196,
     "n": "AMD Ryzen 9 7950X",
     "img": "https://m.media-amazon.com/images/I/5116zdA9uyL._AC_SL300_.jpg",
     "c": "CPU",
@@ -353,6 +364,7 @@ export const PARTS = [
   },
   {
     "id": 10013,
+    "cpuMark": 62318,
     "n": "AMD Ryzen 9 7950X3D",
     "img": "https://m.media-amazon.com/images/I/51jNS8epPeL._AC_SL300_.jpg",
     "c": "CPU",
@@ -384,6 +396,7 @@ export const PARTS = [
   },
   {
     "id": 10014,
+    "cpuMark": 51278,
     "n": "AMD Ryzen 9 7900X",
     "img": "https://m.media-amazon.com/images/I/51OEiWrUtqL._AC_SL300_.jpg",
     "c": "CPU",
@@ -414,6 +427,7 @@ export const PARTS = [
   },
   {
     "id": 10015,
+    "cpuMark": 50211,
     "n": "AMD Ryzen 9 7900X3D",
     "img": "https://m.media-amazon.com/images/I/51xW-O-H5gL._AC_SL300_.jpg",
     "c": "CPU",
@@ -445,6 +459,7 @@ export const PARTS = [
   },
   {
     "id": 10016,
+    "cpuMark": 48044,
     "n": "AMD Ryzen 9 7900",
     "img": "https://m.media-amazon.com/images/I/51OEiWrUtqL._AC_SL300_.jpg",
     "c": "CPU",
@@ -475,6 +490,7 @@ export const PARTS = [
   },
   {
     "id": 10017,
+    "cpuMark": 34285,
     "n": "AMD Ryzen 7 7800X3D",
     "img": "https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_SL300_.jpg",
     "c": "CPU",
@@ -506,6 +522,7 @@ export const PARTS = [
   },
   {
     "id": 10018,
+    "cpuMark": 35547,
     "n": "AMD Ryzen 7 7700X",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6519/6519477cv11d.jpg",
     "c": "CPU",
@@ -541,6 +558,7 @@ export const PARTS = [
   },
   {
     "id": 10019,
+    "cpuMark": 28307,
     "n": "AMD Ryzen 5 7600X",
     "img": "https://m.media-amazon.com/images/I/51m7L9bQI8L._AC_SL300_.jpg",
     "c": "CPU",
@@ -571,6 +589,7 @@ export const PARTS = [
   },
   {
     "id": 10020,
+    "cpuMark": 26984,
     "n": "AMD Ryzen 5 7600",
     "img": "https://m.media-amazon.com/images/I/51m7L9bQI8L._AC_SL300_.jpg",
     "c": "CPU",
@@ -601,6 +620,7 @@ export const PARTS = [
   },
   {
     "id": 10021,
+    "cpuMark": 26590,
     "n": "AMD Ryzen 5 7500F",
     "img": "https://m.media-amazon.com/images/I/71SwhaQlpAL._AC_SL300_.jpg",
     "c": "CPU",
@@ -629,6 +649,7 @@ export const PARTS = [
   },
   {
     "id": 10022,
+    "cpuMark": 45305,
     "n": "AMD Ryzen 9 5950X",
     "img": "https://m.media-amazon.com/images/I/61ISSSA+x+L._AC_SL300_.jpg",
     "c": "CPU",
@@ -657,6 +678,7 @@ export const PARTS = [
   },
   {
     "id": 10023,
+    "cpuMark": 38928,
     "n": "AMD Ryzen 9 5900X",
     "img": "https://m.media-amazon.com/images/I/51cCp1eCm5L._AC_SL300_.jpg",
     "c": "CPU",
@@ -685,6 +707,7 @@ export const PARTS = [
   },
   {
     "id": 10024,
+    "cpuMark": 33954,
     "n": "AMD Ryzen 9 5900",
     "img": "https://m.media-amazon.com/images/I/51cCp1eCm5L._AC_SL300_.jpg",
     "c": "CPU",
@@ -713,6 +736,7 @@ export const PARTS = [
   },
   {
     "id": 10025,
+    "cpuMark": 27691,
     "n": "AMD Ryzen 7 5800X",
     "img": "https://m.media-amazon.com/images/I/61IIbwz-+ML._AC_SL300_.jpg",
     "c": "CPU",
@@ -741,6 +765,7 @@ export const PARTS = [
   },
   {
     "id": 10026,
+    "cpuMark": 28303,
     "n": "AMD Ryzen 7 5800X3D",
     "img": "https://m.media-amazon.com/images/I/51kIHB4GNYL._AC_SL300_.jpg",
     "c": "CPU",
@@ -770,6 +795,7 @@ export const PARTS = [
   },
   {
     "id": 10027,
+    "cpuMark": 25691,
     "n": "AMD Ryzen 7 5800",
     "img": "https://m.media-amazon.com/images/I/61IIbwz-+ML._AC_SL300_.jpg",
     "c": "CPU",
@@ -798,6 +824,7 @@ export const PARTS = [
   },
   {
     "id": 10028,
+    "cpuMark": 26589,
     "n": "AMD Ryzen 7 5700X",
     "img": "https://m.media-amazon.com/images/I/51gRv8z+K6L._AC_SL300_.jpg",
     "c": "CPU",
@@ -826,6 +853,7 @@ export const PARTS = [
   },
   {
     "id": 10029,
+    "cpuMark": 26303,
     "n": "AMD Ryzen 7 5700X3D",
     "img": "https://m.media-amazon.com/images/I/51gRv8z+K6L._AC_SL300_.jpg",
     "c": "CPU",
@@ -855,6 +883,7 @@ export const PARTS = [
   },
   {
     "id": 10030,
+    "cpuMark": 24247,
     "n": "AMD Ryzen 7 5700",
     "img": "https://m.media-amazon.com/images/I/71jxHGiiiNL._AC_SL300_.jpg",
     "c": "CPU",
@@ -883,6 +912,7 @@ export const PARTS = [
   },
   {
     "id": 10031,
+    "cpuMark": 21841,
     "n": "AMD Ryzen 5 5600X",
     "img": "https://m.media-amazon.com/images/I/51ld6RR8IrL._AC_SL300_.jpg",
     "c": "CPU",
@@ -911,6 +941,7 @@ export const PARTS = [
   },
   {
     "id": 10032,
+    "cpuMark": 21520,
     "n": "AMD Ryzen 5 5600",
     "img": "https://m.media-amazon.com/images/I/51So7GoGvxL._AC_SL300_.jpg",
     "c": "CPU",
@@ -939,6 +970,7 @@ export const PARTS = [
   },
   {
     "id": 10033,
+    "cpuMark": 19278,
     "n": "AMD Ryzen 5 5500",
     "img": "https://m.media-amazon.com/images/I/51So7GoGvxL._AC_SL300_.jpg",
     "c": "CPU",
@@ -967,6 +999,7 @@ export const PARTS = [
   },
   {
     "id": 10034,
+    "cpuMark": 19664,
     "n": "AMD Ryzen 5 5600G",
     "img": "https://m.media-amazon.com/images/I/51f2hkWjTlL._AC_SL300_.jpg",
     "c": "CPU",
@@ -997,6 +1030,7 @@ export const PARTS = [
   },
   {
     "id": 10035,
+    "cpuMark": 24287,
     "n": "AMD Ryzen 7 5700G",
     "img": "https://m.media-amazon.com/images/I/51D3DrDmwkL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1027,6 +1061,7 @@ export const PARTS = [
   },
   {
     "id": 10036,
+    "cpuMark": 13017,
     "n": "AMD Ryzen 3 5300G",
     "img": "https://m.media-amazon.com/images/I/51So7GoGvxL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1057,6 +1092,7 @@ export const PARTS = [
   },
   {
     "id": 10045,
+    "cpuMark": 67295,
     "n": "Intel Core Ultra 9 285K",
     "img": "https://m.media-amazon.com/images/I/51xxm7JkJ6L._AC_SL300_.jpg",
     "c": "CPU",
@@ -1089,6 +1125,7 @@ export const PARTS = [
   },
   {
     "id": 10046,
+    "cpuMark": 58707,
     "n": "Intel Core Ultra 7 265K",
     "img": "https://m.media-amazon.com/images/I/51gf0NAUHkL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1121,6 +1158,7 @@ export const PARTS = [
   },
   {
     "id": 10047,
+    "cpuMark": 58577,
     "n": "Intel Core Ultra 7 265KF",
     "img": "https://m.media-amazon.com/images/I/513c8GtpBBL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1151,6 +1189,7 @@ export const PARTS = [
   },
   {
     "id": 10048,
+    "cpuMark": 43197,
     "n": "Intel Core Ultra 5 245K",
     "img": "https://m.media-amazon.com/images/I/51vTDOi0KCL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1183,6 +1222,7 @@ export const PARTS = [
   },
   {
     "id": 10049,
+    "cpuMark": 43226,
     "n": "Intel Core Ultra 5 245KF",
     "img": "https://m.media-amazon.com/images/I/51ppFJC5HWL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1213,6 +1253,7 @@ export const PARTS = [
   },
   {
     "id": 10050,
+    "cpuMark": 58371,
     "n": "Intel Core i9-14900K",
     "img": "https://m.media-amazon.com/images/I/619ytLAytAL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1245,6 +1286,7 @@ export const PARTS = [
   },
   {
     "id": 10051,
+    "cpuMark": 58272,
     "n": "Intel Core i9-14900KF",
     "img": "https://m.media-amazon.com/images/I/51Ekrj4Mj8L._AC_SL300_.jpg",
     "c": "CPU",
@@ -1275,6 +1317,7 @@ export const PARTS = [
   },
   {
     "id": 10052,
+    "cpuMark": 44889,
     "n": "Intel Core i9-14900",
     "img": "https://m.media-amazon.com/images/I/619ytLAytAL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1307,6 +1350,7 @@ export const PARTS = [
   },
   {
     "id": 10053,
+    "cpuMark": 46677,
     "n": "Intel Core i9-14900F",
     "img": "https://m.media-amazon.com/images/I/61V7UZLVhqL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1337,6 +1381,7 @@ export const PARTS = [
   },
   {
     "id": 10054,
+    "cpuMark": 52042,
     "n": "Intel Core i7-14700K",
     "img": "https://m.media-amazon.com/images/I/51EL514uLrL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1369,6 +1414,7 @@ export const PARTS = [
   },
   {
     "id": 10055,
+    "cpuMark": 52135,
     "n": "Intel Core i7-14700KF",
     "img": "https://m.media-amazon.com/images/I/51EL514uLrL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1399,6 +1445,7 @@ export const PARTS = [
   },
   {
     "id": 10056,
+    "cpuMark": 40648,
     "n": "Intel Core i7-14700",
     "img": "https://m.media-amazon.com/images/I/51EL514uLrL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1431,6 +1478,7 @@ export const PARTS = [
   },
   {
     "id": 10057,
+    "cpuMark": 41434,
     "n": "Intel Core i7-14700F",
     "img": "https://m.media-amazon.com/images/I/51EL514uLrL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1461,6 +1509,7 @@ export const PARTS = [
   },
   {
     "id": 10058,
+    "cpuMark": 38452,
     "n": "Intel Core i5-14600K",
     "img": "https://m.media-amazon.com/images/I/61DK+cQvKOL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1493,6 +1542,7 @@ export const PARTS = [
   },
   {
     "id": 10059,
+    "cpuMark": 38396,
     "n": "Intel Core i5-14600KF",
     "img": "https://m.media-amazon.com/images/I/61DK+cQvKOL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1523,6 +1573,7 @@ export const PARTS = [
   },
   {
     "id": 10060,
+    "cpuMark": 36060,
     "n": "Intel Core i5-14600",
     "img": "https://m.media-amazon.com/images/I/61DK+cQvKOL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1555,6 +1606,7 @@ export const PARTS = [
   },
   {
     "id": 10061,
+    "cpuMark": 30965,
     "n": "Intel Core i5-14500",
     "img": "https://m.media-amazon.com/images/I/61LuKyXGbKL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1587,6 +1639,7 @@ export const PARTS = [
   },
   {
     "id": 10062,
+    "cpuMark": 25138,
     "n": "Intel Core i5-14400",
     "img": "https://m.media-amazon.com/images/I/61LuKyXGbKL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1619,6 +1672,7 @@ export const PARTS = [
   },
   {
     "id": 10063,
+    "cpuMark": 25559,
     "n": "Intel Core i5-14400F",
     "img": "https://m.media-amazon.com/images/I/61IgclF1FEL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1649,6 +1703,7 @@ export const PARTS = [
   },
   {
     "id": 10064,
+    "cpuMark": 15112,
     "n": "Intel Core i3-14100",
     "img": "https://m.media-amazon.com/images/I/61kohX2+keL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1681,6 +1736,7 @@ export const PARTS = [
   },
   {
     "id": 10065,
+    "cpuMark": 15413,
     "n": "Intel Core i3-14100F",
     "img": "https://m.media-amazon.com/images/I/61ust7LcxQL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1711,6 +1767,7 @@ export const PARTS = [
   },
   {
     "id": 10066,
+    "cpuMark": 58214,
     "n": "Intel Core i9-13900K",
     "img": "https://m.media-amazon.com/images/I/61My4F2-XUL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1743,6 +1800,7 @@ export const PARTS = [
   },
   {
     "id": 10067,
+    "cpuMark": 57594,
     "n": "Intel Core i9-13900KF",
     "img": "https://m.media-amazon.com/images/I/61-+pgXU1vL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1773,6 +1831,7 @@ export const PARTS = [
   },
   {
     "id": 10068,
+    "cpuMark": 45714,
     "n": "Intel Core i7-13700K",
     "img": "https://m.media-amazon.com/images/I/61aAAg73uLL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1805,6 +1864,7 @@ export const PARTS = [
   },
   {
     "id": 10069,
+    "cpuMark": 45603,
     "n": "Intel Core i7-13700KF",
     "img": "https://m.media-amazon.com/images/I/61IUbGdPo6L._AC_SL300_.jpg",
     "c": "CPU",
@@ -1835,6 +1895,7 @@ export const PARTS = [
   },
   {
     "id": 10070,
+    "cpuMark": 37535,
     "n": "Intel Core i5-13600K",
     "img": "https://m.media-amazon.com/images/I/61lNEpDfdcL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1867,6 +1928,7 @@ export const PARTS = [
   },
   {
     "id": 10071,
+    "cpuMark": 37388,
     "n": "Intel Core i5-13600KF",
     "img": "https://m.media-amazon.com/images/I/61LzzuUNhKL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1897,6 +1959,7 @@ export const PARTS = [
   },
   {
     "id": 10072,
+    "cpuMark": 30945,
     "n": "Intel Core i5-13500",
     "img": "https://m.media-amazon.com/images/I/61zccOnimHL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1929,6 +1992,7 @@ export const PARTS = [
   },
   {
     "id": 10073,
+    "cpuMark": 23820,
     "n": "Intel Core i5-13400",
     "img": "https://m.media-amazon.com/images/I/61zccOnimHL._AC_SL300_.jpg",
     "c": "CPU",
@@ -1961,6 +2025,7 @@ export const PARTS = [
   },
   {
     "id": 10074,
+    "cpuMark": 24973,
     "n": "Intel Core i5-13400F",
     "img": "https://m.media-amazon.com/images/I/51ldM0r7NML._AC_SL300_.jpg",
     "c": "CPU",
@@ -1991,6 +2056,7 @@ export const PARTS = [
   },
   {
     "id": 10075,
+    "cpuMark": 14099,
     "n": "Intel Core i3-13100",
     "img": "https://m.media-amazon.com/images/I/51bTD19mGpL._AC_SL300_.jpg",
     "c": "CPU",
@@ -2023,6 +2089,7 @@ export const PARTS = [
   },
   {
     "id": 10076,
+    "cpuMark": 14659,
     "n": "Intel Core i3-13100F",
     "img": "https://m.media-amazon.com/images/I/41XsVrkh8XL._AC_SL300_.jpg",
     "c": "CPU",
@@ -2053,6 +2120,7 @@ export const PARTS = [
   },
   {
     "id": 10077,
+    "cpuMark": 41143,
     "n": "Intel Core i9-12900K",
     "img": "https://m.media-amazon.com/images/I/51klBAsxGHL._AC_SL300_.jpg",
     "c": "CPU",
@@ -2085,6 +2153,7 @@ export const PARTS = [
   },
   {
     "id": 10078,
+    "cpuMark": 40689,
     "n": "Intel Core i9-12900KF",
     "img": "https://m.media-amazon.com/images/I/51CUAct4KVL._AC_SL300_.jpg",
     "c": "CPU",
@@ -2115,6 +2184,7 @@ export const PARTS = [
   },
   {
     "id": 10079,
+    "cpuMark": 34294,
     "n": "Intel Core i7-12700K",
     "img": "https://m.media-amazon.com/images/I/51NlTpm+7KL._AC_SL300_.jpg",
     "c": "CPU",
@@ -2147,6 +2217,7 @@ export const PARTS = [
   },
   {
     "id": 10080,
+    "cpuMark": 33987,
     "n": "Intel Core i7-12700KF",
     "img": "https://m.media-amazon.com/images/I/51AqEkc2BuL._AC_SL300_.jpg",
     "c": "CPU",
@@ -2177,6 +2248,7 @@ export const PARTS = [
   },
   {
     "id": 10081,
+    "cpuMark": 27541,
     "n": "Intel Core i5-12600K",
     "img": "https://m.media-amazon.com/images/I/51ugNYlDT1L._AC_SL300_.jpg",
     "c": "CPU",
@@ -2209,6 +2281,7 @@ export const PARTS = [
   },
   {
     "id": 10082,
+    "cpuMark": 27523,
     "n": "Intel Core i5-12600KF",
     "img": "https://m.media-amazon.com/images/I/51ldM0r7NML._AC_SL300_.jpg",
     "c": "CPU",
@@ -2239,6 +2312,7 @@ export const PARTS = [
   },
   {
     "id": 10083,
+    "cpuMark": 18793,
     "n": "Intel Core i5-12400",
     "img": "https://m.media-amazon.com/images/I/51V+MalhMHL._AC_SL300_.jpg",
     "c": "CPU",
@@ -2271,6 +2345,7 @@ export const PARTS = [
   },
   {
     "id": 10084,
+    "cpuMark": 19590,
     "n": "Intel Core i5-12400F",
     "img": "https://m.media-amazon.com/images/I/51EwtPjHkIL._AC_SL300_.jpg",
     "c": "CPU",
@@ -2301,6 +2376,7 @@ export const PARTS = [
   },
   {
     "id": 10085,
+    "cpuMark": 12433,
     "n": "Intel Core i3-12100",
     "img": "https://m.media-amazon.com/images/I/51Cbvw+ScJL._AC_SL300_.jpg",
     "c": "CPU",
@@ -2333,6 +2409,7 @@ export const PARTS = [
   },
   {
     "id": 10086,
+    "cpuMark": 13971,
     "n": "Intel Core i3-12100F",
     "img": "https://m.media-amazon.com/images/I/515Tz7tiCyL._AC_SL300_.jpg",
     "c": "CPU",
@@ -2363,6 +2440,7 @@ export const PARTS = [
   },
   {
     "id": 10121,
+    "cpuMark": 41375,
     "n": "Ryzen™ 7 9850X3D Desktop Processor",
     "img": "https://m.media-amazon.com/images/I/71KDfkysoeL._AC_SL1500_.jpg",
     "c": "CPU",
@@ -2401,6 +2479,7 @@ export const PARTS = [
   },
   {
     "id": 10122,
+    "cpuMark": 25829,
     "n": "RYZEN 5 7600X3D Raphael AM5 4.1GHZ 6-CORE Boxed Processor - HEATSINK NOT Included",
     "img": "https://m.media-amazon.com/images/I/51QNjNnE+pL._AC_SL1000_.jpg",
     "c": "CPU",
@@ -2433,6 +2512,7 @@ export const PARTS = [
   },
   {
     "id": 10123,
+    "cpuMark": 12996,
     "n": "Ryzen 5 1600X Processor (YD160XBCAEWOF)",
     "img": "https://m.media-amazon.com/images/I/51aCN2BHxjL._AC_SL1000_.jpg",
     "c": "CPU",
@@ -2468,6 +2548,7 @@ export const PARTS = [
   },
   {
     "id": 10124,
+    "cpuMark": 27541,
     "n": "Core i5-12600K Processor 3.7Ghz / 4.9Ghz Intel Core i5 Processor 12600K Box, DDR5 BX8071512600K Intel",
     "img": "https://m.media-amazon.com/images/I/51Kws4ObreL._AC_SL1280_.jpg",
     "c": "CPU",
@@ -2503,6 +2584,7 @@ export const PARTS = [
   },
   {
     "id": 10125,
+    "cpuMark": 45603,
     "n": "Core i7-13700KF processor 30 MB Smart Cache Box",
     "img": "https://m.media-amazon.com/images/I/51-pszdKOrL._AC_SL1080_.jpg",
     "c": "CPU",
@@ -2537,6 +2619,7 @@ export const PARTS = [
   },
   {
     "id": 10126,
+    "cpuMark": 27523,
     "n": "Core i5-12600KF processor 20 MB Smart Cache Box",
     "img": "https://m.media-amazon.com/images/I/51O+CUBvjaL._AC_SL1280_.jpg",
     "c": "CPU",
@@ -2573,6 +2656,7 @@ export const PARTS = [
   },
   {
     "id": 10127,
+    "cpuMark": 24473,
     "n": "Ryzen™ 5 8400F",
     "img": "https://m.media-amazon.com/images/I/51drz0yDCJL._AC_SL1000_.jpg",
     "c": "CPU",
@@ -2607,6 +2691,7 @@ export const PARTS = [
   },
   {
     "id": 10128,
+    "cpuMark": 57594,
     "n": "Core i9-13900KF Processor 36 MB Smart Cache Box",
     "img": "https://m.media-amazon.com/images/I/510VZ2EWpfL._AC_SL1280_.jpg",
     "c": "CPU",
@@ -2641,6 +2726,7 @@ export const PARTS = [
   },
   {
     "id": 10129,
+    "cpuMark": 30255,
     "n": "Core I7 Processor Bx8071512700f I7-12700f 2.1GHz Octa Core 25mb Cache No Cooler Lga1",
     "img": "https://m.media-amazon.com/images/I/51kaOMi15IL._AC_SL1280_.jpg",
     "c": "CPU",
@@ -2673,6 +2759,7 @@ export const PARTS = [
   },
   {
     "id": 10130,
+    "cpuMark": 31043,
     "n": "Ryzen™ 7 8700F",
     "img": "https://m.media-amazon.com/images/I/61yQUh5F6zL._AC_SL1500_.jpg",
     "c": "CPU",
@@ -2705,6 +2792,7 @@ export const PARTS = [
   },
   {
     "id": 10131,
+    "cpuMark": 25138,
     "n": "CORE I5-14400 Processor (TURBE UP to 4.7GHZ) 20MB LGA1700 14TH Generation BX8071514400",
     "img": "https://m.media-amazon.com/images/I/61NkEZh2hmL._AC_SL1500_.jpg",
     "c": "CPU",
@@ -2739,6 +2827,7 @@ export const PARTS = [
   },
   {
     "id": 10132,
+    "cpuMark": 19725,
     "n": "Core i5 (12th Gen) i5-12500 3 GHz Processor - Retail Pack",
     "img": "https://m.media-amazon.com/images/I/51Kws4ObreL._AC_SL1280_.jpg",
     "c": "CPU",
@@ -2841,6 +2930,7 @@ export const PARTS = [
   },
   {
     "id": 10135,
+    "cpuMark": 34372,
     "n": "AMD Ryzen 7 7700",
     "img": "https://m.media-amazon.com/images/I/41q7n0SPYLL._AC_SL1000_.jpg",
     "c": "CPU",
@@ -2869,6 +2959,7 @@ export const PARTS = [
   },
   {
     "id": 10136,
+    "cpuMark": 60518,
     "n": "Procesorius Intel CPU Core I9-13900KS S1700 Box/6.0G BX8071513900KS S RMBX in",
     "img": "https://m.media-amazon.com/images/I/51Si3P8yJIL._AC_SL1500_.jpg",
     "c": "CPU",
@@ -2902,6 +2993,7 @@ export const PARTS = [
   },
   {
     "id": 10138,
+    "cpuMark": 60204,
     "n": "Core i9-14900KS 6.2 GHz Box, BX8071514900KS",
     "img": "https://m.media-amazon.com/images/I/51B+IODGvlL._AC_SL1011_.jpg",
     "c": "CPU",
@@ -2931,6 +3023,7 @@ export const PARTS = [
   },
   {
     "id": 10139,
+    "cpuMark": 25156,
     "n": "Ryzen 5 7500X3D Box",
     "img": "https://m.media-amazon.com/images/I/715CwOu8PDL._AC_SL1500_.jpg",
     "c": "CPU",
@@ -2995,6 +3088,7 @@ export const PARTS = [
   },
   {
     "id": 10141,
+    "cpuMark": 51278,
     "n": "Ryzen 9 7900X + GIGABYTE B650 AORUS ELITE AX Motherboard",
     "img": "https://m.media-amazon.com/images/I/513Fayue4zL._AC_SL1001_.jpg",
     "c": "CPU",
@@ -3158,6 +3252,7 @@ export const PARTS = [
   },
   {
     "id": 10146,
+    "cpuMark": 52042,
     "n": "CPU Core i7-14700K 14th Generation Raptor Lake-S Refresh LGA1700 BX8071514700K with 3 Year Box Warranty + SilverStone...",
     "img": "https://m.media-amazon.com/images/I/41lKxqfZl+L._AC_SL1200_.jpg",
     "c": "CPU",
@@ -3260,6 +3355,7 @@ export const PARTS = [
   },
   {
     "id": 10149,
+    "cpuMark": 24973,
     "n": "Core I5-13400F Processor 20 Mb Smart Cache, W128281307 (Mb Smart Cache)",
     "img": "https://m.media-amazon.com/images/I/51qvfIyAiPL._AC_SL1080_.jpg",
     "c": "CPU",
@@ -3356,6 +3452,7 @@ export const PARTS = [
   },
   {
     "id": 10152,
+    "cpuMark": 58214,
     "n": "New Intel 13th Gen Raptor Lake Core i9-13900K CPU Upto 5.8GHz Boost Speed Best Gaming Overclocking Features for Z790 ...",
     "img": "https://m.media-amazon.com/images/I/515Atp1B7AL._AC_SL1280_.jpg",
     "c": "CPU",
@@ -3391,6 +3488,7 @@ export const PARTS = [
   },
   {
     "id": 10153,
+    "cpuMark": 31161,
     "n": "(Amazon.co.jp Exclusive) Intel CPU Core Ultra5 225F Processor (20 M Cache, 4.90 GHz), LGA18W",
     "img": "https://m.media-amazon.com/images/I/6121Ht1MNKL._AC_SL1500_.jpg",
     "c": "CPU",
@@ -3422,6 +3520,7 @@ export const PARTS = [
   },
   {
     "id": 10154,
+    "cpuMark": 38396,
     "n": "CPU Core i5-14600KF 14th Generation Raptor Lake-S Refresh LGA1700 BX8071514600KF Box 3 Year Warranty + SilverStone SS...",
     "img": "https://m.media-amazon.com/images/I/41YT0AHvItL._AC_SL1200_.jpg",
     "c": "CPU",
@@ -3557,6 +3656,7 @@ export const PARTS = [
   },
   {
     "id": 10158,
+    "cpuMark": 19278,
     "n": "AMD - Ryzen 5 5500 6-Core - 12 Thread 3.6 GHz (4.2 GHz Max Boost) Socket AM4 65W Unlocked Desktop Processor - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6510/6510779_sd.jpg",
     "c": "CPU",
@@ -3588,6 +3688,7 @@ export const PARTS = [
   },
   {
     "id": 10159,
+    "cpuMark": 51278,
     "n": "AMD - Ryzen 9 7900X 12-Core - 24-Thread 4.7 GHz (5.6 GHz Max Boost) Socket AM5 170W Unlocked Desktop Processor - Silver",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6519/6519473cv11d.jpg",
     "c": "CPU",
@@ -3620,6 +3721,7 @@ export const PARTS = [
   },
   {
     "id": 10160,
+    "cpuMark": 28307,
     "n": "AMD - Ryzen 5 7600X 6-Core - 12-Thread 4.7GHz (5.3 GHz Max Boost) Socket AM5 105W Unlocked Desktop Processor - Silver",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6519/6519479cv11d.jpg",
     "c": "CPU",
@@ -3652,6 +3754,7 @@ export const PARTS = [
   },
   {
     "id": 10161,
+    "cpuMark": 34285,
     "n": "AMD - Ryzen 7 7800X3D 8-Core - 16-Thread 4.2 GHz (5.0 GHz Max Boost) Socket AM5 120W Unlocked Desktop Processor - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6537/6537139_sd.jpg",
     "c": "CPU",
@@ -3684,6 +3787,7 @@ export const PARTS = [
   },
   {
     "id": 10162,
+    "cpuMark": 58371,
     "n": "Intel - Core i9-14900K 14th Gen 24-Core 32-Thread - 4.4GHz (6.0GHz Turbo) Socket LGA 1700 Unlocked Desktop Processor - M",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6560/6560418_sd.jpg",
     "c": "CPU",
@@ -3716,6 +3820,7 @@ export const PARTS = [
   },
   {
     "id": 10163,
+    "cpuMark": 52042,
     "n": "Intel - Core i7-14700K 14th Gen 20-Core 28-Thread - 4.3GHz (5.6GHz Turbo) Socket LGA 1700 Unlocked Desktop Processor - M",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6560/6560420_sd.jpg",
     "c": "CPU",
@@ -3748,6 +3853,7 @@ export const PARTS = [
   },
   {
     "id": 10164,
+    "cpuMark": 38452,
     "n": "Intel - Core i5-14600K 14th Gen 14-Core 20-Thread - 4.0GHz (5.3GHz Turbo) Socket LGA 1700 Unlocked Desktop Processor - M",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6560/6560423_sd.jpg",
     "c": "CPU",
@@ -3780,6 +3886,7 @@ export const PARTS = [
   },
   {
     "id": 10165,
+    "cpuMark": 28036,
     "n": "AMD - Ryzen 7 5800XT 8-Core - 16-Thread 3.8 GHz (4.8 GHz Max Boost) Socket AM4 105W Unlocked Desktop Processor - Silver",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/34a2ed46-2d4d-45af-b3af-a7fb19f719e4.jpg",
     "c": "CPU",
@@ -3811,6 +3918,7 @@ export const PARTS = [
   },
   {
     "id": 10166,
+    "cpuMark": 43902,
     "n": "AMD - Ryzen 9 5900XT 16-Core - 32-Thread 3.3 GHz (4.8 GHz Max Boost) Socket AM4 105W Unlocked Desktop Processor - Silver",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c25031db-49e2-41c3-867c-6f504e9043b5.jpg",
     "c": "CPU",
@@ -3842,6 +3950,7 @@ export const PARTS = [
   },
   {
     "id": 10167,
+    "cpuMark": 65799,
     "n": "AMD - Ryzen 9 9950X 16-Core - 32-Thread 4.3 GHz (5.7 GHz Max Boost) Socket AM5 170W Unlocked Desktop Processor - Silver",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/46458eb7-6eac-4c25-b61c-c7a38f597038.jpg",
     "c": "CPU",
@@ -3874,6 +3983,7 @@ export const PARTS = [
   },
   {
     "id": 10168,
+    "cpuMark": 54433,
     "n": "AMD - Ryzen 9 9900X 12-Core - 24-Thread 4.4 GHz (5.6 GHz Max Boost) Socket AM5 120W Unlocked Desktop Processor - Silver",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f37b0687-5358-4366-92e3-7f629d7f7250.jpg",
     "c": "CPU",
@@ -3906,6 +4016,7 @@ export const PARTS = [
   },
   {
     "id": 10169,
+    "cpuMark": 37066,
     "n": "AMD - Ryzen 7 9700X 8-Core - 16-Thread 3.8 GHz (5.5 GHz Max Boost) Socket AM5 65W Unlocked Desktop Processor - Silver",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/db6178ce-dd3b-40e5-a3de-0f551f1ea180.jpg",
     "c": "CPU",
@@ -3938,6 +4049,7 @@ export const PARTS = [
   },
   {
     "id": 10170,
+    "cpuMark": 30071,
     "n": "AMD - Ryzen 5 9600X 6-Core - 12-Thread 3.9 GHz (5.4 GHz Max Boost) Socket AM5 65W Unlocked Desktop Processor - Silver",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6b4ce6dd-81f4-428a-80a7-fef70bd190fd.jpg",
     "c": "CPU",
@@ -3970,6 +4082,7 @@ export const PARTS = [
   },
   {
     "id": 10171,
+    "cpuMark": 43197,
     "n": "Intel - Core Ultra 5 245K 14-Cores 14-Threads - 4.6GHz (5.2 GHz Turbo) Socket LGA 1851 Unlocked Desktop Processor - Mult",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/816f0dc1-2ae6-4907-8618-36db376d3bd0.jpg",
     "c": "CPU",
@@ -4002,6 +4115,7 @@ export const PARTS = [
   },
   {
     "id": 10172,
+    "cpuMark": 67295,
     "n": "Intel - Core Ultra 9 285K 24-Cores 24-Threads - 4.6GHz (5.7 GHz Turbo) Socket LGA 1851 Unlocked Desktop Processor - Mult",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/0224860a-6519-429e-b610-38285cc3d33f.jpg",
     "c": "CPU",
@@ -4034,6 +4148,7 @@ export const PARTS = [
   },
   {
     "id": 10173,
+    "cpuMark": 58707,
     "n": "Intel - Core Ultra 7 265K 20-Cores 20-Threads - 4.6GHz (5.5 GHz Turbo) Socket LGA 1851 Unlocked Desktop Processor - Mult",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6860eb92-0e32-4684-a69b-7880b09d0b00.jpg",
     "c": "CPU",
@@ -4066,6 +4181,7 @@ export const PARTS = [
   },
   {
     "id": 10174,
+    "cpuMark": 39976,
     "n": "AMD - Ryzen 7 9800X3D 8-Core - 16-Thread 4.7 GHz (5.2 GHz Max Boost) Socket AM5 120W Unlocked Desktop Processor - Silver",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/43526f44-592b-47fe-bd57-c9be5a7c16e9.jpg",
     "c": "CPU",
@@ -4098,6 +4214,7 @@ export const PARTS = [
   },
   {
     "id": 10175,
+    "cpuMark": 56212,
     "n": "AMD - Ryzen 9 9900X3D 12-Core - 24-Thread 4.4 GHz (5.5 GHz Max Boost) Socket AM5 120W Unlocked Desktop Processor - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f24dbb66-a9da-4f4a-b7e6-20e3e5d58451.jpg",
     "c": "CPU",
@@ -4130,6 +4247,7 @@ export const PARTS = [
   },
   {
     "id": 10176,
+    "cpuMark": 70206,
     "n": "AMD - Ryzen 9 9950X3D 16-Core - 32-Thread 4.3 GHz (5.7 GHz Max Boost) Socket AM5 170W Unlocked Desktop Processor - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/bda50e8a-6009-42b8-9f21-9e44c1d0b8e0.jpg",
     "c": "CPU",
@@ -4162,6 +4280,7 @@ export const PARTS = [
   },
   {
     "id": 10177,
+    "cpuMark": 22066,
     "n": "AMD - Ryzen Threadripper 9960X 24-Core - 48-Thread 4.2 GHz (5.4 GHz Max Boost) Socket sTR5 Unlocked Desktop Processor - ",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/86b64768-8867-4bfc-b3b1-4b91cbf7ddbe.jpg",
     "c": "CPU",
@@ -4193,6 +4312,7 @@ export const PARTS = [
   },
   {
     "id": 10178,
+    "cpuMark": 107122,
     "n": "AMD - Ryzen Threadripper 9970X 32-Core - 64-Thread 4 GHz (5.4 GHz Max Boost) Socket sTR5 Unlocked Desktop Processor - Bl",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/98aadbbb-1fae-4484-8019-83aa1c56e902.jpg",
     "c": "CPU",
@@ -4224,6 +4344,7 @@ export const PARTS = [
   },
   {
     "id": 10179,
+    "cpuMark": 143003,
     "n": "AMD - Ryzen Threadripper 9980X 64-Core - 128-Thread 3.2 GHz (5.4 GHzMax Boost) Socket sTR5 Unlocked Desktop Processor - ",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ae27cba6-78a2-4fad-a6ea-390fc43fc914.jpg",
     "c": "CPU",
@@ -4255,6 +4376,7 @@ export const PARTS = [
   },
   {
     "id": 10180,
+    "cpuMark": 68681,
     "n": "Intel - Core Ultra 7 Processor 270K Plus 24 cores (8 P-cores + 16 E-cores) up to 5.5 GHz - Multi",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/aee62347-cee4-4ef3-854f-32916096ee2c.jpg",
     "c": "CPU",
@@ -4287,6 +4409,7 @@ export const PARTS = [
   },
   {
     "id": 10181,
+    "cpuMark": 30354,
     "c": "CPU",
     "n": "Core™ Ultra 5 Desktop Processor 225 10 cores (6 P-cores + 4 E-cores) up to 4.9 GHz",
     "b": "Intel",
@@ -4310,6 +4433,7 @@ export const PARTS = [
   },
   {
     "id": 10182,
+    "cpuMark": 31161,
     "c": "CPU",
     "n": "Core™ Ultra 5 Desktop Processor 225F 10 cores (6 P-cores + 4 E-cores) up to 4.9 GHz",
     "b": "Intel",
@@ -4333,6 +4457,7 @@ export const PARTS = [
   },
   {
     "id": 10183,
+    "cpuMark": 44879,
     "c": "CPU",
     "n": "Core i9-13900 Desktop Processor 24 cores (8 P-cores + 16 E-cores) 36MB Cache, up to 5.6 GHz",
     "b": "Intel",
@@ -4356,6 +4481,7 @@ export const PARTS = [
   },
   {
     "id": 10184,
+    "cpuMark": 43440,
     "c": "CPU",
     "n": "Core i9 (12th Gen) i9-12900KS Gaming Desktop Processor with Integrated Graphics and Hexadeca-core (16 Core) 2.50 GHz",
     "b": "Intel",
@@ -4379,6 +4505,7 @@ export const PARTS = [
   },
   {
     "id": 10185,
+    "cpuMark": 33678,
     "c": "CPU",
     "n": "Core i9 (12th Gen) i9-12900 Hexadeca-core (16 Core) 2.40 GHz Processor - Retail Pack",
     "b": "Intel",
@@ -4402,6 +4529,7 @@ export const PARTS = [
   },
   {
     "id": 10186,
+    "cpuMark": 29937,
     "c": "CPU",
     "n": "ProDesk 400 G9 Business Desktop Computer, SFF Small Form Factor, 12th Gen Intel 12-Core i7-12700 Processor, 32GB DDR4 RAM, 1TB PCIe NVMe M.2 SSD, HDMI, DisplayPort, Windows 11, Black",
     "b": "Intel",
@@ -4425,6 +4553,7 @@ export const PARTS = [
   },
   {
     "id": 10187,
+    "cpuMark": 21335,
     "c": "CPU",
     "n": "Core™ i5-12600 Desktop Processor 18MB Cache up to 4.80GHz",
     "b": "Intel",
@@ -4448,6 +4577,7 @@ export const PARTS = [
   },
   {
     "id": 10188,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core i9-11900K Desktop Processor 8 Cores up to 5.3 GHz Unlocked LGA1200 (Intel 500 Series & Select 400 Series Chipset) 125W",
     "b": "Intel",
@@ -4471,6 +4601,7 @@ export const PARTS = [
   },
   {
     "id": 10189,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core™ i9-11900KF Desktop Processor 8 Cores up to 5.3 GHz Unlocked LGA1200 (Intel® 500 Series & Select 400 Series Chipset) 125W",
     "b": "Intel",
@@ -4494,6 +4625,7 @@ export const PARTS = [
   },
   {
     "id": 10190,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core™ i7-11700K Desktop Processor 8 Cores up to 5.0 GHz Unlocked LGA1200 (Intel 500 Series & Select 400 Series Chipset) 125W",
     "b": "Intel",
@@ -4517,6 +4649,7 @@ export const PARTS = [
   },
   {
     "id": 10191,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core™ i7-11700KF Desktop Processor 8 Cores up to 5.0 GHz Unlocked LGA1200 (Intel® 500 Series & Select 400 Series Chipset) 125W",
     "b": "Intel",
@@ -4540,6 +4673,7 @@ export const PARTS = [
   },
   {
     "id": 10192,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core™ i5-11600K Desktop Processor 6 Cores up to 4.9 GHz Unlocked LGA1200 (Intel® 500 Series & Select 400 Series Chipset) 125W",
     "b": "Intel",
@@ -4563,6 +4697,7 @@ export const PARTS = [
   },
   {
     "id": 10193,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core™ i5-11500 Desktop Processor 6 Cores up to 4.6 GHz LGA1200 (Intel® 500 Series & Select 400 Series chipset) 65W",
     "b": "Intel",
@@ -4586,6 +4721,7 @@ export const PARTS = [
   },
   {
     "id": 10194,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core™ i5-11400 Desktop Processor 6 Cores up to 4.4 GHz LGA1200 (Intel® 500 Series & Select 400 Series chipset) 65W",
     "b": "Intel",
@@ -4609,6 +4745,7 @@ export const PARTS = [
   },
   {
     "id": 10195,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core i9-10900KF Desktop Processor 10 Cores up to 5.3 GHz Unlocked Without Processor Graphics LGA1200 (Intel 400 Series chipset) 125W",
     "b": "Intel",
@@ -4632,6 +4769,7 @@ export const PARTS = [
   },
   {
     "id": 10196,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core i9-10900 Desktop Processor 10 Cores up to 5.2 GHz LGA 1200 (Intel 400 Series Chipset) 65W",
     "b": "Intel",
@@ -4655,6 +4793,7 @@ export const PARTS = [
   },
   {
     "id": 10197,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core i7-10700K Desktop Processor 8 Cores up to 5.1 GHz Unlocked LGA1200 (Intel 400 Series Chipset) 125W (BX8070110700K)",
     "b": "Intel",
@@ -4678,6 +4817,7 @@ export const PARTS = [
   },
   {
     "id": 10198,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core i7-10700KF Desktop Processor 8 Cores up to 5.1 GHz Unlocked Without Processor Graphics LGA1200 (Intel 400 Series chipset) 125W",
     "b": "Intel",
@@ -4701,6 +4841,7 @@ export const PARTS = [
   },
   {
     "id": 10199,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Intel Core i7-10700 Desktop Processor 8 Cores up to 4.8 GHz LGA 1200 (Intel 400 Series Chipset) 65W, BX8070110700 (Renewed)",
     "b": "Intel",
@@ -4726,6 +4867,7 @@ export const PARTS = [
   },
   {
     "id": 10200,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core™ i7-10700F Desktop Processor 8 Cores up to 4.8 GHz Without Processor Graphics LGA1200 (Intel® 400 Series chipset) 65W",
     "b": "Intel",
@@ -4749,6 +4891,7 @@ export const PARTS = [
   },
   {
     "id": 10201,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core i5-10600K Desktop Processor 6 Cores up to 4.8 GHz Unlocked LGA1200 (Intel 400 Series Chipset) 125W",
     "b": "Intel",
@@ -4772,6 +4915,7 @@ export const PARTS = [
   },
   {
     "id": 10202,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core™ i5-10600KF Desktop Processor 6 Cores up to 4.8 GHz Unlocked Without Processor Graphics LGA 1200 (Intel® 400 Series chipset) 125W",
     "b": "Intel",
@@ -4795,6 +4939,7 @@ export const PARTS = [
   },
   {
     "id": 10203,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Intel Core i5-10500 Desktop Processor 6 Cores up to 4.5 GHz LGA1200 (Intel 400 Series chipset) 65W, Model Number: BX8070110500 (Renewed)",
     "b": "Intel",
@@ -4820,6 +4965,7 @@ export const PARTS = [
   },
   {
     "id": 10204,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core i5-10400 Desktop Processor 6 Cores up to 4.3 GHz LGA1200 (Intel 400 Series Chipset) 65W, Model Number: BX8070110400",
     "b": "Intel",
@@ -4843,6 +4989,7 @@ export const PARTS = [
   },
   {
     "id": 10205,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core i5-10400F Desktop Processor 6 Cores up to 4.3 GHz Without Processor Graphics LGA1200 (Intel 400 Series chipset) 65W, Model Number: BX8070110400F",
     "b": "Intel",
@@ -4866,6 +5013,7 @@ export const PARTS = [
   },
   {
     "id": 10206,
+    "cpuMark": 18235,
     "c": "CPU",
     "n": "Core i3-10100 Desktop Processor 4 Cores up to 4.3 GHz LGA1200 (Intel 400 Series Chipset) 65W, Model Number: BX8070110100",
     "b": "Intel",
@@ -4912,6 +5060,7 @@ export const PARTS = [
   },
   {
     "id": 10208,
+    "cpuMark": 8870,
     "c": "CPU",
     "n": "Core i3-10105F 4-Core Comet Lake Processor 3.70GHz 8GT/s 6MB LGA 1200 CPU Retail",
     "b": "Intel",
@@ -4935,6 +5084,7 @@ export const PARTS = [
   },
   {
     "id": 10209,
+    "cpuMark": 15963,
     "c": "CPU",
     "n": "Ryzen 5 4600G - 3.7 GHz - 6 Cores - 12 Threads - 8 MB Cache Memory - Socket AM4 - OEM",
     "b": "AMD",
@@ -4958,6 +5108,7 @@ export const PARTS = [
   },
   {
     "id": 10210,
+    "cpuMark": 11046,
     "c": "CPU",
     "n": "Ryzen 3 4100 4-Core, 8-Thread Unlocked Desktop Processor with Wraith Stealth Cooler",
     "b": "AMD",
@@ -21308,6 +21459,7 @@ export const PARTS = [
   },
   {
     "id": 30001,
+    "g3dMark": 13349,
     "n": "Intel Arc A770 LE",
     "img": "https://m.media-amazon.com/images/I/71X6uBcNk3L._AC_SL300_.jpg",
     "c": "GPU",
@@ -21334,6 +21486,7 @@ export const PARTS = [
   },
   {
     "id": 30002,
+    "g3dMark": 41290,
     "n": "NVIDIA GeForce RTX 5090",
     "img": "https://m.media-amazon.com/images/I/811IbTkEvnL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21364,6 +21517,7 @@ export const PARTS = [
   },
   {
     "id": 30003,
+    "g3dMark": 35698,
     "n": "NVIDIA GeForce RTX 5080",
     "img": "https://m.media-amazon.com/images/I/71lZess7M8L._AC_SL300_.jpg",
     "c": "GPU",
@@ -21394,6 +21548,7 @@ export const PARTS = [
   },
   {
     "id": 30004,
+    "g3dMark": 32429,
     "n": "NVIDIA GeForce RTX 5070 Ti",
     "img": "https://m.media-amazon.com/images/I/812BZZHeKTL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21424,6 +21579,7 @@ export const PARTS = [
   },
   {
     "id": 30005,
+    "g3dMark": 28757,
     "n": "NVIDIA GeForce RTX 5070",
     "img": "https://m.media-amazon.com/images/I/71kUODqPVoL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21454,6 +21610,7 @@ export const PARTS = [
   },
   {
     "id": 30006,
+    "g3dMark": 20805,
     "n": "NVIDIA GeForce RTX 5060 Ti",
     "img": "https://m.media-amazon.com/images/I/81kYKB0Aj5L._AC_SL300_.jpg",
     "c": "GPU",
@@ -21484,6 +21641,7 @@ export const PARTS = [
   },
   {
     "id": 30007,
+    "g3dMark": 20805,
     "n": "NVIDIA GeForce RTX 5060",
     "img": "https://m.media-amazon.com/images/I/71ii5ow8slL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21514,6 +21672,7 @@ export const PARTS = [
   },
   {
     "id": 30008,
+    "g3dMark": 38063,
     "n": "NVIDIA GeForce RTX 4090",
     "img": "https://m.media-amazon.com/images/I/514QPBuqGyL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21544,6 +21703,7 @@ export const PARTS = [
   },
   {
     "id": 30009,
+    "g3dMark": 34427,
     "n": "NVIDIA GeForce RTX 4080 SUPER",
     "img": "https://m.media-amazon.com/images/I/81rCZZvkIVL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21574,6 +21734,7 @@ export const PARTS = [
   },
   {
     "id": 30010,
+    "g3dMark": 34427,
     "n": "NVIDIA GeForce RTX 4080",
     "img": "https://m.media-amazon.com/images/I/71m9FJCubXL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21604,6 +21765,7 @@ export const PARTS = [
   },
   {
     "id": 30011,
+    "g3dMark": 31811,
     "n": "NVIDIA GeForce RTX 4070 Ti SUPER",
     "img": "https://m.media-amazon.com/images/I/81bKcBbcemL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21634,6 +21796,7 @@ export const PARTS = [
   },
   {
     "id": 30012,
+    "g3dMark": 31567,
     "n": "NVIDIA GeForce RTX 4070 Ti",
     "img": "https://m.media-amazon.com/images/I/81XIr69BtVL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21664,6 +21827,7 @@ export const PARTS = [
   },
   {
     "id": 30013,
+    "g3dMark": 29957,
     "n": "NVIDIA GeForce RTX 4070 SUPER",
     "img": "https://m.media-amazon.com/images/I/81PChIf5pwL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21694,6 +21858,7 @@ export const PARTS = [
   },
   {
     "id": 30014,
+    "g3dMark": 26908,
     "n": "NVIDIA GeForce RTX 4070",
     "img": "https://m.media-amazon.com/images/I/81rryZLBohL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21724,6 +21889,7 @@ export const PARTS = [
   },
   {
     "id": 30015,
+    "g3dMark": 22631,
     "n": "NVIDIA GeForce RTX 4060 Ti 16GB",
     "img": "https://m.media-amazon.com/images/I/81kYKB0Aj5L._AC_SL300_.jpg",
     "c": "GPU",
@@ -21754,6 +21920,7 @@ export const PARTS = [
   },
   {
     "id": 30016,
+    "g3dMark": 22612,
     "n": "NVIDIA GeForce RTX 4060 Ti 8GB",
     "img": "https://m.media-amazon.com/images/I/81i5KcFKysL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21784,6 +21951,7 @@ export const PARTS = [
   },
   {
     "id": 30017,
+    "g3dMark": 19511,
     "n": "NVIDIA GeForce RTX 4060",
     "img": "https://m.media-amazon.com/images/I/71wv2w6edAL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21814,6 +21982,7 @@ export const PARTS = [
   },
   {
     "id": 30018,
+    "g3dMark": 29284,
     "n": "NVIDIA GeForce RTX 3090 Ti",
     "img": "https://m.media-amazon.com/images/I/61wx-RzpxLL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21844,6 +22013,7 @@ export const PARTS = [
   },
   {
     "id": 30019,
+    "g3dMark": 26546,
     "n": "NVIDIA GeForce RTX 3090",
     "img": "https://m.media-amazon.com/images/I/61wx-RzpxLL._AC_SL300_.jpg",
     "c": "GPU",
@@ -21874,6 +22044,7 @@ export const PARTS = [
   },
   {
     "id": 30020,
+    "g3dMark": 26773,
     "n": "NVIDIA GeForce RTX 3080 Ti",
     "img": "https://m.media-amazon.com/images/I/61eZu-Gk9TS._AC_SL300_.jpg",
     "c": "GPU",
@@ -21904,6 +22075,7 @@ export const PARTS = [
   },
   {
     "id": 30021,
+    "g3dMark": 26561,
     "n": "NVIDIA GeForce RTX 3080 12GB",
     "img": "https://m.media-amazon.com/images/I/61eZu-Gk9TS._AC_SL300_.jpg",
     "c": "GPU",
@@ -21934,6 +22106,7 @@ export const PARTS = [
   },
   {
     "id": 30022,
+    "g3dMark": 25022,
     "n": "NVIDIA GeForce RTX 3080 10GB",
     "img": "https://m.media-amazon.com/images/I/51Rq9lTbn-L._AC_SL300_.jpg",
     "c": "GPU",
@@ -21964,6 +22137,7 @@ export const PARTS = [
   },
   {
     "id": 30023,
+    "g3dMark": 23249,
     "n": "NVIDIA GeForce RTX 3070 Ti",
     "img": "https://m.media-amazon.com/images/I/81t7Ga7nyxS._AC_SL300_.jpg",
     "c": "GPU",
@@ -21994,6 +22168,7 @@ export const PARTS = [
   },
   {
     "id": 30024,
+    "g3dMark": 22121,
     "n": "NVIDIA GeForce RTX 3070",
     "img": "https://m.media-amazon.com/images/I/51c63ubHJyL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22024,6 +22199,7 @@ export const PARTS = [
   },
   {
     "id": 30025,
+    "g3dMark": 20263,
     "n": "NVIDIA GeForce RTX 3060 Ti",
     "img": "https://m.media-amazon.com/images/I/81uFpNyjm5L._AC_SL300_.jpg",
     "c": "GPU",
@@ -22054,6 +22230,7 @@ export const PARTS = [
   },
   {
     "id": 30026,
+    "g3dMark": 16954,
     "n": "NVIDIA GeForce RTX 3060 12GB",
     "img": "https://m.media-amazon.com/images/I/71tduSp8ooL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22084,6 +22261,7 @@ export const PARTS = [
   },
   {
     "id": 30027,
+    "g3dMark": 12496,
     "n": "NVIDIA GeForce RTX 3050 8GB",
     "img": "https://m.media-amazon.com/images/I/714J6o2Ug7L._AC_SL300_.jpg",
     "c": "GPU",
@@ -22114,6 +22292,7 @@ export const PARTS = [
   },
   {
     "id": 30028,
+    "g3dMark": 26905,
     "n": "AMD Radeon RX 9070 XT",
     "img": "https://m.media-amazon.com/images/I/61Ktllk8BvL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22144,6 +22323,7 @@ export const PARTS = [
   },
   {
     "id": 30029,
+    "g3dMark": 25405,
     "n": "AMD Radeon RX 9070",
     "img": "https://m.media-amazon.com/images/I/611Xx8c9puL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22174,6 +22354,7 @@ export const PARTS = [
   },
   {
     "id": 30030,
+    "g3dMark": 17958,
     "n": "AMD Radeon RX 9060 XT",
     "img": "https://m.media-amazon.com/images/I/71L08TQedJL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22204,6 +22385,7 @@ export const PARTS = [
   },
   {
     "id": 30031,
+    "g3dMark": 17958,
     "n": "AMD Radeon RX 9060",
     "img": "https://m.media-amazon.com/images/I/71L08TQedJL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22234,6 +22416,7 @@ export const PARTS = [
   },
   {
     "id": 30032,
+    "g3dMark": 31406,
     "n": "AMD Radeon RX 7900 XTX",
     "img": "https://m.media-amazon.com/images/I/41fOuNCg2mL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22264,6 +22447,7 @@ export const PARTS = [
   },
   {
     "id": 30033,
+    "g3dMark": 29028,
     "n": "AMD Radeon RX 7900 XT",
     "img": "https://m.media-amazon.com/images/I/41fOuNCg2mL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22294,6 +22478,7 @@ export const PARTS = [
   },
   {
     "id": 30034,
+    "g3dMark": 27395,
     "n": "AMD Radeon RX 7900 GRE",
     "img": "https://m.media-amazon.com/images/I/41fOuNCg2mL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22324,6 +22509,7 @@ export const PARTS = [
   },
   {
     "id": 30035,
+    "g3dMark": 24335,
     "n": "AMD Radeon RX 7800 XT",
     "img": "https://m.media-amazon.com/images/I/612bL8UL2IL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22354,6 +22540,7 @@ export const PARTS = [
   },
   {
     "id": 30036,
+    "g3dMark": 22661,
     "n": "AMD Radeon RX 7700 XT",
     "img": "https://m.media-amazon.com/images/I/61tneI9kg4L._AC_SL300_.jpg",
     "c": "GPU",
@@ -22384,6 +22571,7 @@ export const PARTS = [
   },
   {
     "id": 30037,
+    "g3dMark": 17296,
     "n": "AMD Radeon RX 7600 XT",
     "img": "https://m.media-amazon.com/images/I/61tneI9kg4L._AC_SL300_.jpg",
     "c": "GPU",
@@ -22414,6 +22602,7 @@ export const PARTS = [
   },
   {
     "id": 30038,
+    "g3dMark": 16514,
     "n": "AMD Radeon RX 7600",
     "img": "https://m.media-amazon.com/images/I/619fohQ4gKL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22444,6 +22633,7 @@ export const PARTS = [
   },
   {
     "id": 30039,
+    "g3dMark": 28086,
     "n": "AMD Radeon RX 6950 XT",
     "img": "https://m.media-amazon.com/images/I/81FTVf0jQCL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22474,6 +22664,7 @@ export const PARTS = [
   },
   {
     "id": 30040,
+    "g3dMark": 26672,
     "n": "AMD Radeon RX 6900 XT",
     "img": "https://m.media-amazon.com/images/I/81U5H5c0jyL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22536,6 +22727,7 @@ export const PARTS = [
   },
   {
     "id": 30042,
+    "g3dMark": 22024,
     "n": "AMD Radeon RX 6800",
     "img": "https://m.media-amazon.com/images/I/71LckgU8r2L._AC_SL300_.jpg",
     "c": "GPU",
@@ -22566,6 +22758,7 @@ export const PARTS = [
   },
   {
     "id": 30043,
+    "g3dMark": 20717,
     "n": "AMD Radeon RX 6750 XT",
     "img": "https://m.media-amazon.com/images/I/61tneI9kg4L._AC_SL300_.jpg",
     "c": "GPU",
@@ -22596,6 +22789,7 @@ export const PARTS = [
   },
   {
     "id": 30044,
+    "g3dMark": 19731,
     "n": "AMD Radeon RX 6700 XT",
     "img": "https://m.media-amazon.com/images/I/611yWUN2+NL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22626,6 +22820,7 @@ export const PARTS = [
   },
   {
     "id": 30045,
+    "g3dMark": 17126,
     "n": "AMD Radeon RX 6650 XT",
     "img": "https://m.media-amazon.com/images/I/81COVHz80LL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22656,6 +22851,7 @@ export const PARTS = [
   },
   {
     "id": 30046,
+    "g3dMark": 16450,
     "n": "AMD Radeon RX 6600 XT",
     "img": "https://m.media-amazon.com/images/I/81+x9UtG9iL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22686,6 +22882,7 @@ export const PARTS = [
   },
   {
     "id": 30047,
+    "g3dMark": 15064,
     "n": "AMD Radeon RX 6600",
     "img": "https://m.media-amazon.com/images/I/61n6JjRZBGL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22716,6 +22913,7 @@ export const PARTS = [
   },
   {
     "id": 30048,
+    "g3dMark": 15927,
     "n": "Intel Arc B580",
     "img": "https://m.media-amazon.com/images/I/81igM3aW65L._AC_SL300_.jpg",
     "c": "GPU",
@@ -22746,6 +22944,7 @@ export const PARTS = [
   },
   {
     "id": 30049,
+    "g3dMark": 14079,
     "n": "Intel Arc B570",
     "img": "https://m.media-amazon.com/images/I/61AqKwSmJlL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22776,6 +22975,7 @@ export const PARTS = [
   },
   {
     "id": 30050,
+    "g3dMark": 13349,
     "n": "Intel Arc A770 16GB",
     "img": "https://m.media-amazon.com/images/I/71X6uBcNk3L._AC_SL300_.jpg",
     "c": "GPU",
@@ -22806,6 +23006,7 @@ export const PARTS = [
   },
   {
     "id": 30051,
+    "g3dMark": 12628,
     "n": "Intel Arc A750",
     "img": "https://m.media-amazon.com/images/I/618n+u4X9iL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22836,6 +23037,7 @@ export const PARTS = [
   },
   {
     "id": 30052,
+    "g3dMark": 12075,
     "n": "Intel Arc A580",
     "img": "https://m.media-amazon.com/images/I/615WP+sz02L._AC_SL300_.jpg",
     "c": "GPU",
@@ -22866,6 +23068,7 @@ export const PARTS = [
   },
   {
     "id": 30053,
+    "g3dMark": 28598,
     "n": "NVIDIA RTX 6000 Ada",
     "img": "https://m.media-amazon.com/images/I/61I-uAU9XGL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22896,6 +23099,7 @@ export const PARTS = [
   },
   {
     "id": 30054,
+    "g3dMark": 30156,
     "n": "NVIDIA RTX 5000 Ada",
     "img": "https://m.media-amazon.com/images/I/41Tm5fJzBgL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22926,6 +23130,7 @@ export const PARTS = [
   },
   {
     "id": 30055,
+    "g3dMark": 28360,
     "n": "NVIDIA RTX 4500 Ada",
     "img": "https://m.media-amazon.com/images/I/31WyLPWBs2L._AC_SL300_.jpg",
     "c": "GPU",
@@ -22956,6 +23161,7 @@ export const PARTS = [
   },
   {
     "id": 30056,
+    "g3dMark": 23699,
     "n": "NVIDIA RTX 4000 Ada",
     "img": "https://m.media-amazon.com/images/I/31EJSY7nROL._AC_SL300_.jpg",
     "c": "GPU",
@@ -22986,6 +23192,7 @@ export const PARTS = [
   },
   {
     "id": 30057,
+    "g3dMark": 17171,
     "n": "NVIDIA RTX 2000 Ada",
     "img": "https://m.media-amazon.com/images/I/51PPIpeIZkL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23016,6 +23223,7 @@ export const PARTS = [
   },
   {
     "id": 30058,
+    "g3dMark": 22752,
     "n": "NVIDIA RTX A6000",
     "img": "https://m.media-amazon.com/images/I/51+9unnbV6L._AC_SL300_.jpg",
     "c": "GPU",
@@ -23046,6 +23254,7 @@ export const PARTS = [
   },
   {
     "id": 30059,
+    "g3dMark": 23032,
     "n": "NVIDIA RTX A5000",
     "img": "https://m.media-amazon.com/images/I/41C7y8yVVWL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23076,6 +23285,7 @@ export const PARTS = [
   },
   {
     "id": 30060,
+    "g3dMark": 19365,
     "n": "NVIDIA RTX A4000",
     "img": "https://m.media-amazon.com/images/I/41TBE+A2kLL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23106,6 +23316,7 @@ export const PARTS = [
   },
   {
     "id": 30061,
+    "g3dMark": 27729,
     "n": "AMD Radeon PRO W7900",
     "img": "https://m.media-amazon.com/images/I/51RD4y5M6NL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23136,6 +23347,7 @@ export const PARTS = [
   },
   {
     "id": 30062,
+    "g3dMark": 27502,
     "n": "AMD Radeon PRO W7800",
     "img": "https://m.media-amazon.com/images/I/61dDG+1KuiL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23166,6 +23378,7 @@ export const PARTS = [
   },
   {
     "id": 30063,
+    "g3dMark": 22776,
     "n": "AMD Radeon PRO W7700",
     "img": "https://m.media-amazon.com/images/I/51aJs0h8faL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23196,6 +23409,7 @@ export const PARTS = [
   },
   {
     "id": 30064,
+    "g3dMark": 16267,
     "n": "AMD Radeon PRO W7600",
     "img": "https://m.media-amazon.com/images/I/61RbI2gLKUL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23226,6 +23440,7 @@ export const PARTS = [
   },
   {
     "id": 30065,
+    "g3dMark": 13220,
     "n": "AMD Radeon PRO W7500",
     "img": "https://m.media-amazon.com/images/I/61MSUMWwYqL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23256,6 +23471,7 @@ export const PARTS = [
   },
   {
     "id": 30066,
+    "g3dMark": 41290,
     "n": "ASUS ROG Strix RTX 5090 OC",
     "img": "https://m.media-amazon.com/images/I/811IbTkEvnL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23286,6 +23502,7 @@ export const PARTS = [
   },
   {
     "id": 30067,
+    "g3dMark": 41290,
     "n": "MSI RTX 5090 SUPRIM Liquid X",
     "img": "https://m.media-amazon.com/images/I/618bg7YJGpL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23316,6 +23533,7 @@ export const PARTS = [
   },
   {
     "id": 30068,
+    "g3dMark": 41290,
     "n": "Gigabyte AORUS RTX 5090 MASTER",
     "img": "https://m.media-amazon.com/images/I/71cfrt9r7tL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23346,6 +23564,7 @@ export const PARTS = [
   },
   {
     "id": 30069,
+    "g3dMark": 41290,
     "n": "ZOTAC RTX 5090 AMP Extreme AIRO",
     "img": "https://m.media-amazon.com/images/I/71ovNPmeqoL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23376,6 +23595,7 @@ export const PARTS = [
   },
   {
     "id": 30070,
+    "g3dMark": 35698,
     "n": "ASUS TUF RTX 5080 OC",
     "img": "https://m.media-amazon.com/images/I/71WSd4clFZL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23406,6 +23626,7 @@ export const PARTS = [
   },
   {
     "id": 30071,
+    "g3dMark": 35698,
     "n": "MSI RTX 5080 Gaming X Trio",
     "img": "https://m.media-amazon.com/images/I/71n9sxFO9dL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23436,6 +23657,7 @@ export const PARTS = [
   },
   {
     "id": 30072,
+    "g3dMark": 35698,
     "n": "Gigabyte RTX 5080 AORUS MASTER",
     "img": "https://m.media-amazon.com/images/I/71orj9hPxiL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23466,6 +23688,7 @@ export const PARTS = [
   },
   {
     "id": 30073,
+    "g3dMark": 32429,
     "n": "ASUS ROG Strix RTX 5070 Ti OC",
     "img": "https://m.media-amazon.com/images/I/81tYKg1osaL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23496,6 +23719,7 @@ export const PARTS = [
   },
   {
     "id": 30074,
+    "g3dMark": 32429,
     "n": "MSI RTX 5070 Ti Gaming X Trio",
     "img": "https://m.media-amazon.com/images/I/71qDAG4CFLL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23526,6 +23750,7 @@ export const PARTS = [
   },
   {
     "id": 30075,
+    "g3dMark": 28757,
     "n": "ASUS Dual RTX 5070 OC",
     "img": "https://m.media-amazon.com/images/I/81S9fi6ViFL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23556,6 +23781,7 @@ export const PARTS = [
   },
   {
     "id": 30076,
+    "g3dMark": 28757,
     "n": "MSI RTX 5070 Ventus 3X OC",
     "img": "https://m.media-amazon.com/images/I/81rLJMXHXTL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23586,6 +23812,7 @@ export const PARTS = [
   },
   {
     "id": 30077,
+    "g3dMark": 28757,
     "n": "Gigabyte RTX 5070 Gaming OC",
     "img": "https://m.media-amazon.com/images/I/718suf-wttL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23616,6 +23843,7 @@ export const PARTS = [
   },
   {
     "id": 30078,
+    "g3dMark": 38063,
     "n": "ASUS ROG Strix RTX 4090 OC",
     "img": "https://m.media-amazon.com/images/I/815d7TTP5UL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23646,6 +23874,7 @@ export const PARTS = [
   },
   {
     "id": 30079,
+    "g3dMark": 38063,
     "n": "MSI RTX 4090 SUPRIM X",
     "img": "https://m.media-amazon.com/images/I/71mKnFnBj+L._AC_SL300_.jpg",
     "c": "GPU",
@@ -23676,6 +23905,7 @@ export const PARTS = [
   },
   {
     "id": 30080,
+    "g3dMark": 38063,
     "n": "Gigabyte RTX 4090 AORUS MASTER",
     "img": "https://m.media-amazon.com/images/I/71weEUoPsyL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23706,6 +23936,7 @@ export const PARTS = [
   },
   {
     "id": 30081,
+    "g3dMark": 31811,
     "n": "ASUS TUF RTX 4070 Ti SUPER OC",
     "img": "https://m.media-amazon.com/images/I/71jjBcnQqyL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23736,6 +23967,7 @@ export const PARTS = [
   },
   {
     "id": 30082,
+    "g3dMark": 31811,
     "n": "MSI RTX 4070 Ti SUPER Gaming X Trio",
     "img": "https://m.media-amazon.com/images/I/71aeIYigEnL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23766,6 +23998,7 @@ export const PARTS = [
   },
   {
     "id": 30083,
+    "g3dMark": 29957,
     "n": "ASUS Dual RTX 4070 SUPER OC",
     "img": "https://m.media-amazon.com/images/I/81PChIf5pwL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23796,6 +24029,7 @@ export const PARTS = [
   },
   {
     "id": 30084,
+    "g3dMark": 29957,
     "n": "MSI RTX 4070 SUPER Ventus 2X OC",
     "img": "https://m.media-amazon.com/images/I/51e7Cg9xDeL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23826,6 +24060,7 @@ export const PARTS = [
   },
   {
     "id": 30085,
+    "g3dMark": 22612,
     "n": "MSI RTX 4060 Ti Ventus 2X OC",
     "img": "https://m.media-amazon.com/images/I/71FPIhwplIL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23856,6 +24091,7 @@ export const PARTS = [
   },
   {
     "id": 30086,
+    "g3dMark": 22612,
     "n": "ASUS Dual RTX 4060 Ti OC",
     "img": "https://m.media-amazon.com/images/I/81sIB+hIqhL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23886,6 +24122,7 @@ export const PARTS = [
   },
   {
     "id": 30087,
+    "g3dMark": 19511,
     "n": "ASUS Dual RTX 4060 OC",
     "img": "https://m.media-amazon.com/images/I/81i5KcFKysL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23916,6 +24153,7 @@ export const PARTS = [
   },
   {
     "id": 30088,
+    "g3dMark": 19511,
     "n": "Gigabyte RTX 4060 Windforce OC",
     "img": "https://m.media-amazon.com/images/I/71wv2w6edAL._AC_SL300_.jpg",
     "c": "GPU",
@@ -23946,6 +24184,7 @@ export const PARTS = [
   },
   {
     "id": 30089,
+    "g3dMark": 19511,
     "n": "EVGA RTX 4060 XC Gaming",
     "img": "https://m.media-amazon.com/images/I/81k6bxrB2YL._AC_SL300_.jpg",
     "c": "GPU",
@@ -24104,6 +24343,7 @@ export const PARTS = [
   },
   {
     "id": 30094,
+    "g3dMark": 31406,
     "n": "SAPPHIRE Nitro+ RX 7900 XTX",
     "img": "https://m.media-amazon.com/images/I/81tvHo10s2L._AC_SL300_.jpg",
     "c": "GPU",
@@ -24134,6 +24374,7 @@ export const PARTS = [
   },
   {
     "id": 30095,
+    "g3dMark": 31406,
     "n": "PowerColor Red Devil RX 7900 XTX",
     "img": "https://m.media-amazon.com/images/I/81skgrznGqL._AC_SL300_.jpg",
     "c": "GPU",
@@ -24164,6 +24405,7 @@ export const PARTS = [
   },
   {
     "id": 30096,
+    "g3dMark": 24335,
     "n": "SAPPHIRE Pulse RX 7800 XT",
     "img": "https://m.media-amazon.com/images/I/81LrgyAxfmL._AC_SL300_.jpg",
     "c": "GPU",
@@ -24226,6 +24468,7 @@ export const PARTS = [
   },
   {
     "id": 30098,
+    "g3dMark": 24335,
     "n": "PowerColor Red Devil RX 7800 XT",
     "img": "https://m.media-amazon.com/images/I/71BHpQLBvXL._AC_SL300_.jpg",
     "c": "GPU",
@@ -24256,6 +24499,7 @@ export const PARTS = [
   },
   {
     "id": 30099,
+    "g3dMark": 24335,
     "n": "ASRock RX 7800 XT Challenger OC",
     "img": "https://m.media-amazon.com/images/I/61tneI9kg4L._AC_SL300_.jpg",
     "c": "GPU",
@@ -24286,6 +24530,7 @@ export const PARTS = [
   },
   {
     "id": 30100,
+    "g3dMark": 22661,
     "n": "SAPPHIRE Pulse RX 7700 XT",
     "img": "https://m.media-amazon.com/images/I/71CC7BfXjGL._AC_SL300_.jpg",
     "c": "GPU",
@@ -24316,6 +24561,7 @@ export const PARTS = [
   },
   {
     "id": 30101,
+    "g3dMark": 22661,
     "n": "XFX Speedster SWFT210 RX 7700 XT",
     "img": "https://m.media-amazon.com/images/I/61-D5GncsNL._AC_SL300_.jpg",
     "c": "GPU",
@@ -24346,6 +24592,7 @@ export const PARTS = [
   },
   {
     "id": 30102,
+    "g3dMark": 16514,
     "n": "MSI RX 7600 MECH 2X",
     "img": "https://m.media-amazon.com/images/I/718GiZA71YL._AC_SL300_.jpg",
     "c": "GPU",
@@ -24376,6 +24623,7 @@ export const PARTS = [
   },
   {
     "id": 30103,
+    "g3dMark": 16514,
     "n": "SAPPHIRE Pulse RX 7600",
     "img": "https://m.media-amazon.com/images/I/71C+FycLQ8L._AC_SL300_.jpg",
     "c": "GPU",
@@ -24406,6 +24654,7 @@ export const PARTS = [
   },
   {
     "id": 30104,
+    "g3dMark": 16514,
     "n": "ASRock RX 7600 Challenger",
     "img": "https://m.media-amazon.com/images/I/612GZBgV5TL._AC_SL300_.jpg",
     "c": "GPU",
@@ -24466,6 +24715,7 @@ export const PARTS = [
   },
   {
     "id": 30107,
+    "g3dMark": 10761,
     "n": "Dual NVIDIA GeForce RTX 3050 6GB OC Edition Gaming Graphics Card - PCIe 4.0, 6GB GDDR6 Memory, HDMI 2.1",
     "img": "https://m.media-amazon.com/images/I/81mwcITtHBL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -24500,6 +24750,7 @@ export const PARTS = [
   },
   {
     "id": 30108,
+    "g3dMark": 20127,
     "n": "Radeon™ RX 9060 XT Gaming OC ICE 16G Graphics Card (16GB GDDR6, 128-bit, PCIe 5.0",
     "img": "https://m.media-amazon.com/images/I/71OvFbEQdIL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -24539,6 +24790,7 @@ export const PARTS = [
   },
   {
     "id": 30109,
+    "g3dMark": 26905,
     "n": "Prime Radeon™ RX 9070 XT OC Edition Graphics Card, AMD (PCIe 5.0, HDMI/DP 2.1",
     "img": "https://m.media-amazon.com/images/I/81huTBuLV+L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -24573,6 +24825,7 @@ export const PARTS = [
   },
   {
     "id": 30110,
+    "g3dMark": 20127,
     "n": "Dual Radeon™ RX 9060 XT 16GB GDDR6 Graphics Card (PCIe 5.0, HDMI 2.1b, DisplayPort 2.1a",
     "img": "https://m.media-amazon.com/images/I/71WTt-GxSpL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -24608,6 +24861,7 @@ export const PARTS = [
   },
   {
     "id": 30111,
+    "g3dMark": 22649,
     "n": "GeForce RTX 5060 Ti Gaming OC 16G Graphics Card, by NVIDIA,16GB 128-bit GDDR7",
     "img": "https://m.media-amazon.com/images/I/71NyB6p4W3L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -24646,6 +24900,7 @@ export const PARTS = [
   },
   {
     "id": 30112,
+    "g3dMark": 41290,
     "n": "ROG Astral GeForce RTX 5090 White OC Edition Graphics Card, NVIDIA (PCIe 5.0, 32GB GDDR7",
     "img": "https://m.media-amazon.com/images/I/81+rFJuvG3L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -24680,6 +24935,7 @@ export const PARTS = [
   },
   {
     "id": 30113,
+    "g3dMark": 35698,
     "n": "NVIDIA GeForce RTX™ 5080 Epic-X™ ARGB OC Triple Fan, Graphics Card (16GB GDDR7, 256-bit",
     "img": "https://m.media-amazon.com/images/I/6139iUxGy-L._AC_SL1000_.jpg",
     "c": "GPU",
@@ -24719,6 +24975,7 @@ export const PARTS = [
   },
   {
     "id": 30114,
+    "g3dMark": 35698,
     "n": "NVIDIA GeForce RTX 5080 Graphic Card - 16 GB GDDR7-7680 x 4320-2.62 GHz Boost Clock - 256 bit Bus Width - PCI Express...",
     "img": "https://m.media-amazon.com/images/I/81jzfwgN14L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -24758,6 +25015,7 @@ export const PARTS = [
   },
   {
     "id": 30115,
+    "g3dMark": 35698,
     "n": "Gaming GeForce RTX 5080 Solid CORE OC DLSS 4 16GB GDDR7 256-bit 30 Gbps PCIE 5.0 Gaming Graphics Card, IceStorm 3.0 A...",
     "img": "https://m.media-amazon.com/images/I/71DFQW5biAL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -24791,6 +25049,7 @@ export const PARTS = [
   },
   {
     "id": 30116,
+    "g3dMark": 22247,
     "n": "Dual GeForce RTX™ 5060 Ti 8GB GDDR7 OC Edition Graphics Card, NVIDIA, Desktop (PCIe 5.0",
     "img": "https://m.media-amazon.com/images/I/81-KEx-lGSL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -24824,6 +25083,7 @@ export const PARTS = [
   },
   {
     "id": 30117,
+    "g3dMark": 26905,
     "n": "Radeon™ RX 9070 XT Gaming OC ICE 16G Graphics Card (16GB GDDR6, 256-bit, PCIe 5.0",
     "img": "https://m.media-amazon.com/images/I/71K0UowGoLL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -24863,6 +25123,7 @@ export const PARTS = [
   },
   {
     "id": 30118,
+    "g3dMark": 41290,
     "n": "ROG Astral GeForce RTX 5090 BTF OC Edition, 32GB GDDR7, 3.8-Slot",
     "img": "https://m.media-amazon.com/images/I/81I4gjI-KOL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -24897,6 +25158,7 @@ export const PARTS = [
   },
   {
     "id": 30119,
+    "g3dMark": 35698,
     "n": "ROG Astral GeForce RTX™ 5080 OC Edition Graphics Card, NVIDIA (PCIe® 5.0, 16GB GDDR7",
     "img": "https://m.media-amazon.com/images/I/81JPZdpeH+L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -24935,6 +25197,7 @@ export const PARTS = [
   },
   {
     "id": 30120,
+    "g3dMark": 35698,
     "n": "GeForce RTX 5080 Founders Edition",
     "img": "https://m.media-amazon.com/images/I/31DskP4o6yL._AC_.jpg",
     "c": "GPU",
@@ -24973,6 +25236,7 @@ export const PARTS = [
   },
   {
     "id": 30121,
+    "g3dMark": 26905,
     "n": "Prime Radeon™ RX 9070 XT White OC Edition Graphics Card, AMD (PCIe 5.0, HDMI/DP 2.1",
     "img": "https://m.media-amazon.com/images/I/71efFjNqm+L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25006,6 +25270,7 @@ export const PARTS = [
   },
   {
     "id": 30122,
+    "g3dMark": 35698,
     "n": "Gaming RTX 5080 16G SUPRIM SOC Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2760 MHz",
     "img": "https://m.media-amazon.com/images/I/71hVE3eq1bL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25040,6 +25305,7 @@ export const PARTS = [
   },
   {
     "id": 30123,
+    "g3dMark": 22247,
     "n": "Gaming RTX 5060 Ti 8G Ventus 3X OC Graphics Card (8GB GDDR7,128-bit, Extreme Performance: 2602 MHz",
     "img": "https://m.media-amazon.com/images/I/71YneRF-W9L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25074,6 +25340,7 @@ export const PARTS = [
   },
   {
     "id": 30124,
+    "g3dMark": 22649,
     "n": "Gaming RTX 5060 Ti 16G Shadow 2X OC Graphics Card (16GB GDDR7, 128-bit, Extreme Performance: TBA MHz",
     "img": "https://m.media-amazon.com/images/I/71rfm5iZ40L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25114,6 +25381,7 @@ export const PARTS = [
   },
   {
     "id": 30125,
+    "g3dMark": 22247,
     "n": "GeForce RTX 5060 Ti Eagle MAX OC 8G Graphics Card, 8GB 128-bit GDDR7, PCIe 5.0",
     "img": "https://m.media-amazon.com/images/I/71epyUwP+BL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25147,6 +25415,7 @@ export const PARTS = [
   },
   {
     "id": 30126,
+    "g3dMark": 22631,
     "n": "GeForce RTX 4060 Ti Ventus 3X 16G OC Graphics Card -NVIDIA RTX 4060 Ti, 16GB GDDR6 Memory, 18Gbps",
     "img": "https://m.media-amazon.com/images/I/71QZLPNFeNL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25180,6 +25449,7 @@ export const PARTS = [
   },
   {
     "id": 30127,
+    "g3dMark": 16514,
     "n": "GV-R76GAMING OC-8GD Radeon RX 7600 Gaming OC 8G Graphics Card, 3X WINDFORCE Fans 8GB 128-bit GDDR6, Video Card",
     "img": "https://m.media-amazon.com/images/I/71+Lh5QLfyL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25214,6 +25484,7 @@ export const PARTS = [
   },
   {
     "id": 30128,
+    "g3dMark": 20127,
     "n": "Radeon RX 9060 XT Gaming OC 16G Graphics Card - 16GB GDDR6, 128bit, PCI-E 5.0",
     "img": "https://m.media-amazon.com/images/I/71DKs53RKNL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25247,6 +25518,7 @@ export const PARTS = [
   },
   {
     "id": 30129,
+    "g3dMark": 29957,
     "n": "GeForce RTX 4070 Super WINDFORCE OC Graphics Card - 2505MHz Core, 12GB GDDR6X 21000MHz 192-bit Memory, PCI-E 4.0",
     "img": "https://m.media-amazon.com/images/I/71P2aaQnJJL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25280,6 +25552,7 @@ export const PARTS = [
   },
   {
     "id": 30130,
+    "g3dMark": 26908,
     "n": "GeForce RTX 4070 WINDFORCE OC 12G Graphics Card, 3X WINDFORCE Fans, 12GB 192-bit GDDR6X",
     "img": "https://m.media-amazon.com/images/I/71liIYrRmkL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25314,6 +25587,7 @@ export const PARTS = [
   },
   {
     "id": 30131,
+    "g3dMark": 22612,
     "n": "Gaming GeForce RTX 4060 Ti 8GB GDRR6 Extreme Clock: 2580 MHz 128-Bit HDMI/DP Nvlink TORX Fan 4.0 Ada Lovelace Archite...",
     "img": "https://m.media-amazon.com/images/I/71ctFx4t8+L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25348,6 +25622,7 @@ export const PARTS = [
   },
   {
     "id": 30132,
+    "g3dMark": 29957,
     "n": "GeForce RTX™ 4070 Super 12GB XLR8 Gaming Verto™ Epic-X RGB™ OC Triple Fan Graphics Card DLSS 3 (NVIDIA GeForce SFF-Re...",
     "img": "https://m.media-amazon.com/images/I/51bOSUtNpjL._AC_SL1000_.jpg",
     "c": "GPU",
@@ -25381,6 +25656,7 @@ export const PARTS = [
   },
   {
     "id": 30133,
+    "g3dMark": 26905,
     "n": "Radeon RX 9070 XT Gaming OC 16G Graphics Card - 16 GB GDDR6, 256 Bit, PCI-E 5.0",
     "img": "https://m.media-amazon.com/images/I/81OO5-B1DVL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25414,6 +25690,7 @@ export const PARTS = [
   },
   {
     "id": 30134,
+    "g3dMark": 24335,
     "n": "Radeon RX 7800 XT Gaming OC 16G Graphics Card, 3X WINDFORCE Fans 16GB 256-bit GDDR6, GV-R78XTGAMING OC-16GD Video Card",
     "img": "https://m.media-amazon.com/images/I/71GKfo5qtaL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25448,6 +25725,7 @@ export const PARTS = [
   },
   {
     "id": 30135,
+    "g3dMark": 31567,
     "n": "Gaming GeForce RTX 4070 Ti Trinity OC DLSS 3 12GB GDDR6X 192-bit 21 Gbps PCIE 4.0 Gaming Graphics Card, IceStorm 2.0 ...",
     "img": "https://m.media-amazon.com/images/I/81ywJlcuVOL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25481,6 +25759,7 @@ export const PARTS = [
   },
   {
     "id": 30136,
+    "g3dMark": 34427,
     "n": "GeForce RTX 4080 Super WINDFORCE V2 Graphics Card - 2550MHz Core, 16GB GDDR6X 23000MHz 256-bit Memory, PCI-E 4.0",
     "img": "https://m.media-amazon.com/images/I/61tyM2UpXaL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25512,6 +25791,7 @@ export const PARTS = [
   },
   {
     "id": 30137,
+    "g3dMark": 34427,
     "n": "GeForce RTX 4080 Super AERO OC Graphics Card - 2595MHz Core, 16GB GDDR6X 23000MHz 256-bit Memory, PCI-E 4.0",
     "img": "https://m.media-amazon.com/images/I/613HSZur1CL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25543,6 +25823,7 @@ export const PARTS = [
   },
   {
     "id": 30138,
+    "g3dMark": 34427,
     "n": "GeForce RTX 4080 Super Gaming OC Graphics Card - 2595MHz Core, 16GB GDDR6X 23000MHz 256-bit Memory, PCI-E 4.0",
     "img": "https://m.media-amazon.com/images/I/61YOD5OzuQL._AC_SL1000_.jpg",
     "c": "GPU",
@@ -25571,6 +25852,7 @@ export const PARTS = [
   },
   {
     "id": 30139,
+    "g3dMark": 22612,
     "n": "GV-N406TEAGLE-8GD GeForce RTX 4060 Ti Eagle 8G Graphics Card, 3X WINDFORCE Fans, 8GB 128-bit GDDR6",
     "img": "https://m.media-amazon.com/images/I/712setWp52L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25605,6 +25887,7 @@ export const PARTS = [
   },
   {
     "id": 30140,
+    "g3dMark": 9068,
     "n": "RX 5500 XT 8gb GDDR6 Graphics Card,128 Bit, 3XDP",
     "img": "https://m.media-amazon.com/images/I/61hDaBytz2L._AC_SL1000_.jpg",
     "c": "GPU",
@@ -25637,6 +25920,7 @@ export const PARTS = [
   },
   {
     "id": 30141,
+    "g3dMark": 34427,
     "n": "GeForce RTX™ 4080 Super 16GB Verto™ OC Triple Fan Graphics Card DLSS 3 (256-bit, PCIe 4.0, GDDR6X",
     "img": "https://m.media-amazon.com/images/I/518uc8BIK8L._AC_SL1000_.jpg",
     "c": "GPU",
@@ -25670,6 +25954,7 @@ export const PARTS = [
   },
   {
     "id": 30142,
+    "g3dMark": 29028,
     "n": "Hellhound AMD Radeon RX 7900 XT Graphics Card",
     "img": "https://m.media-amazon.com/images/I/814keJHzlgL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25702,6 +25987,7 @@ export const PARTS = [
   },
   {
     "id": 30143,
+    "g3dMark": 34427,
     "n": "Gaming GeForce RTX 4080 16GB GDRR6X 384-Bit HDMI/DP Nvlink Tri-Frozr 3 Ada Lovelace Architecture Graphics Card (RTX 4...",
     "img": "https://m.media-amazon.com/images/I/61ow0AfP5RL._AC_SL1200_.jpg",
     "c": "GPU",
@@ -25736,6 +26022,7 @@ export const PARTS = [
   },
   {
     "id": 30144,
+    "g3dMark": 29957,
     "n": "GeForce RTX 4070 Super WINDFORCE OC 12G Graphics Card, 3X WINDFORCE Fans, 12GB 192-bit GDDR6X",
     "img": "https://m.media-amazon.com/images/I/71qIJjDVfzL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25770,6 +26057,7 @@ export const PARTS = [
   },
   {
     "id": 30145,
+    "g3dMark": 22649,
     "n": "Dual GeForce RTX 5060 Ti 16GB GDDR7 OC Edition (PCIe 5.0, 16GB GDDR7, DLSS 4",
     "img": "https://m.media-amazon.com/images/I/81kYKB0Aj5L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25804,6 +26092,7 @@ export const PARTS = [
   },
   {
     "id": 30146,
+    "g3dMark": 22649,
     "n": "GeForce RTX 5060 Ti 16G Ventus 2X OC Plus Graphics Card - RTX 5060 Ti GPU, 16GB GDDR7 (28Gbps/128-bit), PCIe 5.0 - Du...",
     "img": "https://m.media-amazon.com/images/I/81xXx9MlfEL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25837,6 +26126,7 @@ export const PARTS = [
   },
   {
     "id": 30147,
+    "g3dMark": 22612,
     "n": "Dual GeForce RTX 4060 Ti OC Edition 8GB GDDR6 Gaming Graphics Card Black (Nvidia GeForce RTX4060Ti DLSS 3, PCIe 4.0, ...",
     "img": "https://m.media-amazon.com/images/I/71Qg2aPCwvL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25870,6 +26160,7 @@ export const PARTS = [
   },
   {
     "id": 30148,
+    "g3dMark": 19511,
     "n": "GeForce RTX™ 4060 8GB Verto™ Dual Fan Graphics Card DLSS 3 (128-bit, PCIe 4.0, GDDR6",
     "img": "https://m.media-amazon.com/images/I/61r58FqSbtL._AC_SL1016_.jpg",
     "c": "GPU",
@@ -25903,6 +26194,7 @@ export const PARTS = [
   },
   {
     "id": 30149,
+    "g3dMark": 31811,
     "n": "GeForce RTX 4070 Ti Super Eagle OC 16G Graphics Card, 3X WINDFORCE Fans, 16GB 256-bit GDDR6X",
     "img": "https://m.media-amazon.com/images/I/61+WiQoZcmL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25932,6 +26224,7 @@ export const PARTS = [
   },
   {
     "id": 30150,
+    "g3dMark": 20805,
     "n": "NVIDIA GeForce RTX™ 5060 Epic-X™ ARGB OC Triple Fan, Graphics Card (8GB GDDR7, 128-bit",
     "img": "https://m.media-amazon.com/images/I/61LqHbtqArL._AC_SL1000_.jpg",
     "c": "GPU",
@@ -25965,6 +26258,7 @@ export const PARTS = [
   },
   {
     "id": 30151,
+    "g3dMark": 34260,
     "n": "Gaming RTX 4080 Super 16G Expert Graphics Card (NVIDIA RTX 4080 Super, 256-Bit, Extreme Clock: 2625 MHz",
     "img": "https://m.media-amazon.com/images/I/71LoU1sRHaL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -25998,6 +26292,7 @@ export const PARTS = [
   },
   {
     "id": 30152,
+    "g3dMark": 35698,
     "n": "VGA GEFORCE RTX 5080 16G Shadow 3X OC RTX5080 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
     "img": "https://m.media-amazon.com/images/I/61QTHxyAbiL._AC_SL1200_.jpg",
     "c": "GPU",
@@ -26031,6 +26326,7 @@ export const PARTS = [
   },
   {
     "id": 30153,
+    "g3dMark": 38063,
     "n": "GeForce RTX 4090 Gaming OC 24GB Graphics Card - 24GB GDDR6X, PCI-E 4.0, Core 2535Mhz",
     "img": "https://m.media-amazon.com/images/I/718knrlMjtL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26064,6 +26360,7 @@ export const PARTS = [
   },
   {
     "id": 30154,
+    "g3dMark": 28757,
     "n": "GeForce RTX 5070 12G Shadow 2X OC",
     "img": "https://m.media-amazon.com/images/I/61r4E88gZGL._AC_SL1200_.jpg",
     "c": "GPU",
@@ -26096,6 +26393,7 @@ export const PARTS = [
   },
   {
     "id": 30155,
+    "g3dMark": 31811,
     "n": "GeForce RTX™ 4070 Ti Super 16GB XLR8 Gaming Verto™ Epic-X RGB™ OC Triple Fan Graphics Card DLSS 3 (ARGB, 256-bit, GDDR6X",
     "img": "https://m.media-amazon.com/images/I/51jPiidxrjL._AC_SL1000_.jpg",
     "c": "GPU",
@@ -26129,6 +26427,7 @@ export const PARTS = [
   },
   {
     "id": 30156,
+    "g3dMark": 29957,
     "n": "Gaming RTX 4070 Super 12G Gaming X Slim Graphics Card (NVIDIA RTX 4070 Super, 192-Bit, Extreme Clock: 2655 MHz",
     "img": "https://m.media-amazon.com/images/I/71LmcE5KJ+L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26162,6 +26461,7 @@ export const PARTS = [
   },
   {
     "id": 30157,
+    "g3dMark": 22612,
     "n": "GeForce RTX™ 4060 Ti 8GB XLR8 Gaming Verto™ RGB Triple Fan Graphics Card DLSS 3 (128-bit, PCIe 4.0, GDDR6",
     "img": "https://m.media-amazon.com/images/I/61lWvDoH+DL._AC_SL1000_.jpg",
     "c": "GPU",
@@ -26195,6 +26495,7 @@ export const PARTS = [
   },
   {
     "id": 30158,
+    "g3dMark": 29957,
     "n": "Gaming GeForce RTX 4070 Super Twin Edge DLSS 3 12GB GDDR6X 192-bit 21 Gbps PCIE 4.0 Compact Gaming Graphics Card, Ice...",
     "img": "https://m.media-amazon.com/images/I/81bRcV4nHJL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26228,6 +26529,7 @@ export const PARTS = [
   },
   {
     "id": 30159,
+    "g3dMark": 34427,
     "n": "GeForce RTX™ 4080 16GB Verto Triple Fan Graphics Card DLSS 3",
     "img": "https://m.media-amazon.com/images/I/61pbe4Kqx4L._AC_SL1000_.jpg",
     "c": "GPU",
@@ -26261,6 +26563,7 @@ export const PARTS = [
   },
   {
     "id": 30160,
+    "g3dMark": 31406,
     "n": "Radeon RX 7900 XTX Gaming Trio Classic 24G 384-Bit HDMI/DP Torx Fan 4 AMD RDNA 3 Graphics Card",
     "img": "https://m.media-amazon.com/images/I/71KaK1kVV3L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26293,6 +26596,7 @@ export const PARTS = [
   },
   {
     "id": 30161,
+    "g3dMark": 22612,
     "n": "Gaming GeForce RTX 4060 Ti 8GB Twin Edge DLSS 3 8GB GDDR6 128-bit 18 Gbps PCIE 4.0 Compact Gaming Graphics Card, IceS...",
     "img": "https://m.media-amazon.com/images/I/81QpE2dvX3L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26328,6 +26632,7 @@ export const PARTS = [
   },
   {
     "id": 30162,
+    "g3dMark": 22649,
     "n": "NVIDIA GeForce RTX™ 5060 Ti Epic-X™ ARGB OC Triple Fan, Graphics Card (16GB GDDR7, 128-bit",
     "img": "https://m.media-amazon.com/images/I/61l9TJoBOtL._AC_SL1000_.jpg",
     "c": "GPU",
@@ -26361,6 +26666,7 @@ export const PARTS = [
   },
   {
     "id": 30163,
+    "g3dMark": 41290,
     "n": "NVIDIA GeForce RTX™ 5090 OC Triple Fan, Graphics Card (32GB GDDR7, 512-bit",
     "img": "https://m.media-amazon.com/images/I/61iJKR2x1hL._AC_SL1000_.jpg",
     "c": "GPU",
@@ -26399,6 +26705,7 @@ export const PARTS = [
   },
   {
     "id": 30164,
+    "g3dMark": 35698,
     "n": "GeForce RTX 5080 WINDFORCE OC SFF 16G Graphics Card - 16GB GDDR7, 256bit, PCI-E 5.0",
     "img": "https://m.media-amazon.com/images/I/71sT13DYa9L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26432,6 +26739,7 @@ export const PARTS = [
   },
   {
     "id": 30165,
+    "g3dMark": 1153,
     "n": "GeForce RTX­­ 4070 Ti Super WINDFORCE MAX OC Graphics Card - 16GB GDDR6X, 256bit, PCI-E 4.0",
     "img": "https://m.media-amazon.com/images/I/81usCHFOWVL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26464,6 +26772,7 @@ export const PARTS = [
   },
   {
     "id": 30166,
+    "g3dMark": 31811,
     "n": "GeForce RTX 4070 Ti Super WINDFORCE OC Graphics Card - 2625MHz Core, 16GB GDDR6X 21000MHz 256-bit Memory, PCI-E 4.0",
     "img": "https://m.media-amazon.com/images/I/71bO6YPZAcL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26497,6 +26806,7 @@ export const PARTS = [
   },
   {
     "id": 30167,
+    "g3dMark": 22612,
     "n": "NVIDIA GeForce RTX 4060 Ti WINDFORCE OC Graphics Card - 8GB GDDR6, 128-bit, PCI-E 4.0",
     "img": "https://m.media-amazon.com/images/I/71Je1pInbcL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26530,6 +26840,7 @@ export const PARTS = [
   },
   {
     "id": 30168,
+    "g3dMark": 19731,
     "n": "Radeon RX 6700 XT Gaming OC 12G Graphics Card, WINDFORCE 3X Cooling System, 12GB 192-bit GDDR6",
     "img": "https://m.media-amazon.com/images/I/81L7-qPS0ZL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26563,6 +26874,7 @@ export const PARTS = [
   },
   {
     "id": 30169,
+    "g3dMark": 22649,
     "n": "Gaming RTX 5060 Ti 16G Ventus 3X OC Graphics Card (16GB GDDR7, 128-bit, Extreme Performance: 2617 MHz",
     "img": "https://m.media-amazon.com/images/I/71DkNPOxLAL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26596,6 +26908,7 @@ export const PARTS = [
   },
   {
     "id": 30170,
+    "g3dMark": 22612,
     "n": "Dual GeForce RTX™ 4060 Ti EVO OC Edition 8GB GDDR6 (PCIe 4.0, 8GB GDDR6, DLSS 3",
     "img": "https://m.media-amazon.com/images/I/81idjlyCnSL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26629,6 +26942,7 @@ export const PARTS = [
   },
   {
     "id": 30171,
+    "g3dMark": 31811,
     "n": "Gaming RTX 4070 Ti Super 16G Ventus 2X OC Graphics Card (NVIDIA RTX 4070 Ti Super, 256-Bit, Extreme Clock: 2655 MHz",
     "img": "https://m.media-amazon.com/images/I/71EUawFZ+-L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26662,6 +26976,7 @@ export const PARTS = [
   },
   {
     "id": 30172,
+    "g3dMark": 22247,
     "n": "GeForce RTX 5060 Ti WINDFORCE OC 8G Graphics Card - 8GB GDDR7, 128bit, PCI-E 5.0",
     "img": "https://m.media-amazon.com/images/I/713FHGuPERL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26695,6 +27010,7 @@ export const PARTS = [
   },
   {
     "id": 30173,
+    "g3dMark": 35698,
     "n": "GeForce RTX 5080 WINDFORCE SFF 16G Graphics Card, 16GB 256-bit GDDR7, PCIe 5.0",
     "img": "https://m.media-amazon.com/images/I/71Fy6-Ec5lL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26734,6 +27050,7 @@ export const PARTS = [
   },
   {
     "id": 30174,
+    "g3dMark": 22649,
     "n": "Gaming RTX 5060 Ti 16G, OC Graphics Card - 16GB GDDR7, 128-bit",
     "img": "https://m.media-amazon.com/images/I/71f2zgSfxTL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26773,6 +27090,7 @@ export const PARTS = [
   },
   {
     "id": 30175,
+    "g3dMark": 41290,
     "n": "NVIDIA GeForce RTX 5090 32G Ventus 3X OC Gaming Graphics Card GDDR7 512-bit, Boost Frequency up to 2452 MHz, PCIe Gen 5",
     "img": "https://m.media-amazon.com/images/I/71Hy5VauasL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26805,6 +27123,7 @@ export const PARTS = [
   },
   {
     "id": 30176,
+    "g3dMark": 34427,
     "n": "GeForce RTX 4080 Super 16GB Ventus 3X OC Graphics Card - 16 GB GDDR6X (23Gbps / 256 Bits), PCIe 4.0-3 x Fans TORX 4.0...",
     "img": "https://m.media-amazon.com/images/I/71828SqTtfL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26838,6 +27157,7 @@ export const PARTS = [
   },
   {
     "id": 30177,
+    "g3dMark": 22661,
     "n": "Dual Radeon™ RX 7700 XT O12G GDDR6X (PCIe 4.0, 12GB GDDR6X, HDMI 2.1",
     "img": "https://m.media-amazon.com/images/I/718q2kjXU5L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26872,6 +27192,7 @@ export const PARTS = [
   },
   {
     "id": 30178,
+    "g3dMark": 25405,
     "n": "Radeon RX 9070 Gaming OC 16G Graphics Card, PCIe 5.0, 16GB GDDR6",
     "img": "https://m.media-amazon.com/images/I/71RLbyxkUpL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26906,6 +27227,7 @@ export const PARTS = [
   },
   {
     "id": 30179,
+    "g3dMark": 35698,
     "n": "GeForce RTX™ 5080 Triple Fan",
     "img": "https://m.media-amazon.com/images/I/71oOraaImGL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26938,6 +27260,7 @@ export const PARTS = [
   },
   {
     "id": 30180,
+    "g3dMark": 41290,
     "n": "Gaming RTX 5090 32G Vanguard SOC Graphics Card (32GB GDDR7, 512-bit, Extreme Performance: 2527 MHz",
     "img": "https://m.media-amazon.com/images/I/715PJSwhFBL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -26971,6 +27294,7 @@ export const PARTS = [
   },
   {
     "id": 30181,
+    "g3dMark": 35698,
     "n": "NVIDIA GeForce RTX 5080 16G Ventus 3X OC Plus Graphics Card - 16GB GDDR7 (30 GB/s /256 Bits), PCIe 5.0 - Triple Fan (...",
     "img": "https://m.media-amazon.com/images/I/81ZkeQUjeuL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27005,6 +27329,7 @@ export const PARTS = [
   },
   {
     "id": 30182,
+    "g3dMark": 31811,
     "n": "GeForce RTX 4070 Ti Super 16G Ventus 2X OC Gaming Graphics Card - 16 GB GDDR6X (21Gbps / 256 Bits), PCIe 4.0-2 x TORX...",
     "img": "https://m.media-amazon.com/images/I/81aZlwf3yWL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27038,6 +27363,7 @@ export const PARTS = [
   },
   {
     "id": 30183,
+    "g3dMark": 26908,
     "n": "GeForce RTX 4070 Founder's Edition (FE) Graphics Card - Titanium and Black (900-1G141-2544-000)",
     "img": "https://m.media-amazon.com/images/I/61HGkV8f-IL._AC_SL1421_.jpg",
     "c": "GPU",
@@ -27069,6 +27395,7 @@ export const PARTS = [
   },
   {
     "id": 30184,
+    "g3dMark": 14140,
     "n": "Radeon Pro W5700 Graphic Card - 8 GB GDDR6 - Full-Height",
     "img": "https://m.media-amazon.com/images/I/51JO8UAF8KL._AC_SL1100_.jpg",
     "c": "GPU",
@@ -27101,6 +27428,7 @@ export const PARTS = [
   },
   {
     "id": 30185,
+    "g3dMark": 41290,
     "n": "GeForce RTX 5090 WINDFORCE OC 32G Graphics Card - 32GB GDDR7, 512 Bits, PCI-E 5.0",
     "img": "https://m.media-amazon.com/images/I/71sQV0K2IjL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27134,6 +27462,7 @@ export const PARTS = [
   },
   {
     "id": 30186,
+    "g3dMark": 29957,
     "n": "Gaming RTX 4070 Super 12G Ventus 2X White OC Graphics Card (NVIDIA RTX 4070 Super, 192-Bit, Extreme Clock: 2520 MHz",
     "img": "https://m.media-amazon.com/images/I/71XCB3Wz-JL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27166,6 +27495,7 @@ export const PARTS = [
   },
   {
     "id": 30187,
+    "g3dMark": 35698,
     "n": "ROG Astral GeForce RTX 5080 16GB GDDR7 White OC Edition Gaming Quad Fan Graphics Card (NVIDIA DLSS 4, 3.8-Slot Design...",
     "img": "https://m.media-amazon.com/images/I/81gkdvlaWTL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27199,6 +27529,7 @@ export const PARTS = [
   },
   {
     "id": 30188,
+    "g3dMark": 35698,
     "n": "Gaming GeForce RTX 5080 Solid Core DLSS 4 16GB GDDR7 256-bit 30Gbps PCIE 5.0 Gaming Graphics Card, IceStorm 3.0 Advan...",
     "img": "https://m.media-amazon.com/images/I/71hhsF8qoWL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27232,6 +27563,7 @@ export const PARTS = [
   },
   {
     "id": 30189,
+    "g3dMark": 22631,
     "n": "Mind Graphics Card RTX 4060 Ti Desktop GPU, 16GB GDDR6, External GPU Dock with Speakers for Laptop",
     "img": "https://m.media-amazon.com/images/I/61Qt6aeDHsL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27266,6 +27598,7 @@ export const PARTS = [
   },
   {
     "id": 30190,
+    "g3dMark": 22247,
     "n": "NVIDIA GeForce RTX™ 5060 Ti OC Dual Fan, Graphics Card (8GB GDDR7, 128-bit",
     "img": "https://m.media-amazon.com/images/I/61T3vqv9bpL._AC_SL1000_.jpg",
     "c": "GPU",
@@ -27304,6 +27637,7 @@ export const PARTS = [
   },
   {
     "id": 30191,
+    "g3dMark": 12684,
     "n": "GeForce GTX 1660 Super Graphics Card, 6GB GDDR6 Gaming PC GPU 192bit Video Card PCIe 3.0 x16 DP HDMI DVI Display 1660...",
     "img": "https://m.media-amazon.com/images/I/71RyQ7WvVqL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27336,6 +27670,7 @@ export const PARTS = [
   },
   {
     "id": 30192,
+    "g3dMark": 35698,
     "n": "Gaming RTX 5080 16G Ventus 3X OC White Graphics Card (16GB GDDR7, 256-bit, Extreme Clock TBD MHz",
     "img": "https://m.media-amazon.com/images/I/71s0L-D-LBL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27370,6 +27705,7 @@ export const PARTS = [
   },
   {
     "id": 30193,
+    "g3dMark": 29957,
     "n": "- GeForce RTX 4070 Super 12GB GDDR6X Graphics Card - Titanium/Black",
     "img": "https://m.media-amazon.com/images/I/512T3hTT5ZL._AC_SL1280_.jpg",
     "c": "GPU",
@@ -27404,6 +27740,7 @@ export const PARTS = [
   },
   {
     "id": 30194,
+    "g3dMark": 20805,
     "n": "GeForce RTX 5060 Twin Edge OC White Edition Graphics Card, NVIDIA, 8GB GDDR7",
     "img": "https://m.media-amazon.com/images/I/71cBgSsJOYL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27438,6 +27775,7 @@ export const PARTS = [
   },
   {
     "id": 30195,
+    "g3dMark": 28757,
     "n": "- GeForce RTX 5070 12GB GDDR7 Graphics Card - Graphite Grey",
     "img": "https://m.media-amazon.com/images/I/71CXXxhCzdL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27473,6 +27811,7 @@ export const PARTS = [
   },
   {
     "id": 30196,
+    "g3dMark": 29957,
     "n": "VCG4070S12DFXPB1-O RTX 4070 Super 12GB GDDR6X Graphics Card",
     "img": "https://m.media-amazon.com/images/I/51bD1ZTiKBL._AC_SL1200_.jpg",
     "c": "GPU",
@@ -27501,6 +27840,7 @@ export const PARTS = [
   },
   {
     "id": 30197,
+    "g3dMark": 22247,
     "n": "GeForce RTX 5060 Ti WINDFORCE 8G Graphics Card - 8GB GDDR7, 128bit, PCI-E 5.0",
     "img": "https://m.media-amazon.com/images/I/71Yj9Yan06L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27534,6 +27874,7 @@ export const PARTS = [
   },
   {
     "id": 30198,
+    "g3dMark": 35698,
     "n": "Gaming RTX 5080 16G Inspire 3X OC Graphics Card (16GB GDDR7, 256-bit, Extreme Clock TBD MHz",
     "img": "https://m.media-amazon.com/images/I/7140jUPvVCL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27569,6 +27910,7 @@ export const PARTS = [
   },
   {
     "id": 30199,
+    "g3dMark": 35698,
     "n": "Gaming RTX 5080 16G Expert OC Graphics Card (16GB GDDR7,256-bit, Extreme Performance: 2730 MHz",
     "img": "https://m.media-amazon.com/images/I/71WkALqAWVL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27602,6 +27944,7 @@ export const PARTS = [
   },
   {
     "id": 30200,
+    "g3dMark": 26546,
     "n": "24GB NVIDIA GeForce RTX 3090 Turbo GDDR6X Graphics Card Model GV-N3090TURBO-24GD",
     "img": "https://m.media-amazon.com/images/I/71RhWs+0AkL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27635,6 +27978,7 @@ export const PARTS = [
   },
   {
     "id": 30201,
+    "g3dMark": 35698,
     "n": "Gaming RTX 5080 16G Ventus 3X OC Plus Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2655 MHz",
     "img": "https://m.media-amazon.com/images/I/71ClsATNP+L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27674,6 +28018,7 @@ export const PARTS = [
   },
   {
     "id": 30202,
+    "g3dMark": 20805,
     "n": "Gaming RTX 5060 8G Gaming OC Graphics Card (8GB GDDR7,128-bit, Extreme Performance: 2640 MHz",
     "img": "https://m.media-amazon.com/images/I/719JKvFQciL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27708,6 +28053,7 @@ export const PARTS = [
   },
   {
     "id": 30203,
+    "g3dMark": 22247,
     "n": "GeForce RTX 5060 Ti AERO OC 8G Graphics Card - 8GB GDDR7, 128bit, PCI-E 5.0",
     "img": "https://m.media-amazon.com/images/I/713i93WqAML._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27741,6 +28087,7 @@ export const PARTS = [
   },
   {
     "id": 30204,
+    "g3dMark": 25405,
     "n": "Prime Radeon™ RX 9070 OC Edition Graphics Card (PCIe 5.0, HDMI/DP 2.1, 2.5-Slot Design",
     "img": "https://m.media-amazon.com/images/I/81SLsZQ8w1L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27774,6 +28121,7 @@ export const PARTS = [
   },
   {
     "id": 30205,
+    "g3dMark": 41290,
     "n": "Gaming GeForce RTX 5090 Solid OC Graphics Card ZT-B50900J-10P VD8991",
     "img": "https://m.media-amazon.com/images/I/71BvkmnBX7L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27805,6 +28153,7 @@ export const PARTS = [
   },
   {
     "id": 30206,
+    "g3dMark": 1153,
     "n": "NVIDIA GeForce RTX 4060Ti Founders Edition",
     "img": "https://m.media-amazon.com/images/I/511kxBmqisL._AC_SL1415_.jpg",
     "c": "GPU",
@@ -27835,6 +28184,7 @@ export const PARTS = [
   },
   {
     "id": 30207,
+    "g3dMark": 34427,
     "n": "- GeForce RTX 4080 Super 16GB GDDR6X Gra",
     "img": "https://m.media-amazon.com/images/I/51FM3WrDB+L._AC_SL1280_.jpg",
     "c": "GPU",
@@ -27868,6 +28218,7 @@ export const PARTS = [
   },
   {
     "id": 30208,
+    "g3dMark": 41290,
     "n": "Gaming GeForce RTX 5090 Solid 32GB GDDR7 Reflex 2 RTX AI DLSS4",
     "img": "https://m.media-amazon.com/images/I/71RB0EVClTL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27901,6 +28252,7 @@ export const PARTS = [
   },
   {
     "id": 30209,
+    "g3dMark": 41290,
     "n": "ROG Astral GeForce RTX 5090 32GB GDDR7 White OC Edition Gaming Quad Fan Graphics Card (NVIDIA DLSS 4, 3.8-Slot Design...",
     "img": "https://m.media-amazon.com/images/I/81xAQXM741L._AC_SL1500_.jpg",
     "c": "GPU",
@@ -27935,6 +28287,7 @@ export const PARTS = [
   },
   {
     "id": 30210,
+    "g3dMark": 35698,
     "n": "GAMING GeForce RTX 5080 SOLID CORE",
     "img": "https://m.media-amazon.com/images/I/51xMTxM7vcL._AC_SL1024_.jpg",
     "c": "GPU",
@@ -27967,6 +28320,7 @@ export const PARTS = [
   },
   {
     "id": 30211,
+    "g3dMark": 22649,
     "n": "GeForce RTX™ 5060 Ti 16GB Dual Fan GPU",
     "img": "https://m.media-amazon.com/images/I/51RuGuij7lL._AC_SX679_.jpg",
     "c": "GPU",
@@ -28000,6 +28354,7 @@ export const PARTS = [
   },
   {
     "id": 30212,
+    "g3dMark": 26905,
     "n": "Sakura Atlantis Radeon RX 9070 XT 16G GDDR6 256bit 4nm Video Cards Desktop Computer PC Graphics Card",
     "img": "https://m.media-amazon.com/images/I/51SAa+knRhL._AC_SX679_.jpg",
     "c": "GPU",
@@ -28031,6 +28386,7 @@ export const PARTS = [
   },
   {
     "id": 30213,
+    "g3dMark": 35698,
     "n": "Gaming RTX 5080 16G Ventus 3X OC Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2655 MHz",
     "img": "https://m.media-amazon.com/images/I/71S-DC70BuL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -28066,6 +28422,7 @@ export const PARTS = [
   },
   {
     "id": 30214,
+    "g3dMark": 20805,
     "n": "Gaming Geforce RTX 5060 Ti Amp Nvidia 16 Gb Gddr7, W129163508 (Amp Nvidia 16 Gb Gddr7)",
     "img": "https://m.media-amazon.com/images/I/61Mx3LzMHkL._AC_SL1280_.jpg",
     "c": "GPU",
@@ -28098,6 +28455,7 @@ export const PARTS = [
   },
   {
     "id": 30215,
+    "g3dMark": 41290,
     "n": "ROG Astral LC GeForce RTX 5090 Gaming Graphics Card (PCIe 5.0, 32GB GDDR7, HDMI/DP 2.1",
     "img": "https://m.media-amazon.com/images/I/81dbTezAkeL._AC_SL1500_.jpg",
     "c": "GPU",
@@ -28131,6 +28489,7 @@ export const PARTS = [
   },
   {
     "id": 30216,
+    "g3dMark": 41290,
     "n": "GeForce RTX 5090 Astral LC Overclocked Liquid Cooled 32GB GDDR7 PCIe 5.0 Graphics Card, 7680 x 4320 Maximum Resolutio...",
     "img": "https://m.media-amazon.com/images/I/61AS5SzI5cL._AC_SL1068_.jpg",
     "c": "GPU",
@@ -28165,6 +28524,7 @@ export const PARTS = [
   },
   {
     "id": 30217,
+    "g3dMark": 38063,
     "n": "VIPERA NVIDIA GeForce RTX 4090 Founders Edition Graphic Card (Renewed)",
     "img": "https://m.media-amazon.com/images/I/51c1zFDNVmL._AC_SL1003_.jpg",
     "c": "GPU",
@@ -28198,6 +28558,7 @@ export const PARTS = [
   },
   {
     "id": 30218,
+    "g3dMark": 16954,
     "n": "MSI - NVIDIA GeForce RTX 3060 Ventus 3X 12G OC - 12GB GDDR6 - PCI Express 4.0 - Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6452/6452940_sd.jpg",
     "c": "GPU",
@@ -28228,6 +28589,7 @@ export const PARTS = [
   },
   {
     "id": 30219,
+    "g3dMark": 16954,
     "n": "GIGABYTE - NVIDIA GeForce RTX 3060 12GB GDDR6 PCI Express 4.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6468/6468931_sd.jpg",
     "c": "GPU",
@@ -28258,6 +28620,7 @@ export const PARTS = [
   },
   {
     "id": 30220,
+    "g3dMark": 1605,
     "n": "XFX - SPEEDSTER SWFT210 AMD Radeon RX 6650XT Core 8GB GDDR6 PCI Express 4.0 Gaming Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ce553020-7abc-4c77-a116-ac89793984ba.jpg",
     "c": "GPU",
@@ -28288,6 +28651,7 @@ export const PARTS = [
   },
   {
     "id": 30221,
+    "g3dMark": 22612,
     "n": "NVIDIA - GeForce RTX 4060 Ti 8GB GDDR6 Graphics Card - Titanium/Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6543/6543946_sd.jpg",
     "c": "GPU",
@@ -28318,6 +28682,7 @@ export const PARTS = [
   },
   {
     "id": 30222,
+    "g3dMark": 22612,
     "n": "MSI - NVIDIA GeForce RTX 4060 Ti 8GB VENTUS 3X OC 8GB GDDR6 PCI Express 4.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5d3ccb5b-c4cf-4e70-8735-1045fe8b1224.jpg",
     "c": "GPU",
@@ -28348,6 +28713,7 @@ export const PARTS = [
   },
   {
     "id": 30223,
+    "g3dMark": 12496,
     "n": "MSI - NVIDIA RTX 3050 VENTUS 2X XS 8G OC - 8GB GDDR6 - PCI Express 4.0 - Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6560/6560971_sd.jpg",
     "c": "GPU",
@@ -28378,6 +28744,7 @@ export const PARTS = [
   },
   {
     "id": 30224,
+    "g3dMark": 10761,
     "n": "MSI - NVIDIA RTX 3050 GAMING X 6G - 6GB GDDR6 - PCI Express 4.0 - Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d2e9569c-e820-41de-9d8b-c3d26b98ac87.jpg",
     "c": "GPU",
@@ -28408,6 +28775,7 @@ export const PARTS = [
   },
   {
     "id": 30225,
+    "g3dMark": 16514,
     "n": "XFX - SPEEDSTER SWFT210 AMD Radeon RX 7600 Core 8GB GDDR6 PCI Express 4.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/2213a220-df90-4186-837b-6cbc815b4d8b.jpg",
     "c": "GPU",
@@ -28438,6 +28806,7 @@ export const PARTS = [
   },
   {
     "id": 30226,
+    "g3dMark": 15927,
     "n": "Intel - Arc B580 Limited Edition Graphics Card - Multi",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/57a42ac9-24f3-4544-a414-101e1a3102a7.jpg",
     "c": "GPU",
@@ -28468,6 +28837,7 @@ export const PARTS = [
   },
   {
     "id": 30227,
+    "g3dMark": 35698,
     "n": "ASUS - TUF Gaming NVIDIA GeForce RTX 5080 16GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/01aae824-be85-4876-9d99-a87bfcac0b45.png",
     "c": "GPU",
@@ -28498,6 +28868,7 @@ export const PARTS = [
   },
   {
     "id": 30228,
+    "g3dMark": 35698,
     "n": "ASUS - PRIME NVIDIA GeForce RTX 5080 16GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/08b4f998-a787-448c-b6f4-fce2f52fca94.png",
     "c": "GPU",
@@ -28528,6 +28899,7 @@ export const PARTS = [
   },
   {
     "id": 30229,
+    "g3dMark": 41290,
     "n": "ASUS - TUF Gaming NVIDIA GeForce RTX 5090 32GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1528f33e-a644-468d-a0ed-418dcb50cbeb.png",
     "c": "GPU",
@@ -28558,6 +28930,7 @@ export const PARTS = [
   },
   {
     "id": 30230,
+    "g3dMark": 41290,
     "n": "ASUS - ROG Astral NVIDIA GeForce RTX 5090 32GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/2cc7d17b-c5d6-4acb-8794-48a992181978.png",
     "c": "GPU",
@@ -28588,6 +28961,7 @@ export const PARTS = [
   },
   {
     "id": 30232,
+    "g3dMark": 28757,
     "n": "ASUS - PRIME NVIDIA GeForce RTX 5070 OC Edition 12GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/029682f6-53f6-4ccd-8ed9-c4b1d58028c3.png",
     "c": "GPU",
@@ -28618,6 +28992,7 @@ export const PARTS = [
   },
   {
     "id": 30233,
+    "g3dMark": 28757,
     "n": "ASUS - TUF Gaming NVIDIA GeForce RTX 5070 OC Edition 12GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/0625bbfa-9c44-4293-bc4f-f7cf47af2c97.png",
     "c": "GPU",
@@ -28648,6 +29023,7 @@ export const PARTS = [
   },
   {
     "id": 30234,
+    "g3dMark": 32429,
     "n": "ASUS - PRIME NVIDIA GeForce RTX 5070 Ti OC Edition 16GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/96505925-44c6-4d24-a571-3ae1c981e0c2.png",
     "c": "GPU",
@@ -28678,6 +29054,7 @@ export const PARTS = [
   },
   {
     "id": 30235,
+    "g3dMark": 32429,
     "n": "ASUS - TUF Gaming NVIDIA GeForce RTX 5070 Ti OC Edition 16GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/cce7a214-9733-4aeb-9602-94763274978e.png",
     "c": "GPU",
@@ -28708,6 +29085,7 @@ export const PARTS = [
   },
   {
     "id": 30236,
+    "g3dMark": 32429,
     "n": "ASUS - PRIME NVIDIA GeForce RTX 5070 Ti 16GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/96505925-44c6-4d24-a571-3ae1c981e0c2.png",
     "c": "GPU",
@@ -28738,6 +29116,7 @@ export const PARTS = [
   },
   {
     "id": 30237,
+    "g3dMark": 28757,
     "n": "ASUS - PRIME NVIDIA GeForce RTX 5070 12GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/3857cd87-bcdb-4928-93ba-2cefd06a1e6f.jpg",
     "c": "GPU",
@@ -28768,6 +29147,7 @@ export const PARTS = [
   },
   {
     "id": 30238,
+    "g3dMark": 35698,
     "n": "MSI - NVIDIA GeForce RTX 5080 16G GAMING TRIO OC 16GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/47bbb9e3-181a-4c7c-9ecd-2be551d9769a.jpg",
     "c": "GPU",
@@ -28798,6 +29178,7 @@ export const PARTS = [
   },
   {
     "id": 30239,
+    "g3dMark": 35698,
     "n": "MSI - NVIDIA GeForce GeForce RTX 5080 16G SHADOW 3X OC 16GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/91b0eb68-7233-49f8-b911-dd6e7d91e442.jpg",
     "c": "GPU",
@@ -28828,6 +29209,7 @@ export const PARTS = [
   },
   {
     "id": 30240,
+    "g3dMark": 10761,
     "n": "GIGABYTE - NVIDIA GeForce RTX 3050 WINDFORCE OC V2 6GB GDDR6 PCI Express 4.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ae1bbc8f-306d-4f0f-b89b-b48e7f59b343.jpg",
     "c": "GPU",
@@ -28858,6 +29240,7 @@ export const PARTS = [
   },
   {
     "id": 30241,
+    "g3dMark": 35698,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5080 GAMING OC 16G GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/642466ab-c257-4349-b965-f83808c932cc.jpg",
     "c": "GPU",
@@ -28888,6 +29271,7 @@ export const PARTS = [
   },
   {
     "id": 30242,
+    "g3dMark": 41290,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5090 GAMING OC 32G GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7a52f084-08bd-486c-8c18-930e960cc9d0.jpg",
     "c": "GPU",
@@ -28918,6 +29302,7 @@ export const PARTS = [
   },
   {
     "id": 30243,
+    "g3dMark": 41290,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5090 WINDFORCE OC 32G GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5b613112-de46-4ca7-a653-7244c1a4b5f1.jpg",
     "c": "GPU",
@@ -28948,6 +29333,7 @@ export const PARTS = [
   },
   {
     "id": 30244,
+    "g3dMark": 14079,
     "n": "ASRock - Intel Arc B570 Challenger 10GB GDDR6 OC PCIe 4.0 Graphic Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/34765ede-0dc0-4d92-97be-ccafebffdd15.jpg",
     "c": "GPU",
@@ -28978,6 +29364,7 @@ export const PARTS = [
   },
   {
     "id": 30245,
+    "g3dMark": 41290,
     "n": "MSI - NVIDIA GeForce GeForce RTX 5090 32G GAMING TRIO OC 32GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f49afb66-96cd-4675-b0f7-d377c1118b4e.jpg",
     "c": "GPU",
@@ -29008,6 +29395,7 @@ export const PARTS = [
   },
   {
     "id": 30246,
+    "g3dMark": 41290,
     "n": "MSI - NVIDIA GeForce GeForce RTX 5090 32G SUPRIM LIQUID SOC 32GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d2ac2966-2e23-498a-9d3c-da1755d8daf4.jpg",
     "c": "GPU",
@@ -29038,6 +29426,7 @@ export const PARTS = [
   },
   {
     "id": 30247,
+    "g3dMark": 35698,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5080 AERO OC SFF 16G GDDR7 PCI Express 5.0 Graphics Card - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/811a6faf-db85-4591-be66-d4892d3d28e2.png",
     "c": "GPU",
@@ -29068,6 +29457,7 @@ export const PARTS = [
   },
   {
     "id": 30248,
+    "g3dMark": 35698,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5080 WINDFORCE OC SFF 16G GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f9e6984e-080b-43be-88d5-46d58c1da810.png",
     "c": "GPU",
@@ -29098,6 +29488,7 @@ export const PARTS = [
   },
   {
     "id": 30249,
+    "g3dMark": 35698,
     "n": "PNY - GeForce RTX 5080 16GB OC GDDR7 PCI Express 5.0 Graphics Card with Triple Fan - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1eedc54e-4a6a-4a25-a906-b4c7585834fa.jpg",
     "c": "GPU",
@@ -29128,6 +29519,7 @@ export const PARTS = [
   },
   {
     "id": 30250,
+    "g3dMark": 41290,
     "n": "PNY - GeForce RTX 5090 ARGB 32GB OC GDDR7 PCI Express 5.0 Graphics Card with Triple Fan - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/b91b82be-149d-4f19-b714-510d660a8016.jpg",
     "c": "GPU",
@@ -29158,6 +29550,7 @@ export const PARTS = [
   },
   {
     "id": 30251,
+    "g3dMark": 41290,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5090 AORUS MASTER ICE 32G GDDR7 PCI Express 5.0 Graphics Card - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/325a90c8-5e0f-422e-b674-1ae8599cb44b.jpg",
     "c": "GPU",
@@ -29188,6 +29581,7 @@ export const PARTS = [
   },
   {
     "id": 30252,
+    "g3dMark": 26905,
     "n": "GIGABYTE - Radeon RX 9070 XT GAMING OC 16G GDDR6 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1437a7fa-9c57-4d62-89c0-9c18b387bff5.jpg",
     "c": "GPU",
@@ -29218,6 +29612,7 @@ export const PARTS = [
   },
   {
     "id": 30253,
+    "g3dMark": 32429,
     "n": "MSI - NVIDIA GeForce RTX 5070 Ti 16G GAMING TRIO OC PLUS 16GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6fac0ad2-dfa0-4b4f-94b3-46f74ecec110.jpg",
     "c": "GPU",
@@ -29248,6 +29643,7 @@ export const PARTS = [
   },
   {
     "id": 30254,
+    "g3dMark": 32429,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5070 Ti AERO OC 16G GDDR7 PCI Express 5.0 Graphics Card - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/3252adaf-a879-46d0-b2ee-eeb51a8ab30f.png",
     "c": "GPU",
@@ -29278,6 +29674,7 @@ export const PARTS = [
   },
   {
     "id": 30255,
+    "g3dMark": 32429,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5070 Ti EAGLE OC ICE SFF 16G GDDR7 PCI Express 5.0 Graphics Card - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/79679ccf-76c7-40fe-a4c5-80dd6b3df31f.png",
     "c": "GPU",
@@ -29308,6 +29705,7 @@ export const PARTS = [
   },
   {
     "id": 30256,
+    "g3dMark": 32429,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5070 Ti WINDFORCE OC SFF 16G GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ceb34869-d488-42b6-9ab7-844948031c26.png",
     "c": "GPU",
@@ -29338,6 +29736,7 @@ export const PARTS = [
   },
   {
     "id": 30257,
+    "g3dMark": 32429,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5070 Ti GAMING OC 16G GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/01b46a11-8fc0-42da-a127-094dd3a41343.png",
     "c": "GPU",
@@ -29368,6 +29767,7 @@ export const PARTS = [
   },
   {
     "id": 30258,
+    "g3dMark": 28757,
     "n": "MSI - NVIDIA GeForce RTX 5070 12G GAMING TRIO OC 12GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5a16cc23-ca60-45a9-a35a-50094ca7c1e0.jpg",
     "c": "GPU",
@@ -29398,6 +29798,7 @@ export const PARTS = [
   },
   {
     "id": 30259,
+    "g3dMark": 32429,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5070 Ti WINDFORCE SFF 16G GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f8be8b71-a011-4cfa-aa84-8233008fbff0.png",
     "c": "GPU",
@@ -29428,6 +29829,7 @@ export const PARTS = [
   },
   {
     "id": 30260,
+    "g3dMark": 28757,
     "n": "PNY - GeForce RTX 5070 12GB OC GDDR7 PCI Express 5.0 Graphics Card with Triple Fan - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/95584e8c-cab8-4aa1-85c0-9c95cfccbc25.jpg",
     "c": "GPU",
@@ -29458,6 +29860,7 @@ export const PARTS = [
   },
   {
     "id": 30261,
+    "g3dMark": 28757,
     "n": "PNY - GeForce RTX 5070 12GB ARGB OC GDDR7 PCI Express 5.0 Graphics Card with Triple Fan - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1a1b4cfb-2d63-4056-b1cf-3b1e2d4cf6a0.jpg",
     "c": "GPU",
@@ -29488,6 +29891,7 @@ export const PARTS = [
   },
   {
     "id": 30262,
+    "g3dMark": 32429,
     "n": "PNY - GeForce RTX 5070 Ti 16GB OC GDDR7 PCI Express 5.0 Graphics Card with Triple Fan - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8b3fe0f3-0237-4f83-a42a-382ba6ebbc38.jpg",
     "c": "GPU",
@@ -29518,6 +29922,7 @@ export const PARTS = [
   },
   {
     "id": 30263,
+    "g3dMark": 32429,
     "n": "PNY - GeForce RTX 5070 Ti 16GB ARGB OC GDDR7 PCI Express 5.0 Graphics Card with Triple Fan - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/0e0eb93c-73d7-43a0-b643-e1341c04f4a5.jpg",
     "c": "GPU",
@@ -29548,6 +29953,7 @@ export const PARTS = [
   },
   {
     "id": 30264,
+    "g3dMark": 1605,
     "n": "XFX - Mercury AMD Radeon RX 9070XT OC Magnetic Air Edition 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card with RGB - Bl",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/58cdf388-1a8b-4a09-b964-f0be7226d807.jpg",
     "c": "GPU",
@@ -29578,6 +29984,7 @@ export const PARTS = [
   },
   {
     "id": 30265,
+    "g3dMark": 25405,
     "n": "XFX - Swift AMD Radeon RX 9070 OC 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/cdddfd2d-9bf0-4137-a7bc-c15c077071a8.jpg",
     "c": "GPU",
@@ -29608,6 +30015,7 @@ export const PARTS = [
   },
   {
     "id": 30266,
+    "g3dMark": 1605,
     "n": "XFX - Swift AMD Radeon RX 9070XT 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/548d6904-74fc-41d5-973b-224d5948e307.jpg",
     "c": "GPU",
@@ -29638,6 +30046,7 @@ export const PARTS = [
   },
   {
     "id": 30267,
+    "g3dMark": 1605,
     "n": "XFX - Swift AMD Radeon RX 9070XT 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/a249df9c-88f6-4321-bb89-577545f1f24a.jpg",
     "c": "GPU",
@@ -29668,6 +30077,7 @@ export const PARTS = [
   },
   {
     "id": 30268,
+    "g3dMark": 25405,
     "n": "XFX - Swift AMD Radeon RX 9070 OC 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/995e6e8c-c123-4fac-8a4e-7f0fee240561.jpg",
     "c": "GPU",
@@ -29698,6 +30108,7 @@ export const PARTS = [
   },
   {
     "id": 30269,
+    "g3dMark": 1605,
     "n": "XFX - Mercury AMD Radeon RX 9070XT OC Magnetic Air Edition 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card with RGB - Wh",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/264205d6-f7e7-4bfe-adbc-87fef665a864.jpg",
     "c": "GPU",
@@ -29728,6 +30139,7 @@ export const PARTS = [
   },
   {
     "id": 30270,
+    "g3dMark": 32429,
     "n": "MSI - NVIDIA GeForce GeForce RTX 5070 TI 16G SHADOW 3X OC 16GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/49fa19c7-b799-4dc0-ac0f-77ec3d8423d8.jpg",
     "c": "GPU",
@@ -29758,6 +30170,7 @@ export const PARTS = [
   },
   {
     "id": 30271,
+    "g3dMark": 25405,
     "n": "XFX - QuickSilver AMD Radeon RX 9070 OC 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8b288586-e8d5-4281-96c8-37f422b66fa4.jpg",
     "c": "GPU",
@@ -29788,6 +30201,7 @@ export const PARTS = [
   },
   {
     "id": 30272,
+    "g3dMark": 1605,
     "n": "XFX - Mercury AMD Radeon RX 9070XT OC 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card with RGB - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/e0f569af-02f8-46a6-8829-27a190057e2b.jpg",
     "c": "GPU",
@@ -29818,6 +30232,7 @@ export const PARTS = [
   },
   {
     "id": 30273,
+    "g3dMark": 28757,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5070 GAMING OC 12G GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/30c0ba19-11e8-4d9c-8ccc-d10521ef6314.png",
     "c": "GPU",
@@ -29848,6 +30263,7 @@ export const PARTS = [
   },
   {
     "id": 30274,
+    "g3dMark": 28757,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5070 WINDFORCE OC SFF 12G GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/92b5f3ef-6d32-447f-9b81-41aeb328e3f3.png",
     "c": "GPU",
@@ -29878,6 +30294,7 @@ export const PARTS = [
   },
   {
     "id": 30275,
+    "g3dMark": 28757,
     "n": "MSI - NVIDIA GeForce RTX 5070 12G SHADOW 2X OC 12GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6da359a5-2b36-4d12-999f-a65cd0237783.jpg",
     "c": "GPU",
@@ -29908,6 +30325,7 @@ export const PARTS = [
   },
   {
     "id": 30276,
+    "g3dMark": 22649,
     "n": "ASUS - PRIME NVIDIA GeForce RTX 5060 Ti OC Edition 16GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c791e0a9-c1b4-436a-b98d-89d9529bf9b4.png",
     "c": "GPU",
@@ -29938,6 +30356,7 @@ export const PARTS = [
   },
   {
     "id": 30277,
+    "g3dMark": 22649,
     "n": "ASUS - PRIME NVIDIA GeForce RTX 5060 Ti 16GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c791e0a9-c1b4-436a-b98d-89d9529bf9b4.png",
     "c": "GPU",
@@ -29968,6 +30387,7 @@ export const PARTS = [
   },
   {
     "id": 30278,
+    "g3dMark": 22247,
     "n": "ASUS - PRIME NVIDIA GeForce RTX 5060 Ti OC Edition 8GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/c791e0a9-c1b4-436a-b98d-89d9529bf9b4.png",
     "c": "GPU",
@@ -29998,6 +30418,7 @@ export const PARTS = [
   },
   {
     "id": 30279,
+    "g3dMark": 20805,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5060 Ti AERO OC 16G GDDR7 PCI Express 5.0 Graphics Card - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f30da850-0b5d-4859-9106-52321d773e19.png",
     "c": "GPU",
@@ -30028,6 +30449,7 @@ export const PARTS = [
   },
   {
     "id": 30280,
+    "g3dMark": 20805,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5060 Ti WINDFORCE OC 16G GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/fdb7c55a-542f-46c2-aa9c-f126be76c352.png",
     "c": "GPU",
@@ -30058,6 +30480,7 @@ export const PARTS = [
   },
   {
     "id": 30281,
+    "g3dMark": 20805,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5060 Ti EAGLE OC ICE 16G GDDR7 PCI Express 5.0 Graphics Card - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/4c3adbb7-28cf-408a-a1f5-f3241dfa9d2d.png",
     "c": "GPU",
@@ -30088,6 +30511,7 @@ export const PARTS = [
   },
   {
     "id": 30282,
+    "g3dMark": 20805,
     "n": "GIGABYTE - NVIDIA GeForce RTX 5060 Ti EAGLE OC 16G GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/633bc773-c253-4524-a568-0ab9c4676e59.png",
     "c": "GPU",
@@ -30118,6 +30542,7 @@ export const PARTS = [
   },
   {
     "id": 30283,
+    "g3dMark": 20805,
     "n": "PNY - GeForce RTX 5060 Overclocked 8GB GDDR7 PCI Express 5.0 Graphics Card with Dual Fan - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/9690eca9-a815-4622-a275-9e3bd100f833.jpg",
     "c": "GPU",
@@ -30148,6 +30573,7 @@ export const PARTS = [
   },
   {
     "id": 30284,
+    "g3dMark": 22649,
     "n": "PNY - GeForce RTX 5060 Ti Overclocked 16GB GDDR7 PCI Express 5.0 Graphics Card with Dual Fan - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/51214234-6552-4a51-a1c1-41e148e0941d.jpg",
     "c": "GPU",
@@ -30178,6 +30604,7 @@ export const PARTS = [
   },
   {
     "id": 30285,
+    "g3dMark": 22649,
     "n": "MSI - NVIDIA GeForce GeForce RTX 5060 Ti 16G GAMING TRIO OC 16GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ec33fecf-fdce-4406-abf1-cfc70956c2b7.jpg",
     "c": "GPU",
@@ -30208,6 +30635,7 @@ export const PARTS = [
   },
   {
     "id": 30286,
+    "g3dMark": 32429,
     "n": "MSI - NVIDIA GeForce RTX 5070 Ti 16G GAMING TRIO OC 16GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6fac0ad2-dfa0-4b4f-94b3-46f74ecec110.jpg",
     "c": "GPU",
@@ -30238,6 +30666,7 @@ export const PARTS = [
   },
   {
     "id": 30287,
+    "g3dMark": 20805,
     "n": "ASUS - PRIME NVIDIA GeForce RTX 5060 OC Edition 8GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d4ee3c84-b011-4a38-8803-12715162d7a7.png",
     "c": "GPU",
@@ -30268,6 +30697,7 @@ export const PARTS = [
   },
   {
     "id": 30288,
+    "g3dMark": 20805,
     "n": "ASUS - PRIME NVIDIA GeForce RTX 5060 8GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d4ee3c84-b011-4a38-8803-12715162d7a7.png",
     "c": "GPU",
@@ -30298,6 +30728,7 @@ export const PARTS = [
   },
   {
     "id": 30289,
+    "g3dMark": 20805,
     "n": "GIGABYTE - GeForce RTX 5060 OC Low Profile 8G Graphics Card, 8GB 128-bit GDDR7, PCIe 5.0, Supports up to 4 displays - Bl",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/69b2b7f6-e39a-467b-b943-1a97aa25daa7.png",
     "c": "GPU",
@@ -30328,6 +30759,7 @@ export const PARTS = [
   },
   {
     "id": 30290,
+    "g3dMark": 20805,
     "n": "GIGABYTE - GeForce RTX 5060 GAMING OC 8G Graphics Card, 8GB 128-bit GDDR7, PCIe 5.0, WINDFORCE cooling system - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/25c707b9-5c0b-4361-8a44-879bf0cb5070.png",
     "c": "GPU",
@@ -30358,6 +30790,7 @@ export const PARTS = [
   },
   {
     "id": 30291,
+    "g3dMark": 20805,
     "n": "MSI - NVIDIA GeForce RTX 5060 8G VENTUS 3X OC 8GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/675c9cfb-97eb-4b11-99da-6d155ba9a8f5.jpg",
     "c": "GPU",
@@ -30388,6 +30821,7 @@ export const PARTS = [
   },
   {
     "id": 30292,
+    "g3dMark": 20805,
     "n": "MSI - NVIDIA GeForce RTX 5060 8G VENTUS 2X OC 8GB GDDR7 PCI Express Gen 5 Graphics Card - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8e010c12-fadb-4c2c-9572-4b5bb82fb1e9.jpg",
     "c": "GPU",
@@ -30418,6 +30852,7 @@ export const PARTS = [
   },
   {
     "id": 30293,
+    "g3dMark": 20805,
     "n": "MSI - NVIDIA GeForce RTX 5060 8G VENTUS 2X OC 8GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/0a9ddc97-ad86-43d2-971d-3d4977e651f5.jpg",
     "c": "GPU",
@@ -30448,6 +30883,7 @@ export const PARTS = [
   },
   {
     "id": 30294,
+    "g3dMark": 20805,
     "n": "MSI - NVIDIA GeForce RTX 5060 8G SHADOW 2X OC 8GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/55305007-2062-4141-933c-5586f1480e58.jpg",
     "c": "GPU",
@@ -30478,6 +30914,7 @@ export const PARTS = [
   },
   {
     "id": 30295,
+    "g3dMark": 20805,
     "n": "MSI - NVIDIA GeForce RTX 5060 8G INSPIRE 2X OC 8GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6c38f107-7fa7-4ffd-b59a-1fd6b0c6d511.jpg",
     "c": "GPU",
@@ -30508,6 +30945,7 @@ export const PARTS = [
   },
   {
     "id": 30296,
+    "g3dMark": 1605,
     "n": "XFX - Mercury AMD Radeon RX 9060XT OC Gaming Edition 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/594f7de0-3a1b-4f0d-9be0-a7d0ab017aec.jpg",
     "c": "GPU",
@@ -30538,6 +30976,7 @@ export const PARTS = [
   },
   {
     "id": 30297,
+    "g3dMark": 1605,
     "n": "XFX - Swift AMD Radeon RX 9060XT 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/a06d46dd-3a15-4f3d-93a5-752a1dff427c.jpg",
     "c": "GPU",
@@ -30568,6 +31007,7 @@ export const PARTS = [
   },
   {
     "id": 30298,
+    "g3dMark": 1605,
     "n": "XFX - Swift AMD Radeon RX 9060XT 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5f4961c8-f74b-4db5-be6c-69bedf01167f.jpg",
     "c": "GPU",
@@ -30598,6 +31038,7 @@ export const PARTS = [
   },
   {
     "id": 30299,
+    "g3dMark": 1605,
     "n": "XFX - Swift AMD Radeon RX 9060XT OC Gaming Edition 8GB GDDR6 PCI Express 5.0 Gaming Graphics Card - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/a671630d-758c-4e26-8e2a-548f0aed77e4.jpg",
     "c": "GPU",
@@ -30628,6 +31069,7 @@ export const PARTS = [
   },
   {
     "id": 30300,
+    "g3dMark": 20805,
     "n": "ASUS - DUAL NVIDIA GeForce RTX 5060 OC Edition 8GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/7e85e631-667b-4f26-b2f3-2be16caa2665.png",
     "c": "GPU",
@@ -30658,6 +31100,7 @@ export const PARTS = [
   },
   {
     "id": 30301,
+    "g3dMark": 17958,
     "n": "GIGABYTE - Radeon RX 9060 XT GAMING OC 16G GDDR6 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/b9c3a332-fa4a-48a4-bd1b-472742a317b1.png",
     "c": "GPU",
@@ -30688,6 +31131,7 @@ export const PARTS = [
   },
   {
     "id": 30302,
+    "g3dMark": 22247,
     "n": "MSI - NVIDIA GeForce RTX 5060 Ti 8G GAMING OC 8GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/3563ac67-9f72-48ec-b5a1-7f4e90b35928.jpg",
     "c": "GPU",
@@ -30718,6 +31162,7 @@ export const PARTS = [
   },
   {
     "id": 30303,
+    "g3dMark": 17958,
     "n": "GIGABYTE - Radeon RX 9060 XT GAMING OC 8G GDDR6 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/11e039be-af16-48ba-947b-bf995daf2a35.png",
     "c": "GPU",
@@ -30748,6 +31193,7 @@ export const PARTS = [
   },
   {
     "id": 30304,
+    "g3dMark": 28757,
     "n": "MSI - NVIDIA GeForce RTX 5070 12G VENTUS 3X OC 12GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f72da3c3-51e9-400c-84f1-33d413bca2b2.jpg",
     "c": "GPU",
@@ -30778,6 +31224,7 @@ export const PARTS = [
   },
   {
     "id": 30305,
+    "g3dMark": 28757,
     "n": "MSI - NVIDIA GeForce RTX 5070 12G INSPIRE 3X OC 12GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8d927835-2535-4dae-9872-710ca9fc9091.jpg",
     "c": "GPU",
@@ -30808,6 +31255,7 @@ export const PARTS = [
   },
   {
     "id": 30306,
+    "g3dMark": 28757,
     "n": "MSI - NVIDIA GeForce RTX 5070 12G VENTUS 2X OC 12GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f475084a-b44a-41b1-9845-975aac815120.jpg",
     "c": "GPU",
@@ -30838,6 +31286,7 @@ export const PARTS = [
   },
   {
     "id": 30307,
+    "g3dMark": 22247,
     "n": "MSI - NVIDIA GeForce RTX 5060 Ti 8G VENTUS 2X OC PLUS 8GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/15cb9607-a573-43db-a36b-0dcc58825907.jpg",
     "c": "GPU",
@@ -30868,6 +31317,7 @@ export const PARTS = [
   },
   {
     "id": 30308,
+    "g3dMark": 28757,
     "n": "ASUS - ROG Strix NVIDIA GeForce RTX 5070 OC Edition 12GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/2b849efc-19d3-45e9-a021-65593ae53fb6.png",
     "c": "GPU",
@@ -30898,6 +31348,7 @@ export const PARTS = [
   },
   {
     "id": 30309,
+    "g3dMark": 32429,
     "n": "ASUS - ROG Strix NVIDIA GeForce RTX 5070 Ti OC Edition 16GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/2b849efc-19d3-45e9-a021-65593ae53fb6.png",
     "c": "GPU",
@@ -30928,6 +31379,7 @@ export const PARTS = [
   },
   {
     "id": 30310,
+    "g3dMark": 22247,
     "n": "PNY - GeForce RTX 5060 Ti Overclocked 8GB GDDR7 PCI Express 5.0 Graphics Card with Triple Fan - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/f1236a61-db63-48b0-a6b4-b43cd09b532f.jpg",
     "c": "GPU",
@@ -30958,6 +31410,7 @@ export const PARTS = [
   },
   {
     "id": 30311,
+    "g3dMark": 17198,
     "n": "MSI - NVIDIA GeForce RTX 5050 8G VENTUS 2X OC 8GB GDDR6 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/51bdcbe2-2789-4f8b-ad35-aea2824005e1.jpg",
     "c": "GPU",
@@ -30988,6 +31441,7 @@ export const PARTS = [
   },
   {
     "id": 30312,
+    "g3dMark": 17198,
     "n": "MSI - NVIDIA GeForce RTX 5050 8G GAMING OC 8GB GDDR6 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/507400cf-f189-4d39-bd1a-5f3a38e02735.jpg",
     "c": "GPU",
@@ -31018,6 +31472,7 @@ export const PARTS = [
   },
   {
     "id": 30313,
+    "g3dMark": 17198,
     "n": "MSI - NVIDIA GeForce RTX 5050 8G SHADOW 2X OC 8GB GDDR6 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/58b29288-e4a5-4148-92ce-eb46ed8bc75d.jpg",
     "c": "GPU",
@@ -31048,6 +31503,7 @@ export const PARTS = [
   },
   {
     "id": 30314,
+    "g3dMark": 17198,
     "n": "ASUS - DUAL NVIDIA GeForce RTX 5050 OC Edition 8GB GDDR6 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/44e47261-4118-4cfa-975a-ba5ebdeb4807.png",
     "c": "GPU",
@@ -31078,6 +31534,7 @@ export const PARTS = [
   },
   {
     "id": 30315,
+    "g3dMark": 17198,
     "n": "GIGABYTE - GeForce RTX 5050 WINDFORCE OC 8GB GDDR6 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/43a1ffde-9807-46e4-8663-51b3bc5d1f52.png",
     "c": "GPU",
@@ -31108,6 +31565,7 @@ export const PARTS = [
   },
   {
     "id": 30316,
+    "g3dMark": 22649,
     "n": "ASUS - DUAL NVIDIA GeForce RTX 5060 Ti OC Edition 16GB GDDR7 PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/643e9310-71fe-45ae-a4bc-2ec91ad6522d.png",
     "c": "GPU",
@@ -31138,6 +31596,7 @@ export const PARTS = [
   },
   {
     "id": 30318,
+    "g3dMark": 1605,
     "n": "XFX - Mercury AMD Radeon RX 9060XT OC Gaming Edition 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - White",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/61a25560-f0f2-4a49-a36a-e1ab4a3a4cd2.jpg",
     "c": "GPU",
@@ -31168,6 +31627,7 @@ export const PARTS = [
   },
   {
     "id": 30319,
+    "g3dMark": 22247,
     "n": "MSI - NVIDIA GeForce RTX 5060 Ti 8G SHADOW 2X OC PLUS 8GB GDDR7 PCI Express Gen 5 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8d1b8d86-fa53-4572-9545-b961ab330448.jpg",
     "c": "GPU",
@@ -31198,6 +31658,7 @@ export const PARTS = [
   },
   {
     "id": 30320,
+    "g3dMark": 26905,
     "n": "ASRock - Challenger Radeon RX 9070 XT 16GB GDDR6 PCI Express 5.0 Graphics Card",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6c87f892-15e2-4e62-a7d4-a9a4af80f9d0.png",
     "c": "GPU",
@@ -31227,6 +31688,7 @@ export const PARTS = [
   },
   {
     "id": 30321,
+    "g3dMark": 25405,
     "n": "ASRock - Challenger Radeon RX 9070 16GB GDDR6 PCI Express 5.0 Graphics Card",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/5df359ab-19eb-4fac-9006-d7b9a23b5593.png",
     "c": "GPU",
@@ -31256,6 +31718,7 @@ export const PARTS = [
   },
   {
     "id": 30322,
+    "g3dMark": 26905,
     "n": "ASRock - Steel Legend Radeon RX 9070 XT 16GB GDDR6 PCI Express 5.0 Graphics Card",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/8f03ff3b-3360-4c00-a0bc-47e220afeeff.png",
     "c": "GPU",
@@ -31285,6 +31748,7 @@ export const PARTS = [
   },
   {
     "id": 30323,
+    "g3dMark": 28757,
     "n": "MSI - NVIDIA GeForce RTX 5070 12G World of Warcraft MIDNIGHT LIGHT EDITION OC GDDR7 PCI Express Gen 5 Graphics Card - Ta",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/fbc8a4aa-261a-42f5-80c2-c346b09901ed.png",
     "c": "GPU",
@@ -31315,6 +31779,7 @@ export const PARTS = [
   },
   {
     "id": 30324,
+    "g3dMark": 28757,
     "n": "MSI - NVIDIA GeForce RTX 5070 12GB GDDR7 VENTUS 2X OC PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d078fbbf-c897-41b8-946c-feffc27a01f1.jpg",
     "c": "GPU",
@@ -31345,6 +31810,7 @@ export const PARTS = [
   },
   {
     "id": 30325,
+    "g3dMark": 32429,
     "n": "MSI - NVIDIA GeForce RTX 5070 Ti 16GB GDDR7 VENTUS 3X PZ OC Edition PCI Express 5.0 SFF-Ready Graphics Card - Black/Sliv",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ca83a30e-b8f4-4a52-83c2-4ba2b802ec5c.jpg",
     "c": "GPU",
@@ -31375,6 +31841,7 @@ export const PARTS = [
   },
   {
     "id": 30326,
+    "g3dMark": 32429,
     "n": "MSI - NVIDIA GeForce RTX 5070 Ti 16GB GDDR7 VENTUS 3X PZ OC Edition PCI Express 5.0 SFF-Ready Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/abecaae1-fa45-4ba7-9642-d7e3a77ce3dc.jpg",
     "c": "GPU",
@@ -31405,6 +31872,7 @@ export const PARTS = [
   },
   {
     "id": 30327,
+    "g3dMark": 35698,
     "n": "MSI - NVIDIA GeForce RTX 5080 16GB GDDR7 INSPIRE 3X OC Edition PCI Express 5.0 Graphics Card - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/e1129fbb-9c5c-47e1-8329-c96da2e8521b.jpg",
     "c": "GPU",
@@ -31435,6 +31903,7 @@ export const PARTS = [
   },
   {
     "id": 30328,
+    "g3dMark": 34427,
     "c": "GPU",
     "n": "ASUS TUF Gaming NVIDIA GeForce RTX 4080 Super OC Edition Gaming Graphics Card (PCIe 4.0, 16GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a) (Renewed)",
     "b": "ASUS",
@@ -31457,6 +31926,7 @@ export const PARTS = [
   },
   {
     "id": 30329,
+    "g3dMark": 19511,
     "c": "GPU",
     "n": "MSI Gaming GeForce RTX 4060 8GB GDRR6 128-Bit HDMI/DP Nvlink TORX Fan 4.0 Ada Lovelace Architecture Graphics Card (RTX 4060 Ventus 2X Black 8G OC) (Renewed)",
     "b": "MSI",
@@ -31479,6 +31949,7 @@ export const PARTS = [
   },
   {
     "id": 30330,
+    "g3dMark": 29284,
     "c": "GPU",
     "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3090 Ti OC Edition Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak) (Renewed)",
     "b": "ASUS",
@@ -31501,6 +31972,7 @@ export const PARTS = [
   },
   {
     "id": 30331,
+    "g3dMark": 26546,
     "c": "GPU",
     "n": "ASUS ROG Strix GeForce RTX 3090 OC Edition 24GB GDDR6X Gaming Graphics Card with Axial-tech Fans & Central Static Pressure Fan ROG-STRIX-RTX3090-O24G-GAMING (Renewed)",
     "b": "ASUS",
@@ -31523,6 +31995,7 @@ export const PARTS = [
   },
   {
     "id": 30332,
+    "g3dMark": 26546,
     "c": "GPU",
     "n": "MSI Gaming GeForce RTX 3090 24GB GDRR6X 384-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC Graphics Card (RTX 3090 VENTUS 3X 24G OC) (Renewed)",
     "b": "MSI",
@@ -31545,6 +32018,7 @@ export const PARTS = [
   },
   {
     "id": 30333,
+    "g3dMark": 26773,
     "c": "GPU",
     "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3080 Ti OC Edition Graphics Card (PCIe 4.0, 12GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II) (Renewed)",
     "b": "ASUS",
@@ -31567,6 +32041,7 @@ export const PARTS = [
   },
   {
     "id": 30334,
+    "g3dMark": 26773,
     "c": "GPU",
     "n": "MSI Gaming GeForce RTX 3080 Ti Gaming X Trio 12G Computer Gaming Graphics Card 12GB GDRR6X 320-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC, NVIDIA GPU Video Cards for Gaming PC (Renewed)",
     "b": "MSI",
@@ -31589,6 +32064,7 @@ export const PARTS = [
   },
   {
     "id": 30335,
+    "g3dMark": 26773,
     "c": "GPU",
     "n": "GIGABYTE GeForce RTX 3080 Ti Gaming OC 12G Graphics Card, 3X WINDFORCE Fans, 12GB 384-Bit GDDR6X, GV-N308TGAMING OC-12GD Video Card (Renewed)",
     "b": "Gigabyte",
@@ -31611,6 +32087,7 @@ export const PARTS = [
   },
   {
     "id": 30336,
+    "g3dMark": 25022,
     "c": "GPU",
     "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3080 Graphics Card (PCIe 4.0, 10GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II) (Renewed)",
     "b": "ASUS",
@@ -31633,6 +32110,7 @@ export const PARTS = [
   },
   {
     "id": 30337,
+    "g3dMark": 25022,
     "c": "GPU",
     "n": "MSI Gaming GeForce RTX 3080 LHR 10GB GDRR6X 320-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC Graphics Card (RTX 3080 Ventus 3X 10G OC LHR) (Renewed)",
     "b": "MSI",
@@ -31655,6 +32133,7 @@ export const PARTS = [
   },
   {
     "id": 30338,
+    "g3dMark": 25022,
     "c": "GPU",
     "n": "GIGABYTE GeForce RTX 3080 Gaming OC 10G (REV2.0) Graphics Card, 3X WINDFORCE Fans, LHR, 10GB 320-bit GDDR6X, GV-N3080GAMING OC-10GD REV2.0 Video Card (Renewed)",
     "b": "Gigabyte",
@@ -31677,6 +32156,7 @@ export const PARTS = [
   },
   {
     "id": 30339,
+    "g3dMark": 23249,
     "c": "GPU",
     "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3070 Ti OC Edition Graphics Card (PCIe 4.0, 8GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II) (Renewed)",
     "b": "ASUS",
@@ -31699,6 +32179,7 @@ export const PARTS = [
   },
   {
     "id": 30340,
+    "g3dMark": 23249,
     "c": "GPU",
     "n": "MSI Gaming GeForce RTX 3070 Ti Gaming X Trio 8G 8GB GDDR6X Graphics Card - NVIDIA Video Card GPU for Gaming PC, 256-Bit HDMI/DP Nvlink, Ampere Architecture Computer Graphics Cards (Renewed)",
     "b": "MSI",
@@ -31721,6 +32202,7 @@ export const PARTS = [
   },
   {
     "id": 30341,
+    "g3dMark": 23249,
     "c": "GPU",
     "n": "GIGABYTE GeForce RTX 3070 Ti Gaming OC 8G Graphics Card, WINDFORCE 3X Cooling System, 8GB 256-bit GDDR6X, GV-N307TGAMING OC-8GD Video Card (Renewed)",
     "b": "Gigabyte",
@@ -31743,6 +32225,7 @@ export const PARTS = [
   },
   {
     "id": 30342,
+    "g3dMark": 22121,
     "c": "GPU",
     "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3070 OC Edition Graphics Card- PCIe 4.0, 8GB GDDR6, HDMI 2.1 , DisplayPort 1.4a, Dual Ball Fan Bearings (Renewed)",
     "b": "ASUS",
@@ -31765,6 +32248,7 @@ export const PARTS = [
   },
   {
     "id": 30343,
+    "g3dMark": 22121,
     "c": "GPU",
     "n": "MSI Gaming GeForce RTX 3070 8GB GDRR6 256-Bit HDMI/DP TORX Fan 3.0 Ampere Architecture OC Graphics Card (RTX 3070 Ventus 3X OC) (Renewed)",
     "b": "MSI",
@@ -31787,6 +32271,7 @@ export const PARTS = [
   },
   {
     "id": 30344,
+    "g3dMark": 22121,
     "c": "GPU",
     "n": "Gigabyte GeForce RTX 3070 Gaming OC 8G Graphics Card, 3X WINDFORCE Fans, 8GB 256-Bit GDDR6, GV-N3070GAMING OC-8GD Video Card (Renewed)",
     "b": "Gigabyte",
@@ -31809,6 +32294,7 @@ export const PARTS = [
   },
   {
     "id": 30345,
+    "g3dMark": 20263,
     "c": "GPU",
     "n": "ASUS TUF Gaming NVIDIA GeForce RTX 3060 Ti V2 OC Edition Graphics Card (PCIe 4.0, 8GB GDDR6, LHR, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade , GPU Tweak II) (Renewed)",
     "b": "ASUS",
@@ -31831,6 +32317,7 @@ export const PARTS = [
   },
   {
     "id": 30346,
+    "g3dMark": 20263,
     "c": "GPU",
     "n": "MSI Gaming GeForce RTX 3060 Ti LHR 8GB GDRR6 256-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC Graphics Card (RTX 3060 Ti Ventus 2X 8G OCV1 LHR) (Renewed)",
     "b": "MSI",
@@ -31853,6 +32340,7 @@ export const PARTS = [
   },
   {
     "id": 30347,
+    "g3dMark": 20263,
     "c": "GPU",
     "n": "GIGABYTE AORUS GeForce RTX 3060 Ti Elite 8G (REV2.0) Graphics Card, 3X WINDFORCE Fans, LHR, 8GB 256-bit GDDR6, GV-N306TAORUS E-8GD REV2.0 Video Card (Renewed)",
     "b": "Gigabyte",
@@ -31875,6 +32363,7 @@ export const PARTS = [
   },
   {
     "id": 30348,
+    "g3dMark": 16954,
     "c": "GPU",
     "n": "ASUS Phoenix NVIDIA GeForce RTX 3060 V2 Gaming Graphics Card- PCIe 4.0, 12GB GDDR6, HDMI, DisplayPort 1.4a, Axial-tech Fan Design, Protective Backplate, Dual ball fan bearings, Auto-Extreme (Renewed)",
     "b": "ASUS",
@@ -31897,6 +32386,7 @@ export const PARTS = [
   },
   {
     "id": 30349,
+    "g3dMark": 21471,
     "c": "GPU",
     "n": "MSI Gaming GeForce RTX 2080 Ti GDRR6 352-bit HDMI/DP/USB Ray Tracing Turing Architecture Graphics Card (RTX 2080 TI Gaming X Trio) (Renewed)",
     "b": "MSI",
@@ -31919,6 +32409,7 @@ export const PARTS = [
   },
   {
     "id": 30350,
+    "g3dMark": 21471,
     "c": "GPU",
     "n": "Gigabyte GeForce RTX 2080 Ti Turbo GV-N208TTURBO-11GC Graphics Card - 1.55 GHz Core - 11 GB GDDR6-352 Bit Bus Width - Fan Cooler - DirectX 12, Opengl 4.5-3 X DisplayPort - 1 x HDMI (Renewed)",
     "b": "Gigabyte",
@@ -31941,6 +32432,7 @@ export const PARTS = [
   },
   {
     "id": 30351,
+    "g3dMark": 19445,
     "c": "GPU",
     "n": "ASUS ROG Strix GeForce RTX 2080 Super Advanced Overclocked 8G GDDR6 HDMI DP 1.4 USB Type-C Gaming Graphics Card (ROG-STRIX-RTX-2080S-A8G) (Renewed)",
     "b": "ASUS",
@@ -31963,6 +32455,7 @@ export const PARTS = [
   },
   {
     "id": 30352,
+    "g3dMark": 19445,
     "c": "GPU",
     "n": "MSI Gaming GeForce RTX 2080 Super 8GB GDRR6 256-Bit HDMI/DP Nvlink Torx Fan Turing Architecture Overclocked Graphics Card (RTX 2080 Super Ventus XS OC) (Renewed)",
     "b": "MSI",
@@ -31985,6 +32478,7 @@ export const PARTS = [
   },
   {
     "id": 30353,
+    "g3dMark": 18589,
     "c": "GPU",
     "n": "MSI Gaming GeForce RTX 2080 8GB GDRR6 256-bit HDMI/DP/USB Ray Tracing Turing Architecture Graphics Card (RTX 2080 Ventus 8G) (Renewed)",
     "b": "MSI",
@@ -32007,6 +32501,7 @@ export const PARTS = [
   },
   {
     "id": 30354,
+    "g3dMark": 18138,
     "c": "GPU",
     "n": "ASUS GeForce RTX 2070 Super Overclocked 8G EVO GDDR6 Dual-Fan Edition VR Ready HDMI DisplayPort Gaming Graphics Card (DUAL-RTX-2070S-O8G-EVO) (Renewed)",
     "b": "ASUS",
@@ -32029,6 +32524,7 @@ export const PARTS = [
   },
   {
     "id": 30355,
+    "g3dMark": 18138,
     "c": "GPU",
     "n": "MSI Gaming GeForce RTX 2070 Super 8GB GDRR6 256-bit HDMI/DP NVLink Torx Fan Turing Architecture Overclocked Graphics Card (RTX 2070 Super Ventus OC) (Renewed)",
     "b": "MSI",
@@ -32051,6 +32547,7 @@ export const PARTS = [
   },
   {
     "id": 30356,
+    "g3dMark": 18138,
     "c": "GPU",
     "n": "Gigabyte GV-N207SWF3OC-8GD GeForce RTX 2070 Super Windforce OC 8G Graphics Card, 3X Windforce Fans, 8GB 256-Bit GDDR6, Video Card (Renewed)",
     "b": "Gigabyte",
@@ -32073,6 +32570,7 @@ export const PARTS = [
   },
   {
     "id": 30357,
+    "g3dMark": 16060,
     "c": "GPU",
     "n": "ASUS Dual NVIDIA GeForce RTX 2070 EVO V2 OC Edition Gaming Graphics Card (DUAL-RTX2070 (Renewed)",
     "b": "ASUS",
@@ -32095,6 +32593,7 @@ export const PARTS = [
   },
   {
     "id": 30358,
+    "g3dMark": 16060,
     "c": "GPU",
     "n": "MSI Gaming GeForce RTX 2070 8GB GDRR6 256-bit HDMI/DP/USB Ray Tracing Turing Architecture HDCP Graphics Card (RTX 2070 Ventus 8G), 1620 Mhz (Renewed)",
     "b": "MSI",
@@ -32117,6 +32616,7 @@ export const PARTS = [
   },
   {
     "id": 30359,
+    "g3dMark": 16464,
     "c": "GPU",
     "n": "ASUS ROG Strix GeForce RTX 2060 Super Advanced Overclocked EVO 8G GDDR6 HDMI DisplayPort USB Type-C Gaming Graphics Card (ROG-STRIX-RTX2060S-A8G-EVO-GAMING) (Renewed)",
     "b": "ASUS",
@@ -32139,6 +32639,7 @@ export const PARTS = [
   },
   {
     "id": 30360,
+    "g3dMark": 16464,
     "c": "GPU",
     "n": "MSI Gaming GeForce RTX 2060 Super 8GB GDRR6 256-Bit HDMI/DP G-Sync Turing Architecture Overclocked Graphics Card (RTX 2060 Super Ventus GP OC) (RTX 2060 Super Ventus GP OC) (Renewed)",
     "b": "MSI",
@@ -32161,6 +32662,7 @@ export const PARTS = [
   },
   {
     "id": 30361,
+    "g3dMark": 16464,
     "c": "GPU",
     "n": "GIGABYTE GeForce RTX 2060 SUPER GAMING OC 8G Graphics Card, 3X Windforce Fans,8GB 256-bit GDDR6, GV-N206SGAMING OC-8GC Video Card (Renewed)",
     "b": "Gigabyte",
@@ -32183,6 +32685,7 @@ export const PARTS = [
   },
   {
     "id": 30362,
+    "g3dMark": 14094,
     "c": "GPU",
     "n": "ASUS GeForce RTX 2060 Overclocked 6G GDDR6 Dual-Fan EVO Edition VR Ready HDMI DisplayPort DVI Graphics Card (DUAL-RTX2060-O6G-EVO) (Renewed)",
     "b": "ASUS",
@@ -32205,6 +32708,7 @@ export const PARTS = [
   },
   {
     "id": 30363,
+    "g3dMark": 14094,
     "c": "GPU",
     "n": "MSI Gaming GeForce RTX 2060 6GB GDRR6 192-bit HDMI/DP Ray Tracing Turing Architecture VR Ready Graphics Card (RTX 2060 Ventus 6G OC) (Renewed)",
     "b": "MSI",
@@ -32227,6 +32731,7 @@ export const PARTS = [
   },
   {
     "id": 30364,
+    "g3dMark": 26672,
     "c": "GPU",
     "n": "GIGABYTE MSI Gaming Radeon RX 6900 XT Gaming Z Trio 16G 16GB GDDR6 256-Bit HDMI/DP Nvlink Torx Fan 4 AMD Graphics Card (RX 6900 XT Gaming Z Trio 16G)",
     "b": "MSI",
@@ -32247,6 +32752,7 @@ export const PARTS = [
   },
   {
     "id": 30366,
+    "g3dMark": 25048,
     "c": "GPU",
     "n": "GIGABYTE AMD Radeon RX 6800 XT Gaming OC 16G Graphics Card, 16GB of GDDR6 Memory, Powered by AMD RDNA 2, HDMI 2.1, WINDFORCE 3X Cooling System, GV-R68XTGAMING OC-16GD (Renewed)",
     "b": "Gigabyte",
@@ -32269,6 +32775,7 @@ export const PARTS = [
   },
   {
     "id": 30367,
+    "g3dMark": 19731,
     "c": "GPU",
     "n": "MSI Gaming Radeon RX 6700 XT 192-bit 12GB GDDR6 DP/HDMI Dual Torx 3.0 Fans FreeSync DirectX 12 VR Ready OC Graphics Card (RX 6700 XT MECH 2X 12G OC) (Renewed)",
     "b": "MSI",
@@ -32291,6 +32798,7 @@ export const PARTS = [
   },
   {
     "id": 30368,
+    "g3dMark": 16450,
     "c": "GPU",
     "n": "ASUS Dual AMD Radeon RX 6600 XT OC Edition 8GB GDDR6 Gaming Graphics Card (AMD RDNA 2, PCIe 4.0, 8GB GDDR6 Memory, HDMI 2.1, DisplayPort 1.4a, Axial-tech Fan Design, 0dB Technology) (Renewed)",
     "b": "ASUS",
@@ -32313,6 +32821,7 @@ export const PARTS = [
   },
   {
     "id": 30369,
+    "g3dMark": 16450,
     "c": "GPU",
     "n": "MSI Gaming AMD Radeon RX 6600 XT 8GB GDDR6 128-bit HDMI/DP 2602 MHz Boost Clock FreeSync DirectX 12 VR Ready OC Graphics Card (RX 6600 XT MECH 2X 8G OCV1) (Renewed)",
     "b": "MSI",
@@ -32335,6 +32844,7 @@ export const PARTS = [
   },
   {
     "id": 30370,
+    "g3dMark": 16450,
     "c": "GPU",
     "n": "Gigabyte Radeon RX 6600 XT Eagle 8G Graphics Card, WINDFORCE 3X Cooling System, 8GB 128-bit GDDR6, GV-R66XTEAGLE-8GD Video Card (Renewed)",
     "b": "Gigabyte",
@@ -32357,6 +32867,7 @@ export const PARTS = [
   },
   {
     "id": 30371,
+    "g3dMark": 15064,
     "c": "GPU",
     "n": "GIGABYTE Radeon RX 6600 Eagle 8G Graphics Card, WINDFORCE 3X Cooling System, 8GB 128-bit GDDR6, GV-R66EAGLE-8GD Video Card (Renewed)",
     "b": "Gigabyte",
@@ -32379,6 +32890,7 @@ export const PARTS = [
   },
   {
     "id": 30372,
+    "g3dMark": 9632,
     "c": "GPU",
     "n": "MSI Gaming AMD Radeon RX 6500 XT 64-bit 4GB GDDR6 DP/HDMI PCIe 4 Torx Twin Fans FreeSync DirectX 12 VR Ready OC Graphics Card (RX 6500 XT MECH 2X 4G OC) (Renewed)",
     "b": "MSI",
@@ -32401,6 +32913,7 @@ export const PARTS = [
   },
   {
     "id": 30373,
+    "g3dMark": 9632,
     "c": "GPU",
     "n": "GIGABYTE Radeon RX 6500 XT Gaming OC 4G Graphics Card, WINDFORCE 3X Cooling System, 4GB 64-bit GDDR6, GV-R65XTGAMING OC-4GD Video Card (Renewed)",
     "b": "Gigabyte",
@@ -32423,6 +32936,7 @@ export const PARTS = [
   },
   {
     "id": 30374,
+    "g3dMark": 16079,
     "c": "GPU",
     "n": "ASUS DUAL AMD Radeon RX 5700 XT EVO OC Edition Gaming Graphics Card (PCIe 4.0, 8GB GDDR6 memory, HDMI, DisplayPort, 1440p, Axial-tech Fan Design, metal backplate) (DUAL-RX5700XT-O (Renewed)",
     "b": "ASUS",
@@ -32445,6 +32959,7 @@ export const PARTS = [
   },
   {
     "id": 30375,
+    "g3dMark": 16079,
     "c": "GPU",
     "n": "MSI Gaming Radeon Rx 5700 Xt Boost Clock: 1925 MHz 256-bit 8GB GDDR6 DP/HDMI Dual Fans Crossfire Freesync Navi Architecture Graphics Card (RX 5700 Xt Mech OC) (Renewed)",
     "b": "MSI",
@@ -32467,6 +32982,7 @@ export const PARTS = [
   },
   {
     "id": 30376,
+    "g3dMark": 16079,
     "c": "GPU",
     "n": "Gigabyte Gv-R57XTGAMING OC-8GD Radeon Rx 5700 Xt Gaming OC 8G Graphics Card, PCIe 4.0, 8GB 256-Bit GDDR6, Video Card (Renewed)",
     "b": "Gigabyte",
@@ -32489,6 +33005,7 @@ export const PARTS = [
   },
   {
     "id": 30377,
+    "g3dMark": 14243,
     "c": "GPU",
     "n": "MSI Gaming Radeon RX 5700 Boost Clock: 1750 MHz 256-bit 8GB GDDR6 DP/HDMI Dual Torx 3.0 Fans Crossfire Navi AMD Radeon FreeSync Graphics Card (RX 5700 MECH GP OC) (Renewed)",
     "b": "MSI",
@@ -32511,6 +33028,7 @@ export const PARTS = [
   },
   {
     "id": 30378,
+    "g3dMark": 9068,
     "c": "GPU",
     "n": "MSI Gaming Radeon RX 5500 XT Boost Clock: 1845 MHz 128-bit 4GB GDDR6 DP/HDMI Dual Torx 3.0 Fans Freesync VR Ready Graphics Card (RX 5500 XT MECH 4G OC) (Radeon RX 5500 XT MECH 4G OC) (Renewed)",
     "b": "MSI",
@@ -32533,6 +33051,7 @@ export const PARTS = [
   },
   {
     "id": 30379,
+    "g3dMark": 8790,
     "c": "GPU",
     "n": "MSI VGA Graphic Cards RX 580 Gaming X 8G (Renewed)",
     "b": "MSI",
@@ -32555,6 +33074,7 @@ export const PARTS = [
   },
   {
     "id": 30381,
+    "g3dMark": 6337,
     "c": "GPU",
     "n": "MSI Gaming Radeon RX 570 256-bit 8GB GDRR5 DirectX 12 VR Ready CFX Graphcis Card (RX 570 ARMOR 8G OC) (Renewed)",
     "b": "MSI",
@@ -32577,6 +33097,7 @@ export const PARTS = [
   },
   {
     "id": 30382,
+    "g3dMark": 6337,
     "c": "GPU",
     "n": "Gigabyte Radeon RX 570 Gaming 4GB Graphic Cards GV-RX570GAMING-4GD (Renewed)",
     "b": "Gigabyte",
@@ -32599,6 +33120,7 @@ export const PARTS = [
   },
   {
     "id": 30383,
+    "g3dMark": 19724,
     "c": "GPU",
     "n": "Sparkle Intel Arc B580 Titan OC, 12GB GDDR6, Torn Cooling 2.0, Axial Fan, Breathing Light, Metal Backplate, SB580T-12GOC",
     "b": "Sparkle",
@@ -32619,6 +33141,7 @@ export const PARTS = [
   },
   {
     "id": 30384,
+    "g3dMark": 14079,
     "c": "GPU",
     "n": "Sparkle Intel Arc B570 Guardian OC Graphics Card, 10GB GDDR6, Torn Cooling 2.0, Axial Fan, Breathing Light, Metal Backplate, SB570G-10GOC",
     "b": "Sparkle",
@@ -32639,6 +33162,7 @@ export const PARTS = [
   },
   {
     "id": 30385,
+    "g3dMark": 13349,
     "c": "GPU",
     "n": "Sparkle Intel Arc A770 ROC OC Edition, 16GB GDDR6, 2X DBB 100mm Fan, 2.5-Slot, Metal Backplate, SA770R-16GOC",
     "b": "Sparkle",
@@ -32659,6 +33183,7 @@ export const PARTS = [
   },
   {
     "id": 30386,
+    "g3dMark": 19724,
     "c": "GPU",
     "n": "Sparkle Intel Arc A750 Titan OC Edition, 8GB GDDR6, ThermalSync, Torn Cooling, Axial Fan, Metal Backplate, SA750T-8GOC",
     "b": "Sparkle",
@@ -32679,6 +33204,7 @@ export const PARTS = [
   },
   {
     "id": 30387,
+    "g3dMark": 9446,
     "c": "GPU",
     "n": "Sparkle Intel Arc A380 ELF, 6GB GDDR6, Single Fan, SA380E-6G",
     "b": "Sparkle",
@@ -32699,6 +33225,7 @@ export const PARTS = [
   },
   {
     "id": 30389,
+    "g3dMark": 9446,
     "c": "GPU",
     "n": "Intel Arc A380 Challenger ITX 6GB OC Graphics Card | Single Slot ITX | 2250 MHz | 6GB GDDR6 | DisplayPort 2.0 | HDMI 2.0b | 0dB Cooling | 8K Support | 500W | DirectX 12 Ultimate | PCle 4.0",
     "b": "Intel",
