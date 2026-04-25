@@ -416,7 +416,7 @@ html, body, #root {
 /* === MOBILE FIX 7: tools page mobile layout === */
 .tools-layout {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 380px 1fr;
 }
 @media (max-width: 900px) {
   .tools-layout {
