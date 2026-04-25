@@ -1916,7 +1916,7 @@ function BestPcBuilderToolsPage({go}) {
 }
 
 function HomePage({go,browse,th}){
-  const deals=P.filter(p=>isDeal(p)).sort((a,b)=>dealSavings(b)-dealSavings(a)).slice(0,6);
+  const deals=(()=>{const all=P.filter(p=>isDeal(p)).sort((a,b)=>dealSavings(b)-dealSavings(a));const seen=new Set();const out=[];for(const p of all){if(!seen.has(p.c)){seen.add(p.c);out.push(p);if(out.length>=6)break;}}return out;})();
   const top=P.filter(p=>p.bench>=85).sort((a,b)=>(b.bench||0)-(a.bench||0)).slice(0,6);
   const totalParts=P.length;
   const totalDeals=P.filter(p=>isDeal(p)).length;
