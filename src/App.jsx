@@ -2077,11 +2077,11 @@ function HomePage({go,browse,th}){
               onMouseLeave={e=>e.currentTarget.style.borderColor="transparent"}>
               <div style={{width:36,height:36,borderRadius:8,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0,overflow:"hidden"}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt="" style={{width:"100%",height:"100%",objectFit:"contain"}}/>:ic(p)}</div>
               <div style={{flex:1,minWidth:0}}>
-                <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
-                <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--amber)",fontWeight:600,marginTop:2}}>Save ${dealSavings(p)}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
+                <div style={{display:"flex",alignItems:"center",gap:6,marginTop:3}}>{dealSavings(p)>0&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL</span>}<span style={{fontFamily:"var(--mono)",fontSize:12,color:"var(--amber)",fontWeight:700}}>Save ${dealSavings(p)}</span></div>
               </div>
               <div style={{textAlign:"right",flexShrink:0}}>
-                <div style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:"var(--accent)"}}>${fmtPrice($(p))}</div>
+                <div style={{fontFamily:"var(--mono)",fontSize:18,fontWeight:700,color:"var(--accent)"}}>${fmtPrice($(p))}</div>
                 {isDeal(p)&&<div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(msrp(p))}</div>}
               </div>
             </button>;})}
@@ -2100,11 +2100,12 @@ function HomePage({go,browse,th}){
               onMouseLeave={e=>e.currentTarget.style.borderColor="transparent"}>
               <div style={{width:36,height:36,borderRadius:8,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0,overflow:"hidden"}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt="" style={{width:"100%",height:"100%",objectFit:"contain"}}/>:ic(p)}</div>
               <div style={{flex:1,minWidth:0}}>
-                <div style={{fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
                 <Stars r={p.r} s={9}/>
               </div>
-              <div style={{textAlign:"right",flexShrink:0,minWidth:60}}>
-                <div style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:"var(--accent)"}}>${fmtPrice($(p))}</div>
+              <div style={{textAlign:"right",flexShrink:0,minWidth:80,display:"flex",flexDirection:"column",alignItems:"flex-end",gap:2}}>
+                {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL</span>}
+                <div style={{fontFamily:"var(--mono)",fontSize:18,fontWeight:700,color:"var(--accent)"}}>${fmtPrice($(p))}</div>
                 {isDeal(p)&&<div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(msrp(p))}</div>}
               </div>
             </button>;})}
