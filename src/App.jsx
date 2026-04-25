@@ -476,6 +476,101 @@ html, body, #root {
   }
 }
 
+/* === MOBILE FIX: wizard === */
+.wizard-container {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+.wizard-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: var(--bg3);
+  margin-bottom: 4px;
+  border: 1px solid var(--bdr);
+  gap: 8px;
+}
+.wizard-row-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+.wizard-row-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.wizard-row-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.wizard-row-text {
+  min-width: 0;
+  flex: 1;
+}
+.wizard-row-name {
+  font-family: var(--ff);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--txt);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.wizard-row-cat {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--dim);
+}
+.wizard-row-price {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--mint);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+  .wizard-container {
+    padding: 0 8px;
+  }
+  .wizard-container > div {
+    padding: 14px !important;
+  }
+  .wizard-row {
+    padding: 6px 8px;
+    gap: 6px;
+  }
+  .wizard-row-img {
+    width: 30px;
+    height: 30px;
+  }
+  .wizard-row-name {
+    font-size: 11px;
+  }
+  .wizard-row-cat {
+    font-size: 8px;
+  }
+  .wizard-row-price {
+    font-size: 12px;
+  }
+}
+/* === END MOBILE FIX: wizard === */
 /* === MOBILE FIX 5: browse page mobile layout === */
 .browse-layout {
   display: grid;
@@ -4131,7 +4226,7 @@ function ToolsPage({th}){
     </div>}
 
     {/* ═══ BUILD WIZARD ═══ */}
-    {tool==="wizard"&&<div style={{maxWidth:600,margin:"0 auto"}}>
+    {tool==="wizard"&&<div className="wizard-container">
       <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:24}}>
         <div style={{display:"flex",gap:4,marginBottom:20}}>{[0,1,2,3].map(s=><div key={s} style={{flex:1,height:4,borderRadius:2,background:wizStep>=s?"var(--mint)":"var(--bg4)"}}/>)}</div>
         
@@ -4167,12 +4262,12 @@ function ToolsPage({th}){
         {wizStep===3&&wizResult&&<div>
           <h3 style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:700,color:"var(--txt)",marginBottom:4}}>Your Recommended Build</h3>
           <p style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",marginBottom:16}}>${wizBudget} {wizUse} build · {wizPriority} priority</p>
-          {Object.entries(wizResult).map(([cat,p])=><div key={cat} style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"8px 10px",borderRadius:6,background:"var(--bg3)",marginBottom:4,border:"1px solid var(--bdr)"}}>
-            <div style={{display:"flex",alignItems:"center",gap:8,flex:1,minWidth:0,overflow:"hidden"}}>
-              <div style={{width:36,height:36,borderRadius:6,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:14,flexShrink:0,overflow:"hidden"}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt="" style={{width:"100%",height:"100%",objectFit:"contain"}}/>:CAT[cat]?.icon}</div>
-              <div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{p.n}</div><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>{CAT[cat]?.singular}</div></div>
+          {Object.entries(wizResult).map(([cat,p])=><div key={cat} className="wizard-row">
+            <div className="wizard-row-info">
+              <div className="wizard-row-img">{p.img?<img loading="lazy" decoding="async" src={p.img} alt=""/>:CAT[cat]?.icon}</div>
+              <div className="wizard-row-text"><div className="wizard-row-name">{p.n}</div><div className="wizard-row-cat">{CAT[cat]?.singular}</div></div>
             </div>
-            <span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--mint)",flexShrink:0,marginLeft:12}}>${fmtPrice($(p))}</span>
+            <span className="wizard-row-price">${fmtPrice($(p))}</span>
           </div>)}
           <div style={{display:"flex",justifyContent:"space-between",padding:"10px 10px",marginTop:8,borderTop:"1px solid var(--bdr)"}}>
             <span style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>Total</span>
