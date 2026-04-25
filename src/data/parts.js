@@ -110832,7 +110832,10 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 29
+    "value": 29,
+    "switches": "Mechanical",
+    "wireless": true,
+    "rgb": true
   },
   {
     "id": 95010,
@@ -110854,7 +110857,10 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 57
+    "value": 57,
+    "switches": "Optical",
+    "wireless": true,
+    "rgb": true
   },
   {
     "id": 95011,
@@ -110876,7 +110882,10 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 47
+    "value": 47,
+    "switches": "Mechanical",
+    "wireless": false,
+    "rgb": true
   },
   {
     "id": 95012,
@@ -110901,7 +110910,9 @@ export const PARTS = [
       }
     },
     "value": 37,
-    "rgb": true
+    "rgb": true,
+    "switches": "Mechanical",
+    "wireless": false
   },
   {
     "id": 95013,
@@ -110925,7 +110936,10 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 57
+    "value": 57,
+    "switches": "Mechanical",
+    "wireless": true,
+    "rgb": true
   },
   {
     "id": 96000,
@@ -111108,7 +111122,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 11
+    "value": 11,
+    "mouseType": "USB"
   },
   {
     "id": 96011,
@@ -111130,7 +111145,8 @@ export const PARTS = [
         "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6558751&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6558751.p%3FskuId%3D6558751", "price": 59.99, "inStock": true}
       }
     },
-    "value": 3
+    "value": 3,
+    "mouseType": "Wireless"
   },
   {
     "id": 96012,
@@ -111152,7 +111168,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 100
+    "value": 100,
+    "mouseType": "Wireless"
   },
   {
     "id": 96013,
@@ -111176,7 +111193,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 70
+    "value": 70,
+    "mouseType": "Wireless"
   },
   {
     "id": 96014,
@@ -111198,7 +111216,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 40
+    "value": 40,
+    "mouseType": "Wireless"
   },
   {
     "id": 97001,
@@ -111407,7 +111426,7 @@ export const PARTS = [
     "pr": 309,
     "msrp": 349,
     "r": 4.7,
-    "driver": "40mm",
+    "driver": 40,
     "connectivity": "Wireless",
     "mic": true,
     "anc": true,
@@ -111430,7 +111449,7 @@ export const PARTS = [
     "pr": 129,
     "msrp": 199,
     "r": 4.8,
-    "driver": "38mm",
+    "driver": 38,
     "connectivity": "Wired",
     "mic": false,
     "anc": false,
@@ -111443,7 +111462,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 99
+    "value": 99,
+    "hsType": "Wired"
   },
   {
     "id": 97013,
@@ -111454,7 +111474,7 @@ export const PARTS = [
     "pr": 249,
     "msrp": 299,
     "r": 4.8,
-    "driver": "45mm",
+    "driver": 45,
     "connectivity": "Wired",
     "mic": false,
     "anc": false,
@@ -111465,7 +111485,8 @@ export const PARTS = [
         "inStock": true
       }
     },
-    "value": 48
+    "value": 48,
+    "hsType": "Wired"
   },
   {
     "id": 97500,
@@ -111485,7 +111506,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B088HHWC47?tag=tiereduptech-20",
         "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6667525&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6667525.p%3FskuId%3D6667525", "price": 69.99, "inStock": true}
       }
-    }
+    },
+    "sampleRate": 96
   },
   {
     "id": 97501,
@@ -111497,7 +111519,7 @@ export const PARTS = [
     "msrp": 159,
     "r": 4.6,
     "micType": "Condenser",
-    "pattern": "Multi",
+    "pattern": "Multi-Pattern",
     "connectivity": "USB",
     "cp": "SALE",
     "off": 40,
@@ -111507,7 +111529,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BMFQP2ZZ?tag=tiereduptech-20",
         "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6434274&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6434274.p%3FskuId%3D6434274", "price": 159.99, "inStock": false}
       }
-    }
+    },
+    "sampleRate": 96
   },
   {
     "id": 97502,
@@ -111527,7 +111550,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BMFQP2ZZ?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "sampleRate": 48
   },
   {
     "id": 97503,
@@ -111539,7 +111563,7 @@ export const PARTS = [
     "msrp": 169,
     "r": 4.5,
     "micType": "Condenser",
-    "pattern": "Multi",
+    "pattern": "Multi-Pattern",
     "connectivity": "USB",
     "cp": "SALE",
     "off": 60,
@@ -111549,7 +111573,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0D458QDVN?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "sampleRate": 48
   },
   {
     "id": 98000,
@@ -111635,7 +111660,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B07F61BYQP?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "surface": "Hybrid"
   },
   {
     "id": 98501,
@@ -111654,7 +111680,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0D1Y45577?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "surface": "Cloth"
   },
   {
     "id": 98502,
@@ -111676,7 +111703,8 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B08QSNNV5H?tag=tiereduptech-20",
         "inStock": true, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6453152&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6453152.p%3FskuId%3D6453152", "price": 49.99, "inStock": true}
       }
-    }
+    },
+    "surface": "Hard"
   },
   {
     "id": 98750,
@@ -112600,7 +112628,8 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-G502-Performance-Gaming-Mouse/dp/B07GBZ4Q68/ref=sr_1_21?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.X2Y1WnG2knLziipd2Rafcy4_nCgBD8okJDx0A85ySJoSTZuuMAWTbk7bHe4me1UrR4H-ZkAUdZ97-NieAiU-EIWy9aMd4iL0gE31i7VonSEj1A93y8sEy1OJEn6nt9KvCcm-CKJep1HvMVrw5_ESRiPPl8-W1f8386G3iMmaZtNDE2TaaA7BNbp-e3sLw270-OyD7NHz-caeU9WrNrrjYkb0DKy93OXokJf890rQLh8.rQZqb-WLQTJEtEtgxPH_hZpNYQZ30EDlLQ4lIgu1FtQ&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130429&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-21&xpid=8t0njMCORdC1w&tag=tiereduptech-20", "price":32.99, "inStock":true}},
     "sensor": "Hero 25K",
     "dpi": 25600,
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 121
   },
   {
     "id": 99973,
@@ -112613,7 +112642,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-LIGHTSPEED-Wireless-Gaming-Mouse/dp/B07CMS5Q6N/ref=sr_1_15?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.qzSxRfgEb8GXM0VPkAEOEViyDp_oN__bDzhVWqVvrzRDyJTwxJeKkk6B6DPdl0cBxwXMvJOzGF9p5GdCSSPQLOx5AE_u8yZGPVnCrmKMDQXjVtyyal_wiMH0hURuFGkOek52LJY9wL-t59j2GXGTRaJQdScgJ-VlXflBEo5Ry8EBAhUpA2mMYw3ovQLXcscFNhazFnRD11zgv06IXjmL3AJquALR_RzbLpR0sISjjIw.utxJFYZ5KmvGiGBG-ZSNePYh57DW5nxvzHjomQLUKMA&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130427&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-15&tag=tiereduptech-20", "price":29.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6214343&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6214343.p%3FskuId%3D6214343", "price": 26.99, "inStock": true}},
     "dpi": 12000,
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "sensor": "Optical",
+    "weight": 99
   },
   {
     "id": 99974,
@@ -112627,7 +112658,8 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Wireless-Computer-Unifying-Receiver/dp/B087Z5WDJ2/ref=sr_1_43?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.kH4hRlqItMsY8tinVjKoCRsegpm45gct3uvJEuVz7D5cwAM_eBFS02iXxFhbVK1MtsJwGsQG5CNKhE_Vu6rJEyrj3PglT5NTYJT7V3luAkua0pZoNI4tw2-JXxLle26pvyMS-NyfpapI2Fb0DwZfTBb86802uqLAUXQHX6REcmvpxJ6NfwbqBiXcGryVdSEdTYvm2G8MSXb3jLFqNmgsQAAAl_4zrgDkGa1Q9Sb9lnw.Rr36DS6-DSjiftWjvd-5t-g6zYjHrcTRZjhg3fR-Q2A&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130432&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-43&xpid=R0jtZpMReOJWB&tag=tiereduptech-20", "price":27.99, "inStock":true}},
     "sensor": "Laser",
     "dpi": 1000,
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 134
   },
   {
     "id": 99975,
@@ -112641,7 +112673,8 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-LIGHTSYNC-Wired-Gaming-Mouse/dp/B07YN82X3B/ref=sr_1_39?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.6_hymEZnb5rt33n4BuhbtzFEtKF51viWFQoBog3Bti7XGuBjgUhWmMq20pQYeo4M5bwG_8sqJEW8ioR0ozbSJs8sY36jTN9NsA0YDdpJ1Di9MuIfRV3U0v04uqq6L90h-Am5UTOUAAGY_gB9uNlju6At6MUS43G_IYsT6xn90245e0sgFhFIp_0HmR9XrCq42ApzibxGXagGa5WPe_xk1bVsN6yXjFcAfuvj9K6SvzM.L-6M5Lp4f2JIUkH31LkVgotTSQPQ6RGP_DuX7W0UZQg&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130430&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-39&xpid=8t0njMCORdC1w&tag=tiereduptech-20", "price":24.02, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6420867&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6420867.p%3FskuId%3D6420867", "price": 21.99, "inStock": true}},
     "sensor": "Optical",
     "dpi": 8000,
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 85
   },
   {
     "id": 99976,
@@ -112654,7 +112687,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Lightspeed-PowerPlay-Compatible-Lightsync/dp/B07L4BM851/ref=sr_1_20_mod_primary_new?crid=IV29V2MB51EP&dib=eyJ2IjoiMSJ9.C8nOIcZFACVH26Sr4pdsY5LnNovz1_PHMC9qMvK1Bqb_uxdeHTDK2UC1v3DNcuqEspFw1byZz-wYM61vEzRXZUibvDn5qND0SDKO7Wd5W1OcqUt_6DEbd-zrl106mpt9MBMg77-SoGwm9gNKmobx2EUFK9aNoxukxWeBhRhDg8QP95VuwWB5BRHBBNIbz1Ar4T6dCe2UZMO8RYlOfE62C9uvvUCxufpk899QejgKsMQ.2TgkbcjSGKKPl3aKq4d8MM9SOh8yslsSWxAJTnAveA8&dib_tag=se&keywords=lightweight+gaming+mouse&qid=1777130429&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=lightweight%2Bgaming%2Bmouse%2Caps%2C177&sr=8-20&xpid=mwUOBLs-tm-BS&tag=tiereduptech-20", "price":80.74, "inStock":true}},
     "sensor": "Hero 25K",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 114,
+    "dpi": 25600
   },
   {
     "id": 99977,
@@ -112668,7 +112703,8 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-SUPERLIGHT-Ultra-Lightweight-Programmable-Compatible/dp/B087LXCTFJ/ref=sr_1_2?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.UmsocjleeheWsQ4hrxqG662ywKjHvwfHFEECvF3lyCOuSeDbXR9V0azQarIlD49N47gCs5u2fIABUcvifBz6rutHUxdeBGeQAbq8YAvMzSa6LIR6_zGzt66DhMdVM0LzolQtU0kVC6W9WVl3odv07emU6pTSUdCaOZh5tJ6rv-5YkBklk1U_HjySywxttToCMtcFSA1Va43VRKAEXrMiMvYzCzozApPenzcOOiosgf8.rowg1Xka1E1u3lgVfJ-gRxQeCAqQdnw5fgi4B58kFNw&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130428&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-2&tag=tiereduptech-20", "price":90.18, "inStock":true}},
     "sensor": "Hero 25K",
     "dpi": 25600,
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 63
   },
   {
     "id": 99978,
@@ -112682,7 +112718,8 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Redragon-M612-Predator-Programmable-Software/dp/B08SJ5Z8JL/ref=sr_1_27?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.X2Y1WnG2knLziipd2Rafcy4_nCgBD8okJDx0A85ySJoSTZuuMAWTbk7bHe4me1UrR4H-ZkAUdZ97-NieAiU-EIWy9aMd4iL0gE31i7VonSEj1A93y8sEy1OJEn6nt9KvCcm-CKJep1HvMVrw5_ESRiPPl8-W1f8386G3iMmaZtNDE2TaaA7BNbp-e3sLw270-OyD7NHz-caeU9WrNrrjYkb0DKy93OXokJf890rQLh8.rQZqb-WLQTJEtEtgxPH_hZpNYQZ30EDlLQ4lIgu1FtQ&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130429&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-27&xpid=8t0njMCORdC1w&tag=tiereduptech-20", "price":16.99, "inStock":true}},
     "sensor": "Optical",
     "dpi": 8000,
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 110
   },
   {
     "id": 99979,
@@ -112695,7 +112732,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-DeathAdder-Essential-Gaming-Mouse/dp/B094Q1GJSD/ref=sr_1_13?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.qzSxRfgEb8GXM0VPkAEOEViyDp_oN__bDzhVWqVvrzRDyJTwxJeKkk6B6DPdl0cBxwXMvJOzGF9p5GdCSSPQLOx5AE_u8yZGPVnCrmKMDQXjVtyyal_wiMH0hURuFGkOek52LJY9wL-t59j2GXGTRaJQdScgJ-VlXflBEo5Ry8EBAhUpA2mMYw3ovQLXcscFNhazFnRD11zgv06IXjmL3AJquALR_RzbLpR0sISjjIw.utxJFYZ5KmvGiGBG-ZSNePYh57DW5nxvzHjomQLUKMA&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130427&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-13&tag=tiereduptech-20", "price":20.98, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6476689&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6476689.p%3FskuId%3D6476689", "price": 24.99, "inStock": true}},
     "sensor": "Optical",
-    "dpi": 6400
+    "dpi": 6400,
+    "mouseType": "Wired",
+    "weight": 96
   },
   {
     "id": 99980,
@@ -112708,7 +112747,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-DeathAdder-Essential-Gaming-Mouse/dp/B094PS5RZQ/ref=sr_1_34?crid=IV29V2MB51EP&dib=eyJ2IjoiMSJ9.GjAEf3QqGcIMcT6uEEhE9rK7eeDln3AY0Sghn8iA6OMgidjsGu2oZPYidqKmeRBDpmsYcLpCVthK8pLmqYKc9Hp5GVVhe9Obb2ZrFmcbTt8InWQUHYaquKbu5nxKK6RDmCB7ZgSy2G-lov1LKgAw0-ErkJ-rCOiIc7Xu4d3JkAr_-FVgnEwmttFLu7Eq6ejOFyNWYPl0K-iQTGRNyYOZo0iJ_5j7XcL2W2bGziwJWgg.UOaDByJmzASvCWYTxp3Fr8ylTJCyaGk2zkkqr_SlAGU&dib_tag=se&keywords=lightweight+gaming+mouse&qid=1777130430&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=lightweight%2Bgaming%2Bmouse%2Caps%2C177&sr=8-34&xpid=mwUOBLs-tm-BS&tag=tiereduptech-20", "price":20.98, "inStock":true}},
     "sensor": "Optical",
-    "dpi": 6400
+    "dpi": 6400,
+    "weight": 96,
+    "mouseType": "Wired"
   },
   {
     "id": 99981,
@@ -112720,7 +112761,10 @@ export const PARTS = [
     "msrp": 36,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Basilisk-Customizable-Ergonomic-Gaming/dp/B09C13PZX7/ref=sr_1_42?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.kH4hRlqItMsY8tinVjKoCRsegpm45gct3uvJEuVz7D5cwAM_eBFS02iXxFhbVK1MtsJwGsQG5CNKhE_Vu6rJEyrj3PglT5NTYJT7V3luAkua0pZoNI4tw2-JXxLle26pvyMS-NyfpapI2Fb0DwZfTBb86802uqLAUXQHX6REcmvpxJ6NfwbqBiXcGryVdSEdTYvm2G8MSXb3jLFqNmgsQAAAl_4zrgDkGa1Q9Sb9lnw.Rr36DS6-DSjiftWjvd-5t-g6zYjHrcTRZjhg3fR-Q2A&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130432&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-42&xpid=R0jtZpMReOJWB&tag=tiereduptech-20", "price":36.39, "inStock":true}},
-    "sensor": "Optical"
+    "sensor": "Optical",
+    "weight": 101,
+    "dpi": 26000,
+    "mouseType": "Wired"
   },
   {
     "id": 99982,
@@ -112733,7 +112777,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-M720-Multi-Device-Programmable-Compatible/dp/B087Z6LSHW/ref=sr_1_41?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.kH4hRlqItMsY8tinVjKoCRsegpm45gct3uvJEuVz7D5cwAM_eBFS02iXxFhbVK1MtsJwGsQG5CNKhE_Vu6rJEyrj3PglT5NTYJT7V3luAkua0pZoNI4tw2-JXxLle26pvyMS-NyfpapI2Fb0DwZfTBb86802uqLAUXQHX6REcmvpxJ6NfwbqBiXcGryVdSEdTYvm2G8MSXb3jLFqNmgsQAAAl_4zrgDkGa1Q9Sb9lnw.Rr36DS6-DSjiftWjvd-5t-g6zYjHrcTRZjhg3fR-Q2A&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130432&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-41&xpid=R0jtZpMReOJWB&tag=tiereduptech-20", "price":39.99, "inStock":true}},
     "dpi": 1000,
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "sensor": "Advanced Optical",
+    "weight": 135
   },
   {
     "id": 99983,
@@ -112745,7 +112791,10 @@ export const PARTS = [
     "msrp": 35,
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-M705-Wireless-Marathon-Mouse/dp/B087Z733CM/ref=sr_1_40?crid=IV29V2MB51EP&dib=eyJ2IjoiMSJ9.GjAEf3QqGcIMcT6uEEhE9rK7eeDln3AY0Sghn8iA6OMgidjsGu2oZPYidqKmeRBDpmsYcLpCVthK8pLmqYKc9Hp5GVVhe9Obb2ZrFmcbTt8InWQUHYaquKbu5nxKK6RDmCB7ZgSy2G-lov1LKgAw0-ErkJ-rCOiIc7Xu4d3JkAr_-FVgnEwmttFLu7Eq6ejOFyNWYPl0K-iQTGRNyYOZo0iJ_5j7XcL2W2bGziwJWgg.UOaDByJmzASvCWYTxp3Fr8ylTJCyaGk2zkkqr_SlAGU&dib_tag=se&keywords=lightweight+gaming+mouse&qid=1777130430&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=lightweight%2Bgaming%2Bmouse%2Caps%2C177&sr=8-40&xpid=mwUOBLs-tm-BS&tag=tiereduptech-20", "price":34.99, "inStock":true}},
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "sensor": "Laser",
+    "dpi": 1000,
+    "weight": 135
   },
   {
     "id": 99984,
@@ -112757,7 +112806,10 @@ export const PARTS = [
     "msrp": 75,
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo2MzM0MDMwNzQyNjEwMzY3OjE3NzcxMzA0MzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDIyNTQ5Mjg3OTcwMjo6NDo6&url=%2FLogitech-Vertical-Wireless-Mouse-Rechargeable%2Fdp%2FB07FNJB8TT%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3DR4B2XJC8OTZX%26cv_ct_cx%3DLogitech%2BG%2BPro%2Bmouse%26keywords%3DLogitech%2BG%2BPro%2Bmouse%26pd_rd_i%3DB07FNJB8TT%26pd_rd_r%3D934d1a67-5e63-40ca-acb3-5e3c17087bba%26pd_rd_w%3Dmyxlt%26pd_rd_wg%3D5T7R2%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3DHJWQHX4VDD2VRKN3P9XA%26qid%3D1777130430%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DLogitech%252BG%252BPro%252Bmouse%252Caps%252C150%26sr%3D1-21-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DR0jtZpMReOJWB%26aref%3DezR6iWgjvw%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=ezR6iWgjvw&tag=tiereduptech-20", "price":74.99, "inStock":true}},
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "sensor": "Optical",
+    "dpi": 4000,
+    "weight": 135
   },
   {
     "id": 99985,
@@ -112769,7 +112821,10 @@ export const PARTS = [
     "msrp": 60,
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Vertical-Ergonomic-Bluetooth-Compatible/dp/B09J1TB35S/ref=sr_1_35?crid=OB7AC3XQPE5T&dib=eyJ2IjoiMSJ9.gA4-awrBjBMmGG_4qLwYlpJTdBnQj5NT1MxEGSmPUUBr2ymHQlgzlC4qAo-m8ys2qO2B0vY5cBTfJe4m5kjNO-xCdAwUnK_h60eAIc31D3SbCQUxeWH8rrD4pKSGjZr0nMOX-KqSXI8ONHLQn4owc5HaoI1j_uvuVAtjpOh469pD8cedIexUBNv54rQ7e3Sn0mNU_8gAy23axkVyY0kP_2Wian_NEBk08prhqLaCeck.kx_mZK-nb050ktbQK2etdFzfYg_ykL-GZEz7qEbwMWQ&dib_tag=se&keywords=wireless+gaming+mouse&qid=1777130429&sprefix=wireless%2Bgaming%2Bmouse%2Caps%2C126&sr=8-35&xpid=aOcyGxvfvyWP6&tag=tiereduptech-20", "price":59.99, "inStock":true}},
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "sensor": "Optical",
+    "dpi": 4000,
+    "weight": 125
   },
   {
     "id": 99986,
@@ -112781,7 +112836,10 @@ export const PARTS = [
     "msrp": 67,
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-MX-Vertical-Mini-White/dp/B098JK6G5N/ref=sr_1_21?crid=AI171H1RXE1E&dib=eyJ2IjoiMSJ9.2StnkTC2A_vAmVyIBNH9w1c9bje9FOAfopm4Ki_10DpDM5VyqWhx1QePBo8hfldu00Z66WJ3rVyP72QxHOpLInj2IUXHtiPR71h1LfNdsXc6RkUos7uTgVORqr3H80N3gbX2IZhdZkNuteaiB-gZAa_Acbf-27vELuFrJAYuJ1s_DdbZxonyZNN-kU_fLeMuu4RmS22XLu06Q-z996-N_zPH3fjArLxKMMOqf5AnOMI.q5djaVxzXNUPQSC-7jD9zA9aExeYT7vEn7QFE8nPqRc&dib_tag=se&keywords=Logitech+MX+Master&qid=1777130442&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BMX%2BMaster%2Caps%2C109&sr=8-21&xpid=nNAcQmdnGDW_m&tag=tiereduptech-20", "price":66.81, "inStock":true}},
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "sensor": "Optical",
+    "dpi": 4000,
+    "weight": 125
   },
   {
     "id": 99987,
@@ -112793,7 +112851,10 @@ export const PARTS = [
     "msrp": 145,
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Wireless-Ultra-fast-Scrolling-Bluetooth/dp/B09HM94VDS/ref=sr_1_40?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.kH4hRlqItMsY8tinVjKoCRsegpm45gct3uvJEuVz7D5cwAM_eBFS02iXxFhbVK1MtsJwGsQG5CNKhE_Vu6rJEyrj3PglT5NTYJT7V3luAkua0pZoNI4tw2-JXxLle26pvyMS-NyfpapI2Fb0DwZfTBb86802uqLAUXQHX6REcmvpxJ6NfwbqBiXcGryVdSEdTYvm2G8MSXb3jLFqNmgsQAAAl_4zrgDkGa1Q9Sb9lnw.Rr36DS6-DSjiftWjvd-5t-g6zYjHrcTRZjhg3fR-Q2A&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130432&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-40&xpid=R0jtZpMReOJWB&tag=tiereduptech-20", "price":145.02, "inStock":true}},
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "sensor": "Optical",
+    "dpi": 8000,
+    "weight": 141
   },
   {
     "id": 99988,
@@ -112807,7 +112868,8 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Lightspeed-Lightsync-Compatible-Lightweight/dp/B07NSSPV9S/ref=sr_1_11?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.UmsocjleeheWsQ4hrxqG662ywKjHvwfHFEECvF3lyCOuSeDbXR9V0azQarIlD49N47gCs5u2fIABUcvifBz6rutHUxdeBGeQAbq8YAvMzSa6LIR6_zGzt66DhMdVM0LzolQtU0kVC6W9WVl3odv07emU6pTSUdCaOZh5tJ6rv-5YkBklk1U_HjySywxttToCMtcFSA1Va43VRKAEXrMiMvYzCzozApPenzcOOiosgf8.rowg1Xka1E1u3lgVfJ-gRxQeCAqQdnw5fgi4B58kFNw&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130428&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-11&tag=tiereduptech-20", "price":59.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6333840&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6333840.p%3FskuId%3D6333840", "price": 59.99, "inStock": true}},
     "sensor": "Hero 25K",
     "weight": 95,
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "dpi": 25600
   },
   {
     "id": 99989,
@@ -112821,7 +112883,8 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Redragon-Impact-Buttons-Precision-Programmable/dp/B07HC4NBQ8/ref=sr_1_26?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.X2Y1WnG2knLziipd2Rafcy4_nCgBD8okJDx0A85ySJoSTZuuMAWTbk7bHe4me1UrR4H-ZkAUdZ97-NieAiU-EIWy9aMd4iL0gE31i7VonSEj1A93y8sEy1OJEn6nt9KvCcm-CKJep1HvMVrw5_ESRiPPl8-W1f8386G3iMmaZtNDE2TaaA7BNbp-e3sLw270-OyD7NHz-caeU9WrNrrjYkb0DKy93OXokJf890rQLh8.rQZqb-WLQTJEtEtgxPH_hZpNYQZ30EDlLQ4lIgu1FtQ&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130429&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-26&xpid=8t0njMCORdC1w&tag=tiereduptech-20", "price":22.49, "inStock":true}},
     "sensor": "Optical",
     "dpi": 12400,
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 158
   },
   {
     "id": 99990,
@@ -112834,7 +112897,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Redragon-M810-Wireless-Buttons-Capacity/dp/B09ZY348SY/ref=sr_1_5?crid=OB7AC3XQPE5T&dib=eyJ2IjoiMSJ9.gqhgWBpv6izOCyfMRtq9_xF0J_JYj8GX7tu_WeG3lIpKn9LYGbrRtHBCk9hjqKueCKzxE2w6ne3LzD8Lr3IbMSg3537Y_IYhT42Q9NVgVNUuC2Tjz7XrXoaULCps0KzMgcV0klXG-w7sTY4dJ4xjV7ZhSmbUrgos7Mc3jWeJT3R_sOvrV2rhm-Fj_HcbKCPmdtvg95p62rXYwLcpaNyfd6-hxArAdRlRhaysj0XMbwA.pbUVV5NN12YOKVY3A_2ettxOIbc_Y4WhV8XUHgw54co&dib_tag=se&keywords=wireless+gaming+mouse&qid=1777130428&sprefix=wireless%2Bgaming%2Bmouse%2Caps%2C126&sr=8-5&tag=tiereduptech-20", "price":34.99, "inStock":true}},
     "dpi": 10000,
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "sensor": "Optical",
+    "weight": 130
   },
   {
     "id": 99991,
@@ -112846,7 +112911,10 @@ export const PARTS = [
     "msrp": 17,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Redragon-M602-Ergonomic-High-Precision-Programmable/dp/B011HMDZ0Q/ref=sr_1_43?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.6_hymEZnb5rt33n4BuhbtzFEtKF51viWFQoBog3Bti7XGuBjgUhWmMq20pQYeo4M5bwG_8sqJEW8ioR0ozbSJs8sY36jTN9NsA0YDdpJ1Di9MuIfRV3U0v04uqq6L90h-Am5UTOUAAGY_gB9uNlju6At6MUS43G_IYsT6xn90245e0sgFhFIp_0HmR9XrCq42ApzibxGXagGa5WPe_xk1bVsN6yXjFcAfuvj9K6SvzM.L-6M5Lp4f2JIUkH31LkVgotTSQPQ6RGP_DuX7W0UZQg&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130430&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-43&xpid=8t0njMCORdC1w&tag=tiereduptech-20", "price":16.99, "inStock":true}},
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "sensor": "Optical",
+    "dpi": 7200,
+    "weight": 110
   },
   {
     "id": 99992,
@@ -112859,7 +112927,8 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Redragon-Wireless-Backlit-Rechargeable-Programmable/dp/B08M9FZWN9/ref=sr_1_16?crid=OB7AC3XQPE5T&dib=eyJ2IjoiMSJ9.gqhgWBpv6izOCyfMRtq9_xF0J_JYj8GX7tu_WeG3lIpKn9LYGbrRtHBCk9hjqKueCKzxE2w6ne3LzD8Lr3IbMSg3537Y_IYhT42Q9NVgVNUuC2Tjz7XrXoaULCps0KzMgcV0klXG-w7sTY4dJ4xjV7ZhSmbUrgos7Mc3jWeJT3R_sOvrV2rhm-Fj_HcbKCPmdtvg95p62rXYwLcpaNyfd6-hxArAdRlRhaysj0XMbwA.pbUVV5NN12YOKVY3A_2ettxOIbc_Y4WhV8XUHgw54co&dib_tag=se&keywords=wireless+gaming+mouse&qid=1777130428&sprefix=wireless%2Bgaming%2Bmouse%2Caps%2C126&sr=8-16&tag=tiereduptech-20", "price":29.54, "inStock":true}},
     "dpi": 8000,
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 110
   },
   {
     "id": 99993,
@@ -112872,7 +112941,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/sspa/click?ie=UTF8&spc=MToyODc2NzQzMzM1OTU0MDg1OjE3NzcxMzA0MzM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTE1ODA1NjQ3NDYwMjo6MTo6&url=%2FTECKNET-Bluetooth-Rechargeable-Adjustable-Compatibility%2Fdp%2FB0FB9BR23C%2Fref%3Dsxin_33_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3DQZ5UBXHDXVLG%26cv_ct_cx%3DSteelSeries%2BAerox%26keywords%3DSteelSeries%2BAerox%26pd_rd_i%3DB0FB9BR23C%26pd_rd_r%3D248c8582-a1a5-4c1d-a8e0-94fa2a9d963b%26pd_rd_w%3D43HbS%26pd_rd_wg%3DUlvL2%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3DBEW72CVPJQ26RWBSB4FT%26qid%3D1777130432%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DSteelSeries%252BAerox%252Caps%252C205%26sr%3D1-18-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DTkP7p709e64hc%26aref%3D1MyWMJ7ynL%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=1MyWMJ7ynL&tag=tiereduptech-20", "price":19.73, "inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "dpi": 2000,
+    "weight": 86
   },
   {
     "id": 99994,
@@ -112885,7 +112956,9 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Orochi-Mobile-Wireless-Gaming/dp/B0916N2LPZ/ref=sr_1_21?crid=IV29V2MB51EP&dib=eyJ2IjoiMSJ9.C8nOIcZFACVH26Sr4pdsY5LnNovz1_PHMC9qMvK1Bqb_uxdeHTDK2UC1v3DNcuqEspFw1byZz-wYM61vEzRXZUibvDn5qND0SDKO7Wd5W1OcqUt_6DEbd-zrl106mpt9MBMg77-SoGwm9gNKmobx2EUFK9aNoxukxWeBhRhDg8QP95VuwWB5BRHBBNIbz1Ar4T6dCe2UZMO8RYlOfE62C9uvvUCxufpk899QejgKsMQ.2TgkbcjSGKKPl3aKq4d8MM9SOh8yslsSWxAJTnAveA8&dib_tag=se&keywords=lightweight+gaming+mouse&qid=1777130429&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=lightweight%2Bgaming%2Bmouse%2Caps%2C177&sr=8-21&xpid=mwUOBLs-tm-BS&tag=tiereduptech-20", "price":34.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6460407&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6460407.p%3FskuId%3D6460407", "price": 34.99, "inStock": false}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 60,
+    "dpi": 18000
   },
   {
     "id": 99995,
@@ -112899,7 +112972,8 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Redragon-Wireless-Programmable-Buttons-Battery/dp/B088B3ZM76/ref=sr_1_19?crid=OB7AC3XQPE5T&dib=eyJ2IjoiMSJ9.gA4-awrBjBMmGG_4qLwYlpJTdBnQj5NT1MxEGSmPUUBr2ymHQlgzlC4qAo-m8ys2qO2B0vY5cBTfJe4m5kjNO-xCdAwUnK_h60eAIc31D3SbCQUxeWH8rrD4pKSGjZr0nMOX-KqSXI8ONHLQn4owc5HaoI1j_uvuVAtjpOh469pD8cedIexUBNv54rQ7e3Sn0mNU_8gAy23axkVyY0kP_2Wian_NEBk08prhqLaCeck.kx_mZK-nb050ktbQK2etdFzfYg_ykL-GZEz7qEbwMWQ&dib_tag=se&keywords=wireless+gaming+mouse&qid=1777130429&sprefix=wireless%2Bgaming%2Bmouse%2Caps%2C126&sr=8-19&xpid=aOcyGxvfvyWP6&tag=tiereduptech-20", "price":46.99, "inStock":true}},
     "sensor": "Optical",
     "dpi": 16000,
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 105
   },
   {
     "id": 99996,
@@ -112912,7 +112986,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-G-Artanis-WL-Black/dp/B092CB69Q4/ref=sr_1_20?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.X2Y1WnG2knLziipd2Rafcy4_nCgBD8okJDx0A85ySJoSTZuuMAWTbk7bHe4me1UrR4H-ZkAUdZ97-NieAiU-EIWy9aMd4iL0gE31i7VonSEj1A93y8sEy1OJEn6nt9KvCcm-CKJep1HvMVrw5_ESRiPPl8-W1f8386G3iMmaZtNDE2TaaA7BNbp-e3sLw270-OyD7NHz-caeU9WrNrrjYkb0DKy93OXokJf890rQLh8.rQZqb-WLQTJEtEtgxPH_hZpNYQZ30EDlLQ4lIgu1FtQ&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130429&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-20&xpid=8t0njMCORdC1w&tag=tiereduptech-20", "price":158, "inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "dpi": 25600,
+    "weight": 89
   },
   {
     "id": 99997,
@@ -112925,7 +113001,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Superlight-Wireless-Pro-Grade-Programmable/dp/B09NBWL8J5/ref=sr_1_5?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.UmsocjleeheWsQ4hrxqG662ywKjHvwfHFEECvF3lyCOuSeDbXR9V0azQarIlD49N47gCs5u2fIABUcvifBz6rutHUxdeBGeQAbq8YAvMzSa6LIR6_zGzt66DhMdVM0LzolQtU0kVC6W9WVl3odv07emU6pTSUdCaOZh5tJ6rv-5YkBklk1U_HjySywxttToCMtcFSA1Va43VRKAEXrMiMvYzCzozApPenzcOOiosgf8.rowg1Xka1E1u3lgVfJ-gRxQeCAqQdnw5fgi4B58kFNw&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130428&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-5&tag=tiereduptech-20", "price":144.99, "inStock":true}},
     "weight": 60,
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "sensor": "HERO 2",
+    "dpi": 32000
   },
   {
     "id": 99998,
@@ -112937,19 +113015,10 @@ export const PARTS = [
     "msrp": 89,
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Scrolling-Any-Surface-Programmable-Bluetooth/dp/B0BPY4ZQXG/ref=sr_1_16?crid=AI171H1RXE1E&dib=eyJ2IjoiMSJ9.fJpmc6iSsthd__AZttTmLtwq0-q1xtKL-sXtIyyfRl2SscfbMnd1HcYuIE5grtAIytoq7zukXlTgu-OWssizRr6ECNR8-JfUUnUlx6WB5UY_mSkNifbzOOHsbEZO89CylqGUR2Aidx1KZ6c29hgCs-oqVlFaTLtIVGjBupYuzoO_EW9_FGq4kyPiJEdcow7KVacmv-ZBo3h8gyS_zHS1J3-2JZq9TR-jv24SrHND3T8.Xz-yovMtaME6O_FwvAh1x7SYdBIlXsh37WfXVct1iCI&dib_tag=se&keywords=Logitech+MX+Master&qid=1777130436&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BMX%2BMaster%2Caps%2C109&sr=8-16&tag=tiereduptech-20", "price":88.99, "inStock":true}},
-    "mouseType": "Wireless"
-  },
-  {
-    "id": 99999,
-    "n": "Hard Case Replacement for Logitech MX Master 4 / MX Master 3 Master 3S Advanced Wireless Mouse (Graphite Black Case)",
-    "img": "https://m.media-amazon.com/images/I/71QaFLDC-mL._AC_UY218_.jpg",
-    "c": "Mouse",
-    "b": "Logitech",
-    "pr": 18,
-    "msrp": 18,
-    "r": 4.8,
-    "deals": {"amazon":{"url":"https://www.amazon.com/co2CREA-Replacement-Logitech-Advanced-Wireless/dp/B0B1D9LXY6/ref=sr_1_46?crid=AI171H1RXE1E&dib=eyJ2IjoiMSJ9.L6CLjwR4SClFMtIsw4x0I_wA9lUxQBiOBMie7F8v23o-ja42bunXLsHR47jOrzcy7LSA6M0ks0cCgSFQpA6i36GJWdd4fJXLoQNIeTrNTPWoTQkXHWMlqKalB0fmh7afT6XcSi_UvQtXXs35DIWLfMFRVd9oUDWwIVn6DBLcUJlpEWKdnFJuu4d4I3EBbK4T9cEgue7CSLLG1w0Z2gLxyS9RsARB2tkXGgXO_fPzEn8.StQLfY4vBB8gfVgaI5rUeDBWfpH8NcczgmSC5mTQJmc&dib_tag=se&keywords=Logitech+MX+Master&qid=1777130448&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BMX%2BMaster%2Caps%2C109&sr=8-46&xpid=nNAcQmdnGDW_m&tag=tiereduptech-20", "price":17.99, "inStock":true}},
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "sensor": "Optical",
+    "dpi": 8000,
+    "weight": 99
   },
   {
     "id": 100000,
@@ -112960,7 +113029,11 @@ export const PARTS = [
     "pr": 32,
     "msrp": 32,
     "r": 4.5,
-    "deals": {"amazon":{"url":"https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0NjQyMDk4MDA4MzM5OTY1OjE3NzcxMzA0MzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1MDc4NjMzMzQwMjo6NDo6&url=%2FLenovo-Yoga-Pro-Mouse-Tidal%2Fdp%2FB0D2JGKRMM%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3D11MMTAURU8VJ%26cv_ct_cx%3DSteelSeries%2BRival%26keywords%3DSteelSeries%2BRival%26pd_rd_i%3DB0D2JGKRMM%26pd_rd_r%3Df2c1bcf2-be6e-48e0-ab90-ce8b6f96425b%26pd_rd_w%3Dlnh2L%26pd_rd_wg%3DGpqxj%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3DN1VZSCF2A8FR49JVYTGE%26qid%3D1777130432%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DSteelSeries%252BRival%252Caps%252C168%26sr%3D1-21-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DmwhGp0uzOPGaO%26aref%3DdOrbGMvSMf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=dOrbGMvSMf&tag=tiereduptech-20", "price":31.99, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0NjQyMDk4MDA4MzM5OTY1OjE3NzcxMzA0MzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1MDc4NjMzMzQwMjo6NDo6&url=%2FLenovo-Yoga-Pro-Mouse-Tidal%2Fdp%2FB0D2JGKRMM%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3D11MMTAURU8VJ%26cv_ct_cx%3DSteelSeries%2BRival%26keywords%3DSteelSeries%2BRival%26pd_rd_i%3DB0D2JGKRMM%26pd_rd_r%3Df2c1bcf2-be6e-48e0-ab90-ce8b6f96425b%26pd_rd_w%3Dlnh2L%26pd_rd_wg%3DGpqxj%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3DN1VZSCF2A8FR49JVYTGE%26qid%3D1777130432%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DSteelSeries%252BRival%252Caps%252C168%26sr%3D1-21-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DmwhGp0uzOPGaO%26aref%3DdOrbGMvSMf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=dOrbGMvSMf&tag=tiereduptech-20", "price":31.99, "inStock":true}},
+    "sensor": "Optical",
+    "dpi": 4000,
+    "weight": 96,
+    "mouseType": "Wireless"
   },
   {
     "id": 100001,
@@ -112973,7 +113046,9 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Basilisk-HyperSpeed-Customizable-Wireless/dp/B0BXBC26X8/ref=sr_1_30?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.HNY0rtCuUyvNZwpqWY9HM0X0_2ecbGJO-h20E5yEF7uEUgxaZXNi4fo-sZhBvmQHbxaRRO9HCMz_9pcKvLU9AZYtj1p7ky2SGG3ZnKRWLTFwrzFFuFyvQDVKv9jFNhxtZpzGwJbUnc83Po7792eYQMUy5IyeUOBC26OeoyYLdk2tVYqutkH0QlRQXaH4s8MPFbotkY_y2KAuZJmIk7gikLcopAu0X-4u3DEE8LadIU8.XkEQq1FqOJCS55Upg_Db_WLxQ1GTEyQMliViWVnW5oM&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130430&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-30&xpid=R0jtZpMReOJWB&tag=tiereduptech-20", "price":48.99, "inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "dpi": 18000,
+    "weight": 76
   },
   {
     "id": 100002,
@@ -112985,7 +113060,10 @@ export const PARTS = [
     "msrp": 115,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Lightspeed-Left-Handed-Customizable-Switchable/dp/B0CJ4TPLRM/ref=sr_1_3?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.UmsocjleeheWsQ4hrxqG662ywKjHvwfHFEECvF3lyCOuSeDbXR9V0azQarIlD49N47gCs5u2fIABUcvifBz6rutHUxdeBGeQAbq8YAvMzSa6LIR6_zGzt66DhMdVM0LzolQtU0kVC6W9WVl3odv07emU6pTSUdCaOZh5tJ6rv-5YkBklk1U_HjySywxttToCMtcFSA1Va43VRKAEXrMiMvYzCzozApPenzcOOiosgf8.rowg1Xka1E1u3lgVfJ-gRxQeCAqQdnw5fgi4B58kFNw&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130428&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-3&tag=tiereduptech-20", "price":115.27, "inStock":true}},
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "sensor": "HERO 2",
+    "dpi": 32000,
+    "weight": 80
   },
   {
     "id": 100003,
@@ -112999,7 +113077,8 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-HyperSpeed-Wireless-Esports-Gaming/dp/B0CF4DJM7F/ref=sr_1_26?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.HNY0rtCuUyvNZwpqWY9HM0X0_2ecbGJO-h20E5yEF7uEUgxaZXNi4fo-sZhBvmQHbxaRRO9HCMz_9pcKvLU9AZYtj1p7ky2SGG3ZnKRWLTFwrzFFuFyvQDVKv9jFNhxtZpzGwJbUnc83Po7792eYQMUy5IyeUOBC26OeoyYLdk2tVYqutkH0QlRQXaH4s8MPFbotkY_y2KAuZJmIk7gikLcopAu0X-4u3DEE8LadIU8.XkEQq1FqOJCS55Upg_Db_WLxQ1GTEyQMliViWVnW5oM&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130430&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-26&xpid=R0jtZpMReOJWB&tag=tiereduptech-20", "price":59.99, "inStock":true}},
     "sensor": "Optical",
     "weight": 82,
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "dpi": 30000
   },
   {
     "id": 100004,
@@ -113012,7 +113091,9 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Basilisk-Customizable-Wireless-Gaming/dp/B0B6Y3XYFG/ref=sr_1_24?crid=OB7AC3XQPE5T&dib=eyJ2IjoiMSJ9.gA4-awrBjBMmGG_4qLwYlpJTdBnQj5NT1MxEGSmPUUBr2ymHQlgzlC4qAo-m8ys2qO2B0vY5cBTfJe4m5kjNO-xCdAwUnK_h60eAIc31D3SbCQUxeWH8rrD4pKSGjZr0nMOX-KqSXI8ONHLQn4owc5HaoI1j_uvuVAtjpOh469pD8cedIexUBNv54rQ7e3Sn0mNU_8gAy23axkVyY0kP_2Wian_NEBk08prhqLaCeck.kx_mZK-nb050ktbQK2etdFzfYg_ykL-GZEz7qEbwMWQ&dib_tag=se&keywords=wireless+gaming+mouse&qid=1777130429&sprefix=wireless%2Bgaming%2Bmouse%2Caps%2C126&sr=8-24&xpid=aOcyGxvfvyWP6&tag=tiereduptech-20", "price":99.99, "inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "dpi": 30000,
+    "weight": 112
   },
   {
     "id": 100005,
@@ -113024,7 +113105,10 @@ export const PARTS = [
     "msrp": 120,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo2NTc0MzMzNzAzNjI4Mzk0OjE3NzcxMzA0MzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTIzNjg4Mjc3ODkwMjo6MDo6&url=%2FLogitech-Trackball-Rechargeable-Ergonomic-Programmable%2Fdp%2FB0D6PTR6MP%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3D2X20LR4QSAIK%26cv_ct_cx%3DLogitech%2BG502%26keywords%3DLogitech%2BG502%26pd_rd_i%3DB0D6PTR6MP%26pd_rd_r%3D76fd09f1-a5a7-49cc-be63-ba76b43cc9d0%26pd_rd_w%3DCVvBa%26pd_rd_wg%3DfEAbx%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3DYPS5BRNJ4YPS57303QQA%26qid%3D1777130432%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DLogitech%252BG502%252Caps%252C106%26sr%3D1-17-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DgPmMGAgJJSaUi%26aref%3D0jjECO7nQO%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=0jjECO7nQO&tag=tiereduptech-20", "price":119.99, "inStock":true}},
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "sensor": "Optical",
+    "dpi": 512,
+    "weight": 259
   },
   {
     "id": 100006,
@@ -113051,7 +113135,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-Apex-Gaming-Keyboard-Anti-Ghosting/dp/B09FTNMT84/ref=sr_1_1?crid=OPT91HLYF34O&dib=eyJ2IjoiMSJ9.1PNtdznOJW6bwyOq65lPJlvrchECPTbSsv6I-W8wv88EWHmlDetmNdackOc7GNjICDZMWkv41KvsxBmYhteTXuDDmQNuPHzJP43Jhe3I3fqMo6WTpU_AQhj6cIkFtvHTxLaiu4KP3z-VVuGEU1DnDp3DkGkP9uZ3qIZ__jM44SoeR2E4xWKKpy6Hrnj6Uqhq6We_3oUAXxSMmEw-XIKhLe2byh-hExxl0qEHV9OCpOc.KQGxx5voJ2YZLEhgSPIphxpzgX1G93MEWfMtxMU0ook&dib_tag=se&keywords=TKL+gaming+keyboard&qid=1777130537&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=TKL%2Bgaming%2Bkeyboard%2Caps%2C114&sr=8-1&tag=tiereduptech-20", "price":31.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6396205&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6396205.p%3FskuId%3D6396205", "price": 49.99, "inStock": true}},
     "layout": "TKL",
-    "rgb": true
+    "rgb": true,
+    "wireless": false,
+    "switches": "Membrane"
   },
   {
     "id": 100008,
@@ -113064,7 +113150,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-Apex-RGB-Gaming-Keyboard/dp/B07ZGDPT4M/ref=sr_1_26?crid=JNWVFEINKIBP&dib=eyJ2IjoiMSJ9.ZnlXd6ET439c0gTx4lvgQSPUXcT2rhKGPAj1Z5LqXmdfbcgkRyEkmkE3Og96qGj4NwkouI2G3xEIA8cOkumRNl5S_VaVEK7cndaGZFZmC6VPjnwP0JpyU5q_GDg96kv4XpYZUsqgdvaMM0Q-RAiRd4eGJqPb6rbvJ-l3IeMTZ6MIC9X7d69eNGLP2IISpQygL0GHkD100GLkhS6gctDac84uo5pIWzQBsDCPpyYTRoY.llpR3-eH56lqoH7JxDkwBPZreAcdECfhdFoQh41ZiXU&dib_tag=se&keywords=Corsair+gaming+keyboard&qid=1777130540&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Corsair%2Bgaming%2Bkeyboard%2Caps%2C252&sr=8-26&xpid=oDHeVbDFLzRGi&tag=tiereduptech-20", "price":49.99, "inStock":true}},
     "switches": "Hall Effect",
-    "rgb": true
+    "rgb": true,
+    "layout": "TKL",
+    "wireless": false
   },
   {
     "id": 100009,
@@ -113077,7 +113165,9 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Tartarus-Progammable-Detachable-Mecha-Membrane/dp/B07754PYFK/ref=sr_1_28?crid=NWATW8520JZY&dib=eyJ2IjoiMSJ9.c1JkPA_gBS5vfhXn_c8j2MQQAyrvWeEinMqlEnjOeqFL5-5_tlghfbkTeIE8c-6F7DUbAUA_4N7s6DHbfP-IZHChcUD77m_-v8jNp78rTLA-Q5WsM0yuSYcpd6zKBcGLaZ3QQJz0i3XpJir5Vn0QGBzunVUWHMu1igNlWp72pU9nubZeQnWe3EmN0YlTGTLyaRp5YLQbiq0691S_u0RxHvNQDDQMN_aHq2u919fBqTc.5kPofmMgnUeiEgRuQjPw87SaOxTsfBHCPLjDXGPKG2g&dib_tag=se&keywords=Razer+BlackWidow&qid=1777130537&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BBlackWidow%2Caps%2C198&sr=8-28&xpid=4GrddsFPi_Po6&tag=tiereduptech-20", "price":69.99, "inStock":true}},
     "switches": "Membrane",
-    "rgb": true
+    "rgb": true,
+    "layout": "Compact",
+    "wireless": false
   },
   {
     "id": 100010,
@@ -113089,7 +113179,10 @@ export const PARTS = [
     "msrp": 144,
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Wireless-Ergonomic-Keyboard-Wrist/dp/B07ZWK2TQT/ref=sr_1_25?crid=NUCGMQI90EY6&dib=eyJ2IjoiMSJ9.Qwr376sJfabFAJRb7kWNhPziJ-3dqe899SLQUN8kYQSToCDmA1zYiOR9dkFzeFggP__cEGX7fQe8IAc9EMhHDvbV3YXUJs6dRPwWFLDH2d61RiDnEFsot6VrA_7FmmJ8tdlpVFXle9XtqPctPSnP0E4WGYbQGv8BijGFB9ac3ALLRxxjLGN8d2_kAeKHSOtMGEXDWiVqB4072zdkhsJMB9C-IGGEr6UK3yovW4MmDxY.LqyZAgLj8HyYCaxsXJiVUfIwiYQZTEiS8i8CT4SIfR0&dib_tag=se&keywords=Logitech+MX+Keys&qid=1777130545&sprefix=Logitech%2BMX%2BKeys%2Caps%2C143&sr=8-25&xpid=VXk6M5zscnpGm&tag=tiereduptech-20", "price":143.98, "inStock":true}},
-    "wireless": true
+    "wireless": true,
+    "switches": "Scissor",
+    "layout": "Full-Size",
+    "rgb": false
   },
   {
     "id": 100011,
@@ -113102,7 +113195,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Minimalist-Illuminated-Bluetooth-Compatible/dp/B098JPSVKY/ref=sr_1_3?crid=NUCGMQI90EY6&dib=eyJ2IjoiMSJ9.VoIByYOpDxzOqfZqCiZ5pOmvG0kKgqjS3M9OO8Fl68wJsX63he3ffBVk_HoCyKSlh0JakA6LyvxMgzTuHx3G0VV_gEtst6WsLca7jsP8NZ2MLubkfD5x_yg5ZFmcRJsHs_lS3nKQOSMr_bJreKX1-f79FWgcDWNZXw06plrkpczSv_LiZxUa-4ksiLauMAwXObYMruw8ugV2eJyIeOJbGe3GrNQWqhSUFMOyL7JJ5kU.XW5DThye2DZbAwxpml3Yt-7EefxRnT4YE1yxRhXdJL8&dib_tag=se&keywords=Logitech+MX+Keys&qid=1777130541&sprefix=Logitech%2BMX%2BKeys%2Caps%2C143&sr=8-3&tag=tiereduptech-20", "price":99.99, "inStock":true}},
     "wireless": true,
-    "rgb": true
+    "rgb": true,
+    "switches": "Scissor",
+    "layout": "75%"
   },
   {
     "id": 100012,
@@ -113130,7 +113225,9 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/TECKNET-All-Metal-Illumination-Anti-ghosting-Resistance/dp/B0D17C3ZVJ/ref=sr_1_34?crid=JNWVFEINKIBP&dib=eyJ2IjoiMSJ9.ZnlXd6ET439c0gTx4lvgQSPUXcT2rhKGPAj1Z5LqXmdfbcgkRyEkmkE3Og96qGj4NwkouI2G3xEIA8cOkumRNl5S_VaVEK7cndaGZFZmC6VPjnwP0JpyU5q_GDg96kv4XpYZUsqgdvaMM0Q-RAiRd4eGJqPb6rbvJ-l3IeMTZ6MIC9X7d69eNGLP2IISpQygL0GHkD100GLkhS6gctDac84uo5pIWzQBsDCPpyYTRoY.llpR3-eH56lqoH7JxDkwBPZreAcdECfhdFoQh41ZiXU&dib_tag=se&keywords=Corsair+gaming+keyboard&qid=1777130540&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Corsair%2Bgaming%2Bkeyboard%2Caps%2C252&sr=8-34&xpid=oDHeVbDFLzRGi&tag=tiereduptech-20", "price":29.64, "inStock":true}},
     "wireless": false,
-    "rgb": true
+    "rgb": true,
+    "switches": "Membrane",
+    "layout": "Full-Size"
   },
   {
     "id": 100014,
@@ -113144,7 +113241,8 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/AULA-F99-Mechanical-Bluetooth-Swappable/dp/B0CLLHSWRL/ref=sr_1_51?crid=KC6LNSTXHYKJ&dib=eyJ2IjoiMSJ9.dmOAVnqj6Bhvg-OqwfgNQjqBiuc1RZKd2j2vYxf0X5cGVe29qnvDpHJCQaWFdWOH6mt_llAUHnhH_ssVHboiZIlaVujO1BmJTpW-qrPCIHVNaap73dOTic2xutAYnLzUbTSUnt9ZKShcR2Kp56QIrEYHSkGlxTG2iZ_-OtXaYdtFrpfIDxe9JZTxVUjivoGfKWcn2Sp9U8xmIzlYIJbLQEnrpveECqh8h6CxcFkJFuU.nS6DMsDPQWkLB5BgjNo-460k6ItNaWynw5FGqKI5mu0&dib_tag=se&keywords=Akko+mechanical+keyboard&qid=1777130543&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Akko%2Bmechanical%2Bkeyboard%2Caps%2C168&sr=8-51&xpid=ysL7eZLbmv__z&tag=tiereduptech-20", "price":63.99, "inStock":true}},
     "switches": "Mechanical",
     "wireless": true,
-    "rgb": true
+    "rgb": true,
+    "layout": "96%"
   },
   {
     "id": 100015,
@@ -113157,7 +113255,9 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Programmable-Backlighting-Bluetooth-Rechargeable/dp/B0BKW3LB2B/ref=sr_1_46?crid=LTHVBQQV3BE4&dib=eyJ2IjoiMSJ9.n02N0zYkT9OteeyUMXGVGzKMLA6xaOh79fJ6mcQnMCM14mv3ljAiYeW8BZ58QGjNdXUTEvuPA8GbImKkPGq2DiWO2HCGczZge2IKMy6UryqSDqCJPjm-MJLWlOMdAllVjOgmaUp5ehmKI-JiNUzGgBIKyDDRmwd2zkIxRD43ucoP7n2BNfdeWrK3VGHwelIUHp_jBytnQgDTf2fMEa8yQVr3SvD_cEsotT9SRIiOQYE.9BATgBBQcwgJKDQOos9eXxn083NkCpK2RudrFHOtc-8&dib_tag=se&keywords=Logitech+G+Pro+keyboard&qid=1777130549&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BG%2BPro%2Bkeyboard%2Caps%2C235&sr=8-46&xpid=JiuqtNNk0gdMZ&tag=tiereduptech-20", "price":119.99, "inStock":true}},
     "wireless": true,
-    "rgb": true
+    "rgb": true,
+    "switches": "Scissor",
+    "layout": "Full-Size"
   },
   {
     "id": 100016,
@@ -113186,7 +113286,8 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Full-Size-Mechanical-Anti-Ghosting-Keys-White/dp/B08Z6X4NK3/ref=sr_1_33?crid=NWATW8520JZY&dib=eyJ2IjoiMSJ9.Z4E9CupUwJYFSbQ7zH3ab0A0okhAI_nkR9cE9cvthVXjyHfQdNG2jzrbzLdps46j3K030ciBtBYvdtoWiKS0vDRQbpYRnoMhKGju7W5jPHLoJSZSLsK7vxX0IGSNuX_c19OFdLPZB9IG7GX-7vJu82pQJUuzhgOv1PN10tuJn1Bsp0M_DuOqYwn7hkeKnxR8GAUugtyczQTZCZTN8KAxzQyDtLDMsN8tTwpWk1dXrxY.3uo0c2DRIVyRdgfFCAKBpMyKkoiIMEG4j_oUcRBAo9A&dib_tag=se&keywords=Razer+BlackWidow&qid=1777130538&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BBlackWidow%2Caps%2C198&sr=8-33&xpid=4GrddsFPi_Po6&tag=tiereduptech-20", "price":79.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6493152&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6493152.p%3FskuId%3D6493152", "price": 69.99, "inStock": false}},
     "switches": "Mechanical",
     "layout": "Full-Size",
-    "rgb": true
+    "rgb": true,
+    "wireless": false
   },
   {
     "id": 100018,
@@ -113215,7 +113316,8 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Redragon-K552-RGB-Mechanical-Keyboard-Construction/dp/B019O9BLVY/ref=sr_1_16?crid=OPT91HLYF34O&dib=eyJ2IjoiMSJ9.1PNtdznOJW6bwyOq65lPJlvrchECPTbSsv6I-W8wv88EWHmlDetmNdackOc7GNjICDZMWkv41KvsxBmYhteTXuDDmQNuPHzJP43Jhe3I3fqMo6WTpU_AQhj6cIkFtvHTxLaiu4KP3z-VVuGEU1DnDp3DkGkP9uZ3qIZ__jM44SoeR2E4xWKKpy6Hrnj6Uqhq6We_3oUAXxSMmEw-XIKhLe2byh-hExxl0qEHV9OCpOc.KQGxx5voJ2YZLEhgSPIphxpzgX1G93MEWfMtxMU0ook&dib_tag=se&keywords=TKL+gaming+keyboard&qid=1777130537&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=TKL%2Bgaming%2Bkeyboard%2Caps%2C114&sr=8-16&tag=tiereduptech-20", "price":40.99, "inStock":true}},
     "switches": "Red",
     "layout": "TKL",
-    "rgb": true
+    "rgb": true,
+    "wireless": false
   },
   {
     "id": 100020,
@@ -113227,7 +113329,10 @@ export const PARTS = [
     "msrp": 34,
     "r": 4.3,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Multi-Device-Bluetooth-Customizable-Easy-Switch/dp/B0BT4DP7SC/ref=sr_1_43?crid=LTHVBQQV3BE4&dib=eyJ2IjoiMSJ9.n02N0zYkT9OteeyUMXGVGzKMLA6xaOh79fJ6mcQnMCM14mv3ljAiYeW8BZ58QGjNdXUTEvuPA8GbImKkPGq2DiWO2HCGczZge2IKMy6UryqSDqCJPjm-MJLWlOMdAllVjOgmaUp5ehmKI-JiNUzGgBIKyDDRmwd2zkIxRD43ucoP7n2BNfdeWrK3VGHwelIUHp_jBytnQgDTf2fMEa8yQVr3SvD_cEsotT9SRIiOQYE.9BATgBBQcwgJKDQOos9eXxn083NkCpK2RudrFHOtc-8&dib_tag=se&keywords=Logitech+G+Pro+keyboard&qid=1777130549&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BG%2BPro%2Bkeyboard%2Caps%2C235&sr=8-43&xpid=JiuqtNNk0gdMZ&tag=tiereduptech-20", "price":33.99, "inStock":true}},
-    "wireless": true
+    "wireless": true,
+    "switches": "Scissor",
+    "layout": "Compact",
+    "rgb": false
   },
   {
     "id": 100021,
@@ -113270,7 +113375,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Redragon-K580-Mechanical-Anti-ghosting-Dedicated/dp/B07G11G2X8/ref=sr_1_31?crid=NWATW8520JZY&dib=eyJ2IjoiMSJ9.c1JkPA_gBS5vfhXn_c8j2MQQAyrvWeEinMqlEnjOeqFL5-5_tlghfbkTeIE8c-6F7DUbAUA_4N7s6DHbfP-IZHChcUD77m_-v8jNp78rTLA-Q5WsM0yuSYcpd6zKBcGLaZ3QQJz0i3XpJir5Vn0QGBzunVUWHMu1igNlWp72pU9nubZeQnWe3EmN0YlTGTLyaRp5YLQbiq0691S_u0RxHvNQDDQMN_aHq2u919fBqTc.5kPofmMgnUeiEgRuQjPw87SaOxTsfBHCPLjDXGPKG2g&dib_tag=se&keywords=Razer+BlackWidow&qid=1777130537&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BBlackWidow%2Caps%2C198&sr=8-31&xpid=4GrddsFPi_Po6&tag=tiereduptech-20", "price":51.99, "inStock":true}},
     "switches": "Blue",
-    "rgb": true
+    "rgb": true,
+    "layout": "Full-Size",
+    "wireless": false
   },
   {
     "id": 100024,
@@ -113283,7 +113390,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo3NDk0NTc5NDA5MDE4ODg1OjE3NzcxMzA1NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTE3MzMxNDg1NDUwMjo6Mjo6&url=%2FRedragon-S107KS-Wireless-Lightweight-Anti-Ghosting%2Fdp%2FB0FDVZ5X38%2Fref%3Dsxin_34_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3D0KPP2ZUHHNW7%26cv_ct_cx%3DSteelSeries%2BApex%26keywords%3DSteelSeries%2BApex%26pd_rd_i%3DB0FDVZ5X38%26pd_rd_r%3D96835ff9-4849-4118-a91b-331c4f8f5387%26pd_rd_w%3DVutEy%26pd_rd_wg%3DY6Rtc%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3DKQ7CWW05QBQFWRTJ6GSR%26qid%3D1777130544%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DSteelSeries%252BApex%252Caps%252C242%26sr%3D1-19-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DyoLZoFkWW7hUz%26aref%3D9rSWFW0GKU%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=9rSWFW0GKU&tag=tiereduptech-20", "price":54.99, "inStock":true}},
     "wireless": true,
-    "rgb": true
+    "rgb": true,
+    "switches": "Membrane",
+    "layout": "Full-Size"
   },
   {
     "id": 100025,
@@ -113296,7 +113405,9 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"amazon":{"url":"https://www.amazon.com/HyperX-Alloy-Origins-Software-Controlled-Customization/dp/B07W86N3JV/ref=sr_1_34?crid=IECTQX0KV58K&dib=eyJ2IjoiMSJ9.Pmv6G16ADNkaGFITQwoATplgO8Y8weCRCPp6Hjo_ItouXLaB_6CL9bZCzbpCPQFfff73ZxfsJYwhcD5MAK8fUy58EfnY3TJN72OKq8jALHVAtYxQ7Enm4aW2as8xdNBvShp8lPe4y7j_zrA3QJCU6TyO6WlAfB8cpQuQFn6S-u9bEtlrvfTsTgkMlwhwm1UoEYTdKxrctiLl1DuEJW2UzKLLG4PJ7v2j5SCEbuqFjIw.sX-hK-Xmp1THThXXwrq7el4cBpyYN3DwMENrDcjJSWA&dib_tag=se&keywords=Corsair+K100&qid=1777130542&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Corsair%2BK100%2Caps%2C293&sr=8-34&xpid=MvQqCBU8zN0F5&tag=tiereduptech-20", "price":99.99, "inStock":true}},
     "switches": "Red",
-    "rgb": true
+    "rgb": true,
+    "layout": "Full-Size",
+    "wireless": false
   },
   {
     "id": 100026,
@@ -113309,7 +113420,9 @@ export const PARTS = [
     "r": 4.3,
     "deals": {"amazon":{"url":"https://www.amazon.com/AULA-S99-Keyboards-Bluetooth-Programmable/dp/B0DZ28ZGYL/ref=sr_1_28?crid=W0NK5MYVXHRC&dib=eyJ2IjoiMSJ9.nYVXCEKoFwtTjY9vdP2ji1Tn6wXoT-OT8vvxpEUstvFtAdTb_OzmJgBdqwwEg2VzetplHVrokauaMJvMugShTyVjBV9Zg-AmgwAM5k9qCR0vHpV_EUQd0YzEMpGCi3hRCTPzN3LBMgbPe4SYb6hXuCwMz2SjEhgNPD6BRSmn9q09xBJfF6_Q1I_pHzEAhnTuAVc6QscRrK9p1cfKva8lEZ3OcLQiwfo8cATp4XLcAqw.x8DmG30XYnBgDmAZ-RbMAqWnXIQ1K0bQdbsnerbXLVo&dib_tag=se&keywords=wireless+mechanical+keyboard&qid=1777130543&sprefix=wireless%2Bmechanical%2Bkeyboard%2Caps%2C205&sr=8-28&xpid=cd22n35wlsYjo&tag=tiereduptech-20", "price":27.99, "inStock":true}},
     "wireless": true,
-    "rgb": true
+    "rgb": true,
+    "switches": "Mechanical",
+    "layout": "Full-Size"
   },
   {
     "id": 100027,
@@ -113322,7 +113435,9 @@ export const PARTS = [
     "r": 4.3,
     "deals": {"amazon":{"url":"https://www.amazon.com/AULA-Keyboard-Wireless-Bluetooth-Keyboards/dp/B0F8VYDRDP/ref=sr_1_40?crid=W0NK5MYVXHRC&dib=eyJ2IjoiMSJ9.9CyxWY6Qnp0fjfcCXVjEaDFJWjIX-xwV5OWmkCdU1gxVEQXV4wyp4o0NjYjLDG2BYEB4lyo0n6AeYlaFPGz8o2V84zisZtz1xob3OwwcIcx-FU4ow3KKWqrwoIOrnYeFTmd8E102t9Q0A322dXTFRjQvG3Xw4pNYEehcIjmrYUhw0X7ZcMtokxerBRddgjlgtCssJQkVoyAuGFTfMPyjKCQtpkJlzdIdHyMxgYbduHk.ChBUyo_-tUF3p9yGMEohjsQHZDLHfyywBAV_l92nzpE&dib_tag=se&keywords=wireless+mechanical+keyboard&qid=1777130546&sprefix=wireless%2Bmechanical%2Bkeyboard%2Caps%2C205&sr=8-40&xpid=cd22n35wlsYjo&tag=tiereduptech-20", "price":27.99, "inStock":true}},
     "wireless": true,
-    "rgb": true
+    "rgb": true,
+    "switches": "Mechanical",
+    "layout": "Full-Size"
   },
   {
     "id": 100028,
@@ -113348,7 +113463,11 @@ export const PARTS = [
     "pr": 159,
     "msrp": 159,
     "r": 4.7,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Audio-Technica-ATH-M50x-Professional-Monitor-Headphones/dp/B00HVLUR86/ref=sr_1_4?crid=BX0L4LEA8PCY&dib=eyJ2IjoiMSJ9.sHW_aInsNKx0gs5U3m6kcovrABKWohtxmUAm7wkCpuhUw5auNE6-C-CspxddVcgjNK5ObYesAiRow9tgytVWpvb0oiQDQXz1E9B3MqePay9f3TL967pvIpjIHoZY2q4JQ-BLdW2DsAx6IXt_-4ek99JwnZh8dq_ULBE7n1JcRPJ9L6YU_x5v9yOLfrW1Kilvn8Tnc8VgOuUfkDyDKyKtzAB09HwrDDF08EG0FLl_6CM.hEeQidgB95L6qCUNKjT3fozBKQFlraCke_Q7A-rdybU&dib_tag=se&keywords=Audio-Technica+gaming&qid=1777130635&sprefix=AudioTechnica%2Bgaming%2Caps%2C270&sr=8-4&tag=tiereduptech-20", "price":159, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Audio-Technica-ATH-M50x-Professional-Monitor-Headphones/dp/B00HVLUR86/ref=sr_1_4?crid=BX0L4LEA8PCY&dib=eyJ2IjoiMSJ9.sHW_aInsNKx0gs5U3m6kcovrABKWohtxmUAm7wkCpuhUw5auNE6-C-CspxddVcgjNK5ObYesAiRow9tgytVWpvb0oiQDQXz1E9B3MqePay9f3TL967pvIpjIHoZY2q4JQ-BLdW2DsAx6IXt_-4ek99JwnZh8dq_ULBE7n1JcRPJ9L6YU_x5v9yOLfrW1Kilvn8Tnc8VgOuUfkDyDKyKtzAB09HwrDDF08EG0FLl_6CM.hEeQidgB95L6qCUNKjT3fozBKQFlraCke_Q7A-rdybU&dib_tag=se&keywords=Audio-Technica+gaming&qid=1777130635&sprefix=AudioTechnica%2Bgaming%2Caps%2C270&sr=8-4&tag=tiereduptech-20", "price":159, "inStock":true}},
+    "hsType": "Wired",
+    "driver": 45,
+    "mic": false,
+    "anc": false
   },
   {
     "id": 100030,
@@ -113361,7 +113480,7 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-BlackShark-V2-Gaming-Headset/dp/B086PKMZ21/ref=sr_1_3?crid=FK4L8RI5UBE6&dib=eyJ2IjoiMSJ9.2_GIWV0Rvm4YTK9_2SsAM5c_hAiaPjNBYetnCde6A7Cuwrnjk2l6Q1DVRn88J0Xx6-O3k6FjDsigD0cM1CwvmmJr56lDC9NoUKUzKoGvhq-v3E59veqD-j7IBRxo5Gs5WTsUZw__mLsdZW2rRSWlEcfb4pcexC4z9rWhneP2WcRMGm9S80oLlqN-Z9xgrjhhZpXuHKvPAeGtfi7k1f7lk72lLZLFQflfUbpw7grw-V8.a3asCWSi72Ngyj4aNWkT5Y9NJ3xwlVuXo3lDSn-jFLM&dib_tag=se&keywords=wired+gaming+headset&qid=1777130640&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=wired%2Bgaming%2Bheadset%2Caps%2C283&sr=8-3&tag=tiereduptech-20", "price":34.99, "inStock":true}},
     "hsType": "Wired",
-    "driver": "50mm"
+    "driver": 50
   },
   {
     "id": 100031,
@@ -113374,7 +113493,7 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/HyperX-Cloud-III-Ultra-Clear-USB/dp/B0C3BV19Q3/ref=sr_1_3?crid=X2H1PUODU33K&dib=eyJ2IjoiMSJ9.QlnEyOblOaj_8FmCq-5jt6b01-gVuD4OP3nyU61-2ugp2WrNckdtBRyeHbFS5hWOmj2LP9N45NbES3iooyAoQhtIWvMuUALbWKpbP1U_N4Ep7LrvD8tL8Qzrj5z8wa_LsWejzN_sbmTHZ9F5KSJCcPaDhHFb8mA5BniY1XevHv4h1jufVQfQs9kHGP9XgGk7GHHd3rXE1HEbWj4jtsikARkArIALLkFvKQChEJztBsA.M74g909CM6hHk8osJn29lx5VEL2H2OCBPEcXogkcxWE&dib_tag=se&keywords=HyperX+Cloud+III&qid=1777130634&sprefix=HyperX%2BCloud%2BIII%2Caps%2C215&sr=8-3&tag=tiereduptech-20", "price":57.99, "inStock":true}},
     "hsType": "Wired",
-    "driver": "53mm",
+    "driver": 53,
     "mic": true
   },
   {
@@ -113388,7 +113507,9 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Turtle-Stealth-Wireless-Amplified-Headset-Nintendo/dp/B0CYWJJLBY/ref=sr_1_4?crid=MRVPSPTMXZV3&dib=eyJ2IjoiMSJ9.TGUcBFudkT26JpacVPP_qkh5IVdVYiy_Un7lqOx9ARf5ig5CPmtbtiGU-56-2992NPuNC0lDV9lezPZxKomcgHI3t1jGsZCc7jzw3fBa4nlu3TKRoqDjL28bU-70FhukaFDWlXga7v95I_BIIzF2h6IUu9Ssca7C7p0FgBG5LZ5_v9Enjz46FuHhAHLYpWnj3DWfJd8fCKhWLxclkEA_wFV22CFbgJx4XLRtSuHTWsU.ozAVXeiJ7pf-DjIrsg255D0lvCOFz9IzljDQfstezgg&dib_tag=se&keywords=wireless+gaming+headset&qid=1777130635&sprefix=wireless%2Bgaming%2Bheadset%2Caps%2C130&sr=8-4&tag=tiereduptech-20", "price":69.86, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577935&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577935.p%3FskuId%3D6577935", "price": 69.99, "inStock": true}},
     "hsType": "Wireless",
-    "mic": true
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100033,
@@ -113400,7 +113521,10 @@ export const PARTS = [
     "msrp": 180,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/beyerdynamic-770-PRO-Studio-Headphone/dp/B0016MNAAI/ref=sr_1_5?crid=0EJ114Y2XYJW&dib=eyJ2IjoiMSJ9.-LGc1vqFEO4JA4ZWxUxh0uO04Se51BakSANSsNwaz8jz8_LhNoWFIsJfZ0TotbHXrNMGbcS2d2XF_TA_CtwkGbQ8jgvIkFlLr6nf1dlgepSOmAusT5MvcjRYR5CjtiwLK_bOGDxvuO3vuQ65ttP11BGbbMY3BfEFdgUVITrBHq-YEUXegCAm4Vahz-OtIThXlYDitz_oyH9hwdWL5XVCHiO1ldKdBszyBsbMkfYXwRrwOiRij-e_3IpsnC2HyNnXiRM5MiYlHg4TfRcdFOOuexU9oC33wl3WjUuiFmiqo1A.l_EHhYOXS9wTcG_nnyba4jB1gLOmWiUJyvxP2ig9AGM&dib_tag=se&keywords=Beyerdynamic+DT+770&qid=1777130638&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Beyerdynamic%2BDT%2B770%2Caps%2C168&sr=8-5&tag=tiereduptech-20", "price":179.99, "inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "driver": 45,
+    "mic": false,
+    "anc": false
   },
   {
     "id": 100034,
@@ -113411,7 +113535,11 @@ export const PARTS = [
     "pr": 109,
     "msrp": 109,
     "r": 4.7,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Sony-MDR7506-Professional-Diaphragm-Headphone/dp/B000AJIF4E/ref=sr_1_31?crid=0EJ114Y2XYJW&dib=eyJ2IjoiMSJ9.-LGc1vqFEO4JA4ZWxUxh0uO04Se51BakSANSsNwaz8jz8_LhNoWFIsJfZ0TotbHXrNMGbcS2d2XF_TA_CtwkGbQ8jgvIkFlLr6nf1dlgepSOmAusT5MvcjRYR5CjtiwLK_bOGDxvuO3vuQ65ttP11BGbbMY3BfEFdgUVITrBHq-YEUXegCAm4Vahz-OtIThXlYDitz_oyH9hwdWL5XVCHiO1ldKdBszyBsbMkfYXwRrwOiRij-e_3IpsnC2HyNnXiRM5MiYlHg4TfRcdFOOuexU9oC33wl3WjUuiFmiqo1A.l_EHhYOXS9wTcG_nnyba4jB1gLOmWiUJyvxP2ig9AGM&dib_tag=se&keywords=Beyerdynamic+DT+770&qid=1777130638&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Beyerdynamic%2BDT%2B770%2Caps%2C168&sr=8-31&tag=tiereduptech-20", "price":109, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Sony-MDR7506-Professional-Diaphragm-Headphone/dp/B000AJIF4E/ref=sr_1_31?crid=0EJ114Y2XYJW&dib=eyJ2IjoiMSJ9.-LGc1vqFEO4JA4ZWxUxh0uO04Se51BakSANSsNwaz8jz8_LhNoWFIsJfZ0TotbHXrNMGbcS2d2XF_TA_CtwkGbQ8jgvIkFlLr6nf1dlgepSOmAusT5MvcjRYR5CjtiwLK_bOGDxvuO3vuQ65ttP11BGbbMY3BfEFdgUVITrBHq-YEUXegCAm4Vahz-OtIThXlYDitz_oyH9hwdWL5XVCHiO1ldKdBszyBsbMkfYXwRrwOiRij-e_3IpsnC2HyNnXiRM5MiYlHg4TfRcdFOOuexU9oC33wl3WjUuiFmiqo1A.l_EHhYOXS9wTcG_nnyba4jB1gLOmWiUJyvxP2ig9AGM&dib_tag=se&keywords=Beyerdynamic+DT+770&qid=1777130638&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Beyerdynamic%2BDT%2B770%2Caps%2C168&sr=8-31&tag=tiereduptech-20", "price":109, "inStock":true}},
+    "hsType": "Wired",
+    "driver": 40,
+    "mic": false,
+    "anc": false
   },
   {
     "id": 100035,
@@ -113422,7 +113550,11 @@ export const PARTS = [
     "pr": 60,
     "msrp": 60,
     "r": 4.5,
-    "deals": {"amazon":{"url":"https://www.amazon.com/HyperX-Cloud-Gaming-Headset-KHX-HSCP-RD/dp/B00SAYCXWG/ref=sr_1_39?crid=GS25T10JQ3MC&dib=eyJ2IjoiMSJ9.lj-mOBnkc0mqMiZvd7MH2AdFIgtxslP0Ii9WJjZpr6ToFiRVu5i58h6i1VlLRAdrVTaYNBAFiRvGd3_QQIDIsDbUD0Ktl4jkiaCUYreNN1MTnmU2cJWJZKXdOyZPGs--2fkQDCkbrPWH4NFfR5sWpvVa7BF3n1gAFwJSbnfLAL91msRl788gfAVTqIRkBe5nSeL3P4Xr_FuB7qbuyZn7ZwZsXfpvE-FfVgvQkazHh_o._HwlrRPCoVH43P_tWHUrGFsvlrjeIv1OPMRFRmOKflc&dib_tag=se&keywords=SteelSeries+Arctis+Nova&qid=1777130636&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BArctis%2BNova%2Caps%2C159&sr=8-39&xpid=dGYW4tMVhPqrI&tag=tiereduptech-20", "price":59.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581664&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6581664.p%3FskuId%3D6581664", "price": 119.99, "inStock": true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/HyperX-Cloud-Gaming-Headset-KHX-HSCP-RD/dp/B00SAYCXWG/ref=sr_1_39?crid=GS25T10JQ3MC&dib=eyJ2IjoiMSJ9.lj-mOBnkc0mqMiZvd7MH2AdFIgtxslP0Ii9WJjZpr6ToFiRVu5i58h6i1VlLRAdrVTaYNBAFiRvGd3_QQIDIsDbUD0Ktl4jkiaCUYreNN1MTnmU2cJWJZKXdOyZPGs--2fkQDCkbrPWH4NFfR5sWpvVa7BF3n1gAFwJSbnfLAL91msRl788gfAVTqIRkBe5nSeL3P4Xr_FuB7qbuyZn7ZwZsXfpvE-FfVgvQkazHh_o._HwlrRPCoVH43P_tWHUrGFsvlrjeIv1OPMRFRmOKflc&dib_tag=se&keywords=SteelSeries+Arctis+Nova&qid=1777130636&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BArctis%2BNova%2Caps%2C159&sr=8-39&xpid=dGYW4tMVhPqrI&tag=tiereduptech-20", "price":59.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581664&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6581664.p%3FskuId%3D6581664", "price": 119.99, "inStock": true}},
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 53,
+    "anc": false
   },
   {
     "id": 100036,
@@ -113433,7 +113565,11 @@ export const PARTS = [
     "pr": 58,
     "msrp": 58,
     "r": 4.6,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Audio-Technica-ATH-M20x-Professional-Monitor-Headphones/dp/B00HVLUR18/ref=sr_1_5?crid=BX0L4LEA8PCY&dib=eyJ2IjoiMSJ9.sHW_aInsNKx0gs5U3m6kcovrABKWohtxmUAm7wkCpuhUw5auNE6-C-CspxddVcgjNK5ObYesAiRow9tgytVWpvb0oiQDQXz1E9B3MqePay9f3TL967pvIpjIHoZY2q4JQ-BLdW2DsAx6IXt_-4ek99JwnZh8dq_ULBE7n1JcRPJ9L6YU_x5v9yOLfrW1Kilvn8Tnc8VgOuUfkDyDKyKtzAB09HwrDDF08EG0FLl_6CM.hEeQidgB95L6qCUNKjT3fozBKQFlraCke_Q7A-rdybU&dib_tag=se&keywords=Audio-Technica+gaming&qid=1777130635&sprefix=AudioTechnica%2Bgaming%2Caps%2C270&sr=8-5&tag=tiereduptech-20", "price":58, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Audio-Technica-ATH-M20x-Professional-Monitor-Headphones/dp/B00HVLUR18/ref=sr_1_5?crid=BX0L4LEA8PCY&dib=eyJ2IjoiMSJ9.sHW_aInsNKx0gs5U3m6kcovrABKWohtxmUAm7wkCpuhUw5auNE6-C-CspxddVcgjNK5ObYesAiRow9tgytVWpvb0oiQDQXz1E9B3MqePay9f3TL967pvIpjIHoZY2q4JQ-BLdW2DsAx6IXt_-4ek99JwnZh8dq_ULBE7n1JcRPJ9L6YU_x5v9yOLfrW1Kilvn8Tnc8VgOuUfkDyDKyKtzAB09HwrDDF08EG0FLl_6CM.hEeQidgB95L6qCUNKjT3fozBKQFlraCke_Q7A-rdybU&dib_tag=se&keywords=Audio-Technica+gaming&qid=1777130635&sprefix=AudioTechnica%2Bgaming%2Caps%2C270&sr=8-5&tag=tiereduptech-20", "price":58, "inStock":true}},
+    "hsType": "Wired",
+    "driver": 40,
+    "mic": false,
+    "anc": false
   },
   {
     "id": 100037,
@@ -113446,7 +113582,7 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-BlackShark-V2-Gaming-Headset/dp/B09PZG4R17/ref=sr_1_9?crid=CED7P2DJKA98&dib=eyJ2IjoiMSJ9.x0ppXXru9LXp0mrY-SbYVItpjpE02VLyR0PE9na1CPdwwgCEr45BASxsnO8_r4mO7YUrod8RlfmBiARIoh5hZ9qk6dG5GlsAGvvwWCBoWNfRV3CkbNkcl5ldJr-3SoohXqHFWHkSxerCYz6SkeZB4fp_HMaGuQ2oKoE54XmvKRhtXV02Wh2KbJj0JJwPlQp9IC1LJlRusNn_UFGpqhdZSAWVTVUtchOtSPsRtlbKNJ4.O8MLT6onGo_frPL58BRLWqGep_2h_apSsI2EICztsQg&dib_tag=se&keywords=Razer+Kraken&qid=1777130639&sprefix=Razer%2BKraken%2Caps%2C269&sr=8-9&tag=tiereduptech-20", "price":34.99, "inStock":true}},
     "hsType": "Wired",
-    "driver": "50mm"
+    "driver": 50
   },
   {
     "id": 100038,
@@ -113459,7 +113595,7 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-BlackShark-Xbox-Gaming-Headset-Console/dp/B0CXGTGPZQ/ref=sr_1_14?crid=FK4L8RI5UBE6&dib=eyJ2IjoiMSJ9.2_GIWV0Rvm4YTK9_2SsAM5c_hAiaPjNBYetnCde6A7Cuwrnjk2l6Q1DVRn88J0Xx6-O3k6FjDsigD0cM1CwvmmJr56lDC9NoUKUzKoGvhq-v3E59veqD-j7IBRxo5Gs5WTsUZw__mLsdZW2rRSWlEcfb4pcexC4z9rWhneP2WcRMGm9S80oLlqN-Z9xgrjhhZpXuHKvPAeGtfi7k1f7lk72lLZLFQflfUbpw7grw-V8.a3asCWSi72Ngyj4aNWkT5Y9NJ3xwlVuXo3lDSn-jFLM&dib_tag=se&keywords=wired+gaming+headset&qid=1777130640&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=wired%2Bgaming%2Bheadset%2Caps%2C283&sr=8-14&tag=tiereduptech-20", "price":34.99, "inStock":true}},
     "hsType": "Wired",
-    "driver": "50mm",
+    "driver": 50,
     "mic": true
   },
   {
@@ -113472,7 +113608,10 @@ export const PARTS = [
     "msrp": 33,
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/OneOdio-Hi-Res-Studio-Recording-Headphones/dp/B09D3MFSGJ/ref=sr_1_34?crid=0EJ114Y2XYJW&dib=eyJ2IjoiMSJ9.-LGc1vqFEO4JA4ZWxUxh0uO04Se51BakSANSsNwaz8jz8_LhNoWFIsJfZ0TotbHXrNMGbcS2d2XF_TA_CtwkGbQ8jgvIkFlLr6nf1dlgepSOmAusT5MvcjRYR5CjtiwLK_bOGDxvuO3vuQ65ttP11BGbbMY3BfEFdgUVITrBHq-YEUXegCAm4Vahz-OtIThXlYDitz_oyH9hwdWL5XVCHiO1ldKdBszyBsbMkfYXwRrwOiRij-e_3IpsnC2HyNnXiRM5MiYlHg4TfRcdFOOuexU9oC33wl3WjUuiFmiqo1A.l_EHhYOXS9wTcG_nnyba4jB1gLOmWiUJyvxP2ig9AGM&dib_tag=se&keywords=Beyerdynamic+DT+770&qid=1777130638&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Beyerdynamic%2BDT%2B770%2Caps%2C168&sr=8-34&tag=tiereduptech-20", "price":32.99, "inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "driver": 40,
+    "mic": false,
+    "anc": false
   },
   {
     "id": 100040,
@@ -113485,7 +113624,9 @@ export const PARTS = [
     "r": 4.3,
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-Arctis-Wireless-Multi-System-Headset/dp/B0D2YBQQ1P/ref=sr_1_1?crid=GS25T10JQ3MC&dib=eyJ2IjoiMSJ9.WRKE3IyT6v2qtlAMe5TyB_-sW3n2XVvzgdAqFYEWqSZa46eBdgFw4PDxkRJk_BEW44mdP5dmirvzQsUeb4od6TN27HO1mzQ3Oab_L5gE2ouGE8mElI1wA80nkqs2v0wlw-XldnSjOS5C5BtyMHUm2EnPxjQXgo3yRZxPCHvvHdz2jBmJbpalufpeprggUSWzOz9GBKCwKSHQM23amyKa6gsvgucSrCQIH6eFCfxS-Gg.FwYETcav_aQjr1-ar8wZx-hIxW5ek9iPQ7yWLlgLmWA&dib_tag=se&keywords=SteelSeries+Arctis+Nova&qid=1777130634&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BArctis%2BNova%2Caps%2C159&sr=8-1&tag=tiereduptech-20", "price":129.99, "inStock":true}},
     "hsType": "Wireless",
-    "mic": true
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100041,
@@ -113498,7 +113639,9 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Wireless-Headset-Black-Tico/dp/B081415GCS/ref=sr_1_38?crid=GS25T10JQ3MC&dib=eyJ2IjoiMSJ9.lj-mOBnkc0mqMiZvd7MH2AdFIgtxslP0Ii9WJjZpr6ToFiRVu5i58h6i1VlLRAdrVTaYNBAFiRvGd3_QQIDIsDbUD0Ktl4jkiaCUYreNN1MTnmU2cJWJZKXdOyZPGs--2fkQDCkbrPWH4NFfR5sWpvVa7BF3n1gAFwJSbnfLAL91msRl788gfAVTqIRkBe5nSeL3P4Xr_FuB7qbuyZn7ZwZsXfpvE-FfVgvQkazHh_o._HwlrRPCoVH43P_tWHUrGFsvlrjeIv1OPMRFRmOKflc&dib_tag=se&keywords=SteelSeries+Arctis+Nova&qid=1777130636&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BArctis%2BNova%2Caps%2C159&sr=8-38&xpid=dGYW4tMVhPqrI&tag=tiereduptech-20", "price":118.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6420856&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6420856.p%3FskuId%3D6420856", "price": 119.99, "inStock": true}},
     "hsType": "Wireless",
-    "mic": true
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100042,
@@ -113511,7 +113654,7 @@ export const PARTS = [
     "r": 4.2,
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Kraken-Wired-Gaming-Headset/dp/B0BSJYM8FF/ref=sr_1_1?crid=CED7P2DJKA98&dib=eyJ2IjoiMSJ9.x0ppXXru9LXp0mrY-SbYVItpjpE02VLyR0PE9na1CPdwwgCEr45BASxsnO8_r4mO7YUrod8RlfmBiARIoh5hZ9qk6dG5GlsAGvvwWCBoWNfRV3CkbNkcl5ldJr-3SoohXqHFWHkSxerCYz6SkeZB4fp_HMaGuQ2oKoE54XmvKRhtXV02Wh2KbJj0JJwPlQp9IC1LJlRusNn_UFGpqhdZSAWVTVUtchOtSPsRtlbKNJ4.O8MLT6onGo_frPL58BRLWqGep_2h_apSsI2EICztsQg&dib_tag=se&keywords=Razer+Kraken&qid=1777130639&sprefix=Razer%2BKraken%2Caps%2C269&sr=8-1&tag=tiereduptech-20", "price":49.98, "inStock":true}},
     "hsType": "USB",
-    "driver": "40mm",
+    "driver": 40,
     "mic": true
   },
   {
@@ -113523,7 +113666,11 @@ export const PARTS = [
     "pr": 79,
     "msrp": 79,
     "r": 4.6,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Audio-Technica-ATH-M30x-Professional-Monitor-Headphones/dp/B00HVLUQW8/ref=sr_1_14?crid=BX0L4LEA8PCY&dib=eyJ2IjoiMSJ9.sHW_aInsNKx0gs5U3m6kcovrABKWohtxmUAm7wkCpuhUw5auNE6-C-CspxddVcgjNK5ObYesAiRow9tgytVWpvb0oiQDQXz1E9B3MqePay9f3TL967pvIpjIHoZY2q4JQ-BLdW2DsAx6IXt_-4ek99JwnZh8dq_ULBE7n1JcRPJ9L6YU_x5v9yOLfrW1Kilvn8Tnc8VgOuUfkDyDKyKtzAB09HwrDDF08EG0FLl_6CM.hEeQidgB95L6qCUNKjT3fozBKQFlraCke_Q7A-rdybU&dib_tag=se&keywords=Audio-Technica+gaming&qid=1777130635&sprefix=AudioTechnica%2Bgaming%2Caps%2C270&sr=8-14&tag=tiereduptech-20", "price":79, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Audio-Technica-ATH-M30x-Professional-Monitor-Headphones/dp/B00HVLUQW8/ref=sr_1_14?crid=BX0L4LEA8PCY&dib=eyJ2IjoiMSJ9.sHW_aInsNKx0gs5U3m6kcovrABKWohtxmUAm7wkCpuhUw5auNE6-C-CspxddVcgjNK5ObYesAiRow9tgytVWpvb0oiQDQXz1E9B3MqePay9f3TL967pvIpjIHoZY2q4JQ-BLdW2DsAx6IXt_-4ek99JwnZh8dq_ULBE7n1JcRPJ9L6YU_x5v9yOLfrW1Kilvn8Tnc8VgOuUfkDyDKyKtzAB09HwrDDF08EG0FLl_6CM.hEeQidgB95L6qCUNKjT3fozBKQFlraCke_Q7A-rdybU&dib_tag=se&keywords=Audio-Technica+gaming&qid=1777130635&sprefix=AudioTechnica%2Bgaming%2Caps%2C270&sr=8-14&tag=tiereduptech-20", "price":79, "inStock":true}},
+    "hsType": "Wired",
+    "driver": 40,
+    "mic": false,
+    "anc": false
   },
   {
     "id": 100044,
@@ -113535,7 +113682,10 @@ export const PARTS = [
     "msrp": 45,
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/HyperX-Official-Compatible-Detachable-Noise-Cancelling/dp/B08KS397GY/ref=sr_1_48?crid=GS25T10JQ3MC&dib=eyJ2IjoiMSJ9.lj-mOBnkc0mqMiZvd7MH2AdFIgtxslP0Ii9WJjZpr6ToFiRVu5i58h6i1VlLRAdrVTaYNBAFiRvGd3_QQIDIsDbUD0Ktl4jkiaCUYreNN1MTnmU2cJWJZKXdOyZPGs--2fkQDCkbrPWH4NFfR5sWpvVa7BF3n1gAFwJSbnfLAL91msRl788gfAVTqIRkBe5nSeL3P4Xr_FuB7qbuyZn7ZwZsXfpvE-FfVgvQkazHh_o._HwlrRPCoVH43P_tWHUrGFsvlrjeIv1OPMRFRmOKflc&dib_tag=se&keywords=SteelSeries+Arctis+Nova&qid=1777130636&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BArctis%2BNova%2Caps%2C159&sr=8-48&xpid=dGYW4tMVhPqrI&tag=tiereduptech-20", "price":44.98, "inStock":true}},
-    "mic": true
+    "mic": true,
+    "hsType": "Wired",
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100045,
@@ -113546,7 +113696,11 @@ export const PARTS = [
     "pr": 109,
     "msrp": 109,
     "r": 4.6,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Audio-Technica-ATHM40x-Professional-Monitor-Headphones/dp/B00HVLUR54/ref=sr_1_18?crid=BX0L4LEA8PCY&dib=eyJ2IjoiMSJ9.RslzqRfs8KsvtMeYwWjXuCxTMm7_DVQEPHT0nh3N7VMoWardndnrXjKgq8LtYw2OqNtMpeyOoBeMwFH3u6RQEM9x0x5Tdvl4OCLPmeZ_f3Gr3mu1vL_TOWwRiPDIHG9uQ780lvva1j-EghD_OV0GsOXONa_LaF6BVfviOOwblQ_rIsQ3WUnFdjMN-Vi2WuSXs7iVdsn5Qpte3Wbal0Bs7sbmOKcDQL8-PgqviYYpxKI.Tf8yGbsVw58Wg_EfedeaO5w04GBLhas1eNbzUdHXtWI&dib_tag=se&keywords=Audio-Technica+gaming&qid=1777130637&sprefix=AudioTechnica%2Bgaming%2Caps%2C270&sr=8-18&xpid=psr_uwzGEhHoB&tag=tiereduptech-20", "price":109, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Audio-Technica-ATHM40x-Professional-Monitor-Headphones/dp/B00HVLUR54/ref=sr_1_18?crid=BX0L4LEA8PCY&dib=eyJ2IjoiMSJ9.RslzqRfs8KsvtMeYwWjXuCxTMm7_DVQEPHT0nh3N7VMoWardndnrXjKgq8LtYw2OqNtMpeyOoBeMwFH3u6RQEM9x0x5Tdvl4OCLPmeZ_f3Gr3mu1vL_TOWwRiPDIHG9uQ780lvva1j-EghD_OV0GsOXONa_LaF6BVfviOOwblQ_rIsQ3WUnFdjMN-Vi2WuSXs7iVdsn5Qpte3Wbal0Bs7sbmOKcDQL8-PgqviYYpxKI.Tf8yGbsVw58Wg_EfedeaO5w04GBLhas1eNbzUdHXtWI&dib_tag=se&keywords=Audio-Technica+gaming&qid=1777130637&sprefix=AudioTechnica%2Bgaming%2Caps%2C270&sr=8-18&xpid=psr_uwzGEhHoB&tag=tiereduptech-20", "price":109, "inStock":true}},
+    "hsType": "Wired",
+    "driver": 40,
+    "mic": false,
+    "anc": false
   },
   {
     "id": 100046,
@@ -113558,7 +113712,10 @@ export const PARTS = [
     "msrp": 136,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Sennheiser-HD-599-SE-Headphone/dp/B07RFNZYJZ/ref=sr_1_40?crid=0EJ114Y2XYJW&dib=eyJ2IjoiMSJ9.-LGc1vqFEO4JA4ZWxUxh0uO04Se51BakSANSsNwaz8jz8_LhNoWFIsJfZ0TotbHXrNMGbcS2d2XF_TA_CtwkGbQ8jgvIkFlLr6nf1dlgepSOmAusT5MvcjRYR5CjtiwLK_bOGDxvuO3vuQ65ttP11BGbbMY3BfEFdgUVITrBHq-YEUXegCAm4Vahz-OtIThXlYDitz_oyH9hwdWL5XVCHiO1ldKdBszyBsbMkfYXwRrwOiRij-e_3IpsnC2HyNnXiRM5MiYlHg4TfRcdFOOuexU9oC33wl3WjUuiFmiqo1A.l_EHhYOXS9wTcG_nnyba4jB1gLOmWiUJyvxP2ig9AGM&dib_tag=se&keywords=Beyerdynamic+DT+770&qid=1777130638&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Beyerdynamic%2BDT%2B770%2Caps%2C168&sr=8-40&tag=tiereduptech-20", "price":135.9, "inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "driver": 38,
+    "mic": false,
+    "anc": false
   },
   {
     "id": 100047,
@@ -113571,7 +113728,9 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/HyperX-Cloud-Stinger-Core-Noise-Cancelling/dp/B08BTHXJFN/ref=sr_1_13?crid=MRVPSPTMXZV3&dib=eyJ2IjoiMSJ9.TGUcBFudkT26JpacVPP_qkh5IVdVYiy_Un7lqOx9ARf5ig5CPmtbtiGU-56-2992NPuNC0lDV9lezPZxKomcgHI3t1jGsZCc7jzw3fBa4nlu3TKRoqDjL28bU-70FhukaFDWlXga7v95I_BIIzF2h6IUu9Ssca7C7p0FgBG5LZ5_v9Enjz46FuHhAHLYpWnj3DWfJd8fCKhWLxclkEA_wFV22CFbgJx4XLRtSuHTWsU.ozAVXeiJ7pf-DjIrsg255D0lvCOFz9IzljDQfstezgg&dib_tag=se&keywords=wireless+gaming+headset&qid=1777130635&sprefix=wireless%2Bgaming%2Bheadset%2Caps%2C130&sr=8-13&tag=tiereduptech-20", "price":39.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6557062&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6557062.p%3FskuId%3D6557062", "price": 24.99, "inStock": true}},
     "hsType": "Wireless",
-    "mic": true
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100048,
@@ -113583,7 +113742,10 @@ export const PARTS = [
     "msrp": 150,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Sennheiser-HD-Over-Audiophile-Headphones/dp/B08J9MVB6W/ref=sr_1_26?crid=0EJ114Y2XYJW&dib=eyJ2IjoiMSJ9.-LGc1vqFEO4JA4ZWxUxh0uO04Se51BakSANSsNwaz8jz8_LhNoWFIsJfZ0TotbHXrNMGbcS2d2XF_TA_CtwkGbQ8jgvIkFlLr6nf1dlgepSOmAusT5MvcjRYR5CjtiwLK_bOGDxvuO3vuQ65ttP11BGbbMY3BfEFdgUVITrBHq-YEUXegCAm4Vahz-OtIThXlYDitz_oyH9hwdWL5XVCHiO1ldKdBszyBsbMkfYXwRrwOiRij-e_3IpsnC2HyNnXiRM5MiYlHg4TfRcdFOOuexU9oC33wl3WjUuiFmiqo1A.l_EHhYOXS9wTcG_nnyba4jB1gLOmWiUJyvxP2ig9AGM&dib_tag=se&keywords=Beyerdynamic+DT+770&qid=1777130638&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Beyerdynamic%2BDT%2B770%2Caps%2C168&sr=8-26&tag=tiereduptech-20", "price":149.95, "inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "driver": 38,
+    "mic": false,
+    "anc": false
   },
   {
     "id": 100049,
@@ -113596,7 +113758,9 @@ export const PARTS = [
     "r": 4.3,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Surround-Gaming-Headset-Leatherette/dp/B07MRMHML9/ref=sr_1_10?crid=FK4L8RI5UBE6&dib=eyJ2IjoiMSJ9.2_GIWV0Rvm4YTK9_2SsAM5c_hAiaPjNBYetnCde6A7Cuwrnjk2l6Q1DVRn88J0Xx6-O3k6FjDsigD0cM1CwvmmJr56lDC9NoUKUzKoGvhq-v3E59veqD-j7IBRxo5Gs5WTsUZw__mLsdZW2rRSWlEcfb4pcexC4z9rWhneP2WcRMGm9S80oLlqN-Z9xgrjhhZpXuHKvPAeGtfi7k1f7lk72lLZLFQflfUbpw7grw-V8.a3asCWSi72Ngyj4aNWkT5Y9NJ3xwlVuXo3lDSn-jFLM&dib_tag=se&keywords=wired+gaming+headset&qid=1777130640&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=wired%2Bgaming%2Bheadset%2Caps%2C283&sr=8-10&tag=tiereduptech-20", "price":49.67, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6320789&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6320789.p%3FskuId%3D6320789", "price": 49.99, "inStock": true}},
     "hsType": "Wired",
-    "mic": true
+    "mic": true,
+    "driver": 50,
+    "anc": false
   },
   {
     "id": 100050,
@@ -113608,7 +113772,10 @@ export const PARTS = [
     "msrp": 248,
     "r": 4.2,
     "deals": {"amazon":{"url":"https://www.amazon.com/Sony-WH-1000XM5-Headphones-Hands-Free-WH1000XM5/dp/B0BXYCS74H/ref=sr_1_45?crid=PQZ21JCE1IOY&dib=eyJ2IjoiMSJ9.JIB0-T7aRKdBQ1OqmrCPQhBtNHA4Gmc1LpB3KMlbnuu8s2Z3ZhXvk0JmX5NjgxRvmx28In0-vqeKdChMqWq2OwO2RIIa2EzWV-ozZtrkMuzjUkUWGN_7TqEmeMKzOUBRplNljngpmEYbP4SuQZtTAxzEpxHU15GUPYCrEnPQdwfeoUZKi-5A9CHCFexEkKSKUBIlxwfMzanmoXHZRhiOXC8b5FlWPRiUyh2eEx-E5_Q.dWCeA65MCahuxW2_LU_7KWigW6GzzlY4cfgRo0SEpZI&dib_tag=se&keywords=Sennheiser+HD+560S&qid=1777130640&sprefix=Sennheiser%2BHD%2B560S%2Caps%2C234&sr=8-45&xpid=TXM_Jo3eFjwMY&tag=tiereduptech-20", "price":248, "inStock":true}},
-    "anc": true
+    "anc": true,
+    "hsType": "Wireless",
+    "driver": 30,
+    "mic": true
   },
   {
     "id": 100051,
@@ -113620,7 +113787,10 @@ export const PARTS = [
     "msrp": 248,
     "r": 4.2,
     "deals": {"amazon":{"url":"https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo4OTc1MzM5NzkzNjkxMTg4OjE3NzcxMzA2NDE6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMDA1NjYxMjIwOTk5ODo6Mzo6&url=%2FSony-WH-1000XM5-Canceling-Headphones-Hands-Free%2Fdp%2FB09XSDMT4F%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3DKKN57TL45GS4%26cv_ct_cx%3DDrop%2Bheadphones%26keywords%3DDrop%2Bheadphones%26pd_rd_i%3DB09XSDMT4F%26pd_rd_r%3Decb6d7e0-39b5-42fd-ae84-ab621898b7f3%26pd_rd_w%3Dd5g6F%26pd_rd_wg%3D2CYPr%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3D2XM0GTQAT58ZZACNXTXY%26qid%3D1777130641%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DDrop%252Bheadphones%252Caps%252C136%26sr%3D1-20-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DvqvvJ6rB0CC5o%26aref%3DqhHoxGh2qc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=qhHoxGh2qc&tag=tiereduptech-20", "price":248, "inStock":true}},
-    "anc": true
+    "anc": true,
+    "hsType": "Wireless",
+    "driver": 30,
+    "mic": true
   },
   {
     "id": 100052,
@@ -113633,7 +113803,7 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Gaming-Headset-Blue-Technology/dp/B07PDFBJZD/ref=sr_1_37?crid=GS25T10JQ3MC&dib=eyJ2IjoiMSJ9.lj-mOBnkc0mqMiZvd7MH2AdFIgtxslP0Ii9WJjZpr6ToFiRVu5i58h6i1VlLRAdrVTaYNBAFiRvGd3_QQIDIsDbUD0Ktl4jkiaCUYreNN1MTnmU2cJWJZKXdOyZPGs--2fkQDCkbrPWH4NFfR5sWpvVa7BF3n1gAFwJSbnfLAL91msRl788gfAVTqIRkBe5nSeL3P4Xr_FuB7qbuyZn7ZwZsXfpvE-FfVgvQkazHh_o._HwlrRPCoVH43P_tWHUrGFsvlrjeIv1OPMRFRmOKflc&dib_tag=se&keywords=SteelSeries+Arctis+Nova&qid=1777130636&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BArctis%2BNova%2Caps%2C159&sr=8-37&xpid=dGYW4tMVhPqrI&tag=tiereduptech-20", "price":99.13, "inStock":true}},
     "hsType": "Wired",
-    "driver": "50mm",
+    "driver": 50,
     "mic": true
   },
   {
@@ -113647,7 +113817,9 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Stealth-Wireless-Multiplatform-Amplified-Headset-Nintendo/dp/B0CYWFH5Y9/ref=sr_1_21?crid=MRVPSPTMXZV3&dib=eyJ2IjoiMSJ9.TGUcBFudkT26JpacVPP_qkh5IVdVYiy_Un7lqOx9ARf5ig5CPmtbtiGU-56-2992NPuNC0lDV9lezPZxKomcgHI3t1jGsZCc7jzw3fBa4nlu3TKRoqDjL28bU-70FhukaFDWlXga7v95I_BIIzF2h6IUu9Ssca7C7p0FgBG5LZ5_v9Enjz46FuHhAHLYpWnj3DWfJd8fCKhWLxclkEA_wFV22CFbgJx4XLRtSuHTWsU.ozAVXeiJ7pf-DjIrsg255D0lvCOFz9IzljDQfstezgg&dib_tag=se&keywords=wireless+gaming+headset&qid=1777130635&sprefix=wireless%2Bgaming%2Bheadset%2Caps%2C130&sr=8-21&tag=tiereduptech-20", "price":109, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577966&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577966.p%3FskuId%3D6577966", "price": 109.99, "inStock": true}},
     "hsType": "Wireless",
-    "mic": true
+    "mic": true,
+    "driver": 50,
+    "anc": false
   },
   {
     "id": 100054,
@@ -113658,7 +113830,11 @@ export const PARTS = [
     "pr": 86,
     "msrp": 86,
     "r": 4.5,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Sennheiser-280-Pro-Headphone-Black/dp/B00IT0IHOY/ref=sr_1_29?crid=PQZ21JCE1IOY&dib=eyJ2IjoiMSJ9.FbwieSDxjv2xPjfC3eTXbDu2Lo0nF5B_8vO6SwZ7qaXUCX9M9MmSIyHpgCemwUwIfH-ZhDvmnJHWx5_dW7FMWcTpmcvy4nxOlpuwi6KfAqNQhVZqGIPedFFnzhRGEsr9zUFe6w7kSWgRwktuxVWuvCrZs3O9rhyMnzQomf_jOtybsfwh9nXo8uDxQK4I7ZS2UFV7iFc7swowmB_k1wXCgh3PhhVUJIrC-VBv79k0KNQ.t85l61hgqxXcA84Tr71u2JlT5NVqeAYKXjQvxFRBlW4&dib_tag=se&keywords=Sennheiser+HD+560S&qid=1777130638&sprefix=Sennheiser%2BHD%2B560S%2Caps%2C234&sr=8-29&xpid=TXM_Jo3eFjwMY&tag=tiereduptech-20", "price":86.3, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Sennheiser-280-Pro-Headphone-Black/dp/B00IT0IHOY/ref=sr_1_29?crid=PQZ21JCE1IOY&dib=eyJ2IjoiMSJ9.FbwieSDxjv2xPjfC3eTXbDu2Lo0nF5B_8vO6SwZ7qaXUCX9M9MmSIyHpgCemwUwIfH-ZhDvmnJHWx5_dW7FMWcTpmcvy4nxOlpuwi6KfAqNQhVZqGIPedFFnzhRGEsr9zUFe6w7kSWgRwktuxVWuvCrZs3O9rhyMnzQomf_jOtybsfwh9nXo8uDxQK4I7ZS2UFV7iFc7swowmB_k1wXCgh3PhhVUJIrC-VBv79k0KNQ.t85l61hgqxXcA84Tr71u2JlT5NVqeAYKXjQvxFRBlW4&dib_tag=se&keywords=Sennheiser+HD+560S&qid=1777130638&sprefix=Sennheiser%2BHD%2B560S%2Caps%2C234&sr=8-29&xpid=TXM_Jo3eFjwMY&tag=tiereduptech-20", "price":86.3, "inStock":true}},
+    "hsType": "Wired",
+    "driver": 40,
+    "mic": false,
+    "anc": false
   },
   {
     "id": 100055,
@@ -113671,7 +113847,9 @@ export const PARTS = [
     "r": 4.2,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-G435-Wireless-Gaming-Headset/dp/B08R8DT7X6/ref=sr_1_10?crid=MRVPSPTMXZV3&dib=eyJ2IjoiMSJ9.TGUcBFudkT26JpacVPP_qkh5IVdVYiy_Un7lqOx9ARf5ig5CPmtbtiGU-56-2992NPuNC0lDV9lezPZxKomcgHI3t1jGsZCc7jzw3fBa4nlu3TKRoqDjL28bU-70FhukaFDWlXga7v95I_BIIzF2h6IUu9Ssca7C7p0FgBG5LZ5_v9Enjz46FuHhAHLYpWnj3DWfJd8fCKhWLxclkEA_wFV22CFbgJx4XLRtSuHTWsU.ozAVXeiJ7pf-DjIrsg255D0lvCOFz9IzljDQfstezgg&dib_tag=se&keywords=wireless+gaming+headset&qid=1777130635&sprefix=wireless%2Bgaming%2Bheadset%2Caps%2C130&sr=8-10&tag=tiereduptech-20", "price":49.99, "inStock":true}},
     "hsType": "Wireless",
-    "mic": true
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100056,
@@ -113684,7 +113862,9 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Turtle-Multiplatform-Gaming-Headset-PlayStation-Console/dp/B0BVL17YJV/ref=sr_1_26?crid=MWA69BA6O2S0&dib=eyJ2IjoiMSJ9.3UiWvKLsvBkHuwBhZvfryDyswFQHmLKrmS7Fgssln48ZooWbuYNIaCZcjECSAB44DHmziU8-Sk5onkZbdc1klpHS_6-HHncNkBAfxkWLMO-_GjexFaNtxfXjWOz5fQ2yTf2bgJGCBmymYpE1LvGO94_LQPu3fZH3TFk8xemF-peSk1w-ikbEs5DxT66QwpGPjlJobuAbqtVnfjT-xy-1D485ShvP1mqgj_b7fjP9MX4.HtibCoYN4JBpAwzH8srqQYQ9H7CmJHC8JzQ5rRE3hfo&dib_tag=se&keywords=gaming+headset&qid=1777130642&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=gaming%2Bheadset%2Caps%2C124&sr=8-26&xpid=FrzMK5sY3y-vK&tag=tiereduptech-20", "price":39.99, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9539004&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9539004.p%3FskuId%3D9539004", "price": 27.99, "inStock": true}},
     "hsType": "Wired",
-    "mic": true
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100057,
@@ -113697,7 +113877,9 @@ export const PARTS = [
     "r": 4.3,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-G335-Wired-Gaming-Headset/dp/B08KKBSDTY/ref=sr_1_29?crid=X2H1PUODU33K&dib=eyJ2IjoiMSJ9.JpC-48LRQKGXQDtgfQkrIAYaTBPFrExCzwWvVPt0AWuLx-_QHuPTpuJl2F5KDL9mEaj4VNDAXVU6DH5euc2zhk5yjNFPbz8SVzqDqb9ByFrU5jzKaPvdrcaYr9SrLoevtytadQoLV_nL0xHOxdqI1vi6KTTD5xUT8pGOT6V0jRYIopIYy-b2xflu3CIIqUzNVkH6gVN4mzBM6Qnkn-YIlL_p3Hs1HBjMsi1B9OTV4TY.h-pRS3SsNHEodtNMOe9K8pku550mvwqjoEhYTFfwyMM&dib_tag=se&keywords=HyperX+Cloud+III&qid=1777130636&sprefix=HyperX%2BCloud%2BIII%2Caps%2C215&sr=8-29&xpid=bGwokda90C0g3&tag=tiereduptech-20", "price":49.99, "inStock":true}},
     "hsType": "Wired",
-    "mic": true
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100058,
@@ -113708,7 +113890,11 @@ export const PARTS = [
     "pr": 150,
     "msrp": 150,
     "r": 4.6,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Sennheiser-AURICULARES-HD-560S-Head-Band/dp/B08HNFV61M/ref=sr_1_2?crid=PQZ21JCE1IOY&dib=eyJ2IjoiMSJ9.pOaf4sf43-aEFN1HC1sX9f1C0E15GKrNgZGR_rYgp_mnEGpFcdPOcuwsq2N1tUFEeOlMInPdzoEYKXfyWBSULDsRBFwYnPUIpjMgjPTlGaplEGHOy8NgvwS5BNQFlaWlRsbpT7QIIUx3JXesa8ok-BE_cymTomnmzDUHpYij8OyoJjjUfdGPGXZPTCnyaZoqncnGZL0j_Q74kFdA7Y2CN1mpzuemGZIB-AHl3LO-40E.BurPwIl-EtSKvzTdJUlLmEQe8L1RshQS5VDlfjb-5rM&dib_tag=se&keywords=Sennheiser+HD+560S&qid=1777130636&sprefix=Sennheiser%2BHD%2B560S%2Caps%2C234&sr=8-2&tag=tiereduptech-20", "price":149.99, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Sennheiser-AURICULARES-HD-560S-Head-Band/dp/B08HNFV61M/ref=sr_1_2?crid=PQZ21JCE1IOY&dib=eyJ2IjoiMSJ9.pOaf4sf43-aEFN1HC1sX9f1C0E15GKrNgZGR_rYgp_mnEGpFcdPOcuwsq2N1tUFEeOlMInPdzoEYKXfyWBSULDsRBFwYnPUIpjMgjPTlGaplEGHOy8NgvwS5BNQFlaWlRsbpT7QIIUx3JXesa8ok-BE_cymTomnmzDUHpYij8OyoJjjUfdGPGXZPTCnyaZoqncnGZL0j_Q74kFdA7Y2CN1mpzuemGZIB-AHl3LO-40E.BurPwIl-EtSKvzTdJUlLmEQe8L1RshQS5VDlfjb-5rM&dib_tag=se&keywords=Sennheiser+HD+560S&qid=1777130636&sprefix=Sennheiser%2BHD%2B560S%2Caps%2C234&sr=8-2&tag=tiereduptech-20", "price":149.99, "inStock":true}},
+    "hsType": "Wired",
+    "driver": 38,
+    "mic": false,
+    "anc": false
   },
   {
     "id": 100059,
@@ -113721,7 +113907,7 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Turtle-Stealth-Wireless-Multiplatform-Amplified-Headset/dp/B0DBB38QK1/ref=sr_1_43?crid=4T8OVBV8PXP5&dib=eyJ2IjoiMSJ9.px1sIwBwkfr2cRl0JsJvGKkR9XFBK5TfzDREwXBsGWs6RxODMNJ7CIyVH5d2RQ4axOE6cG7XK-xJCiY8Uehv2yRhQcghsLwQDIST8ww-JJp5ArAQbHkJocHYxsmFBI02jm41Fr8ZBFDH_kx9LP9Mq5ujOV39yuBUjKesV8WZpNfQLnPLkFLqxnO8R6xA99fCl_Gu5QJFbJ9DHeOXXGgn71Daw6svC0a7pvy-PcoTkhQ.QsV-DhFvRag7jTLSX7luHykjDIGiUxfUJrIdRgRlsuE&dib_tag=se&keywords=Astro+A50&qid=1777130645&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Astro%2BA50%2Caps%2C182&sr=8-43&xpid=4IHOr9GSUVBfS&tag=tiereduptech-20", "price":199, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583838&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583838.p%3FskuId%3D6583838", "price": 199.99, "inStock": true}},
     "hsType": "Wireless",
-    "driver": "60mm",
+    "driver": 60,
     "mic": true
   },
   {
@@ -113734,7 +113920,10 @@ export const PARTS = [
     "msrp": 110,
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Kraken-Gaming-Headset-2019/dp/B07QNZC9V5/ref=sr_1_2?crid=CED7P2DJKA98&dib=eyJ2IjoiMSJ9.x0ppXXru9LXp0mrY-SbYVItpjpE02VLyR0PE9na1CPdwwgCEr45BASxsnO8_r4mO7YUrod8RlfmBiARIoh5hZ9qk6dG5GlsAGvvwWCBoWNfRV3CkbNkcl5ldJr-3SoohXqHFWHkSxerCYz6SkeZB4fp_HMaGuQ2oKoE54XmvKRhtXV02Wh2KbJj0JJwPlQp9IC1LJlRusNn_UFGpqhdZSAWVTVUtchOtSPsRtlbKNJ4.O8MLT6onGo_frPL58BRLWqGep_2h_apSsI2EICztsQg&dib_tag=se&keywords=Razer+Kraken&qid=1777130639&sprefix=Razer%2BKraken%2Caps%2C269&sr=8-2&tag=tiereduptech-20", "price":109.95, "inStock":true}},
-    "mic": true
+    "mic": true,
+    "hsType": "Wired",
+    "driver": 50,
+    "anc": false
   },
   {
     "id": 100061,
@@ -113747,7 +113936,9 @@ export const PARTS = [
     "r": 4.2,
     "deals": {"amazon":{"url":"https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo3MDY0NDI0MjQ5NjI4NjoxNzc3MTMwNjM1OnNwX3NlYXJjaF90aGVtYXRpYzozMDExODM5OTMyMzg3MDI6OjA6Og&url=%2FHyperX-Cloud-Alpha-Wireless-Noise-canceling%2Fdp%2FB09TRW57WB%2Fref%3Dsxin_18_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.3859b1f1-8b34-4d43-bd56-696bede8aa56%253Aamzn1.sym.3859b1f1-8b34-4d43-bd56-696bede8aa56%26crid%3DMRVPSPTMXZV3%26cv_ct_cx%3Dwireless%2Bgaming%2Bheadset%26keywords%3Dwireless%2Bgaming%2Bheadset%26pd_rd_i%3DB09TRW57WB%26pd_rd_r%3D77d6e864-1009-4bf1-bedf-92c9890adfc0%26pd_rd_w%3D1LrII%26pd_rd_wg%3DEg3PG%26pf_rd_p%3D3859b1f1-8b34-4d43-bd56-696bede8aa56%26pf_rd_r%3DXNV4CW8HFMW7S37B49GZ%26qid%3D1777130635%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dwireless%252Bgaming%252Bheadset%252Caps%252C130%26sr%3D1-1-383bc08e-f3b5-4928-b079-a9607486ab19-spons%26aref%3DeFWXUBz2vF%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=eFWXUBz2vF&tag=tiereduptech-20", "price":119.99, "inStock":true}},
     "hsType": "Wireless",
-    "mic": true
+    "mic": true,
+    "driver": 50,
+    "anc": false
   },
   {
     "id": 100062,
@@ -113761,7 +113952,8 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Sony-WH-1000XM6-Headphones-Microphones-Studio-Quality/dp/B0F3PQHWTZ/ref=sr_1_49?crid=PQZ21JCE1IOY&dib=eyJ2IjoiMSJ9.LxufMGR_BsJ782csmvY1vfc1aDeDBxoJzydVim3LoDnRaFeE5SOAWpXtp3Q2JGZqKvr8DHhTqY523adESJ-GNctO0zkXuJNQ97hzoRlWuz0hM5yfhsNIs_KjpYXXEVpjmq9CAEvtRsZC61wHQpGRsqRkKKiSqAzvKrYDlz5uETZ1jy85sAi6eiSqjjLSv0y3hVxJ1kzXgYUiBOZLiY6rRK0ESQZkz2QdqSjvXV8zLVo.7aWmAeou7MN3augwnF8FH9s_CxHdaKTAImKm9sBZwNU&dib_tag=se&keywords=Sennheiser+HD+560S&qid=1777130642&sprefix=Sennheiser%2BHD%2B560S%2Caps%2C234&sr=8-49&xpid=TXM_Jo3eFjwMY&tag=tiereduptech-20", "price":428, "inStock":true}},
     "hsType": "Wireless",
     "mic": true,
-    "anc": true
+    "anc": true,
+    "driver": 30
   },
   {
     "id": 100063,
@@ -113774,7 +113966,9 @@ export const PARTS = [
     "r": 4.3,
     "deals": {"amazon":{"url":"https://www.amazon.com/sspa/click?ie=UTF8&spc=MTozNDM1NTkzMTY4Njg1Mzk1OjE3NzcxMzA2MzU6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDA1NTQ5NDY1MzUwMjo6Mjo6&url=%2FFIFINE-Detachable-Microphone-Headphones-Black-AmpliGame%2Fdp%2FB0C4ND25FT%2Fref%3Dsxin_28_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.296ab4d4-7e8d-4537-a041-04c6d3c0401d%253Aamzn1.sym.296ab4d4-7e8d-4537-a041-04c6d3c0401d%26crid%3DX2H1PUODU33K%26cv_ct_cx%3DHyperX%2BCloud%2BIII%26keywords%3DHyperX%2BCloud%2BIII%26pd_rd_i%3DB0C4ND25FT%26pd_rd_r%3D5e94a2fe-dc83-4f38-9dc7-e87c8a12eb68%26pd_rd_w%3DJxJI2%26pd_rd_wg%3DWAXBE%26pf_rd_p%3D296ab4d4-7e8d-4537-a041-04c6d3c0401d%26pf_rd_r%3D8RM6PH0H5BTTXCZYGMNF%26qid%3D1777130634%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHyperX%252BCloud%252BIII%252Caps%252C215%26sr%3D1-3-7ca77689-fea2-4d18-a31c-8e756e3a3e87-spons%26aref%3D85zBVlfamI%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=85zBVlfamI&tag=tiereduptech-20", "price":32.29, "inStock":true}},
     "hsType": "Wired",
-    "mic": true
+    "mic": true,
+    "driver": 50,
+    "anc": false
   },
   {
     "id": 100064,
@@ -113788,7 +113982,8 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/Wireless-Bluetooth-Headphones-Surround-Retractable/dp/B0CLLJC6QC/ref=sr_1_20?crid=MRVPSPTMXZV3&dib=eyJ2IjoiMSJ9.TGUcBFudkT26JpacVPP_qkh5IVdVYiy_Un7lqOx9ARf5ig5CPmtbtiGU-56-2992NPuNC0lDV9lezPZxKomcgHI3t1jGsZCc7jzw3fBa4nlu3TKRoqDjL28bU-70FhukaFDWlXga7v95I_BIIzF2h6IUu9Ssca7C7p0FgBG5LZ5_v9Enjz46FuHhAHLYpWnj3DWfJd8fCKhWLxclkEA_wFV22CFbgJx4XLRtSuHTWsU.ozAVXeiJ7pf-DjIrsg255D0lvCOFz9IzljDQfstezgg&dib_tag=se&keywords=wireless+gaming+headset&qid=1777130635&sprefix=wireless%2Bgaming%2Bheadset%2Caps%2C130&sr=8-20&tag=tiereduptech-20", "price":35.99, "inStock":true}},
     "hsType": "Wireless",
     "mic": true,
-    "anc": true
+    "anc": true,
+    "driver": 40
   },
   {
     "id": 100065,
@@ -113801,7 +113996,8 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Blue-Microphones-Yeti-Microphone-Blackout/dp/B00N1YPXW2/ref=sr_1_3?crid=UN6YR78FTY9E&dib=eyJ2IjoiMSJ9.5Nodv8VroGXGpVLPiMFvWQW0BgCAurqjcf6dTd0IB6u09PpyDDLSa1JovEevFgXHoe59m997sj3vjhiXhL0WWxp3nw4O5NDX7Wqv7McYCBwpVxvMoh62bsf5xt2LSpomdwkcz4FWT9k2a8l1t6Vmya4F9efAbkxnbaXT2cLw77Z-r0FmoZFzBeoMukVqPlzHn1mQL3sKZOMz_hA4USK8kMWL-MXUGg1J6iCf_dL3cKacK8fEPHdhc1VC71NkOPI0NL7BGRwWsrLzkm62Ihc2OcjHTFz0er4ghzQOyZi5tJw.qLybboGdKcgOfqqKLQW4Dav2m6FznJiImkjYYBJAymQ&dib_tag=se&keywords=Blue+Yeti&qid=1777130680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Blue%2BYeti%2Caps%2C202&sr=8-3&tag=tiereduptech-20", "price":95, "inStock":true}},
     "micType": "USB",
-    "pattern": "Condenser"
+    "pattern": "Multi-Pattern",
+    "sampleRate": 48
   },
   {
     "id": 100066,
@@ -113814,7 +114010,8 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"amazon":{"url":"https://www.amazon.com/Audio-Technica-AT2020-Cardioid-Condenser-Microphone/dp/B0006H92QK/ref=sr_1_1?crid=07SVOKVRJVXG&dib=eyJ2IjoiMSJ9.kUGzQ3MJqVqfaJtzK7uCCAuciaGjBhm0bZkOzZompDn95aRptjjGB5lWG_NxIKELlSK3xSCDKfoPT73wBpS2kJ0Aj3V211hbnk2h-BxBa7bteQZRSV9dgxA6d13wmTZh0yN32CDZ37o9KrRL9urJH4r-S1qo8dKQs4LU7R2_vkYs0t9LYOb8xVv7IrzkaSJH6tXHV8A7tk4scrM741CJHggd4e_qg7KyHIaMHIDrDLKmAyFt-5HjPDBRM-VPMJBLmFSRQXmDHMvw0XSvgQFM3NPS3HZz-oM_40yXJE-cRDY.PWYg9iqTQiF7LSBQFyLEt6f1c5vahgjucd6gK1T33vc&dib_tag=se&keywords=Audio-Technica+AT2020&qid=1777130696&sprefix=AudioTechnica%2BAT2020%2Caps%2C178&sr=8-1&tag=tiereduptech-20", "price":119, "inStock":true}},
     "micType": "XLR",
-    "pattern": "Cardioid"
+    "pattern": "Cardioid",
+    "sampleRate": 44
   },
   {
     "id": 100067,
@@ -113827,7 +114024,8 @@ export const PARTS = [
     "r": 4.8,
     "deals": {"amazon":{"url":"https://www.amazon.com/Shure-SM58-LC-Cardioid-Dynamic-Microphone/dp/B000CZ0R42/ref=sr_1_9?crid=82HPG2FOGG2T&dib=eyJ2IjoiMSJ9.RmdIX9qeCx2jmBrUnSwOquwPkLHA5iMwvYSwigJ0-_oKeGNU14eEXZK30-Lt-HznYLutLFKvwXPHjhmkbaT-O97BxYYNJZPpB90tL7lApe111xDD26KtYkebfzTLzi5yp0bsbgQBoBwKfi2VM0PcmmxNlbhLzgiBGQ8g1DlDa3AL4vWR_d4veQk_O12PMAQJ-bckXUHGybWO4h__1ovRFmY82kXZO-crpL_lu8VeSIgRBBXXIDkKgAedvYRDYucEC3nQ_Agq1L7__WIPcaN7G-TbhcDP4TwqHGvCCxEqjHA.Oi8iUEv38LaqHCBkQL0cFoAzI57pXag4yNGB6razDIo&dib_tag=se&keywords=Shure+SM7B&qid=1777130682&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Shure%2BSM7B%2Caps%2C122&sr=8-9&tag=tiereduptech-20", "price":98, "inStock":true}},
     "micType": "XLR",
-    "pattern": "Cardioid"
+    "pattern": "Cardioid",
+    "sampleRate": 0
   },
   {
     "id": 100068,
@@ -113839,7 +114037,9 @@ export const PARTS = [
     "msrp": 88,
     "r": 4.8,
     "deals": {"amazon":{"url":"https://www.amazon.com/Rode-PODMIC-Dynamic-Podcasting-Microphone/dp/B07MSCRCVK/ref=sr_1_11?crid=82HPG2FOGG2T&dib=eyJ2IjoiMSJ9.RmdIX9qeCx2jmBrUnSwOquwPkLHA5iMwvYSwigJ0-_oKeGNU14eEXZK30-Lt-HznYLutLFKvwXPHjhmkbaT-O97BxYYNJZPpB90tL7lApe111xDD26KtYkebfzTLzi5yp0bsbgQBoBwKfi2VM0PcmmxNlbhLzgiBGQ8g1DlDa3AL4vWR_d4veQk_O12PMAQJ-bckXUHGybWO4h__1ovRFmY82kXZO-crpL_lu8VeSIgRBBXXIDkKgAedvYRDYucEC3nQ_Agq1L7__WIPcaN7G-TbhcDP4TwqHGvCCxEqjHA.Oi8iUEv38LaqHCBkQL0cFoAzI57pXag4yNGB6razDIo&dib_tag=se&keywords=Shure+SM7B&qid=1777130682&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Shure%2BSM7B%2Caps%2C122&sr=8-11&tag=tiereduptech-20", "price":88, "inStock":true}},
-    "pattern": "Cardioid"
+    "pattern": "Cardioid",
+    "micType": "XLR",
+    "sampleRate": 0
   },
   {
     "id": 100069,
@@ -113852,7 +114052,8 @@ export const PARTS = [
     "r": 4.8,
     "deals": {"amazon":{"url":"https://www.amazon.com/Shure-SM57-LC-Cardioid-Dynamic-Microphone/dp/B0000AQRST/ref=sr_1_19?crid=82HPG2FOGG2T&dib=eyJ2IjoiMSJ9.RmdIX9qeCx2jmBrUnSwOquwPkLHA5iMwvYSwigJ0-_oKeGNU14eEXZK30-Lt-HznYLutLFKvwXPHjhmkbaT-O97BxYYNJZPpB90tL7lApe111xDD26KtYkebfzTLzi5yp0bsbgQBoBwKfi2VM0PcmmxNlbhLzgiBGQ8g1DlDa3AL4vWR_d4veQk_O12PMAQJ-bckXUHGybWO4h__1ovRFmY82kXZO-crpL_lu8VeSIgRBBXXIDkKgAedvYRDYucEC3nQ_Agq1L7__WIPcaN7G-TbhcDP4TwqHGvCCxEqjHA.Oi8iUEv38LaqHCBkQL0cFoAzI57pXag4yNGB6razDIo&dib_tag=se&keywords=Shure+SM7B&qid=1777130682&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Shure%2BSM7B%2Caps%2C122&sr=8-19&tag=tiereduptech-20", "price":98, "inStock":true}},
     "micType": "XLR",
-    "pattern": "Cardioid"
+    "pattern": "Cardioid",
+    "sampleRate": 0
   },
   {
     "id": 100070,
@@ -113863,7 +114064,10 @@ export const PARTS = [
     "pr": 79,
     "msrp": 79,
     "r": 4.7,
-    "deals": {"amazon":{"url":"https://www.amazon.com/DJI-Microphone-Ultralight-Detail-Rich-Cancelling/dp/B0DDL8WGH5/ref=sr_1_11?crid=HO5JGLI88VUR&dib=eyJ2IjoiMSJ9.Lbaoqitx2qEbCiRF22XtcESLzxwyHfwESoEgrNbU1khn010hKbm7VOjLNYqk7VGjQiS9p3kIfRQ8DzQ2z6MWTB6KWMQxbCRL-VcoY4kFov3MTWkaw0eY-oYI4XDG6ns8SMr0RI4EiVE9WCruZx2o1AwlkIB44G9Tv0P6BUjYXN8ELxxr7OoqbRbex91TjzxdJDOpnCEMf6ZWjPNO7vAnm8FJCLMLS9D1p6anYVl0KnobwcWpVsnWmwc0lS9cM-mp8WKxc5b9YqDs1a9gthvFy_ICg3eyTj_T2QN_N3cWC3M.09zi53ZYUwKCBliL3C7SzuPxR1uva7CO1hEJp0Ri_HI&dib_tag=se&keywords=podcast+microphone&qid=1777130682&sprefix=podcast%2Bmicrophone%2Caps%2C121&sr=8-11&tag=tiereduptech-20", "price":79, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/DJI-Microphone-Ultralight-Detail-Rich-Cancelling/dp/B0DDL8WGH5/ref=sr_1_11?crid=HO5JGLI88VUR&dib=eyJ2IjoiMSJ9.Lbaoqitx2qEbCiRF22XtcESLzxwyHfwESoEgrNbU1khn010hKbm7VOjLNYqk7VGjQiS9p3kIfRQ8DzQ2z6MWTB6KWMQxbCRL-VcoY4kFov3MTWkaw0eY-oYI4XDG6ns8SMr0RI4EiVE9WCruZx2o1AwlkIB44G9Tv0P6BUjYXN8ELxxr7OoqbRbex91TjzxdJDOpnCEMf6ZWjPNO7vAnm8FJCLMLS9D1p6anYVl0KnobwcWpVsnWmwc0lS9cM-mp8WKxc5b9YqDs1a9gthvFy_ICg3eyTj_T2QN_N3cWC3M.09zi53ZYUwKCBliL3C7SzuPxR1uva7CO1hEJp0Ri_HI&dib_tag=se&keywords=podcast+microphone&qid=1777130682&sprefix=podcast%2Bmicrophone%2Caps%2C121&sr=8-11&tag=tiereduptech-20", "price":79, "inStock":true}},
+    "micType": "Wireless",
+    "pattern": "Omnidirectional",
+    "sampleRate": 48
   },
   {
     "id": 100071,
@@ -113875,7 +114079,9 @@ export const PARTS = [
     "msrp": 99,
     "r": 4.7,
     "deals": {"amazon":{"url":"https://www.amazon.com/Hollyland-Microphone-Lightning-Cancellation-Recording/dp/B0CP7QXWPN/ref=sr_1_46?crid=HO5JGLI88VUR&dib=eyJ2IjoiMSJ9.Lbaoqitx2qEbCiRF22XtcESLzxwyHfwESoEgrNbU1khn010hKbm7VOjLNYqk7VGjQiS9p3kIfRQ8DzQ2z6MWTB6KWMQxbCRL-VcoY4kFov3MTWkaw0eY-oYI4XDG6ns8SMr0RI4EiVE9WCruZx2o1AwlkIB44G9Tv0P6BUjYXN8ELxxr7OoqbRbex91TjzxdJDOpnCEMf6ZWjPNO7vAnm8FJCLMLS9D1p6anYVl0KnobwcWpVsnWmwc0lS9cM-mp8WKxc5b9YqDs1a9gthvFy_ICg3eyTj_T2QN_N3cWC3M.09zi53ZYUwKCBliL3C7SzuPxR1uva7CO1hEJp0Ri_HI&dib_tag=se&keywords=podcast+microphone&qid=1777130682&sprefix=podcast%2Bmicrophone%2Caps%2C121&sr=8-46&tag=tiereduptech-20", "price":99, "inStock":true}},
-    "sampleRate": "48kHz"
+    "sampleRate": "48kHz",
+    "micType": "Wireless",
+    "pattern": "Omnidirectional"
   },
   {
     "id": 100072,
@@ -113887,7 +114093,9 @@ export const PARTS = [
     "msrp": 45,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/FIFINE-Microphone-Podcasting-Monitoring-Creation-AmpliGame/dp/B0C74G9RLH/ref=sr_1_23?crid=OL0GS2OWVEE1&dib=eyJ2IjoiMSJ9.qMhoszhy3rKsLo_8s22HexjCPx0ZYRX6l90DNYAQ5_IJJzZC7zeQlSd4qOq-NOhg6xg_IHToLB2ltWvRqfqVqowKOSr6vedCZqpw4xwfuErtFvZGh9smHNHvsZuCmI-iB-EuadSElByA6nI4NzsEK5ScVRkNUife-SPrYqN7cuxWzVlWV2BnI2a3Cpf1Qt8rm0n0iPQ95yRbNIzW2wf8jTipeeASpzmKRaqwUTygCcJTg1Vu5pO_dutSZ-xtWq_maqf16WX1LK90JiCoKuAWXXdcbZDRkiqu4qewVIZADkQ.9LejxMATx5T8XxBrNQtniN_FZI1MfKXo0PKRug1kXlg&dib_tag=se&keywords=USB+microphone&qid=1777130682&sprefix=USB%2Bmicrophone%2Caps%2C271&sr=8-23&tag=tiereduptech-20", "price":44.99, "inStock":true}},
-    "micType": "USB"
+    "micType": "USB",
+    "pattern": "Cardioid",
+    "sampleRate": 192
   },
   {
     "id": 100073,
@@ -113901,7 +114109,7 @@ export const PARTS = [
     "deals": {"amazon":{"url":"https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0NDQwOTcxNzQwNTU4MjQwOjE3NzcxMzA2ODE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTI1NTM1ODIyMTUwMjo6Mzo6&url=%2FMicrophone-MAONO-Condenser-Professional-Recording%2Fdp%2FB07GQT8879%2Fref%3Dsxin_17_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.4600b4a8-9f88-405c-a63c-4789cd161cf0%253Aamzn1.sym.4600b4a8-9f88-405c-a63c-4789cd161cf0%26crid%3DWBXKM21UZ0SK%26cv_ct_cx%3DShure%2BMV6%26keywords%3DShure%2BMV6%26pd_rd_i%3DB07GQT8879%26pd_rd_r%3D8f4c6a59-0ce8-46d9-a34b-156c56563679%26pd_rd_w%3DcjKDi%26pd_rd_wg%3DBKH6C%26pf_rd_p%3D4600b4a8-9f88-405c-a63c-4789cd161cf0%26pf_rd_r%3D3HSQWJ7RVHHNFY7ZYPDR%26qid%3D1777130681%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DShure%252BMV6%252Caps%252C197%26sr%3D1-4-38f1b294-ceac-4b0f-b4a4-629ab102646f-spons%26aref%3DwGxsyKPKUM%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=wGxsyKPKUM&tag=tiereduptech-20", "price":48.96, "inStock":true}},
     "micType": "USB",
     "pattern": "Cardioid",
-    "sampleRate": "192kHz"
+    "sampleRate": 192
   },
   {
     "id": 100074,
@@ -113914,7 +114122,8 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/HyperX-SoloCast-Microphone-Tap-Mute/dp/B08KFL3SFV/ref=sr_1_47?crid=UN6YR78FTY9E&dib=eyJ2IjoiMSJ9.5Nodv8VroGXGpVLPiMFvWQW0BgCAurqjcf6dTd0IB6u09PpyDDLSa1JovEevFgXHoe59m997sj3vjhiXhL0WWxp3nw4O5NDX7Wqv7McYCBwpVxvMoh62bsf5xt2LSpomdwkcz4FWT9k2a8l1t6Vmya4F9efAbkxnbaXT2cLw77Z-r0FmoZFzBeoMukVqPlzHn1mQL3sKZOMz_hA4USK8kMWL-MXUGg1J6iCf_dL3cKacK8fEPHdhc1VC71NkOPI0NL7BGRwWsrLzkm62Ihc2OcjHTFz0er4ghzQOyZi5tJw.qLybboGdKcgOfqqKLQW4Dav2m6FznJiImkjYYBJAymQ&dib_tag=se&keywords=Blue+Yeti&qid=1777130680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Blue%2BYeti%2Caps%2C202&sr=8-47&tag=tiereduptech-20", "price":59.99, "inStock":true}},
     "micType": "USB",
-    "pattern": "Cardioid"
+    "pattern": "Cardioid",
+    "sampleRate": 96
   },
   {
     "id": 100075,
@@ -113927,7 +114136,8 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Shure-MV7X-Podcast-Microphone-Voice-Isolating/dp/B09BZZCGC8/ref=sr_1_48?crid=YDFC9E45IITB&dib=eyJ2IjoiMSJ9.0CZz4xK-GhEhz9nK1NuSDsnBBAE_bEvtFNfMuuDLWfPjC06FPZXCt8ZcaGVyBCZ5RZbXws10-HK-7l1KMWXFH7prEYAmQMjeRZhQQ-mJqeM7W1aofWrFZoQ5K_UZ5Zq39e7ltIoAGjCTflp4wmh8prl3MTg19tk4Y-jlkGyLUodn0E2jx6QqFOQoDgFcRP6I8aN-rw0Y73e7xPvHKFYvfyI-Y8Un9HNLke3wYgEIzNQ.RhHqq1BwfUkmQfjBOgf7zy-e6P6Acb8J8yd77YMPtkM&dib_tag=se&keywords=Razer+Seiren&qid=1777130683&sprefix=Razer%2BSeiren%2Caps%2C146&sr=8-48&xpid=sQD1ZTDddcDAf&tag=tiereduptech-20", "price":179, "inStock":true}},
     "micType": "XLR",
-    "pattern": "Cardioid"
+    "pattern": "Cardioid",
+    "sampleRate": 0
   },
   {
     "id": 100076,
@@ -113939,7 +114149,9 @@ export const PARTS = [
     "msrp": 89,
     "r": 4.7,
     "deals": {"amazon":{"url":"https://www.amazon.com/R%C3%98DE-Wireless-Micro-Microphone-Smartphone/dp/B0DFXQDTDT/ref=sr_1_48?crid=G13JW9AJMQNM&dib=eyJ2IjoiMSJ9.iARp8UwxCi32UUdFTuF0lAJUAc6GgyzSfqUife6kqykGOhcAnYAHK-2E6ALP2DwQCdkoO92Najp3toQKwSn5pOZ8xvelAnt9mE2-GVYdt5F9NP6E08RPdDql1AnPjkNhPSm2e6O7RT6jYqG-F-XltP23qks9TiXGml3CuKXBWqAXjW5t3gUdsjmHXfPOKAaaNcLheWRWf_l9q3G9ZjButTLUX1m9iFg7nfsvxT98NgS8SXYRnExZaev8DVeRPXj60w7zOvUyTRg5ir3gyoFFJZISNckmktCfTSYDzMXqC6c.PYEakSMZpVQCNll_Bf191XkibQ1_CA6Kn36MD84U6M0&dib_tag=se&keywords=Rode+PodMic&qid=1777130688&sprefix=Rode%2BPodMic%2Caps%2C236&sr=8-48&tag=tiereduptech-20", "price":89, "inStock":true}},
-    "micType": "USB"
+    "micType": "USB",
+    "pattern": "Omnidirectional",
+    "sampleRate": 48
   },
   {
     "id": 100077,
@@ -113951,7 +114163,9 @@ export const PARTS = [
     "msrp": 69,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Widescreen-Calling-Recording-Desktop/dp/B006JH8T3S/ref=sr_1_1?crid=EW1N21FRQ61U&dib=eyJ2IjoiMSJ9.jPNsGEG4koGA9IWUTRKVVtoGAXhh2AFxmylYPBLDCpYxwA8pbFif40Z2-U0yypxvhySTVMa_7EIm1G2_M3TIJN0XOq2WXUvQqFUTgJ7xAsvhA1IeTQDcVYbyG7vw6-BtyckVgb-HVTNfzrQm3c9kMq5rwKjs5SGiwFh2nHTXzI942rrTk83o1nHgAIX2VHWKRIKVq32l7se9y0gi8gmwT0OCLQ90SwU4ZH3NOTQUrnw.W05UqzZZtPz0Id3nuPFxAvBT09KeEtazcm8mdzxHZ24&dib_tag=se&keywords=Logitech+C920&qid=1777130737&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BC920%2Caps%2C251&sr=8-1&tag=tiereduptech-20", "price":68.5, "inStock":true}},
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "fps": 30,
+    "autofocus": true
   },
   {
     "id": 100078,
@@ -113964,7 +114178,8 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-C920x-Pro-HD-Webcam/dp/B085TFF7M1/ref=sr_1_27?crid=FSN84WU0UR66&dib=eyJ2IjoiMSJ9.b2Sz-jyj-WUkz2JGIumihOIPDzhip9843zgZ5SlVjUj5cr_GCnxJkjS9RYWMUt2Nt-Uj0qjyaaQaSBL2CaAtBTAjzRLhrXzSt_IfQ1QrvkdlzLvXF_dlDUDmm7-r3dHo-y2kGsFSkFRPuhtTfs434gDIZTu4fevNK4oiS5By72MjGKqK4-dMyCvfHHxqAhHNM6SAXYogElJ00gHjlE4uhOi6dV1aCmX8SXfrMbdLtmk.RcfsA1j5PovddvFyNz-FEsvDn2GyRtjJEpyMzA5CtwM&dib_tag=se&keywords=Insta360+webcam&qid=1777130738&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Insta360%2Bwebcam%2Caps%2C156&sr=8-27&xpid=8Ae2VxcKgdFGq&tag=tiereduptech-20", "price":99, "inStock":true}},
     "resolution": "1080p",
-    "fps": 30
+    "fps": 30,
+    "autofocus": true
   },
   {
     "id": 100079,
@@ -113977,7 +114192,8 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-C922x-Pro-Stream-Webcam/dp/B01LXCDPPK/ref=sr_1_14?crid=EW1N21FRQ61U&dib=eyJ2IjoiMSJ9.jPNsGEG4koGA9IWUTRKVVtoGAXhh2AFxmylYPBLDCpYxwA8pbFif40Z2-U0yypxvhySTVMa_7EIm1G2_M3TIJN0XOq2WXUvQqFUTgJ7xAsvhA1IeTQDcVYbyG7vw6-BtyckVgb-HVTNfzrQm3c9kMq5rwKjs5SGiwFh2nHTXzI942rrTk83o1nHgAIX2VHWKRIKVq32l7se9y0gi8gmwT0OCLQ90SwU4ZH3NOTQUrnw.W05UqzZZtPz0Id3nuPFxAvBT09KeEtazcm8mdzxHZ24&dib_tag=se&keywords=Logitech+C920&qid=1777130737&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BC920%2Caps%2C251&sr=8-14&tag=tiereduptech-20", "price":99.99, "inStock":true}},
     "resolution": "1080p",
-    "fps": 30
+    "fps": 30,
+    "autofocus": true
   },
   {
     "id": 100080,
@@ -113989,7 +114205,9 @@ export const PARTS = [
     "msrp": 70,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Mic-Enabled-Certified-Microsoft-Compatible/dp/B09DVGV7BH/ref=sr_1_4?crid=EW1N21FRQ61U&dib=eyJ2IjoiMSJ9.jPNsGEG4koGA9IWUTRKVVtoGAXhh2AFxmylYPBLDCpYxwA8pbFif40Z2-U0yypxvhySTVMa_7EIm1G2_M3TIJN0XOq2WXUvQqFUTgJ7xAsvhA1IeTQDcVYbyG7vw6-BtyckVgb-HVTNfzrQm3c9kMq5rwKjs5SGiwFh2nHTXzI942rrTk83o1nHgAIX2VHWKRIKVq32l7se9y0gi8gmwT0OCLQ90SwU4ZH3NOTQUrnw.W05UqzZZtPz0Id3nuPFxAvBT09KeEtazcm8mdzxHZ24&dib_tag=se&keywords=Logitech+C920&qid=1777130737&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BC920%2Caps%2C251&sr=8-4&tag=tiereduptech-20", "price":69.99, "inStock":true}},
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "fps": 30,
+    "autofocus": true
   },
   {
     "id": 100081,
@@ -114002,7 +114220,8 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-C920S-Pro-HD-Webcam/dp/B07K986YLL/ref=sr_1_3?crid=EW1N21FRQ61U&dib=eyJ2IjoiMSJ9.jPNsGEG4koGA9IWUTRKVVtoGAXhh2AFxmylYPBLDCpYxwA8pbFif40Z2-U0yypxvhySTVMa_7EIm1G2_M3TIJN0XOq2WXUvQqFUTgJ7xAsvhA1IeTQDcVYbyG7vw6-BtyckVgb-HVTNfzrQm3c9kMq5rwKjs5SGiwFh2nHTXzI942rrTk83o1nHgAIX2VHWKRIKVq32l7se9y0gi8gmwT0OCLQ90SwU4ZH3NOTQUrnw.W05UqzZZtPz0Id3nuPFxAvBT09KeEtazcm8mdzxHZ24&dib_tag=se&keywords=Logitech+C920&qid=1777130737&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BC920%2Caps%2C251&sr=8-3&tag=tiereduptech-20", "price":68.55, "inStock":true}},
     "resolution": "1080p",
-    "fps": 30
+    "fps": 30,
+    "autofocus": true
   },
   {
     "id": 100082,
@@ -114014,7 +114233,9 @@ export const PARTS = [
     "msrp": 150,
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/Insta360-Link-2C-Noise-Canceling-Streaming/dp/B0DDTGY8FG/ref=sr_1_1?crid=FSN84WU0UR66&dib=eyJ2IjoiMSJ9.hJSkz3sQocJ_XCbsNwK4Y3temiZftjZIuidlhDIadNoQXKABVsp77EPw6rHnKJx1R-qngsQAdOX0sqTkWeSRhG1izla6v08YK8wrLT1k8iZIvEbkynROzlrFsb0x0w2TYbK-LJJxWKuW_SSc36I4cQRlNOCBcBNsLizYq0fqPaFDqzOCoNGtE5sCtWuOHeLW_4xHVYYgLJGQGg8isGwxuvy6buEL0X_i-P__43l6pgk.mN3Z7VdEXLQJQlwmmIyFQy4QNCEn4e7DcXTHtRZb0pM&dib_tag=se&keywords=Insta360+webcam&qid=1777130736&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Insta360%2Bwebcam%2Caps%2C156&sr=8-1&tag=tiereduptech-20", "price":149.99, "inStock":true}},
-    "resolution": "4K"
+    "resolution": "4K",
+    "fps": 30,
+    "autofocus": true
   },
   {
     "id": 100083,
@@ -114026,7 +114247,9 @@ export const PARTS = [
     "msrp": 120,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-2017-Brio-4K-Webcam/dp/B01N5UOYC4/ref=sr_1_35?crid=HAN2OPTSB7WU&dib=eyJ2IjoiMSJ9.-d6QW9KDdjTdsF-cm_1lKjh8xG2w92PgrZLofe05k9SY5ZVx13HMmxhu3XdfbSqH6gSA9PeoqZXcFmPOdoVCMOKrPw8HsgykwJckKmqG2XUQLdYZg8CsKlHDOx2nFWwdb87Fo3Yq6dpLVRohDzkDlmQkegOcXHUahzJzTakY3DlNeKyBzaVWVF1i0cQVEoQR6PfojgZo3aa1DZb-0-i2PRc3VM53sv4YrLFG_1xdRL4.PXIVAwtxGM2O1IsMdZbDBjZk39iNVF-k2elbeNFUcDQ&dib_tag=se&keywords=Razer+Kiyo+Pro&qid=1777130742&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BKiyo%2BPro%2Caps%2C252&sr=8-35&xpid=paxmvJBrnqNjM&tag=tiereduptech-20", "price":120.47, "inStock":true}},
-    "resolution": "4K"
+    "resolution": "4K",
+    "fps": 30,
+    "autofocus": true
   },
   {
     "id": 100084,
@@ -114039,7 +114262,8 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/AutoFocus-Microphone-NexiGo-Streaming-Compatible/dp/B08931JJLV/ref=sr_1_44?crid=NJ0CRHMHL91P&dib=eyJ2IjoiMSJ9.U4aoqx6hhrpJ-Ohs6nmpufS1aJIpycqBT1bWa9Vbwc-p77zqWCcx4WrJD5ClkA_whZA8g5y3lF5VZQ9TLh57MuKkaI2yRILNkE62lYeAgHGOBG2aHZtplsq0sTmew6VXhZKt7ythJdyv8zdpIkq_gfJcp_DewV7LGROc_-pAOs_CWKuPAaWBxWvbpxCJTwtr1rxZJ5g11xMs22KIdRePgHgK4sBLP6X2N_A_F5RTNU0.Ij3OFqC0PdASzPKwp93PdwGDxsfNsGDCOnExWr8wJ4s&dib_tag=se&keywords=Razer+Kiyo&qid=1777130798&sprefix=Razer%2BKiyo%2Caps%2C101&sr=8-44&xpid=bINkmmP0uMtqX&tag=tiereduptech-20", "price":39.99, "inStock":true}},
     "resolution": "1080p",
-    "autofocus": true
+    "autofocus": true,
+    "fps": 30
   },
   {
     "id": 100085,
@@ -114051,7 +114275,9 @@ export const PARTS = [
     "msrp": 200,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Insta360-Link-Tracking-Noise-Canceling-Streaming/dp/B0DDTH3HX8/ref=sr_1_2?crid=FSN84WU0UR66&dib=eyJ2IjoiMSJ9.hJSkz3sQocJ_XCbsNwK4Y3temiZftjZIuidlhDIadNoQXKABVsp77EPw6rHnKJx1R-qngsQAdOX0sqTkWeSRhG1izla6v08YK8wrLT1k8iZIvEbkynROzlrFsb0x0w2TYbK-LJJxWKuW_SSc36I4cQRlNOCBcBNsLizYq0fqPaFDqzOCoNGtE5sCtWuOHeLW_4xHVYYgLJGQGg8isGwxuvy6buEL0X_i-P__43l6pgk.mN3Z7VdEXLQJQlwmmIyFQy4QNCEn4e7DcXTHtRZb0pM&dib_tag=se&keywords=Insta360+webcam&qid=1777130736&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Insta360%2Bwebcam%2Caps%2C156&sr=8-2&tag=tiereduptech-20", "price":199.99, "inStock":true}},
-    "resolution": "4K"
+    "resolution": "4K",
+    "fps": 30,
+    "autofocus": true
   },
   {
     "id": 100086,
@@ -114063,7 +114289,9 @@ export const PARTS = [
     "msrp": 38,
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Webcam-Streaming-Recording-Built-Correction/dp/B07M6Y7355/ref=sr_1_20?crid=2YLWT04NN0AX&dib=eyJ2IjoiMSJ9.wFokn-eKRu9L3nRf8EvVLlftN9vnyOPxV0aOnhOh7idInPFVKRIVV0Uu46poJmBwwSQgB0IdWlSn2cRE6UG040OJzr-uuiSlcCD7MNsdPT2F-YvFIFyHorIaBs5-JDpLFu9LS05stx8i95YLvqWc4nWRF1ItyjMDOMwOA6Mc1vIPKlXup_NZdftDP-yFS0QgBEFDZ5s9RrnOPijOA4SUksOCeX3BFC6O3rnE24LQ_e4.HU_k5xG3BmNJxtaSsInvJg82ppnktuwczcI-AC9PWJA&dib_tag=se&keywords=Aukey+webcam&qid=1777130752&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Aukey%2Bwebcam%2Caps%2C211&sr=8-20&xpid=s7TLFTCwXxRia&tag=tiereduptech-20", "price":37.99, "inStock":true}},
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "fps": 30,
+    "autofocus": false
   },
   {
     "id": 100087,
@@ -114090,7 +114318,8 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/OBSBOT-SE-Framing-Streaming-Computer/dp/B0DQ196WLW/ref=sr_1_35?crid=O29KU2UAPH0W&dib=eyJ2IjoiMSJ9.d2tshTpji1xPuYuyeB8zQlh2DAF0J0bYePDrIy7OuyMhtGLQPGjqRLqlyLZKMWy71JUu_mDzLmlZoqOByOnAxvPVLYIJ4csgoYHqFGzPVH7lXjPD1lf9FLH0ULccc-kvzLwcq0qlvaUGMvb02D231z7LwsVZgNJuxXmDnZ2eymivdvM0rHEiymLkdr6weyLx3m_Kj709KVJ4z5Us1Y_ZPiZd7FUWjGy9X45zRnZg5jo.8gqZhyOs9wu60LWEixVsJQwtPjYI9SPy24nIrF7xvHE&dib_tag=se&keywords=Anker+PowerConf&qid=1777130738&sprefix=Anker%2BPowerConf%2Caps%2C243&sr=8-35&xpid=UkgzwQfLm5D4X&tag=tiereduptech-20", "price":58, "inStock":true}},
     "resolution": "1080p",
-    "fps": 100
+    "fps": 100,
+    "autofocus": true
   },
   {
     "id": 100089,
@@ -114103,7 +114332,8 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/sspa/click?ie=UTF8&spc=MTozNzc2MTU5NjM1MTA1NTEzOjE3NzcxMzA3Mzc6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDAyNTUxODczMjE3MDI6OjI6Og&url=%2FOBSBOT-Lite-Tracking-Streaming-Microphones%2Fdp%2FB0CZ6XY78Y%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.85495479-a15b-4d81-9693-02a40ca2aee3%253Aamzn1.sym.85495479-a15b-4d81-9693-02a40ca2aee3%26crid%3DFSN84WU0UR66%26cv_ct_cx%3DInsta360%2Bwebcam%26keywords%3DInsta360%2Bwebcam%26pd_rd_i%3DB0CZ6XY78Y%26pd_rd_r%3Dbb300cc3-f4b7-4237-a965-9052a560aa67%26pd_rd_w%3DJuj0W%26pd_rd_wg%3DJchq2%26pf_rd_p%3D85495479-a15b-4d81-9693-02a40ca2aee3%26pf_rd_r%3DGP6DCNHR6YKTQP14971H%26qid%3D1777130736%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DInsta360%252Bwebcam%252Caps%252C156%26sr%3D1-3-1bea8d9f-7730-4703-a6c3-7636b0f722a4-spons%26aref%3DqPSLHifwnC%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1&aref=qPSLHifwnC&tag=tiereduptech-20", "price":119, "inStock":true}},
     "resolution": "4K",
-    "fps": 60
+    "fps": 60,
+    "autofocus": true
   },
   {
     "id": 100090,
@@ -114116,7 +114346,8 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-BRIO-Pro-701-Webcam/dp/B0BFJ4CRKD/ref=sr_1_26?crid=FSN84WU0UR66&dib=eyJ2IjoiMSJ9.b2Sz-jyj-WUkz2JGIumihOIPDzhip9843zgZ5SlVjUj5cr_GCnxJkjS9RYWMUt2Nt-Uj0qjyaaQaSBL2CaAtBTAjzRLhrXzSt_IfQ1QrvkdlzLvXF_dlDUDmm7-r3dHo-y2kGsFSkFRPuhtTfs434gDIZTu4fevNK4oiS5By72MjGKqK4-dMyCvfHHxqAhHNM6SAXYogElJ00gHjlE4uhOi6dV1aCmX8SXfrMbdLtmk.RcfsA1j5PovddvFyNz-FEsvDn2GyRtjJEpyMzA5CtwM&dib_tag=se&keywords=Insta360+webcam&qid=1777130738&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Insta360%2Bwebcam%2Caps%2C156&sr=8-26&xpid=8Ae2VxcKgdFGq&tag=tiereduptech-20", "price":198.9, "inStock":true}},
     "resolution": "4K",
-    "fps": 60
+    "fps": 60,
+    "autofocus": true
   },
   {
     "id": 100091,
@@ -114128,7 +114359,9 @@ export const PARTS = [
     "msrp": 150,
     "r": 4.5,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Calling-Noise-Canceling-Correction-Microsoft/dp/B09NBWWP79/ref=sr_1_35?crid=FSN84WU0UR66&dib=eyJ2IjoiMSJ9.Njy7wUY7TqjPJZFLH7EE8kj5igzoc7AgCSgz7wizs5WYNRtbwPawLoilA_iBgAbNCSeip8pyvx3_FjbdKNo5eDEtt17TDmfpH8P7JEAnglIfhfRx7A30fkH4_fbu0Gv6cf_ZJEsKzzK1WvuEosh6ipEP8g9BkuMBih8VMeFjClukpvHYjcKKq4a7jl4HtM6b6taL5by3Y_rnvL0H_OZG97wTUOYJEQai9seQcJmBSg0.TFBeuTJDpt4_YNfzftZniKs5Lj2fWHmONKjozbgTIKI&dib_tag=se&keywords=Insta360+webcam&qid=1777130741&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Insta360%2Bwebcam%2Caps%2C156&sr=8-35&xpid=8Ae2VxcKgdFGq&tag=tiereduptech-20", "price":149.99, "inStock":true}},
-    "resolution": "4K"
+    "resolution": "4K",
+    "fps": 30,
+    "autofocus": true
   },
   {
     "id": 100092,
@@ -114141,7 +114374,8 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/EMEET-Microphone-C960-2025-Version/dp/B0DSPJPRXD/ref=sr_1_7?crid=EW1N21FRQ61U&dib=eyJ2IjoiMSJ9.jPNsGEG4koGA9IWUTRKVVtoGAXhh2AFxmylYPBLDCpYxwA8pbFif40Z2-U0yypxvhySTVMa_7EIm1G2_M3TIJN0XOq2WXUvQqFUTgJ7xAsvhA1IeTQDcVYbyG7vw6-BtyckVgb-HVTNfzrQm3c9kMq5rwKjs5SGiwFh2nHTXzI942rrTk83o1nHgAIX2VHWKRIKVq32l7se9y0gi8gmwT0OCLQ90SwU4ZH3NOTQUrnw.W05UqzZZtPz0Id3nuPFxAvBT09KeEtazcm8mdzxHZ24&dib_tag=se&keywords=Logitech+C920&qid=1777130737&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BC920%2Caps%2C251&sr=8-7&tag=tiereduptech-20", "price":27.07, "inStock":true}},
     "resolution": "1080p",
-    "autofocus": false
+    "autofocus": false,
+    "fps": 30
   },
   {
     "id": 100093,
@@ -114153,7 +114387,9 @@ export const PARTS = [
     "msrp": 46,
     "r": 4.4,
     "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-960-001513-Degas-Black/dp/B09WHRSJ83/ref=sr_1_47?crid=EW1N21FRQ61U&dib=eyJ2IjoiMSJ9.kMs8yJi2eRm3rJzNnOQ6lRRjbpannufKNSCNGuK5t5eM8G1q2wCvZwDUJAeiTpqWoVrRGvChdkCMpMPD6SWyij9iSDCnlClMq8J--nhFWPgiiAqVDk7jm31txgZZHGiMe-ZEWEoqjUxuV-BC5E3Mc0vngk4gNadTf0n2bMBoQ2tVQXAHV61F4DOiS3fvUdOM3NC8MgV0hAr5HvtYRrRiEDzMAH-gdqLQ_W0cpk1iR5Y.Hhqp1H8C-htJn89fxAAQzUrSRrI8k150OMDQkvNXRug&dib_tag=se&keywords=Logitech+C920&qid=1777130743&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BC920%2Caps%2C251&sr=8-47&xpid=awC77QT9YyJ_D&tag=tiereduptech-20", "price":45.99, "inStock":true}},
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "fps": 30,
+    "autofocus": true
   },
   {
     "id": 100094,
@@ -114179,7 +114415,8 @@ export const PARTS = [
     "msrp": 25,
     "r": 4.7,
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-Heavy-Cloth-Gaming-Mouse/dp/B000V7ARAU/ref=sr_1_1?crid=Q3S9LJ9PYQSO&dib=eyJ2IjoiMSJ9.yiE8bON2mh9qtX_zWZvqVu8QTIqvKs0sx1SYQmtrYtWjMbweE68ZKMA36GGOSGIbgN5qswevNdYkqO1fX142ZtjhZFqoP3TsV83UgEUhRPjZEtf0dbwZ_Yboh8gdqkRyYBi89NAzJPjNBRKVW6pgd2RuGpP1nZU6NivTX34bZ_YU4aqnLDlxEyaFqOpBNvRY8IttFoXRpR68rjxveL1Yo3uzg0ohPk_CbESs6Euy6frSarmhSZ0AXyj5MarC9gJbd4aGBKXJ_t3wuUtpr-x-E9VUqM17HNaUauqb2zEpYNc.X5pO14GJsj9lxHeWu_BbpA3PNJaR8MO_XNrXLDgjWo8&dib_tag=se&keywords=SteelSeries+QcK+Heavy&qid=1777130818&sprefix=SteelSeries%2BQcK%2BHeavy%2Caps%2C252&sr=8-1&tag=tiereduptech-20", "price":24.99, "inStock":true}},
-    "padSize": "Large"
+    "padSize": "Large",
+    "surface": "Cloth"
   },
   {
     "id": 100096,
@@ -114191,7 +114428,8 @@ export const PARTS = [
     "msrp": 20,
     "r": 4.7,
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-QcK-Cloth-Gaming-Mouse/dp/B000UVRU6G/ref=sr_1_4?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-4&tag=tiereduptech-20", "price":19.99, "inStock":true}},
-    "padSize": "Large"
+    "padSize": "Large",
+    "surface": "Cloth"
   },
   {
     "id": 100097,
@@ -114203,7 +114441,8 @@ export const PARTS = [
     "msrp": 30,
     "r": 4.7,
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-QcK-Gaming-Mouse-Pad-PC/dp/B0D1T1HZCC/ref=sr_1_5?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-5&tag=tiereduptech-20", "price":29.99, "inStock":true}},
-    "surface": "Cloth"
+    "surface": "Cloth",
+    "padSize": "XXL"
   },
   {
     "id": 100098,
@@ -114215,7 +114454,8 @@ export const PARTS = [
     "msrp": 11,
     "r": 4.7,
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-QcK-Gaming-Surface-Optimized/dp/B000UEZ36W/ref=sr_1_8?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-8&tag=tiereduptech-20", "price":10.99, "inStock":true}},
-    "padSize": "Medium"
+    "padSize": "Medium",
+    "surface": "Cloth"
   },
   {
     "id": 100099,
@@ -114227,7 +114467,8 @@ export const PARTS = [
     "msrp": 30,
     "r": 4.7,
     "deals": {"amazon":{"url":"https://www.amazon.com/SteelSeries-Heavy-Cloth-Gaming-Mouse/dp/B00WAA2704/ref=sr_1_7?crid=0A983AQ8MDHC&dib=eyJ2IjoiMSJ9.oVqO6q8WNbpz_n9ytBDRHpkLNIy7YAqzI3_ecP5SaAwhjPoKJNXAlS0_X7Z7ifuQhpVzO2DzGhC8C30YZwo6FlA4BpCizKcQSCaPpbVKuRdXd6ITmF9Y_T29EbQQ-7xtF1dLJzvUp-hFxfawthhVtJOUZhaaUAlJxsMa-J1wyKWaHLB6Lwaeg0gV37dpQkpjVA5xp8_i_3NTRCITV9OG6-3V3hj280ZOQ3EZBi0UaoyqoB14-TK8zV5qHR-S2r3a_vpuew98mbkyp4aCIMezQkvu8OpGb4Z6jVIXsHx13Ag.Zbn_jD7k3vwdqR1gS9Sk_9NCkmvtfGHAsVm7-PZHhhQ&dib_tag=se&keywords=Glorious+3XL+mousepad&qid=1777130818&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Glorious%2B3XL%2Bmousepad%2Caps%2C247&sr=8-7&tag=tiereduptech-20", "price":29.99, "inStock":true}},
-    "surface": "Cloth"
+    "surface": "Cloth",
+    "padSize": "XXL"
   },
   {
     "id": 100100,
@@ -114238,7 +114479,9 @@ export const PARTS = [
     "pr": 14,
     "msrp": 14,
     "r": 4.6,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Leather-Protector-Non-Slip-Blotter-Waterproof/dp/B082F5ZLS5/ref=sr_1_26?crid=O7OBLNC4EHMD&dib=eyJ2IjoiMSJ9.7Xc9D48WwXKjU77p2qN8MSKpy-X3YkcYB6YYmFy05y4WbI93DXPmuGuAoaWFEU4N-x2_QLeoyYhEZ5rmUqlHY6fsXnRIJIMrOCEX7EfbSpuIFVsKkAdVSnwFWn0xk4KTkQRlxmU0oltrC6e7ZqA7FkOpsky7D2y53miRPzGJiRdtYE7wQHYQ-HEVVH9zzV0fyp_e4qLnhjB2IBOXM35gLGLiIyjk7qFjXt_tNI8KwP0.DW4q6Z42gZJ29kitiWIHxXsCLd0UaXeGsou8hH7ZlzQ&dib_tag=se&keywords=desk+mat+XXL&qid=1777130821&sprefix=desk%2Bmat%2BXXL%2Caps%2C146&sr=8-26&xpid=eUCGAcyb4Bpy3&tag=tiereduptech-20", "price":13.99, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Leather-Protector-Non-Slip-Blotter-Waterproof/dp/B082F5ZLS5/ref=sr_1_26?crid=O7OBLNC4EHMD&dib=eyJ2IjoiMSJ9.7Xc9D48WwXKjU77p2qN8MSKpy-X3YkcYB6YYmFy05y4WbI93DXPmuGuAoaWFEU4N-x2_QLeoyYhEZ5rmUqlHY6fsXnRIJIMrOCEX7EfbSpuIFVsKkAdVSnwFWn0xk4KTkQRlxmU0oltrC6e7ZqA7FkOpsky7D2y53miRPzGJiRdtYE7wQHYQ-HEVVH9zzV0fyp_e4qLnhjB2IBOXM35gLGLiIyjk7qFjXt_tNI8KwP0.DW4q6Z42gZJ29kitiWIHxXsCLd0UaXeGsou8hH7ZlzQ&dib_tag=se&keywords=desk+mat+XXL&qid=1777130821&sprefix=desk%2Bmat%2BXXL%2Caps%2C146&sr=8-26&xpid=eUCGAcyb4Bpy3&tag=tiereduptech-20", "price":13.99, "inStock":true}},
+    "surface": "Hard",
+    "padSize": "Large"
   },
   {
     "id": 100101,
@@ -114276,7 +114519,8 @@ export const PARTS = [
     "msrp": 14,
     "r": 4.8,
     "deals": {"amazon":{"url":"https://www.amazon.com/Cmhoo-Professional-Large-Computer-35-4x15-7x0-1IN/dp/B01F0XHA5E/ref=sr_1_36?crid=KQDLJ9BDNTG8&dib=eyJ2IjoiMSJ9.RPajjEDW5WQ1_RKETkkiH8rxdiQknrxVAZAFks-5WBWM_Tg_w9rPwuB0sgsPiqKCAoq_iqni0B3CaAziGN1n5_TGYZ2aN6td-FfA_fnIsLaOTxv5xNVUAFUeMS7Dfx0ktBXcJ_jckh-EBUyl1K_6FLr6BWfmD4GDENLP14ifkkh_cWCcvLkC_arHvtIJjpozaIpJrTZPUbFtHclYGNiaEGB5x7rt6900Z_5BmD_DsgQv0eTssGbQdH6b-jZKcUtWOOOsOvdNvmKgO_7f7adb9AgPz2ZqH4qe9VNK0CZeZpE.Xa3P6q1V1p1-FR9EZQnE6aTdmAOjWIHrJlHmatcTpBE&dib_tag=se&keywords=large+gaming+mousepad&qid=1777130819&sprefix=large%2Bgaming%2Bmousepad%2Caps%2C152&sr=8-36&tag=tiereduptech-20", "price":13.98, "inStock":true}},
-    "padSize": "Large"
+    "padSize": "Large",
+    "surface": "Cloth"
   },
   {
     "id": 100104,
@@ -114287,7 +114531,9 @@ export const PARTS = [
     "pr": 10,
     "msrp": 10,
     "r": 4.7,
-    "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Mouse-Pad-Anti-Slip-Spill-Resistant/dp/B09DV56338/ref=sr_1_14?crid=6X92Q010DTS6&dib=eyJ2IjoiMSJ9.8zRBis50cNAcjldknHNTiqFVC1eD8OfG6EIsiJGwU-zVrcAmbtDslOYy7g2cm7YRBHuBFZtgdzxBU_MSLSz-wuybU4sJTot0PFE19VRstnBphB-IvLUA3XOKYNGsctkBPc3vN3vcPR024YwAb3Iw_crDLv7XZzk5Gb2g60lO6yb5sOlb8GMNounwKNAf1riwI2L8JcHhDCEOPIV8NS-wAEoXhbHfl6zmkoqMw2RKMfo.UrkV8gMKcupxnL3gS_hEem7Tp_qkmm5-T7p8CNW5Yuw&dib_tag=se&keywords=SteelSeries+QcK&qid=1777130819&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BQcK%2Caps%2C204&sr=8-14&tag=tiereduptech-20", "price":9.99, "inStock":true}}
+    "deals": {"amazon":{"url":"https://www.amazon.com/Logitech-Mouse-Pad-Anti-Slip-Spill-Resistant/dp/B09DV56338/ref=sr_1_14?crid=6X92Q010DTS6&dib=eyJ2IjoiMSJ9.8zRBis50cNAcjldknHNTiqFVC1eD8OfG6EIsiJGwU-zVrcAmbtDslOYy7g2cm7YRBHuBFZtgdzxBU_MSLSz-wuybU4sJTot0PFE19VRstnBphB-IvLUA3XOKYNGsctkBPc3vN3vcPR024YwAb3Iw_crDLv7XZzk5Gb2g60lO6yb5sOlb8GMNounwKNAf1riwI2L8JcHhDCEOPIV8NS-wAEoXhbHfl6zmkoqMw2RKMfo.UrkV8gMKcupxnL3gS_hEem7Tp_qkmm5-T7p8CNW5Yuw&dib_tag=se&keywords=SteelSeries+QcK&qid=1777130819&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BQcK%2Caps%2C204&sr=8-14&tag=tiereduptech-20", "price":9.99, "inStock":true}},
+    "surface": "Cloth",
+    "padSize": "Medium"
   },
   {
     "id": 100105,
@@ -114299,7 +114545,8 @@ export const PARTS = [
     "msrp": 27,
     "r": 4.7,
     "deals": {"amazon":{"url":"https://www.amazon.com/Razer-Gigantus-Cloth-Gaming-Mouse/dp/B0885FJ8CB/ref=sr_1_6?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-6&tag=tiereduptech-20", "price":26.98, "inStock":true}, "bestbuy": {"url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6417112&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6417112.p%3FskuId%3D6417112", "price": 26.99, "inStock": true}},
-    "surface": "Cloth"
+    "surface": "Cloth",
+    "padSize": "XXL"
   },
   {
     "id": 100106,
@@ -114311,7 +114558,8 @@ export const PARTS = [
     "msrp": 8,
     "r": 4.8,
     "deals": {"amazon":{"url":"https://www.amazon.com/TEDNETGO-Large-Mouse-Pad-Gaming/dp/B08DS7FM9K/ref=sr_1_31?crid=0A983AQ8MDHC&dib=eyJ2IjoiMSJ9.oVqO6q8WNbpz_n9ytBDRHpkLNIy7YAqzI3_ecP5SaAwhjPoKJNXAlS0_X7Z7ifuQhpVzO2DzGhC8C30YZwo6FlA4BpCizKcQSCaPpbVKuRdXd6ITmF9Y_T29EbQQ-7xtF1dLJzvUp-hFxfawthhVtJOUZhaaUAlJxsMa-J1wyKWaHLB6Lwaeg0gV37dpQkpjVA5xp8_i_3NTRCITV9OG6-3V3hj280ZOQ3EZBi0UaoyqoB14-TK8zV5qHR-S2r3a_vpuew98mbkyp4aCIMezQkvu8OpGb4Z6jVIXsHx13Ag.Zbn_jD7k3vwdqR1gS9Sk_9NCkmvtfGHAsVm7-PZHhhQ&dib_tag=se&keywords=Glorious+3XL+mousepad&qid=1777130818&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Glorious%2B3XL%2Bmousepad%2Caps%2C247&sr=8-31&tag=tiereduptech-20", "price":8.42, "inStock":true}},
-    "padSize": "XXL"
+    "padSize": "XXL",
+    "surface": "Cloth"
   },
   {
     "id": 100107,
@@ -114323,7 +114571,8 @@ export const PARTS = [
     "msrp": 14,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/RGB-Mousepad-Led-Mouse-Large/dp/B08QFB5KVS/ref=sr_1_29?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-29&tag=tiereduptech-20", "price":13.99, "inStock":true}},
-    "padSize": "Large"
+    "padSize": "Large",
+    "surface": "Cloth"
   },
   {
     "id": 100108,
@@ -114361,7 +114610,8 @@ export const PARTS = [
     "msrp": 14,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/AmazonBasics-Large-Extended-Gaming-Computer/dp/B06X19FLTC/ref=sr_1_33?crid=0A983AQ8MDHC&dib=eyJ2IjoiMSJ9.oVqO6q8WNbpz_n9ytBDRHpkLNIy7YAqzI3_ecP5SaAwhjPoKJNXAlS0_X7Z7ifuQhpVzO2DzGhC8C30YZwo6FlA4BpCizKcQSCaPpbVKuRdXd6ITmF9Y_T29EbQQ-7xtF1dLJzvUp-hFxfawthhVtJOUZhaaUAlJxsMa-J1wyKWaHLB6Lwaeg0gV37dpQkpjVA5xp8_i_3NTRCITV9OG6-3V3hj280ZOQ3EZBi0UaoyqoB14-TK8zV5qHR-S2r3a_vpuew98mbkyp4aCIMezQkvu8OpGb4Z6jVIXsHx13Ag.Zbn_jD7k3vwdqR1gS9Sk_9NCkmvtfGHAsVm7-PZHhhQ&dib_tag=se&keywords=Glorious+3XL+mousepad&qid=1777130818&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Glorious%2B3XL%2Bmousepad%2Caps%2C247&sr=8-33&tag=tiereduptech-20", "price":13.59, "inStock":true}},
-    "padSize": "XXL"
+    "padSize": "XXL",
+    "surface": "Cloth"
   },
   {
     "id": 100111,
@@ -114386,7 +114636,8 @@ export const PARTS = [
     "msrp": 15,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/QIYI-Non-Slip-Waterproof-Mousepad-Computer/dp/B08JLW4KWN/ref=sr_1_32?crid=KQDLJ9BDNTG8&dib=eyJ2IjoiMSJ9.RPajjEDW5WQ1_RKETkkiH8rxdiQknrxVAZAFks-5WBWM_Tg_w9rPwuB0sgsPiqKCAoq_iqni0B3CaAziGN1n5_TGYZ2aN6td-FfA_fnIsLaOTxv5xNVUAFUeMS7Dfx0ktBXcJ_jckh-EBUyl1K_6FLr6BWfmD4GDENLP14ifkkh_cWCcvLkC_arHvtIJjpozaIpJrTZPUbFtHclYGNiaEGB5x7rt6900Z_5BmD_DsgQv0eTssGbQdH6b-jZKcUtWOOOsOvdNvmKgO_7f7adb9AgPz2ZqH4qe9VNK0CZeZpE.Xa3P6q1V1p1-FR9EZQnE6aTdmAOjWIHrJlHmatcTpBE&dib_tag=se&keywords=large+gaming+mousepad&qid=1777130819&sprefix=large%2Bgaming%2Bmousepad%2Caps%2C152&sr=8-32&tag=tiereduptech-20", "price":14.99, "inStock":true}},
-    "padSize": "XXL"
+    "padSize": "XXL",
+    "surface": "Hard"
   },
   {
     "id": 100113,
@@ -114398,7 +114649,8 @@ export const PARTS = [
     "msrp": 10,
     "r": 4.8,
     "deals": {"amazon":{"url":"https://www.amazon.com/Gaming-Mouse-Protector-Waterproof-Accessories/dp/B0CKMFL9CC/ref=sr_1_28?crid=KQDLJ9BDNTG8&dib=eyJ2IjoiMSJ9.RPajjEDW5WQ1_RKETkkiH8rxdiQknrxVAZAFks-5WBWM_Tg_w9rPwuB0sgsPiqKCAoq_iqni0B3CaAziGN1n5_TGYZ2aN6td-FfA_fnIsLaOTxv5xNVUAFUeMS7Dfx0ktBXcJ_jckh-EBUyl1K_6FLr6BWfmD4GDENLP14ifkkh_cWCcvLkC_arHvtIJjpozaIpJrTZPUbFtHclYGNiaEGB5x7rt6900Z_5BmD_DsgQv0eTssGbQdH6b-jZKcUtWOOOsOvdNvmKgO_7f7adb9AgPz2ZqH4qe9VNK0CZeZpE.Xa3P6q1V1p1-FR9EZQnE6aTdmAOjWIHrJlHmatcTpBE&dib_tag=se&keywords=large+gaming+mousepad&qid=1777130819&sprefix=large%2Bgaming%2Bmousepad%2Caps%2C152&sr=8-28&tag=tiereduptech-20", "price":9.99, "inStock":true}},
-    "padSize": "XXL"
+    "padSize": "XXL",
+    "surface": "Cloth"
   },
   {
     "id": 100114,
@@ -114674,7 +114926,9 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6265132&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6265132.p%3FskuId%3D6265132","price":109.99,"inStock":false}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 80,
+    "dpi": 25600
   },
   {
     "id": 100136,
@@ -114687,7 +114941,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6316173&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6316173.p%3FskuId%3D6316173","price":64.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 100,
+    "dpi": 10000
   },
   {
     "id": 100137,
@@ -114700,7 +114956,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6333838&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6333838.p%3FskuId%3D6333838","price":49.99,"inStock":false}},
     "sensor": "Optical",
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 87,
+    "dpi": 25600
   },
   {
     "id": 100138,
@@ -114713,7 +114971,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6333839&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6333839.p%3FskuId%3D6333839","price":97.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 110,
+    "dpi": 12000
   },
   {
     "id": 100139,
@@ -114726,7 +114986,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6337071&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6337071.p%3FskuId%3D6337071","price":95.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 115,
+    "dpi": 18000
   },
   {
     "id": 100140,
@@ -114739,7 +115001,9 @@ export const PARTS = [
     "r": 4.2,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6350465&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6350465.p%3FskuId%3D6350465","price":89.99,"inStock":false}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 130,
+    "dpi": 18000
   },
   {
     "id": 100141,
@@ -114752,7 +115016,9 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6360208&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6360208.p%3FskuId%3D6360208","price":32.99,"inStock":false}},
     "sensor": "Optical",
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 100,
+    "dpi": 16000
   },
   {
     "id": 100142,
@@ -114765,7 +115031,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6391079&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6391079.p%3FskuId%3D6391079","price":16.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 280,
+    "dpi": 7200
   },
   {
     "id": 100143,
@@ -114778,7 +115046,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6393997&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6393997.p%3FskuId%3D6393997","price":59.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 122,
+    "dpi": 18000
   },
   {
     "id": 100144,
@@ -114791,7 +115061,9 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6394002&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6394002.p%3FskuId%3D6394002","price":99.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 133,
+    "dpi": 18000
   },
   {
     "id": 100145,
@@ -114804,7 +115076,9 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6396206&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6396206.p%3FskuId%3D6396206","price":19.99,"inStock":false}},
     "sensor": "Optical",
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 77,
+    "dpi": 8500
   },
   {
     "id": 100146,
@@ -114817,7 +115091,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6459644&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6459644.p%3FskuId%3D6459644","price":41.64,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 85,
+    "dpi": 18000
   },
   {
     "id": 100147,
@@ -114830,7 +115106,9 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6485231&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6485231.p%3FskuId%3D6485231","price":44.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 68,
+    "dpi": 8500
   },
   {
     "id": 100148,
@@ -114843,7 +115121,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6485744&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6485744.p%3FskuId%3D6485744","price":59.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 95,
+    "dpi": 26000
   },
   {
     "id": 100149,
@@ -114856,7 +115136,9 @@ export const PARTS = [
     "r": 4.2,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6501463&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6501463.p%3FskuId%3D6501463","price":189.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 89,
+    "dpi": 18000
   },
   {
     "id": 100150,
@@ -114869,7 +115151,9 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6504265&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6504265.p%3FskuId%3D6504265","price":44.99,"inStock":false}},
     "sensor": "Optical",
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 59,
+    "dpi": 16000
   },
   {
     "id": 100151,
@@ -114882,7 +115166,9 @@ export const PARTS = [
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6511295&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6511295.p%3FskuId%3D6511295","price":69.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 85,
+    "dpi": 8200
   },
   {
     "id": 100152,
@@ -114895,7 +115181,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6519203&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6519203.p%3FskuId%3D6519203","price":79.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 69,
+    "dpi": 19000
   },
   {
     "id": 100153,
@@ -114908,7 +115196,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6521085&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6521085.p%3FskuId%3D6521085","price":64.98,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 91,
+    "dpi": 30000
   },
   {
     "id": 100154,
@@ -114921,7 +115211,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6529371&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6529371.p%3FskuId%3D6529371","price":126.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 168,
+    "dpi": 19000
   },
   {
     "id": 100155,
@@ -114934,7 +115226,9 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6537579&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6537579.p%3FskuId%3D6537579","price":79.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 54,
+    "dpi": 36000
   },
   {
     "id": 100156,
@@ -114947,7 +115241,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547950&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547950.p%3FskuId%3D6547950","price":64.99,"inStock":false}},
     "sensor": "Optical",
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 59,
+    "dpi": 26000
   },
   {
     "id": 100157,
@@ -114960,7 +115256,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6548181&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6548181.p%3FskuId%3D6548181","price":29.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 58,
+    "dpi": 8500
   },
   {
     "id": 100158,
@@ -114973,7 +115271,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6548182&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6548182.p%3FskuId%3D6548182","price":99.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 77,
+    "dpi": 30000
   },
   {
     "id": 100159,
@@ -114986,7 +115286,9 @@ export const PARTS = [
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6556754&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6556754.p%3FskuId%3D6556754","price":149.99,"inStock":true}},
     "sensor": "HERO 2",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 60,
+    "dpi": 32000
   },
   {
     "id": 100160,
@@ -114999,7 +115301,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6558788&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6558788.p%3FskuId%3D6558788","price":24.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 69,
+    "dpi": 12400
   },
   {
     "id": 100161,
@@ -115012,7 +115316,9 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6573602&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6573602.p%3FskuId%3D6573602","price":64.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 89,
+    "dpi": 26000
   },
   {
     "id": 100162,
@@ -115025,7 +115331,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578712&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578712.p%3FskuId%3D6578712","price":99.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 67,
+    "dpi": 26000
   },
   {
     "id": 100163,
@@ -115038,7 +115346,9 @@ export const PARTS = [
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586068&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586068.p%3FskuId%3D6586068","price":57.49,"inStock":true}},
     "sensor": "HERO 25K",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 0,
+    "dpi": 32000
   },
   {
     "id": 100164,
@@ -115051,7 +115361,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595182&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595182.p%3FskuId%3D6595182","price":149.99,"inStock":true}},
     "sensor": "HERO 2",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 60,
+    "dpi": 44000
   },
   {
     "id": 100165,
@@ -115064,7 +115376,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595185&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595185.p%3FskuId%3D6595185","price":119.99,"inStock":true}},
     "sensor": "HERO 44K",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 80,
+    "dpi": 44000
   },
   {
     "id": 100166,
@@ -115077,7 +115391,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604495&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604495.p%3FskuId%3D6604495","price":49.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 85,
+    "dpi": 12400
   },
   {
     "id": 100167,
@@ -115090,7 +115406,9 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621764&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621764.p%3FskuId%3D6621764","price":169.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 56,
+    "dpi": 45000
   },
   {
     "id": 100168,
@@ -115103,7 +115421,9 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6622827&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6622827.p%3FskuId%3D6622827","price":89.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 114,
+    "dpi": 26000
   },
   {
     "id": 100169,
@@ -115116,7 +115436,9 @@ export const PARTS = [
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6623863&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6623863.p%3FskuId%3D6623863","price":39.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wired"
+    "mouseType": "Wired",
+    "weight": 55,
+    "dpi": 26000
   },
   {
     "id": 100170,
@@ -115129,7 +115451,9 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636035&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636035.p%3FskuId%3D6636035","price":159.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 66,
+    "dpi": 26000
   },
   {
     "id": 100171,
@@ -115142,7 +115466,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636038&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636038.p%3FskuId%3D6636038","price":99.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 69,
+    "dpi": 26000
   },
   {
     "id": 100172,
@@ -115155,7 +115481,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637500&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637500.p%3FskuId%3D6637500","price":99.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 36,
+    "dpi": 26000
   },
   {
     "id": 100173,
@@ -115169,7 +115497,8 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642549&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642549.p%3FskuId%3D6642549","price":139.99,"inStock":true}},
     "sensor": "HERO 2",
     "dpi": 44000,
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 60
   },
   {
     "id": 100174,
@@ -115182,7 +115511,9 @@ export const PARTS = [
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6666378&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6666378.p%3FskuId%3D6666378","price":69.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 0,
+    "dpi": 18000
   },
   {
     "id": 100175,
@@ -115194,7 +115525,10 @@ export const PARTS = [
     "msrp": 180,
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6667851&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6667851.p%3FskuId%3D6667851","price":179.99,"inStock":true}},
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "sensor": "Optical",
+    "weight": 61,
+    "dpi": 44000
   },
   {
     "id": 100176,
@@ -115207,7 +115541,9 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669259&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669259.p%3FskuId%3D6669259","price":159.99,"inStock":true}},
     "sensor": "Optical",
-    "mouseType": "Wireless"
+    "mouseType": "Wireless",
+    "weight": 49,
+    "dpi": 45000
   },
   {
     "id": 100177,
@@ -115240,17 +115576,6 @@ export const PARTS = [
     "rgb": true
   },
   {
-    "id": 100179,
-    "n": "HyperX - Wrist Rest - Black",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6290/6290679_sd.jpg",
-    "c": "Keyboard",
-    "b": "HyperX",
-    "pr": 23,
-    "msrp": 23,
-    "r": 4.8,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6290679&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6290679.p%3FskuId%3D6290679","price":22.99,"inStock":true}}
-  },
-  {
     "id": 100180,
     "n": "SteelSeries - Apex 7 Full Size Wired Mechanical Red Linear Switch Gaming Keyboard with Rapid Tap - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d0966d5c-c755-4420-b1c8-55bd8468ea83.jpg",
@@ -115262,7 +115587,8 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6346166&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6346166.p%3FskuId%3D6346166","price":146.99,"inStock":true}},
     "switches": "Mechanical",
     "layout": "Full-Size",
-    "wireless": false
+    "wireless": false,
+    "rgb": true
   },
   {
     "id": 100181,
@@ -115385,17 +115711,6 @@ export const PARTS = [
     "rgb": true
   },
   {
-    "id": 100189,
-    "n": "SteelSeries - PRISMCAPS – Universal Double Shot PBT Keycaps - White",
-    "img": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6459/6459649cv11d.jpg",
-    "c": "Keyboard",
-    "b": "SteelSeries",
-    "pr": 30,
-    "msrp": 30,
-    "r": 4.7,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6459649&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6459649.p%3FskuId%3D6459649","price":29.99,"inStock":true}}
-  },
-  {
     "id": 100190,
     "n": "Razer - Huntsman V2 TKL Wired Optical Purple Clicky Switch Gaming Keyboard with Chroma RGB Backlighting - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/d4a97d1d-04b2-4734-bcc6-594bb910c723.jpg",
@@ -115452,7 +115767,8 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6511298&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6511298.p%3FskuId%3D6511298","price":219.99,"inStock":false}},
     "switches": "Mechanical",
     "layout": "TKL",
-    "wireless": true
+    "wireless": true,
+    "rgb": true
   },
   {
     "id": 100194,
@@ -115500,31 +115816,6 @@ export const PARTS = [
     "rgb": true
   },
   {
-    "id": 100197,
-    "n": "Glorious - GPBT Gradient Universal Keycap Set Compatible with Most 100% 85% 80% TKL 60% Compact 75% Mechanical Keyboards - Celestial Fire",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6528/6528068_sd.jpg",
-    "c": "Keyboard",
-    "b": "Glorious",
-    "pr": 20,
-    "msrp": 100,
-    "r": 4.7,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6528068&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6528068.p%3FskuId%3D6528068","price":19.99,"inStock":false}},
-    "switches": "Mechanical",
-    "layout": "TKL"
-  },
-  {
-    "id": 100198,
-    "n": "Glorious - Lubed Mechanical Keyboard 5-pin Hot Swappable Switches (36x) - Clicky - Raptor",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/1f8bd56e-13fe-4a1a-ae3a-3db62ab5ec96.png",
-    "c": "Keyboard",
-    "b": "Glorious",
-    "pr": 25,
-    "msrp": 40,
-    "r": 4.6,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547951&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547951.p%3FskuId%3D6547951","price":24.99,"inStock":true}},
-    "switches": "Mechanical"
-  },
-  {
     "id": 100199,
     "n": "SteelSeries - Apex 9 Mini 60% Wired Optical OptiPoint Adjustable Actuation Switch Gaming Keyboard with Rapid Tap - Black",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/566f8eb6-46c5-4cad-bb25-1e76b73a7ee8.jpg",
@@ -115536,7 +115827,8 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6519664&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6519664.p%3FskuId%3D6519664","price":105,"inStock":true}},
     "switches": "Optical",
     "layout": "60%",
-    "wireless": false
+    "wireless": false,
+    "rgb": true
   },
   {
     "id": 100200,
@@ -115550,7 +115842,8 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547466&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547466.p%3FskuId%3D6547466","price":79.99,"inStock":true}},
     "switches": "Optical",
     "layout": "65%",
-    "rgb": true
+    "rgb": true,
+    "wireless": false
   },
   {
     "id": 100201,
@@ -115564,20 +115857,7 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547948&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547948.p%3FskuId%3D6547948","price":79.99,"inStock":true}},
     "switches": "Mechanical",
     "layout": "Full-Size",
-    "wireless": false
-  },
-  {
-    "id": 100202,
-    "n": "Glorious - Polychroma Universal RGB Keycaps for 100% 85% 80% TKL 60% Compact 75% Mechanical Keyboards - Translucent",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6547/6547954_sd.jpg",
-    "c": "Keyboard",
-    "b": "Glorious",
-    "pr": 34,
-    "msrp": 40,
-    "r": 4.6,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547954&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547954.p%3FskuId%3D6547954","price":33.99,"inStock":false}},
-    "switches": "Mechanical",
-    "layout": "TKL",
+    "wireless": false,
     "rgb": true
   },
   {
@@ -115651,20 +115931,8 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586712&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586712.p%3FskuId%3D6586712","price":164.99,"inStock":true}},
     "switches": "Mechanical",
-    "wireless": false
-  },
-  {
-    "id": 100208,
-    "n": "Glorious - Polychroma Translucent Universal RGB Keycaps for 100% 85% 80% TKL 60% Compact 75% Mechanical Keyboards - Translucent V2",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/ec9f5019-276e-4191-b83b-76005b089774.jpg",
-    "c": "Keyboard",
-    "b": "Glorious",
-    "pr": 40,
-    "msrp": 50,
-    "r": 4.6,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586715&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586715.p%3FskuId%3D6586715","price":39.99,"inStock":true}},
-    "switches": "Mechanical",
-    "layout": "TKL",
+    "wireless": false,
+    "layout": "Full-Size",
     "rgb": true
   },
   {
@@ -115678,7 +115946,9 @@ export const PARTS = [
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586717&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586717.p%3FskuId%3D6586717","price":170.99,"inStock":true}},
     "layout": "75%",
-    "wireless": false
+    "wireless": false,
+    "switches": "Hall Effect",
+    "rgb": true
   },
   {
     "id": 100210,
@@ -115692,7 +115962,8 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586725&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586725.p%3FskuId%3D6586725","price":299.99,"inStock":true}},
     "switches": "Mechanical",
     "layout": "75%",
-    "wireless": false
+    "wireless": false,
+    "rgb": true
   },
   {
     "id": 100211,
@@ -115706,7 +115977,8 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586727&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586727.p%3FskuId%3D6586727","price":115.99,"inStock":true}},
     "switches": "Mechanical",
     "layout": "65%",
-    "wireless": false
+    "wireless": false,
+    "rgb": true
   },
   {
     "id": 100212,
@@ -115735,7 +116007,8 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589586&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589586.p%3FskuId%3D6589586","price":229,"inStock":true}},
     "switches": "Mechanical",
     "layout": "TKL",
-    "wireless": false
+    "wireless": false,
+    "rgb": false
   },
   {
     "id": 100214,
@@ -115764,7 +116037,8 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621500&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621500.p%3FskuId%3D6621500","price":129.99,"inStock":true}},
     "layout": "75%",
     "wireless": true,
-    "rgb": true
+    "rgb": true,
+    "switches": "Scissor"
   },
   {
     "id": 100216,
@@ -115808,7 +116082,8 @@ export const PARTS = [
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636034&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636034.p%3FskuId%3D6636034","price":49.99,"inStock":true}},
     "switches": "Membrane",
     "layout": "75%",
-    "wireless": false
+    "wireless": false,
+    "rgb": true
   },
   {
     "id": 100219,
@@ -115850,7 +116125,10 @@ export const PARTS = [
     "msrp": 145,
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644852&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644852.p%3FskuId%3D6644852","price":144.99,"inStock":true}},
-    "switches": "Hall Effect"
+    "switches": "Hall Effect",
+    "layout": "Full-Size",
+    "wireless": false,
+    "rgb": true
   },
   {
     "id": 100222,
@@ -115862,7 +116140,10 @@ export const PARTS = [
     "msrp": 350,
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6667833&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6667833.p%3FskuId%3D6667833","price":349.99,"inStock":true}},
-    "switches": "Mechanical"
+    "switches": "Mechanical",
+    "layout": "Full-Size",
+    "wireless": false,
+    "rgb": true
   },
   {
     "id": 100223,
@@ -115874,7 +116155,10 @@ export const PARTS = [
     "msrp": 100,
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6423471&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6423471.p%3FskuId%3D6423471","price":99.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100224,
@@ -115886,7 +116170,10 @@ export const PARTS = [
     "msrp": 70,
     "r": 4.3,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6498042&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6498042.p%3FskuId%3D6498042","price":40.99,"inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100225,
@@ -115898,7 +116185,10 @@ export const PARTS = [
     "msrp": 50,
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6557061&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6557061.p%3FskuId%3D6557061","price":49.99,"inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100226,
@@ -115910,7 +116200,10 @@ export const PARTS = [
     "msrp": 150,
     "r": 4.1,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6567072&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6567072.p%3FskuId%3D6567072","price":149.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 50,
+    "anc": false
   },
   {
     "id": 100227,
@@ -115922,7 +116215,10 @@ export const PARTS = [
     "msrp": 100,
     "r": 4.4,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6582440&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6582440.p%3FskuId%3D6582440","price":99.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100228,
@@ -115934,7 +116230,10 @@ export const PARTS = [
     "msrp": 60,
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641078&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641078.p%3FskuId%3D6641078","price":59.99,"inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100229,
@@ -115946,7 +116245,10 @@ export const PARTS = [
     "msrp": 400,
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6572603&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6572603.p%3FskuId%3D6572603","price":399.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100230,
@@ -115958,7 +116260,10 @@ export const PARTS = [
     "msrp": 180,
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641635&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641635.p%3FskuId%3D6641635","price":179.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100231,
@@ -115970,7 +116275,10 @@ export const PARTS = [
     "msrp": 180,
     "r": 4.3,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6320787&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6320787.p%3FskuId%3D6320787","price":119.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 50,
+    "anc": false
   },
   {
     "id": 100232,
@@ -115981,7 +116289,11 @@ export const PARTS = [
     "pr": 20,
     "msrp": 30,
     "r": 4.2,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6373474&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6373474.p%3FskuId%3D6373474","price":19.99,"inStock":false}}
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6373474&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6373474.p%3FskuId%3D6373474","price":19.99,"inStock":false}},
+    "hsType": "Wired",
+    "mic": true,
+    "driver": 14,
+    "anc": false
   },
   {
     "id": 100233,
@@ -115993,7 +116305,10 @@ export const PARTS = [
     "msrp": 130,
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644061&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644061.p%3FskuId%3D6644061","price":99.13,"inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "mic": true,
+    "driver": 50,
+    "anc": false
   },
   {
     "id": 100234,
@@ -116005,7 +116320,10 @@ export const PARTS = [
     "msrp": 110,
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6506968&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6506968.p%3FskuId%3D6506968","price":79.99,"inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "mic": true,
+    "driver": 50,
+    "anc": false
   },
   {
     "id": 100235,
@@ -116017,7 +116335,10 @@ export const PARTS = [
     "msrp": 100,
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6502762&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6502762.p%3FskuId%3D6502762","price":79.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100236,
@@ -116030,7 +116351,9 @@ export const PARTS = [
     "r": 4.3,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6510363&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6510363.p%3FskuId%3D6510363","price":199.99,"inStock":true}},
     "hsType": "Wireless",
-    "anc": true
+    "anc": true,
+    "mic": true,
+    "driver": 40
   },
   {
     "id": 100237,
@@ -116042,7 +116365,10 @@ export const PARTS = [
     "msrp": 120,
     "r": 4.4,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6510365&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6510365.p%3FskuId%3D6510365","price":79.99,"inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100238,
@@ -116054,7 +116380,10 @@ export const PARTS = [
     "msrp": 60,
     "r": 4.4,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594139&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594139.p%3FskuId%3D6594139","price":59.99,"inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "mic": true,
+    "driver": 50,
+    "anc": false
   },
   {
     "id": 100239,
@@ -116066,7 +116395,10 @@ export const PARTS = [
     "msrp": 280,
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6544740&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6544740.p%3FskuId%3D6544740","price":229.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 50,
+    "anc": false
   },
   {
     "id": 100240,
@@ -116079,7 +116411,9 @@ export const PARTS = [
     "r": 4.3,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562123&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562123.p%3FskuId%3D6562123","price":179.99,"inStock":true}},
     "hsType": "Wireless",
-    "anc": true
+    "anc": true,
+    "mic": true,
+    "driver": 8
   },
   {
     "id": 100241,
@@ -116091,7 +116425,10 @@ export const PARTS = [
     "msrp": 180,
     "r": 4.4,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562124&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562124.p%3FskuId%3D6562124","price":158,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "driver": 40,
+    "mic": true,
+    "anc": false
   },
   {
     "id": 100242,
@@ -116103,7 +116440,10 @@ export const PARTS = [
     "msrp": 200,
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562867&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562867.p%3FskuId%3D6562867","price":177.99,"inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "mic": true,
+    "driver": 50,
+    "anc": false
   },
   {
     "id": 100243,
@@ -116115,7 +116455,10 @@ export const PARTS = [
     "msrp": 30,
     "r": 4.3,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581760&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6581760.p%3FskuId%3D6581760","price":29.99,"inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100244,
@@ -116127,7 +116470,10 @@ export const PARTS = [
     "msrp": 60,
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6635946&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6635946.p%3FskuId%3D6635946","price":49.99,"inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "mic": false,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100245,
@@ -116139,7 +116485,10 @@ export const PARTS = [
     "msrp": 45,
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587294&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587294.p%3FskuId%3D6587294","price":44.99,"inStock":false}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100246,
@@ -116151,7 +116500,10 @@ export const PARTS = [
     "msrp": 45,
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587297&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587297.p%3FskuId%3D6587297","price":44.99,"inStock":false}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100247,
@@ -116163,7 +116515,10 @@ export const PARTS = [
     "msrp": 330,
     "r": 4.4,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587298&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587298.p%3FskuId%3D6587298","price":329.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 50,
+    "anc": true
   },
   {
     "id": 100248,
@@ -116175,7 +116530,10 @@ export const PARTS = [
     "msrp": 330,
     "r": 4.4,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587299&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587299.p%3FskuId%3D6587299","price":329.99,"inStock":false}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 50,
+    "anc": true
   },
   {
     "id": 100249,
@@ -116187,7 +116545,10 @@ export const PARTS = [
     "msrp": 300,
     "r": 4.1,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594136&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594136.p%3FskuId%3D6594136","price":249.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 50,
+    "anc": false
   },
   {
     "id": 100250,
@@ -116200,7 +116561,9 @@ export const PARTS = [
     "r": 4.1,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594142&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594142.p%3FskuId%3D6594142","price":166.99,"inStock":true}},
     "hsType": "Wireless",
-    "anc": true
+    "anc": true,
+    "mic": true,
+    "driver": 6
   },
   {
     "id": 100251,
@@ -116212,7 +116575,10 @@ export const PARTS = [
     "msrp": 300,
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595014&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595014.p%3FskuId%3D6595014","price":259.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100252,
@@ -116224,7 +116590,10 @@ export const PARTS = [
     "msrp": 280,
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595755&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595755.p%3FskuId%3D6595755","price":279.99,"inStock":false}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100253,
@@ -116236,7 +116605,10 @@ export const PARTS = [
     "msrp": 130,
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616893&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616893.p%3FskuId%3D6616893","price":89.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 50,
+    "anc": false
   },
   {
     "id": 100254,
@@ -116248,7 +116620,10 @@ export const PARTS = [
     "msrp": 80,
     "r": 4.4,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618285&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618285.p%3FskuId%3D6618285","price":49.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100255,
@@ -116260,7 +116635,10 @@ export const PARTS = [
     "msrp": 160,
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629016&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629016.p%3FskuId%3D6629016","price":159.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100256,
@@ -116272,7 +116650,10 @@ export const PARTS = [
     "msrp": 100,
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632890&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632890.p%3FskuId%3D6632890","price":74.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100257,
@@ -116284,7 +116665,10 @@ export const PARTS = [
     "msrp": 150,
     "r": 4.2,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641368&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641368.p%3FskuId%3D6641368","price":139.99,"inStock":true}},
-    "hsType": "Wired"
+    "hsType": "Wired",
+    "driver": 9,
+    "mic": true,
+    "anc": false
   },
   {
     "id": 100258,
@@ -116296,7 +116680,10 @@ export const PARTS = [
     "msrp": 60,
     "r": 4.4,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642553&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642553.p%3FskuId%3D6642553","price":59.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100259,
@@ -116308,7 +116695,10 @@ export const PARTS = [
     "msrp": 130,
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642944&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642944.p%3FskuId%3D6642944","price":119.99,"inStock":true}},
-    "hsType": "Wireless"
+    "hsType": "Wireless",
+    "mic": true,
+    "driver": 40,
+    "anc": false
   },
   {
     "id": 100260,
@@ -116321,7 +116711,8 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6361715&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6361715.p%3FskuId%3D6361715","price":99.99,"inStock":true}},
     "micType": "USB",
-    "pattern": "Dynamic"
+    "pattern": "Dynamic",
+    "sampleRate": 44
   },
   {
     "id": 100261,
@@ -116333,7 +116724,9 @@ export const PARTS = [
     "msrp": 100,
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6393956&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6393956.p%3FskuId%3D6393956","price":99.99,"inStock":true}},
-    "pattern": "Dynamic"
+    "pattern": "Dynamic",
+    "micType": "XLR",
+    "sampleRate": 0
   },
   {
     "id": 100262,
@@ -116345,7 +116738,9 @@ export const PARTS = [
     "msrp": 200,
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6483375&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6483375.p%3FskuId%3D6483375","price":179.99,"inStock":true}},
-    "micType": "XLR"
+    "micType": "XLR",
+    "pattern": "Cardioid",
+    "sampleRate": 0
   },
   {
     "id": 100263,
@@ -116358,7 +116753,8 @@ export const PARTS = [
     "r": 4.4,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547472&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547472.p%3FskuId%3D6547472","price":205.99,"inStock":true}},
     "micType": "USB",
-    "pattern": "Dynamic"
+    "pattern": "Dynamic",
+    "sampleRate": 48
   },
   {
     "id": 100264,
@@ -116370,7 +116766,9 @@ export const PARTS = [
     "msrp": 170,
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6556755&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6556755.p%3FskuId%3D6556755","price":169.99,"inStock":true}},
-    "pattern": "Cardioid"
+    "pattern": "Supercardioid",
+    "micType": "XLR",
+    "sampleRate": 0
   },
   {
     "id": 100265,
@@ -116382,7 +116780,9 @@ export const PARTS = [
     "msrp": 270,
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6570531&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6570531.p%3FskuId%3D6570531","price":269.99,"inStock":true}},
-    "pattern": "Dynamic"
+    "pattern": "Cardioid",
+    "micType": "XLR",
+    "sampleRate": 0
   },
   {
     "id": 100266,
@@ -116394,7 +116794,9 @@ export const PARTS = [
     "msrp": 300,
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6576377&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6576377.p%3FskuId%3D6576377","price":269.99,"inStock":true}},
-    "micType": "USB"
+    "micType": "USB",
+    "pattern": "Cardioid",
+    "sampleRate": 48
   },
   {
     "id": 100267,
@@ -116406,7 +116808,9 @@ export const PARTS = [
     "msrp": 170,
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601728&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601728.p%3FskuId%3D6601728","price":169.99,"inStock":true}},
-    "micType": "USB"
+    "micType": "USB",
+    "pattern": "Cardioid",
+    "sampleRate": 96
   },
   {
     "id": 100268,
@@ -116419,7 +116823,8 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601911&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601911.p%3FskuId%3D6601911","price":54.99,"inStock":true}},
     "micType": "USB",
-    "pattern": "Cardioid"
+    "pattern": "Cardioid",
+    "sampleRate": 96
   },
   {
     "id": 100269,
@@ -116431,7 +116836,9 @@ export const PARTS = [
     "msrp": 68,
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6622725&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6622725.p%3FskuId%3D6622725","price":67.99,"inStock":true}},
-    "micType": "USB"
+    "micType": "USB",
+    "pattern": "Cardioid",
+    "sampleRate": 96
   },
   {
     "id": 100270,
@@ -116444,7 +116851,8 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4758301&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4758301.p%3FskuId%3D4758301","price":106.99,"inStock":true}},
     "micType": "USB",
-    "pattern": "Condenser"
+    "pattern": "Multi-Pattern",
+    "sampleRate": 48
   },
   {
     "id": 100271,
@@ -116457,7 +116865,8 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6277346&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6277346.p%3FskuId%3D6277346","price":99.99,"inStock":true}},
     "micType": "USB",
-    "pattern": "Condenser"
+    "pattern": "Multi-Pattern",
+    "sampleRate": 48
   },
   {
     "id": 100272,
@@ -116469,7 +116878,9 @@ export const PARTS = [
     "msrp": 150,
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6480355&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6480355.p%3FskuId%3D6480355","price":149.99,"inStock":true}},
-    "micType": "USB"
+    "micType": "USB",
+    "pattern": "Cardioid",
+    "sampleRate": 96
   },
   {
     "id": 100273,
@@ -116482,7 +116893,8 @@ export const PARTS = [
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6530807&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6530807.p%3FskuId%3D6530807","price":168.99,"inStock":true}},
     "micType": "USB",
-    "pattern": "Condenser"
+    "pattern": "Cardioid",
+    "sampleRate": 48
   },
   {
     "id": 100274,
@@ -116494,7 +116906,9 @@ export const PARTS = [
     "msrp": 250,
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6540970&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6540970.p%3FskuId%3D6540970","price":244.99,"inStock":true}},
-    "pattern": "Condenser"
+    "pattern": "Cardioid",
+    "micType": "XLR",
+    "sampleRate": 0
   },
   {
     "id": 100275,
@@ -116506,7 +116920,9 @@ export const PARTS = [
     "msrp": 70,
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6556752&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6556752.p%3FskuId%3D6556752","price":59.99,"inStock":true}},
-    "pattern": "Cardioid"
+    "pattern": "Cardioid",
+    "micType": "USB",
+    "sampleRate": 48
   },
   {
     "id": 100276,
@@ -116519,7 +116935,8 @@ export const PARTS = [
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6573619&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6573619.p%3FskuId%3D6573619","price":40.99,"inStock":true}},
     "micType": "USB",
-    "pattern": "Condenser"
+    "pattern": "Condenser",
+    "sampleRate": 48
   },
   {
     "id": 100277,
@@ -116532,7 +116949,8 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618286&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618286.p%3FskuId%3D6618286","price":109.99,"inStock":true}},
     "micType": "USB",
-    "pattern": "Condenser"
+    "pattern": "Multi-Pattern",
+    "sampleRate": 96
   },
   {
     "id": 100278,
@@ -116545,7 +116963,8 @@ export const PARTS = [
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601910&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601910.p%3FskuId%3D6601910","price":52.99,"inStock":true}},
     "micType": "USB",
-    "pattern": "Cardioid"
+    "pattern": "Cardioid",
+    "sampleRate": 96
   },
   {
     "id": 100279,
@@ -116558,7 +116977,8 @@ export const PARTS = [
     "r": 4.9,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6622722&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6622722.p%3FskuId%3D6622722","price":32.99,"inStock":true}},
     "micType": "USB",
-    "pattern": "Condenser"
+    "pattern": "Cardioid",
+    "sampleRate": 192
   },
   {
     "id": 100280,
@@ -116571,7 +116991,8 @@ export const PARTS = [
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642761&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642761.p%3FskuId%3D6642761","price":59.99,"inStock":true}},
     "micType": "USB",
-    "pattern": "Cardioid"
+    "pattern": "Cardioid",
+    "sampleRate": 96
   },
   {
     "id": 100281,
@@ -116583,7 +117004,9 @@ export const PARTS = [
     "msrp": 440,
     "r": 4.9,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9135241&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9135241.p%3FskuId%3D9135241","price":395.99,"inStock":true}},
-    "micType": "XLR"
+    "micType": "XLR",
+    "pattern": "Cardioid",
+    "sampleRate": 0
   },
   {
     "id": 100282,
@@ -116595,7 +117018,9 @@ export const PARTS = [
     "msrp": 100,
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4503702&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4503702.p%3FskuId%3D4503702","price":79.99,"inStock":true}},
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "autofocus": true,
+    "fps": 30
   },
   {
     "id": 100283,
@@ -116606,7 +117031,10 @@ export const PARTS = [
     "pr": 100,
     "msrp": 120,
     "r": 4.7,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5579380&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5579380.p%3FskuId%3D5579380","price":99.99,"inStock":true}}
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5579380&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5579380.p%3FskuId%3D5579380","price":99.99,"inStock":true}},
+    "resolution": "1080p",
+    "autofocus": true,
+    "fps": 30
   },
   {
     "id": 100284,
@@ -116618,7 +117046,9 @@ export const PARTS = [
     "msrp": 170,
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5761912&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5761912.p%3FskuId%3D5761912","price":169.99,"inStock":true}},
-    "resolution": "4K"
+    "resolution": "4K",
+    "autofocus": true,
+    "fps": 30
   },
   {
     "id": 100285,
@@ -116630,7 +117060,9 @@ export const PARTS = [
     "msrp": 170,
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5914400&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5914400.p%3FskuId%3D5914400","price":169.99,"inStock":true}},
-    "resolution": "720p"
+    "resolution": "720p",
+    "autofocus": true,
+    "fps": 30
   },
   {
     "id": 100286,
@@ -116641,7 +117073,10 @@ export const PARTS = [
     "pr": 70,
     "msrp": 70,
     "r": 4.7,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6321794&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6321794.p%3FskuId%3D6321794","price":69.99,"inStock":true}}
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6321794&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6321794.p%3FskuId%3D6321794","price":69.99,"inStock":true}},
+    "resolution": "1080p",
+    "autofocus": true,
+    "fps": 30
   },
   {
     "id": 100287,
@@ -116652,7 +117087,10 @@ export const PARTS = [
     "pr": 162,
     "msrp": 170,
     "r": 4.5,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6366565&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6366565.p%3FskuId%3D6366565","price":161.99,"inStock":true}}
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6366565&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6366565.p%3FskuId%3D6366565","price":161.99,"inStock":true}},
+    "resolution": "1080p",
+    "autofocus": true,
+    "fps": 60
   },
   {
     "id": 100288,
@@ -116664,7 +117102,9 @@ export const PARTS = [
     "msrp": 70,
     "r": 4.5,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6448067&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6448067.p%3FskuId%3D6448067","price":69.99,"inStock":true}},
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "autofocus": true,
+    "fps": 30
   },
   {
     "id": 100289,
@@ -116676,7 +117116,9 @@ export const PARTS = [
     "msrp": 130,
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6520150&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6520150.p%3FskuId%3D6520150","price":129.99,"inStock":true}},
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "autofocus": true,
+    "fps": 30
   },
   {
     "id": 100290,
@@ -116688,7 +117130,9 @@ export const PARTS = [
     "msrp": 40,
     "r": 4.6,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6550199&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6550199.p%3FskuId%3D6550199","price":24.99,"inStock":true}},
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "autofocus": false,
+    "fps": 30
   },
   {
     "id": 100291,
@@ -116700,7 +117144,9 @@ export const PARTS = [
     "msrp": 200,
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571655&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6571655.p%3FskuId%3D6571655","price":199.99,"inStock":true}},
-    "resolution": "4K"
+    "resolution": "4K",
+    "autofocus": true,
+    "fps": 60
   },
   {
     "id": 100292,
@@ -116712,7 +117158,9 @@ export const PARTS = [
     "msrp": 200,
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595407&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595407.p%3FskuId%3D6595407","price":199.99,"inStock":true}},
-    "resolution": "4K"
+    "resolution": "4K",
+    "autofocus": true,
+    "fps": 30
   },
   {
     "id": 100293,
@@ -116724,7 +117172,9 @@ export const PARTS = [
     "msrp": 150,
     "r": 4.9,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595408&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595408.p%3FskuId%3D6595408","price":149.99,"inStock":true}},
-    "resolution": "4K"
+    "resolution": "4K",
+    "autofocus": true,
+    "fps": 30
   },
   {
     "id": 100294,
@@ -116735,7 +117185,10 @@ export const PARTS = [
     "pr": 20,
     "msrp": 30,
     "r": 4.5,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9928354&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9928354.p%3FskuId%3D9928354","price":19.99,"inStock":true}}
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9928354&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9928354.p%3FskuId%3D9928354","price":19.99,"inStock":true}},
+    "resolution": "720p",
+    "autofocus": false,
+    "fps": 30
   },
   {
     "id": 100295,
@@ -116760,7 +117213,8 @@ export const PARTS = [
     "msrp": 17,
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4384400&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4384400.p%3FskuId%3D4384400","price":6.99,"inStock":true}},
-    "padSize": "Medium"
+    "padSize": "Medium",
+    "surface": "Cloth"
   },
   {
     "id": 100297,
@@ -116771,7 +117225,9 @@ export const PARTS = [
     "pr": 8,
     "msrp": 8,
     "r": 4.7,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5869549&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5869549.p%3FskuId%3D5869549","price":7.99,"inStock":true}}
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5869549&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5869549.p%3FskuId%3D5869549","price":7.99,"inStock":true}},
+    "surface": "Cloth",
+    "padSize": "Small"
   },
   {
     "id": 100298,
@@ -116821,7 +117277,9 @@ export const PARTS = [
     "pr": 50,
     "msrp": 50,
     "r": 4.8,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6476680&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6476680.p%3FskuId%3D6476680","price":49.99,"inStock":true}}
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6476680&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6476680.p%3FskuId%3D6476680","price":49.99,"inStock":true}},
+    "surface": "Hard",
+    "padSize": "Medium"
   },
   {
     "id": 100302,
@@ -116833,7 +117291,8 @@ export const PARTS = [
     "msrp": 50,
     "r": 4.9,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6482628&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6482628.p%3FskuId%3D6482628","price":49.99,"inStock":true}},
-    "surface": "Hybrid"
+    "surface": "Hybrid",
+    "padSize": "XXL"
   },
   {
     "id": 100303,
@@ -116845,7 +117304,8 @@ export const PARTS = [
     "msrp": 30,
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6499566&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6499566.p%3FskuId%3D6499566","price":29.99,"inStock":true}},
-    "padSize": "XXL"
+    "padSize": "XXL",
+    "surface": "Cloth"
   },
   {
     "id": 100304,
@@ -116857,7 +117317,8 @@ export const PARTS = [
     "msrp": 10,
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6514575&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6514575.p%3FskuId%3D6514575","price":9.99,"inStock":true}},
-    "surface": "Cloth"
+    "surface": "Cloth",
+    "padSize": "Small"
   },
   {
     "id": 100305,
@@ -116882,7 +117343,8 @@ export const PARTS = [
     "msrp": 20,
     "r": 4.7,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6514578&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6514578.p%3FskuId%3D6514578","price":19.99,"inStock":true}},
-    "surface": "Cloth"
+    "surface": "Cloth",
+    "padSize": "Large"
   },
   {
     "id": 100307,
@@ -116906,7 +117368,9 @@ export const PARTS = [
     "pr": 100,
     "msrp": 100,
     "r": 4.8,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586270&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586270.p%3FskuId%3D6586270","price":99.99,"inStock":false}}
+    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586270&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586270.p%3FskuId%3D6586270","price":99.99,"inStock":false}},
+    "surface": "Cloth",
+    "padSize": "Medium"
   },
   {
     "id": 100309,
@@ -116918,18 +117382,8 @@ export const PARTS = [
     "msrp": 50,
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614722&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614722.p%3FskuId%3D6614722","price":49.99,"inStock":true}},
-    "padSize": "XXL"
-  },
-  {
-    "id": 100310,
-    "n": "Logitech - MX Palm Rest - Graphite",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6379/6379615cv13d.jpg",
-    "c": "MousePad",
-    "b": "Logitech",
-    "pr": 23,
-    "msrp": 23,
-    "r": 4.3,
-    "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379615&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379615.p%3FskuId%3D6379615","price":22.99,"inStock":true}}
+    "padSize": "XXL",
+    "surface": "Cloth"
   },
   {
     "id": 100311,
@@ -116941,7 +117395,8 @@ export const PARTS = [
     "msrp": 10,
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6484056&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6484056.p%3FskuId%3D6484056","price":9.99,"inStock":true}},
-    "padSize": "Medium"
+    "padSize": "Medium",
+    "surface": "Cloth"
   },
   {
     "id": 100312,
@@ -116953,7 +117408,8 @@ export const PARTS = [
     "msrp": 23,
     "r": 4.8,
     "deals": {"bestbuy":{"url":"https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6484067&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6484067.p%3FskuId%3D6484067","price":19.99,"inStock":true}},
-    "padSize": "XXL"
+    "padSize": "XXL",
+    "surface": "Cloth"
   }
 ];
 
