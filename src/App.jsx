@@ -116,6 +116,25 @@ const bestPrice = p => {
 };
 const $ = p => bestPrice(p);
 const msrp = p => p.msrp || p.pr;
+// === DEAL DETECTION ===
+// A product is "on deal" when bestPrice is meaningfully below MSRP.
+// Threshold: at least $5 OR 3% off (whichever is bigger), to ignore micro-rounding.
+const isDeal = p => {
+  const cur = bestPrice(p);
+  const ref = msrp(p);
+  if (!ref || !cur || cur >= ref) return false;
+  const savings = ref - cur;
+  const pct = savings / ref;
+  return savings >= 5 || pct >= 0.03;
+};
+// Savings amount (whole dollars), only meaningful if isDeal(p) is true
+const dealSavings = p => {
+  const cur = bestPrice(p);
+  const ref = msrp(p);
+  if (!ref || !cur || cur >= ref) return 0;
+  return Math.round(ref - cur);
+};
+// === END DEAL DETECTION ===
 const fmtPrice = n => { if (n == null) return '0'; const r = Math.round(n * 100) / 100; return r % 1 === 0 ? String(r) : r.toFixed(2); };
 const retailers = p => {
   if (!p.deals || typeof p.deals !== "object") return [];
@@ -2049,7 +2068,7 @@ function HomePage({go,browse,th}){
         {/* Best Deals */}
         <div style={{background:"var(--bg2)",borderRadius:20,border:"1px solid var(--bdr)",padding:18,boxShadow:"var(--shadowSm,none)"}}>
           <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:14}}>
-            <h2 style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)"}}>Best Deals</h2>
+            <h2 style={{fontFamily:"var(--ff)",fontSize:19,fontWeight:700,color:"var(--txt)"}}>Best Deals</h2>
             <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--accent)",fontWeight:600,background:"var(--accent3)",padding:"3px 8px",borderRadius:6}}>{totalDeals} active</span>
           </div>
           <div style={{display:"flex",flexDirection:"column",gap:6}}>
@@ -2058,12 +2077,12 @@ function HomePage({go,browse,th}){
               onMouseLeave={e=>e.currentTarget.style.borderColor="transparent"}>
               <div style={{width:36,height:36,borderRadius:8,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0,overflow:"hidden"}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt="" style={{width:"100%",height:"100%",objectFit:"contain"}}/>:ic(p)}</div>
               <div style={{flex:1,minWidth:0}}>
-                <div style={{fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
-                <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--amber)",fontWeight:600,marginTop:1}}>Save ${p.off}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
+                <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--amber)",fontWeight:600,marginTop:2}}>Save ${dealSavings(p)}</div>
               </div>
               <div style={{textAlign:"right",flexShrink:0}}>
-                <div style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--accent)"}}>${fmtPrice($(p))}</div>
-                <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>
+                <div style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:"var(--accent)"}}>${fmtPrice($(p))}</div>
+                {isDeal(p)&&<div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(msrp(p))}</div>}
               </div>
             </button>;})}
           </div>
@@ -2072,8 +2091,8 @@ function HomePage({go,browse,th}){
         {/* Top Performers */}
         <div style={{background:"var(--bg2)",borderRadius:20,border:"1px solid var(--bdr)",padding:18,boxShadow:"var(--shadowSm,none)"}}>
           <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:14}}>
-            <h2 style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)"}}>Top Performers</h2>
-            <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--sky)",fontWeight:600}}>by benchmark</span>
+            <h2 style={{fontFamily:"var(--ff)",fontSize:19,fontWeight:700,color:"var(--txt)"}}>Top Performers</h2>
+            <span style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--sky)",fontWeight:600}}>by benchmark</span>
           </div>
           <div style={{display:"flex",flexDirection:"column",gap:6}}>
             {top.slice(0,5).map(p=>{const rr=retailers(p);const url=rr[0]?.url;return <button key={p.id} onClick={()=>{if(url)window.open(url,"_blank","noopener,noreferrer");else{browse(p.c);go("search");}}} style={{display:"flex",alignItems:"center",gap:10,width:"100%",background:"var(--bg3)",borderRadius:10,padding:"10px 12px",cursor:"pointer",textAlign:"left",border:"1px solid transparent",transition:"all .2s"}}
@@ -2084,7 +2103,10 @@ function HomePage({go,browse,th}){
                 <div style={{fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
                 <Stars r={p.r} s={9}/>
               </div>
-              <div style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--accent)",minWidth:40,textAlign:"right",flexShrink:0}}>${fmtPrice($(p))}</div>
+              <div style={{textAlign:"right",flexShrink:0,minWidth:60}}>
+                <div style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:"var(--accent)"}}>${fmtPrice($(p))}</div>
+                {isDeal(p)&&<div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(msrp(p))}</div>}
+              </div>
             </button>;})}
           </div>
         </div>
@@ -2423,7 +2445,7 @@ function MobileSearchPage({activeCat,th}){
                 {p.r&&<Stars r={p.r} s={10}/>}
               </div>
               <div style={{display:"flex",alignItems:"center",gap:6,flexWrap:"wrap"}}>
-                {p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}
+                {isDeal(p)&&<Tag color="var(--amber)">-${dealSavings(p)}</Tag>}
                 {(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}
                 {p.condition==="refurbished"&&<Tag color="var(--sky)">REFURB</Tag>}
                 {p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}
@@ -2650,10 +2672,10 @@ function SearchPage({activeCat,th}){
           return <div key={p.id}>
             {isExp && <ProductSchema p={p}/>}
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`4fr ${cols.map(()=>"1fr").join(" ")} 60px 80px 70px`,gap:8,padding:"10px 12px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0,transition:"background .2s"}}>
-              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt="" style={{width:40,height:40,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:18,width:40,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2}}><span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
+              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt="" style={{width:40,height:40,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:18,width:40,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2}}><span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{isDeal(p)&&<Tag color="var(--amber)">-${dealSavings(p)}</Tag>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
               {cols.map(col=>{const v=p[col];const fmtVal=fmt(col,v,p);return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:typeof fmtVal==="string"&&fmtVal.includes("\n")?<div><div style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal.split("\n")[0]}</div><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{fmtVal.split("\n")[1]}</div></div>:<span style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal}</span>}</div>})}
               {(()=>{if(p.bench==null)return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)"}}>—</span></div>;const ratio=Math.round((p.bench/Math.max($(p)/100,1))*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:800,color:gc}}>{grade}</span></div>;})()}
-              <div style={{textAlign:"right"}}>{(p.msrp&&p.msrp>$(p)||p.off>0)&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>}<div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</div>{rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{rr.length} stores</div>}</div>
+              <div style={{textAlign:"right"}}>{isDeal(p)&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>}<div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</div>{rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{rr.length} stores</div>}</div>
               <div style={{display:"flex",justifyContent:"flex-end"}} onClick={e=>{e.stopPropagation();setExpanded(isExp?null:p.id);}}>
                 <button style={{background:isExp?"var(--bg4)":"var(--mint)",border:isExp?"1px solid var(--mint)":"none",borderRadius:6,padding:"6px 14px",cursor:"pointer",fontFamily:"var(--ff)",fontSize:10,fontWeight:700,color:isExp?"var(--mint)":"var(--bg)",transition:"all .15s"}}>{isExp?"Close":"Buy →"}</button>
               </div>
@@ -2998,7 +3020,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
                   <div style={{display:"flex",alignItems:"center",gap:4,marginTop:1}}>
                     <span style={{fontSize:10,color:"var(--dim)"}}>{p.b}</span>
                     <Stars r={p.r} s={9}/>
-                    {p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}
+                    {isDeal(p)&&<Tag color="var(--amber)">-${dealSavings(p)}</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}
                   </div>
                 </div>
               </div>
@@ -3111,7 +3133,7 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti})
               <div style={{display:"flex",alignItems:"center",gap:6,flexWrap:"wrap"}}>
                 <span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span>
                 {p.r&&<Stars r={p.r} s={10}/>}
-                {p.cp&&<Tag color="var(--amber)">-${p.off}</Tag>}
+                {isDeal(p)&&<Tag color="var(--amber)">-${dealSavings(p)}</Tag>}
                 {p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}
               </div>
               <div style={{display:"flex",alignItems:"baseline",gap:8,marginTop:2}}>
