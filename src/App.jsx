@@ -118,7 +118,7 @@ const $ = p => bestPrice(p);
 const VALUE_DIVISORS={
   Mouse:15,Keyboard:15,Headset:15,Microphone:15,Webcam:15,MousePad:15,ExtensionCables:15,CaseFan:15,
   CPUCooler:18,
-  Motherboard:50
+  Motherboard:40
 };
 const valueRatio=p=>{
   const b=p.bench||0;
