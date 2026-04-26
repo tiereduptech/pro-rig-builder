@@ -126543,6 +126543,968 @@ export const PARTS = [
               "inStock": true
           }
       }
+  },
+  {
+      "id": 96001,
+      "n": "TP-Link AC600 USB WiFi Adapter for PC (Archer T2U Plus)- Wireless Network Adapter for Desktop with 2",
+      "img": "https://m.media-amazon.com/images/I/41Qo0EGG4TL._AC_UY218_.jpg",
+      "c": "WiFiCard",
+      "b": "TP-Link",
+      "pr": 17,
+      "msrp": 20,
+      "r": 4.4,
+      "reviews": 42200,
+      "asin": "B07P5PRK7J",
+      "wifiStandard": "WiFi 5",
+      "interface": "USB",
+      "deals": {
+          "amazon": {
+              "price": 17,
+              "url": "https://www.amazon.com/dp/B07P5PRK7J?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96002,
+      "n": "TP-Link WiFi 6 USB Adapter for Desktop PC - (Archer TX20U Plus) AX1800 Wireless Network Adapter with",
+      "img": "https://m.media-amazon.com/images/I/51D62WbhUNL._AC_UY218_.jpg",
+      "c": "WiFiCard",
+      "b": "TP-Link",
+      "pr": 34,
+      "msrp": 39,
+      "r": 4.3,
+      "reviews": 27300,
+      "asin": "B0B5YPK9L1",
+      "wifiStandard": "WiFi 6E",
+      "interface": "USB",
+      "deals": {
+          "amazon": {
+              "price": 34,
+              "url": "https://www.amazon.com/dp/B0B5YPK9L1?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96005,
+      "n": "TP-Link USB WiFi Adapter for Desktop PC, AC1300 USB 3.0 Wireless Dual Band Network Adapter with High",
+      "img": "https://m.media-amazon.com/images/I/31-nc1uBhYL._AC_UY218_.jpg",
+      "c": "WiFiCard",
+      "b": "TP-Link",
+      "pr": 20,
+      "msrp": 23,
+      "r": 4.3,
+      "reviews": 27300,
+      "asin": "B08D72GSMS",
+      "wifiStandard": "WiFi 5",
+      "interface": "USB 3.0",
+      "deals": {
+          "amazon": {
+              "price": 20,
+              "url": "https://www.amazon.com/dp/B08D72GSMS?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96015,
+      "n": "USB WiFi Adapter, AC1300Mbps Dual Band 5dBi High Gain Antenna 2.4GHz/ 5GHz Wireless Network Adapter ",
+      "img": "https://m.media-amazon.com/images/I/41QLQk8doDL._AC_UY218_.jpg",
+      "c": "WiFiCard",
+      "b": "iFi",
+      "pr": 26,
+      "msrp": 30,
+      "r": 4.3,
+      "reviews": 27300,
+      "asin": "B08KHV7H1S",
+      "wifiStandard": "WiFi 5",
+      "interface": "USB",
+      "deals": {
+          "amazon": {
+              "price": 26,
+              "url": "https://www.amazon.com/dp/B08KHV7H1S?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96016,
+      "n": "Wireless USB WiFi Adapter for PC - Nineplus 1300Mbps Dual 5Dbi Antennas 5G/2.4G WiFi Adapter for Des",
+      "img": "https://m.media-amazon.com/images/I/61UhAcgFzRL._AC_UY218_.jpg",
+      "c": "WiFiCard",
+      "b": "iFi",
+      "pr": 26,
+      "msrp": 30,
+      "r": 4.3,
+      "reviews": 21900,
+      "asin": "B07V4R3QHW",
+      "wifiStandard": "WiFi 6",
+      "interface": "USB",
+      "deals": {
+          "amazon": {
+              "price": 26,
+              "url": "https://www.amazon.com/dp/B07V4R3QHW?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96017,
+      "n": "TP-Link AC1300 USB WiFi Adapter(Archer T3U)- 2.4G/5G Dual Band Wireless Network Adapter for PC Deskt",
+      "img": "https://m.media-amazon.com/images/I/61uB1QoVSSL._AC_UY218_.jpg",
+      "c": "WiFiCard",
+      "b": "TP-Link",
+      "pr": 17,
+      "msrp": 20,
+      "r": 4.5,
+      "reviews": 17600,
+      "asin": "B07P6N2TZH",
+      "wifiStandard": "WiFi 5",
+      "interface": "USB 3.0",
+      "deals": {
+          "amazon": {
+              "price": 17,
+              "url": "https://www.amazon.com/dp/B07P6N2TZH?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96018,
+      "n": "BrosTrend 1200Mbps Long Range USB WiFi Adapter for PC Desktop Laptop of Windows 11/10/8.1/8/7, Wirel",
+      "img": "https://m.media-amazon.com/images/I/61WwBsjCpDL._AC_UL640_QL65_.jpg",
+      "c": "WiFiCard",
+      "b": "BrosTrend",
+      "pr": 25,
+      "msrp": 29,
+      "r": 4.2,
+      "reviews": 13500,
+      "asin": "B01IEU7UZ0",
+      "wifiStandard": "WiFi 6",
+      "interface": "USB 3.0",
+      "deals": {
+          "amazon": {
+              "price": 25,
+              "url": "https://www.amazon.com/dp/B01IEU7UZ0?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96019,
+      "n": "TP-Link WiFi 6 AX3000 PCIe WiFi Card (Archer TX3000E), Up to 2400Mbps, Bluetooth 5.3, 802.11AX Dual ",
+      "img": "https://m.media-amazon.com/images/I/51LpRgFw4ML._AC_UY218_.jpg",
+      "c": "WiFiCard",
+      "b": "TP-Link",
+      "pr": 36,
+      "msrp": 41,
+      "r": 4.7,
+      "reviews": 10500,
+      "asin": "B07ZV2CJL2",
+      "wifiStandard": "WiFi 6E",
+      "interface": "PCIe",
+      "bluetooth": true,
+      "deals": {
+          "amazon": {
+              "price": 36,
+              "url": "https://www.amazon.com/dp/B07ZV2CJL2?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96021,
+      "n": "AC1200 PCIe WiFi Card for Desktop PC (Archer T5E) - Bluetooth 5.0, Dual Band Wireless Network Card (",
+      "img": "https://m.media-amazon.com/images/I/61o9IgE8ZEL._AC_UY218_.jpg",
+      "c": "WiFiCard",
+      "b": "iFi",
+      "pr": 28,
+      "msrp": 32,
+      "r": 4.6,
+      "reviews": 9500,
+      "asin": "B084JPFKQ5",
+      "wifiStandard": "WiFi 5",
+      "interface": "PCIe",
+      "bluetooth": true,
+      "deals": {
+          "amazon": {
+              "price": 28,
+              "url": "https://www.amazon.com/dp/B084JPFKQ5?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96022,
+      "n": "Ubit 5400Mbps PCIE WiFi Card Intel 6E Chipset (6GHz&5Ghz&2.4GHz) PCIe WiFi Card BT 5.3, WiFi Adapter",
+      "img": "https://m.media-amazon.com/images/I/61nGewXj1RL._AC_UY218_.jpg",
+      "c": "WiFiCard",
+      "b": "Intel",
+      "pr": 23,
+      "msrp": 26,
+      "r": 4.6,
+      "reviews": 6200,
+      "asin": "B07Y82HZV1",
+      "wifiStandard": "WiFi 6E",
+      "interface": "PCIe",
+      "deals": {
+          "amazon": {
+              "price": 23,
+              "url": "https://www.amazon.com/dp/B07Y82HZV1?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96023,
+      "n": "Ubit WiFi Card 6E 5400Mbps for Intel (6GHz&5Ghz&2.4GHz) PCIe WiFi Card, BT 5.3, PCIe Network Card wi",
+      "img": "https://m.media-amazon.com/images/I/51tD2bwHh9L._AC_UY218_.jpg",
+      "c": "WiFiCard",
+      "b": "Intel",
+      "pr": 23,
+      "msrp": 26,
+      "r": 4.5,
+      "reviews": 6000,
+      "asin": "B07XM6XZ1F",
+      "wifiStandard": "WiFi 6E",
+      "interface": "PCIe",
+      "deals": {
+          "amazon": {
+              "price": 23,
+              "url": "https://www.amazon.com/dp/B07XM6XZ1F?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96100,
+      "n": "TP-Link 2.5GB PCIe Network Card (TX201) – PCIe to 2.5 Gigabit Ethernet Network Adapter, Supports Win",
+      "img": "https://m.media-amazon.com/images/I/717WWZL+4IL._AC_UY218_.jpg",
+      "c": "EthernetCard",
+      "b": "TP-Link",
+      "pr": 27,
+      "msrp": 31,
+      "r": 4.7,
+      "reviews": 2000,
+      "asin": "B0BG685PKM",
+      "speed": "2.5 Gbps",
+      "interface": "PCIe",
+      "connector": "RJ45",
+      "deals": {
+          "amazon": {
+              "price": 27,
+              "url": "https://www.amazon.com/dp/B0BG685PKM?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96101,
+      "n": "BrosTrend 2.5Gb Network Card, PCIe Network Adapter RJ45 NIC with Extra Low-profile Bracket PCI Expre",
+      "img": "https://m.media-amazon.com/images/I/51LnH9W-0fL._AC_UY218_.jpg",
+      "c": "EthernetCard",
+      "b": "BrosTrend",
+      "pr": 17,
+      "msrp": 20,
+      "r": 4.6,
+      "reviews": 1500,
+      "asin": "B0C4LB5TY8",
+      "speed": "2.5 Gbps",
+      "interface": "PCIe",
+      "connector": "RJ45",
+      "deals": {
+          "amazon": {
+              "price": 17,
+              "url": "https://www.amazon.com/dp/B0C4LB5TY8?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96102,
+      "n": "2.5GBase-T PCIe Network Adapter RTL8125B 2500/1000/100Mbps PCI Express Gigabit Ethernet Card RJ45 LA",
+      "img": "https://m.media-amazon.com/images/I/61jNjSNSj3L._AC_UY218_.jpg",
+      "c": "EthernetCard",
+      "b": "2.5GBase-T",
+      "pr": 20,
+      "msrp": 23,
+      "r": 4.5,
+      "reviews": 1500,
+      "asin": "B08V1HG47H",
+      "speed": "2.5 Gbps",
+      "interface": "PCIe",
+      "connector": "RJ45",
+      "deals": {
+          "amazon": {
+              "price": 20,
+              "url": "https://www.amazon.com/dp/B08V1HG47H?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96103,
+      "n": "TRENDnet 10G PCIe Network Adapter, TEG-10GECTX, Convert a PCI Express Slot Into a 10 Gigabit Etherne",
+      "img": "https://m.media-amazon.com/images/I/71kqRACVZBL._AC_UY218_.jpg",
+      "c": "EthernetCard",
+      "b": "TRENDnet",
+      "pr": 70,
+      "msrp": 80,
+      "r": 4.4,
+      "reviews": 996,
+      "asin": "B01N5AOWW6",
+      "speed": "10 Gbps",
+      "interface": "PCIe",
+      "connector": "RJ45",
+      "deals": {
+          "amazon": {
+              "price": 70,
+              "url": "https://www.amazon.com/dp/B01N5AOWW6?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96104,
+      "n": "TRENDnet 2.5GBase-T PCIe Network Adapter, TEG-25GECTX, Converts a PCIe 2.0 or Later Slot into a 2.5G",
+      "img": "https://m.media-amazon.com/images/I/71HUhJEmHzL._AC_UY218_.jpg",
+      "c": "EthernetCard",
+      "b": "TRENDnet",
+      "pr": 24,
+      "msrp": 28,
+      "r": 4.4,
+      "reviews": 996,
+      "asin": "B07SNQ2NQ1",
+      "speed": "2.5 Gbps",
+      "interface": "PCIe",
+      "connector": "RJ45",
+      "deals": {
+          "amazon": {
+              "price": 24,
+              "url": "https://www.amazon.com/dp/B07SNQ2NQ1?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96105,
+      "n": "TRENDnet 10 Gigabit PCIe SFP+ Network Adapter, TEG-10GECSFP, Convert A PCIe Slot Into A 10G SFP+ Por",
+      "img": "https://m.media-amazon.com/images/I/71Vt63D3rVL._AC_UY218_.jpg",
+      "c": "EthernetCard",
+      "b": "TRENDnet",
+      "pr": 75,
+      "msrp": 86,
+      "r": 4.4,
+      "reviews": 996,
+      "asin": "B01N4FYWUN",
+      "speed": "10 Gbps",
+      "interface": "PCIe",
+      "connector": "SFP+",
+      "deals": {
+          "amazon": {
+              "price": 75,
+              "url": "https://www.amazon.com/dp/B01N4FYWUN?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96106,
+      "n": "SABRENT 10 Gigabit Ethernet PCIe Network Adapter – PCIe 3.0 x4 Card, Aluminum Heatsink, Backward Com",
+      "img": "https://m.media-amazon.com/images/I/71qQj4U-U2L._AC_UY218_.jpg",
+      "c": "EthernetCard",
+      "b": "SABRENT",
+      "pr": 100,
+      "msrp": 115,
+      "r": 4,
+      "reviews": 830,
+      "asin": "B0FMCM78NX",
+      "speed": "2.5 Gbps",
+      "interface": "PCIe",
+      "connector": "RJ45",
+      "deals": {
+          "amazon": {
+              "price": 100,
+              "url": "https://www.amazon.com/dp/B0FMCM78NX?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96107,
+      "n": "Dual-Port PCIe Gigabit Network Card 1000M PCI Express Ethernet Adapter with Intel 82575/82576 Two Po",
+      "img": "https://m.media-amazon.com/images/I/61r4HVk7XOL._AC_UY218_.jpg",
+      "c": "EthernetCard",
+      "b": "Intel",
+      "pr": 30,
+      "msrp": 34,
+      "r": 4.5,
+      "reviews": 796,
+      "asin": "B09D3JL14S",
+      "speed": "1 Gbps",
+      "interface": "PCIe",
+      "connector": "RJ45",
+      "deals": {
+          "amazon": {
+              "price": 30,
+              "url": "https://www.amazon.com/dp/B09D3JL14S?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96108,
+      "n": "2025 NEW 10G Base-T PCI-e4.0 X1 Network Card, Marvell AQC113 Controller, NICGIGA 10Gb Ethernet Adapt",
+      "img": "https://m.media-amazon.com/images/I/61K+p65BRDL._AC_UY218_.jpg",
+      "c": "EthernetCard",
+      "b": "2025",
+      "pr": 70,
+      "msrp": 80,
+      "r": 4.4,
+      "reviews": 736,
+      "asin": "B0FM2DH49B",
+      "speed": "10 Gbps",
+      "interface": "PCIe",
+      "connector": "RJ45",
+      "deals": {
+          "amazon": {
+              "price": 70,
+              "url": "https://www.amazon.com/dp/B0FM2DH49B?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96109,
+      "n": "10Gb Dual LAN Base-T PCI-e Network Card, Intel X540 Controller, NICGIGA 10Gbps Ethernet Adapter, 2 *",
+      "img": "https://m.media-amazon.com/images/I/71R4h4UiocL._AC_UY218_.jpg",
+      "c": "EthernetCard",
+      "b": "Intel",
+      "pr": 61,
+      "msrp": 70,
+      "r": 4.4,
+      "reviews": 736,
+      "asin": "B0D7B2WX2T",
+      "speed": "10 Gbps",
+      "interface": "PCIe",
+      "connector": "RJ45",
+      "deals": {
+          "amazon": {
+              "price": 61,
+              "url": "https://www.amazon.com/dp/B0D7B2WX2T?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96110,
+      "n": "10G Base-T PCI-e Network Card, Marvell AQC113 Controller, NICGIGA 10Gb Ethernet Adapter Support WOL,",
+      "img": "https://m.media-amazon.com/images/I/61b4yhb87IL._AC_UY218_.jpg",
+      "c": "EthernetCard",
+      "b": "10G",
+      "pr": 70,
+      "msrp": 80,
+      "r": 4.4,
+      "reviews": 736,
+      "asin": "B0GGBC1VKT",
+      "speed": "10 Gbps",
+      "interface": "PCIe",
+      "connector": "RJ45",
+      "deals": {
+          "amazon": {
+              "price": 70,
+              "url": "https://www.amazon.com/dp/B0GGBC1VKT?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96111,
+      "n": "NICGIGA 2.5G Base-T PCIe Network Adapter, Realtek RTL8125B 2.5Gbps/1Gbps/100Mbps PCI Express Gigabit",
+      "img": "https://m.media-amazon.com/images/I/61tebFtcfnL._AC_UY218_.jpg",
+      "c": "EthernetCard",
+      "b": "Realtek",
+      "pr": 20,
+      "msrp": 23,
+      "r": 4.4,
+      "reviews": 736,
+      "asin": "B09HGRK5XB",
+      "speed": "2.5 Gbps",
+      "interface": "PCIe",
+      "connector": "RJ45",
+      "deals": {
+          "amazon": {
+              "price": 20,
+              "url": "https://www.amazon.com/dp/B09HGRK5XB?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96200,
+      "n": "Lite-On 24X SATA Internal DVD+/-RW Drive Optical Drive IHAS124-14",
+      "img": "https://m.media-amazon.com/images/I/41Dv1pqAgfL._AC_UY218_.jpg",
+      "c": "OpticalDrive",
+      "b": "Lite-On",
+      "pr": 43,
+      "msrp": 49,
+      "r": 4.5,
+      "reviews": 4800,
+      "asin": "B00ERJXTE4",
+      "driveType": "DVD",
+      "interface": "SATA",
+      "deals": {
+          "amazon": {
+              "price": 43,
+              "url": "https://www.amazon.com/dp/B00ERJXTE4?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96201,
+      "n": "Digital Plextor PlexWriter PX-891SAF 24X SATA DVD/RW Dual Layer Burner Drive Writer - Black (Bulk)",
+      "img": "https://m.media-amazon.com/images/I/51UxnzxSviL._AC_UY218_.jpg",
+      "c": "OpticalDrive",
+      "b": "Digital",
+      "pr": 45,
+      "msrp": 52,
+      "r": 4.6,
+      "reviews": 1200,
+      "asin": "B00VPK9S7K",
+      "driveType": "DVD",
+      "interface": "SATA",
+      "deals": {
+          "amazon": {
+              "price": 45,
+              "url": "https://www.amazon.com/dp/B00VPK9S7K?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96202,
+      "n": "Digital Plextor PlexWriter PX-891SAF-R 24X SATA DVD +/- RW Dual Layer Burner Drive (Retail Pack)",
+      "img": "https://m.media-amazon.com/images/I/61EKGSQ0cUL._AC_UY218_.jpg",
+      "c": "OpticalDrive",
+      "b": "Digital",
+      "pr": 55,
+      "msrp": 63,
+      "r": 4.6,
+      "reviews": 1200,
+      "asin": "B0167XSHV2",
+      "driveType": "DVD",
+      "interface": "SATA",
+      "deals": {
+          "amazon": {
+              "price": 55,
+              "url": "https://www.amazon.com/dp/B0167XSHV2?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96203,
+      "n": "BestDuplicator Lite-On Dual-Layer SATA DVD±RW Optical Drive with Installation Kit for Reading and Wr",
+      "img": "https://m.media-amazon.com/images/I/61fzoZpOgTL._AC_UY218_.jpg",
+      "c": "OpticalDrive",
+      "b": "Lite-On",
+      "pr": 39,
+      "msrp": 45,
+      "r": 4.5,
+      "reviews": 763,
+      "asin": "B00IIX2W7U",
+      "driveType": "DVD",
+      "interface": "SATA",
+      "deals": {
+          "amazon": {
+              "price": 39,
+              "url": "https://www.amazon.com/dp/B00IIX2W7U?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96204,
+      "n": "Lite-On BestDuplicator SATA DVD/CD Reader & Writer with Nero 12 Essentials Trial Version, Internal O",
+      "img": "https://m.media-amazon.com/images/I/71qisxXHcKL._AC_UY218_.jpg",
+      "c": "OpticalDrive",
+      "b": "Lite-On",
+      "pr": 42,
+      "msrp": 48,
+      "r": 4.5,
+      "reviews": 509,
+      "asin": "B01BVWTJ8Y",
+      "driveType": "DVD",
+      "interface": "SATA",
+      "deals": {
+          "amazon": {
+              "price": 42,
+              "url": "https://www.amazon.com/dp/B01BVWTJ8Y?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96205,
+      "n": "Plextor PX-891SAF 24X SATA DVD/RW Dual Layer Burner Drive Writer - Black (Bulk)",
+      "img": "https://m.media-amazon.com/images/I/51UxnzxSviL._AC_UY218_.jpg",
+      "c": "OpticalDrive",
+      "b": "Plextor",
+      "pr": 44,
+      "msrp": 51,
+      "r": 4.5,
+      "reviews": 448,
+      "asin": "B09G9FRFT7",
+      "driveType": "DVD",
+      "interface": "SATA",
+      "deals": {
+          "amazon": {
+              "price": 44,
+              "url": "https://www.amazon.com/dp/B09G9FRFT7?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96206,
+      "n": "S21 Internal Super Multi Drive 24X Optical CD DVD Drives Burner Writer DVR-S21DBK (Bulk)",
+      "img": "https://m.media-amazon.com/images/I/51Tk3J-HQCL._AC_UY218_.jpg",
+      "c": "OpticalDrive",
+      "b": "S21",
+      "pr": 39,
+      "msrp": 45,
+      "r": 4.5,
+      "reviews": 383,
+      "asin": "B07355C9DP",
+      "driveType": "DVD",
+      "interface": "SATA",
+      "deals": {
+          "amazon": {
+              "price": 39,
+              "url": "https://www.amazon.com/dp/B07355C9DP?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96207,
+      "n": "OSGEAR Internal 9.5mm slim SATA 8x DVDRW CD DVD RW Rom Burner Writer Laptop PC Optical Drive Device ",
+      "img": "https://m.media-amazon.com/images/I/71OtrXJOGRL._AC_UY218_.jpg",
+      "c": "OpticalDrive",
+      "b": "OSGEAR",
+      "pr": 28,
+      "msrp": 32,
+      "r": 4.1,
+      "reviews": 280,
+      "asin": "B0759T68KM",
+      "driveType": "DVD",
+      "interface": "SATA",
+      "deals": {
+          "amazon": {
+              "price": 28,
+              "url": "https://www.amazon.com/dp/B0759T68KM?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96208,
+      "n": "OSGEAR Desktop PC Internal DVDRW SATA 24x DVD 56x CD ROM Built-in DVD Optical Drive Device Tray Load",
+      "img": "https://m.media-amazon.com/images/I/615t1NkzDuL._AC_UY218_.jpg",
+      "c": "OpticalDrive",
+      "b": "OSGEAR",
+      "pr": 35,
+      "msrp": 40,
+      "r": 4.3,
+      "reviews": 195,
+      "asin": "B08D7HPS8Z",
+      "driveType": "DVD",
+      "interface": "SATA",
+      "deals": {
+          "amazon": {
+              "price": 35,
+              "url": "https://www.amazon.com/dp/B08D7HPS8Z?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96209,
+      "n": "Digital LG HLDS Internal SATA 24x Super Multi with M-DISC Support CD DVD Burner Writer (GH24NSD0D) -",
+      "img": "https://m.media-amazon.com/images/I/51j3EOvwHBL._AC_UY218_.jpg",
+      "c": "OpticalDrive",
+      "b": "LG",
+      "pr": 50,
+      "msrp": 57,
+      "r": 4.3,
+      "reviews": 109,
+      "asin": "B09GF9R394",
+      "driveType": "DVD",
+      "interface": "SATA",
+      "deals": {
+          "amazon": {
+              "price": 50,
+              "url": "https://www.amazon.com/dp/B09GF9R394?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96210,
+      "n": "Lite-On Black Premium 16X SATA Internal CD/DVD/RW DVD DL Dual Layer Optical Disc Drive Burner Record",
+      "img": "https://m.media-amazon.com/images/I/51ivv7N6PgL._AC_UY218_.jpg",
+      "c": "OpticalDrive",
+      "b": "Lite-On",
+      "pr": 40,
+      "msrp": 46,
+      "r": 4.4,
+      "reviews": 78,
+      "asin": "B07JJN3P5M",
+      "driveType": "DVD",
+      "interface": "SATA",
+      "deals": {
+          "amazon": {
+              "price": 40,
+              "url": "https://www.amazon.com/dp/B07JJN3P5M?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96211,
+      "n": "Electronics 183663 LG Ultra Slim Bd DVDRW 6X SATA 9.5mm Tray Retail Optical Drive BU40N",
+      "img": "https://m.media-amazon.com/images/I/51ksRhwKuWL._AC_UY218_.jpg",
+      "c": "OpticalDrive",
+      "b": "LG",
+      "pr": 112,
+      "msrp": 129,
+      "r": 4.4,
+      "reviews": 68,
+      "asin": "B01MSDDR8A",
+      "driveType": "DVD",
+      "interface": "SATA",
+      "deals": {
+          "amazon": {
+              "price": 112,
+              "url": "https://www.amazon.com/dp/B01MSDDR8A?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96300,
+      "n": "7.1 USB Sound Card - External Sound Card for Laptop with SPDIF Digital Audio - Sound Card for PC - S",
+      "img": "https://m.media-amazon.com/images/I/616-h4ESzBL._AC_UY218_.jpg",
+      "c": "SoundCard",
+      "b": "7.1",
+      "pr": 38,
+      "msrp": 43,
+      "r": 4,
+      "reviews": 1900,
+      "asin": "B002LM0U2S",
+      "interface": "USB",
+      "channels": "7.1",
+      "deals": {
+          "amazon": {
+              "price": 38,
+              "url": "https://www.amazon.com/dp/B002LM0U2S?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96301,
+      "n": "ASUS XONAR SE 5.1 Channel 192kHz/24-bit Hi-Res 116dB SNR PCIe Gaming Sound Card with Windows 10 Comp",
+      "img": "https://m.media-amazon.com/images/I/81KvITrf+oL._AC_UY218_.jpg",
+      "c": "SoundCard",
+      "b": "ASUS",
+      "pr": 62,
+      "msrp": 71,
+      "r": 4.2,
+      "reviews": 1700,
+      "asin": "B07HCX1NY9",
+      "interface": "PCIe",
+      "channels": "5.1",
+      "bitDepth": "24-bit",
+      "deals": {
+          "amazon": {
+              "price": 62,
+              "url": "https://www.amazon.com/dp/B07HCX1NY9?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96302,
+      "n": "Syba Sonic 24bit 96KHz USB DAC Stereo Headphone Amplifier 2 Stage EQ Digital/Coaxial Output and RCA ",
+      "img": "https://m.media-amazon.com/images/I/81smCP+nFIL._AC_UY218_.jpg",
+      "c": "SoundCard",
+      "b": "iFi",
+      "pr": 33,
+      "msrp": 38,
+      "r": 4.3,
+      "reviews": 1600,
+      "asin": "B07XJ89KV6",
+      "interface": "USB",
+      "channels": "2.0",
+      "bitDepth": "24-bit",
+      "deals": {
+          "amazon": {
+              "price": 33,
+              "url": "https://www.amazon.com/dp/B07XJ89KV6?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96303,
+      "n": "Fosi Audio K5 Pro Gaming DAC Headphone Amplifier Mini Hi-Fi Stereo Digital-to-Analog Audio Converter",
+      "img": "https://m.media-amazon.com/images/I/51xbHqufDSL._AC_UY218_.jpg",
+      "c": "SoundCard",
+      "b": "iFi",
+      "pr": 80,
+      "msrp": 92,
+      "r": 4.2,
+      "reviews": 1500,
+      "asin": "B0BFHFSX4C",
+      "interface": "USB",
+      "channels": "2.0",
+      "deals": {
+          "amazon": {
+              "price": 80,
+              "url": "https://www.amazon.com/dp/B0BFHFSX4C?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96304,
+      "n": "Creative Sound Blaster X4 Hi-Res 24bit/192kHz DAC USB Externo y Tarjeta de Sonido Amp, Multicanal, S",
+      "img": "https://m.media-amazon.com/images/I/51Tnh+AqVeS._AC_UY218_.jpg",
+      "c": "SoundCard",
+      "b": "Creative",
+      "pr": 142,
+      "msrp": 164,
+      "r": 4.1,
+      "reviews": 1500,
+      "asin": "B0953LL5R6",
+      "interface": "USB",
+      "channels": "7.1",
+      "bitDepth": "24-bit",
+      "deals": {
+          "amazon": {
+              "price": 142,
+              "url": "https://www.amazon.com/dp/B0953LL5R6?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96305,
+      "n": "FX-Audio DAC-X6 Headphone amp Mini HiFi 2.0 Digital Audio Decoder DAC Input USB/Coaxial/Optical Outp",
+      "img": "https://m.media-amazon.com/images/I/510R7k69IBL._AC_UY218_.jpg",
+      "c": "SoundCard",
+      "b": "iFi",
+      "pr": 65,
+      "msrp": 75,
+      "r": 4.2,
+      "reviews": 1000,
+      "asin": "B07TW2JQNN",
+      "interface": "USB",
+      "channels": "2.0",
+      "bitDepth": "24-bit",
+      "deals": {
+          "amazon": {
+              "price": 65,
+              "url": "https://www.amazon.com/dp/B07TW2JQNN?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96306,
+      "n": "Sound BlasterX G5 7.1 Headphone Surround HD Audio External Sound Card with Headphone Amplifier for W",
+      "img": "https://m.media-amazon.com/images/I/616ZuANza9L._AC_UY218_.jpg",
+      "c": "SoundCard",
+      "b": "Sound Blaster",
+      "pr": 220,
+      "msrp": 253,
+      "r": 4.4,
+      "reviews": 842,
+      "asin": "B018JUPY3A",
+      "interface": "PCIe",
+      "channels": "7.1",
+      "deals": {
+          "amazon": {
+              "price": 220,
+              "url": "https://www.amazon.com/dp/B018JUPY3A?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96307,
+      "n": "Sound Blaster GC7 Next Gen Gaming USB Soundcard",
+      "img": "https://m.media-amazon.com/images/I/51FsDXqMMfL._AC_UY218_.jpg",
+      "c": "SoundCard",
+      "b": "Sound Blaster",
+      "pr": 152,
+      "msrp": 175,
+      "r": 4.1,
+      "reviews": 772,
+      "asin": "B08ZD59L8H",
+      "interface": "USB",
+      "deals": {
+          "amazon": {
+              "price": 152,
+              "url": "https://www.amazon.com/dp/B08ZD59L8H?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96308,
+      "n": "Creative Sound Blaster AE-7 Hi-Res Internal PCIe Sound Card, Quad-Core Processor, 127dB DNR ESS SABR",
+      "img": "https://m.media-amazon.com/images/I/5127ww4FRzL._AC_UY218_.jpg",
+      "c": "SoundCard",
+      "b": "Creative",
+      "pr": 212,
+      "msrp": 244,
+      "r": 4.4,
+      "reviews": 741,
+      "asin": "B07T9YYVV6",
+      "interface": "PCIe",
+      "channels": "7.1",
+      "deals": {
+          "amazon": {
+              "price": 212,
+              "url": "https://www.amazon.com/dp/B07T9YYVV6?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 96310,
+      "n": "StarTech.com USB Sound Card w/ SPDIF Digital Audio & Stereo Mic – External Sound Card for Laptop or ",
+      "img": "https://m.media-amazon.com/images/I/61QfNJQqmWL._AC_UY218_.jpg",
+      "c": "SoundCard",
+      "b": "StarTech.com",
+      "pr": 34,
+      "msrp": 39,
+      "r": 4.2,
+      "reviews": 550,
+      "asin": "B00F7120TQ",
+      "interface": "USB",
+      "channels": "2.0",
+      "deals": {
+          "amazon": {
+              "price": 34,
+              "url": "https://www.amazon.com/dp/B00F7120TQ?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
   }
 ];
 
