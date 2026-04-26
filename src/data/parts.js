@@ -126378,10 +126378,10 @@ export const PARTS = [
   },
   {
       "id": 95045,
-      "n": "8.8\" Universal Screen for PC - Adjustable Mounting for Any Computer Setup - Customizable ARGB Frame ",
+      "n": "Lian Li 8.8\" Universal Screen for PC - Adjustable Mounting for Any Computer Setup - Customizable ARGB Frame ",
       "img": "https://m.media-amazon.com/images/I/71LUNssPs4L._AC_UY218_.jpg",
       "c": "InternalDisplay",
-      "b": "8.8\"",
+      "b": "Lian Li",
       "pr": 85,
       "msrp": 98,
       "r": 4.5,
@@ -126516,6 +126516,30 @@ export const PARTS = [
           "amazon": {
               "price": 99,
               "url": "https://www.amazon.com/dp/B0FGCVT6P2?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 95055,
+      "n": "Thermalright Trofeo Vision LCD Black Edition Case Sub-Display Features a 6.86-inch Full-Color LCD Di",
+      "img": "https://m.media-amazon.com/images/I/616LDXOE0+L._AC_SY300_SX300_QL70_FMwebp_.jpg",
+      "c": "InternalDisplay",
+      "b": "Thermalright",
+      "pr": 38,
+      "msrp": 44,
+      "r": 3.1,
+      "reviews": 67,
+      "asin": "B0FP4NRRQH",
+      "size": "5\"",
+      "resolution": "1280x480",
+      "connection": "USB",
+      "panelType": "IPS",
+      "touch": false,
+      "deals": {
+          "amazon": {
+              "price": 38,
+              "url": "https://www.amazon.com/dp/B0FP4NRRQH?tag=tiereduptech-20",
               "inStock": true
           }
       }
