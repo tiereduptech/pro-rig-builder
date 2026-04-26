@@ -32405,7 +32405,8 @@ export const PARTS = [
     "bench": 92,
     "vram": 16384,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 348
   },
   {
     "id": 30329,
@@ -32428,7 +32429,8 @@ export const PARTS = [
     "bench": 52,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 247
   },
   {
     "id": 30330,
@@ -32451,7 +32453,8 @@ export const PARTS = [
     "bench": 78,
     "vram": 24576,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 348
   },
   {
     "id": 30331,
@@ -32474,7 +32477,8 @@ export const PARTS = [
     "bench": 71,
     "vram": 24576,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 318
   },
   {
     "id": 30332,
@@ -32497,7 +32501,8 @@ export const PARTS = [
     "bench": 71,
     "vram": 24576,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 320
   },
   {
     "id": 30333,
@@ -32520,7 +32525,8 @@ export const PARTS = [
     "bench": 72,
     "vram": 12288,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 300
   },
   {
     "id": 30334,
@@ -32543,7 +32549,8 @@ export const PARTS = [
     "bench": 72,
     "vram": 12288,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 323
   },
   {
     "id": 30335,
@@ -32566,7 +32573,8 @@ export const PARTS = [
     "bench": 72,
     "vram": 12288,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 320
   },
   {
     "id": 30336,
@@ -32589,7 +32597,8 @@ export const PARTS = [
     "bench": 70,
     "vram": 10240,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 300
   },
   {
     "id": 30337,
@@ -32612,7 +32621,8 @@ export const PARTS = [
     "bench": 71,
     "vram": 10240,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 323
   },
   {
     "id": 30338,
@@ -32635,7 +32645,8 @@ export const PARTS = [
     "bench": 71,
     "vram": 10240,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 320
   },
   {
     "id": 30339,
@@ -32658,7 +32669,8 @@ export const PARTS = [
     "bench": 62,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 300
   },
   {
     "id": 30340,
@@ -32681,7 +32693,8 @@ export const PARTS = [
     "bench": 62,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 323
   },
   {
     "id": 30341,
@@ -32704,7 +32717,8 @@ export const PARTS = [
     "bench": 62,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 282
   },
   {
     "id": 30342,
@@ -32727,7 +32741,8 @@ export const PARTS = [
     "bench": 59,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 300
   },
   {
     "id": 30343,
@@ -32750,7 +32765,8 @@ export const PARTS = [
     "bench": 59,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 247
   },
   {
     "id": 30344,
@@ -32773,7 +32789,8 @@ export const PARTS = [
     "bench": 59,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 282
   },
   {
     "id": 30345,
@@ -32796,7 +32813,8 @@ export const PARTS = [
     "bench": 54,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 300
   },
   {
     "id": 30346,
@@ -32819,7 +32837,8 @@ export const PARTS = [
     "bench": 54,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 247
   },
   {
     "id": 30347,
@@ -32842,7 +32861,8 @@ export const PARTS = [
     "bench": 54,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 282
   },
   {
     "id": 30348,
@@ -32865,7 +32885,8 @@ export const PARTS = [
     "bench": 45,
     "vram": 12288,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 175
   },
   {
     "id": 30349,
@@ -32888,7 +32909,8 @@ export const PARTS = [
     "bench": 57,
     "vram": 11264,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 297
   },
   {
     "id": 30350,
@@ -32911,7 +32933,8 @@ export const PARTS = [
     "bench": 56,
     "vram": 11264,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 269
   },
   {
     "id": 30351,
@@ -32934,7 +32957,8 @@ export const PARTS = [
     "bench": 52,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 305
   },
   {
     "id": 30352,
@@ -32957,7 +32981,8 @@ export const PARTS = [
     "bench": 52,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 247
   },
   {
     "id": 30353,
@@ -32980,7 +33005,8 @@ export const PARTS = [
     "bench": 49,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 247
   },
   {
     "id": 30354,
@@ -33003,7 +33029,8 @@ export const PARTS = [
     "bench": 48,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 269
   },
   {
     "id": 30355,
@@ -33026,7 +33053,8 @@ export const PARTS = [
     "bench": 49,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 247
   },
   {
     "id": 30356,
@@ -33049,7 +33077,8 @@ export const PARTS = [
     "bench": 49,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 282
   },
   {
     "id": 30357,
@@ -33072,7 +33101,8 @@ export const PARTS = [
     "bench": 43,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 267
   },
   {
     "id": 30358,
@@ -33095,7 +33125,8 @@ export const PARTS = [
     "bench": 42,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 247
   },
   {
     "id": 30359,
@@ -33118,7 +33149,8 @@ export const PARTS = [
     "bench": 44,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 305
   },
   {
     "id": 30360,
@@ -33141,7 +33173,8 @@ export const PARTS = [
     "bench": 44,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 247
   },
   {
     "id": 30361,
@@ -33164,7 +33197,8 @@ export const PARTS = [
     "bench": 44,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 280
   },
   {
     "id": 30362,
@@ -33187,7 +33221,8 @@ export const PARTS = [
     "bench": 42,
     "vram": 6144,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 242
   },
   {
     "id": 30363,
@@ -33210,7 +33245,8 @@ export const PARTS = [
     "bench": 43,
     "vram": 6144,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 247
   },
   {
     "id": 30364,
@@ -33231,7 +33267,8 @@ export const PARTS = [
     },
     "tdp": 300,
     "bench": 70,
-    "vram": 16384
+    "vram": 16384,
+    "length": 324
   },
   {
     "id": 30366,
@@ -33254,7 +33291,8 @@ export const PARTS = [
     "bench": 67,
     "vram": 16384,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 320
   },
   {
     "id": 30367,
@@ -33277,7 +33315,8 @@ export const PARTS = [
     "bench": 53,
     "vram": 12288,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 277
   },
   {
     "id": 30368,
@@ -33300,7 +33339,8 @@ export const PARTS = [
     "bench": 44,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 243
   },
   {
     "id": 30369,
@@ -33323,7 +33363,8 @@ export const PARTS = [
     "bench": 44,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 232
   },
   {
     "id": 30370,
@@ -33346,7 +33387,8 @@ export const PARTS = [
     "bench": 43,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 282
   },
   {
     "id": 30371,
@@ -33369,7 +33411,8 @@ export const PARTS = [
     "bench": 40,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 282
   },
   {
     "id": 30372,
@@ -33392,7 +33435,8 @@ export const PARTS = [
     "bench": 26,
     "vram": 4096,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 200
   },
   {
     "id": 30373,
@@ -33415,7 +33459,8 @@ export const PARTS = [
     "bench": 26,
     "vram": 4096,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 192
   },
   {
     "id": 30374,
@@ -33438,7 +33483,8 @@ export const PARTS = [
     "bench": 44,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 243
   },
   {
     "id": 30375,
@@ -33461,7 +33507,8 @@ export const PARTS = [
     "bench": 44,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 297
   },
   {
     "id": 30376,
@@ -33484,7 +33531,8 @@ export const PARTS = [
     "bench": 44,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 280
   },
   {
     "id": 30377,
@@ -33507,7 +33555,8 @@ export const PARTS = [
     "bench": 38,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 269
   },
   {
     "id": 30378,
@@ -33530,7 +33579,8 @@ export const PARTS = [
     "bench": 24,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 232
   },
   {
     "id": 30379,
@@ -33553,7 +33603,8 @@ export const PARTS = [
     "bench": 23,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 269
   },
   {
     "id": 30381,
@@ -33576,7 +33627,8 @@ export const PARTS = [
     "bench": 11,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 269
   },
   {
     "id": 30382,
@@ -33599,7 +33651,8 @@ export const PARTS = [
     "bench": 11,
     "vram": 8192,
     "used": true,
-    "condition": "used"
+    "condition": "used",
+    "length": 232
   },
   {
     "id": 30383,
@@ -33620,7 +33673,8 @@ export const PARTS = [
     },
     "tdp": 190,
     "bench": 43,
-    "vram": 12288
+    "vram": 12288,
+    "length": 247
   },
   {
     "id": 30384,
@@ -33641,7 +33695,8 @@ export const PARTS = [
     },
     "tdp": 150,
     "bench": 38,
-    "vram": 10240
+    "vram": 10240,
+    "length": 247
   },
   {
     "id": 30385,
@@ -33662,7 +33717,8 @@ export const PARTS = [
     },
     "tdp": 225,
     "bench": 36,
-    "vram": 16384
+    "vram": 16384,
+    "length": 247
   },
   {
     "id": 30386,
@@ -33683,7 +33739,8 @@ export const PARTS = [
     },
     "tdp": 225,
     "bench": 34,
-    "vram": 8192
+    "vram": 8192,
+    "length": 247
   },
   {
     "id": 30387,
@@ -33704,7 +33761,8 @@ export const PARTS = [
     },
     "tdp": 75,
     "bench": 17,
-    "vram": 6144
+    "vram": 6144,
+    "length": 195
   },
   {
     "id": 30389,
@@ -33725,7 +33783,8 @@ export const PARTS = [
     },
     "tdp": 75,
     "bench": 17,
-    "vram": 6144
+    "vram": 6144,
+    "length": 165
   },
   {
     "id": 40000,
@@ -33756,7 +33815,9 @@ export const PARTS = [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40001,
@@ -33786,7 +33847,9 @@ export const PARTS = [
     },
     "value": 92,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40002,
@@ -33817,7 +33880,9 @@ export const PARTS = [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40003,
@@ -33847,7 +33912,9 @@ export const PARTS = [
     },
     "value": 91,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40004,
@@ -33878,7 +33945,9 @@ export const PARTS = [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40005,
@@ -33909,7 +33978,9 @@ export const PARTS = [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40006,
@@ -33939,7 +34010,9 @@ export const PARTS = [
     },
     "value": 63,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40007,
@@ -33969,7 +34042,9 @@ export const PARTS = [
     },
     "value": 74,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40008,
@@ -33999,7 +34074,9 @@ export const PARTS = [
     },
     "value": 74,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40009,
@@ -34030,7 +34107,9 @@ export const PARTS = [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40010,
@@ -34060,7 +34139,9 @@ export const PARTS = [
     },
     "value": 85,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40011,
@@ -34091,7 +34172,9 @@ export const PARTS = [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40012,
@@ -34121,7 +34204,9 @@ export const PARTS = [
     },
     "value": 4,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "White"
   },
   {
     "id": 40013,
@@ -34151,7 +34236,9 @@ export const PARTS = [
     },
     "value": 100,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40014,
@@ -34182,7 +34269,9 @@ export const PARTS = [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40015,
@@ -34213,7 +34302,9 @@ export const PARTS = [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40016,
@@ -34243,7 +34334,9 @@ export const PARTS = [
     },
     "value": 49,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40017,
@@ -34274,7 +34367,9 @@ export const PARTS = [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40018,
@@ -34305,7 +34400,9 @@ export const PARTS = [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40019,
@@ -34336,7 +34433,9 @@ export const PARTS = [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40020,
@@ -34366,7 +34465,9 @@ export const PARTS = [
     },
     "value": 100,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40021,
@@ -34396,7 +34497,9 @@ export const PARTS = [
     },
     "value": 92,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40022,
@@ -34426,7 +34529,9 @@ export const PARTS = [
     },
     "value": 50,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40023,
@@ -34457,7 +34562,9 @@ export const PARTS = [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40024,
@@ -34487,7 +34594,9 @@ export const PARTS = [
     },
     "value": 18,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40025,
@@ -34517,7 +34626,9 @@ export const PARTS = [
     },
     "value": 53,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40026,
@@ -34547,7 +34658,9 @@ export const PARTS = [
     },
     "value": 73,
     "memType": "DDR4",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40027,
@@ -34577,7 +34690,9 @@ export const PARTS = [
     },
     "value": 52,
     "memType": "DDR4",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40028,
@@ -34607,7 +34722,9 @@ export const PARTS = [
     },
     "value": 82,
     "memType": "DDR4",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40029,
@@ -34637,7 +34754,9 @@ export const PARTS = [
     },
     "value": 61,
     "memType": "DDR4",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40030,
@@ -34667,7 +34786,9 @@ export const PARTS = [
     },
     "value": 54,
     "memType": "DDR4",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40031,
@@ -34697,7 +34818,9 @@ export const PARTS = [
     },
     "value": 79,
     "memType": "DDR4",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40032,
@@ -34727,7 +34850,9 @@ export const PARTS = [
     },
     "value": 64,
     "memType": "DDR4",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40033,
@@ -34757,7 +34882,9 @@ export const PARTS = [
     },
     "value": 66,
     "memType": "DDR4",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40034,
@@ -34788,7 +34915,9 @@ export const PARTS = [
     "memType": "DDR4",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40035,
@@ -34818,7 +34947,9 @@ export const PARTS = [
     },
     "value": 8,
     "memType": "DDR4",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40036,
@@ -34848,7 +34979,9 @@ export const PARTS = [
     },
     "value": 28,
     "memType": "DDR4",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "form": "DIMM",
+    "color": "Black"
   },
   {
     "id": 40037,
@@ -34885,7 +35018,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 65,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40038,
@@ -34927,7 +35065,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 91,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "White",
+    "ecc": false
   },
   {
     "id": 40039,
@@ -34968,7 +35111,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 85,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40040,
@@ -35005,7 +35153,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 48,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40041,
@@ -35042,7 +35195,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 100,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40042,
@@ -35075,7 +35233,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 46,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": true
   },
   {
     "id": 40043,
@@ -35117,7 +35280,12 @@ export const PARTS = [
     "voltage": 1.1,
     "rgb": false,
     "value": 24,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Gray",
+    "ecc": false
   },
   {
     "id": 40044,
@@ -35160,7 +35328,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 69,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Gray",
+    "ecc": false
   },
   {
     "id": 40045,
@@ -35195,7 +35368,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 60,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40046,
@@ -35232,7 +35410,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 39,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Gray",
+    "ecc": false
   },
   {
     "id": 40047,
@@ -35269,7 +35452,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 20,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Gray",
+    "ecc": false
   },
   {
     "id": 40048,
@@ -35311,7 +35499,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 43,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40049,
@@ -35349,7 +35542,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 45,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Gray",
+    "ecc": false
   },
   {
     "id": 40050,
@@ -35386,7 +35584,12 @@ export const PARTS = [
     "voltage": 1.1,
     "rgb": true,
     "value": 12,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40051,
@@ -35428,7 +35631,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 51,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40052,
@@ -35470,7 +35678,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 100,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40053,
@@ -35511,7 +35724,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 31,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40054,
@@ -35553,7 +35771,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 85,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40055,
@@ -35588,7 +35811,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 84,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40056,
@@ -35624,7 +35852,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 70,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40057,
@@ -35662,7 +35895,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 45,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40058,
@@ -35697,7 +35935,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 100,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40059,
@@ -35733,7 +35976,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 2,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40060,
@@ -35768,7 +36016,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 53,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40061,
@@ -35805,7 +36058,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 74,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40062,
@@ -35842,7 +36100,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 41,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40063,
@@ -35884,7 +36147,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 99,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40064,
@@ -35921,7 +36189,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 37,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40065,
@@ -35958,7 +36231,12 @@ export const PARTS = [
     "voltage": 1.1,
     "rgb": false,
     "value": 12,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40066,
@@ -35996,7 +36274,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 48,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40067,
@@ -36028,7 +36311,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 59,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40068,
@@ -36071,7 +36359,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 100,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40069,
@@ -36108,7 +36401,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 51,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 39,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40070,
@@ -36145,7 +36443,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 15,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40071,
@@ -36182,7 +36485,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 54,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40072,
@@ -36219,7 +36527,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 99,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40073,
@@ -36261,7 +36574,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 94,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "form": "DIMM",
+    "color": "White",
+    "ecc": false
   },
   {
     "id": 40074,
@@ -36297,7 +36615,12 @@ export const PARTS = [
     "voltage": 1.1,
     "rgb": false,
     "value": 72,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40075,
@@ -36333,7 +36656,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 35,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40076,
@@ -36368,7 +36696,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 100,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40077,
@@ -36404,7 +36737,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 38,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40078,
@@ -36441,7 +36779,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 96,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40079,
@@ -36482,7 +36825,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 78,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40080,
@@ -36517,7 +36865,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 78,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Red",
+    "ecc": true
   },
   {
     "id": 40081,
@@ -36555,7 +36908,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 58,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40082,
@@ -36593,7 +36951,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 52,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40083,
@@ -36629,7 +36992,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 33,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Red",
+    "ecc": false
   },
   {
     "id": 40084,
@@ -36665,7 +37033,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": true,
     "value": 51,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 44,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40085,
@@ -36701,7 +37074,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 23,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40086,
@@ -36737,7 +37115,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 45,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40087,
@@ -36774,7 +37157,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 85,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40088,
@@ -36810,7 +37198,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 48,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40089,
@@ -36848,7 +37241,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 66,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40090,
@@ -36883,7 +37281,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 21,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": true
   },
   {
     "id": 40091,
@@ -36916,7 +37319,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 44,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": true
   },
   {
     "id": 40092,
@@ -36953,7 +37361,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 44,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40093,
@@ -36988,7 +37401,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 79,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40094,
@@ -37017,7 +37435,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 58,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40095,
@@ -37059,7 +37482,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 85,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Gray",
+    "ecc": false
   },
   {
     "id": 40096,
@@ -37090,7 +37518,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 57,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40097,
@@ -37127,7 +37560,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40098,
@@ -37163,7 +37601,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 40,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40099,
@@ -37194,7 +37637,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 33,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40100,
@@ -37231,7 +37679,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 27,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40101,
@@ -37268,7 +37721,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 39,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Red",
+    "ecc": true
   },
   {
     "id": 40102,
@@ -37305,7 +37763,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 21,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Gray",
+    "ecc": false
   },
   {
     "id": 40103,
@@ -37347,7 +37810,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 37,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Gray",
+    "ecc": false
   },
   {
     "id": 40104,
@@ -37385,7 +37853,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": true,
     "value": 53,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Gray",
+    "ecc": false
   },
   {
     "id": 40105,
@@ -37421,7 +37894,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 21,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Red",
+    "ecc": true
   },
   {
     "id": 40106,
@@ -37464,7 +37942,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 78,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40107,
@@ -37501,7 +37984,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 31,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40108,
@@ -37543,7 +38031,12 @@ export const PARTS = [
     "voltage": 1.25,
     "rgb": false,
     "value": 77,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40109,
@@ -37585,7 +38078,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 26,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Gray",
+    "ecc": false
   },
   {
     "id": 40110,
@@ -37621,7 +38119,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 85,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": true
   },
   {
     "id": 40111,
@@ -37658,7 +38161,12 @@ export const PARTS = [
     "voltage": 1.1,
     "rgb": false,
     "value": 27,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40112,
@@ -37696,7 +38204,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": true,
     "value": 55,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40113,
@@ -37733,7 +38246,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 27,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40114,
@@ -37770,7 +38288,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 69,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40115,
@@ -37806,7 +38329,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 35,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40116,
@@ -37840,7 +38368,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 21,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": true
   },
   {
     "id": 40117,
@@ -37878,7 +38411,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 29,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40118,
@@ -37914,7 +38452,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 34,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Red",
+    "ecc": true
   },
   {
     "id": 40119,
@@ -37951,7 +38494,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 79,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40120,
@@ -37988,7 +38536,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 31,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 44,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40121,
@@ -38025,7 +38578,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40122,
@@ -38063,7 +38621,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 45,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40123,
@@ -38100,7 +38663,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": true,
     "value": 35,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40124,
@@ -38136,7 +38704,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 54,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40125,
@@ -38174,7 +38747,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 69,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40126,
@@ -38211,7 +38789,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 9,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40127,
@@ -38248,7 +38831,12 @@ export const PARTS = [
     "voltage": 1.1,
     "rgb": false,
     "value": 27,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40128,
@@ -38284,7 +38872,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 56,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40129,
@@ -38321,7 +38914,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 74,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 39,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40130,
@@ -38358,7 +38956,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 17,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "White",
+    "ecc": false
   },
   {
     "id": 40131,
@@ -38395,7 +38998,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 43,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40132,
@@ -38431,7 +39039,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 74,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40133,
@@ -38465,7 +39078,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": true,
     "value": 48,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40134,
@@ -38502,7 +39120,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 41,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 44,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40135,
@@ -38538,7 +39161,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 41,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40136,
@@ -38575,7 +39203,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 64,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40137,
@@ -38612,7 +39245,12 @@ export const PARTS = [
     "voltage": 1.1,
     "rgb": true,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Red",
+    "ecc": false
   },
   {
     "id": 40138,
@@ -38648,7 +39286,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40139,
@@ -38684,7 +39327,12 @@ export const PARTS = [
     "voltage": 1.1,
     "rgb": false,
     "value": 0,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Red",
+    "ecc": true
   },
   {
     "id": 40140,
@@ -38721,7 +39369,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 60,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40141,
@@ -38756,7 +39409,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40142,
@@ -38794,7 +39452,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 33,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40143,
@@ -38831,7 +39494,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 52,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "White",
+    "ecc": false
   },
   {
     "id": 40144,
@@ -38868,7 +39536,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 60,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40145,
@@ -38903,7 +39576,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 21,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40146,
@@ -38940,7 +39618,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 67,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Red",
+    "ecc": false
   },
   {
     "id": 40147,
@@ -38975,7 +39658,12 @@ export const PARTS = [
     "voltage": 1.1,
     "rgb": false,
     "value": 100,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Red",
+    "ecc": true
   },
   {
     "id": 40148,
@@ -39011,7 +39699,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 50,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 44,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40149,
@@ -39046,7 +39739,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 39,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40150,
@@ -39082,7 +39780,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 47,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Red",
+    "ecc": false
   },
   {
     "id": 40151,
@@ -39119,7 +39822,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 52,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40152,
@@ -39154,7 +39862,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 69,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40153,
@@ -39191,7 +39904,12 @@ export const PARTS = [
     "voltage": 1.25,
     "rgb": true,
     "value": 30,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Gray",
+    "ecc": false
   },
   {
     "id": 40154,
@@ -39229,7 +39947,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": true,
     "value": 36,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40155,
@@ -39264,7 +39987,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 41,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40156,
@@ -39299,7 +40027,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 67,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40157,
@@ -39334,7 +40067,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 63,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40158,
@@ -39369,7 +40107,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 49,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40159,
@@ -39406,7 +40149,12 @@ export const PARTS = [
     "voltage": 1.25,
     "rgb": false,
     "value": 74,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40160,
@@ -39443,7 +40191,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 57,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 31,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40161,
@@ -39478,7 +40231,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 53,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40162,
@@ -39513,7 +40271,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 39,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "White",
+    "ecc": false
   },
   {
     "id": 40163,
@@ -39550,7 +40313,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 34,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40164,
@@ -39585,7 +40353,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 23,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40165,
@@ -39621,7 +40394,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 93,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 39,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40166,
@@ -39657,7 +40435,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 65,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40167,
@@ -39695,7 +40478,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": true,
     "value": 25,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40168,
@@ -39733,7 +40521,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": true,
     "value": 49,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40169,
@@ -39771,7 +40564,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 40,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40170,
@@ -39804,7 +40602,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 37,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40171,
@@ -39840,7 +40643,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 61,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "White",
+    "ecc": false
   },
   {
     "id": 40172,
@@ -39877,7 +40685,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 31,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40173,
@@ -39914,7 +40727,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": true,
     "value": 65,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40174,
@@ -39951,7 +40769,12 @@ export const PARTS = [
     "voltage": 1.1,
     "rgb": false,
     "value": 8,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40175,
@@ -39987,7 +40810,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 48,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Red",
+    "ecc": false
   },
   {
     "id": 40176,
@@ -40023,7 +40851,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": true,
     "value": 89,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40177,
@@ -40065,7 +40898,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 100,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Gray",
+    "ecc": false
   },
   {
     "id": 40178,
@@ -40101,7 +40939,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 57,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40179,
@@ -40137,7 +40980,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 46,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "White",
+    "ecc": false
   },
   {
     "id": 40180,
@@ -40173,7 +41021,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 32,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "White",
+    "ecc": false
   },
   {
     "id": 40181,
@@ -40209,7 +41062,12 @@ export const PARTS = [
     "voltage": 1.1,
     "rgb": false,
     "value": 3,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Red",
+    "ecc": true
   },
   {
     "id": 40182,
@@ -40245,7 +41103,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 30,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40183,
@@ -40282,7 +41145,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": true,
     "value": 11,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "White",
+    "ecc": false
   },
   {
     "id": 40184,
@@ -40318,7 +41186,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 41,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40185,
@@ -40354,7 +41227,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 10,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40186,
@@ -40383,7 +41261,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 60,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40187,
@@ -40419,7 +41302,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 99,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 31,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40188,
@@ -40456,7 +41344,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 47,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "White",
+    "ecc": false
   },
   {
     "id": 40189,
@@ -40492,7 +41385,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 57,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40190,
@@ -40528,7 +41426,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 41,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40191,
@@ -40558,7 +41461,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 79,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40192,
@@ -40593,7 +41501,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": true,
     "value": 60,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40193,
@@ -40627,7 +41540,12 @@ export const PARTS = [
     "voltage": 1.1,
     "rgb": false,
     "value": 92,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40194,
@@ -40663,7 +41581,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 76,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40195,
@@ -40698,7 +41621,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 56,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40196,
@@ -40734,7 +41662,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 99,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40197,
@@ -40769,7 +41702,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 48,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40198,
@@ -40806,7 +41744,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 100,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40199,
@@ -40841,7 +41784,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 85,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40200,
@@ -40873,7 +41821,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 12,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 44,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40201,
@@ -40910,7 +41863,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 99,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40202,
@@ -40946,7 +41904,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 48,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Red",
+    "ecc": false
   },
   {
     "id": 40203,
@@ -40982,7 +41945,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 62,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Red",
+    "ecc": false
   },
   {
     "id": 40204,
@@ -41018,7 +41986,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 79,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Red",
+    "ecc": false
   },
   {
     "id": 40205,
@@ -41054,7 +42027,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 78,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Red",
+    "ecc": true
   },
   {
     "id": 40206,
@@ -41089,7 +42067,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 42,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40207,
@@ -41124,7 +42107,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40208,
@@ -41160,7 +42148,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40209,
@@ -41194,7 +42187,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 96,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40210,
@@ -41232,7 +42230,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 68,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40211,
@@ -41267,7 +42270,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 56,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40212,
@@ -41303,7 +42311,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 57,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Red",
+    "ecc": false
   },
   {
     "id": 40213,
@@ -41340,7 +42353,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 52,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40214,
@@ -41377,7 +42395,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 26,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40215,
@@ -41414,7 +42437,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 96,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Red",
+    "ecc": false
   },
   {
     "id": 40216,
@@ -41450,7 +42478,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": true,
     "value": 100,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 44,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40217,
@@ -41486,7 +42519,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": true,
     "value": 100,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40218,
@@ -41521,7 +42559,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 85,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40219,
@@ -41551,7 +42594,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 31,
+    "form": "DIMM",
+    "color": "Red",
+    "ecc": false
   },
   {
     "id": 40220,
@@ -41586,7 +42634,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 60,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40221,
@@ -41621,7 +42674,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 78,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40222,
@@ -41656,7 +42714,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 78,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Red",
+    "ecc": true
   },
   {
     "id": 40223,
@@ -41693,7 +42756,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 39,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40224,
@@ -41730,7 +42798,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 9,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40225,
@@ -41762,7 +42835,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 68,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Gray",
+    "ecc": false
   },
   {
     "id": 40226,
@@ -41798,7 +42876,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 16,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40227,
@@ -41833,7 +42916,12 @@ export const PARTS = [
     "voltage": 1.1,
     "rgb": false,
     "value": 89,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Red",
+    "ecc": true
   },
   {
     "id": 40228,
@@ -41863,7 +42951,12 @@ export const PARTS = [
     "voltage": 1.2,
     "rgb": false,
     "value": 59,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "form": "SODIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40229,
@@ -41899,7 +42992,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 14,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40230,
@@ -41935,7 +43033,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 11,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "White",
+    "ecc": false
   },
   {
     "id": 40231,
@@ -41970,7 +43073,12 @@ export const PARTS = [
     "voltage": 1.4,
     "rgb": false,
     "value": 60,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "form": "DIMM",
+    "color": "Black",
+    "ecc": false
   },
   {
     "id": 40232,
@@ -42005,7 +43113,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": false,
     "value": 13,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 31,
+    "form": "DIMM",
+    "color": "Red",
+    "ecc": false
   },
   {
     "id": 40233,
@@ -42040,7 +43153,12 @@ export const PARTS = [
     "voltage": 1.35,
     "rgb": true,
     "value": 73,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "form": "DIMM",
+    "color": "White",
+    "ecc": false
   },
   {
     "id": 40234,
@@ -42071,7 +43189,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.35,
     "value": 1,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 31,
+    "ecc": false
   },
   {
     "id": 40235,
@@ -42102,7 +43223,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.2,
     "value": 4,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 31,
+    "ecc": false
   },
   {
     "id": 40236,
@@ -42133,7 +43257,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.35,
     "value": 1,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 45,
+    "ecc": false
   },
   {
     "id": 40237,
@@ -42164,7 +43291,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.35,
     "value": 4,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 31,
+    "ecc": false
   },
   {
     "id": 40238,
@@ -42195,7 +43325,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.2,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR4",
+    "height": 32,
+    "ecc": false
   },
   {
     "id": 40239,
@@ -42226,7 +43359,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.1,
     "value": 3,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "ecc": false
   },
   {
     "id": 40240,
@@ -42257,7 +43393,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.1,
     "value": 1,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "ecc": false
   },
   {
     "id": 40241,
@@ -42288,7 +43427,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.4,
     "value": 1,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "ecc": false
   },
   {
     "id": 40242,
@@ -42319,7 +43461,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.2,
     "value": 8,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 31,
+    "ecc": false
   },
   {
     "id": 40243,
@@ -42350,7 +43495,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.45,
     "value": 6,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "ecc": false
   },
   {
     "id": 40244,
@@ -42381,7 +43529,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.1,
     "value": 11,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 31,
+    "ecc": false
   },
   {
     "id": 40245,
@@ -42412,7 +43563,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.4,
     "value": 6,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "ecc": false
   },
   {
     "id": 40246,
@@ -42443,7 +43597,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.35,
     "value": 8,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "ecc": false
   },
   {
     "id": 40247,
@@ -42474,7 +43631,10 @@ export const PARTS = [
     "color": "Gray",
     "voltage": 1.4,
     "value": 4,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "ecc": false
   },
   {
     "id": 40248,
@@ -42505,7 +43665,10 @@ export const PARTS = [
     "color": "Gray",
     "voltage": 1.4,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "ecc": false
   },
   {
     "id": 40249,
@@ -42536,7 +43699,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.1,
     "value": 10,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 31,
+    "ecc": false
   },
   {
     "id": 40250,
@@ -42567,7 +43733,10 @@ export const PARTS = [
     "color": "Gray",
     "voltage": 1.4,
     "value": 1,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "ecc": false
   },
   {
     "id": 40251,
@@ -42598,7 +43767,10 @@ export const PARTS = [
     "color": "Gray",
     "voltage": 1.4,
     "value": 1,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "ecc": false
   },
   {
     "id": 40252,
@@ -42629,7 +43801,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.35,
     "value": 10,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 31,
+    "ecc": false
   },
   {
     "id": 40253,
@@ -42660,7 +43835,10 @@ export const PARTS = [
     "color": "Gray",
     "voltage": 1.35,
     "value": 4,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "ecc": false
   },
   {
     "id": 40254,
@@ -42691,7 +43869,10 @@ export const PARTS = [
     "color": "Gray",
     "voltage": 1.35,
     "value": 5,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "ecc": false
   },
   {
     "id": 40255,
@@ -42722,7 +43903,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.4,
     "value": 1,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "ecc": false
   },
   {
     "id": 40256,
@@ -42753,7 +43937,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.1,
     "value": 11,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 31,
+    "ecc": false
   },
   {
     "id": 40257,
@@ -42784,7 +43971,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.1,
     "value": 10,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 31,
+    "ecc": false
   },
   {
     "id": 40258,
@@ -42815,7 +44005,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.35,
     "value": 12,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 31,
+    "ecc": false
   },
   {
     "id": 40259,
@@ -42846,7 +44039,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.35,
     "value": 11,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 31,
+    "ecc": false
   },
   {
     "id": 40260,
@@ -42877,7 +44073,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.1,
     "value": 6,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "ecc": false
   },
   {
     "id": 40261,
@@ -42908,7 +44107,10 @@ export const PARTS = [
     "color": "Gray",
     "voltage": 1.4,
     "value": 5,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "ecc": false
   },
   {
     "id": 40262,
@@ -42939,7 +44141,10 @@ export const PARTS = [
     "color": "Gray",
     "voltage": 1.35,
     "value": 13,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "ecc": false
   },
   {
     "id": 40263,
@@ -42970,7 +44175,10 @@ export const PARTS = [
     "color": "Gray",
     "voltage": 1.4,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "ecc": false
   },
   {
     "id": 40264,
@@ -43001,7 +44209,10 @@ export const PARTS = [
     "color": "White",
     "voltage": 1.4,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "ecc": false
   },
   {
     "id": 40265,
@@ -43032,7 +44243,10 @@ export const PARTS = [
     "color": "Gray",
     "voltage": 1.35,
     "value": 9,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "ecc": false
   },
   {
     "id": 40266,
@@ -43063,7 +44277,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.35,
     "value": 9,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 31,
+    "ecc": false
   },
   {
     "id": 40267,
@@ -43094,7 +44311,10 @@ export const PARTS = [
     "color": "Gray",
     "voltage": 1.25,
     "value": 0,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "ecc": false
   },
   {
     "id": 40268,
@@ -43125,7 +44345,10 @@ export const PARTS = [
     "color": "Black",
     "voltage": 1.1,
     "value": 0,
-    "formFactor": "SODIMM"
+    "formFactor": "SODIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "ecc": false
   },
   {
     "id": 40269,
@@ -43156,7 +44379,10 @@ export const PARTS = [
     "color": "Gray",
     "voltage": 1.35,
     "value": 3,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 32,
+    "ecc": false
   },
   {
     "id": 40270,
@@ -43187,7 +44413,10 @@ export const PARTS = [
     "color": "Gray",
     "voltage": 1.35,
     "value": 3,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "ramType": "DDR5",
+    "height": 45,
+    "ecc": false
   },
   {
     "id": 50000,
@@ -63279,7 +64508,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 27
+    "value": 27,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60001,
@@ -63305,7 +64536,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 21
+    "value": 21,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60002,
@@ -63331,7 +64564,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 22
+    "value": 22,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60003,
@@ -63357,7 +64592,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 55
+    "value": 55,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60004,
@@ -63383,7 +64620,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 0
+    "value": 0,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60005,
@@ -63409,7 +64648,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 0
+    "value": 0,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60006,
@@ -63435,7 +64676,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 26
+    "value": 26,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60007,
@@ -63461,7 +64704,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 28
+    "value": 28,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60008,
@@ -63487,7 +64732,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 11
+    "value": 11,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60009,
@@ -63515,7 +64762,9 @@ export const PARTS = [
     "color": "Black",
     "value": 29,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60010,
@@ -63543,7 +64792,9 @@ export const PARTS = [
     "color": "Black",
     "value": 19,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60011,
@@ -63571,7 +64822,9 @@ export const PARTS = [
     "color": "Black",
     "value": 33,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60012,
@@ -63597,7 +64850,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 22
+    "value": 22,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60013,
@@ -63623,7 +64878,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 40
+    "value": 40,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60014,
@@ -63649,7 +64906,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 55
+    "value": 55,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60015,
@@ -63675,7 +64934,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 33
+    "value": 33,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60016,
@@ -63701,7 +64962,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 41
+    "value": 41,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60017,
@@ -63729,7 +64992,9 @@ export const PARTS = [
     "color": "Black",
     "value": 43,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60018,
@@ -63755,7 +65020,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 14
+    "value": 14,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60019,
@@ -63783,7 +65050,9 @@ export const PARTS = [
     "color": "Black",
     "value": 6,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60020,
@@ -63809,7 +65078,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 22
+    "value": 22,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60021,
@@ -63835,7 +65106,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 26
+    "value": 26,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60022,
@@ -63861,7 +65134,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 0
+    "value": 0,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60023,
@@ -63887,7 +65162,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 9
+    "value": 9,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60024,
@@ -63915,7 +65192,9 @@ export const PARTS = [
     "color": "Black",
     "value": 26,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60025,
@@ -63941,7 +65220,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 39
+    "value": 39,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60026,
@@ -63967,7 +65248,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 56
+    "value": 56,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60027,
@@ -63995,7 +65278,9 @@ export const PARTS = [
     "color": "Black",
     "value": 42,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60028,
@@ -64023,7 +65308,9 @@ export const PARTS = [
     "color": "Black",
     "value": 54,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60029,
@@ -64049,7 +65336,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 98
+    "value": 98,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60030,
@@ -64077,7 +65366,9 @@ export const PARTS = [
     "color": "Black",
     "value": 98,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60031,
@@ -64105,7 +65396,9 @@ export const PARTS = [
     "color": "Black",
     "value": 28,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60032,
@@ -64134,7 +65427,8 @@ export const PARTS = [
     "value": 0,
     "rgb": true,
     "needsReview": true,
-    "quarantinedAt": "2026-04-25"
+    "quarantinedAt": "2026-04-25",
+    "fans": 1
   },
   {
     "id": 60033,
@@ -64160,7 +65454,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 31
+    "value": 31,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60034,
@@ -64186,7 +65482,9 @@ export const PARTS = [
       }
     },
     "color": "Black",
-    "value": 70
+    "value": 70,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60035,
@@ -64221,7 +65519,9 @@ export const PARTS = [
     "fanSize": 120,
     "depth": 160,
     "modular": "Full",
-    "eff": "Gold"
+    "eff": "Gold",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60036,
@@ -64263,7 +65563,9 @@ export const PARTS = [
     "atx3": true,
     "fanSize": 135,
     "depth": 160,
-    "eff": "Gold"
+    "eff": "Gold",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60037,
@@ -64299,7 +65601,10 @@ export const PARTS = [
     "ff": "ATX",
     "fanSize": 120,
     "depth": 140,
-    "modular": "Non"
+    "modular": "Non",
+    "atx3": false,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60038,
@@ -64331,7 +65636,11 @@ export const PARTS = [
     "color": "Black",
     "value": 100,
     "ff": "ATX",
-    "modular": "Non"
+    "modular": "Non",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60039,
@@ -64365,7 +65674,10 @@ export const PARTS = [
     "color": "Black",
     "value": 89,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60040,
@@ -64399,7 +65711,10 @@ export const PARTS = [
     "color": "Black",
     "value": 77,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60041,
@@ -64434,7 +65749,10 @@ export const PARTS = [
     "color": "Black",
     "value": 83,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60042,
@@ -64468,7 +65786,10 @@ export const PARTS = [
     "color": "Black",
     "value": 69,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60043,
@@ -64503,7 +65824,10 @@ export const PARTS = [
     "color": "Black",
     "value": 69,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60044,
@@ -64542,7 +65866,11 @@ export const PARTS = [
     "modular": "Full",
     "color": "Black",
     "value": 56,
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60045,
@@ -64575,7 +65903,10 @@ export const PARTS = [
     "value": 23,
     "ff": "ATX",
     "atx3": true,
-    "eff": "Gold"
+    "eff": "Gold",
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60046,
@@ -64617,7 +65948,9 @@ export const PARTS = [
     "atx3": true,
     "fanSize": 135,
     "depth": 160,
-    "eff": "Gold"
+    "eff": "Gold",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60047,
@@ -64654,7 +65987,9 @@ export const PARTS = [
     "atx3": true,
     "fanSize": 135,
     "depth": 180,
-    "eff": "Platinum"
+    "eff": "Platinum",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60048,
@@ -64686,7 +66021,10 @@ export const PARTS = [
     "ff": "ATX",
     "atx3": true,
     "modular": "Full",
-    "eff": "Platinum"
+    "eff": "Platinum",
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60049,
@@ -64727,7 +66065,9 @@ export const PARTS = [
     "ff": "ATX",
     "atx3": true,
     "fanSize": 135,
-    "depth": 150
+    "depth": 150,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60050,
@@ -64759,7 +66099,10 @@ export const PARTS = [
     "value": 100,
     "ff": "ATX",
     "atx3": true,
-    "modular": "Non"
+    "modular": "Non",
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60051,
@@ -64791,7 +66134,11 @@ export const PARTS = [
     "color": "Black",
     "value": 100,
     "modular": "Non",
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60052,
@@ -64825,7 +66172,10 @@ export const PARTS = [
     "color": "Black",
     "value": 69,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60053,
@@ -64861,7 +66211,10 @@ export const PARTS = [
     "ff": "ATX",
     "modular": "Non",
     "fanSize": 120,
-    "depth": 150
+    "depth": 150,
+    "atx3": false,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60054,
@@ -64898,7 +66251,9 @@ export const PARTS = [
     "ff": "ATX",
     "atx3": true,
     "fanSize": 135,
-    "depth": 160
+    "depth": 160,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60055,
@@ -64933,7 +66288,9 @@ export const PARTS = [
     "atx3": true,
     "fanSize": 135,
     "depth": 160,
-    "modular": "Full"
+    "modular": "Full",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60056,
@@ -64966,7 +66323,10 @@ export const PARTS = [
     "color": "White",
     "value": 69,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60057,
@@ -64999,7 +66359,10 @@ export const PARTS = [
     "value": 26,
     "ff": "ATX",
     "atx3": true,
-    "eff": "Gold"
+    "eff": "Gold",
+    "fanSize": 140,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60058,
@@ -65032,7 +66395,10 @@ export const PARTS = [
     "value": 36,
     "ff": "ATX",
     "atx3": true,
-    "eff": "Gold"
+    "eff": "Gold",
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60059,
@@ -65074,7 +66440,9 @@ export const PARTS = [
     "ff": "ATX",
     "atx3": true,
     "fanSize": 135,
-    "depth": 180
+    "depth": 180,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60060,
@@ -65110,7 +66478,9 @@ export const PARTS = [
     "ff": "ATX",
     "atx3": true,
     "fanSize": 135,
-    "depth": 160
+    "depth": 160,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60061,
@@ -65143,7 +66513,10 @@ export const PARTS = [
     "color": "Black",
     "value": 76,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60062,
@@ -65185,7 +66558,9 @@ export const PARTS = [
     "ff": "ATX",
     "atx3": true,
     "fanSize": 135,
-    "depth": 150
+    "depth": 150,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60063,
@@ -65221,7 +66596,9 @@ export const PARTS = [
     "ff": "ATX",
     "atx3": true,
     "fanSize": 135,
-    "depth": 160
+    "depth": 160,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60064,
@@ -65255,7 +66632,10 @@ export const PARTS = [
     "color": "Black",
     "value": 76,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60065,
@@ -65288,7 +66668,10 @@ export const PARTS = [
     "ff": "ATX",
     "atx3": true,
     "modular": "Full",
-    "eff": "Platinum"
+    "eff": "Platinum",
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60066,
@@ -65321,7 +66704,11 @@ export const PARTS = [
     "color": "Black",
     "value": 86,
     "ff": "ATX",
-    "modular": "Non"
+    "modular": "Non",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60067,
@@ -65363,7 +66750,9 @@ export const PARTS = [
     "ff": "ATX",
     "atx3": true,
     "fanSize": 135,
-    "depth": 150
+    "depth": 150,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60068,
@@ -65397,7 +66786,10 @@ export const PARTS = [
     "color": "Black",
     "value": 65,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60069,
@@ -65439,7 +66831,9 @@ export const PARTS = [
     "ff": "ATX",
     "atx3": true,
     "fanSize": 120,
-    "depth": 140
+    "depth": 140,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60070,
@@ -65474,7 +66868,10 @@ export const PARTS = [
     "value": 55,
     "ff": "ATX",
     "fanSize": 135,
-    "depth": 160
+    "depth": 160,
+    "atx3": true,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60071,
@@ -65505,7 +66902,11 @@ export const PARTS = [
     "modular": "Semi",
     "color": "Black",
     "value": 100,
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60072,
@@ -65538,7 +66939,10 @@ export const PARTS = [
     "color": "Black",
     "value": 37,
     "ff": "SFX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 92,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60073,
@@ -65573,7 +66977,10 @@ export const PARTS = [
     "value": 100,
     "ff": "ATX",
     "atx3": true,
-    "modular": "Non"
+    "modular": "Non",
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60074,
@@ -65609,7 +67016,9 @@ export const PARTS = [
     "atx3": true,
     "fanSize": 135,
     "depth": 180,
-    "eff": "Platinum"
+    "eff": "Platinum",
+    "rgb": true,
+    "fans": 1
   },
   {
     "id": 60075,
@@ -65644,7 +67053,10 @@ export const PARTS = [
     "value": 1,
     "fanSize": 135,
     "depth": 160,
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60076,
@@ -65675,7 +67087,11 @@ export const PARTS = [
     "modular": "Full",
     "color": "Black",
     "value": 75,
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60077,
@@ -65710,7 +67126,10 @@ export const PARTS = [
     "color": "Black",
     "value": 19,
     "ff": "SFX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 92,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60078,
@@ -65742,7 +67161,11 @@ export const PARTS = [
     "modular": "Full",
     "color": "Black",
     "value": 81,
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60079,
@@ -65776,7 +67199,11 @@ export const PARTS = [
     "modular": "Semi",
     "color": "Black",
     "value": 100,
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60080,
@@ -65807,7 +67234,11 @@ export const PARTS = [
     "color": "Black",
     "value": 86,
     "ff": "ATX",
-    "modular": "Non"
+    "modular": "Non",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60081,
@@ -65843,7 +67274,10 @@ export const PARTS = [
     "ff": "ATX",
     "modular": "Non",
     "fanSize": 120,
-    "depth": 150
+    "depth": 150,
+    "atx3": false,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60082,
@@ -65877,7 +67311,10 @@ export const PARTS = [
     "color": "Black",
     "value": 81,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60083,
@@ -65912,7 +67349,10 @@ export const PARTS = [
     "value": 45,
     "fanSize": 120,
     "depth": 150,
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "rgb": false,
+    "fans": 0
   },
   {
     "id": 60084,
@@ -65941,7 +67381,10 @@ export const PARTS = [
     "fanSize": 120,
     "depth": 160,
     "modular": "Full",
-    "eff": "Gold"
+    "eff": "Gold",
+    "atx3": true,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60085,
@@ -65975,7 +67418,10 @@ export const PARTS = [
     "color": "Black",
     "value": 100,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60086,
@@ -66008,7 +67454,11 @@ export const PARTS = [
     "color": "Black",
     "value": 68,
     "ff": "ATX",
-    "modular": "Non"
+    "modular": "Non",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60087,
@@ -66043,7 +67493,10 @@ export const PARTS = [
     "color": "Black",
     "value": 63,
     "atx3": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60088,
@@ -66077,7 +67530,10 @@ export const PARTS = [
     "color": "Black",
     "value": 76,
     "rgb": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 135,
+    "fans": 1
   },
   {
     "id": 60089,
@@ -66112,7 +67568,10 @@ export const PARTS = [
     "value": 0,
     "ff": "ATX",
     "fanSize": 135,
-    "depth": 180
+    "depth": 180,
+    "atx3": true,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60090,
@@ -66144,7 +67603,11 @@ export const PARTS = [
     "color": "Black",
     "value": 40,
     "ff": "ATX",
-    "modular": "Non"
+    "modular": "Non",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60091,
@@ -66176,7 +67639,11 @@ export const PARTS = [
     "color": "Black",
     "value": 7,
     "ff": "SFX",
-    "modular": "Full"
+    "modular": "Full",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60092,
@@ -66207,7 +67674,11 @@ export const PARTS = [
     "color": "Black",
     "value": 58,
     "ff": "ATX",
-    "modular": "Non"
+    "modular": "Non",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60093,
@@ -66239,7 +67710,10 @@ export const PARTS = [
     "value": 62,
     "ff": "ATX",
     "atx3": true,
-    "modular": "Non"
+    "modular": "Non",
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60094,
@@ -66271,7 +67745,11 @@ export const PARTS = [
     "modular": "Full",
     "color": "Black",
     "value": 0,
-    "ff": "SFX-L"
+    "ff": "SFX-L",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60095,
@@ -66304,7 +67782,11 @@ export const PARTS = [
     "modular": "Full",
     "color": "Black",
     "value": 6,
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 140,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60096,
@@ -66341,7 +67823,9 @@ export const PARTS = [
     "ff": "SFX",
     "atx3": true,
     "fanSize": 92,
-    "depth": 130
+    "depth": 130,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60097,
@@ -66373,7 +67857,11 @@ export const PARTS = [
     "modular": "Full",
     "color": "Black",
     "value": 62,
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60098,
@@ -66405,7 +67893,11 @@ export const PARTS = [
     "color": "Black",
     "value": 95,
     "ff": "ATX",
-    "modular": "Non"
+    "modular": "Non",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60099,
@@ -66439,7 +67931,10 @@ export const PARTS = [
     "value": 96,
     "ff": "ATX",
     "atx3": true,
-    "modular": "Non"
+    "modular": "Non",
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60100,
@@ -66475,7 +67970,9 @@ export const PARTS = [
     "ff": "ATX",
     "atx3": true,
     "fanSize": 135,
-    "depth": 160
+    "depth": 160,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60101,
@@ -66509,7 +68006,10 @@ export const PARTS = [
     "color": "Black",
     "value": 70,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60102,
@@ -66543,7 +68043,10 @@ export const PARTS = [
     "color": "Black",
     "value": 61,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60103,
@@ -66577,7 +68080,10 @@ export const PARTS = [
     "fanSize": 135,
     "depth": 160,
     "ff": "ATX",
-    "eff": "Gold"
+    "eff": "Gold",
+    "atx3": false,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60104,
@@ -66611,7 +68117,9 @@ export const PARTS = [
     "atx3": true,
     "fanSize": 120,
     "depth": 160,
-    "modular": "Semi"
+    "modular": "Semi",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60105,
@@ -66644,7 +68152,11 @@ export const PARTS = [
     "color": "Black",
     "value": 67,
     "ff": "ATX",
-    "modular": "Non"
+    "modular": "Non",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60106,
@@ -66678,7 +68190,9 @@ export const PARTS = [
     "atx3": true,
     "fanSize": 135,
     "depth": 175,
-    "modular": "Full"
+    "modular": "Full",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60107,
@@ -66710,7 +68224,11 @@ export const PARTS = [
     "color": "Black",
     "value": 100,
     "modular": "Non",
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60108,
@@ -66743,7 +68261,11 @@ export const PARTS = [
     "modular": "Semi",
     "color": "Black",
     "value": 17,
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60109,
@@ -66775,7 +68297,10 @@ export const PARTS = [
     "color": "Black",
     "value": 47,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 140,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60110,
@@ -66808,7 +68333,11 @@ export const PARTS = [
     "color": "Black",
     "value": 75,
     "modular": "Non",
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60111,
@@ -66840,7 +68369,11 @@ export const PARTS = [
     "color": "Black",
     "value": 66,
     "modular": "Non",
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60112,
@@ -66872,7 +68405,11 @@ export const PARTS = [
     "color": "Black",
     "value": 57,
     "modular": "Non",
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60113,
@@ -66904,7 +68441,11 @@ export const PARTS = [
     "color": "Black",
     "value": 69,
     "ff": "ATX",
-    "modular": "Non"
+    "modular": "Non",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60114,
@@ -66937,7 +68478,10 @@ export const PARTS = [
     "color": "Black",
     "value": 98,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60115,
@@ -66969,7 +68513,11 @@ export const PARTS = [
     "modular": "Semi",
     "color": "Black",
     "value": 63,
-    "ff": "SFX"
+    "ff": "SFX",
+    "atx3": false,
+    "fanSize": 92,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60116,
@@ -67001,7 +68549,10 @@ export const PARTS = [
     "value": 67,
     "ff": "ATX",
     "rgb": true,
-    "modular": "Non"
+    "modular": "Non",
+    "atx3": false,
+    "fanSize": 120,
+    "fans": 1
   },
   {
     "id": 60117,
@@ -67034,7 +68585,10 @@ export const PARTS = [
     "value": 89,
     "ff": "ATX",
     "atx3": true,
-    "modular": "Full"
+    "modular": "Full",
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60118,
@@ -67066,7 +68620,10 @@ export const PARTS = [
     "value": 37,
     "ff": "ATX",
     "atx3": true,
-    "eff": "Gold"
+    "eff": "Gold",
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60119,
@@ -67099,7 +68656,10 @@ export const PARTS = [
     "color": "Black",
     "value": 39,
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "fanSize": 140,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60120,
@@ -67130,7 +68690,11 @@ export const PARTS = [
     "color": "Black",
     "value": 100,
     "modular": "Non",
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60121,
@@ -67163,7 +68727,11 @@ export const PARTS = [
     "color": "Black",
     "value": 37,
     "ff": "ATX",
-    "modular": "Full"
+    "modular": "Full",
+    "atx3": false,
+    "fanSize": 120,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60122,
@@ -67199,7 +68767,9 @@ export const PARTS = [
     "atx3": true,
     "fanSize": 135,
     "depth": 160,
-    "eff": "Gold"
+    "eff": "Gold",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60123,
@@ -67234,7 +68804,10 @@ export const PARTS = [
     "value": 71,
     "ff": "ATX",
     "fanSize": 135,
-    "depth": 160
+    "depth": 160,
+    "atx3": true,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60124,
@@ -67266,7 +68839,11 @@ export const PARTS = [
     "color": "Black",
     "value": 100,
     "modular": "Non",
-    "ff": "ATX"
+    "ff": "ATX",
+    "atx3": false,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60125,
@@ -67307,7 +68884,9 @@ export const PARTS = [
     "atx3": true,
     "fanSize": 120,
     "depth": 150,
-    "eff": "Bronze"
+    "eff": "Bronze",
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60126,
@@ -67341,7 +68920,10 @@ export const PARTS = [
     "value": 93,
     "ff": "ATX",
     "atx3": true,
-    "eff": "Gold"
+    "eff": "Gold",
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60127,
@@ -67375,7 +68957,9 @@ export const PARTS = [
     "value": 79,
     "ff": "ATX",
     "atx3": true,
-    "rgb": true
+    "rgb": true,
+    "fanSize": 140,
+    "fans": 1
   },
   {
     "id": 60128,
@@ -67408,7 +68992,11 @@ export const PARTS = [
     "color": "Black",
     "value": 100,
     "ff": "ATX",
-    "modular": "Non"
+    "modular": "Non",
+    "atx3": false,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60129,
@@ -67437,7 +69025,8 @@ export const PARTS = [
     "ff": "ATX",
     "value": 70,
     "fanSize": 120,
-    "depth": 140
+    "depth": 140,
+    "atx3": false
   },
   {
     "id": 60130,
@@ -67464,7 +69053,9 @@ export const PARTS = [
     "rgb": false,
     "fans": 1,
     "ff": "ATX",
-    "value": 69
+    "value": 69,
+    "atx3": false,
+    "fanSize": 120
   },
   {
     "id": 60131,
@@ -67553,7 +69144,8 @@ export const PARTS = [
     "value": 45,
     "atx3": true,
     "fanSize": 120,
-    "depth": 150
+    "depth": 150,
+    "rgb": false
   },
   {
     "id": 60134,
@@ -67580,7 +69172,9 @@ export const PARTS = [
     "rgb": false,
     "ff": "ATX",
     "value": 44,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "fans": 1
   },
   {
     "id": 60135,
@@ -67607,7 +69201,9 @@ export const PARTS = [
     "rgb": false,
     "ff": "ATX",
     "value": 26,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 140,
+    "fans": 1
   },
   {
     "id": 60136,
@@ -67634,7 +69230,9 @@ export const PARTS = [
     "rgb": false,
     "ff": "ATX",
     "value": 36,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "fans": 1
   },
   {
     "id": 60137,
@@ -67663,7 +69261,8 @@ export const PARTS = [
     "value": 44,
     "atx3": true,
     "fanSize": 120,
-    "depth": 140
+    "depth": 140,
+    "fans": 1
   },
   {
     "id": 60138,
@@ -67692,7 +69291,8 @@ export const PARTS = [
     "value": 52,
     "atx3": true,
     "fanSize": 120,
-    "depth": 140
+    "depth": 140,
+    "fans": 1
   },
   {
     "id": 60139,
@@ -67718,7 +69318,10 @@ export const PARTS = [
     "color": "Black",
     "rgb": false,
     "ff": "ATX",
-    "value": 55
+    "value": 55,
+    "atx3": false,
+    "fanSize": 135,
+    "fans": 1
   },
   {
     "id": 60140,
@@ -67747,7 +69350,8 @@ export const PARTS = [
     "ff": "ATX",
     "value": 7,
     "fanSize": 135,
-    "depth": 180
+    "depth": 180,
+    "atx3": true
   },
   {
     "id": 60141,
@@ -67773,7 +69377,10 @@ export const PARTS = [
     "color": "White",
     "ff": "ATX",
     "value": 34,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60142,
@@ -67799,7 +69406,10 @@ export const PARTS = [
     "color": "White",
     "ff": "ATX",
     "value": 33,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 140,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60143,
@@ -67826,7 +69436,9 @@ export const PARTS = [
     "rgb": false,
     "ff": "ATX",
     "value": 37,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 140,
+    "fans": 1
   },
   {
     "id": 60144,
@@ -67852,7 +69464,10 @@ export const PARTS = [
     "color": "White",
     "ff": "ATX",
     "value": 38,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60145,
@@ -67878,7 +69493,10 @@ export const PARTS = [
     "color": "Black",
     "ff": "ATX",
     "value": 11,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 140,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60146,
@@ -67907,7 +69525,8 @@ export const PARTS = [
     "ff": "ATX",
     "value": 12,
     "fanSize": 135,
-    "depth": 160
+    "depth": 160,
+    "atx3": true
   },
   {
     "id": 60147,
@@ -67936,7 +69555,8 @@ export const PARTS = [
     "ff": "ATX",
     "value": 15,
     "fanSize": 135,
-    "depth": 160
+    "depth": 160,
+    "atx3": false
   },
   {
     "id": 60148,
@@ -68054,7 +69674,8 @@ export const PARTS = [
     "fans": 1,
     "ff": "SFX",
     "value": 17,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 92
   },
   {
     "id": 60152,
@@ -68142,7 +69763,9 @@ export const PARTS = [
     "ff": "ATX",
     "value": 66,
     "fanSize": 120,
-    "depth": 150
+    "depth": 150,
+    "atx3": false,
+    "rgb": false
   },
   {
     "id": 60155,
@@ -68170,7 +69793,9 @@ export const PARTS = [
     "ff": "ATX",
     "value": 67,
     "fanSize": 120,
-    "depth": 150
+    "depth": 150,
+    "atx3": false,
+    "rgb": false
   },
   {
     "id": 60156,
@@ -68288,7 +69913,8 @@ export const PARTS = [
     "fans": 1,
     "ff": "SFX",
     "value": 14,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 92
   },
   {
     "id": 60160,
@@ -68317,7 +69943,8 @@ export const PARTS = [
     "ff": "ATX",
     "value": 54,
     "fanSize": 120,
-    "depth": 140
+    "depth": 140,
+    "atx3": false
   },
   {
     "id": 60161,
@@ -68346,7 +69973,8 @@ export const PARTS = [
     "ff": "ATX",
     "value": 61,
     "fanSize": 120,
-    "depth": 140
+    "depth": 140,
+    "atx3": false
   },
   {
     "id": 60162,
@@ -68374,7 +70002,8 @@ export const PARTS = [
     "fans": 1,
     "ff": "ATX",
     "value": 44,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135
   },
   {
     "id": 60163,
@@ -68402,7 +70031,8 @@ export const PARTS = [
     "fans": 1,
     "ff": "SFX",
     "value": 11,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 92
   },
   {
     "id": 60164,
@@ -68430,7 +70060,9 @@ export const PARTS = [
     "value": 0,
     "atx3": true,
     "fanSize": 135,
-    "depth": 190
+    "depth": 190,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60165,
@@ -68456,7 +70088,10 @@ export const PARTS = [
     "color": "Black",
     "ff": "ATX",
     "value": 44,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60166,
@@ -68484,7 +70119,9 @@ export const PARTS = [
     "value": 32,
     "atx3": true,
     "fanSize": 120,
-    "depth": 150
+    "depth": 150,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60167,
@@ -68631,7 +70268,9 @@ export const PARTS = [
     "rgb": false,
     "ff": "ATX",
     "value": 51,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "fans": 1
   },
   {
     "id": 60172,
@@ -68658,7 +70297,9 @@ export const PARTS = [
     "rgb": false,
     "ff": "ATX",
     "value": 47,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135,
+    "fans": 1
   },
   {
     "id": 60173,
@@ -68686,7 +70327,8 @@ export const PARTS = [
     "fans": 1,
     "ff": "ATX",
     "value": 21,
-    "atx3": true
+    "atx3": true,
+    "fanSize": 135
   },
   {
     "id": 60174,
@@ -68715,7 +70357,8 @@ export const PARTS = [
     "value": 33,
     "atx3": true,
     "fanSize": 140,
-    "depth": 170
+    "depth": 170,
+    "rgb": false
   },
   {
     "id": 60175,
@@ -68744,7 +70387,8 @@ export const PARTS = [
     "value": 44,
     "atx3": true,
     "fanSize": 140,
-    "depth": 170
+    "depth": 170,
+    "rgb": false
   },
   {
     "id": 60176,
@@ -68773,7 +70417,8 @@ export const PARTS = [
     "value": 51,
     "atx3": true,
     "fanSize": 140,
-    "depth": 170
+    "depth": 170,
+    "rgb": false
   },
   {
     "id": 60177,
@@ -68802,7 +70447,8 @@ export const PARTS = [
     "value": 53,
     "atx3": true,
     "fanSize": 140,
-    "depth": 170
+    "depth": 170,
+    "rgb": false
   },
   {
     "id": 60178,
@@ -68831,7 +70477,8 @@ export const PARTS = [
     "value": 33,
     "atx3": true,
     "fanSize": 140,
-    "depth": 170
+    "depth": 170,
+    "rgb": false
   },
   {
     "id": 60179,
@@ -68860,7 +70507,8 @@ export const PARTS = [
     "value": 33,
     "atx3": true,
     "fanSize": 140,
-    "depth": 170
+    "depth": 170,
+    "rgb": false
   },
   {
     "id": 60180,
@@ -68888,7 +70536,9 @@ export const PARTS = [
     "value": 52,
     "atx3": true,
     "fanSize": 120,
-    "depth": 150
+    "depth": 150,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60181,
@@ -68916,7 +70566,9 @@ export const PARTS = [
     "value": 53,
     "atx3": true,
     "fanSize": 120,
-    "depth": 150
+    "depth": 150,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 60182,
@@ -68941,7 +70593,11 @@ export const PARTS = [
     "modular": "Full",
     "color": "Black",
     "ff": "ATX",
-    "value": 7
+    "value": 7,
+    "atx3": false,
+    "fanSize": 92,
+    "rgb": false,
+    "fans": 1
   },
   {
     "id": 70000,
@@ -117903,7 +119559,7 @@ export const PARTS = [
     "pr": 49,
     "msrp": 55,
     "r": 4.5,
-    "cableType": "GPU 16-Pin",
+    "cableType": "12VHPWR",
     "connectorType": "GPU",
     "rgb": true,
     "deals": {
@@ -117940,7 +119596,8 @@ export const PARTS = [
     "upc": "840006662211",
     "weight": "1.97 ounces",
     "color": "Black",
-    "cableLength": "200mm"
+    "cableLength": "200mm",
+    "cableType": "RGB Accessory"
   },
   {
     "id": 99605,
@@ -120442,7 +122099,7 @@ export const PARTS = [
     "msrp": 20,
     "r": 4.7,
     "deals": {"amazon":{"url":"https://www.amazon.com/AsiaHorse-Extension-Sleeved-Custom-Braided/dp/B0BVQVYVGW/ref=sr_1_22?crid=GSM9GP4QVL6I&dib=eyJ2IjoiMSJ9.aQmBy6_wwHBiAEI4TAnp082bV_ltyQJw8fjj0KmBAJOiYs3P20xmUy-fVID5SaEBl65MtjBzP8oWUu0OX7UkujWTuI-kvMBf8LX_tPS9fTxAhH66iPV8l3mBI8N9_fOUYJkzVMlWbj9oTq2I0z9j0kjY9_IK9Yo_HGSAIrNvwlNqUqVUhazN4PF76olSTkEwH2g2JpRX-XkXr_rZYUIHi-Nv8Un4Ppa8r15zI33KDDY.OoHmaHm6yMrbFyItUyxHmllC-Ss_Hh047vg1P19iJdU&dib_tag=se&keywords=PCIe+extension+cable&qid=1777131261&sprefix=PCIe%2Bextension%2Bcable%2Caps%2C141&sr=8-22&xpid=Iru0BnAWEJWvn&tag=tiereduptech-20", "price":19.98, "inStock":true}},
-    "cableType": "PCIe Power",
+    "cableType": "Full Kit",
     "cableLength": "30cm"
   },
   {
@@ -120455,7 +122112,7 @@ export const PARTS = [
     "msrp": 30,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Asiahorse-Customization-Sleeve-Extension-Supply/dp/B073W6N7Y2/ref=sr_1_22?crid=XO9QGYMQCZGQ&dib=eyJ2IjoiMSJ9.j8Bym_2wym3qVxBgXMaRxC-yasaw-3eBUTr0cH0stujgomgoVE-T5-14O2Q4F67T3qQ8KX1WDD1WD5X179OFcg6eKhc214013k7QFKOQGYDuAc2BdETXx10LajN6YxBm9hGRUcgGm5jkMBf-xIuo_hdTXqPjglspU-fDegbH7y8cDlpd4zehGc7xrb0D_azwF7sIGf4DN8FlHYRomzcvOYR1-uvW0-Q7gscu6kPK4R0.t6_3ziX2tQbNg4Dr37SJhfgSLnIpHgTXYgURLcv0eDw&dib_tag=se&keywords=CableMod+extension&qid=1777131268&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=CableMod%2Bextension%2Caps%2C266&sr=8-22&xpid=8S58R4a-w5vOn&tag=tiereduptech-20", "price":29.98, "inStock":true}},
-    "cableType": "PSU Kit"
+    "cableType": "Full Kit"
   },
   {
     "id": 100117,
@@ -120467,7 +122124,7 @@ export const PARTS = [
     "msrp": 30,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/ASIAHORSE-Extension-Sleeved-Braided-Black-Grey/dp/B07K2QMV13/ref=sr_1_8?crid=UQE6ILYTQZ1Y&dib=eyJ2IjoiMSJ9.oArfb3uc0pnaIb5pNlc8Nkm3bV2_kkx7mSZW5MNwfnAnAg31reFYccPiyzHhPdJlP0Ywnl51MZY0cYmlHNjB0Ho31hjR8jghEUudE_sjZIQXCNQgJz4u9Mq868n0RPMmYlZTGsPf6iLlOrOjd3VIWjCHMxjWBXoAeoDAPkkEYXAxQyzTC7_wjQQG25xrKxg1NcPMTFDUJD3Mpu6n2BbV3Y6FKYqhkQdROHcXGYrOVOY.udV7Mdegb8kddGLdzSxa3OeSpYEORQEqp0lWOj2HcEM&dib_tag=se&keywords=cable+extension+kit+PSU&qid=1777131260&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=cable%2Bextension%2Bkit%2BPSU%2Caps%2C113&sr=8-8&tag=tiereduptech-20", "price":29.98, "inStock":true}},
-    "cableType": "PSU Kit"
+    "cableType": "Full Kit"
   },
   {
     "id": 100118,
@@ -120479,7 +122136,7 @@ export const PARTS = [
     "msrp": 22,
     "r": 4.7,
     "deals": {"amazon":{"url":"https://www.amazon.com/ASIAHORSE-Extension-Sleeved-Braided-11-8Inch/dp/B08HLYM54P/ref=sr_1_21?crid=GSM9GP4QVL6I&dib=eyJ2IjoiMSJ9.aQmBy6_wwHBiAEI4TAnp082bV_ltyQJw8fjj0KmBAJOiYs3P20xmUy-fVID5SaEBl65MtjBzP8oWUu0OX7UkujWTuI-kvMBf8LX_tPS9fTxAhH66iPV8l3mBI8N9_fOUYJkzVMlWbj9oTq2I0z9j0kjY9_IK9Yo_HGSAIrNvwlNqUqVUhazN4PF76olSTkEwH2g2JpRX-XkXr_rZYUIHi-Nv8Un4Ppa8r15zI33KDDY.OoHmaHm6yMrbFyItUyxHmllC-Ss_Hh047vg1P19iJdU&dib_tag=se&keywords=PCIe+extension+cable&qid=1777131261&sprefix=PCIe%2Bextension%2Bcable%2Caps%2C141&sr=8-21&xpid=Iru0BnAWEJWvn&tag=tiereduptech-20", "price":21.99, "inStock":true}},
-    "cableType": "PCIe Power",
+    "cableType": "Full Kit",
     "cableLength": "30cm"
   },
   {
@@ -120492,7 +122149,7 @@ export const PARTS = [
     "msrp": 32,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Asiahorse-Extension-1x24-PIN-2x8-PORT-3x8-PORT/dp/B08KCSZHDX/ref=sr_1_25?crid=GSM9GP4QVL6I&dib=eyJ2IjoiMSJ9.aQmBy6_wwHBiAEI4TAnp082bV_ltyQJw8fjj0KmBAJOiYs3P20xmUy-fVID5SaEBl65MtjBzP8oWUu0OX7UkujWTuI-kvMBf8LX_tPS9fTxAhH66iPV8l3mBI8N9_fOUYJkzVMlWbj9oTq2I0z9j0kjY9_IK9Yo_HGSAIrNvwlNqUqVUhazN4PF76olSTkEwH2g2JpRX-XkXr_rZYUIHi-Nv8Un4Ppa8r15zI33KDDY.OoHmaHm6yMrbFyItUyxHmllC-Ss_Hh047vg1P19iJdU&dib_tag=se&keywords=PCIe+extension+cable&qid=1777131261&sprefix=PCIe%2Bextension%2Bcable%2Caps%2C141&sr=8-25&xpid=Iru0BnAWEJWvn&tag=tiereduptech-20", "price":31.65, "inStock":true}},
-    "cableType": "24-pin ATX",
+    "cableType": "Full Kit",
     "cableLength": "30cm"
   },
   {
@@ -120505,7 +122162,7 @@ export const PARTS = [
     "msrp": 32,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/AsiaHorse-Sleeved-Extension-Connector-Combs-White/dp/B0B56LHGRC/ref=sr_1_29?crid=GSM9GP4QVL6I&dib=eyJ2IjoiMSJ9.aQmBy6_wwHBiAEI4TAnp082bV_ltyQJw8fjj0KmBAJOiYs3P20xmUy-fVID5SaEBl65MtjBzP8oWUu0OX7UkujWTuI-kvMBf8LX_tPS9fTxAhH66iPV8l3mBI8N9_fOUYJkzVMlWbj9oTq2I0z9j0kjY9_IK9Yo_HGSAIrNvwlNqUqVUhazN4PF76olSTkEwH2g2JpRX-XkXr_rZYUIHi-Nv8Un4Ppa8r15zI33KDDY.OoHmaHm6yMrbFyItUyxHmllC-Ss_Hh047vg1P19iJdU&dib_tag=se&keywords=PCIe+extension+cable&qid=1777131261&sprefix=PCIe%2Bextension%2Bcable%2Caps%2C141&sr=8-29&xpid=Iru0BnAWEJWvn&tag=tiereduptech-20", "price":31.69, "inStock":true}},
-    "cableType": "24-pin ATX",
+    "cableType": "Full Kit",
     "cableLength": "30cm"
   },
   {
@@ -120531,7 +122188,7 @@ export const PARTS = [
     "msrp": 36,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/sspa/click?ie=UTF8&spc=MToyNTE1MzAwODY3OTUyMzcyOjE3NzcxMzEyNjE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDA3NDUyMTQ4MDcwMjo6NDo6&url=%2FAsiaHorse-Extension-Transparent-Connector-Combs-Bright%2Fdp%2FB09Z9M4N7J%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3DGSM9GP4QVL6I%26cv_ct_cx%3DPCIe%2Bextension%2Bcable%26keywords%3DPCIe%2Bextension%2Bcable%26pd_rd_i%3DB09Z9M4N7J%26pd_rd_r%3Ddaaecbe2-af7f-4478-93c5-5101207bd02e%26pd_rd_w%3DlDfBI%26pd_rd_wg%3Df72Ju%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3DX2XE1CSKM8VMF7DP24S0%26qid%3D1777131261%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DPCIe%252Bextension%252Bcable%252Caps%252C141%26sr%3D1-21-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DIru0BnAWEJWvn%26aref%3Dt9PUGlIiOE%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=t9PUGlIiOE&tag=tiereduptech-20", "price":35.99, "inStock":true}},
-    "cableType": "24-pin ATX"
+    "cableType": "Full Kit"
   },
   {
     "id": 100123,
@@ -120543,7 +122200,7 @@ export const PARTS = [
     "msrp": 33,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Asiahorse-Extension-1x24-PIN-2x8-PORT-Black-Mix/dp/B08KDHGLT6/ref=sr_1_24?crid=XO9QGYMQCZGQ&dib=eyJ2IjoiMSJ9.j8Bym_2wym3qVxBgXMaRxC-yasaw-3eBUTr0cH0stujgomgoVE-T5-14O2Q4F67T3qQ8KX1WDD1WD5X179OFcg6eKhc214013k7QFKOQGYDuAc2BdETXx10LajN6YxBm9hGRUcgGm5jkMBf-xIuo_hdTXqPjglspU-fDegbH7y8cDlpd4zehGc7xrb0D_azwF7sIGf4DN8FlHYRomzcvOYR1-uvW0-Q7gscu6kPK4R0.t6_3ziX2tQbNg4Dr37SJhfgSLnIpHgTXYgURLcv0eDw&dib_tag=se&keywords=CableMod+extension&qid=1777131268&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=CableMod%2Bextension%2Caps%2C266&sr=8-24&xpid=8S58R4a-w5vOn&tag=tiereduptech-20", "price":32.99, "inStock":true}},
-    "cableType": "24-pin ATX",
+    "cableType": "Full Kit",
     "cableLength": "30cm"
   },
   {
@@ -120603,7 +122260,7 @@ export const PARTS = [
     "msrp": 20,
     "r": 4.7,
     "deals": {"amazon":{"url":"https://www.amazon.com/EZDIY-FAB-Extension-Sleeved-Braided-4PIN-30CM/dp/B082WVQP5T/ref=sr_1_23?crid=GSM9GP4QVL6I&dib=eyJ2IjoiMSJ9.aQmBy6_wwHBiAEI4TAnp082bV_ltyQJw8fjj0KmBAJOiYs3P20xmUy-fVID5SaEBl65MtjBzP8oWUu0OX7UkujWTuI-kvMBf8LX_tPS9fTxAhH66iPV8l3mBI8N9_fOUYJkzVMlWbj9oTq2I0z9j0kjY9_IK9Yo_HGSAIrNvwlNqUqVUhazN4PF76olSTkEwH2g2JpRX-XkXr_rZYUIHi-Nv8Un4Ppa8r15zI33KDDY.OoHmaHm6yMrbFyItUyxHmllC-Ss_Hh047vg1P19iJdU&dib_tag=se&keywords=PCIe+extension+cable&qid=1777131261&sprefix=PCIe%2Bextension%2Bcable%2Caps%2C141&sr=8-23&xpid=Iru0BnAWEJWvn&tag=tiereduptech-20", "price":19.99, "inStock":true}},
-    "cableType": "24-pin ATX",
+    "cableType": "Full Kit",
     "cableLength": "30cm"
   },
   {
@@ -120616,7 +122273,7 @@ export const PARTS = [
     "msrp": 20,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/sspa/click?ie=UTF8&spc=MToxOTYwNTI4MDQwNzE2OTY6MTc3NzEzMTI2MDpzcF9zZWFyY2hfdGhlbWF0aWM6MzAxMjQ3MTg1NDY4MTAyOjowOjo&url=%2FFormulaMod-Sleeve-Extension-PCI-E8-P-Motherboard%2Fdp%2FB083SCRYT2%2Fref%3Dsxin_17_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.cdeaf89b-0b83-4151-b82a-07a08dc40e89%253Aamzn1.sym.cdeaf89b-0b83-4151-b82a-07a08dc40e89%26crid%3DUQE6ILYTQZ1Y%26cv_ct_cx%3Dcable%2Bextension%2Bkit%2BPSU%26keywords%3Dcable%2Bextension%2Bkit%2BPSU%26pd_rd_i%3DB083SCRYT2%26pd_rd_r%3D7064dd3b-bdc6-47dc-935b-19b211abf5df%26pd_rd_w%3DlScAt%26pd_rd_wg%3DiEFzE%26pf_rd_p%3Dcdeaf89b-0b83-4151-b82a-07a08dc40e89%26pf_rd_r%3D6W893A26EXCG5X00XNQB%26qid%3D1777131260%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dcable%252Bextension%252Bkit%252BPSU%252Caps%252C113%26sr%3D1-1-6e60e730-e094-43e9-99e8-1a4854cd27ff-spons%26aref%3DIapspUhhsP%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=IapspUhhsP&tag=tiereduptech-20", "price":20.39, "inStock":true}},
-    "cableType": "EPS/CPU 8-pin"
+    "cableType": "Full Kit"
   },
   {
     "id": 100130,
@@ -120628,7 +122285,7 @@ export const PARTS = [
     "msrp": 24,
     "r": 4.6,
     "deals": {"amazon":{"url":"https://www.amazon.com/Formulamod-Extension-Sleeved-Extensions-Management/dp/B083WFYPX3/ref=sr_1_35?crid=XO9QGYMQCZGQ&dib=eyJ2IjoiMSJ9.sDR2SgjMv3gkNhT9S7n-bpYDdHXdi5oSYuLp8UQep6HAWmzH7H52XbcxtiWSNxghfRyvo96ly0BlIuJQcqpRqq_WIaD4sDXXe6y-jU31jNMMosyBqZHWQIF1YaSozlL5bRaGSP8eX1JF8HkSBqe4FZKZWmPzJiGozAsxp8b35wceLRr6EMjNU0IdeXmNkfWvJuIXERaCrzpy6LQ8bSH7ZDz7r9A07HWLGpZvlvRK2eU.Hw7nl6_NKbLHWjD-O9F_dmJ8yQSyXUr5tc2q9ChBYwY&dib_tag=se&keywords=CableMod+extension&qid=1777131272&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=CableMod%2Bextension%2Caps%2C266&sr=8-35&xpid=8S58R4a-w5vOn&tag=tiereduptech-20", "price":23.99, "inStock":true}},
-    "cableType": "24-pin ATX"
+    "cableType": "Full Kit"
   },
   {
     "id": 100131,
@@ -123348,6 +125005,174 @@ export const PARTS = [
     "padSize": "XXL",
     "surface": "Cloth",
     "bench": 76
+  },
+  {
+      "id": 95020,
+      "n": "7 inch Small HDMI VGA AV RCA Monitor 1080P Second Screen for PC/Security System/Game Console; IPS 10",
+      "img": "https://m.media-amazon.com/images/I/710OKarV28L._AC_UY218_.jpg",
+      "c": "InternalDisplay",
+      "b": "Generic",
+      "pr": 55,
+      "msrp": 63,
+      "r": 4.4,
+      "reviews": 1600,
+      "asin": "B06XQJVXHL",
+      "size": "7\"",
+      "resolution": "1920x1080",
+      "connection": "HDMI",
+      "panelType": "IPS",
+      "touch": false,
+      "deals": {
+          "amazon": {
+              "price": 55,
+              "url": "https://www.amazon.com/dp/B06XQJVXHL?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 95021,
+      "n": "FEELWORLD FW759 7 Inch DSLR Camera Field Monitor HD Video Assist Slim IPS 1280x800 4K HDMI 1080p wit",
+      "img": "https://m.media-amazon.com/images/I/71ccg0X14yL._AC_UY218_.jpg",
+      "c": "InternalDisplay",
+      "b": "FEELWORLD",
+      "pr": 70,
+      "msrp": 80,
+      "r": 4.2,
+      "reviews": 1300,
+      "asin": "B01LWYSKYR",
+      "size": "7\"",
+      "resolution": "1280x800",
+      "connection": "HDMI",
+      "panelType": "IPS",
+      "touch": false,
+      "deals": {
+          "amazon": {
+              "price": 70,
+              "url": "https://www.amazon.com/dp/B01LWYSKYR?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 95022,
+      "n": "ELECROW 5-Inch Resistive Touch Screen TFT LCD Display, 800x480 HD Resolution, Compatible with Raspbe",
+      "img": "https://m.media-amazon.com/images/I/71-2hh8NvcL._AC_UY218_.jpg",
+      "c": "InternalDisplay",
+      "b": "ELECROW",
+      "pr": 40,
+      "msrp": 46,
+      "r": 4.3,
+      "reviews": 1200,
+      "asin": "B013JECYF2",
+      "size": "5\"",
+      "resolution": "800x480",
+      "connection": "HDMI",
+      "panelType": "IPS",
+      "touch": true,
+      "deals": {
+          "amazon": {
+              "price": 40,
+              "url": "https://www.amazon.com/dp/B013JECYF2?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 95028,
+      "n": "Hosyond 5 Inch IPS LCD Touch Screen Display Panel 800×480 Capacitive Screen HDMI Monitor for Raspber",
+      "img": "https://m.media-amazon.com/images/I/71PrFibLvLL._AC_UY218_.jpg",
+      "c": "InternalDisplay",
+      "b": "Hosyond",
+      "pr": 43,
+      "msrp": 49,
+      "r": 4.4,
+      "reviews": 595,
+      "asin": "B0B1MK3SQ2",
+      "size": "5\"",
+      "resolution": "800x480",
+      "connection": "HDMI",
+      "panelType": "IPS",
+      "touch": true,
+      "deals": {
+          "amazon": {
+              "price": 43,
+              "url": "https://www.amazon.com/dp/B0B1MK3SQ2?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 95029,
+      "n": "Hosyond 7 Inch IPS LCD Touch Screen Display Panel 1024×600 Capacitive Screen HDMI Monitor for Raspbe",
+      "img": "https://m.media-amazon.com/images/I/81vuF6FgQZL._AC_UY218_.jpg",
+      "c": "InternalDisplay",
+      "b": "Hosyond",
+      "pr": 46,
+      "msrp": 53,
+      "r": 4.4,
+      "reviews": 595,
+      "asin": "B09XKC53NH",
+      "size": "7\"",
+      "resolution": "1024x600",
+      "connection": "HDMI",
+      "panelType": "IPS",
+      "touch": true,
+      "deals": {
+          "amazon": {
+              "price": 46,
+              "url": "https://www.amazon.com/dp/B09XKC53NH?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 95031,
+      "n": "Hosyond 7 Inch IPS LCD Touch Screen Raspberry Pi Monitor Display 1024×600 Capacitive Screen HDMI Mon",
+      "img": "https://m.media-amazon.com/images/I/71RfJqEv2EL._AC_UL320_.jpg",
+      "c": "InternalDisplay",
+      "b": "Hosyond",
+      "pr": 53,
+      "msrp": 61,
+      "r": 4.4,
+      "reviews": 595,
+      "asin": "B0BKGCB18T",
+      "size": "7\"",
+      "resolution": "1024x600",
+      "connection": "HDMI",
+      "panelType": "IPS",
+      "touch": true,
+      "deals": {
+          "amazon": {
+              "price": 53,
+              "url": "https://www.amazon.com/dp/B0BKGCB18T?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 95032,
+      "n": "ELECROW 5 Inch Touch Screen Monitor for Raspberry Pi - 800×480 Mini Monitor Touchscreen LCD Display ",
+      "img": "https://m.media-amazon.com/images/I/61IgpB9sCDL._AC_UY218_.jpg",
+      "c": "InternalDisplay",
+      "b": "ELECROW",
+      "pr": 40,
+      "msrp": 46,
+      "r": 4.6,
+      "reviews": 569,
+      "asin": "B07FDYXPT7",
+      "size": "5\"",
+      "resolution": "800x480",
+      "connection": "HDMI",
+      "panelType": "IPS",
+      "touch": true,
+      "deals": {
+          "amazon": {
+              "price": 40,
+              "url": "https://www.amazon.com/dp/B07FDYXPT7?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
   }
 ];
 

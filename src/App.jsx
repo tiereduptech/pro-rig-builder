@@ -45,7 +45,6 @@ const CAT={
   EthernetCard:{icon:"🌐",label:"Ethernet Adapters",singular:"Ethernet Card",desc:"2.5G/5G/10GbE PCIe network cards",cols:["lanSpeed","ports","chipset","pcieLane","profile"],filters:{lanSpeed:{label:"Speed",type:"check"},ports:{label:"Port Count",type:"check"},chipset:{label:"Chipset",type:"check"},pcieLane:{label:"PCIe Lane",type:"check"},profile:{label:"Profile",type:"check"},wol:{label:"Wake-on-LAN",type:"bool"},vlan:{label:"VLAN Support",type:"bool"},pxe:{label:"PXE Boot",type:"bool"}}},
   WiFiCard:{icon:"📶",label:"WiFi Adapters",singular:"WiFi Card",desc:"WiFi 6E/7 PCIe cards",cols:["wifiStandard","maxSpeed","bt","antennas","pcieLane"],filters:{wifiStandard:{label:"WiFi Standard",type:"check"},bt:{label:"Bluetooth",type:"check"},antennas:{label:"Antennas",type:"check"},pcieLane:{label:"PCIe Lane",type:"check"},band:{label:"Band",type:"check"},heatsink:{label:"Heatsink",type:"bool"}}},
   OpticalDrive:{icon:"💿",label:"Optical Drives",singular:"Optical Drive",desc:"Blu-ray & DVD drives",cols:["driveType","readSpeed","writeSpeed"],filters:{driveType:{label:"Type",type:"check"},interface:{label:"Interface",type:"check"}}},
-  InternalLCD:{icon:"📺",label:"Internal LCDs",singular:"Internal LCD",desc:"Case-mounted monitoring screens",cols:[]},
   ExtensionCables:{icon:"🔗",label:"Extension Cables",singular:"Cable Kit",desc:"Sleeved PSU extensions",cols:["cableType","cableLength"],filters:{cableType:{label:"Type",type:"check"}},multi:true,maxQty:4},
   
   InternalDisplay:{icon:"🖥️",label:"Internal Displays",singular:"Display",desc:"LCD/IPS screens for inside your PC case",cols:["size","resolution","connection"],filters:{size:{label:"Screen Size",type:"check"},connection:{label:"Connection",type:"check"},panelType:{label:"Panel",type:"check"},ecosystem:{label:"Ecosystem",type:"check"},touch:{label:"Touchscreen",type:"bool"}}},
@@ -71,7 +70,7 @@ const CATS=Object.keys(CAT);
 // Builder table sections
 const CORE_CATS=["Case","CPU","CPUCooler","Motherboard","RAM","GPU","Storage","PSU"];
 const COOLING_CATS=["CaseFan"];
-const EXPANSION_CATS=["SoundCard","EthernetCard","WiFiCard","OpticalDrive","InternalLCD"];
+const EXPANSION_CATS=["SoundCard","EthernetCard","WiFiCard","OpticalDrive"];
 const CABLE_CATS=["ExtensionCables","OS"];
 const PERIPH_CATS=["Monitor","Keyboard","Mouse","Headset","Webcam","Microphone","MousePad","Chair","Desk"];
 const ACCESSORY_CATS=["ThermalPaste","ExternalStorage","Antivirus","ExternalOptical","UPS"];
@@ -796,7 +795,6 @@ const CAT_IMGS = {
   EthernetCard: "https://m.media-amazon.com/images/I/41aWf5saT0L._SX342_SY445_QL70_FMwebp_.jpg",
   WiFiCard: "https://m.media-amazon.com/images/I/513FfctgOBL._AC_SL500_.jpg",
   OpticalDrive: "https://m.media-amazon.com/images/I/71vl45cvsQL._AC_SY300_SX300_QL70_FMwebp_.jpg",
-  InternalLCD: null, // no product image available
   ExtensionCables: "https://m.media-amazon.com/images/I/71n8Z4L2DqL._AC_SL500_.jpg",
   OS: "https://m.media-amazon.com/images/I/61R6ivLSfrL._AC_SL500_.jpg",
   Monitor: "https://m.media-amazon.com/images/I/81Y9EV3ZpzL._AC_SL500_.jpg",
@@ -2479,11 +2477,6 @@ const CATEGORY_GUIDES = {
     look: ["Blu-ray vs DVD based on media you use", "Internal SATA or external USB", "Read/write speeds for burning discs"],
     tip: "Most builds skip optical drives. Only needed for physical media or backups"
   },
-  InternalLCD: {
-    title: "Internal LCD displays",
-    look: ["Screen size and resolution", "Mounting compatibility with your case", "Software ecosystem (AIDA64, NZXT CAM, etc.)"],
-    tip: "Great for showing temps, usage, or custom animations inside your build"
-  },
   OS: {
     title: "How to pick an operating system",
     look: ["Windows 11 Home for most users", "Windows 11 Pro for BitLocker and Remote Desktop", "Linux is free but requires more setup"],
@@ -2873,7 +2866,7 @@ function SearchPage({activeCat,th}){
           return <div key={p.id}>
             {isExp && <ProductSchema p={p}/>}
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`4fr ${cols.map(()=>"1fr").join(" ")} 60px 80px 70px`,gap:8,padding:"10px 12px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0,transition:"background .2s"}}>
-              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt="" style={{width:40,height:40,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:18,width:40,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2}}><span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:11,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL -${dealSavings(p)}</span>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
+              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt="" style={{width:40,height:40,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:18,width:40,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2,flexWrap:"wrap"}}><span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)",whiteSpace:"nowrap",flexShrink:0}}>🔥 DEAL -${dealSavings(p)}</span>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
               {cols.map(col=>{const v=p[col];const fmtVal=fmt(col,v,p);return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:typeof fmtVal==="string"&&fmtVal.includes("\n")?<div><div style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal.split("\n")[0]}</div><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{fmtVal.split("\n")[1]}</div></div>:<span style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal}</span>}</div>})}
               {(()=>{if(p.bench==null)return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)"}}>—</span></div>;const ratio=Math.round(valueRatio(p)*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:800,color:gc}}>{grade}</span></div>;})()}
               <div style={{textAlign:"right"}}>{isDeal(p)&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>}<div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</div>{rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{rr.length} stores</div>}</div>
