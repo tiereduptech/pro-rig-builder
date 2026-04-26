@@ -119857,46 +119857,6 @@ export const PARTS = [
       }
     },
     "ff": "Compact"
-  },
-  {
-    "id": 99970,
-    "n": "Windows 11 Home",
-    "img": "https://m.media-amazon.com/images/I/719bgx+IiYL._AC_SL300_.jpg",
-    "c": "OS",
-    "b": "Microsoft",
-    "pr": 119,
-    "msrp": 139,
-    "r": 4.2,
-    "osName": "Windows 11",
-    "edition": "Home",
-    "licenseType": "Retail",
-    "deals": {
-      "amazon": {
-        "price": 119,
-        "url": "https://www.amazon.com/dp/B07Q8JGCSQ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
-  },
-  {
-    "id": 99971,
-    "n": "Windows 11 Pro",
-    "img": "https://m.media-amazon.com/images/I/61R6ivLSfrL._AC_SL300_.jpg",
-    "c": "OS",
-    "b": "Microsoft",
-    "pr": 159,
-    "msrp": 199,
-    "r": 4.3,
-    "osName": "Windows 11",
-    "edition": "Pro",
-    "licenseType": "Retail",
-    "deals": {
-      "amazon": {
-        "price": 99,
-        "url": "https://www.amazon.com/dp/B09WCTTXQ6?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
   }
 ,
   {
@@ -125170,6 +125130,1392 @@ export const PARTS = [
           "amazon": {
               "price": 40,
               "url": "https://www.amazon.com/dp/B07FDYXPT7?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99202,
+      "n": "SIHOO M57 Ergonomic Mesh Office Chair, High Back Home Desk Chair with 3D Armrests, Lumbar Support an",
+      "img": "https://m.media-amazon.com/images/I/71O-02eW61L._AC_UL320_.jpg",
+      "c": "Chair",
+      "b": "SIHOO",
+      "pr": 190,
+      "msrp": 218,
+      "r": 4.4,
+      "reviews": 7800,
+      "asin": "B07BDFW1Y7",
+      "deals": {
+          "amazon": {
+              "price": 190,
+              "url": "https://www.amazon.com/dp/B07BDFW1Y7?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99203,
+      "n": "HOLLUDLE Ergonomic Mesh Office Chair - 3D Adjustable Lumbar Support & 3D Armrests, V-Shaped Back, Ad",
+      "img": "https://m.media-amazon.com/images/I/71nDZTtEzOL._AC_UL320_.jpg",
+      "c": "Chair",
+      "b": "HOLLUDLE",
+      "pr": 170,
+      "msrp": 195,
+      "r": 4.4,
+      "reviews": 6300,
+      "asin": "B0DGTBNFRP",
+      "deals": {
+          "amazon": {
+              "price": 170,
+              "url": "https://www.amazon.com/dp/B0DGTBNFRP?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99204,
+      "n": "COMHOMA Big and Tall Office Chair Heavy Duty Wide Ergonomic Gaming Chair with Deluxe Embossing Desig",
+      "img": "https://m.media-amazon.com/images/I/61emIxdP2SL._AC_UL320_.jpg",
+      "c": "Chair",
+      "b": "COMHOMA",
+      "pr": 160,
+      "msrp": 184,
+      "r": 4.2,
+      "reviews": 5900,
+      "asin": "B0DYNW9SW6",
+      "deals": {
+          "amazon": {
+              "price": 160,
+              "url": "https://www.amazon.com/dp/B0DYNW9SW6?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99205,
+      "n": "TRALT Office Chair - Ergonomic Desk Chair with Adjustable Lumbar Support, Mesh Computer Chair, Execu",
+      "img": "https://m.media-amazon.com/images/I/71LWhgxJCaL._AC_UL320_.jpg",
+      "c": "Chair",
+      "b": "TRALT",
+      "pr": 114,
+      "msrp": 131,
+      "r": 4.3,
+      "reviews": 4000,
+      "asin": "B0CQD3K8PJ",
+      "deals": {
+          "amazon": {
+              "price": 114,
+              "url": "https://www.amazon.com/dp/B0CQD3K8PJ?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99206,
+      "n": "Amazon Basics Ergonomic Executive Office Chair with Adjustable Lumbar Support, Flip-up Arms, Height ",
+      "img": "https://m.media-amazon.com/images/I/61hZGkSiFzL._AC_UL320_.jpg",
+      "c": "Chair",
+      "b": "Amazon",
+      "pr": 147,
+      "msrp": 169,
+      "r": 4.2,
+      "reviews": 3900,
+      "asin": "B07V5WKJM4",
+      "deals": {
+          "amazon": {
+              "price": 147,
+              "url": "https://www.amazon.com/dp/B07V5WKJM4?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99207,
+      "n": "Office Chair Ergonomic Desk Chair, Computer PU Leather Home Office Chair, Swivel Mesh Back Adjustabl",
+      "img": "https://m.media-amazon.com/images/I/71NSpc4hQJL._AC_UL320_.jpg",
+      "c": "Chair",
+      "b": "Office",
+      "pr": 130,
+      "msrp": 149,
+      "r": 4.5,
+      "reviews": 3000,
+      "asin": "B09D33BXHL",
+      "deals": {
+          "amazon": {
+              "price": 130,
+              "url": "https://www.amazon.com/dp/B09D33BXHL?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99208,
+      "n": "COLAMY High Back Executive Office Chair - Padded Leather Ergonomic Computer Desk Chair with Inflatab",
+      "img": "https://m.media-amazon.com/images/I/61eNXEri9OL._AC_UL320_.jpg",
+      "c": "Chair",
+      "b": "COLAMY",
+      "pr": 178,
+      "msrp": 205,
+      "r": 4.3,
+      "reviews": 3000,
+      "asin": "B0BD7Z94ZQ",
+      "deals": {
+          "amazon": {
+              "price": 178,
+              "url": "https://www.amazon.com/dp/B0BD7Z94ZQ?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99209,
+      "n": "Amazon Basics Ergonomic High-Back Office Chair with Flip-Up Arms, Adjustable Lumbar Support, Height ",
+      "img": "https://m.media-amazon.com/images/I/61L1shNNUxL._AC_UL320_.jpg",
+      "c": "Chair",
+      "b": "Amazon",
+      "pr": 162,
+      "msrp": 186,
+      "r": 4.2,
+      "reviews": 2500,
+      "asin": "B07S574Z4R",
+      "deals": {
+          "amazon": {
+              "price": 162,
+              "url": "https://www.amazon.com/dp/B07S574Z4R?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99304,
+      "n": "SHW 55 x 28 Inches Electric Height Adjustable Standing Desk with Drawer and Memory Preset, Maple",
+      "img": "https://m.media-amazon.com/images/I/819pj+V8QcL._AC_UL320_.jpg",
+      "c": "Desk",
+      "b": "ESET",
+      "pr": 190,
+      "msrp": 218,
+      "r": 4.5,
+      "reviews": 21700,
+      "asin": "B07Q3TGL7M",
+      "deals": {
+          "amazon": {
+              "price": 190,
+              "url": "https://www.amazon.com/dp/B07Q3TGL7M?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99305,
+      "n": "Tribesigns Modern Computer Desk, 63 x 31.5 inch Large Office Desk Computer Table Study Writing Desk ",
+      "img": "https://m.media-amazon.com/images/I/81mmg0Gy60L._AC_UL320_.jpg",
+      "c": "Desk",
+      "b": "Tribesigns",
+      "pr": 160,
+      "msrp": 184,
+      "r": 4.5,
+      "reviews": 14900,
+      "asin": "B0BR3NXTKK",
+      "deals": {
+          "amazon": {
+              "price": 160,
+              "url": "https://www.amazon.com/dp/B0BR3NXTKK?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99306,
+      "n": "SHW 55 x 60 Inches Commercial-Grade L-Shape Corner Office Computer Desk, Black",
+      "img": "https://m.media-amazon.com/images/I/71+YKwJTXML._AC_UL320_.jpg",
+      "c": "Desk",
+      "b": "SHW",
+      "pr": 190,
+      "msrp": 218,
+      "r": 4.6,
+      "reviews": 7600,
+      "asin": "B0BJNNF81W",
+      "deals": {
+          "amazon": {
+              "price": 190,
+              "url": "https://www.amazon.com/dp/B0BJNNF81W?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99307,
+      "n": "SHW 55 x 60 Inches Commercial-Grade L-Shape Corner Office Computer Desk, Espresso",
+      "img": "https://m.media-amazon.com/images/I/71Dn88BRUML._AC_UL320_.jpg",
+      "c": "Desk",
+      "b": "SHW",
+      "pr": 190,
+      "msrp": 218,
+      "r": 4.6,
+      "reviews": 7600,
+      "asin": "B07MMDD779",
+      "deals": {
+          "amazon": {
+              "price": 190,
+              "url": "https://www.amazon.com/dp/B07MMDD779?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99308,
+      "n": "VIVO Electric 60 x 24 in Standing Desk, Memory Height Adjustment, 1B Series, Holds 220 lbs, One-Piec",
+      "img": "https://m.media-amazon.com/images/I/71SGsi5l+uL._AC_UL320_.jpg",
+      "c": "Desk",
+      "b": "VIVO",
+      "pr": 200,
+      "msrp": 230,
+      "r": 4.4,
+      "reviews": 6100,
+      "asin": "B07V6ZSHF4",
+      "deals": {
+          "amazon": {
+              "price": 200,
+              "url": "https://www.amazon.com/dp/B07V6ZSHF4?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99309,
+      "n": "HSH Rustic Computer Desk, Large Executive Writing Study Work Desk for Home Office, Industrial Metal ",
+      "img": "https://m.media-amazon.com/images/I/811uL0gINrL._AC_UL320_.jpg",
+      "c": "Desk",
+      "b": "HSH",
+      "pr": 170,
+      "msrp": 195,
+      "r": 4.7,
+      "reviews": 2300,
+      "asin": "B0CKHC6JJ2",
+      "deals": {
+          "amazon": {
+              "price": 170,
+              "url": "https://www.amazon.com/dp/B0CKHC6JJ2?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99310,
+      "n": "VIVO Corner Standing Desk, 63 x 55 inch Reversible L-Shaped Workstation, Electric Height Adjustment,",
+      "img": "https://m.media-amazon.com/images/I/61kjJCCg+EL._AC_UL320_.jpg",
+      "c": "Desk",
+      "b": "VIVO",
+      "pr": 260,
+      "msrp": 299,
+      "r": 4.6,
+      "reviews": 1700,
+      "asin": "B09B2VDSYJ",
+      "deals": {
+          "amazon": {
+              "price": 260,
+              "url": "https://www.amazon.com/dp/B09B2VDSYJ?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99311,
+      "n": "LVB Rustic Wood Computer Desk, Metal Home Executive Office Desk, Industrial Large Gaming Writing Des",
+      "img": "https://m.media-amazon.com/images/I/715y4dWBYLL._AC_UL320_.jpg",
+      "c": "Desk",
+      "b": "LVB",
+      "pr": 160,
+      "msrp": 184,
+      "r": 4.7,
+      "reviews": 1000,
+      "asin": "B0DDT9Y99Z",
+      "deals": {
+          "amazon": {
+              "price": 160,
+              "url": "https://www.amazon.com/dp/B0DDT9Y99Z?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99400,
+      "n": "ARCTIC MX-4 (4 g) - Premium Performance Thermal Paste for All Processors (CPU, GPU - PC, PS4, Xbox),",
+      "img": "https://m.media-amazon.com/images/I/51fVtU+cDIL._AC_UY218_.jpg",
+      "c": "ThermalPaste",
+      "b": "Arctic",
+      "pr": 7,
+      "msrp": 8,
+      "r": 4.8,
+      "reviews": 102700,
+      "asin": "B07L9BDY3T",
+      "deals": {
+          "amazon": {
+              "price": 7,
+              "url": "https://www.amazon.com/dp/B07L9BDY3T?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99401,
+      "n": "ARCTIC MX-4 (incl. Spatula, 4 g) - Premium Performance Thermal Paste for All Processors (CPU, GPU - ",
+      "img": "https://m.media-amazon.com/images/I/610tethTHOL._AC_UY218_.jpg",
+      "c": "ThermalPaste",
+      "b": "Arctic",
+      "pr": 5,
+      "msrp": 6,
+      "r": 4.8,
+      "reviews": 71300,
+      "asin": "B0795DP124",
+      "deals": {
+          "amazon": {
+              "price": 5,
+              "url": "https://www.amazon.com/dp/B0795DP124?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99402,
+      "n": "Thermal Grizzly Kryonaut - 1 Gram - Extremly High Performance Thermal Paste - for Demanding Applicat",
+      "img": "https://m.media-amazon.com/images/I/51KN3x6y+fL._AC_UY218_.jpg",
+      "c": "ThermalPaste",
+      "b": "Thermal Grizzly",
+      "pr": 9,
+      "msrp": 10,
+      "r": 4.7,
+      "reviews": 58300,
+      "asin": "B011F7W3LU",
+      "deals": {
+          "amazon": {
+              "price": 9,
+              "url": "https://www.amazon.com/dp/B011F7W3LU?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99403,
+      "n": "Kryonaut - 5.55 Gram/1.5 ml - Extremly High Performance Thermal Paste - for Demanding Applications a",
+      "img": "https://m.media-amazon.com/images/I/714NqcsBOlL._AC_UY218_.jpg",
+      "c": "ThermalPaste",
+      "b": "Kryonaut",
+      "pr": 24,
+      "msrp": 28,
+      "r": 4.7,
+      "reviews": 58300,
+      "asin": "B00ZJSF5LM",
+      "deals": {
+          "amazon": {
+              "price": 24,
+              "url": "https://www.amazon.com/dp/B00ZJSF5LM?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99404,
+      "n": "NT-H1 3.5g, Pro-Grade Thermal Compound Paste (3.5g)",
+      "img": "https://m.media-amazon.com/images/I/7166oBCV+PL._AC_UY218_.jpg",
+      "c": "ThermalPaste",
+      "b": "NT-H1",
+      "pr": 9,
+      "msrp": 10,
+      "r": 4.8,
+      "reviews": 31800,
+      "asin": "B002CQU14A",
+      "deals": {
+          "amazon": {
+              "price": 9,
+              "url": "https://www.amazon.com/dp/B002CQU14A?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99405,
+      "n": "Corsair TM30 Performance Thermal Paste | Ultra-Low Thermal Impedance CPU/GPU | 3 Grams|w/applicator,",
+      "img": "https://m.media-amazon.com/images/I/5111H5tek7L._AC_UY218_.jpg",
+      "c": "ThermalPaste",
+      "b": "Corsair",
+      "pr": 8,
+      "msrp": 9,
+      "r": 4.7,
+      "reviews": 20500,
+      "asin": "B07KQ1T158",
+      "deals": {
+          "amazon": {
+              "price": 8,
+              "url": "https://www.amazon.com/dp/B07KQ1T158?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99406,
+      "n": "ARCTIC MX-4 (8 g) - Premium Performance Thermal Paste for All Processors (CPU, GPU - PC), Very high ",
+      "img": "https://m.media-amazon.com/images/I/518fSGnh2wL._AC_UY218_.jpg",
+      "c": "ThermalPaste",
+      "b": "Arctic",
+      "pr": 7,
+      "msrp": 8,
+      "r": 4.8,
+      "reviews": 17700,
+      "asin": "B07LF66ZSV",
+      "deals": {
+          "amazon": {
+              "price": 7,
+              "url": "https://www.amazon.com/dp/B07LF66ZSV?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99407,
+      "n": "ARCTIC MX-6 (4 g) - Ultimate Performance Thermal Paste for CPU, Consoles, Graphics Cards, laptops, V",
+      "img": "https://m.media-amazon.com/images/I/6186Er1QElL._AC_UL640_QL65_.jpg",
+      "c": "ThermalPaste",
+      "b": "Arctic",
+      "pr": 8,
+      "msrp": 9,
+      "r": 4.7,
+      "reviews": 15400,
+      "asin": "B09VDL3CW6",
+      "deals": {
+          "amazon": {
+              "price": 8,
+              "url": "https://www.amazon.com/dp/B09VDL3CW6?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99500,
+      "n": "Seagate Portable 2TB External Hard Drive HDD — USB 3.0 for PC, Mac, PlayStation, & Xbox -1-Year Resc",
+      "img": "https://m.media-amazon.com/images/I/51TfwWlcluL._AC_UY218_.jpg",
+      "c": "ExternalStorage",
+      "b": "Seagate",
+      "pr": 112,
+      "msrp": 129,
+      "r": 4.6,
+      "reviews": 211300,
+      "asin": "B07CRG94G3",
+      "cap": 2000,
+      "driveType": "HDD",
+      "deals": {
+          "amazon": {
+              "price": 112,
+              "url": "https://www.amazon.com/dp/B07CRG94G3?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99501,
+      "n": "4TB My Passport, Portable External Hard Drive, Red, backup software with defense against ransomware,",
+      "img": "https://m.media-amazon.com/images/I/51VJfNCIgZL._AC_UY218_.jpg",
+      "c": "ExternalStorage",
+      "b": "WD",
+      "pr": 170,
+      "msrp": 195,
+      "r": 4.6,
+      "reviews": 102000,
+      "asin": "B07VSH3ML6",
+      "cap": 4000,
+      "driveType": "HDD",
+      "deals": {
+          "amazon": {
+              "price": 170,
+              "url": "https://www.amazon.com/dp/B07VSH3ML6?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99502,
+      "n": "SANDISK 1TB Extreme Portable SSD (Old Model) - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and ",
+      "img": "https://m.media-amazon.com/images/I/61zuR3UMnWL._AC_UY218_.jpg",
+      "c": "ExternalStorage",
+      "b": "SanDisk",
+      "pr": 169,
+      "msrp": 195,
+      "r": 4.6,
+      "reviews": 89400,
+      "asin": "B08GTYFC37",
+      "cap": 1000,
+      "driveType": "SSD",
+      "deals": {
+          "amazon": {
+              "price": 169,
+              "url": "https://www.amazon.com/dp/B08GTYFC37?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99503,
+      "n": "SANDISK 2TB Extreme Portable SSD (Old Model) - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and ",
+      "img": "https://m.media-amazon.com/images/I/61zuR3UMnWL._AC_UY218_.jpg",
+      "c": "ExternalStorage",
+      "b": "SanDisk",
+      "pr": 284,
+      "msrp": 327,
+      "r": 4.6,
+      "reviews": 89400,
+      "asin": "B08HN37XC1",
+      "cap": 2000,
+      "driveType": "SSD",
+      "deals": {
+          "amazon": {
+              "price": 284,
+              "url": "https://www.amazon.com/dp/B08HN37XC1?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99504,
+      "n": "SANDISK 4TB Extreme Portable SSD (Old Model) - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and ",
+      "img": "https://m.media-amazon.com/images/I/61zuR3UMnWL._AC_UY218_.jpg",
+      "c": "ExternalStorage",
+      "b": "SanDisk",
+      "pr": 450,
+      "msrp": 517,
+      "r": 4.6,
+      "reviews": 89400,
+      "asin": "B08RX4QKXS",
+      "cap": 4000,
+      "driveType": "SSD",
+      "deals": {
+          "amazon": {
+              "price": 450,
+              "url": "https://www.amazon.com/dp/B08RX4QKXS?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99505,
+      "n": "Samsung T7 Portable SSD, 1TB External Solid State Drive, Speeds Up to 1,050MB/s, USB 3.2 Gen 2, Reli",
+      "img": "https://m.media-amazon.com/images/I/91YfRIy7kYL._AC_UY218_.jpg",
+      "c": "ExternalStorage",
+      "b": "Samsung",
+      "pr": 275,
+      "msrp": 316,
+      "r": 4.7,
+      "reviews": 37800,
+      "asin": "B0874XN4D8",
+      "cap": 1000,
+      "driveType": "SSD",
+      "deals": {
+          "amazon": {
+              "price": 275,
+              "url": "https://www.amazon.com/dp/B0874XN4D8?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99506,
+      "n": "T7 Portable SSD, 2TB External Solid State Drive, Speeds Up to 1,050MB/s, USB 3.2 Gen 2, Reliable Sto",
+      "img": "https://m.media-amazon.com/images/I/91YfRIy7kYL._AC_UY218_.jpg",
+      "c": "ExternalStorage",
+      "b": "T7",
+      "pr": 491,
+      "msrp": 565,
+      "r": 4.7,
+      "reviews": 37800,
+      "asin": "B0874XWW23",
+      "cap": 2000,
+      "driveType": "SSD",
+      "deals": {
+          "amazon": {
+              "price": 491,
+              "url": "https://www.amazon.com/dp/B0874XWW23?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99507,
+      "n": "500GB Extreme Portable External SSD - Up to 550MB/s - USB-C, USB 3.1 - SDSSDE60-500G-G25",
+      "img": "https://m.media-amazon.com/images/I/615DH4PcbFL._AC_UY218_.jpg",
+      "c": "ExternalStorage",
+      "b": "500GB",
+      "pr": 160,
+      "msrp": 184,
+      "r": 4.8,
+      "reviews": 25300,
+      "asin": "B078SWJ3CF",
+      "cap": 500,
+      "driveType": "SSD",
+      "deals": {
+          "amazon": {
+              "price": 160,
+              "url": "https://www.amazon.com/dp/B078SWJ3CF?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99105,
+      "n": "McAfee Total Protection | 3 Device | Antivirus Internet Security Software | VPN, Password Manager, D",
+      "img": "https://m.media-amazon.com/images/I/61PrVJYw-7L._AC_UY218_.jpg",
+      "c": "Antivirus",
+      "b": "McAfee",
+      "pr": 30,
+      "msrp": 34,
+      "r": 4.1,
+      "reviews": 14400,
+      "asin": "B07BFS3G7P",
+      "devices": 3,
+      "term": "1 Year",
+      "deals": {
+          "amazon": {
+              "price": 30,
+              "url": "https://www.amazon.com/dp/B07BFS3G7P?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99106,
+      "n": "Norton 360 Premium 2026 Ready, Antivirus software for 10 Devices with Auto-Renewal – Includes Advanc",
+      "img": "https://m.media-amazon.com/images/I/71BOIz4Tx1L._AC_UY218_.jpg",
+      "c": "Antivirus",
+      "b": "Norton",
+      "pr": 45,
+      "msrp": 52,
+      "r": 4.1,
+      "reviews": 12100,
+      "asin": "B07Q6B5YL5",
+      "devices": 10,
+      "term": "1 Year",
+      "deals": {
+          "amazon": {
+              "price": 45,
+              "url": "https://www.amazon.com/dp/B07Q6B5YL5?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99107,
+      "n": "Norton 360 with LifeLock Select Bundle, 1 Year Subscription - 10 Devices - All-in-One Protection for",
+      "img": "https://m.media-amazon.com/images/I/7117WCo2ByL._AC_UY218_.jpg",
+      "c": "Antivirus",
+      "b": "Norton",
+      "pr": 65,
+      "msrp": 75,
+      "r": 4.1,
+      "reviews": 12100,
+      "asin": "B0DN318QCW",
+      "devices": 10,
+      "term": "1 Year",
+      "deals": {
+          "amazon": {
+              "price": 65,
+              "url": "https://www.amazon.com/dp/B0DN318QCW?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99108,
+      "n": "Norton 360 with LifeLock Select Bundle, 1 Month Subscription - 10 Devices - All-in-One Protection fo",
+      "img": "https://m.media-amazon.com/images/I/71U7Dl81+EL._AC_UY218_.jpg",
+      "c": "Antivirus",
+      "b": "Norton",
+      "pr": 18,
+      "msrp": 21,
+      "r": 4.1,
+      "reviews": 12100,
+      "asin": "B0DN3ZRKBL",
+      "devices": 10,
+      "term": "1 Year",
+      "deals": {
+          "amazon": {
+              "price": 18,
+              "url": "https://www.amazon.com/dp/B0DN3ZRKBL?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99109,
+      "n": "McAfee Total Protection 3-Device | AntiVirus Software 2026 for Windows PC & Mac, AI Scam Detection, ",
+      "img": "https://m.media-amazon.com/images/I/51lHXsyBJlL._AC_UY218_.jpg",
+      "c": "Antivirus",
+      "b": "McAfee",
+      "pr": 20,
+      "msrp": 23,
+      "r": 4.1,
+      "reviews": 6300,
+      "asin": "B0BB2N69J8",
+      "term": "1 Year",
+      "deals": {
+          "amazon": {
+              "price": 20,
+              "url": "https://www.amazon.com/dp/B0BB2N69J8?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99110,
+      "n": "Bitdefender Total Security 2026 – Complete Antivirus and Internet Security Suite – 5 Devices | 1 Yea",
+      "img": "https://m.media-amazon.com/images/I/61LKM7+acPL._AC_UY218_.jpg",
+      "c": "Antivirus",
+      "b": "Bitdefender",
+      "pr": 30,
+      "msrp": 34,
+      "r": 4.4,
+      "reviews": 3700,
+      "asin": "B07G8SQ2S3",
+      "devices": 5,
+      "term": "1 Year",
+      "deals": {
+          "amazon": {
+              "price": 30,
+              "url": "https://www.amazon.com/dp/B07G8SQ2S3?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99111,
+      "n": "Norton 360 for Amazon 2024, Antivirus software for up to 3 Devices with Auto Renewal",
+      "img": "https://m.media-amazon.com/images/I/71YLwbLQRoL._AC_UY218_.jpg",
+      "c": "Antivirus",
+      "b": "Norton",
+      "pr": 95,
+      "msrp": 109,
+      "r": 4,
+      "reviews": 3100,
+      "asin": "B085WWWH3C",
+      "devices": 3,
+      "term": "1 Year",
+      "deals": {
+          "amazon": {
+              "price": 95,
+              "url": "https://www.amazon.com/dp/B085WWWH3C?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99112,
+      "n": "McAfee Total Protection Unlimited-Devices | AntiVirus Software 2026 for Windows PC & Mac, AI Scam De",
+      "img": "https://m.media-amazon.com/images/I/61LkaCrZevL._AC_UY218_.jpg",
+      "c": "Antivirus",
+      "b": "McAfee",
+      "pr": 40,
+      "msrp": 46,
+      "r": 4.2,
+      "reviews": 3100,
+      "asin": "B07BFRVMMN",
+      "term": "1 Year",
+      "deals": {
+          "amazon": {
+              "price": 40,
+              "url": "https://www.amazon.com/dp/B07BFRVMMN?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99607,
+      "n": "Amicool External USB-C USB 3.0 CD/DVD Drive Burner +/-RW, Ultra-Slim Portable DVD Player Writer Read",
+      "img": "https://m.media-amazon.com/images/I/7135Ybrr93L._AC_UY218_.jpg",
+      "c": "ExternalOptical",
+      "b": "Amicool",
+      "pr": 30,
+      "msrp": 34,
+      "r": 4.2,
+      "reviews": 11800,
+      "asin": "B0G8ZGCYRT",
+      "driveType": "DVD",
+      "connection": "USB-C",
+      "deals": {
+          "amazon": {
+              "price": 30,
+              "url": "https://www.amazon.com/dp/B0G8ZGCYRT?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99608,
+      "n": "ORIGBELIE External CD DVD Drive, Ultra Slim CD Burner USB 3.0 with 4 USB Ports and 2 TF/SD Card Slot",
+      "img": "https://m.media-amazon.com/images/I/71uCgaAfsUL._AC_UY218_.jpg",
+      "c": "ExternalOptical",
+      "b": "ORIGBELIE",
+      "pr": 30,
+      "msrp": 34,
+      "r": 4.3,
+      "reviews": 6400,
+      "asin": "B09BC44T8K",
+      "driveType": "DVD",
+      "connection": "USB-A",
+      "deals": {
+          "amazon": {
+              "price": 30,
+              "url": "https://www.amazon.com/dp/B09BC44T8K?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99609,
+      "n": "BPAKDU External CD/DVD Drive for Laptop, DVD Player for Laptop, 8 in 1 USB 3.0 Ultra-Slim Portable, ",
+      "img": "https://m.media-amazon.com/images/I/71R0TsUFslL._AC_UY218_.jpg",
+      "c": "ExternalOptical",
+      "b": "BPAKDU",
+      "pr": 27,
+      "msrp": 31,
+      "r": 4.3,
+      "reviews": 2600,
+      "asin": "B0C394HFCF",
+      "driveType": "DVD",
+      "connection": "USB-A",
+      "deals": {
+          "amazon": {
+              "price": 27,
+              "url": "https://www.amazon.com/dp/B0C394HFCF?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99610,
+      "n": "ASUS LITE Portable USB 2.0 Slim 8X DVD/Burner +/- Rewriter External Drive, Compatible with Both Mac ",
+      "img": "https://m.media-amazon.com/images/I/71xBNRBGr+L._AC_UY218_.jpg",
+      "c": "ExternalOptical",
+      "b": "ASUS",
+      "pr": 28,
+      "msrp": 32,
+      "r": 4.5,
+      "reviews": 2200,
+      "asin": "B006HUMYCO",
+      "driveType": "DVD",
+      "connection": "USB-A",
+      "deals": {
+          "amazon": {
+              "price": 28,
+              "url": "https://www.amazon.com/dp/B006HUMYCO?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99611,
+      "n": "ASUS ZenDrive Ultra Slim USB 2.0 External 8X DVD Optical Drive +/-RW with M-Disc Support for Windows",
+      "img": "https://m.media-amazon.com/images/I/61j1rgTNUjL._AC_UY218_.jpg",
+      "c": "ExternalOptical",
+      "b": "ASUS",
+      "pr": 35,
+      "msrp": 40,
+      "r": 4.5,
+      "reviews": 1600,
+      "asin": "B01A27IUUM",
+      "driveType": "DVD",
+      "connection": "USB-A",
+      "deals": {
+          "amazon": {
+              "price": 35,
+              "url": "https://www.amazon.com/dp/B01A27IUUM?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99612,
+      "n": "ASUS ZenDrive Black 13mm External 8X DVD/Burner Drive +/-RW with M-Disc Support, Compatible with Bot",
+      "img": "https://m.media-amazon.com/images/I/81BlzwihhwL._AC_UY218_.jpg",
+      "c": "ExternalOptical",
+      "b": "ASUS",
+      "pr": 37,
+      "msrp": 43,
+      "r": 4.4,
+      "reviews": 1100,
+      "asin": "B076CM5SZN",
+      "driveType": "DVD",
+      "connection": "USB-A",
+      "deals": {
+          "amazon": {
+              "price": 37,
+              "url": "https://www.amazon.com/dp/B076CM5SZN?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99613,
+      "n": "archgon Premium Aluminum External USB 3.0 UHD 4K Blu-Ray Writer Super Drive for PC and Mac",
+      "img": "https://m.media-amazon.com/images/I/61GCEmJgekL._AC_UY218_.jpg",
+      "c": "ExternalOptical",
+      "b": "archgon",
+      "pr": 136,
+      "msrp": 156,
+      "r": 4.2,
+      "reviews": 1000,
+      "asin": "B07BC9F98J",
+      "driveType": "Blu-ray",
+      "connection": "USB-A",
+      "deals": {
+          "amazon": {
+              "price": 136,
+              "url": "https://www.amazon.com/dp/B07BC9F98J?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99614,
+      "n": "ASUS ZenDrive V1M External DVD Drive and Writer with Built-in Cable-Storage Design, USB-C Interface,",
+      "img": "https://m.media-amazon.com/images/I/61klAZxswCL._AC_UY218_.jpg",
+      "c": "ExternalOptical",
+      "b": "ASUS",
+      "pr": 40,
+      "msrp": 46,
+      "r": 4.3,
+      "reviews": 992,
+      "asin": "B0B6D8XB74",
+      "driveType": "DVD",
+      "connection": "USB-C",
+      "deals": {
+          "amazon": {
+              "price": 40,
+              "url": "https://www.amazon.com/dp/B0B6D8XB74?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99702,
+      "n": "APC UPS Battery Backup for Power Outages, 600VA/330W Surge Protector, 7 Outlets, USB Charging, BE600",
+      "img": "https://m.media-amazon.com/images/I/61-O0p1npOL._AC_UY218_.jpg",
+      "c": "UPS",
+      "b": "APC",
+      "pr": 84,
+      "msrp": 97,
+      "r": 4.5,
+      "reviews": 28800,
+      "asin": "B01FWAZEIU",
+      "va": 600,
+      "watts": 330,
+      "deals": {
+          "amazon": {
+              "price": 84,
+              "url": "https://www.amazon.com/dp/B01FWAZEIU?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99703,
+      "n": "Amazon Basics UPS Battery Backup & Surge Protector, 400VA/255W, 6 Outlets, Uninterruptible Power Sup",
+      "img": "https://m.media-amazon.com/images/I/81Scg81gLIL._AC_UY218_.jpg",
+      "c": "UPS",
+      "b": "Amazon",
+      "pr": 50,
+      "msrp": 58,
+      "r": 4.2,
+      "reviews": 14600,
+      "asin": "B073Q48Z95",
+      "va": 400,
+      "watts": 255,
+      "deals": {
+          "amazon": {
+              "price": 50,
+              "url": "https://www.amazon.com/dp/B073Q48Z95?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99704,
+      "n": "Amazon Basics UPS Battery Backup & Surge Protector, 600VA/360W, 8 Outlets, Standby Uninterruptible P",
+      "img": "https://m.media-amazon.com/images/I/81YaPO6HW5L._AC_UY218_.jpg",
+      "c": "UPS",
+      "b": "Amazon",
+      "pr": 62,
+      "msrp": 72,
+      "r": 4.2,
+      "reviews": 14600,
+      "asin": "B073Q48YGF",
+      "va": 600,
+      "watts": 360,
+      "deals": {
+          "amazon": {
+              "price": 62,
+              "url": "https://www.amazon.com/dp/B073Q48YGF?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99705,
+      "n": "UPS Battery Backup & Surge Protector, 1500VA/900W, 10 Outlets, Line Interactive Uninterruptible Powe",
+      "img": "https://m.media-amazon.com/images/I/71cQC-IVceL._AC_UY218_.jpg",
+      "c": "UPS",
+      "b": "UPS",
+      "pr": 167,
+      "msrp": 192,
+      "r": 4.2,
+      "reviews": 14600,
+      "asin": "B07RWMLKFM",
+      "va": 1500,
+      "watts": 900,
+      "deals": {
+          "amazon": {
+              "price": 167,
+              "url": "https://www.amazon.com/dp/B07RWMLKFM?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99706,
+      "n": "APC UPS Back-UPS Pro 1500VA UPS, 900W Battery Backup & Surge Protector, AVR, 10 Outlets (NEMA 5-15R)",
+      "img": "https://m.media-amazon.com/images/I/51TsApt1OpL._AC_UY218_.jpg",
+      "c": "UPS",
+      "b": "APC",
+      "pr": 190,
+      "msrp": 218,
+      "r": 4.5,
+      "reviews": 12900,
+      "asin": "B06VY6FXMM",
+      "va": 1500,
+      "watts": 900,
+      "deals": {
+          "amazon": {
+              "price": 190,
+              "url": "https://www.amazon.com/dp/B06VY6FXMM?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99707,
+      "n": "CP1500AVRLCD Intelligent LCD UPS Battery Backup and Surge Protector, 1500VA/900W, 12 Outlets, AVR, M",
+      "img": "https://m.media-amazon.com/images/I/710VfDmGWOL._AC_UY218_.jpg",
+      "c": "UPS",
+      "b": "CP1500AVRLCD",
+      "pr": 200,
+      "msrp": 230,
+      "r": 4.5,
+      "reviews": 12300,
+      "asin": "B000FBK3QK",
+      "va": 1500,
+      "watts": 900,
+      "deals": {
+          "amazon": {
+              "price": 200,
+              "url": "https://www.amazon.com/dp/B000FBK3QK?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99708,
+      "n": "APC Back-UPS 425VA / 255W UPS Battery Backup Surge Protector, 6 Outlets, Small UPS for Router, Modem",
+      "img": "https://m.media-amazon.com/images/I/618iZlTPO5L._AC_UY218_.jpg",
+      "c": "UPS",
+      "b": "APC",
+      "pr": 63,
+      "msrp": 72,
+      "r": 4.5,
+      "reviews": 11200,
+      "asin": "B01HDC236Q",
+      "va": 425,
+      "watts": 255,
+      "deals": {
+          "amazon": {
+              "price": 63,
+              "url": "https://www.amazon.com/dp/B01HDC236Q?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99709,
+      "n": "CyberPower EC850LCD Ecologic UPS Battery Backup and Surge Protector, 850VA/510W, 12 Outlets, ECO Mod",
+      "img": "https://m.media-amazon.com/images/I/71pjstjaRUL._AC_UY218_.jpg",
+      "c": "UPS",
+      "b": "CyberPower",
+      "pr": 120,
+      "msrp": 138,
+      "r": 4.4,
+      "reviews": 6600,
+      "asin": "B00DBAA696",
+      "va": 850,
+      "watts": 510,
+      "deals": {
+          "amazon": {
+              "price": 120,
+              "url": "https://www.amazon.com/dp/B00DBAA696?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99003,
+      "n": "Microsoft Windows 11 Pro (USB)",
+      "img": "https://m.media-amazon.com/images/I/61r5zmzDO8L._AC_SY300_SX300_QL70_FMwebp_.jpg",
+      "c": "OS",
+      "b": "Microsoft",
+      "pr": 199,
+      "msrp": 229,
+      "r": 4.2,
+      "reviews": 425,
+      "asin": "B09V71FYGS",
+      "mpn": "HAV-00162",
+      "osName": "Windows 11",
+      "edition": "Pro",
+      "licenseType": "Retail",
+      "deals": {
+          "amazon": {
+              "price": 199,
+              "url": "https://www.amazon.com/dp/B09V71FYGS?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99004,
+      "n": "Microsoft Windows 11 Home (USB Flash Drive) HAJ-00108",
+      "img": "https://m.media-amazon.com/images/I/61fUMcLzmgL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+      "c": "OS",
+      "b": "Microsoft",
+      "pr": 139,
+      "msrp": 160,
+      "r": 4.4,
+      "reviews": 1167,
+      "asin": "B09V6R9QZZ",
+      "mpn": "HAJ-00108",
+      "osName": "Windows 11",
+      "edition": "Home",
+      "licenseType": "Retail",
+      "deals": {
+          "amazon": {
+              "price": 139,
+              "url": "https://www.amazon.com/dp/B09V6R9QZZ?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99005,
+      "n": "Microsoft Windows 11 Home OEM DVD 64-bit (KW9-00633)",
+      "img": "https://m.media-amazon.com/images/I/61JfosHunyL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+      "c": "OS",
+      "b": "Microsoft",
+      "pr": 120,
+      "msrp": 138,
+      "r": 4.1,
+      "reviews": 2411,
+      "asin": "B09MYJ1R6L",
+      "mpn": "KW9-00633",
+      "osName": "Windows 11",
+      "edition": "Home",
+      "licenseType": "OEM DVD",
+      "deals": {
+          "amazon": {
+              "price": 120,
+              "url": "https://www.amazon.com/dp/B09MYJ1R6L?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 99006,
+      "n": "Microsoft Windows 11 Pro OEM DVD 64-bit (FQC-10529)",
+      "img": "https://m.media-amazon.com/images/I/61p-Ylv5vtL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+      "c": "OS",
+      "b": "Microsoft",
+      "pr": 147,
+      "msrp": 169,
+      "r": 4.1,
+      "reviews": 2411,
+      "asin": "B09MYBD79G",
+      "mpn": "FQC-10529",
+      "osName": "Windows 11",
+      "edition": "Pro",
+      "licenseType": "OEM DVD",
+      "deals": {
+          "amazon": {
+              "price": 147,
+              "url": "https://www.amazon.com/dp/B09MYBD79G?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 95043,
+      "n": "WOWNOVA 5\" Computer Temp Monitor, Dynamic Theme Supported, ARGB PC Case Sensor Panel, IPS Type-C USB",
+      "img": "https://m.media-amazon.com/images/I/61MvBOgDEFL._AC_UY218_.jpg",
+      "c": "InternalDisplay",
+      "b": "WOWNOVA",
+      "pr": 70,
+      "msrp": 80,
+      "r": 4.2,
+      "reviews": 444,
+      "asin": "B0BJ9MQVBG",
+      "size": "5\"",
+      "resolution": "480x480",
+      "connection": "USB",
+      "panelType": "IPS",
+      "touch": false,
+      "deals": {
+          "amazon": {
+              "price": 70,
+              "url": "https://www.amazon.com/dp/B0BJ9MQVBG?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 95045,
+      "n": "8.8\" Universal Screen for PC - Adjustable Mounting for Any Computer Setup - Customizable ARGB Frame ",
+      "img": "https://m.media-amazon.com/images/I/71LUNssPs4L._AC_UY218_.jpg",
+      "c": "InternalDisplay",
+      "b": "8.8\"",
+      "pr": 85,
+      "msrp": 98,
+      "r": 4.5,
+      "reviews": 339,
+      "asin": "B0FKH3NK1H",
+      "size": "8.8\"",
+      "resolution": "480x480",
+      "connection": "USB",
+      "panelType": "IPS",
+      "touch": false,
+      "deals": {
+          "amazon": {
+              "price": 85,
+              "url": "https://www.amazon.com/dp/B0FKH3NK1H?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 95047,
+      "n": "KOGODA Mini Monitor Small Monitor for Raspberry Pi, Type-C One-Cable Connection&Speakers, IPS Portab",
+      "img": "https://m.media-amazon.com/images/I/71cUGxDWZ5L._AC_UY218_.jpg",
+      "c": "InternalDisplay",
+      "b": "KOGODA",
+      "pr": 85,
+      "msrp": 98,
+      "r": 4.3,
+      "reviews": 311,
+      "asin": "B0FJFZGMCV",
+      "size": "5\"",
+      "resolution": "480x480",
+      "connection": "USB",
+      "panelType": "IPS",
+      "touch": false,
+      "deals": {
+          "amazon": {
+              "price": 85,
+              "url": "https://www.amazon.com/dp/B0FJFZGMCV?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 95048,
+      "n": "Display Board w/LED Lights for Computer PC Case Decor Full HD 2K Multi-Mode Function 9.8\" x 3.1\" (Ve",
+      "img": "https://m.media-amazon.com/images/I/71A3MS9t2FL._AC_UY218_.jpg",
+      "c": "InternalDisplay",
+      "b": "Display",
+      "pr": 30,
+      "msrp": 34,
+      "r": 4.1,
+      "reviews": 273,
+      "asin": "B0989WQCW8",
+      "size": "9.8\"",
+      "resolution": "1920x1080",
+      "connection": "USB",
+      "panelType": "IPS",
+      "touch": false,
+      "deals": {
+          "amazon": {
+              "price": 30,
+              "url": "https://www.amazon.com/dp/B0989WQCW8?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 95049,
+      "n": "ROADOM 5'' Mini Monitor with Raspberry Pi Mount Holes & USB HUB, Type-C One-Cable Connection&Speaker",
+      "img": "https://m.media-amazon.com/images/I/71AsBh8+fsL._AC_UY218_.jpg",
+      "c": "InternalDisplay",
+      "b": "ROADOM",
+      "pr": 85,
+      "msrp": 98,
+      "r": 4.4,
+      "reviews": 268,
+      "asin": "B0FJRDDVKZ",
+      "size": "5\"",
+      "resolution": "480x480",
+      "connection": "USB",
+      "panelType": "IPS",
+      "touch": false,
+      "deals": {
+          "amazon": {
+              "price": 85,
+              "url": "https://www.amazon.com/dp/B0FJRDDVKZ?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 95053,
+      "n": "Hagibis 3.5inch IPS USB Mini Screen with USB C Hub, USB-C&HDMI Monitor AIDA64 Mini PC CPU RAM HDD Da",
+      "img": "https://m.media-amazon.com/images/I/519gYwF+dXL._AC_UY218_.jpg",
+      "c": "InternalDisplay",
+      "b": "Hagibis",
+      "pr": 100,
+      "msrp": 115,
+      "r": 4.1,
+      "reviews": 161,
+      "asin": "B0D3CW311P",
+      "size": "3.5\"",
+      "resolution": "960x640",
+      "connection": "USB-C/HDMI",
+      "panelType": "IPS",
+      "touch": false,
+      "deals": {
+          "amazon": {
+              "price": 100,
+              "url": "https://www.amazon.com/dp/B0D3CW311P?tag=tiereduptech-20",
+              "inStock": true
+          }
+      }
+  },
+  {
+      "id": 95054,
+      "n": "10.1 Inch Touchscreen Mini Monitor, IPS 1540×720 USB-C HDMI Portable Secondary Display with Stand & ",
+      "img": "https://m.media-amazon.com/images/I/61TOaz1a1GL._AC_UY218_.jpg",
+      "c": "InternalDisplay",
+      "b": "10.1",
+      "pr": 99,
+      "msrp": 114,
+      "r": 4.1,
+      "reviews": 155,
+      "asin": "B0FGCVT6P2",
+      "size": "10.1\"",
+      "resolution": "1540x720",
+      "connection": "USB-C/HDMI",
+      "panelType": "IPS",
+      "touch": true,
+      "deals": {
+          "amazon": {
+              "price": 99,
+              "url": "https://www.amazon.com/dp/B0FGCVT6P2?tag=tiereduptech-20",
               "inStock": true
           }
       }
