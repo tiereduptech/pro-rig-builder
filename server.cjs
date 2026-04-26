@@ -2,23 +2,19 @@
 //  server.cjs
 //  Copyright © 2026 TieredUp Tech, Inc.
 //
-//  Production static server with three pre-render layers:
+//  Production static server with four pre-render layers:
 //
-//    1) PRODUCT pre-render (NEW):
-//         /search?id=30345 → dist/search/id-30345.html (if exists)
-//         Pre-rendered via prerender-products.cjs for top performers.
+//    1) PRODUCT pre-render:
+//         /search?id=NNN → dist/search/id-NNN.html
 //
-//    2) ROUTE pre-render:
+//    2) CATEGORY pre-render (NEW):
+//         /search?cat=GPU → dist/search/cat-GPU.html
+//         (only when there's NO ?id= — id always wins)
+//
+//    3) ROUTE pre-render:
 //         /search → dist/search/index.html
-//         /builder → dist/builder/index.html
-//         Pre-rendered via prerender.cjs for the 16 static pages.
 //
-//    3) Static assets:
-//         /assets/index-XXX.js → dist/assets/index-XXX.js
-//         Vite-emitted JS/CSS/images.
-//
-//    4) SPA fallback:
-//         Anything else → dist/index.html (the SPA shell).
+//    4) Static assets + SPA fallback.
 // =============================================================================
 
 const express = require('express');
@@ -31,16 +27,12 @@ const PORT = process.env.PORT || 3000;
 
 if (!fs.existsSync(DIST)) {
   console.error(`  ✗ dist/ not found at ${DIST}`);
-  console.error('    Build locally and commit dist/ before deploying.');
   process.exit(1);
 }
 
-// Asset paths get sent straight to express.static — no pre-render lookup.
 const ASSET_RE = /\.[a-z0-9]{1,5}(?:\?|$)/i;
 
 // ─── Layer 1: Per-product pre-rendered HTML ─────────────────────────────────
-// Detects /search?id=NNN and serves dist/search/id-NNN.html when present.
-// Falls through if no product file exists.
 app.use((req, res, next) => {
   if (req.method !== 'GET' && req.method !== 'HEAD') return next();
   if (req.path !== '/search') return next();
@@ -57,8 +49,27 @@ app.use((req, res, next) => {
   return next();
 });
 
-// ─── Layer 2: Route pre-rendered HTML ───────────────────────────────────────
-// /search → dist/search/index.html, /about → dist/about/index.html, etc.
+// ─── Layer 2: Per-category pre-rendered HTML ────────────────────────────────
+// Matches /search?cat=X when no id is present. Category names are restricted
+// to alphanumeric so no path traversal possible.
+app.use((req, res, next) => {
+  if (req.method !== 'GET' && req.method !== 'HEAD') return next();
+  if (req.path !== '/search') return next();
+  if (req.query.id) return next();  // id-based requests handled in layer 1
+
+  const cat = req.query.cat;
+  if (!cat || !/^[A-Za-z]+$/.test(String(cat))) return next();
+
+  const candidate = path.join(DIST, 'search', `cat-${cat}.html`);
+  if (fs.existsSync(candidate)) {
+    res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
+    res.setHeader('X-PreRender', 'category-hit');
+    return res.sendFile(candidate);
+  }
+  return next();
+});
+
+// ─── Layer 3: Route pre-rendered HTML ───────────────────────────────────────
 app.use((req, res, next) => {
   if (req.method !== 'GET' && req.method !== 'HEAD') return next();
   if (ASSET_RE.test(req.path)) return next();
@@ -76,7 +87,7 @@ app.use((req, res, next) => {
   return next();
 });
 
-// ─── Layer 3: Static assets (JS/CSS/images/fonts/etc.) ──────────────────────
+// ─── Layer 4: Static assets ─────────────────────────────────────────────────
 app.use(
   express.static(DIST, {
     fallthrough: true,
@@ -88,13 +99,12 @@ app.use(
   })
 );
 
-// ─── Layer 4: SPA fallback ──────────────────────────────────────────────────
+// ─── Layer 5: SPA fallback ──────────────────────────────────────────────────
 app.use((req, res) => {
   res.setHeader('X-PreRender', 'spa-fallback');
   res.sendFile(path.join(DIST, 'index.html'));
 });
 
-// ─── Boot ───────────────────────────────────────────────────────────────────
 app.listen(PORT, () => {
   console.log(`  Pro Rig Builder listening on :${PORT}`);
   console.log(`  Express ${require('express/package.json').version}`);
@@ -106,10 +116,12 @@ app.listen(PORT, () => {
     console.log(`  ${exists ? '✓' : '✗'} dist/${r}/index.html`);
   }
 
-  // Count product pre-renders.
   const searchDir = path.join(DIST, 'search');
   if (fs.existsSync(searchDir)) {
-    const productFiles = fs.readdirSync(searchDir).filter((f) => /^id-\w+\.html$/.test(f));
-    console.log(`  ✓ ${productFiles.length} pre-rendered product pages`);
+    const files = fs.readdirSync(searchDir);
+    const products = files.filter((f) => /^id-\w+\.html$/.test(f)).length;
+    const categories = files.filter((f) => /^cat-\w+\.html$/.test(f)).length;
+    console.log(`  ✓ ${products} pre-rendered product pages`);
+    console.log(`  ✓ ${categories} pre-rendered category pages`);
   }
 });
