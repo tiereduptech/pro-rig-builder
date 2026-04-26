@@ -8,14 +8,17 @@ providers = ["node"]
 nixPkgs = ["nodejs_20"]
 
 [phases.install]
-cmds = ["npm ci"]
+cmds = ["npm ci --omit=dev"]
 
+# IMPORTANT: build is skipped on Railway. We commit dist/ to git because:
+#   1) Pre-rendering needs Puppeteer + headless Chrome, which fails on Railway's
+#      container without extensive nixpkgs deps for libnss/libgbm/etc.
+#   2) Vite uses content-hashed filenames, so unchanged code yields unchanged
+#      output — diffs stay small even with dist/ committed.
+#   3) Railway deploys are faster (no rebuild step).
+# Local workflow: `npm run build` (vite + prerender) → git add dist → push.
 [phases.build]
-cmds = ["npm run build"]
+cmds = ["echo 'Skipping build on Railway — using committed dist/ artifacts'"]
 
-# Custom Express server (server.cjs). Required because `serve -s dist` rewrites
-# every unknown path to root index.html, which means our 16 pre-rendered route
-# files (dist/search/index.html, dist/builder/index.html, etc.) are unreachable.
-# server.cjs serves directory-index files first, then falls back to SPA shell.
 [start]
 cmd = "node server.cjs"

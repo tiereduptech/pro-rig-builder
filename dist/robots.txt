@@ -1,0 +1,12 @@
+# robots.txt for prorigbuilder.com
+User-agent: *
+Allow: /
+
+# Block admin/internal paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*.cjs$
+
+# Sitemap location
+Sitemap: https://prorigbuilder.com/sitemap.xml

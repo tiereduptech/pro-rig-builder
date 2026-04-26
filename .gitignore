@@ -1,5 +1,4 @@
 ﻿node_modules/
-dist/
 .env
 .env.local
 .env.production
@@ -70,3 +69,6 @@ src/UpgradePage.jsx.pre-*.backup
 # Patch scripts (one-time use)
 patch-*.mjs
 .prorig-github-token
+
+dist/downloads/
+*.exe
