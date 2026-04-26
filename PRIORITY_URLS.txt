@@ -1,0 +1,55 @@
+# Pro Rig Builder — Priority URLs for Google Search Console
+# Submit each via: GSC → URL Inspection → paste URL → Request Indexing
+# GSC limits ~10/day, so plan on 5 days to clear this list.
+#
+# Generated: 2026-04-26T03:40:16.786Z
+# Total: 45 URLs (15 static pages + 30 category pages)
+
+## Tier 1 — Static pages (do these FIRST)
+https://prorigbuilder.com/
+https://prorigbuilder.com/search
+https://prorigbuilder.com/builder
+https://prorigbuilder.com/scanner
+https://prorigbuilder.com/compare
+https://prorigbuilder.com/tools
+https://prorigbuilder.com/community
+https://prorigbuilder.com/about
+https://prorigbuilder.com/contact
+https://prorigbuilder.com/privacy
+https://prorigbuilder.com/terms
+https://prorigbuilder.com/affiliate
+https://prorigbuilder.com/vs-pcpartpicker
+https://prorigbuilder.com/pcpartpicker-alternative
+https://prorigbuilder.com/best-pc-builder-tools
+
+## Tier 2 — Category pages
+https://prorigbuilder.com/search?cat=Antivirus
+https://prorigbuilder.com/search?cat=CPU
+https://prorigbuilder.com/search?cat=CPUCooler
+https://prorigbuilder.com/search?cat=Case
+https://prorigbuilder.com/search?cat=CaseFan
+https://prorigbuilder.com/search?cat=Chair
+https://prorigbuilder.com/search?cat=Desk
+https://prorigbuilder.com/search?cat=EthernetCard
+https://prorigbuilder.com/search?cat=ExtensionCables
+https://prorigbuilder.com/search?cat=ExternalOptical
+https://prorigbuilder.com/search?cat=ExternalStorage
+https://prorigbuilder.com/search?cat=GPU
+https://prorigbuilder.com/search?cat=Headset
+https://prorigbuilder.com/search?cat=InternalDisplay
+https://prorigbuilder.com/search?cat=Keyboard
+https://prorigbuilder.com/search?cat=Microphone
+https://prorigbuilder.com/search?cat=Monitor
+https://prorigbuilder.com/search?cat=Motherboard
+https://prorigbuilder.com/search?cat=Mouse
+https://prorigbuilder.com/search?cat=MousePad
+https://prorigbuilder.com/search?cat=OS
+https://prorigbuilder.com/search?cat=OpticalDrive
+https://prorigbuilder.com/search?cat=PSU
+https://prorigbuilder.com/search?cat=RAM
+https://prorigbuilder.com/search?cat=SoundCard
+https://prorigbuilder.com/search?cat=Storage
+https://prorigbuilder.com/search?cat=ThermalPaste
+https://prorigbuilder.com/search?cat=UPS
+https://prorigbuilder.com/search?cat=Webcam
+https://prorigbuilder.com/search?cat=WiFiCard
