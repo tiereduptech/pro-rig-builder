@@ -3,22 +3,24 @@
 //  Copyright © 2026 TieredUp Tech, Inc.
 //
 //  Per-page meta tags for Pro Rig Builder. Renders <title>, description,
-//  canonical, Open Graph, and Twitter Card tags based on current page.
+//  canonical, Open Graph, Twitter Card, and JSON-LD structured data based on
+//  the current page, category, or product.
+//
+//  Product detection works two ways:
+//    1) Explicit `product` prop — caller passes a product object directly.
+//    2) URL-based — when `parts` array is passed and the URL has ?id=N (the
+//       Pro Rig Builder convention for product detail), this component looks
+//       up the matching product and uses it.
 //
 //  Usage in App.jsx:
-//    import PageMeta from "./PageMeta.jsx";
-//    ...
-//    <PageMeta page={page} category={bc} product={selectedProduct} />
-//
-//  - page:     current page key (matches the page state in App.jsx)
-//  - category: optional category slug for /search pages (e.g. "GPU", "CPU")
-//  - product:  optional product object when viewing a single product page
+//    <PageMeta page={page} category={bc} parts={parts} />
 //
 //  Notes:
 //    * Uses react-helmet-async (already wired in main.jsx via <HelmetProvider>).
-//    * Canonical URLs always point to https://prorigbuilder.com (no trailing slash).
+//    * Canonical URLs always point to https://prorigbuilder.com (no trailing /).
 //    * Title format follows Google's recommended pattern: "Page — Brand".
-//    * Descriptions stay 150–160 chars where possible (optimal for SERPs).
+//    * Descriptions stay 120–160 chars where possible (optimal SERP display).
+//    * JSON-LD Product schema enables rich snippets (stars, prices, "In Stock").
 // =============================================================================
 
 import React from "react";
@@ -28,7 +30,7 @@ const SITE = "https://prorigbuilder.com";
 const BRAND = "Pro Rig Builder";
 const DEFAULT_OG_IMAGE = `${SITE}/og-image.png`;
 
-// Static page metadata. Keys match the `page` state values in App.jsx.
+// ─── Static page metadata (matches `page` state values in App.jsx) ──────────
 const PAGES = {
   home: {
     title: `${BRAND} — Free PC Part Picker, Builder & Hardware Scanner`,
@@ -112,8 +114,7 @@ const PAGES = {
   },
 };
 
-// Category-specific overrides for the /search page. Keys should match the
-// category values used in parts.js (CPU, GPU, Motherboard, RAM, etc.).
+// ─── Category-specific overrides for /search?cat=X ──────────────────────────
 const CATEGORY_META = {
   CPU: {
     title: `Compare CPUs — Intel & AMD Processors | ${BRAND}`,
@@ -157,33 +158,82 @@ const CATEGORY_META = {
   },
 };
 
+// ─── URL parsing — pulls ?cat= and ?id= for /search?cat=GPU&id=30345 ────────
+function parseSearchUrl() {
+  if (typeof window === "undefined") return { cat: null, id: null };
+  const params = new URLSearchParams(window.location.search);
+  return {
+    cat: params.get("cat"),
+    id: params.get("id"),
+  };
+}
+
+// ─── Look up product in parts array by id (string compare for safety) ───────
+function findProduct(parts, id) {
+  if (!parts || !id) return null;
+  return parts.find((p) => String(p.id) === String(id) || String(p._id) === String(id)) || null;
+}
+
+// ─── Build product-specific meta tags ───────────────────────────────────────
 function buildProductMeta(product) {
   const name = product.n || product.name || "PC Part";
   const cat = product.c || product.category || "";
   const brand = product.b || product.brand || "";
   const price = product?.deals?.amazon?.price || product?.deals?.bestbuy?.price || product.pr;
+  const slug = (product.slug || name.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, ""));
 
-  const titleParts = [name];
+  const titleParts = [];
+  if (brand && !name.toLowerCase().includes(brand.toLowerCase())) titleParts.push(`${brand} ${name}`);
+  else titleParts.push(name);
   if (cat) titleParts.push(cat);
   titleParts.push("Specs, Price & Reviews");
   titleParts.push(BRAND);
 
-  let desc = `${name}`;
-  if (brand) desc = `${brand} ${name}`;
+  let desc = brand && !name.toLowerCase().includes(brand.toLowerCase()) ? `${brand} ${name}` : name;
   desc += ` — full specs, benchmarks`;
   if (price) desc += `, current price $${price}`;
   desc += `, and live availability from Amazon and Best Buy.`;
 
   return {
-    title: titleParts.join(" | "),
+    title: titleParts.join(" | ").slice(0, 70),
     desc: desc.slice(0, 160),
-    // Path uses product id when available, falling back to a slugged name.
-    path: `/product/${product.id || product._id || encodeURIComponent(name.toLowerCase().replace(/\s+/g, "-"))}`,
+    path: `/search?cat=${encodeURIComponent(cat)}&id=${product.id || product._id}&slug=${slug}`,
   };
 }
 
+// ─── Build JSON-LD structured data ──────────────────────────────────────────
 function buildJsonLd({ page, product, category, url, title, desc }) {
-  // Org schema for the homepage.
+  // Product schema — produces rich snippets (stars, prices, in-stock) in SERPs.
+  if (product) {
+    const price = product?.deals?.amazon?.price || product?.deals?.bestbuy?.price || product.pr;
+    const offerUrl = product?.deals?.amazon?.url || product?.deals?.bestbuy?.url || url;
+    const inStock = product?.deals?.amazon?.inStock !== false;
+    const ld = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      name: product.n || product.name,
+      ...(product.b || product.brand ? { brand: { "@type": "Brand", name: product.b || product.brand } } : {}),
+      ...(product.c || product.category ? { category: product.c || product.category } : {}),
+    };
+    if (product.r && product.r > 0) {
+      ld.aggregateRating = {
+        "@type": "AggregateRating",
+        ratingValue: String(product.r),
+        reviewCount: String(product.rc || product.reviewCount || 1),
+      };
+    }
+    if (price) {
+      ld.offers = {
+        "@type": "Offer",
+        price: String(price),
+        priceCurrency: "USD",
+        availability: inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+        url: offerUrl,
+      };
+    }
+    return ld;
+  }
+  // Homepage: WebSite + SearchAction (lets Google add a search box to your SERP).
   if (page === "home") {
     return {
       "@context": "https://schema.org",
@@ -197,36 +247,7 @@ function buildJsonLd({ page, product, category, url, title, desc }) {
       },
     };
   }
-  // Product schema (Phase 2: rich snippets).
-  if (product) {
-    const price = product?.deals?.amazon?.price || product?.deals?.bestbuy?.price || product.pr;
-    return {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      name: product.n || product.name,
-      brand: product.b || product.brand || undefined,
-      category: product.c || product.category || undefined,
-      ...(product.r ? {
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: product.r,
-          reviewCount: product.rc || product.reviewCount || 1,
-        },
-      } : {}),
-      ...(price ? {
-        offers: {
-          "@type": "Offer",
-          price: String(price),
-          priceCurrency: "USD",
-          availability: product?.deals?.amazon?.inStock === false
-            ? "https://schema.org/OutOfStock"
-            : "https://schema.org/InStock",
-          url: product?.deals?.amazon?.url || url,
-        },
-      } : {}),
-    };
-  }
-  // CollectionPage schema for category browse.
+  // Category pages.
   if (page === "search" && category) {
     return {
       "@context": "https://schema.org",
@@ -239,22 +260,47 @@ function buildJsonLd({ page, product, category, url, title, desc }) {
   return null;
 }
 
-export default function PageMeta({ page, category, product }) {
-  let meta;
+// ─── Main component ─────────────────────────────────────────────────────────
+export default function PageMeta({ page, category, product, parts }) {
+  // URL-based product detection. Runs every render — cheap (one find on parts).
+  // When App's state updates due to URL change, this re-evaluates automatically.
+  let resolvedProduct = product || null;
+  let resolvedCategory = category || null;
+  if (!resolvedProduct && page === "search" && parts) {
+    const { cat, id } = parseSearchUrl();
+    if (id) {
+      resolvedProduct = findProduct(parts, id);
+    }
+    if (cat && !resolvedCategory) resolvedCategory = cat;
+  }
 
-  if (product) {
-    meta = buildProductMeta(product);
-  } else if (page === "search" && category && CATEGORY_META[category]) {
+  // Resolve metadata.
+  let meta;
+  let ogType = "website";
+  let ogImage = DEFAULT_OG_IMAGE;
+  if (resolvedProduct) {
+    meta = buildProductMeta(resolvedProduct);
+    ogType = "product";
+    // Use product image if available, falling back to default OG image.
+    ogImage = resolvedProduct?.deals?.amazon?.image || resolvedProduct.img || DEFAULT_OG_IMAGE;
+  } else if (page === "search" && resolvedCategory && CATEGORY_META[resolvedCategory]) {
     meta = {
-      ...CATEGORY_META[category],
-      path: `/search/${encodeURIComponent(category.toLowerCase())}`,
+      ...CATEGORY_META[resolvedCategory],
+      path: `/search?cat=${encodeURIComponent(resolvedCategory)}`,
     };
   } else {
     meta = PAGES[page] || PAGES.home;
   }
 
   const url = SITE + meta.path;
-  const jsonLd = buildJsonLd({ page, product, category, url, title: meta.title, desc: meta.desc });
+  const jsonLd = buildJsonLd({
+    page,
+    product: resolvedProduct,
+    category: resolvedCategory,
+    url,
+    title: meta.title,
+    desc: meta.desc,
+  });
 
   return (
     <Helmet>
@@ -267,14 +313,14 @@ export default function PageMeta({ page, category, product }) {
       <meta property="og:title" content={meta.title} />
       <meta property="og:description" content={meta.desc} />
       <meta property="og:url" content={url} />
-      <meta property="og:type" content={product ? "product" : "website"} />
-      <meta property="og:image" content={DEFAULT_OG_IMAGE} />
+      <meta property="og:type" content={ogType} />
+      <meta property="og:image" content={ogImage} />
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={meta.title} />
       <meta name="twitter:description" content={meta.desc} />
-      <meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
+      <meta name="twitter:image" content={ogImage} />
 
       {/* JSON-LD structured data */}
       {jsonLd && (
