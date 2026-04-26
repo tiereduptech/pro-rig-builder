@@ -1,0 +1,339 @@
+// enrich-from-dataforseo.cjs
+// For accessory products missing critical specs, fetch full Amazon product details from DataForSEO
+// Cost: ~$0.001 per product. Targeting ~150 products = ~$0.15
+
+const fs = require('fs');
+const path = require('path');
+
+const LOGIN = process.env.DATAFORSEO_LOGIN;
+const PASSWORD = process.env.DATAFORSEO_PASSWORD;
+if (!LOGIN || !PASSWORD) {
+  console.error('Missing DATAFORSEO_LOGIN/PASSWORD. Run via: railway run node enrich-from-dataforseo.cjs');
+  process.exit(1);
+}
+const AUTH = 'Basic ' + Buffer.from(LOGIN + ':' + PASSWORD).toString('base64');
+const BASE = 'https://api.dataforseo.com/v3';
+
+const ENRICHMENTS_PATH = './catalog-build/_enrichments.json';
+const CATEGORIES = ['Mouse', 'Keyboard', 'Headset', 'Microphone', 'Webcam', 'MousePad'];
+
+// Critical specs per category (products missing these are candidates for enrichment)
+const CRITICAL_SPECS = {
+  Mouse: ['sensor', 'dpi', 'mouseType'],
+  Keyboard: ['switches', 'layout'],
+  Headset: ['hsType', 'driver', 'mic'],
+  Microphone: ['micType', 'pattern'],
+  Webcam: ['resolution', 'autofocus'],
+  MousePad: ['surface', 'padSize'],
+};
+
+// Field mapping: Amazon spec table key → our schema field
+const AMAZON_FIELD_MAPS = {
+  Mouse: {
+    sensor: ['Movement Detection', 'Sensor', 'Sensor Type', 'Tracking Method'],
+    dpi: ['Mouse Maximum Sensitivity', 'Maximum DPI', 'DPI'],
+    pollingRate: ['Polling Rate', 'Maximum Polling Rate'],
+    weight: ['Item Weight', 'Weight', 'Product Weight'],
+    mouseType: ['Connectivity Technology', 'Connectivity', 'Connection Type', 'Power Source'],
+  },
+  Keyboard: {
+    switches: ['Key Switch Type', 'Switch Type', 'Keyboard Description', 'Mechanical Switch'],
+    layout: ['Style', 'Form Factor', 'Number of Keys', 'Keyboard Type', 'Item Shape'],
+    wireless: ['Connectivity Technology', 'Connectivity', 'Connection Type'],
+    rgb: ['Light Color', 'Backlit', 'Backlight', 'Lighting', 'LED Color', 'Embellishment Feature'],
+  },
+  Headset: {
+    hsType: ['Connectivity Technology', 'Connectivity', 'Connection Type'],
+    driver: ['Driver Size', 'Speaker Driver Size', 'Driver Diameter', 'Speaker Description'],
+    mic: ['Microphone', 'Microphone Form Factor', 'Microphone Type'],
+    anc: ['Noise Control', 'Active Noise Cancellation', 'Noise Cancelling'],
+  },
+  Microphone: {
+    micType: ['Connectivity Technology', 'Connectivity', 'Connector Type', 'Connection Type'],
+    pattern: ['Polar Pattern', 'Pickup Pattern', 'Microphone Form Factor'],
+    sampleRate: ['Sample Rate', 'Sampling Rate'],
+  },
+  Webcam: {
+    resolution: ['Image Capture Speed', 'Maximum Image Resolution', 'Video Capture Resolution', 'Resolution'],
+    fps: ['Maximum Frame Rate', 'Frame Rate'],
+    autofocus: ['Special Feature', 'Image Capture Type', 'Autofocus'],
+  },
+  MousePad: {
+    surface: ['Material', 'Surface Material', 'Specific Uses For Product'],
+    padSize: ['Size', 'Item Dimensions L x W'],
+  },
+};
+
+// Reuse the same normalizer from enrich-from-bb-details-v2
+function normalizeValue(field, raw) {
+  if (raw == null) return null;
+  const s = String(raw).trim();
+  if (!s || s.toLowerCase() === 'not specified' || s === '-' || s === 'N/A') return null;
+  const lower = s.toLowerCase();
+
+  switch (field) {
+    case 'sensor':
+      if (s.length > 40) return null;
+      const cleaned = s.replace(/\b(optical|laser)\b/gi, '').trim();
+      return cleaned || s;
+    case 'dpi':
+      const dpiM = s.match(/(\d{1,3}[,]?\d{0,3})/);
+      if (!dpiM) return null;
+      const dpi = parseInt(dpiM[1].replace(/,/g, ''));
+      return dpi > 100 && dpi < 100000 ? dpi : null;
+    case 'pollingRate':
+      const prM = s.match(/(\d+)/);
+      return prM ? parseInt(prM[1]) : null;
+    case 'weight':
+      const wM = s.match(/([\d.]+)\s*(g|gram|grams|oz|ounce|lb|pound)/i);
+      if (!wM) return null;
+      const wVal = parseFloat(wM[1]);
+      const wUnit = wM[2].toLowerCase();
+      if (wUnit.startsWith('lb') || wUnit.startsWith('pound')) return Math.round(wVal * 453.6);
+      if (wUnit.startsWith('oz') || wUnit.startsWith('ounce')) return Math.round(wVal * 28.35);
+      return Math.round(wVal);
+    case 'mouseType':
+    case 'hsType':
+    case 'micType':
+      if (/wireless|bluetooth|2\.4/i.test(lower)) return 'Wireless';
+      if (/usb-?c?\b/i.test(lower) && !/cable/i.test(lower)) return 'USB';
+      if (/xlr/i.test(lower)) return 'XLR';
+      if (/wired|cable|3\.5mm/i.test(lower)) return 'Wired';
+      return null;
+    case 'wireless':
+      if (/wireless|bluetooth|2\.4/i.test(lower)) return true;
+      if (/wired/i.test(lower)) return false;
+      return null;
+    case 'rgb':
+      if (/rgb|chroma|backlit|true|yes/i.test(lower)) return true;
+      if (/^no$|^none$|false/i.test(lower)) return false;
+      return null;
+    case 'mic':
+    case 'anc':
+    case 'autofocus':
+      if (/yes|true|active|built-?in|integrated|enabled/i.test(lower)) return true;
+      if (/^no$|none|false|disabled/i.test(lower)) return false;
+      return null;
+    case 'switches':
+      if (/optical/i.test(s)) return 'Optical';
+      if (/magnetic|hall/i.test(s)) return 'Hall Effect';
+      if (/cherry|gateron|kailh/i.test(s)) {
+        const m = s.match(/(red|blue|brown|black|silver|speed|silent|clear|yellow)/i);
+        return m ? m[1].charAt(0).toUpperCase() + m[1].slice(1).toLowerCase() : 'Mechanical';
+      }
+      if (/^(red|blue|brown|black|silver|yellow|speed|silent|clear)\b/i.test(s)) {
+        const m = s.match(/(red|blue|brown|black|silver|yellow|speed|silent|clear)/i);
+        return m[1].charAt(0).toUpperCase() + m[1].slice(1).toLowerCase();
+      }
+      if (/scissor/i.test(s)) return 'Scissor';
+      if (/membrane|mech-?dome/i.test(s)) return 'Membrane';
+      if (/mechanical/i.test(s)) return 'Mechanical';
+      return null;
+    case 'layout':
+      if (/full[\s-]?size|standard|104|108/i.test(s)) return 'Full-Size';
+      if (/tkl|tenkeyless|87[\s-]?key/i.test(s)) return 'TKL';
+      if (/75/i.test(s)) return '75%';
+      if (/65/i.test(s)) return '65%';
+      if (/60/i.test(s)) return '60%';
+      if (/96/i.test(s)) return '96%';
+      return null;
+    case 'driver':
+      const dM = s.match(/([\d.]+)\s*mm/i);
+      if (dM) return parseInt(dM[1]);
+      const dn = s.match(/^([\d.]+)$/);
+      return dn ? parseInt(dn[1]) : null;
+    case 'pattern':
+      if (/cardioid/i.test(s)) return 'Cardioid';
+      if (/condenser/i.test(s)) return 'Condenser';
+      if (/dynamic/i.test(s)) return 'Dynamic';
+      if (/omnidirectional/i.test(s)) return 'Omnidirectional';
+      if (/multi-?pattern/i.test(s)) return 'Multi-Pattern';
+      if (/bidirectional|figure[- ]?8/i.test(s)) return 'Bidirectional';
+      return null;
+    case 'sampleRate':
+      const srM = s.match(/(\d+)\s*k?Hz/i);
+      return srM ? parseInt(srM[1]) : null;
+    case 'resolution':
+      if (/4k|2160|3840/.test(s)) return '4K';
+      if (/1440|qhd|2k\b/i.test(s)) return '1440p';
+      if (/1080|fhd/i.test(s)) return '1080p';
+      if (/720|hd\b/i.test(s)) return '720p';
+      return null;
+    case 'fps':
+      const fM = s.match(/(\d+)/);
+      const fps = fM ? parseInt(fM[1]) : null;
+      return (fps && fps > 0 && fps <= 240) ? fps : null;
+    case 'surface':
+      if (/cloth|fabric|textile/i.test(s)) return 'Cloth';
+      if (/hard|aluminum|metal|glass|plastic/i.test(s)) return 'Hard';
+      if (/hybrid/i.test(s)) return 'Hybrid';
+      if (/rubber|silicon/i.test(s)) return 'Rubber';
+      return null;
+    case 'padSize':
+      if (/3xl|extended|gigantic/i.test(s)) return 'XXL';
+      if (/xxl/i.test(s)) return 'XXL';
+      if (/xl|extra\s*large/i.test(s)) return 'XL';
+      if (/large/i.test(s)) return 'Large';
+      if (/medium/i.test(s)) return 'Medium';
+      if (/small|compact/i.test(s)) return 'Small';
+      return null;
+  }
+  return s.length > 50 ? null : s;
+}
+
+function flattenProductInfo(productInformation) {
+  const flat = {};
+  if (!productInformation) return flat;
+  for (const section of Array.isArray(productInformation) ? productInformation : []) {
+    // type "product_information_details_item" has body as key-value spec table
+    if (section.type === 'product_information_details_item' && section.body && typeof section.body === 'object') {
+      for (const [k, v] of Object.entries(section.body)) {
+        flat[k] = v;
+      }
+    }
+    // Also walk nested contents arrays
+    if (Array.isArray(section.contents)) {
+      for (const c of section.contents) {
+        if (c.body && typeof c.body === 'object' && !Array.isArray(c.body)) {
+          for (const [k, v] of Object.entries(c.body)) flat[k] = v;
+        }
+      }
+    }
+  }
+  return flat;
+}
+
+async function fetchAsinDetails(asin) {
+  const body = [{
+    asin,
+    location_code: 2840, // United States
+    language_code: 'en_US',
+  }];
+  const url = BASE + '/merchant/amazon/asin/task_post';
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: { 'Authorization': AUTH, 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+  const data = await res.json();
+  return data?.tasks?.[0]?.id;
+}
+
+async function pollTask(taskId) {
+  const url = BASE + '/merchant/amazon/asin/task_get/advanced/' + taskId;
+  for (let i = 0; i < 60; i++) {
+    await new Promise(r => setTimeout(r, 5000));
+    const res = await fetch(url, { headers: { 'Authorization': AUTH } });
+    const data = await res.json();
+    const task = data?.tasks?.[0];
+    if (task?.status_code === 20000 && task.result) return task.result[0];
+  }
+  return null;
+}
+
+(async () => {
+  const m = await import('file://' + process.cwd().replace(/\\/g, '/') + '/src/data/parts.js?t=' + Date.now());
+  const parts = m.PARTS || m.default;
+
+  const enrichments = fs.existsSync(ENRICHMENTS_PATH)
+    ? JSON.parse(fs.readFileSync(ENRICHMENTS_PATH, 'utf8'))
+    : {};
+
+  // Find products that need enrichment (have Amazon ASIN + missing critical specs)
+  const candidates = [];
+  for (const p of parts) {
+    if (!CATEGORIES.includes(p.c)) continue;
+    if (!p.deals?.amazon?.url) continue;
+    const asinM = p.deals.amazon.url.match(/\/dp\/([A-Z0-9]{10})/);
+    if (!asinM) continue;
+
+    const critical = CRITICAL_SPECS[p.c];
+    const enrichmentForId = enrichments[p.id] || {};
+    const missing = critical.filter(f => p[f] == null && enrichmentForId[f] == null);
+    if (missing.length === 0) continue;
+
+    candidates.push({ id: p.id, asin: asinM[1], cat: p.c, missing });
+  }
+
+  console.log('Candidates needing enrichment: ' + candidates.length);
+  console.log('Estimated cost: $' + (candidates.length * 0.001).toFixed(2));
+
+  // Process limit (override with --limit N)
+  const limit = parseInt(process.argv.find(a => a.startsWith('--limit='))?.split('=')[1] || candidates.length);
+  const subset = candidates.slice(0, limit);
+  console.log('Processing: ' + subset.length);
+
+  if (process.argv.includes('--dry-run')) {
+    console.log('Dry run. Showing first 10:');
+    subset.slice(0, 10).forEach(c => console.log('  id=' + c.id + ' asin=' + c.asin + ' cat=' + c.cat + ' missing=' + c.missing.join(',')));
+    return;
+  }
+
+  // Submit all tasks in batch
+  console.log('Submitting tasks...');
+  const taskIds = [];
+  for (const c of subset) {
+    try {
+      const taskId = await fetchAsinDetails(c.asin);
+      if (taskId) taskIds.push({ candidate: c, taskId });
+      await new Promise(r => setTimeout(r, 100));
+    } catch (e) {
+      console.log('  task post failed for ' + c.asin + ': ' + e.message);
+    }
+  }
+  console.log('Submitted ' + taskIds.length + ' tasks');
+
+  // Wait then fetch all
+  console.log('Waiting 30s before polling...');
+  await new Promise(r => setTimeout(r, 30000));
+
+  let stats = { fetched: 0, fieldsAdded: 0, byCat: {} };
+  for (const cat of CATEGORIES) stats.byCat[cat] = 0;
+
+  for (const { candidate, taskId } of taskIds) {
+    try {
+      const result = await pollTask(taskId);
+      if (!result) continue;
+      stats.fetched++;
+
+      const item = result.items?.[0];
+      if (!item) continue;
+      const flat = flattenProductInfo(item.product_information);
+
+      const enrichmentForId = enrichments[candidate.id] || {};
+      const fieldMap = AMAZON_FIELD_MAPS[candidate.cat];
+
+      for (const ourField of candidate.missing) {
+        const bbFieldList = fieldMap[ourField] || [];
+        for (const bbField of bbFieldList) {
+          const rawVal = flat[bbField];
+          if (rawVal == null) continue;
+          const normalized = normalizeValue(ourField, rawVal);
+          if (normalized != null && normalized !== '') {
+            enrichmentForId[ourField] = normalized;
+            stats.fieldsAdded++;
+            stats.byCat[candidate.cat]++;
+            break;
+          }
+        }
+      }
+
+      if (Object.keys(enrichmentForId).length > 0) {
+        enrichments[candidate.id] = enrichmentForId;
+      }
+      await new Promise(r => setTimeout(r, 100));
+    } catch (e) {
+      console.log('  poll failed: ' + e.message);
+    }
+  }
+
+  console.log('\n═══ DataForSEO ENRICHMENT ═══');
+  console.log('Fetched: ' + stats.fetched + '/' + taskIds.length);
+  for (const [cat, n] of Object.entries(stats.byCat)) {
+    console.log('  ' + cat.padEnd(14) + ' fields:' + n);
+  }
+  console.log('Total new fields: ' + stats.fieldsAdded);
+
+  fs.writeFileSync(ENRICHMENTS_PATH, JSON.stringify(enrichments, null, 2));
+  console.log('\n✓ Enrichments saved. Run apply-enrichments.cjs to merge into parts.js');
+})();

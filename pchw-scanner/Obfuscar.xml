@@ -1,26 +1,29 @@
-<?xml version='1.0' encoding='utf-8'?>
-<!--
-  Obfuscar config for ProRigScanner (WPF .NET 8)
-
-  Conservative settings:
-  - KeepPublicApi=true   -> public types/methods keep their names (safer for WPF/XAML/JSON)
-  - HidePrivateApi=true  -> private types/methods get scrambled (the protection)
-  - RenameProperties=false -> leaves properties alone (protects JSON serialization + data binding)
-  - RenameEvents=false   -> leaves events alone (protects XAML event handlers)
-  - AnalyzeXaml=true     -> Obfuscar reads XAML/BAML so it won't rename things XAML needs
--->
+<?xml version='1.0'?>
 <Obfuscator>
+  <!--
+    Path note: Obfuscar runs in the AfterTargets="Build" hook in ProRigScanner.csproj,
+    which fires BEFORE `dotnet publish` copies the DLL into the publish folder.
+    So we must point at the build output dir (no /publish suffix).
+  -->
   <Var name="InPath" value="bin\Release\net8.0-windows\win-x64" />
   <Var name="OutPath" value="bin\Release\net8.0-windows\win-x64\Obfuscated" />
-
   <Var name="KeepPublicApi" value="true" />
   <Var name="HidePrivateApi" value="true" />
-  <Var name="RenameProperties" value="false" />
+  <Var name="UseUnicodeNames" value="false" />
+  <Var name="RenameProperties" value="true" />
   <Var name="RenameEvents" value="false" />
   <Var name="RenameFields" value="true" />
-  <Var name="UseUnicodeNames" value="false" />
-  <Var name="AnalyzeXaml" value="true" />
-  <Var name="RegenerateDebugInfo" value="false" />
 
-  <Module file="$(InPath)\ProRigScanner.dll" />
+  <Module file="$(InPath)\ProRigScanner.dll">
+    <SkipType name="ProRigScanner.App" skipMethods="true" skipFields="true" skipProperties="true" skipEvents="true" />
+    <SkipType name="ProRigScanner.MainWindow" skipMethods="true" skipFields="true" skipProperties="true" skipEvents="true" />
+    <SkipType name="ProRigScanner.Updater" skipMethods="true" skipFields="true" skipProperties="true" skipEvents="true" />
+    <SkipType name="ProRigScanner.SystemSpecs" skipMethods="true" skipFields="true" skipProperties="true" skipEvents="true" />
+    <SkipType name="ProRigScanner.CPUInfo" skipMethods="true" skipFields="true" skipProperties="true" skipEvents="true" />
+    <SkipType name="ProRigScanner.GPUInfo" skipMethods="true" skipFields="true" skipProperties="true" skipEvents="true" />
+    <SkipType name="ProRigScanner.RAMInfo" skipMethods="true" skipFields="true" skipProperties="true" skipEvents="true" />
+    <SkipType name="ProRigScanner.StorageInfo" skipMethods="true" skipFields="true" skipProperties="true" skipEvents="true" />
+    <SkipType name="ProRigScanner.MotherboardInfo" skipMethods="true" skipFields="true" skipProperties="true" skipEvents="true" />
+  </Module>
 </Obfuscator>
+

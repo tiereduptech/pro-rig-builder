@@ -17,6 +17,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Management;
 using System.Net;
@@ -52,12 +53,37 @@ namespace ProRigScanner
             InitializeComponent();
             if (Environment.GetCommandLineArgs().Contains("--dev")) _baseUrl = DEV_URL;
 
-            Loaded += (s, e) => {
+            Loaded += async (s, e) => {
                 SelectButton(StorageNoBtn, ref _selectedYesNo);
                 _storageChoice = "no";
                 UpdateBudgetLabelFromSlider();
+                UpdateVersionLabel();
+
+                // Run update check before showing the wizard. If a mandatory update
+                // exists, it'll download, verify signature, relaunch, and we exit.
+                bool willRelaunch = await Updater.CheckAndApplyUpdate(this);
+                if (willRelaunch) return;  // don't continue — process is exiting
+
                 ShowPage(1);
             };
+        }
+
+        // Reads version from the assembly so it always matches what's in the .csproj.
+        // Displays as "Scanner v2.1.0" in the title bar.
+        void UpdateVersionLabel()
+        {
+            try
+            {
+                var ver = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
+                if (ver != null)
+                {
+                    string v = ver.Build > 0 || ver.Revision > 0
+                        ? $"{ver.Major}.{ver.Minor}.{ver.Build}"
+                        : $"{ver.Major}.{ver.Minor}";
+                    VersionLabel.Text = $"Scanner v{v}";
+                }
+            }
+            catch { }
         }
 
         // ============================================================
@@ -395,6 +421,8 @@ namespace ProRigScanner
         void BuildSummary(SystemSpecs specs)
         {
             SummaryPanel.Children.Clear();
+            // User-selected build context (budget) shown first — distinct from detected hardware
+            AddSummaryRow("BUDGET", $"${_budget:N0}", "your upgrade target", "#FF8A3D");
             AddSummaryRow("CPU", specs.CPU.Name, $"{specs.CPU.Cores} cores / {specs.CPU.Threads} threads · {specs.CPU.MaxClockGHz:F1} GHz", "#38BDF8");
             AddSummaryRow("GPU", specs.GPU.Name, $"{specs.GPU.VRAM_MB / 1024} GB VRAM", "#4ADE80");
             string ramDetail = $"{specs.RAM.Sticks}× {specs.RAM.StickSizeGB}GB · {specs.RAM.UsedSlots}/{specs.RAM.TotalSlots} slots used";
@@ -537,30 +565,217 @@ namespace ProRigScanner
         GPUInfo GetGPU()
         {
             var info = new GPUInfo();
+            var candidates = new List<(string name, long wmiVram, string driver, string pnp, int score)>();
+            var args = Environment.GetCommandLineArgs();
+
+            // ==== MOCK MODE: --mock-gpu=scenario ====
+            // Lets us test GPU detection locally without real hardware.
+            // Scenarios: ryzen7800x3d, intel_igpu_only, nvidia_rtx, amd_apu_dgpu, laptop_optimus
+            string mockArg = args.FirstOrDefault(a => a.StartsWith("--mock-gpu="));
+            if (mockArg != null)
+            {
+                var scenario = mockArg.Substring("--mock-gpu=".Length);
+                return MockGPUDetection(scenario);
+            }
+
             try
             {
                 using var searcher = new ManagementObjectSearcher("SELECT * FROM Win32_VideoController");
                 foreach (ManagementObject obj in searcher.Get())
                 {
-                    string name = obj["Name"]?.ToString() ?? "";
-                    if (name.Contains("Microsoft Basic")) continue;
-                    bool isIntegrated = name.Contains("Intel") && name.Contains("Graphics") && !name.Contains("Arc");
-                    if (isIntegrated && !string.IsNullOrEmpty(info.Name) && info.Name != "Unknown") continue;
-                    if (isIntegrated && !string.IsNullOrEmpty(info.Name) && info.Name.Contains("NVIDIA")) continue;
-                    if (isIntegrated && !string.IsNullOrEmpty(info.Name) && info.Name.Contains("Radeon")) continue;
-                    if (isIntegrated && !string.IsNullOrEmpty(info.Name) && info.Name.Contains("RTX")) continue;
-                    info.Name = Clean(name);
-                    long namedVram = GuessVRAM(info.Name);
+                    string rawName = obj["Name"]?.ToString() ?? "";
+                    if (string.IsNullOrWhiteSpace(rawName)) continue;
+                    if (rawName.Contains("Microsoft Basic")) continue;
+                    if (rawName.Contains("Remote Display")) continue;
+                    if (rawName.Contains("DisplayLink")) continue;
+                    if (rawName.Contains("Virtual")) continue;
+
                     long wmiVram = 0;
                     try { wmiVram = Convert.ToInt64(obj["AdapterRAM"] ?? 0) / (1024 * 1024); } catch { }
-                    info.VRAM_MB = namedVram > 0 ? namedVram : wmiVram;
-                    if (info.VRAM_MB <= 0 || info.VRAM_MB > 65536) info.VRAM_MB = 8 * 1024;
-                    info.DriverVersion = obj["DriverVersion"]?.ToString() ?? "";
+                    string driver = obj["DriverVersion"]?.ToString() ?? "";
+                    string pnp = obj["PNPDeviceID"]?.ToString() ?? "";
+
+                    int score = ScoreGPU(rawName, wmiVram, pnp);
+                    candidates.Add((Clean(rawName), wmiVram, driver, pnp, score));
                 }
             }
-            catch (Exception ex) { info.Name = "Detection failed: " + ex.Message; }
-            if (string.IsNullOrEmpty(info.Name)) info.Name = "No discrete GPU detected";
+            catch (Exception ex) { info.Name = "Detection failed: " + ex.Message; return info; }
+
+            // Write diagnostic log so we can see exactly what was detected on end-user machines.
+            // Users can find this file and send it back to us if detection is wrong.
+            try
+            {
+                var logPath = Path.Combine(Path.GetTempPath(), "prorigscanner-gpu-log.txt");
+                var sb = new System.Text.StringBuilder();
+                sb.AppendLine($"=== GPU enumeration at {DateTime.Now:yyyy-MM-dd HH:mm:ss} ===");
+                sb.AppendLine($"Candidates: {candidates.Count}");
+                foreach (var c in candidates)
+                {
+                    sb.AppendLine($"  NAME: {c.name}");
+                    sb.AppendLine($"  VRAM: {c.wmiVram} MB");
+                    sb.AppendLine($"  PNP:  {c.pnp}");
+                    sb.AppendLine($"  DRV:  {c.driver}");
+                    sb.AppendLine($"  SCORE: {c.score}");
+                    sb.AppendLine();
+                }
+                File.WriteAllText(logPath, sb.ToString());
+            }
+            catch { }  // logging failures shouldn't break scanning
+
+            if (candidates.Count == 0) { info.Name = "No GPU detected"; return info; }
+
+            candidates.Sort((a, b) => b.score.CompareTo(a.score));
+            var best = candidates[0];
+
+            info.Name = best.name;
+            info.DriverVersion = best.driver;
+            long namedVram = GuessVRAM(info.Name);
+            info.VRAM_MB = namedVram > 0 ? namedVram : best.wmiVram;
+            if (info.VRAM_MB <= 0 || info.VRAM_MB > 65536) info.VRAM_MB = 8 * 1024;
             return info;
+        }
+
+        // Runs the same scoring logic against hardcoded test scenarios so we can
+        // verify fixes locally before pushing. Launch with --mock-gpu=<scenario>.
+        GPUInfo MockGPUDetection(string scenario)
+        {
+            // Each scenario is a list of (name, vram_mb, pnp_id) tuples representing
+            // what WMI would return on that hardware.
+            (string name, long vram, string pnp)[] adapters;
+            switch (scenario.ToLower())
+            {
+                case "ryzen7800x3d":
+                    // Ryzen 7 7800X3D (Raphael desktop APU) + hypothetical RX 7800 XT dGPU
+                    adapters = new[] {
+                        ("AMD Radeon(TM) Graphics",    512L, @"PCI\VEN_1002&DEV_1638&SUBSYS_00000000&REV_CA\6&12345678&0&00000008"),
+                        ("AMD Radeon RX 7800 XT",      16384L, @"PCI\VEN_1002&DEV_747E&SUBSYS_E392174B&REV_C8\6&87654321&0&00000000"),
+                    };
+                    break;
+                case "ryzen7800x3d_igpu_only":
+                    // Same APU but no dGPU installed — scanner must return iGPU
+                    adapters = new[] {
+                        ("AMD Radeon(TM) Graphics",    512L, @"PCI\VEN_1002&DEV_1638&SUBSYS_00000000&REV_CA\6&12345678&0&00000008"),
+                    };
+                    break;
+                case "intel_igpu_only":
+                    adapters = new[] {
+                        ("Intel(R) UHD Graphics 770", 128L, @"PCI\VEN_8086&DEV_4680&SUBSYS_87231043&REV_04\3&11583659&0&10"),
+                    };
+                    break;
+                case "nvidia_rtx":
+                    // Intel 10th gen + RTX 3070 (typical desktop)
+                    adapters = new[] {
+                        ("Intel(R) UHD Graphics 630",  128L,  @"PCI\VEN_8086&DEV_9BC8"),
+                        ("NVIDIA GeForce RTX 3070",    8192L, @"PCI\VEN_10DE&DEV_2484"),
+                    };
+                    break;
+                case "laptop_optimus":
+                    // Laptop with Intel iGPU + NVIDIA dGPU (Optimus)
+                    adapters = new[] {
+                        ("Intel(R) Iris(R) Xe Graphics", 128L,  @"PCI\VEN_8086&DEV_9A49"),
+                        ("NVIDIA GeForce RTX 4060 Laptop GPU", 8192L, @"PCI\VEN_10DE&DEV_28E0"),
+                    };
+                    break;
+                case "amd_apu_plus_dgpu":
+                    // Mobile Ryzen APU (890M) + dGPU
+                    adapters = new[] {
+                        ("AMD Radeon 890M Graphics", 512L, @"PCI\VEN_1002&DEV_150E"),
+                        ("AMD Radeon RX 7900 XTX",   24576L, @"PCI\VEN_1002&DEV_744C"),
+                    };
+                    break;
+                default:
+                    return new GPUInfo { Name = $"Mock scenario '{scenario}' unknown" };
+            }
+
+            var scored = adapters.Select(a => new {
+                Name = Clean(a.name),
+                Vram = a.vram,
+                Pnp = a.pnp,
+                Score = ScoreGPU(a.name, a.vram, a.pnp),
+            }).OrderByDescending(x => x.Score).ToList();
+
+            var best = scored[0];
+            long namedVram = GuessVRAM(best.Name);
+            return new GPUInfo {
+                Name = $"[MOCK:{scenario}] {best.Name}",
+                VRAM_MB = namedVram > 0 ? namedVram : best.Vram,
+                DriverVersion = "mocked",
+            };
+        }
+
+        // Returns a relevance score — higher = more likely to be the user's gaming GPU.
+        // Uses THREE independent signals: name pattern, VRAM size, and PCI device ID.
+        //
+        // Signal 1 (name): brand/model strings in the adapter name
+        // Signal 2 (VRAM):  dedicated GPUs report multi-GB VRAM; integrated often <1GB
+        // Signal 3 (PNP ID): integrated GPU PCI IDs have specific patterns we can match
+        //
+        // Scores are additive where signals agree. Any one strong signal wins.
+        int ScoreGPU(string name, long vramMB, string pnp)
+        {
+            var n = name.ToUpper();
+            var pnpU = (pnp ?? "").ToUpper();
+            int score = 0;
+
+            // ===== NAME SIGNALS =====
+
+            // Strongly-dedicated NVIDIA
+            if (n.Contains("RTX ") || n.Contains("GTX ")) return 2000;
+            if (n.Contains("GEFORCE")) return 1800;
+            if (n.Contains("QUADRO") || n.Contains("TESLA") || n.Contains("NVIDIA TITAN")) return 1700;
+
+            // Strongly-dedicated AMD Radeon RX/Pro
+            if (System.Text.RegularExpressions.Regex.IsMatch(n, @"\bRX\s*[4-9]\d{3}")) return 2000;
+            if (System.Text.RegularExpressions.Regex.IsMatch(n, @"\bRX\s*[4-6]\d{2}\b")) return 1900;
+            if (n.Contains("RADEON PRO W") || n.Contains("FIREPRO")) return 1700;
+
+            // Intel Arc dGPU
+            if (n.Contains("INTEL ARC") || System.Text.RegularExpressions.Regex.IsMatch(n, @"\bARC\s+[AB]\d{3}")) return 1800;
+
+            // ===== KNOWN INTEGRATED PATTERNS =====
+            bool nameSaysIntegrated = false;
+            if (n.Contains("UHD GRAPHICS")) { score = 50; nameSaysIntegrated = true; }
+            else if (n.Contains("IRIS XE")) { score = 60; nameSaysIntegrated = true; }
+            else if (n.Contains("IRIS")) { score = 55; nameSaysIntegrated = true; }
+            else if (n.Contains("HD GRAPHICS")) { score = 40; nameSaysIntegrated = true; }
+            else if (n.Contains("INTEL") && n.Contains("GRAPHICS") && !n.Contains("ARC")) { score = 40; nameSaysIntegrated = true; }
+            // AMD integrated — "Radeon Graphics" without a model number typically means iGPU on Ryzen APUs
+            else if (n.Contains("RADEON") && n.Contains("GRAPHICS") && !n.Contains("PRO")
+                     && !System.Text.RegularExpressions.Regex.IsMatch(n, @"\bRX\s*\d")) { score = 50; nameSaysIntegrated = true; }
+            // Named APU graphics (Vega iGPU, Ryzen 680M/780M/890M, etc.)
+            else if (System.Text.RegularExpressions.Regex.IsMatch(n, @"RADEON\s+(VEGA|\d{3}M)\b")) { score = 60; nameSaysIntegrated = true; }
+            // Apple M-series integrated
+            else if (n.Contains("APPLE M") && n.Contains("GPU")) { score = 500; nameSaysIntegrated = true; }
+
+            if (nameSaysIntegrated) {
+                // VRAM cross-check: if adapter reports a suspiciously large VRAM (>2GB),
+                // it's probably NOT actually integrated — name could be misleading.
+                // (iGPUs virtually never report more than 2GB via WMI.)
+                if (vramMB > 2048) score += 500;
+                return score;
+            }
+
+            // ===== UNKNOWN NAME — use VRAM + PNP as tiebreakers =====
+
+            // Integrated APU PCI signatures (AMD Ryzen family)
+            // AMD APU iGPUs commonly have PCI device IDs like:
+            //   VEN_1002&DEV_1681 (Ryzen 5 APUs)
+            //   VEN_1002&DEV_15BF / 15C8 / 164E / 1900 (Phoenix/Hawk Point APUs: 780M/880M/890M)
+            //   VEN_1002&DEV_1638 (Raphael iGPU — 7000-series desktop APUs like 7800X3D)
+            if (System.Text.RegularExpressions.Regex.IsMatch(pnpU, @"VEN_1002&DEV_(1638|164E|1900|15BF|15C8|1681|13FE|1506)")) return 60;
+            // Intel iGPU PCI IDs — VEN_8086 + specific device IDs used only for integrated chips
+            if (pnpU.Contains("VEN_8086") && !n.Contains("ARC")) return 50;
+
+            // Low VRAM is a reliable integrated signal (iGPUs typically report <1GB via WMI)
+            if (vramMB > 0 && vramMB < 1024) return 60;
+
+            // Unknown but high VRAM — likely a newer dGPU we don't pattern-match
+            if (vramMB >= 4096) return 1500;
+            if (vramMB >= 2048) return 1200;
+
+            // Default fallback for unknown with unreadable VRAM — treat as dGPU to be safe
+            // (better to suggest GPU upgrades for a real dGPU than mis-classify it as iGPU)
+            return 1000;
         }
 
         RAMInfo GetRAM()

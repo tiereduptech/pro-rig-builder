@@ -1,0 +1,324 @@
+[
+  {
+    "id": 10011,
+    "stored": "AMD Ryzen 3 8300G",
+    "amazon": "AMD Ryzen 3 3200G 4-core unlocked desktop processor with Radeon Graphics",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B07STGHZK8"
+  },
+  {
+    "id": 20042,
+    "stored": "ASUS PRIME B660M-A D4",
+    "amazon": "ASUS Prime B760M-A D4 Intel® B760 (LGA 1700)(13th and 12th Gen) mATX Motherboard, PCIe 4.0, 2xM.2 Slots,2.5Gb LAN, DisplayPort,Dual HDMI,Rear USB 3.2 Gen 2, Front 1 Type-C®, Aura Sync",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0BR8S9KTT"
+  },
+  {
+    "id": 30041,
+    "stored": "AMD Radeon RX 6800 XT",
+    "amazon": "GIGABYTE Radeon RX 9060 XT Gaming OC 16G Graphics Card, PCIe 5.0, 16GB GDDR6, GV-R9060XTGAMING OC-16GD Video Card",
+    "reason": "low-overlap",
+    "asin": "B0F91KM1CK"
+  },
+  {
+    "id": 30090,
+    "stored": "SAPPHIRE Nitro+ RX 9070 XT",
+    "amazon": "Yeston Sakura Atlantis Radeon RX 9070 XT 16G GDDR6 256bit 4nm Video Cards Desktop Computer PC Graphics Card",
+    "reason": "low-overlap",
+    "asin": "B0F38GLLKR"
+  },
+  {
+    "id": 30097,
+    "stored": "XFX Speedster MERC310 RX 7800 XT",
+    "amazon": "Gigabyte Radeon RX 7800 XT Gaming OC 16G Graphics Card, 3X WINDFORCE Fans 16GB 256-bit GDDR6, GV-R78XTGAMING OC-16GD Video Card",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0CGHQ32S2"
+  },
+  {
+    "id": 40000,
+    "stored": "Corsair Vengeance DDR5 32GB (2x16GB) 6000MHz CL30",
+    "amazon": "TEAMGROUP MP44 4TB SLC Cache Gen4x4 M.2 2280 PCIe 4.0 with NVMe Laptop, Desktop SSD Solid State Drive R/W Speed up to 7000/6000MB/s TM8FPW004T0C101",
+    "reason": "model-mismatch (0/5)",
+    "asin": "B0C4KQ9N79"
+  },
+  {
+    "id": 40002,
+    "stored": "Corsair Vengeance RGB DDR5 32GB (2x16GB) 6400MHz CL32",
+    "amazon": "V-Color DDR5 64GB (16GBx4) 6000MHz CL32 2Gx8 1Rx8 OC R-DIMM (Overclocking ECC Registered DIMM) 1.4V Memory Ram for TRX50 Workstation (AMD Expo) (TRA516G60S832Q)",
+    "reason": "model-mismatch (2/5)",
+    "asin": "B0CQCK7TYW"
+  },
+  {
+    "id": 40015,
+    "stored": "Kingston FURY Beast DDR5 64GB (2x32GB) 5600MHz CL40",
+    "amazon": "32GB 1X32GB DDR5 4800MHz PC5-38400 2Rx8 1.1V CL40 262-PIN Non-ECC SODIMM NEMIX RAM Laptop PC Computer Memory",
+    "reason": "model-mismatch (2/5)",
+    "asin": "B0GVPVQ7W3"
+  },
+  {
+    "id": 40034,
+    "stored": "TeamGroup T-Force Vulcan Z DDR4 32GB (2x16GB) 3200MHz CL16",
+    "amazon": "TEAMGROUP MP44L 500GB SLC Cache NVMe 1.4 PCIe Gen 4x4 M.2 2280 Laptop&Desktop SSD (R/W Speed up to 5000/2500MB/s) TM8FPK500G0C101",
+    "reason": "model-mismatch (0/5)",
+    "asin": "B0B9Y24ZM5"
+  },
+  {
+    "id": 50019,
+    "stored": "Sabrent Rocket 4 Plus 1TB NVMe Gen4",
+    "amazon": "DATO 2TB M.2 NVMe 2.0 SSD PCIe Gen5x4 with Graphene Heat Dissipation, PCIe 5.0 Internal Solid State Drive, Up to 9300MB/s Read, 7900MB/s Write, High Speed for Gaming, Creator SSD - DP580 Serie",
+    "reason": "model-mismatch (0/2)",
+    "asin": "B0FCRN54V8"
+  },
+  {
+    "id": 50038,
+    "stored": "Samsung PM9A3 1.92TB NVMe U.2 Gen4",
+    "amazon": "WD_Black SN7100 4TB NVMe SSD - Gen4 PCIe, M.2 2280, Up to 7,000 MB/s Read Speed, Up to 6,700 MB/s Write Speed, Next Gen TLC 3D NAND, for Laptops, Handheld Gaming Devices - WDS400T4X0E",
+    "reason": "model-mismatch (1/3)",
+    "asin": "B0DZK9C789"
+  },
+  {
+    "id": 50039,
+    "stored": "Micron 7450 Pro 1.92TB NVMe U.2 Gen4",
+    "amazon": "Micron 7450 PRO 960 GB Solid State Drive - M.2 2280 Internal - PCI Express NVMe [PCI Express NVMe 4.0 x4] - Read Intensive - TAA Compliant",
+    "reason": "model-mismatch (0/2)",
+    "asin": "B0BHCL7HTL"
+  },
+  {
+    "id": 50380,
+    "stored": "FireCuda 120 SSD 500GB Internal Solid State Drive – SATA 6Gb/s 3D TLC for Gaming PC Laptop (ZA500GM10001)",
+    "amazon": "Seagate Firecuda 520 1TB Performance Internal Solid State Drive SSD PCIe Gen4 X4 NVMe 1.3 for Gaming PC Gaming Laptop Desktop (ZP1000GM3A002)",
+    "reason": "model-mismatch (0/3)",
+    "asin": "B088D6VBG6"
+  },
+  {
+    "id": 50390,
+    "stored": "M.2 2280 NVMe SSD 512GB Internal PCIe Gen4, Up to 7200MB/s, SLC Cache & HMB",
+    "amazon": "M.2 2280 NVMe SSD 1TB PCIe Gen 4, Up to 7300MB/s, SLC Cache & HMB, PS5/PC/Laptop Upgrade, Tailored for Gamers, Video Editors, High-End Creators, and AI Developers Demanding Blazing-Fast Speed GM988",
+    "reason": "model-mismatch (0/3)",
+    "asin": "B0FLTZTGYF"
+  },
+  {
+    "id": 60009,
+    "stored": "be quiet! Straight Power 12 850W",
+    "amazon": "be quiet! Pure Power 13 M 1000W Power Supply, 80 Plus® Gold Certification, ATX 3.1 PSU, Support for PCIe 5.1 GPUs, semi-Passive 120mm be quiet! Fan, LLC Technology, Single Rail, for Overclocked GPUs",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0FBXX1D17"
+  },
+  {
+    "id": 60011,
+    "stored": "EVGA SuperNOVA 1000 G7",
+    "amazon": "ASUS TUF Gaming 1000W Gold (1000 Watt, ATX 3.0 Compatible Fully Modular Power Supply, 80+ Gold Certified, Military-Grade Components, Dual Ball Bearing, Axial-tech Fan, PCB Coating, 10 Year Warranty)",
+    "reason": "low-overlap",
+    "asin": "B0BZWZYTWJ"
+  },
+  {
+    "id": 60017,
+    "stored": "Corsair CX550M",
+    "amazon": "CORSAIR CX550 80 Plus Bronze Non Modular Low-Noise ATX 550 Watt Power Supply - NA - Black",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0CQMQY2V2"
+  },
+  {
+    "id": 60019,
+    "stored": "Corsair SF1000L SFX-L ATX 3.0",
+    "amazon": "CORSAIR SF1000 (2024) Fully Modular Low Noise 80 Plus Platinum ATX Power Supply â€“ 3.1 Compliant â€“ PCIe 5.1 Ready â€“ SFX-to-ATX Bracket Included â€“ Black",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0D45RN3KZ"
+  },
+  {
+    "id": 60024,
+    "stored": "be quiet! Dark Power 13 1300W",
+    "amazon": "be quiet! Dark Power 13 1000W Quiet Performance Power Supply | 80 Plus Titanium Efficiency | ATX 3.1| PCIe 5 | Modular | BN661",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0BV6CWS2Z"
+  },
+  {
+    "id": 60027,
+    "stored": "DeepCool PX1200G",
+    "amazon": "CORSAIR RM1200e (2023) Fully Modular Low-Noise ATX Power Supply with 12V-2x6 Cable – ATX 3.1 & PCIe 5.1 Compliant, Cybenetics Platinum Efficiency, 105°C-Rated Capacitors, Modern Standby Mode – Black",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0DXVPBJJ2"
+  },
+  {
+    "id": 60028,
+    "stored": "DeepCool PX850G",
+    "amazon": "ID-COOLING FROZN A410 TD CPU Air Cooler, 4 Heat Pipes, 120mm High-Performance Fan, Real-Time Temperature Display, Pre-Applied Thermal Paste, Compatible with Intel LGA 1700/1200/115X & AMD AM5/AM4",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0FM7HZK5F"
+  },
+  {
+    "id": 60030,
+    "stored": "EVGA 600 BR",
+    "amazon": "Thermaltake SMART 600W ATX 12V V2.3/EPS 12V 80 Plus Certified Active PFC Power Supply PS-SPD-0600NPCWUS-W",
+    "reason": "low-overlap",
+    "asin": "B014W3EMAO"
+  },
+  {
+    "id": 60031,
+    "stored": "Corsair RM650",
+    "amazon": "CORSAIR RM650e ATX 3.1 PCIe 5.1 Ready Fully Modular 650W Power Supply – 12V-2x6 Cable Included, Cybenetics Gold Efficiency, 105°C-Rated Capacitors, Modern Standby Mode – Black",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0FLG4M8S2"
+  },
+  {
+    "id": 60032,
+    "stored": "ASUS ROG Thor 1200P2",
+    "amazon": "ASUS ROG Thor 1200W Platinum III PSU (80 Plus Platinum Certified, ATX 3.1, GaN MOSFET, GPU-First Intelligent Voltage Stabilizer, Magnetic OLED Display, Turbo Mode, 10-Year Warranty)",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0FFYB49YH"
+  },
+  {
+    "id": 70012,
+    "stored": "Thermaltake Core P3 TG Pro",
+    "amazon": "Thermaltake DistroCase 350P Multi-Functional Mid Tower Case CA-1Q8-00M1WN-00",
+    "reason": "low-overlap",
+    "asin": "B08FSQTLNV"
+  },
+  {
+    "id": 70019,
+    "stored": "be quiet! Pure Base 500DX",
+    "amazon": "be quiet! Pure Base 501 DX Black Mid-Tower ATX Case | High Airflow | 3 Preinstalled Pure Wings 3 140mm PWM Fans | Optimized Air Pressure | BGW76",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0DYM1C6LB"
+  },
+  {
+    "id": 70025,
+    "stored": "DeepCool CH510",
+    "amazon": "DIYPC DIY-ATX08-Wood Black USB3.0 /Type C ATX Mid Tower Gaming Computer Case w/Tempered Glass Side Panel and Walnut Wood Front Panel",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0FX68NXSN"
+  },
+  {
+    "id": 70225,
+    "stored": "TK-3 Black One-Piece Curved Glass ATX Mid Tower Pc Case, One-Piece Curved Glass, SP BTF MB/Dual 360 AIO/ATX PSU/40Ser...",
+    "amazon": "JONSBO TK-3 Black One-Piece Curved Glass ATX Mid Tower Pc Case, One-Piece Curved Glass, SP BTF MB/Dual 360 AIO/ATX PSU/40Series GPU, with 10 Fan Positions, 270 Degree Side View Display,Black Chassis",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0D5HKTHY8"
+  },
+  {
+    "id": 80007,
+    "stored": "DeepCool AK620",
+    "amazon": "Thermalright Peerless Assassin 120 SE CPU Cooler, 6 Heat Pipes AGHP Technology, Dual 120mm PWM Fans, 1550RPM Speed, for AMD:AM4 AM5/Intel LGA 1700/1150/1151/1200/1851,PC Cooler",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B09LGY38L4"
+  },
+  {
+    "id": 80008,
+    "stored": "DeepCool Assassin IV",
+    "amazon": "PCCOOLER CPU Air Cooler Dual-Tower, 7×6mm Heatpipes, 120mm Hydraulic PWM Fan, Anti-Deformation Bracket, Wavy Fin Stack, Copper Reflow Base, Intel LGA1851/1700 & AMD AM5 Compatible(RT720 TC BK)",
+    "reason": "low-overlap",
+    "asin": "B0FVS4JKWX"
+  },
+  {
+    "id": 80012,
+    "stored": "Corsair iCUE H150i Elite LCD XT",
+    "amazon": "CORSAIR Titan 360 RX LCD Liquid CPU Cooler, 360mm AIO, Low-Noise FlowDrive Cooling Engine, Intel LGA 1851/1700 & AMD AM5/AM4, 3X RX120 RGB Fans, System Hub Included, Black",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0DF7CZ9D8"
+  },
+  {
+    "id": 80013,
+    "stored": "Corsair iCUE H100i Elite Capellix XT",
+    "amazon": "CORSAIR iCUE Link Titan 240 RX RGB Liquid CPU Cooler – 240mm AIO – Low-Noise – FlowDrive Cooling Engine – Intel LGA 1851/1700, AMD AM5/AM4 – 2X RX120 RGB Fans – iCUE Link System Hub Included – Black",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0D6BF3RXL"
+  },
+  {
+    "id": 80020,
+    "stored": "DeepCool LT720",
+    "amazon": "ARCTIC Liquid Freezer III Pro 360 - AIO CPU Cooler, 3 x 120 mm Water Cooling, 38 mm Radiator, PWM Pump, VRM Fan, AMD AM5/AM4, Intel LGA1851/1700 Contact Frame - Black",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0DLWGG85P"
+  },
+  {
+    "id": 80022,
+    "stored": "EK-AIO 360 D-RGB",
+    "amazon": "EK Nucleus AIO All-in-One Liquid CPU Cooler with EK FPT Fans, Water Cooling Computer Parts, 120mm Fan, Compatible with Latest Intel & AMD CPUs (360mm, Dark - CR360)",
+    "reason": "low-overlap",
+    "asin": "B0C1N56ZDC"
+  },
+  {
+    "id": 80093,
+    "stored": "Peerless Vision 360 ARGB Black CPU Aio Cooler,PC 360 Specification Water Cooler System,3.95’’IPS LCD Screen with 480x...",
+    "amazon": "Thermalright Peerless Vision 360 ARGB Black CPU Aio Cooler,PC 360 Specification Water Cooler System,3.95’’IPS LCD Screen with 480x480 Resolution,for AM4/AM5;Intel 1700/1851,3 Wireless Splicing Fans",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0FVFJZZV6"
+  },
+  {
+    "id": 85005,
+    "stored": "Corsair iCUE SP120 RGB Elite 3-Pack",
+    "amazon": "CORSAIR RS120 ARGB 120mm PWM Fans – Daisy-Chain Connection – Low-Noise – Magnetic Dome Bearing – Triple Pack – Black",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0D49Q4CGM"
+  },
+  {
+    "id": 85006,
+    "stored": "Corsair iCUE AF120 RGB Elite 3-Pack",
+    "amazon": "CORSAIR iCUE Link RX120 RGB 120mm PWM Fans with iCUE Link System Hub - Magnetic Dome Bearing - Triple Pack - Black",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0CSSXZKJB"
+  },
+  {
+    "id": 85011,
+    "stored": "Phanteks T30-120",
+    "amazon": "Phanteks PH-F120T30_BG_3P Case Fan Phanteks Ph-f120t30_bg_3p R",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B09B2LTXCN"
+  },
+  {
+    "id": 85012,
+    "stored": "DeepCool FK120 3-Pack",
+    "amazon": "AsiaHorse Nyota Ultra 120mm PC Case Fan - Space-Inspired Design (Infinity Mirror + RGB Ring), 9 Blades 58.5 CFM, Modular Build, Ultra-Quiet Silicone Pads, PWM Control-Quiet Hydro Bearing",
+    "reason": "model-mismatch (0/1)",
+    "asin": "B0FBWCZQ6H"
+  },
+  {
+    "id": 90000,
+    "stored": "LG UltraGear 27GP850-B 27in 1440p 165Hz",
+    "amazon": "LG 27GS50F-B 27-inch FHD (1920 x 1080) Ultragear Gaming Monitor with 180Hz, 1ms MBR, HDR10, AMD FreeSync, HDMI, DisplayPort, 3-Side Virtually Borderless Design, Black",
+    "reason": "model-mismatch (0/4)",
+    "asin": "B0D1VW3JBM"
+  },
+  {
+    "id": 90002,
+    "stored": "ASUS ROG Swift PG27AQN 27in 1440p 360Hz",
+    "amazon": "INNOCN 49\" OLED Ultrawide Curved Monitor 5K2K 5120 x 1440p 144Hz, 0.03ms, Computer Monitor for AI PC, USB Type C 90W, HDMI 2.1, DisplayPort, USB Hub, Speakers, Adaptive-Sync, Adjustable Stand, Black",
+    "reason": "model-mismatch (1/4)",
+    "asin": "B0DD2ZB3DZ"
+  },
+  {
+    "id": 90008,
+    "stored": "AOC 24G2SP 24in 1080p 165Hz",
+    "amazon": "New! Sceptre Curved 24.5-inch Gaming Monitor up to 240Hz 1080p R1500 1ms DisplayPort x2 HDMI x2 Eye Care Build-in Speakers, Machine Black 2026 (C255B-FWT240 Series)",
+    "reason": "model-mismatch (1/4)",
+    "asin": "B0FC9F29VG"
+  },
+  {
+    "id": 90009,
+    "stored": "Gigabyte M27Q X 27in 1440p 240Hz",
+    "amazon": "Amzfast 24.5 Inch 280Hz/240Hz FHD 1080p Gaming Monitor, 1ms Adaptive Sync, 3000:1, 126% sRGB, 93% DCI-P3, TÜV Rheinland Eye Care, HDMI 2.0 x 2 & DP 1.4 x 2, AMZG25X1 Pro",
+    "reason": "model-mismatch (1/4)",
+    "asin": "B0FVFTMGDM"
+  },
+  {
+    "id": 90010,
+    "stored": "BenQ Zowie XL2546K 24.5in 1080p 240Hz",
+    "amazon": "BenQ MA270UP 27” 4K 3840x2160 Monitor for MacBook® Pro/Air, Dual USB-C, 90W Power Delivery, Mac Color Match, USB Hub, Brightness & Volume Control on Mac, Height & Tilt Adjustable Stand, P3 Color Gamut",
+    "reason": "model-mismatch (0/4)",
+    "asin": "B0FNNH6Y4G"
+  },
+  {
+    "id": 90012,
+    "stored": "LG 32UN880-B 32in 4K Ergo USB-C",
+    "amazon": "INNOCN 40C1R Ultrawide Monitor 40\" WQHD 3440 x 1440p 144Hz FreeSync Premium HDR400 21:9 Computer Display 95% DCI-P3 500Nits IPS USB Type-C HDMI Tilt/Height Adjustable, Mountable",
+    "reason": "model-mismatch (0/2)",
+    "asin": "B09N3G9T16"
+  },
+  {
+    "id": 90013,
+    "stored": "Samsung Odyssey Neo G9 57in Dual 4K 240Hz",
+    "amazon": "INNOCN 45C1R 45\" 5K2K 5120 x 1440p Ultrawide Curved Gaming Monitor, R1500, HDR400, USB Type-C 90W Power Delivery, PIP/PBP, Built-in Speaker, Height Adjustable, Black",
+    "reason": "model-mismatch (0/2)",
+    "asin": "B0C595Y7CT"
+  }
+]

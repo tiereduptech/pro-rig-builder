@@ -210,6 +210,34 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
+            <!-- ═══ UPDATE OVERLAY (covers entire window during auto-update) ═══ -->
+            <Border x:Name="UpdateOverlay" Grid.Row="0" Grid.RowSpan="3" Background="#0F0F14" Visibility="Collapsed" Panel.ZIndex="100" CornerRadius="16">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="420">
+                    <Canvas Width="80" Height="80" HorizontalAlignment="Center" Margin="0,0,0,30">
+                        <Ellipse Canvas.Left="0" Canvas.Top="0" Width="80" Height="80" Stroke="{StaticResource Bg3}" StrokeThickness="6" Fill="Transparent"/>
+                        <Ellipse x:Name="UpdateSpinner" Canvas.Left="0" Canvas.Top="0" Width="80" Height="80" Stroke="{StaticResource Accent}" StrokeThickness="6" StrokeDashArray="2,5" Fill="Transparent" RenderTransformOrigin="0.5,0.5">
+                            <Ellipse.RenderTransform>
+                                <RotateTransform x:Name="UpdateSpinnerRotate" Angle="0"/>
+                            </Ellipse.RenderTransform>
+                            <Ellipse.Triggers>
+                                <EventTrigger RoutedEvent="Ellipse.Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard RepeatBehavior="Forever">
+                                            <DoubleAnimation Storyboard.TargetName="UpdateSpinnerRotate" Storyboard.TargetProperty="Angle" From="0" To="360" Duration="0:0:1.5"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Ellipse.Triggers>
+                        </Ellipse>
+                    </Canvas>
+                    <TextBlock x:Name="UpdateTitle" Text="Checking for updates..." FontSize="22" FontWeight="Bold" Foreground="{StaticResource Text}" HorizontalAlignment="Center" Margin="0,0,0,8"/>
+                    <TextBlock x:Name="UpdateSubtitle" Text="" FontSize="13" Foreground="{StaticResource Dim}" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"/>
+                    <Border x:Name="UpdateProgressBar" Margin="0,24,0,0" Height="6" Background="{StaticResource Bg3}" CornerRadius="3" Width="320" HorizontalAlignment="Center" Visibility="Collapsed">
+                        <Border x:Name="UpdateProgressFill" Background="{StaticResource Accent}" CornerRadius="3" HorizontalAlignment="Left" Width="0"/>
+                    </Border>
+                </StackPanel>
+            </Border>
+
             <!-- ═══ TITLE BAR ═══ -->
             <Border Grid.Row="0" Background="Transparent" MouseLeftButtonDown="TitleBar_MouseDown" Padding="20,12,8,8">
                 <Grid>
@@ -226,6 +254,9 @@
                             <TextBlock Text="Pro Rig" FontWeight="Bold" FontSize="15" Foreground="{StaticResource Text}" LineHeight="16"/>
                             <TextBlock Text="BUILDER" FontWeight="Medium" FontSize="9" Foreground="{StaticResource Dim}" Typography.StylisticSet1="True"/>
                         </StackPanel>
+                        <Border Background="{StaticResource Bg3}" CornerRadius="4" Padding="6,2" Margin="10,0,0,0" VerticalAlignment="Center">
+                            <TextBlock x:Name="VersionLabel" Text="Scanner v—" FontSize="10" FontFamily="Consolas" Foreground="{StaticResource Mute}"/>
+                        </Border>
                     </StackPanel>
                     <Button Style="{StaticResource CloseButton}" Content="✕" Click="CloseButton_Click" HorizontalAlignment="Right"/>
                 </Grid>
@@ -293,7 +324,7 @@
 
                             <StackPanel x:Name="StorageTypePanel" Visibility="Collapsed" Margin="0,14,0,0">
                                 <TextBlock Text="DRIVE TYPE" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Dim}" Margin="0,0,0,8"/>
-                                <UniformGrid Columns="2" Height="68">
+                                <UniformGrid Columns="3" Height="68">
                                     <Button x:Name="HddBtn" Tag="HDD" Style="{StaticResource OptionCard}" Click="StorageType_Click">
                                         <StackPanel>
                                             <TextBlock Text="HDD" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center"/>
@@ -304,6 +335,12 @@
                                         <StackPanel>
                                             <TextBlock Text="SSD" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center"/>
                                             <TextBlock Text="faster · better performance" FontSize="9" Foreground="{StaticResource Mute}" HorizontalAlignment="Center"/>
+                                        </StackPanel>
+                                    </Button>
+                                    <Button x:Name="NoPrefBtn" Tag="ANY" Style="{StaticResource OptionCard}" Click="StorageType_Click">
+                                        <StackPanel>
+                                            <TextBlock Text="No preference" FontSize="13" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                            <TextBlock Text="best value for size" FontSize="9" Foreground="{StaticResource Mute}" HorizontalAlignment="Center"/>
                                         </StackPanel>
                                     </Button>
                                 </UniformGrid>

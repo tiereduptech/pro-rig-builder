@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef, useCallback } from "react"
 import { Helmet } from "react-helmet-async";;
+import PageMeta from "./PageMeta.jsx";
 import { PARTS as RAW_SEED_PARTS } from "./data/parts.js";
 // Hide quarantined products from browse/builder/search
 const SEED_PARTS = RAW_SEED_PARTS.filter(p => !p.needsReview);
@@ -1342,7 +1343,7 @@ function TermsPage() {
 
       <SectionHeading>Affiliate Disclosure</SectionHeading>
       <Para>
-        Pro Rig Builder participates in affiliate programs with Amazon Associates, Best Buy, Newegg, B&H Photo, Antonline, and others. When you click an affiliate link and make a purchase, we may receive a commission at no additional cost to you. See our <a href="#affiliate" style={{color:"var(--accent)"}}>Affiliate Disclosure</a> for more details.
+        Pro Rig Builder participates in affiliate programs with Amazon Associates, Best Buy, Newegg, B&H Photo, Antonline, and others. When you click an affiliate link and make a purchase, we may receive a commission at no additional cost to you. See our <a href="/affiliate" style={{color:"var(--accent)"}}>Affiliate Disclosure</a> for more details.
       </Para>
 
       <SectionHeading>Intellectual Property</SectionHeading>
@@ -4507,5 +4508,5 @@ export default function App(){
   }, []);
 
   const handleBrowse=c=>{setBc(c);setPage("search");};
-  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} th={th} theme={theme} toggleTheme={toggleTheme}/><main style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPageRouter activeCat={bc} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage}/>}</main><Footer go={setPage}/><ScrollToTop /></div>;
+  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><PageMeta page={page} category={bc} /><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} th={th} theme={theme} toggleTheme={toggleTheme}/><main style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPageRouter activeCat={bc} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage}/>}</main><Footer go={setPage}/><ScrollToTop /></div>;
 }
