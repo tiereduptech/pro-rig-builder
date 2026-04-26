@@ -312,8 +312,17 @@ function checkLinks() {
 // ─── 11. SPA fallback ────────────────────────────────────────────────────────
 function checkSpaRouting() {
   const nixpacks = read(path.join(ROOT, 'nixpacks.toml')) || '';
-  if (/serve\s+-s\b/.test(nixpacks)) add('pass', 'SPA_SERVE', 'nixpacks.toml uses `serve -s`');
-  else add('warning', 'SPA_NO_FALLBACK', 'No SPA fallback config');
+  const railwayJson = read(path.join(ROOT, 'railway.json')) || '';
+  const serverCjs = read(path.join(ROOT, 'server.cjs')) || '';
+  if (serverCjs && /sendFile\(.*index\.html/.test(serverCjs)) {
+    add('pass', 'SPA_SERVE', 'server.cjs handles SPA fallback (sends index.html for unmatched routes)');
+    return;
+  }
+  if (/serve\s+-s\b/.test(nixpacks) || /serve\s+-s\b/.test(railwayJson)) {
+    add('pass', 'SPA_SERVE', 'serve -s configured (SPA fallback to root index.html)');
+    return;
+  }
+  add('warning', 'SPA_NO_FALLBACK', 'No SPA fallback config detected');
 }
 
 // ─── 12. Perf hints ──────────────────────────────────────────────────────────
