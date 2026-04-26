@@ -2,18 +2,17 @@
 //  server.cjs
 //  Copyright © 2026 TieredUp Tech, Inc.
 //
-//  Production static server for Pro Rig Builder. Compatible with Express 4
-//  and 5 (Express 5 removed the `*` wildcard, so we use middleware fallback
-//  via app.use instead of app.get('*', handler)).
+//  Production static server for Pro Rig Builder. Handles three cases in order:
+//    1) Explicit pre-render lookup — for any non-asset path, check if a
+//       pre-rendered HTML exists at dist/{path}/index.html and serve it.
+//       This is the SEO-critical step.
+//    2) express.static for assets (JS/CSS/images/etc.) under dist/.
+//    3) SPA fallback to dist/index.html for unknown routes.
 //
-//  Routing logic:
-//    1) If the request path maps to a real file in dist/ → serve it.
-//       /assets/index.js → dist/assets/index.js
-//    2) If the request path is a directory with index.html → serve that.
-//       /search → dist/search/index.html  (PRE-RENDERED PAGE)
-//    3) Otherwise → SPA fallback to dist/index.html.
-//       /search?cat=GPU&id=30345 → matches step 2 (path is /search)
-//       /unknown-future-route   → falls through to root index.html
+//  Why explicit middleware (step 1):
+//    Express 5 + Express's static middleware can be inconsistent about
+//    auto-resolving directory index.html files (especially with the
+//    `extensions` option). Doing it explicitly removes that uncertainty.
 // =============================================================================
 
 const express = require('express');
@@ -25,44 +24,62 @@ const DIST = path.join(__dirname, 'dist');
 const PORT = process.env.PORT || 3000;
 
 if (!fs.existsSync(DIST)) {
-  console.error('  ✗ dist/ not found at', DIST);
-  console.error('    Run `npm run build` and commit dist/ before deploying.');
+  console.error(`  ✗ dist/ not found at ${DIST}`);
+  console.error('    Build locally and commit dist/ before deploying.');
   process.exit(1);
 }
 
-// Step 1 + 2: serve real files and directory-index lookups.
-//   index: 'index.html'  → /search resolves to /search/index.html when present
-//   extensions: ['html'] → /privacy resolves to /privacy.html as fallback
-//   fallthrough: true    → if neither matches, hand off to the next middleware
+// Identify request paths that look like assets (have extensions like .js, .css).
+// These should skip the pre-render lookup and go straight to express.static.
+const ASSET_RE = /\.[a-z0-9]{1,5}(?:\?|$)/i;
+
+// ─── Step 1: Pre-rendered HTML lookup ───────────────────────────────────────
+app.use((req, res, next) => {
+  if (req.method !== 'GET' && req.method !== 'HEAD') return next();
+
+  // Asset requests (any path with a file extension) skip this step.
+  if (ASSET_RE.test(req.path)) return next();
+
+  const cleanPath = req.path.replace(/\/$/, '');  // strip trailing slash
+  const candidate = cleanPath
+    ? path.join(DIST, cleanPath, 'index.html')
+    : path.join(DIST, 'index.html');
+
+  if (fs.existsSync(candidate)) {
+    res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
+    res.setHeader('X-PreRender', 'hit');
+    return res.sendFile(candidate);
+  }
+
+  return next();
+});
+
+// ─── Step 2: Static asset serving ───────────────────────────────────────────
 app.use(
   express.static(DIST, {
-    index: 'index.html',
-    extensions: ['html'],
     fallthrough: true,
     setHeaders: (res, filePath) => {
-      // HTML is uncached so deploys propagate immediately. Hashed assets
-      // (Vite content-hashes them) get a 1-year immutable cache.
-      if (filePath.endsWith('.html')) {
-        res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
-      } else if (/\.(js|css|woff2?|png|jpg|svg|webp)$/i.test(filePath)) {
+      if (/\.(js|css|woff2?|png|jpg|svg|webp|ico)$/i.test(filePath)) {
+        // Vite content-hashes filenames, so 1-year immutable cache is safe.
         res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
       }
     },
   })
 );
 
-// Step 3: SPA fallback. Using `app.use` (middleware) instead of `app.get('*')`
-// because Express 5 removed the `*` wildcard pattern.
+// ─── Step 3: SPA fallback ───────────────────────────────────────────────────
 app.use((req, res) => {
+  res.setHeader('X-PreRender', 'fallback');
   res.sendFile(path.join(DIST, 'index.html'));
 });
 
+// ─── Boot ───────────────────────────────────────────────────────────────────
 app.listen(PORT, () => {
   console.log(`  Pro Rig Builder listening on :${PORT}`);
+  console.log(`  Express ${require('express/package.json').version}`);
   console.log(`  Serving from ${DIST}`);
 
-  // Boot-time sanity log — confirms pre-rendered routes are present.
-  const routes = ['search', 'builder', 'scanner', 'about', 'compare'];
+  const routes = ['search', 'builder', 'scanner', 'about', 'compare', 'tools', 'upgrade'];
   for (const r of routes) {
     const exists = fs.existsSync(path.join(DIST, r, 'index.html'));
     console.log(`  ${exists ? '✓' : '✗'} dist/${r}/index.html`);
