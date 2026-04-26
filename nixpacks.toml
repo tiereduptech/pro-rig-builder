@@ -13,5 +13,9 @@ cmds = ["npm ci"]
 [phases.build]
 cmds = ["npm run build"]
 
+# Custom Express server (server.cjs). Required because `serve -s dist` rewrites
+# every unknown path to root index.html, which means our 16 pre-rendered route
+# files (dist/search/index.html, dist/builder/index.html, etc.) are unreachable.
+# server.cjs serves directory-index files first, then falls back to SPA shell.
 [start]
-cmd = "npx serve -s dist -l $PORT"
+cmd = "node server.cjs"
