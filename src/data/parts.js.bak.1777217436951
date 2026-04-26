@@ -27,8 +27,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0D6NNRBGP?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": true
+    }
   },
   {
     "id": 10002,
@@ -57,8 +56,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0D6NN87T8?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": true
+    }
   },
   {
     "id": 10003,
@@ -87,8 +85,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0D6NMDNNX?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": true
+    }
   },
   {
     "id": 10004,
@@ -117,8 +114,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0D6NN6TM7?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": true
+    }
   },
   {
     "id": 10005,
@@ -148,8 +144,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DVZSG8D5?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": true
+    }
   },
   {
     "id": 10006,
@@ -179,8 +174,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DWGWN8GY?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": true
+    }
   },
   {
     "id": 10007,
@@ -210,8 +204,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DKFMSMYK?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": true
+    }
   },
   {
     "id": 10008,
@@ -652,8 +645,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0D1CK42PV?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": true
+    }
   },
   {
     "id": 10022,
@@ -682,8 +674,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0815Y8J9N?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10023,
@@ -712,8 +703,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B08164VTWH?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10024,
@@ -742,8 +732,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0D6NMCZG1?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10025,
@@ -772,8 +761,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0815XFSGK?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10026,
@@ -803,8 +791,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BM4W1L2G?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10027,
@@ -833,8 +820,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0815XFSGK?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10028,
@@ -863,8 +849,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09VCHQHZ6?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10029,
@@ -894,8 +879,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0GCD2X8Q9?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10030,
@@ -924,8 +908,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CQ4HPJYV?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10031,
@@ -954,8 +937,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B08166SLDF?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10032,
@@ -984,8 +966,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09VCHR1VH?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10033,
@@ -1014,8 +995,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09VCJ171S?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10034,
@@ -1205,8 +1185,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DFK2WHF8?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10048,
@@ -1270,8 +1249,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DFK8HHK4?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10050,
@@ -1335,8 +1313,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CGJDBCTK?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10052,
@@ -1400,8 +1377,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CQ1FC8WZ?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10054,
@@ -1465,8 +1441,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0F5DMYKC7?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10056,
@@ -1530,8 +1505,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CQ1P2TRN?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10058,
@@ -1595,8 +1569,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CGJ4MLC8?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10060,
@@ -1726,8 +1699,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CQ1Y7KHV?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10064,
@@ -1791,8 +1763,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CQ1MN1Y2?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10066,
@@ -1856,8 +1827,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BCFM3CJ4?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10068,
@@ -1921,8 +1891,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BCDL7F5W?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10070,
@@ -1986,8 +1955,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BCF5CZ16?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10072,
@@ -2084,8 +2052,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BN61LYFB?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10075,
@@ -2149,8 +2116,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BN5ZG6J4?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10077,
@@ -2214,8 +2180,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09FWYK5M9?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10079,
@@ -2279,8 +2244,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09FXKHN7M?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10081,
@@ -2344,8 +2308,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09FXFJW2F?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10083,
@@ -2409,8 +2372,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09NPJRDGD?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10085,
@@ -2474,8 +2436,7 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09NPJX7PV?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "igpu": false
+    }
   },
   {
     "id": 10121,
@@ -2547,11 +2508,7 @@ export const PARTS = [
     "tdp": 65,
     "cores": 6,
     "threads": 12,
-    "bench": 37,
-    "baseClock": 4100,
-    "boostClock": 4700,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 37
   },
   {
     "id": 10123,
@@ -2587,8 +2544,7 @@ export const PARTS = [
     "series": "Ryzen 5",
     "tdp": 95,
     "threads": 12,
-    "bench": 19,
-    "igpu": false
+    "bench": 19
   },
   {
     "id": 10124,
@@ -2624,10 +2580,7 @@ export const PARTS = [
     "series": "Core i5",
     "tdp": 125,
     "threads": 16,
-    "bench": 39,
-    "boostClock": 4900,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 39
   },
   {
     "id": 10125,
@@ -2662,10 +2615,7 @@ export const PARTS = [
     "series": "Core i7",
     "tdp": 125,
     "threads": 24,
-    "bench": 65,
-    "boostClock": 5400,
-    "memType": "DDR5",
-    "igpu": false
+    "bench": 65
   },
   {
     "id": 10126,
@@ -2702,10 +2652,7 @@ export const PARTS = [
     "series": "Core i5",
     "tdp": 125,
     "threads": 16,
-    "bench": 39,
-    "boostClock": 4900,
-    "memType": "DDR5",
-    "igpu": false
+    "bench": 39
   },
   {
     "id": 10127,
@@ -2775,10 +2722,7 @@ export const PARTS = [
     "series": "Core i9",
     "tdp": 125,
     "threads": 32,
-    "bench": 82,
-    "boostClock": 5800,
-    "memType": "DDR5",
-    "igpu": false
+    "bench": 82
   },
   {
     "id": 10129,
@@ -2811,10 +2755,7 @@ export const PARTS = [
     "baseClock": 4.9,
     "tdp": 65,
     "threads": 20,
-    "bench": 43,
-    "boostClock": 4900,
-    "memType": "DDR5",
-    "igpu": false
+    "bench": 43
   },
   {
     "id": 10130,
@@ -2882,10 +2823,7 @@ export const PARTS = [
     "series": "Core I5",
     "tdp": 65,
     "threads": 16,
-    "bench": 36,
-    "boostClock": 4700,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 36
   },
   {
     "id": 10132,
@@ -2920,10 +2858,7 @@ export const PARTS = [
     "baseClock": 3,
     "tdp": 65,
     "threads": 12,
-    "bench": 28,
-    "boostClock": 4600,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 28
   },
   {
     "id": 10133,
@@ -3020,10 +2955,7 @@ export const PARTS = [
     "series": "Ryzen 7",
     "tdp": 65,
     "threads": 16,
-    "bench": 49,
-    "boostClock": 5300,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 49
   },
   {
     "id": 10136,
@@ -3057,10 +2989,7 @@ export const PARTS = [
     "series": "Core I9",
     "tdp": 150,
     "threads": 32,
-    "bench": 86,
-    "boostClock": 6000,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 86
   },
   {
     "id": 10138,
@@ -3090,10 +3019,7 @@ export const PARTS = [
     "series": "Core i9",
     "tdp": 150,
     "threads": 32,
-    "bench": 86,
-    "boostClock": 6200,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 86
   },
   {
     "id": 10139,
@@ -3123,9 +3049,7 @@ export const PARTS = [
     "series": "Ryzen 5",
     "tdp": 65,
     "threads": 12,
-    "bench": 36,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 36
   },
   {
     "id": 10140,
@@ -3190,10 +3114,7 @@ export const PARTS = [
     "series": "Ryzen 9",
     "tdp": 170,
     "threads": 24,
-    "bench": 73,
-    "boostClock": 5600,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 73
   },
   {
     "id": 10142,
@@ -3361,10 +3282,7 @@ export const PARTS = [
     "series": "Core i7",
     "tdp": 125,
     "threads": 28,
-    "bench": 74,
-    "boostClock": 5600,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 74
   },
   {
     "id": 10147,
@@ -3462,11 +3380,7 @@ export const PARTS = [
     "series": "Core I5",
     "tdp": 65,
     "threads": 16,
-    "bench": 36,
-    "baseClock": 2500,
-    "boostClock": 4600,
-    "memType": "DDR5",
-    "igpu": false
+    "bench": 36
   },
   {
     "id": 10150,
@@ -3570,10 +3484,7 @@ export const PARTS = [
     "series": "Core i9",
     "tdp": 125,
     "threads": 32,
-    "bench": 83,
-    "boostClock": 5800,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 83
   },
   {
     "id": 10153,
@@ -3639,10 +3550,7 @@ export const PARTS = [
     "series": "Core i5",
     "tdp": 125,
     "threads": 20,
-    "bench": 55,
-    "boostClock": 5300,
-    "memType": "DDR5",
-    "igpu": false
+    "bench": 55
   },
   {
     "id": 10155,
@@ -4569,10 +4477,7 @@ export const PARTS = [
     "threads": 32,
     "boostClock": 5.6,
     "tdp": 65,
-    "bench": 64,
-    "baseClock": 2000,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 64
   },
   {
     "id": 10184,
@@ -4596,10 +4501,7 @@ export const PARTS = [
     "threads": 24,
     "boostClock": 5.5,
     "tdp": 150,
-    "bench": 62,
-    "baseClock": 3400,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 62
   },
   {
     "id": 10185,
@@ -4623,10 +4525,7 @@ export const PARTS = [
     "threads": 24,
     "boostClock": 5.1,
     "tdp": 65,
-    "bench": 48,
-    "baseClock": 2400,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 48
   },
   {
     "id": 10186,
@@ -4650,10 +4549,7 @@ export const PARTS = [
     "threads": 20,
     "boostClock": 4.9,
     "tdp": 65,
-    "bench": 43,
-    "baseClock": 2100,
-    "memType": "DDR4",
-    "igpu": true
+    "bench": 43
   },
   {
     "id": 10187,
@@ -4677,10 +4573,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.8,
     "tdp": 65,
-    "bench": 30,
-    "baseClock": 3300,
-    "memType": "DDR5",
-    "igpu": true
+    "bench": 30
   },
   {
     "id": 10188,
@@ -4704,8 +4597,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 5.3,
     "tdp": 125,
-    "bench": 36,
-    "memType": "DDR4"
+    "bench": 36
   },
   {
     "id": 10189,
@@ -4729,8 +4621,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 5.3,
     "tdp": 125,
-    "bench": 35,
-    "memType": "DDR4"
+    "bench": 35
   },
   {
     "id": 10190,
@@ -4754,8 +4645,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 5,
     "tdp": 125,
-    "bench": 35,
-    "memType": "DDR4"
+    "bench": 35
   },
   {
     "id": 10191,
@@ -4779,8 +4669,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 5,
     "tdp": 125,
-    "bench": 34,
-    "memType": "DDR4"
+    "bench": 34
   },
   {
     "id": 10192,
@@ -4804,8 +4693,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.9,
     "tdp": 125,
-    "bench": 28,
-    "memType": "DDR4"
+    "bench": 28
   },
   {
     "id": 10193,
@@ -4829,9 +4717,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.6,
     "tdp": 65,
-    "bench": 24,
-    "memType": "DDR4",
-    "igpu": true
+    "bench": 24
   },
   {
     "id": 10194,
@@ -4855,9 +4741,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.4,
     "tdp": 65,
-    "bench": 24,
-    "memType": "DDR4",
-    "igpu": true
+    "bench": 24
   },
   {
     "id": 10195,
@@ -4881,8 +4765,7 @@ export const PARTS = [
     "threads": 20,
     "boostClock": 5.3,
     "tdp": 125,
-    "bench": 32,
-    "memType": "DDR4"
+    "bench": 32
   },
   {
     "id": 10196,
@@ -4906,9 +4789,7 @@ export const PARTS = [
     "threads": 20,
     "boostClock": 5.2,
     "tdp": 65,
-    "bench": 27,
-    "memType": "DDR4",
-    "igpu": true
+    "bench": 27
   },
   {
     "id": 10197,
@@ -4932,8 +4813,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 5.1,
     "tdp": 125,
-    "bench": 26,
-    "memType": "DDR4"
+    "bench": 26
   },
   {
     "id": 10198,
@@ -4957,8 +4837,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 5.1,
     "tdp": 125,
-    "bench": 26,
-    "memType": "DDR4"
+    "bench": 26
   },
   {
     "id": 10199,
@@ -4984,9 +4863,7 @@ export const PARTS = [
     "tdp": 65,
     "bench": 23,
     "used": true,
-    "condition": "used",
-    "memType": "DDR4",
-    "igpu": true
+    "condition": "used"
   },
   {
     "id": 10200,
@@ -5010,9 +4887,7 @@ export const PARTS = [
     "threads": 16,
     "boostClock": 4.8,
     "tdp": 65,
-    "bench": 23,
-    "memType": "DDR4",
-    "igpu": false
+    "bench": 23
   },
   {
     "id": 10201,
@@ -5036,8 +4911,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.8,
     "tdp": 125,
-    "bench": 20,
-    "memType": "DDR4"
+    "bench": 20
   },
   {
     "id": 10202,
@@ -5061,8 +4935,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.8,
     "tdp": 125,
-    "bench": 20,
-    "memType": "DDR4"
+    "bench": 20
   },
   {
     "id": 10203,
@@ -5088,9 +4961,7 @@ export const PARTS = [
     "tdp": 65,
     "bench": 18,
     "used": true,
-    "condition": "used",
-    "memType": "DDR4",
-    "igpu": true
+    "condition": "used"
   },
   {
     "id": 10204,
@@ -5114,9 +4985,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.3,
     "tdp": 65,
-    "bench": 17,
-    "memType": "DDR4",
-    "igpu": true
+    "bench": 17
   },
   {
     "id": 10205,
@@ -5140,9 +5009,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.3,
     "tdp": 65,
-    "bench": 17,
-    "memType": "DDR4",
-    "igpu": false
+    "bench": 17
   },
   {
     "id": 10206,
@@ -5166,9 +5033,7 @@ export const PARTS = [
     "threads": 8,
     "boostClock": 4.3,
     "tdp": 65,
-    "bench": 12,
-    "memType": "DDR4",
-    "igpu": true
+    "bench": 12
   },
   {
     "id": 10207,
@@ -5191,9 +5056,7 @@ export const PARTS = [
     "threads": 8,
     "boostClock": 4.4,
     "tdp": 65,
-    "bench": 12,
-    "memType": "DDR4",
-    "igpu": true
+    "bench": 12
   },
   {
     "id": 10208,
@@ -5217,9 +5080,7 @@ export const PARTS = [
     "threads": 8,
     "boostClock": 4.4,
     "tdp": 65,
-    "bench": 13,
-    "memType": "DDR4",
-    "igpu": false
+    "bench": 13
   },
   {
     "id": 10209,
@@ -5243,8 +5104,7 @@ export const PARTS = [
     "threads": 12,
     "boostClock": 4.2,
     "tdp": 65,
-    "bench": 23,
-    "igpu": true
+    "bench": 23
   },
   {
     "id": 10210,
@@ -5268,8 +5128,7 @@ export const PARTS = [
     "threads": 8,
     "boostClock": 4,
     "tdp": 65,
-    "bench": 16,
-    "igpu": false
+    "bench": 16
   },
   {
     "id": 20000,
