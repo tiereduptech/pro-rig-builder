@@ -3841,28 +3841,32 @@ const TOOL_SEO_DATA = {
 function ToolsPage({th}){
   // Read tool from URL hash on mount: #tools/fps-estimator -> "fps"
   const [tool,setToolRaw]=useState(()=>{
-    const hash=(window.location.hash||'').replace(/^#/,'');
-    const parts=hash.split('/');
+    const path=(window.location.pathname||'').replace(/^\//,'');
+    const parts=path.split('/');
     if(parts[0]==='tools'&&parts[1]&&TOOL_SLUG_TO_ID[parts[1]])return TOOL_SLUG_TO_ID[parts[1]];
+    // Fallback: also handle legacy #tools/x URLs
+    const hash=(window.location.hash||'').replace(/^#/,'');
+    const hashParts=hash.split('/');
+    if(hashParts[0]==='tools'&&hashParts[1]&&TOOL_SLUG_TO_ID[hashParts[1]])return TOOL_SLUG_TO_ID[hashParts[1]];
     return 'fps';
   });
   // Wrapper: set state and update URL hash
   const setTool=React.useCallback((id)=>{
     setToolRaw(id);
     const slug=TOOL_URL_SLUGS[id];
-    if(slug)window.history.replaceState(null,'','#tools/'+slug);
+    if(slug)window.history.replaceState(null,'','/tools/'+slug);
   },[]);
   // Listen for hash changes (e.g., browser back/forward)
   React.useEffect(()=>{
     const handler=()=>{
-      const hash=(window.location.hash||'').replace(/^#/,'');
-      const parts=hash.split('/');
+      const path=(window.location.pathname||'').replace(/^\//,'');
+      const parts=path.split('/');
       if(parts[0]==='tools'&&parts[1]&&TOOL_SLUG_TO_ID[parts[1]]){
         setToolRaw(TOOL_SLUG_TO_ID[parts[1]]);
       }
     };
-    window.addEventListener('hashchange',handler);
-    return ()=>window.removeEventListener('hashchange',handler);
+    window.addEventListener('popstate',handler);
+    return ()=>window.removeEventListener('popstate',handler);
   },[]);
   // FPS tool state
   const [selGPU,setSelGPU]=useState("");const [selCPU,setSelCPU]=useState("");const [selRes,setSelRes]=useState("1080p");const [selQual,setSelQual]=useState("Ultra");const [fpsResults,setFpsResults]=useState(null);
@@ -4430,7 +4434,18 @@ function ScrollToTop(){
 }
 
 export default function App(){
-  const [page,setPageRaw]=useState("home");const [bc,setBc]=useState("");
+  const [page,setPageRaw]=useState(()=>{
+    if(typeof window==='undefined')return"home";
+    const path=(window.location.pathname||"/").replace(/^\//,"").split("/")[0];
+    if(!path)return"home";
+    // Validate against known pages
+    const validPages=["home","search","builder","community","tools","upgrade","scanner","about","contact","privacy","terms","affiliate","compare","vs-pcpartpicker","pcpartpicker-alternative","best-pc-builder-tools"];
+    if(validPages.includes(path))return path;
+    // Also handle legacy hash routes
+    const hash=(window.location.hash||"").replace(/^#/,"").split("/")[0];
+    if(validPages.includes(hash))return hash;
+    return"home";
+  });const [bc,setBc]=useState("");
   const th = useThumbs();
   const [theme,setTheme]=useState(()=>{try{return localStorage.getItem("rf-theme")||"light";}catch{return"light";}});
   const toggleTheme=()=>{const next=theme==="dark"?"light":"dark";setTheme(next);try{localStorage.setItem("rf-theme",next);}catch{};};
@@ -4438,10 +4453,11 @@ export default function App(){
   // ── Browser history support ──
   const setPage = (p, replaceCurrent) => {
     setPageRaw(p);
+    const url = p === "home" ? "/" : "/" + p;
     if (replaceCurrent) {
-      window.history.replaceState({page:p}, "", `#${p}`);
+      window.history.replaceState({page:p}, "", url);
     } else {
-      window.history.pushState({page:p}, "", `#${p}`);
+      window.history.pushState({page:p}, "", url);
     }
   };
 
@@ -4449,6 +4465,7 @@ export default function App(){
     // Handle browser back/forward buttons
     const onPop = (e) => {
       const state = e.state;
+      const pathPage = (window.location.pathname || "/").replace(/^\//, "").split("/")[0] || "home";
       if (state && state.page) {
         setPageRaw(state.page);
         if (state.page !== "search") setBc("");
@@ -4458,16 +4475,32 @@ export default function App(){
     };
     window.addEventListener("popstate", onPop);
 
-    // Set initial state
-    const rawHash = window.location.hash.replace("#","");
-    const hash = rawHash.split("?")[0]; // strip query params for page matching
-    // Strip sub-route for matching: "tools/fps-estimator" -> "tools"
-    const baseHash = hash.split('/')[0];
-    if (baseHash && ["home","search","builder","community","tools","upgrade","scanner","about","contact","privacy","terms","affiliate","compare","vs-pcpartpicker","pcpartpicker-alternative","best-pc-builder-tools"].includes(baseHash)) {
-      setPageRaw(baseHash);
-      window.history.replaceState({page:baseHash}, "", window.location.hash);
+    // Set initial state from pathname (primary) with hash fallback for legacy URLs
+    const validPages = ["home","search","builder","community","tools","upgrade","scanner","about","contact","privacy","terms","affiliate","compare","vs-pcpartpicker","pcpartpicker-alternative","best-pc-builder-tools"];
+
+    // Try pathname first
+    const rawPath = (window.location.pathname || "/").replace(/^\//,"");
+    const pathBase = rawPath.split("?")[0].split("/")[0];
+
+    if (pathBase && validPages.includes(pathBase)) {
+      setPageRaw(pathBase);
+      window.history.replaceState({page:pathBase}, "", "/" + pathBase);
+    } else if (!pathBase) {
+      // Root path "/"
+      setPageRaw("home");
+      window.history.replaceState({page:"home"}, "", "/");
     } else {
-      window.history.replaceState({page:"home"}, "", "#home");
+      // Try legacy hash fallback (e.g. someone bookmarked /#search)
+      const rawHash = window.location.hash.replace("#","");
+      const hashBase = rawHash.split("?")[0].split("/")[0];
+      if (hashBase && validPages.includes(hashBase)) {
+        setPageRaw(hashBase);
+        // Migrate legacy hash URL to clean path URL
+        window.history.replaceState({page:hashBase}, "", "/" + hashBase);
+      } else {
+        setPageRaw("home");
+        window.history.replaceState({page:"home"}, "", "/");
+      }
     }
 
     return () => window.removeEventListener("popstate", onPop);
