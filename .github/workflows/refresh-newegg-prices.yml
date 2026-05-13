@@ -1,0 +1,42 @@
+﻿name: Refresh Newegg Prices
+
+on:
+  schedule:
+    - cron: "0 6,18 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Refresh Newegg prices
+        env:
+          RAKUTEN_CLIENT_ID: ${{ secrets.RAKUTEN_CLIENT_ID }}
+          RAKUTEN_CLIENT_SECRET: ${{ secrets.RAKUTEN_CLIENT_SECRET }}
+          RAKUTEN_SID: ${{ secrets.RAKUTEN_SID }}
+          RAKUTEN_NEWEGG_MID: ${{ secrets.RAKUTEN_NEWEGG_MID }}
+        run: node refresh-newegg-prices.cjs
+
+      - name: Commit and push if changed
+        run: |
+          if [ -f newegg-refresh-summary.json ]; then
+            UPDATED=$(node -e "console.log(require('./newegg-refresh-summary.json').updated)")
+            REMOVED=$(node -e "console.log(require('./newegg-refresh-summary.json').removed)")
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add src/data/parts.js
+            if git diff --cached --quiet; then
+              echo "No changes"
+            else
+              git commit -m "chore(newegg): refresh prices — $UPDATED updated, $REMOVED removed"
+              git push
+            fi
+            rm -f newegg-refresh-summary.json
+          fi
