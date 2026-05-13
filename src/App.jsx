@@ -200,15 +200,20 @@ const fmtPrice = n => { if (n == null) return '0'; const r = Math.round(n * 100)
 const retailers = p => {
   if (!p.deals || typeof p.deals !== "object") return [];
   return Object.entries(p.deals)
-    .filter(([k,v]) => typeof v === "object" && v.price)
-    .map(([name, info]) => ({ name, price: info.price, url: info.url, inStock: info.inStock !== false }))
+    .filter(([k,v]) => typeof v === "object" && v && (v.price || v.saleprice))
+    .map(([name, info]) => {
+      const url = info.url || info.linkurl;
+      const rawPrice = info.saleprice && Number(info.saleprice) > 0 ? Number(info.saleprice) : Number(info.price);
+      return { name, price: rawPrice, url, inStock: info.inStock !== false };
+    })
+    .filter(r => r.url && r.price > 0)
     .sort((a,b) => a.price - b.price);
 };
 
 // ── Global list of retailers tracked anywhere in the dataset — for N/A display on missing retailers ──
 const ALL_RETAILERS = [...new Set(SEED_PARTS.flatMap(p =>
   p.deals && typeof p.deals === "object"
-    ? Object.keys(p.deals).filter(k => p.deals[k] && typeof p.deals[k] === "object" && p.deals[k].price)
+    ? Object.keys(p.deals).filter(k => p.deals[k] && typeof p.deals[k] === "object" && (p.deals[k].price || p.deals[k].saleprice))
     : []
 ))].sort();
 

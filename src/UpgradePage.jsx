@@ -231,9 +231,20 @@ function bestPrice(p) {
   return Number(p?.pr) || 0;
 }
 function retailerUrl(p) {
-  if (p?.deals?.amazon?.url) return { url: p.deals.amazon.url, name: "Amazon" };
-  if (p?.deals?.bestbuy?.url) return { url: p.deals.bestbuy.url, name: "Best Buy" };
-  return null;
+  if (!p?.deals || typeof p.deals !== 'object') return null;
+  const labels = { amazon: 'Amazon', bestbuy: 'Best Buy', newegg: 'Newegg', bhphoto: 'B&H', antonline: 'Antonline' };
+  const candidates = Object.entries(p.deals)
+    .filter(([k,v]) => v && typeof v === 'object' && (v.url || v.linkurl) && (v.price || v.saleprice))
+    .map(([k,v]) => {
+      const url = v.url || v.linkurl;
+      const price = v.saleprice && Number(v.saleprice) > 0 ? Number(v.saleprice) : Number(v.price);
+      const inStock = v.inStock !== false;
+      return { url, price, inStock, name: labels[k] || (k.charAt(0).toUpperCase() + k.slice(1)) };
+    })
+    .filter(r => r.url && r.price > 0);
+  if (!candidates.length) return null;
+  candidates.sort((a,b) => (b.inStock - a.inStock) || (a.price - b.price));
+  return { url: candidates[0].url, name: candidates[0].name };
 }
 
 // ─── PLATFORM REFRESH ───────────────────────────────────────────────
