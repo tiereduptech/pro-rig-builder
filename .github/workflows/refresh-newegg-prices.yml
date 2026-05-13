@@ -1,4 +1,4 @@
-﻿name: Refresh Newegg Prices
+name: Refresh Newegg Prices
 
 on:
   schedule:
