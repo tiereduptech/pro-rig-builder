@@ -72,3 +72,5 @@ patch-*.mjs
 
 dist/downloads/
 *.exe
+
+src/data/parts.js.bak.*
