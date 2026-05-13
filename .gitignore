@@ -74,5 +74,3 @@ dist/downloads/
 *.exe
 
 src/data/parts.js.bak.*
-
-dist/
