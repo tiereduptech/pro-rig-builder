@@ -42,7 +42,7 @@ export default defineConfig({
     // Bumped because parts.js (catalog data) is large by nature; warning
     // pollutes the build output without indicating a real problem now that
     // we've split it into its own chunk.
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 4000,
 
     rollupOptions: {
       output: {
