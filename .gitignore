@@ -18,3 +18,27 @@ dist/downloads/
 *.backup-*
 
 node_modules/
+
+# Working files / exploratory scripts
+analyze-feed.cjs
+filter-*.cjs
+audit-*.mjs
+brand-check.cjs
+add-1x24gb-ram.cjs
+raw-1x24gb-results.json
+candidates-1x24gb-ram.json
+newegg-1x24gb-candidates.json
+dedupe-report.json
+src/data/parts.js.pre-*
+
+# Working files / exploratory scripts
+analyze-feed.cjs
+filter-*.cjs
+audit-*.mjs
+brand-check.cjs
+add-1x24gb-ram.cjs
+raw-1x24gb-results.json
+candidates-1x24gb-ram.json
+newegg-1x24gb-candidates.json
+dedupe-report.json
+src/data/parts.js.pre-*
