@@ -42,3 +42,5 @@ candidates-1x24gb-ram.json
 newegg-1x24gb-candidates.json
 dedupe-report.json
 src/data/parts.js.pre-*
+
+phase2-report.json

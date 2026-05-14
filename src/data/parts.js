@@ -1440,17 +1440,30 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA24GKE74703",
+        "sku": "4458311386314770427817448",
         "price": 249.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311386314770427817448&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-ultra-7-265kf-arrow-lake-lga-1851-desktop-cpu-processor%2Fp%2FN82E16819118507%3Fitem%3D9SIA24GKE74703",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-507-07.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "445831605705533023021312",
+        "price": 399.99,
+        "saleprice": 265.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831605705533023021312&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-ultra-7-265kf-core-ultra-7-series-2-arrow-lake-lga-1851-desktop-cpu-processor%2Fp%2FN82E16819118507R%3Fitem%3DN82E16819118507R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-507-07.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858550444",
+    "mpn": "BX80768265KF"
   },
   {
     "id": 10049,
@@ -1482,17 +1495,19 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA24GKE74704",
+        "sku": "4458311709052926902832367",
         "price": 159.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311709052926902832367&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-ultra-5-245kf-arrow-lake-lga-1851-desktop-cpu-processor%2Fp%2FN82E16819118509%3Fitem%3D9SIA24GKE74704",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-509-07.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858550567",
+    "mpn": "BX80768245KF"
   },
   {
     "id": 10051,
@@ -1524,17 +1539,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA0ZXKFG2595",
-        "price": 583.98,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836965665759451298903&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-14th-gen-core-i9-14900kf-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118465%3Fitem%3D9SIA0ZXKFG2595",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD24030511GI4E8A.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "4458314297900293541956468",
+        "price": 579.99,
+        "saleprice": 454.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314297900293541956468&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-14th-gen-core-i9-14900kf-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118464%3Fitem%3DN82E16819118464",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-464-03.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858546980",
+    "mpn": "BX8071514900KF"
   },
   {
     "id": 10052,
@@ -1609,17 +1627,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16819118485",
+        "sku": "44583995176247738451799",
         "price": 589.99,
         "saleprice": 560.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583995176247738451799&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-14th-gen-core-i9-14900f-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118485%3Fitem%3DN82E16819118485",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2510200HJH7672.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858547642",
+    "mpn": "BX8071514900F"
   },
   {
     "id": 10055,
@@ -1651,17 +1672,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16819118468",
+        "sku": "445835340455645052430625",
         "price": 419.99,
         "saleprice": 359.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835340455645052430625&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i7-14th-gen-core-i7-14700kf-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118468%3Fitem%3DN82E16819118468",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-468-03.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858546942",
+    "mpn": "BX8071514700KF"
   },
   {
     "id": 10056,
@@ -1736,17 +1760,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16819118487",
+        "sku": "4458317963633859641468684",
         "price": 369.99,
-        "saleprice": 329.97,
+        "saleprice": 329.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317963633859641468684&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i7-14th-gen-core-i7-14700f-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118487%3Fitem%3DN82E16819118487",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-487-01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858547680",
+    "mpn": "BX8071514700F"
   },
   {
     "id": 10059,
@@ -1778,17 +1805,19 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16819118472",
-        "price": 304.99,
-        "saleprice": 258.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832148732492245009425&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-14th-gen-core-i5-14600kf-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118472%3Fitem%3DN82E16819118472",
+        "sku": "4458315114191132598191933",
+        "price": 256.43,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315114191132598191933&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-14th-gen-core-i5-14600kf-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118472%3Fitem%3D9SIC3U3KNX5714",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-472-03.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858546904",
+    "mpn": "BX8071514600KF"
   },
   {
     "id": 10060,
@@ -1949,17 +1978,19 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA24GK8H6113",
+        "sku": "445833851001689667941599",
         "price": 187.02,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833851001689667941599&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-14th-gen-core-i5-14400f-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118489%3Fitem%3D9SIA24GK8H6113",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-489-01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858547581",
+    "mpn": "BX8071514400F"
   },
   {
     "id": 10064,
@@ -2034,17 +2065,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBDKWKWF9918",
-        "price": 150,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315965032160757151385&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000A-01PA1%3Fitem%3D9SIBDKWKWF9918",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BDKWS2605121BLDTZ43.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "445837303804476050315101",
+        "price": 119.99,
+        "saleprice": 99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837303804476050315101&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i3-14th-gen-core-i3-14100f-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118492%3Fitem%3DN82E16819118492",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-492-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858547536",
+    "mpn": "BX8071514100F"
   },
   {
     "id": 10066,
@@ -2078,16 +2112,18 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC5VSKUH7737",
+        "sku": "445837197435193261312902",
         "price": 465.22,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837197435193261312902&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-13th-gen-core-i9-13900k-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118412%3Fitem%3D9SIC5VSKUH7737",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-412-V01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
-    }
+    },
+    "upc": "00735858526616",
+    "mpn": "BX8071513900K"
   },
   {
     "id": 10067,
@@ -2119,17 +2155,18 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC5VSKUH7838",
-        "price": 427.06,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839191091212126267211&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-13th-gen-core-i9-13900kf-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118413%3Fitem%3D9SIC5VSKUH7838",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-413-V07.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "4458318021377563951812903",
+        "price": 343.87,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318021377563951812903&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-13th-gen-core-i9-13900kf-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118419%3Fitem%3D9SIC5YTKW75496",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVS2303090IK91D94.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "mpn": "CM8071505094012"
   },
   {
     "id": 10068,
@@ -2163,16 +2200,18 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC5VSKUH7615",
-        "price": 422.65,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583125899670017238028&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i7-13th-gen-core-i7-13700k-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118414%3Fitem%3D9SIC5VSKUH7615",
+        "sku": "4458317562547058158860536",
+        "price": 448.67,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317562547058158860536&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i7-13th-gen-core-i7-13700k-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118414%3Fitem%3D9SIBZW0KFP0229",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-414-V01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
-    }
+    },
+    "upc": "00735858526678",
+    "mpn": "BX8071513700K"
   },
   {
     "id": 10069,
@@ -2202,9 +2241,21 @@ export const PARTS = [
         "price": 249.99,
         "url": "https://www.amazon.com/dp/B0BCDL7F5W?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458316230999451848620434",
+        "price": 389.87,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316230999451848620434&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i7-13th-gen-core-i7-13700kf-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118415%3Fitem%3D9SIC5YTKW74795",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-415-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858526685",
+    "mpn": "BX8071513700KF"
   },
   {
     "id": 10070,
@@ -2236,8 +2287,20 @@ export const PARTS = [
         "price": 319,
         "url": "https://www.amazon.com/dp/B0BCDR9M33?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445834877766318714698666",
+        "price": 259.83,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834877766318714698666&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-13th-gen-core-i5-13600k-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118416%3Fitem%3D9SIBZW0KFP0222",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-416-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
-    }
+    },
+    "upc": "00735858526715",
+    "mpn": "BX8071513600K"
   },
   {
     "id": 10071,
@@ -2269,17 +2332,19 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC5YTKW74252",
-        "price": 278.87,
-        "saleprice": null,
+        "sku": "4458314934413006133277476",
+        "price": 258.87,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314934413006133277476&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-13th-gen-core-i5-13600kf-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118417%3Fitem%3D9SIC5YTKW74252",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-417-V01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858526739",
+    "mpn": "BX8071513600KF"
   },
   {
     "id": 10072,
@@ -2397,17 +2462,19 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC5YTKW74245",
+        "sku": "4458312092852743060087598",
         "price": 187.87,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312092852743060087598&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-13th-gen-core-i5-13400f-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118431%3Fitem%3D9SIC5YTKW74245",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-431-04.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858528337",
+    "mpn": "BX8071513400F"
   },
   {
     "id": 10075,
@@ -2482,17 +2549,19 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3U3KRP5613",
+        "sku": "4458316915679870832914013",
         "price": 109.59,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316915679870832914013&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i3-13th-gen-core-i3-13100f-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118433%3Fitem%3D9SIC3U3KRP5613",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-433-02.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858528375",
+    "mpn": "BX8071513100F"
   },
   {
     "id": 10077,
@@ -2526,16 +2595,19 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16819118339",
+        "sku": "4458315101913868009020547",
         "price": 649.99,
         "saleprice": 389.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315101913868009020547&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-12th-gen-core-i9-12900k-alder-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118339%3Fitem%3DN82E16819118339",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-339-08.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
-    }
+    },
+    "upc": "00735858499613",
+    "mpn": "BX8071512900K"
   },
   {
     "id": 10078,
@@ -2567,17 +2639,19 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16819118341",
-        "price": 409.99,
-        "saleprice": 384.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831906010534467823939&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-12th-gen-core-i9-12900kf-alder-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118341%3Fitem%3DN82E16819118341",
+        "sku": "4458313842534434405926973",
+        "price": 365,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313842534434405926973&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-12th-gen-core-i9-12900kf-alder-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118341%3Fitem%3D9SIA12KKGU2106",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-341-06.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858499163",
+    "mpn": "BX8071512900KF"
   },
   {
     "id": 10079,
@@ -2611,16 +2685,18 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA12KKT69561",
+        "sku": "445838780030230781786091",
         "price": 389,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838780030230781786091&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2MN-0004-00889%3Fitem%3D9SIA12KKT69561",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD2201300WJ2BG61.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
-    }
+    },
+    "upc": "00735858989633",
+    "mpn": "BX8071512700K-0"
   },
   {
     "id": 10080,
@@ -2652,17 +2728,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16819118345",
+        "sku": "445837035539608277628784",
         "price": 429.99,
         "saleprice": 263.48,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837035539608277628784&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i7-12th-gen-core-i7-12700kf-alder-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118345%3Fitem%3DN82E16819118345",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-345-05.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858498982",
+    "mpn": "BX8071512700KF"
   },
   {
     "id": 10082,
@@ -2694,17 +2773,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16819118349",
+        "sku": "4458317136765521195554085",
         "price": 299.99,
-        "saleprice": 169.99,
+        "saleprice": 169.97,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317136765521195554085&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-12th-gen-core-i5-12600kf-alder-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118349%3Fitem%3DN82E16819118349",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-349-05.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858499057",
+    "mpn": "BX8071512600KF"
   },
   {
     "id": 10083,
@@ -2779,17 +2861,19 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3U3KP03145",
+        "sku": "445831150460650380313266",
         "price": 159.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831150460650380313266&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-12th-gen-core-i5-12400f-alder-lake-lga-1700-processors-desktops%2Fp%2F274-000A-01P19%3Fitem%3D9SIC3U3KP03145",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2407180KHUSF3E.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858502993",
+    "mpn": "BXC8071512400F"
   },
   {
     "id": 10085,
@@ -2864,17 +2948,19 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3U3KNW4679",
+        "sku": "4458317639787021920784603",
         "price": 89.98,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317639787021920784603&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i3-12th-gen-core-i3-12100f-alder-lake-lga-1700-processors-desktops%2Fp%2F274-000A-01P20%3Fitem%3D9SIC3U3KNW4679",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2407180LK97Y3E.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
-    "igpu": false
+    "igpu": false,
+    "upc": "00735858503891",
+    "mpn": "BXC8071512100F"
   },
   {
     "id": 10121,
@@ -5383,13 +5469,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA12KKGU2375",
-        "price": 668.85,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314258946255960876345&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-13th-gen-core-i9-13900-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118425%3Fitem%3D9SIA12KKGU2375",
+        "sku": "4458317972057753287925227",
+        "price": 664.87,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317972057753287925227&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-13th-gen-core-i9-13900-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118425%3Fitem%3D9SIC5YTKW75591",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2510200HG18T48.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -5401,7 +5487,9 @@ export const PARTS = [
     "bench": 64,
     "baseClock": 2000,
     "memType": "DDR5",
-    "igpu": true
+    "igpu": true,
+    "upc": "00735858528214",
+    "mpn": "BX8071513900"
   },
   {
     "id": 10184,
@@ -5705,13 +5793,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3XNKRK3306",
+        "sku": "4458316657574510123196206",
         "price": 357.29,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316657574510123196206&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2MN-0004-00850%3Fitem%3D9SIC3XNKRK3306",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD22013008UMB86E.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -5721,7 +5809,9 @@ export const PARTS = [
     "boostClock": 5.3,
     "tdp": 125,
     "bench": 32,
-    "memType": "DDR4"
+    "memType": "DDR4",
+    "upc": "00735858989879",
+    "mpn": "735858989879"
   },
   {
     "id": 10196,
@@ -5870,13 +5960,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3U3KPK3026",
+        "sku": "4458314709323003410962571",
         "price": 145,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314709323003410962571&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000A-01N71%3Fitem%3D9SIC3U3KPK3026",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVD2203210IOGO409.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -5886,7 +5976,9 @@ export const PARTS = [
     "boostClock": 4.8,
     "tdp": 125,
     "bench": 20,
-    "memType": "DDR4"
+    "memType": "DDR4",
+    "upc": "00735858999960",
+    "mpn": "B-Intel Core i5-10600K SANPIAN"
   },
   {
     "id": 10202,
@@ -6168,10 +6260,23 @@ export const PARTS = [
         "price": 580,
         "url": "https://www.amazon.com/dp/B0DDZSP2BG?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458315391271189990839059",
+        "price": 599.99,
+        "saleprice": 563.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315391271189990839059&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-crosshair-x870e-hero-atx-motherboard-amd-x870e-am5%2Fp%2FN82E16813119681%3Fitem%3DN82E16813119681",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-681-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "value": 0,
-    "bench": 100
+    "bench": 100,
+    "upc": "00197105710306",
+    "mpn": "ROG CROSSHAIR X870E HERO"
   },
   {
     "id": 20001,
@@ -6201,10 +6306,34 @@ export const PARTS = [
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B0DDZNZF76?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445831510368650970144944",
+        "price": 399.99,
+        "saleprice": 339.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831510368650970144944&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-x870e-h-gaming-wifi7-atx-motherboard-amd-x870e-am5%2Fp%2FN82E16813119755%3Fitem%3DN82E16813119755",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-755-02.png",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "4458311708793403285836298",
+        "price": 399.99,
+        "saleprice": 220.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311708793403285836298&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-x870e-h-gaming-wifi7-atx-motherboard-amd-x870e-am5%2Fp%2FN82E16813119755R%3Fitem%3DN82E16813119755R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-755-02.png",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "value": 9,
-    "bench": 100
+    "bench": 100,
+    "upc": "00199291167209",
+    "mpn": "ROG STRIX X870E-H GAMING WIFI7"
   },
   {
     "id": 20002,
@@ -6300,10 +6429,22 @@ export const PARTS = [
         "price": 739.99,
         "url": "https://www.amazon.com/dp/B0FFSZ71T6?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445833856259919632890740",
+        "price": 384.16,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833856259919632890740&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-x870e-aorus-master-atx-motherboard-amd-x870e-am5%2Fp%2FN82E16813145514%3Fitem%3D9SIA0ZXKC69726",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-514-06.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "value": 17,
-    "bench": 100
+    "bench": 100,
+    "upc": "00889523044803",
+    "mpn": "X870E AORUS MASTER"
   },
   {
     "id": 20005,
@@ -6335,18 +6476,21 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16813145486",
-        "price": 244.99,
-        "saleprice": 240.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312789029024268214193&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b650-aorus-elite-ax-ice-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813145486%3Fitem%3DN82E16813145486",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-486-01.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "445834417478617563890695",
+        "price": 219.99,
+        "saleprice": 139.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834417478617563890695&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b650m-aorus-elite-ax-micro-atx-motherboards-amd-amd-b650-am5%2Fp%2FN82E16813145413%3Fitem%3DN82E16813145413",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-413-06.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 17,
-    "bench": 92
+    "bench": 92,
+    "upc": "00889523033784",
+    "mpn": "B650M AORUS ELITE AX"
   },
   {
     "id": 20006,
@@ -6444,18 +6588,31 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC5MUKUT5819",
-        "price": 298.15,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839935637055736220665&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-amd-am5%2Fp%2F2MG-000B-007F1%3Fitem%3D9SIC5MUKUT5819",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2506190EP0MB40.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "445839535655117253857696",
+        "price": 199.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839535655117253857696&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-amd-am5%2Fp%2F2MG-000B-007F2%3Fitem%3D9SIA4REKV54423",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2506190FFKCM74.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "4458317373425715565760486",
+        "price": 199.99,
+        "saleprice": 135.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317373425715565760486&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-b650e-plus-wifi-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813119739R%3Fitem%3DN82E16813119739R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-739-11.png",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 67,
-    "bench": 87
+    "bench": 87,
+    "upc": "00192876911433",
+    "mpn": "TUF GAMING B650EM-PLUS WIFI"
   },
   {
     "id": 20009,
@@ -6487,18 +6644,21 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16813144560",
+        "sku": "445837225985250820259458",
         "price": 199.99,
         "saleprice": 119.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837225985250820259458&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-b650-p-wifi-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813144560%3Fitem%3DN82E16813144560",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-560-08.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 76,
-    "bench": 88
+    "bench": 88,
+    "upc": "00824142301050",
+    "mpn": "PRO B650-P WIFI"
   },
   {
     "id": 20010,
@@ -6573,18 +6733,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA0ZXKS84338",
+        "sku": "445834579438501231308637",
         "price": 153.19,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834579438501231308637&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-a620m-hdv-m-2-micro-atx-motherboard-amd-a620-am5%2Fp%2FN82E16813162115%3Fitem%3D9SIA0ZXKS84338",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-115-01.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 93,
-    "bench": 52
+    "bench": 52,
+    "upc": "04710483943041",
+    "mpn": "A620M-HDV/M.2"
   },
   {
     "id": 20012,
@@ -6616,18 +6778,21 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16813119500",
+        "sku": "445834001612192630165958",
         "price": 179.99,
         "saleprice": 139.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834001612192630165958&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-b550-f-gaming-wifi-ii-atx-amd-motherboard-amd-b550-am4%2Fp%2FN82E16813119500%3Fitem%3DN82E16813119500",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-500-01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 61,
-    "bench": 80
+    "bench": 80,
+    "upc": "00195553453318",
+    "mpn": "ROG STRIX B550-F GAMING WIFI II"
   },
   {
     "id": 20013,
@@ -6659,18 +6824,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC610KUJ2962",
+        "sku": "445835379454038034158253",
         "price": 205.49,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835379454038034158253&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-b550-tomahawk-atx-amd-motherboard-amd-b550-am4%2Fp%2FN82E16813144326%3Fitem%3D9SIC610KUJ2962",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-326-V01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 51,
-    "bench": 76
+    "bench": 76,
+    "upc": "00824142217627",
+    "mpn": "MAG B550 TOMAHAWK"
   },
   {
     "id": 20014,
@@ -6766,10 +6933,22 @@ export const PARTS = [
         "price": 65,
         "url": "https://www.amazon.com/dp/B08L598DYN?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458310705646183974431144",
+        "price": 771.79,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310705646183974431144&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-b450-tomahawk-max-ii-atx-amd-motherboard-amd-b450-am4%2Fp%2FN82E16813144267%3Fitem%3D9SIC3DRKN40431",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-267-V08.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "value": 74,
-    "bench": 60
+    "bench": 60,
+    "upc": "00824142191699",
+    "mpn": "B450 TOMAHAWK MAX II"
   },
   {
     "id": 20017,
@@ -6844,18 +7023,21 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16813144673",
+        "sku": "445833898142454558476006",
         "price": 659.99,
         "saleprice": 459.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833898142454558476006&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-meg-z890-ace-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813144673%3Fitem%3DN82E16813144673",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-673-27.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 0,
-    "bench": 100
+    "bench": 100,
+    "upc": "00824142383780",
+    "mpn": "MEG Z890 ACE"
   },
   {
     "id": 20019,
@@ -6887,18 +7069,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16813144669",
-        "price": 329.99,
-        "saleprice": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837049315549479513046&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-z890-tomahawk-wifi-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813144669%3Fitem%3DN82E16813144669",
+        "sku": "445834104022629504866881",
+        "price": 249,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834104022629504866881&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-z890-tomahawk-wifi-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813144669%3Fitem%3D9SIBYT0KW20179",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-669-06.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 27,
-    "bench": 100
+    "bench": 100,
+    "upc": "00824142382226",
+    "mpn": "MAG Z890 TOMAHAWK WIFI"
   },
   {
     "id": 20020,
@@ -7059,18 +7243,21 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16813144567",
+        "sku": "445836358346145729798021",
         "price": 229.99,
         "saleprice": 199.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836358346145729798021&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-z790-tomahawk-wifi-atx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813144567%3Fitem%3DN82E16813144567",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-567-17.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 37,
-    "bench": 100
+    "bench": 100,
+    "upc": "00824142305690",
+    "mpn": "MAG Z790 TOMAHAWK WIFI"
   },
   {
     "id": 20024,
@@ -7102,18 +7289,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16813145417",
-        "price": 239.99,
-        "saleprice": 189.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835088727697317222964&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z790-aorus-elite-ax-atx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813145417%3Fitem%3DN82E16813145417",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-417-01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "4458316256409138250141066",
+        "price": 358,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316256409138250141066&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z790-aorus-elite-ax-ddr4-atx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813145419%3Fitem%3D9SIC5YTKU99190",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-419-07.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 40,
-    "bench": 100
+    "bench": 100,
+    "upc": "00889523034101",
+    "mpn": "Z790 AORUS ELITE AX DDR4"
   },
   {
     "id": 20025,
@@ -7145,18 +7334,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3XNKRZ6732",
+        "sku": "44583545528634045440298",
         "price": 256.78,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583545528634045440298&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-90mb1dg0-m0eay0-motherboards-amd%2Fp%2F2MG-000B-00654%3Fitem%3D9SIC3XNKRZ6732",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD240401140G3Z07.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 93,
-    "bench": 76
+    "bench": 76,
+    "upc": "04711387004456",
+    "mpn": "90MB1DG0-M0EAY0"
   },
   {
     "id": 20026,
@@ -7188,18 +7379,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC5MUKTF6696",
-        "price": 143.52,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316811279418341697272&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1JW-001M-00JZ3%3Fitem%3D9SIC5MUKTF6696",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BMM4S2509280V3ZIB88.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "445832936184875874265197",
+        "price": 239.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832936184875874265197&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-b760m-a-wifi-ddr4-micro-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813144584%3Fitem%3D9SIBP4YKVW2020",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-584-05.png",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 47,
-    "bench": 77
+    "bench": 77,
+    "upc": "00824142305973",
+    "mpn": "PRO B760M-A WIFI DDR4"
   },
   {
     "id": 20027,
@@ -7340,18 +7533,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3DRKN64011",
-        "price": 203.62,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831049243939053075282&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b650m-ds3h-micro-atx-motherboards-amd-amd-b650-am5%2Fp%2FN82E16813145414%3Fitem%3D9SIC3DRKN64011",
+        "sku": "445835704013675960899155",
+        "price": 179.93,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835704013675960899155&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b650m-ds3h-micro-atx-motherboards-amd-amd-b650-am5%2Fp%2FN82E16813145414%3Fitem%3D9SIC5MUKUV0314",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-414-01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 83,
-    "bench": 67
+    "bench": 67,
+    "upc": "00889523034231",
+    "mpn": "B650M DS3H"
   },
   {
     "id": 20034,
@@ -7383,18 +7578,21 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16813144736",
+        "sku": "4458340775363195596992",
         "price": 221.99,
         "saleprice": 218.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458340775363195596992&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16813144736%3Fitem%3DN82E16813144736",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-736-06.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 34,
-    "bench": 100
+    "bench": 100,
+    "upc": "00824142447574",
+    "mpn": "MAG B850 TOMAHAWK WIFI"
   },
   {
     "id": 20035,
@@ -7426,18 +7624,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA36ZKPZ2236",
+        "sku": "445831775274261351172168",
         "price": 199.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831775274261351172168&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-b850-plus-wifi-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813119705%3Fitem%3D9SIA36ZKPZ2236",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-705-02.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 42,
-    "bench": 100
+    "bench": 100,
+    "upc": "00197105781603",
+    "mpn": "TUF GAMING B850-PLUS WIFI"
   },
   {
     "id": 20036,
@@ -7469,18 +7669,21 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16813145545",
+        "sku": "445831766867961009617944",
         "price": 254.99,
         "saleprice": 209.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831766867961009617944&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b850-aorus-elite-wifi7-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813145545%3Fitem%3DN82E16813145545",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-545-05.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 17,
-    "bench": 100
+    "bench": 100,
+    "upc": "00889523046067",
+    "mpn": "B850 AORUS ELITE WF7"
   },
   {
     "id": 20037,
@@ -7512,18 +7715,21 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16813162196",
+        "sku": "4458314944498871885550067",
         "price": 159.99,
         "saleprice": 139.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314944498871885550067&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850m-pro-rs-wifi-micro-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813162196%3Fitem%3DN82E16813162196",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-196-11.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 61,
-    "bench": 94
+    "bench": 94,
+    "upc": "04711581490352",
+    "mpn": "B850M Pro RS WiFi"
   },
   {
     "id": 20038,
@@ -7555,18 +7761,32 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBYT0KG45592",
-        "price": 287,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838003252368209789674&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-z890-a-wifi-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813144670%3Fitem%3D9SIBYT0KG45592",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-670-09.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "4458313352062645706700942",
+        "price": 239.99,
+        "saleprice": 199.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313352062645706700942&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-z890-s-wifi-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813144675%3Fitem%3DN82E16813144675",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-675-05.png",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "445836975818745100032353",
+        "price": 239.99,
+        "saleprice": 137.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836975818745100032353&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-z890-p-wifi-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813144672R%3Fitem%3DN82E16813144672R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-672-17.png",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 41,
-    "bench": 100
+    "bench": 100,
+    "upc": "00824142386569",
+    "mpn": "Z890-S WIFI"
   },
   {
     "id": 20039,
@@ -7641,18 +7861,32 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16813162169R",
+        "sku": "445832943743190993841875",
+        "price": 459.99,
+        "saleprice": 329.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832943743190993841875&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-z890-taichi-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813162169%3Fitem%3DN82E16813162169",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-169-05.png",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "445838821075494084114819",
         "price": 459.99,
         "saleprice": 197.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838821075494084114819&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-z890-taichi-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813162169R%3Fitem%3DN82E16813162169R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-169-05.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 9,
-    "bench": 100
+    "bench": 100,
+    "upc": "04710483949685",
+    "mpn": "Z890 Taichi"
   },
   {
     "id": 20041,
@@ -7805,18 +8039,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3DRKPT0406",
-        "price": 453.63,
-        "saleprice": null,
+        "sku": "445833819970525827802089",
+        "price": 452.25,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833819970525827802089&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-x570-e-gaming-wifi-ii-atx-amd-motherboard-amd-x570-am4%2Fp%2FN82E16813119499%3Fitem%3D9SIC3DRKPT0406",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-499-01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 61,
-    "bench": 90
+    "bench": 90,
+    "upc": "00195553453448",
+    "mpn": "STRIX X570-E GAM W 2"
   },
   {
     "id": 20045,
@@ -7846,10 +8082,23 @@ export const PARTS = [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0BTTZFQTP?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458312170488900196681498",
+        "price": 99.99,
+        "saleprice": 88.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312170488900196681498&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b550m-k-micro-atx-motherboard-amd-b550-am4%2Fp%2FN82E16813145434%3Fitem%3DN82E16813145434",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-434-05.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "value": 100,
-    "bench": 54
+    "bench": 54,
+    "upc": "00889523036006",
+    "mpn": "B550M K"
   },
   {
     "id": 20046,
@@ -7881,18 +8130,21 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16813157936",
+        "sku": "4458310534438189077999261",
         "price": 124.99,
         "saleprice": 79.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310534438189077999261&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b550-phantom-gaming-4-ac-atx-amd-motherboard-amd-b550-am4%2Fp%2FN82E16813157936%3Fitem%3DN82E16813157936",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-157-936-V03.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 100,
-    "bench": 68
+    "bench": 68,
+    "upc": "04710483931512",
+    "mpn": "B550 PHAN GAM 4 AC"
   },
   {
     "id": 20047,
@@ -7924,18 +8176,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16813144325",
+        "sku": "4458317292796362840263125",
         "price": 139.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317292796362840263125&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-b550-gaming-plus-atx-amd-motherboard-amd-b550-am4%2Fp%2FN82E16813144325%3Fitem%3DN82E16813144325",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-325-V01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 74,
-    "bench": 72
+    "bench": 72,
+    "upc": "00824142218600",
+    "mpn": "MPG B550 GAMING PLUS"
   },
   {
     "id": 20048,
@@ -8053,18 +8307,20 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC5MUKTF6682",
-        "price": 394.51,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314300076265687222726&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-z790-i-gaming-wifi-mini-itx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813119609%3Fitem%3D9SIC5MUKTF6682",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-609-01.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "445837364863510207813923",
+        "price": 362.45,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837364863510207813923&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-90mb1e10-m0eay0-motherboards-amd%2Fp%2F2MG-000B-006C5%3Fitem%3D9SIC5MUKTF6773",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD2405290X60Y2C1.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "value": 23,
-    "bench": 91
+    "bench": 91,
+    "upc": "04711387038192",
+    "mpn": "90MB1E10-M0EAY0"
   },
   {
     "id": 20051,
@@ -14790,6 +15046,16 @@ export const PARTS = [
         "price": 289.99,
         "url": "https://www.amazon.com/dp/B0BMM7NZDX?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458310479299357097885856",
+        "price": 579.41,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310479299357097885856&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-b760-tomahawk-wifi-ddr4-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813144583%3Fitem%3D9SIC5MUKTW3840",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-583-04.png",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "discount": 9,
@@ -14808,7 +15074,8 @@ export const PARTS = [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 40,
-    "bench": 78
+    "bench": 78,
+    "upc": "00824142305980"
   },
   {
     "id": 20197,
@@ -19697,13 +19964,14 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA4YUGZS2296",
-        "price": 141.41,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314890220124745965974&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HD-0015-00G63%3Fitem%3D9SIA4YUGZS2296",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4YUD2202100FWAL611.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "4458310170570450570401092",
+        "price": 119.99,
+        "saleprice": 116.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310170570450570401092&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-h610m-a-d4-csm-micro-atx-intel-motherboard-intel-h610-lga-1700-dedicated-lga1700-mounting-bracket-is-required%2Fp%2FN82E16813119544%3Fitem%3DN82E16813119544",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-544-V06.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -19722,7 +19990,8 @@ export const PARTS = [
     "ff": "mATX",
     "wifi": "None",
     "value": 94,
-    "bench": 43
+    "bench": 43,
+    "upc": "00195553514446"
   },
   {
     "id": 20313,
@@ -25670,6 +25939,17 @@ export const PARTS = [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0DXSX1GXK?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458313252404488844918058",
+        "price": 149.99,
+        "saleprice": 136.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313252404488844918058&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-b760m-a-ax-micro-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813119640%3Fitem%3DN82E16813119640",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-640-02.png",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "socket": "LGA1700",
@@ -25682,7 +25962,9 @@ export const PARTS = [
     "ff": "Micro ATX",
     "used": true,
     "condition": "used",
-    "bench": 68
+    "bench": 68,
+    "upc": "00197105079007",
+    "mpn": "PRIME B760M-A AX"
   },
   {
     "id": 20461,
@@ -25996,6 +26278,16 @@ export const PARTS = [
         "price": 99.99,
         "url": "https://www.amazon.com/dp/B0DK7XP67K?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445835125406598532254578",
+        "price": 159.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835125406598532254578&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b650-gaming-x-ax-v2-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813145492%3Fitem%3D9SIAG5BKTM2095",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-492-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "socket": "AM5",
@@ -26008,7 +26300,9 @@ export const PARTS = [
     "ff": "ATX",
     "used": true,
     "condition": "used",
-    "bench": 73
+    "bench": 73,
+    "upc": "00889523041376",
+    "mpn": "B650 GAMING X AX V2"
   },
   {
     "id": 20502,
@@ -26026,13 +26320,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16813145512",
+        "sku": "4458312784492911107159715",
         "price": 159.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312784492911107159715&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b650m-c-v3-micro-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813145512%3Fitem%3DN82E16813145512",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-512-01.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -26046,7 +26340,9 @@ export const PARTS = [
     "ff": "Micro ATX",
     "used": true,
     "condition": "used",
-    "bench": 71
+    "bench": 71,
+    "upc": "00889523044193",
+    "mpn": "B650M C V3-Y1"
   },
   {
     "id": 20505,
@@ -26128,6 +26424,17 @@ export const PARTS = [
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B0GJCTWDDL?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458310718685370055761069",
+        "price": 149.99,
+        "saleprice": 119.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310718685370055761069&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-b550-plus-wifi-ii-atx-amd-motherboard-amd-b550-am4%2Fp%2FN82E16813119518%3Fitem%3DN82E16813119518",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-518-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "socket": "AM4",
@@ -26138,7 +26445,9 @@ export const PARTS = [
     "m2Slots": 2,
     "sata": 6,
     "ff": "ATX",
-    "bench": 62
+    "bench": 62,
+    "upc": "00195553338516",
+    "mpn": "TUF GAMING B550-PLUS WIFI II"
   },
   {
     "id": 20508,
@@ -28322,8 +28631,21 @@ export const PARTS = [
         "price": 969,
         "url": "https://www.amazon.com/dp/B0CQ8R7J1M?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg_openbox": {
+        "sku": "4458317309792815436892094",
+        "price": 999.99,
+        "saleprice": 872.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317309792815436892094&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-100-300000006-radeon-pro-w7700-16gb-graphics-card%2Fp%2FN82E16814105118R%3Fitem%3DN82E16814105118R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-105-118-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
-    }
+    },
+    "upc": "00727419314992",
+    "mpn": "100-300000006"
   },
   {
     "id": 30064,
@@ -28353,8 +28675,21 @@ export const PARTS = [
         "price": 599,
         "url": "https://www.amazon.com/dp/B0CK29X5GV?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445834068072192940506821",
+        "price": 629.99,
+        "saleprice": 599.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834068072192940506821&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-100-300000077-radeon-pro-w7600-8gb-graphics-card%2Fp%2FN82E16814105116%3Fitem%3DN82E16814105116",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-105-116-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
-    }
+    },
+    "upc": "00727419314855",
+    "mpn": "100-300000077"
   },
   {
     "id": 30065,
@@ -28384,8 +28719,21 @@ export const PARTS = [
         "price": 429,
         "url": "https://www.amazon.com/dp/B0CK2DB8NY?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458310041618304327197098",
+        "price": 429,
+        "saleprice": 428.98,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310041618304327197098&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-100-300000078-radeon-pro-w7500-8gb-graphics-card%2Fp%2FN82E16814105117%3Fitem%3DN82E16814105117",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-105-117-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
-    }
+    },
+    "upc": "00727419314862",
+    "mpn": "100-300000078"
   },
   {
     "id": 30066,
@@ -31626,6 +31974,17 @@ export const PARTS = [
         "price": 709.95,
         "url": "https://www.amazon.com/dp/B0DZCYPFVT?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458317026312347847304869",
+        "price": 659.99,
+        "saleprice": 629.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317026312347847304869&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5070-12g-shadow-2x-oc-geforce-rtx-5070-12gb-graphics-card-double-fans%2Fp%2FN82E16814137944%3Fitem%3DN82E16814137944",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-944-11.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -31644,7 +32003,8 @@ export const PARTS = [
     "baseClock": 2325,
     "boostClock": 2512,
     "pcie": "5.0 x16",
-    "slots": 2.5
+    "slots": 2.5,
+    "upc": "00824142405772"
   },
   {
     "id": 30155,
@@ -51405,19 +51765,21 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA12KK891299",
-        "price": 549,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316511907884906770727&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-t700-nvme%2Fp%2FN82E16820156333%3Fitem%3D9SIA12KK891299",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-332-07.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "445835419565526600814220",
+        "price": 445.55,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835419565526600814220&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-t700-nvme%2Fp%2FN82E16820156330%3Fitem%3D9SIBFJRJYD0065",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-329-19.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "pcie": 5,
     "nand": "TLC",
-    "value": 48
+    "value": 48,
+    "upc": "00649528935663",
+    "mpn": "CT2000T700SSD3"
   },
   {
     "id": 50001,
@@ -51746,20 +52108,22 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC0ZMKR99866",
+        "sku": "445837541290320356036594",
         "price": 246.97,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837541290320356036594&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsk-hynix-2tb%2Fp%2F0D9-003U-00ME7%3Fitem%3D9SIC0ZMKR99866",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BU8YS2404160GLTKXE7.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
     "pcie": 4,
     "nand": "TLC",
     "value": 86,
-    "bench": 83
+    "bench": 83,
+    "upc": "08809433503070",
+    "mpn": "HFS2T0GEJ9X"
   },
   {
     "id": 50011,
@@ -52041,10 +52405,22 @@ export const PARTS = [
         "price": 145,
         "url": "https://www.amazon.com/dp/B0DF2DC3R4?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458314809812327053494388",
+        "price": 519.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314809812327053494388&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-1tb-870-evo-series-sata%2Fp%2FN82E16820147793%3Fitem%3DN82E16820147793",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-792-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "nand": "TLC",
-    "value": 4
+    "value": 4,
+    "upc": "00887276431970",
+    "mpn": "MZ-77E1T0B/AM"
   },
   {
     "id": 50021,
@@ -52070,19 +52446,21 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADFKSC3004",
-        "price": 324.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837396142936340330443&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-1tb-870-evo%2Fp%2F0D9-0009-00AF7%3Fitem%3D9SIAADFKSC3004",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A12KS210125KJRTE.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.83
+        "sku": "445835327376333307897613",
+        "price": 569.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835327376333307897613&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-2tb-870-evo-series-sata%2Fp%2FN82E16820147794%3Fitem%3D9SIBFJRJ9V7112",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-794-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "nand": "TLC",
     "value": 5,
-    "bench": 50
+    "bench": 50,
+    "upc": "00887276431963",
+    "mpn": "MZ-77E2T0B/AM"
   },
   {
     "id": 50023,
@@ -52457,10 +52835,22 @@ export const PARTS = [
         "price": 299.99,
         "url": "https://www.amazon.com/dp/B084ZV4DXB?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458315202804772336507926",
+        "price": 299.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315202804772336507926&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-ne-st8000vn004-8tb-7200-rpm-for-nas-systems%2Fp%2FN82E16822184796%3Fitem%3DN82E16822184796",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-184-796-V07.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "value": 0,
-    "bench": 25
+    "bench": 25,
+    "upc": "00763649125069",
+    "mpn": "NE-ST8000VN004"
   },
   {
     "id": 50037,
@@ -54741,13 +55131,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBSAYK655817",
+        "sku": "445837801692209206235054",
         "price": 85.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837801692209206235054&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffanxiang-512gb-s501q%2Fp%2F0D9-00WY-000A2%3Fitem%3D9SIBSAYK655817",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BSAYS2403060FUKBYF2.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -54768,7 +55158,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 8,
-    "bench": 45
+    "bench": 45,
+    "upc": "06975340374378"
   },
   {
     "id": 50087,
@@ -64990,13 +65381,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBSAYK655820",
+        "sku": "4458312467123070860148158",
         "price": 139.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312467123070860148158&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffanxiang-1tb-s501q%2Fp%2F0D9-00WY-000A3%3Fitem%3D9SIBSAYK655820",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BSAYS2403060FUKBYF2.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -65017,7 +65408,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 4,
-    "bench": 45
+    "bench": 45,
+    "upc": "06975340374088"
   },
   {
     "id": 50321,
@@ -68360,6 +68752,17 @@ export const PARTS = [
         "price": 479.99,
         "url": "https://www.amazon.com/dp/B0F527H5T3?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458311239565170048911895",
+        "price": 479.99,
+        "saleprice": 459.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311239565170048911895&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsk-hynix-2tb-nvme%2Fp%2FN82E16820329024%3Fitem%3DN82E16820329024",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-329-025-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -68380,7 +68783,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 48,
-    "bench": 100
+    "bench": 100,
+    "upc": "08809433501373"
   },
   {
     "id": 50404,
@@ -99764,13 +100168,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADYKMX4374",
-        "price": 179.95,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838813185010819728622&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-g2-140mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2F13C-0005-00365%3Fitem%3D9SIAADYKMX4374",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2510290YV46VCB.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "445833849288182287092262",
+        "price": 119.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833849288182287092262&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15%2Fp%2FN82E16835608045%3Fitem%3D9SIAADY44C6006",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-045-V02.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -99778,7 +100182,9 @@ export const PARTS = [
     "rgb": false,
     "value": 3,
     "bench": 90,
-    "cfm": 165
+    "cfm": 165,
+    "upc": "00842431012456",
+    "mpn": "NH-D15"
   },
   {
     "id": 80001,
@@ -99808,13 +100214,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADYKMX4374",
-        "price": 179.95,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838813185010819728622&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-g2-140mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2F13C-0005-00365%3Fitem%3D9SIAADYKMX4374",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2510290YV46VCB.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "445834871204183147131830",
+        "price": 169.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834871204183147131830&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00356%3Fitem%3D9SIAADYKB59099",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2407010J63FDFA.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -99822,7 +100228,9 @@ export const PARTS = [
     "rgb": false,
     "value": 3,
     "bench": 90,
-    "cfm": 175
+    "cfm": 175,
+    "upc": "00841501100437",
+    "mpn": "NH-D15 G2 HBC"
   },
   {
     "id": 80002,
@@ -99852,13 +100260,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADYG047809",
-        "price": 129.95,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838424384066494864359&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12a-chromax-black%2Fp%2F13C-0005-001S0%3Fitem%3D9SIAADYG047809",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2110088268C.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "445839298247233631954106",
+        "price": 131.39,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839298247233631954106&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12a%2Fp%2F13C-0005-00187%3Fitem%3D9SIBTVCKEF8249",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200826CTPyq.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -99866,7 +100274,9 @@ export const PARTS = [
     "rgb": false,
     "value": 7,
     "bench": 68,
-    "cfm": 102
+    "cfm": 102,
+    "upc": "00841501100161",
+    "mpn": "NH-U12A"
   },
   {
     "id": 80003,
@@ -99927,13 +100337,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAZTUKG69635",
-        "price": 78.79,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833871119281458834924&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9a-am5%2Fp%2F13C-0005-00322%3Fitem%3D9SIAZTUKG69635",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4RES2303070KAV5H62.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "4458314901522055049635350",
+        "price": 9.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314901522055049635350&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002X3%3Fitem%3D9SIAADYJ7F6968",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2209220T2W8S3E.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -99941,7 +100351,9 @@ export const PARTS = [
     "rgb": false,
     "value": 11,
     "bench": 29,
-    "cfm": 33
+    "cfm": 33,
+    "upc": "00841501121388",
+    "mpn": "NM-AM5-L9aL9i"
   },
   {
     "id": 80005,
@@ -101225,13 +101637,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBTVCK8B0270",
-        "price": 138.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834785226068474309905&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-chromax-black%2Fp%2F13C-0005-00324%3Fitem%3D9SIBTVCK8B0270",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVS230413152MJ7CD.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "sku": "4458313289607910193816241",
+        "price": 129.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313289607910193816241&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-chromax-black%2Fp%2F13C-0005-001H5%3Fitem%3D9SIA4REKHM8164",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_1321448318623154024hVzlOURbe.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -101253,7 +101665,9 @@ export const PARTS = [
     "bench": 65,
     "radSize": "140",
     "fanSize": 140,
-    "cfm": 75
+    "cfm": 75,
+    "upc": "00841501100185",
+    "mpn": "NH-D15 chromax.black"
   },
   {
     "id": 80037,
@@ -102829,13 +103243,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADYKB59138",
+        "sku": "445838524361210619545839",
         "price": 169.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838524361210619545839&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-g2-lbc-140mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2F13C-0005-00357%3Fitem%3D9SIAADYKB59138",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2407010J9FJXFA.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -102856,7 +103270,9 @@ export const PARTS = [
     "value": 4,
     "bench": 87,
     "fanSize": 140,
-    "cfm": 150
+    "cfm": 150,
+    "upc": "00841501100420",
+    "mpn": "NH-D15 G2 LBC"
   },
   {
     "id": 80072,
@@ -103327,13 +103743,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADYK916921",
+        "sku": "4458317307517172578121862",
         "price": 109.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317307517172578121862&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00348%3Fitem%3D9SIAADYK916921",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2402190G9CVACB.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -103354,7 +103770,9 @@ export const PARTS = [
     "value": 7,
     "bench": 51,
     "radSize": "120",
-    "cfm": 60
+    "cfm": 60,
+    "upc": "00841501100475",
+    "mpn": "NH-D12L chromax.black"
   },
   {
     "id": 80082,
@@ -103374,13 +103792,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADYK958942",
+        "sku": "4458311406344733952731852",
         "price": 79.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311406344733952731852&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00349%3Fitem%3D9SIAADYK958942",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2404090I2DYN41.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -103401,7 +103819,9 @@ export const PARTS = [
     "value": 0,
     "bench": 40,
     "radSize": "120",
-    "cfm": 35
+    "cfm": 35,
+    "upc": "00841501100505",
+    "mpn": "NH-L12Sx77"
   },
   {
     "id": 80083,
@@ -104345,13 +104765,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAZTUKBJ3429",
+        "sku": "4458316650059415172071763",
         "price": 69.1,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316650059415172071763&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9i-17xx-chromax-black%2Fp%2F13C-0005-001S8%3Fitem%3D9SIAZTUKBJ3429",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS211105B2TVD.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -104371,7 +104791,9 @@ export const PARTS = [
     "rgb": false,
     "value": 6,
     "bench": 33,
-    "cfm": 35
+    "cfm": 35,
+    "upc": "00841501100284",
+    "mpn": "NH-L9i-17xx chromax.black"
   },
   {
     "id": 80105,
@@ -105050,13 +105472,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADYK5N2732",
+        "sku": "445838114484701032267935",
         "price": 84.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838114484701032267935&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d9l%2Fp%2F13C-0005-00341%3Fitem%3D9SIAADYK5N2732",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2310110KPGTU24.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -105077,7 +105499,9 @@ export const PARTS = [
     "value": 7,
     "bench": 45,
     "fanSize": 92,
-    "cfm": 35
+    "cfm": 35,
+    "upc": "00841501100482",
+    "mpn": "NH-D9L chromax.black"
   },
   {
     "id": 80121,
@@ -105718,14 +106142,14 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBW8HKTC7272",
+        "sku": "445839878497421022595154",
         "price": 149,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839878497421022595154&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-system%2Fp%2FN82E16835146064%3Fitem%3D9SIBW8HKTC7272",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-064-V13.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.94
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 0.9444444444444444
       }
     },
     "additionalImages": [
@@ -105747,7 +106171,9 @@ export const PARTS = [
     "bench": 42,
     "fanSize": 120,
     "height": 52,
-    "cfm": 60
+    "cfm": 60,
+    "upc": "00815671013705",
+    "mpn": "RL-KRM22-01"
   },
   {
     "id": 80136,
@@ -108151,13 +108577,13 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADYKB59099",
+        "sku": "445834871204183147131830",
         "price": 169.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834871204183147131830&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00356%3Fitem%3D9SIAADYKB59099",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2407010J63FDFA.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
         "matchScore": 1
       }
     },
@@ -108178,7 +108604,9 @@ export const PARTS = [
     "value": 4,
     "bench": 86,
     "fanSize": 140,
-    "cfm": 150
+    "cfm": 150,
+    "upc": "00841501100437",
+    "mpn": "NH-D15 G2 HBC"
   },
   {
     "id": 80189,
@@ -108743,6 +109171,17 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "4458314998798435958865947",
+        "price": 79.99,
+        "saleprice": 47.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314998798435958865947&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835988009R%3Fitem%3DN82E16835988009R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-988-009-09.png",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -108764,7 +109203,9 @@ export const PARTS = [
     "bench": 86,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "upc": "04710562748482",
+    "mpn": "HyperFlow Silent 360 Black"
   },
   {
     "id": 80203,
@@ -140999,13 +141440,26 @@ export const PARTS = [
         "url": "https://www.amazon.com/Logitech-Lightspeed-PowerPlay-Compatible-Lightsync/dp/B07L4BM851/ref=sr_1_20_mod_primary_new?crid=IV29V2MB51EP&dib=eyJ2IjoiMSJ9.C8nOIcZFACVH26Sr4pdsY5LnNovz1_PHMC9qMvK1Bqb_uxdeHTDK2UC1v3DNcuqEspFw1byZz-wYM61vEzRXZUibvDn5qND0SDKO7Wd5W1OcqUt_6DEbd-zrl106mpt9MBMg77-SoGwm9gNKmobx2EUFK9aNoxukxWeBhRhDg8QP95VuwWB5BRHBBNIbz1Ar4T6dCe2UZMO8RYlOfE62C9uvvUCxufpk899QejgKsMQ.2TgkbcjSGKKPl3aKq4d8MM9SOh8yslsSWxAJTnAveA8&dib_tag=se&keywords=lightweight+gaming+mouse&qid=1777130429&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=lightweight%2Bgaming%2Bmouse%2Caps%2C177&sr=8-20&xpid=mwUOBLs-tm-BS&tag=tiereduptech-20",
         "price": 80.74,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445837387769681319473997",
+        "price": 119.99,
+        "saleprice": 104.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837387769681319473997&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flogitech-910-005565-g502-usb-lightspeed-wireless%2Fp%2FN82E16826197336%3Fitem%3DN82E16826197336",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/26-197-336-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "sensor": "Hero 25K",
     "mouseType": "Wireless",
     "weight": 114,
     "dpi": 25600,
-    "bench": 89
+    "bench": 89,
+    "upc": "00097855145246",
+    "mpn": "910-005565"
   },
   {
     "id": 99977,
@@ -141317,13 +141771,25 @@ export const PARTS = [
         "url": "https://www.amazon.com/Redragon-M810-Wireless-Buttons-Capacity/dp/B09ZY348SY/ref=sr_1_5?crid=OB7AC3XQPE5T&dib=eyJ2IjoiMSJ9.gqhgWBpv6izOCyfMRtq9_xF0J_JYj8GX7tu_WeG3lIpKn9LYGbrRtHBCk9hjqKueCKzxE2w6ne3LzD8Lr3IbMSg3537Y_IYhT42Q9NVgVNUuC2Tjz7XrXoaULCps0KzMgcV0klXG-w7sTY4dJ4xjV7ZhSmbUrgos7Mc3jWeJT3R_sOvrV2rhm-Fj_HcbKCPmdtvg95p62rXYwLcpaNyfd6-hxArAdRlRhaysj0XMbwA.pbUVV5NN12YOKVY3A_2ettxOIbc_Y4WhV8XUHgw54co&dib_tag=se&keywords=wireless+gaming+mouse&qid=1777130428&sprefix=wireless%2Bgaming%2Bmouse%2Caps%2C126&sr=8-5&tag=tiereduptech-20",
         "price": 26.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458310675453290739411644",
+        "price": 36.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310675453290739411644&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F32K-005K-000J9%3Fitem%3D9SIAWATK9P5451",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AWATS24072607LZ28A4.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "dpi": 10000,
     "mouseType": "Wireless",
     "sensor": "Optical",
     "weight": 130,
-    "bench": 28
+    "bench": 28,
+    "upc": "00816617021792",
+    "mpn": "M810W-RGB-PRO"
   },
   {
     "id": 99991,
@@ -141431,13 +141897,25 @@ export const PARTS = [
         "url": "https://www.amazon.com/Redragon-Wireless-Programmable-Buttons-Battery/dp/B088B3ZM76/ref=sr_1_19?crid=OB7AC3XQPE5T&dib=eyJ2IjoiMSJ9.gA4-awrBjBMmGG_4qLwYlpJTdBnQj5NT1MxEGSmPUUBr2ymHQlgzlC4qAo-m8ys2qO2B0vY5cBTfJe4m5kjNO-xCdAwUnK_h60eAIc31D3SbCQUxeWH8rrD4pKSGjZr0nMOX-KqSXI8ONHLQn4owc5HaoI1j_uvuVAtjpOh469pD8cedIexUBNv54rQ7e3Sn0mNU_8gAy23axkVyY0kP_2Wian_NEBk08prhqLaCeck.kx_mZK-nb050ktbQK2etdFzfYg_ykL-GZEz7qEbwMWQ&dib_tag=se&keywords=wireless+gaming+mouse&qid=1777130429&sprefix=wireless%2Bgaming%2Bmouse%2Caps%2C126&sr=8-19&xpid=aOcyGxvfvyWP6&tag=tiereduptech-20",
         "price": 46.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458317741570707972433335",
+        "price": 47.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317741570707972433335&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F32K-005K-000K2%3Fitem%3D9SIAWATK9P5824",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AWATS2407260G1UT16E.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 0.9523809523809523
       }
     },
     "sensor": "Optical",
     "dpi": 16000,
     "mouseType": "Wireless",
     "weight": 105,
-    "bench": 40
+    "bench": 40,
+    "upc": "00816617021815",
+    "mpn": "M913W"
   },
   {
     "id": 99996,
@@ -141699,13 +142177,25 @@ export const PARTS = [
         "url": "https://www.amazon.com/SteelSeries-Apex-RGB-Gaming-Keyboard/dp/B07ZGDPT4M/ref=sr_1_26?crid=JNWVFEINKIBP&dib=eyJ2IjoiMSJ9.ZnlXd6ET439c0gTx4lvgQSPUXcT2rhKGPAj1Z5LqXmdfbcgkRyEkmkE3Og96qGj4NwkouI2G3xEIA8cOkumRNl5S_VaVEK7cndaGZFZmC6VPjnwP0JpyU5q_GDg96kv4XpYZUsqgdvaMM0Q-RAiRd4eGJqPb6rbvJ-l3IeMTZ6MIC9X7d69eNGLP2IISpQygL0GHkD100GLkhS6gctDac84uo5pIWzQBsDCPpyYTRoY.llpR3-eH56lqoH7JxDkwBPZreAcdECfhdFoQh41ZiXU&dib_tag=se&keywords=Corsair+gaming+keyboard&qid=1777130540&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Corsair%2Bgaming%2Bkeyboard%2Caps%2C252&sr=8-26&xpid=oDHeVbDFLzRGi&tag=tiereduptech-20",
         "price": 49.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "44583693753007992457542",
+        "price": 60.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583693753007992457542&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsteelseries-apex-3-64795-whisper-quiet-mechanical-keyboard%2Fp%2FN82E16823239056%3Fitem%3DN82E16823239056",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/23-239-056-S01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "switches": "Hall Effect",
     "rgb": true,
     "layout": "TKL",
     "wireless": false,
-    "bench": 81
+    "bench": 81,
+    "upc": "00813682026561",
+    "mpn": "64795"
   },
   {
     "id": 100009,
@@ -142278,13 +142768,25 @@ export const PARTS = [
         "url": "https://www.amazon.com/Sony-MDR7506-Professional-Diaphragm-Headphone/dp/B000AJIF4E/ref=sr_1_31?crid=0EJ114Y2XYJW&dib=eyJ2IjoiMSJ9.-LGc1vqFEO4JA4ZWxUxh0uO04Se51BakSANSsNwaz8jz8_LhNoWFIsJfZ0TotbHXrNMGbcS2d2XF_TA_CtwkGbQ8jgvIkFlLr6nf1dlgepSOmAusT5MvcjRYR5CjtiwLK_bOGDxvuO3vuQ65ttP11BGbbMY3BfEFdgUVITrBHq-YEUXegCAm4Vahz-OtIThXlYDitz_oyH9hwdWL5XVCHiO1ldKdBszyBsbMkfYXwRrwOiRij-e_3IpsnC2HyNnXiRM5MiYlHg4TfRcdFOOuexU9oC33wl3WjUuiFmiqo1A.l_EHhYOXS9wTcG_nnyba4jB1gLOmWiUJyvxP2ig9AGM&dib_tag=se&keywords=Beyerdynamic+DT+770&qid=1777130638&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Beyerdynamic%2BDT%2B770%2Caps%2C168&sr=8-31&tag=tiereduptech-20",
         "price": 98,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458313835652375641504274",
+        "price": 109,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313835652375641504274&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsony-mdr7506-headphone-black%2Fp%2F111-000A-002U0%3Fitem%3D9SIC5NBKVF1637",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AEWA_1_201806071674651048.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "hsType": "Wired",
     "driver": 40,
     "mic": false,
     "anc": false,
-    "bench": 59
+    "bench": 59,
+    "upc": "00636983056378",
+    "mpn": "636983056378"
   },
   {
     "id": 100035,
@@ -142327,13 +142829,24 @@ export const PARTS = [
         "url": "https://www.amazon.com/Audio-Technica-ATH-M20x-Professional-Monitor-Headphones/dp/B00HVLUR18/ref=sr_1_5?crid=BX0L4LEA8PCY&dib=eyJ2IjoiMSJ9.sHW_aInsNKx0gs5U3m6kcovrABKWohtxmUAm7wkCpuhUw5auNE6-C-CspxddVcgjNK5ObYesAiRow9tgytVWpvb0oiQDQXz1E9B3MqePay9f3TL967pvIpjIHoZY2q4JQ-BLdW2DsAx6IXt_-4ek99JwnZh8dq_ULBE7n1JcRPJ9L6YU_x5v9yOLfrW1Kilvn8Tnc8VgOuUfkDyDKyKtzAB09HwrDDF08EG0FLl_6CM.hEeQidgB95L6qCUNKjT3fozBKQFlraCke_Q7A-rdybU&dib_tag=se&keywords=Audio-Technica+gaming&qid=1777130635&sprefix=AudioTechnica%2Bgaming%2Caps%2C270&sr=8-5&tag=tiereduptech-20",
         "price": 58,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458311309930792188059185",
+        "price": 69.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311309930792188059185&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-audio-technica-ath-m20x-headphone%2Fp%2F0TH-0045-001X4%3Fitem%3D9SIC5C9KVN2744",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A98Y_1_20160421800938120.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "hsType": "Wired",
     "driver": 40,
     "mic": false,
     "anc": false,
-    "bench": 58
+    "bench": 58,
+    "mpn": "ATH-M20X"
   },
   {
     "id": 100037,
@@ -142597,13 +143110,25 @@ export const PARTS = [
         "url": "https://www.amazon.com/Sennheiser-HD-Over-Audiophile-Headphones/dp/B08J9MVB6W/ref=sr_1_26?crid=0EJ114Y2XYJW&dib=eyJ2IjoiMSJ9.-LGc1vqFEO4JA4ZWxUxh0uO04Se51BakSANSsNwaz8jz8_LhNoWFIsJfZ0TotbHXrNMGbcS2d2XF_TA_CtwkGbQ8jgvIkFlLr6nf1dlgepSOmAusT5MvcjRYR5CjtiwLK_bOGDxvuO3vuQ65ttP11BGbbMY3BfEFdgUVITrBHq-YEUXegCAm4Vahz-OtIThXlYDitz_oyH9hwdWL5XVCHiO1ldKdBszyBsbMkfYXwRrwOiRij-e_3IpsnC2HyNnXiRM5MiYlHg4TfRcdFOOuexU9oC33wl3WjUuiFmiqo1A.l_EHhYOXS9wTcG_nnyba4jB1gLOmWiUJyvxP2ig9AGM&dib_tag=se&keywords=Beyerdynamic+DT+770&qid=1777130638&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Beyerdynamic%2BDT%2B770%2Caps%2C168&sr=8-26&tag=tiereduptech-20",
         "price": 159.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445835540496585528639916",
+        "price": 159.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835540496585528639916&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsennheiser-hd-560s-over-the-ear-black%2Fp%2FN82E16826106912%3Fitem%3D9SIAB2GKTH8782",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/26-106-912-08.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "hsType": "Wired",
     "driver": 38,
     "mic": false,
     "anc": false,
-    "bench": 52
+    "bench": 52,
+    "upc": "00615104356146",
+    "mpn": "HD 560S"
   },
   {
     "id": 100049,
@@ -143241,12 +143766,23 @@ export const PARTS = [
         "url": "https://www.amazon.com/Logitech-Widescreen-Calling-Recording-Desktop/dp/B006JH8T3S/ref=sr_1_1?crid=EW1N21FRQ61U&dib=eyJ2IjoiMSJ9.jPNsGEG4koGA9IWUTRKVVtoGAXhh2AFxmylYPBLDCpYxwA8pbFif40Z2-U0yypxvhySTVMa_7EIm1G2_M3TIJN0XOq2WXUvQqFUTgJ7xAsvhA1IeTQDcVYbyG7vw6-BtyckVgb-HVTNfzrQm3c9kMq5rwKjs5SGiwFh2nHTXzI942rrTk83o1nHgAIX2VHWKRIKVq32l7se9y0gi8gmwT0OCLQ90SwU4ZH3NOTQUrnw.W05UqzZZtPz0Id3nuPFxAvBT09KeEtazcm8mdzxHZ24&dib_tag=se&keywords=Logitech+C920&qid=1777130737&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BC920%2Caps%2C251&sr=8-1&tag=tiereduptech-20",
         "price": 68.5,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445831613401416365389802",
+        "price": 95.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831613401416365389802&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flogitech-pro-webcam%2Fp%2F1EF-00BC-00001%3Fitem%3D9SIBP4YKW40161",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AEYJ_131710214716614574993Y707PS2.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "resolution": "1080p",
     "fps": 30,
     "autofocus": true,
-    "bench": 66
+    "bench": 66,
+    "mpn": "Pro Webcam"
   },
   {
     "id": 100078,
@@ -144441,13 +144977,25 @@ export const PARTS = [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6333838&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6333838.p%3FskuId%3D6333838",
         "price": 49.99,
         "inStock": false
+      },
+      "newegg": {
+        "sku": "445836713679305653865810",
+        "price": 66,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836713679305653865810&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F32K-0002-00106%3Fitem%3D9SIA6ZPK9X6057",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A91N_1_201909172048824820.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:20:57.916Z",
+        "matchMethod": "phase2:name-match",
+        "matchScore": 1
       }
     },
     "sensor": "Optical",
     "mouseType": "Wired",
     "weight": 87,
     "dpi": 25600,
-    "bench": 61
+    "bench": 61,
+    "upc": "00097855147745",
+    "mpn": "910005630"
   },
   {
     "id": 100138,
