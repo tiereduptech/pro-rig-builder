@@ -197,6 +197,17 @@ function cleanDisplayName(p) {
 }
 // === END CLEAN DISPLAY NAME ===
 const fmtPrice = n => { if (n == null) return '0'; const r = Math.round(n * 100) / 100; return r % 1 === 0 ? String(r) : r.toFixed(2); };
+// Retailer key → user-facing display name
+const RETAILER_DISPLAY_NAMES = {
+  amazon: "Amazon",
+  bestbuy: "Best Buy",
+  newegg: "Newegg",
+  newegg_openbox: "Newegg (Open Box)",
+  newegg_refurb: "Newegg (Refurbished)",
+  newegg_used: "Newegg (Used)",
+};
+const retailerDisplayName = key => RETAILER_DISPLAY_NAMES[key] || (key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, " "));
+
 const retailers = p => {
   if (!p.deals || typeof p.deals !== "object") return [];
   return Object.entries(p.deals)
@@ -204,7 +215,7 @@ const retailers = p => {
     .map(([name, info]) => {
       const url = info.url || info.linkurl;
       const rawPrice = info.saleprice && Number(info.saleprice) > 0 ? Number(info.saleprice) : Number(info.price);
-      return { name, price: rawPrice, url, inStock: info.inStock !== false };
+      return { name, displayName: retailerDisplayName(name), price: rawPrice, url, inStock: info.inStock !== false };
     })
     .filter(r => r.url && r.price > 0)
     .sort((a,b) => a.price - b.price);
@@ -245,7 +256,7 @@ function PriceCompare({part}) {
             background:i===0?"var(--mint3)":"transparent",textDecoration:"none",marginBottom:2,
             border:i===0?"1px solid var(--mint)22":"1px solid transparent"}}>
           <div style={{display:"flex",alignItems:"center",gap:6}}>
-            <span style={{fontFamily:"var(--ff)",fontSize:10,fontWeight:600,color:"var(--txt)",textTransform:"capitalize"}}>{r.name}</span>
+            <span style={{fontFamily:"var(--ff)",fontSize:10,fontWeight:600,color:"var(--txt)"}}>{r.displayName}</span>
             {i===0 && <Tag color="var(--mint)">BEST</Tag>}
             {!r.inStock && <Tag color="var(--rose)">OOS</Tag>}
           </div>
@@ -2678,7 +2689,7 @@ function MobileSearchPage({activeCat,th}){
                 <a key={r.name} href={r.url} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:8,textDecoration:"none",background:ri===0?"var(--mint3)":"var(--bg3)",border:"1px solid "+(ri===0?"var(--mint)33":"var(--bdr)")}}>
                   <div style={{flex:1,minWidth:0}}>
                     <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}>
-                      <span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",textTransform:"capitalize"}}>{r.name}</span>
+                      <span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span>
                       {ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}
                     </div>
                     <div style={{fontFamily:"var(--ff)",fontSize:10,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
@@ -2929,7 +2940,7 @@ function SearchPage({activeCat,th}){
                     {rr.length>0?rr.map((r,ri)=>
                       <a key={r.name} href={r.url} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",padding:"12px 14px",borderRadius:8,textDecoration:"none",gap:12,background:ri===0?"var(--mint3)":"var(--bg4)",border:`1px solid ${ri===0?"var(--mint)33":"var(--bdr)"}`}}>
                         <div style={{flex:1}}>
-                          <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",textTransform:"capitalize"}}>{r.name}</span>{ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}</div>
+                          <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span>{ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}</div>
                           <div style={{fontFamily:"var(--ff)",fontSize:13,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
                         </div>
                         <div style={{display:"flex",alignItems:"center",gap:12}}>
@@ -2942,7 +2953,7 @@ function SearchPage({activeCat,th}){
                         <div style={{display:"flex",alignItems:"center",gap:12}}><span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span><div style={{background:"var(--mint)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--bg)"}}>Buy →</div></div>
                       </a>}
                     {rr.length>0&&ALL_RETAILERS.filter(name=>!rr.some(r=>r.name===name)).map(name=>{
-                      const cap=name.charAt(0).toUpperCase()+name.slice(1);
+                      const cap=retailerDisplayName(name);
                       return <div key={name} style={{display:"flex",alignItems:"center",padding:"12px 14px",borderRadius:8,gap:12,background:"var(--bg4)",border:"1px dashed var(--bdr)",opacity:0.55}}>
                         <div style={{flex:1}}>
                           <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--dim)",textTransform:"capitalize",marginBottom:2}}>{cap}</div>
