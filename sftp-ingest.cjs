@@ -86,7 +86,9 @@ async function walkAndDownload(sftp, manifest) {
         if (!SKIP_DIRS.has(fullPath)) toProcess.push(fullPath);
       } else if (entry.type === '-') {
         // Only care about Product Catalog feed files
-        if (!/_mp\.(txt|xml)\.gz$/i.test(entry.name)) continue;
+        if (!/_mp(?:_delta|_MKPL|_delta_MKPL)?(?:_template|_deltatemplate|_template_MKPL|_deltatemplate_MKPL)?\.(txt|xml)\.gz$/i.test(entry.name)) continue;
+        // Skip template files - they are schema examples, not real data
+        if (/_template/i.test(entry.name)) continue;
         
         // Extract MID from filename
         const midMatch = entry.name.match(/^(\d+)_/);
@@ -137,18 +139,13 @@ async function parseTxtFeed(localPath) {
         return;
       }
       
+      // Skip HDR metadata line: HDR|<mid>|<merchant>|<timestamp>
+      if (line.startsWith('HDR|')) {
+        return;
+      }
       const fields = line.split('|');
-      
-      // First non-trailer line: header (detect by checking for non-numeric first field)
+      // Rakuten feeds have no header row, always use positional defaults
       if (!header) {
-        // Header is detected when first record looks like field names not data
-        // Common header names: "SKU Number" or "sku_number" â€” non-numeric, contains letters
-        const first = fields[0] || '';
-        if (/[a-zA-Z]/.test(first) && !/^\d+$/.test(first)) {
-          header = fields.map(f => normalizeFieldName(f));
-          return;
-        }
-        // No header â€” use positional defaults based on Rakuten Appendix A
         header = DEFAULT_FIELD_ORDER;
       }
       
@@ -174,13 +171,13 @@ function normalizeFieldName(s) {
 // Default field positions per Rakuten Product Catalog Appendix A (38 fields)
 // Used as fallback if header detection fails
 const DEFAULT_FIELD_ORDER = [
-  'sku', 'product_name', 'primary_category', 'secondary_categories',
-  'product_url', 'image_url', 'buy_url', 'is_deleted',
+  'sku', 'product_name', 'newegg_item_number', 'primary_category',
+  'secondary_categories', 'product_url', 'image_url', 'is_deleted',
   'short_description', 'long_description', 'discount', 'discount_type',
-  'retail_price', 'sale_price', 'begin_date', 'end_date',
-  'is_all', 'is_product_link', 'keywords', 'mpn',
-  'manufacturer', 'shipping', 'availability', 'upc',
-  'class_id', 'currency', 'misc', 'pixel_tag',
+  'sale_price', 'retail_price', 'begin_date', 'end_date',
+  'manufacturer', 'shipping', 'keywords', 'mpn',
+  'brand2', 'is_product_link', 'availability', 'upc',
+  'class_id', 'currency', 'buy_url', 'pixel_tag',
   'attr_1', 'attr_2', 'attr_3', 'attr_4',
   'attr_5', 'attr_6', 'attr_7', 'attr_8',
   'attr_9', 'attr_10'
@@ -302,14 +299,24 @@ function priceFromRecord(rec) {
   return null;
 }
 
+function detectCondition(name) {
+  const N = (name || '').toUpperCase();
+  if (/\bOPEN[\s\-]?BOX\b/.test(N)) return 'openbox';
+  if (/\bREFURB(?:ISHED)?\b|\bRENEWED\b/.test(N)) return 'refurb';
+  if (/\bUSED\b|\bPRE[\s\-]?OWNED\b/.test(N)) return 'used';
+  return 'new';
+}
+
 function applyMatchToPart(part, rec, match) {
   const pricing = priceFromRecord(rec);
   if (!pricing) return false;
-  
+
   const inStock = !/out-of-stock|unavailable|no/i.test(rec.availability || '');
-  
+  const condition = detectCondition(rec.product_name);
+  const fieldKey = condition === 'new' ? 'newegg' : 'newegg_' + condition;
+
   part.deals = part.deals || {};
-  part.deals.newegg = {
+  const newListing = {
     sku: rec.sku,
     price: pricing.price,
     ...(pricing.saleprice ? { saleprice: pricing.saleprice } : {}),
@@ -320,11 +327,27 @@ function applyMatchToPart(part, rec, match) {
     matchMethod: 'sftp:' + match.method,
     matchScore: match.confidence
   };
-  
-  // Opportunistic UPC/MPN backfill if missing
+
+  // For each condition, keep the LOWEST in-stock price (or any price if none in-stock)
+  const existing = part.deals[fieldKey];
+  let shouldReplace = !existing;
+  if (existing) {
+    const newPrice = pricing.saleprice || pricing.price;
+    const oldPrice = existing.saleprice || existing.price;
+    // Prefer in-stock over out-of-stock
+    if (inStock && !existing.inStock) shouldReplace = true;
+    else if (existing.inStock && !inStock) shouldReplace = false;
+    // Otherwise prefer lower price
+    else if (newPrice < oldPrice) shouldReplace = true;
+  }
+  if (shouldReplace) {
+    part.deals[fieldKey] = newListing;
+  }
+
+  // Opportunistic UPC/MPN backfill if missing (always do this, not condition-gated)
   if (!part.upc && rec.upc) part.upc = rec.upc;
   if (!part.mpn && rec.mpn) part.mpn = rec.mpn;
-  
+
   return true;
 }
 
