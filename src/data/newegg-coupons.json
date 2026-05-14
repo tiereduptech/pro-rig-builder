@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-05-14T01:24:55.419Z",
+  "merchant": "Newegg",
+  "mid": "44583",
+  "count": 1,
+  "coupons": [
+    {
+      "code": null,
+      "description": "Newegg Pc Builder! Choosing Parts Made Easy! Building Your Own Custom Pc Starts Here at Newegg.Com",
+      "startDate": "2020-06-18T00:00Z",
+      "endDate": "2026-06-17T00:00Z",
+      "clickUrl": "https://click.linksynergy.com/fs-bin/click?id=1o8iJ9l0HXw&offerid=1786142.5603&type=3&subid=0",
+      "restrictions": null,
+      "category": "[object Object]",
+      "promotionType": "[object Object]",
+      "advertiser": "Newegg"
+    }
+  ]
+}
