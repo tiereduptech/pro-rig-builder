@@ -1,11 +1,9 @@
 name: SFTP Ingest Newegg Catalog
-
 on:
   schedule:
     # Daily at 12:00 UTC (between morning and evening Newegg price refresh)
     - cron: "0 12 * * *"
   workflow_dispatch: {}
-
 jobs:
   ingest:
     runs-on: ubuntu-latest
@@ -16,11 +14,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
-
+          node-version: "24"
       - name: Install dependencies
         run: npm ci
-
       - name: Restore manifest cache
         uses: actions/cache@v4
         with:
@@ -28,12 +24,11 @@ jobs:
           key: sftp-manifest-${{ github.run_id }}
           restore-keys: |
             sftp-manifest-
-
       - name: Run SFTP ingestion
         env:
           RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
+          NODE_OPTIONS: "--max-old-space-size=6144"
         run: node sftp-ingest.cjs
-
       - name: Commit and push if changed
         run: |
           if [ -f catalog-build/sftp-ingest-summary.json ]; then
@@ -41,11 +36,12 @@ jobs:
             EXCLUSIVES=$(node -e "console.log(require('./catalog-build/sftp-ingest-summary.json').totals.exclusives)")
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add src/data/parts.js catalog-build/newegg-exclusives.json catalog-build/sftp-manifest.json 2>/dev/null || true
+            # Commit parts.js (catalog updates) and exclusives meta (small summary file, not the 500MB jsonl)
+            git add src/data/parts.js catalog-build/newegg-exclusives.meta.json catalog-build/sftp-manifest.json 2>/dev/null || true
             if git diff --cached --quiet; then
               echo "No changes to commit"
             else
-              git commit -m "chore(sftp): newegg catalog ingest — $UPDATED updated, $EXCLUSIVES exclusives"
+              git commit -m "chore(sftp): newegg catalog ingest - $UPDATED updated, $EXCLUSIVES exclusives"
               git push
             fi
           fi
