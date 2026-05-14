@@ -77,3 +77,6 @@ src/data/parts.js.bak.*
 
 catalog-build/feeds/
 catalog-build/sftp-ingest-summary.json
+
+catalog-build/feeds/
+catalog-build/sftp-ingest-summary.json
