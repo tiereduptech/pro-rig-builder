@@ -412,7 +412,17 @@ function writeParts(parts) {
   const idx = buildCatalogIndex(parts);
   log(`Indexed: ${idx.byUPC.size} UPCs, ${idx.byMPN.size} MPNs, ${idx.bySKU.size} existing Newegg SKUs`);
 
-  const exclusivesAccum = [];
+  // Stream exclusives directly to disk to avoid OOM on 900k+ records
+  let exclusivesCount = 0;
+  let exclusivesStream = null;
+  let exclusivesJsonlPath = null;
+  let exclusivesMetaPath = null;
+  if (!DRY_RUN) {
+    ensureDir(path.dirname(EXCLUSIVES_PATH));
+    exclusivesJsonlPath = EXCLUSIVES_PATH.replace(/\.json$/i, '.jsonl');
+    exclusivesMetaPath = EXCLUSIVES_PATH.replace(/\.json$/i, '.meta.json');
+    exclusivesStream = fs.createWriteStream(exclusivesJsonlPath, { encoding: 'utf8' });
+  }
 
   for (const dl of downloaded) {
     log(`\nâ”€â”€ Merchant ${dl.mid}: ${dl.fileName} â”€â”€`);
@@ -451,7 +461,7 @@ function writeParts(parts) {
         // Unmatched Newegg product = potential exclusive (only collect for Newegg MID)
         const pricing = priceFromRecord(rec);
         if (pricing && pricing.price > 0) {
-          exclusivesAccum.push({
+          const exclusiveRec = {
             mid: dl.mid,
             sku: rec.sku,
             name: rec.product_name,
@@ -465,7 +475,9 @@ function writeParts(parts) {
             url: rec.product_url || rec.buy_url,
             image: rec.image_url,
             availability: rec.availability
-          });
+          };
+          if (exclusivesStream) exclusivesStream.write(JSON.stringify(exclusiveRec) + '\n');
+          exclusivesCount++;
           ms.exclusives++;
         }
       }
@@ -490,14 +502,16 @@ function writeParts(parts) {
       log('\nNo parts updated, skipping parts.js write');
     }
     
-    if (exclusivesAccum.length > 0) {
-      ensureDir(path.dirname(EXCLUSIVES_PATH));
-      fs.writeFileSync(EXCLUSIVES_PATH, JSON.stringify({
+    if (exclusivesStream) {
+      exclusivesStream.end();
+      await new Promise(r => exclusivesStream.on('finish', r));
+      fs.writeFileSync(exclusivesMetaPath, JSON.stringify({
         generatedAt: new Date().toISOString(),
-        count: exclusivesAccum.length,
-        items: exclusivesAccum
+        count: exclusivesCount,
+        format: 'jsonl',
+        dataFile: path.basename(exclusivesJsonlPath),
       }, null, 2));
-      log(`Wrote ${exclusivesAccum.length} exclusives to ${path.relative(ROOT, EXCLUSIVES_PATH)} (for manual review)`);
+      log(`Wrote ${exclusivesCount} exclusives to ${path.relative(ROOT, exclusivesJsonlPath)} (JSONL streamed) + meta`);
     }
   }
   

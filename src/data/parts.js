@@ -26328,6 +26328,17 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "4458311018540330889672673",
+        "price": 159.99,
+        "saleprice": 94.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311018540330889672673&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b650m-c-v3-micro-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813145512R%3Fitem%3DN82E16813145512R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-512-01.png",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:25:47.557Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "socket": "AM5",
@@ -26434,6 +26445,17 @@ export const PARTS = [
         "inStock": true,
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
+        "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "4458316157051897796257477",
+        "price": 149.99,
+        "saleprice": 93.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316157051897796257477&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-b550-plus-wifi-ii-atx-amd-motherboard-amd-b550-am4%2Fp%2FN82E16813119518R%3Fitem%3DN82E16813119518R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-518-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-14T22:25:47.556Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -104765,14 +104787,14 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316650059415172071763",
-        "price": 69.1,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316650059415172071763&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9i-17xx-chromax-black%2Fp%2F13C-0005-001S8%3Fitem%3D9SIAZTUKBJ3429",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS211105B2TVD.jpg",
+        "sku": "4458317325826726629492770",
+        "price": 67,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317325826726629492770&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9i-17xxch-bk%2Fp%2F13C-0005-002Z4%3Fitem%3D9SIAZTUKFH9277",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BE5US22122718CR5N6C.jpg",
         "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
-        "matchScore": 1
+        "matchedAt": "2026-05-14T22:25:46.003Z",
+        "matchMethod": "sftp:mpn",
+        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -107028,14 +107050,14 @@ export const PARTS = [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458315739310477711093001",
-        "price": 159,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315739310477711093001&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-liquid-cooling-system%2Fp%2FN82E16835181035%3Fitem%3D9SIC5BHKST3237",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-035-02.jpg",
+        "sku": "445831704057389006850194",
+        "price": 44.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831704057389006850194&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famerican-weigh-h-110-food-scales%2Fp%2FN82E16896900006%3Fitem%3D9SIA97TK5N7958",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/96-900-006-02.jpg",
         "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.623Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchedAt": "2026-05-14T22:25:45.482Z",
+        "matchMethod": "sftp:mpn",
+        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -144979,13 +145001,14 @@ export const PARTS = [
         "inStock": false
       },
       "newegg": {
-        "sku": "445836713679305653865810",
-        "price": 66,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836713679305653865810&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F32K-0002-00106%3Fitem%3D9SIA6ZPK9X6057",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A91N_1_201909172048824820.jpg",
+        "sku": "4458310538121367208229815",
+        "price": 59.99,
+        "saleprice": 56.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310538121367208229815&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flogitech-910-005630-g403-usb-wired%2Fp%2FN82E16826197343%3Fitem%3DN82E16826197343",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/26-197-343-Z01.jpg",
         "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
+        "matchedAt": "2026-05-14T22:25:47.573Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
