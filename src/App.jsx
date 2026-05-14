@@ -2764,7 +2764,7 @@ function MobileSearchPage({activeCat,th}){
           <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--mint)",fontWeight:700,letterSpacing:1,marginBottom:8}}>MARKETPLACE</div>
           <div style={{display:"flex",flexWrap:"wrap",gap:6}}>
             {allMarkets.map(m=>{
-              const cap=m.charAt(0).toUpperCase()+m.slice(1);
+              const cap=retailerDisplayName(m);
               const on=marketplaces.includes(m);
               return <button key={m} onClick={()=>setMarketplaces(p=>p.includes(m)?p.filter(x=>x!==m):[...p,m])} style={{background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:18,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:13,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{cap}</button>;
             })}
@@ -2832,7 +2832,7 @@ function SearchPage({activeCat,th}){
           <div style={{display:"flex",justifyContent:"space-between",marginTop:2}}><span style={{fontFamily:"var(--mono)",fontSize:12,color:"var(--dim)",fontWeight:600}}>${minPr}</span><span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mint)",fontWeight:700}}>to ${maxPr>=5000?"∞":"$"+maxPr}</span></div>
         </FG>
         <FG label="BRAND">{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={catP.filter(p=>resolveBrand(p)===b).length}/>)}</FG>
-        {allMarkets.length>0&&<FG label="MARKETPLACE" open={true}>{allMarkets.map(m=>{const cap=m.charAt(0).toUpperCase()+m.slice(1);const cnt=catP.filter(p=>p.deals&&typeof p.deals==="object"&&p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price).length;return <Chk key={m} label={cap} checked={marketplaces.includes(m)} onChange={()=>setMarketplaces(p=>p.includes(m)?p.filter(x=>x!==m):[...p,m])} count={cnt}/>;})}</FG>}
+        {allMarkets.length>0&&<FG label="MARKETPLACE" open={true}>{allMarkets.map(m=>{const cap=retailerDisplayName(m);const cnt=catP.filter(p=>p.deals&&typeof p.deals==="object"&&p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price).length;return <Chk key={m} label={cap} checked={marketplaces.includes(m)} onChange={()=>setMarketplaces(p=>p.includes(m)?p.filter(x=>x!==m):[...p,m])} count={cnt}/>;})}</FG>}
         <FG label="RATING">{[4.5,4,0].map(rv=><Chk key={rv} label={rv?`${rv}+ ★`:"All"} checked={minR===rv} onChange={()=>setMinR(minR===rv?0:rv)}/>)}</FG>
         {/* Category-specific filters */}
         {cat && CAT[cat]?.filters && Object.entries(CAT[cat].filters).map(([field,cfg])=>{
@@ -2886,7 +2886,7 @@ function SearchPage({activeCat,th}){
           ...(q ? [{label:'Search: ' + q, onRemove:()=>setQ('')}] : []),
           ...(minPr > 0 || maxPr < prMx ? [{label:`Price: $${minPr}-$${maxPr}`, onRemove:()=>{setMinPr(0);setMaxPr(5000);}}] : []),
           ...brands.map(b=>({label:'Brand: ' + b, onRemove:()=>setBrands(prev=>prev.filter(x=>x!==b))})),
-          ...marketplaces.map(m=>({label:'Marketplace: ' + m.charAt(0).toUpperCase()+m.slice(1), onRemove:()=>setMarketplaces(prev=>prev.filter(x=>x!==m))})),
+          ...marketplaces.map(m=>({label:'Marketplace: ' + retailerDisplayName(m), onRemove:()=>setMarketplaces(prev=>prev.filter(x=>x!==m))})),
           ...(minR > 0 ? [{label:`Rating: ${minR}+`, onRemove:()=>setMinR(0)}] : []),
           ...(cpO ? [{label:'Customer Picks Only', onRemove:()=>setCpO(false)}] : []),
           ...Object.entries(sf).flatMap(([key,vals])=>{
