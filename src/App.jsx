@@ -31,7 +31,7 @@ async function apiFetch(path, body) {
 /* ═══ DATA ═══ */
 const CAT={
   // Core
-  Case:{icon:"📦",label:"Cases",singular:"Case",desc:"Towers & SFF cases",cols:["ff","tower","tg","maxGPU","fans_inc"],filters:{ff:{label:"Type",type:"check"},mobo:{label:"Mobo Support",type:"check",extract:p=>(p.mobo||[]).join(",")},maxGPU:{label:"Max GPU Length",type:"range",unit:"mm"},maxCooler:{label:"Max Cooler Height",type:"range",unit:"mm"},rads:{label:"AIO/Radiator Support",type:"check",extract:p=>{const arr=Array.isArray(p.rads)?p.rads:[];if(!arr.length)return"None";const max=Math.max(...arr);return"Up to "+max+"mm"}},fans_inc:{label:"Included Fans",type:"check"},tg:{label:"Tempered Glass",type:"bool"},usb_c:{label:"Front USB-C",type:"bool"}}},
+  Case:{icon:"📦",label:"Cases",singular:"Case",desc:"Towers & SFF cases",cols:["ff","tower","tg","maxGPU","fans_inc"],filters:{ff:{label:"Type",type:"check"},mobo:{label:"Mobo Support",type:"check",extract:p=>Array.isArray(p.mobo)?p.mobo:(p.mobo?String(p.mobo).split(",").map(s=>s.trim()).filter(Boolean):[])},maxGPU:{label:"Max GPU Length",type:"range",unit:"mm"},maxCooler:{label:"Max Cooler Height",type:"range",unit:"mm"},rads:{label:"AIO/Radiator Support",type:"check",extract:p=>{const arr=Array.isArray(p.rads)?p.rads:[];if(!arr.length)return"None";const max=Math.max(...arr);return"Up to "+max+"mm"}},fans_inc:{label:"Included Fans",type:"check"},tg:{label:"Clear Side Panel",type:"bool"},usb_c:{label:"Front USB-C",type:"bool"}}},
   CPU:{icon:"🔴",label:"Processors",singular:"CPU",desc:"Desktop CPUs",cols:["cores","socket","tdp","bench"],filters:{socket:{label:"Socket",type:"check"},cores:{label:"Core Count",type:"check"},tdp:{label:"TDP",type:"range",unit:"W"},arch:{label:"Architecture",type:"check"},memType:{label:"Memory Type",type:"check"},igpu:{label:"Integrated Graphics",type:"bool"},vcache:{label:"3D V-Cache",type:"bool"},serverCPU:{label:"Server CPU",type:"bool"}}},
   CPUCooler:{icon:"❄️",label:"CPU Coolers",singular:"CPU Cooler",desc:"Air & AIO liquid coolers",cols:["coolerType","tdp_rating","cfm","noise"],filters:{coolerType:{label:"Type",type:"check"},tdp_rating:{label:"TDP Rating",type:"range",unit:"W"},cfm:{label:"Airflow (CFM)",type:"range"},noise:{label:"Noise Level",type:"range",unit:"dBA"},radSize:{label:"Radiator Size",type:"check"},fans:{label:"Fan Count",type:"check"}}},
   Motherboard:{icon:"🟡",label:"Motherboards",singular:"Motherboard",desc:"ATX, mATX & ITX boards",cols:["socket","ff","chipset","wifi"],filters:{socket:{label:"Socket",type:"check"},chipset:{label:"Chipset",type:"check"},ff:{label:"Form Factor",type:"check"},memType:{label:"Memory Type",type:"check"},memSlots:{label:"Memory Slots",type:"check"},m2Slots:{label:"M.2 Slots",type:"check"},wifi:{label:"WiFi",type:"check"},usb_c:{label:"USB-C",type:"bool"}}},
@@ -85,7 +85,7 @@ const BUILDER_SECTIONS=[
   {id:"peripherals",label:"Peripherals",icon:"🖥️",cats:PERIPH_CATS},
   {id:"accessories",label:"Accessories",icon:"🎒",cats:ACCESSORY_CATS},
 ];
-const SL={cores:"Cores/Threads",socket:"Socket",tdp:"TDP",bench:"Score",vram:"VRAM",cap:"Capacity",speed:"Speed",ff:"Form Factor",wifi:"WiFi",storageType:"Type",watts:"Watts",eff:"Rating",modular:"Modular",panel:"Panel",res:"Resolution",refresh:"Refresh",screenSize:"Screen",switches:"Switches",layout:"Layout",wireless:"Wireless",baseClock:"Base Clock",boostClock:"Boost Clock",threads:"Threads",length:"Length",pwr:"Power",seq_r:"Read",seq_w:"Write",cl:"CAS Latency",ramType:"Type",chipset:"Chipset",coolerType:"Type",noise:"Noise",tdp_rating:"TDP Rating",fans_inc:"Fans Included",maxGPU:"Max GPU Length",maxCooler:"Max Cooler",cfm:"Airflow",size:"Size",sensor:"Sensor",dpi:"DPI",weight:"Weight",driver:"Driver",mic:"Mic",hsType:"Type",mouseType:"Type",segment:"Use Case",arch:"Architecture",pcie:"PCIe",tg:"Glass Panel",usb_c:"USB-C",mobo:"Mobo Support",drive25:"2.5in Bays",drive35:"3.5in Bays",memType:"Memory",memSlots:"RAM Slots",maxMem:"Max RAM",m2Slots:"M.2 Slots",lan:"Ethernet",ecc:"ECC",rgb:"RGB",rgbType:"RGB Type",rgbConnector:"RGB Connector",color:"Color",igpu:"iGPU",igpuName:"iGPU Name",vcache:"V-Cache",serverCPU:"Server",pCores:"P-Cores",eCores:"E-Cores",l3:"L3 Cache",nm:"Process",bus:"Bus Width",slots:"Slot Width",interface:"Interface",dram:"DRAM Cache",tlc:"NAND Type",pack:"Pack",atx3:"ATX 3.0",radSize:"Radiator",rads:"AIO Support",height:"Height",fans:"Fans",fanSize:"Fan Size",response:"Response",sync:"Adaptive Sync",hdr:"HDR",curved:"Curved",hotswap:"Hot-Swap",pollingRate:"Polling Rate",shape:"Grip",anc:"ANC",surroundSound:"Surround",openBack:"Open Back",autofocus:"Autofocus",fov:"FOV",pattern:"Pattern",sampleRate:"Sample Rate",bitDepth:"Bit Depth",connection:"Connection",connector:"Fan Connector",channels:"Channels",snr:"SNR",hasAmp:"Headphone Amp",lanSpeed:"Speed",ports:"Ports",wifiStandard:"WiFi",bt:"Bluetooth",driveType:"Drive Type",readSpeed:"Read Speed",writeSpeed:"Write Speed",memSpeed:"Memory Speed*",audio:"Audio",sticks:"Sticks",voltage:"Voltage",cuda:"CUDA Cores",boost:"Boost Clock",tier:"Suggested Use",sp:"Stream Processors",xeCores:"Xe Cores",maxMemSpeed:"Max RAM Speed",sata:"SATA Ports",pciSlots:"PCIe Slots",impedance:"Max Impedance",formFactor:"Form Factor",digitalOut:"Digital Output",pcieLane:"PCIe Lane",profile:"Profile",wol:"Wake-on-LAN",vlan:"VLAN",pxe:"PXE Boot",maxSpeed:"Max Speed",antennas:"Antennas",band:"Band",heatsink:"Heatsink",dacChip:"DAC Chip",outputPower:"Output Power",upc:"UPC",mpn:"Model #",model:"Model",generation:"Generation",vramType:"VRAM Type",dimensions:"Dimensions",form:"Form",tower:"Tower",series:"Series",compatibility:"Compatibility",contrast:"Contrast",rpm:"RPM"};
+const SL={cores:"Cores/Threads",socket:"Socket",tdp:"TDP",bench:"Score",vram:"VRAM",cap:"Capacity",speed:"Speed",ff:"Form Factor",wifi:"WiFi",storageType:"Type",watts:"Watts",eff:"Rating",modular:"Modular",panel:"Panel",res:"Resolution",refresh:"Refresh",screenSize:"Screen",switches:"Switches",layout:"Layout",wireless:"Wireless",baseClock:"Base Clock",boostClock:"Boost Clock",threads:"Threads",length:"Length",pwr:"Power",seq_r:"Read",seq_w:"Write",cl:"CAS Latency",ramType:"Type",chipset:"Chipset",coolerType:"Type",noise:"Noise",tdp_rating:"TDP Rating",fans_inc:"Fans Included",maxGPU:"Max GPU Length",maxCooler:"Max Cooler",cfm:"Airflow",size:"Size",sensor:"Sensor",dpi:"DPI",weight:"Weight",driver:"Driver",mic:"Mic",hsType:"Type",mouseType:"Type",segment:"Use Case",arch:"Architecture",pcie:"PCIe",tg:"Side Panel",usb_c:"USB-C",mobo:"Mobo Support",drive25:"2.5in Bays",drive35:"3.5in Bays",memType:"Memory",memSlots:"RAM Slots",maxMem:"Max RAM",m2Slots:"M.2 Slots",lan:"Ethernet",ecc:"ECC",rgb:"RGB",rgbType:"RGB Type",rgbConnector:"RGB Connector",color:"Color",igpu:"iGPU",igpuName:"iGPU Name",vcache:"V-Cache",serverCPU:"Server",pCores:"P-Cores",eCores:"E-Cores",l3:"L3 Cache",nm:"Process",bus:"Bus Width",slots:"Slot Width",interface:"Interface",dram:"DRAM Cache",tlc:"NAND Type",pack:"Pack",atx3:"ATX 3.0",radSize:"Radiator",rads:"AIO Support",height:"Height",fans:"Fans",fanSize:"Fan Size",response:"Response",sync:"Adaptive Sync",hdr:"HDR",curved:"Curved",hotswap:"Hot-Swap",pollingRate:"Polling Rate",shape:"Grip",anc:"ANC",surroundSound:"Surround",openBack:"Open Back",autofocus:"Autofocus",fov:"FOV",pattern:"Pattern",sampleRate:"Sample Rate",bitDepth:"Bit Depth",connection:"Connection",connector:"Fan Connector",channels:"Channels",snr:"SNR",hasAmp:"Headphone Amp",lanSpeed:"Speed",ports:"Ports",wifiStandard:"WiFi",bt:"Bluetooth",driveType:"Drive Type",readSpeed:"Read Speed",writeSpeed:"Write Speed",memSpeed:"Memory Speed*",audio:"Audio",sticks:"Sticks",voltage:"Voltage",cuda:"CUDA Cores",boost:"Boost Clock",tier:"Suggested Use",sp:"Stream Processors",xeCores:"Xe Cores",maxMemSpeed:"Max RAM Speed",sata:"SATA Ports",pciSlots:"PCIe Slots",impedance:"Max Impedance",formFactor:"Form Factor",digitalOut:"Digital Output",pcieLane:"PCIe Lane",profile:"Profile",wol:"Wake-on-LAN",vlan:"VLAN",pxe:"PXE Boot",maxSpeed:"Max Speed",antennas:"Antennas",band:"Band",heatsink:"Heatsink",dacChip:"DAC Chip",outputPower:"Output Power",upc:"UPC",mpn:"Model #",model:"Model",generation:"Generation",vramType:"VRAM Type",dimensions:"Dimensions",form:"Form",tower:"Tower",series:"Series",compatibility:"Compatibility",contrast:"Contrast",rpm:"RPM"};
 const SF={cores:(v,p)=>p&&p.threads?v+"C/"+p.threads+"T":v+"C",sticks:(v,p)=>{if(!v)return v;const total=p&&(p.cap||p.capacity);if(total&&v>0){const per=Math.round(total/v);return v+"x"+per+"GB";}return v+"x";},tdp:v=>v+"W",vram:v=>typeof v==="number"?v+"GB":v,cap:v=>typeof v==="number"?(v>=1000?(Math.round(v/100)/10).toString().replace(/\.0$/,"")+"TB":v+"GB"):v,speed:v=>v+"MHz",watts:v=>v+"W",wifi:v=>v||"None",refresh:v=>v+"Hz",screenSize:v=>v+'"',bench:v=>v+"%",baseClock:v=>v+"GHz",boostClock:v=>v+"GHz",length:v=>v+"mm",seq_r:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",seq_w:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",noise:v=>{const n=typeof v==="number"?v:parseFloat(v);if(isNaN(n))return v;const ref=n<=15?"Near silent":n<=20?"Whisper quiet":n<=25?"Library quiet":n<=30?"Quiet room":n<=35?"Light hum":n<=40?"Noticeable":"Loud";return n+"dBA\n"+ref;},tdp_rating:(v,p)=>p&&p.tdp_rating_est?"~"+v+"W":v+"W",maxGPU:v=>v+"mm",maxCooler:v=>v+"mm",cfm:v=>typeof v==="number"?v.toFixed(1)+" CFM":v,dpi:v=>v>=1000?(v/1000)+"K":v,weight:v=>{if(v==null)return"—";if(typeof v==="number")return v+"g";const s=String(v);let m=s.match(/([\d.]+)\s*(kilogram|kg)/i);if(m)return(parseFloat(m[1])*2.20462).toFixed(1)+" lbs";m=s.match(/([\d.]+)\s*(gram|g)\b/i);if(m)return(parseFloat(m[1])/453.592).toFixed(2)+" lbs";m=s.match(/([\d.]+)\s*(pound|lb|lbs)/i);if(m)return parseFloat(m[1]).toFixed(1)+" lbs";m=s.match(/([\d.]+)\s*(ounce|oz)/i);if(m)return(parseFloat(m[1])/16).toFixed(2)+" lbs";return s;},cl:v=>"CL"+v,driver:v=>v+"mm",height:v=>v+"mm",voltage:v=>v+"V",boost:v=>v+"MHz",tier:v=>typeof v==="string"?v.charAt(0).toUpperCase()+v.slice(1):v,snr:v=>v+"dB",sampleRate:v=>v===0?"Analog":v+"kHz",lanSpeed:v=>v,tg:v=>v?"Yes":"No",usb_c:v=>v?"Yes":"No",ecc:v=>v?"Yes":"No",rgb:v=>v?"Yes":"No",igpu:v=>v?"Yes":"No",vcache:v=>v?"Yes":"No",serverCPU:v=>v?"Yes":"No",atx3:v=>v?"Yes":"No",dram:v=>v?"Yes":"No",wireless:v=>v?"Yes":"No",curved:v=>v?"Yes":"No",hotswap:v=>v?"Yes":"No",anc:v=>v?"Yes":"No",mic:v=>typeof v==="boolean"?(v?"Yes":"No"):v,hasAmp:v=>v?"Yes":"No",autofocus:v=>v?"Yes":"No",wol:v=>v?"Yes":"No",vlan:v=>v?"Yes":"No",pxe:v=>v?"Yes":"No",digitalOut:v=>v?"Yes":"No",heatsink:v=>v?"Yes":"No",pwm:v=>v?"Yes":"No",impedance:v=>v+"Ω",pcie:v=>String(v).startsWith("Gen")?v:"Gen"+v,fanSize:v=>typeof v==="number"?v+"mm":v,fans_inc:v=>v+(v===1?" fan":" fans"),socket:v=>typeof v==="string"?v.toUpperCase():v,chipset:v=>typeof v==="string"?v.toUpperCase():v,memType:v=>typeof v==="string"?v.toUpperCase():v,panel:v=>typeof v==="string"?v.toUpperCase():v,upc:v=>{if(!v)return"—";const list=String(v).split(",").map(x=>x.trim()).filter(Boolean);return list.length>1?list[0]+" (+"+(list.length-1)+")":list[0];},rads:v=>{if(!v)return"None";const sizes=String(v).split(",").map(s=>s.trim());const max=Math.max(...sizes.map(s=>parseInt(s)||0));return max>=360?"Up to 360mm":max>=280?"Up to 280mm":max>=240?"Up to 240mm":max>=120?"120mm only":"None";}};
 const fmt=(k,v,p)=>v==null?"—":(SF[k]?SF[k](v,p):String(v));
 
@@ -230,7 +230,7 @@ const BUILDS=[
 
 const fp=id=>P.find(p=>p.id===id)||SEED_PARTS.find(p=>p.id===id);
 const ic=p=>CAT[p.c]?.icon||"📦";
-const uv=(cat,f,extract)=>{const items=P.filter(p=>p.c===cat&&p[f]!=null);const vals=extract?items.map(p=>extract(p)).filter(v=>v!=null&&v!==""):items.map(p=>String(p[f]));return [...new Set(vals)].sort((a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true}));};
+const uv=(cat,f,extract)=>{const items=P.filter(p=>p.c===cat&&p[f]!=null);let vals;if(extract){vals=[];for(const p of items){const v=extract(p);if(Array.isArray(v))vals.push(...v.filter(x=>x!=null&&x!==""));else if(v!=null&&v!=="")vals.push(v);}}else{vals=items.map(p=>String(p[f]));}return [...new Set(vals)].sort((a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true}));};
 
 /* ═══ RETAILER PRICE COMPARISON COMPONENT ═══ */
 function PriceCompare({part}) {
@@ -249,7 +249,7 @@ function PriceCompare({part}) {
             {i===0 && <Tag color="var(--mint)">BEST</Tag>}
             {!r.inStock && <Tag color="var(--rose)">OOS</Tag>}
           </div>
-          <span style={{fontFamily:"var(--mono)",fontSize:12,fontWeight:700,color:i===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
+          <span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:i===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
         </a>
       ))}
     </div>
@@ -258,8 +258,8 @@ function PriceCompare({part}) {
 
 /* ═══ STYLES ═══ */
 const css=`
-[data-theme="dark"]{--bg:#141418;--bg2:#1c1c22;--bg3:#232329;--bg4:#2c2c34;--bdr:rgba(255,255,255,0.06);--bdr2:rgba(255,255,255,0.1);--accent:#FF6B35;--accent2:#FF6B3540;--accent3:#FF6B3514;--mint:#FF6B35;--mint2:#FF6B3540;--mint3:#FF6B3514;--txt:#f0ede8;--dim:#a29d93;--mute:#6f685d;--amber:#f5a623;--rose:#ef4444;--sky:#38bdf8;--violet:#a78bfa;--ff:'Sora',system-ui,sans-serif;--mono:'DM Mono',monospace;--navbg:rgba(20,20,24,0.88);--heroGrad:linear-gradient(160deg,#141418 0%,#1e1410 40%,#141418 100%);--card:rgba(28,28,34,0.7);--shadow:0 4px 24px rgba(0,0,0,.25);--shadowSm:0 2px 8px rgba(0,0,0,.15)}
-[data-theme="light"]{--bg:#faf8f5;--bg2:#ffffff;--bg3:#f2efe8;--bg4:#e8e4dc;--bdr:rgba(120,100,80,0.1);--bdr2:rgba(120,100,80,0.15);--accent:#d94e1c;--accent2:#d94e1c40;--accent3:#d94e1c10;--mint:#d94e1c;--mint2:#d94e1c40;--mint3:#d94e1c10;--txt:#1f1a16;--dim:#5a5248;--mute:#8a8378;--amber:#d4940a;--rose:#dc2626;--sky:#0284c7;--violet:#7c3aed;--ff:'Sora',system-ui,sans-serif;--mono:'DM Mono',monospace;--navbg:rgba(250,248,245,0.92);--heroGrad:linear-gradient(160deg,#faf8f5 0%,#fff4ec 40%,#faf8f5 100%);--card:rgba(255,255,255,0.8);--shadow:0 4px 24px rgba(80,60,30,.08);--shadowSm:0 2px 8px rgba(80,60,30,.05)}
+[data-theme="dark"]{--bg:#141418;--bg2:#1c1c22;--bg3:#232329;--bg4:#2c2c34;--bdr:rgba(255,255,255,0.06);--bdr2:rgba(255,255,255,0.1);--accent:#FF6B35;--accent2:#FF6B3540;--accent3:#FF6B3514;--mint:#FF6B35;--mint2:#FF6B3540;--mint3:#FF6B3514;--txt:#f0ede8;--dim:#a29d93;--mute:#8b8478;--amber:#f5a623;--rose:#ef4444;--sky:#38bdf8;--violet:#a78bfa;--ff:'Sora',system-ui,sans-serif;--mono:'DM Mono',monospace;--navbg:rgba(20,20,24,0.88);--heroGrad:linear-gradient(160deg,#141418 0%,#1e1410 40%,#141418 100%);--card:rgba(28,28,34,0.7);--shadow:0 4px 24px rgba(0,0,0,.25);--shadowSm:0 2px 8px rgba(0,0,0,.15)}
+[data-theme="light"]{--bg:#faf8f5;--bg2:#ffffff;--bg3:#f2efe8;--bg4:#e8e4dc;--bdr:rgba(120,100,80,0.1);--bdr2:rgba(120,100,80,0.15);--accent:#d94e1c;--accent2:#d94e1c40;--accent3:#d94e1c10;--mint:#d94e1c;--mint2:#d94e1c40;--mint3:#d94e1c10;--txt:#1f1a16;--dim:#5a5248;--mute:#5a5248;--amber:#d4940a;--rose:#dc2626;--sky:#0284c7;--violet:#7c3aed;--ff:'Sora',system-ui,sans-serif;--mono:'DM Mono',monospace;--navbg:rgba(250,248,245,0.92);--heroGrad:linear-gradient(160deg,#faf8f5 0%,#fff4ec 40%,#faf8f5 100%);--card:rgba(255,255,255,0.8);--shadow:0 4px 24px rgba(80,60,30,.08);--shadowSm:0 2px 8px rgba(80,60,30,.05)}
 *{box-sizing:border-box;margin:0}::selection{background:var(--accent3);color:var(--accent)}
 .mega-in{animation:mIn .2s cubic-bezier(.16,1,.3,1)}@keyframes mIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
 .fade{animation:fIn .35s cubic-bezier(.16,1,.3,1)}@keyframes fIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
@@ -707,11 +707,23 @@ function FG({label,children,open:defaultOpen=false}){
   </div>;
 }
 function Chk({label,checked,onChange,count}){
-  return <label style={{display:"flex",alignItems:"center",gap:6,padding:"3px 0",cursor:"pointer",fontSize:11,fontFamily:"var(--ff)",color:checked?"var(--accent)":"var(--txt)"}}>
+  return <label style={{display:"flex",alignItems:"center",gap:6,padding:"5px 0",cursor:"pointer",fontSize:14,fontFamily:"var(--ff)",color:checked?"var(--accent)":"var(--txt)"}}>
     <input type="checkbox" checked={checked} onChange={onChange} style={{accentColor:"var(--accent)",margin:0}}/>
     <span style={{flex:1}}>{label}</span>
-    {count!=null&&<span style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--mute)"}}>{count}</span>}
+    {count!=null&&<span style={{fontFamily:"var(--mono)",fontSize:12,color:"var(--dim)",fontWeight:600}}>{count}</span>}
   </label>;
+}
+
+/* === Active Filter Chips Bar === */
+function FilterChips({chips}){
+  if(!chips || chips.length===0) return null;
+  return <div style={{display:"flex",flexWrap:"wrap",gap:6,marginBottom:10,padding:"6px 0",borderBottom:"1px solid var(--bdr)"}}>
+    <span style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--dim)",alignSelf:"center",letterSpacing:0.5,marginRight:4}}>FILTERS:</span>
+    {chips.map((c,i)=><button key={i} onClick={c.onRemove} style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",borderRadius:14,padding:"4px 8px 4px 10px",fontFamily:"var(--ff)",fontSize:12,color:"var(--accent)",cursor:"pointer",fontWeight:600}}>
+      <span>{c.label}</span>
+      <span style={{fontSize:14,lineHeight:1,opacity:0.8}}>×</span>
+    </button>)}
+  </div>;
 }
 
 /* ═══ SEARCHABLE SELECT DROPDOWN ═══ */
@@ -734,20 +746,20 @@ function SearchSelect({value,onChange,options,placeholder="Search..."}){
         ?<input ref={inputRef} value={query} onChange={e=>{e.stopPropagation();setQuery(e.target.value);}}
           onClick={e=>e.stopPropagation()}
           placeholder={selectedLabel||placeholder}
-          style={{flex:1,background:"none",border:"none",outline:"none",fontSize:12,color:"var(--txt)",fontFamily:"var(--ff)",width:"100%"}}/>
-        :<span style={{flex:1,fontSize:12,fontFamily:"var(--ff)",color:value?"var(--txt)":"var(--mute)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{selectedLabel||placeholder}</span>
+          style={{flex:1,background:"none",border:"none",outline:"none",fontSize:13,color:"var(--txt)",fontFamily:"var(--ff)",width:"100%"}}/>
+        :<span style={{flex:1,fontSize:13,fontFamily:"var(--ff)",color:value?"var(--txt)":"var(--mute)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{selectedLabel||placeholder}</span>
       }
       <span style={{fontSize:10,color:"var(--mute)",transition:"transform .2s",transform:open?"rotate(180deg)":"none",flexShrink:0}}>▾</span>
     </div>
     {open&&<div style={{position:"absolute",top:"calc(100% + 4px)",left:0,right:0,background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,boxShadow:"0 8px 32px rgba(0,0,0,.15)",zIndex:50,maxHeight:320,overflowY:"auto",padding:4}}>
-      {filtered.length===0&&<div style={{padding:"12px 16px",fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)",textAlign:"center"}}>No results found</div>}
+      {filtered.length===0&&<div style={{padding:"12px 16px",fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)",textAlign:"center"}}>No results found</div>}
       {filtered.map(o=><button key={o.value} onClick={e=>{e.stopPropagation();onChange(o.value);setOpen(false);setQuery("");}}
-        style={{display:"flex",alignItems:"center",gap:8,width:"100%",padding:"8px 12px",borderRadius:6,background:value===o.value?"var(--accent3)":"transparent",border:"none",cursor:"pointer",textAlign:"left",fontFamily:"var(--ff)",fontSize:12,color:value===o.value?"var(--accent)":"var(--txt)",transition:"background .1s"}}
+        style={{display:"flex",alignItems:"center",gap:8,width:"100%",padding:"8px 12px",borderRadius:6,background:value===o.value?"var(--accent3)":"transparent",border:"none",cursor:"pointer",textAlign:"left",fontFamily:"var(--ff)",fontSize:13,color:value===o.value?"var(--accent)":"var(--txt)",transition:"background .1s"}}
         onMouseEnter={e=>{if(value!==o.value)e.currentTarget.style.background="var(--bg3)";}}
         onMouseLeave={e=>{if(value!==o.value)e.currentTarget.style.background="transparent";}}>
         <span style={{flex:1,whiteSpace:"normal",wordBreak:"break-word",lineHeight:1.3}}>{o.label}</span>
         {o.detail&&<span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",flexShrink:0}}>{o.detail}</span>}
-        {value===o.value&&<span style={{fontSize:11,color:"var(--accent)",flexShrink:0}}>✓</span>}
+        {value===o.value&&<span style={{fontSize:13,color:"var(--accent)",flexShrink:0}}>✓</span>}
       </button>)}
     </div>}
   </div>;
@@ -875,9 +887,9 @@ function CatThumb({ cat, thumbs, setThumb, removeThumb, size = 48, editable = tr
 function MegaMenu({onSelect,onClose,th}){
   const G=[{t:"Components",cats:["CPU","GPU","RAM","Motherboard","Storage","PSU"]},{t:"Build",cats:["Case","CPUCooler","CaseFan"]},{t:"Peripherals",cats:["Monitor","Keyboard","Mouse","Headset"]},{t:"Expansion",cats:["SoundCard","WiFiCard","EthernetCard","ExtensionCables"]}];
   return <div className="mega-in" style={{position:"absolute",top:"100%",left:0,right:0,background:"var(--bg2)",borderBottom:"1px solid var(--bdr2)",zIndex:100,padding:"20px 0"}} onMouseLeave={onClose}>
-    <div style={{maxWidth:960,margin:"0 auto",display:"flex",gap:32,padding:"0 24px"}}>
-      {G.map(g=><div key={g.t} style={{flex:1}}><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)",letterSpacing:2,marginBottom:10,fontWeight:600}}>{g.t.toUpperCase()}</div>{g.cats.map(c=>{const m=CAT[c];return <button key={c} onClick={()=>{onSelect(c);onClose();}} style={{display:"flex",alignItems:"center",gap:8,padding:"7px 8px",borderRadius:6,background:"transparent",border:"none",cursor:"pointer",textAlign:"left",color:"var(--txt)",fontFamily:"var(--ff)",width:"100%"}}><CatThumb cat={c} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={32} rounded={6} editable={false}/><div style={{flex:1}}><div style={{fontSize:12,fontWeight:600}}>{m.label}</div><div style={{fontSize:9,color:"var(--dim)"}}>{m.desc}</div></div><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)"}}>{P.filter(p=>p.c===c).length}</span></button>})}</div>)}
-      <div style={{width:180,background:"var(--bg3)",borderRadius:10,padding:14}}><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--amber)",letterSpacing:1,marginBottom:6}}>🔥 TRENDING</div>{P.filter(p=>p.bench>=95).slice(0,3).map(p=><div key={p.id} style={{display:"flex",justifyContent:"space-between",padding:"5px 0",borderBottom:"1px solid var(--bdr)"}}><span style={{fontSize:11,color:"var(--txt)"}}>{p.n}</span><span style={{fontSize:10,color:"var(--mint)",fontFamily:"var(--mono)",fontWeight:600}}>${fmtPrice($(p))}</span></div>)}</div>
+    <div style={{maxWidth:1320,margin:"0 auto",display:"flex",gap:32,padding:"0 24px"}}>
+      {G.map(g=><div key={g.t} style={{flex:1}}><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)",letterSpacing:2,marginBottom:10,fontWeight:600}}>{g.t.toUpperCase()}</div>{g.cats.map(c=>{const m=CAT[c];return <button key={c} onClick={()=>{onSelect(c);onClose();}} style={{display:"flex",alignItems:"center",gap:8,padding:"7px 8px",borderRadius:6,background:"transparent",border:"none",cursor:"pointer",textAlign:"left",color:"var(--txt)",fontFamily:"var(--ff)",width:"100%"}}><CatThumb cat={c} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={32} rounded={6} editable={false}/><div style={{flex:1}}><div style={{fontSize:13,fontWeight:600}}>{m.label}</div><div style={{fontSize:9,color:"var(--dim)"}}>{m.desc}</div></div><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)"}}>{P.filter(p=>p.c===c).length}</span></button>})}</div>)}
+      <div style={{width:180,background:"var(--bg3)",borderRadius:10,padding:14}}><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--amber)",letterSpacing:1,marginBottom:6}}>🔥 TRENDING</div>{P.filter(p=>p.bench>=95).slice(0,3).map(p=><div key={p.id} style={{display:"flex",justifyContent:"space-between",padding:"5px 0",borderBottom:"1px solid var(--bdr)"}}><span style={{fontSize:13,color:"var(--txt)"}}>{p.n}</span><span style={{fontSize:10,color:"var(--mint)",fontFamily:"var(--mono)",fontWeight:600}}>${fmtPrice($(p))}</span></div>)}</div>
     </div>
   </div>;
 }
@@ -887,27 +899,27 @@ function Nav({page,setPage,onBrowse,th,theme,toggleTheme}){
   const [mega,setMega]=useState(false);
   const canGoBack = page !== "home";
   return <nav style={{position:"sticky",top:0,zIndex:200,backdropFilter:"blur(20px)",background:"var(--navbg)"}}>
-    <div style={{maxWidth:1200,margin:"0 auto",display:"flex",alignItems:"center",height:64,padding:"0 32px",gap:8}}>
-      {canGoBack&&<button onClick={()=>window.history.back()} style={{background:"none",border:"none",cursor:"pointer",color:"var(--dim)",fontSize:18,padding:"4px 8px 4px 0"}} title="Go back">←</button>}
+    <div style={{maxWidth:1600,margin:"0 auto",display:"flex",alignItems:"center",height:64,padding:"0 32px",gap:8}}>
+      {canGoBack&&<button onClick={()=>window.history.back()} style={{background:"none",border:"none",cursor:"pointer",color:"var(--dim)",fontSize:22,padding:"4px 8px 4px 0"}} title="Go back">←</button>}
       {/* Logo */}
       <button onClick={()=>setPage("home")} style={{background:"none",border:"none",cursor:"pointer",display:"flex",alignItems:"center",gap:8,marginRight:24}}>
         <TowerLogo size={30}/>
-        <div><div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)",lineHeight:1.1}}>Pro Rig</div><div style={{fontFamily:"var(--ff)",fontSize:9,fontWeight:500,color:"var(--dim)",letterSpacing:1.5}}>BUILDER</div></div>
+        <div><div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)",lineHeight:1.1}}>Pro Rig</div><div style={{fontFamily:"var(--ff)",fontSize:9,fontWeight:500,color:"var(--dim)",letterSpacing:1.5}}>BUILDER</div></div>
       </button>
-      <button onClick={()=>setPage("scanner")} style={{display:"inline-flex",alignItems:"center",gap:6,padding:"6px 12px",borderRadius:20,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",fontFamily:"var(--ff)",fontSize:11,fontWeight:700,cursor:"pointer",marginRight:20,transition:"all .15s"}}
+      <button onClick={()=>setPage("scanner")} style={{display:"inline-flex",alignItems:"center",gap:6,padding:"6px 12px",borderRadius:20,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,cursor:"pointer",marginRight:20,transition:"all .15s"}}
         onMouseEnter={e=>{e.currentTarget.style.background="var(--accent)";e.currentTarget.style.color="#fff";}}
         onMouseLeave={e=>{e.currentTarget.style.background="var(--accent3)";e.currentTarget.style.color="var(--accent)";}}>
-        <span style={{fontSize:13}}>📥</span> Scanner
+        <span style={{fontSize:14}}>📥</span> Scanner
       </button>
       {/* Nav links */}
       <div style={{display:"flex",gap:2,flex:1,position:"relative"}}>
         {[{id:"browse",label:"Browse Parts",act:()=>setMega(!mega),arrow:true},{id:"builder",label:"PC Builder"},{id:"community",label:"Builds"},{id:"tools",label:"Smart Tools"}].map(n=>
-          <button key={n.id} onClick={n.act||(()=>{setPage(n.id);setMega(false);})} style={{padding:"8px 16px",borderRadius:10,fontSize:13,fontFamily:"var(--ff)",fontWeight:page===n.id?600:400,cursor:"pointer",background:page===n.id?"var(--accent3)":"transparent",color:page===n.id?"var(--accent)":"var(--dim)",border:"none",transition:"all .2s"}}>{n.label}{n.arrow?" ▾":""}</button>
+          <button key={n.id} onClick={n.act||(()=>{setPage(n.id);setMega(false);})} style={{padding:"8px 16px",borderRadius:10,fontSize:14,fontFamily:"var(--ff)",fontWeight:page===n.id?600:400,cursor:"pointer",background:page===n.id?"var(--accent3)":"transparent",color:page===n.id?"var(--accent)":"var(--dim)",border:"none",transition:"all .2s"}}>{n.label}{n.arrow?" ▾":""}</button>
         )}
         {mega&&<MegaMenu onSelect={c=>{onBrowse(c);setPage("search");}} onClose={()=>setMega(false)} th={th}/>}
       </div>
       {/* Theme toggle — pill shape */}
-      <button onClick={toggleTheme} style={{background:"var(--bg4)",border:"none",borderRadius:20,padding:"6px 14px",cursor:"pointer",display:"flex",alignItems:"center",gap:6,fontSize:13,color:"var(--dim)",fontFamily:"var(--ff)",fontWeight:500,transition:"all .2s"}} title={theme==="dark"?"Switch to light mode":"Switch to dark mode"}>
+      <button onClick={toggleTheme} style={{background:"var(--bg4)",border:"none",borderRadius:20,padding:"6px 14px",cursor:"pointer",display:"flex",alignItems:"center",gap:6,fontSize:14,color:"var(--dim)",fontFamily:"var(--ff)",fontWeight:500,transition:"all .2s"}} title={theme==="dark"?"Switch to light mode":"Switch to dark mode"}>
         {theme==="dark"?"☀️":"🌙"}<span style={{fontSize:10,fontWeight:600}}>{theme==="dark"?"Light":"Dark"}</span>
       </button>
     </div>
@@ -922,14 +934,14 @@ function ScannerPage({go}) {
       {/* ── HERO ── */}
       <div style={{background:"var(--heroGrad)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
-        <div style={{maxWidth:1000,margin:"0 auto",padding:"72px 32px 56px",position:"relative"}}>
-          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--amber)",color:"#1a1a20",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:11,fontWeight:800,letterSpacing:1.5,marginBottom:24}}>
+        <div style={{maxWidth:1320,margin:"0 auto",padding:"72px 32px 56px",position:"relative"}}>
+          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--amber)",color:"#1a1a20",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:13,fontWeight:800,letterSpacing:1.5,marginBottom:24}}>
             ✨ NEW · PROPRIETARY SOLUTION
           </div>
-          <h1 style={{fontFamily:"var(--ff)",fontSize:48,fontWeight:800,color:"var(--txt)",lineHeight:1.05,letterSpacing:-1.2,maxWidth:720}}>
+          <h1 style={{fontFamily:"var(--ff)",fontSize:54,fontWeight:800,color:"var(--txt)",lineHeight:1.05,letterSpacing:-1.2,maxWidth:940}}>
             Meet the <span style={{background:"linear-gradient(135deg, var(--accent), var(--amber))",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>Pro Rig Scanner</span>
           </h1>
-          <p style={{fontFamily:"var(--ff)",fontSize:17,color:"var(--dim)",marginTop:18,lineHeight:1.7,maxWidth:640}}>
+          <p style={{fontFamily:"var(--ff)",fontSize:22,color:"var(--dim)",marginTop:18,lineHeight:1.7,maxWidth:820}}>
             Download our free Windows app, run a quick scan, and get personalized upgrade recommendations tailored to your budget. The scan runs 100% locally on your PC — we never see, store, or collect any of your hardware data. No other site offers this.
           </p>
           <div style={{display:"flex",gap:12,marginTop:32,flexWrap:"wrap"}}>
@@ -942,7 +954,7 @@ function ScannerPage({go}) {
               Browse Parts Manually
             </button>
           </div>
-          <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",marginTop:14,letterSpacing:1}}>
+          <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mute)",marginTop:14,letterSpacing:1}}>
             WINDOWS 10 / 11 · 100% PRIVATE · NO ACCOUNT · NO TRACKING · FREE
           </div>
         </div>
@@ -950,9 +962,9 @@ function ScannerPage({go}) {
 
       {/* ── HOW IT WORKS ── */}
       <div style={{background:"var(--bg2)",borderBottom:"1px solid var(--bdr)"}}>
-        <div style={{maxWidth:1000,margin:"0 auto",padding:"64px 32px"}}>
+        <div style={{maxWidth:1320,margin:"0 auto",padding:"64px 32px"}}>
           <div style={{textAlign:"center",marginBottom:48}}>
-            <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",fontWeight:600,letterSpacing:2,marginBottom:8}}>HOW IT WORKS</div>
+            <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--accent)",fontWeight:600,letterSpacing:2,marginBottom:8}}>HOW IT WORKS</div>
             <h2 style={{fontFamily:"var(--ff)",fontSize:32,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5}}>Three steps. Thirty seconds.</h2>
           </div>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:32}} className="how-grid">
@@ -962,17 +974,17 @@ function ScannerPage({go}) {
               {n:"03",t:"Get Recommendations",d:"Open your personalized upgrade page on prorigbuilder.com with ranked options, pricing, and compatibility already validated."},
             ].map(s=><div key={s.n} style={{background:"var(--bg3)",borderRadius:14,padding:"28px 24px",border:"1px solid var(--bdr)"}}>
               <div style={{fontFamily:"var(--mono)",fontSize:36,fontWeight:800,color:"var(--accent)",opacity:.4,lineHeight:1,marginBottom:14}}>{s.n}</div>
-              <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)",marginBottom:10}}>{s.t}</div>
-              <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.65}}>{s.d}</div>
+              <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:700,color:"var(--txt)",marginBottom:10}}>{s.t}</div>
+              <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.65}}>{s.d}</div>
             </div>)}
           </div>
         </div>
       </div>
 
       {/* ── WHY IT'S DIFFERENT ── */}
-      <div style={{maxWidth:1000,margin:"0 auto",padding:"64px 32px"}}>
+      <div style={{maxWidth:1320,margin:"0 auto",padding:"64px 32px"}}>
         <div style={{textAlign:"center",marginBottom:48}}>
-          <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",fontWeight:600,letterSpacing:2,marginBottom:8}}>WHY SCANNER</div>
+          <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--accent)",fontWeight:600,letterSpacing:2,marginBottom:8}}>WHY SCANNER</div>
           <h2 style={{fontFamily:"var(--ff)",fontSize:32,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5}}>No other site does this.</h2>
         </div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:24}} className="how-grid">
@@ -984,8 +996,8 @@ function ScannerPage({go}) {
           ].map(f=><div key={f.t} style={{background:"var(--card)",borderRadius:14,padding:"24px 22px",border:"1px solid var(--bdr)",display:"flex",gap:16,alignItems:"flex-start"}}>
             <div style={{fontSize:32,lineHeight:1}}>{f.i}</div>
             <div>
-              <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)",marginBottom:6}}>{f.t}</div>
-              <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.6}}>{f.d}</div>
+              <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)",marginBottom:6}}>{f.t}</div>
+              <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.6}}>{f.d}</div>
             </div>
           </div>)}
         </div>
@@ -993,17 +1005,17 @@ function ScannerPage({go}) {
 
       {/* ── SMARTSCREEN REASSURANCE ── */}
       <div style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)"}}>
-        <div style={{maxWidth:720,margin:"0 auto",padding:"48px 32px"}}>
+        <div style={{maxWidth:940,margin:"0 auto",padding:"48px 32px"}}>
           <div style={{background:"var(--card)",border:"1px solid var(--bdr)",borderRadius:14,padding:"24px 26px"}}>
             <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:12}}>
-              <span style={{fontSize:20}}>🛡️</span>
-              <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)"}}>Seeing a Windows warning?</div>
+              <span style={{fontSize:22}}>🛡️</span>
+              <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)"}}>Seeing a Windows warning?</div>
             </div>
-            <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.7,marginBottom:12}}>
+            <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.7,marginBottom:12}}>
               Windows SmartScreen may show a warning because Pro Rig Scanner is newly released. The app is <strong style={{color:"var(--txt)"}}>digitally signed by TieredUp Tech, Inc.</strong> (our parent company) and safe to run.
             </p>
-            <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.7,marginBottom:0}}>
-              <strong style={{color:"var(--txt)"}}>To run it:</strong> Click <span style={{fontFamily:"var(--mono)",fontSize:12,background:"var(--bg4)",padding:"2px 8px",borderRadius:4,color:"var(--accent)"}}>More info</span> on the blue warning, then click <span style={{fontFamily:"var(--mono)",fontSize:12,background:"var(--bg4)",padding:"2px 8px",borderRadius:4,color:"var(--accent)"}}>Run anyway</span>. The warning will disappear automatically as more users download without issue.
+            <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.7,marginBottom:0}}>
+              <strong style={{color:"var(--txt)"}}>To run it:</strong> Click <span style={{fontFamily:"var(--mono)",fontSize:13,background:"var(--bg4)",padding:"2px 8px",borderRadius:4,color:"var(--accent)"}}>More info</span> on the blue warning, then click <span style={{fontFamily:"var(--mono)",fontSize:13,background:"var(--bg4)",padding:"2px 8px",borderRadius:4,color:"var(--accent)"}}>Run anyway</span>. The warning will disappear automatically as more users download without issue.
             </p>
           </div>
         </div>
@@ -1011,17 +1023,17 @@ function ScannerPage({go}) {
 
       {/* ── DOWNLOAD CTA ── */}
       <div style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)"}}>
-        <div style={{maxWidth:720,margin:"0 auto",padding:"64px 32px",textAlign:"center"}}>
+        <div style={{maxWidth:940,margin:"0 auto",padding:"64px 32px",textAlign:"center"}}>
           <h2 style={{fontFamily:"var(--ff)",fontSize:32,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5,marginBottom:14}}>Ready to find your next upgrade?</h2>
           <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",marginBottom:28,lineHeight:1.65}}>
             Download the Pro Rig Scanner and get personalized recommendations in under a minute.
           </p>
-          <a href="https://github.com/tiereduptech/pro-rig-builder/releases/latest/download/ProRigScanner.exe" download style={{textDecoration:"none",padding:"16px 40px",borderRadius:14,fontSize:16,fontFamily:"var(--ff)",fontWeight:700,background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 28px rgba(255,107,53,.35)",display:"inline-flex",alignItems:"center",gap:10,transition:"transform .15s"}}
+          <a href="https://github.com/tiereduptech/pro-rig-builder/releases/latest/download/ProRigScanner.exe" download style={{textDecoration:"none",padding:"16px 40px",borderRadius:14,fontSize:17,fontFamily:"var(--ff)",fontWeight:700,background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 28px rgba(255,107,53,.35)",display:"inline-flex",alignItems:"center",gap:10,transition:"transform .15s"}}
             onMouseEnter={e=>e.currentTarget.style.transform="translateY(-2px)"}
             onMouseLeave={e=>e.currentTarget.style.transform="none"}>
             📥 Download Pro Rig Scanner
           </a>
-          <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",marginTop:16,letterSpacing:1}}>
+          <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mute)",marginTop:16,letterSpacing:1}}>
             Free · Windows 10/11 · 100% Private · No account · No tracking · No data collection
           </div>
         </div>
@@ -1036,12 +1048,12 @@ function PageShell({title, subtitle, children}) {
   return (
     <div className="fade">
       <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)"}}>
-        <div style={{maxWidth:860,margin:"0 auto",padding:"56px 32px 40px"}}>
+        <div style={{maxWidth:1180,margin:"0 auto",padding:"56px 32px 40px"}}>
           <h1 style={{fontFamily:"var(--ff)",fontSize:40,fontWeight:800,color:"var(--txt)",letterSpacing:-1,lineHeight:1.1,marginBottom:subtitle?12:0}}>{title}</h1>
-          {subtitle && <p style={{fontFamily:"var(--ff)",fontSize:16,color:"var(--dim)",lineHeight:1.6,maxWidth:640}}>{subtitle}</p>}
+          {subtitle && <p style={{fontFamily:"var(--ff)",fontSize:17,color:"var(--dim)",lineHeight:1.6,maxWidth:820}}>{subtitle}</p>}
         </div>
       </div>
-      <div style={{maxWidth:860,margin:"0 auto",padding:"48px 32px 64px"}}>
+      <div style={{maxWidth:1180,margin:"0 auto",padding:"48px 32px 64px"}}>
         {children}
       </div>
     </div>
@@ -1052,13 +1064,13 @@ function SectionHeading({children}) {
   return <h2 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:700,color:"var(--txt)",letterSpacing:-0.3,marginTop:36,marginBottom:14}}>{children}</h2>;
 }
 function SubHeading({children}) {
-  return <h3 style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)",marginTop:22,marginBottom:8}}>{children}</h3>;
+  return <h3 style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)",marginTop:22,marginBottom:8}}>{children}</h3>;
 }
 function Para({children}) {
-  return <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:14}}>{children}</p>;
+  return <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:14}}>{children}</p>;
 }
 function Bullet({children}) {
-  return <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:8}}>{children}</li>;
+  return <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:8}}>{children}</li>;
 }
 
 // ─── ABOUT PAGE ───────────────────────────────────────────────────
@@ -1109,11 +1121,11 @@ function AboutPage({go}) {
       </Para>
 
       <div style={{marginTop:40,padding:"24px 28px",background:"var(--card)",borderRadius:12,border:"1px solid var(--bdr)"}}>
-        <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)",marginBottom:10}}>Ready to build?</div>
+        <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)",marginBottom:10}}>Ready to build?</div>
         <Para>Try the PC builder, or download our scanner to get upgrade recommendations for your current rig.</Para>
         <div style={{display:"flex",gap:12,marginTop:14,flexWrap:"wrap"}}>
-          <button onClick={()=>go("builder")} style={{padding:"11px 22px",borderRadius:10,fontSize:13,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none"}}>Start Building →</button>
-          <button onClick={()=>go("scanner")} style={{padding:"11px 22px",borderRadius:10,fontSize:13,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>Try the Scanner</button>
+          <button onClick={()=>go("builder")} style={{padding:"11px 22px",borderRadius:10,fontSize:14,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none"}}>Start Building →</button>
+          <button onClick={()=>go("scanner")} style={{padding:"11px 22px",borderRadius:10,fontSize:14,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>Try the Scanner</button>
         </div>
       </div>
     </PageShell>
@@ -1130,14 +1142,14 @@ function ContactPage() {
           <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>EMAIL</div>
           <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:8}}>General Support</div>
           <a href="mailto:support@tiereduptech.com" style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--accent)",textDecoration:"none",fontWeight:600}}>support@tiereduptech.com</a>
-          <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.6,marginTop:12,marginBottom:0}}>
+          <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.6,marginTop:12,marginBottom:0}}>
             Use this email for all support questions, feature requests, data corrections, partnership inquiries, and anything else.
           </p>
         </div>
         <div style={{background:"var(--card)",borderRadius:12,padding:"24px 26px",border:"1px solid var(--bdr)"}}>
           <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>MAILING ADDRESS</div>
           <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:8}}>TieredUp Tech, Inc.</div>
-          <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.6}}>
+          <div style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.6}}>
             1812 N 16th St<br/>
             Orange, TX 77630<br/>
             United States
@@ -1412,7 +1424,7 @@ function TermsPage() {
 
       <div style={{marginTop:40,padding:"20px 24px",background:"var(--bg3)",borderRadius:10,border:"1px solid var(--bdr)"}}>
         <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",fontWeight:600,letterSpacing:1.5,marginBottom:6}}>DISCLAIMER</div>
-        <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",lineHeight:1.6}}>
+        <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.6}}>
           These Terms of Use are provided for informational purposes and represent our standard operating agreement with users. They are not intended as and do not constitute legal advice. For specific legal questions, consult a licensed attorney.
         </div>
       </div>
@@ -1428,9 +1440,9 @@ function AffiliatePage() {
       <div style={{background:"var(--accent3)",border:"1px solid var(--accent)",borderRadius:12,padding:"20px 24px",marginBottom:28}}>
         <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:10}}>
           <span style={{fontSize:22}}>💡</span>
-          <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)"}}>FTC-Compliant Summary</div>
+          <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)"}}>FTC-Compliant Summary</div>
         </div>
-        <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.65}}>
+        <div style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.65}}>
           Pro Rig Builder earns commissions through affiliate links. When you click a "Buy" button and complete a purchase, we may earn a small commission <strong>at no additional cost to you</strong>. Our recommendations are not influenced by commission rates — we rank products purely on performance, price, and compatibility.
         </div>
       </div>
@@ -1443,7 +1455,7 @@ function AffiliatePage() {
       <SectionHeading>Which Affiliate Programs We Participate In</SectionHeading>
       <Para>Pro Rig Builder participates in the following affiliate programs:</Para>
       <ul style={{paddingLeft:22,marginBottom:14}}>
-        <Bullet><strong>Amazon Associates</strong> — "As an Amazon Associate, we earn from qualifying purchases." Associate tag: <code style={{background:"var(--bg3)",padding:"2px 6px",borderRadius:4,fontFamily:"var(--mono)",fontSize:12}}>tiereduptech-20</code></Bullet>
+        <Bullet><strong>Amazon Associates</strong> — "As an Amazon Associate, we earn from qualifying purchases." Associate tag: <code style={{background:"var(--bg3)",padding:"2px 6px",borderRadius:4,fontFamily:"var(--mono)",fontSize:13}}>tiereduptech-20</code></Bullet>
         <Bullet><strong>Best Buy Affiliate Program</strong> — commissions on qualifying purchases through Best Buy</Bullet>
         <Bullet><strong>Newegg Affiliate Network</strong> (in progress) — launching soon</Bullet>
         <Bullet><strong>B&H Photo Affiliate Program</strong> (in progress) — launching soon</Bullet>
@@ -1544,9 +1556,9 @@ function ComparePage({go}) {
   ];
 
   const renderCell = (val, isPb) => {
-    if (val === true) return <span style={{fontSize:18,color:isPb?"var(--accent)":"var(--mint)",fontWeight:700}}>✓</span>;
-    if (val === false) return <span style={{fontSize:18,color:"var(--mute)",fontWeight:700}}>✗</span>;
-    return <span style={{fontFamily:"var(--ff)",fontSize:11,color:isPb?"var(--accent)":"var(--txt)",fontWeight:isPb?700:500,lineHeight:1.3}}>{val}</span>;
+    if (val === true) return <span style={{fontSize:22,color:isPb?"var(--accent)":"var(--mint)",fontWeight:700}}>✓</span>;
+    if (val === false) return <span style={{fontSize:22,color:"var(--mute)",fontWeight:700}}>✗</span>;
+    return <span style={{fontFamily:"var(--ff)",fontSize:13,color:isPb?"var(--accent)":"var(--txt)",fontWeight:isPb?700:500,lineHeight:1.3}}>{val}</span>;
   };
 
   return (
@@ -1555,23 +1567,23 @@ function ComparePage({go}) {
       {/* HERO */}
       <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
-        <div style={{maxWidth:1100,margin:"0 auto",padding:"72px 32px 48px",position:"relative"}}>
-          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:11,fontWeight:700,letterSpacing:1.5,marginBottom:24}}>
+        <div style={{maxWidth:1600,margin:"0 auto",padding:"72px 32px 48px",position:"relative"}}>
+          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:13,fontWeight:700,letterSpacing:1.5,marginBottom:24}}>
             WHY PRO RIG BUILDER
           </div>
-          <h1 style={{fontFamily:"var(--ff)",fontSize:44,fontWeight:800,color:"var(--txt)",letterSpacing:-1.2,lineHeight:1.08,maxWidth:780}}>
+          <h1 style={{fontFamily:"var(--ff)",fontSize:54,fontWeight:800,color:"var(--txt)",letterSpacing:-1.2,lineHeight:1.08,maxWidth:1000}}>
             How we compare to the <span style={{background:"linear-gradient(135deg, var(--accent), var(--amber))",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>other PC builder tools</span>
           </h1>
-          <p style={{fontFamily:"var(--ff)",fontSize:16,color:"var(--dim)",marginTop:18,lineHeight:1.7,maxWidth:680}}>
+          <p style={{fontFamily:"var(--ff)",fontSize:17,color:"var(--dim)",marginTop:18,lineHeight:1.7,maxWidth:940}}>
             An honest, factual comparison with PCPartPicker, Newegg PC Builder, and Logical Increments — the three biggest PC builder platforms. We focus on facts, not hype. You decide.
           </p>
         </div>
       </div>
 
       {/* BIG COMPARISON TABLE */}
-      <div style={{maxWidth:1100,margin:"0 auto",padding:"48px 32px 24px"}}>
+      <div style={{maxWidth:1600,margin:"0 auto",padding:"48px 32px 24px"}}>
         <h2 style={{fontFamily:"var(--ff)",fontSize:28,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5,marginBottom:18}}>Feature-by-feature comparison</h2>
-        <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",marginBottom:24,lineHeight:1.6}}>
+        <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",marginBottom:24,lineHeight:1.6}}>
           Green check = feature is available. Red X = feature is not available. Text = brief note on implementation. Last verified: April 2026.
         </p>
 
@@ -1582,7 +1594,7 @@ function ComparePage({go}) {
                 <th style={{textAlign:"left",padding:"14px 16px",fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",fontWeight:700,letterSpacing:1.5,minWidth:180}}>FEATURE</th>
                 {competitors.map(c => (
                   <th key={c.key} style={{textAlign:"center",padding:"14px 12px",minWidth:130}}>
-                    <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:c.color,marginBottom:c.badge?4:0}}>{c.name}</div>
+                    <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:c.color,marginBottom:c.badge?4:0}}>{c.name}</div>
                     {c.badge && <div style={{display:"inline-block",background:c.color,color:"#fff",fontFamily:"var(--mono)",fontSize:9,fontWeight:800,padding:"2px 8px",borderRadius:4,letterSpacing:1}}>{c.badge}</div>}
                   </th>
                 ))}
@@ -1598,7 +1610,7 @@ function ComparePage({go}) {
                   </tr>
                   {section.items.map((row, ri) => (
                     <tr key={ri} style={{borderTop:"1px solid var(--bdr)"}}>
-                      <td style={{padding:"12px 16px",fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>{row.f}</td>
+                      <td style={{padding:"12px 16px",fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>{row.f}</td>
                       <td style={{padding:"12px",textAlign:"center",background:"var(--accent3)"}}>{renderCell(row.pb, true)}</td>
                       <td style={{padding:"12px",textAlign:"center"}}>{renderCell(row.pcpp)}</td>
                       <td style={{padding:"12px",textAlign:"center"}}>{renderCell(row.newegg)}</td>
@@ -1614,9 +1626,9 @@ function ComparePage({go}) {
 
       {/* DEEP DIVES */}
       <div style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)",marginTop:48}}>
-        <div style={{maxWidth:1100,margin:"0 auto",padding:"56px 32px"}}>
+        <div style={{maxWidth:1600,margin:"0 auto",padding:"56px 32px"}}>
           <div style={{textAlign:"center",marginBottom:40}}>
-            <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",fontWeight:700,letterSpacing:2,marginBottom:8}}>DEEP DIVE</div>
+            <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--accent)",fontWeight:700,letterSpacing:2,marginBottom:8}}>DEEP DIVE</div>
             <h2 style={{fontFamily:"var(--ff)",fontSize:32,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5}}>What actually sets us apart</h2>
           </div>
 
@@ -1665,8 +1677,8 @@ function ComparePage({go}) {
             ].map(f => (
               <div key={f.t} style={{background:"var(--card)",borderRadius:14,padding:"26px 28px",border:"1px solid var(--bdr)"}}>
                 <div style={{fontSize:28,lineHeight:1,marginBottom:14}}>{f.i}</div>
-                <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)",marginBottom:10,lineHeight:1.25}}>{f.t}</div>
-                <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.7}}>{f.d}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)",marginBottom:10,lineHeight:1.25}}>{f.t}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.7}}>{f.d}</div>
               </div>
             ))}
           </div>
@@ -1674,9 +1686,9 @@ function ComparePage({go}) {
       </div>
 
       {/* HEAD-TO-HEAD SECTIONS */}
-      <div style={{maxWidth:1000,margin:"0 auto",padding:"56px 32px"}}>
+      <div style={{maxWidth:1320,margin:"0 auto",padding:"56px 32px"}}>
         <div style={{textAlign:"center",marginBottom:40}}>
-          <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",fontWeight:700,letterSpacing:2,marginBottom:8}}>HEAD TO HEAD</div>
+          <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--accent)",fontWeight:700,letterSpacing:2,marginBottom:8}}>HEAD TO HEAD</div>
           <h2 style={{fontFamily:"var(--ff)",fontSize:32,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5}}>Direct comparisons</h2>
         </div>
 
@@ -1685,20 +1697,20 @@ function ComparePage({go}) {
           <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
             <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)"}}>Pro Rig Builder vs. PCPartPicker</div>
           </div>
-          <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
+          <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
             PCPartPicker is the best-known PC builder platform. It's solid: a large community build library, solid compatibility engine, real-time pricing across retailers. But it's also 15+ years old and shows it. Pro Rig Builder does everything PCPartPicker does — plus eight tools PCPartPicker doesn't have.
           </p>
           <div style={{background:"var(--bg3)",padding:"18px 22px",borderRadius:10}}>
             <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>WHAT WE HAVE THAT PCPARTPICKER DOESN'T</div>
             <ul style={{paddingLeft:20,margin:0}}>
-              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Free Windows hardware scanner app</li>
-              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>FPS estimator and Will-It-Run checker for specific games</li>
-              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Bottleneck calculator with percentage severity</li>
-              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>USED product flags</li>
-              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Budget-aware automated upgrade recommendations</li>
-              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Automated budget build wizard</li>
-              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Light + dark mode</li>
-              <li style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.8,marginBottom:0}}>Zero ads (PCPartPicker is ad-supported)</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Free Windows hardware scanner app</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>FPS estimator and Will-It-Run checker for specific games</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Bottleneck calculator with percentage severity</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>USED product flags</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Budget-aware automated upgrade recommendations</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Automated budget build wizard</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.8,marginBottom:4}}>Light + dark mode</li>
+              <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.8,marginBottom:0}}>Zero ads (PCPartPicker is ad-supported)</li>
             </ul>
           </div>
         </div>
@@ -1708,12 +1720,12 @@ function ComparePage({go}) {
           <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
             <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)"}}>Pro Rig Builder vs. Newegg PC Builder</div>
           </div>
-          <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
+          <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
             Newegg's PC Builder is a shopping tool first, a builder tool second. It only shows Newegg inventory. Its AI "Build with AI" feature uses ChatGPT to generate recommendations, but pricing, stock, and inventory are Newegg-only — no comparison with Amazon, Best Buy, or anywhere else. The tool exists to drive purchases on Newegg.com.
           </p>
           <div style={{background:"var(--bg3)",padding:"18px 22px",borderRadius:10}}>
             <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>THE KEY DIFFERENCE</div>
-            <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.7}}>
+            <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.7}}>
               Pro Rig Builder compares pricing across <strong>five retailers</strong>. We're neutral — we'll recommend the best deal regardless of which retailer offers it. Newegg PC Builder is a Newegg sales tool. If Amazon is $50 cheaper, Newegg won't tell you.
             </div>
           </div>
@@ -1724,12 +1736,12 @@ function ComparePage({go}) {
           <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
             <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)"}}>Pro Rig Builder vs. Logical Increments</div>
           </div>
-          <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
+          <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
             Logical Increments is a static build guide — not an interactive builder. Its "Grid" recommends parts for budget tiers (Excellent, Outstanding, Exceptional, etc.), updated manually by the team. There's no compatibility engine, no real-time pricing, no personalized recommendations. Good for beginners who want a curated list; limited for anyone building a specific rig.
           </p>
           <div style={{background:"var(--bg3)",padding:"18px 22px",borderRadius:10}}>
             <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>THE KEY DIFFERENCE</div>
-            <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.7}}>
+            <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.7}}>
               Logical Increments tells you what parts to buy. Pro Rig Builder lets you build, compare, validate, and benchmark — with your specific hardware, budget, and games. One is a cookbook. The other is a kitchen.
             </div>
           </div>
@@ -1738,14 +1750,14 @@ function ComparePage({go}) {
 
       {/* BOTTOM CTA */}
       <div style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)"}}>
-        <div style={{maxWidth:760,margin:"0 auto",padding:"56px 32px",textAlign:"center"}}>
+        <div style={{maxWidth:1000,margin:"0 auto",padding:"56px 32px",textAlign:"center"}}>
           <h2 style={{fontFamily:"var(--ff)",fontSize:30,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5,marginBottom:14}}>Try the difference yourself</h2>
           <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.65,marginBottom:26}}>
             Start a build, scan your existing rig, or browse parts with better filters than the competition. We're confident you'll see the difference within 30 seconds.
           </p>
           <div style={{display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap"}}>
-            <button onClick={()=>go("builder")} style={{padding:"14px 28px",borderRadius:12,fontSize:14,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 20px rgba(255,107,53,.3)"}}>Start Building →</button>
-            <button onClick={()=>go("scanner")} style={{padding:"14px 28px",borderRadius:12,fontSize:14,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>📥 Try the Scanner</button>
+            <button onClick={()=>go("builder")} style={{padding:"14px 28px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 20px rgba(255,107,53,.3)"}}>Start Building →</button>
+            <button onClick={()=>go("scanner")} style={{padding:"14px 28px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>📥 Try the Scanner</button>
           </div>
         </div>
       </div>
@@ -1855,15 +1867,15 @@ function SEO({title, description, canonical, breadcrumb, faq}) {
 function VariantCTA({go}) {
   return (
     <div style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)",marginTop:48}}>
-      <div style={{maxWidth:760,margin:"0 auto",padding:"52px 32px",textAlign:"center"}}>
+      <div style={{maxWidth:1000,margin:"0 auto",padding:"52px 32px",textAlign:"center"}}>
         <h2 style={{fontFamily:"var(--ff)",fontSize:28,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5,marginBottom:12}}>Ready to build smarter?</h2>
         <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.7,marginBottom:24}}>
           Every tool free. Zero ads. Real multi-retailer pricing. Plus our exclusive hardware scanner.
         </p>
         <div style={{display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap"}}>
-          <button onClick={()=>go("builder")} style={{padding:"14px 28px",borderRadius:12,fontSize:14,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 20px rgba(255,107,53,.3)"}}>Start Building →</button>
-          <button onClick={()=>go("scanner")} style={{padding:"14px 28px",borderRadius:12,fontSize:14,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>📥 Try the Scanner</button>
-          <button onClick={()=>go("compare")} style={{padding:"14px 28px",borderRadius:12,fontSize:14,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"transparent",color:"var(--txt)",border:"1px solid var(--bdr)"}}>Full Comparison</button>
+          <button onClick={()=>go("builder")} style={{padding:"14px 28px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 20px rgba(255,107,53,.3)"}}>Start Building →</button>
+          <button onClick={()=>go("scanner")} style={{padding:"14px 28px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>📥 Try the Scanner</button>
+          <button onClick={()=>go("compare")} style={{padding:"14px 28px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"transparent",color:"var(--txt)",border:"1px solid var(--bdr)"}}>Full Comparison</button>
         </div>
       </div>
     </div>
@@ -1877,16 +1889,16 @@ function VsPcPartPickerPage({go}) {
       <SEO title="Pro Rig Builder vs PCPartPicker: A 2026 Feature Comparison" description="How Pro Rig Builder compares to PCPartPicker in 2026. Features, tools, pricing engine, and business model breakdown. Objective, factual comparison." canonical="https://prorigbuilder.com/#vs-pcpartpicker" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Compare",url:"https://prorigbuilder.com/#compare"},{name:"vs PCPartPicker",url:"https://prorigbuilder.com/#vs-pcpartpicker"}]} faq={[{"q":"Should I use Pro Rig Builder or PCPartPicker?","a":"Use Pro Rig Builder if you want modern tools (hardware scanner, FPS estimator, bottleneck calculator), an ad-free experience, or budget-aware upgrade recommendations. Use PCPartPicker if you primarily want access to a large community of user-submitted builds."},{"q":"Is Pro Rig Builder a PCPartPicker clone?","a":"No. Pro Rig Builder is a distinct platform with 8 exclusive features PCPartPicker does not offer. We built our compatibility engine, pricing system, and all tools from scratch."},{"q":"Can I use both Pro Rig Builder and PCPartPicker?","a":"Yes. Many users cross-reference between both platforms. They are complementary."},{"q":"Does Pro Rig Builder have more parts than PCPartPicker?","a":"Pro Rig Builder's catalog contains over 3,400 verified PC components as of April 2026, updated continuously. For current-generation hardware, both platforms have comprehensive coverage."}]}/>
       <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
-        <div style={{maxWidth:900,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
-          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:11,fontWeight:700,letterSpacing:1.5,marginBottom:22}}>COMPARISON GUIDE</div>
+        <div style={{maxWidth:1180,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
+          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:13,fontWeight:700,letterSpacing:1.5,marginBottom:22}}>COMPARISON GUIDE</div>
           <h1 style={{fontFamily:"var(--ff)",fontSize:42,fontWeight:800,color:"var(--txt)",letterSpacing:-1.2,lineHeight:1.12,marginBottom:16}}>Pro Rig Builder vs PCPartPicker: A 2026 Feature Comparison</h1>
-          <p style={{fontFamily:"var(--ff)",fontSize:16,color:"var(--dim)",lineHeight:1.65,maxWidth:720}}>
+          <p style={{fontFamily:"var(--ff)",fontSize:17,color:"var(--dim)",lineHeight:1.65,maxWidth:940}}>
             PCPartPicker has been the go-to PC builder platform for over a decade. Pro Rig Builder is the modern alternative with features PCPartPicker doesn't offer. Here's how we compare, side-by-side, with no hype.
           </p>
         </div>
       </div>
 
-      <div style={{maxWidth:900,margin:"0 auto",padding:"48px 32px"}}>
+      <div style={{maxWidth:1180,margin:"0 auto",padding:"48px 32px"}}>
         <SectionHeading>The short answer</SectionHeading>
         <Para>
           <strong>PCPartPicker</strong> is an established platform with a large community, solid compatibility engine, and real-time pricing across retailers. It's ad-supported and works well for basic PC building.
@@ -1919,7 +1931,7 @@ function VsPcPartPickerPage({go}) {
             <div key={f.t} style={{background:"var(--card)",border:"1px solid var(--bdr)",borderRadius:12,padding:"22px 24px"}}>
               <div style={{fontSize:26,marginBottom:10}}>{f.i}</div>
               <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:8}}>{f.t}</div>
-              <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.65}}>{f.d}</div>
+              <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.65}}>{f.d}</div>
             </div>
           ))}
         </div>
@@ -1943,7 +1955,7 @@ function VsPcPartPickerPage({go}) {
 
         <div style={{marginTop:32,padding:"20px 24px",background:"var(--bg3)",borderRadius:10,border:"1px solid var(--bdr)"}}>
           <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",fontWeight:600,letterSpacing:1.5,marginBottom:6}}>NOTE</div>
-          <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",lineHeight:1.6}}>
+          <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.6}}>
             This comparison is factual and based on features publicly available on both sites as of April 2026. Pro Rig Builder is not affiliated with PCPartPicker. For the full 24-feature comparison including Newegg and Logical Increments, see our <span onClick={()=>go("compare")} style={{color:"var(--accent)",cursor:"pointer",textDecoration:"underline"}}>full comparison page</span>.
           </div>
         </div>
@@ -1960,16 +1972,16 @@ function PcpAlternativePage({go}) {
       <SEO title="The Best PCPartPicker Alternative in 2026" description="Looking for a PCPartPicker alternative? Pro Rig Builder offers every feature plus hardware scanner, FPS estimator, bottleneck calculator, and budget-aware upgrade recommendations. Ad-free." canonical="https://prorigbuilder.com/#pcpartpicker-alternative" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"PCPartPicker Alternative",url:"https://prorigbuilder.com/#pcpartpicker-alternative"}]}/>
       <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
-        <div style={{maxWidth:900,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
-          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:11,fontWeight:700,letterSpacing:1.5,marginBottom:22}}>ALTERNATIVE GUIDE</div>
+        <div style={{maxWidth:1180,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
+          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:13,fontWeight:700,letterSpacing:1.5,marginBottom:22}}>ALTERNATIVE GUIDE</div>
           <h1 style={{fontFamily:"var(--ff)",fontSize:42,fontWeight:800,color:"var(--txt)",letterSpacing:-1.2,lineHeight:1.12,marginBottom:16}}>The Best PCPartPicker Alternative in 2026</h1>
-          <p style={{fontFamily:"var(--ff)",fontSize:16,color:"var(--dim)",lineHeight:1.65,maxWidth:720}}>
+          <p style={{fontFamily:"var(--ff)",fontSize:17,color:"var(--dim)",lineHeight:1.65,maxWidth:940}}>
             Looking for a PC builder platform with more tools, zero ads, and modern features? Pro Rig Builder is the alternative built for 2026 — with eight features you won't find on PCPartPicker.
           </p>
         </div>
       </div>
 
-      <div style={{maxWidth:900,margin:"0 auto",padding:"48px 32px"}}>
+      <div style={{maxWidth:1180,margin:"0 auto",padding:"48px 32px"}}>
         <SectionHeading>Why look for a PCPartPicker alternative?</SectionHeading>
         <Para>
           PCPartPicker is the most recognized PC builder platform, but it has limitations. Users commonly cite these reasons for seeking alternatives:
@@ -1990,14 +2002,14 @@ function PcpAlternativePage({go}) {
         <div style={{background:"var(--card)",border:"1px solid var(--bdr)",borderRadius:12,padding:"24px 28px",marginBottom:20}}>
           <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:12}}>PRO RIG BUILDER EXCLUSIVE FEATURES</div>
           <ol style={{paddingLeft:22,margin:0}}>
-            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Pro Rig Scanner</strong> — free Windows app that detects your hardware automatically. Runs 100% locally with zero data collection.</li>
-            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>FPS Estimator</strong> — see projected FPS for popular games on your proposed build.</li>
-            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Bottleneck Calculator</strong> — percentage severity of CPU/GPU bottleneck for informed upgrade decisions.</li>
-            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Will It Run</strong> — check if your current PC handles a specific game before you try it.</li>
-            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Budget Build Wizard</strong> — automated build generation based on your budget.</li>
-            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>USED Product Flags</strong> — pre-owned listings clearly marked for transparent shopping.</li>
-            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Budget-Aware Upgrade Recs</strong> — tell us your budget, we show the biggest performance uplift.</li>
-            <li style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.75,marginBottom:0}}><strong>Light + Dark Mode</strong> — modern UI with theme switching.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Pro Rig Scanner</strong> — free Windows app that detects your hardware automatically. Runs 100% locally with zero data collection.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>FPS Estimator</strong> — see projected FPS for popular games on your proposed build.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Bottleneck Calculator</strong> — percentage severity of CPU/GPU bottleneck for informed upgrade decisions.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Will It Run</strong> — check if your current PC handles a specific game before you try it.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Budget Build Wizard</strong> — automated build generation based on your budget.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>USED Product Flags</strong> — pre-owned listings clearly marked for transparent shopping.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Budget-Aware Upgrade Recs</strong> — tell us your budget, we show the biggest performance uplift.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:0}}><strong>Light + Dark Mode</strong> — modern UI with theme switching.</li>
           </ol>
         </div>
 
@@ -2023,16 +2035,16 @@ function BestPcBuilderToolsPage({go}) {
       <SEO title="Best PC Builder Tools in 2026: Ranked & Reviewed" description="The best PC builder tools of 2026 ranked by features, pricing transparency, and modern UX. See how Pro Rig Builder, PCPartPicker, Newegg PC Builder, and Logical Increments stack up." canonical="https://prorigbuilder.com/#best-pc-builder-tools" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Best PC Builder Tools",url:"https://prorigbuilder.com/#best-pc-builder-tools"}]}/>
       <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
-        <div style={{maxWidth:900,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
-          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:11,fontWeight:700,letterSpacing:1.5,marginBottom:22}}>2026 LISTICLE</div>
+        <div style={{maxWidth:1180,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
+          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:13,fontWeight:700,letterSpacing:1.5,marginBottom:22}}>2026 LISTICLE</div>
           <h1 style={{fontFamily:"var(--ff)",fontSize:42,fontWeight:800,color:"var(--txt)",letterSpacing:-1.2,lineHeight:1.12,marginBottom:16}}>Best PC Builder Tools in 2026: Ranked & Reviewed</h1>
-          <p style={{fontFamily:"var(--ff)",fontSize:16,color:"var(--dim)",lineHeight:1.65,maxWidth:720}}>
+          <p style={{fontFamily:"var(--ff)",fontSize:17,color:"var(--dim)",lineHeight:1.65,maxWidth:940}}>
             We reviewed the four most popular PC builder tools of 2026. Here's how they stack up on features, pricing engines, UX, and business model transparency.
           </p>
         </div>
       </div>
 
-      <div style={{maxWidth:900,margin:"0 auto",padding:"48px 32px"}}>
+      <div style={{maxWidth:1180,margin:"0 auto",padding:"48px 32px"}}>
         <Para>
           Whether you're building your first PC or upgrading an existing rig, the right tool saves you hours of research and prevents costly compatibility mistakes. We evaluated each of these platforms on four criteria: <strong>feature depth</strong>, <strong>pricing accuracy</strong>, <strong>user experience</strong>, and <strong>business model transparency</strong>.
         </Para>
@@ -2040,7 +2052,7 @@ function BestPcBuilderToolsPage({go}) {
         <SectionHeading>1. Pro Rig Builder — The Most Feature-Complete</SectionHeading>
         <div style={{background:"var(--card)",border:"1px solid var(--accent)",borderRadius:12,padding:"22px 26px",marginBottom:20}}>
           <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:12}}>
-            <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",fontWeight:700,letterSpacing:1.5}}>OUR PICK · BEST OVERALL</div>
+            <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--accent)",fontWeight:700,letterSpacing:1.5}}>OUR PICK · BEST OVERALL</div>
           </div>
           <Para><strong>Features:</strong> PC Builder · Compatibility Engine · Real-Time Multi-Retailer Pricing · Hardware Scanner App (exclusive) · FPS Estimator (exclusive) · Bottleneck Calculator (exclusive) · Will It Run · USED Flags · Budget Build Wizard · Part Comparison · Power Calculator · Light/Dark Mode</Para>
           <Para><strong>Pricing engine:</strong> Compares across Amazon, Best Buy, Newegg, B&H, Antonline. In-stock prioritization.</Para>
@@ -2094,10 +2106,10 @@ function BestPcBuilderToolsPage({go}) {
                 ["Logical Increments","Static","Minimal","Link-outs"]
               ].map((row,i)=>(
                 <tr key={i} style={{borderTop:"1px solid var(--bdr)",background:i===0?"var(--accent3)":"transparent"}}>
-                  <td style={{padding:"12px 14px",fontFamily:"var(--ff)",fontSize:13,fontWeight:i===0?700:500,color:i===0?"var(--accent)":"var(--txt)"}}>{row[0]}</td>
-                  <td style={{padding:"12px 10px",textAlign:"center",fontFamily:"var(--ff)",fontSize:12,color:"var(--txt)"}}>{row[1]}</td>
-                  <td style={{padding:"12px 10px",textAlign:"center",fontFamily:"var(--ff)",fontSize:12,color:"var(--txt)"}}>{row[2]}</td>
-                  <td style={{padding:"12px 10px",textAlign:"center",fontFamily:"var(--ff)",fontSize:12,color:"var(--txt)"}}>{row[3]}</td>
+                  <td style={{padding:"12px 14px",fontFamily:"var(--ff)",fontSize:14,fontWeight:i===0?700:500,color:i===0?"var(--accent)":"var(--txt)"}}>{row[0]}</td>
+                  <td style={{padding:"12px 10px",textAlign:"center",fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)"}}>{row[1]}</td>
+                  <td style={{padding:"12px 10px",textAlign:"center",fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)"}}>{row[2]}</td>
+                  <td style={{padding:"12px 10px",textAlign:"center",fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)"}}>{row[3]}</td>
                 </tr>
               ))}
             </tbody>
@@ -2130,16 +2142,16 @@ function HomePage({go,browse,th}){
     <div style={{background:"var(--heroGrad)",position:"relative",overflow:"hidden"}}>
       <div style={{position:"absolute",top:"20%",right:"-5%",width:600,height:600,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.06) 0%, transparent 60%)",pointerEvents:"none"}}/>
       <div style={{position:"absolute",bottom:"-30%",left:"10%",width:400,height:400,borderRadius:"50%",background:"radial-gradient(circle, rgba(245,166,35,0.04) 0%, transparent 60%)",pointerEvents:"none"}}/>
-      <div style={{maxWidth:1200,margin:"0 auto",padding:"80px 32px 72px"}}>
-        <div style={{maxWidth:640}}>
+      <div style={{maxWidth:1600,margin:"0 auto",padding:"80px 32px 72px"}}>
+        <div style={{maxWidth:820}}>
           <div style={{display:"inline-flex",alignItems:"center",gap:8,background:"var(--accent3)",borderRadius:20,padding:"6px 16px",marginBottom:24}}>
             <div style={{width:6,height:6,borderRadius:"50%",background:"var(--accent)",animation:"pulse 2s infinite"}}/>
-            <span style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",fontWeight:500}}>{totalParts} parts tracked · {totalDeals} deals live</span>
+            <span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--accent)",fontWeight:500}}>{totalParts} parts tracked · {totalDeals} deals live</span>
           </div>
           <h1 style={{fontFamily:"var(--ff)",fontSize:52,fontWeight:800,color:"var(--txt)",lineHeight:1.05,letterSpacing:-1.5}}>
             Find the best price<br/>on every <span style={{background:"linear-gradient(135deg, var(--accent), var(--amber))",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>PC part.</span>
           </h1>
-          <p style={{fontFamily:"var(--ff)",fontSize:17,color:"var(--dim)",marginTop:20,lineHeight:1.7,maxWidth:480}}>
+          <p style={{fontFamily:"var(--ff)",fontSize:22,color:"var(--dim)",marginTop:20,lineHeight:1.7,maxWidth:480}}>
             Compare prices across Amazon, Newegg, B&H and more. Check compatibility instantly. Build smarter.
           </p>
           <div style={{display:"flex",gap:12,marginTop:36}}>
@@ -2158,7 +2170,7 @@ function HomePage({go,browse,th}){
     {/* ── SCANNER BANNER — promote proprietary scanner app ── */}
     <div style={{background:"var(--bg2)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
       <div style={{position:"absolute",top:0,left:0,right:0,height:2,background:"linear-gradient(90deg,transparent 0%,var(--accent) 50%,transparent 100%)",animation:"scanLine 3s ease-in-out infinite"}}/>
-      <div className="hero-grid" style={{maxWidth:1200,margin:"0 auto",padding:"48px 32px",display:"grid",gridTemplateColumns:"auto 1fr auto",gap:32,alignItems:"center"}}>
+      <div className="hero-grid" style={{maxWidth:1600,margin:"0 auto",padding:"48px 32px",display:"grid",gridTemplateColumns:"auto 1fr auto",gap:32,alignItems:"center"}}>
         <div style={{display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
           <div style={{padding:18,background:"var(--accent3)",borderRadius:16,border:"1px solid var(--accent)"}}>
             <TowerLogo size={56}/>
@@ -2171,7 +2183,7 @@ function HomePage({go,browse,th}){
           <h2 style={{fontFamily:"var(--ff)",fontSize:26,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5,lineHeight:1.15,marginBottom:8}}>
             Introducing the <span style={{background:"linear-gradient(135deg, var(--accent), var(--amber))",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>Pro Rig Scanner</span>
           </h2>
-          <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.6,marginBottom:16,maxWidth:600}}>
+          <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.6,marginBottom:16,maxWidth:820}}>
             Free Windows app that detects your hardware and recommends upgrades in your budget. Runs 100% locally on your PC — we don't store or collect any of your data. Download, scan, upgrade — three steps, thirty seconds.
           </p>
           <div style={{display:"flex",gap:20,flexWrap:"wrap"}}>
@@ -2181,9 +2193,9 @@ function HomePage({go,browse,th}){
               {n:"3",t:"Upgrade",d:"Get recommendations"},
             ].map(s=>(
               <div key={s.n} style={{display:"flex",alignItems:"center",gap:10}}>
-                <div style={{width:26,height:26,borderRadius:"50%",background:"var(--accent3)",color:"var(--accent)",display:"flex",alignItems:"center",justifyContent:"center",fontFamily:"var(--mono)",fontSize:12,fontWeight:800,flexShrink:0}}>{s.n}</div>
+                <div style={{width:26,height:26,borderRadius:"50%",background:"var(--accent3)",color:"var(--accent)",display:"flex",alignItems:"center",justifyContent:"center",fontFamily:"var(--mono)",fontSize:13,fontWeight:800,flexShrink:0}}>{s.n}</div>
                 <div>
-                  <div style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:700,color:"var(--txt)",lineHeight:1.1}}>{s.t}</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--txt)",lineHeight:1.1}}>{s.t}</div>
                   <div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)",lineHeight:1.2}}>{s.d}</div>
                 </div>
               </div>
@@ -2191,7 +2203,7 @@ function HomePage({go,browse,th}){
           </div>
         </div>
         <div style={{flexShrink:0,display:"flex",flexDirection:"column",alignItems:"stretch",gap:6}}>
-          <button onClick={()=>go("scanner")} style={{padding:"14px 24px",borderRadius:12,fontSize:14,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 22px rgba(255,107,53,.3)",transition:"transform .15s",whiteSpace:"nowrap"}}
+          <button onClick={()=>go("scanner")} style={{padding:"14px 24px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 22px rgba(255,107,53,.3)",transition:"transform .15s",whiteSpace:"nowrap"}}
             onMouseEnter={e=>e.currentTarget.style.transform="translateY(-1px)"}
             onMouseLeave={e=>e.currentTarget.style.transform="none"}>
             Learn More →
@@ -2203,7 +2215,7 @@ function HomePage({go,browse,th}){
 
     {/* ── HOW IT WORKS — horizontal strip ── */}
     <div style={{background:"var(--bg2)",borderBottom:"1px solid var(--bdr)"}}>
-      <div style={{maxWidth:1200,margin:"0 auto",padding:"48px 32px",display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:32}}>
+      <div style={{maxWidth:1600,margin:"0 auto",padding:"48px 32px",display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:32}}>
         {[
           {num:"01",t:"Browse & Compare",d:"Search across retailers. See real-time prices from Amazon, Newegg, B&H, and Best Buy."},
           {num:"02",t:"Check Compatibility",d:"18+ automatic checks — socket matching, GPU clearance, PSU wattage, RAM type, and more."},
@@ -2211,8 +2223,8 @@ function HomePage({go,browse,th}){
         ].map(s=><div key={s.num} style={{display:"flex",gap:16,alignItems:"flex-start"}}>
           <div style={{fontFamily:"var(--mono)",fontSize:28,fontWeight:800,color:"var(--accent)",opacity:.3,lineHeight:1,flexShrink:0}}>{s.num}</div>
           <div>
-            <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)",marginBottom:6}}>{s.t}</div>
-            <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.65}}>{s.d}</div>
+            <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)",marginBottom:6}}>{s.t}</div>
+            <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.65}}>{s.d}</div>
           </div>
         </div>)}
       </div>
@@ -2220,15 +2232,15 @@ function HomePage({go,browse,th}){
 
 
     {/* 2-COLUMN LAYOUT: categories (left) + deals/top sidebar (right) */}
-    <div className="home-main-grid" style={{maxWidth:1200,margin:"0 auto",gap:32,alignItems:"start"}}>
+    <div className="home-main-grid" style={{maxWidth:1600,margin:"0 auto",gap:32,alignItems:"start"}}>
       {/* LEFT COLUMN — Core Components + More Categories */}
       <div>
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",marginBottom:24}}>
           <div>
             <h2 style={{fontFamily:"var(--ff)",fontSize:28,fontWeight:800,color:"var(--txt)"}}>Core Components</h2>
-            <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginTop:4}}>The essential parts for your build</p>
+            <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",marginTop:4}}>The essential parts for your build</p>
           </div>
-          <button onClick={()=>go("search")} style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--accent)",background:"none",border:"none",cursor:"pointer",fontWeight:600}}>View All →</button>
+          <button onClick={()=>go("search")} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",background:"none",border:"none",cursor:"pointer",fontWeight:600}}>View All →</button>
         </div>
         <div className="home-cat-grid" style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:12}}>
           {coreCats.map(c=>{const m=CAT[c];const cnt=P.filter(p=>p.c===c).length;
@@ -2239,8 +2251,8 @@ function HomePage({go,browse,th}){
                 <CatThumb cat={c} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={64} rounded={14} editable={false}/>
               </div>
               <div style={{padding:"14px 16px"}}>
-                <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>{m.label}</div>
-                <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)",marginTop:2}}>{m.desc}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{m.label}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginTop:2}}>{m.desc}</div>
                 <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",marginTop:6,fontWeight:500}}>{cnt} products →</div>
               </div>
             </button>})}
@@ -2248,14 +2260,14 @@ function HomePage({go,browse,th}){
 
         {/* More Categories — inline below Core Components */}
         {otherCats.length>0&&<div style={{marginTop:36}}>
-          <h3 style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:700,color:"var(--txt)",marginBottom:16}}>More Categories</h3>
+          <h3 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:700,color:"var(--txt)",marginBottom:16}}>More Categories</h3>
           <div style={{display:"flex",flexWrap:"wrap",gap:8}}>
             {otherCats.map(c=>{const m=CAT[c];const cnt=P.filter(p=>p.c===c).length;
               return <button key={c} onClick={()=>{browse(c);go("search");}} style={{display:"flex",alignItems:"center",gap:8,background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:"8px 16px 8px 10px",cursor:"pointer",transition:"all .2s"}}
                 onMouseEnter={e=>{e.currentTarget.style.borderColor="var(--accent)44";e.currentTarget.style.background="var(--bg3)";}}
                 onMouseLeave={e=>{e.currentTarget.style.borderColor="var(--bdr)";e.currentTarget.style.background="var(--bg2)";}}>
-                <span style={{fontSize:16}}>{m.icon}</span>
-                <span style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>{m.label}</span>
+                <span style={{fontSize:17}}>{m.icon}</span>
+                <span style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>{m.label}</span>
                 <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)"}}>{cnt}</span>
               </button>})}
           </div>
@@ -2274,14 +2286,14 @@ function HomePage({go,browse,th}){
             {deals.slice(0,5).map(p=>{const rr=retailers(p);const url=rr[0]?.url;return <button key={p.id} onClick={()=>{if(url)window.open(url,"_blank","noopener,noreferrer");else{browse(p.c);go("search");}}} style={{display:"flex",alignItems:"center",gap:10,width:"100%",background:"var(--bg3)",borderRadius:10,padding:"10px 12px",cursor:"pointer",textAlign:"left",border:"1px solid transparent",transition:"all .2s"}}
               onMouseEnter={e=>e.currentTarget.style.borderColor="var(--amber)33"}
               onMouseLeave={e=>e.currentTarget.style.borderColor="transparent"}>
-              <div style={{width:36,height:36,borderRadius:8,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0,overflow:"hidden"}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:"100%",height:"100%",objectFit:"contain"}}/>:ic(p)}</div>
+              <div style={{width:36,height:36,borderRadius:8,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:17,flexShrink:0,overflow:"hidden"}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:"100%",height:"100%",objectFit:"contain"}}/>:ic(p)}</div>
               <div style={{flex:1,minWidth:0}}>
                 <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
-                <div style={{display:"flex",alignItems:"center",gap:6,marginTop:3,flexWrap:"nowrap",overflow:"hidden"}}>{dealSavings(p)>0&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)",flexShrink:0,whiteSpace:"nowrap"}}>🔥 DEAL</span>}<span style={{fontFamily:"var(--mono)",fontSize:12,color:"var(--amber)",fontWeight:700,whiteSpace:"nowrap"}}>Save ${dealSavings(p)}</span></div>
+                <div style={{display:"flex",alignItems:"center",gap:6,marginTop:3,flexWrap:"nowrap",overflow:"hidden"}}>{dealSavings(p)>0&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)",flexShrink:0,whiteSpace:"nowrap"}}>🔥 DEAL</span>}<span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--amber)",fontWeight:700,whiteSpace:"nowrap"}}>Save ${dealSavings(p)}</span></div>
               </div>
               <div style={{textAlign:"right",flexShrink:0,minWidth:0}}>
                 <div style={{fontFamily:"var(--mono)",fontSize:15,fontWeight:700,color:"var(--accent)",whiteSpace:"nowrap"}}>${fmtPrice($(p))}</div>
-                {isDeal(p)&&<div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",textDecoration:"line-through",whiteSpace:"nowrap"}}>${fmtPrice(msrp(p))}</div>}
+                {isDeal(p)&&<div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mute)",textDecoration:"line-through",whiteSpace:"nowrap"}}>${fmtPrice(msrp(p))}</div>}
               </div>
             </button>;})}
           </div>
@@ -2291,26 +2303,26 @@ function HomePage({go,browse,th}){
         <div style={{background:"var(--bg2)",borderRadius:20,border:"1px solid var(--bdr)",padding:18,boxShadow:"var(--shadowSm,none)"}}>
           <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:14}}>
             <h2 style={{fontFamily:"var(--ff)",fontSize:19,fontWeight:700,color:"var(--txt)"}}>Top Performers</h2>
-            <span style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--sky)",fontWeight:600}}>by benchmark</span>
+            <span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--sky)",fontWeight:600}}>by benchmark</span>
           </div>
           <div style={{display:"flex",flexDirection:"column",gap:6}}>
             {top.slice(0,5).map(p=>{const rr=retailers(p);const url=rr[0]?.url;return <button key={p.id} onClick={()=>{if(url)window.open(url,"_blank","noopener,noreferrer");else{browse(p.c);go("search");}}} style={{display:"flex",alignItems:"center",gap:10,width:"100%",background:"var(--bg3)",borderRadius:10,padding:"10px 12px",cursor:"pointer",textAlign:"left",border:"1px solid transparent",transition:"all .2s"}}
               onMouseEnter={e=>e.currentTarget.style.borderColor="var(--sky)33"}
               onMouseLeave={e=>e.currentTarget.style.borderColor="transparent"}>
-              <div style={{width:36,height:36,borderRadius:8,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0,overflow:"hidden"}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:"100%",height:"100%",objectFit:"contain"}}/>:ic(p)}</div>
+              <div style={{width:36,height:36,borderRadius:8,background:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontSize:17,flexShrink:0,overflow:"hidden"}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:"100%",height:"100%",objectFit:"contain"}}/>:ic(p)}</div>
               <div style={{flex:1,minWidth:0}}>
                 <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{p.n}</div>
                 <div style={{display:"flex",alignItems:"center",gap:6,marginTop:2,flexWrap:"wrap"}}>
                   <Stars r={p.r} s={9}/>
                   {isDeal(p)&&<>
                     <span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL</span>
-                    <span style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--amber)",fontWeight:700}}>Save ${dealSavings(p)}</span>
+                    <span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--amber)",fontWeight:700}}>Save ${dealSavings(p)}</span>
                   </>}
                 </div>
               </div>
               <div style={{textAlign:"right",flexShrink:0,minWidth:80}}>
-                <div style={{fontFamily:"var(--mono)",fontSize:18,fontWeight:700,color:"var(--accent)"}}>${fmtPrice($(p))}</div>
-                {isDeal(p)&&<div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(msrp(p))}</div>}
+                <div style={{fontFamily:"var(--mono)",fontSize:22,fontWeight:700,color:"var(--accent)"}}>${fmtPrice($(p))}</div>
+                {isDeal(p)&&<div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(msrp(p))}</div>}
               </div>
             </button>;})}
           </div>
@@ -2525,16 +2537,16 @@ function CategoryGuide({ cat }) {
   if (!g) return null;
   return (
     <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:"14px 16px",marginBottom:16}}>
-      <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--accent)",marginBottom:8,display:"flex",alignItems:"center",gap:6}}>
-        <span style={{fontSize:14}}>💡</span> {g.title}
+      <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--accent)",marginBottom:8,display:"flex",alignItems:"center",gap:6}}>
+        <span style={{fontSize:15}}>💡</span> {g.title}
       </div>
-      <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--txt)",lineHeight:1.6,marginBottom:8}}>
+      <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.6,marginBottom:8}}>
         What to look for:
       </div>
-      <ul style={{margin:0,paddingLeft:18,fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",lineHeight:1.7}}>
+      <ul style={{margin:0,paddingLeft:18,fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.7}}>
         {g.look.map((item, i) => <li key={i} style={{marginBottom:2}}>{item}</li>)}
       </ul>
-      <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--mint)",marginTop:10,paddingTop:8,borderTop:"1px solid var(--bdr)",fontWeight:500}}>
+      <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mint)",marginTop:10,paddingTop:8,borderTop:"1px solid var(--bdr)",fontWeight:500}}>
         💰 {g.tip}
       </div>
     </div>
@@ -2584,7 +2596,7 @@ function MobileSearchPage({activeCat,th}){
   if(!cat){
     return <div className="fade" style={{padding:"16px 14px",maxWidth:"100vw",overflow:"hidden"}}>
       <h1 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)",marginBottom:6}}>Browse Parts</h1>
-      <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginBottom:18}}>Pick a category</p>
+      <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",marginBottom:18}}>Pick a category</p>
       <div style={{display:"grid",gridTemplateColumns:"repeat(2,minmax(0,1fr))",gap:10}}>
         {CATS.map(c=>{
           const meta=CAT[c];
@@ -2592,7 +2604,7 @@ function MobileSearchPage({activeCat,th}){
           return <button key={c} onClick={()=>setCat(c)} style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:"14px 12px",cursor:"pointer",textAlign:"left",display:"flex",flexDirection:"column",gap:6,minWidth:0}}>
             <div style={{display:"flex",alignItems:"center",gap:8}}>
               <CatThumb cat={c} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={32} rounded={6} editable={false}/>
-              <span style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--txt)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",flex:1,minWidth:0}}>{meta.label}</span>
+              <span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",flex:1,minWidth:0}}>{meta.label}</span>
             </div>
             <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:600}}>{count} products</div>
           </button>;
@@ -2604,23 +2616,23 @@ function MobileSearchPage({activeCat,th}){
   // Product list
   return <div className="fade" style={{padding:"12px 12px 80px",maxWidth:"100vw",overflow:"hidden"}}>
     <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:10,flexWrap:"wrap"}}>
-      <button onClick={()=>setCat("")} style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:0}}>← All</button>
+      <button onClick={()=>setCat("")} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:0}}>← All</button>
       <span style={{color:"var(--mute)"}}>/</span>
-      <span style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--accent)",fontWeight:700}}>{CAT[cat].label}</span>
+      <span style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--accent)",fontWeight:700}}>{CAT[cat].label}</span>
       <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginLeft:"auto"}}>{list.length}</span>
     </div>
 
     <div style={{position:"relative",marginBottom:10}}>
-      <span style={{position:"absolute",left:10,top:"50%",transform:"translateY(-50%)",fontSize:14,color:"var(--mute)"}}>🔍</span>
-      <input value={q} onChange={e=>setQ(e.target.value)} placeholder={"Search "+CAT[cat].label.toLowerCase()} style={{width:"100%",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px 10px 10px 34px",fontSize:14,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",boxSizing:"border-box"}}/>
-      {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:10,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:14,cursor:"pointer"}}>✕</button>}
+      <span style={{position:"absolute",left:10,top:"50%",transform:"translateY(-50%)",fontSize:15,color:"var(--mute)"}}>🔍</span>
+      <input value={q} onChange={e=>setQ(e.target.value)} placeholder={"Search "+CAT[cat].label.toLowerCase()} style={{width:"100%",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px 10px 10px 34px",fontSize:15,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",boxSizing:"border-box"}}/>
+      {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:10,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:15,cursor:"pointer"}}>✕</button>}
     </div>
 
     <div style={{display:"flex",gap:8,marginBottom:14}}>
-      <button onClick={()=>setFiltersOpen(true)} style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",gap:6,background:ac>0?"var(--accent3)":"var(--bg3)",border:"1px solid "+(ac>0?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"10px",fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:ac>0?"var(--accent)":"var(--txt)",cursor:"pointer"}}>
+      <button onClick={()=>setFiltersOpen(true)} style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",gap:6,background:ac>0?"var(--accent3)":"var(--bg3)",border:"1px solid "+(ac>0?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"10px",fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:ac>0?"var(--accent)":"var(--txt)",cursor:"pointer"}}>
         ⚙ Filters{ac>0?" ("+ac+")":""}
       </button>
-      <select value={sort} onChange={e=>setSort(e.target.value)} style={{flex:1,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px",fontSize:13,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",cursor:"pointer"}}>
+      <select value={sort} onChange={e=>setSort(e.target.value)} style={{flex:1,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px",fontSize:14,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",cursor:"pointer"}}>
         <option value="price-asc">Price ↑</option>
         <option value="price-desc">Price ↓</option>
         <option value="rating-desc">Top Rated</option>
@@ -2629,7 +2641,7 @@ function MobileSearchPage({activeCat,th}){
       </select>
     </div>
 
-    {list.length===0&&<div style={{textAlign:"center",padding:"48px 16px",color:"var(--dim)",fontFamily:"var(--ff)",fontSize:14}}>No products match your filters</div>}
+    {list.length===0&&<div style={{textAlign:"center",padding:"48px 16px",color:"var(--dim)",fontFamily:"var(--ff)",fontSize:15}}>No products match your filters</div>}
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       {list.map(p=>{
         const isExp=expanded===p.id;
@@ -2639,24 +2651,24 @@ function MobileSearchPage({activeCat,th}){
           <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"flex",gap:12,padding:12,cursor:"pointer",minWidth:0}}>
             {p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:72,height:72,objectFit:"contain",borderRadius:8,background:"#fff",flexShrink:0}}/>:<div style={{width:72,height:72,background:"var(--bg4)",borderRadius:8,display:"flex",alignItems:"center",justifyContent:"center",fontSize:28,flexShrink:0}}>{ic(p)}</div>}
             <div style={{flex:1,minWidth:0,display:"flex",flexDirection:"column",gap:4}}>
-              <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",lineHeight:1.3,display:"-webkit-box",WebkitLineClamp:2,WebkitBoxOrient:"vertical",overflow:"hidden"}}>{p.n}</div>
+              <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)",lineHeight:1.3,display:"-webkit-box",WebkitLineClamp:2,WebkitBoxOrient:"vertical",overflow:"hidden"}}>{p.n}</div>
               <div style={{display:"flex",alignItems:"center",gap:6,flexWrap:"wrap"}}>
-                <span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span>
+                <span style={{fontSize:13,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span>
                 {p.r&&<Stars r={p.r} s={10}/>}
               </div>
               <div style={{display:"flex",alignItems:"center",gap:6,flexWrap:"wrap"}}>
-                {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:11,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL -${dealSavings(p)}</span>}
+                {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:13,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL -${dealSavings(p)}</span>}
                 {(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}
                 {p.condition==="refurbished"&&<Tag color="var(--sky)">REFURB</Tag>}
                 {p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}
                 {p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}
               </div>
               <div style={{display:"flex",alignItems:"baseline",gap:8,marginTop:2}}>
-                <span style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span>
-                {p.msrp&&p.msrp>$(p)&&<span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span>}
+                <span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span>
+                {p.msrp&&p.msrp>$(p)&&<span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span>}
               </div>
             </div>
-            <div style={{display:"flex",alignItems:"center",color:"var(--dim)",fontSize:18,transition:"transform .2s",transform:isExp?"rotate(90deg)":"none"}}>›</div>
+            <div style={{display:"flex",alignItems:"center",color:"var(--dim)",fontSize:22,transition:"transform .2s",transform:isExp?"rotate(90deg)":"none"}}>›</div>
           </div>
 
           {isExp&&<div style={{padding:"0 12px 14px",borderTop:"1px solid var(--bdr)"}}>
@@ -2666,24 +2678,24 @@ function MobileSearchPage({activeCat,th}){
                 <a key={r.name} href={r.url} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:8,textDecoration:"none",background:ri===0?"var(--mint3)":"var(--bg3)",border:"1px solid "+(ri===0?"var(--mint)33":"var(--bdr)")}}>
                   <div style={{flex:1,minWidth:0}}>
                     <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}>
-                      <span style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--txt)",textTransform:"capitalize"}}>{r.name}</span>
+                      <span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",textTransform:"capitalize"}}>{r.name}</span>
                       {ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}
                     </div>
                     <div style={{fontFamily:"var(--ff)",fontSize:10,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
                   </div>
                   <div style={{display:"flex",alignItems:"center",gap:8,flexShrink:0}}>
-                    <span style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:800,color:ri===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
-                    <div style={{background:ri===0?"var(--mint)":"var(--bg4)",borderRadius:6,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:11,fontWeight:700,color:ri===0?"var(--bg)":"var(--txt)"}}>Buy</div>
+                    <span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:800,color:ri===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
+                    <div style={{background:ri===0?"var(--mint)":"var(--bg4)",borderRadius:6,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:ri===0?"var(--bg)":"var(--txt)"}}>Buy</div>
                   </div>
                 </a>
               ):<a href={p.deals?.amazon?.url||"#"} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"10px 12px",borderRadius:8,background:"var(--mint3)",border:"1px solid var(--mint)33",textDecoration:"none"}}>
                 <div>
-                  <span style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--txt)"}}>Amazon</span>
+                  <span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>Amazon</span>
                   <div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--sky)"}}>✓ In Stock</div>
                 </div>
                 <div style={{display:"flex",alignItems:"center",gap:8}}>
-                  <span style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span>
-                  <div style={{background:"var(--mint)",borderRadius:6,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:11,fontWeight:700,color:"var(--bg)"}}>Buy</div>
+                  <span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span>
+                  <div style={{background:"var(--mint)",borderRadius:6,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--bg)"}}>Buy</div>
                 </div>
               </a>}
             </div>
@@ -2695,8 +2707,8 @@ function MobileSearchPage({activeCat,th}){
                   const v=p[col];if(v==null)return null;
                   const fv=fmt(col,v,p);
                   return <div key={col} style={{display:"flex",justifyContent:"space-between",padding:"4px 0",borderBottom:"1px solid var(--bdr)",gap:8,minWidth:0}}>
-                    <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{SL[col]||col}</span>
-                    <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--txt)",fontWeight:600,textAlign:"right",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{col==="bench"?v+"%":fv}</span>
+                    <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{SL[col]||col}</span>
+                    <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",fontWeight:600,textAlign:"right",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{col==="bench"?v+"%":fv}</span>
                   </div>;
                 })}
               </div>
@@ -2709,22 +2721,22 @@ function MobileSearchPage({activeCat,th}){
     {filtersOpen&&<div onClick={()=>setFiltersOpen(false)} style={{position:"fixed",inset:0,background:"rgba(0,0,0,0.6)",zIndex:1000,display:"flex",alignItems:"flex-end"}}>
       <div onClick={e=>e.stopPropagation()} style={{background:"var(--bg2)",width:"100%",maxHeight:"85vh",overflowY:"auto",borderTopLeftRadius:16,borderTopRightRadius:16,padding:"16px 16px 32px",boxSizing:"border-box"}}>
         <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:16,position:"sticky",top:0,background:"var(--bg2)",paddingBottom:8,borderBottom:"1px solid var(--bdr)"}}>
-          <span style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:800,color:"var(--txt)"}}>Filters</span>
+          <span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)"}}>Filters</span>
           <div style={{display:"flex",gap:10}}>
-            {ac>0&&<button onClick={clearFilters} style={{background:"none",border:"none",color:"var(--rose)",fontFamily:"var(--ff)",fontSize:13,cursor:"pointer",padding:0}}>Clear</button>}
-            <button onClick={()=>setFiltersOpen(false)} style={{background:"var(--accent)",border:"none",color:"#fff",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,padding:"6px 16px",borderRadius:6,cursor:"pointer"}}>Done</button>
+            {ac>0&&<button onClick={clearFilters} style={{background:"none",border:"none",color:"var(--rose)",fontFamily:"var(--ff)",fontSize:14,cursor:"pointer",padding:0}}>Clear</button>}
+            <button onClick={()=>setFiltersOpen(false)} style={{background:"var(--accent)",border:"none",color:"#fff",fontFamily:"var(--ff)",fontSize:14,fontWeight:700,padding:"6px 16px",borderRadius:6,cursor:"pointer"}}>Done</button>
           </div>
         </div>
 
         <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--mint)",fontWeight:700,letterSpacing:1,marginBottom:6}}>PRICE RANGE</div>
         <div style={{display:"flex",gap:8,marginBottom:8}}>
-          <input type="number" value={minPr||""} onChange={e=>setMinPr(+e.target.value||0)} placeholder="Min $" style={{flex:1,background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:6,padding:"8px 10px",fontSize:13,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none",boxSizing:"border-box"}}/>
-          <input type="number" value={maxPr>=5000?"":maxPr} onChange={e=>setMaxPr(+e.target.value||5000)} placeholder="Max $" style={{flex:1,background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:6,padding:"8px 10px",fontSize:13,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none",boxSizing:"border-box"}}/>
+          <input type="number" value={minPr||""} onChange={e=>setMinPr(+e.target.value||0)} placeholder="Min $" style={{flex:1,background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:6,padding:"8px 10px",fontSize:14,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none",boxSizing:"border-box"}}/>
+          <input type="number" value={maxPr>=5000?"":maxPr} onChange={e=>setMaxPr(+e.target.value||5000)} placeholder="Max $" style={{flex:1,background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:6,padding:"8px 10px",fontSize:14,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none",boxSizing:"border-box"}}/>
         </div>
         <input type="range" min={0} max={Math.ceil(prMx/50)*50} value={Math.min(maxPr,Math.ceil(prMx/50)*50)} onChange={e=>setMaxPr(+e.target.value)} style={{width:"100%",marginBottom:4}}/>
         <div style={{display:"flex",justifyContent:"space-between",marginBottom:16}}>
           <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--mute)"}}>${minPr}</span>
-          <span style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mint)",fontWeight:600}}>to ${maxPr>=5000?"∞":"$"+maxPr}</span>
+          <span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mint)",fontWeight:600}}>to ${maxPr>=5000?"∞":"$"+maxPr}</span>
         </div>
 
         {allBr.length>0&&<div style={{marginBottom:16}}>
@@ -2732,7 +2744,7 @@ function MobileSearchPage({activeCat,th}){
           <div style={{display:"flex",flexWrap:"wrap",gap:6}}>
             {allBr.map(b=>{
               const on=brands.includes(b);
-              return <button key={b} onClick={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} style={{background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:18,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:12,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{b} <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)",marginLeft:2}}>{catP.filter(p=>resolveBrand(p)===b).length}</span></button>;
+              return <button key={b} onClick={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} style={{background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:18,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:13,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{b} <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)",marginLeft:2}}>{catP.filter(p=>resolveBrand(p)===b).length}</span></button>;
             })}
           </div>
         </div>}
@@ -2743,7 +2755,7 @@ function MobileSearchPage({activeCat,th}){
             {allMarkets.map(m=>{
               const cap=m.charAt(0).toUpperCase()+m.slice(1);
               const on=marketplaces.includes(m);
-              return <button key={m} onClick={()=>setMarketplaces(p=>p.includes(m)?p.filter(x=>x!==m):[...p,m])} style={{background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:18,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:12,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{cap}</button>;
+              return <button key={m} onClick={()=>setMarketplaces(p=>p.includes(m)?p.filter(x=>x!==m):[...p,m])} style={{background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:18,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:13,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{cap}</button>;
             })}
           </div>
         </div>}
@@ -2753,12 +2765,12 @@ function MobileSearchPage({activeCat,th}){
           <div style={{display:"flex",gap:6}}>
             {[0,4,4.5].map(rv=>{
               const on=minR===rv;
-              return <button key={rv} onClick={()=>setMinR(rv)} style={{flex:1,background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"8px",fontFamily:"var(--ff)",fontSize:12,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{rv?rv+"+ ★":"Any"}</button>;
+              return <button key={rv} onClick={()=>setMinR(rv)} style={{flex:1,background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"8px",fontFamily:"var(--ff)",fontSize:13,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{rv?rv+"+ ★":"Any"}</button>;
             })}
           </div>
         </div>
 
-        <button onClick={()=>setFiltersOpen(false)} style={{width:"100%",background:"var(--accent)",border:"none",color:"#fff",fontFamily:"var(--ff)",fontSize:14,fontWeight:700,padding:"14px",borderRadius:8,cursor:"pointer"}}>Show {list.length} results</button>
+        <button onClick={()=>setFiltersOpen(false)} style={{width:"100%",background:"var(--accent)",border:"none",color:"#fff",fontFamily:"var(--ff)",fontSize:15,fontWeight:700,padding:"14px",borderRadius:8,cursor:"pointer"}}>Show {list.length} results</button>
       </div>
     </div>}
   </div>;
@@ -2788,13 +2800,13 @@ function SearchPage({activeCat,th}){
   const sel=c=>{setCat(c);setBrands([]);setMarketplaces([]);setSf({});setQ("");setMaxPr(5000);setMinPr(0);setMinR(0);setCpO(false);};
   const catP=cat?P.filter(p=>p.c===cat):P;const allBr=[...new Set(catP.map(p=>resolveBrand(p)).filter(Boolean))].sort();const allMarkets=[...new Set(catP.flatMap(p=>p.deals&&typeof p.deals==="object"?Object.keys(p.deals).filter(k=>p.deals[k]&&typeof p.deals[k]==="object"&&p.deals[k].price):[]))].sort();const cols=cat?(CAT[cat]?.cols||[]):[];const prMx=Math.max(...catP.map(p=>$(p)),100);
   const togSf=(col,val)=>setSf(pv=>{const c=pv[col]||[];return{...pv,[col]:c.includes(val)?c.filter(v=>v!==val):[...c,val]};});
-  const list=useMemo(()=>{let r=catP;if(q)r=r.filter(p=>smartMatch(p,q));if(brands.length)r=r.filter(p=>brands.includes(resolveBrand(p)));if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price));r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);if(minR)r=r.filter(p=>p.r>=minR);if(cpO)r=r.filter(p=>p.cp);Object.entries(sf).forEach(([key,vals])=>{if(key.endsWith("_max")){const field=key.replace("_max","");r=r.filter(p=>p[field]==null||p[field]<=vals);}else if(Array.isArray(vals)&&vals.length){r=r.filter(p=>{const pv=String(p[key]!=null?!!p[key]?p[key]:"false":"false");const cfg=cat&&CAT[cat]?.filters?.[key];const ev=cfg?.extract?cfg.extract(p):null;return vals.includes(pv)||vals.includes(String(p[key]))||(ev!=null&&vals.includes(ev));});}});const [sk,sd]=sort.split("-");r=[...r].sort((a,b)=>{const va=sk==="price"?$(a):sk==="rating"?a.r:sk==="value"?(a.value!=null?a.value:(a.bench||0)/Math.max($(a)/100,1)):(a.bench||0);const vb=sk==="price"?$(b):sk==="rating"?b.r:sk==="value"?(b.value!=null?b.value:(b.bench||0)/Math.max($(b)/100,1)):(b.bench||0);return sd==="asc"?va-vb:vb-va;});return r;},[cat,q,brands,marketplaces,maxPr,minPr,minR,cpO,sf,sort]);
+  const list=useMemo(()=>{let r=catP;if(q)r=r.filter(p=>smartMatch(p,q));if(brands.length)r=r.filter(p=>brands.includes(resolveBrand(p)));if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price));r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);if(minR)r=r.filter(p=>p.r>=minR);if(cpO)r=r.filter(p=>p.cp);Object.entries(sf).forEach(([key,vals])=>{if(key.endsWith("_max")){const field=key.replace("_max","");r=r.filter(p=>p[field]==null||p[field]<=vals);}else if(Array.isArray(vals)&&vals.length){r=r.filter(p=>{const pv=String(p[key]!=null?!!p[key]?p[key]:"false":"false");const cfg=cat&&CAT[cat]?.filters?.[key];const ev=cfg?.extract?cfg.extract(p):null;const evMatch=Array.isArray(ev)?ev.some(x=>vals.includes(x)):(ev!=null&&vals.includes(ev));return vals.includes(pv)||vals.includes(String(p[key]))||evMatch;});}});const [sk,sd]=sort.split("-");r=[...r].sort((a,b)=>{const va=sk==="price"?$(a):sk==="rating"?a.r:sk==="value"?(a.value!=null?a.value:(a.bench||0)/Math.max($(a)/100,1)):(a.bench||0);const vb=sk==="price"?$(b):sk==="rating"?b.r:sk==="value"?(b.value!=null?b.value:(b.bench||0)/Math.max($(b)/100,1)):(b.bench||0);return sd==="asc"?va-vb:vb-va;});return r;},[cat,q,brands,marketplaces,maxPr,minPr,minR,cpO,sf,sort]);
   const ac=[brands.length,marketplaces.length,cpO,minR,maxPr<prMx,minPr>0,...Object.values(sf).map(v=>v.length)].filter(Boolean).length;
 
   if(!cat) return <CategoryBrowse sel={sel} th={th} CATS={CATS} CAT={CAT} P={P} CatThumb={CatThumb}/>;
 
-  return <div className="fade" style={{maxWidth:1080,margin:"0 auto",padding:"16px 20px"}}>
-    <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:14}}><button onClick={()=>setCat("")} style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)",background:"none",border:"none",cursor:"pointer"}}>All Parts</button><span style={{color:"var(--mute)"}}>/</span><CatThumb cat={cat} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={24} rounded={4} editable={false}/><select value={cat} onChange={e=>sel(e.target.value)} style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--accent)",fontWeight:600,background:"none",border:"none",cursor:"pointer",outline:"none",padding:"2px 4px",appearance:"auto"}}>{CATS.map(c=><option key={c} value={c}>{CAT[c].label}</option>)}</select><div style={{flex:1}}/><span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)"}}>{list.length} results</span></div>
+  return <div className="fade" style={{maxWidth:1600,margin:"0 auto",padding:"16px 20px"}}>
+    <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:14}}><button onClick={()=>setCat("")} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer"}}>All Parts</button><span style={{color:"var(--mute)"}}>/</span><CatThumb cat={cat} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={24} rounded={4} editable={false}/><select value={cat} onChange={e=>sel(e.target.value)} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",fontWeight:600,background:"none",border:"none",cursor:"pointer",outline:"none",padding:"2px 4px",appearance:"auto"}}>{CATS.map(c=><option key={c} value={c}>{CAT[c].label}</option>)}</select><div style={{flex:1}}/><span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)"}}>{list.length} results</span></div>
     <CategoryGuide cat={cat}/>
     <div className="browse-layout" style={{display:"grid",gridTemplateColumns:"200px 1fr",gap:16,alignItems:"start"}}>
       {/* SIDEBAR */}
@@ -2802,11 +2814,11 @@ function SearchPage({activeCat,th}){
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:10}}><span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--mint)",fontWeight:600,letterSpacing:1}}>FILTERS</span>{ac>0&&<button onClick={()=>{setBrands([]);setMarketplaces([]);setMaxPr(5000);setMinPr(0);setMinR(0);setCpO(false);setSf({});}} style={{fontSize:9,color:"var(--rose)",background:"none",border:"none",cursor:"pointer",fontFamily:"var(--ff)"}}>Clear ({ac})</button>}</div>
         <FG label="PRICE RANGE">
           <div style={{display:"flex",gap:6,marginBottom:6}}>
-            <input type="number" value={minPr||""} onChange={e=>setMinPr(+e.target.value||0)} placeholder="Min $" style={{width:"50%",background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:4,padding:"4px 6px",fontSize:10,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none"}}/>
-            <input type="number" value={maxPr>=5000?"":maxPr} onChange={e=>setMaxPr(+e.target.value||5000)} placeholder="Max $" style={{width:"50%",background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:4,padding:"4px 6px",fontSize:10,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none"}}/>
+            <input type="number" value={minPr||""} onChange={e=>setMinPr(+e.target.value||0)} placeholder="Min $" style={{width:"50%",background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:4,padding:"6px 8px",fontSize:13,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none"}}/>
+            <input type="number" value={maxPr>=5000?"":maxPr} onChange={e=>setMaxPr(+e.target.value||5000)} placeholder="Max $" style={{width:"50%",background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:4,padding:"6px 8px",fontSize:13,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none"}}/>
           </div>
           <input type="range" min={0} max={Math.ceil(prMx/50)*50} value={Math.min(maxPr,Math.ceil(prMx/50)*50)} onChange={e=>setMaxPr(+e.target.value)} style={{width:"100%"}}/>
-          <div style={{display:"flex",justifyContent:"space-between",marginTop:2}}><span style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--mute)"}}>${minPr}</span><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)",fontWeight:600}}>to ${maxPr>=5000?"∞":"$"+maxPr}</span></div>
+          <div style={{display:"flex",justifyContent:"space-between",marginTop:2}}><span style={{fontFamily:"var(--mono)",fontSize:12,color:"var(--dim)",fontWeight:600}}>${minPr}</span><span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mint)",fontWeight:700}}>to ${maxPr>=5000?"∞":"$"+maxPr}</span></div>
         </FG>
         <FG label="BRAND">{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={catP.filter(p=>resolveBrand(p)===b).length}/>)}</FG>
         {allMarkets.length>0&&<FG label="MARKETPLACE" open={true}>{allMarkets.map(m=>{const cap=m.charAt(0).toUpperCase()+m.slice(1);const cnt=catP.filter(p=>p.deals&&typeof p.deals==="object"&&p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price).length;return <Chk key={m} label={cap} checked={marketplaces.includes(m)} onChange={()=>setMarketplaces(p=>p.includes(m)?p.filter(x=>x!==m):[...p,m])} count={cnt}/>;})}</FG>}
@@ -2829,16 +2841,16 @@ function SearchPage({activeCat,th}){
             if(mn===mx)return null;
             return <FG key={field} label={cfg.label.toUpperCase()}>
               <div style={{display:"flex",alignItems:"center",gap:4}}>
-                <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>{mn}{cfg.unit||""}</span>
-                <input type="range" min={mn} max={mx} value={sf[field+"_max"]||mx} onChange={e=>{const v=+e.target.value;setSf(prev=>({...prev,[field+"_max"]:v}));}} style={{flex:1}}/>
-                <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)",fontWeight:600}}>{sf[field+"_max"]||mx}{cfg.unit||""}</span>
+                <span style={{fontFamily:"var(--mono)",fontSize:12,color:"var(--dim)",fontWeight:600,flexShrink:0,whiteSpace:"nowrap"}}>{mn}{cfg.unit||""}</span>
+                <input type="range" min={mn} max={mx} value={sf[field+"_max"]||mx} onChange={e=>{const v=+e.target.value;setSf(prev=>({...prev,[field+"_max"]:v}));}} style={{flex:1,minWidth:0}}/>
+                <span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mint)",fontWeight:700,flexShrink:0,whiteSpace:"nowrap"}}>{sf[field+"_max"]||mx}{cfg.unit||""}</span>
               </div>
             </FG>;
           }
           // Default: checkbox filter
           const opts=uv(cat,field,cfg.extract);
           if(!opts.length)return null;
-          const matchVal=cfg.extract?(p,v)=>cfg.extract(p)===v:(p,v)=>String(p[field])===v;
+          const matchVal=cfg.extract?(p,v)=>{const ev=cfg.extract(p);return Array.isArray(ev)?ev.includes(v):ev===v;}:(p,v)=>String(p[field])===v;
           const lbl=cfg.extract?(v)=>String(v):(v)=>fmt(field,isNaN(v)?v:+v);
           return <FG key={field} label={cfg.label.toUpperCase()}>
             {(showAll[field]?opts:opts.slice(0,20)).map(v=><Chk key={v} label={lbl(v)} checked={(sf[field]||[]).includes(v)} onChange={()=>togSf(field,v)} count={catP.filter(p=>matchVal(p,v)).length}/>)}
@@ -2850,14 +2862,28 @@ function SearchPage({activeCat,th}){
       <div>
         <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:10}}>
           <div style={{flex:1,position:"relative"}}>
-            <span style={{position:"absolute",left:8,top:"50%",transform:"translateY(-50%)",fontSize:12,color:"var(--mute)"}}>🔍</span>
+            <span style={{position:"absolute",left:8,top:"50%",transform:"translateY(-50%)",fontSize:13,color:"var(--mute)"}}>🔍</span>
             <input value={q} onChange={e=>setQ(e.target.value)} placeholder={`Search ${cat?CAT[cat].label.toLowerCase():"all parts"}...`}
-              style={{width:"100%",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:6,padding:"7px 8px 7px 28px",fontSize:12,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none"}}/>
-            {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:8,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:11,cursor:"pointer"}}>✕</button>}
+              style={{width:"100%",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:6,padding:"7px 8px 7px 28px",fontSize:13,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none"}}/>
+            {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:8,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:13,cursor:"pointer"}}>✕</button>}
           </div>
           <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>SORT</span>
           <select value={sort} onChange={e=>setSort(e.target.value)} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,padding:"7px 8px",fontSize:10,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",cursor:"pointer"}}><option value="price-asc">Price ↑</option><option value="price-desc">Price ↓</option><option value="rating-desc">Top Rated</option><option value="bench-desc">Performance</option><option value="value-desc">Best Value</option></select>
         </div>
+        {/* Active filter chips */}
+        <FilterChips chips={[
+          ...(q ? [{label:'Search: ' + q, onRemove:()=>setQ('')}] : []),
+          ...(minPr > 0 || maxPr < prMx ? [{label:`Price: $${minPr}-$${maxPr}`, onRemove:()=>{setMinPr(0);setMaxPr(5000);}}] : []),
+          ...brands.map(b=>({label:'Brand: ' + b, onRemove:()=>setBrands(prev=>prev.filter(x=>x!==b))})),
+          ...marketplaces.map(m=>({label:'Marketplace: ' + m.charAt(0).toUpperCase()+m.slice(1), onRemove:()=>setMarketplaces(prev=>prev.filter(x=>x!==m))})),
+          ...(minR > 0 ? [{label:`Rating: ${minR}+`, onRemove:()=>setMinR(0)}] : []),
+          ...(cpO ? [{label:'Customer Picks Only', onRemove:()=>setCpO(false)}] : []),
+          ...Object.entries(sf).flatMap(([key,vals])=>{
+            if(key.endsWith('_max')) return [{label:`${key.replace('_max','')}: max ${vals}`, onRemove:()=>setSf(prev=>{const n={...prev};delete n[key];return n;})}];
+            if(Array.isArray(vals)) return vals.map(v=>({label:`${(CAT[cat]?.filters?.[key]?.label)||key}: ${v}`, onRemove:()=>setSf(prev=>({...prev,[key]:prev[key].filter(x=>x!==v)}))}));
+            return [];
+          })
+        ]}/>
         {/* Header */}
         <div style={{display:"grid",gridTemplateColumns:`4fr ${cols.map(()=>"1fr").join(" ")} 60px 80px 70px`,gap:8,padding:"10px 12px",borderBottom:"2px solid var(--bdr2)",background:"var(--bg3)",borderRadius:"8px 8px 0 0"}}>
           <span style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)",fontWeight:600,letterSpacing:0.5,textTransform:"uppercase"}}>Product</span>
@@ -2872,9 +2898,9 @@ function SearchPage({activeCat,th}){
           return <div key={p.id}>
             {isExp && <ProductSchema p={p}/>}
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`4fr ${cols.map(()=>"1fr").join(" ")} 60px 80px 70px`,gap:8,padding:"10px 12px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0,transition:"background .2s"}}>
-              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:40,height:40,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:18,width:40,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2,flexWrap:"wrap"}}><span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)",whiteSpace:"nowrap",flexShrink:0}}>🔥 DEAL -${dealSavings(p)}</span>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
-              {cols.map(col=>{const v=p[col];const fmtVal=fmt(col,v,p);return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:typeof fmtVal==="string"&&fmtVal.includes("\n")?<div><div style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal.split("\n")[0]}</div><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{fmtVal.split("\n")[1]}</div></div>:<span style={{fontFamily:"var(--ff)",fontSize:12,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal}</span>}</div>})}
-              {(()=>{if(p.bench==null)return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)"}}>—</span></div>;const ratio=Math.round(valueRatio(p)*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:800,color:gc}}>{grade}</span></div>;})()}
+              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}>{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:40,height:40,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:22,width:40,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2,flexWrap:"wrap"}}><span style={{fontSize:13,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)",whiteSpace:"nowrap",flexShrink:0}}>🔥 DEAL -${dealSavings(p)}</span>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
+              {cols.map(col=>{const v=p[col];const fmtVal=fmt(col,v,p);return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:typeof fmtVal==="string"&&fmtVal.includes("\n")?<div><div style={{fontFamily:"var(--ff)",fontSize:13,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal.split("\n")[0]}</div><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{fmtVal.split("\n")[1]}</div></div>:<span style={{fontFamily:"var(--ff)",fontSize:13,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal}</span>}</div>})}
+              {(()=>{if(p.bench==null)return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)"}}>—</span></div>;const ratio=Math.round(valueRatio(p)*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:800,color:gc}}>{grade}</span></div>;})()}
               <div style={{textAlign:"right"}}>{isDeal(p)&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>}<div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</div>{rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{rr.length} stores</div>}</div>
               <div style={{display:"flex",justifyContent:"flex-end"}} onClick={e=>{e.stopPropagation();setExpanded(isExp?null:p.id);}}>
                 <button style={{background:isExp?"var(--bg4)":"var(--mint)",border:isExp?"1px solid var(--mint)":"none",borderRadius:6,padding:"6px 14px",cursor:"pointer",fontFamily:"var(--ff)",fontSize:10,fontWeight:700,color:isExp?"var(--mint)":"var(--bg)",transition:"all .15s"}}>{isExp?"Close":"Buy →"}</button>
@@ -2885,12 +2911,12 @@ function SearchPage({activeCat,th}){
               <div style={{display:"grid",gridTemplateColumns:"1fr 1.4fr",gap:28}}>
                 {/* Left: specs */}
                 <div>
-                  <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",letterSpacing:1,marginBottom:10,fontWeight:700,textTransform:"uppercase"}}>Specifications</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",letterSpacing:1,marginBottom:10,fontWeight:700,textTransform:"uppercase"}}>Specifications</div>
                   <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"0 20px"}}>
                     {Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","condition","generation","chipset"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").map(([k,v])=>
                       <div key={k} style={{display:"flex",justifyContent:"space-between",padding:"5px 0",borderBottom:"1px solid var(--bdr)"}}>
-                        <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)"}}>{SL[k]||k}</span>
-                        <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--txt)",fontWeight:600}}>{fmt(k,v)}</span>
+                        <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>{SL[k]||k}</span>
+                        <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",fontWeight:600}}>{fmt(k,v)}</span>
                       </div>)}
                   </div>
                   {p.c==="Motherboard"&&p.memSpeed&&<div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)",marginTop:8,padding:"6px 8px",background:"var(--bg2)",borderRadius:6,lineHeight:1.5}}>* Memory Speed is the max supported by this motherboard. Actual speed also depends on your CPU's memory controller and RAM kit rated speed.</div>}
@@ -2898,39 +2924,39 @@ function SearchPage({activeCat,th}){
                 </div>
                 {/* Right: buy */}
                 <div>
-                  <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",letterSpacing:1,marginBottom:10,fontWeight:700,textTransform:"uppercase"}}>Buy Now</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",letterSpacing:1,marginBottom:10,fontWeight:700,textTransform:"uppercase"}}>Buy Now</div>
                   <div style={{display:"flex",flexDirection:"column",gap:6}}>
                     {rr.length>0?rr.map((r,ri)=>
                       <a key={r.name} href={r.url} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",padding:"12px 14px",borderRadius:8,textDecoration:"none",gap:12,background:ri===0?"var(--mint3)":"var(--bg4)",border:`1px solid ${ri===0?"var(--mint)33":"var(--bdr)"}`}}>
                         <div style={{flex:1}}>
-                          <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}><span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",textTransform:"capitalize"}}>{r.name}</span>{ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}</div>
-                          <div style={{fontFamily:"var(--ff)",fontSize:11,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
+                          <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",textTransform:"capitalize"}}>{r.name}</span>{ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}</div>
+                          <div style={{fontFamily:"var(--ff)",fontSize:13,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
                         </div>
                         <div style={{display:"flex",alignItems:"center",gap:12}}>
-                          <span style={{fontFamily:"var(--ff)",fontSize:20,fontWeight:800,color:ri===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
-                          <div style={{background:ri===0?"var(--mint)":"var(--bg3)",border:ri===0?"none":"1px solid var(--bdr2)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:11,fontWeight:700,color:ri===0?"var(--bg)":"var(--txt)"}}>Buy →</div>
+                          <span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:ri===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
+                          <div style={{background:ri===0?"var(--mint)":"var(--bg3)",border:ri===0?"none":"1px solid var(--bdr2)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:ri===0?"var(--bg)":"var(--txt)"}}>Buy →</div>
                         </div>
                       </a>
                     ):<a href={p.deals?.amazon?.url||"#"} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"14px 16px",borderRadius:8,background:"var(--mint3)",border:"1px solid var(--mint)33",textDecoration:"none"}}>
-                        <div><span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>Amazon</span><div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--sky)",marginTop:3}}>✓ In Stock</div></div>
-                        <div style={{display:"flex",alignItems:"center",gap:12}}><span style={{fontFamily:"var(--ff)",fontSize:20,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span><div style={{background:"var(--mint)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:11,fontWeight:700,color:"var(--bg)"}}>Buy →</div></div>
+                        <div><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>Amazon</span><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--sky)",marginTop:3}}>✓ In Stock</div></div>
+                        <div style={{display:"flex",alignItems:"center",gap:12}}><span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span><div style={{background:"var(--mint)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--bg)"}}>Buy →</div></div>
                       </a>}
                     {rr.length>0&&ALL_RETAILERS.filter(name=>!rr.some(r=>r.name===name)).map(name=>{
                       const cap=name.charAt(0).toUpperCase()+name.slice(1);
                       return <div key={name} style={{display:"flex",alignItems:"center",padding:"12px 14px",borderRadius:8,gap:12,background:"var(--bg4)",border:"1px dashed var(--bdr)",opacity:0.55}}>
                         <div style={{flex:1}}>
-                          <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--dim)",textTransform:"capitalize",marginBottom:2}}>{cap}</div>
-                          <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)"}}>Not tracked at this retailer</div>
+                          <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--dim)",textTransform:"capitalize",marginBottom:2}}>{cap}</div>
+                          <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)"}}>Not tracked at this retailer</div>
                         </div>
                         <span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:600,color:"var(--mute)",fontStyle:"italic"}}>N/A</span>
                       </div>;
                     })}
                   </div>
                   {(p.r||p.reviews)&&<div style={{marginTop:10,display:"flex",justifyContent:"center",padding:"8px 0"}}><ReviewStars rating={p.r} reviews={p.reviews} size="md"/></div>}
-                  {rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)",textAlign:"center",marginTop:8}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(rr[rr.length-1].price-rr[0].price).toFixed(2)}</span> at {rr[0].name} vs {rr[rr.length-1].name}</div>}
-                  {p.msrp&&p.msrp>$(p)&&<div style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:6,background:"var(--bg4)",border:"1px solid var(--bdr)",marginTop:8}}><span style={{fontSize:16}}>💰</span><div style={{flex:1}}><div style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>Below MSRP</div><div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)"}}>Was <span style={{textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span> → ${fmtPrice($(p))}</div></div><span style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--mint)"}}>{Math.round((1-$(p)/p.msrp)*100)}% off</span></div>}
+                  {rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textAlign:"center",marginTop:8}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(rr[rr.length-1].price-rr[0].price).toFixed(2)}</span> at {rr[0].name} vs {rr[rr.length-1].name}</div>}
+                  {p.msrp&&p.msrp>$(p)&&<div style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:6,background:"var(--bg4)",border:"1px solid var(--bdr)",marginTop:8}}><span style={{fontSize:17}}>💰</span><div style={{flex:1}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Below MSRP</div><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>Was <span style={{textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span> → ${fmtPrice($(p))}</div></div><span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--mint)"}}>{Math.round((1-$(p)/p.msrp)*100)}% off</span></div>}
                   {/* Product Image */}
-                  {(p.used===true||p.condition==="used")&&<div style={{marginTop:14,background:"linear-gradient(90deg,#F59E0B 0%,#D97706 100%)",color:"#1A1A20",padding:"10px 14px",borderRadius:8,fontFamily:"var(--ff)",fontSize:12,fontWeight:700,display:"flex",alignItems:"center",gap:10,border:"1px solid #D97706"}}><span style={{fontFamily:"var(--mono)",fontSize:11,fontWeight:900,letterSpacing:1.5,background:"#1A1A20",color:"#F59E0B",padding:"3px 8px",borderRadius:4}}>USED</span><span>Pre-owned item — check seller rating, condition notes, and return policy before purchasing.</span></div>}{p.img&&<div style={{marginTop:14,background:"var(--bg4)",borderRadius:10,padding:16,display:"flex",alignItems:"center",justifyContent:"center"}}>
+                  {(p.used===true||p.condition==="used")&&<div style={{marginTop:14,background:"linear-gradient(90deg,#F59E0B 0%,#D97706 100%)",color:"#1A1A20",padding:"10px 14px",borderRadius:8,fontFamily:"var(--ff)",fontSize:13,fontWeight:700,display:"flex",alignItems:"center",gap:10,border:"1px solid #D97706"}}><span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:900,letterSpacing:1.5,background:"#1A1A20",color:"#F59E0B",padding:"3px 8px",borderRadius:4}}>USED</span><span>Pre-owned item — check seller rating, condition notes, and return policy before purchasing.</span></div>}{p.img&&<div style={{marginTop:14,background:"var(--bg4)",borderRadius:10,padding:16,display:"flex",alignItems:"center",justifyContent:"center"}}>
                     <img loading="lazy" decoding="async" src={p.img.replace('_AC_SL300_','_AC_SL500_')} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{maxWidth:"100%",maxHeight:220,objectFit:"contain",borderRadius:6}}/>
                   </div>}
                 </div>
@@ -2939,19 +2965,19 @@ function SearchPage({activeCat,th}){
               {/* Value + Future-Proofing */}
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:14,marginTop:20,paddingTop:20,borderTop:"1px solid var(--bdr)"}}>
                 {p.bench!=null&&<div style={{background:"var(--bg4)",borderRadius:10,padding:"16px 18px"}}>
-                  <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",letterSpacing:1,marginBottom:12,fontWeight:700}}>VALUE SCORE</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",letterSpacing:1,marginBottom:12,fontWeight:700}}>VALUE SCORE</div>
                   {(()=>{const ratio=Math.round(valueRatio(p)*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";const gl=ratio>=28?"Exceptional value":ratio>=20?"Great value":ratio>=14?"Good value":ratio>=8?"Average value":"Below average";return <div>
                     <div style={{display:"flex",alignItems:"center",gap:14,marginBottom:12}}>
                       <div style={{width:52,height:52,borderRadius:12,background:gc+"18",display:"flex",alignItems:"center",justifyContent:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:26,fontWeight:800,color:gc}}>{grade}</span></div>
-                      <div><div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)"}}>{ratio.toFixed(1)}</div><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:gc}}>{gl}</div></div>
+                      <div><div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)"}}>{ratio.toFixed(1)}</div><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:gc}}>{gl}</div></div>
                     </div>
-                    <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",lineHeight:1.6,background:"var(--bg2)",borderRadius:8,padding:"10px 12px"}}>
+                    <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.6,background:"var(--bg2)",borderRadius:8,padding:"10px 12px"}}>
                       Performance ({p.bench}%) ÷ Price (${fmtPrice($(p))}) = <span style={{color:"var(--txt)",fontWeight:600}}>{ratio.toFixed(1)}</span><br/>
                       <span style={{color:"var(--mute)"}}>S ≥28 · A ≥20 · B ≥14 · C ≥8 · D &lt;8</span>
                     </div></div>;})()}
                 </div>}
                 {(p.c==="CPU"||p.c==="GPU"||p.c==="Motherboard")&&<div style={{background:"var(--bg4)",borderRadius:10,padding:"16px 18px"}}>
-                  <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",letterSpacing:1,marginBottom:12,fontWeight:700}}>FUTURE-PROOFING</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",letterSpacing:1,marginBottom:12,fontWeight:700}}>FUTURE-PROOFING</div>
                   {(()=>{const f=[];
                     // Derive platform from socket OR from chipset (some DataForSEO products only have chipset)
                     const sock=(p.socket||"").toUpperCase().replace(/\s/g,"");
@@ -2986,7 +3012,7 @@ function SearchPage({activeCat,th}){
                       if(p.arch==="Blackwell"||p.arch==="RDNA 4")f.push({t:"Current gen architecture",g:true});
                     }
                     if(!f.length)f.push({t:"Platform info unavailable",g:true});
-                    return f.slice(0,5).map((x,i)=><div key={i} style={{display:"flex",alignItems:"flex-start",gap:10,padding:"8px 0",borderBottom:i<f.length-1?"1px solid var(--bdr)":"none"}}><span style={{fontSize:16,lineHeight:1,flexShrink:0}}>{x.g?"✅":"⚠️"}</span><span style={{fontFamily:"var(--ff)",fontSize:13,color:x.g?"var(--txt)":"var(--amber)",lineHeight:1.4}}>{x.t}</span></div>);})()}
+                    return f.slice(0,5).map((x,i)=><div key={i} style={{display:"flex",alignItems:"flex-start",gap:10,padding:"8px 0",borderBottom:i<f.length-1?"1px solid var(--bdr)":"none"}}><span style={{fontSize:17,lineHeight:1,flexShrink:0}}>{x.g?"✅":"⚠️"}</span><span style={{fontFamily:"var(--ff)",fontSize:14,color:x.g?"var(--txt)":"var(--amber)",lineHeight:1.4}}>{x.t}</span></div>);})()}
                 </div>}
               </div>
 
@@ -3002,13 +3028,13 @@ function SearchPage({activeCat,th}){
                   return [{l:"Price",v:`$${$(x)}`}];
                 };
                 const card=(alt,color,tag,sub)=><div style={{background:"var(--bg2)",borderRadius:10,padding:"16px 18px",border:"1px solid var(--bdr)"}}>
-                  <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:8}}><Tag color={color}>{tag}</Tag><span style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)"}}>{sub}</span></div>
+                  <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:8}}><Tag color={color}>{tag}</Tag><span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>{sub}</span></div>
                   <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:10}}>{alt.n}</div>
-                  <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:10}}>{specs(alt).map((s,i)=><div key={i} style={{background:"var(--bg4)",borderRadius:6,padding:"6px 10px",textAlign:"center",minWidth:60}}><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)",marginBottom:2}}>{s.l}</div><div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",fontWeight:600}}>{s.v}</div></div>)}</div>
-                  <div style={{fontFamily:"var(--ff)",fontSize:20,fontWeight:800,color}}>${$(alt)}</div>
+                  <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:10}}>{specs(alt).map((s,i)=><div key={i} style={{background:"var(--bg4)",borderRadius:6,padding:"6px 10px",textAlign:"center",minWidth:60}}><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)",marginBottom:2}}>{s.l}</div><div style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",fontWeight:600}}>{s.v}</div></div>)}</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color}}>${$(alt)}</div>
                 </div>;
                 return <div style={{marginTop:14}}>
-                  <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",letterSpacing:1,marginBottom:12,fontWeight:700}}>CONSIDER INSTEAD</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",letterSpacing:1,marginBottom:12,fontWeight:700}}>CONSIDER INSTEAD</div>
                   <div style={{display:"grid",gridTemplateColumns:better&&upgrade?"1fr 1fr":"1fr",gap:12}}>
                     {better&&card(better,"var(--mint)",`SAVE $${$(p)-$(better)}`,`${Math.round(better.bench/p.bench*100)}% of this product's perf`)}
                     {upgrade&&card(upgrade,"var(--sky)",`+${upgrade.bench-p.bench}% FASTER`,$(upgrade)>$(p)?`for $${$(upgrade)-$(p)} more`:`$${$(p)-$(upgrade)} cheaper`)}
@@ -3057,7 +3083,7 @@ function BuilderFPS({gpu,cpu,ram}){
     <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:12,flexWrap:"wrap",gap:8}}>
       <div>
         <div style={{fontFamily:"var(--mono)",fontSize:9,color:ready?"var(--sky)":"var(--dim)",letterSpacing:1.5,fontWeight:600}}>🎮 ESTIMATED GAMING PERFORMANCE</div>
-        <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)",marginTop:2}}>
+        <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginTop:2}}>
           {ready?`${gpuKey} + ${cpuKey}`:missing.length?`Select ${missing.join(" & ")} to see estimates`:"Waiting for parts..."}
         </div>
       </div>
@@ -3073,7 +3099,7 @@ function BuilderFPS({gpu,cpu,ram}){
         {/* Avg FPS */}
         <div style={{textAlign:"right",minWidth:50}}>
           <div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--dim)"}}>AVG FPS</div>
-          <div style={{fontFamily:"var(--mono)",fontSize:20,fontWeight:800,color:ready?(avg>=144?"var(--mint)":avg>=100?"var(--sky)":avg>=60?"var(--amber)":"var(--rose)"):"var(--mute)"}}>{ready?avg:"—"}</div>
+          <div style={{fontFamily:"var(--mono)",fontSize:22,fontWeight:800,color:ready?(avg>=144?"var(--mint)":avg>=100?"var(--sky)":avg>=60?"var(--amber)":"var(--rose)"):"var(--mute)"}}>{ready?avg:"—"}</div>
         </div>
       </div>
     </div>
@@ -3083,14 +3109,14 @@ function BuilderFPS({gpu,cpu,ram}){
       {sample.map(g=>{
         const r=results.find(x=>x.game===g.name);
         return <div key={g.name} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"8px 10px",display:"flex",alignItems:"center",gap:8}}>
-          <span style={{fontSize:16}}>{g.icon}</span>
+          <span style={{fontSize:17}}>{g.icon}</span>
           <div style={{flex:1,minWidth:0}}>
             <div style={{fontFamily:"var(--ff)",fontSize:10,fontWeight:600,color:ready?"var(--txt)":"var(--dim)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{g.name}</div>
             <div style={{height:3,background:"var(--bg4)",borderRadius:2,overflow:"hidden",marginTop:3}}>
               {r&&<div style={{width:`${Math.min(r.fps/200*100,100)}%`,height:"100%",background:tc(r.tier),borderRadius:2,transition:"width .4s ease"}}/>}
             </div>
           </div>
-          <div style={{fontFamily:"var(--mono)",fontSize:14,fontWeight:700,color:r?tc(r.tier):"var(--mute)",flexShrink:0,minWidth:28,textAlign:"right"}}>{r?r.fps:"—"}</div>
+          <div style={{fontFamily:"var(--mono)",fontSize:15,fontWeight:700,color:r?tc(r.tier):"var(--mute)",flexShrink:0,minWidth:28,textAlign:"right"}}>{r?r.fps:"—"}</div>
         </div>;
       })}
     </div>
@@ -3149,12 +3175,12 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
   else if(sort==="rating-desc")list.sort((a,b)=>b.r-a.r);
   else if(sort==="bench-desc")list.sort((a,b)=>(b.bench||0)-(a.bench||0));
 
-  return <div className="fade" style={{maxWidth:1080,margin:"0 auto",padding:"28px 20px"}}>
+  return <div className="fade" style={{maxWidth:1600,margin:"0 auto",padding:"28px 20px"}}>
     {/* Header */}
     <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:20}}>
-      <button onClick={onBack} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"8px 14px",cursor:"pointer",display:"flex",alignItems:"center",gap:6,color:"var(--txt)",fontFamily:"var(--ff)",fontSize:12,fontWeight:600}}>← Back to Build</button>
+      <button onClick={onBack} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"8px 14px",cursor:"pointer",display:"flex",alignItems:"center",gap:6,color:"var(--txt)",fontFamily:"var(--ff)",fontSize:13,fontWeight:600}}>← Back to Build</button>
       <div style={{flex:1}}>
-        <h2 style={{fontFamily:"var(--ff)",fontSize:20,fontWeight:800,color:"var(--txt)",display:"flex",alignItems:"center",gap:8}}>
+        <h2 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)",display:"flex",alignItems:"center",gap:8}}>
           <span style={{fontSize:22}}>{meta.icon}</span> Choose {meta.singular||meta.label}
         </h2>
         <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginTop:2}}>{compatList.length} compatible parts · {list.length} shown</div>
@@ -3187,10 +3213,10 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
       <div>
         <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:10}}>
           <div style={{flex:1,position:"relative"}}>
-            <span style={{position:"absolute",left:8,top:"50%",transform:"translateY(-50%)",fontSize:12,color:"var(--mute)"}}>🔍</span>
+            <span style={{position:"absolute",left:8,top:"50%",transform:"translateY(-50%)",fontSize:13,color:"var(--mute)"}}>🔍</span>
             <input value={q} onChange={e=>setQ(e.target.value)} placeholder={`Search ${meta.label.toLowerCase()}...`}
-              style={{width:"100%",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:6,padding:"7px 8px 7px 28px",fontSize:12,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none"}}/>
-            {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:8,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:11,cursor:"pointer"}}>✕</button>}
+              style={{width:"100%",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:6,padding:"7px 8px 7px 28px",fontSize:13,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none"}}/>
+            {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:8,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:13,cursor:"pointer"}}>✕</button>}
           </div>
           <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>SORT</span>
           <select value={sort} onChange={e=>setSort(e.target.value)} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,padding:"7px 8px",fontSize:10,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",cursor:"pointer"}}>
@@ -3214,20 +3240,20 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
             {isExp && <ProductSchema p={p}/>}
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`2fr ${cols.map(()=>"1fr").join(" ")} 80px 80px`,gap:6,padding:"8px 10px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)08":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0}}>
               <div style={{display:"flex",alignItems:"center",gap:8,minWidth:0}}>
-                {p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:36,height:36,objectFit:"contain",borderRadius:6,background:"#fff",flexShrink:0}}/>:<span style={{fontSize:16}}>{meta.icon}</span>}
+                {p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:36,height:36,objectFit:"contain",borderRadius:6,background:"#fff",flexShrink:0}}/>:<span style={{fontSize:17}}>{meta.icon}</span>}
                 <div style={{minWidth:0}}>
-                  <div style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div>
                   <div style={{display:"flex",alignItems:"center",gap:4,marginTop:1}}>
                     <span style={{fontSize:10,color:"var(--dim)"}}>{p.b}</span>
                     <Stars r={p.r} s={9}/>
-                    {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:11,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL -${dealSavings(p)}</span>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}
+                    {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:13,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL -${dealSavings(p)}</span>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}
                   </div>
                 </div>
               </div>
               {cols.map(col=>{const v=p[col];return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:<span style={{fontFamily:"var(--mono)",fontSize:10,color:v!=null?"var(--txt)":"var(--mute)"}}>{fmt(col,v)}</span>}</div>})}
               <div style={{textAlign:"right"}}>
                 {(p.msrp&&p.msrp>$(p))&&<div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</div>}
-                <div style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</div>
+                <div style={{fontFamily:"var(--mono)",fontSize:14,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</div>
               </div>
               <div style={{display:"flex",justifyContent:"center"}} onClick={e=>e.stopPropagation()}>
                 <button onClick={()=>onAdd(p)} style={{background:"var(--mint)",border:"none",borderRadius:5,padding:"5px 12px",cursor:"pointer",fontFamily:"var(--mono)",fontSize:9,fontWeight:700,color:"var(--bg)"}}>+ Add</button>
@@ -3246,7 +3272,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
               </div>
               {p.bench!=null&&<div style={{marginTop:8}}><div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginBottom:3}}>PERFORMANCE</div><SBar v={p.bench}/></div>}
               <div style={{marginTop:8}}>
-                <button onClick={()=>onAdd(p)} style={{background:"var(--mint)",border:"none",borderRadius:6,padding:"8px 20px",cursor:"pointer",fontFamily:"var(--ff)",fontSize:12,fontWeight:700,color:"var(--bg)"}}>+ Add to Build</button>
+                <button onClick={()=>onAdd(p)} style={{background:"var(--mint)",border:"none",borderRadius:6,padding:"8px 20px",cursor:"pointer",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--bg)"}}>+ Add to Build</button>
               </div>
             </div>}
           </div>;
@@ -3290,10 +3316,10 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti})
   return <div className="fade" style={{padding:"12px 12px 80px",maxWidth:"100vw",overflow:"hidden"}}>
     {/* Header */}
     <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:14}}>
-      <button onClick={onBack} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"8px 12px",cursor:"pointer",fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--txt)",flexShrink:0}}>← Back</button>
+      <button onClick={onBack} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"8px 12px",cursor:"pointer",fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",flexShrink:0}}>← Back</button>
       <div style={{flex:1,minWidth:0}}>
-        <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:800,color:"var(--txt)",display:"flex",alignItems:"center",gap:6,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
-          <span style={{fontSize:18}}>{meta.icon}</span> Choose {meta.singular||meta.label}
+        <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:800,color:"var(--txt)",display:"flex",alignItems:"center",gap:6,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
+          <span style={{fontSize:22}}>{meta.icon}</span> Choose {meta.singular||meta.label}
         </div>
         <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginTop:1}}>{list.length} of {compatList.length}</div>
       </div>
@@ -3303,15 +3329,15 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti})
     <CategoryGuide cat={cat}/>
     {/* Search bar */}
     <div style={{position:"relative",marginBottom:10}}>
-      <span style={{position:"absolute",left:10,top:"50%",transform:"translateY(-50%)",fontSize:14,color:"var(--mute)"}}>🔍</span>
-      <input value={q} onChange={e=>setQ(e.target.value)} placeholder={"Search "+meta.label.toLowerCase()} style={{width:"100%",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px 10px 10px 34px",fontSize:14,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",boxSizing:"border-box"}}/>
-      {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:10,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:14,cursor:"pointer"}}>✕</button>}
+      <span style={{position:"absolute",left:10,top:"50%",transform:"translateY(-50%)",fontSize:15,color:"var(--mute)"}}>🔍</span>
+      <input value={q} onChange={e=>setQ(e.target.value)} placeholder={"Search "+meta.label.toLowerCase()} style={{width:"100%",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px 10px 10px 34px",fontSize:15,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",boxSizing:"border-box"}}/>
+      {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:10,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:15,cursor:"pointer"}}>✕</button>}
     </div>
 
     {/* Filter + Sort bar */}
     <div style={{display:"flex",gap:8,marginBottom:14}}>
-      <button onClick={()=>setFiltersOpen(true)} style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",gap:6,background:ac>0?"var(--accent3)":"var(--bg3)",border:"1px solid "+(ac>0?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"10px",fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:ac>0?"var(--accent)":"var(--txt)",cursor:"pointer"}}>⚙ Filters{ac>0?" ("+ac+")":""}</button>
-      <select value={sort} onChange={e=>setSort(e.target.value)} style={{flex:1,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px",fontSize:13,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",cursor:"pointer"}}>
+      <button onClick={()=>setFiltersOpen(true)} style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",gap:6,background:ac>0?"var(--accent3)":"var(--bg3)",border:"1px solid "+(ac>0?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"10px",fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:ac>0?"var(--accent)":"var(--txt)",cursor:"pointer"}}>⚙ Filters{ac>0?" ("+ac+")":""}</button>
+      <select value={sort} onChange={e=>setSort(e.target.value)} style={{flex:1,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px",fontSize:14,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",cursor:"pointer"}}>
         <option value="price-asc">Price ↑</option>
         <option value="price-desc">Price ↓</option>
         <option value="rating-desc">Top Rated</option>
@@ -3320,7 +3346,7 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti})
     </div>
 
     {/* Product cards */}
-    {list.length===0&&<div style={{textAlign:"center",padding:"48px 16px",color:"var(--dim)",fontFamily:"var(--ff)",fontSize:14}}>No parts match your filters</div>}
+    {list.length===0&&<div style={{textAlign:"center",padding:"48px 16px",color:"var(--dim)",fontFamily:"var(--ff)",fontSize:15}}>No parts match your filters</div>}
     <div style={{display:"flex",flexDirection:"column",gap:10}}>
       {list.map(p=>{
         const isExp=expanded===p.id;
@@ -3329,30 +3355,30 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti})
           <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"flex",gap:12,padding:12,cursor:"pointer",minWidth:0}}>
             {p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:64,height:64,objectFit:"contain",borderRadius:8,background:"#fff",flexShrink:0}}/>:<div style={{width:64,height:64,background:"var(--bg4)",borderRadius:8,display:"flex",alignItems:"center",justifyContent:"center",fontSize:24,flexShrink:0}}>{meta.icon}</div>}
             <div style={{flex:1,minWidth:0,display:"flex",flexDirection:"column",gap:4}}>
-              <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",lineHeight:1.3,display:"-webkit-box",WebkitLineClamp:2,WebkitBoxOrient:"vertical",overflow:"hidden"}}>{p.n}</div>
+              <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)",lineHeight:1.3,display:"-webkit-box",WebkitLineClamp:2,WebkitBoxOrient:"vertical",overflow:"hidden"}}>{p.n}</div>
               <div style={{display:"flex",alignItems:"center",gap:6,flexWrap:"wrap"}}>
-                <span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span>
+                <span style={{fontSize:13,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span>
                 {p.r&&<Stars r={p.r} s={10}/>}
-                {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:11,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL -${dealSavings(p)}</span>}
+                {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:13,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL -${dealSavings(p)}</span>}
                 {p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}
               </div>
               <div style={{display:"flex",alignItems:"baseline",gap:8,marginTop:2}}>
-                <span style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span>
-                {p.msrp&&p.msrp>$(p)&&<span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span>}
+                <span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span>
+                {p.msrp&&p.msrp>$(p)&&<span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span>}
               </div>
             </div>
           </div>
           <div style={{display:"flex",gap:8,padding:"0 12px 12px",alignItems:"center"}}>
-            <button onClick={e=>{e.stopPropagation();setExpanded(isExp?null:p.id);}} style={{flex:1,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:6,padding:"8px",fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)",cursor:"pointer"}}>{isExp?"Hide specs":"View specs"}</button>
-            <button onClick={e=>{e.stopPropagation();onAdd(p);}} style={{flex:1,background:"var(--mint)",border:"none",borderRadius:6,padding:"8px",fontFamily:"var(--ff)",fontSize:12,fontWeight:700,color:"var(--bg)",cursor:"pointer"}}>+ Add to Build</button>
+            <button onClick={e=>{e.stopPropagation();setExpanded(isExp?null:p.id);}} style={{flex:1,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:6,padding:"8px",fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",cursor:"pointer"}}>{isExp?"Hide specs":"View specs"}</button>
+            <button onClick={e=>{e.stopPropagation();onAdd(p);}} style={{flex:1,background:"var(--mint)",border:"none",borderRadius:6,padding:"8px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--bg)",cursor:"pointer"}}>+ Add to Build</button>
           </div>
           {isExp&&<div style={{padding:"0 12px 14px",borderTop:"1px solid var(--bdr)"}}>
             <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1,margin:"12px 0 8px"}}>SPECIFICATIONS</div>
             <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"4px 12px"}}>
               {Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","condition","generation","chipset","uid","reviews","asin","discount","listPrice","percentageDiscount","fullTitle","description","enrichedAt","additionalImages","amazonCategories","applicableVouchers","boughtPastMonth","isAmazonChoice","isBestSeller","isAvailable","currency","discoveredVia","discoveredAt","sourceFile","imageUrl","amazonUrl","category","brand","name","title","specs","needsReview","bundle"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").map(([k,v])=>
                 <div key={k} style={{display:"flex",justifyContent:"space-between",padding:"3px 0",borderBottom:"1px solid var(--bdr)",gap:8,minWidth:0}}>
-                  <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{SL[k]||k}</span>
-                  <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--txt)",fontWeight:600,textAlign:"right",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{fmt(k,v)}</span>
+                  <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{SL[k]||k}</span>
+                  <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",fontWeight:600,textAlign:"right",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{fmt(k,v)}</span>
                 </div>
               )}
             </div>
@@ -3369,17 +3395,17 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti})
     {filtersOpen&&<div onClick={()=>setFiltersOpen(false)} style={{position:"fixed",inset:0,background:"rgba(0,0,0,0.6)",zIndex:1000,display:"flex",alignItems:"flex-end"}}>
       <div onClick={e=>e.stopPropagation()} style={{background:"var(--bg2)",width:"100%",maxHeight:"85vh",overflowY:"auto",borderTopLeftRadius:16,borderTopRightRadius:16,padding:"16px 16px 32px",boxSizing:"border-box"}}>
         <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:16,position:"sticky",top:0,background:"var(--bg2)",paddingBottom:8,borderBottom:"1px solid var(--bdr)"}}>
-          <span style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:800,color:"var(--txt)"}}>Filters</span>
+          <span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)"}}>Filters</span>
           <div style={{display:"flex",gap:10}}>
-            {ac>0&&<button onClick={clearFilters} style={{background:"none",border:"none",color:"var(--rose)",fontFamily:"var(--ff)",fontSize:13,cursor:"pointer",padding:0}}>Clear</button>}
-            <button onClick={()=>setFiltersOpen(false)} style={{background:"var(--accent)",border:"none",color:"#fff",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,padding:"6px 16px",borderRadius:6,cursor:"pointer"}}>Done</button>
+            {ac>0&&<button onClick={clearFilters} style={{background:"none",border:"none",color:"var(--rose)",fontFamily:"var(--ff)",fontSize:14,cursor:"pointer",padding:0}}>Clear</button>}
+            <button onClick={()=>setFiltersOpen(false)} style={{background:"var(--accent)",border:"none",color:"#fff",fontFamily:"var(--ff)",fontSize:14,fontWeight:700,padding:"6px 16px",borderRadius:6,cursor:"pointer"}}>Done</button>
           </div>
         </div>
 
         <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--mint)",fontWeight:700,letterSpacing:1,marginBottom:6}}>PRICE RANGE</div>
         <div style={{display:"flex",gap:8,marginBottom:16}}>
-          <input type="number" value={prMin||""} onChange={e=>setPrMin(+e.target.value||0)} placeholder="Min $" style={{flex:1,background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:6,padding:"8px 10px",fontSize:13,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none",boxSizing:"border-box"}}/>
-          <input type="number" value={prMax>=99999?"":prMax} onChange={e=>setPrMax(+e.target.value||99999)} placeholder="Max $" style={{flex:1,background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:6,padding:"8px 10px",fontSize:13,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none",boxSizing:"border-box"}}/>
+          <input type="number" value={prMin||""} onChange={e=>setPrMin(+e.target.value||0)} placeholder="Min $" style={{flex:1,background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:6,padding:"8px 10px",fontSize:14,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none",boxSizing:"border-box"}}/>
+          <input type="number" value={prMax>=99999?"":prMax} onChange={e=>setPrMax(+e.target.value||99999)} placeholder="Max $" style={{flex:1,background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:6,padding:"8px 10px",fontSize:14,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none",boxSizing:"border-box"}}/>
         </div>
 
         {allBr.length>0&&<div style={{marginBottom:16}}>
@@ -3387,7 +3413,7 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti})
           <div style={{display:"flex",flexWrap:"wrap",gap:6}}>
             {allBr.map(b=>{
               const on=brands.includes(b);
-              return <button key={b} onClick={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} style={{background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:18,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:12,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{b} <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)",marginLeft:2}}>{compatList.filter(p=>resolveBrand(p)===b).length}</span></button>;
+              return <button key={b} onClick={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} style={{background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:18,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:13,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{b} <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)",marginLeft:2}}>{compatList.filter(p=>resolveBrand(p)===b).length}</span></button>;
             })}
           </div>
         </div>}
@@ -3397,12 +3423,12 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti})
           <div style={{display:"flex",gap:6}}>
             {[0,4,4.5].map(rv=>{
               const on=minR===rv;
-              return <button key={rv} onClick={()=>setMinR(rv)} style={{flex:1,background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"8px",fontFamily:"var(--ff)",fontSize:12,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{rv?rv+"+ ★":"Any"}</button>;
+              return <button key={rv} onClick={()=>setMinR(rv)} style={{flex:1,background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"8px",fontFamily:"var(--ff)",fontSize:13,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{rv?rv+"+ ★":"Any"}</button>;
             })}
           </div>
         </div>
 
-        <button onClick={()=>setFiltersOpen(false)} style={{width:"100%",background:"var(--accent)",border:"none",color:"#fff",fontFamily:"var(--ff)",fontSize:14,fontWeight:700,padding:"14px",borderRadius:8,cursor:"pointer"}}>Show {list.length} results</button>
+        <button onClick={()=>setFiltersOpen(false)} style={{width:"100%",background:"var(--accent)",border:"none",color:"#fff",fontFamily:"var(--ff)",fontSize:15,fontWeight:700,padding:"14px",borderRadius:8,cursor:"pointer"}}>Show {list.length} results</button>
       </div>
     </div>}
   </div>;
@@ -3519,10 +3545,10 @@ function BuilderPage({th}){
     },0);
     return <div key={section.id} style={{marginBottom:8}}>
       <button onClick={()=>toggleSection(section.id)} style={{display:"flex",width:"100%",alignItems:"center",gap:8,padding:"10px 16px",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:isOpen?"10px 10px 0 0":"10px",cursor:"pointer",textAlign:"left"}}>
-        <span style={{fontSize:16}}>{section.icon}</span>
-        <span style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--txt)",flex:1}}>{section.label}</span>
+        <span style={{fontSize:17}}>{section.icon}</span>
+        <span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",flex:1}}>{section.label}</span>
         {sectionParts.length>0&&<span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)"}}>{sectionParts.length} items · ${sectionTotal}</span>}
-        <span style={{color:"var(--mute)",fontSize:12}}>{isOpen?"−":"+"}</span>
+        <span style={{color:"var(--mute)",fontSize:13}}>{isOpen?"−":"+"}</span>
       </button>
       {isOpen&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderTop:"none",borderRadius:"0 0 10px 10px",overflow:"hidden"}}>
         {section.cats.map((cat,ci)=>{
@@ -3540,12 +3566,12 @@ function BuilderPage({th}){
             <div className="builder-picker-row" style={{display:"grid",gridTemplateColumns:"130px 1fr 180px 70px 40px",gap:0,padding:"10px 16px",alignItems:"center",borderBottom:"1px solid var(--bdr)",cursor:canAdd?"pointer":"default",background:isPicking2?"var(--sky)06":"transparent"}}
               onClick={()=>canAdd&&setPicking(isPicking2?null:cat)}>
               <div style={{display:"flex",alignItems:"center",gap:6}}>
-                <span style={{fontSize:14}}>{meta.icon}</span>
-                <div><div style={{fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--txt)"}}>{meta.singular||meta.label}</div>
+                <span style={{fontSize:15}}>{meta.icon}</span>
+                <div><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>{meta.singular||meta.label}</div>
                 <div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--mute)"}}>{compatList.length} options</div></div>
               </div>
               <div>
-                {part?<div><div style={{fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--txt)"}}>{part.n}</div>
+                {part?<div><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>{part.n}</div>
                   <div style={{display:"flex",gap:4,alignItems:"center",marginTop:1}}><span style={{fontSize:9,color:"var(--dim)"}}>{part.b}</span><Stars r={part.r} s={8}/>{part.cp&&<Tag color="var(--amber)">-${part.off}</Tag>}</div></div>
                 :isMulti&&parts.length?<div>{parts.map((p,pi)=><div key={p.uid} style={{display:"flex",alignItems:"center",gap:4,marginBottom:1}}>
                     <span style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--txt)",flex:1}}>{p.n}</span>
@@ -3555,10 +3581,10 @@ function BuilderPage({th}){
                 :<button onClick={e=>{e.stopPropagation();setPicking(isPicking2?null:cat);}} style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--sky)",background:"var(--sky)08",border:"1px dashed var(--sky)33",borderRadius:5,padding:"4px 10px",cursor:"pointer"}}>+ Choose {meta.singular||cat}</button>}
               </div>
               <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--txt)",opacity:.7}}>{part?specSummary(cat,part):isMulti&&parts.length?parts.length+" selected":""}</div>
-              <div style={{textAlign:"right"}}>{part?<div style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(part))}</div>
-                :isMulti&&parts.length?<div style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--mint)"}}>${parts.reduce((s,p)=>s+$(p),0)}</div>
+              <div style={{textAlign:"right"}}>{part?<div style={{fontFamily:"var(--mono)",fontSize:14,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(part))}</div>
+                :isMulti&&parts.length?<div style={{fontFamily:"var(--mono)",fontSize:14,fontWeight:700,color:"var(--mint)"}}>${parts.reduce((s,p)=>s+$(p),0)}</div>
                 :<span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--mute)"}}>—</span>}</div>
-              <div style={{textAlign:"center"}}>{part&&<button onClick={e=>{e.stopPropagation();del(cat);}} style={{background:"none",border:"none",color:"var(--rose)",fontSize:12,cursor:"pointer",opacity:.5}}>✕</button>}</div>
+              <div style={{textAlign:"center"}}>{part&&<button onClick={e=>{e.stopPropagation();del(cat);}} style={{background:"none",border:"none",color:"var(--rose)",fontSize:13,cursor:"pointer",opacity:.5}}>✕</button>}</div>
             </div>
 
           </div>;
@@ -3585,7 +3611,7 @@ function BuilderPage({th}){
   if (picking && CAT[picking]) return renderPicker();
 
   return (
-    <div className="fade" style={{maxWidth:1080,margin:"0 auto",padding:"28px 20px"}}>
+    <div className="fade" style={{maxWidth:1600,margin:"0 auto",padding:"28px 20px"}}>
       {showConfetti&&<div style={{position:"fixed",inset:0,zIndex:999,pointerEvents:"none",display:"flex",alignItems:"center",justifyContent:"center"}}><div style={{fontSize:64,animation:"fIn .5s ease-out"}}>🎉🎊🎉</div></div>}
 
       {/* Header */}
@@ -3603,23 +3629,23 @@ function BuilderPage({th}){
           {/* Budget Tracker */}
           <div style={{textAlign:"center"}}>
             <div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--dim)",letterSpacing:1}}>BUDGET</div>
-            <input type="number" value={buildBudget||""} onChange={e=>setBuildBudget(+e.target.value||0)} placeholder="Set $" style={{width:65,background:"var(--bg4)",border:`1px solid ${buildBudget>0&&total>buildBudget?"var(--rose)":"var(--bdr)"}`,borderRadius:4,padding:"2px 4px",fontSize:12,color:buildBudget>0&&total>buildBudget?"var(--rose)":"var(--mint)",fontFamily:"var(--mono)",fontWeight:700,textAlign:"center",outline:"none"}}/>
+            <input type="number" value={buildBudget||""} onChange={e=>setBuildBudget(+e.target.value||0)} placeholder="Set $" style={{width:65,background:"var(--bg4)",border:`1px solid ${buildBudget>0&&total>buildBudget?"var(--rose)":"var(--bdr)"}`,borderRadius:4,padding:"2px 4px",fontSize:13,color:buildBudget>0&&total>buildBudget?"var(--rose)":"var(--mint)",fontFamily:"var(--mono)",fontWeight:700,textAlign:"center",outline:"none"}}/>
             {buildBudget>0&&<div style={{fontFamily:"var(--mono)",fontSize:8,color:total>buildBudget?"var(--rose)":"var(--mint)",marginTop:2}}>{total>buildBudget?`$${total-buildBudget} over`:`$${buildBudget-total} left`}</div>}
           </div>
           {/* Power */}
           <div style={{textAlign:"center"}}><div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--dim)",letterSpacing:1}}>POWER</div>
-            <div style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:psu&&tdp>psu.watt?"var(--rose)":"var(--txt)"}}>{tdp}W</div>
+            <div style={{fontFamily:"var(--mono)",fontSize:17,fontWeight:700,color:psu&&tdp>psu.watt?"var(--rose)":"var(--txt)"}}>{tdp}W</div>
             {psu&&<div style={{width:50,height:3,background:"var(--bg4)",borderRadius:2,overflow:"hidden",margin:"2px auto"}}><div style={{width:`${Math.min(Math.round(tdp/psu.watt*100),100)}%`,height:"100%",background:tdp>psu.watt*.85?"var(--amber)":"var(--mint)",borderRadius:2}}/></div>}
             {psu&&<div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--dim)",marginTop:1}}>~${(tdp*0.12*24*30/1000).toFixed(0)}/mo</div>}</div>
           {/* Total */}
           <div style={{textAlign:"right"}}><div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--dim)",letterSpacing:1}}>TOTAL</div>
             <div style={{fontFamily:"var(--mono)",fontSize:24,fontWeight:700,color:buildBudget>0&&total>buildBudget?"var(--rose)":total>0?"var(--mint)":"var(--mute)"}}>${total}</div></div>
-          <div style={{position:"relative",width:50,height:50}}><svg width={50} height={50} style={{transform:"rotate(-90deg)"}}><circle cx={25} cy={25} r={ringR} fill="none" stroke="var(--bg4)" strokeWidth={3}/><circle cx={25} cy={25} r={ringR} fill="none" stroke={pct===100?"var(--mint)":"var(--sky)"} strokeWidth={3} strokeDasharray={ringC} strokeDashoffset={ringC*(1-pct/100)} strokeLinecap="round" style={{transition:"stroke-dashoffset .6s"}}/></svg><div style={{position:"absolute",inset:0,display:"flex",alignItems:"center",justifyContent:"center"}}><span style={{fontFamily:"var(--mono)",fontSize:11,fontWeight:700,color:pct===100?"var(--mint)":"var(--txt)"}}>{pct}%</span></div></div>
+          <div style={{position:"relative",width:50,height:50}}><svg width={50} height={50} style={{transform:"rotate(-90deg)"}}><circle cx={25} cy={25} r={ringR} fill="none" stroke="var(--bg4)" strokeWidth={3}/><circle cx={25} cy={25} r={ringR} fill="none" stroke={pct===100?"var(--mint)":"var(--sky)"} strokeWidth={3} strokeDasharray={ringC} strokeDashoffset={ringC*(1-pct/100)} strokeLinecap="round" style={{transition:"stroke-dashoffset .6s"}}/></svg><div style={{position:"absolute",inset:0,display:"flex",alignItems:"center",justifyContent:"center"}}><span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:pct===100?"var(--mint)":"var(--txt)"}}>{pct}%</span></div></div>
         </div>
       </div>
 
       {/* Budget warning */}
-      {buildBudget>0&&total>buildBudget&&<div style={{padding:"8px 12px",borderRadius:6,fontSize:11,fontFamily:"var(--ff)",background:"#ff5c7c08",color:"var(--rose)",border:"1px solid #ff5c7c18",marginBottom:10,display:"flex",alignItems:"center",gap:6}}>
+      {buildBudget>0&&total>buildBudget&&<div style={{padding:"8px 12px",borderRadius:6,fontSize:13,fontFamily:"var(--ff)",background:"#ff5c7c08",color:"var(--rose)",border:"1px solid #ff5c7c18",marginBottom:10,display:"flex",alignItems:"center",gap:6}}>
         💸 <span style={{fontWeight:600}}>${total-buildBudget} over budget!</span> Your build is ${total} but your budget is ${buildBudget}. Consider swapping components for cheaper alternatives.
       </div>}
 
@@ -3643,8 +3669,8 @@ function BuilderPage({th}){
 /* ═══ COMMUNITY ═══ */
 function CommunityPage({th}){
   const tierColor=t=>t==="Excellent"?"var(--mint)":t==="Great"?"var(--sky)":t==="Smooth"?"var(--amber)":t==="Playable"?"var(--rose)":"var(--mute)";
-  return <div className="fade" style={{maxWidth:900,margin:"0 auto",padding:"28px 20px"}}>
-    <h2 style={{fontFamily:"var(--ff)",fontSize:20,fontWeight:800,color:"var(--txt)",marginBottom:16}}>Community Builds</h2>
+  return <div className="fade" style={{maxWidth:1180,margin:"0 auto",padding:"28px 20px"}}>
+    <h2 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)",marginBottom:16}}>Community Builds</h2>
     <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>
       {BUILDS.map(b=>{
         const parts=b.ids.map(fp).filter(Boolean);
@@ -3658,12 +3684,12 @@ function CommunityPage({th}){
         return <div key={b.id} style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:16}}>
           <div style={{display:"flex",justifyContent:"space-between"}}>
             <div>
-              <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>{b.nm}</div>
+              <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{b.nm}</div>
               <div style={{fontSize:10,color:"var(--dim)",fontFamily:"var(--ff)"}}>by {b.by}</div>
             </div>
-            <span style={{fontFamily:"var(--mono)",fontSize:12,color:"var(--amber)",fontWeight:600}}>▲{b.v}</span>
+            <span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--amber)",fontWeight:600}}>▲{b.v}</span>
           </div>
-          <p style={{fontSize:11,color:"var(--dim)",margin:"6px 0",fontFamily:"var(--ff)"}}>{b.d}</p>
+          <p style={{fontSize:13,color:"var(--dim)",margin:"6px 0",fontFamily:"var(--ff)"}}>{b.d}</p>
           <div style={{display:"flex",gap:3}}>{b.tags.map(t=><Tag key={t} color="var(--sky)">{t}</Tag>)}</div>
           <div style={{marginTop:10,paddingTop:8,borderTop:"1px solid var(--bdr)"}}>
             {parts.map(p=><div key={p.id} style={{display:"flex",justifyContent:"space-between",padding:"2px 0"}}>
@@ -3674,7 +3700,7 @@ function CommunityPage({th}){
           {fpsGames.length>0&&<div style={{marginTop:10,paddingTop:8,borderTop:"1px solid var(--bdr)"}}>
             <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
               <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",letterSpacing:0.5}}>PERFORMANCE @ 1080p ULTRA</span>
-              <span style={{fontFamily:"var(--mono)",fontSize:11,fontWeight:700,color:"var(--sky)"}}>{avgFps} AVG FPS</span>
+              <span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--sky)"}}>{avgFps} AVG FPS</span>
             </div>
             <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"2px 10px"}}>
               {fpsGames.map(g=>{
@@ -3689,7 +3715,7 @@ function CommunityPage({th}){
           </div>}
           <div style={{display:"flex",justifyContent:"space-between",marginTop:8,paddingTop:6,borderTop:"1px solid var(--bdr)"}}>
             <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>Total</span>
-            <span style={{fontFamily:"var(--mono)",fontSize:16,color:"var(--mint)",fontWeight:700}}>${tot}</span>
+            <span style={{fontFamily:"var(--mono)",fontSize:17,color:"var(--mint)",fontWeight:700}}>${tot}</span>
           </div>
         </div>;
       })}
@@ -3967,20 +3993,20 @@ function ToolsPage({th}){
   const [wizStep,setWizStep]=useState(0);const [wizUse,setWizUse]=useState("");const [wizBudget,setWizBudget]=useState(1000);const [wizPriority,setWizPriority]=useState("");const [wizResult,setWizResult]=useState(null);
   // Power Calc state
   const [pwCPU,setPwCPU]=useState("");const [pwGPU,setPwGPU]=useState("");const [pwFans,setPwFans]=useState(3);const [pwResult,setPwResult]=useState(null);
-  const inp={width:"100%",background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:6,padding:"7px 10px",fontSize:11,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",marginBottom:8};
+  const inp={width:"100%",background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:6,padding:"7px 10px",fontSize:13,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",marginBottom:8};
   const tierColor=t=>t==="Excellent"?"var(--mint)":t==="Great"?"var(--sky)":t==="Smooth"?"var(--amber)":t==="Playable"?"var(--rose)":"var(--mute)";
 
-  return <div className="fade" style={{maxWidth:1000,margin:"0 auto",padding:"28px 20px"}}>
+  return <div className="fade" style={{maxWidth:1320,margin:"0 auto",padding:"28px 20px"}}>
     {(()=>{const seo=TOOL_SEO_DATA[tool];const slug=TOOL_URL_SLUGS[tool];if(!seo)return null;return <SEO key={tool} title={seo.title} description={seo.description} canonical={`https://prorigbuilder.com/#tools/${slug}`} breadcrumb={[{name:'Home',url:'https://prorigbuilder.com/'},{name:'Smart Tools',url:'https://prorigbuilder.com/#tools'},{name:seo.h1,url:`https://prorigbuilder.com/#tools/${slug}`}]} faq={seo.faq}/>;})()}
     <h1 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)",marginBottom:4}}>{TOOL_SEO_DATA[tool]?.h1||'Smart Tools'}</h1>
-    <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginBottom:20,maxWidth:720,lineHeight:1.5}}>{TOOL_SEO_DATA[tool]?.intro||'Estimate gaming performance, auto-generate builds, and compare parts.'}</p>
+    <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",marginBottom:20,maxWidth:940,lineHeight:1.5}}>{TOOL_SEO_DATA[tool]?.intro||'Estimate gaming performance, auto-generate builds, and compare parts.'}</p>
     {/* === TOOL CONTENT === Tab navigation */}
-    <div style={{display:"flex",gap:6,marginBottom:20,flexWrap:"wrap"}}>{tabs.map(t=><button key={t.id} onClick={()=>setTool(t.id)} style={{padding:"8px 14px",borderRadius:8,fontSize:11,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:tool===t.id?t.c+"18":"transparent",color:tool===t.id?t.c:"var(--dim)",border:`1.5px solid ${tool===t.id?t.c+"44":"var(--bdr)"}`,whiteSpace:"nowrap"}}>{t.l}</button>)}</div>
+    <div style={{display:"flex",gap:6,marginBottom:20,flexWrap:"wrap"}}>{tabs.map(t=><button key={t.id} onClick={()=>setTool(t.id)} style={{padding:"8px 14px",borderRadius:8,fontSize:13,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:tool===t.id?t.c+"18":"transparent",color:tool===t.id?t.c:"var(--dim)",border:`1.5px solid ${tool===t.id?t.c+"44":"var(--bdr)"}`,whiteSpace:"nowrap"}}>{t.l}</button>)}</div>
 
     {/* === HOW-TO + FAQ CONTENT === */}
     {TOOL_SEO_DATA[tool]?.howTo&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:"16px 20px",marginBottom:20}}>
-      <h2 style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",marginBottom:10}}>How to use the {TOOL_SEO_DATA[tool].h1}</h2>
-      <ol style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.7,paddingLeft:24,marginBottom:0}}>
+      <h2 style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:10}}>How to use the {TOOL_SEO_DATA[tool].h1}</h2>
+      <ol style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.7,paddingLeft:24,marginBottom:0}}>
         {TOOL_SEO_DATA[tool].howTo.map((step,i)=><li key={i} style={{marginBottom:4}}>{step}</li>)}
       </ol>
     </div>}
@@ -4026,7 +4052,7 @@ function ToolsPage({th}){
             RAM speed affects CPU-bound games. Low capacity (&lt;16GB) can cause stuttering.
           </div>
 
-          <button onClick={runFPS} disabled={!selGPU||!selCPU||fpsLoading} style={{width:"100%",padding:"10px 0",borderRadius:8,background:selGPU&&selCPU?"var(--sky)":"var(--bg4)",border:"none",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:selGPU&&selCPU?"var(--bg)":"var(--mute)",cursor:selGPU&&selCPU&&!fpsLoading?"pointer":"not-allowed"}}>
+          <button onClick={runFPS} disabled={!selGPU||!selCPU||fpsLoading} style={{width:"100%",padding:"10px 0",borderRadius:8,background:selGPU&&selCPU?"var(--sky)":"var(--bg4)",border:"none",fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:selGPU&&selCPU?"var(--bg)":"var(--mute)",cursor:selGPU&&selCPU&&!fpsLoading?"pointer":"not-allowed"}}>
             {fpsLoading?"⏳ Calculating...":"🎮 Estimate FPS"}
           </button>
         </div>
@@ -4035,8 +4061,8 @@ function ToolsPage({th}){
         <div>
           {!fpsResults&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:40,textAlign:"center"}}>
             <div style={{fontSize:40,marginBottom:10}}>🎮</div>
-            <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)"}}>Select your GPU and CPU, then click Estimate FPS</div>
-            <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)",marginTop:6}}>Get estimated frame rates for {GAMES.length} games at any resolution</div>
+            <div style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)"}}>Select your GPU and CPU, then click Estimate FPS</div>
+            <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)",marginTop:6}}>Get estimated frame rates for {GAMES.length} games at any resolution</div>
           </div>}
 
           {fpsResults&&<div>
@@ -4044,7 +4070,7 @@ function ToolsPage({th}){
             <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:16,marginBottom:12}}>
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
                 <div>
-                  <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>{fpsResults.gpu} + {fpsResults.cpu}</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{fpsResults.gpu} + {fpsResults.cpu}</div>
                   <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginTop:2}}>{fpsResults.res} · {fpsResults.qual} · {fpsResults.games.length} games tested</div>
                 </div>
                 <div style={{textAlign:"right"}}>
@@ -4059,9 +4085,9 @@ function ToolsPage({th}){
               {fpsResults.games.sort((a,b)=>b.fps-a.fps).map(g=>{
                 const game=GAMES.find(x=>x.name===g.game);
                 return <div key={g.game} style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px 12px",display:"flex",alignItems:"center",gap:10}}>
-                  <span style={{fontSize:20,width:28,textAlign:"center"}}>{game?.icon||"🎮"}</span>
+                  <span style={{fontSize:22,width:28,textAlign:"center"}}>{game?.icon||"🎮"}</span>
                   <div style={{flex:1,minWidth:0}}>
-                    <div style={{fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{g.game}</div>
+                    <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{g.game}</div>
                     <div style={{display:"flex",alignItems:"center",gap:6,marginTop:3}}>
                       <div style={{flex:1,height:4,background:"var(--bg4)",borderRadius:2,overflow:"hidden"}}>
                         <div style={{width:`${Math.min(g.fps/180*100,100)}%`,height:"100%",background:tierColor(g.tier),borderRadius:2}}/>
@@ -4070,7 +4096,7 @@ function ToolsPage({th}){
                     </div>
                   </div>
                   <div style={{textAlign:"right",flexShrink:0}}>
-                    <div style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:tierColor(g.tier)}}>{g.fps}</div>
+                    <div style={{fontFamily:"var(--mono)",fontSize:17,fontWeight:700,color:tierColor(g.tier)}}>{g.fps}</div>
                     <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)"}}>FPS</div>
                   </div>
                   {g.bottleneck!=="Balanced"&&<div style={{position:"relative"}}><span title={`${g.bottleneck} bottleneck ${g.bottleneckPct}%`} style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--amber)",cursor:"help"}}>⚠️</span></div>}
@@ -4112,7 +4138,7 @@ function ToolsPage({th}){
             {["1080p","1440p","4K"].map(r=><button key={r} onClick={()=>setBnRes(r)} style={{flex:1,padding:"6px 0",borderRadius:6,fontSize:10,fontFamily:"var(--mono)",fontWeight:600,cursor:"pointer",background:bnRes===r?"var(--rose)15":"transparent",color:bnRes===r?"var(--rose)":"var(--dim)",border:`1px solid ${bnRes===r?"var(--rose)33":"var(--bdr)"}`}}>{r}</button>)}
           </div>
 
-          <button onClick={runBottleneck} disabled={!bnGPU||!bnCPU||bnLoading} style={{width:"100%",padding:"10px 0",borderRadius:8,background:bnGPU&&bnCPU?"var(--rose)":"var(--bg4)",border:"none",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:bnGPU&&bnCPU?"#fff":"var(--mute)",cursor:bnGPU&&bnCPU&&!bnLoading?"pointer":"not-allowed"}}>
+          <button onClick={runBottleneck} disabled={!bnGPU||!bnCPU||bnLoading} style={{width:"100%",padding:"10px 0",borderRadius:8,background:bnGPU&&bnCPU?"var(--rose)":"var(--bg4)",border:"none",fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:bnGPU&&bnCPU?"#fff":"var(--mute)",cursor:bnGPU&&bnCPU&&!bnLoading?"pointer":"not-allowed"}}>
             {bnLoading?"⏳ Analyzing...":"🔬 Analyze Bottleneck"}
           </button>
         </div>
@@ -4121,8 +4147,8 @@ function ToolsPage({th}){
         <div>
           {!bnResult&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:40,textAlign:"center"}}>
             <div style={{fontSize:40,marginBottom:10}}>🔬</div>
-            <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)"}}>Select your GPU and CPU to analyze bottlenecks</div>
-            <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)",marginTop:6}}>See which component is limiting your performance at each resolution</div>
+            <div style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)"}}>Select your GPU and CPU to analyze bottlenecks</div>
+            <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)",marginTop:6}}>See which component is limiting your performance at each resolution</div>
           </div>}
 
           {bnResult&&<div>
@@ -4130,10 +4156,10 @@ function ToolsPage({th}){
             <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:20,marginBottom:12}}>
               <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:16}}>
                 <div>
-                  <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)"}}>{bnResult.gpuKey} + {bnResult.cpuKey}</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)"}}>{bnResult.gpuKey} + {bnResult.cpuKey}</div>
                   <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginTop:2}}>at {bnResult.res} resolution</div>
                 </div>
-                <div style={{padding:"6px 16px",borderRadius:8,fontFamily:"var(--ff)",fontSize:13,fontWeight:700,
+                <div style={{padding:"6px 16px",borderRadius:8,fontFamily:"var(--ff)",fontSize:14,fontWeight:700,
                   background:bnResult.who==="Balanced"?"var(--mint)15":bnResult.who==="CPU"?"var(--rose)15":"var(--amber)15",
                   color:bnResult.who==="Balanced"?"var(--mint)":bnResult.who==="CPU"?"var(--rose)":"var(--amber)"}}>
                   {bnResult.who==="Balanced"?"✅ Well Balanced":bnResult.who==="CPU"?`⚠️ CPU Bottleneck (${bnResult.severity}%)`:`⚠️ GPU Bottleneck (${bnResult.severity}%)`}
@@ -4157,7 +4183,7 @@ function ToolsPage({th}){
 
               {/* Explanation */}
               <div style={{background:"var(--bg3)",borderRadius:10,padding:14}}>
-                <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--txt)",lineHeight:1.7}}>
+                <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.7}}>
                   {bnResult.who==="Balanced"
                     ?`Your ${bnResult.cpuKey} and ${bnResult.gpuKey} are well matched at ${bnResult.res}. Neither component is significantly holding back the other. This is an ideal pairing.`
                     :bnResult.who==="CPU"
@@ -4173,7 +4199,7 @@ function ToolsPage({th}){
               <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:8}}>
                 {bnResult.gameResults.map(g=><div key={g.game} style={{background:"var(--bg3)",borderRadius:8,padding:"10px 12px",textAlign:"center"}}>
                   <div style={{fontFamily:"var(--ff)",fontSize:10,fontWeight:600,color:"var(--txt)",marginBottom:4}}>{g.game}</div>
-                  <div style={{fontFamily:"var(--mono)",fontSize:20,fontWeight:700,color:tierColor(g.tier)}}>{g.fps}</div>
+                  <div style={{fontFamily:"var(--mono)",fontSize:22,fontWeight:700,color:tierColor(g.tier)}}>{g.fps}</div>
                   <div style={{fontFamily:"var(--mono)",fontSize:8,color:g.bottleneck!=="Balanced"?"var(--rose)":"var(--dim)"}}>{g.bottleneck!=="Balanced"?g.bottleneck+" limited":"Balanced"}</div>
                 </div>)}
               </div>
@@ -4183,22 +4209,22 @@ function ToolsPage({th}){
             {(bnResult.cpuUpgrade||bnResult.gpuUpgrade)&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:16}}>
               <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",letterSpacing:1,marginBottom:10}}>💡 UPGRADE SUGGESTIONS</div>
               {bnResult.who==="CPU"&&bnResult.cpuUpgrade&&<div style={{display:"flex",alignItems:"center",gap:10,background:"var(--bg3)",borderRadius:8,padding:"10px 14px"}}>
-                <span style={{fontSize:18}}>🔴</span>
+                <span style={{fontSize:22}}>🔴</span>
                 <div style={{flex:1}}>
-                  <div style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>Upgrade to {bnResult.cpuUpgrade.name}</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Upgrade to {bnResult.cpuUpgrade.name}</div>
                   <div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)"}}>+{bnResult.cpuUpgrade.gain}% CPU performance — would reduce or eliminate the bottleneck</div>
                 </div>
                 <Tag color="var(--sky)">+{bnResult.cpuUpgrade.gain}%</Tag>
               </div>}
               {bnResult.who==="GPU"&&bnResult.gpuUpgrade&&<div style={{display:"flex",alignItems:"center",gap:10,background:"var(--bg3)",borderRadius:8,padding:"10px 14px"}}>
-                <span style={{fontSize:18}}>💚</span>
+                <span style={{fontSize:22}}>💚</span>
                 <div style={{flex:1}}>
-                  <div style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>Upgrade to {bnResult.gpuUpgrade.name}</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Upgrade to {bnResult.gpuUpgrade.name}</div>
                   <div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)"}}>+{bnResult.gpuUpgrade.gain}% GPU performance — better matched to your CPU</div>
                 </div>
                 <Tag color="var(--sky)">+{bnResult.gpuUpgrade.gain}%</Tag>
               </div>}
-              {bnResult.who==="Balanced"&&<div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--mint)",textAlign:"center",padding:8}}>✅ No upgrades needed — your system is well balanced!</div>}
+              {bnResult.who==="Balanced"&&<div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mint)",textAlign:"center",padding:8}}>✅ No upgrades needed — your system is well balanced!</div>}
             </div>}
           </div>}
         </div>
@@ -4208,14 +4234,14 @@ function ToolsPage({th}){
     {/* ═══ COMPARE ═══ */}
     {tool==="cmp"&&<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16}}>
       <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20}}>
-        <h3 style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",marginBottom:8}}>Compare Parts</h3>
+        <h3 style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:8}}>Compare Parts</h3>
         <input value={cA} onChange={e=>setCA(e.target.value)} placeholder="Part A (e.g. RTX 4090)" style={inp}/>
         <input value={cB} onChange={e=>setCB(e.target.value)} placeholder="Part B (e.g. RX 7900 XTX)" style={inp}/>
-        <button onClick={cmp} style={{width:"100%",padding:"8px 0",borderRadius:6,background:"var(--violet)",border:"none",fontSize:12,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:4}}>Compare</button>
+        <button onClick={cmp} style={{width:"100%",padding:"8px 0",borderRadius:6,background:"var(--violet)",border:"none",fontSize:13,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:4}}>Compare</button>
       </div>
       <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20,minHeight:180}}>
-        {!cmpResult&&<div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"var(--mute)",fontFamily:"var(--ff)",fontSize:13}}>Enter two parts to compare →</div>}
-        {cmpResult&&<><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--violet)",letterSpacing:1,marginBottom:10}}>COMPARISON</div><div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>{[cmpResult.a,cmpResult.b].map(p=><div key={p.id} style={{textAlign:"center"}}><div style={{fontSize:20}}>{ic(p)}</div><div style={{fontSize:12,fontWeight:600,color:"var(--txt)",marginTop:3,fontFamily:"var(--ff)"}}>{p.n}</div><div style={{fontSize:9,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</div><div style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:"var(--mint)",marginTop:4}}>${fmtPrice($(p))}</div><Stars r={p.r}/>{p.bench!=null&&<div style={{marginTop:4}}><SBar v={p.bench}/></div>}</div>)}</div>{cmpResult.a.bench!=null&&cmpResult.b.bench!=null&&<div style={{marginTop:10,padding:6,borderRadius:6,background:"#a78bfa15",textAlign:"center",fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--violet)"}}>{cmpResult.a.bench>cmpResult.b.bench?`${cmpResult.a.n} is ${cmpResult.a.bench-cmpResult.b.bench}% faster`:cmpResult.b.bench>cmpResult.a.bench?`${cmpResult.b.n} is ${cmpResult.b.bench-cmpResult.a.bench}% faster`:"Tied!"}</div>}</>}
+        {!cmpResult&&<div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"var(--mute)",fontFamily:"var(--ff)",fontSize:14}}>Enter two parts to compare →</div>}
+        {cmpResult&&<><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--violet)",letterSpacing:1,marginBottom:10}}>COMPARISON</div><div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>{[cmpResult.a,cmpResult.b].map(p=><div key={p.id} style={{textAlign:"center"}}><div style={{fontSize:22}}>{ic(p)}</div><div style={{fontSize:13,fontWeight:600,color:"var(--txt)",marginTop:3,fontFamily:"var(--ff)"}}>{p.n}</div><div style={{fontSize:9,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</div><div style={{fontFamily:"var(--mono)",fontSize:17,fontWeight:700,color:"var(--mint)",marginTop:4}}>${fmtPrice($(p))}</div><Stars r={p.r}/>{p.bench!=null&&<div style={{marginTop:4}}><SBar v={p.bench}/></div>}</div>)}</div>{cmpResult.a.bench!=null&&cmpResult.b.bench!=null&&<div style={{marginTop:10,padding:6,borderRadius:6,background:"#a78bfa15",textAlign:"center",fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--violet)"}}>{cmpResult.a.bench>cmpResult.b.bench?`${cmpResult.a.n} is ${cmpResult.a.bench-cmpResult.b.bench}% faster`:cmpResult.b.bench>cmpResult.a.bench?`${cmpResult.b.n} is ${cmpResult.b.bench-cmpResult.a.bench}% faster`:"Tied!"}</div>}</>}
       </div>
     </div>}
 
@@ -4223,7 +4249,7 @@ function ToolsPage({th}){
     {tool==="willitrun"&&<div>
       <div className="tools-layout" style={{display:"grid",gridTemplateColumns:"300px 1fr",gap:20,alignItems:"start"}}>
         <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20}}>
-          <h3 style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",marginBottom:12}}>Will My PC Run This Game?</h3>
+          <h3 style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:12}}>Will My PC Run This Game?</h3>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginBottom:4}}>SELECT GAME</div>
           <select value={wirGame} onChange={e=>setWirGame(e.target.value)} style={inp}><option value="">Choose a game...</option>{GAMES.map(g=><option key={g.name} value={g.name}>{g.name}</option>)}</select>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>YOUR GPU</div>
@@ -4232,20 +4258,20 @@ function ToolsPage({th}){
           <SearchSelect options={cpuParts.filter(c=>!c.serverCPU).map(c=>({value:c.n,label:cleanDisplayName(c),detail:`${c.cores}C · ${c.b}`}))} value={wirCPU} onChange={setWirCPU} placeholder="Select CPU..."/>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>RESOLUTION</div>
           <div style={{display:"flex",gap:4}}>{["1080p","1440p","4K"].map(r=><button key={r} onClick={()=>setWirRes(r)} style={{flex:1,padding:6,borderRadius:5,fontSize:10,fontFamily:"var(--mono)",fontWeight:600,cursor:"pointer",background:wirRes===r?"var(--amber)":"var(--bg4)",color:wirRes===r?"#fff":"var(--dim)",border:`1px solid ${wirRes===r?"var(--amber)":"var(--bdr)"}`}}>{r}</button>)}</div>
-          <button onClick={()=>{if(!wirGame||!wirGPU||!wirCPU)return;const gpu=matchGPU(wirGPU)||wirGPU;const cpu=matchCPU(wirCPU)||wirCPU;const results=["Low","Medium","High","Ultra"].map(q=>{const fps=estimateFPS(gpu,cpu,wirGame,wirRes,q);return{quality:q,fps:fps?.fps||0};});setWirResult({game:wirGame,gpu:wirGPU,cpu:wirCPU,res:wirRes,settings:results});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--amber)",border:"none",fontSize:13,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>🕹️ Check Performance</button>
+          <button onClick={()=>{if(!wirGame||!wirGPU||!wirCPU)return;const gpu=matchGPU(wirGPU)||wirGPU;const cpu=matchCPU(wirCPU)||wirCPU;const results=["Low","Medium","High","Ultra"].map(q=>{const fps=estimateFPS(gpu,cpu,wirGame,wirRes,q);return{quality:q,fps:fps?.fps||0};});setWirResult({game:wirGame,gpu:wirGPU,cpu:wirCPU,res:wirRes,settings:results});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--amber)",border:"none",fontSize:14,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>🕹️ Check Performance</button>
         </div>
         <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20,minHeight:300}}>
-          {!wirResult&&<div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"var(--mute)",fontFamily:"var(--ff)",fontSize:13}}>Select a game and your hardware →</div>}
+          {!wirResult&&<div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"var(--mute)",fontFamily:"var(--ff)",fontSize:14}}>Select a game and your hardware →</div>}
           {wirResult&&<div>
-            <div style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:800,color:"var(--txt)",marginBottom:4}}>Can you run {wirResult.game}?</div>
+            <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)",marginBottom:4}}>Can you run {wirResult.game}?</div>
             <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginBottom:16}}>{wirResult.gpu} · {wirResult.cpu} · {wirResult.res}</div>
             {wirResult.settings.map(s=>{const playable=s.fps>=60;const smooth=s.fps>=100;const color=smooth?"var(--mint)":playable?"var(--sky)":s.fps>=30?"var(--amber)":"var(--rose)";const verdict=smooth?"Smooth":playable?"Playable":s.fps>=30?"Rough":"Unplayable";return <div key={s.quality} style={{display:"flex",alignItems:"center",gap:12,padding:"10px 12px",borderRadius:8,background:"var(--bg3)",marginBottom:6,border:"1px solid var(--bdr)"}}>
-              <div style={{width:60,fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>{s.quality}</div>
+              <div style={{width:60,fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>{s.quality}</div>
               <div style={{flex:1}}><div style={{height:8,background:"var(--bg4)",borderRadius:4,overflow:"hidden"}}><div style={{width:`${Math.min(s.fps/144*100,100)}%`,height:"100%",background:color,borderRadius:4}}/></div></div>
-              <div style={{fontFamily:"var(--mono)",fontSize:18,fontWeight:700,color,minWidth:60,textAlign:"right"}}>{s.fps} FPS</div>
+              <div style={{fontFamily:"var(--mono)",fontSize:22,fontWeight:700,color,minWidth:60,textAlign:"right"}}>{s.fps} FPS</div>
               <Tag color={color}>{verdict}</Tag>
             </div>})}
-            <div style={{marginTop:12,padding:8,borderRadius:6,background:"var(--bg3)",fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)"}}>{wirResult.settings[3]?.fps>=60?"✅ Your PC can handle "+wirResult.game+" at "+wirResult.res+" Ultra!":wirResult.settings[2]?.fps>=60?"⚠️ Playable at High, but Ultra may struggle.":wirResult.settings[1]?.fps>=60?"⚠️ Consider lowering settings to Medium for smooth gameplay.":"❌ Your hardware may struggle with "+wirResult.game+". Consider upgrading."}</div>
+            <div style={{marginTop:12,padding:8,borderRadius:6,background:"var(--bg3)",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>{wirResult.settings[3]?.fps>=60?"✅ Your PC can handle "+wirResult.game+" at "+wirResult.res+" Ultra!":wirResult.settings[2]?.fps>=60?"⚠️ Playable at High, but Ultra may struggle.":wirResult.settings[1]?.fps>=60?"⚠️ Consider lowering settings to Medium for smooth gameplay.":"❌ Your hardware may struggle with "+wirResult.game+". Consider upgrading."}</div>
           </div>}
         </div>
       </div>
@@ -4255,27 +4281,27 @@ function ToolsPage({th}){
     {tool==="buildcmp"&&<div>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16}}>
         {["Build A","Build B"].map((label,bi)=>{const st=bi===0?bcBuildA:bcBuildB;const set=bi===0?setBcBuildA:setBcBuildB;return <div key={label} style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:16}}>
-          <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",marginBottom:10}}>{label}</div>
+          <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:10}}>{label}</div>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginBottom:4}}>GPU</div>
           <SearchSelect options={gpuParts.map(g=>({value:g.n,label:g.n,detail:`${g.vram}GB · $${$(g)}`}))} value={st.gpu} onChange={v=>set(p=>({...p,gpu:v}))} placeholder="Select GPU..."/>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>CPU</div>
           <SearchSelect options={cpuParts.filter(c=>!c.serverCPU).map(c=>({value:c.n,label:c.n,detail:`${c.cores}C · $${$(c)}`}))} value={st.cpu} onChange={v=>set(p=>({...p,cpu:v}))} placeholder="Select CPU..."/>
         </div>})}
       </div>
-      <button onClick={()=>{if(!bcBuildA.gpu||!bcBuildA.cpu||!bcBuildB.gpu||!bcBuildB.cpu)return;const gA=gpuParts.find(p=>p.n===bcBuildA.gpu);const cA2=cpuParts.find(p=>p.n===bcBuildA.cpu);const gB=gpuParts.find(p=>p.n===bcBuildB.gpu);const cB2=cpuParts.find(p=>p.n===bcBuildB.cpu);const fpsA=estimateAllGames(matchGPU(bcBuildA.gpu)||bcBuildA.gpu,matchCPU(bcBuildA.cpu)||bcBuildA.cpu,"1080p","Ultra");const fpsB=estimateAllGames(matchGPU(bcBuildB.gpu)||bcBuildB.gpu,matchCPU(bcBuildB.cpu)||bcBuildB.cpu,"1080p","Ultra");const costA=(gA?$(gA):0)+(cA2?$(cA2):0);const costB=(gB?$(gB):0)+(cB2?$(cB2):0);const avgA=fpsA.length?Math.round(fpsA.reduce((s,g)=>s+g.fps,0)/fpsA.length):0;const avgB=fpsB.length?Math.round(fpsB.reduce((s,g)=>s+g.fps,0)/fpsB.length):0;setBcResult({a:{gpu:bcBuildA.gpu,cpu:bcBuildA.cpu,cost:costA,avgFps:avgA,tdp:(gA?.tdp||0)+(cA2?.tdp||0),games:fpsA},b:{gpu:bcBuildB.gpu,cpu:bcBuildB.cpu,cost:costB,avgFps:avgB,tdp:(gB?.tdp||0)+(cB2?.tdp||0),games:fpsB}});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--violet)",border:"none",fontSize:13,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>📊 Compare Builds</button>
+      <button onClick={()=>{if(!bcBuildA.gpu||!bcBuildA.cpu||!bcBuildB.gpu||!bcBuildB.cpu)return;const gA=gpuParts.find(p=>p.n===bcBuildA.gpu);const cA2=cpuParts.find(p=>p.n===bcBuildA.cpu);const gB=gpuParts.find(p=>p.n===bcBuildB.gpu);const cB2=cpuParts.find(p=>p.n===bcBuildB.cpu);const fpsA=estimateAllGames(matchGPU(bcBuildA.gpu)||bcBuildA.gpu,matchCPU(bcBuildA.cpu)||bcBuildA.cpu,"1080p","Ultra");const fpsB=estimateAllGames(matchGPU(bcBuildB.gpu)||bcBuildB.gpu,matchCPU(bcBuildB.cpu)||bcBuildB.cpu,"1080p","Ultra");const costA=(gA?$(gA):0)+(cA2?$(cA2):0);const costB=(gB?$(gB):0)+(cB2?$(cB2):0);const avgA=fpsA.length?Math.round(fpsA.reduce((s,g)=>s+g.fps,0)/fpsA.length):0;const avgB=fpsB.length?Math.round(fpsB.reduce((s,g)=>s+g.fps,0)/fpsB.length):0;setBcResult({a:{gpu:bcBuildA.gpu,cpu:bcBuildA.cpu,cost:costA,avgFps:avgA,tdp:(gA?.tdp||0)+(cA2?.tdp||0),games:fpsA},b:{gpu:bcBuildB.gpu,cpu:bcBuildB.cpu,cost:costB,avgFps:avgB,tdp:(gB?.tdp||0)+(cB2?.tdp||0),games:fpsB}});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--violet)",border:"none",fontSize:14,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>📊 Compare Builds</button>
       {bcResult&&<div style={{marginTop:16,background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20}}>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16}}>
           {[bcResult.a,bcResult.b].map((b,i)=><div key={i} style={{textAlign:"center"}}>
-            <div style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:700,color:"var(--txt)"}}>{b.gpu}</div>
-            <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--dim)"}}>{b.cpu}</div>
+            <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--txt)"}}>{b.gpu}</div>
+            <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>{b.cpu}</div>
             <div style={{display:"flex",justifyContent:"center",gap:16,marginTop:10}}>
-              <div><div style={{fontFamily:"var(--mono)",fontSize:20,fontWeight:700,color:"var(--mint)"}}>${b.cost}</div><div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)"}}>GPU+CPU Cost</div></div>
-              <div><div style={{fontFamily:"var(--mono)",fontSize:20,fontWeight:700,color:"var(--sky)"}}>{b.avgFps}</div><div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)"}}>Avg FPS</div></div>
-              <div><div style={{fontFamily:"var(--mono)",fontSize:20,fontWeight:700,color:"var(--amber)"}}>{b.tdp}W</div><div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)"}}>TDP</div></div>
+              <div><div style={{fontFamily:"var(--mono)",fontSize:22,fontWeight:700,color:"var(--mint)"}}>${b.cost}</div><div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)"}}>GPU+CPU Cost</div></div>
+              <div><div style={{fontFamily:"var(--mono)",fontSize:22,fontWeight:700,color:"var(--sky)"}}>{b.avgFps}</div><div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)"}}>Avg FPS</div></div>
+              <div><div style={{fontFamily:"var(--mono)",fontSize:22,fontWeight:700,color:"var(--amber)"}}>{b.tdp}W</div><div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)"}}>TDP</div></div>
             </div>
           </div>)}
         </div>
-        <div style={{marginTop:12,textAlign:"center",fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--violet)",padding:8,borderRadius:6,background:"var(--violet)12"}}>
+        <div style={{marginTop:12,textAlign:"center",fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--violet)",padding:8,borderRadius:6,background:"var(--violet)12"}}>
           {bcResult.a.avgFps>bcResult.b.avgFps?`Build A is ${Math.round((bcResult.a.avgFps/bcResult.b.avgFps-1)*100)}% faster`:`Build B is ${Math.round((bcResult.b.avgFps/bcResult.a.avgFps-1)*100)}% faster`}
           {bcResult.a.cost!==bcResult.b.cost&&` · ${bcResult.a.cost<bcResult.b.cost?"Build A":"Build B"} saves $${Math.abs(bcResult.a.cost-bcResult.b.cost)}`}
         </div>
@@ -4288,23 +4314,23 @@ function ToolsPage({th}){
         <div style={{display:"flex",gap:4,marginBottom:20}}>{[0,1,2,3].map(s=><div key={s} style={{flex:1,height:4,borderRadius:2,background:wizStep>=s?"var(--mint)":"var(--bg4)"}}/>)}</div>
         
         {wizStep===0&&<div>
-          <h3 style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:700,color:"var(--txt)",marginBottom:6}}>What will you use this PC for?</h3>
-          <p style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",marginBottom:16}}>This helps us prioritize the right components.</p>
-          {[{id:"gaming",icon:"🎮",t:"Gaming",d:"High FPS, ray tracing, competitive & story games"},{id:"creative",icon:"🎨",t:"Content Creation",d:"Video editing, 3D rendering, streaming"},{id:"work",icon:"💼",t:"Productivity",d:"Office, multitasking, light photo editing"},{id:"server",icon:"🖥️",t:"Server / Workstation",d:"Always-on, VMs, databases, AI/ML"}].map(u=><button key={u.id} onClick={()=>{setWizUse(u.id);setWizStep(1);}} style={{display:"flex",alignItems:"center",gap:12,width:"100%",padding:"14px 16px",borderRadius:8,marginBottom:6,background:wizUse===u.id?"var(--mint3)":"var(--bg3)",border:`1px solid ${wizUse===u.id?"var(--mint)33":"var(--bdr)"}`,cursor:"pointer",textAlign:"left"}}><span style={{fontSize:24}}>{u.icon}</span><div><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>{u.t}</div><div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)"}}>{u.d}</div></div></button>)}
+          <h3 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:700,color:"var(--txt)",marginBottom:6}}>What will you use this PC for?</h3>
+          <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginBottom:16}}>This helps us prioritize the right components.</p>
+          {[{id:"gaming",icon:"🎮",t:"Gaming",d:"High FPS, ray tracing, competitive & story games"},{id:"creative",icon:"🎨",t:"Content Creation",d:"Video editing, 3D rendering, streaming"},{id:"work",icon:"💼",t:"Productivity",d:"Office, multitasking, light photo editing"},{id:"server",icon:"🖥️",t:"Server / Workstation",d:"Always-on, VMs, databases, AI/ML"}].map(u=><button key={u.id} onClick={()=>{setWizUse(u.id);setWizStep(1);}} style={{display:"flex",alignItems:"center",gap:12,width:"100%",padding:"14px 16px",borderRadius:8,marginBottom:6,background:wizUse===u.id?"var(--mint3)":"var(--bg3)",border:`1px solid ${wizUse===u.id?"var(--mint)33":"var(--bdr)"}`,cursor:"pointer",textAlign:"left"}}><span style={{fontSize:24}}>{u.icon}</span><div><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)"}}>{u.t}</div><div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)"}}>{u.d}</div></div></button>)}
         </div>}
 
         {wizStep===1&&<div>
-          <h3 style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:700,color:"var(--txt)",marginBottom:6}}>What's your budget?</h3>
-          <p style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",marginBottom:16}}>Total budget for all components (excluding monitor & peripherals).</p>
+          <h3 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:700,color:"var(--txt)",marginBottom:6}}>What's your budget?</h3>
+          <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginBottom:16}}>Total budget for all components (excluding monitor & peripherals).</p>
           <input type="range" min={500} max={5000} step={100} value={wizBudget} onChange={e=>setWizBudget(+e.target.value)} style={{width:"100%"}}/>
           <div style={{textAlign:"center",fontFamily:"var(--mono)",fontSize:32,fontWeight:700,color:"var(--mint)",margin:"12px 0"}}>${wizBudget}</div>
           <div style={{display:"flex",justifyContent:"center",gap:6,marginBottom:16}}>{[800,1000,1500,2000,3000].map(b=><button key={b} onClick={()=>setWizBudget(b)} style={{padding:"4px 10px",borderRadius:5,fontSize:10,fontFamily:"var(--mono)",background:wizBudget===b?"var(--mint)":"var(--bg4)",color:wizBudget===b?"#fff":"var(--dim)",border:"none",cursor:"pointer"}}>${b}</button>)}</div>
-          <div style={{display:"flex",gap:8}}><button onClick={()=>setWizStep(0)} style={{flex:1,padding:10,borderRadius:6,background:"var(--bg4)",border:"none",fontSize:12,fontWeight:600,color:"var(--dim)",cursor:"pointer",fontFamily:"var(--ff)"}}>← Back</button><button onClick={()=>setWizStep(2)} style={{flex:2,padding:10,borderRadius:6,background:"var(--mint)",border:"none",fontSize:12,fontWeight:600,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)"}}>Next →</button></div>
+          <div style={{display:"flex",gap:8}}><button onClick={()=>setWizStep(0)} style={{flex:1,padding:10,borderRadius:6,background:"var(--bg4)",border:"none",fontSize:13,fontWeight:600,color:"var(--dim)",cursor:"pointer",fontFamily:"var(--ff)"}}>← Back</button><button onClick={()=>setWizStep(2)} style={{flex:2,padding:10,borderRadius:6,background:"var(--mint)",border:"none",fontSize:13,fontWeight:600,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)"}}>Next →</button></div>
         </div>}
 
         {wizStep===2&&<div>
-          <h3 style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:700,color:"var(--txt)",marginBottom:6}}>What matters most?</h3>
-          <p style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",marginBottom:16}}>We'll optimize your build around this priority.</p>
+          <h3 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:700,color:"var(--txt)",marginBottom:6}}>What matters most?</h3>
+          <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginBottom:16}}>We'll optimize your build around this priority.</p>
           {[{id:"performance",icon:"🚀",t:"Max Performance",d:"Best FPS and speed, even if louder"},{id:"quiet",icon:"🤫",t:"Silent Operation",d:"Quiet fans and coolers, even if slightly slower"},{id:"value",icon:"💰",t:"Best Value",d:"Most performance per dollar"},{id:"aesthetic",icon:"✨",t:"Clean Aesthetics",d:"RGB, tempered glass, coordinated look"}].map(p=><button key={p.id} onClick={()=>{setWizPriority(p.id);setWizStep(3);
             // Generate the build
             const alloc=wizUse==="gaming"?{GPU:.4,CPU:.2,RAM:.08,Motherboard:.12,Storage:.08,PSU:.06,Case:.04,CPUCooler:.04}:wizUse==="creative"?{CPU:.3,GPU:.25,RAM:.1,Motherboard:.12,Storage:.1,PSU:.06,Case:.04,CPUCooler:.04}:{CPU:.25,GPU:.15,RAM:.1,Motherboard:.15,Storage:.15,PSU:.08,Case:.06,CPUCooler:.06};
@@ -4312,13 +4338,13 @@ function ToolsPage({th}){
             if(picks.CPU&&picks.Motherboard&&picks.CPU.socket!==picks.Motherboard.socket){const fx=P.filter(pp=>pp.c==="Motherboard"&&pp.socket===picks.CPU.socket&&$(pp)<=wizBudget*.15);if(fx.length)picks.Motherboard=fx[0];}
             if(picks.CPU&&picks.RAM&&picks.CPU.memType){const rFix=P.filter(pp=>pp.c==="RAM"&&pp.ramType===picks.CPU.memType&&$(pp)<=wizBudget*.1);if(rFix.length)picks.RAM=rFix.sort((a,b)=>(b.speed||0)-(a.speed||0))[0];}
             setWizResult(picks);
-          }} style={{display:"flex",alignItems:"center",gap:12,width:"100%",padding:"14px 16px",borderRadius:8,marginBottom:6,background:wizPriority===p.id?"var(--mint3)":"var(--bg3)",border:`1px solid ${wizPriority===p.id?"var(--mint)33":"var(--bdr)"}`,cursor:"pointer",textAlign:"left"}}><span style={{fontSize:24}}>{p.icon}</span><div><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>{p.t}</div><div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)"}}>{p.d}</div></div></button>)}
-          <button onClick={()=>setWizStep(1)} style={{width:"100%",padding:10,borderRadius:6,background:"var(--bg4)",border:"none",fontSize:12,fontWeight:600,color:"var(--dim)",cursor:"pointer",fontFamily:"var(--ff)",marginTop:4}}>← Back</button>
+          }} style={{display:"flex",alignItems:"center",gap:12,width:"100%",padding:"14px 16px",borderRadius:8,marginBottom:6,background:wizPriority===p.id?"var(--mint3)":"var(--bg3)",border:`1px solid ${wizPriority===p.id?"var(--mint)33":"var(--bdr)"}`,cursor:"pointer",textAlign:"left"}}><span style={{fontSize:24}}>{p.icon}</span><div><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)"}}>{p.t}</div><div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)"}}>{p.d}</div></div></button>)}
+          <button onClick={()=>setWizStep(1)} style={{width:"100%",padding:10,borderRadius:6,background:"var(--bg4)",border:"none",fontSize:13,fontWeight:600,color:"var(--dim)",cursor:"pointer",fontFamily:"var(--ff)",marginTop:4}}>← Back</button>
         </div>}
 
         {wizStep===3&&wizResult&&<div>
-          <h3 style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:700,color:"var(--txt)",marginBottom:4}}>Your Recommended Build</h3>
-          <p style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",marginBottom:16}}>${wizBudget} {wizUse} build · {wizPriority} priority</p>
+          <h3 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:700,color:"var(--txt)",marginBottom:4}}>Your Recommended Build</h3>
+          <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginBottom:16}}>${wizBudget} {wizUse} build · {wizPriority} priority</p>
           {Object.entries(wizResult).map(([cat,p])=>{const rr=retailers(p);const url=rr[0]?.url;return <a key={cat} href={url||'#'} target={url?"_blank":undefined} rel={url?"noopener noreferrer":undefined} onClick={url?undefined:e=>e.preventDefault()} className="wizard-row" style={{color:"inherit"}}>
             <div className="wizard-row-info">
               <div className="wizard-row-img">{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`}/>:CAT[cat]?.icon}</div>
@@ -4330,10 +4356,10 @@ function ToolsPage({th}){
             </div>
           </a>;})}
           <div style={{display:"flex",justifyContent:"space-between",padding:"10px 10px",marginTop:8,borderTop:"1px solid var(--bdr)"}}>
-            <span style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>Total</span>
-            <span style={{fontFamily:"var(--mono)",fontSize:20,fontWeight:700,color:"var(--mint)"}}>${Object.values(wizResult).reduce((s,p)=>s+$(p),0)}</span>
+            <span style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Total</span>
+            <span style={{fontFamily:"var(--mono)",fontSize:22,fontWeight:700,color:"var(--mint)"}}>${Object.values(wizResult).reduce((s,p)=>s+$(p),0)}</span>
           </div>
-          <div style={{display:"flex",gap:8,marginTop:12}}><button onClick={()=>{setWizStep(0);setWizResult(null);}} style={{flex:1,padding:10,borderRadius:6,background:"var(--bg4)",border:"none",fontSize:12,fontWeight:600,color:"var(--dim)",cursor:"pointer",fontFamily:"var(--ff)"}}>Start Over</button></div>
+          <div style={{display:"flex",gap:8,marginTop:12}}><button onClick={()=>{setWizStep(0);setWizResult(null);}} style={{flex:1,padding:10,borderRadius:6,background:"var(--bg4)",border:"none",fontSize:13,fontWeight:600,color:"var(--dim)",cursor:"pointer",fontFamily:"var(--ff)"}}>Start Over</button></div>
         </div>}
       </div>
     </div>}
@@ -4341,7 +4367,7 @@ function ToolsPage({th}){
     {/* ═══ POWER CALCULATOR ═══ */}
     {tool==="power"&&<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16}}>
       <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20}}>
-        <h3 style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",marginBottom:12}}>Power Consumption Calculator</h3>
+        <h3 style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:12}}>Power Consumption Calculator</h3>
         <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginBottom:4}}>GPU</div>
         <SearchSelect options={gpuParts.map(g=>({value:g.n,label:g.n,detail:`TDP: ${g.tdp}W`}))} value={pwGPU} onChange={setPwGPU} placeholder="Select GPU..."/>
         <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>CPU</div>
@@ -4349,23 +4375,23 @@ function ToolsPage({th}){
         <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>CASE FANS</div>
         <input type="range" min={0} max={10} value={pwFans} onChange={e=>setPwFans(+e.target.value)} style={{width:"100%"}}/>
         <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--txt)",textAlign:"center"}}>{pwFans} fans</div>
-        <button onClick={()=>{const gp=gpuParts.find(p=>p.n===pwGPU);const cp=cpuParts.find(p=>p.n===pwCPU);if(!gp||!cp)return;const gpuW=gp.tdp||0;const cpuW=cp.tdp||0;const fanW=pwFans*3;const ramW=10;const storageW=8;const moboW=40;const idle=cpuW*0.15+gpuW*0.1+moboW*0.8+ramW+storageW*0.5+fanW;const gaming=cpuW*0.7+gpuW*0.95+moboW+ramW+storageW+fanW;const full=cpuW+gpuW+moboW+ramW+storageW+fanW+20;const psuRec=Math.ceil(full*1.25/50)*50;const monthCostIdle=(idle*8*30/1000*0.12).toFixed(1);const monthCostGaming=(gaming*4*30/1000*0.12).toFixed(1);setPwResult({cpuW,gpuW,idle:Math.round(idle),gaming:Math.round(gaming),full:Math.round(full),psuRec,monthCostIdle,monthCostGaming});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--sky)",border:"none",fontSize:13,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>⚡ Calculate Power</button>
+        <button onClick={()=>{const gp=gpuParts.find(p=>p.n===pwGPU);const cp=cpuParts.find(p=>p.n===pwCPU);if(!gp||!cp)return;const gpuW=gp.tdp||0;const cpuW=cp.tdp||0;const fanW=pwFans*3;const ramW=10;const storageW=8;const moboW=40;const idle=cpuW*0.15+gpuW*0.1+moboW*0.8+ramW+storageW*0.5+fanW;const gaming=cpuW*0.7+gpuW*0.95+moboW+ramW+storageW+fanW;const full=cpuW+gpuW+moboW+ramW+storageW+fanW+20;const psuRec=Math.ceil(full*1.25/50)*50;const monthCostIdle=(idle*8*30/1000*0.12).toFixed(1);const monthCostGaming=(gaming*4*30/1000*0.12).toFixed(1);setPwResult({cpuW,gpuW,idle:Math.round(idle),gaming:Math.round(gaming),full:Math.round(full),psuRec,monthCostIdle,monthCostGaming});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--sky)",border:"none",fontSize:14,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>⚡ Calculate Power</button>
       </div>
       <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20,minHeight:250}}>
-        {!pwResult&&<div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"var(--mute)",fontFamily:"var(--ff)",fontSize:13}}>Select components to calculate power →</div>}
+        {!pwResult&&<div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"var(--mute)",fontFamily:"var(--ff)",fontSize:14}}>Select components to calculate power →</div>}
         {pwResult&&<div>
           <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--sky)",letterSpacing:1,marginBottom:12,fontWeight:600}}>POWER ANALYSIS</div>
           {[{label:"Idle",w:pwResult.idle,color:"var(--mint)",desc:"Desktop, browsing, light work"},{label:"Gaming",w:pwResult.gaming,color:"var(--amber)",desc:"Gaming, GPU-intensive apps"},{label:"Full Load",w:pwResult.full,color:"var(--rose)",desc:"Stress test, all cores + GPU maxed"}].map(s=><div key={s.label} style={{marginBottom:12}}>
-            <div style={{display:"flex",justifyContent:"space-between",marginBottom:3}}><span style={{fontFamily:"var(--ff)",fontSize:11,fontWeight:600,color:"var(--txt)"}}>{s.label}</span><span style={{fontFamily:"var(--mono)",fontSize:14,fontWeight:700,color:s.color}}>{s.w}W</span></div>
+            <div style={{display:"flex",justifyContent:"space-between",marginBottom:3}}><span style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>{s.label}</span><span style={{fontFamily:"var(--mono)",fontSize:15,fontWeight:700,color:s.color}}>{s.w}W</span></div>
             <div style={{height:8,background:"var(--bg4)",borderRadius:4,overflow:"hidden"}}><div style={{width:`${Math.min(s.w/pwResult.psuRec*100,100)}%`,height:"100%",background:s.color,borderRadius:4}}/></div>
             <div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)",marginTop:2}}>{s.desc}</div>
           </div>)}
           <div style={{borderTop:"1px solid var(--bdr)",paddingTop:12,marginTop:8}}>
-            <div style={{display:"flex",justifyContent:"space-between",marginBottom:6}}><span style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--txt)"}}>Recommended PSU</span><span style={{fontFamily:"var(--mono)",fontSize:16,fontWeight:700,color:"var(--mint)"}}>{pwResult.psuRec}W+</span></div>
+            <div style={{display:"flex",justifyContent:"space-between",marginBottom:6}}><span style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Recommended PSU</span><span style={{fontFamily:"var(--mono)",fontSize:17,fontWeight:700,color:"var(--mint)"}}>{pwResult.psuRec}W+</span></div>
             <div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)"}}>Based on full load + 25% headroom</div>
             <div style={{display:"flex",gap:12,marginTop:8}}>
-              <div style={{flex:1,background:"var(--bg3)",borderRadius:6,padding:"6px 8px",textAlign:"center"}}><div style={{fontFamily:"var(--mono)",fontSize:12,fontWeight:700,color:"var(--txt)"}}>${pwResult.monthCostIdle}</div><div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--dim)"}}>$/mo idle 8h</div></div>
-              <div style={{flex:1,background:"var(--bg3)",borderRadius:6,padding:"6px 8px",textAlign:"center"}}><div style={{fontFamily:"var(--mono)",fontSize:12,fontWeight:700,color:"var(--txt)"}}>${pwResult.monthCostGaming}</div><div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--dim)"}}>$/mo gaming 4h</div></div>
+              <div style={{flex:1,background:"var(--bg3)",borderRadius:6,padding:"6px 8px",textAlign:"center"}}><div style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--txt)"}}>${pwResult.monthCostIdle}</div><div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--dim)"}}>$/mo idle 8h</div></div>
+              <div style={{flex:1,background:"var(--bg3)",borderRadius:6,padding:"6px 8px",textAlign:"center"}}><div style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--txt)"}}>${pwResult.monthCostGaming}</div><div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--dim)"}}>$/mo gaming 4h</div></div>
             </div>
           </div>
         </div>}
@@ -4378,42 +4404,42 @@ function ToolsPage({th}){
 /* ═══ FOOTER ═══ */
 function Footer({go}){
   return <footer style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)",marginTop:60}}>
-    <div style={{maxWidth:1200,margin:"0 auto",padding:"48px 32px 32px"}}>
+    <div style={{maxWidth:1600,margin:"0 auto",padding:"48px 32px 32px"}}>
       <div style={{display:"grid",gridTemplateColumns:"1.5fr 1fr 1fr 1fr 1fr",gap:40,marginBottom:32}}>
         <div>
           <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:12}}>
             <div style={{width:32,height:32,borderRadius:8,overflow:"hidden"}}><TowerLogo size={26}/></div>
-            <div><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>Pro Rig</div><div style={{fontFamily:"var(--ff)",fontSize:8,fontWeight:500,color:"var(--dim)",letterSpacing:1.5}}>BUILDER</div></div>
+            <div><div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>Pro Rig</div><div style={{fontFamily:"var(--ff)",fontSize:8,fontWeight:500,color:"var(--dim)",letterSpacing:1.5}}>BUILDER</div></div>
           </div>
-          <p style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",lineHeight:1.7,maxWidth:280}}>Compare PC hardware prices across retailers, check compatibility, and build your dream rig for less. <a href="https://prorigbuilder.com" style={{color:"var(--accent)",textDecoration:"underline"}}>prorigbuilder.com</a></p>
+          <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.7,maxWidth:280}}>Compare PC hardware prices across retailers, check compatibility, and build your dream rig for less. <a href="https://prorigbuilder.com" style={{color:"var(--accent)",textDecoration:"underline"}}>prorigbuilder.com</a></p>
         </div>
         <div>
-          <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Browse</div>
+          <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Browse</div>
           {["Processors","Graphics Cards","Memory","Motherboards","Storage","Power Supplies","Cases","Coolers"].map(l=>
-            <button key={l} onClick={()=>go("search")} style={{display:"block",fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left"}}>{l}</button>
+            <button key={l} onClick={()=>go("search")} style={{display:"block",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left"}}>{l}</button>
           )}
         </div>
         <div>
-          <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Tools</div>
+          <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Tools</div>
           {[{l:"PC Builder",p:"builder"},{l:"Community Builds",p:"community"},{l:"Smart Tools",p:"tools"},{l:"Browse Prices",p:"search"}].map(x=>
-            <button key={x.l} onClick={()=>go(x.p)} style={{display:"block",fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left"}}>{x.l}</button>
+            <button key={x.l} onClick={()=>go(x.p)} style={{display:"block",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left"}}>{x.l}</button>
           )}
         </div>
         <div>
-          <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Guides</div>
+          <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Guides</div>
           {[{l:"Why Pro Rig Builder",p:"compare"},{l:"vs PCPartPicker",p:"vs-pcpartpicker"},{l:"PCPartPicker Alternative",p:"pcpartpicker-alternative"},{l:"Best PC Builder Tools",p:"best-pc-builder-tools"}].map(x=>
-            <button key={x.l} onClick={()=>go(x.p)} style={{display:"block",fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left",width:"auto"}}>{x.l}</button>
+            <button key={x.l} onClick={()=>go(x.p)} style={{display:"block",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left",width:"auto"}}>{x.l}</button>
           )}
         </div>
         <div>
-          <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Legal</div>
+          <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Legal</div>
           {[{l:"About",p:"about"},{l:"Contact",p:"contact"},{l:"Privacy Policy",p:"privacy"},{l:"Terms of Use",p:"terms"},{l:"Affiliate Disclosure",p:"affiliate"}].map(x=>
-            <button key={x.l} onClick={()=>go(x.p)} style={{display:"block",fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left",width:"auto"}}>{x.l}</button>
+            <button key={x.l} onClick={()=>go(x.p)} style={{display:"block",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left",width:"auto"}}>{x.l}</button>
           )}
         </div>
       </div>
       <div style={{borderTop:"1px solid var(--bdr)",paddingTop:20,display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:8}}>
-        <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)"}}>© {new Date().getFullYear()} Pro Rig Builder. Built and managed by <a href="https://tiereduptech.com" target="_blank" rel="noopener noreferrer" style={{color:"var(--accent)",textDecoration:"underline",fontWeight:600}}>TieredUp Tech, Inc.</a> Prices and availability subject to change.</span>
+        <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)"}}>© {new Date().getFullYear()} Pro Rig Builder. Built and managed by <a href="https://tiereduptech.com" target="_blank" rel="noopener noreferrer" style={{color:"var(--accent)",textDecoration:"underline",fontWeight:600}}>TieredUp Tech, Inc.</a> Prices and availability subject to change.</span>
         <span style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--mute)"}}>As an Amazon Associate I earn from qualifying purchases. We may earn commissions from affiliate links.</span>
       </div>
     </div>
@@ -4432,7 +4458,7 @@ function ScrollToTop(){
   if(!show)return null;
   return <button onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}
     aria-label="Scroll to top"
-    style={{position:"fixed",bottom:24,right:24,zIndex:9999,width:48,height:48,borderRadius:"50%",border:"1px solid var(--bdr)",background:"var(--accent)",color:"#fff",cursor:"pointer",fontSize:20,fontWeight:700,boxShadow:"0 4px 12px rgba(0,0,0,0.25)",display:"flex",alignItems:"center",justifyContent:"center",transition:"transform .15s, background .15s"}}
+    style={{position:"fixed",bottom:24,right:24,zIndex:9999,width:48,height:48,borderRadius:"50%",border:"1px solid var(--bdr)",background:"var(--accent)",color:"#fff",cursor:"pointer",fontSize:22,fontWeight:700,boxShadow:"0 4px 12px rgba(0,0,0,0.25)",display:"flex",alignItems:"center",justifyContent:"center",transition:"transform .15s, background .15s"}}
     onMouseEnter={e=>{e.currentTarget.style.transform="translateY(-2px)";}}
     onMouseLeave={e=>{e.currentTarget.style.transform="translateY(0)";}}>
     ↑
