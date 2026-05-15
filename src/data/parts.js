@@ -151987,7 +151987,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T13:17:14.411Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 100375,
@@ -153793,7 +153794,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 100457,
@@ -156592,7 +156594,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.768Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 100572,
@@ -156614,7 +156617,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.768Z",
     "source": "amazon-discovery",
     "watts": 550,
-    "modular": "Full"
+    "modular": "Full",
+    "needsReview": true
   },
   {
     "id": 100573,
@@ -156634,7 +156638,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.768Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 100574,
@@ -163775,7 +163780,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.786Z",
     "source": "amazon-discovery",
-    "rgb": true
+    "rgb": true,
+    "needsReview": true
   },
   {
     "id": 100878,
@@ -163816,7 +163822,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.788Z",
     "source": "amazon-discovery",
-    "rgb": true
+    "rgb": true,
+    "needsReview": true
   },
   {
     "id": 100880,
@@ -163837,7 +163844,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.788Z",
     "source": "amazon-discovery",
-    "rgb": true
+    "rgb": true,
+    "needsReview": true
   },
   {
     "id": 100881,
@@ -163858,7 +163866,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.788Z",
     "source": "amazon-discovery",
-    "rgb": true
+    "rgb": true,
+    "needsReview": true
   },
   {
     "id": 100882,
@@ -171127,7 +171136,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.661Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101208,
@@ -171147,7 +171157,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.661Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101209,
@@ -171208,7 +171219,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.663Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101212,
@@ -171252,7 +171264,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.664Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101214,
@@ -172297,7 +172310,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101263,
@@ -172614,7 +172628,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "needsReview": true
   },
   {
     "id": 101277,
@@ -172728,7 +172743,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "needsReview": true
   },
   {
     "id": 101282,
@@ -172751,7 +172767,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 3
+    "pcie": 3,
+    "needsReview": true
   },
   {
     "id": 101283,
@@ -172774,7 +172791,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "needsReview": true
   },
   {
     "id": 101284,
@@ -172843,7 +172861,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 3
+    "pcie": 3,
+    "needsReview": true
   },
   {
     "id": 101287,
@@ -174296,7 +174315,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.984Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101356,
@@ -174316,7 +174336,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.984Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101357,
@@ -174377,7 +174398,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.986Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101360,
@@ -174421,7 +174443,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.986Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101362,
@@ -175466,7 +175489,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101411,
@@ -175783,7 +175807,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "needsReview": true
   },
   {
     "id": 101425,
@@ -175897,7 +175922,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "needsReview": true
   },
   {
     "id": 101430,
@@ -175920,7 +175946,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 3
+    "pcie": 3,
+    "needsReview": true
   },
   {
     "id": 101431,
@@ -175943,7 +175970,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "needsReview": true
   },
   {
     "id": 101432,
@@ -176012,7 +176040,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 3
+    "pcie": 3,
+    "needsReview": true
   },
   {
     "id": 101435,
@@ -176147,6 +176176,10139 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.995Z",
+    "source": "amazon-discovery",
+    "cap": 1000,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4
+  },
+  {
+    "id": 101441,
+    "c": "Mouse",
+    "n": "Logitech G305 Lightspeed Wireless Gaming Mouse, Hero Sensor, 12,000 DPI, Lightweight, 6 Programmable Buttons, 250h Battery, On-Board Memory, Compatible with PC, Mac - Black",
+    "b": "Logitech",
+    "pr": 36.44,
+    "msrp": 36.44,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51sg9BLSMTL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07CMS5Q6P",
+        "url": "https://www.amazon.com/dp/B07CMS5Q6P?tag=tiereduptech-20",
+        "price": 36.44,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.601Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101442,
+    "c": "Mouse",
+    "n": "Redragon M612 PRO RGB Gaming Mouse, 8000 DPI Wired/Wireless Optical Mouse with 9 Programmable Buttons & 7 Backlit Modes, BT & 2.4G Wireless, Software Supports DIY Keybinds Rapid Fire Button",
+    "b": "Redragon",
+    "pr": 25.89,
+    "msrp": 25.89,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51VV+zLR66L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CY1PYYNS",
+        "url": "https://www.amazon.com/dp/B0CY1PYYNS?tag=tiereduptech-20",
+        "price": 25.89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.603Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101443,
+    "c": "Mouse",
+    "n": "Logitech MX Master 4, Ergonomic Wireless Mouse with Advanced Performance Haptic Feedback, Ultra-Fast Scrolling, USB-C Charging, Bluetooth, Windows, MacOS - Graphite",
+    "b": "Logitech",
+    "pr": 119.99,
+    "msrp": 119.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61z3ENJubZL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0FC5SJNQX",
+        "url": "https://www.amazon.com/dp/B0FC5SJNQX?tag=tiereduptech-20",
+        "price": 119.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.603Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101444,
+    "c": "Mouse",
+    "n": "Logitech G305 Lightspeed Wireless Gaming Mouse, Hero Sensor, 12,000 DPI, Lightweight, 6 Programmable Buttons, 250h Battery, On-Board Memory, Compatible with PC, Mac - Lilac",
+    "b": "Logitech",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51z74wV2iHL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B086PJKVVT",
+        "url": "https://www.amazon.com/dp/B086PJKVVT?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.603Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101445,
+    "c": "Mouse",
+    "n": "Corsair IRONCLAW Wireless SE Gaming Mouse – 26,000 DPI, Ergonomic Design for Larger Hands, 10 Programmable Buttons, for MOBA, FPS, MMO – Black",
+    "b": "Corsair",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61Ng6pt8dGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G1CPTN1F",
+        "url": "https://www.amazon.com/dp/B0G1CPTN1F?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.603Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101446,
+    "c": "Mouse",
+    "n": "Redragon Gaming Mouse, Wireless Mouse Gaming with 8000 DPI, PC Gaming Mice with Fire Button, RGB Backlit Programmable Ergonomic Mouse Gamer, Rechargeable, 70Hrs for Windows, Mac Gamer, Black",
+    "b": "Redragon",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61QY3V6A-NL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B66RHD7B",
+        "url": "https://www.amazon.com/dp/B0B66RHD7B?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.603Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101447,
+    "c": "Mouse",
+    "n": "Logitech G Pro Wireless Gaming Mouse with Esports Grade Performance, Ergonomic Ambidextrous, 4-8 Programmable Buttons, and HERO 25K Sensor (Renewed)",
+    "b": "Logitech",
+    "pr": 94.9,
+    "msrp": 94.9,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51WdamRdr4L._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B07P6DMQK3",
+        "url": "https://www.amazon.com/dp/B07P6DMQK3?tag=tiereduptech-20",
+        "price": 94.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.604Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101448,
+    "c": "Mouse",
+    "n": "Logitech G Pro Wireless Gaming Mouse - League of Legends Edition (Renewed)",
+    "b": "Logitech",
+    "pr": 54.95,
+    "msrp": 54.95,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71l2fdofSgL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D82B3DLV",
+        "url": "https://www.amazon.com/dp/B0D82B3DLV?tag=tiereduptech-20",
+        "price": 54.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.604Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101449,
+    "c": "Mouse",
+    "n": "Razer Viper V3 Pro Wireless Esports Gaming Mouse: Symmetrical - 55g Lightweight - 8K Polling - 35K DPI Optical Sensor - Gen3 Optical Switches - 8 Programmable Buttons - 95 Hr Battery - White",
+    "b": "Razer",
+    "pr": 129,
+    "msrp": 129,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/619xpFKAXPL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CW25XR5S",
+        "url": "https://www.amazon.com/dp/B0CW25XR5S?tag=tiereduptech-20",
+        "price": 129,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.604Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101450,
+    "c": "Mouse",
+    "n": "Logitech G PRO X Superlight 2 Lightspeed Wireless Gaming Mouse, 8K Polling, Lightweight, LIGHTFORCE Hybrid Switches, Hero 2 Sensor, 888 IPS, 44,000 DPI,USB-C Charging, PC & Mac (Renewed)",
+    "b": "Logitech",
+    "pr": 99,
+    "msrp": 99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/51VRu0zm1IL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0DXXM35BW",
+        "url": "https://www.amazon.com/dp/B0DXXM35BW?tag=tiereduptech-20",
+        "price": 99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.604Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101451,
+    "c": "Mouse",
+    "n": "Logitech G Pro Wireless Gaming Mouse - League of Legends Edition - Hero 25K Sensor, Lightspeed, Programmable Buttons, Lightsync RGB (Renewed)",
+    "b": "Logitech",
+    "pr": 54.95,
+    "msrp": 54.95,
+    "r": 3.6,
+    "img": "https://m.media-amazon.com/images/I/61e8EoF-S3L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D81Z5JVZ",
+        "url": "https://www.amazon.com/dp/B0D81Z5JVZ?tag=tiereduptech-20",
+        "price": 54.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.604Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101452,
+    "c": "Mouse",
+    "n": "Logitech G PRO X Superlight Wireless Gaming Mouse, Ultra-Lightweight, Hero 25K Sensor, 25,600 DPI, 5 Programmable Buttons, Long Battery Life, Compatible with PC/Mac - White (Renewed)",
+    "b": "Logitech",
+    "pr": 84.99,
+    "msrp": 84.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61ykKLbddNL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B097QLXM6G",
+        "url": "https://www.amazon.com/dp/B097QLXM6G?tag=tiereduptech-20",
+        "price": 84.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.604Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101453,
+    "c": "Mouse",
+    "n": "Razer Deathadder Elite Gaming Mouse (chroma Multi-Color, 16,000 DPI Sensor and Razer mekanikarumaususuitti with Esports Mouse) [parallel import goods]",
+    "b": "Razer",
+    "pr": 54.25,
+    "msrp": 54.25,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/41F2Oy6yB5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01MECR863",
+        "url": "https://www.amazon.com/dp/B01MECR863?tag=tiereduptech-20",
+        "price": 54.25,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.605Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101454,
+    "c": "Mouse",
+    "n": "Razer Deathadder Essential - Optical Esports Gaming Mouse- 6400 Adjustible DPI (Renewed)",
+    "b": "Razer",
+    "pr": 17.02,
+    "msrp": 17.02,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/8189uwDnMkL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B097QHW1Q7",
+        "url": "https://www.amazon.com/dp/B097QHW1Q7?tag=tiereduptech-20",
+        "price": 17.02,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.605Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101455,
+    "c": "Mouse",
+    "n": "Razer DeathAdder V3 Pro Wireless Gaming Mouse: 63g Ultra Lightweight - Fast Optical Switches Gen-3 - HyperSpeed Wireless - 5 Programmable Buttons - 90 Hr Battery - Black (Renewed)",
+    "b": "Razer",
+    "pr": 44.99,
+    "msrp": 44.99,
+    "r": 3.7,
+    "img": "https://m.media-amazon.com/images/I/61B4vF4eoHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BBBXGD7T",
+        "url": "https://www.amazon.com/dp/B0BBBXGD7T?tag=tiereduptech-20",
+        "price": 44.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.607Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101456,
+    "c": "Mouse",
+    "n": "Razer DeathAdder V3 Wired Gaming Mouse: 59g Ultra Lightweight - Pro 30K Optical Sensor - Fast Optical Switches Gen-3-8K Hz HyperPolling Black (Renewed)",
+    "b": "Razer",
+    "pr": 34.44,
+    "msrp": 34.44,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61Syl8a3uwL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0C42H2P2G",
+        "url": "https://www.amazon.com/dp/B0C42H2P2G?tag=tiereduptech-20",
+        "price": 34.44,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.608Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101457,
+    "c": "Mouse",
+    "n": "Razer Viper V3 HyperSpeed Wireless Esports Gaming Mouse: 82g Lightweight Design-30K DPI Optical Sensor-Up to 280 Hr Battery Life-HyperSpeed Wireless-Mechanical Switches Gen-2-Classic Black (Renewed)",
+    "b": "Razer",
+    "pr": 37.99,
+    "msrp": 37.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61LI6E0sJwL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CLQ6TQ1J",
+        "url": "https://www.amazon.com/dp/B0CLQ6TQ1J?tag=tiereduptech-20",
+        "price": 37.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.608Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101458,
+    "c": "Mouse",
+    "n": "Razer Viper V2 Pro Hyperspeed Wireless Gaming Mouse - White (Renewed)",
+    "b": "Razer",
+    "pr": 60,
+    "msrp": 60,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/51R2h3XTfgL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0B1T5LN6X",
+        "url": "https://www.amazon.com/dp/B0B1T5LN6X?tag=tiereduptech-20",
+        "price": 60,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.608Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101459,
+    "c": "Mouse",
+    "n": "Razer Viper V3 Pro Wireless Esports Gaming Mouse: Symmetrical - 55g Lightweight - 8K Polling - 35K DPI Optical Sensor - Gen3 Optical Switches - 8 Programmable Controls - 95 Hr Battery - White",
+    "b": "Razer",
+    "pr": 97.64,
+    "msrp": 97.64,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/619xpFKAXPL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0D6PBTCGV",
+        "url": "https://www.amazon.com/dp/B0D6PBTCGV?tag=tiereduptech-20",
+        "price": 97.64,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.609Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101460,
+    "c": "Mouse",
+    "n": "ASUS ROG Harpe Ace Aim Lab Wireless Esports Gaming Mouse – Aim Lab Settings Optimizer, Pro-Tested, Right-Handed, 54g Lightweight, Tri-Mode Connectivity, 36K DPI, 90Hr Battery, PC/Mac Support - Black",
+    "b": "ASUS",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71ufA6nd5cL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BSKX9V7C",
+        "url": "https://www.amazon.com/dp/B0BSKX9V7C?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.609Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101461,
+    "c": "Mouse",
+    "n": "SteelSeries Aerox 3 Wireless - Super Light Gaming Mouse - 18,000 CPI TrueMove Air Optical Sensor - Ultra-Lightweight 68g Water Resistant Design - 200 Hour Battery Life – Onyx (Renewed)",
+    "b": "SteelSeries",
+    "pr": 48.44,
+    "msrp": 48.44,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61YIZRoe5ML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09SMYGZB9",
+        "url": "https://www.amazon.com/dp/B09SMYGZB9?tag=tiereduptech-20",
+        "price": 48.44,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.610Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101462,
+    "c": "Mouse",
+    "n": "SteelSeries Aerox 9 Wireless - Ultra-Lightweight, 18000 CPI, TrueMove Air Optical Sensor, Water Resistant, 180 Hour Battery, 18 Programmable Buttons",
+    "b": "SteelSeries",
+    "pr": 68.2,
+    "msrp": 68.2,
+    "r": 3.7,
+    "img": "https://m.media-amazon.com/images/I/61EvW+4R-FL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B09YTN2K4D",
+        "url": "https://www.amazon.com/dp/B09YTN2K4D?tag=tiereduptech-20",
+        "price": 68.2,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.610Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101463,
+    "c": "Mouse",
+    "n": "SteelSeries Aerox 3 - Super Light Gaming Mouse - 8,500 CPI TrueMove Core Optical Sensor - Ultra-Lightweight 59g Water Resistant Design - Universal USB-C connectivity - Onyx (Renewed)",
+    "b": "SteelSeries",
+    "pr": 33.49,
+    "msrp": 33.49,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71iWqlfgE7L._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B09TTT44PP",
+        "url": "https://www.amazon.com/dp/B09TTT44PP?tag=tiereduptech-20",
+        "price": 33.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.610Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101464,
+    "c": "Mouse",
+    "n": "SteelSeries Aerox 5 Wireless Ergonomic 9-Button TrueMove Air Sensor 18000 CPI Ultra-Lightweight Design Gaming Mouse - Black (Renewed)",
+    "b": "SteelSeries",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81-nE4e2YvL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B09Z66S64T",
+        "url": "https://www.amazon.com/dp/B09Z66S64T?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.610Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101465,
+    "c": "Mouse",
+    "n": "SteelSeries Aerox 3 Wireless - Super Light Gaming Mouse - 18,000 CPI TrueMove Air Optical Sensor - Ultra-Lightweight Water Resistant Design - 200 Hour Battery Life - Ghost (Renewed)",
+    "b": "SteelSeries",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61mH6TLiDfL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B09J97T8DM",
+        "url": "https://www.amazon.com/dp/B09J97T8DM?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.610Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101466,
+    "c": "Mouse",
+    "n": "SteelSeries Aerox 9 Wireless: World of Warcraft Edition — Free in-Game Item — MMO Gaming Mouse — 18 Programmable Buttons — Lightweight — Bluetooth/2.4GHz — 18K DPI TrueMove Air Sensor (Renewed)",
+    "b": "SteelSeries",
+    "pr": 119.99,
+    "msrp": 119.99,
+    "r": 2.9,
+    "img": "https://m.media-amazon.com/images/I/61bYvs-KdcL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DQQZZSTD",
+        "url": "https://www.amazon.com/dp/B0DQQZZSTD?tag=tiereduptech-20",
+        "price": 119.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.610Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101467,
+    "c": "Mouse",
+    "n": "SteelSeries Aerox 3 Wireless Faze Clan Edition Gaming Mouse (Renewed)",
+    "b": "SteelSeries",
+    "pr": 42.95,
+    "msrp": 42.95,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61Rtim+lldL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0DD9H52X4",
+        "url": "https://www.amazon.com/dp/B0DD9H52X4?tag=tiereduptech-20",
+        "price": 42.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.611Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101468,
+    "c": "Mouse",
+    "n": "Corsair Scimitar Elite Wireless SE MMO PC Gaming Mouse – 33,000 DPI, 16 Programmable Buttons, Key Slider, Elgato Virtual Stream Deck, 1,000Hz Polling, Up to 150-Hour Battery – Gunmetal",
+    "b": "Elgato",
+    "pr": 89.78,
+    "msrp": 91.93,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/61UHfqT0pHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F6NGCDFN",
+        "url": "https://www.amazon.com/dp/B0F6NGCDFN?tag=tiereduptech-20",
+        "price": 89.78,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.611Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101469,
+    "c": "Mouse",
+    "n": "Corsair Scimitar Elite Wireless SE MMO PC Gaming Mouse – 33,000 DPI, 16 Programmable Buttons, Key Slider, Elgato Virtual Stream Deck, 1,000Hz Polling, Up to 150-Hour Battery – White",
+    "b": "Elgato",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/61-n5nHpSrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F6NJYMWF",
+        "url": "https://www.amazon.com/dp/B0F6NJYMWF?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.611Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101470,
+    "c": "Mouse",
+    "n": "ASUS ROG Spatha X Wireless Gaming Mouse – MMO/MOBA Design, 12 Programmable Buttons, Right-Handed, 168g, Dual-Mode (Wired/2.4GHz), 19K DPI, up to 67Hr Battery, Magnetic Charging Dock, PC/Mac Support",
+    "b": "ASUS",
+    "pr": 126.99,
+    "msrp": 126.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71WaCVjJ8zL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09726KT4R",
+        "url": "https://www.amazon.com/dp/B09726KT4R?tag=tiereduptech-20",
+        "price": 126.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.611Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101471,
+    "c": "Mouse",
+    "n": "ASUS ROG Gladius III Core Wired Gaming Mouse – Right-Handed Ergonomic, 72g, 12K DPI, ROG Paracord, Push-Fit Switch Sockets/Hot-Swappable Switches, Gear Link Web-Based Configuration, PC/Mac Support",
+    "b": "ASUS",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/41aqQBaATaL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FLH3LP3W",
+        "url": "https://www.amazon.com/dp/B0FLH3LP3W?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.611Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101472,
+    "c": "Mouse",
+    "n": "Corsair Scimitar RGB Elite, MOBA/MMO Gaming Mouse, Black, Backlit RGB LED, 18000 DPI, Optical (Renewed)",
+    "b": "Corsair",
+    "pr": 42,
+    "msrp": 42,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/614J0VriTRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0949M4PJR",
+        "url": "https://www.amazon.com/dp/B0949M4PJR?tag=tiereduptech-20",
+        "price": 42,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.611Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101473,
+    "c": "Mouse",
+    "n": "Corsair Scimitar Elite Wireless SE MMO PC Gaming Mouse – 33,000 DPI, Elgato Virtual Stream Deck, 1,000Hz Polling, Up to 150-Hour Battery – Gunmetal(Renewed) (Renewed)",
+    "b": "Corsair",
+    "pr": 62.95,
+    "msrp": 62.95,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/61UHfqT0pHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GWKHJRDR",
+        "url": "https://www.amazon.com/dp/B0GWKHJRDR?tag=tiereduptech-20",
+        "price": 62.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.611Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101474,
+    "c": "Mouse",
+    "n": "CORSAIR SCIMITAR ELITE RGB WIRELESS MMO Gaming Mouse - 26,000 DPI - 16 Programmable Buttons - Up to 150hrs Battery - iCUE Compatible - Black (Renewed)",
+    "b": "Corsair",
+    "pr": 64.95,
+    "msrp": 64.95,
+    "r": 3.5,
+    "img": "https://m.media-amazon.com/images/I/712zoUOXUoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJJY5CVN",
+        "url": "https://www.amazon.com/dp/B0FJJY5CVN?tag=tiereduptech-20",
+        "price": 64.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.611Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101475,
+    "c": "Mouse",
+    "n": "Razer Pro Click V2 Vertical Wireless Mouse: 6 Button Ergonomic Design - One Click AI Prompt - Supports Windows & Mac - Multi Device Connectivity via 2.4GHz, Bluetooth, or USB C Wired Mode - Chroma RGB",
+    "b": "Razer",
+    "pr": 119.99,
+    "msrp": 119.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71JYWYqicqL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0DVD5RTZ5",
+        "url": "https://www.amazon.com/dp/B0DVD5RTZ5?tag=tiereduptech-20",
+        "price": 119.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.612Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101476,
+    "c": "Mouse",
+    "n": "Logitech MX Vertical Wireless Mouse – Ergonomic Design Reduces Muscle Strain, Move Content Between 3 Windows and Apple Computers, Rechargeable, Graphite",
+    "b": "Logitech",
+    "pr": 74.99,
+    "msrp": 74.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61iiZ-gDYEL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B07FNJB8TT",
+        "url": "https://www.amazon.com/dp/B07FNJB8TT?tag=tiereduptech-20",
+        "price": 74.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.612Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101477,
+    "c": "Mouse",
+    "n": "Redragon M811 Aatrox MMO Gaming Mouse, 15 Programmable Buttons Wired RGB Mouse w/Ergonomic Natural Grip Build, 10 Side Macro Keys, Software Supports DIY Keybinds & Backlit",
+    "b": "Redragon",
+    "pr": 34.99,
+    "msrp": 34.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61P5Uylj5UL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B3J9WSJQ",
+        "url": "https://www.amazon.com/dp/B0B3J9WSJQ?tag=tiereduptech-20",
+        "price": 34.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.612Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101478,
+    "c": "Mouse",
+    "n": "Logitech Ergo M575S Wireless Trackball Mouse, Wireless Ergonomic Mouse with Bluetooth and Encrypted Dongle, Comfortable Thumb Control, Precise and Smooth Tracking, for PC/Mac - Off-White Blue Ball",
+    "b": "Logitech",
+    "pr": 44.99,
+    "msrp": 44.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51FUC8H2ChL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BBPFCXSZ",
+        "url": "https://www.amazon.com/dp/B0BBPFCXSZ?tag=tiereduptech-20",
+        "price": 44.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.612Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101479,
+    "c": "Mouse",
+    "n": "Corsair Sabre v2 PRO Ultralight FPS Wireless Gaming Mouse – 33,000 DPI, 36g Weight, 8,000Hz Hyper-Polling, Mechanical Switches, Up to 70-Hour Wireless Battery Life, Web Hub – Black",
+    "b": "Corsair",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61EoVK01-gL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0FKJ2J2R8",
+        "url": "https://www.amazon.com/dp/B0FKJ2J2R8?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.612Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101480,
+    "c": "Mouse",
+    "n": "Razer Orochi V2 Mobile Wireless Gaming Mouse: Ultra Lightweight - 2 Wireless Modes - Up to 950hrs Battery Life - Mechanical Mouse Switches - 5G Advanced 18K DPI Optical Sensor - White",
+    "b": "Razer",
+    "pr": 34.99,
+    "msrp": 34.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51e6ABlkPZL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0916MW7CG",
+        "url": "https://www.amazon.com/dp/B0916MW7CG?tag=tiereduptech-20",
+        "price": 34.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.612Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101481,
+    "c": "Mouse",
+    "n": "Logitech G309 Lightspeed Wireless Gaming Mouse, Lightweight, LIGHTFORCE Hybrid Switches, Hero 25K Sensor, 300+ Hour Battery Life with AA Battery, 6 Programmable Buttons, PC & Mac - White",
+    "b": "Logitech",
+    "pr": 61.49,
+    "msrp": 61.49,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/513v6JKpbkL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C8523DT8",
+        "url": "https://www.amazon.com/dp/B0C8523DT8?tag=tiereduptech-20",
+        "price": 61.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.612Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101482,
+    "c": "Mouse",
+    "n": "GLORIOUS Gaming Model D 2 PRO Wireless Gaming Mouse - 2.4GHz Wireless 1ms delay, 100M clicks, 60g Ultralight, Long Battery Life, 26K DPI BAMF 2.0 Sensor, Ergonomic, 6 Buttons, PTFE Feet",
+    "b": "Glorious",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 3.7,
+    "img": "https://m.media-amazon.com/images/I/61+-MIorK8L._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CJ5W7G41",
+        "url": "https://www.amazon.com/dp/B0CJ5W7G41?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.613Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101483,
+    "c": "Mouse",
+    "n": "Glorious Model O Gaming Mouse, Glossy White (Renewed)",
+    "b": "Glorious",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/51D4s+1tfsL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08288178X",
+        "url": "https://www.amazon.com/dp/B08288178X?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.614Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101484,
+    "c": "Mouse",
+    "n": "ENDGAME GEAR OP1w 4k v2 Wireless Gaming Mouse Black – 30K DPI Optical Sensor, 4000Hz Polling, Hot-Swappable Switches & Claw-Grip Design",
+    "b": "Endgame Gear",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/41rF-VX-IFL._AC_UL320_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0FCXYT2PV",
+        "url": "https://www.amazon.com/dp/B0FCXYT2PV?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.615Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101485,
+    "c": "Mouse",
+    "n": "Redragon M913 MAX Wireless Gaming Mouse, 26000 DPI MMO Optical Mouse with 16 Programmable Buttons, BT & 2.4G Wireless, Software Supports DIY Keybinds",
+    "b": "Redragon",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/61IEo1iLBrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FVRPBJDF",
+        "url": "https://www.amazon.com/dp/B0FVRPBJDF?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.615Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101486,
+    "c": "Mouse",
+    "n": "Redragon M913 MAX Wireless Gaming Mouse, 26000 DPI MMO Optical Mouse with 16 Programmable Buttons, BT & 2.4G Wireless, Software Supports DIY Keybinds, White",
+    "b": "Redragon",
+    "pr": 42.99,
+    "msrp": 42.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/61cEjRkIFEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GFSKMY5T",
+        "url": "https://www.amazon.com/dp/B0GFSKMY5T?tag=tiereduptech-20",
+        "price": 42.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.615Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101487,
+    "c": "Mouse",
+    "n": "Corsair M75 Wireless RGB Lightweight FPS Gaming Mouse – 26,000 DPI – Swappable Side Buttons – iCUE Compatible – PC – Black",
+    "b": "Corsair",
+    "pr": 46.99,
+    "msrp": 46.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61UG3YVcW-L._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0CTN26P3Z",
+        "url": "https://www.amazon.com/dp/B0CTN26P3Z?tag=tiereduptech-20",
+        "price": 46.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.615Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101488,
+    "c": "Mouse",
+    "n": "Redragon M925 PRO Wireless Gaming Mouse, 26,000 Max DPI Optical RGB Gaming Mice with 10 Programmable Buttons, Ergonomic Natural Grip Build, Software Supports DIY Keybinds & DPI, Black",
+    "b": "Redragon",
+    "pr": 36.99,
+    "msrp": 36.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61dYg3njXDL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GMV2FNC2",
+        "url": "https://www.amazon.com/dp/B0GMV2FNC2?tag=tiereduptech-20",
+        "price": 36.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.615Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101489,
+    "c": "Mouse",
+    "n": "Redragon Gaming Mouse, Wired Gaming Mouse 26,000 DPI Opitacl Sensor, Ergonomic Mouse with Fire Button, Macro Editing Programmable RGB Mouse for Laptap/PC/Mac",
+    "b": "Redragon",
+    "pr": 25.3,
+    "msrp": 25.3,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61TLH3chBFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FD4SXHZW",
+        "url": "https://www.amazon.com/dp/B0FD4SXHZW?tag=tiereduptech-20",
+        "price": 25.3,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.615Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101490,
+    "c": "Mouse",
+    "n": "Logitech Lift for Business Left, Vertical Ergonomic Mouse - Left-Handed, Wireless, Bluetooth or Secured Logi Bolt USB, Quiet clicks, Globally Certified, Windows/Mac/Chrome/Linux - Graphite",
+    "b": "Logitech",
+    "pr": 67.99,
+    "msrp": 67.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/712sSyYVVZL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09WD7XYBC",
+        "url": "https://www.amazon.com/dp/B09WD7XYBC?tag=tiereduptech-20",
+        "price": 67.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.615Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101491,
+    "c": "Mouse",
+    "n": "Razer RZ01-01050100-R3M1 Naga Left-Handed - Ergonomic MMO Gaming Mouse with 12 Programmable Thumb Buttons - 8,200 Adjustible DPI",
+    "b": "Razer",
+    "pr": 154.95,
+    "msrp": 154.95,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81zmQCSvy5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B00EO2ECUY",
+        "url": "https://www.amazon.com/dp/B00EO2ECUY?tag=tiereduptech-20",
+        "price": 154.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101492,
+    "c": "Mouse",
+    "n": "Logitech G305 Lightspeed Wireless Gaming Mouse, Hero Sensor, 12,000 DPI, Lightweight, 6 Programmable Buttons, 250h Battery, On-Board Memory, Compatible with PC, Mac - Blue",
+    "b": "Logitech",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51lWnqodMlL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B086PDW7BB",
+        "url": "https://www.amazon.com/dp/B086PDW7BB?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101493,
+    "c": "Keyboard",
+    "n": "Redragon Mechanical Gaming Keyboard Wired, 11 Programmable Backlit Modes, Hot-Swappable Red Switch, Anti-Ghosting, Double-Shot PBT Keycaps, Light Up Keyboard for PC Mac",
+    "b": "Redragon",
+    "pr": 25.49,
+    "msrp": 25.49,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71Bk2A2WmOL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CF3VGQFL",
+        "url": "https://www.amazon.com/dp/B0CF3VGQFL?tag=tiereduptech-20",
+        "price": 25.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101494,
+    "c": "Keyboard",
+    "n": "SteelSeries USB Apex 5 Hybrid Mechanical Gaming Keyboard – Per-Key RGB Illumination – Aircraft Grade Aluminum Alloy Frame – OLED Smart Display (Hybrid Blue Switch)",
+    "b": "SteelSeries",
+    "pr": 98.99,
+    "msrp": 98.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81yd9W+0doL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07ZGDD6B1",
+        "url": "https://www.amazon.com/dp/B07ZGDD6B1?tag=tiereduptech-20",
+        "price": 98.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101495,
+    "c": "Keyboard",
+    "n": "ASUS ROG Strix Scope II X Wired USB Mechanical Gaming Keyboard – 100% Full-Size, Hot Swappable Pre-lubed ROG NX Snow V2 Linear Switches, PBT Keycaps, RGB, PC/Mac Support - Black",
+    "b": "ASUS",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71iyRkaBAEL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0FGGZK4X7",
+        "url": "https://www.amazon.com/dp/B0FGGZK4X7?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101496,
+    "c": "Keyboard",
+    "n": "Logitech G213 Prodigy Gaming Keyboard - Wired RGB Backlit Keyboard with Mech-Dome Keys, Palm Rest, Adjustable Feet, Media Controls, USB, Compatible with Windows – Black",
+    "b": "Logitech",
+    "pr": 56.99,
+    "msrp": 56.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71y+Sl+qWwL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07QGHK6Q8",
+        "url": "https://www.amazon.com/dp/B07QGHK6Q8?tag=tiereduptech-20",
+        "price": 56.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101497,
+    "c": "Keyboard",
+    "n": "RK ROYAL KLUDGE R98 Pro Wired Mechanical Keyboard, 96% Creamy Gaming Keyboard RGB Backlit with Number Pad and Volume Knob, Gasket Mount, MDA Profile PBT Keycaps, Hot Swappable Pre-lubed Linear Switch",
+    "b": "Royal Kludge",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/718cb2135RL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DWMX5TXV",
+        "url": "https://www.amazon.com/dp/B0DWMX5TXV?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101498,
+    "c": "Keyboard",
+    "n": "Razer BlackWidow V4 X Mechanical Gaming Keyboard: Yellow Switches Linear & Silent - 6 Macro Keys - Chroma RGB - Doubleshot ABS Keycaps - Roller & Media Keys - Snap Tap",
+    "b": "Razer",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71m+Xv1JKML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C8QYB8W6",
+        "url": "https://www.amazon.com/dp/B0C8QYB8W6?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101499,
+    "c": "Keyboard",
+    "n": "Logitech MX Mechanical Wireless Illuminated Performance Keyboard, Tactile Quiet Switches, Backlit Keys, Bluetooth, USB-C, macOS, Windows, Linux, iOS, Android, Metal, ‎Graphite",
+    "b": "Logitech",
+    "pr": 159.99,
+    "msrp": 159.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61++ok6AqtL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09LK1P1RD",
+        "url": "https://www.amazon.com/dp/B09LK1P1RD?tag=tiereduptech-20",
+        "price": 159.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101500,
+    "c": "Keyboard",
+    "n": "Redragon K668 RGB Gaming Keyboard, 108 Keys Wired Mechanical Keyboard w/Extra 4 Hotkeys, Sound Absorbing Foams, Upgraded Hot-swappable Socket, Mixed Color Keycaps x 2 Sets, Red Switch",
+    "b": "Redragon",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/618A+B25MKL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CDWP1D58",
+        "url": "https://www.amazon.com/dp/B0CDWP1D58?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101501,
+    "c": "Keyboard",
+    "n": "Redragon K521 Upgrade Rainbow LED Gaming Keyboard, 104 Keys Wired Mechanical Feeling Keyboard with Multimedia Keys, One-Touch Backlit, Anti-Ghosting, Compatible with PC, Mac, PS4/5, Xbox",
+    "b": "Redragon",
+    "pr": 15.99,
+    "msrp": 15.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71kp4T3JSIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DRFGNWV1",
+        "url": "https://www.amazon.com/dp/B0DRFGNWV1?tag=tiereduptech-20",
+        "price": 15.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101502,
+    "c": "Keyboard",
+    "n": "Redragon K552 Mechanical Gaming Keyboard, 87-Key Compact, LED Gaming Keyboard with Red Switches, Anti-Ghosting, Metal Frame for PC Gaming & Typing, Beginner-Friendly (Black)",
+    "b": "Redragon",
+    "pr": 36.99,
+    "msrp": 36.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71FSIp+tDNL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B016MAK38U",
+        "url": "https://www.amazon.com/dp/B016MAK38U?tag=tiereduptech-20",
+        "price": 36.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101503,
+    "c": "Keyboard",
+    "n": "Corsair Galleon 100 SD RGB Mechanical Wired Gaming Keyboard – QWERTY US, Stream Deck-Integrated, Pre-Lubed MLX Pulse Thocky Hotswappable PBT Double-Shot Switches, FlashTap SOCD, 8,000Hz – Black",
+    "b": "Corsair",
+    "pr": 349.99,
+    "msrp": 349.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/71+tkqze3FL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G3PN1VS4",
+        "url": "https://www.amazon.com/dp/B0G3PN1VS4?tag=tiereduptech-20",
+        "price": 349.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101504,
+    "c": "Keyboard",
+    "n": "Keychron K2 75% Layout Bluetooth Wireless Mechanical Keyboard Super Switch/White LED Backlit/USB C/Anti Ghosting/N-Key Rollover, 84 Keys Gaming Keyboard for Mac Windows-Version 2",
+    "b": "Keychron",
+    "pr": 63.99,
+    "msrp": 63.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61C-YQ5Fc6L._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07QBPDWLS",
+        "url": "https://www.amazon.com/dp/B07QBPDWLS?tag=tiereduptech-20",
+        "price": 63.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101505,
+    "c": "Keyboard",
+    "n": "Redragon K556 PRO Upgraded Wireless RGB Gaming Keyboard, BT/2.4Ghz Tri-Mode Aluminum Mechanical Keyboard w/No-Lag Connection, Hot-Swap Linear Quiet Red Switch",
+    "b": "Redragon",
+    "pr": 54.99,
+    "msrp": 54.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61DL2OmIAxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BLYKTL78",
+        "url": "https://www.amazon.com/dp/B0BLYKTL78?tag=tiereduptech-20",
+        "price": 54.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.616Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101506,
+    "c": "Keyboard",
+    "n": "Keychron Q6 Pro Full-Size Wireless Bluetooth Mechanical Keyboard, Full Aluminum, Hot-Swappable Keychron Super Brown Switch, Launcher Programmable, NKRO Knob, KSA PBT Keycaps, Mac/Win/Linux - Purple",
+    "b": "Keychron",
+    "pr": 219.99,
+    "msrp": 219.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71AO9m2Z39L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G7Z12342",
+        "url": "https://www.amazon.com/dp/B0G7Z12342?tag=tiereduptech-20",
+        "price": 219.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101507,
+    "c": "Keyboard",
+    "n": "Redragon K671KS Wireless Mechanical Gaming Keyboard, Tri Mode BT/2.4G/USB-C Hot Swappable Custom Keyboard, RGB Backlit Computer Gaming Keyboards, PBT Keycaps, Programmable for PC/Tablet/MAC",
+    "b": "Redragon",
+    "pr": 34.99,
+    "msrp": 34.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61iHYcUJi5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJL64Y65",
+        "url": "https://www.amazon.com/dp/B0FJL64Y65?tag=tiereduptech-20",
+        "price": 34.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101508,
+    "c": "Keyboard",
+    "n": "Redragon Wireless Typewriter Style Mechanical Gaming Keyboard, Bluetooth/2.4Ghz/Wired, RGB Backlit, Rechargeable, Blue Switch - Clicky, Metal Panel, Round Keycaps, Black",
+    "b": "Redragon",
+    "pr": 64.99,
+    "msrp": 64.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71dsPi5MsUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F1MKZJMH",
+        "url": "https://www.amazon.com/dp/B0F1MKZJMH?tag=tiereduptech-20",
+        "price": 64.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101509,
+    "c": "Keyboard",
+    "n": "ASUS ROG Strix Scope II 96 Wireless Mechanical Gaming Keyboard – 96% Full-Size, Tri-Mode Connectivity, Hot Swappable Pre-lubed ROG NX Snow Linear Switches, PBT Keycaps, RGB, PC/Mac Support-Black",
+    "b": "ASUS",
+    "pr": 132,
+    "msrp": 132,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/91YxKZjwOPL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C7KFZ5TL",
+        "url": "https://www.amazon.com/dp/B0C7KFZ5TL?tag=tiereduptech-20",
+        "price": 132,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101510,
+    "c": "Keyboard",
+    "n": "Keychron K10 HE Hall Effect Keyboard, Gateron Double-Rail Magnetic Nebula Switch, Full-Size Tri-Mode Wireless Keyboard with Rapid Trigger, Adjustable Actuation, RGB, Aluminum + Wooden Frame",
+    "b": "Keychron",
+    "pr": 123.24,
+    "msrp": 123.24,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61G-mjwnv3L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DXZ97PCG",
+        "url": "https://www.amazon.com/dp/B0DXZ97PCG?tag=tiereduptech-20",
+        "price": 123.24,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101511,
+    "c": "Keyboard",
+    "n": "Redragon K689 PRO Wireless Gasket RGB Gaming Keyboard, 108 Keys Mechanical Keyboard w/Extra 4 Hotkeys, Upgraded Hot-swappable Socket, 3-Layer Noise Dampening, Round PBT Keycaps, Custom Linear Switch",
+    "b": "Redragon",
+    "pr": 54.99,
+    "msrp": 54.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61cJVGtAeIL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0DK8WN5B7",
+        "url": "https://www.amazon.com/dp/B0DK8WN5B7?tag=tiereduptech-20",
+        "price": 54.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101512,
+    "c": "Keyboard",
+    "n": "RK ROYAL KLUDGE S98 Mechanical Keyboard w/Smart Display & Knob, Top Mount 96% Wireless Mechanical Keyboard BT/2.4G/USB-C, Hot Swappable, Software Support, Creamy Sounding, 98 Keys",
+    "b": "Royal Kludge",
+    "pr": 74.99,
+    "msrp": 74.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61UxZqXGOgL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CQ2MSP2B",
+        "url": "https://www.amazon.com/dp/B0CQ2MSP2B?tag=tiereduptech-20",
+        "price": 74.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101513,
+    "c": "Keyboard",
+    "n": "Keychron K10 Full Size 104 Keys Bluetooth Wireless Mechanical Gaming Keyboard for Mac Windows with Keychron Super Brown Switch, Multitasking/White LED Backlight/USB C Wired Computer Keyboard",
+    "b": "Keychron",
+    "pr": 84.99,
+    "msrp": 84.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/616P6EAYVXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08MKSNYJD",
+        "url": "https://www.amazon.com/dp/B08MKSNYJD?tag=tiereduptech-20",
+        "price": 84.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101514,
+    "c": "Keyboard",
+    "n": "Redragon K580 PRO Wireless RGB Gaming Keyboard, 3-Modes 104 Keys Mechanical Keyboard w/Hot-Swap Socket, Dedicated Media Controls & Onboard Macro Recording, Linear Red Switch",
+    "b": "Redragon",
+    "pr": 64.99,
+    "msrp": 64.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61IATVxjPyL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0CS68QV83",
+        "url": "https://www.amazon.com/dp/B0CS68QV83?tag=tiereduptech-20",
+        "price": 64.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101515,
+    "c": "Keyboard",
+    "n": "Logitech Alto Keys K98M Wireless Mechanical Clicky Keyboard, Customizable Keyboard with Vibration Absorbing Gasket, Backlit Keys, Bluetooth, USB-C Charging, for PC, Mac, Laptops - Graphite",
+    "b": "Logitech",
+    "pr": 109.99,
+    "msrp": 109.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/613zl8HXvqL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FMD1DGS8",
+        "url": "https://www.amazon.com/dp/B0FMD1DGS8?tag=tiereduptech-20",
+        "price": 109.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101516,
+    "c": "Keyboard",
+    "n": "Redragon K521KS Wireless Gaming Keyboard, Tri-Mode BT/2.4G/USB-C RGB Mechanical Feeling Keyboard with Multimedia Keys, 4000mAh Battery, Anti-Ghosting, Compatible with PC - Upgrade",
+    "b": "Redragon",
+    "pr": 26.99,
+    "msrp": 26.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71UsuN6gT0L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FG6JNWBS",
+        "url": "https://www.amazon.com/dp/B0FG6JNWBS?tag=tiereduptech-20",
+        "price": 26.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101517,
+    "c": "Keyboard",
+    "n": "Redragon K745 PRO Wireless Gasket RGB Gaming Keyboard, 108 Keys Mechanical Keyboard w/Extra 4 Hotkeys, Hot-Swap Socket, 5-Layer Noise Dampening, See-Through Round PBT Keycaps, Mint Mambo Switch",
+    "b": "Redragon",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71b-v9IPZIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FDKPF9QJ",
+        "url": "https://www.amazon.com/dp/B0FDKPF9QJ?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101518,
+    "c": "Keyboard",
+    "n": "Redragon Wireless Mechanical Gaming Keyboard, Tri Mode BT/2.4G/USB-C Hot Swappable Custom Keyboard, RGB Backlit Computer Gaming Keyboards, PBT Keycaps, Programmable for PC/Tablet,K671WBR-KS",
+    "b": "Redragon",
+    "pr": 42.49,
+    "msrp": 42.49,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/814dfm1tsOL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G51Y5DD5",
+        "url": "https://www.amazon.com/dp/B0G51Y5DD5?tag=tiereduptech-20",
+        "price": 42.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101519,
+    "c": "Keyboard",
+    "n": "Razer Huntsman V3 Pro TKL Esports Gaming Keyboard: Analog Optical Switches - Razer Snap Tap - Rapid Trigger - Adjustable Actuation - Media Keys & Dial - Doubleshot PBT Keycaps - Wrist Rest - Black",
+    "b": "Razer",
+    "pr": 179,
+    "msrp": 179,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81y14ID9oHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CG7BWG7J",
+        "url": "https://www.amazon.com/dp/B0CG7BWG7J?tag=tiereduptech-20",
+        "price": 179,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101520,
+    "c": "Keyboard",
+    "n": "Logitech G512 X 98 Dual SWAP, Hot-Swappable TMR Analog/Mechanical Gaming Keyboard, Linear, 8K Polling Rate, Custom Actuation 0.1-4.0 mm, Rapid Trigger, LIGHTSYNC RGB, Wired, PC, Mac - Black",
+    "b": "Logitech",
+    "pr": 199.99,
+    "msrp": 199.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61IN5v9abJL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GNYVNTW2",
+        "url": "https://www.amazon.com/dp/B0GNYVNTW2?tag=tiereduptech-20",
+        "price": 199.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101521,
+    "c": "Keyboard",
+    "n": "Logitech G413 TKL SE Mechanical Gaming Keyboard - Compact Backlit Keyboard with Tactile Mechanical Switches, Anti-Ghosting, Compatible with Windows, macOS - Black Aluminum",
+    "b": "Logitech",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61U-zlxQmWL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08Z7J4KV3",
+        "url": "https://www.amazon.com/dp/B08Z7J4KV3?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101522,
+    "c": "Keyboard",
+    "n": "Cherry Stream Keyboard TKL, Wired Keyboard Without Number Pad, Whisper Quiet Keys, Unique Typing Feel, Slim Design, SX Scissor Switches, QWERTY, Black",
+    "b": "Cherry",
+    "pr": 24.99,
+    "msrp": 24.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/51+xmqxzScL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09N9CPX34",
+        "url": "https://www.amazon.com/dp/B09N9CPX34?tag=tiereduptech-20",
+        "price": 24.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101523,
+    "c": "Keyboard",
+    "n": "RK ROYAL KLUDGE R87 Pro Wired Mechanical Keyboard with Hot Swappable Knob 75% RGB Backlit Gaming Keyboard 88 Keys TKL Gasket Mounted with QMK/VIA and Linear Creamy Switch",
+    "b": "Royal Kludge",
+    "pr": 54.99,
+    "msrp": 54.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61X9YRWz54L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D5B2LRB5",
+        "url": "https://www.amazon.com/dp/B0D5B2LRB5?tag=tiereduptech-20",
+        "price": 54.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101524,
+    "c": "Keyboard",
+    "n": "Corsair K55 CORE TKL RGB Gaming Keyboard – Tenkeyless, 8-Zone RGB, Quiet Membrane Keys, Spill Resistant, Media Keys, 1000Hz Polling – NA Layout – Black",
+    "b": "Corsair",
+    "pr": 34.99,
+    "msrp": 34.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/717RHdRIhiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FG8DKV2N",
+        "url": "https://www.amazon.com/dp/B0FG8DKV2N?tag=tiereduptech-20",
+        "price": 34.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101525,
+    "c": "Keyboard",
+    "n": "Redragon K716 Wireless Mechanical Keyboard with Knob, Gasket Gaming Keyboard in TKL Layout, Hot swap Pre-Lubed Switches, RGB Backlight, for PC/Mac (White)",
+    "b": "Redragon",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71dMxsde-8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G1YSV177",
+        "url": "https://www.amazon.com/dp/B0G1YSV177?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101526,
+    "c": "Keyboard",
+    "n": "Logitech G PRO X TKL Rapid (Tenkeyless) Wired Gaming Keyboard: Magnetic Analog Switches with Rapid Trigger, Lightsync RGB, Detachable USB-C Cable, Volume Roller & Media Buttons - Black",
+    "b": "Logitech",
+    "pr": 154.05,
+    "msrp": 154.05,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/618ldB2HRcL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DJD163HT",
+        "url": "https://www.amazon.com/dp/B0DJD163HT?tag=tiereduptech-20",
+        "price": 154.05,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101527,
+    "c": "Keyboard",
+    "n": "NuPhy Node100 Wireless Mechanical Keyboard, Hot Swappable Custom Low Profile Keyboard, 103 Keys Computer Gaming Keyboards, Supports Touch Gestures, PBT Keycaps, RGB Backlit, Bluetooth/2.4GHz/USB-C",
+    "b": "NuPhy",
+    "pr": 109.95,
+    "msrp": 109.95,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61rDI9Sa+NL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GFSKMQ4Q",
+        "url": "https://www.amazon.com/dp/B0GFSKMQ4Q?tag=tiereduptech-20",
+        "price": 109.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101528,
+    "c": "Keyboard",
+    "n": "Keychron Q3 Wired Custom Mechanical Keyboard Knob Version, TKL Tenkeyless QMK/VIA Programmable Macro with Hot-swappable Gateron G Pro Blue Switch Double Gasket Compatible with Mac Windows Linux (Blue)",
+    "b": "Keychron",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61foem1gTQL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09MMX87W3",
+        "url": "https://www.amazon.com/dp/B09MMX87W3?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101529,
+    "c": "Keyboard",
+    "n": "Logitech G PRO X TKL Lightspeed Wireless Gaming Keyboard, Ultra-Portable Tenkeyless Design, LIGHTSYNC RGB, PBT keycaps, Linear Switches (GX Red) - Black",
+    "b": "Logitech",
+    "pr": 164.99,
+    "msrp": 164.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61ep6omO+0L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BQBRPZ8M",
+        "url": "https://www.amazon.com/dp/B0BQBRPZ8M?tag=tiereduptech-20",
+        "price": 164.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101530,
+    "c": "Keyboard",
+    "n": "Redragon K516 Shiva TKL Wired RGB Membrane Gaming Keyboard, 87 Keys Mechanical-Feel Keyboard w/Smooth Linear Switch, On-Board Macro & Dedicated Multimedia Keys, 16.8M RGB Backlit, Software Supported",
+    "b": "Redragon",
+    "pr": 19.99,
+    "msrp": 19.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71YGAZi9+5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DXT5S5TG",
+        "url": "https://www.amazon.com/dp/B0DXT5S5TG?tag=tiereduptech-20",
+        "price": 19.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101531,
+    "c": "Keyboard",
+    "n": "SteelSeries New Apex 9 TKL – HotSwap Optical Mini Keyboard – TKL Esports Design – Optical Switches – RGB Customization – Aluminum Alloy Frame – Double Shot PBT Keycaps",
+    "b": "SteelSeries",
+    "pr": 139.99,
+    "msrp": 139.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71Mi6qhb2aL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B169JSRT",
+        "url": "https://www.amazon.com/dp/B0B169JSRT?tag=tiereduptech-20",
+        "price": 139.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101532,
+    "c": "Keyboard",
+    "n": "Razer BlackWidow V3 TKL Mechanical Gaming Keyboard: Yellow Mechanical Switches Linear & Silent - Chroma RGB - Compact Form Factor - Programmable Macros Snap Tap",
+    "b": "Razer",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71OAwYenQUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09698GFZJ",
+        "url": "https://www.amazon.com/dp/B09698GFZJ?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101533,
+    "c": "Keyboard",
+    "n": "Redragon K673 PRO 75% Wireless Gasket RGB Gaming Keyboard, 3-Modes 81 Keys Compact Mechanical Keyboard Hot-Swap Socket, Dedicated Knob Control and 5-Layer Noise Dampening, Linear Red Switch",
+    "b": "Redragon",
+    "pr": 54.99,
+    "msrp": 54.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61sjetfujxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CDX5XGLK",
+        "url": "https://www.amazon.com/dp/B0CDX5XGLK?tag=tiereduptech-20",
+        "price": 54.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101534,
+    "c": "Keyboard",
+    "n": "GLORIOUS Gaming Keyboard GMBK 75% - Swappable MX Compatible keycaps, Detachable USB Cable, IP57 Water and dust Resistant, 10 Zone RGB Lighting, Quiet switches - 321x137x41 mm - English QWERTY Layout",
+    "b": "Glorious",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61LKUhIvToL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FKVBZ2PD",
+        "url": "https://www.amazon.com/dp/B0FKVBZ2PD?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.617Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101535,
+    "c": "Keyboard",
+    "n": "HyperX Alloy Origins 65 - Mechanical Gaming Keyboard – Compact 65% Form Factor - Linear Red Switch - Double Shot PBT Keycaps - RGB LED Backlit - NGENUITY Software Compatible,Black",
+    "b": "HyperX",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/714Sw9DWfWL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09RB7XB8Q",
+        "url": "https://www.amazon.com/dp/B09RB7XB8Q?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.618Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101536,
+    "c": "Keyboard",
+    "n": "RK ROYAL KLUDGE R65 Wired Gaming Keyboard with Volume Knob, 60% Percent RGB Backlit Mechanical Keyboard Gasket Mount with PBT Keycaps, MDA Profile, QMK/VIA, 66 Keys Hot Swappable Cream Switch, Black",
+    "b": "Royal Kludge",
+    "pr": 54.99,
+    "msrp": 54.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61hOhuiqrTL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CNP1BG1W",
+        "url": "https://www.amazon.com/dp/B0CNP1BG1W?tag=tiereduptech-20",
+        "price": 54.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.618Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101537,
+    "c": "Keyboard",
+    "n": "EPOMAKER x Aula F65 65% Wireless Mechanical Keyboard, Hot Swappable Gasket Custom Gaming Keyboard with Five-Layer Padding, RGB Backlit, Bluetooth/2.4GHz/USB-C (Black, Reaper Switch)",
+    "b": "Epomaker",
+    "pr": 62.69,
+    "msrp": 62.69,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/717KkSzFXDL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DD3SCWHD",
+        "url": "https://www.amazon.com/dp/B0DD3SCWHD?tag=tiereduptech-20",
+        "price": 62.69,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.618Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101538,
+    "c": "Keyboard",
+    "n": "GLORIOUS Gaming GMMK 2 - TKL Mechanical Keyboard - Custom 65% Keyboard - Compact -Hotswap w/Cherry Mx Style Switches - Incl. Double Shot Keycaps & Linear Switches - PC Gaming Setup Accessories",
+    "b": "Glorious",
+    "pr": 53.49,
+    "msrp": 53.49,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71-mdutc7JL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09YZ48RQH",
+        "url": "https://www.amazon.com/dp/B09YZ48RQH?tag=tiereduptech-20",
+        "price": 53.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.618Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101539,
+    "c": "Keyboard",
+    "n": "Redragon K709 PRO 65% Wireless Gasket RGB Gaming Keyboard, 68 Keys Hot-Swap Compact Mechanical Keyboard w/Free-Mod Socket, 5-Layer Noise Dampening & Round PBT Keycaps, Quiet Custom Linear Switch",
+    "b": "Redragon",
+    "pr": 36.99,
+    "msrp": 36.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61y1Rc94rgL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DDBYZG2M",
+        "url": "https://www.amazon.com/dp/B0DDBYZG2M?tag=tiereduptech-20",
+        "price": 36.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.618Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101540,
+    "c": "Keyboard",
+    "n": "Redragon K673 PRO SE 75% 81 Keys Wireless Gasket RGB Gaming Keyboard, 3-Mode Anime Mechanical Keyboard w/Hot-Swap Socket, Dedicated Knob Control & 5-Layer Noise Dampening, Custom Hi-Fi Linear Switch",
+    "b": "Redragon",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71EPFz0NeLL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DJNKFNX8",
+        "url": "https://www.amazon.com/dp/B0DJNKFNX8?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.618Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101541,
+    "c": "Keyboard",
+    "n": "RK ROYAL KLUDGE R75 Wired Gaming Keyboard with Volume Knob, 75% Mechanical Gaming Keyboard Custom Gasket Mount with MDA Profile PBT Keycaps, QMK/VIA, Hot Swappable Silver Switch, Black",
+    "b": "Royal Kludge",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61HogaXFFeL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CWGR5KM9",
+        "url": "https://www.amazon.com/dp/B0CWGR5KM9?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.618Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101542,
+    "c": "Keyboard",
+    "n": "Keychron B31 Wireless Silent Keyboard, 75% Layout Quiet Typing Custom Programmable, 2.4 GHz/Bluetooth/Wired Ergonomic Support Compatible for Mac Windows Linux - Deep Black",
+    "b": "Keychron",
+    "pr": 31.49,
+    "msrp": 31.49,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61E9uX9lG6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G4QYRD5L",
+        "url": "https://www.amazon.com/dp/B0G4QYRD5L?tag=tiereduptech-20",
+        "price": 31.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.618Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101543,
+    "c": "Keyboard",
+    "n": "Keychron K3 Version 2, 84 Keys Ultra-Slim Wireless Bluetooth/USB Wired Mechanical Keyboard with White LED Backlit, Low-Profile Keychron Mechanical Brown Switch Compatible with Mac Windows",
+    "b": "Keychron",
+    "pr": 63,
+    "msrp": 63,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61x3nRatR9L._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08LSJ4RHH",
+        "url": "https://www.amazon.com/dp/B08LSJ4RHH?tag=tiereduptech-20",
+        "price": 63,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.618Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101544,
+    "c": "Keyboard",
+    "n": "Keychron J8 HE Wired Hall Effect Keyboard with 8000 Hz Polling Rate, Rapid Trigger Magnetic Switch Hot-Swappable, 75% Layout Custom Programmable Knob, RGB Backlit for Mac Windows Linux",
+    "b": "Keychron",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61+VBKdxYJL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FX8S5RZG",
+        "url": "https://www.amazon.com/dp/B0FX8S5RZG?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.618Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101545,
+    "c": "Keyboard",
+    "n": "Redragon K752 Wireless Mechanical Keyboard, 60% Gasket Mount Gaming Keyboard with RGB Backlit, Creamy Sound, Tri-Mode 2.4GHz/BT5.0, Hot-Swappable, PBT Keycaps for PC/Mac Gamer",
+    "b": "Redragon",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71cdMv-lfdL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GJRGLGNF",
+        "url": "https://www.amazon.com/dp/B0GJRGLGNF?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.618Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101546,
+    "c": "Keyboard",
+    "n": "Keychron C2 Full Size Wired Mechanical Keyboard Compatible with Mac, Keychron Brown Switch, 104 Keys ABS Retro Color Keycaps Gaming Keyboard for Windows, USB-C Type-C Braid Cable",
+    "b": "Keychron",
+    "pr": 48.44,
+    "msrp": 48.44,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61BD671xg7L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09JG7KRC7",
+        "url": "https://www.amazon.com/dp/B09JG7KRC7?tag=tiereduptech-20",
+        "price": 48.44,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.619Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101547,
+    "c": "Keyboard",
+    "n": "Keychron Q6 Pro Full-Size Wireless Bluetooth Mechanical Keyboard, Full Aluminum, Hot-Swappable Keychron Super Red Switch, Launcher Programmable, NKRO Knob, KSA PBT Keycaps, Mac/Win/Linux - Purple",
+    "b": "Keychron",
+    "pr": 219.99,
+    "msrp": 219.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71PmKuPdGmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G81196PK",
+        "url": "https://www.amazon.com/dp/B0G81196PK?tag=tiereduptech-20",
+        "price": 219.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.619Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101548,
+    "c": "Keyboard",
+    "n": "Keychron K4 96% Layout 100 Keys Wireless Bluetooth 5.1/Wired USB Mechanical Gaming Keyboard with Keychron Super Brown Switch White LED Backlight N-Key Rollover for Mac Windows PC-Version 2",
+    "b": "Keychron",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61wQjmfVjCL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07WS7KSGT",
+        "url": "https://www.amazon.com/dp/B07WS7KSGT?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.619Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101549,
+    "c": "Keyboard",
+    "n": "Keychron Q6 Max QMK/LUANCHER Wireless Bluetooth/2.4GHz/USB-C Wired Custom Mechanical Keyboard, Full Size Programmable Knob RGB Backlit Hot-Swappable Gateron Banana Switch for Mac Windows Linux - Black",
+    "b": "Keychron",
+    "pr": 203.99,
+    "msrp": 203.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61+26LvMxIL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CSXY433B",
+        "url": "https://www.amazon.com/dp/B0CSXY433B?tag=tiereduptech-20",
+        "price": 203.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.619Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101550,
+    "c": "Keyboard",
+    "n": "Keychron K17 Max 96% Layout QMK/Launcher Ultra-Slim Wireless/Type-C Wired Mechanical Keyboard with White LED Backlit, Low-Profile Gateron Mechanical Red Switch Compatible with Mac Windows Linux",
+    "b": "Keychron",
+    "pr": 88.19,
+    "msrp": 88.19,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/619wwHcUx+L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DCJX5FQQ",
+        "url": "https://www.amazon.com/dp/B0DCJX5FQQ?tag=tiereduptech-20",
+        "price": 88.19,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.619Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101551,
+    "c": "Keyboard",
+    "n": "Keychron K10 Max Wireless Custom Mechanical Keyboard, QMK 2.4 GHz Bluetooth Full-Size with Hot-swappable Keychron Super Red Switch Compatible with Mac Windows Linux (RGB Backlit)",
+    "b": "Keychron",
+    "pr": 119.99,
+    "msrp": 119.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61mnSsyGMzL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D62Z6BJY",
+        "url": "https://www.amazon.com/dp/B0D62Z6BJY?tag=tiereduptech-20",
+        "price": 119.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.619Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101552,
+    "c": "Keyboard",
+    "n": "Keychron K10 Full Size 104 Keys Bluetooth Wireless Mechanical Gaming Keyboard for Mac Windows with Keychron Silent K Pro Red Switch, Multitasking/White LED Backlight/USB C Wired Computer Keyboard",
+    "b": "Keychron",
+    "pr": 84.99,
+    "msrp": 84.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/61jAoFG1+8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DT3LPDGP",
+        "url": "https://www.amazon.com/dp/B0DT3LPDGP?tag=tiereduptech-20",
+        "price": 84.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.619Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101553,
+    "c": "Keyboard",
+    "n": "Keychron K10 HE Rapid Trigger Gaming Keyboard Wireless, Hall Effect Magnetic Switch Hot Swappable, 2.4 GHz/Bluetooth/Wired Adjustable Actuation, Full-Size Custom RGB for Mac Windows Linux",
+    "b": "Keychron",
+    "pr": 134.99,
+    "msrp": 134.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61YvDhTndEL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DXZPH1GN",
+        "url": "https://www.amazon.com/dp/B0DXZPH1GN?tag=tiereduptech-20",
+        "price": 134.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.619Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101554,
+    "c": "Keyboard",
+    "n": "Keychron Q6 Max QMK/VIA Wireless Custom Mechanical Keyboard Barebone Knob Version, Full-Metal Hot-Swappable RGB Backlight 2.4 GHz/Bluetooth/Type-C Wired Gaming Keyboard for Mac/Windows/Linux - White",
+    "b": "Keychron",
+    "pr": 197.99,
+    "msrp": 197.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/51432HfDYPL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CSYGRQ5Q",
+        "url": "https://www.amazon.com/dp/B0CSYGRQ5Q?tag=tiereduptech-20",
+        "price": 197.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.619Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101555,
+    "c": "Keyboard",
+    "n": "Logitech G915 X Lightspeed Low-Profile Wireless Gaming Keyboard, Double-Shot PBT Keycaps, Fully Programmable Keys, RGB Backlighting, Sleek Aluminum Finishing, GL Blue Clicky Switches - PC/Mac - Black",
+    "b": "Logitech",
+    "pr": 229.99,
+    "msrp": 229.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/61iged2bMlL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DB1XBRBK",
+        "url": "https://www.amazon.com/dp/B0DB1XBRBK?tag=tiereduptech-20",
+        "price": 229.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.619Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101556,
+    "c": "Keyboard",
+    "n": "Logitech G915 X Low-Profile Wired Mechanical Gaming Keyboard, Double-Shot PBT Keycaps, Fully Programmable Keys, RGB Lighting, Aluminum Finish, GL Red Linear Switches - PC/Mac",
+    "b": "Logitech",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61FO2QWeK3L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D1G53TZ2",
+        "url": "https://www.amazon.com/dp/B0D1G53TZ2?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.619Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101557,
+    "c": "Keyboard",
+    "n": "Logitech G915 X Lightspeed Low-Profile Wireless Gaming Keyboard, Double-Shot PBT Keycaps, Fully Programmable Keys, RGB Backlighting, Sleek Aluminum Finishing, GL Brown Tactile Switches-PC/Mac - Black",
+    "b": "Logitech",
+    "pr": 190,
+    "msrp": 190,
+    "r": 3.4,
+    "img": "https://m.media-amazon.com/images/I/61iged2bMlL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DB1WNZJY",
+        "url": "https://www.amazon.com/dp/B0DB1WNZJY?tag=tiereduptech-20",
+        "price": 190,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.619Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101558,
+    "c": "Keyboard",
+    "n": "Logitech G915 TKL Tenkeyless Lightspeed Wireless RGB Mechanical Gaming Keyboard, Low Profile Switch Options, Lightsync RGB, Advanced Wireless and Bluetooth Support - Tactile,Black",
+    "b": "Logitech",
+    "pr": 168.7,
+    "msrp": 168.7,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61aezyfO5cL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B085RLZ1C4",
+        "url": "https://www.amazon.com/dp/B085RLZ1C4?tag=tiereduptech-20",
+        "price": 168.7,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.619Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101559,
+    "c": "Keyboard",
+    "n": "Logitech G915 X Wired Mechanical Gaming Keyboard, Double-Shot PBT Keycaps, Fully Programmable Keys, RGB Backlit Mac/PC Gaming Keyboards, Aluminum Finish, GL Tactile Switches, Black (Renewed)",
+    "b": "Logitech",
+    "pr": 127.79,
+    "msrp": 127.79,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61FO2QWeK3L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FS38BLLG",
+        "url": "https://www.amazon.com/dp/B0FS38BLLG?tag=tiereduptech-20",
+        "price": 127.79,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.620Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101560,
+    "c": "Keyboard",
+    "n": "Logitech G915 Lightspeed RGB Mechanical Gaming Keyboard, Low Profile GL Clicky Key Switch, LIGHTSYNC RGB, Advanced Lightspeed Wireless and Bluetooth Support - Clicky,Black",
+    "b": "Logitech",
+    "pr": 239,
+    "msrp": 239,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/51jkxo3a7bL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07NY9ZT92",
+        "url": "https://www.amazon.com/dp/B07NY9ZT92?tag=tiereduptech-20",
+        "price": 239,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.620Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101561,
+    "c": "Keyboard",
+    "n": "Logitech G915 LIGHTSPEED Wireless RGB Mechanical Gaming Keyboard Clicky, Pro-Grade Wireless, Low Profile Mechanical Switches, 22MM Ultra-Thin Design, Black (Renewed)",
+    "b": "Logitech",
+    "pr": 120,
+    "msrp": 120,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/51bEA9YiF5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08VDYVYNJ",
+        "url": "https://www.amazon.com/dp/B08VDYVYNJ?tag=tiereduptech-20",
+        "price": 120,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.620Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101562,
+    "c": "Keyboard",
+    "n": "Logitech G915 TKL Tenkeyless Lightspeed Wireless RGB Mechanical Gaming Keyboard, Low Profile Switch Options, LIGHTSYNC RGB, Advanced Wireless and Bluetooth Support - Tactile (Renewed)",
+    "b": "Logitech",
+    "pr": 119.98,
+    "msrp": 119.98,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61aezyfO5cL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08L8BP9KK",
+        "url": "https://www.amazon.com/dp/B08L8BP9KK?tag=tiereduptech-20",
+        "price": 119.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.620Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101563,
+    "c": "Keyboard",
+    "n": "Logitech Wave Keys Wireless Ergonomic Keyboard with Cushioned Palm Rest, Comfortable Natural Typing, Easy-Switch, Bluetooth, Logi Bolt Receiver, for Multi-OS, Windows/Mac - Graphite",
+    "b": "Logitech",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71Yp7pxBFOL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BTNY72VD",
+        "url": "https://www.amazon.com/dp/B0BTNY72VD?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.620Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101564,
+    "c": "Keyboard",
+    "n": "Logitech G915 TKL Tenkeyless Lightspeed Wireless RGB Mechanical Gaming Keyboard, Low Profile Switch Options, LIGHTSYNC RGB, Advanced Wireless and Bluetooth Support - Linear (Renewed)",
+    "b": "Logitech",
+    "pr": 93.25,
+    "msrp": 93.25,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61V2O4vbYhL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08VHMS4QY",
+        "url": "https://www.amazon.com/dp/B08VHMS4QY?tag=tiereduptech-20",
+        "price": 93.25,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.620Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101565,
+    "c": "Keyboard",
+    "n": "Logitech G915 TKL White Tactile Tenkeyless Lightspeed Wireless RGB Mechanical Gaming Keyboard, Low Profile Switch Options, LIGHTSYNC RGB, Advanced Wireless and Bluetooth Support (Renewed)",
+    "b": "Logitech",
+    "pr": 86.99,
+    "msrp": 86.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71hEfSk5pQL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08Z3DT6LP",
+        "url": "https://www.amazon.com/dp/B08Z3DT6LP?tag=tiereduptech-20",
+        "price": 86.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.620Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101566,
+    "c": "Keyboard",
+    "n": "Razer BlackWidow V3 Mechanical Gaming Keyboard: Green Mechanical Switches - Tactile & Clicky - Chroma RGB Lighting - Compact Form Factor - Programmable Macro Functionality - USB Passthrough (Renewed)",
+    "b": "Razer",
+    "pr": 77.53,
+    "msrp": 77.53,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61RJQnkdzeL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08M38ZWPS",
+        "url": "https://www.amazon.com/dp/B08M38ZWPS?tag=tiereduptech-20",
+        "price": 77.53,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.620Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101567,
+    "c": "Keyboard",
+    "n": "Razer BlackWidow V4 Mechanical Gaming Keyboard: Green Switches Tactile & Clicky - Chroma RGB - 6 Dedicated Macro Keys - Magnetic Wrist Rest- Multi-Function Roller &Media Keys (Renewed)",
+    "b": "Razer",
+    "pr": 74.95,
+    "msrp": 74.95,
+    "r": 3.4,
+    "img": "https://m.media-amazon.com/images/I/81EEknaRvIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CK43NCL2",
+        "url": "https://www.amazon.com/dp/B0CK43NCL2?tag=tiereduptech-20",
+        "price": 74.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.620Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101568,
+    "c": "Keyboard",
+    "n": "Razer BlackWidow V4 Pro Wired Mechanical Gaming Keyboard: Green Switches Tactile & Clicky - Doubleshot ABS Keycaps - Command Dial - Chroma RGB - Magnetic Wrist Rest - Snap Tap (Renewed)",
+    "b": "Razer",
+    "pr": 99.95,
+    "msrp": 99.95,
+    "r": 3.7,
+    "img": "https://m.media-amazon.com/images/I/81Wsrt05uLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C41FL318",
+        "url": "https://www.amazon.com/dp/B0C41FL318?tag=tiereduptech-20",
+        "price": 99.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.620Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101569,
+    "c": "Keyboard",
+    "n": "Razer BlackWidow V4 Pro Wired Mechanical Gaming Keyboard: Green Switches Tactile & Clicky - Doubleshot ABS Keycaps - Command Dial - 8 Dedicated Macro Keys - Magnetic Wrist Rest - White (Renewed)",
+    "b": "Razer",
+    "pr": 189.99,
+    "msrp": 189.99,
+    "r": 3.7,
+    "img": "https://m.media-amazon.com/images/I/81wahZUehFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FCTPBDP3",
+        "url": "https://www.amazon.com/dp/B0FCTPBDP3?tag=tiereduptech-20",
+        "price": 189.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.620Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101570,
+    "c": "Keyboard",
+    "n": "Corsair K55 RGB PRO Membrane Wired Gaming Keyboard – IP42 Dust and Spill-Resistant – 6 Macro Keys with Elgato Integration – iCUE Compatible – QWERTY NA – PC, Mac, Xbox – Black",
+    "b": "Elgato",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81XDJ20fJ+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FWRWFNVR",
+        "url": "https://www.amazon.com/dp/B0FWRWFNVR?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.621Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101571,
+    "c": "Keyboard",
+    "n": "Corsair K100 RGB Optical-Mechanical Wired Gaming Keyboard - QWERTY US Layout, OPX Switches - PBT Double-Shot Keycaps - Elgato Stream Deck and iCUE Compatible - Black",
+    "b": "Elgato",
+    "pr": 199.99,
+    "msrp": 199.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71QCqjg5j8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08HR74WV4",
+        "url": "https://www.amazon.com/dp/B08HR74WV4?tag=tiereduptech-20",
+        "price": 199.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.621Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101572,
+    "c": "Keyboard",
+    "n": "Corsair K70 CORE RGB Mechanical Wired Gaming Keyboard – Pre-Lubed MLX Red Linear Switches, SOCD, ABS Double-Shot Keycaps, Media Control Dial,1000Hz Polling, QWERTY NA –Steel Grey (Renewed)",
+    "b": "Corsair",
+    "pr": 67.99,
+    "msrp": 67.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/419tkn1EeEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GZ5STQFC",
+        "url": "https://www.amazon.com/dp/B0GZ5STQFC?tag=tiereduptech-20",
+        "price": 67.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.621Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101573,
+    "c": "Keyboard",
+    "n": "Corsair K70 RGB TKL Champion Series Gaming Keyboard CH-911901A - OPX Switch (Renewed)",
+    "b": "Corsair",
+    "pr": 119.95,
+    "msrp": 119.95,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61Lx7dhCuRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09W643FFK",
+        "url": "https://www.amazon.com/dp/B09W643FFK?tag=tiereduptech-20",
+        "price": 119.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.621Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101574,
+    "c": "Keyboard",
+    "n": "Corsair K70 PRO Mini Wireless 60% (CH-9189014-NA) Mechanical Cherry MX Speed Switch Keyboard with RGB Backlighting - Black (Renewed)",
+    "b": "Corsair",
+    "pr": 62.88,
+    "msrp": 62.88,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/617LYk+8G2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4BR1WKN",
+        "url": "https://www.amazon.com/dp/B0C4BR1WKN?tag=tiereduptech-20",
+        "price": 62.88,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.621Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101575,
+    "c": "Keyboard",
+    "n": "Corsair K70 PRO Mini Wireless RGB 60% (CH-9189010-NA) Mechanical Gaming Keyboard (Fastest Sub-1ms Wireless, Swappable Cherry MX Red Keyswitches) QWERTY, NA Layout - Black (Renewed)",
+    "b": "Corsair",
+    "pr": 54.99,
+    "msrp": 54.99,
+    "r": 3,
+    "img": "https://m.media-amazon.com/images/I/61I7BGUW5lL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BB5Q2WTS",
+        "url": "https://www.amazon.com/dp/B0BB5Q2WTS?tag=tiereduptech-20",
+        "price": 54.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.621Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101576,
+    "c": "Keyboard",
+    "n": "Corsair K100 RGB Mechanical Gaming Keyboard - Cherry MX Speed RGB Silver Keyswitches - PBT Double-Shot Keycaps - Elgato Stream Deck and iCUE Compatible - QWERTY NA Layout - Black",
+    "b": "Elgato",
+    "pr": 289.99,
+    "msrp": 289.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61FgJppIOOL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08HR68MQZ",
+        "url": "https://www.amazon.com/dp/B08HR68MQZ?tag=tiereduptech-20",
+        "price": 289.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.622Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101577,
+    "c": "Keyboard",
+    "n": "Redragon K719 Wireless Gasket Gaming Keyboard w/Hype Screen & Knob, 95 Keys Mechanical Keyboard, Easy-Control 1.14’’ TFT Info Display, 5-Layer Noise Dampening, Custom Linear Switch, Jade Cloud Color",
+    "b": "Redragon",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61gJg0pc-4L._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DKHHWJT3",
+        "url": "https://www.amazon.com/dp/B0DKHHWJT3?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.622Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101578,
+    "c": "Keyboard",
+    "n": "SteelSeries Apex 3 RGB Gaming Keyboard – 10-Zone RGB Illumination – IP32 Water Resistant – Premium Magnetic Wrist Rest (Whisper Quiet Gaming Switch) (Renewed)",
+    "b": "SteelSeries",
+    "pr": 37.99,
+    "msrp": 37.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81L8fk7SGQL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0898R8DTH",
+        "url": "https://www.amazon.com/dp/B0898R8DTH?tag=tiereduptech-20",
+        "price": 37.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.622Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101579,
+    "c": "Keyboard",
+    "n": "SteelSeries Apex 3 TKL RGB Gaming Keyboard – Tenkeyless Compact Form Factor - 8-Zone RGB Illumination – IP32 Water & Dust Resistant – Whisper Quiet Gaming Switch – Gaming Grade Anti-Ghosting (Renewed)",
+    "b": "SteelSeries",
+    "pr": 24.99,
+    "msrp": 24.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61TFDjGa26L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09SJ3S7JG",
+        "url": "https://www.amazon.com/dp/B09SJ3S7JG?tag=tiereduptech-20",
+        "price": 24.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.622Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101580,
+    "c": "Keyboard",
+    "n": "SteelSeries Apex 100 Gaming Keyboard - Tactile & Silent - Blue LED Backlit - Splash Resistant - Media Controls (Renewed)",
+    "b": "SteelSeries",
+    "pr": 19.95,
+    "msrp": 19.95,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81wvLmxx5FL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07BF3KC6Y",
+        "url": "https://www.amazon.com/dp/B07BF3KC6Y?tag=tiereduptech-20",
+        "price": 19.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.622Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101581,
+    "c": "Keyboard",
+    "n": "SteelSeries Apex 7 TKL Mechanical USB Gaming Keyboard",
+    "b": "SteelSeries",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61yxZosfL9L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07VFK33Q6",
+        "url": "https://www.amazon.com/dp/B07VFK33Q6?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.622Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101582,
+    "c": "Keyboard",
+    "n": "SteelSeries Apex 7 TKL Mechanic Keyboards, Mechanical Gaming Keyboard",
+    "b": "SteelSeries",
+    "pr": 118.26,
+    "msrp": 118.26,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/615Ib-WCIoS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07RWDX9TW",
+        "url": "https://www.amazon.com/dp/B07RWDX9TW?tag=tiereduptech-20",
+        "price": 118.26,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.622Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101583,
+    "c": "Keyboard",
+    "n": "SteelSeries Apex 9 Mini: Faze Clan Edition — HotSwap Optical Keyboard – 60% Compact Design — Optical Switches — RGB Customization – Double Shot PBT Keycap (Renewed)",
+    "b": "SteelSeries",
+    "pr": 79.5,
+    "msrp": 79.5,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61v8k7IqtIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FS92ZDN8",
+        "url": "https://www.amazon.com/dp/B0FS92ZDN8?tag=tiereduptech-20",
+        "price": 79.5,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.622Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101584,
+    "c": "Keyboard",
+    "n": "SteelSeries Apex 3 TKL White RGB Gaming Keyboard — Tenkeyless Compact Form Factor — 8-Zone RGB Illumination — Water and Dust Resistant — Whisper-Quiet Gaming Switch (Renewed)",
+    "b": "SteelSeries",
+    "pr": 33.92,
+    "msrp": 33.92,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61ViCmFjChL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F647C8D3",
+        "url": "https://www.amazon.com/dp/B0F647C8D3?tag=tiereduptech-20",
+        "price": 33.92,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.622Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101585,
+    "c": "Keyboard",
+    "n": "SteelSeries New Apex 9 Mini TKL, HotSwap Optical Mini Gaming Keyboard, 60 Percent Compact Design, Optical Switches, RGB, Double Shot PBT Keycap, Wired Keyboards for Computer PC Gaming (Renewed)",
+    "b": "SteelSeries",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71Mi6qhb2aL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CCWSY29N",
+        "url": "https://www.amazon.com/dp/B0CCWSY29N?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.622Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101586,
+    "c": "Keyboard",
+    "n": "SteelSeries Apex Pro TKL Wireless Gen 3 OmniPoint 3.0 HyperMagnetic Switches — Adjustable Actuation — Rapid Trigger — Rapid Tap/SOCD — Dual Wireless — OLED (Renewed)",
+    "b": "SteelSeries",
+    "pr": 189,
+    "msrp": 189,
+    "r": 3.6,
+    "img": "https://m.media-amazon.com/images/I/71Wdt9uQBXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DW736WVD",
+        "url": "https://www.amazon.com/dp/B0DW736WVD?tag=tiereduptech-20",
+        "price": 189,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.622Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101587,
+    "c": "Keyboard",
+    "n": "HyperX Alloy Origins Core - Tenkeyless Mechanical Gaming Keyboard, Software Controlled Light & Macro Customization, Compact Form Factor, RGB LED Backlit, Tactile HyperX Aqua Switch,Black",
+    "b": "HyperX",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/713HboKyvoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B084GYSFDT",
+        "url": "https://www.amazon.com/dp/B084GYSFDT?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.622Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101588,
+    "c": "Keyboard",
+    "n": "HyperX Alloy Origins 65 - Full Size Mechanical Gaming Keyboard Red Switch RGB LED Backlit Double Shot PBT Keycaps Computer Gamer Wired Linear Keyboard for PC Xbox PlayStation, Black (Renewed)",
+    "b": "HyperX",
+    "pr": 32.95,
+    "msrp": 32.95,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71pDazPSBVL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B1F47J8W",
+        "url": "https://www.amazon.com/dp/B0B1F47J8W?tag=tiereduptech-20",
+        "price": 32.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.622Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101589,
+    "c": "Keyboard",
+    "n": "HyperX Alloy Rise – Hot-Swappable Mechanical Gaming Keyboard, PC, Ambient Light Sensor, Gasket Mounted, HyperX Linear Switches",
+    "b": "HyperX",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71W95zYEoiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CYNZN63J",
+        "url": "https://www.amazon.com/dp/B0CYNZN63J?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.622Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101590,
+    "c": "Keyboard",
+    "n": "HyperX Alloy Rise 75 – Hot-Swappable 75% Mechanical Gaming Keyboard, PC, Ambient Light Sensor, Gasket Mounted, Linear Switches (Renewed)",
+    "b": "HyperX",
+    "pr": 74.76,
+    "msrp": 74.76,
+    "r": 3.6,
+    "img": "https://m.media-amazon.com/images/I/61bCubmNPoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DKYZT7FD",
+        "url": "https://www.amazon.com/dp/B0DKYZT7FD?tag=tiereduptech-20",
+        "price": 74.76,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.623Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101591,
+    "c": "Keyboard",
+    "n": "HyperX Alloy Origins Core Mechanical Gaming Keyboard Low Profile Aluminum Body Aqua Switch Tactile RGB Backlit for Xbox Series PS5 PS4 Computer PC Gaming Keyboards Tenkeyless Compact, Black (Renewed)",
+    "b": "HyperX",
+    "pr": 46.99,
+    "msrp": 46.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71WSGvCoWeL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08HMNS8B3",
+        "url": "https://www.amazon.com/dp/B08HMNS8B3?tag=tiereduptech-20",
+        "price": 46.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.623Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101592,
+    "c": "Keyboard",
+    "n": "HyperX Alloy Origins - Mechanical Gaming Keyboard - Software-Controlled Light & Macro Customization - Compact Form Factor - Linear Switch - HyperX Red - RGB LED Backlit (Renewed)",
+    "b": "HyperX",
+    "pr": 72.98,
+    "msrp": 72.98,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61DUwdTSOIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0891L5SS3",
+        "url": "https://www.amazon.com/dp/B0891L5SS3?tag=tiereduptech-20",
+        "price": 72.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.623Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101593,
+    "c": "Keyboard",
+    "n": "HyperX Alloy Rise – Hot-Swappable Mechanical Gaming Keyboard, PC, Ambient Light Sensor, Gasket Mounted, Linear Switches (Renewed)",
+    "b": "HyperX",
+    "pr": 69.95,
+    "msrp": 69.95,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/71W95zYEoiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F2GHFNZK",
+        "url": "https://www.amazon.com/dp/B0F2GHFNZK?tag=tiereduptech-20",
+        "price": 69.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.623Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101594,
+    "c": "Keyboard",
+    "n": "HyperX Alloy MKW100 Mechanical Gaming Keyboard Wired with Wrist Rest Full Size Red Switch Linear RGB Backlit Aluminum Frame Number Pad for PC PS5 PS4 Xbox Series NGENUITY, Black (Renewed)",
+    "b": "HyperX",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 3.1,
+    "img": "https://m.media-amazon.com/images/I/61zVNfhJkFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C9VMVM29",
+        "url": "https://www.amazon.com/dp/B0C9VMVM29?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.623Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101595,
+    "c": "Keyboard",
+    "n": "Glorious Gaming - GMMK 3 Custom Mechanical Gaming Keyboard with Knob, 100% Keyboard Full Size, Modular Gasket System, Doubleshot PBT Keycaps, Aluminum Switch Plate, Hotswappable Switches, ANSI (White)",
+    "b": "Glorious",
+    "pr": 166.37,
+    "msrp": 166.37,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/610b2gL7GkL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DCHKYNWF",
+        "url": "https://www.amazon.com/dp/B0DCHKYNWF?tag=tiereduptech-20",
+        "price": 166.37,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.623Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101596,
+    "c": "Keyboard",
+    "n": "Glorious GMMK Modular Mechanical Gaming Keyboard - TENKEYLESS (87 Key) - RGB LED Backlit, Brown Switches, Hot Swap Switches (GMMK-TKL-BRN) (Renewed)",
+    "b": "Glorious",
+    "pr": 44.99,
+    "msrp": 44.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/81X9eAanCsL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08TB6G183",
+        "url": "https://www.amazon.com/dp/B08TB6G183?tag=tiereduptech-20",
+        "price": 44.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.623Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101597,
+    "c": "Keyboard",
+    "n": "Redragon K719 PRO Wireless Gasket Gaming Keyboard w/Hype Screen & Knob, 95 Keys Mechanical Keyboard, Easy-Control 1.14’’ TFT Info Display, 5-Layer Noise Dampening, Custom Linear Switch, Anime Edition",
+    "b": "Redragon",
+    "pr": 74.99,
+    "msrp": 74.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71jbXCv--3L._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F6WBD6PZ",
+        "url": "https://www.amazon.com/dp/B0F6WBD6PZ?tag=tiereduptech-20",
+        "price": 74.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.623Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101598,
+    "c": "Keyboard",
+    "n": "Glorious Gaming - GMMK 3 Custom Mechanical Gaming Full Size Keyboard with Knob, Modular Gasket System, Doubleshot PBT Keycaps, Aluminum Switch Plate, Hotswappable Switches, ANSI (Black) (Renewed)",
+    "b": "Glorious",
+    "pr": 149.99,
+    "msrp": 149.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61pLEO9BVhL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DCHR635V",
+        "url": "https://www.amazon.com/dp/B0DCHR635V?tag=tiereduptech-20",
+        "price": 149.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.623Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101599,
+    "c": "Keyboard",
+    "n": "Glorious Gaming GMMK PRO 75% Barebones White (Frame Only) - Modular Mechanical Gaming Keyboard, TKL Size (75%), 3.3lb Frame, RGB, Fully Customisable, 5-Pin Switch Support (RENEWED)",
+    "b": "Glorious",
+    "pr": 54.89,
+    "msrp": 54.89,
+    "r": 3.7,
+    "img": "https://m.media-amazon.com/images/I/71bZdLdOLmS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09969XDKV",
+        "url": "https://www.amazon.com/dp/B09969XDKV?tag=tiereduptech-20",
+        "price": 54.89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101600,
+    "c": "Keyboard",
+    "n": "Glorious Custom Gaming Keyboard - GMMK 85% Percent TKL Barebone - USB C Wired Mechanical Keyboard Kit - RGB Hot Swappable Switches & Keycaps - Black Metal Top Plate",
+    "b": "Glorious",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71gnq-D5WzL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01MSVHZTT",
+        "url": "https://www.amazon.com/dp/B01MSVHZTT?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101601,
+    "c": "Keyboard",
+    "n": "Glorious Gaming GMMK 3 PRO Wireless Mechanical Keyboard: 75% TKL, Bluetooth & 2.4GHz, Hotswappable MX Switches, Aluminum Body, Gasket System, Doubleshot Keycaps, US QWERTY Layout (Silver)",
+    "b": "Glorious",
+    "pr": 223.65,
+    "msrp": 223.65,
+    "r": 3.4,
+    "img": "https://m.media-amazon.com/images/I/61rhLm8JQ0L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DDR3YLQS",
+        "url": "https://www.amazon.com/dp/B0DDR3YLQS?tag=tiereduptech-20",
+        "price": 223.65,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101602,
+    "c": "Keyboard",
+    "n": "RK ROYAL KLUDGE N80 Low Profile Mechanical Keyboard w/Smart Display Screen & Knob, 75% Top Mount 3-Modes Wireless Mechanical Keyboard, Software Support, Massive Battery, 80 Keys, Tactile Brown Switch",
+    "b": "Royal Kludge",
+    "pr": 64.99,
+    "msrp": 64.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61n4m-PnFmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D41PXJ52",
+        "url": "https://www.amazon.com/dp/B0D41PXJ52?tag=tiereduptech-20",
+        "price": 64.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101603,
+    "c": "Keyboard",
+    "n": "Redragon K618 PRO 3-Mode Wireless RGB Mechanical Keyboard, BT/2.4Ghz/Wired Low Profile Win/Mac Gaming Keyboard w/Ultra-Thin Design, Dedicated Media Control & Linear Red Switch",
+    "b": "Redragon",
+    "pr": 64.99,
+    "msrp": 64.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61QVdmMRIEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B098785CL3",
+        "url": "https://www.amazon.com/dp/B098785CL3?tag=tiereduptech-20",
+        "price": 64.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101604,
+    "c": "Keyboard",
+    "n": "Keychron K5 Version 2 Wireless Bluetooth 5.2 Mechanical Keyboard, Low Profile Milk POM Switch 100% Full-Size Layout QMK Programmable, White Backlight with Shine-Through Keycaps for Mac Windows Linux",
+    "b": "Keychron",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/717voB73UzL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FG2MWXCJ",
+        "url": "https://www.amazon.com/dp/B0FG2MWXCJ?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101605,
+    "c": "Keyboard",
+    "n": "Keychron K17 Max 96% Layout QMK/Launcher Ultra-Slim Wireless/Type-C Wired Mechanical Keyboard with RGB Backlit Hot-Swappable, Low-Profile Gateron Mechanical Brown Switch Compatible with Mac Windows",
+    "b": "Keychron",
+    "pr": 103.49,
+    "msrp": 103.49,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61y4omvSs6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DCJYK91C",
+        "url": "https://www.amazon.com/dp/B0DCJYK91C?tag=tiereduptech-20",
+        "price": 103.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101606,
+    "c": "Keyboard",
+    "n": "nuphy Air75 V3 Hot Swappable Wireless Mechanical Keyboard, 84 Keys 75% Custom Low Profile Keyboard with Knob, RGB Backlit, Gasket Mounted, Support Bluetooth/2.4GHz/USB-C,White-Brown Nano",
+    "b": "NuPhy",
+    "pr": 139.95,
+    "msrp": 139.95,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61hAYID6ABL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FFG5J55H",
+        "url": "https://www.amazon.com/dp/B0FFG5J55H?tag=tiereduptech-20",
+        "price": 139.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101607,
+    "c": "Keyboard",
+    "n": "nuphy Kick75 Wireless Mechanical Keyboard with Knob,75% Layout 80 Keys RGB Backlit, Hot Swappable Low Profile Keyboard with PBT Keycaps,Gaming Keyboards, Support BT/2.4G/USB-C (Blush Nano Switch)",
+    "b": "NuPhy",
+    "pr": 109.95,
+    "msrp": 109.95,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61bQrTxtMlL._AC_UL320_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0DZMLL649",
+        "url": "https://www.amazon.com/dp/B0DZMLL649?tag=tiereduptech-20",
+        "price": 109.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101608,
+    "c": "Keyboard",
+    "n": "nuphy Air60 V2 Portable Wireless Keyboard 60% Low Profile Mechanical Keyboard Support QMK/VIA Compatible with Windows/mac OS/Linux Supports Bluetooth 5.1/2.4GHz/USB-C White-Gateron Wisteria Switch",
+    "b": "NuPhy",
+    "pr": 119.95,
+    "msrp": 119.95,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61I2sZqSvgL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CQRLHPSP",
+        "url": "https://www.amazon.com/dp/B0CQRLHPSP?tag=tiereduptech-20",
+        "price": 119.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101609,
+    "c": "Keyboard",
+    "n": "NuPhy Node100 Wireless Mechanical Keyboard, Hot Swappable Custom Low Profile Keyboard, 103 Keys Computer Gaming Keyboards, Supports Touch Gestures, PBT Keycaps, RGB Backlit, Bluetooth/2.4GHz/USB-C",
+    "b": "NuPhy",
+    "pr": 109.95,
+    "msrp": 109.95,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61H3HP8+wBL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GFTJW96W",
+        "url": "https://www.amazon.com/dp/B0GFTJW96W?tag=tiereduptech-20",
+        "price": 109.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101610,
+    "c": "Keyboard",
+    "n": "Keychron K3 Max SE QMK Wireless (2.4 GHz & Bluetooth) Custom Mechanical Keyboard with Ultra-Slim Body Launcher Support Hot-swappable Low-Profile Switch PBT Keycaps Compatible with Mac Windows Linux",
+    "b": "Keychron",
+    "pr": 104.99,
+    "msrp": 104.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/717ngcg0kfL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GK8ZFLVJ",
+        "url": "https://www.amazon.com/dp/B0GK8ZFLVJ?tag=tiereduptech-20",
+        "price": 104.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101611,
+    "c": "Keyboard",
+    "n": "NuPhy Node75 Wireless Mechanical Keyboard, 75% Hot Swappable Custom Low Profile Keyboard, 84 Keys Computer Gaming Keyboards, Supports Touch Gestures, PBT Keycaps, RGB Backlit, Bluetooth/2.4GHz/USB-C",
+    "b": "NuPhy",
+    "pr": 99.95,
+    "msrp": 99.95,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61n1rXpRA4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G24YWPPM",
+        "url": "https://www.amazon.com/dp/B0G24YWPPM?tag=tiereduptech-20",
+        "price": 99.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101612,
+    "c": "Keyboard",
+    "n": "Cherry MX 8.2 TKL Wireless Mechanical Gaming Keyboard. (Pink, MX2A Brown Switch)",
+    "b": "Cherry",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.9,
+    "img": "https://m.media-amazon.com/images/I/51SvUh-MmVL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DLHK9BDB",
+        "url": "https://www.amazon.com/dp/B0DLHK9BDB?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101613,
+    "c": "Keyboard",
+    "n": "Cherry MX Board 3.0 S Wired Gamer Mechanical Keyboard with Aluminum Housing - MX Brown Switches (Slight Clicky) for Gaming and Office - Customizable RGB Backlighting - Full Size - Black (Renewed)",
+    "b": "Cherry",
+    "pr": 49.89,
+    "msrp": 49.89,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61hvVnXBDxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D82FLXYZ",
+        "url": "https://www.amazon.com/dp/B0D82FLXYZ?tag=tiereduptech-20",
+        "price": 49.89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.624Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101614,
+    "c": "Keyboard",
+    "n": "Razer Huntsman Mini 60% Gaming Keyboard: Linear Optical Switches - Rapid Trigger Mode - Chroma RGB Lighting - PBT Keycaps - Onboard Memory - Snap Tap - Classic Black",
+    "b": "Razer",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/618etkLUt9L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F2GVF5HC",
+        "url": "https://www.amazon.com/dp/B0F2GVF5HC?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.625Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101615,
+    "c": "Keyboard",
+    "n": "Razer Huntsman V2 Analog Gaming Keyboard: Adjustable Actuation via Analog Optical Switches - Rapid Trigger Mode - Chroma RGB Lighting - Magnetic Wrist Rest - Dedicated Media Keys & Dial - Black",
+    "b": "Razer",
+    "pr": 99.15,
+    "msrp": 99.15,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/514YQ-r7HfL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08QTXDBJ8",
+        "url": "https://www.amazon.com/dp/B08QTXDBJ8?tag=tiereduptech-20",
+        "price": 99.15,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.625Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101616,
+    "c": "Keyboard",
+    "n": "ASUS ROG Strix Scope II Gaming Keyboard, pre-lubed ROG RX Red Linear Optical switches, Sound-dampening Foam, PBT doubleshot keycaps, Streaming hotkeys, Multi-Function Controls, Wrist Rest",
+    "b": "ASUS",
+    "pr": 109.99,
+    "msrp": 109.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81Gd2c8ljmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CLHLLFBP",
+        "url": "https://www.amazon.com/dp/B0CLHLLFBP?tag=tiereduptech-20",
+        "price": 109.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.625Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101617,
+    "c": "Keyboard",
+    "n": "Pcs Purple Optical Switches Hot Swap Switch for Razer Huntsman Gaming Mechanical Keyboard",
+    "b": "Razer",
+    "pr": 8.98,
+    "msrp": 8.98,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/51ZElFBD6rS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B093DDQY1Q",
+        "url": "https://www.amazon.com/dp/B093DDQY1Q?tag=tiereduptech-20",
+        "price": 8.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101618,
+    "c": "Keyboard",
+    "n": "Generic 4Pcs Red Optical Switches V2 Hot Swap Slient Switch for Razer Huntsman Elite Gaming Mechanical Keyboard Linear clicky",
+    "b": "Razer",
+    "pr": 8.98,
+    "msrp": 8.98,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61IpAZaSBEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D6SY3TX8",
+        "url": "https://www.amazon.com/dp/B0D6SY3TX8?tag=tiereduptech-20",
+        "price": 8.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101619,
+    "c": "Keyboard",
+    "n": "ASUS TUF Gaming K3 Gen II Wired USB Gaming Keyboard – 97-Key Compact Layout, Optical-Mechanical Red (Linear) Switches, PBT Keycaps, Detachable Top Plate, IP57 Waterproofing, PC/Mac Support - Black",
+    "b": "ASUS",
+    "pr": 62.99,
+    "msrp": 62.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/812ucBlULmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D9Y83J89",
+        "url": "https://www.amazon.com/dp/B0D9Y83J89?tag=tiereduptech-20",
+        "price": 62.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101620,
+    "c": "Keyboard",
+    "n": "Razer Huntsman Mini 60% Gaming Keyboard: Linear Optical Switches - Rapid Trigger Mode - Chroma RGB Lighting - PBT Keycaps - Onboard Memory - Snap Tap - White",
+    "b": "Razer",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61PwMWg2e1L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FFJDH7GM",
+        "url": "https://www.amazon.com/dp/B0FFJDH7GM?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101621,
+    "c": "Keyboard",
+    "n": "Keychron K3 75% Layout 84-Key Ultra-Slim Hot-Swappable Wireless Bluetooth Mechanical Keyboard with Low-Profile Keychron Optical Red Switch/White LED Backlight/USB Wired for Mac Windows-Version 2",
+    "b": "Keychron",
+    "pr": 63.99,
+    "msrp": 63.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61WsBGAY+xL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09GG2YXX3",
+        "url": "https://www.amazon.com/dp/B09GG2YXX3?tag=tiereduptech-20",
+        "price": 63.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101622,
+    "c": "Keyboard",
+    "n": "ASUS ROG Strix Scope II 96 RX Wireless Optical Gaming Keyboard – 96% Full-Size, Tri-Mode Connectivity, Pre-lubed ROG RX Red Linear Switches PBT Keycaps, RGB, PC/Mac Support - Black",
+    "b": "ASUS",
+    "pr": 119.99,
+    "msrp": 119.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/713d-a7JglL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GMZ5Z9G4",
+        "url": "https://www.amazon.com/dp/B0GMZ5Z9G4?tag=tiereduptech-20",
+        "price": 119.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101623,
+    "c": "Headset",
+    "n": "Logitech G325 Lightspeed Wireless Bluetooth Gaming Headset, All-Day Comfort, Built-in Mic with Noise Reduction, 24-Bit Audio, 24+ Hr Battery Life, for PC, PlayStation, Switch, Mobile – Black",
+    "b": "Logitech",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/815EomWJVML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G12HGD6R",
+        "url": "https://www.amazon.com/dp/B0G12HGD6R?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101624,
+    "c": "Headset",
+    "n": "Redragon H848 BT Wireless Gaming Headset - Lightweight - 7.1 Surround Sound - 40MM Drivers - Detachable Microphone - Multi Platforms for PC, PS5/4/3, Switch, Mobile",
+    "b": "Redragon",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/61qYl55R0GL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BS2GM6Z2",
+        "url": "https://www.amazon.com/dp/B0BS2GM6Z2?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101625,
+    "c": "Headset",
+    "n": "Logitech G321 Lightspeed Wireless Bluetooth Gaming Headset, Dynamic Comfort and fit, 16 kHz Boom mic, 20+ hrs Battery, PC, PS4, PS5, Nintendo Switch, Mobile - Black",
+    "b": "Logitech",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71yLbvA4jrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FFM18D66",
+        "url": "https://www.amazon.com/dp/B0FFM18D66?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101626,
+    "c": "Headset",
+    "n": "Logitech G Astro A50 Multi-Platform Wireless Gaming Headset + Base Station for PS5/Xbox/PC: PLAYSYNC Audio Switcher, <16bit/48kHz (Console), <24bit/48kHz (PC), 24hr Battery, 2.4GHz & BT - Black",
+    "b": "Logitech",
+    "pr": 259.99,
+    "msrp": 259.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71I-Vg61hZL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DB7ZW7J4",
+        "url": "https://www.amazon.com/dp/B0DB7ZW7J4?tag=tiereduptech-20",
+        "price": 259.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101627,
+    "c": "Headset",
+    "n": "Turtle Beach Stealth 700 Gen 3 Wireless Multiplatform Amplified Gaming Headset for Xbox Series X|S, Xbox One, PC, PS5, Mobile – 60mm Drivers, AI Noise-Cancelling Mic, Bluetooth, 80-Hr Battery – Cobalt",
+    "b": "Turtle Beach",
+    "pr": 149.99,
+    "msrp": 149.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71YL5sKvSsL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DB96KTGL",
+        "url": "https://www.amazon.com/dp/B0DB96KTGL?tag=tiereduptech-20",
+        "price": 149.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101628,
+    "c": "Headset",
+    "n": "Razer Barracuda X Chroma Wireless Gaming Headset: 2.4GHz Wireless & Bluetooth - Lightweight - Chroma RGB - 40mm Drivers - Cardioid Mic - 70 Hr Battery - for PC, Mac, PS5, Switch 2, Smartphone - Black",
+    "b": "Razer",
+    "pr": 99,
+    "msrp": 99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/716a838quEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DJDZG9KJ",
+        "url": "https://www.amazon.com/dp/B0DJDZG9KJ?tag=tiereduptech-20",
+        "price": 99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101629,
+    "c": "Headset",
+    "n": "Logitech G522 Lightspeed Wireless Gaming Headset, Full-Band Mic, Advanced Audio, Tri-Connect (Lightspeed, Bluetooth, USB A to C), LIGHTSYNC RGB, for PC & Nintendo Switch/Switch 2 – Black",
+    "b": "Logitech",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71J2KaVnbLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FFM5SP6M",
+        "url": "https://www.amazon.com/dp/B0FFM5SP6M?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101630,
+    "c": "Headset",
+    "n": "SteelSeries Arctis Nova 7P Wireless Gen 2 Gaming Headset - Real-Time App Control, 50+ HR Play, Neodymium Magnetic Drivers, Mix 2.4GHz/Bluetooth, PS5, PS4, PC, Switch 1/2, Mobile - Black",
+    "b": "SteelSeries",
+    "pr": 199.99,
+    "msrp": 199.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61IWcRe30-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FRNHBVFY",
+        "url": "https://www.amazon.com/dp/B0FRNHBVFY?tag=tiereduptech-20",
+        "price": 199.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101631,
+    "c": "Headset",
+    "n": "RK Royal Kludge HG101 Wireless Gaming Headset, 7.1 Surround Sound, Stereo Wired Headphones with Retractable Mic, Bluetooth5.3, RGB, Memory Foam Ear Pads, Works with PC, PS4, PS5, Switch, Platinum Grey",
+    "b": "Royal Kludge",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61q-6lpRRLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GMQ4ZDYD",
+        "url": "https://www.amazon.com/dp/B0GMQ4ZDYD?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101632,
+    "c": "Headset",
+    "n": "GLORIOUS GHS Eternal RGB - Stereo RGB Gaming Headset for PC, PS5, PS4, Switch - Custom Tuned Angled Drivers, Adjustable Crystal Clear Detachable Mic, USB-C - Durable, All Day/Night Comfort - White",
+    "b": "Glorious",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61iJX13kItL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GHZW75GZ",
+        "url": "https://www.amazon.com/dp/B0GHZW75GZ?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101633,
+    "c": "Headset",
+    "n": "Logitech G PRO X Wireless Lightspeed Gaming Headset with Blue VO!CE Mic Filter Tech, 50 mm PRO-G Drivers, and DTS Headphone:X 2.0 Surround Sound (Renewed)",
+    "b": "Logitech",
+    "pr": 84.99,
+    "msrp": 84.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/51j+X0scmhL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08ZW1MDYS",
+        "url": "https://www.amazon.com/dp/B08ZW1MDYS?tag=tiereduptech-20",
+        "price": 84.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101634,
+    "c": "Headset",
+    "n": "Logitech G PRO Gaming Headset for Oculus Quest 2 - Oculus Ready - Custom-Length Cable - PRO-G Precision Gaming Audio Driver - Steel and Aluminum Build - Low-Latency 3.5 mm Aux Connection",
+    "b": "Logitech",
+    "pr": 46.44,
+    "msrp": 46.44,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71-Yb7hr55L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08DCSBD1P",
+        "url": "https://www.amazon.com/dp/B08DCSBD1P?tag=tiereduptech-20",
+        "price": 46.44,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101635,
+    "c": "Headset",
+    "n": "Logitech G PRO X 2 Lightspeed Gaming Headset - Wireless/BT/USB/3.5mm, 50mm Drivers, DTS:X 7.1, Detachable Mic - PC/PS5/PS4/Switch (Renewed)",
+    "b": "Logitech",
+    "pr": 164.99,
+    "msrp": 164.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71c+YOxfTGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DMQ16T9R",
+        "url": "https://www.amazon.com/dp/B0DMQ16T9R?tag=tiereduptech-20",
+        "price": 164.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101636,
+    "c": "Headset",
+    "n": "Logitech Zone Wired Noise Cancelling Headset, Certified for Microsoft Teams with Advanced Noise-canceling mic Technology for Open Office environments, USB-C with USB-A Adapter, Graphite",
+    "b": "Microsoft",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61cxf3x-gdS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0843N4L5S",
+        "url": "https://www.amazon.com/dp/B0843N4L5S?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101637,
+    "c": "Headset",
+    "n": "EPOS Impact 1061 ANC High-Performance Bluetooth Headset for PC - Double-Sided, Advanced Noise Cancellation, EPOS AI, Super Wideband Audio, Intuitive Controls, for Professionals in Loud Workspaces",
+    "b": "EPOS",
+    "pr": 287.91,
+    "msrp": 287.91,
+    "r": 3.7,
+    "img": "https://m.media-amazon.com/images/I/41nXG38DMcL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4ZTNYQS",
+        "url": "https://www.amazon.com/dp/B0C4ZTNYQS?tag=tiereduptech-20",
+        "price": 287.91,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101638,
+    "c": "Headset",
+    "n": "Logitech G PRO X Gaming Headset (2nd Generation) with Blue Voice, DTS Headphone 7.1 and 50 mm PRO-G Drivers, for PC, Xbox One, Xbox Series X|S,PS5,PS4, Nintendo Switch, Black (Renewed)",
+    "b": "Logitech",
+    "pr": 64.38,
+    "msrp": 64.38,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/3126SFFuwVL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0849NDV6J",
+        "url": "https://www.amazon.com/dp/B0849NDV6J?tag=tiereduptech-20",
+        "price": 64.38,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101639,
+    "c": "Headset",
+    "n": "Logitech G Pro X Wired Gaming Headset with Blue Voice Technology 981-000817 (Renewed)",
+    "b": "Logitech",
+    "pr": 77.9,
+    "msrp": 69,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/41ZFCKf8GlL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B088T1KHM5",
+        "url": "https://www.amazon.com/dp/B088T1KHM5?tag=tiereduptech-20",
+        "price": 77.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101640,
+    "c": "Headset",
+    "n": "Logitech G PRO Gaming Headset for Oculus Quest 2 - Oculus Ready - Custom-Length Cable - PRO-G Precision Gaming Audio Driver - Steel and Aluminum Build - Low-Latency 3.5 mm Aux Connection (Renewed)",
+    "b": "Logitech",
+    "pr": 28.44,
+    "msrp": 28.44,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71vw-DUADKL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09BBHWXNT",
+        "url": "https://www.amazon.com/dp/B09BBHWXNT?tag=tiereduptech-20",
+        "price": 28.44,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101641,
+    "c": "Headset",
+    "n": "Logitech G PRO X 2 Lightspeed Wireless Gaming Headset: Wireless Gaming Headphones with Mic, 50mm Graphene Drivers, 2.02.0—7.1 Bluetooth/USB/3.5mm Aux for PS4/PS5/PC/Nintendo Switch - White (Renewed)",
+    "b": "Logitech",
+    "pr": 158.14,
+    "msrp": 158.14,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/61RZXdaHbSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FVGB3SQV",
+        "url": "https://www.amazon.com/dp/B0FVGB3SQV?tag=tiereduptech-20",
+        "price": 158.14,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101642,
+    "c": "Headset",
+    "n": "Logitech G PRO X 2 Lightspeed Wireless Gaming Headset: Detachable Boom Mic, 50mm Graphene Drivers, DTS:X Headphone 2.0—7.1 Surround, Bluetooth/USB/3.5mm Aux, for PC, PS5, PS4 - White (Renewed)",
+    "b": "Logitech",
+    "pr": 169.95,
+    "msrp": 169.95,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/613lZAhoN6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F1P6B7SF",
+        "url": "https://www.amazon.com/dp/B0F1P6B7SF?tag=tiereduptech-20",
+        "price": 169.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101643,
+    "c": "Headset",
+    "n": "Logitech G PRO X 2 Lightspeed Wireless Gaming Headset, 50mm Graphene Drivers, DTS:X Headphone 2.0—7.1 Surround, Bluetooth/USB/3.5mm Aux, for PC, PS5, PS4, Switch - Magenta (Renewed)",
+    "b": "Logitech",
+    "pr": 198.5,
+    "msrp": 198.5,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61jVqGTiacL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G3V45SV1",
+        "url": "https://www.amazon.com/dp/B0G3V45SV1?tag=tiereduptech-20",
+        "price": 198.5,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101644,
+    "c": "Headset",
+    "n": "Logitech G PRO X Wireless Lightspeed Gaming Headset with Blue VO!CE Mic Filter Tech, 50 mm PRO-G Drivers, and DTS Headphone:X 2.0 Surround Sound (Renewed)",
+    "b": "Logitech",
+    "pr": 99.93,
+    "msrp": 99.93,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/51EXWkoV2bL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C951SMR1",
+        "url": "https://www.amazon.com/dp/B0C951SMR1?tag=tiereduptech-20",
+        "price": 99.93,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101645,
+    "c": "Headset",
+    "n": "weishan G Pro X Cord, Detachable Gaming Headset Cable Replacement for Logitech G Pro / G433 / G233, 3.5mm(1/8\") Nylon Braided Wire with Inline Mute Switch and Volume Controller, 6ft Long",
+    "b": "Logitech",
+    "pr": 13.99,
+    "msrp": 13.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/61JrHucld4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B1PSV5B1",
+        "url": "https://www.amazon.com/dp/B0B1PSV5B1?tag=tiereduptech-20",
+        "price": 13.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101646,
+    "c": "Headset",
+    "n": "Logitech G733 Lightspeed RGB Wireless Gaming Headset with Suspension Headband, Kamisato Ayaka Special Edition, LIGHTSYNC RGB, Blue Voce mic Technology and PRO-G Audio Drivers",
+    "b": "Logitech",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71NfhZQ-FoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FLFXYJWY",
+        "url": "https://www.amazon.com/dp/B0FLFXYJWY?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101647,
+    "c": "Headset",
+    "n": "SOULWIT Cooling Gel Earpads Cushions Replacement for Logitech G Pro, G Pro X, G Prox 2, G Pro X SE Headphones, Ear Pads with Noise Isolation Foam, Added Thickness - Black",
+    "b": "Logitech",
+    "pr": 19.95,
+    "msrp": 19.95,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/81GD3n2v6LL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C6M9W219",
+        "url": "https://www.amazon.com/dp/B0C6M9W219?tag=tiereduptech-20",
+        "price": 19.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101648,
+    "c": "Headset",
+    "n": "Arctis Pro Wireless Gaming Headset steelseries - Lossless High Fidelity Wireless + Bluetooth for PS4 and PC (Renewed)",
+    "b": "SteelSeries",
+    "pr": 104.99,
+    "msrp": 104.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71Hn2WnSDOL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07DFK989V",
+        "url": "https://www.amazon.com/dp/B07DFK989V?tag=tiereduptech-20",
+        "price": 104.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101649,
+    "c": "Headset",
+    "n": "SteelSeries Arctis Nova 3P Wireless Multi-Platform Gaming Headset — Mobile App Control — 40 HR Battery — Neodymium Magnetic Drivers — 2.4GHz/Bluetooth — PS5, PS4, PC, Switch, Mobile — Black",
+    "b": "SteelSeries",
+    "pr": 91.63,
+    "msrp": 91.63,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71FEDq1Nk6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F956KS26",
+        "url": "https://www.amazon.com/dp/B0F956KS26?tag=tiereduptech-20",
+        "price": 91.63,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101650,
+    "c": "Headset",
+    "n": "SteelSeries Arctis 1 Wired Gaming Headset – Detachable ClearCast Microphone – Lightweight Steel-Reinforced Headband – For Xbox, PC, PS5, PS4, Nintendo Switch, Mobile",
+    "b": "SteelSeries",
+    "pr": 43.99,
+    "msrp": 43.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71rZa9G5IJL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07SJHG1MJ",
+        "url": "https://www.amazon.com/dp/B07SJHG1MJ?tag=tiereduptech-20",
+        "price": 43.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.628Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101651,
+    "c": "Headset",
+    "n": "SteelSeries Arctis Nova Elite - Hi-Res Wireless Gaming Headset — 96kHz/24bit — Carbon Fiber Speakers — ANC — AI Noise Rejection — App — 2.4GHz + BT — Multi-Source Mix — OmniPlay PC+PlayStation+Xbox",
+    "b": "SteelSeries",
+    "pr": 599.99,
+    "msrp": 599.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/615EIaK2SML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FQXPXRJQ",
+        "url": "https://www.amazon.com/dp/B0FQXPXRJQ?tag=tiereduptech-20",
+        "price": 599.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.628Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101652,
+    "c": "Headset",
+    "n": "SteelSeries Arctis Nova 1X Gaming Headset - Signature Arctis Sound - ClearCast Gen 2 Mic - Compatible with Xbox Series X|S, PC, Playstation, Switch, and Mobile (Renewed)",
+    "b": "SteelSeries",
+    "pr": 32.43,
+    "msrp": 32.43,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/71MRJINDIGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BYGQVTZX",
+        "url": "https://www.amazon.com/dp/B0BYGQVTZX?tag=tiereduptech-20",
+        "price": 32.43,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.628Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101653,
+    "c": "Headset",
+    "n": "SteelSeries Arctis Nova 1 Multi-System Gaming Headset, Hi-Fi Drivers, Spatial Audio, Comfort Design, Durable, Ultra Lightweight, Noise-Cancelling Mic- Black (Renewed)",
+    "b": "SteelSeries",
+    "pr": 27.99,
+    "msrp": 27.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/51MrPzNyhIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BQ8XTJG3",
+        "url": "https://www.amazon.com/dp/B0BQ8XTJG3?tag=tiereduptech-20",
+        "price": 27.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.628Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101654,
+    "c": "Headset",
+    "n": "Yealink BH74 with Stand ANC Wireless Headset with Microphone for PC, Bluetooth Headset Noise Cancelling with 6 AI Mic, 32H Talk Time&Mute Button, Microsoft Teams Premium Open Office Certified for Work",
+    "b": "Microsoft",
+    "pr": 149.9,
+    "msrp": 149.9,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51KfVCjlmYL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D9PY9YR1",
+        "url": "https://www.amazon.com/dp/B0D9PY9YR1?tag=tiereduptech-20",
+        "price": 149.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.628Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101655,
+    "c": "Headset",
+    "n": "HyperX Cloud Alpha - Gaming Headset, Dual Chamber Drivers, Legendary Comfort, Aluminum Frame, Detachable Microphone, Works on PC, PS4, PS5, Xbox One/ Series X|S, Nintendo Switch and Mobile – Red",
+    "b": "HyperX",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71++S+DNJ+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B074NBSF9N",
+        "url": "https://www.amazon.com/dp/B074NBSF9N?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.628Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101656,
+    "c": "Headset",
+    "n": "HyperX Cloud III – Wired Gaming Headset, PC, PS5, Xbox Series X|S, Angled 53mm Drivers, DTS, Memory Foam, Durable Frame, Ultra-Clear 10mm Mic, USB-C, USB-A, 3.5mm – Pink",
+    "b": "HyperX",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61g6jn8cAzL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DQQT2ZS3",
+        "url": "https://www.amazon.com/dp/B0DQQT2ZS3?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.628Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101657,
+    "c": "Headset",
+    "n": "HyperX Cloud Revolver - Gaming Headset with HyperX 7.1 Surround Sound, Signature Memory Foam, Premium Leatherette, Steel Frame, Detachable noise-cancellation microphone",
+    "b": "HyperX",
+    "pr": 124.99,
+    "msrp": 124.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/7159vN3--zL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08NSVZHXK",
+        "url": "https://www.amazon.com/dp/B08NSVZHXK?tag=tiereduptech-20",
+        "price": 124.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.629Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101658,
+    "c": "Headset",
+    "n": "HyperX Cloud III 3.5mm Wired Gaming Headsets with Mic Noise Cancelling DTS Headphone:X Memory Foam 53mm Drivers​ Aluminum Frame for PC PS4 PS5 Xbox Nintendo Mac Mobile Gaming Headphones (Renewed)",
+    "b": "HyperX",
+    "pr": 44.99,
+    "msrp": 44.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71pz2njkNRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C85GV8LY",
+        "url": "https://www.amazon.com/dp/B0C85GV8LY?tag=tiereduptech-20",
+        "price": 44.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.629Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101659,
+    "c": "Headset",
+    "n": "HyperX Cloud III – Wired Gaming Headset, PC, PS5, Xbox Series X|S, Angled 53mm Drivers, DTS, Memory Foam, Durable Frame, Ultra-Clear 10mm Mic, USB-C, USB-A, 3.5mm – Pink (Renewed)",
+    "b": "HyperX",
+    "pr": 54.17,
+    "msrp": 54.17,
+    "r": 3.7,
+    "img": "https://m.media-amazon.com/images/I/61g6jn8cAzL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FSRW4QWW",
+        "url": "https://www.amazon.com/dp/B0FSRW4QWW?tag=tiereduptech-20",
+        "price": 54.17,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.629Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101660,
+    "c": "Headset",
+    "n": "HyperX Cloud II Core Wireless Headset Gaming USB for PC Windows Computer Gamer Detachable Noise Cancelling Microphone DTS Headphones X Spatial Audio Memory Foam Ear Pads Cushion, Black (Renewed)",
+    "b": "HyperX",
+    "pr": 67,
+    "msrp": 67,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71ybtvmLmDL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CZZ5T4X4",
+        "url": "https://www.amazon.com/dp/B0CZZ5T4X4?tag=tiereduptech-20",
+        "price": 67,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.629Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101661,
+    "c": "Headset",
+    "n": "Razer BlackShark V2 Pro Wireless PlayStation Gaming Headset: 50mm Drivers - Super Wideband Mic - Noise Isolating Earcups - For PS5, Nintendo Switch 2, PC, Mac - Bluetooth, USB-C - 70hr Battery – Black",
+    "b": "Razer",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71oQ8O3G+JL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CXH38Y32",
+        "url": "https://www.amazon.com/dp/B0CXH38Y32?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.630Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101662,
+    "c": "Headset",
+    "n": "Razer BlackShark V3 Pro Wireless ANC Gaming Headset for PC: Full Band Mic - 50mm Drivers - 2.4 GHz, Bluetooth, USB, 3.5mm - Works with Mac, PS5, Nintendo Switch, Smartphone - Black (Renewed)",
+    "b": "Razer",
+    "pr": 136.62,
+    "msrp": 136.62,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/81ji6d-Z88L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FS9YN8FJ",
+        "url": "https://www.amazon.com/dp/B0FS9YN8FJ?tag=tiereduptech-20",
+        "price": 136.62,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.630Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101663,
+    "c": "Headset",
+    "n": "Razer BlackShark V2 Special Edition - Multi-Platform Wired Esports Headset (Renewed)",
+    "b": "Razer",
+    "pr": 27.95,
+    "msrp": 27.95,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/51tLY0jW1xS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B8TB3GN6",
+        "url": "https://www.amazon.com/dp/B0B8TB3GN6?tag=tiereduptech-20",
+        "price": 27.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.630Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101664,
+    "c": "Headset",
+    "n": "Blackshark V2 X Mercury Headset White Razer - RZ0403240700",
+    "b": "Razer",
+    "pr": 23.39,
+    "msrp": 23.39,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/412-FkBG8vL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CDCM38W4",
+        "url": "https://www.amazon.com/dp/B0CDCM38W4?tag=tiereduptech-20",
+        "price": 23.39,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.630Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101665,
+    "c": "Headset",
+    "n": "Razer BlackShark V3 X HyperSpeed Wireless Gaming Headset for PC: 50mm Drivers - Cardioid Mic - 2.4 GHz, Bluetooth, USB - Works with Mac, PS5, Nintendo Switch, Smartphone - Black (Renewed)",
+    "b": "Razer",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": 3.5,
+    "img": "https://m.media-amazon.com/images/I/71pDWCIirLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FWKP4ZPY",
+        "url": "https://www.amazon.com/dp/B0FWKP4ZPY?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.630Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101666,
+    "c": "Headset",
+    "n": "Razer BlackShark V3 Pro Wireless ANC Gaming Headset for Xbox: Full Band Mic - 50mm Drivers - 2.4 GHz, Bluetooth, USB, 3.5mm - Works with PC, Mac, PS5, Nintendo Switch - Black (Renewed)",
+    "b": "Razer",
+    "pr": 158.16,
+    "msrp": 158.16,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/81vmyLcovWL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FSC1FCRD",
+        "url": "https://www.amazon.com/dp/B0FSC1FCRD?tag=tiereduptech-20",
+        "price": 158.16,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.630Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101667,
+    "c": "Headset",
+    "n": "Razer BlackShark V2 X Gaming Headset: 7.1 Surround Sound Capable - 50mm Drivers - Memory Foam Cushion - for PC, PS4, Nintendo Switch - 3.5mm Headphone Jack - Classic Black (Renewed)",
+    "b": "Razer",
+    "pr": 27.95,
+    "msrp": 27.95,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/51FRJHB7XOL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08HM53C9J",
+        "url": "https://www.amazon.com/dp/B08HM53C9J?tag=tiereduptech-20",
+        "price": 27.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.630Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101668,
+    "c": "Headset",
+    "n": "Razer BlackShark V2 Pro Wireless Gaming Headset for PC, PS5, PS4, Switch, 2.4GHz RF, Bluetooth, Headphone HyperClear Super Wideband Mic, Noise-isolating Earcups, 70hr Battery Life - Black (Renewed)",
+    "b": "Razer",
+    "pr": 84.44,
+    "msrp": 84.44,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71ZTXGr2g0L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C9WCD875",
+        "url": "https://www.amazon.com/dp/B0C9WCD875?tag=tiereduptech-20",
+        "price": 84.44,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.630Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101669,
+    "c": "Headset",
+    "n": "LEFXMOPHY Blackshark V2 Mic Replacement for Razer BlackShark V2 and V2 Pro Wireless Gaming Headset 3.5mm Detachable Game Boom Microphone with Foam",
+    "b": "Razer",
+    "pr": 11.69,
+    "msrp": 11.69,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/61sge1MZEzS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B094GL3DZF",
+        "url": "https://www.amazon.com/dp/B094GL3DZF?tag=tiereduptech-20",
+        "price": 11.69,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.630Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101670,
+    "c": "Headset",
+    "n": "Razer BlackShark V2 HyperSpeed Wireless Gaming Headset - THX Spatial Audio - Bendable Mic - 50mm Drivers - 2.4GHz, Bluetooth or USB - 70 Hr Battery w/USB Type C Charging - White (Renewed)",
+    "b": "Razer",
+    "pr": 58.89,
+    "msrp": 58.89,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/5148j8zr8QL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DCCXLX7H",
+        "url": "https://www.amazon.com/dp/B0DCCXLX7H?tag=tiereduptech-20",
+        "price": 58.89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.630Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101671,
+    "c": "Headset",
+    "n": "Logitech G Astro A50 X Multi-Platform Wireless Gaming Headset + Base Station for PS5/Xbox/PC: PLAYSYNC Video & Audio Switcher, HDMI 2.1 4K 120Hz VRR, <24bit/48kHz, 24hr Battery, 2.4GHz & BT - Black",
+    "b": "Logitech",
+    "pr": 359.99,
+    "msrp": 359.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61RnU+DsObL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BRXJDQC1",
+        "url": "https://www.amazon.com/dp/B0BRXJDQC1?tag=tiereduptech-20",
+        "price": 359.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.630Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101672,
+    "c": "Headset",
+    "n": "Corsair HS60 Haptic Stereo Gaming Headset with Haptic Bass, Memory Foam Earcups, Removable Microphone, Windows Sonic Compatible, Discord-Certified for PC - Arctic Camo",
+    "b": "Arctic",
+    "pr": 123.99,
+    "msrp": 123.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/8169YUwXtdL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08JFYW4CK",
+        "url": "https://www.amazon.com/dp/B08JFYW4CK?tag=tiereduptech-20",
+        "price": 123.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.630Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101673,
+    "c": "Headset",
+    "n": "weishan HS60 Pro Mic Replacement for Corsair HS50, HS60, HS70 Gaming Headset Detachable Microphone Gaming Headset on PS5, PS4, PC, Xbox, Noise Cancelling 3.5mm Black",
+    "b": "Corsair",
+    "pr": 9.99,
+    "msrp": 9.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/51A3swP81vL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0948TWX72",
+        "url": "https://www.amazon.com/dp/B0948TWX72?tag=tiereduptech-20",
+        "price": 9.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.631Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101674,
+    "c": "Headset",
+    "n": "Corsair HS55 Stereo Wired Gaming Headset — Carbon (Renewed)",
+    "b": "Corsair",
+    "pr": 29.88,
+    "msrp": 29.88,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61hsIENgtqL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BDHTMNNZ",
+        "url": "https://www.amazon.com/dp/B0BDHTMNNZ?tag=tiereduptech-20",
+        "price": 29.88,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.631Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101675,
+    "c": "Headset",
+    "n": "SOULWIT Cooling-Gel Earpads Replacement for Corsair HS80 Max/HS80 USB Wired/HS 80 RGB Wireless Gaming Headsets, Ear Pads Cushions with High-Density Noise Isolation Foam - Black",
+    "b": "Corsair",
+    "pr": 18.95,
+    "msrp": 18.95,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71QzZa3CHAL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BLHFZQ6N",
+        "url": "https://www.amazon.com/dp/B0BLHFZQ6N?tag=tiereduptech-20",
+        "price": 18.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.631Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101676,
+    "c": "Headset",
+    "n": "ASUS ROG Kithara Gaming/Audiophile Open-Back Wired Headphones with Mic – ROG-Tuned HIFIMAN Planar Magnetic Drivers, Adjustable Headband, Extra Ear Pads, Compatible with DACs, Amps, PC, Console, Mobile",
+    "b": "ASUS",
+    "pr": 299.99,
+    "msrp": 299.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71B5EMO2G7L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GG53SPJC",
+        "url": "https://www.amazon.com/dp/B0GG53SPJC?tag=tiereduptech-20",
+        "price": 299.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.631Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101677,
+    "c": "Headset",
+    "n": "Logitech G Astro A50 X Omni-Platform Wireless Gaming Headset + Base Station for PS5, Xbox, PC PLAYSYNC Video & Audio Switcher, HDMI 2.1 4K 120Hz, 24hr Battery, 2.4GHz & BT-Black (Renewed)",
+    "b": "Logitech",
+    "pr": 245.4,
+    "msrp": 245.4,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/61RnU+DsObL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F4MR9LSD",
+        "url": "https://www.amazon.com/dp/B0F4MR9LSD?tag=tiereduptech-20",
+        "price": 245.4,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.631Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101678,
+    "c": "Headset",
+    "n": "Logitech G Astro A10 Gen 2 Cross-Platform Wired Gaming Headset for PlayStation 5/4, Xbox S|X, Nintendo Switch, PC: 3.5mm Headphone Jack, 32mm Drivers, Flip-to-Mute Mic, Over-Ear - Grey",
+    "b": "Logitech",
+    "pr": 40.99,
+    "msrp": 40.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/61gC6PBsRPL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B098JGRWFX",
+        "url": "https://www.amazon.com/dp/B098JGRWFX?tag=tiereduptech-20",
+        "price": 40.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.631Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101679,
+    "c": "Headset",
+    "n": "Logitech G Astro A50 Omni-Platform Wireless Gaming Headset + Base Station for PS5, Xbox, PC: PLAYSYNC Audio Switcher, <16 bit/48kHz (Console), <24 bit/48 kHz (PC), 2.4GHz & BT White (Renewed)",
+    "b": "Logitech",
+    "pr": 183.45,
+    "msrp": 183.45,
+    "r": 3,
+    "img": "https://m.media-amazon.com/images/I/61jPKGw2e+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F5RV73Q3",
+        "url": "https://www.amazon.com/dp/B0F5RV73Q3?tag=tiereduptech-20",
+        "price": 183.45,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.631Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101680,
+    "c": "Headset",
+    "n": "Logitech G Astro A20 X Lightspeed Wireless Gaming Headset for PS5, Xbox, Nintendo Switch/Switch 2, PC with 2-System PLAYSYNC Audio, Bluetooth, LIGHTSYNC RGB, and 48 kHz Boom Mic - Black",
+    "b": "Logitech",
+    "pr": 159.99,
+    "msrp": 159.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81iDFLaXL2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FFXZ9XQ4",
+        "url": "https://www.amazon.com/dp/B0FFXZ9XQ4?tag=tiereduptech-20",
+        "price": 159.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.631Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101681,
+    "c": "Headset",
+    "n": "Razer BlackShark V2 X Gaming Headset: 7.1 Surround Sound - 50mm Drivers - Memory Foam Cushion - for PC, PS4, PS5, Switch - 3.5mm Audio Jack - Green",
+    "b": "Razer",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71mzxWaotaL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09CLWQ45V",
+        "url": "https://www.amazon.com/dp/B09CLWQ45V?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.632Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101682,
+    "c": "Headset",
+    "n": "Logitech G Pro X SE Wired Gaming Headset with Microphone: Detachable Microphone, DTS Headphone:X 7.1, for PC, Xbox One, Xbox Series X|S, PS5, PS4, Includes USB DAC - Black",
+    "b": "Logitech",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71B-TqDhZUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CW34HBKZ",
+        "url": "https://www.amazon.com/dp/B0CW34HBKZ?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.632Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101683,
+    "c": "Headset",
+    "n": "Corsair HS35 Surround v2 Multiplatform Wired Gaming Headset – Dolby 7.1 – Flexible Omni-Directional Microphone – Universal 3.5mm Connection – PC, Mac, PS5, PS4, Xbox, Nintendo Switch, Mobile – Carbon",
+    "b": "Corsair",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71lhlzNqWKL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CY5VSLL3",
+        "url": "https://www.amazon.com/dp/B0CY5VSLL3?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.632Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101684,
+    "c": "Headset",
+    "n": "EPOS H6Pro Open Acoustic Gaming with Mic – Immersive Sound, Lightweight Comfort, and Durable Design – Works with Xbox, PS4/PS5 & PC/Windows – Green",
+    "b": "EPOS",
+    "pr": 89.89,
+    "msrp": 89.93,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/51Plm1LazoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09FPFN78X",
+        "url": "https://www.amazon.com/dp/B09FPFN78X?tag=tiereduptech-20",
+        "price": 89.89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101685,
+    "c": "Headset",
+    "n": "Corsair Virtuoso PRO Wired Open Back Gaming Headset - Detachable Uni-Directional Microphone - 50mm Graphene Drivers - 20Hz-40 kHz Frequency Response - Carbon",
+    "b": "Corsair",
+    "pr": 139.99,
+    "msrp": 139.99,
+    "r": 3.2,
+    "img": "https://m.media-amazon.com/images/I/71oH9wRQtaL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CGXTF225",
+        "url": "https://www.amazon.com/dp/B0CGXTF225?tag=tiereduptech-20",
+        "price": 139.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101686,
+    "c": "Headset",
+    "n": "Turtle Beach Atlas Air Wireless Open Back PC Gaming Headset - PC, PS5, PS4, Mobile - 24-bit High-Fidelity Audio, Broadcast Grade Mic, Bluetooth, Floating Earcup, Memory Foam Cushions, 50-Hr Battery",
+    "b": "Turtle Beach",
+    "pr": 149.99,
+    "msrp": 149.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/81TVj5ZQzGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D13VX3S6",
+        "url": "https://www.amazon.com/dp/B0D13VX3S6?tag=tiereduptech-20",
+        "price": 149.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101687,
+    "c": "Headset",
+    "n": "Audio-Technica ATH-R50X Open-Back Headphones",
+    "b": "Audio-Technica",
+    "pr": 163.56,
+    "msrp": 163.56,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71W5ryV3qsL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DSMG4K6K",
+        "url": "https://www.amazon.com/dp/B0DSMG4K6K?tag=tiereduptech-20",
+        "price": 163.56,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101688,
+    "c": "Headset",
+    "n": "SENNHEISER HD 599 Open Back Headphone, Ivory",
+    "b": "Sennheiser",
+    "pr": 148.99,
+    "msrp": 148.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71Sl54cu+2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01L1IICR2",
+        "url": "https://www.amazon.com/dp/B01L1IICR2?tag=tiereduptech-20",
+        "price": 148.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101689,
+    "c": "Headset",
+    "n": "beyerdynamic DT 990 PRO, 80 Ohm, Open Back, Over Ear, Wired Professional Studio Headphones, Gaming, Podcast, Audiophile, Mixing, 3m Straight Cable, Black with Limited Edition Black Velour Ear Pads",
+    "b": "Beyerdynamic",
+    "pr": 179.99,
+    "msrp": 179.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71HLUEeFNlL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07KFLX8HV",
+        "url": "https://www.amazon.com/dp/B07KFLX8HV?tag=tiereduptech-20",
+        "price": 179.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101690,
+    "c": "Headset",
+    "n": "beyerdynamic DT 990 PRO, 80 Ohm, Open Back, Over Ear, Wired Professional Studio Headphones, Gaming, Podcast, Audiophile, Mixing, 3m Straight Cable, Black with Gray Velour Ear Pads",
+    "b": "Beyerdynamic",
+    "pr": 179.99,
+    "msrp": 179.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71ZhWur2srL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07KFN5LL4",
+        "url": "https://www.amazon.com/dp/B07KFN5LL4?tag=tiereduptech-20",
+        "price": 179.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101691,
+    "c": "Headset",
+    "n": "Audio-Technica ATH-M20xBT Wireless Over-Ear Headphones, Black",
+    "b": "Audio-Technica",
+    "pr": 89,
+    "msrp": 89,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/8123MFd26NL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09VJJLFX9",
+        "url": "https://www.amazon.com/dp/B09VJJLFX9?tag=tiereduptech-20",
+        "price": 89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101692,
+    "c": "Headset",
+    "n": "EPOS H6Pro - Closed Acoustic Gaming Headset with Mic – Lightweight Over-Ear Design – Lift-to-Mute – Compatible with Xbox, PS4, PS5 & PC – Black",
+    "b": "EPOS",
+    "pr": 148.48,
+    "msrp": 148.48,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/51jZfDAzYRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09FPFSXSQ",
+        "url": "https://www.amazon.com/dp/B09FPFSXSQ?tag=tiereduptech-20",
+        "price": 148.48,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101693,
+    "c": "Headset",
+    "n": "Audio-Technica ATH-GL3BK Closed-Back Gaming Headset, Black",
+    "b": "Audio-Technica",
+    "pr": 109,
+    "msrp": 109,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/71mhO5mp0kL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09QNX1TMJ",
+        "url": "https://www.amazon.com/dp/B09QNX1TMJ?tag=tiereduptech-20",
+        "price": 109,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101694,
+    "c": "Headset",
+    "n": "HyperX Cloud III – Wired Gaming Headset, PC, PS5, Xbox Series X|S, Angled 53mm Drivers, DTS Spatial Audio, Memory Foam, Durable Frame, Ultra-Clear 10mm Mic, USB-C, USB-A, 3.5mm – Black",
+    "b": "HyperX",
+    "pr": 64.99,
+    "msrp": 64.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71AMEEP3HLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C3BSZ56D",
+        "url": "https://www.amazon.com/dp/B0C3BSZ56D?tag=tiereduptech-20",
+        "price": 64.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101695,
+    "c": "Headset",
+    "n": "EPOS H3 Closed Acoustic Gaming Headset with Noise-Cancelling Microphone - Plug & Play Audio - Around The Ear - Adjustable, Ergonomic - for PC, Mac, PS4, PS5, Switch, Xbox - Onyx Black",
+    "b": "EPOS",
+    "pr": 44.99,
+    "msrp": 44.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/51HGKVCFVaS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08YZ9NMB5",
+        "url": "https://www.amazon.com/dp/B08YZ9NMB5?tag=tiereduptech-20",
+        "price": 44.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101696,
+    "c": "Headset",
+    "n": "Sennheiser HD 620S Closed-Back Over-Ear Audiophile Headphones – Natural Spatial Imaging, Low Distortion, Comfortable All-Day Design, Detachable Cable – Ideal for Focused Listening, Gaming, and Desk",
+    "b": "Sennheiser",
+    "pr": 399.95,
+    "msrp": 399.95,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/51w2J0eEbKL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D38B6XWR",
+        "url": "https://www.amazon.com/dp/B0D38B6XWR?tag=tiereduptech-20",
+        "price": 399.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101697,
+    "c": "Headset",
+    "n": "EPOS H6Pro - Closed Acoustic Gaming Headset with Mic - Over-Ear - Lift-to-Mute - Xbox/PS4/PS5/PC Headset - Gaming Accessories (Green)",
+    "b": "EPOS",
+    "pr": 149,
+    "msrp": 149,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/51nnch8aNxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09FPD2TP1",
+        "url": "https://www.amazon.com/dp/B09FPD2TP1?tag=tiereduptech-20",
+        "price": 149,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101698,
+    "c": "Headset",
+    "n": "beyerdynamic MMX 300 PRO Closed Gaming Headset with Stellar.45 Driver and Condenser Microphone, Wired Gaming Headset Suitable for PC, Gaming Console, PS, Switch. Handmade in Germany, Black",
+    "b": "Beyerdynamic",
+    "pr": 379.99,
+    "msrp": 379.99,
+    "r": 3.7,
+    "img": "https://m.media-amazon.com/images/I/61xcH5O4AUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CYSWTLZY",
+        "url": "https://www.amazon.com/dp/B0CYSWTLZY?tag=tiereduptech-20",
+        "price": 379.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101699,
+    "c": "Headset",
+    "n": "JBL Quantum 100M2 - Wired Over-Ear Gaming Headset with omnidirectional, Detachable mic with Mute Option and Fabric-Covered Memory Foam Ear Cushions, Compatible with All Platforms (Black)",
+    "b": "JBL",
+    "pr": 29.95,
+    "msrp": 29.95,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71wXaRKevmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DRM949PC",
+        "url": "https://www.amazon.com/dp/B0DRM949PC?tag=tiereduptech-20",
+        "price": 29.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101700,
+    "c": "Headset",
+    "n": "Turtle Beach Recon 70 Multiplatform Gaming Headset for PS5, PS4, Xbox Series X|S, Xbox One, PC & Mobile w/ 3.5mm Wired Connection - Flip-to-Mute Mic, 40mm Speakers, Lightweight Design, Black",
+    "b": "Turtle Beach",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61DJU+529XL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CWS6WV23",
+        "url": "https://www.amazon.com/dp/B0CWS6WV23?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.633Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101701,
+    "c": "Headset",
+    "n": "SteelSeries Arctis Nova 7X Wireless Gen 2 Gaming Headset - Real-Time App Control, 50+ HR Play, Neodymium Drivers, Mix 2.4GHz/Bluetooth, Xbox, PC, PS5/PS4, Switch 1/2, Mobile - Black",
+    "b": "SteelSeries",
+    "pr": 199.99,
+    "msrp": 199.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71wGjrmGo6L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FRPH94LH",
+        "url": "https://www.amazon.com/dp/B0FRPH94LH?tag=tiereduptech-20",
+        "price": 199.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.634Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101702,
+    "c": "Headset",
+    "n": "JBL Quantum 810 Wireless - Wireless over-ear performance gaming headset with Active Noise Cancelling and Bluetooth, 43 hours of battery life, Hi-Res 50mm drivers (Black)",
+    "b": "JBL",
+    "pr": 149.96,
+    "msrp": 149.96,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/51FhI3FuoAL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09VB2JMBQ",
+        "url": "https://www.amazon.com/dp/B09VB2JMBQ?tag=tiereduptech-20",
+        "price": 149.96,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.634Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101703,
+    "c": "Headset",
+    "n": "Turtle Beach Stealth 600 Wireless Multiplatform Amplified Gaming Headset for PS5, PS4, PC, & Mobile – Bluetooth, 80-Hr Battery, Noise-Cancelling Flip-to-Mute Mic, 50mm Speakers – Black",
+    "b": "Turtle Beach",
+    "pr": 89,
+    "msrp": 89,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/611llngEBvL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CYWD9PSM",
+        "url": "https://www.amazon.com/dp/B0CYWD9PSM?tag=tiereduptech-20",
+        "price": 89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.634Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101704,
+    "c": "Headset",
+    "n": "Turtle Beach Stealth Pro II Premium Wireless Gaming Headset for Xbox Series X|S, PS5, PS4, PC - Hi-Res Audio, Dolby Atmos, Active Noise Cancellation, Simultaneous Bluetooth, 24-bit Audio - White",
+    "b": "Turtle Beach",
+    "pr": 349.99,
+    "msrp": 349.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/71XbA58hObL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GN4WQNS1",
+        "url": "https://www.amazon.com/dp/B0GN4WQNS1?tag=tiereduptech-20",
+        "price": 349.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.634Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101705,
+    "c": "Headset",
+    "n": "Audeze Maxwell 2 for Xbox, PC, Mac, Switch, and PlayStation (new Version 2026) 80 Hours Battery Life, Low-Latency Bluetooth, Dark Gray with Microsoft Security chip",
+    "b": "Microsoft",
+    "pr": 349,
+    "msrp": 349,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/51ya+B1f2UL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GNSHCPPY",
+        "url": "https://www.amazon.com/dp/B0GNSHCPPY?tag=tiereduptech-20",
+        "price": 349,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.634Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101706,
+    "c": "Headset",
+    "n": "EPOS Impact 430T Mono USB C and USB A On-Ear Headset with Dual Noise-Canceling Mics, Microsoft Teams Certified, Plug-and-Play, Zoom Compatible, Ideal for Home Office & Business Calls",
+    "b": "Microsoft",
+    "pr": 82.99,
+    "msrp": 82.99,
+    "r": 4.9,
+    "img": "https://m.media-amazon.com/images/I/61Wih2eIGSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DF7PL9N3",
+        "url": "https://www.amazon.com/dp/B0DF7PL9N3?tag=tiereduptech-20",
+        "price": 82.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.635Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101707,
+    "c": "Headset",
+    "n": "EPOS Impact 860T ANC Dual-Sided Wired Headset with Active Noise Cancellation, Microsoft Teams Certified, USB C and USB A, Super Wideband Audio, Ideal for Office Calls, Zoom, Home & Hybrid Work, Black",
+    "b": "Microsoft",
+    "pr": 139,
+    "msrp": 139,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/618-IzqxWlL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CTKSN97F",
+        "url": "https://www.amazon.com/dp/B0CTKSN97F?tag=tiereduptech-20",
+        "price": 139,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.635Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101708,
+    "c": "Headset",
+    "n": "EPOS Sennheiser Consumer Audio SC 60 USB ML (504547) - Double-Sided Business Headset | For Skype for Business | with HD Sound, Noise-Cancelling Microphone, & USB Connector (Black)",
+    "b": "Sennheiser",
+    "pr": 40.39,
+    "msrp": 40.77,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/612KoLPVsjL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B00E67UV9S",
+        "url": "https://www.amazon.com/dp/B00E67UV9S?tag=tiereduptech-20",
+        "price": 40.39,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.635Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101709,
+    "c": "Headset",
+    "n": "EPOS Impact 460T Binaural On-Ear USB C and USB A Wired Headset with Dual Noise-Canceling Mics, Microsoft Teams Certified, Plug-and-Play, Ideal for Office, Remote Work, Zoom & Business Calls",
+    "b": "Microsoft",
+    "pr": 82.82,
+    "msrp": 82.82,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71A1wzCSmJL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DF7PXFNF",
+        "url": "https://www.amazon.com/dp/B0DF7PXFNF?tag=tiereduptech-20",
+        "price": 82.82,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.635Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101710,
+    "c": "Headset",
+    "n": "EPOS Impact 1061T ANC - Premium Open Office Headset with Hybrid Adaptive ANC, EPOS AI™ Microphone Technology, and Multipoint Connectivity",
+    "b": "EPOS",
+    "pr": 295.03,
+    "msrp": 295.03,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61VGlQKMDWL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4ZMTSTQ",
+        "url": "https://www.amazon.com/dp/B0C4ZMTSTQ?tag=tiereduptech-20",
+        "price": 295.03,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.635Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101711,
+    "c": "Headset",
+    "n": "EPOS Impact 1061T - Enhanced Open Office Headset with Hybrid ANC, EPOS AI™ Microphone, and Multipoint Connectivity",
+    "b": "EPOS",
+    "pr": 210.19,
+    "msrp": 210.19,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/61rHfiOVrlL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4ZJQMNX",
+        "url": "https://www.amazon.com/dp/B0C4ZJQMNX?tag=tiereduptech-20",
+        "price": 210.19,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.635Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101712,
+    "c": "Headset",
+    "n": "EPOS Impact 860T Double-Sided Wired USB C and USB A Headset with Noise-Canceling Mic, Microsoft Teams Certified, Super Wideband Audio, Comfortable Fit, Ideal for Business & Home Office Professionals",
+    "b": "Microsoft",
+    "pr": 144.13,
+    "msrp": 144.13,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/610+pf-8S3L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CTKSZKM7",
+        "url": "https://www.amazon.com/dp/B0CTKSZKM7?tag=tiereduptech-20",
+        "price": 144.13,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.635Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101713,
+    "c": "Headset",
+    "n": "EPOS Impact 860 ANC Double-Sided Wired Headset with Active Noise Cancellation, USB C & USB A, Lightweight, Comfortable Fit, Microsoft Teams & Zoom Compatible for Office Work, Black",
+    "b": "Microsoft",
+    "pr": 164.64,
+    "msrp": 164.64,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/61gyJL1qdFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CTKQJXXG",
+        "url": "https://www.amazon.com/dp/B0CTKQJXXG?tag=tiereduptech-20",
+        "price": 164.64,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.635Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101714,
+    "c": "Headset",
+    "n": "EPOS Impact 1060T ANC Adaptive Noise Cancelling Wireless Headset for PC with Active Noise Cancellation, EPOS AI™ Mic, Super Wideband Audio, Bluetooth, Wireless Charging, Microsoft Teams Certified",
+    "b": "EPOS",
+    "pr": 244.94,
+    "msrp": 244.94,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/51bG+xa9fKL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4ZTNMC1",
+        "url": "https://www.amazon.com/dp/B0C4ZTNMC1?tag=tiereduptech-20",
+        "price": 244.94,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.636Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101715,
+    "c": "Headset",
+    "n": "Sennheiser PC 8 USB - Stereo USB Headset for PC and MAC with In-line Volume and Mute Control - Black",
+    "b": "Sennheiser",
+    "pr": 42.93,
+    "msrp": 42.93,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61HJ4vlxiLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B005HWEZGG",
+        "url": "https://www.amazon.com/dp/B005HWEZGG?tag=tiereduptech-20",
+        "price": 42.93,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.636Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101716,
+    "c": "Headset",
+    "n": "EPOS Sennheiser SC 30 USB ML (504546) - Single-Sided Business Headset | For Skype for Business | with HD Sound, Noise-Cancelling Microphone, & USB Connector (Black)",
+    "b": "Sennheiser",
+    "pr": 37.78,
+    "msrp": 37.78,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61jOKrLEvSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B00E67S6ZY",
+        "url": "https://www.amazon.com/dp/B00E67S6ZY?tag=tiereduptech-20",
+        "price": 37.78,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.636Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101717,
+    "c": "Headset",
+    "n": "EPOS Adapt 160 USB II - Wired, Double-Sided, UC Optimized Headset with USB Connectivity - Superior Stereo Sound - Enhanced Comfort - Call Control - Black",
+    "b": "EPOS",
+    "pr": 68.43,
+    "msrp": 68.43,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/714esEQTXyL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B092KB7L8X",
+        "url": "https://www.amazon.com/dp/B092KB7L8X?tag=tiereduptech-20",
+        "price": 68.43,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.636Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101718,
+    "c": "Headset",
+    "n": "Yealink BH70 Mono Wireless Bluetooth Headset with Microphone for Work, up to 35h Talking, Native Bluetooth via Microsoft Teams Certified, Compatible with Cisco Webex & Jabber, Zoom, Google Meeting",
+    "b": "Microsoft",
+    "pr": 106.99,
+    "msrp": 106.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/517Vpzu5fgL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CNW8DCG7",
+        "url": "https://www.amazon.com/dp/B0CNW8DCG7?tag=tiereduptech-20",
+        "price": 106.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.636Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101719,
+    "c": "Microphone",
+    "n": "Logitech Creators Blue Yeti USB Microphone for PC, Mac, Gaming, Streaming, Podcasting, Studio and Computer Condenser Mic with Blue VO!CE Effects, 4 Pickup Patterns, Plug and Play - Midnight Blue",
+    "b": "Logitech",
+    "pr": 104.49,
+    "msrp": 104.49,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61rGxyu5lUL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01LY6Z2M6",
+        "url": "https://www.amazon.com/dp/B01LY6Z2M6?tag=tiereduptech-20",
+        "price": 104.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.636Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101720,
+    "c": "Microphone",
+    "n": "RØDE PodMic USB Versatile Dynamic Broadcast Microphone With XLR and USB Connectivity for Podcasting, Streaming, Gaming, Music-Making and Content Creation (Black)",
+    "b": "Rode",
+    "pr": 190,
+    "msrp": 190,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61ElAcEsHiL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BQM4TKF7",
+        "url": "https://www.amazon.com/dp/B0BQM4TKF7?tag=tiereduptech-20",
+        "price": 190,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.636Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101721,
+    "c": "Microphone",
+    "n": "Shure MV7+ Podcast Dynamic Microphone with Stand – OBS Certified, Enhanced Audio, LED Panel, USB-C & XLR Outputs, Auto Level Mode, Digital Pop Filter – for Podcasting, Streaming, and Recording, Black",
+    "b": "Shure",
+    "pr": 287,
+    "msrp": 287,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61oeY1zn4iL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CTJ8BSWN",
+        "url": "https://www.amazon.com/dp/B0CTJ8BSWN?tag=tiereduptech-20",
+        "price": 287,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.636Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101722,
+    "c": "Microphone",
+    "n": "SENNHEISER Professional Profile - USB Cardioid Condenser Microphone & Table Stand, 1.2 m USB-C Cable - Mute Button, Built-in Headphone Jack, Gain, Mix & Volume Control, for PC & Mac,Black",
+    "b": "Sennheiser",
+    "pr": 99,
+    "msrp": 99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51QZ0rHYw6L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BTPYCD86",
+        "url": "https://www.amazon.com/dp/B0BTPYCD86?tag=tiereduptech-20",
+        "price": 99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.636Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101723,
+    "c": "Microphone",
+    "n": "Shure MV6 Gaming Microphone – Dynamic USB Mic for PC Gaming & Streaming with Tap-to-Mute, Noise Cancellation, Desktop Stand & 3.5mm Headphone Monitoring, Black",
+    "b": "Shure",
+    "pr": 169,
+    "msrp": 169,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61u0AqBTp3L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DBJ5DBL8",
+        "url": "https://www.amazon.com/dp/B0DBJ5DBL8?tag=tiereduptech-20",
+        "price": 169,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.636Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101724,
+    "c": "Microphone",
+    "n": "RØDE NT-USB Mini Versatile Studio-quality Condenser USB Microphone with Free Software for Podcasting, Streaming, Gaming, Music Production, Vocal and Instrument Recording,Black",
+    "b": "Rode",
+    "pr": 103,
+    "msrp": 103,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/51mi31NUkvL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B084P1CXFD",
+        "url": "https://www.amazon.com/dp/B084P1CXFD?tag=tiereduptech-20",
+        "price": 103,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.636Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101725,
+    "c": "Microphone",
+    "n": "Razer Seiren V3 Mini USB Microphone: Condenser Mic - Supercardioid Pickup Pattern - Tap-to-Mute Sensor with LED Indicator - Shock Absorber - Ultra Compact - PC, Discord, OBS Studio, XSplit - Black",
+    "b": "Razer",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61YoVaG-ShL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CT787NLW",
+        "url": "https://www.amazon.com/dp/B0CT787NLW?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.637Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101726,
+    "c": "Microphone",
+    "n": "HyperX SoloCast 2 – Gaming USB Condenser Mic for PC, USB-C to USB-A, Built-in Pop Filter, Internal Shock Mount, Plug and Play, 24-bit / 96kHz, Compact Tiltable Stand – Black",
+    "b": "HyperX",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71vRU5Ka7EL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FLKJ7FH7",
+        "url": "https://www.amazon.com/dp/B0FLKJ7FH7?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.637Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101727,
+    "c": "Microphone",
+    "n": "HyperX QuadCast 2 – USB Microphone for Gaming, Streaming and Podcasting, with On-Board Controls, LED Lighting, Removable Shock Mount, PC, Mac, PS5, PS4, USB-C - Black",
+    "b": "HyperX",
+    "pr": 114.99,
+    "msrp": 114.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71qTtU45xSL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D9MCK4R8",
+        "url": "https://www.amazon.com/dp/B0D9MCK4R8?tag=tiereduptech-20",
+        "price": 114.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.637Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101728,
+    "c": "Microphone",
+    "n": "RØDE NT1 5th Gen Large-Diaphragm Studio Condenser Microphone - XLR & USB Outputs - Shock Mount & Pop Filter Included - Music Production, Vocal Recording, Podcasting - Black - Professional Audio",
+    "b": "Rode",
+    "pr": 216.37,
+    "msrp": 216.37,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51-vfZouwQL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BQHHZ1QQ",
+        "url": "https://www.amazon.com/dp/B0BQHHZ1QQ?tag=tiereduptech-20",
+        "price": 216.37,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.637Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101729,
+    "c": "Microphone",
+    "n": "Logitech Creators Blue Yeti USB Microphone for PC, Mac, Gaming, Recording, Streaming, Podcasting, Studio and Computer Condenser Mic with Blue VO!CE Effects, 4 Pickup Patterns, Plug and Play - Silver",
+    "b": "Logitech",
+    "pr": 98.99,
+    "msrp": 98.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61GRjBQF0EL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B002VA464S",
+        "url": "https://www.amazon.com/dp/B002VA464S?tag=tiereduptech-20",
+        "price": 98.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.637Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101730,
+    "c": "Microphone",
+    "n": "Blue Yeti Nano Premium USB Microphone - Shadow Grey (Renewed)",
+    "b": "Blue",
+    "pr": 55.99,
+    "msrp": 55.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61spUnYyIwL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07X5JNT3F",
+        "url": "https://www.amazon.com/dp/B07X5JNT3F?tag=tiereduptech-20",
+        "price": 55.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.637Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101731,
+    "c": "Microphone",
+    "n": "Logitech for Creators Blue Yeti Nano Premium USB Mic for Recording and Streaming – Shadow Gray (Renewed)",
+    "b": "Logitech",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71vd1Q4QchL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CKS1YFK9",
+        "url": "https://www.amazon.com/dp/B0CKS1YFK9?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.637Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101732,
+    "c": "Microphone",
+    "n": "Blue Yeti USB Microphone - Blackout Edition (Renewed)",
+    "b": "Blue",
+    "pr": 77,
+    "msrp": 77,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61egnO8q6ZL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07GR31BZZ",
+        "url": "https://www.amazon.com/dp/B07GR31BZZ?tag=tiereduptech-20",
+        "price": 77,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.637Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101733,
+    "c": "Microphone",
+    "n": "Logitech for Creators Blue Yeti Nano USB Microphone for Gaming, Streaming, Podcasting, Twitch, YouTube, Discord, Recording for PC and Mac, Plug & Play -Blackout",
+    "b": "Logitech",
+    "pr": 99.53,
+    "msrp": 99.53,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/710MINfDRFL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07QLNYBG9",
+        "url": "https://www.amazon.com/dp/B07QLNYBG9?tag=tiereduptech-20",
+        "price": 99.53,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.637Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101734,
+    "c": "Microphone",
+    "n": "Blue Yeti USB Microphone - Whiteout (Renewed)",
+    "b": "Blue",
+    "pr": 89,
+    "msrp": 89,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71lfqWQTirL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07T88Q4ZG",
+        "url": "https://www.amazon.com/dp/B07T88Q4ZG?tag=tiereduptech-20",
+        "price": 89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.637Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101735,
+    "c": "Microphone",
+    "n": "Logitech for Creators Blue Yeti Nano USB Microphone for Gaming, Streaming, Podcasting,Twitch, YouTube, Discord, Recording for PC and Mac, Plug & Play - Shadow Grey",
+    "b": "Logitech",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71M8VZSVlvL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07DTTGZ7M",
+        "url": "https://www.amazon.com/dp/B07DTTGZ7M?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.637Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101736,
+    "c": "Microphone",
+    "n": "Blue Yeti USB Microphone - Midnight Blue (Renewed)",
+    "b": "Blue",
+    "pr": 89,
+    "msrp": 89,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71sdI-UZk8L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07SYKM6NJ",
+        "url": "https://www.amazon.com/dp/B07SYKM6NJ?tag=tiereduptech-20",
+        "price": 89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.638Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101737,
+    "c": "Microphone",
+    "n": "Blue Yeti USB Mic for Recording & Streaming on PC and Mac, 3 Condenser Capsules, 4 Pickup Patterns, Headphone Output and Volume Control, Mic Gain Control, Adjustable Stand - Silver (Renewed)",
+    "b": "Blue",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51ZZV+k9WXL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09CCXPX51",
+        "url": "https://www.amazon.com/dp/B09CCXPX51?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.638Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101738,
+    "c": "Microphone",
+    "n": "Blue Yeti Nano Premium USB Mic for Recording and Streaming - Blackout (Renewed)",
+    "b": "Blue",
+    "pr": 54.99,
+    "msrp": 54.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/710MINfDRFL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08Y869HXF",
+        "url": "https://www.amazon.com/dp/B08Y869HXF?tag=tiereduptech-20",
+        "price": 54.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.638Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101739,
+    "c": "Microphone",
+    "n": "Logitech for Creators Vocal Condenser Microphone, USB Type-A, Blackout (988-000521) (Renewed)",
+    "b": "Logitech",
+    "pr": 74.99,
+    "msrp": 74.99,
+    "r": 3.6,
+    "img": "https://m.media-amazon.com/images/I/71M3gIgPhhL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F9Z4CKWG",
+        "url": "https://www.amazon.com/dp/B0F9Z4CKWG?tag=tiereduptech-20",
+        "price": 74.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.638Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101740,
+    "c": "Microphone",
+    "n": "Logitech for Creators Blue Snowball iCE USB Microphone - White (Renewed)",
+    "b": "Logitech",
+    "pr": 36,
+    "msrp": 36,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51jrJHOyw3L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CGS28223",
+        "url": "https://www.amazon.com/dp/B0CGS28223?tag=tiereduptech-20",
+        "price": 36,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.638Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101741,
+    "c": "Microphone",
+    "n": "Blue Yeti Nano Premium USB Mic for Recording and Streaming - Vivid Blue (Renewed)",
+    "b": "Blue",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61PmvuNeRSL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B085X4CLZK",
+        "url": "https://www.amazon.com/dp/B085X4CLZK?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.638Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101742,
+    "c": "Microphone",
+    "n": "Blue Yeti USB Microphone, Silver (Renewed)",
+    "b": "Blue",
+    "pr": 89,
+    "msrp": 89,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51B+PgXgbgL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01LX1N2WT",
+        "url": "https://www.amazon.com/dp/B01LX1N2WT?tag=tiereduptech-20",
+        "price": 89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.638Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101743,
+    "c": "Microphone",
+    "n": "Blue Yeti USB Microphone - Slate (Renewed)",
+    "b": "Blue",
+    "pr": 73.99,
+    "msrp": 73.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61XGoGoZvXL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B085X4PY1K",
+        "url": "https://www.amazon.com/dp/B085X4PY1K?tag=tiereduptech-20",
+        "price": 73.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.638Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101744,
+    "c": "Microphone",
+    "n": "Logitech G Yeti GX Dynamic RGB Gaming Microphone, Podcast with LIGHTSYNC, Blue VO!CE, G HUB Control, Supercardioid, USB Plug and Play on PC/Mac - Black (Renewed)",
+    "b": "Logitech",
+    "pr": 89.7,
+    "msrp": 89.25,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61YTNgk4vUL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D9CFFCFJ",
+        "url": "https://www.amazon.com/dp/B0D9CFFCFJ?tag=tiereduptech-20",
+        "price": 89.7,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.638Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101745,
+    "c": "Microphone",
+    "n": "HyperX QuadCast 2 – USB Microphone for Gaming, Streaming and Podcasting, with On-Board Controls, LED Lighting, Removable Shock Mount, PC, Mac, PS5, PS4, USB-C - Black (Renewed)",
+    "b": "HyperX",
+    "pr": 84.54,
+    "msrp": 84.54,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71jnF7+JQrL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F3K1BGVF",
+        "url": "https://www.amazon.com/dp/B0F3K1BGVF?tag=tiereduptech-20",
+        "price": 84.54,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.638Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101746,
+    "c": "Microphone",
+    "n": "HyperX QuadCast S RGB USB Condenser Microphone for PC, PS4 and Mac, Anti-Vibration Shock Mount, Four Polar Patterns, Pop Filter, Gain Control, Gaming, Streaming, Podcasts (Renewed)",
+    "b": "HyperX",
+    "pr": 82.99,
+    "msrp": 82.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61QDm8yvIKL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08XC4M4Z3",
+        "url": "https://www.amazon.com/dp/B08XC4M4Z3?tag=tiereduptech-20",
+        "price": 82.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.638Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101747,
+    "c": "Microphone",
+    "n": "HyperX QuadCast USB Condenser Gaming Microphone for PC PS5 PS4 Mac Computer Streaming Recording Podcast Mic Tap to Mute LED Indicator Four Polar Patterns Shock Mount Pop Filter, Red 4P5P6AA (Renewed)",
+    "b": "HyperX",
+    "pr": 74.95,
+    "msrp": 74.95,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71nozlRTz3L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0881V9FBG",
+        "url": "https://www.amazon.com/dp/B0881V9FBG?tag=tiereduptech-20",
+        "price": 74.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.638Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101748,
+    "c": "Microphone",
+    "n": "QuadCast Boom Arm, Mic Arm for Blue Yeti HyperX QuadCast SoloCast Fifine AM8 and Most Microphone, Mic Stand Desk with 3/8\" to 5/8\" Adapter by SUNMON",
+    "b": "HyperX",
+    "pr": 19.99,
+    "msrp": 19.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71pIO9sveFL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08PYS1YKW",
+        "url": "https://www.amazon.com/dp/B08PYS1YKW?tag=tiereduptech-20",
+        "price": 19.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.638Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101749,
+    "c": "Microphone",
+    "n": "QuadCast 2 Boom Arm, Mic Arm Microphone Arm for HyperX QuadCast 2 with HyperX QuadCast 2 Pop Filter, 3/8\" to 5/8\" Adapter, by SUNMON",
+    "b": "HyperX",
+    "pr": 21.99,
+    "msrp": 21.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/714z2H6AVZL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DM26V4JZ",
+        "url": "https://www.amazon.com/dp/B0DM26V4JZ?tag=tiereduptech-20",
+        "price": 21.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.638Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101750,
+    "c": "Microphone",
+    "n": "SUNMON HyperX QuadCast Boom Arm - Upgraded Heavy Duty Mic Arm with HyperX QuadCast Pop Filter, 360° Rotatable Microphone Arm for QuadCast S",
+    "b": "HyperX",
+    "pr": 65.99,
+    "msrp": 65.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61djfE+nDvL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C5LGFQJJ",
+        "url": "https://www.amazon.com/dp/B0C5LGFQJJ?tag=tiereduptech-20",
+        "price": 65.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101751,
+    "c": "Microphone",
+    "n": "Microphone Windscreen Pop Filter Compatible with HyperX QuadCast - Mic Foam Cover with Furry Windscreen Muff for HyperX QuadCast S，QuadCast S White (2 Pack)",
+    "b": "HyperX",
+    "pr": 15.99,
+    "msrp": 15.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/810whx8sBML._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B7N9ZCKD",
+        "url": "https://www.amazon.com/dp/B0B7N9ZCKD?tag=tiereduptech-20",
+        "price": 15.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101752,
+    "c": "Microphone",
+    "n": "For HyperX QuadCast 2 Boom Arm - Mic Arm Compatible with Hyper x QuadCast, Microphone Boom Arm with Cable Ties, Improve Sound Quality, Mic Boom Arm for Hyperx QuadCast by SUNMON",
+    "b": "HyperX",
+    "pr": 24.99,
+    "msrp": 24.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71VNVU18YEL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DHJN12QL",
+        "url": "https://www.amazon.com/dp/B0DHJN12QL?tag=tiereduptech-20",
+        "price": 24.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101753,
+    "c": "Microphone",
+    "n": "InnoGear Boom Arm Microphone Mic Stand for Blue Yeti HyperX QuadCast SoloCast Snowball Fifine Shure SM7B and Other Mic, Black",
+    "b": "HyperX",
+    "pr": 19.99,
+    "msrp": 19.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/718YT26JC8L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01L3LL95O",
+        "url": "https://www.amazon.com/dp/B01L3LL95O?tag=tiereduptech-20",
+        "price": 19.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101754,
+    "c": "Microphone",
+    "n": "SUNMON QuadCast 2 Mic Pop Filter, Mic Windscreen Compatible with HyperX QuadCast 2 Microphone - Mic Foam Noise Reduction,Improved Sound Quality",
+    "b": "HyperX",
+    "pr": 9.99,
+    "msrp": 9.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71I4ITeqNrL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DM27PH8T",
+        "url": "https://www.amazon.com/dp/B0DM27PH8T?tag=tiereduptech-20",
+        "price": 9.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101755,
+    "c": "Microphone",
+    "n": "HyperX SoloCast USB Condenser Microphone Tap-to-Mute Sensor Card for Gaming Streaming Podcasts Twitch YouTube Discord - Black (Renewed)",
+    "b": "HyperX",
+    "pr": 30.99,
+    "msrp": 30.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61qh7VG4pCL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08R2CZ9VD",
+        "url": "https://www.amazon.com/dp/B08R2CZ9VD?tag=tiereduptech-20",
+        "price": 30.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101756,
+    "c": "Microphone",
+    "n": "Microphone Arm,Aokeo AK-58i Desk Low Profile Mic Boom Arm Stand,Suitable For Blue Yeti,Snowball iCE,HyperX QuadCast,SoloCast,Elgato Wave,Etc",
+    "b": "HyperX",
+    "pr": 46.99,
+    "msrp": 46.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61jBy4dK+1L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F18NTV4F",
+        "url": "https://www.amazon.com/dp/B0F18NTV4F?tag=tiereduptech-20",
+        "price": 46.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101757,
+    "c": "Microphone",
+    "n": "Foam Windscreen for HyperX QuadCast S - Microphone Pop Filter for Hyper X Quad Cast USB Mic - Pop Guard Mic Cover Filters Recording Vibrations and White Noises",
+    "b": "HyperX",
+    "pr": 13.99,
+    "msrp": 13.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/81D37ZVwI0L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0934W4LF3",
+        "url": "https://www.amazon.com/dp/B0934W4LF3?tag=tiereduptech-20",
+        "price": 13.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101758,
+    "c": "Microphone",
+    "n": "Microphone Arm,Aokeo AK-55 Desk Low Profile Adjustable Mic Boom Arm Stand,Suitable For Blue Yeti,Snowball iCE, HyperX QuadCast,SoloCast,Elgato Wave,Etc",
+    "b": "HyperX",
+    "pr": 38.99,
+    "msrp": 38.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51aJ99y9+mL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DT3RQ4GR",
+        "url": "https://www.amazon.com/dp/B0DT3RQ4GR?tag=tiereduptech-20",
+        "price": 38.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101759,
+    "c": "Microphone",
+    "n": "SUNMON HyperX QuadCast Pop Filter Windscreen Compatible with HyperX QuadCast S Microphone - Mic Foam Windscreen Noise Reduction,Improved Sound Quality, Microphone Pop Filter for HyperX QuadCast",
+    "b": "HyperX",
+    "pr": 10.99,
+    "msrp": 10.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71lL5+SQqgL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09V12TN54",
+        "url": "https://www.amazon.com/dp/B09V12TN54?tag=tiereduptech-20",
+        "price": 10.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101760,
+    "c": "Microphone",
+    "n": "SUNMON HyperX QuadCast Microphone Mount Adapter for Hyper x QuadCast, Replacement Kit for HyperX QuadCast S Mount Adapter，Mic Arm Adapter for 3/8 \"HyperX QuadCast Boom Arm",
+    "b": "HyperX",
+    "pr": 8.99,
+    "msrp": 8.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61LxnmkxTSL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CMTLD3CD",
+        "url": "https://www.amazon.com/dp/B0CMTLD3CD?tag=tiereduptech-20",
+        "price": 8.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101761,
+    "c": "Microphone",
+    "n": "YOUSHARES QuadCast Microphone Windscreen, Furry Wind Cover Microphone Wind Shield Compatible with HyperX QuadCast Mic and HyperX QuadCast S microfono for Filter Ambient and Breathing Winds",
+    "b": "HyperX",
+    "pr": 9.95,
+    "msrp": 9.95,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/81whP0r1UNL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B7MM3RS6",
+        "url": "https://www.amazon.com/dp/B0B7MM3RS6?tag=tiereduptech-20",
+        "price": 9.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101762,
+    "c": "Microphone",
+    "n": "White Boom Arm for Hyperx Quadcast S, Adjustable Hyperx Quadcast White Mic Stand Microphone Arm Compatible with Hyperx Quadcast with Pop Filter,Mic Cover, By ChromLives",
+    "b": "HyperX",
+    "pr": 23.99,
+    "msrp": 23.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/6103DFfQo+L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CCCYPKQ1",
+        "url": "https://www.amazon.com/dp/B0CCCYPKQ1?tag=tiereduptech-20",
+        "price": 23.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101763,
+    "c": "Microphone",
+    "n": "Portable Mic-Tripod-Stand, Metal Desktop Microphone Stand Compatible with HyperX Solocast,Quadcast-2-S,Duocast,Flipcast Microphones",
+    "b": "HyperX",
+    "pr": 13.99,
+    "msrp": 13.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71KOx9AYuSL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G3WRWTLL",
+        "url": "https://www.amazon.com/dp/B0G3WRWTLL?tag=tiereduptech-20",
+        "price": 13.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101764,
+    "c": "Microphone",
+    "n": "For Hyperx Quadcast Boom Arm, Boom Scissor Arm For Hyperx Quadcast S, Adjustable Suspension Boom Scissor Arm Stand for RGB USB Condenser Microphone Hyperx Solocast",
+    "b": "HyperX",
+    "pr": 9.99,
+    "msrp": 9.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61VhgRbmqxL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CQ2X6CQM",
+        "url": "https://www.amazon.com/dp/B0CQ2X6CQM?tag=tiereduptech-20",
+        "price": 9.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101765,
+    "c": "Microphone",
+    "n": "InnoGear Mic Boom Arm Microphone Stand Cable Management for Blue Yeti FIFINE AM8 K669B HyperX QuadCast S SoloCast AT2020 Shure SM7B MV7 and Other Microphone",
+    "b": "HyperX",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61wgsf749hL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BJV5S52N",
+        "url": "https://www.amazon.com/dp/B0BJV5S52N?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.639Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101766,
+    "c": "Microphone",
+    "n": "InnoGear Microphone Stand Mic Boom Arm for Blue Yeti HyperX QuadCast S SoloCast Snowball Fifine K669B and other Mic, with Shock Mount Windscreen Pop Filter Mic Clip Holder Cable Ties, Large",
+    "b": "HyperX",
+    "pr": 26.99,
+    "msrp": 26.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71aayhMpdKL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08XYZGVGS",
+        "url": "https://www.amazon.com/dp/B08XYZGVGS?tag=tiereduptech-20",
+        "price": 26.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.640Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101767,
+    "c": "Microphone",
+    "n": "Shure MV88 USB-C Microphone for Mobile Recording, Portable Mic for Vlogging with Auto Level Mode, Real-Time Denoiser for Smart Noise Cancelling & 4 Polar Patterns, Black",
+    "b": "Shure",
+    "pr": 159,
+    "msrp": 159,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71cvBnNRP2L._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G175GYX1",
+        "url": "https://www.amazon.com/dp/B0G175GYX1?tag=tiereduptech-20",
+        "price": 159,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.640Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101768,
+    "c": "Microphone",
+    "n": "MV7 MV7X MV7+ Boom Arm - Mic Arm with Foam Cover Windscreen Compatible with Shure MV7 and Shure MV7X and Shure MV7+ Microphone with Pop Filter by YOUSHARES",
+    "b": "Shure",
+    "pr": 19.99,
+    "msrp": 19.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/718LQkAOcEL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08NVGVZ7V",
+        "url": "https://www.amazon.com/dp/B08NVGVZ7V?tag=tiereduptech-20",
+        "price": 19.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.640Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101769,
+    "c": "Microphone",
+    "n": "Short Mic Stand Desk, Ultra Low 5 Inch Adjustable, 6.6lbs Load Capacity, All-Metal Desktop Microphone Stand Table for Shure SM7B SM7dB MV7+ MV7X MV6, Fifine Yeti Rode PodMic MAONO",
+    "b": "Shure",
+    "pr": 32.99,
+    "msrp": 32.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61E-m2CT4aL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GCYS7GGT",
+        "url": "https://www.amazon.com/dp/B0GCYS7GGT?tag=tiereduptech-20",
+        "price": 32.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.640Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101770,
+    "c": "Microphone",
+    "n": "Low Profile Boom Arm (Design for Heavy Mic) 6.6lbs Load Capacity, Stable Gear Lock Structure Never Sags, Metal Microphone Stand Desk Mount for Shure SM7B MV7+, Blue Yeti,Rode PodMic",
+    "b": "Shure",
+    "pr": 47.99,
+    "msrp": 47.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71Qbjhk4eOL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F4KMF64P",
+        "url": "https://www.amazon.com/dp/B0F4KMF64P?tag=tiereduptech-20",
+        "price": 47.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.640Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101771,
+    "c": "Microphone",
+    "n": "Shure by Gator Premium Low-Profile Desktop Mic Boom Stand - Fully Adjustable for Podcast, Streaming, and Home Office Setups (SH-BROADCAST2)",
+    "b": "Shure",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/61Clpt7JxcL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DKQLMT7W",
+        "url": "https://www.amazon.com/dp/B0DKQLMT7W?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.641Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101772,
+    "c": "Microphone",
+    "n": "LTGEM Case Compatible with Shure MV7+ Podcast Dynamic Microphone, Case Only",
+    "b": "Shure",
+    "pr": 23.99,
+    "msrp": 23.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/81JDw7ZuM4L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D4H5WXWB",
+        "url": "https://www.amazon.com/dp/B0D4H5WXWB?tag=tiereduptech-20",
+        "price": 23.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.641Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101773,
+    "c": "Microphone",
+    "n": "Shure by Gator Deluxe Articulating Desktop Podcasting Mic Boom Arm with Cable Management Channel; (SH-BROADCAST1)",
+    "b": "Shure",
+    "pr": 119.99,
+    "msrp": 119.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/615Ego7TqwL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4YGB5PP",
+        "url": "https://www.amazon.com/dp/B0C4YGB5PP?tag=tiereduptech-20",
+        "price": 119.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.641Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101774,
+    "c": "Microphone",
+    "n": "Desktop Microphone Stand for Shure MV7/MV7+, Premium Low-Profile Detachable Microphone Base with Locking Nut, Secure & Space-Saving Desktop Stand for Shure MV7 and MV7+ Podcast Mic​",
+    "b": "Shure",
+    "pr": 25.99,
+    "msrp": 25.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71mL0ldZwbL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJ81Q6QL",
+        "url": "https://www.amazon.com/dp/B0FJ81Q6QL?tag=tiereduptech-20",
+        "price": 25.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.641Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101775,
+    "c": "Microphone",
+    "n": "RØDE NT-USB+ Professional-Grade USB Condenser Microphone For Recording Studio Quality Audio Directly To A Computer Or Mobile Device, Black",
+    "b": "Rode",
+    "pr": 157,
+    "msrp": 157,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51Qshd1JNaL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B00MMKQOEM",
+        "url": "https://www.amazon.com/dp/B00MMKQOEM?tag=tiereduptech-20",
+        "price": 157,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.641Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101776,
+    "c": "Microphone",
+    "n": "Rode NT-USB-Mini USB Microphone with Detachable Magnetic Stand, Built-in Pop Filter, Headphone Amplifier and StreamEye Polishing Cloth",
+    "b": "Rode",
+    "pr": 109,
+    "msrp": 109,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/51FHdL6ML3L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09GPQZW2R",
+        "url": "https://www.amazon.com/dp/B09GPQZW2R?tag=tiereduptech-20",
+        "price": 109,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.641Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101777,
+    "c": "Microphone",
+    "n": "Rode NT-USB+ Versatile Studio-Quality USB Microphone with StreamEye Microphone Boom Arm and Polishing Cloth",
+    "b": "Rode",
+    "pr": 189.99,
+    "msrp": 189.99,
+    "r": 3.5,
+    "img": "https://m.media-amazon.com/images/I/81qaD0EjRzL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DY59M46T",
+        "url": "https://www.amazon.com/dp/B0DY59M46T?tag=tiereduptech-20",
+        "price": 189.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.641Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101778,
+    "c": "Microphone",
+    "n": "SUNMON Rode NT-USB Mic Boom Arm - Mic Arm for RODE NT-USB/NT-USB+/NT-USB Mini and Most Microphone, Adjustable Boom Scissor Arm Stand with 3/8\" to 5/8\" Adapter by SUNMON",
+    "b": "Rode",
+    "pr": 18.99,
+    "msrp": 18.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/715nj5GLZcL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DKNNP8P6",
+        "url": "https://www.amazon.com/dp/B0DKNNP8P6?tag=tiereduptech-20",
+        "price": 18.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.641Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101779,
+    "c": "Microphone",
+    "n": "Rode NT USB Microphone Windscreen - Mic Cover Foam Pop Filter Customized for Rode NT-USB Condenser Microphone",
+    "b": "Rode",
+    "pr": 7.99,
+    "msrp": 7.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71HQEb2mBjL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B083TNCS65",
+        "url": "https://www.amazon.com/dp/B083TNCS65?tag=tiereduptech-20",
+        "price": 7.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.641Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101780,
+    "c": "Microphone",
+    "n": "RØDE PSA1+ Professional Studio Arm with Spring Damping and Cable Management, Black",
+    "b": "Rode",
+    "pr": 117,
+    "msrp": 117,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/41O6NJyDr2L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09JBVR5B4",
+        "url": "https://www.amazon.com/dp/B09JBVR5B4?tag=tiereduptech-20",
+        "price": 117,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.641Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101781,
+    "c": "Microphone",
+    "n": "RØDE X XCM-50 Professional USB Condenser Microphone and Virtual Mixing Solution For Streamers and Gamers",
+    "b": "Rode",
+    "pr": 105.57,
+    "msrp": 105.57,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/614SoT3bjgL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BF8ZVNWB",
+        "url": "https://www.amazon.com/dp/B0BF8ZVNWB?tag=tiereduptech-20",
+        "price": 105.57,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.641Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101782,
+    "c": "Microphone",
+    "n": "RØDE NT1 Signature Series Large-Diaphragm Condenser Microphone with Shock Mount, Pop Filter and XLR Cable for Music Production, Vocal Recording, Streaming and Podcasting (Black)",
+    "b": "Rode",
+    "pr": 159,
+    "msrp": 159,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71mmZOQPuNL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CKVD62NX",
+        "url": "https://www.amazon.com/dp/B0CKVD62NX?tag=tiereduptech-20",
+        "price": 159,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.641Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101783,
+    "c": "Microphone",
+    "n": "PIAOLGYI Microphone Mount Adapter for Rode NT-USB, Mic Arm Adapter,Boom Arm Adapter,Accessory Compatible with Rode NT-USB",
+    "b": "Rode",
+    "pr": 12.99,
+    "msrp": 12.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/61Ho1N4pGhL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CYZGSXVH",
+        "url": "https://www.amazon.com/dp/B0CYZGSXVH?tag=tiereduptech-20",
+        "price": 12.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.642Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101784,
+    "c": "Microphone",
+    "n": "RØDE VideoMic GO II Helix | Ultra-Compact On-Camera Shotgun Microphone with Both 3.5mm and USB Outputs for Filmmaking, Content Creation, Podcasting and Video Calls (3rd Gen)",
+    "b": "Rode",
+    "pr": 109,
+    "msrp": 109,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71k0CKbGqJL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D6X93C58",
+        "url": "https://www.amazon.com/dp/B0D6X93C58?tag=tiereduptech-20",
+        "price": 109,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.642Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101785,
+    "c": "Microphone",
+    "n": "RØDE X XDM-100 Professional USB Dynamic Microphone and Virtual Mixing Solution For Streamers and Gamers,Black",
+    "b": "Rode",
+    "pr": 248,
+    "msrp": 248,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/51Oa5wrqLUL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BF98BLRN",
+        "url": "https://www.amazon.com/dp/B0BF98BLRN?tag=tiereduptech-20",
+        "price": 248,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.642Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101786,
+    "c": "Microphone",
+    "n": "Rode PodMic USB Dynamic Broadcast Microphone with Rode PSA1+ Broadcast Microphone Boom Arm and XLR Cable",
+    "b": "Rode",
+    "pr": 309.99,
+    "msrp": 309.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81v8xe3q8rL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FQK94R99",
+        "url": "https://www.amazon.com/dp/B0FQK94R99?tag=tiereduptech-20",
+        "price": 309.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.642Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101787,
+    "c": "Microphone",
+    "n": "Rode PodMic USB Dynamic Broadcast Microphone with Black WS14 Pop Filter",
+    "b": "Rode",
+    "pr": 209,
+    "msrp": 209,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71tpNtRkd-L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FT919V76",
+        "url": "https://www.amazon.com/dp/B0FT919V76?tag=tiereduptech-20",
+        "price": 209,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.642Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101788,
+    "c": "Microphone",
+    "n": "RØDE VideoMicro II Ultra-Compact On-Camera Shotgun Microphone for Recording Audio with a Camera or Mobile Device",
+    "b": "Rode",
+    "pr": 80,
+    "msrp": 80,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61krZUAD3NL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BM8HQL6L",
+        "url": "https://www.amazon.com/dp/B0BM8HQL6L?tag=tiereduptech-20",
+        "price": 80,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.642Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101789,
+    "c": "Microphone",
+    "n": "Rode VideoMic Me-C+ USB Microphone with Rode WS9 Gray Windshield",
+    "b": "Rode",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/81V66Hbt3ZL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FPMV26N7",
+        "url": "https://www.amazon.com/dp/B0FPMV26N7?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.642Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101790,
+    "c": "Microphone",
+    "n": "Sennheiser XS 1 Handheld Dynamic Microphone,Black",
+    "b": "Sennheiser",
+    "pr": 49.86,
+    "msrp": 49.95,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51cW6t6qJAL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B076WWQ4WT",
+        "url": "https://www.amazon.com/dp/B076WWQ4WT?tag=tiereduptech-20",
+        "price": 49.86,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.642Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101791,
+    "c": "Microphone",
+    "n": "Elgato Wave DX - Dynamic XLR Microphone, Cardioid pattern, Noise Rejection, speech optimised for Podcasting, Streaming, Broadcasting, No Signal Booster Required, works with any Interface, for Mac, PC",
+    "b": "Elgato",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71MPyIUvr8L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B8GRCXB6",
+        "url": "https://www.amazon.com/dp/B0B8GRCXB6?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.642Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101792,
+    "c": "Microphone",
+    "n": "Shure PGA58 Dynamic Microphone - Handheld Mic for Vocals with Cardioid Pick-up Pattern, Discrete On/Off Switch, Stand Adapter and Zipper Pouch (PGA58-XLR)",
+    "b": "Shure",
+    "pr": 78,
+    "msrp": 78,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51KDXIkfXAL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B00TTQM94Q",
+        "url": "https://www.amazon.com/dp/B00TTQM94Q?tag=tiereduptech-20",
+        "price": 78,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.643Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101793,
+    "c": "Microphone",
+    "n": "Logitech G Yeti Studio Active Dynamic XLR Broadcast Microphone for Gaming, ClearAmp Active Preamp, Dual-Diaphragm Capsule, Internal Shockmount - Black",
+    "b": "Logitech",
+    "pr": 379.99,
+    "msrp": 379.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71odBEkNPCL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BSBV4QG5",
+        "url": "https://www.amazon.com/dp/B0BSBV4QG5?tag=tiereduptech-20",
+        "price": 379.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.643Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101794,
+    "c": "Microphone",
+    "n": "Audio-Technica AT2035 Cardioid Condenser Microphone, Perfect for Studio, Podcasting & Streaming, XLR Output, Includes Custom Shock Mount",
+    "b": "Audio-Technica",
+    "pr": 159,
+    "msrp": 159,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71rCf-z8+aL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B002T45X1G",
+        "url": "https://www.amazon.com/dp/B002T45X1G?tag=tiereduptech-20",
+        "price": 159,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.643Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101795,
+    "c": "Microphone",
+    "n": "Audio-Technica AT2040 Hypercardioid Dynamic Podcast Microphone",
+    "b": "Audio-Technica",
+    "pr": 109,
+    "msrp": 109,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71bkxZa+TNL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09BFPNW2J",
+        "url": "https://www.amazon.com/dp/B09BFPNW2J?tag=tiereduptech-20",
+        "price": 109,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.643Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101796,
+    "c": "Microphone",
+    "n": "RØDE Microphones Procaster Broadcast Dynamic Vocal Microphone",
+    "b": "Rode",
+    "pr": 216,
+    "msrp": 216,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61VrmWu3qwL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B001IPUJJI",
+        "url": "https://www.amazon.com/dp/B001IPUJJI?tag=tiereduptech-20",
+        "price": 216,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.643Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101797,
+    "c": "Microphone",
+    "n": "Shure SM4 Studio Recording Microphone Kit, XLR Home Studio Condenser Mic with Mix-Ready Audio - All-Metal Construction, Includes Detachable Magnetic Pop Filter & Shock Mount (SM4-K-KIT)",
+    "b": "Shure",
+    "pr": 269,
+    "msrp": 269,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71Cu3CA0yPL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D81KDVJQ",
+        "url": "https://www.amazon.com/dp/B0D81KDVJQ?tag=tiereduptech-20",
+        "price": 269,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.643Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101798,
+    "c": "Microphone",
+    "n": "Logitech Blue Ember XLR Condenser Mic for Recording and Streaming, Custom Cardioid Capsule and Mic Stand Mount, Gray (Renewed)",
+    "b": "Logitech",
+    "pr": 39.88,
+    "msrp": 39.88,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/51wue8drJaL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FTBHJ2LL",
+        "url": "https://www.amazon.com/dp/B0FTBHJ2LL?tag=tiereduptech-20",
+        "price": 39.88,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.643Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101799,
+    "c": "Microphone",
+    "n": "Rode NT1 5th Generation Condenser Microphone with SM6 Shockmount and Pop Filter,Silver",
+    "b": "Rode",
+    "pr": 215,
+    "msrp": 215,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/714x2b-ZAFL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BQH4KNBR",
+        "url": "https://www.amazon.com/dp/B0BQH4KNBR?tag=tiereduptech-20",
+        "price": 215,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.643Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101800,
+    "c": "Microphone",
+    "n": "Audio-Technica PRO 45 ProPoint Cardioid Condenser Hanging Microphone, Black",
+    "b": "Audio-Technica",
+    "pr": 109,
+    "msrp": 109,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51Kz9-NrgSL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0002BBOPC",
+        "url": "https://www.amazon.com/dp/B0002BBOPC?tag=tiereduptech-20",
+        "price": 109,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.643Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101801,
+    "c": "Microphone",
+    "n": "Rode M5 Compact 1/2\" Condenser Microphone Matched Pair, XLR",
+    "b": "Rode",
+    "pr": 190.97,
+    "msrp": 190.97,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51fgTRzxAxL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B00GJW0JGI",
+        "url": "https://www.amazon.com/dp/B00GJW0JGI?tag=tiereduptech-20",
+        "price": 190.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.644Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101802,
+    "c": "Microphone",
+    "n": "RØDE NT1 Signature Series Large-Diaphragm Condenser Microphone with Shock Mount, Pop Filter and XLR Cable for Music Production, Vocal Recording, Streaming and Podcasting (Red)",
+    "b": "Rode",
+    "pr": 159,
+    "msrp": 159,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71waedd57nL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CM9WSJKX",
+        "url": "https://www.amazon.com/dp/B0CM9WSJKX?tag=tiereduptech-20",
+        "price": 159,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.644Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101803,
+    "c": "Microphone",
+    "n": "Audio-Technica AT2040USB Dynamic USB Microphone",
+    "b": "Audio-Technica",
+    "pr": 159,
+    "msrp": 159,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71xcYyywTQL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C2G4PGYS",
+        "url": "https://www.amazon.com/dp/B0C2G4PGYS?tag=tiereduptech-20",
+        "price": 159,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.644Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101804,
+    "c": "Microphone",
+    "n": "Sennheiser Professional Profile USB Microphone Streaming Set with Boom Arm, 3 m USB-C Cable & Mic Pouch",
+    "b": "Sennheiser",
+    "pr": 149,
+    "msrp": 149,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/416u9Ds5g8L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BTPZF6P1",
+        "url": "https://www.amazon.com/dp/B0BTPZF6P1?tag=tiereduptech-20",
+        "price": 149,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.644Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101805,
+    "c": "Microphone",
+    "n": "JBL PartyBox Wireless Mic - 2X Digital Wireless Microphones, Rechargeable Battery (20hrs - 700mAh), Clear Voice, Crisp Sound, Stable 2.4GHz Connection, Compatible with All PartyBox Speakers (Black)",
+    "b": "JBL",
+    "pr": 169.95,
+    "msrp": 169.95,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61Yl89uADxL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CTDJ45M4",
+        "url": "https://www.amazon.com/dp/B0CTDJ45M4?tag=tiereduptech-20",
+        "price": 169.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.645Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101806,
+    "c": "Microphone",
+    "n": "JBL Wireless Two Microphone System with Dual-Channel Receiver, Black (Renewed)",
+    "b": "JBL",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61nwSIJwD0L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CG2GB3N5",
+        "url": "https://www.amazon.com/dp/B0CG2GB3N5?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.646Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101807,
+    "c": "Microphone",
+    "n": "JBL Wireless Two Microphone System with Dual-Channel Receiver, Black Including Winguard Protective Travel Case",
+    "b": "JBL",
+    "pr": 109.95,
+    "msrp": 109.95,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61Rv-ROZr9L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GK54B1JP",
+        "url": "https://www.amazon.com/dp/B0GK54B1JP?tag=tiereduptech-20",
+        "price": 109.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.646Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101808,
+    "c": "Microphone",
+    "n": "Sennheiser Pro Audio XSW 1-825-A Vocal Wireless Microphone, A Range 548-572 MHz, Black, medium",
+    "b": "Sennheiser",
+    "pr": 329,
+    "msrp": 329,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/616MX+XG7AL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01NAS7Q9Q",
+        "url": "https://www.amazon.com/dp/B01NAS7Q9Q?tag=tiereduptech-20",
+        "price": 329,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.647Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101809,
+    "c": "Microphone",
+    "n": "Insta360 Mic Air Transmitter, 7.9g Ultralight, Wireless Microphone, Noise Cancelling, Vlog, Streaming, Compatible X5/X4/X4 Air/Ace Pro 2/GO Ultra",
+    "b": "Insta360",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71iJ8jeg-JL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F7KS5BLD",
+        "url": "https://www.amazon.com/dp/B0F7KS5BLD?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.648Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101810,
+    "c": "Microphone",
+    "n": "2 Pack Lavalier Microphone Compatible with DJI Mic 2 & Rode Wireless Pro/Wireless GO 2 / II Transmitters - Omnidirectional Lav Lapel Wearable Mic for Vlog Interview Streaming Lectures Broadcasters",
+    "b": "Rode",
+    "pr": 9.99,
+    "msrp": 9.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61OS1mYm6DL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BGHZF5ZJ",
+        "url": "https://www.amazon.com/dp/B0BGHZF5ZJ?tag=tiereduptech-20",
+        "price": 9.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.648Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101811,
+    "c": "Microphone",
+    "n": "Lavalier Microphone Lapel Microphone Compatible with Shure Wireless Transmitter - Unidirectional Condenser Mic - Mini XLR TA4F Plug",
+    "b": "Shure",
+    "pr": 26.99,
+    "msrp": 26.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61QNoDUK+dL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08Z2VJ24C",
+        "url": "https://www.amazon.com/dp/B08Z2VJ24C?tag=tiereduptech-20",
+        "price": 26.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.648Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101812,
+    "c": "Microphone",
+    "n": "NEEWER 2 Pack Lavalier Lapel Microphone Compatible with DJI Wireless Mic Transmitters Rode Wireless GO II 2, Omnidirectional Condenser Wired Clip On Lav Mics for Stage YouTube Live Streaming, CM5",
+    "b": "Rode",
+    "pr": 13.99,
+    "msrp": 13.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61EEFUWoLJL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CV196ZCZ",
+        "url": "https://www.amazon.com/dp/B0CV196ZCZ?tag=tiereduptech-20",
+        "price": 13.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.648Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101813,
+    "c": "Microphone",
+    "n": "J K Pro Lavalier Lapel Microphone MIC-J 044 Compatible with Sennheiser Wireless Transmitter - Omnidirectional Condenser Mic",
+    "b": "Sennheiser",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61u9CPfcW+L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B009YCI62Y",
+        "url": "https://www.amazon.com/dp/B009YCI62Y?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.649Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101814,
+    "c": "Microphone",
+    "n": "2-Pack Lavalier Lapel Microphone Compatible with Sennheiser Wireless System Bodypack Transmitter, Omnidirectional Condenser Mic for YouTube, Lectures, Living Performance",
+    "b": "Sennheiser",
+    "pr": 16.99,
+    "msrp": 16.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61SsStj9+-L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09BN6Q7V2",
+        "url": "https://www.amazon.com/dp/B09BN6Q7V2?tag=tiereduptech-20",
+        "price": 16.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.649Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101815,
+    "c": "Microphone",
+    "n": "Lavalier Lapel Microphone Unidirectional Condenser Super Cardioid Mic Compatible with Shure Wireless Bodypack Transmitter System with Mini XLR 4 Pin TA4F Plug",
+    "b": "Shure",
+    "pr": 27.99,
+    "msrp": 27.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/51dTEB-yXQL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DB175V87",
+        "url": "https://www.amazon.com/dp/B0DB175V87?tag=tiereduptech-20",
+        "price": 27.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.649Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101816,
+    "c": "Microphone",
+    "n": "Audio-Technica PRO70 Cardioid Condenser Lavalier/Instrument Microphone",
+    "b": "Audio-Technica",
+    "pr": 159,
+    "msrp": 159,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51k3kw4tw5L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B001CITVNQ",
+        "url": "https://www.amazon.com/dp/B001CITVNQ?tag=tiereduptech-20",
+        "price": 159,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.649Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101817,
+    "c": "Microphone",
+    "n": "Shure Centraverse Lavalier Microphone, Black, Cardioid Condenser Mini Lav Mic, Clip-On for Hands-Free Use, TA4F Connector, Wireless Bodypacks (CVL-B/C-TQG)",
+    "b": "Shure",
+    "pr": 54,
+    "msrp": 54,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/41eW-MmQIKL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B00IVPFXLW",
+        "url": "https://www.amazon.com/dp/B00IVPFXLW?tag=tiereduptech-20",
+        "price": 54,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.649Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101818,
+    "c": "Microphone",
+    "n": "Purple Panda Wired Lavalier Microphone Omnidirectional – Attachable Lapel Mic Compatible with GoPro, DJI, Insta360, Tablet, iPad, DSLR, Camera, Ideal for Social Media Content Creators",
+    "b": "Insta360",
+    "pr": 33.99,
+    "msrp": 33.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71IHiiPZ-xL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01MSKI46R",
+        "url": "https://www.amazon.com/dp/B01MSKI46R?tag=tiereduptech-20",
+        "price": 33.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.649Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101819,
+    "c": "Microphone",
+    "n": "Replacement Lapel mic for SHURE BLX188/CVL Wireless Lavalier Microphone, Unidirectional, ta4f 4 Pins, Black",
+    "b": "Shure",
+    "pr": 22.99,
+    "msrp": 22.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/41MU4ofUqRL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CQTJ3W97",
+        "url": "https://www.amazon.com/dp/B0CQTJ3W97?tag=tiereduptech-20",
+        "price": 22.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.650Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101820,
+    "c": "Microphone",
+    "n": "Pair of Lavalier Lapel Mics w/ 4 pin Mini XLR TA4F for Shure Wireless",
+    "b": "Shure",
+    "pr": 36.85,
+    "msrp": 36.85,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61mKVWe98ZL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07NWYQ6CF",
+        "url": "https://www.amazon.com/dp/B07NWYQ6CF?tag=tiereduptech-20",
+        "price": 36.85,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.650Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101821,
+    "c": "Microphone",
+    "n": "Wireless Lavalier Microphone for iPhone/Android with Lightning, USB C Mini Lapel Microphone Wireless, Noise Cancellation, 35H Battery for Video Recording, Streaming - Sapphire Blue",
+    "b": "Sapphire",
+    "pr": 45.99,
+    "msrp": 45.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71sRZ2zTWlL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DFCN8N3R",
+        "url": "https://www.amazon.com/dp/B0DFCN8N3R?tag=tiereduptech-20",
+        "price": 45.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.650Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101822,
+    "c": "Microphone",
+    "n": "Lavalier Microphone Omnidirectional Condenser Lapel Mic Compatible with Sennheiser Wireless System Transmitter Bodypack 3.5mm Stereo Female Screw Plug with Clip & Cap",
+    "b": "Sennheiser",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/51xKd-Pb6FS._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0951XRC8V",
+        "url": "https://www.amazon.com/dp/B0951XRC8V?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.650Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101823,
+    "c": "Microphone",
+    "n": "Elgato Wave:3 - USB Condenser Microphone and Digital Mixer for Streaming, Recording, Podcasting - Clipguard, Capacitive Mute, Plug & Play for PC/Mac (Renewed)",
+    "b": "Elgato",
+    "pr": 97,
+    "msrp": 97,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61qdulrdEDL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08H8D92Q7",
+        "url": "https://www.amazon.com/dp/B08H8D92Q7?tag=tiereduptech-20",
+        "price": 97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.650Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101824,
+    "c": "Microphone",
+    "n": "Elgato Wave Mic Arm Pro - 360° Rotatable Low Profile Gas Spring Microphone Arm, Works Mics/Shure SM7B/HyperX QuadCast/Rode/Blue Yeti & More – for Broadcasting/Podcasting/Streaming",
+    "b": "HyperX",
+    "pr": 179.99,
+    "msrp": 179.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/41PWRtgajGL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DGQMDKH3",
+        "url": "https://www.amazon.com/dp/B0DGQMDKH3?tag=tiereduptech-20",
+        "price": 179.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.650Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101825,
+    "c": "Microphone",
+    "n": "Elgato Wave Desk Stand - Adjustable Mounting Arm for Microphones, Works, HyperX, Rode, Fifine, Shure and More Mics, Compatible 1/4, 3/8 & 5/8 Thread, for Recording/Podcasting/Streaming, Black",
+    "b": "HyperX",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/51TAndRDdeL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DGQLRP4C",
+        "url": "https://www.amazon.com/dp/B0DGQLRP4C?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.651Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101826,
+    "c": "Microphone",
+    "n": "Elgato Wave Mic Arm Pro White - 360° Rotatable Low Profile Gas Spring Microphone Arm, Works Mics/Shure SM7B/HyperX QuadCast/Rode/Blue Yeti & More – for Broadcasting/Podcasting/Streaming",
+    "b": "HyperX",
+    "pr": 179.99,
+    "msrp": 179.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/41-OT8NjvQL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DGQMDS2H",
+        "url": "https://www.amazon.com/dp/B0DGQMDS2H?tag=tiereduptech-20",
+        "price": 179.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.651Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101827,
+    "c": "Microphone",
+    "n": "For Elgato Wave 3 Boom Arm Microphone Stand, Professional Mic Boom Arm Mic Stand Compatible with Elgato Wave:3 USB Condenser Microphone by SUNMON",
+    "b": "Elgato",
+    "pr": 18.99,
+    "msrp": 18.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61TUeWTgrYL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B091DH8CYQ",
+        "url": "https://www.amazon.com/dp/B091DH8CYQ?tag=tiereduptech-20",
+        "price": 18.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.651Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101828,
+    "c": "Microphone",
+    "n": "Elgato Wave DX - Dynamic XLR Microphone, Works with Any Interface, for Mac, PC - Doom (Renewed)",
+    "b": "Elgato",
+    "pr": 89.5,
+    "msrp": 89.5,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41VT6AiQXXL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GRZNFQJP",
+        "url": "https://www.amazon.com/dp/B0GRZNFQJP?tag=tiereduptech-20",
+        "price": 89.5,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.651Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101829,
+    "c": "Microphone",
+    "n": "Elgato Shock Mount - Maximum isolation from vibration noise, steel chassis with reinforced elastic suspension, custom built for Elgato Wave:1/3",
+    "b": "Elgato",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/51qfVBdYUoL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B088P2WK3B",
+        "url": "https://www.amazon.com/dp/B088P2WK3B?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.651Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101830,
+    "c": "Microphone",
+    "n": "Wave 3 Pop Filter - Professional Mic Windscreen Foam Cover Compatible with Elgato Wave USB Condenser Microphone to Reduce Pops and Hisses by SUNMON",
+    "b": "Elgato",
+    "pr": 9.47,
+    "msrp": 9.47,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71XupL+SjIL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B091DHY3QS",
+        "url": "https://www.amazon.com/dp/B091DHY3QS?tag=tiereduptech-20",
+        "price": 9.47,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.651Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101831,
+    "c": "Microphone",
+    "n": "Wave Shock Mount, [Custom Built for Wave Mic] Anti-Vibration Suspension Shock Mount Holder Clip Compatible with Elgato Wave:1 and Wave:3 Microphones",
+    "b": "Elgato",
+    "pr": 29.97,
+    "msrp": 29.97,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61hsyQ7XUDL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09VBXJS8X",
+        "url": "https://www.amazon.com/dp/B09VBXJS8X?tag=tiereduptech-20",
+        "price": 29.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.651Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101832,
+    "c": "Microphone",
+    "n": "Desk Cookies Microphone Mount for Elgato Wave 3 – Boom Arm Adapter with 3/8\"-16 Threads, Heavy-Duty Replacement U-Mount, Durable 3D Printed Bracket (Black)",
+    "b": "Elgato",
+    "pr": 16.99,
+    "msrp": 16.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61h3QbiF1GL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DLZ4QDN9",
+        "url": "https://www.amazon.com/dp/B0DLZ4QDN9?tag=tiereduptech-20",
+        "price": 16.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.651Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101833,
+    "c": "Microphone",
+    "n": "Geekria for Creators Furry Windscreen Compatible with Elgato Wave:1, Wave:3 Mic DeadCat Wind Cover Muff, Fluff Cover Windshield, Wind Noise Reduction (Grey / 2 Pack)",
+    "b": "Elgato",
+    "pr": 16.99,
+    "msrp": 16.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81WZXdyzUEL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BN189ST2",
+        "url": "https://www.amazon.com/dp/B0BN189ST2?tag=tiereduptech-20",
+        "price": 16.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.651Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101834,
+    "c": "Microphone",
+    "n": "Microphone Pop Filter - Mic Foam Windscreen Cover Compatible with Elgato Wave:3 Premium USB Condenser Microphone to Blocks Out Plosives by YOUSHARES",
+    "b": "Elgato",
+    "pr": 9.99,
+    "msrp": 9.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81DU37caC-L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08R5LSHN5",
+        "url": "https://www.amazon.com/dp/B08R5LSHN5?tag=tiereduptech-20",
+        "price": 9.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.651Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101835,
+    "c": "Microphone",
+    "n": "SOULWIT 2Pcs Microphones Pop Filter for Elgato Wave:3(Wave3), Protective Mic Cover Windscreen Foam - Black",
+    "b": "Elgato",
+    "pr": 7.95,
+    "msrp": 7.95,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/71lQJWgGObL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FZKL645Z",
+        "url": "https://www.amazon.com/dp/B0FZKL645Z?tag=tiereduptech-20",
+        "price": 7.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.651Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101836,
+    "c": "Microphone",
+    "n": "Elgato Facecam MK.2 & Elgato Wave DX with XLR Cable – Premium Full HD Webcam for Streaming, Gaming, Dynamic XLR Microphone for Podcasting, Streaming, Mac, PC, Shielded Microphone Cable 10ft/3m",
+    "b": "Elgato",
+    "pr": 234.97,
+    "msrp": 234.97,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51xHgbBr+XL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CZ9KQRF9",
+        "url": "https://www.amazon.com/dp/B0CZ9KQRF9?tag=tiereduptech-20",
+        "price": 234.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.651Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101837,
+    "c": "Webcam",
+    "n": "Logitech 960001580 Brio 100 1080p Full HD Webcam (Graphite) (Renewed)",
+    "b": "Logitech",
+    "pr": 21.34,
+    "msrp": 21.34,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/31KUnY4GxYL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CZ2HFV2Z",
+        "url": "https://www.amazon.com/dp/B0CZ2HFV2Z?tag=tiereduptech-20",
+        "price": 21.34,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.652Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101838,
+    "c": "Webcam",
+    "n": "Logitech Brio 501 Full HD Webcam with Auto Light Correction, Show Mode, Noise Reduction Mics, Privacy Cover, Works with Microsoft Teams, Google Meet, Zoom, Nintendo Switch 2 New GameChat Mode - Black",
+    "b": "Microsoft",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51NxgktF8HL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09WHTMF23",
+        "url": "https://www.amazon.com/dp/B09WHTMF23?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.652Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101839,
+    "c": "Webcam",
+    "n": "Logitech C920e HD 1080p Mic-Disabled Webcam, Certified for Zoom and Microsoft Teams, TAA Compliant",
+    "b": "Microsoft",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71x1pdEnSqL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08CS18WVP",
+        "url": "https://www.amazon.com/dp/B08CS18WVP?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.652Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101840,
+    "c": "Webcam",
+    "n": "Logitech StreamCam Premium Webcam for Streaming and Content Creation, Full HD 1080p 60 fps, Works with Microsoft Teams, Google Meet, Zoom, Nintendo Switch 2’s new GameChat mode, for PC/Mac – Graphite",
+    "b": "Logitech",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71-fdSpTk5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07TZT4Q89",
+        "url": "https://www.amazon.com/dp/B07TZT4Q89?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.653Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101841,
+    "c": "Webcam",
+    "n": "Razer Kiyo: Full HD 1080p 30FPS/720p 60FPS Computer Camera - Built-in Adjustable LED Ring Light Webcam - Advanced Autofocus - Streaming Web Camera for Gaming, Compatible with Windows and Mac (Renewed)",
+    "b": "Razer",
+    "pr": 38.75,
+    "msrp": 38.75,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61DhziobiZL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07F1K2V85",
+        "url": "https://www.amazon.com/dp/B07F1K2V85?tag=tiereduptech-20",
+        "price": 38.75,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.653Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101842,
+    "c": "Webcam",
+    "n": "Logitech for Creators Litra Glow Premium LED Streaming Light with TrueSoft- Computer lighting for video conferencing, Zoom meetings, with adjustable mount and desktop app control for PC/Mac - Graphite",
+    "b": "Logitech",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/519wXP-d9DL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B097QZGRCQ",
+        "url": "https://www.amazon.com/dp/B097QZGRCQ?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.655Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101843,
+    "c": "Webcam",
+    "n": "Webcam Light, Ring Light for Logitech Webcam C920,C922x,C930e,Brio 4K,C925e,MX Brio 4K,StreamCam,Brio 500,C615 1/4'' Screw Hole- 10'' Light (Without Tripod and Stand)",
+    "b": "Logitech",
+    "pr": 27.9,
+    "msrp": 27.9,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71PxNvlTvXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07KWX2GFN",
+        "url": "https://www.amazon.com/dp/B07KWX2GFN?tag=tiereduptech-20",
+        "price": 27.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.655Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101844,
+    "c": "MousePad",
+    "n": "Logitech G840 XL Cloth Gaming Mouse Pad - 0.12 in Thin, Stable Rubber Base, Performance-Tuned Surface - Black",
+    "b": "Logitech",
+    "pr": 37.99,
+    "msrp": 37.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/41KdE5zjlIL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BHMN52LY",
+        "url": "https://www.amazon.com/dp/B0BHMN52LY?tag=tiereduptech-20",
+        "price": 37.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.656Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101845,
+    "c": "MousePad",
+    "n": "Corsair MM350 PRO Extended XL Premium Spill-Proof Cloth Gaming Mouse Pad – 36.6” Width x 15.7” Height Surface – Black",
+    "b": "Corsair",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/31akZhXgwHL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08JH8C5T5",
+        "url": "https://www.amazon.com/dp/B08JH8C5T5?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.656Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101846,
+    "c": "MousePad",
+    "n": "ASUS ROG Sheath Gaming Mouse Pad – 35.4” x 17.3\", Extra-Large Surface, Pixel-Precise Tracking, Anti-Fray Stitched Edges, Non-Slip Base - Black/Red",
+    "b": "ASUS",
+    "pr": 23.99,
+    "msrp": 23.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61UopGzilOL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01G5ATZAE",
+        "url": "https://www.amazon.com/dp/B01G5ATZAE?tag=tiereduptech-20",
+        "price": 23.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.656Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101847,
+    "c": "MousePad",
+    "n": "SteelSeries QcK XL Performance Speed Gaming Mousepad — Extra Density for a Smooth Glide — Low-Profile Edge Stitching — Non-Slip Neoprene Rubber Base — 15.75 x 34.43 inch — FPS, MOBAs, RTS, MMO",
+    "b": "SteelSeries",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/412z+cFioDL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DZ1QYD97",
+        "url": "https://www.amazon.com/dp/B0DZ1QYD97?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.657Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101848,
+    "c": "MousePad",
+    "n": "Logitech G740 Large Thick Gaming Mouse Pad, Optimized for Gaming Sensors, Moderate Surface Friction, Non-Slip Mouse Mat, Mac and PC Accessories, 460 x 600 x 5 mm",
+    "b": "Logitech",
+    "pr": 34.99,
+    "msrp": 34.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/51sZif-3foL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BHMMH9KM",
+        "url": "https://www.amazon.com/dp/B0BHMMH9KM?tag=tiereduptech-20",
+        "price": 34.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.657Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101849,
+    "c": "MousePad",
+    "n": "SteelSeries QcK XXL Gaming Mouse Pad – XXL Fabric – Perfect Movement Tracking and Stability – Esports Pad – Non-Slip – Full Desk Surface Use",
+    "b": "SteelSeries",
+    "pr": 41.99,
+    "msrp": 41.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/41GXBuct9KL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CVN5MQ6P",
+        "url": "https://www.amazon.com/dp/B0CVN5MQ6P?tag=tiereduptech-20",
+        "price": 41.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.658Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101850,
+    "c": "MousePad",
+    "n": "ASUS ROG Hone Ace XXL Gaming Mouse Pad – 35.4” x 15.7\", (XXL Size), Extra-Cushioning, Table-Sized for Wide, Smooth Glide and Control, Water/Oil/Dust-Resistant, Extra-Soft Non-Slip Rubber Base - Black",
+    "b": "ASUS",
+    "pr": 50.99,
+    "msrp": 50.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81DmnNmcKiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CQPG6QC8",
+        "url": "https://www.amazon.com/dp/B0CQPG6QC8?tag=tiereduptech-20",
+        "price": 50.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.658Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101851,
+    "c": "MousePad",
+    "n": "Razer Firefly V2 Pro Fully Illuminated RGB Gaming Mouse Mat: Backlit Design - 15 Zone Chroma Lighting - USB 2.0 Port - Detachable USB Type C Cable - Micro Textured Surface - Anti Slip Base",
+    "b": "Razer",
+    "pr": 99,
+    "msrp": 99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81XmmFr00wL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CY6RJRBR",
+        "url": "https://www.amazon.com/dp/B0CY6RJRBR?tag=tiereduptech-20",
+        "price": 99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101852,
+    "c": "MousePad",
+    "n": "Corsair MM700 RGB Extended Cloth Gaming Mouse Pad - 36.6\" x 15.8\" - 360° RGB Lighting - Two USB Port Hub - Thick Rubber - Black (Renewed)",
+    "b": "Corsair",
+    "pr": 21.98,
+    "msrp": 21.98,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/51HXyK4kYUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CP8KGWT8",
+        "url": "https://www.amazon.com/dp/B0CP8KGWT8?tag=tiereduptech-20",
+        "price": 21.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101853,
+    "c": "MousePad",
+    "n": "Razer Strider Chroma Hybrid Gaming Mouse Mat with Razer Chroma RGB: Hybrid Soft/Hard Mat - 19 Razer Chroma RGB Lighting Zones - Warp and Water-Resistant - Anti-Slip Base - Seamless Edges XXLarge",
+    "b": "Razer",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81sIlsDrWtL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B75YMDMC",
+        "url": "https://www.amazon.com/dp/B0B75YMDMC?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101854,
+    "c": "MousePad",
+    "n": "Razer Firefly Hard V2 RGB Gaming Mouse Pad: Customizable Chroma Lighting, Built-in Cable Management, Balanced Control & Speed, Non-Slip Rubber Base",
+    "b": "Razer",
+    "pr": 43.43,
+    "msrp": 43.43,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/519CPLt4B4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07ZDWHL4M",
+        "url": "https://www.amazon.com/dp/B07ZDWHL4M?tag=tiereduptech-20",
+        "price": 43.43,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101855,
+    "c": "MousePad",
+    "n": "Razer Goliathus Extended Chroma Gaming Mousepad: Customizable RGB Lighting - Soft, Cloth Material - Balanced Control & Speed - Non-Slip Rubber Base - Halo Infinite Edition",
+    "b": "Razer",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51Lq+ZGVjiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08F2Z1G6H",
+        "url": "https://www.amazon.com/dp/B08F2Z1G6H?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101856,
+    "c": "MousePad",
+    "n": "Logitech G640 Large Cloth Gaming Mouse Pad, Optimized for Gaming Sensors, Moderate Surface Friction, Non-Slip Mouse Mat - Black",
+    "b": "Logitech",
+    "pr": 29.66,
+    "msrp": 29.66,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/51X+yf1EgpL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BHMKVF1P",
+        "url": "https://www.amazon.com/dp/B0BHMKVF1P?tag=tiereduptech-20",
+        "price": 29.66,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101857,
+    "c": "MousePad",
+    "n": "Logitech G240 Cloth Gaming Mouse Pad, Optimized for Gaming Sensors, Moderate Surface Friction, Non-Slip Mouse Mat, Mac and PC Gaming Accessories, 340 x 280 x 1 mm",
+    "b": "Logitech",
+    "pr": 9.99,
+    "msrp": 9.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61tZSb-bTUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BHMLWH3Z",
+        "url": "https://www.amazon.com/dp/B0BHMLWH3Z?tag=tiereduptech-20",
+        "price": 9.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101858,
+    "c": "MousePad",
+    "n": "Logitech G440 Hard Gaming Mouse Pad, Optimized for Gaming Sensors, Moderate Surface Friction, Non-Slip Mouse Mat - Black",
+    "b": "Logitech",
+    "pr": 19.99,
+    "msrp": 19.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61ziuYbug4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BHMK6B2X",
+        "url": "https://www.amazon.com/dp/B0BHMK6B2X?tag=tiereduptech-20",
+        "price": 19.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101859,
+    "c": "MousePad",
+    "n": "Logitech G440 Hard Gaming Mouse Pad for High DPI Gaming",
+    "b": "Logitech",
+    "pr": 31.44,
+    "msrp": 31.44,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/511BqbbnMpL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01DKTP3PY",
+        "url": "https://www.amazon.com/dp/B01DKTP3PY?tag=tiereduptech-20",
+        "price": 31.44,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101860,
+    "c": "MousePad",
+    "n": "Professional Glass Gaming Mouse Pad for Logitech G502/G PRO/G703, Large Non Slip Mousepad for Avid Gamer-Special Glass Surface with Improved Precision and Speed for Smooth Mouse Control",
+    "b": "Logitech",
+    "pr": 15.99,
+    "msrp": 15.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81Dhb7s+10L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BG86HBDL",
+        "url": "https://www.amazon.com/dp/B0BG86HBDL?tag=tiereduptech-20",
+        "price": 15.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101861,
+    "c": "MousePad",
+    "n": "Wireless Charging Mouse Pad for Logitech G Pro X Superlight 2/1, G502, G703 Lightspeed, Plug-and-Play, Slip-Resistant Base, Continuous Charging for Gaming - Powerplay Alternative (Not for G903)",
+    "b": "Logitech",
+    "pr": 79,
+    "msrp": 79,
+    "r": 3.5,
+    "img": "https://m.media-amazon.com/images/I/71VJlLi0nZL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FMK4JQVB",
+        "url": "https://www.amazon.com/dp/B0FMK4JQVB?tag=tiereduptech-20",
+        "price": 79,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101862,
+    "c": "MousePad",
+    "n": "Professional Glass Gaming Mouse Pad for Logitech G502/G PRO/G703, Large Non Slip Mousepad for Avid Gamer-Special Glass Surface with Improved Precision and Speed for Smooth Mouse Control",
+    "b": "Logitech",
+    "pr": 15.99,
+    "msrp": 15.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71LIsM9NcBL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FKLVHJS4",
+        "url": "https://www.amazon.com/dp/B0FKLVHJS4?tag=tiereduptech-20",
+        "price": 15.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101863,
+    "c": "MousePad",
+    "n": "SteelSeries QcK L Performance Speed Gaming Mousepad — Extra Density for a Smooth Glide — Low-Profile Edge Stitching — Non-Slip Neoprene Rubber Base — 16.54 x 19.29 inch — FPS, MOBAs, RTS, MMO",
+    "b": "SteelSeries",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/41KCgRsZkSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DZ1MZB9F",
+        "url": "https://www.amazon.com/dp/B0DZ1MZB9F?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101864,
+    "c": "MousePad",
+    "n": "SteelSeries QcK Heavy Gaming Mousepad — Thicker, Non-Slip Silicone Rubber Base, Peak Tracking, Optimized for Gaming FPS, MOBAs, RTS, MMO — XXL Size 900 mm x 400 mm x 4 mm — White",
+    "b": "SteelSeries",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/31z8dsFzAnL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GSF3GBC6",
+        "url": "https://www.amazon.com/dp/B0GSF3GBC6?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101865,
+    "c": "MousePad",
+    "n": "SteelSeries QcK Heavy Gaming Mousepad — Thicker, Non-Slip Silicone Rubber Base, Peak Tracking, Optimized for Gaming FPS, MOBAs, RTS, MMO — Large Size 450 mm x 400 mm x 6 mm — Magenta",
+    "b": "SteelSeries",
+    "pr": 34.99,
+    "msrp": 34.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/51Fi7HXAoeL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GSF63QT8",
+        "url": "https://www.amazon.com/dp/B0GSF63QT8?tag=tiereduptech-20",
+        "price": 34.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101866,
+    "c": "MousePad",
+    "n": "SteelSeries QcK Heavy Gaming Mousepad — Thicker, Non-Slip Silicone Rubber Base, Peak Tracking, Optimized for Gaming FPS, MOBAs, RTS, MMO — Large Size 450 mm x 400 mm x 6 mm — White",
+    "b": "SteelSeries",
+    "pr": 34.99,
+    "msrp": 34.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/41LtXe1b6cL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GSF5HMNZ",
+        "url": "https://www.amazon.com/dp/B0GSF5HMNZ?tag=tiereduptech-20",
+        "price": 34.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101867,
+    "c": "MousePad",
+    "n": "SteelSeries QcK Heavy Gaming Mousepad — Thicker, Non-Slip Silicone Rubber Base, Peak Tracking, Optimized for Gaming FPS, MOBAs, RTS, MMO — XXL Size 900 mm x 400 mm x 4 mm — Magenta",
+    "b": "SteelSeries",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41xx8rFpA+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GSF4JYY1",
+        "url": "https://www.amazon.com/dp/B0GSF4JYY1?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.659Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101868,
+    "c": "MousePad",
+    "n": "Razer Atlas Pro Tempered Glass Gaming Mouse Mat — Ultra-Thin 1.9mm, Dirt and Scratch Resistant, Ultra‑Smooth Low‑Friction Surface, Optimized for Optical Sensors, Anti-Slip Base — Black",
+    "b": "Razer",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/41UFpHw1OvL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GVQ6YF5Q",
+        "url": "https://www.amazon.com/dp/B0GVQ6YF5Q?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.661Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101869,
+    "c": "MousePad",
+    "n": "Razer Atlas Tempered Glass Gaming Mouse Mat: Ultra-Smooth Micro-Etched Surface - Dirt and Scratch-Resistant - Anti-Slip Base - Quiet Mouse Movements - Black",
+    "b": "Razer",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51CTDSsWc5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BWLZ65D7",
+        "url": "https://www.amazon.com/dp/B0BWLZ65D7?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.661Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101870,
+    "c": "MousePad",
+    "n": "ASUS ROG Moonstone Ace L Glass Gaming Mouse Pad – 19.7” x 15.7”, Ultra-Smooth Matte Tempered Glass for Quiet Ultrafast Glides, Impact/Scratch Resistant, Easy to Clean, Anti-Slip Silicone Base - Black",
+    "b": "ASUS",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61yzzcb5-dL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CLHLLQ6P",
+        "url": "https://www.amazon.com/dp/B0CLHLLQ6P?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.661Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101871,
+    "c": "MousePad",
+    "n": "Glorious Elements Mousepad - XL Mouse Pad - Glass Infused Flexible Cloth Computer Desk Pad for Speed Gaming 15\"x17\" (ICE)",
+    "b": "Glorious",
+    "pr": 34.99,
+    "msrp": 34.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/51BXL5CDwsL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08G6C9ZHD",
+        "url": "https://www.amazon.com/dp/B08G6C9ZHD?tag=tiereduptech-20",
+        "price": 34.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.662Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101872,
+    "c": "MousePad",
+    "n": "ASUS ROG Scabbard II Arctic Gray XXL Gaming Mouse Pad – 35.4” x 15.7” (Extended/XXL Size), Soft Cloth Surface, Water/Oil/Dust-Resistant, Anti-Fray Edges, Non-Slip Base - Gray",
+    "b": "ASUS",
+    "pr": 37.99,
+    "msrp": 37.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81HsBMM2hFL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJS6CGGQ",
+        "url": "https://www.amazon.com/dp/B0FJS6CGGQ?tag=tiereduptech-20",
+        "price": 37.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.662Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101873,
+    "c": "MousePad",
+    "n": "ASUS ROG Sheath BLK Gaming Mouse Pad – 35.4” x 17.3\", Extra-Large Surface, Ultra-Smooth for Precise Mouse Control, Anti-Fray Stitched Edges, Non-Slip Base - Black/Gray",
+    "b": "ASUS",
+    "pr": 23.99,
+    "msrp": 23.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81e0Ok1ireL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08NCC1GCN",
+        "url": "https://www.amazon.com/dp/B08NCC1GCN?tag=tiereduptech-20",
+        "price": 23.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.662Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101874,
+    "c": "MousePad",
+    "n": "Razer Gigantus V2 Cloth Gaming Mouse Pad (Medium): Thick, High-Density Foam - Non-Slip Base - Classic Black",
+    "b": "Razer",
+    "pr": 9.99,
+    "msrp": 9.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81NLgh-2QfL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B088539GLT",
+        "url": "https://www.amazon.com/dp/B088539GLT?tag=tiereduptech-20",
+        "price": 9.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.662Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101875,
+    "c": "MousePad",
+    "n": "Razer Goliathus Speed (Small) Gaming Mousepad: Smooth Gaming Mat - Anti-Slip Rubber Base - Portable Cloth Design - Anti-Fraying Stitched Frame - Stealth",
+    "b": "Razer",
+    "pr": 7.99,
+    "msrp": 7.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51zZzM0aswL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0722JC9PJ",
+        "url": "https://www.amazon.com/dp/B0722JC9PJ?tag=tiereduptech-20",
+        "price": 7.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.662Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101876,
+    "c": "PSU",
+    "n": "be quiet! Pure Power 12 M 1000W Modular Power Supply | 80 Plus® Gold | ATX 3.1 | PCIe 5.0 GPUs and 6+2 pin connectors | 12VHPWR Cable Included | Silent 120mm be quiet! Fan - BN506 I 10 Year Warranty",
+    "b": "be quiet!",
+    "pr": 129.86,
+    "msrp": 129.86,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71qEMnLNCuL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BVYCXQY4",
+        "url": "https://www.amazon.com/dp/B0BVYCXQY4?tag=tiereduptech-20",
+        "price": 129.86,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.662Z",
+    "source": "amazon-discovery",
+    "watts": 1000,
+    "eff": "80+ Gold",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101877,
+    "c": "PSU",
+    "n": "MUSETEX PC Power Supply 1000W, Full Modular ATX Power Supply, ATX 3.1 & PCIE 5.0 Gaming Power Supply, 105°C-Main Capacitors, With 12V-2x6 Cable, 140mm Ultra Quiet Cooling Fan, PC PSU, (Black) (MU1000)",
+    "b": "MUSETEX",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81vjSmxgm7L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GN1XVVFW",
+        "url": "https://www.amazon.com/dp/B0GN1XVVFW?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.662Z",
+    "source": "amazon-discovery",
+    "watts": 1000,
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101878,
+    "c": "PSU",
+    "n": "CORSAIR RM1000e ATX 3.1 PCIe 5.1 Ready Fully Modular 1000W Power Supply – 12V-2x6 Cable Included, Cybenetics Gold Efficiency, 105°C-Rated Capacitors, Modern Standby Mode – White",
+    "b": "Corsair",
+    "pr": 174.99,
+    "msrp": 174.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/7151GOFlYfL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FLG369BK",
+        "url": "https://www.amazon.com/dp/B0FLG369BK?tag=tiereduptech-20",
+        "price": 174.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.662Z",
+    "source": "amazon-discovery",
+    "watts": 1000,
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101879,
+    "c": "PSU",
+    "n": "Lian Li EDGE1000W Fully Modular Low-Noise ATX Power Supply - ATX 3.1 & PCIE 5.1 Compliant - Cybenetics Gold Efficiency - 12V-2x6 Cable - L-Shape Design - with USB/Fan Hub - Black (EG1000G.BH)",
+    "b": "Lian Li",
+    "pr": 158.99,
+    "msrp": 158.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81kzkctRu6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DN16HS1L",
+        "url": "https://www.amazon.com/dp/B0DN16HS1L?tag=tiereduptech-20",
+        "price": 158.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.662Z",
+    "source": "amazon-discovery",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101880,
+    "c": "PSU",
+    "n": "MSI MAG A1250GL PCIE5, Fully Modular Compact Gaming 1250W Power Supply, 80+ Gold, ATX 3.1 & PCIe 5.1 Ready, Native Dual-Color 12V-2x6 Cable, 10 Year Warranty",
+    "b": "MSI",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/8123nG5THML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CT41F6FV",
+        "url": "https://www.amazon.com/dp/B0CT41F6FV?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.662Z",
+    "source": "amazon-discovery",
+    "watts": 1250,
+    "eff": "80+ Gold",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101881,
+    "c": "PSU",
+    "n": "NZXT C1200 Gold ATX 3.1 - Fully Modular Low-Noise PC Gaming Power Supply - 1200 Watts - 80 Plus Gold - 12V-2x6 Connector - Zero Fan Mode - 100% Japanese Capacitors - Black",
+    "b": "NZXT",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/511OnPdHliL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D1VDNCT7",
+        "url": "https://www.amazon.com/dp/B0D1VDNCT7?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.662Z",
+    "source": "amazon-discovery",
+    "eff": "80+ Gold",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101882,
+    "c": "PSU",
+    "n": "ASUS ROG Loki SFX-L 1200W Titanium PSU (Fully Modular Power Supply, 80+ Titanium, 120mm PWM ARGB Fan, Aura Sync, ATX 3.0 Compatible, PCIe 5.0 Ready, 10 Year Warranty)",
+    "b": "ASUS",
+    "pr": 335.69,
+    "msrp": 335.69,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81dNSvJZk6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DHFVYNZC",
+        "url": "https://www.amazon.com/dp/B0DHFVYNZC?tag=tiereduptech-20",
+        "price": 335.69,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.663Z",
+    "source": "amazon-discovery",
+    "watts": 1200,
+    "eff": "80+ Titanium",
+    "modular": "Full",
+    "ff": "SFX-L",
+    "atx3": true
+  },
+  {
+    "id": 101883,
+    "c": "PSU",
+    "n": "ASRock PG 1600G ATX 3.1 1600W Power Supply PCle5.1 10 Years Warranty Fully Modular Japanese Capacitor Phantom Gaming PG-1600G 80 Plus Gold Cybenetics Platinum 12V-2x6 Cables",
+    "b": "ASRock",
+    "pr": 199.99,
+    "msrp": 199.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/818XlFXRKGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DNNZ9G46",
+        "url": "https://www.amazon.com/dp/B0DNNZ9G46?tag=tiereduptech-20",
+        "price": 199.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.663Z",
+    "source": "amazon-discovery",
+    "watts": 1600,
+    "eff": "80+ Gold",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101884,
+    "c": "PSU",
+    "n": "MSI MPG A850GS PCIE5, Fully Modular Gaming 850W Power Supply, 80+ Gold, Dual 12V-2x6 Cables, Server-Grade Capacitor, ATX 3.1 & PCIe 5.1 Ready, Low-Noise, Semi Digital, 10 Year Warranty",
+    "b": "MSI",
+    "pr": 109.99,
+    "msrp": 109.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81JIgLMw2-L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DT2V39K4",
+        "url": "https://www.amazon.com/dp/B0DT2V39K4?tag=tiereduptech-20",
+        "price": 109.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.663Z",
+    "source": "amazon-discovery",
+    "watts": 850,
+    "eff": "80+ Gold",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101885,
+    "c": "PSU",
+    "n": "Seasonic Prime TX-1600 Noctua Edition, Ultra-Quiet Fully Modular 1600W 80 Plus Titanium Efficiency ATX 3.1 PC Power Supply (Black/Brown) with US AC Power Cord",
+    "b": "Seasonic",
+    "pr": 654,
+    "msrp": 654,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71ZLjg+I-ML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DMW5F3GG",
+        "url": "https://www.amazon.com/dp/B0DMW5F3GG?tag=tiereduptech-20",
+        "price": 654,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.663Z",
+    "source": "amazon-discovery",
+    "watts": 1600,
+    "eff": "80+ Titanium",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101886,
+    "c": "PSU",
+    "n": "be quiet! Dark Power 13 750W Quiet Performance Power Supply | 80 Plus Titanium Efficiency | ATX 3.0 | PCIe 5 | Modular | BN659",
+    "b": "be quiet!",
+    "pr": 179.9,
+    "msrp": 179.9,
+    "r": 3.6,
+    "img": "https://m.media-amazon.com/images/I/81HxCfuGyeL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BV6FSFL9",
+        "url": "https://www.amazon.com/dp/B0BV6FSFL9?tag=tiereduptech-20",
+        "price": 179.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.664Z",
+    "source": "amazon-discovery",
+    "watts": 750,
+    "eff": "80+ Titanium",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101887,
+    "c": "PSU",
+    "n": "CableMod E-Series Classic ModFlex Sleeved Cable Kit for EVGA G/G+ / P/P+ / T (White)",
+    "b": "EVGA",
+    "pr": 69.9,
+    "msrp": 69.9,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61bj4zYy1NL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07HM6YM6K",
+        "url": "https://www.amazon.com/dp/B07HM6YM6K?tag=tiereduptech-20",
+        "price": 69.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.666Z",
+    "source": "amazon-discovery",
+    "needsReview": true
+  },
+  {
+    "id": 101888,
+    "c": "PSU",
+    "n": "PCIe Cable for EVGA Power Supply, PCIe 8 Pin Male to 6+2 Pin Male, 18AWG 10A EVGA Supernova Power Supply Cables -23.6 inch (60cm)",
+    "b": "EVGA",
+    "pr": 8.99,
+    "msrp": 8.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/717+4Mht2BL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FM3YY81S",
+        "url": "https://www.amazon.com/dp/B0FM3YY81S?tag=tiereduptech-20",
+        "price": 8.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.666Z",
+    "source": "amazon-discovery",
+    "needsReview": true
+  },
+  {
+    "id": 101889,
+    "c": "PSU",
+    "n": "Modular Power Cable 10Pin+18Pin to 24Pin 18AWG Black Flat Cable for EVGA Power Supply G+ G2 G3 P2 T2 GS Series, 60cm long",
+    "b": "EVGA",
+    "pr": 19.99,
+    "msrp": 19.99,
+    "r": 3.2,
+    "img": "https://m.media-amazon.com/images/I/71BtcBVatSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CRR1TKCF",
+        "url": "https://www.amazon.com/dp/B0CRR1TKCF?tag=tiereduptech-20",
+        "price": 19.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.666Z",
+    "source": "amazon-discovery",
+    "modular": "Full"
+  },
+  {
+    "id": 101890,
+    "c": "PSU",
+    "n": "GinTai 6 pin to 2X SATA Power Supply Cable for EVGA Supernova 650 750 850 1000 G2 G3/ 750 850 1000 1300 1600 2000 G+/ 550 650 750 850 GA/ 650 750 850 1000 1300 G2/ 550 650 750 850 1000 G3",
+    "b": "EVGA",
+    "pr": 15.48,
+    "msrp": 15.48,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/51AMiprdD4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08M9S479G",
+        "url": "https://www.amazon.com/dp/B08M9S479G?tag=tiereduptech-20",
+        "price": 15.48,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.666Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101891,
+    "c": "Case",
+    "n": "COOLER MASTER MASTERBOX Elite 500 Cabinet with Side ODD Glass – E500-KG5N-S00 - COOLER MASTER",
+    "b": "Cooler Master",
+    "pr": 105.45,
+    "msrp": 105.45,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/517QnhPBSbL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09PWJ1SBN",
+        "url": "https://www.amazon.com/dp/B09PWJ1SBN?tag=tiereduptech-20",
+        "price": 105.45,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.668Z",
+    "source": "amazon-discovery",
+    "needsReview": true
+  },
+  {
+    "id": 101892,
+    "c": "Case",
+    "n": "Cooler Master MasterBox Q300L Micro-ATX Tower with Magnetic Design Dust Filter & Thermaltake Smart 600W ATX 12V V2.3/EPS 12V 80 Plus Certified Active PFC Power Supply PS-SPD-0600NPCWUS-W",
+    "b": "Thermaltake",
+    "pr": 82.98,
+    "msrp": 82.98,
+    "r": 4.9,
+    "img": "https://m.media-amazon.com/images/I/51bd5cs78aL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BRQ5HTRB",
+        "url": "https://www.amazon.com/dp/B0BRQ5HTRB?tag=tiereduptech-20",
+        "price": 82.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.668Z",
+    "source": "amazon-discovery",
+    "mobo": [
+      "ATX",
+      "mATX"
+    ]
+  },
+  {
+    "id": 101893,
+    "c": "Case",
+    "n": "Be Quiet BW028US 280 mm Pure Loop 3 Black CPU Liquid Cooler for Heavily Overclocked Systems & 2X Pure Wings 3 PWM High-Speed Fan",
+    "b": "be quiet!",
+    "pr": 99.31,
+    "msrp": 99.31,
+    "r": 4.9,
+    "img": "https://m.media-amazon.com/images/I/61dS2aWD+UL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FNMP513T",
+        "url": "https://www.amazon.com/dp/B0FNMP513T?tag=tiereduptech-20",
+        "price": 99.31,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.668Z",
+    "source": "amazon-discovery",
+    "needsReview": true
+  },
+  {
+    "id": 101894,
+    "c": "Case",
+    "n": "Side Panel Guide Replacement Compatible with Hyte Y60 and Y70 Guides Panels into Place, Easy Installation, PC Case Upgrade Accessory 2 Pack",
+    "b": "Hyte",
+    "pr": 20,
+    "msrp": 20,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/61vt1TvC1XL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GV829Q58",
+        "url": "https://www.amazon.com/dp/B0GV829Q58?tag=tiereduptech-20",
+        "price": 20,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.669Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101895,
+    "c": "Case",
+    "n": "Lian Li O11 Vision Compact Black-Steel-Tempered Glass ATX Mid Tower Computer Case-Back Connect Support-O11VPX",
+    "b": "Lian Li",
+    "pr": 124.99,
+    "msrp": 124.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/619JoMYrJrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DJPV8XG3",
+        "url": "https://www.amazon.com/dp/B0DJPV8XG3?tag=tiereduptech-20",
+        "price": 124.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.669Z",
+    "source": "amazon-discovery",
+    "ff": "Mid Tower",
+    "mobo": [
+      "ATX"
+    ],
+    "tg": true
+  },
+  {
+    "id": 101896,
+    "c": "Case",
+    "n": "Lian Li O11D EVO RGB E-ATX Gaming Dual Chamber case - ARGB Lighting Strips - Up to 420mm Radiator - Cable Management - Front and Side Tempered Glass Panels - Reversible Chassis (O11DERGBW.US)",
+    "b": "Lian Li",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61OeOaBlAIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CRKWLLZF",
+        "url": "https://www.amazon.com/dp/B0CRKWLLZF?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.669Z",
+    "source": "amazon-discovery",
+    "mobo": [
+      "E-ATX"
+    ],
+    "tg": true,
+    "rgb": true
+  },
+  {
+    "id": 101897,
+    "c": "Case",
+    "n": "Lian Li Dynamic EVO XL - Up to 280mm E-ATX Motherboard - ARGB Lighting Strips - Up to 3X 420mm Radiator -Front and Side Tempered Glass Panels - Reversible Chassis- Cable Management (O11DEXL-W)",
+    "b": "Lian Li",
+    "pr": 249.97,
+    "msrp": 249.97,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71Tir-CN3fL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CHM85TND",
+        "url": "https://www.amazon.com/dp/B0CHM85TND?tag=tiereduptech-20",
+        "price": 249.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.669Z",
+    "source": "amazon-discovery",
+    "mobo": [
+      "E-ATX"
+    ],
+    "tg": true,
+    "rgb": true
+  },
+  {
+    "id": 101898,
+    "c": "Case",
+    "n": "LIAN LI O11 Dynamic EVO XL RGB Tempered Glass EATX Full Tower Computer CASE - Whit",
+    "b": "Lian Li",
+    "pr": 249.97,
+    "msrp": 249.97,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51r-5eHYJiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CKJ11LFD",
+        "url": "https://www.amazon.com/dp/B0CKJ11LFD?tag=tiereduptech-20",
+        "price": 249.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.669Z",
+    "source": "amazon-discovery",
+    "ff": "Full Tower",
+    "mobo": [
+      "E-ATX"
+    ],
+    "tg": true,
+    "rgb": true
+  },
+  {
+    "id": 101899,
+    "c": "Case",
+    "n": "Lian Li ATX PC Case 4 Slots Vertical GPU Kit (VG4v4) - Premium Gen 5 Riser Cable PCI-E 5.0 x16-200mm, PCIe 3.0/4.0 Compatible, Adjustable Position - Fits Most PC Cases (VG4v4 Black)",
+    "b": "Lian Li",
+    "pr": 76.99,
+    "msrp": 76.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71CS1htp7bL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FR4TC1M7",
+        "url": "https://www.amazon.com/dp/B0FR4TC1M7?tag=tiereduptech-20",
+        "price": 76.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.669Z",
+    "source": "amazon-discovery",
+    "mobo": [
+      "ATX"
+    ]
+  },
+  {
+    "id": 101900,
+    "c": "Case",
+    "n": "Desktop Raised Feet for Lian Li O11 Dynamic Evo with Front/Side IO Panel(USB), Enhance Airflow & Easy Bottom Cleaning, Sturdy Case Lift Stand for Improved Cooling (Black, + 40mm)",
+    "b": "Lian Li",
+    "pr": 25.98,
+    "msrp": 25.98,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/71CT5APhDEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FCWVNHBM",
+        "url": "https://www.amazon.com/dp/B0FCWVNHBM?tag=tiereduptech-20",
+        "price": 25.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.669Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101901,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120 Vision EVO CPU Air Cooler, Twin Tower Radiator 2150RPM Speed,480x480 Resolving Power IPS Screen with 3.95in,Computer Cooler for Intel lga1851/1700/115x,AM4/AM5",
+    "b": "Thermalright",
+    "pr": 81.59,
+    "msrp": 81.59,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71EweR+bgfL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FQC7XT4M",
+        "url": "https://www.amazon.com/dp/B0FQC7XT4M?tag=tiereduptech-20",
+        "price": 81.59,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.673Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101902,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120 Digital EVO CPU Air Cooler,7 Heat Pipes CPU Cooler,Dual 120mm PWM Fans,Magnetic Attraction-Digital Screen Top Cover,for AM4/AM5/LGA1700/1851/1150/1151/1200,PC Cooling",
+    "b": "Thermalright",
+    "pr": 56.9,
+    "msrp": 56.9,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71Bs2O0P3IL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FHPWQD3J",
+        "url": "https://www.amazon.com/dp/B0FHPWQD3J?tag=tiereduptech-20",
+        "price": 56.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.673Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101903,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120 EVO CPU Cooler,Dual TL-K12 PWM Fan, 7 Heat Pipes CPU Cooling,with 2150RPM Speed,for AMD AM4 AM5/Intel 1700/1150/1151/1200/2011/1851, PC Heatsink Cooler",
+    "b": "Thermalright",
+    "pr": 46.79,
+    "msrp": 46.79,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71YzGiybLcL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CL8TJCMZ",
+        "url": "https://www.amazon.com/dp/B0CL8TJCMZ?tag=tiereduptech-20",
+        "price": 46.79,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.673Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101904,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120 CPU Air Cooler, 7 Heat Pipes CPU Cooler,Dual 120mm TL-C12B V2 PWM Fan, AGHP 4.0 Technology,S-FDB Bearing,for AMD AM4 AM5/Intel 1700/115X/1851/1200/2011,(PS120)",
+    "b": "Thermalright",
+    "pr": 37.9,
+    "msrp": 37.9,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71tvWzuf-UL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4JK43LQ",
+        "url": "https://www.amazon.com/dp/B0C4JK43LQ?tag=tiereduptech-20",
+        "price": 37.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.673Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101905,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120 EVO CPU Cooler, 2150RPM TL-K12 PWM Fans, 7 Heat Pipes, for AMD AM4/AM5 & Intel LGA 1700/1851",
+    "b": "Thermalright",
+    "pr": 57.9,
+    "msrp": 57.9,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61uUOjpBuoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CYJ6SZ4R",
+        "url": "https://www.amazon.com/dp/B0CYJ6SZ4R?tag=tiereduptech-20",
+        "price": 57.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.673Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101906,
+    "c": "CPUCooler",
+    "n": "Thermalright Assassin Spirit 120 Vision ARGB Black, with Black Top Cover, CPU Air Cooler, PC Cooling,240 * 240 Resolving Power IPS LCD Screen,Editable,with 1.54in for Intel lga1851/1700/115X,AM4/AM5",
+    "b": "Thermalright",
+    "pr": 29.59,
+    "msrp": 29.59,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/719enKdOBiL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DFXNXX3S",
+        "url": "https://www.amazon.com/dp/B0DFXNXX3S?tag=tiereduptech-20",
+        "price": 29.59,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.673Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101907,
+    "c": "CPUCooler",
+    "n": "Lian Li Hydroshift 360 AIO - Pre-Installed 3 x 28MM Fans, Side-Mounted Coolant Pathway, 2.88” LCD Screen 480 x 480 Res. Captured Images & Recorded Videos -LGA 1851,1700, 1200, AM5,4 -White(HSLCD36SW)",
+    "b": "Lian Li",
+    "pr": 179.99,
+    "msrp": 179.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71qy54HvZ4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D83M25X5",
+        "url": "https://www.amazon.com/dp/B0D83M25X5?tag=tiereduptech-20",
+        "price": 179.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.674Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO"
+  },
+  {
+    "id": 101908,
+    "c": "CPUCooler",
+    "n": "Lian Li Hydroshift II-C 360TL RGB Liquid CPU Cooler - 360mm AIO - 3X 120 RGB Fans - 2.1” IPS LCD Screen - 3 Control Mode - Flexible Tubes Clamp - LGA 1851/1700, AMD AM5/AM4 - Black (HS2LCD36TB)",
+    "b": "Lian Li",
+    "pr": 233.14,
+    "msrp": 233.14,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71vecLp25HL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F1MH466S",
+        "url": "https://www.amazon.com/dp/B0F1MH466S?tag=tiereduptech-20",
+        "price": 233.14,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.674Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO",
+    "radSize": 360
+  },
+  {
+    "id": 101909,
+    "c": "CPUCooler",
+    "n": "Corsair CORSAIR Virtuoso RGB Wireless XT High-Fidelity Gaming Headset with Bluetooth and Spatial Audio - Works with Mac, PC, PS5, PS4, Xbox Series X/S - Slate (Renewed)",
+    "b": "Corsair",
+    "pr": 139.95,
+    "msrp": 139.95,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71xK0oPvBLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09L9QK63G",
+        "url": "https://www.amazon.com/dp/B09L9QK63G?tag=tiereduptech-20",
+        "price": 139.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.674Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101910,
+    "c": "CPUCooler",
+    "n": "GSPSCN 11\" Rear Wiper Blade For Lincoln Corsair 24-20, Nautilus 23-19，MKC 19-15，MKX 18-16，Navigator 23-18 /Mini Cooper Paceman 16-13 /VW Passat 11-06 Back Windshield Wiper Blade (11-G / A281H)",
+    "b": "Corsair",
+    "pr": 7.91,
+    "msrp": 7.91,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71iJBD39fwL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CMZNNS2P",
+        "url": "https://www.amazon.com/dp/B0CMZNNS2P?tag=tiereduptech-20",
+        "price": 7.91,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.674Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101911,
+    "c": "CPUCooler",
+    "n": "Phanteks Glacier One 360M25-LCD AIO Liquid CPU Cooler, 6” IPS LCD HD Display, 120mm M25 Gen2 D-RGB Fans, High-Performance Copper Cold Plate, Intel & AMD Compatible, White",
+    "b": "Phanteks",
+    "pr": 149.99,
+    "msrp": 149.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/618K61tmWLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FPVTKC2V",
+        "url": "https://www.amazon.com/dp/B0FPVTKC2V?tag=tiereduptech-20",
+        "price": 149.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.675Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO",
+    "radSize": 120
+  },
+  {
+    "id": 101912,
+    "c": "CPUCooler",
+    "n": "Thermalright Burst Assassin 120 Vision White CPU Air Cooler, Desktop CPU Cooler with 1500RPM Speed,320x240 Resolving Power IPS LCD Screen with 2.4in,PC Cooling for Intel lga1851/1700/115X,AM4/AM5",
+    "b": "Thermalright",
+    "pr": 46.9,
+    "msrp": 46.9,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/614HxV9JoSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DP7D84LL",
+        "url": "https://www.amazon.com/dp/B0DP7D84LL?tag=tiereduptech-20",
+        "price": 46.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.675Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101913,
+    "c": "CPUCooler",
+    "n": "Thermalright Burst Assassin 120 ARGB CPU Air Cooler,6 Heat Pipes Single Tower,120mm PWM Quiet Fan CPU Cooler,for AM4 /AM5/Intel lga1700/1851/1150/1151/1200, 154mm High, 1550RPM, ARGB PC Cooling",
+    "b": "Thermalright",
+    "pr": 22.9,
+    "msrp": 22.9,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61K5GxHSKXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09SDGBJ55",
+        "url": "https://www.amazon.com/dp/B09SDGBJ55?tag=tiereduptech-20",
+        "price": 22.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.675Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101914,
+    "c": "CPUCooler",
+    "n": "Thermalright Peerless Assassin 120 SE Extrem CPU Air Cooler with 6 Heat Pipes, Dual PWM Fans, AGHP heatpipe Technology, 154mm High Cooling, for AM5/AM4, Intel LGA1851/1700/1150/1151/1155/1156/1200",
+    "b": "Thermalright",
+    "pr": 37.9,
+    "msrp": 37.9,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61C2fmo435L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FQ5MF5D5",
+        "url": "https://www.amazon.com/dp/B0FQ5MF5D5?tag=tiereduptech-20",
+        "price": 37.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.675Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101915,
+    "c": "CPUCooler",
+    "n": "JONSBO CA90 Black Dual-Tower CPU Cooler,Mute Series air Cooling,CPU Fan H159mm,130mm PWM Fan CPU Air Cooler,6 Copper Heat Pipes Radiator, AM5/AM4/ Intel LGA115X/1200/1700/1851,D-TDP 270W",
+    "b": "Jonsbo",
+    "pr": 42.99,
+    "msrp": 42.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71o2jo1Ez2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G1BRDLX6",
+        "url": "https://www.amazon.com/dp/B0G1BRDLX6?tag=tiereduptech-20",
+        "price": 42.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.675Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101916,
+    "c": "CPUCooler",
+    "n": "ARCTIC Alpine 17 - Intel CPU Cooler, 92 mm PWM Fan, Radial Heatsink, Top Blower, Intel LGA 1700, 4-Pin Connector, 100-2000 RPM",
+    "b": "Arctic",
+    "pr": 9.99,
+    "msrp": 9.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/710CJ3gY2GL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09SHV7LZ3",
+        "url": "https://www.amazon.com/dp/B09SHV7LZ3?tag=tiereduptech-20",
+        "price": 9.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.675Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101917,
+    "c": "CPUCooler",
+    "n": "Cooler Master i70C ARGB Low Profile CPU Air Cooler for Intel LGA 1700/1851 Only – 120mm PWM ARGB Fan, 95W TDP, Copper Core Base, Black Aluminum Heatsink",
+    "b": "Cooler Master",
+    "pr": 21.49,
+    "msrp": 21.49,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71NpXjHeS+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BB88471Y",
+        "url": "https://www.amazon.com/dp/B0BB88471Y?tag=tiereduptech-20",
+        "price": 21.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.675Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101918,
+    "c": "CPUCooler",
+    "n": "Cooler Master Hyper 212 Halo CPU Sink - Black Aluminum Finish, 4 Heat Continuous Direct Contact Pipes with Fins, MF120 Halo2 ARGB Fan, ARGB Detects, LGA1700 and AM5 Support - Black",
+    "b": "Cooler Master",
+    "pr": 22.47,
+    "msrp": 22.47,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71-kcJnNenL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07NXZL1CL",
+        "url": "https://www.amazon.com/dp/B07NXZL1CL?tag=tiereduptech-20",
+        "price": 22.47,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.675Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101919,
+    "c": "CPUCooler",
+    "n": "Noctua NH-L9i-17xx, Premium Low-Profile CPU Cooler for Intel LGA1700 and LGA1851 (Brown)",
+    "b": "Noctua",
+    "pr": 49.95,
+    "msrp": 49.95,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71av9uxBMRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09HCLB7M3",
+        "url": "https://www.amazon.com/dp/B09HCLB7M3?tag=tiereduptech-20",
+        "price": 49.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.676Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101920,
+    "c": "CPUCooler",
+    "n": "Thermalright AXP90-X53 Low Profile ITX CPU Air Cooler, 53mm Height Cooling, TL-9015 Slim PWM Fan, AGHP Technology, for AM4 /AM5/Intel lga1700/1150/1151/1200/1851, ITX PC Cooler(AXP90 X53)",
+    "b": "Thermalright",
+    "pr": 22.9,
+    "msrp": 22.9,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/712UJOqywGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08S6XM69Q",
+        "url": "https://www.amazon.com/dp/B08S6XM69Q?tag=tiereduptech-20",
+        "price": 22.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.676Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101921,
+    "c": "CPUCooler",
+    "n": "Thermalright LGA 1700-SS2 Mounting Kit for CPU Coolers on Intel's LGA1700 Platform, Mounting Kit for LGA1700 Socket",
+    "b": "Thermalright",
+    "pr": 7.99,
+    "msrp": 7.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/51GdEESt7-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09LTQYNSL",
+        "url": "https://www.amazon.com/dp/B09LTQYNSL?tag=tiereduptech-20",
+        "price": 7.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.676Z",
+    "source": "amazon-discovery",
+    "needsReview": true
+  },
+  {
+    "id": 101922,
+    "c": "CPUCooler",
+    "n": "JONSBO CR1400 EVO CPU Cooler,ARGB Mute Series air Cooling, CPU Fan Height 130mm,92mm Fan Mini CPU Cooler,4 Copper Heat Pipes Air heatsink Tower Radiator, for AM5/AM4/Intel LGA1700/1851,Black",
+    "b": "Jonsbo",
+    "pr": 21.99,
+    "msrp": 21.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71wfMUFX58L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CXSH2PXQ",
+        "url": "https://www.amazon.com/dp/B0CXSH2PXQ?tag=tiereduptech-20",
+        "price": 21.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.676Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101923,
+    "c": "Storage",
+    "n": "Samsung SSD 9100 Pro NVMe M.2, 8 TB, PCIe 5.0, 14 800 MB/S Read, 13 400 MB/S Write Internal SSD for Gaming, Video & Computer Ai, Black, Mz-Vap8T0BW",
+    "b": "Samsung",
+    "pr": 2549,
+    "msrp": 2549,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71hXyRf4P-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FGPSR9VZ",
+        "url": "https://www.amazon.com/dp/B0FGPSR9VZ?tag=tiereduptech-20",
+        "price": 2549,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.676Z",
+    "source": "amazon-discovery",
+    "cap": 8000,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 5
+  },
+  {
+    "id": 101924,
+    "c": "Storage",
+    "n": "SABRENT 8TB Rocket 4 Plus NVMe 4.0 Gen4 PCIe M.2 Internal SSD Extreme Performance Solid State Drive R/W 7100/6600MB/s (SB-RKT4P-8TB)",
+    "b": "Sabrent",
+    "pr": 2399.99,
+    "msrp": 2399.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71Pk9KPuOZL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09WZK8YMY",
+        "url": "https://www.amazon.com/dp/B09WZK8YMY?tag=tiereduptech-20",
+        "price": 2399.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.676Z",
+    "source": "amazon-discovery",
+    "cap": 8000,
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101925,
+    "c": "Storage",
+    "n": "Corsair MP600 PRO LPX 8TB M.2 NVMe PCIe x4 Gen4 SSD - Optimised for PS5 (Up to 7,000MB/sec Sequential Read & 6,100MB/sec Sequential Write Speeds, High-Speed Interface, Compact Form Factor) Black",
+    "b": "Corsair",
+    "pr": 1264.99,
+    "msrp": 1264.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/81FmzjAgkUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CJRN3LLX",
+        "url": "https://www.amazon.com/dp/B0CJRN3LLX?tag=tiereduptech-20",
+        "price": 1264.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.676Z",
+    "source": "amazon-discovery",
+    "cap": 8000,
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101926,
+    "c": "Storage",
+    "n": "M.2 2280 NVMe SSD Heatsink for Samsung 990 Pro/ 990 EVO Plus/ 9100 Pro/ 970 EVO Plus/ 980 PRO/ 860 EVO, Cooler Heatsink for PC with Thermal Silicone pad, Black",
+    "b": "Samsung",
+    "pr": 9.95,
+    "msrp": 9.95,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61whZ0vO9FL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GV219MV5",
+        "url": "https://www.amazon.com/dp/B0GV219MV5?tag=tiereduptech-20",
+        "price": 9.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.676Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101927,
+    "c": "Storage",
+    "n": "SANDISK 1TB Extreme Portable SSD (New Model) - up to 2000MB/s Transfer speeds, USB Type-C connectivity, Reliable Durability - Black - SDSSDE70-1T00-G25",
+    "b": "SanDisk",
+    "pr": 259.99,
+    "msrp": 259.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71u6LfJqm-L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GMWYYRQL",
+        "url": "https://www.amazon.com/dp/B0GMWYYRQL?tag=tiereduptech-20",
+        "price": 259.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.677Z",
+    "source": "amazon-discovery",
+    "cap": 1000,
+    "storageType": "SSD"
+  },
+  {
+    "id": 101928,
+    "c": "Storage",
+    "n": "Sabrent USB 3.2 Type-C Tool-Free Enclosure for M.2 PCIe NVMe and SATA SSDs (EC-SNVE)",
+    "b": "Sabrent",
+    "pr": 24.99,
+    "msrp": 24.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71XNHBZRMpL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08RVC6F9Y",
+        "url": "https://www.amazon.com/dp/B08RVC6F9Y?tag=tiereduptech-20",
+        "price": 24.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.677Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101929,
+    "c": "Storage",
+    "n": "WD Blue 4TB SN5100 NVMe SSD - M.2 2280, PCIe Gen 4.0, Internal Solid State Drive - Read Speeds Up to 6,900MB/s, Upgrade Storage for PC/Laptops - WDS400T5B0E",
+    "b": "Western Digital",
+    "pr": 599.99,
+    "msrp": 599.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/51jcp-WvSwL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FSC839RG",
+        "url": "https://www.amazon.com/dp/B0FSC839RG?tag=tiereduptech-20",
+        "price": 599.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.677Z",
+    "source": "amazon-discovery",
+    "cap": 4000,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4
+  },
+  {
+    "id": 101930,
+    "c": "Storage",
+    "n": "fanxiang 500GB M.2 2230 NVMe SSD, PCIe Gen 4x4 Speed up to 4850 MB/s, 2230 SSD Compatible with Steam Deck/ROG Ally/Microsoft Surface Pro/Mini PCs, S630",
+    "b": "Microsoft",
+    "pr": 139.99,
+    "msrp": 139.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61RF6zES6rL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DZX34SZN",
+        "url": "https://www.amazon.com/dp/B0DZX34SZN?tag=tiereduptech-20",
+        "price": 139.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.678Z",
+    "source": "amazon-discovery",
+    "cap": 500,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4
+  },
+  {
+    "id": 101931,
+    "c": "Storage",
+    "n": "WD_Black SN770M 1TB M.2 2230 NVMeSSD - PCIe Gen 4.0, Speeds up to 5150 MB/s, for Handheld Gaming Devices and Compatible laptops, TLC 3D NAND, Great for Asus ROG Ally, Steam Deck, Microsoft Surface",
+    "b": "Western Digital",
+    "pr": 346.89,
+    "msrp": 346.89,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61yg9DzhgPL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CHJXHVZM",
+        "url": "https://www.amazon.com/dp/B0CHJXHVZM?tag=tiereduptech-20",
+        "price": 346.89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.678Z",
+    "source": "amazon-discovery",
+    "cap": 1000,
+    "pcie": 4
+  },
+  {
+    "id": 101932,
+    "c": "Storage",
+    "n": "512GB M.2 2230 NVMe Gen4x4 PCIe SSD, 3D NAND, Graphene Thermal Solution, Up to 5200MB/s, Compatible with Steam Deck, ASUS ROG Ally, Microsoft Surface, Laptops, Mini PCs, Ultrabook",
+    "b": "ASUS",
+    "pr": 139.99,
+    "msrp": 139.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/611R66mmozL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FH4P66MZ",
+        "url": "https://www.amazon.com/dp/B0FH4P66MZ?tag=tiereduptech-20",
+        "price": 139.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.678Z",
+    "source": "amazon-discovery",
+    "cap": 512,
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101933,
+    "c": "Storage",
+    "n": "SANDISK 1TB Extreme PRO Portable SSD - Up to 2000MB/s - USB-C, USB 3.2 Gen 2x2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE81-1T00-G25",
+    "b": "SanDisk",
+    "pr": 209.99,
+    "msrp": 209.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71z2lEHwfNL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08GV9M64L",
+        "url": "https://www.amazon.com/dp/B08GV9M64L?tag=tiereduptech-20",
+        "price": 209.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.679Z",
+    "source": "amazon-discovery",
+    "cap": 1000,
+    "storageType": "SSD",
+    "interface": "USB"
+  },
+  {
+    "id": 101934,
+    "c": "Storage",
+    "n": "ASUS ROG STRIX Arion Aluminum Alloy M.2 NVMe SSD External Portable Enclosure Case Adapter, USB 3.2 Gen 2 Type-C (10 Gbps), USB-C to C and USB-C to A Cables, Fits PCIe 2280/2260/2242/2230 M Key/B+M Key",
+    "b": "ASUS",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51RE3BCyYkL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07ZKB4SLK",
+        "url": "https://www.amazon.com/dp/B07ZKB4SLK?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.679Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101935,
+    "c": "Storage",
+    "n": "4TB SANDISK Extreme PRO Portable SSD with USB4, Up to 3800 MB/s Read and 3700MB/s Write, USB-C, USB 3.2, Backwards Compatible, IP65 Water and Dust Resistance - SDSSDE82-4T00-G25",
+    "b": "SanDisk",
+    "pr": 949.99,
+    "msrp": 949.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81QbofRpHSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DN6DK3X4",
+        "url": "https://www.amazon.com/dp/B0DN6DK3X4?tag=tiereduptech-20",
+        "price": 949.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.679Z",
+    "source": "amazon-discovery",
+    "cap": 4000,
+    "storageType": "SSD"
+  },
+  {
+    "id": 101936,
+    "c": "Storage",
+    "n": "INLAND 1TB TN510 NVMe SSD Internal Solid State Drive - Gen 5x4, PCIe5.0 M.2 2280, seq. Read Speed up to 10,000 MB/s, for AI Applications, Gaming, and Video Editing",
+    "b": "Inland",
+    "pr": 219.99,
+    "msrp": 219.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/51PStsJgo9L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJ1GGGR7",
+        "url": "https://www.amazon.com/dp/B0FJ1GGGR7?tag=tiereduptech-20",
+        "price": 219.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.679Z",
+    "source": "amazon-discovery",
+    "cap": 1000,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 5
+  },
+  {
+    "id": 101937,
+    "c": "Storage",
+    "n": "GIGABYTE AORUS Gen5 12000 SSD 1TB PCIe 5.0 NVMe M.2 Internal Solid State Hard Drive with Read Speed Up to 11700MB/s, Write Speed Up to 9500MB/s, AG512K1TB",
+    "b": "Gigabyte",
+    "pr": 249,
+    "msrp": 249,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71u-6MjGgyL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CDP24LW9",
+        "url": "https://www.amazon.com/dp/B0CDP24LW9?tag=tiereduptech-20",
+        "price": 249,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.679Z",
+    "source": "amazon-discovery",
+    "cap": 1000,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 5
+  },
+  {
+    "id": 101938,
+    "c": "Storage",
+    "n": "Seagate Game Drive PS5 NVMe SSD for PS5 1TB Internal Solid State Drive - PCIe Gen4 NVMe 1.4, Officially Licensed, Up to 7300MB/s with Heatsink (ZP1000GP3A1011)",
+    "b": "Seagate",
+    "pr": 279.98,
+    "msrp": 279.98,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/611MSVCxBAL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CGFD2GVZ",
+        "url": "https://www.amazon.com/dp/B0CGFD2GVZ?tag=tiereduptech-20",
+        "price": 279.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T17:05:43.679Z",
     "source": "amazon-discovery",
     "cap": 1000,
     "storageType": "NVMe",
