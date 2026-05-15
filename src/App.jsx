@@ -4644,9 +4644,9 @@ export default function App(){
     setPageRaw(p);
     const url = p === "home" ? "/" : "/" + p;
     if (replaceCurrent) {
-      window.history.replaceState({page:p}, "", url);
+      window.history.replaceState({page:p}, "", url + window.location.search);
     } else {
-      window.history.pushState({page:p}, "", url);
+      window.history.pushState({page:p}, "", url + window.location.search);
     }
   };
 
