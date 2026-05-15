@@ -4580,8 +4580,8 @@ function ScannerPromo({ go, page }) {
   return (
     <div onMouseLeave={close} style={{position:"fixed",left:0,top:"50%",transform:"translateY(-50%)",zIndex:50,fontFamily:"var(--ff)"}}>
       {!expanded && (
-        <button onMouseEnter={open} onClick={open} style={{background:"linear-gradient(135deg,var(--accent),#FF6B35)",border:"none",borderRadius:"0 12px 12px 0",padding:"14px 8px",cursor:"pointer",color:"#fff",writingMode:"vertical-rl",transform:"rotate(180deg)",fontSize:13,fontWeight:700,letterSpacing:0.6,boxShadow:"0 4px 16px rgba(0,0,0,0.3)",display:"flex",alignItems:"center",gap:6}} title="Get Pro Rig Scanner">
-          <span style={{fontSize:18,transform:"rotate(90deg)"}}>💻</span>
+        <button onMouseEnter={open} onClick={open} style={{background:"linear-gradient(135deg,var(--accent),#FF6B35)",border:"none",borderRadius:"0 12px 12px 0",padding:"24px 16px",cursor:"pointer",color:"#fff",writingMode:"vertical-rl",transform:"rotate(180deg)",fontSize:20,fontWeight:800,letterSpacing:1.5,boxShadow:"0 4px 16px rgba(0,0,0,0.3)",display:"flex",alignItems:"center",gap:6}} title="Get Pro Rig Scanner">
+          <span style={{fontSize:32,transform:"rotate(90deg)"}}>💻</span>
           <span>SCAN YOUR PC</span>
         </button>
       )}
