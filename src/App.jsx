@@ -3250,6 +3250,8 @@ function BuilderFPS({gpu,cpu,ram}){
 /* ═══ BUILDER PART PICKER (full page with filters) ═══ */
 function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
   const [q,setQ]=useState("");
+  const [viewMode,setViewMode]=useState(()=>{try{return localStorage.getItem("rf-viewmode")||"row";}catch{return "row";}});
+  const setViewModeP=v=>{setViewMode(v);try{localStorage.setItem("rf-viewmode",v);}catch{}};
   const [sort,setSort]=useState("price-asc");
   const [brands,setBrands]=useState([]);
   const [minR,setMinR]=useState(0);
