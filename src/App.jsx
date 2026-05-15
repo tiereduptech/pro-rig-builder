@@ -898,7 +898,7 @@ function CatThumb({ cat, thumbs, setThumb, removeThumb, size = 48, editable = tr
 function MegaMenu({onSelect,onClose,th}){
   const G=[{t:"Components",cats:["CPU","GPU","RAM","Motherboard","Storage","PSU"]},{t:"Build",cats:["Case","CPUCooler","CaseFan"]},{t:"Peripherals",cats:["Monitor","Keyboard","Mouse","Headset"]},{t:"Expansion",cats:["SoundCard","WiFiCard","EthernetCard","ExtensionCables"]}];
   return <div className="mega-in" style={{position:"absolute",top:"100%",left:0,right:0,background:"var(--bg2)",borderBottom:"1px solid var(--bdr2)",zIndex:100,padding:"20px 0"}} onMouseLeave={onClose}>
-    <div style={{maxWidth:1320,margin:"0 auto",display:"flex",gap:32,padding:"0 24px"}}>
+    <div style={{maxWidth:1536,margin:"0 auto",display:"flex",gap:32,padding:"0 24px"}}>
       {G.map(g=><div key={g.t} style={{flex:1}}><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)",letterSpacing:2,marginBottom:10,fontWeight:600}}>{g.t.toUpperCase()}</div>{g.cats.map(c=>{const m=CAT[c];return <button key={c} onClick={()=>{onSelect(c);onClose();}} style={{display:"flex",alignItems:"center",gap:8,padding:"7px 8px",borderRadius:6,background:"transparent",border:"none",cursor:"pointer",textAlign:"left",color:"var(--txt)",fontFamily:"var(--ff)",width:"100%"}}><CatThumb cat={c} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={32} rounded={6} editable={false}/><div style={{flex:1}}><div style={{fontSize:13,fontWeight:600}}>{m.label}</div><div style={{fontSize:9,color:"var(--dim)"}}>{m.desc}</div></div><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)"}}>{P.filter(p=>p.c===c).length}</span></button>})}</div>)}
       <div style={{width:180,background:"var(--bg3)",borderRadius:10,padding:14}}><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--amber)",letterSpacing:1,marginBottom:6}}>🔥 TRENDING</div>{P.filter(p=>p.bench>=95).slice(0,3).map(p=><div key={p.id} style={{display:"flex",justifyContent:"space-between",padding:"5px 0",borderBottom:"1px solid var(--bdr)"}}><span style={{fontSize:13,color:"var(--txt)"}}>{p.n}</span><span style={{fontSize:10,color:"var(--mint)",fontFamily:"var(--mono)",fontWeight:600}}>${fmtPrice($(p))}</span></div>)}</div>
     </div>
@@ -945,7 +945,7 @@ function ScannerPage({go}) {
       {/* ── HERO ── */}
       <div style={{background:"var(--heroGrad)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
-        <div style={{maxWidth:1320,margin:"0 auto",padding:"72px 32px 56px",position:"relative"}}>
+        <div style={{maxWidth:1536,margin:"0 auto",padding:"72px 32px 56px",position:"relative"}}>
           <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--amber)",color:"#1a1a20",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:13,fontWeight:800,letterSpacing:1.5,marginBottom:24}}>
             ✨ NEW · PROPRIETARY SOLUTION
           </div>
@@ -973,7 +973,7 @@ function ScannerPage({go}) {
 
       {/* ── HOW IT WORKS ── */}
       <div style={{background:"var(--bg2)",borderBottom:"1px solid var(--bdr)"}}>
-        <div style={{maxWidth:1320,margin:"0 auto",padding:"64px 32px"}}>
+        <div style={{maxWidth:1536,margin:"0 auto",padding:"64px 32px"}}>
           <div style={{textAlign:"center",marginBottom:48}}>
             <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--accent)",fontWeight:600,letterSpacing:2,marginBottom:8}}>HOW IT WORKS</div>
             <h2 style={{fontFamily:"var(--ff)",fontSize:32,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5}}>Three steps. Thirty seconds.</h2>
@@ -993,7 +993,7 @@ function ScannerPage({go}) {
       </div>
 
       {/* ── WHY IT'S DIFFERENT ── */}
-      <div style={{maxWidth:1320,margin:"0 auto",padding:"64px 32px"}}>
+      <div style={{maxWidth:1536,margin:"0 auto",padding:"64px 32px"}}>
         <div style={{textAlign:"center",marginBottom:48}}>
           <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--accent)",fontWeight:600,letterSpacing:2,marginBottom:8}}>WHY SCANNER</div>
           <h2 style={{fontFamily:"var(--ff)",fontSize:32,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5}}>No other site does this.</h2>
@@ -1697,7 +1697,7 @@ function ComparePage({go}) {
       </div>
 
       {/* HEAD-TO-HEAD SECTIONS */}
-      <div style={{maxWidth:1320,margin:"0 auto",padding:"56px 32px"}}>
+      <div style={{maxWidth:1536,margin:"0 auto",padding:"56px 32px"}}>
         <div style={{textAlign:"center",marginBottom:40}}>
           <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--accent)",fontWeight:700,letterSpacing:2,marginBottom:8}}>HEAD TO HEAD</div>
           <h2 style={{fontFamily:"var(--ff)",fontSize:32,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5}}>Direct comparisons</h2>
@@ -4007,7 +4007,7 @@ function ToolsPage({th}){
   const inp={width:"100%",background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:6,padding:"7px 10px",fontSize:13,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",marginBottom:8};
   const tierColor=t=>t==="Excellent"?"var(--mint)":t==="Great"?"var(--sky)":t==="Smooth"?"var(--amber)":t==="Playable"?"var(--rose)":"var(--mute)";
 
-  return <div className="fade" style={{maxWidth:1320,margin:"0 auto",padding:"28px 20px"}}>
+  return <div className="fade" style={{maxWidth:1536,margin:"0 auto",padding:"28px 20px"}}>
     {(()=>{const seo=TOOL_SEO_DATA[tool];const slug=TOOL_URL_SLUGS[tool];if(!seo)return null;return <SEO key={tool} title={seo.title} description={seo.description} canonical={`https://prorigbuilder.com/#tools/${slug}`} breadcrumb={[{name:'Home',url:'https://prorigbuilder.com/'},{name:'Smart Tools',url:'https://prorigbuilder.com/#tools'},{name:seo.h1,url:`https://prorigbuilder.com/#tools/${slug}`}]} faq={seo.faq}/>;})()}
     <h1 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)",marginBottom:4}}>{TOOL_SEO_DATA[tool]?.h1||'Smart Tools'}</h1>
     <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",marginBottom:20,maxWidth:940,lineHeight:1.5}}>{TOOL_SEO_DATA[tool]?.intro||'Estimate gaming performance, auto-generate builds, and compare parts.'}</p>
