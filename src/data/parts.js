@@ -100335,7 +100335,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80026,
@@ -100520,7 +100522,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "CW-9060093-WW"
+    "mpn": "CW-9060093-WW",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80030,
@@ -100570,7 +100574,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 200,
-    "mpn": "ACFRE00188A"
+    "mpn": "ACFRE00188A",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80031,
@@ -100737,7 +100743,9 @@ export const PARTS = [
     "bench": 74,
     "fanSize": 120,
     "height": 52,
-    "cfm": 132
+    "cfm": 132,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80035,
@@ -100877,7 +100885,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "CW-9060089-WW"
+    "mpn": "CW-9060089-WW",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80038,
@@ -101017,7 +101027,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "L-P360L-AM3M-G0W"
+    "mpn": "L-P360L-AM3M-G0W",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80041,
@@ -101057,7 +101069,9 @@ export const PARTS = [
     "bench": 100,
     "fanSize": 140,
     "height": 52,
-    "cfm": 240
+    "cfm": 240,
+    "radiator": 420,
+    "fanCount": 3
   },
   {
     "id": 80042,
@@ -101097,7 +101111,9 @@ export const PARTS = [
     "bench": 90,
     "fanSize": 120,
     "height": 52,
-    "cfm": 132
+    "cfm": 132,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80043,
@@ -101136,7 +101152,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80044,
@@ -101358,7 +101376,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80049,
@@ -101398,7 +101418,9 @@ export const PARTS = [
     "bench": 100,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80050,
@@ -101493,7 +101515,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 213,
-    "mpn": "RL-KR36E-B2"
+    "mpn": "RL-KR36E-B2",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80052,
@@ -101544,7 +101568,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 120,
-    "mpn": "ELW-D24M-A21DA-RW"
+    "mpn": "ELW-D24M-A21DA-RW",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80053,
@@ -101594,7 +101620,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80054,
@@ -101684,7 +101712,9 @@ export const PARTS = [
     "bench": 92,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80056,
@@ -101761,7 +101791,9 @@ export const PARTS = [
     "bench": 67,
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80058,
@@ -101811,7 +101843,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "HS2LCDS36TB"
+    "mpn": "HS2LCDS36TB",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80059,
@@ -101850,7 +101884,9 @@ export const PARTS = [
     "bench": 51,
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80060,
@@ -101898,7 +101934,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80061,
@@ -102050,7 +102088,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "CW-9061026-WW"
+    "mpn": "CW-9061026-WW",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80064,
@@ -102237,7 +102277,9 @@ export const PARTS = [
     "bench": 91,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80068,
@@ -102288,7 +102330,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 120,
-    "mpn": "CW-9060088-WW"
+    "mpn": "CW-9060088-WW",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80069,
@@ -102452,7 +102496,10 @@ export const PARTS = [
     "compatibility": "Desktop",
     "bench": 68,
     "radSize": "240",
-    "cfm": 120
+    "cfm": 120,
+    "coolerType": "AIO",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80073,
@@ -102499,7 +102546,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 142,
-    "mpn": "RL-KR24E-W2"
+    "mpn": "RL-KR24E-W2",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80074,
@@ -102556,7 +102605,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "CW-9061034-WW"
+    "mpn": "CW-9061034-WW",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80075,
@@ -102644,7 +102695,9 @@ export const PARTS = [
     "bench": 100,
     "fanSize": 140,
     "height": 52,
-    "cfm": 240
+    "cfm": 240,
+    "radiator": 420,
+    "fanCount": 3
   },
   {
     "id": 80077,
@@ -102691,7 +102744,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 142,
-    "mpn": "RL-KN24E-B2"
+    "mpn": "RL-KN24E-B2",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80078,
@@ -102787,7 +102842,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 213,
-    "mpn": "RL-KN36E-B2"
+    "mpn": "RL-KN36E-B2",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80080,
@@ -102839,7 +102896,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "RYUJIN III 360 ARGB EXTREME"
+    "mpn": "RYUJIN III 360 ARGB EXTREME",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80081,
@@ -102976,7 +103035,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80084,
@@ -103015,7 +103076,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80085,
@@ -103055,7 +103118,9 @@ export const PARTS = [
     "bench": 90,
     "fanSize": 120,
     "height": 52,
-    "cfm": 132
+    "cfm": 132,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80086,
@@ -103135,7 +103200,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80088,
@@ -103223,7 +103290,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "HS2LCDS36TW"
+    "mpn": "HS2LCDS36TW",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80090,
@@ -103292,7 +103361,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 120,
-    "mpn": "RL-KR24C-B1"
+    "mpn": "RL-KR24C-B1",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80091,
@@ -103340,7 +103411,9 @@ export const PARTS = [
     "bench": 96,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80092,
@@ -103398,7 +103471,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "RL-KR36C-B1"
+    "mpn": "RL-KR36C-B1",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80093,
@@ -103516,7 +103591,9 @@ export const PARTS = [
     "bench": 88,
     "fanSize": 120,
     "height": 52,
-    "cfm": 132
+    "cfm": 132,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80096,
@@ -103730,7 +103807,9 @@ export const PARTS = [
     "bench": 39,
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80101,
@@ -103973,7 +104052,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "ROG RYUO III 360 ARGB WHT"
+    "mpn": "ROG RYUO III 360 ARGB WHT",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80106,
@@ -104098,7 +104179,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "L-P360A-AS3M-G1K"
+    "mpn": "L-P360A-AS3M-G1K",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80109,
@@ -104186,7 +104269,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "L-P360A-AS3M-G1W"
+    "mpn": "L-P360A-AS3M-G1W",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80111,
@@ -104225,7 +104310,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80112,
@@ -104281,7 +104368,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 120,
-    "mpn": "CW-9061031-WW"
+    "mpn": "CW-9061031-WW",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80113,
@@ -104320,7 +104409,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80114,
@@ -104406,7 +104497,9 @@ export const PARTS = [
     "bench": 83,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80116,
@@ -104453,7 +104546,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "RL-KR360-B2"
+    "mpn": "RL-KR360-B2",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80117,
@@ -104658,7 +104753,9 @@ export const PARTS = [
     "bench": 96,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80122,
@@ -104823,7 +104920,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80126,
@@ -104863,7 +104962,9 @@ export const PARTS = [
     "bench": 100,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80127,
@@ -105001,7 +105102,9 @@ export const PARTS = [
     "bench": 72,
     "fanSize": 120,
     "height": 52,
-    "cfm": 132
+    "cfm": 132,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80130,
@@ -105142,7 +105245,9 @@ export const PARTS = [
     "bench": 62,
     "radSize": "120",
     "fanSize": 140,
-    "cfm": 132
+    "cfm": 132,
+    "radiator": 120,
+    "fanCount": 1
   },
   {
     "id": 80133,
@@ -105279,7 +105384,9 @@ export const PARTS = [
     "height": 52,
     "cfm": 60,
     "upc": "00815671013705",
-    "mpn": "RL-KRM22-01"
+    "mpn": "RL-KRM22-01",
+    "radiator": 120,
+    "fanCount": 1
   },
   {
     "id": 80136,
@@ -105375,7 +105482,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80138,
@@ -105430,7 +105539,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80139,
@@ -105470,7 +105581,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80140,
@@ -105609,7 +105722,9 @@ export const PARTS = [
     "fanSize": 140,
     "height": 52,
     "cfm": 180,
-    "mpn": "ACFRE00179A"
+    "mpn": "ACFRE00179A",
+    "radiator": 280,
+    "fanCount": 2
   },
   {
     "id": 80143,
@@ -105711,7 +105826,9 @@ export const PARTS = [
     "fanSize": 140,
     "height": 52,
     "cfm": 180,
-    "mpn": "ACFRE00106A"
+    "mpn": "ACFRE00106A",
+    "radiator": 280,
+    "fanCount": 2
   },
   {
     "id": 80145,
@@ -105761,7 +105878,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 130,
-    "mpn": "ACFRE00182A"
+    "mpn": "ACFRE00182A",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80146,
@@ -105811,7 +105930,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 130,
-    "mpn": "ACFRE00186A"
+    "mpn": "ACFRE00186A",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80147,
@@ -105861,7 +105982,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 130,
-    "mpn": "ACFRE00150A"
+    "mpn": "ACFRE00150A",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80148,
@@ -105912,7 +106035,9 @@ export const PARTS = [
     "fanSize": 140,
     "height": 52,
     "cfm": 180,
-    "mpn": "ACFRE00187A"
+    "mpn": "ACFRE00187A",
+    "radiator": 280,
+    "fanCount": 2
   },
   {
     "id": 80149,
@@ -105963,7 +106088,9 @@ export const PARTS = [
     "fanSize": 140,
     "height": 52,
     "cfm": 180,
-    "mpn": "ACFRE00183A"
+    "mpn": "ACFRE00183A",
+    "radiator": 280,
+    "fanCount": 2
   },
   {
     "id": 80150,
@@ -106014,7 +106141,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 120,
-    "mpn": "MLW-D24M-A18PZ-RW"
+    "mpn": "MLW-D24M-A18PZ-RW",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80151,
@@ -106066,7 +106195,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "GA2ALCD36INB.US"
+    "mpn": "GA2ALCD36INB.US",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80152,
@@ -106155,7 +106286,9 @@ export const PARTS = [
     "fanSize": 140,
     "height": 52,
     "cfm": 145,
-    "mpn": "H110"
+    "mpn": "H110",
+    "radiator": 280,
+    "fanCount": 2
   },
   {
     "id": 80154,
@@ -106206,7 +106339,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 130,
-    "mpn": "ACFRE00178A"
+    "mpn": "ACFRE00178A",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80155,
@@ -106598,7 +106733,9 @@ export const PARTS = [
     "bench": 93,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80164,
@@ -106684,7 +106821,9 @@ export const PARTS = [
     "bench": 91,
     "fanSize": 120,
     "height": 52,
-    "cfm": 132
+    "cfm": 132,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80166,
@@ -106731,7 +106870,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 120,
-    "mpn": "RL-KR240-B2"
+    "mpn": "RL-KR240-B2",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80167,
@@ -106770,7 +106911,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80168,
@@ -106810,7 +106953,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80169,
@@ -106849,7 +106994,9 @@ export const PARTS = [
     "bench": 73,
     "fanSize": 120,
     "height": 52,
-    "cfm": 132
+    "cfm": 132,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80170,
@@ -106901,7 +107048,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "MLX-D36M-A25PZ-R1"
+    "mpn": "MLX-D36M-A25PZ-R1",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80171,
@@ -106979,7 +107128,9 @@ export const PARTS = [
     "bench": 97,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80173,
@@ -107059,7 +107210,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80175,
@@ -107109,7 +107262,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "GA2L36PB"
+    "mpn": "GA2L36PB",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80176,
@@ -107159,7 +107314,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 120,
-    "mpn": "GA2L24PB"
+    "mpn": "GA2L24PB",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80177,
@@ -107209,7 +107366,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80178,
@@ -107258,7 +107417,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80179,
@@ -107297,7 +107458,9 @@ export const PARTS = [
     "bench": 89,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80180,
@@ -107495,7 +107658,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 120,
-    "mpn": "MAG CoreLiquid240RV2"
+    "mpn": "MAG CoreLiquid240RV2",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80184,
@@ -107536,7 +107701,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80185,
@@ -107568,7 +107735,10 @@ export const PARTS = [
     "compatibility": "Desktop",
     "bench": 56,
     "radSize": "240",
-    "cfm": 120
+    "cfm": 120,
+    "coolerType": "AIO",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80186,
@@ -107606,7 +107776,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80187,
@@ -107656,7 +107828,9 @@ export const PARTS = [
     "bench": 73,
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80188,
@@ -107745,7 +107919,9 @@ export const PARTS = [
     "bench": 95,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80190,
@@ -107776,7 +107952,10 @@ export const PARTS = [
     "compatibility": "Desktop",
     "bench": 56,
     "radSize": "240",
-    "cfm": 120
+    "cfm": 120,
+    "coolerType": "AIO",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80191,
@@ -107865,7 +108044,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80193,
@@ -107941,7 +108122,9 @@ export const PARTS = [
     "bench": 67,
     "fanSize": 120,
     "height": 52,
-    "cfm": 95
+    "cfm": 95,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80195,
@@ -107980,7 +108163,9 @@ export const PARTS = [
     "bench": 92,
     "fanSize": 120,
     "height": 52,
-    "cfm": 132
+    "cfm": 132,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80196,
@@ -108019,7 +108204,9 @@ export const PARTS = [
     "bench": 71,
     "fanSize": 120,
     "height": 52,
-    "cfm": 132
+    "cfm": 132,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80197,
@@ -108058,7 +108245,9 @@ export const PARTS = [
     "bench": 92,
     "fanSize": 120,
     "height": 52,
-    "cfm": 132
+    "cfm": 132,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80198,
@@ -108105,7 +108294,8 @@ export const PARTS = [
     "bench": 61,
     "radSize": "120",
     "fanSize": 140,
-    "cfm": 132
+    "cfm": 132,
+    "airflow": 88.89
   },
   {
     "id": 80199,
@@ -108155,7 +108345,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80200,
@@ -108194,7 +108386,9 @@ export const PARTS = [
     "bench": 69,
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80201,
@@ -108304,7 +108498,9 @@ export const PARTS = [
     "height": 52,
     "cfm": 180,
     "upc": "04710562748482",
-    "mpn": "HyperFlow Silent 360 Black"
+    "mpn": "HyperFlow Silent 360 Black",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80203,
@@ -108420,7 +108616,9 @@ export const PARTS = [
     "bench": 95,
     "fanSize": 120,
     "height": 52,
-    "cfm": 165
+    "cfm": 165,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80206,
@@ -108460,7 +108658,9 @@ export const PARTS = [
     "bench": 90,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80207,
@@ -108499,7 +108699,9 @@ export const PARTS = [
     "bench": 67,
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80208,
@@ -108548,7 +108750,9 @@ export const PARTS = [
     "bench": 94,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80209,
@@ -108623,7 +108827,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80211,
@@ -108659,7 +108865,9 @@ export const PARTS = [
     "bench": 73,
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80212,
@@ -108813,7 +109021,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80216,
@@ -108852,7 +109062,9 @@ export const PARTS = [
     "bench": 73,
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80217,
@@ -108903,7 +109115,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 165,
-    "mpn": "GA2T36INW"
+    "mpn": "GA2T36INW",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80218,
@@ -108981,7 +109195,9 @@ export const PARTS = [
     "bench": 54,
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80220,
@@ -109020,7 +109236,9 @@ export const PARTS = [
     "bench": 93,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80221,
@@ -109139,7 +109357,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80224,
@@ -109178,7 +109398,9 @@ export const PARTS = [
     "bench": 88,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80225,
@@ -109256,7 +109478,9 @@ export const PARTS = [
     "bench": 71,
     "fanSize": 120,
     "height": 52,
-    "cfm": 132
+    "cfm": 132,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80227,
@@ -109344,7 +109568,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "Skeleton 360 ARGB"
+    "mpn": "Skeleton 360 ARGB",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80229,
@@ -109432,7 +109658,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80231,
@@ -109481,7 +109709,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80232,
@@ -109609,7 +109839,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 165,
-    "mpn": "GA2ALCD36INW"
+    "mpn": "GA2ALCD36INW",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80235,
@@ -109647,7 +109879,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80236,
@@ -109685,7 +109919,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80237,
@@ -109724,7 +109960,9 @@ export const PARTS = [
     "bench": 72,
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80238,
@@ -109762,7 +110000,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80239,
@@ -109799,7 +110039,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 165
+    "cfm": 165,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80240,
@@ -109838,7 +110080,9 @@ export const PARTS = [
     "bench": 90,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80241,
@@ -109888,7 +110132,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80242,
@@ -109927,7 +110173,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80243,
@@ -109967,7 +110215,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80244,
@@ -110006,7 +110256,9 @@ export const PARTS = [
     "bench": 97,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80245,
@@ -110083,7 +110335,10 @@ export const PARTS = [
     "compatibility": "Desktop",
     "bench": 49,
     "radSize": "240",
-    "cfm": 120
+    "cfm": 120,
+    "coolerType": "AIO",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80247,
@@ -110123,7 +110378,9 @@ export const PARTS = [
     "bench": 93,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80248,
@@ -110176,7 +110433,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "MLX-D36M-A25SZ-L1"
+    "mpn": "MLX-D36M-A25SZ-L1",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80249,
@@ -110214,7 +110473,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80250,
@@ -110253,7 +110514,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 180
+    "cfm": 180,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80251,
@@ -110293,7 +110556,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80252,
@@ -110342,7 +110607,9 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 165
+    "cfm": 165,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80253,
@@ -110438,7 +110705,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 165,
-    "mpn": "GA2ALCD36B"
+    "mpn": "GA2ALCD36B",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80255,
@@ -110478,7 +110747,9 @@ export const PARTS = [
     "bench": 79,
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80256,
@@ -110530,7 +110801,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 120,
-    "mpn": "MAG Coreliquid A12 240"
+    "mpn": "MAG Coreliquid A12 240",
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80257,
@@ -110566,7 +110839,9 @@ export const PARTS = [
     "bench": 92,
     "fanSize": 120,
     "height": 52,
-    "cfm": 165
+    "cfm": 165,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80258,
@@ -110617,7 +110892,9 @@ export const PARTS = [
     "fanSize": 140,
     "height": 52,
     "cfm": 150,
-    "mpn": "GA2ALCD28TLB"
+    "mpn": "GA2ALCD28TLB",
+    "radiator": 280,
+    "fanCount": 2
   },
   {
     "id": 80259,
@@ -110706,7 +110983,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 165,
-    "mpn": "GA2P36W"
+    "mpn": "GA2P36W",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80261,
@@ -110910,7 +111189,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 165,
-    "mpn": "GA2T36B"
+    "mpn": "GA2T36B",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80266,
@@ -111036,7 +111317,9 @@ export const PARTS = [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "mpn": "90RC0191-B0AAY0"
+    "mpn": "90RC0191-B0AAY0",
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80269,
@@ -111242,7 +111525,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 26,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 120,
+    "fanCount": 1
   },
   {
     "id": 80274,
@@ -111287,7 +111572,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 55,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80275,
@@ -111322,7 +111609,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 59,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 280,
+    "fanCount": 2
   },
   {
     "id": 80276,
@@ -111402,7 +111691,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 57,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80278,
@@ -111448,7 +111739,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 23,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 120,
+    "fanCount": 1
   },
   {
     "id": 80279,
@@ -111483,7 +111776,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 39,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80280,
@@ -111528,7 +111823,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 56,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 420,
+    "fanCount": 3
   },
   {
     "id": 80281,
@@ -111573,7 +111870,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 57,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80282,
@@ -111618,7 +111917,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 39,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80283,
@@ -111664,7 +111965,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 57,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80284,
@@ -111709,7 +112012,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 39,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80285,
@@ -111745,7 +112050,9 @@ export const PARTS = [
     "bench": 28,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "height": 52,
-    "bundle": false
+    "bundle": false,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80286,
@@ -111781,7 +112088,9 @@ export const PARTS = [
     "bench": 46,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "height": 52,
-    "bundle": false
+    "bundle": false,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80287,
@@ -111817,7 +112126,9 @@ export const PARTS = [
     "bench": 46,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "height": 52,
-    "bundle": false
+    "bundle": false,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80288,
@@ -111862,7 +112173,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 60,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80289,
@@ -111907,7 +112220,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 42,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80290,
@@ -111952,7 +112267,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 60,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80291,
@@ -111987,7 +112304,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 42,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80292,
@@ -112033,7 +112352,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 60,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80293,
@@ -112068,7 +112389,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 54,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80294,
@@ -112103,7 +112426,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 62,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 280,
+    "fanCount": 2
   },
   {
     "id": 80295,
@@ -112138,7 +112463,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 72,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80296,
@@ -112173,7 +112500,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 62,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 280,
+    "fanCount": 2
   },
   {
     "id": 80297,
@@ -112219,7 +112548,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 49,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80298,
@@ -112265,7 +112596,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 80,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80299,
@@ -112311,7 +112644,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 57,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80300,
@@ -112357,7 +112692,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 75,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80301,
@@ -112392,7 +112729,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 68,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 420,
+    "fanCount": 3
   },
   {
     "id": 80302,
@@ -112438,7 +112777,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 57,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80303,
@@ -112483,7 +112824,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 39,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 240,
+    "fanCount": 2
   },
   {
     "id": 80304,
@@ -112529,7 +112872,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 75,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80306,
@@ -112575,7 +112920,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 62,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 80307,
@@ -112621,7 +112968,9 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 68,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 85000,
@@ -151559,7 +151908,11 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
-    "tdp_rating": 65
+    "tdp_rating": 65,
+    "bench": 15,
+    "sockets": [
+      "AM4"
+    ]
   },
   {
     "id": 100354,
@@ -151580,7 +151933,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 23,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100355,
@@ -151602,7 +151960,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 48,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100356,
@@ -151624,7 +151989,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 49,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100357,
@@ -151646,7 +152018,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 52,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100358,
@@ -151669,7 +152048,14 @@ export const PARTS = [
     "source": "amazon-discovery",
     "coolerType": "AIO",
     "radSize": 360,
-    "fans": 120
+    "fans": 120,
+    "bench": 51,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100359,
@@ -151691,7 +152077,13 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 37,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5"
+    ]
   },
   {
     "id": 100360,
@@ -151712,7 +152104,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
-    "tdp_rating": 130
+    "tdp_rating": 130,
+    "bench": 41
   },
   {
     "id": 100361,
@@ -151733,7 +152126,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
-    "tdp_rating": 160
+    "tdp_rating": 160,
+    "bench": 45,
+    "sockets": [
+      "AM4",
+      "AM3"
+    ]
   },
   {
     "id": 100362,
@@ -151754,7 +152152,11 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
-    "tdp_rating": 160
+    "tdp_rating": 160,
+    "bench": 44,
+    "sockets": [
+      "AM4"
+    ]
   },
   {
     "id": 100363,
@@ -151775,7 +152177,11 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
-    "tdp_rating": 190
+    "tdp_rating": 190,
+    "bench": 47,
+    "sockets": [
+      "AM4"
+    ]
   },
   {
     "id": 100364,
@@ -151796,7 +152202,14 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 47,
+    "fanCount": 2,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 100365,
@@ -151817,7 +152230,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 49,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100366,
@@ -151837,7 +152256,14 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 48,
+    "coolerType": "Air",
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 100367,
@@ -151857,7 +152283,13 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 45,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100368,
@@ -151878,7 +152310,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 40,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100369,
@@ -151899,7 +152336,9 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
-    "tdp_rating": 130
+    "tdp_rating": 130,
+    "bench": 41,
+    "coolerType": "Air"
   },
   {
     "id": 100370,
@@ -151921,7 +152360,15 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 140
+    "radSize": 140,
+    "bench": 39,
+    "radiator": 420,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 100371,
@@ -151943,7 +152390,13 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 58,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "sTR5"
+    ]
   },
   {
     "id": 100372,
@@ -151965,7 +152418,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 52,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 100373,
@@ -151987,7 +152443,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 60,
+    "radiator": 360,
+    "fanCount": 3
   },
   {
     "id": 100374,
@@ -152008,7 +152467,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.411Z",
     "source": "amazon-discovery",
-    "needsReview": true
+    "needsReview": true,
+    "bench": 33
   },
   {
     "id": 100375,
@@ -152028,7 +152488,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T13:17:14.411Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 36
   },
   {
     "id": 100376,
@@ -152050,7 +152511,13 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.411Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 420
+    "radSize": 420,
+    "bench": 42,
+    "radiator": 420,
+    "fanCount": 3,
+    "sockets": [
+      "AM5"
+    ]
   },
   {
     "id": 100377,
@@ -152070,7 +152537,9 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T13:17:14.411Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 39,
+    "coolerType": "AIO"
   },
   {
     "id": 100378,
@@ -156622,7 +157091,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.768Z",
     "source": "amazon-discovery",
-    "watts": 20
+    "watts": 20,
+    "needsReview": true
   },
   {
     "id": 100570,
@@ -162677,7 +163147,8 @@ export const PARTS = [
     "cap": 250,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "2.5\""
+    "ff": "2.5\"",
+    "needsReview": true
   },
   {
     "id": 100824,
@@ -164496,7 +164967,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 26
   },
   {
     "id": 100901,
@@ -164517,7 +164989,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 37,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100902,
@@ -164538,7 +165015,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "tdp_rating": 265
+    "tdp_rating": 265,
+    "bench": 37,
+    "coolerType": "Air",
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100903,
@@ -164559,7 +165042,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 26,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 100904,
@@ -164580,7 +165069,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 26,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100905,
@@ -164601,7 +165095,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 26,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100906,
@@ -164622,7 +165122,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 34,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100907,
@@ -164643,7 +165149,11 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 27,
+    "sockets": [
+      "AM4"
+    ]
   },
   {
     "id": 100908,
@@ -164664,7 +165174,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 36,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100909,
@@ -164685,7 +165201,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 37,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100910,
@@ -164707,7 +165228,12 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "coolerType": "Air",
-    "tdp_rating": 260
+    "tdp_rating": 260,
+    "bench": 35,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100911,
@@ -164728,7 +165254,11 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 28,
+    "sockets": [
+      "AM5"
+    ]
   },
   {
     "id": 100912,
@@ -164749,7 +165279,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 34,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100913,
@@ -164770,7 +165305,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 26,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100914,
@@ -164791,7 +165331,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 29,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100915,
@@ -164812,7 +165357,15 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 42,
+    "radiator": 120,
+    "fanCount": 1,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 100916,
@@ -164833,7 +165386,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 28,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100917,
@@ -164853,7 +165412,9 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 43,
+    "coolerType": "Air"
   },
   {
     "id": 100918,
@@ -164875,7 +165436,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 280
+    "radSize": 280,
+    "bench": 43,
+    "radiator": 280,
+    "fanCount": 2,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100919,
@@ -164897,7 +165465,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 45,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100920,
@@ -164918,7 +165493,14 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 40,
+    "radiator": 280,
+    "fanCount": 2,
+    "sockets": [
+      "LGA1851",
+      "LGA1700"
+    ]
   },
   {
     "id": 100921,
@@ -164940,7 +165522,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 280
+    "radSize": 280,
+    "bench": 44,
+    "radiator": 280,
+    "fanCount": 2,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100922,
@@ -164962,7 +165551,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 420
+    "radSize": 420,
+    "bench": 61,
+    "radiator": 420,
+    "fanCount": 3
   },
   {
     "id": 100923,
@@ -164984,7 +165576,13 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 420
+    "radSize": 420,
+    "bench": 45,
+    "radiator": 420,
+    "fanCount": 3,
+    "sockets": [
+      "AM5"
+    ]
   },
   {
     "id": 100924,
@@ -165006,7 +165604,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 140
+    "radSize": 140,
+    "bench": 20,
+    "radiator": 140,
+    "fanCount": 1
   },
   {
     "id": 100925,
@@ -165028,7 +165629,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 420
+    "radSize": 420,
+    "bench": 42,
+    "radiator": 420,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "LGA1700"
+    ]
   },
   {
     "id": 100926,
@@ -165049,7 +165657,10 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 15,
+    "radiator": 140,
+    "fanCount": 1
   },
   {
     "id": 100927,
@@ -165070,7 +165681,10 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 15,
+    "radiator": 140,
+    "fanCount": 1
   },
   {
     "id": 100928,
@@ -165091,7 +165705,10 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 15,
+    "radiator": 140,
+    "fanCount": 1
   },
   {
     "id": 100929,
@@ -165113,7 +165730,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 140
+    "radSize": 140,
+    "bench": 15,
+    "radiator": 420,
+    "fanCount": 3
   },
   {
     "id": 100930,
@@ -165135,7 +165755,13 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 420
+    "radSize": 420,
+    "bench": 29,
+    "radiator": 420,
+    "fanCount": 3,
+    "sockets": [
+      "sTR5"
+    ]
   },
   {
     "id": 100931,
@@ -165157,7 +165783,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 52,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100932,
@@ -165178,7 +165811,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 33,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100933,
@@ -165198,7 +165836,13 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 28,
+    "coolerType": "Air",
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100934,
@@ -165220,7 +165864,12 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "coolerType": "Air",
-    "tdp_rating": 100
+    "tdp_rating": 100,
+    "bench": 41,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100935,
@@ -165241,7 +165890,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 33,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100936,
@@ -165262,7 +165916,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 26,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 100937,
@@ -165283,7 +165943,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 37,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100938,
@@ -165304,7 +165969,11 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 37,
+    "sockets": [
+      "AM4"
+    ]
   },
   {
     "id": 100939,
@@ -165326,7 +165995,13 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "coolerType": "Air",
-    "tdp_rating": 9015
+    "tdp_rating": 9015,
+    "bench": 48,
+    "noise": 22.4,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100940,
@@ -165347,7 +166022,11 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 41,
+    "sockets": [
+      "AM5"
+    ]
   },
   {
     "id": 100941,
@@ -165368,7 +166047,11 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 33,
+    "sockets": [
+      "AM4"
+    ]
   },
   {
     "id": 100942,
@@ -165389,7 +166072,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 34,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100943,
@@ -165412,7 +166100,15 @@ export const PARTS = [
     "source": "amazon-discovery",
     "coolerType": "AIO",
     "radSize": 360,
-    "tdp_rating": 320
+    "tdp_rating": 320,
+    "bench": 52,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 100944,
@@ -165433,7 +166129,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 22,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100945,
@@ -165454,7 +166156,11 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 35,
+    "sockets": [
+      "AM4"
+    ]
   },
   {
     "id": 100946,
@@ -165475,7 +166181,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.792Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 23,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "AM3"
+    ]
   },
   {
     "id": 100947,
@@ -165496,7 +166208,11 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.792Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 33,
+    "sockets": [
+      "AM4"
+    ]
   },
   {
     "id": 100948,
@@ -165517,7 +166233,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.792Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 36,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100949,
@@ -165537,7 +166258,14 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.792Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 36,
+    "coolerType": "Air",
+    "airflow": 71.93,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100950,
@@ -165557,7 +166285,14 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.792Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 22,
+    "coolerType": "Air",
+    "noise": 30.04,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100951,
@@ -165579,7 +166314,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.792Z",
     "source": "amazon-discovery",
     "coolerType": "Air",
-    "tdp_rating": 260
+    "tdp_rating": 260,
+    "bench": 45
   },
   {
     "id": 100952,
@@ -165600,7 +166336,14 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
     "source": "amazon-discovery",
-    "tdp_rating": 270
+    "tdp_rating": 270,
+    "bench": 36,
+    "coolerType": "Air",
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100953,
@@ -165620,7 +166363,12 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 34,
+    "coolerType": "Air",
+    "sockets": [
+      "LGA1151"
+    ]
   },
   {
     "id": 100954,
@@ -165641,7 +166389,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 41,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100955,
@@ -165662,7 +166415,14 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
     "source": "amazon-discovery",
-    "tdp_rating": 220
+    "tdp_rating": 220,
+    "bench": 37,
+    "coolerType": "Air",
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100956,
@@ -165682,7 +166442,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 27
   },
   {
     "id": 100957,
@@ -165704,7 +166465,11 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.793Z",
     "source": "amazon-discovery",
     "tdp_rating": 125,
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 26,
+    "sockets": [
+      "LGA1700"
+    ]
   },
   {
     "id": 100958,
@@ -165724,7 +166489,9 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 28,
+    "coolerType": "Air"
   },
   {
     "id": 100959,
@@ -165744,7 +166511,9 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 39,
+    "airflow": 41.59
   },
   {
     "id": 100960,
@@ -165764,7 +166533,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 31
   },
   {
     "id": 100961,
@@ -165786,7 +166556,16 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.793Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 40,
+    "radiator": 360,
+    "fanCount": 3,
+    "noise": 27.2,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 100962,
@@ -165807,7 +166586,14 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
     "source": "amazon-discovery",
-    "tdp_rating": 180
+    "tdp_rating": 180,
+    "bench": 32,
+    "coolerType": "Air",
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100963,
@@ -165830,7 +166616,15 @@ export const PARTS = [
     "source": "amazon-discovery",
     "coolerType": "AIO",
     "radSize": 360,
-    "tdp_rating": 350
+    "tdp_rating": 350,
+    "bench": 53,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 100964,
@@ -165851,7 +166645,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 25,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100965,
@@ -165872,7 +166672,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 26
   },
   {
     "id": 100966,
@@ -165893,7 +166694,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 26,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100967,
@@ -165914,7 +166721,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 26,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100968,
@@ -165937,7 +166750,15 @@ export const PARTS = [
     "source": "amazon-discovery",
     "coolerType": "AIO",
     "radSize": 360,
-    "tdp_rating": 350
+    "tdp_rating": 350,
+    "bench": 50,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 100969,
@@ -165958,7 +166779,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.794Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 37,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100970,
@@ -165979,7 +166806,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.794Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 37,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100971,
@@ -165999,7 +166831,9 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.794Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 36,
+    "fanCount": 3
   },
   {
     "id": 100972,
@@ -166019,7 +166853,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.795Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 33
   },
   {
     "id": 100973,
@@ -166041,7 +166876,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.795Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 240
+    "radSize": 240,
+    "bench": 39,
+    "radiator": 240,
+    "fanCount": 2,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100974,
@@ -166061,7 +166903,11 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.795Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 34,
+    "coolerType": "AIO",
+    "radiator": 280,
+    "fanCount": 2
   },
   {
     "id": 100975,
@@ -166081,7 +166927,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.795Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 33
   },
   {
     "id": 100976,
@@ -166103,7 +166950,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.795Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 54,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100977,
@@ -166123,7 +166977,15 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.795Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 38,
+    "coolerType": "AIO",
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100978,
@@ -166146,7 +167008,15 @@ export const PARTS = [
     "source": "amazon-discovery",
     "coolerType": "AIO",
     "radSize": 360,
-    "tdp_rating": 320
+    "tdp_rating": 320,
+    "bench": 52,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 100979,
@@ -166166,7 +167036,16 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.795Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 25,
+    "coolerType": "AIO",
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 100980,
@@ -166187,7 +167066,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.798Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 36,
+    "radiator": 240,
+    "fanCount": 2,
+    "sockets": [
+      "AM5"
+    ]
   },
   {
     "id": 100981,
@@ -166209,7 +167094,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.798Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 48,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100982,
@@ -166231,7 +167123,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.798Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 120
+    "radSize": 120,
+    "bench": 33,
+    "radiator": 120,
+    "fanCount": 1
   },
   {
     "id": 100983,
@@ -166253,7 +167148,15 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.798Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 50,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 100984,
@@ -166275,7 +167178,13 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.798Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 240
+    "radSize": 240,
+    "bench": 39,
+    "radiator": 240,
+    "fanCount": 2,
+    "sockets": [
+      "LGA1151"
+    ]
   },
   {
     "id": 100985,
@@ -166297,7 +167206,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.798Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 240
+    "radSize": 240,
+    "bench": 38,
+    "radiator": 240,
+    "fanCount": 2,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100986,
@@ -166319,7 +167235,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.798Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 48,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 100987,
@@ -166341,7 +167264,15 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.798Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 49,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 100988,
@@ -166361,7 +167292,16 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.798Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 36,
+    "coolerType": "AIO",
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 100989,
@@ -171348,7 +172288,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.661Z",
     "source": "amazon-discovery",
-    "modular": "Full"
+    "modular": "Full",
+    "needsReview": true
   },
   {
     "id": 101210,
@@ -171368,7 +172309,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.662Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101211,
@@ -171454,7 +172396,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.664Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101215,
@@ -171598,7 +172541,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.664Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101221,
@@ -171618,7 +172562,14 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 43,
+    "coolerType": "Air",
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101222,
@@ -171639,7 +172590,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 42,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101223,
@@ -171660,7 +172617,15 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 48,
+    "radiator": 120,
+    "fanCount": 1,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101224,
@@ -171681,7 +172646,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 46,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101225,
@@ -171702,7 +172673,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 49,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101226,
@@ -171723,7 +172699,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 49,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101227,
@@ -171744,7 +172725,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 48,
+    "noise": 25.6,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101228,
@@ -171765,7 +172752,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 37,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101229,
@@ -171786,7 +172778,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 48,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101230,
@@ -171807,7 +172805,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 49,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101231,
@@ -171827,7 +172830,13 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 47,
+    "coolerType": "Air",
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101232,
@@ -171848,7 +172857,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 47,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101233,
@@ -171869,7 +172884,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 37,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101234,
@@ -171890,7 +172910,14 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 37,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101235,
@@ -171911,7 +172938,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 34,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101236,
@@ -171932,7 +172965,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.668Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 39,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5"
+    ]
   },
   {
     "id": 101237,
@@ -171954,7 +172993,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.668Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 54,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101238,
@@ -171976,7 +173022,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.668Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 54,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101239,
@@ -171996,7 +173049,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.668Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 36
   },
   {
     "id": 101240,
@@ -172016,7 +173070,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.668Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 33
   },
   {
     "id": 101241,
@@ -172036,7 +173091,9 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.668Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "bench": 35
   },
   {
     "id": 101242,
@@ -172058,7 +173115,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 120
+    "radSize": 120,
+    "bench": 30,
+    "radiator": 120,
+    "fanCount": 1,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101243,
@@ -172079,7 +173143,14 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 42,
+    "radiator": 120,
+    "fanCount": 1,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101244,
@@ -172101,7 +173172,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 120
+    "radSize": 120,
+    "bench": 40,
+    "radiator": 120,
+    "fanCount": 1
   },
   {
     "id": 101245,
@@ -172122,7 +173196,14 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 42,
+    "radiator": 120,
+    "fanCount": 1,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101246,
@@ -172144,7 +173225,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 240
+    "radSize": 240,
+    "bench": 33,
+    "radiator": 240,
+    "fanCount": 2,
+    "sockets": [
+      "AM5",
+      "LGA1851"
+    ]
   },
   {
     "id": 101247,
@@ -172165,7 +173253,15 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 35,
+    "radiator": 240,
+    "fanCount": 2,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101248,
@@ -172185,7 +173281,15 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 36,
+    "coolerType": "AIO",
+    "radiator": 240,
+    "fanCount": 2,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101249,
@@ -172207,7 +173311,16 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 38,
+    "radiator": 360,
+    "fanCount": 3,
+    "noise": 30,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101250,
@@ -172229,7 +173342,16 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 240
+    "radSize": 240,
+    "bench": 33,
+    "radiator": 240,
+    "fanCount": 2,
+    "tdp_rating": 300,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101251,
@@ -172250,7 +173372,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 34,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101252,
@@ -172271,7 +173399,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 36,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101253,
@@ -172292,7 +173426,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 45,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101254,
@@ -172313,7 +173453,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 30,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101255,
@@ -172334,7 +173479,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 40
   },
   {
     "id": 101256,
@@ -172355,7 +173501,9 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 34,
+    "tdp_rating": 95
   },
   {
     "id": 101257,
@@ -172376,7 +173524,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 28,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101258,
@@ -172397,7 +173551,9 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 26,
+    "tdp_rating": 95
   },
   {
     "id": 101259,
@@ -172417,7 +173573,12 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 34,
+    "sockets": [
+      "AM5",
+      "LGA1700"
+    ]
   },
   {
     "id": 101260,
@@ -172438,7 +173599,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 41,
+    "sockets": [
+      "LGA1851",
+      "LGA1700"
+    ]
   },
   {
     "id": 101261,
@@ -172459,7 +173625,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 33,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101262,
@@ -172480,7 +173652,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "needsReview": true
+    "needsReview": true,
+    "bench": 33
   },
   {
     "id": 101263,
@@ -172501,7 +173674,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 28,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101264,
@@ -172821,7 +174000,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "needsReview": true
   },
   {
     "id": 101278,
@@ -172984,7 +174164,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "needsReview": true
   },
   {
     "id": 101285,
@@ -173007,7 +174188,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "needsReview": true
   },
   {
     "id": 101286,
@@ -174527,7 +175709,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.984Z",
     "source": "amazon-discovery",
-    "modular": "Full"
+    "modular": "Full",
+    "needsReview": true
   },
   {
     "id": 101358,
@@ -174547,7 +175730,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.984Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101359,
@@ -174633,7 +175817,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.987Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101363,
@@ -174777,7 +175962,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.987Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101369,
@@ -174797,7 +175983,14 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 43,
+    "coolerType": "Air",
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101370,
@@ -174818,7 +176011,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 42,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101371,
@@ -174839,7 +176038,15 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 48,
+    "radiator": 120,
+    "fanCount": 1,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101372,
@@ -174860,7 +176067,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 46,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101373,
@@ -174881,7 +176094,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 49,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101374,
@@ -174902,7 +176120,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 49,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101375,
@@ -174923,7 +176146,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 48,
+    "noise": 25.6,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101376,
@@ -174944,7 +176173,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 37,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101377,
@@ -174965,7 +176199,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 48,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101378,
@@ -174986,7 +176226,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 49,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101379,
@@ -175006,7 +176251,13 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 47,
+    "coolerType": "Air",
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101380,
@@ -175027,7 +176278,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 47,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101381,
@@ -175048,7 +176305,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 37,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101382,
@@ -175069,7 +176331,14 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 37,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101383,
@@ -175090,7 +176359,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 34,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101384,
@@ -175111,7 +176386,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 39,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5"
+    ]
   },
   {
     "id": 101385,
@@ -175133,7 +176414,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 54,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101386,
@@ -175155,7 +176443,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 54,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101387,
@@ -175175,7 +176470,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 36
   },
   {
     "id": 101388,
@@ -175195,7 +176491,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 33
   },
   {
     "id": 101389,
@@ -175215,7 +176512,9 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "bench": 35
   },
   {
     "id": 101390,
@@ -175237,7 +176536,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 120
+    "radSize": 120,
+    "bench": 30,
+    "radiator": 120,
+    "fanCount": 1,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101391,
@@ -175258,7 +176564,14 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 42,
+    "radiator": 120,
+    "fanCount": 1,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101392,
@@ -175280,7 +176593,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 120
+    "radSize": 120,
+    "bench": 40,
+    "radiator": 120,
+    "fanCount": 1
   },
   {
     "id": 101393,
@@ -175301,7 +176617,14 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 42,
+    "radiator": 120,
+    "fanCount": 1,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101394,
@@ -175323,7 +176646,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 240
+    "radSize": 240,
+    "bench": 33,
+    "radiator": 240,
+    "fanCount": 2,
+    "sockets": [
+      "AM5",
+      "LGA1851"
+    ]
   },
   {
     "id": 101395,
@@ -175344,7 +176674,15 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 35,
+    "radiator": 240,
+    "fanCount": 2,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101396,
@@ -175364,7 +176702,15 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 36,
+    "coolerType": "AIO",
+    "radiator": 240,
+    "fanCount": 2,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101397,
@@ -175386,7 +176732,16 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 38,
+    "radiator": 360,
+    "fanCount": 3,
+    "noise": 30,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101398,
@@ -175408,7 +176763,16 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 240
+    "radSize": 240,
+    "bench": 33,
+    "radiator": 240,
+    "fanCount": 2,
+    "tdp_rating": 300,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101399,
@@ -175429,7 +176793,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 34,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101400,
@@ -175450,7 +176820,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 36,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101401,
@@ -175471,7 +176847,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 45,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101402,
@@ -175492,7 +176874,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 30,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101403,
@@ -175513,7 +176900,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 40
   },
   {
     "id": 101404,
@@ -175534,7 +176922,9 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 34,
+    "tdp_rating": 95
   },
   {
     "id": 101405,
@@ -175555,7 +176945,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 28,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101406,
@@ -175576,7 +176972,9 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 26,
+    "tdp_rating": 95
   },
   {
     "id": 101407,
@@ -175596,7 +176994,12 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 34,
+    "sockets": [
+      "AM5",
+      "LGA1700"
+    ]
   },
   {
     "id": 101408,
@@ -175617,7 +177020,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 41,
+    "sockets": [
+      "LGA1851",
+      "LGA1700"
+    ]
   },
   {
     "id": 101409,
@@ -175638,7 +177046,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 33,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101410,
@@ -175659,7 +177073,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "needsReview": true
+    "needsReview": true,
+    "bench": 33
   },
   {
     "id": 101411,
@@ -175680,7 +177095,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 28,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101412,
@@ -176000,7 +177421,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "needsReview": true
   },
   {
     "id": 101426,
@@ -176163,7 +177585,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "needsReview": true
   },
   {
     "id": 101433,
@@ -176186,7 +177609,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "needsReview": true
   },
   {
     "id": 101434,
@@ -185382,7 +186806,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.666Z",
     "source": "amazon-discovery",
-    "modular": "Full"
+    "modular": "Full",
+    "needsReview": true
   },
   {
     "id": 101890,
@@ -185402,7 +186827,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T17:05:43.666Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101891,
@@ -185488,7 +186914,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T17:05:43.669Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101895,
@@ -185632,7 +187059,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T17:05:43.669Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 101901,
@@ -185653,7 +187081,15 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.673Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 48,
+    "radiator": 120,
+    "fanCount": 1,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101902,
@@ -185674,7 +187110,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.673Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 46,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101903,
@@ -185695,7 +187137,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.673Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 49,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101904,
@@ -185716,7 +187163,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.673Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 49,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101905,
@@ -185736,7 +187188,13 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T17:05:43.673Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 47,
+    "coolerType": "Air",
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101906,
@@ -185757,7 +187215,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.673Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 34,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101907,
@@ -185778,7 +187242,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.674Z",
     "source": "amazon-discovery",
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "bench": 39,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5"
+    ]
   },
   {
     "id": 101908,
@@ -185800,7 +187270,14 @@ export const PARTS = [
     "addedAt": "2026-05-15T17:05:43.674Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 360
+    "radSize": 360,
+    "bench": 54,
+    "radiator": 360,
+    "fanCount": 3,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101909,
@@ -185820,7 +187297,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T17:05:43.674Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 33
   },
   {
     "id": 101910,
@@ -185840,7 +187318,9 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T17:05:43.674Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "bench": 35
   },
   {
     "id": 101911,
@@ -185862,7 +187342,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T17:05:43.675Z",
     "source": "amazon-discovery",
     "coolerType": "AIO",
-    "radSize": 120
+    "radSize": 120,
+    "bench": 40,
+    "radiator": 120,
+    "fanCount": 1
   },
   {
     "id": 101912,
@@ -185883,7 +187366,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.675Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 34,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101913,
@@ -185904,7 +187393,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.675Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 36,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101914,
@@ -185925,7 +187420,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.675Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 45,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851"
+    ]
   },
   {
     "id": 101915,
@@ -185946,7 +187447,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.675Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 30,
+    "sockets": [
+      "AM5",
+      "AM4"
+    ]
   },
   {
     "id": 101916,
@@ -185967,7 +187473,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.675Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 40
   },
   {
     "id": 101917,
@@ -185988,7 +187495,9 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.675Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 34,
+    "tdp_rating": 95
   },
   {
     "id": 101918,
@@ -186008,7 +187517,12 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T17:05:43.675Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "bench": 34,
+    "sockets": [
+      "AM5",
+      "LGA1700"
+    ]
   },
   {
     "id": 101919,
@@ -186029,7 +187543,12 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.676Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 41,
+    "sockets": [
+      "LGA1851",
+      "LGA1700"
+    ]
   },
   {
     "id": 101920,
@@ -186050,7 +187569,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.676Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 33,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101921,
@@ -186071,7 +187596,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.676Z",
     "source": "amazon-discovery",
-    "needsReview": true
+    "needsReview": true,
+    "bench": 33
   },
   {
     "id": 101922,
@@ -186092,7 +187618,13 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T17:05:43.676Z",
     "source": "amazon-discovery",
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "bench": 28,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1700"
+    ]
   },
   {
     "id": 101923,
