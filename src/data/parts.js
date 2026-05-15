@@ -152980,7 +152980,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.411Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 100
+    "bench": 100,
+    "slots": 3.6
   },
   {
     "id": 100394,
@@ -153025,7 +153026,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.412Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 100
+    "bench": 100,
+    "vram": 32
   },
   {
     "id": 100396,
@@ -153070,7 +153072,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.412Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 100
+    "bench": 100,
+    "vram": 32
   },
   {
     "id": 100398,
@@ -153138,7 +153141,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.412Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 92
+    "bench": 92,
+    "vram": 16
   },
   {
     "id": 100401,
@@ -153161,7 +153165,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.412Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 92
+    "bench": 92,
+    "length": 120
   },
   {
     "id": 100402,
@@ -153253,7 +153258,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.412Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 74
+    "bench": 74,
+    "slots": 2.5
   },
   {
     "id": 100406,
@@ -153299,7 +153305,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.413Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 74
+    "bench": 74,
+    "slots": 2.4
   },
   {
     "id": 100408,
@@ -153345,7 +153352,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.413Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 74
+    "bench": 74,
+    "slots": 2.5
   },
   {
     "id": 100410,
@@ -153414,7 +153422,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.413Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 53
+    "bench": 53,
+    "slots": 2
   },
   {
     "id": 100413,
@@ -153437,7 +153446,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 53
+    "bench": 53,
+    "slots": 2.5
   },
   {
     "id": 100414,
@@ -153460,7 +153470,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 53
+    "bench": 53,
+    "slots": 2
   },
   {
     "id": 100415,
@@ -153483,7 +153494,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 58
+    "bench": 58,
+    "slots": 2
   },
   {
     "id": 100416,
@@ -153506,7 +153518,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 53
+    "bench": 53,
+    "slots": 3.1
   },
   {
     "id": 100417,
@@ -153551,7 +153564,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 53
+    "bench": 53,
+    "vram": 8
   },
   {
     "id": 100419,
@@ -153596,7 +153610,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6X",
-    "bench": 77
+    "bench": 77,
+    "vram": 12
   },
   {
     "id": 100421,
@@ -153619,7 +153634,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 74
+    "bench": 74,
+    "slots": 2.4
   },
   {
     "id": 100422,
@@ -153893,7 +153909,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
-    "memType": "GDDR5"
+    "memType": "GDDR5",
+    "vram": 8
   },
   {
     "id": 100434,
@@ -153982,7 +153999,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
-    "bench": 81
+    "bench": 81,
+    "memType": "GDDR6"
   },
   {
     "id": 100438,
@@ -154026,7 +154044,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
-    "bench": 75
+    "bench": 75,
+    "memType": "GDDR6X"
   },
   {
     "id": 100440,
@@ -154094,7 +154113,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 75
+    "bench": 75,
+    "vram": 20
   },
   {
     "id": 100443,
@@ -154205,7 +154225,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.415Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 34
+    "bench": 34,
+    "vram": 16
   },
   {
     "id": 100448,
@@ -154226,7 +154247,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
     "source": "amazon-discovery",
-    "bench": 41
+    "bench": 41,
+    "memType": "GDDR6"
   },
   {
     "id": 100449,
@@ -154270,7 +154292,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.415Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 34
+    "bench": 34,
+    "vram": 16
   },
   {
     "id": 100451,
@@ -159158,7 +159181,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 6,
     "memType": "GDDR6",
-    "bench": 32
+    "bench": 32,
+    "slots": 2
   },
   {
     "id": 100655,
@@ -159204,7 +159228,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6X",
-    "bench": 52
+    "bench": 52,
+    "slots": 2
   },
   {
     "id": 100657,
@@ -159225,7 +159250,9 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.772Z",
     "source": "amazon-discovery",
-    "bench": 52
+    "bench": 52,
+    "vram": 8,
+    "memType": "GDDR6"
   },
   {
     "id": 100658,
@@ -159269,7 +159296,9 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.773Z",
     "source": "amazon-discovery",
-    "bench": 33
+    "bench": 33,
+    "vram": 6,
+    "memType": "GDDR6"
   },
   {
     "id": 100660,
@@ -159313,7 +159342,9 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.773Z",
     "source": "amazon-discovery",
-    "bench": 33
+    "bench": 33,
+    "vram": 6,
+    "memType": "GDDR6"
   },
   {
     "id": 100662,
@@ -159380,7 +159411,9 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.773Z",
     "source": "amazon-discovery",
-    "bench": 33
+    "bench": 33,
+    "vram": 6,
+    "memType": "GDDR6"
   },
   {
     "id": 100665,
@@ -159401,7 +159434,9 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.773Z",
     "source": "amazon-discovery",
-    "bench": 30
+    "bench": 30,
+    "vram": 6,
+    "memType": "GDDR5"
   },
   {
     "id": 100666,
@@ -159836,7 +159871,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 12,
     "memType": "GDDR6",
-    "bench": 51
+    "bench": 51,
+    "slots": 2.9
   },
   {
     "id": 100685,
@@ -159904,7 +159940,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.774Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 42
+    "bench": 42,
+    "vram": 8
   },
   {
     "id": 100688,
@@ -160268,7 +160305,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.774Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 16
+    "bench": 16,
+    "vram": 6
   },
   {
     "id": 100704,
@@ -160336,7 +160374,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.774Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 53
+    "bench": 53,
+    "vram": 8
   },
   {
     "id": 100707,
@@ -160357,7 +160396,9 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.774Z",
     "source": "amazon-discovery",
-    "bench": 34
+    "bench": 34,
+    "vram": 8,
+    "memType": "GDDR6"
   },
   {
     "id": 100708,
@@ -160380,7 +160421,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 50
+    "bench": 50,
+    "slots": 2
   },
   {
     "id": 100709,
@@ -160449,7 +160491,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 50
+    "bench": 50,
+    "slots": 2.5
   },
   {
     "id": 100712,
@@ -160472,7 +160515,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 44
+    "bench": 44,
+    "slots": 2
   },
   {
     "id": 100713,
@@ -160516,7 +160560,9 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.775Z",
     "source": "amazon-discovery",
-    "bench": 88
+    "bench": 88,
+    "vram": 16,
+    "memType": "GDDR6X"
   },
   {
     "id": 100715,
@@ -160584,7 +160630,9 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.775Z",
     "source": "amazon-discovery",
     "memType": "GDDR6X",
-    "bench": 88
+    "bench": 88,
+    "vram": 16,
+    "slots": 3.5
   },
   {
     "id": 100718,
@@ -160606,7 +160654,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.775Z",
     "source": "amazon-discovery",
     "memType": "GDDR6X",
-    "bench": 88
+    "bench": 88,
+    "vram": 16
   },
   {
     "id": 100719,
@@ -160649,7 +160698,9 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.776Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "vram": 2,
+    "memType": "GDDR3"
   },
   {
     "id": 100721,
@@ -160672,7 +160723,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 44
+    "bench": 44,
+    "slots": 2
   },
   {
     "id": 100722,
@@ -160714,7 +160766,9 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.776Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "vram": 2,
+    "memType": "GDDR3"
   },
   {
     "id": 100724,
