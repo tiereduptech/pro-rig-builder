@@ -154116,7 +154116,6 @@ export const PARTS = [
     "msrp": 149,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/61VL8FcTNfL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07GCL6BR4",
@@ -154594,6 +154593,12067 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T13:17:14.424Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100542,
+    "c": "PSU",
+    "n": "Thermaltake Smart 500W 80+ White Certified PSU, Continuous Power with 120mm Ultra Quiet Cooling Fan, ATX 12V V2.3/EPS 12V Active PFC Power Supply PS-SPD-0500NPCWUS-W",
+    "b": "Thermaltake",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61v6z9wYWyL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B014W3EM2W",
+        "url": "https://www.amazon.com/dp/B014W3EM2W?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.760Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100543,
+    "c": "PSU",
+    "n": "MSI MAG A550BN, Non-Modular Compact 550W Power Supply, 80+ Bronze, Low-Noise Fan, Active PFC Design, 5 Year Warranty",
+    "b": "MSI",
+    "pr": 57.99,
+    "msrp": 57.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81kjvnj0WkL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0991W1HKT",
+        "url": "https://www.amazon.com/dp/B0991W1HKT?tag=tiereduptech-20",
+        "price": 57.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.762Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100544,
+    "c": "PSU",
+    "n": "APEVIA VENUS500W Venus 500W ATX Power Supply with Auto-Thermally Controlled 120mm Fan, 115/230V Switch, All Protections",
+    "b": "Apevia",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81JJwP-kp8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D52KSFMJ",
+        "url": "https://www.amazon.com/dp/B0D52KSFMJ?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.762Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100545,
+    "c": "PSU",
+    "n": "Thermaltake Toughpower GX2 80+ Gold 600W SLI/Crossfire Ready Continuous Power ATX 12V V2.4/EPS V2.92 Non Modular Power Supply 5 Year Warranty PS-TPD-0600NNFAGU-2",
+    "b": "Thermaltake",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/719Dlu50SSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B087CDR14Z",
+        "url": "https://www.amazon.com/dp/B087CDR14Z?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.762Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100546,
+    "c": "PSU",
+    "n": "FSP FlexGURU Pro Power Supply, Flex ATX 500W, 80 Plus Gold Certified PSU, Non-Modular, with Universal fix Bracket, Perfect for SFF PC, 1U IPC, and NAS Systems, etc. 5 Year Warranty(FSP500-50FDP)",
+    "b": "FSP",
+    "pr": 159.99,
+    "msrp": 159.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61JGtwuYl7L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CZC8D44B",
+        "url": "https://www.amazon.com/dp/B0CZC8D44B?tag=tiereduptech-20",
+        "price": 159.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.762Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100547,
+    "c": "PSU",
+    "n": "Apevia RAPTOR500W Raptor 500W ATX Power Supply with 120MM Black Fan",
+    "b": "Apevia",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/61imMIuNfhL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CLMGJVT3",
+        "url": "https://www.amazon.com/dp/B0CLMGJVT3?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.762Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100548,
+    "c": "PSU",
+    "n": "Apevia ITX-PFC500W Mini ITX/Flex ATX / 1U 500W Fully Modular Power Supply, Full Range Active PFC 90-264V, AC for POS AIO System Desktop Gaming Server Small Form Factor (Flex ITX) Computer PSU",
+    "b": "Apevia",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/615CCzUoV2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CWN59YCZ",
+        "url": "https://www.amazon.com/dp/B0CWN59YCZ?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.762Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100549,
+    "c": "PSU",
+    "n": "FSP Twins Pro PC PSU PS2 1+1 Dual Module 500W ATX Redundant Power Supply with Guardian Monitor Software (Twins Pro 500)",
+    "b": "FSP",
+    "pr": 446.99,
+    "msrp": 446.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61rN+37NDlL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CZFT9P29",
+        "url": "https://www.amazon.com/dp/B0CZFT9P29?tag=tiereduptech-20",
+        "price": 446.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.762Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100550,
+    "c": "PSU",
+    "n": "GAMDIAS 550W Power Supply & 550 Waltt PSU 80 Plus Bronze Certified, 550 Watt PSU & ATX PSU Power Supply for Computers, PC, Desktops with Active PFC, Helios M1-550B",
+    "b": "AMD",
+    "pr": 44.99,
+    "msrp": 44.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71i6QSdj2IL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CLQVVHSF",
+        "url": "https://www.amazon.com/dp/B0CLQVVHSF?tag=tiereduptech-20",
+        "price": 44.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.763Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100551,
+    "c": "PSU",
+    "n": "Apevia CAPTAIN550 ATX Power Supply with All Black Cables",
+    "b": "Apevia",
+    "pr": 31.99,
+    "msrp": 31.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/716Jk7cbf+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B089PZCB7X",
+        "url": "https://www.amazon.com/dp/B089PZCB7X?tag=tiereduptech-20",
+        "price": 31.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.763Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100552,
+    "c": "PSU",
+    "n": "Lian Li RB 550W Power Supply, 80 Plus Bronze, ATX 3.1, PCIe 5.1 Ready, 135mm Low-Noise Fan, Built-in Cable Management, 5-Year Warranty, Non-Modular - Black (RB550B)",
+    "b": "Lian Li",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71k1RAxXPML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FH6NV36R",
+        "url": "https://www.amazon.com/dp/B0FH6NV36R?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.763Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100553,
+    "c": "PSU",
+    "n": "Thermaltake Smart Power Supply - 600W, 80 Plus, White, Active PFC, S/Cable",
+    "b": "Thermaltake",
+    "pr": 58.42,
+    "msrp": 58.42,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71KBvZFP7BL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01ER2A5X8",
+        "url": "https://www.amazon.com/dp/B01ER2A5X8?tag=tiereduptech-20",
+        "price": 58.42,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.764Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100554,
+    "c": "PSU",
+    "n": "Apevia ATX-JP600W Jupiter 600W 80 Plus Bronze Certified Active PFC ATX Gaming Power Supply, Supports Dual/Quad Core CPUs, SLI/Crossfire/Haswell, 3 Year Warranty",
+    "b": "Apevia",
+    "pr": 43.99,
+    "msrp": 43.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/614cMYU20XL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01IE03EQO",
+        "url": "https://www.amazon.com/dp/B01IE03EQO?tag=tiereduptech-20",
+        "price": 43.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.764Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100555,
+    "c": "PSU",
+    "n": "MSI MAG A650GL, Fully Modular Compact Gaming 650W Power Supply, 80+ Gold, ATX PSU, 10 Year Warranty",
+    "b": "MSI",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71jWtdpPXcL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CGFZVGF9",
+        "url": "https://www.amazon.com/dp/B0CGFZVGF9?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.764Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100556,
+    "c": "PSU",
+    "n": "NZXT C1000 Gold Core - 1000W ATX 3.1 Power Supply - 80 Plus Gold - Cybenetics Platinum - Fully Modular - PCIe 5.1 600W 12V-2x6 - Zero RPM Fan - 105°C Capacitors - Black",
+    "b": "NZXT",
+    "pr": 124.99,
+    "msrp": 124.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51jrH-fgZYL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FQ6MH33Q",
+        "url": "https://www.amazon.com/dp/B0FQ6MH33Q?tag=tiereduptech-20",
+        "price": 124.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.764Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100557,
+    "c": "PSU",
+    "n": "MSI MAG A650GLS PCIE5, Fully Modular Compact Gaming 650W Power Supply, 80+ Gold, ATX 3.1 & PCIe 5.1 Ready, Native Dual-Color 12V-2x6 Cable, Low-Noise, Embossed Jacket Cables, 10 Year Warranty",
+    "b": "MSI",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71ktRlzGn0L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FF7RW48D",
+        "url": "https://www.amazon.com/dp/B0FF7RW48D?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.764Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100558,
+    "c": "PSU",
+    "n": "Apevia ATX-PM650W Premier 650W 80+ Gold Certified Active PFC ATX Semi-Modular Gaming Power Supply with 366 RGB Light Modes",
+    "b": "Apevia",
+    "pr": 54.99,
+    "msrp": 54.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71cB0Aby6VS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09425ZHVZ",
+        "url": "https://www.amazon.com/dp/B09425ZHVZ?tag=tiereduptech-20",
+        "price": 54.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.764Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100559,
+    "c": "PSU",
+    "n": "Apevia ATX-GX650W Galaxy 650W 80+ Gold Certified Active PFC ATX Semi-Modular Quiet Gaming Power Supply",
+    "b": "Apevia",
+    "pr": 54.99,
+    "msrp": 54.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61lrD1LxAAS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B094278HKG",
+        "url": "https://www.amazon.com/dp/B094278HKG?tag=tiereduptech-20",
+        "price": 54.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.764Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100560,
+    "c": "PSU",
+    "n": "FSP Dagger Pro 650W SFX Power Supply, 80 Plus Gold, Full Modular (SDA2-650)",
+    "b": "FSP",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51BxtiC6cyL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07SYSLZDR",
+        "url": "https://www.amazon.com/dp/B07SYSLZDR?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.764Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100561,
+    "c": "PSU",
+    "n": "FSP Twins Pro PC PSU PS2 1+1 Dual Module 700W ATX Redundant Power Supply with Guardian Monitor Software (Twins Pro 700)",
+    "b": "FSP",
+    "pr": 569.99,
+    "msrp": 569.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/71YOHORt2+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08P54YC67",
+        "url": "https://www.amazon.com/dp/B08P54YC67?tag=tiereduptech-20",
+        "price": 569.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.764Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100562,
+    "c": "PSU",
+    "n": "ATX 700W PSU Non-Modular PC Power Supply with 120mm Silent Fan 115/230V Swith",
+    "b": "MSI",
+    "pr": 35.49,
+    "msrp": 35.49,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/81Cf9NgtlyL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G41YNQCR",
+        "url": "https://www.amazon.com/dp/B0G41YNQCR?tag=tiereduptech-20",
+        "price": 35.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.765Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100563,
+    "c": "PSU",
+    "n": "Apevia ATX-ES700W Essence 700W ATX Semi-Modular Gaming Power Supply with Auto-Thermally Controlled 120mm Black Fan, 115/230V Switch, All Protections",
+    "b": "Apevia",
+    "pr": 43.99,
+    "msrp": 43.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61sjqTcJIML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08Z6YSQ8L",
+        "url": "https://www.amazon.com/dp/B08Z6YSQ8L?tag=tiereduptech-20",
+        "price": 43.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.765Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100564,
+    "c": "PSU",
+    "n": "Apevia ATX-SL650W Soul 650W Fully Modular, ATX Active PFC, DC to DC Converter Design, 140mm Silent Fan, RoHS Compliance, Gaming Power Supply",
+    "b": "MSI",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 3.6,
+    "img": "https://m.media-amazon.com/images/I/71NOK3vk6+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FNS4CF9F",
+        "url": "https://www.amazon.com/dp/B0FNS4CF9F?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.765Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100565,
+    "c": "PSU",
+    "n": "MONTECH APX 750W-Non-Modular Power Supply-80 Plus White Certified-Intel ATX12V-DC-to-DC Converter Technology- Flat Cable Design to Enhance Thermal efficiency-120mm Fan- 5-Year Warranty (APX 750W)",
+    "b": "Intel",
+    "pr": 48.96,
+    "msrp": 48.96,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/81+oZF5KnEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D7ZCT11Q",
+        "url": "https://www.amazon.com/dp/B0D7ZCT11Q?tag=tiereduptech-20",
+        "price": 48.96,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.765Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100566,
+    "c": "PSU",
+    "n": "500W Power Supply, Thermaltake, PS-SPD-0500NPCWBZ-W",
+    "b": "Thermaltake",
+    "pr": 60.99,
+    "msrp": 60.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/711j-MM1SjL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01ER29BKG",
+        "url": "https://www.amazon.com/dp/B01ER29BKG?tag=tiereduptech-20",
+        "price": 60.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.767Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100567,
+    "c": "PSU",
+    "n": "be quiet! Pure Power 12 M 1200W Modular Power Supply | 80 Plus® Gold | ATX 3.1 | PCIe 5.0 GPUs and 6+2 pin connectors | 12VHPWR Cable Included | Silent 120mm be quiet! Fan - BN513 I 10 Year Warranty",
+    "b": "be quiet!",
+    "pr": 174.9,
+    "msrp": 174.9,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/713xuUIA2BL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CBP3C2S9",
+        "url": "https://www.amazon.com/dp/B0CBP3C2S9?tag=tiereduptech-20",
+        "price": 174.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.767Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100568,
+    "c": "PSU",
+    "n": "700w Power Supply Non-Modular ATX PSU with 6+2 Pin Connectors PFC Protection and 120mm Silent Fan Gaming PSU KY-700 Black",
+    "b": "MSI",
+    "pr": 36.99,
+    "msrp": 36.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81JrMNWTvWL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CZRH68VM",
+        "url": "https://www.amazon.com/dp/B0CZRH68VM?tag=tiereduptech-20",
+        "price": 36.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.767Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100569,
+    "c": "PSU",
+    "n": "ROG Thor PSU Power Cord Compatible for Thermaltake Smart,ARESGAME AGV Series Power Supply,Cooler Master MWE,Corsair RM750e PSUs Monitor Computer,Big Printer AC Power Cord Cable",
+    "b": "ASUS",
+    "pr": 9.9,
+    "msrp": 9.9,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/51i4gifpoWL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DRTC13S5",
+        "url": "https://www.amazon.com/dp/B0DRTC13S5?tag=tiereduptech-20",
+        "price": 9.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.768Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100570,
+    "c": "PSU",
+    "n": "Redragon RGPS-850W 80+ Gold 850 Watt Power Supply w/Upgraded ATX 3.1 & PCIe 5.1 Fully Modular, 12VHPWR Cable Included, 100% Japanese Capacitors, Smart ECO Low Noise RGB Fan, Compact 160mm Size",
+    "b": "MSI",
+    "pr": 124.99,
+    "msrp": 124.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81NR7x7ZdOL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BBZSPJV5",
+        "url": "https://www.amazon.com/dp/B0BBZSPJV5?tag=tiereduptech-20",
+        "price": 124.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.768Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100571,
+    "c": "PSU",
+    "n": "8.2ft Power Cord Replacement for Cooler Master MWE Gold 850 750 V3 V2 V1100 Power Supply AC 3 Prong C13 Cable",
+    "b": "Cooler Master",
+    "pr": 13.98,
+    "msrp": 13.98,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/61pROCqZ-ML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FVX2B3CS",
+        "url": "https://www.amazon.com/dp/B0FVX2B3CS?tag=tiereduptech-20",
+        "price": 13.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.768Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100572,
+    "c": "PSU",
+    "n": "PCIe 8Pin to 8Pin 6+2Pin GPU Cable 60CM 18AWG for CoolerMaster MWE V2 Gold Fully Modular 550W 650W 750W 850W 1050W 1250W",
+    "b": "Cooler Master",
+    "pr": 7.99,
+    "msrp": 7.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/61Rbi+2LX7L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GCWF1SJ5",
+        "url": "https://www.amazon.com/dp/B0GCWF1SJ5?tag=tiereduptech-20",
+        "price": 7.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.768Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100573,
+    "c": "PSU",
+    "n": "AC Power Cable Replacement for Cooler Master MWE Gold 850 750 V3 V2 V850 Power Supply 3 Prong AC 8Ft C13 Cord",
+    "b": "Cooler Master",
+    "pr": 13.99,
+    "msrp": 13.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61Bnirmtz+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FGXK3112",
+        "url": "https://www.amazon.com/dp/B0FGXK3112?tag=tiereduptech-20",
+        "price": 13.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.768Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100574,
+    "c": "PSU",
+    "n": "Apevia SFX-PFC600W SFX PFC 600W / Micro-ATX, Fixed Cables, Full Range Active PFC 90-264V, Low Noise Desktop Gaming Server SFX Form Factor Computer Power Supply",
+    "b": "Apevia",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/71CcR7Er0OL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D94XR6HK",
+        "url": "https://www.amazon.com/dp/B0D94XR6HK?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.768Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100575,
+    "c": "PSU",
+    "n": "NZXT C850 SFX Gold - 850W SFX ATX 3.1 Power Supply - 80 Plus Gold - Cybenetics Platinum - Fully Modular - PCIe 5.1 600W 12V-2x6 - Japanese Capacitors - Black",
+    "b": "NZXT",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51hT7sUeKoL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GFVSV779",
+        "url": "https://www.amazon.com/dp/B0GFVSV779?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.768Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100576,
+    "c": "PSU",
+    "n": "Lian Li SP750 V2 Gold 750 Watt SFX Form Factor Power Supply | Native 12V-2x6 Cable - Low Noise - 80+ Gold Efficiency - ATX 3.1 & PCIe 5.0 Compliant - 92mm FDB Fan - 10-Year Warranty - White (SP750G.W)",
+    "b": "Lian Li",
+    "pr": 124.99,
+    "msrp": 124.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/7133NPIxZrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJD8RSBH",
+        "url": "https://www.amazon.com/dp/B0FJD8RSBH?tag=tiereduptech-20",
+        "price": 124.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.768Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100577,
+    "c": "PSU",
+    "n": "Apevia ATX-SL1000W Soul 1000W Fully Modular Power Supply ATX 3.0 & 3.1 Compatible, PCIe 5.1 12V-2x6 Connector, ATX Active PFC, DC to DC Converter Design, 140mm Silent Fan, RoHS Compliance",
+    "b": "MSI",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/71rRSb2caKL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FNS5CG5Q",
+        "url": "https://www.amazon.com/dp/B0FNS5CG5Q?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.769Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100578,
+    "c": "PSU",
+    "n": "Dracaena.io 120mm AIO CPU Cooler - ARGB Remote Control, Quiet PWM ARGB Fan, Hydraulic Bearing Pump & Aluminum Radiator - for Intel LGA1700/1200/115X/2011/2066 & AMD AM5/AM4/AM3/FM2 Ryzen, Black",
+    "b": "AMD",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/611puAFQJCL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09JG59MGK",
+        "url": "https://www.amazon.com/dp/B09JG59MGK?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.769Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100579,
+    "c": "PSU",
+    "n": "Montech BETA 2 850W Power Supply, ATX 3.1 & PCIe 5.1 Ready, 80+ Bronze Certified, Next-Gen 12V-2x6 Cable, DC-to-DC Stability, Industrial Japanese Main Capacitor, Full Protection Suite",
+    "b": "Montech",
+    "pr": 69.9,
+    "msrp": 69.9,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71PosWeyoWL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GQ1LVS3D",
+        "url": "https://www.amazon.com/dp/B0GQ1LVS3D?tag=tiereduptech-20",
+        "price": 69.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.769Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100580,
+    "c": "PSU",
+    "n": "ASRock PRO-650B Power Supply - 650W 80 Plus Bronze Certified, ATX 3.1 Ready, 120mm Fan, Full Protection Circuit, 3-Year Warranty",
+    "b": "ASRock",
+    "pr": 44.99,
+    "msrp": 44.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/615IN3x3nsL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FST7VT5D",
+        "url": "https://www.amazon.com/dp/B0FST7VT5D?tag=tiereduptech-20",
+        "price": 44.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.769Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100581,
+    "c": "PSU",
+    "n": "ASUS ROG Loki SFX-L 750W Platinum (Fully Modular Power Supply, 80+ Platinum, Lambda A Certified, 120mm PWM ARGB Fan, Aura Sync, ATX 3.0 Compatible, PCIe 5.0 Ready, 10 Year Warranty)",
+    "b": "ASUS",
+    "pr": 134.99,
+    "msrp": 134.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71TjoCOt1zL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BZFQZR81",
+        "url": "https://www.amazon.com/dp/B0BZFQZR81?tag=tiereduptech-20",
+        "price": 134.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.769Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100582,
+    "c": "PSU",
+    "n": "Cooler Master V750 SFX Gold 750W Small Form Factor PSU ITX SFF Power Supply, Fully Modular, 80 Plus & Cybenetics Gold Certified, ATX 3.1, PCIe 5.1 Ready, 90° 12VHPWR Cable, 10-Year Warranty, White",
+    "b": "Cooler Master",
+    "pr": 137.55,
+    "msrp": 137.55,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71RoUDO7MRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B097QC3FPZ",
+        "url": "https://www.amazon.com/dp/B097QC3FPZ?tag=tiereduptech-20",
+        "price": 137.55,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.769Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100583,
+    "c": "PSU",
+    "n": "Thermaltake Toughpower SFX 750W 80Plus Platinum ATX 3.1 Standard Power Supply; 300W 12V-2x6 Connector Included; Full Modular; 90mm FDB Fan; PS-STP-0750FNFAPU-1; 7 Year Warranty",
+    "b": "Thermaltake",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71Uip4jOwCL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D2838XV2",
+        "url": "https://www.amazon.com/dp/B0D2838XV2?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.769Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100584,
+    "c": "PSU",
+    "n": "Corsair SF1000 (2024) Fully Modular Low Noise 80 Plus Platinum ATX Power Supply – ATX 3.1 Compliant – PCIe 5.1 Ready – SFX-to-ATX Bracket Included – Black",
+    "b": "Corsair",
+    "pr": 243.46,
+    "msrp": 243.46,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71nnSzoZFqL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D5HT2L96",
+        "url": "https://www.amazon.com/dp/B0D5HT2L96?tag=tiereduptech-20",
+        "price": 243.46,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.769Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100585,
+    "c": "PSU",
+    "n": "Lian Li SP0850P Platinum 850W SFX Form Factor Power Supply with 12V-2x6 Connectors - ATX 3.1 & PCIE 5.1 Compliant - Low-Noise - Fully Modular - 105°C Capacitors - 10 Year Warranty - Black (SP0850P.B)",
+    "b": "Lian Li",
+    "pr": 150.99,
+    "msrp": 150.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71alDGBSSbL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FN7JS7LZ",
+        "url": "https://www.amazon.com/dp/B0FN7JS7LZ?tag=tiereduptech-20",
+        "price": 150.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.769Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100586,
+    "c": "CPU",
+    "n": "AMD Ryzen 3 3100 4-Core, 8-Thread Unlocked Desktop Processor with Wraith Stealth Cooler",
+    "b": "AMD",
+    "pr": 135.28,
+    "msrp": 135.28,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61L6qbhLx0L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0876Y2TMZ",
+        "url": "https://www.amazon.com/dp/B0876Y2TMZ?tag=tiereduptech-20",
+        "price": 135.28,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.769Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100587,
+    "c": "CPU",
+    "n": "AMD Ryzen 3 1200 Desktop Processor with Wraith Stealth Cooler (YD1200BBAEBOX)",
+    "b": "AMD",
+    "pr": 82.02,
+    "msrp": 82.02,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81ewjd+T6rL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0741DN383",
+        "url": "https://www.amazon.com/dp/B0741DN383?tag=tiereduptech-20",
+        "price": 82.02,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.769Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100588,
+    "c": "CPU",
+    "n": "AMD Athlon II X2 240 2.8GHz 1MB L2 Processor AMD Athlon 64 2.8GHz Socket AM3 45NM 64-Bit 1MB",
+    "b": "AMD",
+    "pr": 24.95,
+    "msrp": 24.95,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/11d77krUQjL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B002M8LGW4",
+        "url": "https://www.amazon.com/dp/B002M8LGW4?tag=tiereduptech-20",
+        "price": 24.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.769Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100589,
+    "c": "CPU",
+    "n": "AMD Ryzen 5 4500 6-Core, 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler",
+    "b": "AMD",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/91OZjLdueYL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09VCJN7HZ",
+        "url": "https://www.amazon.com/dp/B09VCJN7HZ?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.769Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100590,
+    "c": "CPU",
+    "n": "AMD Ryzen 5 4500 6-Core, 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler (Renewed)",
+    "b": "AMD",
+    "pr": 84.95,
+    "msrp": 84.95,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/91OZjLdueYL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BZTKGQ85",
+        "url": "https://www.amazon.com/dp/B0BZTKGQ85?tag=tiereduptech-20",
+        "price": 84.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100591,
+    "c": "CPU",
+    "n": "Intel® Pentium Gold G-6400 Desktop Processor 2 Cores 4.0 GHz LGA1200 (Intel® 400 Series chipset) 58W (BX80701G6400)",
+    "b": "Intel",
+    "pr": 101.99,
+    "msrp": 101.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71l-e2+Wi9L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B086MHSH2Z",
+        "url": "https://www.amazon.com/dp/B086MHSH2Z?tag=tiereduptech-20",
+        "price": 101.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100592,
+    "c": "CPU",
+    "n": "Intel BX80662G4400 Pentium Processor G4400 3.3 GHz FCLGA1151 (Renewed)",
+    "b": "Intel",
+    "pr": 18,
+    "msrp": 18,
+    "r": 3.4,
+    "img": "https://m.media-amazon.com/images/I/61-XPn0Ri8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07KYR1Q7V",
+        "url": "https://www.amazon.com/dp/B07KYR1Q7V?tag=tiereduptech-20",
+        "price": 18,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100593,
+    "c": "CPU",
+    "n": "Intel Pentium Gold G6405 4.1GHz 4MB Desktop Processor Boxed",
+    "b": "Intel",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61dZUuXIU3L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B091TXJN41",
+        "url": "https://www.amazon.com/dp/B091TXJN41?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100594,
+    "c": "CPU",
+    "n": "Intel Pentium Dual-Core Processor E2220 1 MB LGA775 CPU BX80557E2220",
+    "b": "Intel",
+    "pr": 69,
+    "msrp": 69,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51jpGWUTAKL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0015563NW",
+        "url": "https://www.amazon.com/dp/B0015563NW?tag=tiereduptech-20",
+        "price": 69,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100595,
+    "c": "CPU",
+    "n": "Intel Pentium 4 3.0GHz 800MHz 512KB Socket 478 CPU",
+    "b": "Intel",
+    "pr": 149.95,
+    "msrp": 149.95,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/41qzwqj0DdL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B000YAB6JK",
+        "url": "https://www.amazon.com/dp/B000YAB6JK?tag=tiereduptech-20",
+        "price": 149.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100596,
+    "c": "CPU",
+    "n": "HP 15.6\" HD Display, Intel Processor N200 (Pentium), 1.1 GHz, 4GB RAM, 128GB UFS, Windows 11 Home, Bluetooth, Wi-Fi 6, Black, 15-fd0079wm (Renewed)",
+    "b": "Intel",
+    "pr": 173,
+    "msrp": 173,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/710MSEZdu7L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DHYHWHWX",
+        "url": "https://www.amazon.com/dp/B0DHYHWHWX?tag=tiereduptech-20",
+        "price": 173,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100597,
+    "c": "CPU",
+    "n": "Intel Celeron G4930 Desktop Processor 2 Core 3.2 GHz LGA1151 300 Series 54W (Renewed)",
+    "b": "Intel",
+    "pr": 14.99,
+    "msrp": 14.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61suWtrBhYL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B092PZR2WV",
+        "url": "https://www.amazon.com/dp/B092PZR2WV?tag=tiereduptech-20",
+        "price": 14.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100598,
+    "c": "CPU",
+    "n": "Intel® Celeron® G5905 Desktop Processor 2 Cores 3.5 GHz LGA1200 (Intel® 400 Series chipset) 58W",
+    "b": "Intel",
+    "pr": 49.97,
+    "msrp": 49.97,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61MK1-o4adL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08DHQMJ3H",
+        "url": "https://www.amazon.com/dp/B08DHQMJ3H?tag=tiereduptech-20",
+        "price": 49.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100599,
+    "c": "CPU",
+    "n": "Intel® Celeron G-5900 Desktop Processor 2 Cores 3.4 GHz LGA1200 (Intel® 400 Series chipset) 58W, Model Number: BX80701G5900",
+    "b": "Intel",
+    "pr": 50,
+    "msrp": 50,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61qHk9Q7KRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B086MW76F8",
+        "url": "https://www.amazon.com/dp/B086MW76F8?tag=tiereduptech-20",
+        "price": 50,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100600,
+    "c": "CPU",
+    "n": "Intel Celeron G1610 2.60GHz LGA 1155 Processor BX80637G1610",
+    "b": "Intel",
+    "pr": 28.99,
+    "msrp": 28.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61ips9TzghL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B00B4BJYVU",
+        "url": "https://www.amazon.com/dp/B00B4BJYVU?tag=tiereduptech-20",
+        "price": 28.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100601,
+    "c": "CPU",
+    "n": "Intel Celeron G3930 Dual-core (2 Core) 2.90 GHz Processor - Socket H4 LGA-1151OEM Pack - 512 KB",
+    "b": "Intel",
+    "pr": 27.99,
+    "msrp": 27.99,
+    "r": 3.4,
+    "img": "https://m.media-amazon.com/images/I/71YWOvrzaoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01MS98TM4",
+        "url": "https://www.amazon.com/dp/B01MS98TM4?tag=tiereduptech-20",
+        "price": 27.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100602,
+    "c": "CPU",
+    "n": "Intel Celeron G4930 Desktop Processor 2 Core 3.2 GHz LGA1151 300 Series 54W",
+    "b": "Intel",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61ot5QrTe+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07S8DWXTC",
+        "url": "https://www.amazon.com/dp/B07S8DWXTC?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100603,
+    "c": "CPU",
+    "n": "Intel Core i3-13100 4 Core Desktop Processor (Up to 4.5GHz) LGA 1700 - UHD Graphics 730-12MB Cache (OEM Tray Version, Cooler Not Included) - Reliable Performance for Entertainment, Home and Office",
+    "b": "Intel",
+    "pr": 144.99,
+    "msrp": 144.99,
+    "r": 2.4,
+    "img": "https://m.media-amazon.com/images/I/61FmAoPAKqL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F2GMYLX9",
+        "url": "https://www.amazon.com/dp/B0F2GMYLX9?tag=tiereduptech-20",
+        "price": 144.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100604,
+    "c": "CPU",
+    "n": "Dell Slim Desktop ECS1250 - Intel Core i3 14100 Processor, 8GB DDR5 RAM, 512GB SSD, WiFi 6, Intel UHD Graphics 730, Windows 11 Home, Onsite Service - Black",
+    "b": "Intel",
+    "pr": 548.4,
+    "msrp": 548.4,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61xQ3WvStQL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FDY4QW8H",
+        "url": "https://www.amazon.com/dp/B0FDY4QW8H?tag=tiereduptech-20",
+        "price": 548.4,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100605,
+    "c": "CPU",
+    "n": "Intel Core i3-9300 Desktop Processor 4 Cores up to 4.3 GHz LGA1151 300 Series 62W",
+    "b": "Intel",
+    "pr": 85,
+    "msrp": 85,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71utbcF8g8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07S8DWC81",
+        "url": "https://www.amazon.com/dp/B07S8DWC81?tag=tiereduptech-20",
+        "price": 85,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100606,
+    "c": "CPU",
+    "n": "Intel Core i3-12100 4 Core Desktop Processor (Up to 4.3GHz) LGA 1700 - UHD Graphics 730-12MB Cache (OEM Tray Version, Cooler Not Included) - Reliable Performance for Entertainment, Home and Office",
+    "b": "Intel",
+    "pr": 144.99,
+    "msrp": 144.99,
+    "r": 3.4,
+    "img": "https://m.media-amazon.com/images/I/61ri-VBT3RL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F2GJF5D3",
+        "url": "https://www.amazon.com/dp/B0F2GJF5D3?tag=tiereduptech-20",
+        "price": 144.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100607,
+    "c": "CPU",
+    "n": "Intel Core i3-10100 Desktop Processor 4 Cores up to 4.3 GHz LGA1200 (Intel 400 Series Chipset) 65W, Model Number: BX8070110100 (Renewed)",
+    "b": "Intel",
+    "pr": 75,
+    "msrp": 75,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51FmTWmUvxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B094DT9DX3",
+        "url": "https://www.amazon.com/dp/B094DT9DX3?tag=tiereduptech-20",
+        "price": 75,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100608,
+    "c": "CPU",
+    "n": "Intel Core i3-12100 3.30GHZ 12MB LGA1700 Processor - PN# BX8071512100, Black",
+    "b": "Intel",
+    "pr": 280.53,
+    "msrp": 280.53,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/41-oVOxPKTL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09MDDX29R",
+        "url": "https://www.amazon.com/dp/B09MDDX29R?tag=tiereduptech-20",
+        "price": 280.53,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100609,
+    "c": "CPU",
+    "n": "Intel Core i3 i3-4130 3.40 GHz Processor - Socket H3 LGA-1150 - Dual-core, 3 MB Cache (Renewed)",
+    "b": "Intel",
+    "pr": 32.99,
+    "msrp": 32.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51unN3DIp-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07R4PXFRB",
+        "url": "https://www.amazon.com/dp/B07R4PXFRB?tag=tiereduptech-20",
+        "price": 32.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100610,
+    "c": "CPU",
+    "n": "AMD RYZEN 5 5600XT 6-Core, 12-Thread Processor",
+    "b": "AMD",
+    "pr": 164.99,
+    "msrp": 164.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51So7GoGvxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DJLWFRCH",
+        "url": "https://www.amazon.com/dp/B0DJLWFRCH?tag=tiereduptech-20",
+        "price": 164.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100611,
+    "c": "CPU",
+    "n": "AMD Ryzen 5 5600 Hexa-core [6 Core] 3.50 GHz Processor",
+    "b": "AMD",
+    "pr": 248.27,
+    "msrp": 248.27,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/41KHho3RtlL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09XN7CYLN",
+        "url": "https://www.amazon.com/dp/B09XN7CYLN?tag=tiereduptech-20",
+        "price": 248.27,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100612,
+    "c": "CPU",
+    "n": "AMD Ryzen 5 5600GT - 3.6 GHz - 6 Cores - 12 Threads - 16 MB Cache Memory - Socket AM4 - OEM",
+    "b": "AMD",
+    "pr": 206.82,
+    "msrp": 206.82,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/41XFPhdFRqL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D1CHWBK2",
+        "url": "https://www.amazon.com/dp/B0D1CHWBK2?tag=tiereduptech-20",
+        "price": 206.82,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100613,
+    "c": "CPU",
+    "n": "AMD Ryzen™ 5 7500F",
+    "b": "AMD",
+    "pr": 189.99,
+    "msrp": 189.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/41ayRmoghpL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D2RWZ2LK",
+        "url": "https://www.amazon.com/dp/B0D2RWZ2LK?tag=tiereduptech-20",
+        "price": 189.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100614,
+    "c": "CPU",
+    "n": "AMD Ryzen 5 8000 8400F Hexa-core [6 Core] 4.20 GHz Processor - OEM Pack",
+    "b": "AMD",
+    "pr": 134.99,
+    "msrp": 134.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51kf426eEYL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DDQ4KRPR",
+        "url": "https://www.amazon.com/dp/B0DDQ4KRPR?tag=tiereduptech-20",
+        "price": 134.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100615,
+    "c": "CPU",
+    "n": "Ryzen 5 8400F Processor: 6-Core, 12-Thread, 4.2-4.7 GHz) + 65W TDP CPU Air Cooler. PCIe 4.0, Supports DDR5 RAM, 16MB L2 Cache for Creators, AI, Gaming, Content Creation, OEM Tray (Bulk Packaging)",
+    "b": "AMD",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/51tJPUgpl+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FSLX339T",
+        "url": "https://www.amazon.com/dp/B0FSLX339T?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100616,
+    "c": "CPU",
+    "n": "Intel Core i5 [12th Gen] i5-12400F Hexa-core [6 Core] 2.50 GHz Processor - OEM Pack",
+    "b": "Intel",
+    "pr": 164,
+    "msrp": 164,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61dbjer+UvL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B2X1KDNS",
+        "url": "https://www.amazon.com/dp/B0B2X1KDNS?tag=tiereduptech-20",
+        "price": 164,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.770Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100617,
+    "c": "CPU",
+    "n": "Intel Core i5-12500 6-Core 3.00 GHz Processor",
+    "b": "Intel",
+    "pr": 189.99,
+    "msrp": 189.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/51F1r-I0r6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D5JPHYF3",
+        "url": "https://www.amazon.com/dp/B0D5JPHYF3?tag=tiereduptech-20",
+        "price": 189.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100618,
+    "c": "CPU",
+    "n": "Intel CORE I5-12400 Desktop Processor LGA 1700 10 (6P+0E) Cores (18M Cache UP to 4.40 GHZ) with Intel Laminar RM1 Air Cooler. OEMTray (CM8071504650608) (Bulk Packaging)",
+    "b": "Intel",
+    "pr": 194.99,
+    "msrp": 194.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51tz5z8PSmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GY2NF2FP",
+        "url": "https://www.amazon.com/dp/B0GY2NF2FP?tag=tiereduptech-20",
+        "price": 194.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100619,
+    "c": "CPU",
+    "n": "Intel® Core™ i5-13400 Desktop Processor 10 cores (6 P-cores + 4 E-cores) 20MB Cache, up to 4.6 GHz",
+    "b": "Intel",
+    "pr": 350,
+    "msrp": 350,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51axr2Y+xOL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BN68JXR2",
+        "url": "https://www.amazon.com/dp/B0BN68JXR2?tag=tiereduptech-20",
+        "price": 350,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100620,
+    "c": "CPU",
+    "n": "Boxed INTEL I5-13400F 20M Cache, UP to 4.60GHZ",
+    "b": "Intel",
+    "pr": 241.86,
+    "msrp": 241.86,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/6138mFBll6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BQ6BRL4T",
+        "url": "https://www.amazon.com/dp/B0BQ6BRL4T?tag=tiereduptech-20",
+        "price": 241.86,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100621,
+    "c": "CPU",
+    "n": "Aspire XC-1780-UA91 Desktop | Intel Core i5-13400 10-Core Processor (Up to 4.6GHz) | 8GB 3200MHz DDR4 RAM | 512GB PCIe Gen 4 SSD | SD Card Reader | Intel Wi-Fi 6E AX211 | Windows 11 Home",
+    "b": "Intel",
+    "pr": 549.99,
+    "msrp": 549.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/61X1H-GKUaL._AC_UY218_.jpg",
+    "needsReview": true,
+    "deals": {
+      "amazon": {
+        "asin": "B0DFCXH97Z",
+        "url": "https://www.amazon.com/dp/B0DFCXH97Z?tag=tiereduptech-20",
+        "price": 549.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100622,
+    "c": "CPU",
+    "n": "acer Aspire TC-1780-UR11 Desktop | 13th Gen Intel Core i5-13400 10-Core Processor | 16GB 3200MHz DDR4 | 512GB M.2 2280 PCIe Gen 4 SSD | SD Card Reader | Intel Wi-Fi 6E AX211 | Windows 11 Pro,Black",
+    "b": "Intel",
+    "pr": 558.2,
+    "msrp": 558.2,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61-Ky1lRL9L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C1D3YSQ1",
+        "url": "https://www.amazon.com/dp/B0C1D3YSQ1?tag=tiereduptech-20",
+        "price": 558.2,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100623,
+    "c": "CPU",
+    "n": "acer Aspire TC-1780-UA93 Desktop | 13th Gen Intel Core i5-13400 10-Core Processor | 16GB 3200MHz DDR4 | 1TB M.2 2280 PCIe Gen 4 SSD | SD Card Reader | Intel Wi-Fi 6E AX211 | Windows 11 Home",
+    "b": "Intel",
+    "pr": 572,
+    "msrp": 572,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61-Ky1lRL9L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C6YQSN8P",
+        "url": "https://www.amazon.com/dp/B0C6YQSN8P?tag=tiereduptech-20",
+        "price": 572,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100624,
+    "c": "CPU",
+    "n": "Intel Xeon W-2155 SR3LR 10-Core / 20 Threads 3.30GHz (4.50 GHz Turbo) 13.75 MB LGA2066 Processor - (Renewed)",
+    "b": "Intel",
+    "pr": 319,
+    "msrp": 319,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71x1AByOdyL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B1NTSTWK",
+        "url": "https://www.amazon.com/dp/B0B1NTSTWK?tag=tiereduptech-20",
+        "price": 319,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100625,
+    "c": "CPU",
+    "n": "Intel Xeon W-2245 (8 Core) 3.90 GHz Processor - 16.5 MB Cache – 4.50 GHz Overclocking Speed - 14 nm - Socket R4 LGA-2066-155 W - 16 Threads (Renewed)",
+    "b": "Intel",
+    "pr": 218.9,
+    "msrp": 218.9,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/61xuBKOPwXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B77VYLZW",
+        "url": "https://www.amazon.com/dp/B0B77VYLZW?tag=tiereduptech-20",
+        "price": 218.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100626,
+    "c": "CPU",
+    "n": "Intel Xeon W-2295 Processor 3 GHz 24.75 MB, LGA 2066 (Socket R4), Server/Workstation, 14 nm, W126171686",
+    "b": "Intel",
+    "pr": 1932.45,
+    "msrp": 1932.45,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51eHNGHFMXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B093Z651MH",
+        "url": "https://www.amazon.com/dp/B093Z651MH?tag=tiereduptech-20",
+        "price": 1932.45,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100627,
+    "c": "CPU",
+    "n": "Intel Xeon W-2255 Deca-core (10 Core) 3.70 GHz Processor - 19.25 MB L3 Cache - 64-bit Processing - 4.50 GHz Overclocking Speed - 14 nm - 165 W - 20 Threads - Deca-core (10 Core) (Renewed)",
+    "b": "Intel",
+    "pr": 397,
+    "msrp": 397,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41VSs6Sz7dL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C8BT3QD8",
+        "url": "https://www.amazon.com/dp/B0C8BT3QD8?tag=tiereduptech-20",
+        "price": 397,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100628,
+    "c": "CPU",
+    "n": "Intel Xeon W-2223 Quad-core (4 Core) 3.60 GHz Processor - 8.25 MB Cache - 3.90 GHz Overclocking Speed - 14 nm - Socket R4 LGA-2066-120 W - 8 Threads (Renewed)",
+    "b": "Intel",
+    "pr": 42.13,
+    "msrp": 42.13,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/81eoV5SY8RL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B77W1WS3",
+        "url": "https://www.amazon.com/dp/B0B77W1WS3?tag=tiereduptech-20",
+        "price": 42.13,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100629,
+    "c": "CPU",
+    "n": "Intel Xeon W-2295 Octadeca-core (18 Core) 3 GHz Processor - OEM Pack - 24.75 MB L3 Cache - 18 MB L2 Cache - 64-bit Processing - 4.60 GHz Overclocking Speed - 14 nm - Socket R4 LGA-2066 - (Renewed)",
+    "b": "Intel",
+    "pr": 1091,
+    "msrp": 1091,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41wdKL59olL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C8BV44TG",
+        "url": "https://www.amazon.com/dp/B0C8BV44TG?tag=tiereduptech-20",
+        "price": 1091,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100630,
+    "c": "CPU",
+    "n": "INTEL XEON W9-3475X Processor 36 CORES, Box",
+    "b": "Intel",
+    "pr": 4503.36,
+    "msrp": 4503.36,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51TYvm3N64L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BYSVKFCR",
+        "url": "https://www.amazon.com/dp/B0BYSVKFCR?tag=tiereduptech-20",
+        "price": 4503.36,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100631,
+    "c": "CPU",
+    "n": "Xeon W-2275 Processor 3.3 GHz 19.25 MB Xeon W-2275, Intel, W126171687 (19.25 MB Xeon W-2275, Intel Xeon W, LGA 2066 (Socket R4), Server/Workstation, 14 nm, Intel, 3.3 GHz)",
+    "b": "Intel",
+    "pr": 1239.46,
+    "msrp": 1239.46,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/61smqx9iF0L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B093Z3Z798",
+        "url": "https://www.amazon.com/dp/B093Z3Z798?tag=tiereduptech-20",
+        "price": 1239.46,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100632,
+    "c": "CPU",
+    "n": "Intel XEON 22 CORE Processor E5-2699V4 2.2GHZ 55MB Smart Cache 9.6 GT/S QPI TDP 145W",
+    "b": "Intel",
+    "pr": 292.05,
+    "msrp": 292.05,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/618BDFLRn3L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01DTYQH4G",
+        "url": "https://www.amazon.com/dp/B01DTYQH4G?tag=tiereduptech-20",
+        "price": 292.05,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100633,
+    "c": "CPU",
+    "n": "Intel Xeon Platinum 8160 SR3B0 24-Core / 48 Threads 2.10GHz (3.70 GHz Turbo) 33MB L3 Cache LGA3647 Processor - (Renewed)",
+    "b": "Intel",
+    "pr": 98.22,
+    "msrp": 98.22,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/51wEVC8vBaL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07V3SYQ1P",
+        "url": "https://www.amazon.com/dp/B07V3SYQ1P?tag=tiereduptech-20",
+        "price": 98.22,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100634,
+    "c": "CPU",
+    "n": "Intel Xeon Gold 6300 (3rd Gen) 6330 Octacosa-core (28 Core) 2 GHz Processor - 42 MB L3 Cache - 64-bit Processing - 3.10 GHz Overclocking Speed - 10 nm - Socket LGA-4189-205 W - 56 Threads",
+    "b": "Intel",
+    "pr": 1488.5,
+    "msrp": 1488.5,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51iIWPQRwFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09WW1N1L6",
+        "url": "https://www.amazon.com/dp/B09WW1N1L6?tag=tiereduptech-20",
+        "price": 1488.5,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100635,
+    "c": "CPU",
+    "n": "Intel E5-2680v4 2.4/35/2400 14-Core 120W (SR2N7) (Renewed)",
+    "b": "Intel",
+    "pr": 42.25,
+    "msrp": 42.25,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/41tXYgzv8-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07HPB1N2J",
+        "url": "https://www.amazon.com/dp/B07HPB1N2J?tag=tiereduptech-20",
+        "price": 42.25,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100636,
+    "c": "CPU",
+    "n": "MINISFORUM DEG1 eGPU Dock, External GPU Docking Station for RTX 4090, AMD RX 7900 XTX, eGPU Enclosure Graphics Card Extension Support ATX/SFX Standard Power, Oculink Expansion Graphics Docking Station",
+    "b": "AMD",
+    "pr": 109.9,
+    "msrp": 109.9,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61fZUjmWe+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DPGYKH7G",
+        "url": "https://www.amazon.com/dp/B0DPGYKH7G?tag=tiereduptech-20",
+        "price": 109.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100637,
+    "c": "CPU",
+    "n": "Intel Xeon Gold 6138 20 Cores 2GHz 27.5MB 10.4 GT/s 125W LGA 3647 CPU SR3B5 (Renewed)",
+    "b": "Intel",
+    "pr": 25,
+    "msrp": 25,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61F4bFnyglL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07T3FGR8X",
+        "url": "https://www.amazon.com/dp/B07T3FGR8X?tag=tiereduptech-20",
+        "price": 25,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100638,
+    "c": "CPU",
+    "n": "INTEL CM8064401807100 Xeon E5-2697 v3 Fourteen-Core Haswell Processor 2.6GHz 9.6GT/s 35MB LGA 2011-v3 CPU, OEM OEM (Renewed)",
+    "b": "Intel",
+    "pr": 29.5,
+    "msrp": 29.5,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/91+7v6NWdyL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07JND5X7G",
+        "url": "https://www.amazon.com/dp/B07JND5X7G?tag=tiereduptech-20",
+        "price": 29.5,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100639,
+    "c": "CPU",
+    "n": "AMD Ryzen™ Threadripper™ 9980X",
+    "b": "AMD",
+    "pr": 4399,
+    "msrp": 4399,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/5168KoArl4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJ6JZN8K",
+        "url": "https://www.amazon.com/dp/B0FJ6JZN8K?tag=tiereduptech-20",
+        "price": 4399,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100640,
+    "c": "CPU",
+    "n": "AMD Ryzen™ Threadripper™ 9960X",
+    "b": "AMD",
+    "pr": 1369,
+    "msrp": 1369,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/5168KoArl4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJ6KKCD5",
+        "url": "https://www.amazon.com/dp/B0FJ6KKCD5?tag=tiereduptech-20",
+        "price": 1369,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100641,
+    "c": "CPU",
+    "n": "AMD Ryzen™ Threadripper™ PRO 7995WX 96-Core, 192-Thread Processor",
+    "b": "AMD",
+    "pr": 8787.99,
+    "msrp": 8787.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/61qmvGYhBhL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CK2ZQJZ6",
+        "url": "https://www.amazon.com/dp/B0CK2ZQJZ6?tag=tiereduptech-20",
+        "price": 8787.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100642,
+    "c": "CPU",
+    "n": "AMD Ryzen™ Threadripper™ PRO 9965WX",
+    "b": "AMD",
+    "pr": 2699.99,
+    "msrp": 2699.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/51ZlohJq4mL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJ6L3Y66",
+        "url": "https://www.amazon.com/dp/B0FJ6L3Y66?tag=tiereduptech-20",
+        "price": 2699.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100643,
+    "c": "CPU",
+    "n": "AMD Ryzen™ Threadripper™ 9970X",
+    "b": "AMD",
+    "pr": 2299.99,
+    "msrp": 2299.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/5168KoArl4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJ6FJN2H",
+        "url": "https://www.amazon.com/dp/B0FJ6FJN2H?tag=tiereduptech-20",
+        "price": 2299.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100644,
+    "c": "CPU",
+    "n": "AMD Ryzen™ Threadripper™ 7960X 24-Core, 48-Thread Processor",
+    "b": "AMD",
+    "pr": 1199.99,
+    "msrp": 1199.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71Gyox1aqRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CK2VGBSQ",
+        "url": "https://www.amazon.com/dp/B0CK2VGBSQ?tag=tiereduptech-20",
+        "price": 1199.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100645,
+    "c": "CPU",
+    "n": "AMD Ryzen™ Threadripper™ PRO 7975WX 32-Core, 64-Thread Processor",
+    "b": "AMD",
+    "pr": 3799.99,
+    "msrp": 3799.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71lyryalWXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CK2TZWZX",
+        "url": "https://www.amazon.com/dp/B0CK2TZWZX?tag=tiereduptech-20",
+        "price": 3799.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100646,
+    "c": "CPU",
+    "n": "AMD Ryzen™ Threadripper™ 7970X 32-Core, 64-Thread Processor",
+    "b": "AMD",
+    "pr": 1899.99,
+    "msrp": 1899.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71Gyox1aqRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CK2W3WFP",
+        "url": "https://www.amazon.com/dp/B0CK2W3WFP?tag=tiereduptech-20",
+        "price": 1899.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100647,
+    "c": "CPU",
+    "n": "AMD Ryzen Threadripper PRO 5955WX, 16-core, 32-Thread Desktop Processor",
+    "b": "AMD",
+    "pr": 799.99,
+    "msrp": 799.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61fqEHg5ieL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BFVVC89M",
+        "url": "https://www.amazon.com/dp/B0BFVVC89M?tag=tiereduptech-20",
+        "price": 799.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100648,
+    "c": "CPU",
+    "n": "AMD Ryzen™ Threadripper™ PRO 7965WX 24-Core, 48-Thread Processor",
+    "b": "AMD",
+    "pr": 2699.77,
+    "msrp": 2699.77,
+    "r": 3.6,
+    "img": "https://m.media-amazon.com/images/I/71lyryalWXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CK2T1HSS",
+        "url": "https://www.amazon.com/dp/B0CK2T1HSS?tag=tiereduptech-20",
+        "price": 2699.77,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100649,
+    "c": "CPU",
+    "n": "AMD Ryzen Threadripper PRO 3955WX 16-core, 32-Thread Desktop Processor",
+    "b": "AMD",
+    "pr": 699.95,
+    "msrp": 699.95,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61+gfReQLMS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08V5J11BD",
+        "url": "https://www.amazon.com/dp/B08V5J11BD?tag=tiereduptech-20",
+        "price": 699.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100650,
+    "c": "CPU",
+    "n": "AMD Ryzen Threadripper 3970X 32-Core, 64-Thread Unlocked Desktop Processor",
+    "b": "AMD",
+    "pr": 1550,
+    "msrp": 1550,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81D-WvtG6OL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0815JJQQ8",
+        "url": "https://www.amazon.com/dp/B0815JJQQ8?tag=tiereduptech-20",
+        "price": 1550,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100651,
+    "c": "GPU",
+    "n": "msi Gaming RTX 3050 Ventus 2X 6G OC Graphics Card (NVIDIA RTX 3050, 96-Bit, Boost Clock: 1492 MHz, 6GB GDDR6 14 Gbps, HDMI/DP, Ampere Architecture)",
+    "b": "NVIDIA",
+    "pr": 209.99,
+    "msrp": 209.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81GGSRNirgL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CTK1SFVD",
+        "url": "https://www.amazon.com/dp/B0CTK1SFVD?tag=tiereduptech-20",
+        "price": 209.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100652,
+    "c": "GPU",
+    "n": "msi Gaming RTX 3050 LP 6G OC Graphics Card (NVIDIA RTX 3050, 96-Bit, Boost Clock: 1492 MHz, 6GB GDDR6 14 Gbps, HDMI/DP, Ampere Architecture)",
+    "b": "NVIDIA",
+    "pr": 219.99,
+    "msrp": 219.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71LlSYcVPZL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CTJZCJH1",
+        "url": "https://www.amazon.com/dp/B0CTJZCJH1?tag=tiereduptech-20",
+        "price": 219.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.771Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100653,
+    "c": "GPU",
+    "n": "ASUS Phoenix NVIDIA GeForce RTX 3050 Gaming Graphics Card - PCIe 4.0, 8GB GDDR6 Memory, HDMI 2.1, DisplayPort 1.4a, Axial-tech Fan, Protective Backplate, Dual Ball Fan Bearings, Auto-Extreme (Renewed)",
+    "b": "ASUS",
+    "pr": 259.99,
+    "msrp": 259.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/719xOPMalsL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CJ5R59L9",
+        "url": "https://www.amazon.com/dp/B0CJ5R59L9?tag=tiereduptech-20",
+        "price": 259.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.772Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100654,
+    "c": "GPU",
+    "n": "ASUS Dual NVIDIA GeForce RTX 3050 6GB OC Edition Gaming Graphics Card - PCIe 4.0, 6GB GDDR6 Memory, HDMI 2.1, DisplayPort 1.4a, 2-Slot Design, Axial-tech Fan Design, 0dB Technology, Steel Bracket",
+    "b": "ASUS",
+    "pr": 199.95,
+    "msrp": 199.95,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81mwcITtHBL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D2PHTWPP",
+        "url": "https://www.amazon.com/dp/B0D2PHTWPP?tag=tiereduptech-20",
+        "price": 199.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.772Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100655,
+    "c": "GPU",
+    "n": "Gigabyte NVIDIA GeForce RTX 3050 OC Low Profile 6G Graphics Card - 6GB GDDR6, 96-bit, PCI-E 4.0, 1477MHz Core Clock, 2X DP 1.4, 2 x HDMI 2.1, GV-N3050OC-6GL",
+    "b": "NVIDIA",
+    "pr": 442.87,
+    "msrp": 442.87,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61GQFZKhywL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CV4CPQ7S",
+        "url": "https://www.amazon.com/dp/B0CV4CPQ7S?tag=tiereduptech-20",
+        "price": 442.87,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.772Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100656,
+    "c": "GPU",
+    "n": "ASUS Dual NVIDIA GeForce RTX 3060 Ti OC Edition Graphics Card (PCIe 4.0, 8GB GDDR6X Memory, HDMI 2.1, DisplayPort 1.4a, 2-Slot Design, Axial-tech Fan Design, 0dB Technology, and More) (Renewed)",
+    "b": "ASUS",
+    "pr": 319.99,
+    "msrp": 319.99,
+    "r": 4.9,
+    "img": "https://m.media-amazon.com/images/I/81uzT1EYOSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BVTGBCDQ",
+        "url": "https://www.amazon.com/dp/B0BVTGBCDQ?tag=tiereduptech-20",
+        "price": 319.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.772Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100657,
+    "c": "GPU",
+    "n": "Geforce Nvidia RTX 3060ti Founders Edition 8GB",
+    "b": "NVIDIA",
+    "pr": 406.37,
+    "msrp": 406.37,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81uFpNyjm5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08PW559LL",
+        "url": "https://www.amazon.com/dp/B08PW559LL?tag=tiereduptech-20",
+        "price": 406.37,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.772Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100658,
+    "c": "GPU",
+    "n": "Dell Gaming OEM Nvidia GeForce RTX 3060 Ti 8GB GDDR6 256-bit 14Gbps PCIe 4.0 x16 Graphics Video Card 0MTVG8 08GXMM (Renewed)",
+    "b": "NVIDIA",
+    "pr": 299.99,
+    "msrp": 299.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/51YJy0rddGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CS3SVPHQ",
+        "url": "https://www.amazon.com/dp/B0CS3SVPHQ?tag=tiereduptech-20",
+        "price": 299.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.772Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100659,
+    "c": "GPU",
+    "n": "MSI Gaming GeForce GTX 1660 Super 192-bit HDMI/DP 6GB GDRR6 HDCP Support DirectX 12 Dual Fan VR Ready OC Graphics Card (GTX 1660 Super VENTUS XS OC) (Renewed)",
+    "b": "MSI",
+    "pr": 174.95,
+    "msrp": 174.95,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61WLhQGyMIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08LHC5B2K",
+        "url": "https://www.amazon.com/dp/B08LHC5B2K?tag=tiereduptech-20",
+        "price": 174.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100660,
+    "c": "GPU",
+    "n": "EVGA 06G-P4-1068-KR GeForce GTX 1660 Super Sc Ultra Gaming, 6GB GDDR6, Dual Fan, Metal Backplate (Renewed)",
+    "b": "EVGA",
+    "pr": 179.97,
+    "msrp": 179.97,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/81mhOOhB+bL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08ZNRJ9RZ",
+        "url": "https://www.amazon.com/dp/B08ZNRJ9RZ?tag=tiereduptech-20",
+        "price": 179.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100661,
+    "c": "GPU",
+    "n": "ASUS TUF Gaming GeForce GTX 1660 Super Overclocked 6GB Edition HDMI DP DVI Gaming Graphics Card (TUF-GTX1660S-O6G-GAMING)",
+    "b": "ASUS",
+    "pr": 250.06,
+    "msrp": 250.06,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71tex85KCNL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B081SPGMBD",
+        "url": "https://www.amazon.com/dp/B081SPGMBD?tag=tiereduptech-20",
+        "price": 250.06,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100662,
+    "c": "GPU",
+    "n": "ASUS TUF Gaming NVIDIA GeForce GTX 1660 Ti EVO OC Edition Graphics Card (PCIe 3.0, 6GB GDDR6, HDMI 2.0b, DisplayPort 1.4, Space-Grade Lubricant, Compact Design, GPU Tweak II)",
+    "b": "ASUS",
+    "pr": 243.53,
+    "msrp": 243.53,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81etHrzMChL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09HL87KQM",
+        "url": "https://www.amazon.com/dp/B09HL87KQM?tag=tiereduptech-20",
+        "price": 243.53,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100663,
+    "c": "GPU",
+    "n": "MSI NVIDIA GeForce GTX 1660 Super Ventus XS VR Ready OC PCIe 3.0 Graphics Card Dual Fan 6GB GDDR6 HDCP Support DirectX 12 NVIDIA G-SYNC DisplayPort HDMI w HDMI Cable",
+    "b": "NVIDIA",
+    "pr": 369,
+    "msrp": 369,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61Ck26y04VL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09JFMVZN9",
+        "url": "https://www.amazon.com/dp/B09JFMVZN9?tag=tiereduptech-20",
+        "price": 369,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100664,
+    "c": "GPU",
+    "n": "PNY GeForce GTX 1660 Super 6GB XLR8 Gaming Overclocked Edition Single Fan (Renewed)",
+    "b": "PNY",
+    "pr": 169.97,
+    "msrp": 169.97,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/61ielGhMSSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BKRCTN9B",
+        "url": "https://www.amazon.com/dp/B0BKRCTN9B?tag=tiereduptech-20",
+        "price": 169.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100665,
+    "c": "GPU",
+    "n": "MSI GeForce GTX 1660 VENTUS XS 6G OC Gaming Graphics Card 192-Bit HDMI/DP 6GB GDRR5 HDCP Support DirectX 12 Dual Fan VR Ready OC, NVIDIA GPU Video Card for PC Gaming, Computer Graphics Cards (Renewed)",
+    "b": "MSI",
+    "pr": 179.99,
+    "msrp": 179.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/81gN7myaekL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B082XLVKNK",
+        "url": "https://www.amazon.com/dp/B082XLVKNK?tag=tiereduptech-20",
+        "price": 179.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100666,
+    "c": "GPU",
+    "n": "GIGABYTE GeForce GTX 1660 Ti OC 6G 192-bit GDDR6 DisplayPort 1.4 HDMI 2.0B with Windforce 2X Cooling System Graphic Cards- Gv-N166TOC-6GD (Renewed)",
+    "b": "Gigabyte",
+    "pr": 170.38,
+    "msrp": 170.38,
+    "r": 3.3,
+    "img": "https://m.media-amazon.com/images/I/71USRvNb9XS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0952D9F1K",
+        "url": "https://www.amazon.com/dp/B0952D9F1K?tag=tiereduptech-20",
+        "price": 170.38,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100667,
+    "c": "GPU",
+    "n": "Sapphire 11310-01-20G Pulse AMD Radeon RX 6600 Gaming Graphics Card with 8GB GDDR6, AMD RDNA 2 (Renewed)",
+    "b": "Sapphire",
+    "pr": 289.97,
+    "msrp": 289.97,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71L0p7ALaQL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BWBHQ2RN",
+        "url": "https://www.amazon.com/dp/B0BWBHQ2RN?tag=tiereduptech-20",
+        "price": 289.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100668,
+    "c": "GPU",
+    "n": "XFX Speedster SWFT210 Radeon RX 7600 Graphics Card with 8GB GDDR6 HDMI 3xDP, AMD RDNA 3 RX-76PSWFTFY",
+    "b": "AMD",
+    "pr": 299.99,
+    "msrp": 299.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/611CmYuyJdL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C59RVD98",
+        "url": "https://www.amazon.com/dp/B0C59RVD98?tag=tiereduptech-20",
+        "price": 299.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100669,
+    "c": "GPU",
+    "n": "MOUGOL AMD Radeon RX 580 Gaming Graphics Card, 8GB GDDR5 256-Bit, Dual Fan Cooling, DP/HDMI/DVI Video Output, PCI Express X16 3.0, Computer GPU Support Windows 11/10/7 Desktop PC",
+    "b": "AMD",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71Uj2SHQYiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FN7N4F5Y",
+        "url": "https://www.amazon.com/dp/B0FN7N4F5Y?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100670,
+    "c": "GPU",
+    "n": "PowerColor Fighter AMD Radeon RX 6600 Graphics Card with 8GB GDDR6 Memory (Renewed)",
+    "b": "PowerColor",
+    "pr": 279.97,
+    "msrp": 279.97,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/51cf3rZOiML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09S8PW7V1",
+        "url": "https://www.amazon.com/dp/B09S8PW7V1?tag=tiereduptech-20",
+        "price": 279.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100671,
+    "c": "GPU",
+    "n": "XFX Swift AMD Radeon RX 9060 XT OC Gaming Edition with 16GB GDDR6 HDMI 2xDP, RDNA 4 RX-96TSW16BQ, Graphics Card, Compatible with Desktop PCs",
+    "b": "AMD",
+    "pr": 439.99,
+    "msrp": 439.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61dv0oEuVkL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FC2XXSG5",
+        "url": "https://www.amazon.com/dp/B0FC2XXSG5?tag=tiereduptech-20",
+        "price": 439.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100672,
+    "c": "GPU",
+    "n": "Sapphire 11309-03-20G Pulse AMD Radeon RX 6600 XT Gaming Graphics Card with 8GB GDDR6, AMD RDNA 2",
+    "b": "AMD",
+    "pr": 498,
+    "msrp": 498,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/8175IOPNDjL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09C7RMJ5Z",
+        "url": "https://www.amazon.com/dp/B09C7RMJ5Z?tag=tiereduptech-20",
+        "price": 498,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100673,
+    "c": "GPU",
+    "n": "ASUS ROG Strix AMD Radeon RX 6600 XT OC Edition Gaming Graphics Card (AMD RDNA 2, PCIe 4.0, 8GB GDDR6, HDMI 2.1, DisplayPort 1.4a, Axial-tech Fan Design, Super Alloy Power II, GPU Tweak II)",
+    "b": "ASUS",
+    "pr": 712.3,
+    "msrp": 712.3,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/81EoGRqh1DL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09CG64Y3Q",
+        "url": "https://www.amazon.com/dp/B09CG64Y3Q?tag=tiereduptech-20",
+        "price": 712.3,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100674,
+    "c": "GPU",
+    "n": "PowerColor Fighter AMD Radeon RX 6600 Graphics Card with 8GB GDDR6 Memory",
+    "b": "AMD",
+    "pr": 449,
+    "msrp": 449,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51WqsiCNJyL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09H3PY14M",
+        "url": "https://www.amazon.com/dp/B09H3PY14M?tag=tiereduptech-20",
+        "price": 449,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100675,
+    "c": "GPU",
+    "n": "Sapphire 11310-01-20G Pulse AMD Radeon RX 6600 Gaming Graphics Card with 8GB GDDR6, AMD RDNA 2",
+    "b": "AMD",
+    "pr": 440,
+    "msrp": 440,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71L0p7ALaQL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09JHRQY4Y",
+        "url": "https://www.amazon.com/dp/B09JHRQY4Y?tag=tiereduptech-20",
+        "price": 440,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100676,
+    "c": "GPU",
+    "n": "AMD Radeon RX 6700 XT 12GB GDDR6 Reference Model Graphics Card (Renewed)",
+    "b": "AMD",
+    "pr": 394.99,
+    "msrp": 394.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51bzkVMG+wL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GWNKL4YZ",
+        "url": "https://www.amazon.com/dp/B0GWNKL4YZ?tag=tiereduptech-20",
+        "price": 394.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100677,
+    "c": "GPU",
+    "n": "XFX Speedster QICK319 AMD Radeon RX 6700 XT Black Gaming Graphics Card with 12GB GDDR6 HDMI 3xDP, AMD RDNA 2 RX-67XTYPBDP (Renewed)",
+    "b": "XFX",
+    "pr": 359.97,
+    "msrp": 359.97,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/51iGb7cbeGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B094L2SFRH",
+        "url": "https://www.amazon.com/dp/B094L2SFRH?tag=tiereduptech-20",
+        "price": 359.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100678,
+    "c": "GPU",
+    "n": "XFX Swift AMD Radeon RX 9060 XT OC White Gaming Edition with 8GB GDDR6 HDMI 2xDP, AMD RDNA 4 RX 9060XT RX-96TSW8GWQ",
+    "b": "AMD",
+    "pr": 359.99,
+    "msrp": 359.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/718TRI9p6rL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F8PHK1LN",
+        "url": "https://www.amazon.com/dp/B0F8PHK1LN?tag=tiereduptech-20",
+        "price": 359.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100679,
+    "c": "GPU",
+    "n": "Sapphire Technology Nitro+ AMD Radeon RX 6700 XT Gaming Graphics Card with 12GB GDDR6, AMD RDNA 2 (11306-01-20G) (Renewed)",
+    "b": "Sapphire",
+    "pr": 419.97,
+    "msrp": 419.97,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/81MhF00eGvL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09P1Y21NH",
+        "url": "https://www.amazon.com/dp/B09P1Y21NH?tag=tiereduptech-20",
+        "price": 419.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100680,
+    "c": "GPU",
+    "n": "XFX Speedster SWFT309 AMD Radeon RX 6700 XT CORE Gaming Graphics Card with 12GB GDDR6 HDMI 3xDP, AMD RDNA 2 RX-67XTYJFDV (Renewed)",
+    "b": "XFX",
+    "pr": 394.97,
+    "msrp": 394.97,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/615azCokf+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BV11LHLQ",
+        "url": "https://www.amazon.com/dp/B0BV11LHLQ?tag=tiereduptech-20",
+        "price": 394.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100681,
+    "c": "GPU",
+    "n": "PowerColor Red Devil AMD Radeon RX 6700 XT Gaming Graphics Card with 12GB GDDR6 Memory, Powered by AMD RDNA 2, Raytracing, PCI Express 4.0, HDMI 2.1, AMD Infinity Cache (Renewed)",
+    "b": "PowerColor",
+    "pr": 487.62,
+    "msrp": 487.62,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/51TztdyGl+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B092RW451D",
+        "url": "https://www.amazon.com/dp/B092RW451D?tag=tiereduptech-20",
+        "price": 487.62,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100682,
+    "c": "GPU",
+    "n": "ASRock Radeon RX 6700 XT Challenger D 12GB OC Graphics Card, 2615 MHz Boost Clock, 12GB GDDR6, AMD RDNA 2, DisplayPort 1.4, HDMI 2.1 VRR, PCIe 4.0, Dual Fan Cooling",
+    "b": "AMD",
+    "pr": 793,
+    "msrp": 793,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/7185jBlnWlS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B093Z4BHJH",
+        "url": "https://www.amazon.com/dp/B093Z4BHJH?tag=tiereduptech-20",
+        "price": 793,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100683,
+    "c": "GPU",
+    "n": "Sapphire VCX 11306-01-20T Nitro+ AMD Radeon RX 6700 XT Gaming OC 12GB GDDR6",
+    "b": "AMD",
+    "pr": 499.99,
+    "msrp": 499.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51LFGzMV+sL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B094593LB8",
+        "url": "https://www.amazon.com/dp/B094593LB8?tag=tiereduptech-20",
+        "price": 499.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100684,
+    "c": "GPU",
+    "n": "ASUS ROG Strix AMD Radeon RX 6700 XT OC Edition Gaming Graphics Card AMD RDNA 2, PCIe 4.0, 12GB GDDR6, HDMI 2.1, DisplayPort 1.4a, Axial-tech Fan Design, 2.9-Slot, Super Alloy Power II, GPU Tweak II",
+    "b": "ASUS",
+    "pr": 1289,
+    "msrp": 1289,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81omrjP1GBL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08YWZHJDZ",
+        "url": "https://www.amazon.com/dp/B08YWZHJDZ?tag=tiereduptech-20",
+        "price": 1289,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.773Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100685,
+    "c": "GPU",
+    "n": "XFX Speedster SWFT309 AMD Radeon RX 6700 XT CORE Gaming Graphics Card with 12GB GDDR6 HDMI 3xDP, AMD RDNA 2 RX-67XTYJFDV",
+    "b": "AMD",
+    "pr": 780,
+    "msrp": 780,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/613fmbK2EHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08YKCC8XD",
+        "url": "https://www.amazon.com/dp/B08YKCC8XD?tag=tiereduptech-20",
+        "price": 780,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100686,
+    "c": "GPU",
+    "n": "PowerColor Red Devil AMD Radeon RX 6700 XT Gaming Graphics Card with 12GB GDDR6 Memory, Powered by AMD RDNA 2, Raytracing, PCI Express 4.0, HDMI 2.1, AMD Infinity Cache",
+    "b": "AMD",
+    "pr": 765,
+    "msrp": 765,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61cO8bBORoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08Y934HZQ",
+        "url": "https://www.amazon.com/dp/B08Y934HZQ?tag=tiereduptech-20",
+        "price": 765,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100687,
+    "c": "GPU",
+    "n": "ASRock AMD Radeon RX 7600 Steel Legend 8GB OC GDDR6 128-bit 0dB Silent Cooling Graphics Card DisplayPort 7680 x 4320 HDMI 18 Gbps 3 Fans PCI Express 4",
+    "b": "AMD",
+    "pr": 299.99,
+    "msrp": 299.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61G-kbh4+hL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C6HTVV52",
+        "url": "https://www.amazon.com/dp/B0C6HTVV52?tag=tiereduptech-20",
+        "price": 299.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100688,
+    "c": "GPU",
+    "n": "MOUGOL AMD Radeon R7 350 4GB Low Profile Graphics Card, Dual HDMI Ports, 4GB GDDR3 128-Bit, SFF Half-Height Video Card for Slim Desktop PC, Support Windows 10/8.1/7 (Not Compatible with Win11) GPU",
+    "b": "AMD",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71yO8AunnpL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FP4VDBVW",
+        "url": "https://www.amazon.com/dp/B0FP4VDBVW?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100689,
+    "c": "GPU",
+    "n": "VISIONTEK AMD Radeon RX 550 SFF Single Fan 4GB GDDR5 PCIE 3.0 Graphics Card",
+    "b": "AMD",
+    "pr": 119.99,
+    "msrp": 119.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/710uOaWD1uL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F44316BM",
+        "url": "https://www.amazon.com/dp/B0F44316BM?tag=tiereduptech-20",
+        "price": 119.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100690,
+    "c": "GPU",
+    "n": "XFX Quicksilver AMD Radeon RX 9070 XT Gaming Edition with 16GB GDDR6 HDMI 3xDP, AMD RDNA 4 RX-97TQICKB9",
+    "b": "AMD",
+    "pr": 739.99,
+    "msrp": 739.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61r31aDojEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DXVMSQ5T",
+        "url": "https://www.amazon.com/dp/B0DXVMSQ5T?tag=tiereduptech-20",
+        "price": 739.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100691,
+    "c": "GPU",
+    "n": "VisionTek AMD Radeon RX 550 Graphic Card - 4 GB GDDR5 - Full-Height",
+    "b": "AMD",
+    "pr": 199.99,
+    "msrp": 199.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/71IFiY9BuUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09SK8NCGL",
+        "url": "https://www.amazon.com/dp/B09SK8NCGL?tag=tiereduptech-20",
+        "price": 199.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100692,
+    "c": "GPU",
+    "n": "XFX Speedster QICK308 Radeon RX 6600 XT Black Gaming Graphics Card with 8GB GDDR6 HDMI 3xDP, AMD RDNA 2 RX-66XT8LBDQ",
+    "b": "AMD",
+    "pr": 499.99,
+    "msrp": 499.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71kQ6SLUy4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09B46MZ3T",
+        "url": "https://www.amazon.com/dp/B09B46MZ3T?tag=tiereduptech-20",
+        "price": 499.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100693,
+    "c": "GPU",
+    "n": "AMD Radeon RX 6800 16GB GDDR6 Reference Model Graphics Card (Renewed)",
+    "b": "AMD",
+    "pr": 419.99,
+    "msrp": 419.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/61q9FAySqsL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GWNYJM8P",
+        "url": "https://www.amazon.com/dp/B0GWNYJM8P?tag=tiereduptech-20",
+        "price": 419.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100694,
+    "c": "GPU",
+    "n": "XFX Speedster SWFT319 AMD Radeon RX 6800 Gaming Graphics Card with 16GB GDDR6, AMD RDNA 2 RX-68XLAQBD9 (Renewed)",
+    "b": "XFX",
+    "pr": 399.99,
+    "msrp": 399.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/71LckgU8r2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FTTG8WW9",
+        "url": "https://www.amazon.com/dp/B0FTTG8WW9?tag=tiereduptech-20",
+        "price": 399.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100695,
+    "c": "GPU",
+    "n": "ASRock Radeon RX 9060 XT Challenger 16GB OC Graphics Card, AMD RDNA 4 Architecture, 16GB GDDR6, PCIe 5.0, Dual Fans, 0dB Silent Cooling, LED Indicator, DisplayPort 2.1a, HDMI 2.1b",
+    "b": "AMD",
+    "pr": 448.99,
+    "msrp": 448.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/81kTwAgKZJL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F8B59WP7",
+        "url": "https://www.amazon.com/dp/B0F8B59WP7?tag=tiereduptech-20",
+        "price": 448.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100696,
+    "c": "GPU",
+    "n": "Sapphire 11305-02-20G Pulse AMD Radeon RX 6800 PCIe 4.0 Gaming Graphics Card with 16GB GDDR6 Pack of 1 (Renewed)",
+    "b": "Sapphire",
+    "pr": 379.97,
+    "msrp": 379.97,
+    "r": 3.2,
+    "img": "https://m.media-amazon.com/images/I/61gTK8q60WL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BW9VN32M",
+        "url": "https://www.amazon.com/dp/B0BW9VN32M?tag=tiereduptech-20",
+        "price": 379.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100697,
+    "c": "GPU",
+    "n": "PowerColor Reaper AMD Radeon RX 9060 XT 16GB GDDR6",
+    "b": "AMD",
+    "pr": 469.99,
+    "msrp": 469.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81TmiJbK-DL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F9QM1M6R",
+        "url": "https://www.amazon.com/dp/B0F9QM1M6R?tag=tiereduptech-20",
+        "price": 469.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100698,
+    "c": "GPU",
+    "n": "PowerColor AMD Radeon RX 6800 XT Gaming Graphics Card with 16GB GDDR6, Raytracing, PCIe 4.0, HDMI 2.1, AMD Infinity Cache (Renewed)",
+    "b": "PowerColor",
+    "pr": 599.99,
+    "msrp": 599.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61264TnLUNL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DCHMCFF6",
+        "url": "https://www.amazon.com/dp/B0DCHMCFF6?tag=tiereduptech-20",
+        "price": 599.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100699,
+    "c": "GPU",
+    "n": "XFX Swift AMD Radeon RX 9060 XT OC Triple Fan Gaming Edition with 16GB GDDR6 HDMI 2xDP, RDNA 4 RX-96TS316BA, Graphics Card, Compatible with Desktop PCs",
+    "b": "AMD",
+    "pr": 515.69,
+    "msrp": 515.69,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71IHZE7uAcL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F8128Y33",
+        "url": "https://www.amazon.com/dp/B0F8128Y33?tag=tiereduptech-20",
+        "price": 515.69,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100700,
+    "c": "GPU",
+    "n": "PowerColor Red Dragon AMD Radeon RX 6800 Gaming Graphics Card with 16GB GDDR6 Memory, Powered by AMD RDNA 2, Raytracing, PCI Express 4.0, HDMI 2.1, AMD Infinity Cache (Renewed)",
+    "b": "PowerColor",
+    "pr": 549.99,
+    "msrp": 549.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61TB+-7z6wL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B095QKK2PM",
+        "url": "https://www.amazon.com/dp/B095QKK2PM?tag=tiereduptech-20",
+        "price": 549.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100701,
+    "c": "GPU",
+    "n": "ASUS TUF Gaming AMD Radeon™ RX 6800 XT OC Edition Graphics Card (PCIe 4.0, 16GB GDDR6, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, All-Aluminum Shroud, Reinforced Frame, GPU Tweak II)",
+    "b": "ASUS",
+    "pr": 1189,
+    "msrp": 1189,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81zk6Sq8hbL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08P3ZN62G",
+        "url": "https://www.amazon.com/dp/B08P3ZN62G?tag=tiereduptech-20",
+        "price": 1189,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100702,
+    "c": "GPU",
+    "n": "XFX Speedster SWFT319 ,Radeon™ RX 6800 Core Gaming Graphics Card with 16GB GDDR6, AMD RDNA™ 2 (RX-68XLAQFD9) (Renewed)",
+    "b": "XFX",
+    "pr": 399.97,
+    "msrp": 399.97,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/81MMzZat2sL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CZSH7H67",
+        "url": "https://www.amazon.com/dp/B0CZSH7H67?tag=tiereduptech-20",
+        "price": 399.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100703,
+    "c": "GPU",
+    "n": "WEELIAO GUNNIR Intel Arc A380 Index Graphics Card,2000 Mhz Video Card,6GB 96-bit GDDR6,PCIE4.0,1 HDMI,3 DP,2 Fans,TBP 75W",
+    "b": "Intel",
+    "pr": 189,
+    "msrp": 189,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/413MtBWmWoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DFHDFZRW",
+        "url": "https://www.amazon.com/dp/B0DFHDFZRW?tag=tiereduptech-20",
+        "price": 189,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100704,
+    "c": "GPU",
+    "n": "WEELIAO GUNNIR Intel Arc A380 Index 6GB GDDR6 2000MHz Dual Fan Graphics Card (96-bit, PCIe 4.0, HDMI/DisplayPort, Supports 4k)",
+    "b": "Intel",
+    "pr": 219,
+    "msrp": 219,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41fhzo05lzL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DF7Q6M45",
+        "url": "https://www.amazon.com/dp/B0DF7Q6M45?tag=tiereduptech-20",
+        "price": 219,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100705,
+    "c": "GPU",
+    "n": "Sparkle Intel Arc A580 ORC OC Edition, 8GB GDDR6, ThermalSync, Torn Cooling, Axial Fan, Metal Backplate, SA580C-8GOC",
+    "b": "Intel",
+    "pr": 320.53,
+    "msrp": 320.53,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61r1vHB8wbL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CHN5KQS8",
+        "url": "https://www.amazon.com/dp/B0CHN5KQS8?tag=tiereduptech-20",
+        "price": 320.53,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100706,
+    "c": "GPU",
+    "n": "GIGABYTE GeForce RTX 5060 OC Low Profile 8G Graphics Card, by NVIDIA, 8GB 128-bit GDDR7, PCIe 5.0, Supports up to 4 displays, DisplayPort & HDMI - Video Output Interface, GV-N5060OC-8GL Video Card",
+    "b": "NVIDIA",
+    "pr": 359.99,
+    "msrp": 359.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71VDglT2-LL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F8LNS15L",
+        "url": "https://www.amazon.com/dp/B0F8LNS15L?tag=tiereduptech-20",
+        "price": 359.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100707,
+    "c": "GPU",
+    "n": "Asrock Intel Arc A770 Phantom Gaming D 8GB OC, 8GB DDR6, PCIe4, HDMI, 3 DP, 2200MHz Clock, 0dB Cooling, RGB, Overclocked",
+    "b": "Intel",
+    "pr": 891.16,
+    "msrp": 891.16,
+    "r": 3.3,
+    "img": "https://m.media-amazon.com/images/I/81fZhE70MbL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BN77VQGK",
+        "url": "https://www.amazon.com/dp/B0BN77VQGK?tag=tiereduptech-20",
+        "price": 891.16,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.774Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100708,
+    "c": "GPU",
+    "n": "ASUS Dual GeForce RTX™ 4060 V2 OC Edition (PCIe 4.0, 8GB GDDR6, DLSS 3, HDMI 2.1a, DisplayPort 1.4a, 2-Slot Design, Axial-tech Fan Design, 0dB Technology, and More) (Renewed)",
+    "b": "ASUS",
+    "pr": 279.99,
+    "msrp": 279.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/51jHFHE+5ZL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DHJDQPC9",
+        "url": "https://www.amazon.com/dp/B0DHJDQPC9?tag=tiereduptech-20",
+        "price": 279.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.775Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100709,
+    "c": "GPU",
+    "n": "ASUS Dual GeForce RTX™ 4060 EVO OC Edition 8GB GDDR6 (PCIe 4.0, 8GB GDDR6, DLSS 3, HDMI 2.1a, DisplayPort 1.4a, Axial-tech Fan Design, 0dB Technology, Dual BIOS, Auto-Extreme Technology, and More)",
+    "b": "ASUS",
+    "pr": 299.99,
+    "msrp": 299.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/817G0HRzaZL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D3KXG7MS",
+        "url": "https://www.amazon.com/dp/B0D3KXG7MS?tag=tiereduptech-20",
+        "price": 299.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.775Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100710,
+    "c": "GPU",
+    "n": "ASUS Dual GeForce RTX 4060 Ti V2 OC Edition 8GB GDDR6 SFF Compatible with Axial-tech Fan/DUAL-RTX4060TI-O8G-V2 (Renewed)",
+    "b": "ASUS",
+    "pr": 344.99,
+    "msrp": 344.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61OBa3kAQ3L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FBBYQYB8",
+        "url": "https://www.amazon.com/dp/B0FBBYQYB8?tag=tiereduptech-20",
+        "price": 344.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.775Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100711,
+    "c": "GPU",
+    "n": "ASUS Dual GeForce RTX™ 4060 OC Edition 8GB GDDR6 (PCIe 4.0, 8GB GDDR6, DLSS 3, HDMI 2.1a, DisplayPort 1.4a, 2.5-Slot Design, Axial-tech Fan Design, 0dB Technology, and More)",
+    "b": "ASUS",
+    "pr": 499.99,
+    "msrp": 499.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81dC199GL6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C7YPGFFW",
+        "url": "https://www.amazon.com/dp/B0C7YPGFFW?tag=tiereduptech-20",
+        "price": 499.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.775Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100712,
+    "c": "GPU",
+    "n": "PNY NVIDIA GeForce RTX™ 5050 Dual Fan, Graphics Card (8GB GDDR6, 128-bit, SFF-Ready, PCIe® 5.0, HDMI®/DP 2.1, 2-Slot, NVIDIA Blackwell Architecture, DLSS 4)",
+    "b": "NVIDIA",
+    "pr": 309.99,
+    "msrp": 309.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61wqxkRD8AL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FRPFG6NW",
+        "url": "https://www.amazon.com/dp/B0FRPFG6NW?tag=tiereduptech-20",
+        "price": 309.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.775Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100713,
+    "c": "GPU",
+    "n": "ASUS TUF Gaming NVIDIA GeForce RTX™ 4080 Super OC Edition Gaming Graphics Card (PCIe 4.0, 16GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a)",
+    "b": "ASUS",
+    "pr": 1879.97,
+    "msrp": 1879.97,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81rCZZvkIVL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CQPZTRL3",
+        "url": "https://www.amazon.com/dp/B0CQPZTRL3?tag=tiereduptech-20",
+        "price": 1879.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.775Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100714,
+    "c": "GPU",
+    "n": "PNY GeForce RTX™ 4080 Super 16GB Verto™ Overclocked Triple Fan Graphics Card DLSS 3 (Renewed)",
+    "b": "PNY",
+    "pr": 1069.99,
+    "msrp": 1069.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/61yJ0d4EdiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D36VQ2YD",
+        "url": "https://www.amazon.com/dp/B0D36VQ2YD?tag=tiereduptech-20",
+        "price": 1069.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.775Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100715,
+    "c": "GPU",
+    "n": "ASUS ProArt GeForce RTX™ 4080 Super OC Edition Graphics Card (PCIe 4.0, 16GB GDDR6X, DLSS 3, HDMI 2.1a, DisplayPort 1.4a)",
+    "b": "ASUS",
+    "pr": 1545,
+    "msrp": 1545,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71yTu1mQIFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CSZCV12L",
+        "url": "https://www.amazon.com/dp/B0CSZCV12L?tag=tiereduptech-20",
+        "price": 1545,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.775Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100716,
+    "c": "GPU",
+    "n": "ASUS TUF Gaming NVIDIA GeForce RTX 4080 Super OC Edition Gaming Graphics Card (PCIe 4.0, 16GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a)",
+    "b": "ASUS",
+    "pr": 1788.97,
+    "msrp": 1788.97,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81rCZZvkIVL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CS3TDV19",
+        "url": "https://www.amazon.com/dp/B0CS3TDV19?tag=tiereduptech-20",
+        "price": 1788.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.775Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100717,
+    "c": "GPU",
+    "n": "PNY GeForce RTX™ 4080 Super 16GB XLR8 Gaming Verto™ Epic-X RGB™ OC Triple Fan Graphics Card DLSS 3 (ARGB, 256-bit,PCIe 4.0, GDDR6X, HDMI/DisplayPort, incl. Adapter & Support Bracket, 3.5 Slot)",
+    "b": "PNY",
+    "pr": 1499,
+    "msrp": 1499,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71FnZ0aXR2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CS6Y6Y7M",
+        "url": "https://www.amazon.com/dp/B0CS6Y6Y7M?tag=tiereduptech-20",
+        "price": 1499,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.775Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100718,
+    "c": "GPU",
+    "n": "GIGABYTE GeForce RTX 4080 Super Gaming OC 16G Graphics Card, 3X WINDFORCE Fans, 16GB 256-bit GDDR6X, GV-N408SGAMING OC-16GD Video Card",
+    "b": "Gigabyte",
+    "pr": 1599,
+    "msrp": 1599,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/715V9bTWg8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CSJYJRKD",
+        "url": "https://www.amazon.com/dp/B0CSJYJRKD?tag=tiereduptech-20",
+        "price": 1599,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.775Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100719,
+    "c": "GPU",
+    "n": "ASUS The GeForce RTX™ 5060 LP BRK 8GB GDDR7 OC Edition Graphics Card (PCIe® 5.0, 8GB GDDR7, HDMI®/DP 2.1, Low-Profile Design, IP5X Dust Resistance)",
+    "b": "ASUS",
+    "pr": 491.19,
+    "msrp": 491.19,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/811j490Sn1L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FSNZ686T",
+        "url": "https://www.amazon.com/dp/B0FSNZ686T?tag=tiereduptech-20",
+        "price": 491.19,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.775Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100720,
+    "c": "GPU",
+    "n": "msi Gaming GeForce GT 710, Black, 2GB GDRR3 64-bit HDCP Support DirectX 12 OpenGL 4.5 Single Fan Low Profile, NVIDIA, HDMI/VGA",
+    "b": "MSI",
+    "pr": 74.99,
+    "msrp": 74.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61Mjejt6TCL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01DOFD0G8",
+        "url": "https://www.amazon.com/dp/B01DOFD0G8?tag=tiereduptech-20",
+        "price": 74.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100721,
+    "c": "GPU",
+    "n": "ASUS Dual GeForce RTX™ 5050 8GB GDDR6 OC Edition (PCIe 5.0, 8GB GDDR6, DLSS 4, HDMI 2.1b, DisplayPort 2.1b, 2-Slot, Axial-tech Fan Design, 0dB Technology, Dual BIOS and More)",
+    "b": "ASUS",
+    "pr": 319.99,
+    "msrp": 319.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71GhnAUiOZL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FFXT3TRD",
+        "url": "https://www.amazon.com/dp/B0FFXT3TRD?tag=tiereduptech-20",
+        "price": 319.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100722,
+    "c": "GPU",
+    "n": "ASUS GeForce GT 730 2GB GDDR5 Low Profile Graphics Card for Silent HTPC Builds (with I/O Port Brackets)",
+    "b": "ASUS",
+    "pr": 96.47,
+    "msrp": 96.47,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81UxgyOEXEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09GP8989B",
+        "url": "https://www.amazon.com/dp/B09GP8989B?tag=tiereduptech-20",
+        "price": 96.47,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100723,
+    "c": "GPU",
+    "n": "maxsun AMD Radeon R5 220 2GB Graphics Card GPU (DVI-I, HDMI, VGA) - Low Profile Ready",
+    "b": "AMD",
+    "pr": 35.98,
+    "msrp": 35.98,
+    "r": 3.4,
+    "img": "https://m.media-amazon.com/images/I/71IGNhB9ktL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09LQ4GWY8",
+        "url": "https://www.amazon.com/dp/B09LQ4GWY8?tag=tiereduptech-20",
+        "price": 35.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100724,
+    "c": "GPU",
+    "n": "maxsun AMD R5 230 Computer Graphics Card, 2G GDDR3, HDMI VGA DVI Video Card ITX SFF Low Profile Ready GPU",
+    "b": "AMD",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61nA7lnNXqL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DGCX12YB",
+        "url": "https://www.amazon.com/dp/B0DGCX12YB?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100725,
+    "c": "Motherboard",
+    "n": "ASUS Prime A520M-K, AMD AM4, MATX, 64GB DDR4, 2 X DIMM, D-SUB, HDMI, PCIE",
+    "b": "ASUS",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61rhze+FTiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08DQB2GDN",
+        "url": "https://www.amazon.com/dp/B08DQB2GDN?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100726,
+    "c": "Motherboard",
+    "n": "Asrock B450M/AC AM4 B450 Motherboard",
+    "b": "ASRock",
+    "pr": 85.2,
+    "msrp": 85.2,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81+RJyfYdLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07SY8CMTX",
+        "url": "https://www.amazon.com/dp/B07SY8CMTX?tag=tiereduptech-20",
+        "price": 85.2,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100727,
+    "c": "Motherboard",
+    "n": "ASRock AMD B550 PG Riptide ATX Motherboard Dual Channel DDR4 4933 MHz AM4 Socket 128 GB SATA3 6.0 Gb/s M.2",
+    "b": "ASRock",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71tJZZiAWhL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09BDCCPQM",
+        "url": "https://www.amazon.com/dp/B09BDCCPQM?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100728,
+    "c": "Motherboard",
+    "n": "ASUS PRO H610M-CT2 D4-CSM Intel® H610 (LGA 1700) Micro-ATX (mATX) H610 Business Motherboard with Enhanced Security, Reliability, Manageability and serviceability",
+    "b": "ASUS",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81CXTSqmnWL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D14FH6Y6",
+        "url": "https://www.amazon.com/dp/B0D14FH6Y6?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100729,
+    "c": "Motherboard",
+    "n": "ASRock H610M-HDV/M.2+ D5 LGA 1700 Micro ATX DDR5 Intel H610 SATA 6Gb/s Micro",
+    "b": "ASRock",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71HpTBz5vPL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CGQ4HRSM",
+        "url": "https://www.amazon.com/dp/B0CGQ4HRSM?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100730,
+    "c": "Motherboard",
+    "n": "ASUS Prime H610I-PLUS-CSM Intel® H610 (LGA 1700) Mini-ITX Motherboard with DDR5 5600, PCIe 4.0, M.2 Slot, Intel® 1 Gb Ethernet, DisplayPort, HDMI™, D-Sub, USB 3.2, SATA 6, ASUS Control Center Express",
+    "b": "ASUS",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/815xvqxCYQL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GD97CH2B",
+        "url": "https://www.amazon.com/dp/B0GD97CH2B?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100731,
+    "c": "Motherboard",
+    "n": "ASUS Prime H610M-A D4-CSM LGA 1700 Micro ATX DDR4 Motherboard",
+    "b": "ASUS",
+    "pr": 135.09,
+    "msrp": 135.09,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/81Ul4uMBN5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09Q6HXYWQ",
+        "url": "https://www.amazon.com/dp/B09Q6HXYWQ?tag=tiereduptech-20",
+        "price": 135.09,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100732,
+    "c": "Motherboard",
+    "n": "ASUS Pro Q570M-C/CSM LGA1200 (Intel 10th&11th Gen) mATX Commercial Motherboard (PCIe 4.0,1 LAN,Front Panel USB 3.2 Type-C, Intel vPro,2X DP,TPM 2.0 IC,COM debug Header,self-Recovering BIOS,ACCE)",
+    "b": "ASUS",
+    "pr": 164.99,
+    "msrp": 164.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/91lAyxD-rCS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09322DLZS",
+        "url": "https://www.amazon.com/dp/B09322DLZS?tag=tiereduptech-20",
+        "price": 164.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100733,
+    "c": "Motherboard",
+    "n": "ciciglow H410 Motherboard LGA 1200, Dual Channel DDR4 64GB, HD Multimedia Interface VGA, M.2 NVMe, USB 3.2, Micro ATX Desktop Board",
+    "b": "EVGA",
+    "pr": 108.09,
+    "msrp": 108.09,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/81KogDXItnL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G149KSG7",
+        "url": "https://www.amazon.com/dp/B0G149KSG7?tag=tiereduptech-20",
+        "price": 108.09,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100734,
+    "c": "Motherboard",
+    "n": "ASUS Prime B660-PLUS D4 LGA 1700(Intel 12th Gen) ATX Motherboard(PCIe 4.0, DDR4,3xM.2 Slots, 2.5Gb LAN, Rear USB 3.2 Gen 2x2 Type-C, Front USB 3.2 Gen 1 Type-C, Thunderbolt 4 Header Support)",
+    "b": "ASUS",
+    "pr": 199.99,
+    "msrp": 199.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81ZFlUz0rTL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09NWDQ1TH",
+        "url": "https://www.amazon.com/dp/B09NWDQ1TH?tag=tiereduptech-20",
+        "price": 199.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100735,
+    "c": "Motherboard",
+    "n": "ASUS Pro B760M-CT-CSM Intel LGA1700(13th&12th Gen)mATX commercial motherboard,DDR5,PCIe 4.0,2xM.2 PCIe 4.0 slots,front USB 3.2 Gen 1 Type-C,D-Sub,TPM IC onboard,Q-LED Core,Mono-out header,SMBUS header",
+    "b": "ASUS",
+    "pr": 137.99,
+    "msrp": 137.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81CEZKp6w1L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BR8YT3ZX",
+        "url": "https://www.amazon.com/dp/B0BR8YT3ZX?tag=tiereduptech-20",
+        "price": 137.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100736,
+    "c": "Motherboard",
+    "n": "ASUS Prime B660M-A AC D4 LGA 1700(Intel 12th Gen) mATX Motherboard (PCIe 4.0,DDR4,2X M.2 PCIe 4.0 Slots,Wi-Fi 5,Front USB 3.2 Gen 1 Type-C, Addressable Gen 2 headers,ASUS 5X Protection III) (Renewed)",
+    "b": "ASUS",
+    "pr": 119.99,
+    "msrp": 119.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/81L6TKz8KeL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CFZPR9FM",
+        "url": "https://www.amazon.com/dp/B0CFZPR9FM?tag=tiereduptech-20",
+        "price": 119.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100737,
+    "c": "Motherboard",
+    "n": "MSI MPG B760I Edge WiFi Gaming Motherboard (Supports 12th/13th Gen Intel Processors, LGA 1700, DDR5, PCIe 5.0, M.2, 2.5Gbps LAN, USB 3.2 Gen2, Wi-Fi 6E, Mini-ITX) (Renewed)",
+    "b": "MSI",
+    "pr": 179.99,
+    "msrp": 179.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/81b80BZcgmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CVFJR8TJ",
+        "url": "https://www.amazon.com/dp/B0CVFJR8TJ?tag=tiereduptech-20",
+        "price": 179.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100738,
+    "c": "Motherboard",
+    "n": "ASRock Phantom Gaming Intel Z790I Lightning WiFi DDR5 DIMMs up to 8600+ (OC) MHz 128GB LGA1700 M.2 Mini-ITX Motherboard SATA3 6.0 Gb/s Z790 802.11axe Wi-Fi 6E PCIe 5.0 x16",
+    "b": "ASRock",
+    "pr": 408.89,
+    "msrp": 408.89,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71CUA5ZE5hL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D3S7Z3YG",
+        "url": "https://www.amazon.com/dp/B0D3S7Z3YG?tag=tiereduptech-20",
+        "price": 408.89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100739,
+    "c": "Motherboard",
+    "n": "ASUS TUF Gaming B650EM-E WiFi AMD mATX Motherboard, 8+2+1 80A DrMOS Power Stages, DDR5, PCIe 5.0, Three M.2 Slots, WiFi 6, 2.5Gb Ethernet, DisplayPort, HDMI™, Rear USB-C 10Gbps and Front USB-C 5Gbps",
+    "b": "ASUS",
+    "pr": 208.99,
+    "msrp": 208.99,
+    "r": 4.9,
+    "img": "https://m.media-amazon.com/images/I/813-xb653HL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FDS4VNL7",
+        "url": "https://www.amazon.com/dp/B0FDS4VNL7?tag=tiereduptech-20",
+        "price": 208.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100740,
+    "c": "Motherboard",
+    "n": "ASUS B760M MAX Gaming WiFi Intel® B760 (LGA 1700) mATX Motherboard, Advanced AI PC-Ready, PCIe 5.0 x16, DDR5, 3X M.2, Wi-Fi 6, DisplayPort, HDMI, SATA, USB 10Gbps Type-A, USB 5Gbps Type-C®, Aura Sync",
+    "b": "ASUS",
+    "pr": 149.99,
+    "msrp": 149.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81V5mW5wy5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FSNRHWH2",
+        "url": "https://www.amazon.com/dp/B0FSNRHWH2?tag=tiereduptech-20",
+        "price": 149.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100741,
+    "c": "Motherboard",
+    "n": "GIGABYTE B760M DS3H DDR4 Intel LGA 1700 mATX Motherboard, Supports Intel Core 14th/13th/12th Gen, DDR4, 6+2+1 Power Phase, 2X M.2, PCIe 4.0, USB-C, 2.5GbE LAN, Q-Flash Plus, PCIe EZ-Latch",
+    "b": "Gigabyte",
+    "pr": 123.95,
+    "msrp": 123.95,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/819loXNzHQL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BSB6MB15",
+        "url": "https://www.amazon.com/dp/B0BSB6MB15?tag=tiereduptech-20",
+        "price": 123.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.776Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100742,
+    "c": "Motherboard",
+    "n": "ASUS Pro WS W680-ACE IPMI Intel LGA1700 ATX workstation motherboard,2x PCIe 5.0x16 slot,DDR5,ECC memory,2x2.5 Gb Lan,3xM.2 slots,SlimSAS,BMC header,THUNDERBOLT4 Header,IPMI Expansion card bundled,ACCE",
+    "b": "ASUS",
+    "pr": 379,
+    "msrp": 379,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81Eqqcu--vL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BZGKKCWC",
+        "url": "https://www.amazon.com/dp/B0BZGKKCWC?tag=tiereduptech-20",
+        "price": 379,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100743,
+    "c": "Motherboard",
+    "n": "ASRock Rack X570D4U-2L2T Socket AM4/ AMD X570/ DDR4/ SATA3&USB 3.2/ Micro-ATX Server Motherboard",
+    "b": "ASRock",
+    "pr": 419,
+    "msrp": 419,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/81u+RlW8d2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08XBB212S",
+        "url": "https://www.amazon.com/dp/B08XBB212S?tag=tiereduptech-20",
+        "price": 419,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100744,
+    "c": "Motherboard",
+    "n": "ASRock Rack X570D4U Socket AM4/ AMD X570/ DDR4/ SATA3&USB 3.2/ Micro-ATX Server Motherboard",
+    "b": "ASRock",
+    "pr": 365.92,
+    "msrp": 365.92,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/81daAnEOwkL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08XBPKXKJ",
+        "url": "https://www.amazon.com/dp/B08XBPKXKJ?tag=tiereduptech-20",
+        "price": 365.92,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100745,
+    "c": "Motherboard",
+    "n": "Pro WS W680-ACE Intel W680 LGA 1700 ATX Workstation Motherboard,2xPCIe 5.0x16 Slot,DDR5,ECC Memory,2x2.5 Gb LAN,3X M.2 Slots,USB 3.2 Gen 2x2 Front Panel,SlimSAS,BMC Header,Thunderbolt 4Header,ACCE.",
+    "b": "Intel",
+    "pr": 328.99,
+    "msrp": 328.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/816p--Y+mIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BZ1T3V6F",
+        "url": "https://www.amazon.com/dp/B0BZ1T3V6F?tag=tiereduptech-20",
+        "price": 328.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100746,
+    "c": "Motherboard",
+    "n": "ASRock Rack Server Motherboard W880D4U Micro-ATX Single Socket LGA 1851 Intel® Core™ Ultra Desktop Processors (Series 2)",
+    "b": "ASRock",
+    "pr": 376.11,
+    "msrp": 376.11,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/81wpKBr8IdL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GJ2XQ4QY",
+        "url": "https://www.amazon.com/dp/B0GJ2XQ4QY?tag=tiereduptech-20",
+        "price": 376.11,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100747,
+    "c": "Motherboard",
+    "n": "C612 NAS Motherboard LGA2011-3, 10x SATA 6Gbps, 4X 2.5GbE Intel i226-V, 2X M.2 NVMe, 2X PCIe x16, DDR4, Server Workstation ITX Mainboard for Xeon E5 V3/V4 24 * 24cm",
+    "b": "Intel",
+    "pr": 149.99,
+    "msrp": 149.99,
+    "r": 3.5,
+    "img": "https://m.media-amazon.com/images/I/613nn5WFj5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DGD3FC4S",
+        "url": "https://www.amazon.com/dp/B0DGD3FC4S?tag=tiereduptech-20",
+        "price": 149.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100748,
+    "c": "Motherboard",
+    "n": "ASRock Rack Server Motherboard Z890D4U Micro-ATX Single Socket LGA 1851 Intel® Core™ Ultra Desktop Processors (Series 2)",
+    "b": "ASRock",
+    "pr": 380.3,
+    "msrp": 380.3,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/81P2OgnBR-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BY8231NL",
+        "url": "https://www.amazon.com/dp/B0BY8231NL?tag=tiereduptech-20",
+        "price": 380.3,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100749,
+    "c": "RAM",
+    "n": "Crucial 16GB DDR4 RAM Kit (2x8GB), 3200MHz (PC4-25600) CL22 Desktop Memory, UDIMM 288-Pin, Downclockable to 2933/2666MHz, Compatible with Intel and AMD Ryzen - CT2K8G4DFRA32A",
+    "b": "Crucial",
+    "pr": 135,
+    "msrp": 135,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61fwPjPIHjL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08C53LL9J",
+        "url": "https://www.amazon.com/dp/B08C53LL9J?tag=tiereduptech-20",
+        "price": 135,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100750,
+    "c": "RAM",
+    "n": "Crucial 16GB kit (8GBx2), 288-pin DIMM, DDR4 PC4-19200,",
+    "b": "Crucial",
+    "pr": 131.99,
+    "msrp": 131.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61fwPjPIHjL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01BIWLED0",
+        "url": "https://www.amazon.com/dp/B01BIWLED0?tag=tiereduptech-20",
+        "price": 131.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100751,
+    "c": "RAM",
+    "n": "Crucial 16GB Kit (8GB x 2) DDR4 2666 MT/s (PC4-21300) SODIMM 260-Pin Memory - CT2K8G4SFRA266",
+    "b": "Crucial",
+    "pr": 114,
+    "msrp": 114,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71LX2Lz9yOL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08C4RPRCH",
+        "url": "https://www.amazon.com/dp/B08C4RPRCH?tag=tiereduptech-20",
+        "price": 114,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100752,
+    "c": "RAM",
+    "n": "Crucial 32GB Kit (16GBx2), 288-pin DIMM, DDR4 PC4-21300,",
+    "b": "Crucial",
+    "pr": 189,
+    "msrp": 189,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61F3iyHZd0L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0736W5BH2",
+        "url": "https://www.amazon.com/dp/B0736W5BH2?tag=tiereduptech-20",
+        "price": 189,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100753,
+    "c": "RAM",
+    "n": "Crucial 8GB DDR4 RAM, 3200MHz (PC4-25600) CL22 Desktop Memory, UDIMM 288-Pin, Downclockable to 2933/2666MHz, Compatible with Intel and AMD Ryzen - CT16G4DFRA32A",
+    "b": "Crucial",
+    "pr": 71.4,
+    "msrp": 71.4,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61LjnKSImPL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08C4VHQV2",
+        "url": "https://www.amazon.com/dp/B08C4VHQV2?tag=tiereduptech-20",
+        "price": 71.4,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100754,
+    "c": "RAM",
+    "n": "【RGB DDR4 RAM】GIGASTONE Game TURBO 16GB Kit (2x8GB)DDR4 3200MHz PC4-25600 CL 16-18-18-40 Intel XMP 2.0 AMD Ryzen 1.35V UDIMM 288 Pin Unbuffered Non ECC High Performance Gaming Desktop Memory - Black",
+    "b": "AMD",
+    "pr": 128.99,
+    "msrp": 128.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/510V6PbPGrL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CB2R4GKX",
+        "url": "https://www.amazon.com/dp/B0CB2R4GKX?tag=tiereduptech-20",
+        "price": 128.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100755,
+    "c": "RAM",
+    "n": "Crucial RAM 8GB DDR4 2666 MHz CL19 Desktop Memory CT8G4DFRA266",
+    "b": "Crucial",
+    "pr": 65,
+    "msrp": 65,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51kvJBoDnZL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08C4QF5N4",
+        "url": "https://www.amazon.com/dp/B08C4QF5N4?tag=tiereduptech-20",
+        "price": 65,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100756,
+    "c": "RAM",
+    "n": "Samsung M378A1K43CB2-CTD Memory Module (8 GB, 1 x 8 GB, DDR4, 2666 MHz, 288-pin DIMMM, Black, Green)",
+    "b": "Samsung",
+    "pr": 63.84,
+    "msrp": 63.84,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/5180CnTo8jL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07DNRD3T7",
+        "url": "https://www.amazon.com/dp/B07DNRD3T7?tag=tiereduptech-20",
+        "price": 63.84,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.777Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100757,
+    "c": "RAM",
+    "n": "TEAMGROUP Elite DDR5 32GB Kit (2x16GB) 6000Mhz PC5-48000 CL48 Non-ECC Unbuffered UDIMM 288 Pin PC Computer Desktop Memory Module Ram Supports Intel & AMD TED532G6000C48DC01",
+    "b": "TeamGroup",
+    "pr": 580.99,
+    "msrp": 580.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81XK0nKNcLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C73ZNR98",
+        "url": "https://www.amazon.com/dp/B0C73ZNR98?tag=tiereduptech-20",
+        "price": 580.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100758,
+    "c": "RAM",
+    "n": "PUSKILL 32GB DDR5 RAM (2x16GB) 4800MHz CL38 Desktop Memory Kit | High-Performance PC Upgrade for Gaming & Multitasking | Intel & AMD Ryzen 7000 (AM5) Compatible",
+    "b": "AMD",
+    "pr": 329.98,
+    "msrp": 329.98,
+    "r": 1,
+    "img": "https://m.media-amazon.com/images/I/61MoeafmY-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GS4MTHJ4",
+        "url": "https://www.amazon.com/dp/B0GS4MTHJ4?tag=tiereduptech-20",
+        "price": 329.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100759,
+    "c": "RAM",
+    "n": "Patriot Memory Signature DDR5 RAM 16GB (2X8GB) 5600MHz CL46 UDIMM Desktop Memory Kit - PSD532G5600K",
+    "b": "Patriot",
+    "pr": 234.99,
+    "msrp": 234.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/41K0BiMFaVL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BT9G2QMF",
+        "url": "https://www.amazon.com/dp/B0BT9G2QMF?tag=tiereduptech-20",
+        "price": 234.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100760,
+    "c": "RAM",
+    "n": "TEAMGROUP T-Create Expert Overclocking 10L CL32 DDR5 48GB Kit (2 x 24GB) 6400MHz (PC5-51200) Intel XMP 3.0 & AMD Expo Compatible M-DIE Desktop Memory Module Ram Black - CTCED548G6400HC32ADC01",
+    "b": "TeamGroup",
+    "pr": 649.99,
+    "msrp": 649.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/91Zx8tlgk8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CQP3ZGNM",
+        "url": "https://www.amazon.com/dp/B0CQP3ZGNM?tag=tiereduptech-20",
+        "price": 649.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100761,
+    "c": "RAM",
+    "n": "TEAMGROUP T-Create Master Overclocking DDR5 R-DIMM 192GB Kit (8 x 24GB) 6000MHz (PC5-48000) CL32 Hynix M-DIE Workstation Memory Module Ram Black - CTCMD5192G6000HC32AOC01",
+    "b": "TeamGroup",
+    "pr": 4224.99,
+    "msrp": 4224.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/91bVI6DiFoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D3LP9G39",
+        "url": "https://www.amazon.com/dp/B0D3LP9G39?tag=tiereduptech-20",
+        "price": 4224.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100762,
+    "c": "RAM",
+    "n": "KLEVV CRAS V RGB DDR5 48GB (2x24GB) 6400MHz CL32 SK Hynix A-Die 1.35V Gaming Desktop Ram Memory XMP 3.0 / AMD Expo Ready - Black (KD5KGUD80-64A320G)",
+    "b": "AMD",
+    "pr": 658.99,
+    "msrp": 658.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81lYtyzm53L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DC5YRJ3H",
+        "url": "https://www.amazon.com/dp/B0DC5YRJ3H?tag=tiereduptech-20",
+        "price": 658.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100763,
+    "c": "RAM",
+    "n": "TEAMGROUP T-Create Expert Overclocking 10L CL32 DDR5 48GB Kit (2 x 24GB) 6400MHz (PC5-51200) Intel XMP 3.0 & AMD Expo Compatible M-DIE Desktop Memory Module Ram White - CTCWD548G6400HC32ADC01",
+    "b": "TeamGroup",
+    "pr": 649.99,
+    "msrp": 649.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/71WL8HWbOjL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CQP3KYG3",
+        "url": "https://www.amazon.com/dp/B0CQP3KYG3?tag=tiereduptech-20",
+        "price": 649.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100764,
+    "c": "RAM",
+    "n": "TEAMGROUP T-Create Expert 48GB KIT 2 X 24GB DDR5-7200 PC5-57600 CL34 Dual C",
+    "b": "TeamGroup",
+    "pr": 749.99,
+    "msrp": 749.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71WL8HWbOjL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4NL1SQY",
+        "url": "https://www.amazon.com/dp/B0C4NL1SQY?tag=tiereduptech-20",
+        "price": 749.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100765,
+    "c": "RAM",
+    "n": "Crucial 32GB DDR5 RAM Kit (2x16GB), 5600MHz (or 5200MHz) Desktop Memory, UDIMM 288-Pin, Compatible with 13th Gen Intel Core and AMD Ryzen 7000 - CT2K16G56C46U5",
+    "b": "Crucial",
+    "pr": 450.99,
+    "msrp": 450.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51PLQhgVmmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BLTGP2JX",
+        "url": "https://www.amazon.com/dp/B0BLTGP2JX?tag=tiereduptech-20",
+        "price": 450.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100766,
+    "c": "RAM",
+    "n": "TEAMGROUP T-Create Expert Overclocking 10L DDR5 48GB Kit (2 x 24GB) 7200MHz (PC5-57600) CL34 M-DIE Desktop Memory Module Ram Black - CTCED548G7200HC34ADC01",
+    "b": "TeamGroup",
+    "pr": 749.99,
+    "msrp": 749.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/91Zx8tlgk8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4NNRC56",
+        "url": "https://www.amazon.com/dp/B0C4NNRC56?tag=tiereduptech-20",
+        "price": 749.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100767,
+    "c": "RAM",
+    "n": "Biwin Black Opal DW100 DDR5 RGB RAM 48GB (24GBx2) 6000MHz CL28 Computer Memory Intel XMP 3.0 AMD Expo Compatible- Black - DW100-48GB-6000-1R8-D28FB",
+    "b": "AMD",
+    "pr": 539.99,
+    "msrp": 539.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/6158zdAkitL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G2TMTNJK",
+        "url": "https://www.amazon.com/dp/B0G2TMTNJK?tag=tiereduptech-20",
+        "price": 539.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100768,
+    "c": "RAM",
+    "n": "Asustor Lockerstor 10 Gen3 AS6810T 10 Bay NAS, AMD Ryzen V3C14 Quad-Core, 16GB ECC DDR5 RAM, Dual 10GbE + Dual 5GbE, 4 M.2 NVMe SSD Slots, USB4 40Gbps, Enterprise Grade for Enthusiasts(Diskless)",
+    "b": "AMD",
+    "pr": 1924.99,
+    "msrp": 1924.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/51dxj-hJmmL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DBZ1L759",
+        "url": "https://www.amazon.com/dp/B0DBZ1L759?tag=tiereduptech-20",
+        "price": 1924.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100769,
+    "c": "RAM",
+    "n": "Kingston FURY Beast RGB 32GB 6000MT/s DDR5 CL30 Desktop Memory | AMD EXPO | Single Module | KF560C30BBEA-32",
+    "b": "Kingston",
+    "pr": 399.99,
+    "msrp": 399.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61Nu3Bh1+5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CYM1TLNX",
+        "url": "https://www.amazon.com/dp/B0CYM1TLNX?tag=tiereduptech-20",
+        "price": 399.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100770,
+    "c": "RAM",
+    "n": "Kingston FURY Beast RGB 32GB 6400MT/s DDR5 CL32 Desktop Memory | AMD EXPO | Single Module | KF564C32BBEA-32",
+    "b": "Kingston",
+    "pr": 448.99,
+    "msrp": 448.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61Nu3Bh1+5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CYM2PXMS",
+        "url": "https://www.amazon.com/dp/B0CYM2PXMS?tag=tiereduptech-20",
+        "price": 448.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100771,
+    "c": "RAM",
+    "n": "Crucial 32GB DDR5 RAM, 4800MHz CL40 Desktop Memory, UDIMM 288-Pin, Compatible with 13th Gen Intel Core and AMD Ryzen 7000s - CT32G48C40U5",
+    "b": "Crucial",
+    "pr": 429.99,
+    "msrp": 429.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51fGfxSZy4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09HW97JVF",
+        "url": "https://www.amazon.com/dp/B09HW97JVF?tag=tiereduptech-20",
+        "price": 429.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100772,
+    "c": "RAM",
+    "n": "Kingston FURY Beast 32GB 6000MT/s DDR5 CL30 Desktop Memory | AMD EXPO | Single Module | KF560C30BBE-32",
+    "b": "Kingston",
+    "pr": 555.59,
+    "msrp": 555.59,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61Ixkl9d2bL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CYH8MD2T",
+        "url": "https://www.amazon.com/dp/B0CYH8MD2T?tag=tiereduptech-20",
+        "price": 555.59,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100773,
+    "c": "RAM",
+    "n": "Crucial 32GB DDR5 RAM, 5600MHz (or 5200MHz or 4800MHz) Desktop Memory, UDIMM 288-Pin, Compatible with 13th Gen Intel Core and AMD Ryzen 7000 - CT32G56C46U5",
+    "b": "Crucial",
+    "pr": 444.99,
+    "msrp": 444.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51fGfxSZy4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BLTFFBL9",
+        "url": "https://www.amazon.com/dp/B0BLTFFBL9?tag=tiereduptech-20",
+        "price": 444.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100774,
+    "c": "RAM",
+    "n": "Kingston FURY Beast 32GB 6000MT/s DDR5 CL36 RGB Desktop Memory Single Module | Infrared Syncing | AMD EXPO | KF560C36BBEA-32",
+    "b": "Kingston",
+    "pr": 425,
+    "msrp": 425,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/51W8vjDKe6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BRTJGQML",
+        "url": "https://www.amazon.com/dp/B0BRTJGQML?tag=tiereduptech-20",
+        "price": 425,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100775,
+    "c": "RAM",
+    "n": "NEMIX RAM 64GB (2X32GB) DDR5 4800MHZ PC5-38400 2Rx8 1.1V CL40 288-PIN ECC Unbuffered UDIMM KIT Compatible with ASUS ProArt X670E-CREATOR WiFi Motherboard",
+    "b": "ASUS",
+    "pr": 1498.99,
+    "msrp": 1498.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81aJ2EasAvL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CSZYDM2Y",
+        "url": "https://www.amazon.com/dp/B0CSZYDM2Y?tag=tiereduptech-20",
+        "price": 1498.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100776,
+    "c": "RAM",
+    "n": "TEAMGROUP Elite DDR5 32GB Kit (2x16GB) 4800MHz (PC5-38400) CL40 Non-ECC Unbuffered 1.1V UDIMM 288 Pin PC Computer Desktop Memory Module Ram Upgrade - TED532G4800C40DC01",
+    "b": "TeamGroup",
+    "pr": 588.99,
+    "msrp": 588.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81bFevAx7pL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B096KN5N9K",
+        "url": "https://www.amazon.com/dp/B096KN5N9K?tag=tiereduptech-20",
+        "price": 588.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100777,
+    "c": "RAM",
+    "n": "Samsung 64GB DDR5 4800MHz PC5-38400 ECC RDIMM 2Rx4 (EC8 10x4) Dual Rank 1.1V Registered DIMM 288-Pin Server RAM Memory M321R8GA0BB0-CQK",
+    "b": "Samsung",
+    "pr": 1841.73,
+    "msrp": 1841.73,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71fV9hd-ZFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CFG7THWM",
+        "url": "https://www.amazon.com/dp/B0CFG7THWM?tag=tiereduptech-20",
+        "price": 1841.73,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100778,
+    "c": "RAM",
+    "n": "Samsung 32GB DDR5 4800MHz PC5-38400 ECC RDIMM 2Rx8 Dual Rank 1.1V Registered DIMM 288-Pin Server RAM Memory M321R4GA3BB6-CQK",
+    "b": "Samsung",
+    "pr": 929.99,
+    "msrp": 929.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71TvUKXQMaL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CFG7F72M",
+        "url": "https://www.amazon.com/dp/B0CFG7F72M?tag=tiereduptech-20",
+        "price": 929.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100779,
+    "c": "RAM",
+    "n": "TEAMGROUP T-Create Master Overclocking DDR5 R-DIMM 192GB Kit (8 x 24GB) 6400MHz (PC5-51200) CL32 Hynix M-DIE Workstation Memory Module Ram Black - CTCMD5192G6400HC32AOC01",
+    "b": "TeamGroup",
+    "pr": 4699.99,
+    "msrp": 4699.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/91bVI6DiFoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D3TH4CGS",
+        "url": "https://www.amazon.com/dp/B0D3TH4CGS?tag=tiereduptech-20",
+        "price": 4699.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.778Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100780,
+    "c": "RAM",
+    "n": "48GB 1X48GB DDR5 5600MHz PC5-44800 2Rx8 1.1V CL46 288-PIN ECC Unbuffered UDIMM NEMIX RAM Compatible with ASRock X870E Taichi Motherboard",
+    "b": "ASRock",
+    "pr": 1108.99,
+    "msrp": 1108.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/714gH4arGHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GJ1814LM",
+        "url": "https://www.amazon.com/dp/B0GJ1814LM?tag=tiereduptech-20",
+        "price": 1108.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100781,
+    "c": "RAM",
+    "n": "32GB 1X32GB DDR5 5600MHz PC5-44800 2Rx8 1.1V CL46 288-PIN ECC Unbuffered UDIMM NEMIX RAM Compatible with GIGABYTE X870E AORUS Xtreme AI TOP Motherboard",
+    "b": "Gigabyte",
+    "pr": 759.99,
+    "msrp": 759.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/71cOASybgrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GJ13959T",
+        "url": "https://www.amazon.com/dp/B0GJ13959T?tag=tiereduptech-20",
+        "price": 759.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100782,
+    "c": "RAM",
+    "n": "CORSAIR Vengeance SODIMM DDR5 RAM 32GB (2x16GB) 4800MHz CL40 Intel XMP iCUE Compatible Computer Memory - Black (CMSX32GX5M2A4800C40)",
+    "b": "Corsair",
+    "pr": 459.99,
+    "msrp": 459.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51YgnMva5XL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09X5T42XZ",
+        "url": "https://www.amazon.com/dp/B09X5T42XZ?tag=tiereduptech-20",
+        "price": 459.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100783,
+    "c": "RAM",
+    "n": "OWC 16GB Replacement for Crucial CT16G4SFRA266 CT16G4S266M - DDR4 2666MHz PC4-21300 CL19 2Rx8 260-pin 1.2V Non-ECC SODIMM",
+    "b": "Crucial",
+    "pr": 120.99,
+    "msrp": 120.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51t5Wh4SPQL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GX2381CR",
+        "url": "https://www.amazon.com/dp/B0GX2381CR?tag=tiereduptech-20",
+        "price": 120.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100784,
+    "c": "RAM",
+    "n": "Crucial 16GB DDR5 RAM, 5600MHz (or 5200MHz or 4800MHz) Desktop Memory, UDIMM 288-Pin, Compatible with Intel Core and AMD Ryzen - CT16G56C46U5",
+    "b": "AMD",
+    "pr": 212.1,
+    "msrp": 212.1,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51fGfxSZy4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BLTH3KWV",
+        "url": "https://www.amazon.com/dp/B0BLTH3KWV?tag=tiereduptech-20",
+        "price": 212.1,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100785,
+    "c": "RAM",
+    "n": "Kingston FURY Beast 64GB (2x32GB) 6000MT/s DDR5 CL36 Desktop Memory | AMD EXPO | Kit of 2 | KF560C36BBEK2-64",
+    "b": "AMD",
+    "pr": 943.89,
+    "msrp": 943.89,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/717cPftxQgL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BRTHYGZF",
+        "url": "https://www.amazon.com/dp/B0BRTHYGZF?tag=tiereduptech-20",
+        "price": 943.89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100786,
+    "c": "RAM",
+    "n": "Kingston FURY Beast RGB 64GB 5600MT/s DDR5 CL40 DIMM Desktop Memory (Kit of 2) | Intel XMP 3.0 | Infrared Sync Technology | Overclocking Stability | KF556C40BBAK2-64",
+    "b": "Intel",
+    "pr": 824.86,
+    "msrp": 824.86,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71f5U0DS6qL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B1QPLJT1",
+        "url": "https://www.amazon.com/dp/B0B1QPLJT1?tag=tiereduptech-20",
+        "price": 824.86,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100787,
+    "c": "RAM",
+    "n": "Patriot Memory Viper Venom DDR5 RAM 16GB (1X16GB) 6000MHz CL30 1.35v UDIMM Desktop Gaming Memory Compatible with Intel XMP/AMD Expo - PVV516G60C30",
+    "b": "AMD",
+    "pr": 209.99,
+    "msrp": 209.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71jHgjCUapL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DKQ6VH85",
+        "url": "https://www.amazon.com/dp/B0DKQ6VH85?tag=tiereduptech-20",
+        "price": 209.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100788,
+    "c": "RAM",
+    "n": "Patriot Memory Viper Venom DDR5 RAM 32GB (2X16GB) 5600MHz CL36 1.25v UDIMM Desktop Gaming Memory Kit Compatible with Intel XMP/AMD Expo - PVV532G560C36K",
+    "b": "AMD",
+    "pr": 404.99,
+    "msrp": 404.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/81VgoM65v1L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09XYSN5DY",
+        "url": "https://www.amazon.com/dp/B09XYSN5DY?tag=tiereduptech-20",
+        "price": 404.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100789,
+    "c": "RAM",
+    "n": "Patriot Memory Viper Elite 5 RGB DDR5 RAM 16GB (1X16GB) 5600MT/s CL36 1.35v UDIMM Desktop Gaming Memory Compatible with Intel XMP/AMD Expo - PVER516G56C36W",
+    "b": "AMD",
+    "pr": 227.99,
+    "msrp": 227.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61b33UG2phL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DJTXKJ7P",
+        "url": "https://www.amazon.com/dp/B0DJTXKJ7P?tag=tiereduptech-20",
+        "price": 227.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100790,
+    "c": "RAM",
+    "n": "Patriot Memory Viper Xtreme 5 MPOWER DDR5 RGB RAM 32GB (2X16GB) 6000MT/s CL30 1.35v UDIMM Desktop Gaming Memory Kit Compatible with Intel XMP/AMD Expo - PVXR532G60C30KM",
+    "b": "AMD",
+    "pr": 421.99,
+    "msrp": 421.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/51WlYlegGZL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DKQS389Z",
+        "url": "https://www.amazon.com/dp/B0DKQS389Z?tag=tiereduptech-20",
+        "price": 421.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100791,
+    "c": "RAM",
+    "n": "Patriot Viper Xtreme 5 RGB DDR5 RAM 32GB (2X16GB) 8000MHz CL38 1.45v UDIMM Desktop Gaming Memory Kit Compatible with Intel XMP - PVXR532G80C38K",
+    "b": "Patriot",
+    "pr": 679.99,
+    "msrp": 679.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/51LY7+8inAL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C3WBCLTM",
+        "url": "https://www.amazon.com/dp/B0C3WBCLTM?tag=tiereduptech-20",
+        "price": 679.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100792,
+    "c": "RAM",
+    "n": "CORSAIR Dominator Titanium RGB DDR5 RAM 32GB (2x16GB) DDR5 7200MHz CL34 Intel XMP iCUE Compatible Computer Memory - White (CMP32GX5M2X7200C34W)",
+    "b": "Intel",
+    "pr": 695.24,
+    "msrp": 695.24,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61FvCy+l77L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CHSGVHCB",
+        "url": "https://www.amazon.com/dp/B0CHSGVHCB?tag=tiereduptech-20",
+        "price": 695.24,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100793,
+    "c": "RAM",
+    "n": "CORSAIR Vengeance DDR5 RAM 32GB (2x16GB) 5600MHz CL40 Intel XMP iCUE Compatible Computer Memory - White (CMK32GX5M2B5600C40W)",
+    "b": "Intel",
+    "pr": 563.58,
+    "msrp": 563.58,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71sKaassekL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CJ91NKMK",
+        "url": "https://www.amazon.com/dp/B0CJ91NKMK?tag=tiereduptech-20",
+        "price": 563.58,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100794,
+    "c": "RAM",
+    "n": "Patriot Viper Xtreme 5 DDR5 RAM 32GB (2X16GB) 6400MT/s CL32 1.4v UDIMM Desktop Gaming Memory Kit Compatible with Intel XMP - PVX532G64C32K",
+    "b": "Patriot",
+    "pr": 429.99,
+    "msrp": 429.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61eUoccyMAL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DCJNB51B",
+        "url": "https://www.amazon.com/dp/B0DCJNB51B?tag=tiereduptech-20",
+        "price": 429.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100795,
+    "c": "RAM",
+    "n": "Patriot Viper Elite 5 RGB DDR5 RAM 32GB (1X32GB) 6000MT/s CL30 1.35v UDIMM Desktop Gaming Memory Compatible with Intel XMP/AMD Expo - PVER532G60C30W",
+    "b": "Patriot",
+    "pr": 431.99,
+    "msrp": 431.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61cL3U9VsnL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DGB2ZJDB",
+        "url": "https://www.amazon.com/dp/B0DGB2ZJDB?tag=tiereduptech-20",
+        "price": 431.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100796,
+    "c": "RAM",
+    "n": "Patriot Viper Elite 5 Ultra Gaming RGB DDR5 RAM 32GB (2X16GB) 6400MT/s CL32 1.4v UDIMM Desktop Gaming Memory Kit Compatible with Intel XMP AMD Expo - VEUR532G6432K",
+    "b": "Patriot",
+    "pr": 519.99,
+    "msrp": 519.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/41eXV1QqP6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FDL768Q6",
+        "url": "https://www.amazon.com/dp/B0FDL768Q6?tag=tiereduptech-20",
+        "price": 519.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100797,
+    "c": "RAM",
+    "n": "Patriot Memory Viper Elite 5 RGB DDR5 RAM 32GB (1X32GB) 5600MT/s CL38 1.35v UDIMM Desktop Gaming Memory Compatible with Intel XMP/AMD Expo - PVER532G56C38W",
+    "b": "AMD",
+    "pr": 431.99,
+    "msrp": 431.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51DEzgHXSyL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CBMQ899S",
+        "url": "https://www.amazon.com/dp/B0CBMQ899S?tag=tiereduptech-20",
+        "price": 431.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100798,
+    "c": "Storage",
+    "n": "PNY CS900 1TB 3D NAND 2.5\" SATA III Internal Solid State Drive (SSD) - (SSD7CS900-1TB-RB)",
+    "b": "PNY",
+    "pr": 175.99,
+    "msrp": 175.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61cyHqB+KmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07Y5VDNT9",
+        "url": "https://www.amazon.com/dp/B07Y5VDNT9?tag=tiereduptech-20",
+        "price": 175.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100799,
+    "c": "Storage",
+    "n": "Patriot P210 1TB Internal SSD - SATA 3 2.5\" - Solid State Drive - P210S1TB25",
+    "b": "Patriot",
+    "pr": 152.99,
+    "msrp": 152.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71zcEPt4gFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B087KBL5KS",
+        "url": "https://www.amazon.com/dp/B087KBL5KS?tag=tiereduptech-20",
+        "price": 152.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100800,
+    "c": "Storage",
+    "n": "SANDISK Ultra 3D NAND 1TB Internal SSD - SATA III 6 Gb/s, 2.5 Inch /7 mm, Up to 560 MB/s - ‎SDSSDH3-1T00-G26",
+    "b": "SanDisk",
+    "pr": 239.99,
+    "msrp": 239.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61t+4olwoXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B7VM4SRX",
+        "url": "https://www.amazon.com/dp/B0B7VM4SRX?tag=tiereduptech-20",
+        "price": 239.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100801,
+    "c": "Storage",
+    "n": "TEAMGROUP T-Force Vulcan Z 512GB SLC Cache 3D NAND TLC 2.5 Inch SATA III Internal Solid State Drive SSD (R/W Speed up to 530/470 MB/s) T253TZ512G0C101",
+    "b": "TeamGroup",
+    "pr": 103.99,
+    "msrp": 103.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/91FAhElMh8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B6ZC5MS3",
+        "url": "https://www.amazon.com/dp/B0B6ZC5MS3?tag=tiereduptech-20",
+        "price": 103.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100802,
+    "c": "Storage",
+    "n": "Western Digital WD Green SATA 500GB, Up to 545MB/s, 2.5 Inch/7 mm, 3Y Warranty, Internal Solid State Drive (SSD) (WDS500G5G0A-00CPT0)",
+    "b": "Western Digital",
+    "pr": 109.49,
+    "msrp": 109.49,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61tMrccU67L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FNCMY16K",
+        "url": "https://www.amazon.com/dp/B0FNCMY16K?tag=tiereduptech-20",
+        "price": 109.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100803,
+    "c": "Storage",
+    "n": "Seagate Pipeline HD ST3500312CS 500GB 5900RPM 8MB Cache SATA II 3.0Gb/s 3.5in Internal Hard Drive (PC, RAID, NAS, CCTV DVR) [Renewed] -w/1 Year Warrany",
+    "b": "Seagate",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/518j7-VQYAL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01H4J3N58",
+        "url": "https://www.amazon.com/dp/B01H4J3N58?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100804,
+    "c": "Storage",
+    "n": "Patriot P210 512GB Internal SSD - SATA 3 2.5\" - Solid State Drive - P210S512G25",
+    "b": "Patriot",
+    "pr": 80.99,
+    "msrp": 80.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71FniQHHgwL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B087K9MCLM",
+        "url": "https://www.amazon.com/dp/B087K9MCLM?tag=tiereduptech-20",
+        "price": 80.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100805,
+    "c": "Storage",
+    "n": "Western Digital 500GB WD Blue SA510 SATA Internal Solid State Drive SSD - SATA III 6 Gb/s, 2.5\"/7mm, Up to 560 MB/s - WDS500G3B0A",
+    "b": "Western Digital",
+    "pr": 180,
+    "msrp": 180,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71s1mOypsUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09ZYPTXS4",
+        "url": "https://www.amazon.com/dp/B09ZYPTXS4?tag=tiereduptech-20",
+        "price": 180,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.779Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100806,
+    "c": "Storage",
+    "n": "PNY CS900 250GB 3D NAND 2.5\" SATA III Internal Solid State Drive (SSD) - (SSD7CS900-250-RB)",
+    "b": "PNY",
+    "pr": 56.99,
+    "msrp": 56.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61cyHqB+KmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07XZLW68F",
+        "url": "https://www.amazon.com/dp/B07XZLW68F?tag=tiereduptech-20",
+        "price": 56.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100807,
+    "c": "Storage",
+    "n": "SAMSUNG 870 EVO 4TB 2.5 Inch SATA III Internal SSD (MZ-77E4T0B/AM) , Black",
+    "b": "Samsung",
+    "pr": 819,
+    "msrp": 819,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71W2nK7LUrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08QBL36GF",
+        "url": "https://www.amazon.com/dp/B08QBL36GF?tag=tiereduptech-20",
+        "price": 819,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100808,
+    "c": "Storage",
+    "n": "Crucial BX500 4TB 3D NAND SATA 2.5-Inch Internal SSD, up to 540MB/s - CT4000BX500SSD1, Solid State Drive",
+    "b": "Crucial",
+    "pr": 444.99,
+    "msrp": 435,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51zhuXxYuRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CY7638WZ",
+        "url": "https://www.amazon.com/dp/B0CY7638WZ?tag=tiereduptech-20",
+        "price": 444.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100809,
+    "c": "Storage",
+    "n": "Western Digital 4TB WD Red SA500 NAS 3D NAND Internal SSD Solid State Drive - SATA III 6 Gb/s, 2.5\"/7mm, Up to 560 MB/s - WDS400T2R0A",
+    "b": "Western Digital",
+    "pr": 887.62,
+    "msrp": 887.62,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/614+RkqDy8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CVN88YVG",
+        "url": "https://www.amazon.com/dp/B0CVN88YVG?tag=tiereduptech-20",
+        "price": 887.62,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100810,
+    "c": "Storage",
+    "n": "Western Digital 4TB WD Blue SA510 Internal Solid State Drive SSD - SATA III 6 Gb/s, 2.5\"/7mm, Up to 560 MB/s - WDS400T3B0A",
+    "b": "Western Digital",
+    "pr": 780,
+    "msrp": 780,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71lw3WphJNL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C14QXKJW",
+        "url": "https://www.amazon.com/dp/B0C14QXKJW?tag=tiereduptech-20",
+        "price": 780,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100811,
+    "c": "Storage",
+    "n": "Western Digital 500GB WD Green SN350 NVMe Internal SSD Solid State Drive - Gen3 PCIe, M.2 2280, Up to 2,400 MB/s - WDS500G2G0C",
+    "b": "Western Digital",
+    "pr": 109.98,
+    "msrp": 109.98,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/5153bSSoCpL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BXVVYCRN",
+        "url": "https://www.amazon.com/dp/B0BXVVYCRN?tag=tiereduptech-20",
+        "price": 109.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100812,
+    "c": "Storage",
+    "n": "PNY CS2241 500GB M.2 NVMe Gen4 x4 Internal Solid State Drive (SSD) - M280CS2241-500-RB",
+    "b": "PNY",
+    "pr": 114.99,
+    "msrp": 114.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51Wd9dZkWEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BYLG5NCZ",
+        "url": "https://www.amazon.com/dp/B0BYLG5NCZ?tag=tiereduptech-20",
+        "price": 114.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100813,
+    "c": "Storage",
+    "n": "SAMSUNG (MZ-V7E500BW) 970 EVO SSD 500GB - M.2 NVMe Interface Internal Solid State Drive with V-NAND Technology, Black/Red",
+    "b": "Samsung",
+    "pr": 279,
+    "msrp": 279,
+    "r": 4.9,
+    "img": "https://m.media-amazon.com/images/I/81ABwgAl-gL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07BN4NJ2J",
+        "url": "https://www.amazon.com/dp/B07BN4NJ2J?tag=tiereduptech-20",
+        "price": 279,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100814,
+    "c": "Storage",
+    "n": "WD_Black SN850X 8TB NVMe SSD - M.2 2280, Up to 7,300 MB/s Read speeds, Up to 6,300 MB/s Write speeds, Gaming Expansion, High Performance Internal Solid State Drive - WDS800T2X0E",
+    "b": "Western Digital",
+    "pr": 1329.99,
+    "msrp": 1329.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61jQCrK6mFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D9WT512W",
+        "url": "https://www.amazon.com/dp/B0D9WT512W?tag=tiereduptech-20",
+        "price": 1329.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100815,
+    "c": "Storage",
+    "n": "Samsung SSD 9100 PRO 8TB, PCIe 5.0x4 M.2 2280, Seq. Read Speeds Up to 14,800MB/s, Best for AI Computing, Gaming, and Heavy Duty Workstations (MZ VAP8T0B/AM)",
+    "b": "Samsung",
+    "pr": 2003.56,
+    "msrp": 2003.56,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/718BRvalumL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DY2TB1TD",
+        "url": "https://www.amazon.com/dp/B0DY2TB1TD?tag=tiereduptech-20",
+        "price": 2003.56,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100816,
+    "c": "Storage",
+    "n": "WD_Black SN850X 8TB NVMe SSD with Heatsink - M.2 2280, Up to 7,300 MB/s Read speeds, Up to 6,300 MB/s Write speeds, Gaming Expansion, High Performance Internal Solid State Drive - WDS800T2XHE",
+    "b": "Western Digital",
+    "pr": 1337.34,
+    "msrp": 1337.34,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/618RFfiA8dL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D9WTM2TH",
+        "url": "https://www.amazon.com/dp/B0D9WTM2TH?tag=tiereduptech-20",
+        "price": 1337.34,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100817,
+    "c": "Storage",
+    "n": "WD_Black 8TB SN850P NVMe M.2 SSD Officially Licensed Storage Expansion for PS5 Consoles, up to 7200MB/s, with heatsink - WDBBYV0080BNC-WRSN",
+    "b": "Western Digital",
+    "pr": 1299.99,
+    "msrp": 1299.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61RQtAID8sL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DBQP4F3Z",
+        "url": "https://www.amazon.com/dp/B0DBQP4F3Z?tag=tiereduptech-20",
+        "price": 1299.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100818,
+    "c": "Storage",
+    "n": "Lexar 8TB NM790 SSD PCIe Gen4 NVMe M.2 2280 Internal Solid State Drive, Up to 7000/6200 MB/s Read/Write, Compatible with PS5, for Gamers and Creators, Black (LNM790X008T-RNNNU)",
+    "b": "Lexar",
+    "pr": 1449.99,
+    "msrp": 1449.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/719E0jUL5sL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DG6Q25M2",
+        "url": "https://www.amazon.com/dp/B0DG6Q25M2?tag=tiereduptech-20",
+        "price": 1449.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100819,
+    "c": "Storage",
+    "n": "WD_Black SN8100 8TB NVMe SSD - PCIe 5.0x4, M.2 2280, Up to 14,900MB/s Read Speed, up to 11,000MB/s Write Speed, Best for AI Applications, Gaming, and Video Editing - WDS800T1X0M",
+    "b": "Western Digital",
+    "pr": 1999.99,
+    "msrp": 1999.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/51qMSD089BL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FTMB3X3J",
+        "url": "https://www.amazon.com/dp/B0FTMB3X3J?tag=tiereduptech-20",
+        "price": 1999.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100820,
+    "c": "Storage",
+    "n": "SANDISK 8TB Extreme Portable SSD (Old Model) - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE61-8T00-G25",
+    "b": "SanDisk",
+    "pr": 810,
+    "msrp": 810,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61zuR3UMnWL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DLK38TR9",
+        "url": "https://www.amazon.com/dp/B0DLK38TR9?tag=tiereduptech-20",
+        "price": 810,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100821,
+    "c": "Storage",
+    "n": "Samsung SSD 9100 PRO with Heatsink 8TB, PCIe 5.0x4 M.2 2280, Seq. Read Speeds Up to 14,800/13,400 MB/s, Best for AI Computing, Gaming, and Heavy Duty Workstations (MZ VAP8T0CW)",
+    "b": "Samsung",
+    "pr": 2199,
+    "msrp": 2199,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71DC8jsNjRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DY2NWFJV",
+        "url": "https://www.amazon.com/dp/B0DY2NWFJV?tag=tiereduptech-20",
+        "price": 2199,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100822,
+    "c": "Storage",
+    "n": "WD_Black SN8100 1TB NVMe SSD with Heatsink - PCIe 5.0x4, M.2 2280, Up to 14,900MB/s Read Speed, up to 11,000MB/s Write Speed, Best for AI Applications, Gaming, and Video Editing - WDS100T1XHM",
+    "b": "Western Digital",
+    "pr": 309.99,
+    "msrp": 309.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/616t6xEjGGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F3GGX4SK",
+        "url": "https://www.amazon.com/dp/B0F3GGX4SK?tag=tiereduptech-20",
+        "price": 309.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100823,
+    "c": "Storage",
+    "n": "NTQinParts USB 3.0 to 2.5\" SATA III Hard Drive Adapter Cable/UASP Converter for Western Digital 250GB/500GB/1TB/2TB/4TB WD Blue SA510 SATA Internal Solid State Drive SSD",
+    "b": "Western Digital",
+    "pr": 13.99,
+    "msrp": 13.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/51LEg1BuzSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CX1JZP5S",
+        "url": "https://www.amazon.com/dp/B0CX1JZP5S?tag=tiereduptech-20",
+        "price": 13.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100824,
+    "c": "Storage",
+    "n": "WD Blue SA510 1TB SATA SSD - SATA III 6 Gb/s, M.2 2280, Internal Solid State Drive, Up to 560 MB/s - WDS100T3B0B",
+    "b": "Western Digital",
+    "pr": 215.99,
+    "msrp": 215.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/41rYTciMKHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09ZYNHPW2",
+        "url": "https://www.amazon.com/dp/B09ZYNHPW2?tag=tiereduptech-20",
+        "price": 215.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100825,
+    "c": "Storage",
+    "n": "Western Digital 1TB WD Blue Mobile Hard Drive HDD - 5400 RPM, SATA 6 Gb/s, 128 MB Cache, 2.5\" - WD10SPZX",
+    "b": "Western Digital",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61B5+NExygL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B071F9MLJJ",
+        "url": "https://www.amazon.com/dp/B071F9MLJJ?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.780Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100826,
+    "c": "Storage",
+    "n": "Kingston NV3 1TB M.2 2230 NVMe SSD | Up to 6000MB/s | SNV3SM3/1T0",
+    "b": "Kingston",
+    "pr": 229.33,
+    "msrp": 229.33,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61DRTZhZsiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FD2LGBZF",
+        "url": "https://www.amazon.com/dp/B0FD2LGBZF?tag=tiereduptech-20",
+        "price": 229.33,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.781Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100827,
+    "c": "Storage",
+    "n": "Kingston Ironkey Keypad 200 16GB Encrypted USB | Alphanumeric Keypad | Multi-Pin Access | XTS-AES 256-bit | FIPS 140-3 Level 3 Certified | Brute Force & BadUSB Protection | IKKP200/16GB,Blue",
+    "b": "Kingston",
+    "pr": 104.99,
+    "msrp": 104.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61wtSTs4TJL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BDQ4TXSG",
+        "url": "https://www.amazon.com/dp/B0BDQ4TXSG?tag=tiereduptech-20",
+        "price": 104.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.781Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100828,
+    "c": "Storage",
+    "n": "TEAMGROUP MP44 1TB SLC Cache Gen 4x4 M.2 2280 PCIe 4.0 with NVMe Laptop Desktop NUC NAS SSD (R/W Speed up to 7000/6000MB/s) TM8FPW001T0C101",
+    "b": "TeamGroup",
+    "pr": 186.99,
+    "msrp": 186.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71dKDfCRFKL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4KRMKFW",
+        "url": "https://www.amazon.com/dp/B0C4KRMKFW?tag=tiereduptech-20",
+        "price": 186.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.781Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100829,
+    "c": "Storage",
+    "n": "TEAMGROUP T-Force Vulcan Z 1TB SLC Cache 3D NAND QLC 2.5 Inch SATA III Internal Solid State Drive SSD (R/W Speed up to 550/470 MB/s) T253TY001T0C101",
+    "b": "TeamGroup",
+    "pr": 148.99,
+    "msrp": 148.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/91y2aH81-fL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CYFSR463",
+        "url": "https://www.amazon.com/dp/B0CYFSR463?tag=tiereduptech-20",
+        "price": 148.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100830,
+    "c": "Storage",
+    "n": "Seagate One Touch 8TB External Hard Drive Desktop HDD - USB-C Compatible with Most Windows and macOS, Rescue Recovery (STNB8000400)",
+    "b": "Seagate",
+    "pr": 259.99,
+    "msrp": 259.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61wt66pbUkL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FH5NGWNY",
+        "url": "https://www.amazon.com/dp/B0FH5NGWNY?tag=tiereduptech-20",
+        "price": 259.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100831,
+    "c": "Storage",
+    "n": "Western Digital - WD 8TB Purple Surveillance Internal Hard Drive - 7200 RPM Class, SATA 6 Gb/s, 256MB Cache, 3.5\", Crypto Chia Mining - WD82PURZ - BROAGE HDMI Cable, Solid State Drive",
+    "b": "Western Digital",
+    "pr": 413.95,
+    "msrp": 413.95,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61oHZgIIeWS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B093T8P7VZ",
+        "url": "https://www.amazon.com/dp/B093T8P7VZ?tag=tiereduptech-20",
+        "price": 413.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100832,
+    "c": "Storage",
+    "n": "Seagate Portable 4TB External Hard Drive HDD – USB 3.0 for PC, Mac, Xbox, & PlayStation - 1-Year Rescue Service (SRD0NF1)",
+    "b": "Seagate",
+    "pr": 159,
+    "msrp": 159,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/41OUh0ZU1NL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07CRGSR16",
+        "url": "https://www.amazon.com/dp/B07CRGSR16?tag=tiereduptech-20",
+        "price": 159,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100833,
+    "c": "Storage",
+    "n": "Seagate IronWolf 4TB NAS Internal Hard Drive CMR 3.5 Inch SATA 6Gb/s 5400 RPM 64MB Cache for RAID Network Attached Storage Rescue Services (ST4000VNZ06/006)",
+    "b": "Seagate",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61TZBcjvfUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09NHV3CK9",
+        "url": "https://www.amazon.com/dp/B09NHV3CK9?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100834,
+    "c": "Storage",
+    "n": "Seagate Expansion 22TB External Hard Drive HDD - USB 3.0, with Rescue Data Recovery Services (STKP22000400)",
+    "b": "Seagate",
+    "pr": 499.99,
+    "msrp": 499.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/61Ctgne-FgL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DW8ZW47C",
+        "url": "https://www.amazon.com/dp/B0DW8ZW47C?tag=tiereduptech-20",
+        "price": 499.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100835,
+    "c": "Storage",
+    "n": "Western Digital 4TB WD Blue PC Internal Hard Drive HDD - 5400 RPM, SATA 6 Gb/s, 128 MB Cache, 3.5\" - WD40EZZX",
+    "b": "Western Digital",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71EBVpYZ1YL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GJ7CVHR6",
+        "url": "https://www.amazon.com/dp/B0GJ7CVHR6?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100836,
+    "c": "Storage",
+    "n": "WD 4TB Elements Portable External Hard Drive for Windows, USB 3.2 Gen 1/USB 3.0 for PC & Mac, Plug and Play Ready - ‎WDBU6Y0040BBK-WESN",
+    "b": "Western Digital",
+    "pr": 168.97,
+    "msrp": 168.97,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/91mlqrT75WL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0713WPGLL",
+        "url": "https://www.amazon.com/dp/B0713WPGLL?tag=tiereduptech-20",
+        "price": 168.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100837,
+    "c": "Storage",
+    "n": "Western Digital 4TB WD Red Plus NAS Internal Hard Drive HDD - 5400 RPM, SATA 6 Gb/s, CMR, 128 MB Cache, 3.5\" - WD40EFZZ",
+    "b": "Western Digital",
+    "pr": 154.99,
+    "msrp": 154.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/51fzqLwIPlL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G5YDXKS7",
+        "url": "https://www.amazon.com/dp/B0G5YDXKS7?tag=tiereduptech-20",
+        "price": 154.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100838,
+    "c": "Storage",
+    "n": "Western Digital 4TB WD Purple Surveillance Internal Hard Drive HDD - SATA 6 Gb/s, 128 MB Cache, 3.5\" - WD44PURZ",
+    "b": "Western Digital",
+    "pr": 154.99,
+    "msrp": 154.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71Od7Xf5SwL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G6BSNYZ8",
+        "url": "https://www.amazon.com/dp/B0G6BSNYZ8?tag=tiereduptech-20",
+        "price": 154.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100839,
+    "c": "Storage",
+    "n": "Seagate Barracuda ST4000LM024 4 TB 2.5\" Internal Hard Drive",
+    "b": "Seagate",
+    "pr": 164.99,
+    "msrp": 164.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/713+86COo+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01LXCE9W9",
+        "url": "https://www.amazon.com/dp/B01LXCE9W9?tag=tiereduptech-20",
+        "price": 164.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100840,
+    "c": "Storage",
+    "n": "Seagate Skyhawk Surveillance ST3000VX009 3TB SATA 6.0 Gb/s 256MB Hard Drive (Renewed)",
+    "b": "Seagate",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61FwIYZ8DlL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B092MM4N6N",
+        "url": "https://www.amazon.com/dp/B092MM4N6N?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100841,
+    "c": "Storage",
+    "n": "SEAGATE ST4000NM0034 3.5 4TB 7200RPM SAS 12GB Hard Drive Seagate Technology ST4000NM0034 Seagate Hard Drives (Renewed)",
+    "b": "Seagate",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/51qO09DfjrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09NML5T5R",
+        "url": "https://www.amazon.com/dp/B09NML5T5R?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100842,
+    "c": "Storage",
+    "n": "Western Digital 4TB WD Black Gaming Internal Hard Drive HDD - 7200 RPM, SATA 6 Gb/s, 256 MB Cache, 3.5\" - WD4006FZBX",
+    "b": "Western Digital",
+    "pr": 199.99,
+    "msrp": 199.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/715M4sg634L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D1TZ4Z34",
+        "url": "https://www.amazon.com/dp/B0D1TZ4Z34?tag=tiereduptech-20",
+        "price": 199.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100843,
+    "c": "Storage",
+    "n": "Seagate 16TB HDD Exos X16 7200 RPM 512e/4Kn SATA 6Gb/s 256MB Cache 3.5-Inch Enterprise Hard Drive (ST16000NM001G) (Renewed)",
+    "b": "Seagate",
+    "pr": 387.99,
+    "msrp": 387.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/71cmXEwUk2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08JYQKVJP",
+        "url": "https://www.amazon.com/dp/B08JYQKVJP?tag=tiereduptech-20",
+        "price": 387.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100844,
+    "c": "Storage",
+    "n": "Seagate Skyhawk AI 16TB Video Internal Hard Drive HDD – 3.5 Inch SATA 6Gb/s 512MB Cache for DVR NVR Security Camera System with Drive Health Management and in-House Rescue Services (ST16000VE004)",
+    "b": "Seagate",
+    "pr": 579.99,
+    "msrp": 579.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71K55BMqZPL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DG3JB7G5",
+        "url": "https://www.amazon.com/dp/B0DG3JB7G5?tag=tiereduptech-20",
+        "price": 579.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100845,
+    "c": "Storage",
+    "n": "Western Digital 16TB WD Red Pro NAS Internal Hard Drive HDD - 7200 RPM, SATA 6 Gb/s, CMR, 512 MB Cache, 3.5\" - WD161KFGX",
+    "b": "Western Digital",
+    "pr": 494.99,
+    "msrp": 494.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/61RO8bqBARL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08K3VVKSW",
+        "url": "https://www.amazon.com/dp/B08K3VVKSW?tag=tiereduptech-20",
+        "price": 494.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100846,
+    "c": "Storage",
+    "n": "Seagate IronWolf Pro, 16 TB, Enterprise NAS Internal HDD –CMR 3.5 Inch, SATA 6 Gb/s, 7,200 RPM, 256 MB Cache for RAID Network Attached Storage (ST16000NT001)",
+    "b": "Seagate",
+    "pr": 579.99,
+    "msrp": 579.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61dYWqOhNnL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B94PNF7P",
+        "url": "https://www.amazon.com/dp/B0B94PNF7P?tag=tiereduptech-20",
+        "price": 579.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100847,
+    "c": "Storage",
+    "n": "WD 16TB Elements Desktop External Hard Drive, USB 3.0 for plug-and-play storage - WDBWLG0160HBK-NESN",
+    "b": "Western Digital",
+    "pr": 484.98,
+    "msrp": 484.98,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61108Iz9XEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08KTRKB6S",
+        "url": "https://www.amazon.com/dp/B08KTRKB6S?tag=tiereduptech-20",
+        "price": 484.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100848,
+    "c": "Storage",
+    "n": "MDD MAXDIGITALDATA MDD 16TB 7200RPM 256MB Cache SATA 6.0Gb/s 3.5-inch Internal Hard Drive for Surveillance Storage (MD16TGSA25672DVR) - 3 Years Warranty (Renewed)",
+    "b": "AMD",
+    "pr": 389.99,
+    "msrp": 389.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/51Ee+Ob0hVL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BWL59XLF",
+        "url": "https://www.amazon.com/dp/B0BWL59XLF?tag=tiereduptech-20",
+        "price": 389.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100849,
+    "c": "Storage",
+    "n": "Seagate Skyhawk AI 16TB Video Internal Hard Drive HDD – 3.5 Inch SATA 6Gb/s 256MB Cache for DVR NVR Security Camera System with Drive Health Management and in-House Rescue Services (ST16000VE000)",
+    "b": "Seagate",
+    "pr": 689.99,
+    "msrp": 689.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71gpzNgtyhL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07XBTS8S1",
+        "url": "https://www.amazon.com/dp/B07XBTS8S1?tag=tiereduptech-20",
+        "price": 689.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100850,
+    "c": "Storage",
+    "n": "Western Digital 18TB WD Red Pro NAS Internal Hard Drive HDD - 7200 RPM, SATA 6 Gb/s, CMR, 512 MB Cache, 3.5\" - WD181KFGX",
+    "b": "Western Digital",
+    "pr": 564.99,
+    "msrp": 564.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/61+spJ-LcBL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08K3TFM92",
+        "url": "https://www.amazon.com/dp/B08K3TFM92?tag=tiereduptech-20",
+        "price": 564.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100851,
+    "c": "Storage",
+    "n": "Seagate IronWolf Pro, 20 TB, Enterprise NAS Internal HDD –CMR 3.5 Inch, SATA 6 Gb/s, 7,200 RPM, 256 MB Cache for RAID Network Attached Storage (ST20000NT001)",
+    "b": "Seagate",
+    "pr": 669.99,
+    "msrp": 669.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61tNi3u2A-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B94MF4LP",
+        "url": "https://www.amazon.com/dp/B0B94MF4LP?tag=tiereduptech-20",
+        "price": 669.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100852,
+    "c": "Storage",
+    "n": "Western Digital WD Ultrastar 20TB Internal Hard Drive WD200EDGZ 3.5 Inch HDD SATA 6Gb/s 7200RPM 512MB Cache (Refurbished)",
+    "b": "Western Digital",
+    "pr": 489.99,
+    "msrp": 489.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/617QqO+3slL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F3J9CB1J",
+        "url": "https://www.amazon.com/dp/B0F3J9CB1J?tag=tiereduptech-20",
+        "price": 489.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100853,
+    "c": "Storage",
+    "n": "Seagate IronWolf Pro 24TB Enterprise NAS Internal HDD Hard Drive – CMR 3.5 Inch SATA 6Gb/s 7200 RPM 512MB Cache for RAID Network Attached Storage, Rescue Services (ST24000NT002)",
+    "b": "Seagate",
+    "pr": 859.99,
+    "msrp": 859.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61lM+cdTwhL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CSPCFKR9",
+        "url": "https://www.amazon.com/dp/B0CSPCFKR9?tag=tiereduptech-20",
+        "price": 859.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100854,
+    "c": "Storage",
+    "n": "Seagate Exos 20TB 7.2K RPM SATA 6Gb/s 3.5in Enterprise HDD ST20000NM002C (Renewed)",
+    "b": "Seagate",
+    "pr": 523.77,
+    "msrp": 523.77,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81vZCq-PsQL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F9ZXDHDH",
+        "url": "https://www.amazon.com/dp/B0F9ZXDHDH?tag=tiereduptech-20",
+        "price": 523.77,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100855,
+    "c": "Storage",
+    "n": "Seagate Exos 28TB Internal Hard Drive HDD - 3.5 in CMR SATA 6Gb/s, 7200 RPM, 512MB Cache, 2.5M MTBF - ST28000NM000C (Renewed)",
+    "b": "Seagate",
+    "pr": 625,
+    "msrp": 625,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81WxkNk51fL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GJ6Z1WVC",
+        "url": "https://www.amazon.com/dp/B0GJ6Z1WVC?tag=tiereduptech-20",
+        "price": 625,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100856,
+    "c": "Storage",
+    "n": "Western Digital WD Ultrastar 20TB Internal Hard Drive WD200EDGZ 3.5 Inch HDD SATA 6Gb/s 7200RPM 512MB Cache (Renewed)",
+    "b": "Western Digital",
+    "pr": 455.99,
+    "msrp": 455.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/81p0PjccMfL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FM12ZL28",
+        "url": "https://www.amazon.com/dp/B0FM12ZL28?tag=tiereduptech-20",
+        "price": 455.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100857,
+    "c": "Storage",
+    "n": "Seagate Skyhawk AI 20TB Video Internal Hard Drive HDD – 3.5 Inch SATA 6Gb/s 512MB Cache for DVR NVR Security Camera System with in-House Rescue Services (ST20000VE003)",
+    "b": "Seagate",
+    "pr": 719.99,
+    "msrp": 719.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61RkQCaz5SL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D9PGXB3P",
+        "url": "https://www.amazon.com/dp/B0D9PGXB3P?tag=tiereduptech-20",
+        "price": 719.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100858,
+    "c": "Storage",
+    "n": "WD 20TB Elements Desktop External Hard Drive, USB 3.0 drive for plug-and-play storage - WDBWLG0200HBK-NESN",
+    "b": "Western Digital",
+    "pr": 555.9,
+    "msrp": 555.9,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/41jD2O4Yy6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09VCXWPQG",
+        "url": "https://www.amazon.com/dp/B09VCXWPQG?tag=tiereduptech-20",
+        "price": 555.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100859,
+    "c": "Storage",
+    "n": "Western Digital Ultrastar DC HC560 WUH722020BLE600 20TB SATA6Gb/s 7200RPM 512MB Cache 3.5inch Enterprise Hard Drive - 5 Year Warranty (Renewed)",
+    "b": "Western Digital",
+    "pr": 469.99,
+    "msrp": 469.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51lwrLgpbwL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GZWZH9TG",
+        "url": "https://www.amazon.com/dp/B0GZWZH9TG?tag=tiereduptech-20",
+        "price": 469.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100860,
+    "c": "Storage",
+    "n": "Seagate Exos X24 24TB Enterprise Hard Drive HDD SATA 6Gb/s 512MB Cache 7200 RPM 512e CMR Helium Sealed 3.5in Hard Drive ST24000NM000H (Renewed)",
+    "b": "Seagate",
+    "pr": 579.99,
+    "msrp": 579.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61ugyCizmFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DNNKNKS4",
+        "url": "https://www.amazon.com/dp/B0DNNKNKS4?tag=tiereduptech-20",
+        "price": 579.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.782Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100861,
+    "c": "Storage",
+    "n": "Seagate Skyhawk 2TB Internal Hard Drive, 3.5 Inch SATA 6Gb/s HDD for DVR & NVR Surveillance Systems, 24/7 Recording, Model ST2000VX007 (M. Refurbished)",
+    "b": "Seagate",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71euGCyIarL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GWHJPWHB",
+        "url": "https://www.amazon.com/dp/B0GWHJPWHB?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.783Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100862,
+    "c": "Storage",
+    "n": "Seagate Skyhawk 3TB Surveillance Internal Hard Drive HDD – 3.5 Inch Sata 6Gb/s 256MB Cache for DVR NVR Security Camera System(M.Refurbished)",
+    "b": "Seagate",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/71MGE-YAnmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GWHVPZT6",
+        "url": "https://www.amazon.com/dp/B0GWHVPZT6?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.783Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100863,
+    "c": "Storage",
+    "n": "Seagate Exos ST26000NM001C 26TB 7200 RPM SATA 6Gb/s 512e 3.5in Enterprise Hard Drive (Renewed)",
+    "b": "Seagate",
+    "pr": 598,
+    "msrp": 598,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/71aVKhUtHHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GXGZ56LR",
+        "url": "https://www.amazon.com/dp/B0GXGZ56LR?tag=tiereduptech-20",
+        "price": 598,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.783Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100864,
+    "c": "Storage",
+    "n": "Synology DS223 Diskstation NAS (Realtek RTD1619B Quad-Core 2GB Ram 1xRJ-45 1GbE LAN-Port) 2-Bay with 2X 12TB Seagate IronWolf (Total 24TB)",
+    "b": "Seagate",
+    "pr": 1042.03,
+    "msrp": 1042.03,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/518LvVkg77L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BW9PJBHL",
+        "url": "https://www.amazon.com/dp/B0BW9PJBHL?tag=tiereduptech-20",
+        "price": 1042.03,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.783Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100865,
+    "c": "Storage",
+    "n": "Western Digital 12TB WD Red Plus NAS Internal Hard Drive HDD - 7200 RPM, SATA 6 GB/s, CMR, 512 MB Cache, 3.5\" - WD120EFGX",
+    "b": "Western Digital",
+    "pr": 374.99,
+    "msrp": 374.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71LBFWdyUTL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F4R6SNJG",
+        "url": "https://www.amazon.com/dp/B0F4R6SNJG?tag=tiereduptech-20",
+        "price": 374.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.783Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100866,
+    "c": "Storage",
+    "n": "UGREEN NAS DXP4800 Pro 4-Bay Desktop Network Attached Storage, Intel Core i3-1315U 6-Core CPU, 8GB DDR5 RAM, Built-in 128GB SSD, 1x 10GbE, 1x 2.5GbE, 2X M.2 NVMe Slots, 4K HDMI (Diskless)",
+    "b": "Intel",
+    "pr": 719.99,
+    "msrp": 719.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/615TmwhPAoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G1C1YNN8",
+        "url": "https://www.amazon.com/dp/B0G1C1YNN8?tag=tiereduptech-20",
+        "price": 719.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.783Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100867,
+    "c": "Storage",
+    "n": "Western Digital 24TB WD Red Pro NAS Internal Hard Drive HDD - 7200 RPM, SATA 6 Gb/s, CMR, 512 MB Cache, 3.5\" - WD240KFGX",
+    "b": "Western Digital",
+    "pr": 896.99,
+    "msrp": 896.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61QiP7GZQLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D24TQK3Q",
+        "url": "https://www.amazon.com/dp/B0D24TQK3Q?tag=tiereduptech-20",
+        "price": 896.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.783Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100868,
+    "c": "Storage",
+    "n": "UGREEN NAS DXP8800 Plus 8-Bay Desktop NASync, Intel i5 1235u 10-Core CPU, 8GB DDR5 RAM, Bulit-in 128G SSD for System, 2*10GbE, 2*M.2 NVMe Slots, 8K HDMI, 2X TBT4, Network Attached Storage (Diskless)",
+    "b": "Intel",
+    "pr": 1369.99,
+    "msrp": 1369.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61WN-NhXGML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D22HGH4N",
+        "url": "https://www.amazon.com/dp/B0D22HGH4N?tag=tiereduptech-20",
+        "price": 1369.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.783Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100869,
+    "c": "Storage",
+    "n": "SANDISK 1TB Portable SSD - Up to 800MB/s, USB-C, USB 3.2 Gen 2, Updated Firmware - External Solid State Drive - SDSSDE30-1T00-G26",
+    "b": "SanDisk",
+    "pr": 154.99,
+    "msrp": 154.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71bBCTIvIIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C5JQ68FY",
+        "url": "https://www.amazon.com/dp/B0C5JQ68FY?tag=tiereduptech-20",
+        "price": 154.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.783Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100870,
+    "c": "Storage",
+    "n": "SANDISK 500GB Extreme Portable SSD (Old Model) - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE61-500G-G25",
+    "b": "SanDisk",
+    "pr": 165.99,
+    "msrp": 165.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61zuR3UMnWL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08GTXVG9P",
+        "url": "https://www.amazon.com/dp/B08GTXVG9P?tag=tiereduptech-20",
+        "price": 165.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.784Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100871,
+    "c": "Storage",
+    "n": "Patriot Burst Elite 120GB Internal SSD - SATA 3 2.5\" - Solid State Drive - PBE120GS25SSDR",
+    "b": "Patriot",
+    "pr": 31.99,
+    "msrp": 31.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/615KVrURhfL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08LKMQ9T4",
+        "url": "https://www.amazon.com/dp/B08LKMQ9T4?tag=tiereduptech-20",
+        "price": 31.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.784Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100872,
+    "c": "Case",
+    "n": "Montech AIR 100 ARGB Micro-ATX Tower with Four ARGB Fans Pre Installed, Ultra-Minimalist Design, Fine Mesh Front Panel, High Airflow, Unique Side Swivel Tempered Glass, Black",
+    "b": "Montech",
+    "pr": 69.9,
+    "msrp": 69.9,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71+vC54eAdS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B093S1H4G2",
+        "url": "https://www.amazon.com/dp/B093S1H4G2?tag=tiereduptech-20",
+        "price": 69.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.785Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100873,
+    "c": "Case",
+    "n": "Hyte Y70 Touch Infinite Dual Chamber ATX Mid Tower Modern Aesthetic Case with Integrated 2.5K LCD Touchscreen - Snow White",
+    "b": "Hyte",
+    "pr": 379.99,
+    "msrp": 379.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71Ci0R6ohfL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DKJKG9V5",
+        "url": "https://www.amazon.com/dp/B0DKJKG9V5?tag=tiereduptech-20",
+        "price": 379.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.785Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100874,
+    "c": "Case",
+    "n": "NZXT H3 Flow – Micro-ATX PC Case – Optimized Airflow – Includes 1 x 120mm Rear Fan – Supports Full-Sized GPUs – Fits 280mm Front, 240mm Top Radiator – Back-Connect Motherboard – White",
+    "b": "NZXT",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61qXVfHQBAL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DQPNLC65",
+        "url": "https://www.amazon.com/dp/B0DQPNLC65?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.785Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100875,
+    "c": "Case",
+    "n": "GAMDIAS RGB Tempered Glass Gaming Computer PC Case, 2-Way Standing w/Vertical & Horizontal Orientaton & One-Touch Open, Support up to 420mm AIO, Huge Cable Management & Excellent Airflow NESO P1 BR",
+    "b": "AMD",
+    "pr": 146.99,
+    "msrp": 146.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81PZFUXrdRL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C8H8LYSZ",
+        "url": "https://www.amazon.com/dp/B0C8H8LYSZ?tag=tiereduptech-20",
+        "price": 146.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.785Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100876,
+    "c": "Case",
+    "n": "darkFlash ITX PC Case, Pre-Install 3 PWM ARGB Fans Computer Case, Full View Dual Tempered Glass ITX Case, Mini Size, Supports 240mm AIO(C275P) (Black)",
+    "b": "DarkFlash",
+    "pr": 67.99,
+    "msrp": 67.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/71baKXOhNNL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DRBFFWR5",
+        "url": "https://www.amazon.com/dp/B0DRBFFWR5?tag=tiereduptech-20",
+        "price": 67.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.785Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100877,
+    "c": "Case",
+    "n": "KINGCOOL Iron Wind 120 ARGB CPU Air Cooler, 6 Heat Pipes & Dual Towers, Dual 120mm PWM Fans, 1800 RPM Speed, ARGB Lighting, PC Cooler for AMD AM4 AM5/ Intel LGA 1851/1700, Black",
+    "b": "AMD",
+    "pr": 19.99,
+    "msrp": 19.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61rPsGHsTfL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FLTSXNY6",
+        "url": "https://www.amazon.com/dp/B0FLTSXNY6?tag=tiereduptech-20",
+        "price": 19.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.786Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100878,
+    "c": "Case",
+    "n": "Antec Flux Pro Noctua Edition Ultra-Quiet PC Case (Black, Brown)",
+    "b": "Antec",
+    "pr": 399.95,
+    "msrp": 399.95,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/813SkMQ6flL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GQTXLXB9",
+        "url": "https://www.amazon.com/dp/B0GQTXLXB9?tag=tiereduptech-20",
+        "price": 399.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.787Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100879,
+    "c": "Case",
+    "n": "Cooler Master 360L Core AIO CPU Liquid Cooler – 360mm Radiator, 3X ARGB PWM Fans, Patented Gen S Dual-Chamber Pump, Quiet Cooling & Easy Installation, AMD AM5/AM4 & Intel LGA 1851/1700, White",
+    "b": "AMD",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61PQ5Fegq5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4BQYN6Z",
+        "url": "https://www.amazon.com/dp/B0C4BQYN6Z?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.788Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100880,
+    "c": "Case",
+    "n": "Cooler Master Atmos II 360 LCD AIO CPU Liquid Cooler – 360mm Radiator, Customizable LCD Display, 3X ARGB PWM Fans, Dual-Chamber Pump, Low Noise, AMD AM5/AM4 & Intel LGA 1851/1700, White",
+    "b": "AMD",
+    "pr": 153.23,
+    "msrp": 153.23,
+    "r": 3.5,
+    "img": "https://m.media-amazon.com/images/I/6168BQQ-IaL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FPBQCLFQ",
+        "url": "https://www.amazon.com/dp/B0FPBQCLFQ?tag=tiereduptech-20",
+        "price": 153.23,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.788Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100881,
+    "c": "Case",
+    "n": "Cooler Master 360 Core II Liquid CPU AIO Cooler – 360mm Radiator, 3X ARGB PWM Fans, Infinity Mirror Dual-Chamber Pump, Low Noise Cooling & Easy Installation, AMD AM5/AM4 & Intel LGA 1851/1700, White",
+    "b": "AMD",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61nfIxa5lRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DQ2N7YPK",
+        "url": "https://www.amazon.com/dp/B0DQ2N7YPK?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.788Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100882,
+    "c": "Case",
+    "n": "Cooler Master HAF 700 EVO E-ATX High Airflow PC Case, IRIS Customizable LCD & Intel® CoreTM i9-14900K New Gaming Desktop Processor 24 (8 P-cores + 16 E-cores)",
+    "b": "Intel",
+    "pr": 933.99,
+    "msrp": 933.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51hpGrp4DoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CXF8MWLR",
+        "url": "https://www.amazon.com/dp/B0CXF8MWLR?tag=tiereduptech-20",
+        "price": 933.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.788Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100883,
+    "c": "Case",
+    "n": "​JONSBO N6 NAS Case, Micro ATX Pc Case,9HDD/SSD Drive Bay (hot-swap),Support 3 Power Supply Installation Positions,ATX/SFX PSU,with 2 Fans Pre-Installed,GPU305mm,Multi-Fan Position, Supporting 240AIO",
+    "b": "Jonsbo",
+    "pr": 175.99,
+    "msrp": 175.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71dDBSHoDCL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G2GVQSFL",
+        "url": "https://www.amazon.com/dp/B0G2GVQSFL?tag=tiereduptech-20",
+        "price": 175.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.789Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100884,
+    "c": "Case",
+    "n": "Hyte Y70 Upgraded Modern Aesthetic Dual Chamber Panoramic Tempered Glass Mid-Tower ATX Computer Gaming Case with PCIE 4.0 Riser Cable Included, Black (CS-HYTE-Y70-B)",
+    "b": "Hyte",
+    "pr": 192.5,
+    "msrp": 192.5,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71FlA+wJUTL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CX595GDJ",
+        "url": "https://www.amazon.com/dp/B0CX595GDJ?tag=tiereduptech-20",
+        "price": 192.5,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.789Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100885,
+    "c": "Case",
+    "n": "Hyte Y70 Upgraded Modern Aesthetic Dual Chamber Panoramic Tempered Glass Mid-Tower ATX Computer Gaming Case with PCIE 4.0 Riser Cable Included, Snow White (CS-HYTE-Y70-WW)",
+    "b": "Hyte",
+    "pr": 196.99,
+    "msrp": 196.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71CcCJVLTtL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CX57KQRY",
+        "url": "https://www.amazon.com/dp/B0CX57KQRY?tag=tiereduptech-20",
+        "price": 196.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.789Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100886,
+    "c": "Case",
+    "n": "META PCS Night Reaper Lian Li O11 Dynamic EVO RGB - Full Tower ATX PC Case – Tempered Glass Gaming Computer Case with Modular Design, High Airflow, and Customizable RGB Lighting",
+    "b": "Lian Li",
+    "pr": 499,
+    "msrp": 499,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/81oI2ed2+gL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FXBJ78Y2",
+        "url": "https://www.amazon.com/dp/B0FXBJ78Y2?tag=tiereduptech-20",
+        "price": 499,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.789Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100887,
+    "c": "Case",
+    "n": "ASUS Prime AP202 ARGB Black mATX pc case with Fully Tempered Curved Glass, Supports Graphics Cards up to 420mm Long, 360mm Long radiators, Easy-Detach Rail, Patented Slot Vent, 3 Built-in ARGB Fans",
+    "b": "ASUS",
+    "pr": 124.99,
+    "msrp": 124.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/81SLMACl6SL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FGGNR82S",
+        "url": "https://www.amazon.com/dp/B0FGGNR82S?tag=tiereduptech-20",
+        "price": 124.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.789Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100888,
+    "c": "Case",
+    "n": "CORSAIR 4000D RS ARGB Frame Modular Mid-Tower ATX PC Case – High Airflow, 3X Pre-Installed RS ARGB Fans, InfiniRail Fan Mounting System, ASUS BTF, MSI Project Zero, Gigabyte Project Stealth – White",
+    "b": "ASUS",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/615pJhSca5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DFJ9PKK4",
+        "url": "https://www.amazon.com/dp/B0DFJ9PKK4?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.790Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100889,
+    "c": "Case",
+    "n": "CORSAIR 4000D Frame Modular Mid-Tower ATX PC Case – High Airflow, InfiniRail Fan Mounting System, Dual 360mm Radiator Support, ASUS BTF, MSI Project Zero, Gigabyte Project Stealth – White",
+    "b": "ASUS",
+    "pr": 95.54,
+    "msrp": 95.54,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61Fi01H8g7L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DFHQG8VH",
+        "url": "https://www.amazon.com/dp/B0DFHQG8VH?tag=tiereduptech-20",
+        "price": 95.54,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.790Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100890,
+    "c": "Case",
+    "n": "Fractal Design Pop Air Black Solid",
+    "b": "Fractal Design",
+    "pr": 84.99,
+    "msrp": 84.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71FcQTbX5XL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08SRBTYGK",
+        "url": "https://www.amazon.com/dp/B08SRBTYGK?tag=tiereduptech-20",
+        "price": 84.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.790Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100891,
+    "c": "Case",
+    "n": "Fractal Design Pop Air RGB Black Tempered Glass Clear Tint",
+    "b": "Fractal Design",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71i8gw20ZpL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08T1GB8D8",
+        "url": "https://www.amazon.com/dp/B08T1GB8D8?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.790Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100892,
+    "c": "Case",
+    "n": "Fractal Design Pop 2 Air Black TG - Tempered Glass - Performance Airflow PC Gaming Case - Mesh Front Panel - Three 120 mm Fans Included - Spacious Interior - ATX/mATX/ITX Motherboard Support",
+    "b": "Fractal Design",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/718zpUqCuKL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FDQYCZNM",
+        "url": "https://www.amazon.com/dp/B0FDQYCZNM?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.790Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100893,
+    "c": "Case",
+    "n": "Fractal Design Pop 2 Air Black RGB - Tempered Glass - Performance Airflow PC Gaming Case - Mesh Front Panel - Three 120 mm RGB Fans Included - Spacious Interior - ATX/mATX/ITX Motherboard Support",
+    "b": "Fractal Design",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71Mkt8bJWqL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FDR2YLPW",
+        "url": "https://www.amazon.com/dp/B0FDR2YLPW?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.790Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100894,
+    "c": "Case",
+    "n": "Fractal Design Pop 2 Vision Black RGB Panoramic Glass PC Gaming Case - Dual-Chamber Layout - Four Reverse Fans Included – Reverse Connector & ATX/E-ATX/mATX/ITX",
+    "b": "Fractal Design",
+    "pr": 114.91,
+    "msrp": 114.91,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71xDw9s1S8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FV352BCT",
+        "url": "https://www.amazon.com/dp/B0FV352BCT?tag=tiereduptech-20",
+        "price": 114.91,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.790Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100895,
+    "c": "Case",
+    "n": "Fractal Design North XL Charcoal Black TG Dark",
+    "b": "Fractal Design",
+    "pr": 194.99,
+    "msrp": 194.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71IyDaBF8RL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CJCJ3ZZB",
+        "url": "https://www.amazon.com/dp/B0CJCJ3ZZB?tag=tiereduptech-20",
+        "price": 194.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.790Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100896,
+    "c": "Case",
+    "n": "ASUS Prime AP201 33-Liter Micro ATX White PC case with Tool-Free Side Panels and a Quasi-Filter mesh, with Support for 360 mm Coolers, Graphics Cards up to 338 mm Long, and Standard ATX PSUs",
+    "b": "ASUS",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/91UldF5WMmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B99J7T35",
+        "url": "https://www.amazon.com/dp/B0B99J7T35?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.790Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100897,
+    "c": "Case",
+    "n": "Fractal Design North Momentum Black - Glass Side Panel - Genuine Blackened Oak Wood Front - High Airflow PC Gaming Case - Three Powerful 120mm Momentum Fans Included - ATX Support",
+    "b": "Fractal Design",
+    "pr": 179.99,
+    "msrp": 179.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71cABFoKjmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FGPRBFWJ",
+        "url": "https://www.amazon.com/dp/B0FGPRBFWJ?tag=tiereduptech-20",
+        "price": 179.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.790Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100898,
+    "c": "Case",
+    "n": "LIAN LI High Airflow Micro ATX PC Case, RGB Gaming Computer Case, Mesh Front Panel Mid-Tower Chassis with 2x140mm ARGB PWM Fans Pre-Installed, Tempered Glass Side Panel (LANCOOL 205M MESH, Black)",
+    "b": "Lian Li",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71Mpoc5-GEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B5TG9BP1",
+        "url": "https://www.amazon.com/dp/B0B5TG9BP1?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.790Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100899,
+    "c": "Case",
+    "n": "Thermalright A70 Vision White ATX Gaming case |Three Sides Without Stands,Panoramic Glass Panel|8 Fan Slots |Tower-Style Computer case|Equipped withType-C Interface|Comes with a 9.16-inch LCD Display",
+    "b": "Thermalright",
+    "pr": 159.9,
+    "msrp": 159.9,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71C25mm9KuL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GD1PVW73",
+        "url": "https://www.amazon.com/dp/B0GD1PVW73?tag=tiereduptech-20",
+        "price": 159.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.790Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100900,
+    "c": "CPUCooler",
+    "n": "ID-COOLING SE-903-XT V2 Black CPU Air Cooler, 100mm PWM Fan, Direct Touch Heatpipes, Compact Tower Design, Low Noise, Intel & AMD Compatible",
+    "b": "AMD",
+    "pr": 13.99,
+    "msrp": 13.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61mJxOajA3L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FZB1BJR1",
+        "url": "https://www.amazon.com/dp/B0FZB1BJR1?tag=tiereduptech-20",
+        "price": 13.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100901,
+    "c": "CPUCooler",
+    "n": "Thermalright Assassin X120 Refined SE CPU Air Cooler, 4 Heat Pipes, TL-C12C PWM Fan, Aluminium Heatsink Cover, AGHP Technology, for AMD AM4/AM5/Intel LGA 1150/1151/1155/1200/1700/1851(AX120 R SE)",
+    "b": "Thermalright",
+    "pr": 17.89,
+    "msrp": 17.89,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71beJ-ZVzNL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09LHBFPJ6",
+        "url": "https://www.amazon.com/dp/B09LHBFPJ6?tag=tiereduptech-20",
+        "price": 17.89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100902,
+    "c": "CPUCooler",
+    "n": "CPU Cooler, Dual-Tower, 6×6mm Heat Pipes CPU Cooling, Dual 120mm ARGB PWM Fans, 2000RPM Speed, for AMD AM4/AM5/; Intel LGA 115X/1200/1700/1851, PC Cooler, 265W TDP",
+    "b": "AMD",
+    "pr": 19.99,
+    "msrp": 19.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71FF2ooIjlL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FF4PD4P2",
+        "url": "https://www.amazon.com/dp/B0FF4PD4P2?tag=tiereduptech-20",
+        "price": 19.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100903,
+    "c": "CPUCooler",
+    "n": "Vetroo V3 CPU Air Cooler w/ARGB Lighting and PWM Smart Control - Compact Design with Height of 133mm & 92mm Fan, Direct Heat Pipes, Aluminium Fins, for AMD AM4/AM5 & Intel LGA1851/1700/1200/115X",
+    "b": "AMD",
+    "pr": 15.99,
+    "msrp": 15.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61wugrn0kVL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DCMQFZHQ",
+        "url": "https://www.amazon.com/dp/B0DCMQFZHQ?tag=tiereduptech-20",
+        "price": 15.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100904,
+    "c": "CPUCooler",
+    "n": "Ocypus Gamma A40 BK Air Cooler CPU,100mm PWM Low-Noise Fan,133mm Height Single Tower Computer Compact CPU Air Cooler,4 Copper Direct Contact Heat Pipes,for Intel LGA 115X/1200/1700/1851 &AMD AM4/AM5",
+    "b": "AMD",
+    "pr": 14.43,
+    "msrp": 14.43,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71flabMFC3L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DS21WM8H",
+        "url": "https://www.amazon.com/dp/B0DS21WM8H?tag=tiereduptech-20",
+        "price": 14.43,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100905,
+    "c": "CPUCooler",
+    "n": "ID-COOLING SE-214-XT V2 ARGB CPU Air Cooler, 4 Heat Pipes, 120mm ARGB PWM Fan, Direct Contact Heatsink, Intel LGA1700/1200/115X & AMD AM5/AM4 Compatible",
+    "b": "AMD",
+    "pr": 17.99,
+    "msrp": 17.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61mOpscLwOL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G4CM3RHN",
+        "url": "https://www.amazon.com/dp/B0G4CM3RHN?tag=tiereduptech-20",
+        "price": 17.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100906,
+    "c": "CPUCooler",
+    "n": "Thermalright Assassin X 120R Digital White CPU Air Cooler, 2000RPM Speed,4 Heatpipes, 12cm Quiet PWM Fan CPU Cooler, Digital Screen Top Cover,for AM4/AM5,Intel LGA1700/1851/1150/1151/1200, PC Cooling",
+    "b": "Thermalright",
+    "pr": 18.9,
+    "msrp": 18.9,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61cdP9A3ANL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DMVTYYDB",
+        "url": "https://www.amazon.com/dp/B0DMVTYYDB?tag=tiereduptech-20",
+        "price": 18.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100907,
+    "c": "CPUCooler",
+    "n": "AMD Wraith Stealth Socket AM4 4-Pin Connector CPU Cooler with Aluminum Heatsink & 3.93-Inch Fan (Slim)",
+    "b": "AMD",
+    "pr": 11.12,
+    "msrp": 11.12,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61MXXjImGQL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07MFMFL7R",
+        "url": "https://www.amazon.com/dp/B07MFMFL7R?tag=tiereduptech-20",
+        "price": 11.12,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100908,
+    "c": "CPUCooler",
+    "n": "Thermalright Assassin X 90 SE V2 CPU Cooler, 92mm PWM Quiet Fan CPU Air Cooler, Support Intel Lga1700/1150/1151/1200,AMD AM4 AM5, Computer Cooler(AX90 SE V2)",
+    "b": "Thermalright",
+    "pr": 16.89,
+    "msrp": 16.89,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/716g4kdL--L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CMTRTYMG",
+        "url": "https://www.amazon.com/dp/B0CMTRTYMG?tag=tiereduptech-20",
+        "price": 16.89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100909,
+    "c": "CPUCooler",
+    "n": "Thermalright PS120SE CPU Air Cooler, 7 Heat Pipes CPU Cooler,Dual 120mm TL-C12B V2 PWM Fan, AGHP 4.0 Technology, S-FDB Bearing, for AMD AM4 AM5/Intel 1700/1150/1151/1200/1851, PC Cooler",
+    "b": "Thermalright",
+    "pr": 35.9,
+    "msrp": 35.9,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71pvjXDbjxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BNH1W546",
+        "url": "https://www.amazon.com/dp/B0BNH1W546?tag=tiereduptech-20",
+        "price": 35.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100910,
+    "c": "CPUCooler",
+    "n": "Ocypus Delta A62 ARGB BK CPU Cooler,6 Copper Heat Pipes,TDP 260W Air Cooler,Hydraulic Bearing Silence PWM Fans,Computer Cooling Fan for AMD AM4/AM5,Intel LGA 115X/1200/1700/1851",
+    "b": "AMD",
+    "pr": 19.94,
+    "msrp": 19.94,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71kWP4rRLxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08G3Z98MT",
+        "url": "https://www.amazon.com/dp/B08G3Z98MT?tag=tiereduptech-20",
+        "price": 19.94,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100911,
+    "c": "CPUCooler",
+    "n": "DARKROCK PX4 CPU Air Cooler High-Performance 4 Copper Heat Pipes, 120MM PWM Fan Low Noise - Intel LGA 1851/1700/1200/115X, AMD AM5/AMD4 All Black",
+    "b": "AMD",
+    "pr": 16.99,
+    "msrp": 16.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71aJv-Ht08L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C73BFP5T",
+        "url": "https://www.amazon.com/dp/B0C73BFP5T?tag=tiereduptech-20",
+        "price": 16.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100912,
+    "c": "CPUCooler",
+    "n": "Thermalright AXP90 X36 Low Profile ITX CPU Cooler, 36mm Height, TL-9015 Slim PWM CPU Fan, Computer ITX Heatsink Cooler, for AMD:AM4 AM5/Intel LGA1150/1151/1200/1700/1851",
+    "b": "Thermalright",
+    "pr": 20.39,
+    "msrp": 20.39,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71P8E0KUM1L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B097DTVFQQ",
+        "url": "https://www.amazon.com/dp/B097DTVFQQ?tag=tiereduptech-20",
+        "price": 20.39,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100913,
+    "c": "CPUCooler",
+    "n": "Gamma A40 ARGB BK CPU Cooler,100mm PWM Fan,133mm Height Single Tower Computer Compact CPU Air Cooler,4 Copper Heat Pipes,ARGB Function,Fancy Top Cover,for Intel LGA 115X/1200/1700/1851&AMD AM4/AM5",
+    "b": "AMD",
+    "pr": 19.99,
+    "msrp": 19.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71frF8pxdlL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DS2265RM",
+        "url": "https://www.amazon.com/dp/B0DS2265RM?tag=tiereduptech-20",
+        "price": 19.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100914,
+    "c": "CPUCooler",
+    "n": "Thermalrlght Assassin Spirit 120 EVO CPU Cooler Air with 4×6mm HeatPipes, TL-S12-S PWM Fan Heatsink CPU Cooler,156mm High, for AMD:AM4 AM5/Intel 1700/1150/1151/1200,LGA17XX PC Cooler",
+    "b": "AMD",
+    "pr": 22.9,
+    "msrp": 22.9,
+    "r": 4.9,
+    "img": "https://m.media-amazon.com/images/I/71eigWJ9YiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D39K37WP",
+        "url": "https://www.amazon.com/dp/B0D39K37WP?tag=tiereduptech-20",
+        "price": 22.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100915,
+    "c": "CPUCooler",
+    "n": "Thermalright Peerless Assassin 120 Vision MAX ARGB Black CPU Air Cooler, Twin Tower Radiator 2150RPM,480x854 Resolving Power IPS Screen with 5’’,Computer Cooler for Intel lga1851/1700/115x,AM4/AM5",
+    "b": "Thermalright",
+    "pr": 57.69,
+    "msrp": 57.69,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/717xjFXMuWL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GD1CJ71R",
+        "url": "https://www.amazon.com/dp/B0GD1CJ71R?tag=tiereduptech-20",
+        "price": 57.69,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100916,
+    "c": "CPUCooler",
+    "n": "PCCOOLER Dual Tower CPU Air Cooler, 6 Heat Pipes, Dual PWM Fans, High Performance Cooling for Intel LGA1700/1200/115X & AMD AM5/AM4, Quiet & Easy Installation(RZ620 MX)",
+    "b": "AMD",
+    "pr": 45.99,
+    "msrp": 45.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61NUFB7c9rL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GQXVHDY3",
+        "url": "https://www.amazon.com/dp/B0GQXVHDY3?tag=tiereduptech-20",
+        "price": 45.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100917,
+    "c": "CPUCooler",
+    "n": "ARCTIC Freezer 36 (Black) - Single-Tower CPU Cooler with Push-Pull, Two Pressure-optimised 120 mm P Fans, Fluid Dynamic Bearing, 200–1800 RPM, 4 Heatpipes, incl. MX-6 Thermal Compound",
+    "b": "Arctic",
+    "pr": 30.54,
+    "msrp": 30.54,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71GjW5HZXGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09VH14935",
+        "url": "https://www.amazon.com/dp/B09VH14935?tag=tiereduptech-20",
+        "price": 30.54,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100918,
+    "c": "CPUCooler",
+    "n": "NZXT Kraken Plus 280 – AIO CPU Liquid Cooler – 280mm Radiator – 2 x F140P Fans – Customizable 1.54\" Square LCD – AMD® AM5, AM4 – Intel® LGA 1851/1700, 1200/115X – Black",
+    "b": "NZXT",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61cRkQvjDIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F5SJS2JB",
+        "url": "https://www.amazon.com/dp/B0F5SJS2JB?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100919,
+    "c": "CPUCooler",
+    "n": "KINGCOOL Pure Flow 360mm AIO CPU Liquid Cooler, Enhanced 4500RPM Pump, Transparent Water Block, 3x120mm ARGB PWM Fans, Aluminum Radiator, Compatible with AMD AM5/AM4 LGA 1851/1700/1200/115X (White)",
+    "b": "AMD",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/611YL-szpwL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FMK2WJLR",
+        "url": "https://www.amazon.com/dp/B0FMK2WJLR?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100920,
+    "c": "CPUCooler",
+    "n": "ARCTIC Liquid Freezer III 280 A-RGB - CPU AIO Water Cooler, Water Cooling PC, Intel & AMD, Efficient PWM-Controlled Pump, Fan: 200–1900 RPM, LGA1851 and LGA1700 Contact Frame - White",
+    "b": "Arctic",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71WaFt7TffL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CKXB56MS",
+        "url": "https://www.amazon.com/dp/B0CKXB56MS?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100921,
+    "c": "CPUCooler",
+    "n": "NZXT Kraken Elite 280 RGB 2024 - AIO CPU Liquid Cooler - 280mm Radiator - F280 RGB Core Fan - Customizable 2.72\" IPS LCD - NZXT Turbine Pump - AMD® AM5, AM4 - Intel® LGA 1851/1700, 1200/115X - White",
+    "b": "NZXT",
+    "pr": 159.99,
+    "msrp": 159.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/41LtMkbIQvL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DCFLYM9P",
+        "url": "https://www.amazon.com/dp/B0DCFLYM9P?tag=tiereduptech-20",
+        "price": 159.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100922,
+    "c": "CPUCooler",
+    "n": "be quiet! Silent Loop 3 420mm CPU AIO Liquid Cooler | 3 Silent Wings 4 140mm PWM High-Speed Fans | Quiet Performance | 6-Pole Motor | Discreet ARGB Lighting | Refillable | Black | BW026",
+    "b": "be quiet!",
+    "pr": 149.9,
+    "msrp": 149.9,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/713rDLvoOWL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DWZX4SSK",
+        "url": "https://www.amazon.com/dp/B0DWZX4SSK?tag=tiereduptech-20",
+        "price": 149.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100923,
+    "c": "CPUCooler",
+    "n": "Geometric Future Eskimo Pro - 420mm AIO CPU Liquid Water Cooler- RGB PWM Squama 2503B 140mm Fan x 3- Fit Intel® LGA 1700, AMD®AM5 - Black- (GEO-EP-42B)",
+    "b": "AMD",
+    "pr": 109.9,
+    "msrp": 109.9,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/515+ec62sqL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DHXCYKR6",
+        "url": "https://www.amazon.com/dp/B0DHXCYKR6?tag=tiereduptech-20",
+        "price": 109.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100924,
+    "c": "CPUCooler",
+    "n": "Thermaltake TH420 ARGB Sync V2 CPU Liquid Cooler/AlO Liquid Cooling/Fan 140mm*3/PWM 500~2000 RPM/Mirror Waterblock/MB ARGB Sync Control, CL-W376-PL14SW-A , Black",
+    "b": "Thermaltake",
+    "pr": 139.99,
+    "msrp": 139.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/51ZhVN32xNL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CCX9MKRL",
+        "url": "https://www.amazon.com/dp/B0CCX9MKRL?tag=tiereduptech-20",
+        "price": 139.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100925,
+    "c": "CPUCooler",
+    "n": "ENERMAX LIQMAXFLO 420mm A-RGB AIO CPU Liquid Cooler - High Performance Pump up to 3000RPM, 38mm Thick Radiator, 60mm VRM Fan, Pressure-Optimized Silent 140mm FDB PWM Fan, Intel LGA1700/AMD AM5 Ready",
+    "b": "AMD",
+    "pr": 114.79,
+    "msrp": 114.79,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61a2TKHb-mL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CLBMHHJY",
+        "url": "https://www.amazon.com/dp/B0CLBMHHJY?tag=tiereduptech-20",
+        "price": 114.79,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100926,
+    "c": "CPUCooler",
+    "n": "Thermaltake TH420 V2 Ultra ARGB Sync/AlO Liquid Cooler/ARGB Fan 140 * 3/PWM 500~1800rpm/Water Block 2.1\" LCD/White, CL-W407-PL14SW-A",
+    "b": "Thermaltake",
+    "pr": 196.99,
+    "msrp": 196.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/51uDfQVxMjL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CHN6MYZ4",
+        "url": "https://www.amazon.com/dp/B0CHN6MYZ4?tag=tiereduptech-20",
+        "price": 196.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100927,
+    "c": "CPUCooler",
+    "n": "Thermaltake TH420 V2 Ultra ARGB Sync/AlO Liquid Cooler/ARGB Fan 140 * 3/PWM 500~1800rpm/Water Block 2.1\" LCD/Black, CL-W386-PL14SW-A",
+    "b": "Thermaltake",
+    "pr": 196.99,
+    "msrp": 196.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/51PXOyTMimL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CCXDLFZZ",
+        "url": "https://www.amazon.com/dp/B0CCXDLFZZ?tag=tiereduptech-20",
+        "price": 196.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100928,
+    "c": "CPUCooler",
+    "n": "Thermaltake TH420 V2 Ultra EX ARGB AIO CPU Cooler/Water Block 2.1\" LCD/Fan 140 * 3/Magnetic Quick Connection/MB ARGB Sync Control/LCD Software Control/CL-W417-PL14SW-A",
+    "b": "Thermaltake",
+    "pr": 214.86,
+    "msrp": 214.86,
+    "r": 3.7,
+    "img": "https://m.media-amazon.com/images/I/61OSgx0xCxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D4WQHWD2",
+        "url": "https://www.amazon.com/dp/B0D4WQHWD2?tag=tiereduptech-20",
+        "price": 214.86,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100929,
+    "c": "CPUCooler",
+    "n": "MAGFloe 420 Ultra CPU Liquid Cooler/Intel&AMD Compatible/ 3x140mm 500~2000rpm SWAFAN EX/ 420mm Radiator/MAGForce 2.0/3.95\" Square LCD/Swappable Fan Blades/Black/CL-W451-PL14SW-A",
+    "b": "AMD",
+    "pr": 259.99,
+    "msrp": 259.99,
+    "r": 2.6,
+    "img": "https://m.media-amazon.com/images/I/61o9WVfCq8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FDC4KZ46",
+        "url": "https://www.amazon.com/dp/B0FDC4KZ46?tag=tiereduptech-20",
+        "price": 259.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100930,
+    "c": "CPUCooler",
+    "n": "Thermaltake AW420 Liquid Cooler (Intel LGA 4677 / AMD sTR5/SP6) 420mm Raditator, 3x140mm 500~2000rpm PWM Toughfan Pro, Nickel-Plated Copper Block, Black, CL-W445-PL14BL-A",
+    "b": "Thermaltake",
+    "pr": 449.99,
+    "msrp": 449.99,
+    "r": 3.2,
+    "img": "https://m.media-amazon.com/images/I/71MFQYBo6FL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FBBH5LL9",
+        "url": "https://www.amazon.com/dp/B0FBBH5LL9?tag=tiereduptech-20",
+        "price": 449.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100931,
+    "c": "CPUCooler",
+    "n": "Lian Li Hydroshift II 360 CL ARGB Liquid CPU Cooler - 360mm AIO - 3.4\" IPS LCD Square Screen - Daisy-Chain - Low-Noise - Intel LGA 1851/1700, AMD AM5/AM4-3X CL120 ARGB Fans - Black (HS2LCDS36CB)",
+    "b": "Lian Li",
+    "pr": 179.99,
+    "msrp": 179.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71t5CvwlMEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FPCT1SV4",
+        "url": "https://www.amazon.com/dp/B0FPCT1SV4?tag=tiereduptech-20",
+        "price": 179.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100932,
+    "c": "CPUCooler",
+    "n": "Thermalright AXP90 X47 Black Low Profile CPU Cooler, with 92mm TL-9015B Slim PWM Fan, ITX CPU Cooler, AGHP Technology, 47mm Height,for AMD AM4 AM5/Intel 1150/1151/1155/1851/1200/1700(AXP90 X47 Black)",
+    "b": "Thermalright",
+    "pr": 22.39,
+    "msrp": 22.39,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/616cR6d0ZvS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B097DTKLRC",
+        "url": "https://www.amazon.com/dp/B097DTKLRC?tag=tiereduptech-20",
+        "price": 22.39,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100933,
+    "c": "CPUCooler",
+    "n": "PCCOOLER RC600-67 CPU Cooler, 6 Heat Pipes AGHP Technology, Dual 120mm PWM Fans, 1550RPM Speed, for AMD:AM4 AM5/Intel LGA 1700/1150/1151/1200/1851,PC Cooler (RC600-67)",
+    "b": "AMD",
+    "pr": 19.99,
+    "msrp": 19.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61A+bvwWtnL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FRMS1T4Y",
+        "url": "https://www.amazon.com/dp/B0FRMS1T4Y?tag=tiereduptech-20",
+        "price": 19.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100934,
+    "c": "CPUCooler",
+    "n": "be quiet! Pure Rock Low Profile 100W TDP CPU Cooler | Intel 1700 1200 1150 1151 1155 | AMD -AM5 AM4 | BK034",
+    "b": "be quiet!",
+    "pr": 39.5,
+    "msrp": 39.5,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61c6PGzwHiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BNYVJNL9",
+        "url": "https://www.amazon.com/dp/B0BNYVJNL9?tag=tiereduptech-20",
+        "price": 39.5,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100935,
+    "c": "CPUCooler",
+    "n": "Thermalright AXP90-X53 Full Cooper Low Profile CPU Cooler ITX,with 92mm TL-9015R Slim PWM Fan ITX CPU Cooler,AGHP Technology,53mm Height,for AMD AM4 AM5/Intel 1700/1150/1151/1200/1851(AXP90 X53 Full)",
+    "b": "Thermalright",
+    "pr": 35.9,
+    "msrp": 35.9,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71ToXFQxAVL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CMTPN7NF",
+        "url": "https://www.amazon.com/dp/B0CMTPN7NF?tag=tiereduptech-20",
+        "price": 35.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100936,
+    "c": "CPUCooler",
+    "n": "ID-COOLING IS-55 Black CPU Cooler Low Profile 57mm Height CPU Air Cooler 5 Heatpipes 120x120x15mm Slim Fan, CPU Fan for Intel LGA1851/1700/115X/1200; AMD AM4/AM5",
+    "b": "AMD",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/51TJd5s9nXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BFPRYB5Y",
+        "url": "https://www.amazon.com/dp/B0BFPRYB5Y?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100937,
+    "c": "CPUCooler",
+    "n": "Thermalright SI-100 Black CPU Air Cooler, 6×6mm Heat Pipes, TL-E12B PWM Quiet Fan CPU Cooler with S-FDB V2.0 Bearing, AGHP 3.0 Technology, for AMD AM4 AM5/Intel 1150/1151/1200/1700/2066/1851",
+    "b": "Thermalright",
+    "pr": 26.9,
+    "msrp": 26.9,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61XJRRZQ2SL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BT9PQHRF",
+        "url": "https://www.amazon.com/dp/B0BT9PQHRF?tag=tiereduptech-20",
+        "price": 26.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100938,
+    "c": "CPUCooler",
+    "n": "Thermalright AXP120-X67 Low Profile CPU Air Cooler with Quite 120mm TL-12015 PWM Fan, 6 Heat Pipes, 67mm Height, for AMD AM4/AM5Intel LGA 1700/1150/1151/1155/1156/1200",
+    "b": "Thermalright",
+    "pr": 27.99,
+    "msrp": 27.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61Cd7Gv+0UL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09TGSCHYV",
+        "url": "https://www.amazon.com/dp/B09TGSCHYV?tag=tiereduptech-20",
+        "price": 27.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100939,
+    "c": "CPUCooler",
+    "n": "Thermalright AXP90-X53 White Low Profile ITX CPU Air Cooler, 53mm Height, TL-9015W Slim PWM Fan Low Noise 22.4dba, Silent ITX CPU Cooler, 2700RPM,for AM4/AM5/Intel 1150/1151/1155/1156/1200/1700/1851",
+    "b": "Thermalright",
+    "pr": 19.39,
+    "msrp": 19.39,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61Yv5lLT4zL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BT9122F7",
+        "url": "https://www.amazon.com/dp/B0BT9122F7?tag=tiereduptech-20",
+        "price": 19.39,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100940,
+    "c": "CPUCooler",
+    "n": "Noctua NH-L9a-AM5 chromax.Black, Premium Low-Profile CPU Cooler for AMD AM5 (Black)",
+    "b": "Noctua",
+    "pr": 59.95,
+    "msrp": 59.95,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71PCyuPvp+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BNLB8VXS",
+        "url": "https://www.amazon.com/dp/B0BNLB8VXS?tag=tiereduptech-20",
+        "price": 59.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100941,
+    "c": "CPUCooler",
+    "n": "Thermalright AXP-90 X53 Black Low Profile CPU Air Cooler with Quite 90mm TL-9015B Low Profile PWM Fan, 4 Heat Pipes, 53mm Height, for AMD AM4/Intel LGA 1150/1151/1155/1156/1200/1851 (AXP-90 X53 Black)",
+    "b": "Thermalright",
+    "pr": 22.29,
+    "msrp": 22.29,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71MNueS5H8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B097DWBYNV",
+        "url": "https://www.amazon.com/dp/B097DWBYNV?tag=tiereduptech-20",
+        "price": 22.29,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100942,
+    "c": "CPUCooler",
+    "n": "Thermalright AXP90 X36 Black Low Profile CPU Cooler, with 92mm TL-9015B Slim PWM Fan, ITX CPU Cooler, AGHP Technology, 36mm Height,for AMD AM4 AM5/Intel 1150/1151/1155/1851/1200/1700(AXP90 X36 Black)",
+    "b": "Thermalright",
+    "pr": 24.9,
+    "msrp": 24.9,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61MqMWS2yPL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09CGZKHGR",
+        "url": "https://www.amazon.com/dp/B09CGZKHGR?tag=tiereduptech-20",
+        "price": 24.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100943,
+    "c": "CPUCooler",
+    "n": "Chill ARC 360mm AIO CPU Cooler with 6.67\" 2K AMOLED Curved Rotatable Screen & 3D Anamorphic Effect | 320W TDP | ARGB Fans | Intel LGA1851/1700/115X | AMD AM4/AM5 | Black",
+    "b": "AMD",
+    "pr": 199.98,
+    "msrp": 199.98,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71PoC79BZpL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GT94L8KJ",
+        "url": "https://www.amazon.com/dp/B0GT94L8KJ?tag=tiereduptech-20",
+        "price": 199.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100944,
+    "c": "CPUCooler",
+    "n": "Low Profile CPU Cooler:75mm Height CPU Air Cooler 8 Heatpipes 120x120x15mm Slim Fan,CPU Fan for Intel LGA1700/115X/1200; AMD AM4/AM5",
+    "b": "AMD",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/71f2qTFxbJL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F8NPJPM8",
+        "url": "https://www.amazon.com/dp/B0F8NPJPM8?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100945,
+    "c": "CPUCooler",
+    "n": "Thermalright AXP-120-X67 Black ARGB Low Profile CPU Air Cooler with Quite 120mm TL-C12015B-S Low Profile PWM Fan, 6 Heat Pipes, 67mm Height, for AMD AM4/Intel LGA 1700/1150/1151/1851/1200/2011/2066",
+    "b": "Thermalright",
+    "pr": 32.59,
+    "msrp": 32.59,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61HoNjWjmiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B1DHVJG8",
+        "url": "https://www.amazon.com/dp/B0B1DHVJG8?tag=tiereduptech-20",
+        "price": 32.59,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.791Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100946,
+    "c": "CPUCooler",
+    "n": "upHere Low Profile CPU Cooler Φ6mm*6 Low Profile Cooler 120mm Fan Low Profile CPU Cooler AM4 Compatible with AM5/Intel LGA 2011/2066(X79/X99)/1851/1700/1200/1150/1121/1155/1156/1366/1356/AM3/AM2/AM3+",
+    "b": "Intel",
+    "pr": 32.99,
+    "msrp": 32.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61zL2ic6YIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D9Y2QNFJ",
+        "url": "https://www.amazon.com/dp/B0D9Y2QNFJ?tag=tiereduptech-20",
+        "price": 32.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.792Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100947,
+    "c": "CPUCooler",
+    "n": "Thermalright AXP-90 X53 Low Profile CPU Air Cooler with Quite 90mm TL-9015 PWM Fan, 4 Heat Pipes, 53mm Height, for AMD AM4/Intel LGA 1150/1151/1155/1851/1200 (AXP-90 X53)",
+    "b": "Thermalright",
+    "pr": 20.9,
+    "msrp": 20.9,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/712UJOqywGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09CGWN1M7",
+        "url": "https://www.amazon.com/dp/B09CGWN1M7?tag=tiereduptech-20",
+        "price": 20.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.792Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100948,
+    "c": "CPUCooler",
+    "n": "Cooler Master Hyper 212 Spectrum V3 ARGB CPU Air Cooler – 4 Copper Heat Pipes, 120mm High Performance PWM Fan, Low Noise & Easy Installation, AMD AM5/AM4 & Intel LGA 1851/1700/1200",
+    "b": "AMD",
+    "pr": 17.9,
+    "msrp": 17.9,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71gBjYy2vfL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BRBW94VL",
+        "url": "https://www.amazon.com/dp/B0BRBW94VL?tag=tiereduptech-20",
+        "price": 17.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.792Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100949,
+    "c": "CPUCooler",
+    "n": "Cooler Master Hyper Spectrum V3 CPU Cooler - 120mm Fan | Support AMD & Intel CPU Socket AM5, AM4 / LGA 1700, 1200, 1151, 1150| PWM Case Fans | 71.93 CFM Airflow | 4 Heat Pipes",
+    "b": "AMD",
+    "pr": 19.99,
+    "msrp": 19.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61JMWRhpUgL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BR5B1S3G",
+        "url": "https://www.amazon.com/dp/B0BR5B1S3G?tag=tiereduptech-20",
+        "price": 19.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.792Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100950,
+    "c": "CPUCooler",
+    "n": "Hyper 411 Nano ARGB CPU Cooler, 2500RPM PWM Fan, Noise Level 30.04 dBA, 4 Copper Heat Pipes, 136mm Tall, Compatible with AMD Ryzen AM5|AM4, Intel LGA 1851|1700",
+    "b": "AMD",
+    "pr": 22.99,
+    "msrp": 22.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/31QiWiY6TlL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F9KGP45N",
+        "url": "https://www.amazon.com/dp/B0F9KGP45N?tag=tiereduptech-20",
+        "price": 22.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.792Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100951,
+    "c": "CPUCooler",
+    "n": "Cooler Master Hyper 612 Apex CPU Air Cooler - 6 Superconducting Heatpipes (TDP 260W), 2 x 120P 120mm Mobius Fans, Compact Heatsink, No RAM Interference - AMD and Intel Socket Compatible",
+    "b": "AMD",
+    "pr": 102.52,
+    "msrp": 102.52,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81kpaXVt+4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DTHX5T88",
+        "url": "https://www.amazon.com/dp/B0DTHX5T88?tag=tiereduptech-20",
+        "price": 102.52,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.792Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100952,
+    "c": "CPUCooler",
+    "n": "ID-COOLING FROZN A620 Black - 6.1\" Height Black Dual-Tower Air CPU Cooler, 6×Ф6mm Heatpipes, Dual 120x120x25mm FDB Fans, TDP 270W, Intel LGA1700/1851/1200/115X; AMD AM4/AM5 (153mm in Height)",
+    "b": "AMD",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71FZyliB9qL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CFQC6LCD",
+        "url": "https://www.amazon.com/dp/B0CFQC6LCD?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100953,
+    "c": "CPUCooler",
+    "n": "Cooler Master Hyper T2 Compact CPU Cooler Dual Looped, 95mm Fan, 2 Copper Direct Contact Heat Pipe for AMD Ryzen/Intel LGA1151",
+    "b": "AMD",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61D-u0HpBVL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B00K7809O2",
+        "url": "https://www.amazon.com/dp/B00K7809O2?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100954,
+    "c": "CPUCooler",
+    "n": "be quiet! Pure Rock 3 LX CPU Air Cooler | 4 High Performance 6mm Heat Pipes with HDT Technology | 120mm Quiet ARGB PWM Fan | AMD:AM4 AM5/Intel LGA 1700/1150/1151/1200 | Black | BK040",
+    "b": "AMD",
+    "pr": 29.9,
+    "msrp": 29.9,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61sK4NdBVbL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DWZF6VVQ",
+        "url": "https://www.amazon.com/dp/B0DWZF6VVQ?tag=tiereduptech-20",
+        "price": 29.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100955,
+    "c": "CPUCooler",
+    "n": "ID-COOLING FROZN A410 Black - 6\" Height Black Air CPU Cooler, 4×Ф6mm Heatpipes, 120x120x25mm FDB Fan, TDP 220W, Compatible with Intel LGA1700/1851/1200/115X; AMD AM4/AM5 (152mm in Height)",
+    "b": "AMD",
+    "pr": 26.99,
+    "msrp": 26.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71fJL5WXiCL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CFQ7P8PB",
+        "url": "https://www.amazon.com/dp/B0CFQ7P8PB?tag=tiereduptech-20",
+        "price": 26.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100956,
+    "c": "CPUCooler",
+    "n": "ID-COOLING FROZN A410 DK CPU Cooler, All-Black Layout Single Tower with 2x120mm FDB Fans in a Push-Pull Configuration, Noninterference with RAM, Compatible with Intel and AMD Latest Sockets",
+    "b": "AMD",
+    "pr": 33.24,
+    "msrp": 33.24,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/713n+jIMe5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CYL6KJB7",
+        "url": "https://www.amazon.com/dp/B0CYL6KJB7?tag=tiereduptech-20",
+        "price": 33.24,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100957,
+    "c": "CPUCooler",
+    "n": "Akasa Copper Core Cooler for Intel® LGA1700&1851 | Designed for Core™ i9 Processors up to 125W TDP | Heatsink with Copper Core | 90mm PWM Fan | Dual Ball Bearing | AK-CC6606BP01",
+    "b": "Intel",
+    "pr": 59.9,
+    "msrp": 59.9,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/816bf2T+FCL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09RF83KDF",
+        "url": "https://www.amazon.com/dp/B09RF83KDF?tag=tiereduptech-20",
+        "price": 59.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100958,
+    "c": "CPUCooler",
+    "n": "Akasa Alucia H4i, Intel LGA11851/700/1200/115X Compatible, 4-Copper Heatpipes with Ball Bearing CPU Cooler, 92mm Fan, Maximum 3600 RPM Speed, Low-Noise Cooling Fan, AK-CC7501BP01",
+    "b": "Intel",
+    "pr": 48.97,
+    "msrp": 48.97,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71Mgdv04D4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CL4RYKG2",
+        "url": "https://www.amazon.com/dp/B0CL4RYKG2?tag=tiereduptech-20",
+        "price": 48.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100959,
+    "c": "CPUCooler",
+    "n": "Akasa Alucia XS12, 120mm PWM Case Fan, High Performance Cooling Fan, 4 Pin, 120 x 15mm Sizing Slim Low-Noice, Up to 2000 RPM & 41.59 CFM, Blue, AK-FN122-BL",
+    "b": "MSI",
+    "pr": 25.38,
+    "msrp": 25.38,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/811lRnBganL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BNYTFTXZ",
+        "url": "https://www.amazon.com/dp/B0BNYTFTXZ?tag=tiereduptech-20",
+        "price": 25.38,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100960,
+    "c": "CPUCooler",
+    "n": "Bykski Distro Plate for DEEPCOOL Space Station - PMMA w/ 5v Addressable RGB(RBW) (RGV-DP-SPC-P-V2-K) - DDC Pump with Armor",
+    "b": "DeepCool",
+    "pr": 347.99,
+    "msrp": 347.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/61UwtZhN8ML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BG3HGKBV",
+        "url": "https://www.amazon.com/dp/B0BG3HGKBV?tag=tiereduptech-20",
+        "price": 347.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100961,
+    "c": "CPUCooler",
+    "n": "ID-COOLING FX360 INF 360mm Liquid CPU Cooler, AIO Cooler with ARGB Infinity Mirror Effect, 3x120mm Daisy-Chained Fans Low-Noise Operating 27.2dB(A) Max., Intel LGA1851/1700/1200/115X & AMD AM5/AM4",
+    "b": "AMD",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71wqUHl6QtL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D97Q33GW",
+        "url": "https://www.amazon.com/dp/B0D97Q33GW?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100962,
+    "c": "CPUCooler",
+    "n": "ID-COOLING SE-214-XT Black CPU Cooler All-Black Layout, 4 Direct-Contact Heat Pipes, 120mm PWM Fan, Noninterference with RAM, TDP 180W, Work with Intel LGA1700/1851/1200/115X and AMD AM5/AM4 Sockets",
+    "b": "AMD",
+    "pr": 17.9,
+    "msrp": 17.9,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71LpZ2J7v+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CY23HRVR",
+        "url": "https://www.amazon.com/dp/B0CY23HRVR?tag=tiereduptech-20",
+        "price": 17.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100963,
+    "c": "CPUCooler",
+    "n": "ID-COOLING FX360 LCD Premium 360mm AIO Liquid CPU Cooler with 1.48″ Full-Color LCD Display, 350W TDP, Intel LGA1851/1700 & AMD AM5/AM4 Support",
+    "b": "AMD",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61CNl2d-peL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FM7MX788",
+        "url": "https://www.amazon.com/dp/B0FM7MX788?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100964,
+    "c": "CPUCooler",
+    "n": "ID-COOLING IS-67-XT Black 67mm Height Low Profile CPU Cooler 6 Heatpipes CPU Air Cooler for HTPCs, ITX, and Small Form Factor Builds, 120x15mm Slim Fan, Support Intel LGA1700/1200/115X, AMD AM5/AM4",
+    "b": "AMD",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61bEA45Z0yL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CFPY9CKZ",
+        "url": "https://www.amazon.com/dp/B0CFPY9CKZ?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100965,
+    "c": "CPUCooler",
+    "n": "ID-COOLING FROZN A620 SLK CPU Air Cooler, Hybrid Single/Dual Tower Design, Dual Counter-Rotating Fans, 6 Asymmetric Heat Pipes, Easy Installation, High RAM Compatibility, for Intel & AMD",
+    "b": "AMD",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71hls-eywrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GKF2R7X1",
+        "url": "https://www.amazon.com/dp/B0GKF2R7X1?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100966,
+    "c": "CPUCooler",
+    "n": "ID-COOLING IS-77-XT Black Low Profile CPU Air Cooler, 77mm Height, 6 Heatpipes, 120mm Slim PWM Fan, Compatible with Intel LGA1700/1200/115X & AMD AM5/AM4 – Ideal for SFF & Mini-ITX PCs",
+    "b": "AMD",
+    "pr": 44.99,
+    "msrp": 44.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71q3sQqRSZL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FZG562NX",
+        "url": "https://www.amazon.com/dp/B0FZG562NX?tag=tiereduptech-20",
+        "price": 44.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100967,
+    "c": "CPUCooler",
+    "n": "ID-COOLING ID-KIT-AIO Univeral Mounting Kits for FROSTFLOW/AURAFLOW/ZOOMFLOW/PINKFLOW, Support Intel LGA1700/1851/1200; AMD AM5/AM4",
+    "b": "AMD",
+    "pr": 9.99,
+    "msrp": 9.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71OYCOADm+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CNVC9RXV",
+        "url": "https://www.amazon.com/dp/B0CNVC9RXV?tag=tiereduptech-20",
+        "price": 9.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100968,
+    "c": "CPUCooler",
+    "n": "ID-COOLING FX360 LCD White Premium 360mm AIO Liquid CPU Cooler with 1.48″ Full-Color LCD Display, 350W TDP, Intel LGA1851/1700 & AMD AM5/AM4 Support",
+    "b": "AMD",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/61bYLfxpyhL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FM7RHRPW",
+        "url": "https://www.amazon.com/dp/B0FM7RHRPW?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100969,
+    "c": "CPUCooler",
+    "n": "Thermalright Assassin King 120 SE CPU Air Cooler, 5 Heatpipes, TL-C12C PWM Fan, for AMD AM4/Intel LGA1700/1150/1151/1200/AM5",
+    "b": "AMD",
+    "pr": 18.29,
+    "msrp": 18.29,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/719VGwCEvpL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09YY5LQV9",
+        "url": "https://www.amazon.com/dp/B09YY5LQV9?tag=tiereduptech-20",
+        "price": 18.29,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.794Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100970,
+    "c": "CPUCooler",
+    "n": "Thermalright PS120SE CPU Air Cooler, 7 Heat Pipes CPU Cooler,Dual 120mm TL-C12B V2 PWM Fan, AGHP 4.0 Technilogy, S-FDB Bearing, for AMD AM4 AM5/Intel 1700/1150/1151/1200, PC Cooler",
+    "b": "AMD",
+    "pr": 35.69,
+    "msrp": 35.69,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71IIWmZam-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BNGVWL98",
+        "url": "https://www.amazon.com/dp/B0BNGVWL98?tag=tiereduptech-20",
+        "price": 35.69,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.794Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100971,
+    "c": "CPUCooler",
+    "n": "CORSAIR iCUE Link LX120-R RGB 120mm PWM Reverse Fans – Triple Fan Kit – Low-Noise, Magnetic Dome Bearing, Dual Light Loops, CORSAIR QuikTurn Screws, Zero RPM Mode – Black",
+    "b": "Corsair",
+    "pr": 94.99,
+    "msrp": 94.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71hbJKB0FsL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DGW2MZDN",
+        "url": "https://www.amazon.com/dp/B0DGW2MZDN?tag=tiereduptech-20",
+        "price": 94.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.794Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100972,
+    "c": "CPUCooler",
+    "n": "CORSAIR iCUE Link System Hub - Connect Up to 24 CORSAIR iCUE Link Devices - Reduce Cable Clutter – Innovative Single-Cable Design - Black",
+    "b": "Corsair",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71GoOu+MkCL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C65FJSKP",
+        "url": "https://www.amazon.com/dp/B0C65FJSKP?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.795Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100973,
+    "c": "CPUCooler",
+    "n": "NZXT Kraken Elite 240 RGB 2024 - AIO CPU Liquid Cooler - 240mm Radiator - F240 RGB Core Fan - Customizable 2.72\" IPS LCD - NZXT Turbine Pump - AMD® AM5, AM4 - Intel® LGA 1851/1700, 1200/115X - Black",
+    "b": "AMD",
+    "pr": 149.99,
+    "msrp": 149.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/41xtlH8kkwL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DCFN8Q6G",
+        "url": "https://www.amazon.com/dp/B0DCFN8Q6G?tag=tiereduptech-20",
+        "price": 149.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.795Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100974,
+    "c": "CPUCooler",
+    "n": "Water Cooler NZXT Kraken Elite 280 RGB - 280mm w/Display, RGB Controller & RGB Fans Black",
+    "b": "NZXT",
+    "pr": 359,
+    "msrp": 359,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61VJQ+SwJzL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BNYRYTHQ",
+        "url": "https://www.amazon.com/dp/B0BNYRYTHQ?tag=tiereduptech-20",
+        "price": 359,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.795Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100975,
+    "c": "CPUCooler",
+    "n": "NZXT Control Hub - Digital RGB Lighting and PWM Fan Speed Controller - Control Up to 5 x PWM Fans or 4 x NZXT Single-Frame Fans - Powered by NZXT CAM Software",
+    "b": "NZXT",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/41JlD9qHU9L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DJBM477F",
+        "url": "https://www.amazon.com/dp/B0DJBM477F?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.795Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100976,
+    "c": "CPUCooler",
+    "n": "Lian Li GA II Trinity SL-INF 360MM - AIO Liquid Cooler -Pre-Installed ARGB Daisy-chainable Radiator Fans or UNI Fan SL-INF Fans - for Intel® LGA 1700, 1200, 115X, AMD® AM5/AM4 Sockets (GA2T36INW.US)",
+    "b": "AMD",
+    "pr": 189.99,
+    "msrp": 189.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61GMvzXd7sL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CDF6GYM1",
+        "url": "https://www.amazon.com/dp/B0CDF6GYM1?tag=tiereduptech-20",
+        "price": 189.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.795Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100977,
+    "c": "CPUCooler",
+    "n": "Lian Li Hydroshift II-S LCD 360 Liquid CPU Cooler - 3.4\" IPS LCD Square Screen - Daisy-Chain - Low-Noise - Intel LGA 1851/1700, AMD AM5/AM4 - Fits Most PC Fans - White (HS2LCDS36NW)",
+    "b": "AMD",
+    "pr": 159.99,
+    "msrp": 159.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/713TwqyfqKL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FPCSG6J5",
+        "url": "https://www.amazon.com/dp/B0FPCSG6J5?tag=tiereduptech-20",
+        "price": 159.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.795Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100978,
+    "c": "CPUCooler",
+    "n": "Chill ARC 360mm AIO CPU Cooler with 6.67\" 2K AMOLED Curved Rotatable Screen & 3D Anamorphic Effect | 320W TDP | ARGB Fans | Intel LGA1851/1700/115X | AMD AM4/AM5 | White",
+    "b": "AMD",
+    "pr": 199.98,
+    "msrp": 199.98,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71xLivYaijL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GT4QG179",
+        "url": "https://www.amazon.com/dp/B0GT4QG179?tag=tiereduptech-20",
+        "price": 199.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.795Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100979,
+    "c": "CPUCooler",
+    "n": "Astroshel V2G 360 Argb Water Cooling CPU Cooler|3 * 120mm PWM Fans with 2000RPM|Customizable LCD Digital Display Screen|for Intel LGA1851/1700/1200/115X AMD AM4/AM5(White-360mm)",
+    "b": "AMD",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61DJu+1DnKL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G5FC9MDX",
+        "url": "https://www.amazon.com/dp/B0G5FC9MDX?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.795Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100980,
+    "c": "CPUCooler",
+    "n": "Cooler Master 240 Atmos High Performance Close-Loop AIO Liquid Cooler, R9|i7 Dual Chamber Pump, Customize Cover, Sickleflow Edge PWM, aRGB Lighting, AMD Ryzen AM5|4, Intel LGA 1851|1700 Platform",
+    "b": "AMD",
+    "pr": 128.99,
+    "msrp": 128.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71+YWYT494L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CK564T94",
+        "url": "https://www.amazon.com/dp/B0CK564T94?tag=tiereduptech-20",
+        "price": 128.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.798Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100981,
+    "c": "CPUCooler",
+    "n": "Cooler Master Atmos II 360 VRM AIO CPU Liquid Cooler – 360mm Radiator with VRM Cooling Fan, 3X ARGB PWM Fans, Dual-Chamber Pump, Low Noise, AMD AM5/AM4 & Intel LGA 1851/1700, Black",
+    "b": "AMD",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71VS301yfeL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FPBR3WWH",
+        "url": "https://www.amazon.com/dp/B0FPBR3WWH?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.798Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100982,
+    "c": "CPUCooler",
+    "n": "Cooler Master MasterLiquid ML240L V2 RGB CPU Liquid Cooler - Brighter Lighting Effects, 3rd Gen. Pump, Superior Radiator and Dual Advanced 120 mm SickleFlow Fans, Black",
+    "b": "MSI",
+    "pr": 62.01,
+    "msrp": 62.01,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51SXT9eIXQS._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B084LLD3PH",
+        "url": "https://www.amazon.com/dp/B084LLD3PH?tag=tiereduptech-20",
+        "price": 62.01,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.798Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100983,
+    "c": "CPUCooler",
+    "n": "Cooler Master MasterLiquid PL360 Flux Close-Loop AIO CPU Liquid Cooler, Gen2 ARGB Dual Loop Pump, 360mm Radiator, PL-Flux 120 PWM Fans, AMD Ryzen AM5/AM4, Intel LGA1700/1200 (MLY-D36M-A23PZ-R1)",
+    "b": "AMD",
+    "pr": 109.95,
+    "msrp": 109.95,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71YMPikkwwL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09PWVN9TP",
+        "url": "https://www.amazon.com/dp/B09PWVN9TP?tag=tiereduptech-20",
+        "price": 109.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.798Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100984,
+    "c": "CPUCooler",
+    "n": "Cooler Master MasterLiquid LC240E RGB Close-Loop AIO CPU Liquid Cooler, 240mm Radiator, Dual Chamber RGB Pump, Dual MF120R RGB Fans, RGB Lighting for AMD Ryzen/Intel LGA1151",
+    "b": "AMD",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81UMU8POoOL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07CRGC899",
+        "url": "https://www.amazon.com/dp/B07CRGC899?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.798Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100985,
+    "c": "CPUCooler",
+    "n": "Cooler Master Elite Liquid 240 CPU AIO Cooler – 240mm Radiator, 2X ARGB PWM Fans, Dual-Chamber Pump Design, Ultra-Quiet High-Performance Cooling, AMD AM5/AM4 & Intel LGA 1851/1700, Black",
+    "b": "AMD",
+    "pr": 61.98,
+    "msrp": 61.98,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61ab+RZO2mL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09463GC4H",
+        "url": "https://www.amazon.com/dp/B09463GC4H?tag=tiereduptech-20",
+        "price": 61.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.798Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100986,
+    "c": "CPUCooler",
+    "n": "Cooler Master Atmos II 360 VRM AIO CPU Liquid Cooler – 360mm Radiator with VRM Cooling Fan, 3X ARGB PWM Fans, Dual-Chamber Pump, Low Noise, AMD AM5/AM4 & Intel LGA 1851/1700, White",
+    "b": "AMD",
+    "pr": 147.62,
+    "msrp": 147.62,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61mbEErBwXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FPBRVJP2",
+        "url": "https://www.amazon.com/dp/B0FPBRVJP2?tag=tiereduptech-20",
+        "price": 147.62,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.798Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100987,
+    "c": "CPUCooler",
+    "n": "Thermalright Wonder Vision 360 UB ARGB CPU AIO Cooler,360mm Radiator, 2K 60HZ Curved Screen with 2400x1080 Resolution,for AM4/AM5,Intel LGA1851/1700,6.67in 3D Screen High Performance Pump",
+    "b": "Thermalright",
+    "pr": 211.39,
+    "msrp": 211.39,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61VIDzC-p7L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FD3MRM1B",
+        "url": "https://www.amazon.com/dp/B0FD3MRM1B?tag=tiereduptech-20",
+        "price": 211.39,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.798Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100988,
+    "c": "CPUCooler",
+    "n": "Thermalright Aqua Elite 360 ARGB CPU Water Cooler, with 3 PWM Fans, 1550RPM Speed,for AMD/AM4/AM5, Intel LGA1851/1150/1151/1155/1156/1200/2011/ 1700",
+    "b": "Thermalright",
+    "pr": 48.9,
+    "msrp": 48.9,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51Q5k9-tesL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DHXGNJM9",
+        "url": "https://www.amazon.com/dp/B0DHXGNJM9?tag=tiereduptech-20",
+        "price": 48.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.798Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100989,
+    "c": "Monitor",
+    "n": "Dell 27 Plus 4K Monitor - S2725QS - 27-inch 4K (3840 x 2160) 120Hz 16:9 Display, IPS Panel, AMD FreeSync Premium, sRGB 99%, Integrated Speakers, 1500:1 Contrast Ratio, Comfortview - Ash White",
+    "b": "AMD",
+    "pr": 279.99,
+    "msrp": 279.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61pF09VcRPL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F1GF1KFC",
+        "url": "https://www.amazon.com/dp/B0F1GF1KFC?tag=tiereduptech-20",
+        "price": 279.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.798Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100990,
+    "c": "Monitor",
+    "n": "Dell 27 Plus 4K USB-C Monitor - S2725QC - 27-inch 4K (3840 x 2160) 120Hz 16:9 Display, AMD FreeSync Premium, sRGB 99%, Integrated Speakers, 1500:1 Contrast Ratio, Comfortview - Ash White",
+    "b": "AMD",
+    "pr": 279.99,
+    "msrp": 279.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71lQNQPr+OL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F1GFD44G",
+        "url": "https://www.amazon.com/dp/B0F1GFD44G?tag=tiereduptech-20",
+        "price": 279.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.798Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100991,
+    "c": "Monitor",
+    "n": "Philips 27E1N1800A 27\" IPS 4K UHD (3840 x 2160) Monitor, Built-in Speakers, HDR 10, AMD FreeSync, LowBlue Mode, Flicker-Free, VESA, 4Yr Advance Replacement Warranty",
+    "b": "AMD",
+    "pr": 189.99,
+    "msrp": 189.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61U01fJM+0L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D51H96GD",
+        "url": "https://www.amazon.com/dp/B0D51H96GD?tag=tiereduptech-20",
+        "price": 189.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.798Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100992,
+    "c": "Monitor",
+    "n": "ASUS 27” 4K Eye Care Monitor (VY27UQ) - UHD (3840 x 2160), IPS, HDR10, Adaptive Sync, Eye Care Plus, Display Port, HDMI, Speaker, DisplayWidget, Blue Light Filter, Flicker Free, 3yr Warranty",
+    "b": "ASUS",
+    "pr": 189,
+    "msrp": 189,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/813+QuiuNOL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CV1V12R7",
+        "url": "https://www.amazon.com/dp/B0CV1V12R7?tag=tiereduptech-20",
+        "price": 189,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.798Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100993,
+    "c": "Monitor",
+    "n": "LG 27G810A-B 27-inch Ultragear 4K UHD (3840 x 2160) IPS Gaming Monitor, Dual Mode UHD 180Hz or FHD 360Hz, 1ms, NVIDIA G-Sync, AMD FreeSync Premium, VESA DisplayHDR 400, HDMI 2.1, Black",
+    "b": "AMD",
+    "pr": 349,
+    "msrp": 349,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71PSZ+9WEGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FLL3L9JG",
+        "url": "https://www.amazon.com/dp/B0FLL3L9JG?tag=tiereduptech-20",
+        "price": 349,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.798Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100994,
+    "c": "Monitor",
+    "n": "msi PRO MP273U, IPS 3840 x 2160 (UHD) Computer Monitor, 4K, 60 Hz, Adaptive-Synch, HDMI, DisplayPort, 4ms (GTG), Black",
+    "b": "MSI",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71KjydXIUYL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D9HWRQM7",
+        "url": "https://www.amazon.com/dp/B0D9HWRQM7?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100995,
+    "c": "Monitor",
+    "n": "SAMSUNG 27-Inch ViewFinity S7 (S70D) Series 4K UHD High Resolution Monitor with HDR10, Multiple Ports, Easy Setup Stand, Advanced Eye Care, LS27D702EANXGO, 2024",
+    "b": "Samsung",
+    "pr": 249.99,
+    "msrp": 249.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61CeL9O2BYL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D1DZNL3H",
+        "url": "https://www.amazon.com/dp/B0D1DZNL3H?tag=tiereduptech-20",
+        "price": 249.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100996,
+    "c": "Monitor",
+    "n": "acer Nitro 27” 4K UHD 3840 x 2160 Gaming IPS Monitor | AMD FreeSync Premium | Up to 160Hz Refresh Rate with DFR to FHD 320Hz| Up to 0.5ms | 1 x Display Port 1.4 & 2 x HDMI 2.1 Ports | VG270K V4bmiipx",
+    "b": "AMD",
+    "pr": 279.99,
+    "msrp": 279.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/719o0dEUZmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F765XFX8",
+        "url": "https://www.amazon.com/dp/B0F765XFX8?tag=tiereduptech-20",
+        "price": 279.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100997,
+    "c": "Monitor",
+    "n": "SAMSUNG 27-inch Odyssey QD-OLED G8 (G81SF), 4K, 240Hz, Gaming Monitor, 0.03ms Response Time, DisplayHDR True Black 400, AMD FreeSync™ Premium Pro, Ergonomic Stand, LS27FG810SNXZA, 2025",
+    "b": "Samsung",
+    "pr": 1229.99,
+    "msrp": 1229.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/8186TU464RL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DVM3BJHK",
+        "url": "https://www.amazon.com/dp/B0DVM3BJHK?tag=tiereduptech-20",
+        "price": 1229.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100998,
+    "c": "Monitor",
+    "n": "Alienware 34 Curved Gaming Monitor – AW3425DWM - 34-inch WQHD 180Hz 1ms Display, 1500R, AMD FreeSync Premium, VESA AdaptiveSync.",
+    "b": "AMD",
+    "pr": 299.99,
+    "msrp": 299.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61qGYTlW3FL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DZL719V1",
+        "url": "https://www.amazon.com/dp/B0DZL719V1?tag=tiereduptech-20",
+        "price": 299.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 100999,
+    "c": "Monitor",
+    "n": "SAMSUNG 32\" UJ59 Series 4K UHD (3840x2160) Computer Monitor,VA Panel, HDMI, Display Port, Eye Saver/Flicker Free Mode, FreeSync, LU32J590UQNXZA, Black",
+    "b": "Samsung",
+    "pr": 301.23,
+    "msrp": 301.23,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/81tizzS173L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07CS3JGPC",
+        "url": "https://www.amazon.com/dp/B07CS3JGPC?tag=tiereduptech-20",
+        "price": 301.23,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101000,
+    "c": "Monitor",
+    "n": "Dell 32 Plus 4K Monitor - S3225QS - 31.5-inch 4K (3840 x 2160) up to 120Hz 16:9 Display, VA Panel, AMD FreeSync Premium, 99% sRGB, 95% DCI-P3, 1500:1 Contrast Ratio, Comfortview - Ash White",
+    "b": "AMD",
+    "pr": 329.99,
+    "msrp": 329.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71pxbqJ34CL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F1GD9YFN",
+        "url": "https://www.amazon.com/dp/B0F1GD9YFN?tag=tiereduptech-20",
+        "price": 329.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101001,
+    "c": "Monitor",
+    "n": "ASUS 31.5” 4K HDR Eye Care Monitor (VP327Q) – UHD (3840 x 2160), 99% sRGB, HDR-10, Adaptive-Sync, Speakers, DisplayPort, HDMI, Flicker Free, Blue Light Filter, VESA Mountable,Black",
+    "b": "ASUS",
+    "pr": 199,
+    "msrp": 199,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/81p0NWfCISL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C7G6F8BY",
+        "url": "https://www.amazon.com/dp/B0C7G6F8BY?tag=tiereduptech-20",
+        "price": 199,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101002,
+    "c": "Monitor",
+    "n": "Samsung 32-Inch Flat Computer Monitor, 75Hz, Borderless Display, AMD FreeSync, Game Mode, Advanced Eye Care, HDMI and DisplayPort, LS32B304NWNXGO, 2024",
+    "b": "Samsung",
+    "pr": 198.1,
+    "msrp": 198.1,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81rcnsbOb4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D6CKL4HV",
+        "url": "https://www.amazon.com/dp/B0D6CKL4HV?tag=tiereduptech-20",
+        "price": 198.1,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101003,
+    "c": "Monitor",
+    "n": "32 Inch 4K UHD Monitor (3840x2160), IPS,60Hz Refresh Rate, 120% sRGB, AMD FreeSync, 178° Viewing Angle, HDMI/DisplayPort, VESA 100x100mm Mount Compatible, Tilt Adjustable - Black",
+    "b": "AMD",
+    "pr": 189.99,
+    "msrp": 189.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71E35XC8nLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FB7QRCS8",
+        "url": "https://www.amazon.com/dp/B0FB7QRCS8?tag=tiereduptech-20",
+        "price": 189.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101004,
+    "c": "Monitor",
+    "n": "ASUS ROG Strix 32” 4K HDR Gaming Monitor (XG32UCG) – 3840x2160, Dual Mode (4K 160Hz/FHD 320Hz), 0.3ms, Fast IPS, Extreme Low Motion Blur Sync, USB-C, G-SYNC Compatible, Tripod Socket, 3 yr Warranty",
+    "b": "ASUS",
+    "pr": 499,
+    "msrp": 499,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/7154Ua36pGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F23BB8TW",
+        "url": "https://www.amazon.com/dp/B0F23BB8TW?tag=tiereduptech-20",
+        "price": 499,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101005,
+    "c": "Monitor",
+    "n": "Samsung 32\" ViewFinity UJ59 4K UHD AMD FreeSync Monitor, 4ms, 60Hz (Renewed)",
+    "b": "Samsung",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/51VzkH6OfCL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DJQ43TXD",
+        "url": "https://www.amazon.com/dp/B0DJQ43TXD?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101006,
+    "c": "Monitor",
+    "n": "Samsung 32” Smart Monitor M7 (M70F) 4K UHD Display, Samsung Vision AI, Smart TV Apps, Gaming Hub, USB-C, HDMI and USB-A, Black, LS32FM702UNXZA, 2025",
+    "b": "Samsung",
+    "pr": 399.63,
+    "msrp": 399.63,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71jeLFLYgwL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F5WLDGLN",
+        "url": "https://www.amazon.com/dp/B0F5WLDGLN?tag=tiereduptech-20",
+        "price": 399.63,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101007,
+    "c": "Monitor",
+    "n": "SAMSUNG 32\" ViewFinity S8 (S80D) Series 4K UHD High Resolution Computer Monitor, HDR10, Multiple Ports w/ HDMI, DisplayPort, USB-A, Height Adjustable Stand, LS32D806EANXGO, 2024, 3Yr Warranty",
+    "b": "Samsung",
+    "pr": 429.02,
+    "msrp": 429.02,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/7193wAAepPL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D4ZNF5LT",
+        "url": "https://www.amazon.com/dp/B0D4ZNF5LT?tag=tiereduptech-20",
+        "price": 429.02,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101008,
+    "c": "Monitor",
+    "n": "32 inch Gaming Computer Monitor 4K WQHD 3840 x 2160, 60hz,IPS Panel, 3500:1,AMD FreeSync Premium, 99% sRGB,HDMI, Display Port, Eye Saver/Flicker Free Mode, Compatible with Wall mounting 75 x 75MM",
+    "b": "AMD",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71XKEzRNQWL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FNCRTTD7",
+        "url": "https://www.amazon.com/dp/B0FNCRTTD7?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101009,
+    "c": "Monitor",
+    "n": "CRUA 32\" Curved Gaming Monitor, 4k UHD(3840 * 2160P) VA Screen, 1500R, 144Hz/160Hz Computer Moniter, Supports AMD Freesync, 120% sRGB, Built-in Speakers, Wall Mountable Installs(HDMI 2.1/DP 1.4)-Black",
+    "b": "AMD",
+    "pr": 259.98,
+    "msrp": 259.98,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71b56LO3PFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DT11T36K",
+        "url": "https://www.amazon.com/dp/B0DT11T36K?tag=tiereduptech-20",
+        "price": 259.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101010,
+    "c": "Monitor",
+    "n": "msi PRO MP273Q E7 27-inch IPS 2560 x 1440 (QHD) Computer Monitor, 75Hz,Adaptive-Sync, HDMI, DP Port, VESA Mountable, Tilt, Speaker, 1ms, Black",
+    "b": "MSI",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71OrKiPFipL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GV1GDXQL",
+        "url": "https://www.amazon.com/dp/B0GV1GDXQL?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101011,
+    "c": "Monitor",
+    "n": "Samsung 27\" Odyssey G5 (G51F) Gaming Monitor - QHD (1440P), 180Hz, 1ms, AMD FreeSync, HDR10, Height Adjustable Stand, Black Equalizer, Virtual Aim Point, Auto Source Switch+, LS27FG512ENXZA",
+    "b": "Samsung",
+    "pr": 159.99,
+    "msrp": 159.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71HCnFPkVhL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GLV9PML4",
+        "url": "https://www.amazon.com/dp/B0GLV9PML4?tag=tiereduptech-20",
+        "price": 159.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101012,
+    "c": "Monitor",
+    "n": "Dell 27 Plus QHD Monitor - S2725DSM - 27-inch QHD (2560x1440) 144Hz 1ms Display, 2 x 3W Speakers, HDMI/DisplayPort 1.4 Connectivity, Height/Tilt/Pivot/Swivel Adjustability, AMD FreeSync - Ash White",
+    "b": "AMD",
+    "pr": 189.99,
+    "msrp": 189.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71E--5UD9vL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GD1LMWH3",
+        "url": "https://www.amazon.com/dp/B0GD1LMWH3?tag=tiereduptech-20",
+        "price": 189.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.799Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101013,
+    "c": "Monitor",
+    "n": "msi PRO MP273Q E14 27-inch IPS 2560 x 1440 (QHD) Computer Monitor, 144Hz,Adaptive-Synch, HDMI, DP Port, VESA Mountable, Tilt, Speaker, 1ms, Black",
+    "b": "MSI",
+    "pr": 139.99,
+    "msrp": 139.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/81vpG54fGlL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GF49PV1T",
+        "url": "https://www.amazon.com/dp/B0GF49PV1T?tag=tiereduptech-20",
+        "price": 139.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.800Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101014,
+    "c": "Monitor",
+    "n": "acer Nitro 27 Inch QHD 2560 x 1440 IPS Gaming Monitor | AMD FreeSync | Up to 180Hz Refresh | Up to 0.5ms | DCI-P3 95% | HDR 10 Support | One Display Port 1.2 & Two HDMI 2.0 | KG271U N3bmiipx",
+    "b": "AMD",
+    "pr": 159.99,
+    "msrp": 159.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71BulG5wsRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D8LH2VSP",
+        "url": "https://www.amazon.com/dp/B0D8LH2VSP?tag=tiereduptech-20",
+        "price": 159.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.800Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101015,
+    "c": "Monitor",
+    "n": "SAMSUNG 27” Odyssey G5 G53F QHD Resolution Gaming Monitor, HDR10, 200Hz Refresh Rate, IPS Panel, AMD FreeSync™ Premium, Black Equalizer, Auto Source Switch, LS27FG532ENXZA",
+    "b": "Samsung",
+    "pr": 179.99,
+    "msrp": 179.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81HRZfnHhYL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FNPSLCFL",
+        "url": "https://www.amazon.com/dp/B0FNPSLCFL?tag=tiereduptech-20",
+        "price": 179.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.800Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101016,
+    "c": "Monitor",
+    "n": "LG 27G640A-B 27-inch Ultragear QHD (2560 x 1440) IPS Gaming Monitor, 300Hz, 1ms, NVIDIA G-Sync, AMD FreeSync Premium, VESA DisplayHDR 400, HDMI 2.1, USB Type-C, Tilt/Height/Swivel/Pivot Stand, Black",
+    "b": "AMD",
+    "pr": 229,
+    "msrp": 229,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/81ryaV511VL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FLLKBNY7",
+        "url": "https://www.amazon.com/dp/B0FLLKBNY7?tag=tiereduptech-20",
+        "price": 229,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.800Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101017,
+    "c": "Monitor",
+    "n": "LG 27GS60QC-B Ultragear 27-inch Curved Gaming Monitor QHD (2560x1440) 180Hz 1ms 1000R AMD FreeSync HDR10 HDMIx2 DisplayPort Borderless Design Black Stabilizer DAS Crosshair FPS Counter - Black",
+    "b": "AMD",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81twLlLSkUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D2FZS3JM",
+        "url": "https://www.amazon.com/dp/B0D2FZS3JM?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.800Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101018,
+    "c": "Monitor",
+    "n": "ASUS TUF Gaming 27” 1440P HDR Monitor (VG27AQ3A) – QHD (2560 x 1440), 180Hz, 1ms, Fast IPS, 130% sRGB, Extreme Low Motion Blur Sync, Speakers, Freesync Premium, G-SYNC Compatible, HDMI, DisplayPort",
+    "b": "ASUS",
+    "pr": 239.97,
+    "msrp": 239.97,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71awxc1RPRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BZR9TMBJ",
+        "url": "https://www.amazon.com/dp/B0BZR9TMBJ?tag=tiereduptech-20",
+        "price": 239.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.800Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101019,
+    "c": "Monitor",
+    "n": "msi PRO MP275Q 27 Inch WQHD Office Monitor - 2560 x 1440 IPS Panel, 100 Hz, Eye-Friendly Screen, Built-in Speakers, Tilt-Adjustable - HDMI 2.0b, DP (1.2a)",
+    "b": "MSI",
+    "pr": 141.95,
+    "msrp": 141.95,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/81nOaCNQaoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CY79PH3C",
+        "url": "https://www.amazon.com/dp/B0CY79PH3C?tag=tiereduptech-20",
+        "price": 141.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.800Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101020,
+    "c": "Monitor",
+    "n": "Acer Nitro 27\" WQHD 2560 x 1440 PC Gaming IPS Monitor | AMD FreeSync Premium Up to 180Hz Refresh 0.5ms DCI-P3 95% 1 Display Port 1.2 & 2 HDMI 2.0 XV271U M3bmiiprx,Black",
+    "b": "AMD",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81WcXnYjaFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4Z8RFY9",
+        "url": "https://www.amazon.com/dp/B0C4Z8RFY9?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.800Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101021,
+    "c": "Monitor",
+    "n": "msi PRO MP273QW E14 27-inch IPS 2560 x 1440 (QHD) Computer Monitor, 144Hz,Adaptive-Synch, HDMI, DP Port, VESA Mountable, Tilt, Speaker, 1ms, White",
+    "b": "MSI",
+    "pr": 149.99,
+    "msrp": 149.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/81-y-SzaXCL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GF4672H9",
+        "url": "https://www.amazon.com/dp/B0GF4672H9?tag=tiereduptech-20",
+        "price": 149.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.800Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101022,
+    "c": "Monitor",
+    "n": "Samsung 32-Inch M5 (M50F) Series FHD Smart Monitor with Streaming TV, Speakers, HDR10, Gaming Hub, Multiple Ports, Workout Tracker, Vision Accessibility Tools, Black, LS32FM502ENXZA",
+    "b": "Samsung",
+    "pr": 219.99,
+    "msrp": 219.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/71x56Bs9rqL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FKK8W46F",
+        "url": "https://www.amazon.com/dp/B0FKK8W46F?tag=tiereduptech-20",
+        "price": 219.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.800Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101023,
+    "c": "Monitor",
+    "n": "LG 32G600A-B 32-inch Ultragear QHD (2560 x 1440) Curved Gaming Monitor, 180Hz, 1ms, AMD FreeSync, HDMI, DisplayPort, Tilt/Height/Swivel Adjustable Stand, Black",
+    "b": "AMD",
+    "pr": 229.99,
+    "msrp": 229.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71TaTm0XV0L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FLLKY158",
+        "url": "https://www.amazon.com/dp/B0FLLKY158?tag=tiereduptech-20",
+        "price": 229.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.801Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101024,
+    "c": "Monitor",
+    "n": "LG 32GS60QC-B Ultragear 32-inch Curved Gaming Monitor QHD (2560x1440) 180Hz 1ms 1000R AMD FreeSync HDR10 HDMIx2 DisplayPort Borderless Design Black Stabilizer DAS Crosshair FPS Counter - Black",
+    "b": "AMD",
+    "pr": 214.98,
+    "msrp": 239,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81pumDl4YHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D2FSYS5J",
+        "url": "https://www.amazon.com/dp/B0D2FSYS5J?tag=tiereduptech-20",
+        "price": 214.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.801Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101025,
+    "c": "Monitor",
+    "n": "CRUA 32\" Curved Gaming Monitor, 2K QHD 2560x1440, 144Hz/165Hz VA Display, 1800R Screen, 120% sRGB, AMD FreeSync, Low Blue Light, HDMI& DP, Wall Mountable PC Monitor for Gaming, Streaming & Work- Black",
+    "b": "AMD",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71C6V4PObmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DLGDCN9J",
+        "url": "https://www.amazon.com/dp/B0DLGDCN9J?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.801Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101026,
+    "c": "Monitor",
+    "n": "Samsung 32” Odyssey G5 G50F QHD Resolution Gaming Monitor, 180Hz Refresh Rate, Fast IPS Panel, HDR10, NVIDIA G-Sync Compatible, 1ms Response Time (GtG), AMD FreeSync™, Adjustable Stand, LS32FG502ENXZA",
+    "b": "Samsung",
+    "pr": 311,
+    "msrp": 311,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71n0VWmsfRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G1DZM5QW",
+        "url": "https://www.amazon.com/dp/B0G1DZM5QW?tag=tiereduptech-20",
+        "price": 311,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.801Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101027,
+    "c": "Monitor",
+    "n": "SAMSUNG 32\" Odyssey G55C Series QHD 1000R Curved Gaming Monitor, 1ms(MPRT), HDR10, 165Hz, AMD Radeon FreeSync, Eye Care, Glare Free, Sharp Resolution LS32CG550ENXZA",
+    "b": "Samsung",
+    "pr": 259.99,
+    "msrp": 259.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81cYQ1dO5xL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CRGJC5ZD",
+        "url": "https://www.amazon.com/dp/B0CRGJC5ZD?tag=tiereduptech-20",
+        "price": 259.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.801Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101028,
+    "c": "Monitor",
+    "n": "Samsung 32\" Odyssey G5 QHD (2560 x 1440), 1000R, 165Hz Curved Gaming Monitor, 1ms Response Time, AMD FreeSync LS32CG554ENXZA, DisplayPort, HDMI, (Renewed)",
+    "b": "Samsung",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61OZo8Au3dL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FRJ71FWV",
+        "url": "https://www.amazon.com/dp/B0FRJ71FWV?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.801Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101029,
+    "c": "Monitor",
+    "n": "ASUS TUF 32 Inch Curved Gaming Monitor - QHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI - VG32VQ1B",
+    "b": "ASUS",
+    "pr": 283.37,
+    "msrp": 283.37,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71GCas7Vm0L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B088MKF848",
+        "url": "https://www.amazon.com/dp/B088MKF848?tag=tiereduptech-20",
+        "price": 283.37,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.801Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101030,
+    "c": "Monitor",
+    "n": "ASUS TUF Gaming 31.5” 1440P Curved HDR Gaming Monitor (VG32WQ3B) – QHD (2560 x 1440), 180Hz, 0.5ms, 1500R, Extreme Low Motion Blur, FreeSync, 90% DCI-P3, Shadow Boost, DisplayWidget, 3 yr Warranty",
+    "b": "ASUS",
+    "pr": 249,
+    "msrp": 249,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71HuU+blzuL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DQ9MMZVV",
+        "url": "https://www.amazon.com/dp/B0DQ9MMZVV?tag=tiereduptech-20",
+        "price": 249,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.801Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101031,
+    "c": "Monitor",
+    "n": "Samsung 32-inch S3 (S39GD) FHD 100Hz Curved Monitor, Game Mode, Eye Saver Mode, Multiple Connectivity with HDMI Port, Built-in Speakers, LS32D39DGANXZA, 2025",
+    "b": "Samsung",
+    "pr": 230.01,
+    "msrp": 230.01,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61zxrwY1nWL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FTT4VH34",
+        "url": "https://www.amazon.com/dp/B0FTT4VH34?tag=tiereduptech-20",
+        "price": 230.01,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.801Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101032,
+    "c": "Monitor",
+    "n": "Dell 24 240Hz Gaming Monitor - SE2426HG - 23.8-inch FHD (1920x1080) 240Hz Display, in-Plane Switching (IPS) Technology, AMD FreeSync™ Premium, TÜV 3-Star, 2X HDMI, DisplayPort 1.4, Tilt",
+    "b": "AMD",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81VTp10p0SL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GKFLQ9SW",
+        "url": "https://www.amazon.com/dp/B0GKFLQ9SW?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.801Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101033,
+    "c": "Monitor",
+    "n": "New! Sceptre 24.5-inch Gaming Monitor 240Hz 1ms DisplayPort x2 HDMI x2 100% sRGB AMD FreeSync Premium Build-in Speakers, Machine Black 2026 (E255B-FWD240 Series)",
+    "b": "AMD",
+    "pr": 107.97,
+    "msrp": 107.97,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71SDHaeWCkL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FDDM968S",
+        "url": "https://www.amazon.com/dp/B0FDDM968S?tag=tiereduptech-20",
+        "price": 107.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.801Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101034,
+    "c": "Monitor",
+    "n": "ASUS TUF Gaming Series 5 23.8” 1080P Monitor (VG249QML5A) - Fast-IPS, 240Hz, 0.3ms, G-SYNC Compatible, FreeSync Premium, 99% sRGB, Height Adjustable, DisplayWidget, Gaming AI, 3 yr Warranty",
+    "b": "ASUS",
+    "pr": 149,
+    "msrp": 149,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71iLvfDCK5L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FP1FDQ2Y",
+        "url": "https://www.amazon.com/dp/B0FP1FDQ2Y?tag=tiereduptech-20",
+        "price": 149,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.801Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101035,
+    "c": "Monitor",
+    "n": "24.5“ 240Hz Gaming Monitor, Curved FHD 1920 x 1080P, Support 120% sRGB, AMD FreeSync, 1MS MPRT,Low Motion Blur, Wall Mount Installs Compatible, for Office and Games(HDMI 2.0&DP 1.4)–Black",
+    "b": "AMD",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71CovpyKe4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FLNF14MQ",
+        "url": "https://www.amazon.com/dp/B0FLNF14MQ?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101036,
+    "c": "Monitor",
+    "n": "Acer Nitro 27\" WQHD 2560 x 1440 PC Gaming IPS AMD FreeSync Premium | Up to 240Hz Refresh | Up to 0.5ms | DisplayHDR 400 | sRGB 99% | 1 x Display Port 1.4 & 2 x HDMI 2.1 | XV272U W2bmiiprx",
+    "b": "AMD",
+    "pr": 179.99,
+    "msrp": 179.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/8184ONH1OxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C1T35BCF",
+        "url": "https://www.amazon.com/dp/B0C1T35BCF?tag=tiereduptech-20",
+        "price": 179.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101037,
+    "c": "Monitor",
+    "n": "Dell 27 240Hz Gaming Monitor - SE2726HG - 27-inch FHD (1920x1080) 240Hz Display, in-Plane Switching (IPS) Technology, AMD FreeSync Premium, TÜV 3-Star, 2X HDMI, DisplayPort 1.4, Tilt",
+    "b": "AMD",
+    "pr": 149.99,
+    "msrp": 149.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81fbPJo0puL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GGRKQ494",
+        "url": "https://www.amazon.com/dp/B0GGRKQ494?tag=tiereduptech-20",
+        "price": 149.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101038,
+    "c": "Monitor",
+    "n": "CRUA 24” 240Hz Gaming Monitor, Curved FHD 1920 x 1080P, Built-in Speakers, Support 120% sRGB, AMD FreeSync, Low Motion Blur, Wall Mount Installs Compatible, for Office and Games(HDMI 2.0&DP 1.4)–Black",
+    "b": "AMD",
+    "pr": 109.99,
+    "msrp": 109.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81LpVUO6KeL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FPW9V7VK",
+        "url": "https://www.amazon.com/dp/B0FPW9V7VK?tag=tiereduptech-20",
+        "price": 109.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101039,
+    "c": "Monitor",
+    "n": "SAMSUNG 25\" Odyssey G4 Series FHD Gaming Monitor, IPS, 240Hz, 1ms, G-Sync Compatible, AMD FreeSync Premium, HDR10, Ultrawide Game View, DisplayPort, HDMI, Fully Adjustable Stand, LS25BG402ENXGO",
+    "b": "Samsung",
+    "pr": 189.99,
+    "msrp": 189.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81rOxOpLG1L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B45998BM",
+        "url": "https://www.amazon.com/dp/B0B45998BM?tag=tiereduptech-20",
+        "price": 189.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101040,
+    "c": "Monitor",
+    "n": "LG 27GR83Q-B 27-inch Ultragear QHD (2560x1440) IPS Gaming Monitor, 240Hz, 1ms, DisplayHDR 400, G-Sync AMD FreeSync Premium, HDMI 2.1 DisplayPort, 4-Pole HP Out DTS GP:X, Tilt/Height/Pivot Stand, Black",
+    "b": "AMD",
+    "pr": 280.22,
+    "msrp": 280.22,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81E61XAb1RL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C63HDHPR",
+        "url": "https://www.amazon.com/dp/B0C63HDHPR?tag=tiereduptech-20",
+        "price": 280.22,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101041,
+    "c": "Monitor",
+    "n": "ASUS TUF Gaming Series 5 24.5” 1080P Gaming Monitor (VG259QMRL5A) - Full HD, Fast-IPS Panel, 310Hz, 0.3ms, DisplayHDR400, 99% sRGB, Height Adjustable, DisplayWidget, Gaming AI, 3 yr Warranty",
+    "b": "ASUS",
+    "pr": 199.99,
+    "msrp": 199.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/711FT-WJ7rL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F73CV58N",
+        "url": "https://www.amazon.com/dp/B0F73CV58N?tag=tiereduptech-20",
+        "price": 199.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101042,
+    "c": "Monitor",
+    "n": "Alienware 25 Gaming Monitor AW2523HF 24.5\" IPS LED Full HD (1920 × 1080) 360Hz Display - AMD FreeSync - VESA - Monitor (USB, HDMI) Height/Tilt/Swivel/Pivot Adjustability - Dark side of the Moon",
+    "b": "AMD",
+    "pr": 333,
+    "msrp": 333,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71B45sRO4uL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BDPCQ7PG",
+        "url": "https://www.amazon.com/dp/B0BDPCQ7PG?tag=tiereduptech-20",
+        "price": 333,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101043,
+    "c": "Monitor",
+    "n": "Alienware AW2725DF OLED Gaming Monitor - 26.7-inch Quantom-Dot WQHD (2560x1440) 360Hz 0.03Ms Display, AMD FreeSync Premium Pro, HDMI/DP/USB 3.2 Gen1, Height/Tilt/Swivel/Pivot Adjustability - Black",
+    "b": "AMD",
+    "pr": 624.99,
+    "msrp": 624.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71Ffs81KPQL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CZSGWLD5",
+        "url": "https://www.amazon.com/dp/B0CZSGWLD5?tag=tiereduptech-20",
+        "price": 624.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101044,
+    "c": "Monitor",
+    "n": "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDP) - WOLED, Dual Mode (4K 240Hz, FHD 480Hz), 0.03ms, G-SYNC Compatible, Custom Heatsink, AI Gaming, 99% DCI-P3,True 10-bit, USB-C 90W, 3yr Warranty",
+    "b": "ASUS",
+    "pr": 949.99,
+    "msrp": 949.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/91jpo5oarTL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D7NNK43H",
+        "url": "https://www.amazon.com/dp/B0D7NNK43H?tag=tiereduptech-20",
+        "price": 949.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101045,
+    "c": "Monitor",
+    "n": "ASUS ROG Strix 27” 1440P USB-C HDR Gaming Monitor (XG27ACMS) – QHD (2560 x 1440), 320Hz, 0.3ms, Fast IPS, Extreme Low Motion Blur Sync, G-SYNC Compatible, DisplayWidget, Tripod Socket, 3 yr Warranty",
+    "b": "ASUS",
+    "pr": 349,
+    "msrp": 349,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81R8A3G4p2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F2349MJT",
+        "url": "https://www.amazon.com/dp/B0F2349MJT?tag=tiereduptech-20",
+        "price": 349,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101046,
+    "c": "Monitor",
+    "n": "ASUS ROG Strix 26.5” 1440P QD-OLED Gaming Monitor (XG27ACDNG) -QHD (2560x1440), 360Hz, 0.03ms, Custom Heatsink, OLED Care+, G-SYNC Compatible, 99% DCI-P3, DisplayWidget, AI Gaming, 3yr Warranty",
+    "b": "ASUS",
+    "pr": 719.99,
+    "msrp": 719.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/912YTNXMZ1L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D7NSZRJW",
+        "url": "https://www.amazon.com/dp/B0D7NSZRJW?tag=tiereduptech-20",
+        "price": 719.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101047,
+    "c": "Monitor",
+    "n": "ASUS ROG Strix 27” 1080P USB-C Gaming Monitor (XG279CNS) - Full HD, IPS, 380Hz, 0.3ms, Extreme Low Motion Blur Sync, DisplayHDR™ 400, Tripod Socket, DisplayWidget Center, 3 yr Warranty",
+    "b": "ASUS",
+    "pr": 299,
+    "msrp": 299,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71fU4w289lL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DM6PZFHX",
+        "url": "https://www.amazon.com/dp/B0DM6PZFHX?tag=tiereduptech-20",
+        "price": 299,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101048,
+    "c": "Monitor",
+    "n": "ASUS TUF Gaming Series 5 24.5” 1080P Monitor (VG259QMR5A) - Fast-IPS, 310Hz, 0.3ms, G-SYNC Compatible, FreeSync Premium, Extreme Low Motion Blur Sync, 99% sRGB, DisplayWidget, Gaming AI, 3 yr warranty",
+    "b": "ASUS",
+    "pr": 159,
+    "msrp": 159,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/712YWC65LDL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F72R4KLC",
+        "url": "https://www.amazon.com/dp/B0F72R4KLC?tag=tiereduptech-20",
+        "price": 159,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101049,
+    "c": "Monitor",
+    "n": "Alienware - AW2724HF 27\" IPS FHD Gaming Monitor - 360Hz - AMD Free-Sync Premium - VESA - HDMI, DisplayPort",
+    "b": "AMD",
+    "pr": 275,
+    "msrp": 275,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81kRkBeTjSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C95RWXDL",
+        "url": "https://www.amazon.com/dp/B0C95RWXDL?tag=tiereduptech-20",
+        "price": 275,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101050,
+    "c": "Monitor",
+    "n": "INNOCN 27\" Gaming Monitor 2K QHD 2560 x 1440P 240Hz 320Hz 1ms IPS PC Computer Display, HDMI 2.1, DP 1.4, HDR 400, Eyes Care, Height/Pivot Adjustable, VESA Mountable, 27G2T",
+    "b": "MSI",
+    "pr": 224.99,
+    "msrp": 224.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71KPA2JEU3L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FPFTPPYN",
+        "url": "https://www.amazon.com/dp/B0FPFTPPYN?tag=tiereduptech-20",
+        "price": 224.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.802Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101051,
+    "c": "Monitor",
+    "n": "CRUA 27 Inch Gaming Monitor 360HZ, 2K QHD 2560x1440 IPS Panel White Computer Monitors with Built in Speakers, Support AMD FreeSync, 120% sRGB, Blue Light Filter, DP1.4 & HDMI2.1, Wall Mountable",
+    "b": "AMD",
+    "pr": 259.99,
+    "msrp": 259.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/81R26SWsftL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FPFKCSYW",
+        "url": "https://www.amazon.com/dp/B0FPFKCSYW?tag=tiereduptech-20",
+        "price": 259.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101052,
+    "c": "Monitor",
+    "n": "ASUS TUF Gaming 27” 1440P Monitor (VG27AQM5A) - QHD (2560x1440), 300Hz, Fast IPS, Extreme Low Motion Blur Sync, 0.3ms, Speaker, 95% DCI-P3, Shadow Boost, DisplayWidget Center, 3 yr Warranty",
+    "b": "ASUS",
+    "pr": 283.24,
+    "msrp": 283.24,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71-woCs5tFL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F233D6W1",
+        "url": "https://www.amazon.com/dp/B0F233D6W1?tag=tiereduptech-20",
+        "price": 283.24,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101053,
+    "c": "Monitor",
+    "n": "LG 27GX704A-B 27-inch Ultragear QHD (2650x1440) OLED Gaming Monitor 240Hz, 0.03ms, NVIDIA G-Sync Compatible, AMD FreeSync Premium Pro, VESA Display HDR TrueBlack400, HDMI 2.1, DisplayPort, Black",
+    "b": "AMD",
+    "pr": 477.99,
+    "msrp": 477.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/815xdTSilxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FNQ4B2Z2",
+        "url": "https://www.amazon.com/dp/B0FNQ4B2Z2?tag=tiereduptech-20",
+        "price": 477.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101054,
+    "c": "Monitor",
+    "n": "Samsung 27\" Odyssey OLED G6 (G61SH) Gaming Monitor - QD-OLED, QHD (1440P), 240Hz, 0.03ms, Glare-Free, Pantone Validated, HDR10, Height-adjustable stand, OLED Safeguard, 3 Year Warranty, LS27HG612SNXZA",
+    "b": "Samsung",
+    "pr": 479.99,
+    "msrp": 479.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81reQfGuQjL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GDSC8K2H",
+        "url": "https://www.amazon.com/dp/B0GDSC8K2H?tag=tiereduptech-20",
+        "price": 479.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101055,
+    "c": "Monitor",
+    "n": "Samsung 27” Odyssey OLED G5 (G50SF) QHD & QD-OLED Gaming Monitor, 180Hz Refresh Rate, 0.03ms (GtG) Response Time, NVIDIA G-Sync Compatible, AMD FreeSync™, LS27FG500SNXZA",
+    "b": "Samsung",
+    "pr": 399.99,
+    "msrp": 399.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/818+AiwCClL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FNQDNGXY",
+        "url": "https://www.amazon.com/dp/B0FNQDNGXY?tag=tiereduptech-20",
+        "price": 399.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101056,
+    "c": "Monitor",
+    "n": "Acer Predator Gaming Monitor | 26.5\" WQHD 2560x1440 QD-OLED | AMD FreeSync Premium | 240Hz | 0.03ms | Tilt, Height Adjustment, Pivot & Swivel | DCI-P3 99% | 2 x DP 1.4 & 2 x HDMI 2.1 | X27U W1bmiipprx",
+    "b": "AMD",
+    "pr": 369.99,
+    "msrp": 369.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81Xon1YZwJL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G5Z5N274",
+        "url": "https://www.amazon.com/dp/B0G5Z5N274?tag=tiereduptech-20",
+        "price": 369.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101057,
+    "c": "Monitor",
+    "n": "LG 39GX90SA-W 39-inch Ultragear WQHD (3440 x 1440) OLED Curved Gaming Monitor 240Hz, 1ms, NVIDIA G-Sync Compatible, AMD FreeSync Premium, VESA DisplayHDR True Black 400, webOS, USB Type-C, White",
+    "b": "AMD",
+    "pr": 749.99,
+    "msrp": 749.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/81MhreWWYtL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F15C7JL2",
+        "url": "https://www.amazon.com/dp/B0F15C7JL2?tag=tiereduptech-20",
+        "price": 749.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101058,
+    "c": "Monitor",
+    "n": "Alienware 34 240Hz QD-OLED Curved Gaming Monitor - AW3425DW - 34.2-inch WQHD (3440 x 1440) 0.03ms Display, 1800R Curve, AMD FreeSync Premium Pro, VESA AdaptiveSync, DisplayHDR TrueBlack 400",
+    "b": "AMD",
+    "pr": 799.99,
+    "msrp": 799.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61GmLXrqJ-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F6724X5N",
+        "url": "https://www.amazon.com/dp/B0F6724X5N?tag=tiereduptech-20",
+        "price": 799.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101059,
+    "c": "Monitor",
+    "n": "msi MAG 274QP QD-OLED X24 27-Inch WQHD Gaming Monitor, 2560 x 1440 Quantum Dot OLED Panel, 240Hz, 0.03ms, Adaptive-Sync, HDMI2.1, DP 1.4a, Tilt/Height Adjustable, Black",
+    "b": "MSI",
+    "pr": 399.99,
+    "msrp": 399.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/819A4zPQ69L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G4P697M8",
+        "url": "https://www.amazon.com/dp/B0G4P697M8?tag=tiereduptech-20",
+        "price": 399.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101060,
+    "c": "Monitor",
+    "n": "msi MAG 341CQP QD-OLED, 34 Curved OLED Gaming Monitor, 3440 x 1440 (UWQHD), 0.03ms Response time, 175Hz, Adaptive Sync, True Black HDR 400, HDMI, DP Port, USB Type C, Tilt, Height, Black",
+    "b": "MSI",
+    "pr": 629.99,
+    "msrp": 629.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81LzGtCtTgL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CTRXPJMC",
+        "url": "https://www.amazon.com/dp/B0CTRXPJMC?tag=tiereduptech-20",
+        "price": 629.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101061,
+    "c": "Monitor",
+    "n": "ASUS ROG Strix 27” 1440P OLED Gaming Monitor (XG27AQDMG) - QHD, Glossy OLED, 240Hz, 0.03ms, Custom Heatsink, Anti-flicker,Uniform Brightness, G-SYNC Compatible, 99% DCI-P3, DisplayWidget, 3yr warranty",
+    "b": "ASUS",
+    "pr": 619.99,
+    "msrp": 619.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/91x1-f09emL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CZWM44QP",
+        "url": "https://www.amazon.com/dp/B0CZWM44QP?tag=tiereduptech-20",
+        "price": 619.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101062,
+    "c": "Monitor",
+    "n": "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, Graphene Film, 99% DCI-P3, True 10-bit, 90W USB-C",
+    "b": "ASUS",
+    "pr": 999,
+    "msrp": 999,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/91t16+g29KL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CV26XVMD",
+        "url": "https://www.amazon.com/dp/B0CV26XVMD?tag=tiereduptech-20",
+        "price": 999,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101063,
+    "c": "Monitor",
+    "n": "ASUS ROG Strix 27” OLED Gaming Monitor (XG27AQDMGR) - 27-inch (26.5-inch viewable) 1440p TrueBlack Glossy, 240 Hz, Neo Proximity Sensor, OLED Care Pro, ELMB, DisplayWidget Center",
+    "b": "ASUS",
+    "pr": 549,
+    "msrp": 549,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/91tVGdrxqnL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FWHPY1GJ",
+        "url": "https://www.amazon.com/dp/B0FWHPY1GJ?tag=tiereduptech-20",
+        "price": 549,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101064,
+    "c": "Monitor",
+    "n": "msi MAG 271QPX QD-OLED, 27 OLED Gaming Monitor, 2560 x 1440 (QHD), 0.03ms Response time, 360Hz, True Black HDR 400, HDMI, DP Port, USB Type C, Tilt, Height, Black",
+    "b": "MSI",
+    "pr": 589.99,
+    "msrp": 589.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81qbL2+MSeL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CWPXVQJN",
+        "url": "https://www.amazon.com/dp/B0CWPXVQJN?tag=tiereduptech-20",
+        "price": 589.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101065,
+    "c": "Monitor",
+    "n": "msi MPG 321URX QD-OLED, 32\" 4K UHD Quantum Dot OLED Gaming Monitor, 3840 x 2160, 0.03ms, 240Hz, True Black HDR 400, 90W USB Type C, HDMI, DP Port",
+    "b": "MSI",
+    "pr": 869,
+    "msrp": 869,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81t1vlRQ68L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CTSC3VS4",
+        "url": "https://www.amazon.com/dp/B0CTSC3VS4?tag=tiereduptech-20",
+        "price": 869,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101066,
+    "c": "Monitor",
+    "n": "SAMSUNG 34\" ViewFinity S50GC Series Ultra-WQHD Monitor, 100Hz, 5ms, HDR10, AMD FreeSync, Eye Care, Borderless Design, PIP, PBP, LS34C502GANXZA, 2023, Black",
+    "b": "Samsung",
+    "pr": 279.99,
+    "msrp": 279.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71UaaLrlu9L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C1KPXPM9",
+        "url": "https://www.amazon.com/dp/B0C1KPXPM9?tag=tiereduptech-20",
+        "price": 279.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.803Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101067,
+    "c": "Monitor",
+    "n": "Dell 34 Plus USB-C Curved Monitor - S3425DW - 34-inch (3440 x 1440) up to 120 Hz 21:9 Display, VA Panel, AMD FreeSync Premium, 99% sRGB, 95% DCI-P3, Integrated Speakers, 3000:1 Contrast Ratio",
+    "b": "AMD",
+    "pr": 419.99,
+    "msrp": 419.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71f2tFqlfIL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F1H325FN",
+        "url": "https://www.amazon.com/dp/B0F1H325FN?tag=tiereduptech-20",
+        "price": 419.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.804Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101068,
+    "c": "Monitor",
+    "n": "Samsung 34\" ViewFinity S50GC Series Ultrawide QHD Monitor, 100Hz, 5ms, HDR10, AMD FreeSync, Ultrawide Screen, Eye Care, Thin Bezels, PIP, PBP, LS34C50DGANXZA, 2023, Black",
+    "b": "Samsung",
+    "pr": 299,
+    "msrp": 299,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/716iUixHprL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C6LSD69F",
+        "url": "https://www.amazon.com/dp/B0C6LSD69F?tag=tiereduptech-20",
+        "price": 299,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.804Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101069,
+    "c": "Monitor",
+    "n": "ASUS TUF Gaming 34” Ultra-Wide Curved Monitor (VG34VQ3B) – 21:9 QHD (3440x1440), 180Hz, 1ms, Extreme Low Motion Blur Sync, FreeSync Premium, Speaker, 90% DCI-P3, DisplayWidget Center, 3 yr Warranty",
+    "b": "ASUS",
+    "pr": 269,
+    "msrp": 269,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71OpFViWhgL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CXS8J4Y5",
+        "url": "https://www.amazon.com/dp/B0CXS8J4Y5?tag=tiereduptech-20",
+        "price": 269,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.804Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101070,
+    "c": "Monitor",
+    "n": "Samsung 34' Odyssey G5 Ultra-Wide Gaming Monitor with 1000R Curved Screen, 165Hz, 1ms, FreeSync Premium, Large Display, Eye Comfort, Multiple Ports, WQHD, LC34G55TWWNXZA, Black",
+    "b": "Samsung",
+    "pr": 336.28,
+    "msrp": 336.28,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/81Pm4yGtiYL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08MVBYWGQ",
+        "url": "https://www.amazon.com/dp/B08MVBYWGQ?tag=tiereduptech-20",
+        "price": 336.28,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.804Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101071,
+    "c": "Monitor",
+    "n": "msi PRO MP243L E14 24-inch IPS 1920 x 1080 (FHD) Gaming Office Monitor, 144Hz, Adaptive-Synch, HDR Ready, HDMI, VGA Port,VESA Mountable, Tilt, 4-Side Slim Bezel,1ms, Black",
+    "b": "MSI",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/81f0ui4tPrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FG5XLWNV",
+        "url": "https://www.amazon.com/dp/B0FG5XLWNV?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.804Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101072,
+    "c": "Monitor",
+    "n": "ASUS TUF Gaming 24” (23.8” viewable) 1080P Monitor (VG249QE5A) - FHD, 144Hz Overclock to 146Hz, IPS, Extreme Low Motion Blur Sync, 1ms, Speakers, Variable Overdrive, DisplayWidget Center, 3yr Warranty",
+    "b": "ASUS",
+    "pr": 99,
+    "msrp": 99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71PT7y8XWsL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F234D8G9",
+        "url": "https://www.amazon.com/dp/B0F234D8G9?tag=tiereduptech-20",
+        "price": 99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.804Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101073,
+    "c": "Monitor",
+    "n": "LG 24G411A-B 24-inch Ultragear Full HD (1920 x 1080) IPS Gaming Monitor, 144Hz (O/C), 1ms MBR, NVIDIA G-Sync Compatible, AMD FreeSync, HDR10, HDMI, DisplayPort, Slim Stand, Black",
+    "b": "AMD",
+    "pr": 147.2,
+    "msrp": 147.2,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/710ykhVHmNL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FLL354M2",
+        "url": "https://www.amazon.com/dp/B0FLL354M2?tag=tiereduptech-20",
+        "price": 147.2,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.804Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101074,
+    "c": "Monitor",
+    "n": "acer SH243Y P1si 23.8\" IPS Full HD (1920 x 1080) Zero-Frame Gaming Office Monitor | AMD FreeSync Technology | Up to 144Hz Refresh | 1ms (VRB) | Tilt, Height Adjustment & Swivel | HDMI & VGA Ports",
+    "b": "AMD",
+    "pr": 94.99,
+    "msrp": 94.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/7157DW61PdL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G3T4KCTR",
+        "url": "https://www.amazon.com/dp/B0G3T4KCTR?tag=tiereduptech-20",
+        "price": 94.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.804Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101075,
+    "c": "Monitor",
+    "n": "ArcticPro 22 inch 144Hz 100Hz Monitor, Full HD (1920 x 1080p) Computer Monitor, 105% sRGB, 3000:1 Contrast, 3-Sided Frameless, Ultra Slim, VESA, LowBlue Mode, Tilt Adjust, HDMI *1, VGA*1",
+    "b": "Arctic",
+    "pr": 66.99,
+    "msrp": 66.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71updMqo-QL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DDP95J7T",
+        "url": "https://www.amazon.com/dp/B0DDP95J7T?tag=tiereduptech-20",
+        "price": 66.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101076,
+    "c": "Monitor",
+    "n": "Acer Nitro 23.8” Gaming Monitor | Full HD 1920 x 1080 | IPS | ZeroFrame | AMD FreeSync | 144Hz Refresh Rate | 1ms (VRB) | sRGB 99% | 1 x Display Port 1.2 and 1 x HDMI 1.4 | KG241Y P6bip",
+    "b": "AMD",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61vFW-XX6rL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJS4FK7R",
+        "url": "https://www.amazon.com/dp/B0FJS4FK7R?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101077,
+    "c": "Monitor",
+    "n": "msi PRO MP273L E14 27-inch IPS 1920 x 1080 (FHD) Gaming Office Monitor, 144Hz, Adaptive-Synch, HDR Ready, HDMI, VGA Port,VESA Mountable, Tilt, 4-Side Slim Bezel,1ms, Black",
+    "b": "MSI",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.9,
+    "img": "https://m.media-amazon.com/images/I/818iJJW8pLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FKVGTDWX",
+        "url": "https://www.amazon.com/dp/B0FKVGTDWX?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101078,
+    "c": "Monitor",
+    "n": "Acer Nitro KG241Y Sbiip 23.8” Full HD (1920 x 1080) VA Gaming Monitor | AMD FreeSync Premium Technology | 165Hz Refresh Rate | 1ms (VRB) | ZeroFrame Design | 1 x Display Port 1.2 & 2 x HDMI 2.0,Black",
+    "b": "AMD",
+    "pr": 109.99,
+    "msrp": 109.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71yo3bmyBnL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B6DFG1FQ",
+        "url": "https://www.amazon.com/dp/B0B6DFG1FQ?tag=tiereduptech-20",
+        "price": 109.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101079,
+    "c": "Monitor",
+    "n": "ZZA 27-Inch Curved Computer Monitor,200Hz|180Hz|144Hz Gaming Monitor,FHD 1080P 1800R VA Screen, Monitor 27 inch 100% sRGB, AMD FreeSync,Eye Care,Ultra-Thin,Bezels HDMI & DP Port",
+    "b": "AMD",
+    "pr": 104.99,
+    "msrp": 104.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/81au-JHXPfL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F1FJSJ9S",
+        "url": "https://www.amazon.com/dp/B0F1FJSJ9S?tag=tiereduptech-20",
+        "price": 104.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101080,
+    "c": "Monitor",
+    "n": "LG 34GX900A-B 34-Inch Ultragear WQHD (3440 x 1440) OLED Curved Gaming Monitor, 240Hz, 0.03ms, NVIDIA G-Sync, VESA DisplayHDR True Black 400, HDMI 2.1, DisplayPort, USB Type-C PD 65W, Black",
+    "b": "NVIDIA",
+    "pr": 685.18,
+    "msrp": 685.18,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/81gNRhElZBL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FDC2JBYG",
+        "url": "https://www.amazon.com/dp/B0FDC2JBYG?tag=tiereduptech-20",
+        "price": 685.18,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101081,
+    "c": "Monitor",
+    "n": "LG 27GS75Q-B 27-inch Ultragear QHD (2560x1440) Gaming Monitor, 180Hz (O/C 200Hz), 1ms, IPS, NVIDIA G-SYNC Compatible, AMD FreeSync, HDR10, Tilt/Height/Pivot Stand, HDMI, DisplayPort, Black",
+    "b": "AMD",
+    "pr": 187.17,
+    "msrp": 187.17,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81M31oHYoYL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DFZZHK6X",
+        "url": "https://www.amazon.com/dp/B0DFZZHK6X?tag=tiereduptech-20",
+        "price": 187.17,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101082,
+    "c": "Monitor",
+    "n": "LG 32GX870A-B 32-inch Ultragear 4K UHD (3840 x 2160) OLED Gaming Monitor, Dual-Mode, 240Hz, 0.03ms, NVIDIA, AMD FreeSync Premium Pro, VESA DisplayHDR True Black 400, USB Type-C, DP2.1",
+    "b": "AMD",
+    "pr": 979.95,
+    "msrp": 979.95,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/81Uz8ji8D0L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F14PFFPS",
+        "url": "https://www.amazon.com/dp/B0F14PFFPS?tag=tiereduptech-20",
+        "price": 979.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101083,
+    "c": "Monitor",
+    "n": "LG 45GX950A-B 45-inch Ultragear 5K2K WUHD (5120 x 2160) OLED Curved Gaming Monitor, Dual-Mode, 165Hz, 0.03ms, NVIDIA G-Sync, AMD FreeSync Premium Pro, HDR True Black 400, USB Type-C 90W, DP2.1",
+    "b": "AMD",
+    "pr": 1884.97,
+    "msrp": 1884.97,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71JGgBMb-HL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DYG9DKX8",
+        "url": "https://www.amazon.com/dp/B0DYG9DKX8?tag=tiereduptech-20",
+        "price": 1884.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101084,
+    "c": "Monitor",
+    "n": "LG 34GX90SA-W 34-inch Ultragear WQHD (3440 x 1440) OLED Curved Gaming Monitor 240Hz, 1ms, NVIDIA G-Sync Compatible, AMD FreeSync Premium, VESA DisplayHDR True Black 400, webOS, USB Type-C, White",
+    "b": "AMD",
+    "pr": 658.45,
+    "msrp": 658.45,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/81GfDkoz0SL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F15CGTGW",
+        "url": "https://www.amazon.com/dp/B0F15CGTGW?tag=tiereduptech-20",
+        "price": 658.45,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101085,
+    "c": "Monitor",
+    "n": "LG 45GX900A-B 45-Inch Ultragear WQHD (3440 x 1440) OLED Curved Gaming Monitor, 240Hz, 0.03ms, NVIDIA G-Sync, VESA DisplayHDR True Black 400, HDMI 2.1, DisplayPort, USB Type-C PD 65W, Black",
+    "b": "NVIDIA",
+    "pr": 999.99,
+    "msrp": 999.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/812FgbqLdXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FDC38XGQ",
+        "url": "https://www.amazon.com/dp/B0FDC38XGQ?tag=tiereduptech-20",
+        "price": 999.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101086,
+    "c": "Monitor",
+    "n": "LG 27G610A-B 27-inch Ultragear QHD (2560 x 1440) IPS Gaming Monitor, 200Hz, 1ms, AMD FreeSync Premium, VESA DisplayHDR 400, HDMI, DisplayPort, Tilt/Height/Swivel/Pivot Stand, Black",
+    "b": "AMD",
+    "pr": 240,
+    "msrp": 240,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81z1o5y64wL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FLM15Q5L",
+        "url": "https://www.amazon.com/dp/B0FLM15Q5L?tag=tiereduptech-20",
+        "price": 240,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101087,
+    "c": "Monitor",
+    "n": "ASUS ROG Strix 27\" 2K HDR Gaming Monitor - QHD (2560 x 1440), 270Hz, 1ms, Fast IPS, DCI-P3 95%, ELMB, G-Sync Compatible, AI Gaming, DisplayPort & HDMI & USB-C, Height/Tilt/Pivot/Swivel, VESA, Black",
+    "b": "ASUS",
+    "pr": 369,
+    "msrp": 369,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/71osSYcZd+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GVT7Q6QG",
+        "url": "https://www.amazon.com/dp/B0GVT7Q6QG?tag=tiereduptech-20",
+        "price": 369,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101088,
+    "c": "Monitor",
+    "n": "ASUS ROG Swift OLED 27” 1440P Gaming Monitor (PG27AQDP) - WOLED, QHD, 480Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, AI Assistant, DisplayHDR400 True Black, 99% DCI-P3, True 10-bit, DisplayWidget",
+    "b": "ASUS",
+    "pr": 699,
+    "msrp": 699,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/91yldih8cNL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D7NXSQ44",
+        "url": "https://www.amazon.com/dp/B0D7NXSQ44?tag=tiereduptech-20",
+        "price": 699,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101089,
+    "c": "Monitor",
+    "n": "ASUS ROG Swift 27” 4K QD-OLED Gaming Monitor (PG27UCDM) - 240Hz, 0.03ms, Custom Heatsink, Neo Proximity Sensor, G-SYNC Compatible, 99% DCI-P3, True 10-bit color, DisplayPort 2.1a UHBR20, 3 yr warranty",
+    "b": "ASUS",
+    "pr": 999,
+    "msrp": 999,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/91ZKaOrm5xL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DM6SHQTN",
+        "url": "https://www.amazon.com/dp/B0DM6SHQTN?tag=tiereduptech-20",
+        "price": 999,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101090,
+    "c": "Monitor",
+    "n": "ASUS ROG Strix 27” QHD (2560x1440) HDR400 USB-C Gaming Monitor (XG27ACS), 180Hz,1ms, Fast IPS, 133% sRGB, Extreme Low Motion Blur Sync, G-Sync Compatible, DisplayWidget, Tripod Socket, 3 Year Warranty",
+    "b": "ASUS",
+    "pr": 254.99,
+    "msrp": 254.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81gMjOO-kyL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CV24GQ9W",
+        "url": "https://www.amazon.com/dp/B0CV24GQ9W?tag=tiereduptech-20",
+        "price": 254.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101091,
+    "c": "Monitor",
+    "n": "ASUS ROG Strix OLED 27” 1440P Gaming Monitor (XG27AQWMG) ― QHD, TrueBlack Glossy Tandem OLED, 280Hz, 0.03ms, Neo Proximity Sensor, DisplayHDR True Black 500, 99% DCI-P3, DisplayWidget, 3yr Warranty",
+    "b": "ASUS",
+    "pr": 649,
+    "msrp": 649,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/918WHK4VUcL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FP152SJW",
+        "url": "https://www.amazon.com/dp/B0FP152SJW?tag=tiereduptech-20",
+        "price": 649,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101092,
+    "c": "Monitor",
+    "n": "ASUS ROG Strix 32” 4K OLED Gaming Monitor (XG32UCWG) - TrueBlack Glossy OLED, Dual Mode (4K@165Hz, FHD@330Hz), 0.03ms, G-SYNC Compatible, Neo Proximity Sensor, USB-C, HDMI 2.1, 3 yr Warranty",
+    "b": "ASUS",
+    "pr": 799,
+    "msrp": 799,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/91py5cWWByL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F7313X8L",
+        "url": "https://www.amazon.com/dp/B0F7313X8L?tag=tiereduptech-20",
+        "price": 799,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101093,
+    "c": "Monitor",
+    "n": "ASUS ROG Strix 32” 4K OLED Gaming Monitor (XG32UCWMG) - TrueBlack Glossy, Dual Mode(4K@240Hz, FHD@480Hz), 0.03ms, G-SYNC Compatible, Neo Proximity Sensor, USB-C, HDMI 2.1, 3 yr Warranty",
+    "b": "ASUS",
+    "pr": 996.25,
+    "msrp": 996.25,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61Y7fXML81L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F732KMQQ",
+        "url": "https://www.amazon.com/dp/B0F732KMQQ?tag=tiereduptech-20",
+        "price": 996.25,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101094,
+    "c": "Monitor",
+    "n": "ASUS ROG Strix IPS 27” Dual Mode Gaming Monitor (XG27UCSR) ― Dual Mode (4K 160Hz or FHD 324Hz), 0.03ms, Fast IPS, ELMB Sync, Smart Pixel Technology, HDR, DisplayWidget, 3yr Warranty",
+    "b": "ASUS",
+    "pr": 329.99,
+    "msrp": 329.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/71M9QvxzwqL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GR79KXGX",
+        "url": "https://www.amazon.com/dp/B0GR79KXGX?tag=tiereduptech-20",
+        "price": 329.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101095,
+    "c": "Monitor",
+    "n": "ASUS ROG Strix 27” 4K HDR USB-C Gaming Monitor (XG27UCG) – UHD (3840x2160) Dual Mode (4K 160Hz or FHD 320Hz), 1ms, Fast IPS, Extreme Low Motion Blur Sync, G-SYNC Compatible, AI Gaming, 3yr Warranty",
+    "b": "ASUS",
+    "pr": 399.99,
+    "msrp": 399.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71NzUiorVBL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CZWJG5GZ",
+        "url": "https://www.amazon.com/dp/B0CZWJG5GZ?tag=tiereduptech-20",
+        "price": 399.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101096,
+    "c": "Monitor",
+    "n": "Kado 25\" Class Dual Gaming Monitor Setup - 2-Pack 24.5\" Curved 1500R 240Hz 1ms 1920x1080 Computer Monitor, Parallel Gaming AMD FreeSync Premium Panoramic, VESA Mount HDMI DisplayPort Built-in Speakers",
+    "b": "AMD",
+    "pr": 198.37,
+    "msrp": 198.37,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71d3FUEAu7L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F6YDDH6G",
+        "url": "https://www.amazon.com/dp/B0F6YDDH6G?tag=tiereduptech-20",
+        "price": 198.37,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101097,
+    "c": "Monitor",
+    "n": "CRUA 45\" Curved Gaming Monitor, 240Hz DQHD 5120×1440 UltraWide 32:9 VA Screen Computer Monitors, 120% sRGB,1500R, AMD FreeSync Compatible, Built-in Speakers, HDMI 2.1 & DP 1.4, Wall Mountable – Black",
+    "b": "AMD",
+    "pr": 599.97,
+    "msrp": 599.97,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71-VW0n6xbL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GL2M67BV",
+        "url": "https://www.amazon.com/dp/B0GL2M67BV?tag=tiereduptech-20",
+        "price": 599.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101098,
+    "c": "Monitor",
+    "n": "Kado Dual Gaming Monitor Setup - 2-Pack 24.5\" 240Hz 1ms Curved 1500R 1920x1080, AMD FreeSync Premium, Panoramic Gaming Multi-View Split Screen Streaming, VESA Mount HDMI DisplayPort Built-in Speakers",
+    "b": "AMD",
+    "pr": 198.37,
+    "msrp": 198.37,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/710vARzfoOL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F6YFQXHF",
+        "url": "https://www.amazon.com/dp/B0F6YFQXHF?tag=tiereduptech-20",
+        "price": 198.37,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101099,
+    "c": "Monitor",
+    "n": "Samsung 49” Business Curved Ultrawide Dual QHD Computer Monitor, USB-C, DisplayPort, HDMI, 120Hz, VESA DisplayHDR 400, Built-in Speakers, Height Adjustable Stand, Eye Care, LS49C954UANXZA, 2024",
+    "b": "Samsung",
+    "pr": 1169.93,
+    "msrp": 1169.93,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/617SkPgMZpL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CRGJF7WL",
+        "url": "https://www.amazon.com/dp/B0CRGJF7WL?tag=tiereduptech-20",
+        "price": 1169.93,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101100,
+    "c": "Monitor",
+    "n": "SAMSUNG 49\" Odyssey G9 (G95C) Series DQHD 1000R Curved Gaming Monitor, 240Hz, 1ms(GtG), DisplayHDR 1000, AMD FreeSync Premium Pro, Eye Saver Mode, Auto Source Switch+, LS49CG950ENXZA, 2024",
+    "b": "AMD",
+    "pr": 899.99,
+    "msrp": 899.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61IC-Ryb-HL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DHJBWY52",
+        "url": "https://www.amazon.com/dp/B0DHJBWY52?tag=tiereduptech-20",
+        "price": 899.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101101,
+    "c": "Monitor",
+    "n": "SAMSUNG 49-inch Odyssey G9 (G91F) DQHD, 144Hz, Curved Gaming Monitor, Ultra-Wide 32:9 Screen, DisplayHDR 600, AMD FreeSync™ Premium Pro, Ergonomic Stand, LS49FG910ENXZA, 2025",
+    "b": "AMD",
+    "pr": 799.99,
+    "msrp": 799.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71f0rr69tLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DWT9XN4D",
+        "url": "https://www.amazon.com/dp/B0DWT9XN4D?tag=tiereduptech-20",
+        "price": 799.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101102,
+    "c": "Monitor",
+    "n": "Samsung 57\" Odyssey Neo G9 (G95NC) Series Dual 4K UHD 1000R Curved Gaming Monitor, 240Hz, 1ms with DisplayPort 2.1, Quantum Mini-LED, DisplayHDR 1000, AMD FreeSync Premium Pro, LS57CG952NNXZA",
+    "b": "AMD",
+    "pr": 2099.99,
+    "msrp": 2099.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71uFd8TSejL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CDQM55C9",
+        "url": "https://www.amazon.com/dp/B0CDQM55C9?tag=tiereduptech-20",
+        "price": 2099.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101103,
+    "c": "Monitor",
+    "n": "Samsung 49\" Odyssey OLED G9 (G91SD) Dual QHD QD-OLED G-Sync Compatible Curved Gaming Monitor, 144Hz, 0.03ms, AMD FreeSync Premium Pro, Ergonomic Stand, 3 Year Warranty, LS49DG910SNXZA",
+    "b": "AMD",
+    "pr": 1116.35,
+    "msrp": 1116.35,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71s2+AY8C-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DSGJRKCR",
+        "url": "https://www.amazon.com/dp/B0DSGJRKCR?tag=tiereduptech-20",
+        "price": 1116.35,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101104,
+    "c": "Monitor",
+    "n": "Samsung 27-Inch Odyssey G3 (G30D) Series FHD Gaming Monitor, 1ms, 180Hz, AMD FreeSync, Adjustable Stand, Black Equalizer, Virtual Aim Point, Eye Saver Mode, Flicker-Free, LS27DG302ENXZA",
+    "b": "AMD",
+    "pr": 189.98,
+    "msrp": 189.98,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71EHzBNhdOL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D5ZKSR9C",
+        "url": "https://www.amazon.com/dp/B0D5ZKSR9C?tag=tiereduptech-20",
+        "price": 189.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101105,
+    "c": "Monitor",
+    "n": "SAMSUNG 32-Inch Odyssey G50D Series QHD Fast IPS G-Sync Compatible Gaming Monitor, 1ms, VESA DisplayHDR 400, 180Hz, AMD FreeSync, Adjustable Stand, Eye Saver Mode, LS32DG502ENXZA, 2024",
+    "b": "AMD",
+    "pr": 299.99,
+    "msrp": 299.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81jqpEY-qIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CZPLQZ8P",
+        "url": "https://www.amazon.com/dp/B0CZPLQZ8P?tag=tiereduptech-20",
+        "price": 299.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101106,
+    "c": "Monitor",
+    "n": "Samsung 24-Inch Odyssey G3 (G30D) Series FHD Gaming Monitor, 1ms, 180Hz, AMD FreeSync, Adjustable Stand, Black Equalizer, Virtual Aim Point, Eye Saver Mode, Flicker-Free, LS24DG302ENXZA",
+    "b": "AMD",
+    "pr": 149.99,
+    "msrp": 149.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71PHgAxiCnL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D5ZZ9G26",
+        "url": "https://www.amazon.com/dp/B0D5ZZ9G26?tag=tiereduptech-20",
+        "price": 149.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101107,
+    "c": "Monitor",
+    "n": "Samsung 40” Odyssey G7 (G75F) WUHD Resolution, 180Hz, Curved Gaming Monitor, 1ms Response Time (GtG), VESA DisplayHDR™ 600, AMD FreeSync™ Premium Pro, LS40FG75DENXZA, 2025",
+    "b": "AMD",
+    "pr": 956.71,
+    "msrp": 956.71,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/81fOkgIm2-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJYNVR3R",
+        "url": "https://www.amazon.com/dp/B0FJYNVR3R?tag=tiereduptech-20",
+        "price": 956.71,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101108,
+    "c": "Monitor",
+    "n": "Samsung 37” Odyssey G7 (G75F) 4K UHD Resolution, 165Hz, Curved Gaming Monitor, 1ms Response Time (GtG), VESA DisplayHDR™ 600, AMD FreeSync™ Premium Pro, LS37FG75DENXZA, 2025",
+    "b": "AMD",
+    "pr": 899.99,
+    "msrp": 899.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71Djm2+h9yL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJYNKQ5T",
+        "url": "https://www.amazon.com/dp/B0FJYNKQ5T?tag=tiereduptech-20",
+        "price": 899.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101109,
+    "c": "Monitor",
+    "n": "Samsung 32-Inch Odyssey G3 (G30D) Series FHD Gaming Monitor, 1ms, 180Hz, AMD FreeSync, Adjustable Stand, Black Equalizer, Virtual Aim Point, Eye Saver Mode, Flicker-Free, LS32DG302ENXZA",
+    "b": "AMD",
+    "pr": 279.99,
+    "msrp": 279.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/714UQmu6QML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D5Z565D5",
+        "url": "https://www.amazon.com/dp/B0D5Z565D5?tag=tiereduptech-20",
+        "price": 279.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101110,
+    "c": "Monitor",
+    "n": "Samsung 27” Odyssey OLED G6 (G60SD) Series Gaming Monitor with QHD & QD-OLED, 360Hz 0.03ms, AMD FreeSync Premium Pro, Anti-Glare, Sleek Design, Cooling System, 3 Year Warranty, LS27DG602SNXZA",
+    "b": "AMD",
+    "pr": 684.16,
+    "msrp": 684.16,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/81or1b4EndL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D1DPFZLZ",
+        "url": "https://www.amazon.com/dp/B0D1DPFZLZ?tag=tiereduptech-20",
+        "price": 684.16,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101111,
+    "c": "Monitor",
+    "n": "GIGABYTE - M27Q2-27\" SS IPS Gaming Monitor - QHD 2560x1440-200Hz/OC 210Hz - 1ms GTG - AMD FreeSync Premium, G-SYNC Compatible - Type-C KVM - HDMI, DP, Type-C - Height and Tilt Adjustable - Black",
+    "b": "AMD",
+    "pr": 179.99,
+    "msrp": 179.99,
+    "r": 3.5,
+    "img": "https://m.media-amazon.com/images/I/81cWGwjTikL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GKFQXR3R",
+        "url": "https://www.amazon.com/dp/B0GKFQXR3R?tag=tiereduptech-20",
+        "price": 179.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101112,
+    "c": "Monitor",
+    "n": "GIGABYTE - G25F2A - 24.5\" SuperSpeed IPS Gaming Monitor - FHD 1920x1080-240Hz - 1ms GTG - AMD FreeSync Premium - HDMI, DP - Height and Tilt Adjustable - Black",
+    "b": "AMD",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71V4lAM7sSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GTZTV7TP",
+        "url": "https://www.amazon.com/dp/B0GTZTV7TP?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101113,
+    "c": "Monitor",
+    "n": "GIGABYTE - G34WQC2-34\" VA Curved Gaming Monitor - WQHD 3440x1440-200Hz - 1ms GTG - AMD FreeSync Premium - HDMI, DP - Height and Tilt Adjustable - Black",
+    "b": "AMD",
+    "pr": 249.99,
+    "msrp": 249.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71znrC0cnLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GTZZ7T3H",
+        "url": "https://www.amazon.com/dp/B0GTZZ7T3H?tag=tiereduptech-20",
+        "price": 249.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101114,
+    "c": "Monitor",
+    "n": "GIGABYTE - M27UP - 27\" SS IPS Gaming Monitor - UHD 3840x2160-160Hz - 1ms GTG - AMD FreeSync Premium, G-SYNC Compatible - Dual Mode - Type C KVM - HDMI, DP, Type-C - Height and Tilt Adjustable -Black",
+    "b": "AMD",
+    "pr": 329.99,
+    "msrp": 329.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/81-ljk8kiqL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FR671G1H",
+        "url": "https://www.amazon.com/dp/B0FR671G1H?tag=tiereduptech-20",
+        "price": 329.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101115,
+    "c": "Monitor",
+    "n": "GIGABYTE - GS32QCA - Advanced Version - 31.5\" VA Curved Gaming Monitor - QHD 2560x1440-180Hz - 1ms MPRT - AMD FreeSync - HDMI, DP - Black",
+    "b": "AMD",
+    "pr": 219.99,
+    "msrp": 219.99,
+    "r": 3.8,
+    "img": "https://m.media-amazon.com/images/I/71vCMQcWVSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DKTVJQ5C",
+        "url": "https://www.amazon.com/dp/B0DKTVJQ5C?tag=tiereduptech-20",
+        "price": 219.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101116,
+    "c": "Monitor",
+    "n": "GIGABYTE - MO27Q2A - 27\" QD-OLED Gaming Monitor - QHD 2560x1440-280Hz - 0.03ms GTG - AMD FreeSync Premium Pro, G-SYNC Compatible - Type-C KVM - HDMI, DP, Type-C - Height and Tilt Adjustable - Black",
+    "b": "AMD",
+    "pr": 532.08,
+    "msrp": 532.08,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/81Z8hn8b+xL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GKFW9GCV",
+        "url": "https://www.amazon.com/dp/B0GKFW9GCV?tag=tiereduptech-20",
+        "price": 532.08,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.805Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101117,
+    "c": "Monitor",
+    "n": "GIGABYTE - AORUS FO27Q3-27\" QD OLED Gaming Monitor - QHD 2560x1440-360Hz - 0.03ms GTG - AMD FreeSync Premium Pro - Type C KVM - HDMI, DP, Type C - Height Adjustable - Black",
+    "b": "Gigabyte",
+    "pr": 745.27,
+    "msrp": 745.27,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71Fk4y2ps4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D1RL9D39",
+        "url": "https://www.amazon.com/dp/B0D1RL9D39?tag=tiereduptech-20",
+        "price": 745.27,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.806Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101118,
+    "c": "Monitor",
+    "n": "msi MAG 321UP QD-OLED 32-inch QD-OLED 3840 x 2160 (UHD) Computer Monitor, 165Hz, AMD FreeSync Premium Pro, HDMI 2.1, Display Port 1.4a, VESA Mountable, Tilt, Height Adjustable,0.03ms, Black",
+    "b": "AMD",
+    "pr": 699.99,
+    "msrp": 699.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/81Ur98+EXbL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D9HY3JH2",
+        "url": "https://www.amazon.com/dp/B0D9HY3JH2?tag=tiereduptech-20",
+        "price": 699.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.806Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101119,
+    "c": "CaseFan",
+    "n": "CORSAIR RS120 120mm PWM Fans – Daisy-Chain Connection – Low-Noise – Magnetic Dome Bearing – Triple Pack – Black",
+    "b": "Corsair",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71yg2dlNMRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D49QX74S",
+        "url": "https://www.amazon.com/dp/B0D49QX74S?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.807Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101120,
+    "c": "CaseFan",
+    "n": "Thermalright TL-C12C X3 CPU Fan 120mm Case Cooler Fan, 4pin PWM Silent Computer Fan with S-FDB Bearing Included, up to 1550RPM Cooling （3 Quantities）",
+    "b": "Thermalright",
+    "pr": 11.99,
+    "msrp": 11.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/612RL8vAL9L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BKL1QYP3",
+        "url": "https://www.amazon.com/dp/B0BKL1QYP3?tag=tiereduptech-20",
+        "price": 11.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.807Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101121,
+    "c": "CaseFan",
+    "n": "CORSAIR RS120 ARGB 120mm PWM Fans – Daisy-Chain Connection – Low-Noise – Magnetic Dome Bearing – Triple Pack – White",
+    "b": "Corsair",
+    "pr": 34.99,
+    "msrp": 34.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71fwLas-07L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D49PNMBD",
+        "url": "https://www.amazon.com/dp/B0D49PNMBD?tag=tiereduptech-20",
+        "price": 34.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.807Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101122,
+    "c": "CaseFan",
+    "n": "darkFlash INF34 120MM PC Case Fan, Daisy-Chain, up to 2000RPM Cooling, 4-Pin PWM, ARGB CPU Cooling Computer Fan, 3 Pack (Forward, Black)",
+    "b": "DarkFlash",
+    "pr": 38.42,
+    "msrp": 38.42,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71SEtQOMajL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DKSXN58Z",
+        "url": "https://www.amazon.com/dp/B0DKSXN58Z?tag=tiereduptech-20",
+        "price": 38.42,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.807Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101123,
+    "c": "CaseFan",
+    "n": "Thermalright TL-C14 140mm Fan, Quiet Operation, S-FDB Bearing, PWM Control, 1500RPM, Balance Performance Case Fan",
+    "b": "Thermalright",
+    "pr": 6.9,
+    "msrp": 6.9,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/612W7wa4cAL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BSLKR3LH",
+        "url": "https://www.amazon.com/dp/B0BSLKR3LH?tag=tiereduptech-20",
+        "price": 6.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.807Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101124,
+    "c": "CaseFan",
+    "n": "Thermalright TL-C14CW CPU Case Fan 140mm, PWM Fan Silent Computer CPU Fan with 1500RPM Speed, CPU Cooling White （TL-C14CW",
+    "b": "Thermalright",
+    "pr": 6.99,
+    "msrp": 6.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61g8lAzKalL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CPJ49NM5",
+        "url": "https://www.amazon.com/dp/B0CPJ49NM5?tag=tiereduptech-20",
+        "price": 6.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.807Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101125,
+    "c": "CaseFan",
+    "n": "CORSAIR RS140 ARGB 140mm PWM Fan – Daisy-Chain Connection – Low-Noise – Magnetic Dome Bearing – Single Pack – White",
+    "b": "Corsair",
+    "pr": 24.99,
+    "msrp": 24.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61l+8SGm4BL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D49QPFFV",
+        "url": "https://www.amazon.com/dp/B0D49QPFFV?tag=tiereduptech-20",
+        "price": 24.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.807Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101126,
+    "c": "CaseFan",
+    "n": "NZXT F280 RGB Core - 280mm Single-Frame Fan Unit with 2 x 140mm RGB Fans - Speed & Lighting Control - High Static Pressure & Airflow - Fluid Dynamic Bearings - 8 aRGB LEDs Per Fan - White",
+    "b": "NZXT",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/41LLuOS762L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D1RG5ZT1",
+        "url": "https://www.amazon.com/dp/B0D1RG5ZT1?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.807Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101127,
+    "c": "CaseFan",
+    "n": "Thermalright TL-C14C CPU Fan 140mm Case Cooler, 4Pin PWM Silent Computer Fan with S-FDB Bearing Included, up to 1500RPM Cooling PC Cooling (Black)",
+    "b": "Thermalright",
+    "pr": 7.9,
+    "msrp": 7.9,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71wmuVvPRGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CPFB1MQD",
+        "url": "https://www.amazon.com/dp/B0CPFB1MQD?tag=tiereduptech-20",
+        "price": 7.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.807Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101128,
+    "c": "CaseFan",
+    "n": "7PCS ARGB Fan- 4 Forward Fans +3 Reverse Fans，28 LED,120mm 4pin PWM Silent Computer Case Cooler Fan,Up to 1,500RPM PC Cooling,White",
+    "b": "MSI",
+    "pr": 35,
+    "msrp": 35,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71wEgP5tCgL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FWQZ9HQL",
+        "url": "https://www.amazon.com/dp/B0FWQZ9HQL?tag=tiereduptech-20",
+        "price": 35,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.807Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101129,
+    "c": "CaseFan",
+    "n": "Thermalright TL-C12CW-S X3 CPU Fan 120mm White ARGB Case Cooler, 4pin PWM Silent Computer Cooling Fan with S-FDB Bearing Included, up to 1550RPM（3 Quantities）",
+    "b": "Thermalright",
+    "pr": 13.19,
+    "msrp": 13.19,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61jsetrFJrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BKJWMQLW",
+        "url": "https://www.amazon.com/dp/B0BKJWMQLW?tag=tiereduptech-20",
+        "price": 13.19,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.808Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101130,
+    "c": "CaseFan",
+    "n": "darkFlash 3-Pack 120mm PC Case Fans with Controller Hub & Remote, PWM ARGB Sync, Addressable RGB Cooling Fans for Computer Case & High Airflow(DM12PRO) (Black)",
+    "b": "DarkFlash",
+    "pr": 28.7,
+    "msrp": 28.7,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71e86f7VtML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F87Y8QVR",
+        "url": "https://www.amazon.com/dp/B0F87Y8QVR?tag=tiereduptech-20",
+        "price": 28.7,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.808Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101131,
+    "c": "CaseFan",
+    "n": "JONSBO ZC-360B 3.38\"x3 Screen PC Fan,3 Magnetic 3.38 LCD Screen Control Software,Integrated Link Fan,Customize Display Patterns,Data,Video Upload and Playback,Screen Set Freely,Dual Ball Bearing,Black",
+    "b": "Jonsbo",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/615uiDanL7L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FNN4MFRJ",
+        "url": "https://www.amazon.com/dp/B0FNN4MFRJ?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.808Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101132,
+    "c": "CaseFan",
+    "n": "ARCTIC P12 Pro LN - 5 Pack - Low-Noise Premium Fan, 120 mm PWM Fan, 450-2000 RPM, 0 RPM <5% PWM, Fluid Dynamic Bearing, 4-Pin - Black",
+    "b": "Arctic",
+    "pr": 31.49,
+    "msrp": 31.49,
+    "r": 1,
+    "img": "https://m.media-amazon.com/images/I/71jDfs4NGeL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FVXTFQCC",
+        "url": "https://www.amazon.com/dp/B0FVXTFQCC?tag=tiereduptech-20",
+        "price": 31.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.808Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101133,
+    "c": "CaseFan",
+    "n": "ARCTIC P12 Pro LN - Low-Noise Premium Fan, 120 mm PWM Fan, 450-2000 RPM, 0 RPM <5% PWM, Fluid Dynamic Bearing, 4-Pin - Black",
+    "b": "Arctic",
+    "pr": 10.49,
+    "msrp": 10.49,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/61ogERTb8EL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FVXVVL11",
+        "url": "https://www.amazon.com/dp/B0FVXVVL11?tag=tiereduptech-20",
+        "price": 10.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.808Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101134,
+    "c": "CaseFan",
+    "n": "NZXT F360X Performance Single-Frame Fan - 3X 120mm PWM RGB PC Case Fans - Max Airflow & Static Pressure - Low Noise - LCP Frame & Blades - Magnetic Fluid Dynamic Bearing - 30mm Thick - Black",
+    "b": "NZXT",
+    "pr": 96,
+    "msrp": 96,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51B1f7XcJoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FTHMPJV3",
+        "url": "https://www.amazon.com/dp/B0FTHMPJV3?tag=tiereduptech-20",
+        "price": 96,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.808Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101135,
+    "c": "CaseFan",
+    "n": "be quiet! Light Wings 120mm PWM High Speed Low Noise Premium ARGB Cooling Fan | 4-Pin | Ideal for Radiators and Heat Syncs | Black | BL073",
+    "b": "be quiet!",
+    "pr": 23.9,
+    "msrp": 23.9,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71YL63z4FRL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09KMBZ7F7",
+        "url": "https://www.amazon.com/dp/B09KMBZ7F7?tag=tiereduptech-20",
+        "price": 23.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.809Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101136,
+    "c": "CaseFan",
+    "n": "CORSAIR iCUE Link LX120 RGB 120mm PWM Fans Triple Pack – Dual Light Loops – Includes iCUE Link System Hub – CORSAIR AirGuide Technology – Black",
+    "b": "Corsair",
+    "pr": 84.99,
+    "msrp": 84.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/51i1EPlpYHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D3H8HVMY",
+        "url": "https://www.amazon.com/dp/B0D3H8HVMY?tag=tiereduptech-20",
+        "price": 84.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.809Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101137,
+    "c": "CaseFan",
+    "n": "Corsair LL Series, LL120 RGB, 120mm RGB LED Fan, Triple Pack with Lighting Node PRO- White, Lighting Node PRO Included, CO-9050092-WW (Renewed)",
+    "b": "Corsair",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/613QPamRRnL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09Q82DWNX",
+        "url": "https://www.amazon.com/dp/B09Q82DWNX?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.809Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101138,
+    "c": "CaseFan",
+    "n": "Angitu for 2pcs / lot Corsair Fan RGB ARGB Adapter Cable with Black PET Sleeved HD LL120 140 QL 3Pin 4Pin Fan to 5V 3Pin RGB LED Cable 50cm (RGB-4Pin Male Black Sleeved)",
+    "b": "Corsair",
+    "pr": 21,
+    "msrp": 21,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/51ifCzTcojL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BHW3SYHP",
+        "url": "https://www.amazon.com/dp/B0BHW3SYHP?tag=tiereduptech-20",
+        "price": 21,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.809Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101139,
+    "c": "CaseFan",
+    "n": "CORSAIR iCUE Link LX140-R RGB 140mm PWM Reverse Fan – Single Fan – Low-Noise, Magnetic Dome Bearing, Dual Light Loops, CORSAIR QuikTurn Screws, Zero RPM Mode – White",
+    "b": "Corsair",
+    "pr": 42.5,
+    "msrp": 42.5,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71W5q27p1tL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DGVRR3VJ",
+        "url": "https://www.amazon.com/dp/B0DGVRR3VJ?tag=tiereduptech-20",
+        "price": 42.5,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.809Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101140,
+    "c": "CaseFan",
+    "n": "CORSAIR iCUE Link LX120 RGB 120mm PWM Fan Single Pack – Dual Light Loops – Requires iCUE Link System Hub (Sold Separately) – CORSAIR AirGuide Technology – White",
+    "b": "Corsair",
+    "pr": 44.99,
+    "msrp": 44.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61j6xKXhWnL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D3HBJ6QH",
+        "url": "https://www.amazon.com/dp/B0D3HBJ6QH?tag=tiereduptech-20",
+        "price": 44.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.809Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101141,
+    "c": "CaseFan",
+    "n": "COMeap RGB Splitter for Corsair RGB HUB, Lighting Node Core and iCUE Commander CORE XT, 4 Pin Male to Female Fan Extension Cable for Corsair RGB Fan ML/LL/QL/SP/HD 9-in",
+    "b": "Corsair",
+    "pr": 9.99,
+    "msrp": 9.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61RFdbbB+PL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D1R6ZW8B",
+        "url": "https://www.amazon.com/dp/B0D1R6ZW8B?tag=tiereduptech-20",
+        "price": 9.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.809Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101142,
+    "c": "CaseFan",
+    "n": "Joshua Adams TD9025LS 12V 0.16A 9025 2-Wire 9CM Silent Cooling Fan",
+    "b": "MSI",
+    "pr": 15,
+    "msrp": 15,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61QiTY4PhYL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D22Y9QF2",
+        "url": "https://www.amazon.com/dp/B0D22Y9QF2?tag=tiereduptech-20",
+        "price": 15,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.810Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101143,
+    "c": "CaseFan",
+    "n": "Thermalright TL-C12C-S CPU Fan 120mm ARGB Case Cooler Fan, 4pin PWM Silent Computer Fan with S-FDB Bearing Included, up to 1550RPM Cooling Fan",
+    "b": "MSI",
+    "pr": 6.59,
+    "msrp": 6.59,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61L9AYxldpL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BRPMTPBK",
+        "url": "https://www.amazon.com/dp/B0BRPMTPBK?tag=tiereduptech-20",
+        "price": 6.59,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.811Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101144,
+    "c": "CaseFan",
+    "n": "KF620-DGT CPU Air Cooler, Dual ARGB PWM Fans, 6 Heat Pipes, Digital Display Top Cover - High-Performance Cooling for AMD:AM4 AM5/Intel LGA 1700/115X/1200/1366/1851 PC Cooler(Black",
+    "b": "AMD",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61bbD4lMUZL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJ27YMV5",
+        "url": "https://www.amazon.com/dp/B0FJ27YMV5?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.812Z",
     "source": "amazon-discovery"
   }
 ];
