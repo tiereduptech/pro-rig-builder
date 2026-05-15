@@ -2849,7 +2849,9 @@ function SearchPageRouter(props){
   return isMobile?<MobileSearchPage {...props}/>:<SearchPage {...props}/>;
 }
 function SearchPage({activeCat,th}){
-  const [cat,setCat]=useState(activeCat||"");const [q,setQ]=useState("");const [brands,setBrands]=useState([]);const [marketplaces,setMarketplaces]=useState([]);const [conditions,setConditions]=useState([]);const [maxPr,setMaxPr]=useState(5000);const [minPr,setMinPr]=useState(0);const [minR,setMinR]=useState(0);const [cpO,setCpO]=useState(false);const [sf,setSf]=useState({});const [sort,setSort]=useState("price-asc");
+  const [cat,setCat]=useState(activeCat||"");const [q,setQ]=useState("");const [brands,setBrands]=useState([]);const [marketplaces,setMarketplaces]=useState([]);const [conditions,setConditions]=useState([]);
+  const [viewMode,setViewMode]=useState(()=>{try{return localStorage.getItem("rigfinder_view_mode")||"row";}catch{return "row";}});
+  const setViewModeP=v=>{setViewMode(v);try{localStorage.setItem("rigfinder_view_mode",v);}catch{}};const [maxPr,setMaxPr]=useState(5000);const [minPr,setMinPr]=useState(0);const [minR,setMinR]=useState(0);const [cpO,setCpO]=useState(false);const [sf,setSf]=useState({});const [sort,setSort]=useState("price-asc");
   const [expanded,setExpanded]=useState(null);
   const [showAll,setShowAll]=useState({});
   useEffect(()=>{if(activeCat)setCat(activeCat);},[activeCat]);
@@ -2924,7 +2926,7 @@ function SearchPage({activeCat,th}){
             {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:8,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:13,cursor:"pointer"}}>✕</button>}
           </div>
           <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>SORT</span>
-          <select value={sort} onChange={e=>setSort(e.target.value)} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,padding:"7px 8px",fontSize:10,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",cursor:"pointer"}}><option value="price-asc">Price ↑</option><option value="price-desc">Price ↓</option><option value="rating-desc">Top Rated</option><option value="bench-desc">Performance</option><option value="value-desc">Best Value</option></select>
+          <select value={sort} onChange={e=>setSort(e.target.value)} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,padding:"7px 8px",fontSize:10,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",cursor:"pointer"}}><option value="price-asc">Price ↑</option><option value="price-desc">Price ↓</option><option value="rating-desc">Top Rated</option><option value="bench-desc">Performance</option><option value="value-desc">Best Value</option></select><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginLeft:8}}>VIEW</span><div style={{display:"flex",gap:0,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,overflow:"hidden"}}><button onClick={()=>setViewModeP("row")} title="Row view" style={{background:viewMode==="row"?"var(--accent3)":"transparent",border:"none",color:viewMode==="row"?"var(--accent)":"var(--dim)",padding:"6px 10px",cursor:"pointer",fontSize:14,fontFamily:"var(--ff)",fontWeight:600}}>☰</button><button onClick={()=>setViewModeP("grid")} title="Grid view" style={{background:viewMode==="grid"?"var(--accent3)":"transparent",border:"none",color:viewMode==="grid"?"var(--accent)":"var(--dim)",padding:"6px 10px",cursor:"pointer",fontSize:14,fontFamily:"var(--ff)",fontWeight:600}}>▦</button></div>
         </div>
         {/* Condition filter pills */}
         <div style={{display:"flex",gap:6,flexWrap:"wrap",marginTop:8,marginBottom:6}}>
@@ -2957,7 +2959,35 @@ function SearchPage({activeCat,th}){
           <span style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)",fontWeight:600,textAlign:"center",textTransform:"uppercase"}}>Value</span>
           <span style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)",fontWeight:600,textAlign:"right",textTransform:"uppercase"}}>Price</span><span/>
         </div>
-        {/* Rows */}
+        {/* Rows or Grid */}
+        {viewMode==="grid" ? (
+          <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill, minmax(240px, 1fr))",gap:14,marginTop:14}}>
+            {list.map(p=>{
+              const rr=retailers(p);
+              return <div key={p.id} onClick={()=>setExpanded(p.id)} style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:12,cursor:"pointer",transition:"transform .15s, border-color .15s",display:"flex",flexDirection:"column",gap:8}} onMouseEnter={e=>{e.currentTarget.style.borderColor="var(--accent)";e.currentTarget.style.transform="translateY(-2px)";}} onMouseLeave={e=>{e.currentTarget.style.borderColor="var(--bdr)";e.currentTarget.style.transform="translateY(0)";}}>
+                {p.img ? <img loading="lazy" decoding="async" src={p.img} alt={p.n} style={{width:"100%",aspectRatio:"1 / 1",objectFit:"contain",background:"var(--bg4)",borderRadius:6}}/> : <div style={{width:"100%",aspectRatio:"1 / 1",background:"var(--bg4)",borderRadius:6,display:"flex",alignItems:"center",justifyContent:"center",fontSize:48}}>{ic(p)}</div>}
+                <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",lineHeight:1.3,display:"-webkit-box",WebkitLineClamp:2,WebkitBoxOrient:"vertical",overflow:"hidden",minHeight:34}}>{p.n}</div>
+                <div style={{display:"flex",alignItems:"center",gap:4,flexWrap:"wrap"}}>
+                  <span style={{fontSize:11,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span>
+                  {p.r && <Stars r={p.r} s={9}/>}
+                </div>
+                <div style={{display:"flex",gap:4,flexWrap:"wrap"}}>
+                  {isDeal(p)&&<span style={{background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:9,fontWeight:800,padding:"2px 6px",borderRadius:3,fontFamily:"var(--mono)"}}>🔥 -${dealSavings(p)}</span>}
+                  {(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}
+                  {p.condition==="refurbished"&&<Tag color="var(--sky)">REFURB</Tag>}
+                  {p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}
+                </div>
+                <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",marginTop:"auto",paddingTop:6}}>
+                  <div>
+                    {isDeal(p)&&<div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>}
+                    <div style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</div>
+                  </div>
+                  {rr.length>0&&<button onClick={e=>{e.stopPropagation();window.open(rr[0].url,"_blank","noopener,noreferrer");}} style={{background:"var(--accent)",color:"#fff",border:"none",borderRadius:6,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:12,fontWeight:700,cursor:"pointer"}}>Buy →</button>}
+                </div>
+              </div>;
+            })}
+          </div>
+        ) : (<>
         {list.map((p,i)=>{
           const isExp=expanded===p.id;
           const rr=retailers(p);
@@ -3110,6 +3140,7 @@ function SearchPage({activeCat,th}){
             </div>}
           </div>;
         })}
+        </>)}
         {list.length===0&&<div style={{textAlign:"center",padding:48,color:"var(--dim)",fontFamily:"var(--ff)"}}>No products match your filters</div>}
       </div>
     </div>
@@ -3287,7 +3318,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
           <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>SORT</span>
           <select value={sort} onChange={e=>setSort(e.target.value)} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,padding:"7px 8px",fontSize:10,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",cursor:"pointer"}}>
             <option value="price-asc">Price ↑</option><option value="price-desc">Price ↓</option><option value="rating-desc">Top Rated</option><option value="bench-desc">Performance</option>
-          </select>
+          </select><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginLeft:8}}>VIEW</span><div style={{display:"flex",gap:0,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,overflow:"hidden"}}><button onClick={()=>setViewModeP("row")} title="Row view" style={{background:viewMode==="row"?"var(--accent3)":"transparent",border:"none",color:viewMode==="row"?"var(--accent)":"var(--dim)",padding:"6px 10px",cursor:"pointer",fontSize:14,fontFamily:"var(--ff)",fontWeight:600}}>☰</button><button onClick={()=>setViewModeP("grid")} title="Grid view" style={{background:viewMode==="grid"?"var(--accent3)":"transparent",border:"none",color:viewMode==="grid"?"var(--accent)":"var(--dim)",padding:"6px 10px",cursor:"pointer",fontSize:14,fontFamily:"var(--ff)",fontWeight:600}}>▦</button></div>
         </div>
 
         {/* Table header */}
