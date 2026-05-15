@@ -4683,7 +4683,7 @@ export default function App(){
     } else if (!pathBase) {
       // Root path "/"
       setPageRaw("home");
-      window.history.replaceState({page:"home"}, "", "/");
+      window.history.replaceState({page:"home"}, "", "/" + window.location.search);
     } else {
       // Try legacy hash fallback (e.g. someone bookmarked /#search)
       const rawHash = window.location.hash.replace("#","");
@@ -4694,7 +4694,7 @@ export default function App(){
         window.history.replaceState({page:hashBase}, "", "/" + hashBase + window.location.search);
       } else {
         setPageRaw("home");
-        window.history.replaceState({page:"home"}, "", "/");
+        window.history.replaceState({page:"home"}, "", "/" + window.location.search);
       }
     }
 
