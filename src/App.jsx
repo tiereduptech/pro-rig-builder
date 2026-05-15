@@ -4580,7 +4580,7 @@ function ScannerPromo({ go, page }) {
   return (
     <div onMouseLeave={close} style={{position:"fixed",left:0,top:"50%",transform:"translateY(-50%)",zIndex:50,fontFamily:"var(--ff)"}}>
       {!expanded && (
-        <button onMouseEnter={open} onClick={open} style={{background:"linear-gradient(135deg,var(--accent),#FF6B35)",border:"none",borderRadius:"0 12px 12px 0",padding:"18px 10px",cursor:"pointer",color:"#fff",writingMode:"vertical-rl",transform:"rotate(180deg)",fontSize:14,fontWeight:700,letterSpacing:1,boxShadow:"0 4px 16px rgba(0,0,0,0.3)",display:"flex",alignItems:"center",gap:6}} title="Get Pro Rig Scanner">
+        <button onMouseEnter={open} onClick={open} style={{background:"linear-gradient(135deg,var(--accent),#FF6B35)",border:"none",borderRadius:"12px 0 0 12px",padding:"18px 10px",cursor:"pointer",color:"#fff",writingMode:"vertical-rl",transform:"rotate(180deg)",fontSize:14,fontWeight:700,letterSpacing:1,boxShadow:"0 4px 16px rgba(0,0,0,0.3)",display:"flex",alignItems:"center",gap:6}} title="Get Pro Rig Scanner">
           <span style={{fontSize:20,transform:"rotate(90deg)"}}>💻</span>
           <span>SCAN YOUR PC</span>
         </button>
@@ -4595,18 +4595,18 @@ function ScannerPromo({ go, page }) {
               <div style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:800,color:"var(--txt)"}}>Pro Rig Scanner</div>
             </div>
           </div>
-          <div style={{width:"100%",aspectRatio:"16/10",background:"linear-gradient(135deg,#1a1a2e,#16213e)",borderRadius:6,marginBottom:10,position:"relative",overflow:"hidden",border:"1px solid var(--bdr)"}}>
+          <div style={{width:"100%",aspectRatio:"4/3",background:"linear-gradient(135deg,#0f1117,#1a1f35)",borderRadius:6,marginBottom:10,position:"relative",overflow:"hidden",border:"1px solid var(--bdr)"}}>
             <div style={{position:"absolute",inset:0,padding:10,display:"flex",flexDirection:"column",gap:5}}>
               <div style={{display:"flex",gap:4,marginBottom:4}}>
                 <span style={{width:8,height:8,borderRadius:"50%",background:"#FF5F57"}}/>
                 <span style={{width:8,height:8,borderRadius:"50%",background:"#FFBD2E"}}/>
                 <span style={{width:8,height:8,borderRadius:"50%",background:"#27C93F"}}/>
               </div>
-              <div style={{fontFamily:"var(--mono)",fontSize:9,color:"#7FE2FF"}}>$ scanning hardware...</div>
-              <div style={{fontFamily:"var(--mono)",fontSize:8,color:"#9FF"}}>✓ CPU: i7-13700K</div>
-              <div style={{fontFamily:"var(--mono)",fontSize:8,color:"#9FF"}}>✓ GPU: RTX 4070</div>
-              <div style={{fontFamily:"var(--mono)",fontSize:8,color:"#9FF"}}>✓ RAM: 32GB DDR5</div>
-              <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--accent)"}}>→ Calculating upgrades...</div>
+              <div style={{fontFamily:"var(--mono)",fontSize:12,color:"#7FE2FF",fontWeight:700}}>$ scanning hardware...</div>
+              <div style={{fontFamily:"var(--mono)",fontSize:11,color:"#7FFFB0",fontWeight:600}}>✓ CPU: i7-13700K</div>
+              <div style={{fontFamily:"var(--mono)",fontSize:11,color:"#7FFFB0",fontWeight:600}}>✓ GPU: RTX 4070</div>
+              <div style={{fontFamily:"var(--mono)",fontSize:11,color:"#7FFFB0",fontWeight:600}}>✓ RAM: 32GB DDR5</div>
+              <div style={{fontFamily:"var(--mono)",fontSize:11,color:"#FFA552",fontWeight:700}}>→ Calculating upgrades...</div>
             </div>
           </div>
           <div style={{display:"flex",flexDirection:"column",gap:5,marginBottom:12}}>
