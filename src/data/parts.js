@@ -151987,7 +151987,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T13:17:14.411Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 100375,
@@ -153793,7 +153794,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 100457,
@@ -156592,7 +156594,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.768Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 100572,
@@ -156614,7 +156617,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.768Z",
     "source": "amazon-discovery",
     "watts": 550,
-    "modular": "Full"
+    "modular": "Full",
+    "needsReview": true
   },
   {
     "id": 100573,
@@ -156634,7 +156638,8 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.768Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true
   },
   {
     "id": 100574,
@@ -163776,7 +163781,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.786Z",
     "source": "amazon-discovery",
-    "rgb": true
+    "rgb": true,
+    "needsReview": true
   },
   {
     "id": 100878,
@@ -163817,7 +163823,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.788Z",
     "source": "amazon-discovery",
-    "rgb": true
+    "rgb": true,
+    "needsReview": true
   },
   {
     "id": 100880,
@@ -163838,7 +163845,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.788Z",
     "source": "amazon-discovery",
-    "rgb": true
+    "rgb": true,
+    "needsReview": true
   },
   {
     "id": 100881,
@@ -163859,7 +163867,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.788Z",
     "source": "amazon-discovery",
-    "rgb": true
+    "rgb": true,
+    "needsReview": true
   },
   {
     "id": 100882,

@@ -3308,7 +3308,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
 
       {/* Main table */}
       <div>
-        <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:10}}>
+        <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:10,position:"sticky",top:64,zIndex:50,background:"var(--bg)",padding:"10px 0",borderBottom:"1px solid var(--bdr)"}}>
           <div style={{flex:1,position:"relative"}}>
             <span style={{position:"absolute",left:8,top:"50%",transform:"translateY(-50%)",fontSize:13,color:"var(--mute)"}}>🔍</span>
             <input value={q} onChange={e=>setQ(e.target.value)} placeholder={`Search ${meta.label.toLowerCase()}...`}
