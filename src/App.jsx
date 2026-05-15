@@ -4679,7 +4679,7 @@ export default function App(){
 
     if (pathBase && validPages.includes(pathBase)) {
       setPageRaw(pathBase);
-      window.history.replaceState({page:pathBase}, "", "/" + pathBase);
+      window.history.replaceState({page:pathBase}, "", "/" + pathBase + window.location.search);
     } else if (!pathBase) {
       // Root path "/"
       setPageRaw("home");
@@ -4691,7 +4691,7 @@ export default function App(){
       if (hashBase && validPages.includes(hashBase)) {
         setPageRaw(hashBase);
         // Migrate legacy hash URL to clean path URL
-        window.history.replaceState({page:hashBase}, "", "/" + hashBase);
+        window.history.replaceState({page:hashBase}, "", "/" + hashBase + window.location.search);
       } else {
         setPageRaw("home");
         window.history.replaceState({page:"home"}, "", "/");
