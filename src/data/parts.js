@@ -151938,7 +151938,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "noise": 30,
+    "rpm": 2000
   },
   {
     "id": 100355,
@@ -151967,7 +151969,8 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "noise": 31.9
   },
   {
     "id": 100356,
@@ -151996,7 +151999,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 78.86,
+    "noise": 33.88,
+    "rpm": 2800
   },
   {
     "id": 100357,
@@ -152025,7 +152031,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "noise": 14.4,
+    "rpm": 5200
   },
   {
     "id": 100358,
@@ -152055,7 +152063,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "noise": 20,
+    "rpm": 2100
   },
   {
     "id": 100359,
@@ -152083,7 +152093,10 @@ export const PARTS = [
     "fanCount": 3,
     "sockets": [
       "AM5"
-    ]
+    ],
+    "airflow": 227.4,
+    "noise": 36,
+    "rpm": 2100
   },
   {
     "id": 100360,
@@ -152105,7 +152118,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
     "tdp_rating": 130,
-    "bench": 41
+    "bench": 41,
+    "airflow": 34.9,
+    "noise": 25.4,
+    "rpm": 2000
   },
   {
     "id": 100361,
@@ -152131,7 +152147,10 @@ export const PARTS = [
     "sockets": [
       "AM4",
       "AM3"
-    ]
+    ],
+    "airflow": 86.3,
+    "noise": 24.4,
+    "rpm": 1400
   },
   {
     "id": 100362,
@@ -152156,7 +152175,10 @@ export const PARTS = [
     "bench": 44,
     "sockets": [
       "AM4"
-    ]
+    ],
+    "airflow": 86.3,
+    "noise": 23.7,
+    "rpm": 1400
   },
   {
     "id": 100363,
@@ -152181,7 +152203,10 @@ export const PARTS = [
     "bench": 47,
     "sockets": [
       "AM4"
-    ]
+    ],
+    "airflow": 49.2,
+    "noise": 24.4,
+    "rpm": 1600
   },
   {
     "id": 100364,
@@ -152209,7 +152234,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 88.89,
+    "noise": 25.9,
+    "rpm": 1850
   },
   {
     "id": 100365,
@@ -152236,7 +152264,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 70.84,
+    "noise": 29.8,
+    "rpm": 2000
   },
   {
     "id": 100366,
@@ -152263,7 +152294,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 88.89,
+    "noise": 29.5,
+    "rpm": 1850
   },
   {
     "id": 100367,
@@ -152289,7 +152323,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 160,
+    "noise": 29.6,
+    "rpm": 1850
   },
   {
     "id": 100368,
@@ -152315,7 +152352,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1500
   },
   {
     "id": 100369,
@@ -152338,7 +152378,10 @@ export const PARTS = [
     "source": "amazon-discovery",
     "tdp_rating": 130,
     "bench": 41,
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "airflow": 35.5,
+    "noise": 24.8,
+    "rpm": 1700
   },
   {
     "id": 100370,
@@ -152368,7 +152411,9 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 110,
+    "rpm": 2500
   },
   {
     "id": 100371,
@@ -152396,7 +152441,8 @@ export const PARTS = [
     "fanCount": 3,
     "sockets": [
       "sTR5"
-    ]
+    ],
+    "rpm": 1600
   },
   {
     "id": 100372,
@@ -152421,7 +152467,8 @@ export const PARTS = [
     "radSize": 360,
     "bench": 52,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "rpm": 1600
   },
   {
     "id": 100373,
@@ -152446,7 +152493,8 @@ export const PARTS = [
     "radSize": 360,
     "bench": 60,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "rpm": 1600
   },
   {
     "id": 100374,
@@ -152489,7 +152537,9 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.411Z",
     "source": "amazon-discovery",
-    "bench": 36
+    "bench": 36,
+    "noise": 30,
+    "rpm": 3600
   },
   {
     "id": 100376,
@@ -152517,7 +152567,9 @@ export const PARTS = [
     "fanCount": 3,
     "sockets": [
       "AM5"
-    ]
+    ],
+    "noise": 37,
+    "rpm": 2000
   },
   {
     "id": 100377,
@@ -152539,7 +152591,9 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.411Z",
     "source": "amazon-discovery",
     "bench": 39,
-    "coolerType": "AIO"
+    "coolerType": "AIO",
+    "noise": 28.9,
+    "rpm": 1850
   },
   {
     "id": 100378,
@@ -164968,7 +165022,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "coolerType": "Air",
-    "bench": 26
+    "bench": 26,
+    "airflow": 47.1,
+    "noise": 29.1,
+    "rpm": 2500
   },
   {
     "id": 100901,
@@ -164994,7 +165051,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1550
   },
   {
     "id": 100902,
@@ -165021,7 +165081,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 74.9,
+    "noise": 25.6,
+    "rpm": 2000
   },
   {
     "id": 100903,
@@ -165048,7 +165111,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 38.09,
+    "noise": 27.07,
+    "rpm": 2200
   },
   {
     "id": 100904,
@@ -165074,7 +165140,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 41,
+    "noise": 29.5,
+    "rpm": 2400
   },
   {
     "id": 100905,
@@ -165101,7 +165170,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 58,
+    "noise": 27.2,
+    "rpm": 2000
   },
   {
     "id": 100906,
@@ -165128,7 +165200,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 70.84,
+    "noise": 29.8,
+    "rpm": 2000
   },
   {
     "id": 100907,
@@ -165180,7 +165255,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 32.77,
+    "noise": 25,
+    "rpm": 2200
   },
   {
     "id": 100909,
@@ -165206,7 +165284,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1650
   },
   {
     "id": 100910,
@@ -165233,7 +165314,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 73,
+    "noise": 29,
+    "rpm": 2000
   },
   {
     "id": 100911,
@@ -165258,7 +165342,9 @@ export const PARTS = [
     "bench": 28,
     "sockets": [
       "AM5"
-    ]
+    ],
+    "noise": 22.3,
+    "rpm": 1800
   },
   {
     "id": 100912,
@@ -165284,7 +165370,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 42.58,
+    "noise": 22.4,
+    "rpm": 2700
   },
   {
     "id": 100913,
@@ -165310,7 +165399,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 41,
+    "noise": 29.5,
+    "rpm": 2400
   },
   {
     "id": 100914,
@@ -165336,7 +165428,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 68.9,
+    "noise": 28.2,
+    "rpm": 2000
   },
   {
     "id": 100915,
@@ -165365,7 +165460,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 69,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 100916,
@@ -165392,7 +165490,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 136.81,
+    "noise": 28.4,
+    "rpm": 2150
   },
   {
     "id": 100917,
@@ -165414,7 +165515,9 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.791Z",
     "source": "amazon-discovery",
     "bench": 43,
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "airflow": 56.3,
+    "rpm": 1800
   },
   {
     "id": 100918,
@@ -165443,7 +165546,8 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "noise": 30
   },
   {
     "id": 100919,
@@ -165472,7 +165576,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 71.89,
+    "noise": 35.4,
+    "rpm": 2000
   },
   {
     "id": 100920,
@@ -165500,7 +165607,9 @@ export const PARTS = [
     "sockets": [
       "LGA1851",
       "LGA1700"
-    ]
+    ],
+    "airflow": 69.9,
+    "rpm": 1900
   },
   {
     "id": 100921,
@@ -165529,7 +165638,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "noise": 34.5,
+    "rpm": 1000
   },
   {
     "id": 100922,
@@ -165554,7 +165665,9 @@ export const PARTS = [
     "radSize": 420,
     "bench": 61,
     "radiator": 420,
-    "fanCount": 3
+    "fanCount": 3,
+    "noise": 34.3,
+    "rpm": 3500
   },
   {
     "id": 100923,
@@ -165607,7 +165720,10 @@ export const PARTS = [
     "radSize": 140,
     "bench": 20,
     "radiator": 140,
-    "fanCount": 1
+    "fanCount": 1,
+    "airflow": 253,
+    "noise": 34.7,
+    "rpm": 2000
   },
   {
     "id": 100925,
@@ -165636,7 +165752,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "LGA1700"
-    ]
+    ],
+    "noise": 25.47,
+    "rpm": 3000
   },
   {
     "id": 100926,
@@ -165660,7 +165778,10 @@ export const PARTS = [
     "coolerType": "AIO",
     "bench": 15,
     "radiator": 140,
-    "fanCount": 1
+    "fanCount": 1,
+    "airflow": 253,
+    "noise": 34.7,
+    "rpm": 3000
   },
   {
     "id": 100927,
@@ -165684,7 +165805,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "bench": 15,
     "radiator": 140,
-    "fanCount": 1
+    "fanCount": 1,
+    "noise": 34.7,
+    "rpm": 1800
   },
   {
     "id": 100928,
@@ -165708,7 +165831,9 @@ export const PARTS = [
     "coolerType": "AIO",
     "bench": 15,
     "radiator": 140,
-    "fanCount": 1
+    "fanCount": 1,
+    "noise": 30.7,
+    "rpm": 1800
   },
   {
     "id": 100929,
@@ -165733,7 +165858,10 @@ export const PARTS = [
     "radSize": 140,
     "bench": 15,
     "radiator": 420,
-    "fanCount": 3
+    "fanCount": 3,
+    "airflow": 244.8,
+    "noise": 25,
+    "rpm": 2000
   },
   {
     "id": 100930,
@@ -165761,7 +165889,10 @@ export const PARTS = [
     "fanCount": 3,
     "sockets": [
       "sTR5"
-    ]
+    ],
+    "airflow": 119.6,
+    "noise": 31.6,
+    "rpm": 4000
   },
   {
     "id": 100931,
@@ -165790,7 +165921,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 72,
+    "noise": 31,
+    "rpm": 2200
   },
   {
     "id": 100932,
@@ -165816,7 +165950,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 42.58,
+    "noise": 22.4,
+    "rpm": 2700
   },
   {
     "id": 100933,
@@ -165842,7 +165979,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1550
   },
   {
     "id": 100934,
@@ -165869,7 +166009,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 33,
+    "noise": 30.6,
+    "rpm": 2500
   },
   {
     "id": 100935,
@@ -165895,7 +166038,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 42.58,
+    "noise": 22.4,
+    "rpm": 2700
   },
   {
     "id": 100936,
@@ -165922,7 +166068,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 54.6,
+    "noise": 31.2,
+    "rpm": 3300
   },
   {
     "id": 100937,
@@ -165948,7 +166097,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 72.37,
+    "noise": 7,
+    "rpm": 2000
   },
   {
     "id": 100938,
@@ -165973,7 +166125,10 @@ export const PARTS = [
     "bench": 37,
     "sockets": [
       "AM4"
-    ]
+    ],
+    "airflow": 59,
+    "noise": 26.1,
+    "rpm": 1800
   },
   {
     "id": 100939,
@@ -166026,7 +166181,9 @@ export const PARTS = [
     "bench": 41,
     "sockets": [
       "AM5"
-    ]
+    ],
+    "noise": 23.6,
+    "rpm": 2500
   },
   {
     "id": 100941,
@@ -166051,7 +166208,10 @@ export const PARTS = [
     "bench": 33,
     "sockets": [
       "AM4"
-    ]
+    ],
+    "airflow": 42.58,
+    "noise": 22.4,
+    "rpm": 2700
   },
   {
     "id": 100942,
@@ -166077,7 +166237,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 42.58,
+    "noise": 22.4,
+    "rpm": 2700
   },
   {
     "id": 100943,
@@ -166108,7 +166271,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 165,
+    "noise": 30,
+    "rpm": 2700
   },
   {
     "id": 100944,
@@ -166135,7 +166301,9 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "noise": 19,
+    "rpm": 2100
   },
   {
     "id": 100945,
@@ -166160,7 +166328,10 @@ export const PARTS = [
     "bench": 35,
     "sockets": [
       "AM4"
-    ]
+    ],
+    "airflow": 59,
+    "noise": 26.1,
+    "rpm": 1800
   },
   {
     "id": 100946,
@@ -166187,7 +166358,9 @@ export const PARTS = [
       "AM5",
       "AM4",
       "AM3"
-    ]
+    ],
+    "noise": 14.4,
+    "rpm": 1800
   },
   {
     "id": 100947,
@@ -166212,7 +166385,10 @@ export const PARTS = [
     "bench": 33,
     "sockets": [
       "AM4"
-    ]
+    ],
+    "airflow": 42.58,
+    "noise": 22.4,
+    "rpm": 2700
   },
   {
     "id": 100948,
@@ -166238,7 +166414,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "noise": 27.2,
+    "rpm": 1750
   },
   {
     "id": 100949,
@@ -166265,7 +166443,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "noise": 31.4,
+    "rpm": 1500
   },
   {
     "id": 100950,
@@ -166292,7 +166472,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 45.14,
+    "rpm": 2500
   },
   {
     "id": 100951,
@@ -166315,7 +166497,10 @@ export const PARTS = [
     "source": "amazon-discovery",
     "coolerType": "Air",
     "tdp_rating": 260,
-    "bench": 45
+    "bench": 45,
+    "airflow": 75.2,
+    "noise": 30,
+    "rpm": 2400
   },
   {
     "id": 100952,
@@ -166343,7 +166528,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 78.25,
+    "noise": 29.85,
+    "rpm": 1800
   },
   {
     "id": 100953,
@@ -166368,7 +166556,10 @@ export const PARTS = [
     "coolerType": "Air",
     "sockets": [
       "LGA1151"
-    ]
+    ],
+    "airflow": 54.8,
+    "noise": 35,
+    "rpm": 2800
   },
   {
     "id": 100954,
@@ -166394,7 +166585,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "noise": 31.2,
+    "rpm": 2000
   },
   {
     "id": 100955,
@@ -166422,7 +166615,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 78.25,
+    "noise": 29.85,
+    "rpm": 2000
   },
   {
     "id": 100956,
@@ -166443,7 +166639,10 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
     "source": "amazon-discovery",
-    "bench": 27
+    "bench": 27,
+    "airflow": 78.25,
+    "noise": 29.85,
+    "rpm": 2000
   },
   {
     "id": 100957,
@@ -166469,7 +166668,10 @@ export const PARTS = [
     "bench": 26,
     "sockets": [
       "LGA1700"
-    ]
+    ],
+    "airflow": 40.9,
+    "noise": 36,
+    "rpm": 3400
   },
   {
     "id": 100958,
@@ -166491,7 +166693,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.793Z",
     "source": "amazon-discovery",
     "bench": 28,
-    "coolerType": "Air"
+    "coolerType": "Air",
+    "rpm": 3600
   },
   {
     "id": 100959,
@@ -166513,7 +166716,9 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.793Z",
     "source": "amazon-discovery",
     "bench": 39,
-    "airflow": 41.59
+    "airflow": 41.59,
+    "noise": 31.5,
+    "rpm": 2000
   },
   {
     "id": 100960,
@@ -166565,7 +166770,9 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 58,
+    "rpm": 2900
   },
   {
     "id": 100962,
@@ -166593,7 +166800,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 76.16,
+    "noise": 35.2,
+    "rpm": 1800
   },
   {
     "id": 100963,
@@ -166624,7 +166834,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 58,
+    "noise": 27,
+    "rpm": 2900
   },
   {
     "id": 100964,
@@ -166651,7 +166864,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 67.58,
+    "noise": 28,
+    "rpm": 1800
   },
   {
     "id": 100965,
@@ -166673,7 +166889,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.793Z",
     "source": "amazon-discovery",
     "coolerType": "Air",
-    "bench": 26
+    "bench": 26,
+    "airflow": 79.7,
+    "noise": 33.9,
+    "rpm": 2500
   },
   {
     "id": 100966,
@@ -166700,7 +166919,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 65.2,
+    "noise": 33.9,
+    "rpm": 1850
   },
   {
     "id": 100967,
@@ -166758,7 +166980,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 58,
+    "noise": 27,
+    "rpm": 2900
   },
   {
     "id": 100969,
@@ -166785,7 +167010,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1550
   },
   {
     "id": 100970,
@@ -166811,7 +167039,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1500
   },
   {
     "id": 100971,
@@ -166833,7 +167064,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.794Z",
     "source": "amazon-discovery",
     "bench": 36,
-    "fanCount": 3
+    "fanCount": 3,
+    "airflow": 67,
+    "noise": 37.7,
+    "rpm": 2400
   },
   {
     "id": 100972,
@@ -166883,7 +167117,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 78.86,
+    "noise": 30,
+    "rpm": 1000
   },
   {
     "id": 100974,
@@ -166907,7 +167144,9 @@ export const PARTS = [
     "bench": 34,
     "coolerType": "AIO",
     "radiator": 280,
-    "fanCount": 2
+    "fanCount": 2,
+    "noise": 34.48,
+    "rpm": 2800
   },
   {
     "id": 100975,
@@ -166957,7 +167196,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 61.3,
+    "noise": 35,
+    "rpm": 3200
   },
   {
     "id": 100977,
@@ -167016,7 +167258,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 165,
+    "noise": 30,
+    "rpm": 2700
   },
   {
     "id": 100979,
@@ -167045,7 +167290,9 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "noise": 32,
+    "rpm": 3000
   },
   {
     "id": 100980,
@@ -167072,7 +167319,10 @@ export const PARTS = [
     "fanCount": 2,
     "sockets": [
       "AM5"
-    ]
+    ],
+    "airflow": 70.7,
+    "noise": 25,
+    "rpm": 2500
   },
   {
     "id": 100981,
@@ -167101,7 +167351,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 190,
+    "noise": 38.5,
+    "rpm": 2500
   },
   {
     "id": 100982,
@@ -167126,7 +167379,10 @@ export const PARTS = [
     "radSize": 120,
     "bench": 33,
     "radiator": 120,
-    "fanCount": 1
+    "fanCount": 1,
+    "airflow": 62,
+    "noise": 27,
+    "rpm": 1800
   },
   {
     "id": 100983,
@@ -167156,7 +167412,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 72.37,
+    "noise": 15,
+    "rpm": 2200
   },
   {
     "id": 100984,
@@ -167184,7 +167443,9 @@ export const PARTS = [
     "fanCount": 2,
     "sockets": [
       "LGA1151"
-    ]
+    ],
+    "airflow": 66.7,
+    "noise": 30
   },
   {
     "id": 100985,
@@ -167213,7 +167474,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 84.2,
+    "noise": 39.5,
+    "rpm": 2100
   },
   {
     "id": 100986,
@@ -167242,7 +167506,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 190,
+    "noise": 38.5,
+    "rpm": 2500
   },
   {
     "id": 100987,
@@ -167272,7 +167539,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 207,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 100988,
@@ -167301,7 +167571,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1549
   },
   {
     "id": 100989,
@@ -172569,7 +172842,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 92,
+    "noise": 36,
+    "rpm": 2150
   },
   {
     "id": 101222,
@@ -172596,7 +172872,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 69,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 101223,
@@ -172625,7 +172904,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 92,
+    "noise": 36,
+    "rpm": 2150
   },
   {
     "id": 101224,
@@ -172652,7 +172934,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 69,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 101225,
@@ -172678,7 +172963,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 69,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 101226,
@@ -172704,7 +172992,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 35,
+    "rpm": 1500
   },
   {
     "id": 101227,
@@ -172731,7 +173022,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "rpm": 1500
   },
   {
     "id": 101228,
@@ -172757,7 +173050,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 2400
   },
   {
     "id": 101229,
@@ -172784,7 +173080,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 69,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 101230,
@@ -172810,7 +173109,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1500
   },
   {
     "id": 101231,
@@ -172836,7 +173138,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 69,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 101232,
@@ -172863,7 +173168,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 66,
+    "noise": 25.6,
+    "rpm": 1500
   },
   {
     "id": 101233,
@@ -172889,7 +173197,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 70.4,
+    "noise": 27,
+    "rpm": 1850
   },
   {
     "id": 101234,
@@ -172917,7 +173228,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 70.84,
+    "noise": 29.8,
+    "rpm": 2000
   },
   {
     "id": 101235,
@@ -172944,7 +173258,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1500
   },
   {
     "id": 101236,
@@ -172971,7 +173288,10 @@ export const PARTS = [
     "fanCount": 3,
     "sockets": [
       "AM5"
-    ]
+    ],
+    "airflow": 73.14,
+    "noise": 29.8,
+    "rpm": 2500
   },
   {
     "id": 101237,
@@ -173000,7 +173320,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "noise": 31,
+    "rpm": 2400
   },
   {
     "id": 101238,
@@ -173029,7 +173351,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 70.84,
+    "noise": 29.8,
+    "rpm": 2000
   },
   {
     "id": 101239,
@@ -173050,7 +173375,10 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:31:54.668Z",
     "source": "amazon-discovery",
-    "bench": 36
+    "bench": 36,
+    "airflow": 75.12,
+    "noise": 30,
+    "rpm": 2400
   },
   {
     "id": 101240,
@@ -173122,7 +173450,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 84.26,
+    "noise": 35.13
   },
   {
     "id": 101243,
@@ -173150,7 +173480,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 192.9,
+    "noise": 30.2,
+    "rpm": 2000
   },
   {
     "id": 101244,
@@ -173203,7 +173536,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 9.8,
+    "noise": 30.2,
+    "rpm": 2000
   },
   {
     "id": 101246,
@@ -173232,7 +173568,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "LGA1851"
-    ]
+    ],
+    "airflow": 80.74,
+    "noise": 36,
+    "rpm": 2500
   },
   {
     "id": 101247,
@@ -173261,7 +173600,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1550
   },
   {
     "id": 101248,
@@ -173289,7 +173631,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 23,
+    "rpm": 1800
   },
   {
     "id": 101249,
@@ -173320,7 +173665,9 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 165.1,
+    "rpm": 2000
   },
   {
     "id": 101250,
@@ -173351,7 +173698,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 58,
+    "noise": 27,
+    "rpm": 2900
   },
   {
     "id": 101251,
@@ -173378,7 +173728,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 2150
   },
   {
     "id": 101252,
@@ -173405,7 +173758,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1550
   },
   {
     "id": 101253,
@@ -173432,7 +173788,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 82,
+    "noise": 29.6,
+    "rpm": 1850
   },
   {
     "id": 101254,
@@ -173458,7 +173817,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "tdp_rating": 270,
+    "noise": 32.6,
+    "rpm": 1800
   },
   {
     "id": 101255,
@@ -173480,7 +173842,9 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
     "coolerType": "Air",
-    "bench": 40
+    "bench": 40,
+    "airflow": 40,
+    "rpm": 2000
   },
   {
     "id": 101256,
@@ -173503,7 +173867,10 @@ export const PARTS = [
     "source": "amazon-discovery",
     "coolerType": "Air",
     "bench": 34,
-    "tdp_rating": 95
+    "tdp_rating": 95,
+    "airflow": 37,
+    "noise": 28,
+    "rpm": 1800
   },
   {
     "id": 101257,
@@ -173530,7 +173897,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 47.5,
+    "noise": 33.2,
+    "rpm": 3000
   },
   {
     "id": 101258,
@@ -173553,7 +173923,10 @@ export const PARTS = [
     "source": "amazon-discovery",
     "coolerType": "Air",
     "bench": 26,
-    "tdp_rating": 95
+    "tdp_rating": 95,
+    "airflow": 29.3,
+    "noise": 29.6,
+    "rpm": 2500
   },
   {
     "id": 101259,
@@ -173578,7 +173951,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "LGA1700"
-    ]
+    ],
+    "airflow": 51.88,
+    "noise": 27,
+    "rpm": 2050
   },
   {
     "id": 101260,
@@ -173631,7 +174007,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 42.58,
+    "noise": 22.4,
+    "rpm": 2700
   },
   {
     "id": 101262,
@@ -173680,7 +174059,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 38.2,
+    "noise": 33,
+    "rpm": 2200
   },
   {
     "id": 101264,
@@ -175990,7 +176372,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 92,
+    "noise": 36,
+    "rpm": 2150
   },
   {
     "id": 101370,
@@ -176017,7 +176402,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 69,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 101371,
@@ -176046,7 +176434,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 92,
+    "noise": 36,
+    "rpm": 2150
   },
   {
     "id": 101372,
@@ -176073,7 +176464,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 69,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 101373,
@@ -176099,7 +176493,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 69,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 101374,
@@ -176125,7 +176522,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 35,
+    "rpm": 1500
   },
   {
     "id": 101375,
@@ -176152,7 +176552,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "rpm": 1500
   },
   {
     "id": 101376,
@@ -176178,7 +176580,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 2400
   },
   {
     "id": 101377,
@@ -176205,7 +176610,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 69,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 101378,
@@ -176231,7 +176639,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1500
   },
   {
     "id": 101379,
@@ -176257,7 +176668,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 69,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 101380,
@@ -176284,7 +176698,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 66,
+    "noise": 25.6,
+    "rpm": 1500
   },
   {
     "id": 101381,
@@ -176310,7 +176727,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 70.4,
+    "noise": 27,
+    "rpm": 1850
   },
   {
     "id": 101382,
@@ -176338,7 +176758,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 70.84,
+    "noise": 29.8,
+    "rpm": 2000
   },
   {
     "id": 101383,
@@ -176365,7 +176788,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1500
   },
   {
     "id": 101384,
@@ -176392,7 +176818,10 @@ export const PARTS = [
     "fanCount": 3,
     "sockets": [
       "AM5"
-    ]
+    ],
+    "airflow": 73.14,
+    "noise": 29.8,
+    "rpm": 2500
   },
   {
     "id": 101385,
@@ -176421,7 +176850,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "noise": 31,
+    "rpm": 2400
   },
   {
     "id": 101386,
@@ -176450,7 +176881,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 70.84,
+    "noise": 29.8,
+    "rpm": 2000
   },
   {
     "id": 101387,
@@ -176471,7 +176905,10 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
     "source": "amazon-discovery",
-    "bench": 36
+    "bench": 36,
+    "airflow": 75.12,
+    "noise": 30,
+    "rpm": 2400
   },
   {
     "id": 101388,
@@ -176543,7 +176980,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 84.26,
+    "noise": 35.13
   },
   {
     "id": 101391,
@@ -176571,7 +177010,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 192.9,
+    "noise": 30.2,
+    "rpm": 2000
   },
   {
     "id": 101392,
@@ -176624,7 +177066,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 9.8,
+    "noise": 30.2,
+    "rpm": 2000
   },
   {
     "id": 101394,
@@ -176653,7 +177098,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "LGA1851"
-    ]
+    ],
+    "airflow": 80.74,
+    "noise": 36,
+    "rpm": 2500
   },
   {
     "id": 101395,
@@ -176682,7 +177130,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1550
   },
   {
     "id": 101396,
@@ -176710,7 +177161,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 23,
+    "rpm": 1800
   },
   {
     "id": 101397,
@@ -176741,7 +177195,9 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 165.1,
+    "rpm": 2000
   },
   {
     "id": 101398,
@@ -176772,7 +177228,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 58,
+    "noise": 27,
+    "rpm": 2900
   },
   {
     "id": 101399,
@@ -176799,7 +177258,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 2150
   },
   {
     "id": 101400,
@@ -176826,7 +177288,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1550
   },
   {
     "id": 101401,
@@ -176853,7 +177318,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 82,
+    "noise": 29.6,
+    "rpm": 1850
   },
   {
     "id": 101402,
@@ -176879,7 +177347,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "tdp_rating": 270,
+    "noise": 32.6,
+    "rpm": 1800
   },
   {
     "id": 101403,
@@ -176901,7 +177372,9 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
     "coolerType": "Air",
-    "bench": 40
+    "bench": 40,
+    "airflow": 40,
+    "rpm": 2000
   },
   {
     "id": 101404,
@@ -176924,7 +177397,10 @@ export const PARTS = [
     "source": "amazon-discovery",
     "coolerType": "Air",
     "bench": 34,
-    "tdp_rating": 95
+    "tdp_rating": 95,
+    "airflow": 37,
+    "noise": 28,
+    "rpm": 1800
   },
   {
     "id": 101405,
@@ -176951,7 +177427,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 47.5,
+    "noise": 33.2,
+    "rpm": 3000
   },
   {
     "id": 101406,
@@ -176974,7 +177453,10 @@ export const PARTS = [
     "source": "amazon-discovery",
     "coolerType": "Air",
     "bench": 26,
-    "tdp_rating": 95
+    "tdp_rating": 95,
+    "airflow": 29.3,
+    "noise": 29.6,
+    "rpm": 2500
   },
   {
     "id": 101407,
@@ -176999,7 +177481,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "LGA1700"
-    ]
+    ],
+    "airflow": 51.88,
+    "noise": 27,
+    "rpm": 2050
   },
   {
     "id": 101408,
@@ -177052,7 +177537,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 42.58,
+    "noise": 22.4,
+    "rpm": 2700
   },
   {
     "id": 101410,
@@ -177101,7 +177589,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 38.2,
+    "noise": 33,
+    "rpm": 2200
   },
   {
     "id": 101412,
@@ -187089,7 +187580,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 92,
+    "noise": 36,
+    "rpm": 2150
   },
   {
     "id": 101902,
@@ -187116,7 +187610,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 69,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 101903,
@@ -187142,7 +187639,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 69,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 101904,
@@ -187168,7 +187668,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 35,
+    "rpm": 1500
   },
   {
     "id": 101905,
@@ -187194,7 +187697,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "airflow": 69,
+    "noise": 27,
+    "rpm": 2150
   },
   {
     "id": 101906,
@@ -187221,7 +187727,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1500
   },
   {
     "id": 101907,
@@ -187248,7 +187757,10 @@ export const PARTS = [
     "fanCount": 3,
     "sockets": [
       "AM5"
-    ]
+    ],
+    "airflow": 73.14,
+    "noise": 29.8,
+    "rpm": 2500
   },
   {
     "id": 101908,
@@ -187277,7 +187789,9 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "noise": 31,
+    "rpm": 2400
   },
   {
     "id": 101909,
@@ -187372,7 +187886,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 2150
   },
   {
     "id": 101913,
@@ -187399,7 +187916,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 66.17,
+    "noise": 25.6,
+    "rpm": 1550
   },
   {
     "id": 101914,
@@ -187426,7 +187946,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1851"
-    ]
+    ],
+    "airflow": 82,
+    "noise": 29.6,
+    "rpm": 1850
   },
   {
     "id": 101915,
@@ -187452,7 +187975,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "AM4"
-    ]
+    ],
+    "tdp_rating": 270,
+    "noise": 32.6,
+    "rpm": 1800
   },
   {
     "id": 101916,
@@ -187474,7 +188000,9 @@ export const PARTS = [
     "addedAt": "2026-05-15T17:05:43.675Z",
     "source": "amazon-discovery",
     "coolerType": "Air",
-    "bench": 40
+    "bench": 40,
+    "airflow": 40,
+    "rpm": 2000
   },
   {
     "id": 101917,
@@ -187497,7 +188025,10 @@ export const PARTS = [
     "source": "amazon-discovery",
     "coolerType": "Air",
     "bench": 34,
-    "tdp_rating": 95
+    "tdp_rating": 95,
+    "airflow": 37,
+    "noise": 28,
+    "rpm": 1800
   },
   {
     "id": 101918,
@@ -187522,7 +188053,10 @@ export const PARTS = [
     "sockets": [
       "AM5",
       "LGA1700"
-    ]
+    ],
+    "airflow": 51.88,
+    "noise": 27,
+    "rpm": 2050
   },
   {
     "id": 101919,
@@ -187575,7 +188109,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 42.58,
+    "noise": 22.4,
+    "rpm": 2700
   },
   {
     "id": 101921,
@@ -187624,7 +188161,10 @@ export const PARTS = [
       "AM5",
       "AM4",
       "LGA1700"
-    ]
+    ],
+    "airflow": 38.2,
+    "noise": 33,
+    "rpm": 2200
   },
   {
     "id": 101923,
