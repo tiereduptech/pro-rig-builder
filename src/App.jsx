@@ -233,11 +233,21 @@ const CONDITIONS = [
 function productConditions(p) {
   if (!p.deals || typeof p.deals !== "object") return [];
   const conds = new Set();
+  // Check product name first — if name says Renewed/Refurb/Used, that overrides default "new"
+  const name = String(p.n || "");
+  const nameIsUsed = /\b(used|pre[\-\s]?owned)\b/i.test(name);
+  const nameIsRefurb = /\b(renewed|refurb(?:ished)?)\b/i.test(name);
+  const nameIsOpenBox = /\bopen[\s\-]?box\b/i.test(name);
   for (const [key, info] of Object.entries(p.deals)) {
     if (!info || typeof info !== "object" || !(info.price || info.saleprice)) continue;
-    if (/_openbox$/i.test(key)) conds.add("openbox");
-    else if (/_refurb$/i.test(key)) conds.add("refurb");
-    else if (/_used$/i.test(key)) conds.add("used");
+    // Explicit suffix mapping
+    if (/_openbox$/i.test(key)) { conds.add("openbox"); continue; }
+    if (/_refurb$/i.test(key)) { conds.add("refurb"); continue; }
+    if (/_used$/i.test(key)) { conds.add("used"); continue; }
+    // Unsuffixed key — fall back to product name to detect condition
+    if (nameIsUsed) conds.add("used");
+    else if (nameIsRefurb) conds.add("refurb");
+    else if (nameIsOpenBox) conds.add("openbox");
     else conds.add("new");
   }
   return [...conds];
