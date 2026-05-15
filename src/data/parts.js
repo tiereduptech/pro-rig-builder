@@ -176231,7 +176231,6 @@ export const PARTS = [
     "msrp": 119.99,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/61z3ENJubZL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FC5SJNQX",
@@ -176252,7 +176251,6 @@ export const PARTS = [
     "msrp": 29.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/51z74wV2iHL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B086PJKVVT",
@@ -176313,7 +176311,6 @@ export const PARTS = [
     "msrp": 94.9,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/51WdamRdr4L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07P6DMQK3",
@@ -176374,7 +176371,6 @@ export const PARTS = [
     "msrp": 99,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/51VRu0zm1IL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DXXM35BW",
@@ -176495,7 +176491,6 @@ export const PARTS = [
     "msrp": 34.44,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/61Syl8a3uwL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0C42H2P2G",
@@ -176536,7 +176531,6 @@ export const PARTS = [
     "msrp": 60,
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/51R2h3XTfgL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0B1T5LN6X",
@@ -176557,7 +176551,6 @@ export const PARTS = [
     "msrp": 97.64,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/619xpFKAXPL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0D6PBTCGV",
@@ -176618,7 +176611,6 @@ export const PARTS = [
     "msrp": 68.2,
     "r": 3.7,
     "img": "https://m.media-amazon.com/images/I/61EvW+4R-FL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B09YTN2K4D",
@@ -176639,7 +176631,6 @@ export const PARTS = [
     "msrp": 33.49,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/71iWqlfgE7L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B09TTT44PP",
@@ -176660,7 +176651,6 @@ export const PARTS = [
     "msrp": 79.99,
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/81-nE4e2YvL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B09Z66S64T",
@@ -176681,7 +176671,6 @@ export const PARTS = [
     "msrp": 49.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/61mH6TLiDfL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B09J97T8DM",
@@ -176722,7 +176711,6 @@ export const PARTS = [
     "msrp": 42.95,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/61Rtim+lldL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DD9H52X4",
@@ -176883,7 +176871,6 @@ export const PARTS = [
     "msrp": 119.99,
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/71JYWYqicqL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DVD5RTZ5",
@@ -176904,7 +176891,6 @@ export const PARTS = [
     "msrp": 74.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/61iiZ-gDYEL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07FNJB8TT",
@@ -176965,7 +176951,6 @@ export const PARTS = [
     "msrp": 79.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/61EoVK01-gL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FKJ2J2R8",
@@ -177066,7 +177051,6 @@ export const PARTS = [
     "msrp": 129.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/41rF-VX-IFL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FCXYT2PV",
@@ -177127,7 +177111,6 @@ export const PARTS = [
     "msrp": 46.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/61UG3YVcW-L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CTN26P3Z",
@@ -177288,7 +177271,6 @@ export const PARTS = [
     "msrp": 99.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/71iyRkaBAEL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FGGZK4X7",
@@ -177609,7 +177591,6 @@ export const PARTS = [
     "msrp": 54.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/61cJVGtAeIL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DK8WN5B7",
@@ -177670,7 +177651,6 @@ export const PARTS = [
     "msrp": 64.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/61IATVxjPyL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CS68QV83",
@@ -179531,7 +179511,6 @@ export const PARTS = [
     "msrp": 109.95,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/61bQrTxtMlL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DZMLL649",
@@ -184872,7 +184851,6 @@ export const PARTS = [
     "msrp": 9.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/81NLgh-2QfL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B088539GLT",
