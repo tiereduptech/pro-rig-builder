@@ -531,7 +531,7 @@ namespace ProRigScanner
             var jsonPairs = data.Select(kv => $"\"{Escape(kv.Key)}\":\"{Escape(kv.Value)}\"");
             string json = "{" + string.Join(",", jsonPairs) + "}";
             string encoded = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(json));
-            return $"{baseUrl}/#upgrade?specs={WebUtility.UrlEncode(encoded)}";
+            return $"{baseUrl}/upgrade?specs={WebUtility.UrlEncode(encoded)}";
         }
 
         string Clean(string s) => s.Trim().Replace("  ", " ").Replace("(R)", "").Replace("(TM)", "").Replace("(tm)", "");
