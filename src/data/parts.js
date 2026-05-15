@@ -149687,13 +149687,12 @@ export const PARTS = [
   {
     "id": 100313,
     "c": "CPU",
-    "n": "Ryzen™ 9 9950X3D2 Dual Edition",
+    "n": "AMD Ryzen™ 9 9950X3D2 Dual Edition",
     "b": "AMD",
     "pr": 899,
     "msrp": 899,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/61r7J46WBdL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GTRTJSNZ",
@@ -149708,13 +149707,12 @@ export const PARTS = [
   {
     "id": 100314,
     "c": "CPU",
-    "n": "Ryzen 9 7900 12-Core, 24-Thread Unlocked Desktop Processor",
+    "n": "AMD Ryzen 9 7900 12-Core, 24-Thread Unlocked Desktop Processor",
     "b": "AMD",
     "pr": 403,
     "msrp": 403,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/51pVndhjsYL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BMQK718H",
@@ -149730,18 +149728,17 @@ export const PARTS = [
   {
     "id": 100315,
     "c": "CPU",
-    "n": "Ryzen™ 7 5800XT 8-Core, 16-Thread Unlocked Desktop Processor",
+    "n": "AMD Ryzen™ 7 5800XT 8-Core, 16-Thread Unlocked Desktop Processor",
     "b": "AMD",
-    "pr": 238,
+    "pr": 235,
     "msrp": 238,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/51kIHB4GNYL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0D6NNDQ92",
         "url": "https://www.amazon.com/dp/B0D6NNDQ92?tag=tiereduptech-20",
-        "price": 238,
+        "price": 235,
         "inStock": true
       }
     },
@@ -149752,13 +149749,12 @@ export const PARTS = [
   {
     "id": 100316,
     "c": "CPU",
-    "n": "Ryzen 7 3700X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith Prism LED Cooler",
+    "n": "AMD Ryzen 7 3700X 8-Core, 16-Thread Unlocked Desktop Processor with Wraith Prism LED Cooler",
     "b": "AMD",
     "pr": 299,
     "msrp": 299,
     "r": 4.9,
     "img": "https://m.media-amazon.com/images/I/61wZ8-ijoWL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07SXMZLPK",
@@ -149774,13 +149770,12 @@ export const PARTS = [
   {
     "id": 100317,
     "c": "CPU",
-    "n": "Ryzen 7 5700 8 Cores / 16 Thread 65W TDP Socket AM4 L2+L3 Cache 20MB Up to 4.6GHz Boost Clock Wraith Stealth Cooler",
+    "n": "AMD Ryzen 7 5700 8 Cores / 16 Thread 65W TDP Socket AM4 L2+L3 Cache 20MB Up to 4.6GHz Boost Clock Wraith Stealth Cooler",
     "b": "AMD",
     "pr": 175,
     "msrp": 175,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/510zj43C3iL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FQPCRG7P",
@@ -149798,13 +149793,12 @@ export const PARTS = [
   {
     "id": 100318,
     "c": "CPU",
-    "n": "Ryzen 5 5600GT 6-Core, 12-Thread Desktop Processor",
+    "n": "AMD Ryzen 5 5600GT 6-Core, 12-Thread Desktop Processor",
     "b": "AMD",
     "pr": 179.95,
     "msrp": 179.95,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/61c6fimxtXL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CQ4DTJYX",
@@ -149820,13 +149814,12 @@ export const PARTS = [
   {
     "id": 100319,
     "c": "CPU",
-    "n": "Ryzen 5 7600 6-Core, 12-Thread Unlocked Desktop Processor",
+    "n": "AMD Ryzen 5 7600 6-Core, 12-Thread Unlocked Desktop Processor",
     "b": "AMD",
     "pr": 210.91,
     "msrp": 210.91,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/61h39mKsSBL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BMQJWBDM",
@@ -149842,18 +149835,17 @@ export const PARTS = [
   {
     "id": 100320,
     "c": "CPU",
-    "n": "Core™ i9-14900K Desktop Processor 24 cores (8 P-cores + 16 E-cores) up to 6.0 GHz",
+    "n": "Intel® Core™ i9-14900K Desktop Processor 24 cores (8 P-cores + 16 E-cores) up to 6.0 GHz",
     "b": "Intel",
-    "pr": 429.99,
+    "pr": 469,
     "msrp": 429.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/61aQ0AzVAML._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CHBJGFBC",
         "url": "https://www.amazon.com/dp/B0CHBJGFBC?tag=tiereduptech-20",
-        "price": 429.99,
+        "price": 469,
         "inStock": true
       }
     },
@@ -149864,13 +149856,12 @@ export const PARTS = [
   {
     "id": 100321,
     "c": "CPU",
-    "n": "Core i9-9900K Desktop Processor 8 Cores up to 5.0 GHz Turbo Unlocked LGA1151 300 Series 95W",
+    "n": "Intel Core i9-9900K Desktop Processor 8 Cores up to 5.0 GHz Turbo Unlocked LGA1151 300 Series 95W",
     "b": "Intel",
     "pr": 447,
     "msrp": 447,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/71VnctbNogL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B005404P9I",
@@ -149888,13 +149879,12 @@ export const PARTS = [
   {
     "id": 100322,
     "c": "CPU",
-    "n": "BX80684I99900KF Intel Core i9-9900KF Desktop Processor 8 Cores up to 5.0 GHz Turbo Unlocked Without Processor Graphics LGA1151 300 Series 95W",
+    "n": "Intel BX80684I99900KF Intel Core i9-9900KF Desktop Processor 8 Cores up to 5.0 GHz Turbo Unlocked Without Processor Graphics LGA1151 300 Series 95W",
     "b": "Intel",
     "pr": 399,
     "msrp": 399,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/81eoV5SY8RL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07MGBZWDZ",
@@ -149912,18 +149902,17 @@ export const PARTS = [
   {
     "id": 100323,
     "c": "CPU",
-    "n": "Core i9-14900 Desktop Processor 24 cores (8 P-cores + 16 E-cores) up to 5.8 GHz",
+    "n": "Intel Core i9-14900 Desktop Processor 24 cores (8 P-cores + 16 E-cores) up to 5.8 GHz",
     "b": "Intel",
-    "pr": 584.36,
+    "pr": 589.72,
     "msrp": 584.36,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/61GbKtxb57L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CQ24VW72",
         "url": "https://www.amazon.com/dp/B0CQ24VW72?tag=tiereduptech-20",
-        "price": 584.36,
+        "price": 589.72,
         "inStock": true
       }
     },
@@ -149934,13 +149923,12 @@ export const PARTS = [
   {
     "id": 100324,
     "c": "CPU",
-    "n": "Core i9-9900 Desktop Processor 8 Cores up to 5.0GHz LGA1151 300 Series 65W",
+    "n": "Intel Core i9-9900 Desktop Processor 8 Cores up to 5.0GHz LGA1151 300 Series 65W",
     "b": "Intel",
     "pr": 348.02,
     "msrp": 348.02,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/81eoV5SY8RL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07RXX3Y2T",
@@ -149964,7 +149952,6 @@ export const PARTS = [
     "msrp": 264.99,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/81eoV5SY8RL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B08GRPCWN2",
@@ -149979,13 +149966,12 @@ export const PARTS = [
   {
     "id": 100326,
     "c": "CPU",
-    "n": "Core™ Ultra 9 Desktop Processor 285 24 cores (8 P-cores + 16 E-cores) up to 5.6 GHz",
+    "n": "Intel® Core™ Ultra 9 Desktop Processor 285 24 cores (8 P-cores + 16 E-cores) up to 5.6 GHz",
     "b": "Intel",
     "pr": 579,
     "msrp": 579,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/51CxntPwYkL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DT7JDLDH",
@@ -150001,13 +149987,12 @@ export const PARTS = [
   {
     "id": 100327,
     "c": "CPU",
-    "n": "Core i9-9900K Desktop Processor 8 Cores up to 5.0GHz Unlocked LGA1151 300 Series 95W (BX806849900K)",
+    "n": "Intel Core i9-9900K Desktop Processor 8 Cores up to 5.0GHz Unlocked LGA1151 300 Series 95W (BX806849900K)",
     "b": "Intel",
     "pr": 444.44,
     "msrp": 444.44,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/712kBEVHeXL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B089J731BX",
@@ -150025,13 +150010,12 @@ export const PARTS = [
   {
     "id": 100328,
     "c": "CPU",
-    "n": "Core i7-8700K Desktop Processor 6 Cores up to 4.7GHz Turbo Unlocked LGA1151 300 Series 95W",
+    "n": "Intel Core i7-8700K Desktop Processor 6 Cores up to 4.7GHz Turbo Unlocked LGA1151 300 Series 95W",
     "b": "Intel",
     "pr": 199,
     "msrp": 199,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/71ZUt47fgeL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07598VZR8",
@@ -150055,7 +150039,6 @@ export const PARTS = [
     "msrp": 61.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/61vkuZN5JsL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07MMD4DDJ",
@@ -150073,13 +150056,12 @@ export const PARTS = [
   {
     "id": 100330,
     "c": "CPU",
-    "n": "Core i7-9700K Desktop Processor 8 Cores up to 4.9 GHz Turbo unlocked LGA1151 300 Series 95W",
+    "n": "Intel Core i7-9700K Desktop Processor 8 Cores up to 4.9 GHz Turbo unlocked LGA1151 300 Series 95W",
     "b": "Intel",
     "pr": 279,
     "msrp": 279,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/71Q5sdPHD-L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07HHN6KBZ",
@@ -150103,7 +150085,6 @@ export const PARTS = [
     "msrp": 59.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/41C5WTFh9zL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07P12YB98",
@@ -150126,7 +150107,6 @@ export const PARTS = [
     "msrp": 137,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/61L3bJd5dyL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B01MSTDS3N",
@@ -150141,13 +150121,12 @@ export const PARTS = [
   {
     "id": 100333,
     "c": "CPU",
-    "n": "Core i5-12600K Desktop Processor with Integrated Graphics and 10 (6P+4E) Cores up to 4.9 GHz Unlocked LGA1700 600 Series Chipset 125W",
+    "n": "Intel Core i5-12600K Desktop Processor with Integrated Graphics and 10 (6P+4E) Cores up to 4.9 GHz Unlocked LGA1700 600 Series Chipset 125W",
     "b": "Intel",
     "pr": 219.99,
     "msrp": 219.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/51ugNYlDT1L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B09FX4D72T",
@@ -150164,13 +150143,12 @@ export const PARTS = [
   {
     "id": 100334,
     "c": "CPU",
-    "n": "Core i5 6500 3.20 GHz Quad Core Skylake Desktop Processor, Socket LGA 1151, 6MB Cache [BX80662I56500]",
+    "n": "Intel Core i5 6500 3.20 GHz Quad Core Skylake Desktop Processor, Socket LGA 1151, 6MB Cache [BX80662I56500]",
     "b": "Intel",
     "pr": 60,
     "msrp": 60,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/61my+L5GsFL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B010T6CWI2",
@@ -150192,7 +150170,6 @@ export const PARTS = [
     "msrp": 84.99,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/61juA4lrX6L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DKLDJ9P9",
@@ -150208,13 +150185,12 @@ export const PARTS = [
   {
     "id": 100336,
     "c": "CPU",
-    "n": "Core™ i5-14600K Desktop Processor 14 Cores (6 P-Cores + 8 E-Cores) up to 5.3 GHz",
+    "n": "Intel® Core™ i5-14600K Desktop Processor 14 Cores (6 P-Cores + 8 E-Cores) up to 5.3 GHz",
     "b": "Intel",
     "pr": 262,
     "msrp": 262,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/61mTntMQ4OL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CHBGVFHP",
@@ -150230,13 +150206,12 @@ export const PARTS = [
   {
     "id": 100337,
     "c": "CPU",
-    "n": "Core™ Ultra 7 Processor 270K Plus 24 cores (8 P-cores + 16 E-cores) up to 5.5 GHz",
+    "n": "Intel® Core™ Ultra 7 Processor 270K Plus 24 cores (8 P-cores + 16 E-cores) up to 5.5 GHz",
     "b": "Intel",
     "pr": 279.99,
     "msrp": 279.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/513B3wj3GQL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GMLJCBBM",
@@ -150252,13 +150227,12 @@ export const PARTS = [
   {
     "id": 100338,
     "c": "CPU",
-    "n": "Core™ Ultra 5 Processor 250KF Plus 18 cores (6 P-cores + 12 E-cores) up to 5.3 GHz",
+    "n": "Intel® Core™ Ultra 5 Processor 250KF Plus 18 cores (6 P-cores + 12 E-cores) up to 5.3 GHz",
     "b": "Intel",
     "pr": 199.99,
     "msrp": 199.99,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/41mt8HweE0L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GMLFFHS1",
@@ -150274,13 +150248,12 @@ export const PARTS = [
   {
     "id": 100339,
     "c": "CPU",
-    "n": "Core™ Ultra 5 Processor 250K Plus 18 cores (6 P-cores + 12 E-cores) up to 5.3 GHz",
+    "n": "Intel® Core™ Ultra 5 Processor 250K Plus 18 cores (6 P-cores + 12 E-cores) up to 5.3 GHz",
     "b": "Intel",
     "pr": 219.99,
     "msrp": 219.99,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/51q97nrybGL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GMKXVVJQ",
@@ -150296,13 +150269,12 @@ export const PARTS = [
   {
     "id": 100340,
     "c": "CPU",
-    "n": "Core™ Ultra 7 Desktop Processor 265 20 cores (8 P-cores + 12 E-cores) up to 5.3 GHz",
+    "n": "Intel® Core™ Ultra 7 Desktop Processor 265 20 cores (8 P-cores + 12 E-cores) up to 5.3 GHz",
     "b": "Intel",
     "pr": 316.49,
     "msrp": 316.49,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/61Pf8EErVTL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DT7FY7P3",
@@ -150318,13 +150290,12 @@ export const PARTS = [
   {
     "id": 100341,
     "c": "CPU",
-    "n": "Core™ Ultra 5 Desktop Processor 235 14 cores (6 P-cores + 8 E-cores) up to 5.0 GHz",
+    "n": "Intel® Core™ Ultra 5 Desktop Processor 235 14 cores (6 P-cores + 8 E-cores) up to 5.0 GHz",
     "b": "Intel",
     "pr": 266.21,
     "msrp": 266.21,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/51FXyvLZiCL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DT7DLJ5Z",
@@ -150340,13 +150311,12 @@ export const PARTS = [
   {
     "id": 100342,
     "c": "CPU",
-    "n": "Core™ Ultra 7 Desktop Processor 265F 20 cores (8 P-cores + 12 E-cores) up to 5.3 GHz",
+    "n": "Intel® Core™ Ultra 7 Desktop Processor 265F 20 cores (8 P-cores + 12 E-cores) up to 5.3 GHz",
     "b": "Intel",
     "pr": 332.96,
     "msrp": 332.96,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/61inO8qtOkL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DT7BPC5Q",
@@ -150362,13 +150332,12 @@ export const PARTS = [
   {
     "id": 100343,
     "c": "CPU",
-    "n": "Core™ Ultra 5 Desktop Processor 225F 10 Cores (6 P-cores + 4 E-cores) up to 4.9 GHz",
+    "n": "Intel® Core™ Ultra 5 Desktop Processor 225F 10 Cores (6 P-cores + 4 E-cores) up to 4.9 GHz",
     "b": "Intel",
     "pr": 165.13,
     "msrp": 165.13,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/61iMaYoZ0sL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DTRMDXJ5",
@@ -150384,13 +150353,12 @@ export const PARTS = [
   {
     "id": 100344,
     "c": "CPU",
-    "n": "Core™ Ultra 5 Desktop Processor 225 10 Cores (6 P-cores + 4 E-cores) up to 4.9 GHz",
+    "n": "Intel® Core™ Ultra 5 Desktop Processor 225 10 Cores (6 P-cores + 4 E-cores) up to 4.9 GHz",
     "b": "Intel",
     "pr": 178.55,
     "msrp": 178.55,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/61tSK8xfUWL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DTRYXZFJ",
@@ -150406,13 +150374,12 @@ export const PARTS = [
   {
     "id": 100345,
     "c": "CPU",
-    "n": "Ryzen 7 5700X Octa-core [8 Core] 3.40 GHz Processor",
+    "n": "AMD Ryzen 7 5700X Octa-core [8 Core] 3.40 GHz Processor",
     "b": "AMD",
     "pr": 188.97,
     "msrp": 188.97,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/41HhbUk6OvL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B09ZRLJHMJ",
@@ -150434,7 +150401,6 @@ export const PARTS = [
     "msrp": 809.95,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/51PLQhgVmmL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B09HW6ZJV5",
@@ -150455,7 +150421,6 @@ export const PARTS = [
     "msrp": 253.9,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/61fwPjPIHjL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B08C4LXXCJ",
@@ -150476,7 +150441,6 @@ export const PARTS = [
     "msrp": 248.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/51BM392zpdL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DCBHBBV3",
@@ -150497,7 +150461,6 @@ export const PARTS = [
     "msrp": 288.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/510V6PbPGrL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DGV2PRK1",
@@ -150518,7 +150481,6 @@ export const PARTS = [
     "msrp": 128.99,
     "r": 3.1,
     "img": "https://m.media-amazon.com/images/I/51BM392zpdL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DCBMSQ9R",
@@ -150539,7 +150501,6 @@ export const PARTS = [
     "msrp": 444.44,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/61uWHA2E5eL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B082DH1FZR",
@@ -150560,7 +150521,6 @@ export const PARTS = [
     "msrp": 228.99,
     "r": null,
     "img": "https://m.media-amazon.com/images/I/61JNsxzLH7L._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DCBLZ1CP",
@@ -150581,7 +150541,6 @@ export const PARTS = [
     "msrp": 199.99,
     "r": null,
     "img": "https://m.media-amazon.com/images/I/61pSCUpfBLL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FT526Y4Q",
@@ -150602,7 +150561,6 @@ export const PARTS = [
     "msrp": 9.69,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/61YeTPHYy0L._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FVT4GQHD",
@@ -150623,7 +150581,6 @@ export const PARTS = [
     "msrp": 169.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/61pBF7W7Z2L._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0F5SCG6QC",
@@ -150644,7 +150601,6 @@ export const PARTS = [
     "msrp": 249.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/41bszvNaXPL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0D9GWQPDM",
@@ -150665,7 +150621,6 @@ export const PARTS = [
     "msrp": 89.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/61FAsvOSPaL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DM4BRSV5",
@@ -150686,7 +150641,6 @@ export const PARTS = [
     "msrp": 159.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/71XVdDyqthL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FGDJ3QP1",
@@ -150707,7 +150661,6 @@ export const PARTS = [
     "msrp": 85.99,
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/51D2Eay1v8L._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FX2XJKX3",
@@ -150722,13 +150675,12 @@ export const PARTS = [
   {
     "id": 100360,
     "c": "CPUCooler",
-    "n": "Pure Rock Slim 2 130W TDP CPU Cooler | Intel1700 1200 1150 1151 1155 | AMD4 AMD5 | Silver | BK030",
+    "n": "be quiet! Pure Rock Slim 2 130W TDP CPU Cooler | Intel1700 1200 1150 1151 1155 | AMD4 AMD5 | Silver | BK030",
     "b": "AMD",
     "pr": 32.9,
     "msrp": 32.9,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/717b8sfIGVL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B08YRN1621",
@@ -150743,13 +150695,12 @@ export const PARTS = [
   {
     "id": 100361,
     "c": "CPUCooler",
-    "n": "Shadow Rock TF 2 160W TDP CPU Cooler | Intel Compatible 775 / 115x / 1200/1366 / 2011(-3) Square ILM / 2066 | AMD Compatible AM2 / AM3 / AM4 / FM1 / FM2 | Black | BK003",
+    "n": "be quiet! Shadow Rock TF 2 160W TDP CPU Cooler | Intel Compatible 775 / 115x / 1200/1366 / 2011(-3) Square ILM / 2066 | AMD Compatible AM2 / AM3 / AM4 / FM1 / FM2 | Black | BK003",
     "b": "AMD",
     "pr": 96.99,
     "msrp": 96.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/61yN-FYWHAL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0723BLJBZ",
@@ -150764,13 +150715,12 @@ export const PARTS = [
   {
     "id": 100362,
     "c": "CPUCooler",
-    "n": "Shadow Rock Slim 2 160W TDP CPU Cooler | Intel 1700 1200 2066 1150 1151 1155 2011-3 Square ILM | AMD AM4 | Silver | BK032",
+    "n": "be quiet! Shadow Rock Slim 2 160W TDP CPU Cooler | Intel 1700 1200 2066 1150 1151 1155 2011-3 Square ILM | AMD AM4 | Silver | BK032",
     "b": "AMD",
     "pr": 91.9,
     "msrp": 91.9,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/71xXkk-MYgL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B09B7JXQS8",
@@ -150785,13 +150735,12 @@ export const PARTS = [
   {
     "id": 100363,
     "c": "CPUCooler",
-    "n": "Shadow Rock 3 White 190W TDP CPU Cooler | Intel-1700 1200 2066 1150 1151 1155 2011-3 Square ILM | AMD AM4 | Black | BK005",
+    "n": "be quiet! Shadow Rock 3 White 190W TDP CPU Cooler | Intel-1700 1200 2066 1150 1151 1155 2011-3 Square ILM | AMD AM4 | Black | BK005",
     "b": "AMD",
     "pr": 100.13,
     "msrp": 100.13,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/71T94Iy9nOL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B08L9QZXSY",
@@ -150806,13 +150755,12 @@ export const PARTS = [
   {
     "id": 100364,
     "c": "CPUCooler",
-    "n": "Peerless Assassin 120 Digital ARGB Black CPU Cooler, Dual Towers and Dual Fans Cooling, CPU Air Cooler, Digital Display Top Cover,1850RPM+10%, for AM4/AM5,Intel LGA1851/1700, 5V ARGB LED",
+    "n": "Thermalright Peerless Assassin 120 Digital ARGB Black CPU Cooler, Dual Towers and Dual Fans Cooling, CPU Air Cooler, Digital Display Top Cover,1850RPM+10%, for AM4/AM5,Intel LGA1851/1700, 5V ARGB LED",
     "b": "Intel",
     "pr": 41.9,
     "msrp": 41.9,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/71dtAdS3DhL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DQ5ND3XL",
@@ -150827,13 +150775,12 @@ export const PARTS = [
   {
     "id": 100365,
     "c": "CPUCooler",
-    "n": "Peerless Assassin 120 ARGB Black V3 CPU Cooler,6 Heat Pipes CPU Air Cooler,Dual TL-P12-S PWM Fans,157mm High,for Intel LGA1700/1851/1150/1151/1200/,AM4/AM5",
+    "n": "Thermalright Peerless Assassin 120 ARGB Black V3 CPU Cooler,6 Heat Pipes CPU Air Cooler,Dual TL-P12-S PWM Fans,157mm High,for Intel LGA1700/1851/1150/1151/1200/,AM4/AM5",
     "b": "Intel",
     "pr": 37.9,
     "msrp": 37.9,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/71INwYj2cpL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DY3NY14R",
@@ -150848,13 +150795,12 @@ export const PARTS = [
   {
     "id": 100366,
     "c": "CPUCooler",
-    "n": "Peerless Assassin 120 SE ARGB White V2 CPU Cooler, Dual Tower, 6 Heat Pipes, Dual 120mm PWM Fans, 1850RPM, for AMD AM4/AM5 and Intel LGA1851/1700",
+    "n": "Thermalright Peerless Assassin 120 SE ARGB White V2 CPU Cooler, Dual Tower, 6 Heat Pipes, Dual 120mm PWM Fans, 1850RPM, for AMD AM4/AM5 and Intel LGA1851/1700",
     "b": "AMD",
     "pr": 40.9,
     "msrp": 40.9,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/613uluHmEfL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DQWMPH5W",
@@ -150875,7 +150821,6 @@ export const PARTS = [
     "msrp": 53.09,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/516nNNowvvL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FD3K27YN",
@@ -150896,7 +150841,6 @@ export const PARTS = [
     "msrp": 38.9,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/71PiCj4HLFL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0D2VPFKSS",
@@ -150917,7 +150861,6 @@ export const PARTS = [
     "msrp": 23.9,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/81gzQ1bXDeL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FVW7FHW3",
@@ -150938,7 +150881,6 @@ export const PARTS = [
     "msrp": 112.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/618JegaRw5L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DPHS13XW",
@@ -150959,7 +150901,6 @@ export const PARTS = [
     "msrp": 109.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/611LZ8fzfVL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FVXP5JPK",
@@ -150980,7 +150921,6 @@ export const PARTS = [
     "msrp": 137,
     "r": null,
     "img": "https://m.media-amazon.com/images/I/61OeyucDScL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FVXPK8DZ",
@@ -151001,7 +150941,6 @@ export const PARTS = [
     "msrp": 142,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/61tFBuQDoVL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FVXQXJ2W",
@@ -151022,7 +150961,6 @@ export const PARTS = [
     "msrp": 15.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/61ysROaS39L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0D9YFN8Z1",
@@ -151037,13 +150975,12 @@ export const PARTS = [
   {
     "id": 100375,
     "c": "CPUCooler",
-    "n": "F360 RGB Core - 360mm Single-Frame Fan Unit with 3 x 120mm RGB Fans - Speed & Lighting Control - High Static Pressure & Airflow - Fluid Dynamic Bearings - 8 aRGB LEDs Per Fan - White",
+    "n": "NZXT F360 RGB Core - 360mm Single-Frame Fan Unit with 3 x 120mm RGB Fans - Speed & Lighting Control - High Static Pressure & Airflow - Fluid Dynamic Bearings - 8 aRGB LEDs Per Fan - White",
     "b": "MSI",
     "pr": 49.99,
     "msrp": 49.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/41iJB56E1yL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0D1RHS6WS",
@@ -151058,13 +150995,12 @@ export const PARTS = [
   {
     "id": 100376,
     "c": "CPUCooler",
-    "n": "iCUE Link H170i RGB Liquid CPU Cooler - 420mm AIO - QX140 RGB Fans - Fits Intel® LGA 1700, AMD® AM5 - iCUE Link System Hub Included - Black (Renewed)",
+    "n": "CORSAIR iCUE Link H170i RGB Liquid CPU Cooler - 420mm AIO - QX140 RGB Fans - Fits Intel® LGA 1700, AMD® AM5 - iCUE Link System Hub Included - Black (Renewed)",
     "b": "AMD",
     "pr": 149.99,
     "msrp": 149.99,
     "r": 3.1,
     "img": "https://m.media-amazon.com/images/I/61y2UPA3bGL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FJ49TQDG",
@@ -151085,7 +151021,6 @@ export const PARTS = [
     "msrp": 134.88,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/41fXw7Y+wzL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FPWZ5T6B",
@@ -151106,7 +151041,6 @@ export const PARTS = [
     "msrp": 179.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/81YxGXjiIxL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FBBW1YRW",
@@ -151127,7 +151061,6 @@ export const PARTS = [
     "msrp": 226.99,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/81EhDXv5UgL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DGWTQWL3",
@@ -151148,7 +151081,6 @@ export const PARTS = [
     "msrp": 286.99,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/81Hj2CkiZfL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DTCR75Z3",
@@ -151169,7 +151101,6 @@ export const PARTS = [
     "msrp": 128.38,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/61+u8uf+bNL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DF5WNFJ2",
@@ -151190,7 +151121,6 @@ export const PARTS = [
     "msrp": 349.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/81QVTuKByvL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BG6LGNDB",
@@ -151211,7 +151141,6 @@ export const PARTS = [
     "msrp": 159.99,
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/91hNS6minuL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0D2JFH7NQ",
@@ -151232,7 +151161,6 @@ export const PARTS = [
     "msrp": 139.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/91ZPVQjJ7kL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BRQSWSFQ",
@@ -151253,7 +151181,6 @@ export const PARTS = [
     "msrp": 174.62,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/61fOx1+PsML._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BQH92RQS",
@@ -151274,7 +151201,6 @@ export const PARTS = [
     "msrp": 161.46,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/61Nqwg5dtQL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DFDMS4LG",
@@ -151295,7 +151221,6 @@ export const PARTS = [
     "msrp": 202.67,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/91YlCRiI+9L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0C3ZP533K",
@@ -151316,7 +151241,6 @@ export const PARTS = [
     "msrp": 148.99,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/71JLEos8r7L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BQWQ9QPK",
@@ -151337,7 +151261,6 @@ export const PARTS = [
     "msrp": 264.99,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/81rydJMfVxL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DHCQ1MPZ",
@@ -151358,7 +151281,6 @@ export const PARTS = [
     "msrp": 289.99,
     "r": 3.9,
     "img": "https://m.media-amazon.com/images/I/71FKeftnV-L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B083WG2VDF",
@@ -151379,7 +151301,6 @@ export const PARTS = [
     "msrp": 415.99,
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/81dWYbg5w7L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DDZWJ1KX",
@@ -151400,7 +151321,6 @@ export const PARTS = [
     "msrp": 89.99,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/712mtAGWfaL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DFS88R2L",
@@ -151415,13 +151335,12 @@ export const PARTS = [
   {
     "id": 100393,
     "c": "GPU",
-    "n": "TUF GeForce RTX™ 5090 32GB GDDR7 OC Edition Graphics Card, NVIDIA, Desktop (PCIe® 5.0, HDMI®/DP 2.1, 3.6-Slot, Military-Grade Components, Protective PCB Coating, Axial-tech Fans, Vapor Chamber)",
+    "n": "ASUS TUF GeForce RTX™ 5090 32GB GDDR7 OC Edition Graphics Card, NVIDIA, Desktop (PCIe® 5.0, HDMI®/DP 2.1, 3.6-Slot, Military-Grade Components, Protective PCB Coating, Axial-tech Fans, Vapor Chamber)",
     "b": "ASUS",
     "pr": 3796.99,
     "msrp": 3796.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/71-gK950-SL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DS2X13PH",
@@ -151437,13 +151356,12 @@ export const PARTS = [
   {
     "id": 100394,
     "c": "GPU",
-    "n": "Gaming RTX 5090 32G Gaming Trio OC Graphics Card (32GB GDDR7, 512-bit, Extreme Performance: 2497 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
+    "n": "msi Gaming RTX 5090 32G Gaming Trio OC Graphics Card (32GB GDDR7, 512-bit, Extreme Performance: 2497 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
     "b": "NVIDIA",
     "pr": 3993.97,
     "msrp": 3993.97,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/71tV-csYdCL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DT7L98J1",
@@ -151459,13 +151377,12 @@ export const PARTS = [
   {
     "id": 100395,
     "c": "GPU",
-    "n": "GeForce RTX 5090 Gaming OC 32G Graphics Card, WINDFORCE Cooling System, 32GB 512-bit GDDR7, by NVIDIA, DisplayPort & HDMI - Video Output Interface, GV-N5090GAMING OC-32GD Video Card",
+    "n": "GIGABYTE GeForce RTX 5090 Gaming OC 32G Graphics Card, WINDFORCE Cooling System, 32GB 512-bit GDDR7, by NVIDIA, DisplayPort & HDMI - Video Output Interface, GV-N5090GAMING OC-32GD Video Card",
     "b": "NVIDIA",
     "pr": 3879.99,
     "msrp": 3879.99,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/71TZmq7RYtL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DT7GBNWQ",
@@ -151480,13 +151397,12 @@ export const PARTS = [
   {
     "id": 100396,
     "c": "GPU",
-    "n": "GeForce RTX 5090 Solid OC Graphics Card, NVIDIA, 32GB GDDR7, DLSS 4, 3× DisplayPort 2.1b & HDMI 2.1b, PCIE 5.0 (ZT-B50900J-10P)",
+    "n": "ZOTAC GeForce RTX 5090 Solid OC Graphics Card, NVIDIA, 32GB GDDR7, DLSS 4, 3× DisplayPort 2.1b & HDMI 2.1b, PCIE 5.0 (ZT-B50900J-10P)",
     "b": "NVIDIA",
     "pr": 3799.99,
     "msrp": 3799.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/71c7k-TNofL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DV6MK91R",
@@ -151502,13 +151418,12 @@ export const PARTS = [
   {
     "id": 100397,
     "c": "GPU",
-    "n": "AORUS GeForce RTX 5090 Stealth ICE 32G Graphics Card, 32GB 512-bit GDDR7, PCIe 5.0, WINDFORCE Cooling System, Versatile VGA Holder, GV-N5090AORUSST ICE-32GDVideo Card",
+    "n": "GIGABYTE AORUS GeForce RTX 5090 Stealth ICE 32G Graphics Card, 32GB 512-bit GDDR7, PCIe 5.0, WINDFORCE Cooling System, Versatile VGA Holder, GV-N5090AORUSST ICE-32GDVideo Card",
     "b": "Gigabyte",
     "pr": 4295.64,
     "msrp": 4295.64,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/71XCcdUlOmL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FFQFN2CT",
@@ -151523,13 +151438,12 @@ export const PARTS = [
   {
     "id": 100398,
     "c": "GPU",
-    "n": "Gaming RTX 5090 32G Ventus 3X OC Graphics Card (32GB GDDR7, 512-bit, Extreme Performance: 2452 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
+    "n": "msi Gaming RTX 5090 32G Ventus 3X OC Graphics Card (32GB GDDR7, 512-bit, Extreme Performance: 2452 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
     "b": "NVIDIA",
     "pr": 3979.97,
     "msrp": 3979.97,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/71key2VASKL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DT7JS6BG",
@@ -151545,13 +151459,12 @@ export const PARTS = [
   {
     "id": 100399,
     "c": "GPU",
-    "n": "Gaming RTX 5090 32G Lightning Z Graphics Card (32GB GDDR7, 512-bit, Extreme Performance: 2775 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
+    "n": "msi Gaming RTX 5090 32G Lightning Z Graphics Card (32GB GDDR7, 512-bit, Extreme Performance: 2775 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
     "b": "NVIDIA",
     "pr": 5999.98,
     "msrp": 5999.98,
     "r": 3.5,
     "img": "https://m.media-amazon.com/images/I/71OrDi1LuUL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GL51ZPSV",
@@ -151567,13 +151480,12 @@ export const PARTS = [
   {
     "id": 100400,
     "c": "GPU",
-    "n": "AORUS GeForce RTX 5080 Master ICE 16G Graphics Card, WINDFORCE Cooling System, 16GB 256-bit GDDR7, GV-N5080AORUSM ICE-16GD Video Card",
+    "n": "GIGABYTE AORUS GeForce RTX 5080 Master ICE 16G Graphics Card, WINDFORCE Cooling System, 16GB 256-bit GDDR7, GV-N5080AORUSM ICE-16GD Video Card",
     "b": "Gigabyte",
     "pr": 1699.99,
     "msrp": 1699.99,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/71btpaE7bJL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DT7H5JYL",
@@ -151588,13 +151500,12 @@ export const PARTS = [
   {
     "id": 100401,
     "c": "GPU",
-    "n": "GeForce RTX™ 5080 16GB GDDR7 Noctua OC Edition Graphics Card, NVIDIA, Desktop (Three NF-A12x25 G2 PWM 120mm Fans, Optimized Vapor Chamber, Phase-Change GPU Thermal Pad, Dual BIOS, HDMI/DP 2.1)",
+    "n": "ASUS GeForce RTX™ 5080 16GB GDDR7 Noctua OC Edition Graphics Card, NVIDIA, Desktop (Three NF-A12x25 G2 PWM 120mm Fans, Optimized Vapor Chamber, Phase-Change GPU Thermal Pad, Dual BIOS, HDMI/DP 2.1)",
     "b": "NVIDIA",
     "pr": 1699.99,
     "msrp": 1699.99,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/811QgdcNnzL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FQM4N5RP",
@@ -151610,13 +151521,12 @@ export const PARTS = [
   {
     "id": 100402,
     "c": "GPU",
-    "n": "NVIDIA GeForce RTX™ 5080 Slim Dual-Fan, Dual-Slot OC Graphics Card (16GB GDDR7, SFF-Ready, 256-bit, Boost Speed: 2730 MHz, PCIe® 5.0, HDMI®/DP 2.1, NVIDIA Blackwell Architecture, DLSS 4.5)",
+    "n": "PNY NVIDIA GeForce RTX™ 5080 Slim Dual-Fan, Dual-Slot OC Graphics Card (16GB GDDR7, SFF-Ready, 256-bit, Boost Speed: 2730 MHz, PCIe® 5.0, HDMI®/DP 2.1, NVIDIA Blackwell Architecture, DLSS 4.5)",
     "b": "NVIDIA",
     "pr": 1399.99,
     "msrp": 1399.99,
     "r": 3.6,
     "img": "https://m.media-amazon.com/images/I/61DZDJzLTLL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GPKCL34W",
@@ -151632,13 +151542,12 @@ export const PARTS = [
   {
     "id": 100403,
     "c": "GPU",
-    "n": "Gaming RTX 5080 16G SUPRIM Liquid SOC Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2760 MHz, DisplayPort x 3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
+    "n": "msi Gaming RTX 5080 16G SUPRIM Liquid SOC Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2760 MHz, DisplayPort x 3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
     "b": "NVIDIA",
     "pr": 1871.49,
     "msrp": 1871.49,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/71b5WDWZfsL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DSWR8WMB",
@@ -151654,13 +151563,12 @@ export const PARTS = [
   {
     "id": 100404,
     "c": "GPU",
-    "n": "Gaming RTX 5070 Ti 16G Ventus 3X OC Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2497 MHz, DisplayPort x 3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
+    "n": "msi Gaming RTX 5070 Ti 16G Ventus 3X OC Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2497 MHz, DisplayPort x 3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
     "b": "NVIDIA",
     "pr": 979.99,
     "msrp": 979.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/71z4wLCzcIL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DWHHSZH1",
@@ -151676,13 +151584,12 @@ export const PARTS = [
   {
     "id": 100405,
     "c": "GPU",
-    "n": "The SFF-Ready Prime GeForce RTX™ 5070 Graphics Card, NVIDIA (PCIe® 5.0, 12GB GDDR7, HDMI®/DP 2.1, 2.5-Slot, Axial-tech Fans, Dual BIOS)",
+    "n": "ASUS The SFF-Ready Prime GeForce RTX™ 5070 Graphics Card, NVIDIA (PCIe® 5.0, 12GB GDDR7, HDMI®/DP 2.1, 2.5-Slot, Axial-tech Fans, Dual BIOS)",
     "b": "NVIDIA",
     "pr": 642.05,
     "msrp": 642.05,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/81Si31LMp5L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DS6V1YSY",
@@ -151698,13 +151605,12 @@ export const PARTS = [
   {
     "id": 100406,
     "c": "GPU",
-    "n": "Gaming RTX 5070 12G Ventus 2X OC Graphics Card (12GB GDDR7, 192-bit, Extreme Performance: 2557 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
+    "n": "msi Gaming RTX 5070 12G Ventus 2X OC Graphics Card (12GB GDDR7, 192-bit, Extreme Performance: 2557 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
     "b": "NVIDIA",
     "pr": 659.99,
     "msrp": 659.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/71HWQ09yKbL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DYGDT9YD",
@@ -151720,13 +151626,12 @@ export const PARTS = [
   {
     "id": 100407,
     "c": "GPU",
-    "n": "NVIDIA GeForce RTX™ 5070 OC Triple Fan, Graphics Card (12GB GDDR7, 192-bit, Boost Speed: 2587 MHz, SFF-Ready, PCIe® 5.0, HDMI®/DP 2.1, 2.4-Slot, Blackwell Architecture, DLSS 4)",
+    "n": "PNY NVIDIA GeForce RTX™ 5070 OC Triple Fan, Graphics Card (12GB GDDR7, 192-bit, Boost Speed: 2587 MHz, SFF-Ready, PCIe® 5.0, HDMI®/DP 2.1, 2.4-Slot, Blackwell Architecture, DLSS 4)",
     "b": "NVIDIA",
     "pr": 629.99,
     "msrp": 629.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/61ERh52XjzL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DYPFGL88",
@@ -151742,13 +151647,12 @@ export const PARTS = [
   {
     "id": 100408,
     "c": "GPU",
-    "n": "TUF GeForce RTX™ 5070 Ti 16GB GDDR7 OC Edition Graphics Card, NVIDIA, Desktop (PCIe® 5.0, HDMI®/DP 2.1, 3.125-Slot, Military-Grade Components, Protective PCB Coating, Axial-tech Fans)",
+    "n": "ASUS TUF GeForce RTX™ 5070 Ti 16GB GDDR7 OC Edition Graphics Card, NVIDIA, Desktop (PCIe® 5.0, HDMI®/DP 2.1, 3.125-Slot, Military-Grade Components, Protective PCB Coating, Axial-tech Fans)",
     "b": "ASUS",
     "pr": 1069.99,
     "msrp": 1069.99,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/81POeoI3lSL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DS6WTXGP",
@@ -151770,7 +151674,6 @@ export const PARTS = [
     "msrp": 599.99,
     "r": null,
     "img": "https://m.media-amazon.com/images/I/81Si31LMp5L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0G812TBMQ",
@@ -151792,7 +151695,6 @@ export const PARTS = [
     "msrp": 876,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/61Ib7Av4M+L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GVJMM4VR",
@@ -151808,13 +151710,12 @@ export const PARTS = [
   {
     "id": 100411,
     "c": "GPU",
-    "n": "Gaming RTX 5070 TI 16G Shadow 3X OC Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2497 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
+    "n": "msi Gaming RTX 5070 TI 16G Shadow 3X OC Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2497 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
     "b": "NVIDIA",
     "pr": 979.99,
     "msrp": 979.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/71bmZxrahrL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DZZ63JXD",
@@ -151830,13 +151731,12 @@ export const PARTS = [
   {
     "id": 100412,
     "c": "GPU",
-    "n": "NVIDIA GeForce RTX™ 5060 OC Dual Fan, Graphics Card (8GB GDDR7, 128-bit, SFF-Ready, PCIe® 5.0, HDMI®/DP 2.1, 2-Slot, NVIDIA Blackwell Architecture, DLSS 4)",
+    "n": "PNY NVIDIA GeForce RTX™ 5060 OC Dual Fan, Graphics Card (8GB GDDR7, 128-bit, SFF-Ready, PCIe® 5.0, HDMI®/DP 2.1, 2-Slot, NVIDIA Blackwell Architecture, DLSS 4)",
     "b": "NVIDIA",
     "pr": 339.99,
     "msrp": 339.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/61980M2Kf8L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0F4Z2DNH2",
@@ -151852,13 +151752,12 @@ export const PARTS = [
   {
     "id": 100413,
     "c": "GPU",
-    "n": "Dual GeForce RTX™ 5060 8GB GDDR7 White OC Edition Graphics Card, NVIDIA, Desktop (PCIe 5.0, DLSS 4, HDMI 2.1b, DisplayPort 2.1b, 2.5-Slot, Axial-tech Fan, 0dB Technology, Dual BIOS)",
+    "n": "ASUS Dual GeForce RTX™ 5060 8GB GDDR7 White OC Edition Graphics Card, NVIDIA, Desktop (PCIe 5.0, DLSS 4, HDMI 2.1b, DisplayPort 2.1b, 2.5-Slot, Axial-tech Fan, 0dB Technology, Dual BIOS)",
     "b": "ASUS",
     "pr": 369.99,
     "msrp": 369.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/71Ip-T9YmiL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FRC51HMF",
@@ -151880,7 +151779,6 @@ export const PARTS = [
     "msrp": 301,
     "r": null,
     "img": "https://m.media-amazon.com/images/I/61980M2Kf8L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GW71HVBJ",
@@ -151896,13 +151794,12 @@ export const PARTS = [
   {
     "id": 100415,
     "c": "GPU",
-    "n": "NVIDIA GeForce RTX™ 5060 Ti Epic-X™ ARGB OC Triple Fan, Graphics Card (8GB GDDR7, 128-bit, Boost Speed: 2692 MHz, SFF-Ready, PCIe® 5.0, HDMI®/DP 2.1, 2-Slot, NVIDIA Blackwell Architecture, DLSS 4)",
+    "n": "PNY NVIDIA GeForce RTX™ 5060 Ti Epic-X™ ARGB OC Triple Fan, Graphics Card (8GB GDDR7, 128-bit, Boost Speed: 2692 MHz, SFF-Ready, PCIe® 5.0, HDMI®/DP 2.1, 2-Slot, NVIDIA Blackwell Architecture, DLSS 4)",
     "b": "NVIDIA",
     "pr": 409.99,
     "msrp": 409.99,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/61pCJp4+7mL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0F68R4M2Y",
@@ -151918,13 +151815,12 @@ export const PARTS = [
   {
     "id": 100416,
     "c": "GPU",
-    "n": "TUF GeForce RTX™ 5060 8GB GDDR7 OC Edition Graphics Card, NVIDIA, Desktop (PCIe® 5.0, HDMI®/DP 2.1, 3.1-Slot, Military-Grade Components, Protective PCB Coating, Axial-tech Fans)",
+    "n": "ASUS TUF GeForce RTX™ 5060 8GB GDDR7 OC Edition Graphics Card, NVIDIA, Desktop (PCIe® 5.0, HDMI®/DP 2.1, 3.1-Slot, Military-Grade Components, Protective PCB Coating, Axial-tech Fans)",
     "b": "ASUS",
     "pr": 399.99,
     "msrp": 399.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/81LLFl5obWL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0F77GW9RK",
@@ -151940,13 +151836,12 @@ export const PARTS = [
   {
     "id": 100417,
     "c": "GPU",
-    "n": "Gaming RTX 5060 8G Shadow 2X OC Graphics Card (8GB GDDR7,128-bit, Extreme Performance: 2535 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
+    "n": "msi Gaming RTX 5060 8G Shadow 2X OC Graphics Card (8GB GDDR7,128-bit, Extreme Performance: 2535 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
     "b": "NVIDIA",
     "pr": 359.95,
     "msrp": 359.95,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/71edk5q7MPL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0F4LP8VH5",
@@ -151962,13 +151857,12 @@ export const PARTS = [
   {
     "id": 100418,
     "c": "GPU",
-    "n": "GeForce RTX 5060 AERO OC 8G Graphics Card, 8GB 128-bit GDDR7, PCIe 5.0, WINDFORCE Cooling System, Made by NVIDIA, DisplayPort & HDMI - Video Output Interface, GV-N5060AERO OC-8GD Video Card",
+    "n": "GIGABYTE GeForce RTX 5060 AERO OC 8G Graphics Card, 8GB 128-bit GDDR7, PCIe 5.0, WINDFORCE Cooling System, Made by NVIDIA, DisplayPort & HDMI - Video Output Interface, GV-N5060AERO OC-8GD Video Card",
     "b": "NVIDIA",
     "pr": 423.55,
     "msrp": 423.55,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/71N3wqCen+L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0F8MH9LG2",
@@ -151989,7 +151883,6 @@ export const PARTS = [
     "msrp": 496,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/61S-uoEpvcL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GW75YBDN",
@@ -152011,7 +151904,6 @@ export const PARTS = [
     "msrp": 579.99,
     "r": 3,
     "img": "https://m.media-amazon.com/images/I/71qIJjDVfzL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0D3JCQSJH",
@@ -152026,13 +151918,12 @@ export const PARTS = [
   {
     "id": 100421,
     "c": "GPU",
-    "n": "NVIDIA GeForce RTX™ 5070 Epic-X™ ARGB OC Triple Fan, Graphics Card (12GB GDDR7, 192-bit, Boost Speed: 2685 MHz, SFF-Ready, PCIe® 5.0, HDMI®/DP 2.1, 2.4-Slot, Blackwell Architecture, DLSS 4)",
+    "n": "PNY NVIDIA GeForce RTX™ 5070 Epic-X™ ARGB OC Triple Fan, Graphics Card (12GB GDDR7, 192-bit, Boost Speed: 2685 MHz, SFF-Ready, PCIe® 5.0, HDMI®/DP 2.1, 2.4-Slot, Blackwell Architecture, DLSS 4)",
     "b": "NVIDIA",
     "pr": 636.15,
     "msrp": 636.15,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/61E+0EA9nSL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DYPGBX6J",
@@ -152048,13 +151939,12 @@ export const PARTS = [
   {
     "id": 100422,
     "c": "GPU",
-    "n": "TUF Gaming NVIDIA GeForce RTX™ 4070 OC Edition Gaming Graphics Card (PCIe 4.0, 12GB GDDR6X, HDMI 2.1, DisplayPort 1.4a)",
+    "n": "ASUS TUF Gaming NVIDIA GeForce RTX™ 4070 OC Edition Gaming Graphics Card (PCIe 4.0, 12GB GDDR6X, HDMI 2.1, DisplayPort 1.4a)",
     "b": "ASUS",
     "pr": 1099.99,
     "msrp": 1099.99,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/81Sq6VtClyL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BZTDZL7J",
@@ -152076,7 +151966,6 @@ export const PARTS = [
     "msrp": 799.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/81XIr69BtVL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0C8BT71H5",
@@ -152092,13 +151981,12 @@ export const PARTS = [
   {
     "id": 100424,
     "c": "GPU",
-    "n": "Radeon RX 9070 XT Challenger 16GB OC Graphics Card - AMD RDNA 4 Architecture, 2970 MHz Boost Clock, 16GB GDDR6, PCIe 5.0, DisplayPort 2.1a, HDMI 2.1b, Triple Fan Cooling 800W",
+    "n": "ASRock Radeon RX 9070 XT Challenger 16GB OC Graphics Card - AMD RDNA 4 Architecture, 2970 MHz Boost Clock, 16GB GDDR6, PCIe 5.0, DisplayPort 2.1a, HDMI 2.1b, Triple Fan Cooling 800W",
     "b": "AMD",
     "pr": 709.99,
     "msrp": 709.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/61ch6FkfsXL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FSSYTD49",
@@ -152114,13 +152002,12 @@ export const PARTS = [
   {
     "id": 100425,
     "c": "GPU",
-    "n": "Radeon RX 9070 XT Steel Legend 16GB Graphics Card, AMD RDNA 4 Architecture, 16GB GDDR6, PCIe 5.0, Triple Fans, Polychrome SYNC, Reinforced Metal Frame, DisplayPort 2.1a, HDMI 2.1b",
+    "n": "ASRock Radeon RX 9070 XT Steel Legend 16GB Graphics Card, AMD RDNA 4 Architecture, 16GB GDDR6, PCIe 5.0, Triple Fans, Polychrome SYNC, Reinforced Metal Frame, DisplayPort 2.1a, HDMI 2.1b",
     "b": "AMD",
     "pr": 749.99,
     "msrp": 749.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/611FTdLlAYL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DTT7CPWV",
@@ -152136,13 +152023,12 @@ export const PARTS = [
   {
     "id": 100426,
     "c": "GPU",
-    "n": "Reaper AMD Radeon RX 9070 16GB GDDR6",
+    "n": "PowerColor Reaper AMD Radeon RX 9070 16GB GDDR6",
     "b": "AMD",
     "pr": 619.99,
     "msrp": 619.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/51KS+A63CYL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DSWL46CF",
@@ -152158,13 +152044,12 @@ export const PARTS = [
   {
     "id": 100427,
     "c": "GPU",
-    "n": "11348-01-20G Nitro+ AMD Radeon™ RX 9070 XT Gaming OC Graphics Card with 16GB GDDR6, AMD RDNA 4",
+    "n": "Sapphire 11348-01-20G Nitro+ AMD Radeon™ RX 9070 XT Gaming OC Graphics Card with 16GB GDDR6, AMD RDNA 4",
     "b": "AMD",
     "pr": 799.99,
     "msrp": 799.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/81anmp7jb6L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DTHP39JF",
@@ -152180,13 +152065,12 @@ export const PARTS = [
   {
     "id": 100428,
     "c": "GPU",
-    "n": "Swift AMD Radeon RX 9070 XT Triple Fan Gaming Edition with 16GB GDDR6 HDMI 3xDP, RDNA 4 RX-97TSWF3B9, Graphics Card, Compatible with Desktop PCs",
+    "n": "XFX Swift AMD Radeon RX 9070 XT Triple Fan Gaming Edition with 16GB GDDR6 HDMI 3xDP, RDNA 4 RX-97TSWF3B9, Graphics Card, Compatible with Desktop PCs",
     "b": "AMD",
     "pr": 719.99,
     "msrp": 719.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/61E-Ds-mCbL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DXLG4FJ3",
@@ -152202,18 +152086,17 @@ export const PARTS = [
   {
     "id": 100429,
     "c": "GPU",
-    "n": "Swift AMD Radeon RX 9070 OC Triple 90mm Fan Gaming Edition with 16GB GDDR6 HDMI 3xDP, AMD RDNA 4 RX-97SWFT3BA",
+    "n": "XFX Swift AMD Radeon RX 9070 OC Triple 90mm Fan Gaming Edition with 16GB GDDR6 HDMI 3xDP, AMD RDNA 4 RX-97SWFT3BA",
     "b": "AMD",
-    "pr": 749.99,
+    "pr": 690.69,
     "msrp": 749.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/61dldsnSqzL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0F1GFKD47",
         "url": "https://www.amazon.com/dp/B0F1GFKD47?tag=tiereduptech-20",
-        "price": 749.99,
+        "price": 690.69,
         "inStock": true
       }
     },
@@ -152224,13 +152107,12 @@ export const PARTS = [
   {
     "id": 100430,
     "c": "GPU",
-    "n": "Mercury AMD Radeon RX 9070XT OC Magnetic Air Edition with RGB 16GB GDDR6 HDMI 3xDP, AMD RDNA 4 RX-97TMARGB9",
+    "n": "XFX Mercury AMD Radeon RX 9070XT OC Magnetic Air Edition with RGB 16GB GDDR6 HDMI 3xDP, AMD RDNA 4 RX-97TMARGB9",
     "b": "AMD",
     "pr": 779.99,
     "msrp": 779.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/61L0v8NtLzL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DXVYQN67",
@@ -152246,13 +152128,12 @@ export const PARTS = [
   {
     "id": 100431,
     "c": "GPU",
-    "n": "Quicksilver AMD Radeon RX 9070 OC Gaming Edition 16GB GDDR6 Graphics Card, Black",
+    "n": "XFX Quicksilver AMD Radeon RX 9070 OC Gaming Edition 16GB GDDR6 Graphics Card, Black",
     "b": "AMD",
     "pr": 659.99,
     "msrp": 659.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/61QPuD2+-gL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DZD7GVLR",
@@ -152268,13 +152149,12 @@ export const PARTS = [
   {
     "id": 100432,
     "c": "GPU",
-    "n": "AORUS Radeon RX 9070 XT Elite 16G Graphics Card - 16GB GDDR6, 256bit, PCI-E 5.0, 3100 MHz Core Clock, 2 x DisplayPort, 2 x HDMI, GV-R9070XTAORUS E-16GD",
+    "n": "Gigabyte AORUS Radeon RX 9070 XT Elite 16G Graphics Card - 16GB GDDR6, 256bit, PCI-E 5.0, 3100 MHz Core Clock, 2 x DisplayPort, 2 x HDMI, GV-R9070XTAORUS E-16GD",
     "b": "Gigabyte",
     "pr": 959.95,
     "msrp": 959.95,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/81bgETEENbL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DT7C5ZC7",
@@ -152296,7 +152176,6 @@ export const PARTS = [
     "msrp": 139.99,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/61d5NOgus1L._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CJTGP6QL",
@@ -152317,7 +152196,6 @@ export const PARTS = [
     "msrp": 109.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/71pdA3+uFKL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B08VHWFWSD",
@@ -152333,13 +152211,12 @@ export const PARTS = [
   {
     "id": 100435,
     "c": "GPU",
-    "n": "Speedster MERC310 AMD Radeon RX 7900XTX Black Gaming Graphics Card with 24GB GDDR6, AMD RDNA 3 RX-79XMERCB9",
+    "n": "XFX Speedster MERC310 AMD Radeon RX 7900XTX Black Gaming Graphics Card with 24GB GDDR6, AMD RDNA 3 RX-79XMERCB9",
     "b": "AMD",
     "pr": 1199.99,
     "msrp": 1199.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/71vGm7dSHoL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BNLSW23M",
@@ -152355,13 +152232,12 @@ export const PARTS = [
   {
     "id": 100436,
     "c": "GPU",
-    "n": "Speedster MERC310 AMD Radeon RX 7900XT Black Gaming Graphics Card with 20GB GDDR6, AMD RDNA 3 RX-79TMERCB9",
+    "n": "XFX Speedster MERC310 AMD Radeon RX 7900XT Black Gaming Graphics Card with 20GB GDDR6, AMD RDNA 3 RX-79TMERCB9",
     "b": "AMD",
     "pr": 769.99,
     "msrp": 769.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/71pFIeyP8YL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BNLSZDCX",
@@ -152377,13 +152253,12 @@ export const PARTS = [
   {
     "id": 100437,
     "c": "GPU",
-    "n": "Hellhound AMD Radeon RX 7900 XTX Graphics Card",
+    "n": "PowerColor Hellhound AMD Radeon RX 7900 XTX Graphics Card",
     "b": "AMD",
     "pr": 1399,
     "msrp": 1399,
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/81GV77sd43L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BMWSRM7W",
@@ -152398,13 +152273,12 @@ export const PARTS = [
   {
     "id": 100438,
     "c": "GPU",
-    "n": "21323-01-20G AMD Radeon RX 7900 XT Gaming Graphics Card with 20GB GDDR6, AMD RDNA 3, Black",
+    "n": "Sapphire 21323-01-20G AMD Radeon RX 7900 XT Gaming Graphics Card with 20GB GDDR6, AMD RDNA 3, Black",
     "b": "AMD",
     "pr": 839.99,
     "msrp": 839.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/81ZBhhO35mL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BMNGT8XM",
@@ -152426,7 +152300,6 @@ export const PARTS = [
     "msrp": 779.99,
     "r": null,
     "img": "https://m.media-amazon.com/images/I/71tv3YrVPKL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DSJTPCZY",
@@ -152441,13 +152314,12 @@ export const PARTS = [
   {
     "id": 100440,
     "c": "GPU",
-    "n": "11325-02-20G Nitro+ AMD Radeon RX 7900 GRE Gaming Graphics Card with 16GB GDDR6, AMD RDNA 3",
+    "n": "Sapphire 11325-02-20G Nitro+ AMD Radeon RX 7900 GRE Gaming Graphics Card with 16GB GDDR6, AMD RDNA 3",
     "b": "AMD",
     "pr": 799,
     "msrp": 799,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/81jooy0ipEL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CVQYVYSP",
@@ -152463,13 +152335,12 @@ export const PARTS = [
   {
     "id": 100441,
     "c": "GPU",
-    "n": "11323-02-20G Pulse AMD Radeon RX 7900 XT Gaming Graphics Card with 20GB GDDR6, AMD RDNA 3",
+    "n": "Sapphire 11323-02-20G Pulse AMD Radeon RX 7900 XT Gaming Graphics Card with 20GB GDDR6, AMD RDNA 3",
     "b": "AMD",
     "pr": 999,
     "msrp": 999,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/81n9vllhNeL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BR6L7TKR",
@@ -152485,13 +152356,12 @@ export const PARTS = [
   {
     "id": 100442,
     "c": "GPU",
-    "n": "AMD Radeon™ RX 7900 XT Phantom Gaming 20GB OC Graphics Card 320 Bit 7680 x 4320 0dB Silent Cooling 3 x DisplayPort™ 2.1 GDDR6 1 x HDMI™ 2.1 20Gbps PCI Express 4.0",
+    "n": "ASRock AMD Radeon™ RX 7900 XT Phantom Gaming 20GB OC Graphics Card 320 Bit 7680 x 4320 0dB Silent Cooling 3 x DisplayPort™ 2.1 GDDR6 1 x HDMI™ 2.1 20Gbps PCI Express 4.0",
     "b": "AMD",
     "pr": 1168,
     "msrp": 1168,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/61h86qFR9eL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BTPJBSBV",
@@ -152506,13 +152376,12 @@ export const PARTS = [
   {
     "id": 100443,
     "c": "GPU",
-    "n": "11322-02-20G Pulse AMD Radeon RX 7900 XTX Gaming Graphics Card with 24GB GDDR6, AMD RDNA 3",
+    "n": "Sapphire 11322-02-20G Pulse AMD Radeon RX 7900 XTX Gaming Graphics Card with 24GB GDDR6, AMD RDNA 3",
     "b": "AMD",
     "pr": 1545,
     "msrp": 1545,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/81cIjpP-uYL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BR6HZZ6Z",
@@ -152534,7 +152403,6 @@ export const PARTS = [
     "msrp": 114.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/51eZflK7yuL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DSZL1MBV",
@@ -152555,7 +152423,6 @@ export const PARTS = [
     "msrp": 139.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/41j9Cl+hETL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CSFJN835",
@@ -152571,13 +152438,12 @@ export const PARTS = [
   {
     "id": 100446,
     "c": "GPU",
-    "n": "Intel Arc Pro B60 Creator 24GB Graphics Card, Intel Xe2-HPG Architecture, 24GB GDDR6, PCIe 5.0, 4X DisplayPort 2.1, Blower Design, 0dB Silent Cooling",
+    "n": "ASRock Intel Arc Pro B60 Creator 24GB Graphics Card, Intel Xe2-HPG Architecture, 24GB GDDR6, PCIe 5.0, 4X DisplayPort 2.1, Blower Design, 0dB Silent Cooling",
     "b": "Intel",
     "pr": 659.99,
     "msrp": 659.99,
     "r": 3.5,
     "img": "https://m.media-amazon.com/images/I/61Z1OPznJFL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GVGFW7MB",
@@ -152593,13 +152459,12 @@ export const PARTS = [
   {
     "id": 100447,
     "c": "GPU",
-    "n": "GUNNIR Intel Arc A770 Photon 16G OC White Graphics Card, 2400 Mhz Video Card,16GB 256-bit GDDR6,PCIE 4.0,1 HDMI,3 DP,3 Fans, TBP 285",
+    "n": "WEELIAO GUNNIR Intel Arc A770 Photon 16G OC White Graphics Card, 2400 Mhz Video Card,16GB 256-bit GDDR6,PCIE 4.0,1 HDMI,3 DP,3 Fans, TBP 285",
     "b": "Intel",
     "pr": 379,
     "msrp": 379,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/51AixccH05L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DFHCG93F",
@@ -152614,13 +152479,12 @@ export const PARTS = [
   {
     "id": 100448,
     "c": "GPU",
-    "n": "Arc B580 Limited Edition Graphics Card",
+    "n": "Intel Arc B580 Limited Edition Graphics Card",
     "b": "Intel",
     "pr": 460,
     "msrp": 460,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/61bZMb7+EXL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DPM9923G",
@@ -152635,13 +152499,12 @@ export const PARTS = [
   {
     "id": 100449,
     "c": "GPU",
-    "n": "NVIDIA GeForce GT 730 Graphics Card (PCIe 2.0, 2GB GDDR5 Memory, 4X HDMI Ports, Single-Slot Design, Passive Cooling)",
+    "n": "ASUS NVIDIA GeForce GT 730 Graphics Card (PCIe 2.0, 2GB GDDR5 Memory, 4X HDMI Ports, Single-Slot Design, Passive Cooling)",
     "b": "NVIDIA",
     "pr": 139.9,
     "msrp": 139.9,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/71ugNuSeyTL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B09DVN7QWH",
@@ -152657,13 +152520,12 @@ export const PARTS = [
   {
     "id": 100450,
     "c": "GPU",
-    "n": "GUNNIR Intel Arc A770 Photon 16GB OC GDDR6 2400MHz Triple Fan White Graphics Card (256-bit, PCIe 4.0, HDMI/DisplayPort, Supports 4k)",
+    "n": "WEELIAO GUNNIR Intel Arc A770 Photon 16GB OC GDDR6 2400MHz Triple Fan White Graphics Card (256-bit, PCIe 4.0, HDMI/DisplayPort, Supports 4k)",
     "b": "Intel",
     "pr": 379,
     "msrp": 379,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/51evoDYu93L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DF7PC2MV",
@@ -152684,7 +152546,6 @@ export const PARTS = [
     "msrp": 317.57,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/81jMOzwZ08L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0C571DW23",
@@ -152699,13 +152560,12 @@ export const PARTS = [
   {
     "id": 100452,
     "c": "GPU",
-    "n": "Focus SGX-750 | 750W | 80+ Gold | Full-Modular | SFX Form Factor| Low Noise | Premium Japanese Capacitor | 10 Year Warranty | Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SSR-750SGX)",
+    "n": "Seasonic Focus SGX-750 | 750W | 80+ Gold | Full-Modular | SFX Form Factor| Low Noise | Premium Japanese Capacitor | 10 Year Warranty | Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SSR-750SGX)",
     "b": "AMD",
     "pr": 210.99,
     "msrp": 210.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/81gJdU1DGgL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B09TDV18HG",
@@ -152720,13 +152580,12 @@ export const PARTS = [
   {
     "id": 100453,
     "c": "GPU",
-    "n": "Focus V4 GX-750-750W - 80+ Gold - Full-Modular - ATX Form Factor - Premium Japanese Capacitor - 10 Year Warranty - Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SRP-FGX751-A5A32SF)",
+    "n": "SEASONIC Focus V4 GX-750-750W - 80+ Gold - Full-Modular - ATX Form Factor - Premium Japanese Capacitor - 10 Year Warranty - Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SRP-FGX751-A5A32SF)",
     "b": "AMD",
     "pr": 133.85,
     "msrp": 133.85,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/81i7j8lF5sL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DJHCTJFC",
@@ -152741,13 +152600,12 @@ export const PARTS = [
   {
     "id": 100454,
     "c": "GPU",
-    "n": "Focus SPX-750 | 750W | 80+ Platinum | Full-Modular|SFX Form Factor | Low Noise | Premium Japanese Capacitor | 10 Year Warranty | Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SSR-750SPX)",
+    "n": "Seasonic Focus SPX-750 | 750W | 80+ Platinum | Full-Modular|SFX Form Factor | Low Noise | Premium Japanese Capacitor | 10 Year Warranty | Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SSR-750SPX)",
     "b": "AMD",
     "pr": 427.54,
     "msrp": 427.54,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/71PPiu33M9L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0B7NRSHDP",
@@ -152762,13 +152620,12 @@ export const PARTS = [
   {
     "id": 100455,
     "c": "GPU",
-    "n": "FOCUS V4 GX-850-850W - 80+ Gold - Full-Modular - ATX Form Factor - Premium Japanese Capacitor - 10 Year Warranty - Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SRP-FGX851-A5A32SF)",
+    "n": "SEASONIC FOCUS V4 GX-850-850W - 80+ Gold - Full-Modular - ATX Form Factor - Premium Japanese Capacitor - 10 Year Warranty - Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SRP-FGX851-A5A32SF)",
     "b": "AMD",
     "pr": 139.99,
     "msrp": 139.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/71poGf-fgFL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CSN7KNF6",
@@ -152789,7 +152646,6 @@ export const PARTS = [
     "msrp": 79.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/71PhQheXIAL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BQJ9TSP3",
@@ -152810,7 +152666,6 @@ export const PARTS = [
     "msrp": 89.9,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/81cHuqswUmL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0F3XW1J16",
@@ -152834,7 +152689,6 @@ export const PARTS = [
     "msrp": 119.9,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/71uZg195moL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FBY3F1NT",
@@ -152857,7 +152711,6 @@ export const PARTS = [
     "msrp": 89.99,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/71bld46bOsL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DVBWP6K8",
@@ -152881,7 +152734,6 @@ export const PARTS = [
     "msrp": 64.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/61J-ffQmE5L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FSTHTLZT",
@@ -152904,7 +152756,6 @@ export const PARTS = [
     "msrp": 79.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/81smNPwdpzL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0D68TLYKR",
@@ -152929,7 +152780,6 @@ export const PARTS = [
     "msrp": 109.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/71FcjVFQIbL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CT41HW5J",
@@ -152954,7 +152804,6 @@ export const PARTS = [
     "msrp": 499.9,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/51T06GaOCKL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0C6FY4JXF",
@@ -152977,7 +152826,6 @@ export const PARTS = [
     "msrp": 59.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/81eLlIQ5PsL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0991TZ399",
@@ -153000,7 +152848,6 @@ export const PARTS = [
     "msrp": 109.99,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/71rDMv7XG9L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BTJYYTGM",
@@ -153024,7 +152871,6 @@ export const PARTS = [
     "msrp": 161,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/91JZDnHmD7L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0B434DB7Y",
@@ -153047,7 +152893,6 @@ export const PARTS = [
     "msrp": 132.5,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/81JijOFMDaL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FXNTC1S8",
@@ -153072,7 +152917,6 @@ export const PARTS = [
     "msrp": 189.9,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/71tfK3ZpQ-L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GF9JXFKB",
@@ -153095,7 +152939,6 @@ export const PARTS = [
     "msrp": 119.9,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/8180XDGQXNL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0F3XV451X",
@@ -153119,7 +152962,6 @@ export const PARTS = [
     "msrp": 179.9,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/71uZg195moL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GFB83GPM",
@@ -153142,7 +152984,6 @@ export const PARTS = [
     "msrp": 159.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/61fYgYgL1uL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FKL8L37F",
@@ -153165,7 +153006,6 @@ export const PARTS = [
     "msrp": 139.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/61QzKFIKmXL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FKL76KM6",
@@ -153188,7 +153028,6 @@ export const PARTS = [
     "msrp": 159.99,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/81qIv2pIPKL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FPCFQ8TP",
@@ -153211,7 +153050,6 @@ export const PARTS = [
     "msrp": 249.99,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/913s7Dvl-AL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GRK6FY3P",
@@ -153235,7 +153073,6 @@ export const PARTS = [
     "msrp": 229,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/51wkyK+xCiL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DKVCTZBJ",
@@ -153259,7 +153096,6 @@ export const PARTS = [
     "msrp": 179.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/61iuIPffBbL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GHQ7339J",
@@ -153283,7 +153119,6 @@ export const PARTS = [
     "msrp": 165.99,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/71ydb44KgtL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FGPPM12Q",
@@ -153307,7 +153142,6 @@ export const PARTS = [
     "msrp": 204.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/81wcaiiHkeL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CTXR7M69",
@@ -153332,7 +153166,6 @@ export const PARTS = [
     "msrp": 54.99,
     "r": 3.4,
     "img": "https://m.media-amazon.com/images/I/61+j7XcvRcL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FSVHKKRT",
@@ -153355,7 +153188,6 @@ export const PARTS = [
     "msrp": 69.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/51Io2ORcJ7L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0G3CXRQ67",
@@ -153379,7 +153211,6 @@ export const PARTS = [
     "msrp": 54.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/61iPn5XCYJL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FST7CYPC",
@@ -153402,7 +153233,6 @@ export const PARTS = [
     "msrp": 99.99,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/717mXxH8VAL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CPR1FR7H",
@@ -153427,7 +153257,6 @@ export const PARTS = [
     "msrp": 99.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/71EGJqUqtFL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FLG9RNY4",
@@ -153451,7 +153280,6 @@ export const PARTS = [
     "msrp": 114.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/61JTr9x4FcL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FLG9Y4HZ",
@@ -153475,7 +153303,6 @@ export const PARTS = [
     "msrp": 78.5,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/61UD4Ag8JiL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GCKB29XN",
@@ -153498,7 +153325,6 @@ export const PARTS = [
     "msrp": 59.9,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/71lLNKo9UvL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BL4VRBWZ",
@@ -153513,13 +153339,12 @@ export const PARTS = [
   {
     "id": 100487,
     "c": "PSU",
-    "n": "Supernova 1200 P2 80+ Platinum, 1200W ECO Mode Fully Modular NVIDIA SLI and Crossfire Ready 10 Year Warranty Power Supply 220-P2-1200-X1",
+    "n": "EVGA Supernova 1200 P2 80+ Platinum, 1200W ECO Mode Fully Modular NVIDIA SLI and Crossfire Ready 10 Year Warranty Power Supply 220-P2-1200-X1",
     "b": "NVIDIA",
     "pr": 399.99,
     "msrp": 399.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/71nGSWfWVVL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B00KYK1CKI",
@@ -153537,13 +153362,12 @@ export const PARTS = [
   {
     "id": 100488,
     "c": "PSU",
-    "n": "SuperNOVA 220-G3-1000-X1,1000 G3, 80 Plus Gold 1000W, Fully Modular, Eco Mode with New HDB Fan, 10 Year Warranty, Includes Power ON Self Tester, Compact 150mm Size, Power Supply",
+    "n": "EVGA SuperNOVA 220-G3-1000-X1,1000 G3, 80 Plus Gold 1000W, Fully Modular, Eco Mode with New HDB Fan, 10 Year Warranty, Includes Power ON Self Tester, Compact 150mm Size, Power Supply",
     "b": "MSI",
     "pr": 399.99,
     "msrp": 399.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/71JAgFHihNL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B01LZ3SFB3",
@@ -153566,7 +153390,6 @@ export const PARTS = [
     "msrp": 49.9,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/71PosWeyoWL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GQ1QGCBT",
@@ -153590,7 +153413,6 @@ export const PARTS = [
     "msrp": 109.99,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/71YSolnm79L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CWVTMFLC",
@@ -153613,7 +153435,6 @@ export const PARTS = [
     "msrp": 123.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/51J6MH0d3yL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0937H4WJW",
@@ -153635,7 +153456,6 @@ export const PARTS = [
     "msrp": 399.99,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/61Wc52g0X4L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GSR1M4ZJ",
@@ -153660,7 +153480,6 @@ export const PARTS = [
     "msrp": 399,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/517CvE3bPML._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DZ935RX9",
@@ -153685,7 +153504,6 @@ export const PARTS = [
     "msrp": 374.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/81yOFiOEG+L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0D7LY1NC5",
@@ -153711,7 +153529,6 @@ export const PARTS = [
     "msrp": 379.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/91Zx8tlgk8L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BPHRGLSH",
@@ -153737,7 +153554,6 @@ export const PARTS = [
     "msrp": 469.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/71rhbAa9EpL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0F8VKC71F",
@@ -153763,7 +153579,6 @@ export const PARTS = [
     "msrp": 399.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/51EJt5geVEL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DHFD5625",
@@ -153789,7 +153604,6 @@ export const PARTS = [
     "msrp": 461.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/71pmMaMPOAL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CS5BV3PN",
@@ -153815,7 +153629,6 @@ export const PARTS = [
     "msrp": 489.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/81JEfdUVCTL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0B3HGJ4V7",
@@ -153841,7 +153654,6 @@ export const PARTS = [
     "msrp": 848.89,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/51EJt5geVEL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DSR14511",
@@ -153867,7 +153679,6 @@ export const PARTS = [
     "msrp": 619.99,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/81JEfdUVCTL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BG5L9H31",
@@ -153893,7 +153704,6 @@ export const PARTS = [
     "msrp": 540,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/61EcFR4ij+L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BMQSYM65",
@@ -153919,7 +153729,6 @@ export const PARTS = [
     "msrp": 464.99,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/71pmMaMPOAL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CS5X4RK4",
@@ -153945,7 +153754,6 @@ export const PARTS = [
     "msrp": 959.99,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/71WL8HWbOjL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0C65CD3C7",
@@ -153971,7 +153779,6 @@ export const PARTS = [
     "msrp": 849.99,
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/71xOTU97xEL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GGJ9YH2D",
@@ -153997,7 +153804,6 @@ export const PARTS = [
     "msrp": 799.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/516kNCr-TvL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DSQMCV8B",
@@ -154023,7 +153829,6 @@ export const PARTS = [
     "msrp": 248.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/71QYVWwXVlL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B08NVQZ9XQ",
@@ -154049,7 +153854,6 @@ export const PARTS = [
     "msrp": 309.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/51PEqDwqw+L._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B09HRSZ3HK",
@@ -154075,7 +153879,6 @@ export const PARTS = [
     "msrp": 149.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/71QYVWwXVlL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B08MF31FSZ",
@@ -154101,7 +153904,6 @@ export const PARTS = [
     "msrp": 549.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/71w15HP3aLL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B08N688HCH",
@@ -154127,7 +153929,6 @@ export const PARTS = [
     "msrp": 150.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/61+0UEKmgoL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0B3QN2J5C",
@@ -154153,7 +153954,6 @@ export const PARTS = [
     "msrp": 365,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/71-qOohP-jL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07Z87ZMN3",
@@ -154177,7 +153977,6 @@ export const PARTS = [
     "msrp": 399.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/71cqpw-pTVL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B01MS6EL43",
@@ -154195,13 +153994,12 @@ export const PARTS = [
   {
     "id": 100514,
     "c": "RAM",
-    "n": "Vengeance RGB RS DDR5 RAM 16GB (2x8GB) Up to 6000MHz CL36-44-44-96 1.35V AMD EXPO Intel XMP Computer Desktop Memory – Gray (CMG16GX5M2E6000Z36)",
+    "n": "CORSAIR Vengeance RGB RS DDR5 RAM 16GB (2x8GB) Up to 6000MHz CL36-44-44-96 1.35V AMD EXPO Intel XMP Computer Desktop Memory – Gray (CMG16GX5M2E6000Z36)",
     "b": "AMD",
     "pr": 254.99,
     "msrp": 254.99,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/71xOTU97xEL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GQC6MV6C",
@@ -154221,13 +154019,12 @@ export const PARTS = [
   {
     "id": 100515,
     "c": "RAM",
-    "n": "Vengeance DDR5 RAM 64GB (2x32GB) 6000MHz CL30 Intel XMP iCUE Compatible Computer Memory - Black (CMK64GX5M2B6000C30)",
+    "n": "CORSAIR Vengeance DDR5 RAM 64GB (2x32GB) 6000MHz CL30 Intel XMP iCUE Compatible Computer Memory - Black (CMK64GX5M2B6000C30)",
     "b": "Intel",
     "pr": 1117.99,
     "msrp": 1117.99,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/61m8xvVXvvL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0C5M6SJYW",
@@ -154253,7 +154050,6 @@ export const PARTS = [
     "msrp": 199.98,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/71Sr1zjPhwL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GV1RCHX2",
@@ -154276,7 +154072,6 @@ export const PARTS = [
     "msrp": 549,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/61uDl4amtnL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DZK9C789",
@@ -154299,7 +154094,6 @@ export const PARTS = [
     "msrp": 625,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/41Iv1DnDhBL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BD5LWM89",
@@ -154345,7 +154139,6 @@ export const PARTS = [
     "msrp": 289.99,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/51SoxU7vZ7L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B073SBRHH6",
@@ -154368,7 +154161,6 @@ export const PARTS = [
     "msrp": 245.99,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/91beyGX5a1L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BYSKXGJV",
@@ -154391,7 +154183,6 @@ export const PARTS = [
     "msrp": 319.99,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/61GEj4zV-dL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0B94M13NH",
@@ -154414,7 +154205,6 @@ export const PARTS = [
     "msrp": 309.99,
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/71-3IpwUj3L._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0D1V2K4LJ",
@@ -154437,7 +154227,6 @@ export const PARTS = [
     "msrp": 254.75,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/71dpms8gexL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07H289S7C",
@@ -154460,7 +154249,6 @@ export const PARTS = [
     "msrp": 229.99,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/71KX9yXNKuL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DWX6STX9",
@@ -154483,7 +154271,6 @@ export const PARTS = [
     "msrp": 239.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/7172nw99CvL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CMQ8XBBR",
@@ -154506,7 +154293,6 @@ export const PARTS = [
     "msrp": 219.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/81Td8U1hQhL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07GSJ7M81",
@@ -154529,7 +154315,6 @@ export const PARTS = [
     "msrp": 299.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/51dhlFZU1XL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B08KTM4SNY",
@@ -154552,7 +154337,6 @@ export const PARTS = [
     "msrp": 410.87,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/61CxbCXboVL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B084ZTSMWF",
@@ -154575,7 +154359,6 @@ export const PARTS = [
     "msrp": 378.96,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/71JAHknO-GL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07D3MWMNZ",
@@ -154598,7 +154381,6 @@ export const PARTS = [
     "msrp": 329,
     "r": null,
     "img": "https://m.media-amazon.com/images/I/71AFU+mMpsL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0GN498RPM",
@@ -154621,7 +154403,6 @@ export const PARTS = [
     "msrp": 460.06,
     "r": 3.8,
     "img": "https://m.media-amazon.com/images/I/41tg+DoLZfL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B07YF6DKS2",
@@ -154644,7 +154425,6 @@ export const PARTS = [
     "msrp": 139.99,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/71H8RmHlJRL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DQPSPPSZ",
@@ -154665,7 +154445,6 @@ export const PARTS = [
     "msrp": 119.99,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/71B+-F6z-AL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DQPRVD4C",
@@ -154686,7 +154465,6 @@ export const PARTS = [
     "msrp": 94.32,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/71jLbhJ2dAL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0FV32RM81",
@@ -154707,7 +154485,6 @@ export const PARTS = [
     "msrp": 99.99,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/71-2omOmgVL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CP3MZXVH",
@@ -154722,13 +154499,12 @@ export const PARTS = [
   {
     "id": 100537,
     "c": "Case",
-    "n": "Core 1100 - Mini Tower Computer Case - mATX - High Airflow and Cooling - 1x 120mm Silent Fan Included - Brushed Aluminium - Black",
+    "n": "Fractal Design Core 1100 - Mini Tower Computer Case - mATX - High Airflow and Cooling - 1x 120mm Silent Fan Included - Brushed Aluminium - Black",
     "b": "MSI",
     "pr": 49.99,
     "msrp": 49.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/81qFmZZvNHL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B00KXXZS74",
@@ -154749,7 +154525,6 @@ export const PARTS = [
     "msrp": 184.99,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/81O7F-h7T-L._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0CS3T8BVF",
@@ -154770,7 +154545,6 @@ export const PARTS = [
     "msrp": 204.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/61-LJFlUqjL._AC_UL320_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B08146X79Y",
@@ -154785,13 +154559,12 @@ export const PARTS = [
   {
     "id": 100540,
     "c": "Case",
-    "n": "iCUE 4000D RGB Airflow Mid-Tower Case - 3X AF120 RGB Elite Fans - iCUE Lighting Node PRO Controller - High-Airflow Design - CORSAIR RapidRoute Cable Management System - True White",
+    "n": "Corsair iCUE 4000D RGB Airflow Mid-Tower Case - 3X AF120 RGB Elite Fans - iCUE Lighting Node PRO Controller - High-Airflow Design - CORSAIR RapidRoute Cable Management System - True White",
     "b": "Corsair",
     "pr": 149.99,
     "msrp": 149.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/81BJl9d8iHL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0BKC5RY3H",
@@ -154806,13 +154579,12 @@ export const PARTS = [
   {
     "id": 100541,
     "c": "Case",
-    "n": "iCUE 7000X RGB Full-Tower ATX PC Case – Three Tempered Glass Panels – Spacious Interior – Easy Cable Management – 4X CORSAIR SP140 RGB Elite Fans Included – White",
+    "n": "CORSAIR iCUE 7000X RGB Full-Tower ATX PC Case – Three Tempered Glass Panels – Spacious Interior – Easy Cable Management – 4X CORSAIR SP140 RGB Elite Fans Included – White",
     "b": "Corsair",
     "pr": 359.99,
     "msrp": 359.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/71ZbuzUPIOS._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B094464GV5",
