@@ -275,7 +275,6 @@ function matchRecord(rec, idx) {
     if (recBrand && partBrand && (recBrand === partBrand || recBrand.includes(partBrand) || partBrand.includes(recBrand))) {
       return { part: candidate, confidence: 0.95, method: 'mpn' };
     }
-  };
   }
   
   const sku = String(rec.sku || '').trim();
