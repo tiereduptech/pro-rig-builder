@@ -3252,6 +3252,9 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
   const [q,setQ]=useState("");
   const [viewMode,setViewMode]=useState(()=>{try{return localStorage.getItem("rf-viewmode")||"row";}catch{return "row";}});
   const setViewModeP=v=>{setViewMode(v);try{localStorage.setItem("rf-viewmode",v);}catch{}};
+  const [sf,setSf]=useState({});
+  const [showAll,setShowAll]=useState({});
+  const togSf=(col,val)=>setSf(pv=>{const cu=pv[col]||[];return{...pv,[col]:cu.includes(val)?cu.filter(v=>v!==val):[...cu,val]};});
   const [sort,setSort]=useState("price-asc");
   const [brands,setBrands]=useState([]);
   const [minR,setMinR]=useState(0);
@@ -3267,6 +3270,17 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
     if(brands.length&&!brands.includes(resolveBrand(p)))return false;
     if(minR&&p.r<minR)return false;
     if($(p)<prMin||$(p)>prMax)return false;
+    for(const [key,vals] of Object.entries(sf)){
+      if(key.endsWith("_max")){
+        const field=key.replace("_max","");
+        if(p[field]!=null&&p[field]>vals)return false;
+      }else if(Array.isArray(vals)&&vals.length){
+        const cfg=cat&&CAT[cat]?.filters?.[key];
+        const ev=cfg?.extract?cfg.extract(p):null;
+        const evMatch=Array.isArray(ev)?ev.some(x=>vals.includes(x)):(ev!=null&&vals.includes(ev));
+        if(!(vals.includes(String(p[key]))||evMatch))return false;
+      }
+    }
     return true;
   });
   if(sort==="price-asc")list.sort((a,b)=>$(a)-$(b));
@@ -3298,12 +3312,37 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
         </FG>
         <FG label="BRAND">{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={compatList.filter(p=>resolveBrand(p)===b).length}/>)}</FG>
         <FG label="RATING">{[4.5,4,0].map(rv=><Chk key={rv} label={rv?`${rv}+ ★`:"All"} checked={minR===rv} onChange={()=>setMinR(minR===rv?0:rv)}/>)}</FG>
-        {/* Dynamic spec filters based on category cols */}
-        {cols.filter(col=>col!=="bench").map(col=>{
-          const vals=[...new Set(compatList.map(p=>p[col]).filter(v=>v!=null))].sort();
-          if(vals.length<=1||vals.length>15)return null;
-          return <FG key={col} label={(SL[col]||col).toUpperCase()}>
-            {vals.map(v=><Chk key={String(v)} label={fmt(col,v)} checked={false} onChange={()=>{}} count={compatList.filter(p=>p[col]===v).length}/>)}
+        {/* Category-specific filters (same logic as SearchPage) */}
+        {cat && CAT[cat]?.filters && Object.entries(CAT[cat].filters).map(([field,cfg])=>{
+          if(cfg.type==="boolean"){
+            const trueCount=compatList.filter(p=>p[field]).length;
+            const falseCount=compatList.filter(p=>!p[field]).length;
+            if(trueCount===0)return null;
+            return <FG key={field} label={cfg.label.toUpperCase()}>
+              <Chk label="Yes" checked={(sf[field]||[]).includes("true")} onChange={()=>togSf(field,"true")} count={trueCount}/>
+              <Chk label="No" checked={(sf[field]||[]).includes("false")} onChange={()=>togSf(field,"false")} count={falseCount}/>
+            </FG>;
+          }
+          if(cfg.type==="range"){
+            const vals=compatList.map(p=>p[field]).filter(v=>v!=null&&!isNaN(v));
+            if(!vals.length)return null;
+            const mn=Math.min(...vals),mx=Math.max(...vals);
+            if(mn===mx)return null;
+            return <FG key={field} label={cfg.label.toUpperCase()}>
+              <div style={{display:"flex",alignItems:"center",gap:4}}>
+                <span style={{fontFamily:"var(--mono)",fontSize:12,color:"var(--dim)",fontWeight:600,flexShrink:0,whiteSpace:"nowrap"}}>{mn}{cfg.unit||""}</span>
+                <input type="range" min={mn} max={mx} value={sf[field+"_max"]||mx} onChange={e=>{const v=+e.target.value;setSf(prev=>({...prev,[field+"_max"]:v}));}} style={{flex:1,minWidth:0}}/>
+                <span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mint)",fontWeight:700,flexShrink:0,whiteSpace:"nowrap"}}>{sf[field+"_max"]||mx}{cfg.unit||""}</span>
+              </div>
+            </FG>;
+          }
+          const opts=uv(cat,field,cfg.extract);
+          if(!opts.length)return null;
+          const matchVal=cfg.extract?(p,v)=>{const ev=cfg.extract(p);return Array.isArray(ev)?ev.includes(v):ev===v;}:(p,v)=>String(p[field])===v;
+          const lbl=cfg.extract?(v)=>String(v):(v)=>fmt(field,isNaN(v)?v:+v);
+          return <FG key={field} label={cfg.label.toUpperCase()}>
+            {(showAll[field]?opts:opts.slice(0,20)).map(v=><Chk key={v} label={lbl(v)} checked={(sf[field]||[]).includes(v)} onChange={()=>togSf(field,v)} count={compatList.filter(p=>matchVal(p,v)).length}/>)}
+            {opts.length>20&&<button onClick={()=>setShowAll(s=>({...s,[field]:!s[field]}))} style={{background:'none',border:'none',padding:'4px 0',cursor:'pointer',fontFamily:'var(--mono)',fontSize:9,color:'var(--sky)',textAlign:'left',width:'100%'}}>{showAll[field]?'- show less':'+ '+(opts.length-20)+' more'}</button>}
           </FG>;
         })}
       </div>
@@ -3402,6 +3441,17 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti})
     if(brands.length&&!brands.includes(resolveBrand(p)))return false;
     if(minR&&p.r<minR)return false;
     if($(p)<prMin||$(p)>prMax)return false;
+    for(const [key,vals] of Object.entries(sf)){
+      if(key.endsWith("_max")){
+        const field=key.replace("_max","");
+        if(p[field]!=null&&p[field]>vals)return false;
+      }else if(Array.isArray(vals)&&vals.length){
+        const cfg=cat&&CAT[cat]?.filters?.[key];
+        const ev=cfg?.extract?cfg.extract(p):null;
+        const evMatch=Array.isArray(ev)?ev.some(x=>vals.includes(x)):(ev!=null&&vals.includes(ev));
+        if(!(vals.includes(String(p[key]))||evMatch))return false;
+      }
+    }
     return true;
   });
   if(sort==="price-asc")list.sort((a,b)=>$(a)-$(b));
