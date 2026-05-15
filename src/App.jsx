@@ -207,6 +207,19 @@ const RETAILER_DISPLAY_NAMES = {
   newegg_used: "Newegg (Used)",
 };
 const retailerDisplayName = key => RETAILER_DISPLAY_NAMES[key] || (key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, " "));
+// Marketplace grouping: maps individual retailer keys to UI groups
+// All newegg_* variants share the "newegg" group so they appear as one filter
+const RETAILER_GROUP_MAP = {
+  amazon: "amazon",
+  bestbuy: "bestbuy",
+  newegg: "newegg",
+  newegg_openbox: "newegg",
+  newegg_refurb: "newegg",
+  newegg_used: "newegg",
+};
+const marketplaceGroupOf = key => RETAILER_GROUP_MAP[key] || key;
+// Return all raw retailer keys that belong to a given group
+const expandMarketplaceGroup = group => Object.keys(RETAILER_GROUP_MAP).filter(k => RETAILER_GROUP_MAP[k] === group);
 
 const retailers = p => {
   if (!p.deals || typeof p.deals !== "object") return [];
@@ -2581,14 +2594,14 @@ function MobileSearchPage({activeCat,th}){
 
   const catP=cat?P.filter(p=>p.c===cat):P;
   const allBr=[...new Set(catP.map(p=>resolveBrand(p)).filter(Boolean))].sort();
-  const allMarkets=[...new Set(catP.flatMap(p=>p.deals&&typeof p.deals==="object"?Object.keys(p.deals).filter(k=>p.deals[k]&&typeof p.deals[k]==="object"&&p.deals[k].price):[]))].sort();
+  const allMarkets=[...new Set(catP.flatMap(p=>p.deals&&typeof p.deals==="object"?Object.keys(p.deals).filter(k=>p.deals[k]&&typeof p.deals[k]==="object"&&p.deals[k].price).map(marketplaceGroupOf):[]))].sort();
   const prMx=Math.max(...catP.map(p=>$(p)),100);
 
   const list=useMemo(()=>{
     let r=catP;
     if(q)r=r.filter(p=>smartMatch(p,q));
     if(brands.length)r=r.filter(p=>brands.includes(resolveBrand(p)));
-    if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price));
+    if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>expandMarketplaceGroup(m).some(rk=>p.deals[rk]&&typeof p.deals[rk]==="object"&&p.deals[rk].price)));
     r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);
     if(minR)r=r.filter(p=>p.r>=minR);
     const [sk,sd]=sort.split("-");
@@ -2809,9 +2822,9 @@ function SearchPage({activeCat,th}){
   const [showAll,setShowAll]=useState({});
   useEffect(()=>{if(activeCat)setCat(activeCat);},[activeCat]);
   const sel=c=>{setCat(c);setBrands([]);setMarketplaces([]);setSf({});setQ("");setMaxPr(5000);setMinPr(0);setMinR(0);setCpO(false);};
-  const catP=cat?P.filter(p=>p.c===cat):P;const allBr=[...new Set(catP.map(p=>resolveBrand(p)).filter(Boolean))].sort();const allMarkets=[...new Set(catP.flatMap(p=>p.deals&&typeof p.deals==="object"?Object.keys(p.deals).filter(k=>p.deals[k]&&typeof p.deals[k]==="object"&&p.deals[k].price):[]))].sort();const cols=cat?(CAT[cat]?.cols||[]):[];const prMx=Math.max(...catP.map(p=>$(p)),100);
+  const catP=cat?P.filter(p=>p.c===cat):P;const allBr=[...new Set(catP.map(p=>resolveBrand(p)).filter(Boolean))].sort();const allMarkets=[...new Set(catP.flatMap(p=>p.deals&&typeof p.deals==="object"?Object.keys(p.deals).filter(k=>p.deals[k]&&typeof p.deals[k]==="object"&&p.deals[k].price).map(marketplaceGroupOf):[]))].sort();const cols=cat?(CAT[cat]?.cols||[]):[];const prMx=Math.max(...catP.map(p=>$(p)),100);
   const togSf=(col,val)=>setSf(pv=>{const c=pv[col]||[];return{...pv,[col]:c.includes(val)?c.filter(v=>v!==val):[...c,val]};});
-  const list=useMemo(()=>{let r=catP;if(q)r=r.filter(p=>smartMatch(p,q));if(brands.length)r=r.filter(p=>brands.includes(resolveBrand(p)));if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price));r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);if(minR)r=r.filter(p=>p.r>=minR);if(cpO)r=r.filter(p=>p.cp);Object.entries(sf).forEach(([key,vals])=>{if(key.endsWith("_max")){const field=key.replace("_max","");r=r.filter(p=>p[field]==null||p[field]<=vals);}else if(Array.isArray(vals)&&vals.length){r=r.filter(p=>{const pv=String(p[key]!=null?!!p[key]?p[key]:"false":"false");const cfg=cat&&CAT[cat]?.filters?.[key];const ev=cfg?.extract?cfg.extract(p):null;const evMatch=Array.isArray(ev)?ev.some(x=>vals.includes(x)):(ev!=null&&vals.includes(ev));return vals.includes(pv)||vals.includes(String(p[key]))||evMatch;});}});const [sk,sd]=sort.split("-");r=[...r].sort((a,b)=>{const va=sk==="price"?$(a):sk==="rating"?a.r:sk==="value"?(a.value!=null?a.value:(a.bench||0)/Math.max($(a)/100,1)):(a.bench||0);const vb=sk==="price"?$(b):sk==="rating"?b.r:sk==="value"?(b.value!=null?b.value:(b.bench||0)/Math.max($(b)/100,1)):(b.bench||0);return sd==="asc"?va-vb:vb-va;});return r;},[cat,q,brands,marketplaces,maxPr,minPr,minR,cpO,sf,sort]);
+  const list=useMemo(()=>{let r=catP;if(q)r=r.filter(p=>smartMatch(p,q));if(brands.length)r=r.filter(p=>brands.includes(resolveBrand(p)));if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>expandMarketplaceGroup(m).some(rk=>p.deals[rk]&&typeof p.deals[rk]==="object"&&p.deals[rk].price)));r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);if(minR)r=r.filter(p=>p.r>=minR);if(cpO)r=r.filter(p=>p.cp);Object.entries(sf).forEach(([key,vals])=>{if(key.endsWith("_max")){const field=key.replace("_max","");r=r.filter(p=>p[field]==null||p[field]<=vals);}else if(Array.isArray(vals)&&vals.length){r=r.filter(p=>{const pv=String(p[key]!=null?!!p[key]?p[key]:"false":"false");const cfg=cat&&CAT[cat]?.filters?.[key];const ev=cfg?.extract?cfg.extract(p):null;const evMatch=Array.isArray(ev)?ev.some(x=>vals.includes(x)):(ev!=null&&vals.includes(ev));return vals.includes(pv)||vals.includes(String(p[key]))||evMatch;});}});const [sk,sd]=sort.split("-");r=[...r].sort((a,b)=>{const va=sk==="price"?$(a):sk==="rating"?a.r:sk==="value"?(a.value!=null?a.value:(a.bench||0)/Math.max($(a)/100,1)):(a.bench||0);const vb=sk==="price"?$(b):sk==="rating"?b.r:sk==="value"?(b.value!=null?b.value:(b.bench||0)/Math.max($(b)/100,1)):(b.bench||0);return sd==="asc"?va-vb:vb-va;});return r;},[cat,q,brands,marketplaces,maxPr,minPr,minR,cpO,sf,sort]);
   const ac=[brands.length,marketplaces.length,cpO,minR,maxPr<prMx,minPr>0,...Object.values(sf).map(v=>v.length)].filter(Boolean).length;
 
   if(!cat) return <CategoryBrowse sel={sel} th={th} CATS={CATS} CAT={CAT} P={P} CatThumb={CatThumb}/>;
@@ -2832,7 +2845,7 @@ function SearchPage({activeCat,th}){
           <div style={{display:"flex",justifyContent:"space-between",marginTop:2}}><span style={{fontFamily:"var(--mono)",fontSize:12,color:"var(--dim)",fontWeight:600}}>${minPr}</span><span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mint)",fontWeight:700}}>to ${maxPr>=5000?"∞":"$"+maxPr}</span></div>
         </FG>
         <FG label="BRAND">{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={catP.filter(p=>resolveBrand(p)===b).length}/>)}</FG>
-        {allMarkets.length>0&&<FG label="MARKETPLACE" open={true}>{allMarkets.map(m=>{const cap=retailerDisplayName(m);const cnt=catP.filter(p=>p.deals&&typeof p.deals==="object"&&p.deals[m]&&typeof p.deals[m]==="object"&&p.deals[m].price).length;return <Chk key={m} label={cap} checked={marketplaces.includes(m)} onChange={()=>setMarketplaces(p=>p.includes(m)?p.filter(x=>x!==m):[...p,m])} count={cnt}/>;})}</FG>}
+        {allMarkets.length>0&&<FG label="MARKETPLACE" open={true}>{allMarkets.map(m=>{const cap=retailerDisplayName(m);const cnt=catP.filter(p=>p.deals&&typeof p.deals==="object"&&expandMarketplaceGroup(m).some(rk=>p.deals[rk]&&typeof p.deals[rk]==="object"&&p.deals[rk].price)).length;return <Chk key={m} label={cap} checked={marketplaces.includes(m)} onChange={()=>setMarketplaces(p=>p.includes(m)?p.filter(x=>x!==m):[...p,m])} count={cnt}/>;})}</FG>}
         <FG label="RATING">{[4.5,4,0].map(rv=><Chk key={rv} label={rv?`${rv}+ ★`:"All"} checked={minR===rv} onChange={()=>setMinR(minR===rv?0:rv)}/>)}</FG>
         {/* Category-specific filters */}
         {cat && CAT[cat]?.filters && Object.entries(CAT[cat].filters).map(([field,cfg])=>{
