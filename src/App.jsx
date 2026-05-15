@@ -4664,6 +4664,12 @@ export default function App(){
     };
     window.addEventListener("popstate", onPop);
 
+    window.addEventListener("hashchange", () => {
+     const h = window.location.hash.replace("#", "").split("?")[0];
+     const valid = ["home","search","builder","community","tools","upgrade"];
+     if (valid.includes(h)) { setPageRaw(h); if (h !== "search") setBc(""); }
+   });
+
     // Set initial state from pathname (primary) with hash fallback for legacy URLs
     const validPages = ["home","search","builder","community","tools","upgrade","scanner","about","contact","privacy","terms","affiliate","compare","vs-pcpartpicker","pcpartpicker-alternative","best-pc-builder-tools"];
 
