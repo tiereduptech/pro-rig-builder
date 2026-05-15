@@ -157748,13 +157748,12 @@ export const PARTS = [
   {
     "id": 100621,
     "c": "CPU",
-    "n": "Aspire XC-1780-UA91 Desktop | Intel Core i5-13400 10-Core Processor (Up to 4.6GHz) | 8GB 3200MHz DDR4 RAM | 512GB PCIe Gen 4 SSD | SD Card Reader | Intel Wi-Fi 6E AX211 | Windows 11 Home",
+    "n": "acer Aspire XC-1780-UA91 Desktop | Intel Core i5-13400 10-Core Processor (Up to 4.6GHz) | 8GB 3200MHz DDR4 RAM | 512GB PCIe Gen 4 SSD | SD Card Reader | Intel Wi-Fi 6E AX211 | Windows 11 Home",
     "b": "Intel",
     "pr": 549.99,
     "msrp": 549.99,
     "r": 3.9,
     "img": "https://m.media-amazon.com/images/I/61X1H-GKUaL._AC_UY218_.jpg",
-    "needsReview": true,
     "deals": {
       "amazon": {
         "asin": "B0DFCXH97Z",
@@ -169824,6 +169823,3185 @@ export const PARTS = [
     "source": "amazon-discovery",
     "pwm": true,
     "rgb": true
+  },
+  {
+    "id": 101145,
+    "c": "Mouse",
+    "n": "Corsair IRONCLAW Wireless SE Gaming Mouse – 26,000 DPI, Ergonomic Design for Larger Hands, 10 Programmable Buttons, for MOBA, FPS, MMO – Black",
+    "b": "Corsair",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61Ng6pt8dGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G1CPTN1F",
+        "url": "https://www.amazon.com/dp/B0G1CPTN1F?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.586Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101146,
+    "c": "Mouse",
+    "n": "ASUS ROG Harpe Ace Aim Lab Wireless Esports Gaming Mouse – Aim Lab Settings Optimizer, Pro-Tested, Right-Handed, 54g Lightweight, Tri-Mode Connectivity, 36K DPI, 90Hr Battery, PC/Mac Support - Black",
+    "b": "ASUS",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71ufA6nd5cL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BSKX9V7C",
+        "url": "https://www.amazon.com/dp/B0BSKX9V7C?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.591Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101147,
+    "c": "Mouse",
+    "n": "Corsair Scimitar Elite Wireless SE MMO PC Gaming Mouse – 33,000 DPI, 16 Programmable Buttons, Key Slider, Elgato Virtual Stream Deck, 1,000Hz Polling, Up to 150-Hour Battery – Gunmetal",
+    "b": "AMD",
+    "pr": 91.93,
+    "msrp": 91.93,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/61UHfqT0pHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F6NGCDFN",
+        "url": "https://www.amazon.com/dp/B0F6NGCDFN?tag=tiereduptech-20",
+        "price": 91.93,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.592Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101148,
+    "c": "Mouse",
+    "n": "Corsair Scimitar Elite Wireless SE MMO PC Gaming Mouse – 33,000 DPI, 16 Programmable Buttons, Key Slider, Elgato Virtual Stream Deck, 1,000Hz Polling, Up to 150-Hour Battery – White",
+    "b": "AMD",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/61-n5nHpSrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F6NJYMWF",
+        "url": "https://www.amazon.com/dp/B0F6NJYMWF?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.592Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101149,
+    "c": "Mouse",
+    "n": "ASUS ROG Spatha X Wireless Gaming Mouse – MMO/MOBA Design, 12 Programmable Buttons, Right-Handed, 168g, Dual-Mode (Wired/2.4GHz), 19K DPI, up to 67Hr Battery, Magnetic Charging Dock, PC/Mac Support",
+    "b": "ASUS",
+    "pr": 126.99,
+    "msrp": 126.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71WaCVjJ8zL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09726KT4R",
+        "url": "https://www.amazon.com/dp/B09726KT4R?tag=tiereduptech-20",
+        "price": 126.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.593Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101150,
+    "c": "Mouse",
+    "n": "ASUS ROG Gladius III Core Wired Gaming Mouse – Right-Handed Ergonomic, 72g, 12K DPI, ROG Paracord, Push-Fit Switch Sockets/Hot-Swappable Switches, Gear Link Web-Based Configuration, PC/Mac Support",
+    "b": "ASUS",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/41aqQBaATaL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FLH3LP3W",
+        "url": "https://www.amazon.com/dp/B0FLH3LP3W?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.593Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101151,
+    "c": "Mouse",
+    "n": "Corsair Scimitar RGB Elite, MOBA/MMO Gaming Mouse, Black, Backlit RGB LED, 18000 DPI, Optical (Renewed)",
+    "b": "Corsair",
+    "pr": 42,
+    "msrp": 42,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/614J0VriTRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0949M4PJR",
+        "url": "https://www.amazon.com/dp/B0949M4PJR?tag=tiereduptech-20",
+        "price": 42,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.593Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101152,
+    "c": "Mouse",
+    "n": "Corsair Scimitar Elite Wireless SE MMO PC Gaming Mouse – 33,000 DPI, Elgato Virtual Stream Deck, 1,000Hz Polling, Up to 150-Hour Battery – Gunmetal(Renewed) (Renewed)",
+    "b": "Corsair",
+    "pr": 62.95,
+    "msrp": 62.95,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/61UHfqT0pHL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GWKHJRDR",
+        "url": "https://www.amazon.com/dp/B0GWKHJRDR?tag=tiereduptech-20",
+        "price": 62.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.593Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101153,
+    "c": "Mouse",
+    "n": "CORSAIR SCIMITAR ELITE RGB WIRELESS MMO Gaming Mouse - 26,000 DPI - 16 Programmable Buttons - Up to 150hrs Battery - iCUE Compatible - Black (Renewed)",
+    "b": "Corsair",
+    "pr": 64.95,
+    "msrp": 64.95,
+    "r": 3.5,
+    "img": "https://m.media-amazon.com/images/I/712zoUOXUoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJJY5CVN",
+        "url": "https://www.amazon.com/dp/B0FJJY5CVN?tag=tiereduptech-20",
+        "price": 64.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.593Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101154,
+    "c": "Mouse",
+    "n": "Corsair Sabre v2 PRO Ultralight FPS Wireless Gaming Mouse – 33,000 DPI, 36g Weight, 8,000Hz Hyper-Polling, Mechanical Switches, Up to 70-Hour Wireless Battery Life, Web Hub – Black",
+    "b": "Corsair",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61EoVK01-gL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FKJ2J2R8",
+        "url": "https://www.amazon.com/dp/B0FKJ2J2R8?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.595Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101155,
+    "c": "Mouse",
+    "n": "Logitech Signature M650 Wireless Mouse - for Small to Medium Sized Hands, 2-Year Battery, Silent Clicks, Customizable Side Buttons, Bluetooth, for PC/Mac/Multi-Device/Chromebook - Rose",
+    "b": "MSI",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71+UaxBYWpL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09KXBJS7N",
+        "url": "https://www.amazon.com/dp/B09KXBJS7N?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.595Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101156,
+    "c": "Mouse",
+    "n": "Corsair M75 Wireless RGB Lightweight FPS Gaming Mouse – 26,000 DPI – Swappable Side Buttons – iCUE Compatible – PC – Black",
+    "b": "Corsair",
+    "pr": 46.99,
+    "msrp": 46.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61UG3YVcW-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CTN26P3Z",
+        "url": "https://www.amazon.com/dp/B0CTN26P3Z?tag=tiereduptech-20",
+        "price": 46.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.598Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101157,
+    "c": "Keyboard",
+    "n": "ASUS ROG Strix Scope II X Wired USB Mechanical Gaming Keyboard – 100% Full-Size, Hot Swappable Pre-lubed ROG NX Snow V2 Linear Switches, PBT Keycaps, RGB, PC/Mac Support - Black",
+    "b": "ASUS",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71iyRkaBAEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FGGZK4X7",
+        "url": "https://www.amazon.com/dp/B0FGGZK4X7?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.599Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101158,
+    "c": "Keyboard",
+    "n": "Corsair Galleon 100 SD RGB Mechanical Wired Gaming Keyboard – QWERTY US, Stream Deck-Integrated, Pre-Lubed MLX Pulse Thocky Hotswappable PBT Double-Shot Switches, FlashTap SOCD, 8,000Hz – Black",
+    "b": "Corsair",
+    "pr": 349.99,
+    "msrp": 349.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/71+tkqze3FL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G3PN1VS4",
+        "url": "https://www.amazon.com/dp/B0G3PN1VS4?tag=tiereduptech-20",
+        "price": 349.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.600Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101159,
+    "c": "Keyboard",
+    "n": "ASUS ROG Strix Scope II 96 Wireless Mechanical Gaming Keyboard – 96% Full-Size, Tri-Mode Connectivity, Hot Swappable Pre-lubed ROG NX Snow Linear Switches, PBT Keycaps, RGB, PC/Mac Support-Black",
+    "b": "ASUS",
+    "pr": 132,
+    "msrp": 132,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/91YxKZjwOPL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C7KFZ5TL",
+        "url": "https://www.amazon.com/dp/B0C7KFZ5TL?tag=tiereduptech-20",
+        "price": 132,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.601Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101160,
+    "c": "Keyboard",
+    "n": "Corsair K55 CORE TKL RGB Gaming Keyboard – Tenkeyless, 8-Zone RGB, Quiet Membrane Keys, Spill Resistant, Media Keys, 1000Hz Polling – NA Layout – Black",
+    "b": "Corsair",
+    "pr": 34.99,
+    "msrp": 34.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/717RHdRIhiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FG8DKV2N",
+        "url": "https://www.amazon.com/dp/B0FG8DKV2N?tag=tiereduptech-20",
+        "price": 34.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.602Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101161,
+    "c": "Keyboard",
+    "n": "Corsair K100 RGB Optical-Mechanical Wired Gaming Keyboard - QWERTY US Layout, OPX Switches - PBT Double-Shot Keycaps - Elgato Stream Deck and iCUE Compatible - Black",
+    "b": "AMD",
+    "pr": 199.99,
+    "msrp": 199.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71QCqjg5j8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08HR74WV4",
+        "url": "https://www.amazon.com/dp/B08HR74WV4?tag=tiereduptech-20",
+        "price": 199.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.607Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101162,
+    "c": "Keyboard",
+    "n": "Corsair K70 CORE RGB Mechanical Wired Gaming Keyboard – Pre-Lubed MLX Red Linear Switches, SOCD, ABS Double-Shot Keycaps, Media Control Dial,1000Hz Polling, QWERTY NA –Steel Grey (Renewed)",
+    "b": "Corsair",
+    "pr": 67.99,
+    "msrp": 67.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/419tkn1EeEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GZ5STQFC",
+        "url": "https://www.amazon.com/dp/B0GZ5STQFC?tag=tiereduptech-20",
+        "price": 67.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.608Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101163,
+    "c": "Keyboard",
+    "n": "Corsair K70 RGB TKL Champion Series Gaming Keyboard CH-911901A - OPX Switch (Renewed)",
+    "b": "Corsair",
+    "pr": 119.95,
+    "msrp": 119.95,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61Lx7dhCuRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09W643FFK",
+        "url": "https://www.amazon.com/dp/B09W643FFK?tag=tiereduptech-20",
+        "price": 119.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.608Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101164,
+    "c": "Keyboard",
+    "n": "Corsair K70 PRO Mini Wireless 60% (CH-9189014-NA) Mechanical Cherry MX Speed Switch Keyboard with RGB Backlighting - Black (Renewed)",
+    "b": "Corsair",
+    "pr": 62.88,
+    "msrp": 62.88,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/617LYk+8G2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4BR1WKN",
+        "url": "https://www.amazon.com/dp/B0C4BR1WKN?tag=tiereduptech-20",
+        "price": 62.88,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.608Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101165,
+    "c": "Keyboard",
+    "n": "Corsair K70 PRO Mini Wireless RGB 60% (CH-9189010-NA) Mechanical Gaming Keyboard (Fastest Sub-1ms Wireless, Swappable Cherry MX Red Keyswitches) QWERTY, NA Layout - Black (Renewed)",
+    "b": "Corsair",
+    "pr": 54.99,
+    "msrp": 54.99,
+    "r": 3,
+    "img": "https://m.media-amazon.com/images/I/61I7BGUW5lL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BB5Q2WTS",
+        "url": "https://www.amazon.com/dp/B0BB5Q2WTS?tag=tiereduptech-20",
+        "price": 54.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.608Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101166,
+    "c": "Keyboard",
+    "n": "Corsair Vanguard 96 Wired Mechanical Gaming Keyboard – 96% Layout, MLX Plasma Linear Switches, 8000Hz Polling, LCD Display, Virtual Stream Deck, G-Keys, SOCD Flashtap, QWERTY US – Black",
+    "b": "AMD",
+    "pr": 149.99,
+    "msrp": 149.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71fjsPsNCdL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FKJBZHTW",
+        "url": "https://www.amazon.com/dp/B0FKJBZHTW?tag=tiereduptech-20",
+        "price": 149.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.608Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101167,
+    "c": "Keyboard",
+    "n": "Corsair K100 RGB Mechanical Gaming Keyboard - Cherry MX Speed RGB Silver Keyswitches - PBT Double-Shot Keycaps - Elgato Stream Deck and iCUE Compatible - QWERTY NA Layout - Black",
+    "b": "AMD",
+    "pr": 289.99,
+    "msrp": 289.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61FgJppIOOL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08HR68MQZ",
+        "url": "https://www.amazon.com/dp/B08HR68MQZ?tag=tiereduptech-20",
+        "price": 289.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.608Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101168,
+    "c": "Keyboard",
+    "n": "ASUS ROG Strix Scope II Gaming Keyboard, pre-lubed ROG RX Red Linear Optical switches, Sound-dampening Foam, PBT doubleshot keycaps, Streaming hotkeys, Multi-Function Controls, Wrist Rest",
+    "b": "ASUS",
+    "pr": 109.99,
+    "msrp": 109.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81Gd2c8ljmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CLHLLFBP",
+        "url": "https://www.amazon.com/dp/B0CLHLLFBP?tag=tiereduptech-20",
+        "price": 109.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.613Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101169,
+    "c": "Keyboard",
+    "n": "ASUS TUF Gaming K3 Gen II Wired USB Gaming Keyboard – 97-Key Compact Layout, Optical-Mechanical Red (Linear) Switches, PBT Keycaps, Detachable Top Plate, IP57 Waterproofing, PC/Mac Support - Black",
+    "b": "ASUS",
+    "pr": 62.99,
+    "msrp": 62.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/812ucBlULmL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D9Y83J89",
+        "url": "https://www.amazon.com/dp/B0D9Y83J89?tag=tiereduptech-20",
+        "price": 62.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.614Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101170,
+    "c": "Keyboard",
+    "n": "ASUS ROG Strix Scope II 96 RX Wireless Optical Gaming Keyboard – 96% Full-Size, Tri-Mode Connectivity, Pre-lubed ROG RX Red Linear Switches PBT Keycaps, RGB, PC/Mac Support - Black",
+    "b": "ASUS",
+    "pr": 119.99,
+    "msrp": 119.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/713d-a7JglL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GMZ5Z9G4",
+        "url": "https://www.amazon.com/dp/B0GMZ5Z9G4?tag=tiereduptech-20",
+        "price": 119.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.614Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101171,
+    "c": "Headset",
+    "n": "Corsair HS60 Haptic Stereo Gaming Headset with Haptic Bass, Memory Foam Earcups, Removable Microphone, Windows Sonic Compatible, Discord-Certified for PC - Arctic Camo",
+    "b": "Arctic",
+    "pr": 123.99,
+    "msrp": 123.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/8169YUwXtdL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08JFYW4CK",
+        "url": "https://www.amazon.com/dp/B08JFYW4CK?tag=tiereduptech-20",
+        "price": 123.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.625Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101172,
+    "c": "Headset",
+    "n": "weishan HS60 Pro Mic Replacement for Corsair HS50, HS60, HS70 Gaming Headset Detachable Microphone Gaming Headset on PS5, PS4, PC, Xbox, Noise Cancelling 3.5mm Black",
+    "b": "Corsair",
+    "pr": 9.99,
+    "msrp": 9.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/51A3swP81vL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0948TWX72",
+        "url": "https://www.amazon.com/dp/B0948TWX72?tag=tiereduptech-20",
+        "price": 9.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.625Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101173,
+    "c": "Headset",
+    "n": "Corsair HS55 Stereo Wired Gaming Headset — Carbon (Renewed)",
+    "b": "Corsair",
+    "pr": 29.88,
+    "msrp": 29.88,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61hsIENgtqL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BDHTMNNZ",
+        "url": "https://www.amazon.com/dp/B0BDHTMNNZ?tag=tiereduptech-20",
+        "price": 29.88,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.625Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101174,
+    "c": "Headset",
+    "n": "SOULWIT Cooling-Gel Earpads Replacement for Corsair HS80 Max/HS80 USB Wired/HS 80 RGB Wireless Gaming Headsets, Ear Pads Cushions with High-Density Noise Isolation Foam - Black",
+    "b": "Corsair",
+    "pr": 18.95,
+    "msrp": 18.95,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71QzZa3CHAL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BLHFZQ6N",
+        "url": "https://www.amazon.com/dp/B0BLHFZQ6N?tag=tiereduptech-20",
+        "price": 18.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.625Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101175,
+    "c": "Headset",
+    "n": "ASUS ROG Kithara Gaming/Audiophile Open-Back Wired Headphones with Mic – ROG-Tuned HIFIMAN Planar Magnetic Drivers, Adjustable Headband, Extra Ear Pads, Compatible with DACs, Amps, PC, Console, Mobile",
+    "b": "ASUS",
+    "pr": 299.99,
+    "msrp": 299.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71B5EMO2G7L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GG53SPJC",
+        "url": "https://www.amazon.com/dp/B0GG53SPJC?tag=tiereduptech-20",
+        "price": 299.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.625Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101176,
+    "c": "Headset",
+    "n": "RIG 600 PRO HS Dual Wireless Multiplatform Gaming Headset with 2.4GHz/Bluetooth for PlayStation PS4, PS5, Nintendo Switch, Switch 2, PC, USB, Steam Deck, Android, iPhone - Acid Camo",
+    "b": "AMD",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/81VrQmtc9sL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G5BMRV63",
+        "url": "https://www.amazon.com/dp/B0G5BMRV63?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101177,
+    "c": "Headset",
+    "n": "Corsair HS35 Surround v2 Multiplatform Wired Gaming Headset – Dolby 7.1 – Flexible Omni-Directional Microphone – Universal 3.5mm Connection – PC, Mac, PS5, PS4, Xbox, Nintendo Switch, Mobile – Carbon",
+    "b": "Corsair",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71lhlzNqWKL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CY5VSLL3",
+        "url": "https://www.amazon.com/dp/B0CY5VSLL3?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.626Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101178,
+    "c": "Headset",
+    "n": "Corsair Virtuoso PRO Wired Open Back Gaming Headset - Detachable Uni-Directional Microphone - 50mm Graphene Drivers - 20Hz-40 kHz Frequency Response - Carbon",
+    "b": "Corsair",
+    "pr": 139.99,
+    "msrp": 139.99,
+    "r": 3.2,
+    "img": "https://m.media-amazon.com/images/I/71oH9wRQtaL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CGXTF225",
+        "url": "https://www.amazon.com/dp/B0CGXTF225?tag=tiereduptech-20",
+        "price": 139.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.627Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101179,
+    "c": "Headset",
+    "n": "RIG 600 PRO HX Dual Wireless Universal Gaming Headset with 2.4GHz/Bluetooth for Xbox Series X|S, Xbox One, PlayStation PS4, PS5, Nintendo Switch, Switch 2, PC, Steam Deck, Android, iPhone – Urban Camo",
+    "b": "AMD",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61iWiptrXEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DVN9CXLF",
+        "url": "https://www.amazon.com/dp/B0DVN9CXLF?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.629Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101180,
+    "c": "Microphone",
+    "n": "Wireless Lavalier Microphone, Noise Cancelling Microphone, Used for Recording Vlogs in Live Interviews and Videos, 2TX+1RX Adapter+2 Windproof+Intelligent Display Charging Room",
+    "b": "Intel",
+    "pr": 45.99,
+    "msrp": 45.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/6124PAReXIL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DTK8S2J2",
+        "url": "https://www.amazon.com/dp/B0DTK8S2J2?tag=tiereduptech-20",
+        "price": 45.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.642Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101181,
+    "c": "Microphone",
+    "n": "COMICA XLR Microphone CVM-V02O 2 Pack 14.76 fts Phantom Power Omni-Directional Lavalier Lapel Microphone for Canon Sony Panasonic Camcorders Zoom H4n H5 H6 Tascam DR-40 DR-60D DR-70D DR-100 Recorders",
+    "b": "AMD",
+    "pr": 62.69,
+    "msrp": 62.69,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71nc17-ER7L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B078K8S12H",
+        "url": "https://www.amazon.com/dp/B078K8S12H?tag=tiereduptech-20",
+        "price": 62.69,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.646Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101182,
+    "c": "Microphone",
+    "n": "Wireless Lavalier Microphone for iPhone/Android with Lightning, USB C Mini Lapel Microphone Wireless, Noise Cancellation, 35H Battery for Video Recording, Streaming - Sapphire Blue",
+    "b": "Sapphire",
+    "pr": 45.99,
+    "msrp": 45.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71sRZ2zTWlL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DFCN8N3R",
+        "url": "https://www.amazon.com/dp/B0DFCN8N3R?tag=tiereduptech-20",
+        "price": 45.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.646Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101183,
+    "c": "Microphone",
+    "n": "Elgato Wave XLR MK.2 – USB Audio Interface and DSP Mixer for XLR Microphones, 80dB Gain, Onboard Effects, LED Feedback, Touch Mute, Works with Stream Deck, PC & Mac",
+    "b": "AMD",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/51Id1KNebzL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GGYXY67H",
+        "url": "https://www.amazon.com/dp/B0GGYXY67H?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.647Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101184,
+    "c": "Webcam",
+    "n": "Insta360 Link 2 Pro – 4K PTZ Webcam for PC/Mac, 1/1.3” Sensor, Low-Light, AI Tracking, HDR, Directional Noise-Canceling Mics, Supports Stream Deck, Zoom, Teams, Twitch for Streaming or Meetings",
+    "b": "AMD",
+    "pr": 229.99,
+    "msrp": 229.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61BmGGgAcuL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G3T1QKWL",
+        "url": "https://www.amazon.com/dp/B0G3T1QKWL?tag=tiereduptech-20",
+        "price": 229.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.650Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101185,
+    "c": "Webcam",
+    "n": "Insta360 Link 2C Pro – 4K Webcam for PC/Mac, 1/1.3” Sensor, Low-Light, Auto Framing, HDR, Directional Noise-Canceling Mics, Supports Stream Deck, Zoom, Teams, Twitch for Streaming or Meetings",
+    "b": "AMD",
+    "pr": 189.99,
+    "msrp": 189.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/51TZdllIO-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G3SSQMJQ",
+        "url": "https://www.amazon.com/dp/B0G3SSQMJQ?tag=tiereduptech-20",
+        "price": 189.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.650Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101186,
+    "c": "MousePad",
+    "n": "Corsair MM350 PRO Extended XL Premium Spill-Proof Cloth Gaming Mouse Pad – 36.6” Width x 15.7” Height Surface – Black",
+    "b": "Corsair",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/31akZhXgwHL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08JH8C5T5",
+        "url": "https://www.amazon.com/dp/B08JH8C5T5?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.652Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101187,
+    "c": "MousePad",
+    "n": "ASUS ROG Sheath Gaming Mouse Pad – 35.4” x 17.3\", Extra-Large Surface, Pixel-Precise Tracking, Anti-Fray Stitched Edges, Non-Slip Base - Black/Red",
+    "b": "ASUS",
+    "pr": 23.99,
+    "msrp": 23.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61UopGzilOL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B01G5ATZAE",
+        "url": "https://www.amazon.com/dp/B01G5ATZAE?tag=tiereduptech-20",
+        "price": 23.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.652Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101188,
+    "c": "MousePad",
+    "n": "ASUS ROG Hone Ace XXL Gaming Mouse Pad – 35.4” x 15.7\", (XXL Size), Extra-Cushioning, Table-Sized for Wide, Smooth Glide and Control, Water/Oil/Dust-Resistant, Extra-Soft Non-Slip Rubber Base - Black",
+    "b": "ASUS",
+    "pr": 50.99,
+    "msrp": 50.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81DmnNmcKiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CQPG6QC8",
+        "url": "https://www.amazon.com/dp/B0CQPG6QC8?tag=tiereduptech-20",
+        "price": 50.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.653Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101189,
+    "c": "MousePad",
+    "n": "RGB Gaming Mouse Pad with 11 RGB Light up Modes,LED Gaming Pad,Non-Slip Rubber Based Computer Mice mat Medium Size(13.7” x 10.3”)",
+    "b": "MSI",
+    "pr": 12.99,
+    "msrp": 12.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/512OErc2wOL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07R6KMTFN",
+        "url": "https://www.amazon.com/dp/B07R6KMTFN?tag=tiereduptech-20",
+        "price": 12.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.654Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101190,
+    "c": "MousePad",
+    "n": "Corsair MM700 RGB Extended Cloth Gaming Mouse Pad - 36.6\" x 15.8\" - 360° RGB Lighting - Two USB Port Hub - Thick Rubber - Black (Renewed)",
+    "b": "Corsair",
+    "pr": 21.98,
+    "msrp": 21.98,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/51HXyK4kYUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CP8KGWT8",
+        "url": "https://www.amazon.com/dp/B0CP8KGWT8?tag=tiereduptech-20",
+        "price": 21.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.654Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101191,
+    "c": "MousePad",
+    "n": "ASUS ROG Moonstone Ace L Glass Gaming Mouse Pad – 19.7” x 15.7”, Ultra-Smooth Matte Tempered Glass for Quiet Ultrafast Glides, Impact/Scratch Resistant, Easy to Clean, Anti-Slip Silicone Base - Black",
+    "b": "ASUS",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61yzzcb5-dL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CLHLLQ6P",
+        "url": "https://www.amazon.com/dp/B0CLHLLQ6P?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.657Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101192,
+    "c": "MousePad",
+    "n": "ASUS ROG Scabbard II Arctic Gray XXL Gaming Mouse Pad – 35.4” x 15.7” (Extended/XXL Size), Soft Cloth Surface, Water/Oil/Dust-Resistant, Anti-Fray Edges, Non-Slip Base - Gray",
+    "b": "ASUS",
+    "pr": 37.99,
+    "msrp": 37.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81HsBMM2hFL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJS6CGGQ",
+        "url": "https://www.amazon.com/dp/B0FJS6CGGQ?tag=tiereduptech-20",
+        "price": 37.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.657Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101193,
+    "c": "MousePad",
+    "n": "ASUS ROG Sheath BLK Gaming Mouse Pad – 35.4” x 17.3\", Extra-Large Surface, Ultra-Smooth for Precise Mouse Control, Anti-Fray Stitched Edges, Non-Slip Base - Black/Gray",
+    "b": "ASUS",
+    "pr": 23.99,
+    "msrp": 23.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81e0Ok1ireL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08NCC1GCN",
+        "url": "https://www.amazon.com/dp/B08NCC1GCN?tag=tiereduptech-20",
+        "price": 23.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.657Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101194,
+    "c": "PSU",
+    "n": "be quiet! Pure Power 12 M 1000W Modular Power Supply | 80 Plus® Gold | ATX 3.1 | PCIe 5.0 GPUs and 6+2 pin connectors | 12VHPWR Cable Included | Silent 120mm be quiet! Fan - BN506 I 10 Year Warranty",
+    "b": "be quiet!",
+    "pr": 129.86,
+    "msrp": 129.86,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71qEMnLNCuL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BVYCXQY4",
+        "url": "https://www.amazon.com/dp/B0BVYCXQY4?tag=tiereduptech-20",
+        "price": 129.86,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.658Z",
+    "source": "amazon-discovery",
+    "watts": 1000,
+    "eff": "80+ Gold",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101195,
+    "c": "PSU",
+    "n": "MUSETEX PC Power Supply 1000W, Full Modular ATX Power Supply, ATX 3.1 & PCIE 5.0 Gaming Power Supply, 105°C-Main Capacitors, With 12V-2x6 Cable, 140mm Ultra Quiet Cooling Fan, PC PSU, (Black) (MU1000)",
+    "b": "MUSETEX",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": 4,
+    "img": "https://m.media-amazon.com/images/I/81vjSmxgm7L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GN1XVVFW",
+        "url": "https://www.amazon.com/dp/B0GN1XVVFW?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.658Z",
+    "source": "amazon-discovery",
+    "watts": 1000,
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101196,
+    "c": "PSU",
+    "n": "CORSAIR RM1000e ATX 3.1 PCIe 5.1 Ready Fully Modular 1000W Power Supply – 12V-2x6 Cable Included, Cybenetics Gold Efficiency, 105°C-Rated Capacitors, Modern Standby Mode – White",
+    "b": "Corsair",
+    "pr": 174.99,
+    "msrp": 174.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/7151GOFlYfL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FLG369BK",
+        "url": "https://www.amazon.com/dp/B0FLG369BK?tag=tiereduptech-20",
+        "price": 174.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.658Z",
+    "source": "amazon-discovery",
+    "watts": 1000,
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101197,
+    "c": "PSU",
+    "n": "Lian Li EDGE1000W Fully Modular Low-Noise ATX Power Supply - ATX 3.1 & PCIE 5.1 Compliant - Cybenetics Gold Efficiency - 12V-2x6 Cable - L-Shape Design - with USB/Fan Hub - Black (EG1000G.BH)",
+    "b": "Lian Li",
+    "pr": 158.99,
+    "msrp": 158.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/81kzkctRu6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DN16HS1L",
+        "url": "https://www.amazon.com/dp/B0DN16HS1L?tag=tiereduptech-20",
+        "price": 158.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.658Z",
+    "source": "amazon-discovery",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101198,
+    "c": "PSU",
+    "n": "MSI MAG A1250GL PCIE5, Fully Modular Compact Gaming 1250W Power Supply, 80+ Gold, ATX 3.1 & PCIe 5.1 Ready, Native Dual-Color 12V-2x6 Cable, 10 Year Warranty",
+    "b": "MSI",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/8123nG5THML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CT41F6FV",
+        "url": "https://www.amazon.com/dp/B0CT41F6FV?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.658Z",
+    "source": "amazon-discovery",
+    "watts": 1250,
+    "eff": "80+ Gold",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101199,
+    "c": "PSU",
+    "n": "NZXT C1200 Gold ATX 3.1 - Fully Modular Low-Noise PC Gaming Power Supply - 1200 Watts - 80 Plus Gold - 12V-2x6 Connector - Zero Fan Mode - 100% Japanese Capacitors - Black",
+    "b": "NZXT",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/511OnPdHliL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D1VDNCT7",
+        "url": "https://www.amazon.com/dp/B0D1VDNCT7?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.658Z",
+    "source": "amazon-discovery",
+    "eff": "80+ Gold",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101200,
+    "c": "PSU",
+    "n": "ASUS ROG Loki SFX-L 1200W Titanium PSU (Fully Modular Power Supply, 80+ Titanium, 120mm PWM ARGB Fan, Aura Sync, ATX 3.0 Compatible, PCIe 5.0 Ready, 10 Year Warranty)",
+    "b": "ASUS",
+    "pr": 335.69,
+    "msrp": 335.69,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81dNSvJZk6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DHFVYNZC",
+        "url": "https://www.amazon.com/dp/B0DHFVYNZC?tag=tiereduptech-20",
+        "price": 335.69,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.658Z",
+    "source": "amazon-discovery",
+    "watts": 1200,
+    "eff": "80+ Titanium",
+    "modular": "Full",
+    "ff": "SFX-L",
+    "atx3": true
+  },
+  {
+    "id": 101201,
+    "c": "PSU",
+    "n": "CyberPower CP1500AVRLCD3 Intelligent LCD UPS Battery Backup and Surge Protector, 1500VA/900W, 12 Outlets, 2 USB Ports, AVR, Mini Tower, UL Certified",
+    "b": "Intel",
+    "pr": 199.95,
+    "msrp": 199.95,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71TRxMH7XWL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BCMLLSHL",
+        "url": "https://www.amazon.com/dp/B0BCMLLSHL?tag=tiereduptech-20",
+        "price": 199.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.658Z",
+    "source": "amazon-discovery",
+    "watts": 900
+  },
+  {
+    "id": 101202,
+    "c": "PSU",
+    "n": "ASRock PG 1600G ATX 3.1 1600W Power Supply PCle5.1 10 Years Warranty Fully Modular Japanese Capacitor Phantom Gaming PG-1600G 80 Plus Gold Cybenetics Platinum 12V-2x6 Cables",
+    "b": "ASRock",
+    "pr": 199.99,
+    "msrp": 199.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/818XlFXRKGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DNNZ9G46",
+        "url": "https://www.amazon.com/dp/B0DNNZ9G46?tag=tiereduptech-20",
+        "price": 199.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.658Z",
+    "source": "amazon-discovery",
+    "watts": 1600,
+    "eff": "80+ Gold",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101203,
+    "c": "PSU",
+    "n": "MSI MPG A850GS PCIE5, Fully Modular Gaming 850W Power Supply, 80+ Gold, Dual 12V-2x6 Cables, Server-Grade Capacitor, ATX 3.1 & PCIe 5.1 Ready, Low-Noise, Semi Digital, 10 Year Warranty",
+    "b": "MSI",
+    "pr": 109.99,
+    "msrp": 109.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/81JIgLMw2-L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DT2V39K4",
+        "url": "https://www.amazon.com/dp/B0DT2V39K4?tag=tiereduptech-20",
+        "price": 109.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.658Z",
+    "source": "amazon-discovery",
+    "watts": 850,
+    "eff": "80+ Gold",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101204,
+    "c": "PSU",
+    "n": "Seasonic Prime TX-1600 Noctua Edition, Ultra-Quiet Fully Modular 1600W 80 Plus Titanium Efficiency ATX 3.1 PC Power Supply (Black/Brown) with US AC Power Cord",
+    "b": "Seasonic",
+    "pr": 654,
+    "msrp": 654,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71ZLjg+I-ML._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DMW5F3GG",
+        "url": "https://www.amazon.com/dp/B0DMW5F3GG?tag=tiereduptech-20",
+        "price": 654,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.658Z",
+    "source": "amazon-discovery",
+    "watts": 1600,
+    "eff": "80+ Titanium",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101205,
+    "c": "PSU",
+    "n": "be quiet! Dark Power 13 750W Quiet Performance Power Supply | 80 Plus Titanium Efficiency | ATX 3.0 | PCIe 5 | Modular | BN659",
+    "b": "be quiet!",
+    "pr": 179.9,
+    "msrp": 179.9,
+    "r": 3.6,
+    "img": "https://m.media-amazon.com/images/I/81HxCfuGyeL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BV6FSFL9",
+        "url": "https://www.amazon.com/dp/B0BV6FSFL9?tag=tiereduptech-20",
+        "price": 179.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.659Z",
+    "source": "amazon-discovery",
+    "watts": 750,
+    "eff": "80+ Titanium",
+    "modular": "Full",
+    "ff": "ATX",
+    "atx3": true
+  },
+  {
+    "id": 101206,
+    "c": "PSU",
+    "n": "Apevia ATX-PR700W Prestige 700W 80+ Gold Certified, ATX Active PFC, DC to DC Converter Design 135mm Silent Fan, RoHS Compliance, ATX Gaming Power Supply",
+    "b": "MSI",
+    "pr": 56.99,
+    "msrp": 56.99,
+    "r": 3.9,
+    "img": "https://m.media-amazon.com/images/I/7124JMbgDDL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DW1FW8XW",
+        "url": "https://www.amazon.com/dp/B0DW1FW8XW?tag=tiereduptech-20",
+        "price": 56.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.661Z",
+    "source": "amazon-discovery",
+    "watts": 700,
+    "eff": "80+ Gold",
+    "ff": "ATX"
+  },
+  {
+    "id": 101207,
+    "c": "PSU",
+    "n": "CableMod E-Series Classic ModFlex Sleeved Cable Kit for EVGA G/G+ / P/P+ / T (White)",
+    "b": "EVGA",
+    "pr": 69.9,
+    "msrp": 69.9,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61bj4zYy1NL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07HM6YM6K",
+        "url": "https://www.amazon.com/dp/B07HM6YM6K?tag=tiereduptech-20",
+        "price": 69.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.661Z",
+    "source": "amazon-discovery",
+    "needsReview": true
+  },
+  {
+    "id": 101208,
+    "c": "PSU",
+    "n": "PCIe Cable for EVGA Power Supply, PCIe 8 Pin Male to 6+2 Pin Male, 18AWG 10A EVGA Supernova Power Supply Cables -23.6 inch (60cm)",
+    "b": "EVGA",
+    "pr": 8.99,
+    "msrp": 8.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/717+4Mht2BL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FM3YY81S",
+        "url": "https://www.amazon.com/dp/B0FM3YY81S?tag=tiereduptech-20",
+        "price": 8.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.661Z",
+    "source": "amazon-discovery",
+    "needsReview": true
+  },
+  {
+    "id": 101209,
+    "c": "PSU",
+    "n": "Modular Power Cable 10Pin+18Pin to 24Pin 18AWG Black Flat Cable for EVGA Power Supply G+ G2 G3 P2 T2 GS Series, 60cm long",
+    "b": "EVGA",
+    "pr": 19.99,
+    "msrp": 19.99,
+    "r": 3.2,
+    "img": "https://m.media-amazon.com/images/I/71BtcBVatSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CRR1TKCF",
+        "url": "https://www.amazon.com/dp/B0CRR1TKCF?tag=tiereduptech-20",
+        "price": 19.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.661Z",
+    "source": "amazon-discovery",
+    "modular": "Full"
+  },
+  {
+    "id": 101210,
+    "c": "PSU",
+    "n": "GinTai 6 pin to 2X SATA Power Supply Cable for EVGA Supernova 650 750 850 1000 G2 G3/ 750 850 1000 1300 1600 2000 G+/ 550 650 750 850 GA/ 650 750 850 1000 1300 G2/ 550 650 750 850 1000 G3",
+    "b": "EVGA",
+    "pr": 15.48,
+    "msrp": 15.48,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/51AMiprdD4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08M9S479G",
+        "url": "https://www.amazon.com/dp/B08M9S479G?tag=tiereduptech-20",
+        "price": 15.48,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.662Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101211,
+    "c": "Case",
+    "n": "COOLER MASTER MASTERBOX Elite 500 Cabinet with Side ODD Glass – E500-KG5N-S00 - COOLER MASTER",
+    "b": "Cooler Master",
+    "pr": 105.45,
+    "msrp": 105.45,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/517QnhPBSbL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09PWJ1SBN",
+        "url": "https://www.amazon.com/dp/B09PWJ1SBN?tag=tiereduptech-20",
+        "price": 105.45,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.663Z",
+    "source": "amazon-discovery",
+    "needsReview": true
+  },
+  {
+    "id": 101212,
+    "c": "Case",
+    "n": "Cooler Master MasterBox Q300L Micro-ATX Tower with Magnetic Design Dust Filter & Thermaltake Smart 600W ATX 12V V2.3/EPS 12V 80 Plus Certified Active PFC Power Supply PS-SPD-0600NPCWUS-W",
+    "b": "Thermaltake",
+    "pr": 82.98,
+    "msrp": 82.98,
+    "r": 4.9,
+    "img": "https://m.media-amazon.com/images/I/51bd5cs78aL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BRQ5HTRB",
+        "url": "https://www.amazon.com/dp/B0BRQ5HTRB?tag=tiereduptech-20",
+        "price": 82.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.663Z",
+    "source": "amazon-discovery",
+    "mobo": [
+      "ATX",
+      "mATX"
+    ]
+  },
+  {
+    "id": 101213,
+    "c": "Case",
+    "n": "Be Quiet BW028US 280 mm Pure Loop 3 Black CPU Liquid Cooler for Heavily Overclocked Systems & 2X Pure Wings 3 PWM High-Speed Fan",
+    "b": "be quiet!",
+    "pr": 99.31,
+    "msrp": 99.31,
+    "r": 4.9,
+    "img": "https://m.media-amazon.com/images/I/61dS2aWD+UL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FNMP513T",
+        "url": "https://www.amazon.com/dp/B0FNMP513T?tag=tiereduptech-20",
+        "price": 99.31,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.664Z",
+    "source": "amazon-discovery",
+    "needsReview": true
+  },
+  {
+    "id": 101214,
+    "c": "Case",
+    "n": "Side Panel Guide Replacement Compatible with Hyte Y60 and Y70 Guides Panels into Place, Easy Installation, PC Case Upgrade Accessory 2 Pack",
+    "b": "Hyte",
+    "pr": 20,
+    "msrp": 20,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/61vt1TvC1XL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GV829Q58",
+        "url": "https://www.amazon.com/dp/B0GV829Q58?tag=tiereduptech-20",
+        "price": 20,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.664Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101215,
+    "c": "Case",
+    "n": "Lian Li O11 Vision Compact Black-Steel-Tempered Glass ATX Mid Tower Computer Case-Back Connect Support-O11VPX",
+    "b": "Lian Li",
+    "pr": 124.99,
+    "msrp": 124.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/619JoMYrJrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DJPV8XG3",
+        "url": "https://www.amazon.com/dp/B0DJPV8XG3?tag=tiereduptech-20",
+        "price": 124.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.664Z",
+    "source": "amazon-discovery",
+    "ff": "Mid Tower",
+    "mobo": [
+      "ATX"
+    ],
+    "tg": true
+  },
+  {
+    "id": 101216,
+    "c": "Case",
+    "n": "Lian Li O11D EVO RGB E-ATX Gaming Dual Chamber case - ARGB Lighting Strips - Up to 420mm Radiator - Cable Management - Front and Side Tempered Glass Panels - Reversible Chassis (O11DERGBW.US)",
+    "b": "Lian Li",
+    "pr": 169.99,
+    "msrp": 169.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61OeOaBlAIL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CRKWLLZF",
+        "url": "https://www.amazon.com/dp/B0CRKWLLZF?tag=tiereduptech-20",
+        "price": 169.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.664Z",
+    "source": "amazon-discovery",
+    "mobo": [
+      "E-ATX"
+    ],
+    "tg": true,
+    "rgb": true
+  },
+  {
+    "id": 101217,
+    "c": "Case",
+    "n": "Lian Li Dynamic EVO XL - Up to 280mm E-ATX Motherboard - ARGB Lighting Strips - Up to 3X 420mm Radiator -Front and Side Tempered Glass Panels - Reversible Chassis- Cable Management (O11DEXL-W)",
+    "b": "Lian Li",
+    "pr": 249.97,
+    "msrp": 249.97,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71Tir-CN3fL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CHM85TND",
+        "url": "https://www.amazon.com/dp/B0CHM85TND?tag=tiereduptech-20",
+        "price": 249.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.664Z",
+    "source": "amazon-discovery",
+    "mobo": [
+      "E-ATX"
+    ],
+    "tg": true,
+    "rgb": true
+  },
+  {
+    "id": 101218,
+    "c": "Case",
+    "n": "LIAN LI O11 Dynamic EVO XL RGB Tempered Glass EATX Full Tower Computer CASE - Whit",
+    "b": "Lian Li",
+    "pr": 249.97,
+    "msrp": 249.97,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51r-5eHYJiL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CKJ11LFD",
+        "url": "https://www.amazon.com/dp/B0CKJ11LFD?tag=tiereduptech-20",
+        "price": 249.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.664Z",
+    "source": "amazon-discovery",
+    "ff": "Full Tower",
+    "mobo": [
+      "E-ATX"
+    ],
+    "tg": true,
+    "rgb": true
+  },
+  {
+    "id": 101219,
+    "c": "Case",
+    "n": "Lian Li ATX PC Case 4 Slots Vertical GPU Kit (VG4v4) - Premium Gen 5 Riser Cable PCI-E 5.0 x16-200mm, PCIe 3.0/4.0 Compatible, Adjustable Position - Fits Most PC Cases (VG4v4 Black)",
+    "b": "Lian Li",
+    "pr": 76.99,
+    "msrp": 76.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71CS1htp7bL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FR4TC1M7",
+        "url": "https://www.amazon.com/dp/B0FR4TC1M7?tag=tiereduptech-20",
+        "price": 76.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.664Z",
+    "source": "amazon-discovery",
+    "mobo": [
+      "ATX"
+    ]
+  },
+  {
+    "id": 101220,
+    "c": "Case",
+    "n": "Desktop Raised Feet for Lian Li O11 Dynamic Evo with Front/Side IO Panel(USB), Enhance Airflow & Easy Bottom Cleaning, Sturdy Case Lift Stand for Improved Cooling (Black, + 40mm)",
+    "b": "Lian Li",
+    "pr": 25.98,
+    "msrp": 25.98,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/71CT5APhDEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FCWVNHBM",
+        "url": "https://www.amazon.com/dp/B0FCWVNHBM?tag=tiereduptech-20",
+        "price": 25.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.664Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101221,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120 Vision EVO CPU Cooler, 3.95-Inch IPS LCD Screen, 7 Heat Pipes, 120mm PWM Fan with LCP Blades, 160mm Dual Tower, for Intel LGA1851/1700 and AMD AM5/AM4 (Black)",
+    "b": "AMD",
+    "pr": 89.91,
+    "msrp": 89.91,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/814B7TeJbEL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GSW2RMSK",
+        "url": "https://www.amazon.com/dp/B0GSW2RMSK?tag=tiereduptech-20",
+        "price": 89.91,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101222,
+    "c": "CPUCooler",
+    "n": "Thermalrlght Phantom Spirit 120 Digital EVO CPU Air Cooler,7 Heat Pipes CPU Cooling,Double Tower Cooling,Support for AM4/AM5/Intel lga1700/115X/1200/1851,Magnetic Attraction-Digital Screen Top Cover",
+    "b": "Intel",
+    "pr": 55.9,
+    "msrp": 55.9,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71Bs2O0P3IL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FVWQZLLP",
+        "url": "https://www.amazon.com/dp/B0FVWQZLLP?tag=tiereduptech-20",
+        "price": 55.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101223,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120 Vision EVO CPU Air Cooler, Twin Tower Radiator 2150RPM Speed,480x480 Resolving Power IPS Screen with 3.95in,Computer Cooler for Intel lga1851/1700/115x,AM4/AM5",
+    "b": "Thermalright",
+    "pr": 81.59,
+    "msrp": 81.59,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71EweR+bgfL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FQC7XT4M",
+        "url": "https://www.amazon.com/dp/B0FQC7XT4M?tag=tiereduptech-20",
+        "price": 81.59,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101224,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120 Digital EVO CPU Air Cooler,7 Heat Pipes CPU Cooler,Dual 120mm PWM Fans,Magnetic Attraction-Digital Screen Top Cover,for AM4/AM5/LGA1700/1851/1150/1151/1200,PC Cooling",
+    "b": "Thermalright",
+    "pr": 56.9,
+    "msrp": 56.9,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71Bs2O0P3IL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FHPWQD3J",
+        "url": "https://www.amazon.com/dp/B0FHPWQD3J?tag=tiereduptech-20",
+        "price": 56.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101225,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120 EVO CPU Cooler,Dual TL-K12 PWM Fan, 7 Heat Pipes CPU Cooling,with 2150RPM Speed,for AMD AM4 AM5/Intel 1700/1150/1151/1200/2011/1851, PC Heatsink Cooler",
+    "b": "Thermalright",
+    "pr": 46.79,
+    "msrp": 46.79,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71YzGiybLcL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CL8TJCMZ",
+        "url": "https://www.amazon.com/dp/B0CL8TJCMZ?tag=tiereduptech-20",
+        "price": 46.79,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101226,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120 CPU Air Cooler, 7 Heat Pipes CPU Cooler,Dual 120mm TL-C12B V2 PWM Fan, AGHP 4.0 Technology,S-FDB Bearing,for AMD AM4 AM5/Intel 1700/115X/1851/1200/2011,(PS120)",
+    "b": "Thermalright",
+    "pr": 37.9,
+    "msrp": 37.9,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71tvWzuf-UL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4JK43LQ",
+        "url": "https://www.amazon.com/dp/B0C4JK43LQ?tag=tiereduptech-20",
+        "price": 37.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101227,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120 SE Black CPU Air Cooler,7 Heat Pipes CPU Cooler,Dual 120mm PWM Fans, 25.6dba,for AM4/AM5&Intel 1851/1700/1150/1151/1200, PC Cooler Tower",
+    "b": "Intel",
+    "pr": 37.89,
+    "msrp": 37.89,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/613FlbYrYxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D949MRNM",
+        "url": "https://www.amazon.com/dp/B0D949MRNM?tag=tiereduptech-20",
+        "price": 37.89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101228,
+    "c": "CPUCooler",
+    "n": "Thermalright PS120SE ARGB CPU Air Cooler, 7 Heat Pipes CPU Cooler,Dual 120mm TL-C12B-S V2 PWM Fan, AGHP 4.0 Technology, S-FDB Bearing, for AMD AM4 AM5/Intel 1700/1150/1151/1200/1851, PC Cooler",
+    "b": "AMD",
+    "pr": 35.89,
+    "msrp": 35.89,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/7100flF35KL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BR8S1QG5",
+        "url": "https://www.amazon.com/dp/B0BR8S1QG5?tag=tiereduptech-20",
+        "price": 35.89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101229,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120 Digital SNOW CPU Air Cooler, 7 Heat pipes CPU Cooling,Double Tower Cooling,Support for AM4/AM5/Intel lga1700/115X/1200/1851,Magnetic Attraction-Digital Screen Top Cover",
+    "b": "Intel",
+    "pr": 56.9,
+    "msrp": 56.9,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61od1clidTL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJ86XY93",
+        "url": "https://www.amazon.com/dp/B0FJ86XY93?tag=tiereduptech-20",
+        "price": 56.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101230,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120 CPU Cooler,Dual TL-C12B V2 PWM Fan, 7 Heat Pipes CPU Cooling,with 1500RPM Speed,for AMD AM4 AM5/Intel 1700/1150/1151/1200/2011/1851, PC Heatsink Cooler",
+    "b": "AMD",
+    "pr": 35.99,
+    "msrp": 35.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71tvWzuf-UL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4JH24WW",
+        "url": "https://www.amazon.com/dp/B0C4JH24WW?tag=tiereduptech-20",
+        "price": 35.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101231,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120 EVO CPU Cooler, 2150RPM TL-K12 PWM Fans, 7 Heat Pipes, for AMD AM4/AM5 & Intel LGA 1700/1851",
+    "b": "Thermalright",
+    "pr": 57.9,
+    "msrp": 57.9,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61uUOjpBuoL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CYJ6SZ4R",
+        "url": "https://www.amazon.com/dp/B0CYJ6SZ4R?tag=tiereduptech-20",
+        "price": 57.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101232,
+    "c": "CPUCooler",
+    "n": "Thermalright Phantom Spirit 120SE CPU Air Cooler, 7 Heat Pipes CPU Cooler,Dual 120mm TL-C12B V2 PWM Fans, AGHP 4.0 Technology,S-FDB Bearing, for AM4/AM5/Intel lga1851/1700/1150/1151/1200, PC Cooling",
+    "b": "Intel",
+    "pr": 45.6,
+    "msrp": 45.6,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71pvjXDbjxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FKYJV3YN",
+        "url": "https://www.amazon.com/dp/B0FKYJV3YN?tag=tiereduptech-20",
+        "price": 45.6,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101233,
+    "c": "CPUCooler",
+    "n": "Thermalright Assassin Spirit 120 EVO Dark CPU Cooler,TL-E12B V2 PWM Quiet Fan with 1850RPM, Speed,CPU Air Cooler, Computer Black Heatsink Cooling, Support AM4/AM5,Intel 1700/1851/1150/1151/1155/1200",
+    "b": "Intel",
+    "pr": 32.69,
+    "msrp": 32.69,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71Mtg5ohk5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CNVMR478",
+        "url": "https://www.amazon.com/dp/B0CNVMR478?tag=tiereduptech-20",
+        "price": 32.69,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101234,
+    "c": "CPUCooler",
+    "n": "Thermalright Aqua Elite 360 V6 ARGB White-CPU Liquid Cooler, Efficient PWM Controlled Pump, for AM4/AM5,Intel LGA1150/1151/1200/2011/1851/1700,Integrated Water-Cooled Radiator-White",
+    "b": "Intel",
+    "pr": 50.9,
+    "msrp": 50.9,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61rBDKc+n6L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F8VX8L7W",
+        "url": "https://www.amazon.com/dp/B0F8VX8L7W?tag=tiereduptech-20",
+        "price": 50.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO"
+  },
+  {
+    "id": 101235,
+    "c": "CPUCooler",
+    "n": "Thermalright Assassin Spirit 120 Vision ARGB Black, with Black Top Cover, CPU Air Cooler, PC Cooling,240 * 240 Resolving Power IPS LCD Screen,Editable,with 1.54in for Intel lga1851/1700/115X,AM4/AM5",
+    "b": "Thermalright",
+    "pr": 29.59,
+    "msrp": 29.59,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/719enKdOBiL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DFXNXX3S",
+        "url": "https://www.amazon.com/dp/B0DFXNXX3S?tag=tiereduptech-20",
+        "price": 29.59,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.667Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101236,
+    "c": "CPUCooler",
+    "n": "Lian Li Hydroshift 360 AIO - Pre-Installed 3 x 28MM Fans, Side-Mounted Coolant Pathway, 2.88” LCD Screen 480 x 480 Res. Captured Images & Recorded Videos -LGA 1851,1700, 1200, AM5,4 -White(HSLCD36SW)",
+    "b": "Lian Li",
+    "pr": 179.99,
+    "msrp": 179.99,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71qy54HvZ4L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D83M25X5",
+        "url": "https://www.amazon.com/dp/B0D83M25X5?tag=tiereduptech-20",
+        "price": 179.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.668Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO"
+  },
+  {
+    "id": 101237,
+    "c": "CPUCooler",
+    "n": "Lian Li Hydroshift II-C 360TL RGB Liquid CPU Cooler - 360mm AIO - 3X 120 RGB Fans - 2.1” IPS LCD Screen - 3 Control Mode - Flexible Tubes Clamp - LGA 1851/1700, AMD AM5/AM4 - Black (HS2LCD36TB)",
+    "b": "Lian Li",
+    "pr": 233.14,
+    "msrp": 233.14,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/71vecLp25HL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F1MH466S",
+        "url": "https://www.amazon.com/dp/B0F1MH466S?tag=tiereduptech-20",
+        "price": 233.14,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.668Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO",
+    "radSize": 360
+  },
+  {
+    "id": 101238,
+    "c": "CPUCooler",
+    "n": "Thermalright Aqua Elite 360 V6 ARGB White AIO CPU Cooler, ARGB PWM Fans with 2000RPM, for Intel LGA1150/1151/1155/1156/1200/2011/1700/1851, AMD: AM4/AM5, 360mm Radiator",
+    "b": "AMD",
+    "pr": 52.49,
+    "msrp": 52.49,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61s79EG-DxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F8ZSWJ74",
+        "url": "https://www.amazon.com/dp/B0F8ZSWJ74?tag=tiereduptech-20",
+        "price": 52.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.668Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO",
+    "radSize": 360
+  },
+  {
+    "id": 101239,
+    "c": "CPUCooler",
+    "n": "NZXT F360 RGB Core - 360mm Single-Frame Fan Unit with 3 x 120mm RGB Fans - Speed & Lighting Control - High Static Pressure & Airflow - Fluid Dynamic Bearings - 8 aRGB LEDs Per Fan - Black",
+    "b": "MSI",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/41IYLbduRXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D1RKBS7J",
+        "url": "https://www.amazon.com/dp/B0D1RKBS7J?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.668Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101240,
+    "c": "CPUCooler",
+    "n": "Corsair CORSAIR Virtuoso RGB Wireless XT High-Fidelity Gaming Headset with Bluetooth and Spatial Audio - Works with Mac, PC, PS5, PS4, Xbox Series X/S - Slate (Renewed)",
+    "b": "Corsair",
+    "pr": 139.95,
+    "msrp": 139.95,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71xK0oPvBLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09L9QK63G",
+        "url": "https://www.amazon.com/dp/B09L9QK63G?tag=tiereduptech-20",
+        "price": 139.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.668Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101241,
+    "c": "CPUCooler",
+    "n": "GSPSCN 11\" Rear Wiper Blade For Lincoln Corsair 24-20, Nautilus 23-19，MKC 19-15，MKX 18-16，Navigator 23-18 /Mini Cooper Paceman 16-13 /VW Passat 11-06 Back Windshield Wiper Blade (11-G / A281H)",
+    "b": "Corsair",
+    "pr": 7.91,
+    "msrp": 7.91,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71iJBD39fwL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CMZNNS2P",
+        "url": "https://www.amazon.com/dp/B0CMZNNS2P?tag=tiereduptech-20",
+        "price": 7.91,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.668Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101242,
+    "c": "CPUCooler",
+    "n": "Phanteks Glacier One 360M25 G2 AIO Liquid CPU Cooler, RGB Pump Cap Design, 3x Performance 120mm M25 G2 PWM RGB Fans, for Intel LGA 1700, 1851, 1200, 115x and AMD AM4/AM5 sockets, Black",
+    "b": "AMD",
+    "pr": 98.48,
+    "msrp": 98.48,
+    "r": 3.5,
+    "img": "https://m.media-amazon.com/images/I/71Fl5VoYUcL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0819NDVX4",
+        "url": "https://www.amazon.com/dp/B0819NDVX4?tag=tiereduptech-20",
+        "price": 98.48,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO",
+    "radSize": 120
+  },
+  {
+    "id": 101243,
+    "c": "CPUCooler",
+    "n": "Phanteks Glacier One 360D30 X2 AIO Liquid CPU Cooler, Evolv X2 Cap Design, 3X Performance D30-120 D-RGB Fans, for Intel LGA 1851, 1700, 1200, 115x and AMD AM4/AM5 sockets (Black)",
+    "b": "AMD",
+    "pr": 155.12,
+    "msrp": 155.12,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/712SM5RmlUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F4QGP9RX",
+        "url": "https://www.amazon.com/dp/B0F4QGP9RX?tag=tiereduptech-20",
+        "price": 155.12,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO"
+  },
+  {
+    "id": 101244,
+    "c": "CPUCooler",
+    "n": "Phanteks Glacier One 360M25-LCD AIO Liquid CPU Cooler, 6” IPS LCD HD Display, 120mm M25 Gen2 D-RGB Fans, High-Performance Copper Cold Plate, Intel & AMD Compatible, White",
+    "b": "Phanteks",
+    "pr": 149.99,
+    "msrp": 149.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/618K61tmWLL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FPVTKC2V",
+        "url": "https://www.amazon.com/dp/B0FPVTKC2V?tag=tiereduptech-20",
+        "price": 149.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO",
+    "radSize": 120
+  },
+  {
+    "id": 101245,
+    "c": "CPUCooler",
+    "n": "Phanteks Glacier One 360D30 X2 AIO Liquid CPU Cooler, Evolv X2 Aluminum Cap Design, 3X Performance D30-120 D-RGB Fans, for Intel LGA 1851, 1700, 1200, 115x and AMD AM4/AM5 sockets (White)",
+    "b": "AMD",
+    "pr": 149.99,
+    "msrp": 149.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61Fw6TMdrxL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0F4QGPFBJ",
+        "url": "https://www.amazon.com/dp/B0F4QGPFBJ?tag=tiereduptech-20",
+        "price": 149.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO"
+  },
+  {
+    "id": 101246,
+    "c": "CPUCooler",
+    "n": "PCCOOLER Liquid CPU Cooler, 240mm AIO with Full Ceramic Bearing Pump, Dual 120mm ARGB PWM Fans, Aluminum Radiator, Hidden Daisy-Chain, Intel LGA1851/1700 & AMD AM5 Compatible (DA240 ARGB White)",
+    "b": "AMD",
+    "pr": 56.99,
+    "msrp": 56.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61xxJpL3ACL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FX3P41R6",
+        "url": "https://www.amazon.com/dp/B0FX3P41R6?tag=tiereduptech-20",
+        "price": 56.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO",
+    "radSize": 240
+  },
+  {
+    "id": 101247,
+    "c": "CPUCooler",
+    "n": "Thermalright Aqua Elite 240 White ARGB V4 CPU Aio Cooler, 240 CPU Liquid Cooling, Pump Head Speed up to 6400RPM,for AM4/AM5,Intel LGA1851/1150/1151/1200/2011/1700,High Performance Radiator(White)",
+    "b": "Intel",
+    "pr": 43.99,
+    "msrp": 43.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61EDsBFb9pL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DHZ5HGYP",
+        "url": "https://www.amazon.com/dp/B0DHZ5HGYP?tag=tiereduptech-20",
+        "price": 43.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO"
+  },
+  {
+    "id": 101248,
+    "c": "CPUCooler",
+    "n": "Thermalright Aqua Elite 240 White V3 Water Cooling CPU Cooler, Double PWM ARGB Fans with S-FDB Bearings,Efficient PWM Controlled Pump,for AMD/AM4/AM5, Intel LGA1150/1151/1200/2011/1700",
+    "b": "AMD",
+    "pr": 46.29,
+    "msrp": 46.29,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61r8oft9FNL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CDPRX9XT",
+        "url": "https://www.amazon.com/dp/B0CDPRX9XT?tag=tiereduptech-20",
+        "price": 46.29,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101249,
+    "c": "CPUCooler",
+    "n": "PF 360 CPU Water AIO Cooler Liquid Cooling|5.5-inch LCD Magnetic Screen|360mm ARGB Infinity Mirror 2000RPM PWM Fan|Lower Noise ≤30DBA|for Intel LGA1851/1700/1200/115X AMD AM4/AM5-White",
+    "b": "AMD",
+    "pr": 107.99,
+    "msrp": 107.99,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/71gVs6UMfwL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FL7CQX3D",
+        "url": "https://www.amazon.com/dp/B0FL7CQX3D?tag=tiereduptech-20",
+        "price": 107.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO",
+    "radSize": 360
+  },
+  {
+    "id": 101250,
+    "c": "CPUCooler",
+    "n": "ID-COOLING FX240 LCD White Premium 240mm AIO Liquid CPU Cooler with 1.48″ Full-Color LCD Display, 300W TDP, Intel LGA1851/1700 & AMD AM5/AM4 Support",
+    "b": "AMD",
+    "pr": 74.99,
+    "msrp": 74.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61kyStxR6dL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FM7MSNJ4",
+        "url": "https://www.amazon.com/dp/B0FM7MSNJ4?tag=tiereduptech-20",
+        "price": 74.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO",
+    "radSize": 240
+  },
+  {
+    "id": 101251,
+    "c": "CPUCooler",
+    "n": "Thermalright Burst Assassin 120 Vision White CPU Air Cooler, Desktop CPU Cooler with 1500RPM Speed,320x240 Resolving Power IPS LCD Screen with 2.4in,PC Cooling for Intel lga1851/1700/115X,AM4/AM5",
+    "b": "Thermalright",
+    "pr": 46.9,
+    "msrp": 46.9,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/614HxV9JoSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DP7D84LL",
+        "url": "https://www.amazon.com/dp/B0DP7D84LL?tag=tiereduptech-20",
+        "price": 46.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101252,
+    "c": "CPUCooler",
+    "n": "Thermalright Burst Assassin 120 ARGB CPU Air Cooler,6 Heat Pipes Single Tower,120mm PWM Quiet Fan CPU Cooler,for AM4 /AM5/Intel lga1700/1851/1150/1151/1200, 154mm High, 1550RPM, ARGB PC Cooling",
+    "b": "Thermalright",
+    "pr": 22.9,
+    "msrp": 22.9,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61K5GxHSKXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09SDGBJ55",
+        "url": "https://www.amazon.com/dp/B09SDGBJ55?tag=tiereduptech-20",
+        "price": 22.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101253,
+    "c": "CPUCooler",
+    "n": "Thermalright Peerless Assassin 120 SE Extrem CPU Air Cooler with 6 Heat Pipes, Dual PWM Fans, AGHP heatpipe Technology, 154mm High Cooling, for AM5/AM4, Intel LGA1851/1700/1150/1151/1155/1156/1200",
+    "b": "Thermalright",
+    "pr": 37.9,
+    "msrp": 37.9,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61C2fmo435L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FQ5MF5D5",
+        "url": "https://www.amazon.com/dp/B0FQ5MF5D5?tag=tiereduptech-20",
+        "price": 37.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101254,
+    "c": "CPUCooler",
+    "n": "JONSBO CA90 Black Dual-Tower CPU Cooler,Mute Series air Cooling,CPU Fan H159mm,130mm PWM Fan CPU Air Cooler,6 Copper Heat Pipes Radiator, AM5/AM4/ Intel LGA115X/1200/1700/1851,D-TDP 270W",
+    "b": "Jonsbo",
+    "pr": 42.99,
+    "msrp": 42.99,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/71o2jo1Ez2L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G1BRDLX6",
+        "url": "https://www.amazon.com/dp/B0G1BRDLX6?tag=tiereduptech-20",
+        "price": 42.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101255,
+    "c": "CPUCooler",
+    "n": "ARCTIC Alpine 17 - Intel CPU Cooler, 92 mm PWM Fan, Radial Heatsink, Top Blower, Intel LGA 1700, 4-Pin Connector, 100-2000 RPM",
+    "b": "Arctic",
+    "pr": 9.99,
+    "msrp": 9.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/710CJ3gY2GL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09SHV7LZ3",
+        "url": "https://www.amazon.com/dp/B09SHV7LZ3?tag=tiereduptech-20",
+        "price": 9.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101256,
+    "c": "CPUCooler",
+    "n": "Cooler Master i70C ARGB Low Profile CPU Air Cooler for Intel LGA 1700/1851 Only – 120mm PWM ARGB Fan, 95W TDP, Copper Core Base, Black Aluminum Heatsink",
+    "b": "Cooler Master",
+    "pr": 21.49,
+    "msrp": 21.49,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71NpXjHeS+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BB88471Y",
+        "url": "https://www.amazon.com/dp/B0BB88471Y?tag=tiereduptech-20",
+        "price": 21.49,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101257,
+    "c": "CPUCooler",
+    "n": "ID-COOLING IS-47-XT V2 Low Profile CPU Air Cooler, 47mm Height, 4 Heatpipes, 92mm PWM Fan, Compatible with Intel LGA1700/1200/115X & AMD AM5/AM4 – Ideal for SFF & Mini-ITX Builds",
+    "b": "AMD",
+    "pr": 29.99,
+    "msrp": 29.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71m+-TYbTAL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FZGT88Z7",
+        "url": "https://www.amazon.com/dp/B0FZGT88Z7?tag=tiereduptech-20",
+        "price": 29.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101258,
+    "c": "CPUCooler",
+    "n": "Vetroo Eclipse Low-Profile ARGB CPU Cooler, 90mm 4-Pin PWM Fan, Premium Aluminum Fins, 95W TDP Air Cooling for Intel LGA 1851 & 1700 Only",
+    "b": "Intel",
+    "pr": 11.99,
+    "msrp": 11.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61RV2kkUSjL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0B452JNBX",
+        "url": "https://www.amazon.com/dp/B0B452JNBX?tag=tiereduptech-20",
+        "price": 11.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101259,
+    "c": "CPUCooler",
+    "n": "Cooler Master Hyper 212 Halo CPU Sink - Black Aluminum Finish, 4 Heat Continuous Direct Contact Pipes with Fins, MF120 Halo2 ARGB Fan, ARGB Detects, LGA1700 and AM5 Support - Black",
+    "b": "Cooler Master",
+    "pr": 22.47,
+    "msrp": 22.47,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/71-kcJnNenL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07NXZL1CL",
+        "url": "https://www.amazon.com/dp/B07NXZL1CL?tag=tiereduptech-20",
+        "price": 22.47,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery"
+  },
+  {
+    "id": 101260,
+    "c": "CPUCooler",
+    "n": "Noctua NH-L9i-17xx, Premium Low-Profile CPU Cooler for Intel LGA1700 and LGA1851 (Brown)",
+    "b": "Noctua",
+    "pr": 49.95,
+    "msrp": 49.95,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71av9uxBMRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09HCLB7M3",
+        "url": "https://www.amazon.com/dp/B09HCLB7M3?tag=tiereduptech-20",
+        "price": 49.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101261,
+    "c": "CPUCooler",
+    "n": "Thermalright AXP90-X53 Low Profile ITX CPU Air Cooler, 53mm Height Cooling, TL-9015 Slim PWM Fan, AGHP Technology, for AM4 /AM5/Intel lga1700/1150/1151/1200/1851, ITX PC Cooler(AXP90 X53)",
+    "b": "Thermalright",
+    "pr": 22.9,
+    "msrp": 22.9,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/712UJOqywGL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08S6XM69Q",
+        "url": "https://www.amazon.com/dp/B08S6XM69Q?tag=tiereduptech-20",
+        "price": 22.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101262,
+    "c": "CPUCooler",
+    "n": "Thermalright LGA 1700-SS2 Mounting Kit for CPU Coolers on Intel's LGA1700 Platform, Mounting Kit for LGA1700 Socket",
+    "b": "Thermalright",
+    "pr": 7.99,
+    "msrp": 7.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/51GdEESt7-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09LTQYNSL",
+        "url": "https://www.amazon.com/dp/B09LTQYNSL?tag=tiereduptech-20",
+        "price": 7.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "needsReview": true
+  },
+  {
+    "id": 101263,
+    "c": "CPUCooler",
+    "n": "JONSBO CR1400 EVO CPU Cooler,ARGB Mute Series air Cooling, CPU Fan Height 130mm,92mm Fan Mini CPU Cooler,4 Copper Heat Pipes Air heatsink Tower Radiator, for AM5/AM4/Intel LGA1700/1851,Black",
+    "b": "Jonsbo",
+    "pr": 21.99,
+    "msrp": 21.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71wfMUFX58L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CXSH2PXQ",
+        "url": "https://www.amazon.com/dp/B0CXSH2PXQ?tag=tiereduptech-20",
+        "price": 21.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "coolerType": "Air"
+  },
+  {
+    "id": 101264,
+    "c": "Storage",
+    "n": "Samsung SSD 9100 Pro NVMe M.2, 8 TB, PCIe 5.0, 14 800 MB/S Read, 13 400 MB/S Write Internal SSD for Gaming, Video & Computer Ai, Black, Mz-Vap8T0BW",
+    "b": "Samsung",
+    "pr": 2549,
+    "msrp": 2549,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71hXyRf4P-L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FGPSR9VZ",
+        "url": "https://www.amazon.com/dp/B0FGPSR9VZ?tag=tiereduptech-20",
+        "price": 2549,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "cap": 8000,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 5
+  },
+  {
+    "id": 101265,
+    "c": "Storage",
+    "n": "SABRENT 8TB Rocket 4 Plus NVMe 4.0 Gen4 PCIe M.2 Internal SSD Extreme Performance Solid State Drive R/W 7100/6600MB/s (SB-RKT4P-8TB)",
+    "b": "Sabrent",
+    "pr": 2399.99,
+    "msrp": 2399.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71Pk9KPuOZL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B09WZK8YMY",
+        "url": "https://www.amazon.com/dp/B09WZK8YMY?tag=tiereduptech-20",
+        "price": 2399.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "cap": 8000,
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101266,
+    "c": "Storage",
+    "n": "Corsair MP600 PRO LPX 8TB M.2 NVMe PCIe x4 Gen4 SSD - Optimised for PS5 (Up to 7,000MB/sec Sequential Read & 6,100MB/sec Sequential Write Speeds, High-Speed Interface, Compact Form Factor) Black",
+    "b": "Corsair",
+    "pr": 1264.99,
+    "msrp": 1264.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/81FmzjAgkUL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CJRN3LLX",
+        "url": "https://www.amazon.com/dp/B0CJRN3LLX?tag=tiereduptech-20",
+        "price": 1264.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "cap": 8000,
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101267,
+    "c": "Storage",
+    "n": "M.2 2280 NVMe SSD Heatsink for Samsung 990 Pro/ 990 EVO Plus/ 9100 Pro/ 970 EVO Plus/ 980 PRO/ 860 EVO, Cooler Heatsink for PC with Thermal Silicone pad, Black",
+    "b": "Samsung",
+    "pr": 9.95,
+    "msrp": 9.95,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61whZ0vO9FL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GV219MV5",
+        "url": "https://www.amazon.com/dp/B0GV219MV5?tag=tiereduptech-20",
+        "price": 9.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.669Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101268,
+    "c": "Storage",
+    "n": "SANDISK 1TB Extreme Portable SSD (New Model) - up to 2000MB/s Transfer speeds, USB Type-C connectivity, Reliable Durability - Black - SDSSDE70-1T00-G25",
+    "b": "SanDisk",
+    "pr": 259.99,
+    "msrp": 259.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/71u6LfJqm-L._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GMWYYRQL",
+        "url": "https://www.amazon.com/dp/B0GMWYYRQL?tag=tiereduptech-20",
+        "price": 259.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.670Z",
+    "source": "amazon-discovery",
+    "cap": 1000,
+    "storageType": "SSD"
+  },
+  {
+    "id": 101269,
+    "c": "Storage",
+    "n": "Sabrent USB 3.2 Type-C Tool-Free Enclosure for M.2 PCIe NVMe and SATA SSDs (EC-SNVE)",
+    "b": "Sabrent",
+    "pr": 24.99,
+    "msrp": 24.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71XNHBZRMpL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08RVC6F9Y",
+        "url": "https://www.amazon.com/dp/B08RVC6F9Y?tag=tiereduptech-20",
+        "price": 24.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.670Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101270,
+    "c": "Storage",
+    "n": "WD Blue 4TB SN5100 NVMe SSD - M.2 2280, PCIe Gen 4.0, Internal Solid State Drive - Read Speeds Up to 6,900MB/s, Upgrade Storage for PC/Laptops - WDS400T5B0E",
+    "b": "Western Digital",
+    "pr": 599.99,
+    "msrp": 599.99,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/51jcp-WvSwL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FSC839RG",
+        "url": "https://www.amazon.com/dp/B0FSC839RG?tag=tiereduptech-20",
+        "price": 599.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.670Z",
+    "source": "amazon-discovery",
+    "cap": 4000,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4
+  },
+  {
+    "id": 101271,
+    "c": "Storage",
+    "n": "Heatsink Thermal Pad for Steam Deck SSD, M.2 2230 NVME SSD Copper Heat Sink Cooling Thermal Pastes Back Cover Opening Tools Back Screws Replacements Screwdriver Repair Kit for Stream Deck SSD",
+    "b": "AMD",
+    "pr": 9.99,
+    "msrp": 9.99,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/61rOE+i8ZrL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C1BQVZW2",
+        "url": "https://www.amazon.com/dp/B0C1BQVZW2?tag=tiereduptech-20",
+        "price": 9.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101272,
+    "c": "Storage",
+    "n": "fanxiang 500GB M.2 2230 NVMe SSD, PCIe Gen 4x4 Speed up to 4850 MB/s, 2230 SSD Compatible with Steam Deck/ROG Ally/Microsoft Surface Pro/Mini PCs, S630",
+    "b": "AMD",
+    "pr": 139.99,
+    "msrp": 139.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61RF6zES6rL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DZX34SZN",
+        "url": "https://www.amazon.com/dp/B0DZX34SZN?tag=tiereduptech-20",
+        "price": 139.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "cap": 500,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4
+  },
+  {
+    "id": 101273,
+    "c": "Storage",
+    "n": "OEM Hyn PVC10 256GB M.2 PCI-e GEN 4X4 NVME SSD Internal Solid State Drive 30mm 2230 Form Factor M Key Steam Deck",
+    "b": "AMD",
+    "pr": 54.95,
+    "msrp": 54.95,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/61XdjVHxI5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FNP68QYR",
+        "url": "https://www.amazon.com/dp/B0FNP68QYR?tag=tiereduptech-20",
+        "price": 54.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "cap": 256,
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101274,
+    "c": "Storage",
+    "n": "Silicon Power SU01KGBP44UD9007MM SSD UD90 2230 NVMe 4.0 Gen4 PCIe M.2 R/W up to 5000/3200MB/s Compatible with Steam Deck",
+    "b": "AMD",
+    "pr": 189.97,
+    "msrp": 189.97,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61XSGQxBWpL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CCDBKKZY",
+        "url": "https://www.amazon.com/dp/B0CCDBKKZY?tag=tiereduptech-20",
+        "price": 189.97,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101275,
+    "c": "Storage",
+    "n": "WD_Black SN770M 1TB M.2 2230 NVMeSSD - PCIe Gen 4.0, Speeds up to 5150 MB/s, for Handheld Gaming Devices and Compatible laptops, TLC 3D NAND, Great for Asus ROG Ally, Steam Deck, Microsoft Surface",
+    "b": "Western Digital",
+    "pr": 346.89,
+    "msrp": 346.89,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/61yg9DzhgPL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CHJXHVZM",
+        "url": "https://www.amazon.com/dp/B0CHJXHVZM?tag=tiereduptech-20",
+        "price": 346.89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "cap": 1000,
+    "pcie": 4
+  },
+  {
+    "id": 101276,
+    "c": "Storage",
+    "n": "For Steam Deck OLED Handheld Devices M.2 NVMe PCIe 4.0 2230 to 2280 SSD Adapter Converter Expansion Card,Modification 2230 to 2280 Size SSD Converter Board,OLED Model Expand high capacity memory card",
+    "b": "AMD",
+    "pr": 21.9,
+    "msrp": 21.9,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/510p99bbAKL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GF177449",
+        "url": "https://www.amazon.com/dp/B0GF177449?tag=tiereduptech-20",
+        "price": 21.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "needsReview": true
+  },
+  {
+    "id": 101277,
+    "c": "Storage",
+    "n": "For Steam Deck LCD Handheld M.2 NVMe PCIe 4.0 2230 to 2280 SSD Hard Drive Adapter Expansion Card,Modified 2280 Replacement 2230 SSD Converter Board,for Steam Deck Handheld Expandable High Storage Card",
+    "b": "AMD",
+    "pr": 19.9,
+    "msrp": 19.9,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61Dsx931f1L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G7STJH94",
+        "url": "https://www.amazon.com/dp/B0G7STJH94?tag=tiereduptech-20",
+        "price": 19.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4
+  },
+  {
+    "id": 101278,
+    "c": "Storage",
+    "n": "Oemgenuine Kioxi 256GB M.2 PCI-e NVME GEN4X4 SSD Internal Solid State Drive 30mm 2230 Form Factor M Key Steam Deck",
+    "b": "AMD",
+    "pr": 49.95,
+    "msrp": 49.95,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/41no8OnxQKL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DZ7PJBMX",
+        "url": "https://www.amazon.com/dp/B0DZ7PJBMX?tag=tiereduptech-20",
+        "price": 49.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "cap": 256,
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101279,
+    "c": "Storage",
+    "n": "512GB M.2 2230 NVMe Gen4x4 PCIe SSD, 3D NAND, Graphene Thermal Solution, Up to 5200MB/s, Compatible with Steam Deck, ASUS ROG Ally, Microsoft Surface, Laptops, Mini PCs, Ultrabook",
+    "b": "AMD",
+    "pr": 139.99,
+    "msrp": 139.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/611R66mmozL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FH4P66MZ",
+        "url": "https://www.amazon.com/dp/B0FH4P66MZ?tag=tiereduptech-20",
+        "price": 139.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "cap": 512,
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101280,
+    "c": "Storage",
+    "n": "SSD Heatsink Thermal Pad for Steam Deck: M.2 2230 NVME SSD Copper Heat Sink Cooling Thermal Pastes with Tools Screws",
+    "b": "AMD",
+    "pr": 8.95,
+    "msrp": 8.95,
+    "r": 4.4,
+    "img": "https://m.media-amazon.com/images/I/611wRwwiU8L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CRRFQVQW",
+        "url": "https://www.amazon.com/dp/B0CRRFQVQW?tag=tiereduptech-20",
+        "price": 8.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101281,
+    "c": "Storage",
+    "n": "For Steam Deck OLED Handheld Devices M.2 NVMe PCIe 4.0 2230 to 2280 SSD Adapter Converter Board,Modified 2230 to 2280 Size SSD Converter Expansion Card,Handheld OLED Model Expandable High Storage Card",
+    "b": "AMD",
+    "pr": 21.9,
+    "msrp": 21.9,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51AztiFqqbL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G3K932MF",
+        "url": "https://www.amazon.com/dp/B0G3K932MF?tag=tiereduptech-20",
+        "price": 21.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "needsReview": true
+  },
+  {
+    "id": 101282,
+    "c": "Storage",
+    "n": "For Steam Deck LCD Handheld Devices M.2 NVMe PCIe 3.0 SSD Extension Card Adapter FPC Cable,Desktop Motherboard 2280 Replacement 2230 SSD Adapter Converter Board,PCIe 3.0 Expandable High Storage Card",
+    "b": "AMD",
+    "pr": 15.9,
+    "msrp": 15.9,
+    "r": 4.1,
+    "img": "https://m.media-amazon.com/images/I/61wOWgcOLpL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GDXZ8RYJ",
+        "url": "https://www.amazon.com/dp/B0GDXZ8RYJ?tag=tiereduptech-20",
+        "price": 15.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 3,
+    "needsReview": true
+  },
+  {
+    "id": 101283,
+    "c": "Storage",
+    "n": "For Steam Deck OLED Handheld Modification M.2 NVMe PCIe 4.0 2230 to 2280 SSD Adapter Converter Board,Modified 2230 to 2280 SSD Converter Expansion Card,OLED Model Expand high capacity storage card",
+    "b": "AMD",
+    "pr": 21.9,
+    "msrp": 21.9,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/51IdYDbm4DL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GCWKTVL9",
+        "url": "https://www.amazon.com/dp/B0GCWKTVL9?tag=tiereduptech-20",
+        "price": 21.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4,
+    "needsReview": true
+  },
+  {
+    "id": 101284,
+    "c": "Storage",
+    "n": "For Steam Deck LCD Handheld Device M.2 NVMe PCIe 4.0 2230 to 2280 SSD Hard Drive Adapter Expansion Card,Modification 2280 Replacement 2230 SSD Converter Board,Handheld Expand high capacity memory card",
+    "b": "AMD",
+    "pr": 19.9,
+    "msrp": 19.9,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/516IVcs8c+L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GF1JFVTZ",
+        "url": "https://www.amazon.com/dp/B0GF1JFVTZ?tag=tiereduptech-20",
+        "price": 19.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4
+  },
+  {
+    "id": 101285,
+    "c": "Storage",
+    "n": "For Steam Deck LCD Handheld M.2 NVMe PCIe 4.0 2230 to 2280 SSD Hard Drive Adapter Expansion Card,Modified 2280 Replacement 2230 SSD Converter Board,for Steam Deck Handheld Expandable High Storage Card",
+    "b": "AMD",
+    "pr": 19.9,
+    "msrp": 19.9,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/61AZZwLdwtL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0GCB1Y4CB",
+        "url": "https://www.amazon.com/dp/B0GCB1Y4CB?tag=tiereduptech-20",
+        "price": 19.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4
+  },
+  {
+    "id": 101286,
+    "c": "Storage",
+    "n": "For Steam Deck LCD or Legion Go Handheld M.2 NVMe PCIe 3.0 SSD Extension Card Adapter FPC Cable,Desktop Motherboard 2230 2242 to 2280 SSD Adapter Plate,PCIe 3.0 Expandable high capacity memory card",
+    "b": "AMD",
+    "pr": 17.9,
+    "msrp": 17.9,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/61PwPLecl3L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0G2BLL88Q",
+        "url": "https://www.amazon.com/dp/B0G2BLL88Q?tag=tiereduptech-20",
+        "price": 17.9,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 3,
+    "needsReview": true
+  },
+  {
+    "id": 101287,
+    "c": "Storage",
+    "n": "SANDISK 1TB Extreme PRO Portable SSD - Up to 2000MB/s - USB-C, USB 3.2 Gen 2x2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE81-1T00-G25",
+    "b": "SanDisk",
+    "pr": 209.99,
+    "msrp": 209.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71z2lEHwfNL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B08GV9M64L",
+        "url": "https://www.amazon.com/dp/B08GV9M64L?tag=tiereduptech-20",
+        "price": 209.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "cap": 1000,
+    "storageType": "SSD",
+    "interface": "USB"
+  },
+  {
+    "id": 101288,
+    "c": "Storage",
+    "n": "ASUS ROG STRIX Arion Aluminum Alloy M.2 NVMe SSD External Portable Enclosure Case Adapter, USB 3.2 Gen 2 Type-C (10 Gbps), USB-C to C and USB-C to A Cables, Fits PCIe 2280/2260/2242/2230 M Key/B+M Key",
+    "b": "ASUS",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/51RE3BCyYkL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B07ZKB4SLK",
+        "url": "https://www.amazon.com/dp/B07ZKB4SLK?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "storageType": "NVMe",
+    "interface": "NVMe"
+  },
+  {
+    "id": 101289,
+    "c": "Storage",
+    "n": "4TB SANDISK Extreme PRO Portable SSD with USB4, Up to 3800 MB/s Read and 3700MB/s Write, USB-C, USB 3.2, Backwards Compatible, IP65 Water and Dust Resistance - SDSSDE82-4T00-G25",
+    "b": "SanDisk",
+    "pr": 949.99,
+    "msrp": 949.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/81QbofRpHSL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DN6DK3X4",
+        "url": "https://www.amazon.com/dp/B0DN6DK3X4?tag=tiereduptech-20",
+        "price": 949.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "cap": 4000,
+    "storageType": "SSD"
+  },
+  {
+    "id": 101290,
+    "c": "Storage",
+    "n": "INLAND 1TB TN510 NVMe SSD Internal Solid State Drive - Gen 5x4, PCIe5.0 M.2 2280, seq. Read Speed up to 10,000 MB/s, for AI Applications, Gaming, and Video Editing",
+    "b": "Inland",
+    "pr": 219.99,
+    "msrp": 219.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/51PStsJgo9L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FJ1GGGR7",
+        "url": "https://www.amazon.com/dp/B0FJ1GGGR7?tag=tiereduptech-20",
+        "price": 219.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "cap": 1000,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 5
+  },
+  {
+    "id": 101291,
+    "c": "Storage",
+    "n": "GIGABYTE AORUS Gen5 12000 SSD 1TB PCIe 5.0 NVMe M.2 Internal Solid State Hard Drive with Read Speed Up to 11700MB/s, Write Speed Up to 9500MB/s, AG512K1TB",
+    "b": "Gigabyte",
+    "pr": 249,
+    "msrp": 249,
+    "r": 4.8,
+    "img": "https://m.media-amazon.com/images/I/71u-6MjGgyL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CDP24LW9",
+        "url": "https://www.amazon.com/dp/B0CDP24LW9?tag=tiereduptech-20",
+        "price": 249,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "cap": 1000,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 5
+  },
+  {
+    "id": 101292,
+    "c": "Storage",
+    "n": "Seagate Game Drive PS5 NVMe SSD for PS5 1TB Internal Solid State Drive - PCIe Gen4 NVMe 1.4, Officially Licensed, Up to 7300MB/s with Heatsink (ZP1000GP3A1011)",
+    "b": "Seagate",
+    "pr": 279.98,
+    "msrp": 279.98,
+    "r": 4.7,
+    "img": "https://m.media-amazon.com/images/I/611MSVCxBAL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0CGFD2GVZ",
+        "url": "https://www.amazon.com/dp/B0CGFD2GVZ?tag=tiereduptech-20",
+        "price": 279.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.671Z",
+    "source": "amazon-discovery",
+    "cap": 1000,
+    "storageType": "NVMe",
+    "interface": "NVMe",
+    "pcie": 4
   }
 ];
 
