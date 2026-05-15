@@ -158021,7 +158021,7 @@ export const PARTS = [
   },
   {
     "id": 100578,
-    "c": "PSU",
+    "c": "CPUCooler",
     "n": "Dracaena.io 120mm AIO CPU Cooler - ARGB Remote Control, Quiet PWM ARGB Fan, Hydraulic Bearing Pump & Aluminum Radiator - for Intel LGA1700/1200/115X/2011/2066 & AMD AM5/AM4/AM3/FM2 Ryzen, Black",
     "b": "AMD",
     "pr": 49.99,
@@ -158037,8 +158037,7 @@ export const PARTS = [
       }
     },
     "addedAt": "2026-05-15T14:34:31.769Z",
-    "source": "amazon-discovery",
-    "watts": 180
+    "source": "amazon-discovery"
   },
   {
     "id": 100579,
@@ -171974,7 +171973,7 @@ export const PARTS = [
   },
   {
     "id": 101144,
-    "c": "CaseFan",
+    "c": "CPUCooler",
     "n": "KF620-DGT CPU Air Cooler, Dual ARGB PWM Fans, 6 Heat Pipes, Digital Display Top Cover - High-Performance Cooling for AMD:AM4 AM5/Intel LGA 1700/115X/1200/1366/1851 PC Cooler(Black",
     "b": "AMD",
     "pr": 49.99,
@@ -171991,8 +171990,7 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.812Z",
     "source": "amazon-discovery",
-    "pwm": true,
-    "rgb": true
+    "pwm": true
   },
   {
     "id": 101145,
