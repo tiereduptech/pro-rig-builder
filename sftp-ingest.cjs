@@ -190,7 +190,16 @@ function normUPC(u) {
 }
 function normMPN(m) {
   if (!m) return '';
-  return String(m).toUpperCase().replace(/[\s\-_/]/g, '');
+  const cleaned = String(m).toUpperCase().replace(/[\s\-_/]/g, '');
+  // Reject MPNs that are too short (would match too many unrelated products)
+  if (cleaned.length < 5) return '';
+  // Reject pure numbers (often quantity codes/SKU fragments, not real MPNs)
+  if (/^\d+$/.test(cleaned)) return '';
+  return cleaned;
+}
+function normBrand(b) {
+  if (!b) return '';
+  return String(b).toLowerCase().replace(/[^a-z0-9]/g, '');
 }
 function tokenize(s) {
   return String(s || '').toLowerCase()
@@ -259,7 +268,14 @@ function matchRecord(rec, idx) {
   
   const mpn = normMPN(rec.mpn);
   if (mpn && idx.byMPN.has(mpn)) {
-    return { part: idx.byMPN.get(mpn), confidence: 0.95, method: 'mpn' };
+    const candidate = idx.byMPN.get(mpn);
+    const recBrand = normBrand(rec.manufacturer || rec.brand2);
+    const partBrand = normBrand(candidate.b);
+    // Require brand match to prevent false positives from short/generic MPNs
+    if (recBrand && partBrand && (recBrand === partBrand || recBrand.includes(partBrand) || partBrand.includes(recBrand))) {
+      return { part: candidate, confidence: 0.95, method: 'mpn' };
+    }
+  };
   }
   
   const sku = String(rec.sku || '').trim();

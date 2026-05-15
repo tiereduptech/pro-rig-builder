@@ -3103,16 +3103,6 @@ export const PARTS = [
         "price": 213,
         "url": "https://www.amazon.com/dp/B09GYHXDHH?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458312670921379011556632",
-        "price": 219.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312670921379011556632&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-12th-gen-core-i5-12600k-alder-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118347%3Fitem%3D9SIA2W0GEU4684",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-347-05.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.346Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 14,
@@ -3191,17 +3181,6 @@ export const PARTS = [
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B09GYKK56H?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317136765521195554085",
-        "price": 299.99,
-        "saleprice": 169.97,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317136765521195554085&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-12th-gen-core-i5-12600kf-alder-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118349%3Fitem%3DN82E16819118349",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-349-05.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.776Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 7,
@@ -3288,16 +3267,6 @@ export const PARTS = [
         "price": 562.54,
         "url": "https://www.amazon.com/dp/B0BG66JH7Q?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445839191091212126267211",
-        "price": 427.06,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839191091212126267211&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-13th-gen-core-i9-13900kf-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118413%3Fitem%3D9SIC5VSKUH7838",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-413-V07.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.706Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -3337,17 +3306,6 @@ export const PARTS = [
         "price": 284.99,
         "url": "https://www.amazon.com/dp/B09MDHZ2YQ?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458313347399222942835752",
-        "price": 359.99,
-        "saleprice": 359,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313347399222942835752&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i7-12th-gen-core-i7-12700f-alder-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118359%3Fitem%3DN82E16819118359",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-359-03.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.776Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -3624,16 +3582,6 @@ export const PARTS = [
         "price": 699.99,
         "url": "https://www.amazon.com/dp/B0BS6W9JH8?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445832449435858596493623",
-        "price": 685,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832449435858596493623&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-13th-gen-core-i9-13900ks-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118446%3Fitem%3D9SIC5VSKUH7810",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-446-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.706Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -3672,17 +3620,6 @@ export const PARTS = [
         "price": 880,
         "url": "https://www.amazon.com/dp/B0CY3998PK?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445832201293737272559982",
-        "price": 729.99,
-        "saleprice": 689.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832201293737272559982&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-14th-gen-core-i9-14900ks-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118496%3Fitem%3DN82E16819118496",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-496-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.776Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "mpn": "BX8071514900KS",
@@ -4168,16 +4105,6 @@ export const PARTS = [
         "price": 753.82,
         "url": "https://www.amazon.com/dp/B0BQZ8J9VX?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837197435193261312902",
-        "price": 465.22,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837197435193261312902&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-13th-gen-core-i9-13900k-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118412%3Fitem%3D9SIC5VSKUH7737",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-412-V01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.706Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -9980,16 +9907,6 @@ export const PARTS = [
         "price": 62.99,
         "url": "https://www.amazon.com/dp/B07MWGKHR9?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458314987783074948417480",
-        "price": 79.4,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314987783074948417480&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b450m-hdv-r4-0-micro-atx-amd-motherboard-amd-promontory-b450-am4%2Fp%2FN82E16813157871%3Fitem%3D9SIC3DRKN78318",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-157-871-V80.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.571Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 13,
@@ -11055,17 +10972,6 @@ export const PARTS = [
         "price": 79.99,
         "url": "https://www.amazon.com/dp/B09KZYMP8P?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458312090098525036139639",
-        "price": 89.99,
-        "saleprice": 79.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312090098525036139639&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b450m-ac-r2-0-micro-atx-amd-motherboard-amd-promontory-b450-am4%2Fp%2FN82E16813157974%3Fitem%3DN82E16813157974",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-157-974-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -11452,16 +11358,6 @@ export const PARTS = [
         "price": 165,
         "url": "https://www.amazon.com/dp/B0DDZY6HTW?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458313035930465842884871",
-        "price": 199,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313035930465842884871&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-x870-p-wifi-atx-motherboard-amd-x870-am5%2Fp%2FN82E16813119687%3Fitem%3D9SIBYT0KTG0308",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-687-12.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.634Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 37,
@@ -11497,17 +11393,6 @@ export const PARTS = [
         "price": 179.99,
         "url": "https://www.amazon.com/dp/B0DRTVR12D?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317782560185276275779",
-        "price": 209.99,
-        "saleprice": 179.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317782560185276275779&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850i-lightning-wifi-mini-itx-motherboard-amd-b850-am5%2Fp%2FN82E16813162201%3Fitem%3DN82E16813162201",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-201-11.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -11707,17 +11592,6 @@ export const PARTS = [
         "price": 299.99,
         "url": "https://www.amazon.com/dp/B0DFNPK2MX?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311011788403389820289",
-        "price": 399.99,
-        "saleprice": 299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311011788403389820289&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-x870e-taichi-lite-extended-atx-motherboard-amd-x870e-am5%2Fp%2FN82E16813162162%3Fitem%3DN82E16813162162",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-162-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -12073,17 +11947,6 @@ export const PARTS = [
         "price": 69.99,
         "url": "https://www.amazon.com/dp/B08G1Y95SZ?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445839397639290498896952",
-        "price": 79.99,
-        "saleprice": 70.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839397639290498896952&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-a520m-hdv-micro-atx-amd-motherboard-amd-a520-am4%2Fp%2FN82E16813157958%3Fitem%3DN82E16813157958",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-157-958-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -12379,16 +12242,6 @@ export const PARTS = [
         "price": 119.99,
         "url": "https://www.amazon.com/dp/B0CJT9KKSD?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458312704347846218030828",
-        "price": 150.84,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312704347846218030828&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-motherboards-amd-am5%2Fp%2F2MG-0001-00108%3Fitem%3D9SIAFVFKGM1676",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S24092508NY0P77.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.979Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -12793,16 +12646,6 @@ export const PARTS = [
         "price": 119.99,
         "url": "https://www.amazon.com/dp/B0CK582LX5?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "44583363672323587528243",
-        "price": 249,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583363672323587528243&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b760m-pg-riptide-wifi-micro-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813162147%3Fitem%3D9SIC3DRKN78750",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-147-07.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.571Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -12973,27 +12816,6 @@ export const PARTS = [
         "price": 99.99,
         "url": "https://www.amazon.com/dp/B0FH319HHD?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458314054993133607620104",
-        "price": 110.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314054993133607620104&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850m-x-r2-0-micro-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813162234%3Fitem%3DN82E16813162234",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-234-02.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
-      },
-      "newegg_openbox": {
-        "sku": "445831930697274585235803",
-        "price": 110.99,
-        "saleprice": 83.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831930697274585235803&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850m-x-r2-0-micro-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813162234R%3Fitem%3DN82E16813162234R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-234-02.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -14626,16 +14448,6 @@ export const PARTS = [
         "price": 196,
         "url": "https://www.amazon.com/dp/B0BYBHW4SH?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445832953626412468819722",
-        "price": 353.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832953626412468819722&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HD-0002-00221%3Fitem%3D9SIAGBAJJC1472",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4YUD2211300MW87M90.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.987Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 5,
@@ -15128,16 +14940,6 @@ export const PARTS = [
         "price": 109.21,
         "url": "https://www.amazon.com/dp/B09P3RV6ZC?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458316718262628014303109",
-        "price": 107.96,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316718262628014303109&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HD-0015-00G57%3Fitem%3D9SIBTK0KAU9750",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4YUD22021009GNBFD6.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.571Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 10,
@@ -15302,16 +15104,6 @@ export const PARTS = [
         "price": 319,
         "url": "https://www.amazon.com/dp/B0BF5PYZ67?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458316722486679942847751",
-        "price": 340.42,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316722486679942847751&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-90mb1bk0-m0eay0-motherboards-amd%2Fp%2F2MG-000B-00660%3Fitem%3D9SIC3XNKS49919",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD2401120XY3Y099.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.607Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -15348,16 +15140,6 @@ export const PARTS = [
         "price": 194.54,
         "url": "https://www.amazon.com/dp/B0BPMH3N7H?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445836098297105012131017",
-        "price": 172.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836098297105012131017&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b760m-ds3h-ddr4-micro-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813145426%3Fitem%3D9SIA4REK8D7842",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-426-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.457Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 12,
@@ -15653,16 +15435,6 @@ export const PARTS = [
         "price": 147.97,
         "url": "https://www.amazon.com/dp/B0CHM63K9W?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445839558728764170722243",
-        "price": 119.76,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839558728764170722243&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b650m-d3hp-micro-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813145473%3Fitem%3D9SIC5MUKUV0216",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-473-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.646Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -15779,17 +15551,6 @@ export const PARTS = [
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DG9WTMKK?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458316357488024304464818",
-        "price": 214.99,
-        "saleprice": 206.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316357488024304464818&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-x870-pro-rs-atx-motherboard-amd-x870-am5%2Fp%2FN82E16813162166%3Fitem%3DN82E16813162166",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-166-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -15826,16 +15587,6 @@ export const PARTS = [
         "price": 115.23,
         "url": "https://www.amazon.com/dp/B0BH4M6ZL9?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458312969288859168951560",
-        "price": 171.88,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312969288859168951560&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b650-pg-lightning-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813162077%3Fitem%3D9SIA0ZXKS84334",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-077-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.210Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -15872,28 +15623,6 @@ export const PARTS = [
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DRTTJ5D6?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445832928100238449278865",
-        "price": 209.99,
-        "saleprice": 179.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832928100238449278865&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850-steel-legend-wifi-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813162187%3Fitem%3DN82E16813162187",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-187-11.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
-      },
-      "newegg_openbox": {
-        "sku": "4458316886427145022273192",
-        "price": 209.99,
-        "saleprice": 113.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316886427145022273192&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850-steel-legend-wifi-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813162187R%3Fitem%3DN82E16813162187R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-187-11.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 5,
@@ -15966,17 +15695,6 @@ export const PARTS = [
         "price": 259.99,
         "url": "https://www.amazon.com/dp/B0DFZQJFC1?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445833170524842260148974",
-        "price": 349.99,
-        "saleprice": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833170524842260148974&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-x870e-nova-wifi-atx-motherboard-amd-x870e-am5%2Fp%2FN82E16813162163%3Fitem%3DN82E16813162163",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-163-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -16302,16 +16020,6 @@ export const PARTS = [
         "price": 188.95,
         "url": "https://www.amazon.com/dp/B0BR8TRM93?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317335588095396886204",
-        "price": 210,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317335588095396886204&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-b760-plus-d4-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813119627%3Fitem%3D9SIBTK0KDV9902",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-627-V01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.571Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -16440,17 +16148,6 @@ export const PARTS = [
         "price": 179.99,
         "url": "https://www.amazon.com/dp/B0DGB9VXRY?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445835777894087075622109",
-        "price": 209.99,
-        "saleprice": 184.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835777894087075622109&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-x870-pro-rs-wifi-atx-motherboard-amd-x870-am5%2Fp%2FN82E16813162167%3Fitem%3DN82E16813162167",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-167-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -16717,16 +16414,6 @@ export const PARTS = [
         "price": 124.44,
         "url": "https://www.amazon.com/dp/B08RBDF9GH?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445835379454038034158253",
-        "price": 205.49,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835379454038034158253&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-b550-tomahawk-atx-amd-motherboard-amd-b550-am4%2Fp%2FN82E16813144326%3Fitem%3D9SIC610KUJ2962",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-326-V01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.733Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -16826,17 +16513,6 @@ export const PARTS = [
         "price": 199.99,
         "url": "https://www.amazon.com/dp/B0DG4FK9HP?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311865580224139250822",
-        "price": 259.99,
-        "saleprice": 249.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311865580224139250822&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-x870-steel-legend-wifi-atx-motherboard-amd-x870-am5%2Fp%2FN82E16813162165%3Fitem%3DN82E16813162165",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-165-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -17035,17 +16711,6 @@ export const PARTS = [
         "price": 139.99,
         "url": "https://www.amazon.com/dp/B0DS6LQ8L1?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445835789308591228861855",
-        "price": 179.99,
-        "saleprice": 149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835789308591228861855&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850-pro-rs-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813162189%3Fitem%3DN82E16813162189",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-189-23.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 7,
@@ -17252,17 +16917,6 @@ export const PARTS = [
         "price": 129.99,
         "url": "https://www.amazon.com/dp/B0BHZHV5V1?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458313241740863462916876",
-        "price": 189.99,
-        "saleprice": 149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313241740863462916876&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b650m-pg-riptide-wifi-micro-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813162095%3Fitem%3DN82E16813162095",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-095-(8).jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -17473,16 +17127,6 @@ export const PARTS = [
         "price": 919.99,
         "url": "https://www.amazon.com/dp/B0DGWKQCKH?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458318351831254735053718",
-        "price": 1011.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318351831254735053718&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-maximus-z890-extreme-extended-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813119689%3Fitem%3D9SIC6GNKW71682",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-689-25.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.760Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -17553,16 +17197,6 @@ export const PARTS = [
         "price": 129.99,
         "url": "https://www.amazon.com/dp/B0F3NDZF19?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445832651046665670828138",
-        "price": 129.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832651046665670828138&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850m-x-wifi-r2-0-micro-atx-motherboards-amd-amd-b850-am5%2Fp%2FN82E16813162225%3Fitem%3DN82E16813162225",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-225-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -18129,16 +17763,6 @@ export const PARTS = [
         "price": 266.89,
         "url": "https://www.amazon.com/dp/B0BJF1H163?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458348308718135268332",
-        "price": 603.39,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458348308718135268332&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-z790m-itx-wifi-mini-itx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813162094%3Fitem%3D9SIAD6HKKM2456",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-094-04.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.837Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -18352,16 +17976,6 @@ export const PARTS = [
         "price": 136.99,
         "url": "https://www.amazon.com/dp/B0C3XJPGM6?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837061696800944845696",
-        "price": 140.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837061696800944845696&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-motherboards-intel%2Fp%2F1JW-000J-007F0%3Fitem%3D9SIA4REK8B0155",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BDCAS2305080HVV7G1B.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.457Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -18957,17 +18571,6 @@ export const PARTS = [
         "price": 289.99,
         "url": "https://www.amazon.com/dp/B0DN6PTRQS?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445831989719035183712388",
-        "price": 299.99,
-        "saleprice": 289.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831989719035183712388&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-x870i-aorus-pro-ice-mini-itx-motherboard-amd-x870-am5%2Fp%2FN82E16813145538%3Fitem%3DN82E16813145538",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-538-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -19204,16 +18807,6 @@ export const PARTS = [
         "price": 148.15,
         "url": "https://www.amazon.com/dp/B0C9R3VLW4?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837203484849672013812",
-        "price": 110.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837203484849672013812&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-motherboards-amd%2Fp%2F2MG-000K-002E1%3Fitem%3D9SIA4REK8E4897",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AGBAS2312200OD28E56.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.457Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -19670,16 +19263,6 @@ export const PARTS = [
         "price": 137.99,
         "url": "https://www.amazon.com/dp/B0C39YS8DD?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837057459406810055259",
-        "price": 162.04,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837057459406810055259&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-a620m-pro-rs-micro-atx-motherboard-amd-a620-am5%2Fp%2FN82E16813162117%3Fitem%3D9SIA8N2KBU6512",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-117-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.466Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -20351,17 +19934,6 @@ export const PARTS = [
         "price": 259.99,
         "url": "https://www.amazon.com/dp/B0DQNRGMWH?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838076904612156107794",
-        "price": 309.99,
-        "saleprice": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838076904612156107794&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b850i-aorus-pro-mini-itx-motherboard-amd-b850-am5%2Fp%2FN82E16813145552%3Fitem%3DN82E16813145552",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-552-05.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -20402,16 +19974,6 @@ export const PARTS = [
         "price": 349.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601252&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601252.p%3FskuId%3D6601252",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837629438071682028338",
-        "price": 542.87,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837629438071682028338&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-intel-lga-1851%2Fp%2F1JW-000C-01AN9%3Fitem%3D9SIC5YTKW98523",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2507020K9N6A12.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.732Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -20482,28 +20044,6 @@ export const PARTS = [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0F3QD6QQL?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311679203085760712763",
-        "price": 99.99,
-        "saleprice": 90.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311679203085760712763&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-h610m-s2h-v2-micro-atx-motherboard-intel-h610-lga-1700%2Fp%2FN82E16813145576%3Fitem%3DN82E16813145576",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-576-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
-      },
-      "newegg_openbox": {
-        "sku": "4458315829227798642213354",
-        "price": 99.99,
-        "saleprice": 48.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315829227798642213354&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-h610m-s2h-v2-micro-atx-motherboard-intel-h610-lga-1700%2Fp%2FN82E16813145576R%3Fitem%3DN82E16813145576R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-576-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 10,
@@ -20539,17 +20079,6 @@ export const PARTS = [
         "price": 149.88,
         "url": "https://www.amazon.com/dp/B0C2ZWVHDF?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445836358346145729798021",
-        "price": 229.99,
-        "saleprice": 199.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836358346145729798021&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-z790-tomahawk-wifi-atx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813144567%3Fitem%3DN82E16813144567",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-567-17.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.771Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 25,
@@ -20773,16 +20302,6 @@ export const PARTS = [
         "price": 223.99,
         "url": "https://www.amazon.com/dp/B0DJHLSY68?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458313363939922629462891",
-        "price": 234.34,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313363939922629462891&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-z890-steel-legend-wifi-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813162174%3Fitem%3D9SIA0ZXKS84298",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-174-04.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.210Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -21704,17 +21223,6 @@ export const PARTS = [
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DJQ38QP1?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458313251843153885872831",
-        "price": 219.99,
-        "saleprice": 169.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313251843153885872831&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-z890-pro-rs-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813162176%3Fitem%3DN82E16813162176",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-176-11.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -22000,17 +21508,6 @@ export const PARTS = [
         "price": 129.99,
         "url": "https://www.amazon.com/dp/B0DSQX832M?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458310167047413092237936",
-        "price": 149.99,
-        "saleprice": 117.32,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310167047413092237936&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b860-pro-rs-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813162205%3Fitem%3DN82E16813162205",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-205-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -22359,16 +21856,6 @@ export const PARTS = [
         "price": 129.99,
         "url": "https://www.amazon.com/dp/B0DSQKVT2D?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317404213925332121192",
-        "price": 196.47,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317404213925332121192&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b860m-x-wifi-micro-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813162217%3Fitem%3D9SIC3DRKN78752",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-217-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.571Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -22565,17 +22052,6 @@ export const PARTS = [
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B0DJRPLRJB?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311237618428809245116",
-        "price": 499.99,
-        "saleprice": 475.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311237618428809245116&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-z890-taichi-ocf-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813162168%3Fitem%3DN82E16813162168",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-168-05.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -22908,16 +22384,6 @@ export const PARTS = [
         "price": 119.99,
         "url": "https://www.amazon.com/dp/B0DSQCFZ6F?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445836406359892741697583",
-        "price": 172.14,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836406359892741697583&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b860m-x-micro-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813162216%3Fitem%3D9SIC3DRKNH2254",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-216-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.571Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -23470,27 +22936,6 @@ export const PARTS = [
         "price": 182.1,
         "url": "https://www.amazon.com/dp/B0CSKHTY1Y?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458313826449138864155413",
-        "price": 189.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313826449138864155413&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-h610i-mini-itx-motherboard-intel-h610-lga-1700%2Fp%2FN82E16813145462%3Fitem%3D9SIAD7HK9K9869",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-462-05.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.837Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
-      },
-      "newegg_openbox": {
-        "sku": "445834050025407909844812",
-        "price": 129.99,
-        "saleprice": 93.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834050025407909844812&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-h610i-mini-itx-motherboard-intel-h610-lga-1700%2Fp%2FN82E16813145462R%3Fitem%3DN82E16813145462R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-462-05.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.771Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -23598,17 +23043,6 @@ export const PARTS = [
         "price": 179.99,
         "url": "https://www.amazon.com/dp/B0DJHNV6BR?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445839157663134132421603",
-        "price": 269.99,
-        "saleprice": 199.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839157663134132421603&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-z890-lightning-wifi-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813162173%3Fitem%3DN82E16813162173",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-173-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -23961,27 +23395,6 @@ export const PARTS = [
         "price": 99.99,
         "url": "https://www.amazon.com/dp/B0DYQ8NPX1?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458359223264644633191",
-        "price": 115.82,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458359223264644633191&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-h810m-x-micro-atx-motherboard-intel-h810-lga-1851%2Fp%2FN82E16813162235%3Fitem%3D9SIA0ZXKS84335",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-235-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.210Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
-      },
-      "newegg_openbox": {
-        "sku": "445835630149772811120726",
-        "price": 106.99,
-        "saleprice": 84.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835630149772811120726&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-h810m-x-micro-atx-motherboard-intel-h810-lga-1851%2Fp%2FN82E16813162235R%3Fitem%3DN82E16813162235R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-235-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -24052,17 +23465,6 @@ export const PARTS = [
         "price": 110.43,
         "url": "https://www.amazon.com/dp/B0DWD5L195?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445834001848072148364883",
-        "price": 113.99,
-        "saleprice": 112.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834001848072148364883&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-h810m-x-wifi-micro-atx-motherboard-intel-h810-lga-1851%2Fp%2FN82E16813162236%3Fitem%3DN82E16813162236",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-236-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -24316,28 +23718,6 @@ export const PARTS = [
         "price": 356.49,
         "url": "https://www.amazon.com/dp/B0DJRNZWGN?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445832943743190993841875",
-        "price": 459.99,
-        "saleprice": 329.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832943743190993841875&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-z890-taichi-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813162169%3Fitem%3DN82E16813162169",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-169-05.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
-      },
-      "newegg_openbox": {
-        "sku": "445838821075494084114819",
-        "price": 459.99,
-        "saleprice": 197.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838821075494084114819&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-z890-taichi-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813162169R%3Fitem%3DN82E16813162169R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-169-05.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -31418,16 +30798,6 @@ export const PARTS = [
         "price": 549,
         "url": "https://www.amazon.com/dp/B0C5BQ1HM6?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837998649397043890688",
-        "price": 795,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837998649397043890688&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F36F-00VC-00003%3Fitem%3D9SIB4VJKP93140",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD24032713HO3D5C.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.287Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -31768,17 +31138,6 @@ export const PARTS = [
         "price": 429,
         "url": "https://www.amazon.com/dp/B0C8Y619R1?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445834858750939081673977",
-        "price": 25.09,
-        "saleprice": 20.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834858750939081673977&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwhite-monoprice-24-99-ft-others%2Fp%2F0V5-00M2-000A8%3Fitem%3D9SIA8SVEW51993",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A9HT_1_20171117398947284.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.488Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -32681,17 +32040,6 @@ export const PARTS = [
         "price": 419.95,
         "url": "https://www.amazon.com/dp/B0F4ZFPVC1?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445833893101139393003348",
-        "price": 429.99,
-        "saleprice": 409.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833893101139393003348&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-windforce-gv-n506twf2oc-8gd-geforce-rtx-5060-ti-8gb-graphics-card-double-fans%2Fp%2FN82E16814932796%3Fitem%3DN82E16814932796",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-796-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -51497,17 +50845,6 @@ export const PARTS = [
         "price": 1228.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645752&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645752.p%3FskuId%3D6645752",
         "inStock": false
-      },
-      "newegg": {
-        "sku": "445836017013525624514274",
-        "price": 1300,
-        "saleprice": 1274.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836017013525624514274&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820982257%3Fitem%3DN82E16820982257",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-260-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.780Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "cap": 64,
@@ -57472,16 +56809,6 @@ export const PARTS = [
         "price": 144.99,
         "url": "https://www.amazon.com/dp/B08CKFDPJ3?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445832751771023686501128",
-        "price": 8999.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832751771023686501128&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0TZ-000G-005K3%3Fitem%3D9SIA0R7KPR3213",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0R7D25121714CIHRC3.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.179Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -58093,17 +57420,6 @@ export const PARTS = [
         "price": 95.99,
         "url": "https://www.amazon.com/dp/B0D4RCRNHG?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311430099588652077933",
-        "price": 99.99,
-        "saleprice": 89.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311430099588652077933&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-512gb-p320-nvme-1-3%2Fp%2FN82E16820225424%3Fitem%3DN82E16820225424",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-424-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.777Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -58512,16 +57828,6 @@ export const PARTS = [
         "price": 149.99,
         "url": "https://www.amazon.com/dp/B0BTDP6P7Y?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458316801426789661943349",
-        "price": 154.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316801426789661943349&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-1tb-p400-lite-nvme-2-0%2Fp%2F3C6-00HW-000N0%3Fitem%3D3C6-00HW-000N0",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/3C6-00HW-000N2-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.171Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -58559,16 +57865,6 @@ export const PARTS = [
         "price": 151.99,
         "url": "https://www.amazon.com/dp/B01LZMUNGR?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458314191474722375930866",
-        "price": 156.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314191474722375930866&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-4tb-st4000lm024%2Fp%2FN82E16822179105%3Fitem%3D9SIAPBJGVS7935",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-105-Z01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.098Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 21,
@@ -58636,16 +57932,6 @@ export const PARTS = [
         "price": 119,
         "url": "https://www.amazon.com/dp/B0CSFQ24W2?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458316376241451608837212",
-        "price": 119.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316376241451608837212&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-512gb-t-force-g50%2Fp%2FN82E16820985132%3Fitem%3DN82E16820985132",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-132-05.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.780Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -58836,16 +58122,6 @@ export const PARTS = [
         "price": 359.99,
         "url": "https://www.amazon.com/dp/B08FQ3VST4?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838741288879433949180",
-        "price": 455,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838741288879433949180&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-exos-x16-st14000nm001g-14tb%2Fp%2FN82E16822184967%3Fitem%3D9SIAAEEKD52867",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-184-967-S01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.557Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -58917,16 +58193,6 @@ export const PARTS = [
         "price": 219.97,
         "url": "https://www.amazon.com/dp/B0G42YVQRJ?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837927595941414152847",
-        "price": 58.77,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837927595941414152847&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3C6-00VS-00078%3Fitem%3D9SIA2W0K5V5002",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S24022808RYFG03.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.346Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -59289,16 +58555,6 @@ export const PARTS = [
         "price": 225,
         "url": "https://www.amazon.com/dp/B07H289S79?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458312002143456608909866",
-        "price": 210,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312002143456608909866&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-st4000vn008-4tb%2Fp%2FN82E16822179005%3Fitem%3D9SIAJP2KBZ9241",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-005-10.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.016Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -60643,17 +59899,6 @@ export const PARTS = [
         "price": 164.99,
         "url": "https://www.amazon.com/dp/B0C9HGVJ11?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445836975972171745329388",
-        "price": 169.99,
-        "saleprice": 164.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836975972171745329388&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-1tb%2Fp%2F0D9-003W-000M3%3Fitem%3D0D9-003W-000M3",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AMB8D231016118F19AF.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.119Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -60898,16 +60143,6 @@ export const PARTS = [
         "price": 199.99,
         "url": "https://www.amazon.com/dp/B0814GPG92?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445835907039528099223",
-        "price": 326.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835907039528099223&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fadata-2tb-ultimate%2Fp%2F0D9-0017-001K8%3Fitem%3D9SIAGBAKKT2519",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AJNUD2202240IH2QD31.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.988Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -61559,16 +60794,6 @@ export const PARTS = [
         "price": 75.99,
         "url": "https://www.amazon.com/dp/B0G3PHPXHR?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311054170206743978145",
-        "price": 30.23,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311054170206743978145&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2ZK-0095-00038%3Fitem%3D9SIA5D5KFF3245",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A5D5D2502141BJEJ63F.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.257Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -61644,17 +60869,6 @@ export const PARTS = [
         "price": 159.99,
         "url": "https://www.amazon.com/dp/B0FLB5YXLD?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311025360645391881886",
-        "price": 164.99,
-        "saleprice": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311025360645391881886&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-1tb-p410-nvme-1-4%2Fp%2FN82E16820225360%3Fitem%3DN82E16820225360",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-360-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.777Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -61812,16 +61026,6 @@ export const PARTS = [
         "price": 349.99,
         "url": "https://www.amazon.com/dp/B078211KBB?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458312097372677943806442",
-        "price": 236.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312097372677943806442&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-mx500-sata%2Fp%2FN82E16820156174%3Fitem%3D9SIC5YTKWA4851",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-174-V09.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.732Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -62304,16 +61508,6 @@ export const PARTS = [
         "price": 90,
         "url": "https://www.amazon.com/dp/B01LNJBA2I?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311884776025151860624",
-        "price": 75,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311884776025151860624&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-st1000dm010-1tb%2Fp%2FN82E16822184830%3Fitem%3D9SIAAEEF131029",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AD7H_1_20200214745091964.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.556Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -62350,16 +61544,6 @@ export const PARTS = [
         "price": 898,
         "url": "https://www.amazon.com/dp/B0CBYZ6DD1?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458316405871756763993030",
-        "price": 999.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316405871756763993030&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-4tb-990-pro%2Fp%2F0D9-0009-00CR2%3Fitem%3D9SIA12KK8F8923",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A12KS2401180B77IK6B.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.223Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -62444,17 +61628,6 @@ export const PARTS = [
         "price": 549.99,
         "url": "https://www.amazon.com/dp/B0DJ1QC42R?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458310759318101622055192",
-        "price": 1087.99,
-        "saleprice": 549.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310759318101622055192&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-4tb-snv3s-nvme%2Fp%2FN82E16820242904%3Fitem%3DN82E16820242904",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-242-904-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.779Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 29,
@@ -62544,16 +61717,6 @@ export const PARTS = [
         "price": 426.26,
         "url": "https://www.amazon.com/dp/B0F3WLFCPL?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445832175779082903938290",
-        "price": 577,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832175779082903938290&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-kc600-4tb%2Fp%2F2U3-000C-00017%3Fitem%3D9SIC0X3KUB9545",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BEC2D2603100FPH6U0B.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.702Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -62832,16 +61995,6 @@ export const PARTS = [
         "price": 193,
         "url": "https://www.amazon.com/dp/B01IEKG402?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838524873980836437353",
-        "price": 149.1,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838524873980836437353&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-st2000dm006-2tb%2Fp%2FN82E16822178993%3Fitem%3D9SIAAEEA045820",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-178-993-V01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.556Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -63002,16 +62155,6 @@ export const PARTS = [
         "price": 199,
         "url": "https://www.amazon.com/dp/B01M1NHCZT?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445831449723903205304677",
-        "price": 215,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831449723903205304677&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-firecuda-2tb-st2000lx001%2Fp%2FN82E16822179110%3Fitem%3D9SIAAEEK257797",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-110-S01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.556Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -63699,16 +62842,6 @@ export const PARTS = [
         "price": 409,
         "url": "https://www.amazon.com/dp/B0DGHB9V34?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458314142736331919675008",
-        "price": 499.5,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314142736331919675008&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-0009-00CW7%3Fitem%3D9SIA12KKFD4970",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGH6S2502030H2OYI3B.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.223Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "mpn": "MZ-V9S2T0BW",
@@ -63843,16 +62976,6 @@ export const PARTS = [
         "price": 135,
         "url": "https://www.amazon.com/dp/B01LWRTRZU?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837948562399624347366",
-        "price": 135.1,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837948562399624347366&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-firecuda-1tb-st1000lx015%2Fp%2FN82E16822179111%3Fitem%3D9SIAAEEHJ10427",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-111-S01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.556Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -64060,16 +63183,6 @@ export const PARTS = [
         "price": 635,
         "url": "https://www.amazon.com/dp/B0DGH3HBHJ?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458310103283435906356830",
-        "price": 669,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310103283435906356830&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-5-3-cubic-feet-990-evo-plus-pcie%2Fp%2F0D9-0009-00CW8%3Fitem%3D9SIBFJRKFD5625",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGH6S2502030H6N7N1B.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.378Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -64286,17 +63399,6 @@ export const PARTS = [
         "price": 139.99,
         "url": "https://www.amazon.com/dp/B0DBX6BKJP?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445833292575230787406850",
-        "price": 179.99,
-        "saleprice": 139.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833292575230787406850&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-1tb-p320-nvme-1-3%2Fp%2FN82E16820225425%3Fitem%3DN82E16820225425",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-425-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.777Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -64336,16 +63438,6 @@ export const PARTS = [
         "price": 199.9,
         "url": "https://www.amazon.com/dp/B08T1TWQS9?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445831751280943554425735",
-        "price": 199.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831751280943554425735&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-250gb-870-evo%2Fp%2F0D9-0009-00AF5%3Fitem%3D9SIA12KHZA7485",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A12KS210125AFRzn.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.222Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -64550,16 +63642,6 @@ export const PARTS = [
         "price": 219,
         "url": "https://www.amazon.com/dp/B01LNJBA50?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458312896542802541203696",
-        "price": 205,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312896542802541203696&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-st4000dm005-4tb%2Fp%2FN82E16822179009%3Fitem%3D9SIAAEEDUF0019",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-009.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.556Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -65658,16 +64740,6 @@ export const PARTS = [
         "price": 465.99,
         "url": "https://www.amazon.com/dp/B0CBQ5CVN6?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837279845059549399199",
-        "price": 634.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837279845059549399199&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-4tb%2Fp%2F0D9-003W-000M2%3Fitem%3D9SIAMB8K247934",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AMB8D231016118F19AF.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.060Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -66563,16 +65635,6 @@ export const PARTS = [
         "price": 206.99,
         "url": "https://www.amazon.com/dp/B0DTY5TN8L?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "44583392970298468965112",
-        "price": 19.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583392970298468965112&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F30P-00ZT-00001%3Fitem%3D9SIC3HPKMW2536",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C3HPD25102816UC0N45.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.599Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -67104,16 +66166,6 @@ export const PARTS = [
         "price": 149.32,
         "url": "https://www.amazon.com/dp/B00A45JEX0?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445835290715718379545394",
-        "price": 195,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835290715718379545394&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-constellation-es-3-st4000nm0033-4tb-for-enterprise-storage-7200-rpm%2Fp%2FN82E16822178307%3Fitem%3D9SIAAEEC6P4412",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-178-307-07.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.556Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -67181,16 +66233,6 @@ export const PARTS = [
         "price": 182.99,
         "url": "https://www.amazon.com/dp/B0BW8BMSX5?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445835794536692535481139",
-        "price": 191.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835794536692535481139&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-1tb-t-force-g50-nvme-1-4%2Fp%2FN82E16820985133%3Fitem%3DN82E16820985133",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-133-04.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.780Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -67230,17 +66272,6 @@ export const PARTS = [
         "price": 311.99,
         "url": "https://www.amazon.com/dp/B0CWQP2VGH?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445835788865853225122706",
-        "price": 349.99,
-        "saleprice": 315.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835788865853225122706&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-2tb-t-force-g50-nvme-1-4%2Fp%2FN82E16820985144%3Fitem%3DN82E16820985144",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-132-05.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.780Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -67400,16 +66431,6 @@ export const PARTS = [
         "price": 201,
         "url": "https://www.amazon.com/dp/B01LZDFMWQ?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445839037149839197860732",
-        "price": 379.45,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839037149839197860732&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-st6000vn0041-6tb%2Fp%2FN82E16822179004%3Fitem%3D9SIADU0K824056",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-004-S01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.904Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -67478,16 +66499,6 @@ export const PARTS = [
         "price": 319.99,
         "url": "https://www.amazon.com/dp/B0CZMZQ8MW?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445832180842668769769450",
-        "price": 319.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832180842668769769450&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-2tb-mp44q-nvme-1-4%2Fp%2FN82E16820985175%3Fitem%3DN82E16820985175",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-175-04.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.780Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -67612,16 +66623,6 @@ export const PARTS = [
         "price": 73,
         "url": "https://www.amazon.com/dp/B01LX4E7FM?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "44583354055942166037947",
-        "price": 74.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583354055942166037947&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-firecuda-500gb-st500lx025%2Fp%2FN82E16822179112%3Fitem%3D9SIBT5SKUP6550",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-112-S01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.563Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -67722,17 +66723,6 @@ export const PARTS = [
         "price": 279.99,
         "url": "https://www.amazon.com/dp/B0F996WHZM?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445836993062297916622706",
-        "price": 359.99,
-        "saleprice": 297.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836993062297916622706&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Foneboom-2tb-x400-series-nvme-1-4%2Fp%2F0D9-010Y-00003%3Fitem%3D9SIB1V8KS05220",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C05YS25051404NX2C91.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.194Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -67849,16 +66839,6 @@ export const PARTS = [
         "price": 684.75,
         "url": "https://www.amazon.com/dp/B072F422FW?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458314767539597247213565",
-        "price": 624.45,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314767539597247213565&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fred-pro-wd101kfbx-10tb%2Fp%2FN82E16822231547%3Fitem%3D9SIADU0KK56252",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-231-547-V06.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.905Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -68688,16 +67668,6 @@ export const PARTS = [
         "price": 499.9,
         "url": "https://www.amazon.com/dp/B0BXX1JJH8?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "44583597772777829167772",
-        "price": 639,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583597772777829167772&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1B9-0037-00014%3Fitem%3D9SIA12KKGP9331",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD2401190ZB13BEE.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.223Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -68901,16 +67871,6 @@ export const PARTS = [
         "price": 509.99,
         "url": "https://www.amazon.com/dp/B0CZLDKDKH?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445836478870290665212126",
-        "price": 509.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836478870290665212126&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-4tb-mp44q-nvme-1-4%2Fp%2FN82E16820985176%3Fitem%3DN82E16820985176",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-176-04.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.780Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -69138,16 +68098,6 @@ export const PARTS = [
         "price": 85,
         "url": "https://www.amazon.com/dp/B00EEJP1N4?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458312580660709907103374",
-        "price": 199.1,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312580660709907103374&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-st3000dm008-3tb%2Fp%2FN82E16822178994%3Fitem%3D9SIAAEEKJ71208",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-178-994-V02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.557Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "upc": "715663215516",
@@ -69411,16 +68361,6 @@ export const PARTS = [
         "price": 145,
         "url": "https://www.amazon.com/dp/B009YQOL9C?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458314012954025343897203",
-        "price": 110,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314012954025343897203&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-constellation-es-3-st4000nm0023-4tb%2Fp%2FN82E16822178306%3Fitem%3D9SIAAEE9EX3856",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-178-306-10.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.556Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -70059,16 +68999,6 @@ export const PARTS = [
         "price": 179.99,
         "url": "https://www.amazon.com/dp/B0B94R72J5?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317796610999376286722",
-        "price": 391.94,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317796610999376286722&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-pro-st2000nt001-2tb%2Fp%2FN82E16822185080%3Fitem%3D9SIAAEEKJ49906",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-080-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.557Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 15,
@@ -70105,16 +69035,6 @@ export const PARTS = [
         "price": 599.99,
         "url": "https://www.amazon.com/dp/B0B94P481H?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445831074836368022309596",
-        "price": 569.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831074836368022309596&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-pro-st14000nt001-14tb%2Fp%2FN82E16822185074%3Fitem%3D9SIC5YTKVY5486",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-074-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.731Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -70487,16 +69407,6 @@ export const PARTS = [
         "price": 940.49,
         "url": "https://www.amazon.com/dp/B0CBYZ249R?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458314133803303907200972",
-        "price": 1175,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314133803303907200972&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-4tb-990-pro-w-heatsink-gaming-package%2Fp%2F0D9-0009-00CV6%3Fitem%3D9SIA12KKDA0486",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A12KS24092602OIZL85.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.223Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -70650,16 +69560,6 @@ export const PARTS = [
         "price": 259.99,
         "url": "https://www.amazon.com/dp/B0FLB43X3V?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445833039859008593775089",
-        "price": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833039859008593775089&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-2tb-p410-nvme-1-4%2Fp%2FN82E16820225361%3Fitem%3DN82E16820225361",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-361-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.777Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -70784,16 +69684,6 @@ export const PARTS = [
         "price": 264.07,
         "url": "https://www.amazon.com/dp/B07GYZH8HY?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445831097819212616052156",
-        "price": 149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831097819212616052156&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-st4000dm004-4tb-for-daily-computing-5400-rpm%2Fp%2FN82E16822179299%3Fitem%3DN82E16822179299",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-299-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.781Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -70938,16 +69828,6 @@ export const PARTS = [
         "price": 459.99,
         "url": "https://www.amazon.com/dp/B08J8JLMFF?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458315687669110145586213",
-        "price": 624.45,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315687669110145586213&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-exos-x16-st16000nm003g-16tb%2Fp%2FN82E16822184978%3Fitem%3D9SIADU0KA70720",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-184-978-S01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.905Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 6,
@@ -70983,17 +69863,6 @@ export const PARTS = [
         "price": 1159,
         "url": "https://www.amazon.com/dp/B0CZ7N4CNY?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445833668234170951435440",
-        "price": 669.99,
-        "saleprice": 649,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833668234170951435440&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fqnap-ts-464-8g-us%2Fp%2F2HT-0014-000X3%3Fitem%3D2HT-0014-000X3",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD2302271A63XO62.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.158Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -71399,16 +70268,6 @@ export const PARTS = [
         "price": 189.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6385543&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6385543.p%3FskuId%3D6385543",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445836648791639817075193",
-        "price": 187.97,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836648791639817075193&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-1tb-cs900%2Fp%2FN82E16820177078%3Fitem%3DN82E16820177078",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-177-078-V09.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.777Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "cap": 1000,
@@ -76001,17 +74860,6 @@ export const PARTS = [
         "price": 89.9,
         "url": "https://www.amazon.com/dp/B0FBX9VS3B?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445835332372626811205695",
-        "price": 129.9,
-        "saleprice": 89.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835332372626811205695&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-temperature-controlled-quality-fan-750-w-80-plus-gold-certified-power-supply-black-bp026eu%2Fp%2FN82E16817222044%3Fitem%3DN82E16817222044",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-222-044-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -76948,17 +75796,6 @@ export const PARTS = [
         "price": 286.64,
         "url": "https://www.amazon.com/dp/B0CC8JMDVH?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458316441639877982382752",
-        "price": 379.9,
-        "saleprice": 299.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316441639877982382752&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-straight-power-atx-3-0-compatible-1500-w-80-plus-platinum-certified-power-supplies-black%2Fp%2F1HU-004H-000T5%3Fitem%3D1HU-004H-000T5",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS23063011RRROF5.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.151Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 8,
@@ -77438,17 +76275,6 @@ export const PARTS = [
         "price": 99.9,
         "url": "https://www.amazon.com/dp/B0DVJGSK2W?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445839439240924718774627",
-        "price": 159.9,
-        "saleprice": 99.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839439240924718774627&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-power-zone-2-atx12v-3-1-750-w-80-plus-platinum-and-cybenetics-platinum-efficiency-power-supplies-black%2Fp%2FN82E16817222041%3Fitem%3DN82E16817222041",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-222-041-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -77969,17 +76795,6 @@ export const PARTS = [
         "price": 153.25,
         "url": "https://www.amazon.com/dp/B08LP6WS35?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458313753647613221617111",
-        "price": 179.99,
-        "saleprice": 169.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313753647613221617111&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-atx3-0-sfx-12v-ver-3-42-850-w-80-plus-gold-certified-90-typical-load-power-supply-black-mpy-8501-sfhagv-3u1%2Fp%2FN82E16817171238%3Fitem%3DN82E16817171238",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-171-238-29.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 18,
@@ -78549,16 +77364,6 @@ export const PARTS = [
         "price": 139.9,
         "url": "https://www.amazon.com/dp/B07ZTW7TSW?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445836662517407508611329",
-        "price": 119.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836662517407508611329&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-sfx-series-650-w-80-plus-gold-certified-power-supplies-sfx-l%2Fp%2F1HU-004H-000F6%3Fitem%3D9SIA68V8JJ0539",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68V_131886092904004037fKdwRByUzm.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.307Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -79067,17 +77872,6 @@ export const PARTS = [
         "price": 69.9,
         "url": "https://www.amazon.com/dp/B0F2TQV194?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458314224878688171896566",
-        "price": 109.9,
-        "saleprice": 64.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314224878688171896566&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-atx3-1-atx3-0-compatible-650-w-80-plus-gold-certified-power-supplies-black-pure-power-12-650w%2Fp%2FN82E16817222035%3Fitem%3DN82E16817222035",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-222-035-06.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -79152,17 +77946,6 @@ export const PARTS = [
         "price": 429.9,
         "url": "https://www.amazon.com/dp/B0C6FYQC81?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445833237672345245385565",
-        "price": 479.9,
-        "saleprice": 429.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833237672345245385565&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HU-004H-000S7%3Fitem%3D1HU-004H-000S7",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS2305100X28CPC9.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.151Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -79580,17 +78363,6 @@ export const PARTS = [
         "price": 54.99,
         "url": "https://www.amazon.com/dp/B0DLGP93K4?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838392866591256187682",
-        "price": 59.99,
-        "saleprice": 44.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838392866591256187682&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fraidmax-cobra-atx-3-1-compatible-650-w-80-plus-gold-certified-power-supplies-black-650w%2Fp%2F1HU-0061-000M1%3Fitem%3D9SIBNFDKC50839",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BNFDS2411040DYSVA3E.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.536Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -83471,17 +82243,6 @@ export const PARTS = [
         "price": 54.99,
         "url": "https://www.amazon.com/dp/B0D4QVMBTP?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837609825715127512739",
-        "price": 69.99,
-        "saleprice": 54.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837609825715127512739&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdarkrock-atx-mid-tower-cases-black-ec2%2Fp%2F2AM-05K6-00009%3Fitem%3D9SIBGX1KC49831",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGX1S2408200CLVJX5D.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.434Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -83530,16 +82291,6 @@ export const PARTS = [
         "price": 69.9,
         "url": "https://www.amazon.com/dp/B0D5PHHCK5?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317725670923833622844",
-        "price": 75.68,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317725670923833622844&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-atx-mid-tower-cases-black-xr-b%2Fp%2F2AM-00CN-00061%3Fitem%3D9SIA0ZXK9J4545",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXS24071712PEB63E.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.204Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -84434,16 +83185,6 @@ export const PARTS = [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0FKZ5FVG1?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445833315130454155809736",
-        "price": 54.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833315130454155809736&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdynatron-k2%2Fp%2FN82E16835114115%3Fitem%3D9SIAB944HR3512",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-114-115-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.718Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 10,
@@ -84662,17 +83403,6 @@ export const PARTS = [
         "price": 49.99,
         "url": "https://www.amazon.com/dp/B0C3H3QR8Q?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458316038117269289751138",
-        "price": 14.09,
-        "saleprice": 11.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316038117269289751138&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-monoprice-0-ft-others%2Fp%2F2E4-0022-00004%3Fitem%3D9SIA8SV74J8277",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A9HT_1_201711181176986503.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.485Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -85790,16 +84520,6 @@ export const PARTS = [
         "price": 74.99,
         "url": "https://www.amazon.com/dp/B0B99HTD3B?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458318306269714149811981",
-        "price": 13.65,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318306269714149811981&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2Y3-000X-000C3%3Fitem%3D9SIA5D5K8B3941",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A5D5D2409150VEOEE44.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.223Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -86816,16 +85536,6 @@ export const PARTS = [
         "price": 68.38,
         "url": "https://www.amazon.com/dp/B0FWJRT8G8?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458318048986197223647747",
-        "price": 26.85,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318048986197223647747&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F308-000W-00018%3Fitem%3D9SIA5D52XZ6049",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V194_1_20181206912294604.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.576Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -87222,16 +85932,6 @@ export const PARTS = [
         "price": 54.99,
         "url": "https://www.amazon.com/dp/B07NZYJ9ZJ?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458310382662498788272694",
-        "price": 42.15,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310382662498788272694&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1FZ-01JC-00005%3Fitem%3D9SIA5D5KFF2845",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A5D5D2502150AEPKL70.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.255Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -87401,16 +86101,6 @@ export const PARTS = [
         "price": 79.99,
         "url": "https://www.amazon.com/dp/B0DHXSNQB2?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837599366344632856340",
-        "price": 4.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837599366344632856340&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fclesco-m-3-sanders%2Fp%2F04P-0074-00001%3Fitem%3D9SIA5D52JH7071",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A060_1_2014092034162214.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.498Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -88102,16 +86792,6 @@ export const PARTS = [
         "price": 59.99,
         "url": "https://www.amazon.com/dp/B0F1Y77XQ1?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "44583912595682517943287",
-        "price": 45.63,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583912595682517943287&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000S-00040%3Fitem%3D9SIA2W0JJF1016",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0_1313243640735309140n2Q2xBAhA.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.346Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -88256,16 +86936,6 @@ export const PARTS = [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0CWTYD1XJ?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445832832927803729893512",
-        "price": 29.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832832927803729893512&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2MA-07TB-00001%3Fitem%3D9SIBY6HKCV9414",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BY6HS241224045HIE48.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.633Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 30,
@@ -88365,16 +87035,6 @@ export const PARTS = [
         "price": 159.59,
         "url": "https://www.amazon.com/dp/B0CMVBMVHT?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458315367601256797653350",
-        "price": 61.45,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315367601256797653350&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1B4-013K-00097%3Fitem%3D9SIA2W0KEB5289",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AB94S201029ufwgJ.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.347Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 6,
@@ -88421,16 +87081,6 @@ export const PARTS = [
         "price": 85.37,
         "url": "https://www.amazon.com/dp/B0FD3X2TB2?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311007133096044226566",
-        "price": 51.89,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311007133096044226566&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0CV-004R-00002%3Fitem%3D9SIA5D5K7M4655",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A5D5D2409140J90I027.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.183Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 10,
@@ -89279,16 +87929,6 @@ export const PARTS = [
         "price": 86.99,
         "url": "https://www.amazon.com/dp/B0FMQDZD6Z?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311102623031472280240",
-        "price": 85.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311102623031472280240&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fokinos-atx-micro-atx-mid-tower-steel-plastic-wood-cases-computer-cases-atx-form-black%2Fp%2F2AM-05KY-00002%3Fitem%3D9SIC35VKS28792",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C35VD2601240CIZT92D.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.532Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -90318,16 +88958,6 @@ export const PARTS = [
         "price": 199.9,
         "url": "https://www.amazon.com/dp/B08NW4MK1X?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "44583865121838361321746",
-        "price": 199.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583865121838361321746&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-atx-mid-tower-silent-base-top-cover-abs-side-panel-steel-side-panel-window-4mm-tempered-glass-steel-front-panel-abs-stands-abs-802-black-window%2Fp%2F2AM-0037-00075%3Fitem%3D9SIA68VCKG8197",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS201113y09Tq.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.307Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 16,
@@ -94144,16 +92774,6 @@ export const PARTS = [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0G1ML5B99?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445833878426094768984907",
-        "price": 49.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833878426094768984907&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0TH-02W3-00011%3Fitem%3D0TH-02W3-00011",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4F7S1911286LvkC.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.126Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 31,
@@ -94655,17 +93275,6 @@ export const PARTS = [
         "price": 119.9,
         "url": "https://www.amazon.com/dp/B0FV38L6LT?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445834698973640294685037",
-        "price": 119.9,
-        "saleprice": 109.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834698973640294685037&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-atx-m-atx-mini-itx-support-btf-mb-light-base-500-black-abs-steel-tempered-glass-case%2Fp%2FN82E16811734021%3Fitem%3DN82E16811734021",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-734-021-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.765Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 8,
@@ -94770,16 +93379,6 @@ export const PARTS = [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0FPM3XG2V?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458310658576228340526294",
-        "price": 59.51,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310658576228340526294&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0TX-001H-00047%3Fitem%3D9SIA4P01UY3613",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2506230SHYBK54.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.405Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 10,
@@ -95114,16 +93713,6 @@ export const PARTS = [
         "price": 49.99,
         "url": "https://www.amazon.com/dp/B0GGJJ414Y?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311959811616883211853",
-        "price": 15.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311959811616883211853&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0G6-00XN-00009%3Fitem%3D9SIA6BTCNC3449",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6BTS201029uokAk.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.309Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -95439,16 +94028,6 @@ export const PARTS = [
         "price": 79.99,
         "url": "https://www.amazon.com/dp/B0DYCJ59VM?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317935364118936697345",
-        "price": 254.75,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317935364118936697345&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2X4-000E-00002%3Fitem%3D9SIAD6HKHB4065",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ADZG_1_20180319308777825.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.835Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -95547,16 +94126,6 @@ export const PARTS = [
         "price": 129,
         "url": "https://www.amazon.com/dp/B0FP2QXKBP?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "44583591222989372329023",
-        "price": 349.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583591222989372329023&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-istarusa-d-400%2Fp%2FN82E16811165416%3Fitem%3DN82E16811165416",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-165-416-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.764Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 14,
@@ -95828,16 +94397,6 @@ export const PARTS = [
         "price": 69.9,
         "url": "https://www.amazon.com/dp/B0DX1QXM33?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445832569267203057371799",
-        "price": 54.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832569267203057371799&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000S-000N1%3Fitem%3D9SIAB94JKH6549",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AB94S23021702ILAAC8.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.718Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -99276,17 +97835,6 @@ export const PARTS = [
         "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629600&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629600.p%3FskuId%3D6629600",
         "inStock": false
-      },
-      "newegg": {
-        "sku": "4458313206006472432105318",
-        "price": 289.99,
-        "saleprice": 249.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313206006472432105318&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-mid-tower-tinted-tempered-glass-case-black-cm-h92fb-p1%2Fp%2FN82E16811146374%3Fitem%3DN82E16811146374",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-146-374-13.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.764Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "tower": "Mid",
@@ -99328,28 +97876,6 @@ export const PARTS = [
         "price": 49.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629604&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629604.p%3FskuId%3D6629604",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "44583318458515187591177",
-        "price": 69.99,
-        "saleprice": 59.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583318458515187591177&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-micro-atx-cases-sgcc-tempered-glass-white-cc-h31fw-01%2Fp%2FN82E16811146375%3Fitem%3DN82E16811146375",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-146-375-13.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.764Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
-      },
-      "newegg_openbox": {
-        "sku": "4458312187334837888669394",
-        "price": 69.99,
-        "saleprice": 42.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312187334837888669394&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-micro-atx-cases-sgcc-tempered-glass-case-computer-cases-atx-form-white-cc-h31fw-01%2Fp%2FN82E16811146375R%3Fitem%3DN82E16811146375R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-146-375-13.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.764Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "tower": "Mini",
@@ -104785,16 +103311,6 @@ export const PARTS = [
         "price": 59.95,
         "url": "https://www.amazon.com/dp/B09HCHYMJM?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317325826726629492770",
-        "price": 67,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317325826726629492770&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9i-17xxch-bk%2Fp%2F13C-0005-002Z4%3Fitem%3D9SIAZTUKFH9277",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BE5US22122718CR5N6C.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:25:46.003Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -107048,16 +105564,6 @@ export const PARTS = [
         "price": 307.21,
         "url": "https://www.amazon.com/dp/B00B4OCW7K?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445831704057389006850194",
-        "price": 44.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831704057389006850194&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famerican-weigh-h-110-food-scales%2Fp%2FN82E16896900006%3Fitem%3D9SIA97TK5N7958",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/96-900-006-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:25:45.482Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -122602,16 +121108,6 @@ export const PARTS = [
         "price": 84.95,
         "url": "https://www.amazon.com/dp/B0D5BC8DWL?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445833314909695477352687",
-        "price": 93,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833314909695477352687&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00360%3Fitem%3D9SIAZTUKRJ6268",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2407010JP33577.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.179Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -123826,16 +122322,6 @@ export const PARTS = [
         "price": 13.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6459388&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6459388.p%3FskuId%3D6459388",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458318167192268187590657",
-        "price": 13.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318167192268187590657&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-cl-f015-pl20bl-a-case-fan%2Fp%2FN82E16835106224%3Fitem%3D9SIA8EFK657978",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-224-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.449Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "cfm": 129,
@@ -127411,16 +125897,6 @@ export const PARTS = [
         "price": 149.99,
         "url": "https://www.amazon.com/dp/B0DFQ8V151?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838933482926361755538",
-        "price": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838933482926361755538&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fz-z-edge-ug27s-27-fhd-300hz-gaming-va-black%2Fp%2F3D4-004G-00054%3Fitem%3D9SIAT2EKBR8382",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AT2ES241016086AZQ53.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.110Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 17,
@@ -127491,16 +125967,6 @@ export const PARTS = [
         "price": 179.97,
         "url": "https://www.amazon.com/dp/B0F3BBBPXN?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "44583259890976611567537",
-        "price": 349.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583259890976611567537&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsceptre-c345b-qut168-34-led-165-hertz-black%2Fp%2F3D4-001F-00022%3Fitem%3D9SIA8X5JT98032",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S2303050XYVQH71.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.511Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "discount": 40,
@@ -128048,17 +126514,6 @@ export const PARTS = [
         "price": 299.99,
         "url": "https://www.amazon.com/dp/B0D5QFL6ZL?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458314566299911656649605",
-        "price": 319.99,
-        "saleprice": 269.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314566299911656649605&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-007C-00040%3Fitem%3D9SIBK6TKG39469",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BK6TS2503200F9AH317.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.489Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -129254,16 +127709,6 @@ export const PARTS = [
         "price": 548.88,
         "url": "https://www.amazon.com/dp/B0F1CTGB4P?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837927837759755370824",
-        "price": 299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837927837759755370824&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-0006-00B75%3Fitem%3D9SIC57KKTB7139",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C0T2S25062611SDBJA7.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.623Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -129538,17 +127983,6 @@ export const PARTS = [
         "price": 139.86,
         "url": "https://www.amazon.com/dp/B0FSRVLVY2?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458310681096160839858713",
-        "price": 319.99,
-        "saleprice": 157.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310681096160839858713&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-006X-00017%3Fitem%3D9SIBAU5KH18261",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BAU5S25052606X07VF2.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.340Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -131007,16 +129441,6 @@ export const PARTS = [
         "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6450748&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6450748.p%3FskuId%3D6450748",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838332714919088715055",
-        "price": 418.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838332714919088715055&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-pa279cv-27-uhd%2Fp%2FN82E16824281154%3Fitem%3DN82E16824281154",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-154-S01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.782Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "screenSize": 27,
@@ -149961,16 +148385,6 @@ export const PARTS = [
         "price": 199,
         "url": "https://www.amazon.com/dp/B09V71FYGS?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "44583520120264484301200",
-        "price": 198.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583520120264484301200&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmicrosoft-windows-11-pro-usb%2Fp%2FN82E16832351749%3Fitem%3DN82E16832351749",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/32-351-749-V06.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.791Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
       }
     },
     "upc": "00889842966169"
