@@ -4580,19 +4580,19 @@ function ScannerPromo({ go, page }) {
   return (
     <div onMouseLeave={close} style={{position:"fixed",left:0,top:"50%",transform:"translateY(-50%)",zIndex:50,fontFamily:"var(--ff)"}}>
       {!expanded && (
-        <button onMouseEnter={open} onClick={open} style={{background:"linear-gradient(135deg,var(--accent),#FF6B35)",border:"none",borderRadius:"0 12px 12px 0",padding:"24px 16px",cursor:"pointer",color:"#fff",writingMode:"vertical-rl",transform:"rotate(180deg)",fontSize:20,fontWeight:800,letterSpacing:1.5,boxShadow:"0 4px 16px rgba(0,0,0,0.3)",display:"flex",alignItems:"center",gap:6}} title="Get Pro Rig Scanner">
-          <span style={{fontSize:32,transform:"rotate(90deg)"}}>💻</span>
+        <button onMouseEnter={open} onClick={open} style={{background:"linear-gradient(135deg,var(--accent),#FF6B35)",border:"none",borderRadius:"0 12px 12px 0",padding:"18px 10px",cursor:"pointer",color:"#fff",writingMode:"vertical-rl",transform:"rotate(180deg)",fontSize:14,fontWeight:700,letterSpacing:1,boxShadow:"0 4px 16px rgba(0,0,0,0.3)",display:"flex",alignItems:"center",gap:6}} title="Get Pro Rig Scanner">
+          <span style={{fontSize:20,transform:"rotate(90deg)"}}>💻</span>
           <span>SCAN YOUR PC</span>
         </button>
       )}
       {expanded && (
-        <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:"0 12px 12px 0",padding:16,width:280,boxShadow:"0 12px 32px rgba(0,0,0,0.4)",position:"relative"}}>
+        <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:"0 14px 14px 0",padding:22,width:380,boxShadow:"0 12px 32px rgba(0,0,0,0.4)",position:"relative"}}>
           <button onClick={dismiss} title="Dismiss" style={{position:"absolute",top:6,right:6,background:"transparent",border:"none",color:"var(--dim)",fontSize:18,cursor:"pointer",padding:4,lineHeight:1}}>✕</button>
           <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:8}}>
             <span style={{fontSize:24}}>💻</span>
             <div>
               <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--accent)",fontWeight:700,letterSpacing:1}}>FREE WINDOWS APP</div>
-              <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:800,color:"var(--txt)"}}>Pro Rig Scanner</div>
+              <div style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:800,color:"var(--txt)"}}>Pro Rig Scanner</div>
             </div>
           </div>
           <div style={{width:"100%",aspectRatio:"16/10",background:"linear-gradient(135deg,#1a1a2e,#16213e)",borderRadius:6,marginBottom:10,position:"relative",overflow:"hidden",border:"1px solid var(--bdr)"}}>
@@ -4610,12 +4610,12 @@ function ScannerPromo({ go, page }) {
             </div>
           </div>
           <div style={{display:"flex",flexDirection:"column",gap:5,marginBottom:12}}>
-            <div style={{display:"flex",alignItems:"center",gap:6,fontSize:12,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>✓</span> Auto-detects your hardware</div>
-            <div style={{display:"flex",alignItems:"center",gap:6,fontSize:12,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>✓</span> Personalized upgrade picks</div>
-            <div style={{display:"flex",alignItems:"center",gap:6,fontSize:12,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>✓</span> Real-time pricing</div>
-            <div style={{display:"flex",alignItems:"center",gap:6,fontSize:12,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>✓</span> Signed &amp; safe (no installs)</div>
+            <div style={{display:"flex",alignItems:"center",gap:8,fontSize:14,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>✓</span> Auto-detects your hardware</div>
+            <div style={{display:"flex",alignItems:"center",gap:8,fontSize:14,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>✓</span> Personalized upgrade picks</div>
+            <div style={{display:"flex",alignItems:"center",gap:8,fontSize:14,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>✓</span> Real-time pricing</div>
+            <div style={{display:"flex",alignItems:"center",gap:8,fontSize:14,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>✓</span> Signed &amp; safe (no installs)</div>
           </div>
-          <button onClick={()=>{ if (go) go("scanner"); }} style={{width:"100%",background:"var(--accent)",color:"#fff",border:"none",borderRadius:8,padding:"10px 14px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,cursor:"pointer"}}>Get it free →</button>
+          <button onClick={()=>{ if (go) go("scanner"); }} style={{width:"100%",background:"var(--accent)",color:"#fff",border:"none",borderRadius:8,padding:"14px 18px",fontFamily:"var(--ff)",fontSize:15,fontWeight:700,cursor:"pointer"}}>Get it free →</button>
         </div>
       )}
     </div>
