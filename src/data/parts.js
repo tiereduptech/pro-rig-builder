@@ -3103,6 +3103,17 @@ export const PARTS = [
         "price": 213,
         "url": "https://www.amazon.com/dp/B09GYHXDHH?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458312670921379011556632",
+        "name": "Intel Core i5-12600K - Core i5 12th Gen Alder Lake 10-Core (6P+4E) 3.7 GHz LGA 1700 125W Intel UHD Graphics 770 Desktop Processor - BX8071512600K",
+        "price": 219.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312670921379011556632&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-12th-gen-core-i5-12600k-alder-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118347%3Fitem%3D9SIA2W0GEU4684",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-347-05.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "discount": 14,
@@ -5497,7 +5508,8 @@ export const PARTS = [
     "bench": 43,
     "baseClock": 2100,
     "memType": "DDR4",
-    "igpu": true
+    "igpu": true,
+    "bundle": true
   },
   {
     "id": 10187,
@@ -5755,6 +5767,17 @@ export const PARTS = [
         "price": 455,
         "url": "https://www.amazon.com/dp/B086ML4XSD?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458314077028104486115908",
+        "name": "Intel Core i9-10900 - Core i9 10th Gen Comet Lake 10-Core 2.8 GHz LGA 1200 65W Intel UHD Graphics 630 Desktop CPU Processor - BX8070110900",
+        "price": 409.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314077028104486115908&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-10th-gen-core-i9-10900-comet-lake-lga-1200-desktop-cpu-processor%2Fp%2FN82E16819118125%3Fitem%3D9SIAM3PKSB2665",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-125-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "socket": "LGA1200",
@@ -5764,7 +5787,9 @@ export const PARTS = [
     "tdp": 65,
     "bench": 27,
     "memType": "DDR4",
-    "igpu": true
+    "igpu": true,
+    "upc": "00735858448178",
+    "mpn": "BX8070110900"
   },
   {
     "id": 10197,
@@ -5831,6 +5856,17 @@ export const PARTS = [
         "price": 184.99,
         "url": "https://www.amazon.com/dp/B09139KNX2?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458314023894120120430652",
+        "name": "Intel Core i7-10700 - Core i7 10th Gen Comet Lake 8-Core 2.9 GHz LGA 1200 65W Intel UHD Graphics 630 Desktop CPU Processor - BX8070110700",
+        "price": 257.58,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314023894120120430652&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i7-10th-gen-core-i7-10700-comet-lake-lga-1200-desktop-cpu-processor%2Fp%2FN82E16819118126%3Fitem%3D9SIBZW0KFT4958",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-126-V09.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "socket": "LGA1200",
@@ -5842,7 +5878,9 @@ export const PARTS = [
     "used": true,
     "condition": "used",
     "memType": "DDR4",
-    "igpu": true
+    "igpu": true,
+    "upc": "00735858447744",
+    "mpn": "BX8070110700"
   },
   {
     "id": 10200,
@@ -6233,6 +6271,30 @@ export const PARTS = [
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B0DDZNZF76?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458310534690769170361383",
+        "name": "ASUS ROG STRIX X870E-E GAMING WIFI AMD AM5 X870 ATX motherboard 18+2+2 power stages, Dynamic OC Switcher, Core Flex, DDR5 AEMP, WiFi 7, 5x M.2,...",
+        "price": 499.99,
+        "saleprice": 409.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310534690769170361383&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-x870e-e-gaming-wifi-atx-motherboard-amd-x870e-am5%2Fp%2FN82E16813119682%3Fitem%3DN82E16813119682",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-682-16.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "445833059761663676043338",
+        "name": "Open Box - ASUS ROG STRIX X870E-E GAMING WIFI AMD AM5 X870 ATX motherboard 18+2+2 power stages, Dynamic OC Switcher, Core Flex, DDR5 AEMP, WiFi 7,...",
+        "price": 499.99,
+        "saleprice": 245.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833059761663676043338&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-x870e-e-gaming-wifi-atx-motherboard-amd-x870e-am5%2Fp%2FN82E16813119682R%3Fitem%3DN82E16813119682R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-682-16.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "value": 9,
@@ -6491,6 +6553,17 @@ export const PARTS = [
         "price": 130,
         "url": "https://www.amazon.com/dp/B0BHN7GGBQ?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458310066816337468323027",
+        "name": "ASUS TUF Gaming B650-Plus - Motherboard - ATX - Socket AM5 - AMD B650 Chipset - USB 3.1 Gen 2, USB 3.2 Gen 2, USB-C 3.2",
+        "price": 283.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310066816337468323027&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-90mb1by0-m0eay0-motherboards-amd%2Fp%2F2MG-000B-00681%3Fitem%3D9SIA4REKDZ4080",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD24022410B4ST41.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "value": 67,
@@ -11283,6 +11356,17 @@ export const PARTS = [
         "price": 165,
         "url": "https://www.amazon.com/dp/B0DDZY6HTW?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458313035930465842884871",
+        "name": "ASUS PRIME X870-P WIFI AMD AM5 X870 ATX motherboard 14+2+1 80A DrMOS power stages, DDR5, PCIe 5.0, PCIe 5.0 x16, Q-Release, 4x M.2, Wi-Fi 7,...",
+        "price": 199,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313035930465842884871&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-x870-p-wifi-atx-motherboard-amd-x870-am5%2Fp%2FN82E16813119687%3Fitem%3D9SIBYT0KTG0308",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-687-12.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "discount": 37,
@@ -12707,6 +12791,17 @@ export const PARTS = [
         "price": 69.99,
         "url": "https://www.amazon.com/dp/B0FBTKJMRJ?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458312429288811299201815",
+        "name": "MSI A520M-A PRO AM4 AMD A520 SATA 6Gb/s USB 3.0 Micro ATX AMD Motherboard and AMD Ryzen 5 5500 - Ryzen 5 5000 Series 6-Core Socket AM4 65W, AMD...",
+        "price": 540.77,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312429288811299201815&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-motherboards-amd%2Fp%2F2MG-000M-00571%3Fitem%3D9SIC5MUKUT5842",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVS2304240ET29LC8.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -12741,6 +12836,29 @@ export const PARTS = [
         "price": 99.99,
         "url": "https://www.amazon.com/dp/B0FH319HHD?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458314054993133607620104",
+        "name": "ASRock B850M-X R2.0 AM5 Micro-ATX Motherboard: AMD Ryzen 9000/8000/7000 Ready DDR5 8200+ OC PCIe 5.0 M.2 2.5G LAN USB 3.2 Type-C HDMI/DP",
+        "price": 110.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314054993133607620104&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850m-x-r2-0-micro-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813162234%3Fitem%3DN82E16813162234",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-234-02.png",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "445831930697274585235803",
+        "name": "Open Box - ASRock B850M-X R2.0 AM5 Micro-ATX Motherboard: AMD Ryzen 9000/8000/7000 Ready DDR5 8200+ OC PCIe 5.0 M.2 2.5G LAN USB 3.2 Type-C...",
+        "price": 110.99,
+        "saleprice": 83.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831930697274585235803&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850m-x-r2-0-micro-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813162234R%3Fitem%3DN82E16813162234R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-234-02.png",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -14164,6 +14282,17 @@ export const PARTS = [
         "price": 98.77,
         "url": "https://www.amazon.com/dp/B08QTYSJ14?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458317292796362840263125",
+        "name": "MSI MPG B550 GAMING PLUS AM4 ATX AMD Motherboard",
+        "price": 139.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317292796362840263125&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-b550-gaming-plus-atx-amd-motherboard-amd-b550-am4%2Fp%2FN82E16813144325%3Fitem%3DN82E16813144325",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-325-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "discount": 29,
@@ -14865,6 +14994,17 @@ export const PARTS = [
         "price": 109.21,
         "url": "https://www.amazon.com/dp/B09P3RV6ZC?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445834051297188648873747",
+        "name": "ASUS PRIME H610M-K D4 ARGB Intel H610 (LGA 1700) micro-ATX motherboard with DDR4, PCIe 4.0, M.2 slot, Realtek 1 Gb Ethernet,Two-Way AI Noise...",
+        "price": 84.71,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834051297188648873747&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1JW-000C-01AY8%3Fitem%3D9SIC4RPKRU2454",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BTK0S2508150NQD5U12.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "discount": 10,
@@ -15441,6 +15581,17 @@ export const PARTS = [
         "price": 129.92,
         "url": "https://www.amazon.com/dp/B0BVBXT6P1?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458313455867599260122246",
+        "name": "GIGABYTE H610M S2H DDR4 H610 Intel LGA 1700 Micro ATX Motherboard with DDR4, Single M.2, PCIe 4.0, USB 3.2 Gen1, Realtek GbE LAN",
+        "price": 147.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313455867599260122246&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-h610m-s2h-ddr4-micro-atx-intel-motherboard-intel-h610-lga-1700-dedicated-lga1700-mounting-bracket-is-required%2Fp%2FN82E16813145371%3Fitem%3D9SIAGBAK7F8237",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-371-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -16109,6 +16260,17 @@ export const PARTS = [
         "price": 137.42,
         "url": "https://www.amazon.com/dp/B0BNQFRNJL?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445837004164851653229426",
+        "name": "ASUS Prime B760M-K D4-CSM, Intel B760 LGA 1700 mATX motherboard PCIe 4.0, DDR4, Realtek 2.5Gb Ethernet, SATA 6 Gbps, USB 3.2 Gen 1, Aura Sync",
+        "price": 199.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837004164851653229426&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-intel-lga-1700%2Fp%2F1JW-000C-01A65%3Fitem%3D9SIBP4YKVZ5782",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2506200FFFA3CF.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -16126,7 +16288,8 @@ export const PARTS = [
     "ff": "mATX",
     "wifi": "None",
     "value": 43,
-    "bench": 61
+    "bench": 61,
+    "upc": "00192876911631"
   },
   {
     "id": 20231,
@@ -17052,6 +17215,17 @@ export const PARTS = [
         "price": 919.99,
         "url": "https://www.amazon.com/dp/B0DGWKQCKH?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458318351831254735053718",
+        "name": "ASUS ROG MAXIMUS Z890 EXTREME Intel Z890 LGA 1851 E-ATX motherboard, Advanced AI PC-ready, 24+2+1+2 stages, DDR5, WiFi7, 2.5G/10G LAN, PCIe 5.0...",
+        "price": 1011.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318351831254735053718&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-maximus-z890-extreme-extended-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813119689%3Fitem%3D9SIC6GNKW71682",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-689-25.png",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -17606,6 +17780,17 @@ export const PARTS = [
         "price": 274.7,
         "url": "https://www.amazon.com/dp/B0D66D6GW9?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445837609205509310696761",
+        "name": "ASUS TUF Gaming Z890-PRO WiFi Motherboard & Intel Core Ultra 5 245K CPU Comb, Z890 LGA 1851 ATX,, Advanced AI PC-Ready, 16+1+2+1 Stages, DDR5,...",
+        "price": 719.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837609205509310696761&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-z890-pro-wifi-ultra-5-245k-motherboards-intel-intel-z890%2Fp%2F1JW-000C-01B95%3Fitem%3D9SIBP4YKU26046",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2603230NP9WKAD.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -17724,6 +17909,17 @@ export const PARTS = [
         "price": 935.55,
         "url": "https://www.amazon.com/dp/B0F8PSWNMV?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445838704951083358413783",
+        "name": "ASUS ROG CROSSHAIR X870E EXTREME Motherboard & AMD Ryzen 5 9600X CPU Combo, AMD AM5 E-ATX Gaming - 20+2+2 Power Stages, DDR5, PCIe 5.0, 5x M.2,...",
+        "price": 1859.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838704951083358413783&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-crosshair-x870e-extreme-r5-9600x-extended-atx-motherboards-amd-amd-x870e-am5%2Fp%2F2MG-000B-00867%3Fitem%3D9SIBP4YKU26842",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2603230SPZKK64.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -19969,6 +20165,30 @@ export const PARTS = [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0F3QD6QQL?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458311679203085760712763",
+        "name": "GIGABYTE H610M S2H V2 Motherboard, Supports 14th/13th/12th Gen Intel Core Processors (LGA 1700), mATX, DDR5, 1x M.2, PCIe 4.0, USB-C, HDMI, 2x...",
+        "price": 99.99,
+        "saleprice": 90.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311679203085760712763&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-h610m-s2h-v2-micro-atx-motherboard-intel-h610-lga-1700%2Fp%2FN82E16813145576%3Fitem%3DN82E16813145576",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-576-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "4458315829227798642213354",
+        "name": "Open Box - GIGABYTE H610M S2H V2 Motherboard, Supports 14th/13th/12th Gen Intel Core Processors (LGA 1700), mATX, DDR5, 1x M.2, PCIe 4.0, USB-C,...",
+        "price": 99.99,
+        "saleprice": 48.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315829227798642213354&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-h610m-s2h-v2-micro-atx-motherboard-intel-h610-lga-1700%2Fp%2FN82E16813145576R%3Fitem%3DN82E16813145576R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-576-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "discount": 10,
@@ -22526,6 +22746,18 @@ export const PARTS = [
         "price": 129.99,
         "url": "https://www.amazon.com/dp/B0BSYFV5NL?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458311689305419135439240",
+        "name": "GIGABYTE Z790 EAGLE AX LGA 1700 Intel Z790 ATX Motherboard with DDR5, M.2, PCIe 5.0, USB 3.2 Gen2X2 Type-C, Intel Wi-Fi 6E, 2.5GbE LAN, Q-Flash...",
+        "price": 209.99,
+        "saleprice": 159.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311689305419135439240&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z790-eagle-ax-atx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813145495%3Fitem%3DN82E16813145495",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-495-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -22644,6 +22876,30 @@ export const PARTS = [
         "price": 239.99,
         "url": "https://www.amazon.com/dp/B083WG3727?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445831781551566556976313",
+        "name": "GIGABYTE Z890M AORUS ELITE WIFI7 ICE Ultra Core (Series 2) LGA 1851, ATX, DDR5, 3x M.2, PCIe 5.0, Thunderbolt 4, WIFI7, 2.5GbE LAN, EZ-Latch",
+        "price": 239.99,
+        "saleprice": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831781551566556976313&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z890m-aorus-elite-wf7-ice-micro-atx-motherboards-intel-intel-z890-lga-1851%2Fp%2FN82E16813145532%3Fitem%3DN82E16813145532",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-532-05.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "4458316644876068195052663",
+        "name": "Open Box - GIGABYTE Z890M AORUS ELITE WIFI7 ICE Ultra Core (Series 2) LGA 1851, ATX, DDR5, 3x M.2, PCIe 5.0, Thunderbolt 4, WIFI7, 2.5GbE LAN,...",
+        "price": 239.99,
+        "saleprice": 144.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316644876068195052663&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z890m-aorus-elite-wf7-ice-micro-atx-motherboards-intel-intel-z890-lga-1851%2Fp%2FN82E16813145532R%3Fitem%3DN82E16813145532R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-532-05.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -23825,6 +24081,17 @@ export const PARTS = [
         "price": 219.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6528249&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6528249.p%3FskuId%3D6528249",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445838883097069734782334",
+        "name": "MSI MAG B650 TOMAHAWK WIFI AM5 AMD B650 SATA 6Gb/s DDR5 Ryzen 7000 ATX Motherboard",
+        "price": 364.8,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838883097069734782334&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-b650-tomahawk-wifi-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813144557%3Fitem%3D9SIAD6HKKM2425",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-557-08.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "socket": "AM5",
@@ -24204,6 +24471,17 @@ export const PARTS = [
         "price": 419.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601434&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601434.p%3FskuId%3D6601434",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458316822646012254123863",
+        "name": "ASUS ROG STRIX X870-F GAMING WIFI AMD X870 ATX motherboard AM5,four M.2 slots,2 USB4 ports,USB 10Gbps Type-C with PD 3.0 up to 30W,AI...",
+        "price": 645.21,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316822646012254123863&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-amd-am5%2Fp%2F2MG-000B-007N4%3Fitem%3D9SIC4RPKRU2500",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS25062805B3O317.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "socket": "AM5",
@@ -25555,6 +25833,17 @@ export const PARTS = [
         "price": 109.99,
         "url": "https://www.amazon.com/dp/B0CM2VZBDL?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445839497739530175839081",
+        "name": "MSI PRO B650M-A WIFI AM5 AMD B650 SATA 6Gb/s DDR5 Ryzen 7000 Micro ATX Motherboard",
+        "price": 167.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839497739530175839081&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-b650m-a-wifi-micro-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813144559%3Fitem%3D9SIC62VKWE8869",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-559-08.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "socket": "AM5",
@@ -25567,7 +25856,9 @@ export const PARTS = [
     "ff": "Micro ATX",
     "used": true,
     "condition": "used",
-    "bench": 65
+    "bench": 65,
+    "upc": "00824142301043",
+    "mpn": "PRO B650M-A WIFI"
   },
   {
     "id": 20501,
@@ -43854,6 +44145,17 @@ export const PARTS = [
         "price": 158.99,
         "url": "https://www.amazon.com/dp/B08FBGJ4KG?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458317893227226087102590",
+        "name": "Team T-Force Delta RGB 16GB (2 x 8GB) 288-Pin PC RAM DDR4 3600 (PC4 28800) Desktop Memory Model TF3D416G3600HC18JDC01",
+        "price": 225.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317893227226087102590&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-16gb-ddr4-3600-cas-latency-cl18-desktop-memory-black%2Fp%2FN82E16820331512%3Fitem%3D9SIA1K6GZ69708",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-512-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -44012,6 +44314,17 @@ export const PARTS = [
         "price": 212.99,
         "url": "https://www.amazon.com/dp/B0FYP6H9T8?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458314390942411782064481",
+        "name": "Timetec 32GB KIT (2x16GB) DDR4 3200MHz (PC4-3200AA) PC4-25600 SODIMM Laptop RAM 260-Pin 1.2V CL22 Non-ECC Unbuffered Memory Module for Laptop,...",
+        "price": 209.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314390942411782064481&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftimetec-32gb-ddr4-3200-cas-latency-cl22-memory%2Fp%2F0RM-006H-000F0%3Fitem%3D9SIA56XGRB7580",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A56XS2604280F9KCX30.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "discount": 7,
@@ -44034,7 +44347,8 @@ export const PARTS = [
     "height": 32,
     "form": "SODIMM",
     "color": "Black",
-    "ecc": true
+    "ecc": true,
+    "mpn": "76TT32NUS2R8-16GK2"
   },
   {
     "id": 40111,
@@ -57305,6 +57619,18 @@ export const PARTS = [
         "price": 95.99,
         "url": "https://www.amazon.com/dp/B0D4RCRNHG?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458311430099588652077933",
+        "name": "Patriot P320 M.2 2280 512GB PCI-Express 3.0 x4 Internal Solid State Drive (SSD) P320P512GM28",
+        "price": 99.99,
+        "saleprice": 89.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311430099588652077933&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-512gb-p320-nvme-1-3%2Fp%2FN82E16820225424%3Fitem%3DN82E16820225424",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-424-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -57713,6 +58039,17 @@ export const PARTS = [
         "price": 149.99,
         "url": "https://www.amazon.com/dp/B0BTDP6P7Y?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458316801426789661943349",
+        "name": "Patriot P400 Lite M.2 PCIe Gen 4 x4 1TB SSD, Solid State Drive - P400LP1KGM28H Up to 3,500MB/s",
+        "price": 154.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316801426789661943349&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-1tb-p400-lite-nvme-2-0%2Fp%2F3C6-00HW-000N0%3Fitem%3D3C6-00HW-000N0",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/3C6-00HW-000N2-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -59763,6 +60100,18 @@ export const PARTS = [
         "price": 164.99,
         "url": "https://www.amazon.com/dp/B0C9HGVJ11?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445836975972171745329388",
+        "name": "Patriot Memory Viper VP4300 Lite 1TB M.2 PCIe Gen4 x4 SSD. Compatible with PS5",
+        "price": 169.99,
+        "saleprice": 164.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836975972171745329388&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-1tb%2Fp%2F0D9-003W-000M3%3Fitem%3D0D9-003W-000M3",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AMB8D231016118F19AF.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.507Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -60880,6 +61229,17 @@ export const PARTS = [
         "price": 349.99,
         "url": "https://www.amazon.com/dp/B078211KBB?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458312097372677943806442",
+        "name": "Crucial MX500 1TB 3D NAND SATA 2.5 Inch Internal SSD, up to 560 MB/s - CT1000MX500SSD1",
+        "price": 236.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312097372677943806442&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-mx500-sata%2Fp%2FN82E16820156174%3Fitem%3D9SIC5YTKWA4851",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-174-V09.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -63243,6 +63603,18 @@ export const PARTS = [
         "price": 139.99,
         "url": "https://www.amazon.com/dp/B0DBX6BKJP?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445833292575230787406850",
+        "name": "Patriot P320 M.2 2280 1TB PCI-Express 3.0 x4 Internal Solid State Drive (SSD) P320P1TBM28",
+        "price": 179.99,
+        "saleprice": 139.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833292575230787406850&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-1tb-p320-nvme-1-3%2Fp%2FN82E16820225425%3Fitem%3DN82E16820225425",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-425-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -63282,6 +63654,17 @@ export const PARTS = [
         "price": 199.9,
         "url": "https://www.amazon.com/dp/B08T1TWQS9?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458318091077488864736346",
+        "name": "samsung 870 evo 250gb sata 2.5' internal solid state drive (ssd) (mz-77e250)",
+        "price": 199.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318091077488864736346&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-0009-00B06%3Fitem%3D9SIA12KJCD2141",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AJ7WD2107015Z8K5.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -63486,6 +63869,17 @@ export const PARTS = [
         "price": 219,
         "url": "https://www.amazon.com/dp/B01LNJBA50?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458312896542802541203696",
+        "name": "Seagate BarraCuda ST4000DM005 4TB 64MB Cache SATA 6.0Gb/s 3.5' Hard Drive Bare Drive",
+        "price": 205,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312896542802541203696&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-st4000dm005-4tb%2Fp%2FN82E16822179009%3Fitem%3D9SIAAEEDUF0019",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-009.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -64584,6 +64978,17 @@ export const PARTS = [
         "price": 465.99,
         "url": "https://www.amazon.com/dp/B0CBQ5CVN6?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445837279845059549399199",
+        "name": "Patriot Viper VP4300 Lite M.2 PCIe Gen 4 x4 4TB SSD, Solid State Drive - VP4300L4TBM28H Up to 7,400MB/s",
+        "price": 634.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837279845059549399199&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-4tb%2Fp%2F0D9-003W-000M2%3Fitem%3D9SIAMB8K247934",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AMB8D231016118F19AF.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -65856,6 +66261,17 @@ export const PARTS = [
         "price": 113.47,
         "url": "https://www.amazon.com/dp/B084GF686M?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445837933396096180349776",
+        "name": "Seagate Desktop HDD ST4000DM000 4TB 64MB Cache SATA 6.0Gb/s 3.5' Internal Hard Drive Bare Drive",
+        "price": 185,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837933396096180349776&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-desktop-hdd-st4000dm000-4tb%2Fp%2FN82E16822178338%3Fitem%3D9SIAAEE4TK6755",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-178-338-09.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -66275,6 +66691,17 @@ export const PARTS = [
         "price": 201,
         "url": "https://www.amazon.com/dp/B01LZDFMWQ?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445839037149839197860732",
+        "name": "Seagate IronWolf 6TB NAS Hard Drive 7200 RPM 128MB Cache SATA 6.0Gb/s 3.5' Internal Hard Drive ST6000VN0041",
+        "price": 379.45,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839037149839197860732&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-st6000vn0041-6tb%2Fp%2FN82E16822179004%3Fitem%3D9SIADU0K824056",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-004-S01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -66467,6 +66894,17 @@ export const PARTS = [
         "price": 73,
         "url": "https://www.amazon.com/dp/B01LX4E7FM?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "44583354055942166037947",
+        "name": "Seagate FireCuda Gaming SSHD 500GB SATA 6.0Gb/s 2.5' Notebooks / Laptops Internal Hard Drive ST500LX025",
+        "price": 74.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583354055942166037947&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-firecuda-500gb-st500lx025%2Fp%2FN82E16822179112%3Fitem%3D9SIBT5SKUP6550",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-112-S01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -69672,6 +70110,17 @@ export const PARTS = [
         "price": 459.99,
         "url": "https://www.amazon.com/dp/B08J8JLMFF?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458315687669110145586213",
+        "name": "Seagate Exos X16 ST16000NM003G 16TB 7200 RPM 256MB Cache SATA 6.0Gb/s 3.5' Hard Drives, 512E/4KN, SED",
+        "price": 624.45,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315687669110145586213&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-exos-x16-st16000nm003g-16tb%2Fp%2FN82E16822184978%3Fitem%3D9SIADU0KA70720",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-184-978-S01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "discount": 6,
@@ -71827,6 +72276,17 @@ export const PARTS = [
         "price": 669.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633571&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633571.p%3FskuId%3D6633571",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445835065964156360331761",
+        "name": "WD_BLACK SN8100 NVMe SSD - 2TB, With Heatsink, M.2 2280 PCI-Express 5.0 x4 Internal Solid State Drive (SSD) WDS200T1XHM-00CMT0",
+        "price": 619.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835065964156360331761&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-2tb-nvme%2Fp%2FN82E16820250282%3Fitem%3DN82E16820250282",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-282-13.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "cap": 2000,
@@ -71859,6 +72319,17 @@ export const PARTS = [
         "price": 1299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633572&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633572.p%3FskuId%3D6633572",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458317682160392008060574",
+        "name": "WD_BLACK SN8100 NVMe SSD - 4TB, With Heatsink, M.2 2280 PCI-Express 5.0 x4 Internal Solid State Drive (SSD) WDS400T1XHM-00CMT0",
+        "price": 1099.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317682160392008060574&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-4tb-nvme%2Fp%2FN82E16820250283%3Fitem%3DN82E16820250283",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-283-13.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "cap": 4000,
@@ -71891,6 +72362,17 @@ export const PARTS = [
         "price": 334.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633573&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633573.p%3FskuId%3D6633573",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "44583137238184879713989",
+        "name": "WD_BLACK SN8100 NVMe SSD - 1TB, With Heatsink, M.2 2280 PCI-Express 5.0 x4 Internal Solid State Drive (SSD) WDS100T1XHM-00CMT0",
+        "price": 309.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583137238184879713989&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-nvme%2Fp%2FN82E16820250281%3Fitem%3DN82E16820250281",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-281-12.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "cap": 1000,
@@ -82075,7 +82557,8 @@ export const PARTS = [
       240
     ],
     "bench": 63,
-    "upc": "00850059070178"
+    "upc": "00850059070178",
+    "bundle": false
   },
   {
     "id": 70029,
@@ -82124,7 +82607,8 @@ export const PARTS = [
     ],
     "color": "Black",
     "bench": 73,
-    "upc": "04710562741421"
+    "upc": "04710562741421",
+    "bundle": false
   },
   {
     "id": 70030,
@@ -83600,7 +84084,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 77
+    "bench": 77,
+    "bundle": false
   },
   {
     "id": 70056,
@@ -83845,7 +84330,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 77
+    "bench": 77,
+    "bundle": false
   },
   {
     "id": 70060,
@@ -83958,7 +84444,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 70
+    "bench": 70,
+    "bundle": false
   },
   {
     "id": 70062,
@@ -84294,7 +84781,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 53
+    "bench": 53,
+    "bundle": false
   },
   {
     "id": 70069,
@@ -84642,7 +85130,8 @@ export const PARTS = [
     "drive25": 4,
     "fans_inc": 3,
     "color": "Black",
-    "bench": 90
+    "bench": 90,
+    "bundle": false
   },
   {
     "id": 70075,
@@ -84756,7 +85245,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 77
+    "bench": 77,
+    "bundle": false
   },
   {
     "id": 70077,
@@ -85025,7 +85515,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 65
+    "bench": 65,
+    "bundle": false
   },
   {
     "id": 70082,
@@ -85253,7 +85744,8 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 3,
     "color": "Black",
-    "bench": 89
+    "bench": 89,
+    "bundle": false
   },
   {
     "id": 70086,
@@ -85416,7 +85908,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 79
+    "bench": 79,
+    "bundle": false
   },
   {
     "id": 70089,
@@ -85475,7 +85968,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 67
+    "bench": 67,
+    "bundle": false
   },
   {
     "id": 70090,
@@ -85755,7 +86249,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 51
+    "bench": 51,
+    "bundle": false
   },
   {
     "id": 70095,
@@ -86039,7 +86534,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 71
+    "bench": 71,
+    "bundle": false
   },
   {
     "id": 70100,
@@ -86088,7 +86584,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 64
+    "bench": 64,
+    "bundle": false
   },
   {
     "id": 70101,
@@ -86381,7 +86878,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 63
+    "bench": 63,
+    "bundle": false
   },
   {
     "id": 70106,
@@ -86710,7 +87208,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 63
+    "bench": 63,
+    "bundle": false
   },
   {
     "id": 70112,
@@ -86905,7 +87404,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 64
+    "bench": 64,
+    "bundle": false
   },
   {
     "id": 70116,
@@ -87158,7 +87658,8 @@ export const PARTS = [
     "drive25": 2,
     "drive35": 2,
     "color": "Black",
-    "bench": 74
+    "bench": 74,
+    "bundle": false
   },
   {
     "id": 70121,
@@ -87852,7 +88353,8 @@ export const PARTS = [
     "drive25": 2,
     "fans_inc": 3,
     "color": "Black",
-    "bench": 89
+    "bench": 89,
+    "bundle": false
   },
   {
     "id": 70134,
@@ -88344,7 +88846,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 93
+    "bench": 93,
+    "bundle": false
   },
   {
     "id": 70143,
@@ -88559,7 +89062,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 73
+    "bench": 73,
+    "bundle": false
   },
   {
     "id": 70147,
@@ -88667,7 +89171,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 90
+    "bench": 90,
+    "bundle": false
   },
   {
     "id": 70149,
@@ -88772,7 +89277,8 @@ export const PARTS = [
     ],
     "color": "Black",
     "bench": 77,
-    "upc": "04260052188385"
+    "upc": "04260052188385",
+    "bundle": false
   },
   {
     "id": 70151,
@@ -88974,7 +89480,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 90
+    "bench": 90,
+    "bundle": false
   },
   {
     "id": 70155,
@@ -89024,7 +89531,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 82
+    "bench": 82,
+    "bundle": false
   },
   {
     "id": 70156,
@@ -89072,7 +89580,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 54
+    "bench": 54,
+    "bundle": false
   },
   {
     "id": 70157,
@@ -89395,7 +89904,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 64
+    "bench": 64,
+    "bundle": false
   },
   {
     "id": 70163,
@@ -89781,7 +90291,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 64
+    "bench": 64,
+    "bundle": false
   },
   {
     "id": 70170,
@@ -89900,7 +90411,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 90
+    "bench": 90,
+    "bundle": false
   },
   {
     "id": 70172,
@@ -90359,7 +90871,8 @@ export const PARTS = [
       120
     ],
     "color": "Black",
-    "bench": 24
+    "bench": 24,
+    "bundle": false
   },
   {
     "id": 70181,
@@ -90564,7 +91077,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 60
+    "bench": 60,
+    "bundle": false
   },
   {
     "id": 70185,
@@ -90859,7 +91373,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 91
+    "bench": 91,
+    "bundle": false
   },
   {
     "id": 70191,
@@ -90907,7 +91422,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 61
+    "bench": 61,
+    "bundle": false
   },
   {
     "id": 70192,
@@ -91424,7 +91940,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 64
+    "bench": 64,
+    "bundle": false
   },
   {
     "id": 70202,
@@ -91522,7 +92039,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 83
+    "bench": 83,
+    "bundle": false
   },
   {
     "id": 70204,
@@ -91736,7 +92254,8 @@ export const PARTS = [
       240
     ],
     "color": "Wood",
-    "bench": 69
+    "bench": 69,
+    "bundle": false
   },
   {
     "id": 70208,
@@ -91794,7 +92313,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 58
+    "bench": 58,
+    "bundle": false
   },
   {
     "id": 70209,
@@ -91837,7 +92357,8 @@ export const PARTS = [
     "rads": [
       120
     ],
-    "bench": 27
+    "bench": 27,
+    "bundle": false
   },
   {
     "id": 70210,
@@ -91986,7 +92507,8 @@ export const PARTS = [
     "drive25": 2,
     "drive35": 2,
     "color": "Black",
-    "bench": 86
+    "bench": 86,
+    "bundle": false
   },
   {
     "id": 70213,
@@ -92390,7 +92912,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 66
+    "bench": 66,
+    "bundle": false
   },
   {
     "id": 70221,
@@ -92656,7 +93179,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 58
+    "bench": 58,
+    "bundle": false
   },
   {
     "id": 70226,
@@ -92804,7 +93328,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 80
+    "bench": 80,
+    "bundle": false
   },
   {
     "id": 70229,
@@ -93008,7 +93533,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 62
+    "bench": 62,
+    "bundle": false
   },
   {
     "id": 70233,
@@ -93542,7 +94068,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 51
+    "bench": 51,
+    "bundle": false
   },
   {
     "id": 70243,
@@ -93649,7 +94176,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 59
+    "bench": 59,
+    "bundle": false
   },
   {
     "id": 70245,
@@ -93697,7 +94225,8 @@ export const PARTS = [
       240
     ],
     "color": "Black",
-    "bench": 59
+    "bench": 59,
+    "bundle": false
   },
   {
     "id": 70246,
@@ -93908,7 +94437,8 @@ export const PARTS = [
       240
     ],
     "bench": 60,
-    "upc": "00846813003254"
+    "upc": "00846813003254",
+    "bundle": false
   },
   {
     "id": 70250,
@@ -94586,7 +95116,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 56
+    "bench": 56,
+    "bundle": false
   },
   {
     "id": 70263,
@@ -94669,7 +95200,8 @@ export const PARTS = [
     "drive35": 6,
     "drive25": 3,
     "fans_inc": 4,
-    "bench": 98
+    "bench": 98,
+    "bundle": false
   },
   {
     "id": 70265,
@@ -94720,7 +95252,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 71
+    "bench": 71,
+    "bundle": false
   },
   {
     "id": 70266,
@@ -94759,7 +95292,8 @@ export const PARTS = [
     "drive35": 2,
     "drive25": 2,
     "fans_inc": 3,
-    "bench": 72
+    "bench": 72,
+    "bundle": false
   },
   {
     "id": 70267,
@@ -94810,7 +95344,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 77
+    "bench": 77,
+    "bundle": false
   },
   {
     "id": 70268,
@@ -95163,7 +95698,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 90
+    "bench": 90,
+    "bundle": false
   },
   {
     "id": 70275,
@@ -95215,7 +95751,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 87
+    "bench": 87,
+    "bundle": false
   },
   {
     "id": 70276,
@@ -95254,7 +95791,8 @@ export const PARTS = [
     "fans_inc": 3,
     "drive25": 2,
     "drive35": 2,
-    "bench": 64
+    "bench": 64,
+    "bundle": false
   },
   {
     "id": 70277,
@@ -95293,7 +95831,8 @@ export const PARTS = [
     "fans_inc": 3,
     "drive25": 2,
     "drive35": 2,
-    "bench": 66
+    "bench": 66,
+    "bundle": false
   },
   {
     "id": 70278,
@@ -95332,7 +95871,8 @@ export const PARTS = [
     "fans_inc": 3,
     "drive25": 2,
     "drive35": 2,
-    "bench": 66
+    "bench": 66,
+    "bundle": false
   },
   {
     "id": 70279,
@@ -95838,7 +96378,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 80
+    "bench": 80,
+    "bundle": false
   },
   {
     "id": 70289,
@@ -95890,7 +96431,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 87
+    "bench": 87,
+    "bundle": false
   },
   {
     "id": 70290,
@@ -95940,7 +96482,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 72
+    "bench": 72,
+    "bundle": false
   },
   {
     "id": 70291,
@@ -96493,7 +97036,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 70
+    "bench": 70,
+    "bundle": false
   },
   {
     "id": 70302,
@@ -96534,7 +97078,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 70
+    "bench": 70,
+    "bundle": false
   },
   {
     "id": 70303,
@@ -96587,7 +97132,8 @@ export const PARTS = [
     "drive35": 2,
     "drive25": 4,
     "fans_inc": 3,
-    "bench": 84
+    "bench": 84,
+    "bundle": false
   },
   {
     "id": 70304,
@@ -96639,7 +97185,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 87
+    "bench": 87,
+    "bundle": false
   },
   {
     "id": 70305,
@@ -96690,7 +97237,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 68
+    "bench": 68,
+    "bundle": false
   },
   {
     "id": 70306,
@@ -96741,7 +97289,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 72
+    "bench": 72,
+    "bundle": false
   },
   {
     "id": 70307,
@@ -96882,7 +97431,8 @@ export const PARTS = [
     "rads": [
       120
     ],
-    "bench": 35
+    "bench": 35,
+    "bundle": false
   },
   {
     "id": 70310,
@@ -96922,7 +97472,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 77
+    "bench": 77,
+    "bundle": false
   },
   {
     "id": 70311,
@@ -97072,7 +97623,8 @@ export const PARTS = [
     "rads": [
       120
     ],
-    "bench": 35
+    "bench": 35,
+    "bundle": false
   },
   {
     "id": 70314,
@@ -97120,7 +97672,8 @@ export const PARTS = [
     "rads": [
       120
     ],
-    "bench": 35
+    "bench": 35,
+    "bundle": false
   },
   {
     "id": 70315,
@@ -97168,7 +97721,8 @@ export const PARTS = [
     "rads": [
       120
     ],
-    "bench": 31
+    "bench": 31,
+    "bundle": false
   },
   {
     "id": 70316,
@@ -97217,7 +97771,8 @@ export const PARTS = [
     "rads": [
       120
     ],
-    "bench": 35
+    "bench": 35,
+    "bundle": false
   },
   {
     "id": 70318,
@@ -97257,7 +97812,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 63
+    "bench": 63,
+    "bundle": false
   },
   {
     "id": 70319,
@@ -97308,7 +97864,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 64
+    "bench": 64,
+    "bundle": false
   },
   {
     "id": 70320,
@@ -97356,7 +97913,8 @@ export const PARTS = [
     "rads": [
       120
     ],
-    "bench": 35
+    "bench": 35,
+    "bundle": false
   },
   {
     "id": 70322,
@@ -97407,7 +97965,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 78
+    "bench": 78,
+    "bundle": false
   },
   {
     "id": 70323,
@@ -97458,7 +98017,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 62
+    "bench": 62,
+    "bundle": false
   },
   {
     "id": 70324,
@@ -97688,7 +98248,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 80
+    "bench": 80,
+    "bundle": false
   },
   {
     "id": 70329,
@@ -97883,7 +98444,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 70
+    "bench": 70,
+    "bundle": false
   },
   {
     "id": 70333,
@@ -97922,7 +98484,8 @@ export const PARTS = [
     "fans_inc": 3,
     "drive25": 2,
     "drive35": 2,
-    "bench": 76
+    "bench": 76,
+    "bundle": false
   },
   {
     "id": 70334,
@@ -97974,7 +98537,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 68
+    "bench": 68,
+    "bundle": false
   },
   {
     "id": 70335,
@@ -98024,7 +98588,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 100
+    "bench": 100,
+    "bundle": false
   },
   {
     "id": 70336,
@@ -98074,7 +98639,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 76
+    "bench": 76,
+    "bundle": false
   },
   {
     "id": 70337,
@@ -98176,7 +98742,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 78
+    "bench": 78,
+    "bundle": false
   },
   {
     "id": 70339,
@@ -98276,7 +98843,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 96
+    "bench": 96,
+    "bundle": false
   },
   {
     "id": 70341,
@@ -98377,7 +98945,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 68
+    "bench": 68,
+    "bundle": false
   },
   {
     "id": 70343,
@@ -98427,7 +98996,8 @@ export const PARTS = [
       280,
       240
     ],
-    "bench": 93
+    "bench": 93,
+    "bundle": false
   },
   {
     "id": 80000,
@@ -98624,6 +99194,17 @@ export const PARTS = [
         "price": 50,
         "url": "https://www.amazon.com/dp/B0BNL8ZM1T?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458316172413943425895268",
+        "name": "Noctua NH-L9a-AM5, Premium Edition CPU Cooler, Applicable To The AM5 Platform",
+        "price": 73.8,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316172413943425895268&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9a-am5%2Fp%2F13C-0005-00321%3Fitem%3D9SIAZTUKFH9280",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4RES2303070JUEW962.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "fans_inc": 1,
@@ -100733,6 +101314,17 @@ export const PARTS = [
         "price": 79.95,
         "url": "https://www.amazon.com/dp/B0CKVZ2NZ1?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "44583878096547179612925",
+        "name": "Noctua NH-L9x65, Premium Low-Profile CPU Cooler (65mm, Brown)",
+        "price": 80.5,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583878096547179612925&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9x65%2Fp%2FN82E16835608071%3Fitem%3D9SIAZTUKBA4151",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-071-V02.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -100751,7 +101343,9 @@ export const PARTS = [
     "rgb": false,
     "value": 0,
     "bench": 36,
-    "cfm": 35
+    "cfm": 35,
+    "upc": "00842431012517",
+    "mpn": "NH-L9x65"
   },
   {
     "id": 80055,
@@ -102987,6 +103581,17 @@ export const PARTS = [
         "price": 59.95,
         "url": "https://www.amazon.com/dp/B09HCHYMJM?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445833257861844816915337",
+        "name": "Noctua NH-L9i-17xx, Premium Low-Profile CPU Cooler for Intel LGA1700 and LGA1851 (Brown)",
+        "price": 59.2,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833257861844816915337&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002Z7%3Fitem%3D9SIAZTUKBT0022",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2304200R60SM67.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -106555,6 +107160,17 @@ export const PARTS = [
         "price": 59.99,
         "url": "https://www.amazon.com/dp/B0DM4CBKFY?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458313339822143013704300",
+        "name": "MSI MAG CoreLiquid 240R V2 AIO Liquid CPU Cooler, 240mm Radiator, Dual PWM Fans, ARGB Lighting Controlled by Software - LGA 1700/1851 / AM5/AM4...",
+        "price": 137.29,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313339822143013704300&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-liquid-cooling-system-r-series-v2-radiator-size-272-00-x-120-00-x-32-00-mm%2Fp%2FN82E16835846026%3Fitem%3D9SIA4REJT84026",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-026-08.png",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "discount": 29,
@@ -106578,7 +107194,8 @@ export const PARTS = [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
     "height": 52,
-    "cfm": 120
+    "cfm": 120,
+    "mpn": "MAG CoreLiquid240RV2"
   },
   {
     "id": 80184,
@@ -110827,7 +111444,8 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 28,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "bundle": false
   },
   {
     "id": 80286,
@@ -110862,7 +111480,8 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 46,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "bundle": false
   },
   {
     "id": 80287,
@@ -110897,7 +111516,8 @@ export const PARTS = [
     "tdp_rating_est": true,
     "bench": 46,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "bundle": false
   },
   {
     "id": 80288,
@@ -124872,6 +125492,17 @@ export const PARTS = [
         "price": 369,
         "url": "https://www.amazon.com/dp/B08LCMYT54?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458317274027196300632875",
+        "name": "Asus TUF VG34VQL1B 34 Curved 3440 x 1440 WQHD 165 Hz 1 ms LCD Gaming Monitor, 2-Pack Bundle with Extreme Low Motion Blur, Eye Care, FreeSync...",
+        "price": 1349,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317274027196300632875&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-001P-00N75%3Fitem%3D9SIAA65K5V6766",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V178D2402280KYSEH94.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -126052,6 +126683,18 @@ export const PARTS = [
         "price": 299.99,
         "url": "https://www.amazon.com/dp/B0D5QFL6ZL?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458316910629839945459074",
+        "name": "KTC 27 Inch 240Hz Curved Gaming Monitor, 2K QHD 2560x1440P Computer Monitor with 1000R, 2500:1 Contrast, Adaptive Sync, DP 1.4, HDMI 2.0, VESA,...",
+        "price": 269.99,
+        "saleprice": 209.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316910629839945459074&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-007C-00052%3Fitem%3D9SIBK6TKTN9742",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BK6TS2603120LGVJ532.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -127490,6 +128133,18 @@ export const PARTS = [
         "price": 139.86,
         "url": "https://www.amazon.com/dp/B0FSRVLVY2?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458310681096160839858713",
+        "name": "LGLO 27 Inch 4K UHD (3840x2160) Monitor, Dual Mode 4K@60Hz/2K@144Hz, IPS Panel, Borderless Design, HDR400, 99% sRGB, Work & Gaming Monitor for...",
+        "price": 319.99,
+        "saleprice": 157.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310681096160839858713&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-006X-00017%3Fitem%3D9SIBAU5KH18261",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BAU5S25052606X07VF2.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -136736,6 +137391,17 @@ export const PARTS = [
         "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673821&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6673821.p%3FskuId%3D6673821",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458318086732426520087430",
+        "name": "MSI 23.8' FHD (1920x1080) HDMI VGA 144Hz 1ms Adaptive-Sync IPS Gaming Office Monitor PRO MP243L E14W",
+        "price": 152.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318086732426520087430&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-00B1-001D6%3Fitem%3D9SIA8X5KP75031",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S25110509LHYL52.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "screenSize": 24,
@@ -140822,13 +141488,26 @@ export const PARTS = [
         "url": "https://www.amazon.com/Audio-Technica-ATH-M30x-Professional-Monitor-Headphones/dp/B00HVLUQW8/ref=sr_1_14?crid=BX0L4LEA8PCY&dib=eyJ2IjoiMSJ9.sHW_aInsNKx0gs5U3m6kcovrABKWohtxmUAm7wkCpuhUw5auNE6-C-CspxddVcgjNK5ObYesAiRow9tgytVWpvb0oiQDQXz1E9B3MqePay9f3TL967pvIpjIHoZY2q4JQ-BLdW2DsAx6IXt_-4ek99JwnZh8dq_ULBE7n1JcRPJ9L6YU_x5v9yOLfrW1Kilvn8Tnc8VgOuUfkDyDKyKtzAB09HwrDDF08EG0FLl_6CM.hEeQidgB95L6qCUNKjT3fozBKQFlraCke_Q7A-rdybU&dib_tag=se&keywords=Audio-Technica+gaming&qid=1777130635&sprefix=AudioTechnica%2Bgaming%2Caps%2C270&sr=8-14&tag=tiereduptech-20",
         "price": 79,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445838227136963703888298",
+        "name": "Audio-Technica ATH-M30x Professional Studio Monitor Headphones, Headphone stand",
+        "price": 90.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838227136963703888298&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0TH-0045-008Y4%3Fitem%3D9SIABMTKJH9236",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABMTD250726029E2I8F.jpg",
+        "inStock": true,
+        "matchedAt": "2026-05-15T02:34:16.508Z",
+        "matchMethod": "remediate:strict-token",
+        "matchScore": 1
       }
     },
     "hsType": "Wired",
     "driver": 40,
     "mic": false,
     "anc": false,
-    "bench": 58
+    "bench": 58,
+    "upc": "00094148743127",
+    "mpn": "AG2WAUDPATHM30X1"
   },
   {
     "id": 100044,
