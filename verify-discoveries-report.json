@@ -1,0 +1,346 @@
+{
+  "generatedAt": "2026-05-15T17:22:06.511Z",
+  "stats": {
+    "verified": 55,
+    "unmatched": 0,
+    "missing": 0,
+    "noPrice": 1
+  },
+  "log": [
+    {
+      "id": 100374,
+      "status": "verified",
+      "score": "1.00",
+      "price": 15.99
+    },
+    {
+      "id": 100456,
+      "status": "verified",
+      "score": "1.00",
+      "price": 79.99
+    },
+    {
+      "id": 100571,
+      "status": "verified",
+      "score": "1.00",
+      "price": 13.98
+    },
+    {
+      "id": 100572,
+      "status": "verified",
+      "score": "1.00",
+      "price": 7.99
+    },
+    {
+      "id": 100573,
+      "status": "verified",
+      "score": "1.00",
+      "price": 13.99
+    },
+    {
+      "id": 100877,
+      "status": "verified",
+      "score": "1.00",
+      "price": 19.99
+    },
+    {
+      "id": 100879,
+      "status": "verified",
+      "score": "1.00",
+      "price": 59.99
+    },
+    {
+      "id": 101213,
+      "status": "verified",
+      "score": "1.00",
+      "price": 99.31
+    },
+    {
+      "id": 101276,
+      "status": "verified",
+      "score": "1.00",
+      "price": 21.9
+    },
+    {
+      "id": 101283,
+      "status": "verified",
+      "score": "1.00",
+      "price": 21.9
+    },
+    {
+      "id": 101286,
+      "status": "verified",
+      "score": "1.00",
+      "price": 17.9
+    },
+    {
+      "id": 101356,
+      "status": "verified",
+      "score": "1.00",
+      "price": 8.99
+    },
+    {
+      "id": 101429,
+      "status": "verified",
+      "score": "1.00",
+      "price": 21.9
+    },
+    {
+      "id": 101430,
+      "status": "verified",
+      "score": "1.00",
+      "price": 15.9
+    },
+    {
+      "id": 101450,
+      "status": "verified",
+      "score": "1.00",
+      "price": 99
+    },
+    {
+      "id": 101458,
+      "status": "verified",
+      "score": "1.00",
+      "price": 60
+    },
+    {
+      "id": 101462,
+      "status": "verified",
+      "score": "1.00",
+      "price": 68.2
+    },
+    {
+      "id": 101463,
+      "status": "verified",
+      "score": "1.00",
+      "price": 33.49
+    },
+    {
+      "id": 101475,
+      "status": "verified",
+      "score": "1.00",
+      "price": 119.99
+    },
+    {
+      "id": 101476,
+      "status": "verified",
+      "score": "1.00",
+      "price": 74.99
+    },
+    {
+      "id": 101479,
+      "status": "verified",
+      "score": "1.00",
+      "price": 79.99
+    },
+    {
+      "id": 101484,
+      "status": "verified",
+      "score": "1.00",
+      "price": 129.99
+    },
+    {
+      "id": 101511,
+      "status": "verified",
+      "score": "1.00",
+      "price": 54.99
+    },
+    {
+      "id": 101874,
+      "status": "verified",
+      "score": "1.00",
+      "price": 9.99
+    },
+    {
+      "id": 101207,
+      "status": "verified",
+      "score": "1.00",
+      "price": 69.9
+    },
+    {
+      "id": 101281,
+      "status": "verified",
+      "score": "1.00",
+      "price": 21.9
+    },
+    {
+      "id": 101282,
+      "status": "verified",
+      "score": "1.00",
+      "price": 15.9
+    },
+    {
+      "id": 101487,
+      "status": "verified",
+      "score": "1.00",
+      "price": 46.99
+    },
+    {
+      "id": 101514,
+      "status": "verified",
+      "score": "1.00",
+      "price": 64.99
+    },
+    {
+      "id": 101410,
+      "status": "verified",
+      "score": "1.00",
+      "price": 7.99
+    },
+    {
+      "id": 101424,
+      "status": "verified",
+      "score": "1.00",
+      "price": 21.9
+    },
+    {
+      "id": 101465,
+      "status": "verified",
+      "score": "1.00",
+      "price": 49.99
+    },
+    {
+      "id": 101495,
+      "status": "verified",
+      "score": "1.00",
+      "price": 99.99
+    },
+    {
+      "id": 101444,
+      "status": "verified",
+      "score": "1.00",
+      "price": 29.99
+    },
+    {
+      "id": 101447,
+      "status": "verified",
+      "score": "1.00",
+      "price": 94.9
+    },
+    {
+      "id": 101456,
+      "status": "verified",
+      "score": "1.00",
+      "price": 34.44
+    },
+    {
+      "id": 101459,
+      "status": "verified",
+      "score": "1.00",
+      "price": 97.64
+    },
+    {
+      "id": 101464,
+      "status": "verified",
+      "score": "1.00",
+      "price": 79.99
+    },
+    {
+      "id": 101921,
+      "status": "verified",
+      "score": "1.00",
+      "price": 7.99
+    },
+    {
+      "id": 100881,
+      "status": "verified",
+      "score": "1.00",
+      "price": 99.99
+    },
+    {
+      "id": 101211,
+      "status": "verified",
+      "score": "1.00",
+      "price": 105.45
+    },
+    {
+      "id": 101359,
+      "status": "verified",
+      "score": "1.00",
+      "price": 105.45
+    },
+    {
+      "id": 101208,
+      "status": "noPrice",
+      "name": "PCIe Cable for EVGA Power Supply, PCIe 8 Pin Male to 6+2 Pin"
+    },
+    {
+      "id": 101467,
+      "status": "verified",
+      "score": "1.00",
+      "price": 42.95
+    },
+    {
+      "id": 100880,
+      "status": "verified",
+      "score": "1.00",
+      "price": 153.23
+    },
+    {
+      "id": 101355,
+      "status": "verified",
+      "score": "1.00",
+      "price": 69.9
+    },
+    {
+      "id": 101434,
+      "status": "verified",
+      "score": "1.00",
+      "price": 17.9
+    },
+    {
+      "id": 101431,
+      "status": "verified",
+      "score": "1.00",
+      "price": 21.9
+    },
+    {
+      "id": 101607,
+      "status": "verified",
+      "score": "1.00",
+      "price": 109.95
+    },
+    {
+      "id": 101887,
+      "status": "verified",
+      "score": "1.00",
+      "price": 69.9
+    },
+    {
+      "id": 101888,
+      "status": "verified",
+      "score": "1.00",
+      "price": 8.99
+    },
+    {
+      "id": 101891,
+      "status": "verified",
+      "score": "1.00",
+      "price": 105.45
+    },
+    {
+      "id": 101262,
+      "status": "verified",
+      "score": "1.00",
+      "price": 7.99
+    },
+    {
+      "id": 101443,
+      "status": "verified",
+      "score": "1.00",
+      "price": 119.99
+    },
+    {
+      "id": 101893,
+      "status": "verified",
+      "score": "1.00",
+      "price": 99.31
+    },
+    {
+      "id": 101361,
+      "status": "verified",
+      "score": "1.00",
+      "price": 99.31
+    }
+  ]
+}
