@@ -52888,7 +52888,9 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": true,
-    "value": 36
+    "value": 36,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50042,
@@ -52995,7 +52997,9 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": true,
-    "value": 18
+    "value": 18,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50044,
@@ -53044,7 +53048,10 @@ export const PARTS = [
     "seq_w": 5000,
     "nand": "TLC",
     "dram": false,
-    "value": 57
+    "value": 57,
+    "read": 6000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50045,
@@ -53093,7 +53100,9 @@ export const PARTS = [
     "seq_w": 6000,
     "nand": "QLC",
     "dram": false,
-    "value": 45
+    "value": 45,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50046,
@@ -53190,7 +53199,9 @@ export const PARTS = [
     "seq_w": 6000,
     "nand": "QLC",
     "dram": false,
-    "value": 60
+    "value": 60,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50048,
@@ -53240,7 +53251,10 @@ export const PARTS = [
     "seq_w": 5000,
     "nand": "TLC",
     "dram": false,
-    "value": 84
+    "value": 84,
+    "read": 5000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50049,
@@ -53296,7 +53310,9 @@ export const PARTS = [
     "seq_w": 13400,
     "nand": "TLC",
     "dram": true,
-    "value": 75
+    "value": 75,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50050,
@@ -53345,7 +53361,8 @@ export const PARTS = [
     "seq_w": 13800,
     "nand": "TLC",
     "dram": true,
-    "value": 73
+    "value": 73,
+    "pcieGen": 5
   },
   {
     "id": 50051,
@@ -53383,7 +53400,10 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 68
+    "value": 68,
+    "read": 7350,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50052,
@@ -53538,7 +53558,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 0,
-    "bench": 50
+    "bench": 50,
+    "formFactor": "2.5\""
   },
   {
     "id": 50055,
@@ -53593,7 +53614,9 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": true,
-    "value": 11
+    "value": 11,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50056,
@@ -53739,7 +53762,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 39
+    "value": 39,
+    "formFactor": "M.2"
   },
   {
     "id": 50059,
@@ -53883,7 +53907,9 @@ export const PARTS = [
     "nand": "QLC",
     "dram": false,
     "value": 88,
-    "bench": 74
+    "bench": 74,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50062,
@@ -53931,7 +53957,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 4,
-    "bench": 45
+    "bench": 45,
+    "formFactor": "2.5\""
   },
   {
     "id": 50063,
@@ -53976,7 +54003,8 @@ export const PARTS = [
     "seq_w": 1050,
     "nand": "TLC",
     "value": 6,
-    "bench": 47
+    "bench": 47,
+    "read": 1050
   },
   {
     "id": 50064,
@@ -54014,7 +54042,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 92,
-    "bench": 57
+    "bench": 57,
+    "read": 3000,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50065,
@@ -54052,7 +54083,8 @@ export const PARTS = [
     "seq_w": 430,
     "nand": "TLC",
     "dram": false,
-    "value": 15
+    "value": 15,
+    "formFactor": "2.5\""
   },
   {
     "id": 50066,
@@ -54103,7 +54135,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "rpm": 7200,
-    "value": 30
+    "value": 30,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50067,
@@ -54158,7 +54191,9 @@ export const PARTS = [
     "seq_w": 6300,
     "nand": "TLC",
     "dram": false,
-    "value": 16
+    "value": 16,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50068,
@@ -54207,7 +54242,11 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 37,
-    "bench": 82
+    "bench": 82,
+    "read": 7400,
+    "pcieGen": 4,
+    "formFactor": "M.2",
+    "dramCache": true
   },
   {
     "id": 50069,
@@ -54337,7 +54376,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 40,
-    "bench": 37
+    "bench": 37,
+    "read": 2400,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50072,
@@ -54386,7 +54428,10 @@ export const PARTS = [
     "seq_w": 6300,
     "nand": "TLC",
     "dram": false,
-    "value": 37
+    "value": 37,
+    "read": 7400,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50073,
@@ -54486,7 +54531,9 @@ export const PARTS = [
     "seq_w": 13400,
     "nand": "TLC",
     "dram": true,
-    "value": 51
+    "value": 51,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50075,
@@ -54521,7 +54568,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 5400,
     "value": 48,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50076,
@@ -54560,7 +54608,8 @@ export const PARTS = [
     "seq_w": 13800,
     "nand": "TLC",
     "dram": true,
-    "value": 36
+    "value": 36,
+    "pcieGen": 5
   },
   {
     "id": 50077,
@@ -54599,7 +54648,10 @@ export const PARTS = [
     "seq_w": 6300,
     "nand": "TLC",
     "dram": false,
-    "value": 58
+    "value": 58,
+    "read": 7400,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50078,
@@ -54697,7 +54749,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 49,
-    "bench": 37
+    "bench": 37,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50080,
@@ -54747,7 +54801,9 @@ export const PARTS = [
     "seq_w": 1700,
     "nand": "QLC",
     "dram": false,
-    "value": 54
+    "value": 54,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50081,
@@ -54786,7 +54842,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 21,
-    "bench": 37
+    "bench": 37,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50082,
@@ -54875,7 +54933,9 @@ export const PARTS = [
     "seq_w": 13400,
     "nand": "TLC",
     "dram": true,
-    "value": 28
+    "value": 28,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50084,
@@ -54914,7 +54974,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 48,
-    "bench": 67
+    "bench": 67,
+    "formFactor": "M.2"
   },
   {
     "id": 50085,
@@ -54962,7 +55023,10 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 47
+    "value": 47,
+    "read": 4800,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50086,
@@ -55010,7 +55074,8 @@ export const PARTS = [
     "dram": false,
     "value": 8,
     "bench": 45,
-    "upc": "06975340374378"
+    "upc": "06975340374378",
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50087,
@@ -55046,7 +55111,8 @@ export const PARTS = [
     "seq_w": 500,
     "seq_w_inferred": true,
     "value": 9,
-    "bench": 30
+    "bench": 30,
+    "formFactor": "2.5\""
   },
   {
     "id": 50088,
@@ -55084,7 +55150,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 100,
-    "bench": 80
+    "bench": 80,
+    "read": 7100,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50089,
@@ -55135,7 +55204,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 16
+    "value": 16,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50090,
@@ -55236,7 +55306,9 @@ export const PARTS = [
     "seq_w": 1700,
     "nand": "QLC",
     "dram": false,
-    "value": 34
+    "value": 34,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50092,
@@ -55286,7 +55358,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 22,
-    "bench": 88
+    "bench": 88,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50093,
@@ -55325,7 +55399,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 31,
-    "bench": 37
+    "bench": 37,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50094,
@@ -55374,7 +55450,9 @@ export const PARTS = [
     "seq_w": 6000,
     "nand": "QLC",
     "dram": false,
-    "value": 37
+    "value": 37,
+    "pcieGen": 4,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 50095,
@@ -55419,7 +55497,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 55,
-    "bench": 15
+    "bench": 15,
+    "formFactor": "3.5\""
   },
   {
     "id": 50096,
@@ -55457,7 +55536,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 41,
-    "bench": 37
+    "bench": 37,
+    "read": 3500,
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50097,
@@ -55506,7 +55588,8 @@ export const PARTS = [
     "seq_w": 9550,
     "nand": "TLC",
     "dram": false,
-    "value": 50
+    "value": 50,
+    "pcieGen": 5
   },
   {
     "id": 50098,
@@ -55557,7 +55640,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 46
+    "value": 46,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50099,
@@ -55605,7 +55690,8 @@ export const PARTS = [
     "seq_w": 4250,
     "nand": "TLC",
     "dram": true,
-    "value": 26
+    "value": 26,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 50100,
@@ -55642,7 +55728,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 68,
-    "bench": 77
+    "bench": 77,
+    "read": 7300,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50101,
@@ -55680,7 +55769,8 @@ export const PARTS = [
     "seq_w": 4250,
     "nand": "TLC",
     "dram": true,
-    "value": 44
+    "value": 44,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 50102,
@@ -55755,7 +55845,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 50,
-    "bench": 57
+    "bench": 57,
+    "read": 5000,
+    "formFactor": "M.2"
   },
   {
     "id": 50104,
@@ -55806,7 +55898,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 25
+    "value": 25,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50105,
@@ -55908,7 +56001,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 29,
-    "bench": 37
+    "bench": 37,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50107,
@@ -55992,7 +56087,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 16,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50109,
@@ -56038,7 +56134,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 37,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "2.5\""
   },
   {
     "id": 50110,
@@ -56087,7 +56184,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 25,
-    "bench": 37
+    "bench": 37,
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50111,
@@ -56174,7 +56273,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 66,
-    "bench": 80
+    "bench": 80,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50113,
@@ -56222,7 +56322,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 2,
-    "bench": 30
+    "bench": 30,
+    "formFactor": "2.5\""
   },
   {
     "id": 50114,
@@ -56267,7 +56368,9 @@ export const PARTS = [
     "seq_w": 2000,
     "nand": "TLC",
     "value": 5,
-    "bench": 37
+    "bench": 37,
+    "read": 2100,
+    "write": 2000
   },
   {
     "id": 50115,
@@ -56312,7 +56415,9 @@ export const PARTS = [
     "seq_w": 2000,
     "nand": "TLC",
     "value": 8,
-    "bench": 37
+    "bench": 37,
+    "read": 2100,
+    "write": 2000
   },
   {
     "id": 50116,
@@ -56359,7 +56464,9 @@ export const PARTS = [
     "seq_w": 500,
     "seq_w_inferred": true,
     "value": 9,
-    "bench": 45
+    "bench": 45,
+    "read": 550,
+    "formFactor": "2.5\""
   },
   {
     "id": 50117,
@@ -56398,7 +56505,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 28,
-    "bench": 67
+    "bench": 67,
+    "formFactor": "M.2"
   },
   {
     "id": 50118,
@@ -56448,7 +56556,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 39,
-    "bench": 59
+    "bench": 59,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50119,
@@ -56532,7 +56642,9 @@ export const PARTS = [
     "seq_w": 6000,
     "nand": "QLC",
     "dram": false,
-    "value": 56
+    "value": 56,
+    "pcieGen": 4,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 50121,
@@ -56577,7 +56689,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 39,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50122,
@@ -56616,7 +56729,8 @@ export const PARTS = [
     "seq_w": 6000,
     "nand": "QLC",
     "dram": false,
-    "value": 64
+    "value": 64,
+    "pcieGen": 4
   },
   {
     "id": 50123,
@@ -56654,7 +56768,9 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 14
+    "value": 14,
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50124,
@@ -56691,7 +56807,9 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "TLC",
     "dram": false,
-    "value": 20
+    "value": 20,
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50125,
@@ -56726,7 +56844,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 5400,
     "value": 33,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50126,
@@ -56774,7 +56893,10 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 58
+    "value": 58,
+    "read": 7000,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50127,
@@ -56857,7 +56979,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 38,
-    "bench": 37
+    "bench": 37,
+    "read": 2050,
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50129,
@@ -56896,7 +57021,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 69,
-    "bench": 100
+    "bench": 100,
+    "pcieGen": 5
   },
   {
     "id": 50130,
@@ -56945,7 +57071,8 @@ export const PARTS = [
     "seq_w": 4200,
     "nand": "QLC",
     "dram": false,
-    "value": 68
+    "value": 68,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50131,
@@ -56982,7 +57109,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 4,
-    "bench": 30
+    "bench": 30,
+    "formFactor": "2.5\""
   },
   {
     "id": 50132,
@@ -57098,7 +57226,8 @@ export const PARTS = [
     "nand": "QLC",
     "dram": false,
     "value": 24,
-    "bench": 62
+    "bench": 62,
+    "pcieGen": 4
   },
   {
     "id": 50135,
@@ -57147,7 +57276,8 @@ export const PARTS = [
     "seq_w": 4200,
     "nand": "QLC",
     "dram": false,
-    "value": 39
+    "value": 39,
+    "pcieGen": 4
   },
   {
     "id": 50136,
@@ -57194,7 +57324,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 7,
-    "bench": 40
+    "bench": 40,
+    "read": 500
   },
   {
     "id": 50137,
@@ -57233,7 +57364,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 11,
-    "bench": 37
+    "bench": 37,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50138,
@@ -57283,7 +57416,10 @@ export const PARTS = [
     "seq_w": 5000,
     "nand": "TLC",
     "dram": false,
-    "value": 37
+    "value": 37,
+    "read": 6000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50139,
@@ -57321,7 +57457,9 @@ export const PARTS = [
     "seq_w": 490,
     "dram": false,
     "value": 4,
-    "bench": 45
+    "bench": 45,
+    "read": 540,
+    "formFactor": "2.5\""
   },
   {
     "id": 50140,
@@ -57368,7 +57506,8 @@ export const PARTS = [
     "seq_w": 500,
     "nand": "QLC",
     "value": 2,
-    "bench": 50
+    "bench": 50,
+    "formFactor": "2.5\""
   },
   {
     "id": 50141,
@@ -57454,7 +57593,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 57,
-    "bench": 57
+    "bench": 57,
+    "read": 3200,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50143,
@@ -57549,7 +57691,10 @@ export const PARTS = [
     "seq_w": 4500,
     "nand": "TLC",
     "dram": false,
-    "value": 45
+    "value": 45,
+    "read": 5000,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50145,
@@ -57595,7 +57740,9 @@ export const PARTS = [
     "seq_w": 500,
     "seq_w_inferred": true,
     "value": 5,
-    "bench": 45
+    "bench": 45,
+    "read": 550,
+    "formFactor": "2.5\""
   },
   {
     "id": 50146,
@@ -57682,7 +57829,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 100,
-    "bench": 70
+    "bench": 70,
+    "read": 6300,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50148,
@@ -57731,7 +57881,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 5,
-    "bench": 50
+    "bench": 50,
+    "formFactor": "2.5\""
   },
   {
     "id": 50149,
@@ -57769,7 +57920,10 @@ export const PARTS = [
     "seq_w": 6600,
     "nand": "TLC",
     "dram": false,
-    "value": 66
+    "value": 66,
+    "read": 7100,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50150,
@@ -57845,7 +57999,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 24,
-    "bench": 37
+    "bench": 37,
+    "read": 3500,
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50152,
@@ -57893,7 +58050,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 77,
-    "bench": 60
+    "bench": 60,
+    "read": 4700,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50153,
@@ -57943,7 +58103,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 32,
-    "upc": "04711378427615"
+    "upc": "04711378427615",
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50154,
@@ -57983,7 +58145,10 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 48
+    "value": 48,
+    "read": 6500,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50155,
@@ -58021,7 +58186,10 @@ export const PARTS = [
     "seq_w": 4800,
     "nand": "TLC",
     "dram": false,
-    "value": 46
+    "value": 46,
+    "read": 7300,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50156,
@@ -58117,7 +58285,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 85
+    "value": 85,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50158,
@@ -58166,7 +58336,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 47,
-    "bench": 67
+    "bench": 67,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50159,
@@ -58204,7 +58376,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 41,
-    "bench": 88
+    "bench": 88,
+    "read": 7450,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50160,
@@ -58240,7 +58415,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 20,
-    "bench": 45
+    "bench": 45,
+    "formFactor": "M.2"
   },
   {
     "id": 50161,
@@ -58313,7 +58489,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 56,
-    "bench": 50
+    "bench": 50,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50163,
@@ -58362,7 +58540,9 @@ export const PARTS = [
     "nand": "QLC",
     "dram": false,
     "value": 36,
-    "upc": "04711378424133"
+    "upc": "04711378424133",
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50164,
@@ -58468,7 +58648,9 @@ export const PARTS = [
     "dram": false,
     "value": 64,
     "bench": 67,
-    "upc": "04711430801728"
+    "upc": "04711430801728",
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50167,
@@ -58542,7 +58724,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 29,
-    "bench": 100
+    "bench": 100,
+    "pcieGen": 5
   },
   {
     "id": 50169,
@@ -58582,7 +58765,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 100,
-    "bench": 100
+    "bench": 100,
+    "pcieGen": 5
   },
   {
     "id": 50170,
@@ -58619,7 +58803,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 2,
-    "bench": 30
+    "bench": 30,
+    "formFactor": "2.5\""
   },
   {
     "id": 50171,
@@ -58690,7 +58875,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 57,
-    "bench": 37
+    "bench": 37,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50173,
@@ -58781,7 +58968,8 @@ export const PARTS = [
     "seq_w": 6000,
     "nand": "QLC",
     "dram": false,
-    "value": 38
+    "value": 38,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50175,
@@ -58819,7 +59007,9 @@ export const PARTS = [
     "seq_w": 1500,
     "dram": false,
     "value": 34,
-    "bench": 37
+    "bench": 37,
+    "read": 1800,
+    "formFactor": "M.2"
   },
   {
     "id": 50176,
@@ -58867,7 +59057,8 @@ export const PARTS = [
     "seq_w": 5100,
     "nand": "TLC",
     "dram": true,
-    "value": 23
+    "value": 23,
+    "formFactor": "M.2"
   },
   {
     "id": 50177,
@@ -58918,7 +59109,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "rpm": 7200,
-    "value": 20
+    "value": 20,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50178,
@@ -59087,7 +59279,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 24,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50182,
@@ -59125,7 +59318,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 5,
-    "bench": 45
+    "bench": 45,
+    "formFactor": "2.5\""
   },
   {
     "id": 50183,
@@ -59220,7 +59414,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 2,
-    "bench": 45
+    "bench": 45,
+    "formFactor": "2.5\""
   },
   {
     "id": 50185,
@@ -59397,7 +59592,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 15,
-    "bench": 37
+    "bench": 37,
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50189,
@@ -59435,7 +59632,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 77,
-    "bench": 57
+    "bench": 57,
+    "read": 5000,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50190,
@@ -59474,7 +59674,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 15,
-    "bench": 67
+    "bench": 67,
+    "formFactor": "M.2"
   },
   {
     "id": 50191,
@@ -59523,7 +59724,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 36
+    "value": 36,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50192,
@@ -59558,7 +59760,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 42,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50193,
@@ -59596,7 +59799,10 @@ export const PARTS = [
     "seq_w": 6600,
     "nand": "TLC",
     "dram": false,
-    "value": 22
+    "value": 22,
+    "read": 7000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50194,
@@ -59646,7 +59852,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 28,
-    "bench": 59
+    "bench": 59,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50195,
@@ -59767,7 +59975,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 2,
-    "bench": 40
+    "bench": 40,
+    "read": 500,
+    "formFactor": "2.5\""
   },
   {
     "id": 50198,
@@ -59907,7 +60117,10 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 27
+    "value": 27,
+    "read": 5000,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50201,
@@ -59956,7 +60169,8 @@ export const PARTS = [
     "seq_w": 12700,
     "nand": "TLC",
     "dram": true,
-    "value": 31
+    "value": 31,
+    "pcieGen": 5
   },
   {
     "id": 50202,
@@ -60005,7 +60219,8 @@ export const PARTS = [
     "seq_w": 12700,
     "nand": "TLC",
     "dram": true,
-    "value": 92
+    "value": 92,
+    "pcieGen": 5
   },
   {
     "id": 50203,
@@ -60054,7 +60269,8 @@ export const PARTS = [
     "seq_w": 9550,
     "nand": "TLC",
     "dram": false,
-    "value": 77
+    "value": 77,
+    "pcieGen": 5
   },
   {
     "id": 50204,
@@ -60092,7 +60308,10 @@ export const PARTS = [
     "seq_w": 4800,
     "nand": "TLC",
     "dram": false,
-    "value": 26
+    "value": 26,
+    "read": 7300,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50205,
@@ -60140,7 +60359,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 100,
-    "bench": 100
+    "bench": 100,
+    "read": 5000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50206,
@@ -60177,7 +60399,9 @@ export const PARTS = [
     "seq_r": 7000,
     "seq_w": 6500,
     "value": 21,
-    "bench": 78
+    "bench": 78,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50207,
@@ -60225,7 +60449,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 100,
-    "bench": 70
+    "bench": 70,
+    "read": 6300,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50208,
@@ -60276,7 +60503,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 26
+    "value": 26,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50209,
@@ -60325,7 +60554,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 1,
-    "bench": 45
+    "bench": 45,
+    "formFactor": "2.5\""
   },
   {
     "id": 50210,
@@ -60374,7 +60604,9 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": true,
-    "value": 55
+    "value": 55,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50211,
@@ -60425,7 +60657,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 71,
-    "upc": "04711378425369"
+    "upc": "04711378425369",
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50212,
@@ -60460,7 +60694,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 41,
-    "bench": 13
+    "bench": 13,
+    "formFactor": "3.5\""
   },
   {
     "id": 50213,
@@ -60498,7 +60733,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 65,
-    "bench": 88
+    "bench": 88,
+    "read": 7450,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50214,
@@ -60547,7 +60785,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 36,
-    "bench": 50
+    "bench": 50,
+    "formFactor": "M.2"
   },
   {
     "id": 50215,
@@ -60596,7 +60835,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 61,
-    "bench": 85
+    "bench": 85,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50216,
@@ -60707,7 +60948,9 @@ export const PARTS = [
     "seq_w": 5000,
     "nand": "TLC",
     "dram": false,
-    "value": 61
+    "value": 61,
+    "read": 5000,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 50219,
@@ -60745,7 +60988,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 38,
-    "bench": 83
+    "bench": 83,
+    "read": 7300,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50220,
@@ -60783,7 +61029,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 12,
-    "bench": 37
+    "bench": 37,
+    "read": 2150,
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50221,
@@ -60865,7 +61114,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 8,
-    "bench": 30
+    "bench": 30,
+    "formFactor": "2.5\""
   },
   {
     "id": 50223,
@@ -60902,7 +61152,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 21,
-    "bench": 30
+    "bench": 30,
+    "formFactor": "2.5\""
   },
   {
     "id": 50224,
@@ -61023,7 +61274,10 @@ export const PARTS = [
     "interface": "NVMe",
     "seq_r": 2500,
     "seq_w": 2500,
-    "value": 18
+    "value": 18,
+    "read": 2500,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50227,
@@ -61060,7 +61314,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 38,
-    "bench": 77
+    "bench": 77,
+    "read": 7300,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50228,
@@ -61110,7 +61367,8 @@ export const PARTS = [
     "nand": "QLC",
     "dram": false,
     "value": 49,
-    "bench": 62
+    "bench": 62,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50229,
@@ -61188,7 +61446,8 @@ export const PARTS = [
     "rpm": 7200,
     "value": 39,
     "bench": 10,
-    "interface": "SATA"
+    "interface": "SATA",
+    "formFactor": "3.5\""
   },
   {
     "id": 50231,
@@ -61226,7 +61485,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 38,
-    "bench": 37
+    "bench": 37,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50232,
@@ -61274,7 +61535,9 @@ export const PARTS = [
     "seq_w": 1800,
     "nand": "TLC",
     "dram": false,
-    "value": 24
+    "value": 24,
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50233,
@@ -61349,7 +61612,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 41,
-    "bench": 80
+    "bench": 80,
+    "read": 7300,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50235,
@@ -61388,7 +61654,9 @@ export const PARTS = [
     "dram": false,
     "value": 49,
     "bench": 57,
-    "upc": "04711378431056"
+    "upc": "04711378431056",
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50236,
@@ -61424,7 +61692,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 68,
-    "bench": 83
+    "bench": 83,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50237,
@@ -61460,7 +61730,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 82,
-    "bench": 67
+    "bench": 67,
+    "read": 5000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50238,
@@ -61554,7 +61827,8 @@ export const PARTS = [
     "seq_w": 510,
     "nand": "TLC",
     "dram": true,
-    "value": 1
+    "value": 1,
+    "formFactor": "2.5\""
   },
   {
     "id": 50240,
@@ -61602,7 +61876,8 @@ export const PARTS = [
     "seq_w": 520,
     "nand": "TLC",
     "dram": true,
-    "value": 0
+    "value": 0,
+    "formFactor": "2.5\""
   },
   {
     "id": 50241,
@@ -61652,7 +61927,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "rpm": 7200,
-    "value": 13
+    "value": 13,
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50242,
@@ -61701,7 +61978,8 @@ export const PARTS = [
     "seq_w": 2500,
     "nand": "TLC",
     "dram": true,
-    "value": 15
+    "value": 15,
+    "formFactor": "M.2"
   },
   {
     "id": 50243,
@@ -61797,7 +62075,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "rpm": 7200,
-    "value": 32
+    "value": 32,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50245,
@@ -61999,7 +62278,8 @@ export const PARTS = [
     "interface": "USB",
     "rpm": 5400,
     "value": 50,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50250,
@@ -62034,7 +62314,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 14,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50251,
@@ -62073,7 +62354,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 12,
-    "upc": "08806094947205"
+    "upc": "08806094947205",
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50252,
@@ -62158,7 +62441,10 @@ export const PARTS = [
     "seq_w": 5000,
     "nand": "TLC",
     "dram": false,
-    "value": 15
+    "value": 15,
+    "read": 6000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50254,
@@ -62207,7 +62493,9 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": true,
-    "value": 24
+    "value": 24,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50255,
@@ -62246,7 +62534,9 @@ export const PARTS = [
     "seq_w": 6000,
     "nand": "QLC",
     "dram": false,
-    "value": 18
+    "value": 18,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50256,
@@ -62391,7 +62681,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "rpm": 7200,
-    "value": 16
+    "value": 16,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50259,
@@ -62521,7 +62813,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 15,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50262,
@@ -62558,7 +62851,8 @@ export const PARTS = [
     "seq_r": 140,
     "seq_w": 140,
     "value": 0,
-    "bench": 25
+    "bench": 25,
+    "formFactor": "2.5\""
   },
   {
     "id": 50263,
@@ -62646,7 +62940,8 @@ export const PARTS = [
     "seq_w": 7000,
     "nand": "TLC",
     "dram": true,
-    "value": 53
+    "value": 53,
+    "pcieGen": 4
   },
   {
     "id": 50265,
@@ -62683,7 +62978,8 @@ export const PARTS = [
     "seq_r": 140,
     "seq_w": 140,
     "value": 0,
-    "bench": 25
+    "bench": 25,
+    "formFactor": "2.5\""
   },
   {
     "id": 50266,
@@ -62717,7 +63013,8 @@ export const PARTS = [
     "seq_w": 1900,
     "nand": "TLC",
     "dram": true,
-    "value": 24
+    "value": 24,
+    "formFactor": "M.2"
   },
   {
     "id": 50267,
@@ -62851,7 +63148,9 @@ export const PARTS = [
     "seq_w": 6800,
     "nand": "TLC",
     "dram": true,
-    "value": 68
+    "value": 68,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50270,
@@ -62899,7 +63198,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 66,
-    "bench": 67
+    "bench": 67,
+    "formFactor": "M.2"
   },
   {
     "id": 50271,
@@ -62993,7 +63293,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 20,
-    "bench": 60
+    "bench": 60,
+    "read": 5000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 50273,
@@ -63073,7 +63376,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 23,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50275,
@@ -63248,7 +63552,8 @@ export const PARTS = [
     "seq_w": 7000,
     "nand": "TLC",
     "dram": true,
-    "value": 26
+    "value": 26,
+    "pcieGen": 4
   },
   {
     "id": 50279,
@@ -63297,7 +63602,8 @@ export const PARTS = [
     "seq_w": 7000,
     "nand": "TLC",
     "dram": true,
-    "value": 53
+    "value": 53,
+    "pcieGen": 4
   },
   {
     "id": 50280,
@@ -63366,7 +63672,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 29,
-    "upc": "08806095575650"
+    "upc": "08806095575650",
+    "pcieGen": 4
   },
   {
     "id": 50282,
@@ -63416,7 +63723,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 40,
-    "bench": 59
+    "bench": 59,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50283,
@@ -63467,7 +63776,9 @@ export const PARTS = [
     "seq_w": 5000,
     "nand": "TLC",
     "dram": false,
-    "value": 14
+    "value": 14,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50284,
@@ -63638,7 +63949,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 6,
-    "bench": 60
+    "bench": 60,
+    "pcieGen": 4,
+    "formFactor": "M.2 2242"
   },
   {
     "id": 50288,
@@ -63673,7 +63986,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 52,
-    "bench": 13
+    "bench": 13,
+    "formFactor": "3.5\""
   },
   {
     "id": 50289,
@@ -63712,7 +64026,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 17,
-    "upc": "08806095575667"
+    "upc": "08806095575667",
+    "pcieGen": 4
   },
   {
     "id": 50290,
@@ -63749,7 +64064,9 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "nand": "QLC",
-    "value": 7
+    "value": 7,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50291,
@@ -63787,7 +64104,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 46,
-    "bench": 44
+    "bench": 44,
+    "read": 2800,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50292,
@@ -63880,7 +64200,10 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 15
+    "value": 15,
+    "read": 5000,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50294,
@@ -63931,7 +64254,9 @@ export const PARTS = [
     "dram": false,
     "value": 19,
     "bench": 37,
-    "upc": "04711378427622"
+    "upc": "04711378427622",
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50295,
@@ -64019,7 +64344,10 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 19
+    "value": 19,
+    "read": 6500,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50297,
@@ -64059,7 +64387,10 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 36
+    "value": 36,
+    "read": 6500,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50298,
@@ -64097,7 +64428,10 @@ export const PARTS = [
     "seq_w": 6700,
     "nand": "TLC",
     "dram": true,
-    "value": 39
+    "value": 39,
+    "read": 7400,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50299,
@@ -64146,7 +64480,8 @@ export const PARTS = [
     "seq_w": 12700,
     "nand": "TLC",
     "dram": true,
-    "value": 53
+    "value": 53,
+    "pcieGen": 5
   },
   {
     "id": 50300,
@@ -64230,7 +64565,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 14,
-    "bench": 67
+    "bench": 67,
+    "read": 7300,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50302,
@@ -64280,7 +64618,8 @@ export const PARTS = [
     "seq_w": 9550,
     "nand": "TLC",
     "dram": false,
-    "value": 85
+    "value": 85,
+    "pcieGen": 5
   },
   {
     "id": 50303,
@@ -64329,7 +64668,8 @@ export const PARTS = [
     "seq_w": 9550,
     "nand": "TLC",
     "dram": false,
-    "value": 50
+    "value": 50,
+    "pcieGen": 5
   },
   {
     "id": 50304,
@@ -64452,7 +64792,10 @@ export const PARTS = [
     "seq_w": 6800,
     "nand": "TLC",
     "dram": true,
-    "value": 22
+    "value": 22,
+    "read": 7300,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50307,
@@ -64565,7 +64908,8 @@ export const PARTS = [
     "seq_w": 520,
     "dram": true,
     "value": 2,
-    "bench": 50
+    "bench": 50,
+    "formFactor": "2.5\""
   },
   {
     "id": 50310,
@@ -64603,7 +64947,10 @@ export const PARTS = [
     "seq_w": 7000,
     "nand": "TLC",
     "dram": true,
-    "value": 38
+    "value": 38,
+    "read": 7400,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50311,
@@ -64646,7 +64993,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 31,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50312,
@@ -64683,7 +65031,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 100,
-    "bench": 100
+    "bench": 100,
+    "read": 5000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50313,
@@ -64731,7 +65082,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 43,
-    "bench": 100
+    "bench": 100,
+    "read": 5200,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50314,
@@ -64779,7 +65133,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 72,
-    "bench": 100
+    "bench": 100,
+    "read": 5200,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50315,
@@ -64816,7 +65173,9 @@ export const PARTS = [
     "seq_r": 7000,
     "seq_w": 6500,
     "value": 37,
-    "bench": 78
+    "bench": 78,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50316,
@@ -64854,7 +65213,9 @@ export const PARTS = [
     "seq_r": 7000,
     "seq_w": 6000,
     "value": 62,
-    "bench": 77
+    "bench": 77,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50317,
@@ -64902,7 +65263,8 @@ export const PARTS = [
     "nand": "QLC",
     "dram": true,
     "value": 0,
-    "bench": 50
+    "bench": 50,
+    "formFactor": "2.5\""
   },
   {
     "id": 50318,
@@ -64953,7 +65315,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 7,
-    "bench": 50
+    "bench": 50,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50319,
@@ -64998,7 +65361,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 61,
-    "bench": 13
+    "bench": 13,
+    "formFactor": "3.5\""
   },
   {
     "id": 50320,
@@ -65046,7 +65410,8 @@ export const PARTS = [
     "dram": false,
     "value": 4,
     "bench": 45,
-    "upc": "06975340374088"
+    "upc": "06975340374088",
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50321,
@@ -65094,7 +65459,10 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 23
+    "value": 23,
+    "read": 7000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50322,
@@ -65166,7 +65534,10 @@ export const PARTS = [
     "seq_w": 4500,
     "dram": false,
     "value": 47,
-    "bench": 67
+    "bench": 67,
+    "read": 5000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50324,
@@ -65216,7 +65587,9 @@ export const PARTS = [
     "seq_w": 4500,
     "nand": "TLC",
     "dram": false,
-    "value": 26
+    "value": 26,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50325,
@@ -65254,7 +65627,10 @@ export const PARTS = [
     "nand": "TLC",
     "seq_w": 6700,
     "dram": true,
-    "value": 30
+    "value": 30,
+    "read": 7450,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50326,
@@ -65304,7 +65680,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 24,
-    "upc": "04711378425383"
+    "upc": "04711378425383",
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50327,
@@ -65339,7 +65717,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 33,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50328,
@@ -65379,7 +65758,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 54,
-    "bench": 15
+    "bench": 15,
+    "formFactor": "3.5\""
   },
   {
     "id": 50329,
@@ -65419,7 +65799,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 52,
-    "bench": 13
+    "bench": 13,
+    "formFactor": "3.5\""
   },
   {
     "id": 50330,
@@ -65458,7 +65839,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 26,
-    "bench": 67
+    "bench": 67,
+    "formFactor": "M.2"
   },
   {
     "id": 50331,
@@ -65541,7 +65923,8 @@ export const PARTS = [
     "seq_w": 11800,
     "nand": "TLC",
     "dram": true,
-    "value": 33
+    "value": 33,
+    "pcieGen": 5
   },
   {
     "id": 50333,
@@ -65590,7 +65973,8 @@ export const PARTS = [
     "seq_w": 11800,
     "nand": "TLC",
     "dram": true,
-    "value": 72
+    "value": 72,
+    "pcieGen": 5
   },
   {
     "id": 50334,
@@ -65641,7 +66025,9 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": false,
-    "value": 96
+    "value": 96,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50335,
@@ -65692,7 +66078,9 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": false,
-    "value": 37
+    "value": 37,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50336,
@@ -65742,7 +66130,9 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": false,
-    "value": 54
+    "value": 54,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50337,
@@ -65817,7 +66207,10 @@ export const PARTS = [
     "seq_w": 6700,
     "dram": true,
     "value": 40,
-    "bench": 88
+    "bench": 88,
+    "read": 7450,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50339,
@@ -65855,7 +66248,9 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": true,
-    "value": 21
+    "value": 21,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50340,
@@ -65940,7 +66335,8 @@ export const PARTS = [
     "seq_r": 140,
     "seq_w": 140,
     "value": 0,
-    "bench": 25
+    "bench": 25,
+    "formFactor": "2.5\""
   },
   {
     "id": 50342,
@@ -66045,7 +66441,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 16,
-    "bench": 57
+    "bench": 57,
+    "read": 5000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50345,
@@ -66083,7 +66482,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 0,
-    "bench": 50
+    "bench": 50,
+    "formFactor": "M.2 2280",
+    "dramCache": true
   },
   {
     "id": 50346,
@@ -66122,7 +66523,9 @@ export const PARTS = [
     "seq_w": 11800,
     "nand": "TLC",
     "dram": true,
-    "value": 25
+    "value": 25,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50347,
@@ -66161,7 +66564,9 @@ export const PARTS = [
     "seq_w": 11800,
     "nand": "TLC",
     "dram": true,
-    "value": 40
+    "value": 40,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50348,
@@ -66198,7 +66603,8 @@ export const PARTS = [
     "seq_w_inferred": true,
     "value": 2,
     "bench": 45,
-    "upc": "00789048342524"
+    "upc": "00789048342524",
+    "read": 550
   },
   {
     "id": 50349,
@@ -66287,7 +66693,8 @@ export const PARTS = [
     "seq_w": 12700,
     "nand": "TLC",
     "dram": true,
-    "value": 58
+    "value": 58,
+    "pcieGen": 5
   },
   {
     "id": 50351,
@@ -66410,7 +66817,9 @@ export const PARTS = [
     "seq_w": 10000,
     "nand": "TLC",
     "dram": true,
-    "value": 49
+    "value": 49,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50354,
@@ -66449,7 +66858,9 @@ export const PARTS = [
     "seq_w": 10000,
     "nand": "TLC",
     "dram": true,
-    "value": 33
+    "value": 33,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50355,
@@ -66488,7 +66899,9 @@ export const PARTS = [
     "seq_w": 10000,
     "nand": "TLC",
     "dram": true,
-    "value": 16
+    "value": 16,
+    "pcieGen": 5,
+    "formFactor": "M.2 2242"
   },
   {
     "id": 50356,
@@ -66538,7 +66951,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 38,
-    "bench": 85
+    "bench": 85,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50357,
@@ -66582,7 +66997,8 @@ export const PARTS = [
     "storageType": "HDD",
     "interface": "SATA",
     "value": 39,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50358,
@@ -66621,7 +67037,9 @@ export const PARTS = [
     "seq_w": 6500,
     "nand": "TLC",
     "dram": false,
-    "value": 38
+    "value": 38,
+    "read": 7400,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50359,
@@ -66660,7 +67078,10 @@ export const PARTS = [
     "seq_w": 6300,
     "nand": "TLC",
     "dram": false,
-    "value": 19
+    "value": 19,
+    "read": 7400,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50360,
@@ -66704,7 +67125,8 @@ export const PARTS = [
     "rpm": 7200,
     "value": 48,
     "bench": 10,
-    "interface": "SATA"
+    "interface": "SATA",
+    "formFactor": "3.5\""
   },
   {
     "id": 50361,
@@ -66810,7 +67232,9 @@ export const PARTS = [
     "dram": false,
     "value": 42,
     "bench": 67,
-    "upc": "04711430801636"
+    "upc": "04711430801636",
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50364,
@@ -66849,7 +67273,9 @@ export const PARTS = [
     "dram": false,
     "value": 25,
     "bench": 67,
-    "upc": "04711430802152"
+    "upc": "04711430802152",
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50365,
@@ -66922,7 +67348,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 59,
-    "bench": 13
+    "bench": 13,
+    "formFactor": "3.5\""
   },
   {
     "id": 50367,
@@ -66969,7 +67396,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "TLC",
     "dram": true,
-    "value": 1
+    "value": 1,
+    "formFactor": "2.5\""
   },
   {
     "id": 50368,
@@ -67087,7 +67515,9 @@ export const PARTS = [
     "dram": false,
     "value": 36,
     "bench": 85,
-    "upc": "04711430802817"
+    "upc": "04711430802817",
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50371,
@@ -67125,7 +67555,9 @@ export const PARTS = [
     "seq_r": 3400,
     "seq_w": 2900,
     "nand": "TLC",
-    "value": 60
+    "value": 60,
+    "pcieGen": 3,
+    "formFactor": "M.2"
   },
   {
     "id": 50372,
@@ -67217,7 +67649,8 @@ export const PARTS = [
     "storageType": "HDD",
     "value": 10,
     "bench": 10,
-    "interface": "SATA"
+    "interface": "SATA",
+    "formFactor": "2.5\""
   },
   {
     "id": 50374,
@@ -67245,7 +67678,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 14,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50376,
@@ -67283,7 +67717,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 59,
-    "bench": 57
+    "bench": 57,
+    "read": 3500,
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50377,
@@ -67322,7 +67759,8 @@ export const PARTS = [
     "seq_w": 6500,
     "dram": false,
     "value": 40,
-    "upc": "06950509932309"
+    "upc": "06950509932309",
+    "formFactor": "M.2"
   },
   {
     "id": 50379,
@@ -67360,7 +67798,9 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": true,
-    "value": 39
+    "value": 39,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50380,
@@ -67478,7 +67918,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 5400,
     "value": 34,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50383,
@@ -67512,7 +67953,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 63,
-    "bench": 15
+    "bench": 15,
+    "formFactor": "3.5\""
   },
   {
     "id": 50384,
@@ -67551,7 +67993,9 @@ export const PARTS = [
     "seq_w": 6700,
     "nand": "TLC",
     "dram": true,
-    "value": 18
+    "value": 18,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50385,
@@ -67623,7 +68067,8 @@ export const PARTS = [
     "seq_w": 7000,
     "nand": "TLC",
     "dram": true,
-    "value": 37
+    "value": 37,
+    "pcieGen": 4
   },
   {
     "id": 50387,
@@ -67670,7 +68115,10 @@ export const PARTS = [
     "interface": "NVMe",
     "seq_r": 6000,
     "seq_w": 6000,
-    "value": 17
+    "value": 17,
+    "read": 6000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50388,
@@ -67707,7 +68155,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 21,
-    "bench": 77
+    "bench": 77,
+    "read": 7300,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50389,
@@ -67756,7 +68207,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 32,
-    "bench": 50
+    "bench": 50,
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50390,
@@ -67843,7 +68296,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 26,
-    "bench": 37
+    "bench": 37,
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50392,
@@ -67918,7 +68373,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 11,
-    "bench": 37
+    "bench": 37,
+    "pcieGen": 3,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50394,
@@ -67957,7 +68414,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 20,
-    "bench": 80
+    "bench": 80,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50395,
@@ -68038,7 +68497,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 41,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "2.5\""
   },
   {
     "id": 50397,
@@ -68092,7 +68552,9 @@ export const PARTS = [
     "seq_w": 6000,
     "nand": "QLC",
     "dram": false,
-    "value": 59
+    "value": 59,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50398,
@@ -68130,7 +68592,8 @@ export const PARTS = [
     "seq_w": 1700,
     "nand": "TLC",
     "dram": false,
-    "value": 13
+    "value": 13,
+    "pcieGen": 5
   },
   {
     "id": 50399,
@@ -68179,7 +68642,9 @@ export const PARTS = [
     "seq_w": 13000,
     "nand": "TLC",
     "dram": true,
-    "value": 29
+    "value": 29,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50400,
@@ -68228,7 +68693,9 @@ export const PARTS = [
     "seq_w": 13000,
     "nand": "TLC",
     "dram": true,
-    "value": 58
+    "value": 58,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50401,
@@ -68267,7 +68734,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "storageType": "NVMe",
-    "value": 22
+    "value": 22,
+    "formFactor": "M.2"
   },
   {
     "id": 50402,
@@ -68305,7 +68773,9 @@ export const PARTS = [
     "seq_w": 13000,
     "nand": "TLC",
     "dram": true,
-    "value": 92
+    "value": 92,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50403,
@@ -68355,7 +68825,9 @@ export const PARTS = [
     "dram": true,
     "value": 48,
     "bench": 100,
-    "upc": "08809433501373"
+    "upc": "08809433501373",
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50404,
@@ -68394,7 +68866,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 100,
-    "bench": 100
+    "bench": 100,
+    "read": 14500,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50405,
@@ -68432,7 +68907,10 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": true,
-    "value": 22
+    "value": 22,
+    "read": 7450,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50406,
@@ -68471,7 +68949,9 @@ export const PARTS = [
     "dram": false,
     "value": 22,
     "bench": 85,
-    "upc": "04711430802756"
+    "upc": "04711430802756",
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50407,
@@ -68509,7 +68989,9 @@ export const PARTS = [
     "seq_w": 12700,
     "dram": true,
     "value": 42,
-    "bench": 100
+    "bench": 100,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50408,
@@ -68546,7 +69028,9 @@ export const PARTS = [
     "seq_w": 11500,
     "nand": "TLC",
     "dram": true,
-    "value": 33
+    "value": 33,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50409,
@@ -68584,7 +69068,9 @@ export const PARTS = [
     "seq_w": 11500,
     "nand": "TLC",
     "dram": true,
-    "value": 100
+    "value": 100,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50410,
@@ -68621,7 +69107,9 @@ export const PARTS = [
     "seq_w": 11500,
     "nand": "TLC",
     "dram": true,
-    "value": 62
+    "value": 62,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50411,
@@ -68659,7 +69147,9 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": true,
-    "value": 11
+    "value": 11,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50412,
@@ -68689,7 +69179,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 35,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50413,
@@ -68757,7 +69248,8 @@ export const PARTS = [
     "seq_w": 5000,
     "nand": "TLC",
     "dram": false,
-    "value": 12
+    "value": 12,
+    "formFactor": "M.2"
   },
   {
     "id": 50415,
@@ -68795,7 +69287,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 63,
-    "bench": 77
+    "bench": 77,
+    "read": 7300,
+    "formFactor": "M.2"
   },
   {
     "id": 50416,
@@ -68833,7 +69327,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 37,
-    "bench": 77
+    "bench": 77,
+    "read": 7300,
+    "formFactor": "M.2"
   },
   {
     "id": 50417,
@@ -68871,7 +69367,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 18,
-    "bench": 77
+    "bench": 77,
+    "read": 7300,
+    "formFactor": "M.2"
   },
   {
     "id": 50418,
@@ -68922,7 +69420,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 28
+    "value": 28,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50419,
@@ -69038,7 +69538,10 @@ export const PARTS = [
     "seq_w": 6800,
     "dram": true,
     "value": 35,
-    "bench": 88
+    "bench": 88,
+    "read": 7450,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50422,
@@ -69074,7 +69577,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 26,
-    "bench": 57
+    "bench": 57,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50423,
@@ -69165,7 +69670,9 @@ export const PARTS = [
     "seq_w": 7000,
     "nand": "TLC",
     "dram": true,
-    "value": 15
+    "value": 15,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50425,
@@ -69214,7 +69721,8 @@ export const PARTS = [
     "nand": "QLC",
     "dram": false,
     "value": 31,
-    "bench": 62
+    "bench": 62,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50426,
@@ -69251,7 +69759,8 @@ export const PARTS = [
     "seq_w": 500,
     "seq_w_inferred": true,
     "value": 5,
-    "bench": 30
+    "bench": 30,
+    "formFactor": "2.5\""
   },
   {
     "id": 50427,
@@ -69290,7 +69799,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 0,
-    "bench": 45
+    "bench": 45,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50428,
@@ -69329,7 +69840,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 3,
-    "bench": 45
+    "bench": 45,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50429,
@@ -69380,7 +69893,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 100,
-    "bench": 100
+    "bench": 100,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 50430,
@@ -69417,7 +69932,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 47,
-    "bench": 96
+    "bench": 96,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 50431,
@@ -69455,7 +69972,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 78,
-    "bench": 96
+    "bench": 96,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 50432,
@@ -69493,7 +70012,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 100,
-    "bench": 70
+    "bench": 70,
+    "read": 6300,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50433,
@@ -69523,7 +70045,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 35,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50434,
@@ -69560,7 +70083,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 23,
-    "bench": 80
+    "bench": 80,
+    "read": 7000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50435,
@@ -69596,7 +70122,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 20,
-    "bench": 10
+    "bench": 10,
+    "formFactor": "3.5\""
   },
   {
     "id": 50436,
@@ -69631,7 +70158,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 36,
-    "bench": 13
+    "bench": 13,
+    "formFactor": "3.5\""
   },
   {
     "id": 50437,
@@ -69686,7 +70214,9 @@ export const PARTS = [
     "dram": true,
     "rpm": 7200,
     "value": 32,
-    "bench": 83
+    "bench": 83,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50438,
@@ -69722,7 +70252,8 @@ export const PARTS = [
     "seq_w": 530,
     "nand": "TLC",
     "value": 4,
-    "bench": 50
+    "bench": 50,
+    "formFactor": "2.5\""
   },
   {
     "id": 50439,
@@ -69761,7 +70292,8 @@ export const PARTS = [
     "seq_w": 14000,
     "nand": "TLC",
     "dram": true,
-    "value": 95
+    "value": 95,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50440,
@@ -69799,7 +70331,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 21,
-    "bench": 80
+    "bench": 80,
+    "read": 7200,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50441,
@@ -69838,7 +70373,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 52,
-    "bench": 100
+    "bench": 100,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50442,
@@ -69875,7 +70411,11 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 63,
-    "bench": 100
+    "bench": 100,
+    "read": 14000,
+    "pcieGen": 5,
+    "formFactor": "M.2",
+    "dramCache": true
   },
   {
     "id": 50443,
@@ -69913,7 +70453,11 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 100,
-    "bench": 100
+    "bench": 100,
+    "read": 14000,
+    "pcieGen": 5,
+    "formFactor": "M.2",
+    "dramCache": true
   },
   {
     "id": 50444,
@@ -69967,7 +70511,8 @@ export const PARTS = [
     "seq_w": 9550,
     "nand": "TLC",
     "dram": false,
-    "value": 75
+    "value": 75,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50445,
@@ -70006,7 +70551,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 9,
-    "upc": "00887276795164"
+    "upc": "00887276795164",
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50446,
@@ -70043,7 +70590,9 @@ export const PARTS = [
     "seq_r": 7200,
     "seq_w": 6850,
     "value": 67,
-    "bench": 78
+    "bench": 78,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50447,
@@ -70081,7 +70630,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 83,
-    "bench": 57
+    "bench": 57,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50448,
@@ -70120,7 +70671,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 0,
-    "bench": 45
+    "bench": 45,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50449,
@@ -70159,7 +70712,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 29,
-    "upc": "04711378431063"
+    "upc": "04711378431063",
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50450,
@@ -70195,7 +70750,8 @@ export const PARTS = [
     "seq_w": 510,
     "nand": "TLC",
     "dram": true,
-    "value": 2
+    "value": 2,
+    "formFactor": "2.5\""
   },
   {
     "id": 50451,
@@ -70245,7 +70801,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "rpm": 7200,
-    "value": 35
+    "value": 35,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50452,
@@ -70353,7 +70911,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 100,
-    "bench": 83
+    "bench": 83,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50455,
@@ -70389,7 +70949,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": true,
     "value": 25,
-    "bench": 83
+    "bench": 83,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50456,
@@ -70435,7 +70997,8 @@ export const PARTS = [
     "interface": "SATA",
     "rpm": 7200,
     "value": 54,
-    "bench": 15
+    "bench": 15,
+    "formFactor": "3.5\""
   },
   {
     "id": 50457,
@@ -70546,7 +71109,8 @@ export const PARTS = [
     "seq_w": 6550,
     "nand": "TLC",
     "dram": true,
-    "value": 22
+    "value": 22,
+    "formFactor": "M.2"
   },
   {
     "id": 50460,
@@ -70585,7 +71149,9 @@ export const PARTS = [
     "seq_w": 13800,
     "nand": "TLC",
     "dram": true,
-    "value": 100
+    "value": 100,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 50461,
@@ -70624,7 +71190,9 @@ export const PARTS = [
     "seq_w": 6900,
     "nand": "TLC",
     "dram": true,
-    "value": 10
+    "value": 10,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50462,
@@ -70660,7 +71228,10 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 16,
-    "bench": 67
+    "bench": 67,
+    "read": 5000,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50463,
@@ -70738,7 +71309,8 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "NVMe",
     "dram": true,
-    "value": 65
+    "value": 65,
+    "pcieGen": 3
   },
   {
     "id": 50465,
@@ -70770,7 +71342,8 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "NVMe",
     "dram": true,
-    "value": 45
+    "value": 45,
+    "pcieGen": 3
   },
   {
     "id": 50466,
@@ -70802,7 +71375,8 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "NVMe",
     "dram": true,
-    "value": 31
+    "value": 31,
+    "pcieGen": 3
   },
   {
     "id": 50467,
@@ -70964,7 +71538,8 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "NVMe",
     "dram": true,
-    "value": 100
+    "value": 100,
+    "pcieGen": 4
   },
   {
     "id": 50472,
@@ -71081,7 +71656,8 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "NVMe",
     "dram": true,
-    "value": 100
+    "value": 100,
+    "pcieGen": 4
   },
   {
     "id": 50475,
@@ -71286,7 +71862,8 @@ export const PARTS = [
     "storageType": "SSD",
     "dram": false,
     "rpm": 7200,
-    "value": 81
+    "value": 81,
+    "pcieGen": 4
   },
   {
     "id": 50481,
@@ -71368,7 +71945,8 @@ export const PARTS = [
     "storageType": "NVMe",
     "dram": true,
     "rpm": 7200,
-    "value": 18
+    "value": 18,
+    "pcieGen": 4
   },
   {
     "id": 50483,
@@ -71410,7 +71988,8 @@ export const PARTS = [
     "storageType": "NVMe",
     "dram": true,
     "rpm": 7200,
-    "value": 35
+    "value": 35,
+    "pcieGen": 4
   },
   {
     "id": 50484,
@@ -71532,7 +72111,9 @@ export const PARTS = [
     "dram": false,
     "rpm": 7200,
     "value": 22,
-    "bench": 57
+    "bench": 57,
+    "pcieGen": 4,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 50487,
@@ -71563,7 +72144,8 @@ export const PARTS = [
     "storageType": "NVMe",
     "nand": "TLC",
     "dram": true,
-    "value": 53
+    "value": 53,
+    "pcieGen": 4
   },
   {
     "id": 50488,
@@ -71604,7 +72186,9 @@ export const PARTS = [
     "heatsink": false,
     "storageType": "NVMe",
     "dram": true,
-    "value": 43
+    "value": 43,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50489,
@@ -71665,7 +72249,8 @@ export const PARTS = [
     "storageType": "NVMe",
     "nand": "TLC",
     "dram": true,
-    "value": 84
+    "value": 84,
+    "pcieGen": 4
   },
   {
     "id": 50491,
@@ -71697,7 +72282,8 @@ export const PARTS = [
     "storageType": "NVMe",
     "nand": "TLC",
     "dram": true,
-    "value": 76
+    "value": 76,
+    "pcieGen": 4
   },
   {
     "id": 50492,
@@ -71728,7 +72314,8 @@ export const PARTS = [
     "storageType": "NVMe",
     "nand": "TLC",
     "dram": true,
-    "value": 28
+    "value": 28,
+    "pcieGen": 4
   },
   {
     "id": 50493,
@@ -71768,7 +72355,9 @@ export const PARTS = [
     "nand": "TLC",
     "storageType": "NVMe",
     "dram": false,
-    "value": 52
+    "value": 52,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50494,
@@ -71808,7 +72397,9 @@ export const PARTS = [
     "nand": "TLC",
     "storageType": "NVMe",
     "dram": false,
-    "value": 37
+    "value": 37,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50495,
@@ -71849,7 +72440,8 @@ export const PARTS = [
     "storageType": "NVMe",
     "dram": true,
     "value": 41,
-    "bench": 88
+    "bench": 88,
+    "pcieGen": 4
   },
   {
     "id": 50496,
@@ -71890,7 +72482,8 @@ export const PARTS = [
     "storageType": "NVMe",
     "dram": true,
     "value": 20,
-    "bench": 88
+    "bench": 88,
+    "pcieGen": 4
   },
   {
     "id": 50497,
@@ -71921,7 +72514,8 @@ export const PARTS = [
     "heatsink": false,
     "storageType": "NVMe",
     "dram": true,
-    "value": 78
+    "value": 78,
+    "pcieGen": 4
   },
   {
     "id": 50498,
@@ -71962,7 +72556,8 @@ export const PARTS = [
     "rpm": 7200,
     "nand": "TLC",
     "dram": false,
-    "value": 10
+    "value": 10,
+    "pcieGen": 4
   },
   {
     "id": 50499,
@@ -71993,7 +72588,9 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "NVMe",
     "dram": false,
-    "value": 63
+    "value": 63,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50500,
@@ -72024,7 +72621,9 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "NVMe",
     "dram": false,
-    "value": 41
+    "value": 41,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50501,
@@ -72066,7 +72665,8 @@ export const PARTS = [
     "storageType": "NVMe",
     "dram": true,
     "rpm": 7200,
-    "value": 3
+    "value": 3,
+    "pcieGen": 4
   },
   {
     "id": 50502,
@@ -72146,7 +72746,9 @@ export const PARTS = [
     "nand": "TLC",
     "storageType": "NVMe",
     "dram": false,
-    "value": 44
+    "value": 44,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50504,
@@ -72186,7 +72788,9 @@ export const PARTS = [
     "nand": "TLC",
     "storageType": "NVMe",
     "dram": false,
-    "value": 22
+    "value": 22,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50505,
@@ -72227,7 +72831,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "rpm": 7200,
-    "value": 43
+    "value": 43,
+    "pcieGen": 4
   },
   {
     "id": 50506,
@@ -72268,7 +72873,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "rpm": 7200,
-    "value": 22
+    "value": 22,
+    "pcieGen": 4
   },
   {
     "id": 50507,
@@ -72309,7 +72915,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "rpm": 7200,
-    "value": 31
+    "value": 31,
+    "pcieGen": 4
   },
   {
     "id": 50508,
@@ -72340,7 +72947,9 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "NVMe",
     "dram": false,
-    "value": 100
+    "value": 100,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50509,
@@ -72371,7 +72980,9 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "NVMe",
     "dram": false,
-    "value": 32
+    "value": 32,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50510,
@@ -72402,7 +73013,9 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "NVMe",
     "dram": false,
-    "value": 62
+    "value": 62,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50511,
@@ -72443,7 +73056,9 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 100,
-    "bench": 85
+    "bench": 85,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 50512,
@@ -72474,7 +73089,9 @@ export const PARTS = [
     "heatsink": true,
     "storageType": "NVMe",
     "dram": true,
-    "value": 64
+    "value": 64,
+    "read": 14700,
+    "pcieGen": 5
   },
   {
     "id": 50513,
@@ -72515,7 +73132,9 @@ export const PARTS = [
     "heatsink": true,
     "storageType": "NVMe",
     "dram": true,
-    "value": 32
+    "value": 32,
+    "read": 14700,
+    "pcieGen": 5
   },
   {
     "id": 50514,
@@ -72556,7 +73175,9 @@ export const PARTS = [
     "heatsink": true,
     "storageType": "NVMe",
     "dram": true,
-    "value": 15
+    "value": 15,
+    "read": 14800,
+    "pcieGen": 5
   },
   {
     "id": 50515,
@@ -72599,7 +73220,8 @@ export const PARTS = [
     "dram": true,
     "rpm": 7200,
     "value": 34,
-    "bench": 100
+    "bench": 100,
+    "pcieGen": 5
   },
   {
     "id": 50516,
@@ -72642,7 +73264,8 @@ export const PARTS = [
     "dram": true,
     "rpm": 7200,
     "value": 17,
-    "bench": 100
+    "bench": 100,
+    "pcieGen": 5
   },
   {
     "id": 50517,
@@ -72685,7 +73308,8 @@ export const PARTS = [
     "dram": true,
     "rpm": 7200,
     "value": 70,
-    "bench": 100
+    "bench": 100,
+    "pcieGen": 5
   },
   {
     "id": 50518,
@@ -72726,7 +73350,9 @@ export const PARTS = [
     "storageType": "NVMe",
     "dram": true,
     "value": 100,
-    "bench": 100
+    "bench": 100,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 50519,
@@ -72767,7 +73393,9 @@ export const PARTS = [
     "storageType": "NVMe",
     "dram": true,
     "value": 71,
-    "bench": 100
+    "bench": 100,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 50520,
@@ -72808,7 +73436,9 @@ export const PARTS = [
     "storageType": "NVMe",
     "dram": true,
     "value": 39,
-    "bench": 100
+    "bench": 100,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 50522,
@@ -72849,7 +73479,9 @@ export const PARTS = [
     "storageType": "NVMe",
     "dram": true,
     "value": 67,
-    "bench": 100
+    "bench": 100,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 50523,
@@ -72890,7 +73522,9 @@ export const PARTS = [
     "storageType": "NVMe",
     "dram": true,
     "value": 38,
-    "bench": 100
+    "bench": 100,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 50524,
@@ -72922,7 +73556,9 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "NVMe",
     "dram": true,
-    "value": 72
+    "value": 72,
+    "read": 14700,
+    "pcieGen": 5
   },
   {
     "id": 50525,
@@ -72953,7 +73589,8 @@ export const PARTS = [
     "rpm": 7200,
     "nand": "TLC",
     "dram": false,
-    "value": 46
+    "value": 46,
+    "pcieGen": 4
   },
   {
     "id": 50526,
@@ -72994,7 +73631,8 @@ export const PARTS = [
     "rpm": 7200,
     "nand": "TLC",
     "dram": false,
-    "value": 33
+    "value": 33,
+    "pcieGen": 4
   },
   {
     "id": 50527,
@@ -73025,7 +73663,8 @@ export const PARTS = [
     "nand": "TLC",
     "dram": false,
     "value": 10,
-    "bench": 75
+    "bench": 75,
+    "pcieGen": 4
   },
   {
     "id": 50528,
@@ -73057,7 +73696,9 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "NVMe",
     "dram": true,
-    "value": 100
+    "value": 100,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 50529,
@@ -73089,7 +73730,8 @@ export const PARTS = [
     "condition": "refurbished",
     "storageType": "NVMe",
     "dram": true,
-    "value": 22
+    "value": 22,
+    "pcieGen": 5
   },
   {
     "id": 50530,
@@ -73250,7 +73892,9 @@ export const PARTS = [
     "storageType": "NVMe",
     "dram": false,
     "value": 61,
-    "bench": 55
+    "bench": 55,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 50535,
@@ -155918,7 +156562,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.420Z",
     "source": "amazon-discovery",
     "interface": "NVMe",
-    "ff": "M.2 2280"
+    "ff": "M.2 2280",
+    "formFactor": "M.2 2280"
   },
   {
     "id": 100517,
@@ -155942,7 +156587,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.420Z",
     "source": "amazon-discovery",
     "interface": "NVMe",
-    "ff": "M.2 2280"
+    "ff": "M.2 2280",
+    "formFactor": "M.2 2280"
   },
   {
     "id": 100518,
@@ -155966,7 +156612,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.420Z",
     "source": "amazon-discovery",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "read": 7250,
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 100519,
@@ -155990,7 +156639,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.420Z",
     "source": "amazon-discovery",
     "interface": "NVMe",
-    "ff": "M.2 2280"
+    "ff": "M.2 2280",
+    "formFactor": "M.2 2280"
   },
   {
     "id": 100520,
@@ -156038,7 +156688,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.420Z",
     "source": "amazon-discovery",
     "interface": "SATA",
-    "ff": "2.5\""
+    "ff": "2.5\"",
+    "formFactor": "2.5\""
   },
   {
     "id": 100522,
@@ -156062,7 +156713,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.420Z",
     "source": "amazon-discovery",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\""
   },
   {
     "id": 100523,
@@ -156086,7 +156738,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.420Z",
     "source": "amazon-discovery",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100524,
@@ -156110,7 +156763,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.420Z",
     "source": "amazon-discovery",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\""
   },
   {
     "id": 100525,
@@ -156133,7 +156787,8 @@ export const PARTS = [
     "storageType": "HDD",
     "addedAt": "2026-05-15T13:17:14.420Z",
     "source": "amazon-discovery",
-    "interface": "SATA"
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 100526,
@@ -156204,7 +156859,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.420Z",
     "source": "amazon-discovery",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\""
   },
   {
     "id": 100529,
@@ -156228,7 +156884,9 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.421Z",
     "source": "amazon-discovery",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100530,
@@ -156252,7 +156910,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.421Z",
     "source": "amazon-discovery",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "rpm": 5400
   },
   {
     "id": 100531,
@@ -156275,7 +156934,9 @@ export const PARTS = [
     "storageType": "HDD",
     "addedAt": "2026-05-15T13:17:14.421Z",
     "source": "amazon-discovery",
-    "interface": "SATA"
+    "interface": "SATA",
+    "formFactor": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100532,
@@ -156299,7 +156960,9 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.421Z",
     "source": "amazon-discovery",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100533,
@@ -162704,7 +163367,8 @@ export const PARTS = [
     "cap": 1000,
     "storageType": "SSD",
     "interface": "SATA",
-    "ff": "2.5\""
+    "ff": "2.5\"",
+    "formFactor": "2.5\""
   },
   {
     "id": 100801,
@@ -162728,7 +163392,8 @@ export const PARTS = [
     "cap": 512,
     "storageType": "SSD",
     "interface": "SATA",
-    "ff": "2.5\""
+    "ff": "2.5\"",
+    "formFactor": "2.5\""
   },
   {
     "id": 100802,
@@ -162752,7 +163417,8 @@ export const PARTS = [
     "cap": 500,
     "storageType": "SSD",
     "interface": "SATA",
-    "ff": "2.5\""
+    "ff": "2.5\"",
+    "formFactor": "2.5\""
   },
   {
     "id": 100803,
@@ -162775,7 +163441,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 500,
     "storageType": "HDD",
-    "interface": "SATA"
+    "interface": "SATA",
+    "formFactor": "3.5\""
   },
   {
     "id": 100804,
@@ -162871,7 +163538,8 @@ export const PARTS = [
     "cap": 4000,
     "storageType": "SSD",
     "interface": "SATA",
-    "ff": "2.5\""
+    "ff": "2.5\"",
+    "formFactor": "2.5\""
   },
   {
     "id": 100808,
@@ -162966,7 +163634,8 @@ export const PARTS = [
     "cap": 500,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "ff": "M.2 2280"
+    "ff": "M.2 2280",
+    "formFactor": "M.2 2280"
   },
   {
     "id": 100812,
@@ -162989,7 +163658,9 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 500,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 100813,
@@ -163012,7 +163683,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 500,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "formFactor": "M.2"
   },
   {
     "id": 100814,
@@ -163036,7 +163708,8 @@ export const PARTS = [
     "cap": 8000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "ff": "M.2 2280"
+    "ff": "M.2 2280",
+    "formFactor": "M.2 2280"
   },
   {
     "id": 100815,
@@ -163061,7 +163734,9 @@ export const PARTS = [
     "storageType": "SSD",
     "interface": "SATA",
     "pcie": 5,
-    "ff": "M.2 2280"
+    "ff": "M.2 2280",
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 100816,
@@ -163085,7 +163760,8 @@ export const PARTS = [
     "cap": 8000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "ff": "M.2 2280"
+    "ff": "M.2 2280",
+    "formFactor": "M.2 2280"
   },
   {
     "id": 100817,
@@ -163108,7 +163784,9 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 8000,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "read": 7200,
+    "formFactor": "M.2"
   },
   {
     "id": 100818,
@@ -163133,7 +163811,10 @@ export const PARTS = [
     "storageType": "NVMe",
     "interface": "NVMe",
     "pcie": 4,
-    "ff": "M.2 2280"
+    "ff": "M.2 2280",
+    "read": 6200,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 100819,
@@ -163158,7 +163839,9 @@ export const PARTS = [
     "storageType": "NVMe",
     "interface": "NVMe",
     "pcie": 5,
-    "ff": "M.2 2280"
+    "ff": "M.2 2280",
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 100820,
@@ -163181,7 +163864,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 8000,
     "storageType": "SSD",
-    "interface": "SATA"
+    "interface": "SATA",
+    "read": 1050
   },
   {
     "id": 100821,
@@ -163206,7 +163890,9 @@ export const PARTS = [
     "storageType": "SSD",
     "interface": "SATA",
     "pcie": 5,
-    "ff": "M.2 2280"
+    "ff": "M.2 2280",
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 100822,
@@ -163231,7 +163917,9 @@ export const PARTS = [
     "storageType": "NVMe",
     "interface": "NVMe",
     "pcie": 5,
-    "ff": "M.2 2280"
+    "ff": "M.2 2280",
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 100823,
@@ -163280,7 +163968,8 @@ export const PARTS = [
     "cap": 1000,
     "storageType": "SSD",
     "interface": "SATA",
-    "ff": "M.2 2280"
+    "ff": "M.2 2280",
+    "formFactor": "M.2 2280"
   },
   {
     "id": 100825,
@@ -163304,7 +163993,8 @@ export const PARTS = [
     "cap": 1000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "2.5\""
+    "ff": "2.5\"",
+    "rpm": 5400
   },
   {
     "id": 100826,
@@ -163328,7 +164018,9 @@ export const PARTS = [
     "cap": 1000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "ff": "M.2 2230"
+    "ff": "M.2 2230",
+    "read": 6000,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 100827,
@@ -163349,7 +164041,8 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.781Z",
     "source": "amazon-discovery",
-    "cap": 16
+    "cap": 16,
+    "interface": "USB"
   },
   {
     "id": 100828,
@@ -163374,7 +164067,9 @@ export const PARTS = [
     "storageType": "NVMe",
     "interface": "NVMe",
     "pcie": 4,
-    "ff": "M.2 2280"
+    "ff": "M.2 2280",
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 100829,
@@ -163398,7 +164093,8 @@ export const PARTS = [
     "cap": 1000,
     "storageType": "SSD",
     "interface": "SATA",
-    "ff": "2.5\""
+    "ff": "2.5\"",
+    "formFactor": "2.5\""
   },
   {
     "id": 100830,
@@ -163445,7 +164141,8 @@ export const PARTS = [
     "cap": 8000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100832,
@@ -163492,7 +164189,9 @@ export const PARTS = [
     "cap": 4000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\"",
+    "rpm": 5400
   },
   {
     "id": 100834,
@@ -163539,7 +164238,8 @@ export const PARTS = [
     "cap": 4000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "rpm": 5400
   },
   {
     "id": 100836,
@@ -163586,7 +164286,8 @@ export const PARTS = [
     "cap": 4000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "rpm": 5400
   },
   {
     "id": 100838,
@@ -163680,7 +164381,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 4000,
     "storageType": "HDD",
-    "interface": "SATA"
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 100842,
@@ -163704,7 +164406,8 @@ export const PARTS = [
     "cap": 4000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100843,
@@ -163727,7 +164430,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 16000,
     "storageType": "HDD",
-    "interface": "SATA"
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 100844,
@@ -163751,7 +164455,8 @@ export const PARTS = [
     "cap": 16000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\""
   },
   {
     "id": 100845,
@@ -163775,7 +164480,8 @@ export const PARTS = [
     "cap": 16000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100846,
@@ -163799,7 +164505,8 @@ export const PARTS = [
     "cap": 16000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\""
   },
   {
     "id": 100847,
@@ -163845,7 +164552,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 16000,
     "storageType": "HDD",
-    "interface": "SATA"
+    "interface": "SATA",
+    "rpm": 7200
   },
   {
     "id": 100849,
@@ -163869,7 +164577,8 @@ export const PARTS = [
     "cap": 16000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\""
   },
   {
     "id": 100850,
@@ -163893,7 +164602,8 @@ export const PARTS = [
     "cap": 18000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100851,
@@ -163917,7 +164627,8 @@ export const PARTS = [
     "cap": 20000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\""
   },
   {
     "id": 100852,
@@ -163941,7 +164652,9 @@ export const PARTS = [
     "cap": 20000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100853,
@@ -163965,7 +164678,9 @@ export const PARTS = [
     "cap": 24000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100854,
@@ -163988,7 +164703,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 20000,
     "storageType": "HDD",
-    "interface": "SATA"
+    "interface": "SATA",
+    "formFactor": "3.5\""
   },
   {
     "id": 100855,
@@ -164011,7 +164727,9 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 28000,
     "storageType": "HDD",
-    "interface": "SATA"
+    "interface": "SATA",
+    "formFactor": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100856,
@@ -164035,7 +164753,9 @@ export const PARTS = [
     "cap": 20000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100857,
@@ -164059,7 +164779,8 @@ export const PARTS = [
     "cap": 20000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\""
   },
   {
     "id": 100858,
@@ -164106,7 +164827,9 @@ export const PARTS = [
     "cap": 20000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100860,
@@ -164129,7 +164852,9 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 24000,
     "storageType": "HDD",
-    "interface": "SATA"
+    "interface": "SATA",
+    "formFactor": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100861,
@@ -164153,7 +164878,8 @@ export const PARTS = [
     "cap": 2000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\""
   },
   {
     "id": 100862,
@@ -164177,7 +164903,8 @@ export const PARTS = [
     "cap": 3000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "formFactor": "3.5\""
   },
   {
     "id": 100863,
@@ -164200,7 +164927,9 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 26000,
     "storageType": "HDD",
-    "interface": "SATA"
+    "interface": "SATA",
+    "formFactor": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100864,
@@ -164245,7 +164974,8 @@ export const PARTS = [
     "cap": 12000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100866,
@@ -164268,7 +164998,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 8,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "formFactor": "M.2"
   },
   {
     "id": 100867,
@@ -164292,7 +165023,8 @@ export const PARTS = [
     "cap": 24000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "3.5\""
+    "ff": "3.5\"",
+    "rpm": 7200
   },
   {
     "id": 100868,
@@ -164315,7 +165047,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 8,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "formFactor": "M.2"
   },
   {
     "id": 100869,
@@ -164361,7 +165094,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 500,
     "storageType": "SSD",
-    "interface": "SATA"
+    "interface": "SATA",
+    "read": 1050
   },
   {
     "id": 100871,
@@ -174140,7 +174874,9 @@ export const PARTS = [
     "cap": 8000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 5
+    "pcie": 5,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 101265,
@@ -174163,7 +174899,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 8000,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "formFactor": "M.2"
   },
   {
     "id": 101266,
@@ -174186,7 +174923,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 8000,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "formFactor": "M.2"
   },
   {
     "id": 101267,
@@ -174208,7 +174946,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "needsReview": true
   },
   {
     "id": 101268,
@@ -174230,7 +174969,9 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.670Z",
     "source": "amazon-discovery",
     "cap": 1000,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "read": 2000,
+    "interface": "USB"
   },
   {
     "id": 101269,
@@ -174252,7 +174993,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.670Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "needsReview": true
   },
   {
     "id": 101270,
@@ -174276,7 +175018,9 @@ export const PARTS = [
     "cap": 4000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 101271,
@@ -174298,7 +175042,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.671Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "needsReview": true
   },
   {
     "id": 101272,
@@ -174322,7 +175067,10 @@ export const PARTS = [
     "cap": 500,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "read": 4850,
+    "pcieGen": 4,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 101273,
@@ -174345,7 +175093,9 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 256,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 101274,
@@ -174367,7 +175117,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.671Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "formFactor": "M.2"
   },
   {
     "id": 101275,
@@ -174389,7 +175140,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.671Z",
     "source": "amazon-discovery",
     "cap": 1000,
-    "pcie": 4
+    "pcie": 4,
+    "read": 5150,
+    "pcieGen": 4,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 101276,
@@ -174460,7 +175214,9 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 256,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 101279,
@@ -174483,7 +175239,10 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 512,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "read": 5200,
+    "pcieGen": 4,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 101280,
@@ -174505,7 +175264,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.671Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "needsReview": true
   },
   {
     "id": 101281,
@@ -174672,7 +175432,9 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 1000,
     "storageType": "SSD",
-    "interface": "USB"
+    "interface": "USB",
+    "read": 2000,
+    "pcieGen": 2
   },
   {
     "id": 101288,
@@ -174694,7 +175456,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.671Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "formFactor": "M.2"
   },
   {
     "id": 101289,
@@ -174716,7 +175479,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:31:54.671Z",
     "source": "amazon-discovery",
     "cap": 4000,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "read": 3800,
+    "write": 3700,
+    "interface": "USB"
   },
   {
     "id": 101290,
@@ -174740,7 +175506,9 @@ export const PARTS = [
     "cap": 1000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 5
+    "pcie": 5,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 101291,
@@ -174764,7 +175532,11 @@ export const PARTS = [
     "cap": 1000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 5
+    "pcie": 5,
+    "read": 11700,
+    "write": 9500,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 101292,
@@ -174788,7 +175560,9 @@ export const PARTS = [
     "cap": 1000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "read": 7300,
+    "pcieGen": 4
   },
   {
     "id": 101293,
@@ -177670,7 +178444,9 @@ export const PARTS = [
     "cap": 8000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 5
+    "pcie": 5,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 101413,
@@ -177693,7 +178469,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 8000,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "formFactor": "M.2"
   },
   {
     "id": 101414,
@@ -177716,7 +178493,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 8000,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "formFactor": "M.2"
   },
   {
     "id": 101415,
@@ -177738,7 +178516,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.993Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "needsReview": true
   },
   {
     "id": 101416,
@@ -177760,7 +178539,9 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.993Z",
     "source": "amazon-discovery",
     "cap": 1000,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "read": 2000,
+    "interface": "USB"
   },
   {
     "id": 101417,
@@ -177782,7 +178563,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.993Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "needsReview": true
   },
   {
     "id": 101418,
@@ -177806,7 +178588,9 @@ export const PARTS = [
     "cap": 4000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 101419,
@@ -177828,7 +178612,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.994Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "needsReview": true
   },
   {
     "id": 101420,
@@ -177852,7 +178637,10 @@ export const PARTS = [
     "cap": 500,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "read": 4850,
+    "pcieGen": 4,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 101421,
@@ -177875,7 +178663,9 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 256,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 101422,
@@ -177897,7 +178687,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.994Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "formFactor": "M.2"
   },
   {
     "id": 101423,
@@ -177919,7 +178710,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.994Z",
     "source": "amazon-discovery",
     "cap": 1000,
-    "pcie": 4
+    "pcie": 4,
+    "read": 5150,
+    "pcieGen": 4,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 101424,
@@ -177990,7 +178784,9 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 256,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "pcieGen": 4,
+    "formFactor": "M.2"
   },
   {
     "id": 101427,
@@ -178013,7 +178809,10 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 512,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "read": 5200,
+    "pcieGen": 4,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 101428,
@@ -178035,7 +178834,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.994Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "needsReview": true
   },
   {
     "id": 101429,
@@ -178202,7 +179002,9 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 1000,
     "storageType": "SSD",
-    "interface": "USB"
+    "interface": "USB",
+    "read": 2000,
+    "pcieGen": 2
   },
   {
     "id": 101436,
@@ -178224,7 +179026,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.994Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "formFactor": "M.2"
   },
   {
     "id": 101437,
@@ -178246,7 +179049,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T16:39:25.994Z",
     "source": "amazon-discovery",
     "cap": 4000,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "read": 3800,
+    "write": 3700,
+    "interface": "USB"
   },
   {
     "id": 101438,
@@ -178270,7 +179076,9 @@ export const PARTS = [
     "cap": 1000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 5
+    "pcie": 5,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 101439,
@@ -178294,7 +179102,11 @@ export const PARTS = [
     "cap": 1000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 5
+    "pcie": 5,
+    "read": 11700,
+    "write": 9500,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 101440,
@@ -178318,7 +179130,9 @@ export const PARTS = [
     "cap": 1000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "read": 7300,
+    "pcieGen": 4
   },
   {
     "id": 101441,
@@ -188242,7 +189056,9 @@ export const PARTS = [
     "cap": 8000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 5
+    "pcie": 5,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 101924,
@@ -188265,7 +189081,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 8000,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "formFactor": "M.2"
   },
   {
     "id": 101925,
@@ -188288,7 +189105,8 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 8000,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "formFactor": "M.2"
   },
   {
     "id": 101926,
@@ -188310,7 +189128,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T17:05:43.676Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "needsReview": true
   },
   {
     "id": 101927,
@@ -188332,7 +189151,9 @@ export const PARTS = [
     "addedAt": "2026-05-15T17:05:43.677Z",
     "source": "amazon-discovery",
     "cap": 1000,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "read": 2000,
+    "interface": "USB"
   },
   {
     "id": 101928,
@@ -188354,7 +189175,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T17:05:43.677Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "needsReview": true
   },
   {
     "id": 101929,
@@ -188378,7 +189200,9 @@ export const PARTS = [
     "cap": 4000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "pcieGen": 4,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 101930,
@@ -188402,7 +189226,10 @@ export const PARTS = [
     "cap": 500,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "read": 4850,
+    "pcieGen": 4,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 101931,
@@ -188424,7 +189251,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T17:05:43.678Z",
     "source": "amazon-discovery",
     "cap": 1000,
-    "pcie": 4
+    "pcie": 4,
+    "read": 5150,
+    "pcieGen": 4,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 101932,
@@ -188447,7 +189277,10 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 512,
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "read": 5200,
+    "pcieGen": 4,
+    "formFactor": "M.2 2230"
   },
   {
     "id": 101933,
@@ -188470,7 +189303,9 @@ export const PARTS = [
     "source": "amazon-discovery",
     "cap": 1000,
     "storageType": "SSD",
-    "interface": "USB"
+    "interface": "USB",
+    "read": 2000,
+    "pcieGen": 2
   },
   {
     "id": 101934,
@@ -188492,7 +189327,8 @@ export const PARTS = [
     "addedAt": "2026-05-15T17:05:43.679Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe"
+    "interface": "NVMe",
+    "formFactor": "M.2"
   },
   {
     "id": 101935,
@@ -188514,7 +189350,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T17:05:43.679Z",
     "source": "amazon-discovery",
     "cap": 4000,
-    "storageType": "SSD"
+    "storageType": "SSD",
+    "read": 3800,
+    "write": 3700,
+    "interface": "USB"
   },
   {
     "id": 101936,
@@ -188538,7 +189377,9 @@ export const PARTS = [
     "cap": 1000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 5
+    "pcie": 5,
+    "pcieGen": 5,
+    "formFactor": "M.2 2280"
   },
   {
     "id": 101937,
@@ -188562,7 +189403,11 @@ export const PARTS = [
     "cap": 1000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 5
+    "pcie": 5,
+    "read": 11700,
+    "write": 9500,
+    "pcieGen": 5,
+    "formFactor": "M.2"
   },
   {
     "id": 101938,
@@ -188586,7 +189431,9 @@ export const PARTS = [
     "cap": 1000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "read": 7300,
+    "pcieGen": 4
   }
 ];
 
