@@ -809,6 +809,7 @@ export default function UpgradePage() {
         {a.refresh.refresh && <PlatformRefreshAlert reason={a.refresh.reason} />}
         <RecommendedBuildBanner budget={a.budget} build={rb} />
         {a.bottleneck && <BottleneckAnalysisCard bn={a.bottleneck} />}
+        <UpgradeStrategyExplanation analysis={a}/>
         <PSUWarning watts={a.psuWattsNeeded} />
 
         {/* In-build sections (components auto-selected for the recommended build) */}
@@ -933,6 +934,54 @@ function RecommendedBuildBanner({budget, build}) {
             {!over && unused > 50 && <span style={{fontSize:12, marginLeft:8, fontWeight:500, color:"var(--dim)"}}>(${unused.toLocaleString()} unused)</span>}
           </div>
         </div>
+      </div>
+    </div>
+  );
+}
+
+function UpgradeStrategyExplanation({analysis}) {
+  const a = analysis;
+  const rb = a.recommendedBuild;
+  const bn = a.bottleneck;
+  // Decide strategy message
+  let title = null;
+  let body = null;
+  let color = "var(--sky, #38BDF8)";
+  if (a.refresh && a.refresh.refresh) {
+    // Platform refresh case handled by its own banner
+    return null;
+  }
+  // Case 1: CPU bottleneck + recommendation only includes CPU (no GPU)
+  if (bn && bn.who === "CPU" && rb && rb.cpu && !rb.gpu) {
+    title = "Why we recommend a CPU upgrade only";
+    body = "Your GPU is already strong enough that pairing it with a faster CPU will unlock real-world gaming performance. Spending budget on a bigger GPU right now would be wasted — your CPU can't feed it. A CPU upgrade is the most impactful use of your $" + a.budget.toLocaleString() + " budget.";
+    color = "#F87171";
+  }
+  // Case 2: CPU bottleneck + recommendation includes GPU upgrade
+  else if (bn && bn.who === "CPU" && rb && rb.gpu) {
+    title = "Note: Your CPU is the bottleneck";
+    body = "We've included a GPU recommendation, but be aware that your CPU is currently limiting performance. The CPU upgrade in this build will help, but if budget is tight, prioritize the CPU over the GPU for the biggest gaming gains.";
+    color = "#FFB020";
+  }
+  // Case 3: GPU bottleneck + recommendation includes GPU
+  else if (bn && bn.who === "GPU" && rb && rb.gpu) {
+    title = "Why we recommend a GPU upgrade";
+    body = "Your CPU has more headroom than your GPU can use. A GPU upgrade will give you the biggest performance gain, especially at higher resolutions (1440p/4K).";
+    color = "#4ADE80";
+  }
+  // Case 4: Balanced - any upgrade works
+  else if (bn && bn.who === "Balanced" && rb && (rb.gpu || rb.cpu)) {
+    title = "Your system is well balanced";
+    body = "Your CPU and GPU are matched well. Either upgrade will give proportional gains — we picked the best value within your budget.";
+    color = "#FFB020";
+  }
+  if (!title) return null;
+  return (
+    <div style={{background:"rgba(56,189,248,0.06)", border:`1px solid ${color}`, borderRadius:12, padding:"14px 18px", marginBottom:20, display:"flex", gap:10, alignItems:"flex-start"}}>
+      <span style={{fontSize:18, flexShrink:0}}>💡</span>
+      <div>
+        <div style={{fontFamily:"var(--ff)", fontSize:13, fontWeight:700, color, marginBottom:4}}>{title}</div>
+        <div style={{fontFamily:"var(--ff)", fontSize:12, color:"var(--dim)", lineHeight:1.5}}>{body}</div>
       </div>
     </div>
   );
