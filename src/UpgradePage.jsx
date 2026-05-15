@@ -263,8 +263,12 @@ function needsPlatformRefresh(currentCPU, cpuModel, rawSocket) {
       if (!has) return { refresh: true, reason: `LGA1151 has no upgrade path in our catalog` };
     }
     if (gen === 10 || gen === 11) {
-      const has = PARTS.some(p => p.c === "CPU" && !p.bundle && p.socket === "LGA1200" && p.bench != null);
-      if (!has) return { refresh: true, reason: `LGA1200 is dead-end — LGA1700 or LGA1851 recommended` };
+      // Require a meaningful upgrade (15%+ bench gain over current)
+      const currBench = currentCPU?.bench || 0;
+      const has = currBench > 0
+        ? PARTS.some(p => p.c === "CPU" && !p.bundle && p.socket === "LGA1200" && p.bench != null && p.bench >= currBench * 1.15)
+        : PARTS.some(p => p.c === "CPU" && !p.bundle && p.socket === "LGA1200" && p.bench != null);
+      if (!has) return { refresh: true, reason: `LGA1200 has no meaningful upgrade path — LGA1700 or LGA1851 recommended` };
     }
   }
   return { refresh: false };
@@ -495,7 +499,7 @@ const COOLER_TIER_LABELS = {
 // ─── BUILD OPTIMIZER ────────────────────────────────────────────────
 // Recommended ratio: GPU bench ≤ ~3.5x CPU bench for balanced gaming.
 // Past that, CPU becomes the limiting factor and GPU performance is wasted.
-const MAX_GPU_CPU_BENCH_RATIO = 3.5;
+const MAX_GPU_CPU_BENCH_RATIO = 2.0;
 
 function optimizeBuild(currentGPU, currentCPU, candidates, budget) {
   const maxBudget = budget * (1 + BUDGET_OVERAGE);
@@ -519,7 +523,12 @@ function optimizeBuild(currentGPU, currentCPU, candidates, budget) {
           if (cost <= 0 || cost > maxBudget) continue;
           const gpuGain = gpu && curG > 0 ? ((gpu.bench - curG) / curG) * 100 : 0;
           const cpuGain = cpu && curC > 0 ? ((cpu.bench - curC) / curC) * 100 : 0;
-          let score = gpuGain * 1.0 + cpuGain * 0.6 + (ram ? 5 : 0) + (sto ? 3 : 0);
+          // Detect if user's CURRENT config is CPU-bound
+          const isCpuBound = curG > 0 && curC > 0 && (curC / curG) < 0.6;
+          // When CPU is bottlenecking, flip weights to favor CPU upgrades
+          let score = isCpuBound
+            ? (gpuGain * 0.4 + cpuGain * 1.5 + (ram ? 5 : 0) + (sto ? 3 : 0))
+            : (gpuGain * 1.0 + cpuGain * 0.6 + (ram ? 5 : 0) + (sto ? 3 : 0));
 
           // Bottleneck penalty: compare selected GPU bench vs effective CPU bench
           // (new CPU if being upgraded, else current CPU). If GPU is too strong
