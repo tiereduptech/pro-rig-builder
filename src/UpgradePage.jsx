@@ -54,9 +54,11 @@ const COOLER_LABELS = {
 // ─── URL PARSING ────────────────────────────────────────────────────
 function parseSpecs() {
   try {
-    const hash = window.location.hash.split("?")[1] || "";
-    const params = new URLSearchParams(hash);
-    const raw = params.get("specs");
+    // Path routing: ?specs=... lives in the query string now (was in hash before)
+    const queryParams = new URLSearchParams(window.location.search);
+    const hashAfterQ  = window.location.hash.split("?")[1] || "";
+    const hashParams  = new URLSearchParams(hashAfterQ);
+    const raw = queryParams.get("specs") || hashParams.get("specs");
     if (!raw) return null;
     return JSON.parse(atob(decodeURIComponent(raw)));
   } catch (e) {
