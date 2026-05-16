@@ -2562,11 +2562,33 @@ const SEARCH_SYNONYMS = {
 
 // Match a single token against the blob, with synonym fallback
 function tokenMatches(token, blob) {
-  if (blob.includes(token)) return true;
+  // SHORT-TOKEN word-boundary fix: a 1-3 char token containing a letter
+  // (e.g. "ti", "xt", "kf") must match a whole word or a digit-glued form
+  // like "5070ti" — never a substring buried inside another word.
+  const hasLetter = /[a-z]/i.test(token);
+  const matchOne = (t) => {
+    if (!t) return false;
+    if (t.length <= 3 && /[a-z]/i.test(t)) {
+      // whole-word match, allowing the token to be glued to digits
+      const esc = t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const re = new RegExp("(^|[^a-z0-9])\\d*" + esc + "\\d*([^a-z0-9]|$)", "i");
+      return re.test(blob);
+    }
+    return blob.includes(t);
+  };
+  // Also normalize a digit+letter glued query token ("5070ti") so it can
+  // match a spaced blob ("5070 ti"): split into the run pieces and require all.
+  const glued = token.match(/^(\d+)([a-z].*)$/i);
+  if (glued) {
+    if (matchOne(token)) return true;
+    if (blob.includes(glued[1]) && matchOne(glued[2])) return true;
+  } else if (matchOne(token)) {
+    return true;
+  }
   const syn = SEARCH_SYNONYMS[token];
   if (syn) {
-    for (const alt of syn.split(' ')) {
-      if (blob.includes(alt)) return true;
+    for (const alt of syn.split(" ")) {
+      if (matchOne(alt)) return true;
     }
   }
   return false;
