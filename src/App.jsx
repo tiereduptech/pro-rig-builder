@@ -69,7 +69,7 @@ OS:{icon:"🪟",label:"Operating Systems",singular:"OS",desc:"Windows & Linux",c
 };
 const CATS=Object.keys(CAT);
 // Builder table sections
-const CORE_CATS=["Case","CPU","CPUCooler","Motherboard","RAM","GPU","Storage","PSU"];
+const CORE_CATS=["GPU","Case","CPU","Motherboard","Storage","RAM","CPUCooler","PSU"];
 const COOLING_CATS=["CaseFan"];
 const EXPANSION_CATS=["SoundCard","EthernetCard","WiFiCard","OpticalDrive"];
 const CABLE_CATS=["ExtensionCables","OS"];
