@@ -3786,6 +3786,14 @@ function BuilderPage({th}){
     if(gpu&&cat==="CPU"&&gpu.bench){
       const gb = gpu.bench;
       r=r.filter(x=>{
+        // RTX 4000/5000 series require modern CPU sockets (LGA1700+ or AM5)
+        const gpuName = (gpu.n || '').toUpperCase();
+        const isModernNvidia = /\bRTX\s*[45]\d{3}\b/.test(gpuName);
+        if(isModernNvidia){
+          const sock = (x.socket || '').toUpperCase();
+          const modernSockets = ['LGA1700','LGA1851','AM5'];
+          if(sock && !modernSockets.includes(sock)) return false;
+        }
         // Hide server/workstation CPUs and obvious budget chips when GPU is mid-tier+
         if(gb>=60){
           const nm = (x.n||'').toLowerCase();
