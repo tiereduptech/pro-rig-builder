@@ -3805,16 +3805,6 @@ function BuilderPage({th}){
       return s+(multiParts[c]||[]).reduce((t,p)=>t+$(p),0);
     },0);
     return <div key={section.id} style={{marginBottom:8}}>
-    {/* === GETTING STARTED BANNER === */}
-    {Object.keys(build).length === 0 && Object.keys(multiParts).length === 0 && <div style={{maxWidth:1600,margin:"24px auto 0",padding:"0 32px"}}>
-      <div style={{borderLeft:"3px solid var(--accent)",background:"var(--accent3)",padding:"16px 20px",display:"flex",alignItems:"center",justifyContent:"space-between",gap:16,flexWrap:"wrap"}}>
-        <div style={{flex:1,minWidth:240}}>
-          <div style={{fontFamily:"var(--ff-display)",fontSize:18,fontWeight:600,color:"var(--txt)",marginBottom:4}}>Don't know where to start?</div>
-          <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.5}}>Check out our Build Wizard. Tell it your budget and use case, and it'll build a fully compatible parts list for you.</div>
-        </div>
-        <button onClick={()=>{try{window.location.href="/tools/build-wizard"}catch(e){}}} style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,padding:"12px 22px",background:"var(--accent)",color:"var(--bg)",border:"none",cursor:"pointer",whiteSpace:"nowrap"}}>Open Build Wizard &rarr;</button>
-      </div>
-    </div>}
 
       <button onClick={()=>toggleSection(section.id)} style={{display:"flex",width:"100%",alignItems:"center",gap:8,padding:"10px 16px",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:isOpen?"10px 10px 0 0":"10px",cursor:"pointer",textAlign:"left"}}>
         <SectionIcon name={section.icon} size={17}/>
