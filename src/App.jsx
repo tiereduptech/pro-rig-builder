@@ -84,6 +84,20 @@ const CatIcon = ({c, size=16, color="currentColor", style={}}) => {
   const Cmp = CAT_ICONS[c] || Box;
   return <Cmp size={size} color={color} style={{flexShrink:0, ...style}} strokeWidth={1.75}/>;
 };
+// Section group icons (for collapsible groupings in builder)
+const SECTION_ICONS = {
+  core: Cpu,
+  cooling: Fan,
+  expansion: CircuitBoard,
+  cables: Cable,
+  peripherals: Monitor,
+  accessories: Shield,
+};
+const SectionIcon = ({name, size=17, color="currentColor", style={}}) => {
+  const Cmp = SECTION_ICONS[name] || Box;
+  return <Cmp size={size} color={color} style={{flexShrink:0, ...style}} strokeWidth={1.75}/>;
+};
+
 
 // Builder table sections
 const CORE_CATS=["GPU","Case","CPU","Motherboard","Storage","RAM","CPUCooler","PSU"];
@@ -979,7 +993,7 @@ function Nav({page,setPage,onBrowse,th,theme,toggleTheme}){
       {canGoBack&&<button onClick={()=>window.history.back()} style={{background:"none",border:"none",cursor:"pointer",color:"var(--dim)",fontSize:22,padding:"4px 8px 4px 0"}} title="Go back">←</button>}
       {/* Logo */}
       <button onClick={()=>setPage("home")} style={{background:"none",border:"none",cursor:"pointer",display:"flex",alignItems:"center",gap:8,marginRight:24}}>
-        <TowerLogo size={72}/>
+        <TowerLogo size={180}/>
       </button>
       <button onClick={()=>setPage("scanner")} style={{display:"inline-flex",alignItems:"center",gap:6,padding:"6px 12px",borderRadius:20,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,cursor:"pointer",marginRight:20,transition:"all .15s"}}
         onMouseEnter={e=>{e.currentTarget.style.background="var(--accent)";e.currentTarget.style.color="#fff";}}
@@ -3792,7 +3806,7 @@ function BuilderPage({th}){
     },0);
     return <div key={section.id} style={{marginBottom:8}}>
       <button onClick={()=>toggleSection(section.id)} style={{display:"flex",width:"100%",alignItems:"center",gap:8,padding:"10px 16px",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:isOpen?"10px 10px 0 0":"10px",cursor:"pointer",textAlign:"left"}}>
-        <span style={{fontSize:17}}>{section.icon}</span>
+        <SectionIcon name={section.icon} size={17}/>
         <span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",flex:1}}>{section.label}</span>
         {sectionParts.length>0&&<span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)"}}>{sectionParts.length} items · ${sectionTotal}</span>}
         <span style={{color:"var(--mute)",fontSize:13}}>{isOpen?"−":"+"}</span>
