@@ -45,3 +45,6 @@ dedupe-report.json
 src/data/parts.js.pre-*
 
 phase2-report.json
+
+public/price-history/
+dist/price-history/

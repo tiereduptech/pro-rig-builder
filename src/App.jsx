@@ -23,6 +23,69 @@ const _CLEAN_SUBSERIES = [
 ];
 const _CLEAN_AIB_BRANDS = ['ASUS','MSI','GIGABYTE','Gigabyte','EVGA','PNY','PowerColor','Sapphire','Sparkle','XFX','ZOTAC','Yeston','ASRock','Inno3D','Galax'];
 
+// ─── PRICE HISTORY ───────────────────────────────────────────────
+// Slug must match split-price-history.js exactly: normalized name → slug.
+function productSlug(p){
+  const norm = String((p && p.n) || "")
+    .toLowerCase().replace(/\s+/g," ").replace(/[^a-z0-9 ]/g,"").trim();
+  return norm.replace(/\s+/g,"-").replace(/[^a-z0-9-]/g,"")
+    .replace(/-+/g,"-").replace(/^-|-$/g,"").slice(0,80).replace(/-$/,"");
+}
+
+// Per-retailer 90-day price history chart. Fetches /price-history/<slug>.json
+// on mount. Renders a compact inline SVG line for one retailer.
+function PriceHistoryChart({ product, retailer }){
+  const [state, setState] = useState({ status: "loading", points: null });
+  useEffect(() => {
+    let cancelled = false;
+    const slug = productSlug(product);
+    if (!slug) { setState({ status: "none", points: null }); return; }
+    fetch("/price-history/" + slug + ".json")
+      .then(r => r.ok ? r.json() : Promise.reject(new Error("no data")))
+      .then(data => {
+        if (cancelled) return;
+        const pts = data && data[retailer];
+        if (Array.isArray(pts) && pts.length) setState({ status: "ok", points: pts });
+        else setState({ status: "none", points: null });
+      })
+      .catch(() => { if (!cancelled) setState({ status: "none", points: null }); });
+    return () => { cancelled = true; };
+  }, [product && product.id, retailer]);
+
+  if (state.status === "loading") {
+    return <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--mute)",padding:"10px 14px"}}>Loading price history\u2026</div>;
+  }
+  if (state.status === "none" || !state.points || state.points.length < 2) {
+    return <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--mute)",padding:"10px 14px"}}>Not enough price history yet.</div>;
+  }
+
+  const pts = state.points;
+  const prices = pts.map(x => x.p);
+  const lo = Math.min(...prices), hi = Math.max(...prices);
+  const cur = prices[prices.length - 1];
+  const W = 320, H = 80, PAD = 6;
+  const span = (hi - lo) || 1;
+  const x = i => PAD + (i / (pts.length - 1)) * (W - 2 * PAD);
+  const y = v => PAD + (1 - (v - lo) / span) * (H - 2 * PAD);
+  const d = pts.map((pt, i) => (i === 0 ? "M" : "L") + x(i).toFixed(1) + "," + y(pt.p).toFixed(1)).join(" ");
+  const first = pts[0].d, last = pts[pts.length - 1].d;
+
+  return (
+    <div style={{padding:"10px 14px 14px"}}>
+      <div style={{display:"flex",justifyContent:"space-between",fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginBottom:6}}>
+        <span>{"Low $" + lo}</span><span>{"Now $" + cur}</span><span>{"High $" + hi}</span>
+      </div>
+      <svg viewBox={"0 0 " + W + " " + H} style={{width:"100%",height:"auto",display:"block"}}>
+        <path d={d} fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
+        <circle cx={x(pts.length-1)} cy={y(cur)} r="3" fill="var(--accent)" />
+      </svg>
+      <div style={{display:"flex",justifyContent:"space-between",fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)",marginTop:4}}>
+        <span>{first}</span><span>{pts.length} days tracked</span><span>{last}</span>
+      </div>
+    </div>
+  );
+}
+
 function cleanProductName(p){
   if(!p || !p.n) return '';
   // ── CPU name cleaner ──────────────────────────────────────────
@@ -2765,6 +2828,7 @@ function CategoryGuide({ cat }) {
 function MobileSearchPage({activeCat,initialQuery,th}){
   const [cat,setCat]=useState(activeCat||"");
   const [q,setQ]=useState(initialQuery||"");
+  const [histOpen,setHistOpen]=useState(null);
   const [brands,setBrands]=useState([]);
   const [marketplaces,setMarketplaces]=useState([]);
   const [maxPr,setMaxPr]=useState(5000);
@@ -2882,7 +2946,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
           {isExp&&<div style={{padding:"0 12px 14px",borderTop:"1px solid var(--bdr)"}}>
             <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1,margin:"12px 0 8px"}}>BUY AT</div>
             <div style={{display:"flex",flexDirection:"column",gap:6}}>
-              {rr.length>0?rr.map((r,ri)=>
+              {rr.length>0?rr.map((r,ri)=>{const histKey=p.id+":"+r.name;const histOpenHere=histOpen===histKey;return <React.Fragment key={r.name}>
                 <a key={r.name} href={r.url} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:8,textDecoration:"none",background:ri===0?"var(--mint3)":"var(--bg3)",border:"1px solid "+(ri===0?"var(--mint)33":"var(--bdr)")}}>
                   <div style={{flex:1,minWidth:0}}>
                     <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}>
@@ -2896,7 +2960,10 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                     <div style={{background:ri===0?"var(--mint)":"var(--bg4)",borderRadius:6,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:ri===0?"var(--bg)":"var(--txt)"}}>Buy</div>
                   </div>
                 </a>
-              ):<a href={p.deals?.amazon?.url||"#"} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"10px 12px",borderRadius:8,background:"var(--mint3)",border:"1px solid var(--mint)33",textDecoration:"none"}}>
+                <button onClick={()=>setHistOpen(histOpenHere?null:histKey)} style={{display:"flex",alignItems:"center",gap:5,background:"none",border:"none",cursor:"pointer",fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase",padding:"3px 12px"}}>{histOpenHere?"\u25b2 Hide price history":"\u25bc 90-day price history"}</button>
+                {histOpenHere&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:8,marginBottom:4}}><PriceHistoryChart product={p} retailer={r.name}/></div>}
+                </React.Fragment>;})
+              :<a href={p.deals?.amazon?.url||"#"} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"10px 12px",borderRadius:8,background:"var(--mint3)",border:"1px solid var(--mint)33",textDecoration:"none"}}>
                 <div>
                   <span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>Amazon</span>
                   <div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--sky)"}}>✓ In Stock</div>
@@ -3001,7 +3068,7 @@ function SearchPageRouter(props){
   return isMobile?<MobileSearchPage {...props}/>:<SearchPage {...props}/>;
 }
 function SearchPage({activeCat,initialQuery,th}){
-  const [cat,setCat]=useState(activeCat||"");const [q,setQ]=useState(initialQuery||"");const [brands,setBrands]=useState([]);const [marketplaces,setMarketplaces]=useState([]);const [conditions,setConditions]=useState([]);
+  const [cat,setCat]=useState(activeCat||"");const [q,setQ]=useState(initialQuery||"");const [brands,setBrands]=useState([]);const [marketplaces,setMarketplaces]=useState([]);const [conditions,setConditions]=useState([]);const [histOpen,setHistOpen]=useState(null);
   const [viewMode,setViewMode]=useState(()=>{try{return localStorage.getItem("rigfinder_view_mode")||"row";}catch{return "row";}});
   const setViewModeP=v=>{setViewMode(v);try{localStorage.setItem("rigfinder_view_mode",v);}catch{}};const [maxPr,setMaxPr]=useState(5000);const [minPr,setMinPr]=useState(0);const [minR,setMinR]=useState(0);const [cpO,setCpO]=useState(false);const [sf,setSf]=useState({});const [sort,setSort]=useState("price-asc");
   const [expanded,setExpanded]=useState(null);
@@ -3175,7 +3242,7 @@ function SearchPage({activeCat,initialQuery,th}){
                 <div>
                   <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",letterSpacing:1,marginBottom:10,fontWeight:700,textTransform:"uppercase"}}>Buy Now</div>
                   <div style={{display:"flex",flexDirection:"column",gap:6}}>
-                    {rr.length>0?rr.map((r,ri)=>
+                    {rr.length>0?rr.map((r,ri)=>{const histKey=p.id+":"+r.name;const histOpenHere=histOpen===histKey;return <React.Fragment key={r.name}>
                       <a key={r.name} href={r.url} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",padding:"12px 14px",borderRadius:8,textDecoration:"none",gap:12,background:ri===0?"var(--mint3)":"var(--bg4)",border:`1px solid ${ri===0?"var(--mint)33":"var(--bdr)"}`}}>
                         <div style={{flex:1}}>
                           <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span>{ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}</div>
@@ -3186,7 +3253,10 @@ function SearchPage({activeCat,initialQuery,th}){
                           <div style={{background:ri===0?"var(--mint)":"var(--bg3)",border:ri===0?"none":"1px solid var(--bdr2)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:ri===0?"var(--bg)":"var(--txt)"}}>Buy →</div>
                         </div>
                       </a>
-                    ):<a href={p.deals?.amazon?.url||"#"} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"14px 16px",borderRadius:8,background:"var(--mint3)",border:"1px solid var(--mint)33",textDecoration:"none"}}>
+                      <button onClick={()=>setHistOpen(histOpenHere?null:histKey)} style={{display:"flex",alignItems:"center",gap:5,background:"none",border:"none",cursor:"pointer",fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase",padding:"3px 14px"}}>{histOpenHere?"\u25b2 Hide price history":"\u25bc 90-day price history"}</button>
+                      {histOpenHere&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:8,marginBottom:4}}><PriceHistoryChart product={p} retailer={r.name}/></div>}
+                      </React.Fragment>;})
+                    :<a href={p.deals?.amazon?.url||"#"} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"14px 16px",borderRadius:8,background:"var(--mint3)",border:"1px solid var(--mint)33",textDecoration:"none"}}>
                         <div><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>Amazon</span><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--sky)",marginTop:3}}>✓ In Stock</div></div>
                         <div style={{display:"flex",alignItems:"center",gap:12}}><span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span><div style={{background:"var(--mint)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--bg)"}}>Buy →</div></div>
                       </a>}
