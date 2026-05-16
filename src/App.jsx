@@ -3554,6 +3554,50 @@ function BuilderPage({th}){
   const [buildBudget,setBuildBudget]=useState(0); // 0 = no budget set
   const [showConfetti,setShowConfetti]=useState(false);
   const [openSections,setOpenSections]=useState({"core":true,"cooling":false,"expansion":false,"cables":false,"peripherals":false,"accessories":false});
+  // Sync picker state with browser history so back button returns to builder list
+  React.useEffect(()=>{
+    // Read initial picker state from URL hash (?pick=<cat>) when component mounts
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const initial = params.get('pick');
+      if(initial && CAT[initial]) setPicking(initial);
+    } catch(e){}
+    // Handle browser back/forward
+    const onPickerPop = () => {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const cur = params.get('pick');
+        if(cur && CAT[cur]) setPicking(cur);
+        else setPicking(null);
+      } catch(e){ setPicking(null); }
+    };
+    window.addEventListener('popstate', onPickerPop);
+    return ()=>window.removeEventListener('popstate', onPickerPop);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
+  // When picking changes via UI, push history so back button works
+  const lastPickRef = useRef(null);
+  React.useEffect(()=>{
+    if(picking === lastPickRef.current) return;
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const current = params.get('pick');
+      if(picking){
+        if(current !== picking){
+          params.set('pick', picking);
+          const q = params.toString();
+          window.history.pushState({page:'builder',pick:picking}, '', '/builder' + (q?'?'+q:''));
+        }
+      } else {
+        if(current){
+          params.delete('pick');
+          const q = params.toString();
+          window.history.pushState({page:'builder'}, '', '/builder' + (q?'?'+q:''));
+        }
+      }
+    } catch(e){}
+    lastPickRef.current = picking;
+  },[picking]);
   const prevCount=useRef(0);
 
   const toggleSection=id=>setOpenSections(s=>({...s,[id]:!s[id]}));
