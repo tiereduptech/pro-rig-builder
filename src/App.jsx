@@ -3609,6 +3609,8 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,b
   const [prMax,setPrMax]=useState(99999);
   const [expanded,setExpanded]=useState(null);
   const [filtersOpen,setFiltersOpen]=useState(false);
+  const [sf,setSf]=useState({});
+  const togSf=(col,val)=>setSf(pv=>{const cu=pv[col]||[];return{...pv,[col]:cu.includes(val)?cu.filter(v=>v!==val):[...cu,val]};});
 
   const allBr=[...new Set(compatList.map(p=>resolveBrand(p)).filter(Boolean))].sort();
   const prMx=Math.max(...compatList.map(p=>$(p)),100);
