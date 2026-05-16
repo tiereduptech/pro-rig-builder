@@ -253,6 +253,7 @@ function serializeParts(parts) {
   const stats = {};
   let totalMatched = 0;
   const matchTiers = {};
+  let listingsConsidered = 0;
   let totalAdded = 0;
   let totalSkippedNoGtin = 0;
   let totalSkipped3p = 0;
@@ -289,14 +290,31 @@ function serializeParts(parts) {
         if (key) { match = nameIndex.get(bbCat + "|" + key.toLowerCase()); if (match) matchTier = "name"; }
       }
       if (match) {
+        // ── BEST-LISTING PICK ──
+        // A catalog product can match many Best Buy listings (different
+        // sellers / prices). Keep only the best: in-stock beats
+        // out-of-stock; among equal stock status, cheaper wins.
         if (!match.deals) match.deals = {};
-        match.deals.bestbuy = {
+        const incoming = {
           price: bb.price,
           url: bb.url,
           inStock: bb.stockAvailability === "InStock",
         };
-        matched++;
-        matchTiers[matchTier] = (matchTiers[matchTier] || 0) + 1;
+        const existing = match.deals.bestbuy;
+        let better;
+        if (!existing) {
+          better = true;
+        } else if (incoming.inStock !== existing.inStock) {
+          better = incoming.inStock; // in-stock always beats out-of-stock
+        } else {
+          better = typeof incoming.price === "number" &&
+                   (typeof existing.price !== "number" || incoming.price < existing.price);
+        }
+        if (better) {
+          if (!existing) { matched++; matchTiers[matchTier] = (matchTiers[matchTier] || 0) + 1; }
+          match.deals.bestbuy = incoming;
+        }
+        listingsConsidered++;
       } else if (!MATCH_ONLY) {
         parts.push(bestBuyToNewPart(bb, nextId++));
         added++;
@@ -316,6 +334,7 @@ function serializeParts(parts) {
   console.log('\n━━━ TOTALS ━━━');
   console.log(`  Matched (Amazon + Best Buy): ${totalMatched}`);
   console.log(`    by GTIN: ${matchTiers.gtin||0} | by MPN: ${matchTiers.mpn||0} | by name: ${matchTiers.name||0}`);
+  console.log(`    (${listingsConsidered} Best Buy listings considered \u2192 ${totalMatched} products got the best-priced one)`);
   console.log(`  Added (Best Buy only):       ${totalAdded}`);
   console.log(`  Skipped (no GTIN):           ${totalSkippedNoGtin}`);
   console.log(`  Skipped (3P marketplace):    ${totalSkipped3p}`);

@@ -1459,6 +1459,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 239.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10758944&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-ultra-7-265kf-20-cores-20-threads-4-6ghz-5-5-ghz-turbo-socket-lga-1851-unlocked-desktop-processor-multi%2FJXZRJ553TK&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "igpu": false,
@@ -1503,6 +1508,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10758921&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-ultra-5-245kf-14-cores-14-threads-4-6ghz-5-2-ghz-turbo-socket-lga-1851-unlocked-desktop-processor-multi%2FJXZRJ5535T&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "igpu": false,
@@ -1769,6 +1779,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 348.79,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12588405&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i7-14700f-14th-gen-20-core-28-thread-5-4ghz-turbo-socket-lga1700-unlocked-desktop-processor-multi%2FJXZRJ55JG3&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "igpu": false,
@@ -1813,6 +1828,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 259.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12588403&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i5-14600kf-14th-gen-14-core-20-thread-4-0ghz-5-3ghz-turbo-socket-lga-1700-unlocked-desktop-processor-multi%2FJXZRJ557JX&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "igpu": false,
@@ -1986,6 +2006,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 191.09,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12570790&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i5-14400f-14th-gen-10-core-16-thread-4-7ghz-turbo-socket-lga1700-unlocked-desktop-processor-multi%2FJXZRJ55J28&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "igpu": false,
@@ -2074,6 +2099,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 104.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11052891&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i3-14100f-14th-gen-4-core-8-thread-4-7ghz-turbo-socket-lga-1700-unlocked-desktop-processor-multi%2FJXZRJ55JJS&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "igpu": false,
@@ -2208,6 +2238,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 1195.48,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11233016&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i7-13700k-13th-gen-16-cores-8-p-cores-8-e-cores-30m-cache-3-4-to-5-4-ghz-lga1700-unlocked-desktop-processor-grey-black-gold%2FJXZRJ5ZTT2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "upc": "00735858526678",
@@ -2297,6 +2332,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 377.67,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12541875&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i5-13600k-13th-gen-14-cores-6-p-cores-8-e-cores-24m-cache-3-5-to-5-1-ghz-lga1700-unlocked-desktop-processor-grey-black-gold%2FJXZRJ5ZTWQ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "upc": "00735858526715",
@@ -2604,6 +2644,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 466.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013490&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i9-12900k-desktop-processor-16-8p-8e-cores-up-to-5-2-ghz-unlocked-lga1700-600-series-chipset-125w-grey-black-gold%2FJXZRJ5WVY6&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "upc": "00735858499613",
@@ -2647,6 +2692,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 353.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12588404&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i9-12900kf-desktop-processor-16-8p-8e-cores-up-to-5-2-ghz-unlocked-lga1700-600-series-chipset-125w%2FJXZRJ5WFH6&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "igpu": false,
@@ -2737,6 +2787,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 275.55,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10180559&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i7-12700kf-desktop-processor-12-8p-4e-cores-up-to-5-0-ghz-unlocked-lga1700-600-series-chipset-125w-grey-black-gold%2FJXZRJ5WFYG&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "igpu": false,
@@ -2782,6 +2837,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 169.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11048829&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i5-12600kf-desktop-processor-10-6p-4e-cores-up-to-4-9-ghz-unlocked-lga1700-600-series-chipset-125w%2FJXZRJ5WF9G&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "igpu": false,
@@ -3245,6 +3305,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.776Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 162.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11576991&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-5-8400f-desktop-processor-6-core-12-threads-4-7-ghz-max-boost-clock-22-mb-total-cache-pcie-4-0-ready%2FJXKQHH58KS&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 11,
@@ -3318,6 +3383,11 @@ export const PARTS = [
       "amazon": {
         "price": 284.99,
         "url": "https://www.amazon.com/dp/B09MDHZ2YQ?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 298.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12090868&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i7-12700f-12th-generation-12-core-20-thread-2-1-to-4-9-ghz-lga1700-desktop-processor-grey-black-gold%2FJXZRJ5KXV3&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -3447,6 +3517,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.357Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 242.05,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11519277&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i5-12500-12th-generation-6-core-12-thread-3-0-to-4-6-ghz-lga1700-desktop-processor%2FJXZRJ5K8YL&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 12,
@@ -3634,6 +3709,11 @@ export const PARTS = [
         "price": 699.78,
         "url": "https://www.amazon.com/dp/B0CY3998PK?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 731.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12025570&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i9-14900ks-24-core-3-2ghz-150w-lga-1700-desktop-processor-retail-box%2FJXZRJ55C46&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "mpn": "BX8071514900KS",
@@ -3678,6 +3758,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.348Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 299.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12551143&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-100-1000001904wof-ryzen-5-7500x3d-box-1ghz-base-4-7ghz-6-cores-12-threads-socket-am5-65w-base-tdp-radeon-graphic%2FJXKQHH5YJT&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "upc": "730143318167",
@@ -4332,8 +4417,8 @@ export const PARTS = [
     "mpn": "100-100000457BOX",
     "deals": {
       "bestbuy": {
-        "price": 159,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6510779&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6510779.p%3FskuId%3D6510779",
+        "price": 95.79,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12090944&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-5-5500-6-core-12-thread-3-6-ghz-4-2-ghz-max-boost-socket-am4-pci-express-3-0-unlocked-desktop-processor-black%2FJXKQHH5CR4&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -4375,8 +4460,8 @@ export const PARTS = [
     "mpn": "100-100000589WOF",
     "deals": {
       "bestbuy": {
-        "price": 549.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6519473&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6519473.p%3FskuId%3D6519473",
+        "price": 325.59,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12649282&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-9-7900x-12-core-24-thread-4-7-ghz-5-6-ghz-max-boost-socket-am5-pci-express-5-0-unlocked-desktop-processor-silver%2FJXKQHH52GL&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -4418,8 +4503,8 @@ export const PARTS = [
     "mpn": "100-100000593WOF",
     "deals": {
       "bestbuy": {
-        "price": 299.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6519479&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6519479.p%3FskuId%3D6519479",
+        "price": 189.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013276&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-5-7600x-6-core-12-thread-4-7ghz-5-3-ghz-max-boost-socket-am5-pci-express-5-0-unlocked-desktop-processor-silver%2FJXKQHH52CT&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -4461,8 +4546,8 @@ export const PARTS = [
     "mpn": "100-100000910WOF",
     "deals": {
       "bestbuy": {
-        "price": 449,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6537139&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6537139.p%3FskuId%3D6537139",
+        "price": 376.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12102219&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-7-7800x3d-8-core-16-thread-4-2-ghz-5-0-ghz-max-boost-socket-am5-pci-express-5-0-unlocked-desktop-processor-black%2FJXKQHH5253&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -4505,8 +4590,8 @@ export const PARTS = [
     "mpn": "BX8071514900K",
     "deals": {
       "bestbuy": {
-        "price": 499.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6560418&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6560418.p%3FskuId%3D6560418",
+        "price": 449,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12611741&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i9-14900k-14th-gen-24-core-32-thread-4-4ghz-6-0ghz-turbo-socket-lga-1700-unlocked-desktop-processor-multi%2FJXZRJ5572H&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -4556,9 +4641,9 @@ export const PARTS = [
     "mpn": "BX8071514700K",
     "deals": {
       "bestbuy": {
-        "price": 399.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6560420&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6560420.p%3FskuId%3D6560420",
-        "inStock": false
+        "price": 377.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6560420&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i7-14700k-14th-gen-20-core-28-thread-4-3ghz-5-6ghz-turbo-socket-lga-1700-unlocked-desktop-processor-multi%2FJXZRJ557C2&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445833668303700000320303",
@@ -4605,9 +4690,9 @@ export const PARTS = [
     "mpn": "BX8071514600K",
     "deals": {
       "bestbuy": {
-        "price": 259.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6560423&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6560423.p%3FskuId%3D6560423",
-        "inStock": false
+        "price": 262.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013236&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i5-14600k-14th-gen-14-core-20-thread-4-0ghz-5-3ghz-turbo-socket-lga-1700-unlocked-desktop-processor-multi%2FJXZRJ55778&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458316813593851659428938",
@@ -4656,8 +4741,8 @@ export const PARTS = [
     "mpn": "100-100001582BOX",
     "deals": {
       "bestbuy": {
-        "price": 249,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589129&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589129.p%3FskuId%3D6589129",
+        "price": 239,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589129&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-7-5800xt-8-core-16-thread-3-8-ghz-4-8-ghz-max-boost-socket-am4-pci-express-4-0-unlocked-desktop-processor-silver%2FJXKQHH586J&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -4699,8 +4784,8 @@ export const PARTS = [
     "mpn": "100-100001581WOF",
     "deals": {
       "bestbuy": {
-        "price": 349,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589133&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589133.p%3FskuId%3D6589133",
+        "price": 311,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589133&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-9-5900xt-16-core-32-thread-3-3-ghz-4-8-ghz-max-boost-socket-am4-pci-express-4-0-unlocked-desktop-processor-silver%2FJXKQHH589C&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -4918,8 +5003,8 @@ export const PARTS = [
     "mpn": "BX80768245K",
     "deals": {
       "bestbuy": {
-        "price": 326.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602199&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602199.p%3FskuId%3D6602199",
+        "price": 179.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10148443&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-ultra-5-245k-14-cores-14-threads-4-6ghz-5-2-ghz-turbo-socket-lga-1851-unlocked-desktop-processor-multi%2FJXZRJ5534W&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -4967,8 +5052,8 @@ export const PARTS = [
     "mpn": "BX80768285K",
     "deals": {
       "bestbuy": {
-        "price": 619.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602200&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602200.p%3FskuId%3D6602200",
+        "price": 549.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10148518&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-ultra-9-285k-24-cores-24-threads-4-6ghz-5-7-ghz-turbo-socket-lga-1851-unlocked-desktop-processor-multi%2FJXZRJ553QL&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -5016,9 +5101,9 @@ export const PARTS = [
     "mpn": "BX80768265K",
     "deals": {
       "bestbuy": {
-        "price": 319.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602214&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602214.p%3FskuId%3D6602214",
-        "inStock": false
+        "price": 313.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12122566&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-ultra-7-265k-20-cores-20-threads-4-6ghz-5-5-ghz-turbo-socket-lga-1851-unlocked-desktop-processor-multi%2FJXZRJ5534X&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445837299268243703955023",
@@ -5329,9 +5414,9 @@ export const PARTS = [
     "mpn": "BX80768270K",
     "deals": {
       "bestbuy": {
-        "price": 346.8,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676679&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676679.p%3FskuId%3D6676679",
-        "inStock": false
+        "price": 329.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12555947&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-ultra-7-processor-270k-plus-24-cores-8-p-cores-16-e-cores-up-to-5-5-ghz-multi%2FJXZRJ55PGL&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458317687773096029546502",
@@ -6265,6 +6350,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 434.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013419&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-x870e-e-gaming-wifi-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-black%2FJJGGLQHLHT&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 0,
@@ -6359,6 +6449,11 @@ export const PARTS = [
         "price": 699.99,
         "url": "https://www.amazon.com/dp/B0G4P65W1J?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 299.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6634888&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-x870e-p-wifi-socket-am5-amd-x870e-atx-ddr5-wi-fi-7-motherboard-gray%2FJ3P7TXQ35Q&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 0,
@@ -6435,6 +6530,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 392.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12215016&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-x870e-aorus-elite-x3d-ice-am5-amd-x870e-atx-motherboard%2FJ3ZW9X7P2J&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 17,
@@ -6548,6 +6648,11 @@ export const PARTS = [
       "amazon": {
         "price": 169.19,
         "url": "https://www.amazon.com/dp/B0BHMTYZKZ?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 243.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12214966&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-b650e-i-gaming-wifi-am5-ddr5-mitx-motherboard-10-2-power-pcie-5-0-2-5g-lan-wifi-6e%2FJJG7VW2GQP&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -6684,6 +6789,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 105.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021847&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-b650m-pro-rs-am5-amd-b650-micro-atx-motherboard%2FC34K265LF4&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 93,
@@ -6763,6 +6873,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 286.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12645108&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnewegg-asus-rog-strix-b550-f-amd-ryzen-5-5500-team-group-16gb%2FJ3R8FKJQGF&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 61,
@@ -6842,6 +6957,11 @@ export const PARTS = [
       "amazon": {
         "price": 140,
         "url": "https://www.amazon.com/dp/B08KGVH7YC?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 151.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013053&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b550-aorus-elite-ax-v2%2FJ3ZW92F6LK&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -6964,6 +7084,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 241.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013052&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-z890-p-wifi-lga-1851-atx-motherboard-prime-z890-p-wifi%2FJJGGLQWGT9&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 8,
@@ -7008,6 +7133,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 235.18,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11015088&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-z890-s-wifi-lga-1851-intel-z890-atx-motherboard%2FJ3P7TX9W9K&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 0,
@@ -7053,6 +7183,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 275.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013023&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-z890-tomahawk-wifi-socket-lga-1851-intel-z890-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX9SRJ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 27,
@@ -7098,6 +7233,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 275.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021831&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-z890-aorus-elite-x-ice-lga-1851-ddr5-5x-m-2-pcie-5-0-thunderbolt-4-wifi7-2-5gbe-atx%2FJ3ZW92V5CP&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 22,
@@ -7228,6 +7368,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 204.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12081396&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-z790-a-wifi-ii-lga-1700-intel-z790-sata-6gb-s-ddr5-atx-motherboard%2FJ3P7TXHRFW&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 37,
@@ -7363,6 +7508,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 173.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013298&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b760m-project-zero-desktop-motherboard%2FJ3P7TXYKQK&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 47,
@@ -7408,6 +7558,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 142.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11022761&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b760m-ds3h-ax-socket-lga-1700-intel-b760-matx-ddr4-motherboard-black%2FJ3ZW92V3YZ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 100,
@@ -7517,6 +7672,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 131.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11941432&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b650m-d3hp-ax-am5-ddr5-pcie-4-0-wi-fi-6e-2-5gbe%2FJ3ZW92VRFY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 83,
@@ -7563,6 +7723,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 213.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12588169&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b850-v-evo-wifi-socket-am5-amd-b850-atx-ddr5-wi-fi-7-motherboard%2FJ3P7TXT26J&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 34,
@@ -7608,6 +7773,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 180.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013395&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-b850-max-gaming-wifi-w%2FJJGGLHGKQP&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 42,
@@ -7654,6 +7824,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 222.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013384&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b850-gaming-x-wifi6e-gaming-desktop-motherboard%2FJ3ZW92VFZP&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 17,
@@ -7700,6 +7875,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 148.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013060&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-b850m-pro-rs-wifi-am5-amd-b850-micro-atx-motherboard%2FC34FQFQYRC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 61,
@@ -7835,6 +8015,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 180.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013277&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-z890-pro-rs-motherboard%2FC34K265QFC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 9,
@@ -8047,6 +8232,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 127.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013367&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b550m-aorus-elite-ax-desktop-motherboard%2FJ3ZW92VYHK&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 100,
@@ -8093,6 +8283,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 97.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10955152&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-b550-phantom-gaming-4-socket-am4-amd-b550-ddr4-quad-crossfirex-sata3-usb3-2-m-2-atx-motherboard%2FC34K264QYV&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 100,
@@ -8226,6 +8421,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 198.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013283&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b650i-ultra-gaming-desktop-motherboard%2FJ3ZW92V37T&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 17,
@@ -8303,6 +8503,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 121.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013079&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b550-eagle-wifi6-gaming-desktop-motherboard%2FJ3ZW9X77Q9&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 17,
@@ -8509,6 +8714,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 307.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11334666&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-z890-a-gaming-wifi-intel-ultra-2-ready-ddr5-wifi-7-thunderbolt-4-ai-oc%2FJJGGLQWR2Y&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -8547,8 +8757,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 429.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604429&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604429.p%3FskuId%3D6604429",
+        "price": 359.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604429&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-x870e-carbon-wifi-socket-am5-amd-x870e-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX9S6K&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -8611,8 +8821,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 240.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616912&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616912.p%3FskuId%3D6616912",
+        "price": 179.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616912&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b850-p-wifi-socket-am5-amd-b850-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX62XG&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -9271,6 +9481,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 142.44,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11615584&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b550m-k-am4-amd-b550-micro-atx-motherboard-with-dual-m-2-sata-6gb-s-usb-3-2-gen-1-realtek-gbe-lan-pcie-4-0%2FJ3ZW92VGQ8&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 30,
@@ -9467,6 +9682,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 101.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013026&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b550-gaming-x-v2%2FJ3ZW92F6RC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 31,
@@ -9526,6 +9746,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 309.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12243293&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-x870a-gam-wifi-white%2FJJGGLQT3R2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 27,
@@ -9565,8 +9790,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 279.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601394&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601394.p%3FskuId%3D6601394",
+        "price": 189,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11747668&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gaming-x870-plus-wifi-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-black%2FJJGGLQHGK2&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -9690,6 +9915,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12641612&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-b650e-max-gaming-wifi-w-am5-pcie-5-0-ddr5-wi-fi-6e-usb-10gbps-bios-flashback-aura-sync%2FJJGGLHGPFQ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -9846,6 +10076,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 121.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013449&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b760m-p-ddr4-lga-1700-micro-atx-motherboard-b760mpd4%2FJ3P7TXGWXQ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -10045,6 +10280,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 524.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12312673&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-proart-x870e-creator-wifi-amd-am5-pcie-5-0-ddr5-usb4-10-2-5-gb-lan-wifi-7-4-m-2%2FJJGGLQHK8X&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 9,
@@ -10606,6 +10846,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 105.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11058483&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-b760maywwifid4ii-micro-atx-motherboard%2FJJGHGP2XK7&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 17,
@@ -10690,6 +10935,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 151.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013434&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b650m-aorus-elite-gaming-desktop-motherboard%2FJ3ZW92VXJY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 36,
@@ -10770,6 +11020,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 112.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11279839&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-h610m-g-ddr4-desktop-motherboard%2FJ3P7TX34JR&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -10865,6 +11120,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 221.53,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10953924&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-gaming-b760-plus-wifi-gaming-desktop-motherboard%2FJJGGLRJCX6&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 30,
@@ -11196,6 +11456,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 185.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12249103&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-x870-gaming-wifi6-am5-atx-ddr5-3x-m-2-pcie-5-0-usb4-2-5gbe-5-year-warranty%2FJ3ZW92V5VK&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 18,
@@ -11244,6 +11509,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 145.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013237&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-b760m-a-ax-desktop-motherboard%2FJJGGLR7JPG&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 9,
@@ -11396,6 +11666,11 @@ export const PARTS = [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 169.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11898708&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-x870-p-wifi-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-white%2FJJGGLQQV7T&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 37,
@@ -11468,8 +11743,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 159.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637462&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637462.p%3FskuId%3D6637462",
+        "price": 157.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637462&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b850m-eagle-wifi6e-ice-socket-am5-amd-b850-micro-atx-ddr5-wi-fi-6e-motherboard-white%2FJ3ZW9X7X9X&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -11593,6 +11868,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 480.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12193210&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-proart-z890-creator-wifi-workstation-motherboard%2FJJGGLQK74T&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 8,
@@ -11728,6 +12008,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.338Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 235.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013168&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-gaming-b850-e-wifi-gaming-desktop-motherboard%2FJJGGLHL3JF&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 11,
@@ -12031,6 +12316,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.746Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 172.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11237658&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b650m-a-wifi-desktop-motherboard%2FJ3P7TXG8HW&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -12078,6 +12368,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 192.45,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11527748&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b650-s-wifi-desktop-motherboard%2FJ3P7TXY67T&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 5,
@@ -12170,6 +12465,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.044Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 213.24,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11068425&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-z790-p-wifi-desktop-motherboard%2FJ3P7TXGLP7&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -12327,6 +12627,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 381.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12214954&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-x870e-aorus-elite-x3d-am5-amd-x870e-atx-motherboard%2FJ3ZW9X7PC6&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 5,
@@ -12374,6 +12679,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.236Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 123.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12214973&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-a620i-ax-am5-mini-itx-motherboard-ddr5-pcie-4-0-wi-fi-6e-2-5gbe-q-flash-plus%2FJ3ZW92VSPJ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 27,
@@ -12474,6 +12784,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 121.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11287554&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-h610i-plus-d4-lga-1700-mini-itx-motherboard-pcie-4-0-ddr4-m-2-1-gb-lan-dp-hdmi-d-sub%2FJJG7VTQY3G&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 13,
@@ -12512,8 +12827,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 179.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604425&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604425.p%3FskuId%3D6604425",
+        "price": 169.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604425&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-x870-p-wifi-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX9YR9&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -12730,6 +13045,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 113.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12350034&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-h610m-e-d4-csm-lga1700-matx-mb-pcie-4-0-ddr4-2x-m-2-1gb-lan-dp-hdmi-d-sub-usb-3-2-rgb-com%2FJJG7VHVFTX&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 6,
@@ -12925,8 +13245,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 209.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604427&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604427.p%3FskuId%3D6604427",
+        "price": 190.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013047&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-z890-gaming-plus-wifi-socket-lga-1851-intel-z890-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX9PLQ&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -12984,6 +13304,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.200Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 106.27,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11455786&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-a620m-s2h-am5-ddr5-m-atx-motherboard-pcie-4-0-3-year-warranty%2FJ3ZW92VP48&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 19,
@@ -13129,6 +13454,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.044Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 328.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013370&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-x870e-plus-wifi7-atx-motherboard%2FJJGHGP3P6W&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 23,
@@ -13177,6 +13507,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 183.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11300603&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b860m-a-wifi-lga-1851-intel-b860-ddr5-m-2-thunderbolt4-wi-fi-7-micro-atx%2FJ3P7TX62TT&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -13262,8 +13597,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 219.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636989&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636989.p%3FskuId%3D6636989",
+        "price": 199.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636989&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-x870e-gaming-plus-wifi-socket-am5-amd-x870e-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TXQ3WF&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -14147,6 +14482,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 169.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11061905&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b760-gaming-plus-wifi-lga-1700-ddr5-atx-sata-6gbps-wi-fi-6e-pcie-4-0%2FJ3P7TXLSJZ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -14449,6 +14789,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.634Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 255.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013130&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b650-aorus-elite-ax-ice-gaming-desktop-motherboard%2FJ3ZW92VRR9&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -14904,6 +15249,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 163.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013374&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b650m-p-gaming-desktop-motherboard%2FJ3P7TXLKW9&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -15328,6 +15678,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 133.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12045588&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-pro-h610m-g-wifi-ddr4-lga-1700-intel-h610-micro-atx-motherboard%2FJ3P7TXG268&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 5,
@@ -15446,6 +15801,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 148.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11333761&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b760m-gaming-plus-wifi-ddr4-m-atx-motherboard-pcie-4-0-2x-m-2-usb-3-2-type-c-wifi-6-q-flash-plus%2FJ3ZW92VZC6&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 7,
@@ -16569,8 +16929,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 399.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601254&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601254.p%3FskuId%3D6601254",
+        "price": 382.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601254&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-z890-e-gaming-wifi-socket-lga-1851-intel-z890-atx-ddr5-wi-fi-7-motherboard-black%2FJJGGLQWYZ9&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -16972,8 +17332,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 279.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629578&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629578.p%3FskuId%3D6629578",
+        "price": 253.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629578&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b850-edge-ti-wifi-socket-am5-amd-b850-atx-ddr5-wi-fi-7-motherboard-gray%2FJ3P7TX6G6V&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -17208,6 +17568,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 260.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013104&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b650-aero-g-desktop-motherboard%2FJ3ZW92V2FL&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 8,
@@ -17371,6 +17736,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.369Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 144.97,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12130843&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-h610m-g-wifi-gaming-desktop-motherboard%2FJ3P7TXSR6F&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 22,
@@ -17454,6 +17824,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 221.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12238678&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-b860-i-gaming-wifi-b860-mitx-intel-core-ultra-2-ready-ddr5-wifi7-thunderbolt-4%2FJJGGLQ53RZ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 13,
@@ -17536,6 +17911,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.745Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 233.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013035&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-b850m-mortar-wifi-gaming-desktop-motherboard%2FJ3P7TXRG8Q&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 8,
@@ -17725,6 +18105,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 242.47,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10955244&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b760i-aorus-pro-gaming-desktop-motherboard%2FJ3ZW92VYTT&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 9,
@@ -17772,6 +18157,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 183.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013341&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b840-gaming-plus-wifi-gaming-desktop-motherboard%2FJ3P7TX62WH&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 12,
@@ -18255,6 +18645,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 131.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11366131&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b850m-ds3h-am5-matx-motherboard-ddr5-pcie-5-0-2x-m-2-usb-c-2-5gbe-5-year-warranty%2FJ3ZW92VF53&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 23,
@@ -18312,6 +18707,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 132.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11295394&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b760m-p-lga-1700-intel-b760-sata-6gb-s-micro-atx-motherboard%2FJ3P7TXLSTC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 8,
@@ -18450,6 +18850,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 296.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013417&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-ultra-durable-z890-aorus-master-gaming-desktop-motherboard%2FJ3ZW92V5XG&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 6,
@@ -18542,6 +18947,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.364Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 221.02,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11233359&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-z890-s-wifi-white-gaming-desktop-motherboard%2FJ3P7TX9V98&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -18633,6 +19043,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 392.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11078365&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-z890-carbon-wifi-lga-1851-intel-z890-atx-motherboard%2FJ3P7TX9RFW&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 8,
@@ -19217,6 +19632,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 190.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013314&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-b860-tomahawk-wifi-gaming-desktop-motherboard%2FJ3P7TX9VGC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 24,
@@ -19744,8 +20164,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 289.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641933&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641933.p%3FskuId%3D6641933",
+        "price": 267.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641933&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-b850i-edge-ti-wifi-socket-am5-amd-b850-iatx-ddr5-wi-fi-7-motherboard-gray-white-matt%2FJ3P7TXQRTS&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -19803,6 +20223,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 379.59,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12170643&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-ultra-durable-b850-ai-top-gaming-desktop-motherboard%2FJ3ZW92VFPW&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 9,
@@ -19886,6 +20311,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 226.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11334667&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-b860-plus-wifi-atx-motherboard-intel-core-ultra-2-ready-ddr5-pcie-5-0-wi-fi-7-2-5gb-lan-usb-20gbps-type-c%2FJJGGLQ5X3F&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 19,
@@ -19945,6 +20375,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 170.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013429&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b860-ds3h-wifi6e-gaming-desktop-motherboard%2FJ3ZW92VV2J&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -19981,8 +20416,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 209.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629579&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629579.p%3FskuId%3D6629579",
+        "price": 204.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629579&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-z890-s-wifi-pz-socket-1851-intel-z890-atx-ddr5-wi-fi-7-motherboard-gray-white%2FJ3P7TX63W3&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -20034,9 +20469,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 239.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6649240&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6649240.p%3FskuId%3D6649240",
-        "inStock": false
+        "price": 275.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013028&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b850-mlg-edition-socket-am5-amd-b850-atx-ddr5-wi-fi-7-motherboard-black-matt%2FJ3P7TXH3R6&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445837104729378185777083",
@@ -20083,6 +20518,11 @@ export const PARTS = [
       "amazon": {
         "price": 259.99,
         "url": "https://www.amazon.com/dp/B0DQNRGMWH?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 291.32,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12593740&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b850i-aorus-pro-wifi7-socket-am5-amd-b850i-itx-ddr5-wi-fi-7-motherboard-black%2FJ3ZW92VVXR&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -20440,6 +20880,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.706Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 222.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12166343&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b860i-aorus-pro-ice-motherboard-mini-itx-ddr5-pcie-5-0-thunderbolt-4-wifi7-2-5gbe-ez-latch%2FJ3ZW92VVW5&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 9,
@@ -20682,6 +21127,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 161.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12166342&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b860m-eagle-plus-wifi6e-ddr5-matx-motherboard-pcie-5-0-usb-c-2-5gbe-lan%2FJ3ZW92VVX4&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 6,
@@ -20793,6 +21243,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 164.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013448&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-ultra-durable-b860-eagle-wifi6e-gaming-desktop-motherboard%2FJ3ZW92VFF2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 17,
@@ -20887,6 +21342,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 169.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013285&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-ultra-durable-b860-gaming-x-wifi6e-gaming-desktop-motherboard%2FJ3ZW92VV2Q&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 16,
@@ -21470,8 +21930,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 1099.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641934&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641934.p%3FskuId%3D6641934",
+        "price": 1054.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641934&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-meg-z890-godlike-socket-1851-intel-z890-eatx-ddr5-wi-fi-7-motherboard-black-matt%2FJ3P7TX9FFF&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -21612,6 +22072,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.746Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 233.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11422460&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b850m-a-wifi-pz-matx-motherboard-amd-ryzen-9000-8000-7000-am5-ddr5-pcie-5-0-m-2-gen5-wi-fi-7-5g-lan%2FJ3P7TXH8SC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -21854,6 +22319,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 144.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12352834&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-h810m-a-wifi-matx-ddr5-pcie-4-0-wi-fi-6-2x-m-2-usb-10gbps%2FJJGGLQFFJL&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -21947,6 +22417,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 223.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11019052&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b860-gaming-plus-wifi-lga-1851-ddr5-wi-fi-7-thunderbolt4-5gbps-lan-atx%2FJ3P7TX68KX&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 9,
@@ -22339,6 +22814,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.372Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 193.22,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12190720&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-ultra-durable-q670m-d3h-gaming-desktop-motherboard-intel-q670-chipset-socket-lga-1700-micro-atx-core%2FJ3ZW92VYQ8&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -22604,6 +23084,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 171.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12190480&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-ultra-durable-b860m-gaming-x-wifi6e-gaming-desktop-motherboard-intel-b860-chipset-socket-lga-1851-micro-atx%2FJ3ZW9X772J&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 6,
@@ -22638,6 +23123,11 @@ export const PARTS = [
       "amazon": {
         "price": 159.99,
         "url": "https://www.amazon.com/dp/B0DJP8W3BY?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 239.64,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11527295&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-z890-ud-wifi6e-socket-lga-1851-intel-z890-atx-ddr5-wi-fi-6e-motherboard-black%2FJ3ZW92V56S&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -22787,6 +23277,11 @@ export const PARTS = [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 279.19,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11422722&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-z790-ud-ac-socket-1700-usb-3-2-gen2-intel-motherboard-black%2FJ3ZW92V32P&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -22834,6 +23329,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 158.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11944735&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b760m-ds3h-wifi6e-gen5-lga-1700-ddr5-m-2-pcie-5-0-usb-3-2-type-c-2-5gbe-lan%2FJ3ZW9X73ZG&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -23010,6 +23510,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 242.88,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10955083&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b860-p-wifi-gaming-desktop-motherboard%2FJ3P7TX62WY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 9,
@@ -23048,8 +23553,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 399.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643438&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6643438.p%3FskuId%3D6643438",
+        "price": 360.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013275&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-x870e-h-socket-am5-amd-x870-atx-ddr5-wi-fi-7-be-motherboard-black%2FJJGHGPYT6Y&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -23534,6 +24039,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.298Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 430.07,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12332841&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-x870i-edge-ti-evo-wifi-am5-amd-x870-motherboard%2FJ3P7TXHQR4&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 12,
@@ -23731,6 +24241,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 170.04,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12171520&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-b850m-e-wifi-amd-b850-matx-ddr5-pcie-5-0-3-m-2-wifi-6e-2-5gbe-dp-hdmi-usb-c%2FJJGHGP2YRQ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -24068,8 +24583,8 @@ export const PARTS = [
     "mpn": "TUF GAMING B650-PLUS WIFI",
     "deals": {
       "bestbuy": {
-        "price": 164.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523722&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6523722.p%3FskuId%3D6523722",
+        "price": 109.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523722&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gaming-b650-plus-wifi-socket-am5-amd-b650-atx-ddr5-wi-fi-6-motherboard-black%2FJJG7VW7P83&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -24107,8 +24622,8 @@ export const PARTS = [
     "mpn": "MAG B650 TOMAHAWK WIFI",
     "deals": {
       "bestbuy": {
-        "price": 219.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6528249&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6528249.p%3FskuId%3D6528249",
+        "price": 159.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6528249&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-b650-tomahawk-wifi-socket-am5-amd-b650-atx-ddr5-wi-fi-6e-motherboard-black%2FJ3P7TXG8HS&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -24147,8 +24662,8 @@ export const PARTS = [
     "mpn": "PRO B650-P WIFI",
     "deals": {
       "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6528250&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6528250.p%3FskuId%3D6528250",
+        "price": 127.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013268&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b650-p-wifi-socket-am5-amd-b650-atx-ddr5-wi-fi-6e-motherboard-black%2FJ3P7TXG8T7&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -24187,8 +24702,8 @@ export const PARTS = [
     "mpn": "MPG X670E CARBON WIFI",
     "deals": {
       "bestbuy": {
-        "price": 479.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6528253&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6528253.p%3FskuId%3D6528253",
+        "price": 349.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013020&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-x670e-carbon-wifi-socket-am5-amd-x670-atx-ddr5-wi-fi-6e-motherboard-black%2FJ3P7TXG2FL&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -24227,8 +24742,8 @@ export const PARTS = [
     "mpn": "Z790 GAMING PLUS WIFI",
     "deals": {
       "bestbuy": {
-        "price": 189.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571301&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6571301.p%3FskuId%3D6571301",
+        "price": 169.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571301&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-z790-gaming-plus-wifi-socket-lga-1700-intel-z790-atx-ddr5-wi-fi-6e-motherboard-black%2FJ3P7TXYPZF&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -24457,8 +24972,8 @@ export const PARTS = [
     "mpn": "ROG CROSSHAIR X870E HERO",
     "deals": {
       "bestbuy": {
-        "price": 599.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601432&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601432.p%3FskuId%3D6601432",
+        "price": 557,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12624795&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-crosshair-x870e-hero-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-black%2FJJGGLQQS98&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -24616,8 +25131,8 @@ export const PARTS = [
     "mpn": "MAG X870 TOMAHAWK WIFI",
     "deals": {
       "bestbuy": {
-        "price": 239.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604428&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604428.p%3FskuId%3D6604428",
+        "price": 229.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604428&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-x870-tomahawk-wifi-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX9LKV&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -24656,8 +25171,8 @@ export const PARTS = [
     "mpn": "X870 GAMING PLUS WIFI",
     "deals": {
       "bestbuy": {
-        "price": 269.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616914&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616914.p%3FskuId%3D6616914",
+        "price": 253.27,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10116458&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-x870-gaming-plus-wifi-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX9V42&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg_openbox": {
@@ -24747,8 +25262,8 @@ export const PARTS = [
     "mpn": "MAG B850 TOMAHAWK MAX WIFI",
     "deals": {
       "bestbuy": {
-        "price": 209.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616918&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616918.p%3FskuId%3D6616918",
+        "price": 199.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616918&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-b850-tomahawk-max-wifi-socket-am5-amd-b850-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX6GR8&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -24905,8 +25420,8 @@ export const PARTS = [
     "mpn": "X870E AORUS ELITE WIFI7 ICE",
     "deals": {
       "bestbuy": {
-        "price": 354.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6635872&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6635872.p%3FskuId%3D6635872",
+        "price": 349.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6635872&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-x870e-aorus-elite-wifi7-ice-socket-am5-amd-x870e-atx-ddr5-wi-fi-7-motherboard-white%2FJ3ZW9X7XYT&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -24944,8 +25459,8 @@ export const PARTS = [
     "mpn": "X870E AORUS MASTER",
     "deals": {
       "bestbuy": {
-        "price": 549.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6635970&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6635970.p%3FskuId%3D6635970",
+        "price": 393.12,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11237546&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-x870e-aorus-master-amd-am5-lga-1718-atx-motherboard-supports-amd-ryzen-9000-8000-7000-series-processors-black%2FJ3ZW92V4T2&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -25061,8 +25576,8 @@ export const PARTS = [
     "mpn": "B850 GAMING PLUS WIFI PZ",
     "deals": {
       "bestbuy": {
-        "price": 249.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641931&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641931.p%3FskuId%3D6641931",
+        "price": 229.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641931&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b850-gaming-plus-wifi-pz-socket-am5-amd-b850-atx-ddr5-wi-fi-7-motherboard-gray-white-matt%2FJ3P7TXQWT2&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -25141,8 +25656,8 @@ export const PARTS = [
     "mpn": "X870 AYW GAMING WIFI W",
     "deals": {
       "bestbuy": {
-        "price": 239.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643436&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6643436.p%3FskuId%3D6643436",
+        "price": 219.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592482&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-x870-ayw-gaming-socket-am5-amd-x870-atx-ddr5-wi-fi-6-ax-motherboard-white%2FJJGGLHGY6L&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -25191,8 +25706,8 @@ export const PARTS = [
     "mpn": "TUF GAMING B850M-PLUS WIFI7 W",
     "deals": {
       "bestbuy": {
-        "price": 259.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643437&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6643437.p%3FskuId%3D6643437",
+        "price": 194.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12349350&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-b850m-a-wifi-csm-gaming-desktop-motherboard%2FJJGHGPC8ZL&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -25230,8 +25745,8 @@ export const PARTS = [
     "mpn": "ROG STRIX Z890-H GAMING WIFI",
     "deals": {
       "bestbuy": {
-        "price": 299.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643440&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6643440.p%3FskuId%3D6643440",
+        "price": 286.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643440&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-z890-h-socket-lga-1851-intel-z890-atx-ddr5-wi-fi-7-be-motherboard-black%2FJJGGLHJYJ5&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -25270,9 +25785,9 @@ export const PARTS = [
     "mpn": "X870E EAGLE X3D WIFI7",
     "deals": {
       "bestbuy": {
-        "price": 319.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673524&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6673524.p%3FskuId%3D6673524",
-        "inStock": false
+        "price": 385.12,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12520409&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-x870e-eagle-x3d-wf7-socket-am5-amd-atx-ddr5-motherboard-black%2FJ3ZW9X7QFK&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445839161292088530960022",
@@ -25887,6 +26402,11 @@ export const PARTS = [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 174.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013311&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b650m-project-zero-am5-micro-atx-motherboard-b650mpzero%2FJ3P7TXYYX2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "socket": "AM5",
@@ -26140,6 +26660,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 238.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12645124&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnewegg-combo-asus-prime-b550m-a-ac-amd-ryzen-5-5500-team-group-16gb%2FJ3R8FKJQY2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "socket": "AM4",
@@ -26357,6 +26882,11 @@ export const PARTS = [
         "price": 3890,
         "url": "https://www.amazon.com/dp/B0DS2WQZ2M?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 3699.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12136303&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-xg-mobile-external-graphics-card-nvidia-geforce-rtx-5090-laptop-gpu-thunderbolt-5-off-black%2FJJGGLQP5HG&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "baseClock": 2017,
@@ -26389,6 +26919,11 @@ export const PARTS = [
       "amazon": {
         "price": 1490,
         "url": "https://www.amazon.com/dp/B0DS2R6948?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 1499.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12633606&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-inspire-rtx-5080-16gb-gddr7-3x-oc-gpu-triple-fan-pcie-5-0-hdmi-4k-8k-g5080-16i3c-bundle-w-alienware-backpack%2FJJGHT5QPSY&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -26423,6 +26958,11 @@ export const PARTS = [
         "price": 1100,
         "url": "https://www.amazon.com/dp/B0DTRC7782?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 979.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619462&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-geforce-rtx-5070-ti-16g-ventus-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TX6K9J&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "baseClock": 2295,
@@ -26455,6 +26995,11 @@ export const PARTS = [
       "amazon": {
         "price": 636,
         "url": "https://www.amazon.com/dp/B0DTQMLX4F?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 667.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12335989&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fzotac-twin-edge-oc-geforce-rtx-5070-12gb-gddr7-pci-express-5-0-x16-atx-graphics-card-rtx-5070-twin-edge-oc%2FJ3GTZ3F64J&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -26489,6 +27034,11 @@ export const PARTS = [
         "price": 574,
         "url": "https://www.amazon.com/dp/B0F7WB6LSH?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 402.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12195469&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fzotac-twin-edge-oc-rtx-5060-ti-8gb-gddr7-pcie-5-0-x8-atx-gpu%2FJ3GTZ3F6WR&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "baseClock": 2407,
@@ -26521,6 +27071,11 @@ export const PARTS = [
       "amazon": {
         "price": 349.99,
         "url": "https://www.amazon.com/dp/B0F8LDHQ7Y?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 370.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013426&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-geforce-rtx-5060-windforce-oc-8g-graphics-card-8gb-128-bit-gddr7-pcie-5-0-windforce-cooling-system-black%2FJ3ZW9X7388&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -27182,6 +27737,11 @@ export const PARTS = [
         "price": 230,
         "url": "https://www.amazon.com/dp/B0CQ716WMZ?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 222.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11019298&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-ventus-geforce-rtx-3050-6gb-gddr6-pci-express-4-0-x8-atx-graphics-card-rtx-3050-ventus-2x-6g-oc%2FJ3P7TXPGFP&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "baseClock": 1552,
@@ -27214,6 +27774,11 @@ export const PARTS = [
       "amazon": {
         "price": 789.99,
         "url": "https://www.amazon.com/dp/B0DW4FRCQR?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 784.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592847&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fxfx-mercury-radeon-rx-9070-xt-oc-16gb-256-bit-gddr6-pci-express-5-0-rdna-4-graphics-card-rx-97trgbbb9%2FJ39HPQ82Z2&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -27248,6 +27813,11 @@ export const PARTS = [
         "price": 620,
         "url": "https://www.amazon.com/dp/B0DTTKCTRD?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 657.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11064748&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-challenger-radeon-rx-9070-16gb-gddr6-pci-express-5-0-x16-graphics-card-rx9070-cl-16g%2FC34FQFQYK7&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "baseClock": 2070,
@@ -27280,6 +27850,11 @@ export const PARTS = [
       "amazon": {
         "price": 460,
         "url": "https://www.amazon.com/dp/B0F91KM1CK?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 423.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013497&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fxfx-swift-amd-radeon-rx-9060xt-oc-gaming-edition-8gb-gddr6-pci-express-5-0-gaming-graphics-card-black%2FJ39HPQ83CH&intsrc=APIG_28060",
         "inStock": true
       }
     }
@@ -27376,6 +27951,11 @@ export const PARTS = [
         "price": 680,
         "url": "https://www.amazon.com/dp/B0BNLSDRKB?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 769.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12558717&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fxfx-speedster-merc310-amd-radeon-rx-7900xt-20gb-gddr6-pci-express-4-0-gaming-graphics-card-black%2FJ39HPQ8J7L&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "baseClock": 1500,
@@ -27441,6 +28021,11 @@ export const PARTS = [
       "amazon": {
         "price": 579.99,
         "url": "https://www.amazon.com/dp/B0DQF23NLJ?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 579.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12297119&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpowercolor-radeon-rx-7800-xt-16gb-gddr6-video-graphics-card%2FC35834Q3WC&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -27508,6 +28093,11 @@ export const PARTS = [
         "price": 409.99,
         "url": "https://www.amazon.com/dp/B0CHK2345D?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 499.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12298401&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fxfx-speedster-swft210-amd-radeon-rx-7600xt-16gb-gddr6-pci-express-4-0-graphics-card-black%2FJ39HPQ8JZP&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "baseClock": 1980,
@@ -27540,6 +28130,11 @@ export const PARTS = [
       "amazon": {
         "price": 320,
         "url": "https://www.amazon.com/dp/B0DR25XD68?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 302.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12560334&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsapphire-pulse-radeon-rx-7600-8gb-gddr6-pci-express-4-0-x8-atx-graphics-card-11324-01-20g%2FJ39WZRLTPK&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -27671,6 +28266,11 @@ export const PARTS = [
       "amazon": {
         "price": 450,
         "url": "https://www.amazon.com/dp/B0DFMMF59C?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 449.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10812833&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fxfx-radeon-rx-6800-16gb-speedster-swft319-oc-gddr6-video-graphics-card-gpu%2FJ39HPQ82VY&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -28056,6 +28656,11 @@ export const PARTS = [
         "price": 2700,
         "url": "https://www.amazon.com/dp/B0DLWT24H9?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 2428.56,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12067540&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-nvidia-quadro-rtx-4500-graphic-card-24-gb-gddr6-displayport-4-x-displayport%2FJXF2C4945T&intsrc=APIG_28060",
+        "inStock": true
       }
     }
   },
@@ -28117,6 +28722,11 @@ export const PARTS = [
       "amazon": {
         "price": 719,
         "url": "https://www.amazon.com/dp/B0DCJLJJQ7?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 719.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12542559&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-rtx-2000-vcnrtx2000ada-pb-16gb-128-bit-gddr6-pci-express-4-0-x8-graphics-card%2FJXF2C46GPG&intsrc=APIG_28060",
         "inStock": true
       }
     }
@@ -29747,6 +30357,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 265.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12611252&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-dual-rtx-3050-6gb-oc-gaming-gpu-pcie-4-0-gddr6-hdmi-2-1-dp-1-4a-2-slot-axial-tech-fans-0db-tech%2FJJGGLQ727K&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -29828,6 +30443,11 @@ export const PARTS = [
       "amazon": {
         "price": 799.95,
         "url": "https://www.amazon.com/dp/B0DRRMZDH6?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 847.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11064923&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-radeon-rx-9070-xt-16gb-256-bit-gddr6-pci-express-5-0-rdna-4-graphics-card-prime-rx9070xt-o16g%2FJJGGLH7CGP&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -29960,6 +30580,11 @@ export const PARTS = [
         "price": 3989.91,
         "url": "https://www.amazon.com/dp/B0FJQNQ8M7?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 4499,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12506688&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-astral-geforce-rtx-5090-32gb-gddr7-pci-express-5-0-graphics-card-rog-astral-rtx5090-o32g-white%2FJJGHGP8XLK&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -30002,8 +30627,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 1399.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617114&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617114.p%3FskuId%3D6617114",
+        "price": 1299.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617114&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5080-argb-16gb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C46ZKT&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -30186,8 +30811,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 749.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671698&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6671698.p%3FskuId%3D6671698",
+        "price": 743.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671698&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-radeon-rx-9070-xt-gaming-oc-ice-16g-graphics-card-white%2FJ3ZW9X769S&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -30281,8 +30906,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 1899.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613334&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6613334.p%3FskuId%3D6613334",
+        "price": 1861.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613334&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-astral-nvidia-geforce-rtx-5080-16gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLH7RYH&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -30342,9 +30967,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 999.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614153&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614153.p%3FskuId%3D6614153",
-        "inStock": false
+        "price": 2335.25,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592931&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnvidia-geforce-rtx-5080-16gb-gddr7-founders-edition-graphics-card-dark-gun-metal%2FJ3GWYHGP8C&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -30471,6 +31096,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 414.1,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592845&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-ti-8gb-gddr7-ventus-3x-oc-edition-pci-express-5-0-graphics-card-black-sliver%2FJ3P7TXRFH8&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -32249,6 +32879,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 614.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11064774&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-ti-16g-ventus-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXRFHF&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -32362,6 +32997,11 @@ export const PARTS = [
         "price": 419.95,
         "url": "https://www.amazon.com/dp/B0F4ZFPVC1?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 434.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013499&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5060-ti-windforce-oc-8g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X7X7R&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -32404,9 +33044,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 1259.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619456&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619456.p%3FskuId%3D6619456",
-        "inStock": false
+        "price": 1499,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12136240&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5080-windforce-sff-16g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X7J7R&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458317130178530126016561",
@@ -32630,6 +33270,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 710.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013506&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-radeon-rx-9070-gaming-oc-16g-gddr6-pci-express-5-0-graphics-card-black%2FJ3ZW9X7JCC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -32668,6 +33313,11 @@ export const PARTS = [
       "amazon": {
         "price": 1309.94,
         "url": "https://www.amazon.com/dp/B0DYRZZJZ1?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 1599,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12136232&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-vcg508016tfxpb1-nvidia-geforce-rtx-5080-16gb-256-bit-gddr7-dlss-4-0-pci-express-5-0-x16-video-card%2FJXF2C46ZZF&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -33086,8 +33736,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 399.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630571&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6630571.p%3FskuId%3D6630571",
+        "price": 379.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630571&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5060-ti-overclocked-8gb-gddr7-pci-express-5-0-graphics-card-with-dual-fan-black%2FJXF2C46FJC&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -33172,6 +33822,11 @@ export const PARTS = [
       "amazon": {
         "price": 1469.99,
         "url": "https://www.amazon.com/dp/B0DSWQNGYF?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 1429.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615233&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-geforce-rtx-5080-16g-ventus-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-white%2FJ3P7TX6LS9&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -33528,9 +34183,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 1249.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615231&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615231.p%3FskuId%3D6615231",
-        "inStock": false
+        "price": 1649,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10918859&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-geforce-rtx-5080-16g-ventus-3x-oc-plus-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TX6LYJ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -33582,6 +34237,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 379.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632718&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-8g-gaming-oc-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXQJ9F&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -33924,6 +34584,11 @@ export const PARTS = [
         "price": 593.39,
         "url": "https://www.amazon.com/dp/B0FGGSQNKZ?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 686.42,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12606225&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5060-ti-16gb-graphics-card%2FJXF2C46524&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -33993,6 +34658,11 @@ export const PARTS = [
       "amazon": {
         "price": 1482.5,
         "url": "https://www.amazon.com/dp/B0DZZ8L5V9?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 1799,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12491759&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5080-16g-ventus-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXR733&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -34490,8 +35160,8 @@ export const PARTS = [
     "mpn": "TUF-RTX5080-O16G-GAMING",
     "deals": {
       "bestbuy": {
-        "price": 1644.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613333&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6613333.p%3FskuId%3D6613333",
+        "price": 1609.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613333&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gaming-nvidia-geforce-rtx-5080-16gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLH7RLP&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -34704,8 +35374,8 @@ export const PARTS = [
     "mpn": "PRIME-RTX5070TI-O16G",
     "deals": {
       "bestbuy": {
-        "price": 1009.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614742&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614742.p%3FskuId%3D6614742",
+        "price": 999.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614742&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-nvidia-geforce-rtx-5070-ti-oc-edition-16gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLHJX4K&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -34800,9 +35470,9 @@ export const PARTS = [
     "mpn": "PRIME-RTX5070TI-16G",
     "deals": {
       "bestbuy": {
-        "price": 899.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614744&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614744.p%3FskuId%3D6614744",
-        "inStock": false
+        "price": 1139,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10918863&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-nvidia-geforce-rtx-5070-ti-16gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLHJX5W&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg_openbox": {
         "sku": "445835434376973822081397",
@@ -34842,8 +35512,8 @@ export const PARTS = [
     "mpn": "PRIME-RTX5070-12G",
     "deals": {
       "bestbuy": {
-        "price": 669.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614787&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614787.p%3FskuId%3D6614787",
+        "price": 642.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614787&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-nvidia-geforce-rtx-5070-12gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLH7TH6&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -34970,9 +35640,9 @@ export const PARTS = [
     "mpn": "GV-N3050WF2OCV2-6GD",
     "deals": {
       "bestbuy": {
-        "price": 209.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615842&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615842.p%3FskuId%3D6615842",
-        "inStock": false
+        "price": 222.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013412&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-3050-windforce-oc-v2-6gb-gddr6-pci-express-4-0-graphics-card-black%2FJ3ZW92VFPX&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445838676784629540102766",
@@ -35013,8 +35683,8 @@ export const PARTS = [
     "mpn": "GV-N5080GAMING OC-16GD",
     "deals": {
       "bestbuy": {
-        "price": 1499.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615925&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615925.p%3FskuId%3D6615925",
+        "price": 1479,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12491760&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5080-gaming-oc-16g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X7J74&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -35281,8 +35951,8 @@ export const PARTS = [
     "mpn": "GV-N5080WF3OC-16GD",
     "deals": {
       "bestbuy": {
-        "price": 1389.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616102&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616102.p%3FskuId%3D6616102",
+        "price": 1355.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616102&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5080-windforce-oc-sff-16g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X7CH2&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -35324,8 +35994,8 @@ export const PARTS = [
     "mpn": "VCG508016TFXPB1-O",
     "deals": {
       "bestbuy": {
-        "price": 1289.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616903&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616903.p%3FskuId%3D6616903",
+        "price": 1269.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616903&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5080-16gb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C46ZZH&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -35483,9 +36153,9 @@ export const PARTS = [
     "mpn": "G507T-16GTCP",
     "deals": {
       "bestbuy": {
-        "price": 969.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618665&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618665.p%3FskuId%3D6618665",
-        "inStock": false
+        "price": 1299.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10918861&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5070-ti-16g-gaming-trio-oc-plus-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TX6KR6&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -35557,9 +36227,9 @@ export const PARTS = [
     "mpn": "GV-N507TEAGLEOC ICE-16GD",
     "deals": {
       "bestbuy": {
-        "price": 1059.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618882&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618882.p%3FskuId%3D6618882",
-        "inStock": false
+        "price": 1119,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10886676&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5070-ti-eagle-oc-ice-sff-16g-gddr7-pci-express-5-0-graphics-card-white%2FJ3ZW9X7CQX&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458315112060008078983284",
@@ -35686,8 +36356,8 @@ export const PARTS = [
     "mpn": "G5070-12GTC",
     "deals": {
       "bestbuy": {
-        "price": 679.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619436&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619436.p%3FskuId%3D6619436",
+        "price": 669.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619436&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5070-12g-gaming-trio-oc-12gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TX65JH&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -35729,9 +36399,9 @@ export const PARTS = [
     "mpn": "GV-N507TWF3-16GD",
     "deals": {
       "bestbuy": {
-        "price": 959.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619458&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619458.p%3FskuId%3D6619458",
-        "inStock": false
+        "price": 1199,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12017814&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5070-ti-windforce-sff-16g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X72ZY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -35793,8 +36463,8 @@ export const PARTS = [
     "mpn": "VCG507012TFXXPB1-O",
     "deals": {
       "bestbuy": {
-        "price": 679.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620354&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620354.p%3FskuId%3D6620354",
+        "price": 649.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620354&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5070-12gb-argb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C464CQ&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -35837,8 +36507,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 999.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620367&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620367.p%3FskuId%3D6620367",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620367&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5070-ti-16gb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C464LK&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -35868,8 +36538,8 @@ export const PARTS = [
     "mpn": "VCG5070T16TFXXPB1-O",
     "deals": {
       "bestbuy": {
-        "price": 1049.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620368&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620368.p%3FskuId%3D6620368",
+        "price": 999.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620368&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5070-ti-16gb-argb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C464GZ&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -35943,8 +36613,8 @@ export const PARTS = [
     "mpn": "RX-97SWFB3W9",
     "deals": {
       "bestbuy": {
-        "price": 729.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620453&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620453.p%3FskuId%3D6620453",
+        "price": 639.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620453&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fxfx-swift-amd-radeon-rx-9070-oc-16gb-gddr6-pci-express-5-0-gaming-graphics-card-white%2FJ39HPQ82ZT&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -36113,8 +36783,8 @@ export const PARTS = [
     "mpn": "G507T-16S3C",
     "deals": {
       "bestbuy": {
-        "price": 989.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620605&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620605.p%3FskuId%3D6620605",
+        "price": 979.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620605&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-geforce-rtx-5070-ti-16g-shadow-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXR2RL&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -36189,8 +36859,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 849.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621080&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621080.p%3FskuId%3D6621080",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621080&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fxfx-mercury-amd-radeon-rx-9070xt-oc-16gb-gddr6-pci-express-5-0-gaming-graphics-card-with-rgb-white%2FJ39HPQ824L&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -36412,9 +37082,9 @@ export const PARTS = [
     "mpn": "PRIME-RTX5060TI-O8G",
     "deals": {
       "bestbuy": {
-        "price": 363.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6628265&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6628265.p%3FskuId%3D6628265",
-        "inStock": false
+        "price": 572.05,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10732524&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-nvidia-geforce-rtx-5060-ti-oc-edition-8gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGHGYVFFX&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -36540,9 +37210,9 @@ export const PARTS = [
     "mpn": "GV-N506TEAGLE OC-16GD",
     "deals": {
       "bestbuy": {
-        "price": 529.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629373&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629373.p%3FskuId%3D6629373",
-        "inStock": false
+        "price": 659,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12569739&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5060-ti-eagle-oc-16g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X72FY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -36572,8 +37242,8 @@ export const PARTS = [
     "mpn": "VCG50608DFXPB1-O",
     "deals": {
       "bestbuy": {
-        "price": 359.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630575&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6630575.p%3FskuId%3D6630575",
+        "price": 339.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630575&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5060-overclocked-8gb-gddr7-pci-express-5-0-graphics-card-with-dual-fan-black%2FJXF2C4R7LJ&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -36616,8 +37286,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 599.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630626&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6630626.p%3FskuId%3D6630626",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630626&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5060-ti-overclocked-16gb-gddr7-pci-express-5-0-graphics-card-with-dual-fan-black%2FJXF2C465C5&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -36870,8 +37540,8 @@ export const PARTS = [
     "mpn": "G5060-8V3C",
     "deals": {
       "bestbuy": {
-        "price": 379.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632713&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632713.p%3FskuId%3D6632713",
+        "price": 364.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632713&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-8g-ventus-3x-oc-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXQ2JJ&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -36955,8 +37625,8 @@ export const PARTS = [
     "mpn": "G5060-8V2C",
     "deals": {
       "bestbuy": {
-        "price": 369.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632716&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632716.p%3FskuId%3D6632716",
+        "price": 359.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632716&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-8g-ventus-2x-oc-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXQ229&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -37298,8 +37968,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 419.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633165&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633165.p%3FskuId%3D6633165",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633165&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-ti-8g-gaming-oc-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXR4CY&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445838782536692067231160",
@@ -37478,8 +38148,8 @@ export const PARTS = [
     "mpn": "G506T-8V2CP",
     "deals": {
       "bestbuy": {
-        "price": 419.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6634567&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6634567.p%3FskuId%3D6634567",
+        "price": 399,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12629058&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-ti-8g-ventus-2x-oc-plus-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXRFR5&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -37521,9 +38191,9 @@ export const PARTS = [
     "mpn": "ROG-STRIX-RTX5070-O12G-GAMING",
     "deals": {
       "bestbuy": {
-        "price": 889.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6635245&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6635245.p%3FskuId%3D6635245",
-        "inStock": false
+        "price": 1104.1,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592793&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-nvidia-geforce-rtx-5070-oc-edition-12gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLHGC6T&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5070",
@@ -37553,9 +38223,9 @@ export const PARTS = [
     "mpn": "ROG-STRIX-RTX5070TI-O16G-GAMIN",
     "deals": {
       "bestbuy": {
-        "price": 1149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6635286&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6635286.p%3FskuId%3D6635286",
-        "inStock": false
+        "price": 1519,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12136242&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-nvidia-geforce-rtx-5070-ti-oc-edition-16gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLH8223&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -37585,8 +38255,8 @@ export const PARTS = [
     "mpn": "VCG5060T8TFXXPB1-O",
     "deals": {
       "bestbuy": {
-        "price": 449.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636846&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636846.p%3FskuId%3D6636846",
+        "price": 434.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013462&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5060-ti-overclocked-8gb-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C465V4&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -37670,8 +38340,8 @@ export const PARTS = [
     "mpn": "G5050-8GC",
     "deals": {
       "bestbuy": {
-        "price": 324.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638592&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638592.p%3FskuId%3D6638592",
+        "price": 309.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638592&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5050-8g-gaming-oc-8gb-gddr6-pci-express-gen-5-graphics-card-black%2FJ3P7TXHJLW&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -37926,8 +38596,8 @@ export const PARTS = [
     "upc": "4711581493124",
     "deals": {
       "bestbuy": {
-        "price": 739.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671162&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6671162.p%3FskuId%3D6671162",
+        "price": 719.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671162&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-challenger-radeon-rx-9070-xt-16gb-gddr6-pci-express-5-0-graphics-card%2FC34FQFQ6VV&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -37957,8 +38627,8 @@ export const PARTS = [
     "upc": "4711581493605",
     "deals": {
       "bestbuy": {
-        "price": 669.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671163&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6671163.p%3FskuId%3D6671163",
+        "price": 629.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671163&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-challenger-radeon-rx-9070-16gb-gddr6-pci-express-5-0-graphics-card%2FC34FQFQRK3&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -38020,8 +38690,8 @@ export const PARTS = [
     "mpn": "G507012WMLEC",
     "deals": {
       "bestbuy": {
-        "price": 749.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672758&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672758.p%3FskuId%3D6672758",
+        "price": 699.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672758&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5070-12g-world-of-warcraft-midnight-light-edition-oc-gddr7-pci-express-gen-5-graphics-card-tan%2FJ3P7TXTJGQ&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -38138,8 +38808,8 @@ export const PARTS = [
     "mpn": "G507T-16V3ZCB",
     "deals": {
       "bestbuy": {
-        "price": 999.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676835&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676835.p%3FskuId%3D6676835",
+        "price": 979.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676835&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5070-ti-16gb-gddr7-ventus-3x-pz-oc-edition-pci-express-5-0-sff-ready-graphics-card-black%2FJ3P7TXTXSZ&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -39801,6 +40471,11 @@ export const PARTS = [
         "price": 224.4,
         "url": "https://www.amazon.com/dp/B0C74RQV9K?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 148.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12077476&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-intel-arc-a380-challenger-itx-6gb-gddr6-oc-pcie-4-0-graphic-card-black%2FC34K265CVQ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "tdp": 75,
@@ -41058,6 +41733,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 479.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11237712&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-32gb-2x16gb-ddr5-6000mhz-c36-udimm-desktop-memory-black%2FJ39QHTJQKP&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -41160,9 +41840,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 323.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6580514&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6580514.p%3FskuId%3D6580514",
-        "inStock": false
+        "price": 398.84,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592998&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-32gb-kit-2x16gb-ddr5-5600mhz-c46-sodimm-laptop-memory-black%2FJX8PSKJ9VL&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458315830663436171227888",
@@ -41224,6 +41904,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.909Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 334.75,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592749&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-32gb-kit-2x16gb-ddr4-3200mhz-c22-sodimm-laptop-memory-kit-green%2FJX8PSWVZKT&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -41277,6 +41962,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 490.27,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12474237&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6400-pc5-51200-desktop-memory-model-cmh32gx5m2b6400c36-black%2FJ39QHTJQTF&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -41566,6 +42256,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.348Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 499.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12225057&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6000-pc5-48000-desktop-memory-model-cmk32gx5m2b6000z30-gray%2FJ39QHTCC8W&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -41677,6 +42372,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 129.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12139685&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-team-t-force-vulcan-z-16gb-2-x-8gb-ddr4-3200-pc4-25600-desktop-memory-model-tlzgd416g3200hc16fdc01-gray%2FJ37P83Q4TF&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 7,
@@ -41731,6 +42431,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 269.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12076580&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-16gb-2-x-8gb-288-pin-pc-ram-ddr5-5200-pc5-41600-desktop-memory-model-cmh16gx5m2b5200c40-black%2FJ39TSCH8RC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -41775,8 +42480,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 220.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637755&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637755.p%3FskuId%3D6637755",
+        "price": 199.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637755&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-16gb-1x16gb-ddr5-5600mhz-c48-sodimm-laptop-memory-black%2FJ39QHTCQ66&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -41880,9 +42585,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 69.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6529692&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6529692.p%3FskuId%3D6529692",
-        "inStock": false
+        "price": 177.63,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592887&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-16gb-ddr4-3200mhz-c22-sodimm-laptop-memory-green%2FJX8PSWVZK7&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445837243750288734669292",
@@ -42002,6 +42707,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.985Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 449.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12240931&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-32gb-262-pin-ddr5-so-dimm-ddr5-5600-laptop-memory-model-ct32g56c46s5-black%2FJX8PSKJ9FC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -42105,6 +42815,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 259.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11248174&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Frefurbished-g-skill-ripjaws-v-32gb-ddr4-3200mhz-ram-2x16gb-pc4-25600-black%2FJ36V4SGC3S&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -42365,9 +43080,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 387.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604865&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604865.p%3FskuId%3D6604865",
-        "inStock": false
+        "price": 399.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11298791&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-pro-oc-gaming-32gb-2x16gb-ddr5-6400mhz-c38-udimm-intel-xmp-3-0-amd-expo-desktop-memory-white%2FJX8PSKC9X9&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445835921691469587278372",
@@ -42431,6 +43146,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 720.74,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12173069&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fg-skill-flare-x5-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6000-pc5-48000-desktop-memory-model-f5-6000j3038f16gx2-fx5-black%2FJ36V4SLR46&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -42526,6 +43246,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 489.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11939843&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-32gb-ddr5-6000mhz-ram-2x16gb-model-kf560c30bbeak2-32-black%2FJX4LR3YFQZ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 9,
@@ -42856,8 +43581,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 270,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6457798&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6457798.p%3FskuId%3D6457798",
+        "price": 259.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6457798&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-pro-sl-32gb-2x16gb-ddr4-3600mhz-c18-udimm-desktop-memory-white%2FJ39QHHVSLP&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -42921,6 +43646,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.985Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 389.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11551035&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-32gb-262-pin-ddr5-so-dimm-ddr5-4800-pc4-38400-laptop-memory-model-ct32g48c40s5-unknown%2FJX8PSK77SL&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -43013,6 +43743,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.378Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 899,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12110178&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-micron-96gb-2x-48gb-ddr5-sdram-memory-kit-for-computer-notebook-96-gb-2-x-48gb-ddr5-5600-pc5-44800-ddr5-sdram-black%2FJX8PSKJ67K&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -43287,6 +44022,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 469.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021666&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-team-t-force-delta-rgb-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6000-pc5-48000-desktop-memory-model-ff3d532g6000hc30dc01-black%2FJ37P83HLTC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 6,
@@ -43442,6 +44182,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.347Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 488.38,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12629552&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-micron-16gb-2-x-8gb-ddr5-sdram-memory-kit-for-desktop-pc-computer-16-gb-2-x-8gb-ddr5-5600-pc5-44800-ddr5-unknown%2FJX8PSKJ9H2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -43741,6 +44486,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 479.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11244699&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6000-pc5-48000-memory-desktop-memory-model-kf560c30bbek2-32-black%2FJX4LR3YFKK&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -44195,6 +44945,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021685&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-team-t-force-vulcan-z-16gb-2-x-8gb-288-pin-pc-ram-ddr4-3200-pc4-25600-desktop-memory-model-tlzgd416g3200hc16cdc01-gray%2FJ37P83QL9W&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -44239,8 +44994,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 1156.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637757&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637757.p%3FskuId%3D6637757",
+        "price": 1119.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637757&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-64gb-2-x-32gb-ddr5-6000mhz-z30-amd-expo-intel-xmp-udimm-desktop-memory-gray%2FJ39QHTC75V&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -44493,8 +45248,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 873.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6496083&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6496083.p%3FskuId%3D6496083",
+        "price": 749.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6496083&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-64gb-2x32gb-ddr5-5200mhz-c40-udimm-desktop-memory-black%2FJ39QHTJGVZ&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -44551,8 +45306,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 1117.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637756&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637756.p%3FskuId%3D6637756",
+        "price": 1021.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637756&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-64gb-2-x-32gb-ddr5-6000mhz-z30-amd-expo-intel-xmp-udimm-desktop-memory-gray%2FJ39QHTJVKG&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -44723,6 +45478,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 1019,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12643181&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-64gb-2x32gb-6400mhz-ddr5-c32-dimm-desktop-memory-black%2FJ39QHTJ64J&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -44777,6 +45537,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 542.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12225063&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6000-pc5-48000-desktop-memory-model-cmk32gx5m2b6000c30-black%2FJ39QHTJVX7&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -44830,6 +45595,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 596.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12603559&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-32gb-2x16gb-ddr5-6400mhz-c32-udimm-desktop-memory-black%2FJ39QHH563K&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -44972,6 +45742,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.933Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 1149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021692&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-impact-64gb-2-x-32gb-262-pin-ddr5-so-dimm-ddr5-5600-pc5-44800-laptop-memory-model-kf556s40ibk2-64-green%2FJX4LR3Y3Q4&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 13,
@@ -45066,6 +45841,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.125Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 269.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11076325&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-performance-32gb-2x16gb-3200mhz-ddr4-dram-cl22-so-dimm-notebook-laptop-memory-kit-black%2FJXF2C43XLR&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 27,
@@ -45213,6 +45993,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 249.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12182090&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-team-t-force-delta-rgb-32gb-2-x-16gb-288-pin-pc-ram-ddr4-3200-pc4-25600-desktop-memory-model-tf3d432g3200hc16fdc01-black%2FJ37P83Q5Y7&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 13,
@@ -45350,6 +46135,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 469.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11082014&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Frefurbished-team-group-t-create-expert-32gb-ddr5-6000mhz-ram-2x16gb-ctced532g6000hc30dc01-black%2FJ37P83FJLG&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -45549,6 +46339,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 374.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11248729&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpatriot-viper-venom-rgb-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6000-pc5-48000-desktop-memory-model-pvvr532g600c36k-black%2FJ3L95X55LR&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -46026,6 +46821,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 464.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021727&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-32gb-2-x-16gb-262-pin-ddr5-so-dimm-ddr5-5600-pc5-44800-laptop-memory-model-cmsx32gx5m2a5600c48%2FJ39QHTC6K7&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -46162,6 +46962,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 899.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021661&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-team-t-force-delta-rgb-64gb-2-x-32gb-288-pin-pc-ram-ddr5-6000-pc5-48000-desktop-memory-model-ff4d564g6000hc38adc01-white%2FJ37P83H9QT&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -46296,6 +47101,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.465Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 1374.31,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12527698&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-64gb-ddr5-6000mhz-2-x-32gb-pc-ram-black%2FJX4LR3Y87G&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -47196,6 +48006,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 1119.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11244961&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-64gb-ddr5-6400mhz-ram-2x32gb-kf564c32bbeak2-64-black%2FJX4LR3YFFL&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 6,
@@ -47249,6 +48064,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.933Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 499.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11248721&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-32gb-ddr5-6400mhz-ram-2x16gb-pc5-51200-desktop-memory-black%2FJX4LR3YFV6&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 7,
@@ -47303,6 +48123,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.124Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 549.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12109948&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-impact-32gb-2-x-16gb-262-pin-ddr5-so-dimm-ddr5-6400-pc5-51200-laptop-memory-model-kf564s38ibk2-32%2FJX4LR3Y9XW&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 14,
@@ -47395,6 +48220,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.124Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 999.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11939844&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-64gb-ddr5-6000mhz-pc5-48000-288-pin-desktop-ram-silver-white%2FJX4LR3YLR3&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 22,
@@ -47529,6 +48359,11 @@ export const PARTS = [
       "amazon": {
         "price": 429.99,
         "url": "https://www.amazon.com/dp/B09P35J2PQ?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 429.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12184620&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-team-t-force-vulcan-32gb-2-x-16gb-288-pin-pc-ram-ddr5-5200-pc5-41600-desktop-memory-model-flbd532g5200hc40cdc01-black%2FJ37P83H3H5&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -48020,6 +48855,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.124Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 499.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11244893&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-32gb-5600mt-s-ddr5-cl40-desktop-memory-single-module-kf556c40bb-32-black%2FJX4LR3L59T&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -49071,6 +49911,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.933Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 1099.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11247685&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-64gb-2-x-32gb-288-pin-pc-ram-ddr5-6400-pc5-51200-memory-desktop-memory-model-kf564c32bbek2-64-black%2FJX4LR3YFYY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 25,
@@ -49248,6 +50093,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 264.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12076584&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fg-skill-flare-x5-16gb-2-x-8gb-288-pin-pc-ram-ddr5-5600-pc5-44800-desktop-memory-model-f5-5600j3636c8gh2-fx5-black%2FJ36V4SYG7W&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -49632,6 +50482,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 489.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11276242&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6400-pc5-51200-memory-desktop-memory-model-kf564c32bbek2-32-black%2FJX4LR3YFPQ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -49727,6 +50582,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 474.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11248709&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6000-pc5-48000-desktop-memory-model-cmk32gx5m2f6000z36-gray%2FJ39TSCS4JC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "upc": "840440419402",
@@ -49775,6 +50635,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.125Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 999.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11237719&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-ram-module-for-motherboard-64-gb-1-x-64gb-ddr5-5600-pc5-44800-ddr5-sdram-5600-mhz-unknown%2FJX4LR3PPXS&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -50247,8 +51112,8 @@ export const PARTS = [
     "mpn": "MD16GSD43200-TB",
     "deals": {
       "bestbuy": {
-        "price": 157.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6510778&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6510778.p%3FskuId%3D6510778",
+        "price": 149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12377676&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-performance-16gb-1x16gb-ddr4-ram-3200mhz-pc4-25600-cl22-1-2v-desktop-memory-md16gsd43200-tb-black%2FJXF2C4XRWV&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -50291,8 +51156,8 @@ export const PARTS = [
     "mpn": "CMSX16GX5M1A4800C40",
     "deals": {
       "bestbuy": {
-        "price": 189.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6516932&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6516932.p%3FskuId%3D6516932",
+        "price": 164.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6516932&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-16gb-1x16gb-ddr5-4800mhz-c40-sodimm-laptop-memory-black%2FJ39QHTJYRP&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -50336,8 +51201,8 @@ export const PARTS = [
     "mpn": "CMSX32GX5M1A4800C40",
     "deals": {
       "bestbuy": {
-        "price": 425.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6519626&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6519626.p%3FskuId%3D6519626",
+        "price": 360,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12640058&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-32gb-1x32gb-ddr5-4800mhz-c40-sodimm-laptop-memory-black%2FJ39QHTJYRT&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -50381,8 +51246,8 @@ export const PARTS = [
     "mpn": "CMK64GX5M2B6400C32",
     "deals": {
       "bestbuy": {
-        "price": 1172.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6542590&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6542590.p%3FskuId%3D6542590",
+        "price": 1049.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6542590&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-64gb-2x32gb-ddr5-6400mhz-c32-udimm-desktop-memory-black%2FJ39QHTJL46&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -50426,9 +51291,9 @@ export const PARTS = [
     "mpn": "CP2K16G56C46U5",
     "deals": {
       "bestbuy": {
-        "price": 335.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6543928&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6543928.p%3FskuId%3D6543928",
-        "inStock": false
+        "price": 553.44,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592814&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-pro-32gb-2x16gb-ddr5-5600mhz-c46-udimm-desktop-memory-black%2FJX8PSKC792&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445839793294290713234027",
@@ -50683,8 +51548,8 @@ export const PARTS = [
     "mpn": "CMH32GX5M2B6000Z30K",
     "deals": {
       "bestbuy": {
-        "price": 579.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6580809&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6580809.p%3FskuId%3D6580809",
+        "price": 549.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6580809&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-32gb-2x16gb-ddr5-6000mhz-c30-amd-expo-intel-xmp-udimm-desktop-memory-gray%2FJ39QHH5PXG&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -50728,9 +51593,9 @@ export const PARTS = [
     "mpn": "CT16G56C46S5",
     "deals": {
       "bestbuy": {
-        "price": 155.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589325&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589325.p%3FskuId%3D6589325",
-        "inStock": false
+        "price": 219.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12068545&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-16gb-ddr5-5600mhz-c46-sodimm-laptop-memory-black%2FJX8PSKJ956&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445839614623365301448159",
@@ -50986,8 +51851,8 @@ export const PARTS = [
     "mpn": "CMK32GX5M2Y6000Z30",
     "deals": {
       "bestbuy": {
-        "price": 565.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621674&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621674.p%3FskuId%3D6621674",
+        "price": 499.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621674&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-32gb-2x16gb-ddr5-6000mhz-z30-amd-expo-intel-xmp-udimm-desktop-memory-black%2FJ39TSCPW2G&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -51021,8 +51886,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 1194.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637043&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637043.p%3FskuId%3D6637043",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637043&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-128gb-kit-2x64gb-ddr5-5600mhz-c46-sodimm-laptop-memory-black%2FJX8PSKCPWR&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "cap": 128,
@@ -51132,9 +51997,9 @@ export const PARTS = [
     "mpn": "CP2K32G64C40U5B",
     "deals": {
       "bestbuy": {
-        "price": 700.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637077&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637077.p%3FskuId%3D6637077",
-        "inStock": false
+        "price": 1374.69,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592849&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-pro-oc-gaming-64gb-2x32gb-ddr5-6400mhz-c40-udimm-intel-xmp-3-0-amd-expo-desktop-memory-black%2FJX8PSKC62Y&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "cap": 64,
@@ -51334,9 +52199,9 @@ export const PARTS = [
     "mpn": "CMP64GX5M2B6000Z30W",
     "deals": {
       "bestbuy": {
-        "price": 1228.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645752&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645752.p%3FskuId%3D6645752",
-        "inStock": false
+        "price": 1274.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645752&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-dominator-titanium-64gb-2-x-32gb-ddr5-6000-cl30-36-36-76-1-40v-intel-xmp-amd-expo-white%2FJ39TSCP5Y6&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "cap": 64,
@@ -51655,6 +52520,11 @@ export const PARTS = [
         "price": 259,
         "url": "https://www.amazon.com/dp/B0F9XN4DCC?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 279.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12177717&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p510-1tb-gen5-nvme-ssd-pcie-5-0-m-2-up-to-11000-mb-s-with-heatsink-ps5-compatible%2FJX8PSKCR8Y&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "pcie": 5,
@@ -51967,6 +52837,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 459.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11058459&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsk-hynix-platinum-p51-2tb-pcie-gen5-nvme-m-2-ssd-i-238-layer-nand-up-to-14-7gb-s-read%2FBGWLPVKCXF&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "pcie": 4,
@@ -52136,6 +53011,11 @@ export const PARTS = [
         "price": 191.9,
         "url": "https://www.amazon.com/dp/B0DC8VPSHV?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 329.41,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11567960&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-nv3-m-2-2230-1tb-pcie-4-0-x4-nvme-internal-solid-state-drive-ssd-snv3sm3-1t0-up-to-6000-mb-s%2FJX4LR3PYF3&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "pcie": 4,
@@ -52164,6 +53044,11 @@ export const PARTS = [
       "amazon": {
         "price": 279.99,
         "url": "https://www.amazon.com/dp/B0CJRTVLJ2?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 430.98,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12302692&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-snv3s-m-2-2280-2tb-pcie-4-0-x4-nvme-internal-solid-state-drive-ssd-snv3s-2000gbk-bulk%2FJX4LR3PJQC&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -52438,6 +53323,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.8
+      },
+      "bestbuy": {
+        "price": 162,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12613621&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-constellation-es-st32000444ss-2tb-sas-7200rpm-3-5-hdd%2FJ37C5H9WL5&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "value": 3,
@@ -52854,8 +53744,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 319.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523591&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6523591.p%3FskuId%3D6523591",
+        "price": 249.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523591&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-990-pro-1tb-internal-ssd-pcle-gen-4x4-nvme%2FJ3ZYG28J3X&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -52911,9 +53801,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 339.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6447127&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6447127.p%3FskuId%3D6447127",
-        "inStock": false
+        "price": 519.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12574815&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-870-evo-1tb-internal-ssd-sata%2FJ3ZYGCHH2Z&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458314809812327053494388",
@@ -52964,8 +53854,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 639.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523595&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6523595.p%3FskuId%3D6523595",
+        "price": 429.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523595&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-990-pro-2tb-internal-ssd-pcle-gen-4x4-nvme%2FJ3ZYG28J3S&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -53028,6 +53918,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.702Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 196.54,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11052103&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-nv3-m-2-2280-1tb-pcie-4-0-x4-nvme-internal-solid-state-drive-ssd-snv3s-1000g-up-to-6000-mb-s%2FJX4LR3PJHQ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -53080,6 +53975,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.89
+      },
+      "bestbuy": {
+        "price": 297.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12503865&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-2tb-2280-pcie-gen4-nvme-ssd-up-to-7100-mb-s-3d-nand-acronis-offer%2FJX8PSKCYK6&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -53179,6 +54079,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.702Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 188.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12514533&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-m-2-2280-1tb-pci-express-4-0-x4-nvme-3d-nand-internal-solid-state-drive-ssd-ct1000p310ssd801%2FJX8PSKCYZK&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -53230,6 +54135,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.378Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 114.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12199398&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-nv3-m-2-2280-500gb-pcie-4-0-x4-nvme-internal-solid-state-drive-ssd-snv3s-500g-up-to-up-to-6000-mb-s%2FJX4LR3PJT8&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 18,
@@ -53275,8 +54185,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 339.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618929&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618929.p%3FskuId%3D6618929",
+        "price": 249.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618929&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-9100-pro-1tb-internal-ssd-pcie-gen-5x4-nvme-speeds-up-to-14700-mb-s%2FJ3ZYG2454T&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -53432,6 +54342,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.732Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 121.34,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12313939&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-a400-480gb-internal-ssd-sata%2FJX4LR3X49T&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 21,
@@ -53472,9 +54387,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6394313&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6394313.p%3FskuId%3D6394313",
-        "inStock": false
+        "price": 174.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12608393&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-bx500-1tb-internal-ssd-sata%2FJX8PSWKR92&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "44583149854755867736759",
@@ -53580,8 +54495,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 1099.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6559270&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6559270.p%3FskuId%3D6559270",
+        "price": 929,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12189747&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-990-pro-4tb-internal-ssd-pcle-gen-4x4-nvme%2FJ3ZYG2R5GZ&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -53644,6 +54559,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 199.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12100848&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-blue-1tb-sa510-2-5-internal-solid-state-drive-ssd-wds100t3b0a%2FJXTHCJVQS2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 38,
@@ -53741,6 +54661,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.710Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 284.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541324&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850p-1tb-internal-ssd-pcie-gen-4-x4-with-heatsink-for-ps5%2FJXJ62C6H52&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -53841,6 +54766,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.781Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 421.08,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10750023&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-red-plus-10tb-nas-internal-hard-drive%2FJXTHCC7VFJ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -53937,6 +54867,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 145.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018069&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-t-force-vulcan-z-2-5-1tb-sata-iii-3d-nand-internal-solid-state-drive-ssd-t253tz001t0c101%2FJ37P8XC4WZ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -54113,6 +55048,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 349.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018011&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd_black-sn7100-m-2-2280-2tb-pci-express-4-0-x4-tlc-3d-nand-internal-solid-state-drive-ssd-wds200t4x0e%2FJXTHCC7X2S&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 47,
@@ -54498,8 +55438,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 679.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618928&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618928.p%3FskuId%3D6618928",
+        "price": 459.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618928&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-9100-pro-2tb-internal-ssd-pcie-gen-5x4-nvme-speeds-up-to-14700-mb-s%2FJ3ZYG24547&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -54680,6 +55620,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.293Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 80.5,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10845853&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-a400-240gb-internal-ssd-sata%2FJX4LR3XTFK&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 11,
@@ -54781,6 +55726,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 60.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12182074&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpatriot-p300-m-2-2280-256gb-pcie-gen3-x4-nvme-1-3-internal-solid-state-drive-ssd-p300p256gm28%2FJ3L95X5TPK&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 13,
@@ -54900,8 +55850,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 1359.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618927&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618927.p%3FskuId%3D6618927",
+        "price": 999.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12327433&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-9100-pro-4tb-internal-ssd-pcie-gen-5x4-nvme-speeds-up-to-14800-mb-s%2FJ3ZYG245ZK&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -55182,6 +56132,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 659,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11332461&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-wd_black-4tb-sn850x-nvme-internal-gaming-ssd-solid-state-drive-gen4-pcie-m-2-2280-up-to-7300-mb-s-wds400t2x0e%2FJXTHCC7J32&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 61,
@@ -55225,9 +56180,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 279.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6598735&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6598735.p%3FskuId%3D6598735",
-        "inStock": false
+        "price": 409.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11232590&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-8tb-gaming-internal-hard-drive%2FJXTHCJ5F6Z&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458318354813830193527134",
@@ -55285,6 +56240,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 91.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12528837&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpatriot-p300-m-2-2280-512gb-pcie-gen3-x4-nvme-1-3-internal-solid-state-drive-ssd-p300p512gm28%2FJ3L95X5TSJ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 5,
@@ -55336,6 +56296,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 669.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523590&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-990-pro-2tb-internal-ssd-pcie-gen-4x4-nvme-with-heatsink-for-ps5%2FJ3ZYG28JXH&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 26,
@@ -55430,6 +56395,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.223Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 314.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12564755&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-2tb-pcie-gen4-2230-nvme-m-2-ssd%2FJX8PSKCGQQ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -55480,6 +56450,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.781Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 1019.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10148054&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-28tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5KWC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -55618,6 +56593,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.051Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 459.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018029&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-wd_black-2tb-sn8100-nvme-ssd-pcie-5-0x4-m-2-2280-14900-mb-s-ai-gaming-video-editing%2FJXJ62CQ2YP&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 50,
@@ -55671,6 +56651,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 289.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11065076&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-mp600-mn-m-2-2230-2tb-pci-express-4-0-x4-3d-tlc-internal-solid-state-drive-ssd-cssd-f2000gbmp600mnr2%2FJ39QHT2CJP&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -55876,6 +56861,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.334Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 499.95,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12069445&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd_black-2tb-sn850x-nvme-ssd-7300-mb-s-ps5-gen4-m-2-2280%2FJXTHCC7JCY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 50,
@@ -55919,8 +56909,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6385542&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6385542.p%3FskuId%3D6385542",
+        "price": 109.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6385542&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-cs900-500gb-internal-ssd-sata%2FJXF2C42GFG&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -56163,6 +57153,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 102.74,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12313332&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-mp33-m-2-2280-512gb-pcie-3-0-x4-with-nvme-1-3-3d-nand-internal-solid-state-drive-ssd-tm8fp6512g0c101%2FJ37P8XCJFR&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -56251,6 +57246,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.732Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 203.46,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021198&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd_black-sn7100-m-2-2280-500gb-pci-express-4-0-x4-tlc-3d-nand-internal-solid-state-drive-ssd-wds500g4x0e%2FJXTHCC7X49&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 8,
@@ -56534,6 +57534,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.571Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 239.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12481237&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-1tb-wd-blue-sn5000-nvme-ssd-pcie-gen-4-0-up-to-5150-mb-s-read%2FJXTHCC78WW&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -56622,6 +57627,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.675Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 259.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12567050&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-1tb-pcie-gen4-2230-nvme-m-2-ssd%2FJX8PSKCGQ5&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -56924,6 +57934,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.781Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 280.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12608080&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-6tb-p10-game-drive-portable-external-hard-drive-wdbz7d0060bbk-wesn--black%2FJXTHCC74RL&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -57051,6 +58066,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.347Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 114.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10955034&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-500gb-wd-green-sn3000-nvme-internal-ssd-gen4-pcie-m-2-2280-up-to-5000-mb-s-wds500g4g0e%2FJXTHCC75PY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -57205,6 +58225,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.64
+      },
+      "bestbuy": {
+        "price": 537.98,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12614506&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p3-plus-2tb-internal-ssd-pcie-gen-4-x4-nvme%2FJX8PSK7Z2Q&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -57395,6 +58420,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.755Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 359.74,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11082257&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-nv3-m-2-2280-2tb-pcie-4-0-x4-nvme-internal-solid-state-drive-ssd-snv3s-2000g-up-to-6000-mb-s%2FJX4LR3PJHL&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 39,
@@ -57860,6 +58890,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 254.32,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11524186&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-ultra-2-5-500gb-sata-iii-3d-nand-internal-solid-state-drive-ssd-sdssdh3-500g-g26%2FJXJ62C6QP8&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 30,
@@ -58084,6 +59119,11 @@ export const PARTS = [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 89.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12532098&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpatriot-p320-m-2-2280-512gb-pci-express-3-0-x4-internal-solid-state-drive-ssd-p320p512gm28%2FC345Z2KYXQ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -58263,6 +59303,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 269.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018129&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd_black-1tb-sn8100-nvme-ssd-pcie-5-0x4-m-2-2280-14900-mb-s-ai-gaming-video-editing%2FJXJ62CQ2PY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 44,
@@ -58315,6 +59360,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.378Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 168.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12500646&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-e100-m-2-2280-1tb-pci-express-4-0-x4-pcie-internal-solid-state-drive-ssd%2FJX8PSKC64G&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -58521,6 +59571,11 @@ export const PARTS = [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 257.98,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12486638&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpatriot-p400-lite-m-2-pcie-gen-4-x4-1tb-ssd-solid-state-drive-p400lp1kgm28h-up-to-3500mb-s%2FC345Z2K2QL&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -58559,6 +59614,11 @@ export const PARTS = [
       "amazon": {
         "price": 155,
         "url": "https://www.amazon.com/dp/B01LZMUNGR?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 239.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11236786&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-4tb-barracuda-5400-rpm-128mb-cache-sata-6-0gb-s-2-5-15mm-laptop-internal-hard-drive-st4000lm024%2FJ37C5HH4HS&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -58936,8 +59996,8 @@ export const PARTS = [
       },
       "bestbuy": {
         "price": 299.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594262&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594262.p%3FskuId%3D6594262",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12349769&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-2tb-internal-ssd-pcie-gen-4-x4-nvme-m-2%2FJX8PSKCGRH&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458317040229568163024760",
@@ -59087,6 +60147,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.732Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 399.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12616469&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-wds200t3x0e-black-2tb-sn770-nvme-internal-gaming-ssd-solid-state-drive-gen4-pcie-m-2-2280-up-to-5150-mb-s%2FJXTHCJVKKG&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -59185,6 +60250,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.985Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 1885.72,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11066569&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-870-qvo-8tb-internal-ssd-sata%2FJ3ZYGCQWRW&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 20,
@@ -59394,6 +60464,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 257.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018108&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-t-force-vulcan-z-2-5-2tb-sata-iii-3d-nand-internal-solid-state-drive-ssd-t253tz002t0c101%2FJ37P8XC4K9&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -59482,9 +60557,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 599.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594263&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594263.p%3FskuId%3D6594263",
-        "inStock": false
+        "price": 449.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592781&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-4tb-internal-ssd-pcie-gen-4-x4-nvme-m-2%2FJX8PSKCGQL&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -59704,6 +60779,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.63
+      },
+      "bestbuy": {
+        "price": 249,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12503997&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-1tb-wd-green-sn350-nvme-internal-ssdgen3-pcieqlcm-2-2280up-to-3200-mb-swds100t3g0c%2FJ37FJ43YX3&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -59830,6 +60910,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.571Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 378.06,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10493868&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-blue-sn5000-wds200t4b0e-2-tb-solid-state-drive-m-2-2280-internal-pci-express-nvme-pci-express-nvme-4-0-x4-900%2FJXTHCC7XX2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -60050,6 +61135,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.606Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 219.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11024600&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-wds100t3g0a-1tb-wd-green-internal-ssd-solid-state-drive%2FJXTHCC73T6&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -60149,6 +61239,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 729.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12199539&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t705-4tb-pcie-gen5-nvme-ssd-up-to-14100-mb-s-game-ready-internal-ssd-1mo-adobe-cc%2FJX8PSKCXLY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -60199,6 +61294,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.223Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 408.4,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12346214&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t705-1tb-pcie-gen5-nvme-ssd-up-to-13600-mb-s-game-ready-adobe-cc-1mo%2FJX8PSKCX89&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -60481,6 +61581,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.702Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 999.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018049&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-4tb-wd_black-sn8100-pcie-5-0x4-nvme-m-2-ssd-wds400t1x0m-00cmt0%2FJXJ62CQ2PH&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 56,
@@ -60533,6 +61638,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 349.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018420&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-t-force-vulcan-z-2-5-4tb-sata-iii-3d-nand-internal-solid-state-drive-ssd-t253ty004t0c101%2FJ37P8X5PQ5&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 5,
@@ -60764,6 +61874,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018198&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-cs2230-m-2-2280-1tb-pci-express-3-0-x4-3d-nand-internal-solid-state-drive-ssd-m280cs2230-1tb-rb%2FJXF2C4SP74&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -60814,6 +61929,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 178.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018040&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-mp44l-m-2-2280-1tb-pcie-4-0-x4-with-nvme-1-4-tlc-internal-solid-state-drive-ssd-tm8fpk001t0c101%2FJ37P8XCVGS&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -60854,6 +61974,11 @@ export const PARTS = [
       "amazon": {
         "price": 601.91,
         "url": "https://www.amazon.com/dp/B0CN5LNQSC?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 639.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12596889&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-exos-x24-16tb-internal-hard-drive%2FJ37C5H53Y8&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -61346,6 +62471,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.155Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 193.34,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11965663&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-western-digital-green-sn3000-1-tb-m-2-nvme-ssd-2280-pcie-4-0-x4%2FJXTHCCJJSX&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -62056,6 +63186,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.93
+      },
+      "bestbuy": {
+        "price": 259.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12225089&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-wds100t3x0e-black-1tb-sn770-nvme-gen4-pcie-m-2-2280-up-to-5150-mb-s-internal-gaming-ssd-solid-state-drive%2FJXTHCJVKWL&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -62420,6 +63555,11 @@ export const PARTS = [
         "price": 549.99,
         "url": "https://www.amazon.com/dp/B0DJ1QC42R?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 549.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12225065&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-nv3-m-2-2280-4tb-pcie-4-0-x4-nvme-internal-solid-state-drive-up-to-6000-mb-s-snv3s-4000g%2FJX4LR3PXRC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 29,
@@ -62660,6 +63800,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.571Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 368.02,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12136357&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-blue-sn580-wds200t3b0e-2tb-solid-state-drive-m-2-2280-internal-pci-express-nvme-4-0-x4%2FJXTHCC7W5V&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -63582,6 +64727,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.223Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 249.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12561715&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t500-1tb-internal-ssd-pcie-gen-4x4-nvme-m-2-with-heatsink-for-ps5%2FJX8PSKCX7W&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -63620,6 +64770,11 @@ export const PARTS = [
       "amazon": {
         "price": 459.99,
         "url": "https://www.amazon.com/dp/B0CVMSV5J6?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 816.81,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11068653&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-red-wds200t2r0a-2-tb-solid-state-drive-2-5-internal-sata-sata-600%2FJXTHCC7ZK6&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -63701,6 +64856,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.571Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 152.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12481234&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-western-digital-500gb-wd-blue-sn5000-nvme-internal-ssd-pcie-gen-4-0-m-2-2280-up-to-5000-mb-s-wds500g4b0e%2FJXTHCC78K7&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -63754,6 +64914,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.980Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 519,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12603197&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-wds400t4b0e-4tb-wd-blue-sn5000-nvme-internal-solid-state-drive-ssd%2FJXTHCC79PY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 55,
@@ -63843,6 +65008,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.378Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 513.91,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10854614&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-ultra-sdssdh3-2t00-g26-2-tb-solid-state-drive-2-5-internal-sata%2FJXJ62C6F7J&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -64233,6 +65403,11 @@ export const PARTS = [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 139.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12532095&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpatriot-p320-m-2-2280-1tb-pci-express-3-0-x4-internal-solid-state-drive-ssd-p320p1tbm28%2FC345Z2KYX5&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -64460,6 +65635,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.378Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 419.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12530366&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t705-2tb-pcie-gen5-nvme-m-2-ssd-up-to-14500-mb-s-game-ready-1mo-adobe-cc%2FJX8PSKCXGX&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -64598,6 +65778,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 206.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12502665&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p510-m-2-2280-1tb-pci-express-5-0-3d-nand-internal-solid-state-drive-ssd-ct1000p510ssd5-01%2FJX8PSKCR53&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -65567,6 +66752,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.119Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 269.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12352032&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-e100-2tb-m-2-2280-nvme-pci-express-4-0-x4-pcie-gen4-internal-ssd-up-to-5000mb-s-ct2000e100ssd8%2FJX8PSKC64R&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -65738,9 +66928,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 459.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616032&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616032.p%3FskuId%3D6616032",
-        "inStock": false
+        "price": 579.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616032&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-16tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5L89&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -65779,9 +66969,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 359.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6677302&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6677302.p%3FskuId%3D6677302",
-        "inStock": false
+        "price": 459.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6677302&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-12tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5LGJ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -65868,6 +67058,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.87
+      },
+      "bestbuy": {
+        "price": 381.43,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12013734&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-blue-wd100eagz-10tb-7200-rpm-512mb-cache-sata-6-0gb-s-3-5-internal-hard-drive%2FJXTHCCJCR4&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -66003,6 +67198,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.571Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 139.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12048481&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-sandisk-wd-blue-sn5100-m-2-2280-500gb-pci-express-4-0-x4-3d-nand-internal-solid-state-drive-ssd-wds500g5b0e-00cpe0%2FJXTHCCJ7J9&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 8,
@@ -66056,6 +67256,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.571Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 309.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018088&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-sandisk-wd-blue-sn5100-m-2-2280-2tb-pci-express-4-0-x4-3d-nand-internal-solid-state-drive-ssd-wds200t5b0e-00cpe0%2FJXTHCCJ776&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -66109,6 +67314,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.732Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 219.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12205769&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-sandisk-wd-blue-sn5100-m-2-2280-1tb-pci-express-4-0-x4-3d-nand-internal-solid-state-drive-ssd-wds100t5b0e-00cpe0%2FJXTHCCJ778&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -66673,6 +67883,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.378Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 399,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12336966&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t705-2-tb-solid-state-drive-m-2-2280-internal-pci-express-nvme-pci-express-nvme-5-0-x4-desktop-pc%2FJX8PSKCX6R&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -66929,6 +68144,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 304.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12486822&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-mp44l-m-2-2280-2tb-pcie-4-0-x4-with-nvme-1-4-tm8fpk002t0c101%2FJ37P8XCVL2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 7,
@@ -67493,6 +68713,11 @@ export const PARTS = [
       "amazon": {
         "price": 319.99,
         "url": "https://www.amazon.com/dp/B0CZMZQ8MW?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 319.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12524251&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-teamgroup-mp44q-2tb-pcie-gen4-m-2-ssd-7400mb-s-tm8ffd002t0c101%2FC34F794Y9T&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -68097,6 +69322,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.447Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 739.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12564683&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flexar-nq780-4tb-pcie-gen-4x4-nvme-m-2-internal-ssd%2FJ36XPK4KG2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -68519,8 +69749,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 249.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594250&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594250.p%3FskuId%3D6594250",
+        "price": 189.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12225084&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-1tb-internal-ssd-pcie-gen-4-x4-nvme-m-2%2FJX8PSKCGL8&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -69650,6 +70880,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 729.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12109946&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-ssd-spatium-m480-pro-pcie-4-0-nvme-m-2-4tb-internal-solid-state-drive-ssd%2FJ3P7TXLFC3&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -69700,6 +70935,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.571Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 758.68,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12474269&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-green-sn3000-2tb-m-2-2280-nvme-internal-ssd-up-to-5000mb-s-read%2FJXTHCC75YP&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -69871,6 +71111,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 174.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018053&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-cs3150-xlr8-gaming-rgb-1tb-pcie-gen5-nvme-ssd-with-rgb-fan-up-to-11500-mb-s-read%2FJXF2C46755&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 6,
@@ -70104,6 +71349,11 @@ export const PARTS = [
         "price": 179.99,
         "url": "https://www.amazon.com/dp/B0B94R72J5?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 141.7,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10757455&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-2tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5G2K&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 15,
@@ -70179,8 +71429,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 479.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512128&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6512128.p%3FskuId%3D6512128",
+        "price": 379.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12168114&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850x-2tb-internal-ssd-pcie-gen-4-x4-nvme%2FJXJ62C6Y95&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -70478,9 +71728,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 229.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618325&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618325.p%3FskuId%3D6618325",
-        "inStock": false
+        "price": 339.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11078559&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p510-2tb-internal-ssd-pcie-gen-5-x4-nvme-m-2-for-laptop-and-desktop%2FJX8PSKC6T5&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "N82E16820156456",
@@ -70820,6 +72070,11 @@ export const PARTS = [
       "amazon": {
         "price": 264.07,
         "url": "https://www.amazon.com/dp/B07GYZH8HY?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 158.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013354&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-barracuda-4tb-internal-hard-drive-hdd-3-5-inch-sata-6-gb-s-5400-rpm-256mb-cache-for-computer-desktop-pc%2FJ37C5HTJJC&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -71326,9 +72581,9 @@ export const PARTS = [
     "mpn": "GSRF MZ-V7S1T0BAM",
     "deals": {
       "bestbuy": {
-        "price": 120.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6351466&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6351466.p%3FskuId%3D6351466",
-        "inStock": false
+        "price": 234.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6408299&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-t7-1tb-external-usb-3-2-gen-2-portable-ssd-with-hardware-encryption-titan-gray%2FJ3ZYGCQG8H&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "cap": 1000,
@@ -71359,9 +72614,9 @@ export const PARTS = [
     "mpn": "GSRF MZ-V7S2T0B/AM",
     "deals": {
       "bestbuy": {
-        "price": 172.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6362136&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6362136.p%3FskuId%3D6362136",
-        "inStock": false
+        "price": 399.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6408301&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-t7-2tb-external-usb-3-2-gen-2-portable-ssd-with-hardware-encryption-titan-gray%2FJ3ZYGCQGGG&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "cap": 2000,
@@ -71391,8 +72646,8 @@ export const PARTS = [
     "mpn": "SSD7CS900-250-RB",
     "deals": {
       "bestbuy": {
-        "price": 77.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6384059&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6384059.p%3FskuId%3D6384059",
+        "price": 64.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6384059&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-cs900-250gb-internal-ssd-sata%2FJXF2C42G5Q&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -71430,8 +72685,8 @@ export const PARTS = [
     "mpn": "SSD7CS900-1TB-RB",
     "deals": {
       "bestbuy": {
-        "price": 189.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6385543&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6385543.p%3FskuId%3D6385543",
+        "price": 187.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6385543&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-cs900-1tb-internal-ssd-sata%2FJXF2C42GFR&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -71491,9 +72746,9 @@ export const PARTS = [
     "mpn": "GSRF MZ-77Q4T0B/AM",
     "deals": {
       "bestbuy": {
-        "price": 310.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6425157&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6425157.p%3FskuId%3D6425157",
-        "inStock": false
+        "price": 995,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12542184&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-990-pro-4tb-internal-ssd-pcie-gen-4x4-nvme-with-heatsink-for-ps5%2FJ3ZYG2979Y&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "cap": 4000,
@@ -71846,9 +73101,9 @@ export const PARTS = [
     "mpn": "WDBBDL0010BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 99.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6495881&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6495881.p%3FskuId%3D6495881",
-        "inStock": false
+        "price": 299.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512132&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850x-1tb-internal-ssd-pcie-gen-4-x4-nvme-with-heatsink-for-ps5-and-desktops%2FJXJ62C6L5Q&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "cap": 1000,
@@ -71878,8 +73133,8 @@ export const PARTS = [
     "mpn": "WDBB8H0010BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 219.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6506976&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6506976.p%3FskuId%3D6506976",
+        "price": 199.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6506976&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-sa510-1tb-internal-ssd-sata%2FJXJ62C6LVK&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -71962,8 +73217,8 @@ export const PARTS = [
     "mpn": "WDBB9G0010BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 319.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512131&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6512131.p%3FskuId%3D6512131",
+        "price": 269.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512131&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850x-1tb-internal-ssd-pcie-gen-4-x4-nvme%2FJXJ62C6Y93&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -72004,8 +73259,8 @@ export const PARTS = [
     "mpn": "WDBB8H0040BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 939.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6540751&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6540751.p%3FskuId%3D6540751",
+        "price": 845.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12562220&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-sa510-4tb-internal-ssd-sata%2FJXJ62C64KS&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -72044,8 +73299,8 @@ export const PARTS = [
     "mpn": "WDBB8H0020BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 479.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6540755&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6540755.p%3FskuId%3D6540755",
+        "price": 299.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541326&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850p-2tb-internal-ssd-pcie-gen-4-x4-with-heatsink-for-ps5%2FJXJ62C6HFY&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -72203,9 +73458,9 @@ export const PARTS = [
     "mpn": "GSRF MZ-77Q8T0B/AM",
     "deals": {
       "bestbuy": {
-        "price": 644.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6566974&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6566974.p%3FskuId%3D6566974",
-        "inStock": false
+        "price": 2449,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12649195&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-ssd-9100-pro-with-heatsink-8tb-internal-ssd-pcie-5-0x4-m-2%2FJ3ZYG2454V&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "cap": 8000,
@@ -72373,9 +73628,9 @@ export const PARTS = [
     "mpn": "MZ-V9E2T0B/AM",
     "deals": {
       "bestbuy": {
-        "price": 209.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571724&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6571724.p%3FskuId%3D6571724",
-        "inStock": false
+        "price": 549.34,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592992&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-990-evo-ssd-2tb-internal-ssd-pcie-gen-4x4--gen-5x2-m-2-2280-speeds-up-to-5000mb-s%2FJ3ZYG2H7JJ&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "9SIC0X3KPR3743",
@@ -72414,9 +73669,9 @@ export const PARTS = [
     "mpn": "ZP2000GM3A063",
     "deals": {
       "bestbuy": {
-        "price": 279.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581744&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6581744.p%3FskuId%3D6581744",
-        "inStock": false
+        "price": 504.62,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12558337&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-firecuda-530r-2tb-internal-ssd-pcie-gen-4-x4-nvme-with-heatsink-for-ps5%2FJ37C5H5TVZ&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458314518291357655883027",
@@ -72499,9 +73754,9 @@ export const PARTS = [
     "mpn": "ZP1000GM3A063",
     "deals": {
       "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581747&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6581747.p%3FskuId%3D6581747",
-        "inStock": false
+        "price": 236.45,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592976&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-firecuda-530r-1tb-internal-ssd-pcie-gen-4-x4-nvme%2FJ37C5H5TFL&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "cap": 1000,
@@ -72639,8 +73894,8 @@ export const PARTS = [
     "mpn": "WDBB9G0080BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 2399.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593300&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6593300.p%3FskuId%3D6593300",
+        "price": 1299.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593303&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850p-8tb-internal-ssd-pcie-gen-4-x4-with-heatsink-for-ps5%2FJXJ62CRLLV&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -72890,8 +74145,8 @@ export const PARTS = [
     "mpn": "WDBELG0020BBK-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 359.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615945&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615945.p%3FskuId%3D6615945",
+        "price": 349.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615945&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn7100-2tb-internal-ssd-gen-4-x4-nvme%2FJXJ62CRKFL&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -73030,9 +74285,9 @@ export const PARTS = [
     "mpn": "CT1000P510SSD8",
     "deals": {
       "bestbuy": {
-        "price": 139.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618324&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618324.p%3FskuId%3D6618324",
-        "inStock": false
+        "price": 189.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12487153&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-1tb-internal-ssd-pcie-gen-4-x4-nvme-m-2-with-heatsink-for-ps5%2FJX8PSKCSQR&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445832541656493446403779",
@@ -73107,8 +74362,8 @@ export const PARTS = [
     "mpn": "MZ-VAP2T0C/AM",
     "deals": {
       "bestbuy": {
-        "price": 709.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618930&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618930.p%3FskuId%3D6618930",
+        "price": 599.95,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12327418&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-9100-pro-2tb-with-heatsink-internal-ssd-pcie-gen-5x4-nvme-speeds-up-to-14700-mb-s%2FJ3ZYG2455F&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -73192,8 +74447,8 @@ export const PARTS = [
     "mpn": "WDBCMT0020BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 669.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633571&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633571.p%3FskuId%3D6633571",
+        "price": 459.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633571&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn8100-2tb-non-heatsink-internal-ssd-gen-5x4-nvme%2FJXJ62CQ2W4&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -73236,8 +74491,8 @@ export const PARTS = [
     "mpn": "WDBCMT0040BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 1299.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633572&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633572.p%3FskuId%3D6633572",
+        "price": 999,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12069446&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn8100-4tb-non-heatsink-internal-ssd-gen-5x4-nvme%2FJXJ62CQ2KC&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -73280,8 +74535,8 @@ export const PARTS = [
     "mpn": "WDBCMT0010BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 334.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633573&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633573.p%3FskuId%3D6633573",
+        "price": 269.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633573&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn8100-1tb-non-heatsink-internal-ssd-gen-5x4-nvme%2FJXJ62CQ2WR&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -73324,9 +74579,9 @@ export const PARTS = [
     "mpn": "CT1000T710SSD5",
     "deals": {
       "bestbuy": {
-        "price": 219.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636631&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636631.p%3FskuId%3D6636631",
-        "inStock": false
+        "price": 339.74,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12197254&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t710-1tb-internal-ssd-pcie-gen-5-x4-nvme-m-2-with-heatsink%2FJX8PSKC94G&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445839227973618801000108",
@@ -73410,9 +74665,9 @@ export const PARTS = [
     "mpn": "CT4000T710SSD8",
     "deals": {
       "bestbuy": {
-        "price": 571.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636635&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636635.p%3FskuId%3D6636635",
-        "inStock": false
+        "price": 749.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12633982&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t710-4tb-internal-ssd-pcie-gen-5-x4-nvme-m-2-with-3d-nand-memory%2FJX8PSKC6S4&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "9SIBFJRKVC6830",
@@ -73453,9 +74708,9 @@ export const PARTS = [
     "mpn": "CT2000T710SSD5",
     "deals": {
       "bestbuy": {
-        "price": 338.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636637&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636637.p%3FskuId%3D6636637",
-        "inStock": false
+        "price": 442.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11937384&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t710-2tb-internal-ssd-pcie-gen-5-x4-nvme-m-2-with-heatsink%2FJX8PSKC94V&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458317523912889682244133",
@@ -73606,8 +74861,8 @@ export const PARTS = [
     "mpn": "WDBS4F0020BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 329.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644706&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644706.p%3FskuId%3D6644706",
+        "price": 309.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644706&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-sn5100-2tb-internal-ssd-pcie-gen-4-x4-nvme-for-laptops-and-desktops%2FJXJ62CQ86L&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -73647,8 +74902,8 @@ export const PARTS = [
     "mpn": "WDBS4F0040BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 919.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665054&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665054.p%3FskuId%3D6665054",
+        "price": 799.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665054&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-sn5100-4tb-internal-ssd-pcie-gen-4-x4-nvme-for-laptops-and-desktops%2FJXJ62CQ86J&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -73746,9 +75001,9 @@ export const PARTS = [
     "mpn": "SDSP71100TAT-000E0",
     "deals": {
       "bestbuy": {
-        "price": 349.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669295&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669295.p%3FskuId%3D6669295",
-        "inStock": false
+        "price": 179.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11256332&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-portable-ssd-1tb-usb-3-2-gen-2-usb-c-sdssde30-1t00-g26%2FJXJ62CRCZC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "cap": 1000,
@@ -73806,9 +75061,9 @@ export const PARTS = [
     "mpn": "SDSP71500GAN-000E0",
     "deals": {
       "bestbuy": {
-        "price": 194.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669301&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669301.p%3FskuId%3D6669301",
-        "inStock": false
+        "price": 198.06,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10749145&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-wd-blue-500gb-sa510-2-5-internal-solid-state-drive-ssd-wds500g3b0a%2FJXTHCJVQPR&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "cap": 5000,
@@ -73866,8 +75121,8 @@ export const PARTS = [
     "mpn": "M280CS2241-500-RB",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669707&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669707.p%3FskuId%3D6669707",
+        "price": 114.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669707&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-cs2241-500gb-m-2-nvme-gen4-x4-internal-solid-state-drive-ssd-m280cs2241-500-rb%2FJXF2C49YK8&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -74071,9 +75326,9 @@ export const PARTS = [
     "mpn": "WD20SPZX",
     "deals": {
       "bestbuy": {
-        "price": 79.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6220725&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6220725.p%3FskuId%3D6220725",
-        "inStock": false
+        "price": 156.06,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10116205&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-2tb-pc-internal-hard-drive-for-laptops%2FJXTHCJ5343&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "44583636624242393756143",
@@ -74250,9 +75505,9 @@ export const PARTS = [
     "mpn": "ST8000VNA04",
     "deals": {
       "bestbuy": {
-        "price": 179.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6387161&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6387161.p%3FskuId%3D6387161",
-        "inStock": false
+        "price": 339.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013193&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-st8000nt001-8-tb-hard-drive-3-5-internal-sata-sata-600-conventional-magnetic-recording%2FJ37C5H5GC6&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "9SIC5W4KW63092",
@@ -74368,9 +75623,9 @@ export const PARTS = [
     "mpn": "WD181KFGX",
     "deals": {
       "bestbuy": {
-        "price": 509.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523108&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6523108.p%3FskuId%3D6523108",
-        "inStock": false
+        "price": 678.79,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10117399&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-red-pro-18tb-nas-internal-hard-drive%2FJXTHCJVJXX&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458313095203959238816777",
@@ -74407,9 +75662,9 @@ export const PARTS = [
     "mpn": "WD85PURZ",
     "deals": {
       "bestbuy": {
-        "price": 259.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569619&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6569619.p%3FskuId%3D6569619",
-        "inStock": false
+        "price": 304.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013233&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-purple-8tb-surveillance-internal-hard-drive%2FJXTHCJV5KZ&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458310280151474638195059",
@@ -74447,8 +75702,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 259.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581897&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6581897.p%3FskuId%3D6581897",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581897&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-red-plus-8tb-nas-internal-hard-drive%2FJXTHCC7RTT&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445834456770010038223850",
@@ -74490,9 +75745,9 @@ export const PARTS = [
     "mpn": "WD60EFPX",
     "deals": {
       "bestbuy": {
-        "price": 189.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6584031&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6584031.p%3FskuId%3D6584031",
-        "inStock": false
+        "price": 292.2,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11525251&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-red-plus-6tb-nas-internal-hard-drive%2FJXTHCC7RT7&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458317393078030478526449",
@@ -74528,9 +75783,9 @@ export const PARTS = [
     "mpn": "WD80EAAZ",
     "deals": {
       "bestbuy": {
-        "price": 239.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6584860&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6584860.p%3FskuId%3D6584860",
-        "inStock": false
+        "price": 280.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013171&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-8tb-pc-internal-hard-drive-for-desktops%2FJXTHCC79L4&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458317726905710857903755",
@@ -74566,9 +75821,9 @@ export const PARTS = [
     "mpn": "ST20000NTZ01",
     "deals": {
       "bestbuy": {
-        "price": 569.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616031&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616031.p%3FskuId%3D6616031",
-        "inStock": false
+        "price": 669.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616031&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-20tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5LGW&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "9SIAAEEKG84766",
@@ -74644,9 +75899,9 @@ export const PARTS = [
     "mpn": "ST8000VNZ04",
     "deals": {
       "bestbuy": {
-        "price": 249.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616035&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616035.p%3FskuId%3D6616035",
-        "inStock": false
+        "price": 299.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616035&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-8tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5HK4YY&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445837296278133312815153",
@@ -74683,9 +75938,9 @@ export const PARTS = [
     "mpn": "ST2000DMZ08",
     "deals": {
       "bestbuy": {
-        "price": 89.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616036&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616036.p%3FskuId%3D6616036",
-        "inStock": false
+        "price": 119.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616036&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-barracuda-2tb-internal-hard-drive-for-desktops%2FJ37C5HK868&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "9SIAPBJGVS8178",
@@ -74722,9 +75977,9 @@ export const PARTS = [
     "mpn": "ST4000DMZ04",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616037&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616037.p%3FskuId%3D6616037",
-        "inStock": false
+        "price": 149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616037&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-barracuda-4tb-internal-hard-drive-for-desktops%2FJ37C5HK32Z&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "9SIAPBJGVS7935",
@@ -74878,9 +76133,9 @@ export const PARTS = [
     "mpn": "WD40EZAX",
     "deals": {
       "bestbuy": {
-        "price": 129.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9026007&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9026007.p%3FskuId%3D9026007",
-        "inStock": false
+        "price": 153.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013338&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-4tb-pc-internal-hard-drive-for-desktops%2FJXTHCC79K3&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "44583424629223250093994",
@@ -74917,9 +76172,9 @@ export const PARTS = [
     "mpn": "WD60EZAX",
     "deals": {
       "bestbuy": {
-        "price": 179.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9026016&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9026016.p%3FskuId%3D9026016",
-        "inStock": false
+        "price": 211.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013474&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-6tb-pc-internal-hard-drive-for-desktops%2FJXTHCC79K9&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445834778016765776337054",
@@ -74984,9 +76239,9 @@ export const PARTS = [
     "mpn": "WD10SPZX",
     "deals": {
       "bestbuy": {
-        "price": 47.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9314126&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9314126.p%3FskuId%3D9314126",
-        "inStock": false
+        "price": 107.04,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592846&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-1tb-pc-internal-hard-drive-for-laptops%2FJXTHCJ5C9K&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "cap": 1000,
@@ -76128,6 +77383,11 @@ export const PARTS = [
         "price": 89.9,
         "url": "https://www.amazon.com/dp/B0FBX9VS3B?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 94.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12529941&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbe-quiet-pure-power-13-m-750w-atx-3-1-power-supply--80-plus-gold-efficiency--pcie-5-1-gpus--modular--bp026us%2FCC5VXLQGR6&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -76168,8 +77428,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 144.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611986&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6611986.p%3FskuId%3D6611986",
+        "price": 109.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611986&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rme-series-rm850e-80-plus-gold-fully-modular-low-noise-atx-3-1-and-pcie-5-1-power-supply-black%2FJ39QHT23VT&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -76232,6 +77492,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 59.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11463635&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-smart-700w-atx12v-2-3-80-plus-power-supply-black%2FJ39ZPCPVQL&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 19,
@@ -76629,6 +77894,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.978Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 158.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12566264&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-edge-gold-series-1000w-full-modular-power-supply-fan-hub-included-atx-3-0-3-1-pcie-5-1-l-shape-design-eg1000g-wh-white%2FJ39TC2Z7JV&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -76976,6 +78246,11 @@ export const PARTS = [
         "price": 79.99,
         "url": "https://www.amazon.com/dp/B0CQMSTN94?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 102,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11519286&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-cx-series-cx650-80-plus-bronze-atx-power-supply%2FJ39QHTJF9L&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 11,
@@ -77025,6 +78300,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 253.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11078847&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rmx-shift-series-rm1000x-80-plus-gold-fully-modular-atx-power-supply-with-modular-side-interface-black%2FJ39QHT74GW&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 20,
@@ -77159,6 +78439,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.151Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 179.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11479619&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-edge-eg1200g-bh-1200w-gold-modular-psu-atx-3-1-pcie-5-1-l-shape-black%2FJ39TC2ZJR2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -77205,6 +78490,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.978Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 120.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12349258&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-edge850w-modular-atx-3-1-psu-gold-efficiency-low-noise-l-shape-black-eg0850g-b%2FJ39TC2Z73Z&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -77244,8 +78534,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 289.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6544995&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6544995.p%3FskuId%3D6544995",
+        "price": 234.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6544995&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-hxi-series-1000w-80-plus-cybenetics-platinum-fully-modular-ultra-low-noise-atx-power-supply-black%2FJ39QHT2QK7&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -77307,6 +78597,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 181.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12593697&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rmx-shift-series-rm850x-shift-cybenetics-gold-fully-modular-atx-power-supply-white%2FJ39QHTJK3J&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -77446,6 +78741,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 75.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11277838&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rmx-shift-series-rm750x-shift-cybenetics-gold-fully-modular-atx-power-supply-white%2FJ39QHTJW5P&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -77699,8 +78999,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 79.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569210&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6569210.p%3FskuId%3D6569210",
+        "price": 75.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569210&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-smart-bm3-80-bronze-pcie-gen-5-atx-3-0-750w-semi-modular-power-supply-black%2FJ39ZPC9WTX&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -77882,6 +79182,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 64.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12338450&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Frosewill-vng-650w-80-gold-atx-3-0-3-1-non-modular-low-noise-psu-5-year-warranty%2FJ39K6Y5WTJ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 20,
@@ -78198,6 +79503,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 97.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11256485&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-cx-series-cx750-750-watt-80-plus-bronze-atx-power-supply-atx-120-v-ac-230-v-ac-input-3-3-v-dc-5%2FJ39QHTJFT2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 8,
@@ -78284,6 +79594,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.58
+      },
+      "bestbuy": {
+        "price": 97.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11073618&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-full-modular-80-plus-gold-atx-power-supply-unit-internal-120-v-ac-230-v-ac-input-3-3-v-dc-5-v-dc%2FJ3K4GJLJ7V&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -78450,6 +79765,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 101.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11256503&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-mwe-gold-850w-atx-3-1-psu-80-gold-90-12vhpwr-japanese-caps-zero-rpm-10-year%2FJ3K4GJPQZ3&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 18,
@@ -78574,6 +79894,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 69.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12500641&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsilverstone-sst-et550-b-550w-80-plus-bronze-active-pfc-psu%2FJ36P26XF36&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -78821,6 +80146,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 193.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11074084&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-sf-rps0175-850w-power-supply-black-sfx-internal-120-v-230-v-input-3-3-v-5-v-12-v-5-v-sb-output%2FJ39QHTJSGT&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 20,
@@ -79913,8 +81243,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 99.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641924&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641924.p%3FskuId%3D6641924",
+        "price": 89.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641924&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-cx-m-series-cx750m-semi-modular-low-noise-atx-3-1-power-supply-black%2FJ39TSCHZXC&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -80072,8 +81402,8 @@ export const PARTS = [
     "mpn": "PS-SPD-0700NPCWUS-1",
     "deals": {
       "bestbuy": {
-        "price": 59.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6339087&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6339087.p%3FskuId%3D6339087",
+        "price": 54.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6339087&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-smart-700w-atx-80-plus-power-supply-black%2FJ39ZPCS9KG&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -80191,8 +81521,8 @@ export const PARTS = [
     "mpn": "MAG A850GL PCIE5",
     "deals": {
       "bestbuy": {
-        "price": 117.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562432&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562432.p%3FskuId%3D6562432",
+        "price": 107.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562432&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-a850gl-pcie5-850w-full-modular-atx-3-1-ready-80-plus-gold-power-supply-black%2FJ3P7TXLPW5&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -80232,8 +81562,8 @@ export const PARTS = [
     "mpn": "MAG A750GL PCIE5",
     "deals": {
       "bestbuy": {
-        "price": 95.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562433&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562433.p%3FskuId%3D6562433",
+        "price": 86.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562433&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-a750gl-pcie-5-750w-atx-3-1-full-modular-80-plus-gold-gaming-power-supply-black%2FJ3P7TXLPKR&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -80311,8 +81641,8 @@ export const PARTS = [
     "mpn": "PS-TPD-1200FNFAGU-L",
     "deals": {
       "bestbuy": {
-        "price": 199.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6566251&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6566251.p%3FskuId%3D6566251",
+        "price": 179.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6566251&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-toughpower-gf-a3-1200w-80-plus-gold-pcie-gen-5-atx-3-0-ready-fully-modular-power-supply-black%2FJ39ZPC9H3L&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -80389,8 +81719,8 @@ export const PARTS = [
     "mpn": "PS-SPD-0850MNFABU-3",
     "deals": {
       "bestbuy": {
-        "price": 99.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569207&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6569207.p%3FskuId%3D6569207",
+        "price": 89.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569207&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-smart-bm3-80-bronze-pcie-gen-5-atx-3-0-850w-semi-modular-power-supply-black%2FJ39ZPC9W4P&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -80727,8 +82057,8 @@ export const PARTS = [
     "mpn": "CP-9020271-NA",
     "deals": {
       "bestbuy": {
-        "price": 209.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587607&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587607.p%3FskuId%3D6587607",
+        "price": 179.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587607&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rmx-series-rm1000x-cybenetics-gold-fully-modular-atx-power-supply-black%2FJ39QHTJWGF&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -80768,8 +82098,8 @@ export const PARTS = [
     "mpn": "CP-9020270-NA",
     "deals": {
       "bestbuy": {
-        "price": 169.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587623&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587623.p%3FskuId%3D6587623",
+        "price": 149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587623&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rmx-series-rm850x-cybenetics-gold-fully-modular-atx-power-supply-black%2FJ39QHTJW78&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -80880,8 +82210,8 @@ export const PARTS = [
     "mpn": "CP-9020258-NA",
     "deals": {
       "bestbuy": {
-        "price": 234.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615249&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615249.p%3FskuId%3D6615249",
+        "price": 199.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615249&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rme-series-rm1200e-80-plus-gold-fully-modular-low-noise-atx-3-1-and-pcie-5-0-power-supply-black%2FJ39QHT2RCL&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -80921,9 +82251,9 @@ export const PARTS = [
     "mpn": "PS-STP-1000FNFAPU-1",
     "deals": {
       "bestbuy": {
-        "price": 200.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617194&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617194.p%3FskuId%3D6617194",
-        "inStock": false
+        "price": 194.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11066773&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-toughpower-sfx-1000w-80plus-platinum-atx-3-1-standard-power-supply-black%2FJ39ZPC9V4L&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458316226037302919324852",
@@ -81103,8 +82433,8 @@ export const PARTS = [
     "mpn": "CP-9020294-NA",
     "deals": {
       "bestbuy": {
-        "price": 199.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621913&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621913.p%3FskuId%3D6621913",
+        "price": 174.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621913&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rme-series-rm1000e-80-plus-gold-fully-modular-low-noise-atx-3-1-and-pcie-5-1-power-supply-white%2FJ39QHTCVW9&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -81144,8 +82474,8 @@ export const PARTS = [
     "mpn": "CP-9020293-NA",
     "deals": {
       "bestbuy": {
-        "price": 154.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621914&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621914.p%3FskuId%3D6621914",
+        "price": 134.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621914&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rme-series-rm850e-80-plus-gold-fully-modular-low-noise-atx-3-1-and-pcie-5-1-power-supply-white%2FJ39QHTCVPR&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -81267,8 +82597,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 49.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626430&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626430.p%3FskuId%3D6626430",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626430&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-smart-w3-500w-80plus-certified-atx-v3-1-spec-power-supply-black%2FJ39ZPC6J2R&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "watts": 500,
@@ -81296,8 +82626,8 @@ export const PARTS = [
     "mpn": "PS-SPW-0700NNFAWU-1",
     "deals": {
       "bestbuy": {
-        "price": 64.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626436&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626436.p%3FskuId%3D6626436",
+        "price": 59.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626436&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-smart-w3-700w-80plus-certified-atx-v3-1-spec-power-supply-black%2FJ39ZPC6J87&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -81377,8 +82707,8 @@ export const PARTS = [
     "mpn": "PS-STP-0750FNFAPU-1",
     "deals": {
       "bestbuy": {
-        "price": 169.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626444&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626444.p%3FskuId%3D6626444",
+        "price": 129.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626444&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-toughpower-sfx-750w-80plus-platinum-atx-3-1-standard-power-supply-black%2FJ39ZPC9V6V&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -81486,8 +82816,8 @@ export const PARTS = [
     "mpn": "CP-9020310-NA",
     "deals": {
       "bestbuy": {
-        "price": 89.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641923&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641923.p%3FskuId%3D6641923",
+        "price": 79.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641923&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-cx-m-series-cx650m-semi-modular-low-noise-atx-3-1-power-supply-black%2FJ39TSCHZ22&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -81759,8 +83089,8 @@ export const PARTS = [
     "mpn": "A850GLS MLG EDITION",
     "deals": {
       "bestbuy": {
-        "price": 151.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6649233&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6649233.p%3FskuId%3D6649233",
+        "price": 124.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6649233&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-a850gls-mlg-edition-850w-atx-3-1-pcie-5-1-ready-fully-modular-80-plus-gold-gaming-power-supply-black-red%2FJ3P7TXQTGW&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -81880,8 +83210,8 @@ export const PARTS = [
     "mpn": "PS-TPT-0750FNFAGU-3",
     "deals": {
       "bestbuy": {
-        "price": 89.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665527&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665527.p%3FskuId%3D6665527",
+        "price": 84.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665527&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-toughpower-gt-750w-80-gold-atx-3-1-power-supply-black%2FJ39ZPC63Z5&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -82002,8 +83332,8 @@ export const PARTS = [
     "mpn": "PS-TPT-1200FNFAGU-3",
     "deals": {
       "bestbuy": {
-        "price": 179.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665530&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665530.p%3FskuId%3D6665530",
+        "price": 153.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665530&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-toughpower-gt-1200w-80-gold-atx-3-1-power-supply-black%2FJ39TQXRSQL&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -82042,8 +83372,8 @@ export const PARTS = [
     "mpn": "MAG A650BN PCIE5 III",
     "deals": {
       "bestbuy": {
-        "price": 69.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676830&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676830.p%3FskuId%3D6676830",
+        "price": 59.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676830&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-a650bn-pcie5-iii-650w-80-plus-bronze-non-modular-atx-3-1-pcie-5-1-ready-power-supply-black%2FJ3P7TXQT55&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -82083,8 +83413,8 @@ export const PARTS = [
     "mpn": "MAG A750BN PCIE5 III",
     "deals": {
       "bestbuy": {
-        "price": 79.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676834&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676834.p%3FskuId%3D6676834",
+        "price": 69.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676834&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-a750bn-pcie5-iii-750w-80-plus-bronze-non-modular-atx-3-1-pcie-5-1-ready-power-supply-black%2FJ3P7TXQT5Q&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -82124,9 +83454,9 @@ export const PARTS = [
     "mpn": "PS-8G1BB-US",
     "deals": {
       "bestbuy": {
-        "price": 199.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6677351&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6677351.p%3FskuId%3D6677351",
-        "inStock": false
+        "price": 169.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6677351&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-c850-sfx-gold-black%2FJ3GWJHQ34R&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445831222404312764201936",
@@ -83639,6 +84969,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.156Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 124.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12166818&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-o11-vision-compact-white-color-aluminum-steel-tempered-glass-atx-mid-tower-computer-case-o11vpw-white%2FJ39TC2KVQY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -83747,6 +85082,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.154Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 119.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12160566&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-lancool-217-walnut-wood-mid-tower-case-5-pwm-fans-flexible-psu-cable-installation-black-lan217x-black%2FJ39TC2KV65&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -83961,6 +85301,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.156Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 99.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12153818&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-o11d-mini-v2-flow--compact-atx-mid-tower-case--panoramic-view--5-x-120mm-fans--cable-management-o11dmiv2fx-black%2FJ39TC2Z3VT&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 7,
@@ -84085,6 +85430,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.156Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 89.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12312463&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-o11d-mini-v2-compact-atx-mid-tower-airflow-computer-case-panoramic-view-fully-ventilated-airflow-o11dmiv2x-black%2FJ39TC2Z3FK&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 8,
@@ -84308,6 +85658,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367135&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-ridge-black-mini-itx-slim-small-form-factor-console-pc-case-with-pcie-4-0-riser-black%2FJ36XJSZKW4&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -84363,6 +85718,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.762Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 179.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12297635&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-flux-pro-6-x-pwm-fans-included-high-airflow-front-panel-with-walnut-wood-temp-display-full-tower-e-atx-pc-case-walnut%2FJXVWSWS9YS&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -84462,6 +85822,11 @@ export const PARTS = [
       "amazon": {
         "price": 75.99,
         "url": "https://www.amazon.com/dp/B0DFWQDRW1?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 229.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12329820&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fneewer-f600-7-2400nit-touchscreen-camera-field-monitor-1920x1080-3d-lut-4k-hdmi%2FCZLV9F326P&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -84690,6 +86055,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.156Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 82.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12166819&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-lancool-207rx-atx-rgb-case-2x140mm-argb-2x120mm-pwm-fans-tempered-glass-black-black%2FJ39TC2KV9F&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -84742,8 +86112,8 @@ export const PARTS = [
       },
       "bestbuy": {
         "price": 59.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626425&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626425.p%3FskuId%3D6626425",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626425&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-view-170-tg-argb-micro-atx-mid-tower-pc-case-black%2FJ39ZPC6C6F&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458310984865128645341311",
@@ -85120,8 +86490,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 289.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6469130&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6469130.p%3FskuId%3D6469130",
+        "price": 269.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6469130&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-7000d-airflow-atx-full-tower-pc-case-black%2FJ39QHHVWGC&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -85801,6 +87171,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 79.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11076118&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmontech-air-903-max-e-atx-mid-tower-4x-140mm-fans-tempered-glass-mesh-front-type-c-4090-support-black-black%2FC34KSQQR6Z&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -85973,6 +87348,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 229.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367132&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-meshify-2-xl-black-atx-flexible-light-tinted-tempered-glass-window-full-tower-computer-case-black%2FJ36XJSZRC9&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -86364,8 +87744,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 74.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603504&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6603504.p%3FskuId%3D6603504",
+        "price": 69.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603504&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-view-380-tg-argb-mid-tower-atx-pc-case-black%2FJ39ZPC6C97&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -86820,6 +88200,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.207Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 59.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12195347&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-v100x-atx-mid-tower-case-rgb-led-tempered-glass-420mm-gpu-support-360mm-radiator-dust-filter-black-black%2FJ39TC2ZCK4&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -86879,6 +88264,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 99.58,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12085949&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-qube-540-atx-mid-tower-case-415mm-gpu-clearance-tempered-glass-modular-design-stardust-iron-stardust-iron%2FJ3K4GJSRFQ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -87049,6 +88439,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 159.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367114&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-north-computer-case-mid-tower-chalk-white-mesh-steel-5-x-bay-atx-micro-atx-mini-itx-white%2FJ36XJSZTRJ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 11,
@@ -87110,6 +88505,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.157Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 53.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12640382&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgamdias-aura-gc1-elite-atx-mid-tower-pc-case-airflow-mesh-front-4-argb-fans-tempered-glass-gpu-340mm-360mm-aio-black%2FJ3R7L47Q8K&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 17,
@@ -87221,6 +88621,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.762Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 109.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12297633&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-c5-argb-7x-120mm-argb-fans-10-fan-support-type-c-3-2-gen-2-tempered-glass-360mm-radiator-mid-tower-atx-case-black%2FJXVWSWSP6P&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -87610,8 +89015,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 79.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603510&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6603510.p%3FskuId%3D6603510",
+        "price": 63.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603510&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-view-270-plus-tg-argb-mid-tower-e-atx-pc-case-hydrangea-blue%2FJ39ZPC67K2&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -87849,6 +89254,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.762Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 119,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12297874&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-c8-wood-dual-chamber-type-c-360mm-radiator-seamless-tg-panels-rtx-40-compatible-full-tower-case-wood%2FJXVWSWSS8W&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -87960,8 +89370,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 169.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603513&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6603513.p%3FskuId%3D6603513",
+        "price": 159.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603513&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-tower-600-mid-tower-atx-pc-case-black%2FJ39ZPC6CP8&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -88364,6 +89774,11 @@ export const PARTS = [
       "amazon": {
         "price": 65.99,
         "url": "https://www.amazon.com/dp/B095VYKSQZ?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 74.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12473560&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-vsk4000e-u3-us-black-sgcc-steel-atx-mid-tower-computer-case-black%2FJXVWSZXW7G&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -88871,6 +90286,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 62.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12486494&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-a31-black-atx-mid-tower-tempered-glass-btf-connectors-360-aio-support-argb-ready-optimized-airflow-black%2FJJGGLQ4CYF&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -88930,6 +90350,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 249.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367148&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-meshify-3-ambience-pro-rgb-atx-matx-mid-tower-pc-case-black-chassis-with-light-tinted-tg-side-panel-black%2FJ36XJSZ49P&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 20,
@@ -88988,6 +90413,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 296.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11747669&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-meshify-3-xl-ambience-pro-rgb-e-atx-full-tower-pc-case-black-chassis-with-light-tinted-tg-side-panel-black%2FJ36XJSZ4RR&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -89106,6 +90536,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 323.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11180582&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-air-5400-lx-r-rgb-icue-triple-chamber-mid-tower-case-with-3x-rgb-fans-system-hub-black%2FJ39TSCS79Z&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -89153,6 +90588,11 @@ export const PARTS = [
       "amazon": {
         "price": 86.99,
         "url": "https://www.amazon.com/dp/B0FMQDZD6Z?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 85.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12141304&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fokinos-air-cross-genuine-walnut-wood-atx-mid-tower-case-3x140mm-pwm-fan-2x120mm-reverse-pwm-fan-pre-installed-black%2FCGCLQGX83Q&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -89419,6 +90859,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 159.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367129&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-computer-case-meshify-3-black%2FJ36XJSZ4SS&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -89624,8 +91069,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 129.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6530418&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6530418.p%3FskuId%3D6530418",
+        "price": 109.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12568077&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fhyte-y40-atx-mid-tower-pc-case-white%2FJ3R75JLZ4X&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -89696,6 +91141,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.765Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 199.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12564468&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fhyte-y70-mid-tower-atx-gaming-pc-desktop-case-with-riser-cable-black-white%2FJ3R75JLFJL&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 6,
@@ -89756,6 +91206,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 224.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11068480&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-north-xl-white%2FJ36XJSZZ92&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -89878,6 +91333,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.762Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 88.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11146951&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-masterbox-mcb-nr200-knnn-s00-mini-itx-mini-dtx-mini-tower-case-black%2FJ3K4GJLJ9X&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 24,
@@ -90033,6 +91493,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.762Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 144.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12309016&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-performance-1-ft-full-tower-rtx40-compatible-temp-display-4-x-storm-t3-pwm-fans-dual-tg-side-panels-e-atx-pc-case-black%2FJXVWSWSSPP&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -90753,8 +92218,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6585811&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6585811.p%3FskuId%3D6585811",
+        "price": 99.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6585811&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-h7-flow-2024-mid-tower-atx-pc-case-with-rgb-fans-black%2FJ3GWJHQC54&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -90867,9 +92332,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 159.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583648&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583648.p%3FskuId%3D6583648",
-        "inStock": false
+        "price": 173.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11821441&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-3500x-rgb-atx-mid-tower-pc-case-white%2FJ39QHT2JP4&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "445832282207282450270681",
@@ -91047,6 +92512,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 561.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12348000&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-hyperion-gr701-eatx-full-tower-case-semi-open-tool-free-panels-2x-420mm-rad-support-gpu-holder-2x-type-c-black%2FJJG7VWX5P4&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -91107,6 +92577,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 184.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367117&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-torrent-compact-rgb-black-tg-light-tempered-glass-high-airflow-atx-computer-case-black%2FJ36XJSZRH8&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -91262,6 +92737,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 184.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367140&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-meshify-2-black-atx-light-tinted-tempered-glass-window-mid-tower-pc-case-black%2FJ36XJSZ65V&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -91320,6 +92800,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 183.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11463643&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gt502-white-atx-mid-tower-case-with-rgb-button-usb-3-2-type-c-2x-usb-3-0-2-way-gpu-mount-360-280mm-radiator-white%2FJJG7VWCLZ7&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 20,
@@ -91371,6 +92856,11 @@ export const PARTS = [
       "amazon": {
         "price": 158.99,
         "url": "https://www.amazon.com/dp/B0CT2LSSHK?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12297860&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-c8-argb-dual-chamber-layout-type-c-360mm-radiator-support-seamless-tg-front-side-panels-full-tower-e-atx-pc-case-black%2FJXVWSWSPYX&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -91736,6 +93226,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 284.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11256435&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-proart-pa602-e-atx-case-420mm-rad-dual-200mm-fans-tool-less-pcie-gpu-holder-usb-c-i-o-black%2FJJGGLRHHQ7&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -92178,6 +93673,11 @@ export const PARTS = [
         "price": 114.99,
         "url": "https://www.amazon.com/dp/B0CHXVLL51?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 128.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12502887&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-ceres-300-series-ceres-300-tg-argb-matcha-green-spcc-e-atx-mid-tower-case-matcha-green%2FJ39ZPC9W5Y&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -92452,6 +93952,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 244.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367133&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-meshify-3-white%2FJ36XJSZ46L&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -93105,6 +94610,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.154Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 124.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12165412&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-lancool-217-inf-black-mid-tower-atx-case-w-3-fans-mirror-panel-black-lan217infx-black%2FJ39TC2ZG8Y&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -93525,6 +95035,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.765Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 129.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12567177&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fhyte-x50-modern-performance-atx-mid-tower-pc-gaming-case-matcha-milk%2FJ3R75JYLCV&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 12,
@@ -94300,6 +95815,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.157Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 75.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12323210&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgamdias-athena-m4m-wood-mini-pc-case-3-pwm-fans-395mm-gpu-atx-psu-360mm-radiator-wood%2FJ3R7L47KVJ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -94493,6 +96013,11 @@ export const PARTS = [
       "amazon": {
         "price": 119.9,
         "url": "https://www.amazon.com/dp/B0FV38L6LT?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 109.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12152690&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbe-quiet-light-base-500-black-abs-steel-tempered-glass-atx-m-atx-mini-itx-btf-mb-case-black%2FCC5VXLQPCL&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -94765,6 +96290,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 71.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11081499&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdiypc-diy-matx06-wood-black-usb3-0-type-c-micro-atx-mid-tower-case-w-tempered-glass-walnut-front-panel-4-pwm-fans-black%2FJX5SHP6RC2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -94823,6 +96353,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 114.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367169&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-fdcepo1a03-pc-case-white%2FJ36XJS47S2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -94883,6 +96418,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.156Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 151.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11076119&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-o11-vision-black-aluminum-steel-tempered-glass-atx-mid-tower-computer-case-o11vx-black%2FJ39TC2K4ZQ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -95039,6 +96579,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 134.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367116&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-epoch-black-rgb-tempered-glass-high-airflow-mesh-front-3-rgb-fans-spacious-atx-matx-itx-case-black%2FJ36XJS47SP&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -95188,8 +96733,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 189.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665521&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665521.p%3FskuId%3D6665521",
+        "price": 149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665521&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-view-600-tg-full-tower-atx-pc-case-black%2FJ39TQXR3G5&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -95782,6 +97327,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.762Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 421.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12348390&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-cosmos-alpha-full-tower-curved-aluminum-200mm-fans-400mm-gpu-argb-underglow-black%2FJ3K4GJSQVV&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -96452,8 +98002,8 @@ export const PARTS = [
     "mpn": "CA-1Y4-00S6WN-00",
     "deals": {
       "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577424&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577424.p%3FskuId%3D6577424",
+        "price": 129.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577424&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-the-tower-300-micro-atx-pc-case-snow%2FJ39ZPC9ZTV&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -96502,8 +98052,8 @@ export const PARTS = [
     "mpn": "CA-1Y4-00SEWN-00",
     "deals": {
       "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577426&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577426.p%3FskuId%3D6577426",
+        "price": 139.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577426&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-the-tower-300-micro-atx-pc-case-matcha-green%2FJ39ZPC9ZKX&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -96552,8 +98102,8 @@ export const PARTS = [
     "mpn": "CA-1Y4-00SFWN-00",
     "deals": {
       "bestbuy": {
-        "price": 145.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577428&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577428.p%3FskuId%3D6577428",
+        "price": 144.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577428&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-the-tower-300-micro-atx-pc-case-hydrangea-blue%2FJ39ZPC9ZZ2&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -96602,8 +98152,8 @@ export const PARTS = [
     "mpn": "CS-HYTE-Y70-WW",
     "deals": {
       "bestbuy": {
-        "price": 199.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578774&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578774.p%3FskuId%3D6578774",
+        "price": 196.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578774&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fhyte-y70-mid-tower-atx-gaming-pc-desktop-case-with-riser-cable-white%2FJ3R75JLFJQ&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -96709,9 +98259,9 @@ export const PARTS = [
     "mpn": "CC-9011279-WW",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583645&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583645.p%3FskuId%3D6583645",
-        "inStock": false
+        "price": 180.92,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11422732&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-3500x-argb-atx-mid-tower-pc-case-white%2FJ39QHTC5TR&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "tower": "Mid",
@@ -96750,8 +98300,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583646&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583646.p%3FskuId%3D6583646",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583646&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-3500x-argb-atx-mid-tower-pc-case-black%2FJ39QHTC5TG&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "tower": "Mid",
@@ -96982,8 +98532,8 @@ export const PARTS = [
     "mpn": "CC-H52FB-01",
     "deals": {
       "bestbuy": {
-        "price": 84.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6590128&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6590128.p%3FskuId%3D6590128",
+        "price": 79.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6590128&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-h5-flow-2024-compact-atx-mid-tower-airflow-pc-case-black%2FJ3GWJHQ2SQ&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -97085,8 +98635,8 @@ export const PARTS = [
     "mpn": "CC-H52FW-R1",
     "deals": {
       "bestbuy": {
-        "price": 99.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6590132&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6590132.p%3FskuId%3D6590132",
+        "price": 95.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6590132&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-h5-flow-rgb-2024-compact-atx-mid-tower-airflow-pc-case-white%2FJ3GWJHQ2S5&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -97136,8 +98686,8 @@ export const PARTS = [
     "mpn": "CC-H52FB-R1",
     "deals": {
       "bestbuy": {
-        "price": 99.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6590140&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6590140.p%3FskuId%3D6590140",
+        "price": 94.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6590140&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-h5-flow-rgb-2024-compact-atx-mid-tower-airflow-pc-case-black%2FJ3GWJHQ29R&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -97542,8 +99092,8 @@ export const PARTS = [
     "mpn": "CA-1Z1-00M6WN-00",
     "deals": {
       "bestbuy": {
-        "price": 169.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603501&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6603501.p%3FskuId%3D6603501",
+        "price": 159.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603501&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-tower-600-mid-tower-atx-pc-case-snow%2FJ39ZPC6CP6&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -97696,8 +99246,8 @@ export const PARTS = [
     "mpn": "CA-1Z2-00M6WN-00",
     "deals": {
       "bestbuy": {
-        "price": 75.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603507&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6603507.p%3FskuId%3D6603507",
+        "price": 69.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603507&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-view-380-tg-argb-mid-tower-atx-pc-case-snow%2FJ39ZPC6C9T&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -98871,8 +100421,8 @@ export const PARTS = [
     "mpn": "MAG PANO 100R PZ",
     "deals": {
       "bestbuy": {
-        "price": 109.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629570&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629570.p%3FskuId%3D6629570",
+        "price": 99.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629570&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-pano-100r-pz-atx-mid-tower-pc-case-black%2FJ3P7TXSKKV&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -99076,8 +100626,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 249.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629600&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629600.p%3FskuId%3D6629600",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629600&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-h9-flow-rgb-2025-atx-mid-tower-dual-chamber-pc-case-black%2FJ3GWJHQ8Q4&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "tower": "Mid",
@@ -99648,8 +101198,8 @@ export const PARTS = [
     "mpn": "PANO 130R MLG EDITION",
     "deals": {
       "bestbuy": {
-        "price": 164.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6649241&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6649241.p%3FskuId%3D6649241",
+        "price": 149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6649241&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pano-130r-mlg-edition-atx-mid-tower-pc-case-black-and-red%2FJ3P7TXH2YF&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -99700,8 +101250,8 @@ export const PARTS = [
     "mpn": "CA-11H-00FNWN-00",
     "deals": {
       "bestbuy": {
-        "price": 189.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665526&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665526.p%3FskuId%3D6665526",
+        "price": 169.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665526&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-view-600-tg-full-tower-atx-pc-case-future-dusk%2FJ39TQXR9JH&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -101196,6 +102746,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.347Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 119.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12641626&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-liquid-freezer-iii-pro-360-a-rgb-multi-compatible-all-in-one-cpu-water-cooler-with-a-rgb-white%2FJ39QKP9KTH&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -101598,6 +103153,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 23.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11180596&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-hyper-212-rgb-edition-120mm-cpu-cooling-fan-with-rgb-lighting-black%2FJ3K4GJ8C4S&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -101648,6 +103208,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.588Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 279.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11175887&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ftryx-l-p360l-am3m-g0w-panorama-se-360-argb-360mm-aio-rotatable-6-67-amoled-curved-screen-3d-anamorphic-aio-cooler-white%2FJ3R84KQLLY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -101690,6 +103255,11 @@ export const PARTS = [
       "amazon": {
         "price": 102.12,
         "url": "https://www.amazon.com/dp/B0DPHQ1353?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 121.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12641613&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-liquid-freezer-iii-pro-420-multi-compatible-all-in-one-cpu-water-cooler-black%2FJ39QKP9KZH&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -101997,6 +103567,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 99.95,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11256345&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-masterliquid-360l-core-argb-argb-12mm-radiator-cooling-fan-radiator-pump-liquid-cooler-3-x-12mm-core-fans-with-rgb-black%2FJ3K4GJPJ7H&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 32,
@@ -102189,6 +103764,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 49.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12565344&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-240-elite-dual-chamber-pump-argb-amd-intel-compatible-white%2FJ3K4GJLWR7&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -102465,6 +104045,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.209Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 239.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12314552&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-hydroshift-ii-lcd-s-360tl-360mm-argb-liquid-cpu-cooler-black%2FJ39TC2ZLYF&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -103212,8 +104797,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 159.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642459&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642459.p%3FskuId%3D6642459",
+        "price": 139.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642459&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-nautilus-360-rs-lcd-liquid-cpu-cooler-white%2FJ39TSCPQR6&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -103316,6 +104901,11 @@ export const PARTS = [
       "amazon": {
         "price": 111.74,
         "url": "https://www.amazon.com/dp/B0DPHSLXSS?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 132.59,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12629496&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-liquid-freezer-iii-pro-420-a-rgb-multi-compatible-all-in-one-cpu-water-cooler-with-a-rgb-black%2FJ39QKP9KZF&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -103517,6 +105107,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 397,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11175349&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-ryujin-iii-360-argb-extreme-cooling-fan-radiator-water-block-rgb%2FJJGGLQQKYQ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 11,
@@ -103912,6 +105507,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.978Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 239.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12195559&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-hydroshift-ii-lcd-s-360-tl-hs2lcds36tw-cpu-cooler-360mm-aio-3x-120-rgb-fans-white%2FJ39TC2ZLP3&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -104078,8 +105678,8 @@ export const PARTS = [
       },
       "bestbuy": {
         "price": 109.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6646446&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6646446.p%3FskuId%3D6646446",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11422791&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-kraken-core-rgb-360mm-radiator-liquid-cooler-1-x-360mm-single-frame-fan-with-rgb-pump-cap-black%2FJ3GWJHQXJZ&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458310506736549065031454",
@@ -104559,8 +106159,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 34.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541734&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6541734.p%3FskuId%3D6541734",
+        "price": 29.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541734&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-hyper-212-halo-120mm-cpu-cooling-fan-with-gen-2-rgb-lighting-black-edition%2FJ3K4GJYW73&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -104672,6 +106272,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 231.88,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12336494&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-ryuo-iii-360-argb-aio-cpu-cooler-with-anime-matrix-display-white%2FJJG7VWCY3P&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -104800,6 +106405,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.588Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 359.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11175883&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ftryx-l-p360a-as3m-g1k-panorama-360-argb-360mm-aio-6-67-amoled-curved-screen-3d-anamorphic-customizable-aio-cooler-black%2FJ3R84KQLPS&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -104842,6 +106452,11 @@ export const PARTS = [
       "amazon": {
         "price": 36.63,
         "url": "https://www.amazon.com/dp/B09VH4YDS9?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 43.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12359867&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-freezer-36-a-rgb-multi-compatible-tower-cpu-cooler-with-a-rgb-white%2FJ39QKP9WX7&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -104890,6 +106505,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.588Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 359.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11175877&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ftryx-l-p360a-as3m-g1w-panorama-360-argb-360mm-aio-6-67-amoled-curved-screen-3d-anamorphic-customizable-aio-cooler-white%2FJ3R84KQLS2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -104976,8 +106596,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 139.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642462&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642462.p%3FskuId%3D6642462",
+        "price": 99.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642462&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-nautilus-240-rs-lcd-liquid-cpu-cooler-black%2FJ39TSCPQ6G&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -105584,6 +107204,11 @@ export const PARTS = [
         "price": 374.99,
         "url": "https://www.amazon.com/dp/B0DPNQS3Q5?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 379.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12317023&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-ryujin-iii-360-argb-extreme-cooling-fan-radiator-water-block-white%2FJJGGLQFJ8K&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -105816,9 +107441,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 29.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6675642&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6675642.p%3FskuId%3D6675642",
-        "inStock": false
+        "price": 26.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6675642&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-hyper-212-3dhp-cpu-air-cooler-black%2FJ3K4GJSYZY&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458313763482373840691139",
@@ -106148,8 +107773,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 194.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587610&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587610.p%3FskuId%3D6587610",
+        "price": 139.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587610&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-titan-240-rx-lcd-liquid-cpu-cooler-black%2FJ39TSCQ5TV&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -106295,6 +107920,11 @@ export const PARTS = [
         "price": 28.73,
         "url": "https://www.amazon.com/dp/B09VG6NBSJ?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 36.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12359857&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-freezer-36-multi-compatible-tower-cpu-cooler-black%2FJ39QKP9WC9&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 38,
@@ -106343,6 +107973,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.347Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 99.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12369755&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-liquid-freezer-iii-pro-280-acfre00179a-multi-compatible-all-in-one-cpu-water-cooler-black%2FJ39QKP9KKR&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -106446,6 +108081,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.347Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 113.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12595717&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-acfre00106a-liquid-freezer-ii-280-a-rgb-multi-compatible-all-in-one-a-rgb-cpu-aio-water-cooler-black%2FJ39QKP9H55&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 20,
@@ -106500,6 +108140,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.347Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 93.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12369761&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-liquid-freezer-iii-pro-240-a-rgb-multi-compatible-all-in-one-cpu-water-cooler-with-a-rgb-black%2FJ39QKP9KH2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -106604,6 +108249,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.346Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 97.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12359863&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-liquid-freezer-iii-240-a-rgb-multi-compatible-all-in-one-cpu-water-cooler-with-a-rgb-white%2FJ39QKP9WTH&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -106656,6 +108306,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.348Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 117.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12595683&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-acfre00187a-liquid-freezer-iii-pro-280-a-rgb-aio-cpu-cooler-water-cooling-amd-am5-am4-intel-lga1851-1770-white%2FJ39QKP9KZY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -106762,6 +108417,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 44.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12221181&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-masterliquid-240l-core-aio-argb-sync-amd-am5-am4-intel-lga-1851-1700-1200-white%2FJ3K4GJPJ7F&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 41,
@@ -106815,6 +108475,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.205Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 219.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12172742&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-ga-ii-lcd-360mm-aio-2-88-ips-lcd-screen-liquid-cooler-screen-recording-pre-installed-uni-fan-sl-inf-fans-black%2FJ39TC2K4ZJ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 6,
@@ -106960,6 +108625,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.347Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 82.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12359885&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-liquid-freezer-iii-pro-240-multi-compatible-all-in-one-cpu-water-cooler-black%2FJ39QKP9KQ5&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 33,
@@ -107088,6 +108758,11 @@ export const PARTS = [
       "amazon": {
         "price": 30.27,
         "url": "https://www.amazon.com/dp/B09VG62KBZ?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 42.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12641589&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-freezer-36-co-multi-compatible-tower-cpu-cooler-for-continuous-operation-black%2FJ39QKP9WCK&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -107668,6 +109343,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 109.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11024604&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-mlx-d36m-a25pz-r1-360-atmos-high-performance-close-loop-aio-liquid-cooler-black%2FJ3K4GJPXQZ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 43,
@@ -107831,6 +109511,11 @@ export const PARTS = [
         "price": 94.99,
         "url": "https://www.amazon.com/dp/B0DQ2NBJ99?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 84.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12365866&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-masterliquid-core-ii-240mm-aio-cpu-liquid-cooler-black%2FJ3K4GJS2SJ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 12,
@@ -107884,6 +109569,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.206Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 104.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12186828&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-galahad-ii-lite-360mm-pbt-fan-liquid-cpu-cooler-black%2FJ39TC2Z7ZR&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -107936,6 +109626,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.978Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 84.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12186827&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-ga-ii-lite-240mm-aio-cpu-cooler--2x120mm-fdb-fans-daisy-chain-low-noise-for-intel-amd-ga2l24pb-black%2FJ39TC2Z74C&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -108228,6 +109923,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 49.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12366841&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-hyper-620s-dual-tower-sync-120mm-fan-6-heat-pipes-amd-intel-compatible-rr-d6na-17pa-r1-argb%2FJ3K4GJPJSJ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -108321,6 +110021,11 @@ export const PARTS = [
       "amazon": {
         "price": 94.43,
         "url": "https://www.amazon.com/dp/B0DQ2LJ9VH?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 99.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12366572&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-360mm-aio-cpu-liquid-cooler-black%2FJ3K4GJS297&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -109643,6 +111348,11 @@ export const PARTS = [
         "price": 259.99,
         "url": "https://www.amazon.com/dp/B0DYZLRXSB?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 259.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10302700&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsudokoo-proteus-360-aio-liquid-cpu-cooler-black%2FJ3R85WPS95&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -110189,6 +111899,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.532Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 49.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11211968&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-skeleton-360-argb-cpu-cooler-360mm-rad-3x120mm-argb-fans-intel-lga-amd-am4-am5-black%2FJXVWSK3HJR&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -110460,6 +112175,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.060Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 248.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11074774&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-galahad-ii-lcd-sl-inf-360-liquid-cooler-intel-lga-1851-1700-1200-amd-am5-am4-compatible-ga2alcd36inw-white%2FJ39TC2K4LX&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 15,
@@ -111053,6 +112773,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 182.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11471948&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-atmos-ii-360-lcd-aio-dual-pump-400mm-tubing-argb-pwm-am5-lga-1851-black%2FJ3K4GJSSX8&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -111422,6 +113147,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 64.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12083655&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-coreliquid-a12-240-240mm-aio-argb-cpu-cooler-lga-1700-1851-am5-am4-black%2FJ3P7TX68F2&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -111513,6 +113243,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.978Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 139.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12172745&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-galahad-ii-lcd-280mm-aio-liquid-cooler-2-x-140mm-rgb-fans-2-88-ips-lcd-screen-pre-installed-daisy-chained-tl-fans-black%2FJ39TC2Z8HC&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -112108,9 +113843,9 @@ export const PARTS = [
     "mpn": "MAYT2HP217PAR1",
     "deals": {
       "bestbuy": {
-        "price": 29.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6675645&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6675645.p%3FskuId%3D6675645",
-        "inStock": false
+        "price": 22.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6675645&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-hyper-212-3dhp-black-argb-cpu-air-cooler-black-and-argb%2FJ3K4GJSYZH&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "44583878196369762320556",
@@ -112233,9 +113968,9 @@ export const PARTS = [
     "mpn": "RL-KN280-B1",
     "deals": {
       "bestbuy": {
-        "price": 46.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541444&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6541444.p%3FskuId%3D6541444",
-        "inStock": false
+        "price": 212.92,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592752&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-kraken-280mm-radiator-cpu-liquid-cooler-2-x-140mm-f-fans-with-1-54-lcd-display-black%2FJ3GWJHRFLY&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "coolerType": "AIO",
@@ -112271,8 +114006,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 239.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6553301&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6553301.p%3FskuId%3D6553301",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6553301&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-h150i-rgb-liquid-cpu-cooler-with-qx120-black%2FJ39QHTJQL3&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "coolerType": "AIO",
@@ -112965,8 +114700,8 @@ export const PARTS = [
     "mpn": "CW-9061021-WW",
     "deals": {
       "bestbuy": {
-        "price": 159.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587621&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587621.p%3FskuId%3D6587621",
+        "price": 149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587621&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-titan-360-rx-liquid-cpu-cooler-with-rgb-lighting-white%2FJ39QHTC4W6&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -113257,8 +114992,8 @@ export const PARTS = [
     "mpn": "MAG CORELIQUID A13 240",
     "deals": {
       "bestbuy": {
-        "price": 84.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629574&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629574.p%3FskuId%3D6629574",
+        "price": 74.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11064196&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-core-liquid-a13-240-argb-liquid-cpu-cooler-240mm-radiator-dual-120mm-pwn-fans-rgb-lighting-black%2FJ3P7TX9ZPR&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -113438,8 +115173,8 @@ export const PARTS = [
     "mpn": "CW-9061032-WW",
     "deals": {
       "bestbuy": {
-        "price": 139.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642711&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642711.p%3FskuId%3D6642711",
+        "price": 99.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642711&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-nautilus-240-rs-lcd-liquid-cpu-cooler-white%2FJ39TSCPQ6V&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -113485,8 +115220,8 @@ export const PARTS = [
     "mpn": "MPG CORELIQUID P13 360 WHITE",
     "deals": {
       "bestbuy": {
-        "price": 155.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645316&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645316.p%3FskuId%3D6645316",
+        "price": 149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11115591&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-coreliquid-p13-360-cpu-liquid-cooler-360mm-radiator-ips-2-1lcd-screen-triple-120mm-argb-pwm-fans-uni-bracket-white%2FJ3P7TXRGL9&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -113581,8 +115316,8 @@ export const PARTS = [
     "mpn": "CL-W481-PL12SW-A",
     "deals": {
       "bestbuy": {
-        "price": 399.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665524&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665524.p%3FskuId%3D6665524",
+        "price": 270.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11550732&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-minecube-360-ultra-argb-cpu-aio-liquid-cooler-black%2FJ39TQXRRVS&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -114177,6 +115912,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.470Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 54.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12186562&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-cl-wireless-120-triple-pack-rgb-pwm-pc-case-fans-control-28mm-fdb-controller-included-and-required-black%2FJ39TC2Z24H&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -114487,6 +116227,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 19.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11079093&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rs120-argb-pwm-fan-daisy-chain-pwm-argb-airguide-cooling-magnetic-bearing-rgb%2FJ39QHTCKR4&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 15,
@@ -115928,6 +117673,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.315Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 104.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12186563&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-sl-infinity-wireless-120-triple-pack-reverse-blade-argb-fan-control-double-infinity-mirror-controller-included-white%2FJ39TC2ZCRP&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -117109,6 +118859,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.315Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 94.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10131180&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-tl-120-wireless-lcp-fan-blades-customizable-rgb-leds-triple-pack-with-controller-12tl1w3b-black%2FJ39TC2ZJ55&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -117417,6 +119172,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.205Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 109.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12564586&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-sl-wireless-120mm-argb-fan-triple-pack-2-4-ghz-wireless-signal-for-rgb-fans-control12sl1w3w-white%2FJ39TC2Z7V6&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 15,
@@ -118341,6 +120101,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 27.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12354316&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-masterfan-12mm-cooling-fan-black%2FJ3K4GJYYHW&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 32,
@@ -120251,8 +122016,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 41.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611629&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6611629.p%3FskuId%3D6611629",
+        "price": 40.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611629&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-lx120-r-rgb-120mm-pwm-reverse-blade-computer-case-expansion-fan-white%2FJ39QHT2JFF&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -120348,8 +122113,8 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 44.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587611&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587611.p%3FskuId%3D6587611",
+        "price": 34.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587611&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-lx120-rgb-120mm-pwm-single-case-fan-expansion-black%2FJ39QHTCTQG&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -120865,6 +122630,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.532Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 79.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12024035&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-sl-infinity-120-rgb-3-pcs-pack-uf-slin120-3w--l-connect-3-0-controller-included-white%2FJ39TC2KW3X&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -121151,6 +122921,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:02.141Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 69.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12494893&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-f140-duo-rgb-140mm-computer-case-fan-with-rgb-controller-and-fluid-dynamic-bearings-2-pack-white%2FJ3GWJHRZ65&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 53,
@@ -121802,6 +123577,11 @@ export const PARTS = [
         "price": 25.99,
         "url": "https://www.amazon.com/dp/B0B5GX6SCW?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 46.84,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12227546&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-sl-infinity-120-fan-black%2FJ39TC2KW2V&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 12,
@@ -121968,6 +123748,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.532Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 79.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11962592&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-sl-infinity-120-rgb-3-pcs-pack-uf-slin120-3b--l-connect-3-0-controller-included-black%2FJ39TC2KWX9&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "upc": "840353042612",
@@ -122707,6 +124492,11 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.57
+      },
+      "bestbuy": {
+        "price": 35.13,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12226231&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-sl-infinity-140-white%2FJ39TC2KZP3&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -122899,6 +124689,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 21.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12349422&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-mf120-lite-caseliquid-cooler120mm-fan-pwm-air-balance-pbt-frame-black%2FJ3K4GJS269&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -123337,6 +125132,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.978Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 48.97,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12227682&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-sl-infinity-140-reverse-blade-black%2FJ39TC2KF79&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 15,
@@ -123718,6 +125518,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.978Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 48.97,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12227748&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-sl-inf-140-reverse-blade-white%2FJ39TC2KF7K&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 12,
@@ -124556,9 +126361,9 @@ export const PARTS = [
     "mpn": "RF-C12SF-W1",
     "deals": {
       "bestbuy": {
-        "price": 19.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6563118&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6563118.p%3FskuId%3D6563118",
-        "inStock": false
+        "price": 24.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11066066&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-f120-core-rgb-120mm-computer-case-fan-with-fluid-dynamic-bearings-white%2FJ3GWJHRF4Y&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458316401099278757984960",
@@ -124683,8 +126488,8 @@ export const PARTS = [
     "mpn": "CO-9051018-WW",
     "deals": {
       "bestbuy": {
-        "price": 84.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577059&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577059.p%3FskuId%3D6577059",
+        "price": 83.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577059&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-rx120-rgb-120mm-pwm-computer-case-fan-starter-kit-3-pack-black%2FJ39QHTCR97&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -125273,8 +127078,8 @@ export const PARTS = [
     "mpn": "CO-9051050-WW",
     "deals": {
       "bestbuy": {
-        "price": 99.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611628&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6611628.p%3FskuId%3D6611628",
+        "price": 94.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611628&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-lx120-r-rgb-120mm-pwm-reverse-blade-computer-case-fan-starter-kit-3-pack-black%2FJ39QHT2J5W&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -125358,8 +127163,8 @@ export const PARTS = [
     "mpn": "CO-9051054-WW",
     "deals": {
       "bestbuy": {
-        "price": 114.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611631&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6611631.p%3FskuId%3D6611631",
+        "price": 94.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611631&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-lx120-r-rgb-120mm-pwm-reverse-blade-computer-case-fan-starter-kit-3-pack-white%2FJ39QHT2JV3&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -125695,8 +127500,8 @@ export const PARTS = [
     "mpn": "CL-F215-PL12BB-A",
     "deals": {
       "bestbuy": {
-        "price": 59.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626435&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626435.p%3FskuId%3D6626435",
+        "price": 51.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626435&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-ct120-ex-argb-sync-120mm-computer-case-cooling-fan-3-pack-bumblebee%2FJ39ZPC6YXL&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -125862,8 +127667,8 @@ export const PARTS = [
     "mpn": "CL-F190-PL12SW-A",
     "deals": {
       "bestbuy": {
-        "price": 59.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626445&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626445.p%3FskuId%3D6626445",
+        "price": 46.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626445&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-ct120-ex-argb-sync-120mm-computer-case-cooling-fan-3-pack-white%2FJ39ZPC6JYV&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -126054,8 +127859,8 @@ export const PARTS = [
     "mpn": "RF-U14PN-B1",
     "deals": {
       "bestbuy": {
-        "price": 46.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664862&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6664862.p%3FskuId%3D6664862",
+        "price": 34.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664862&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-f140x-performance-fan-140mm-pwm-rgb-computer-case-fan-with-lcp-frame-blades-black%2FJ3GWJHQXTC&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -126096,8 +127901,8 @@ export const PARTS = [
     "mpn": "RF-U36PN-W1",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664863&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6664863.p%3FskuId%3D6664863",
+        "price": 99.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664863&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-nzxt-f360x-performance-fan-360mm-single-frame-case-fan-w-3-x-120mm-pwm-rgb-computer-case-fans-with-lcp-frame-blades-white%2FJ3GWJHQXKZ&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -126138,8 +127943,8 @@ export const PARTS = [
     "mpn": "RF-U12PN-W1",
     "deals": {
       "bestbuy": {
-        "price": 44.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664864&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6664864.p%3FskuId%3D6664864",
+        "price": 29.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664864&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-f120x-performance-fan-120mm-pwm-rgb-computer-case-fan-with-lcp-frame-blades-white%2FJ3GWJHQXHP&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -126180,8 +127985,8 @@ export const PARTS = [
     "mpn": "RF-U28PN-W1",
     "deals": {
       "bestbuy": {
-        "price": 89.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664866&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6664866.p%3FskuId%3D6664866",
+        "price": 74.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664866&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-nzxt-f280x-performance-fan-280mm-single-frame-case-fan-w-2-x-140mm-pwm-rgb-computer-case-fans-with-lcp-frame-blades-white%2FJ3GWJHQXW4&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -126222,8 +128027,8 @@ export const PARTS = [
     "mpn": "RF-U14PN-W1",
     "deals": {
       "bestbuy": {
-        "price": 46.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664868&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6664868.p%3FskuId%3D6664868",
+        "price": 29.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664868&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-f140x-performance-fan-140mm-pwm-rgb-computer-case-fan-with-lcp-frame-blades-white%2FJ3GWJHQXTY&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -126264,8 +128069,8 @@ export const PARTS = [
     "mpn": "RF-U24PN-B1",
     "deals": {
       "bestbuy": {
-        "price": 84.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664869&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6664869.p%3FskuId%3D6664869",
+        "price": 69.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664869&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-nzxt-f240x-performance-fan-240mm-single-frame-case-fan-w-2-x-120mm-pwm-rgb-computer-case-fans-with-lcp-frame-blades-black%2FJ3GWJHQXTH&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -126306,8 +128111,8 @@ export const PARTS = [
     "mpn": "RF-U12PN-B1",
     "deals": {
       "bestbuy": {
-        "price": 44.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664870&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6664870.p%3FskuId%3D6664870",
+        "price": 34.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664870&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-f120x-performance-fan-120mm-pwm-rgb-computer-case-fan-with-lcp-frame-blades-black%2FJ3GWJHQXH2&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -126879,6 +128684,11 @@ export const PARTS = [
         "price": 119.99,
         "url": "https://www.amazon.com/dp/B0DB9Q5G3R?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 127.39,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12550147&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-27-fhd-curved-monitor-ls27d366ganxza-black%2FJ3ZYG2W7K9&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 28,
@@ -127228,6 +129038,11 @@ export const PARTS = [
       "amazon": {
         "price": 380,
         "url": "https://www.amazon.com/dp/B0BCXJ7XXM?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 478.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11920689&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Falienware-aw2723df-gaming-monitor%2FJ3K4L6JQGP&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -127584,6 +129399,11 @@ export const PARTS = [
         "price": 469.99,
         "url": "https://www.amazon.com/dp/B0D682HF6R?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 519.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592864&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Faoc-27-qd-oled-240hz-0-03ms-gaming-monitor-black-purple%2FJX9GSKP2YP&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -127655,6 +129475,11 @@ export const PARTS = [
       "amazon": {
         "price": 159.99,
         "url": "https://www.amazon.com/dp/B0DFQ8V151?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 149.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10149025&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fz-z-edge-ug27s-27-1080p-full-hd-1920-x-1080-300hz-1ms-1500r-curved-gaming-monitor-hdmi-x-2-dp-x-2-black%2FJ3LH5H8R9X&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -128488,6 +130313,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 1099.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6668647&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-swift-27-dual-mode-2k-540hz-fhd-720hz-oled-0-02ms-gaming-monitor-with-freesync-premium-pro-and-hdr-silver%2FJJGHGP948K&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -128736,6 +130566,11 @@ export const PARTS = [
         "price": 738.99,
         "url": "https://www.amazon.com/dp/B09VQ48X5Q?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 914.95,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11027805&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Falienware-34-inch-curved-pc-gaming-monitor-aw3423dw-%2FJ3K4L67HK4&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -128783,6 +130618,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.110Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 199.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11403794&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fz-z-edge-27-2k-qhd-2560-x-1440-240-hz-1-ms-flat-panel-ips-gaming-monitor-hdmi-2-0-displayport-1-4-black%2FJ3LH5H8HVR&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "discount": 13,
@@ -128946,6 +130786,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.110Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "bestbuy": {
+        "price": 199.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10149041&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fz-z-edge-27-ultra-hd-3840-x-2160-100-srgb-60hz-5ms-ips-4k-monitor-hdr10-hdmi-dp-freesync-compatible-black%2FJ3LH5H8S3K&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -129366,9 +131211,9 @@ export const PARTS = [
         "inStock": true
       },
       "bestbuy": {
-        "price": 349.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6553123&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6553123.p%3FskuId%3D6553123",
-        "inStock": false
+        "price": 329.74,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12196210&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fviewsonic-vx3267u-4k-32-ips-lcd-uhd-monitor-display-port-hdmi-black%2FJ37H88VLHT&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -129513,6 +131358,11 @@ export const PARTS = [
         "price": 548.88,
         "url": "https://www.amazon.com/dp/B0F1CTGB4P?tag=tiereduptech-20",
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 319.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619487&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Falienware-aw3225dm-32-va-led-curved-qhd-180hz-1ms-freesync-gaming-monitor-with-hdr-hdmi-displayport-interstellar-indigo%2FJ3K4L636PG&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -129582,6 +131432,11 @@ export const PARTS = [
       "amazon": {
         "price": 259.99,
         "url": "https://www.amazon.com/dp/B0F5F8W5X3?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 191.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10189223&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdeco-gear-34-business-curved-super-ultrawide-wqhd-monitor-3440x1440-100hz-1ms-100-srgb-hdr-dp-hdmi-tilt-adjustable-black%2FJJG3SJY695&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -129915,8 +131770,8 @@ export const PARTS = [
     "mpn": "U32J590",
     "deals": {
       "bestbuy": {
-        "price": 339.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6293716&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6293716.p%3FskuId%3D6293716",
+        "price": 329.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11233473&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-32-viewfinity-uj590-uhd-monitor-dark-gray-blue%2FJ3ZYGC34HL&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -129986,8 +131841,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6346533&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6346533.p%3FskuId%3D6346533",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6346533&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdell-24-ips-led-fhd-monitor-hdmi-vga-black%2FJ3K4L9KRW9&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "9SIA6ZPKCM7729",
@@ -131165,8 +133020,8 @@ export const PARTS = [
     "mpn": "VG2756-4K",
     "deals": {
       "bestbuy": {
-        "price": 449.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6441560&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6441560.p%3FskuId%3D6441560",
+        "price": 449.74,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11067594&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fviewsonic-vg2756-4k-27-ips-4k-uhd-docking-monitor-hdmi-usb-c-displayport-black%2FJ37H88F6T3&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -131303,8 +133158,8 @@ export const PARTS = [
     "mpn": "PA279CV",
     "deals": {
       "bestbuy": {
-        "price": 399.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6450748&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6450748.p%3FskuId%3D6450748",
+        "price": 349.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6450748&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-proart-27-4k-ips-professional-monitor-with-hdr-displayport-hdmi-usb-c-black%2FJJ8Q7RWQ2R&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -131943,8 +133798,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 139.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6481515&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6481515.p%3FskuId%3D6481515",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6481515&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-24-fhd-ips-75hz-monitor-displayport-hdmi-black%2FJJG7VQZJC3&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "screenSize": 24,
@@ -132271,8 +134126,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 319.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6507840&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6507840.p%3FskuId%3D6507840",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6507840&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdell-23-8-lcd-monitor-displayport-usb-hdmi-black-silver%2FJ3K4L67WQ3&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "screenSize": 23.8,
@@ -132379,8 +134234,8 @@ export const PARTS = [
     "mpn": "21Y56AA#ABA",
     "deals": {
       "bestbuy": {
-        "price": 579.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6518578&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6518578.p%3FskuId%3D6518578",
+        "price": 573.87,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11068313&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fhp-34-va-lcd-curved-100hz-monitor-usb-hdmi-black%2FJJ8V3R3X9Y&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -132418,8 +134273,8 @@ export const PARTS = [
     "mpn": "LS34C502GANXZA",
     "deals": {
       "bestbuy": {
-        "price": 329.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6532277&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6532277.p%3FskuId%3D6532277",
+        "price": 329.74,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11885143&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-34-viewfinity-s5-ultrawide-qhd-100hz-amd-freesync-monitor-with-hdr10-displayport-hdmi-black%2FJ3ZYG2PYZ8&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -132460,9 +134315,9 @@ export const PARTS = [
     "mpn": "S34A654UBN",
     "deals": {
       "bestbuy": {
-        "price": 419.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6535469&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6535469.p%3FskuId%3D6535469",
-        "inStock": false
+        "price": 439,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11232914&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-viewfinity-s65ua-34-led-curved-ultra-wqhd-freesync-monitor-with-hdr10-usb-type-c-hdmi-displayport-lan-usb-black%2FJ3ZYG2YRYH&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "screenSize": 34,
@@ -132492,8 +134347,8 @@ export const PARTS = [
     "mpn": "6N4D6AA#ABA",
     "deals": {
       "bestbuy": {
-        "price": 619.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6537068&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6537068.p%3FskuId%3D6537068",
+        "price": 619.74,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11068151&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fhp-31-5-ips-lcd-4k-uhd-60hz-monitor-usb-hdmi-black-silver-silver%2FJJG8755VHH&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -132572,9 +134427,9 @@ export const PARTS = [
     "mpn": "VX2776-4K-MHDU",
     "deals": {
       "bestbuy": {
-        "price": 274.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6542584&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6542584.p%3FskuId%3D6542584",
-        "inStock": false
+        "price": 279.74,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11067617&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fviewsonic-vx2776-4k-mhdu-27-ips-lcd-4k-uhd-monitor-hdmi-displayport-silver%2FJ37H88V355&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -132784,8 +134639,8 @@ export const PARTS = [
     "mpn": "27GR83Q-B",
     "deals": {
       "bestbuy": {
-        "price": 499.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6555703&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6555703.p%3FskuId%3D6555703",
+        "price": 299.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10187423&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flg-ultragear-27-qhd-240hz-1ms-nvidia-g-sync-and-amd-freesync-premium-with-displayhdr-400-hdmi-displayport-usb-black%2FJJ8VPZRS8X&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -133170,8 +135025,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 279.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6570340&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6570340.p%3FskuId%3D6570340",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6570340&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-s39c-32-fhd-75hz-curved-monitor-hdmi-black%2FJ3ZYG2P3YQ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "screenSize": 32,
@@ -133564,8 +135419,8 @@ export const PARTS = [
     "mpn": "MPG 271QRX QD-OLED",
     "deals": {
       "bestbuy": {
-        "price": 629.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6576568&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6576568.p%3FskuId%3D6576568",
+        "price": 599.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6576568&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg271qrxqdoled-27-quantum-dot-oled-qhd-360hz-0-03ms-freesyncpremium-monitor-with-hdr400-displayport-hdmi-usb-black%2FJ3P7TXYV5P&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -133637,8 +135492,8 @@ export const PARTS = [
     "mpn": "MAG 321UPX QD-OLED",
     "deals": {
       "bestbuy": {
-        "price": 842.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577227&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577227.p%3FskuId%3D6577227",
+        "price": 799,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10102846&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag321upxqdoled-32-quantum-dot-oled-uhd-240hz-0-03ms-freesyncpremium-monitor-with-hdr400-displayport-hdmi-usb-c-black%2FJ3P7TXYZK7&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -133909,9 +135764,9 @@ export const PARTS = [
     "mpn": "LS27D702EANXGO",
     "deals": {
       "bestbuy": {
-        "price": 349.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581702&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6581702.p%3FskuId%3D6581702",
-        "inStock": false
+        "price": 249.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581702&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-27-viewfinity-s7-led-4k-uhd-60hz-monitor-with-hdr-10-displayport-hdmi-black%2FJ3ZYG2T6FW&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -133941,8 +135796,8 @@ export const PARTS = [
     "deals": {
       "bestbuy": {
         "price": 399.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581704&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6581704.p%3FskuId%3D6581704",
-        "inStock": false
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581704&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-viewfinity-s8-27-led-4k-uhd-60hz-5-ms-monitor-with-hdr-10-hdmi-usb-black%2FJ3ZYG2T6TQ&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -134722,8 +136577,8 @@ export const PARTS = [
     "mpn": "ES07DC9",
     "deals": {
       "bestbuy": {
-        "price": 699.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593389&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6593389.p%3FskuId%3D6593389",
+        "price": 329.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10149827&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdough-spectrum-one-27-in-4k-hdr-144-hz-monitor-with-usb-c-dock-glossy%2FCGCLR566KF&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -134752,8 +136607,8 @@ export const PARTS = [
     "mpn": "ES07D03",
     "deals": {
       "bestbuy": {
-        "price": 599.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593392&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6593392.p%3FskuId%3D6593392",
+        "price": 269.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10148266&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdough-spectrum-one-27-in-4k-hdr-144-hz-monitor-with-usb-c-dock-matte%2FCGCLR566CX&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -134824,8 +136679,8 @@ export const PARTS = [
     "mpn": "PRO MP273U",
     "deals": {
       "bestbuy": {
-        "price": 219.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594694&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594694.p%3FskuId%3D6594694",
+        "price": 169.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594694&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-mp273u-27-uhd-60hz-4ms-adaptive-sync-monitor-with-hdr-ready-built-in-speakers-displayport-hdmi--matte-black%2FJ3P7TXPW8K&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -135677,8 +137532,8 @@ export const PARTS = [
     "mpn": "MAG 321CUP QD-OLED",
     "deals": {
       "bestbuy": {
-        "price": 749.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613923&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6613923.p%3FskuId%3D6613923",
+        "price": 688.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613923&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-321cup-qd-oled-32-3840x2160-dqhd-curved-oled-quantum-dot-monitor-165hz-0-03msgtg-hdr400-type-c-displayport-hdmi-black%2FJ3P7TX93VF&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -135752,8 +137607,8 @@ export const PARTS = [
     "mpn": "MPG 321CURX QD-OLED",
     "deals": {
       "bestbuy": {
-        "price": 892.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613926&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6613926.p%3FskuId%3D6613926",
+        "price": 879.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613926&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-321curx-qd-oled-32-3840x2160-uhd-curved-oled-quantum-dot-monitor-240hz-0-03msgtg-hdr400-type-c-displayport-hdmi-black%2FJ3P7TX98JW&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -135837,8 +137692,8 @@ export const PARTS = [
     "mpn": "ES07E91",
     "deals": {
       "bestbuy": {
-        "price": 899.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614793&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614793.p%3FskuId%3D6614793",
+        "price": 669.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10149829&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdough-spectrum-black-32-in-class-4k-240-hz-dual-mode-woled-monitor-metallic%2FCGCLR5665H&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -135867,8 +137722,8 @@ export const PARTS = [
     "mpn": "ES07EFE",
     "deals": {
       "bestbuy": {
-        "price": 1099.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614796&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614796.p%3FskuId%3D6614796",
+        "price": 849.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10149833&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdough-spectrum-black-32-in-class-4k-240-hz-dual-mode-woled-with-gorilla-glass-metallic%2FCGCLR566VP&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -135994,8 +137849,8 @@ export const PARTS = [
     "mpn": "RD320UA",
     "deals": {
       "bestbuy": {
-        "price": 779.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614816&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614816.p%3FskuId%3D6614816",
+        "price": 749.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12563654&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbenq-rd320ua-31-5-ips-led-4k-programming-monitor-with-moonhalo-backlight-and-flexible-arm-hdmi-dp-usb-c-90w-black%2FJ39QZT58JL&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -136556,8 +138411,8 @@ export const PARTS = [
     "mpn": "S2725QC",
     "deals": {
       "bestbuy": {
-        "price": 299.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619486&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619486.p%3FskuId%3D6619486",
+        "price": 279.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619486&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white%2FJ3K4L63JXV&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -137341,9 +139196,9 @@ export const PARTS = [
     "mpn": "LS27D706EANXGO",
     "deals": {
       "bestbuy": {
-        "price": 239.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637460&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637460.p%3FskuId%3D6637460",
-        "inStock": false
+        "price": 199.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637460&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-27-viewfinity-s7-4k-uhd-high-resolution-monitor-with-hdr-10-black%2FJ3ZYG2T6VT&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -137372,9 +139227,9 @@ export const PARTS = [
     "mpn": "LS32D706EANXGO",
     "deals": {
       "bestbuy": {
-        "price": 319.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637461&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637461.p%3FskuId%3D6637461",
-        "inStock": false
+        "price": 199.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637461&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-32-viewfinity-s7-4k-uhd-high-resolution-monitor-with-hdr10-black%2FJ3ZYG2T647&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "screenSize": 32,
@@ -137534,8 +139389,8 @@ export const PARTS = [
     "mpn": "8Y2K9AAABA",
     "deals": {
       "bestbuy": {
-        "price": 989.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638997&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638997.p%3FskuId%3D6638997",
+        "price": 979,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12587778&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fhp-7-pro-31-5-ips-led-4k-uhd-60hz-monitor-with-hdr-usb-hdmi-black-gray-dual-color%2FJJGLF4CX2H&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -137615,8 +139470,8 @@ export const PARTS = [
     "mpn": "DELL-U2725QE",
     "deals": {
       "bestbuy": {
-        "price": 819.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6639016&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6639016.p%3FskuId%3D6639016",
+        "price": 659.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12569434&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdell-ultrasharp-27-ips-led-4k-uhd-120hz-monitor-with-hdr-usb-hdmi-black-silver-dual-color%2FJ3K4L637L2&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -137657,9 +139512,9 @@ export const PARTS = [
     "mpn": "34U511A-B",
     "deals": {
       "bestbuy": {
-        "price": 229.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6639125&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6639125.p%3FskuId%3D6639125",
-        "inStock": false
+        "price": 239.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10926562&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flg-ultrawide-34-ips-fhd-100hz-5ms-monitor-with-vesa-displayhdr-400-hdmi-displayport-black%2FJJ8VPZKY9Q&intsrc=APIG_28060",
+        "inStock": true
       },
       "newegg": {
         "sku": "4458310818642944628542556",
@@ -138160,8 +140015,8 @@ export const PARTS = [
     "mpn": "S22D304GAN",
     "deals": {
       "bestbuy": {
-        "price": 109.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643240&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6643240.p%3FskuId%3D6643240",
+        "price": 90.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643240&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-22-s30gd-ips-business-essential-monitor-hdmi-black%2FJ3ZYG24KF6&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -138189,8 +140044,8 @@ export const PARTS = [
     "mpn": "S24D304GAN",
     "deals": {
       "bestbuy": {
-        "price": 129.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643241&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6643241.p%3FskuId%3D6643241",
+        "price": 105.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643241&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-24-s30gd-ips-business-essential-monitor-hdmi-black%2FJ3ZYG24ZJ6&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -138261,8 +140116,8 @@ export const PARTS = [
     "mpn": "PD3226G",
     "deals": {
       "bestbuy": {
-        "price": 999.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644710&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644710.p%3FskuId%3D6644710",
+        "price": 899.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12562948&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbenq-pd3226g-31-5-ips-led-4k-144hz-mac-compatibile-monitor-hdmi-dp-thunderbolt-4-90w-white%2FJ39QZT58XJ&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -138589,8 +140444,8 @@ export const PARTS = [
     "mpn": "PRO MP243W E14",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6666054&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6666054.p%3FskuId%3D6666054",
+        "price": 84.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6666054&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-mp243w-e14-23-8-lcd-fhd-144hz-4ms-adaptive-sync-monitor-with-built-in-speakers-displayport-hdmi-matte-white%2FJ3P7TXQX6S&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -138670,8 +140525,8 @@ export const PARTS = [
     "mpn": "KA242Y P6BI",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669467&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669467.p%3FskuId%3D6669467",
+        "price": 99.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669467&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Facer-ka242y-p6bi-23-8-ips-led-full-hd-amd-freesync-monitor-up-to-144hz-1ms-hdmi-vga-black%2FJJ8V8HL56F&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -138700,8 +140555,8 @@ export const PARTS = [
     "mpn": "KA272 P6BI",
     "deals": {
       "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669468&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669468.p%3FskuId%3D6669468",
+        "price": 109.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669468&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Facer-ka272-p6bi-27-ips-led-full-hd-amd-freesync-monitor-up-to-144hz-1ms-hdmi-vga-black%2FJJ8V8HL5R3&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -138832,8 +140687,8 @@ export const PARTS = [
     "mpn": "SE2726HS",
     "deals": {
       "bestbuy": {
-        "price": 139.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6670396&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6670396.p%3FskuId%3D6670396",
+        "price": 114.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6670396&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdell-se2726hs-27-ips-lcd-fhd-144hz-freesync-height-adjustable-monitor-hdmi-black%2FJ3K4L6WZK9&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -139193,8 +141048,8 @@ export const PARTS = [
     "mpn": "PRO MP242 E14C",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673817&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6673817.p%3FskuId%3D6673817",
+        "price": 89.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673817&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-mp242-e14c-24-ips-lcd-fhd-144hz-1ms-freesync-buesiness-monitor-hdr-ready-with-built-in-speakers-usb-c-hdmi-black%2FJ3P7TXQRZ4&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -139225,8 +141080,8 @@ export const PARTS = [
     "mpn": "PRO MP272 E14C",
     "deals": {
       "bestbuy": {
-        "price": 139.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673819&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6673819.p%3FskuId%3D6673819",
+        "price": 109.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673819&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-mp272-e14c-27-ips-lcd-fhd-144hz-1ms-freesync-business-monitor-hdr-ready-with-built-in-speakers-usb-c-hdmi-black%2FJ3P7TXHJ3J&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -139268,8 +141123,8 @@ export const PARTS = [
     "mpn": "PRO MP243L E14",
     "deals": {
       "bestbuy": {
-        "price": 109.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673821&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6673821.p%3FskuId%3D6673821",
+        "price": 79.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673821&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-mp243l-e14-24-fhd-ips-144hz-1ms-adaptive-sync-hdr-ready-hdmivga-matte-black%2FJ3P7TX6YR3&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -153566,6 +155421,11 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B083WG2VDF?tag=tiereduptech-20",
         "price": 289.99,
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 307.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013083&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-ultra-durable-x870i-aorus-pro-ice-gaming-desktop-motherboard%2FJ3ZW92VF93&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "addedAt": "2026-05-15T13:17:14.411Z",
@@ -154592,6 +156452,11 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B08VHWFWSD?tag=tiereduptech-20",
         "price": 109.99,
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 221.25,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11911364&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fvisiontek-amd-radeon-rx-550-graphic-card-2-gb-gddr5-full-height-3840-x-2160-1-07-ghz-core-128-bit-bus-width%2FJ3GWJVZ338&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "vram": 4,
@@ -154977,6 +156842,11 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0C571DW23?tag=tiereduptech-20",
         "price": 317.57,
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 319.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12141450&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseasonic-vertex-px-1200w-power-supply-atx-3-1-pcie-5-1-12v-2x6-cybenetics-platinum-a-fully-modular-rtx-5090-amd-rx-9000-ready-black%2FC344V32XPK&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
@@ -154997,6 +156867,11 @@ export const PARTS = [
         "asin": "B09TDV18HG",
         "url": "https://www.amazon.com/dp/B09TDV18HG?tag=tiereduptech-20",
         "price": 210.99,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 118.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11064618&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseasonic-core-v2-gx-750-atx3-750w-80-gold-atx-3-0-pcie-5-1-ready-full-modular-atx-form-factor-premium-capacitor%2FC344V3236K&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -155040,6 +156915,11 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0B7NRSHDP?tag=tiereduptech-20",
         "price": 427.54,
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 89.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10871690&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseasonic-focus-gx-750w-power-supply-atx-3-1-pcie-5-1-cybenetics-platinum-fully-modular-rtx-5070-ti-amd-rx-9000-ready-white%2FC344V323W7&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
@@ -155060,6 +156940,11 @@ export const PARTS = [
         "asin": "B0CSN7KNF6",
         "url": "https://www.amazon.com/dp/B0CSN7KNF6?tag=tiereduptech-20",
         "price": 139.99,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 142.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11500571&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseasonic-focus-gx-atx3-1-850w-80-plus-gold-full-modular-psu%2FC344V32396&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -155126,6 +157011,11 @@ export const PARTS = [
         "asin": "B0FBY3F1NT",
         "url": "https://www.amazon.com/dp/B0FBY3F1NT?tag=tiereduptech-20",
         "price": 119.9,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 124.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11066027&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbe-quiet-pure-power-13-m-850w-atx-80-plus-gold-modular-power-supply-black%2FCC5VXLQG9H&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -155200,6 +157090,11 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0D68TLYKR?tag=tiereduptech-20",
         "price": 79.99,
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 86.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11463626&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-mwe-gold-750-v3-atx-3-1-750w-80-gold-90-12vhpwr-japanese-caps-zero-rpm-hex-fan-10y%2FJ3K4GJPQKF&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "watts": 750,
@@ -155249,6 +157144,11 @@ export const PARTS = [
         "asin": "B0C6FY4JXF",
         "url": "https://www.amazon.com/dp/B0C6FY4JXF?tag=tiereduptech-20",
         "price": 499.9,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 499.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11884054&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbe-quiet-dark-power-pro-13-1600w-atx-3-0-psu--80-plus-titanium--pcie-5--modular--10y-warranty%2FCC5VXLQXJW&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -155416,6 +157316,11 @@ export const PARTS = [
         "asin": "B0GFB83GPM",
         "url": "https://www.amazon.com/dp/B0GFB83GPM?tag=tiereduptech-20",
         "price": 179.9,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 191.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11065101&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbe-quiet-pure-power-12-m-1200w-atx-80-plus-gold-modular-power-supply-black%2FCC5VXLQX8F&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -155613,6 +157518,11 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0CTXR7M69?tag=tiereduptech-20",
         "price": 204.99,
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 237.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11463625&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gaming-1200w-gold-atx-3-0-80-gold-10-year-warranty%2FJJG7VTTLCV&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "watts": 1200,
@@ -155710,6 +157620,11 @@ export const PARTS = [
         "asin": "B0CPR1FR7H",
         "url": "https://www.amazon.com/dp/B0CPR1FR7H?tag=tiereduptech-20",
         "price": 99.99,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 107.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11124256&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-750w-gold-750w-atx-3-0-modular-80-gold-dual-bearings-2-colors-8-year-warranty%2FJJGGLRGL48&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -156929,6 +158844,11 @@ export const PARTS = [
         "asin": "B084ZTSMWF",
         "url": "https://www.amazon.com/dp/B084ZTSMWF?tag=tiereduptech-20",
         "price": 410.87,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 643.62,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12611885&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-exos-12tb-enterprise-hdd-sata-6gb-s-512e-4kn-7200-rpm-256mb-cache-3-5-internal-hard-drive-st12000nm001g-oem%2FJ37C5HK2S3&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -158154,6 +160074,11 @@ export const PARTS = [
         "asin": "B0BZFQZR81",
         "url": "https://www.amazon.com/dp/B0BZFQZR81?tag=tiereduptech-20",
         "price": 134.99,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 145.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11463638&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-loki-sfx-l-750w-platinum-modular-80-plat-aura-sync-pcie-5-0%2FJJG7VT6852&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -161549,6 +163474,11 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B07SY8CMTX?tag=tiereduptech-20",
         "price": 85.2,
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 84.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013387&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-b450m-acr2-0-micro-atx-amd-motherboard%2FC34K264T9Y&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "addedAt": "2026-05-15T14:34:31.776Z",
@@ -161596,6 +163526,11 @@ export const PARTS = [
         "asin": "B0D14FH6Y6",
         "url": "https://www.amazon.com/dp/B0D14FH6Y6?tag=tiereduptech-20",
         "price": 69.99,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 119.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013042&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-h610m-a-d4-csm-desktop-motherboard%2FJJG7VHVFC4&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -161864,6 +163799,11 @@ export const PARTS = [
         "asin": "B0FDS4VNL7",
         "url": "https://www.amazon.com/dp/B0FDS4VNL7?tag=tiereduptech-20",
         "price": 208.99,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 224.93,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12627235&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gaming-b650em-e-wifi-gaming-desktop-motherboard-amd-b650-chipset-socket-am5-micro-atx-ryzen-9-ryzen-7%2FJJGHGPJR4L&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -163539,6 +165479,11 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B01H4J3N58?tag=tiereduptech-20",
         "price": 29.99,
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 74,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12473912&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-500gb-3-5-internal-hard-drive-st3500414cs-sata2%2FJXXZ9XQXVF&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",
@@ -163683,6 +165628,11 @@ export const PARTS = [
         "asin": "B0CVN88YVG",
         "url": "https://www.amazon.com/dp/B0CVN88YVG?tag=tiereduptech-20",
         "price": 887.62,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 752.8,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021222&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd_black-sn7100-m-2-2280-4tb-pci-express-4-0-x4-tlc-3d-nand-internal-solid-state-drive-ssd-wds400t4x0e%2FJXTHCC7KKG&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -163969,6 +165919,11 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0DLK38TR9?tag=tiereduptech-20",
         "price": 810,
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 1999.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11946061&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-wd_black-m-2-2280-8tb-pci-express-5-0-x4-internal-solid-state-drive-ssd-wds800t1x0m-00cmt0%2FJXJ62CQ2SG&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -164074,6 +166029,11 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B09ZYNHPW2?tag=tiereduptech-20",
         "price": 215.99,
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 107.6,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12613618&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-wd1002fbys-1tb-32mb-cache-7200rpm-sata2-3-5-hard-drive%2FJ2V4LQVJ86&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -164098,6 +166058,11 @@ export const PARTS = [
         "asin": "B071F9MLJJ",
         "url": "https://www.amazon.com/dp/B071F9MLJJ?tag=tiereduptech-20",
         "price": 99.99,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 134.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12502208&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-1tb-wd-purple-surveillance-internal-hard-drive-hdd-sata-6-gb-s-64-mb-cache-3-5-wd11purz%2FJXTHCC7YT9&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -164172,6 +166137,11 @@ export const PARTS = [
         "asin": "B0C4KRMKFW",
         "url": "https://www.amazon.com/dp/B0C4KRMKFW?tag=tiereduptech-20",
         "price": 186.99,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 146.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12142099&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-teamgroup-ms30-1tb-slc-cache-3d-nand-tlc-m-2-2280-sata-iii-ssd-530-480-mb-s-read-write-for-laptop-desktop%2FJ37P8XJQRY&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -164538,6 +166508,11 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B08JYQKVJP?tag=tiereduptech-20",
         "price": 387.99,
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 730.96,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11122178&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-exos-16tb-enterprise-hdd-x16-sata-6gb-s-7200-rpm-256mb-cache-3-5-internal-hard-drive-st16000nm001g-oem%2FJ37C5HWFQ5&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -164811,6 +166786,11 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0F9ZXDHDH?tag=tiereduptech-20",
         "price": 523.77,
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 710.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12314187&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-st20000nt001-20tb-7200-rpm-256mb-cache-sata-6-0gb-s-3-5-internal-hard-drive%2FJ37C5H5G7C&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -164984,6 +166964,11 @@ export const PARTS = [
         "asin": "B0GWHJPWHB",
         "url": "https://www.amazon.com/dp/B0GWHJPWHB?tag=tiereduptech-20",
         "price": 79.99,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 175.96,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10948600&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-enterprise-capacity-3-5-hdd-v-5-2tb-internal-sata-hard-drive-for-desktops%2FJ37C5HQ68R&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -165605,6 +167590,11 @@ export const PARTS = [
         "asin": "B0FGGNR82S",
         "url": "https://www.amazon.com/dp/B0FGGNR82S?tag=tiereduptech-20",
         "price": 124.99,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 86.49,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11076955&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fap201-asus-prime-case-tg-black-black-steel-plastic-steel-plastic-tg-micro-atx-computer-case-black%2FJJG7VTHY5W&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -173103,6 +175093,11 @@ export const PARTS = [
         "url": "https://www.amazon.com/dp/B0BVYCXQY4?tag=tiereduptech-20",
         "price": 129.86,
         "inStock": true
+      },
+      "bestbuy": {
+        "price": 95.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11463653&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbe-quiet-be-quiet-pure-power-12-1000w-1000-w-atx3-1-atx3-0-compatible-80-plus-gold-certified-non-modular-atx-12v-power-supplies%2FCC5VXLQ873&intsrc=APIG_28060",
+        "inStock": true
       }
     },
     "addedAt": "2026-05-15T16:31:54.658Z",
@@ -173198,6 +175193,11 @@ export const PARTS = [
         "asin": "B0CT41F6FV",
         "url": "https://www.amazon.com/dp/B0CT41F6FV?tag=tiereduptech-20",
         "price": 169.99,
+        "inStock": true
+      },
+      "bestbuy": {
+        "price": 239.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12641619&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-a1250gs-pcie5-1250w-atx-3-1-pcie-5-1-ready-full-modular-80-plus-gold-gaming-power-supply-black%2FJ3P7TX9CJK&intsrc=APIG_28060",
         "inStock": true
       }
     },

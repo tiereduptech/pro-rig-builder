@@ -71,7 +71,7 @@ const PAGE_SIZE = 200; // Impact's maximum
 
 const CATEGORIES = {
   Motherboard: ['motherboard', 'am5 motherboard', 'lga 1851 motherboard', 'b650 motherboard', 'x670 motherboard', 'z790 motherboard'],
-  CPU:         ['cpu processor', 'ryzen processor', 'intel core processor', 'core i7', 'core i9', 'ryzen 7', 'ryzen 9'],
+  CPU:         ['cpu processor', 'ryzen processor', 'intel core processor', 'ryzen 9 9950x3d', 'ryzen 9 9900x3d', 'ryzen 7 9800x3d', 'ryzen 9 9950x', 'ryzen 9 9900x', 'ryzen 7 9700x', 'ryzen 5 9600x', 'ryzen 7 7800x3d', 'ryzen 9 7950x3d', 'ryzen 9 7900x3d', 'ryzen 9 7950x', 'ryzen 7 7700x', 'ryzen 5 7600x', 'core ultra 9 285k', 'core ultra 7 265k', 'core ultra 5 245k', 'core i9 14900k', 'core i7 14700k', 'core i5 14600k', 'core i9 13900k', 'core i7 13700k'],
   GPU:         ['graphics card', 'geforce rtx', 'radeon rx', 'rtx 4070', 'rtx 4080', 'rtx 5070', 'rtx 5080', 'gaming graphics card'],
   RAM:         ['ddr5 memory', 'ddr4 memory', 'desktop ram', 'gaming ram', 'corsair vengeance ddr5', 'g.skill trident'],
   Storage:     ['nvme ssd', 'm.2 ssd', 'internal ssd', '2tb nvme', '1tb nvme', 'internal hard drive'],
