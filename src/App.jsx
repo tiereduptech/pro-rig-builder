@@ -3208,55 +3208,78 @@ function BuilderFPS({gpu,cpu,ram}){
 /* ═══ BUILDER PART PICKER (full page with filters) ═══ */
 function CompatibilityBanner({cat, build}){
   if(!build) return null;
-  const cpu = build.CPU, mobo = build.Motherboard, cas = build.Case, gpu = build.GPU, ram = build.RAM;
-  // Build the "what is currently filtering" list and "what your choice will filter" list
-  const active = []; // already constraining this category
-  const future = []; // what choosing this part will filter going forward
-  if(cat === "Case"){
-    if(mobo) active.push(`Filtered to cases that fit your motherboard form factor (${mobo.formFactor || mobo.moboFF || "ATX/mATX/ITX"})`);
-    future.push("Your case selection will filter GPUs by length and CPU coolers by max height.");
-  }
-  else if(cat === "Motherboard"){
-    if(cpu) active.push(`Filtered to motherboards with socket ${cpu.socket} to match your ${cpu.n.slice(0,40)}`);
-    if(cas) active.push("Filtered to motherboards that fit your case form factor.");
-    future.push("Your motherboard selection will filter CPUs by socket and RAM by memory type (DDR4/DDR5).");
+  const cpu = build.CPU, mobo = build.Motherboard, cas = build.Case, gpu = build.GPU;
+  // Build messages explaining filtering in friendly teaching language
+  const msgs = [];
+  const shortName = (p, max=40) => {
+    if(!p || !p.n) return "your part";
+    return p.n.length > max ? p.n.slice(0, max) + "…" : p.n;
+  };
+  if(cat === "Motherboard"){
+    if(cpu && cpu.socket){
+      msgs.push(`You picked the **${shortName(cpu, 50)}**, which uses the **${cpu.socket}** socket. We\'re only showing motherboards with that socket so your CPU will physically fit.`);
+    }
+    if(cas && cas.ff){
+      msgs.push(`Your case (${shortName(cas, 35)}) supports **${cas.ff}** motherboard form factors. We\'re hiding boards that won\'t fit your case.`);
+    }
   }
   else if(cat === "CPU"){
-    if(mobo) active.push(`Filtered to CPUs with socket ${mobo.socket} to match your motherboard`);
-    future.push("Your CPU selection will filter motherboards by socket and CPU coolers by socket compatibility.");
-  }
-  else if(cat === "GPU"){
-    if(cas && cas.gpuClear) active.push(`Filtered to GPUs that fit your case (max ${cas.gpuClear}mm length)`);
-    future.push("Your GPU selection will help size your PSU recommendation.");
+    if(mobo && mobo.socket){
+      msgs.push(`Your motherboard (${shortName(mobo, 40)}) uses the **${mobo.socket}** socket. We\'re only showing CPUs that match it. Mixing sockets = the CPU won\'t fit.`);
+    }
   }
   else if(cat === "RAM"){
-    if(mobo) active.push(`Filtered to ${mobo.memType || "compatible"} RAM that fits your motherboard`);
-    if(cpu && cpu.memType) active.push(`Filtered to ${cpu.memType} RAM supported by your CPU.`);
-    if(mobo && mobo.maxMem) active.push(`Filtered to kits within your motherboard\'s ${mobo.maxMem}GB capacity limit.`);
+    const memType = (mobo && mobo.memType) || (cpu && cpu.memType);
+    if(memType){
+      const src = mobo && mobo.memType ? `motherboard` : `CPU`;
+      msgs.push(`Your ${src} requires **${memType}** memory. DDR4 and DDR5 are physically different — they don\'t fit each other\'s slots. We\'re filtering to ${memType} kits only.`);
+    }
+    if(mobo && mobo.memSlots){
+      msgs.push(`Your motherboard has **${mobo.memSlots} RAM slots**. Picking a 2-stick kit leaves room to upgrade later; a 4-stick kit fills the board.`);
+    }
   }
   else if(cat === "CPUCooler"){
-    if(cpu) active.push(`Filtered to coolers compatible with your CPU socket (${cpu.socket})`);
-    if(cas && cas.coolerClear) active.push(`Filtered to coolers that fit your case (max ${cas.coolerClear}mm tall)`);
+    if(cpu && cpu.socket){
+      msgs.push(`Your CPU uses the **${cpu.socket}** socket. We\'re filtering to coolers with mounting brackets that fit it. Coolers come with multiple brackets, but a few are socket-specific.`);
+    }
+    if(cas && cas.coolerClear){
+      msgs.push(`Your case allows coolers up to **${cas.coolerClear}mm** tall. Bigger air coolers won\'t fit — we\'ve hidden the ones that are too tall.`);
+    }
+  }
+  else if(cat === "GPU"){
+    if(cas && cas.gpuClear){
+      msgs.push(`Your case fits GPUs up to **${cas.gpuClear}mm** long. Modern flagship cards can hit 350mm+ — we\'re hiding ones that won\'t physically fit.`);
+    }
+  }
+  else if(cat === "Case"){
+    if(mobo && mobo.ff){
+      msgs.push(`Your motherboard is **${mobo.ff}** form factor. We\'re only showing cases that support it. An ITX board fits everywhere, but ATX boards need ATX-capable cases.`);
+    }
   }
   else if(cat === "PSU"){
-    if(gpu && gpu.pciPwr) active.push("Filtered to PSUs with enough PCIe connectors for your GPU.");
-    future.push("Your PSU should have enough wattage headroom for transient spikes.");
+    const gpuTDP = (gpu && gpu.tdp) || 0;
+    const cpuTDP = (cpu && cpu.tdp) || 0;
+    if(gpuTDP || cpuTDP){
+      const est = Math.round((gpuTDP * 1.8 + cpuTDP + 100) / 50) * 50;
+      msgs.push(`Based on your **GPU (${gpuTDP || "?"}W)** and **CPU (${cpuTDP || "?"}W)**, you need roughly **${est}W** minimum, accounting for transient spikes and headroom. We\'re filtering to PSUs that can handle your build safely.`);
+    }
   }
-  if(active.length === 0 && future.length === 0) return null;
-  return <div style={{borderTop:"2px solid var(--accent)",background:"var(--accent3)",padding:"16px 20px",marginBottom:24,maxWidth:1000}}>
-    <div style={{fontFamily:"var(--mono)",fontSize:10,letterSpacing:"0.12em",textTransform:"uppercase",color:"var(--accent)",fontWeight:600,marginBottom:10}}>Compatibility &middot; {cat}</div>
-    {active.length > 0 && <div style={{marginBottom: future.length > 0 ? 12 : 0}}>
-      <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",marginBottom:6}}>What\'s being filtered here:</div>
-      <ul style={{margin:0,paddingLeft:18,fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.6}}>
-        {active.map((msg, i) => <li key={i}>{msg}</li>)}
-      </ul>
-    </div>}
-    {future.length > 0 && <div>
-      <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",marginBottom:6}}>Heads up:</div>
-      <ul style={{margin:0,paddingLeft:18,fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.6}}>
-        {future.map((msg, i) => <li key={i}>{msg}</li>)}
-      </ul>
-    </div>}
+  if(msgs.length === 0) return null;
+  // Markdown-style **bold** rendering helper
+  const renderMsg = (text) => {
+    const parts = text.split(/(\*\*[^*]+\*\*)/g);
+    return parts.map((part, i) => {
+      if(part.startsWith("**") && part.endsWith("**")){
+        return <strong key={i} style={{fontWeight:600,color:"var(--accent)"}}>{part.slice(2,-2)}</strong>;
+      }
+      return part;
+    });
+  };
+  return <div style={{borderLeft:"3px solid var(--accent)",background:"var(--accent3)",padding:"14px 18px",marginBottom:24,maxWidth:1000}}>
+    <div style={{fontFamily:"var(--mono)",fontSize:10,letterSpacing:"0.12em",textTransform:"uppercase",color:"var(--accent)",fontWeight:600,marginBottom:10}}>💡 Heads up &middot; Why this list is filtered</div>
+    <ul style={{margin:0,padding:0,listStyle:"none"}}>
+      {msgs.map((msg, i) => <li key={i} style={{fontFamily:"var(--ff)",fontSize:13.5,color:"var(--txt)",lineHeight:1.65,marginBottom:i < msgs.length - 1 ? 10 : 0}}>{renderMsg(msg)}</li>)}
+    </ul>
   </div>;
 }
 
