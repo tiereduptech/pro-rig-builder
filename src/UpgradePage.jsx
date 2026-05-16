@@ -15,6 +15,7 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 import { PARTS as RAW_PARTS } from "./data/parts.js";
+import GAMING_TIERS from "../gaming-cpu-tiers.json";
 
 const isWorkstationGPU = (p) => {
   if (p.c !== "GPU") return false;
@@ -297,18 +298,39 @@ function candidateGPUs(currentGPU, maxPrice) {
   return out;
 }
 
-function candidateCPUs(currentCPU, maxPrice) {
+// --- Gaming-aware CPU scoring -------------------------------------
+// gamingScore: looks up a CPU's gaming-performance index (0-100) from
+// the curated gaming tier table. Falls back to PassMark bench when the
+// CPU is not in the table (Threadrippers, Xeons, obscure OEM chips).
+function gamingScore(cpu) {
+  if (!cpu) return 0;
+  const name = (cpu.n || "").toUpperCase();
+  for (const [model, score] of Object.entries(GAMING_TIERS)) {
+    if (name.includes(model.toUpperCase())) return score;
+  }
+  return cpu.bench || 0;
+}
+// cpuScoreForUseCase: gaming -> gaming index; else -> PassMark bench.
+function cpuScoreForUseCase(cpu, useCase) {
+  if (useCase === "gaming") return gamingScore(cpu);
+  return (cpu && cpu.bench) || 0;
+}
+
+function candidateCPUs(currentCPU, maxPrice, useCase) {
   if (!currentCPU?.bench || !currentCPU.socket) return [];
-  const target = currentCPU.bench * (1 + MIN_IMPROVEMENT);
+  const currentScore = cpuScoreForUseCase(currentCPU, useCase);
+  const target = currentScore * (1 + MIN_IMPROVEMENT);
   const pool = PARTS.filter(p => {
     if (p.c !== "CPU" || p.bundle) return false;
-    if (p.bench == null || p.bench < target) return false;
+    if (p.bench == null) return false;
     if (p.socket !== currentCPU.socket) return false;
+    const pScore = cpuScoreForUseCase(p, useCase);
+    if (pScore < target) return false;
     const price = bestPrice(p);
     if (price <= 0 || price > maxPrice) return false;
     return true;
   });
-  pool.sort((a, b) => (b.bench / bestPrice(b)) - (a.bench / bestPrice(a)));
+  pool.sort((a, b) => (cpuScoreForUseCase(b, useCase) / bestPrice(b)) - (cpuScoreForUseCase(a, useCase) / bestPrice(a)));
   const seen = new Set();
   const out = [];
   for (const p of pool) {
@@ -683,7 +705,8 @@ export default function UpgradePage() {
     const refresh = needsPlatformRefresh(currentCPU, cpuModel, specs.cpu_socket);
 
     const gpus = candidateGPUs(currentGPU, maxBudget);
-    const cpus = candidateCPUs(currentCPU, maxBudget);
+    const useCase = specs.use_case || "gaming";
+    const cpus = candidateCPUs(currentCPU, maxBudget, useCase);
     const rams = candidateRAMs(specs, maxBudget);
     const storageWant = Number(specs.add_storage_gb) || 0;
     const storageType = specs.add_storage_type || "";
