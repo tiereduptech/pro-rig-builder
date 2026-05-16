@@ -25,6 +25,61 @@ const _CLEAN_AIB_BRANDS = ['ASUS','MSI','GIGABYTE','Gigabyte','EVGA','PNY','Powe
 
 function cleanProductName(p){
   if(!p || !p.n) return '';
+  // ── CPU name cleaner ──────────────────────────────────────────
+  if(p.c === 'CPU'){
+    const cn = p.n.replace(/[\u2122\u00AE\u00A9]/g,' ');
+    let c;
+    // Intel Core Ultra (Arrow Lake)
+    if(/\bCore\s*Ultra\b/i.test(cn) || /\bUltra\s*[3579]\b/i.test(cn)){
+      const tier = cn.match(/\bUltra\s*([3579])\b/i);
+      const mdl  = cn.match(/\b(\d{3})\s*(KF|KS|K|F)?\b(?!\d)/);
+      if(tier && mdl) return 'Intel Core Ultra '+tier[1]+' '+mdl[1]+(mdl[2]?mdl[2].toUpperCase():'');
+    }
+    // Intel Core i3/i5/i7/i9
+    if((c = cn.match(/\b(?:Core\s*)?i([3579])[- ]?(\d{4,5})([A-Z]{0,3})\b/i)))
+      return 'Intel Core i'+c[1]+'-'+c[2]+(c[3]?c[3].toUpperCase():'');
+    // AMD Ryzen Threadripper (before plain Ryzen)
+    if(/\bThreadripper\b/i.test(cn)){
+      const pro = /Threadripper[\s\u2122]*PRO/i.test(cn) ? ' PRO' : '';
+      const tr = cn.match(/\b(\d{4,5})\s*(WX|X)?\b/);
+      if(tr) return 'AMD Ryzen Threadripper'+pro+' '+tr[1]+(tr[2]?tr[2].toUpperCase():'');
+    }
+    // AMD Ryzen
+    if((c = cn.match(/\bRyzen\s*([3579])\s*(\d{4})\s*(X3D|XT|GT|GE|G|X|F|E)?\b/i)))
+      return 'AMD Ryzen '+c[1]+' '+c[2]+(c[3]?c[3].toUpperCase():'');
+    // Intel Xeon W-series
+    if((c = cn.match(/\bXeon\s*(W\d?-\d{3,4}[A-Z]{0,2})\b/i)))
+      return 'Intel Xeon '+c[1].toUpperCase();
+    // Intel Xeon E5/E3/E7 (Xeon word optional)
+    if((c = cn.match(/\b(E[357])-(\d{4})\s*[vV](\d)\b/)))
+      return 'Intel Xeon '+c[1].toUpperCase()+'-'+c[2]+' v'+c[3];
+    if((c = cn.match(/\bXeon\b[^]*?\b(E[357])-(\d{4})\b/)))
+      return 'Intel Xeon '+c[1].toUpperCase()+'-'+c[2];
+    // Intel Xeon Scalable
+    if((c = cn.match(/\bXeon\s*(Platinum|Gold|Silver|Bronze)\s*(\d{4}[A-Z]?)\b/i)))
+      return 'Intel Xeon '+c[1][0].toUpperCase()+c[1].slice(1).toLowerCase()+' '+c[2].toUpperCase();
+    // Intel Xeon X-series legacy
+    if((c = cn.match(/\bXeon\s*(X\d{3,4})\b/i)))
+      return 'Intel Xeon '+c[1].toUpperCase();
+    // Intel Pentium
+    if(/\bPentium\b/i.test(cn)){
+      const gold = /Pentium\s*Gold/i.test(cn) ? ' Gold' : '';
+      const gm = cn.match(/\bG-?(\d{3,4}[A-Z]?)\b/i);
+      if(gm) return 'Intel Pentium'+gold+' G'+gm[1].toUpperCase();
+      const em = cn.match(/\bE(\d{4})\b/);
+      if(em) return 'Intel Pentium E'+em[1];
+    }
+    // Intel Celeron
+    if(/\bCeleron\b/i.test(cn)){
+      const gm = cn.match(/\bG-?(\d{3,4}[A-Z]?)\b/i);
+      if(gm) return 'Intel Celeron G'+gm[1].toUpperCase();
+    }
+    // AMD Athlon
+    if((c = cn.match(/\bAthlon\s*(II\s*)?(X\d\s*)?(\d{3,4}[A-Z]{0,2})\b/i)))
+      return 'AMD Athlon '+(c[1]?'II ':'')+(c[2]?c[2].toUpperCase().replace(/\s+/g,'')+' ':'')+c[3].toUpperCase();
+    // Couldn't parse — keep original
+    return p.n;
+  }
   if(p.c !== 'GPU') return p.n;
   const name = p.n.replace(/[™®©]/g,'');
   const brand = (p.b || '').replace(/[™®©]/g,'');
