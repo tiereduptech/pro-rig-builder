@@ -3781,6 +3781,8 @@ function BuilderPage({th}){
     if(cas&&cat==="Motherboard"&&cas.moboSupport)r=r.filter(x=>{const m2={"ATX":"ATX","mATX":"mATX","Mini-ITX":"ITX","ITX":"ITX"};return cas.moboSupport.includes(m2[x.moboFF]||x.moboFF);});
     if(gpu&&cat==="PSU"&&gpu.pciPwr)r=r.filter(x=>!x.pciConns||x.pciConns>=gpu.pciPwr);
     if(mobo&&cat==="RAM"&&mobo.maxMem)r=r.filter(x=>!x.capacity||x.capacity<=mobo.maxMem);
+    // Bottleneck filter: hide CPUs that would severely bottleneck the selected GPU (>2.0x bench ratio = ~50% bottleneck)
+    if(gpu&&cat==="CPU"&&gpu.bench)r=r.filter(x=>!x.bench||(gpu.bench/x.bench)<=2.0);
     return r;};
 
   const specSummary=(cat,p)=>{if(!p)return"";
