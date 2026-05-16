@@ -154948,7 +154948,8 @@ export const PARTS = [
   },
   {
     "id": 100451,
-    "c": "GPU",
+    "c": "PSU",
+    "watts": 1200,
     "n": "Seasonic Vertex PX-1200-1200W - 80+ Platinum - ATX 3.0 & PCIe 5.0 Ready - Fully Modular - Premium Japanese Capacitors - 12 Year Warranty - Nvidia RTX 40/50 & AMD GPU Compatible",
     "b": "Seasonic",
     "pr": 317.57,
@@ -154968,7 +154969,8 @@ export const PARTS = [
   },
   {
     "id": 100452,
-    "c": "GPU",
+    "c": "PSU",
+    "watts": 750,
     "n": "Seasonic Focus SGX-750 | 750W | 80+ Gold | Full-Modular | SFX Form Factor| Low Noise | Premium Japanese Capacitor | 10 Year Warranty | Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SSR-750SGX)",
     "b": "Seasonic",
     "pr": 210.99,
@@ -154988,7 +154990,8 @@ export const PARTS = [
   },
   {
     "id": 100453,
-    "c": "GPU",
+    "c": "PSU",
+    "watts": 750,
     "n": "SEASONIC Focus V4 GX-750-750W - 80+ Gold - Full-Modular - ATX Form Factor - Premium Japanese Capacitor - 10 Year Warranty - Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SRP-FGX751-A5A32SF)",
     "b": "Seasonic",
     "pr": 133.85,
@@ -155008,7 +155011,8 @@ export const PARTS = [
   },
   {
     "id": 100454,
-    "c": "GPU",
+    "c": "PSU",
+    "watts": 750,
     "n": "Seasonic Focus SPX-750 | 750W | 80+ Platinum | Full-Modular|SFX Form Factor | Low Noise | Premium Japanese Capacitor | 10 Year Warranty | Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SSR-750SPX)",
     "b": "Seasonic",
     "pr": 427.54,
@@ -155028,7 +155032,8 @@ export const PARTS = [
   },
   {
     "id": 100455,
-    "c": "GPU",
+    "c": "PSU",
+    "watts": 850,
     "n": "SEASONIC FOCUS V4 GX-850-850W - 80+ Gold - Full-Modular - ATX Form Factor - Premium Japanese Capacitor - 10 Year Warranty - Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SRP-FGX851-A5A32SF)",
     "b": "Seasonic",
     "pr": 139.99,

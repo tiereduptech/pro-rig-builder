@@ -39,11 +39,15 @@ function cleanProductName(p){
     model = 'Arc ' + m[1].toUpperCase() + m[2];
   } else if((m = name.match(/\bRTX\s*A(\d{3,4})\b/i))){
     model = 'RTX A' + m[1];
+  } else if((m = name.match(/\bGT\s*(\d{3,4})\b/i))){
+    model = 'GT ' + m[1];
+  } else if((m = name.match(/\bR([579])\s*(\d{3,4})\b/i))){
+    model = 'R' + m[1] + ' ' + m[2];
   }
   if(!model) return p.n;
   let chipMaker = null;
-  if(/^RTX|^GTX/i.test(model)) chipMaker = 'NVIDIA';
-  else if(/^RX/i.test(model)) chipMaker = 'AMD';
+  if(/^RTX|^GTX|^GT /i.test(model)) chipMaker = 'NVIDIA';
+  else if(/^RX|^R[579] /i.test(model)) chipMaker = 'AMD';
   else if(/^Arc/i.test(model)) chipMaker = 'Intel';
   const aibBrand = _CLEAN_AIB_BRANDS.includes(brand) ? brand : null;
   let subSeries = null;
@@ -104,7 +108,7 @@ const CAT={
   CPUCooler:{icon:"❄️",label:"CPU Coolers",singular:"CPU Cooler",desc:"Air & AIO liquid coolers",cols:["coolerType","tdp_rating","cfm","noise"],filters:{coolerType:{label:"Type",type:"check"},tdp_rating:{label:"TDP Rating",type:"range",unit:"W"},cfm:{label:"Airflow (CFM)",type:"range"},noise:{label:"Noise Level",type:"range",unit:"dBA"},radSize:{label:"Radiator Size",type:"check"},fans:{label:"Fan Count",type:"check"}}},
   Motherboard:{icon:"🟡",label:"Motherboards",singular:"Motherboard",desc:"ATX, mATX & ITX boards",cols:["socket","ff","chipset","wifi"],filters:{socket:{label:"Socket",type:"check"},chipset:{label:"Chipset",type:"check"},ff:{label:"Form Factor",type:"check"},memType:{label:"Memory Type",type:"check"},memSlots:{label:"Memory Slots",type:"check"},m2Slots:{label:"M.2 Slots",type:"check"},wifi:{label:"WiFi",type:"check"},usb_c:{label:"USB-C",type:"bool"}}},
   RAM:{icon:"⚡",label:"Memory",singular:"RAM Kit",desc:"DDR5 & DDR4 kits",cols:["memType","cap","sticks","speed","cl"],filters:{memType:{label:"Type",type:"check"},formFactor:{label:"Form Factor",type:"check"},cap:{label:"Total Capacity",type:"check"},sticks:{label:"Kit (Sticks)",type:"check"},speed:{label:"Speed (MHz)",type:"check"},cl:{label:"CAS Latency",type:"check"},ecc:{label:"ECC",type:"bool"},rgb:{label:"RGB",type:"bool"}}},
-  GPU:{icon:"💚",label:"Video Cards",singular:"Graphics Card",desc:"Gaming & workstation GPUs",cols:["vram","tdp","length","bench"],filters:{vram:{label:"VRAM (GB)",type:"check"},memType:{label:"Memory Type",type:"check"},tdp:{label:"TDP",type:"range",unit:"W"},length:{label:"Card Length",type:"range",unit:"mm"},slots:{label:"Slot Width",type:"check"},pwr:{label:"Power Connector",type:"check"},segment:{label:"Use Case",type:"check"},arch:{label:"Architecture",type:"check"},pcie:{label:"PCIe Version",type:"check"}}},
+  GPU:{icon:"💚",label:"Video Cards",singular:"Graphics Card",desc:"Gaming & workstation GPUs",cols:["tdp","length","bench"],filters:{vram:{label:"VRAM (GB)",type:"check"},memType:{label:"Memory Type",type:"check"},tdp:{label:"TDP",type:"range",unit:"W"},length:{label:"Card Length",type:"range",unit:"mm"},slots:{label:"Slot Width",type:"check"},pwr:{label:"Power Connector",type:"check"},segment:{label:"Use Case",type:"check"},arch:{label:"Architecture",type:"check"},pcie:{label:"PCIe Version",type:"check"}}},
   Storage:{icon:"💾",label:"Storage",singular:"Drive",desc:"NVMe SSDs, SATA SSDs & HDDs",cols:["storageType","cap","seq_r"],multi:true,maxQty:6,filters:{storageType:{label:"Type",type:"check"},interface:{label:"Interface",type:"check"},pcie:{label:"PCIe Gen",type:"check"},cap:{label:"Capacity",type:"check"},ff:{label:"Form Factor",type:"check"},dram:{label:"DRAM Cache",type:"bool"}}},
   PSU:{icon:"🔌",label:"Power Supplies",singular:"PSU",desc:"Modular & semi-modular",cols:["watts","eff","modular","color"],filters:{watts:{label:"Wattage",type:"check"},eff:{label:"Rating",type:"check"},modular:{label:"Modularity",type:"check"},ff:{label:"Form Factor",type:"check"},color:{label:"Color",type:"check"},rgb:{label:"RGB",type:"bool"},atx3:{label:"ATX 3.0",type:"bool"}}},
   // Cooling
