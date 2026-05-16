@@ -18,6 +18,7 @@
 
 import { readFileSync, writeFileSync, copyFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { canonicalizeProductName } from './normalize-product-name.js';
 
 const PARTS_PATH = join(process.cwd(), 'src', 'data', 'parts.js');
 const BESTBUY_DIR = join(process.cwd(), 'catalog-build', 'bestbuy-enriched');
@@ -104,6 +105,37 @@ function buildUpcIndex(parts) {
           }
         }
       }
+    }
+  }
+  return index;
+}
+
+// ─── TIERED MATCHING: MPN index ───────────────────────────────────
+// Manufacturer part numbers are stable across retailers (AMD/Intel/etc).
+function normalizeMpn(mpn) {
+  if (!mpn) return null;
+  const clean = String(mpn).toUpperCase().replace(/[^A-Z0-9]/g, "");
+  return clean.length >= 4 ? clean : null;
+}
+function buildMpnIndex(parts) {
+  const index = new Map();
+  for (const p of parts) {
+    const m = normalizeMpn(p.mpn);
+    if (m && !index.has(m)) index.set(m, p);
+  }
+  return index;
+}
+// ─── TIERED MATCHING: canonical-name index ────────────────────────
+// Last-resort match for catalog entries with no UPC and no MPN.
+function buildNameIndex(parts) {
+  const index = new Map();
+  for (const p of parts) {
+    if (!p.n || !p.c) continue;
+    let key = null;
+    try { key = canonicalizeProductName(p.n, p.c); } catch { key = null; }
+    if (key) {
+      const k = p.c + "|" + key.toLowerCase();
+      if (!index.has(k)) index.set(k, p);
     }
   }
   return index;
@@ -206,6 +238,9 @@ function serializeParts(parts) {
 
   const upcIndex = buildUpcIndex(parts);
   console.log(`Built UPC index: ${upcIndex.size} unique UPCs (from ${parts.filter(p => p.upc).length} products with UPC)\n`);
+  const mpnIndex = buildMpnIndex(parts);
+  const nameIndex = buildNameIndex(parts);
+  console.log(`Built MPN index: ${mpnIndex.size} | name index: ${nameIndex.size}\n`);
 
   const byCategory = loadBestBuyProducts();
   const totalBB = Object.values(byCategory).reduce((s, arr) => s + arr.length, 0);
@@ -217,6 +252,7 @@ function serializeParts(parts) {
   // Stats
   const stats = {};
   let totalMatched = 0;
+  const matchTiers = {};
   let totalAdded = 0;
   let totalSkippedNoGtin = 0;
   let totalSkipped3p = 0;
@@ -233,32 +269,35 @@ function serializeParts(parts) {
         continue;
       }
 
+      // ── TIERED MATCHING: GTIN → MPN → canonical name ──
+      let match = null, matchTier = null;
       const gtin = normalizeGtin(bb.gtin);
-      if (!gtin) {
-        skippedNoGtin++;
-        continue;
+      if (gtin) {
+        match = upcIndex.get(gtin);
+        if (!match && gtin.length === 13 && gtin.startsWith("0")) match = upcIndex.get(gtin.slice(1));
+        if (!match && gtin.length === 12) match = upcIndex.get("0" + gtin);
+        if (match) matchTier = "gtin";
       }
-
-      // Try match: normalized GTIN, also try stripped leading zero and prefixed zero
-      let match = upcIndex.get(gtin);
-      if (!match && gtin.length === 13 && gtin.startsWith('0')) {
-        match = upcIndex.get(gtin.slice(1));
+      if (!match) {
+        const m = normalizeMpn(bb.mpn);
+        if (m) { match = mpnIndex.get(m); if (match) matchTier = "mpn"; }
       }
-      if (!match && gtin.length === 12) {
-        match = upcIndex.get('0' + gtin);
+      if (!match && bb.name) {
+        const bbCat = CATEGORY_MAP[bb.ourCategory] || bb.ourCategory;
+        let key = null;
+        try { key = canonicalizeProductName(bb.name, bbCat); } catch { key = null; }
+        if (key) { match = nameIndex.get(bbCat + "|" + key.toLowerCase()); if (match) matchTier = "name"; }
       }
-
       if (match) {
-        // Merge Best Buy deal onto existing product
         if (!match.deals) match.deals = {};
         match.deals.bestbuy = {
           price: bb.price,
           url: bb.url,
-          inStock: bb.stockAvailability === 'InStock',
+          inStock: bb.stockAvailability === "InStock",
         };
         matched++;
+        matchTiers[matchTier] = (matchTiers[matchTier] || 0) + 1;
       } else if (!MATCH_ONLY) {
-        // Add as new product
         parts.push(bestBuyToNewPart(bb, nextId++));
         added++;
       }
@@ -276,6 +315,7 @@ function serializeParts(parts) {
 
   console.log('\n━━━ TOTALS ━━━');
   console.log(`  Matched (Amazon + Best Buy): ${totalMatched}`);
+  console.log(`    by GTIN: ${matchTiers.gtin||0} | by MPN: ${matchTiers.mpn||0} | by name: ${matchTiers.name||0}`);
   console.log(`  Added (Best Buy only):       ${totalAdded}`);
   console.log(`  Skipped (no GTIN):           ${totalSkippedNoGtin}`);
   console.log(`  Skipped (3P marketplace):    ${totalSkipped3p}`);
