@@ -989,7 +989,7 @@ function Nav({page,setPage,onBrowse,th,theme,toggleTheme}){
   const [mega,setMega]=useState(false);
   const canGoBack = page !== "home";
   return <nav style={{position:"sticky",top:0,zIndex:200,backdropFilter:"blur(20px)",background:"var(--navbg)"}}>
-    <div style={{maxWidth:1600,margin:"0 auto",display:"flex",alignItems:"center",height:64,padding:"0 32px",gap:8}}>
+    <div style={{maxWidth:1600,margin:"0 auto",display:"flex",alignItems:"center",height:160,padding:"0 32px",gap:8}}>
       {canGoBack&&<button onClick={()=>window.history.back()} style={{background:"none",border:"none",cursor:"pointer",color:"var(--dim)",fontSize:22,padding:"4px 8px 4px 0"}} title="Go back">←</button>}
       {/* Logo */}
       <button onClick={()=>setPage("home")} style={{background:"none",border:"none",cursor:"pointer",display:"flex",alignItems:"center",gap:8,marginRight:24}}>
