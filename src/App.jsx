@@ -347,7 +347,7 @@ function PriceCompare({part}) {
 const css=`
 [data-theme="dark"]{--bg:#0f0e0b;--bg2:#13110d;--bg3:#17140f;--bg4:#1c1914;--bdr:#2a2620;--bdr2:#4a4338;--accent:#FF8A3D;--accent2:#FF8A3D40;--accent3:#FF8A3D14;--mint:#FF8A3D;--mint2:#FF8A3D40;--mint3:#FF8A3D14;--txt:#f0ece0;--dim:#8a8170;--mute:#7a7160;--amber:#FF8A3D;--rose:#e35d3d;--sky:#7a8aa6;--violet:#a399b8;--ff:'Inter',system-ui,sans-serif;--ff-display:'Fraunces',Georgia,serif;--mono:'Inter',system-ui,sans-serif;--navbg:#13110d;--heroGrad:none;--card:#13110d;--shadow:none;--shadowSm:none}
 [data-theme="light"]{--bg:#faf7ef;--bg2:#f4efe2;--bg3:#ede8db;--bg4:#e3decc;--bdr:#d8d0bd;--bdr2:#b5ad99;--accent:#cc5a17;--accent2:#cc5a1740;--accent3:#cc5a1710;--mint:#cc5a17;--mint2:#cc5a1740;--mint3:#cc5a1710;--txt:#1a1814;--dim:#6a614f;--mute:#8a8170;--amber:#cc5a17;--rose:#c43d23;--sky:#5a6a86;--violet:#7c6b96;--ff:'Inter',system-ui,sans-serif;--ff-display:'Fraunces',Georgia,serif;--mono:'Inter',system-ui,sans-serif;--navbg:#f4efe2;--heroGrad:none;--card:#f4efe2;--shadow:none;--shadowSm:none}
-*{box-sizing:border-box;margin:0}::selection{background:var(--accent3);color:var(--accent)} [data-theme="dark"] .logo-light-img{display:none!important;visibility:hidden} [data-theme="dark"] .logo-dark-img{display:block!important;visibility:visible} [data-theme="light"] .logo-dark-img{display:none!important;visibility:hidden} [data-theme="light"] .logo-light-img{display:block!important;visibility:visible}
+*{box-sizing:border-box;margin:0} @media (max-width: 900px) { .picker-grid { grid-template-columns: 1fr !important } .picker-sidebar { display: none !important } }::selection{background:var(--accent3);color:var(--accent)} [data-theme="dark"] .logo-light-img{display:none!important;visibility:hidden} [data-theme="dark"] .logo-dark-img{display:block!important;visibility:visible} [data-theme="light"] .logo-dark-img{display:none!important;visibility:hidden} [data-theme="light"] .logo-light-img{display:block!important;visibility:visible}
 .mega-in{animation:mIn .2s cubic-bezier(.16,1,.3,1)}@keyframes mIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
 .fade{animation:fIn .35s cubic-bezier(.16,1,.3,1)}@keyframes fIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 .card{background:var(--card,var(--bg2));border-radius:16px;border:1px solid var(--bdr);box-shadow:var(--shadowSm);transition:all .25s cubic-bezier(.16,1,.3,1)}.card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
@@ -3316,6 +3316,33 @@ function CompatibilityBanner({cat, build}){
   </div>;
 }
 
+/* === CURRENT BUILD SIDEBAR (sticky, desktop only) === */
+function CurrentBuildSidebar({cat, build}){
+  if(!build) return null;
+  const ORDER = ["GPU","Case","CPU","Motherboard","Storage","RAM","CPUCooler","PSU"];
+  const slots = ORDER.filter(s => build[s] || s === cat);
+  if(slots.length === 0) return null;
+  return <aside className="picker-sidebar" style={{position:"sticky",top:180,fontFamily:"var(--ff)"}}>
+    <div style={{border:"1px solid var(--bdr)",background:"var(--bg2)",padding:"16px 18px"}}>
+      <div style={{fontFamily:"var(--mono)",fontSize:10,letterSpacing:"0.08em",textTransform:"uppercase",color:"var(--mute)",marginBottom:12}}>Your build so far</div>
+      {slots.map((slot, idx) => {
+        const p = build[slot];
+        const isCurrent = slot === cat;
+        return <div key={slot} style={{display:"flex",alignItems:"center",gap:10,padding:"10px 0",borderBottom: idx !== slots.length - 1 ? "1px solid var(--bdr)" : "none"}}>
+          <div style={{width:24,display:"flex",justifyContent:"center",flexShrink:0}}>
+            <CatIcon c={slot} size={16} color={isCurrent ? "var(--accent)" : "var(--dim)"}/>
+          </div>
+          <div style={{flex:1,minWidth:0}}>
+            <div style={{fontSize:11,fontWeight:600,color:isCurrent?"var(--accent)":"var(--dim)",letterSpacing:"0.04em",textTransform:"uppercase"}}>{slot}{isCurrent && " · picking"}</div>
+            {p ? <div style={{fontSize:12,color:"var(--txt)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",marginTop:2}}>{p.n}</div>
+               : <div style={{fontSize:12,color:"var(--mute)",fontStyle:"italic",marginTop:2}}>—</div>}
+          </div>
+        </div>;
+      })}
+    </div>
+  </aside>;
+}
+
 function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build}){
   const [q,setQ]=useState("");
   const [viewMode,setViewMode]=useState(()=>{try{return localStorage.getItem("rf-viewmode")||"row";}catch{return "row";}});
@@ -3357,6 +3384,8 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
   else if(sort==="bench-desc")list.sort((a,b)=>(b.bench||0)-(a.bench||0));
 
   return <div className="fade" style={{maxWidth:1600,margin:"0 auto",padding:"28px 20px"}}>
+    <div className="picker-grid" style={{display:"grid",gridTemplateColumns:"1fr 280px",gap:24,alignItems:"start"}}>
+      <div>
     {/* Header */}
     <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:20}}>
       <button onClick={onBack} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"8px 14px",cursor:"pointer",display:"flex",alignItems:"center",gap:6,color:"var(--txt)",fontFamily:"var(--ff)",fontSize:13,fontWeight:600}}>← Back to Build</button>
@@ -3484,6 +3513,9 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
           </div>;
         })}
       </div>
+    </div>
+      </div>
+      <CurrentBuildSidebar cat={cat} build={build}/>
     </div>
   </div>;
 }
