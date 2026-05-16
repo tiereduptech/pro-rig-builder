@@ -2822,6 +2822,7 @@ function SearchPage({activeCat,th}){
 
   return <div className="fade" style={{maxWidth:1600,margin:"0 auto",padding:"16px 20px"}}>
     <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:14}}><button onClick={()=>setCat("")} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer"}}>All Parts</button><span style={{color:"var(--mute)"}}>/</span><CatThumb cat={cat} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={24} rounded={4} editable={false}/><select value={cat} onChange={e=>sel(e.target.value)} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",fontWeight:600,background:"none",border:"none",cursor:"pointer",outline:"none",padding:"2px 4px",appearance:"auto"}}>{CATS.map(c=><option key={c} value={c}>{CAT[c].label}</option>)}</select><div style={{flex:1}}/><span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)"}}>{list.length} results</span></div>
+    <CompatibilityBanner cat={cat} build={build}/>
     <CategoryGuide cat={cat}/>
     <div className="browse-layout" style={{display:"grid",gridTemplateColumns:"200px 1fr",gap:16,alignItems:"start"}}>
       {/* SIDEBAR */}
@@ -3205,7 +3206,61 @@ function BuilderFPS({gpu,cpu,ram}){
 }
 
 /* ═══ BUILDER PART PICKER (full page with filters) ═══ */
-function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
+function CompatibilityBanner({cat, build}){
+  if(!build) return null;
+  const cpu = build.CPU, mobo = build.Motherboard, cas = build.Case, gpu = build.GPU, ram = build.RAM;
+  // Build the "what is currently filtering" list and "what your choice will filter" list
+  const active = []; // already constraining this category
+  const future = []; // what choosing this part will filter going forward
+  if(cat === "Case"){
+    if(mobo) active.push(`Filtered to cases that fit your motherboard form factor (${mobo.formFactor || mobo.moboFF || "ATX/mATX/ITX"})`);
+    future.push("Your case selection will filter GPUs by length and CPU coolers by max height.");
+  }
+  else if(cat === "Motherboard"){
+    if(cpu) active.push(`Filtered to motherboards with socket ${cpu.socket} to match your ${cpu.n.slice(0,40)}`);
+    if(cas) active.push("Filtered to motherboards that fit your case form factor.");
+    future.push("Your motherboard selection will filter CPUs by socket and RAM by memory type (DDR4/DDR5).");
+  }
+  else if(cat === "CPU"){
+    if(mobo) active.push(`Filtered to CPUs with socket ${mobo.socket} to match your motherboard`);
+    future.push("Your CPU selection will filter motherboards by socket and CPU coolers by socket compatibility.");
+  }
+  else if(cat === "GPU"){
+    if(cas && cas.gpuClear) active.push(`Filtered to GPUs that fit your case (max ${cas.gpuClear}mm length)`);
+    future.push("Your GPU selection will help size your PSU recommendation.");
+  }
+  else if(cat === "RAM"){
+    if(mobo) active.push(`Filtered to ${mobo.memType || "compatible"} RAM that fits your motherboard`);
+    if(cpu && cpu.memType) active.push(`Filtered to ${cpu.memType} RAM supported by your CPU.`);
+    if(mobo && mobo.maxMem) active.push(`Filtered to kits within your motherboard\'s ${mobo.maxMem}GB capacity limit.`);
+  }
+  else if(cat === "CPUCooler"){
+    if(cpu) active.push(`Filtered to coolers compatible with your CPU socket (${cpu.socket})`);
+    if(cas && cas.coolerClear) active.push(`Filtered to coolers that fit your case (max ${cas.coolerClear}mm tall)`);
+  }
+  else if(cat === "PSU"){
+    if(gpu && gpu.pciPwr) active.push("Filtered to PSUs with enough PCIe connectors for your GPU.");
+    future.push("Your PSU should have enough wattage headroom for transient spikes.");
+  }
+  if(active.length === 0 && future.length === 0) return null;
+  return <div style={{borderTop:"2px solid var(--accent)",background:"var(--accent3)",padding:"16px 20px",marginBottom:24,maxWidth:1000}}>
+    <div style={{fontFamily:"var(--mono)",fontSize:10,letterSpacing:"0.12em",textTransform:"uppercase",color:"var(--accent)",fontWeight:600,marginBottom:10}}>Compatibility &middot; {cat}</div>
+    {active.length > 0 && <div style={{marginBottom: future.length > 0 ? 12 : 0}}>
+      <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",marginBottom:6}}>What\'s being filtered here:</div>
+      <ul style={{margin:0,paddingLeft:18,fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.6}}>
+        {active.map((msg, i) => <li key={i}>{msg}</li>)}
+      </ul>
+    </div>}
+    {future.length > 0 && <div>
+      <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",marginBottom:6}}>Heads up:</div>
+      <ul style={{margin:0,paddingLeft:18,fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.6}}>
+        {future.map((msg, i) => <li key={i}>{msg}</li>)}
+      </ul>
+    </div>}
+  </div>;
+}
+
+function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build}){
   const [q,setQ]=useState("");
   const [viewMode,setViewMode]=useState(()=>{try{return localStorage.getItem("rf-viewmode")||"row";}catch{return "row";}});
   const setViewModeP=v=>{setViewMode(v);try{localStorage.setItem("rf-viewmode",v);}catch{}};
@@ -3380,7 +3435,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
 /* ═══ BUILDER ═══ */
 
 /* === MOBILE BUILDER PART PICKER === */
-function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti}){
+function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build}){
   const [q,setQ]=useState("");
   const [sort,setSort]=useState("price-asc");
   const [brands,setBrands]=useState([]);
@@ -3755,6 +3810,7 @@ function BuilderPage({th}){
     return <BuilerPartPickerRouter
       cat={cat} meta={meta} cols={cols} compatList={compatList}
       onAdd={onAdd} onBack={() => setPicking(null)} isMulti={isMulti}
+      build={build}
     />;
   };
 
