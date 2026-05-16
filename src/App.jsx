@@ -3919,6 +3919,16 @@ function BuilderPage({th}){
       </div>}
       {allIssues.length===0&&coreFilled>=2&&<div style={{padding:"6px 12px",borderRadius:6,fontSize:10,fontFamily:"var(--ff)",background:"var(--mint3)",color:"var(--mint)",border:"1px solid var(--mint)22",marginBottom:14}}>✅ All components compatible</div>}
 
+      {/* === GETTING STARTED BANNER === */}
+      {coreFilled === 0 && <div style={{marginBottom:20}}>
+        <div style={{borderLeft:"3px solid var(--accent)",background:"var(--accent3)",padding:"16px 20px",display:"flex",alignItems:"center",justifyContent:"space-between",gap:16,flexWrap:"wrap"}}>
+          <div style={{flex:1,minWidth:240}}>
+            <div style={{fontFamily:"var(--ff-display)",fontSize:18,fontWeight:600,color:"var(--txt)",marginBottom:4}}>Don't know where to start?</div>
+            <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.5}}>Check out our Build Wizard. Tell it your budget and use case, and it'll build a fully compatible parts list for you.</div>
+          </div>
+          <button onClick={()=>{try{window.location.href="/tools/build-wizard"}catch(e){}}} style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,padding:"12px 22px",background:"var(--accent)",color:"var(--bg)",border:"none",cursor:"pointer",whiteSpace:"nowrap"}}>Open Build Wizard &rarr;</button>
+        </div>
+      </div>}
       {/* Builder sections */}
       {BUILDER_SECTIONS.map(s=>renderSection(s))}
 
