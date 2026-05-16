@@ -268,13 +268,14 @@
                 <Ellipse x:Name="Step2Dot" Width="8" Height="8" Fill="{StaticResource Border}" Margin="3,0"/>
                 <Ellipse x:Name="Step3Dot" Width="8" Height="8" Fill="{StaticResource Border}" Margin="3,0"/>
                 <Ellipse x:Name="Step4Dot" Width="8" Height="8" Fill="{StaticResource Border}" Margin="3,0"/>
+                <Ellipse x:Name="Step5Dot" Width="8" Height="8" Fill="{StaticResource Border}" Margin="3,0"/>
             </StackPanel>
 
             <Grid Grid.Row="1" Margin="32,8,32,16">
 
                 <!-- ═══ PAGE 1: BUDGET ═══ -->
                 <StackPanel x:Name="Page1_Budget" Visibility="Visible">
-                    <TextBlock Text="Step 1 of 4  ·  Budget" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Accent}" Margin="0,4,0,6"/>
+                    <TextBlock Text="Step 1 of 5  ·  Budget" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Accent}" Margin="0,4,0,6"/>
                     <TextBlock Text="What's your upgrade budget?" FontSize="26" FontWeight="Bold" Foreground="{StaticResource Text}" Margin="0,0,0,6"/>
                     <TextBlock Text="Set the maximum you want to spend on your upgrade." Foreground="{StaticResource Dim}" FontSize="13" Margin="0,0,0,24"/>
 
@@ -300,7 +301,7 @@
 
                 <!-- ═══ PAGE 2: STORAGE ═══ -->
                 <StackPanel x:Name="Page2_Storage" Visibility="Collapsed">
-                    <TextBlock Text="Step 2 of 4  ·  Storage" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Accent}" Margin="0,4,0,6"/>
+                    <TextBlock Text="Step 2 of 5  ·  Storage" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Accent}" Margin="0,4,0,6"/>
                     <TextBlock Text="Need more storage?" FontSize="26" FontWeight="Bold" Foreground="{StaticResource Text}" Margin="0,0,0,6"/>
                     <TextBlock Text="Optional — add an extra drive on top of what you already have." Foreground="{StaticResource Dim}" FontSize="13" Margin="0,0,0,20"/>
 
@@ -356,7 +357,7 @@
 
                 <!-- ═══ PAGE 3: CPU COOLER ═══ -->
                 <StackPanel x:Name="Page3_Cooler" Visibility="Collapsed">
-                    <TextBlock Text="Step 3 of 4  ·  CPU Cooler" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Accent}" Margin="0,4,0,6"/>
+                    <TextBlock Text="Step 3 of 5  ·  CPU Cooler" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Accent}" Margin="0,4,0,6"/>
                     <TextBlock Text="What type of CPU cooler do you have?" FontSize="22" FontWeight="Bold" Foreground="{StaticResource Text}" Margin="0,0,0,6"/>
                     <TextBlock Text="This helps us know if your current cooler can handle a CPU upgrade, or if you'll need a new one." Foreground="{StaticResource Dim}" FontSize="12" TextWrapping="Wrap" Margin="0,0,0,14"/>
 
@@ -506,8 +507,46 @@
                 </StackPanel>
 
                 <!-- ═══ PAGE 4: REVIEW + SCAN BUTTON ═══ -->
-                <StackPanel x:Name="Page4_Review" Visibility="Collapsed">
-                    <TextBlock Text="Step 4 of 4  ·  Ready to Scan" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Accent}" Margin="0,4,0,6"/>
+                <!-- PAGE 4: USE CASE -->
+                <StackPanel x:Name="Page4_UseCase" Visibility="Collapsed">
+                    <TextBlock Text="Step 4 of 5  ·  Use Case" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Accent}" Margin="0,4,0,6"/>
+                    <TextBlock Text="What will you use it for?" FontSize="26" FontWeight="Bold" Foreground="{StaticResource Text}" Margin="0,0,0,6"/>
+                    <TextBlock Text="We tailor upgrade recommendations to what matters most for your workload." Foreground="{StaticResource Dim}" FontSize="13" Margin="0,0,0,20"/>
+                    <Border Background="{StaticResource Bg2}" CornerRadius="12" Padding="22,18" Margin="0,0,0,14">
+                        <StackPanel>
+                            <TextBlock Text="PRIMARY USE CASE" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Dim}" Margin="0,0,0,10"/>
+                            <UniformGrid Columns="2" Rows="2">
+                                <Button x:Name="UseCaseGamingBtn" Tag="gaming" Style="{StaticResource OptionCard}" Click="UseCase_Click" Margin="0,0,4,4" Height="68">
+                                    <StackPanel>
+                                        <TextBlock Text="Gaming" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="high FPS, smooth gameplay" FontSize="10" Foreground="{StaticResource Mute}" HorizontalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="UseCaseCreatorBtn" Tag="content" Style="{StaticResource OptionCard}" Click="UseCase_Click" Margin="4,0,0,4" Height="68">
+                                    <StackPanel>
+                                        <TextBlock Text="Content Creation" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="video editing, rendering, 3D" FontSize="10" Foreground="{StaticResource Mute}" HorizontalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="UseCaseAIBtn" Tag="ai" Style="{StaticResource OptionCard}" Click="UseCase_Click" Margin="0,4,4,0" Height="68">
+                                    <StackPanel>
+                                        <TextBlock Text="AI &amp; Machine Learning" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="model training, local LLMs" FontSize="10" Foreground="{StaticResource Mute}" HorizontalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button x:Name="UseCaseProductivityBtn" Tag="productivity" Style="{StaticResource OptionCard}" Click="UseCase_Click" Margin="4,4,0,0" Height="68">
+                                    <StackPanel>
+                                        <TextBlock Text="General Productivity" FontSize="14" FontWeight="Bold" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="office, browsing, multitasking" FontSize="10" Foreground="{StaticResource Mute}" HorizontalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button>
+                            </UniformGrid>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+
+                <StackPanel x:Name="Page5_Review" Visibility="Collapsed">
+                    <TextBlock Text="Step 5 of 5  ·  Ready to Scan" FontSize="11" FontWeight="Bold" Foreground="{StaticResource Accent}" Margin="0,4,0,6"/>
                     <TextBlock Text="Review your choices" FontSize="26" FontWeight="Bold" Foreground="{StaticResource Text}" Margin="0,0,0,6"/>
                     <TextBlock Text="Scanning takes about 10 seconds. We'll detect your hardware and open your personalized upgrade page." Foreground="{StaticResource Dim}" FontSize="13" Margin="0,0,0,20"/>
 

@@ -44,6 +44,8 @@ namespace ProRigScanner
         Button _selectedType  = null;
         Button _selectedSize  = null;
         Button _selectedCooler = null;
+        string _useCase = "gaming";   // gaming | content | ai | productivity
+        Button _selectedUseCase = null;
         string _finalUrl = "";
 
         int _currentPage = 1;      // 1=budget, 2=storage, 3=cooler, 4=review
@@ -61,8 +63,14 @@ namespace ProRigScanner
 
                 // Run update check before showing the wizard. If a mandatory update
                 // exists, it'll download, verify signature, relaunch, and we exit.
-                bool willRelaunch = await Updater.CheckAndApplyUpdate(this);
-                if (willRelaunch) return;  // don't continue — process is exiting
+                // Skip the updater entirely in --dev mode so local test builds
+                // are never replaced by the published release.
+                bool devMode = Environment.GetCommandLineArgs().Contains("--dev");
+                if (!devMode)
+                {
+                    bool willRelaunch = await Updater.CheckAndApplyUpdate(this);
+                    if (willRelaunch) return;
+                }
 
                 ShowPage(1);
             };
@@ -96,18 +104,20 @@ namespace ProRigScanner
             Page1_Budget.Visibility  = page == 1 ? Visibility.Visible : Visibility.Collapsed;
             Page2_Storage.Visibility = page == 2 ? Visibility.Visible : Visibility.Collapsed;
             Page3_Cooler.Visibility  = page == 3 ? Visibility.Visible : Visibility.Collapsed;
-            Page4_Review.Visibility  = page == 4 ? Visibility.Visible : Visibility.Collapsed;
+            Page4_UseCase.Visibility  = page == 4 ? Visibility.Visible : Visibility.Collapsed;
+            Page5_Review.Visibility   = page == 5 ? Visibility.Visible : Visibility.Collapsed;
 
             Step1Dot.Fill = (SolidColorBrush)FindResource(page >= 1 ? "Accent" : "Border");
             Step2Dot.Fill = (SolidColorBrush)FindResource(page >= 2 ? "Accent" : "Border");
             Step3Dot.Fill = (SolidColorBrush)FindResource(page >= 3 ? "Accent" : "Border");
             Step4Dot.Fill = (SolidColorBrush)FindResource(page >= 4 ? "Accent" : "Border");
+            Step5Dot.Fill = (SolidColorBrush)FindResource(page >= 5 ? "Accent" : "Border");
 
             BackButton.Visibility = page > 1 ? Visibility.Visible : Visibility.Collapsed;
-            NextButton.Content = page == 4 ? "Start Scan  →" : "Next  →";
+            NextButton.Content = page == 5 ? "Start Scan  →" : "Next  →";
             NextButton.IsEnabled = CanAdvance(page);
 
-            if (page == 4) BuildReviewPanel();
+            if (page == 5) BuildReviewPanel();
         }
 
         bool CanAdvance(int page)
@@ -120,9 +130,22 @@ namespace ProRigScanner
                     if (_storageChoice == "yes" && !string.IsNullOrEmpty(_storageType) && _extraStorageGB > 0) return true;
                     return false;
                 case 3: return !string.IsNullOrEmpty(_coolerType);
-                case 4: return true;
+                case 4: return !string.IsNullOrEmpty(_useCase);
+                case 5: return true;
                 default: return false;
             }
+        }
+
+        // ============================================================
+        // PAGE 4 — USE CASE
+        // ============================================================
+        void UseCase_Click(object sender, RoutedEventArgs e)
+        {
+            var btn = sender as Button;
+            if (btn == null) return;
+            _useCase = btn.Tag?.ToString() ?? "gaming";
+            SelectButton(btn, ref _selectedUseCase);
+            NextButton.IsEnabled = CanAdvance(_currentPage);
         }
 
         void BackButton_Click(object sender, RoutedEventArgs e)
@@ -132,7 +155,7 @@ namespace ProRigScanner
 
         void NextButton_Click(object sender, RoutedEventArgs e)
         {
-            if (_currentPage < 4)
+            if (_currentPage < 5)
             {
                 if (CanAdvance(_currentPage)) ShowPage(_currentPage + 1);
             }
@@ -336,7 +359,8 @@ namespace ProRigScanner
             Page1_Budget.Visibility = Visibility.Collapsed;
             Page2_Storage.Visibility = Visibility.Collapsed;
             Page3_Cooler.Visibility = Visibility.Collapsed;
-            Page4_Review.Visibility = Visibility.Collapsed;
+            Page5_Review.Visibility = Visibility.Collapsed;
+            Page4_UseCase.Visibility = Visibility.Collapsed;
             NavBar.Visibility = Visibility.Collapsed;
             StepIndicator.Visibility = Visibility.Collapsed;
 
@@ -521,6 +545,7 @@ namespace ProRigScanner
                 ["add_storage_gb"] = extraStorageGB.ToString(),
                 ["add_storage_type"] = extraStorageType ?? "",
                 ["cooler_type"] = coolerType ?? "",
+                ["use_case"] = _useCase ?? "gaming",
             };
             for (int i = 0; i < Math.Min(specs.Storage.Count, 4); i++)
             {
