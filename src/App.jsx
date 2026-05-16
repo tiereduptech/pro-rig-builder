@@ -356,7 +356,7 @@ input[type=range]{-webkit-appearance:none;background:transparent;cursor:pointer}
 @media(max-width:480px){.cat-grid{grid-template-columns:repeat(2,1fr)!important}.footer-grid{grid-template-columns:1fr!important}}
 
 /* === MOBILE RESPONSIVE === */
-html, body { overflow-x: hidden; max-width: 100vw; }
+html, body { overflow-x: clip; max-width: 100vw; }
 *, *::before, *::after { max-width: 100%; }
 
 /* Images never force page wider */
@@ -508,7 +508,7 @@ table { max-width: 100%; }
   }
 }
 html, body, #root {
-  overflow-x: hidden !important;
+  overflow-x: clip !important;
   max-width: 100vw !important;
   box-sizing: border-box !important;
 }
@@ -3352,6 +3352,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
   const togSf=(col,val)=>setSf(pv=>{const cu=pv[col]||[];return{...pv,[col]:cu.includes(val)?cu.filter(v=>v!==val):[...cu,val]};});
   const [sort,setSort]=useState("price-asc");
   const [brands,setBrands]=useState([]);
+  const [conditions,setConditions]=useState([]);
   const [minR,setMinR]=useState(0);
   const [prMin,setPrMin]=useState(0);
   const [prMax,setPrMax]=useState(99999);
@@ -3363,6 +3364,10 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
   let list=compatList.filter(p=>{
     if(q&&!smartMatch(p,q))return false;
     if(brands.length&&!brands.includes(resolveBrand(p)))return false;
+    if(conditions.length){
+      const cond = (p.used===true||p.condition==="used")?"Used":(p.condition==="refurbished")?"Refurbished":(p.condition==="open-box")?"Open Box":"New";
+      if(!conditions.includes(cond)) return false;
+    }
     if(minR&&p.r<minR)return false;
     if($(p)<prMin||$(p)>prMax)return false;
     for(const [key,vals] of Object.entries(sf)){
@@ -3408,6 +3413,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
           </div>
         </FG>
         <FG label="BRAND">{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={compatList.filter(p=>resolveBrand(p)===b).length}/>)}</FG>
+        <FG label="CONDITION">{(()=>{const getCond=p=>(p.used===true||p.condition==="used")?"Used":(p.condition==="refurbished")?"Refurbished":(p.condition==="open-box")?"Open Box":"New";const counts={};compatList.forEach(p=>{const k=getCond(p);counts[k]=(counts[k]||0)+1;});return ["New","Used","Refurbished","Open Box"].filter(c=>counts[c]>0).map(c=><Chk key={c} label={c} checked={conditions.includes(c)} onChange={()=>setConditions(p=>p.includes(c)?p.filter(x=>x!==c):[...p,c])} count={counts[c]}/>);})()}</FG>
         <FG label="RATING">{[4.5,4,0].map(rv=><Chk key={rv} label={rv?`${rv}+ ★`:"All"} checked={minR===rv} onChange={()=>setMinR(minR===rv?0:rv)}/>)}</FG>
         {/* Category-specific filters (same logic as SearchPage) */}
         {cat && CAT[cat]?.filters && Object.entries(CAT[cat].filters).map(([field,cfg])=>{
