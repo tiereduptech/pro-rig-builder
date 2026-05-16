@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect, useRef, useCallback } from "react"
-import { Box, Cpu, Snowflake, CircuitBoard, MemoryStick, Square, HardDrive, Plug, Fan, Volume2, Globe, Wifi, Disc, Cable, Monitor, AppWindow, Keyboard, Mouse, Headphones, Camera, Mic, MousePointer, Armchair, Table, Beaker, ExternalLink, Shield, FileVideo, BatteryCharging, Gamepad2, Briefcase, Palette, Video, GraduationCap, Download, Share2, RefreshCw, Link as LinkIcon, CircleAlert, CircleCheck, ChevronRight } from 'lucide-react';
+import { Box, Cpu, Snowflake, CircuitBoard, MemoryStick, Square, HardDrive, Plug, Fan, Volume2, Globe, Wifi, Disc, Cable, Monitor, AppWindow, Keyboard, Mouse, Headphones, Camera, Mic, MousePointer, Armchair, Table, Beaker, ExternalLink, Shield, FileVideo, BatteryCharging, Gamepad2, Briefcase, Palette, Video, GraduationCap, Download, Share2, RefreshCw, Link as LinkIcon, CircleAlert, CircleCheck, ChevronRight, ShoppingCart } from 'lucide-react';
 import { Helmet } from "react-helmet-async";;
 import PageMeta from "./PageMeta.jsx";
 import { PARTS as RAW_SEED_PARTS } from "./data/parts.js";
@@ -3766,6 +3766,67 @@ function BuilerPartPickerRouter(props){
   return isMobile?<MobileBuilerPartPicker {...props}/>:<BuilerPartPicker {...props}/>;
 }
 
+/* === BUY YOUR BUILD — affiliate checkout section === */
+function BuyYourBuild({build, multiParts}){
+  const coreParts = Object.values(build || {}).filter(Boolean);
+  const multiList = Object.values(multiParts || {}).flat().filter(Boolean);
+  const allParts = [...coreParts, ...multiList];
+  if(allParts.length === 0) return null;
+
+  const rows = allParts.map(p => {
+    const rr = retailers(p);
+    const best = rr.find(r => r.inStock) || rr[0] || null;
+    return {part: p, best};
+  });
+  const buyable = rows.filter(r => r.best);
+  const grandTotal = buyable.reduce((s,r) => s + r.best.price, 0);
+
+  return <div style={{marginTop:24,border:"1px solid var(--bdr)",background:"var(--bg2)"}}>
+    <div style={{padding:"16px 20px",borderBottom:"1px solid var(--bdr)",display:"flex",alignItems:"center",gap:8}}>
+      <ShoppingCart size={18} strokeWidth={2} style={{color:"var(--accent)"}}/>
+      <span style={{fontFamily:"var(--ff-display)",fontSize:18,fontWeight:600,color:"var(--txt)"}}>Buy Your Build</span>
+    </div>
+    <div>
+      {rows.map((r,i) => {
+        const p = r.part;
+        return <div key={p.uid || p.id || i} style={{display:"grid",gridTemplateColumns:"32px 1fr auto auto",gap:12,alignItems:"center",padding:"12px 20px",borderBottom:"1px solid var(--bdr)"}}>
+          <div style={{display:"flex",justifyContent:"center"}}><CatIcon c={p.c} size={16} color="var(--dim)"/></div>
+          <div style={{minWidth:0}}>
+            <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{cleanProductName(p)}</div>
+            <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",textTransform:"uppercase",letterSpacing:"0.04em"}}>{p.c}</div>
+          </div>
+          <div style={{fontFamily:"var(--mono)",fontSize:14,fontWeight:700,color:"var(--mint)",textAlign:"right"}}>
+            {r.best ? "$" + fmtPrice(r.best.price) : "\u2014"}
+          </div>
+          <div>
+            {r.best
+              ? <a href={r.best.url} target="_blank" rel="noopener noreferrer sponsored" style={{display:"inline-flex",alignItems:"center",gap:5,fontFamily:"var(--ff)",fontSize:12,fontWeight:600,padding:"7px 14px",background:"var(--accent)",color:"var(--bg)",textDecoration:"none",whiteSpace:"nowrap"}}>
+                  Buy on {r.best.displayName} <ExternalLink size={12} strokeWidth={2.5}/>
+                </a>
+              : <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)"}}>No retailer</span>}
+          </div>
+        </div>;
+      })}
+    </div>
+    <div style={{padding:"16px 20px",display:"flex",alignItems:"center",justifyContent:"space-between",gap:16,flexWrap:"wrap",background:"var(--bg3)"}}>
+      <div>
+        <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",letterSpacing:"0.08em"}}>BUILD TOTAL ({buyable.length} {buyable.length===1?"part":"parts"})</div>
+        <div style={{fontFamily:"var(--mono)",fontSize:24,fontWeight:700,color:"var(--mint)"}}>{"$" + fmtPrice(grandTotal)}</div>
+      </div>
+      <button onClick={()=>{
+        buyable.forEach((r,idx) => {
+          setTimeout(()=>{ try{ window.open(r.best.url,"_blank","noopener"); }catch(e){} }, idx*300);
+        });
+      }} style={{display:"inline-flex",alignItems:"center",gap:6,fontFamily:"var(--ff)",fontSize:14,fontWeight:600,padding:"12px 24px",background:"var(--accent)",color:"var(--bg)",border:"none",cursor:"pointer"}}>
+        <ShoppingCart size={16} strokeWidth={2.5}/> Open All Links
+      </button>
+    </div>
+    <div style={{padding:"10px 20px",borderTop:"1px solid var(--bdr)",fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)",lineHeight:1.5}}>
+      Pro Rig Builder may earn a commission on purchases made through these links, at no extra cost to you. Prices and availability are checked regularly but may change at the retailer.
+    </div>
+  </div>;
+}
+
 function BuilderPage({th}){
   const [build,setBuild]=useState({});       // {cat: part} for single-select
   const [multiParts,setMultiParts]=useState({});  // {cat: [part,...]} for multi-select
@@ -4072,6 +4133,8 @@ function BuilderPage({th}){
 
       {/* FPS Estimator */}
       <div style={{marginTop:16}}><BuilderFPS gpu={gpu} cpu={cpu} ram={ram}/></div>
+      {/* Buy Your Build — affiliate checkout */}
+      {coreFilled>=2&&<BuyYourBuild build={build} multiParts={multiParts}/>}
     </div>
   );
 }
