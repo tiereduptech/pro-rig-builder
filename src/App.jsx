@@ -2232,9 +2232,9 @@ function HomePage({go,browse,th}){
       <div>
         <h2 style={{fontFamily:"var(--ff-display)",fontWeight:600,fontSize:28,lineHeight:1.15,letterSpacing:"-0.015em",borderTop:"2px solid var(--txt)",paddingTop:8,margin:"0 0 12px",color:"var(--txt)"}}>Why I built this</h2>
         <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:"0 0 12px"}}>
-          I own a computer repair shop. The most common thing customers ask is <em style={{color:"var(--accent)",fontStyle:"italic"}}>"what upgrades can I do?"</em> We'd take the PC in, scan the hardware, check what's compatible, and lay out an upgrade path that fits their budget. It's the same conversation a hundred times a year.
+          Most people don't want to become PC hardware experts. They just want to know what to do next. Buy a bigger GPU? Upgrade the CPU? Get more RAM? Or is the whole platform too old?
         </p>
-        <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:0}}>I built this so anyone can do it themselves.</p>
+        <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:0}}>Pro Rig Builder answers that. Tell it your specs (or scan them), give it a budget, get a real upgrade path with prices that are actually accurate today.</p>
       </div>
     </div>
 
@@ -2256,7 +2256,7 @@ function HomePage({go,browse,th}){
       <div>
         <h2 style={{fontFamily:"var(--ff-display)",fontWeight:600,fontSize:28,lineHeight:1.15,letterSpacing:"-0.015em",borderTop:"2px solid var(--txt)",paddingTop:8,margin:"0 0 12px",color:"var(--txt)"}}>Where the data comes from</h2>
         <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:"0 0 12px"}}>
-          Bench scores from PassMark. Prices verified daily from Amazon, Best Buy, and Newegg. Catalog updated weekly. Compatibility checks actually work &mdash; RAM type, GPU length, PSU power, CPU bottleneck.
+          Bench scores from PassMark. Prices verified daily from Amazon, Best Buy, and Newegg. Catalog updated daily. Compatibility checks actually work &mdash; RAM type, GPU length, PSU power, CPU bottleneck.
         </p>
         <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:0}}>If something's wrong, <a href="mailto:support@tiereduptech.com" style={{color:"var(--accent)",textDecoration:"underline",textUnderlineOffset:3}}>email me</a>.</p>
       </div>
