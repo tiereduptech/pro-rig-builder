@@ -1104,12 +1104,12 @@ function CatThumb({ cat, thumbs, setThumb, removeThumb, size = 48, editable = tr
 }
 
 /* ═══ MEGA MENU ═══ */
-function MegaMenu({onSelect,onClose,th}){
+function MegaMenu({onSelect,onClose,go,th}){
   const G=[{t:"Components",cats:["CPU","GPU","RAM","Motherboard","Storage","PSU"]},{t:"Build",cats:["Case","CPUCooler","CaseFan"]},{t:"Peripherals",cats:["Monitor","Keyboard","Mouse","Headset"]},{t:"Expansion",cats:["SoundCard","WiFiCard","EthernetCard","ExtensionCables"]}];
   return <div className="mega-in" style={{position:"absolute",top:"100%",left:0,right:0,background:"var(--bg2)",borderBottom:"1px solid var(--bdr2)",zIndex:100,padding:"20px 0"}} onMouseLeave={onClose}>
     <div style={{maxWidth:1536,margin:"0 auto",display:"flex",gap:32,padding:"0 24px"}}>
       {G.map(g=><div key={g.t} style={{flex:1}}><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)",letterSpacing:2,marginBottom:10,fontWeight:600}}>{g.t.toUpperCase()}</div>{g.cats.map(c=>{const m=CAT[c];return <button key={c} onClick={()=>{onSelect(c);onClose();}} style={{display:"flex",alignItems:"center",gap:8,padding:"7px 8px",borderRadius:6,background:"transparent",border:"none",cursor:"pointer",textAlign:"left",color:"var(--txt)",fontFamily:"var(--ff)",width:"100%"}}><CatThumb cat={c} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={32} rounded={6} editable={false}/><div style={{flex:1}}><div style={{fontSize:13,fontWeight:600}}>{m.label}</div><div style={{fontSize:9,color:"var(--dim)"}}>{m.desc}</div></div><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)"}}>{P.filter(p=>p.c===c).length}</span></button>})}</div>)}
-      <div style={{width:180,background:"var(--bg3)",borderRadius:10,padding:14}}><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--amber)",letterSpacing:1,marginBottom:6}}>🔥 TRENDING</div>{P.filter(p=>p.bench>=95).slice(0,3).map(p=><div key={p.id} style={{display:"flex",justifyContent:"space-between",padding:"5px 0",borderBottom:"1px solid var(--bdr)"}}><span style={{fontSize:13,color:"var(--txt)"}}>{p.n}</span><span style={{fontSize:10,color:"var(--mint)",fontFamily:"var(--mono)",fontWeight:600}}>${fmtPrice($(p))}</span></div>)}</div>
+      <div style={{width:260,background:"var(--bg3)",border:"1px solid var(--bdr)",padding:16}}><div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",letterSpacing:"0.08em",textTransform:"uppercase",marginBottom:10}}>Trending</div>{P.filter(p=>p.bench>=95&&!p.bundle&&!p.needsReview).slice(0,4).map(p=>(<button key={p.id} onClick={()=>{go&&go("product/"+p.id);onClose&&onClose();}} style={{display:"flex",justifyContent:"space-between",alignItems:"center",gap:10,width:"100%",padding:"8px 0",borderBottom:"1px solid var(--bdr)",background:"none",border:"none",cursor:"pointer",textAlign:"left"}}><span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",flex:1,minWidth:0}}>{cleanProductName(p)}</span><span style={{fontSize:11,color:"var(--accent)",fontFamily:"var(--mono)",fontWeight:600,whiteSpace:"nowrap"}}>{"$"+fmtPrice($(p))}</span></button>))}</div>
     </div>
   </div>;
 }
@@ -1135,7 +1135,7 @@ function Nav({page,setPage,onBrowse,th,theme,toggleTheme}){
         {[{id:"browse",label:"Browse Parts",act:()=>setMega(!mega),arrow:true},{id:"builder",label:"PC Builder"},{id:"community",label:"Builds"},{id:"tools",label:"Smart Tools"}].map(n=>
           <button key={n.id} onClick={n.act||(()=>{setPage(n.id);setMega(false);})} style={{padding:"8px 16px",borderRadius:10,fontSize:14,fontFamily:"var(--ff)",fontWeight:page===n.id?600:400,cursor:"pointer",background:page===n.id?"var(--accent3)":"transparent",color:page===n.id?"var(--accent)":"var(--dim)",border:"none",transition:"all .2s"}}>{n.label}{n.arrow?" ▾":""}</button>
         )}
-        {mega&&<MegaMenu onSelect={c=>{onBrowse(c);setPage("search");}} onClose={()=>setMega(false)} th={th}/>}
+        {mega&&<MegaMenu onSelect={c=>{onBrowse(c);setPage("search");}} onClose={()=>setMega(false)} go={p=>setPage(p)} th={th}/>}
       </div>
       {/* Theme toggle — pill shape */}
       <button onClick={toggleTheme} style={{background:"var(--bg4)",border:"none",borderRadius:20,padding:"6px 14px",cursor:"pointer",display:"flex",alignItems:"center",gap:6,fontSize:14,color:"var(--dim)",fontFamily:"var(--ff)",fontWeight:500,transition:"all .2s"}} title={theme==="dark"?"Switch to light mode":"Switch to dark mode"}>
