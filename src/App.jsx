@@ -4034,10 +4034,10 @@ function BuilderPage({th}){
                 <div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--mute)"}}>{compatList.length} options</div></div>
               </div>
               <div>
-                {part?<div><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>{part.n}</div>
+                {part?<div><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>{cleanProductName(part)}</div>
                   <div style={{display:"flex",gap:4,alignItems:"center",marginTop:1}}><span style={{fontSize:9,color:"var(--dim)"}}>{part.b}</span><Stars r={part.r} s={8}/>{part.cp&&<Tag color="var(--amber)">-${part.off}</Tag>}</div></div>
                 :isMulti&&parts.length?<div>{parts.map((p,pi)=><div key={p.uid} style={{display:"flex",alignItems:"center",gap:4,marginBottom:1}}>
-                    <span style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--txt)",flex:1}}>{p.n}</span>
+                    <span style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--txt)",flex:1}}>{cleanProductName(p)}</span>
                     <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)"}}>${fmtPrice($(p))}</span>
                     <button onClick={e=>{e.stopPropagation();delMulti(cat,p.uid);}} style={{background:"none",border:"none",color:"var(--rose)",fontSize:10,cursor:"pointer",padding:0}}>✕</button>
                   </div>)}{canAdd&&<button onClick={e=>{e.stopPropagation();setPicking(cat);}} style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--sky)",background:"none",border:"none",cursor:"pointer",padding:0}}>+ Add another</button>}</div>
@@ -4139,7 +4139,7 @@ function BuilderPage({th}){
         <div style={{marginTop:16}}><BuilderFPS gpu={gpu} cpu={cpu} ram={ram}/></div>
         </div>
         <div className="builder-buy-col">
-        {coreFilled>=2&&<BuyYourBuild build={build} multiParts={multiParts}/>}
+        {coreFilled>=1&&<BuyYourBuild build={build} multiParts={multiParts}/>}
         </div>
       </div>
     </div>
