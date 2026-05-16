@@ -314,8 +314,8 @@ function PriceCompare({part}) {
 
 /* ═══ STYLES ═══ */
 const css=`
-[data-theme="dark"]{--bg:#0f0e0b;--bg2:#13110d;--bg3:#17140f;--bg4:#1c1914;--bdr:#2a2620;--bdr2:#4a4338;--accent:#FF8A3D;--accent2:#FF8A3D40;--accent3:#FF8A3D14;--mint:#FF8A3D;--mint2:#FF8A3D40;--mint3:#FF8A3D14;--txt:#f0ece0;--dim:#8a8170;--mute:#7a7160;--amber:#FF8A3D;--rose:#e35d3d;--sky:#7a8aa6;--violet:#a399b8;--ff:'Inter',system-ui,sans-serif;--ff-display:'Fraunces',Georgia,serif;--mono:'IBM Plex Mono',monospace;--navbg:#13110d;--heroGrad:none;--card:#13110d;--shadow:none;--shadowSm:none}
-[data-theme="light"]{--bg:#faf7ef;--bg2:#f4efe2;--bg3:#ede8db;--bg4:#e3decc;--bdr:#d8d0bd;--bdr2:#b5ad99;--accent:#cc5a17;--accent2:#cc5a1740;--accent3:#cc5a1710;--mint:#cc5a17;--mint2:#cc5a1740;--mint3:#cc5a1710;--txt:#1a1814;--dim:#6a614f;--mute:#8a8170;--amber:#cc5a17;--rose:#c43d23;--sky:#5a6a86;--violet:#7c6b96;--ff:'Inter',system-ui,sans-serif;--ff-display:'Fraunces',Georgia,serif;--mono:'IBM Plex Mono',monospace;--navbg:#f4efe2;--heroGrad:none;--card:#f4efe2;--shadow:none;--shadowSm:none}
+[data-theme="dark"]{--bg:#0f0e0b;--bg2:#13110d;--bg3:#17140f;--bg4:#1c1914;--bdr:#2a2620;--bdr2:#4a4338;--accent:#FF8A3D;--accent2:#FF8A3D40;--accent3:#FF8A3D14;--mint:#FF8A3D;--mint2:#FF8A3D40;--mint3:#FF8A3D14;--txt:#f0ece0;--dim:#8a8170;--mute:#7a7160;--amber:#FF8A3D;--rose:#e35d3d;--sky:#7a8aa6;--violet:#a399b8;--ff:'Inter',system-ui,sans-serif;--ff-display:'Fraunces',Georgia,serif;--mono:'Inter',system-ui,sans-serif;--navbg:#13110d;--heroGrad:none;--card:#13110d;--shadow:none;--shadowSm:none}
+[data-theme="light"]{--bg:#faf7ef;--bg2:#f4efe2;--bg3:#ede8db;--bg4:#e3decc;--bdr:#d8d0bd;--bdr2:#b5ad99;--accent:#cc5a17;--accent2:#cc5a1740;--accent3:#cc5a1710;--mint:#cc5a17;--mint2:#cc5a1740;--mint3:#cc5a1710;--txt:#1a1814;--dim:#6a614f;--mute:#8a8170;--amber:#cc5a17;--rose:#c43d23;--sky:#5a6a86;--violet:#7c6b96;--ff:'Inter',system-ui,sans-serif;--ff-display:'Fraunces',Georgia,serif;--mono:'Inter',system-ui,sans-serif;--navbg:#f4efe2;--heroGrad:none;--card:#f4efe2;--shadow:none;--shadowSm:none}
 *{box-sizing:border-box;margin:0}::selection{background:var(--accent3);color:var(--accent)}
 .mega-in{animation:mIn .2s cubic-bezier(.16,1,.3,1)}@keyframes mIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
 .fade{animation:fIn .35s cubic-bezier(.16,1,.3,1)}@keyframes fIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
@@ -2218,9 +2218,10 @@ function HomePage({go,browse,th}){
     {/* === COBY INTRO === */}
     <div style={{maxWidth:1280,margin:"24px auto 56px",padding:"0 32px"}}>
       <div style={{borderTop:"1px solid var(--bdr)",borderBottom:"1px solid var(--bdr)",padding:"28px 0"}}>
-          <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:"0 0 12px"}}>
-            Hi, I'm Coby. I own a computer repair shop and a custom PC brand in Texas. The #1 question we get is <em style={{color:"var(--accent)",fontStyle:"italic"}}>"what upgrades can I do?"</em> We'd take the computer in, scan the hardware, check what fits, and build an upgrade path inside their budget. I built this site to put that whole process in their hands.
-          </p>
+          <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:"0 0 14px"}}>Hi, I'm Coby. I own a computer repair shop and a custom PC brand in Texas.</p>
+          <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:"0 0 14px"}}>The #1 question we get from PC gamers is <em style={{color:"var(--accent)",fontStyle:"italic"}}>"what upgrades can I do?"</em></p>
+          <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:"0 0 14px"}}>So we take the computer in, scan the hardware, check what fits, and build an upgrade path inside their budget.</p>
+          <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:"0 0 14px"}}>I built this site to put that whole process in their hands.</p>
           <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",margin:0,fontStyle:"italic"}}>&mdash; Coby, Owner &middot; TieredUp Tech, Inc.</p>
       </div>
     </div>
