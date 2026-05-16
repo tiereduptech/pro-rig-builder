@@ -60,6 +60,48 @@ const PAGES = {
     path: "/tools",
     crumbLabel: "Tools",
   },
+  "tools/fps-estimator": {
+    title: `FPS Estimator — Projected Frames Per Second for Your PC Build | ${BRAND}`,
+    desc: "See projected FPS for 26 popular games across any GPU + CPU combo at 1080p, 1440p, and 4K. Free FPS calculator with no signup.",
+    path: "/tools/fps-estimator",
+    crumbLabel: "FPS Estimator",
+  },
+  "tools/bottleneck-calculator": {
+    title: `Bottleneck Calculator — Find Your CPU or GPU Bottleneck | ${BRAND}`,
+    desc: "Find out if your CPU or GPU is the weak link in your PC build. Get a specific bottleneck severity percentage with upgrade recommendations.",
+    path: "/tools/bottleneck-calculator",
+    crumbLabel: "Bottleneck Calculator",
+  },
+  "tools/will-it-run": {
+    title: `Will It Run? — Check If Your PC Can Run Any Game | ${BRAND}`,
+    desc: "Check if your existing PC can handle specific games at your target resolution and quality. Free game compatibility checker.",
+    path: "/tools/will-it-run",
+    crumbLabel: "Will It Run",
+  },
+  "tools/compare-builds": {
+    title: `Compare PC Builds — Side-by-Side Performance Comparison | ${BRAND}`,
+    desc: "Compare two PC builds side by side. See FPS differences, bench scores, total cost, and which build wins at your target resolution.",
+    path: "/tools/compare-builds",
+    crumbLabel: "Compare Builds",
+  },
+  "tools/build-wizard": {
+    title: `Build Wizard — Automated PC Build for Your Budget | ${BRAND}`,
+    desc: "Tell us your budget and use case. We'll build a fully compatible, optimized PC parts list automatically — no manual research needed.",
+    path: "/tools/build-wizard",
+    crumbLabel: "Build Wizard",
+  },
+  "tools/power-calculator": {
+    title: `PSU Wattage Calculator — How Many Watts Your PC Needs | ${BRAND}`,
+    desc: "Calculate exactly how many watts your PC needs. Free PSU calculator factoring in GPU TDP, transient spikes, and headroom for upgrades.",
+    path: "/tools/power-calculator",
+    crumbLabel: "Power Calculator",
+  },
+  "tools/compare-parts": {
+    title: `Compare PC Parts — CPU, GPU, RAM & More Side-by-Side | ${BRAND}`,
+    desc: "Compare any two PC parts side by side. See specs, benchmarks, prices, and which is the better value for your build.",
+    path: "/tools/compare-parts",
+    crumbLabel: "Compare Parts",
+  },
   upgrade: {
     title: `Upgrade Path — Personalized PC Upgrade Recommendations | ${BRAND}`,
     desc: "Get personalized upgrade recommendations based on your current PC and budget. Scan your hardware and see exactly what to upgrade first.",
