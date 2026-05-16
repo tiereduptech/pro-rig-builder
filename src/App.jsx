@@ -4947,11 +4947,13 @@ function ScrollToTop(){
 
 // ── ScannerPromo: sticky left-side promo for the Pro Rig Scanner desktop app ──
 function ScannerPromo({ go, page }) {
+  const isMobile = useIsMobile();
   const [expanded, setExpanded] = useState(false);
   const [dismissed, setDismissed] = useState(() => {
     try { return localStorage.getItem("rf_scanner_promo_dismissed") === "1"; } catch { return false; }
   });
   if (dismissed) return null;
+  if (isMobile) return null; // hide on mobile — pointless there
   if (page === "scanner") return null; // do not show on the dedicated page
   const dismiss = e => {
     e.stopPropagation();
