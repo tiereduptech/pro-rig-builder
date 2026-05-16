@@ -2210,20 +2210,18 @@ function HomePage({go,browse,th}){
       </p>
       <div style={{display:"flex",gap:12,flexWrap:"wrap"}}>
         <button onClick={()=>go("scanner")} style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,padding:"13px 24px",border:"none",cursor:"pointer",background:"var(--accent)",color:"var(--bg)"}}>Download Scanner &rarr;</button>
+        <button onClick={()=>go("builder")} style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:500,padding:"13px 24px",cursor:"pointer",background:"transparent",color:"var(--txt)",border:"1px solid var(--bdr2)"}}>Start a PC Build</button>
         <button onClick={()=>go("search")} style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:500,padding:"13px 24px",cursor:"pointer",background:"transparent",color:"var(--txt)",border:"1px solid var(--bdr2)"}}>Browse the catalog</button>
       </div>
     </div>
 
     {/* === COBY INTRO === */}
     <div style={{maxWidth:1280,margin:"24px auto 56px",padding:"0 32px"}}>
-      <div style={{borderTop:"1px solid var(--bdr)",borderBottom:"1px solid var(--bdr)",padding:"28px 0",display:"grid",gridTemplateColumns:"1fr 220px",gap:32,alignItems:"center"}} className="intro-grid">
-        <div>
+      <div style={{borderTop:"1px solid var(--bdr)",borderBottom:"1px solid var(--bdr)",padding:"28px 0"}}>
           <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:"0 0 12px"}}>
             Hi, I'm Coby. I own a computer repair shop and a custom PC brand in Texas. The #1 question we get is <em style={{color:"var(--accent)",fontStyle:"italic"}}>"what upgrades can I do?"</em> We'd take the computer in, scan the hardware, check what fits, and build an upgrade path inside their budget. I built this site to put that whole process in their hands.
           </p>
-          <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",margin:0,fontStyle:"italic"}}>&mdash; Coby, owner &middot; Orange, Texas</p>
-        </div>
-        <div style={{background:"var(--bg3)",border:"1px solid var(--bdr)",aspectRatio:"1/1",display:"flex",alignItems:"center",justifyContent:"center",fontFamily:"var(--mono)",fontSize:10,color:"var(--mute)",textAlign:"center",lineHeight:1.5,padding:10}}>[ shop photo<br/>goes here ]</div>
+          <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",margin:0,fontStyle:"italic"}}>&mdash; Coby, Owner &middot; TieredUp Tech, Inc.</p>
       </div>
     </div>
 
