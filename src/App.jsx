@@ -2193,13 +2193,13 @@ function HomePage({go,browse,th}){
   return <div className="fade">
 
     {/* === MAGAZINE MASTHEAD STRIP === */}
-    <div style={{borderBottom:"1px solid var(--bdr)",padding:"10px 32px",fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",display:"flex",justifyContent:"space-between",flexWrap:"wrap",gap:8,maxWidth:1280,margin:"0 auto"}}>
+    <div style={{borderBottom:"1px solid var(--bdr)",padding:"10px 32px",fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",display:"flex",justifyContent:"space-between",flexWrap:"wrap",gap:8,maxWidth:1600,margin:"0 auto"}}>
       <span>Updated {updatedDate}</span>
       <span>{totalParts.toLocaleString()} products tracked &middot; {totalDeals} deals live &middot; v3.2.1</span>
     </div>
 
     {/* === HERO === */}
-    <div style={{maxWidth:1280,margin:"0 auto",padding:"64px 32px 32px"}}>
+    <div style={{maxWidth:1600,margin:"0 auto",padding:"64px 32px 32px"}}>
       <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase",marginBottom:20}}>Issue No. 01 &mdash; May 2026</div>
       <h1 style={{fontFamily:"var(--ff-display)",fontWeight:600,fontSize:"clamp(40px, 6vw, 72px)",lineHeight:1.02,letterSpacing:"-0.025em",margin:"0 0 20px",color:"var(--txt)",maxWidth:920}}>
         Skip the shop visit.<br/>
@@ -2216,7 +2216,7 @@ function HomePage({go,browse,th}){
     </div>
 
     {/* === COBY INTRO === */}
-    <div style={{maxWidth:1280,margin:"24px auto 56px",padding:"0 32px"}}>
+    <div style={{maxWidth:1600,margin:"24px auto 56px",padding:"0 32px"}}>
       <div style={{borderTop:"1px solid var(--bdr)",borderBottom:"1px solid var(--bdr)",padding:"28px 0"}}>
           <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:"0 0 14px"}}>Hi, I'm Coby. I own a computer repair shop and a custom PC brand in Texas.</p>
           <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:"0 0 14px"}}>The #1 question we get from PC gamers is <em style={{color:"var(--accent)",fontStyle:"italic"}}>"what upgrades can I do?"</em></p>
@@ -2227,7 +2227,7 @@ function HomePage({go,browse,th}){
     </div>
 
     {/* === §01 === */}
-    <div style={{maxWidth:1280,margin:"0 auto 32px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="section-grid">
+    <div style={{maxWidth:1600,margin:"0 auto 32px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="section-grid">
       <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase",borderTop:"2px solid var(--txt)",paddingTop:8}}>&sect; 01</div>
       <div>
         <h2 style={{fontFamily:"var(--ff-display)",fontWeight:600,fontSize:28,lineHeight:1.15,letterSpacing:"-0.015em",borderTop:"2px solid var(--txt)",paddingTop:8,margin:"0 0 12px",color:"var(--txt)"}}>Why I built this</h2>
@@ -2239,7 +2239,7 @@ function HomePage({go,browse,th}){
     </div>
 
     {/* === §02 === */}
-    <div style={{maxWidth:1280,margin:"0 auto 32px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="section-grid">
+    <div style={{maxWidth:1600,margin:"0 auto 32px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="section-grid">
       <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase",borderTop:"2px solid var(--txt)",paddingTop:8}}>&sect; 02</div>
       <div>
         <h2 style={{fontFamily:"var(--ff-display)",fontWeight:600,fontSize:28,lineHeight:1.15,letterSpacing:"-0.015em",borderTop:"2px solid var(--txt)",paddingTop:8,margin:"0 0 12px",color:"var(--txt)"}}>How the scanner works</h2>
@@ -2251,7 +2251,7 @@ function HomePage({go,browse,th}){
     </div>
 
     {/* === §03 === */}
-    <div style={{maxWidth:1280,margin:"0 auto 56px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="section-grid">
+    <div style={{maxWidth:1600,margin:"0 auto 56px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="section-grid">
       <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase",borderTop:"2px solid var(--txt)",paddingTop:8}}>&sect; 03</div>
       <div>
         <h2 style={{fontFamily:"var(--ff-display)",fontWeight:600,fontSize:28,lineHeight:1.15,letterSpacing:"-0.015em",borderTop:"2px solid var(--txt)",paddingTop:8,margin:"0 0 12px",color:"var(--txt)"}}>Where the data comes from</h2>
@@ -2263,7 +2263,7 @@ function HomePage({go,browse,th}){
     </div>
 
     {/* === THE TOOLS — 2x2 grid === */}
-    <div style={{maxWidth:1280,margin:"0 auto 56px",padding:"0 32px"}}>
+    <div style={{maxWidth:1600,margin:"0 auto 56px",padding:"0 32px"}}>
       <div style={{borderTop:"2px solid var(--txt)",paddingTop:18}}>
         <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",letterSpacing:"0.04em",textTransform:"uppercase",marginBottom:18}}>The tools</div>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",border:"1px solid var(--bdr)"}} className="tools-grid">
@@ -2296,7 +2296,7 @@ function HomePage({go,browse,th}){
     </div>
 
     {/* === BY THE NUMBERS === */}
-    <div style={{maxWidth:1280,margin:"0 auto 32px",padding:"0 32px"}}>
+    <div style={{maxWidth:1600,margin:"0 auto 32px",padding:"0 32px"}}>
       <div style={{borderTop:"2px solid var(--txt)",paddingTop:18}}>
         <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",letterSpacing:"0.04em",textTransform:"uppercase",marginBottom:14}}>By the numbers</div>
         <div style={{fontFamily:"var(--ff)",color:"var(--txt)",lineHeight:1.6,fontSize:16,maxWidth:900}}>
@@ -2307,7 +2307,7 @@ function HomePage({go,browse,th}){
     </div>
 
     {/* === THIS WEEK'S DEALS === */}
-    {featuredDeals.length>0&&<div style={{maxWidth:1280,margin:"0 auto 56px",padding:"0 32px"}}>
+    {featuredDeals.length>0&&<div style={{maxWidth:1600,margin:"0 auto 56px",padding:"0 32px"}}>
       <div style={{borderTop:"2px solid var(--txt)",paddingTop:18}}>
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",marginBottom:18}}>
           <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",letterSpacing:"0.04em",textTransform:"uppercase"}}>This week's deals</div>
