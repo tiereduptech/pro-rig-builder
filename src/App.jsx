@@ -68,6 +68,22 @@ OS:{icon:"🪟",label:"Operating Systems",singular:"OS",desc:"Windows & Linux",c
   UPS:{icon:"🔋",label:"UPS Systems",singular:"UPS",desc:"Battery backup systems",cols:[]},
 };
 const CATS=Object.keys(CAT);
+// Lucide icon component map for categories (replaces emoji icons)
+const CAT_ICONS = {
+  Case: Box, CPU: Cpu, CPUCooler: Snowflake, Motherboard: CircuitBoard, RAM: MemoryStick,
+  GPU: Square, Storage: HardDrive, PSU: Plug,
+  CaseFan: Fan, SoundCard: Volume2, EthernetCard: Globe, WiFiCard: Wifi, OpticalDrive: Disc,
+  ExtensionCables: Cable, InternalDisplay: Monitor, OS: AppWindow,
+  Monitor: Monitor, Keyboard: Keyboard, Mouse: Mouse, Headset: Headphones, Webcam: Camera,
+  Microphone: Mic, MousePad: MousePointer, Chair: Armchair, Desk: Table,
+  ThermalPaste: Beaker, ExternalStorage: ExternalLink, Antivirus: Shield, ExternalOptical: FileVideo, UPS: BatteryCharging,
+};
+// Render an icon for any category. Falls back to Box if unmapped.
+const CatIcon = ({c, size=16, color="currentColor", style={}}) => {
+  const Cmp = CAT_ICONS[c] || Box;
+  return <Cmp size={size} color={color} style={{flexShrink:0, ...style}} strokeWidth={1.75}/>;
+};
+
 // Builder table sections
 const CORE_CATS=["GPU","Case","CPU","Motherboard","Storage","RAM","CPUCooler","PSU"];
 const COOLING_CATS=["CaseFan"];
@@ -962,12 +978,12 @@ function Nav({page,setPage,onBrowse,th,theme,toggleTheme}){
       {canGoBack&&<button onClick={()=>window.history.back()} style={{background:"none",border:"none",cursor:"pointer",color:"var(--dim)",fontSize:22,padding:"4px 8px 4px 0"}} title="Go back">←</button>}
       {/* Logo */}
       <button onClick={()=>setPage("home")} style={{background:"none",border:"none",cursor:"pointer",display:"flex",alignItems:"center",gap:8,marginRight:24}}>
-        <TowerLogo size={36}/>
+        <TowerLogo size={72}/>
       </button>
       <button onClick={()=>setPage("scanner")} style={{display:"inline-flex",alignItems:"center",gap:6,padding:"6px 12px",borderRadius:20,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,cursor:"pointer",marginRight:20,transition:"all .15s"}}
         onMouseEnter={e=>{e.currentTarget.style.background="var(--accent)";e.currentTarget.style.color="#fff";}}
         onMouseLeave={e=>{e.currentTarget.style.background="var(--accent3)";e.currentTarget.style.color="var(--accent)";}}>
-        <span style={{fontSize:14}}>📥</span> Scanner
+        <Download size={14} strokeWidth={2}/> Scanner
       </button>
       {/* Nav links */}
       <div style={{display:"flex",gap:2,flex:1,position:"relative"}}>
@@ -3331,7 +3347,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
       <button onClick={onBack} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"8px 14px",cursor:"pointer",display:"flex",alignItems:"center",gap:6,color:"var(--txt)",fontFamily:"var(--ff)",fontSize:13,fontWeight:600}}>← Back to Build</button>
       <div style={{flex:1}}>
         <h2 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)",display:"flex",alignItems:"center",gap:8}}>
-          <span style={{fontSize:22}}>{meta.icon}</span> Choose {meta.singular||meta.label}
+          <CatIcon c={cat} size={22}/> Choose {meta.singular||meta.label}
         </h2>
         <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginTop:2}}>{compatList.length} compatible parts · {list.length} shown</div>
       </div>
@@ -3505,7 +3521,7 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,b
       <button onClick={onBack} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"8px 12px",cursor:"pointer",fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",flexShrink:0}}>← Back</button>
       <div style={{flex:1,minWidth:0}}>
         <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:800,color:"var(--txt)",display:"flex",alignItems:"center",gap:6,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
-          <span style={{fontSize:22}}>{meta.icon}</span> Choose {meta.singular||meta.label}
+          <CatIcon c={cat} size={22}/> Choose {meta.singular||meta.label}
         </div>
         <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginTop:1}}>{list.length} of {compatList.length}</div>
       </div>
@@ -3796,7 +3812,7 @@ function BuilderPage({th}){
             <div className="builder-picker-row" style={{display:"grid",gridTemplateColumns:"130px 1fr 180px 70px 40px",gap:0,padding:"10px 16px",alignItems:"center",borderBottom:"1px solid var(--bdr)",cursor:canAdd?"pointer":"default",background:isPicking2?"var(--sky)06":"transparent"}}
               onClick={()=>canAdd&&setPicking(isPicking2?null:cat)}>
               <div style={{display:"flex",alignItems:"center",gap:6}}>
-                <span style={{fontSize:15}}>{meta.icon}</span>
+                <CatIcon c={c} size={15}/>
                 <div><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>{meta.singular||meta.label}</div>
                 <div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--mute)"}}>{compatList.length} options</div></div>
               </div>
@@ -3851,7 +3867,7 @@ function BuilderPage({th}){
           <input value={buildName} onChange={e=>setBuildName(e.target.value)} style={{background:"none",border:"none",borderBottom:"1px dashed var(--mute)",fontFamily:"var(--ff)",fontSize:24,fontWeight:800,color:"var(--txt)",outline:"none",padding:"2px 0",width:280}}/>
           <div style={{display:"flex",gap:8,alignItems:"center",marginTop:6}}>
             <Tag color="var(--mint)">{tier}</Tag>
-            <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)"}}>{coreFilled}/8 core · ${total}</span>
+            <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)"}}>{coreFilled}/8 core · ${fmtPrice(total)}</span>
             {(coreFilled>0||Object.keys(multiParts).length>0)&&<button onClick={()=>{if(window.confirm("Clear everything and start over?")){setBuild({});setMultiParts({});setPicking(null);setBuildName("My Build");setBuildBudget(0);prevCount.current=0;}}} style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--rose)",background:"none",border:"1px solid var(--rose)33",borderRadius:4,padding:"2px 8px",cursor:"pointer"}}>🔄 Start Over</button>}
             {coreFilled>=2&&<button onClick={()=>{const ids=Object.values(build).map(p=>p.id);const data=btoa(JSON.stringify({n:buildName,ids}));const url=window.location.origin+"/#build?d="+data;navigator.clipboard.writeText(url);alert("Build link copied to clipboard!\n\n"+url);}} style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--sky)",background:"none",border:"1px solid var(--sky)33",borderRadius:4,padding:"2px 8px",cursor:"pointer"}}>🔗 Share Build</button>}
           </div>
@@ -3870,14 +3886,14 @@ function BuilderPage({th}){
             {psu&&<div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--dim)",marginTop:1}}>~${(tdp*0.12*24*30/1000).toFixed(0)}/mo</div>}</div>
           {/* Total */}
           <div style={{textAlign:"right"}}><div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--dim)",letterSpacing:1}}>TOTAL</div>
-            <div style={{fontFamily:"var(--mono)",fontSize:24,fontWeight:700,color:buildBudget>0&&total>buildBudget?"var(--rose)":total>0?"var(--mint)":"var(--mute)"}}>${total}</div></div>
+            <div style={{fontFamily:"var(--mono)",fontSize:24,fontWeight:700,color:buildBudget>0&&total>buildBudget?"var(--rose)":total>0?"var(--mint)":"var(--mute)"}}>${fmtPrice(total)}</div></div>
           <div style={{position:"relative",width:50,height:50}}><svg width={50} height={50} style={{transform:"rotate(-90deg)"}}><circle cx={25} cy={25} r={ringR} fill="none" stroke="var(--bg4)" strokeWidth={3}/><circle cx={25} cy={25} r={ringR} fill="none" stroke={pct===100?"var(--mint)":"var(--sky)"} strokeWidth={3} strokeDasharray={ringC} strokeDashoffset={ringC*(1-pct/100)} strokeLinecap="round" style={{transition:"stroke-dashoffset .6s"}}/></svg><div style={{position:"absolute",inset:0,display:"flex",alignItems:"center",justifyContent:"center"}}><span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:pct===100?"var(--mint)":"var(--txt)"}}>{pct}%</span></div></div>
         </div>
       </div>
 
       {/* Budget warning */}
       {buildBudget>0&&total>buildBudget&&<div style={{padding:"8px 12px",borderRadius:6,fontSize:13,fontFamily:"var(--ff)",background:"#ff5c7c08",color:"var(--rose)",border:"1px solid #ff5c7c18",marginBottom:10,display:"flex",alignItems:"center",gap:6}}>
-        💸 <span style={{fontWeight:600}}>${total-buildBudget} over budget!</span> Your build is ${total} but your budget is ${buildBudget}. Consider swapping components for cheaper alternatives.
+        💸 <span style={{fontWeight:600}}>${fmtPrice(total-buildBudget)} over budget!</span> Your build is ${fmtPrice(total)} but your budget is ${fmtPrice(buildBudget)}. Consider swapping components for cheaper alternatives.
       </div>}
 
       {/* Compat alerts */}
