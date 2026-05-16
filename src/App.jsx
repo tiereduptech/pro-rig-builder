@@ -3782,7 +3782,26 @@ function BuilderPage({th}){
     if(gpu&&cat==="PSU"&&gpu.pciPwr)r=r.filter(x=>!x.pciConns||x.pciConns>=gpu.pciPwr);
     if(mobo&&cat==="RAM"&&mobo.maxMem)r=r.filter(x=>!x.capacity||x.capacity<=mobo.maxMem);
     // Bottleneck filter: hide CPUs that would severely bottleneck the selected GPU (>2.0x bench ratio = ~50% bottleneck)
-    if(gpu&&cat==="CPU"&&gpu.bench)r=r.filter(x=>!x.bench||(gpu.bench/x.bench)<=2.0);
+    // Bottleneck filter: hide CPUs that would severely bottleneck the selected GPU
+    if(gpu&&cat==="CPU"&&gpu.bench){
+      const gb = gpu.bench;
+      r=r.filter(x=>{
+        // Hide server/workstation CPUs and obvious budget chips when GPU is mid-tier+
+        if(gb>=60){
+          const nm = (x.n||'').toLowerCase();
+          if(/\bxeon\b/.test(nm)) return false;
+          if(/\bathlon\b/.test(nm)) return false;
+          if(/\bpentium\b/.test(nm)) return false;
+          if(/\bceleron\b/.test(nm)) return false;
+          if(/\begpu\b/.test(nm)) return false;
+          if(/\bdock\b/.test(nm)) return false;
+        }
+        // If we have bench data, enforce the 50% bottleneck threshold (GPU/CPU ratio <= 2.0)
+        if(x.bench) return (gb/x.bench) <= 2.0;
+        // No bench data: only allow through if GPU is low-tier (< 60 bench, budget territory)
+        return gb < 60;
+      });
+    }
     return r;};
 
   const specSummary=(cat,p)=>{if(!p)return"";
