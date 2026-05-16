@@ -1104,18 +1104,18 @@ function CatThumb({ cat, thumbs, setThumb, removeThumb, size = 48, editable = tr
 }
 
 /* ═══ MEGA MENU ═══ */
-function MegaMenu({onSelect,onClose,go,th}){
+function MegaMenu({onSelect,onClose,go,onSearch,th}){
   const G=[{t:"Components",cats:["CPU","GPU","RAM","Motherboard","Storage","PSU"]},{t:"Build",cats:["Case","CPUCooler","CaseFan"]},{t:"Peripherals",cats:["Monitor","Keyboard","Mouse","Headset"]},{t:"Expansion",cats:["SoundCard","WiFiCard","EthernetCard","ExtensionCables"]}];
   return <div className="mega-in" style={{position:"absolute",top:"100%",left:0,right:0,background:"var(--bg2)",borderBottom:"1px solid var(--bdr2)",zIndex:100,padding:"20px 0"}} onMouseLeave={onClose}>
     <div style={{maxWidth:1536,margin:"0 auto",display:"flex",gap:32,padding:"0 24px"}}>
       {G.map(g=><div key={g.t} style={{flex:1}}><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)",letterSpacing:2,marginBottom:10,fontWeight:600}}>{g.t.toUpperCase()}</div>{g.cats.map(c=>{const m=CAT[c];return <button key={c} onClick={()=>{onSelect(c);onClose();}} style={{display:"flex",alignItems:"center",gap:8,padding:"7px 8px",borderRadius:6,background:"transparent",border:"none",cursor:"pointer",textAlign:"left",color:"var(--txt)",fontFamily:"var(--ff)",width:"100%"}}><CatThumb cat={c} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={32} rounded={6} editable={false}/><div style={{flex:1}}><div style={{fontSize:13,fontWeight:600}}>{m.label}</div><div style={{fontSize:9,color:"var(--dim)"}}>{m.desc}</div></div><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)"}}>{P.filter(p=>p.c===c).length}</span></button>})}</div>)}
-      <div style={{width:260,background:"var(--bg3)",border:"1px solid var(--bdr)",padding:16}}><div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",letterSpacing:"0.08em",textTransform:"uppercase",marginBottom:10}}>Trending</div>{P.filter(p=>p.bench>=95&&!p.bundle&&!p.needsReview).slice(0,4).map(p=>(<button key={p.id} onClick={()=>{go&&go("product/"+p.id);onClose&&onClose();}} style={{display:"flex",justifyContent:"space-between",alignItems:"center",gap:10,width:"100%",padding:"8px 0",borderBottom:"1px solid var(--bdr)",background:"none",border:"none",cursor:"pointer",textAlign:"left"}}><span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",flex:1,minWidth:0}}>{cleanProductName(p)}</span><span style={{fontSize:11,color:"var(--accent)",fontFamily:"var(--mono)",fontWeight:600,whiteSpace:"nowrap"}}>{"$"+fmtPrice($(p))}</span></button>))}</div>
+      <div style={{width:260,background:"var(--bg3)",border:"1px solid var(--bdr)",padding:16}}><div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",letterSpacing:"0.08em",textTransform:"uppercase",marginBottom:10}}>Trending</div>{P.filter(p=>p.bench>=95&&!p.bundle&&!p.needsReview).slice(0,4).map(p=>(<button key={p.id} onClick={()=>{onSearch&&onSearch(cleanProductName(p),p.c);onClose&&onClose();}} style={{display:"flex",justifyContent:"space-between",alignItems:"center",gap:10,width:"100%",padding:"8px 0",borderBottom:"1px solid var(--bdr)",background:"none",border:"none",cursor:"pointer",textAlign:"left"}}><span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",flex:1,minWidth:0}}>{cleanProductName(p)}</span><span style={{fontSize:11,color:"var(--accent)",fontFamily:"var(--mono)",fontWeight:600,whiteSpace:"nowrap"}}>{"$"+fmtPrice($(p))}</span></button>))}</div>
     </div>
   </div>;
 }
 
 /* ═══ NAV ═══ */
-function Nav({page,setPage,onBrowse,th,theme,toggleTheme}){
+function Nav({page,setPage,onBrowse,onSearch,th,theme,toggleTheme}){
   const [mega,setMega]=useState(false);
   const canGoBack = page !== "home";
   return <nav style={{position:"sticky",top:0,zIndex:200,backdropFilter:"blur(20px)",background:"var(--navbg)"}}>
@@ -1135,7 +1135,7 @@ function Nav({page,setPage,onBrowse,th,theme,toggleTheme}){
         {[{id:"browse",label:"Browse Parts",act:()=>setMega(!mega),arrow:true},{id:"builder",label:"PC Builder"},{id:"community",label:"Builds"},{id:"tools",label:"Smart Tools"}].map(n=>
           <button key={n.id} onClick={n.act||(()=>{setPage(n.id);setMega(false);})} style={{padding:"8px 16px",borderRadius:10,fontSize:14,fontFamily:"var(--ff)",fontWeight:page===n.id?600:400,cursor:"pointer",background:page===n.id?"var(--accent3)":"transparent",color:page===n.id?"var(--accent)":"var(--dim)",border:"none",transition:"all .2s"}}>{n.label}{n.arrow?" ▾":""}</button>
         )}
-        {mega&&<MegaMenu onSelect={c=>{onBrowse(c);setPage("search");}} onClose={()=>setMega(false)} go={p=>setPage(p)} th={th}/>}
+        {mega&&<MegaMenu onSelect={c=>{onBrowse(c);setPage("search");}} onClose={()=>setMega(false)} go={p=>setPage(p)} onSearch={onSearch} th={th}/>}
       </div>
       {/* Theme toggle — pill shape */}
       <button onClick={toggleTheme} style={{background:"var(--bg4)",border:"none",borderRadius:20,padding:"6px 14px",cursor:"pointer",display:"flex",alignItems:"center",gap:6,fontSize:14,color:"var(--dim)",fontFamily:"var(--ff)",fontWeight:500,transition:"all .2s"}} title={theme==="dark"?"Switch to light mode":"Switch to dark mode"}>
@@ -2762,9 +2762,9 @@ function CategoryGuide({ cat }) {
 /* === END CATEGORY GUIDES === */
 
 // === MOBILE SEARCH PAGE ===
-function MobileSearchPage({activeCat,th}){
+function MobileSearchPage({activeCat,initialQuery,th}){
   const [cat,setCat]=useState(activeCat||"");
-  const [q,setQ]=useState("");
+  const [q,setQ]=useState(initialQuery||"");
   const [brands,setBrands]=useState([]);
   const [marketplaces,setMarketplaces]=useState([]);
   const [maxPr,setMaxPr]=useState(5000);
@@ -2774,6 +2774,7 @@ function MobileSearchPage({activeCat,th}){
   const [expanded,setExpanded]=useState(null);
   const [filtersOpen,setFiltersOpen]=useState(false);
   useEffect(()=>{if(activeCat)setCat(activeCat);},[activeCat]);
+  useEffect(()=>{if(initialQuery)setQ(initialQuery);},[initialQuery]);
 
   const catP=cat?P.filter(p=>p.c===cat):P;
   const allBr=[...new Set(catP.map(p=>resolveBrand(p)).filter(Boolean))].sort();
@@ -2999,13 +3000,14 @@ function SearchPageRouter(props){
   const isMobile=useIsMobile();
   return isMobile?<MobileSearchPage {...props}/>:<SearchPage {...props}/>;
 }
-function SearchPage({activeCat,th}){
-  const [cat,setCat]=useState(activeCat||"");const [q,setQ]=useState("");const [brands,setBrands]=useState([]);const [marketplaces,setMarketplaces]=useState([]);const [conditions,setConditions]=useState([]);
+function SearchPage({activeCat,initialQuery,th}){
+  const [cat,setCat]=useState(activeCat||"");const [q,setQ]=useState(initialQuery||"");const [brands,setBrands]=useState([]);const [marketplaces,setMarketplaces]=useState([]);const [conditions,setConditions]=useState([]);
   const [viewMode,setViewMode]=useState(()=>{try{return localStorage.getItem("rigfinder_view_mode")||"row";}catch{return "row";}});
   const setViewModeP=v=>{setViewMode(v);try{localStorage.setItem("rigfinder_view_mode",v);}catch{}};const [maxPr,setMaxPr]=useState(5000);const [minPr,setMinPr]=useState(0);const [minR,setMinR]=useState(0);const [cpO,setCpO]=useState(false);const [sf,setSf]=useState({});const [sort,setSort]=useState("price-asc");
   const [expanded,setExpanded]=useState(null);
   const [showAll,setShowAll]=useState({});
   useEffect(()=>{if(activeCat)setCat(activeCat);},[activeCat]);
+  useEffect(()=>{if(initialQuery)setQ(initialQuery);},[initialQuery]);
   const sel=c=>{setCat(c);setBrands([]);setMarketplaces([]);setConditions([]);setSf({});setQ("");setMaxPr(5000);setMinPr(0);setMinR(0);setCpO(false);};
   const catP=cat?P.filter(p=>p.c===cat):P;const allBr=[...new Set(catP.map(p=>resolveBrand(p)).filter(Boolean))].sort();const allMarkets=[...new Set(catP.flatMap(p=>p.deals&&typeof p.deals==="object"?Object.keys(p.deals).filter(k=>p.deals[k]&&typeof p.deals[k]==="object"&&p.deals[k].price).map(marketplaceGroupOf):[]))].sort();const cols=cat?(CAT[cat]?.cols||[]):[];const prMx=Math.max(...catP.map(p=>$(p)),100);
   const togSf=(col,val)=>setSf(pv=>{const c=pv[col]||[];return{...pv,[col]:c.includes(val)?c.filter(v=>v!==val):[...c,val]};});
@@ -5108,7 +5110,7 @@ export default function App(){
     const hash=(window.location.hash||"").replace(/^#/,"").split("/")[0];
     if(validPages.includes(hash))return hash;
     return"home";
-  });const [bc,setBc]=useState("");
+  });const [bc,setBc]=useState("");const [bq,setBq]=useState("");
   const th = useThumbs();
   const [theme,setTheme]=useState(()=>{try{return localStorage.getItem("rf-theme")||"light";}catch{return"light";}});
   const toggleTheme=()=>{const next=theme==="dark"?"light":"dark";setTheme(next);try{localStorage.setItem("rf-theme",next);}catch{};};
@@ -5176,5 +5178,6 @@ export default function App(){
   }, []);
 
   const handleBrowse=c=>{setBc(c);setPage("search");};
-  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><PageMeta page={page} category={bc} parts={ACTIVE_SEED_PARTS} /><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} th={th} theme={theme} toggleTheme={toggleTheme}/><main style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPageRouter activeCat={bc} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage}/>}</main><Footer go={setPage}/><ScrollToTop /><ScannerPromo go={setPage} page={page}/></div>;
+  const handleSearch=(q,cat)=>{setBq(q);setBc(cat||"");setPage("search");};
+  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><PageMeta page={page} category={bc} parts={ACTIVE_SEED_PARTS} /><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} onSearch={handleSearch} th={th} theme={theme} toggleTheme={toggleTheme}/><main style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPageRouter activeCat={bc} initialQuery={bq} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage}/>}</main><Footer go={setPage}/><ScrollToTop /><ScannerPromo go={setPage} page={page}/></div>;
 }
