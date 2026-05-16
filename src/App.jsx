@@ -3215,8 +3215,8 @@ function BuilderFPS({gpu,cpu,ram}){
       <div style={{display:"flex",gap:10}}>
         {[{t:"Excellent",f:"144+",c:"var(--mint)"},{t:"Great",f:"100+",c:"var(--sky)"},{t:"Smooth",f:"60+",c:"var(--amber)"},{t:"Playable",f:"30+",c:"var(--rose)"}].map(x=>
           <div key={x.t} style={{display:"flex",alignItems:"center",gap:3}}>
-            <div style={{width:6,height:6,borderRadius:2,background:x.c}}/>
-            <span style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--dim)"}}>{x.t} ({x.f})</span>
+            <div style={{width:8,height:8,borderRadius:2,background:x.c}}/>
+            <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--txt)",fontWeight:500}}>{x.t} ({x.f})</span>
           </div>
         )}
       </div>
