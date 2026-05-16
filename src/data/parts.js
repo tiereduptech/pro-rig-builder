@@ -4951,7 +4951,7 @@ export const PARTS = [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 62
+    "bench": 61
   },
   {
     "id": 10172,
@@ -26317,7 +26317,7 @@ export const PARTS = [
     "tdp": 225,
     "pciPwr": 2,
     "slots": 2,
-    "bench": 34,
+    "bench": 35,
     "cp": "SALE",
     "off": 50,
     "deals": {
@@ -26384,7 +26384,7 @@ export const PARTS = [
     "boost": 2617,
     "arch": "Blackwell",
     "type": "gaming",
-    "bench": 92,
+    "bench": 94,
     "deals": {
       "amazon": {
         "price": 1490,
@@ -26417,7 +26417,7 @@ export const PARTS = [
     "boost": 2452,
     "arch": "Blackwell",
     "type": "gaming",
-    "bench": 83,
+    "bench": 85,
     "deals": {
       "amazon": {
         "price": 1100,
@@ -26450,7 +26450,7 @@ export const PARTS = [
     "boost": 2512,
     "arch": "Blackwell",
     "type": "gaming",
-    "bench": 74,
+    "bench": 75,
     "deals": {
       "amazon": {
         "price": 636,
@@ -26483,7 +26483,7 @@ export const PARTS = [
     "boost": 2457,
     "arch": "Blackwell",
     "type": "gaming",
-    "bench": 58,
+    "bench": 59,
     "deals": {
       "amazon": {
         "price": 574,
@@ -26516,7 +26516,7 @@ export const PARTS = [
     "boost": 2407,
     "arch": "Blackwell",
     "type": "gaming",
-    "bench": 53,
+    "bench": 55,
     "deals": {
       "amazon": {
         "price": 349.99,
@@ -26549,7 +26549,7 @@ export const PARTS = [
     "boost": 2520,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 98,
+    "bench": 100,
     "deals": {
       "amazon": {
         "price": 4280,
@@ -26582,7 +26582,7 @@ export const PARTS = [
     "boost": 2550,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 88,
+    "bench": 90,
     "deals": {
       "amazon": {
         "price": 1144.99,
@@ -26615,7 +26615,7 @@ export const PARTS = [
     "boost": 2505,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 88,
+    "bench": 90,
     "deals": {
       "amazon": {
         "price": 1569.99,
@@ -26648,7 +26648,7 @@ export const PARTS = [
     "boost": 2610,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 82,
+    "bench": 84,
     "deals": {
       "amazon": {
         "price": 889.99,
@@ -26681,7 +26681,7 @@ export const PARTS = [
     "boost": 2610,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 81,
+    "bench": 83,
     "deals": {
       "amazon": {
         "price": 623.61,
@@ -26714,7 +26714,7 @@ export const PARTS = [
     "boost": 2475,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 77,
+    "bench": 79,
     "deals": {
       "amazon": {
         "price": 609.99,
@@ -26747,7 +26747,7 @@ export const PARTS = [
     "boost": 2475,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 69,
+    "bench": 71,
     "deals": {
       "amazon": {
         "price": 500,
@@ -26780,7 +26780,7 @@ export const PARTS = [
     "boost": 2535,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 58,
+    "bench": 59,
     "deals": {
       "amazon": {
         "price": 574,
@@ -26813,7 +26813,7 @@ export const PARTS = [
     "boost": 2535,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 58,
+    "bench": 59,
     "deals": {
       "amazon": {
         "price": 357,
@@ -26846,7 +26846,7 @@ export const PARTS = [
     "boost": 2460,
     "arch": "Ada Lovelace",
     "type": "gaming",
-    "bench": 50,
+    "bench": 51,
     "deals": {
       "amazon": {
         "price": 320,
@@ -26879,7 +26879,7 @@ export const PARTS = [
     "boost": 1860,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 75,
+    "bench": 77,
     "deals": {
       "amazon": {
         "price": 1519.99,
@@ -26912,7 +26912,7 @@ export const PARTS = [
     "boost": 1695,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 68,
+    "bench": 70,
     "deals": {
       "amazon": {
         "price": 1519.99,
@@ -26945,7 +26945,7 @@ export const PARTS = [
     "boost": 1665,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 69,
+    "bench": 70,
     "deals": {
       "amazon": {
         "price": 609.99,
@@ -26978,7 +26978,7 @@ export const PARTS = [
     "boost": 1710,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 68,
+    "bench": 70,
     "deals": {
       "amazon": {
         "price": 609.99,
@@ -27011,7 +27011,7 @@ export const PARTS = [
     "boost": 1710,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 68,
+    "bench": 70,
     "deals": {
       "amazon": {
         "price": 400,
@@ -27044,7 +27044,7 @@ export const PARTS = [
     "boost": 1770,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 60,
+    "bench": 61,
     "deals": {
       "amazon": {
         "price": 400,
@@ -27077,7 +27077,7 @@ export const PARTS = [
     "boost": 1725,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 57,
+    "bench": 58,
     "deals": {
       "amazon": {
         "price": 389.99,
@@ -27110,7 +27110,7 @@ export const PARTS = [
     "boost": 1665,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 52,
+    "bench": 53,
     "deals": {
       "amazon": {
         "price": 339.99,
@@ -27143,7 +27143,7 @@ export const PARTS = [
     "boost": 1777,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 44,
+    "bench": 45,
     "deals": {
       "amazon": {
         "price": 419.22,
@@ -27176,7 +27176,7 @@ export const PARTS = [
     "boost": 1777,
     "arch": "Ampere",
     "type": "gaming",
-    "bench": 32,
+    "bench": 33,
     "deals": {
       "amazon": {
         "price": 230,
@@ -27209,7 +27209,7 @@ export const PARTS = [
     "boost": 2970,
     "arch": "RDNA 4",
     "type": "gaming",
-    "bench": 69,
+    "bench": 71,
     "deals": {
       "amazon": {
         "price": 789.99,
@@ -27242,7 +27242,7 @@ export const PARTS = [
     "boost": 2700,
     "arch": "RDNA 4",
     "type": "gaming",
-    "bench": 65,
+    "bench": 67,
     "deals": {
       "amazon": {
         "price": 620,
@@ -27275,7 +27275,7 @@ export const PARTS = [
     "boost": 2800,
     "arch": "RDNA 4",
     "type": "gaming",
-    "bench": 52,
+    "bench": 53,
     "deals": {
       "amazon": {
         "price": 460,
@@ -27306,7 +27306,7 @@ export const PARTS = [
     "boost": 2700,
     "arch": "RDNA 4",
     "type": "gaming",
-    "bench": 46,
+    "bench": 47,
     "deals": {
       "amazon": {
         "price": 460,
@@ -27337,7 +27337,7 @@ export const PARTS = [
     "boost": 2499,
     "arch": "RDNA 3",
     "type": "gaming",
-    "bench": 81,
+    "bench": 83,
     "deals": {
       "amazon": {
         "price": 680,
@@ -27370,7 +27370,7 @@ export const PARTS = [
     "boost": 2394,
     "arch": "RDNA 3",
     "type": "gaming",
-    "bench": 75,
+    "bench": 76,
     "deals": {
       "amazon": {
         "price": 680,
@@ -27403,7 +27403,7 @@ export const PARTS = [
     "boost": 2245,
     "arch": "RDNA 3",
     "type": "gaming",
-    "bench": 70,
+    "bench": 72,
     "deals": {
       "amazon": {
         "price": 680,
@@ -27436,7 +27436,7 @@ export const PARTS = [
     "boost": 2430,
     "arch": "RDNA 3",
     "type": "gaming",
-    "bench": 62,
+    "bench": 64,
     "deals": {
       "amazon": {
         "price": 579.99,
@@ -27469,7 +27469,7 @@ export const PARTS = [
     "boost": 2544,
     "arch": "RDNA 3",
     "type": "gaming",
-    "bench": 58,
+    "bench": 60,
     "deals": {
       "amazon": {
         "price": 409.99,
@@ -27502,7 +27502,7 @@ export const PARTS = [
     "boost": 2755,
     "arch": "RDNA 3",
     "type": "gaming",
-    "bench": 44,
+    "bench": 45,
     "deals": {
       "amazon": {
         "price": 409.99,
@@ -27535,7 +27535,7 @@ export const PARTS = [
     "boost": 2655,
     "arch": "RDNA 3",
     "type": "gaming",
-    "bench": 42,
+    "bench": 43,
     "deals": {
       "amazon": {
         "price": 320,
@@ -27568,7 +27568,7 @@ export const PARTS = [
     "boost": 2310,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 72,
+    "bench": 74,
     "deals": {
       "amazon": {
         "price": 539.99,
@@ -27601,7 +27601,7 @@ export const PARTS = [
     "boost": 2250,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 68,
+    "bench": 70,
     "deals": {
       "amazon": {
         "price": 700,
@@ -27666,7 +27666,7 @@ export const PARTS = [
     "boost": 2105,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 57,
+    "bench": 58,
     "deals": {
       "amazon": {
         "price": 450,
@@ -27699,7 +27699,7 @@ export const PARTS = [
     "boost": 2600,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 53,
+    "bench": 54,
     "deals": {
       "amazon": {
         "price": 409.99,
@@ -27732,7 +27732,7 @@ export const PARTS = [
     "boost": 2581,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 51,
+    "bench": 52,
     "deals": {
       "amazon": {
         "price": 369,
@@ -27765,7 +27765,7 @@ export const PARTS = [
     "boost": 2635,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 44,
+    "bench": 45,
     "deals": {
       "amazon": {
         "price": 329.99,
@@ -27798,7 +27798,7 @@ export const PARTS = [
     "boost": 2589,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 42,
+    "bench": 43,
     "deals": {
       "amazon": {
         "price": 299.97,
@@ -27831,7 +27831,7 @@ export const PARTS = [
     "boost": 2491,
     "arch": "RDNA 2",
     "type": "gaming",
-    "bench": 39,
+    "bench": 40,
     "deals": {
       "amazon": {
         "price": 424.99,
@@ -27864,7 +27864,7 @@ export const PARTS = [
     "boost": 2500,
     "arch": "Battlemage",
     "type": "gaming",
-    "bench": 36,
+    "bench": 37,
     "deals": {
       "amazon": {
         "price": 260,
@@ -27895,7 +27895,7 @@ export const PARTS = [
     "boost": 2100,
     "arch": "Alchemist",
     "type": "gaming",
-    "bench": 34,
+    "bench": 35,
     "deals": {
       "amazon": {
         "price": 399.99,
@@ -27926,7 +27926,7 @@ export const PARTS = [
     "boost": 2050,
     "arch": "Alchemist",
     "type": "gaming",
-    "bench": 32,
+    "bench": 33,
     "deals": {
       "amazon": {
         "price": 220,
@@ -27957,7 +27957,7 @@ export const PARTS = [
     "boost": 1700,
     "arch": "Alchemist",
     "type": "gaming",
-    "bench": 31,
+    "bench": 32,
     "deals": {
       "amazon": {
         "price": 199.99,
@@ -27988,7 +27988,7 @@ export const PARTS = [
     "boost": 2505,
     "arch": "Ada Lovelace",
     "type": "workstation",
-    "bench": 73,
+    "bench": 75,
     "deals": {
       "amazon": {
         "price": 7502.29,
@@ -28019,7 +28019,7 @@ export const PARTS = [
     "boost": 2550,
     "arch": "Ada Lovelace",
     "type": "workstation",
-    "bench": 77,
+    "bench": 80,
     "deals": {
       "amazon": {
         "price": 3900,
@@ -28050,7 +28050,7 @@ export const PARTS = [
     "boost": 2580,
     "arch": "Ada Lovelace",
     "type": "workstation",
-    "bench": 73,
+    "bench": 74,
     "deals": {
       "amazon": {
         "price": 2700,
@@ -28081,7 +28081,7 @@ export const PARTS = [
     "boost": 2175,
     "arch": "Ada Lovelace",
     "type": "workstation",
-    "bench": 61,
+    "bench": 62,
     "deals": {
       "amazon": {
         "price": 1945,
@@ -28112,7 +28112,7 @@ export const PARTS = [
     "boost": 2130,
     "arch": "Ada Lovelace",
     "type": "workstation",
-    "bench": 44,
+    "bench": 45,
     "deals": {
       "amazon": {
         "price": 719,
@@ -28569,7 +28569,7 @@ export const PARTS = [
       }
     },
     "cuda": 10752,
-    "bench": 92,
+    "bench": 96,
     "baseClock": 2295,
     "boostClock": 2617
   },
@@ -28602,7 +28602,7 @@ export const PARTS = [
       }
     },
     "cuda": 10752,
-    "bench": 92,
+    "bench": 95,
     "baseClock": 2295,
     "boostClock": 2617
   },
@@ -28635,7 +28635,7 @@ export const PARTS = [
       }
     },
     "cuda": 10752,
-    "bench": 92,
+    "bench": 95,
     "baseClock": 2295,
     "boostClock": 2617
   },
@@ -28668,7 +28668,7 @@ export const PARTS = [
       }
     },
     "cuda": 8960,
-    "bench": 83,
+    "bench": 87,
     "baseClock": 2295,
     "boostClock": 2452
   },
@@ -28701,7 +28701,7 @@ export const PARTS = [
       }
     },
     "cuda": 8960,
-    "bench": 83,
+    "bench": 86,
     "baseClock": 2295,
     "boostClock": 2452
   },
@@ -28734,7 +28734,7 @@ export const PARTS = [
       }
     },
     "cuda": 6144,
-    "bench": 74,
+    "bench": 77,
     "baseClock": 2325,
     "boostClock": 2512
   },
@@ -28767,7 +28767,7 @@ export const PARTS = [
       }
     },
     "cuda": 6144,
-    "bench": 74,
+    "bench": 77,
     "baseClock": 2325,
     "boostClock": 2512
   },
@@ -28800,7 +28800,7 @@ export const PARTS = [
       }
     },
     "cuda": 6144,
-    "bench": 74,
+    "bench": 77,
     "baseClock": 2325,
     "boostClock": 2512
   },
@@ -28833,7 +28833,7 @@ export const PARTS = [
       }
     },
     "cuda": 16384,
-    "bench": 98,
+    "bench": 100,
     "baseClock": 2235,
     "boostClock": 2520
   },
@@ -28866,7 +28866,7 @@ export const PARTS = [
       }
     },
     "cuda": 16384,
-    "bench": 98,
+    "bench": 100,
     "baseClock": 2235,
     "boostClock": 2520
   },
@@ -28899,7 +28899,7 @@ export const PARTS = [
       }
     },
     "cuda": 16384,
-    "bench": 98,
+    "bench": 100,
     "baseClock": 2235,
     "boostClock": 2520
   },
@@ -28932,7 +28932,7 @@ export const PARTS = [
       }
     },
     "cuda": 8448,
-    "bench": 82,
+    "bench": 85,
     "baseClock": 2340,
     "boostClock": 2610
   },
@@ -28965,7 +28965,7 @@ export const PARTS = [
       }
     },
     "cuda": 8448,
-    "bench": 82,
+    "bench": 85,
     "baseClock": 2340,
     "boostClock": 2610
   },
@@ -28998,7 +28998,7 @@ export const PARTS = [
       }
     },
     "cuda": 7168,
-    "bench": 77,
+    "bench": 80,
     "baseClock": 1980,
     "boostClock": 2475
   },
@@ -29031,7 +29031,7 @@ export const PARTS = [
       }
     },
     "cuda": 7168,
-    "bench": 77,
+    "bench": 80,
     "baseClock": 1980,
     "boostClock": 2475
   },
@@ -29064,7 +29064,7 @@ export const PARTS = [
       }
     },
     "cuda": 4352,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2310,
     "boostClock": 2535
   },
@@ -29097,7 +29097,7 @@ export const PARTS = [
       }
     },
     "cuda": 4352,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2310,
     "boostClock": 2535
   },
@@ -29130,7 +29130,7 @@ export const PARTS = [
       }
     },
     "cuda": 3072,
-    "bench": 50,
+    "bench": 52,
     "baseClock": 1830,
     "boostClock": 2460
   },
@@ -29163,7 +29163,7 @@ export const PARTS = [
       }
     },
     "cuda": 3072,
-    "bench": 50,
+    "bench": 52,
     "baseClock": 1830,
     "boostClock": 2460
   },
@@ -29196,7 +29196,7 @@ export const PARTS = [
       }
     },
     "cuda": 3072,
-    "bench": 50,
+    "bench": 51,
     "baseClock": 1830,
     "boostClock": 2460
   },
@@ -29357,7 +29357,7 @@ export const PARTS = [
       }
     },
     "sp": 6144,
-    "bench": 81,
+    "bench": 83,
     "baseClock": 1855,
     "boostClock": 2500
   },
@@ -29390,7 +29390,7 @@ export const PARTS = [
       }
     },
     "sp": 6144,
-    "bench": 81,
+    "bench": 83,
     "baseClock": 1855,
     "boostClock": 2500
   },
@@ -29423,7 +29423,7 @@ export const PARTS = [
       }
     },
     "sp": 3840,
-    "bench": 62,
+    "bench": 64,
     "baseClock": 1295,
     "boostClock": 2430
   },
@@ -29488,7 +29488,7 @@ export const PARTS = [
       }
     },
     "sp": 3840,
-    "bench": 62,
+    "bench": 64,
     "baseClock": 1295,
     "boostClock": 2430
   },
@@ -29521,7 +29521,7 @@ export const PARTS = [
       }
     },
     "sp": 3840,
-    "bench": 62,
+    "bench": 65,
     "baseClock": 1295,
     "boostClock": 2430
   },
@@ -29554,7 +29554,7 @@ export const PARTS = [
       }
     },
     "sp": 3456,
-    "bench": 58,
+    "bench": 60,
     "baseClock": 1700,
     "boostClock": 2544
   },
@@ -29587,7 +29587,7 @@ export const PARTS = [
       }
     },
     "sp": 3456,
-    "bench": 58,
+    "bench": 60,
     "baseClock": 1700,
     "boostClock": 2544
   },
@@ -29620,7 +29620,7 @@ export const PARTS = [
       }
     },
     "sp": 2048,
-    "bench": 42,
+    "bench": 43,
     "baseClock": 1720,
     "boostClock": 2655
   },
@@ -29653,7 +29653,7 @@ export const PARTS = [
       }
     },
     "sp": 2048,
-    "bench": 42,
+    "bench": 43,
     "baseClock": 1720,
     "boostClock": 2655
   },
@@ -29686,7 +29686,7 @@ export const PARTS = [
       }
     },
     "sp": 2048,
-    "bench": 42,
+    "bench": 43,
     "baseClock": 1720,
     "boostClock": 2655
   },
@@ -29763,7 +29763,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 130,
     "length": 225,
-    "bench": 32,
+    "bench": 33,
     "baseClock": 1552,
     "boostClock": 1777,
     "pcie": "4.0 x16",
@@ -29808,7 +29808,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 52,
+    "bench": 54,
     "pcie": "5.0 x16",
     "memType": "GDDR6"
   },
@@ -29845,7 +29845,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 304,
     "length": 290,
-    "bench": 69,
+    "bench": 72,
     "baseClock": 2400,
     "boostClock": 2970,
     "pcie": "5.0 x16"
@@ -29895,7 +29895,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 52,
+    "bench": 53,
     "pcie": "5.0 x16",
     "memType": "GDDR6"
   },
@@ -29936,7 +29936,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2407,
     "boostClock": 2572,
     "pcie": "5.0 x8",
@@ -30032,7 +30032,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "memType": "GDDR7"
   },
   {
@@ -30114,7 +30114,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -30163,7 +30163,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "pcie": "5.0 x16",
     "memType": "GDDR7"
   },
@@ -30216,7 +30216,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 304,
     "length": 290,
-    "bench": 69,
+    "bench": 72,
     "baseClock": 2400,
     "boostClock": 2970,
     "pcie": "5.0 x16",
@@ -30320,7 +30320,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "memType": "GDDR7"
   },
   {
@@ -30360,7 +30360,7 @@ export const PARTS = [
     "interface": "PCI Express 4.0",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 94,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -30398,7 +30398,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 304,
     "length": 290,
-    "bench": 69,
+    "bench": 72,
     "baseClock": 2400,
     "boostClock": 2970,
     "pcie": "5.0 x16"
@@ -30436,7 +30436,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 95,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -30487,7 +30487,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2407,
     "boostClock": 2572,
     "pcie": "5.0 x8",
@@ -30543,7 +30543,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2407,
     "boostClock": 2572,
     "pcie": "5.0 x8",
@@ -30582,7 +30582,7 @@ export const PARTS = [
     "interface": "PCI-Express x8",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2407,
     "boostClock": 2572,
     "pcie": "5.0 x16",
@@ -30621,7 +30621,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2310,
     "boostClock": 2535,
     "pcie": "4.0 x8",
@@ -30661,7 +30661,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 165,
     "length": 240,
-    "bench": 42,
+    "bench": 44,
     "baseClock": 1720,
     "boostClock": 2655,
     "pcie": "4.0 x8",
@@ -30699,7 +30699,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 52,
+    "bench": 54,
     "pcie": "5.0 x16",
     "memType": "GDDR6"
   },
@@ -30735,7 +30735,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 290,
-    "bench": 77,
+    "bench": 80,
     "baseClock": 1980,
     "boostClock": 2475,
     "pcie": "4.0 x16",
@@ -30775,7 +30775,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 200,
     "length": 285,
-    "bench": 69,
+    "bench": 72,
     "baseClock": 1920,
     "boostClock": 2475,
     "pcie": "4.0 x16",
@@ -30815,7 +30815,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 160,
     "length": 245,
-    "bench": 58,
+    "bench": 59,
     "baseClock": 2310,
     "boostClock": 2535,
     "pcie": "4.0 x8",
@@ -30853,7 +30853,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 290,
-    "bench": 77
+    "bench": 80
   },
   {
     "id": 30133,
@@ -30887,7 +30887,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 304,
     "length": 290,
-    "bench": 69,
+    "bench": 72,
     "baseClock": 2400,
     "boostClock": 2970,
     "pcie": "5.0 x16",
@@ -30926,7 +30926,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 263,
     "length": 267,
-    "bench": 62,
+    "bench": 65,
     "baseClock": 1295,
     "boostClock": 2430,
     "pcie": "4.0 x16",
@@ -30964,7 +30964,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 285,
     "length": 305,
-    "bench": 81,
+    "bench": 85,
     "baseClock": 2310,
     "boostClock": 2610,
     "pcie": "4.0 x16",
@@ -31001,7 +31001,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
-    "bench": 88,
+    "bench": 90,
     "baseClock": 2295,
     "boostClock": 2550,
     "pcie": "4.0 x16",
@@ -31038,7 +31038,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
-    "bench": 88,
+    "bench": 92,
     "baseClock": 2295,
     "boostClock": 2550,
     "pcie": "4.0 x16",
@@ -31072,7 +31072,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
-    "bench": 88,
+    "bench": 92,
     "baseClock": 2295,
     "boostClock": 2550,
     "pcie": "4.0 x16",
@@ -31112,7 +31112,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
-    "bench": 58,
+    "bench": 60,
     "baseClock": 2310,
     "boostClock": 2535,
     "pcie": "4.0 x8",
@@ -31150,7 +31150,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 130,
     "length": 210,
-    "bench": 23,
+    "bench": 24,
     "baseClock": 1607,
     "boostClock": 1845,
     "pcie": "4.0 x8",
@@ -31189,7 +31189,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
-    "bench": 88,
+    "bench": 92,
     "pcie": "4.0 x16",
     "memType": "GDDR6X"
   },
@@ -31224,7 +31224,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 315,
     "length": 276,
-    "bench": 75,
+    "bench": 76,
     "baseClock": 1500,
     "boostClock": 2400,
     "pcie": "4.0 x16"
@@ -31262,7 +31262,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 320,
     "length": 310,
-    "bench": 88,
+    "bench": 90,
     "baseClock": 2205,
     "boostClock": 2505,
     "pcie": "4.0 x16",
@@ -31301,7 +31301,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 290,
-    "bench": 77,
+    "bench": 80,
     "baseClock": 1980,
     "boostClock": 2475,
     "pcie": "4.0 x16",
@@ -31341,7 +31341,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2407,
     "boostClock": 2572,
     "pcie": "5.0 x16",
@@ -31380,7 +31380,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2407,
     "boostClock": 2572,
     "pcie": "5.0 x16",
@@ -31419,7 +31419,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2310,
     "boostClock": 2535,
     "pcie": "4.0 x16",
@@ -31458,7 +31458,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 115,
     "length": 245,
-    "bench": 50,
+    "bench": 51,
     "pcie": "4.0 x16",
     "memType": "GDDR6"
   },
@@ -31490,7 +31490,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 285,
     "length": 305,
-    "bench": 82,
+    "bench": 85,
     "baseClock": 2340,
     "boostClock": 2610,
     "pcie": "4.0 x16",
@@ -31529,7 +31529,7 @@ export const PARTS = [
     "interface": "PCI-Express x8",
     "tdp": 150,
     "length": 250,
-    "bench": 53,
+    "bench": 56,
     "memType": "GDDR7"
   },
   {
@@ -31564,7 +31564,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
-    "bench": 88,
+    "bench": 90,
     "baseClock": 2295,
     "boostClock": 2550,
     "pcie": "4.0 x16",
@@ -31602,7 +31602,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -31640,7 +31640,7 @@ export const PARTS = [
     "interface": "PCI-Express x4",
     "tdp": 450,
     "length": 336,
-    "bench": 98,
+    "bench": 100,
     "baseClock": 2235,
     "boostClock": 2520,
     "pcie": "4.0 x16",
@@ -31689,7 +31689,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 250,
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "baseClock": 2325,
     "boostClock": 2512,
     "pcie": "5.0 x16",
@@ -31728,7 +31728,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 285,
     "length": 305,
-    "bench": 82,
+    "bench": 85,
     "memType": "GDDR6X"
   },
   {
@@ -31763,7 +31763,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 290,
-    "bench": 77,
+    "bench": 79,
     "baseClock": 1980,
     "boostClock": 2475,
     "pcie": "4.0 x16",
@@ -31801,7 +31801,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
-    "bench": 58,
+    "bench": 59,
     "pcie": "4.0 x16",
     "memType": "GDDR6"
   },
@@ -31837,7 +31837,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 290,
-    "bench": 77,
+    "bench": 79,
     "baseClock": 1980,
     "boostClock": 2475,
     "pcie": "4.0 x16",
@@ -31876,7 +31876,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
-    "bench": 88
+    "bench": 90
   },
   {
     "id": 30160,
@@ -31909,7 +31909,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 355,
     "length": 287,
-    "bench": 81,
+    "bench": 83,
     "baseClock": 1855,
     "boostClock": 2500,
     "pcie": "4.0 x16"
@@ -31948,7 +31948,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
-    "bench": 58,
+    "bench": 59,
     "baseClock": 2310,
     "boostClock": 2535,
     "pcie": "4.0 x16",
@@ -31987,7 +31987,7 @@ export const PARTS = [
     "interface": "PCI-Express x8",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "memType": "GDDR7"
   },
   {
@@ -32062,7 +32062,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -32100,7 +32100,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 285,
     "length": 305,
-    "bench": 82,
+    "bench": 85,
     "pcie": "4.0 x16",
     "memType": "GDDR6X"
   },
@@ -32136,7 +32136,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 285,
     "length": 305,
-    "bench": 82,
+    "bench": 85,
     "baseClock": 2340,
     "boostClock": 2610,
     "pcie": "4.0 x16",
@@ -32175,7 +32175,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2310,
     "boostClock": 2535,
     "pcie": "4.0 x16",
@@ -32214,7 +32214,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 230,
     "length": 267,
-    "bench": 51,
+    "bench": 53,
     "baseClock": 2321,
     "boostClock": 2581,
     "pcie": "4.0 x16",
@@ -32264,7 +32264,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2407,
     "boostClock": 2572,
     "pcie": "5.0 x8",
@@ -32303,7 +32303,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 160,
     "length": 245,
-    "bench": 58,
+    "bench": 61,
     "pcie": "4.0 x16",
     "memType": "GDDR6"
   },
@@ -32339,7 +32339,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 285,
     "length": 305,
-    "bench": 82,
+    "bench": 85,
     "baseClock": 2340,
     "boostClock": 2610,
     "pcie": "4.0 x16",
@@ -32377,7 +32377,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2407,
     "boostClock": 2572,
     "pcie": "5.0 x16",
@@ -32434,7 +32434,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 94,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -32479,7 +32479,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2407,
     "boostClock": 2572,
     "pcie": "5.0 x8",
@@ -32556,7 +32556,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 320,
     "length": 310,
-    "bench": 88,
+    "bench": 92,
     "baseClock": 2295,
     "boostClock": 2550,
     "pcie": "4.0 x16",
@@ -32596,7 +32596,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 245,
     "length": 267,
-    "bench": 58,
+    "bench": 60,
     "baseClock": 1700,
     "boostClock": 2544,
     "pcie": "4.0 x16",
@@ -32646,7 +32646,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 285,
-    "bench": 65,
+    "bench": 68,
     "baseClock": 2070,
     "boostClock": 2520,
     "pcie": "5.0 x16",
@@ -32683,7 +32683,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 92
+    "bench": 94
   },
   {
     "id": 30180,
@@ -32757,7 +32757,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -32796,7 +32796,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 285,
     "length": 305,
-    "bench": 82,
+    "bench": 85,
     "baseClock": 2340,
     "boostClock": 2610,
     "pcie": "4.0 x16",
@@ -32833,7 +32833,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 200,
     "length": 285,
-    "bench": 69,
+    "bench": 71,
     "baseClock": 1920,
     "boostClock": 2475,
     "pcie": "4.0 x16",
@@ -32943,7 +32943,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 290,
-    "bench": 77,
+    "bench": 80,
     "baseClock": 1980,
     "boostClock": 2475,
     "pcie": "4.0 x16",
@@ -32981,7 +32981,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -33020,7 +33020,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 94,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -33115,7 +33115,7 @@ export const PARTS = [
     "interface": "PCI-Express x8",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "memType": "GDDR7"
   },
   {
@@ -33189,7 +33189,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -33229,7 +33229,7 @@ export const PARTS = [
     "interface": "PCI, PCI Express",
     "tdp": 220,
     "length": 290,
-    "bench": 77,
+    "bench": 79,
     "baseClock": 1980,
     "boostClock": 2475,
     "pcie": "4.0 x16",
@@ -33269,7 +33269,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 150,
     "length": 250,
-    "bench": 53,
+    "bench": 56,
     "baseClock": 2400,
     "boostClock": 2497,
     "pcie": "5.0 x8",
@@ -33310,7 +33310,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 250,
     "length": 290,
-    "bench": 74,
+    "bench": 75,
     "baseClock": 2325,
     "boostClock": 2512,
     "pcie": "5.0 x16",
@@ -33344,7 +33344,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 220,
     "length": 290,
-    "bench": 77,
+    "bench": 79,
     "baseClock": 1980,
     "boostClock": 2475,
     "pcie": "4.0 x16",
@@ -33383,7 +33383,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 60,
     "baseClock": 2407,
     "boostClock": 2572,
     "pcie": "5.0 x16",
@@ -33424,7 +33424,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -33463,7 +33463,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -33502,7 +33502,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 350,
     "length": 313,
-    "bench": 68,
+    "bench": 70,
     "baseClock": 1395,
     "boostClock": 1695,
     "pcie": "4.0 x16",
@@ -33547,7 +33547,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -33598,7 +33598,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 150,
     "length": 250,
-    "bench": 53,
+    "bench": 56,
     "baseClock": 2400,
     "boostClock": 2497,
     "pcie": "5.0 x8",
@@ -33637,7 +33637,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "baseClock": 2407,
     "boostClock": 2572,
     "pcie": "5.0 x16",
@@ -33676,7 +33676,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 220,
     "length": 285,
-    "bench": 65,
+    "bench": 68,
     "baseClock": 2070,
     "boostClock": 2520,
     "pcie": "5.0 x16",
@@ -33747,7 +33747,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 160,
     "length": 245,
-    "bench": 58,
+    "bench": 59,
     "baseClock": 2310,
     "boostClock": 2535,
     "pcie": "4.0 x8"
@@ -33784,7 +33784,7 @@ export const PARTS = [
     "interface": "PCI-Express x8",
     "tdp": 320,
     "length": 310,
-    "bench": 88,
+    "bench": 90,
     "baseClock": 2295,
     "boostClock": 2550,
     "pcie": "4.0 x16",
@@ -33901,7 +33901,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 94,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -33939,7 +33939,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 58
+    "bench": 59
   },
   {
     "id": 30212,
@@ -33971,7 +33971,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 304,
     "length": 290,
-    "bench": 69,
+    "bench": 71,
     "baseClock": 2400,
     "boostClock": 2970,
     "pcie": "5.0 x16",
@@ -34011,7 +34011,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 360,
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
@@ -34049,7 +34049,7 @@ export const PARTS = [
     "interface": "PCI Express",
     "tdp": 180,
     "length": 260,
-    "bench": 58,
+    "bench": 59,
     "baseClock": 2407,
     "boostClock": 2572,
     "pcie": "5.0 x8",
@@ -34167,7 +34167,7 @@ export const PARTS = [
     "interface": "PCI-Express x16",
     "tdp": 450,
     "length": 336,
-    "bench": 98,
+    "bench": 100,
     "baseClock": 2235,
     "boostClock": 2520,
     "pcie": "4.0 x16",
@@ -34202,7 +34202,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 235,
-    "bench": 44,
+    "bench": 45,
     "memType": "GDDR6"
   },
   {
@@ -34234,7 +34234,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 235,
-    "bench": 44,
+    "bench": 45,
     "memType": "GDDR6"
   },
   {
@@ -34266,7 +34266,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 240,
-    "bench": 44,
+    "bench": 45,
     "memType": "GDDR6"
   },
   {
@@ -34298,7 +34298,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 245,
-    "bench": 58,
+    "bench": 59,
     "memType": "GDDR6"
   },
   {
@@ -34330,7 +34330,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 245,
-    "bench": 58,
+    "bench": 61,
     "memType": "GDDR6"
   },
   {
@@ -34373,7 +34373,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 225,
-    "bench": 32,
+    "bench": 33,
     "memType": "GDDR6"
   },
   {
@@ -34405,7 +34405,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 225,
-    "bench": 32,
+    "bench": 33,
     "memType": "GDDR6"
   },
   {
@@ -34437,7 +34437,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 240,
-    "bench": 42,
+    "bench": 43,
     "memType": "GDDR6"
   },
   {
@@ -34474,7 +34474,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 270,
-    "bench": 41
+    "bench": 42
   },
   {
     "id": 30227,
@@ -34516,7 +34516,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3-slot",
     "length": 310,
-    "bench": 92,
+    "bench": 95,
     "memType": "GDDR7"
   },
   {
@@ -34559,7 +34559,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3-slot",
     "length": 310,
-    "bench": 92,
+    "bench": 94,
     "memType": "GDDR7"
   },
   {
@@ -34655,7 +34655,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "memType": "GDDR7"
   },
   {
@@ -34687,7 +34687,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "memType": "GDDR7"
   },
   {
@@ -34729,7 +34729,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 87,
     "memType": "GDDR7"
   },
   {
@@ -34783,7 +34783,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 87,
     "memType": "GDDR7"
   },
   {
@@ -34825,7 +34825,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 85,
     "memType": "GDDR7"
   },
   {
@@ -34878,7 +34878,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 75,
     "memType": "GDDR7"
   },
   {
@@ -34921,7 +34921,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "memType": "GDDR7"
   },
   {
@@ -34953,7 +34953,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "memType": "GDDR7"
   },
   {
@@ -34996,7 +34996,7 @@ export const PARTS = [
     "pcie": "Gen4",
     "slots": "2-slot",
     "length": 225,
-    "bench": 32,
+    "bench": 33,
     "memType": "GDDR6"
   },
   {
@@ -35039,7 +35039,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "memType": "GDDR7"
   },
   {
@@ -35146,7 +35146,7 @@ export const PARTS = [
     "slots": "2-slot",
     "tdp": 150,
     "length": 270,
-    "bench": 36,
+    "bench": 38,
     "memType": "GDDR6"
   },
   {
@@ -35264,7 +35264,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "memType": "GDDR7"
   },
   {
@@ -35307,7 +35307,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "memType": "GDDR7"
   },
   {
@@ -35339,7 +35339,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3-slot",
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "memType": "GDDR7"
   },
   {
@@ -35466,7 +35466,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.7-slot",
     "length": 290,
-    "bench": 69,
+    "bench": 72,
     "memType": "GDDR6"
   },
   {
@@ -35498,7 +35498,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 87,
     "memType": "GDDR7"
   },
   {
@@ -35540,7 +35540,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 87,
     "memType": "GDDR7"
   },
   {
@@ -35583,7 +35583,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 87,
     "memType": "GDDR7"
   },
   {
@@ -35626,7 +35626,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 87,
     "memType": "GDDR7"
   },
   {
@@ -35669,7 +35669,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 87,
     "memType": "GDDR7"
   },
   {
@@ -35712,7 +35712,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "memType": "GDDR7"
   },
   {
@@ -35744,7 +35744,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 86,
     "memType": "GDDR7"
   },
   {
@@ -35776,7 +35776,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "memType": "GDDR7"
   },
   {
@@ -35819,7 +35819,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "memType": "GDDR7"
   },
   {
@@ -35851,7 +35851,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 87,
     "memType": "GDDR7"
   },
   {
@@ -35894,7 +35894,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 87,
     "memType": "GDDR7"
   },
   {
@@ -35926,7 +35926,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 290,
-    "bench": 69,
+    "bench": 72,
     "memType": "GDDR6"
   },
   {
@@ -35958,7 +35958,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 285,
-    "bench": 65,
+    "bench": 68,
     "memType": "GDDR6"
   },
   {
@@ -35990,7 +35990,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 290,
-    "bench": 69,
+    "bench": 71,
     "memType": "GDDR6"
   },
   {
@@ -36022,7 +36022,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 290,
-    "bench": 69,
+    "bench": 71,
     "memType": "GDDR6"
   },
   {
@@ -36064,7 +36064,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 285,
-    "bench": 65,
+    "bench": 68,
     "memType": "GDDR6"
   },
   {
@@ -36096,7 +36096,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 290,
-    "bench": 69,
+    "bench": 72,
     "memType": "GDDR6"
   },
   {
@@ -36139,7 +36139,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 87,
     "memType": "GDDR7"
   },
   {
@@ -36171,7 +36171,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 285,
-    "bench": 65,
+    "bench": 68,
     "memType": "GDDR6"
   },
   {
@@ -36203,7 +36203,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 290,
-    "bench": 69,
+    "bench": 72,
     "memType": "GDDR6"
   },
   {
@@ -36245,7 +36245,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.7-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "memType": "GDDR7"
   },
   {
@@ -36288,7 +36288,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "memType": "GDDR7"
   },
   {
@@ -36331,7 +36331,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "memType": "GDDR7"
   },
   {
@@ -36363,7 +36363,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "memType": "GDDR7"
   },
   {
@@ -36395,7 +36395,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 58,
+    "bench": 59,
     "memType": "GDDR7"
   },
   {
@@ -36427,7 +36427,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "memType": "GDDR7"
   },
   {
@@ -36459,7 +36459,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "memType": "GDDR7"
   },
   {
@@ -36491,7 +36491,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "memType": "GDDR7"
   },
   {
@@ -36523,7 +36523,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "memType": "GDDR7"
   },
   {
@@ -36555,7 +36555,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "memType": "GDDR7"
   },
   {
@@ -36598,7 +36598,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 250,
-    "bench": 53,
+    "bench": 55,
     "memType": "GDDR7"
   },
   {
@@ -36630,7 +36630,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 58,
+    "bench": 59,
     "memType": "GDDR7"
   },
   {
@@ -36662,7 +36662,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "memType": "GDDR7"
   },
   {
@@ -36694,7 +36694,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 87,
     "memType": "GDDR7"
   },
   {
@@ -36736,7 +36736,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 53,
+    "bench": 56,
     "memType": "GDDR7"
   },
   {
@@ -36778,7 +36778,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 53,
+    "bench": 55,
     "memType": "GDDR7"
   },
   {
@@ -36810,7 +36810,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 250,
-    "bench": 53,
+    "bench": 56,
     "memType": "GDDR7"
   },
   {
@@ -36853,7 +36853,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 250,
-    "bench": 53,
+    "bench": 56,
     "memType": "GDDR7"
   },
   {
@@ -36896,7 +36896,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 53,
+    "bench": 56,
     "memType": "GDDR7"
   },
   {
@@ -36938,7 +36938,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 53,
+    "bench": 56,
     "memType": "GDDR7"
   },
   {
@@ -36981,7 +36981,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 53,
+    "bench": 56,
     "memType": "GDDR7"
   },
   {
@@ -37024,7 +37024,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 53,
+    "bench": 56,
     "memType": "GDDR7"
   },
   {
@@ -37067,7 +37067,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 53,
+    "bench": 56,
     "memType": "GDDR7"
   },
   {
@@ -37099,7 +37099,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3-slot",
     "length": 260,
-    "bench": 52,
+    "bench": 54,
     "memType": "GDDR6"
   },
   {
@@ -37131,7 +37131,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 260,
-    "bench": 52,
+    "bench": 53,
     "memType": "GDDR6"
   },
   {
@@ -37163,7 +37163,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.5-slot",
     "length": 260,
-    "bench": 52,
+    "bench": 53,
     "memType": "GDDR6"
   },
   {
@@ -37195,7 +37195,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 52,
+    "bench": 54,
     "memType": "GDDR6"
   },
   {
@@ -37237,7 +37237,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 250,
-    "bench": 53,
+    "bench": 56,
     "memType": "GDDR7"
   },
   {
@@ -37280,7 +37280,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 52,
+    "bench": 54,
     "memType": "GDDR6"
   },
   {
@@ -37322,7 +37322,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "memType": "GDDR7"
   },
   {
@@ -37354,7 +37354,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 52,
+    "bench": 54,
     "memType": "GDDR6"
   },
   {
@@ -37397,7 +37397,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "memType": "GDDR7"
   },
   {
@@ -37429,7 +37429,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "memType": "GDDR7"
   },
   {
@@ -37461,7 +37461,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "memType": "GDDR7"
   },
   {
@@ -37504,7 +37504,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "memType": "GDDR7"
   },
   {
@@ -37536,7 +37536,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.25-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "memType": "GDDR7"
   },
   {
@@ -37568,7 +37568,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3.25-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 87,
     "memType": "GDDR7"
   },
   {
@@ -37610,7 +37610,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 260,
-    "bench": 58,
+    "bench": 59,
     "memType": "GDDR7"
   },
   {
@@ -37653,7 +37653,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 240,
-    "bench": 44,
+    "bench": 46,
     "memType": "GDDR6"
   },
   {
@@ -37696,7 +37696,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 240,
-    "bench": 44,
+    "bench": 46,
     "memType": "GDDR6"
   },
   {
@@ -37728,7 +37728,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 240,
-    "bench": 44,
+    "bench": 46,
     "memType": "GDDR6"
   },
   {
@@ -37760,7 +37760,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 240,
-    "bench": 44,
+    "bench": 46,
     "memType": "GDDR6"
   },
   {
@@ -37803,7 +37803,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2-slot",
     "length": 240,
-    "bench": 44,
+    "bench": 46,
     "memType": "GDDR6"
   },
   {
@@ -37835,7 +37835,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "memType": "GDDR7"
   },
   {
@@ -37867,7 +37867,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "3-slot",
     "length": 260,
-    "bench": 52,
+    "bench": 54,
     "memType": "GDDR6"
   },
   {
@@ -37910,7 +37910,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 260,
-    "bench": 58,
+    "bench": 61,
     "memType": "GDDR7"
   },
   {
@@ -37941,7 +37941,7 @@ export const PARTS = [
     "slots": "3-slot",
     "tdp": 304,
     "length": 290,
-    "bench": 69,
+    "bench": 71,
     "memType": "GDDR6"
   },
   {
@@ -37972,7 +37972,7 @@ export const PARTS = [
     "slots": "3-slot",
     "tdp": 220,
     "length": 285,
-    "bench": 65,
+    "bench": 67,
     "memType": "GDDR6"
   },
   {
@@ -38003,7 +38003,7 @@ export const PARTS = [
     "slots": "3-slot",
     "tdp": 304,
     "length": 290,
-    "bench": 69,
+    "bench": 71,
     "memType": "GDDR6"
   },
   {
@@ -38046,7 +38046,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.7-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "memType": "GDDR7"
   },
   {
@@ -38089,7 +38089,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 290,
-    "bench": 74,
+    "bench": 77,
     "memType": "GDDR7"
   },
   {
@@ -38121,7 +38121,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 87,
     "memType": "GDDR7"
   },
   {
@@ -38164,7 +38164,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 305,
-    "bench": 83,
+    "bench": 87,
     "memType": "GDDR7"
   },
   {
@@ -38196,7 +38196,7 @@ export const PARTS = [
     "pcie": "Gen5",
     "slots": "2.5-slot",
     "length": 310,
-    "bench": 92,
+    "bench": 96,
     "memType": "GDDR7"
   },
   {
@@ -38217,7 +38217,7 @@ export const PARTS = [
       }
     },
     "tdp": 320,
-    "bench": 88,
+    "bench": 92,
     "vram": 16,
     "used": true,
     "condition": "used",
@@ -38246,7 +38246,7 @@ export const PARTS = [
       }
     },
     "tdp": 115,
-    "bench": 50,
+    "bench": 52,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -38274,7 +38274,7 @@ export const PARTS = [
       }
     },
     "tdp": 450,
-    "bench": 75,
+    "bench": 78,
     "vram": 24,
     "used": true,
     "condition": "used",
@@ -38303,7 +38303,7 @@ export const PARTS = [
       }
     },
     "tdp": 350,
-    "bench": 68,
+    "bench": 71,
     "vram": 24,
     "used": true,
     "condition": "used",
@@ -38332,7 +38332,7 @@ export const PARTS = [
       }
     },
     "tdp": 350,
-    "bench": 68,
+    "bench": 71,
     "vram": 24,
     "used": true,
     "condition": "used",
@@ -38360,7 +38360,7 @@ export const PARTS = [
       }
     },
     "tdp": 350,
-    "bench": 69,
+    "bench": 72,
     "vram": 12,
     "used": true,
     "condition": "used",
@@ -38389,7 +38389,7 @@ export const PARTS = [
       }
     },
     "tdp": 350,
-    "bench": 69,
+    "bench": 72,
     "vram": 12,
     "used": true,
     "condition": "used",
@@ -38417,7 +38417,7 @@ export const PARTS = [
       }
     },
     "tdp": 350,
-    "bench": 69,
+    "bench": 72,
     "vram": 12,
     "used": true,
     "condition": "used",
@@ -38446,7 +38446,7 @@ export const PARTS = [
       }
     },
     "tdp": 320,
-    "bench": 68,
+    "bench": 70,
     "vram": 10,
     "used": true,
     "condition": "used",
@@ -38475,7 +38475,7 @@ export const PARTS = [
       }
     },
     "tdp": 320,
-    "bench": 68,
+    "bench": 71,
     "vram": 10,
     "used": true,
     "condition": "used",
@@ -38503,7 +38503,7 @@ export const PARTS = [
       }
     },
     "tdp": 320,
-    "bench": 68,
+    "bench": 71,
     "vram": 10,
     "used": true,
     "condition": "used",
@@ -38532,7 +38532,7 @@ export const PARTS = [
       }
     },
     "tdp": 290,
-    "bench": 60,
+    "bench": 62,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -38561,7 +38561,7 @@ export const PARTS = [
       }
     },
     "tdp": 290,
-    "bench": 60,
+    "bench": 62,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -38590,7 +38590,7 @@ export const PARTS = [
       }
     },
     "tdp": 290,
-    "bench": 60,
+    "bench": 62,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -38619,7 +38619,7 @@ export const PARTS = [
       }
     },
     "tdp": 220,
-    "bench": 57,
+    "bench": 59,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -38648,7 +38648,7 @@ export const PARTS = [
       }
     },
     "tdp": 220,
-    "bench": 57,
+    "bench": 59,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -38676,7 +38676,7 @@ export const PARTS = [
       }
     },
     "tdp": 220,
-    "bench": 57,
+    "bench": 59,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -38705,7 +38705,7 @@ export const PARTS = [
       }
     },
     "tdp": 200,
-    "bench": 52,
+    "bench": 54,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -38734,7 +38734,7 @@ export const PARTS = [
       }
     },
     "tdp": 200,
-    "bench": 52,
+    "bench": 54,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -38762,7 +38762,7 @@ export const PARTS = [
       }
     },
     "tdp": 200,
-    "bench": 52,
+    "bench": 53,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -38791,7 +38791,7 @@ export const PARTS = [
       }
     },
     "tdp": 170,
-    "bench": 44,
+    "bench": 45,
     "vram": 12,
     "used": true,
     "condition": "used",
@@ -38820,7 +38820,7 @@ export const PARTS = [
       }
     },
     "tdp": 250,
-    "bench": 55,
+    "bench": 57,
     "vram": 11,
     "used": true,
     "condition": "used",
@@ -38847,7 +38847,7 @@ export const PARTS = [
       }
     },
     "tdp": 250,
-    "bench": 55,
+    "bench": 56,
     "vram": 11,
     "used": true,
     "condition": "used",
@@ -38875,7 +38875,7 @@ export const PARTS = [
       }
     },
     "tdp": 250,
-    "bench": 50,
+    "bench": 52,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -38903,7 +38903,7 @@ export const PARTS = [
       }
     },
     "tdp": 250,
-    "bench": 50,
+    "bench": 52,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -38930,7 +38930,7 @@ export const PARTS = [
       }
     },
     "tdp": 215,
-    "bench": 48,
+    "bench": 49,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -38957,7 +38957,7 @@ export const PARTS = [
       }
     },
     "tdp": 215,
-    "bench": 47,
+    "bench": 48,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -38985,7 +38985,7 @@ export const PARTS = [
       }
     },
     "tdp": 215,
-    "bench": 47,
+    "bench": 49,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39012,7 +39012,7 @@ export const PARTS = [
       }
     },
     "tdp": 215,
-    "bench": 47,
+    "bench": 49,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39040,7 +39040,7 @@ export const PARTS = [
       }
     },
     "tdp": 175,
-    "bench": 41,
+    "bench": 43,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39067,7 +39067,7 @@ export const PARTS = [
       }
     },
     "tdp": 175,
-    "bench": 41,
+    "bench": 42,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39094,7 +39094,7 @@ export const PARTS = [
       }
     },
     "tdp": 175,
-    "bench": 42,
+    "bench": 44,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39122,7 +39122,7 @@ export const PARTS = [
       }
     },
     "tdp": 175,
-    "bench": 42,
+    "bench": 44,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39149,7 +39149,7 @@ export const PARTS = [
       }
     },
     "tdp": 175,
-    "bench": 42,
+    "bench": 44,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39177,7 +39177,7 @@ export const PARTS = [
       }
     },
     "tdp": 160,
-    "bench": 41,
+    "bench": 42,
     "vram": 6,
     "used": true,
     "condition": "used",
@@ -39205,7 +39205,7 @@ export const PARTS = [
       }
     },
     "tdp": 160,
-    "bench": 41,
+    "bench": 43,
     "vram": 6,
     "used": true,
     "condition": "used",
@@ -39232,7 +39232,7 @@ export const PARTS = [
       }
     },
     "tdp": 300,
-    "bench": 68,
+    "bench": 70,
     "vram": 16,
     "length": 324,
     "baseClock": 1825,
@@ -39259,7 +39259,7 @@ export const PARTS = [
       }
     },
     "tdp": 300,
-    "bench": 64,
+    "bench": 67,
     "vram": 16,
     "used": true,
     "condition": "used",
@@ -39288,7 +39288,7 @@ export const PARTS = [
       }
     },
     "tdp": 230,
-    "bench": 51,
+    "bench": 53,
     "vram": 12,
     "used": true,
     "condition": "used",
@@ -39317,7 +39317,7 @@ export const PARTS = [
       }
     },
     "tdp": 160,
-    "bench": 42,
+    "bench": 44,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39346,7 +39346,7 @@ export const PARTS = [
       }
     },
     "tdp": 160,
-    "bench": 42,
+    "bench": 44,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39375,7 +39375,7 @@ export const PARTS = [
       }
     },
     "tdp": 160,
-    "bench": 42,
+    "bench": 43,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39404,7 +39404,7 @@ export const PARTS = [
       }
     },
     "tdp": 132,
-    "bench": 39,
+    "bench": 40,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39433,7 +39433,7 @@ export const PARTS = [
       }
     },
     "tdp": 107,
-    "bench": 25,
+    "bench": 26,
     "vram": 4,
     "used": true,
     "condition": "used",
@@ -39462,7 +39462,7 @@ export const PARTS = [
       }
     },
     "tdp": 107,
-    "bench": 25,
+    "bench": 26,
     "vram": 4,
     "used": true,
     "condition": "used",
@@ -39491,7 +39491,7 @@ export const PARTS = [
       }
     },
     "tdp": 225,
-    "bench": 42,
+    "bench": 44,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39520,7 +39520,7 @@ export const PARTS = [
       }
     },
     "tdp": 225,
-    "bench": 42,
+    "bench": 44,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39549,7 +39549,7 @@ export const PARTS = [
       }
     },
     "tdp": 225,
-    "bench": 42,
+    "bench": 44,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39578,7 +39578,7 @@ export const PARTS = [
       }
     },
     "tdp": 180,
-    "bench": 37,
+    "bench": 38,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39607,7 +39607,7 @@ export const PARTS = [
       }
     },
     "tdp": 130,
-    "bench": 23,
+    "bench": 24,
     "vram": 8,
     "used": true,
     "condition": "used",
@@ -39711,7 +39711,7 @@ export const PARTS = [
       }
     },
     "tdp": 190,
-    "bench": 41,
+    "bench": 43,
     "vram": 12,
     "length": 247,
     "memType": "GDDR6"
@@ -39734,7 +39734,7 @@ export const PARTS = [
       }
     },
     "tdp": 150,
-    "bench": 36,
+    "bench": 38,
     "vram": 10,
     "length": 247,
     "memType": "GDDR6"
@@ -39757,7 +39757,7 @@ export const PARTS = [
       }
     },
     "tdp": 225,
-    "bench": 34,
+    "bench": 36,
     "vram": 16,
     "length": 247,
     "slots": 2.5,
@@ -39781,7 +39781,7 @@ export const PARTS = [
       }
     },
     "tdp": 225,
-    "bench": 32,
+    "bench": 34,
     "vram": 8,
     "length": 247,
     "memType": "GDDR6"
@@ -39804,7 +39804,7 @@ export const PARTS = [
       }
     },
     "tdp": 75,
-    "bench": 16,
+    "bench": 17,
     "vram": 6,
     "length": 195,
     "memType": "GDDR6"
@@ -39827,7 +39827,7 @@ export const PARTS = [
       }
     },
     "tdp": 75,
-    "bench": 16,
+    "bench": 17,
     "vram": 6,
     "length": 165,
     "slots": 1,
@@ -42176,7 +42176,7 @@ export const PARTS = [
     "n": "FURY Beast 8GB 3200MHz DDR4 CL16 Desktop Memory Single Module KF432C16BB/8",
     "img": "https://m.media-amazon.com/images/I/51HMh7cUYiL._AC_SL1500_.jpg",
     "c": "RAM",
-    "bench": 25,
+    "bench": 21,
     "b": "Kingston",
     "pr": 85.5,
     "msrp": 85.5,
@@ -45921,7 +45921,7 @@ export const PARTS = [
     "n": "Fury Beast RGB 8GB 3200MT/s DDR4 CL16 DIMM Computer Memory KF432C16BB2A/8",
     "img": "https://m.media-amazon.com/images/I/61PGj6v9nsL._AC_SL1500_.jpg",
     "c": "RAM",
-    "bench": 25,
+    "bench": 21,
     "b": "Kingston",
     "pr": 107.48,
     "msrp": 107.48,
@@ -48969,7 +48969,7 @@ export const PARTS = [
     "n": "Fury Beast 8GB 5600MT/s DDR5 CL40 XMP 3.0 Ready Computer Memory Single Module KF556C40BB-8",
     "img": "https://m.media-amazon.com/images/I/611n3F+AQJL._AC_SL1500_.jpg",
     "c": "RAM",
-    "bench": 55,
+    "bench": 51,
     "b": "Kingston",
     "pr": 190,
     "msrp": 190,
@@ -51972,7 +51972,7 @@ export const PARTS = [
     "pcie": 4,
     "nand": "TLC",
     "value": 86,
-    "bench": 83,
+    "bench": 47,
     "upc": "08809433503070",
     "mpn": "HFS2T0GEJ9X"
   },
@@ -52147,7 +52147,7 @@ export const PARTS = [
     "n": "Kingston NV2 2TB NVMe Gen4",
     "img": "https://m.media-amazon.com/images/I/61imfctqG6L._AC_SL300_.jpg",
     "c": "Storage",
-    "bench": 22,
+    "bench": 23,
     "b": "Kingston",
     "pr": 74,
     "msrp": 74,
@@ -52405,7 +52405,7 @@ export const PARTS = [
     },
     "nand": "TLC",
     "value": 26,
-    "bench": 40
+    "bench": 4
   },
   {
     "id": 50027,
@@ -53208,7 +53208,7 @@ export const PARTS = [
     "n": "NV3 500GB M.2 2280 NVMe SSD | PCIe 4.0 Gen 4x4 | Up to 5000 MB/s | SNV3S/500G",
     "img": "https://m.media-amazon.com/images/I/71lCFgczaBL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 45,
+    "bench": 46,
     "b": "Kingston",
     "pr": 113,
     "msrp": 137.99,
@@ -53319,7 +53319,7 @@ export const PARTS = [
     "n": "T710 PCIe Gen5 NVMe 2TB SSD, Up to 14,900 MB/s",
     "img": "https://m.media-amazon.com/images/I/51WMvihHRvL._AC_SL1080_.jpg",
     "c": "Storage",
-    "bench": 85,
+    "bench": 86,
     "b": "Crucial",
     "pr": 323.99,
     "msrp": 323.99,
@@ -53410,7 +53410,7 @@ export const PARTS = [
     "n": "480GB A400 SATA 3 2.5\" Internal SSD SA400S37/480G - HDD Replacement for Increase Performance",
     "img": "https://m.media-amazon.com/images/I/81+9rUcRVTL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 3,
+    "bench": 4,
     "b": "Kingston",
     "pr": 109,
     "msrp": 137.99,
@@ -54658,7 +54658,7 @@ export const PARTS = [
     "n": "240GB A400 SATA 3 2.5\" Internal SSD SA400S37/240G - HDD Replacement for Increase Performance",
     "img": "https://m.media-amazon.com/images/I/81+9rUcRVTL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 3,
+    "bench": 4,
     "b": "Kingston",
     "pr": 78.99,
     "msrp": 88.99,
@@ -59065,7 +59065,7 @@ export const PARTS = [
     "n": "2TB SN770 NVMe Internal Gaming SSD Solid State Drive - Gen4 PCIe, M.2 2280, Up to 5",
     "img": "https://m.media-amazon.com/images/I/71Sr1zjPhwL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 38,
+    "bench": 39,
     "b": "WD_BLACK",
     "pr": 379.99,
     "msrp": 420.99,
@@ -59768,7 +59768,7 @@ export const PARTS = [
     "n": "FX991 M.2 SSD 4TB NVMe SSD M2 2280 PCIe Gen 4x4, Read Up to 7000MB/s, Internal Solid State Drive for PS5 Laptop Deskt...",
     "img": "https://m.media-amazon.com/images/I/71pclfBkY1L._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 52,
+    "bench": 50,
     "b": "Fikwot",
     "pr": 469.98,
     "msrp": 469.98,
@@ -60076,7 +60076,7 @@ export const PARTS = [
     "n": "2TB NVMe SSD PCIe Gen4 M.2 SSD for PS5, Up to 5000 MB/s, Internal Gaming 3D NAND SLC Cache Solid State Drive Upgrade ...",
     "img": "https://m.media-amazon.com/images/I/51uRiwMgHyL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 52,
+    "bench": 54,
     "b": "Fanxiang",
     "pr": 279.99,
     "msrp": 279.99,
@@ -60277,7 +60277,7 @@ export const PARTS = [
     "n": "FN955 2TB NVMe SSD M.2 2280 PCIe Gen4x4, Up to 7300MB/s, 3D NAND TLC Flash Internal Solid State Drive",
     "img": "https://m.media-amazon.com/images/I/610-BxOBoUL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 50,
+    "bench": 51,
     "b": "Fikwot",
     "pr": 289.99,
     "msrp": 289.99,
@@ -60916,7 +60916,7 @@ export const PARTS = [
     "n": "NV3 500GB M.2 2230 NVMe SSD | Up to 5000MB/s | SNV3SM3/500G",
     "img": "https://m.media-amazon.com/images/I/61zV51TQClL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 45,
+    "bench": 46,
     "b": "Kingston",
     "pr": 154.99,
     "msrp": 154.99,
@@ -62408,7 +62408,7 @@ export const PARTS = [
     "n": "NV3 4TB M.2 2280 NVMe SSD | PCIe 4.0 Gen 4x4 | Up to 6000 MB/s | SNV3S/4000G",
     "img": "https://m.media-amazon.com/images/I/61t1f2EbbjL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 45,
+    "bench": 46,
     "b": "Kingston",
     "pr": 589,
     "msrp": 824.99,
@@ -63510,7 +63510,7 @@ export const PARTS = [
     "n": "T500 2TB PCIe Gen4 NVMe Gaming PS5 SSD with Heatsink, Up to 7,400MB/s",
     "img": "https://m.media-amazon.com/images/I/51cl+g8zHpL._AC_SL1080_.jpg",
     "c": "Storage",
-    "bench": 52,
+    "bench": 54,
     "b": "Crucial",
     "pr": 429.99,
     "msrp": 429.99,
@@ -64159,7 +64159,7 @@ export const PARTS = [
     "n": "4TB SSD NVMe PCIe Gen4 M.2 SSD for PS5, Up to 5000 MB/s, Internal Gaming SSD for PS5",
     "img": "https://m.media-amazon.com/images/I/51pS27vJ21L._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 52,
+    "bench": 50,
     "b": "Fanxiang",
     "pr": 469.99,
     "msrp": 469.99,
@@ -64354,7 +64354,7 @@ export const PARTS = [
     "n": "2TB NM790 SSD with Heatsink PCIe Gen4 NVMe M.2 2280 Internal Solid State Drive, Up to 7400/6500 MB/s Read/Write, Comp...",
     "img": "https://m.media-amazon.com/images/I/51jEkHnfp1L._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 51,
+    "bench": 52,
     "b": "Lexar",
     "pr": 315,
     "msrp": 334.95,
@@ -64761,7 +64761,7 @@ export const PARTS = [
     "n": "4TB SSD NVMe M.2 2280 PCIe Gen4 x4 Internal Solid State Drive - Up to 7300MB/s, 4TB SSD PS5 Dynamic SLC Cache, PS5 Co...",
     "img": "https://m.media-amazon.com/images/I/51YCudndOnL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 52,
+    "bench": 50,
     "b": "Ediloca",
     "pr": 489.99,
     "msrp": 489.99,
@@ -64916,7 +64916,7 @@ export const PARTS = [
     "n": "2TB SSD NVMe M.2 2280 PCIe Gen4 x4 Internal Solid State Drive - Up to 7400MB/s, 2TB SSD PS5 Dynamic SLC Cache, PS5 Co...",
     "img": "https://m.media-amazon.com/images/I/51YCudndOnL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 52,
+    "bench": 54,
     "b": "Ediloca",
     "pr": 299.99,
     "msrp": 299.99,
@@ -65418,7 +65418,7 @@ export const PARTS = [
     "n": "4TB NVMe SSD PCIe Gen 4 Gaming SSD for PS5, Up to 7000MB/s M.2 2280 SSD Compatible with PS5 Storage Expansion, Intern...",
     "img": "https://m.media-amazon.com/images/I/51hyZdJCXCL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 52,
+    "bench": 50,
     "b": "Fanxiang",
     "pr": 459.99,
     "msrp": 459.99,
@@ -65596,7 +65596,7 @@ export const PARTS = [
     "n": "HB7450 2TB SSD for PS5 with Heatsink TLC NAND, PCIe 4.0 NVMe M.2 Internal Solid State Drive - Up to 7450MB/s, 3D Stor...",
     "img": "https://m.media-amazon.com/images/I/61RbmUKE8lL._AC_SL1364_.jpg",
     "c": "Storage",
-    "bench": 52,
+    "bench": 54,
     "b": "MOVE SPEED",
     "pr": 379.99,
     "msrp": 379.99,
@@ -65637,7 +65637,7 @@ export const PARTS = [
     "n": "Viper VP4300 Lite 4TB M.2 PCIe Gen4 x4 SSD, Compatible with PS5",
     "img": "https://m.media-amazon.com/images/I/51Usxke1QYL._AC_SL1200_.jpg",
     "c": "Storage",
-    "bench": 52,
+    "bench": 50,
     "b": "Patriot Memory",
     "pr": 465.99,
     "msrp": 465.99,
@@ -67005,7 +67005,7 @@ export const PARTS = [
     "n": "A93 2TB Storage Expansion for PS5 Console with Heatsink, Up to 7400mb/s, Gen 4 PCIe NVMe m.2 2280",
     "img": "https://m.media-amazon.com/images/I/71VxDMK++EL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 52,
+    "bench": 54,
     "b": "Addlink",
     "pr": 299.44,
     "msrp": 334.44,
@@ -68036,7 +68036,7 @@ export const PARTS = [
     "n": "CT2000T500 SSD5JP with Heatsink [New PS5 / PS5 Operation Verified] 2TB SSD PCIe Gen 4 (Maximum Transfer Rate 7,400 MB...",
     "img": "https://m.media-amazon.com/images/I/61MMFIc1NSL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 52,
+    "bench": 54,
     "b": "Crucial",
     "pr": 305.5,
     "msrp": 305.5,
@@ -68075,7 +68075,7 @@ export const PARTS = [
     "n": "4TB NQ780 SSD PCIe Gen4 NVMe M.2 2280 Internal Solid State Drive, Up to 7000/6000 MB/s Read/Write, Compatible with PS5",
     "img": "https://m.media-amazon.com/images/I/51B2JNztKhL._AC_SL1000_.jpg",
     "c": "Storage",
-    "bench": 52,
+    "bench": 50,
     "b": "Lexar",
     "pr": 519.99,
     "msrp": 519.99,
@@ -68600,7 +68600,7 @@ export const PARTS = [
     "n": "4TB NM1090 PRO PCIe Gen5 NVMe M.2 2280 Internal SSD, Up to 14,000 MB/s Read",
     "img": "https://m.media-amazon.com/images/I/710ffZy15oL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 85,
+    "bench": 78,
     "b": "Lexar",
     "pr": 754.05,
     "msrp": 754.05,
@@ -68651,7 +68651,7 @@ export const PARTS = [
     "n": "2TB NM1090 PRO PCIe Gen5 NVMe M.2 2280 Internal SSD, Up to 14,000 MB/s Read",
     "img": "https://m.media-amazon.com/images/I/710ffZy15oL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 83,
+    "bench": 84,
     "b": "Lexar",
     "pr": 388.53,
     "msrp": 388.53,
@@ -68742,7 +68742,7 @@ export const PARTS = [
     "n": "1TB NM1090 PRO PCIe Gen5 NVMe M.2 2280 Internal SSD, Up to 14,000 MB/s Read",
     "img": "https://m.media-amazon.com/images/I/710ffZy15oL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 79,
+    "bench": 80,
     "b": "Lexar",
     "pr": 249.99,
     "msrp": 249.99,
@@ -68998,7 +68998,7 @@ export const PARTS = [
     "n": "NVME M.2 SSD 4TB - PCIe gen 5.0x4 X15000 SSD M.2 2280, Seq. Speed Up to 14,300MB/s",
     "img": "https://m.media-amazon.com/images/I/71xkaQ9l8NL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 87,
+    "bench": 88,
     "b": "SIX",
     "pr": 659.99,
     "msrp": 659.99,
@@ -69037,7 +69037,7 @@ export const PARTS = [
     "n": "NVME M.2 SSD 1TB - PCIe gen 5.0x4 X15000 M.2 2280, Seq. Speed Up to 14,300MB/s",
     "img": "https://m.media-amazon.com/images/I/71xkaQ9l8NL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 87,
+    "bench": 88,
     "b": "SIX",
     "pr": 209.99,
     "msrp": 209.99,
@@ -69077,7 +69077,7 @@ export const PARTS = [
     "n": "NVME M.2 SSD 2TB - PCIe gen 5.0x4 X15000 SSD M.2 2280, Seq. Speed Up to 14,300MB/s",
     "img": "https://m.media-amazon.com/images/I/71xkaQ9l8NL._AC_SL1500_.jpg",
     "c": "Storage",
-    "bench": 87,
+    "bench": 88,
     "b": "SIX",
     "pr": 359.99,
     "msrp": 359.99,
@@ -151612,7 +151612,7 @@ export const PARTS = [
     "bench": 68
   },
   {
-    "id": 100315,
+    "id": 100315,bench:40,
     "c": "CPU",
     "n": "AMD Ryzen™ 7 5800XT 8-Core, 16-Thread Unlocked Desktop Processor",
     "b": "AMD",
@@ -151892,7 +151892,7 @@ export const PARTS = [
     "bench": 23
   },
   {
-    "id": 100326,
+    "id": 100326,bench:82,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 9 Desktop Processor 285 24 cores (8 P-cores + 16 E-cores) up to 5.6 GHz",
     "b": "Intel",
@@ -152170,7 +152170,7 @@ export const PARTS = [
     "bench": 55
   },
   {
-    "id": 100337,
+    "id": 100337,bench:98,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 7 Processor 270K Plus 24 cores (8 P-cores + 16 E-cores) up to 5.5 GHz",
     "b": "Intel",
@@ -152195,7 +152195,7 @@ export const PARTS = [
     "igpu": true
   },
   {
-    "id": 100338,
+    "id": 100338,bench:75,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 5 Processor 250KF Plus 18 cores (6 P-cores + 12 E-cores) up to 5.3 GHz",
     "b": "Intel",
@@ -152220,7 +152220,7 @@ export const PARTS = [
     "igpu": true
   },
   {
-    "id": 100339,
+    "id": 100339,bench:76,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 5 Processor 250K Plus 18 cores (6 P-cores + 12 E-cores) up to 5.3 GHz",
     "b": "Intel",
@@ -152245,7 +152245,7 @@ export const PARTS = [
     "igpu": true
   },
   {
-    "id": 100340,
+    "id": 100340,bench:71,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 7 Desktop Processor 265 20 cores (8 P-cores + 12 E-cores) up to 5.3 GHz",
     "b": "Intel",
@@ -152270,7 +152270,7 @@ export const PARTS = [
     "igpu": true
   },
   {
-    "id": 100341,
+    "id": 100341,bench:57,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 5 Desktop Processor 235 14 cores (6 P-cores + 8 E-cores) up to 5.0 GHz",
     "b": "Intel",
@@ -152295,7 +152295,7 @@ export const PARTS = [
     "igpu": true
   },
   {
-    "id": 100342,
+    "id": 100342,bench:71,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 7 Desktop Processor 265F 20 cores (8 P-cores + 12 E-cores) up to 5.3 GHz",
     "b": "Intel",
@@ -152320,7 +152320,7 @@ export const PARTS = [
     "igpu": true
   },
   {
-    "id": 100343,
+    "id": 100343,bench:44,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 5 Desktop Processor 225F 10 Cores (6 P-cores + 4 E-cores) up to 4.9 GHz",
     "b": "Intel",
@@ -152345,7 +152345,7 @@ export const PARTS = [
     "igpu": true
   },
   {
-    "id": 100344,
+    "id": 100344,bench:43,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 5 Desktop Processor 225 10 Cores (6 P-cores + 4 E-cores) up to 4.9 GHz",
     "b": "Intel",
@@ -152396,6 +152396,7 @@ export const PARTS = [
   {
     "id": 100346,
     "c": "RAM",
+    "bench": 40,
     "n": "Crucial 64GB DDR5 RAM Kit (2x32GB), 4800MHz CL40 Desktop Memory, UDIMM 288-Pin, Compatible with 13th Gen Intel Core and AMD Ryzen 7000 - CT2K32G48C40U5",
     "b": "Crucial",
     "pr": 809.95,
@@ -152416,6 +152417,7 @@ export const PARTS = [
   {
     "id": 100347,
     "c": "RAM",
+    "bench": 25,
     "n": "Crucial 32GB DDR4 RAM Kit (2x16GB), 3200MHz (PC4-25600) CL22 Desktop Memory, UDIMM 288-Pin, Downclockable to 2933/2666MHz, Compatible with Intel and AMD Ryzen - CT2K16G4DFRA32A",
     "b": "Crucial",
     "pr": 253.9,
@@ -152436,6 +152438,7 @@ export const PARTS = [
   {
     "id": 100348,
     "c": "RAM",
+    "bench": 30,
     "n": "【DDR4 RAM】 GIGASTONE Game PRO 32GB Kit (2x16GB) DDR4 3600MHz PC4-28800 CL 18-22-22-42 Intel XMP 2.0 AMD Ryzen 1.35V UDIMM 288 Pin Unbuffered Non ECC High Performance Gaming Desktop Memory - White",
     "b": "AMD",
     "pr": 248.99,
@@ -152456,6 +152459,7 @@ export const PARTS = [
   {
     "id": 100349,
     "c": "RAM",
+    "bench": 30,
     "n": "【RGB DDR4 RAM】GIGASTONE Game TURBO 32GB Kit (2x16GB) DDR4 3600MHz PC4-28800 CL 18-22-22-42 Intel XMP 2.0 AMD Ryzen 1.35V UDIMM 288 Pin Unbuffered Non ECC High Performance Gaming Desktop Memory -Black",
     "b": "AMD",
     "pr": 288.99,
@@ -152476,6 +152480,7 @@ export const PARTS = [
   {
     "id": 100350,
     "c": "RAM",
+    "bench": 30,
     "n": "【DDR4 RAM】 GIGASTONE Game PRO 16GB Kit (2x8GB) DDR4 3600MHz PC4-28800 CL 18-22-22-42 Intel XMP 2.0 AMD Ryzen 1.35V UDIMM 288 Pin Unbuffered Non ECC High Performance Gaming Desktop Memory - White",
     "b": "AMD",
     "pr": 128.99,
@@ -152496,6 +152501,7 @@ export const PARTS = [
   {
     "id": 100351,
     "c": "RAM",
+    "bench": 30,
     "n": "Corsair Vengeance LPX 32GB (2 x 16GB) DDR4 DRAM 3600MHz C18 AMD Ryzen Memory Kit - Black",
     "b": "Corsair",
     "pr": 444.44,
@@ -152516,6 +152522,7 @@ export const PARTS = [
   {
     "id": 100352,
     "c": "RAM",
+    "bench": 30,
     "n": "【DDR4 RAM】 GIGASTONE Game PRO 32GB Kit (4x8GB) DDR4 3600MHz PC4-28800 CL 18-22-22-42 Intel XMP 2.0 AMD Ryzen 1.35V UDIMM 288 Pin Unbuffered Non ECC High Performance Gaming Desktop Memory - Black",
     "b": "AMD",
     "pr": 228.99,
@@ -153785,7 +153792,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.412Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 92,
+    "bench": 94,
     "vram": 16
   },
   {
@@ -153809,7 +153816,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.412Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 92,
+    "bench": 96,
     "length": 120
   },
   {
@@ -153833,7 +153840,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.412Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 92
+    "bench": 96
   },
   {
     "id": 100403,
@@ -153856,7 +153863,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.412Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 92
+    "bench": 95
   },
   {
     "id": 100404,
@@ -153879,7 +153886,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.412Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 83
+    "bench": 87
   },
   {
     "id": 100405,
@@ -153902,7 +153909,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.412Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 74,
+    "bench": 75,
     "slots": 2.5
   },
   {
@@ -153926,7 +153933,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.413Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 74
+    "bench": 77
   },
   {
     "id": 100407,
@@ -153949,7 +153956,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.413Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 74,
+    "bench": 77,
     "slots": 2.4
   },
   {
@@ -153973,7 +153980,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.413Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 83
+    "bench": 87
   },
   {
     "id": 100409,
@@ -153996,7 +154003,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.413Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 74,
+    "bench": 75,
     "slots": 2.5
   },
   {
@@ -154020,7 +154027,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.413Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 83
+    "bench": 87
   },
   {
     "id": 100411,
@@ -154043,7 +154050,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.413Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 83
+    "bench": 87
   },
   {
     "id": 100412,
@@ -154066,7 +154073,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.413Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 53,
+    "bench": 56,
     "slots": 2
   },
   {
@@ -154090,7 +154097,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 53,
+    "bench": 56,
     "slots": 2.5
   },
   {
@@ -154114,7 +154121,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 53,
+    "bench": 56,
     "slots": 2
   },
   {
@@ -154138,7 +154145,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 58,
+    "bench": 61,
     "slots": 2
   },
   {
@@ -154162,7 +154169,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 53,
+    "bench": 56,
     "slots": 3.1
   },
   {
@@ -154186,7 +154193,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 53
+    "bench": 56
   },
   {
     "id": 100418,
@@ -154208,7 +154215,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 53,
+    "bench": 56,
     "vram": 8
   },
   {
@@ -154232,7 +154239,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 58
+    "bench": 61
   },
   {
     "id": 100420,
@@ -154254,7 +154261,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6X",
-    "bench": 77,
+    "bench": 80,
     "vram": 12
   },
   {
@@ -154278,7 +154285,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 74,
+    "bench": 77,
     "slots": 2.4
   },
   {
@@ -154302,7 +154309,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6X",
-    "bench": 69
+    "bench": 72
   },
   {
     "id": 100423,
@@ -154325,7 +154332,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6X",
-    "bench": 81
+    "bench": 85
   },
   {
     "id": 100424,
@@ -154348,7 +154355,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 69
+    "bench": 72
   },
   {
     "id": 100425,
@@ -154371,7 +154378,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 69
+    "bench": 71
   },
   {
     "id": 100426,
@@ -154394,7 +154401,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 65
+    "bench": 67
   },
   {
     "id": 100427,
@@ -154417,7 +154424,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 69
+    "bench": 72
   },
   {
     "id": 100428,
@@ -154440,7 +154447,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 69
+    "bench": 71
   },
   {
     "id": 100429,
@@ -154463,7 +154470,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 65
+    "bench": 68
   },
   {
     "id": 100430,
@@ -154486,7 +154493,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 69
+    "bench": 72
   },
   {
     "id": 100431,
@@ -154509,7 +154516,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 65
+    "bench": 68
   },
   {
     "id": 100432,
@@ -154532,10 +154539,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 69
+    "bench": 71
   },
   {
-    "id": 100433,
+    "id": 100433,bench:23,
     "c": "GPU",
     "n": "maxsun AMD Radeon RX 580 8GB 2048SP GDDR5 Computer Video Graphics Card GPU for PC Gaming 256-Bit DirectX 12 DVI, HDMI, DisplayPort Multi Monitors Extend (White)",
     "b": "AMD",
@@ -154557,7 +154564,7 @@ export const PARTS = [
     "vram": 8
   },
   {
-    "id": 100434,
+    "id": 100434,bench:7,
     "c": "GPU",
     "n": "maxsun AMD Radeon RX 550 4GB GDDR5 ITX Computer PC Gaming Video Graphics Card GPU 128-Bit DirectX 12 PCI Express X16 3.0 DVI-D Dual Link, HDMI, DisplayPort",
     "b": "AMD",
@@ -154599,7 +154606,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 81
+    "bench": 83
   },
   {
     "id": 100436,
@@ -154622,7 +154629,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 75
+    "bench": 76
   },
   {
     "id": 100437,
@@ -154643,7 +154650,7 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
-    "bench": 81,
+    "bench": 83,
     "memType": "GDDR6"
   },
   {
@@ -154667,7 +154674,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 75
+    "bench": 76
   },
   {
     "id": 100439,
@@ -154688,7 +154695,7 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
-    "bench": 75,
+    "bench": 76,
     "memType": "GDDR6X"
   },
   {
@@ -154712,7 +154719,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 70
+    "bench": 72
   },
   {
     "id": 100441,
@@ -154735,7 +154742,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 75
+    "bench": 76
   },
   {
     "id": 100442,
@@ -154757,7 +154764,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 75,
+    "bench": 78,
     "vram": 20
   },
   {
@@ -154781,10 +154788,10 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 81
+    "bench": 83
   },
   {
-    "id": 100444,
+    "id": 100444,bench:10,
     "c": "GPU",
     "n": "Radeon RX560 2G Graphics Card, with 4 HDMI Monitor Graphics Card,Computer PC GPU GDDR5 128 Bit DirectX 12 PCI Express X16 3.0, 4 Port Video Cards (AMD RX560 2G 4HDMI)",
     "b": "AMD",
@@ -154869,7 +154876,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.415Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 34,
+    "bench": 36,
     "vram": 16
   },
   {
@@ -154891,7 +154898,7 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
     "source": "amazon-discovery",
-    "bench": 41,
+    "bench": 42,
     "memType": "GDDR6"
   },
   {
@@ -154936,7 +154943,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T13:17:14.415Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 34,
+    "bench": 36,
     "vram": 16
   },
   {
@@ -155908,6 +155915,7 @@ export const PARTS = [
   {
     "id": 100492,
     "c": "RAM",
+    "bench": 65,
     "n": "Lexar Thor Z Series RGB DDR5 RAM 32GB Kit (2x16GB) 6000 MHz, DRAM 288-Pin UDIMM Support Intel XMP 3.0 & AMD EXPO, On-die ECC, PMIC, 1.35V, High-Performance PC Computer Memory for Gaming, AI",
     "b": "Lexar",
     "pr": 399.99,
@@ -155935,6 +155943,7 @@ export const PARTS = [
   {
     "id": 100493,
     "c": "RAM",
+    "bench": 65,
     "n": "Corsair Vengeance RGB 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL36 Dual Channel Desktop Memory Kit CMH32GX5M2M6000Z36 36-44-44-96",
     "b": "Corsair",
     "pr": 399,
@@ -155962,6 +155971,7 @@ export const PARTS = [
   {
     "id": 100494,
     "c": "RAM",
+    "bench": 65,
     "n": "TEAMGROUP T-Create Expert Overclocking 10L DDR5 32GB Kit (2 x 16GB) 6000MHz (PC5-48000) CL38-46-46-76 Intel XMP 3.0 & AMD Expo Compatible Desktop Memory Module Ram Black - CTCED532G6000HC38GDC01",
     "b": "TeamGroup",
     "pr": 374.99,
@@ -155988,6 +155998,7 @@ export const PARTS = [
   {
     "id": 100495,
     "c": "RAM",
+    "bench": 65,
     "n": "TEAMGROUP T-Create Expert Overclocking 10L DDR5 32GB Kit (2 x 16GB) 6000MHz (PC5-48000) CL38 Intel XMP 3.0 & AMD Expo Compatible Desktop Memory Module Ram - CTCED532G6000HC38ADC01",
     "b": "TeamGroup",
     "pr": 379.99,
@@ -156014,6 +156025,7 @@ export const PARTS = [
   {
     "id": 100496,
     "c": "RAM",
+    "bench": 65,
     "n": "Lexar ARES Gen2 RGB DDR5 RAM 32GB Kit (2x16GB) 6000MHz CL30, 288-Pin UDIMM Desktop Memory, PC Gaming Computer Memory, for Intel XMP 3.0/AMD EXPO/CL30-38-38-76/1.4V(LD5U16G60C30BR-RGD)",
     "b": "Lexar",
     "pr": 469.99,
@@ -156041,6 +156053,7 @@ export const PARTS = [
   {
     "id": 100497,
     "c": "RAM",
+    "bench": 75,
     "n": "Crucial Pro DDR5 RAM 32GB Kit (2x16GB) 6400MHz CL38, Overclocking Desktop Gaming Memory, Intel XMP 3.0 & AMD Expo Compatible – Black CP2K16G64C38U5B",
     "b": "Crucial",
     "pr": 399.99,
@@ -156067,6 +156080,7 @@ export const PARTS = [
   {
     "id": 100498,
     "c": "RAM",
+    "bench": 75,
     "n": "KLEVV CRAS V RGB DDR5 32GB (2x16GB) 6400MHz CL32 SK Hynix A-Die 1.35V Gaming Desktop Ram Memory XMP 3.0 / AMD Expo Ready - White (KD5AGUA80-64A320J)",
     "b": "AMD",
     "pr": 461.99,
@@ -156094,6 +156108,7 @@ export const PARTS = [
   {
     "id": 100499,
     "c": "RAM",
+    "bench": 65,
     "n": "TEAMGROUP T-Force Delta RGB DDR5 Ram 32GB (2x16GB) 6000MHz PC5-48000 CL30 Intel XMP 3.0 & AMD Expo Compatible Desktop Memory Module Ram White FF4D532G6000HC30DC01",
     "b": "TeamGroup",
     "pr": 489.99,
@@ -156121,6 +156136,7 @@ export const PARTS = [
   {
     "id": 100500,
     "c": "RAM",
+    "bench": 75,
     "n": "Crucial Pro DDR5 RAM 64GB Kit (2x32GB) 6400MHz CL40, Overclocking Desktop Gaming Memory, Intel XMP 3.0 & AMD Expo Compatible – Black CP2K32G64C40U5B",
     "b": "Crucial",
     "pr": 848.89,
@@ -156147,6 +156163,7 @@ export const PARTS = [
   {
     "id": 100501,
     "c": "RAM",
+    "bench": 85,
     "n": "TEAMGROUP T-Force Delta RGB DDR5 Ram 32GB Kit (2x16GB) 7200MHz (PC5-57600) CL34 Desktop Memory Module Ram (White) for 600 Series Chipset - FF4D532G7200HC34ADC01",
     "b": "TeamGroup",
     "pr": 619.99,
@@ -156174,6 +156191,7 @@ export const PARTS = [
   {
     "id": 100502,
     "c": "RAM",
+    "bench": 85,
     "n": "Kingston FURY Renegade RGB 32GB (2x16GB) 7200MT/s DDR5 CL38 DIMM Desktop Memory (Kit of 2) | Intel XMP 3.0 | Infrared Sync Technology | Overclocking Stability | KF572C38RSAK2-32",
     "b": "Kingston",
     "pr": 540,
@@ -156201,6 +156219,7 @@ export const PARTS = [
   {
     "id": 100503,
     "c": "RAM",
+    "bench": 85,
     "n": "KLEVV CRAS V RGB DDR5 32GB (2x16GB) 7200MHz CL34 SK Hynix A-Die 1.4V Gaming Desktop Ram Memory XMP 3.0 / AMD Expo Ready - White (KD5AGUA80-72B340J)",
     "b": "AMD",
     "pr": 464.99,
@@ -156228,6 +156247,7 @@ export const PARTS = [
   {
     "id": 100504,
     "c": "RAM",
+    "bench": 65,
     "n": "TEAMGROUP T-Create Expert Overclocking 10L DDR5 64GB Kit (2 x 32GB) 6000MHz (PC5-48000) CL34 Intel XMP 3.0 & AMD Expo Compatible Desktop Memory Module Ram White - CTCWD564G6000HC34BDC01",
     "b": "TeamGroup",
     "pr": 959.99,
@@ -156254,6 +156274,7 @@ export const PARTS = [
   {
     "id": 100505,
     "c": "RAM",
+    "bench": 65,
     "n": "CORSAIR Vengeance RGB RS DDR5 RAM 64GB (2x32GB) Up to 6000MHz CL40-50-50-96 1.35V AMD Expo Intel XMP Computer Desktop Memory – Gray (CMG64GX5M2D6000Z40)",
     "b": "Corsair",
     "pr": 849.99,
@@ -156281,6 +156302,7 @@ export const PARTS = [
   {
     "id": 100506,
     "c": "RAM",
+    "bench": 75,
     "n": "Crucial Pro DDR5 RAM 64GB Kit (2x32GB) 6400MHz CL40, Overclocking Desktop Gaming Memory, Intel XMP 3.0 & AMD Expo Compatible – White CP2K32G64C40U5W",
     "b": "Crucial",
     "pr": 799.99,
@@ -156307,6 +156329,7 @@ export const PARTS = [
   {
     "id": 100507,
     "c": "RAM",
+    "bench": 25,
     "n": "TEAMGROUP T-Force Vulcan Z DDR4 32GB Kit (2x16GB) 3200MHz (PC4-25600) CL16 Desktop Memory Module Ram (Gray) - TLZGD432G3200HC16FDC01",
     "b": "TeamGroup",
     "pr": 248.99,
@@ -156333,6 +156356,7 @@ export const PARTS = [
   {
     "id": 100508,
     "c": "RAM",
+    "bench": 30,
     "n": "PNY XLR8 Gaming 32GB (2x16GB) DDR4 DRAM 3600MHz (PC4-28800) CL18 1.35V Low Profile Dual Channel Desktop (DIMM) Memory Kit – MD32GK2D4360018LP",
     "b": "PNY",
     "pr": 309.99,
@@ -156359,6 +156383,7 @@ export const PARTS = [
   {
     "id": 100509,
     "c": "RAM",
+    "bench": 26,
     "n": "TEAMGROUP T-Force Vulcan Z DDR4 16GB Kit (2x8GB) 3600MHz (PC4-28800) CL18 Desktop Memory Module Ram TLZGD416G3600HC18JDC01 - Gray",
     "b": "TeamGroup",
     "pr": 149.99,
@@ -156385,6 +156410,7 @@ export const PARTS = [
   {
     "id": 100510,
     "c": "RAM",
+    "bench": 30,
     "n": "Patriot Viper Steel RGB DDR4 RAM 64GB (2X32GB) 3600MHz CL20 1.35v UDIMM Desktop Gaming Memory Kit Compatible with XMP - PVSR464G360C0K",
     "b": "Patriot",
     "pr": 549.99,
@@ -156412,6 +156438,7 @@ export const PARTS = [
   {
     "id": 100511,
     "c": "RAM",
+    "bench": 30,
     "n": "TEAMGROUP T-Force Vulcan Z DDR4 16GB Kit (2x8GB) 3600MHz (PC4-28800) CL18 Desktop Memory Module Ram Black TLZBD416G3600HC18JDC01",
     "b": "TeamGroup",
     "pr": 150.99,
@@ -156438,6 +156465,7 @@ export const PARTS = [
   {
     "id": 100512,
     "c": "RAM",
+    "bench": 30,
     "n": "G.Skill DDR4 32GB PC 3600 CL18 KIT (2x16GB) 32GTZR Tri/RGB",
     "b": "G.Skill",
     "pr": 365,
@@ -156465,6 +156493,7 @@ export const PARTS = [
   {
     "id": 100513,
     "c": "RAM",
+    "bench": 30,
     "n": "G.Skill F4-3600C16Q-32GTZR 32 GB (8 GB x 4) Trident Z RGB Series DDR4 3600 MHz Dual Channel Memory Kit - Black with Full Length RGB LED Light bar",
     "b": "G.Skill",
     "pr": 399.99,
@@ -156490,6 +156519,7 @@ export const PARTS = [
   {
     "id": 100514,
     "c": "RAM",
+    "bench": 65,
     "n": "CORSAIR Vengeance RGB RS DDR5 RAM 16GB (2x8GB) Up to 6000MHz CL36-44-44-96 1.35V AMD EXPO Intel XMP Computer Desktop Memory – Gray (CMG16GX5M2E6000Z36)",
     "b": "Corsair",
     "pr": 254.99,
@@ -156541,7 +156571,7 @@ export const PARTS = [
     "formFactor": "DIMM"
   },
   {
-    "id": 100516,
+    "id": 100516,bench:65,
     "c": "Storage",
     "n": "WD_Black 2TB SN770 NVMe Internal Gaming SSD Solid State Drive - Gen4 PCIe, M.2 2280, Up to 5,150 MB/s - WDS200T3X0E - (Renewed)",
     "b": "Western Digital",
@@ -156566,7 +156596,7 @@ export const PARTS = [
     "formFactor": "M.2 2280"
   },
   {
-    "id": 100517,
+    "id": 100517,bench:51,
     "c": "Storage",
     "n": "WD_Black SN7100 4TB NVMe SSD - Gen4 PCIe, M.2 2280, Up to 7,000 MB/s Read Speed, Up to 6,700 MB/s Write Speed, Next Gen TLC 3D NAND, for Laptops, Handheld Gaming Devices - WDS400T4X0E",
     "b": "Western Digital",
@@ -156618,7 +156648,7 @@ export const PARTS = [
     "formFactor": "M.2"
   },
   {
-    "id": 100519,
+    "id": 100519,bench:14,
     "c": "Storage",
     "n": "Intel 660p Series M.2 2280 1TB PCIe NVMe 3.0 x4 3D2, QLC Internal Solid State Drive (SSD) SSDPEKNW010T8X1",
     "b": "Intel",
@@ -158857,7 +158887,7 @@ export const PARTS = [
     "bench": 29
   },
   {
-    "id": 100613,
+    "id": 100613,bench:38,
     "c": "CPU",
     "n": "AMD Ryzen™ 5 7500F",
     "b": "AMD",
@@ -159774,7 +159804,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 6,
     "memType": "GDDR6",
-    "bench": 32
+    "bench": 33
   },
   {
     "id": 100652,
@@ -159797,7 +159827,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 6,
     "memType": "GDDR6",
-    "bench": 32
+    "bench": 33
   },
   {
     "id": 100653,
@@ -159820,7 +159850,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 32
+    "bench": 33
   },
   {
     "id": 100654,
@@ -159843,7 +159873,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 6,
     "memType": "GDDR6",
-    "bench": 32,
+    "bench": 33,
     "slots": 2
   },
   {
@@ -159867,7 +159897,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 6,
     "memType": "GDDR6",
-    "bench": 32
+    "bench": 33
   },
   {
     "id": 100656,
@@ -159890,7 +159920,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6X",
-    "bench": 52,
+    "bench": 54,
     "slots": 2
   },
   {
@@ -159912,7 +159942,7 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.772Z",
     "source": "amazon-discovery",
-    "bench": 52,
+    "bench": 53,
     "vram": 8,
     "memType": "GDDR6"
   },
@@ -159937,7 +159967,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 52
+    "bench": 53
   },
   {
     "id": 100659,
@@ -159958,7 +159988,7 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.773Z",
     "source": "amazon-discovery",
-    "bench": 33,
+    "bench": 34,
     "vram": 6,
     "memType": "GDDR6"
   },
@@ -160004,7 +160034,7 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.773Z",
     "source": "amazon-discovery",
-    "bench": 33,
+    "bench": 34,
     "vram": 6,
     "memType": "GDDR6"
   },
@@ -160029,7 +160059,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 6,
     "memType": "GDDR6",
-    "bench": 32
+    "bench": 34
   },
   {
     "id": 100663,
@@ -160052,7 +160082,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 6,
     "memType": "GDDR6",
-    "bench": 33
+    "bench": 34
   },
   {
     "id": 100664,
@@ -160096,7 +160126,7 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.773Z",
     "source": "amazon-discovery",
-    "bench": 30,
+    "bench": 31,
     "vram": 6,
     "memType": "GDDR5"
   },
@@ -160120,7 +160150,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.773Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 32
+    "bench": 34
   },
   {
     "id": 100667,
@@ -160143,7 +160173,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 39
+    "bench": 40
   },
   {
     "id": 100668,
@@ -160166,10 +160196,10 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 42
+    "bench": 43
   },
   {
-    "id": 100669,
+    "id": 100669,bench:23,
     "c": "GPU",
     "n": "MOUGOL AMD Radeon RX 580 Gaming Graphics Card, 8GB GDDR5 256-Bit, Dual Fan Cooling, DP/HDMI/DVI Video Output, PCI Express X16 3.0, Computer GPU Support Windows 11/10/7 Desktop PC",
     "b": "AMD",
@@ -160211,7 +160241,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 39
+    "bench": 40
   },
   {
     "id": 100671,
@@ -160234,7 +160264,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6",
-    "bench": 52
+    "bench": 54
   },
   {
     "id": 100672,
@@ -160257,7 +160287,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 42
+    "bench": 43
   },
   {
     "id": 100673,
@@ -160280,7 +160310,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 42
+    "bench": 44
   },
   {
     "id": 100674,
@@ -160303,7 +160333,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 39
+    "bench": 40
   },
   {
     "id": 100675,
@@ -160326,7 +160356,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 39
+    "bench": 40
   },
   {
     "id": 100676,
@@ -160349,7 +160379,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 12,
     "memType": "GDDR6",
-    "bench": 51
+    "bench": 52
   },
   {
     "id": 100677,
@@ -160372,7 +160402,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 12,
     "memType": "GDDR6",
-    "bench": 51
+    "bench": 52
   },
   {
     "id": 100678,
@@ -160395,7 +160425,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 52
+    "bench": 54
   },
   {
     "id": 100679,
@@ -160418,7 +160448,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 12,
     "memType": "GDDR6",
-    "bench": 51
+    "bench": 52
   },
   {
     "id": 100680,
@@ -160441,7 +160471,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 12,
     "memType": "GDDR6",
-    "bench": 51
+    "bench": 52
   },
   {
     "id": 100681,
@@ -160464,7 +160494,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 12,
     "memType": "GDDR6",
-    "bench": 51
+    "bench": 52
   },
   {
     "id": 100682,
@@ -160487,7 +160517,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 12,
     "memType": "GDDR6",
-    "bench": 51
+    "bench": 53
   },
   {
     "id": 100683,
@@ -160510,7 +160540,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 12,
     "memType": "GDDR6",
-    "bench": 51
+    "bench": 53
   },
   {
     "id": 100684,
@@ -160533,7 +160563,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 12,
     "memType": "GDDR6",
-    "bench": 51,
+    "bench": 53,
     "slots": 2.9
   },
   {
@@ -160557,7 +160587,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 12,
     "memType": "GDDR6",
-    "bench": 51
+    "bench": 52
   },
   {
     "id": 100686,
@@ -160580,7 +160610,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 12,
     "memType": "GDDR6",
-    "bench": 51
+    "bench": 52
   },
   {
     "id": 100687,
@@ -160602,7 +160632,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.774Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 42,
+    "bench": 44,
     "vram": 8
   },
   {
@@ -160628,7 +160658,7 @@ export const PARTS = [
     "memType": "GDDR3"
   },
   {
-    "id": 100689,
+    "id": 100689,bench:7,
     "c": "GPU",
     "n": "VISIONTEK AMD Radeon RX 550 SFF Single Fan 4GB GDDR5 PCIE 3.0 Graphics Card",
     "b": "AMD",
@@ -160670,10 +160700,10 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6",
-    "bench": 69
+    "bench": 71
   },
   {
-    "id": 100691,
+    "id": 100691,bench:7,
     "c": "GPU",
     "n": "VisionTek AMD Radeon RX 550 Graphic Card - 4 GB GDDR5 - Full-Height",
     "b": "AMD",
@@ -160715,7 +160745,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 42
+    "bench": 43
   },
   {
     "id": 100693,
@@ -160738,7 +160768,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6",
-    "bench": 57
+    "bench": 58
   },
   {
     "id": 100694,
@@ -160761,7 +160791,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6",
-    "bench": 57
+    "bench": 58
   },
   {
     "id": 100695,
@@ -160784,7 +160814,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6",
-    "bench": 52
+    "bench": 54
   },
   {
     "id": 100696,
@@ -160807,7 +160837,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6",
-    "bench": 57
+    "bench": 58
   },
   {
     "id": 100697,
@@ -160830,7 +160860,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6",
-    "bench": 52
+    "bench": 53
   },
   {
     "id": 100698,
@@ -160853,7 +160883,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6",
-    "bench": 64
+    "bench": 66
   },
   {
     "id": 100699,
@@ -160876,7 +160906,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6",
-    "bench": 52
+    "bench": 54
   },
   {
     "id": 100700,
@@ -160899,7 +160929,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6",
-    "bench": 57
+    "bench": 58
   },
   {
     "id": 100701,
@@ -160922,7 +160952,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6",
-    "bench": 64
+    "bench": 67
   },
   {
     "id": 100702,
@@ -160945,7 +160975,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6",
-    "bench": 57
+    "bench": 58
   },
   {
     "id": 100703,
@@ -160967,7 +160997,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.774Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 16,
+    "bench": 17,
     "vram": 6
   },
   {
@@ -160991,7 +161021,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 6,
     "memType": "GDDR6",
-    "bench": 16
+    "bench": 17
   },
   {
     "id": 100705,
@@ -161014,7 +161044,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 31
+    "bench": 32
   },
   {
     "id": 100706,
@@ -161036,7 +161066,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.774Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 53,
+    "bench": 56,
     "vram": 8
   },
   {
@@ -161058,7 +161088,7 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.774Z",
     "source": "amazon-discovery",
-    "bench": 34,
+    "bench": 36,
     "vram": 8,
     "memType": "GDDR6"
   },
@@ -161083,7 +161113,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 50,
+    "bench": 52,
     "slots": 2
   },
   {
@@ -161107,7 +161137,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 50
+    "bench": 52
   },
   {
     "id": 100710,
@@ -161130,7 +161160,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 58
+    "bench": 61
   },
   {
     "id": 100711,
@@ -161153,7 +161183,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 50,
+    "bench": 52,
     "slots": 2.5
   },
   {
@@ -161177,7 +161207,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 44,
+    "bench": 45,
     "slots": 2
   },
   {
@@ -161201,7 +161231,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6X",
-    "bench": 88
+    "bench": 92
   },
   {
     "id": 100714,
@@ -161222,7 +161252,7 @@ export const PARTS = [
     },
     "addedAt": "2026-05-15T14:34:31.775Z",
     "source": "amazon-discovery",
-    "bench": 88,
+    "bench": 90,
     "vram": 16,
     "memType": "GDDR6X"
   },
@@ -161247,7 +161277,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6X",
-    "bench": 88
+    "bench": 92
   },
   {
     "id": 100716,
@@ -161270,7 +161300,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6X",
-    "bench": 88
+    "bench": 92
   },
   {
     "id": 100717,
@@ -161292,7 +161322,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.775Z",
     "source": "amazon-discovery",
     "memType": "GDDR6X",
-    "bench": 88,
+    "bench": 92,
     "vram": 16,
     "slots": 3.5
   },
@@ -161316,7 +161346,7 @@ export const PARTS = [
     "addedAt": "2026-05-15T14:34:31.775Z",
     "source": "amazon-discovery",
     "memType": "GDDR6X",
-    "bench": 88,
+    "bench": 92,
     "vram": 16
   },
   {
@@ -161340,7 +161370,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR7",
-    "bench": 53
+    "bench": 56
   },
   {
     "id": 100720,
@@ -161385,7 +161415,7 @@ export const PARTS = [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 44,
+    "bench": 46,
     "slots": 2
   },
   {
@@ -162035,6 +162065,7 @@ export const PARTS = [
   {
     "id": 100749,
     "c": "RAM",
+    "bench": 25,
     "n": "Crucial 16GB DDR4 RAM Kit (2x8GB), 3200MHz (PC4-25600) CL22 Desktop Memory, UDIMM 288-Pin, Downclockable to 2933/2666MHz, Compatible with Intel and AMD Ryzen - CT2K8G4DFRA32A",
     "b": "Crucial",
     "pr": 135,
@@ -162061,6 +162092,7 @@ export const PARTS = [
   {
     "id": 100750,
     "c": "RAM",
+    "bench": 12,
     "n": "Crucial 16GB kit (8GBx2), 288-pin DIMM, DDR4 PC4-19200,",
     "b": "Crucial",
     "pr": 131.99,
@@ -162085,6 +162117,7 @@ export const PARTS = [
   {
     "id": 100751,
     "c": "RAM",
+    "bench": 15,
     "n": "Crucial 16GB Kit (8GB x 2) DDR4 2666 MT/s (PC4-21300) SODIMM 260-Pin Memory - CT2K8G4SFRA266",
     "b": "Crucial",
     "pr": 114,
@@ -162109,6 +162142,7 @@ export const PARTS = [
   {
     "id": 100752,
     "c": "RAM",
+    "bench": 15,
     "n": "Crucial 32GB Kit (16GBx2), 288-pin DIMM, DDR4 PC4-21300,",
     "b": "Crucial",
     "pr": 189,
@@ -162133,6 +162167,7 @@ export const PARTS = [
   {
     "id": 100753,
     "c": "RAM",
+    "bench": 21,
     "n": "Crucial 8GB DDR4 RAM, 3200MHz (PC4-25600) CL22 Desktop Memory, UDIMM 288-Pin, Downclockable to 2933/2666MHz, Compatible with Intel and AMD Ryzen - CT16G4DFRA32A",
     "b": "Crucial",
     "pr": 71.4,
@@ -162158,6 +162193,7 @@ export const PARTS = [
   {
     "id": 100754,
     "c": "RAM",
+    "bench": 25,
     "n": "【RGB DDR4 RAM】GIGASTONE Game TURBO 16GB Kit (2x8GB)DDR4 3200MHz PC4-25600 CL 16-18-18-40 Intel XMP 2.0 AMD Ryzen 1.35V UDIMM 288 Pin Unbuffered Non ECC High Performance Gaming Desktop Memory - Black",
     "b": "AMD",
     "pr": 128.99,
@@ -162186,6 +162222,7 @@ export const PARTS = [
   {
     "id": 100755,
     "c": "RAM",
+    "bench": 11,
     "n": "Crucial RAM 8GB DDR4 2666 MHz CL19 Desktop Memory CT8G4DFRA266",
     "b": "Crucial",
     "pr": 65,
@@ -162211,6 +162248,7 @@ export const PARTS = [
   {
     "id": 100756,
     "c": "RAM",
+    "bench": 11,
     "n": "Samsung M378A1K43CB2-CTD Memory Module (8 GB, 1 x 8 GB, DDR4, 2666 MHz, 288-pin DIMMM, Black, Green)",
     "b": "Samsung",
     "pr": 63.84,
@@ -162235,6 +162273,7 @@ export const PARTS = [
   {
     "id": 100757,
     "c": "RAM",
+    "bench": 65,
     "n": "TEAMGROUP Elite DDR5 32GB Kit (2x16GB) 6000Mhz PC5-48000 CL48 Non-ECC Unbuffered UDIMM 288 Pin PC Computer Desktop Memory Module Ram Supports Intel & AMD TED532G6000C48DC01",
     "b": "TeamGroup",
     "pr": 580.99,
@@ -162262,6 +162301,7 @@ export const PARTS = [
   {
     "id": 100758,
     "c": "RAM",
+    "bench": 40,
     "n": "PUSKILL 32GB DDR5 RAM (2x16GB) 4800MHz CL38 Desktop Memory Kit | High-Performance PC Upgrade for Gaming & Multitasking | Intel & AMD Ryzen 7000 (AM5) Compatible",
     "b": "AMD",
     "pr": 329.98,
@@ -162288,6 +162328,7 @@ export const PARTS = [
   {
     "id": 100759,
     "c": "RAM",
+    "bench": 55,
     "n": "Patriot Memory Signature DDR5 RAM 16GB (2X8GB) 5600MHz CL46 UDIMM Desktop Memory Kit - PSD532G5600K",
     "b": "Patriot",
     "pr": 234.99,
@@ -162314,6 +162355,7 @@ export const PARTS = [
   {
     "id": 100760,
     "c": "RAM",
+    "bench": 75,
     "n": "TEAMGROUP T-Create Expert Overclocking 10L CL32 DDR5 48GB Kit (2 x 24GB) 6400MHz (PC5-51200) Intel XMP 3.0 & AMD Expo Compatible M-DIE Desktop Memory Module Ram Black - CTCED548G6400HC32ADC01",
     "b": "TeamGroup",
     "pr": 649.99,
@@ -162340,6 +162382,7 @@ export const PARTS = [
   {
     "id": 100761,
     "c": "RAM",
+    "bench": 65,
     "n": "TEAMGROUP T-Create Master Overclocking DDR5 R-DIMM 192GB Kit (8 x 24GB) 6000MHz (PC5-48000) CL32 Hynix M-DIE Workstation Memory Module Ram Black - CTCMD5192G6000HC32AOC01",
     "b": "TeamGroup",
     "pr": 4224.99,
@@ -162366,6 +162409,7 @@ export const PARTS = [
   {
     "id": 100762,
     "c": "RAM",
+    "bench": 75,
     "n": "KLEVV CRAS V RGB DDR5 48GB (2x24GB) 6400MHz CL32 SK Hynix A-Die 1.35V Gaming Desktop Ram Memory XMP 3.0 / AMD Expo Ready - Black (KD5KGUD80-64A320G)",
     "b": "AMD",
     "pr": 658.99,
@@ -162393,6 +162437,7 @@ export const PARTS = [
   {
     "id": 100763,
     "c": "RAM",
+    "bench": 75,
     "n": "TEAMGROUP T-Create Expert Overclocking 10L CL32 DDR5 48GB Kit (2 x 24GB) 6400MHz (PC5-51200) Intel XMP 3.0 & AMD Expo Compatible M-DIE Desktop Memory Module Ram White - CTCWD548G6400HC32ADC01",
     "b": "TeamGroup",
     "pr": 649.99,
@@ -162419,6 +162464,7 @@ export const PARTS = [
   {
     "id": 100764,
     "c": "RAM",
+    "bench": 85,
     "n": "TEAMGROUP T-Create Expert 48GB KIT 2 X 24GB DDR5-7200 PC5-57600 CL34 Dual C",
     "b": "TeamGroup",
     "pr": 749.99,
@@ -162444,6 +162490,7 @@ export const PARTS = [
   {
     "id": 100765,
     "c": "RAM",
+    "bench": 55,
     "n": "Crucial 32GB DDR5 RAM Kit (2x16GB), 5600MHz (or 5200MHz) Desktop Memory, UDIMM 288-Pin, Compatible with 13th Gen Intel Core and AMD Ryzen 7000 - CT2K16G56C46U5",
     "b": "Crucial",
     "pr": 450.99,
@@ -162469,6 +162516,7 @@ export const PARTS = [
   {
     "id": 100766,
     "c": "RAM",
+    "bench": 85,
     "n": "TEAMGROUP T-Create Expert Overclocking 10L DDR5 48GB Kit (2 x 24GB) 7200MHz (PC5-57600) CL34 M-DIE Desktop Memory Module Ram Black - CTCED548G7200HC34ADC01",
     "b": "TeamGroup",
     "pr": 749.99,
@@ -162495,6 +162543,7 @@ export const PARTS = [
   {
     "id": 100767,
     "c": "RAM",
+    "bench": 65,
     "n": "Biwin Black Opal DW100 DDR5 RGB RAM 48GB (24GBx2) 6000MHz CL28 Computer Memory Intel XMP 3.0 AMD Expo Compatible- Black - DW100-48GB-6000-1R8-D28FB",
     "b": "AMD",
     "pr": 539.99,
@@ -162544,6 +162593,7 @@ export const PARTS = [
   {
     "id": 100769,
     "c": "RAM",
+    "bench": 65,
     "n": "Kingston FURY Beast RGB 32GB 6000MT/s DDR5 CL30 Desktop Memory | AMD EXPO | Single Module | KF560C30BBEA-32",
     "b": "Kingston",
     "pr": 399.99,
@@ -162570,6 +162620,7 @@ export const PARTS = [
   {
     "id": 100770,
     "c": "RAM",
+    "bench": 75,
     "n": "Kingston FURY Beast RGB 32GB 6400MT/s DDR5 CL32 Desktop Memory | AMD EXPO | Single Module | KF564C32BBEA-32",
     "b": "Kingston",
     "pr": 448.99,
@@ -162596,6 +162647,7 @@ export const PARTS = [
   {
     "id": 100771,
     "c": "RAM",
+    "bench": 40,
     "n": "Crucial 32GB DDR5 RAM, 4800MHz CL40 Desktop Memory, UDIMM 288-Pin, Compatible with 13th Gen Intel Core and AMD Ryzen 7000s - CT32G48C40U5",
     "b": "Crucial",
     "pr": 429.99,
@@ -162621,6 +162673,7 @@ export const PARTS = [
   {
     "id": 100772,
     "c": "RAM",
+    "bench": 65,
     "n": "Kingston FURY Beast 32GB 6000MT/s DDR5 CL30 Desktop Memory | AMD EXPO | Single Module | KF560C30BBE-32",
     "b": "Kingston",
     "pr": 555.59,
@@ -162646,6 +162699,7 @@ export const PARTS = [
   {
     "id": 100773,
     "c": "RAM",
+    "bench": 55,
     "n": "Crucial 32GB DDR5 RAM, 5600MHz (or 5200MHz or 4800MHz) Desktop Memory, UDIMM 288-Pin, Compatible with 13th Gen Intel Core and AMD Ryzen 7000 - CT32G56C46U5",
     "b": "Crucial",
     "pr": 444.99,
@@ -162670,6 +162724,7 @@ export const PARTS = [
   {
     "id": 100774,
     "c": "RAM",
+    "bench": 65,
     "n": "Kingston FURY Beast 32GB 6000MT/s DDR5 CL36 RGB Desktop Memory Single Module | Infrared Syncing | AMD EXPO | KF560C36BBEA-32",
     "b": "Kingston",
     "pr": 425,
@@ -162696,6 +162751,7 @@ export const PARTS = [
   {
     "id": 100775,
     "c": "RAM",
+    "bench": 40,
     "n": "NEMIX RAM 64GB (2X32GB) DDR5 4800MHZ PC5-38400 2Rx8 1.1V CL40 288-PIN ECC Unbuffered UDIMM KIT Compatible with ASUS ProArt X670E-CREATOR WiFi Motherboard",
     "b": "ASUS",
     "pr": 1498.99,
@@ -162723,6 +162779,7 @@ export const PARTS = [
   {
     "id": 100776,
     "c": "RAM",
+    "bench": 40,
     "n": "TEAMGROUP Elite DDR5 32GB Kit (2x16GB) 4800MHz (PC5-38400) CL40 Non-ECC Unbuffered 1.1V UDIMM 288 Pin PC Computer Desktop Memory Module Ram Upgrade - TED532G4800C40DC01",
     "b": "TeamGroup",
     "pr": 588.99,
@@ -162750,6 +162807,7 @@ export const PARTS = [
   {
     "id": 100777,
     "c": "RAM",
+    "bench": 40,
     "n": "Samsung 64GB DDR5 4800MHz PC5-38400 ECC RDIMM 2Rx4 (EC8 10x4) Dual Rank 1.1V Registered DIMM 288-Pin Server RAM Memory M321R8GA0BB0-CQK",
     "b": "Samsung",
     "pr": 1841.73,
@@ -162775,6 +162833,7 @@ export const PARTS = [
   {
     "id": 100778,
     "c": "RAM",
+    "bench": 40,
     "n": "Samsung 32GB DDR5 4800MHz PC5-38400 ECC RDIMM 2Rx8 Dual Rank 1.1V Registered DIMM 288-Pin Server RAM Memory M321R4GA3BB6-CQK",
     "b": "Samsung",
     "pr": 929.99,
@@ -162800,6 +162859,7 @@ export const PARTS = [
   {
     "id": 100779,
     "c": "RAM",
+    "bench": 75,
     "n": "TEAMGROUP T-Create Master Overclocking DDR5 R-DIMM 192GB Kit (8 x 24GB) 6400MHz (PC5-51200) CL32 Hynix M-DIE Workstation Memory Module Ram Black - CTCMD5192G6400HC32AOC01",
     "b": "TeamGroup",
     "pr": 4699.99,
@@ -162826,6 +162886,7 @@ export const PARTS = [
   {
     "id": 100780,
     "c": "RAM",
+    "bench": 55,
     "n": "48GB 1X48GB DDR5 5600MHz PC5-44800 2Rx8 1.1V CL46 288-PIN ECC Unbuffered UDIMM NEMIX RAM Compatible with ASRock X870E Taichi Motherboard",
     "b": "ASRock",
     "pr": 1108.99,
@@ -162852,6 +162913,7 @@ export const PARTS = [
   {
     "id": 100781,
     "c": "RAM",
+    "bench": 55,
     "n": "32GB 1X32GB DDR5 5600MHz PC5-44800 2Rx8 1.1V CL46 288-PIN ECC Unbuffered UDIMM NEMIX RAM Compatible with GIGABYTE X870E AORUS Xtreme AI TOP Motherboard",
     "b": "Gigabyte",
     "pr": 759.99,
@@ -162878,6 +162940,7 @@ export const PARTS = [
   {
     "id": 100782,
     "c": "RAM",
+    "bench": 40,
     "n": "CORSAIR Vengeance SODIMM DDR5 RAM 32GB (2x16GB) 4800MHz CL40 Intel XMP iCUE Compatible Computer Memory - Black (CMSX32GX5M2A4800C40)",
     "b": "Corsair",
     "pr": 459.99,
@@ -162904,6 +162967,7 @@ export const PARTS = [
   {
     "id": 100783,
     "c": "RAM",
+    "bench": 15,
     "n": "OWC 16GB Replacement for Crucial CT16G4SFRA266 CT16G4S266M - DDR4 2666MHz PC4-21300 CL19 2Rx8 260-pin 1.2V Non-ECC SODIMM",
     "b": "Crucial",
     "pr": 120.99,
@@ -162930,6 +162994,7 @@ export const PARTS = [
   {
     "id": 100784,
     "c": "RAM",
+    "bench": 55,
     "n": "Crucial 16GB DDR5 RAM, 5600MHz (or 5200MHz or 4800MHz) Desktop Memory, UDIMM 288-Pin, Compatible with Intel Core and AMD Ryzen - CT16G56C46U5",
     "b": "Crucial",
     "pr": 212.1,
@@ -162954,6 +163019,7 @@ export const PARTS = [
   {
     "id": 100785,
     "c": "RAM",
+    "bench": 65,
     "n": "Kingston FURY Beast 64GB (2x32GB) 6000MT/s DDR5 CL36 Desktop Memory | AMD EXPO | Kit of 2 | KF560C36BBEK2-64",
     "b": "Kingston",
     "pr": 943.89,
@@ -162980,6 +163046,7 @@ export const PARTS = [
   {
     "id": 100786,
     "c": "RAM",
+    "bench": 55,
     "n": "Kingston FURY Beast RGB 64GB 5600MT/s DDR5 CL40 DIMM Desktop Memory (Kit of 2) | Intel XMP 3.0 | Infrared Sync Technology | Overclocking Stability | KF556C40BBAK2-64",
     "b": "Kingston",
     "pr": 824.86,
@@ -163006,6 +163073,7 @@ export const PARTS = [
   {
     "id": 100787,
     "c": "RAM",
+    "bench": 65,
     "n": "Patriot Memory Viper Venom DDR5 RAM 16GB (1X16GB) 6000MHz CL30 1.35v UDIMM Desktop Gaming Memory Compatible with Intel XMP/AMD Expo - PVV516G60C30",
     "b": "Patriot",
     "pr": 209.99,
@@ -163032,6 +163100,7 @@ export const PARTS = [
   {
     "id": 100788,
     "c": "RAM",
+    "bench": 55,
     "n": "Patriot Memory Viper Venom DDR5 RAM 32GB (2X16GB) 5600MHz CL36 1.25v UDIMM Desktop Gaming Memory Kit Compatible with Intel XMP/AMD Expo - PVV532G560C36K",
     "b": "Patriot",
     "pr": 404.99,
@@ -163058,6 +163127,7 @@ export const PARTS = [
   {
     "id": 100789,
     "c": "RAM",
+    "bench": 55,
     "n": "Patriot Memory Viper Elite 5 RGB DDR5 RAM 16GB (1X16GB) 5600MT/s CL36 1.35v UDIMM Desktop Gaming Memory Compatible with Intel XMP/AMD Expo - PVER516G56C36W",
     "b": "Patriot",
     "pr": 227.99,
@@ -163085,6 +163155,7 @@ export const PARTS = [
   {
     "id": 100790,
     "c": "RAM",
+    "bench": 65,
     "n": "Patriot Memory Viper Xtreme 5 MPOWER DDR5 RGB RAM 32GB (2X16GB) 6000MT/s CL30 1.35v UDIMM Desktop Gaming Memory Kit Compatible with Intel XMP/AMD Expo - PVXR532G60C30KM",
     "b": "Patriot",
     "pr": 421.99,
@@ -163112,6 +163183,7 @@ export const PARTS = [
   {
     "id": 100791,
     "c": "RAM",
+    "bench": 95,
     "n": "Patriot Viper Xtreme 5 RGB DDR5 RAM 32GB (2X16GB) 8000MHz CL38 1.45v UDIMM Desktop Gaming Memory Kit Compatible with Intel XMP - PVXR532G80C38K",
     "b": "Patriot",
     "pr": 679.99,
@@ -163139,6 +163211,7 @@ export const PARTS = [
   {
     "id": 100792,
     "c": "RAM",
+    "bench": 85,
     "n": "CORSAIR Dominator Titanium RGB DDR5 RAM 32GB (2x16GB) DDR5 7200MHz CL34 Intel XMP iCUE Compatible Computer Memory - White (CMP32GX5M2X7200C34W)",
     "b": "Corsair",
     "pr": 695.24,
@@ -163166,6 +163239,7 @@ export const PARTS = [
   {
     "id": 100793,
     "c": "RAM",
+    "bench": 55,
     "n": "CORSAIR Vengeance DDR5 RAM 32GB (2x16GB) 5600MHz CL40 Intel XMP iCUE Compatible Computer Memory - White (CMK32GX5M2B5600C40W)",
     "b": "Corsair",
     "pr": 563.58,
@@ -163192,6 +163266,7 @@ export const PARTS = [
   {
     "id": 100794,
     "c": "RAM",
+    "bench": 75,
     "n": "Patriot Viper Xtreme 5 DDR5 RAM 32GB (2X16GB) 6400MT/s CL32 1.4v UDIMM Desktop Gaming Memory Kit Compatible with Intel XMP - PVX532G64C32K",
     "b": "Patriot",
     "pr": 429.99,
@@ -163218,6 +163293,7 @@ export const PARTS = [
   {
     "id": 100795,
     "c": "RAM",
+    "bench": 65,
     "n": "Patriot Viper Elite 5 RGB DDR5 RAM 32GB (1X32GB) 6000MT/s CL30 1.35v UDIMM Desktop Gaming Memory Compatible with Intel XMP/AMD Expo - PVER532G60C30W",
     "b": "Patriot",
     "pr": 431.99,
@@ -163245,6 +163321,7 @@ export const PARTS = [
   {
     "id": 100796,
     "c": "RAM",
+    "bench": 75,
     "n": "Patriot Viper Elite 5 Ultra Gaming RGB DDR5 RAM 32GB (2X16GB) 6400MT/s CL32 1.4v UDIMM Desktop Gaming Memory Kit Compatible with Intel XMP AMD Expo - VEUR532G6432K",
     "b": "Patriot",
     "pr": 519.99,
@@ -163272,6 +163349,7 @@ export const PARTS = [
   {
     "id": 100797,
     "c": "RAM",
+    "bench": 55,
     "n": "Patriot Memory Viper Elite 5 RGB DDR5 RAM 32GB (1X32GB) 5600MT/s CL38 1.35v UDIMM Desktop Gaming Memory Compatible with Intel XMP/AMD Expo - PVER532G56C38W",
     "b": "Patriot",
     "pr": 431.99,
@@ -163444,7 +163522,7 @@ export const PARTS = [
     "formFactor": "3.5\""
   },
   {
-    "id": 100804,
+    "id": 100804,bench:1,
     "c": "Storage",
     "n": "Patriot P210 512GB Internal SSD - SATA 3 2.5\" - Solid State Drive - P210S512G25",
     "b": "Patriot",
@@ -163612,7 +163690,7 @@ export const PARTS = [
     "ff": "2.5\""
   },
   {
-    "id": 100811,
+    "id": 100811,bench:1,
     "c": "Storage",
     "n": "Western Digital 500GB WD Green SN350 NVMe Internal SSD Solid State Drive - Gen3 PCIe, M.2 2280, Up to 2,400 MB/s - WDS500G2G0C",
     "b": "Western Digital",
@@ -163686,7 +163764,7 @@ export const PARTS = [
     "formFactor": "M.2"
   },
   {
-    "id": 100814,
+    "id": 100814,bench:56,
     "c": "Storage",
     "n": "WD_Black SN850X 8TB NVMe SSD - M.2 2280, Up to 7,300 MB/s Read speeds, Up to 6,300 MB/s Write speeds, Gaming Expansion, High Performance Internal Solid State Drive - WDS800T2X0E",
     "b": "Western Digital",
@@ -163711,7 +163789,7 @@ export const PARTS = [
     "formFactor": "M.2 2280"
   },
   {
-    "id": 100815,
+    "id": 100815,bench:94,
     "c": "Storage",
     "n": "Samsung SSD 9100 PRO 8TB, PCIe 5.0x4 M.2 2280, Seq. Read Speeds Up to 14,800MB/s, Best for AI Computing, Gaming, and Heavy Duty Workstations (MZ VAP8T0B/AM)",
     "b": "Samsung",
@@ -163738,7 +163816,7 @@ export const PARTS = [
     "formFactor": "M.2 2280"
   },
   {
-    "id": 100816,
+    "id": 100816,bench:56,
     "c": "Storage",
     "n": "WD_Black SN850X 8TB NVMe SSD with Heatsink - M.2 2280, Up to 7,300 MB/s Read speeds, Up to 6,300 MB/s Write speeds, Gaming Expansion, High Performance Internal Solid State Drive - WDS800T2XHE",
     "b": "Western Digital",
@@ -163763,7 +163841,7 @@ export const PARTS = [
     "formFactor": "M.2 2280"
   },
   {
-    "id": 100817,
+    "id": 100817,bench:56,
     "c": "Storage",
     "n": "WD_Black 8TB SN850P NVMe M.2 SSD Officially Licensed Storage Expansion for PS5 Consoles, up to 7200MB/s, with heatsink - WDBBYV0080BNC-WRSN",
     "b": "Western Digital",
@@ -163816,7 +163894,7 @@ export const PARTS = [
     "formFactor": "M.2 2280"
   },
   {
-    "id": 100819,
+    "id": 100819,bench:65,
     "c": "Storage",
     "n": "WD_Black SN8100 8TB NVMe SSD - PCIe 5.0x4, M.2 2280, Up to 14,900MB/s Read Speed, up to 11,000MB/s Write Speed, Best for AI Applications, Gaming, and Video Editing - WDS800T1X0M",
     "b": "Western Digital",
@@ -163867,7 +163945,7 @@ export const PARTS = [
     "read": 1050
   },
   {
-    "id": 100821,
+    "id": 100821,bench:94,
     "c": "Storage",
     "n": "Samsung SSD 9100 PRO with Heatsink 8TB, PCIe 5.0x4 M.2 2280, Seq. Read Speeds Up to 14,800/13,400 MB/s, Best for AI Computing, Gaming, and Heavy Duty Workstations (MZ VAP8T0CW)",
     "b": "Samsung",
@@ -163894,7 +163972,7 @@ export const PARTS = [
     "formFactor": "M.2 2280"
   },
   {
-    "id": 100822,
+    "id": 100822,bench:87,
     "c": "Storage",
     "n": "WD_Black SN8100 1TB NVMe SSD with Heatsink - PCIe 5.0x4, M.2 2280, Up to 14,900MB/s Read Speed, up to 11,000MB/s Write Speed, Best for AI Applications, Gaming, and Video Editing - WDS100T1XHM",
     "b": "Western Digital",
@@ -163996,7 +164074,7 @@ export const PARTS = [
     "rpm": 5400
   },
   {
-    "id": 100826,
+    "id": 100826,bench:39,
     "c": "Storage",
     "n": "Kingston NV3 1TB M.2 2230 NVMe SSD | Up to 6000MB/s | SNV3SM3/1T0",
     "b": "Kingston",
@@ -165050,7 +165128,7 @@ export const PARTS = [
     "formFactor": "M.2"
   },
   {
-    "id": 100869,
+    "id": 100869,bench:54,
     "c": "Storage",
     "n": "SANDISK 1TB Portable SSD - Up to 800MB/s, USB-C, USB 3.2 Gen 2, Updated Firmware - External Solid State Drive - SDSSDE30-1T00-G26",
     "b": "SanDisk",

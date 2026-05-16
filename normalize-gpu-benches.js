@@ -183,11 +183,11 @@ lines.forEach((line, i) => {
 });
 
 let applied = 0;
+let inserted = 0;
 let failed = 0;
 for (const u of updates) {
   const startLine = idToLine.get(u.id);
   if (startLine === undefined) { failed++; continue; }
-
   let replaced = false;
   for (let i = startLine; i < Math.min(startLine + 80, lines.length); i++) {
     if (/"?bench"?\s*:\s*\d+/.test(lines[i])) {
@@ -196,11 +196,23 @@ for (const u of updates) {
       applied++;
       break;
     }
-    if (i > startLine && /"?id"?\s*:\s*\d+/.test(lines[i])) break;
+    if (i > startLine && /"?id"?\s*:\s*\d+/.test(lines[i]) && i !== startLine) break;
   }
-  if (!replaced) failed++;
+  if (!replaced) {
+    const idLine = lines[startLine];
+    const newIdLine = idLine.replace(
+      /(["\']?id["\']?\s*:\s*\d+)(\s*,)/,
+      `$1$2bench:${u.newBench},`
+    );
+    if (newIdLine !== idLine) {
+      lines[startLine] = newIdLine;
+      inserted++;
+    } else {
+      failed++;
+    }
+  }
 }
 
 writeFileSync(PARTS_PATH, lines.join('\n'));
-console.log(`✔ Applied: ${applied}    Failed: ${failed}`);
+console.log(`✔ Applied: ${applied}    Inserted: ${inserted}    Failed: ${failed}`);
 console.log(`✔ Wrote ${PARTS_PATH}`);

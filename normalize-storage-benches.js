@@ -259,14 +259,34 @@ for (const u of updates) {
 // Apply bottom-up so inserts don't shift earlier line indexes
 edits.sort((a, b) => b.line - a.line);
 let applied = 0;
-for (const e of edits) {
-  if (e.mode === 'replace') {
-    lines[e.line] = lines[e.line].replace(/("?bench"?\s*:\s*)\d+/, `$1${e.newBench}`);
-  } else {
-    const indent = (lines[e.line].match(/^(\s*)/) || ['', ''])[1];
-    lines.splice(e.line + 1, 0, `${indent}"bench": ${e.newBench},`);
+let inserted = 0;
+let failed = 0;
+for (const u of updates) {
+  const startLine = idToLine.get(u.id);
+  if (startLine === undefined) { failed++; continue; }
+  let replaced = false;
+  for (let i = startLine; i < Math.min(startLine + 80, lines.length); i++) {
+    if (/"?bench"?\s*:\s*\d+/.test(lines[i])) {
+      lines[i] = lines[i].replace(/("?bench"?\s*:\s*)\d+/, `$1${u.newBench}`);
+      replaced = true;
+      applied++;
+      break;
+    }
+    if (i > startLine && /"?id"?\s*:\s*\d+/.test(lines[i]) && i !== startLine) break;
   }
-  applied++;
+  if (!replaced) {
+    const idLine = lines[startLine];
+    const newIdLine = idLine.replace(
+      /(["\']?id["\']?\s*:\s*\d+)(\s*,)/,
+      `$1$2bench:${u.newBench},`
+    );
+    if (newIdLine !== idLine) {
+      lines[startLine] = newIdLine;
+      inserted++;
+    } else {
+      failed++;
+    }
+  }
 }
 
 writeFileSync(PARTS_PATH, lines.join('\n'));
