@@ -100224,7 +100224,7 @@ export const PARTS = [
     "height": 159,
     "deals": {
       "amazon": {
-        "price": 63,
+        "price": 69.5,
         "url": "https://www.amazon.com/dp/B0D3NXLZ1T?tag=tiereduptech-20",
         "inStock": true
       }
@@ -100267,7 +100267,7 @@ export const PARTS = [
     "rgb": false,
     "value": 68,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 75,
     "cfm": 132
   },
@@ -100303,7 +100303,7 @@ export const PARTS = [
     "rgb": false,
     "value": 27,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 78,
     "cfm": 145
   },
@@ -100453,7 +100453,7 @@ export const PARTS = [
     "rgb": true,
     "value": 10,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 89,
     "height": 52,
     "cfm": 174
@@ -100490,7 +100490,7 @@ export const PARTS = [
     "rgb": true,
     "value": 30,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 64,
     "height": 52,
     "cfm": 116
@@ -100767,7 +100767,7 @@ export const PARTS = [
     "rgb": false,
     "value": 30,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 86,
     "height": 52,
     "cfm": 180
@@ -100849,7 +100849,7 @@ export const PARTS = [
     "rgb": true,
     "value": 32,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 95,
     "height": 52,
     "cfm": 180
@@ -104154,7 +104154,7 @@ export const PARTS = [
     "tdp_rating": 280,
     "tdp_rating_est": true,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 93,
     "fanSize": 120,
     "height": 52,
@@ -107231,7 +107231,7 @@ export const PARTS = [
     "height": 52,
     "cfm": 180,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15"
+    "quarantinedAt": "2026-05-16"
   },
   {
     "id": 80161,
@@ -107828,7 +107828,7 @@ export const PARTS = [
     "reviews": 156,
     "deals": {
       "amazon": {
-        "price": 84.99,
+        "price": 94.99,
         "url": "https://www.amazon.com/dp/B0DQ2NBJ99?tag=tiereduptech-20",
         "inStock": true
       }
@@ -108614,7 +108614,7 @@ export const PARTS = [
     "reviews": 94,
     "deals": {
       "amazon": {
-        "price": 107.63,
+        "price": 113.17,
         "url": "https://www.amazon.com/dp/B0DSJ2RDKV?tag=tiereduptech-20",
         "inStock": true
       },
@@ -110370,7 +110370,7 @@ export const PARTS = [
     "reviews": 34,
     "deals": {
       "amazon": {
-        "price": 19.99,
+        "price": 24.99,
         "url": "https://www.amazon.com/dp/B0FLTBSXW3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -113821,7 +113821,7 @@ export const PARTS = [
     "pwm": true,
     "rgbType": "ARGB",
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 82,
     "fans_inc": 3
   },
@@ -113852,7 +113852,7 @@ export const PARTS = [
     "pwm": true,
     "rgbType": "ARGB",
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 70,
     "fans_inc": 3
   },
@@ -114017,7 +114017,7 @@ export const PARTS = [
     "rpm": 2000,
     "pwm": true,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 74
   },
   {
@@ -114046,7 +114046,7 @@ export const PARTS = [
     "rpm": 1850,
     "pwm": true,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 66,
     "fans_inc": 3
   },
@@ -119378,7 +119378,7 @@ export const PARTS = [
     "reviews": 3116,
     "deals": {
       "amazon": {
-        "price": 8.08,
+        "price": 9.18,
         "url": "https://www.amazon.com/dp/B08QDKGCCW?tag=tiereduptech-20",
         "inStock": true
       },
@@ -119651,7 +119651,7 @@ export const PARTS = [
     "reviews": 2554,
     "deals": {
       "amazon": {
-        "price": 12.98,
+        "price": 12.08,
         "url": "https://www.amazon.com/dp/B08QNCNTKB?tag=tiereduptech-20",
         "inStock": true
       },
@@ -121823,7 +121823,7 @@ export const PARTS = [
     "pack": 1,
     "bench": 68,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "fanSize": 120
   },
   {
@@ -122728,7 +122728,7 @@ export const PARTS = [
     "pack": 1,
     "bench": 69,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "fanSize": 140
   },
   {
@@ -126395,7 +126395,7 @@ export const PARTS = [
     },
     "value": 36,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 89,
     "resolution": "1440p"
   },
@@ -126421,7 +126421,7 @@ export const PARTS = [
     ],
     "deals": {
       "amazon": {
-        "price": 394.99,
+        "price": 484.99,
         "url": "https://www.amazon.com/dp/B0BGVYQ8CC?tag=tiereduptech-20",
         "inStock": true
       }
@@ -126459,7 +126459,7 @@ export const PARTS = [
     },
     "value": 34,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 100,
     "resolution": "1440p"
   },
@@ -126492,7 +126492,7 @@ export const PARTS = [
     },
     "value": 46,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 82,
     "resolution": "1440p"
   },
@@ -126526,7 +126526,7 @@ export const PARTS = [
     },
     "value": 38,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 89,
     "resolution": "1440p"
   },
@@ -126560,7 +126560,7 @@ export const PARTS = [
     },
     "value": 24,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 100
   },
   {
@@ -126624,7 +126624,7 @@ export const PARTS = [
     },
     "value": 17,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 61,
     "resolution": "1440p"
   },
@@ -126657,7 +126657,7 @@ export const PARTS = [
     },
     "value": 100,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 74,
     "resolution": "1080p"
   },
@@ -126691,7 +126691,7 @@ export const PARTS = [
     },
     "value": 50,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 95,
     "resolution": "1440p"
   },
@@ -126724,7 +126724,7 @@ export const PARTS = [
     },
     "value": 30,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 64,
     "resolution": "1080p"
   },
@@ -126758,7 +126758,7 @@ export const PARTS = [
     },
     "value": 5,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 54,
     "resolution": "1440p"
   },
@@ -126792,7 +126792,7 @@ export const PARTS = [
     },
     "value": 6,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 68,
     "resolution": "4K"
   },
@@ -126826,7 +126826,7 @@ export const PARTS = [
     },
     "value": 13,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 100,
     "resolution": "4K"
   },
@@ -126859,7 +126859,7 @@ export const PARTS = [
     },
     "value": 17,
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "bench": 100,
     "resolution": "4K"
   },
@@ -127835,7 +127835,7 @@ export const PARTS = [
     "reviews": 498,
     "deals": {
       "amazon": {
-        "price": 119.99,
+        "price": 159.99,
         "url": "https://www.amazon.com/dp/B0DTH3SGZD?tag=tiereduptech-20",
         "inStock": true
       }
@@ -127999,7 +127999,9 @@ export const PARTS = [
     "response": "2 Milliseconds",
     "bench": 63,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-05-16"
   },
   {
     "id": 90046,
@@ -128379,7 +128381,7 @@ export const PARTS = [
     "reviews": 128,
     "deals": {
       "amazon": {
-        "price": 419.99,
+        "price": 398.99,
         "url": "https://www.amazon.com/dp/B0DQVP7TNH?tag=tiereduptech-20",
         "inStock": true
       },
@@ -129508,7 +129510,7 @@ export const PARTS = [
     "reviews": 54,
     "deals": {
       "amazon": {
-        "price": 489.37,
+        "price": 548.88,
         "url": "https://www.amazon.com/dp/B0F1CTGB4P?tag=tiereduptech-20",
         "inStock": true
       }
@@ -129649,7 +129651,7 @@ export const PARTS = [
     "reviews": 13,
     "deals": {
       "amazon": {
-        "price": 119.99,
+        "price": 109.99,
         "url": "https://www.amazon.com/dp/B0F29KYCG2?tag=tiereduptech-20",
         "inStock": true
       }
@@ -129857,7 +129859,7 @@ export const PARTS = [
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
     "needsReview": true,
-    "quarantinedAt": "2026-05-15",
+    "quarantinedAt": "2026-05-16",
     "resolution": "4K"
   },
   {
@@ -151612,7 +151614,8 @@ export const PARTS = [
     "bench": 68
   },
   {
-    "id": 100315,bench:40,
+    "id": 100315,
+    "bench": 40,
     "c": "CPU",
     "n": "AMD Ryzen™ 7 5800XT 8-Core, 16-Thread Unlocked Desktop Processor",
     "b": "AMD",
@@ -151892,7 +151895,8 @@ export const PARTS = [
     "bench": 23
   },
   {
-    "id": 100326,bench:82,
+    "id": 100326,
+    "bench": 82,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 9 Desktop Processor 285 24 cores (8 P-cores + 16 E-cores) up to 5.6 GHz",
     "b": "Intel",
@@ -152170,7 +152174,8 @@ export const PARTS = [
     "bench": 55
   },
   {
-    "id": 100337,bench:98,
+    "id": 100337,
+    "bench": 98,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 7 Processor 270K Plus 24 cores (8 P-cores + 16 E-cores) up to 5.5 GHz",
     "b": "Intel",
@@ -152195,7 +152200,8 @@ export const PARTS = [
     "igpu": true
   },
   {
-    "id": 100338,bench:75,
+    "id": 100338,
+    "bench": 75,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 5 Processor 250KF Plus 18 cores (6 P-cores + 12 E-cores) up to 5.3 GHz",
     "b": "Intel",
@@ -152220,7 +152226,8 @@ export const PARTS = [
     "igpu": true
   },
   {
-    "id": 100339,bench:76,
+    "id": 100339,
+    "bench": 76,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 5 Processor 250K Plus 18 cores (6 P-cores + 12 E-cores) up to 5.3 GHz",
     "b": "Intel",
@@ -152245,7 +152252,8 @@ export const PARTS = [
     "igpu": true
   },
   {
-    "id": 100340,bench:71,
+    "id": 100340,
+    "bench": 71,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 7 Desktop Processor 265 20 cores (8 P-cores + 12 E-cores) up to 5.3 GHz",
     "b": "Intel",
@@ -152270,7 +152278,8 @@ export const PARTS = [
     "igpu": true
   },
   {
-    "id": 100341,bench:57,
+    "id": 100341,
+    "bench": 57,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 5 Desktop Processor 235 14 cores (6 P-cores + 8 E-cores) up to 5.0 GHz",
     "b": "Intel",
@@ -152295,7 +152304,8 @@ export const PARTS = [
     "igpu": true
   },
   {
-    "id": 100342,bench:71,
+    "id": 100342,
+    "bench": 71,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 7 Desktop Processor 265F 20 cores (8 P-cores + 12 E-cores) up to 5.3 GHz",
     "b": "Intel",
@@ -152320,7 +152330,8 @@ export const PARTS = [
     "igpu": true
   },
   {
-    "id": 100343,bench:44,
+    "id": 100343,
+    "bench": 44,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 5 Desktop Processor 225F 10 Cores (6 P-cores + 4 E-cores) up to 4.9 GHz",
     "b": "Intel",
@@ -152345,7 +152356,8 @@ export const PARTS = [
     "igpu": true
   },
   {
-    "id": 100344,bench:43,
+    "id": 100344,
+    "bench": 43,
     "c": "CPU",
     "n": "Intel® Core™ Ultra 5 Desktop Processor 225 10 Cores (6 P-cores + 4 E-cores) up to 4.9 GHz",
     "b": "Intel",
@@ -153134,7 +153146,7 @@ export const PARTS = [
       "amazon": {
         "asin": "B0FVXQXJ2W",
         "url": "https://www.amazon.com/dp/B0FVXQXJ2W?tag=tiereduptech-20",
-        "price": 142,
+        "price": 119.99,
         "inStock": true
       }
     },
@@ -154542,7 +154554,8 @@ export const PARTS = [
     "bench": 71
   },
   {
-    "id": 100433,bench:23,
+    "id": 100433,
+    "bench": 23,
     "c": "GPU",
     "n": "maxsun AMD Radeon RX 580 8GB 2048SP GDDR5 Computer Video Graphics Card GPU for PC Gaming 256-Bit DirectX 12 DVI, HDMI, DisplayPort Multi Monitors Extend (White)",
     "b": "AMD",
@@ -154564,7 +154577,8 @@ export const PARTS = [
     "vram": 8
   },
   {
-    "id": 100434,bench:7,
+    "id": 100434,
+    "bench": 7,
     "c": "GPU",
     "n": "maxsun AMD Radeon RX 550 4GB GDDR5 ITX Computer PC Gaming Video Graphics Card GPU 128-Bit DirectX 12 PCI Express X16 3.0 DVI-D Dual Link, HDMI, DisplayPort",
     "b": "AMD",
@@ -154791,7 +154805,8 @@ export const PARTS = [
     "bench": 83
   },
   {
-    "id": 100444,bench:10,
+    "id": 100444,
+    "bench": 10,
     "c": "GPU",
     "n": "Radeon RX560 2G Graphics Card, with 4 HDMI Monitor Graphics Card,Computer PC GPU GDDR5 128 Bit DirectX 12 PCI Express X16 3.0, 4 Port Video Cards (AMD RX560 2G 4HDMI)",
     "b": "AMD",
@@ -156576,7 +156591,8 @@ export const PARTS = [
     "formFactor": "DIMM"
   },
   {
-    "id": 100516,bench:65,
+    "id": 100516,
+    "bench": 65,
     "c": "Storage",
     "n": "WD_Black 2TB SN770 NVMe Internal Gaming SSD Solid State Drive - Gen4 PCIe, M.2 2280, Up to 5,150 MB/s - WDS200T3X0E - (Renewed)",
     "b": "Western Digital",
@@ -156601,7 +156617,8 @@ export const PARTS = [
     "formFactor": "M.2 2280"
   },
   {
-    "id": 100517,bench:51,
+    "id": 100517,
+    "bench": 51,
     "c": "Storage",
     "n": "WD_Black SN7100 4TB NVMe SSD - Gen4 PCIe, M.2 2280, Up to 7,000 MB/s Read Speed, Up to 6,700 MB/s Write Speed, Next Gen TLC 3D NAND, for Laptops, Handheld Gaming Devices - WDS400T4X0E",
     "b": "Western Digital",
@@ -156653,7 +156670,8 @@ export const PARTS = [
     "formFactor": "M.2"
   },
   {
-    "id": 100519,bench:14,
+    "id": 100519,
+    "bench": 14,
     "c": "Storage",
     "n": "Intel 660p Series M.2 2280 1TB PCIe NVMe 3.0 x4 3D2, QLC Internal Solid State Drive (SSD) SSDPEKNW010T8X1",
     "b": "Intel",
@@ -158892,7 +158910,8 @@ export const PARTS = [
     "bench": 29
   },
   {
-    "id": 100613,bench:38,
+    "id": 100613,
+    "bench": 38,
     "c": "CPU",
     "n": "AMD Ryzen™ 5 7500F",
     "b": "AMD",
@@ -160204,7 +160223,8 @@ export const PARTS = [
     "bench": 43
   },
   {
-    "id": 100669,bench:23,
+    "id": 100669,
+    "bench": 23,
     "c": "GPU",
     "n": "MOUGOL AMD Radeon RX 580 Gaming Graphics Card, 8GB GDDR5 256-Bit, Dual Fan Cooling, DP/HDMI/DVI Video Output, PCI Express X16 3.0, Computer GPU Support Windows 11/10/7 Desktop PC",
     "b": "AMD",
@@ -160663,7 +160683,8 @@ export const PARTS = [
     "memType": "GDDR3"
   },
   {
-    "id": 100689,bench:7,
+    "id": 100689,
+    "bench": 7,
     "c": "GPU",
     "n": "VISIONTEK AMD Radeon RX 550 SFF Single Fan 4GB GDDR5 PCIE 3.0 Graphics Card",
     "b": "AMD",
@@ -160708,7 +160729,8 @@ export const PARTS = [
     "bench": 71
   },
   {
-    "id": 100691,bench:7,
+    "id": 100691,
+    "bench": 7,
     "c": "GPU",
     "n": "VisionTek AMD Radeon RX 550 Graphic Card - 4 GB GDDR5 - Full-Height",
     "b": "AMD",
@@ -163527,7 +163549,8 @@ export const PARTS = [
     "formFactor": "3.5\""
   },
   {
-    "id": 100804,bench:1,
+    "id": 100804,
+    "bench": 1,
     "c": "Storage",
     "n": "Patriot P210 512GB Internal SSD - SATA 3 2.5\" - Solid State Drive - P210S512G25",
     "b": "Patriot",
@@ -163695,7 +163718,8 @@ export const PARTS = [
     "ff": "2.5\""
   },
   {
-    "id": 100811,bench:1,
+    "id": 100811,
+    "bench": 1,
     "c": "Storage",
     "n": "Western Digital 500GB WD Green SN350 NVMe Internal SSD Solid State Drive - Gen3 PCIe, M.2 2280, Up to 2,400 MB/s - WDS500G2G0C",
     "b": "Western Digital",
@@ -163769,7 +163793,8 @@ export const PARTS = [
     "formFactor": "M.2"
   },
   {
-    "id": 100814,bench:56,
+    "id": 100814,
+    "bench": 56,
     "c": "Storage",
     "n": "WD_Black SN850X 8TB NVMe SSD - M.2 2280, Up to 7,300 MB/s Read speeds, Up to 6,300 MB/s Write speeds, Gaming Expansion, High Performance Internal Solid State Drive - WDS800T2X0E",
     "b": "Western Digital",
@@ -163794,7 +163819,8 @@ export const PARTS = [
     "formFactor": "M.2 2280"
   },
   {
-    "id": 100815,bench:94,
+    "id": 100815,
+    "bench": 94,
     "c": "Storage",
     "n": "Samsung SSD 9100 PRO 8TB, PCIe 5.0x4 M.2 2280, Seq. Read Speeds Up to 14,800MB/s, Best for AI Computing, Gaming, and Heavy Duty Workstations (MZ VAP8T0B/AM)",
     "b": "Samsung",
@@ -163821,7 +163847,8 @@ export const PARTS = [
     "formFactor": "M.2 2280"
   },
   {
-    "id": 100816,bench:56,
+    "id": 100816,
+    "bench": 56,
     "c": "Storage",
     "n": "WD_Black SN850X 8TB NVMe SSD with Heatsink - M.2 2280, Up to 7,300 MB/s Read speeds, Up to 6,300 MB/s Write speeds, Gaming Expansion, High Performance Internal Solid State Drive - WDS800T2XHE",
     "b": "Western Digital",
@@ -163846,7 +163873,8 @@ export const PARTS = [
     "formFactor": "M.2 2280"
   },
   {
-    "id": 100817,bench:56,
+    "id": 100817,
+    "bench": 56,
     "c": "Storage",
     "n": "WD_Black 8TB SN850P NVMe M.2 SSD Officially Licensed Storage Expansion for PS5 Consoles, up to 7200MB/s, with heatsink - WDBBYV0080BNC-WRSN",
     "b": "Western Digital",
@@ -163899,7 +163927,8 @@ export const PARTS = [
     "formFactor": "M.2 2280"
   },
   {
-    "id": 100819,bench:65,
+    "id": 100819,
+    "bench": 65,
     "c": "Storage",
     "n": "WD_Black SN8100 8TB NVMe SSD - PCIe 5.0x4, M.2 2280, Up to 14,900MB/s Read Speed, up to 11,000MB/s Write Speed, Best for AI Applications, Gaming, and Video Editing - WDS800T1X0M",
     "b": "Western Digital",
@@ -163950,7 +163979,8 @@ export const PARTS = [
     "read": 1050
   },
   {
-    "id": 100821,bench:94,
+    "id": 100821,
+    "bench": 94,
     "c": "Storage",
     "n": "Samsung SSD 9100 PRO with Heatsink 8TB, PCIe 5.0x4 M.2 2280, Seq. Read Speeds Up to 14,800/13,400 MB/s, Best for AI Computing, Gaming, and Heavy Duty Workstations (MZ VAP8T0CW)",
     "b": "Samsung",
@@ -163977,7 +164007,8 @@ export const PARTS = [
     "formFactor": "M.2 2280"
   },
   {
-    "id": 100822,bench:87,
+    "id": 100822,
+    "bench": 87,
     "c": "Storage",
     "n": "WD_Black SN8100 1TB NVMe SSD with Heatsink - PCIe 5.0x4, M.2 2280, Up to 14,900MB/s Read Speed, up to 11,000MB/s Write Speed, Best for AI Applications, Gaming, and Video Editing - WDS100T1XHM",
     "b": "Western Digital",
@@ -164079,7 +164110,8 @@ export const PARTS = [
     "rpm": 5400
   },
   {
-    "id": 100826,bench:39,
+    "id": 100826,
+    "bench": 39,
     "c": "Storage",
     "n": "Kingston NV3 1TB M.2 2230 NVMe SSD | Up to 6000MB/s | SNV3SM3/1T0",
     "b": "Kingston",
@@ -165133,7 +165165,8 @@ export const PARTS = [
     "formFactor": "M.2"
   },
   {
-    "id": 100869,bench:54,
+    "id": 100869,
+    "bench": 54,
     "c": "Storage",
     "n": "SANDISK 1TB Portable SSD - Up to 800MB/s, USB-C, USB 3.2 Gen 2, Updated Firmware - External Solid State Drive - SDSSDE30-1T00-G26",
     "b": "SanDisk",
@@ -167125,7 +167158,7 @@ export const PARTS = [
       "amazon": {
         "asin": "B0GT94L8KJ",
         "url": "https://www.amazon.com/dp/B0GT94L8KJ?tag=tiereduptech-20",
-        "price": 199.98,
+        "price": 249.99,
         "inStock": true
       }
     },
@@ -168112,7 +168145,7 @@ export const PARTS = [
       "amazon": {
         "asin": "B0GT4QG179",
         "url": "https://www.amazon.com/dp/B0GT4QG179?tag=tiereduptech-20",
-        "price": 199.98,
+        "price": 249.99,
         "inStock": true
       }
     },
@@ -168239,7 +168272,7 @@ export const PARTS = [
       "amazon": {
         "asin": "B084LLD3PH",
         "url": "https://www.amazon.com/dp/B084LLD3PH?tag=tiereduptech-20",
-        "price": 62.01,
+        "price": 80.04,
         "inStock": true
       }
     },
@@ -168643,7 +168676,7 @@ export const PARTS = [
       "amazon": {
         "asin": "B0DVM3BJHK",
         "url": "https://www.amazon.com/dp/B0DVM3BJHK?tag=tiereduptech-20",
-        "price": 1229.99,
+        "price": 1143.89,
         "inStock": true
       }
     },
@@ -168827,7 +168860,7 @@ export const PARTS = [
       "amazon": {
         "asin": "B0DJQ43TXD",
         "url": "https://www.amazon.com/dp/B0DJQ43TXD?tag=tiereduptech-20",
-        "price": 169.99,
+        "price": 249,
         "inStock": true
       }
     },
@@ -169272,7 +169305,7 @@ export const PARTS = [
       "amazon": {
         "asin": "B0D2FSYS5J",
         "url": "https://www.amazon.com/dp/B0D2FSYS5J?tag=tiereduptech-20",
-        "price": 214.98,
+        "price": 239.41,
         "inStock": true
       }
     },
@@ -170141,7 +170174,7 @@ export const PARTS = [
       "amazon": {
         "asin": "B0CZWM44QP",
         "url": "https://www.amazon.com/dp/B0CZWM44QP?tag=tiereduptech-20",
-        "price": 619.99,
+        "price": 653.33,
         "inStock": true
       }
     },
@@ -171247,7 +171280,7 @@ export const PARTS = [
       "amazon": {
         "asin": "B0FJYNKQ5T",
         "url": "https://www.amazon.com/dp/B0FJYNKQ5T?tag=tiereduptech-20",
-        "price": 899.99,
+        "price": 599.99,
         "inStock": true
       }
     },
@@ -171460,7 +171493,7 @@ export const PARTS = [
       "amazon": {
         "asin": "B0D1RL9D39",
         "url": "https://www.amazon.com/dp/B0D1RL9D39?tag=tiereduptech-20",
-        "price": 745.27,
+        "price": 796.97,
         "inStock": true
       }
     },
@@ -171756,7 +171789,7 @@ export const PARTS = [
       "amazon": {
         "asin": "B0F87Y8QVR",
         "url": "https://www.amazon.com/dp/B0F87Y8QVR?tag=tiereduptech-20",
-        "price": 28.7,
+        "price": 25.83,
         "inStock": true
       }
     },
