@@ -501,6 +501,10 @@ table { max-width: 100%; }
 
   /* how-grid (features 1fr 1fr 1fr / 1fr 1fr) -> 1 column */
   .how-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
+  /* scanner page step/feature grids -> 1 column on mobile */
+  .scanner-steps, .scanner-feats { grid-template-columns: 1fr !important; }
+  .scanner-steps > div, .scanner-feats > div { border-right: none !important; border-bottom: 1px solid var(--bdr); }
+  .scanner-steps > div:last-child, .scanner-feats > div:last-child { border-bottom: none; }
 }
 
 /* === MOBILE (<=640px) === */
@@ -1145,111 +1149,120 @@ function Nav({page,setPage,onBrowse,th,theme,toggleTheme}){
 function ScannerPage({go}) {
   return (
     <div className="fade">
-      <SEO title="Pro Rig Scanner — Free PC Hardware Scanner for Windows" description="Download our free Windows app that detects your PC hardware automatically and recommends personalized upgrades within your budget. 100% private — no data collected." canonical="https://prorigbuilder.com/#scanner" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Scanner",url:"https://prorigbuilder.com/#scanner"}]}/>
-      {/* ── HERO ── */}
-      <div style={{background:"var(--heroGrad)",position:"relative",overflow:"hidden"}}>
-        <div style={{position:"absolute",top:"10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
-        <div style={{maxWidth:1536,margin:"0 auto",padding:"72px 32px 56px",position:"relative"}}>
-          <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--amber)",color:"#1a1a20",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:13,fontWeight:800,letterSpacing:1.5,marginBottom:24}}>
-            ✨ NEW · PROPRIETARY SOLUTION
-          </div>
-          <h1 style={{fontFamily:"var(--ff)",fontSize:54,fontWeight:800,color:"var(--txt)",lineHeight:1.05,letterSpacing:-1.2,maxWidth:940}}>
-            Meet the <span style={{background:"linear-gradient(135deg, var(--accent), var(--amber))",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>Pro Rig Scanner</span>
-          </h1>
-          <p style={{fontFamily:"var(--ff)",fontSize:22,color:"var(--dim)",marginTop:18,lineHeight:1.7,maxWidth:820}}>
-            Download our free Windows app, run a quick scan, and get personalized upgrade recommendations tailored to your budget. The scan runs 100% locally on your PC — we never see, store, or collect any of your hardware data. No other site offers this.
-          </p>
-          <div style={{display:"flex",gap:12,marginTop:32,flexWrap:"wrap"}}>
-            <a href="https://github.com/tiereduptech/pro-rig-builder/releases/latest/download/ProRigScanner.exe" download style={{textDecoration:"none",padding:"14px 32px",borderRadius:14,fontSize:15,fontFamily:"var(--ff)",fontWeight:700,background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 24px rgba(255,107,53,.3)",display:"inline-flex",alignItems:"center",gap:8,transition:"transform .15s"}}
-              onMouseEnter={e=>e.currentTarget.style.transform="translateY(-1px)"}
-              onMouseLeave={e=>e.currentTarget.style.transform="none"}>
-              📥 Download for Windows
-            </a>
-            <button onClick={()=>go("search")} style={{padding:"14px 32px",borderRadius:14,fontSize:15,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>
-              Browse Parts Manually
-            </button>
-          </div>
-          <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mute)",marginTop:14,letterSpacing:1}}>
-            WINDOWS 10 / 11 · 100% PRIVATE · NO ACCOUNT · NO TRACKING · FREE
-          </div>
+      <SEO title="Pro Rig Scanner — Free PC Hardware Scanner for Windows" description="Download our free Windows app to scan your PC hardware and get personalized, budget-aware upgrade recommendations. 100% private, no account needed." />
+
+      {/* === MASTHEAD STRIP === */}
+      <div style={{borderBottom:"1px solid var(--bdr)",padding:"10px 32px",fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",letterSpacing:"0.04em",textTransform:"uppercase",display:"flex",justifyContent:"space-between",flexWrap:"wrap",gap:8}}>
+        <span>The Pro Rig Scanner</span>
+        <span>Windows 10 / 11 &middot; Free &middot; No account</span>
+      </div>
+
+      {/* === HERO === */}
+      <div style={{maxWidth:1600,margin:"0 auto",padding:"64px 32px 32px"}}>
+        <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase",marginBottom:18}}>Free Windows app</div>
+        <h1 style={{fontFamily:"var(--ff-display)",fontWeight:600,fontSize:"clamp(40px, 6vw, 72px)",lineHeight:1.02,letterSpacing:"-0.02em",color:"var(--txt)",margin:"0 0 20px"}}>
+          Know your PC.<br/>
+          <em style={{fontStyle:"italic",color:"var(--accent)",fontWeight:500}}>Scan it in seconds.</em>
+        </h1>
+        <p style={{fontFamily:"var(--ff)",fontSize:18,lineHeight:1.5,color:"var(--dim)",maxWidth:640,margin:"0 0 32px"}}>
+          Run a quick scan and get personalized, budget-aware upgrade recommendations tailored to your exact hardware. Free, no signup.
+        </p>
+        <div style={{display:"flex",gap:12,flexWrap:"wrap",alignItems:"center"}}>
+          <a href="https://github.com/tiereduptech/pro-rig-builder/releases/latest/download/ProRigScanner.exe" download style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,padding:"13px 24px",background:"var(--accent)",color:"#fff",border:"1px solid var(--accent)",cursor:"pointer",textDecoration:"none",display:"inline-block"}}>Download for Windows</a>
+          <button onClick={()=>go("search")} style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:500,padding:"13px 24px",background:"none",color:"var(--txt)",border:"1px solid var(--bdr)",cursor:"pointer"}}>Browse Parts Manually</button>
+        </div>
+        <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",marginTop:16,letterSpacing:"0.04em",textTransform:"uppercase"}}>
+          Windows 10 / 11 &middot; 100% private &middot; No account &middot; No tracking &middot; Free
         </div>
       </div>
 
-      {/* ── HOW IT WORKS ── */}
-      <div style={{background:"var(--bg2)",borderBottom:"1px solid var(--bdr)"}}>
-        <div style={{maxWidth:1536,margin:"0 auto",padding:"64px 32px"}}>
-          <div style={{textAlign:"center",marginBottom:48}}>
-            <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--accent)",fontWeight:600,letterSpacing:2,marginBottom:8}}>HOW IT WORKS</div>
-            <h2 style={{fontFamily:"var(--ff)",fontSize:32,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5}}>Three steps. Thirty seconds.</h2>
-          </div>
-          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:32}} className="how-grid">
+      {/* === §01 — HOW IT WORKS === */}
+      <div style={{maxWidth:1600,margin:"24px auto 56px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="how-grid">
+        <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase"}}>§01</div>
+        <div>
+          <h2 style={{fontFamily:"var(--ff-display)",fontWeight:600,fontSize:"clamp(26px, 3vw, 36px)",letterSpacing:"-0.02em",color:"var(--txt)",margin:"0 0 28px"}}>Three steps to a smarter upgrade</h2>
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:0,border:"1px solid var(--bdr)"}} className="scanner-steps">
             {[
-              {n:"01",t:"Download & Run",d:"Get the free Pro Rig Scanner for Windows. Under 2 MB, no install, no account required. Just double-click to launch."},
-              {n:"02",t:"Scan Your Hardware",d:"The scanner detects your CPU, GPU, RAM, storage, and motherboard in about 10 seconds. Choose your budget and storage preferences."},
-              {n:"03",t:"Get Recommendations",d:"Open your personalized upgrade page on prorigbuilder.com with ranked options, pricing, and compatibility already validated."},
-            ].map(s=><div key={s.n} style={{background:"var(--bg3)",borderRadius:14,padding:"28px 24px",border:"1px solid var(--bdr)"}}>
-              <div style={{fontFamily:"var(--mono)",fontSize:36,fontWeight:800,color:"var(--accent)",opacity:.4,lineHeight:1,marginBottom:14}}>{s.n}</div>
-              <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:700,color:"var(--txt)",marginBottom:10}}>{s.t}</div>
-              <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.65}}>{s.d}</div>
-            </div>)}
+              {n:"01",t:"Download & Run",d:"Get the free Pro Rig Scanner for Windows. Under 2 MB, no install, no account."},
+              {n:"02",t:"Scan Your Hardware",d:"The scanner detects your CPU, GPU, RAM, storage, and motherboard in about ten seconds."},
+              {n:"03",t:"Get Recommendations",d:"Open your personalized upgrade page with ranked options that fit your budget."},
+            ].map((s,i)=>(
+              <div key={s.n} style={{padding:"28px 24px",borderRight:i<2?"1px solid var(--bdr)":"none",background:"var(--bg2)"}}>
+                <div style={{fontFamily:"var(--ff-display)",fontSize:40,fontWeight:600,color:"var(--accent)",lineHeight:1,marginBottom:14}}>{s.n}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:600,color:"var(--txt)",marginBottom:8}}>{s.t}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.6}}>{s.d}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
 
-      {/* ── WHY IT'S DIFFERENT ── */}
-      <div style={{maxWidth:1536,margin:"0 auto",padding:"64px 32px"}}>
-        <div style={{textAlign:"center",marginBottom:48}}>
-          <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--accent)",fontWeight:600,letterSpacing:2,marginBottom:8}}>WHY SCANNER</div>
-          <h2 style={{fontFamily:"var(--ff)",fontSize:32,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5}}>No other site does this.</h2>
-        </div>
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:24}} className="how-grid">
-          {[
-            {i:"🔍",t:"No guessing required",d:"You don't need to know your CPU or GPU model. The scanner reads it directly from your PC. Accurate every time."},
-            {i:"🎯",t:"Budget-aware recommendations",d:"Tell us your budget — we'll recommend the biggest performance upgrade for the money, including motherboard/RAM if your platform is outdated."},
-            {i:"🔒",t:"100% private by design",d:"Scans run entirely on your PC. We never see, store, or transmit your hardware details anywhere. Your data never leaves your machine. Period."},
-            {i:"💎",t:"Built exclusively here",d:"You won't find this feature on PCPartPicker, Newegg, or any other builder site. Pro Rig Builder is the only one offering it."},
-          ].map(f=><div key={f.t} style={{background:"var(--card)",borderRadius:14,padding:"24px 22px",border:"1px solid var(--bdr)",display:"flex",gap:16,alignItems:"flex-start"}}>
-            <div style={{fontSize:32,lineHeight:1}}>{f.i}</div>
-            <div>
-              <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)",marginBottom:6}}>{f.t}</div>
-              <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.6}}>{f.d}</div>
-            </div>
-          </div>)}
+      {/* === §02 — WHY IT'S DIFFERENT === */}
+      <div style={{maxWidth:1600,margin:"0 auto 56px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="how-grid">
+        <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase"}}>§02</div>
+        <div>
+          <h2 style={{fontFamily:"var(--ff-display)",fontWeight:600,fontSize:"clamp(26px, 3vw, 36px)",letterSpacing:"-0.02em",color:"var(--txt)",margin:"0 0 28px"}}>No other parts site does this</h2>
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:0,border:"1px solid var(--bdr)"}} className="scanner-feats">
+            {[
+              {n:"01",t:"No guessing required",d:"You don't need to know your CPU or GPU model. The scanner reads it directly from your hardware."},
+              {n:"02",t:"Budget-aware recommendations",d:"Tell us your budget — we recommend the biggest performance gain your money can buy."},
+              {n:"03",t:"100% private by design",d:"Scans run entirely on your PC. We never see, store, or transmit your hardware data."},
+              {n:"04",t:"Built exclusively here",d:"You won't find this feature on PCPartPicker, Newegg, or any other parts site."},
+            ].map((f,i)=>(
+              <div key={f.t} style={{padding:"26px 24px",borderRight:i%2===0?"1px solid var(--bdr)":"none",borderTop:i>1?"1px solid var(--bdr)":"none",background:"var(--bg2)"}}>
+                <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.08em",marginBottom:10}}>{f.n}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:600,color:"var(--txt)",marginBottom:6}}>{f.t}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.6}}>{f.d}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* ── SMARTSCREEN REASSURANCE ── */}
-      <div style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)"}}>
-        <div style={{maxWidth:940,margin:"0 auto",padding:"48px 32px"}}>
-          <div style={{background:"var(--card)",border:"1px solid var(--bdr)",borderRadius:14,padding:"24px 26px"}}>
-            <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:12}}>
-              <span style={{fontSize:22}}>🛡️</span>
-              <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)"}}>Seeing a Windows warning?</div>
-            </div>
-            <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.7,marginBottom:12}}>
-              Windows SmartScreen may show a warning because Pro Rig Scanner is newly released. The app is <strong style={{color:"var(--txt)"}}>digitally signed by TieredUp Tech, Inc.</strong> (our parent company) and safe to run.
+      {/* === §03 — WHY WE BUILT IT === */}
+      <div style={{maxWidth:1600,margin:"0 auto 56px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="how-grid">
+        <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase"}}>§03</div>
+        <div>
+          <h2 style={{fontFamily:"var(--ff-display)",fontWeight:600,fontSize:"clamp(26px, 3vw, 36px)",letterSpacing:"-0.02em",color:"var(--txt)",margin:"0 0 24px"}}>Why we built the Pro Rig Scanner</h2>
+          <div style={{borderTop:"1px solid var(--bdr)",borderBottom:"1px solid var(--bdr)",padding:"28px 0",maxWidth:760}}>
+            <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:"0 0 14px"}}>
+              Most people upgrading a PC hit the same wall: they don't know what they already have. Finding your exact CPU, GPU, RAM speed, and motherboard means digging through Windows menus, decoding cryptic model numbers, and hoping you read them right. One wrong spec and the upgrade you buy doesn't fit, doesn't help, or isn't even an upgrade.
             </p>
-            <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.7,marginBottom:0}}>
-              <strong style={{color:"var(--txt)"}}>To run it:</strong> Click <span style={{fontFamily:"var(--mono)",fontSize:13,background:"var(--bg4)",padding:"2px 8px",borderRadius:4,color:"var(--accent)"}}>More info</span> on the blue warning, then click <span style={{fontFamily:"var(--mono)",fontSize:13,background:"var(--bg4)",padding:"2px 8px",borderRadius:4,color:"var(--accent)"}}>Run anyway</span>. The warning will disappear automatically as more users download without issue.
+            <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:"0 0 14px"}}>
+              Most parts sites assume you already know all of this. The Pro Rig Scanner doesn't. It reads your hardware directly, so the recommendations you get are based on what's actually in your machine &mdash; not on what you guessed.
+            </p>
+            <p style={{fontFamily:"var(--ff)",fontSize:16,lineHeight:1.65,color:"var(--txt)",margin:0}}>
+              It runs entirely on your PC. Nothing about your hardware is uploaded, stored, or tracked. That was a deliberate choice &mdash; a tool that inspects your computer should never become a tool that surveils it.
             </p>
           </div>
         </div>
       </div>
 
-      {/* ── DOWNLOAD CTA ── */}
-      <div style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)"}}>
-        <div style={{maxWidth:940,margin:"0 auto",padding:"64px 32px",textAlign:"center"}}>
-          <h2 style={{fontFamily:"var(--ff)",fontSize:32,fontWeight:800,color:"var(--txt)",letterSpacing:-0.5,marginBottom:14}}>Ready to find your next upgrade?</h2>
-          <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",marginBottom:28,lineHeight:1.65}}>
+      {/* === SMARTSCREEN REASSURANCE === */}
+      <div style={{maxWidth:1600,margin:"0 auto 56px",padding:"0 32px"}}>
+        <div style={{border:"1px solid var(--bdr)",borderLeft:"3px solid var(--accent)",background:"var(--bg2)",padding:"24px 26px",maxWidth:940}}>
+          <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:600,color:"var(--txt)",marginBottom:10}}>Seeing a Windows warning?</div>
+          <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.7,margin:"0 0 10px"}}>
+            Windows SmartScreen may show a warning because Pro Rig Scanner is newly released. The app is <strong style={{color:"var(--txt)"}}>code-signed by TieredUp Tech</strong> and completely safe.
+          </p>
+          <p style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.7,margin:0}}>
+            <strong style={{color:"var(--txt)"}}>To run it:</strong> click <span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--txt)"}}>More info</span>, then <span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--txt)"}}>Run anyway</span>.
+          </p>
+        </div>
+      </div>
+
+      {/* === DOWNLOAD CTA === */}
+      <div style={{maxWidth:1600,margin:"0 auto 64px",padding:"0 32px"}}>
+        <div style={{borderTop:"2px solid var(--txt)",paddingTop:40}}>
+          <h2 style={{fontFamily:"var(--ff-display)",fontWeight:600,fontSize:"clamp(28px, 4vw, 44px)",letterSpacing:"-0.02em",color:"var(--txt)",margin:"0 0 14px"}}>
+            Ready to see your <em style={{fontStyle:"italic",color:"var(--accent)",fontWeight:500}}>upgrade path?</em>
+          </h2>
+          <p style={{fontFamily:"var(--ff)",fontSize:16,color:"var(--dim)",lineHeight:1.6,maxWidth:560,margin:"0 0 28px"}}>
             Download the Pro Rig Scanner and get personalized recommendations in under a minute.
           </p>
-          <a href="https://github.com/tiereduptech/pro-rig-builder/releases/latest/download/ProRigScanner.exe" download style={{textDecoration:"none",padding:"16px 40px",borderRadius:14,fontSize:17,fontFamily:"var(--ff)",fontWeight:700,background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 28px rgba(255,107,53,.35)",display:"inline-flex",alignItems:"center",gap:10,transition:"transform .15s"}}
-            onMouseEnter={e=>e.currentTarget.style.transform="translateY(-2px)"}
-            onMouseLeave={e=>e.currentTarget.style.transform="none"}>
-            📥 Download Pro Rig Scanner
-          </a>
-          <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mute)",marginTop:16,letterSpacing:1}}>
-            Free · Windows 10/11 · 100% Private · No account · No tracking · No data collection
+          <a href="https://github.com/tiereduptech/pro-rig-builder/releases/latest/download/ProRigScanner.exe" download style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,padding:"14px 28px",background:"var(--accent)",color:"#fff",border:"1px solid var(--accent)",cursor:"pointer",textDecoration:"none",display:"inline-block"}}>Download Pro Rig Scanner</a>
+          <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",marginTop:16,letterSpacing:"0.04em",textTransform:"uppercase"}}>
+            Free &middot; Windows 10/11 &middot; 100% private &middot; No account &middot; No tracking
           </div>
         </div>
       </div>
