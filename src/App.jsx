@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect, useRef, useCallback } from "react"
+import { Box, Cpu, Snowflake, CircuitBoard, MemoryStick, Square, HardDrive, Plug, Fan, Volume2, Globe, Wifi, Disc, Cable, Monitor, AppWindow, Keyboard, Mouse, Headphones, Camera, Mic, MousePointer, Armchair, Table, Beaker, ExternalLink, Shield, FileVideo, BatteryCharging, Gamepad2, Briefcase, Palette, Video, GraduationCap, Download, Share2, RefreshCw, Link as LinkIcon, CircleAlert, CircleCheck } from 'lucide-react';
 import { Helmet } from "react-helmet-async";;
 import PageMeta from "./PageMeta.jsx";
 import { PARTS as RAW_SEED_PARTS } from "./data/parts.js";
@@ -3812,7 +3813,7 @@ function BuilderPage({th}){
             <div className="builder-picker-row" style={{display:"grid",gridTemplateColumns:"130px 1fr 180px 70px 40px",gap:0,padding:"10px 16px",alignItems:"center",borderBottom:"1px solid var(--bdr)",cursor:canAdd?"pointer":"default",background:isPicking2?"var(--sky)06":"transparent"}}
               onClick={()=>canAdd&&setPicking(isPicking2?null:cat)}>
               <div style={{display:"flex",alignItems:"center",gap:6}}>
-                <CatIcon c={c} size={15}/>
+                <CatIcon c={cat} size={15}/>
                 <div><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>{meta.singular||meta.label}</div>
                 <div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--mute)"}}>{compatList.length} options</div></div>
               </div>
