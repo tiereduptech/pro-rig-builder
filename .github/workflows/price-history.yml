@@ -1,0 +1,84 @@
+name: Price History Snapshot
+
+on:
+  schedule:
+    # Daily at 07:00 UTC — before the catalog verifier (08:00) so it
+    # records the prices that were live for the full preceding day.
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Record price snapshot
+        run: node record-price-snapshot.js
+
+      - name: Check for history changes
+        id: changes
+        run: |
+          if git diff --quiet catalog-build/price-history.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes to price-history.json"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Price history updated"
+          fi
+
+      - name: Commit and push (with rebase retry)
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Stash our change so rebase doesn't conflict
+          git stash push -m "price-history" -- catalog-build/price-history.json
+
+          for i in 1 2 3; do
+            echo "Push attempt $i/3"
+            git pull --rebase origin main || { echo "rebase failed"; exit 1; }
+            git stash pop || { echo "stash pop failed - conflicting changes"; exit 1; }
+
+            git add catalog-build/price-history.json
+            git commit -m "chore(price-history): daily snapshot
+
+          Automated daily price snapshot.
+          Triggered by: ${{ github.event_name }}"
+
+            if git push origin main; then
+              echo "Push succeeded on attempt $i"
+              exit 0
+            else
+              echo "Push rejected, retrying..."
+              git reset HEAD~1
+              git stash push -m "price-history" -- catalog-build/price-history.json
+              sleep 5
+            fi
+          done
+
+          echo "All push attempts failed"
+          exit 1
+
+      - name: Job summary
+        if: always()
+        run: |
+          echo "## Price History Snapshot" >> $GITHUB_STEP_SUMMARY
+          echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Changes committed**: ${{ steps.changes.outputs.changed }}" >> $GITHUB_STEP_SUMMARY

@@ -7,7 +7,8 @@ inspect-coupons.cjs
 # Build artifacts & working dirs
 pchw-scanner/bin/
 pchw-scanner/obj/
-catalog-build/
+catalog-build/*
+!catalog-build/price-history.json
 verify-reports/
 public/downloads/
 dist/downloads/
