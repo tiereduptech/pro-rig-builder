@@ -3,6 +3,73 @@ import { Box, Cpu, Snowflake, CircuitBoard, MemoryStick, Square, HardDrive, Plug
 import { Helmet } from "react-helmet-async";;
 import PageMeta from "./PageMeta.jsx";
 import { PARTS as RAW_SEED_PARTS } from "./data/parts.js";
+
+// DISPLAY-TIME NAME CLEANER (GPU only for now)
+// Strips marketing fluff, parentheticals, trademark symbols.
+// Does NOT mutate catalog. Use as {cleanProductName(p)} in JSX.
+const _CLEAN_SUBSERIES = [
+  'ROG Astral','ROG Strix','TUF Gaming','TUF','Prime','Dual','ProArt','Phoenix','Turbo',
+  'Gaming Trio','Gaming X Trio','Gaming X Slim','SUPRIM Liquid X','SUPRIM X','SUPRIM',
+  'Ventus 3X','Ventus 2X','Shadow 3X','Shadow 2X','Inspire 3X','Expert',
+  'AORUS Master','AORUS Elite','AORUS Xtreme','AORUS','Eagle MAX','Eagle OC','Eagle',
+  'Windforce','Gaming OC','Gaming X',
+  'FTW3 Ultra','FTW3','XC3 Ultra','XC3','XC',
+  'AMP Extreme AIRO','AMP Extreme','AMP Holo','AMP','Twin Edge OC','Twin Edge','Trinity OC','Trinity','Solid OC','Solid',
+  'NITRO+','PULSE','Toxic',
+  'Red Devil','Hellhound','Fighter','Reaper',
+  'SWFT','Speedster',
+  'Verto','XLR8',
+  'TITAN OC','TITAN',
+];
+const _CLEAN_AIB_BRANDS = ['ASUS','MSI','GIGABYTE','Gigabyte','EVGA','PNY','PowerColor','Sapphire','Sparkle','XFX','ZOTAC','Yeston','ASRock','Inno3D','Galax'];
+
+function cleanProductName(p){
+  if(!p || !p.n) return '';
+  if(p.c !== 'GPU') return p.n;
+  const name = p.n.replace(/[™®©]/g,'');
+  const brand = (p.b || '').replace(/[™®©]/g,'');
+  let model = null, m;
+  if((m = name.match(/\b(RTX|GTX)\s*(\d{3,4})\s*(Ti\s*Super|Super|Ti|XT|XTX|GRE)?\b/i))){
+    const variant = m[3] ? ' ' + m[3].replace(/\s+/g,' ').replace(/ti/i,'Ti').replace(/super/i,'Super') : '';
+    model = m[1].toUpperCase() + ' ' + m[2] + variant;
+  } else if((m = name.match(/\bRX\s*(\d{3,4})\s*(XT|XTX|GRE)?\b/i))){
+    const variant = m[2] ? ' ' + m[2].toUpperCase() : '';
+    model = 'RX ' + m[1] + variant;
+  } else if((m = name.match(/\bArc\s*([AB])(\d{3,4})\b/i))){
+    model = 'Arc ' + m[1].toUpperCase() + m[2];
+  } else if((m = name.match(/\bRTX\s*A(\d{3,4})\b/i))){
+    model = 'RTX A' + m[1];
+  }
+  if(!model) return p.n;
+  let chipMaker = null;
+  if(/^RTX|^GTX/i.test(model)) chipMaker = 'NVIDIA';
+  else if(/^RX/i.test(model)) chipMaker = 'AMD';
+  else if(/^Arc/i.test(model)) chipMaker = 'Intel';
+  const aibBrand = _CLEAN_AIB_BRANDS.includes(brand) ? brand : null;
+  let subSeries = null;
+  for(const sub of _CLEAN_SUBSERIES){
+    const re = new RegExp('\\b' + sub.replace(/[.*+?^${}()|[\]\\]/g,'\\import { PARTS as RAW_SEED_PARTS } from "./data/parts.js";') + '\\b','i');
+    if(re.test(name)){ subSeries = sub; break; }
+  }
+  const hasOC = /\bOC\b/i.test(name);
+  const hasBTF = /\bBTF\b/i.test(name);
+  const isWhite = /\bWhite\b/i.test(name);
+  const isBlack = /\bBlack\b/i.test(name);
+  const parts = [];
+  if(aibBrand) parts.push(aibBrand);
+  if(subSeries) parts.push(subSeries);
+  if(chipMaker) parts.push(chipMaker);
+  if(chipMaker === 'NVIDIA') parts.push('GeForce');
+  else if(chipMaker === 'AMD') parts.push('Radeon');
+  parts.push(model);
+  if(hasOC && !(subSeries && /OC/.test(subSeries))) parts.push('OC');
+  if(hasBTF) parts.push('BTF');
+  if(isWhite) parts.push('White');
+  else if(isBlack) parts.push('Black');
+  if(p.vram != null) parts.push(p.vram + 'GB');
+  return parts.join(' ').replace(/\s+/g,' ').trim() || p.n;
+}
+
 // Hide quarantined products from browse/builder/search
 const SEED_PARTS = RAW_SEED_PARTS.filter(p => !p.needsReview);
 const ACTIVE_SEED_PARTS = SEED_PARTS;
@@ -2985,7 +3052,7 @@ function SearchPage({activeCat,th}){
           return <div key={p.id}>
             {isExp && <ProductSchema p={p}/>}
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`4fr ${cols.map(()=>"1fr").join(" ")} 60px 80px 70px`,gap:8,padding:"10px 12px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0,transition:"background .2s"}}>
-              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}><ChevronRight size={16} strokeWidth={2} style={{flexShrink:0,color:"var(--dim)",transition:"transform .2s",transform:isExp?"rotate(90deg)":"rotate(0deg)"}}/>{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:100,height:100,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:56,width:100,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2,flexWrap:"wrap"}}><span style={{fontSize:13,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)",whiteSpace:"nowrap",flexShrink:0}}>🔥 DEAL -${dealSavings(p)}</span>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
+              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}><ChevronRight size={16} strokeWidth={2} style={{flexShrink:0,color:"var(--dim)",transition:"transform .2s",transform:isExp?"rotate(90deg)":"rotate(0deg)"}}/>{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:100,height:100,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:56,width:100,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{cleanProductName(p)}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2,flexWrap:"wrap"}}><span style={{fontSize:13,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)",whiteSpace:"nowrap",flexShrink:0}}>🔥 DEAL -${dealSavings(p)}</span>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
               {cols.map(col=>{const v=p[col];const fmtVal=fmt(col,v,p);return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:typeof fmtVal==="string"&&fmtVal.includes("\n")?<div><div style={{fontFamily:"var(--ff)",fontSize:13,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal.split("\n")[0]}</div><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{fmtVal.split("\n")[1]}</div></div>:<span style={{fontFamily:"var(--ff)",fontSize:13,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal}</span>}</div>})}
               {(()=>{if(p.bench==null)return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)"}}>—</span></div>;const ratio=Math.round(valueRatio(p)*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:800,color:gc}}>{grade}</span></div>;})()}
               <div style={{textAlign:"right"}}>{isDeal(p)&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>}<div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</div>{rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{rr.length} stores</div>}</div>
@@ -3334,7 +3401,7 @@ function CurrentBuildSidebar({cat, build}){
           </div>
           <div style={{flex:1,minWidth:0}}>
             <div style={{fontSize:11,fontWeight:600,color:isCurrent?"var(--accent)":"var(--dim)",letterSpacing:"0.04em",textTransform:"uppercase"}}>{slot}{isCurrent && " · picking"}</div>
-            {p ? <div style={{fontSize:12,color:"var(--txt)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",marginTop:2}}>{p.n}</div>
+            {p ? <div style={{fontSize:12,color:"var(--txt)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",marginTop:2}}>{cleanProductName(p)}</div>
                : <div style={{fontSize:12,color:"var(--mute)",fontStyle:"italic",marginTop:2}}>—</div>}
           </div>
         </div>;
@@ -3483,7 +3550,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
               <div style={{display:"flex",alignItems:"center",gap:8,minWidth:0}}>
                 {p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:36,height:36,objectFit:"contain",borderRadius:6,background:"#fff",flexShrink:0}}/>:<span style={{fontSize:17}}>{meta.icon}</span>}
                 <div style={{minWidth:0}}>
-                  <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{p.n}</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{cleanProductName(p)}</div>
                   <div style={{display:"flex",alignItems:"center",gap:4,marginTop:1}}>
                     <span style={{fontSize:10,color:"var(--dim)"}}>{p.b}</span>
                     <Stars r={p.r} s={9}/>
