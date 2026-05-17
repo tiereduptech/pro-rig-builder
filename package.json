@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node split-price-history.js && vite build && node prerender.cjs",
+    "build": "node split-price-history.js && node split-reviews.js && vite build && node prerender.cjs",
     "preview": "vite preview",
     "build:fast": "vite build",
     "start": "node server.cjs"

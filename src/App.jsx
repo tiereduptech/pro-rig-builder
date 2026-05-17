@@ -86,6 +86,82 @@ function PriceHistoryChart({ product, retailer }){
   );
 }
 
+// ─── PRODUCT REVIEWS ─────────────────────────────────────────────
+// Fetches /reviews/<slug>.json (per-product file from split-reviews.js)
+// and renders up to 5 customer reviews. Renders nothing if none exist.
+function ReviewStarRow({ rating }){
+  const full = Math.round(rating || 0);
+  return <span style={{color:"var(--accent)",fontSize:13,letterSpacing:1}}>
+    {"\u2605".repeat(full)}<span style={{color:"var(--bdr2)"}}>{"\u2605".repeat(5-full)}</span>
+  </span>;
+}
+
+// reviewSlug — finds a product's review file. Mirrors fetch-bestbuy-reviews.js
+// reviewKey() + split-reviews.js slug(): ASIN-first, else name-based.
+function reviewSlug(p){
+  let asin = p && p.asin ? String(p.asin).toUpperCase() : null;
+  if(!asin){
+    const u = p && p.deals && p.deals.amazon && p.deals.amazon.url;
+    const m = u && String(u).match(/\/dp\/([A-Z0-9]{10})/);
+    if(m) asin = m[1].toUpperCase();
+  }
+  if(asin) return "asin-" + asin.toLowerCase().replace(/[^a-z0-9]/g,"");
+  const n = String((p&&p.n)||"").toLowerCase().replace(/\s+/g," ").replace(/[^a-z0-9 ]/g,"").trim();
+  if(!n) return "";
+  return n.replace(/\s+/g,"-").replace(/[^a-z0-9-]/g,"").replace(/-+/g,"-")
+    .replace(/^-|-$/g,"").slice(0,80).replace(/-$/,"");
+}
+
+function ProductReviews({ product }){
+  const [state, setState] = useState({ status: "loading", reviews: null });
+  useEffect(() => {
+    let cancelled = false;
+    const slug = reviewSlug(product);
+    if (!slug) { setState({ status: "none", reviews: null }); return; }
+    fetch("/reviews/" + slug + ".json")
+      .then(r => r.ok ? r.json() : Promise.reject(new Error("no reviews")))
+      .then(data => {
+        if (cancelled) return;
+        const rv = data && data.reviews;
+        if (Array.isArray(rv) && rv.length) setState({ status: "ok", reviews: rv });
+        else setState({ status: "none", reviews: null });
+      })
+      .catch(() => { if (!cancelled) setState({ status: "none", reviews: null }); });
+    return () => { cancelled = true; };
+  }, [product && product.id]);
+
+  // Render nothing while loading or when there are no reviews — keeps the
+  // spec area clean for the ~95% of products without Best Buy reviews.
+  if (state.status !== "ok" || !state.reviews) return null;
+
+  const reviews = state.reviews;
+  const avg = reviews.reduce((s, r) => s + (r.rating || 0), 0) / reviews.length;
+
+  return (
+    <div style={{marginTop:18}}>
+      <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:12}}>
+        <span style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",fontWeight:700,letterSpacing:1,textTransform:"uppercase"}}>Customer Reviews</span>
+        <ReviewStarRow rating={avg} />
+        <span style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)"}}>{avg.toFixed(1)} \u00b7 {reviews.length} review{reviews.length>1?"s":""}</span>
+      </div>
+      <div style={{display:"flex",flexDirection:"column",gap:10}}>
+        {reviews.map((r, i) => (
+          <div key={i} style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px 14px"}}>
+            <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:4}}>
+              <ReviewStarRow rating={r.rating} />
+              <span style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--txt)"}}>{r.title}</span>
+            </div>
+            <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)",lineHeight:1.5,whiteSpace:"pre-wrap"}}>{r.comment}</div>
+            <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginTop:6}}>
+              {(r.author || "Anonymous")}{r.date ? " \u00b7 " + String(r.date).slice(0,10) : ""}{r.source ? " \u00b7 via " + r.source : ""}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function cleanProductName(p){
   if(!p || !p.n) return '';
   // ── CPU name cleaner ──────────────────────────────────────────
@@ -3280,6 +3356,8 @@ function SearchPage({activeCat,initialQuery,th}){
                   </div>}
                 </div>
               </div>
+
+              <ProductReviews product={p}/>
 
               {/* Value + Future-Proofing */}
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:14,marginTop:20,paddingTop:20,borderTop:"1px solid var(--bdr)"}}>
