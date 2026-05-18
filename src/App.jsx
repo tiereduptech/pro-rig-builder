@@ -160,7 +160,7 @@ function ProductReviews({ product }){
       <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:12}}>
         <span style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",fontWeight:700,letterSpacing:1,textTransform:"uppercase"}}>Customer Reviews</span>
         <ReviewStarRow rating={avg} />
-        <span style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)"}}>{avg.toFixed(1)} \u00b7 {reviews.length} review{reviews.length>1?"s":""}</span>
+        <span style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)"}}>{avg.toFixed(1)} {"\u00b7"} {reviews.length} review{reviews.length>1?"s":""}</span>
       </div>
       <div style={{display:"flex",flexDirection:"column",gap:10}}>
         {reviews.map((r, i) => (
