@@ -3365,21 +3365,11 @@ function SearchPage({activeCat,initialQuery,th}){
                       </div>;
                     })}
                   </div>
-                  {(p.r||p.reviews)&&<div style={{marginTop:10,display:"flex",justifyContent:"center",padding:"8px 0"}}><ReviewStars rating={p.r} reviews={p.reviews} size="md"/></div>}
-                  {rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textAlign:"center",marginTop:8}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(rr[rr.length-1].price-rr[0].price).toFixed(2)}</span> at {rr[0].name} vs {rr[rr.length-1].name}</div>}
-                  {p.msrp&&p.msrp>$(p)&&<div style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:6,background:"var(--bg4)",border:"1px solid var(--bdr)",marginTop:8}}><span style={{fontSize:17}}>💰</span><div style={{flex:1}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Below MSRP</div><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>Was <span style={{textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span> → ${fmtPrice($(p))}</div></div><span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--mint)"}}>{Math.round((1-$(p)/p.msrp)*100)}% off</span></div>}
-                  {/* Product Image */}
-                  {(p.used===true||p.condition==="used")&&<div style={{marginTop:14,background:"linear-gradient(90deg,#F59E0B 0%,#D97706 100%)",color:"#1A1A20",padding:"10px 14px",borderRadius:8,fontFamily:"var(--ff)",fontSize:13,fontWeight:700,display:"flex",alignItems:"center",gap:10,border:"1px solid #D97706"}}><span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:900,letterSpacing:1.5,background:"#1A1A20",color:"#F59E0B",padding:"3px 8px",borderRadius:4}}>USED</span><span>Pre-owned item — check seller rating, condition notes, and return policy before purchasing.</span></div>}{p.img&&<div style={{marginTop:14,background:"var(--bg4)",borderRadius:10,padding:16,display:"flex",alignItems:"center",justifyContent:"center"}}>
-                    <img loading="lazy" decoding="async" src={p.img.replace('_AC_SL300_','_AC_SL500_')} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{maxWidth:"100%",maxHeight:220,objectFit:"contain",borderRadius:6}}/>
-                  </div>}
-                </div>
-              </div>
-
-              <ProductReviews product={p}/>
-
-              {/* Value + Future-Proofing */}
-              <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:14,marginTop:20,paddingTop:20,borderTop:"1px solid var(--bdr)"}}>
-                {p.bench!=null&&<div style={{background:"var(--bg4)",borderRadius:10,padding:"16px 18px"}}>
+                  {/* Value · Ratings · Future-Proofing */}
+                  <div style={{display:"flex",alignItems:"center",gap:14,marginTop:10}}>
+                    <div style={{flex:1,minWidth:0,display:"flex"}}>
+                      {(()=>{ const _v = (
+                p.bench!=null&&<div style={{background:"var(--bg4)",borderRadius:10,padding:"16px 18px"}}>
                   <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",letterSpacing:1,marginBottom:12,fontWeight:700}}>VALUE SCORE</div>
                   {(()=>{const ratio=Math.round(valueRatio(p)*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";const gl=ratio>=28?"Exceptional value":ratio>=20?"Great value":ratio>=14?"Good value":ratio>=8?"Average value":"Below average";return <div>
                     <div style={{display:"flex",alignItems:"center",gap:14,marginBottom:12}}>
@@ -3390,8 +3380,13 @@ function SearchPage({activeCat,initialQuery,th}){
                       Performance ({p.bench}%) ÷ Price (${fmtPrice($(p))}) = <span style={{color:"var(--txt)",fontWeight:600}}>{ratio.toFixed(1)}</span><br/>
                       <span style={{color:"var(--mute)"}}>S ≥28 · A ≥20 · B ≥14 · C ≥8 · D &lt;8</span>
                     </div></div>;})()}
-                </div>}
-                {(p.c==="CPU"||p.c==="GPU"||p.c==="Motherboard")&&<div style={{background:"var(--bg4)",borderRadius:10,padding:"16px 18px"}}>
+                </div>
+                      ); return _v || <div style={{flex:1}}/>; })()}
+                    </div>
+                    {(p.r||p.reviews)&&<div style={{flexShrink:0,display:"flex",justifyContent:"center",padding:"0 8px"}}><ReviewStars rating={p.r} reviews={p.reviews} size="md"/></div>}
+                    <div style={{flex:1,minWidth:0,display:"flex"}}>
+                      {(()=>{ const _f = (
+                (p.c==="CPU"||p.c==="GPU"||p.c==="Motherboard")&&<div style={{background:"var(--bg4)",borderRadius:10,padding:"16px 18px"}}>
                   <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",letterSpacing:1,marginBottom:12,fontWeight:700}}>FUTURE-PROOFING</div>
                   {(()=>{const f=[];
                     // Derive platform from socket OR from chipset (some DataForSEO products only have chipset)
@@ -3428,8 +3423,21 @@ function SearchPage({activeCat,initialQuery,th}){
                     }
                     if(!f.length)f.push({t:"Platform info unavailable",g:true});
                     return f.slice(0,5).map((x,i)=><div key={i} style={{display:"flex",alignItems:"flex-start",gap:10,padding:"8px 0",borderBottom:i<f.length-1?"1px solid var(--bdr)":"none"}}><span style={{fontSize:17,lineHeight:1,flexShrink:0}}>{x.g?"✅":"⚠️"}</span><span style={{fontFamily:"var(--ff)",fontSize:14,color:x.g?"var(--txt)":"var(--amber)",lineHeight:1.4}}>{x.t}</span></div>);})()}
-                </div>}
+                </div>
+                      ); return _f || <div style={{flex:1}}/>; })()}
+                    </div>
+                  </div>
+                  {rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textAlign:"center",marginTop:8}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(rr[rr.length-1].price-rr[0].price).toFixed(2)}</span> at {rr[0].name} vs {rr[rr.length-1].name}</div>}
+                  {p.msrp&&p.msrp>$(p)&&<div style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:6,background:"var(--bg4)",border:"1px solid var(--bdr)",marginTop:8}}><span style={{fontSize:17}}>💰</span><div style={{flex:1}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Below MSRP</div><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>Was <span style={{textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span> → ${fmtPrice($(p))}</div></div><span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--mint)"}}>{Math.round((1-$(p)/p.msrp)*100)}% off</span></div>}
+                  {/* Product Image */}
+                  {(p.used===true||p.condition==="used")&&<div style={{marginTop:14,background:"linear-gradient(90deg,#F59E0B 0%,#D97706 100%)",color:"#1A1A20",padding:"10px 14px",borderRadius:8,fontFamily:"var(--ff)",fontSize:13,fontWeight:700,display:"flex",alignItems:"center",gap:10,border:"1px solid #D97706"}}><span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:900,letterSpacing:1.5,background:"#1A1A20",color:"#F59E0B",padding:"3px 8px",borderRadius:4}}>USED</span><span>Pre-owned item — check seller rating, condition notes, and return policy before purchasing.</span></div>}{p.img&&<div style={{marginTop:14,background:"var(--bg4)",borderRadius:10,padding:16,display:"flex",alignItems:"center",justifyContent:"center"}}>
+                    <img loading="lazy" decoding="async" src={p.img.replace('_AC_SL300_','_AC_SL500_')} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{maxWidth:"100%",maxHeight:220,objectFit:"contain",borderRadius:6}}/>
+                  </div>}
+                </div>
               </div>
+
+              <ProductReviews product={p}/>
+
 
               {/* Consider Instead */}
               {p.bench!=null&&(()=>{const same=catP.filter(x=>x.id!==p.id&&x.bench!=null);const better=same.filter(x=>x.bench>=p.bench*0.9&&$(x)<$(p)*0.85).sort((a,b)=>(b.bench/$(b))-(a.bench/$(a)))[0];const upgrade=same.filter(x=>x.bench>p.bench*1.15&&$(x)<$(p)*1.2).sort((a,b)=>(b.bench/$(b))-(a.bench/$(a)))[0];if(!better&&!upgrade)return null;
