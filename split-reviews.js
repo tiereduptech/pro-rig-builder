@@ -20,22 +20,22 @@ const SRC = join(process.cwd(), 'catalog-build', 'reviews.json');
 const OUT_DIR = join(process.cwd(), 'public', 'reviews');
 
 // Slug — converts a reviews store key into a filename.
-// Keys are either an ASIN (e.g. "B09VCJ171S") or "name:<normalized name>".
+// Keys: "tok:<brand>|<cat>|<token>", "asin:<ASIN>", or "name:<norm name>".
 // MUST match the frontend reviewSlug().
 function slug(key) {
   const k = String(key || '');
-  if (k.startsWith('name:')) {
-    return k.slice(5)
-      .toLowerCase()
-      .replace(/\s+/g, '-')
-      .replace(/[^a-z0-9-]/g, '')
-      .replace(/-+/g, '-')
-      .replace(/^-|-$/g, '')
-      .slice(0, 80)
-      .replace(/-$/, '');
-  }
-  // ASIN key — already filename-safe; lowercase for consistency.
-  return 'asin-' + k.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const safe = s => s.toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '')
+    .slice(0, 80)
+    .replace(/-$/, '');
+  if (k.startsWith('tok:'))  return 'tok-' + safe(k.slice(4));
+  if (k.startsWith('asin:')) return 'asin-' + k.slice(5).toLowerCase().replace(/[^a-z0-9]/g, '');
+  if (k.startsWith('name:')) return safe(k.slice(5));
+  // legacy / bare keys — treat as name
+  return safe(k);
 }
 
 if (!existsSync(SRC)) {

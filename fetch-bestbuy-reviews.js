@@ -53,13 +53,22 @@ function asinOf(p) {
   const m = u && String(u).match(/\/dp\/([A-Z0-9]{10})/);
   return m ? m[1].toUpperCase() : null;
 }
-// Reviews key: ASIN when available (collapses same-ASIN duplicate rows),
-// else "name:" + normalized name. MUST match split-reviews.js and the
-// frontend reviewKey() exactly.
+// Reviews key — token-first so duplicate catalog rows for the same product
+// resolve to ONE key. Priority:
+//   1. tok:<brand>|<category>|<model token>   (collapses twin rows)
+//   2. asin:<ASIN>                            (collapses same-ASIN rows)
+//   3. name:<normalized name>                 (last resort)
+// MUST be identical in split-reviews.js and the frontend reviewKey().
 function reviewKey(p) {
+  if (!p) return null;
+  const tok = modelToken(p.n);
+  if (tok) {
+    const brand = String(p.b || '').toUpperCase().trim();
+    return 'tok:' + brand + '|' + (p.c || '') + '|' + tok;
+  }
   const a = asinOf(p);
-  if (a) return a;
-  const n = normName(p && p.n);
+  if (a) return 'asin:' + a;
+  const n = normName(p.n);
   return n ? 'name:' + n : null;
 }
 function normMpn(m) {
@@ -78,8 +87,35 @@ if (!Array.isArray(parts)) { console.error('parts.js has no PARTS array'); proce
 console.log('Loaded ' + parts.length + ' catalog products');
 
 // ── 2. Load discovery data, build SKU lookup indexes ──
-const byGtin = new Map(), byMpn = new Map(), byName = new Map();
+const byGtin = new Map(), byMpn = new Map(), byName = new Map(), byToken = new Map();
+
+// Extract a distinctive model token from a product name (brand-agnostic).
+// Works on messy long names where canonicalizeProductName returns null.
+function modelToken(name) {
+  const n = String(name || '').toUpperCase();
+  const patterns = [
+    /\bRTX\s?\d{4}\s?(?:TI|SUPER)?\b/,
+    /\bGTX\s?\d{3,4}\s?(?:TI|SUPER)?\b/,
+    /\bRX\s?\d{3,4}\s?(?:XT|GRE)?\b/,
+    /\bRYZEN\s?\d\s?\d{3,4}[A-Z0-9]*\b/,
+    /\bCORE\s?(?:ULTRA\s?\d\s?)?I?\d?-?\d{3,5}[A-Z]*\b/,
+    /\bI[3579]-\d{4,5}[A-Z]*\b/,
+    /\b\d{4,5}X3D\b/,
+  ];
+  for (const p of patterns) {
+    const m = n.match(p);
+    if (m) return m[0].replace(/\s+/g, '');
+  }
+  return null;
+}
+
 let discCount = 0;
+function pushIdx(map, key, rec) {
+  if (!map.has(key)) map.set(key, []);
+  const arr = map.get(key);
+  // dedupe by SKU within a key
+  if (!arr.some(r => r.bestBuySku === rec.bestBuySku)) arr.push(rec);
+}
 for (const f of readdirSync(DISCOVERY_DIR)) {
   if (!f.endsWith('.json')) continue;
   const recs = JSON.parse(readFileSync(join(DISCOVERY_DIR, f), 'utf8'));
@@ -88,31 +124,43 @@ for (const f of readdirSync(DISCOVERY_DIR)) {
     if (!r || !r.bestBuySku) continue;
     discCount++;
     const g = normGtin(r.gtin);
-    if (g && !byGtin.has(g)) byGtin.set(g, r);
+    if (g) pushIdx(byGtin, g, r);
     const m = normMpn(r.mpn);
-    if (m && !byMpn.has(m)) byMpn.set(m, r);
+    if (m) pushIdx(byMpn, m, r);
     const cat = r.ourCategory || '';
     let key = null;
     try { key = canonicalizeProductName(r.name, cat); } catch { key = null; }
-    if (key) {
-      const k = cat + '|' + key.toLowerCase();
-      if (!byName.has(k)) byName.set(k, r);
+    if (key) pushIdx(byName, cat + '|' + key.toLowerCase(), r);
+    // model-token index: brand|category|token
+    const tok = modelToken(r.name);
+    if (tok) {
+      const brand = (r.manufacturer || '').toUpperCase().trim();
+      pushIdx(byToken, brand + '|' + cat + '|' + tok, r);
     }
   }
 }
-console.log('Loaded ' + discCount + ' discovery records (gtin:' + byGtin.size + ' mpn:' + byMpn.size + ' name:' + byName.size + ')');
+console.log('Loaded ' + discCount + ' discovery records (gtin:' + byGtin.size +
+  ' mpn:' + byMpn.size + ' name:' + byName.size + ' token:' + byToken.size + ' index keys)');
 
-// resolve a catalog product → discovery record (GTIN → MPN → name)
+// resolve a catalog product → ALL candidate discovery records (GTIN → MPN → name → token)
 function resolveSku(p) {
   const g = normGtin(p.gtin || p.upc);
-  if (g && byGtin.has(g)) return { rec: byGtin.get(g), tier: 'gtin' };
+  if (g && byGtin.has(g)) return { recs: byGtin.get(g), tier: 'gtin' };
   const m = normMpn(p.mpn);
-  if (m && byMpn.has(m)) return { rec: byMpn.get(m), tier: 'mpn' };
+  if (m && byMpn.has(m)) return { recs: byMpn.get(m), tier: 'mpn' };
   let key = null;
   try { key = canonicalizeProductName(p.n, p.c); } catch { key = null; }
   if (key) {
     const k = (p.c || '') + '|' + key.toLowerCase();
-    if (byName.has(k)) return { rec: byName.get(k), tier: 'name' };
+    if (byName.has(k)) return { recs: byName.get(k), tier: 'name' };
+  }
+  // 4th tier: model token (catches flagship CPUs/GPUs whose catalog rows
+  // lack identifiers and whose names canonicalize to null).
+  const tok = modelToken(p.n);
+  if (tok) {
+    const brand = (p.b || '').toUpperCase().trim();
+    const tk = brand + '|' + (p.c || '') + '|' + tok;
+    if (byToken.has(tk)) return { recs: byToken.get(tk), tier: 'token' };
   }
   return null;
 }
@@ -127,6 +175,11 @@ if (existsSync(OUT_FILE)) {
 
 // ── 4. Fetch loop ──
 let processed = 0, skipped5 = 0, noSku = 0, fetched = 0, withReviews = 0, errors = 0;
+// Abort the whole run if Best Buy rate-limits us hard — once sustained 403s
+// start, retrying only prolongs the block. Bail instead of grinding.
+let consecutive403 = 0;
+const ABORT_AFTER_403 = 25;
+let aborted = false;
 const tierCount = {};
 
 for (const p of parts) {
@@ -148,56 +201,83 @@ for (const p of parts) {
   processed++;
   if (DRY) continue;
 
-  const sku = resolved.rec.bestBuySku;
-  const url = 'https://api.bestbuy.com/v1/reviews(sku=' + sku + ')?apiKey=' + KEY +
-    '&format=json&pageSize=' + MAX_REVIEWS + '&show=id,sku,rating,title,comment,submissionTime,reviewer';
+  // Try EVERY candidate SKU for this product. Discovery data has many
+  // listings per product (1P + marketplace); only some carry reviews.
+  // Keep the listing that returns the most reviews. Stop early at 5.
+  // Cap candidates: discovery has up to 20-40 listings per product (esp.
+  // Storage/PSU). Trying all of them blows Best Buy's rate limit. The 1P
+  // listing with the most reviews is almost always among the first few.
+  const candidates = (resolved.recs || []).slice(0, 4);
+  let bestReviews = [];
 
-  let data = null, gotError = false;
-  for (let attempt = 1; attempt <= 3; attempt++) {
-    try {
-      const res = await fetch(url);
-      if (res.status === 403) {
-        // rate limited — wait longer and retry
+  for (const rec of candidates) {
+    if (bestReviews.length >= MAX_REVIEWS) break;
+    const sku = rec.bestBuySku;
+    const url = 'https://api.bestbuy.com/v1/reviews(sku=' + sku + ')?apiKey=' + KEY +
+      '&format=json&pageSize=' + MAX_REVIEWS + '&show=id,sku,rating,title,comment,submissionTime,reviewer';
+
+    let data = null, gotError = false, got403 = false;
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        const res = await fetch(url);
+        if (res.status === 403) {
+          if (attempt < 3) { await sleep(RETRY_GAP_MS); continue; }
+          gotError = true; got403 = true;
+          process.stdout.write('\r  ⚠ ' + p.n.slice(0, 40) + ' sku ' + sku + ' — 403 after 3 tries  \n');
+          break;
+        }
+        if (!res.ok) {
+          gotError = true;
+          process.stdout.write('\r  ⚠ ' + p.n.slice(0, 40) + ' sku ' + sku + ' — HTTP ' + res.status + '   \n');
+          break;
+        }
+        data = await res.json();
+        break;
+      } catch (e) {
         if (attempt < 3) { await sleep(RETRY_GAP_MS); continue; }
         gotError = true;
-        process.stdout.write('\r  ⚠ ' + p.n.slice(0, 40) + ' — 403 after 3 tries     \n');
-        break;
+        process.stdout.write('\r  ⚠ ' + p.n.slice(0, 40) + ' sku ' + sku + ' — ' + e.message + '   \n');
       }
-      if (!res.ok) {
-        gotError = true;
-        process.stdout.write('\r  ⚠ ' + p.n.slice(0, 40) + ' — HTTP ' + res.status + '          \n');
-        break;
-      }
-      data = await res.json();
-      break;
-    } catch (e) {
-      if (attempt < 3) { await sleep(RETRY_GAP_MS); continue; }
-      gotError = true;
-      process.stdout.write('\r  ⚠ ' + p.n.slice(0, 40) + ' — ' + e.message + '       \n');
     }
-  }
 
-  if (gotError || !data) {
-    errors++;
     await sleep(CALL_GAP_MS);
-    continue;
+
+    // Track sustained rate-limiting. A 403 streak means Best Buy has
+    // blocked us; abort rather than grinding through hundreds of failures.
+    if (got403) {
+      consecutive403++;
+      if (consecutive403 >= ABORT_AFTER_403) {
+        console.log('\n\n⛔ ABORTING: ' + consecutive403 + ' consecutive 403s — Best Buy is rate-limiting.');
+        console.log('   Partial results saved. Re-run later to continue (already-done products are skipped).');
+        aborted = true;
+        break;
+      }
+    } else if (!gotError) {
+      consecutive403 = 0;
+    }
+
+    if (gotError || !data) { errors++; continue; }
+
+    const reviews = (data.reviews || []).slice(0, MAX_REVIEWS).map(r => ({
+      rating: r.rating,
+      title: r.title || '',
+      comment: r.comment || '',
+      date: r.submissionTime || '',
+      author: (Array.isArray(r.reviewer) && r.reviewer[0] && r.reviewer[0].name) || 'Anonymous',
+      source: 'bestbuy',
+    }));
+    if (reviews.length > bestReviews.length) bestReviews = reviews;
   }
 
-  const reviews = (data.reviews || []).slice(0, MAX_REVIEWS).map(r => ({
-    rating: r.rating,
-    title: r.title || '',
-    comment: r.comment || '',
-    date: r.submissionTime || '',
-    author: (Array.isArray(r.reviewer) && r.reviewer[0] && r.reviewer[0].name) || 'Anonymous',
-    source: 'bestbuy',
-  }));
   fetched++;
-  if (reviews.length) {
-    store[key] = { reviews, updated: new Date().toISOString() };
+  if (bestReviews.length) {
+    store[key] = { reviews: bestReviews, updated: new Date().toISOString() };
     withReviews++;
   }
   process.stdout.write('\r  processed ' + processed + ' | with reviews ' + withReviews + '          ');
-  await sleep(CALL_GAP_MS);
+
+  // Abort triggered inside the candidate loop — save progress and stop.
+  if (aborted) break;
 }
 console.log('');
 
