@@ -2959,6 +2959,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
   const [cat,setCat]=useState(activeCat||"");
   const [q,setQ]=useState(initialQuery||"");
   const [histOpen,setHistOpen]=useState(null);
+  const [reviewsOpen,setReviewsOpen]=useState(null);
   const [brands,setBrands]=useState([]);
   const [marketplaces,setMarketplaces]=useState([]);
   const [maxPr,setMaxPr]=useState(5000);
@@ -3118,6 +3119,92 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                 })}
               </div>
             </div>}
+
+            {/* ── VALUE SCORE (mobile) ── */}
+            {p.bench!=null&&<div style={{marginTop:14,background:"var(--bg4)",borderRadius:10,padding:"14px 16px"}}>
+              <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1,marginBottom:12}}>VALUE SCORE</div>
+              {(()=>{const ratio=Math.round(valueRatio(p)*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";const gl=ratio>=28?"Exceptional value":ratio>=20?"Great value":ratio>=14?"Good value":ratio>=8?"Average value":"Below average";return <div>
+                <div style={{display:"flex",alignItems:"center",gap:14,marginBottom:12}}>
+                  <div style={{width:48,height:48,borderRadius:12,background:gc+"18",display:"flex",alignItems:"center",justifyContent:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:24,fontWeight:800,color:gc}}>{grade}</span></div>
+                  <div><div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)"}}>{ratio.toFixed(1)}</div><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:gc}}>{gl}</div></div>
+                </div>
+                <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",lineHeight:1.6,background:"var(--bg2)",borderRadius:8,padding:"10px 12px"}}>
+                  Performance ({p.bench}%) ÷ Price (${fmtPrice($(p))}) = <span style={{color:"var(--txt)",fontWeight:600}}>{ratio.toFixed(1)}</span><br/>
+                  <span style={{color:"var(--mute)"}}>S ≥28 · A ≥20 · B ≥14 · C ≥8 · D &lt;8</span>
+                </div></div>;})()}
+            </div>}
+
+            {/* ── FUTURE-PROOFING (mobile) ── */}
+            {(p.c==="CPU"||p.c==="GPU"||p.c==="Motherboard")&&<div style={{marginTop:14,background:"var(--bg4)",borderRadius:10,padding:"14px 16px"}}>
+              <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1,marginBottom:12}}>FUTURE-PROOFING</div>
+              {(()=>{const f=[];
+                const sock=(p.socket||"").toUpperCase().replace(/\s/g,"");
+                const chip=(p.chipset||"").toUpperCase();
+                const isAM5=sock==="AM5"||/^(A620|B650|B650E|X670|X670E|B840|B850|X870|X870E)$/.test(chip);
+                const isAM4=sock==="AM4"||/^(A320|B350|X370|B450|X470|A520|B550|X570)$/.test(chip);
+                const isLGA1851=sock==="LGA1851"||/^(Z890|B860|H810)$/.test(chip);
+                const isLGA1700=sock==="LGA1700"||/^(H610|B660|H670|Z690|H770|B760|Z790)$/.test(chip);
+                const isLGA1200=sock==="LGA1200"||/^(H410|B460|H470|Z490|H510|B560|H570|Z590)$/.test(chip);
+                if(p.c==="CPU"||p.c==="Motherboard"){
+                  if(isAM5) f.push({t:"AM5 — supported through 2027+",g:true});
+                  else if(isLGA1851) f.push({t:"LGA1851 — current Intel platform",g:true});
+                  else if(isAM4) f.push({t:"AM4 — end of life, no CPU upgrade path",g:false});
+                  else if(isLGA1700) f.push({t:"LGA1700 — dead socket, 14th gen is last",g:false});
+                  else if(isLGA1200) f.push({t:"LGA1200 — end of life, 2+ gens old",g:false});
+                }
+                if(p.c==="CPU"){
+                  if(p.memType==="DDR5") f.push({t:"DDR5 support",g:true});
+                  else if(p.memType==="DDR4") f.push({t:"DDR4 only — no DDR5 path",g:false});
+                }
+                if(p.c==="Motherboard"){
+                  if(p.memType==="DDR5") f.push({t:"DDR5 memory",g:true});
+                  else if(p.memType==="DDR4") f.push({t:"DDR4 only — no DDR5 upgrades",g:false});
+                  if(/WiFi\s*7/i.test(p.fullTitle||p.n||"")) f.push({t:"WiFi 7 ready",g:true});
+                  if(/PCIe\s*5/i.test(p.fullTitle||p.n||"")) f.push({t:"PCIe 5.0 lanes",g:true});
+                }
+                if(p.c==="GPU"){
+                  if(p.vram>=16)f.push({t:`${p.vram}GB VRAM — future-proof`,g:true});
+                  else if(p.vram>=12)f.push({t:`${p.vram}GB — adequate for now`,g:true});
+                  else if(p.vram)f.push({t:`${p.vram}GB VRAM — may limit at 4K`,g:false});
+                  if(p.arch==="Blackwell"||p.arch==="RDNA 4")f.push({t:"Current gen architecture",g:true});
+                }
+                if(!f.length)f.push({t:"Platform info unavailable",g:true});
+                return f.slice(0,5).map((x,i)=><div key={i} style={{display:"flex",alignItems:"flex-start",gap:10,padding:"8px 0",borderBottom:i<f.length-1?"1px solid var(--bdr)":"none"}}><span style={{fontSize:16,lineHeight:1,flexShrink:0}}>{x.g?"✅":"⚠️"}</span><span style={{fontFamily:"var(--ff)",fontSize:13,color:x.g?"var(--txt)":"var(--amber)",lineHeight:1.4}}>{x.t}</span></div>);})()}
+            </div>}
+
+            {/* ── CONSIDER INSTEAD (mobile) ── */}
+            {p.bench!=null&&(()=>{const same=catP.filter(x=>x.id!==p.id&&x.bench!=null);const better=same.filter(x=>x.bench>=p.bench*0.9&&$(x)<$(p)*0.85).sort((a,b)=>(b.bench/$(b))-(a.bench/$(a)))[0];const upgrade=same.filter(x=>x.bench>p.bench*1.15&&$(x)<$(p)*1.2).sort((a,b)=>(b.bench/$(b))-(a.bench/$(a)))[0];if(!better&&!upgrade)return null;
+              const specs=(x)=>{
+                if(x.c==="CPU")return [{l:"Cores",v:`${x.cores}C/${x.threads}T`},{l:"Boost",v:`${x.boostClock}GHz`},{l:"Socket",v:x.socket},{l:"TDP",v:`${x.tdp}W`}];
+                if(x.c==="GPU")return [{l:"VRAM",v:`${x.vram}GB`},{l:"TDP",v:`${x.tdp}W`},{l:"Length",v:`${x.length}mm`},{l:"Arch",v:x.arch}];
+                if(x.c==="RAM")return [{l:"Kit",v:`${x.cap||x.capacity}GB`},{l:"Speed",v:`${x.speed}MHz`},{l:"CL",v:x.cl},{l:"Type",v:x.ramType||x.memType}];
+                if(x.c==="Motherboard")return [{l:"Socket",v:x.socket},{l:"Chipset",v:x.chipset},{l:"Form",v:x.ff},{l:"WiFi",v:x.wifi||"No"}];
+                if(x.c==="Storage")return [{l:"Cap",v:x.cap},{l:"Read",v:`${x.seq_r}MB/s`},{l:"Type",v:x.storageType}];
+                if(x.c==="PSU")return [{l:"Watts",v:`${x.watts}W`},{l:"Eff",v:x.eff},{l:"Mod",v:x.modular}];
+                return [{l:"Price",v:`$${$(x)}`}];
+              };
+              const card=(alt,color,tag,sub)=><div style={{background:"var(--bg2)",borderRadius:10,padding:"14px 16px",border:"1px solid var(--bdr)"}}>
+                <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:8,flexWrap:"wrap"}}><Tag color={color}>{tag}</Tag><span style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)"}}>{sub}</span></div>
+                <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",marginBottom:10}}>{alt.n}</div>
+                <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:10}}>{specs(alt).map((s,i)=><div key={i} style={{background:"var(--bg4)",borderRadius:6,padding:"6px 10px",textAlign:"center",minWidth:56}}><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)",marginBottom:2}}>{s.l}</div><div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",fontWeight:600}}>{s.v}</div></div>)}</div>
+                <div style={{fontFamily:"var(--ff)",fontSize:20,fontWeight:800,color}}>${$(alt)}</div>
+              </div>;
+              return <div style={{marginTop:14}}>
+                <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1,marginBottom:10}}>CONSIDER INSTEAD</div>
+                <div style={{display:"flex",flexDirection:"column",gap:10}}>
+                  {better&&card(better,"var(--mint)",`SAVE $${$(p)-$(better)}`,`${Math.round(better.bench/p.bench*100)}% of this product's perf`)}
+                  {upgrade&&card(upgrade,"var(--sky)",`+${upgrade.bench-p.bench}% FASTER`,$(upgrade)>$(p)?`for $${$(upgrade)-$(p)} more`:`$${$(p)-$(upgrade)} cheaper`)}
+                </div>
+              </div>;})()}
+
+            {/* ── CUSTOMER REVIEWS (mobile, collapsible) ── */}
+            <div style={{marginTop:14}}>
+              <button onClick={()=>setReviewsOpen(reviewsOpen===p.id?null:p.id)} style={{width:"100%",display:"flex",alignItems:"center",justifyContent:"space-between",background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:10,padding:"12px 16px",cursor:"pointer"}}>
+                <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1}}>CUSTOMER REVIEWS</span>
+                <span style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",transition:"transform .2s",transform:reviewsOpen===p.id?"rotate(90deg)":"none"}}>›</span>
+              </button>
+              {reviewsOpen===p.id&&<div style={{marginTop:4}}><ProductReviews product={p}/></div>}
+            </div>
           </div>}
         </div>;
       })}
