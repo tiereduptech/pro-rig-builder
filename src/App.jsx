@@ -130,6 +130,53 @@ function reviewSlug(p){
   return n ? safe(n) : "";
 }
 
+// ReviewCard — single review with collapsible comment text.
+// Collapsed: clamped to 4 lines. A "Read more" toggle appears only when
+// the text actually overflows the clamp.
+function ReviewCard({ r }){
+  const [expanded, setExpanded] = useState(false);
+  const [overflowing, setOverflowing] = useState(false);
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const el = textRef.current;
+    if(!el) return;
+    // Compare full scroll height to the clamped client height.
+    setOverflowing(el.scrollHeight > el.clientHeight + 2);
+  }, [r && r.comment]);
+
+  const clampStyle = expanded ? {} : {
+    display:"-webkit-box",
+    WebkitLineClamp:4,
+    WebkitBoxOrient:"vertical",
+    overflow:"hidden",
+  };
+
+  return (
+    <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px 14px"}}>
+      <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:4}}>
+        <ReviewStarRow rating={r.rating} />
+        <span style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--txt)"}}>{r.title}</span>
+      </div>
+      <div ref={textRef}
+        style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)",lineHeight:1.5,whiteSpace:"pre-wrap",...clampStyle}}>
+        {r.comment}
+      </div>
+      {(overflowing || expanded) && (
+        <button
+          onClick={() => setExpanded(e => !e)}
+          style={{background:"none",border:"none",padding:0,marginTop:4,cursor:"pointer",
+            fontFamily:"var(--mono)",fontSize:11,fontWeight:700,color:"var(--accent)"}}>
+          {expanded ? "Show less" : "Read more"}
+        </button>
+      )}
+      <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginTop:6}}>
+        {(r.author || "Anonymous")}{r.date ? " \u00b7 " + String(r.date).slice(0,10) : ""}{r.source ? " \u00b7 via " + r.source : ""}
+      </div>
+    </div>
+  );
+}
+
 function ProductReviews({ product }){
   const [state, setState] = useState({ status: "loading", reviews: null });
   useEffect(() => {
@@ -163,18 +210,7 @@ function ProductReviews({ product }){
         <span style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)"}}>{avg.toFixed(1)} {"\u00b7"} {reviews.length} review{reviews.length>1?"s":""}</span>
       </div>
       <div style={{display:"flex",flexDirection:"column",gap:10}}>
-        {reviews.map((r, i) => (
-          <div key={i} style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px 14px"}}>
-            <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:4}}>
-              <ReviewStarRow rating={r.rating} />
-              <span style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--txt)"}}>{r.title}</span>
-            </div>
-            <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)",lineHeight:1.5,whiteSpace:"pre-wrap"}}>{r.comment}</div>
-            <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginTop:6}}>
-              {(r.author || "Anonymous")}{r.date ? " \u00b7 " + String(r.date).slice(0,10) : ""}{r.source ? " \u00b7 via " + r.source : ""}
-            </div>
-          </div>
-        ))}
+        {reviews.map((r, i) => <ReviewCard key={i} r={r} />)}
       </div>
     </div>
   );
