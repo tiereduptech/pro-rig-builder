@@ -99,17 +99,35 @@ function ReviewStarRow({ rating }){
 // reviewSlug — finds a product's review file. Mirrors fetch-bestbuy-reviews.js
 // reviewKey() + split-reviews.js slug(): ASIN-first, else name-based.
 function reviewSlug(p){
-  let asin = p && p.asin ? String(p.asin).toUpperCase() : null;
+  if(!p) return "";
+  // model token — MUST match fetch-bestbuy-reviews.js modelToken()
+  const N = String(p.n||"").toUpperCase();
+  const pats = [
+    /\bRTX\s?\d{4}\s?(?:TI|SUPER)?\b/,
+    /\bGTX\s?\d{3,4}\s?(?:TI|SUPER)?\b/,
+    /\bRX\s?\d{3,4}\s?(?:XT|GRE)?\b/,
+    /\bRYZEN\s?\d\s?\d{3,4}[A-Z0-9]*\b/,
+    /\bCORE\s?(?:ULTRA\s?\d\s?)?I?\d?-?\d{3,5}[A-Z]*\b/,
+    /\bI[3579]-\d{4,5}[A-Z]*\b/,
+    /\b\d{4,5}X3D\b/,
+  ];
+  let tok=null;
+  for(const re of pats){ const m=N.match(re); if(m){ tok=m[0].replace(/\s+/g,""); break; } }
+  const safe = s => String(s).toLowerCase().replace(/\s+/g,"-").replace(/[^a-z0-9-]/g,"")
+    .replace(/-+/g,"-").replace(/^-|-$/g,"").slice(0,80).replace(/-$/,"");
+  if(tok){
+    const brand=String(p.b||"").toUpperCase().trim();
+    return "tok-"+safe(brand+"|"+(p.c||"")+"|"+tok);
+  }
+  let asin = p.asin ? String(p.asin).toUpperCase() : null;
   if(!asin){
-    const u = p && p.deals && p.deals.amazon && p.deals.amazon.url;
+    const u = p.deals && p.deals.amazon && p.deals.amazon.url;
     const m = u && String(u).match(/\/dp\/([A-Z0-9]{10})/);
     if(m) asin = m[1].toUpperCase();
   }
-  if(asin) return "asin-" + asin.toLowerCase().replace(/[^a-z0-9]/g,"");
-  const n = String((p&&p.n)||"").toLowerCase().replace(/\s+/g," ").replace(/[^a-z0-9 ]/g,"").trim();
-  if(!n) return "";
-  return n.replace(/\s+/g,"-").replace(/[^a-z0-9-]/g,"").replace(/-+/g,"-")
-    .replace(/^-|-$/g,"").slice(0,80).replace(/-$/,"");
+  if(asin) return "asin-"+asin.toLowerCase().replace(/[^a-z0-9]/g,"");
+  const n = String(p.n||"").toLowerCase().replace(/\s+/g," ").replace(/[^a-z0-9 ]/g,"").trim();
+  return n ? safe(n) : "";
 }
 
 function ProductReviews({ product }){
