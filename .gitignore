@@ -47,7 +47,5 @@ src/data/parts.js.pre-*
 phase2-report.json
 
 public/price-history/
-dist/price-history/
 public/reviews/
-dist/reviews/
 !catalog-build/reviews.json
