@@ -3366,10 +3366,10 @@ function SearchPage({activeCat,initialQuery,th}){
                     })}
                   </div>
                   {/* Value · Ratings · Future-Proofing */}
-                  <div style={{display:"flex",alignItems:"center",gap:14,marginTop:10}}>
+                  <div style={{display:"flex",alignItems:"stretch",gap:14,marginTop:10}}>
                     <div style={{flex:1,minWidth:0,display:"flex"}}>
                       {(()=>{ const _v = (
-                p.bench!=null&&<div style={{background:"var(--bg4)",borderRadius:10,padding:"16px 18px"}}>
+                p.bench!=null&&<div style={{background:"var(--bg4)",borderRadius:10,padding:"16px 18px",width:"100%",boxSizing:"border-box"}}>
                   <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",letterSpacing:1,marginBottom:12,fontWeight:700}}>VALUE SCORE</div>
                   {(()=>{const ratio=Math.round(valueRatio(p)*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";const gl=ratio>=28?"Exceptional value":ratio>=20?"Great value":ratio>=14?"Good value":ratio>=8?"Average value":"Below average";return <div>
                     <div style={{display:"flex",alignItems:"center",gap:14,marginBottom:12}}>
@@ -3385,7 +3385,7 @@ function SearchPage({activeCat,initialQuery,th}){
                     </div>
                     <div style={{flex:1,minWidth:0,display:"flex"}}>
                       {(()=>{ const _f = (
-                (p.c==="CPU"||p.c==="GPU"||p.c==="Motherboard")&&<div style={{background:"var(--bg4)",borderRadius:10,padding:"16px 18px"}}>
+                (p.c==="CPU"||p.c==="GPU"||p.c==="Motherboard")&&<div style={{background:"var(--bg4)",borderRadius:10,padding:"16px 18px",width:"100%",boxSizing:"border-box"}}>
                   <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",letterSpacing:1,marginBottom:12,fontWeight:700}}>FUTURE-PROOFING</div>
                   {(()=>{const f=[];
                     // Derive platform from socket OR from chipset (some DataForSEO products only have chipset)
