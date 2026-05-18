@@ -3331,6 +3331,7 @@ function SearchPage({activeCat,initialQuery,th}){
                   </div>
                   {p.c==="Motherboard"&&p.memSpeed&&<div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)",marginTop:8,padding:"6px 8px",background:"var(--bg2)",borderRadius:6,lineHeight:1.5}}>* Memory Speed is the max supported by this motherboard. Actual speed also depends on your CPU's memory controller and RAM kit rated speed.</div>}
                   {p.bench!=null&&<div style={{marginTop:14}}><div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)",marginBottom:5}}>PERFORMANCE</div><SBar v={p.bench}/></div>}
+                  <ProductReviews product={p}/>
                 </div>
                 {/* Right: buy */}
                 <div>
@@ -3435,7 +3436,6 @@ function SearchPage({activeCat,initialQuery,th}){
                 </div>
               </div>
 
-              <ProductReviews product={p}/>
 
 
               {/* Consider Instead */}
