@@ -7138,6 +7138,11 @@ export const PARTS = [
         "price": 235.18,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11015088&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-z890-s-wifi-lga-1851-intel-z890-atx-motherboard%2FJ3P7TX9W9K&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 459.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2371&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMEG-Z890-ACE&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "value": 0,
@@ -7187,6 +7192,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 275.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013023&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-z890-tomahawk-wifi-socket-lga-1851-intel-z890-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX9SRJ&intsrc=APIG_28060",
+        "inStock": true
+      },
+      "msi": {
+        "price": 259.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2373&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMAG-Z890-TOMAHAWK-WIFI&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -7373,6 +7383,11 @@ export const PARTS = [
         "price": 204.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12081396&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-z790-a-wifi-ii-lga-1700-intel-z790-sata-6gb-s-ddr5-atx-motherboard%2FJ3P7TXHRFW&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 199.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1492&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMAG-Z790-TOMAHAWK-WIFI&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "value": 37,
@@ -7730,6 +7745,11 @@ export const PARTS = [
         "price": 213.49,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12588169&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b850-v-evo-wifi-socket-am5-amd-b850-atx-ddr5-wi-fi-7-motherboard%2FJ3P7TXT26J&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 219.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2958&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B850-TOMAHAWK-WIFI&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "value": 34,
@@ -8784,6 +8804,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 359.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2314&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMPG-X870E-CARBON-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 13,
@@ -8837,6 +8862,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 179.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2450&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B850-P-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 25,
@@ -9639,6 +9669,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 99.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1727&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B550M-VC-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 17,
@@ -10084,6 +10119,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 121.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013449&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b760m-p-ddr4-lga-1700-micro-atx-motherboard-b760mpd4%2FJ3P7TXGWXQ&intsrc=APIG_28060",
+        "inStock": true
+      },
+      "msi": {
+        "price": 114.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1733&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-B760M-P-DDR4&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -11028,6 +11068,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 112.49,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11279839&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-h610m-g-ddr4-desktop-motherboard%2FJ3P7TX34JR&intsrc=APIG_28060",
+        "inStock": true
+      },
+      "msi": {
+        "price": 109.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1254&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-H610M-G-DDR4&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -12325,6 +12370,11 @@ export const PARTS = [
         "price": 172.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11237658&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b650m-a-wifi-desktop-motherboard%2FJ3P7TXG8HW&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 159.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1510&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B650M-A-WIFI&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -12473,6 +12523,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 213.24,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11068425&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-z790-p-wifi-desktop-motherboard%2FJ3P7TXGLP7&intsrc=APIG_28060",
+        "inStock": true
+      },
+      "msi": {
+        "price": 179.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1496&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-Z790-P-WIFI&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -12740,6 +12795,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 289.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2453&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMPG-X870E-EDGE-TI-WIFI&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "discount": 12,
@@ -12845,6 +12905,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 169.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2333&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-X870-P-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 6,
@@ -12932,6 +12997,11 @@ export const PARTS = [
       "amazon": {
         "price": 158.75,
         "url": "https://www.amazon.com/dp/B0FBTDDMSG?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "msi": {
+        "price": 199.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2731&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B850-TOMAHAWK-MAX-WIFI-V1&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -13109,6 +13179,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 169.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2449&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-GAMING-PLUS-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 19,
@@ -13157,6 +13232,11 @@ export const PARTS = [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 64.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2730&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FA520M-A-PRO-V1&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -13265,6 +13345,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 209.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2367&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FZ890-GAMING-PLUS-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -13414,6 +13499,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 319.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2854&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-X870E-TOMAHAWK-MAX-WIFI-PZ&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -13518,6 +13608,11 @@ export const PARTS = [
         "price": 183.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11300603&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b860m-a-wifi-lga-1851-intel-b860-ddr5-m-2-thunderbolt4-wi-fi-7-micro-atx%2FJ3P7TX62TT&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 169.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2458&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-B860M-A-WIFI&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -13617,6 +13712,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 239.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2735&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FX870E-GAMING-PLUS-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 19,
@@ -13716,6 +13816,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 149.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2830&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B850-S-WIFI6E&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "discount": 12,
@@ -13846,6 +13951,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 149.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2873&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-GAMING-PLUS-WIFI6E&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 17,
@@ -14492,6 +14602,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11061905&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b760-gaming-plus-wifi-lga-1700-ddr5-atx-sata-6gbps-wi-fi-6e-pcie-4-0%2FJ3P7TXLSJZ&intsrc=APIG_28060",
+        "inStock": true
+      },
+      "msi": {
+        "price": 159.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1746&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FB760-GAMING-PLUS-WIFI&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -15688,6 +15803,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 133.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12045588&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-pro-h610m-g-wifi-ddr4-lga-1700-intel-h610-micro-atx-motherboard%2FJ3P7TXG268&intsrc=APIG_28060",
+        "inStock": true
+      },
+      "msi": {
+        "price": 129.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2970&u=https%3A%2F%2Fus-store.msi.com%2FSale%2Fpromotions%2FCombo-Deals%2FPRO-H610M-G-WIFI-DDR4-B1&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -17231,6 +17351,11 @@ export const PARTS = [
         "price": 159.99,
         "url": "https://www.amazon.com/dp/B0FBTKLKGJ?tag=tiereduptech-20",
         "inStock": true
+      },
+      "msi": {
+        "price": 159.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2729&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B650-S-WIFI-V1&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -17363,6 +17488,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 249.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2448&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMPG-B850-EDGE-TI-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 13,
@@ -17922,6 +18052,11 @@ export const PARTS = [
         "price": 233.49,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013035&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-b850m-mortar-wifi-gaming-desktop-motherboard%2FJ3P7TXRG8Q&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 219.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2709&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B850M-MORTAR-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 8,
@@ -18167,6 +18302,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 183.49,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013341&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b840-gaming-plus-wifi-gaming-desktop-motherboard%2FJ3P7TX62WH&intsrc=APIG_28060",
+        "inStock": true
+      },
+      "msi": {
+        "price": 149.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2451&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB840-GAMING-PLUS-WIFI&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -18487,6 +18627,11 @@ export const PARTS = [
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B0FBT9DYSB?tag=tiereduptech-20",
         "inStock": true
+      },
+      "msi": {
+        "price": 199.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2732&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-GAMING-PLUS-WIFI-V1&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -18717,6 +18862,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 132.49,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11295394&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b760m-p-lga-1700-intel-b760-sata-6gb-s-micro-atx-motherboard%2FJ3P7TXLSTC&intsrc=APIG_28060",
+        "inStock": true
+      },
+      "msi": {
+        "price": 119.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2759&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-B760M-P&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -18958,6 +19108,11 @@ export const PARTS = [
         "price": 221.02,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11233359&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-z890-s-wifi-white-gaming-desktop-motherboard%2FJ3P7TX9V98&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 199.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2536&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-Z890-S-WIFI-WHITE&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -19054,6 +19209,11 @@ export const PARTS = [
         "price": 392.49,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11078365&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-z890-carbon-wifi-lga-1851-intel-z890-atx-motherboard%2FJ3P7TX9RFW&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 369.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2369&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMPG-Z890-CARBON-WIFI&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "discount": 8,
@@ -19547,6 +19707,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 239.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2368&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-Z890-P-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -19642,6 +19807,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 190.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013314&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-b860-tomahawk-wifi-gaming-desktop-motherboard%2FJ3P7TX9VGC&intsrc=APIG_28060",
+        "inStock": true
+      },
+      "msi": {
+        "price": 179,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2456&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMAG-B860-TOMAHAWK-WIFI&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -19751,6 +19921,11 @@ export const PARTS = [
       "amazon": {
         "price": 159.99,
         "url": "https://www.amazon.com/dp/B0FBTFCFMD?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "msi": {
+        "price": 469.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2980&u=https%3A%2F%2Fus-store.msi.com%2FSale%2Fpromotions%2FCombo-Deals%2FPRO-B650M-A-WIFI-7800X3D&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -20183,6 +20358,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.369Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 289.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2715&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMPG-B850I-EDGE-TI-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -20436,6 +20616,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 249.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2588&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-Z890-S-WIFI-PZ&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 16,
@@ -20489,6 +20674,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 209.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2793&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-MLG-EDITION&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 8,
@@ -20840,6 +21030,11 @@ export const PARTS = [
       "amazon": {
         "price": 89,
         "url": "https://www.amazon.com/dp/B0FBT23ZY8?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "msi": {
+        "price": 89,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2728&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B650M-P-V1&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -21301,6 +21496,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.745Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 169.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2655&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMAG-B860M-MORTAR-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -21950,6 +22150,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 1099.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2394&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMEG-Z890-GODLIKE&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 16,
@@ -22082,6 +22287,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 233.49,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11422460&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b850m-a-wifi-pz-matx-motherboard-amd-ryzen-9000-8000-7000-am5-ddr5-pcie-5-0-m-2-gen5-wi-fi-7-5g-lan%2FJ3P7TXH8SC&intsrc=APIG_28060",
+        "inStock": true
+      },
+      "msi": {
+        "price": 219.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2828&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B850M-A-WIFI-PZ&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -22428,6 +22638,11 @@ export const PARTS = [
         "price": 223.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11019052&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b860-gaming-plus-wifi-lga-1851-ddr5-wi-fi-7-thunderbolt4-5gbps-lan-atx%2FJ3P7TX68KX&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 209.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2455&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FB860-GAMING-PLUS-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 9,
@@ -22475,6 +22690,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.745Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 139,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2467&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FB860M-GAMING-PLUS-WIFI&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -22882,6 +23102,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 699.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2377&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMEG-Z890-UNIFY-X&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -22962,6 +23187,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.634Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 169.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2829&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-GAMING-PRO-WIFI6E&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 16,
@@ -23521,6 +23751,11 @@ export const PARTS = [
         "price": 242.88,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10955083&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b860-p-wifi-gaming-desktop-motherboard%2FJ3P7TX62WY&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 199.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2457&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-B860-P-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 9,
@@ -23728,6 +23963,11 @@ export const PARTS = [
       "amazon": {
         "price": 159.99,
         "url": "https://www.amazon.com/dp/B0FMZSRYSW?tag=tiereduptech-20",
+        "inStock": true
+      },
+      "msi": {
+        "price": 159.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2817&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-H810I-WIFI&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -23998,6 +24238,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 289.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2936&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-X870E-GAMING-PLUS-MAX-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 17,
@@ -24049,6 +24294,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 430.07,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12332841&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-x870i-edge-ti-evo-wifi-am5-amd-x870-motherboard%2FJ3P7TXHQR4&intsrc=APIG_28060",
+        "inStock": true
+      },
+      "msi": {
+        "price": 399.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2883&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMPG-X870I-EDGE-TI-EVO-WIFI&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -24534,6 +24784,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.607Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 159.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1253&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B550-TOMAHAWK-MAX-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "socket": "AM4",
@@ -24773,6 +25028,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 169.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1985&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FZ790-GAMING-PLUS-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "socket": "LGA1700",
@@ -25151,6 +25411,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 229.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2334&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-X870-TOMAHAWK-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "socket": "AM5",
@@ -25191,6 +25456,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 199.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2421&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FX870-GAMING-PLUS-WIFI&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "socket": "AM5",
@@ -25242,6 +25512,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 259.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2454&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-X870E-TOMAHAWK-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "socket": "AM5",
@@ -25282,6 +25557,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 209.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2447&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B850-TOMAHAWK-MAX-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "socket": "AM5",
@@ -25322,6 +25602,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 99.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=445&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB550M-PRO-VDH-WIFI&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "socket": "AM4",
@@ -25596,6 +25881,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 249.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2733&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-GAMING-PLUS-WIFI-PZ&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "socket": "AM5",
@@ -25636,6 +25926,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 299.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2415&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMPG-Z890I-EDGE-TI-WIFI&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "socket": "LGA1851",
@@ -25843,6 +26138,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 1299.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2973&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMEG-X870E-GODLIKE-MAX&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "socket": "AM5",
@@ -25882,6 +26182,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 499.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2974&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMPG-X870E-CARBON-MAX-WIFI&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "socket": "AM5",
@@ -25921,6 +26226,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 2289.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=3038&u=https%3A%2F%2Fus-store.msi.com%2FSale%2Fpromotions%2FCombo-Deals%2F9950x3d-x870e-rtx5080-suprim-liquid-bundle&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "socket": "AM5",
@@ -25961,6 +26271,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 259.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2976&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B850-TOMAHAWK-MAX-WIFI-II&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "socket": "AM5",
@@ -31051,6 +31366,11 @@ export const PARTS = [
         "price": 1749.99,
         "url": "https://www.amazon.com/dp/B0DSXJ5QF4?tag=tiereduptech-20",
         "inStock": true
+      },
+      "msi": {
+        "price": 1799.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2476&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5080-16G-SUPRIM-SOC&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -31107,6 +31427,11 @@ export const PARTS = [
         "price": 414.1,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592845&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-ti-8gb-gddr7-ventus-3x-oc-edition-pci-express-5-0-graphics-card-black-sliver%2FJ3P7TXRFH8&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 419.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2977&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-Ti-8G-VENTUS-3X-OC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -31162,6 +31487,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 569.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2722&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-Ti-16G-SHADOW-2X-OC-PLUS&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 17,
@@ -31435,6 +31765,11 @@ export const PARTS = [
         "price": 454,
         "url": "https://www.amazon.com/dp/B0C5B4XNWR?tag=tiereduptech-20",
         "inStock": true
+      },
+      "msi": {
+        "price": 449.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1767&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-4060-Ti-VENTUS-2X-BLACK-8G-OC&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -32001,6 +32336,11 @@ export const PARTS = [
         "price": 629.99,
         "url": "https://www.amazon.com/dp/B0F32NJG9T?tag=tiereduptech-20",
         "inStock": true
+      },
+      "msi": {
+        "price": 569.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2627&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-Ti-16G-VENTUS-2X-OC-PLUS&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "additionalImages": [
@@ -32311,6 +32651,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 629.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2572&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-12G-SHADOW-2X-OC&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -32890,6 +33235,11 @@ export const PARTS = [
         "price": 614.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11064774&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-ti-16g-ventus-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXRFHF&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 579.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2650&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-Ti-16G-VENTUS-3X-OC&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -33108,6 +33458,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 539.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6631088&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6631088.p%3FskuId%3D6631088",
+        "inStock": false
+      },
+      "msi": {
+        "price": 539.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2625&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-Ti-16G-GAMING-OC&intsrc=APIG_16410",
         "inStock": false
       }
     },
@@ -33834,6 +34189,11 @@ export const PARTS = [
         "price": 1429.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615233&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-geforce-rtx-5080-16g-ventus-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-white%2FJ3P7TX6LS9&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 1429.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2523&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5080-16G-VENTUS-3X-OC-WHITE&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -34068,6 +34428,11 @@ export const PARTS = [
         "price": 1449,
         "url": "https://www.amazon.com/dp/B0DSX9Y24P?tag=tiereduptech-20",
         "inStock": true
+      },
+      "msi": {
+        "price": 1299.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2481&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5080-16G-INSPRIE-3X-OC&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "discount": 7,
@@ -34109,6 +34474,11 @@ export const PARTS = [
         "price": 1699.99,
         "url": "https://www.amazon.com/dp/B0FLSWN28H?tag=tiereduptech-20",
         "inStock": true
+      },
+      "msi": {
+        "price": 1289.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2497&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5080-16G-EXPERT-OC&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -34192,6 +34562,11 @@ export const PARTS = [
         "price": 1649,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10918859&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-geforce-rtx-5080-16g-ventus-3x-oc-plus-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TX6LYJ&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 1399.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2483&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5080-16G-VENTUS-3X-OC-PLUS&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -34247,6 +34622,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 379.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632718&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-8g-gaming-oc-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXQJ9F&intsrc=APIG_28060",
+        "inStock": true
+      },
+      "msi": {
+        "price": 384.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2678&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-8G-GAMING-OC&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -34670,6 +35050,11 @@ export const PARTS = [
         "price": 1799,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12491759&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5080-16g-ventus-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXR733&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 1399.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2482&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5080-16G-VENTUS-3X-OC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 6,
@@ -34994,6 +35379,11 @@ export const PARTS = [
         "price": 409.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6545380&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6545380.p%3FskuId%3D6545380",
         "inStock": false
+      },
+      "msi": {
+        "price": 409.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1766&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-4060-Ti-VENTUS-3X-8G-OC&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "model": "GeForce RTX 4060 Ti",
@@ -35037,6 +35427,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 249.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2856&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-30-Series%2FGeForce-RTX-3050-VENTUS-2X-XS-8G-OC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 3050",
@@ -35068,6 +35463,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 219.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6588302&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6588302.p%3FskuId%3D6588302",
+        "inStock": true
+      },
+      "msi": {
+        "price": 219.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2140&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-3050-GAMING-X-6G&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -35585,6 +35985,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 1599.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2480&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5080-16G-GAMING-TRIO-OC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5080",
@@ -35616,6 +36021,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 1349.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615239&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615239.p%3FskuId%3D6615239",
+        "inStock": true
+      },
+      "msi": {
+        "price": 1349.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2485&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5080-16G-SHADOW-3X-OC&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -35842,6 +36252,11 @@ export const PARTS = [
         "price": 3599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616090&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616090.p%3FskuId%3D6616090",
         "inStock": true
+      },
+      "msi": {
+        "price": 4238.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2954&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5090-32G-GAMING-TRIO-OC-X870EGPMWFBP&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5090",
@@ -35885,6 +36300,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 3999.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2469&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX%205090-32G-SUPRIM-LIQUID-SOC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5090",
@@ -36376,6 +36796,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 669.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2573&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-12G-GAMING-TRIO-OC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5070",
@@ -36803,6 +37228,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 989.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2547&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-Ti-16G-SHADOW-3X-OC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -37326,6 +37756,11 @@ export const PARTS = [
         "price": 549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6631084&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6631084.p%3FskuId%3D6631084",
         "inStock": false
+      },
+      "msi": {
+        "price": 549.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2626&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-TI-16G-GAMING-TRIO-OC&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -37358,6 +37793,11 @@ export const PARTS = [
         "price": 1049.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6631085&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6631085.p%3FskuId%3D6631085",
         "inStock": true
+      },
+      "msi": {
+        "price": 1049.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2583&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-Ti-16G-GAMING-TRIO-OC&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -37560,6 +38000,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 364.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2680&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-8G-VENTUS-3X-OC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5060",
@@ -37602,6 +38047,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 369.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2682&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-8G-VENTUS-2X-OC-WHITE&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5060",
@@ -37645,6 +38095,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 359.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2681&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-8G-VENTUS-2X-OC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5060",
@@ -37688,6 +38143,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 369.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2683&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-8G-SHADOW-2X-OC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5060",
@@ -37731,6 +38191,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 359.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2679&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-8G-INSPIRE-2X-OC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 4060",
@@ -37986,6 +38451,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 439.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2643&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-Ti-8G-GAMING-OC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -38061,6 +38531,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 639.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2577&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-12G-VENTUS-3X-OC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5070",
@@ -38093,6 +38568,11 @@ export const PARTS = [
         "price": 669.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6634560&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6634560.p%3FskuId%3D6634560",
         "inStock": true
+      },
+      "msi": {
+        "price": 669.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2576&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-12G-INSPIRE-3X-OC&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "model": "GeForce RTX 5070",
@@ -38124,6 +38604,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 639.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6634566&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6634566.p%3FskuId%3D6634566",
+        "inStock": true
+      },
+      "msi": {
+        "price": 639.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2579&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-12G-VENTUS-2X-OC&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -38168,6 +38653,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 419.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2646&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FRTX-5060-Ti-8G-VENTUS-2X-OC-PLUS&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -38317,6 +38807,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 304.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2720&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5050-8G-VENTUS-2X-OC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5050",
@@ -38360,6 +38855,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 314.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2718&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX%205050-8G-GAMING-OC&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5050",
@@ -38391,6 +38891,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638594&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638594.p%3FskuId%3D6638594",
+        "inStock": true
+      },
+      "msi": {
+        "price": 299.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2721&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%3Fproduct_id%3D2721&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -38574,6 +39079,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 409.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2714&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-Ti-8G-SHADOW-2X-OC-PLUS&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -38785,6 +39295,11 @@ export const PARTS = [
         "price": 999.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676833&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676833.p%3FskuId%3D6676833",
         "inStock": true
+      },
+      "msi": {
+        "price": 999.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2855&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-Ti-%2016G-VENTUS-3X-PZ-OC&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -38859,6 +39374,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 1429.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676839&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676839.p%3FskuId%3D6676839",
+        "inStock": true
+      },
+      "msi": {
+        "price": 1409.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2940&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5080-16G-INSPIRE-3X-OC-BLACK&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -70891,6 +71411,11 @@ export const PARTS = [
         "price": 729.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12109946&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-ssd-spatium-m480-pro-pcie-4-0-nvme-m-2-4tb-internal-solid-state-drive-ssd%2FJ3P7TXLFC3&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 729.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2195&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FStorage-Devices%2FSPATIUM-M480-PRO-4TB&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -81545,6 +82070,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 109.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1818&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A850GL&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "watts": 850,
@@ -81585,6 +82115,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:03.710Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 109.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1830&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A750GL-PCIE5&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "watts": 750,
@@ -82152,6 +82687,11 @@ export const PARTS = [
         "price": 134.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593788&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6593788.p%3FskuId%3D6593788",
         "inStock": true
+      },
+      "msi": {
+        "price": 149.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2166&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A1000GL-PCIE5&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "watts": 1000,
@@ -82386,6 +82926,11 @@ export const PARTS = [
         "price": 69.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619435&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619435.p%3FskuId%3D6619435",
         "inStock": true
+      },
+      "msi": {
+        "price": 74.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2308&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A750BE&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "watts": 750,
@@ -82415,6 +82960,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620062&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620062.p%3FskuId%3D6620062",
+        "inStock": true
+      },
+      "msi": {
+        "price": 64.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2307&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A650BE&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -82760,6 +83310,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 769.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2459&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMEG-Ai1600T-PCIE5&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "watts": 1600,
@@ -82800,6 +83355,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 149.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2463&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMPG-A850GS-PCIE5&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "watts": 850,
@@ -82881,6 +83441,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 99.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=681&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A750GLS-PCIE5&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "watts": 750,
@@ -82922,6 +83487,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 89.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2744&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A650GLS-PCIE5&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "watts": 650,
@@ -82962,6 +83532,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.173Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 139.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2745&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A850GLS-PCIE5&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "watts": 850,
@@ -83003,6 +83578,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 159.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2746&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A1000GLS-PCIE5&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "watts": 1000,
@@ -83113,6 +83693,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 159.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2797&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A850GLS-MLG-EDITION&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "watts": 850,
@@ -83396,6 +83981,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 59.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2924&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A650BN-PCIE5-III&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "watts": 650,
@@ -83437,6 +84027,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 69.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2925&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A750BN-PCIE5-III&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "watts": 750,
@@ -92982,6 +93577,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 89.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2028&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FComputer-Chassis%2FMAG-PANO-M100R-PZ&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 11,
@@ -100445,6 +101045,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 99.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2656&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FComputer-Chassis%2FMAG-PANO-100R-PZ&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "tower": "Mid",
@@ -100496,6 +101101,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:04.172Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 99.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2633&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FComputer-Chassis%2FMAG-PANO-110R-PZ&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "tower": "Mid",
@@ -100728,6 +101338,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 109.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2629&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FComputer-Chassis%2FMPG-VELOX-300R-AIRFLOW-PZ&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "tower": "Mid",
@@ -101222,6 +101837,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 179.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2799&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FComputer-Chassis%2FPANO-130R-MLG-EDITION&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "tower": "Mid",
@@ -113162,6 +113782,11 @@ export const PARTS = [
         "price": 64.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12083655&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-coreliquid-a12-240-240mm-aio-argb-cpu-cooler-lga-1700-1851-am5-am4-black%2FJ3P7TX68F2&intsrc=APIG_28060",
         "inStock": true
+      },
+      "msi": {
+        "price": 74.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2824&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-CORELIQUID-A12-240&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "discount": 10,
@@ -114920,6 +115545,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 119.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2309&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-CORELIQUID-I240&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "coolerType": "AIO",
@@ -114968,6 +115598,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 149.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2304&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-CORELIQUID-I360&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "coolerType": "AIO",
@@ -115016,6 +115651,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 69.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2407&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-Coreliquid-A13-240&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "coolerType": "AIO",
@@ -115064,6 +115704,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 89.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2465&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-CORELIQUID-A15-360&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "coolerType": "AIO",
@@ -115244,6 +115889,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 149.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2766&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMPG-CORELIQUID-P13-360-WHITE&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "coolerType": "AIO",
@@ -115292,6 +115942,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 179.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2798&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FCORELIQUID-A17-MLG-EDITION&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "coolerType": "AIO",
@@ -135107,6 +135762,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 209.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1875&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPro-MP341CQW&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 34,
@@ -135400,6 +136060,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 779.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2097&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-491CQP-QD-OLED&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 49,
@@ -135443,6 +136108,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 599.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2098&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-271QRX-QD-OLED&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -135516,6 +136186,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 799.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2133&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMAG-321UPX-QD-OLED&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 32,
@@ -135868,6 +136543,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583175&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583175.p%3FskuId%3D6583175",
+        "inStock": true
+      },
+      "msi": {
+        "price": 149.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2151&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP275Q&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -136661,6 +137341,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 199.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1734&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP341CQ&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 34,
@@ -136703,6 +137388,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 219.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2272&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP273U&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -136734,6 +137424,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594696&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594696.p%3FskuId%3D6594696",
+        "inStock": true
+      },
+      "msi": {
+        "price": 89.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2300&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP251-E2&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -137240,6 +137935,11 @@ export const PARTS = [
         "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604798&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604798.p%3FskuId%3D6604798",
         "inStock": true
+      },
+      "msi": {
+        "price": 104.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2375&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP275W-E2&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -137282,6 +137982,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 129.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2383&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP271A-E2&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -137556,6 +138261,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 749.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2417&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%3Fproduct_id%3D2417&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 32,
@@ -137588,6 +138298,11 @@ export const PARTS = [
         "price": 999.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613924&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6613924.p%3FskuId%3D6613924",
         "inStock": true
+      },
+      "msi": {
+        "price": 999.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2412&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-491CQPX-QD-OLED&intsrc=APIG_16410",
+        "inStock": false
       }
     },
     "screenSize": 49,
@@ -137631,6 +138346,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 879.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2426&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-321CURX-QD-OLED&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 32,
@@ -137674,6 +138394,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 189.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2427&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP273QW-E2&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -138150,6 +138875,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 279.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2514&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FModern-MD272UPSW&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -138354,6 +139084,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 99.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2393&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP251W-E2&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 24.5,
@@ -138698,6 +139433,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 899.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2491&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-272URX-QD-OLED&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -138741,6 +139481,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 289.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2320&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FModern-MD342CQPW&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 34,
@@ -140097,6 +140842,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 104.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2800&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP273L-E14&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -140395,6 +141145,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.783Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 109.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2881&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP273W-E14A&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -140426,6 +141181,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 94.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6666053&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6666053.p%3FskuId%3D6666053",
+        "inStock": true
+      },
+      "msi": {
+        "price": 94.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2802&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FPortable-Monitors%2FPro-MP165-E6&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -140468,6 +141228,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 119.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2872&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP243W-E14&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 23.8,
@@ -141029,6 +141794,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.783Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 799.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2887&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-271QR-QD-OLED-X50&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -141060,6 +141830,11 @@ export const PARTS = [
       "bestbuy": {
         "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673817&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-mp242-e14c-24-ips-lcd-fhd-144hz-1ms-freesync-buesiness-monitor-hdr-ready-with-built-in-speakers-usb-c-hdmi-black%2FJ3P7TXQRZ4&intsrc=APIG_28060",
+        "inStock": true
+      },
+      "msi": {
+        "price": 119.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2928&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP242-E14C&intsrc=APIG_16410",
         "inStock": true
       }
     },
@@ -141104,6 +141879,11 @@ export const PARTS = [
         "matchedAt": "2026-05-14T20:09:05.783Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 139.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2929&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP272-E14C&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 27,
@@ -141147,6 +141927,11 @@ export const PARTS = [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1
+      },
+      "msi": {
+        "price": 79.99,
+        "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2736&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP243L-E14&intsrc=APIG_16410",
+        "inStock": true
       }
     },
     "screenSize": 24,
@@ -191562,5 +192347,4 @@ export const PARTS = [
     "pcieGen": 4
   }
 ];
-
 export default PARTS;
