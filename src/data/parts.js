@@ -6449,11 +6449,6 @@ export const PARTS = [
         "price": 699.99,
         "url": "https://www.amazon.com/dp/B0G4P65W1J?tag=tiereduptech-20",
         "inStock": true
-      },
-      "bestbuy": {
-        "price": 299.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6634888&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-x870e-p-wifi-socket-am5-amd-x870e-atx-ddr5-wi-fi-7-motherboard-gray%2FJ3P7TXQ35Q&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "value": 0,
@@ -7084,11 +7079,6 @@ export const PARTS = [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 241.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013052&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-z890-p-wifi-lga-1851-atx-motherboard-prime-z890-p-wifi%2FJJGGLQWGT9&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "value": 8,
@@ -7133,11 +7123,6 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 235.18,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11015088&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-z890-s-wifi-lga-1851-intel-z890-atx-motherboard%2FJ3P7TX9W9K&intsrc=APIG_28060",
-        "inStock": true
       },
       "msi": {
         "price": 459.99,
@@ -7523,11 +7508,6 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 173.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013298&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b760m-project-zero-desktop-motherboard%2FJ3P7TXYKQK&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "value": 47,
@@ -7795,11 +7775,6 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 180.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013395&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-b850-max-gaming-wifi-w%2FJJGGLHGKQP&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "value": 42,
@@ -7846,11 +7821,6 @@ export const PARTS = [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 222.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013384&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b850-gaming-x-wifi6e-gaming-desktop-motherboard%2FJ3ZW92VFZP&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "value": 17,
@@ -13805,17 +13775,6 @@ export const PARTS = [
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665011&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665011.p%3FskuId%3D6665011",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458316670049652437671586",
-        "price": 169.99,
-        "saleprice": 149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316670049652437671586&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-atx-22-motherboards-amd-amd-b850-am5%2Fp%2FN82E16813144727%3Fitem%3DN82E16813144727",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-727-06.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.771Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       },
       "msi": {
         "price": 149.99,
@@ -21669,16 +21628,6 @@ export const PARTS = [
         "price": 198.58,
         "url": "https://www.amazon.com/dp/B0DD5MKXPD?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIA6ZPKMZ6871",
-        "price": 219.93,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310857124801236659477&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-b650em-e-wifi-micro-atx-motherboard-amd-b650-am4%2Fp%2FN82E16813119751%3Fitem%3D9SIA6ZPKMZ6871",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2509200C1PUQ59.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.83
       }
     },
     "additionalImages": [
@@ -24847,16 +24796,6 @@ export const PARTS = [
         "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523722&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gaming-b650-plus-wifi-socket-am5-amd-b650-atx-ddr5-wi-fi-6-motherboard-black%2FJJG7VW7P83&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16813119739R",
-        "price": 199.99,
-        "saleprice": 135.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317373425715565760486&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-b650e-plus-wifi-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813119739R%3Fitem%3DN82E16813119739R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-739-11.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.8
       }
     },
     "socket": "AM5",
