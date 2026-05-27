@@ -209,6 +209,13 @@ function routeFromUrl(parts) {
     if (product) return { page: "product", product, category: null };
   }
 
+  // /parts/{cat}  (category index page — no product id)
+  const catIdxMatch = pathname.match(/^\/parts\/([^/]+)\/?$/);
+  if (catIdxMatch) {
+    const catKey = SLUG_TO_CAT[catIdxMatch[1]];
+    if (catKey) return { page: "category-index", product: null, category: catKey };
+  }
+
   // /search?cat=X or /search?id=Y
   if (pathname === "/search" || pathname === "/search/") {
     const { cat, id } = parseSearchUrl();
@@ -245,6 +252,35 @@ const URL_CAT_SLUG = {
   "ExtensionCables":"extension-cables","UPS":"ups","OS":"operating-system","Antivirus":"antivirus",
   "Chair":"chair","Desk":"desk",
 };
+
+// Reverse map: URL slug → catalog category key (for /parts/{slug} index pages).
+const SLUG_TO_CAT = Object.fromEntries(Object.entries(URL_CAT_SLUG).map(([k, v]) => [v, k]));
+
+// Category index page metadata. Title noun + body phrasing tuned to keep
+// titles ≤60 and descriptions in the 120–160 window. Year is derived live.
+const CAT_INDEX = {
+  CPU:         { noun: "CPUs",           kw: "Compare Processors", long: "CPUs and processors" },
+  GPU:         { noun: "Graphics Cards", kw: "Compare GPUs",       long: "graphics cards" },
+  Motherboard: { noun: "Motherboards",   kw: "Intel & AMD",        long: "motherboards" },
+  RAM:         { noun: "RAM",            kw: "DDR5 & DDR4 Memory",  long: "RAM and memory kits" },
+  Storage:     { noun: "SSDs",           kw: "NVMe, SATA & HDD",    long: "SSDs and hard drives" },
+  PSU:         { noun: "Power Supplies", kw: "80+ Rated PSUs",      long: "power supplies" },
+  Case:        { noun: "PC Cases",       kw: "ATX, mATX & ITX",     long: "PC cases" },
+  CPUCooler:   { noun: "CPU Coolers",    kw: "Air & AIO",           long: "CPU coolers" },
+  Monitor:     { noun: "Monitors",       kw: "Gaming & 4K",         long: "gaming monitors" },
+};
+
+function buildCategoryIndexMeta(catKey) {
+  const ci = CAT_INDEX[catKey];
+  const slug = URL_CAT_SLUG[catKey];
+  if (!ci || !slug) return null;
+  const year = new Date().getFullYear();
+  return {
+    title: `Best ${ci.noun} ${year} — ${ci.kw} | ${BRAND}`,
+    desc: `Compare the best ${ci.long} of ${year}, ranked by benchmark and price. Verified specs, live deals, and value grades on every model.`,
+    path: `/parts/${slug}`,
+  };
+}
 
 // Slug function - MUST MATCH scripts/generate-sitemap.cjs slugify()
 function urlSlugify(name) {
@@ -393,6 +429,10 @@ function buildBreadcrumbLd({ page, product, category }) {
     const productName = product.n || "Product";
     // Product crumb has no url (it's the current page)
     items.push({ name: productName.slice(0, 90) });
+  } else if (page === "category-index" && category) {
+    // Category index: Home › Search › {Category noun}
+    items.push({ name: "Search", url: `${SITE}/search` });
+    items.push({ name: (CAT_INDEX[category] && CAT_INDEX[category].noun) || category });
   } else if (page === "search" && category) {
     // Category page: Home › Search › {Category}
     items.push({ name: "Search", url: `${SITE}/search` });
@@ -420,21 +460,35 @@ function buildBreadcrumbLd({ page, product, category }) {
 // ─── Build primary JSON-LD (Product / WebSite / CollectionPage) ─────────────
 function buildPrimaryLd({ page, product, category, url, title, desc }) {
   if (product) {
-    const price = product?.deals?.amazon?.price || product?.deals?.bestbuy?.price || product.pr;
-    const offerUrl = product?.deals?.amazon?.url || product?.deals?.bestbuy?.url || url;
+    const price = product?.deals?.amazon?.price || product?.deals?.bestbuy?.price
+      || product?.deals?.newegg?.saleprice || product?.deals?.newegg?.price || product.pr;
+    const offerUrl = product?.deals?.amazon?.url || product?.deals?.bestbuy?.url
+      || product?.deals?.newegg?.linkurl || product?.deals?.msi?.url || url;
     const inStock = product?.deals?.amazon?.inStock !== false;
+    const image = product?.deals?.amazon?.image || product.img
+      || product?.deals?.newegg?.imageurl || DEFAULT_OG_IMAGE;
+    // priceValidUntil: prices refresh on every catalog rebuild; give Google a
+    // near-future date (30 days) so Rich Results stays valid without overstating.
+    const validUntil = new Date(Date.now() + 30 * 864e5).toISOString().split("T")[0];
+    const sku = String(product.id || product._id || "");
+    const mpn = product.mpn || product?.deals?.newegg?.sku || sku;
     const ld = {
       "@context": "https://schema.org",
       "@type": "Product",
       name: product.n || product.name,
+      ...(image ? { image } : {}),
+      ...(desc ? { description: desc } : {}),
       ...(product.b || product.brand ? { brand: { "@type": "Brand", name: product.b || product.brand } } : {}),
       ...(product.c || product.category ? { category: product.c || product.category } : {}),
+      ...(sku ? { sku } : {}),
+      ...(mpn ? { mpn } : {}),
     };
     if (product.r && product.r > 0) {
       ld.aggregateRating = {
         "@type": "AggregateRating",
         ratingValue: String(product.r),
         reviewCount: String(product.rc || product.reviewCount || 1),
+        bestRating: "5",
       };
     }
     if (price) {
@@ -443,6 +497,7 @@ function buildPrimaryLd({ page, product, category, url, title, desc }) {
         price: String(price),
         priceCurrency: "USD",
         availability: inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+        priceValidUntil: validUntil,
         url: offerUrl,
       };
     }
@@ -461,7 +516,7 @@ function buildPrimaryLd({ page, product, category, url, title, desc }) {
       },
     };
   }
-  if (page === "search" && category) {
+  if ((page === "search" || page === "category-index") && category) {
     return {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
@@ -489,6 +544,8 @@ export default function PageMeta({ page, category, product, parts }) {
     meta = buildProductMeta(resolvedProduct);
     ogType = "product";
     ogImage = resolvedProduct?.deals?.amazon?.image || resolvedProduct.img || DEFAULT_OG_IMAGE;
+  } else if (effectivePage === "category-index" && resolvedCategory) {
+    meta = buildCategoryIndexMeta(resolvedCategory) || PAGES.search;
   } else if (effectivePage === "search" && resolvedCategory && CATEGORY_META[resolvedCategory]) {
     meta = { ...CATEGORY_META[resolvedCategory], path: `/search?cat=${encodeURIComponent(resolvedCategory)}` };
   } else {
