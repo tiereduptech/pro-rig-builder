@@ -389,6 +389,13 @@ OS:{icon:"🪟",label:"Operating Systems",singular:"OS",desc:"Windows & Linux",c
   UPS:{icon:"🔋",label:"UPS Systems",singular:"UPS",desc:"Battery backup systems",cols:[]},
 };
 const CATS=Object.keys(CAT);
+// URL slug <-> category key. MUST MATCH scripts/url-slugs.cjs CAT_SLUG.
+const CAT_URL_SLUG={CPU:"cpu",GPU:"gpu",Motherboard:"motherboard",RAM:"ram",Storage:"storage",PSU:"psu",Case:"case",CPUCooler:"cpu-cooler",CaseFan:"case-fan",Monitor:"monitor",Keyboard:"keyboard",Mouse:"mouse",MousePad:"mouse-pad",Headset:"headset",Microphone:"microphone",Webcam:"webcam",SoundCard:"sound-card",WiFiCard:"wifi-card",EthernetCard:"ethernet-card",OpticalDrive:"optical-drive",ExternalOptical:"external-optical-drive",ExternalStorage:"external-storage",InternalDisplay:"internal-display",ThermalPaste:"thermal-paste",ExtensionCables:"extension-cables",UPS:"ups",OS:"operating-system",Antivirus:"antivirus",Chair:"chair",Desk:"desk"};
+const SLUG_TO_CATKEY=Object.fromEntries(Object.entries(CAT_URL_SLUG).map(([k,v])=>[v,k]));
+// Canonical clean product URL — must match PageMeta/url-slugs.cjs productPath().
+function productUrl(p){const cs=CAT_URL_SLUG[p&&p.c];if(!cs||!p.id||!p.n)return null;return `/parts/${cs}/${productSlug(p)}-${p.id}`;}
+// Categories that get a rich /parts/{slug} landing index (Phase 4).
+const INDEX_CATS=["CPU","GPU","Motherboard","RAM","Storage","PSU","Case","CPUCooler","Monitor"];
 // Lucide icon component map for categories (replaces emoji icons)
 const CAT_ICONS = {
   Case: Box, CPU: Cpu, CPUCooler: Snowflake, Motherboard: CircuitBoard, RAM: MemoryStick,
@@ -2360,7 +2367,7 @@ function VsPcPartPickerPage({go}) {
 function PcpAlternativePage({go}) {
   return (
     <div className="fade">
-      <SEO title="The Best PCPartPicker Alternative in 2026" description="Looking for a PCPartPicker alternative? Pro Rig Builder offers every feature plus hardware scanner, FPS estimator, bottleneck calculator, and budget-aware upgrade recommendations. Ad-free." canonical="https://prorigbuilder.com/#pcpartpicker-alternative" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"PCPartPicker Alternative",url:"https://prorigbuilder.com/#pcpartpicker-alternative"}]}/>
+      <SEO title="The Best PCPartPicker Alternative in 2026" description="Looking for a PCPartPicker alternative? Pro Rig Builder offers every feature plus hardware scanner, FPS estimator, bottleneck calculator, and budget-aware upgrade recommendations. Ad-free." canonical="https://prorigbuilder.com/#pcpartpicker-alternative" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"PCPartPicker Alternative",url:"https://prorigbuilder.com/#pcpartpicker-alternative"}]} faq={[{q:"Is there a free PCPartPicker alternative?",a:"Yes. Pro Rig Builder is 100% free with no paywalls. It includes a PC builder, compatibility engine, multi-retailer pricing, and a free Windows hardware scanner — all at no cost."},{q:"What is the best PCPartPicker alternative in 2026?",a:"Pro Rig Builder is the most feature-complete alternative. It matches PCPartPicker's core building and compatibility features and adds a hardware scanner, FPS estimator, bottleneck calculator, and budget-aware upgrade recommendations, with zero ads."},{q:"Does Pro Rig Builder check part compatibility like PCPartPicker?",a:"Yes. Our compatibility engine validates socket, chipset, form factor, memory type, and PSU wattage as you build, the same checks PCPartPicker performs."},{q:"Can I import my PCPartPicker build?",a:"There is no one-click import, but recreating a build in our PC Builder takes a minute, and the hardware scanner can detect your current rig automatically for upgrade suggestions."}]}/>
       <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
         <div style={{maxWidth:1180,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
@@ -2423,7 +2430,7 @@ function PcpAlternativePage({go}) {
 function BestPcBuilderToolsPage({go}) {
   return (
     <div className="fade">
-      <SEO title="Best PC Builder Tools in 2026: Ranked & Reviewed" description="The best PC builder tools of 2026 ranked by features, pricing transparency, and modern UX. See how Pro Rig Builder, PCPartPicker, Newegg PC Builder, and Logical Increments stack up." canonical="https://prorigbuilder.com/#best-pc-builder-tools" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Best PC Builder Tools",url:"https://prorigbuilder.com/#best-pc-builder-tools"}]}/>
+      <SEO title="Best PC Builder Tools in 2026: Ranked & Reviewed" description="The best PC builder tools of 2026 ranked by features, pricing transparency, and modern UX. See how Pro Rig Builder, PCPartPicker, Newegg PC Builder, and Logical Increments stack up." canonical="https://prorigbuilder.com/#best-pc-builder-tools" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Best PC Builder Tools",url:"https://prorigbuilder.com/#best-pc-builder-tools"}]} faq={[{q:"What is the best PC builder tool in 2026?",a:"Pro Rig Builder ranks first for most builders thanks to its hardware scanner, FPS estimator, bottleneck calculator, multi-retailer pricing, and ad-free experience. PCPartPicker remains strong for community builds."},{q:"What is the best free PC building website?",a:"Pro Rig Builder is free with no ads or paywalls. It offers a full PC builder, compatibility checking, and exclusive tools that paid and ad-supported sites often gate or omit."},{q:"Is PCPartPicker still the best PC builder?",a:"PCPartPicker is excellent for browsing user-submitted builds and forums, but it lacks a hardware scanner, FPS estimation, and bottleneck analysis. For modern tooling, Pro Rig Builder leads."},{q:"Which PC builder tool has the best price comparison?",a:"Pro Rig Builder and PCPartPicker both compare live prices across multiple retailers. Pro Rig Builder prioritizes in-stock listings across Amazon, Best Buy, Newegg and more."}]}/>
       <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
         <div style={{maxWidth:1180,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
@@ -2515,6 +2522,318 @@ function BestPcBuilderToolsPage({go}) {
       <VariantCTA go={go}/>
     </div>
   );
+}
+
+// ═══ SHARED LANDING-PAGE PRIMITIVES ════════════════════════════════
+function LandingHero({badge,title,sub}){
+  return <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
+    <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
+    <div style={{maxWidth:1180,margin:"0 auto",padding:"60px 32px 40px",position:"relative"}}>
+      <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:13,fontWeight:700,letterSpacing:1.5,marginBottom:22}}>{badge}</div>
+      <h1 style={{fontFamily:"var(--ff)",fontSize:42,fontWeight:800,color:"var(--txt)",letterSpacing:-1.2,lineHeight:1.12,marginBottom:16}}>{title}</h1>
+      <p style={{fontFamily:"var(--ff)",fontSize:17,color:"var(--dim)",lineHeight:1.65,maxWidth:940}}>{sub}</p>
+    </div>
+  </div>;
+}
+// Crawlable internal link: real <a href> (Googlebot follows it) that also does
+// SPA navigation via go() when a page name is supplied, avoiding a full reload.
+function ILink({href,go,page,children}){
+  return <a href={href} onClick={e=>{if(go&&page){e.preventDefault();go(page);}}} style={{color:"var(--accent)",textDecoration:"underline",cursor:"pointer",fontWeight:600}}>{children}</a>;
+}
+function FaqSection({items}){
+  return <div style={{maxWidth:1180,margin:"0 auto",padding:"0 32px 8px"}}>
+    <SectionHeading>Frequently asked questions</SectionHeading>
+    {items.map((f,i)=><div key={i} style={{borderBottom:"1px solid var(--bdr)",padding:"16px 0"}}>
+      <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)",marginBottom:6}}>{f.q}</div>
+      <div style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.65}}>{f.a}</div>
+    </div>)}
+  </div>;
+}
+
+// ─── /pc-hardware-scanner ────────────────────────────────────────
+function PcHardwareScannerPage({go}){
+  const FAQ=[
+    {q:"How do I find out what hardware is in my PC?",a:"The fastest way is to run a PC hardware scanner. Download the free Pro Rig Scanner for Windows, run it once, and it lists your exact CPU, GPU, RAM, motherboard, and storage in seconds — no part numbers to type in by hand."},
+    {q:"Is the Pro Rig hardware scanner safe?",a:"Yes. It runs 100% locally on your machine, reads only hardware identifiers, collects no personal data, and sends nothing to our servers. It is code-signed and requires no installation."},
+    {q:"What's the difference between a hardware scanner and Device Manager?",a:"Device Manager lists driver-level device names but hides specs like RAM speed, VRAM, and benchmark class. A hardware scanner resolves each component to a real catalog part with full specs and upgrade options."},
+    {q:"Does the scanner work without admin rights?",a:"It runs as a standard portable executable. Most detection works without elevation; a few low-level identifiers may report less detail without admin, but CPU, GPU, RAM, and storage are detected either way."},
+    {q:"Is the PC hardware scanner free?",a:"Yes, completely free with no ads, trials, or paywalls. After the scan you get personalized, budget-aware upgrade recommendations at no cost."},
+  ];
+  return <div className="fade">
+    <SEO title="PC Hardware Scanner" description="placeholder" canonical="https://prorigbuilder.com/pc-hardware-scanner" faq={FAQ}/>
+    <LandingHero badge="FREE WINDOWS APP" title="PC Hardware Scanner — See Exactly What's In Your PC"
+      sub="Not sure what CPU, GPU, or motherboard you have? Run our free PC hardware scanner and get an instant, accurate breakdown of every component in your rig — then see exactly what's worth upgrading."/>
+    <div style={{maxWidth:1180,margin:"0 auto",padding:"48px 32px"}}>
+      <Para>
+        A <strong>PC hardware scanner</strong> answers a question almost every PC owner eventually asks: <em>"What's actually in my PC?"</em> Whether you bought a prebuilt, inherited a machine, or just don't remember which parts you picked three years ago, manually identifying your hardware is tedious and error-prone. The Pro Rig Scanner reads your system directly and tells you precisely what you're running in a few seconds.
+      </Para>
+      <Para>
+        Unlike Windows Device Manager — which shows cryptic driver names and hides the specs that actually matter — our scanner resolves each component to a real, fully-specced catalog entry. You see your CPU's core count and benchmark class, your GPU's VRAM, your RAM's speed and capacity, your motherboard's socket and chipset, and your storage type and capacity, all in plain language.
+      </Para>
+
+      <SectionHeading>What the scanner detects</SectionHeading>
+      <ul style={{paddingLeft:22,marginBottom:20}}>
+        <Bullet><strong>Processor (CPU)</strong> — exact model, socket, core/thread count, and relative performance tier</Bullet>
+        <Bullet><strong>Graphics card (GPU)</strong> — model, VRAM, and where it lands on the performance curve</Bullet>
+        <Bullet><strong>Memory (RAM)</strong> — total capacity, number of sticks, type (DDR4/DDR5), and speed</Bullet>
+        <Bullet><strong>Motherboard</strong> — make, model, socket, and chipset (so you know your upgrade ceiling)</Bullet>
+        <Bullet><strong>Storage</strong> — each drive's capacity and whether it's an NVMe SSD, SATA SSD, or hard drive</Bullet>
+        <Bullet><strong>Power & thermals</strong> — context to judge whether your PSU and cooler can handle an upgrade</Bullet>
+      </ul>
+
+      <SectionHeading>How to find out what's in your PC</SectionHeading>
+      <Para>There are three common ways to identify your hardware, from slowest to fastest:</Para>
+      <ol style={{paddingLeft:22,marginBottom:20}}>
+        <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Open the case and read labels.</strong> Accurate but slow, and many parts hide their model numbers under coolers or shrouds.</li>
+        <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Dig through Windows tools.</strong> Task Manager, System Information, and Device Manager each show a fragment of the picture, and none translate specs into upgrade advice.</li>
+        <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Run a hardware scanner.</strong> One click, a few seconds, and every component is identified and matched to real parts you can compare and upgrade.</li>
+      </ol>
+
+      <SectionHeading>Scanner vs. manual lookup</SectionHeading>
+      <div style={{overflowX:"auto",border:"1px solid var(--bdr)",borderRadius:10,marginBottom:24}}>
+        <table style={{width:"100%",borderCollapse:"collapse",minWidth:520}}>
+          <thead><tr style={{background:"var(--bg3)",borderBottom:"2px solid var(--bdr)"}}>
+            <th style={{textAlign:"left",padding:"10px 14px",fontFamily:"var(--mono)",fontSize:10,fontWeight:700,letterSpacing:1.5,color:"var(--dim)"}}>TASK</th>
+            <th style={{textAlign:"center",padding:"10px",fontFamily:"var(--mono)",fontSize:10,fontWeight:700,letterSpacing:1.5,color:"var(--dim)"}}>MANUAL</th>
+            <th style={{textAlign:"center",padding:"10px",fontFamily:"var(--mono)",fontSize:10,fontWeight:700,letterSpacing:1.5,color:"var(--accent)"}}>PRO RIG SCANNER</th>
+          </tr></thead>
+          <tbody>
+            {[["Identify every component","Minutes to hours","Seconds"],["Get exact specs (RAM speed, VRAM)","Often hidden","Always shown"],["Translate to upgrade advice","Manual research","Automatic"],["Match parts to live prices","No","Yes"]].map((r,i)=>(
+              <tr key={i} style={{borderTop:"1px solid var(--bdr)"}}>
+                <td style={{padding:"12px 14px",fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",fontWeight:600}}>{r[0]}</td>
+                <td style={{padding:"12px",textAlign:"center",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>{r[1]}</td>
+                <td style={{padding:"12px",textAlign:"center",fontFamily:"var(--ff)",fontSize:13,color:"var(--mint)",fontWeight:600}}>{r[2]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <SectionHeading>100% local — your data never leaves your PC</SectionHeading>
+      <Para>
+        Privacy matters. The Pro Rig Scanner runs entirely on your machine, reads only the hardware identifiers it needs, and transmits nothing to us. There's no account, no telemetry, and no installation — it's a single signed executable you can delete the moment you're done.
+      </Para>
+
+      <SectionHeading>From scan to smart upgrade</SectionHeading>
+      <Para>
+        Knowing what's in your PC is step one. The real value is knowing <em>what to do about it</em>. Once the scan completes, head to our <ILink href="/what-can-i-upgrade" go={go} page="what-can-i-upgrade">what can I upgrade</ILink> guide and our <ILink href="/upgrade" go={go} page="upgrade">upgrade path tool</ILink> to see the single change that buys you the most performance for your budget. Building fresh instead? Jump into the <ILink href="/builder" go={go} page="builder">PC Builder</ILink> or browse the <ILink href="/parts/gpu">best graphics cards</ILink> and <ILink href="/parts/cpu">best CPUs</ILink>.
+      </Para>
+    </div>
+    <FaqSection items={FAQ}/>
+    <VariantCTA go={go}/>
+  </div>;
+}
+
+// ─── /what-can-i-upgrade ─────────────────────────────────────────
+function WhatCanIUpgradePage({go}){
+  const FAQ=[
+    {q:"What can I upgrade in my PC?",a:"Almost every part of a desktop PC is upgradeable: GPU, CPU, RAM, storage, cooler, and power supply. The best upgrade depends on your current bottleneck and motherboard limits. Scan your PC and our tool ranks upgrades by performance-per-dollar."},
+    {q:"What is the best first upgrade for an old PC?",a:"For most gaming PCs the graphics card delivers the biggest single jump. If you're already GPU-rich but stuttering, adding RAM or moving to an SSD is usually the highest-impact, lowest-cost upgrade."},
+    {q:"How do I know if my PC can be upgraded?",a:"Your motherboard socket and chipset set the CPU ceiling, your RAM type (DDR4 vs DDR5) is fixed by the board, and your case and PSU limit GPU and cooler size. Our scanner reads all of these and flags what will and won't fit."},
+    {q:"Is it worth upgrading an old PC or building new?",a:"If two or more core parts (CPU, motherboard, RAM) are several generations old, a fresh build often costs about the same as piecemeal upgrades and performs far better. Our tool shows the break-even point for your specific rig."},
+    {q:"Can I upgrade a prebuilt or laptop PC?",a:"Most prebuilt desktops accept standard GPU, RAM, and storage upgrades. Laptops are far more limited — usually only RAM and storage, and sometimes neither. The scanner detects which applies to you."},
+  ];
+  return <div className="fade">
+    <SEO title="What Can I Upgrade In My PC" description="placeholder" canonical="https://prorigbuilder.com/what-can-i-upgrade" faq={FAQ}/>
+    <LandingHero badge="UPGRADE GUIDE" title="What Can I Upgrade In My PC?"
+      sub="Stop guessing. Find the single upgrade that gives your PC the biggest performance boost for the money — based on your actual hardware, not generic advice."/>
+    <div style={{maxWidth:1180,margin:"0 auto",padding:"48px 32px"}}>
+      <Para>
+        "<strong>What can I upgrade in my PC?</strong>" is the right question — and the answer is almost never "everything at once." Every PC has one component holding the rest back. Spend on the wrong part and you'll see little to no improvement; spend on the bottleneck and a five-year-old machine can feel new again. This guide explains how to find your weak link and what each upgrade actually delivers.
+      </Para>
+      <Para>
+        The fastest path is to <ILink href="/pc-hardware-scanner" go={go} page="pc-hardware-scanner">scan your PC</ILink> so you know exactly what you're working with, then let our <ILink href="/upgrade" go={go} page="upgrade">upgrade path tool</ILink> rank upgrades by performance-per-dollar for your specific configuration and budget.
+      </Para>
+
+      <SectionHeading>The five upgrades that actually move the needle</SectionHeading>
+      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16,marginBottom:24}} className="how-grid">
+        {[
+          {t:"Graphics card (GPU)",d:"The biggest single lever for gaming and GPU-accelerated work. If your frame rates are low at high settings, this is almost always the answer.",link:"/parts/gpu",label:"Browse GPUs"},
+          {t:"Memory (RAM)",d:"Going from 8GB to 16GB (or 16GB to 32GB) eliminates stutter from multitasking, modern games, and creative apps. Cheap and high-impact.",link:"/parts/ram",label:"Browse RAM"},
+          {t:"Storage (SSD)",d:"Still on a hard drive? Moving Windows to an NVMe SSD is the most dramatic 'feels faster' upgrade you can buy for under $80.",link:"/parts/storage",label:"Browse SSDs"},
+          {t:"Processor (CPU)",d:"Worth it when your GPU is starved at low resolutions or you do heavy multi-core work. Check your motherboard socket first.",link:"/parts/cpu",label:"Browse CPUs"},
+        ].map(f=>(
+          <div key={f.t} style={{background:"var(--card)",border:"1px solid var(--bdr)",borderRadius:12,padding:"22px 24px"}}>
+            <div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)",marginBottom:8}}>{f.t}</div>
+            <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.6,marginBottom:10}}>{f.d}</div>
+            <a href={f.link} style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--accent)",textDecoration:"underline"}}>{f.label} →</a>
+          </div>
+        ))}
+      </div>
+
+      <SectionHeading>How to find your bottleneck</SectionHeading>
+      <Para>
+        A bottleneck is the component that limits the rest. If your GPU sits at 99% usage while your CPU coasts, you're GPU-bound — a faster card helps most. If the reverse is true, you're CPU-bound. Our <ILink href="/tools/bottleneck-calculator" go={go} page="tools">bottleneck calculator</ILink> quantifies this with a severity percentage so you're not guessing.
+      </Para>
+      <ul style={{paddingLeft:22,marginBottom:20}}>
+        <Bullet><strong>Low FPS at high resolution</strong> → GPU upgrade</Bullet>
+        <Bullet><strong>Stutter, long load times, heavy multitasking lag</strong> → more RAM or an SSD</Bullet>
+        <Bullet><strong>Low FPS even at 1080p with a strong GPU</strong> → CPU upgrade</Bullet>
+        <Bullet><strong>Thermal throttling or shutdowns under load</strong> → cooler or PSU</Bullet>
+      </ul>
+
+      <SectionHeading>Check the limits before you buy</SectionHeading>
+      <Para>
+        Three things decide what's possible: your <strong>motherboard</strong> (CPU socket and RAM type), your <strong>power supply</strong> (can it feed a hungrier GPU?), and your <strong>case</strong> (will the card physically fit?). Skipping these checks is the #1 upgrade mistake. Our scanner reads all three, and our <ILink href="/will-it-fit" go={go} page="will-it-fit">will it fit</ILink> guide covers GPU clearance specifically.
+      </Para>
+
+      <SectionHeading>Upgrade vs. rebuild</SectionHeading>
+      <Para>
+        Sometimes the smart money is a fresh start. When your CPU, motherboard, and RAM are all several generations behind, the cost of upgrading each one approaches the cost of a new core platform — with worse results. The <ILink href="/builder" go={go} page="builder">PC Builder</ILink> makes it easy to price out a modern core and compare it against piecemeal upgrades before you commit.
+      </Para>
+    </div>
+    <FaqSection items={FAQ}/>
+    <VariantCTA go={go}/>
+  </div>;
+}
+
+// ─── /will-it-fit ────────────────────────────────────────────────
+function WillItFitPage({go}){
+  const FAQ=[
+    {q:"Will my GPU fit in my case?",a:"Compare your graphics card's length (in mm) to your case's maximum GPU clearance. If the card is shorter than the clearance, it fits. Also check height for thick triple-slot cards. Every case and GPU in our catalog lists these dimensions."},
+    {q:"How do I know my case's maximum GPU length?",a:"It's published in the case's spec sheet as 'max GPU length' or 'graphics card clearance' in millimetres. You'll find it on every case page in our catalog, and our scanner detects your case where possible."},
+    {q:"Will a 3-slot GPU fit my motherboard?",a:"Physically most will, but a 3-slot card covers the PCIe slots beneath it. Make sure you don't need those slots for a sound card, capture card, or Wi-Fi adapter, and confirm case width for the extra thickness."},
+    {q:"Do I need to check cooler height too?",a:"Yes. Air coolers have a height in mm that must be under your case's 'max CPU cooler height'. AIO liquid coolers need a radiator mount of the right size (120/240/280/360mm). Both are listed on our case and cooler pages."},
+    {q:"What happens if a GPU is too long for the case?",a:"It won't seat properly — it may hit the front fans, drive cage, or radiator. Some cases let you remove a drive cage to gain clearance, but always verify the numbers before buying rather than forcing a fit."},
+  ];
+  return <div className="fade">
+    <SEO title="Will This GPU Fit My Case" description="placeholder" canonical="https://prorigbuilder.com/will-it-fit" faq={FAQ}/>
+    <LandingHero badge="COMPATIBILITY" title="Will It Fit? GPU & Case Clearance, Answered"
+      sub="Before you buy that big graphics card, make sure it physically fits. Here's exactly how to check GPU length, cooler height, and case clearance — the dimensions most builders forget."/>
+    <div style={{maxWidth:1180,margin:"0 auto",padding:"48px 32px"}}>
+      <Para>
+        "<strong>Will this GPU fit my case?</strong>" trips up first-time and veteran builders alike, because modern graphics cards have grown enormous — many flagship cards are over 320mm long and occupy three or more slots. The good news: fit is a simple numbers game once you know which numbers to compare. This guide walks through GPU length, thickness, and cooler clearance so you never order a card that won't seat.
+      </Para>
+
+      <SectionHeading>The one comparison that matters most</SectionHeading>
+      <Para>
+        Every case publishes a <strong>maximum GPU length</strong> (graphics-card clearance) in millimetres. Every graphics card publishes its <strong>length</strong>. If the card's length is less than the case's clearance — with ~10–20mm of breathing room for cables — it fits. That's the core check. On Pro Rig Builder, both numbers appear on every <ILink href="/parts/case">case</ILink> and <ILink href="/parts/gpu">graphics card</ILink> page, so you can confirm fit in seconds.
+      </Para>
+
+      <SectionHeading>Three clearances to verify</SectionHeading>
+      <ul style={{paddingLeft:22,marginBottom:20}}>
+        <Bullet><strong>GPU length (mm)</strong> vs. case max GPU clearance — the make-or-break dimension</Bullet>
+        <Bullet><strong>GPU slot width</strong> (2-slot, 2.5-slot, 3-slot) — thick cards block lower PCIe slots and need case depth</Bullet>
+        <Bullet><strong>CPU cooler height (mm)</strong> vs. case max cooler height — air coolers especially; for AIOs, check radiator size support (120/240/280/360mm)</Bullet>
+      </ul>
+
+      <SectionHeading>A quick worked example</SectionHeading>
+      <div style={{background:"var(--card)",border:"1px solid var(--bdr)",borderRadius:12,padding:"22px 26px",marginBottom:24}}>
+        <Para><strong>Your case:</strong> max GPU clearance 360mm, max cooler height 165mm.</Para>
+        <Para><strong>The card you want:</strong> 336mm long, 3-slot.</Para>
+        <Para style={{marginBottom:0}}><strong>Verdict:</strong> 336mm &lt; 360mm, so length is fine with ~24mm to spare. Confirm the 3-slot thickness doesn't cover a PCIe slot you need, and you're good to go. Always leave a margin for the power connectors at the end of the card.</Para>
+      </div>
+
+      <SectionHeading>Don't forget the rest of the build</SectionHeading>
+      <Para>
+        Fit isn't only about the GPU. Your <strong>motherboard form factor</strong> (ATX, mATX, ITX) must match the case, your <strong>radiator</strong> needs a supported mount point, and your <strong>power supply</strong> must be the right length for the PSU bay. The <ILink href="/builder" go={go} page="builder">PC Builder</ILink> checks these automatically as you add parts, and if you're upgrading an existing machine, start by running the <ILink href="/pc-hardware-scanner" go={go} page="pc-hardware-scanner">hardware scanner</ILink> to capture your current case and motherboard.
+      </Para>
+
+      <SectionHeading>The bottom line</SectionHeading>
+      <Para>
+        Measure twice, buy once. Compare GPU length to case clearance, check slot width and cooler height, and leave a small margin. Do that and "will it fit?" stops being a gamble. Browse cases by GPU clearance and coolers by height on our <ILink href="/parts/case">PC cases</ILink> and <ILink href="/parts/cpu-cooler">CPU coolers</ILink> pages.
+      </Para>
+    </div>
+    <FaqSection items={FAQ}/>
+    <VariantCTA go={go}/>
+  </div>;
+}
+
+// ─── /parts/{cat} category index (Phase 4) ───────────────────────
+const CAT_INTRO={
+  CPU:{lead:"The processor sets the ceiling for your whole system — it drives frame rates in CPU-bound games, multitasking, and creative workloads. The best CPU for you balances core count, single-core speed, and platform cost.",specs:["Cores and threads — more help productivity and streaming; gaming favours fast cores over many","Single-core clock speed — the biggest factor in most games","Socket (AM5, LGA1851/1700) — must match your motherboard exactly","TDP and included cooler — higher-TDP chips need stronger cooling"],mistake:"Pairing a top-tier CPU with a weak GPU for a gaming build. Below 4K, the GPU matters far more — don't overspend on cores you won't use."},
+  GPU:{lead:"The graphics card is the single biggest factor in gaming and GPU-accelerated performance. Picking the right one is about matching its power to your resolution and refresh-rate target — not just buying the most expensive card you can.",specs:["VRAM — 8GB is entry-level in 2026; 12–16GB is the sweet spot for 1440p and up","Target resolution — 1080p, 1440p, and 4K demand very different tiers","Card length and slot width — confirm it fits your case","Power draw (TDP) and connectors — make sure your PSU can feed it"],mistake:"Buying far more GPU than your monitor can show. A 4K-class card on a 1080p 60Hz display wastes most of what you paid for."},
+  Motherboard:{lead:"The motherboard ties every component together and quietly sets your upgrade ceiling. The right board matches your CPU socket, supports the RAM and storage you want, and includes the connectivity you'll actually use.",specs:["Socket and chipset — must match your CPU and unlock the features you want","Form factor (ATX, mATX, ITX) — must fit your case","Memory type and slots — DDR5 vs DDR4, and how much RAM it accepts","M.2 slots, USB-C, and Wi-Fi — connectivity for today and future upgrades"],mistake:"Overspending on a high-end chipset for a CPU that can't use the extra power delivery or overclocking, or buying a board that boxes in future upgrades."},
+  RAM:{lead:"Memory is one of the cheapest, highest-impact upgrades in a PC. The right kit clears multitasking stutter and feeds your CPU at the speed your platform supports — without paying for headroom you can't use.",specs:["Capacity — 16GB is the floor in 2026; 32GB is the comfortable sweet spot","Type — DDR5 or DDR4, dictated by your motherboard","Speed (MHz) and CAS latency — higher speed and lower latency help, especially on AMD","Kit layout — two sticks for dual-channel beats a single stick"],mistake:"Buying a single stick instead of a matched pair, which halves memory bandwidth and can noticeably cut frame rates."},
+  Storage:{lead:"Storage shapes how fast your PC feels day to day. A modern NVMe SSD makes boot, load, and file operations dramatically snappier than a hard drive, while large HDDs remain great value for bulk archives.",specs:["Type — NVMe SSD for your OS and games; HDD for cheap bulk storage","Capacity — 1TB is a sensible minimum for a primary drive in 2026","Sequential and random speeds — random matters more for everyday responsiveness","Form factor and interface — M.2 NVMe vs 2.5\" SATA; check your board's slots"],mistake:"Installing Windows on a hard drive. It's the single biggest cause of a 'slow' modern PC — an SSD fixes it instantly."},
+  PSU:{lead:"The power supply is the component you should never cheap out on. A quality, correctly-sized PSU protects every other part and leaves headroom for upgrades; a bad one risks the whole system.",specs:["Wattage — size for your GPU plus headroom (20–30% spare is healthy)","80 PLUS efficiency rating — Bronze is fine; Gold and up run cooler and quieter","Modularity — fully modular cabling keeps builds clean","ATX 3.0 / 12V-2x6 — needed for modern high-end GPU power connectors"],mistake:"Buying the cheapest unbranded PSU to save money. Efficiency, protections, and reliability vary wildly — this is not the place to economise."},
+  Case:{lead:"The case determines what fits, how cool it runs, and how your build looks. The right case matches your motherboard size and gives your GPU and cooler room to breathe.",specs:["Motherboard support (ATX, mATX, ITX) — must match your board","Maximum GPU length and cooler height — confirm clearance for big parts","Airflow and fan/radiator support — mesh fronts and ample mounts run cooler","Build quality and cable management — makes assembly far easier"],mistake:"Falling for looks and ignoring GPU clearance. A gorgeous compact case that can't fit your card is wasted money — check the numbers first."},
+  CPUCooler:{lead:"A CPU cooler keeps your processor fast and quiet under load. The right cooler clears your case, handles your CPU's heat output, and matches your noise tolerance.",specs:["Cooling capacity (TDP rating) vs your CPU's heat output","Type — capable air cooler vs AIO liquid for the hottest chips","Clearance — air-cooler height vs case limit; radiator size for AIOs","Socket compatibility and noise level (dBA)"],mistake:"Pairing a hot, high-core CPU with a budget cooler. Thermal throttling silently caps performance — match cooling to the chip."},
+  Monitor:{lead:"The monitor is what you actually look at, and it defines how good your hardware feels. The right panel matches your GPU's output to a resolution and refresh rate you'll genuinely use.",specs:["Resolution — 1080p, 1440p, or 4K; balance against your GPU's strength","Refresh rate (Hz) — 144Hz+ transforms fast-paced gaming","Panel type — IPS for colour, VA for contrast, OLED for the best of both","Adaptive sync (G-Sync/FreeSync) and response time for smooth motion"],mistake:"Buying a 4K 144Hz monitor your GPU can't drive. Match the panel to the card so you actually hit those frames."},
+};
+function CategoryIndexPage({catKey,go}){
+  const cfg=CAT[catKey]||{};
+  const year=new Date().getFullYear();
+  const slug=CAT_URL_SLUG[catKey];
+  const NOUN={CPU:"CPUs",GPU:"Graphics Cards",Motherboard:"Motherboards",RAM:"RAM",Storage:"SSDs & Hard Drives",PSU:"Power Supplies",Case:"PC Cases",CPUCooler:"CPU Coolers",Monitor:"Monitors"}[catKey]||(cfg.label||catKey);
+  const intro=CAT_INTRO[catKey]||{lead:`Compare the best ${(cfg.label||catKey).toLowerCase()} by specs, benchmarks, and live price.`,specs:[],mistake:""};
+  const [sort,setSort]=useState("bench");
+  const ranked=useMemo(()=>{
+    const inCat=P.filter(p=>p.c===catKey&&!p.bundle&&!p.needsReview&&p.n&&p.id);
+    const seen=new Set(),uniq=[];
+    for(const p of inCat){const k=cleanProductName(p).toLowerCase();if(seen.has(k))continue;seen.add(k);uniq.push(p);}
+    uniq.sort((a,b)=>{const d=(b.bench||0)-(a.bench||0);return d!==0?d:(($(a)||1e9)-($(b)||1e9));});
+    return uniq.slice(0,20);
+  },[catKey]);
+  const sorted=useMemo(()=>{
+    const r=[...ranked];
+    if(sort==="price")r.sort((a,b)=>($(a)||1e9)-($(b)||1e9));
+    else if(sort==="rating")r.sort((a,b)=>(b.r||0)-(a.r||0));
+    else r.sort((a,b)=>{const d=(b.bench||0)-(a.bench||0);return d!==0?d:(($(a)||1e9)-($(b)||1e9));});
+    return r;
+  },[ranked,sort]);
+  const top5=ranked.slice(0,5);
+  const itemListLd={"@context":"https://schema.org","@type":"ItemList",name:`Best ${NOUN} ${year}`,numberOfItems:ranked.length,itemListElement:ranked.map((p,i)=>({"@type":"ListItem",position:i+1,name:cleanProductName(p),url:"https://prorigbuilder.com"+(productUrl(p)||"")}))};
+  return <div className="fade">
+    <Helmet><script type="application/ld+json">{JSON.stringify(itemListLd)}</script></Helmet>
+    {/* visible breadcrumb (BreadcrumbList JSON-LD is emitted by PageMeta) */}
+    <div style={{maxWidth:1180,margin:"0 auto",padding:"16px 32px 0"}}>
+      <nav aria-label="Breadcrumb" style={{display:"flex",alignItems:"center",gap:6,fontSize:13,color:"var(--dim)",flexWrap:"wrap"}}>
+        <a href="/" onClick={e=>{e.preventDefault();go("home");}} style={{color:"var(--dim)",cursor:"pointer"}}>Home</a><span>/</span>
+        <a href="/search" onClick={e=>{e.preventDefault();go("search");}} style={{color:"var(--dim)",cursor:"pointer"}}>Parts</a><span>/</span>
+        <span style={{color:"var(--txt)",fontWeight:600}}>{NOUN}</span>
+      </nav>
+    </div>
+    <div style={{maxWidth:1180,margin:"0 auto",padding:"20px 32px 8px"}}>
+      <h1 style={{fontFamily:"var(--ff)",fontSize:38,fontWeight:800,color:"var(--txt)",letterSpacing:-1,lineHeight:1.15,marginBottom:14}}>Best {NOUN} {year}</h1>
+      <p style={{fontFamily:"var(--ff)",fontSize:16,color:"var(--dim)",lineHeight:1.7,maxWidth:940,marginBottom:16}}>{intro.lead}</p>
+      {intro.specs.length>0&&<>
+        <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",margin:"6px 0 8px"}}>What to consider when choosing {NOUN.toLowerCase()}:</div>
+        <ul style={{paddingLeft:22,marginBottom:14}}>{intro.specs.map((s,i)=><li key={i} style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.7,marginBottom:6}}>{s}</li>)}</ul>
+      </>}
+      {intro.mistake&&<div style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:10,padding:"14px 18px",marginBottom:8}}>
+        <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5}}>COMMON MISTAKE</span>
+        <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--dim)",lineHeight:1.65,marginTop:4}}>{intro.mistake}</div>
+      </div>}
+    </div>
+    <div style={{maxWidth:1180,margin:"0 auto",padding:"16px 32px 0"}}>
+      <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",flexWrap:"wrap",gap:10,marginBottom:10}}>
+        <h2 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:700,color:"var(--txt)",margin:0}}>Top {sorted.length} {NOUN.toLowerCase()}</h2>
+        <div style={{display:"flex",alignItems:"center",gap:6}}>
+          <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)"}}>SORT</span>
+          <select value={sort} onChange={e=>setSort(e.target.value)} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,padding:"6px 8px",fontSize:12,color:"var(--txt)",fontFamily:"var(--ff)",cursor:"pointer"}}>
+            <option value="bench">Performance</option><option value="price">Price ↑</option><option value="rating">Top Rated</option>
+          </select>
+          <a href={`/search?cat=${catKey}`} style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--accent)",textDecoration:"underline",marginLeft:8}}>Filter all →</a>
+        </div>
+      </div>
+      <div style={{border:"1px solid var(--bdr)",borderRadius:10,overflow:"hidden",marginBottom:32}}>
+        {sorted.map((p,i)=>{const u=productUrl(p);const pr=$(p);return <a key={p.id} href={u||"#"} style={{display:"grid",gridTemplateColumns:"34px 64px 1fr auto",gap:12,alignItems:"center",padding:"12px 14px",borderBottom:i<sorted.length-1?"1px solid var(--bdr)":"none",background:i%2?"var(--bg2)":"transparent",textDecoration:"none"}}>
+          <span style={{fontFamily:"var(--mono)",fontSize:14,fontWeight:800,color:"var(--accent)",textAlign:"center"}}>{i+1}</span>
+          {p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${cleanProductName(p)} ${catKey}`} width="64" height="64" style={{width:64,height:64,objectFit:"contain",background:"var(--bg4)",borderRadius:6}}/>:<div style={{width:64,height:64,background:"var(--bg4)",borderRadius:6}}/>}
+          <div style={{minWidth:0}}>
+            <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)",lineHeight:1.3,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{cleanProductName(p)}</div>
+            <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",marginTop:2}}>{p.b}{p.bench!=null?` · perf ${p.bench}`:""}{p.r?` · ★ ${p.r}`:""}</div>
+          </div>
+          <div style={{textAlign:"right"}}>
+            <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--mint)"}}>{pr!=null?`$${fmtPrice(pr)}`:"—"}</div>
+            <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",fontWeight:600}}>View →</span>
+          </div>
+        </a>;})}
+      </div>
+      {top5.length>0&&<div style={{marginBottom:32}}>
+        <SectionHeading>Popular {NOUN.toLowerCase()} right now</SectionHeading>
+        <div style={{display:"flex",flexWrap:"wrap",gap:8}}>
+          {top5.map(p=>{const u=productUrl(p);return <a key={p.id} href={u||"#"} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:16,padding:"6px 14px",textDecoration:"none"}}>{cleanProductName(p)}</a>;})}
+        </div>
+      </div>}
+      <div style={{display:"flex",flexWrap:"wrap",gap:8,marginBottom:8}}>
+        <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",alignSelf:"center"}}>Related:</span>
+        {INDEX_CATS.filter(c=>c!==catKey).map(c=><a key={c} href={`/parts/${CAT_URL_SLUG[c]}`} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",textDecoration:"underline"}}>{{CPU:"CPUs",GPU:"GPUs",Motherboard:"Motherboards",RAM:"RAM",Storage:"Storage",PSU:"PSUs",Case:"Cases",CPUCooler:"Coolers",Monitor:"Monitors"}[c]}</a>)}
+      </div>
+    </div>
+    <VariantCTA go={go}/>
+  </div>;
 }
 
 function HomePage({go,browse,th}){
@@ -5369,15 +5688,17 @@ export default function App(){
     if(typeof window==='undefined')return"home";
     const path=(window.location.pathname||"/").replace(/^\//,"").split("/")[0];
     if(path==="parts"&&/^\/parts\/[^\/]+\/.*-\d+$/.test(window.location.pathname))return"product";
+    if(path==="parts"){const m=window.location.pathname.match(/^\/parts\/([^\/]+)\/?$/);if(m&&SLUG_TO_CATKEY[m[1]])return"category-index";}
     if(!path)return"home";
     // Validate against known pages
-    const validPages=["home","search","builder","community","tools","upgrade","scanner","about","contact","privacy","terms","affiliate","compare","vs-pcpartpicker","pcpartpicker-alternative","best-pc-builder-tools"];
+    const validPages=["home","search","builder","community","tools","upgrade","scanner","about","contact","privacy","terms","affiliate","compare","vs-pcpartpicker","pcpartpicker-alternative","best-pc-builder-tools","pc-hardware-scanner","what-can-i-upgrade","will-it-fit"];
     if(validPages.includes(path))return path;
     // Also handle legacy hash routes
     const hash=(window.location.hash||"").replace(/^#/,"").split("/")[0];
     if(validPages.includes(hash))return hash;
     return"home";
   });const [bc,setBc]=useState("");const [bq,setBq]=useState("");const [productId,setProductId]=useState(()=>{if(typeof window==="undefined")return null;const m=(window.location.pathname||"").match(/^\/parts\/[^\/]+\/.*-(\d+)$/);return m?m[1]:null;});
+  const [catKey,setCatKey]=useState(()=>{if(typeof window==="undefined")return null;const m=(window.location.pathname||"").match(/^\/parts\/([^\/]+)\/?$/);return m&&SLUG_TO_CATKEY[m[1]]?SLUG_TO_CATKEY[m[1]]:null;});
   const th = useThumbs();
   const [theme,setTheme]=useState(()=>{try{return localStorage.getItem("rf-theme")||"light";}catch{return"light";}});
   const toggleTheme=()=>{const next=theme==="dark"?"light":"dark";setTheme(next);try{localStorage.setItem("rf-theme",next);}catch{};};
@@ -5386,6 +5707,7 @@ export default function App(){
   const setPage = (p, replaceCurrent) => {
     setPageRaw(p);
     if (p !== "product") setProductId(null);
+    if (p !== "category-index") setCatKey(null);
     const url = p === "home" ? "/" : "/" + p;
     if (replaceCurrent) {
       window.history.replaceState({page:p}, "", url + window.location.search);
@@ -5400,9 +5722,13 @@ export default function App(){
       const state = e.state;
       const pathPage = (window.location.pathname || "/").replace(/^\//, "").split("/")[0] || "home";
       const productMatch = (window.location.pathname || "").match(/^\/parts\/[^\/]+\/.*-(\d+)$/);
+      const catIdxMatch = (window.location.pathname || "").match(/^\/parts\/([^\/]+)\/?$/);
       if (productMatch) {
         setProductId(productMatch[1]);
         setPageRaw("product");
+      } else if (catIdxMatch && SLUG_TO_CATKEY[catIdxMatch[1]]) {
+        setCatKey(SLUG_TO_CATKEY[catIdxMatch[1]]);
+        setPageRaw("category-index");
       } else if (state && state.page) {
         setPageRaw(state.page);
         if (state.page !== "search") setBc("");
@@ -5419,7 +5745,7 @@ export default function App(){
    });
 
     // Set initial state from pathname (primary) with hash fallback for legacy URLs
-    const validPages = ["home","search","builder","community","tools","upgrade","scanner","about","contact","privacy","terms","affiliate","compare","vs-pcpartpicker","pcpartpicker-alternative","best-pc-builder-tools"];
+    const validPages = ["home","search","builder","community","tools","upgrade","scanner","about","contact","privacy","terms","affiliate","compare","vs-pcpartpicker","pcpartpicker-alternative","best-pc-builder-tools","pc-hardware-scanner","what-can-i-upgrade","will-it-fit"];
 
     // Try pathname first
     const rawPath = (window.location.pathname || "/").replace(/^\//,"");
@@ -5427,10 +5753,16 @@ export default function App(){
 
     // Product URL: /parts/{cat}/{slug}-{id}
     const productMatch = (window.location.pathname || "").match(/^\/parts\/[^\/]+\/.*-(\d+)$/);
+    // Category index URL: /parts/{cat}
+    const catIdxMatch = (window.location.pathname || "").match(/^\/parts\/([^\/]+)\/?$/);
     if (productMatch) {
       setProductId(productMatch[1]);
       setPageRaw("product");
       window.history.replaceState({page:"product",productId:productMatch[1]}, "", window.location.pathname);
+    } else if (catIdxMatch && SLUG_TO_CATKEY[catIdxMatch[1]]) {
+      setCatKey(SLUG_TO_CATKEY[catIdxMatch[1]]);
+      setPageRaw("category-index");
+      window.history.replaceState({page:"category-index",catKey:SLUG_TO_CATKEY[catIdxMatch[1]]}, "", window.location.pathname);
     } else if (pathBase && validPages.includes(pathBase)) {
       setPageRaw(pathBase);
       // Preserve full pathname (e.g. /tools/fps-estimator) — do NOT collapse to /tools
@@ -5458,5 +5790,5 @@ export default function App(){
 
   const handleBrowse=c=>{setBc(c);setPage("search");};
   const handleSearch=(q,cat)=>{setBq(q);setBc(cat||"");setPage("search");};
-  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><PageMeta page={page} category={bc} parts={ACTIVE_SEED_PARTS} product={page==="product"&&productId?ACTIVE_SEED_PARTS.find(x=>String(x.id)===String(productId)):null} /><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} onSearch={handleSearch} th={th} theme={theme} toggleTheme={toggleTheme}/><main style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPageRouter activeCat={bc} initialQuery={bq} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage}/>}{page==="product"&&productId&&(()=>{const _sp=ACTIVE_SEED_PARTS.find(x=>String(x.id)===String(productId));return _sp?<SearchPage activeCat={_sp.c} singleProductId={productId} th={th}/>:<ProductPage productId={productId} parts={ACTIVE_SEED_PARTS} go={setPage}/>;})()}</main><Footer go={setPage}/><ScrollToTop /><ScannerPromo go={setPage} page={page}/></div>;
+  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><PageMeta page={page} category={bc} parts={ACTIVE_SEED_PARTS} product={page==="product"&&productId?ACTIVE_SEED_PARTS.find(x=>String(x.id)===String(productId)):null} /><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} onSearch={handleSearch} th={th} theme={theme} toggleTheme={toggleTheme}/><main style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPageRouter activeCat={bc} initialQuery={bq} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage}/>}{page==="pc-hardware-scanner"&&<PcHardwareScannerPage go={setPage}/>}{page==="what-can-i-upgrade"&&<WhatCanIUpgradePage go={setPage}/>}{page==="will-it-fit"&&<WillItFitPage go={setPage}/>}{page==="category-index"&&catKey&&<CategoryIndexPage catKey={catKey} go={setPage}/>}{page==="product"&&productId&&(()=>{const _sp=ACTIVE_SEED_PARTS.find(x=>String(x.id)===String(productId));return _sp?<SearchPage activeCat={_sp.c} singleProductId={productId} th={th}/>:<ProductPage productId={productId} parts={ACTIVE_SEED_PARTS} go={setPage}/>;})()}</main><Footer go={setPage}/><ScrollToTop /><ScannerPromo go={setPage} page={page}/></div>;
 }

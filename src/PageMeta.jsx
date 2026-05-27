@@ -168,6 +168,24 @@ const PAGES = {
     path: "/best-pc-builder-tools",
     crumbLabel: "Best PC Builder Tools",
   },
+  "pc-hardware-scanner": {
+    title: `PC Hardware Scanner — Free Windows Tool | ${BRAND}`,
+    desc: "Find out what's in your PC. Our free Windows hardware scanner detects your CPU, GPU, RAM, motherboard and storage in seconds, then suggests upgrades.",
+    path: "/pc-hardware-scanner",
+    crumbLabel: "PC Hardware Scanner",
+  },
+  "what-can-i-upgrade": {
+    title: `What Can I Upgrade In My PC? | ${BRAND}`,
+    desc: "Wondering what you can upgrade in your PC? Find the single upgrade with the biggest performance gain for your budget, based on your real hardware.",
+    path: "/what-can-i-upgrade",
+    crumbLabel: "What Can I Upgrade",
+  },
+  "will-it-fit": {
+    title: `Will This GPU Fit My Case? | ${BRAND}`,
+    desc: "Will your new GPU fit your case? Learn how to check graphics card length, slot width, and cooler clearance so you never buy a part that won't fit.",
+    path: "/will-it-fit",
+    crumbLabel: "Will It Fit",
+  },
 };
 
 // ─── Category-specific overrides for /search?cat=X ──────────────────────────

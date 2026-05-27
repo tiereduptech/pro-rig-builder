@@ -60,6 +60,20 @@ const STATIC_ROUTES = [
   { path: "/vs-pcpartpicker",               priority: "0.8", changefreq: "monthly" },
   { path: "/pcpartpicker-alternative",      priority: "0.8", changefreq: "monthly" },
   { path: "/best-pc-builder-tools",         priority: "0.7", changefreq: "monthly" },
+  // High-intent landing pages (Phase 3)
+  { path: "/pc-hardware-scanner",           priority: "0.8", changefreq: "monthly" },
+  { path: "/what-can-i-upgrade",            priority: "0.8", changefreq: "monthly" },
+  { path: "/will-it-fit",                   priority: "0.8", changefreq: "monthly" },
+  // Category index pages (Phase 4) — slugs MUST match scripts/url-slugs.cjs
+  { path: "/parts/cpu",                     priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/gpu",                     priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/motherboard",             priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/ram",                     priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/storage",                 priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/psu",                     priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/case",                    priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/cpu-cooler",              priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/monitor",                 priority: "0.8", changefreq: "weekly"  },
 ];
 
 // --- Sanity ---------------------------------------------------------------
