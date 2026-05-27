@@ -8,6 +8,7 @@
     "build": "node split-price-history.js && node split-reviews.js && vite build && node prerender.cjs",
     "preview": "vite preview",
     "build:fast": "vite build",
+    "seo:audit": "node scripts/seo-audit.cjs",
     "start": "node server.cjs"
   },
   "dependencies": {
