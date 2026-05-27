@@ -102,6 +102,51 @@ function extractLdJsonBlocks(html) {
   return blocks;
 }
 
+function countH1(html) {
+  const m = html.match(/<h1[\s>]/gi);
+  return m ? m.length : 0;
+}
+
+// Count distinct internal links (same-site relative hrefs), excluding pure
+// anchors and asset/file links. The global footer alone provides ~20, so this
+// mainly catches truly orphaned shell pages.
+function countInternalLinks(html) {
+  const re = /<a[^>]+href=["'](\/[^"'#]*)["']/gi;
+  const set = new Set();
+  let m;
+  while ((m = re.exec(html))) {
+    const href = m[1];
+    if (/\.(png|jpg|jpeg|svg|webp|ico|css|js|json|xml|exe|woff2?)$/i.test(href)) continue;
+    set.add(href.replace(/\/$/, "") || "/");
+  }
+  return set.size;
+}
+
+// Light required-field validation per schema @type. Returns array of problems.
+function validateLd(obj) {
+  const problems = [];
+  const types = Array.isArray(obj) ? obj.map(o => o && o["@type"]) : [obj["@type"]];
+  const items = Array.isArray(obj) ? obj : [obj];
+  items.forEach(o => {
+    if (!o || typeof o !== "object") return;
+    const t = o["@type"];
+    if (t === "Product") {
+      if (!o.name) problems.push("Product missing name");
+      const hasOffer = o.offers && (o.offers.price != null || (Array.isArray(o.offers) && o.offers.length));
+      const hasRating = o.aggregateRating && o.aggregateRating.ratingValue != null;
+      if (!hasOffer && !hasRating) problems.push("Product missing offers and aggregateRating");
+      if (o.offers && !Array.isArray(o.offers) && o.offers.price != null && !o.offers.priceCurrency) problems.push("Product offer missing priceCurrency");
+    } else if (t === "FAQPage") {
+      if (!Array.isArray(o.mainEntity) || !o.mainEntity.length) problems.push("FAQPage missing mainEntity");
+    } else if (t === "ItemList") {
+      if (!Array.isArray(o.itemListElement) || !o.itemListElement.length) problems.push("ItemList missing itemListElement");
+    } else if (t === "BreadcrumbList") {
+      if (!Array.isArray(o.itemListElement) || !o.itemListElement.length) problems.push("BreadcrumbList missing itemListElement");
+    }
+  });
+  return problems;
+}
+
 function auditFile(file) {
   const html = fs.readFileSync(file, "utf8");
   const rel = path.relative(DIST, file).replace(/\\/g, "/");
@@ -130,10 +175,20 @@ function auditFile(file) {
   const ldBlocks = extractLdJsonBlocks(html);
   if (ldBlocks.length === 0) warnings.push("no JSON-LD blocks");
   ldBlocks.forEach((b, i) => {
-    try { JSON.parse(b); } catch (e) {
+    try {
+      const parsed = JSON.parse(b);
+      for (const p of validateLd(parsed)) issues.push(`JSON-LD: ${p}`);
+    } catch (e) {
       issues.push(`JSON-LD #${i + 1} invalid: ${e.message.slice(0, 80)}`);
     }
   });
+
+  const h1n = countH1(html);
+  if (h1n === 0) issues.push("missing <h1>");
+  else if (h1n > 1) issues.push(`${h1n} <h1> tags (must be exactly 1)`);
+
+  const links = countInternalLinks(html);
+  if (links < 3) issues.push(`only ${links} internal links (<3)`);
 
   const bodyLen = extractBodyText(html).length;
   if (bodyLen < BODY_MIN) issues.push(`body text ${bodyLen} chars (<${BODY_MIN})`);
@@ -146,6 +201,8 @@ function auditFile(file) {
     canonical: canon || null,
     hasOgImage: !!ogImg,
     ldJsonBlocks: ldBlocks.length,
+    h1: h1n,
+    internalLinks: links,
     bodyLen,
     issues,
     warnings,

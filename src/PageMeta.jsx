@@ -128,19 +128,19 @@ const PAGES = {
   },
   privacy: {
     title: `Privacy Policy | ${BRAND}`,
-    desc: "How Pro Rig Builder collects, uses, and protects your data. Plain English, no legalese.",
+    desc: "How Pro Rig Builder collects, uses, and protects your data — in plain English. Covers cookies, analytics, and our scanner's local-only design.",
     path: "/privacy",
     crumbLabel: "Privacy",
   },
   terms: {
     title: `Terms of Service | ${BRAND}`,
-    desc: "Terms of service for using Pro Rig Builder, our hardware scanner, and our APIs.",
+    desc: "Terms of service for using Pro Rig Builder, our free PC builder tools, and the Pro Rig hardware scanner. Your rights, our rules, and the fine print.",
     path: "/terms",
     crumbLabel: "Terms",
   },
   affiliate: {
     title: `Affiliate Disclosure | ${BRAND}`,
-    desc: "Pro Rig Builder is an Amazon Associate and earns from qualifying purchases. Full affiliate disclosure inside.",
+    desc: "Pro Rig Builder is an Amazon Associate and earns from qualifying purchases. Read our full affiliate disclosure covering how our links and commissions work.",
     path: "/affiliate",
     crumbLabel: "Affiliate",
   },
