@@ -1,209 +1,316 @@
 // =============================================================================
 //  prerender.cjs
-//  Copyright © 2026 TieredUp Tech, Inc.
+//  Copyright (c) 2026 TieredUp Tech, Inc.
 //
-//  Pre-renders the static marketing pages of Pro Rig Builder to HTML files
-//  that crawlers (and social previews) can read without running JS.
+//  Pre-renders ALL pages of Pro Rig Builder to static HTML:
+//    - Static marketing/utility routes
+//    - All ~5,290 indexable product pages (auto-loaded from parts.js)
 //
-//  How it works:
-//    1) Spawns `npx serve -s dist -l 4173` to host the freshly-built bundle.
-//    2) Boots headless Chrome via Puppeteer.
-//    3) Visits each route, waits for react-helmet to populate <title> and
-//       meta description, then dumps the rendered DOM to dist/{route}/index.html.
-//    4) Kills the server.
+//  Also writes a fresh public/sitemap.xml using the same product list, so
+//  sitemap and prerendered files NEVER drift apart.
 //
-//  Result:
-//    - Direct hits to /search, /builder, etc. return real HTML (Bing, Twitter,
-//      LinkedIn previews work).
-//    - SPA hydration still takes over after JS loads — same React components
-//      render the exact same DOM, so no hydration mismatch.
-//    - Routes NOT pre-rendered (e.g. /product/[id]) still fall back to the SPA
-//      shell via `serve -s` (single-page mode).
-//
-//  Pre-req: npm install --save-dev puppeteer
-//  Usage:   node prerender.cjs            (after `npm run build`)
-//           node prerender.cjs --verbose
+//  Usage:
+//    node prerender.cjs                  # full prerender + sitemap
+//    node prerender.cjs --incremental    # skip already-rendered pages
+//    node prerender.cjs --verbose
+//    node prerender.cjs --static-only    # skip products (fast dev iteration)
+//    node prerender.cjs --concurrency=4  # default 8
 // =============================================================================
 
-const fs = require('fs');
-const path = require('path');
-const { spawn } = require('child_process');
+const fs = require("fs");
+const path = require("path");
+const { spawn } = require("child_process");
+const { productPath, isIndexable, loadParts } = require("./scripts/url-slugs.cjs");
 
-const VERBOSE = process.argv.includes('--verbose');
-const PORT = 4173;
-const BASE = `http://localhost:${PORT}`;
-const TIMEOUT = 15000;
+const VERBOSE       = process.argv.includes("--verbose");
+const INCREMENTAL   = process.argv.includes("--incremental");
+const STATIC_ONLY   = process.argv.includes("--static-only");
+const CONCURRENCY   = (() => {
+  const a = process.argv.find(a => a.startsWith("--concurrency="));
+  return a ? parseInt(a.split("=")[1], 10) || 8 : 8;
+})();
 
-// Static marketing/utility routes — match the keys in PageMeta.jsx.
-// Product pages are NOT in this list (3,870 of them; pre-render those in a
-// separate batch script if SEO needs go beyond static pages).
-const ROUTES = [
-  '/',
-  '/search',
-  '/builder',
-  '/community',
-  '/tools',
-  '/tools/fps-estimator',
-  '/tools/bottleneck-calculator',
-  '/tools/will-it-run',
-  '/tools/compare-builds',
-  '/tools/build-wizard',
-  '/tools/power-calculator',
-  '/tools/compare-parts',
-  '/upgrade',
-  '/scanner',
-  '/about',
-  '/contact',
-  '/privacy',
-  '/terms',
-  '/affiliate',
-  '/compare',
-  '/vs-pcpartpicker',
-  '/pcpartpicker-alternative',
-  '/best-pc-builder-tools',
+const PORT    = 4173;
+const BASE    = `http://localhost:${PORT}`;
+const TIMEOUT = 40000;
+const SITE    = "https://prorigbuilder.com";
+const TODAY   = new Date().toISOString().split("T")[0];
+
+const STATIC_ROUTES = [
+  { path: "/",                              priority: "1.0", changefreq: "daily"   },
+  { path: "/search",                        priority: "0.9", changefreq: "daily"   },
+  { path: "/builder",                       priority: "0.9", changefreq: "weekly"  },
+  { path: "/community",                     priority: "0.7", changefreq: "weekly"  },
+  { path: "/tools",                         priority: "0.8", changefreq: "weekly"  },
+  { path: "/tools/fps-estimator",           priority: "0.7", changefreq: "monthly" },
+  { path: "/tools/bottleneck-calculator",   priority: "0.7", changefreq: "monthly" },
+  { path: "/tools/will-it-run",             priority: "0.7", changefreq: "monthly" },
+  { path: "/tools/compare-builds",          priority: "0.7", changefreq: "monthly" },
+  { path: "/tools/build-wizard",            priority: "0.7", changefreq: "monthly" },
+  { path: "/tools/power-calculator",        priority: "0.7", changefreq: "monthly" },
+  { path: "/tools/compare-parts",           priority: "0.7", changefreq: "monthly" },
+  { path: "/upgrade",                       priority: "0.8", changefreq: "weekly"  },
+  { path: "/scanner",                       priority: "0.8", changefreq: "weekly"  },
+  { path: "/about",                         priority: "0.6", changefreq: "monthly" },
+  { path: "/contact",                       priority: "0.5", changefreq: "monthly" },
+  { path: "/privacy",                       priority: "0.3", changefreq: "yearly"  },
+  { path: "/terms",                         priority: "0.3", changefreq: "yearly"  },
+  { path: "/affiliate",                     priority: "0.3", changefreq: "yearly"  },
+  { path: "/compare",                       priority: "0.8", changefreq: "weekly"  },
+  { path: "/vs-pcpartpicker",               priority: "0.8", changefreq: "monthly" },
+  { path: "/pcpartpicker-alternative",      priority: "0.8", changefreq: "monthly" },
+  { path: "/best-pc-builder-tools",         priority: "0.7", changefreq: "monthly" },
 ];
 
-// ─── Sanity checks ───────────────────────────────────────────────────────────
-if (!fs.existsSync(path.join('dist', 'index.html'))) {
-  console.error('  ✗ dist/index.html not found. Run `npm run build` first.');
+// --- Sanity ---------------------------------------------------------------
+if (!fs.existsSync(path.join("dist", "index.html"))) {
+  console.error("  X dist/index.html not found. Run `vite build` first.");
   process.exit(1);
 }
 
 let puppeteer;
-try {
-  puppeteer = require('puppeteer');
-} catch {
-  console.error('  ✗ puppeteer not installed. Run:');
-  console.error('      npm install --save-dev puppeteer');
-  process.exit(1);
+try { puppeteer = require("puppeteer"); }
+catch { console.error("  X puppeteer not installed. Run: npm install --save-dev puppeteer"); process.exit(1); }
+
+// --- Helpers --------------------------------------------------------------
+function xmlEscape(s) {
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&apos;");
 }
 
-// ─── Helper: wait for the local serve to actually be ready ───────────────────
-async function waitForServer(retries = 30) {
+function outPathFor(route) {
+  const parts = route.split("/").filter(Boolean);
+  return route === "/" ? path.join("dist", "index.html") : path.join("dist", ...parts, "index.html");
+}
+
+async function waitForServer(retries = 60) {
   for (let i = 0; i < retries; i++) {
-    try {
-      const res = await fetch(BASE + '/');
-      if (res.ok) return true;
-    } catch {}
+    try { const res = await fetch(BASE + "/"); if (res.ok) return true; } catch {}
     await new Promise(r => setTimeout(r, 250));
   }
   return false;
 }
 
-// ─── Main ────────────────────────────────────────────────────────────────────
+async function renderRoute(browser, route) {
+  const page = await browser.newPage();
+  try {
+    await page.setRequestInterception(true);
+    page.on("request", (req) => {
+      const t = req.resourceType();
+      if (t === "image" || t === "media" || t === "font") req.abort();
+      else req.continue();
+    });
+
+    await page.goto(BASE + route, { waitUntil: "networkidle0", timeout: TIMEOUT });
+
+    await page.waitForFunction(() => {
+      const titleOk = document.title && document.title.length > 5;
+      const descOk  = document.querySelector('meta[name="description"]')?.content?.length > 20;
+      const bodyOk  = document.body?.innerText?.length > 100;
+      // Helmet-flushed canonical check (lenient).
+      // For "/" we accept the bare site URL. For everything else we require the
+      // canonical to point under the same first path segment as the current URL —
+      // this proves PageMeta has rendered route-specific meta without being so
+      // strict that minor slug edge cases trigger a 20s timeout.
+      const c = document.querySelector('link[rel="canonical"]')?.href || "";
+      const p = location.pathname || "/";
+      let canonOk;
+      if (p === "/") {
+        canonOk = /prorigbuilder\.com\/?$/.test(c);
+      } else {
+        const seg1 = "/" + p.replace(/^\//, "").split("/")[0];
+        canonOk = c.includes("prorigbuilder.com" + seg1);
+      }
+      return titleOk && descOk && bodyOk && canonOk;
+    }, { timeout: TIMEOUT });
+
+    // Give React/Helmet one more tick to flush any trailing updates
+    await new Promise(r => setTimeout(r, 100));
+
+    const html = await page.content();
+    const bodyChars = await page.evaluate(() => document.body.innerText.length);
+    if (bodyChars < 100) throw new Error(`body only ${bodyChars} chars`);
+
+    const out = outPathFor(route);
+    fs.mkdirSync(path.dirname(out), { recursive: true });
+    fs.writeFileSync(out, html, "utf8");
+    return { ok: true, route, size: html.length, body: bodyChars };
+  } catch (e) {
+    return { ok: false, route, error: e.message };
+  } finally {
+    try { await page.close(); } catch {}
+  }
+}
+
+async function runPool(items, worker, concurrency, onProgress) {
+  let i = 0, done = 0;
+  const results = [];
+  async function next() {
+    while (i < items.length) {
+      const idx = i++;
+      const r = await worker(items[idx]);
+      results.push(r);
+      done++;
+      onProgress(done, items.length, r);
+    }
+  }
+  await Promise.all(Array.from({ length: concurrency }, next));
+  return results;
+}
+
+// --- Main -----------------------------------------------------------------
 async function main() {
-  console.log('Pro Rig Builder — Pre-render');
-  console.log('============================');
+  console.log("Pro Rig Builder - Pre-render");
+  console.log("============================");
+  console.log(`  Concurrency: ${CONCURRENCY}`);
+  if (INCREMENTAL) console.log("  Mode: incremental (skip existing)");
+  if (STATIC_ONLY) console.log("  Mode: static-only");
 
-  // Spawn local server. We must use `cmd /c npx ...` on Windows or the spawn
-  // returns a shell process whose kill() doesn't actually terminate npx.
-  const isWin = process.platform === 'win32';
-  const serveCmd = isWin ? 'cmd' : 'npx';
+  // Build full route list
+  const parts = STATIC_ONLY ? [] : (await loadParts()).filter(isIndexable);
+  console.log(`  Loaded ${parts.length} indexable products`);
+
+  const productRoutes = parts.map(p => productPath(p)).filter(Boolean);
+  const allRoutes = [
+    ...STATIC_ROUTES.map(r => r.path),
+    ...productRoutes,
+  ];
+
+  // Incremental: skip routes already rendered
+  let toRender = allRoutes;
+  if (INCREMENTAL) {
+    toRender = allRoutes.filter(r => !fs.existsSync(outPathFor(r)));
+    console.log(`  Incremental: ${toRender.length} of ${allRoutes.length} need rendering`);
+  }
+
+  // Spawn local server
+  const isWin = process.platform === "win32";
+  const serveCmd = isWin ? "cmd" : "npx";
   const serveArgs = isWin
-    ? ['/c', 'npx', 'serve', '-s', 'dist', '-l', String(PORT)]
-    : ['serve', '-s', 'dist', '-l', String(PORT)];
+    ? ["/c", "npx", "serve", "-s", "dist", "-l", String(PORT)]
+    : ["serve", "-s", "dist", "-l", String(PORT)];
+
   console.log(`  Starting local server on :${PORT}...`);
-  const serveProc = spawn(serveCmd, serveArgs, {
-    stdio: VERBOSE ? 'inherit' : 'pipe',
-    detached: false,
-  });
+  const serveProc = spawn(serveCmd, serveArgs, { stdio: VERBOSE ? "inherit" : "pipe", detached: false });
+  serveProc.on("error", (e) => { console.error("  X serve failed:", e.message); process.exit(1); });
 
-  serveProc.on('error', (e) => {
-    console.error('  ✗ serve failed to start:', e.message);
-    process.exit(1);
-  });
-
-  const ready = await waitForServer();
-  if (!ready) {
-    console.error('  ✗ Local server did not respond within 7.5s. Aborting.');
-    serveProc.kill();
+  if (!(await waitForServer())) {
+    console.error("  X Local server did not respond. Aborting.");
+    if (isWin) spawn("taskkill", ["/pid", serveProc.pid, "/T", "/F"], { stdio: "ignore" });
+    else serveProc.kill("SIGTERM");
     process.exit(1);
   }
-  console.log('  ✓ Server ready');
+  console.log("  OK Server ready");
 
-  // Boot Puppeteer
-  console.log('  Launching headless Chrome...');
-  const browser = await puppeteer.launch({
-    headless: 'new',
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  // Boot puppeteer — recycled every BROWSER_RECYCLE pages to avoid memory growth
+  const BROWSER_RECYCLE = 500;
+  console.log("  Launching headless Chrome...");
+  let browser = await puppeteer.launch({
+    headless: "new",
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
-
-  let success = 0, failed = 0;
-
-  for (const route of ROUTES) {
-    const url = BASE + route;
-    process.stdout.write(`  ${route.padEnd(32)} `);
-
-    const page = await browser.newPage();
+  let pagesSinceRecycle = 0;
+  const recycleLock = { busy: false };
+  async function maybeRecycle() {
+    if (pagesSinceRecycle < BROWSER_RECYCLE || recycleLock.busy) return;
+    recycleLock.busy = true;
     try {
-      // Block external resources for speed (we just need the HTML, not the
-      // hydrated app actually working in the headless browser).
-      await page.setRequestInterception(true);
-      page.on('request', (req) => {
-        const t = req.resourceType();
-        if (t === 'image' || t === 'media' || t === 'font') {
-          req.abort();
-        } else {
-          req.continue();
-        }
+      const old = browser;
+      browser = await puppeteer.launch({
+        headless: "new",
+        args: ["--no-sandbox", "--disable-setuid-sandbox"],
       });
-
-      await page.goto(url, { waitUntil: 'networkidle0', timeout: TIMEOUT });
-
-      // Wait for react-helmet-async to populate <title> and description.
-      await page.waitForFunction(
-        () => {
-          const titleOk = document.title && document.title.length > 5;
-          const descOk = document.querySelector('meta[name="description"]')?.content?.length > 20;
-          const bodyOk = document.body?.innerText?.length > 100;
-          return titleOk && descOk && bodyOk;
-        },
-        { timeout: TIMEOUT }
-      );
-
-      // Snapshot the rendered HTML.
-      const html = await page.content();
-
-      // Sanity: confirm content actually rendered.
-      const bodyText = await page.evaluate(() => document.body.innerText.length);
-      if (bodyText < 100) {
-        throw new Error(`body has only ${bodyText} chars of text — render likely failed`);
-      }
-
-      // Write to dist/{route}/index.html. Root '/' overwrites dist/index.html
-      // (the SPA shell) with the pre-rendered version.
-      const outDir = route === '/' ? 'dist' : path.join('dist', ...route.split('/').filter(Boolean));
-      fs.mkdirSync(outDir, { recursive: true });
-      fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
-
-      console.log(`✓  (${(html.length / 1024).toFixed(1)} kB, ${bodyText} chars body)`);
-      success++;
-    } catch (e) {
-      console.log(`✗  ${e.message}`);
-      failed++;
+      pagesSinceRecycle = 0;
+      try { await old.close(); } catch {}
+      console.log("  ↻ Browser recycled");
     } finally {
-      await page.close();
+      recycleLock.busy = false;
     }
   }
 
-  await browser.close();
-
-  // Kill server (Windows needs the tree killed because npx spawns a child).
-  if (isWin) {
-    spawn('taskkill', ['/pid', serveProc.pid, '/T', '/F'], { stdio: 'ignore' });
-  } else {
-    serveProc.kill('SIGTERM');
+  // Warmup: render one route sequentially so the parts-data chunk is in the
+  // local server's hot cache before 8 workers fight for it on a cold start.
+  if (toRender.length > 1) {
+    console.log("  Warmup: rendering first route sequentially...");
+    const warmupResult = await renderRoute(browser, toRender[0]);
+    if (warmupResult.ok) console.log(`  OK Warmup done (${warmupResult.size} bytes)`);
+    else console.log(`  ! Warmup failed: ${warmupResult.error} — continuing anyway`);
   }
 
-  console.log('\n============================');
-  console.log(`  ✓ ${success} pre-rendered`);
-  if (failed > 0) console.log(`  ✗ ${failed} failed`);
-  console.log('============================\n');
+  const startedAt = Date.now();
+  const failures = [];
+  let lastLog = Date.now();
+
+  // Skip the warmup route since it was already rendered above.
+  const poolRoutes = toRender.length > 1 ? toRender.slice(1) : toRender;
+  const results = await runPool(
+    poolRoutes,
+    async (route) => {
+      await maybeRecycle();
+      let result = await renderRoute(browser, route);
+      // Retry once on transient failure
+      if (!result.ok && /Connection|Target closed|navigation/i.test(result.error || "")) {
+        result = await renderRoute(browser, route);
+      }
+      pagesSinceRecycle++;
+      return result;
+    },
+    CONCURRENCY,
+    (done, total, r) => {
+      if (!r.ok) failures.push(r);
+      const now = Date.now();
+      if (now - lastLog > 2000 || done === total) {
+        const rate = done / ((now - startedAt) / 1000);
+        const eta  = Math.round((total - done) / rate);
+        const pct  = ((done / total) * 100).toFixed(1);
+        console.log(`  ${done}/${total} (${pct}%) - ${rate.toFixed(1)}/s - ETA ${eta}s - failed: ${failures.length}`);
+        lastLog = now;
+      }
+    }
+  );
+
+  try { await browser.close(); } catch {}
+  if (isWin) spawn("taskkill", ["/pid", serveProc.pid, "/T", "/F"], { stdio: "ignore" });
+  else serveProc.kill("SIGTERM");
+
+  const success = results.filter(r => r.ok).length;
+  const failed  = failures.length;
+  const elapsed = ((Date.now() - startedAt) / 1000).toFixed(1);
+
+  if (failed > 0) {
+    fs.writeFileSync("prerender-failures.json", JSON.stringify(failures, null, 2));
+    console.log(`  Logged ${failed} failures to prerender-failures.json`);
+  } else if (fs.existsSync("prerender-failures.json")) {
+    fs.unlinkSync("prerender-failures.json");
+  }
+
+  // ---- Write sitemap from the SAME product list ----
+  console.log("  Writing public/sitemap.xml...");
+  const sitemapEntries = [];
+  for (const sr of STATIC_ROUTES) {
+    sitemapEntries.push(
+      `  <url>\n    <loc>${xmlEscape(SITE + sr.path)}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <changefreq>${sr.changefreq}</changefreq>\n    <priority>${sr.priority}</priority>\n  </url>`
+    );
+  }
+  for (const p of parts) {
+    const u = productPath(p);
+    if (!u) continue;
+    sitemapEntries.push(
+      `  <url>\n    <loc>${xmlEscape(SITE + u)}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.6</priority>\n  </url>`
+    );
+  }
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries.join("\n")}\n</urlset>\n`;
+
+  fs.mkdirSync("public", { recursive: true });
+  fs.writeFileSync(path.join("public", "sitemap.xml"), sitemap, "utf8");
+  fs.writeFileSync(path.join("dist", "sitemap.xml"), sitemap, "utf8");
+  console.log(`  OK sitemap.xml written (${sitemapEntries.length} urls)`);
+
+  console.log("\n============================");
+  console.log(`  OK ${success} pre-rendered in ${elapsed}s`);
+  if (failed > 0) console.log(`  X  ${failed} failed (see prerender-failures.json)`);
+  console.log("============================\n");
 
   process.exit(failed > 0 ? 1 : 0);
 }
 
-main().catch((e) => {
-  console.error('  ✗ Fatal:', e);
-  process.exit(1);
-});
+main().catch((e) => { console.error("  X Fatal:", e); process.exit(1); });
