@@ -8,5 +8,9 @@ Disallow: /admin/
 Disallow: /*.json$
 Disallow: /*.cjs$
 
+# ...but allow the PWA manifest (referenced in <head>)
+Allow: /manifest.json
+Allow: /site.webmanifest
+
 # Sitemap location
 Sitemap: https://prorigbuilder.com/sitemap.xml
