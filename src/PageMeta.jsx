@@ -195,12 +195,37 @@ function findProduct(parts, id) {
   return parts.find((p) => String(p.id) === String(id) || String(p._id) === String(id)) || null;
 }
 
+// URL category slug map - MUST MATCH scripts/generate-sitemap.cjs CAT_SLUG
+const URL_CAT_SLUG = {
+  "CPU":"cpu","GPU":"gpu","Motherboard":"motherboard","RAM":"ram","Storage":"storage",
+  "PSU":"psu","Case":"case","CPUCooler":"cpu-cooler","CaseFan":"case-fan","Monitor":"monitor",
+  "Keyboard":"keyboard","Mouse":"mouse","MousePad":"mouse-pad","Headset":"headset",
+  "Microphone":"microphone","Webcam":"webcam","SoundCard":"sound-card","WiFiCard":"wifi-card",
+  "EthernetCard":"ethernet-card","OpticalDrive":"optical-drive","ExternalOptical":"external-optical-drive",
+  "ExternalStorage":"external-storage","InternalDisplay":"internal-display","ThermalPaste":"thermal-paste",
+  "ExtensionCables":"extension-cables","UPS":"ups","OS":"operating-system","Antivirus":"antivirus",
+  "Chair":"chair","Desk":"desk",
+};
+
+// Slug function - MUST MATCH scripts/generate-sitemap.cjs slugify()
+function urlSlugify(name) {
+  const norm = String(name || "")
+    .toLowerCase().replace(/\s+/g, " ").replace(/[^a-z0-9 ]/g, "").trim();
+  return norm.replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "")
+    .replace(/-+/g, "-").replace(/^-|-$/g, "").slice(0, 80).replace(/-$/, "");
+}
+
 function buildProductMeta(p) {
   const name = p.n || p.name || "PC Part";
   const cat = p.c || p.category || "";
   const brand = p.b || p.brand || "";
   const price = p?.deals?.amazon?.price || p?.deals?.bestbuy?.price || p.pr;
-  const slug = (p.slug || name.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, ""));
+  const cSlug = URL_CAT_SLUG[cat];
+  const nSlug = urlSlugify(name);
+  // Canonical points to new /parts/ format. Falls back to /search for unmapped categories.
+  const canonicalPath = (cSlug && nSlug && (p.id || p._id))
+    ? `/parts/${cSlug}/${nSlug}-${p.id || p._id}`
+    : `/search?cat=${encodeURIComponent(cat)}&id=${p.id || p._id}`;
 
   const titleParts = [];
   if (brand && !name.toLowerCase().includes(brand.toLowerCase())) titleParts.push(`${brand} ${name}`);
@@ -210,14 +235,14 @@ function buildProductMeta(p) {
   titleParts.push(BRAND);
 
   let desc = brand && !name.toLowerCase().includes(brand.toLowerCase()) ? `${brand} ${name}` : name;
-  desc += ` — full specs, benchmarks`;
+  desc += ` - full specs, benchmarks`;
   if (price) desc += `, current price $${price}`;
   desc += `, and live availability from Amazon and Best Buy.`;
 
   return {
     title: titleParts.join(" | ").slice(0, 70),
     desc: desc.slice(0, 160),
-    path: `/search?cat=${encodeURIComponent(cat)}&id=${p.id || p._id}&slug=${slug}`,
+    path: canonicalPath,
   };
 }
 

@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect, useRef, useCallback } from "react"
 import { Box, Cpu, Snowflake, CircuitBoard, MemoryStick, Square, HardDrive, Plug, Fan, Volume2, Globe, Wifi, Disc, Cable, Monitor, AppWindow, Keyboard, Mouse, Headphones, Camera, Mic, MousePointer, Armchair, Table, Beaker, ExternalLink, Shield, FileVideo, BatteryCharging, Gamepad2, Briefcase, Palette, Video, GraduationCap, Download, Share2, RefreshCw, Link as LinkIcon, CircleAlert, CircleCheck, ChevronRight, ShoppingCart } from 'lucide-react';
 import { Helmet } from "react-helmet-async";;
 import PageMeta from "./PageMeta.jsx";
+import ProductPage from "./ProductPage.jsx";
 import { PARTS as RAW_SEED_PARTS } from "./data/parts.js";
 
 // DISPLAY-TIME NAME CLEANER (GPU only for now)
@@ -3284,21 +3285,21 @@ function SearchPageRouter(props){
   const isMobile=useIsMobile();
   return isMobile?<MobileSearchPage {...props}/>:<SearchPage {...props}/>;
 }
-function SearchPage({activeCat,initialQuery,th}){
+function SearchPage({activeCat,initialQuery,th,singleProductId}){
   const [cat,setCat]=useState(activeCat||"");const [q,setQ]=useState(initialQuery||"");const [brands,setBrands]=useState([]);const [marketplaces,setMarketplaces]=useState([]);const [conditions,setConditions]=useState([]);const [histOpen,setHistOpen]=useState(null);
   const [viewMode,setViewMode]=useState(()=>{try{return localStorage.getItem("rigfinder_view_mode")||"row";}catch{return "row";}});
   const setViewModeP=v=>{setViewMode(v);try{localStorage.setItem("rigfinder_view_mode",v);}catch{}};const [maxPr,setMaxPr]=useState(5000);const [minPr,setMinPr]=useState(0);const [minR,setMinR]=useState(0);const [cpO,setCpO]=useState(false);const [sf,setSf]=useState({});const [sort,setSort]=useState("price-asc");
-  const [expanded,setExpanded]=useState(null);
+  const [expanded,setExpanded]=useState(singleProductId?(isNaN(Number(singleProductId))?singleProductId:Number(singleProductId)):null);
   const [showAll,setShowAll]=useState({});
   useEffect(()=>{if(activeCat)setCat(activeCat);},[activeCat]);
   useEffect(()=>{if(initialQuery)setQ(initialQuery);},[initialQuery]);
   const sel=c=>{setCat(c);setBrands([]);setMarketplaces([]);setConditions([]);setSf({});setQ("");setMaxPr(5000);setMinPr(0);setMinR(0);setCpO(false);};
   const catP=cat?P.filter(p=>p.c===cat):P;const allBr=[...new Set(catP.map(p=>resolveBrand(p)).filter(Boolean))].sort();const allMarkets=[...new Set(catP.flatMap(p=>p.deals&&typeof p.deals==="object"?Object.keys(p.deals).filter(k=>p.deals[k]&&typeof p.deals[k]==="object"&&p.deals[k].price).map(marketplaceGroupOf):[]))].sort();const cols=cat?(CAT[cat]?.cols||[]):[];const prMx=Math.max(...catP.map(p=>$(p)),100);
   const togSf=(col,val)=>setSf(pv=>{const c=pv[col]||[];return{...pv,[col]:c.includes(val)?c.filter(v=>v!==val):[...c,val]};});
-  const list=useMemo(()=>{let r=catP;if(q)r=r.filter(p=>smartMatch(p,q));if(brands.length)r=r.filter(p=>brands.includes(resolveBrand(p)));if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>expandMarketplaceGroup(m).some(rk=>p.deals[rk]&&typeof p.deals[rk]==="object"&&p.deals[rk].price)));if(conditions.length)r=r.filter(p=>{const pc=productConditions(p);return conditions.some(c=>pc.includes(c));});r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);if(minR)r=r.filter(p=>p.r>=minR);if(cpO)r=r.filter(p=>p.cp);Object.entries(sf).forEach(([key,vals])=>{if(key.endsWith("_max")){const field=key.replace("_max","");r=r.filter(p=>p[field]==null||p[field]<=vals);}else if(Array.isArray(vals)&&vals.length){r=r.filter(p=>{const pv=String(p[key]!=null?!!p[key]?p[key]:"false":"false");const cfg=cat&&CAT[cat]?.filters?.[key];const ev=cfg?.extract?cfg.extract(p):null;const evMatch=Array.isArray(ev)?ev.some(x=>vals.includes(x)):(ev!=null&&vals.includes(ev));return vals.includes(pv)||vals.includes(String(p[key]))||evMatch;});}});const [sk,sd]=sort.split("-");r=[...r].sort((a,b)=>{const va=sk==="price"?$(a):sk==="rating"?a.r:sk==="value"?(a.value!=null?a.value:(a.bench||0)/Math.max($(a)/100,1)):(a.bench||0);const vb=sk==="price"?$(b):sk==="rating"?b.r:sk==="value"?(b.value!=null?b.value:(b.bench||0)/Math.max($(b)/100,1)):(b.bench||0);return sd==="asc"?va-vb:vb-va;});/* DEDUPE: one row per model; merge retailer deals across dupes; bundles kept */const mergeDeals=(da,db)=>{if(!da)return db;if(!db)return da;const out={...da};for(const rk of Object.keys(db)){const ex=out[rk],inc=db[rk];if(!ex||typeof ex!=="object"){out[rk]=inc;continue;}if(!inc||typeof inc!=="object")continue;if((inc.inStock?1:0)!==(ex.inStock?1:0)){out[rk]=inc.inStock?inc:ex;}else if(typeof inc.price==="number"&&(typeof ex.price!=="number"||inc.price<ex.price)){out[rk]=inc;}}return out;};const seenModel=new Map();const deduped=[];for(const p of r){if(p.bundle){deduped.push(p);continue;}const key=p.c+"|"+cleanProductName(p).toLowerCase();const prev=seenModel.get(key);if(prev===undefined){seenModel.set(key,deduped.length);deduped.push({...p});}else{const keep=deduped[prev];const base=$(p)<$(keep)?{...p}:{...keep};base.deals=mergeDeals(keep.deals,p.deals);deduped[prev]=base;}}r=deduped;return r;},[cat,q,brands,marketplaces,conditions,maxPr,minPr,minR,cpO,sf,sort]);
+  const list=useMemo(()=>{if(singleProductId){const sp=P.find(p=>String(p.id)===String(singleProductId));return sp?[sp]:[];}let r=catP;if(q)r=r.filter(p=>smartMatch(p,q));if(brands.length)r=r.filter(p=>brands.includes(resolveBrand(p)));if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>expandMarketplaceGroup(m).some(rk=>p.deals[rk]&&typeof p.deals[rk]==="object"&&p.deals[rk].price)));if(conditions.length)r=r.filter(p=>{const pc=productConditions(p);return conditions.some(c=>pc.includes(c));});r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);if(minR)r=r.filter(p=>p.r>=minR);if(cpO)r=r.filter(p=>p.cp);Object.entries(sf).forEach(([key,vals])=>{if(key.endsWith("_max")){const field=key.replace("_max","");r=r.filter(p=>p[field]==null||p[field]<=vals);}else if(Array.isArray(vals)&&vals.length){r=r.filter(p=>{const pv=String(p[key]!=null?!!p[key]?p[key]:"false":"false");const cfg=cat&&CAT[cat]?.filters?.[key];const ev=cfg?.extract?cfg.extract(p):null;const evMatch=Array.isArray(ev)?ev.some(x=>vals.includes(x)):(ev!=null&&vals.includes(ev));return vals.includes(pv)||vals.includes(String(p[key]))||evMatch;});}});const [sk,sd]=sort.split("-");r=[...r].sort((a,b)=>{const va=sk==="price"?$(a):sk==="rating"?a.r:sk==="value"?(a.value!=null?a.value:(a.bench||0)/Math.max($(a)/100,1)):(a.bench||0);const vb=sk==="price"?$(b):sk==="rating"?b.r:sk==="value"?(b.value!=null?b.value:(b.bench||0)/Math.max($(b)/100,1)):(b.bench||0);return sd==="asc"?va-vb:vb-va;});/* DEDUPE: one row per model; merge retailer deals across dupes; bundles kept */const mergeDeals=(da,db)=>{if(!da)return db;if(!db)return da;const out={...da};for(const rk of Object.keys(db)){const ex=out[rk],inc=db[rk];if(!ex||typeof ex!=="object"){out[rk]=inc;continue;}if(!inc||typeof inc!=="object")continue;if((inc.inStock?1:0)!==(ex.inStock?1:0)){out[rk]=inc.inStock?inc:ex;}else if(typeof inc.price==="number"&&(typeof ex.price!=="number"||inc.price<ex.price)){out[rk]=inc;}}return out;};const seenModel=new Map();const deduped=[];for(const p of r){if(p.bundle){deduped.push(p);continue;}const key=p.c+"|"+cleanProductName(p).toLowerCase();const prev=seenModel.get(key);if(prev===undefined){seenModel.set(key,deduped.length);deduped.push({...p});}else{const keep=deduped[prev];const base=$(p)<$(keep)?{...p}:{...keep};base.deals=mergeDeals(keep.deals,p.deals);deduped[prev]=base;}}r=deduped;return r;},[cat,q,brands,marketplaces,conditions,maxPr,minPr,minR,cpO,sf,sort,singleProductId]);
   const ac=[brands.length,marketplaces.length,conditions.length,cpO,minR,maxPr<prMx,minPr>0,...Object.values(sf).map(v=>v.length)].filter(Boolean).length;
 
-  if(!cat) return <CategoryBrowse sel={sel} th={th} CATS={CATS} CAT={CAT} P={P} CatThumb={CatThumb}/>;
+  if(!cat && !singleProductId) return <CategoryBrowse sel={sel} th={th} CATS={CATS} CAT={CAT} P={P} CatThumb={CatThumb}/>;
 
   return <div className="fade" style={{maxWidth:1600,margin:"0 auto",padding:"16px 20px"}}>
     <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:14}}><button onClick={()=>setCat("")} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer"}}>All Parts</button><span style={{color:"var(--mute)"}}>/</span><CatThumb cat={cat} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={24} rounded={4} editable={false}/><select value={cat} onChange={e=>sel(e.target.value)} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",fontWeight:600,background:"none",border:"none",cursor:"pointer",outline:"none",padding:"2px 4px",appearance:"auto"}}>{CATS.map(c=><option key={c} value={c}>{CAT[c].label}</option>)}</select><div style={{flex:1}}/><span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)"}}>{list.length} results</span></div>
@@ -3429,7 +3430,7 @@ function SearchPage({activeCat,initialQuery,th}){
           const isExp=expanded===p.id;
           const rr=retailers(p);
           return <div key={p.id}>
-            {isExp && <ProductSchema p={p}/>}
+            {isExp && !singleProductId && <ProductSchema p={p}/>}
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`4fr ${cols.map(()=>"1fr").join(" ")} 60px 80px 70px`,gap:8,padding:"10px 12px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0,transition:"background .2s"}}>
               <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}><ChevronRight size={16} strokeWidth={2} style={{flexShrink:0,color:"var(--dim)",transition:"transform .2s",transform:isExp?"rotate(90deg)":"rotate(0deg)"}}/>{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:100,height:100,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:56,width:100,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{cleanProductName(p)}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2,flexWrap:"wrap"}}><span style={{fontSize:13,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)",whiteSpace:"nowrap",flexShrink:0}}>🔥 DEAL -${dealSavings(p)}</span>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
               {cols.map(col=>{const v=p[col];const fmtVal=fmt(col,v,p);return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:typeof fmtVal==="string"&&fmtVal.includes("\n")?<div><div style={{fontFamily:"var(--ff)",fontSize:13,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal.split("\n")[0]}</div><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{fmtVal.split("\n")[1]}</div></div>:<span style={{fontFamily:"var(--ff)",fontSize:13,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal}</span>}</div>})}
@@ -5398,6 +5399,7 @@ export default function App(){
   const [page,setPageRaw]=useState(()=>{
     if(typeof window==='undefined')return"home";
     const path=(window.location.pathname||"/").replace(/^\//,"").split("/")[0];
+    if(path==="parts"&&/^\/parts\/[^\/]+\/.*-\d+$/.test(window.location.pathname))return"product";
     if(!path)return"home";
     // Validate against known pages
     const validPages=["home","search","builder","community","tools","upgrade","scanner","about","contact","privacy","terms","affiliate","compare","vs-pcpartpicker","pcpartpicker-alternative","best-pc-builder-tools"];
@@ -5406,7 +5408,7 @@ export default function App(){
     const hash=(window.location.hash||"").replace(/^#/,"").split("/")[0];
     if(validPages.includes(hash))return hash;
     return"home";
-  });const [bc,setBc]=useState("");const [bq,setBq]=useState("");
+  });const [bc,setBc]=useState("");const [bq,setBq]=useState("");const [productId,setProductId]=useState(()=>{if(typeof window==="undefined")return null;const m=(window.location.pathname||"").match(/^\/parts\/[^\/]+\/.*-(\d+)$/);return m?m[1]:null;});
   const th = useThumbs();
   const [theme,setTheme]=useState(()=>{try{return localStorage.getItem("rf-theme")||"light";}catch{return"light";}});
   const toggleTheme=()=>{const next=theme==="dark"?"light":"dark";setTheme(next);try{localStorage.setItem("rf-theme",next);}catch{};};
@@ -5414,6 +5416,7 @@ export default function App(){
   // ── Browser history support ──
   const setPage = (p, replaceCurrent) => {
     setPageRaw(p);
+    if (p !== "product") setProductId(null);
     const url = p === "home" ? "/" : "/" + p;
     if (replaceCurrent) {
       window.history.replaceState({page:p}, "", url + window.location.search);
@@ -5427,7 +5430,11 @@ export default function App(){
     const onPop = (e) => {
       const state = e.state;
       const pathPage = (window.location.pathname || "/").replace(/^\//, "").split("/")[0] || "home";
-      if (state && state.page) {
+      const productMatch = (window.location.pathname || "").match(/^\/parts\/[^\/]+\/.*-(\d+)$/);
+      if (productMatch) {
+        setProductId(productMatch[1]);
+        setPageRaw("product");
+      } else if (state && state.page) {
         setPageRaw(state.page);
         if (state.page !== "search") setBc("");
       } else {
@@ -5449,7 +5456,13 @@ export default function App(){
     const rawPath = (window.location.pathname || "/").replace(/^\//,"");
     const pathBase = rawPath.split("?")[0].split("/")[0];
 
-    if (pathBase && validPages.includes(pathBase)) {
+    // Product URL: /parts/{cat}/{slug}-{id}
+    const productMatch = (window.location.pathname || "").match(/^\/parts\/[^\/]+\/.*-(\d+)$/);
+    if (productMatch) {
+      setProductId(productMatch[1]);
+      setPageRaw("product");
+      window.history.replaceState({page:"product",productId:productMatch[1]}, "", window.location.pathname);
+    } else if (pathBase && validPages.includes(pathBase)) {
       setPageRaw(pathBase);
       window.history.replaceState({page:pathBase}, "", "/" + pathBase + window.location.search);
     } else if (!pathBase) {
@@ -5475,5 +5488,5 @@ export default function App(){
 
   const handleBrowse=c=>{setBc(c);setPage("search");};
   const handleSearch=(q,cat)=>{setBq(q);setBc(cat||"");setPage("search");};
-  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><PageMeta page={page} category={bc} parts={ACTIVE_SEED_PARTS} /><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} onSearch={handleSearch} th={th} theme={theme} toggleTheme={toggleTheme}/><main style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPageRouter activeCat={bc} initialQuery={bq} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage}/>}</main><Footer go={setPage}/><ScrollToTop /><ScannerPromo go={setPage} page={page}/></div>;
+  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><PageMeta page={page} category={bc} parts={ACTIVE_SEED_PARTS} product={page==="product"&&productId?ACTIVE_SEED_PARTS.find(x=>String(x.id)===String(productId)):null} /><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} onSearch={handleSearch} th={th} theme={theme} toggleTheme={toggleTheme}/><main style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPageRouter activeCat={bc} initialQuery={bq} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage}/>}{page==="product"&&productId&&(()=>{const _sp=ACTIVE_SEED_PARTS.find(x=>String(x.id)===String(productId));return _sp?<SearchPage activeCat={_sp.c} singleProductId={productId} th={th}/>:<ProductPage productId={productId} parts={ACTIVE_SEED_PARTS} go={setPage}/>;})()}</main><Footer go={setPage}/><ScrollToTop /><ScannerPromo go={setPage} page={page}/></div>;
 }
