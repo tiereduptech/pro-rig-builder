@@ -201,34 +201,25 @@ async function main() {
   }
   console.log("  OK Server ready");
 
-  // Boot puppeteer — recycled every BROWSER_RECYCLE pages to avoid memory growth
-  const BROWSER_RECYCLE = 500;
-  console.log("  Launching headless Chrome...");
-  let browser = await puppeteer.launch({
-    headless: "new",
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
-  });
-  let pagesSinceRecycle = 0;
-  const recycleLock = { busy: false };
-  async function maybeRecycle() {
-    if (pagesSinceRecycle < BROWSER_RECYCLE || recycleLock.busy) return;
-    recycleLock.busy = true;
-    try {
-      const old = browser;
-      browser = await puppeteer.launch({
-        headless: "new",
-        args: ["--no-sandbox", "--disable-setuid-sandbox"],
-      });
-      pagesSinceRecycle = 0;
-      try { await old.close(); } catch {}
-      console.log("  ↻ Browser recycled");
-    } finally {
-      recycleLock.busy = false;
-    }
+  // Chrome processes leak under puppeteer's setRequestInterception when reused
+  // across many pages, causing cascade failures (45+ chrome.exe procs, 0.2/s,
+  // growing timeouts) after ~60 renders. Solution: process in chunks of
+  // CHUNK_SIZE, fully closing the browser between chunks so each chunk starts
+  // with zero leaked state.
+  const CHUNK_SIZE = 25;
+
+  async function launchBrowser() {
+    return await puppeteer.launch({
+      headless: "new",
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
   }
 
+  console.log("  Launching headless Chrome...");
+  let browser = await launchBrowser();
+
   // Warmup: render one route sequentially so the parts-data chunk is in the
-  // local server's hot cache before 8 workers fight for it on a cold start.
+  // local server's hot cache before workers fight for it on a cold start.
   if (toRender.length > 1) {
     console.log("  Warmup: rendering first route sequentially...");
     const warmupResult = await renderRoute(browser, toRender[0]);
@@ -239,40 +230,55 @@ async function main() {
   const startedAt = Date.now();
   const failures = [];
   let lastLog = Date.now();
+  let totalDone = warmupCounted();
+  function warmupCounted() { return toRender.length > 1 ? 1 : 0; }
 
   // Skip the warmup route since it was already rendered above.
   const poolRoutes = toRender.length > 1 ? toRender.slice(1) : toRender;
-  const results = await runPool(
-    poolRoutes,
-    async (route) => {
-      await maybeRecycle();
-      let result = await renderRoute(browser, route);
-      // Retry once on transient failure
-      if (!result.ok && /Connection|Target closed|navigation/i.test(result.error || "")) {
-        result = await renderRoute(browser, route);
+
+  // Process in chunks; recycle browser between chunks to release leaked state.
+  for (let chunkStart = 0; chunkStart < poolRoutes.length; chunkStart += CHUNK_SIZE) {
+    const chunk = poolRoutes.slice(chunkStart, chunkStart + CHUNK_SIZE);
+    const chunkResults = await runPool(
+      chunk,
+      async (route) => {
+        let result = await renderRoute(browser, route);
+        if (!result.ok && /Connection|Target closed|navigation/i.test(result.error || "")) {
+          result = await renderRoute(browser, route);
+        }
+        return result;
+      },
+      CONCURRENCY,
+      (chunkDone, chunkTotal, r) => {
+        if (!r.ok) failures.push(r);
+        const done = totalDone + chunkDone;
+        const total = toRender.length;
+        const now = Date.now();
+        if (now - lastLog > 2000 || done === total) {
+          const elapsed = (now - startedAt) / 1000;
+          const rate = elapsed > 0 ? done / elapsed : 0;
+          const eta  = rate > 0 ? Math.round((total - done) / rate) : 0;
+          const pct  = ((done / total) * 100).toFixed(1);
+          console.log(`  ${done}/${total} (${pct}%) - ${rate.toFixed(1)}/s - ETA ${eta}s - failed: ${failures.length}`);
+          lastLog = now;
+        }
       }
-      pagesSinceRecycle++;
-      return result;
-    },
-    CONCURRENCY,
-    (done, total, r) => {
-      if (!r.ok) failures.push(r);
-      const now = Date.now();
-      if (now - lastLog > 2000 || done === total) {
-        const rate = done / ((now - startedAt) / 1000);
-        const eta  = Math.round((total - done) / rate);
-        const pct  = ((done / total) * 100).toFixed(1);
-        console.log(`  ${done}/${total} (${pct}%) - ${rate.toFixed(1)}/s - ETA ${eta}s - failed: ${failures.length}`);
-        lastLog = now;
-      }
+    );
+    totalDone += chunk.length;
+    chunkResults; // captured into failures via onProgress
+
+    // Recycle browser between chunks (skip on the last chunk).
+    if (chunkStart + CHUNK_SIZE < poolRoutes.length) {
+      try { await browser.close(); } catch {}
+      browser = await launchBrowser();
     }
-  );
+  }
 
   try { await browser.close(); } catch {}
   if (isWin) spawn("taskkill", ["/pid", serveProc.pid, "/T", "/F"], { stdio: "ignore" });
   else serveProc.kill("SIGTERM");
 
-  const success = results.filter(r => r.ok).length;
+  const success = toRender.length - failures.length;
   const failed  = failures.length;
   const elapsed = ((Date.now() - startedAt) / 1000).toFixed(1);
 
