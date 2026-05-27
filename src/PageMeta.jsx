@@ -254,33 +254,126 @@ function urlSlugify(name) {
     .replace(/-+/g, "-").replace(/^-|-$/g, "").slice(0, 80).replace(/-$/, "");
 }
 
+// Per-category spec extractors. Each returns short tokens to splice into the
+// meta description so it carries real signal (TDP, socket, CFM, panel type, …)
+// rather than generic filler.
+function categorySpecs(p) {
+  const c = p.c, bits = [];
+  if (c === "CPU") {
+    if (p.cores && p.threads) bits.push(`${p.cores}-core ${p.threads}-thread`);
+    if (p.socket) bits.push(p.socket);
+    if (p.boostClock) bits.push(`${p.boostClock} GHz boost`);
+    if (p.tdp) bits.push(`${p.tdp}W TDP`);
+  } else if (c === "GPU") {
+    if (p.vram) bits.push(`${p.vram}GB VRAM`);
+    if (p.tdp) bits.push(`${p.tdp}W TDP`);
+    const len = p.gpuLen || p.length;
+    if (len) bits.push(`${len}mm long`);
+  } else if (c === "Motherboard") {
+    if (p.socket) bits.push(p.socket);
+    if (p.chipset) bits.push(p.chipset);
+    if (p.ff) bits.push(p.ff);
+    if (p.memType) bits.push(p.memType);
+  } else if (c === "RAM") {
+    if (p.cap && p.sticks) bits.push(`${p.cap}GB (${p.sticks}x${Math.round(p.cap / p.sticks)}GB)`);
+    if (p.ramType || p.memType) bits.push(p.ramType || p.memType);
+    if (p.speed) bits.push(`${p.speed} MHz`);
+    if (p.cl) bits.push(`CL${p.cl}`);
+  } else if (c === "Storage") {
+    if (p.cap) bits.push(p.cap >= 1000 ? `${(p.cap / 1000).toFixed(p.cap % 1000 === 0 ? 0 : 1)}TB` : `${p.cap}GB`);
+    if (p.storageType) bits.push(p.storageType);
+    if (p.interface) bits.push(p.interface);
+    if (p.ff) bits.push(p.ff);
+  } else if (c === "PSU") {
+    if (p.watts) bits.push(`${p.watts}W`);
+    if (p.eff) bits.push(p.eff);
+    if (p.modular) bits.push(`${p.modular} modular`);
+    if (p.atx3) bits.push("ATX 3.0");
+  } else if (c === "Case") {
+    if (p.ff) bits.push(p.ff);
+    if (p.tower) bits.push(`${p.tower} tower`);
+    if (p.maxGPU) bits.push(`max GPU ${p.maxGPU}mm`);
+  } else if (c === "CPUCooler") {
+    if (p.coolerType) bits.push(p.coolerType);
+    if (p.tdp_rating) bits.push(`${p.tdp_rating}W rating`);
+    if (p.height) bits.push(`${p.height}mm tall`);
+  } else if (c === "CaseFan") {
+    if (p.size) bits.push(`${p.size}mm`);
+    if (p.cfm) bits.push(`${p.cfm} CFM`);
+    if (p.noise) bits.push(`${p.noise} dBA`);
+  } else if (c === "Monitor") {
+    if (p.screenSize) bits.push(`${p.screenSize}"`);
+    if (p.res || p.resolution) bits.push(p.res || p.resolution);
+    if (p.refresh) bits.push(`${p.refresh}Hz`);
+    if (p.panel) bits.push(p.panel);
+  }
+  return bits;
+}
+
+// Title builder: stay ≤ 60 chars. Try long form, then short form, then truncate.
+function buildProductTitle(displayName) {
+  const FULL = ` — Price, Specs & Reviews | ${BRAND}`;
+  const SHORT = ` | ${BRAND}`;
+  if ((displayName + FULL).length <= 60) return displayName + FULL;
+  if ((displayName + SHORT).length <= 60) return displayName + SHORT;
+  const maxName = 60 - SHORT.length;
+  let truncated = displayName.slice(0, maxName);
+  const lastSpace = truncated.lastIndexOf(" ");
+  if (lastSpace > 30) truncated = truncated.slice(0, lastSpace);
+  return truncated.replace(/[\s\-—|,]+$/, "") + SHORT;
+}
+
+// Description builder: aim for 120-160 chars with real per-category specs.
+// Dedupe and skip anything already mentioned in the displayName.
+function buildProductDesc(displayName, p) {
+  const price = p?.deals?.amazon?.price || p?.deals?.bestbuy?.price || p.pr;
+  let specs = categorySpecs(p);
+  const seen = new Set();
+  specs = specs.filter(s => { const k = s.toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; });
+  const nameL = displayName.toLowerCase();
+  specs = specs.filter(s => !nameL.includes(s.toLowerCase()));
+
+  const TAIL = " Compare specs, benchmarks, and live deals from Amazon, Best Buy, and Newegg.";
+  const TAIL_SHORT = " Compare specs, benchmarks, and live deals.";
+  const priceSentence = price ? ` Current price $${price}.` : "";
+
+  const head = (n) => displayName + (specs.length && n ? `: ${specs.slice(0, n).join(", ")}.` : ".");
+  let d = head(4) + priceSentence + TAIL;
+
+  // Shrink to fit 160
+  if (d.length > 160) {
+    for (let n = 3; n >= 0 && d.length > 160; n--) d = head(n) + priceSentence + TAIL;
+    if (d.length > 160) d = head(0) + priceSentence + TAIL_SHORT;
+    if (d.length > 160) {
+      const cut = d.slice(0, 160).lastIndexOf(" ");
+      d = (cut > 100 ? d.slice(0, cut) : d.slice(0, 157)).replace(/[\s,.\-]+$/, "") + "…";
+    }
+  }
+  // If still short and we have more specs, splice extras in
+  if (d.length < 120 && specs.length > 4) {
+    const extra = specs.slice(4).join(", ");
+    const padded = d.replace(/\.(\s|$)/, `, ${extra}.$1`);
+    if (padded.length <= 160) d = padded;
+  }
+  return d;
+}
+
 function buildProductMeta(p) {
   const name = p.n || p.name || "PC Part";
   const cat = p.c || p.category || "";
   const brand = p.b || p.brand || "";
-  const price = p?.deals?.amazon?.price || p?.deals?.bestbuy?.price || p.pr;
   const cSlug = URL_CAT_SLUG[cat];
   const nSlug = urlSlugify(name);
-  // Canonical points to new /parts/ format. Falls back to /search for unmapped categories.
   const canonicalPath = (cSlug && nSlug && (p.id || p._id))
     ? `/parts/${cSlug}/${nSlug}-${p.id || p._id}`
     : `/search?cat=${encodeURIComponent(cat)}&id=${p.id || p._id}`;
 
-  const titleParts = [];
-  if (brand && !name.toLowerCase().includes(brand.toLowerCase())) titleParts.push(`${brand} ${name}`);
-  else titleParts.push(name);
-  if (cat) titleParts.push(cat);
-  titleParts.push("Specs, Price & Reviews");
-  titleParts.push(BRAND);
-
-  let desc = brand && !name.toLowerCase().includes(brand.toLowerCase()) ? `${brand} ${name}` : name;
-  desc += ` - full specs, benchmarks`;
-  if (price) desc += `, current price $${price}`;
-  desc += `, and live availability from Amazon and Best Buy.`;
+  const displayName = brand && !name.toLowerCase().includes(brand.toLowerCase())
+    ? `${brand} ${name}` : name;
 
   return {
-    title: titleParts.join(" | ").slice(0, 70),
-    desc: desc.slice(0, 160),
+    title: buildProductTitle(displayName),
+    desc: buildProductDesc(displayName, p),
     path: canonicalPath,
   };
 }
