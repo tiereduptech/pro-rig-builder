@@ -31,14 +31,14 @@ const DEFAULT_OG_IMAGE = `${SITE}/og-image.png`;
 // ─── Static page metadata ───────────────────────────────────────────────────
 const PAGES = {
   home: {
-    title: `${BRAND} — Free PC Part Picker, Builder & Hardware Scanner`,
-    desc: "Build your PC with 3,950+ verified parts. Compare prices and specs side-by-side. Free PCPartPicker alternative with hardware scanner.",
+    title: `${BRAND} — Free PC Part Picker & Hardware Scanner`,
+    desc: "Build your PC with 5,290+ verified parts. Compare prices and specs side-by-side. Free PCPartPicker alternative with a hardware scanner.",
     path: "/",
-    crumbLabel: null,  // no crumb on home
+    crumbLabel: null,
   },
   search: {
     title: `Search PC Parts — Specs, Prices & Deals | ${BRAND}`,
-    desc: "Search and compare 3,950+ PC parts with verified specs, live prices, and deals from Amazon and Best Buy. Filter by socket, chipset, wattage, and more.",
+    desc: "Search and compare 5,290+ PC parts with verified specs, live prices, and deals from Amazon, Best Buy, and Newegg. Filter by every spec.",
     path: "/search",
     crumbLabel: "Search",
   },
@@ -55,56 +55,56 @@ const PAGES = {
     crumbLabel: "Community",
   },
   tools: {
-    title: `PC Builder Tools — FPS, Wattage & Bottleneck Calc | ${BRAND}`,
-    desc: "Free PC tools: FPS estimator, wattage calculator, bottleneck checker, RAM speed advisor, and more. No signup, no ads, just answers.",
+    title: `Free PC Builder Tools — FPS, Wattage, Bottleneck | ${BRAND}`,
+    desc: "Free PC tools: FPS estimator, wattage calculator, bottleneck checker, build wizard, and parts comparison. No signup, no ads, just answers.",
     path: "/tools",
     crumbLabel: "Tools",
   },
   "tools/fps-estimator": {
-    title: `FPS Estimator — Projected Frames Per Second for Your PC Build | ${BRAND}`,
-    desc: "See projected FPS for 26 popular games across any GPU + CPU combo at 1080p, 1440p, and 4K. Free FPS calculator with no signup.",
+    title: `FPS Estimator — Projected FPS for Any PC Build | ${BRAND}`,
+    desc: "See projected FPS for popular games across any GPU + CPU combo at 1080p, 1440p, and 4K. Free FPS calculator, no signup needed.",
     path: "/tools/fps-estimator",
     crumbLabel: "FPS Estimator",
   },
   "tools/bottleneck-calculator": {
-    title: `Bottleneck Calculator — Find Your CPU or GPU Bottleneck | ${BRAND}`,
-    desc: "Find out if your CPU or GPU is the weak link in your PC build. Get a specific bottleneck severity percentage with upgrade recommendations.",
+    title: `Bottleneck Calculator — CPU vs GPU Analysis | ${BRAND}`,
+    desc: "Find out if your CPU or GPU is the weak link in your PC build. Get exact bottleneck severity percentage with targeted upgrade tips.",
     path: "/tools/bottleneck-calculator",
     crumbLabel: "Bottleneck Calculator",
   },
   "tools/will-it-run": {
-    title: `Will It Run? — Check If Your PC Can Run Any Game | ${BRAND}`,
-    desc: "Check if your existing PC can handle specific games at your target resolution and quality. Free game compatibility checker.",
+    title: `Will It Run? — Check If Your PC Runs Any Game | ${BRAND}`,
+    desc: "Check if your existing PC can handle specific games at your target resolution and quality settings. Free game compatibility checker.",
     path: "/tools/will-it-run",
     crumbLabel: "Will It Run",
   },
   "tools/compare-builds": {
-    title: `Compare PC Builds — Side-by-Side Performance Comparison | ${BRAND}`,
+    title: `Compare PC Builds Side-by-Side | ${BRAND}`,
     desc: "Compare two PC builds side by side. See FPS differences, bench scores, total cost, and which build wins at your target resolution.",
     path: "/tools/compare-builds",
     crumbLabel: "Compare Builds",
   },
   "tools/build-wizard": {
-    title: `Build Wizard — Automated PC Build for Your Budget | ${BRAND}`,
-    desc: "Tell us your budget and use case. We'll build a fully compatible, optimized PC parts list automatically — no manual research needed.",
+    title: `Build Wizard — Auto PC Build for Your Budget | ${BRAND}`,
+    desc: "Enter your budget and use case. We'll generate a fully compatible, optimized PC parts list automatically — no manual research needed.",
     path: "/tools/build-wizard",
     crumbLabel: "Build Wizard",
   },
   "tools/power-calculator": {
-    title: `PSU Wattage Calculator — How Many Watts Your PC Needs | ${BRAND}`,
+    title: `PSU Wattage Calculator — PC Power Needs | ${BRAND}`,
     desc: "Calculate exactly how many watts your PC needs. Free PSU calculator factoring in GPU TDP, transient spikes, and headroom for upgrades.",
     path: "/tools/power-calculator",
     crumbLabel: "Power Calculator",
   },
   "tools/compare-parts": {
-    title: `Compare PC Parts — CPU, GPU, RAM & More Side-by-Side | ${BRAND}`,
-    desc: "Compare any two PC parts side by side. See specs, benchmarks, prices, and which is the better value for your build.",
+    title: `Compare PC Parts — CPU, GPU, RAM Side-by-Side | ${BRAND}`,
+    desc: "Compare any two PC parts side by side. See specs, benchmarks, current prices, and which is the better value for your build.",
     path: "/tools/compare-parts",
     crumbLabel: "Compare Parts",
   },
   upgrade: {
-    title: `Upgrade Path — Personalized PC Upgrade Recommendations | ${BRAND}`,
-    desc: "Get personalized upgrade recommendations based on your current PC and budget. Scan your hardware and see exactly what to upgrade first.",
+    title: `PC Upgrade Path — Personalized Recommendations | ${BRAND}`,
+    desc: "Get personalized PC upgrade recommendations based on your current hardware and budget. Scan your rig, see what to upgrade first.",
     path: "/upgrade",
     crumbLabel: "Upgrade",
   },
@@ -121,8 +121,8 @@ const PAGES = {
     crumbLabel: "About",
   },
   contact: {
-    title: `Contact ${BRAND}`,
-    desc: "Get in touch with the Pro Rig Builder team. Feedback, partnerships, and product corrections welcome.",
+    title: `Contact ${BRAND} — Feedback & Partnerships`,
+    desc: "Get in touch with the Pro Rig Builder team. We welcome feedback on tools, partnership inquiries, and product data corrections.",
     path: "/contact",
     crumbLabel: "Contact",
   },
@@ -163,8 +163,8 @@ const PAGES = {
     crumbLabel: "PCPartPicker Alternative",
   },
   "best-pc-builder-tools": {
-    title: `Best PC Builder Tools of 2026 — Free & Tested | ${BRAND}`,
-    desc: "The best free PC builder tools of 2026. Part pickers, FPS estimators, bottleneck checkers, and wattage calculators ranked and reviewed.",
+    title: `Best PC Builder Tools of 2026 — Ranked | ${BRAND}`,
+    desc: "The best free PC builder tools of 2026. Part pickers, FPS estimators, bottleneck checkers, and wattage calculators — ranked and reviewed.",
     path: "/best-pc-builder-tools",
     crumbLabel: "Best PC Builder Tools",
   },
@@ -193,6 +193,45 @@ function parseSearchUrl() {
 function findProduct(parts, id) {
   if (!parts || !id) return null;
   return parts.find((p) => String(p.id) === String(id) || String(p._id) === String(id)) || null;
+}
+
+// Self-route: derive page key, product, and category from window.location.
+// Does NOT rely on App.jsx's `page` state to avoid hydration-order/race bugs
+// where the prerender captures Helmet output before App.jsx routing settles.
+function routeFromUrl(parts) {
+  if (typeof window === "undefined") return { page: "home", product: null, category: null };
+  const pathname = window.location.pathname || "/";
+
+  // /parts/{cat}/{slug}-{id}
+  const prodMatch = pathname.match(/^\/parts\/[^/]+\/.*-(\d+)$/);
+  if (prodMatch && parts) {
+    const product = findProduct(parts, prodMatch[1]);
+    if (product) return { page: "product", product, category: null };
+  }
+
+  // /search?cat=X or /search?id=Y
+  if (pathname === "/search" || pathname === "/search/") {
+    const { cat, id } = parseSearchUrl();
+    if (id && parts) {
+      const product = findProduct(parts, id);
+      if (product) return { page: "product", product, category: null };
+    }
+    return { page: "search", product: null, category: cat || null };
+  }
+
+  // /tools/{tool} → use composite key into PAGES
+  const toolMatch = pathname.match(/^\/tools\/([\w-]+)\/?$/);
+  if (toolMatch) {
+    const key = `tools/${toolMatch[1]}`;
+    if (PAGES[key]) return { page: key, product: null, category: null };
+  }
+
+  // Top-level path
+  const base = pathname.replace(/^\//, "").split("/")[0];
+  if (!base) return { page: "home", product: null, category: null };
+  if (PAGES[base]) return { page: base, product: null, category: null };
+
+  return { page: "home", product: null, category: null };
 }
 
 // URL category slug map - MUST MATCH scripts/generate-sitemap.cjs CAT_SLUG
@@ -343,13 +382,12 @@ function buildPrimaryLd({ page, product, category, url, title, desc }) {
 
 // ─── Main component ─────────────────────────────────────────────────────────
 export default function PageMeta({ page, category, product, parts }) {
-  let resolvedProduct = product || null;
-  let resolvedCategory = category || null;
-  if (!resolvedProduct && page === "search" && parts) {
-    const { cat, id } = parseSearchUrl();
-    if (id) resolvedProduct = findProduct(parts, id);
-    if (cat && !resolvedCategory) resolvedCategory = cat;
-  }
+  // Prefer URL-derived routing — `page` prop may lag during prerender/hydration,
+  // and only stores top-level pathBase (e.g. "tools") not subroutes ("tools/fps-estimator").
+  const fromUrl = routeFromUrl(parts);
+  const resolvedProduct = product || fromUrl.product;
+  const resolvedCategory = category || fromUrl.category;
+  const effectivePage = resolvedProduct ? "product" : (fromUrl.page || page || "home");
 
   let meta;
   let ogType = "website";
@@ -358,15 +396,15 @@ export default function PageMeta({ page, category, product, parts }) {
     meta = buildProductMeta(resolvedProduct);
     ogType = "product";
     ogImage = resolvedProduct?.deals?.amazon?.image || resolvedProduct.img || DEFAULT_OG_IMAGE;
-  } else if (page === "search" && resolvedCategory && CATEGORY_META[resolvedCategory]) {
+  } else if (effectivePage === "search" && resolvedCategory && CATEGORY_META[resolvedCategory]) {
     meta = { ...CATEGORY_META[resolvedCategory], path: `/search?cat=${encodeURIComponent(resolvedCategory)}` };
   } else {
-    meta = PAGES[page] || PAGES.home;
+    meta = PAGES[effectivePage] || PAGES.home;
   }
 
   const url = SITE + meta.path;
-  const primaryLd = buildPrimaryLd({ page, product: resolvedProduct, category: resolvedCategory, url, title: meta.title, desc: meta.desc });
-  const breadcrumbLd = buildBreadcrumbLd({ page, product: resolvedProduct, category: resolvedCategory });
+  const primaryLd = buildPrimaryLd({ page: effectivePage, product: resolvedProduct, category: resolvedCategory, url, title: meta.title, desc: meta.desc });
+  const breadcrumbLd = buildBreadcrumbLd({ page: effectivePage, product: resolvedProduct, category: resolvedCategory });
 
   return (
     <Helmet>

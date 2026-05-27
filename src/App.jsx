@@ -2229,56 +2229,25 @@ function ProductSchema({p}) {
 }
 
 // ═══ SEO COMPONENT ═════════════════════════════════════════════════
-function SEO({title, description, canonical, breadcrumb, faq}) {
-  const fullTitle = title ? title + " | Pro Rig Builder" : "Pro Rig Builder — Compare, Build & Save on PC Parts";
-  const desc = description || "Compare PC components across Amazon, Best Buy, Newegg & more. Free Windows hardware scanner, compatibility engine, FPS estimator, and budget-aware upgrade recommendations.";
-  const url = canonical || "https://prorigbuilder.com/";
-
-  // BreadcrumbList schema (if breadcrumb items provided)
-  const breadcrumbSchema = breadcrumb && breadcrumb.length > 0 ? {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": breadcrumb.map((item, idx) => ({
-      "@type": "ListItem",
-      "position": idx + 1,
-      "name": item.name,
-      "item": item.url
-    }))
-  } : null;
-
-  const faqSchema = faq && faq.length > 0 ? {
+// SEO is intentionally a no-op for title/description/canonical/og — those are
+// owned exclusively by PageMeta.jsx (single source of truth). This component
+// only emits FAQPage JSON-LD when an `faq` prop is supplied, since FAQ schema
+// is page-local and PageMeta does not own it. Breadcrumb schema is also
+// emitted by PageMeta, so it is intentionally dropped here.
+function SEO({faq}) {
+  if (!faq || faq.length === 0) return null;
+  const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": faq.map(q => ({
       "@type": "Question",
       "name": q.q,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": q.a
-      }
+      "acceptedAnswer": { "@type": "Answer", "text": q.a }
     }))
-  } : null;
-
+  };
   return (
     <Helmet>
-      <title>{fullTitle}</title>
-      <meta name="description" content={desc}/>
-      <link rel="canonical" href={url}/>
-      <meta property="og:title" content={fullTitle}/>
-      <meta property="og:description" content={desc}/>
-      <meta property="og:url" content={url}/>
-      <meta name="twitter:title" content={fullTitle}/>
-      <meta name="twitter:description" content={desc}/>
-      {breadcrumbSchema && (
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbSchema)}
-        </script>
-      )}
-      {faqSchema && (
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
-      )}
+      <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
     </Helmet>
   );
 }
@@ -5464,7 +5433,8 @@ export default function App(){
       window.history.replaceState({page:"product",productId:productMatch[1]}, "", window.location.pathname);
     } else if (pathBase && validPages.includes(pathBase)) {
       setPageRaw(pathBase);
-      window.history.replaceState({page:pathBase}, "", "/" + pathBase + window.location.search);
+      // Preserve full pathname (e.g. /tools/fps-estimator) — do NOT collapse to /tools
+      window.history.replaceState({page:pathBase}, "", window.location.pathname + window.location.search);
     } else if (!pathBase) {
       // Root path "/"
       setPageRaw("home");
