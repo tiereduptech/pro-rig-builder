@@ -3569,6 +3569,38 @@ function useIsMobile(){
   },[]);
   return m;
 }
+// Per-category "most relevant tool" for product-page cross-linking (Phase 6).
+const CAT_TOOL={CPU:["/tools/bottleneck-calculator","Bottleneck Calculator"],GPU:["/tools/fps-estimator","FPS Estimator"],Motherboard:["/tools/build-wizard","Build Wizard"],RAM:["/tools/bottleneck-calculator","Bottleneck Calculator"],Storage:["/tools/build-wizard","Build Wizard"],PSU:["/tools/power-calculator","PSU Wattage Calculator"],Case:["/will-it-fit","Will It Fit? (GPU clearance)"],CPUCooler:["/tools/power-calculator","PSU Wattage Calculator"],Monitor:["/tools/fps-estimator","FPS Estimator"]};
+// Product-page internal links: breadcrumb + 3 similar products + category index + a tool.
+function ProductLinks({sp}){
+  const catSlug=CAT_URL_SLUG[sp.c];
+  const catLabel=(CAT[sp.c]&&CAT[sp.c].label)||sp.c;
+  const price=$(sp);
+  const similar=useMemo(()=>{
+    const same=P.filter(p=>p.c===sp.c&&p.id!==sp.id&&!p.bundle&&p.n);
+    const seen=new Set(),uniq=[];
+    for(const p of same){const k=cleanProductName(p).toLowerCase();if(seen.has(k))continue;seen.add(k);uniq.push(p);}
+    uniq.sort((a,b)=>Math.abs(($(a)||0)-(price||0))-Math.abs(($(b)||0)-(price||0)));
+    return uniq.slice(0,3);
+  },[sp.id]);
+  const tool=CAT_TOOL[sp.c]||["/tools/compare-parts","Compare Parts"];
+  return <div style={{marginBottom:16}}>
+    <nav aria-label="Breadcrumb" style={{display:"flex",alignItems:"center",gap:6,fontSize:13,color:"var(--dim)",flexWrap:"wrap",marginBottom:12}}>
+      <a href="/" style={{color:"var(--dim)"}}>Home</a><span>/</span>
+      <a href="/search" style={{color:"var(--dim)"}}>Parts</a><span>/</span>
+      {catSlug?<a href={`/parts/${catSlug}`} style={{color:"var(--dim)"}}>{catLabel}</a>:<span>{catLabel}</span>}<span>/</span>
+      <span style={{color:"var(--txt)",fontWeight:600}}>{cleanProductName(sp)}</span>
+    </nav>
+    <h1 style={{fontFamily:"var(--ff)",fontSize:26,fontWeight:800,color:"var(--txt)",lineHeight:1.2,margin:"0 0 12px 0"}}>{sp.b&&!cleanProductName(sp).toLowerCase().includes(String(sp.b).toLowerCase())?`${sp.b} `:""}{cleanProductName(sp)}</h1>
+    <div style={{display:"flex",alignItems:"center",gap:10,flexWrap:"wrap",background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:"10px 14px"}}>
+      {similar.length>0&&<><span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",fontWeight:600,letterSpacing:1}}>SIMILAR</span>
+      {similar.map(p=>{const u=productUrl(p);return <a key={p.id} href={u||"#"} style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--txt)",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:14,padding:"4px 12px",textDecoration:"none"}}>{cleanProductName(p)} <span style={{color:"var(--mint)"}}>${fmtPrice($(p))}</span></a>;})}</>}
+      {catSlug&&<a href={`/parts/${catSlug}`} style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--accent)",textDecoration:"underline"}}>All {catLabel} →</a>}
+      <a href={tool[0]} style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--accent)",textDecoration:"underline"}}>{tool[1]} →</a>
+    </div>
+  </div>;
+}
+
 function SearchPageRouter(props){
   const isMobile=useIsMobile();
   return isMobile?<MobileSearchPage {...props}/>:<SearchPage {...props}/>;
@@ -3590,6 +3622,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
   if(!cat && !singleProductId) return <CategoryBrowse sel={sel} th={th} CATS={CATS} CAT={CAT} P={P} CatThumb={CatThumb}/>;
 
   return <div className="fade" style={{maxWidth:1600,margin:"0 auto",padding:"16px 20px"}}>
+    {singleProductId&&(()=>{const sp=P.find(p=>String(p.id)===String(singleProductId));return sp?<ProductLinks sp={sp}/>:null;})()}
     <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:14}}><button onClick={()=>setCat("")} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer"}}>All Parts</button><span style={{color:"var(--mute)"}}>/</span><CatThumb cat={cat} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={24} rounded={4} editable={false}/><select value={cat} onChange={e=>sel(e.target.value)} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",fontWeight:600,background:"none",border:"none",cursor:"pointer",outline:"none",padding:"2px 4px",appearance:"auto"}}>{CATS.map(c=><option key={c} value={c}>{CAT[c].label}</option>)}</select><div style={{flex:1}}/><span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)"}}>{list.length} results</span></div>
     <CategoryGuide cat={cat}/>
     <div className="browse-layout" style={{display:"grid",gridTemplateColumns:"200px 1fr",gap:16,alignItems:"start"}}>
@@ -4752,6 +4785,7 @@ function BuilderPage({th}){
 
   return (
     <div className="fade" style={{maxWidth:1600,margin:"0 auto",padding:"28px 20px"}}>
+      <h1 style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:700,letterSpacing:1,textTransform:"uppercase",color:"var(--dim)",margin:"0 0 4px"}}>PC Builder</h1>
       {showConfetti&&<div style={{position:"fixed",inset:0,zIndex:999,pointerEvents:"none",display:"flex",alignItems:"center",justifyContent:"center"}}><div style={{fontSize:64,animation:"fIn .5s ease-out"}}>🎉🎊🎉</div></div>}
 
       {/* Header */}
@@ -4827,7 +4861,7 @@ function BuilderPage({th}){
 function CommunityPage({th}){
   const tierColor=t=>t==="Excellent"?"var(--mint)":t==="Great"?"var(--sky)":t==="Smooth"?"var(--amber)":t==="Playable"?"var(--rose)":"var(--mute)";
   return <div className="fade" style={{maxWidth:1180,margin:"0 auto",padding:"28px 20px"}}>
-    <h2 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)",marginBottom:16}}>Community Builds</h2>
+    <h1 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)",marginBottom:16}}>Community PC Builds</h1>
     <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>
       {BUILDS.map(b=>{
         const parts=b.ids.map(fp).filter(Boolean);
@@ -5571,26 +5605,26 @@ function Footer({go}){
         </div>
         <div>
           <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Browse</div>
-          {["Processors","Graphics Cards","Memory","Motherboards","Storage","Power Supplies","Cases","Coolers"].map(l=>
-            <button key={l} onClick={()=>go("search")} style={{display:"block",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left"}}>{l}</button>
+          {[["Processors","cpu"],["Graphics Cards","gpu"],["Memory","ram"],["Motherboards","motherboard"],["Storage","storage"],["Power Supplies","psu"],["Cases","case"],["CPU Coolers","cpu-cooler"],["Monitors","monitor"]].map(([l,s])=>
+            <a key={s} href={`/parts/${s}`} style={{display:"block",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textDecoration:"none",padding:"4px 0",textAlign:"left"}}>{l}</a>
           )}
         </div>
         <div>
           <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Tools</div>
-          {[{l:"PC Builder",p:"builder"},{l:"Community Builds",p:"community"},{l:"Smart Tools",p:"tools"},{l:"Browse Prices",p:"search"}].map(x=>
-            <button key={x.l} onClick={()=>go(x.p)} style={{display:"block",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left"}}>{x.l}</button>
+          {[{l:"PC Builder",p:"builder"},{l:"Community Builds",p:"community"},{l:"Smart Tools",p:"tools"},{l:"Browse Prices",p:"search"},{l:"Hardware Scanner",p:"scanner"}].map(x=>
+            <a key={x.l} href={"/"+x.p} onClick={e=>{e.preventDefault();go(x.p);}} style={{display:"block",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textDecoration:"none",padding:"4px 0",textAlign:"left"}}>{x.l}</a>
           )}
         </div>
         <div>
           <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Guides</div>
-          {[{l:"Why Pro Rig Builder",p:"compare"},{l:"vs PCPartPicker",p:"vs-pcpartpicker"},{l:"PCPartPicker Alternative",p:"pcpartpicker-alternative"},{l:"Best PC Builder Tools",p:"best-pc-builder-tools"}].map(x=>
-            <button key={x.l} onClick={()=>go(x.p)} style={{display:"block",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left",width:"auto"}}>{x.l}</button>
+          {[{l:"Why Pro Rig Builder",p:"compare"},{l:"vs PCPartPicker",p:"vs-pcpartpicker"},{l:"PCPartPicker Alternative",p:"pcpartpicker-alternative"},{l:"Best PC Builder Tools",p:"best-pc-builder-tools"},{l:"PC Hardware Scanner",p:"pc-hardware-scanner"},{l:"What Can I Upgrade",p:"what-can-i-upgrade"},{l:"Will It Fit?",p:"will-it-fit"}].map(x=>
+            <a key={x.l} href={"/"+x.p} onClick={e=>{e.preventDefault();go(x.p);}} style={{display:"block",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textDecoration:"none",padding:"4px 0",textAlign:"left",width:"auto"}}>{x.l}</a>
           )}
         </div>
         <div>
           <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",fontWeight:700,marginBottom:12,letterSpacing:0.5}}>Legal</div>
           {[{l:"About",p:"about"},{l:"Contact",p:"contact"},{l:"Privacy Policy",p:"privacy"},{l:"Terms of Use",p:"terms"},{l:"Affiliate Disclosure",p:"affiliate"}].map(x=>
-            <button key={x.l} onClick={()=>go(x.p)} style={{display:"block",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:"4px 0",textAlign:"left",width:"auto"}}>{x.l}</button>
+            <a key={x.l} href={"/"+x.p} onClick={e=>{e.preventDefault();go(x.p);}} style={{display:"block",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textDecoration:"none",padding:"4px 0",textAlign:"left",width:"auto"}}>{x.l}</a>
           )}
         </div>
       </div>
