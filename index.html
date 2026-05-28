@@ -11,6 +11,12 @@
     <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
     <link rel="dns-prefetch" href="https://github.com" />
 
+    <!-- Performance: warm up retailer image CDNs (product/deal thumbnails) -->
+    <link rel="preconnect" href="https://m.media-amazon.com" crossorigin />
+    <link rel="dns-prefetch" href="https://m.media-amazon.com" />
+    <link rel="dns-prefetch" href="https://c1.neweggimages.com" />
+    <link rel="dns-prefetch" href="https://pisces.bbystatic.com" />
+
 
     <!-- Fonts: preconnect + preload -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -107,7 +113,7 @@
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://prorigbuilder.com/#search?q={search_term_string}"
+          "urlTemplate": "https://prorigbuilder.com/search?q={search_term_string}"
         },
         "query-input": "required name=search_term_string"
       }

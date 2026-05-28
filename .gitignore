@@ -46,6 +46,12 @@ src/data/parts.js.pre-*
 
 phase2-report.json
 
+# Debug / exploratory scripts & logs
+debug-*.cjs
+inspect-parts.mjs
+*.log
+prerender-failures.json
+
 public/price-history/
 public/reviews/
 !catalog-build/reviews.json

@@ -1255,7 +1255,7 @@ function SwapLine({label, part}) {
 function MissingSpecsView() {
   return (
     <div style={{minHeight:"60vh", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", padding:40, textAlign:"center"}}>
-      <h2 style={{fontFamily:"var(--ff)", fontSize:24, color:"var(--txt)", marginBottom:12}}>No scan data found</h2>
+      <h1 style={{fontFamily:"var(--ff)", fontSize:24, color:"var(--txt)", marginBottom:12}}>Your PC Upgrade Path</h1>
       <p style={{fontFamily:"var(--ff)", fontSize:14, color:"var(--dim)", maxWidth:480, lineHeight:1.6, marginBottom:24}}>
         This page shows personalized upgrade recommendations based on your PC's hardware.
         Download the Pro Rig Scanner to get started.

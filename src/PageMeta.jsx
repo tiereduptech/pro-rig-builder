@@ -31,14 +31,14 @@ const DEFAULT_OG_IMAGE = `${SITE}/og-image.png`;
 // ─── Static page metadata ───────────────────────────────────────────────────
 const PAGES = {
   home: {
-    title: `${BRAND} — Free PC Part Picker, Builder & Hardware Scanner`,
-    desc: "Build your PC with 3,950+ verified parts. Compare prices and specs side-by-side. Free PCPartPicker alternative with hardware scanner.",
+    title: `${BRAND} — Free PC Part Picker & Hardware Scanner`,
+    desc: "Build your PC with 5,290+ verified parts. Compare prices and specs side-by-side. Free PCPartPicker alternative with a hardware scanner.",
     path: "/",
-    crumbLabel: null,  // no crumb on home
+    crumbLabel: null,
   },
   search: {
     title: `Search PC Parts — Specs, Prices & Deals | ${BRAND}`,
-    desc: "Search and compare 3,950+ PC parts with verified specs, live prices, and deals from Amazon and Best Buy. Filter by socket, chipset, wattage, and more.",
+    desc: "Search and compare 5,290+ PC parts with verified specs, live prices, and deals from Amazon, Best Buy, and Newegg. Filter by every spec.",
     path: "/search",
     crumbLabel: "Search",
   },
@@ -55,56 +55,56 @@ const PAGES = {
     crumbLabel: "Community",
   },
   tools: {
-    title: `PC Builder Tools — FPS, Wattage & Bottleneck Calc | ${BRAND}`,
-    desc: "Free PC tools: FPS estimator, wattage calculator, bottleneck checker, RAM speed advisor, and more. No signup, no ads, just answers.",
+    title: `Free PC Builder Tools — FPS & Wattage | ${BRAND}`,
+    desc: "Free PC tools: FPS estimator, wattage calculator, bottleneck checker, build wizard, and parts comparison. No signup, no ads, just answers.",
     path: "/tools",
     crumbLabel: "Tools",
   },
   "tools/fps-estimator": {
-    title: `FPS Estimator — Projected Frames Per Second for Your PC Build | ${BRAND}`,
-    desc: "See projected FPS for 26 popular games across any GPU + CPU combo at 1080p, 1440p, and 4K. Free FPS calculator with no signup.",
+    title: `FPS Estimator — Game FPS for Any Build | ${BRAND}`,
+    desc: "See projected FPS for popular games across any GPU + CPU combo at 1080p, 1440p, and 4K. Free FPS calculator, no signup needed.",
     path: "/tools/fps-estimator",
     crumbLabel: "FPS Estimator",
   },
   "tools/bottleneck-calculator": {
-    title: `Bottleneck Calculator — Find Your CPU or GPU Bottleneck | ${BRAND}`,
-    desc: "Find out if your CPU or GPU is the weak link in your PC build. Get a specific bottleneck severity percentage with upgrade recommendations.",
+    title: `Bottleneck Calculator — CPU vs GPU | ${BRAND}`,
+    desc: "Find out if your CPU or GPU is the weak link in your PC build. Get exact bottleneck severity percentage with targeted upgrade tips.",
     path: "/tools/bottleneck-calculator",
     crumbLabel: "Bottleneck Calculator",
   },
   "tools/will-it-run": {
-    title: `Will It Run? — Check If Your PC Can Run Any Game | ${BRAND}`,
-    desc: "Check if your existing PC can handle specific games at your target resolution and quality. Free game compatibility checker.",
+    title: `Will It Run? — Game Compatibility | ${BRAND}`,
+    desc: "Check if your existing PC can handle specific games at your target resolution and quality settings. Free game compatibility checker.",
     path: "/tools/will-it-run",
     crumbLabel: "Will It Run",
   },
   "tools/compare-builds": {
-    title: `Compare PC Builds — Side-by-Side Performance Comparison | ${BRAND}`,
+    title: `Compare PC Builds Side-by-Side | ${BRAND}`,
     desc: "Compare two PC builds side by side. See FPS differences, bench scores, total cost, and which build wins at your target resolution.",
     path: "/tools/compare-builds",
     crumbLabel: "Compare Builds",
   },
   "tools/build-wizard": {
-    title: `Build Wizard — Automated PC Build for Your Budget | ${BRAND}`,
-    desc: "Tell us your budget and use case. We'll build a fully compatible, optimized PC parts list automatically — no manual research needed.",
+    title: `Build Wizard — Auto PC for Your Budget | ${BRAND}`,
+    desc: "Enter your budget and use case. We'll generate a fully compatible, optimized PC parts list automatically — no manual research needed.",
     path: "/tools/build-wizard",
     crumbLabel: "Build Wizard",
   },
   "tools/power-calculator": {
-    title: `PSU Wattage Calculator — How Many Watts Your PC Needs | ${BRAND}`,
+    title: `PSU Wattage Calculator — PC Power Needs | ${BRAND}`,
     desc: "Calculate exactly how many watts your PC needs. Free PSU calculator factoring in GPU TDP, transient spikes, and headroom for upgrades.",
     path: "/tools/power-calculator",
     crumbLabel: "Power Calculator",
   },
   "tools/compare-parts": {
-    title: `Compare PC Parts — CPU, GPU, RAM & More Side-by-Side | ${BRAND}`,
-    desc: "Compare any two PC parts side by side. See specs, benchmarks, prices, and which is the better value for your build.",
+    title: `Compare PC Parts — CPU, GPU & RAM | ${BRAND}`,
+    desc: "Compare any two PC parts side by side. See specs, benchmarks, current prices, and which is the better value for your build.",
     path: "/tools/compare-parts",
     crumbLabel: "Compare Parts",
   },
   upgrade: {
-    title: `Upgrade Path — Personalized PC Upgrade Recommendations | ${BRAND}`,
-    desc: "Get personalized upgrade recommendations based on your current PC and budget. Scan your hardware and see exactly what to upgrade first.",
+    title: `PC Upgrade Path — Smart Recommendations | ${BRAND}`,
+    desc: "Get personalized PC upgrade recommendations based on your current hardware and budget. Scan your rig, see what to upgrade first.",
     path: "/upgrade",
     crumbLabel: "Upgrade",
   },
@@ -121,26 +121,26 @@ const PAGES = {
     crumbLabel: "About",
   },
   contact: {
-    title: `Contact ${BRAND}`,
-    desc: "Get in touch with the Pro Rig Builder team. Feedback, partnerships, and product corrections welcome.",
+    title: `Contact ${BRAND} — Feedback & Partnerships`,
+    desc: "Get in touch with the Pro Rig Builder team. We welcome feedback on tools, partnership inquiries, and product data corrections.",
     path: "/contact",
     crumbLabel: "Contact",
   },
   privacy: {
     title: `Privacy Policy | ${BRAND}`,
-    desc: "How Pro Rig Builder collects, uses, and protects your data. Plain English, no legalese.",
+    desc: "How Pro Rig Builder collects, uses, and protects your data — in plain English. Covers cookies, analytics, and our scanner's local-only design.",
     path: "/privacy",
     crumbLabel: "Privacy",
   },
   terms: {
     title: `Terms of Service | ${BRAND}`,
-    desc: "Terms of service for using Pro Rig Builder, our hardware scanner, and our APIs.",
+    desc: "Terms of service for using Pro Rig Builder, our free PC builder tools, and the Pro Rig hardware scanner. Your rights, our rules, and the fine print.",
     path: "/terms",
     crumbLabel: "Terms",
   },
   affiliate: {
     title: `Affiliate Disclosure | ${BRAND}`,
-    desc: "Pro Rig Builder is an Amazon Associate and earns from qualifying purchases. Full affiliate disclosure inside.",
+    desc: "Pro Rig Builder is an Amazon Associate and earns from qualifying purchases. Read our full affiliate disclosure covering how our links and commissions work.",
     path: "/affiliate",
     crumbLabel: "Affiliate",
   },
@@ -163,10 +163,28 @@ const PAGES = {
     crumbLabel: "PCPartPicker Alternative",
   },
   "best-pc-builder-tools": {
-    title: `Best PC Builder Tools of 2026 — Free & Tested | ${BRAND}`,
-    desc: "The best free PC builder tools of 2026. Part pickers, FPS estimators, bottleneck checkers, and wattage calculators ranked and reviewed.",
+    title: `Best PC Builder Tools of 2026 — Ranked | ${BRAND}`,
+    desc: "The best free PC builder tools of 2026. Part pickers, FPS estimators, bottleneck checkers, and wattage calculators — ranked and reviewed.",
     path: "/best-pc-builder-tools",
     crumbLabel: "Best PC Builder Tools",
+  },
+  "pc-hardware-scanner": {
+    title: `PC Hardware Scanner — Free Windows Tool | ${BRAND}`,
+    desc: "Find out what's in your PC. Our free Windows hardware scanner detects your CPU, GPU, RAM, motherboard and storage in seconds, then suggests upgrades.",
+    path: "/pc-hardware-scanner",
+    crumbLabel: "PC Hardware Scanner",
+  },
+  "what-can-i-upgrade": {
+    title: `What Can I Upgrade In My PC? | ${BRAND}`,
+    desc: "Wondering what you can upgrade in your PC? Find the single upgrade with the biggest performance gain for your budget, based on your real hardware.",
+    path: "/what-can-i-upgrade",
+    crumbLabel: "What Can I Upgrade",
+  },
+  "will-it-fit": {
+    title: `Will This GPU Fit My Case? | ${BRAND}`,
+    desc: "Will your new GPU fit your case? Learn how to check graphics card length, slot width, and cooler clearance so you never buy a part that won't fit.",
+    path: "/will-it-fit",
+    crumbLabel: "Will It Fit",
   },
 };
 
@@ -195,6 +213,52 @@ function findProduct(parts, id) {
   return parts.find((p) => String(p.id) === String(id) || String(p._id) === String(id)) || null;
 }
 
+// Self-route: derive page key, product, and category from window.location.
+// Does NOT rely on App.jsx's `page` state to avoid hydration-order/race bugs
+// where the prerender captures Helmet output before App.jsx routing settles.
+function routeFromUrl(parts) {
+  if (typeof window === "undefined") return { page: "home", product: null, category: null };
+  const pathname = window.location.pathname || "/";
+
+  // /parts/{cat}/{slug}-{id}
+  const prodMatch = pathname.match(/^\/parts\/[^/]+\/.*-(\d+)$/);
+  if (prodMatch && parts) {
+    const product = findProduct(parts, prodMatch[1]);
+    if (product) return { page: "product", product, category: null };
+  }
+
+  // /parts/{cat}  (category index page — no product id)
+  const catIdxMatch = pathname.match(/^\/parts\/([^/]+)\/?$/);
+  if (catIdxMatch) {
+    const catKey = SLUG_TO_CAT[catIdxMatch[1]];
+    if (catKey) return { page: "category-index", product: null, category: catKey };
+  }
+
+  // /search?cat=X or /search?id=Y
+  if (pathname === "/search" || pathname === "/search/") {
+    const { cat, id } = parseSearchUrl();
+    if (id && parts) {
+      const product = findProduct(parts, id);
+      if (product) return { page: "product", product, category: null };
+    }
+    return { page: "search", product: null, category: cat || null };
+  }
+
+  // /tools/{tool} → use composite key into PAGES
+  const toolMatch = pathname.match(/^\/tools\/([\w-]+)\/?$/);
+  if (toolMatch) {
+    const key = `tools/${toolMatch[1]}`;
+    if (PAGES[key]) return { page: key, product: null, category: null };
+  }
+
+  // Top-level path
+  const base = pathname.replace(/^\//, "").split("/")[0];
+  if (!base) return { page: "home", product: null, category: null };
+  if (PAGES[base]) return { page: base, product: null, category: null };
+
+  return { page: "home", product: null, category: null };
+}
+
 // URL category slug map - MUST MATCH scripts/generate-sitemap.cjs CAT_SLUG
 const URL_CAT_SLUG = {
   "CPU":"cpu","GPU":"gpu","Motherboard":"motherboard","RAM":"ram","Storage":"storage",
@@ -207,6 +271,35 @@ const URL_CAT_SLUG = {
   "Chair":"chair","Desk":"desk",
 };
 
+// Reverse map: URL slug → catalog category key (for /parts/{slug} index pages).
+const SLUG_TO_CAT = Object.fromEntries(Object.entries(URL_CAT_SLUG).map(([k, v]) => [v, k]));
+
+// Category index page metadata. Title noun + body phrasing tuned to keep
+// titles ≤60 and descriptions in the 120–160 window. Year is derived live.
+const CAT_INDEX = {
+  CPU:         { noun: "CPUs",           kw: "Compare Processors", long: "CPUs and processors" },
+  GPU:         { noun: "Graphics Cards", kw: "Compare GPUs",       long: "graphics cards" },
+  Motherboard: { noun: "Motherboards",   kw: "Intel & AMD",        long: "motherboards" },
+  RAM:         { noun: "RAM",            kw: "DDR5 & DDR4 Memory",  long: "RAM and memory kits" },
+  Storage:     { noun: "SSDs",           kw: "NVMe, SATA & HDD",    long: "SSDs and hard drives" },
+  PSU:         { noun: "Power Supplies", kw: "80+ Rated PSUs",      long: "power supplies" },
+  Case:        { noun: "PC Cases",       kw: "ATX, mATX & ITX",     long: "PC cases" },
+  CPUCooler:   { noun: "CPU Coolers",    kw: "Air & AIO",           long: "CPU coolers" },
+  Monitor:     { noun: "Monitors",       kw: "Gaming & 4K",         long: "gaming monitors" },
+};
+
+function buildCategoryIndexMeta(catKey) {
+  const ci = CAT_INDEX[catKey];
+  const slug = URL_CAT_SLUG[catKey];
+  if (!ci || !slug) return null;
+  const year = new Date().getFullYear();
+  return {
+    title: `Best ${ci.noun} ${year} — ${ci.kw} | ${BRAND}`,
+    desc: `Compare the best ${ci.long} of ${year}, ranked by benchmark and price. Verified specs, live deals, and value grades on every model.`,
+    path: `/parts/${slug}`,
+  };
+}
+
 // Slug function - MUST MATCH scripts/generate-sitemap.cjs slugify()
 function urlSlugify(name) {
   const norm = String(name || "")
@@ -215,33 +308,126 @@ function urlSlugify(name) {
     .replace(/-+/g, "-").replace(/^-|-$/g, "").slice(0, 80).replace(/-$/, "");
 }
 
+// Per-category spec extractors. Each returns short tokens to splice into the
+// meta description so it carries real signal (TDP, socket, CFM, panel type, …)
+// rather than generic filler.
+function categorySpecs(p) {
+  const c = p.c, bits = [];
+  if (c === "CPU") {
+    if (p.cores && p.threads) bits.push(`${p.cores}-core ${p.threads}-thread`);
+    if (p.socket) bits.push(p.socket);
+    if (p.boostClock) bits.push(`${p.boostClock} GHz boost`);
+    if (p.tdp) bits.push(`${p.tdp}W TDP`);
+  } else if (c === "GPU") {
+    if (p.vram) bits.push(`${p.vram}GB VRAM`);
+    if (p.tdp) bits.push(`${p.tdp}W TDP`);
+    const len = p.gpuLen || p.length;
+    if (len) bits.push(`${len}mm long`);
+  } else if (c === "Motherboard") {
+    if (p.socket) bits.push(p.socket);
+    if (p.chipset) bits.push(p.chipset);
+    if (p.ff) bits.push(p.ff);
+    if (p.memType) bits.push(p.memType);
+  } else if (c === "RAM") {
+    if (p.cap && p.sticks) bits.push(`${p.cap}GB (${p.sticks}x${Math.round(p.cap / p.sticks)}GB)`);
+    if (p.ramType || p.memType) bits.push(p.ramType || p.memType);
+    if (p.speed) bits.push(`${p.speed} MHz`);
+    if (p.cl) bits.push(`CL${p.cl}`);
+  } else if (c === "Storage") {
+    if (p.cap) bits.push(p.cap >= 1000 ? `${(p.cap / 1000).toFixed(p.cap % 1000 === 0 ? 0 : 1)}TB` : `${p.cap}GB`);
+    if (p.storageType) bits.push(p.storageType);
+    if (p.interface) bits.push(p.interface);
+    if (p.ff) bits.push(p.ff);
+  } else if (c === "PSU") {
+    if (p.watts) bits.push(`${p.watts}W`);
+    if (p.eff) bits.push(p.eff);
+    if (p.modular) bits.push(`${p.modular} modular`);
+    if (p.atx3) bits.push("ATX 3.0");
+  } else if (c === "Case") {
+    if (p.ff) bits.push(p.ff);
+    if (p.tower) bits.push(`${p.tower} tower`);
+    if (p.maxGPU) bits.push(`max GPU ${p.maxGPU}mm`);
+  } else if (c === "CPUCooler") {
+    if (p.coolerType) bits.push(p.coolerType);
+    if (p.tdp_rating) bits.push(`${p.tdp_rating}W rating`);
+    if (p.height) bits.push(`${p.height}mm tall`);
+  } else if (c === "CaseFan") {
+    if (p.size) bits.push(`${p.size}mm`);
+    if (p.cfm) bits.push(`${p.cfm} CFM`);
+    if (p.noise) bits.push(`${p.noise} dBA`);
+  } else if (c === "Monitor") {
+    if (p.screenSize) bits.push(`${p.screenSize}"`);
+    if (p.res || p.resolution) bits.push(p.res || p.resolution);
+    if (p.refresh) bits.push(`${p.refresh}Hz`);
+    if (p.panel) bits.push(p.panel);
+  }
+  return bits;
+}
+
+// Title builder: stay ≤ 60 chars. Try long form, then short form, then truncate.
+function buildProductTitle(displayName) {
+  const FULL = ` — Price, Specs & Reviews | ${BRAND}`;
+  const SHORT = ` | ${BRAND}`;
+  if ((displayName + FULL).length <= 60) return displayName + FULL;
+  if ((displayName + SHORT).length <= 60) return displayName + SHORT;
+  const maxName = 60 - SHORT.length;
+  let truncated = displayName.slice(0, maxName);
+  const lastSpace = truncated.lastIndexOf(" ");
+  if (lastSpace > 30) truncated = truncated.slice(0, lastSpace);
+  return truncated.replace(/[\s\-—|,]+$/, "") + SHORT;
+}
+
+// Description builder: aim for 120-160 chars with real per-category specs.
+// Dedupe and skip anything already mentioned in the displayName.
+function buildProductDesc(displayName, p) {
+  const price = p?.deals?.amazon?.price || p?.deals?.bestbuy?.price || p.pr;
+  let specs = categorySpecs(p);
+  const seen = new Set();
+  specs = specs.filter(s => { const k = s.toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; });
+  const nameL = displayName.toLowerCase();
+  specs = specs.filter(s => !nameL.includes(s.toLowerCase()));
+
+  const TAIL = " Compare specs, benchmarks, and live deals from Amazon, Best Buy, and Newegg.";
+  const TAIL_SHORT = " Compare specs, benchmarks, and live deals.";
+  const priceSentence = price ? ` Current price $${price}.` : "";
+
+  const head = (n) => displayName + (specs.length && n ? `: ${specs.slice(0, n).join(", ")}.` : ".");
+  let d = head(4) + priceSentence + TAIL;
+
+  // Shrink to fit 160
+  if (d.length > 160) {
+    for (let n = 3; n >= 0 && d.length > 160; n--) d = head(n) + priceSentence + TAIL;
+    if (d.length > 160) d = head(0) + priceSentence + TAIL_SHORT;
+    if (d.length > 160) {
+      const cut = d.slice(0, 160).lastIndexOf(" ");
+      d = (cut > 100 ? d.slice(0, cut) : d.slice(0, 157)).replace(/[\s,.\-]+$/, "") + "…";
+    }
+  }
+  // If still short and we have more specs, splice extras in
+  if (d.length < 120 && specs.length > 4) {
+    const extra = specs.slice(4).join(", ");
+    const padded = d.replace(/\.(\s|$)/, `, ${extra}.$1`);
+    if (padded.length <= 160) d = padded;
+  }
+  return d;
+}
+
 function buildProductMeta(p) {
   const name = p.n || p.name || "PC Part";
   const cat = p.c || p.category || "";
   const brand = p.b || p.brand || "";
-  const price = p?.deals?.amazon?.price || p?.deals?.bestbuy?.price || p.pr;
   const cSlug = URL_CAT_SLUG[cat];
   const nSlug = urlSlugify(name);
-  // Canonical points to new /parts/ format. Falls back to /search for unmapped categories.
   const canonicalPath = (cSlug && nSlug && (p.id || p._id))
     ? `/parts/${cSlug}/${nSlug}-${p.id || p._id}`
     : `/search?cat=${encodeURIComponent(cat)}&id=${p.id || p._id}`;
 
-  const titleParts = [];
-  if (brand && !name.toLowerCase().includes(brand.toLowerCase())) titleParts.push(`${brand} ${name}`);
-  else titleParts.push(name);
-  if (cat) titleParts.push(cat);
-  titleParts.push("Specs, Price & Reviews");
-  titleParts.push(BRAND);
-
-  let desc = brand && !name.toLowerCase().includes(brand.toLowerCase()) ? `${brand} ${name}` : name;
-  desc += ` - full specs, benchmarks`;
-  if (price) desc += `, current price $${price}`;
-  desc += `, and live availability from Amazon and Best Buy.`;
+  const displayName = brand && !name.toLowerCase().includes(brand.toLowerCase())
+    ? `${brand} ${name}` : name;
 
   return {
-    title: titleParts.join(" | ").slice(0, 70),
-    desc: desc.slice(0, 160),
+    title: buildProductTitle(displayName),
+    desc: buildProductDesc(displayName, p),
     path: canonicalPath,
   };
 }
@@ -261,6 +447,10 @@ function buildBreadcrumbLd({ page, product, category }) {
     const productName = product.n || "Product";
     // Product crumb has no url (it's the current page)
     items.push({ name: productName.slice(0, 90) });
+  } else if (page === "category-index" && category) {
+    // Category index: Home › Search › {Category noun}
+    items.push({ name: "Search", url: `${SITE}/search` });
+    items.push({ name: (CAT_INDEX[category] && CAT_INDEX[category].noun) || category });
   } else if (page === "search" && category) {
     // Category page: Home › Search › {Category}
     items.push({ name: "Search", url: `${SITE}/search` });
@@ -288,21 +478,35 @@ function buildBreadcrumbLd({ page, product, category }) {
 // ─── Build primary JSON-LD (Product / WebSite / CollectionPage) ─────────────
 function buildPrimaryLd({ page, product, category, url, title, desc }) {
   if (product) {
-    const price = product?.deals?.amazon?.price || product?.deals?.bestbuy?.price || product.pr;
-    const offerUrl = product?.deals?.amazon?.url || product?.deals?.bestbuy?.url || url;
+    const price = product?.deals?.amazon?.price || product?.deals?.bestbuy?.price
+      || product?.deals?.newegg?.saleprice || product?.deals?.newegg?.price || product.pr;
+    const offerUrl = product?.deals?.amazon?.url || product?.deals?.bestbuy?.url
+      || product?.deals?.newegg?.linkurl || product?.deals?.msi?.url || url;
     const inStock = product?.deals?.amazon?.inStock !== false;
+    const image = product?.deals?.amazon?.image || product.img
+      || product?.deals?.newegg?.imageurl || DEFAULT_OG_IMAGE;
+    // priceValidUntil: prices refresh on every catalog rebuild; give Google a
+    // near-future date (30 days) so Rich Results stays valid without overstating.
+    const validUntil = new Date(Date.now() + 30 * 864e5).toISOString().split("T")[0];
+    const sku = String(product.id || product._id || "");
+    const mpn = product.mpn || product?.deals?.newegg?.sku || sku;
     const ld = {
       "@context": "https://schema.org",
       "@type": "Product",
       name: product.n || product.name,
+      ...(image ? { image } : {}),
+      ...(desc ? { description: desc } : {}),
       ...(product.b || product.brand ? { brand: { "@type": "Brand", name: product.b || product.brand } } : {}),
       ...(product.c || product.category ? { category: product.c || product.category } : {}),
+      ...(sku ? { sku } : {}),
+      ...(mpn ? { mpn } : {}),
     };
     if (product.r && product.r > 0) {
       ld.aggregateRating = {
         "@type": "AggregateRating",
         ratingValue: String(product.r),
         reviewCount: String(product.rc || product.reviewCount || 1),
+        bestRating: "5",
       };
     }
     if (price) {
@@ -311,6 +515,7 @@ function buildPrimaryLd({ page, product, category, url, title, desc }) {
         price: String(price),
         priceCurrency: "USD",
         availability: inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+        priceValidUntil: validUntil,
         url: offerUrl,
       };
     }
@@ -329,7 +534,7 @@ function buildPrimaryLd({ page, product, category, url, title, desc }) {
       },
     };
   }
-  if (page === "search" && category) {
+  if ((page === "search" || page === "category-index") && category) {
     return {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
@@ -343,13 +548,12 @@ function buildPrimaryLd({ page, product, category, url, title, desc }) {
 
 // ─── Main component ─────────────────────────────────────────────────────────
 export default function PageMeta({ page, category, product, parts }) {
-  let resolvedProduct = product || null;
-  let resolvedCategory = category || null;
-  if (!resolvedProduct && page === "search" && parts) {
-    const { cat, id } = parseSearchUrl();
-    if (id) resolvedProduct = findProduct(parts, id);
-    if (cat && !resolvedCategory) resolvedCategory = cat;
-  }
+  // Prefer URL-derived routing — `page` prop may lag during prerender/hydration,
+  // and only stores top-level pathBase (e.g. "tools") not subroutes ("tools/fps-estimator").
+  const fromUrl = routeFromUrl(parts);
+  const resolvedProduct = product || fromUrl.product;
+  const resolvedCategory = category || fromUrl.category;
+  const effectivePage = resolvedProduct ? "product" : (fromUrl.page || page || "home");
 
   let meta;
   let ogType = "website";
@@ -358,15 +562,17 @@ export default function PageMeta({ page, category, product, parts }) {
     meta = buildProductMeta(resolvedProduct);
     ogType = "product";
     ogImage = resolvedProduct?.deals?.amazon?.image || resolvedProduct.img || DEFAULT_OG_IMAGE;
-  } else if (page === "search" && resolvedCategory && CATEGORY_META[resolvedCategory]) {
+  } else if (effectivePage === "category-index" && resolvedCategory) {
+    meta = buildCategoryIndexMeta(resolvedCategory) || PAGES.search;
+  } else if (effectivePage === "search" && resolvedCategory && CATEGORY_META[resolvedCategory]) {
     meta = { ...CATEGORY_META[resolvedCategory], path: `/search?cat=${encodeURIComponent(resolvedCategory)}` };
   } else {
-    meta = PAGES[page] || PAGES.home;
+    meta = PAGES[effectivePage] || PAGES.home;
   }
 
   const url = SITE + meta.path;
-  const primaryLd = buildPrimaryLd({ page, product: resolvedProduct, category: resolvedCategory, url, title: meta.title, desc: meta.desc });
-  const breadcrumbLd = buildBreadcrumbLd({ page, product: resolvedProduct, category: resolvedCategory });
+  const primaryLd = buildPrimaryLd({ page: effectivePage, product: resolvedProduct, category: resolvedCategory, url, title: meta.title, desc: meta.desc });
+  const breadcrumbLd = buildBreadcrumbLd({ page: effectivePage, product: resolvedProduct, category: resolvedCategory });
 
   return (
     <Helmet>

@@ -1,209 +1,372 @@
 // =============================================================================
 //  prerender.cjs
-//  Copyright © 2026 TieredUp Tech, Inc.
+//  Copyright (c) 2026 TieredUp Tech, Inc.
 //
-//  Pre-renders the static marketing pages of Pro Rig Builder to HTML files
-//  that crawlers (and social previews) can read without running JS.
+//  Pre-renders pages of Pro Rig Builder to static HTML:
+//    - Static marketing/utility routes
+//    - All ~5,290 indexable product pages (auto-loaded from parts.js)
 //
-//  How it works:
-//    1) Spawns `npx serve -s dist -l 4173` to host the freshly-built bundle.
-//    2) Boots headless Chrome via Puppeteer.
-//    3) Visits each route, waits for react-helmet to populate <title> and
-//       meta description, then dumps the rendered DOM to dist/{route}/index.html.
-//    4) Kills the server.
+//  Also writes a fresh public/sitemap.xml using the same product list, so
+//  sitemap and prerendered files NEVER drift apart.
 //
-//  Result:
-//    - Direct hits to /search, /builder, etc. return real HTML (Bing, Twitter,
-//      LinkedIn previews work).
-//    - SPA hydration still takes over after JS loads — same React components
-//      render the exact same DOM, so no hydration mismatch.
-//    - Routes NOT pre-rendered (e.g. /product/[id]) still fall back to the SPA
-//      shell via `serve -s` (single-page mode).
+//  Usage:
+//    node prerender.cjs                  # full prerender + sitemap
+//    node prerender.cjs --incremental    # skip already-rendered pages
+//    node prerender.cjs --verbose
+//    node prerender.cjs --static-only    # skip products (fast dev iteration)
+//    node prerender.cjs --concurrency=4  # default 8
 //
-//  Pre-req: npm install --save-dev puppeteer
-//  Usage:   node prerender.cjs            (after `npm run build`)
-//           node prerender.cjs --verbose
+//  Batched (range) mode -- used by prerender-batches.ps1 to defeat Chromes
+//  long-lived state leak. Each batch is a FRESH node process that fully exits,
+//  guaranteeing OS-level cleanup of leaked chrome.exe processes:
+//    node prerender.cjs --start=0 --end=200    # render product routes [0,200)
+//    node prerender.cjs --start=200 --end=400  # next window, fresh process
+//
+//  Range-mode rules:
+//    * --start/--end slice the PRODUCT route list only (after isIndexable).
+//    * Static routes are rendered ONLY in the batch that includes index 0.
+//    * Sitemap writing is SKIPPED in range mode. Write it once at the end via:
+//          node prerender.cjs --sitemap-only
 // =============================================================================
 
-const fs = require('fs');
-const path = require('path');
-const { spawn } = require('child_process');
+const fs = require("fs");
+const path = require("path");
+const { spawn } = require("child_process");
+const { productPath, isIndexable, loadParts } = require("./scripts/url-slugs.cjs");
 
-const VERBOSE = process.argv.includes('--verbose');
-const PORT = 4173;
-const BASE = `http://localhost:${PORT}`;
-const TIMEOUT = 15000;
+const VERBOSE       = process.argv.includes("--verbose");
+const INCREMENTAL   = process.argv.includes("--incremental");
+const STATIC_ONLY   = process.argv.includes("--static-only");
+const SITEMAP_ONLY  = process.argv.includes("--sitemap-only");
+const NO_SITEMAP    = process.argv.includes("--no-sitemap");
+const CONCURRENCY   = (() => {
+  const a = process.argv.find(a => a.startsWith("--concurrency="));
+  return a ? parseInt(a.split("=")[1], 10) || 8 : 8;
+})();
+const RANGE_START   = (() => {
+  const a = process.argv.find(a => a.startsWith("--start="));
+  return a ? Math.max(0, parseInt(a.split("=")[1], 10) || 0) : null;
+})();
+const RANGE_END     = (() => {
+  const a = process.argv.find(a => a.startsWith("--end="));
+  return a ? parseInt(a.split("=")[1], 10) : null;
+})();
+const RANGE_MODE    = RANGE_START !== null || RANGE_END !== null;
 
-// Static marketing/utility routes — match the keys in PageMeta.jsx.
-// Product pages are NOT in this list (3,870 of them; pre-render those in a
-// separate batch script if SEO needs go beyond static pages).
-const ROUTES = [
-  '/',
-  '/search',
-  '/builder',
-  '/community',
-  '/tools',
-  '/tools/fps-estimator',
-  '/tools/bottleneck-calculator',
-  '/tools/will-it-run',
-  '/tools/compare-builds',
-  '/tools/build-wizard',
-  '/tools/power-calculator',
-  '/tools/compare-parts',
-  '/upgrade',
-  '/scanner',
-  '/about',
-  '/contact',
-  '/privacy',
-  '/terms',
-  '/affiliate',
-  '/compare',
-  '/vs-pcpartpicker',
-  '/pcpartpicker-alternative',
-  '/best-pc-builder-tools',
+const PORT    = 4173;
+const BASE    = `http://localhost:${PORT}`;
+const TIMEOUT = 40000;
+const SITE    = "https://prorigbuilder.com";
+const TODAY   = new Date().toISOString().split("T")[0];
+
+const STATIC_ROUTES = [
+  { path: "/",                              priority: "1.0", changefreq: "daily"   },
+  { path: "/search",                        priority: "0.9", changefreq: "daily"   },
+  { path: "/builder",                       priority: "0.9", changefreq: "weekly"  },
+  { path: "/community",                     priority: "0.7", changefreq: "weekly"  },
+  { path: "/tools",                         priority: "0.8", changefreq: "weekly"  },
+  { path: "/tools/fps-estimator",           priority: "0.7", changefreq: "monthly" },
+  { path: "/tools/bottleneck-calculator",   priority: "0.7", changefreq: "monthly" },
+  { path: "/tools/will-it-run",             priority: "0.7", changefreq: "monthly" },
+  { path: "/tools/compare-builds",          priority: "0.7", changefreq: "monthly" },
+  { path: "/tools/build-wizard",            priority: "0.7", changefreq: "monthly" },
+  { path: "/tools/power-calculator",        priority: "0.7", changefreq: "monthly" },
+  { path: "/tools/compare-parts",           priority: "0.7", changefreq: "monthly" },
+  { path: "/upgrade",                       priority: "0.8", changefreq: "weekly"  },
+  { path: "/scanner",                       priority: "0.8", changefreq: "weekly"  },
+  { path: "/about",                         priority: "0.6", changefreq: "monthly" },
+  { path: "/contact",                       priority: "0.5", changefreq: "monthly" },
+  { path: "/privacy",                       priority: "0.3", changefreq: "yearly"  },
+  { path: "/terms",                         priority: "0.3", changefreq: "yearly"  },
+  { path: "/affiliate",                     priority: "0.3", changefreq: "yearly"  },
+  { path: "/compare",                       priority: "0.8", changefreq: "weekly"  },
+  { path: "/vs-pcpartpicker",               priority: "0.8", changefreq: "monthly" },
+  { path: "/pcpartpicker-alternative",      priority: "0.8", changefreq: "monthly" },
+  { path: "/best-pc-builder-tools",         priority: "0.7", changefreq: "monthly" },
+  { path: "/pc-hardware-scanner",           priority: "0.8", changefreq: "monthly" },
+  { path: "/what-can-i-upgrade",            priority: "0.8", changefreq: "monthly" },
+  { path: "/will-it-fit",                   priority: "0.8", changefreq: "monthly" },
+  { path: "/parts/cpu",                     priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/gpu",                     priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/motherboard",             priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/ram",                     priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/storage",                 priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/psu",                     priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/case",                    priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/cpu-cooler",              priority: "0.8", changefreq: "weekly"  },
+  { path: "/parts/monitor",                 priority: "0.8", changefreq: "weekly"  },
 ];
 
-// ─── Sanity checks ───────────────────────────────────────────────────────────
-if (!fs.existsSync(path.join('dist', 'index.html'))) {
-  console.error('  ✗ dist/index.html not found. Run `npm run build` first.');
+if (!fs.existsSync(path.join("dist", "index.html"))) {
+  console.error("  X dist/index.html not found. Run `vite build` first.");
   process.exit(1);
 }
 
-let puppeteer;
-try {
-  puppeteer = require('puppeteer');
-} catch {
-  console.error('  ✗ puppeteer not installed. Run:');
-  console.error('      npm install --save-dev puppeteer');
-  process.exit(1);
+function xmlEscape(s) {
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&apos;");
 }
 
-// ─── Helper: wait for the local serve to actually be ready ───────────────────
-async function waitForServer(retries = 30) {
+function outPathFor(route) {
+  const parts = route.split("/").filter(Boolean);
+  return route === "/" ? path.join("dist", "index.html") : path.join("dist", ...parts, "index.html");
+}
+
+async function writeSitemap() {
+  console.log("  Writing public/sitemap.xml...");
+  const parts = (await loadParts()).filter(isIndexable);
+  const sitemapEntries = [];
+  for (const sr of STATIC_ROUTES) {
+    sitemapEntries.push(
+      `  <url>\n    <loc>${xmlEscape(SITE + sr.path)}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <changefreq>${sr.changefreq}</changefreq>\n    <priority>${sr.priority}</priority>\n  </url>`
+    );
+  }
+  for (const p of parts) {
+    const u = productPath(p);
+    if (!u) continue;
+    sitemapEntries.push(
+      `  <url>\n    <loc>${xmlEscape(SITE + u)}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.6</priority>\n  </url>`
+    );
+  }
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries.join("\n")}\n</urlset>\n`;
+
+  fs.mkdirSync("public", { recursive: true });
+  fs.writeFileSync(path.join("public", "sitemap.xml"), sitemap, "utf8");
+  fs.writeFileSync(path.join("dist", "sitemap.xml"), sitemap, "utf8");
+  console.log(`  OK sitemap.xml written (${sitemapEntries.length} urls)`);
+}
+
+async function waitForServer(retries = 60) {
   for (let i = 0; i < retries; i++) {
-    try {
-      const res = await fetch(BASE + '/');
-      if (res.ok) return true;
-    } catch {}
+    try { const res = await fetch(BASE + "/"); if (res.ok) return true; } catch {}
     await new Promise(r => setTimeout(r, 250));
   }
   return false;
 }
 
-// ─── Main ────────────────────────────────────────────────────────────────────
+async function renderRoute(browser, route) {
+  const page = await browser.newPage();
+  try {
+    await page.setRequestInterception(true);
+    page.on("request", (req) => {
+      const t = req.resourceType();
+      if (t === "image" || t === "media" || t === "font") req.abort();
+      else req.continue();
+    });
+
+    await page.goto(BASE + route, { waitUntil: "networkidle0", timeout: TIMEOUT });
+
+    await page.waitForFunction(() => {
+      const titleOk = document.title && document.title.length > 5;
+      const descOk  = document.querySelector('meta[name="description"]')?.content?.length > 20;
+      const bodyOk  = document.body?.innerText?.length > 100;
+      const c = document.querySelector('link[rel="canonical"]')?.href || "";
+      const p = location.pathname || "/";
+      let canonOk;
+      if (p === "/") {
+        canonOk = /prorigbuilder\.com\/?$/.test(c);
+      } else {
+        const seg1 = "/" + p.replace(/^\//, "").split("/")[0];
+        canonOk = c.includes("prorigbuilder.com" + seg1);
+      }
+      return titleOk && descOk && bodyOk && canonOk;
+    }, { timeout: TIMEOUT });
+
+    await new Promise(r => setTimeout(r, 100));
+
+    const html = await page.content();
+    const bodyChars = await page.evaluate(() => document.body.innerText.length);
+    if (bodyChars < 100) throw new Error(`body only ${bodyChars} chars`);
+
+    const out = outPathFor(route);
+    fs.mkdirSync(path.dirname(out), { recursive: true });
+    fs.writeFileSync(out, html, "utf8");
+    return { ok: true, route, size: html.length, body: bodyChars };
+  } catch (e) {
+    return { ok: false, route, error: e.message };
+  } finally {
+    try { await page.close(); } catch {}
+  }
+}
+
+async function runPool(items, worker, concurrency, onProgress) {
+  let i = 0, done = 0;
+  const results = [];
+  async function next() {
+    while (i < items.length) {
+      const idx = i++;
+      const r = await worker(items[idx]);
+      results.push(r);
+      done++;
+      onProgress(done, items.length, r);
+    }
+  }
+  await Promise.all(Array.from({ length: concurrency }, next));
+  return results;
+}
+
 async function main() {
-  console.log('Pro Rig Builder — Pre-render');
-  console.log('============================');
+  console.log("Pro Rig Builder - Pre-render");
+  console.log("============================");
 
-  // Spawn local server. We must use `cmd /c npx ...` on Windows or the spawn
-  // returns a shell process whose kill() doesn't actually terminate npx.
-  const isWin = process.platform === 'win32';
-  const serveCmd = isWin ? 'cmd' : 'npx';
+  if (SITEMAP_ONLY) {
+    await writeSitemap();
+    process.exit(0);
+  }
+
+  console.log(`  Concurrency: ${CONCURRENCY}`);
+  if (INCREMENTAL) console.log("  Mode: incremental (skip existing)");
+  if (STATIC_ONLY) console.log("  Mode: static-only");
+  if (RANGE_MODE)  console.log(`  Mode: range [start=${RANGE_START ?? 0}, end=${RANGE_END ?? "EOF"})`);
+
+  let puppeteer;
+  try { puppeteer = require("puppeteer"); }
+  catch { console.error("  X puppeteer not installed. Run: npm install --save-dev puppeteer"); process.exit(1); }
+
+  const parts = STATIC_ONLY ? [] : (await loadParts()).filter(isIndexable);
+  console.log(`  Loaded ${parts.length} indexable products`);
+
+  const allProductRoutes = parts.map(p => productPath(p)).filter(Boolean);
+
+  const start = RANGE_START ?? 0;
+  const end   = RANGE_END ?? allProductRoutes.length;
+  const productRoutes = RANGE_MODE ? allProductRoutes.slice(start, end) : allProductRoutes;
+
+  const includeStatic = (!RANGE_MODE || start === 0) && !process.argv.includes("--no-static");
+  const allRoutes = [
+    ...(includeStatic ? STATIC_ROUTES.map(r => r.path) : []),
+    ...productRoutes,
+  ];
+
+  if (RANGE_MODE) {
+    console.log(`  Range: ${productRoutes.length} product routes [${start},${Math.min(end, allProductRoutes.length)}) of ${allProductRoutes.length} total`);
+    if (includeStatic) console.log(`  Range: including ${STATIC_ROUTES.length} static routes (start===0)`);
+  }
+
+  let toRender = allRoutes;
+  if (INCREMENTAL) {
+    toRender = allRoutes.filter(r => !fs.existsSync(outPathFor(r)));
+    console.log(`  Incremental: ${toRender.length} of ${allRoutes.length} need rendering`);
+  }
+
+  if (toRender.length === 0) {
+    console.log("  Nothing to render in this range. Done.");
+    if (!RANGE_MODE && !NO_SITEMAP) await writeSitemap();
+    process.exit(0);
+  }
+
+  const isWin = process.platform === "win32";
+  const serveCmd = isWin ? "cmd" : "npx";
   const serveArgs = isWin
-    ? ['/c', 'npx', 'serve', '-s', 'dist', '-l', String(PORT)]
-    : ['serve', '-s', 'dist', '-l', String(PORT)];
+    ? ["/c", "npx", "serve", "-s", "dist", "-l", String(PORT)]
+    : ["serve", "-s", "dist", "-l", String(PORT)];
+
   console.log(`  Starting local server on :${PORT}...`);
-  const serveProc = spawn(serveCmd, serveArgs, {
-    stdio: VERBOSE ? 'inherit' : 'pipe',
-    detached: false,
-  });
+  const serveProc = spawn(serveCmd, serveArgs, { stdio: VERBOSE ? "inherit" : "pipe", detached: false });
+  serveProc.on("error", (e) => { console.error("  X serve failed:", e.message); process.exit(1); });
 
-  serveProc.on('error', (e) => {
-    console.error('  ✗ serve failed to start:', e.message);
-    process.exit(1);
-  });
+  function killServer() {
+    if (isWin) spawn("taskkill", ["/pid", serveProc.pid, "/T", "/F"], { stdio: "ignore" });
+    else serveProc.kill("SIGTERM");
+  }
 
-  const ready = await waitForServer();
-  if (!ready) {
-    console.error('  ✗ Local server did not respond within 7.5s. Aborting.');
-    serveProc.kill();
+  if (!(await waitForServer())) {
+    console.error("  X Local server did not respond. Aborting.");
+    killServer();
     process.exit(1);
   }
-  console.log('  ✓ Server ready');
+  console.log("  OK Server ready");
 
-  // Boot Puppeteer
-  console.log('  Launching headless Chrome...');
-  const browser = await puppeteer.launch({
-    headless: 'new',
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
-  });
+  const CHUNK_SIZE = 15;
 
-  let success = 0, failed = 0;
+  async function launchBrowser() {
+    return await puppeteer.launch({
+      headless: "new",
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      protocolTimeout: 180000,
+    });
+  }
 
-  for (const route of ROUTES) {
-    const url = BASE + route;
-    process.stdout.write(`  ${route.padEnd(32)} `);
+  console.log("  Launching headless Chrome...");
+  let browser = await launchBrowser();
 
-    const page = await browser.newPage();
-    try {
-      // Block external resources for speed (we just need the HTML, not the
-      // hydrated app actually working in the headless browser).
-      await page.setRequestInterception(true);
-      page.on('request', (req) => {
-        const t = req.resourceType();
-        if (t === 'image' || t === 'media' || t === 'font') {
-          req.abort();
-        } else {
-          req.continue();
+  if (toRender.length > 1) {
+    console.log("  Warmup: rendering first route sequentially...");
+    const warmupResult = await renderRoute(browser, toRender[0]);
+    if (warmupResult.ok) console.log(`  OK Warmup done (${warmupResult.size} bytes)`);
+    else console.log(`  ! Warmup failed: ${warmupResult.error} - continuing anyway`);
+  }
+
+  const startedAt = Date.now();
+  const failures = [];
+  let lastLog = Date.now();
+  let totalDone = toRender.length > 1 ? 1 : 0;
+
+  const poolRoutes = toRender.length > 1 ? toRender.slice(1) : toRender;
+
+  for (let chunkStart = 0; chunkStart < poolRoutes.length; chunkStart += CHUNK_SIZE) {
+    const chunk = poolRoutes.slice(chunkStart, chunkStart + CHUNK_SIZE);
+    await runPool(
+      chunk,
+      async (route) => {
+        let result = await renderRoute(browser, route);
+        if (!result.ok && /Connection|Target closed|navigation/i.test(result.error || "")) {
+          result = await renderRoute(browser, route);
         }
-      });
-
-      await page.goto(url, { waitUntil: 'networkidle0', timeout: TIMEOUT });
-
-      // Wait for react-helmet-async to populate <title> and description.
-      await page.waitForFunction(
-        () => {
-          const titleOk = document.title && document.title.length > 5;
-          const descOk = document.querySelector('meta[name="description"]')?.content?.length > 20;
-          const bodyOk = document.body?.innerText?.length > 100;
-          return titleOk && descOk && bodyOk;
-        },
-        { timeout: TIMEOUT }
-      );
-
-      // Snapshot the rendered HTML.
-      const html = await page.content();
-
-      // Sanity: confirm content actually rendered.
-      const bodyText = await page.evaluate(() => document.body.innerText.length);
-      if (bodyText < 100) {
-        throw new Error(`body has only ${bodyText} chars of text — render likely failed`);
+        return result;
+      },
+      CONCURRENCY,
+      (chunkDone, chunkTotal, r) => {
+        if (!r.ok) failures.push(r);
+        const done = totalDone + chunkDone;
+        const total = toRender.length;
+        const now = Date.now();
+        if (now - lastLog > 2000 || done === total) {
+          const elapsed = (now - startedAt) / 1000;
+          const rate = elapsed > 0 ? done / elapsed : 0;
+          const eta  = rate > 0 ? Math.round((total - done) / rate) : 0;
+          const pct  = ((done / total) * 100).toFixed(1);
+          console.log(`  ${done}/${total} (${pct}%) - ${rate.toFixed(1)}/s - ETA ${eta}s - failed: ${failures.length}`);
+          lastLog = now;
+        }
       }
+    );
+    totalDone += chunk.length;
 
-      // Write to dist/{route}/index.html. Root '/' overwrites dist/index.html
-      // (the SPA shell) with the pre-rendered version.
-      const outDir = route === '/' ? 'dist' : path.join('dist', ...route.split('/').filter(Boolean));
-      fs.mkdirSync(outDir, { recursive: true });
-      fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
-
-      console.log(`✓  (${(html.length / 1024).toFixed(1)} kB, ${bodyText} chars body)`);
-      success++;
-    } catch (e) {
-      console.log(`✗  ${e.message}`);
-      failed++;
-    } finally {
-      await page.close();
+    if (chunkStart + CHUNK_SIZE < poolRoutes.length) {
+      try { await browser.close(); } catch {}
+      browser = await launchBrowser();
     }
   }
 
-  await browser.close();
+  try { await browser.close(); } catch {}
+  killServer();
 
-  // Kill server (Windows needs the tree killed because npx spawns a child).
-  if (isWin) {
-    spawn('taskkill', ['/pid', serveProc.pid, '/T', '/F'], { stdio: 'ignore' });
-  } else {
-    serveProc.kill('SIGTERM');
+  const success = toRender.length - failures.length;
+  const failed  = failures.length;
+  const elapsed = ((Date.now() - startedAt) / 1000).toFixed(1);
+
+  if (failed > 0) {
+    const failFile = RANGE_MODE
+      ? `prerender-failures-${start}-${Math.min(end, allProductRoutes.length)}.json`
+      : "prerender-failures.json";
+    fs.writeFileSync(failFile, JSON.stringify(failures, null, 2));
+    console.log(`  Logged ${failed} failures to ${failFile}`);
+  } else if (!RANGE_MODE && fs.existsSync("prerender-failures.json")) {
+    fs.unlinkSync("prerender-failures.json");
   }
 
-  console.log('\n============================');
-  console.log(`  ✓ ${success} pre-rendered`);
-  if (failed > 0) console.log(`  ✗ ${failed} failed`);
-  console.log('============================\n');
+  if (!RANGE_MODE && !NO_SITEMAP) {
+    await writeSitemap();
+  } else if (RANGE_MODE) {
+    console.log("  (range mode: sitemap skipped -- run --sitemap-only at the end)");
+  }
+
+  console.log("\n============================");
+  console.log(`  OK ${success} pre-rendered in ${elapsed}s`);
+  if (failed > 0) console.log(`  X  ${failed} failed (see failures json)`);
+  console.log("============================\n");
 
   process.exit(failed > 0 ? 1 : 0);
 }
 
-main().catch((e) => {
-  console.error('  ✗ Fatal:', e);
-  process.exit(1);
-});
+main().catch((e) => { console.error("  X Fatal:", e); process.exit(1); });
