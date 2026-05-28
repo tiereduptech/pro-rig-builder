@@ -1,0 +1,141 @@
+name: Prerender SEO pages
+
+on:
+  # Nightly at 06:00 UTC (01:00 CT). Adjust if you want a different time.
+  schedule:
+    - cron: '0 6 * * *'
+  # Also run when parts.js changes on main (catches manual product edits + daily ingest commits).
+  push:
+    branches: [main]
+    paths:
+      - 'src/data/parts.js'
+  # Manual trigger from the Actions tab.
+  workflow_dispatch:
+
+# Only one prerender at a time. New runs cancel old ones still in progress.
+concurrency:
+  group: prerender
+  cancel-in-progress: true
+
+permissions:
+  contents: write  # needed to commit dist/ back to main
+
+jobs:
+  prerender:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          # Use a token that can push back. GITHUB_TOKEN works for push-to-same-repo.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Vite build (produces dist/assets bundles)
+        run: npm run build -- --skip-prerender || npx vite build
+        # The "|| npx vite build" fallback runs raw vite if the npm script
+        # doesn't accept --skip-prerender. Either way we just need the assets.
+
+      - name: Count indexable products
+        id: count
+        run: |
+          TOTAL=$(node -e "
+            (async () => {
+              const { isIndexable, loadParts, productPath } = require('./scripts/url-slugs.cjs');
+              const parts = (await loadParts()).filter(isIndexable);
+              const routes = parts.map(p => productPath(p)).filter(Boolean);
+              process.stdout.write(String(routes.length));
+            })();
+          ")
+          echo "total=$TOTAL" >> $GITHUB_OUTPUT
+          echo "Total indexable products: $TOTAL"
+
+      - name: Prerender in batches (fresh node process per batch)
+        env:
+          TOTAL: ${{ steps.count.outputs.total }}
+          BATCH_SIZE: 40
+          CONCURRENCY: 6
+        run: |
+          set -e
+          # Clean stale per-range failure files
+          rm -f prerender-failures-*.json
+
+          BATCH_NUM=0
+          ANY_FAILURES=0
+
+          for ((START=0; START<TOTAL; START+=BATCH_SIZE)); do
+            END=$((START + BATCH_SIZE))
+            if [ $END -gt $TOTAL ]; then END=$TOTAL; fi
+            BATCH_NUM=$((BATCH_NUM + 1))
+
+            echo ""
+            echo "=== Batch $BATCH_NUM : products [$START, $END) of $TOTAL ==="
+
+            # Fresh node process per batch — OS reclaims any leaked Chrome state on exit.
+            if ! node prerender.cjs --start=$START --end=$END --concurrency=$CONCURRENCY --no-static --incremental; then
+              ANY_FAILURES=1
+              echo "  ! Batch $BATCH_NUM had failures (continuing)"
+            fi
+          done
+
+          echo ""
+          echo "=== Writing sitemap ==="
+          node prerender.cjs --sitemap-only
+
+          # Aggregate per-range failure files
+          if ls prerender-failures-*.json >/dev/null 2>&1; then
+            node -e "
+              const fs = require('fs');
+              const files = fs.readdirSync('.').filter(f => f.match(/^prerender-failures-.*\.json\$/));
+              const all = files.flatMap(f => JSON.parse(fs.readFileSync(f, 'utf8')));
+              fs.writeFileSync('prerender-failures.json', JSON.stringify(all, null, 2));
+              console.log('Aggregated ' + all.length + ' failures');
+            "
+          fi
+
+          if [ $ANY_FAILURES -eq 1 ]; then
+            echo "::warning::Some pages failed to prerender. See prerender-failures.json artifact."
+          fi
+
+      - name: Upload failures artifact (if any)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prerender-failures
+          path: prerender-failures.json
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Commit and push if dist/ changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add dist/ public/sitemap.xml
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit. Catalog unchanged since last prerender."
+            exit 0
+          fi
+
+          # Count what changed for the commit message
+          CHANGED=$(git diff --staged --name-only | wc -l)
+
+          git commit -m "chore(seo): nightly prerender [skip ci]
+
+          Regenerated $CHANGED files via .github/workflows/prerender.yml
+          Triggered by: ${{ github.event_name }}"
+
+          git push origin main
+          echo "Pushed prerender update — Railway will redeploy automatically."
