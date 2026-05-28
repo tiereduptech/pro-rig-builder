@@ -24,8 +24,8 @@ const _CLEAN_SUBSERIES = [
 ];
 const _CLEAN_AIB_BRANDS = ['ASUS','MSI','GIGABYTE','Gigabyte','EVGA','PNY','PowerColor','Sapphire','Sparkle','XFX','ZOTAC','Yeston','ASRock','Inno3D','Galax'];
 
-// â”€â”€â”€ PRICE HISTORY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-// Slug must match split-price-history.js exactly: normalized name â†’ slug.
+// ─── PRICE HISTORY ───────────────────────────────────────────────
+// Slug must match split-price-history.js exactly: normalized name → slug.
 function productSlug(p){
   const norm = String((p && p.n) || "")
     .toLowerCase().replace(/\s+/g," ").replace(/[^a-z0-9 ]/g,"").trim();
@@ -87,7 +87,7 @@ function PriceHistoryChart({ product, retailer }){
   );
 }
 
-// â”€â”€â”€ PRODUCT REVIEWS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── PRODUCT REVIEWS ─────────────────────────────────────────────
 // Fetches /reviews/<slug>.json (per-product file from split-reviews.js)
 // and renders up to 5 customer reviews. Renders nothing if none exist.
 function ReviewStarRow({ rating }){
@@ -97,11 +97,11 @@ function ReviewStarRow({ rating }){
   </span>;
 }
 
-// reviewSlug â€” finds a product's review file. Mirrors fetch-bestbuy-reviews.js
+// reviewSlug — finds a product's review file. Mirrors fetch-bestbuy-reviews.js
 // reviewKey() + split-reviews.js slug(): ASIN-first, else name-based.
 function reviewSlug(p){
   if(!p) return "";
-  // model token â€” MUST match fetch-bestbuy-reviews.js modelToken()
+  // model token — MUST match fetch-bestbuy-reviews.js modelToken()
   const N = String(p.n||"").toUpperCase();
   const pats = [
     /\bRTX\s?\d{4}\s?(?:TI|SUPER)?\b/,
@@ -131,7 +131,7 @@ function reviewSlug(p){
   return n ? safe(n) : "";
 }
 
-// ReviewCard â€” single review with collapsible comment text.
+// ReviewCard — single review with collapsible comment text.
 // Collapsed: clamped to 4 lines. A "Read more" toggle appears only when
 // the text actually overflows the clamp.
 function ReviewCard({ r }){
@@ -196,7 +196,7 @@ function ProductReviews({ product }){
     return () => { cancelled = true; };
   }, [product && product.id]);
 
-  // Render nothing while loading or when there are no reviews â€” keeps the
+  // Render nothing while loading or when there are no reviews — keeps the
   // spec area clean for the ~95% of products without Best Buy reviews.
   if (state.status !== "ok" || !state.reviews) return null;
 
@@ -219,7 +219,7 @@ function ProductReviews({ product }){
 
 function cleanProductName(p){
   if(!p || !p.n) return '';
-  // â”€â”€ CPU name cleaner â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // ── CPU name cleaner ──────────────────────────────────────────
   if(p.c === 'CPU'){
     const cn = p.n.replace(/[\u2122\u00AE\u00A9]/g,' ');
     let c;
@@ -271,12 +271,12 @@ function cleanProductName(p){
     // AMD Athlon
     if((c = cn.match(/\bAthlon\s*(II\s*)?(X\d\s*)?(\d{3,4}[A-Z]{0,2})\b/i)))
       return 'AMD Athlon '+(c[1]?'II ':'')+(c[2]?c[2].toUpperCase().replace(/\s+/g,'')+' ':'')+c[3].toUpperCase();
-    // Couldn't parse â€” keep original
+    // Couldn't parse — keep original
     return p.n;
   }
   if(p.c !== 'GPU') return p.n;
-  const name = p.n.replace(/[â„¢Â®Â©]/g,'');
-  const brand = (p.b || '').replace(/[â„¢Â®Â©]/g,'');
+  const name = p.n.replace(/[™®©]/g,'');
+  const brand = (p.b || '').replace(/[™®©]/g,'');
   let model = null, m;
   if((m = name.match(/\b(RTX|GTX)\s*(\d{3,4})\s*(Ti\s*Super|Super|Ti|XT|XTX|GRE)?\b/i))){
     const variant = m[3] ? ' ' + m[3].replace(/\s+/g,' ').replace(/ti/i,'Ti').replace(/super/i,'Super') : '';
@@ -331,7 +331,7 @@ import ReviewStars from "./components/ReviewStars";
 import { CategoryBrowse } from './CategoryBrowse.jsx';
 import UpgradePage from "./UpgradePage.jsx";
 
-/* â•â•â• API CLIENT â•â•â• */
+/* ═══ API CLIENT ═══ */
 const API_BASE = "http://localhost:3001/api";
 
 async function apiFetch(path, body) {
@@ -349,44 +349,44 @@ async function apiFetch(path, body) {
   }
 }
 
-/* â•â•â• DATA â•â•â• */
+/* ═══ DATA ═══ */
 const CAT={
   // Core
-  Case:{icon:"ðŸ“¦",label:"Cases",singular:"Case",desc:"Towers & SFF cases",cols:["ff","tower","tg","maxGPU","fans_inc"],filters:{ff:{label:"Type",type:"check"},mobo:{label:"Mobo Support",type:"check",extract:p=>Array.isArray(p.mobo)?p.mobo:(p.mobo?String(p.mobo).split(",").map(s=>s.trim()).filter(Boolean):[])},maxGPU:{label:"Max GPU Length",type:"range",unit:"mm"},maxCooler:{label:"Max Cooler Height",type:"range",unit:"mm"},rads:{label:"AIO/Radiator Support",type:"check",extract:p=>{const arr=Array.isArray(p.rads)?p.rads:[];if(!arr.length)return"None";const max=Math.max(...arr);return"Up to "+max+"mm"}},fans_inc:{label:"Included Fans",type:"check"},tg:{label:"Clear Side Panel",type:"bool"},usb_c:{label:"Front USB-C",type:"bool"}}},
-  CPU:{icon:"ðŸ”´",label:"Processors",singular:"CPU",desc:"Desktop CPUs",cols:["cores","socket","tdp","bench"],filters:{socket:{label:"Socket",type:"check"},cores:{label:"Core Count",type:"check"},tdp:{label:"TDP",type:"range",unit:"W"},arch:{label:"Architecture",type:"check"},memType:{label:"Memory Type",type:"check"},igpu:{label:"Integrated Graphics",type:"bool"},vcache:{label:"3D V-Cache",type:"bool"},serverCPU:{label:"Server CPU",type:"bool"}}},
-  CPUCooler:{icon:"â„ï¸",label:"CPU Coolers",singular:"CPU Cooler",desc:"Air & AIO liquid coolers",cols:["coolerType","tdp_rating","cfm","noise"],filters:{coolerType:{label:"Type",type:"check"},tdp_rating:{label:"TDP Rating",type:"range",unit:"W"},cfm:{label:"Airflow (CFM)",type:"range"},noise:{label:"Noise Level",type:"range",unit:"dBA"},radSize:{label:"Radiator Size",type:"check"},fans:{label:"Fan Count",type:"check"}}},
-  Motherboard:{icon:"ðŸŸ¡",label:"Motherboards",singular:"Motherboard",desc:"ATX, mATX & ITX boards",cols:["socket","ff","chipset","wifi"],filters:{socket:{label:"Socket",type:"check"},chipset:{label:"Chipset",type:"check"},ff:{label:"Form Factor",type:"check"},memType:{label:"Memory Type",type:"check"},memSlots:{label:"Memory Slots",type:"check"},m2Slots:{label:"M.2 Slots",type:"check"},wifi:{label:"WiFi",type:"check"},usb_c:{label:"USB-C",type:"bool"}}},
-  RAM:{icon:"âš¡",label:"Memory",singular:"RAM Kit",desc:"DDR5 & DDR4 kits",cols:["memType","cap","sticks","speed","cl"],filters:{memType:{label:"Type",type:"check"},formFactor:{label:"Form Factor",type:"check"},cap:{label:"Total Capacity",type:"check"},sticks:{label:"Kit (Sticks)",type:"check"},speed:{label:"Speed (MHz)",type:"check"},cl:{label:"CAS Latency",type:"check"},ecc:{label:"ECC",type:"bool"},rgb:{label:"RGB",type:"bool"}}},
-  GPU:{icon:"ðŸ’š",label:"Video Cards",singular:"Graphics Card",desc:"Gaming & workstation GPUs",cols:["tdp","length","bench"],filters:{vram:{label:"VRAM (GB)",type:"check"},memType:{label:"Memory Type",type:"check"},tdp:{label:"TDP",type:"range",unit:"W"},length:{label:"Card Length",type:"range",unit:"mm"},slots:{label:"Slot Width",type:"check"},pwr:{label:"Power Connector",type:"check"},segment:{label:"Use Case",type:"check"},arch:{label:"Architecture",type:"check"},pcie:{label:"PCIe Version",type:"check"}}},
-  Storage:{icon:"ðŸ’¾",label:"Storage",singular:"Drive",desc:"NVMe SSDs, SATA SSDs & HDDs",cols:["storageType","cap","seq_r"],multi:true,maxQty:6,filters:{storageType:{label:"Type",type:"check"},interface:{label:"Interface",type:"check"},pcie:{label:"PCIe Gen",type:"check"},cap:{label:"Capacity",type:"check"},ff:{label:"Form Factor",type:"check"},dram:{label:"DRAM Cache",type:"bool"}}},
-  PSU:{icon:"ðŸ”Œ",label:"Power Supplies",singular:"PSU",desc:"Modular & semi-modular",cols:["watts","eff","modular","color"],filters:{watts:{label:"Wattage",type:"check"},eff:{label:"Rating",type:"check"},modular:{label:"Modularity",type:"check"},ff:{label:"Form Factor",type:"check"},color:{label:"Color",type:"check"},rgb:{label:"RGB",type:"bool"},atx3:{label:"ATX 3.0",type:"bool"}}},
+  Case:{icon:"📦",label:"Cases",singular:"Case",desc:"Towers & SFF cases",cols:["ff","tower","tg","maxGPU","fans_inc"],filters:{ff:{label:"Type",type:"check"},mobo:{label:"Mobo Support",type:"check",extract:p=>Array.isArray(p.mobo)?p.mobo:(p.mobo?String(p.mobo).split(",").map(s=>s.trim()).filter(Boolean):[])},maxGPU:{label:"Max GPU Length",type:"range",unit:"mm"},maxCooler:{label:"Max Cooler Height",type:"range",unit:"mm"},rads:{label:"AIO/Radiator Support",type:"check",extract:p=>{const arr=Array.isArray(p.rads)?p.rads:[];if(!arr.length)return"None";const max=Math.max(...arr);return"Up to "+max+"mm"}},fans_inc:{label:"Included Fans",type:"check"},tg:{label:"Clear Side Panel",type:"bool"},usb_c:{label:"Front USB-C",type:"bool"}}},
+  CPU:{icon:"🔴",label:"Processors",singular:"CPU",desc:"Desktop CPUs",cols:["cores","socket","tdp","bench"],filters:{socket:{label:"Socket",type:"check"},cores:{label:"Core Count",type:"check"},tdp:{label:"TDP",type:"range",unit:"W"},arch:{label:"Architecture",type:"check"},memType:{label:"Memory Type",type:"check"},igpu:{label:"Integrated Graphics",type:"bool"},vcache:{label:"3D V-Cache",type:"bool"},serverCPU:{label:"Server CPU",type:"bool"}}},
+  CPUCooler:{icon:"❄️",label:"CPU Coolers",singular:"CPU Cooler",desc:"Air & AIO liquid coolers",cols:["coolerType","tdp_rating","cfm","noise"],filters:{coolerType:{label:"Type",type:"check"},tdp_rating:{label:"TDP Rating",type:"range",unit:"W"},cfm:{label:"Airflow (CFM)",type:"range"},noise:{label:"Noise Level",type:"range",unit:"dBA"},radSize:{label:"Radiator Size",type:"check"},fans:{label:"Fan Count",type:"check"}}},
+  Motherboard:{icon:"🟡",label:"Motherboards",singular:"Motherboard",desc:"ATX, mATX & ITX boards",cols:["socket","ff","chipset","wifi"],filters:{socket:{label:"Socket",type:"check"},chipset:{label:"Chipset",type:"check"},ff:{label:"Form Factor",type:"check"},memType:{label:"Memory Type",type:"check"},memSlots:{label:"Memory Slots",type:"check"},m2Slots:{label:"M.2 Slots",type:"check"},wifi:{label:"WiFi",type:"check"},usb_c:{label:"USB-C",type:"bool"}}},
+  RAM:{icon:"⚡",label:"Memory",singular:"RAM Kit",desc:"DDR5 & DDR4 kits",cols:["memType","cap","sticks","speed","cl"],filters:{memType:{label:"Type",type:"check"},formFactor:{label:"Form Factor",type:"check"},cap:{label:"Total Capacity",type:"check"},sticks:{label:"Kit (Sticks)",type:"check"},speed:{label:"Speed (MHz)",type:"check"},cl:{label:"CAS Latency",type:"check"},ecc:{label:"ECC",type:"bool"},rgb:{label:"RGB",type:"bool"}}},
+  GPU:{icon:"💚",label:"Video Cards",singular:"Graphics Card",desc:"Gaming & workstation GPUs",cols:["tdp","length","bench"],filters:{vram:{label:"VRAM (GB)",type:"check"},memType:{label:"Memory Type",type:"check"},tdp:{label:"TDP",type:"range",unit:"W"},length:{label:"Card Length",type:"range",unit:"mm"},slots:{label:"Slot Width",type:"check"},pwr:{label:"Power Connector",type:"check"},segment:{label:"Use Case",type:"check"},arch:{label:"Architecture",type:"check"},pcie:{label:"PCIe Version",type:"check"}}},
+  Storage:{icon:"💾",label:"Storage",singular:"Drive",desc:"NVMe SSDs, SATA SSDs & HDDs",cols:["storageType","cap","seq_r"],multi:true,maxQty:6,filters:{storageType:{label:"Type",type:"check"},interface:{label:"Interface",type:"check"},pcie:{label:"PCIe Gen",type:"check"},cap:{label:"Capacity",type:"check"},ff:{label:"Form Factor",type:"check"},dram:{label:"DRAM Cache",type:"bool"}}},
+  PSU:{icon:"🔌",label:"Power Supplies",singular:"PSU",desc:"Modular & semi-modular",cols:["watts","eff","modular","color"],filters:{watts:{label:"Wattage",type:"check"},eff:{label:"Rating",type:"check"},modular:{label:"Modularity",type:"check"},ff:{label:"Form Factor",type:"check"},color:{label:"Color",type:"check"},rgb:{label:"RGB",type:"bool"},atx3:{label:"ATX 3.0",type:"bool"}}},
   // Cooling
-  CaseFan:{icon:"ðŸŒ€",label:"Case Fans",singular:"Case Fan",desc:"120mm & 140mm case fans",cols:["size","cfm","noise","color","rgb","rgbType","rgbConnector"],multi:true,maxQty:10,filters:{size:{label:"Size (mm)",type:"check"},color:{label:"Color",type:"check"},rgb:{label:"RGB",type:"bool"},rgbType:{label:"RGB Type",type:"check"},rgbConnector:{label:"RGB Connector",type:"check"},pack:{label:"Pack Size",type:"check"},connector:{label:"Fan Connector",type:"check"}}},
+  CaseFan:{icon:"🌀",label:"Case Fans",singular:"Case Fan",desc:"120mm & 140mm case fans",cols:["size","cfm","noise","color","rgb","rgbType","rgbConnector"],multi:true,maxQty:10,filters:{size:{label:"Size (mm)",type:"check"},color:{label:"Color",type:"check"},rgb:{label:"RGB",type:"bool"},rgbType:{label:"RGB Type",type:"check"},rgbConnector:{label:"RGB Connector",type:"check"},pack:{label:"Pack Size",type:"check"},connector:{label:"Fan Connector",type:"check"}}},
   // Expansion
-  SoundCard:{icon:"ðŸ”Š",label:"Sound Cards",singular:"Sound Card",desc:"PCIe sound cards",cols:["channels","snr","sampleRate","bitDepth","hasAmp"],filters:{channels:{label:"Channels",type:"check"},snr:{label:"SNR (dB)",type:"range",unit:"dB"},sampleRate:{label:"Sample Rate",type:"check"},bitDepth:{label:"Bit Depth",type:"check"},hasAmp:{label:"Headphone Amp",type:"bool"},impedance:{label:"Max Impedance",type:"range",unit:"Î©"},formFactor:{label:"Form Factor",type:"check"},digitalOut:{label:"Digital Output",type:"bool"}}},
-  EthernetCard:{icon:"ðŸŒ",label:"Ethernet Adapters",singular:"Ethernet Card",desc:"2.5G/5G/10GbE PCIe network cards",cols:["lanSpeed","ports","chipset","pcieLane","profile"],filters:{lanSpeed:{label:"Speed",type:"check"},ports:{label:"Port Count",type:"check"},chipset:{label:"Chipset",type:"check"},pcieLane:{label:"PCIe Lane",type:"check"},profile:{label:"Profile",type:"check"},wol:{label:"Wake-on-LAN",type:"bool"},vlan:{label:"VLAN Support",type:"bool"},pxe:{label:"PXE Boot",type:"bool"}}},
-  WiFiCard:{icon:"ðŸ“¶",label:"WiFi Adapters",singular:"WiFi Card",desc:"WiFi 6E/7 PCIe cards",cols:["wifiStandard","maxSpeed","bt","antennas","pcieLane"],filters:{wifiStandard:{label:"WiFi Standard",type:"check"},bt:{label:"Bluetooth",type:"check"},antennas:{label:"Antennas",type:"check"},pcieLane:{label:"PCIe Lane",type:"check"},band:{label:"Band",type:"check"},heatsink:{label:"Heatsink",type:"bool"}}},
-  OpticalDrive:{icon:"ðŸ’¿",label:"Optical Drives",singular:"Optical Drive",desc:"Blu-ray & DVD drives",cols:["driveType","readSpeed","writeSpeed"],filters:{driveType:{label:"Type",type:"check"},interface:{label:"Interface",type:"check"}}},
-  ExtensionCables:{icon:"ðŸ”—",label:"Extension Cables",singular:"Cable Kit",desc:"Sleeved PSU extensions",cols:["cableType","cableLength"],filters:{cableType:{label:"Type",type:"check"}},multi:true,maxQty:4},
+  SoundCard:{icon:"🔊",label:"Sound Cards",singular:"Sound Card",desc:"PCIe sound cards",cols:["channels","snr","sampleRate","bitDepth","hasAmp"],filters:{channels:{label:"Channels",type:"check"},snr:{label:"SNR (dB)",type:"range",unit:"dB"},sampleRate:{label:"Sample Rate",type:"check"},bitDepth:{label:"Bit Depth",type:"check"},hasAmp:{label:"Headphone Amp",type:"bool"},impedance:{label:"Max Impedance",type:"range",unit:"Ω"},formFactor:{label:"Form Factor",type:"check"},digitalOut:{label:"Digital Output",type:"bool"}}},
+  EthernetCard:{icon:"🌐",label:"Ethernet Adapters",singular:"Ethernet Card",desc:"2.5G/5G/10GbE PCIe network cards",cols:["lanSpeed","ports","chipset","pcieLane","profile"],filters:{lanSpeed:{label:"Speed",type:"check"},ports:{label:"Port Count",type:"check"},chipset:{label:"Chipset",type:"check"},pcieLane:{label:"PCIe Lane",type:"check"},profile:{label:"Profile",type:"check"},wol:{label:"Wake-on-LAN",type:"bool"},vlan:{label:"VLAN Support",type:"bool"},pxe:{label:"PXE Boot",type:"bool"}}},
+  WiFiCard:{icon:"📶",label:"WiFi Adapters",singular:"WiFi Card",desc:"WiFi 6E/7 PCIe cards",cols:["wifiStandard","maxSpeed","bt","antennas","pcieLane"],filters:{wifiStandard:{label:"WiFi Standard",type:"check"},bt:{label:"Bluetooth",type:"check"},antennas:{label:"Antennas",type:"check"},pcieLane:{label:"PCIe Lane",type:"check"},band:{label:"Band",type:"check"},heatsink:{label:"Heatsink",type:"bool"}}},
+  OpticalDrive:{icon:"💿",label:"Optical Drives",singular:"Optical Drive",desc:"Blu-ray & DVD drives",cols:["driveType","readSpeed","writeSpeed"],filters:{driveType:{label:"Type",type:"check"},interface:{label:"Interface",type:"check"}}},
+  ExtensionCables:{icon:"🔗",label:"Extension Cables",singular:"Cable Kit",desc:"Sleeved PSU extensions",cols:["cableType","cableLength"],filters:{cableType:{label:"Type",type:"check"}},multi:true,maxQty:4},
   
-  InternalDisplay:{icon:"ðŸ–¥ï¸",label:"Internal Displays",singular:"Display",desc:"LCD/IPS screens for inside your PC case",cols:["size","resolution","connection"],filters:{size:{label:"Screen Size",type:"check"},connection:{label:"Connection",type:"check"},panelType:{label:"Panel",type:"check"},ecosystem:{label:"Ecosystem",type:"check"},touch:{label:"Touchscreen",type:"bool"}}},
-OS:{icon:"ðŸªŸ",label:"Operating Systems",singular:"OS",desc:"Windows & Linux",cols:[]},
+  InternalDisplay:{icon:"🖥️",label:"Internal Displays",singular:"Display",desc:"LCD/IPS screens for inside your PC case",cols:["size","resolution","connection"],filters:{size:{label:"Screen Size",type:"check"},connection:{label:"Connection",type:"check"},panelType:{label:"Panel",type:"check"},ecosystem:{label:"Ecosystem",type:"check"},touch:{label:"Touchscreen",type:"bool"}}},
+OS:{icon:"🪟",label:"Operating Systems",singular:"OS",desc:"Windows & Linux",cols:[]},
   // Peripherals
-  Monitor:{icon:"ðŸ–¥ï¸",label:"Monitors",singular:"Monitor",desc:"Gaming & productivity",cols:["screenSize","res","refresh","panel"],multi:true,maxQty:4,filters:{screenSize:{label:"Screen Size",type:"check"},res:{label:"Resolution",type:"check"},refresh:{label:"Refresh Rate",type:"check"},panel:{label:"Panel Type",type:"check"},sync:{label:"Adaptive Sync",type:"check"},hdr:{label:"HDR",type:"check"},response:{label:"Response Time",type:"range",unit:"ms"}}},
-  Keyboard:{icon:"âŒ¨ï¸",label:"Keyboards",singular:"Keyboard",desc:"Mechanical & membrane",cols:["switches","layout","wireless"],filters:{switches:{label:"Switch Type",type:"check"},layout:{label:"Layout",type:"check"},wireless:{label:"Wireless",type:"bool"},rgb:{label:"RGB",type:"bool"}}},
-  Mouse:{icon:"ðŸ–±ï¸",label:"Mice",singular:"Mouse",desc:"Gaming & productivity mice",cols:["sensor","dpi","weight"],filters:{mouseType:{label:"Connectivity",type:"check"},weight:{label:"Weight",type:"range",unit:"g"},dpi:{label:"Max DPI",type:"range"}}},
-  Headset:{icon:"ðŸŽ§",label:"Headsets",singular:"Headset",desc:"Gaming & audiophile",cols:["hsType","driver","mic"],filters:{hsType:{label:"Connectivity",type:"check"},mic:{label:"Microphone",type:"bool"},anc:{label:"ANC",type:"bool"}}},
-  Webcam:{icon:"ðŸ“·",label:"Webcams",singular:"Webcam",desc:"4K & 1080p cameras",cols:["resolution","fps","autofocus"],filters:{resolution:{label:"Resolution",type:"check"},autofocus:{label:"Autofocus",type:"bool"}}},
-  Microphone:{icon:"ðŸŽ™ï¸",label:"Microphones",singular:"Microphone",desc:"USB & XLR mics",cols:["micType","pattern","sampleRate"],filters:{micType:{label:"Connection",type:"check"},pattern:{label:"Polar Pattern",type:"check"}}},
-  MousePad:{icon:"ðŸ–¼ï¸",label:"Mouse Pads",singular:"Mouse Pad",desc:"Cloth & hard surface",cols:["surface","padSize"],filters:{surface:{label:"Surface",type:"check"},padSize:{label:"Size",type:"check"}}},
-  Chair:{icon:"ðŸ’º",label:"Chairs",singular:"Chair",desc:"Gaming & ergonomic chairs",cols:[]},
-  Desk:{icon:"ðŸ—„ï¸",label:"Desks",singular:"Desk",desc:"Standing & fixed desks",cols:[]},
+  Monitor:{icon:"🖥️",label:"Monitors",singular:"Monitor",desc:"Gaming & productivity",cols:["screenSize","res","refresh","panel"],multi:true,maxQty:4,filters:{screenSize:{label:"Screen Size",type:"check"},res:{label:"Resolution",type:"check"},refresh:{label:"Refresh Rate",type:"check"},panel:{label:"Panel Type",type:"check"},sync:{label:"Adaptive Sync",type:"check"},hdr:{label:"HDR",type:"check"},response:{label:"Response Time",type:"range",unit:"ms"}}},
+  Keyboard:{icon:"⌨️",label:"Keyboards",singular:"Keyboard",desc:"Mechanical & membrane",cols:["switches","layout","wireless"],filters:{switches:{label:"Switch Type",type:"check"},layout:{label:"Layout",type:"check"},wireless:{label:"Wireless",type:"bool"},rgb:{label:"RGB",type:"bool"}}},
+  Mouse:{icon:"🖱️",label:"Mice",singular:"Mouse",desc:"Gaming & productivity mice",cols:["sensor","dpi","weight"],filters:{mouseType:{label:"Connectivity",type:"check"},weight:{label:"Weight",type:"range",unit:"g"},dpi:{label:"Max DPI",type:"range"}}},
+  Headset:{icon:"🎧",label:"Headsets",singular:"Headset",desc:"Gaming & audiophile",cols:["hsType","driver","mic"],filters:{hsType:{label:"Connectivity",type:"check"},mic:{label:"Microphone",type:"bool"},anc:{label:"ANC",type:"bool"}}},
+  Webcam:{icon:"📷",label:"Webcams",singular:"Webcam",desc:"4K & 1080p cameras",cols:["resolution","fps","autofocus"],filters:{resolution:{label:"Resolution",type:"check"},autofocus:{label:"Autofocus",type:"bool"}}},
+  Microphone:{icon:"🎙️",label:"Microphones",singular:"Microphone",desc:"USB & XLR mics",cols:["micType","pattern","sampleRate"],filters:{micType:{label:"Connection",type:"check"},pattern:{label:"Polar Pattern",type:"check"}}},
+  MousePad:{icon:"🖼️",label:"Mouse Pads",singular:"Mouse Pad",desc:"Cloth & hard surface",cols:["surface","padSize"],filters:{surface:{label:"Surface",type:"check"},padSize:{label:"Size",type:"check"}}},
+  Chair:{icon:"💺",label:"Chairs",singular:"Chair",desc:"Gaming & ergonomic chairs",cols:[]},
+  Desk:{icon:"🗄️",label:"Desks",singular:"Desk",desc:"Standing & fixed desks",cols:[]},
   // Accessories
-  ThermalPaste:{icon:"ðŸ§´",label:"Thermal Paste",singular:"Thermal Paste",desc:"CPU thermal compounds",cols:[]},
-  ExternalStorage:{icon:"ðŸ’½",label:"External Storage",singular:"External Drive",desc:"Portable SSDs & HDDs",cols:[],multi:true,maxQty:3},
-  Antivirus:{icon:"ðŸ›¡ï¸",label:"Antivirus",singular:"Antivirus",desc:"Security software",cols:[]},
-  ExternalOptical:{icon:"ðŸ“€",label:"External Optical",singular:"External Optical Drive",desc:"USB DVD/Blu-ray drives",cols:[]},
-  UPS:{icon:"ðŸ”‹",label:"UPS Systems",singular:"UPS",desc:"Battery backup systems",cols:[]},
+  ThermalPaste:{icon:"🧴",label:"Thermal Paste",singular:"Thermal Paste",desc:"CPU thermal compounds",cols:[]},
+  ExternalStorage:{icon:"💽",label:"External Storage",singular:"External Drive",desc:"Portable SSDs & HDDs",cols:[],multi:true,maxQty:3},
+  Antivirus:{icon:"🛡️",label:"Antivirus",singular:"Antivirus",desc:"Security software",cols:[]},
+  ExternalOptical:{icon:"📀",label:"External Optical",singular:"External Optical Drive",desc:"USB DVD/Blu-ray drives",cols:[]},
+  UPS:{icon:"🔋",label:"UPS Systems",singular:"UPS",desc:"Battery backup systems",cols:[]},
 };
 const CATS=Object.keys(CAT);
 // Lucide icon component map for categories (replaces emoji icons)
@@ -437,11 +437,11 @@ const BUILDER_SECTIONS=[
   {id:"accessories",label:"Accessories",icon:"accessories",cats:ACCESSORY_CATS},
 ];
 const SL={cores:"Cores/Threads",socket:"Socket",tdp:"TDP",bench:"Score",vram:"VRAM",cap:"Capacity",speed:"Speed",ff:"Form Factor",wifi:"WiFi",storageType:"Type",watts:"Watts",eff:"Rating",modular:"Modular",panel:"Panel",res:"Resolution",refresh:"Refresh",screenSize:"Screen",switches:"Switches",layout:"Layout",wireless:"Wireless",baseClock:"Base Clock",boostClock:"Boost Clock",threads:"Threads",length:"Length",pwr:"Power",seq_r:"Read",seq_w:"Write",cl:"CAS Latency",ramType:"Type",chipset:"Chipset",coolerType:"Type",noise:"Noise",tdp_rating:"TDP Rating",fans_inc:"Fans Included",maxGPU:"Max GPU Length",maxCooler:"Max Cooler",cfm:"Airflow",size:"Size",sensor:"Sensor",dpi:"DPI",weight:"Weight",driver:"Driver",mic:"Mic",hsType:"Type",mouseType:"Type",segment:"Use Case",arch:"Architecture",pcie:"PCIe",tg:"Side Panel",usb_c:"USB-C",mobo:"Mobo Support",drive25:"2.5in Bays",drive35:"3.5in Bays",memType:"Memory",memSlots:"RAM Slots",maxMem:"Max RAM",m2Slots:"M.2 Slots",lan:"Ethernet",ecc:"ECC",rgb:"RGB",rgbType:"RGB Type",rgbConnector:"RGB Connector",color:"Color",igpu:"iGPU",igpuName:"iGPU Name",vcache:"V-Cache",serverCPU:"Server",pCores:"P-Cores",eCores:"E-Cores",l3:"L3 Cache",nm:"Process",bus:"Bus Width",slots:"Slot Width",interface:"Interface",dram:"DRAM Cache",tlc:"NAND Type",pack:"Pack",atx3:"ATX 3.0",radSize:"Radiator",rads:"AIO Support",height:"Height",fans:"Fans",fanSize:"Fan Size",response:"Response",sync:"Adaptive Sync",hdr:"HDR",curved:"Curved",hotswap:"Hot-Swap",pollingRate:"Polling Rate",shape:"Grip",anc:"ANC",surroundSound:"Surround",openBack:"Open Back",autofocus:"Autofocus",fov:"FOV",pattern:"Pattern",sampleRate:"Sample Rate",bitDepth:"Bit Depth",connection:"Connection",connector:"Fan Connector",channels:"Channels",snr:"SNR",hasAmp:"Headphone Amp",lanSpeed:"Speed",ports:"Ports",wifiStandard:"WiFi",bt:"Bluetooth",driveType:"Drive Type",readSpeed:"Read Speed",writeSpeed:"Write Speed",memSpeed:"Memory Speed*",audio:"Audio",sticks:"Sticks",voltage:"Voltage",cuda:"CUDA Cores",boost:"Boost Clock",tier:"Suggested Use",sp:"Stream Processors",xeCores:"Xe Cores",maxMemSpeed:"Max RAM Speed",sata:"SATA Ports",pciSlots:"PCIe Slots",impedance:"Max Impedance",formFactor:"Form Factor",digitalOut:"Digital Output",pcieLane:"PCIe Lane",profile:"Profile",wol:"Wake-on-LAN",vlan:"VLAN",pxe:"PXE Boot",maxSpeed:"Max Speed",antennas:"Antennas",band:"Band",heatsink:"Heatsink",dacChip:"DAC Chip",outputPower:"Output Power",upc:"UPC",mpn:"Model #",model:"Model",generation:"Generation",vramType:"VRAM Type",dimensions:"Dimensions",form:"Form",tower:"Tower",series:"Series",compatibility:"Compatibility",contrast:"Contrast",rpm:"RPM"};
-const SF={cores:(v,p)=>p&&p.threads?v+"C/"+p.threads+"T":v+"C",sticks:(v,p)=>{if(!v)return v;const total=p&&(p.cap||p.capacity);if(total&&v>0){const per=Math.round(total/v);return v+"x"+per+"GB";}return v+"x";},tdp:v=>v+"W",vram:v=>typeof v==="number"?v+"GB":v,cap:v=>typeof v==="number"?(v>=1000?(Math.round(v/100)/10).toString().replace(/\.0$/,"")+"TB":v+"GB"):v,speed:v=>v+"MHz",watts:v=>v+"W",wifi:v=>v||"None",refresh:v=>v+"Hz",screenSize:v=>v+'"',bench:v=>v+"%",baseClock:v=>v+"GHz",boostClock:v=>v+"GHz",length:v=>v+"mm",seq_r:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",seq_w:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",noise:v=>{const n=typeof v==="number"?v:parseFloat(v);if(isNaN(n))return v;const ref=n<=15?"Near silent":n<=20?"Whisper quiet":n<=25?"Library quiet":n<=30?"Quiet room":n<=35?"Light hum":n<=40?"Noticeable":"Loud";return n+"dBA\n"+ref;},tdp_rating:(v,p)=>p&&p.tdp_rating_est?"~"+v+"W":v+"W",maxGPU:v=>v+"mm",maxCooler:v=>v+"mm",cfm:v=>typeof v==="number"?v.toFixed(1)+" CFM":v,dpi:v=>v>=1000?(v/1000)+"K":v,weight:v=>{if(v==null)return"â€”";if(typeof v==="number")return v+"g";const s=String(v);let m=s.match(/([\d.]+)\s*(kilogram|kg)/i);if(m)return(parseFloat(m[1])*2.20462).toFixed(1)+" lbs";m=s.match(/([\d.]+)\s*(gram|g)\b/i);if(m)return(parseFloat(m[1])/453.592).toFixed(2)+" lbs";m=s.match(/([\d.]+)\s*(pound|lb|lbs)/i);if(m)return parseFloat(m[1]).toFixed(1)+" lbs";m=s.match(/([\d.]+)\s*(ounce|oz)/i);if(m)return(parseFloat(m[1])/16).toFixed(2)+" lbs";return s;},cl:v=>"CL"+v,driver:v=>v+"mm",height:v=>v+"mm",voltage:v=>v+"V",boost:v=>v+"MHz",tier:v=>typeof v==="string"?v.charAt(0).toUpperCase()+v.slice(1):v,snr:v=>v+"dB",sampleRate:v=>v===0?"Analog":v+"kHz",lanSpeed:v=>v,tg:v=>v?"Yes":"No",usb_c:v=>v?"Yes":"No",ecc:v=>v?"Yes":"No",rgb:v=>v?"Yes":"No",igpu:v=>v?"Yes":"No",vcache:v=>v?"Yes":"No",serverCPU:v=>v?"Yes":"No",atx3:v=>v?"Yes":"No",dram:v=>v?"Yes":"No",wireless:v=>v?"Yes":"No",curved:v=>v?"Yes":"No",hotswap:v=>v?"Yes":"No",anc:v=>v?"Yes":"No",mic:v=>typeof v==="boolean"?(v?"Yes":"No"):v,hasAmp:v=>v?"Yes":"No",autofocus:v=>v?"Yes":"No",wol:v=>v?"Yes":"No",vlan:v=>v?"Yes":"No",pxe:v=>v?"Yes":"No",digitalOut:v=>v?"Yes":"No",heatsink:v=>v?"Yes":"No",pwm:v=>v?"Yes":"No",impedance:v=>v+"Î©",pcie:v=>String(v).startsWith("Gen")?v:"Gen"+v,fanSize:v=>typeof v==="number"?v+"mm":v,fans_inc:v=>v+(v===1?" fan":" fans"),socket:v=>typeof v==="string"?v.toUpperCase():v,chipset:v=>typeof v==="string"?v.toUpperCase():v,memType:v=>typeof v==="string"?v.toUpperCase():v,panel:v=>typeof v==="string"?v.toUpperCase():v,upc:v=>{if(!v)return"â€”";const list=String(v).split(",").map(x=>x.trim()).filter(Boolean);return list.length>1?list[0]+" (+"+(list.length-1)+")":list[0];},rads:v=>{if(!v)return"None";const sizes=String(v).split(",").map(s=>s.trim());const max=Math.max(...sizes.map(s=>parseInt(s)||0));return max>=360?"Up to 360mm":max>=280?"Up to 280mm":max>=240?"Up to 240mm":max>=120?"120mm only":"None";}};
-const fmt=(k,v,p)=>v==null?"â€”":(SF[k]?SF[k](v,p):String(v));
+const SF={cores:(v,p)=>p&&p.threads?v+"C/"+p.threads+"T":v+"C",sticks:(v,p)=>{if(!v)return v;const total=p&&(p.cap||p.capacity);if(total&&v>0){const per=Math.round(total/v);return v+"x"+per+"GB";}return v+"x";},tdp:v=>v+"W",vram:v=>typeof v==="number"?v+"GB":v,cap:v=>typeof v==="number"?(v>=1000?(Math.round(v/100)/10).toString().replace(/\.0$/,"")+"TB":v+"GB"):v,speed:v=>v+"MHz",watts:v=>v+"W",wifi:v=>v||"None",refresh:v=>v+"Hz",screenSize:v=>v+'"',bench:v=>v+"%",baseClock:v=>v+"GHz",boostClock:v=>v+"GHz",length:v=>v+"mm",seq_r:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",seq_w:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",noise:v=>{const n=typeof v==="number"?v:parseFloat(v);if(isNaN(n))return v;const ref=n<=15?"Near silent":n<=20?"Whisper quiet":n<=25?"Library quiet":n<=30?"Quiet room":n<=35?"Light hum":n<=40?"Noticeable":"Loud";return n+"dBA\n"+ref;},tdp_rating:(v,p)=>p&&p.tdp_rating_est?"~"+v+"W":v+"W",maxGPU:v=>v+"mm",maxCooler:v=>v+"mm",cfm:v=>typeof v==="number"?v.toFixed(1)+" CFM":v,dpi:v=>v>=1000?(v/1000)+"K":v,weight:v=>{if(v==null)return"—";if(typeof v==="number")return v+"g";const s=String(v);let m=s.match(/([\d.]+)\s*(kilogram|kg)/i);if(m)return(parseFloat(m[1])*2.20462).toFixed(1)+" lbs";m=s.match(/([\d.]+)\s*(gram|g)\b/i);if(m)return(parseFloat(m[1])/453.592).toFixed(2)+" lbs";m=s.match(/([\d.]+)\s*(pound|lb|lbs)/i);if(m)return parseFloat(m[1]).toFixed(1)+" lbs";m=s.match(/([\d.]+)\s*(ounce|oz)/i);if(m)return(parseFloat(m[1])/16).toFixed(2)+" lbs";return s;},cl:v=>"CL"+v,driver:v=>v+"mm",height:v=>v+"mm",voltage:v=>v+"V",boost:v=>v+"MHz",tier:v=>typeof v==="string"?v.charAt(0).toUpperCase()+v.slice(1):v,snr:v=>v+"dB",sampleRate:v=>v===0?"Analog":v+"kHz",lanSpeed:v=>v,tg:v=>v?"Yes":"No",usb_c:v=>v?"Yes":"No",ecc:v=>v?"Yes":"No",rgb:v=>v?"Yes":"No",igpu:v=>v?"Yes":"No",vcache:v=>v?"Yes":"No",serverCPU:v=>v?"Yes":"No",atx3:v=>v?"Yes":"No",dram:v=>v?"Yes":"No",wireless:v=>v?"Yes":"No",curved:v=>v?"Yes":"No",hotswap:v=>v?"Yes":"No",anc:v=>v?"Yes":"No",mic:v=>typeof v==="boolean"?(v?"Yes":"No"):v,hasAmp:v=>v?"Yes":"No",autofocus:v=>v?"Yes":"No",wol:v=>v?"Yes":"No",vlan:v=>v?"Yes":"No",pxe:v=>v?"Yes":"No",digitalOut:v=>v?"Yes":"No",heatsink:v=>v?"Yes":"No",pwm:v=>v?"Yes":"No",impedance:v=>v+"Ω",pcie:v=>String(v).startsWith("Gen")?v:"Gen"+v,fanSize:v=>typeof v==="number"?v+"mm":v,fans_inc:v=>v+(v===1?" fan":" fans"),socket:v=>typeof v==="string"?v.toUpperCase():v,chipset:v=>typeof v==="string"?v.toUpperCase():v,memType:v=>typeof v==="string"?v.toUpperCase():v,panel:v=>typeof v==="string"?v.toUpperCase():v,upc:v=>{if(!v)return"—";const list=String(v).split(",").map(x=>x.trim()).filter(Boolean);return list.length>1?list[0]+" (+"+(list.length-1)+")":list[0];},rads:v=>{if(!v)return"None";const sizes=String(v).split(",").map(s=>s.trim());const max=Math.max(...sizes.map(s=>parseInt(s)||0));return max>=360?"Up to 360mm":max>=280?"Up to 280mm":max>=240?"Up to 240mm":max>=120?"120mm only":"None";}};
+const fmt=(k,v,p)=>v==null?"—":(SF[k]?SF[k](v,p):String(v));
 
-// â”€â”€ Map old category names and make all parts available â”€â”€
-// Filter: Option A strict â€” hide products where all known retailers report inStock:false.
+// ── Map old category names and make all parts available ──
+// Filter: Option A strict — hide products where all known retailers report inStock:false.
 // Products with no `deals` object (legacy entries not yet processed by verify-asins.js)
 // remain visible so the catalog doesn't shrink during the migration period.
 // fp() below falls back to SEED_PARTS, so filtered products in existing community builds still render.
@@ -455,7 +455,7 @@ const P = SEED_PARTS
   .map(p => p.c === "Cooler" ? {...p, c: "CPUCooler"} : p)
   .filter(isAvailable);
 
-// â”€â”€ Price helpers â€” handles new multi-retailer deals structure â”€â”€
+// ── Price helpers — handles new multi-retailer deals structure ──
 const bestPrice = p => {
   if (!p.deals || typeof p.deals !== "object") return p.pr;
   const allRetailers = Object.keys(p.deals).filter(k => typeof p.deals[k] === "object" && p.deals[k].price);
@@ -548,7 +548,7 @@ function cleanDisplayName(p) {
 }
 // === END CLEAN DISPLAY NAME ===
 const fmtPrice = n => { if (n == null) return '0'; const r = Math.round(n * 100) / 100; return r % 1 === 0 ? String(r) : r.toFixed(2); };
-// Retailer key â†’ user-facing display name
+// Retailer key → user-facing display name
 const RETAILER_DISPLAY_NAMES = {
   amazon: "Amazon",
   bestbuy: "Best Buy",
@@ -574,7 +574,7 @@ const RETAILER_GROUP_MAP = {
 const marketplaceGroupOf = key => RETAILER_GROUP_MAP[key] || key;
 // Return all raw retailer keys that belong to a given group
 const expandMarketplaceGroup = group => Object.keys(RETAILER_GROUP_MAP).filter(k => RETAILER_GROUP_MAP[k] === group);
-// Condition mapping: deal field name â†’ product condition
+// Condition mapping: deal field name → product condition
 // New = unsuffixed retailer keys (amazon, bestbuy, newegg)
 // Suffixed variants map to their condition
 const CONDITIONS = [
@@ -587,7 +587,7 @@ const CONDITIONS = [
 function productConditions(p) {
   if (!p.deals || typeof p.deals !== "object") return [];
   const conds = new Set();
-  // Check product name first â€” if name says Renewed/Refurb/Used, that overrides default "new"
+  // Check product name first — if name says Renewed/Refurb/Used, that overrides default "new"
   const name = String(p.n || "");
   const nameIsUsed = /\b(used|pre[\-\s]?owned)\b/i.test(name);
   const nameIsRefurb = /\b(renewed|refurb(?:ished)?)\b/i.test(name);
@@ -598,7 +598,7 @@ function productConditions(p) {
     if (/_openbox$/i.test(key)) { conds.add("openbox"); continue; }
     if (/_refurb$/i.test(key)) { conds.add("refurb"); continue; }
     if (/_used$/i.test(key)) { conds.add("used"); continue; }
-    // Unsuffixed key â€” fall back to product name to detect condition
+    // Unsuffixed key — fall back to product name to detect condition
     if (nameIsUsed) conds.add("used");
     else if (nameIsRefurb) conds.add("refurb");
     else if (nameIsOpenBox) conds.add("openbox");
@@ -620,17 +620,17 @@ const retailers = p => {
     .sort((a,b) => a.price - b.price);
 };
 
-// â”€â”€ Global list of retailers tracked anywhere in the dataset â€” for N/A display on missing retailers â”€â”€
+// ── Global list of retailers tracked anywhere in the dataset — for N/A display on missing retailers ──
 const ALL_RETAILERS = [...new Set(SEED_PARTS.flatMap(p =>
   p.deals && typeof p.deals === "object"
     ? Object.keys(p.deals).filter(k => p.deals[k] && typeof p.deals[k] === "object" && (p.deals[k].price || p.deals[k].saleprice))
     : []
 ))].sort();
 
-// â”€â”€ Addon products (from seed peripherals + extra items for builder) â”€â”€
-// Old addon system removed â€” all categories now live in SEED_PARTS with proper category tags
+// ── Addon products (from seed peripherals + extra items for builder) ──
+// Old addon system removed — all categories now live in SEED_PARTS with proper category tags
 
-// â”€â”€ Community builds (using new seed IDs) â”€â”€
+// ── Community builds (using new seed IDs) ──
 const BUILDS=[
   {id:1,nm:"The Red Dragon",by:"PCMaster99",v:342,ids:[1001,2010,3002,4001,5001,6001,7003,8001],tags:["4K Gaming"],d:"Ryzen 9 + RTX 4090 ultimate AMD build"},
   {id:2,nm:"Budget Beast",by:"ValueHunter",v:891,ids:[1005,2024,3003,4005,5006,6008,7004,8004],tags:["Budget"],d:"Best gaming under $1000"},
@@ -639,10 +639,10 @@ const BUILDS=[
 ];
 
 const fp=id=>P.find(p=>p.id===id)||SEED_PARTS.find(p=>p.id===id);
-const ic=p=>CAT[p.c]?.icon||"ðŸ“¦";
+const ic=p=>CAT[p.c]?.icon||"📦";
 const uv=(cat,f,extract)=>{const items=P.filter(p=>p.c===cat&&p[f]!=null);let vals;if(extract){vals=[];for(const p of items){const v=extract(p);if(Array.isArray(v))vals.push(...v.filter(x=>x!=null&&x!==""));else if(v!=null&&v!=="")vals.push(v);}}else{vals=items.map(p=>String(p[f]));}return [...new Set(vals)].sort((a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true}));};
 
-/* â•â•â• RETAILER PRICE COMPARISON COMPONENT â•â•â• */
+/* ═══ RETAILER PRICE COMPARISON COMPONENT ═══ */
 function PriceCompare({part}) {
   const rr = retailers(part);
   if (rr.length <= 1) return null;
@@ -666,7 +666,7 @@ function PriceCompare({part}) {
   );
 }
 
-/* â•â•â• STYLES â•â•â• */
+/* ═══ STYLES ═══ */
 const css=`
 [data-theme="dark"]{--bg:#0f0e0b;--bg2:#13110d;--bg3:#17140f;--bg4:#1c1914;--bdr:#2a2620;--bdr2:#4a4338;--accent:#FF8A3D;--accent2:#FF8A3D40;--accent3:#FF8A3D14;--mint:#FF8A3D;--mint2:#FF8A3D40;--mint3:#FF8A3D14;--txt:#f0ece0;--dim:#8a8170;--mute:#7a7160;--amber:#FF8A3D;--rose:#e35d3d;--sky:#7a8aa6;--violet:#a399b8;--ff:'Inter',system-ui,sans-serif;--ff-display:'Fraunces',Georgia,serif;--mono:'Inter',system-ui,sans-serif;--navbg:#13110d;--heroGrad:none;--card:#13110d;--shadow:none;--shadowSm:none}
 [data-theme="light"]{--bg:#faf7ef;--bg2:#f4efe2;--bg3:#ede8db;--bg4:#e3decc;--bdr:#d8d0bd;--bdr2:#b5ad99;--accent:#cc5a17;--accent2:#cc5a1740;--accent3:#cc5a1710;--mint:#cc5a17;--mint2:#cc5a1740;--mint3:#cc5a1710;--txt:#1a1814;--dim:#6a614f;--mute:#8a8170;--amber:#cc5a17;--rose:#c43d23;--sky:#5a6a86;--violet:#7c6b96;--ff:'Inter',system-ui,sans-serif;--ff-display:'Fraunces',Georgia,serif;--mono:'Inter',system-ui,sans-serif;--navbg:#f4efe2;--heroGrad:none;--card:#f4efe2;--shadow:none;--shadowSm:none}
@@ -1103,19 +1103,19 @@ html, body, #root {
 }
 `;
 
-/* â•â•â• COMPONENTS â•â•â• */
-function Stars({r,s=11}){return <span style={{fontSize:s,color:"var(--amber)"}}>{"â˜…".repeat(Math.round(r))}<span style={{color:"var(--dim)",fontSize:s-1,marginLeft:2}}>{r}</span></span>}
+/* ═══ COMPONENTS ═══ */
+function Stars({r,s=11}){return <span style={{fontSize:s,color:"var(--amber)"}}>{"★".repeat(Math.round(r))}<span style={{color:"var(--dim)",fontSize:s-1,marginLeft:2}}>{r}</span></span>}
 function SBar({v,mx=100}){const c=v>=90?"var(--accent)":v>=70?"var(--sky)":"var(--dim)";return <div style={{display:"flex",alignItems:"center",gap:4}}><div style={{flex:1,height:3,background:"var(--bg4)",borderRadius:2,overflow:"hidden"}}><div style={{width:`${(v/mx)*100}%`,height:"100%",background:c,borderRadius:2}}/></div><span style={{fontFamily:"var(--mono)",fontSize:9,color:c,minWidth:24}}>{v}%</span></div>}
 function Tag({children,color="var(--accent)"}){return <span style={{padding:"2px 8px",borderRadius:6,fontSize:9,fontFamily:"var(--mono)",fontWeight:600,background:color+"18",color,border:`1px solid ${color}30`}}>{children}</span>}
 function Btn({children,primary,sm,color="var(--mint)",onClick,style={}}){return <button onClick={onClick} style={{padding:sm?"4px 10px":"9px 20px",borderRadius:7,fontSize:sm?10:12,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:primary?color:"transparent",color:primary?"var(--bg)":color,border:`1.5px solid ${primary?color:color+"55"}`,transition:"all .12s",...style}}>{children}</button>}
 
-/* â•â•â• FILTER COMPONENTS â•â•â• */
+/* ═══ FILTER COMPONENTS ═══ */
 function FG({label,children,open:defaultOpen=false}){
   const [isOpen,setIsOpen]=useState(defaultOpen);
   return <div style={{marginBottom:6}}>
     <button onClick={()=>setIsOpen(!isOpen)} style={{display:"flex",width:"100%",justifyContent:"space-between",alignItems:"center",padding:"6px 0",background:"none",border:"none",cursor:"pointer",borderBottom:"1px solid var(--bdr)"}}>
       <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",letterSpacing:1,fontWeight:600}}>{label}</span>
-      <span style={{fontSize:10,color:"var(--mute)"}}>{isOpen?"âˆ’":"+"}</span>
+      <span style={{fontSize:10,color:"var(--mute)"}}>{isOpen?"−":"+"}</span>
     </button>
     {isOpen&&<div style={{padding:"6px 0"}}>{children}</div>}
   </div>;
@@ -1135,12 +1135,12 @@ function FilterChips({chips}){
     <span style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--dim)",alignSelf:"center",letterSpacing:0.5,marginRight:4}}>FILTERS:</span>
     {chips.map((c,i)=><button key={i} onClick={c.onRemove} style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",borderRadius:14,padding:"4px 8px 4px 10px",fontFamily:"var(--ff)",fontSize:12,color:"var(--accent)",cursor:"pointer",fontWeight:600}}>
       <span>{c.label}</span>
-      <span style={{fontSize:14,lineHeight:1,opacity:0.8}}>Ã—</span>
+      <span style={{fontSize:14,lineHeight:1,opacity:0.8}}>×</span>
     </button>)}
   </div>;
 }
 
-/* â•â•â• SEARCHABLE SELECT DROPDOWN â•â•â• */
+/* ═══ SEARCHABLE SELECT DROPDOWN ═══ */
 function SearchSelect({value,onChange,options,placeholder="Search..."}){
   const [open,setOpen]=useState(false);
   const [query,setQuery]=useState("");
@@ -1163,7 +1163,7 @@ function SearchSelect({value,onChange,options,placeholder="Search..."}){
           style={{flex:1,background:"none",border:"none",outline:"none",fontSize:13,color:"var(--txt)",fontFamily:"var(--ff)",width:"100%"}}/>
         :<span style={{flex:1,fontSize:13,fontFamily:"var(--ff)",color:value?"var(--txt)":"var(--mute)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{selectedLabel||placeholder}</span>
       }
-      <span style={{fontSize:10,color:"var(--mute)",transition:"transform .2s",transform:open?"rotate(180deg)":"none",flexShrink:0}}>â–¾</span>
+      <span style={{fontSize:10,color:"var(--mute)",transition:"transform .2s",transform:open?"rotate(180deg)":"none",flexShrink:0}}>▾</span>
     </div>
     {open&&<div style={{position:"absolute",top:"calc(100% + 4px)",left:0,right:0,background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,boxShadow:"0 8px 32px rgba(0,0,0,.15)",zIndex:50,maxHeight:320,overflowY:"auto",padding:4}}>
       {filtered.length===0&&<div style={{padding:"12px 16px",fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)",textAlign:"center"}}>No results found</div>}
@@ -1173,14 +1173,14 @@ function SearchSelect({value,onChange,options,placeholder="Search..."}){
         onMouseLeave={e=>{if(value!==o.value)e.currentTarget.style.background="transparent";}}>
         <span style={{flex:1,whiteSpace:"normal",wordBreak:"break-word",lineHeight:1.3}}>{o.label}</span>
         {o.detail&&<span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",flexShrink:0}}>{o.detail}</span>}
-        {value===o.value&&<span style={{fontSize:13,color:"var(--accent)",flexShrink:0}}>âœ“</span>}
+        {value===o.value&&<span style={{fontSize:13,color:"var(--accent)",flexShrink:0}}>✓</span>}
       </button>)}
     </div>}
   </div>;
 }
 
-/* â•â•â• TOWER LOGO SVG â•â•â• */
-/* â”â”â” PRO RIG BUILDER LOGO (PNG, theme-aware) â”â”â” */
+/* ═══ TOWER LOGO SVG ═══ */
+/* ━━━ PRO RIG BUILDER LOGO (PNG, theme-aware) ━━━ */
 function TowerLogo({size=36}){
   // Use CSS to swap logo based on current theme via media query / data-theme attribute
   // Aspect ratio of the logo PNG is ~3:1, so width is 3x height
@@ -1215,7 +1215,7 @@ function useThumbs() {
   return { thumbs, setThumb, removeThumb };
 }
 
-// â”€â”€ Default category thumbnail images (royalty-free / CDN) â”€â”€
+// ── Default category thumbnail images (royalty-free / CDN) ──
 const CAT_IMGS = {
   Case: "https://m.media-amazon.com/images/I/91UOdM9izhL._AC_SY300_SX300_QL70_FMwebp_.jpg",
   CPU: "https://m.media-amazon.com/images/I/51Kws4ObreL._AC_SL500_.jpg",
@@ -1276,13 +1276,13 @@ function CatThumb({ cat, thumbs, setThumb, removeThumb, size = 48, editable = tr
       {displaySrc ? (
         <img loading="lazy" decoding="async" src={displaySrc} alt={meta?.label} onError={() => setImgErr(true)} style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} />
       ) : (
-        <span style={{ fontSize: size * 0.45, lineHeight: 1 }}>{meta?.icon || "ðŸ“¦"}</span>
+        <span style={{ fontSize: size * 0.45, lineHeight: 1 }}>{meta?.icon || "📦"}</span>
       )}
 
-      {/* Upload overlay â€” only this triggers file picker */}
+      {/* Upload overlay — only this triggers file picker */}
       {editable && hover && (
         <div onClick={e => { e.stopPropagation(); inputRef.current?.click(); }} style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 2, cursor: "pointer" }}>
-          <span style={{ fontSize: 12 }}>ðŸ“·</span>
+          <span style={{ fontSize: 12 }}>📷</span>
           <span style={{ fontSize: 7, color: "#fff", fontFamily: "var(--mono)", letterSpacing: 0.5, opacity: 0.9 }}>{src ? "CHANGE" : "UPLOAD"}</span>
         </div>
       )}
@@ -1292,7 +1292,7 @@ function CatThumb({ cat, thumbs, setThumb, removeThumb, size = 48, editable = tr
         <button
           onClick={(e) => { e.stopPropagation(); removeThumb(cat); }}
           style={{ position: "absolute", top: 2, right: 2, width: 14, height: 14, borderRadius: "50%", background: "var(--rose)", border: "none", color: "#fff", fontSize: 8, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", lineHeight: 1 }}
-        >âœ•</button>
+        >✕</button>
       )}
 
       <input ref={inputRef} type="file" accept="image/*" onChange={handleFile} style={{ display: "none" }} />
@@ -1300,7 +1300,7 @@ function CatThumb({ cat, thumbs, setThumb, removeThumb, size = 48, editable = tr
   );
 }
 
-/* â•â•â• MEGA MENU â•â•â• */
+/* ═══ MEGA MENU ═══ */
 function MegaMenu({onSelect,onClose,go,onSearch,th}){
   const G=[{t:"Components",cats:["CPU","GPU","RAM","Motherboard","Storage","PSU"]},{t:"Build",cats:["Case","CPUCooler","CaseFan"]},{t:"Peripherals",cats:["Monitor","Keyboard","Mouse","Headset"]},{t:"Expansion",cats:["SoundCard","WiFiCard","EthernetCard","ExtensionCables"]}];
   return <div className="mega-in" style={{position:"absolute",top:"100%",left:0,right:0,background:"var(--bg2)",borderBottom:"1px solid var(--bdr2)",zIndex:100,padding:"20px 0"}} onMouseLeave={onClose}>
@@ -1311,13 +1311,13 @@ function MegaMenu({onSelect,onClose,go,onSearch,th}){
   </div>;
 }
 
-/* â•â•â• NAV â•â•â• */
+/* ═══ NAV ═══ */
 function Nav({page,setPage,onBrowse,onSearch,th,theme,toggleTheme}){
   const [mega,setMega]=useState(false);
   const canGoBack = page !== "home";
   return <nav style={{position:"sticky",top:0,zIndex:200,backdropFilter:"blur(20px)",background:"var(--navbg)"}}>
     <div style={{maxWidth:1600,margin:"0 auto",display:"flex",alignItems:"center",height:160,padding:"0 32px",gap:8}}>
-      {canGoBack&&<button onClick={()=>window.history.back()} style={{background:"none",border:"none",cursor:"pointer",color:"var(--dim)",fontSize:22,padding:"4px 8px 4px 0"}} title="Go back">â†</button>}
+      {canGoBack&&<button onClick={()=>window.history.back()} style={{background:"none",border:"none",cursor:"pointer",color:"var(--dim)",fontSize:22,padding:"4px 8px 4px 0"}} title="Go back">←</button>}
       {/* Logo */}
       <button onClick={()=>setPage("home")} style={{background:"none",border:"none",cursor:"pointer",display:"flex",alignItems:"center",gap:8,marginRight:24}}>
         <TowerLogo size={140}/>
@@ -1330,23 +1330,23 @@ function Nav({page,setPage,onBrowse,onSearch,th,theme,toggleTheme}){
       {/* Nav links */}
       <div style={{display:"flex",gap:2,flex:1,position:"relative"}}>
         {[{id:"browse",label:"Browse Parts",act:()=>setMega(!mega),arrow:true},{id:"builder",label:"PC Builder"},{id:"community",label:"Builds"},{id:"tools",label:"Smart Tools"}].map(n=>
-          <button key={n.id} onClick={n.act||(()=>{setPage(n.id);setMega(false);})} style={{padding:"8px 16px",borderRadius:10,fontSize:14,fontFamily:"var(--ff)",fontWeight:page===n.id?600:400,cursor:"pointer",background:page===n.id?"var(--accent3)":"transparent",color:page===n.id?"var(--accent)":"var(--dim)",border:"none",transition:"all .2s"}}>{n.label}{n.arrow?" â–¾":""}</button>
+          <button key={n.id} onClick={n.act||(()=>{setPage(n.id);setMega(false);})} style={{padding:"8px 16px",borderRadius:10,fontSize:14,fontFamily:"var(--ff)",fontWeight:page===n.id?600:400,cursor:"pointer",background:page===n.id?"var(--accent3)":"transparent",color:page===n.id?"var(--accent)":"var(--dim)",border:"none",transition:"all .2s"}}>{n.label}{n.arrow?" ▾":""}</button>
         )}
         {mega&&<MegaMenu onSelect={c=>{onBrowse(c);setPage("search");}} onClose={()=>setMega(false)} go={p=>setPage(p)} onSearch={onSearch} th={th}/>}
       </div>
-      {/* Theme toggle â€” pill shape */}
+      {/* Theme toggle — pill shape */}
       <button onClick={toggleTheme} style={{background:"var(--bg4)",border:"none",borderRadius:20,padding:"6px 14px",cursor:"pointer",display:"flex",alignItems:"center",gap:6,fontSize:14,color:"var(--dim)",fontFamily:"var(--ff)",fontWeight:500,transition:"all .2s"}} title={theme==="dark"?"Switch to light mode":"Switch to dark mode"}>
-        {theme==="dark"?"â˜€ï¸":"ðŸŒ™"}<span style={{fontSize:10,fontWeight:600}}>{theme==="dark"?"Light":"Dark"}</span>
+        {theme==="dark"?"☀️":"🌙"}<span style={{fontSize:10,fontWeight:600}}>{theme==="dark"?"Light":"Dark"}</span>
       </button>
     </div>
   </nav>;
 }
 
-/* â•â•â• HOME â•â•â• */
+/* ═══ HOME ═══ */
 function ScannerPage({go}) {
   return (
     <div className="fade">
-      <SEO title="Pro Rig Scanner â€” Free PC Hardware Scanner for Windows" description="Download our free Windows app to scan your PC hardware and get personalized, budget-aware upgrade recommendations. 100% private, no account needed." />
+      <SEO title="Pro Rig Scanner — Free PC Hardware Scanner for Windows" description="Download our free Windows app to scan your PC hardware and get personalized, budget-aware upgrade recommendations. 100% private, no account needed." />
 
       {/* === MASTHEAD STRIP === */}
       <div style={{borderBottom:"1px solid var(--bdr)",padding:"10px 32px",fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",letterSpacing:"0.04em",textTransform:"uppercase",display:"flex",justifyContent:"space-between",flexWrap:"wrap",gap:8}}>
@@ -1373,9 +1373,9 @@ function ScannerPage({go}) {
         </div>
       </div>
 
-      {/* === Â§01 â€” HOW IT WORKS === */}
+      {/* === §01 — HOW IT WORKS === */}
       <div style={{maxWidth:1600,margin:"24px auto 56px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="how-grid">
-        <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase"}}>Â§01</div>
+        <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase"}}>§01</div>
         <div>
           <h2 style={{fontFamily:"var(--ff-display)",fontWeight:600,fontSize:"clamp(26px, 3vw, 36px)",letterSpacing:"-0.02em",color:"var(--txt)",margin:"0 0 28px"}}>Three steps to a smarter upgrade</h2>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:0,border:"1px solid var(--bdr)"}} className="scanner-steps">
@@ -1394,15 +1394,15 @@ function ScannerPage({go}) {
         </div>
       </div>
 
-      {/* === Â§02 â€” WHY IT'S DIFFERENT === */}
+      {/* === §02 — WHY IT'S DIFFERENT === */}
       <div style={{maxWidth:1600,margin:"0 auto 56px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="how-grid">
-        <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase"}}>Â§02</div>
+        <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase"}}>§02</div>
         <div>
           <h2 style={{fontFamily:"var(--ff-display)",fontWeight:600,fontSize:"clamp(26px, 3vw, 36px)",letterSpacing:"-0.02em",color:"var(--txt)",margin:"0 0 28px"}}>No other parts site does this</h2>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:0,border:"1px solid var(--bdr)"}} className="scanner-feats">
             {[
               {n:"01",t:"No guessing required",d:"You don't need to know your CPU or GPU model. The scanner reads it directly from your hardware."},
-              {n:"02",t:"Budget-aware recommendations",d:"Tell us your budget â€” we recommend the biggest performance gain your money can buy."},
+              {n:"02",t:"Budget-aware recommendations",d:"Tell us your budget — we recommend the biggest performance gain your money can buy."},
               {n:"03",t:"100% private by design",d:"Scans run entirely on your PC. We never see, store, or transmit your hardware data."},
               {n:"04",t:"Built exclusively here",d:"You won't find this feature on PCPartPicker, Newegg, or any other parts site."},
             ].map((f,i)=>(
@@ -1416,9 +1416,9 @@ function ScannerPage({go}) {
         </div>
       </div>
 
-      {/* === Â§03 â€” WHY WE BUILT IT === */}
+      {/* === §03 — WHY WE BUILT IT === */}
       <div style={{maxWidth:1600,margin:"0 auto 56px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="how-grid">
-        <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase"}}>Â§03</div>
+        <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase"}}>§03</div>
         <div>
           <h2 style={{fontFamily:"var(--ff-display)",fontWeight:600,fontSize:"clamp(26px, 3vw, 36px)",letterSpacing:"-0.02em",color:"var(--txt)",margin:"0 0 24px"}}>Why we built the Pro Rig Scanner</h2>
           <div style={{borderTop:"1px solid var(--bdr)",borderBottom:"1px solid var(--bdr)",padding:"28px 0",maxWidth:760}}>
@@ -1467,7 +1467,7 @@ function ScannerPage({go}) {
   );
 }
 
-// â•â•â• STATIC CONTENT PAGES (About, Contact, Privacy, Terms, Affiliate) â•â•â•
+// ═══ STATIC CONTENT PAGES (About, Contact, Privacy, Terms, Affiliate) ═══
 
 function PageShell({title, subtitle, children}) {
   return (
@@ -1498,7 +1498,7 @@ function Bullet({children}) {
   return <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:8}}>{children}</li>;
 }
 
-// â”€â”€â”€ ABOUT PAGE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── ABOUT PAGE ───────────────────────────────────────────────────
 function AboutPage({go}) {
   return (
     <PageShell title="About Pro Rig Builder" subtitle="Built by PC enthusiasts who got tired of jumping between ten tabs to price a build.">
@@ -1508,7 +1508,7 @@ function AboutPage({go}) {
         Pro Rig Builder launched on April 15, 2026, with a simple goal: make PC building faster, smarter, and more transparent. We noticed that existing PC builder sites forced users to manually paste part numbers, guess at compatibility, and navigate stale pricing data scattered across a dozen retailer pages. We knew we could do better.
       </Para>
       <Para>
-        So we built Pro Rig Builder from the ground up â€” with live multi-retailer pricing, an automated compatibility engine, benchmark-aware upgrade recommendations, and a proprietary hardware scanner app you won't find anywhere else. Every feature exists because a PC builder asked "why isn't there a tool that just does this for me?"
+        So we built Pro Rig Builder from the ground up — with live multi-retailer pricing, an automated compatibility engine, benchmark-aware upgrade recommendations, and a proprietary hardware scanner app you won't find anywhere else. Every feature exists because a PC builder asked "why isn't there a tool that just does this for me?"
       </Para>
 
       <SectionHeading>What Makes Us Different</SectionHeading>
@@ -1516,20 +1516,20 @@ function AboutPage({go}) {
         We're the only PC builder platform that combines live retailer pricing, real compatibility validation, and a standalone hardware scanner in one place. Features unique to Pro Rig Builder include:
       </Para>
       <ul style={{paddingLeft:22,marginBottom:14}}>
-        <Bullet><strong>Pro Rig Scanner</strong> â€” our free Windows app detects your hardware and generates upgrade recommendations tailored to your budget. No one else offers this.</Bullet>
-        <Bullet><strong>USED product flags</strong> â€” we clearly mark pre-owned listings so you know what you're buying before you click.</Bullet>
-        <Bullet><strong>Budget-aware upgrade recommendations</strong> â€” tell us your budget and we'll find the biggest performance uplift for your dollar.</Bullet>
+        <Bullet><strong>Pro Rig Scanner</strong> — our free Windows app detects your hardware and generates upgrade recommendations tailored to your budget. No one else offers this.</Bullet>
+        <Bullet><strong>USED product flags</strong> — we clearly mark pre-owned listings so you know what you're buying before you click.</Bullet>
+        <Bullet><strong>Budget-aware upgrade recommendations</strong> — tell us your budget and we'll find the biggest performance uplift for your dollar.</Bullet>
         <Bullet><strong>Real-time multi-retailer pricing</strong> from Amazon, Best Buy, Newegg, and B&H (with more retailers coming).</Bullet>
-        <Bullet><strong>Smarter search & filtering</strong> â€” faster, more intuitive, with filter options no competitor matches.</Bullet>
-        <Bullet><strong>Compatibility engine & warnings</strong> â€” catches socket mismatches, clearance issues, PSU wattage problems, and RAM type conflicts automatically.</Bullet>
-        <Bullet><strong>FPS estimator</strong> â€” see projected frames per second for your build before you buy.</Bullet>
-        <Bullet><strong>Bottleneck calculator</strong> â€” know whether your CPU or GPU is holding you back.</Bullet>
-        <Bullet><strong>"Will It Run"</strong> â€” check if your existing PC can handle specific games.</Bullet>
-        <Bullet><strong>Build comparison</strong> â€” stack two builds side-by-side to see which wins on performance per dollar.</Bullet>
-        <Bullet><strong>Budget-automated build wizard</strong> â€” tell us your price ceiling and we'll build a balanced rig for you.</Bullet>
-        <Bullet><strong>Power calculator</strong> â€” we know exactly how much PSU wattage your rig needs.</Bullet>
-        <Bullet><strong>Part comparison tool</strong> â€” compare benchmarks, specs, and pricing across multiple parts instantly.</Bullet>
-        <Bullet><strong>Light & dark mode</strong> â€” seamless theme switching so you can build in whatever lighting suits you.</Bullet>
+        <Bullet><strong>Smarter search & filtering</strong> — faster, more intuitive, with filter options no competitor matches.</Bullet>
+        <Bullet><strong>Compatibility engine & warnings</strong> — catches socket mismatches, clearance issues, PSU wattage problems, and RAM type conflicts automatically.</Bullet>
+        <Bullet><strong>FPS estimator</strong> — see projected frames per second for your build before you buy.</Bullet>
+        <Bullet><strong>Bottleneck calculator</strong> — know whether your CPU or GPU is holding you back.</Bullet>
+        <Bullet><strong>"Will It Run"</strong> — check if your existing PC can handle specific games.</Bullet>
+        <Bullet><strong>Build comparison</strong> — stack two builds side-by-side to see which wins on performance per dollar.</Bullet>
+        <Bullet><strong>Budget-automated build wizard</strong> — tell us your price ceiling and we'll build a balanced rig for you.</Bullet>
+        <Bullet><strong>Power calculator</strong> — we know exactly how much PSU wattage your rig needs.</Bullet>
+        <Bullet><strong>Part comparison tool</strong> — compare benchmarks, specs, and pricing across multiple parts instantly.</Bullet>
+        <Bullet><strong>Light & dark mode</strong> — seamless theme switching so you can build in whatever lighting suits you.</Bullet>
       </ul>
 
       <SectionHeading>The Company Behind It</SectionHeading>
@@ -1539,17 +1539,17 @@ function AboutPage({go}) {
 
       <SectionHeading>Our Commitment</SectionHeading>
       <Para>
-        We take data accuracy seriously. Our catalog of more than 3,000 PC components is verified continuously against retailer sources. Prices update regularly. Out-of-stock retailers are deprioritized automatically so you never see misleading pricing. If you spot a data issue, <span onClick={()=>go("contact")} style={{color:"var(--accent)",cursor:"pointer",textDecoration:"underline"}}>contact us</span> â€” we respond quickly.
+        We take data accuracy seriously. Our catalog of more than 3,000 PC components is verified continuously against retailer sources. Prices update regularly. Out-of-stock retailers are deprioritized automatically so you never see misleading pricing. If you spot a data issue, <span onClick={()=>go("contact")} style={{color:"var(--accent)",cursor:"pointer",textDecoration:"underline"}}>contact us</span> — we respond quickly.
       </Para>
       <Para>
-        We never manipulate rankings for advertisers. Our recommendations are based on actual benchmark performance, price, and compatibility â€” not who paid us most.
+        We never manipulate rankings for advertisers. Our recommendations are based on actual benchmark performance, price, and compatibility — not who paid us most.
       </Para>
 
       <div style={{marginTop:40,padding:"24px 28px",background:"var(--card)",borderRadius:12,border:"1px solid var(--bdr)"}}>
         <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)",marginBottom:10}}>Ready to build?</div>
         <Para>Try the PC builder, or download our scanner to get upgrade recommendations for your current rig.</Para>
         <div style={{display:"flex",gap:12,marginTop:14,flexWrap:"wrap"}}>
-          <button onClick={()=>go("builder")} style={{padding:"11px 22px",borderRadius:10,fontSize:14,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none"}}>Start Building â†’</button>
+          <button onClick={()=>go("builder")} style={{padding:"11px 22px",borderRadius:10,fontSize:14,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none"}}>Start Building →</button>
           <button onClick={()=>go("scanner")} style={{padding:"11px 22px",borderRadius:10,fontSize:14,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>Try the Scanner</button>
         </div>
       </div>
@@ -1557,10 +1557,10 @@ function AboutPage({go}) {
   );
 }
 
-// â”€â”€â”€ CONTACT PAGE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── CONTACT PAGE ─────────────────────────────────────────────────
 function ContactPage() {
   return (
-    <PageShell title="Contact Us" subtitle="Questions, feedback, data corrections, partnership opportunities â€” we'd love to hear from you.">
+    <PageShell title="Contact Us" subtitle="Questions, feedback, data corrections, partnership opportunities — we'd love to hear from you.">
       <SEO title="Contact Us" description="Contact Pro Rig Builder for support, data corrections, partnerships, or press inquiries. Email support@tiereduptech.com or write to us in Orange, Texas." canonical="https://prorigbuilder.com/#contact" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Contact",url:"https://prorigbuilder.com/#contact"}]}/>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:24,marginBottom:32}} className="how-grid">
         <div style={{background:"var(--card)",borderRadius:12,padding:"24px 26px",border:"1px solid var(--bdr)"}}>
@@ -1604,7 +1604,7 @@ function ContactPage() {
   );
 }
 
-// â”€â”€â”€ PRIVACY POLICY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── PRIVACY POLICY ──────────────────────────────────────────────
 function PrivacyPage() {
   return (
     <PageShell title="Privacy Policy" subtitle="Last updated: April 23, 2026. We respect your privacy. Here's exactly what we collect, why, and how we protect it.">
@@ -1635,7 +1635,7 @@ function PrivacyPage() {
 
       <SubHeading>Pro Rig Scanner (Desktop App)</SubHeading>
       <Para>
-        Our Windows scanner application detects your PC hardware locally. <strong>We do not collect, store, or transmit your hardware data.</strong> All scanning and recommendation logic runs on your machine. When you click "Get Recommendations," only the resulting upgrade preferences are sent to your browser as a URL parameter â€” we do not log or retain this information.
+        Our Windows scanner application detects your PC hardware locally. <strong>We do not collect, store, or transmit your hardware data.</strong> All scanning and recommendation logic runs on your machine. When you click "Get Recommendations," only the resulting upgrade preferences are sent to your browser as a URL parameter — we do not log or retain this information.
       </Para>
 
       <SubHeading>Voluntarily Provided</SubHeading>
@@ -1657,7 +1657,7 @@ function PrivacyPage() {
         When you click an affiliate link on our site (to Amazon, Best Buy, Newegg, B&H, Antonline, or another partner), the destination retailer may set cookies on your device to attribute the purchase to us. These cookies are set by the retailer, not by us, and are governed by each retailer's privacy policy.
       </Para>
       <Para>
-        We never see your purchase details â€” we only receive aggregate commission data from the retailer.
+        We never see your purchase details — we only receive aggregate commission data from the retailer.
       </Para>
 
       <SectionHeading>Cookies</SectionHeading>
@@ -1665,8 +1665,8 @@ function PrivacyPage() {
         We use cookies for:
       </Para>
       <ul style={{paddingLeft:22,marginBottom:14}}>
-        <Bullet><strong>Analytics</strong> â€” Google Analytics cookies to measure traffic and usage</Bullet>
-        <Bullet><strong>Preferences</strong> â€” to remember your theme (light/dark mode) and interface settings</Bullet>
+        <Bullet><strong>Analytics</strong> — Google Analytics cookies to measure traffic and usage</Bullet>
+        <Bullet><strong>Preferences</strong> — to remember your theme (light/dark mode) and interface settings</Bullet>
       </ul>
       <Para>
         You can disable cookies in your browser, but some features (like remembering your theme) may not work properly.
@@ -1677,10 +1677,10 @@ function PrivacyPage() {
         We link to and integrate with third-party services, including:
       </Para>
       <ul style={{paddingLeft:22,marginBottom:14}}>
-        <Bullet><strong>Google Analytics</strong> (analytics) â€” <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style={{color:"var(--accent)"}}>privacy policy</a></Bullet>
-        <Bullet><strong>Amazon Associates</strong> (affiliate links) â€” governed by Amazon's privacy policy</Bullet>
-        <Bullet><strong>Best Buy, Newegg, B&H, Antonline</strong> (affiliate links) â€” each governed by the retailer's privacy policy</Bullet>
-        <Bullet><strong>Railway</strong> (hosting) and <strong>Cloudflare</strong> (CDN) â€” infrastructure providers</Bullet>
+        <Bullet><strong>Google Analytics</strong> (analytics) — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style={{color:"var(--accent)"}}>privacy policy</a></Bullet>
+        <Bullet><strong>Amazon Associates</strong> (affiliate links) — governed by Amazon's privacy policy</Bullet>
+        <Bullet><strong>Best Buy, Newegg, B&H, Antonline</strong> (affiliate links) — each governed by the retailer's privacy policy</Bullet>
+        <Bullet><strong>Railway</strong> (hosting) and <strong>Cloudflare</strong> (CDN) — infrastructure providers</Bullet>
       </ul>
       <Para>
         We are not responsible for the privacy practices of third parties.
@@ -1733,7 +1733,7 @@ function PrivacyPage() {
   );
 }
 
-// â”€â”€â”€ TERMS OF USE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── TERMS OF USE ────────────────────────────────────────────────
 function TermsPage() {
   return (
     <PageShell title="Terms of Use" subtitle="Last updated: April 23, 2026. Please read these terms carefully before using our services.">
@@ -1790,7 +1790,7 @@ function TermsPage() {
 
       <SectionHeading>Intellectual Property</SectionHeading>
       <Para>
-        All content on Pro Rig Builder â€” including the website design, code, logo, Pro Rig Scanner application, written content, and compiled product data â€” is owned by TieredUp Tech, Inc. or its licensors and protected by copyright, trademark, and other intellectual property laws.
+        All content on Pro Rig Builder — including the website design, code, logo, Pro Rig Scanner application, written content, and compiled product data — is owned by TieredUp Tech, Inc. or its licensors and protected by copyright, trademark, and other intellectual property laws.
       </Para>
       <Para>
         You may not copy, modify, distribute, sell, or lease any part of the Services without our written permission. Product images, manufacturer logos, and specifications belong to their respective rights holders.
@@ -1857,34 +1857,34 @@ function TermsPage() {
   );
 }
 
-// â”€â”€â”€ AFFILIATE DISCLOSURE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── AFFILIATE DISCLOSURE ────────────────────────────────────────
 function AffiliatePage() {
   return (
     <PageShell title="Affiliate Disclosure" subtitle="Transparency first: here's exactly how Pro Rig Builder earns revenue, and how our recommendations stay honest.">
-      <SEO title="Affiliate Disclosure" description="Pro Rig Builder's FTC-compliant affiliate disclosure. We earn commissions through Amazon Associates, Best Buy, Newegg, B&H, and Antonline â€” at no cost to you." canonical="https://prorigbuilder.com/#affiliate" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Affiliate Disclosure",url:"https://prorigbuilder.com/#affiliate"}]}/>
+      <SEO title="Affiliate Disclosure" description="Pro Rig Builder's FTC-compliant affiliate disclosure. We earn commissions through Amazon Associates, Best Buy, Newegg, B&H, and Antonline — at no cost to you." canonical="https://prorigbuilder.com/#affiliate" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Affiliate Disclosure",url:"https://prorigbuilder.com/#affiliate"}]}/>
       <div style={{background:"var(--accent3)",border:"1px solid var(--accent)",borderRadius:12,padding:"20px 24px",marginBottom:28}}>
         <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:10}}>
-          <span style={{fontSize:22}}>ðŸ’¡</span>
+          <span style={{fontSize:22}}>💡</span>
           <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)"}}>FTC-Compliant Summary</div>
         </div>
         <div style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.65}}>
-          Pro Rig Builder earns commissions through affiliate links. When you click a "Buy" button and complete a purchase, we may earn a small commission <strong>at no additional cost to you</strong>. Our recommendations are not influenced by commission rates â€” we rank products purely on performance, price, and compatibility.
+          Pro Rig Builder earns commissions through affiliate links. When you click a "Buy" button and complete a purchase, we may earn a small commission <strong>at no additional cost to you</strong>. Our recommendations are not influenced by commission rates — we rank products purely on performance, price, and compatibility.
         </div>
       </div>
 
       <SectionHeading>What Are Affiliate Links?</SectionHeading>
       <Para>
-        Affiliate links are special URLs that identify Pro Rig Builder as the source of a referral to a retailer. When you click one and make a qualifying purchase, the retailer pays Pro Rig Builder a small commission. The price you pay is identical to what you would pay if you navigated to the retailer directly â€” no markup, no hidden fees.
+        Affiliate links are special URLs that identify Pro Rig Builder as the source of a referral to a retailer. When you click one and make a qualifying purchase, the retailer pays Pro Rig Builder a small commission. The price you pay is identical to what you would pay if you navigated to the retailer directly — no markup, no hidden fees.
       </Para>
 
       <SectionHeading>Which Affiliate Programs We Participate In</SectionHeading>
       <Para>Pro Rig Builder participates in the following affiliate programs:</Para>
       <ul style={{paddingLeft:22,marginBottom:14}}>
-        <Bullet><strong>Amazon Associates</strong> â€” "As an Amazon Associate, we earn from qualifying purchases." Associate tag: <code style={{background:"var(--bg3)",padding:"2px 6px",borderRadius:4,fontFamily:"var(--mono)",fontSize:13}}>tiereduptech-20</code></Bullet>
-        <Bullet><strong>Best Buy Affiliate Program</strong> â€” commissions on qualifying purchases through Best Buy</Bullet>
-        <Bullet><strong>Newegg Affiliate Network</strong> (in progress) â€” launching soon</Bullet>
-        <Bullet><strong>B&H Photo Affiliate Program</strong> (in progress) â€” launching soon</Bullet>
-        <Bullet><strong>Antonline Affiliate Program</strong> (in progress) â€” launching soon</Bullet>
+        <Bullet><strong>Amazon Associates</strong> — "As an Amazon Associate, we earn from qualifying purchases." Associate tag: <code style={{background:"var(--bg3)",padding:"2px 6px",borderRadius:4,fontFamily:"var(--mono)",fontSize:13}}>tiereduptech-20</code></Bullet>
+        <Bullet><strong>Best Buy Affiliate Program</strong> — commissions on qualifying purchases through Best Buy</Bullet>
+        <Bullet><strong>Newegg Affiliate Network</strong> (in progress) — launching soon</Bullet>
+        <Bullet><strong>B&H Photo Affiliate Program</strong> (in progress) — launching soon</Bullet>
+        <Bullet><strong>Antonline Affiliate Program</strong> (in progress) — launching soon</Bullet>
       </ul>
       <Para>
         We may add or remove affiliate programs over time. This page will be updated to reflect current partnerships.
@@ -1935,7 +1935,7 @@ function AffiliatePage() {
   );
 }
 
-// â•â•â• COMPARISON PAGE â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══ COMPARISON PAGE ═══════════════════════════════════════════════
 function ComparePage({go}) {
   // Feature data (factual, research-verified)
   const features = [
@@ -1947,7 +1947,7 @@ function ComparePage({go}) {
       {f:"Community Builds Library", pb:"Curated", pcpp:"Large public library", newegg:"User showcases", logical:false},
     ]},
     {cat:"Proprietary Tools (Exclusive to Pro Rig Builder)", items:[
-      {f:"Hardware Scanner App", pb:"âœ“ Free Windows app", pcpp:false, newegg:false, logical:false},
+      {f:"Hardware Scanner App", pb:"✓ Free Windows app", pcpp:false, newegg:false, logical:false},
       {f:"Budget-Aware Upgrade Recs", pb:true, pcpp:false, newegg:false, logical:false},
       {f:"USED Product Flags", pb:true, pcpp:false, newegg:false, logical:false},
       {f:"FPS Estimator", pb:"Per-game estimates", pcpp:false, newegg:false, logical:false},
@@ -1968,7 +1968,7 @@ function ComparePage({go}) {
     {cat:"Business Model & Transparency", items:[
       {f:"Revenue Model", pb:"Affiliate commissions only", pcpp:"Ads + affiliate", newegg:"Retailer (direct sales)", logical:"Affiliate commissions"},
       {f:"Ads Shown to Users", pb:"Zero", pcpp:"Yes", newegg:"Product promotions", logical:"Minimal"},
-      {f:"Retailer Bias", pb:"None â€” ranks by price/performance", pcpp:"None", newegg:"Newegg-favored", logical:"None"},
+      {f:"Retailer Bias", pb:"None — ranks by price/performance", pcpp:"None", newegg:"Newegg-favored", logical:"None"},
       {f:"Data Collection", pb:"Analytics only", pcpp:"Analytics + ads tracking", newegg:"Retailer tracking", logical:"Analytics only"},
     ]},
   ];
@@ -1981,8 +1981,8 @@ function ComparePage({go}) {
   ];
 
   const renderCell = (val, isPb) => {
-    if (val === true) return <span style={{fontSize:22,color:isPb?"var(--accent)":"var(--mint)",fontWeight:700}}>âœ“</span>;
-    if (val === false) return <span style={{fontSize:22,color:"var(--mute)",fontWeight:700}}>âœ—</span>;
+    if (val === true) return <span style={{fontSize:22,color:isPb?"var(--accent)":"var(--mint)",fontWeight:700}}>✓</span>;
+    if (val === false) return <span style={{fontSize:22,color:"var(--mute)",fontWeight:700}}>✗</span>;
     return <span style={{fontFamily:"var(--ff)",fontSize:13,color:isPb?"var(--accent)":"var(--txt)",fontWeight:isPb?700:500,lineHeight:1.3}}>{val}</span>;
   };
 
@@ -2000,7 +2000,7 @@ function ComparePage({go}) {
             How we compare to the <span style={{background:"linear-gradient(135deg, var(--accent), var(--amber))",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>other PC builder tools</span>
           </h1>
           <p style={{fontFamily:"var(--ff)",fontSize:17,color:"var(--dim)",marginTop:18,lineHeight:1.7,maxWidth:940}}>
-            An honest, factual comparison with PCPartPicker, Newegg PC Builder, and Logical Increments â€” the three biggest PC builder platforms. We focus on facts, not hype. You decide.
+            An honest, factual comparison with PCPartPicker, Newegg PC Builder, and Logical Increments — the three biggest PC builder platforms. We focus on facts, not hype. You decide.
           </p>
         </div>
       </div>
@@ -2060,42 +2060,42 @@ function ComparePage({go}) {
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:24}} className="how-grid">
             {[
               {
-                i:"ðŸ”",
+                i:"🔍",
                 t:"The only platform with a hardware scanner",
-                d:"Download our free Windows app and it detects your CPU, GPU, RAM, storage, and motherboard automatically. No typing part names. No guessing. No other PC builder tool offers this â€” not PCPartPicker, not Newegg, not Logical Increments."
+                d:"Download our free Windows app and it detects your CPU, GPU, RAM, storage, and motherboard automatically. No typing part names. No guessing. No other PC builder tool offers this — not PCPartPicker, not Newegg, not Logical Increments."
               },
               {
-                i:"ðŸ’°",
+                i:"💰",
                 t:"Budget-aware upgrade recommendations",
                 d:"Tell us your budget and we find the biggest performance uplift per dollar. Refresh-needed detection for outdated platforms (old sockets, wrong RAM type). Competitors show you parts but won't tell you which upgrade actually matters for your specific rig."
               },
               {
-                i:"ðŸŽ®",
+                i:"🎮",
                 t:"FPS estimator + Will-It-Run checker",
                 d:"See projected FPS for popular games on your build before you buy. Check if your existing PC can handle a specific game. Neither PCPartPicker nor Newegg offers game-specific performance prediction."
               },
               {
-                i:"âš–ï¸",
+                i:"⚖️",
                 t:"Bottleneck calculator",
                 d:"Know exactly whether your CPU or GPU is the weak link. Get specific percentage severity. Our bottleneck engine goes deeper than generic \u0022balanced build\u0022 recommendations other tools offer."
               },
               {
-                i:"ðŸ›ï¸",
+                i:"🛍️",
                 t:"Real multi-retailer pricing, in-stock first",
-                d:"We compare live prices across Amazon, Best Buy, Newegg, B&H, and Antonline â€” and show you the in-stock retailer first, not just the cheapest (which is often out of stock). Newegg PC Builder shows only Newegg. Logical Increments doesn't track live prices at all."
+                d:"We compare live prices across Amazon, Best Buy, Newegg, B&H, and Antonline — and show you the in-stock retailer first, not just the cheapest (which is often out of stock). Newegg PC Builder shows only Newegg. Logical Increments doesn't track live prices at all."
               },
               {
-                i:"â™»ï¸",
+                i:"♻️",
                 t:"USED product flags",
                 d:"Used and refurbished GPUs and CPUs are clearly marked in our catalog. Save money, know what you're buying. No competitor clearly flags pre-owned listings."
               },
               {
-                i:"ðŸŽ¨",
+                i:"🎨",
                 t:"Actually good UX",
                 d:"Light & dark mode, mobile-optimized, advanced filters, fast search, and zero ads. PCPartPicker's interface hasn't significantly changed in years. Newegg is a retail funnel first, tool second."
               },
               {
-                i:"ðŸ¤",
+                i:"🤝",
                 t:"Honest business model",
                 d:"Affiliate commissions only. No ads. No paid placement. No retailer bias. If a cheaper retailer exists without an affiliate deal, we'll still tell you. We would rather lose a commission than mislead you."
               },
@@ -2123,7 +2123,7 @@ function ComparePage({go}) {
             <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)"}}>Pro Rig Builder vs. PCPartPicker</div>
           </div>
           <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
-            PCPartPicker is the best-known PC builder platform. It's solid: a large community build library, solid compatibility engine, real-time pricing across retailers. But it's also 15+ years old and shows it. Pro Rig Builder does everything PCPartPicker does â€” plus eight tools PCPartPicker doesn't have.
+            PCPartPicker is the best-known PC builder platform. It's solid: a large community build library, solid compatibility engine, real-time pricing across retailers. But it's also 15+ years old and shows it. Pro Rig Builder does everything PCPartPicker does — plus eight tools PCPartPicker doesn't have.
           </p>
           <div style={{background:"var(--bg3)",padding:"18px 22px",borderRadius:10}}>
             <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>WHAT WE HAVE THAT PCPARTPICKER DOESN'T</div>
@@ -2146,12 +2146,12 @@ function ComparePage({go}) {
             <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)"}}>Pro Rig Builder vs. Newegg PC Builder</div>
           </div>
           <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
-            Newegg's PC Builder is a shopping tool first, a builder tool second. It only shows Newegg inventory. Its AI "Build with AI" feature uses ChatGPT to generate recommendations, but pricing, stock, and inventory are Newegg-only â€” no comparison with Amazon, Best Buy, or anywhere else. The tool exists to drive purchases on Newegg.com.
+            Newegg's PC Builder is a shopping tool first, a builder tool second. It only shows Newegg inventory. Its AI "Build with AI" feature uses ChatGPT to generate recommendations, but pricing, stock, and inventory are Newegg-only — no comparison with Amazon, Best Buy, or anywhere else. The tool exists to drive purchases on Newegg.com.
           </p>
           <div style={{background:"var(--bg3)",padding:"18px 22px",borderRadius:10}}>
             <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>THE KEY DIFFERENCE</div>
             <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.7}}>
-              Pro Rig Builder compares pricing across <strong>five retailers</strong>. We're neutral â€” we'll recommend the best deal regardless of which retailer offers it. Newegg PC Builder is a Newegg sales tool. If Amazon is $50 cheaper, Newegg won't tell you.
+              Pro Rig Builder compares pricing across <strong>five retailers</strong>. We're neutral — we'll recommend the best deal regardless of which retailer offers it. Newegg PC Builder is a Newegg sales tool. If Amazon is $50 cheaper, Newegg won't tell you.
             </div>
           </div>
         </div>
@@ -2162,12 +2162,12 @@ function ComparePage({go}) {
             <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)"}}>Pro Rig Builder vs. Logical Increments</div>
           </div>
           <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.75,marginBottom:18}}>
-            Logical Increments is a static build guide â€” not an interactive builder. Its "Grid" recommends parts for budget tiers (Excellent, Outstanding, Exceptional, etc.), updated manually by the team. There's no compatibility engine, no real-time pricing, no personalized recommendations. Good for beginners who want a curated list; limited for anyone building a specific rig.
+            Logical Increments is a static build guide — not an interactive builder. Its "Grid" recommends parts for budget tiers (Excellent, Outstanding, Exceptional, etc.), updated manually by the team. There's no compatibility engine, no real-time pricing, no personalized recommendations. Good for beginners who want a curated list; limited for anyone building a specific rig.
           </p>
           <div style={{background:"var(--bg3)",padding:"18px 22px",borderRadius:10}}>
             <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:10}}>THE KEY DIFFERENCE</div>
             <div style={{fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.7}}>
-              Logical Increments tells you what parts to buy. Pro Rig Builder lets you build, compare, validate, and benchmark â€” with your specific hardware, budget, and games. One is a cookbook. The other is a kitchen.
+              Logical Increments tells you what parts to buy. Pro Rig Builder lets you build, compare, validate, and benchmark — with your specific hardware, budget, and games. One is a cookbook. The other is a kitchen.
             </div>
           </div>
         </div>
@@ -2181,8 +2181,8 @@ function ComparePage({go}) {
             Start a build, scan your existing rig, or browse parts with better filters than the competition. We're confident you'll see the difference within 30 seconds.
           </p>
           <div style={{display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap"}}>
-            <button onClick={()=>go("builder")} style={{padding:"14px 28px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 20px rgba(255,107,53,.3)"}}>Start Building â†’</button>
-            <button onClick={()=>go("scanner")} style={{padding:"14px 28px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>ðŸ“¥ Try the Scanner</button>
+            <button onClick={()=>go("builder")} style={{padding:"14px 28px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 20px rgba(255,107,53,.3)"}}>Start Building →</button>
+            <button onClick={()=>go("scanner")} style={{padding:"14px 28px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>📥 Try the Scanner</button>
           </div>
         </div>
       </div>
@@ -2190,7 +2190,7 @@ function ComparePage({go}) {
   );
 }
 
-// â•â•â• PRODUCT SCHEMA HELPER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══ PRODUCT SCHEMA HELPER ═════════════════════════════════════════
 // Emits Product JSON-LD via Helmet when a product is expanded (viewed in detail).
 // Google crawler sees this structured data for rich snippets in search results.
 function ProductSchema({p}) {
@@ -2231,9 +2231,9 @@ function ProductSchema({p}) {
   );
 }
 
-// â•â•â• SEO COMPONENT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══ SEO COMPONENT ═════════════════════════════════════════════════
 function SEO({title, description, canonical, breadcrumb, faq}) {
-  const fullTitle = title ? title + " | Pro Rig Builder" : "Pro Rig Builder â€” Compare, Build & Save on PC Parts";
+  const fullTitle = title ? title + " | Pro Rig Builder" : "Pro Rig Builder — Compare, Build & Save on PC Parts";
   const desc = description || "Compare PC components across Amazon, Best Buy, Newegg & more. Free Windows hardware scanner, compatibility engine, FPS estimator, and budget-aware upgrade recommendations.";
   const url = canonical || "https://prorigbuilder.com/";
 
@@ -2286,7 +2286,7 @@ function SEO({title, description, canonical, breadcrumb, faq}) {
   );
 }
 
-// â•â•â• SEO VARIANT PAGES (target PCPartPicker keywords) â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ═══ SEO VARIANT PAGES (target PCPartPicker keywords) ═══════════════
 
 // Reusable content block for consistency across variant pages
 function VariantCTA({go}) {
@@ -2298,8 +2298,8 @@ function VariantCTA({go}) {
           Every tool free. Zero ads. Real multi-retailer pricing. Plus our exclusive hardware scanner.
         </p>
         <div style={{display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap"}}>
-          <button onClick={()=>go("builder")} style={{padding:"14px 28px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 20px rgba(255,107,53,.3)"}}>Start Building â†’</button>
-          <button onClick={()=>go("scanner")} style={{padding:"14px 28px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>ðŸ“¥ Try the Scanner</button>
+          <button onClick={()=>go("builder")} style={{padding:"14px 28px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:700,cursor:"pointer",background:"var(--accent)",color:"#fff",border:"none",boxShadow:"0 6px 20px rgba(255,107,53,.3)"}}>Start Building →</button>
+          <button onClick={()=>go("scanner")} style={{padding:"14px 28px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"var(--bg3)",color:"var(--txt)",border:"1px solid var(--bdr)"}}>📥 Try the Scanner</button>
           <button onClick={()=>go("compare")} style={{padding:"14px 28px",borderRadius:12,fontSize:15,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:"transparent",color:"var(--txt)",border:"1px solid var(--bdr)"}}>Full Comparison</button>
         </div>
       </div>
@@ -2307,7 +2307,7 @@ function VariantCTA({go}) {
   );
 }
 
-// â”€â”€â”€ /vs-pcpartpicker â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── /vs-pcpartpicker ────────────────────────────────────────────
 function VsPcPartPickerPage({go}) {
   return (
     <div className="fade">
@@ -2334,24 +2334,24 @@ function VsPcPartPickerPage({go}) {
 
         <SectionHeading>What PCPartPicker Has That We Also Have</SectionHeading>
         <ul style={{paddingLeft:22,marginBottom:20}}>
-          <Bullet><strong>Compatibility engine</strong> â€” we match their coverage (socket, chipset, form factor, memory type, PSU wattage)</Bullet>
-          <Bullet><strong>Real-time multi-retailer pricing</strong> â€” both tools compare prices across Amazon, Best Buy, Newegg, and other retailers</Bullet>
-          <Bullet><strong>PC Builder tool</strong> â€” interactive builder with running totals</Bullet>
-          <Bullet><strong>Part browsing and filtering</strong> â€” large catalog of CPUs, GPUs, motherboards, RAM, etc.</Bullet>
-          <Bullet><strong>Build sharing and saving</strong> â€” both tools let you save your build for later reference</Bullet>
+          <Bullet><strong>Compatibility engine</strong> — we match their coverage (socket, chipset, form factor, memory type, PSU wattage)</Bullet>
+          <Bullet><strong>Real-time multi-retailer pricing</strong> — both tools compare prices across Amazon, Best Buy, Newegg, and other retailers</Bullet>
+          <Bullet><strong>PC Builder tool</strong> — interactive builder with running totals</Bullet>
+          <Bullet><strong>Part browsing and filtering</strong> — large catalog of CPUs, GPUs, motherboards, RAM, etc.</Bullet>
+          <Bullet><strong>Build sharing and saving</strong> — both tools let you save your build for later reference</Bullet>
         </ul>
 
         <SectionHeading>What Pro Rig Builder Offers That PCPartPicker Does NOT</SectionHeading>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16,marginBottom:24}} className="how-grid">
           {[
-            {i:"ðŸ”", t:"Hardware Scanner App", d:"Download our free Windows app. It detects your hardware automatically and generates upgrade recommendations. PCPartPicker has no equivalent."},
-            {i:"ðŸŽ®", t:"FPS Estimator", d:"See projected frames per second for popular games on your build before buying. PCPartPicker does not predict game-specific performance."},
-            {i:"âš–ï¸", t:"Bottleneck Calculator", d:"Know whether your CPU or GPU is holding back performance, with percentage severity. PCPartPicker has no bottleneck tool."},
-            {i:"ðŸ•¹ï¸", t:"Will It Run Checker", d:"Check if your current PC can handle a specific game. PCPartPicker focuses on new builds, not gaming capability checks."},
-            {i:"ðŸ’°", t:"Budget-Aware Upgrade Recs", d:"Tell us your budget and we'll tell you the biggest performance uplift. PCPartPicker shows parts but does not rank by budget impact."},
-            {i:"â™»ï¸", t:"USED Product Flags", d:"Pre-owned parts are clearly marked so you know what you're buying. PCPartPicker does not distinguish used listings."},
-            {i:"ðŸ§™", t:"Auto Build Wizard", d:"Give us a budget, we generate a balanced, compatible build. PCPartPicker is manual-only."},
-            {i:"ðŸŒ—", t:"Light & Dark Mode", d:"Seamless theme switching. PCPartPicker has one theme."},
+            {i:"🔍", t:"Hardware Scanner App", d:"Download our free Windows app. It detects your hardware automatically and generates upgrade recommendations. PCPartPicker has no equivalent."},
+            {i:"🎮", t:"FPS Estimator", d:"See projected frames per second for popular games on your build before buying. PCPartPicker does not predict game-specific performance."},
+            {i:"⚖️", t:"Bottleneck Calculator", d:"Know whether your CPU or GPU is holding back performance, with percentage severity. PCPartPicker has no bottleneck tool."},
+            {i:"🕹️", t:"Will It Run Checker", d:"Check if your current PC can handle a specific game. PCPartPicker focuses on new builds, not gaming capability checks."},
+            {i:"💰", t:"Budget-Aware Upgrade Recs", d:"Tell us your budget and we'll tell you the biggest performance uplift. PCPartPicker shows parts but does not rank by budget impact."},
+            {i:"♻️", t:"USED Product Flags", d:"Pre-owned parts are clearly marked so you know what you're buying. PCPartPicker does not distinguish used listings."},
+            {i:"🧙", t:"Auto Build Wizard", d:"Give us a budget, we generate a balanced, compatible build. PCPartPicker is manual-only."},
+            {i:"🌗", t:"Light & Dark Mode", d:"Seamless theme switching. PCPartPicker has one theme."},
           ].map(f => (
             <div key={f.t} style={{background:"var(--card)",border:"1px solid var(--bdr)",borderRadius:12,padding:"22px 24px"}}>
               <div style={{fontSize:26,marginBottom:10}}>{f.i}</div>
@@ -2366,7 +2366,7 @@ function VsPcPartPickerPage({go}) {
           <strong>PCPartPicker</strong> runs display advertising alongside affiliate commissions. You see banner ads, sidebar ads, and sponsored content. Their catalog listings can be influenced by advertisers.
         </Para>
         <Para>
-          <strong>Pro Rig Builder</strong> runs zero ads. Our only revenue is affiliate commissions when users click our links to retailers. Rankings are based purely on benchmark scores, price, and compatibility â€” not advertiser payments. If a non-affiliate retailer has a cheaper price, we still tell you.
+          <strong>Pro Rig Builder</strong> runs zero ads. Our only revenue is affiliate commissions when users click our links to retailers. Rankings are based purely on benchmark scores, price, and compatibility — not advertiser payments. If a non-affiliate retailer has a cheaper price, we still tell you.
         </Para>
 
         <SectionHeading>Which should you choose?</SectionHeading>
@@ -2390,7 +2390,7 @@ function VsPcPartPickerPage({go}) {
   );
 }
 
-// â”€â”€â”€ /pcpartpicker-alternative â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── /pcpartpicker-alternative ───────────────────────────────────
 function PcpAlternativePage({go}) {
   return (
     <div className="fade">
@@ -2401,7 +2401,7 @@ function PcpAlternativePage({go}) {
           <div style={{display:"inline-flex",alignItems:"center",gap:6,background:"var(--accent3)",border:"1px solid var(--accent)",color:"var(--accent)",padding:"5px 14px",borderRadius:14,fontFamily:"var(--mono)",fontSize:13,fontWeight:700,letterSpacing:1.5,marginBottom:22}}>ALTERNATIVE GUIDE</div>
           <h1 style={{fontFamily:"var(--ff)",fontSize:42,fontWeight:800,color:"var(--txt)",letterSpacing:-1.2,lineHeight:1.12,marginBottom:16}}>The Best PCPartPicker Alternative in 2026</h1>
           <p style={{fontFamily:"var(--ff)",fontSize:17,color:"var(--dim)",lineHeight:1.65,maxWidth:940}}>
-            Looking for a PC builder platform with more tools, zero ads, and modern features? Pro Rig Builder is the alternative built for 2026 â€” with eight features you won't find on PCPartPicker.
+            Looking for a PC builder platform with more tools, zero ads, and modern features? Pro Rig Builder is the alternative built for 2026 — with eight features you won't find on PCPartPicker.
           </p>
         </div>
       </div>
@@ -2412,12 +2412,12 @@ function PcpAlternativePage({go}) {
           PCPartPicker is the most recognized PC builder platform, but it has limitations. Users commonly cite these reasons for seeking alternatives:
         </Para>
         <ul style={{paddingLeft:22,marginBottom:20}}>
-          <Bullet><strong>Heavy ad load</strong> â€” PCPartPicker displays banner ads, sidebar ads, and promoted content that clutter the building experience</Bullet>
-          <Bullet><strong>No hardware detection</strong> â€” you have to manually enter every part you own to get upgrade recommendations</Bullet>
-          <Bullet><strong>No performance prediction</strong> â€” no way to see FPS estimates, bottleneck analysis, or game compatibility before buying</Bullet>
-          <Bullet><strong>No budget-aware recommendations</strong> â€” it shows parts but doesn't prioritize upgrades by performance-per-dollar impact</Bullet>
-          <Bullet><strong>No USED listings tracking</strong> â€” used and refurbished parts look the same as new ones in listings</Bullet>
-          <Bullet><strong>Dated interface</strong> â€” core UI hasn't seen major changes in years; no dark mode</Bullet>
+          <Bullet><strong>Heavy ad load</strong> — PCPartPicker displays banner ads, sidebar ads, and promoted content that clutter the building experience</Bullet>
+          <Bullet><strong>No hardware detection</strong> — you have to manually enter every part you own to get upgrade recommendations</Bullet>
+          <Bullet><strong>No performance prediction</strong> — no way to see FPS estimates, bottleneck analysis, or game compatibility before buying</Bullet>
+          <Bullet><strong>No budget-aware recommendations</strong> — it shows parts but doesn't prioritize upgrades by performance-per-dollar impact</Bullet>
+          <Bullet><strong>No USED listings tracking</strong> — used and refurbished parts look the same as new ones in listings</Bullet>
+          <Bullet><strong>Dated interface</strong> — core UI hasn't seen major changes in years; no dark mode</Bullet>
         </ul>
 
         <SectionHeading>Pro Rig Builder: Everything PCPartPicker Offers + 8 More Tools</SectionHeading>
@@ -2427,20 +2427,20 @@ function PcpAlternativePage({go}) {
         <div style={{background:"var(--card)",border:"1px solid var(--bdr)",borderRadius:12,padding:"24px 28px",marginBottom:20}}>
           <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1.5,marginBottom:12}}>PRO RIG BUILDER EXCLUSIVE FEATURES</div>
           <ol style={{paddingLeft:22,margin:0}}>
-            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Pro Rig Scanner</strong> â€” free Windows app that detects your hardware automatically. Runs 100% locally with zero data collection.</li>
-            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>FPS Estimator</strong> â€” see projected FPS for popular games on your proposed build.</li>
-            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Bottleneck Calculator</strong> â€” percentage severity of CPU/GPU bottleneck for informed upgrade decisions.</li>
-            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Will It Run</strong> â€” check if your current PC handles a specific game before you try it.</li>
-            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Budget Build Wizard</strong> â€” automated build generation based on your budget.</li>
-            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>USED Product Flags</strong> â€” pre-owned listings clearly marked for transparent shopping.</li>
-            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Budget-Aware Upgrade Recs</strong> â€” tell us your budget, we show the biggest performance uplift.</li>
-            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:0}}><strong>Light + Dark Mode</strong> â€” modern UI with theme switching.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Pro Rig Scanner</strong> — free Windows app that detects your hardware automatically. Runs 100% locally with zero data collection.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>FPS Estimator</strong> — see projected FPS for popular games on your proposed build.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Bottleneck Calculator</strong> — percentage severity of CPU/GPU bottleneck for informed upgrade decisions.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Will It Run</strong> — check if your current PC handles a specific game before you try it.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Budget Build Wizard</strong> — automated build generation based on your budget.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>USED Product Flags</strong> — pre-owned listings clearly marked for transparent shopping.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:10}}><strong>Budget-Aware Upgrade Recs</strong> — tell us your budget, we show the biggest performance uplift.</li>
+            <li style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--txt)",lineHeight:1.75,marginBottom:0}}><strong>Light + Dark Mode</strong> — modern UI with theme switching.</li>
           </ol>
         </div>
 
         <SectionHeading>Plus: Zero ads.</SectionHeading>
         <Para>
-          Pro Rig Builder runs zero banner ads, zero sidebar ads, zero sponsored content. Our only revenue is affiliate commissions when you click a retailer link and make a purchase â€” at no additional cost to you. Rankings are based on benchmarks, price, and compatibility, never on payments from advertisers.
+          Pro Rig Builder runs zero banner ads, zero sidebar ads, zero sponsored content. Our only revenue is affiliate commissions when you click a retailer link and make a purchase — at no additional cost to you. Rankings are based on benchmarks, price, and compatibility, never on payments from advertisers.
         </Para>
 
         <SectionHeading>Quick switch: your PCPartPicker build is portable</SectionHeading>
@@ -2453,7 +2453,7 @@ function PcpAlternativePage({go}) {
   );
 }
 
-// â”€â”€â”€ /best-pc-builder-tools â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── /best-pc-builder-tools ──────────────────────────────────────
 function BestPcBuilderToolsPage({go}) {
   return (
     <div className="fade">
@@ -2474,38 +2474,38 @@ function BestPcBuilderToolsPage({go}) {
           Whether you're building your first PC or upgrading an existing rig, the right tool saves you hours of research and prevents costly compatibility mistakes. We evaluated each of these platforms on four criteria: <strong>feature depth</strong>, <strong>pricing accuracy</strong>, <strong>user experience</strong>, and <strong>business model transparency</strong>.
         </Para>
 
-        <SectionHeading>1. Pro Rig Builder â€” The Most Feature-Complete</SectionHeading>
+        <SectionHeading>1. Pro Rig Builder — The Most Feature-Complete</SectionHeading>
         <div style={{background:"var(--card)",border:"1px solid var(--accent)",borderRadius:12,padding:"22px 26px",marginBottom:20}}>
           <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:12}}>
-            <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--accent)",fontWeight:700,letterSpacing:1.5}}>OUR PICK Â· BEST OVERALL</div>
+            <div style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--accent)",fontWeight:700,letterSpacing:1.5}}>OUR PICK · BEST OVERALL</div>
           </div>
-          <Para><strong>Features:</strong> PC Builder Â· Compatibility Engine Â· Real-Time Multi-Retailer Pricing Â· Hardware Scanner App (exclusive) Â· FPS Estimator (exclusive) Â· Bottleneck Calculator (exclusive) Â· Will It Run Â· USED Flags Â· Budget Build Wizard Â· Part Comparison Â· Power Calculator Â· Light/Dark Mode</Para>
+          <Para><strong>Features:</strong> PC Builder · Compatibility Engine · Real-Time Multi-Retailer Pricing · Hardware Scanner App (exclusive) · FPS Estimator (exclusive) · Bottleneck Calculator (exclusive) · Will It Run · USED Flags · Budget Build Wizard · Part Comparison · Power Calculator · Light/Dark Mode</Para>
           <Para><strong>Pricing engine:</strong> Compares across Amazon, Best Buy, Newegg, B&H, Antonline. In-stock prioritization.</Para>
           <Para><strong>Business model:</strong> Affiliate commissions only. <strong>Zero ads.</strong> No paid rankings.</Para>
           <Para><strong>Best for:</strong> Builders who want modern tools, an ad-free experience, and budget-aware upgrade recommendations.</Para>
         </div>
 
-        <SectionHeading>2. PCPartPicker â€” The Established Community</SectionHeading>
+        <SectionHeading>2. PCPartPicker — The Established Community</SectionHeading>
         <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:"22px 26px",marginBottom:20}}>
-          <Para><strong>Features:</strong> PC Builder Â· Compatibility Engine Â· Real-Time Multi-Retailer Pricing Â· Large Community Builds Library Â· Forums</Para>
+          <Para><strong>Features:</strong> PC Builder · Compatibility Engine · Real-Time Multi-Retailer Pricing · Large Community Builds Library · Forums</Para>
           <Para><strong>Pricing engine:</strong> Compares across major retailers.</Para>
           <Para><strong>Business model:</strong> Ads + affiliate commissions.</Para>
           <Para><strong>Best for:</strong> Browsing user-submitted completed builds and participating in community forums.</Para>
           <Para><strong>Missing:</strong> Hardware scanner, FPS estimator, bottleneck calc, USED flags, budget-aware recommendations, dark mode.</Para>
         </div>
 
-        <SectionHeading>3. Newegg PC Builder â€” The Retailer Tool</SectionHeading>
+        <SectionHeading>3. Newegg PC Builder — The Retailer Tool</SectionHeading>
         <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:"22px 26px",marginBottom:20}}>
-          <Para><strong>Features:</strong> PC Builder Â· Compatibility Filtering Â· AI Build Generation Â· Combo Bundle Discounts Â· Build Showcase</Para>
+          <Para><strong>Features:</strong> PC Builder · Compatibility Filtering · AI Build Generation · Combo Bundle Discounts · Build Showcase</Para>
           <Para><strong>Pricing engine:</strong> Newegg inventory only. No comparison with other retailers.</Para>
-          <Para><strong>Business model:</strong> Direct retailer â€” Newegg makes money when you buy through them. Rankings favor Newegg products.</Para>
+          <Para><strong>Business model:</strong> Direct retailer — Newegg makes money when you buy through them. Rankings favor Newegg products.</Para>
           <Para><strong>Best for:</strong> Users already committed to shopping at Newegg who want their AI assistant to generate a parts list.</Para>
           <Para><strong>Missing:</strong> Multi-retailer pricing, hardware scanner, performance prediction, USED tracking.</Para>
         </div>
 
-        <SectionHeading>4. Logical Increments â€” The Static Build Guide</SectionHeading>
+        <SectionHeading>4. Logical Increments — The Static Build Guide</SectionHeading>
         <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:"22px 26px",marginBottom:32}}>
-          <Para><strong>Features:</strong> Tiered Build Recommendations (Excellent, Outstanding, Exceptional, etc.) Â· Manual Updates Â· Educational Guides</Para>
+          <Para><strong>Features:</strong> Tiered Build Recommendations (Excellent, Outstanding, Exceptional, etc.) · Manual Updates · Educational Guides</Para>
           <Para><strong>Pricing engine:</strong> None. Links out to Amazon/Newegg with the current page's historical price.</Para>
           <Para><strong>Business model:</strong> Affiliate commissions only.</Para>
           <Para><strong>Best for:</strong> First-time builders who want a curated "just tell me what to buy" tier list without interactive configuration.</Para>
@@ -2525,9 +2525,9 @@ function BestPcBuilderToolsPage({go}) {
             </thead>
             <tbody>
               {[
-                ["Pro Rig Builder","12+ tools","Zero","âœ“ 5 retailers"],
-                ["PCPartPicker","5 core","Yes","âœ“ Many"],
-                ["Newegg PC Builder","5 core + AI","Promos","âœ— Newegg only"],
+                ["Pro Rig Builder","12+ tools","Zero","✓ 5 retailers"],
+                ["PCPartPicker","5 core","Yes","✓ Many"],
+                ["Newegg PC Builder","5 core + AI","Promos","✗ Newegg only"],
                 ["Logical Increments","Static","Minimal","Link-outs"]
               ].map((row,i)=>(
                 <tr key={i} style={{borderTop:"1px solid var(--bdr)",background:i===0?"var(--accent3)":"transparent"}}>
@@ -2555,7 +2555,7 @@ function HomePage({go,browse,th}){
   const totalParts=P.length;
   const totalDeals=P.filter(p=>isDeal(p)).length;
   const benchedCount=P.filter(p=>p.bench!=null).length;
-  // Featured deals â€” top 3 by savings, deduped by category
+  // Featured deals — top 3 by savings, deduped by category
   const featuredDeals=(()=>{const all=P.filter(p=>isDeal(p)).sort((a,b)=>dealSavings(b)-dealSavings(a));const seen=new Set();const out=[];for(const p of all){if(!seen.has(p.c)){seen.add(p.c);out.push(p);if(out.length>=3)break;}}return out;})();
   const updatedDate=new Date().toLocaleDateString('en-US',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
 
@@ -2595,7 +2595,7 @@ function HomePage({go,browse,th}){
       </div>
     </div>
 
-    {/* === Â§01 === */}
+    {/* === §01 === */}
     <div style={{maxWidth:1600,margin:"0 auto 32px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="section-grid">
       <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase",borderTop:"2px solid var(--txt)",paddingTop:8}}>&sect; 01</div>
       <div>
@@ -2607,7 +2607,7 @@ function HomePage({go,browse,th}){
       </div>
     </div>
 
-    {/* === Â§02 === */}
+    {/* === §02 === */}
     <div style={{maxWidth:1600,margin:"0 auto 32px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="section-grid">
       <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase",borderTop:"2px solid var(--txt)",paddingTop:8}}>&sect; 02</div>
       <div>
@@ -2619,7 +2619,7 @@ function HomePage({go,browse,th}){
       </div>
     </div>
 
-    {/* === Â§03 === */}
+    {/* === §03 === */}
     <div style={{maxWidth:1600,margin:"0 auto 56px",padding:"0 32px",display:"grid",gridTemplateColumns:"80px 1fr",gap:24}} className="section-grid">
       <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase",borderTop:"2px solid var(--txt)",paddingTop:8}}>&sect; 03</div>
       <div>
@@ -2631,7 +2631,7 @@ function HomePage({go,browse,th}){
       </div>
     </div>
 
-    {/* === THE TOOLS â€” 2x2 grid === */}
+    {/* === THE TOOLS — 2x2 grid === */}
     <div style={{maxWidth:1600,margin:"0 auto 56px",padding:"0 32px"}}>
       <div style={{borderTop:"2px solid var(--txt)",paddingTop:18}}>
         <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",letterSpacing:"0.04em",textTransform:"uppercase",marginBottom:18}}>The tools</div>
@@ -2715,7 +2715,7 @@ function HomePage({go,browse,th}){
   </div>;
 }
 
-/* â•â•â• SEARCH PAGE â•â•â• */
+/* ═══ SEARCH PAGE ═══ */
 
 /* === SMART SEARCH === */
 // Build a search blob from a product: name, brand, and relevant spec fields
@@ -2774,7 +2774,7 @@ const SEARCH_SYNONYMS = {
 function tokenMatches(token, blob) {
   // SHORT-TOKEN word-boundary fix: a 1-3 char token containing a letter
   // (e.g. "ti", "xt", "kf") must match a whole word or a digit-glued form
-  // like "5070ti" â€” never a substring buried inside another word.
+  // like "5070ti" — never a substring buried inside another word.
   const hasLetter = /[a-z]/i.test(token);
   const matchOne = (t) => {
     if (!t) return false;
@@ -2882,7 +2882,7 @@ const CATEGORY_GUIDES = {
   SoundCard: {
     title: "How to pick a sound card",
     look: ["SNR (signal-to-noise ratio) higher is cleaner", "Sample rate and bit depth for audio fidelity", "Headphone amp if you use high-impedance headphones"],
-    tip: "Most gamers don't need one â€” onboard audio is fine. Audiophiles benefit most"
+    tip: "Most gamers don't need one — onboard audio is fine. Audiophiles benefit most"
   },
   EthernetCard: {
     title: "How to pick an Ethernet adapter",
@@ -2942,7 +2942,7 @@ function CategoryGuide({ cat }) {
   return (
     <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:"14px 16px",marginBottom:16}}>
       <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--accent)",marginBottom:8,display:"flex",alignItems:"center",gap:6}}>
-        <span style={{fontSize:15}}>ðŸ’¡</span> {g.title}
+        <span style={{fontSize:15}}>💡</span> {g.title}
       </div>
       <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",lineHeight:1.6,marginBottom:8}}>
         What to look for:
@@ -2951,7 +2951,7 @@ function CategoryGuide({ cat }) {
         {g.look.map((item, i) => <li key={i} style={{marginBottom:2}}>{item}</li>)}
       </ul>
       <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mint)",marginTop:10,paddingTop:8,borderTop:"1px solid var(--bdr)",fontWeight:500}}>
-        ðŸ’° {g.tip}
+        💰 {g.tip}
       </div>
     </div>
   );
@@ -3023,25 +3023,25 @@ function MobileSearchPage({activeCat,initialQuery,th}){
   // Product list
   return <div className="fade" style={{padding:"12px 12px 80px",maxWidth:"100vw",overflow:"hidden"}}>
     <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:10,flexWrap:"wrap"}}>
-      <button onClick={()=>setCat("")} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:0}}>â† All</button>
+      <button onClick={()=>setCat("")} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer",padding:0}}>← All</button>
       <span style={{color:"var(--mute)"}}>/</span>
       <span style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--accent)",fontWeight:700}}>{CAT[cat].label}</span>
       <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginLeft:"auto"}}>{list.length}</span>
     </div>
 
     <div style={{position:"relative",marginBottom:10}}>
-      <span style={{position:"absolute",left:10,top:"50%",transform:"translateY(-50%)",fontSize:15,color:"var(--mute)"}}>ðŸ”</span>
+      <span style={{position:"absolute",left:10,top:"50%",transform:"translateY(-50%)",fontSize:15,color:"var(--mute)"}}>🔍</span>
       <input value={q} onChange={e=>setQ(e.target.value)} placeholder={"Search "+CAT[cat].label.toLowerCase()} style={{width:"100%",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px 10px 10px 34px",fontSize:15,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",boxSizing:"border-box"}}/>
-      {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:10,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:15,cursor:"pointer"}}>âœ•</button>}
+      {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:10,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:15,cursor:"pointer"}}>✕</button>}
     </div>
 
     <div style={{display:"flex",gap:8,marginBottom:14}}>
       <button onClick={()=>setFiltersOpen(true)} style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",gap:6,background:ac>0?"var(--accent3)":"var(--bg3)",border:"1px solid "+(ac>0?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"10px",fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:ac>0?"var(--accent)":"var(--txt)",cursor:"pointer"}}>
-        âš™ Filters{ac>0?" ("+ac+")":""}
+        ⚙ Filters{ac>0?" ("+ac+")":""}
       </button>
       <select value={sort} onChange={e=>setSort(e.target.value)} style={{flex:1,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px",fontSize:14,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",cursor:"pointer"}}>
-        <option value="price-asc">Price â†‘</option>
-        <option value="price-desc">Price â†“</option>
+        <option value="price-asc">Price ↑</option>
+        <option value="price-desc">Price ↓</option>
         <option value="rating-desc">Top Rated</option>
         <option value="bench-desc">Performance</option>
         <option value="value-desc">Best Value</option>
@@ -3064,7 +3064,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                 {p.r&&<Stars r={p.r} s={10}/>}
               </div>
               <div style={{display:"flex",alignItems:"center",gap:6,flexWrap:"wrap"}}>
-                {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:13,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>ðŸ”¥ DEAL -${dealSavings(p)}</span>}
+                {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:13,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL -${dealSavings(p)}</span>}
                 {(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}
                 {p.condition==="refurbished"&&<Tag color="var(--sky)">REFURB</Tag>}
                 {p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}
@@ -3075,7 +3075,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                 {p.msrp&&p.msrp>$(p)&&<span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span>}
               </div>
             </div>
-            <div style={{display:"flex",alignItems:"center",color:"var(--dim)",fontSize:22,transition:"transform .2s",transform:isExp?"rotate(90deg)":"none"}}>â€º</div>
+            <div style={{display:"flex",alignItems:"center",color:"var(--dim)",fontSize:22,transition:"transform .2s",transform:isExp?"rotate(90deg)":"none"}}>›</div>
           </div>
 
           {isExp&&<div style={{padding:"0 12px 14px",borderTop:"1px solid var(--bdr)"}}>
@@ -3088,7 +3088,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                       <span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span>
                       {ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}
                     </div>
-                    <div style={{fontFamily:"var(--ff)",fontSize:10,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"âœ“ In Stock":"âœ— Out of Stock"}</div>
+                    <div style={{fontFamily:"var(--ff)",fontSize:10,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
                   </div>
                   <div style={{display:"flex",alignItems:"center",gap:8,flexShrink:0}}>
                     <span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:800,color:ri===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
@@ -3101,7 +3101,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
               :<a href={p.deals?.amazon?.url||"#"} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"10px 12px",borderRadius:8,background:"var(--mint3)",border:"1px solid var(--mint)33",textDecoration:"none"}}>
                 <div>
                   <span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>Amazon</span>
-                  <div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--sky)"}}>âœ“ In Stock</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--sky)"}}>✓ In Stock</div>
                 </div>
                 <div style={{display:"flex",alignItems:"center",gap:8}}>
                   <span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span>
@@ -3124,7 +3124,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
               </div>
             </div>}
 
-            {/* â”€â”€ VALUE SCORE (mobile) â”€â”€ */}
+            {/* ── VALUE SCORE (mobile) ── */}
             {p.bench!=null&&<div style={{marginTop:14,background:"var(--bg4)",borderRadius:10,padding:"14px 16px"}}>
               <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1,marginBottom:12}}>VALUE SCORE</div>
               {(()=>{const ratio=Math.round(valueRatio(p)*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";const gl=ratio>=28?"Exceptional value":ratio>=20?"Great value":ratio>=14?"Good value":ratio>=8?"Average value":"Below average";return <div>
@@ -3133,12 +3133,12 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                   <div><div style={{fontFamily:"var(--ff)",fontSize:16,fontWeight:700,color:"var(--txt)"}}>{ratio.toFixed(1)}</div><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:gc}}>{gl}</div></div>
                 </div>
                 <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--dim)",lineHeight:1.6,background:"var(--bg2)",borderRadius:8,padding:"10px 12px"}}>
-                  Performance ({p.bench}%) Ã· Price (${fmtPrice($(p))}) = <span style={{color:"var(--txt)",fontWeight:600}}>{ratio.toFixed(1)}</span><br/>
-                  <span style={{color:"var(--mute)"}}>S â‰¥28 Â· A â‰¥20 Â· B â‰¥14 Â· C â‰¥8 Â· D &lt;8</span>
+                  Performance ({p.bench}%) ÷ Price (${fmtPrice($(p))}) = <span style={{color:"var(--txt)",fontWeight:600}}>{ratio.toFixed(1)}</span><br/>
+                  <span style={{color:"var(--mute)"}}>S ≥28 · A ≥20 · B ≥14 · C ≥8 · D &lt;8</span>
                 </div></div>;})()}
             </div>}
 
-            {/* â”€â”€ FUTURE-PROOFING (mobile) â”€â”€ */}
+            {/* ── FUTURE-PROOFING (mobile) ── */}
             {(p.c==="CPU"||p.c==="GPU"||p.c==="Motherboard")&&<div style={{marginTop:14,background:"var(--bg4)",borderRadius:10,padding:"14px 16px"}}>
               <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1,marginBottom:12}}>FUTURE-PROOFING</div>
               {(()=>{const f=[];
@@ -3150,33 +3150,33 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                 const isLGA1700=sock==="LGA1700"||/^(H610|B660|H670|Z690|H770|B760|Z790)$/.test(chip);
                 const isLGA1200=sock==="LGA1200"||/^(H410|B460|H470|Z490|H510|B560|H570|Z590)$/.test(chip);
                 if(p.c==="CPU"||p.c==="Motherboard"){
-                  if(isAM5) f.push({t:"AM5 â€” supported through 2027+",g:true});
-                  else if(isLGA1851) f.push({t:"LGA1851 â€” current Intel platform",g:true});
-                  else if(isAM4) f.push({t:"AM4 â€” end of life, no CPU upgrade path",g:false});
-                  else if(isLGA1700) f.push({t:"LGA1700 â€” dead socket, 14th gen is last",g:false});
-                  else if(isLGA1200) f.push({t:"LGA1200 â€” end of life, 2+ gens old",g:false});
+                  if(isAM5) f.push({t:"AM5 — supported through 2027+",g:true});
+                  else if(isLGA1851) f.push({t:"LGA1851 — current Intel platform",g:true});
+                  else if(isAM4) f.push({t:"AM4 — end of life, no CPU upgrade path",g:false});
+                  else if(isLGA1700) f.push({t:"LGA1700 — dead socket, 14th gen is last",g:false});
+                  else if(isLGA1200) f.push({t:"LGA1200 — end of life, 2+ gens old",g:false});
                 }
                 if(p.c==="CPU"){
                   if(p.memType==="DDR5") f.push({t:"DDR5 support",g:true});
-                  else if(p.memType==="DDR4") f.push({t:"DDR4 only â€” no DDR5 path",g:false});
+                  else if(p.memType==="DDR4") f.push({t:"DDR4 only — no DDR5 path",g:false});
                 }
                 if(p.c==="Motherboard"){
                   if(p.memType==="DDR5") f.push({t:"DDR5 memory",g:true});
-                  else if(p.memType==="DDR4") f.push({t:"DDR4 only â€” no DDR5 upgrades",g:false});
+                  else if(p.memType==="DDR4") f.push({t:"DDR4 only — no DDR5 upgrades",g:false});
                   if(/WiFi\s*7/i.test(p.fullTitle||p.n||"")) f.push({t:"WiFi 7 ready",g:true});
                   if(/PCIe\s*5/i.test(p.fullTitle||p.n||"")) f.push({t:"PCIe 5.0 lanes",g:true});
                 }
                 if(p.c==="GPU"){
-                  if(p.vram>=16)f.push({t:`${p.vram}GB VRAM â€” future-proof`,g:true});
-                  else if(p.vram>=12)f.push({t:`${p.vram}GB â€” adequate for now`,g:true});
-                  else if(p.vram)f.push({t:`${p.vram}GB VRAM â€” may limit at 4K`,g:false});
+                  if(p.vram>=16)f.push({t:`${p.vram}GB VRAM — future-proof`,g:true});
+                  else if(p.vram>=12)f.push({t:`${p.vram}GB — adequate for now`,g:true});
+                  else if(p.vram)f.push({t:`${p.vram}GB VRAM — may limit at 4K`,g:false});
                   if(p.arch==="Blackwell"||p.arch==="RDNA 4")f.push({t:"Current gen architecture",g:true});
                 }
                 if(!f.length)f.push({t:"Platform info unavailable",g:true});
-                return f.slice(0,5).map((x,i)=><div key={i} style={{display:"flex",alignItems:"flex-start",gap:10,padding:"8px 0",borderBottom:i<f.length-1?"1px solid var(--bdr)":"none"}}><span style={{fontSize:16,lineHeight:1,flexShrink:0}}>{x.g?"âœ…":"âš ï¸"}</span><span style={{fontFamily:"var(--ff)",fontSize:13,color:x.g?"var(--txt)":"var(--amber)",lineHeight:1.4}}>{x.t}</span></div>);})()}
+                return f.slice(0,5).map((x,i)=><div key={i} style={{display:"flex",alignItems:"flex-start",gap:10,padding:"8px 0",borderBottom:i<f.length-1?"1px solid var(--bdr)":"none"}}><span style={{fontSize:16,lineHeight:1,flexShrink:0}}>{x.g?"✅":"⚠️"}</span><span style={{fontFamily:"var(--ff)",fontSize:13,color:x.g?"var(--txt)":"var(--amber)",lineHeight:1.4}}>{x.t}</span></div>);})()}
             </div>}
 
-            {/* â”€â”€ CONSIDER INSTEAD (mobile) â”€â”€ */}
+            {/* ── CONSIDER INSTEAD (mobile) ── */}
             {p.bench!=null&&(()=>{const same=catP.filter(x=>x.id!==p.id&&x.bench!=null);const better=same.filter(x=>x.bench>=p.bench*0.9&&$(x)<$(p)*0.85).sort((a,b)=>(b.bench/$(b))-(a.bench/$(a)))[0];const upgrade=same.filter(x=>x.bench>p.bench*1.15&&$(x)<$(p)*1.2).sort((a,b)=>(b.bench/$(b))-(a.bench/$(a)))[0];if(!better&&!upgrade)return null;
               const specs=(x)=>{
                 if(x.c==="CPU")return [{l:"Cores",v:`${x.cores}C/${x.threads}T`},{l:"Boost",v:`${x.boostClock}GHz`},{l:"Socket",v:x.socket},{l:"TDP",v:`${x.tdp}W`}];
@@ -3201,11 +3201,11 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                 </div>
               </div>;})()}
 
-            {/* â”€â”€ CUSTOMER REVIEWS (mobile, collapsible) â”€â”€ */}
+            {/* ── CUSTOMER REVIEWS (mobile, collapsible) ── */}
             <div style={{marginTop:14}}>
               <button onClick={()=>setReviewsOpen(reviewsOpen===p.id?null:p.id)} style={{width:"100%",display:"flex",alignItems:"center",justifyContent:"space-between",background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:10,padding:"12px 16px",cursor:"pointer"}}>
                 <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1}}>CUSTOMER REVIEWS</span>
-                <span style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",transition:"transform .2s",transform:reviewsOpen===p.id?"rotate(90deg)":"none"}}>â€º</span>
+                <span style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",transition:"transform .2s",transform:reviewsOpen===p.id?"rotate(90deg)":"none"}}>›</span>
               </button>
               {reviewsOpen===p.id&&<div style={{marginTop:4}}><ProductReviews product={p}/></div>}
             </div>
@@ -3232,7 +3232,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
         <input type="range" min={0} max={Math.ceil(prMx/50)*50} value={Math.min(maxPr,Math.ceil(prMx/50)*50)} onChange={e=>setMaxPr(+e.target.value)} style={{width:"100%",marginBottom:4}}/>
         <div style={{display:"flex",justifyContent:"space-between",marginBottom:16}}>
           <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--mute)"}}>${minPr}</span>
-          <span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mint)",fontWeight:600}}>to ${maxPr>=5000?"âˆž":"$"+maxPr}</span>
+          <span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mint)",fontWeight:600}}>to ${maxPr>=5000?"∞":"$"+maxPr}</span>
         </div>
 
         {allBr.length>0&&<div style={{marginBottom:16}}>
@@ -3261,7 +3261,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
           <div style={{display:"flex",gap:6}}>
             {[0,4,4.5].map(rv=>{
               const on=minR===rv;
-              return <button key={rv} onClick={()=>setMinR(rv)} style={{flex:1,background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"8px",fontFamily:"var(--ff)",fontSize:13,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{rv?rv+"+ â˜…":"Any"}</button>;
+              return <button key={rv} onClick={()=>setMinR(rv)} style={{flex:1,background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"8px",fontFamily:"var(--ff)",fontSize:13,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{rv?rv+"+ ★":"Any"}</button>;
             })}
           </div>
         </div>
@@ -3317,11 +3317,11 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
             <input type="number" value={maxPr>=5000?"":maxPr} onChange={e=>setMaxPr(+e.target.value||5000)} placeholder="Max $" style={{width:"50%",background:"var(--bg4)",border:"1px solid var(--bdr)",borderRadius:4,padding:"6px 8px",fontSize:13,color:"var(--txt)",fontFamily:"var(--mono)",outline:"none"}}/>
           </div>
           <input type="range" min={0} max={Math.ceil(prMx/50)*50} value={Math.min(maxPr,Math.ceil(prMx/50)*50)} onChange={e=>setMaxPr(+e.target.value)} style={{width:"100%"}}/>
-          <div style={{display:"flex",justifyContent:"space-between",marginTop:2}}><span style={{fontFamily:"var(--mono)",fontSize:12,color:"var(--dim)",fontWeight:600}}>${minPr}</span><span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mint)",fontWeight:700}}>to ${maxPr>=5000?"âˆž":"$"+maxPr}</span></div>
+          <div style={{display:"flex",justifyContent:"space-between",marginTop:2}}><span style={{fontFamily:"var(--mono)",fontSize:12,color:"var(--dim)",fontWeight:600}}>${minPr}</span><span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--mint)",fontWeight:700}}>to ${maxPr>=5000?"∞":"$"+maxPr}</span></div>
         </FG>
         <FG label="BRAND">{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={catP.filter(p=>resolveBrand(p)===b).length}/>)}</FG>
         {allMarkets.length>0&&<FG label="MARKETPLACE" open={true}>{allMarkets.map(m=>{const cap=retailerDisplayName(m);const cnt=catP.filter(p=>p.deals&&typeof p.deals==="object"&&expandMarketplaceGroup(m).some(rk=>p.deals[rk]&&typeof p.deals[rk]==="object"&&p.deals[rk].price)).length;return <Chk key={m} label={cap} checked={marketplaces.includes(m)} onChange={()=>setMarketplaces(p=>p.includes(m)?p.filter(x=>x!==m):[...p,m])} count={cnt}/>;})}</FG>}
-        <FG label="RATING">{[4.5,4,0].map(rv=><Chk key={rv} label={rv?`${rv}+ â˜…`:"All"} checked={minR===rv} onChange={()=>setMinR(minR===rv?0:rv)}/>)}</FG>
+        <FG label="RATING">{[4.5,4,0].map(rv=><Chk key={rv} label={rv?`${rv}+ ★`:"All"} checked={minR===rv} onChange={()=>setMinR(minR===rv?0:rv)}/>)}</FG>
         {/* Category-specific filters */}
         {cat && CAT[cat]?.filters && Object.entries(CAT[cat].filters).map(([field,cfg])=>{
           if(cfg.type==="bool"){
@@ -3361,13 +3361,13 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
       <div>
         <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:10}}>
           <div style={{flex:1,position:"relative"}}>
-            <span style={{position:"absolute",left:8,top:"50%",transform:"translateY(-50%)",fontSize:13,color:"var(--mute)"}}>ðŸ”</span>
+            <span style={{position:"absolute",left:8,top:"50%",transform:"translateY(-50%)",fontSize:13,color:"var(--mute)"}}>🔍</span>
             <input value={q} onChange={e=>setQ(e.target.value)} placeholder={`Search ${cat?CAT[cat].label.toLowerCase():"all parts"}...`}
               style={{width:"100%",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:6,padding:"7px 8px 7px 28px",fontSize:13,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none"}}/>
-            {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:8,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:13,cursor:"pointer"}}>âœ•</button>}
+            {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:8,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:13,cursor:"pointer"}}>✕</button>}
           </div>
           <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>SORT</span>
-          <select value={sort} onChange={e=>setSort(e.target.value)} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,padding:"7px 8px",fontSize:10,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",cursor:"pointer"}}><option value="price-asc">Price â†‘</option><option value="price-desc">Price â†“</option><option value="rating-desc">Top Rated</option><option value="bench-desc">Performance</option><option value="value-desc">Best Value</option></select><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginLeft:8}}>VIEW</span><div style={{display:"flex",gap:0,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,overflow:"hidden"}}><button onClick={()=>setViewModeP("row")} title="Row view" style={{background:viewMode==="row"?"var(--accent3)":"transparent",border:"none",color:viewMode==="row"?"var(--accent)":"var(--dim)",padding:"6px 10px",cursor:"pointer",fontSize:14,fontFamily:"var(--ff)",fontWeight:600}}>â˜°</button><button onClick={()=>setViewModeP("grid")} title="Grid view" style={{background:viewMode==="grid"?"var(--accent3)":"transparent",border:"none",color:viewMode==="grid"?"var(--accent)":"var(--dim)",padding:"6px 10px",cursor:"pointer",fontSize:14,fontFamily:"var(--ff)",fontWeight:600}}>â–¦</button></div>
+          <select value={sort} onChange={e=>setSort(e.target.value)} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,padding:"7px 8px",fontSize:10,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",cursor:"pointer"}}><option value="price-asc">Price ↑</option><option value="price-desc">Price ↓</option><option value="rating-desc">Top Rated</option><option value="bench-desc">Performance</option><option value="value-desc">Best Value</option></select><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginLeft:8}}>VIEW</span><div style={{display:"flex",gap:0,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,overflow:"hidden"}}><button onClick={()=>setViewModeP("row")} title="Row view" style={{background:viewMode==="row"?"var(--accent3)":"transparent",border:"none",color:viewMode==="row"?"var(--accent)":"var(--dim)",padding:"6px 10px",cursor:"pointer",fontSize:14,fontFamily:"var(--ff)",fontWeight:600}}>☰</button><button onClick={()=>setViewModeP("grid")} title="Grid view" style={{background:viewMode==="grid"?"var(--accent3)":"transparent",border:"none",color:viewMode==="grid"?"var(--accent)":"var(--dim)",padding:"6px 10px",cursor:"pointer",fontSize:14,fontFamily:"var(--ff)",fontWeight:600}}>▦</button></div>
         </div>
         {/* Condition filter pills */}
         <div style={{display:"flex",gap:6,flexWrap:"wrap",marginTop:8,marginBottom:6}}>
@@ -3413,7 +3413,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                   {p.r && <Stars r={p.r} s={9}/>}
                 </div>
                 <div style={{display:"flex",gap:4,flexWrap:"wrap"}}>
-                  {isDeal(p)&&<span style={{background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:9,fontWeight:800,padding:"2px 6px",borderRadius:3,fontFamily:"var(--mono)"}}>ðŸ”¥ -${dealSavings(p)}</span>}
+                  {isDeal(p)&&<span style={{background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:9,fontWeight:800,padding:"2px 6px",borderRadius:3,fontFamily:"var(--mono)"}}>🔥 -${dealSavings(p)}</span>}
                   {(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}
                   {p.condition==="refurbished"&&<Tag color="var(--sky)">REFURB</Tag>}
                   {p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}
@@ -3423,7 +3423,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                     {isDeal(p)&&<div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>}
                     <div style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</div>
                   </div>
-                  {rr.length>0&&<button onClick={e=>{e.stopPropagation();window.open(rr[0].url,"_blank","noopener,noreferrer");}} style={{background:"var(--accent)",color:"#fff",border:"none",borderRadius:6,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:12,fontWeight:700,cursor:"pointer"}}>Buy â†’</button>}
+                  {rr.length>0&&<button onClick={e=>{e.stopPropagation();window.open(rr[0].url,"_blank","noopener,noreferrer");}} style={{background:"var(--accent)",color:"#fff",border:"none",borderRadius:6,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:12,fontWeight:700,cursor:"pointer"}}>Buy →</button>}
                 </div>
               </div>;
             })}
@@ -3435,12 +3435,12 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
           return <div key={p.id}>
             {isExp && !singleProductId && <ProductSchema p={p}/>}
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`4fr ${cols.map(()=>"1fr").join(" ")} 60px 80px 70px`,gap:8,padding:"10px 12px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0,transition:"background .2s"}}>
-              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}><ChevronRight size={16} strokeWidth={2} style={{flexShrink:0,color:"var(--dim)",transition:"transform .2s",transform:isExp?"rotate(90deg)":"rotate(0deg)"}}/>{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:100,height:100,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:56,width:100,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{cleanProductName(p)}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2,flexWrap:"wrap"}}><span style={{fontSize:13,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)",whiteSpace:"nowrap",flexShrink:0}}>ðŸ”¥ DEAL -${dealSavings(p)}</span>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
+              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}><ChevronRight size={16} strokeWidth={2} style={{flexShrink:0,color:"var(--dim)",transition:"transform .2s",transform:isExp?"rotate(90deg)":"rotate(0deg)"}}/>{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:100,height:100,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:56,width:100,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{cleanProductName(p)}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2,flexWrap:"wrap"}}><span style={{fontSize:13,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)",whiteSpace:"nowrap",flexShrink:0}}>🔥 DEAL -${dealSavings(p)}</span>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
               {cols.map(col=>{const v=p[col];const fmtVal=fmt(col,v,p);return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:typeof fmtVal==="string"&&fmtVal.includes("\n")?<div><div style={{fontFamily:"var(--ff)",fontSize:13,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal.split("\n")[0]}</div><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{fmtVal.split("\n")[1]}</div></div>:<span style={{fontFamily:"var(--ff)",fontSize:13,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal}</span>}</div>})}
-              {(()=>{if(p.bench==null)return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)"}}>â€”</span></div>;const ratio=Math.round(valueRatio(p)*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:800,color:gc}}>{grade}</span></div>;})()}
+              {(()=>{if(p.bench==null)return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)"}}>—</span></div>;const ratio=Math.round(valueRatio(p)*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:800,color:gc}}>{grade}</span></div>;})()}
               <div style={{textAlign:"right"}}>{isDeal(p)&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>}<div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</div>{rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{rr.length} stores</div>}</div>
               <div style={{display:"flex",justifyContent:"flex-end"}} onClick={e=>{e.stopPropagation();setExpanded(isExp?null:p.id);}}>
-                <button style={{background:isExp?"var(--bg4)":"var(--mint)",border:isExp?"1px solid var(--mint)":"none",borderRadius:6,padding:"6px 14px",cursor:"pointer",fontFamily:"var(--ff)",fontSize:10,fontWeight:700,color:isExp?"var(--mint)":"var(--bg)",transition:"all .15s"}}>{isExp?"Close":"Buy â†’"}</button>
+                <button style={{background:isExp?"var(--bg4)":"var(--mint)",border:isExp?"1px solid var(--mint)":"none",borderRadius:6,padding:"6px 14px",cursor:"pointer",fontFamily:"var(--ff)",fontSize:10,fontWeight:700,color:isExp?"var(--mint)":"var(--bg)",transition:"all .15s"}}>{isExp?"Close":"Buy →"}</button>
               </div>
             </div>
             {/* Expanded: pricing, availability & deals */}
@@ -3468,19 +3468,19 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                       <a key={r.name} href={r.url} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",padding:"12px 14px",borderRadius:8,textDecoration:"none",gap:12,background:ri===0?"var(--mint3)":"var(--bg4)",border:`1px solid ${ri===0?"var(--mint)33":"var(--bdr)"}`}}>
                         <div style={{flex:1}}>
                           <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span>{ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}</div>
-                          <div style={{fontFamily:"var(--ff)",fontSize:13,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"âœ“ In Stock":"âœ— Out of Stock"}</div>
+                          <div style={{fontFamily:"var(--ff)",fontSize:13,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
                         </div>
                         <div style={{display:"flex",alignItems:"center",gap:12}}>
                           <span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:ri===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
-                          <div style={{background:ri===0?"var(--mint)":"var(--bg3)",border:ri===0?"none":"1px solid var(--bdr2)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:ri===0?"var(--bg)":"var(--txt)"}}>Buy â†’</div>
+                          <div style={{background:ri===0?"var(--mint)":"var(--bg3)",border:ri===0?"none":"1px solid var(--bdr2)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:ri===0?"var(--bg)":"var(--txt)"}}>Buy →</div>
                         </div>
                       </a>
                       <button onClick={()=>setHistOpen(histOpenHere?null:histKey)} style={{display:"flex",alignItems:"center",gap:5,background:"none",border:"none",cursor:"pointer",fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase",padding:"3px 14px"}}>{histOpenHere?"\u25b2 Hide price history":"\u25bc 90-day price history"}</button>
                       {histOpenHere&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:8,marginBottom:4}}><PriceHistoryChart product={p} retailer={r.name}/></div>}
                       </React.Fragment>;})
                     :<a href={p.deals?.amazon?.url||"#"} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"14px 16px",borderRadius:8,background:"var(--mint3)",border:"1px solid var(--mint)33",textDecoration:"none"}}>
-                        <div><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>Amazon</span><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--sky)",marginTop:3}}>âœ“ In Stock</div></div>
-                        <div style={{display:"flex",alignItems:"center",gap:12}}><span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span><div style={{background:"var(--mint)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--bg)"}}>Buy â†’</div></div>
+                        <div><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>Amazon</span><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--sky)",marginTop:3}}>✓ In Stock</div></div>
+                        <div style={{display:"flex",alignItems:"center",gap:12}}><span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span><div style={{background:"var(--mint)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--bg)"}}>Buy →</div></div>
                       </a>}
                     {rr.length>0&&ALL_RETAILERS.filter(name=>!rr.some(r=>r.name===name)).map(name=>{
                       const cap=retailerDisplayName(name);
@@ -3493,7 +3493,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                       </div>;
                     })}
                   </div>
-                  {/* Value Â· Ratings Â· Future-Proofing */}
+                  {/* Value · Ratings · Future-Proofing */}
                   <div style={{display:"flex",alignItems:"stretch",gap:14,marginTop:10}}>
                     <div style={{flex:1,minWidth:0,display:"flex"}}>
                       {(()=>{ const _v = (
@@ -3505,8 +3505,8 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                       <div><div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--txt)"}}>{ratio.toFixed(1)}</div><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:gc}}>{gl}</div></div>
                     </div>
                     <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.6,background:"var(--bg2)",borderRadius:8,padding:"10px 12px"}}>
-                      Performance ({p.bench}%) Ã· Price (${fmtPrice($(p))}) = <span style={{color:"var(--txt)",fontWeight:600}}>{ratio.toFixed(1)}</span><br/>
-                      <span style={{color:"var(--mute)"}}>S â‰¥28 Â· A â‰¥20 Â· B â‰¥14 Â· C â‰¥8 Â· D &lt;8</span>
+                      Performance ({p.bench}%) ÷ Price (${fmtPrice($(p))}) = <span style={{color:"var(--txt)",fontWeight:600}}>{ratio.toFixed(1)}</span><br/>
+                      <span style={{color:"var(--mute)"}}>S ≥28 · A ≥20 · B ≥14 · C ≥8 · D &lt;8</span>
                     </div></div>;})()}
                 </div>
                       ); return _v || <div style={{flex:1}}/>; })()}
@@ -3526,38 +3526,38 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                     const isLGA1200=sock==="LGA1200"||/^(H410|B460|H470|Z490|H510|B560|H570|Z590)$/.test(chip);
 
                     if(p.c==="CPU"||p.c==="Motherboard"){
-                      if(isAM5) f.push({t:"AM5 â€” supported through 2027+",g:true});
-                      else if(isLGA1851) f.push({t:"LGA1851 â€” current Intel platform",g:true});
-                      else if(isAM4) f.push({t:"AM4 â€” end of life, no CPU upgrade path",g:false});
-                      else if(isLGA1700) f.push({t:"LGA1700 â€” dead socket, 14th gen is last",g:false});
-                      else if(isLGA1200) f.push({t:"LGA1200 â€” end of life, 2+ gens old",g:false});
+                      if(isAM5) f.push({t:"AM5 — supported through 2027+",g:true});
+                      else if(isLGA1851) f.push({t:"LGA1851 — current Intel platform",g:true});
+                      else if(isAM4) f.push({t:"AM4 — end of life, no CPU upgrade path",g:false});
+                      else if(isLGA1700) f.push({t:"LGA1700 — dead socket, 14th gen is last",g:false});
+                      else if(isLGA1200) f.push({t:"LGA1200 — end of life, 2+ gens old",g:false});
                     }
                     if(p.c==="CPU"){
                       if(p.memType==="DDR5") f.push({t:"DDR5 support",g:true});
-                      else if(p.memType==="DDR4") f.push({t:"DDR4 only â€” no DDR5 path",g:false});
+                      else if(p.memType==="DDR4") f.push({t:"DDR4 only — no DDR5 path",g:false});
                     }
                     if(p.c==="Motherboard"){
                       if(p.memType==="DDR5") f.push({t:"DDR5 memory",g:true});
-                      else if(p.memType==="DDR4") f.push({t:"DDR4 only â€” no DDR5 upgrades",g:false});
+                      else if(p.memType==="DDR4") f.push({t:"DDR4 only — no DDR5 upgrades",g:false});
                       if(/WiFi\s*7/i.test(p.fullTitle||p.n||"")) f.push({t:"WiFi 7 ready",g:true});
                       if(/PCIe\s*5/i.test(p.fullTitle||p.n||"")) f.push({t:"PCIe 5.0 lanes",g:true});
                     }
                     if(p.c==="GPU"){
-                      if(p.vram>=16)f.push({t:`${p.vram}GB VRAM â€” future-proof`,g:true});
-                      else if(p.vram>=12)f.push({t:`${p.vram}GB â€” adequate for now`,g:true});
-                      else if(p.vram)f.push({t:`${p.vram}GB VRAM â€” may limit at 4K`,g:false});
+                      if(p.vram>=16)f.push({t:`${p.vram}GB VRAM — future-proof`,g:true});
+                      else if(p.vram>=12)f.push({t:`${p.vram}GB — adequate for now`,g:true});
+                      else if(p.vram)f.push({t:`${p.vram}GB VRAM — may limit at 4K`,g:false});
                       if(p.arch==="Blackwell"||p.arch==="RDNA 4")f.push({t:"Current gen architecture",g:true});
                     }
                     if(!f.length)f.push({t:"Platform info unavailable",g:true});
-                    return f.slice(0,5).map((x,i)=><div key={i} style={{display:"flex",alignItems:"flex-start",gap:10,padding:"8px 0",borderBottom:i<f.length-1?"1px solid var(--bdr)":"none"}}><span style={{fontSize:17,lineHeight:1,flexShrink:0}}>{x.g?"âœ…":"âš ï¸"}</span><span style={{fontFamily:"var(--ff)",fontSize:14,color:x.g?"var(--txt)":"var(--amber)",lineHeight:1.4}}>{x.t}</span></div>);})()}
+                    return f.slice(0,5).map((x,i)=><div key={i} style={{display:"flex",alignItems:"flex-start",gap:10,padding:"8px 0",borderBottom:i<f.length-1?"1px solid var(--bdr)":"none"}}><span style={{fontSize:17,lineHeight:1,flexShrink:0}}>{x.g?"✅":"⚠️"}</span><span style={{fontFamily:"var(--ff)",fontSize:14,color:x.g?"var(--txt)":"var(--amber)",lineHeight:1.4}}>{x.t}</span></div>);})()}
                 </div>
                       ); return _f || <div style={{flex:1}}/>; })()}
                     </div>
                   </div>
                   {!(p.msrp&&p.msrp>$(p))&&rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textAlign:"center",marginTop:8}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(rr[rr.length-1].price-rr[0].price).toFixed(2)}</span> at {rr[0].name} vs {rr[rr.length-1].name}</div>}
-                  {p.msrp&&p.msrp>$(p)&&<div style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:6,background:"var(--bg4)",border:"1px solid var(--bdr)",marginTop:8,position:"relative"}}><span style={{fontSize:17}}>ðŸ’°</span><div style={{flex:1}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Below MSRP</div><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>Was <span style={{textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span> â†’ ${fmtPrice($(p))}</div></div><div style={{position:"absolute",left:"50%",transform:"translateX(-50%)",display:"flex",justifyContent:"center",pointerEvents:"none"}}>{rr.length>1&&<span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textAlign:"center",whiteSpace:"nowrap"}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(rr[rr.length-1].price-rr[0].price).toFixed(2)}</span> at {rr[0].name} vs {rr[rr.length-1].name}</span>}</div><span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--mint)"}}>{Math.round((1-$(p)/p.msrp)*100)}% off</span></div>}
+                  {p.msrp&&p.msrp>$(p)&&<div style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:6,background:"var(--bg4)",border:"1px solid var(--bdr)",marginTop:8,position:"relative"}}><span style={{fontSize:17}}>💰</span><div style={{flex:1}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Below MSRP</div><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>Was <span style={{textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span> → ${fmtPrice($(p))}</div></div><div style={{position:"absolute",left:"50%",transform:"translateX(-50%)",display:"flex",justifyContent:"center",pointerEvents:"none"}}>{rr.length>1&&<span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textAlign:"center",whiteSpace:"nowrap"}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(rr[rr.length-1].price-rr[0].price).toFixed(2)}</span> at {rr[0].name} vs {rr[rr.length-1].name}</span>}</div><span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--mint)"}}>{Math.round((1-$(p)/p.msrp)*100)}% off</span></div>}
                   {/* Product Image */}
-                  {(p.used===true||p.condition==="used")&&<div style={{marginTop:14,background:"linear-gradient(90deg,#F59E0B 0%,#D97706 100%)",color:"#1A1A20",padding:"10px 14px",borderRadius:8,fontFamily:"var(--ff)",fontSize:13,fontWeight:700,display:"flex",alignItems:"center",gap:10,border:"1px solid #D97706"}}><span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:900,letterSpacing:1.5,background:"#1A1A20",color:"#F59E0B",padding:"3px 8px",borderRadius:4}}>USED</span><span>Pre-owned item â€” check seller rating, condition notes, and return policy before purchasing.</span></div>}{p.img&&<div style={{marginTop:14,background:"var(--bg4)",borderRadius:10,padding:16,display:"flex",alignItems:"center",justifyContent:"center"}}>
+                  {(p.used===true||p.condition==="used")&&<div style={{marginTop:14,background:"linear-gradient(90deg,#F59E0B 0%,#D97706 100%)",color:"#1A1A20",padding:"10px 14px",borderRadius:8,fontFamily:"var(--ff)",fontSize:13,fontWeight:700,display:"flex",alignItems:"center",gap:10,border:"1px solid #D97706"}}><span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:900,letterSpacing:1.5,background:"#1A1A20",color:"#F59E0B",padding:"3px 8px",borderRadius:4}}>USED</span><span>Pre-owned item — check seller rating, condition notes, and return policy before purchasing.</span></div>}{p.img&&<div style={{marginTop:14,background:"var(--bg4)",borderRadius:10,padding:16,display:"flex",alignItems:"center",justifyContent:"center"}}>
                     <img loading="lazy" decoding="async" src={p.img.replace('_AC_SL300_','_AC_SL500_')} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{maxWidth:"100%",maxHeight:220,objectFit:"contain",borderRadius:6}}/>
                   </div>}
                 </div>
@@ -3600,15 +3600,15 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
   </div>;
 }
 
-/* â•â•â• BUILDER FPS PANEL â•â•â• */
+/* ═══ BUILDER FPS PANEL ═══ */
 function BuilderFPS({gpu,cpu,ram}){
   const [fpsRes,setFpsRes]=useState("1080p");
   const [fpsQual,setFpsQual]=useState("Ultra");
   const sample=[
-    {name:"Cyberpunk 2077",icon:"ðŸŒ†"},{name:"Fortnite",icon:"ðŸ—ï¸"},{name:"Valorant",icon:"ðŸŽ¯"},
-    {name:"Elden Ring",icon:"ðŸ’"},{name:"Call of Duty: MW III",icon:"ðŸ”«"},{name:"Baldur's Gate 3",icon:"ðŸŽ²"},
-    {name:"Black Myth: Wukong",icon:"ðŸ’"},{name:"GTA VI",icon:"ðŸŒ´"},{name:"Counter-Strike 2",icon:"ðŸ’£"},
-    {name:"Hogwarts Legacy",icon:"ðŸ§™"},{name:"God of War RagnarÃ¶k",icon:"ðŸª“"},{name:"Apex Legends",icon:"ðŸ†"}
+    {name:"Cyberpunk 2077",icon:"🌆"},{name:"Fortnite",icon:"🏗️"},{name:"Valorant",icon:"🎯"},
+    {name:"Elden Ring",icon:"💍"},{name:"Call of Duty: MW III",icon:"🔫"},{name:"Baldur's Gate 3",icon:"🎲"},
+    {name:"Black Myth: Wukong",icon:"🐒"},{name:"GTA VI",icon:"🌴"},{name:"Counter-Strike 2",icon:"💣"},
+    {name:"Hogwarts Legacy",icon:"🧙"},{name:"God of War Ragnarök",icon:"🪓"},{name:"Apex Legends",icon:"🏆"}
   ];
   const hasData=gpu&&cpu;
   const gpuKey=hasData?matchGPU(gpu.n):null;
@@ -3632,7 +3632,7 @@ function BuilderFPS({gpu,cpu,ram}){
     {/* Header with controls */}
     <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:12,flexWrap:"wrap",gap:8}}>
       <div>
-        <div style={{fontFamily:"var(--mono)",fontSize:9,color:ready?"var(--sky)":"var(--dim)",letterSpacing:1.5,fontWeight:600}}>ðŸŽ® ESTIMATED GAMING PERFORMANCE</div>
+        <div style={{fontFamily:"var(--mono)",fontSize:9,color:ready?"var(--sky)":"var(--dim)",letterSpacing:1.5,fontWeight:600}}>🎮 ESTIMATED GAMING PERFORMANCE</div>
         <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginTop:2}}>
           {ready?`${gpuKey} + ${cpuKey}`:missing.length?`Select ${missing.join(" & ")} to see estimates`:"Waiting for parts..."}
         </div>
@@ -3649,7 +3649,7 @@ function BuilderFPS({gpu,cpu,ram}){
         {/* Avg FPS */}
         <div style={{textAlign:"right",minWidth:50}}>
           <div style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--dim)"}}>AVG FPS</div>
-          <div style={{fontFamily:"var(--mono)",fontSize:22,fontWeight:800,color:ready?(avg>=144?"var(--mint)":avg>=100?"var(--sky)":avg>=60?"var(--amber)":"var(--rose)"):"var(--mute)"}}>{ready?avg:"â€”"}</div>
+          <div style={{fontFamily:"var(--mono)",fontSize:22,fontWeight:800,color:ready?(avg>=144?"var(--mint)":avg>=100?"var(--sky)":avg>=60?"var(--amber)":"var(--rose)"):"var(--mute)"}}>{ready?avg:"—"}</div>
         </div>
       </div>
     </div>
@@ -3666,7 +3666,7 @@ function BuilderFPS({gpu,cpu,ram}){
               {r&&<div style={{width:`${Math.min(r.fps/200*100,100)}%`,height:"100%",background:tc(r.tier),borderRadius:2,transition:"width .4s ease"}}/>}
             </div>
           </div>
-          <div style={{fontFamily:"var(--mono)",fontSize:15,fontWeight:700,color:r?tc(r.tier):"var(--mute)",flexShrink:0,minWidth:28,textAlign:"right"}}>{r?r.fps:"â€”"}</div>
+          <div style={{fontFamily:"var(--mono)",fontSize:15,fontWeight:700,color:r?tc(r.tier):"var(--mute)",flexShrink:0,minWidth:28,textAlign:"right"}}>{r?r.fps:"—"}</div>
         </div>;
       })}
     </div>
@@ -3684,23 +3684,23 @@ function BuilderFPS({gpu,cpu,ram}){
       </div>
       <div style={{display:"flex",gap:8,alignItems:"center"}}>
         {ram&&ready&&<span style={{fontFamily:"var(--mono)",fontSize:7,color:ramMult>=1.0?"var(--mint)":"var(--amber)"}}>
-          âš¡ {ram.memType||"DDR5"}-{ram.speed||5600} {ram.capacity||32}GB ({ramMult>=1.0?"+":""}{Math.round((ramMult-1)*100)}% RAM impact)
+          ⚡ {ram.memType||"DDR5"}-{ram.speed||5600} {ram.capacity||32}GB ({ramMult>=1.0?"+":""}{Math.round((ramMult-1)*100)}% RAM impact)
         </span>}
         {!ram&&ready&&<span style={{fontFamily:"var(--mono)",fontSize:7,color:"var(--dim)"}}>
-          âš¡ Add RAM for more accurate estimates
+          ⚡ Add RAM for more accurate estimates
         </span>}
         {bn.length>0&&<span style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--amber)"}}>
-          âš ï¸ {bn[0].bottleneck} bottleneck in {bn.length} title{bn.length>1?"s":""}
+          ⚠️ {bn[0].bottleneck} bottleneck in {bn.length} title{bn.length>1?"s":""}
         </span>}
       </div>
     </div>
     {ramNote&&<div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--rose)",marginTop:4}}>
-      âš ï¸ {ramNote}
+      ⚠️ {ramNote}
     </div>}
   </div>;
 }
 
-/* â•â•â• BUILDER PART PICKER (full page with filters) â•â•â• */
+/* ═══ BUILDER PART PICKER (full page with filters) ═══ */
 function CompatibilityBanner({cat, build}){
   if(!build) return null;
   const cpu = build.CPU, mobo = build.Motherboard, cas = build.Case, gpu = build.GPU;
@@ -3708,7 +3708,7 @@ function CompatibilityBanner({cat, build}){
   const msgs = [];
   const shortName = (p, max=40) => {
     if(!p || !p.n) return "your part";
-    return p.n.length > max ? p.n.slice(0, max) + "â€¦" : p.n;
+    return p.n.length > max ? p.n.slice(0, max) + "…" : p.n;
   };
   if(cat === "Motherboard"){
     if(cpu && cpu.socket){
@@ -3727,7 +3727,7 @@ function CompatibilityBanner({cat, build}){
     const memType = (mobo && mobo.memType) || (cpu && cpu.memType);
     if(memType){
       const src = mobo && mobo.memType ? `motherboard` : `CPU`;
-      msgs.push(`Your ${src} requires **${memType}** memory. DDR4 and DDR5 are physically different â€” they don\'t fit each other\'s slots. We\'re filtering to ${memType} kits only.`);
+      msgs.push(`Your ${src} requires **${memType}** memory. DDR4 and DDR5 are physically different — they don\'t fit each other\'s slots. We\'re filtering to ${memType} kits only.`);
     }
     if(mobo && mobo.memSlots){
       msgs.push(`Your motherboard has **${mobo.memSlots} RAM slots**. Picking a 2-stick kit leaves room to upgrade later; a 4-stick kit fills the board.`);
@@ -3738,12 +3738,12 @@ function CompatibilityBanner({cat, build}){
       msgs.push(`Your CPU uses the **${cpu.socket}** socket. We\'re filtering to coolers with mounting brackets that fit it. Coolers come with multiple brackets, but a few are socket-specific.`);
     }
     if(cas && cas.coolerClear){
-      msgs.push(`Your case allows coolers up to **${cas.coolerClear}mm** tall. Bigger air coolers won\'t fit â€” we\'ve hidden the ones that are too tall.`);
+      msgs.push(`Your case allows coolers up to **${cas.coolerClear}mm** tall. Bigger air coolers won\'t fit — we\'ve hidden the ones that are too tall.`);
     }
   }
   else if(cat === "GPU"){
     if(cas && cas.gpuClear){
-      msgs.push(`Your case fits GPUs up to **${cas.gpuClear}mm** long. Modern flagship cards can hit 350mm+ â€” we\'re hiding ones that won\'t physically fit.`);
+      msgs.push(`Your case fits GPUs up to **${cas.gpuClear}mm** long. Modern flagship cards can hit 350mm+ — we\'re hiding ones that won\'t physically fit.`);
     }
   }
   else if(cat === "Case"){
@@ -3771,7 +3771,7 @@ function CompatibilityBanner({cat, build}){
     });
   };
   return <div style={{borderLeft:"3px solid var(--accent)",background:"var(--accent3)",padding:"14px 18px",marginBottom:24,maxWidth:1000}}>
-    <div style={{fontFamily:"var(--mono)",fontSize:10,letterSpacing:"0.12em",textTransform:"uppercase",color:"var(--accent)",fontWeight:600,marginBottom:10}}>ðŸ’¡ Heads up &middot; Why this list is filtered</div>
+    <div style={{fontFamily:"var(--mono)",fontSize:10,letterSpacing:"0.12em",textTransform:"uppercase",color:"var(--accent)",fontWeight:600,marginBottom:10}}>💡 Heads up &middot; Why this list is filtered</div>
     <ul style={{margin:0,padding:0,listStyle:"none"}}>
       {msgs.map((msg, i) => <li key={i} style={{fontFamily:"var(--ff)",fontSize:13.5,color:"var(--txt)",lineHeight:1.65,marginBottom:i < msgs.length - 1 ? 10 : 0}}>{renderMsg(msg)}</li>)}
     </ul>
@@ -3795,9 +3795,9 @@ function CurrentBuildSidebar({cat, build}){
             <CatIcon c={slot} size={16} color={isCurrent ? "var(--accent)" : "var(--dim)"}/>
           </div>
           <div style={{flex:1,minWidth:0}}>
-            <div style={{fontSize:11,fontWeight:600,color:isCurrent?"var(--accent)":"var(--dim)",letterSpacing:"0.04em",textTransform:"uppercase"}}>{slot}{isCurrent && " Â· picking"}</div>
+            <div style={{fontSize:11,fontWeight:600,color:isCurrent?"var(--accent)":"var(--dim)",letterSpacing:"0.04em",textTransform:"uppercase"}}>{slot}{isCurrent && " · picking"}</div>
             {p ? <div style={{fontSize:12,color:"var(--txt)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap",marginTop:2}}>{cleanProductName(p)}</div>
-               : <div style={{fontSize:12,color:"var(--mute)",fontStyle:"italic",marginTop:2}}>â€”</div>}
+               : <div style={{fontSize:12,color:"var(--mute)",fontStyle:"italic",marginTop:2}}>—</div>}
           </div>
         </div>;
       })}
@@ -3855,12 +3855,12 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
       <div>
     {/* Header */}
     <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:20}}>
-      <button onClick={onBack} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"8px 14px",cursor:"pointer",display:"flex",alignItems:"center",gap:6,color:"var(--txt)",fontFamily:"var(--ff)",fontSize:13,fontWeight:600}}>â† Back to Build</button>
+      <button onClick={onBack} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"8px 14px",cursor:"pointer",display:"flex",alignItems:"center",gap:6,color:"var(--txt)",fontFamily:"var(--ff)",fontSize:13,fontWeight:600}}>← Back to Build</button>
       <div style={{flex:1}}>
         <h2 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)",display:"flex",alignItems:"center",gap:8}}>
           <CatIcon c={cat} size={22}/> Choose {meta.singular||meta.label}
         </h2>
-        <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginTop:2}}>{compatList.length} compatible parts Â· {list.length} shown</div>
+        <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginTop:2}}>{compatList.length} compatible parts · {list.length} shown</div>
       </div>
     </div>
 
@@ -3876,7 +3876,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
         </FG>
         <FG label="BRAND">{allBr.map(b=><Chk key={b} label={b} checked={brands.includes(b)} onChange={()=>setBrands(p=>p.includes(b)?p.filter(x=>x!==b):[...p,b])} count={compatList.filter(p=>resolveBrand(p)===b).length}/>)}</FG>
         <FG label="CONDITION">{(()=>{const getCond=p=>(p.used===true||p.condition==="used")?"Used":(p.condition==="refurbished")?"Refurbished":(p.condition==="open-box")?"Open Box":"New";const counts={};compatList.forEach(p=>{const k=getCond(p);counts[k]=(counts[k]||0)+1;});return ["New","Used","Refurbished","Open Box"].filter(c=>counts[c]>0).map(c=><Chk key={c} label={c} checked={conditions.includes(c)} onChange={()=>setConditions(p=>p.includes(c)?p.filter(x=>x!==c):[...p,c])} count={counts[c]}/>);})()}</FG>
-        <FG label="RATING">{[4.5,4,0].map(rv=><Chk key={rv} label={rv?`${rv}+ â˜…`:"All"} checked={minR===rv} onChange={()=>setMinR(minR===rv?0:rv)}/>)}</FG>
+        <FG label="RATING">{[4.5,4,0].map(rv=><Chk key={rv} label={rv?`${rv}+ ★`:"All"} checked={minR===rv} onChange={()=>setMinR(minR===rv?0:rv)}/>)}</FG>
         {/* Category-specific filters (same logic as SearchPage) */}
         {cat && CAT[cat]?.filters && Object.entries(CAT[cat].filters).map(([field,cfg])=>{
           if(cfg.type==="boolean"){
@@ -3916,15 +3916,15 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
       <div>
         <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:10,position:"sticky",top:64,zIndex:50,background:"var(--bg)",padding:"10px 0",borderBottom:"1px solid var(--bdr)"}}>
           <div style={{flex:1,position:"relative"}}>
-            <span style={{position:"absolute",left:8,top:"50%",transform:"translateY(-50%)",fontSize:13,color:"var(--mute)"}}>ðŸ”</span>
+            <span style={{position:"absolute",left:8,top:"50%",transform:"translateY(-50%)",fontSize:13,color:"var(--mute)"}}>🔍</span>
             <input value={q} onChange={e=>setQ(e.target.value)} placeholder={`Search ${meta.label.toLowerCase()}...`}
               style={{width:"100%",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:6,padding:"7px 8px 7px 28px",fontSize:13,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none"}}/>
-            {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:8,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:13,cursor:"pointer"}}>âœ•</button>}
+            {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:8,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:13,cursor:"pointer"}}>✕</button>}
           </div>
           <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>SORT</span>
           <select value={sort} onChange={e=>setSort(e.target.value)} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,padding:"7px 8px",fontSize:10,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",cursor:"pointer"}}>
-            <option value="price-asc">Price â†‘</option><option value="price-desc">Price â†“</option><option value="rating-desc">Top Rated</option><option value="bench-desc">Performance</option>
-          </select><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginLeft:8}}>VIEW</span><div style={{display:"flex",gap:0,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,overflow:"hidden"}}><button onClick={()=>setViewModeP("row")} title="Row view" style={{background:viewMode==="row"?"var(--accent3)":"transparent",border:"none",color:viewMode==="row"?"var(--accent)":"var(--dim)",padding:"6px 10px",cursor:"pointer",fontSize:14,fontFamily:"var(--ff)",fontWeight:600}}>â˜°</button><button onClick={()=>setViewModeP("grid")} title="Grid view" style={{background:viewMode==="grid"?"var(--accent3)":"transparent",border:"none",color:viewMode==="grid"?"var(--accent)":"var(--dim)",padding:"6px 10px",cursor:"pointer",fontSize:14,fontFamily:"var(--ff)",fontWeight:600}}>â–¦</button></div>
+            <option value="price-asc">Price ↑</option><option value="price-desc">Price ↓</option><option value="rating-desc">Top Rated</option><option value="bench-desc">Performance</option>
+          </select><span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",marginLeft:8}}>VIEW</span><div style={{display:"flex",gap:0,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,overflow:"hidden"}}><button onClick={()=>setViewModeP("row")} title="Row view" style={{background:viewMode==="row"?"var(--accent3)":"transparent",border:"none",color:viewMode==="row"?"var(--accent)":"var(--dim)",padding:"6px 10px",cursor:"pointer",fontSize:14,fontFamily:"var(--ff)",fontWeight:600}}>☰</button><button onClick={()=>setViewModeP("grid")} title="Grid view" style={{background:viewMode==="grid"?"var(--accent3)":"transparent",border:"none",color:viewMode==="grid"?"var(--accent)":"var(--dim)",padding:"6px 10px",cursor:"pointer",fontSize:14,fontFamily:"var(--ff)",fontWeight:600}}>▦</button></div>
         </div>
 
         {/* Table header */}
@@ -3949,7 +3949,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
                   <div style={{display:"flex",alignItems:"center",gap:4,marginTop:1}}>
                     <span style={{fontSize:10,color:"var(--dim)"}}>{p.b}</span>
                     <Stars r={p.r} s={9}/>
-                    {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:13,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>ðŸ”¥ DEAL -${dealSavings(p)}</span>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}
+                    {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:13,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL -${dealSavings(p)}</span>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}
                   </div>
                 </div>
               </div>
@@ -3988,7 +3988,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
   </div>;
 }
 
-/* â•â•â• BUILDER â•â•â• */
+/* ═══ BUILDER ═══ */
 
 /* === MOBILE BUILDER PART PICKER === */
 function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build}){
@@ -4035,7 +4035,7 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,b
   return <div className="fade" style={{padding:"12px 12px 80px",maxWidth:"100vw",overflow:"hidden"}}>
     {/* Header */}
     <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:14}}>
-      <button onClick={onBack} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"8px 12px",cursor:"pointer",fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",flexShrink:0}}>â† Back</button>
+      <button onClick={onBack} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"8px 12px",cursor:"pointer",fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",flexShrink:0}}>← Back</button>
       <div style={{flex:1,minWidth:0}}>
         <div style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:800,color:"var(--txt)",display:"flex",alignItems:"center",gap:6,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
           <CatIcon c={cat} size={22}/> Choose {meta.singular||meta.label}
@@ -4048,17 +4048,17 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,b
     <CategoryGuide cat={cat}/>
     {/* Search bar */}
     <div style={{position:"relative",marginBottom:10}}>
-      <span style={{position:"absolute",left:10,top:"50%",transform:"translateY(-50%)",fontSize:15,color:"var(--mute)"}}>ðŸ”</span>
+      <span style={{position:"absolute",left:10,top:"50%",transform:"translateY(-50%)",fontSize:15,color:"var(--mute)"}}>🔍</span>
       <input value={q} onChange={e=>setQ(e.target.value)} placeholder={"Search "+meta.label.toLowerCase()} style={{width:"100%",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px 10px 10px 34px",fontSize:15,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",boxSizing:"border-box"}}/>
-      {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:10,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:15,cursor:"pointer"}}>âœ•</button>}
+      {q&&<button onClick={()=>setQ("")} style={{position:"absolute",right:10,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",color:"var(--dim)",fontSize:15,cursor:"pointer"}}>✕</button>}
     </div>
 
     {/* Filter + Sort bar */}
     <div style={{display:"flex",gap:8,marginBottom:14}}>
-      <button onClick={()=>setFiltersOpen(true)} style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",gap:6,background:ac>0?"var(--accent3)":"var(--bg3)",border:"1px solid "+(ac>0?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"10px",fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:ac>0?"var(--accent)":"var(--txt)",cursor:"pointer"}}>âš™ Filters{ac>0?" ("+ac+")":""}</button>
+      <button onClick={()=>setFiltersOpen(true)} style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",gap:6,background:ac>0?"var(--accent3)":"var(--bg3)",border:"1px solid "+(ac>0?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"10px",fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:ac>0?"var(--accent)":"var(--txt)",cursor:"pointer"}}>⚙ Filters{ac>0?" ("+ac+")":""}</button>
       <select value={sort} onChange={e=>setSort(e.target.value)} style={{flex:1,background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px",fontSize:14,color:"var(--txt)",fontFamily:"var(--ff)",outline:"none",cursor:"pointer"}}>
-        <option value="price-asc">Price â†‘</option>
-        <option value="price-desc">Price â†“</option>
+        <option value="price-asc">Price ↑</option>
+        <option value="price-desc">Price ↓</option>
         <option value="rating-desc">Top Rated</option>
         <option value="bench-desc">Performance</option>
       </select>
@@ -4078,7 +4078,7 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,b
               <div style={{display:"flex",alignItems:"center",gap:6,flexWrap:"wrap"}}>
                 <span style={{fontSize:13,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span>
                 {p.r&&<Stars r={p.r} s={10}/>}
-                {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:13,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>ðŸ”¥ DEAL -${dealSavings(p)}</span>}
+                {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:13,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL -${dealSavings(p)}</span>}
                 {p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}
               </div>
               <div style={{display:"flex",alignItems:"baseline",gap:8,marginTop:2}}>
@@ -4142,7 +4142,7 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,b
           <div style={{display:"flex",gap:6}}>
             {[0,4,4.5].map(rv=>{
               const on=minR===rv;
-              return <button key={rv} onClick={()=>setMinR(rv)} style={{flex:1,background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"8px",fontFamily:"var(--ff)",fontSize:13,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{rv?rv+"+ â˜…":"Any"}</button>;
+              return <button key={rv} onClick={()=>setMinR(rv)} style={{flex:1,background:on?"var(--accent3)":"var(--bg3)",border:"1px solid "+(on?"var(--accent)":"var(--bdr)"),borderRadius:8,padding:"8px",fontFamily:"var(--ff)",fontSize:13,color:on?"var(--accent)":"var(--txt)",fontWeight:on?600:400,cursor:"pointer"}}>{rv?rv+"+ ★":"Any"}</button>;
             })}
           </div>
         </div>
@@ -4159,7 +4159,7 @@ function BuilerPartPickerRouter(props){
   return isMobile?<MobileBuilerPartPicker {...props}/>:<BuilerPartPicker {...props}/>;
 }
 
-/* === BUY YOUR BUILD â€” affiliate checkout section === */
+/* === BUY YOUR BUILD — affiliate checkout section === */
 function BuyYourBuild({build, multiParts}){
   const coreParts = Object.values(build || {}).filter(Boolean);
   const multiList = Object.values(multiParts || {}).flat().filter(Boolean);
@@ -4301,13 +4301,13 @@ function BuilderPage({th}){
   const ringR=24;const ringC=2*Math.PI*ringR;
   const tier=coreFilled===0?"Empty":coreFilled<=3?"Starter":coreFilled<=5?"Solid":coreFilled<=7?"Strong":"Complete";
 
-  // â”€â”€ Compatibility Engine â”€â”€
+  // ── Compatibility Engine ──
   const issues=[];const warnings=[];
-  if(cpu&&mobo&&cpu.socket!==mobo.socket)issues.push({t:"err",m:`Socket mismatch â€” ${cpu.n} (${cpu.socket}) won't fit ${mobo.n} (${mobo.socket})`,cat:"CPU+Mobo"});
-  if(cpu&&mobo&&cpu.memType&&mobo.memType&&cpu.memType!==mobo.memType)issues.push({t:"err",m:`Memory conflict â€” ${cpu.n} needs ${cpu.memType}, ${mobo.n} supports ${mobo.memType}`,cat:"Memory"});
+  if(cpu&&mobo&&cpu.socket!==mobo.socket)issues.push({t:"err",m:`Socket mismatch — ${cpu.n} (${cpu.socket}) won't fit ${mobo.n} (${mobo.socket})`,cat:"CPU+Mobo"});
+  if(cpu&&mobo&&cpu.memType&&mobo.memType&&cpu.memType!==mobo.memType)issues.push({t:"err",m:`Memory conflict — ${cpu.n} needs ${cpu.memType}, ${mobo.n} supports ${mobo.memType}`,cat:"Memory"});
   if(ram&&mobo&&ram.memType&&mobo.memType&&ram.memType!==mobo.memType)issues.push({t:"err",m:`${ram.n} is ${ram.memType} but ${mobo.n} supports ${mobo.memType}`,cat:"RAM"});
-  if(gpu&&cas&&gpu.gpuLen&&cas.gpuClear&&gpu.gpuLen>cas.gpuClear)issues.push({t:"err",m:`GPU won't fit â€” ${gpu.n} (${gpu.gpuLen}mm) vs ${cas.n} (${cas.gpuClear}mm)`,cat:"Case+GPU"});
-  if(cooler&&cas&&cooler.coolerH&&cas.coolerClear&&cooler.coolerH>cas.coolerClear)issues.push({t:"err",m:`Cooler won't fit â€” ${cooler.n} (${cooler.coolerH}mm) vs ${cas.n} (${cas.coolerClear}mm)`,cat:"Case+Cooler"});
+  if(gpu&&cas&&gpu.gpuLen&&cas.gpuClear&&gpu.gpuLen>cas.gpuClear)issues.push({t:"err",m:`GPU won't fit — ${gpu.n} (${gpu.gpuLen}mm) vs ${cas.n} (${cas.gpuClear}mm)`,cat:"Case+GPU"});
+  if(cooler&&cas&&cooler.coolerH&&cas.coolerClear&&cooler.coolerH>cas.coolerClear)issues.push({t:"err",m:`Cooler won't fit — ${cooler.n} (${cooler.coolerH}mm) vs ${cas.n} (${cas.coolerClear}mm)`,cat:"Case+Cooler"});
   if(cooler&&cpu&&cooler.sockets&&!cooler.sockets.includes(cpu.socket))issues.push({t:"err",m:`${cooler.n} doesn't support ${cpu.socket}`,cat:"Cooler+CPU"});
   if(mobo&&cas&&cas.moboSupport&&mobo.moboFF){const m2={"ATX":"ATX","mATX":"mATX","Mini-ITX":"ITX","ITX":"ITX"};if(!cas.moboSupport.includes(m2[mobo.moboFF]||mobo.moboFF))issues.push({t:"err",m:`${mobo.n} (${mobo.moboFF}) won't fit ${cas.n}`,cat:"Case+Mobo"});}
   if(ram&&mobo&&ram.capacity&&mobo.maxMem&&ram.capacity>mobo.maxMem)issues.push({t:"err",m:`${ram.n} (${ram.capacity}GB) exceeds ${mobo.n} max (${mobo.maxMem}GB)`,cat:"RAM"});
@@ -4376,19 +4376,19 @@ function BuilderPage({th}){
     return r;};
 
   const specSummary=(cat,p)=>{if(!p)return"";
-    if(cat==="CPU")return `${p.cores}C Â· ${p.socket} Â· ${p.tdp}W`;
-    if(cat==="GPU")return `${p.vram}GB Â· ${p.tdp}W Â· ${p.gpuLen||"?"}mm`;
+    if(cat==="CPU")return `${p.cores}C · ${p.socket} · ${p.tdp}W`;
+    if(cat==="GPU")return `${p.vram}GB · ${p.tdp}W · ${p.gpuLen||"?"}mm`;
     if(cat==="RAM")return `${p.capacity}GB ${p.memType||""} ${p.speed}MHz`;
-    if(cat==="Motherboard")return `${p.socket} Â· ${p.formFactor} Â· ${p.m2Slots||"?"}x M.2`;
+    if(cat==="Motherboard")return `${p.socket} · ${p.formFactor} · ${p.m2Slots||"?"}x M.2`;
     if(cat==="Storage")return `${p.capacity>=1000?(p.capacity/1000)+"TB":p.capacity+"GB"} ${p.storageType||""}`;
-    if(cat==="PSU")return `${p.watt}W ${p.efficiency} Â· ${p.modular}`;
-    if(cat==="Case")return `${p.ff||p.formFactor} Â· GPU ${p.maxGPU||p.gpuClear||"?"}mm Â· ${p.rads||"No AIO info"}`;
-    if(cat==="CPUCooler")return `${p.coolType} Â· ${p.coolerH||"?"}mm`;
-    if(cat==="CaseFan")return `${p.fanSize}mm Â· ${p.packQty||1}x Â· ${p.airflow||"?"}CFM`;
+    if(cat==="PSU")return `${p.watt}W ${p.efficiency} · ${p.modular}`;
+    if(cat==="Case")return `${p.ff||p.formFactor} · GPU ${p.maxGPU||p.gpuClear||"?"}mm · ${p.rads||"No AIO info"}`;
+    if(cat==="CPUCooler")return `${p.coolType} · ${p.coolerH||"?"}mm`;
+    if(cat==="CaseFan")return `${p.fanSize}mm · ${p.packQty||1}x · ${p.airflow||"?"}CFM`;
     if(cat==="Monitor")return `${p.size}" ${p.panel} ${p.resolution} ${p.refreshRate}Hz`;
-    return Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","condition","generation","chipset","uid","upc"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").slice(0,2).map(([k,v])=>`${fmt(k,v)}`).join(" Â· ");};
+    return Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","condition","generation","chipset","uid","upc"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").slice(0,2).map(([k,v])=>`${fmt(k,v)}`).join(" · ");};
 
-  // â”€â”€ Render a builder section â”€â”€
+  // ── Render a builder section ──
   const renderSection=(section)=>{
     const isOpen=openSections[section.id];
     const sectionParts=section.cats.filter(c=>build[c]||(multiParts[c]||[]).length);
@@ -4401,8 +4401,8 @@ function BuilderPage({th}){
       <button onClick={()=>toggleSection(section.id)} style={{display:"flex",width:"100%",alignItems:"center",gap:8,padding:"10px 16px",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:isOpen?"10px 10px 0 0":"10px",cursor:"pointer",textAlign:"left"}}>
         <SectionIcon name={section.icon} size={17}/>
         <span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)",flex:1}}>{section.label}</span>
-        {sectionParts.length>0&&<span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)"}}>{sectionParts.length} items Â· ${sectionTotal}</span>}
-        <span style={{color:"var(--mute)",fontSize:13}}>{isOpen?"âˆ’":"+"}</span>
+        {sectionParts.length>0&&<span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)"}}>{sectionParts.length} items · ${sectionTotal}</span>}
+        <span style={{color:"var(--mute)",fontSize:13}}>{isOpen?"−":"+"}</span>
       </button>
       {isOpen&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderTop:"none",borderRadius:"0 0 10px 10px",overflow:"hidden"}}>
         {section.cats.map((cat,ci)=>{
@@ -4430,15 +4430,15 @@ function BuilderPage({th}){
                 :isMulti&&parts.length?<div>{parts.map((p,pi)=><div key={p.uid} style={{display:"flex",alignItems:"center",gap:4,marginBottom:1}}>
                     <span style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--txt)",flex:1}}>{cleanProductName(p)}</span>
                     <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)"}}>${fmtPrice($(p))}</span>
-                    <button onClick={e=>{e.stopPropagation();delMulti(cat,p.uid);}} style={{background:"none",border:"none",color:"var(--rose)",fontSize:10,cursor:"pointer",padding:0}}>âœ•</button>
+                    <button onClick={e=>{e.stopPropagation();delMulti(cat,p.uid);}} style={{background:"none",border:"none",color:"var(--rose)",fontSize:10,cursor:"pointer",padding:0}}>✕</button>
                   </div>)}{canAdd&&<button onClick={e=>{e.stopPropagation();setPicking(cat);}} style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--sky)",background:"none",border:"none",cursor:"pointer",padding:0}}>+ Add another</button>}</div>
                 :<button onClick={e=>{e.stopPropagation();setPicking(isPicking2?null:cat);}} style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--sky)",background:"var(--sky)08",border:"1px dashed var(--sky)33",borderRadius:5,padding:"4px 10px",cursor:"pointer"}}>+ Choose {meta.singular||cat}</button>}
               </div>
               <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--txt)",opacity:.7}}>{part?specSummary(cat,part):isMulti&&parts.length?parts.length+" selected":""}</div>
               <div style={{textAlign:"right"}}>{part?<div style={{fontFamily:"var(--mono)",fontSize:14,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(part))}</div>
                 :isMulti&&parts.length?<div style={{fontFamily:"var(--mono)",fontSize:14,fontWeight:700,color:"var(--mint)"}}>${parts.reduce((s,p)=>s+$(p),0)}</div>
-                :<span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--mute)"}}>â€”</span>}</div>
-              <div style={{textAlign:"center"}}>{part&&<button onClick={e=>{e.stopPropagation();del(cat);}} style={{background:"none",border:"none",color:"var(--rose)",fontSize:13,cursor:"pointer",opacity:.5}}>âœ•</button>}</div>
+                :<span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--mute)"}}>—</span>}</div>
+              <div style={{textAlign:"center"}}>{part&&<button onClick={e=>{e.stopPropagation();del(cat);}} style={{background:"none",border:"none",color:"var(--rose)",fontSize:13,cursor:"pointer",opacity:.5}}>✕</button>}</div>
             </div>
 
           </div>;
@@ -4447,7 +4447,7 @@ function BuilderPage({th}){
     </div>;
   };
 
-  // â”€â”€ Full-page part picker â”€â”€
+  // ── Full-page part picker ──
   const renderPicker = () => {
     const cat = picking;
     const meta = CAT[cat]; if (!meta) return null;
@@ -4467,7 +4467,7 @@ function BuilderPage({th}){
 
   return (
     <div className="fade" style={{maxWidth:1600,margin:"0 auto",padding:"28px 20px"}}>
-      {showConfetti&&<div style={{position:"fixed",inset:0,zIndex:999,pointerEvents:"none",display:"flex",alignItems:"center",justifyContent:"center"}}><div style={{fontSize:64,animation:"fIn .5s ease-out"}}>ðŸŽ‰ðŸŽŠðŸŽ‰</div></div>}
+      {showConfetti&&<div style={{position:"fixed",inset:0,zIndex:999,pointerEvents:"none",display:"flex",alignItems:"center",justifyContent:"center"}}><div style={{fontSize:64,animation:"fIn .5s ease-out"}}>🎉🎊🎉</div></div>}
 
       {/* Header */}
       <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:20,flexWrap:"wrap",gap:12}}>
@@ -4475,9 +4475,9 @@ function BuilderPage({th}){
           <input value={buildName} onChange={e=>setBuildName(e.target.value)} style={{background:"none",border:"none",borderBottom:"1px dashed var(--mute)",fontFamily:"var(--ff)",fontSize:24,fontWeight:800,color:"var(--txt)",outline:"none",padding:"2px 0",width:280}}/>
           <div style={{display:"flex",gap:8,alignItems:"center",marginTop:6}}>
             <Tag color="var(--mint)">{tier}</Tag>
-            <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)"}}>{coreFilled}/8 core Â· ${fmtPrice(total)}</span>
-            {(coreFilled>0||Object.keys(multiParts).length>0)&&<button onClick={()=>{if(window.confirm("Clear everything and start over?")){setBuild({});setMultiParts({});setPicking(null);setBuildName("My Build");setBuildBudget(0);prevCount.current=0;}}} style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--rose)",background:"none",border:"1px solid var(--rose)33",borderRadius:4,padding:"2px 8px",cursor:"pointer"}}>ðŸ”„ Start Over</button>}
-            {coreFilled>=2&&<button onClick={()=>{const ids=Object.values(build).map(p=>p.id);const data=btoa(JSON.stringify({n:buildName,ids}));const url=window.location.origin+"/#build?d="+data;navigator.clipboard.writeText(url);alert("Build link copied to clipboard!\n\n"+url);}} style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--sky)",background:"none",border:"1px solid var(--sky)33",borderRadius:4,padding:"2px 8px",cursor:"pointer"}}>ðŸ”— Share Build</button>}
+            <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)"}}>{coreFilled}/8 core · ${fmtPrice(total)}</span>
+            {(coreFilled>0||Object.keys(multiParts).length>0)&&<button onClick={()=>{if(window.confirm("Clear everything and start over?")){setBuild({});setMultiParts({});setPicking(null);setBuildName("My Build");setBuildBudget(0);prevCount.current=0;}}} style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--rose)",background:"none",border:"1px solid var(--rose)33",borderRadius:4,padding:"2px 8px",cursor:"pointer"}}>🔄 Start Over</button>}
+            {coreFilled>=2&&<button onClick={()=>{const ids=Object.values(build).map(p=>p.id);const data=btoa(JSON.stringify({n:buildName,ids}));const url=window.location.origin+"/#build?d="+data;navigator.clipboard.writeText(url);alert("Build link copied to clipboard!\n\n"+url);}} style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--sky)",background:"none",border:"1px solid var(--sky)33",borderRadius:4,padding:"2px 8px",cursor:"pointer"}}>🔗 Share Build</button>}
           </div>
         </div>
         <div style={{display:"flex",alignItems:"center",gap:14}}>
@@ -4501,15 +4501,15 @@ function BuilderPage({th}){
 
       {/* Budget warning */}
       {buildBudget>0&&total>buildBudget&&<div style={{padding:"8px 12px",borderRadius:6,fontSize:13,fontFamily:"var(--ff)",background:"#ff5c7c08",color:"var(--rose)",border:"1px solid #ff5c7c18",marginBottom:10,display:"flex",alignItems:"center",gap:6}}>
-        ðŸ’¸ <span style={{fontWeight:600}}>${fmtPrice(total-buildBudget)} over budget!</span> Your build is ${fmtPrice(total)} but your budget is ${fmtPrice(buildBudget)}. Consider swapping components for cheaper alternatives.
+        💸 <span style={{fontWeight:600}}>${fmtPrice(total-buildBudget)} over budget!</span> Your build is ${fmtPrice(total)} but your budget is ${fmtPrice(buildBudget)}. Consider swapping components for cheaper alternatives.
       </div>}
 
       {/* Compat alerts */}
       {allIssues.length>0&&<div style={{display:"flex",flexDirection:"column",gap:3,marginBottom:14}}>
         {allIssues.map((x,i)=><div key={i} style={{display:"flex",alignItems:"center",gap:6,padding:"6px 12px",borderRadius:6,fontSize:10,fontFamily:"var(--ff)",background:x.t==="err"?"#ff5c7c08":"#ffb34708",color:x.t==="err"?"var(--rose)":"var(--amber)",border:`1px solid ${x.t==="err"?"#ff5c7c18":"#ffb34718"}`}}>
-          <span>{x.t==="err"?"â›”":"âš ï¸"}</span><span style={{fontFamily:"var(--mono)",fontSize:7,fontWeight:600,opacity:.6}}>{x.cat}</span><span style={{flex:1}}>{x.m}</span></div>)}
+          <span>{x.t==="err"?"⛔":"⚠️"}</span><span style={{fontFamily:"var(--mono)",fontSize:7,fontWeight:600,opacity:.6}}>{x.cat}</span><span style={{flex:1}}>{x.m}</span></div>)}
       </div>}
-      {allIssues.length===0&&coreFilled>=2&&<div style={{padding:"6px 12px",borderRadius:6,fontSize:10,fontFamily:"var(--ff)",background:"var(--mint3)",color:"var(--mint)",border:"1px solid var(--mint)22",marginBottom:14}}>âœ… All components compatible</div>}
+      {allIssues.length===0&&coreFilled>=2&&<div style={{padding:"6px 12px",borderRadius:6,fontSize:10,fontFamily:"var(--ff)",background:"var(--mint3)",color:"var(--mint)",border:"1px solid var(--mint)22",marginBottom:14}}>✅ All components compatible</div>}
 
       {/* === GETTING STARTED BANNER === */}
       {coreFilled === 0 && <div style={{marginBottom:20}}>
@@ -4538,7 +4538,7 @@ function BuilderPage({th}){
 }
 
 
-/* â•â•â• COMMUNITY â•â•â• */
+/* ═══ COMMUNITY ═══ */
 function CommunityPage({th}){
   const tierColor=t=>t==="Excellent"?"var(--mint)":t==="Great"?"var(--sky)":t==="Smooth"?"var(--amber)":t==="Playable"?"var(--rose)":"var(--mute)";
   return <div className="fade" style={{maxWidth:1180,margin:"0 auto",padding:"28px 20px"}}>
@@ -4559,7 +4559,7 @@ function CommunityPage({th}){
               <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{b.nm}</div>
               <div style={{fontSize:10,color:"var(--dim)",fontFamily:"var(--ff)"}}>by {b.by}</div>
             </div>
-            <span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--amber)",fontWeight:600}}>â–²{b.v}</span>
+            <span style={{fontFamily:"var(--mono)",fontSize:13,color:"var(--amber)",fontWeight:600}}>▲{b.v}</span>
           </div>
           <p style={{fontSize:13,color:"var(--dim)",margin:"6px 0",fontFamily:"var(--ff)"}}>{b.d}</p>
           <div style={{display:"flex",gap:3}}>{b.tags.map(t=><Tag key={t} color="var(--sky)">{t}</Tag>)}</div>
@@ -4579,7 +4579,7 @@ function CommunityPage({th}){
                 const game=GAMES.find(x=>x.name===g.game);
                 const color=tierColor(g.tier);
                 return <div key={g.game} style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"1px 0",minWidth:0}}>
-                  <span style={{fontSize:10,color:"var(--txt)",fontFamily:"var(--ff)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis",flex:1,minWidth:0}} title={g.game}>{game?.icon||"ðŸŽ®"} {g.game}</span>
+                  <span style={{fontSize:10,color:"var(--txt)",fontFamily:"var(--ff)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis",flex:1,minWidth:0}} title={g.game}>{game?.icon||"🎮"} {g.game}</span>
                   <span style={{fontSize:10,color,fontFamily:"var(--mono)",fontWeight:700,marginLeft:4,flexShrink:0}}>{g.fps}</span>
                 </div>;
               })}
@@ -4595,7 +4595,7 @@ function CommunityPage({th}){
   </div>;
 }
 
-/* â•â•â• TOOLS â•â•â• */
+/* ═══ TOOLS ═══ */
 // === TOOL SEO CONFIG ===
 const TOOL_URL_SLUGS = {
   fps: 'fps-estimator',
@@ -4609,14 +4609,14 @@ const TOOL_URL_SLUGS = {
 const TOOL_SLUG_TO_ID = Object.fromEntries(Object.entries(TOOL_URL_SLUGS).map(([id,slug])=>[slug,id]));
 const TOOL_SEO_DATA = {
   fps: {
-    title: 'FPS Estimator â€” See Game FPS for Your CPU + GPU at 1080p, 1440p, 4K',
+    title: 'FPS Estimator — See Game FPS for Your CPU + GPU at 1080p, 1440p, 4K',
     description: 'Free FPS estimator for PC builds. Pick your CPU and GPU to see expected FPS in popular games at 1080p, 1440p, and 4K. Covers Cyberpunk, Valorant, Fortnite, Elden Ring and more.',
     h1: 'FPS Estimator',
     intro: 'Estimate frames per second for any GPU + CPU combo across 26 popular games and three resolutions. Free, no signup.',
     faq: [
-      {q:'How accurate is this FPS estimator?',a:'Our estimates are based on benchmark scores, PassMark CPU/GPU data, and resolution scaling. Real-world FPS can vary Â±10-15% depending on settings, drivers, RAM speed, and game-specific optimization.'},
+      {q:'How accurate is this FPS estimator?',a:'Our estimates are based on benchmark scores, PassMark CPU/GPU data, and resolution scaling. Real-world FPS can vary ±10-15% depending on settings, drivers, RAM speed, and game-specific optimization.'},
       {q:'Does CPU choice matter for FPS?',a:'Yes, especially at 1080p where CPU is the main bottleneck. At 4K the GPU does most of the work. We weight CPU impact differently per resolution to give realistic estimates.'},
-      {q:'What games can I check?',a:'Cyberpunk 2077, Valorant, Fortnite, Elden Ring, CS2, Call of Duty, Apex Legends, Baldurs Gate 3, Starfield, Hogwarts Legacy, Spider-Man, and more â€” 26 games total covering esports and AAA titles.'},
+      {q:'What games can I check?',a:'Cyberpunk 2077, Valorant, Fortnite, Elden Ring, CS2, Call of Duty, Apex Legends, Baldurs Gate 3, Starfield, Hogwarts Legacy, Spider-Man, and more — 26 games total covering esports and AAA titles.'},
       {q:'Why is my GPU not in the list?',a:'We cover NVIDIA RTX 40/50, RTX 30/20 series, AMD RX 7000/9000/6000, Intel Arc A/B series. Older cards default to a closest-match baseline. Add a comment if you want yours added.'}
     ],
     howTo: [
@@ -4628,7 +4628,7 @@ const TOOL_SEO_DATA = {
     ]
   },
   bn: {
-    title: 'Bottleneck Calculator â€” Find Your CPU or GPU Bottleneck (PassMark Data)',
+    title: 'Bottleneck Calculator — Find Your CPU or GPU Bottleneck (PassMark Data)',
     description: 'Free bottleneck calculator using real PassMark scores. Check whether your CPU or GPU is holding back performance at 1080p, 1440p, or 4K. Resolution-aware, accurate.',
     h1: 'Bottleneck Calculator',
     intro: 'Find out if your CPU or GPU is the weak link. Resolution-aware analysis using real PassMark benchmark data.',
@@ -4647,14 +4647,14 @@ const TOOL_SEO_DATA = {
     ]
   },
   willitrun: {
-    title: 'Will It Run? â€” PC Game Compatibility Checker (Free)',
+    title: 'Will It Run? — PC Game Compatibility Checker (Free)',
     description: 'Free game compatibility checker. Pick a game and your hardware to see if your PC can run it at Low, Medium, High, or Ultra. Covers 26 popular PC games.',
     h1: 'Will It Run?',
     intro: 'Check whether your PC can run any specific game at Low/Medium/High/Ultra settings before you buy.',
     faq: [
       {q:'How does the Will It Run checker work?',a:'Pick a game and your CPU + GPU. We estimate frame rates at every quality preset using benchmark data, so you can see if you hit 60+ FPS at your preferred settings.'},
       {q:'What FPS counts as playable?',a:'For most singleplayer games, 60 FPS is the sweet spot. Competitive shooters benefit from 120-144+ FPS. We highlight which presets reach those targets.'},
-      {q:'Are the FPS results accurate?',a:'Estimates are within Â±10-15% of real-world performance. Driver versions, OS, background apps, RAM speed, and storage type can all affect actual FPS.'},
+      {q:'Are the FPS results accurate?',a:'Estimates are within ±10-15% of real-world performance. Driver versions, OS, background apps, RAM speed, and storage type can all affect actual FPS.'},
       {q:'Can I check older games?',a:'Most older AAA games run on virtually any modern PC. Our list focuses on demanding 2022-2026 titles where compatibility is the actual question.'}
     ],
     howTo: [
@@ -4666,7 +4666,7 @@ const TOOL_SEO_DATA = {
     ]
   },
   buildcmp: {
-    title: 'Compare PC Builds â€” Side-by-Side Performance & Value Comparison',
+    title: 'Compare PC Builds — Side-by-Side Performance & Value Comparison',
     description: 'Compare two PC builds side-by-side. See expected FPS, total cost, performance per dollar, and bottlenecks for both. Free build comparison tool.',
     h1: 'Compare PC Builds',
     intro: 'Stack two builds against each other. See FPS, cost, and value-per-dollar for each.',
@@ -4684,8 +4684,8 @@ const TOOL_SEO_DATA = {
     ]
   },
   wizard: {
-    title: 'PC Build Wizard â€” Auto-Generate a Balanced Build for Any Budget',
-    description: 'Free PC build wizard. Enter your budget and use case â€” we auto-generate a balanced gaming PC build with current pricing from Amazon, Best Buy, and more.',
+    title: 'PC Build Wizard — Auto-Generate a Balanced Build for Any Budget',
+    description: 'Free PC build wizard. Enter your budget and use case — we auto-generate a balanced gaming PC build with current pricing from Amazon, Best Buy, and more.',
     h1: 'PC Build Wizard',
     intro: 'Tell us your budget and we will auto-generate a balanced PC build using live retailer pricing.',
     faq: [
@@ -4703,7 +4703,7 @@ const TOOL_SEO_DATA = {
     ]
   },
   power: {
-    title: 'PC Power Supply Calculator â€” Find the Right PSU Wattage',
+    title: 'PC Power Supply Calculator — Find the Right PSU Wattage',
     description: 'Free PSU calculator for PC builds. Add your CPU, GPU, and other components to see exact wattage needed. Get PSU wattage recommendations with headroom.',
     h1: 'PC Power Supply Calculator',
     intro: 'Calculate exact PSU wattage for your build. Includes headroom recommendations for safety and efficiency.',
@@ -4722,7 +4722,7 @@ const TOOL_SEO_DATA = {
     ]
   },
   cmp: {
-    title: 'Compare PC Parts â€” Side-by-Side CPU, GPU, and Component Comparison',
+    title: 'Compare PC Parts — Side-by-Side CPU, GPU, and Component Comparison',
     description: 'Compare any two PC components side-by-side. See benchmarks, specs, prices, and current deals. Free parts comparison for CPUs, GPUs, motherboards, and more.',
     h1: 'Compare PC Parts',
     intro: 'Compare any two parts: CPU, GPU, motherboard, RAM, storage. Specs, benchmarks, and current pricing.',
@@ -4813,7 +4813,7 @@ function ToolsPage({th}){
     if(apiResult&&apiResult.who){
       setBnResult({gpuKey:apiResult.gpu,cpuKey:apiResult.cpu,gpuScore:apiResult.gpuScore,cpuScore:apiResult.cpuScore,who:apiResult.who,severity:apiResult.severity,cpuPct:apiResult.who==="CPU"?apiResult.severity:0,gpuPct:apiResult.who==="GPU"?apiResult.severity:0,ratio:apiResult.ratio,cpuUpgrade:apiResult.cpuUpgrade,gpuUpgrade:apiResult.gpuUpgrade,res:bnRes,gameResults:apiResult.gameResults||[]});
     } else {
-      // Fallback to local â€” uses raw PassMark scores when available
+      // Fallback to local — uses raw PassMark scores when available
       // Find product objects: bnGPU/bnCPU hold the full product name from the dropdown
       const cpuProd=P.find(x=>x.c==="CPU"&&x.n===bnCPU);
       const gpuProd=P.find(x=>x.c==="GPU"&&x.n===bnGPU);
@@ -4855,7 +4855,7 @@ function ToolsPage({th}){
     setBnLoading(false);
   };
 
-  const tabs=[{id:"fps",l:"ðŸŽ® FPS Estimator",c:"var(--sky)"},{id:"bn",l:"ðŸ”¬ Bottleneck",c:"var(--rose)"},{id:"willitrun",l:"ðŸ•¹ï¸ Will It Run?",c:"var(--amber)"},{id:"buildcmp",l:"ðŸ“Š Compare Builds",c:"var(--violet)"},{id:"wizard",l:"ðŸ§™ Build Wizard",c:"var(--mint)"},{id:"power",l:"âš¡ Power Calculator",c:"var(--sky)"},{id:"cmp",l:"âš–ï¸ Compare Parts",c:"var(--violet)"}];
+  const tabs=[{id:"fps",l:"🎮 FPS Estimator",c:"var(--sky)"},{id:"bn",l:"🔬 Bottleneck",c:"var(--rose)"},{id:"willitrun",l:"🕹️ Will It Run?",c:"var(--amber)"},{id:"buildcmp",l:"📊 Compare Builds",c:"var(--violet)"},{id:"wizard",l:"🧙 Build Wizard",c:"var(--mint)"},{id:"power",l:"⚡ Power Calculator",c:"var(--sky)"},{id:"cmp",l:"⚖️ Compare Parts",c:"var(--violet)"}];
 
   // Will It Run state
   const [wirGame,setWirGame]=useState("");const [wirGPU,setWirGPU]=useState("");const [wirCPU,setWirCPU]=useState("");const [wirRes,setWirRes]=useState("1080p");const [wirResult,setWirResult]=useState(null);
@@ -4883,7 +4883,7 @@ function ToolsPage({th}){
       </ol>
     </div>}
 
-    {/* â•â•â• FPS ESTIMATOR â•â•â• */}
+    {/* ═══ FPS ESTIMATOR ═══ */}
     {tool==="fps"&&<div>
       <div className="tools-layout" style={{display:"grid",gridTemplateColumns:"300px 1fr",gap:20,alignItems:"start"}}>
         {/* Config panel */}
@@ -4925,14 +4925,14 @@ function ToolsPage({th}){
           </div>
 
           <button onClick={runFPS} disabled={!selGPU||!selCPU||fpsLoading} style={{width:"100%",padding:"10px 0",borderRadius:8,background:selGPU&&selCPU?"var(--sky)":"var(--bg4)",border:"none",fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:selGPU&&selCPU?"var(--bg)":"var(--mute)",cursor:selGPU&&selCPU&&!fpsLoading?"pointer":"not-allowed"}}>
-            {fpsLoading?"â³ Calculating...":"ðŸŽ® Estimate FPS"}
+            {fpsLoading?"⏳ Calculating...":"🎮 Estimate FPS"}
           </button>
         </div>
 
         {/* Results */}
         <div>
           {!fpsResults&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:40,textAlign:"center"}}>
-            <div style={{fontSize:40,marginBottom:10}}>ðŸŽ®</div>
+            <div style={{fontSize:40,marginBottom:10}}>🎮</div>
             <div style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)"}}>Select your GPU and CPU, then click Estimate FPS</div>
             <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)",marginTop:6}}>Get estimated frame rates for {GAMES.length} games at any resolution</div>
           </div>}
@@ -4943,7 +4943,7 @@ function ToolsPage({th}){
               <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
                 <div>
                   <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{fpsResults.gpu} + {fpsResults.cpu}</div>
-                  <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginTop:2}}>{fpsResults.res} Â· {fpsResults.qual} Â· {fpsResults.games.length} games tested</div>
+                  <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginTop:2}}>{fpsResults.res} · {fpsResults.qual} · {fpsResults.games.length} games tested</div>
                 </div>
                 <div style={{textAlign:"right"}}>
                   <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>AVG FPS</div>
@@ -4957,7 +4957,7 @@ function ToolsPage({th}){
               {fpsResults.games.sort((a,b)=>b.fps-a.fps).map(g=>{
                 const game=GAMES.find(x=>x.name===g.game);
                 return <div key={g.game} style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:8,padding:"10px 12px",display:"flex",alignItems:"center",gap:10}}>
-                  <span style={{fontSize:22,width:28,textAlign:"center"}}>{game?.icon||"ðŸŽ®"}</span>
+                  <span style={{fontSize:22,width:28,textAlign:"center"}}>{game?.icon||"🎮"}</span>
                   <div style={{flex:1,minWidth:0}}>
                     <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)",whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{g.game}</div>
                     <div style={{display:"flex",alignItems:"center",gap:6,marginTop:3}}>
@@ -4971,7 +4971,7 @@ function ToolsPage({th}){
                     <div style={{fontFamily:"var(--mono)",fontSize:17,fontWeight:700,color:tierColor(g.tier)}}>{g.fps}</div>
                     <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)"}}>FPS</div>
                   </div>
-                  {g.bottleneck!=="Balanced"&&<div style={{position:"relative"}}><span title={`${g.bottleneck} bottleneck ${g.bottleneckPct}%`} style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--amber)",cursor:"help"}}>âš ï¸</span></div>}
+                  {g.bottleneck!=="Balanced"&&<div style={{position:"relative"}}><span title={`${g.bottleneck} bottleneck ${g.bottleneckPct}%`} style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--amber)",cursor:"help"}}>⚠️</span></div>}
                 </div>;
               })}
             </div>
@@ -4990,7 +4990,7 @@ function ToolsPage({th}){
       </div>
     </div>}
 
-    {/* â•â•â• BOTTLENECK CALCULATOR â•â•â• */}
+    {/* ═══ BOTTLENECK CALCULATOR ═══ */}
     {tool==="bn"&&<div>
       <div className="tools-layout" style={{display:"grid",gridTemplateColumns:"300px 1fr",gap:20,alignItems:"start"}}>
         {/* Config */}
@@ -5011,14 +5011,14 @@ function ToolsPage({th}){
           </div>
 
           <button onClick={runBottleneck} disabled={!bnGPU||!bnCPU||bnLoading} style={{width:"100%",padding:"10px 0",borderRadius:8,background:bnGPU&&bnCPU?"var(--rose)":"var(--bg4)",border:"none",fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:bnGPU&&bnCPU?"#fff":"var(--mute)",cursor:bnGPU&&bnCPU&&!bnLoading?"pointer":"not-allowed"}}>
-            {bnLoading?"â³ Analyzing...":"ðŸ”¬ Analyze Bottleneck"}
+            {bnLoading?"⏳ Analyzing...":"🔬 Analyze Bottleneck"}
           </button>
         </div>
 
         {/* Results */}
         <div>
           {!bnResult&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:40,textAlign:"center"}}>
-            <div style={{fontSize:40,marginBottom:10}}>ðŸ”¬</div>
+            <div style={{fontSize:40,marginBottom:10}}>🔬</div>
             <div style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)"}}>Select your GPU and CPU to analyze bottlenecks</div>
             <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)",marginTop:6}}>See which component is limiting your performance at each resolution</div>
           </div>}
@@ -5034,7 +5034,7 @@ function ToolsPage({th}){
                 <div style={{padding:"6px 16px",borderRadius:8,fontFamily:"var(--ff)",fontSize:14,fontWeight:700,
                   background:bnResult.who==="Balanced"?"var(--mint)15":bnResult.who==="CPU"?"var(--rose)15":"var(--amber)15",
                   color:bnResult.who==="Balanced"?"var(--mint)":bnResult.who==="CPU"?"var(--rose)":"var(--amber)"}}>
-                  {bnResult.who==="Balanced"?"âœ… Well Balanced":bnResult.who==="CPU"?`âš ï¸ CPU Bottleneck (${bnResult.severity}%)`:`âš ï¸ GPU Bottleneck (${bnResult.severity}%)`}
+                  {bnResult.who==="Balanced"?"✅ Well Balanced":bnResult.who==="CPU"?`⚠️ CPU Bottleneck (${bnResult.severity}%)`:`⚠️ GPU Bottleneck (${bnResult.severity}%)`}
                 </div>
               </div>
 
@@ -5079,31 +5079,31 @@ function ToolsPage({th}){
 
             {/* Upgrade suggestions */}
             {(bnResult.cpuUpgrade||bnResult.gpuUpgrade)&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:16}}>
-              <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",letterSpacing:1,marginBottom:10}}>ðŸ’¡ UPGRADE SUGGESTIONS</div>
+              <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)",letterSpacing:1,marginBottom:10}}>💡 UPGRADE SUGGESTIONS</div>
               {bnResult.who==="CPU"&&bnResult.cpuUpgrade&&<div style={{display:"flex",alignItems:"center",gap:10,background:"var(--bg3)",borderRadius:8,padding:"10px 14px"}}>
-                <span style={{fontSize:22}}>ðŸ”´</span>
+                <span style={{fontSize:22}}>🔴</span>
                 <div style={{flex:1}}>
                   <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Upgrade to {bnResult.cpuUpgrade.name}</div>
-                  <div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)"}}>+{bnResult.cpuUpgrade.gain}% CPU performance â€” would reduce or eliminate the bottleneck</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)"}}>+{bnResult.cpuUpgrade.gain}% CPU performance — would reduce or eliminate the bottleneck</div>
                 </div>
                 <Tag color="var(--sky)">+{bnResult.cpuUpgrade.gain}%</Tag>
               </div>}
               {bnResult.who==="GPU"&&bnResult.gpuUpgrade&&<div style={{display:"flex",alignItems:"center",gap:10,background:"var(--bg3)",borderRadius:8,padding:"10px 14px"}}>
-                <span style={{fontSize:22}}>ðŸ’š</span>
+                <span style={{fontSize:22}}>💚</span>
                 <div style={{flex:1}}>
                   <div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Upgrade to {bnResult.gpuUpgrade.name}</div>
-                  <div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)"}}>+{bnResult.gpuUpgrade.gain}% GPU performance â€” better matched to your CPU</div>
+                  <div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)"}}>+{bnResult.gpuUpgrade.gain}% GPU performance — better matched to your CPU</div>
                 </div>
                 <Tag color="var(--sky)">+{bnResult.gpuUpgrade.gain}%</Tag>
               </div>}
-              {bnResult.who==="Balanced"&&<div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mint)",textAlign:"center",padding:8}}>âœ… No upgrades needed â€” your system is well balanced!</div>}
+              {bnResult.who==="Balanced"&&<div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mint)",textAlign:"center",padding:8}}>✅ No upgrades needed — your system is well balanced!</div>}
             </div>}
           </div>}
         </div>
       </div>
     </div>}
 
-    {/* â•â•â• COMPARE â•â•â• */}
+    {/* ═══ COMPARE ═══ */}
     {tool==="cmp"&&<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16}}>
       <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20}}>
         <h3 style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:8}}>Compare Parts</h3>
@@ -5112,12 +5112,12 @@ function ToolsPage({th}){
         <button onClick={cmp} style={{width:"100%",padding:"8px 0",borderRadius:6,background:"var(--violet)",border:"none",fontSize:13,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:4}}>Compare</button>
       </div>
       <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20,minHeight:180}}>
-        {!cmpResult&&<div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"var(--mute)",fontFamily:"var(--ff)",fontSize:14}}>Enter two parts to compare â†’</div>}
+        {!cmpResult&&<div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"var(--mute)",fontFamily:"var(--ff)",fontSize:14}}>Enter two parts to compare →</div>}
         {cmpResult&&<><div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--violet)",letterSpacing:1,marginBottom:10}}>COMPARISON</div><div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>{[cmpResult.a,cmpResult.b].map(p=><div key={p.id} style={{textAlign:"center"}}><div style={{fontSize:22}}>{ic(p)}</div><div style={{fontSize:13,fontWeight:600,color:"var(--txt)",marginTop:3,fontFamily:"var(--ff)"}}>{p.n}</div><div style={{fontSize:9,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</div><div style={{fontFamily:"var(--mono)",fontSize:17,fontWeight:700,color:"var(--mint)",marginTop:4}}>${fmtPrice($(p))}</div><Stars r={p.r}/>{p.bench!=null&&<div style={{marginTop:4}}><SBar v={p.bench}/></div>}</div>)}</div>{cmpResult.a.bench!=null&&cmpResult.b.bench!=null&&<div style={{marginTop:10,padding:6,borderRadius:6,background:"#a78bfa15",textAlign:"center",fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--violet)"}}>{cmpResult.a.bench>cmpResult.b.bench?`${cmpResult.a.n} is ${cmpResult.a.bench-cmpResult.b.bench}% faster`:cmpResult.b.bench>cmpResult.a.bench?`${cmpResult.b.n} is ${cmpResult.b.bench-cmpResult.a.bench}% faster`:"Tied!"}</div>}</>}
       </div>
     </div>}
 
-    {/* â•â•â• WILL IT RUN? â•â•â• */}
+    {/* ═══ WILL IT RUN? ═══ */}
     {tool==="willitrun"&&<div>
       <div className="tools-layout" style={{display:"grid",gridTemplateColumns:"300px 1fr",gap:20,alignItems:"start"}}>
         <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20}}>
@@ -5125,42 +5125,42 @@ function ToolsPage({th}){
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginBottom:4}}>SELECT GAME</div>
           <select value={wirGame} onChange={e=>setWirGame(e.target.value)} style={inp}><option value="">Choose a game...</option>{GAMES.map(g=><option key={g.name} value={g.name}>{g.name}</option>)}</select>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>YOUR GPU</div>
-          <SearchSelect options={gpuParts.map(g=>({value:g.n,label:cleanDisplayName(g),detail:`${g.vram}GB Â· ${g.b}`}))} value={wirGPU} onChange={setWirGPU} placeholder="Select GPU..."/>
+          <SearchSelect options={gpuParts.map(g=>({value:g.n,label:cleanDisplayName(g),detail:`${g.vram}GB · ${g.b}`}))} value={wirGPU} onChange={setWirGPU} placeholder="Select GPU..."/>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>YOUR CPU</div>
-          <SearchSelect options={cpuParts.filter(c=>!c.serverCPU).map(c=>({value:c.n,label:cleanDisplayName(c),detail:`${c.cores}C Â· ${c.b}`}))} value={wirCPU} onChange={setWirCPU} placeholder="Select CPU..."/>
+          <SearchSelect options={cpuParts.filter(c=>!c.serverCPU).map(c=>({value:c.n,label:cleanDisplayName(c),detail:`${c.cores}C · ${c.b}`}))} value={wirCPU} onChange={setWirCPU} placeholder="Select CPU..."/>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>RESOLUTION</div>
           <div style={{display:"flex",gap:4}}>{["1080p","1440p","4K"].map(r=><button key={r} onClick={()=>setWirRes(r)} style={{flex:1,padding:6,borderRadius:5,fontSize:10,fontFamily:"var(--mono)",fontWeight:600,cursor:"pointer",background:wirRes===r?"var(--amber)":"var(--bg4)",color:wirRes===r?"#fff":"var(--dim)",border:`1px solid ${wirRes===r?"var(--amber)":"var(--bdr)"}`}}>{r}</button>)}</div>
-          <button onClick={()=>{if(!wirGame||!wirGPU||!wirCPU)return;const gpu=matchGPU(wirGPU)||wirGPU;const cpu=matchCPU(wirCPU)||wirCPU;const results=["Low","Medium","High","Ultra"].map(q=>{const fps=estimateFPS(gpu,cpu,wirGame,wirRes,q);return{quality:q,fps:fps?.fps||0};});setWirResult({game:wirGame,gpu:wirGPU,cpu:wirCPU,res:wirRes,settings:results});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--amber)",border:"none",fontSize:14,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>ðŸ•¹ï¸ Check Performance</button>
+          <button onClick={()=>{if(!wirGame||!wirGPU||!wirCPU)return;const gpu=matchGPU(wirGPU)||wirGPU;const cpu=matchCPU(wirCPU)||wirCPU;const results=["Low","Medium","High","Ultra"].map(q=>{const fps=estimateFPS(gpu,cpu,wirGame,wirRes,q);return{quality:q,fps:fps?.fps||0};});setWirResult({game:wirGame,gpu:wirGPU,cpu:wirCPU,res:wirRes,settings:results});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--amber)",border:"none",fontSize:14,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>🕹️ Check Performance</button>
         </div>
         <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20,minHeight:300}}>
-          {!wirResult&&<div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"var(--mute)",fontFamily:"var(--ff)",fontSize:14}}>Select a game and your hardware â†’</div>}
+          {!wirResult&&<div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"var(--mute)",fontFamily:"var(--ff)",fontSize:14}}>Select a game and your hardware →</div>}
           {wirResult&&<div>
             <div style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--txt)",marginBottom:4}}>Can you run {wirResult.game}?</div>
-            <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginBottom:16}}>{wirResult.gpu} Â· {wirResult.cpu} Â· {wirResult.res}</div>
+            <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",marginBottom:16}}>{wirResult.gpu} · {wirResult.cpu} · {wirResult.res}</div>
             {wirResult.settings.map(s=>{const playable=s.fps>=60;const smooth=s.fps>=100;const color=smooth?"var(--mint)":playable?"var(--sky)":s.fps>=30?"var(--amber)":"var(--rose)";const verdict=smooth?"Smooth":playable?"Playable":s.fps>=30?"Rough":"Unplayable";return <div key={s.quality} style={{display:"flex",alignItems:"center",gap:12,padding:"10px 12px",borderRadius:8,background:"var(--bg3)",marginBottom:6,border:"1px solid var(--bdr)"}}>
               <div style={{width:60,fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>{s.quality}</div>
               <div style={{flex:1}}><div style={{height:8,background:"var(--bg4)",borderRadius:4,overflow:"hidden"}}><div style={{width:`${Math.min(s.fps/144*100,100)}%`,height:"100%",background:color,borderRadius:4}}/></div></div>
               <div style={{fontFamily:"var(--mono)",fontSize:22,fontWeight:700,color,minWidth:60,textAlign:"right"}}>{s.fps} FPS</div>
               <Tag color={color}>{verdict}</Tag>
             </div>})}
-            <div style={{marginTop:12,padding:8,borderRadius:6,background:"var(--bg3)",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>{wirResult.settings[3]?.fps>=60?"âœ… Your PC can handle "+wirResult.game+" at "+wirResult.res+" Ultra!":wirResult.settings[2]?.fps>=60?"âš ï¸ Playable at High, but Ultra may struggle.":wirResult.settings[1]?.fps>=60?"âš ï¸ Consider lowering settings to Medium for smooth gameplay.":"âŒ Your hardware may struggle with "+wirResult.game+". Consider upgrading."}</div>
+            <div style={{marginTop:12,padding:8,borderRadius:6,background:"var(--bg3)",fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>{wirResult.settings[3]?.fps>=60?"✅ Your PC can handle "+wirResult.game+" at "+wirResult.res+" Ultra!":wirResult.settings[2]?.fps>=60?"⚠️ Playable at High, but Ultra may struggle.":wirResult.settings[1]?.fps>=60?"⚠️ Consider lowering settings to Medium for smooth gameplay.":"❌ Your hardware may struggle with "+wirResult.game+". Consider upgrading."}</div>
           </div>}
         </div>
       </div>
     </div>}
 
-    {/* â•â•â• BUILD COMPARISON â•â•â• */}
+    {/* ═══ BUILD COMPARISON ═══ */}
     {tool==="buildcmp"&&<div>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16}}>
         {["Build A","Build B"].map((label,bi)=>{const st=bi===0?bcBuildA:bcBuildB;const set=bi===0?setBcBuildA:setBcBuildB;return <div key={label} style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:16}}>
           <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:10}}>{label}</div>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginBottom:4}}>GPU</div>
-          <SearchSelect options={gpuParts.map(g=>({value:g.n,label:g.n,detail:`${g.vram}GB Â· $${$(g)}`}))} value={st.gpu} onChange={v=>set(p=>({...p,gpu:v}))} placeholder="Select GPU..."/>
+          <SearchSelect options={gpuParts.map(g=>({value:g.n,label:g.n,detail:`${g.vram}GB · $${$(g)}`}))} value={st.gpu} onChange={v=>set(p=>({...p,gpu:v}))} placeholder="Select GPU..."/>
           <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>CPU</div>
-          <SearchSelect options={cpuParts.filter(c=>!c.serverCPU).map(c=>({value:c.n,label:c.n,detail:`${c.cores}C Â· $${$(c)}`}))} value={st.cpu} onChange={v=>set(p=>({...p,cpu:v}))} placeholder="Select CPU..."/>
+          <SearchSelect options={cpuParts.filter(c=>!c.serverCPU).map(c=>({value:c.n,label:c.n,detail:`${c.cores}C · $${$(c)}`}))} value={st.cpu} onChange={v=>set(p=>({...p,cpu:v}))} placeholder="Select CPU..."/>
         </div>})}
       </div>
-      <button onClick={()=>{if(!bcBuildA.gpu||!bcBuildA.cpu||!bcBuildB.gpu||!bcBuildB.cpu)return;const gA=gpuParts.find(p=>p.n===bcBuildA.gpu);const cA2=cpuParts.find(p=>p.n===bcBuildA.cpu);const gB=gpuParts.find(p=>p.n===bcBuildB.gpu);const cB2=cpuParts.find(p=>p.n===bcBuildB.cpu);const fpsA=estimateAllGames(matchGPU(bcBuildA.gpu)||bcBuildA.gpu,matchCPU(bcBuildA.cpu)||bcBuildA.cpu,"1080p","Ultra");const fpsB=estimateAllGames(matchGPU(bcBuildB.gpu)||bcBuildB.gpu,matchCPU(bcBuildB.cpu)||bcBuildB.cpu,"1080p","Ultra");const costA=(gA?$(gA):0)+(cA2?$(cA2):0);const costB=(gB?$(gB):0)+(cB2?$(cB2):0);const avgA=fpsA.length?Math.round(fpsA.reduce((s,g)=>s+g.fps,0)/fpsA.length):0;const avgB=fpsB.length?Math.round(fpsB.reduce((s,g)=>s+g.fps,0)/fpsB.length):0;setBcResult({a:{gpu:bcBuildA.gpu,cpu:bcBuildA.cpu,cost:costA,avgFps:avgA,tdp:(gA?.tdp||0)+(cA2?.tdp||0),games:fpsA},b:{gpu:bcBuildB.gpu,cpu:bcBuildB.cpu,cost:costB,avgFps:avgB,tdp:(gB?.tdp||0)+(cB2?.tdp||0),games:fpsB}});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--violet)",border:"none",fontSize:14,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>ðŸ“Š Compare Builds</button>
+      <button onClick={()=>{if(!bcBuildA.gpu||!bcBuildA.cpu||!bcBuildB.gpu||!bcBuildB.cpu)return;const gA=gpuParts.find(p=>p.n===bcBuildA.gpu);const cA2=cpuParts.find(p=>p.n===bcBuildA.cpu);const gB=gpuParts.find(p=>p.n===bcBuildB.gpu);const cB2=cpuParts.find(p=>p.n===bcBuildB.cpu);const fpsA=estimateAllGames(matchGPU(bcBuildA.gpu)||bcBuildA.gpu,matchCPU(bcBuildA.cpu)||bcBuildA.cpu,"1080p","Ultra");const fpsB=estimateAllGames(matchGPU(bcBuildB.gpu)||bcBuildB.gpu,matchCPU(bcBuildB.cpu)||bcBuildB.cpu,"1080p","Ultra");const costA=(gA?$(gA):0)+(cA2?$(cA2):0);const costB=(gB?$(gB):0)+(cB2?$(cB2):0);const avgA=fpsA.length?Math.round(fpsA.reduce((s,g)=>s+g.fps,0)/fpsA.length):0;const avgB=fpsB.length?Math.round(fpsB.reduce((s,g)=>s+g.fps,0)/fpsB.length):0;setBcResult({a:{gpu:bcBuildA.gpu,cpu:bcBuildA.cpu,cost:costA,avgFps:avgA,tdp:(gA?.tdp||0)+(cA2?.tdp||0),games:fpsA},b:{gpu:bcBuildB.gpu,cpu:bcBuildB.cpu,cost:costB,avgFps:avgB,tdp:(gB?.tdp||0)+(cB2?.tdp||0),games:fpsB}});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--violet)",border:"none",fontSize:14,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>📊 Compare Builds</button>
       {bcResult&&<div style={{marginTop:16,background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20}}>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16}}>
           {[bcResult.a,bcResult.b].map((b,i)=><div key={i} style={{textAlign:"center"}}>
@@ -5175,12 +5175,12 @@ function ToolsPage({th}){
         </div>
         <div style={{marginTop:12,textAlign:"center",fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--violet)",padding:8,borderRadius:6,background:"var(--violet)12"}}>
           {bcResult.a.avgFps>bcResult.b.avgFps?`Build A is ${Math.round((bcResult.a.avgFps/bcResult.b.avgFps-1)*100)}% faster`:`Build B is ${Math.round((bcResult.b.avgFps/bcResult.a.avgFps-1)*100)}% faster`}
-          {bcResult.a.cost!==bcResult.b.cost&&` Â· ${bcResult.a.cost<bcResult.b.cost?"Build A":"Build B"} saves $${Math.abs(bcResult.a.cost-bcResult.b.cost)}`}
+          {bcResult.a.cost!==bcResult.b.cost&&` · ${bcResult.a.cost<bcResult.b.cost?"Build A":"Build B"} saves $${Math.abs(bcResult.a.cost-bcResult.b.cost)}`}
         </div>
       </div>}
     </div>}
 
-    {/* â•â•â• BUILD WIZARD â•â•â• */}
+    {/* ═══ BUILD WIZARD ═══ */}
     {tool==="wizard"&&<div className="wizard-container">
       <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:12,padding:24}}>
         <div style={{display:"flex",gap:4,marginBottom:20}}>{[0,1,2,3].map(s=><div key={s} style={{flex:1,height:4,borderRadius:2,background:wizStep>=s?"var(--mint)":"var(--bg4)"}}/>)}</div>
@@ -5188,7 +5188,7 @@ function ToolsPage({th}){
         {wizStep===0&&<div>
           <h3 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:700,color:"var(--txt)",marginBottom:6}}>What will you use this PC for?</h3>
           <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginBottom:16}}>This helps us prioritize the right components.</p>
-          {[{id:"gaming",icon:"ðŸŽ®",t:"Gaming",d:"High FPS, ray tracing, competitive & story games"},{id:"creative",icon:"ðŸŽ¨",t:"Content Creation",d:"Video editing, 3D rendering, streaming"},{id:"work",icon:"ðŸ’¼",t:"Productivity",d:"Office, multitasking, light photo editing"},{id:"server",icon:"ðŸ–¥ï¸",t:"Server / Workstation",d:"Always-on, VMs, databases, AI/ML"}].map(u=><button key={u.id} onClick={()=>{setWizUse(u.id);setWizStep(1);}} style={{display:"flex",alignItems:"center",gap:12,width:"100%",padding:"14px 16px",borderRadius:8,marginBottom:6,background:wizUse===u.id?"var(--mint3)":"var(--bg3)",border:`1px solid ${wizUse===u.id?"var(--mint)33":"var(--bdr)"}`,cursor:"pointer",textAlign:"left"}}><span style={{fontSize:24}}>{u.icon}</span><div><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)"}}>{u.t}</div><div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)"}}>{u.d}</div></div></button>)}
+          {[{id:"gaming",icon:"🎮",t:"Gaming",d:"High FPS, ray tracing, competitive & story games"},{id:"creative",icon:"🎨",t:"Content Creation",d:"Video editing, 3D rendering, streaming"},{id:"work",icon:"💼",t:"Productivity",d:"Office, multitasking, light photo editing"},{id:"server",icon:"🖥️",t:"Server / Workstation",d:"Always-on, VMs, databases, AI/ML"}].map(u=><button key={u.id} onClick={()=>{setWizUse(u.id);setWizStep(1);}} style={{display:"flex",alignItems:"center",gap:12,width:"100%",padding:"14px 16px",borderRadius:8,marginBottom:6,background:wizUse===u.id?"var(--mint3)":"var(--bg3)",border:`1px solid ${wizUse===u.id?"var(--mint)33":"var(--bdr)"}`,cursor:"pointer",textAlign:"left"}}><span style={{fontSize:24}}>{u.icon}</span><div><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)"}}>{u.t}</div><div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)"}}>{u.d}</div></div></button>)}
         </div>}
 
         {wizStep===1&&<div>
@@ -5197,13 +5197,13 @@ function ToolsPage({th}){
           <input type="range" min={500} max={5000} step={100} value={wizBudget} onChange={e=>setWizBudget(+e.target.value)} style={{width:"100%"}}/>
           <div style={{textAlign:"center",fontFamily:"var(--mono)",fontSize:32,fontWeight:700,color:"var(--mint)",margin:"12px 0"}}>${wizBudget}</div>
           <div style={{display:"flex",justifyContent:"center",gap:6,marginBottom:16}}>{[800,1000,1500,2000,3000].map(b=><button key={b} onClick={()=>setWizBudget(b)} style={{padding:"4px 10px",borderRadius:5,fontSize:10,fontFamily:"var(--mono)",background:wizBudget===b?"var(--mint)":"var(--bg4)",color:wizBudget===b?"#fff":"var(--dim)",border:"none",cursor:"pointer"}}>${b}</button>)}</div>
-          <div style={{display:"flex",gap:8}}><button onClick={()=>setWizStep(0)} style={{flex:1,padding:10,borderRadius:6,background:"var(--bg4)",border:"none",fontSize:13,fontWeight:600,color:"var(--dim)",cursor:"pointer",fontFamily:"var(--ff)"}}>â† Back</button><button onClick={()=>setWizStep(2)} style={{flex:2,padding:10,borderRadius:6,background:"var(--mint)",border:"none",fontSize:13,fontWeight:600,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)"}}>Next â†’</button></div>
+          <div style={{display:"flex",gap:8}}><button onClick={()=>setWizStep(0)} style={{flex:1,padding:10,borderRadius:6,background:"var(--bg4)",border:"none",fontSize:13,fontWeight:600,color:"var(--dim)",cursor:"pointer",fontFamily:"var(--ff)"}}>← Back</button><button onClick={()=>setWizStep(2)} style={{flex:2,padding:10,borderRadius:6,background:"var(--mint)",border:"none",fontSize:13,fontWeight:600,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)"}}>Next →</button></div>
         </div>}
 
         {wizStep===2&&<div>
           <h3 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:700,color:"var(--txt)",marginBottom:6}}>What matters most?</h3>
           <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginBottom:16}}>We'll optimize your build around this priority.</p>
-          {[{id:"performance",icon:"ðŸš€",t:"Max Performance",d:"Best FPS and speed, even if louder"},{id:"quiet",icon:"ðŸ¤«",t:"Silent Operation",d:"Quiet fans and coolers, even if slightly slower"},{id:"value",icon:"ðŸ’°",t:"Best Value",d:"Most performance per dollar"},{id:"aesthetic",icon:"âœ¨",t:"Clean Aesthetics",d:"RGB, tempered glass, coordinated look"}].map(p=><button key={p.id} onClick={()=>{setWizPriority(p.id);setWizStep(3);
+          {[{id:"performance",icon:"🚀",t:"Max Performance",d:"Best FPS and speed, even if louder"},{id:"quiet",icon:"🤫",t:"Silent Operation",d:"Quiet fans and coolers, even if slightly slower"},{id:"value",icon:"💰",t:"Best Value",d:"Most performance per dollar"},{id:"aesthetic",icon:"✨",t:"Clean Aesthetics",d:"RGB, tempered glass, coordinated look"}].map(p=><button key={p.id} onClick={()=>{setWizPriority(p.id);setWizStep(3);
             // Generate the build
             const alloc=wizUse==="gaming"?{GPU:.4,CPU:.2,RAM:.08,Motherboard:.12,Storage:.08,PSU:.06,Case:.04,CPUCooler:.04}:wizUse==="creative"?{CPU:.3,GPU:.25,RAM:.1,Motherboard:.12,Storage:.1,PSU:.06,Case:.04,CPUCooler:.04}:{CPU:.25,GPU:.15,RAM:.1,Motherboard:.15,Storage:.15,PSU:.08,Case:.06,CPUCooler:.06};
             const picks={};for(const cat of CORE_CATS){const t=wizBudget*(alloc[cat]||.05);const o=P.filter(pp=>pp.c===cat&&$(pp)<=t*1.3&&!pp.serverCPU);if(o.length){if(p.id==="value")o.sort((a,b)=>((b.bench||0)/$(b))-((a.bench||0)/$(a)));else if(p.id==="quiet")o.sort((a,b)=>(a.tdp||999)-(b.tdp||999));else o.sort((a,b)=>(b.bench||b.r*20)-(a.bench||a.r*20));picks[cat]=o[0];}}
@@ -5211,12 +5211,12 @@ function ToolsPage({th}){
             if(picks.CPU&&picks.RAM&&picks.CPU.memType){const rFix=P.filter(pp=>pp.c==="RAM"&&pp.ramType===picks.CPU.memType&&$(pp)<=wizBudget*.1);if(rFix.length)picks.RAM=rFix.sort((a,b)=>(b.speed||0)-(a.speed||0))[0];}
             setWizResult(picks);
           }} style={{display:"flex",alignItems:"center",gap:12,width:"100%",padding:"14px 16px",borderRadius:8,marginBottom:6,background:wizPriority===p.id?"var(--mint3)":"var(--bg3)",border:`1px solid ${wizPriority===p.id?"var(--mint)33":"var(--bdr)"}`,cursor:"pointer",textAlign:"left"}}><span style={{fontSize:24}}>{p.icon}</span><div><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)"}}>{p.t}</div><div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--dim)"}}>{p.d}</div></div></button>)}
-          <button onClick={()=>setWizStep(1)} style={{width:"100%",padding:10,borderRadius:6,background:"var(--bg4)",border:"none",fontSize:13,fontWeight:600,color:"var(--dim)",cursor:"pointer",fontFamily:"var(--ff)",marginTop:4}}>â† Back</button>
+          <button onClick={()=>setWizStep(1)} style={{width:"100%",padding:10,borderRadius:6,background:"var(--bg4)",border:"none",fontSize:13,fontWeight:600,color:"var(--dim)",cursor:"pointer",fontFamily:"var(--ff)",marginTop:4}}>← Back</button>
         </div>}
 
         {wizStep===3&&wizResult&&<div>
           <h3 style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:700,color:"var(--txt)",marginBottom:4}}>Your Recommended Build</h3>
-          <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginBottom:16}}>${wizBudget} {wizUse} build Â· {wizPriority} priority</p>
+          <p style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",marginBottom:16}}>${wizBudget} {wizUse} build · {wizPriority} priority</p>
           {Object.entries(wizResult).map(([cat,p])=>{const rr=retailers(p);const url=rr[0]?.url;return <a key={cat} href={url||'#'} target={url?"_blank":undefined} rel={url?"noopener noreferrer":undefined} onClick={url?undefined:e=>e.preventDefault()} className="wizard-row" style={{color:"inherit"}}>
             <div className="wizard-row-info">
               <div className="wizard-row-img">{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`}/>:CAT[cat]?.icon}</div>
@@ -5224,7 +5224,7 @@ function ToolsPage({th}){
             </div>
             <div className="wizard-row-meta">
               <span className="wizard-row-price">${fmtPrice($(p))}</span>
-              {url&&<span className="wizard-row-buy">Buy â†’</span>}
+              {url&&<span className="wizard-row-buy">Buy →</span>}
             </div>
           </a>;})}
           <div style={{display:"flex",justifyContent:"space-between",padding:"10px 10px",marginTop:8,borderTop:"1px solid var(--bdr)"}}>
@@ -5236,7 +5236,7 @@ function ToolsPage({th}){
       </div>
     </div>}
 
-    {/* â•â•â• POWER CALCULATOR â•â•â• */}
+    {/* ═══ POWER CALCULATOR ═══ */}
     {tool==="power"&&<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16}}>
       <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20}}>
         <h3 style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",marginBottom:12}}>Power Consumption Calculator</h3>
@@ -5247,10 +5247,10 @@ function ToolsPage({th}){
         <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",marginTop:8,marginBottom:4}}>CASE FANS</div>
         <input type="range" min={0} max={10} value={pwFans} onChange={e=>setPwFans(+e.target.value)} style={{width:"100%"}}/>
         <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--txt)",textAlign:"center"}}>{pwFans} fans</div>
-        <button onClick={()=>{const gp=gpuParts.find(p=>p.n===pwGPU);const cp=cpuParts.find(p=>p.n===pwCPU);if(!gp||!cp)return;const gpuW=gp.tdp||0;const cpuW=cp.tdp||0;const fanW=pwFans*3;const ramW=10;const storageW=8;const moboW=40;const idle=cpuW*0.15+gpuW*0.1+moboW*0.8+ramW+storageW*0.5+fanW;const gaming=cpuW*0.7+gpuW*0.95+moboW+ramW+storageW+fanW;const full=cpuW+gpuW+moboW+ramW+storageW+fanW+20;const psuRec=Math.ceil(full*1.25/50)*50;const monthCostIdle=(idle*8*30/1000*0.12).toFixed(1);const monthCostGaming=(gaming*4*30/1000*0.12).toFixed(1);setPwResult({cpuW,gpuW,idle:Math.round(idle),gaming:Math.round(gaming),full:Math.round(full),psuRec,monthCostIdle,monthCostGaming});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--sky)",border:"none",fontSize:14,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>âš¡ Calculate Power</button>
+        <button onClick={()=>{const gp=gpuParts.find(p=>p.n===pwGPU);const cp=cpuParts.find(p=>p.n===pwCPU);if(!gp||!cp)return;const gpuW=gp.tdp||0;const cpuW=cp.tdp||0;const fanW=pwFans*3;const ramW=10;const storageW=8;const moboW=40;const idle=cpuW*0.15+gpuW*0.1+moboW*0.8+ramW+storageW*0.5+fanW;const gaming=cpuW*0.7+gpuW*0.95+moboW+ramW+storageW+fanW;const full=cpuW+gpuW+moboW+ramW+storageW+fanW+20;const psuRec=Math.ceil(full*1.25/50)*50;const monthCostIdle=(idle*8*30/1000*0.12).toFixed(1);const monthCostGaming=(gaming*4*30/1000*0.12).toFixed(1);setPwResult({cpuW,gpuW,idle:Math.round(idle),gaming:Math.round(gaming),full:Math.round(full),psuRec,monthCostIdle,monthCostGaming});}} style={{width:"100%",padding:"10px 0",borderRadius:6,background:"var(--sky)",border:"none",fontSize:14,fontWeight:700,color:"#fff",cursor:"pointer",fontFamily:"var(--ff)",marginTop:12}}>⚡ Calculate Power</button>
       </div>
       <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:10,padding:20,minHeight:250}}>
-        {!pwResult&&<div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"var(--mute)",fontFamily:"var(--ff)",fontSize:14}}>Select components to calculate power â†’</div>}
+        {!pwResult&&<div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"100%",color:"var(--mute)",fontFamily:"var(--ff)",fontSize:14}}>Select components to calculate power →</div>}
         {pwResult&&<div>
           <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--sky)",letterSpacing:1,marginBottom:12,fontWeight:600}}>POWER ANALYSIS</div>
           {[{label:"Idle",w:pwResult.idle,color:"var(--mint)",desc:"Desktop, browsing, light work"},{label:"Gaming",w:pwResult.gaming,color:"var(--amber)",desc:"Gaming, GPU-intensive apps"},{label:"Full Load",w:pwResult.full,color:"var(--rose)",desc:"Stress test, all cores + GPU maxed"}].map(s=><div key={s.label} style={{marginBottom:12}}>
@@ -5272,8 +5272,8 @@ function ToolsPage({th}){
   </div>;
 }
 
-/* â•â•â• UPGRADE PAGE (receives specs from scanner app) â•â•â• */
-/* â•â•â• FOOTER â•â•â• */
+/* ═══ UPGRADE PAGE (receives specs from scanner app) ═══ */
+/* ═══ FOOTER ═══ */
 function Footer({go}){
   return <footer style={{background:"var(--bg2)",borderTop:"1px solid var(--bdr)",marginTop:60}}>
     <div style={{maxWidth:1600,margin:"0 auto",padding:"48px 32px 32px"}}>
@@ -5310,14 +5310,14 @@ function Footer({go}){
         </div>
       </div>
       <div style={{borderTop:"1px solid var(--bdr)",paddingTop:20,display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:8}}>
-        <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)"}}>Â© {new Date().getFullYear()} Pro Rig Builder. Built and managed by <a href="https://tiereduptech.com" target="_blank" rel="noopener noreferrer" style={{color:"var(--accent)",textDecoration:"underline",fontWeight:600}}>TieredUp Tech, Inc.</a> Prices and availability subject to change.</span>
+        <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)"}}>© {new Date().getFullYear()} Pro Rig Builder. Built and managed by <a href="https://tiereduptech.com" target="_blank" rel="noopener noreferrer" style={{color:"var(--accent)",textDecoration:"underline",fontWeight:600}}>TieredUp Tech, Inc.</a> Prices and availability subject to change.</span>
         <span style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--mute)"}}>As an Amazon Associate I earn from qualifying purchases. We may earn commissions from affiliate links.</span>
       </div>
     </div>
   </footer>;
 }
 
-/* â•â•â• APP â•â•â• */
+/* ═══ APP ═══ */
 function ScrollToTop(){
   const [show,setShow]=useState(false);
   useEffect(()=>{
@@ -5332,11 +5332,11 @@ function ScrollToTop(){
     style={{position:"fixed",bottom:24,right:24,zIndex:9999,width:48,height:48,borderRadius:"50%",border:"1px solid var(--bdr)",background:"var(--accent)",color:"#fff",cursor:"pointer",fontSize:22,fontWeight:700,boxShadow:"0 4px 12px rgba(0,0,0,0.25)",display:"flex",alignItems:"center",justifyContent:"center",transition:"transform .15s, background .15s"}}
     onMouseEnter={e=>{e.currentTarget.style.transform="translateY(-2px)";}}
     onMouseLeave={e=>{e.currentTarget.style.transform="translateY(0)";}}>
-    â†‘
+    ↑
   </button>;
 }
 
-// â”€â”€ ScannerPromo: sticky left-side promo for the Pro Rig Scanner desktop app â”€â”€
+// ── ScannerPromo: sticky left-side promo for the Pro Rig Scanner desktop app ──
 function ScannerPromo({ go, page }) {
   const isMobile = useIsMobile();
   const [expanded, setExpanded] = useState(false);
@@ -5344,7 +5344,7 @@ function ScannerPromo({ go, page }) {
     try { return localStorage.getItem("rf_scanner_promo_dismissed") === "1"; } catch { return false; }
   });
   if (dismissed) return null;
-  if (isMobile) return null; // hide on mobile â€” pointless there
+  if (isMobile) return null; // hide on mobile — pointless there
   if (page === "scanner") return null; // do not show on the dedicated page
   const dismiss = e => {
     e.stopPropagation();
@@ -5357,15 +5357,15 @@ function ScannerPromo({ go, page }) {
     <div onMouseLeave={close} style={{position:"fixed",left:0,top:"50%",transform:"translateY(-50%)",zIndex:50,fontFamily:"var(--ff)"}}>
       {!expanded && (
         <button onMouseEnter={open} onClick={open} style={{background:"linear-gradient(135deg,var(--accent),#FF6B35)",border:"none",borderRadius:"12px 0 0 12px",padding:"18px 10px",cursor:"pointer",color:"#fff",writingMode:"vertical-rl",transform:"rotate(180deg)",fontSize:14,fontWeight:700,letterSpacing:1,boxShadow:"0 4px 16px rgba(0,0,0,0.3)",display:"flex",alignItems:"center",gap:6}} title="Get Pro Rig Scanner">
-          <span style={{fontSize:20,transform:"rotate(90deg)"}}>ðŸ’»</span>
+          <span style={{fontSize:20,transform:"rotate(90deg)"}}>💻</span>
           <span>SCAN YOUR PC</span>
         </button>
       )}
       {expanded && (
         <div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:"0 14px 14px 0",padding:22,width:380,boxShadow:"0 12px 32px rgba(0,0,0,0.4)",position:"relative"}}>
-          <button onClick={dismiss} title="Dismiss" style={{position:"absolute",top:6,right:6,background:"transparent",border:"none",color:"var(--dim)",fontSize:18,cursor:"pointer",padding:4,lineHeight:1}}>âœ•</button>
+          <button onClick={dismiss} title="Dismiss" style={{position:"absolute",top:6,right:6,background:"transparent",border:"none",color:"var(--dim)",fontSize:18,cursor:"pointer",padding:4,lineHeight:1}}>✕</button>
           <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:8}}>
-            <span style={{fontSize:24}}>ðŸ’»</span>
+            <span style={{fontSize:24}}>💻</span>
             <div>
               <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--accent)",fontWeight:700,letterSpacing:1}}>FREE WINDOWS APP</div>
               <div style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:800,color:"var(--txt)"}}>Pro Rig Scanner</div>
@@ -5379,19 +5379,19 @@ function ScannerPromo({ go, page }) {
                 <span style={{width:8,height:8,borderRadius:"50%",background:"#27C93F"}}/>
               </div>
               <div style={{fontFamily:"var(--mono)",fontSize:12,color:"#7FE2FF",fontWeight:700}}>$ scanning hardware...</div>
-              <div style={{fontFamily:"var(--mono)",fontSize:11,color:"#7FFFB0",fontWeight:600}}>âœ“ CPU: i7-13700K</div>
-              <div style={{fontFamily:"var(--mono)",fontSize:11,color:"#7FFFB0",fontWeight:600}}>âœ“ GPU: RTX 4070</div>
-              <div style={{fontFamily:"var(--mono)",fontSize:11,color:"#7FFFB0",fontWeight:600}}>âœ“ RAM: 32GB DDR5</div>
-              <div style={{fontFamily:"var(--mono)",fontSize:11,color:"#FFA552",fontWeight:700}}>â†’ Calculating upgrades...</div>
+              <div style={{fontFamily:"var(--mono)",fontSize:11,color:"#7FFFB0",fontWeight:600}}>✓ CPU: i7-13700K</div>
+              <div style={{fontFamily:"var(--mono)",fontSize:11,color:"#7FFFB0",fontWeight:600}}>✓ GPU: RTX 4070</div>
+              <div style={{fontFamily:"var(--mono)",fontSize:11,color:"#7FFFB0",fontWeight:600}}>✓ RAM: 32GB DDR5</div>
+              <div style={{fontFamily:"var(--mono)",fontSize:11,color:"#FFA552",fontWeight:700}}>→ Calculating upgrades...</div>
             </div>
           </div>
           <div style={{display:"flex",flexDirection:"column",gap:5,marginBottom:12}}>
-            <div style={{display:"flex",alignItems:"center",gap:8,fontSize:14,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>âœ“</span> Auto-detects your hardware</div>
-            <div style={{display:"flex",alignItems:"center",gap:8,fontSize:14,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>âœ“</span> Personalized upgrade picks</div>
-            <div style={{display:"flex",alignItems:"center",gap:8,fontSize:14,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>âœ“</span> Real-time pricing</div>
-            <div style={{display:"flex",alignItems:"center",gap:8,fontSize:14,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>âœ“</span> Signed &amp; safe (no installs)</div>
+            <div style={{display:"flex",alignItems:"center",gap:8,fontSize:14,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>✓</span> Auto-detects your hardware</div>
+            <div style={{display:"flex",alignItems:"center",gap:8,fontSize:14,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>✓</span> Personalized upgrade picks</div>
+            <div style={{display:"flex",alignItems:"center",gap:8,fontSize:14,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>✓</span> Real-time pricing</div>
+            <div style={{display:"flex",alignItems:"center",gap:8,fontSize:14,color:"var(--txt)"}}><span style={{color:"var(--mint)"}}>✓</span> Signed &amp; safe (no installs)</div>
           </div>
-          <button onClick={()=>{ if (go) go("scanner"); }} style={{width:"100%",background:"var(--accent)",color:"#fff",border:"none",borderRadius:8,padding:"14px 18px",fontFamily:"var(--ff)",fontSize:15,fontWeight:700,cursor:"pointer"}}>Get it free â†’</button>
+          <button onClick={()=>{ if (go) go("scanner"); }} style={{width:"100%",background:"var(--accent)",color:"#fff",border:"none",borderRadius:8,padding:"14px 18px",fontFamily:"var(--ff)",fontSize:15,fontWeight:700,cursor:"pointer"}}>Get it free →</button>
         </div>
       )}
     </div>
@@ -5416,7 +5416,7 @@ export default function App(){
   const [theme,setTheme]=useState(()=>{try{return localStorage.getItem("rf-theme")||"light";}catch{return"light";}});
   const toggleTheme=()=>{const next=theme==="dark"?"light":"dark";setTheme(next);try{localStorage.setItem("rf-theme",next);}catch{};};
 
-  // â”€â”€ Browser history support â”€â”€
+  // ── Browser history support ──
   const setPage = (p, replaceCurrent) => {
     setPageRaw(p);
     if (p !== "product") setProductId(null);
