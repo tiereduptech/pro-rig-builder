@@ -2,7 +2,7 @@
 //  prerender.cjs
 //  Copyright (c) 2026 TieredUp Tech, Inc.
 //
-//  Pre-renders ALL pages of Pro Rig Builder to static HTML:
+//  Pre-renders pages of Pro Rig Builder to static HTML:
 //    - Static marketing/utility routes
 //    - All ~5,290 indexable product pages (auto-loaded from parts.js)
 //
@@ -15,6 +15,18 @@
 //    node prerender.cjs --verbose
 //    node prerender.cjs --static-only    # skip products (fast dev iteration)
 //    node prerender.cjs --concurrency=4  # default 8
+//
+//  Batched (range) mode -- used by prerender-batches.ps1 to defeat Chromes
+//  long-lived state leak. Each batch is a FRESH node process that fully exits,
+//  guaranteeing OS-level cleanup of leaked chrome.exe processes:
+//    node prerender.cjs --start=0 --end=200    # render product routes [0,200)
+//    node prerender.cjs --start=200 --end=400  # next window, fresh process
+//
+//  Range-mode rules:
+//    * --start/--end slice the PRODUCT route list only (after isIndexable).
+//    * Static routes are rendered ONLY in the batch that includes index 0.
+//    * Sitemap writing is SKIPPED in range mode. Write it once at the end via:
+//          node prerender.cjs --sitemap-only
 // =============================================================================
 
 const fs = require("fs");
@@ -25,10 +37,21 @@ const { productPath, isIndexable, loadParts } = require("./scripts/url-slugs.cjs
 const VERBOSE       = process.argv.includes("--verbose");
 const INCREMENTAL   = process.argv.includes("--incremental");
 const STATIC_ONLY   = process.argv.includes("--static-only");
+const SITEMAP_ONLY  = process.argv.includes("--sitemap-only");
+const NO_SITEMAP    = process.argv.includes("--no-sitemap");
 const CONCURRENCY   = (() => {
   const a = process.argv.find(a => a.startsWith("--concurrency="));
   return a ? parseInt(a.split("=")[1], 10) || 8 : 8;
 })();
+const RANGE_START   = (() => {
+  const a = process.argv.find(a => a.startsWith("--start="));
+  return a ? Math.max(0, parseInt(a.split("=")[1], 10) || 0) : null;
+})();
+const RANGE_END     = (() => {
+  const a = process.argv.find(a => a.startsWith("--end="));
+  return a ? parseInt(a.split("=")[1], 10) : null;
+})();
+const RANGE_MODE    = RANGE_START !== null || RANGE_END !== null;
 
 const PORT    = 4173;
 const BASE    = `http://localhost:${PORT}`;
@@ -60,11 +83,9 @@ const STATIC_ROUTES = [
   { path: "/vs-pcpartpicker",               priority: "0.8", changefreq: "monthly" },
   { path: "/pcpartpicker-alternative",      priority: "0.8", changefreq: "monthly" },
   { path: "/best-pc-builder-tools",         priority: "0.7", changefreq: "monthly" },
-  // High-intent landing pages (Phase 3)
   { path: "/pc-hardware-scanner",           priority: "0.8", changefreq: "monthly" },
   { path: "/what-can-i-upgrade",            priority: "0.8", changefreq: "monthly" },
   { path: "/will-it-fit",                   priority: "0.8", changefreq: "monthly" },
-  // Category index pages (Phase 4) â€” slugs MUST match scripts/url-slugs.cjs
   { path: "/parts/cpu",                     priority: "0.8", changefreq: "weekly"  },
   { path: "/parts/gpu",                     priority: "0.8", changefreq: "weekly"  },
   { path: "/parts/motherboard",             priority: "0.8", changefreq: "weekly"  },
@@ -76,17 +97,11 @@ const STATIC_ROUTES = [
   { path: "/parts/monitor",                 priority: "0.8", changefreq: "weekly"  },
 ];
 
-// --- Sanity ---------------------------------------------------------------
 if (!fs.existsSync(path.join("dist", "index.html"))) {
   console.error("  X dist/index.html not found. Run `vite build` first.");
   process.exit(1);
 }
 
-let puppeteer;
-try { puppeteer = require("puppeteer"); }
-catch { console.error("  X puppeteer not installed. Run: npm install --save-dev puppeteer"); process.exit(1); }
-
-// --- Helpers --------------------------------------------------------------
 function xmlEscape(s) {
   return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&apos;");
 }
@@ -94,6 +109,30 @@ function xmlEscape(s) {
 function outPathFor(route) {
   const parts = route.split("/").filter(Boolean);
   return route === "/" ? path.join("dist", "index.html") : path.join("dist", ...parts, "index.html");
+}
+
+async function writeSitemap() {
+  console.log("  Writing public/sitemap.xml...");
+  const parts = (await loadParts()).filter(isIndexable);
+  const sitemapEntries = [];
+  for (const sr of STATIC_ROUTES) {
+    sitemapEntries.push(
+      `  <url>\n    <loc>${xmlEscape(SITE + sr.path)}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <changefreq>${sr.changefreq}</changefreq>\n    <priority>${sr.priority}</priority>\n  </url>`
+    );
+  }
+  for (const p of parts) {
+    const u = productPath(p);
+    if (!u) continue;
+    sitemapEntries.push(
+      `  <url>\n    <loc>${xmlEscape(SITE + u)}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.6</priority>\n  </url>`
+    );
+  }
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries.join("\n")}\n</urlset>\n`;
+
+  fs.mkdirSync("public", { recursive: true });
+  fs.writeFileSync(path.join("public", "sitemap.xml"), sitemap, "utf8");
+  fs.writeFileSync(path.join("dist", "sitemap.xml"), sitemap, "utf8");
+  console.log(`  OK sitemap.xml written (${sitemapEntries.length} urls)`);
 }
 
 async function waitForServer(retries = 60) {
@@ -120,11 +159,6 @@ async function renderRoute(browser, route) {
       const titleOk = document.title && document.title.length > 5;
       const descOk  = document.querySelector('meta[name="description"]')?.content?.length > 20;
       const bodyOk  = document.body?.innerText?.length > 100;
-      // Helmet-flushed canonical check (lenient).
-      // For "/" we accept the bare site URL. For everything else we require the
-      // canonical to point under the same first path segment as the current URL â€”
-      // this proves PageMeta has rendered route-specific meta without being so
-      // strict that minor slug edge cases trigger a 20s timeout.
       const c = document.querySelector('link[rel="canonical"]')?.href || "";
       const p = location.pathname || "/";
       let canonOk;
@@ -137,7 +171,6 @@ async function renderRoute(browser, route) {
       return titleOk && descOk && bodyOk && canonOk;
     }, { timeout: TIMEOUT });
 
-    // Give React/Helmet one more tick to flush any trailing updates
     await new Promise(r => setTimeout(r, 100));
 
     const html = await page.content();
@@ -171,32 +204,56 @@ async function runPool(items, worker, concurrency, onProgress) {
   return results;
 }
 
-// --- Main -----------------------------------------------------------------
 async function main() {
   console.log("Pro Rig Builder - Pre-render");
   console.log("============================");
+
+  if (SITEMAP_ONLY) {
+    await writeSitemap();
+    process.exit(0);
+  }
+
   console.log(`  Concurrency: ${CONCURRENCY}`);
   if (INCREMENTAL) console.log("  Mode: incremental (skip existing)");
   if (STATIC_ONLY) console.log("  Mode: static-only");
+  if (RANGE_MODE)  console.log(`  Mode: range [start=${RANGE_START ?? 0}, end=${RANGE_END ?? "EOF"})`);
 
-  // Build full route list
+  let puppeteer;
+  try { puppeteer = require("puppeteer"); }
+  catch { console.error("  X puppeteer not installed. Run: npm install --save-dev puppeteer"); process.exit(1); }
+
   const parts = STATIC_ONLY ? [] : (await loadParts()).filter(isIndexable);
   console.log(`  Loaded ${parts.length} indexable products`);
 
-  const productRoutes = parts.map(p => productPath(p)).filter(Boolean);
+  const allProductRoutes = parts.map(p => productPath(p)).filter(Boolean);
+
+  const start = RANGE_START ?? 0;
+  const end   = RANGE_END ?? allProductRoutes.length;
+  const productRoutes = RANGE_MODE ? allProductRoutes.slice(start, end) : allProductRoutes;
+
+  const includeStatic = (!RANGE_MODE || start === 0) && !process.argv.includes("--no-static");
   const allRoutes = [
-    ...STATIC_ROUTES.map(r => r.path),
+    ...(includeStatic ? STATIC_ROUTES.map(r => r.path) : []),
     ...productRoutes,
   ];
 
-  // Incremental: skip routes already rendered
+  if (RANGE_MODE) {
+    console.log(`  Range: ${productRoutes.length} product routes [${start},${Math.min(end, allProductRoutes.length)}) of ${allProductRoutes.length} total`);
+    if (includeStatic) console.log(`  Range: including ${STATIC_ROUTES.length} static routes (start===0)`);
+  }
+
   let toRender = allRoutes;
   if (INCREMENTAL) {
     toRender = allRoutes.filter(r => !fs.existsSync(outPathFor(r)));
     console.log(`  Incremental: ${toRender.length} of ${allRoutes.length} need rendering`);
   }
 
-  // Spawn local server
+  if (toRender.length === 0) {
+    console.log("  Nothing to render in this range. Done.");
+    if (!RANGE_MODE && !NO_SITEMAP) await writeSitemap();
+    process.exit(0);
+  }
+
   const isWin = process.platform === "win32";
   const serveCmd = isWin ? "cmd" : "npx";
   const serveArgs = isWin
@@ -207,19 +264,18 @@ async function main() {
   const serveProc = spawn(serveCmd, serveArgs, { stdio: VERBOSE ? "inherit" : "pipe", detached: false });
   serveProc.on("error", (e) => { console.error("  X serve failed:", e.message); process.exit(1); });
 
-  if (!(await waitForServer())) {
-    console.error("  X Local server did not respond. Aborting.");
+  function killServer() {
     if (isWin) spawn("taskkill", ["/pid", serveProc.pid, "/T", "/F"], { stdio: "ignore" });
     else serveProc.kill("SIGTERM");
+  }
+
+  if (!(await waitForServer())) {
+    console.error("  X Local server did not respond. Aborting.");
+    killServer();
     process.exit(1);
   }
   console.log("  OK Server ready");
 
-  // Chrome processes leak under puppeteer's setRequestInterception when reused
-  // across many pages, causing cascade failures (45+ chrome.exe procs, 0.2/s,
-  // growing timeouts) after ~60 renders. Solution: process in chunks of
-  // CHUNK_SIZE, fully closing the browser between chunks so each chunk starts
-  // with zero leaked state.
   const CHUNK_SIZE = 15;
 
   async function launchBrowser() {
@@ -233,28 +289,23 @@ async function main() {
   console.log("  Launching headless Chrome...");
   let browser = await launchBrowser();
 
-  // Warmup: render one route sequentially so the parts-data chunk is in the
-  // local server's hot cache before workers fight for it on a cold start.
   if (toRender.length > 1) {
     console.log("  Warmup: rendering first route sequentially...");
     const warmupResult = await renderRoute(browser, toRender[0]);
     if (warmupResult.ok) console.log(`  OK Warmup done (${warmupResult.size} bytes)`);
-    else console.log(`  ! Warmup failed: ${warmupResult.error} â€” continuing anyway`);
+    else console.log(`  ! Warmup failed: ${warmupResult.error} - continuing anyway`);
   }
 
   const startedAt = Date.now();
   const failures = [];
   let lastLog = Date.now();
-  let totalDone = warmupCounted();
-  function warmupCounted() { return toRender.length > 1 ? 1 : 0; }
+  let totalDone = toRender.length > 1 ? 1 : 0;
 
-  // Skip the warmup route since it was already rendered above.
   const poolRoutes = toRender.length > 1 ? toRender.slice(1) : toRender;
 
-  // Process in chunks; recycle browser between chunks to release leaked state.
   for (let chunkStart = 0; chunkStart < poolRoutes.length; chunkStart += CHUNK_SIZE) {
     const chunk = poolRoutes.slice(chunkStart, chunkStart + CHUNK_SIZE);
-    const chunkResults = await runPool(
+    await runPool(
       chunk,
       async (route) => {
         let result = await renderRoute(browser, route);
@@ -280,9 +331,7 @@ async function main() {
       }
     );
     totalDone += chunk.length;
-    chunkResults; // captured into failures via onProgress
 
-    // Recycle browser between chunks (skip on the last chunk).
     if (chunkStart + CHUNK_SIZE < poolRoutes.length) {
       try { await browser.close(); } catch {}
       browser = await launchBrowser();
@@ -290,45 +339,31 @@ async function main() {
   }
 
   try { await browser.close(); } catch {}
-  if (isWin) spawn("taskkill", ["/pid", serveProc.pid, "/T", "/F"], { stdio: "ignore" });
-  else serveProc.kill("SIGTERM");
+  killServer();
 
   const success = toRender.length - failures.length;
   const failed  = failures.length;
   const elapsed = ((Date.now() - startedAt) / 1000).toFixed(1);
 
   if (failed > 0) {
-    fs.writeFileSync("prerender-failures.json", JSON.stringify(failures, null, 2));
-    console.log(`  Logged ${failed} failures to prerender-failures.json`);
-  } else if (fs.existsSync("prerender-failures.json")) {
+    const failFile = RANGE_MODE
+      ? `prerender-failures-${start}-${Math.min(end, allProductRoutes.length)}.json`
+      : "prerender-failures.json";
+    fs.writeFileSync(failFile, JSON.stringify(failures, null, 2));
+    console.log(`  Logged ${failed} failures to ${failFile}`);
+  } else if (!RANGE_MODE && fs.existsSync("prerender-failures.json")) {
     fs.unlinkSync("prerender-failures.json");
   }
 
-  // ---- Write sitemap from the SAME product list ----
-  console.log("  Writing public/sitemap.xml...");
-  const sitemapEntries = [];
-  for (const sr of STATIC_ROUTES) {
-    sitemapEntries.push(
-      `  <url>\n    <loc>${xmlEscape(SITE + sr.path)}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <changefreq>${sr.changefreq}</changefreq>\n    <priority>${sr.priority}</priority>\n  </url>`
-    );
+  if (!RANGE_MODE && !NO_SITEMAP) {
+    await writeSitemap();
+  } else if (RANGE_MODE) {
+    console.log("  (range mode: sitemap skipped -- run --sitemap-only at the end)");
   }
-  for (const p of parts) {
-    const u = productPath(p);
-    if (!u) continue;
-    sitemapEntries.push(
-      `  <url>\n    <loc>${xmlEscape(SITE + u)}</loc>\n    <lastmod>${TODAY}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.6</priority>\n  </url>`
-    );
-  }
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries.join("\n")}\n</urlset>\n`;
-
-  fs.mkdirSync("public", { recursive: true });
-  fs.writeFileSync(path.join("public", "sitemap.xml"), sitemap, "utf8");
-  fs.writeFileSync(path.join("dist", "sitemap.xml"), sitemap, "utf8");
-  console.log(`  OK sitemap.xml written (${sitemapEntries.length} urls)`);
 
   console.log("\n============================");
   console.log(`  OK ${success} pre-rendered in ${elapsed}s`);
-  if (failed > 0) console.log(`  X  ${failed} failed (see prerender-failures.json)`);
+  if (failed > 0) console.log(`  X  ${failed} failed (see failures json)`);
   console.log("============================\n");
 
   process.exit(failed > 0 ? 1 : 0);
