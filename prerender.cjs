@@ -64,7 +64,7 @@ const STATIC_ROUTES = [
   { path: "/pc-hardware-scanner",           priority: "0.8", changefreq: "monthly" },
   { path: "/what-can-i-upgrade",            priority: "0.8", changefreq: "monthly" },
   { path: "/will-it-fit",                   priority: "0.8", changefreq: "monthly" },
-  // Category index pages (Phase 4) — slugs MUST match scripts/url-slugs.cjs
+  // Category index pages (Phase 4) â€” slugs MUST match scripts/url-slugs.cjs
   { path: "/parts/cpu",                     priority: "0.8", changefreq: "weekly"  },
   { path: "/parts/gpu",                     priority: "0.8", changefreq: "weekly"  },
   { path: "/parts/motherboard",             priority: "0.8", changefreq: "weekly"  },
@@ -122,7 +122,7 @@ async function renderRoute(browser, route) {
       const bodyOk  = document.body?.innerText?.length > 100;
       // Helmet-flushed canonical check (lenient).
       // For "/" we accept the bare site URL. For everything else we require the
-      // canonical to point under the same first path segment as the current URL —
+      // canonical to point under the same first path segment as the current URL â€”
       // this proves PageMeta has rendered route-specific meta without being so
       // strict that minor slug edge cases trigger a 20s timeout.
       const c = document.querySelector('link[rel="canonical"]')?.href || "";
@@ -220,12 +220,13 @@ async function main() {
   // growing timeouts) after ~60 renders. Solution: process in chunks of
   // CHUNK_SIZE, fully closing the browser between chunks so each chunk starts
   // with zero leaked state.
-  const CHUNK_SIZE = 25;
+  const CHUNK_SIZE = 15;
 
   async function launchBrowser() {
     return await puppeteer.launch({
       headless: "new",
       args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      protocolTimeout: 180000,
     });
   }
 
@@ -238,7 +239,7 @@ async function main() {
     console.log("  Warmup: rendering first route sequentially...");
     const warmupResult = await renderRoute(browser, toRender[0]);
     if (warmupResult.ok) console.log(`  OK Warmup done (${warmupResult.size} bytes)`);
-    else console.log(`  ! Warmup failed: ${warmupResult.error} — continuing anyway`);
+    else console.log(`  ! Warmup failed: ${warmupResult.error} â€” continuing anyway`);
   }
 
   const startedAt = Date.now();
