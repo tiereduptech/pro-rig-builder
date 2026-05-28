@@ -1,0 +1,23 @@
+{
+  "name": "Pro Rig Builder",
+  "short_name": "Pro Rig",
+  "description": "PC components comparison platform with hardware scanner, FPS estimator, and budget-aware upgrade recommendations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#FF6B35",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "utilities",
+    "productivity",
+    "shopping"
+  ],
+  "lang": "en-US"
+}
