@@ -32,7 +32,29 @@
 const fs = require("fs");
 const path = require("path");
 const { spawn } = require("child_process");
-const { productPath, isIndexable, loadParts } = require("./scripts/url-slugs.cjs");
+const { productPath, isIndexable, loadParts, categoryBrowsePath, browsePageCount, BROWSE_PAGE_SIZE, CAT_SLUG } = require('./scripts/url-slugs.cjs');
+// BROWSE_ROUTES_ENUMERATION_INSERTED
+async function enumerateBrowseRoutes() {
+  const parts = (await loadParts()).filter(isIndexable);
+  const countsByCat = {};
+  for (const p of parts) { countsByCat[p.c] = (countsByCat[p.c] || 0) + 1; }
+  const routes = [];
+// BROWSE_ROUTES_WIRED
+const _browseRoutes = await enumerateBrowseRoutes();
+if (typeof allRoutes !== 'undefined') {
+  allRoutes.push(..._browseRoutes.map(p => ({ path: p, priority: "0.6", changefreq: "weekly" })));
+} else if (typeof routes !== 'undefined') {
+  routes.push(..._browseRoutes.map(p => ({ path: p, priority: "0.6", changefreq: "weekly" })));
+}
+  for (const [catKey, count] of Object.entries(countsByCat)) {
+    if (!CAT_SLUG[catKey]) continue;
+    const totalPages = browsePageCount(count);
+    for (let n = 1; n <= totalPages; n++) {
+      routes.push(categoryBrowsePath(catKey, n));
+    }
+  }
+  return routes;
+}
 
 const VERBOSE       = process.argv.includes("--verbose");
 const INCREMENTAL   = process.argv.includes("--incremental");

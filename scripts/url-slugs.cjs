@@ -43,6 +43,10 @@ const CAT_SLUG = {
   'Desk': 'desk',
 };
 
+// Page size for /parts/<cat>/browse paginated inventory pages.
+// Keep in sync with CategoryBrowsePage in src/App.jsx.
+const BROWSE_PAGE_SIZE = 50;
+
 function slugify(name) {
   const norm = String(name || '')
     .toLowerCase().replace(/\s+/g,' ').replace(/[^a-z0-9 ]/g,'').trim();
@@ -54,6 +58,30 @@ function productPath(product) {
   const catSlug = CAT_SLUG[product.c];
   if (!catSlug || !product.id || !product.n) return null;
   return `/parts/${catSlug}/${slugify(product.n)}-${product.id}`;
+}
+
+// Editorial category index page (Best X 2026). One per category.
+// Returns null if catKey is not a known slug-mapped category.
+function categoryIndexPath(catKey) {
+  const slug = CAT_SLUG[catKey];
+  return slug ? `/parts/${slug}` : null;
+}
+
+// Paginated "browse all" page. Page 1 lives at /parts/<slug>/browse;
+// pages 2+ at /parts/<slug>/browse/page-N. This matches Google's preference
+// for clean, distinct URLs per paginated view.
+function categoryBrowsePath(catKey, pageNum = 1) {
+  const slug = CAT_SLUG[catKey];
+  if (!slug) return null;
+  return pageNum === 1
+    ? `/parts/${slug}/browse`
+    : `/parts/${slug}/browse/page-${pageNum}`;
+}
+
+// Total pages needed to display `count` products at BROWSE_PAGE_SIZE per page.
+// Always returns at least 1, even if count is 0, so the route exists.
+function browsePageCount(count) {
+  return Math.max(1, Math.ceil((count || 0) / BROWSE_PAGE_SIZE));
 }
 
 function isIndexable(product) {
@@ -73,4 +101,14 @@ async function loadParts() {
   return mod.PARTS || mod.default || [];
 }
 
-module.exports = { CAT_SLUG, slugify, productPath, isIndexable, loadParts };
+module.exports = {
+  CAT_SLUG,
+  BROWSE_PAGE_SIZE,
+  slugify,
+  productPath,
+  categoryIndexPath,
+  categoryBrowsePath,
+  browsePageCount,
+  isIndexable,
+  loadParts,
+};

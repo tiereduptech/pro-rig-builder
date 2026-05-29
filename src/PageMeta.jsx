@@ -228,6 +228,15 @@ function routeFromUrl(parts) {
   }
 
   // /parts/{cat}  (category index page — no product id)
+  const browseMatch = pathname.match(/^\/parts\/([^/]+)\/browse(?:\/page-(\d+))?\/?$/);
+  if (browseMatch) {
+    const catKey = SLUG_TO_CAT[browseMatch[1]];
+    if (catKey) {
+      const pageNum = browseMatch[2] ? Math.max(1, parseInt(browseMatch[2], 10) || 1) : 1;
+      return { page: "category-browse", product: null, category: catKey, browsePage: pageNum };
+    }
+  }
+
   const catIdxMatch = pathname.match(/^\/parts\/([^/]+)\/?$/);
   if (catIdxMatch) {
     const catKey = SLUG_TO_CAT[catIdxMatch[1]];
@@ -297,6 +306,20 @@ function buildCategoryIndexMeta(catKey) {
     title: `Best ${ci.noun} ${year} — ${ci.kw} | ${BRAND}`,
     desc: `Compare the best ${ci.long} of ${year}, ranked by benchmark and price. Verified specs, live deals, and value grades on every model.`,
     path: `/parts/${slug}`,
+  };
+}
+
+function buildCategoryBrowseMeta(catKey, pageNum) {
+  const ci = CAT_INDEX[catKey];
+  const slug = URL_CAT_SLUG[catKey];
+  if (!ci || !slug) return null;
+  const safePage = Math.max(1, pageNum || 1);
+  const pageSuffix = safePage > 1 ? ` - Page ${safePage}` : "";
+  const pathSuffix = safePage > 1 ? `/browse/page-${safePage}` : "/browse";
+  return {
+    title: `Browse ${ci.noun}${pageSuffix} | ${BRAND}`,
+    desc: `Browse every ${ci.long.toLowerCase()} in the catalog, ranked by performance. Verified specs and live deals on every model.`,
+    path: `/parts/${slug}${pathSuffix}`,
   };
 }
 
@@ -564,6 +587,9 @@ export default function PageMeta({ page, category, product, parts }) {
     ogImage = resolvedProduct?.deals?.amazon?.image || resolvedProduct.img || DEFAULT_OG_IMAGE;
   } else if (effectivePage === "category-index" && resolvedCategory) {
     meta = buildCategoryIndexMeta(resolvedCategory) || PAGES.search;
+  } else if (effectivePage === "category-browse" && resolvedCategory) {
+    const _pn = (fromUrl && fromUrl.browsePage) || 1;
+    meta = buildCategoryBrowseMeta(resolvedCategory, _pn) || PAGES.search;
   } else if (effectivePage === "search" && resolvedCategory && CATEGORY_META[resolvedCategory]) {
     meta = { ...CATEGORY_META[resolvedCategory], path: `/search?cat=${encodeURIComponent(resolvedCategory)}` };
   } else {

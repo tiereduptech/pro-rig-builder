@@ -2807,7 +2807,8 @@ function CategoryIndexPage({catKey,go}){
           <select value={sort} onChange={e=>setSort(e.target.value)} style={{background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:5,padding:"6px 8px",fontSize:12,color:"var(--txt)",fontFamily:"var(--ff)",cursor:"pointer"}}>
             <option value="bench">Performance</option><option value="price">Price ↑</option><option value="rating">Top Rated</option>
           </select>
-          <a href={`/search?cat=${catKey}`} style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--accent)",textDecoration:"underline",marginLeft:8}}>Filter all →</a>
+          <a href={`/parts/${slug}/browse`} style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--accent)",textDecoration:"underline",marginLeft:8}}>Browse all</a>
+            <a href={`/search?cat=${catKey}`} style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,color:"var(--accent)",textDecoration:"underline",marginLeft:8}}>Filter</a>
         </div>
       </div>
       <div style={{border:"1px solid var(--bdr)",borderRadius:10,overflow:"hidden",marginBottom:32}}>
@@ -2836,6 +2837,93 @@ function CategoryIndexPage({catKey,go}){
       </div>
     </div>
     <VariantCTA go={go}/>
+  </div>;
+}
+
+// ============================================================================
+//  CategoryBrowsePage  (added by apply-browse-page-patch.cjs)
+//  Paginated browse-all view of every product in a category. 50 per page.
+//  URLs: /parts/<slug>/browse and /parts/<slug>/browse/page-N (pages 2+).
+// ============================================================================
+const BROWSE_PAGE_SIZE = 50;
+function CategoryBrowsePage({catKey, pageNum, go}){
+  const cfg = CAT[catKey] || {};
+  const slug = CAT_URL_SLUG[catKey];
+  const NOUN = {CPU:"CPUs",GPU:"Graphics Cards",Motherboard:"Motherboards",RAM:"RAM",Storage:"SSDs & Hard Drives",PSU:"Power Supplies",Case:"PC Cases",CPUCooler:"CPU Coolers",Monitor:"Monitors"}[catKey] || (cfg.label || catKey);
+  const all = React.useMemo(()=>{
+    const inCat = P.filter(p=>p.c===catKey && !p.bundle && !p.needsReview && p.n && p.id);
+    const seen = new Set(), uniq = [];
+    for (const p of inCat) {
+      const k = cleanProductName(p).toLowerCase();
+      if (seen.has(k)) continue;
+      seen.add(k); uniq.push(p);
+    }
+    uniq.sort((a,b) => { const d = (b.bench||0) - (a.bench||0); return d !== 0 ? d : (($(a)||1e9) - ($(b)||1e9)); });
+    return uniq;
+  }, [catKey]);
+  const totalPages = Math.max(1, Math.ceil(all.length / BROWSE_PAGE_SIZE));
+  const safePage = Math.min(Math.max(1, pageNum||1), totalPages);
+  const startIdx = (safePage - 1) * BROWSE_PAGE_SIZE;
+  const slice = all.slice(startIdx, startIdx + BROWSE_PAGE_SIZE);
+  const pageUrl = (n) => n === 1 ? `/parts/${slug}/browse` : `/parts/${slug}/browse/page-${n}`;
+  const editorialUrl = `/parts/${slug}`;
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Browse ${NOUN} - Page ${safePage} of ${totalPages}`,
+    numberOfItems: slice.length,
+    itemListElement: slice.map((p,i) => ({ "@type": "ListItem", position: startIdx + i + 1, name: cleanProductName(p), url: "https://prorigbuilder.com" + (productUrl(p) || "") })),
+  };
+  return <div className="fade">
+    <Helmet><script type="application/ld+json">{JSON.stringify(itemListLd)}</script></Helmet>
+    <div style={{maxWidth:1180,margin:"0 auto",padding:"16px 32px 0"}}>
+      <nav aria-label="Breadcrumb" style={{display:"flex",alignItems:"center",gap:6,fontSize:13,color:"var(--dim)",flexWrap:"wrap"}}>
+        <a href="/" onClick={e=>{e.preventDefault();go("home");}} style={{color:"var(--dim)",cursor:"pointer"}}>Home</a><span>/</span>
+        <a href={editorialUrl} style={{color:"var(--dim)",cursor:"pointer"}}>{NOUN}</a><span>/</span>
+        <span style={{color:"var(--txt)",fontWeight:600}}>Browse All</span>
+      </nav>
+    </div>
+    <div style={{maxWidth:1180,margin:"0 auto",padding:"20px 32px 8px"}}>
+      <h1 style={{fontFamily:"var(--ff)",fontSize:32,fontWeight:800,color:"var(--txt)",letterSpacing:-1,lineHeight:1.15,marginBottom:8}}>All {NOUN}</h1>
+      <p style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.6,marginBottom:8}}>Browsing {all.length} {NOUN.toLowerCase()} ranked by performance. Showing {startIdx + 1}-{startIdx + slice.length} on page {safePage} of {totalPages}.</p>
+      <div style={{fontFamily:"var(--ff)",fontSize:13,marginBottom:14}}><a href={editorialUrl} style={{color:"var(--accent)",textDecoration:"underline"}}>Back to Best {NOUN} {new Date().getFullYear()}</a></div>
+    </div>
+    <div style={{maxWidth:1180,margin:"0 auto",padding:"0 32px"}}>
+      <div style={{border:"1px solid var(--bdr)",borderRadius:10,overflow:"hidden",marginBottom:24}}>
+        {slice.map((p,i) => {
+          const u = productUrl(p); const pr = $(p); const rank = startIdx + i + 1;
+          return <a key={p.id} href={u||"#"} style={{display:"grid",gridTemplateColumns:"40px 64px 1fr auto",gap:12,alignItems:"center",padding:"12px 14px",borderBottom:i<slice.length-1?"1px solid var(--bdr)":"none",background:i%2?"var(--bg2)":"transparent",textDecoration:"none"}}>
+            <span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:"var(--dim)",textAlign:"center"}}>{rank}</span>
+            {p.img ? <img loading="lazy" decoding="async" src={p.img} alt={`${cleanProductName(p)} ${catKey}`} width="64" height="64" style={{width:64,height:64,objectFit:"contain",background:"var(--bg4)",borderRadius:6}}/> : <div style={{width:64,height:64,background:"var(--bg4)",borderRadius:6}}/>}
+            <div style={{minWidth:0}}>
+              <div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{cleanProductName(p)}</div>
+              <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--dim)",marginTop:2}}>{p.b || ""}{p.bench ? ` - perf ${p.bench}` : ""}{p.r ? ` - rating ${p.r}` : ""}</div>
+            </div>
+            <div style={{textAlign:"right"}}>
+              {pr ? <div style={{fontFamily:"var(--mono)",fontSize:15,fontWeight:700,color:"var(--accent)"}}>${pr}</div> : null}
+              <div style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--accent)",textDecoration:"underline"}}>View</div>
+            </div>
+          </a>;
+        })}
+      </div>
+    </div>
+    {totalPages > 1 && <div style={{maxWidth:1180,margin:"0 auto",padding:"0 32px 32px"}}>
+      <div style={{display:"flex",alignItems:"center",justifyContent:"center",gap:6,flexWrap:"wrap"}}>
+        {safePage > 1 && <a href={pageUrl(safePage-1)} rel="prev" style={{fontFamily:"var(--ff)",fontSize:13,padding:"8px 14px",border:"1px solid var(--bdr)",borderRadius:6,color:"var(--txt)",textDecoration:"none",background:"var(--bg2)"}}>Prev</a>}
+        {(() => {
+          const pages = new Set([1, totalPages, safePage, safePage-1, safePage+1, safePage-2, safePage+2]);
+          const sorted = [...pages].filter(n => n>=1 && n<=totalPages).sort((a,b)=>a-b);
+          const elements = []; let prev = 0;
+          for (const n of sorted) {
+            if (n - prev > 1) elements.push(<span key={`gap-${n}`} style={{padding:"0 6px",color:"var(--dim)"}}>...</span>);
+            elements.push(n === safePage ? <span key={n} style={{fontFamily:"var(--ff)",fontSize:13,padding:"8px 12px",border:"1px solid var(--accent)",borderRadius:6,color:"var(--accent)",fontWeight:700,background:"var(--bg3)"}}>{n}</span> : <a key={n} href={pageUrl(n)} style={{fontFamily:"var(--ff)",fontSize:13,padding:"8px 12px",border:"1px solid var(--bdr)",borderRadius:6,color:"var(--txt)",textDecoration:"none"}}>{n}</a>);
+            prev = n;
+          }
+          return elements;
+        })()}
+        {safePage < totalPages && <a href={pageUrl(safePage+1)} rel="next" style={{fontFamily:"var(--ff)",fontSize:13,padding:"8px 14px",border:"1px solid var(--bdr)",borderRadius:6,color:"var(--txt)",textDecoration:"none",background:"var(--bg2)"}}>Next</a>}
+      </div>
+    </div>}
   </div>;
 }
 
@@ -5725,6 +5813,7 @@ export default function App(){
     if(typeof window==='undefined')return"home";
     const path=(window.location.pathname||"/").replace(/^\//,"").split("/")[0];
     if(path==="parts"&&/^\/parts\/[^\/]+\/.*-\d+$/.test(window.location.pathname))return"product";
+    if(path==="parts"&&/^\/parts\/[^\/]+\/browse(\/page-\d+)?\/?$/.test(window.location.pathname)){const m=window.location.pathname.match(/^\/parts\/([^\/]+)\/browse/);if(m&&SLUG_TO_CATKEY[m[1]])return"category-browse";}
     if(path==="parts"){const m=window.location.pathname.match(/^\/parts\/([^\/]+)\/?$/);if(m&&SLUG_TO_CATKEY[m[1]])return"category-index";}
     if(!path)return"home";
     // Validate against known pages
@@ -5735,7 +5824,19 @@ export default function App(){
     if(validPages.includes(hash))return hash;
     return"home";
   });const [bc,setBc]=useState("");const [bq,setBq]=useState("");const [productId,setProductId]=useState(()=>{if(typeof window==="undefined")return null;const m=(window.location.pathname||"").match(/^\/parts\/[^\/]+\/.*-(\d+)$/);return m?m[1]:null;});
-  const [catKey,setCatKey]=useState(()=>{if(typeof window==="undefined")return null;const m=(window.location.pathname||"").match(/^\/parts\/([^\/]+)\/?$/);return m&&SLUG_TO_CATKEY[m[1]]?SLUG_TO_CATKEY[m[1]]:null;});
+  const [catKey,setCatKey]=useState(()=>{
+    if(typeof window==="undefined")return null;
+    const _path=window.location.pathname||"";
+    const _bm=_path.match(/^\/parts\/([^\/]+)\/browse/);
+    if(_bm&&SLUG_TO_CATKEY[_bm[1]])return SLUG_TO_CATKEY[_bm[1]];
+    const _im=_path.match(/^\/parts\/([^\/]+)\/?$/);
+    return _im&&SLUG_TO_CATKEY[_im[1]]?SLUG_TO_CATKEY[_im[1]]:null;
+  });
+  const [browsePage,setBrowsePage]=useState(()=>{
+    if(typeof window==="undefined")return 1;
+    const m=(window.location.pathname||"").match(/^\/parts\/[^\/]+\/browse\/page-(\d+)/);
+    return m?Math.max(1,parseInt(m[1],10)||1):1;
+  });
   const th = useThumbs();
   const [theme,setTheme]=useState(()=>{try{return localStorage.getItem("rf-theme")||"light";}catch{return"light";}});
   const toggleTheme=()=>{const next=theme==="dark"?"light":"dark";setTheme(next);try{localStorage.setItem("rf-theme",next);}catch{};};
@@ -5744,7 +5845,8 @@ export default function App(){
   const setPage = (p, replaceCurrent) => {
     setPageRaw(p);
     if (p !== "product") setProductId(null);
-    if (p !== "category-index") setCatKey(null);
+    if (p !== "category-index" && p !== "category-browse") setCatKey(null);
+    if (p !== "category-browse") setBrowsePage(1);
     const url = p === "home" ? "/" : "/" + p;
     if (replaceCurrent) {
       window.history.replaceState({page:p}, "", url + window.location.search);
@@ -5763,6 +5865,11 @@ export default function App(){
       if (productMatch) {
         setProductId(productMatch[1]);
         setPageRaw("product");
+      } else if ((window.location.pathname || "").match(/^\/parts\/([^\/]+)\/browse(?:\/page-(\d+))?\/?$/) && SLUG_TO_CATKEY[((window.location.pathname || "").match(/^\/parts\/([^\/]+)\/browse/) || [])[1]]) {
+        const _bm = window.location.pathname.match(/^\/parts\/([^\/]+)\/browse(?:\/page-(\d+))?\/?$/);
+        setCatKey(SLUG_TO_CATKEY[_bm[1]]);
+        setBrowsePage(_bm[2] ? Math.max(1, parseInt(_bm[2], 10) || 1) : 1);
+        setPageRaw("category-browse");
       } else if (catIdxMatch && SLUG_TO_CATKEY[catIdxMatch[1]]) {
         setCatKey(SLUG_TO_CATKEY[catIdxMatch[1]]);
         setPageRaw("category-index");
@@ -5796,6 +5903,14 @@ export default function App(){
       setProductId(productMatch[1]);
       setPageRaw("product");
       window.history.replaceState({page:"product",productId:productMatch[1]}, "", window.location.pathname);
+    } else if ((window.location.pathname || "").match(/^\/parts\/([^\/]+)\/browse(?:\/page-(\d+))?\/?$/) && SLUG_TO_CATKEY[((window.location.pathname || "").match(/^\/parts\/([^\/]+)\/browse/) || [])[1]]) {
+      const _bm = window.location.pathname.match(/^\/parts\/([^\/]+)\/browse(?:\/page-(\d+))?\/?$/);
+      const _ck = SLUG_TO_CATKEY[_bm[1]];
+      const _pg = _bm[2] ? Math.max(1, parseInt(_bm[2], 10) || 1) : 1;
+      setCatKey(_ck);
+      setBrowsePage(_pg);
+      setPageRaw("category-browse");
+      window.history.replaceState({page:"category-browse",catKey:_ck,browsePage:_pg}, "", window.location.pathname);
     } else if (catIdxMatch && SLUG_TO_CATKEY[catIdxMatch[1]]) {
       setCatKey(SLUG_TO_CATKEY[catIdxMatch[1]]);
       setPageRaw("category-index");
@@ -5827,5 +5942,5 @@ export default function App(){
 
   const handleBrowse=c=>{setBc(c);setPage("search");};
   const handleSearch=(q,cat)=>{setBq(q);setBc(cat||"");setPage("search");};
-  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><PageMeta page={page} category={bc} parts={ACTIVE_SEED_PARTS} product={page==="product"&&productId?ACTIVE_SEED_PARTS.find(x=>String(x.id)===String(productId)):null} /><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} onSearch={handleSearch} th={th} theme={theme} toggleTheme={toggleTheme}/><main style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPageRouter activeCat={bc} initialQuery={bq} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage}/>}{page==="pc-hardware-scanner"&&<PcHardwareScannerPage go={setPage}/>}{page==="what-can-i-upgrade"&&<WhatCanIUpgradePage go={setPage}/>}{page==="will-it-fit"&&<WillItFitPage go={setPage}/>}{page==="category-index"&&catKey&&<CategoryIndexPage catKey={catKey} go={setPage}/>}{page==="product"&&productId&&(()=>{const _sp=ACTIVE_SEED_PARTS.find(x=>String(x.id)===String(productId));return _sp?<SearchPage activeCat={_sp.c} singleProductId={productId} th={th}/>:<ProductPage productId={productId} parts={ACTIVE_SEED_PARTS} go={setPage}/>;})()}</main><Footer go={setPage}/><ScrollToTop /><ScannerPromo go={setPage} page={page}/></div>;
+  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><PageMeta page={page} category={bc} parts={ACTIVE_SEED_PARTS} product={page==="product"&&productId?ACTIVE_SEED_PARTS.find(x=>String(x.id)===String(productId)):null} /><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} onSearch={handleSearch} th={th} theme={theme} toggleTheme={toggleTheme}/><main style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPageRouter activeCat={bc} initialQuery={bq} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage}/>}{page==="pc-hardware-scanner"&&<PcHardwareScannerPage go={setPage}/>}{page==="what-can-i-upgrade"&&<WhatCanIUpgradePage go={setPage}/>}{page==="will-it-fit"&&<WillItFitPage go={setPage}/>}{page==="category-index"&&catKey&&<CategoryIndexPage catKey={catKey} go={setPage}/>}{page==="category-browse"&&catKey&&<CategoryBrowsePage catKey={catKey} pageNum={browsePage} go={setPage}/>}{page==="product"&&productId&&(()=>{const _sp=ACTIVE_SEED_PARTS.find(x=>String(x.id)===String(productId));return _sp?<SearchPage activeCat={_sp.c} singleProductId={productId} th={th}/>:<ProductPage productId={productId} parts={ACTIVE_SEED_PARTS} go={setPage}/>;})()}</main><Footer go={setPage}/><ScrollToTop /><ScannerPromo go={setPage} page={page}/></div>;
 }
