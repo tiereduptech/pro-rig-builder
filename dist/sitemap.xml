@@ -3841,12 +3841,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/gpu/nvidia-geforce-rtx-4070-ti-30012</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/gpu/nvidia-geforce-rtx-4070-super-30013</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -4363,12 +4357,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/gpu/dual-nvidia-geforce-rtx-3050-6gb-oc-edition-gaming-graphics-card-pcie-40-6gb-gdd-30107</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/gpu/radeon-rx-9060-xt-gaming-oc-ice-16g-graphics-card-16gb-gddr6-128bit-pcie-50-30108</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -4406,12 +4394,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/gpu/gaming-geforce-rtx-5080-solid-core-oc-dlss-4-16gb-gddr7-256bit-30-gbps-pcie-50-g-30115</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/gpu/dual-geforce-rtx-5060-ti-8gb-gddr7-oc-edition-graphics-card-nvidia-desktop-pcie-30116</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -4772,12 +4754,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/gpu/geforce-rtx-4080-super-16gb-ventus-3x-oc-graphics-card-16-gb-gddr6x-23gbps-256-b-30176</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/gpu/dual-radeon-rx-7700-xt-o12g-gddr6x-pcie-40-12gb-gddr6x-hdmi-21-30177</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -12901,12 +12877,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/case/proart-pa602-eatx-pc-case-420mm-radiator-support-dual-200mm-builtin-fans-front-p-70179</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/case/aluminum-mini-itx-case-with-pcie-30-riser-joyjom-mini-pc-case-sff-small-form-fac-70180</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -13346,12 +13316,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/case/solo-leveling-computer-case-bundle-lian-li-o11-dynamic-evo-rgb-eatxatxmatx-pc-to-70255</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/case/cubixg-microatx-pc-case-matx-case-with-3-x-120mm-frgb-fans-preinstalled-panorami-70256</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -23059,12 +23023,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/gpu/asus-tuf-geforce-rtx-5090-32gb-gddr7-oc-edition-graphics-card-nvidia-desktop-pci-100393</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/gpu/msi-gaming-rtx-5090-32g-gaming-trio-oc-graphics-card-32gb-gddr7-512bit-extreme-p-100394</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -23131,12 +23089,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/gpu/asus-the-sffready-prime-geforce-rtx-5070-graphics-card-nvidia-pcie-50-12gb-gddr7-100405</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/gpu/msi-gaming-rtx-5070-12g-ventus-2x-oc-graphics-card-12gb-gddr7-192bit-extreme-per-100406</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -23192,12 +23144,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/gpu/pny-nvidia-geforce-rtx-5060-ti-epicx-argb-oc-triple-fan-graphics-card-8gb-gddr7-100415</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/gpu/asus-tuf-geforce-rtx-5060-8gb-gddr7-oc-edition-graphics-card-nvidia-desktop-pcie-100416</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -24709,12 +24655,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/gpu/asus-rog-strix-amd-radeon-rx-6600-xt-oc-edition-gaming-graphics-card-amd-rdna-2-100673</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/gpu/powercolor-fighter-amd-radeon-rx-6600-graphics-card-with-8gb-gddr6-memory-100674</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -24937,19 +24877,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/gpu/asus-dual-geforce-rtx-4060-oc-edition-8gb-gddr6-pcie-40-8gb-gddr6-dlss-3-hdmi-21-100711</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/gpu/pny-nvidia-geforce-rtx-5050-dual-fan-graphics-card-8gb-gddr6-128bit-sffready-pci-100712</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/gpu/asus-tuf-gaming-nvidia-geforce-rtx-4080-super-oc-edition-gaming-graphics-card-pc-100713</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -24998,18 +24926,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/gpu/asus-dual-geforce-rtx-5050-8gb-gddr6-oc-edition-pcie-50-8gb-gddr6-dlss-4-hdmi-21-100721</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/gpu/asus-geforce-gt-730-2gb-gddr5-low-profile-graphics-card-for-silent-htpc-builds-w-100722</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/gpu/maxsun-amd-radeon-r5-220-2gb-graphics-card-gpu-dvii-hdmi-vga-low-profile-ready-100723</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -25231,12 +25147,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/ram/teamgroup-tcreate-expert-overclocking-10l-cl32-ddr5-48gb-kit-2-x-24gb-6400mhz-pc-100760</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/ram/teamgroup-tcreate-master-overclocking-ddr5-rdimm-192gb-kit-8-x-24gb-6000mhz-pc54-100761</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -25244,12 +25154,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/ram/klevv-cras-v-rgb-ddr5-48gb-2x24gb-6400mhz-cl32-sk-hynix-adie-135v-gaming-desktop-100762</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/ram/teamgroup-tcreate-expert-overclocking-10l-cl32-ddr5-48gb-kit-2-x-24gb-6400mhz-pc-100763</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -27836,12 +27740,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/psu/nzxt-c1200-gold-atx-31-fully-modular-lownoise-pc-gaming-power-supply-1200-watts-101199</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/psu/asus-rog-loki-sfxl-1200w-titanium-psu-fully-modular-power-supply-80-titanium-120-101200</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -31664,12 +31562,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/psu/nzxt-c1200-gold-atx-31-fully-modular-lownoise-pc-gaming-power-supply-1200-watts-101881</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/psu/asus-rog-loki-sfxl-1200w-titanium-psu-fully-modular-power-supply-80-titanium-120-101882</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
