@@ -748,12 +748,19 @@ function buildRefreshBundleFor(currentGPU, useCase, budget, socket, ddr) {
   const anyMobo = PARTS.filter(p => p.c === "Motherboard" && !p.bundle && p.socket === socket && p.memType === ddr && bestPrice(p) > 0 && chipsetTier(p.chipset) != null).sort((a,b)=>bestPrice(a)-bestPrice(b))[0];
   if (!anyMobo) return null;
 
-  // Desktop RAM pool of the right DDR type, ascending capacity then price.
-  const ramPool = PARTS
-    .filter(p => p.c === "RAM" && !p.bundle && isDesktopRAM(p) && (p.ramType === ddr || new RegExp(ddr, "i").test(p.n)) && p.sticks != null && (p.cap == null || p.cap >= 16) && (p.cap == null || p.cap <= ramCeiling) && bestPrice(p) > 0)
-    .sort((a, b) => (a.cap || 16) - (b.cap || 16) || bestPrice(a) - bestPrice(b));
+  // Desktop RAM of the right DDR type. Fresh builds should run DUAL-CHANNEL (2 sticks)
+  // — single-stick halves memory bandwidth. Prefer 2-stick kits; fall back to any only
+  // if no 2-stick kit exists at all. Sort ascending capacity, then dual-channel, then price.
+  const ramMatches = (p) => p.c === "RAM" && !p.bundle && isDesktopRAM(p) &&
+    (p.ramType === ddr || new RegExp(ddr, "i").test(p.n)) && p.sticks != null &&
+    (p.cap == null || p.cap >= 16) && (p.cap == null || p.cap <= ramCeiling) && bestPrice(p) > 0;
+  const ramSort = (a, b) => (a.cap || 16) - (b.cap || 16) ||
+    ((b.sticks >= 2 ? 1 : 0) - (a.sticks >= 2 ? 1 : 0)) ||  // dual-channel first at equal capacity
+    bestPrice(a) - bestPrice(b);
+  const dualKits = PARTS.filter(p => ramMatches(p) && p.sticks >= 2).sort(ramSort);
+  const ramPool = dualKits.length ? dualKits : PARTS.filter(ramMatches).sort(ramSort);
   if (!ramPool.length) return null;
-  const baseRam = ramPool[0];  // cheapest entry kit to start from
+  const baseRam = ramPool[0];  // cheapest dual-channel entry kit
 
   // CPU pool on this socket (ranked by use-case score).
   const cpuPool = PARTS
