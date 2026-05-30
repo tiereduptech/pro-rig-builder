@@ -98,7 +98,12 @@ function intelGeneration(model) {
   const m = model.match(/^(\d{2,5})/);
   if (!m) return null;
   const num = parseInt(m[1]);
-  if (num >= 10000) return Math.floor(num / 1000);
+  // Intel desktop model numbering: generation = digits before the final 3.
+  //   4-digit  i5-7500  -> 7    (7500 / 1000 = 7)
+  //   5-digit  i7-14700 -> 14   (14700 / 1000 = 14)
+  // 3-digit bare numbers (Core Ultra 245/265) are Series 2 on LGA1851; treat as gen 15.
+  if (num >= 1000) return Math.floor(num / 1000);
+  if (num >= 100)  return 15;  // Core Ultra Series 2 (e.g. 245K, 265K)
   return Math.floor(num / 100);
 }
 function amdGeneration(model) {
@@ -212,16 +217,30 @@ function findCatalogMatch(type, scannerName) {
     if (b && b.bench > 0) return { n: "Current: " + b.name, bench: b.bench, isBaseline: true };
     return null;
   }
-  if (type === "CPU") {
-    const cpu = extractCPUModel(scannerName);
-    if (!cpu) return null;
-    const hit = pool.find(p => p.n.toUpperCase().includes(cpu.model) && p.bench != null);
-    if (hit) return hit;
-    const b = lookupCPUBaseline(cpu.model, cpu.brand);
-    const inferredSocket = inferCPUSocket(cpu.model, cpu.brand);
-    if (b && b.bench > 0) return { n: "Current: " + b.name, bench: b.bench, socket: inferredSocket, brand: cpu.brand, isBaseline: true };
-    return null;
-  }
+    if (type === "CPU") {
+      const cpu = extractCPUModel(scannerName);
+      if (!cpu) return null;
+      // Brand-scoped match. Bare model-number substring search collides cross-brand
+      // (Intel i5-7500 vs AMD Ryzen 5 7500F both contain "7500"). Require same brand
+      // AND a word-boundary model token before trusting a catalog hit.
+      const wantIntel = cpu.brand === "Intel";
+      const wantAMD   = cpu.brand === "AMD";
+      const modelRe = new RegExp("(?:^|[^0-9A-Z])" + cpu.model + "(?:[^0-9A-Z]|$)");
+      const hit = pool.find(p => {
+        if (p.bench == null) return false;
+        const N = p.n.toUpperCase();
+        const isIntel = /\bINTEL\b|\bCORE\b|\bI[3579]-/.test(N);
+        const isAMD   = /\bAMD\b|\bRYZEN\b/.test(N);
+        if (wantIntel && !isIntel) return false;
+        if (wantAMD && !isAMD) return false;
+        return modelRe.test(N);
+      });
+      if (hit) return hit;
+      const b = lookupCPUBaseline(cpu.model, cpu.brand);
+      const inferredSocket = inferCPUSocket(cpu.model, cpu.brand);
+      if (b && b.bench > 0) return { n: "Current: " + b.name, bench: b.bench, socket: inferredSocket, brand: cpu.brand, isBaseline: true };
+      return null;
+    }
   return null;
 }
 
