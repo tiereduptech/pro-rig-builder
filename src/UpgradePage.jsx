@@ -132,6 +132,13 @@ function socketToDDR(socket) {
   if (socket === "AM4" || socket === "LGA1200" || socket === "LGA1151") return "DDR4";
   return null;
 }
+// LGA1700 uniquely supports BOTH DDR4 and DDR5 (board-dependent). All other
+// modern sockets are single-type. Returns the list of DDR types to try.
+function socketDDRTypes(socket) {
+  if (socket === "LGA1700") return ["DDR4", "DDR5"];
+  const single = socketToDDR(socket);
+  return single ? [single] : ["DDR5"];
+}
 
 // ─── BASELINE TABLES (PassMark-calibrated) ──────────────────────────
 const GPU_BASELINE_BENCH = {
@@ -154,7 +161,7 @@ const GPU_BASELINE_BENCH = {
   "RX 7900 XT": 81, "RX 7900 XTX": 83,
   "ARC A310": 8, "ARC A380": 11, "ARC A580": 28, "ARC A750": 40, "ARC A770": 45,
   "ARC B580": 42, "ARC B570": 38,
-  "UHD GRAPHICS": 2, "IRIS XE": 4, "RADEON GRAPHICS": 6, "VEGA": 8,
+  "HD GRAPHICS": 1, "UHD GRAPHICS": 2, "IRIS XE": 4, "IRIS PLUS": 3, "IRIS": 3, "RADEON GRAPHICS": 6, "VEGA": 8, "RADEON VEGA": 8,
 };
 
 const CPU_BASELINE_INTEL = {
@@ -331,8 +338,23 @@ function gamingScore(cpu) {
 }
 // cpuScoreForUseCase: gaming -> gaming index; else -> PassMark bench.
 function cpuScoreForUseCase(cpu, useCase) {
+  if (!cpu) return 0;
   if (useCase === "gaming") return gamingScore(cpu);
-  return (cpu && cpu.bench) || 0;
+  // Productivity / content creation / AI are throughput workloads: they scale with
+  // cores & threads, not single-thread gaming clocks. Blend raw bench with a modest
+  // multi-core bonus so high-core chips rank above high-clock low-core ones — but
+  // bench stays the dominant term so we never recommend a 16-core HEDT for light work
+  // purely on core count. Falls back to bench when cores/threads are absent.
+  const bench = cpu.bench || 0;
+  if (useCase === "productivity" || useCase === "content" || useCase === "ai") {
+    const threads = cpu.threads || cpu.cores || 0;
+    if (threads > 0) {
+      // up to +25% for very high thread counts, scaled gently (sqrt) so it tapers off
+      const mcBonus = Math.min(0.25, (Math.sqrt(threads) - Math.sqrt(8)) * 0.05);
+      return bench * (1 + Math.max(0, mcBonus));
+    }
+  }
+  return bench;
 }
 
 function candidateCPUs(currentCPU, maxPrice, useCase) {
@@ -361,6 +383,19 @@ function candidateCPUs(currentCPU, maxPrice, useCase) {
   return out;
 }
 
+// Desktop builds require DIMM/UDIMM modules. Laptop SODIMM / SO-DIMM memory is
+// physically incompatible with desktop motherboards, so exclude it everywhere.
+function isDesktopRAM(p) {
+  const n = p.n || "";
+  // Reject laptop SODIMM.
+  if (/\bSO-?DIMM\b|\blaptop\b|\bnotebook\b/i.test(n)) return false;
+  // Reject server/workstation memory: Registered (RDIMM), Load-Reduced (LRDIMM), "Server".
+  if (/\bR-?DIMM\b|\bLR-?DIMM\b|REGISTERED|\bSERVER\b/i.test(n)) return false;
+  // Reject true ECC — but KEEP consumer "Non-ECC" kits (negative lookbehind for "non-").
+  if (/(?<!NON-?)\bECC\b/i.test(n)) return false;
+  return true;
+}
+
 function candidateRAMs(specs, maxPrice) {
   const currentSticks = parseInt(specs.ram_sticks) || 0;
   const currentUsed   = parseInt(specs.ram_used_slots) || currentSticks;
@@ -372,6 +407,7 @@ function candidateRAMs(specs, maxPrice) {
 
   const pool = PARTS.filter(p => {
     if (p.c !== "RAM" || p.bundle) return false;
+    if (!isDesktopRAM(p)) return false;  // no laptop SODIMM in desktop builds
     const price = bestPrice(p);
     if (price <= 0 || price > maxPrice) return false;
 
@@ -612,7 +648,7 @@ function findPlatformSwap(currentCPU, budget, sameSocketBest) {
     const mobo = PARTS.filter(p => p.c === "Motherboard" && !p.bundle && p.socket === socket && (!p.memType || p.memType === ddr) && bestPrice(p) > 0)
                       .sort((a, b) => bestPrice(a) - bestPrice(b))[0];
     if (!mobo) continue;
-    const ram = PARTS.filter(p => p.c === "RAM" && new RegExp(ddr, "i").test(p.n) && p.cap >= 16 && bestPrice(p) > 0)
+    const ram = PARTS.filter(p => p.c === "RAM" && isDesktopRAM(p) && new RegExp(ddr, "i").test(p.n) && p.cap >= 16 && bestPrice(p) > 0)
                      .sort((a, b) => bestPrice(a) - bestPrice(b))[0];
     if (!ram) continue;
     const total = bestPrice(cpu) + bestPrice(mobo) + bestPrice(ram);
@@ -624,6 +660,135 @@ function findPlatformSwap(currentCPU, budget, sameSocketBest) {
   const sameSocketPPD = sameSocketBest ? (sameSocketBest.bench / bestPrice(sameSocketBest)) : 0;
   if (sameSocketPPD > 0 && best.ppd < sameSocketPPD * 1.30) return null;
   return best;
+}
+
+// ─── REFRESH BUNDLE ─────────────────────────────────
+// Dead-end platform => user needs CPU + motherboard + RAM on a modern socket.
+// We build a complete bundle (also a GPU from remaining budget) for a GIVEN socket.
+// Returns null if the socket cannot be fully built within the budget.
+// Build a complete refresh bundle for a GIVEN socket + DDR type. Null if not buildable.
+// Universal use-case weighting. Every workload is the same scoring function with
+// different CPU/GPU emphasis. Used by both the refresh-bundle optimizer and (later)
+// the same-socket optimizer so behavior is identical across all use cases.
+const USE_CASE_WEIGHTS = {
+  gaming:       { cpu: 0.6, gpu: 1.0 },
+  content:      { cpu: 1.0, gpu: 1.0 },
+  ai:           { cpu: 0.9, gpu: 1.2 },
+  productivity: { cpu: 1.2, gpu: 0.6 },
+};
+function useCaseWeights(useCase) { return USE_CASE_WEIGHTS[useCase] || { cpu: 0.8, gpu: 1.0 }; }
+
+// Per-use-case leftover-budget priority. After the base platform is chosen, spend
+// remaining budget on the parts that actually help THIS workload, in this order.
+const LEFTOVER_PRIORITY = {
+  productivity: ["ram", "gpu"],          // multitasking is capacity-bound; GPU barely used
+  gaming:       ["gpu", "cpu", "ram"],   // frames first
+  content:      ["gpu", "cpu", "ram"],   // renders use GPU + CPU heavily
+  ai:           ["gpu", "ram", "cpu"],   // GPU/VRAM first, then memory
+};
+// Sensible RAM capacity ceilings by use case (no 128GB for an office PC).
+const RAM_CAP_CEILING = { productivity: 64, gaming: 32, content: 128, ai: 128 };
+// Max share of budget a GPU may consume, by use case (keeps productivity from grabbing a gaming card).
+const GPU_BUDGET_SHARE = { productivity: 0.20, gaming: 0.65, content: 0.55, ai: 0.60 };
+
+function buildRefreshBundleFor(currentGPU, useCase, budget, socket, ddr) {
+  if (!socket || !ddr) return null;
+  const maxBudget = budget * (1 + BUDGET_OVERAGE);
+  const ramCeiling = RAM_CAP_CEILING[useCase] || 64;
+  const gpuShare = GPU_BUDGET_SHARE[useCase] ?? 0.5;
+  const priority = LEFTOVER_PRIORITY[useCase] || ["gpu", "cpu", "ram"];
+
+  // Cheapest compatible motherboard (platform necessity).
+  const mobo = PARTS
+    .filter(p => p.c === "Motherboard" && !p.bundle && p.socket === socket && p.memType === ddr && bestPrice(p) > 0)
+    .sort((a, b) => bestPrice(a) - bestPrice(b))[0];
+  if (!mobo) return null;
+
+  // Desktop RAM pool of the right DDR type, ascending capacity then price.
+  const ramPool = PARTS
+    .filter(p => p.c === "RAM" && !p.bundle && isDesktopRAM(p) && (p.ramType === ddr || new RegExp(ddr, "i").test(p.n)) && p.sticks != null && (p.cap == null || p.cap >= 16) && (p.cap == null || p.cap <= ramCeiling) && bestPrice(p) > 0)
+    .sort((a, b) => (a.cap || 16) - (b.cap || 16) || bestPrice(a) - bestPrice(b));
+  if (!ramPool.length) return null;
+  const baseRam = ramPool[0];  // cheapest entry kit to start from
+
+  // CPU pool on this socket (ranked by use-case score).
+  const cpuPool = PARTS
+    .filter(p => p.c === "CPU" && !p.bundle && p.socket === socket && p.bench != null && bestPrice(p) > 0)
+    .sort((a, b) => cpuScoreForUseCase(b, useCase) - cpuScoreForUseCase(a, useCase));
+  if (!cpuPool.length) return null;
+
+  // GPU pool ranked by bench (value within share-cap applied later).
+  const gpuPool = PARTS
+    .filter(p => p.c === "GPU" && !p.bundle && p.bench != null && bestPrice(p) > 0)
+    .sort((a, b) => b.bench - a.bench);
+
+  // Start with the best CPU that leaves room for mobo + base RAM.
+  const w = useCaseWeights(useCase);
+  const moboCost = bestPrice(mobo);
+  let chosenCpu = null;
+  for (const c of cpuPool) {
+    if (moboCost + bestPrice(baseRam) + bestPrice(c) <= maxBudget) { chosenCpu = c; break; }
+  }
+  if (!chosenCpu) return null;
+
+  let chosenRam = baseRam;
+  let chosenGpu = null;
+
+  // Helper: current spend.
+  const spend = () => moboCost + bestPrice(chosenCpu) + bestPrice(chosenRam) + (chosenGpu ? bestPrice(chosenGpu) : 0);
+
+  // Allocate remaining budget by the use-case priority chain. Each step spends what it
+  // can WITHOUT exceeding maxBudget; we never force a part that wastes money for the workload.
+  for (const slot of priority) {
+    const remaining = maxBudget - spend();
+    if (remaining <= 0) break;
+    if (slot === "ram") {
+      // Upgrade to the largest-capacity kit that still fits (capacity helps multitasking).
+      const better = ramPool.filter(r => bestPrice(r) - bestPrice(chosenRam) <= remaining && (r.cap || 0) > (chosenRam.cap || 0))
+                            .sort((a, b) => (b.cap || 0) - (a.cap || 0) || bestPrice(a) - bestPrice(b))[0];
+      if (better) chosenRam = better;
+    } else if (slot === "cpu") {
+      const better = cpuPool.filter(c => bestPrice(c) - bestPrice(chosenCpu) <= remaining && cpuScoreForUseCase(c, useCase) > cpuScoreForUseCase(chosenCpu, useCase))[0];
+      if (better) chosenCpu = better;
+    } else if (slot === "gpu") {
+      const gpuCap = Math.min(remaining + (chosenGpu ? bestPrice(chosenGpu) : 0), budget * gpuShare);
+      const better = gpuPool.filter(g => bestPrice(g) <= gpuCap && (!chosenGpu || g.bench > chosenGpu.bench))[0];
+      if (better) chosenGpu = better;
+    }
+  }
+
+  const cost = spend();
+  const score = cpuScoreForUseCase(chosenCpu, useCase) * w.cpu + (chosenGpu?.bench || 0) * w.gpu;
+  const ppd = score / cost;
+  return { gpu: chosenGpu, cpu: chosenCpu, mobo, ram: chosenRam, sto: null, ddr, socket, coreTotal: moboCost + bestPrice(chosenCpu), cost, ppd, isRefresh: true, overPct: Math.max(0, (cost - budget) / budget) };
+}
+
+// Build the best bundle for a socket across ALL DDR types it supports (LGA1700 = DDR4+DDR5).
+function buildRefreshBundle(currentGPU, useCase, budget, socket) {
+  const variants = socketDDRTypes(socket)
+    .map(ddr => buildRefreshBundleFor(currentGPU, useCase, budget, socket, ddr))
+    .filter(Boolean);
+  if (!variants.length) return null;
+  // Best value-per-dollar variant for this socket.
+  return variants.sort((a, b) => b.ppd - a.ppd)[0];
+}
+
+// Candidate refresh sockets per brand, ordered [older/value-ish, newest].
+function refreshSocketsForBrand(brand) {
+  if (brand === "AMD") return { all: ["AM4", "AM5"], newest: "AM5" };
+  return { all: ["LGA1700", "LGA1851"], newest: "LGA1851" };  // Intel default
+}
+
+// Build BOTH a value bundle (best price/performance across sockets) and a
+// futureproof bundle (newest socket). Returns {value, future, sameSocket}.
+function computeRefreshPaths(currentGPU, useCase, budget, brand) {
+  const { all, newest } = refreshSocketsForBrand(brand);
+  const bundles = all.map(s => buildRefreshBundle(currentGPU, useCase, budget, s)).filter(Boolean);
+  if (!bundles.length) return null;
+  const value = bundles.slice().sort((a, b) => b.ppd - a.ppd)[0];        // best perf-per-dollar
+  const future = bundles.find(b => b.socket === newest) || null;          // newest socket if buildable
+  const sameSocket = !future || value.socket === future.socket;
+  return { value, future, sameSocket };
 }
 
 function analyzeBottleneck(currentCPU, currentGPU) {
@@ -710,6 +875,7 @@ function calculatePSU(cpuTDP, gpuTDP, gpuName) {
 export default function UpgradePage() {
   const [specs, setSpecs] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [refreshPath, setRefreshPath] = useState("value");  // "value" | "future" toggle for dead-end refreshes
 
   useEffect(() => { setSpecs(parseSpecs()); setLoading(false); }, []);
 
@@ -733,6 +899,7 @@ export default function UpgradePage() {
 
     const recommendedBuild = optimizeBuild(currentGPU, currentCPU, { gpus, cpus, rams, storages }, budget);
     const platformSwap = !refresh.refresh ? findPlatformSwap(currentCPU, budget, cpus[0]) : null;
+    const refreshPaths = refresh.refresh ? computeRefreshPaths(currentGPU, useCase, budget, cpuModel?.brand) : null;
     const bottleneck = analyzeBottleneck(currentCPU, currentGPU);
 
     const newCpuTDP = recommendedBuild?.cpu?.tdp ?? currentCPU?.tdp ?? 125;
@@ -754,6 +921,7 @@ export default function UpgradePage() {
         userCoolerType, userCoolerCapacity, requiredTDP, coolerNeeded,
         currentGPU: currentGPU ? { name: currentGPU.n, bench: currentGPU.bench } : null,
         currentCPU: currentCPU ? { name: currentCPU.n, bench: currentCPU.bench, socket: currentCPU.socket } : null,
+        refresh: refresh, platformSwapFound: !!platformSwap, useCase, refreshPaths: refreshPaths ? { sameSocket: refreshPaths.sameSocket, value: refreshPaths.value ? { socket: refreshPaths.value.socket, ddr: refreshPaths.value.ddr, cpu: refreshPaths.value.cpu.n, mobo: refreshPaths.value.mobo.n, ram: refreshPaths.value.ram.n, gpu: refreshPaths.value.gpu?.n || null, cost: refreshPaths.value.cost } : null, future: refreshPaths.future ? { socket: refreshPaths.future.socket, ddr: refreshPaths.future.ddr, cpu: refreshPaths.future.cpu.n, mobo: refreshPaths.future.mobo.n, ram: refreshPaths.future.ram.n, gpu: refreshPaths.future.gpu?.n || null, cost: refreshPaths.future.cost } : null } : null,
         poolCounts: { gpu: gpus.length, cpu: cpus.length, ram: rams.length, storage: storages.length, coolers: coolerRecs.length },
         recommendedBuild: recommendedBuild ? {
           cost: recommendedBuild.cost, overPct: (recommendedBuild.overPct * 100).toFixed(1) + "%",
@@ -770,7 +938,7 @@ export default function UpgradePage() {
       currentGPU, currentCPU,
       gpus, cpus, rams, storages, coolerRecs, coolerNeeded,
       userCoolerType, userCoolerCapacity, requiredTDP,
-      recommendedBuild, platformSwap,
+      recommendedBuild, platformSwap, refreshPaths,
       storageWant, storageType,
     };
   }, [specs]);
@@ -779,7 +947,11 @@ export default function UpgradePage() {
   if (!specs)  return <MissingSpecsView />;
 
   const a = analysis;
-  const rb = a.recommendedBuild;
+  // When a platform refresh applies, the recommendation IS the selected refresh bundle
+  // (value vs futureproof). Otherwise use the normal same-socket optimizer build.
+  const rp = a.refreshPaths;
+  const selectedRefresh = rp ? (refreshPath === "future" && rp.future ? rp.future : rp.value) : null;
+  const rb = selectedRefresh || a.recommendedBuild;
   const allSlotsFilled = Number(specs.ram_used_slots) >= Number(specs.ram_total_slots) && Number(specs.ram_total_slots) > 0;
 
   const gpuAlts = (rb?.gpu ? a.gpus.filter(p => p.id !== rb.gpu.id) : a.gpus).slice(0, N_ALTERNATIVES);
@@ -796,10 +968,15 @@ export default function UpgradePage() {
       effectiveCpuBench={rb?.cpu?.bench || a.currentCPU?.bench || 0} checkBottleneck={true}
       emptyMsg="No GPU upgrades within budget offer 10%+ improvement over your current card."/>
   );
+  // Motherboard section is only relevant during a platform refresh (new socket).
+  const moboSection = (selectedRefresh && selectedRefresh.mobo) ? (
+    <MotherboardSection key="mobo" mobo={selectedRefresh.mobo} ddr={selectedRefresh.ddr} socket={selectedRefresh.socket} />
+  ) : null;
+
   const cpuSection = (
     <UpgradeSection key="cpu" title="CPU" color="#F87171" icon="🔴"
       selected={rb?.cpu} alternatives={cpuAlts} baseline={a.currentCPU}
-      description={a.currentCPU?.socket ? `Filtered to ${a.currentCPU.socket}-compatible CPUs.` : null}
+      description={selectedRefresh ? `New ${selectedRefresh.socket} platform CPU (your old socket has no upgrade path).` : (a.currentCPU?.socket ? `Filtered to ${a.currentCPU.socket}-compatible CPUs.` : null)}
       emptyMsg="No same-socket CPU upgrades within budget offer 10%+ improvement."/>
   );
   const ramSection = (() => {
@@ -819,7 +996,7 @@ export default function UpgradePage() {
       <UpgradeSection key="ram" title="RAM" color="#FFB020" icon="⚡"
         selected={rb?.ram} alternatives={ramAlts}
         description={descText}
-        warning={`RAM must match your motherboard's supported type (${specs.ram_type}).`}
+        warning={selectedRefresh ? `New platform uses ${selectedRefresh.ddr}. Your old ${specs.ram_type} RAM will NOT fit the new motherboard.` : `RAM must match your motherboard\u2019s supported type (${specs.ram_type}).`}
         emptyMsg={allSlotsFilled
           ? `No faster ${specs.ram_type} ${sticks}-stick replacement kits at ≥${specs.ram_total}GB within budget.`
           : "No compatible RAM upgrade kits found within budget."}/>
@@ -837,6 +1014,7 @@ export default function UpgradePage() {
   const allSections = [
     { el: gpuSection, inBuild: !!rb?.gpu },
     { el: cpuSection, inBuild: !!rb?.cpu },
+    ...(moboSection ? [{ el: moboSection, inBuild: true }] : []),
     { el: ramSection, inBuild: !!rb?.ram },
     ...(storageSection ? [{ el: storageSection, inBuild: !!rb?.sto }] : []),
   ];
@@ -849,6 +1027,9 @@ export default function UpgradePage() {
         <Header />
         <CurrentSystemCard specs={specs} analysis={a} />
         {a.refresh.refresh && <PlatformRefreshAlert reason={a.refresh.reason} />}
+        {rp && !rp.sameSocket && rp.future && (
+          <RefreshPathToggle selected={refreshPath} onSelect={setRefreshPath} value={rp.value} future={rp.future} />
+        )}
         <RecommendedBuildBanner budget={a.budget} build={rb} />
         {a.bottleneck && <BottleneckAnalysisCard bn={a.bottleneck} />}
         <UpgradeStrategyExplanation analysis={a}/>
@@ -874,6 +1055,78 @@ export default function UpgradePage() {
             {optionalSections}
           </>
         )}
+      </div>
+    </div>
+  );
+}
+
+// Form-factor-aware case-fit guidance. Expansion-slot count is the most reliable
+// visual signal a non-expert can check, so we lead with that.
+function caseFitGuidance(ff) {
+  const f = (ff || "").toUpperCase();
+  if (f.includes("E-ATX")) return { label: "E-ATX", text: "This is an oversized E-ATX board. It needs a full-tower (or E-ATX-rated) case. Quick visual check: count the horizontal expansion-slot openings on the back of your PC \u2014 you need 7+ AND extra internal width. If unsure, check your case\u2019s spec page for \u201cE-ATX\u201d support before buying." };
+  if (f.includes("MICRO") || f === "MATX" || f.includes("M-ATX")) return { label: "Micro-ATX", text: "This is a Micro-ATX board \u2014 it fits most mid-tower and full-size cases. Quick visual check: look at the back of your PC and count the horizontal expansion-slot openings (where cards screw in). 4 or more = this board fits. Only very small Mini-ITX cases (2 slots) are too small." };
+  if (f.includes("MINI") || f === "ITX" || f.includes("MINI-ITX")) return { label: "Mini-ITX", text: "This is a tiny Mini-ITX board \u2014 it fits ANY case (mid-tower, full-tower, or small-form-factor). You cannot go wrong on size here." };
+  // default ATX
+  return { label: "ATX", text: "This is a standard ATX board. Quick visual check: count the horizontal expansion-slot openings on the back of your PC \u2014 a full-size case has 7. If you see 7 slots, this board fits. If you only see 4, your case is Micro-ATX and this ATX board will NOT fit \u2014 you\u2019d need a larger case or a Micro-ATX board instead." };
+}
+
+function MotherboardSection({mobo, ddr, socket}) {
+  const fit = caseFitGuidance(mobo.ff);
+  const price = bestPrice(mobo);
+  const retailer = retailerUrl(mobo);
+  return (
+    <div style={{background:"var(--bg2)", borderRadius:16, border:"1px solid var(--bdr)", padding:20, marginBottom:20}}>
+      <div style={{display:"flex", alignItems:"center", gap:8, marginBottom:6}}>
+        <span style={{fontSize:16}}>🔌</span>
+        <div style={{fontFamily:"var(--ff)", fontSize:18, fontWeight:700, color:"var(--txt)"}}>Motherboard</div>
+      </div>
+      <div style={{fontFamily:"var(--ff)", fontSize:12, color:"var(--dim)", lineHeight:1.5, marginBottom:12}}>
+        A new {socket} CPU needs a new {socket} motherboard. This board supports {ddr} memory (matching the RAM below).
+      </div>
+      <div style={{background:"var(--bg3)", borderRadius:10, padding:"12px 16px", display:"flex", alignItems:"center", gap:12, marginBottom:12}}>
+        <div style={{flex:1, minWidth:0}}>
+          <div style={{fontFamily:"var(--ff)", fontSize:14, fontWeight:600, color:"var(--txt)"}}>{mobo.n}</div>
+          <div style={{display:"flex", gap:10, marginTop:3, fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", flexWrap:"wrap"}}>
+            {mobo.chipset && <span>{mobo.chipset}</span>}
+            {mobo.socket && <span>{mobo.socket}</span>}
+            {mobo.ff && <span>{fit.label}</span>}
+            {mobo.memType && <span>{mobo.memType}</span>}
+          </div>
+        </div>
+        <div style={{textAlign:"right", flexShrink:0}}>
+          <div style={{fontFamily:"var(--ff)", fontSize:16, fontWeight:800, color:"var(--accent)"}}>${price}</div>
+          {retailer && <a href={retailer.url} target="_blank" rel="noopener noreferrer" style={{display:"inline-block", marginTop:4, padding:"4px 10px", background:"var(--accent)", color:"#fff", textDecoration:"none", borderRadius:6, fontFamily:"var(--ff)", fontSize:10, fontWeight:700}}>Buy on {retailer.name} →</a>}
+        </div>
+      </div>
+      <div style={{background:"rgba(255,176,32,.1)", border:"1px solid #FFB020", borderRadius:10, padding:"12px 14px", display:"flex", gap:10, alignItems:"flex-start"}}>
+        <span style={{fontSize:16, flexShrink:0}}>⚠️</span>
+        <div>
+          <div style={{fontFamily:"var(--ff)", fontSize:12, fontWeight:700, color:"#FFB020", marginBottom:3}}>Check your case size — {fit.label} board</div>
+          <div style={{fontFamily:"var(--ff)", fontSize:12, color:"var(--dim)", lineHeight:1.55}}>{fit.text}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function RefreshPathToggle({selected, onSelect, value, future}) {
+  const Btn = ({id, label, sub, bundle}) => {
+    const active = selected === id;
+    return (
+      <button onClick={() => onSelect(id)} style={{flex:1, textAlign:"left", cursor:"pointer", background: active ? "rgba(255,138,61,.1)" : "var(--bg3)", border: active ? "1px solid var(--accent)" : "1px solid var(--bdr)", borderRadius:10, padding:"12px 14px"}}>
+        <div style={{fontFamily:"var(--ff)", fontSize:13, fontWeight:700, color: active ? "var(--accent)" : "var(--txt)", marginBottom:2}}>{label}</div>
+        <div style={{fontFamily:"var(--ff)", fontSize:11, color:"var(--dim)", marginBottom:4}}>{sub}</div>
+        <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)"}}>{bundle.socket} · {bundle.ddr} · ${bundle.cost.toLocaleString()}</div>
+      </button>
+    );
+  };
+  return (
+    <div style={{marginBottom:20}}>
+      <div style={{fontFamily:"var(--mono)", fontSize:11, color:"var(--dim)", fontWeight:700, letterSpacing:1, marginBottom:8}}>CHOOSE YOUR UPGRADE PATH</div>
+      <div style={{display:"flex", gap:10}}>
+        <Btn id="value" label="Best Value" sub="Most performance per dollar" bundle={value} />
+        <Btn id="future" label="Futureproof" sub="Newest platform, longer upgrade runway" bundle={future} />
       </div>
     </div>
   );
