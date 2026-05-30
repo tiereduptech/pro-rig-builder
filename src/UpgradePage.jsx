@@ -689,6 +689,36 @@ const USE_CASE_WEIGHTS = {
 };
 function useCaseWeights(useCase) { return USE_CASE_WEIGHTS[useCase] || { cpu: 0.8, gpu: 1.0 }; }
 
+// VRM / power-delivery safety. Chipset tier is a reliable proxy for sustained power
+// capability (manufacturers segment VRM quality by chipset). A budget board CAN boot a
+// high-TDP CPU, but its VRM may overheat, throttle, and fail prematurely. So we REQUIRE
+// the board chipset tier to match the CPU TDP, and adjust the build if budget forces it.
+const CHIPSET_TIER = {
+  // budget VRM — safe to ~65W
+  A620:0, A520:0, B450:0, H110:0, H410:0, H470:0, H610:0, H810:0, H97:0,
+  // mid VRM — safe to ~125W
+  B550:1, B650:1, B660:1, B760:1, B840:1, B850:1, B860:1, Q670:1,
+  // high VRM — handles >125W
+  X570:2, X670:2, "X670E":2, X870:2, "X870E":2, Z390:2, Z490:2, Z690:2, Z790:2, Z890:2, X299:2, WRX90:2, C612:2,
+};
+function chipsetTier(chipset) {
+  if (!chipset) return null;  // unknown => cannot verify => exclude from new builds
+  const t = CHIPSET_TIER[chipset];
+  return t == null ? null : t;
+}
+// Minimum chipset tier required to safely sustain a given CPU TDP.
+function requiredTierForTDP(tdp) {
+  const w = tdp || 65;
+  if (w > 125) return 2;   // high-end VRM only
+  if (w > 65)  return 1;   // mid or high
+  return 0;                // any
+}
+function moboSupportsCPU(mobo, cpu) {
+  const tier = chipsetTier(mobo.chipset);
+  if (tier == null) return false;  // unknown chipset => not safe to recommend
+  return tier >= requiredTierForTDP(cpu?.tdp);
+}
+
 // Per-use-case leftover-budget priority. After the base platform is chosen, spend
 // remaining budget on the parts that actually help THIS workload, in this order.
 const LEFTOVER_PRIORITY = {
@@ -710,10 +740,13 @@ function buildRefreshBundleFor(currentGPU, useCase, budget, socket, ddr) {
   const priority = LEFTOVER_PRIORITY[useCase] || ["gpu", "cpu", "ram"];
 
   // Cheapest compatible motherboard (platform necessity).
-  const mobo = PARTS
-    .filter(p => p.c === "Motherboard" && !p.bundle && p.socket === socket && p.memType === ddr && bestPrice(p) > 0)
-    .sort((a, b) => bestPrice(a) - bestPrice(b))[0];
-  if (!mobo) return null;
+  // Cheapest motherboard for this socket+DDR whose chipset VRM tier safely supports a given CPU.
+  const cheapestSafeMobo = (cpu) => PARTS
+    .filter(p => p.c === "Motherboard" && !p.bundle && p.socket === socket && p.memType === ddr && bestPrice(p) > 0 && moboSupportsCPU(p, cpu))
+    .sort((a, b) => bestPrice(a) - bestPrice(b))[0] || null;
+  // Provisional cheapest board ignoring CPU (used only to sanity-check the socket is buildable).
+  const anyMobo = PARTS.filter(p => p.c === "Motherboard" && !p.bundle && p.socket === socket && p.memType === ddr && bestPrice(p) > 0 && chipsetTier(p.chipset) != null).sort((a,b)=>bestPrice(a)-bestPrice(b))[0];
+  if (!anyMobo) return null;
 
   // Desktop RAM pool of the right DDR type, ascending capacity then price.
   const ramPool = PARTS
@@ -733,14 +766,17 @@ function buildRefreshBundleFor(currentGPU, useCase, budget, socket, ddr) {
     .filter(p => p.c === "GPU" && !p.bundle && p.bench != null && bestPrice(p) > 0)
     .sort((a, b) => b.bench - a.bench);
 
-  // Start with the best CPU that leaves room for mobo + base RAM.
   const w = useCaseWeights(useCase);
-  const moboCost = bestPrice(mobo);
-  let chosenCpu = null;
+  // Pick the best CPU whose cheapest VRM-SAFE board + base RAM fits the budget. cpuPool is
+  // sorted best-first, so this steps DOWN to a CPU we can pair with an adequate board.
+  let chosenCpu = null, chosenMobo = null;
   for (const c of cpuPool) {
-    if (moboCost + bestPrice(baseRam) + bestPrice(c) <= maxBudget) { chosenCpu = c; break; }
+    const m = cheapestSafeMobo(c);
+    if (!m) continue;  // no board on this socket can safely handle this CPU TDP
+    if (bestPrice(m) + bestPrice(baseRam) + bestPrice(c) <= maxBudget) { chosenCpu = c; chosenMobo = m; break; }
   }
-  if (!chosenCpu) return null;
+  if (!chosenCpu || !chosenMobo) return null;
+  let moboCost = bestPrice(chosenMobo);
 
   let chosenRam = baseRam;
   let chosenGpu = null;
@@ -759,8 +795,14 @@ function buildRefreshBundleFor(currentGPU, useCase, budget, socket, ddr) {
                             .sort((a, b) => (b.cap || 0) - (a.cap || 0) || bestPrice(a) - bestPrice(b))[0];
       if (better) chosenRam = better;
     } else if (slot === "cpu") {
-      const better = cpuPool.filter(c => bestPrice(c) - bestPrice(chosenCpu) <= remaining && cpuScoreForUseCase(c, useCase) > cpuScoreForUseCase(chosenCpu, useCase))[0];
-      if (better) chosenCpu = better;
+      // Bump CPU only if a SAFE board still fits the new (possibly higher) TDP within budget.
+      for (const c of cpuPool) {
+        if (cpuScoreForUseCase(c, useCase) <= cpuScoreForUseCase(chosenCpu, useCase)) continue;
+        const m = cheapestSafeMobo(c);
+        if (!m) continue;
+        const delta = (bestPrice(c) - bestPrice(chosenCpu)) + (bestPrice(m) - moboCost);
+        if (delta <= remaining) { chosenCpu = c; chosenMobo = m; moboCost = bestPrice(m); break; }
+      }
     } else if (slot === "gpu") {
       const gpuCap = Math.min(remaining + (chosenGpu ? bestPrice(chosenGpu) : 0), budget * gpuShare);
       const better = gpuPool.filter(g => bestPrice(g) <= gpuCap && (!chosenGpu || g.bench > chosenGpu.bench))[0];
@@ -771,7 +813,7 @@ function buildRefreshBundleFor(currentGPU, useCase, budget, socket, ddr) {
   const cost = spend();
   const score = cpuScoreForUseCase(chosenCpu, useCase) * w.cpu + (chosenGpu?.bench || 0) * w.gpu;
   const ppd = score / cost;
-  return { gpu: chosenGpu, cpu: chosenCpu, mobo, ram: chosenRam, sto: null, ddr, socket, coreTotal: moboCost + bestPrice(chosenCpu), cost, ppd, isRefresh: true, overPct: Math.max(0, (cost - budget) / budget) };
+  return { gpu: chosenGpu, cpu: chosenCpu, mobo: chosenMobo, ram: chosenRam, sto: null, ddr, socket, coreTotal: moboCost + bestPrice(chosenCpu), cost, ppd, isRefresh: true, overPct: Math.max(0, (cost - budget) / budget) };
 }
 
 // Build the best bundle for a socket across ALL DDR types it supports (LGA1700 = DDR4+DDR5).
