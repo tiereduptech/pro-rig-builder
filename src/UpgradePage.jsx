@@ -578,60 +578,71 @@ const COOLER_TIER_LABELS = {
 // Past that, CPU becomes the limiting factor and GPU performance is wasted.
 const MAX_GPU_CPU_BENCH_RATIO = 2.0;
 
+// Same-socket / non-refresh build. Uses the SAME budget-filling engine as the refresh
+// path: pick the best CPU & GPU within budget, then spend leftover by the use-case
+// priority chain. RAM is OPTIONAL here (user keeps existing RAM unless a kit helps).
 function optimizeBuild(currentGPU, currentCPU, candidates, budget) {
   const maxBudget = budget * (1 + BUDGET_OVERAGE);
-  const K_GPU = 8, K_CPU = 8, K_RAM = 5, K_STOR = 5;
+  const useCase = candidates.useCase || "gaming";
+  const w = useCaseWeights(useCase);
+  const priority = LEFTOVER_PRIORITY[useCase] || ["gpu", "cpu", "ram"];
+  const gpuShare = GPU_BUDGET_SHARE[useCase] ?? 0.5;
 
-  const gpuPool = [null, ...candidates.gpus.slice(0, K_GPU)];
-  const cpuPool = [null, ...candidates.cpus.slice(0, K_CPU)];
-  const ramPool = [null, ...candidates.rams.slice(0, K_RAM)];
-  const stoPool = [null, ...candidates.storages.slice(0, K_STOR)];
-
-  const curG = currentGPU?.bench || 0;
   const curC = currentCPU?.bench || 0;
+  const curG = currentGPU?.bench || 0;
 
-  let best = null;
-  for (const gpu of gpuPool) {
-    for (const cpu of cpuPool) {
-      for (const ram of ramPool) {
-        for (const sto of stoPool) {
-          const cost = (gpu ? bestPrice(gpu) : 0) + (cpu ? bestPrice(cpu) : 0) +
-                       (ram ? bestPrice(ram) : 0) + (sto ? bestPrice(sto) : 0);
-          if (cost <= 0 || cost > maxBudget) continue;
-          const gpuGain = gpu && curG > 0 ? ((gpu.bench - curG) / curG) * 100 : 0;
-          const cpuGain = cpu && curC > 0 ? ((cpu.bench - curC) / curC) * 100 : 0;
-          // Detect if user's CURRENT config is CPU-bound
-          const isCpuBound = curG > 0 && curC > 0 && (curC / curG) < 0.6;
-          // When CPU is bottlenecking, flip weights to favor CPU upgrades
-          let score = isCpuBound
-            ? (gpuGain * 0.4 + cpuGain * 1.5 + (ram ? 5 : 0) + (sto ? 3 : 0))
-            : (gpuGain * 1.0 + cpuGain * 0.6 + (ram ? 5 : 0) + (sto ? 3 : 0));
+  const cpus = candidates.cpus || [];
+  const gpus = candidates.gpus || [];
+  const rams = candidates.rams || [];
+  const stors = candidates.storages || [];
 
-          // Bottleneck penalty: compare selected GPU bench vs effective CPU bench
-          // (new CPU if being upgraded, else current CPU). If GPU is too strong
-          // for the CPU, scale down the score because real-world gaming perf
-          // will hit a CPU wall and the extra GPU spend is wasted.
-          const effectiveCPUBench = cpu?.bench || curC;
-          if (gpu?.bench && effectiveCPUBench > 0) {
-            const ratio = gpu.bench / effectiveCPUBench;
-            if (ratio > MAX_GPU_CPU_BENCH_RATIO) {
-              // Penalty ramps up the further past threshold (3.5x → 4x → 5x etc)
-              const overage = ratio / MAX_GPU_CPU_BENCH_RATIO;  // e.g. 5.4/3.5 = 1.54
-              const penalty = Math.min(0.6, (overage - 1) * 0.8);  // up to -60%
-              score *= (1 - penalty);
-            }
-          }
-
-          const overPct = Math.max(0, (cost - budget) / budget);
-          const adjustedScore = score * (1 - overPct * 2);
-          if (!best || adjustedScore > best.adjustedScore) {
-            best = { gpu, cpu, ram, sto, cost, score, adjustedScore, overPct };
-          }
-        }
+  // Use-case weighted absolute performance, with CPU-bottleneck guard.
+  const scoreBuild = (cpu, gpu) => {
+    const cpuScore = cpu ? cpuScoreForUseCase(cpu, useCase) : curC;
+    const gpuBench = gpu ? gpu.bench : curG;
+    let s = cpuScore * w.cpu + gpuBench * w.gpu;
+    if (gpuBench > 0 && cpuScore > 0) {
+      const ratio = gpuBench / cpuScore;
+      if (ratio > MAX_GPU_CPU_BENCH_RATIO) {
+        const over = ratio / MAX_GPU_CPU_BENCH_RATIO;
+        s *= (1 - Math.min(0.5, (over - 1) * 0.6));
       }
     }
+    return s;
+  };
+
+  let chosenCpu = null, chosenGpu = null, chosenRam = null, chosenSto = null;
+  const spend = () => (chosenCpu ? bestPrice(chosenCpu) : 0) + (chosenGpu ? bestPrice(chosenGpu) : 0) +
+                      (chosenRam ? bestPrice(chosenRam) : 0) + (chosenSto ? bestPrice(chosenSto) : 0);
+
+  // Honor an explicit storage request first (user asked for it).
+  if (stors.length) { const s = stors.find(x => bestPrice(x) <= maxBudget); if (s) chosenSto = s; }
+
+  // Allocate budget by use-case priority chain.
+  for (const slot of priority) {
+    const remaining = maxBudget - spend();
+    if (remaining <= 0) break;
+    if (slot === "gpu") {
+      const budgetForGpu = remaining + (chosenGpu ? bestPrice(chosenGpu) : 0);
+      const g = gpus.filter(x => bestPrice(x) <= budgetForGpu && bestPrice(x) <= budget * gpuShare && (!chosenGpu || x.bench > chosenGpu.bench) && x.bench > curG)
+                    .sort((a, b) => b.bench - a.bench)[0];
+      if (g) chosenGpu = g;
+    } else if (slot === "cpu") {
+      const budgetForCpu = remaining + (chosenCpu ? bestPrice(chosenCpu) : 0);
+      const c = cpus.filter(x => bestPrice(x) <= budgetForCpu && (!chosenCpu || cpuScoreForUseCase(x, useCase) > cpuScoreForUseCase(chosenCpu, useCase)))
+                    .sort((a, b) => cpuScoreForUseCase(b, useCase) - cpuScoreForUseCase(a, useCase))[0];
+      if (c) chosenCpu = c;
+    } else if (slot === "ram") {
+      const r = rams.filter(x => bestPrice(x) <= remaining)[0];
+      if (r) chosenRam = r;
+    }
   }
-  return best;
+
+  if (!chosenCpu && !chosenGpu && !chosenRam && !chosenSto) return null;
+
+  const cost = spend();
+  const score = scoreBuild(chosenCpu, chosenGpu);
+  return { gpu: chosenGpu, cpu: chosenCpu, ram: chosenRam, sto: chosenSto, cost, score, adjustedScore: score, overPct: Math.max(0, (cost - budget) / budget) };
 }
 
 // ─── PLATFORM SWAP ──────────────────────────────────────────────────
@@ -897,7 +908,7 @@ export default function UpgradePage() {
     const storageType = specs.add_storage_type || "";
     const storages = storageWant > 0 ? candidateStorages(storageWant, storageType, maxBudget) : [];
 
-    const recommendedBuild = optimizeBuild(currentGPU, currentCPU, { gpus, cpus, rams, storages }, budget);
+    const recommendedBuild = optimizeBuild(currentGPU, currentCPU, { gpus, cpus, rams, storages, useCase }, budget);
     const platformSwap = !refresh.refresh ? findPlatformSwap(currentCPU, budget, cpus[0]) : null;
     const refreshPaths = refresh.refresh ? computeRefreshPaths(currentGPU, useCase, budget, cpuModel?.brand) : null;
     const bottleneck = analyzeBottleneck(currentCPU, currentGPU);
