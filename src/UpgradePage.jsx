@@ -575,6 +575,60 @@ const COOLER_TIER_LABELS = {
   "enthusiast-aio": "Enthusiast AIO (360/420mm)",
 };
 
+// Universal use-case weighting. Every workload is the same scoring function with
+// different CPU/GPU emphasis. Used by both the refresh-bundle optimizer and (later)
+// the same-socket optimizer so behavior is identical across all use cases.
+const USE_CASE_WEIGHTS = {
+  gaming:       { cpu: 0.6, gpu: 1.0 },
+  content:      { cpu: 1.0, gpu: 1.0 },
+  ai:           { cpu: 0.9, gpu: 1.2 },
+  productivity: { cpu: 1.2, gpu: 0.6 },
+};
+function useCaseWeights(useCase) { return USE_CASE_WEIGHTS[useCase] || { cpu: 0.8, gpu: 1.0 }; }
+
+// VRM / power-delivery safety. Chipset tier is a reliable proxy for sustained power
+// capability (manufacturers segment VRM quality by chipset). A budget board CAN boot a
+// high-TDP CPU, but its VRM may overheat, throttle, and fail prematurely. So we REQUIRE
+// the board chipset tier to match the CPU TDP, and adjust the build if budget forces it.
+const CHIPSET_TIER = {
+  // budget VRM — safe to ~65W
+  A620:0, A520:0, B450:0, H110:0, H410:0, H470:0, H610:0, H810:0, H97:0,
+  // mid VRM — safe to ~125W
+  B550:1, B650:1, B660:1, B760:1, B840:1, B850:1, B860:1, Q670:1,
+  // high VRM — handles >125W
+  X570:2, X670:2, "X670E":2, X870:2, "X870E":2, Z390:2, Z490:2, Z690:2, Z790:2, Z890:2, X299:2, WRX90:2, C612:2,
+};
+function chipsetTier(chipset) {
+  if (!chipset) return null;  // unknown => cannot verify => exclude from new builds
+  const t = CHIPSET_TIER[chipset];
+  return t == null ? null : t;
+}
+// Minimum chipset tier required to safely sustain a given CPU TDP.
+function requiredTierForTDP(tdp) {
+  const w = tdp || 65;
+  if (w > 125) return 2;   // high-end VRM only
+  if (w > 65)  return 1;   // mid or high
+  return 0;                // any
+}
+function moboSupportsCPU(mobo, cpu) {
+  const tier = chipsetTier(mobo.chipset);
+  if (tier == null) return false;  // unknown chipset => not safe to recommend
+  return tier >= requiredTierForTDP(cpu?.tdp);
+}
+
+// Per-use-case leftover-budget priority. After the base platform is chosen, spend
+// remaining budget on the parts that actually help THIS workload, in this order.
+const LEFTOVER_PRIORITY = {
+  productivity: ["ram", "gpu"],          // multitasking is capacity-bound; GPU barely used
+  gaming:       ["gpu", "cpu", "ram"],   // frames first
+  content:      ["gpu", "cpu", "ram"],   // renders use GPU + CPU heavily
+  ai:           ["gpu", "ram", "cpu"],   // GPU/VRAM first, then memory
+};
+// Sensible RAM capacity ceilings by use case (no 128GB for an office PC).
+const RAM_CAP_CEILING = { productivity: 64, gaming: 32, content: 128, ai: 128 };
+// Max share of budget a GPU may consume, by use case (keeps productivity from grabbing a gaming card).
+const GPU_BUDGET_SHARE = { productivity: 0.20, gaming: 0.65, content: 0.55, ai: 0.60 };
+
 // ─── BUILD OPTIMIZER ────────────────────────────────────────────────
 // Recommended ratio: GPU bench ≤ ~3.5x CPU bench for balanced gaming.
 // Past that, CPU becomes the limiting factor and GPU performance is wasted.
@@ -647,93 +701,10 @@ function optimizeBuild(currentGPU, currentCPU, candidates, budget) {
   return { gpu: chosenGpu, cpu: chosenCpu, ram: chosenRam, sto: chosenSto, cost, score, adjustedScore: score, overPct: Math.max(0, (cost - budget) / budget) };
 }
 
-// ─── PLATFORM SWAP ──────────────────────────────────────────────────
-function findPlatformSwap(currentCPU, budget, sameSocketBest) {
-  if (!currentCPU || !currentCPU.bench) return null;
-  const swapSockets = currentCPU.brand === "Intel" ? ["AM5"]
-                    : currentCPU.brand === "AMD" ? ["LGA1700", "LGA1851"] : [];
-  let best = null;
-  for (const socket of swapSockets) {
-    const cpu = PARTS.filter(p => p.c === "CPU" && !p.bundle && p.socket === socket && p.bench != null && bestPrice(p) > 0)
-                     .sort((a, b) => (b.bench / bestPrice(b)) - (a.bench / bestPrice(a)))[0];
-    if (!cpu) continue;
-    const ddr = socketToDDR(socket) || "DDR5";
-    const mobo = PARTS.filter(p => p.c === "Motherboard" && !p.bundle && p.socket === socket && (!p.memType || p.memType === ddr) && bestPrice(p) > 0)
-                      .sort((a, b) => bestPrice(a) - bestPrice(b))[0];
-    if (!mobo) continue;
-    const ram = PARTS.filter(p => p.c === "RAM" && isDesktopRAM(p) && new RegExp(ddr, "i").test(p.n) && p.cap >= 16 && bestPrice(p) > 0)
-                     .sort((a, b) => bestPrice(a) - bestPrice(b))[0];
-    if (!ram) continue;
-    const total = bestPrice(cpu) + bestPrice(mobo) + bestPrice(ram);
-    if (total > budget) continue;
-    const ppd = cpu.bench / total;
-    if (!best || ppd > best.ppd) best = { cpu, mobo, ram, total, ppd, socket, ddr };
-  }
-  if (!best) return null;
-  const sameSocketPPD = sameSocketBest ? (sameSocketBest.bench / bestPrice(sameSocketBest)) : 0;
-  if (sameSocketPPD > 0 && best.ppd < sameSocketPPD * 1.30) return null;
-  return best;
-}
-
 // ─── REFRESH BUNDLE ─────────────────────────────────
-// Dead-end platform => user needs CPU + motherboard + RAM on a modern socket.
-// We build a complete bundle (also a GPU from remaining budget) for a GIVEN socket.
-// Returns null if the socket cannot be fully built within the budget.
-// Build a complete refresh bundle for a GIVEN socket + DDR type. Null if not buildable.
-// Universal use-case weighting. Every workload is the same scoring function with
-// different CPU/GPU emphasis. Used by both the refresh-bundle optimizer and (later)
-// the same-socket optimizer so behavior is identical across all use cases.
-const USE_CASE_WEIGHTS = {
-  gaming:       { cpu: 0.6, gpu: 1.0 },
-  content:      { cpu: 1.0, gpu: 1.0 },
-  ai:           { cpu: 0.9, gpu: 1.2 },
-  productivity: { cpu: 1.2, gpu: 0.6 },
-};
-function useCaseWeights(useCase) { return USE_CASE_WEIGHTS[useCase] || { cpu: 0.8, gpu: 1.0 }; }
-
-// VRM / power-delivery safety. Chipset tier is a reliable proxy for sustained power
-// capability (manufacturers segment VRM quality by chipset). A budget board CAN boot a
-// high-TDP CPU, but its VRM may overheat, throttle, and fail prematurely. So we REQUIRE
-// the board chipset tier to match the CPU TDP, and adjust the build if budget forces it.
-const CHIPSET_TIER = {
-  // budget VRM — safe to ~65W
-  A620:0, A520:0, B450:0, H110:0, H410:0, H470:0, H610:0, H810:0, H97:0,
-  // mid VRM — safe to ~125W
-  B550:1, B650:1, B660:1, B760:1, B840:1, B850:1, B860:1, Q670:1,
-  // high VRM — handles >125W
-  X570:2, X670:2, "X670E":2, X870:2, "X870E":2, Z390:2, Z490:2, Z690:2, Z790:2, Z890:2, X299:2, WRX90:2, C612:2,
-};
-function chipsetTier(chipset) {
-  if (!chipset) return null;  // unknown => cannot verify => exclude from new builds
-  const t = CHIPSET_TIER[chipset];
-  return t == null ? null : t;
-}
-// Minimum chipset tier required to safely sustain a given CPU TDP.
-function requiredTierForTDP(tdp) {
-  const w = tdp || 65;
-  if (w > 125) return 2;   // high-end VRM only
-  if (w > 65)  return 1;   // mid or high
-  return 0;                // any
-}
-function moboSupportsCPU(mobo, cpu) {
-  const tier = chipsetTier(mobo.chipset);
-  if (tier == null) return false;  // unknown chipset => not safe to recommend
-  return tier >= requiredTierForTDP(cpu?.tdp);
-}
-
-// Per-use-case leftover-budget priority. After the base platform is chosen, spend
-// remaining budget on the parts that actually help THIS workload, in this order.
-const LEFTOVER_PRIORITY = {
-  productivity: ["ram", "gpu"],          // multitasking is capacity-bound; GPU barely used
-  gaming:       ["gpu", "cpu", "ram"],   // frames first
-  content:      ["gpu", "cpu", "ram"],   // renders use GPU + CPU heavily
-  ai:           ["gpu", "ram", "cpu"],   // GPU/VRAM first, then memory
-};
-// Sensible RAM capacity ceilings by use case (no 128GB for an office PC).
-const RAM_CAP_CEILING = { productivity: 64, gaming: 32, content: 128, ai: 128 };
-// Max share of budget a GPU may consume, by use case (keeps productivity from grabbing a gaming card).
-const GPU_BUDGET_SHARE = { productivity: 0.20, gaming: 0.65, content: 0.55, ai: 0.60 };
-
+// Dead-end platform => user needs CPU + motherboard + RAM on a modern socket. Builds a
+// complete bundle (GPU from remaining budget) for a GIVEN socket + DDR type. Null if
+// the socket cannot be fully built within budget.
 function buildRefreshBundleFor(currentGPU, useCase, budget, socket, ddr) {
   if (!socket || !ddr) return null;
   const maxBudget = budget * (1 + BUDGET_OVERAGE);
@@ -960,7 +931,6 @@ export default function UpgradePage() {
     const storages = storageWant > 0 ? candidateStorages(storageWant, storageType, maxBudget) : [];
 
     const recommendedBuild = optimizeBuild(currentGPU, currentCPU, { gpus, cpus, rams, storages, useCase }, budget);
-    const platformSwap = !refresh.refresh ? findPlatformSwap(currentCPU, budget, cpus[0]) : null;
     // Brand for refresh targeting: prefer parsed model brand; else infer from raw socket
     // (AM*/FM* => AMD, LGA*/Intel name => Intel) so old AMD chips get AM4/AM5, not Intel.
     const refreshBrand = cpuModel?.brand || (/^AM|^FM/.test(specs.cpu_socket || "") || /\bAMD\b|\bFX\b|\bPHENOM\b|\bATHLON\b|\bRYZEN\b/i.test(specs.cpu || "") ? "AMD" : "Intel");
@@ -986,7 +956,7 @@ export default function UpgradePage() {
         userCoolerType, userCoolerCapacity, requiredTDP, coolerNeeded,
         currentGPU: currentGPU ? { name: currentGPU.n, bench: currentGPU.bench } : null,
         currentCPU: currentCPU ? { name: currentCPU.n, bench: currentCPU.bench, socket: currentCPU.socket } : null,
-        refresh: refresh, platformSwapFound: !!platformSwap, useCase, refreshPaths: refreshPaths ? { sameSocket: refreshPaths.sameSocket, value: refreshPaths.value ? { socket: refreshPaths.value.socket, ddr: refreshPaths.value.ddr, cpu: refreshPaths.value.cpu.n, mobo: refreshPaths.value.mobo.n, ram: refreshPaths.value.ram.n, gpu: refreshPaths.value.gpu?.n || null, cost: refreshPaths.value.cost } : null, future: refreshPaths.future ? { socket: refreshPaths.future.socket, ddr: refreshPaths.future.ddr, cpu: refreshPaths.future.cpu.n, mobo: refreshPaths.future.mobo.n, ram: refreshPaths.future.ram.n, gpu: refreshPaths.future.gpu?.n || null, cost: refreshPaths.future.cost } : null } : null,
+        refresh: refresh, useCase, refreshPaths: refreshPaths ? { sameSocket: refreshPaths.sameSocket, value: refreshPaths.value ? { socket: refreshPaths.value.socket, ddr: refreshPaths.value.ddr, cpu: refreshPaths.value.cpu.n, mobo: refreshPaths.value.mobo.n, ram: refreshPaths.value.ram.n, gpu: refreshPaths.value.gpu?.n || null, cost: refreshPaths.value.cost } : null, future: refreshPaths.future ? { socket: refreshPaths.future.socket, ddr: refreshPaths.future.ddr, cpu: refreshPaths.future.cpu.n, mobo: refreshPaths.future.mobo.n, ram: refreshPaths.future.ram.n, gpu: refreshPaths.future.gpu?.n || null, cost: refreshPaths.future.cost } : null } : null,
         poolCounts: { gpu: gpus.length, cpu: cpus.length, ram: rams.length, storage: storages.length, coolers: coolerRecs.length },
         recommendedBuild: recommendedBuild ? {
           cost: recommendedBuild.cost, overPct: (recommendedBuild.overPct * 100).toFixed(1) + "%",
@@ -1003,7 +973,7 @@ export default function UpgradePage() {
       currentGPU, currentCPU,
       gpus, cpus, rams, storages, coolerRecs, coolerNeeded,
       userCoolerType, userCoolerCapacity, requiredTDP,
-      recommendedBuild, platformSwap, refreshPaths,
+      recommendedBuild, refreshPaths,
       storageWant, storageType,
     };
   }, [specs]);
@@ -1050,7 +1020,13 @@ export default function UpgradePage() {
     const sticks = Number(specs.ram_sticks) || 0;
     const speed = Number(specs.ram_speed) || 0;
     let descText;
-    if (allSlotsFilled) {
+    if (selectedRefresh) {
+      // Fresh platform: the user gets a brand-new dual-channel kit on the new socket,
+      // not an addition to their old RAM (which will not fit the new motherboard).
+      const kit = selectedRefresh.ram;
+      const cap = kit?.cap ? `${kit.cap}GB` : "a new";
+      descText = `Your new ${selectedRefresh.socket} platform needs ${selectedRefresh.ddr} memory. We picked a ${cap} dual-channel kit sized to your budget and workload.`;
+    } else if (allSlotsFilled) {
       descText = `All ${total} slots are in use. Only showing ${sticks}-stick kits that fully replace your current setup with faster RAM.`;
     } else if (used > 0 && total > used) {
       descText = `${used} of ${total} slots are used. Showing matching-speed kits (${speed}MHz) that add to your existing RAM, plus faster full-replacement kits.`;
@@ -1114,7 +1090,6 @@ export default function UpgradePage() {
         {rb?.cpu && !a.coolerNeeded && a.userCoolerType !== "unknown" && (
           <CoolerOkBanner userCoolerType={a.userCoolerType} newCpu={rb.cpu} userCoolerCapacity={a.userCoolerCapacity}/>
         )}
-        {a.platformSwap && <PlatformSwapCard swap={a.platformSwap} currentBrand={a.currentCPU?.brand}/>}
 
         {/* Optional upgrades — not selected by the optimizer but still shown so user can browse */}
         {optionalSections.length > 0 && (
@@ -1567,42 +1542,6 @@ function CoolerRow({rec}) {
     </div>
   );
 }
-
-function PlatformSwapCard({swap, currentBrand}) {
-  return (
-    <div style={{background:"rgba(56,189,248,.06)", border:"1px solid var(--sky, #38BDF8)", borderRadius:12, padding:18, marginBottom:20}}>
-      <div style={{display:"flex", alignItems:"center", gap:8, marginBottom:8}}>
-        <span style={{fontSize:16}}>🔄</span>
-        <div style={{fontFamily:"var(--ff)", fontSize:15, fontWeight:700, color:"var(--txt)"}}>Platform Swap — Bigger Jump</div>
-      </div>
-      <div style={{fontFamily:"var(--ff)", fontSize:12, color:"var(--dim)", lineHeight:1.5, marginBottom:14}}>
-        Switching from {currentBrand === "Intel" ? "Intel" : "AMD"} to the {swap.socket} platform gives you better performance-per-dollar than staying on your current socket. This requires a new CPU, motherboard, and RAM.
-      </div>
-      <div style={{display:"flex", flexDirection:"column", gap:6, marginBottom:12}}>
-        <SwapLine label="CPU" part={swap.cpu} />
-        <SwapLine label="Motherboard" part={swap.mobo} />
-        <SwapLine label="RAM" part={swap.ram} />
-      </div>
-      <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", paddingTop:10, borderTop:"1px solid var(--bdr)"}}>
-        <div style={{fontFamily:"var(--ff)", fontSize:13, fontWeight:600, color:"var(--dim)"}}>Platform swap total</div>
-        <div style={{fontFamily:"var(--ff)", fontSize:20, fontWeight:800, color:"var(--accent)"}}>${swap.total.toLocaleString()}</div>
-      </div>
-    </div>
-  );
-}
-
-function SwapLine({label, part}) {
-  const retailer = retailerUrl(part);
-  return (
-    <div style={{background:"var(--bg3)", borderRadius:6, padding:"8px 12px", display:"flex", alignItems:"center", gap:10}}>
-      <div style={{minWidth:90, fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:700}}>{label.toUpperCase()}</div>
-      <div style={{flex:1, minWidth:0, fontFamily:"var(--ff)", fontSize:12, fontWeight:600, color:"var(--txt)", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap"}}>{part.n}</div>
-      <div style={{fontFamily:"var(--ff)", fontSize:14, fontWeight:700, color:"var(--accent)"}}>${bestPrice(part)}</div>
-      {retailer && <a href={retailer.url} target="_blank" rel="noopener noreferrer" style={{fontFamily:"var(--ff)", fontSize:10, color:"var(--accent)", textDecoration:"none", whiteSpace:"nowrap"}}>Buy →</a>}
-    </div>
-  );
-}
-
 function MissingSpecsView() {
   return (
     <div style={{minHeight:"60vh", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", padding:40, textAlign:"center"}}>
