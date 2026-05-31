@@ -278,10 +278,12 @@ function retailerUrl(p) {
 
 // ─── PLATFORM REFRESH ───────────────────────────────────────────────
 function needsPlatformRefresh(currentCPU, cpuModel, rawSocket) {
-  if (!cpuModel) return { refresh: false };
-  if (rawSocket && /^AM[123]$|^FM[12]$|^939|^754|^AM3\+/.test(rawSocket)) {
-    return { refresh: true, reason: `${rawSocket} socket is obsolete — AM5 platform needed` };
+  // Known dead/obsolete sockets => refresh REGARDLESS of whether we can parse the CPU
+  // model (FX, Phenom, Athlon, old Core2 often fail model extraction but are clearly dead).
+  if (rawSocket && /^AM[123]$|^FM[12]$|^939|^754|^AM3\+|^LGA77[156]$|^LGA1366$|^LGA115[56]$/.test(rawSocket)) {
+    return { refresh: true, reason: `${rawSocket} socket is obsolete — a modern platform is needed` };
   }
+  if (!cpuModel) return { refresh: false };
   if (cpuModel.brand === "Intel") {
     const gen = intelGeneration(cpuModel.model);
     if (gen && gen < 8) return { refresh: true, reason: `Intel ${gen}th gen is outdated — newer socket required` };
@@ -959,7 +961,10 @@ export default function UpgradePage() {
 
     const recommendedBuild = optimizeBuild(currentGPU, currentCPU, { gpus, cpus, rams, storages, useCase }, budget);
     const platformSwap = !refresh.refresh ? findPlatformSwap(currentCPU, budget, cpus[0]) : null;
-    const refreshPaths = refresh.refresh ? computeRefreshPaths(currentGPU, useCase, budget, cpuModel?.brand) : null;
+    // Brand for refresh targeting: prefer parsed model brand; else infer from raw socket
+    // (AM*/FM* => AMD, LGA*/Intel name => Intel) so old AMD chips get AM4/AM5, not Intel.
+    const refreshBrand = cpuModel?.brand || (/^AM|^FM/.test(specs.cpu_socket || "") || /\bAMD\b|\bFX\b|\bPHENOM\b|\bATHLON\b|\bRYZEN\b/i.test(specs.cpu || "") ? "AMD" : "Intel");
+    const refreshPaths = refresh.refresh ? computeRefreshPaths(currentGPU, useCase, budget, refreshBrand) : null;
     const bottleneck = analyzeBottleneck(currentCPU, currentGPU);
 
     const newCpuTDP = recommendedBuild?.cpu?.tdp ?? currentCPU?.tdp ?? 125;
@@ -1090,6 +1095,9 @@ export default function UpgradePage() {
         {rp && !rp.sameSocket && rp.future && (
           <RefreshPathToggle selected={refreshPath} onSelect={setRefreshPath} value={rp.value} future={rp.future} />
         )}
+        {rp && rp.sameSocket && rp.value && (
+          <FutureproofBadge socket={rp.value.socket} />
+        )}
         <RecommendedBuildBanner budget={a.budget} build={rb} />
         {a.bottleneck && <BottleneckAnalysisCard bn={a.bottleneck} />}
         <UpgradeStrategyExplanation analysis={a}/>
@@ -1165,6 +1173,17 @@ function MotherboardSection({mobo, ddr, socket}) {
           <div style={{fontFamily:"var(--ff)", fontSize:12, fontWeight:700, color:"#FFB020", marginBottom:3}}>Check your case size — {fit.label} board</div>
           <div style={{fontFamily:"var(--ff)", fontSize:12, color:"var(--dim)", lineHeight:1.55}}>{fit.text}</div>
         </div>
+      </div>
+    </div>
+  );
+}
+
+function FutureproofBadge({socket}) {
+  return (
+    <div style={{marginBottom:20, display:"flex", alignItems:"center", gap:10, background:"rgba(52,211,153,.08)", border:"1px solid #34D399", borderRadius:10, padding:"12px 16px"}}>
+      <span style={{fontSize:16}}>✅</span>
+      <div style={{fontFamily:"var(--ff)", fontSize:12, color:"var(--dim)", lineHeight:1.5}}>
+        This build uses the <strong style={{color:"var(--txt)"}}>{socket}</strong> platform — the newest socket available. It’s both our <strong style={{color:"var(--txt)"}}>best price-to-performance</strong> pick AND the <strong style={{color:"var(--txt)"}}>most futureproof</strong> choice, so there’s no tradeoff to weigh here.
       </div>
     </div>
   );
