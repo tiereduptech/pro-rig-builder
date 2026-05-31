@@ -178,7 +178,11 @@ async function renderRoute(browser, route) {
     await page.goto(BASE + route, { waitUntil: "networkidle0", timeout: TIMEOUT });
 
     await page.waitForFunction(() => {
-      const titleOk = document.title && document.title.length > 5;
+      const _t = document.title || "";
+      const _p = location.pathname || "/";
+      // Generic home/site title fallbacks that must NOT appear on a sub-route.
+      const HOME_TITLE_RE = /Compare, Build & Save on PC Parts|Free PC Part Picker & Hardware Scanner/i;
+      const titleOk = _t.length > 5 && (_p === "/" || !HOME_TITLE_RE.test(_t));
       const descOk  = document.querySelector('meta[name="description"]')?.content?.length > 20;
       const bodyOk  = document.body?.innerText?.length > 100;
       const c = document.querySelector('link[rel="canonical"]')?.href || "";
