@@ -2299,7 +2299,10 @@ function VsPcPartPickerPage({go}) {
         </div>
       </div>
 
-      <div style={{maxWidth:1180,margin:"0 auto",padding:"48px 32px"}}>
+      <AuthorByline/>
+
+      <div style={{maxWidth:1180,margin:"0 auto",padding:"32px 32px 48px"}}>
+        <ShopNote>We run upgrade consults across both tools at the shop. This is the side-by-side I ended up writing for our own counter.</ShopNote>
         <SectionHeading>The short answer</SectionHeading>
         <Para>
           <strong>PCPartPicker</strong> is an established platform with a large community, solid compatibility engine, and real-time pricing across retailers. It's ad-supported and works well for basic PC building.
@@ -2382,7 +2385,10 @@ function PcpAlternativePage({go}) {
         </div>
       </div>
 
-      <div style={{maxWidth:1180,margin:"0 auto",padding:"48px 32px"}}>
+      <AuthorByline/>
+
+      <div style={{maxWidth:1180,margin:"0 auto",padding:"32px 32px 48px"}}>
+        <ShopNote>After years of speccing customer parts in PCPartPicker, the missing pieces became this site.</ShopNote>
         <SectionHeading>Why look for a PCPartPicker alternative?</SectionHeading>
         <Para>
           PCPartPicker is the most recognized PC builder platform, but it has limitations. Users commonly cite these reasons for seeking alternatives:
@@ -2445,7 +2451,10 @@ function BestPcBuilderToolsPage({go}) {
         </div>
       </div>
 
-      <div style={{maxWidth:1180,margin:"0 auto",padding:"48px 32px"}}>
+      <AuthorByline/>
+
+      <div style={{maxWidth:1180,margin:"0 auto",padding:"32px 32px 48px"}}>
+        <ShopNote>We use these tools every week at the shop. The ranking below reflects which ones actually save time on real upgrade tickets, not feature checkboxes.</ShopNote>
         <Para>
           Whether you're building your first PC or upgrading an existing rig, the right tool saves you hours of research and prevents costly compatibility mistakes. We evaluated each of these platforms on four criteria: <strong>feature depth</strong>, <strong>pricing accuracy</strong>, <strong>user experience</strong>, and <strong>business model transparency</strong>.
         </Para>
@@ -2528,6 +2537,57 @@ function BestPcBuilderToolsPage({go}) {
 }
 
 // ═══ SHARED LANDING-PAGE PRIMITIVES ════════════════════════════════
+
+// Build-time constant for guide-page "last updated" (ISO).
+// Bump when materially revising guide content. PageMeta.jsx holds its own copy
+// (GUIDE_LAST_UPDATED) for the Article JSON-LD — keep them in sync by hand.
+const SITE_LAST_UPDATED = "2026-05-31";
+
+function fmtUpdated(iso){
+  const d = new Date(iso+"T00:00:00");
+  return d.toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"});
+}
+
+// Author attribution byline — E-E-A-T signal placed at the top of guide pages.
+// Subtle single-row strip; links out to TieredUp Tech for off-site corroboration
+// of authorship.
+function AuthorByline({dateModified=SITE_LAST_UPDATED}){
+  return (
+    <div style={{maxWidth:1180,margin:"0 auto",padding:"14px 32px 0"}}>
+      <div style={{display:"flex",alignItems:"center",gap:12,padding:"12px 16px",
+                   background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:10,
+                   fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.45,flexWrap:"wrap"}}>
+        <div style={{width:34,height:34,borderRadius:"50%",background:"var(--accent)",
+                     color:"#fff",display:"flex",alignItems:"center",justifyContent:"center",
+                     fontWeight:700,fontSize:14,flexShrink:0,fontFamily:"var(--ff)"}}>C</div>
+        <div style={{flex:1,minWidth:0}}>
+          <div style={{color:"var(--txt)",fontWeight:600}}>
+            Written by Coby, owner of <a href="https://tiereduptech.com" target="_blank" rel="noopener noreferrer" style={{color:"var(--accent)",textDecoration:"underline"}}>TieredUp Tech</a>
+          </div>
+          <div style={{fontSize:12,marginTop:2}}>
+            Computer repair shop owner · Orange, Texas · Updated <time dateTime={dateModified}>{fmtUpdated(dateModified)}</time>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// First-hand framing callout — short, italic, accent-bordered. Used on guide
+// and category pages to weave real shop perspective into otherwise generic
+// editorial copy. Keep claims truthful to a repair-shop owner's reality.
+function ShopNote({children}){
+  return (
+    <div style={{borderLeft:"3px solid var(--accent)",background:"var(--bg3)",
+                 padding:"12px 16px",margin:"0 0 20px",borderRadius:"0 8px 8px 0",
+                 fontFamily:"var(--ff)",fontSize:14,color:"var(--txt)",lineHeight:1.65}}>
+      <span style={{fontFamily:"var(--mono)",fontSize:10,letterSpacing:1.5,color:"var(--accent)",
+                    fontWeight:700,marginRight:8}}>FROM THE SHOP</span>
+      <em style={{fontStyle:"italic"}}>{children}</em>
+    </div>
+  );
+}
+
 function LandingHero({badge,title,sub}){
   return <div style={{background:"var(--heroGrad)",borderBottom:"1px solid var(--bdr)",position:"relative",overflow:"hidden"}}>
     <div style={{position:"absolute",top:"-10%",right:"-5%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 60%)",pointerEvents:"none"}}/>
@@ -2566,7 +2626,9 @@ function PcHardwareScannerPage({go}){
     <SEO title="PC Hardware Scanner" description="placeholder" canonical="https://prorigbuilder.com/pc-hardware-scanner" faq={FAQ}/>
     <LandingHero badge="FREE WINDOWS APP" title="PC Hardware Scanner — See Exactly What's In Your PC"
       sub="Not sure what CPU, GPU, or motherboard you have? Run our free PC hardware scanner and get an instant, accurate breakdown of every component in your rig — then see exactly what's worth upgrading."/>
-    <div style={{maxWidth:1180,margin:"0 auto",padding:"48px 32px"}}>
+    <AuthorByline/>
+    <div style={{maxWidth:1180,margin:"0 auto",padding:"32px 32px 48px"}}>
+      <ShopNote>Identifying mystery prebuilts by hand used to burn 30+ minutes off every shop ticket. I built this scanner because I needed it on my own bench first.</ShopNote>
       <Para>
         A <strong>PC hardware scanner</strong> answers a question almost every PC owner eventually asks: <em>"What's actually in my PC?"</em> Whether you bought a prebuilt, inherited a machine, or just don't remember which parts you picked three years ago, manually identifying your hardware is tedious and error-prone. The Pro Rig Scanner reads your system directly and tells you precisely what you're running in a few seconds.
       </Para>
@@ -2640,7 +2702,9 @@ function WhatCanIUpgradePage({go}){
     <SEO title="What Can I Upgrade In My PC" description="placeholder" canonical="https://prorigbuilder.com/what-can-i-upgrade" faq={FAQ}/>
     <LandingHero badge="UPGRADE GUIDE" title="What Can I Upgrade In My PC?"
       sub="Stop guessing. Find the single upgrade that gives your PC the biggest performance boost for the money — based on your actual hardware, not generic advice."/>
-    <div style={{maxWidth:1180,margin:"0 auto",padding:"48px 32px"}}>
+    <AuthorByline/>
+    <div style={{maxWidth:1180,margin:"0 auto",padding:"32px 32px 48px"}}>
+      <ShopNote>What I see most at the shop: the winning upgrade is different for every customer. The same chip that's the right answer for one rig is wasted money in another.</ShopNote>
       <Para>
         "<strong>What can I upgrade in my PC?</strong>" is the right question — and the answer is almost never "everything at once." Every PC has one component holding the rest back. Spend on the wrong part and you'll see little to no improvement; spend on the bottleneck and a five-year-old machine can feel new again. This guide explains how to find your weak link and what each upgrade actually delivers.
       </Para>
@@ -2703,7 +2767,9 @@ function WillItFitPage({go}){
     <SEO title="Will This GPU Fit My Case" description="placeholder" canonical="https://prorigbuilder.com/will-it-fit" faq={FAQ}/>
     <LandingHero badge="COMPATIBILITY" title="Will It Fit? GPU & Case Clearance, Answered"
       sub="Before you buy that big graphics card, make sure it physically fits. Here's exactly how to check GPU length, cooler height, and case clearance — the dimensions most builders forget."/>
-    <div style={{maxWidth:1180,margin:"0 auto",padding:"48px 32px"}}>
+    <AuthorByline/>
+    <div style={{maxWidth:1180,margin:"0 auto",padding:"32px 32px 48px"}}>
+      <ShopNote>Plenty of customers bring me a beautiful new card that bumps the drive cage. Five minutes with the spec sheet saves a return shipment every time.</ShopNote>
       <Para>
         "<strong>Will this GPU fit my case?</strong>" trips up first-time and veteran builders alike, because modern graphics cards have grown enormous — many flagship cards are over 320mm long and occupy three or more slots. The good news: fit is a simple numbers game once you know which numbers to compare. This guide walks through GPU length, thickness, and cooler clearance so you never order a card that won't seat.
       </Para>
@@ -2744,15 +2810,15 @@ function WillItFitPage({go}){
 
 // ─── /parts/{cat} category index (Phase 4) ───────────────────────
 const CAT_INTRO={
-  CPU:{lead:"The processor sets the ceiling for your whole system — it drives frame rates in CPU-bound games, multitasking, and creative workloads. The best CPU for you balances core count, single-core speed, and platform cost.",specs:["Cores and threads — more help productivity and streaming; gaming favours fast cores over many","Single-core clock speed — the biggest factor in most games","Socket (AM5, LGA1851/1700) — must match your motherboard exactly","TDP and included cooler — higher-TDP chips need stronger cooling"],mistake:"Pairing a top-tier CPU with a weak GPU for a gaming build. Below 4K, the GPU matters far more — don't overspend on cores you won't use."},
-  GPU:{lead:"The graphics card is the single biggest factor in gaming and GPU-accelerated performance. Picking the right one is about matching its power to your resolution and refresh-rate target — not just buying the most expensive card you can.",specs:["VRAM — 8GB is entry-level in 2026; 12–16GB is the sweet spot for 1440p and up","Target resolution — 1080p, 1440p, and 4K demand very different tiers","Card length and slot width — confirm it fits your case","Power draw (TDP) and connectors — make sure your PSU can feed it"],mistake:"Buying far more GPU than your monitor can show. A 4K-class card on a 1080p 60Hz display wastes most of what you paid for."},
-  Motherboard:{lead:"The motherboard ties every component together and quietly sets your upgrade ceiling. The right board matches your CPU socket, supports the RAM and storage you want, and includes the connectivity you'll actually use.",specs:["Socket and chipset — must match your CPU and unlock the features you want","Form factor (ATX, mATX, ITX) — must fit your case","Memory type and slots — DDR5 vs DDR4, and how much RAM it accepts","M.2 slots, USB-C, and Wi-Fi — connectivity for today and future upgrades"],mistake:"Overspending on a high-end chipset for a CPU that can't use the extra power delivery or overclocking, or buying a board that boxes in future upgrades."},
-  RAM:{lead:"Memory is one of the cheapest, highest-impact upgrades in a PC. The right kit clears multitasking stutter and feeds your CPU at the speed your platform supports — without paying for headroom you can't use.",specs:["Capacity — 16GB is the floor in 2026; 32GB is the comfortable sweet spot","Type — DDR5 or DDR4, dictated by your motherboard","Speed (MHz) and CAS latency — higher speed and lower latency help, especially on AMD","Kit layout — two sticks for dual-channel beats a single stick"],mistake:"Buying a single stick instead of a matched pair, which halves memory bandwidth and can noticeably cut frame rates."},
-  Storage:{lead:"Storage shapes how fast your PC feels day to day. A modern NVMe SSD makes boot, load, and file operations dramatically snappier than a hard drive, while large HDDs remain great value for bulk archives.",specs:["Type — NVMe SSD for your OS and games; HDD for cheap bulk storage","Capacity — 1TB is a sensible minimum for a primary drive in 2026","Sequential and random speeds — random matters more for everyday responsiveness","Form factor and interface — M.2 NVMe vs 2.5\" SATA; check your board's slots"],mistake:"Installing Windows on a hard drive. It's the single biggest cause of a 'slow' modern PC — an SSD fixes it instantly."},
-  PSU:{lead:"The power supply is the component you should never cheap out on. A quality, correctly-sized PSU protects every other part and leaves headroom for upgrades; a bad one risks the whole system.",specs:["Wattage — size for your GPU plus headroom (20–30% spare is healthy)","80 PLUS efficiency rating — Bronze is fine; Gold and up run cooler and quieter","Modularity — fully modular cabling keeps builds clean","ATX 3.0 / 12V-2x6 — needed for modern high-end GPU power connectors"],mistake:"Buying the cheapest unbranded PSU to save money. Efficiency, protections, and reliability vary wildly — this is not the place to economise."},
-  Case:{lead:"The case determines what fits, how cool it runs, and how your build looks. The right case matches your motherboard size and gives your GPU and cooler room to breathe.",specs:["Motherboard support (ATX, mATX, ITX) — must match your board","Maximum GPU length and cooler height — confirm clearance for big parts","Airflow and fan/radiator support — mesh fronts and ample mounts run cooler","Build quality and cable management — makes assembly far easier"],mistake:"Falling for looks and ignoring GPU clearance. A gorgeous compact case that can't fit your card is wasted money — check the numbers first."},
-  CPUCooler:{lead:"A CPU cooler keeps your processor fast and quiet under load. The right cooler clears your case, handles your CPU's heat output, and matches your noise tolerance.",specs:["Cooling capacity (TDP rating) vs your CPU's heat output","Type — capable air cooler vs AIO liquid for the hottest chips","Clearance — air-cooler height vs case limit; radiator size for AIOs","Socket compatibility and noise level (dBA)"],mistake:"Pairing a hot, high-core CPU with a budget cooler. Thermal throttling silently caps performance — match cooling to the chip."},
-  Monitor:{lead:"The monitor is what you actually look at, and it defines how good your hardware feels. The right panel matches your GPU's output to a resolution and refresh rate you'll genuinely use.",specs:["Resolution — 1080p, 1440p, or 4K; balance against your GPU's strength","Refresh rate (Hz) — 144Hz+ transforms fast-paced gaming","Panel type — IPS for colour, VA for contrast, OLED for the best of both","Adaptive sync (G-Sync/FreeSync) and response time for smooth motion"],mistake:"Buying a 4K 144Hz monitor your GPU can't drive. Match the panel to the card so you actually hit those frames."},
+  CPU:{lead:"The processor sets the ceiling for your whole system — it drives frame rates in CPU-bound games, multitasking, and creative workloads. The best CPU for you balances core count, single-core speed, and platform cost.",specs:["Cores and threads — more help productivity and streaming; gaming favours fast cores over many","Single-core clock speed — the biggest factor in most games","Socket (AM5, LGA1851/1700) — must match your motherboard exactly","TDP and included cooler — higher-TDP chips need stronger cooling"],mistake:"Pairing a top-tier CPU with a weak GPU for a gaming build. Below 4K, the GPU matters far more — don't overspend on cores you won't use.",shopNote:"Most CPU swaps we run at the shop are unblocking a fresh GPU. We rarely recommend a CPU-first upgrade unless the customer is already GPU-rich."},
+  GPU:{lead:"The graphics card is the single biggest factor in gaming and GPU-accelerated performance. Picking the right one is about matching its power to your resolution and refresh-rate target — not just buying the most expensive card you can.",specs:["VRAM — 8GB is entry-level in 2026; 12–16GB is the sweet spot for 1440p and up","Target resolution — 1080p, 1440p, and 4K demand very different tiers","Card length and slot width — confirm it fits your case","Power draw (TDP) and connectors — make sure your PSU can feed it"],mistake:"Buying far more GPU than your monitor can show. A 4K-class card on a 1080p 60Hz display wastes most of what you paid for.",shopNote:"The upgrade most customer tickets end on. Pair it with a PSU that can actually feed it — that's the part most buyers forget."},
+  Motherboard:{lead:"The motherboard ties every component together and quietly sets your upgrade ceiling. The right board matches your CPU socket, supports the RAM and storage you want, and includes the connectivity you'll actually use.",specs:["Socket and chipset — must match your CPU and unlock the features you want","Form factor (ATX, mATX, ITX) — must fit your case","Memory type and slots — DDR5 vs DDR4, and how much RAM it accepts","M.2 slots, USB-C, and Wi-Fi — connectivity for today and future upgrades"],mistake:"Overspending on a high-end chipset for a CPU that can't use the extra power delivery or overclocking, or buying a board that boxes in future upgrades.",shopNote:"We replace a board maybe one swap in twenty — almost always because a customer wants a CPU the current socket can't accept."},
+  RAM:{lead:"Memory is one of the cheapest, highest-impact upgrades in a PC. The right kit clears multitasking stutter and feeds your CPU at the speed your platform supports — without paying for headroom you can't use.",specs:["Capacity — 16GB is the floor in 2026; 32GB is the comfortable sweet spot","Type — DDR5 or DDR4, dictated by your motherboard","Speed (MHz) and CAS latency — higher speed and lower latency help, especially on AMD","Kit layout — two sticks for dual-channel beats a single stick"],mistake:"Buying a single stick instead of a matched pair, which halves memory bandwidth and can noticeably cut frame rates.",shopNote:"The single upgrade I recommend most often at the shop. 8→16GB ends stutter; 16→32GB matters more every year."},
+  Storage:{lead:"Storage shapes how fast your PC feels day to day. A modern NVMe SSD makes boot, load, and file operations dramatically snappier than a hard drive, while large HDDs remain great value for bulk archives.",specs:["Type — NVMe SSD for your OS and games; HDD for cheap bulk storage","Capacity — 1TB is a sensible minimum for a primary drive in 2026","Sequential and random speeds — random matters more for everyday responsiveness","Form factor and interface — M.2 NVMe vs 2.5\" SATA; check your board's slots"],mistake:"Installing Windows on a hard drive. It's the single biggest cause of a 'slow' modern PC — an SSD fixes it instantly.",shopNote:"The fastest 'my PC feels new again' fix we sell. Moving a customer off a hard drive onto an NVMe is under $80 most months."},
+  PSU:{lead:"The power supply is the component you should never cheap out on. A quality, correctly-sized PSU protects every other part and leaves headroom for upgrades; a bad one risks the whole system.",specs:["Wattage — size for your GPU plus headroom (20–30% spare is healthy)","80 PLUS efficiency rating — Bronze is fine; Gold and up run cooler and quieter","Modularity — fully modular cabling keeps builds clean","ATX 3.0 / 12V-2x6 — needed for modern high-end GPU power connectors"],mistake:"Buying the cheapest unbranded PSU to save money. Efficiency, protections, and reliability vary wildly — this is not the place to economise.",shopNote:"A good chunk of the GPU upgrades that fail at our bench trace back to a tired or underspecced PSU. Don't economise here."},
+  Case:{lead:"The case determines what fits, how cool it runs, and how your build looks. The right case matches your motherboard size and gives your GPU and cooler room to breathe.",specs:["Motherboard support (ATX, mATX, ITX) — must match your board","Maximum GPU length and cooler height — confirm clearance for big parts","Airflow and fan/radiator support — mesh fronts and ample mounts run cooler","Build quality and cable management — makes assembly far easier"],mistake:"Falling for looks and ignoring GPU clearance. A gorgeous compact case that can't fit your card is wasted money — check the numbers first.",shopNote:"Customers bring in cards that won't fit their case every other week. Measure GPU length against case clearance before you click buy."},
+  CPUCooler:{lead:"A CPU cooler keeps your processor fast and quiet under load. The right cooler clears your case, handles your CPU's heat output, and matches your noise tolerance.",specs:["Cooling capacity (TDP rating) vs your CPU's heat output","Type — capable air cooler vs AIO liquid for the hottest chips","Clearance — air-cooler height vs case limit; radiator size for AIOs","Socket compatibility and noise level (dBA)"],mistake:"Pairing a hot, high-core CPU with a budget cooler. Thermal throttling silently caps performance — match cooling to the chip.",shopNote:"The most common 'why is my PC slow now?' ticket I open is a thermal-throttling CPU on a stock or undersized cooler. Cooling first, then push the chip."},
+  Monitor:{lead:"The monitor is what you actually look at, and it defines how good your hardware feels. The right panel matches your GPU's output to a resolution and refresh rate you'll genuinely use.",specs:["Resolution — 1080p, 1440p, or 4K; balance against your GPU's strength","Refresh rate (Hz) — 144Hz+ transforms fast-paced gaming","Panel type — IPS for colour, VA for contrast, OLED for the best of both","Adaptive sync (G-Sync/FreeSync) and response time for smooth motion"],mistake:"Buying a 4K 144Hz monitor your GPU can't drive. Match the panel to the card so you actually hit those frames.",shopNote:"We see brand-new RTX cards plugged into 1080p 60Hz panels constantly. Match the monitor to the GPU so the spend shows on screen."},
 };
 function CategoryIndexPage({catKey,go}){
   const cfg=CAT[catKey]||{};
@@ -2790,6 +2856,7 @@ function CategoryIndexPage({catKey,go}){
     <div style={{maxWidth:1180,margin:"0 auto",padding:"20px 32px 8px"}}>
       <h1 style={{fontFamily:"var(--ff)",fontSize:38,fontWeight:800,color:"var(--txt)",letterSpacing:-1,lineHeight:1.15,marginBottom:14}}>Best {NOUN} {year}</h1>
       <p style={{fontFamily:"var(--ff)",fontSize:16,color:"var(--dim)",lineHeight:1.7,maxWidth:940,marginBottom:16}}>{intro.lead}</p>
+      {intro.shopNote&&<div style={{maxWidth:940,marginBottom:16}}><ShopNote>{intro.shopNote}</ShopNote></div>}
       {intro.specs.length>0&&<>
         <div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)",margin:"6px 0 8px"}}>What to consider when choosing {NOUN.toLowerCase()}:</div>
         <ul style={{paddingLeft:22,marginBottom:14}}>{intro.specs.map((s,i)=><li key={i} style={{fontFamily:"var(--ff)",fontSize:15,color:"var(--dim)",lineHeight:1.7,marginBottom:6}}>{s}</li>)}</ul>

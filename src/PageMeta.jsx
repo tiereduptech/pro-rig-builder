@@ -28,6 +28,67 @@ const SITE = "https://prorigbuilder.com";
 const BRAND = "Pro Rig Builder";
 const DEFAULT_OG_IMAGE = `${SITE}/og-image.png`;
 
+// ─── E-E-A-T entities ───────────────────────────────────────────────────────
+// Person + Organization JSON-LD emitted on every page so Google has a stable
+// author + publisher graph. Guide pages reference these by @id rather than
+// repeating the entity inline. dateModified bumps when guide copy is revised.
+const GUIDE_LAST_UPDATED = "2026-05-31";
+
+const PERSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${SITE}/#coby`,
+  name: "Coby Poluk",
+  givenName: "Coby",
+  jobTitle: "Owner, Computer Repair Shop & Custom PC Builder",
+  description: "Owner of TieredUp Tech, a Texas computer repair shop and custom PC brand. Builds, repairs, and consults on PC upgrades day-to-day.",
+  worksFor: { "@type": "Organization", "@id": `${SITE}/#tieredup` },
+  url: `${SITE}/about`,
+  sameAs: ["https://tiereduptech.com"],
+};
+
+const ORG_LD = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${SITE}/#tieredup`,
+  name: "TieredUp Tech, Inc.",
+  url: "https://tiereduptech.com",
+  logo: `${SITE}/og-image.png`,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Orange",
+    addressRegion: "TX",
+    addressCountry: "US",
+  },
+};
+
+// Guide pages get an Article JSON-LD with author/publisher/dateModified.
+// Keys match the PAGES map (and the URL-derived page key from routeFromUrl).
+const GUIDE_PAGES = new Set([
+  "vs-pcpartpicker",
+  "pcpartpicker-alternative",
+  "best-pc-builder-tools",
+  "pc-hardware-scanner",
+  "what-can-i-upgrade",
+  "will-it-fit",
+]);
+
+function buildGuideArticleLd({ page, url, title, desc }) {
+  if (!GUIDE_PAGES.has(page)) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description: desc,
+    url,
+    image: DEFAULT_OG_IMAGE,
+    dateModified: GUIDE_LAST_UPDATED,
+    author: { "@id": `${SITE}/#coby` },
+    publisher: { "@id": `${SITE}/#tieredup` },
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+  };
+}
+
 // ─── Static page metadata ───────────────────────────────────────────────────
 const PAGES = {
   home: {
@@ -564,6 +625,8 @@ function buildPrimaryLd({ page, product, category, url, title, desc }) {
       name: title,
       description: desc,
       url,
+      author: { "@id": `${SITE}/#coby` },
+      publisher: { "@id": `${SITE}/#tieredup` },
     };
   }
   return null;
@@ -599,6 +662,7 @@ export default function PageMeta({ page, category, product, parts }) {
   const url = SITE + meta.path;
   const primaryLd = buildPrimaryLd({ page: effectivePage, product: resolvedProduct, category: resolvedCategory, url, title: meta.title, desc: meta.desc });
   const breadcrumbLd = buildBreadcrumbLd({ page: effectivePage, product: resolvedProduct, category: resolvedCategory });
+  const articleLd = buildGuideArticleLd({ page: effectivePage, url, title: meta.title, desc: meta.desc });
 
   return (
     <Helmet>
@@ -629,6 +693,17 @@ export default function PageMeta({ page, category, product, parts }) {
       {breadcrumbLd && (
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
       )}
+
+      {/* Article structured data with author + publisher + dateModified (guide pages only) */}
+      {articleLd && (
+        <script type="application/ld+json">{JSON.stringify(articleLd)}</script>
+      )}
+
+      {/* Sitewide E-E-A-T graph: Person (author) + Organization (publisher).
+          Emitted on every page so Google can resolve @id references from
+          Article / CollectionPage schema back to a single canonical entity. */}
+      <script type="application/ld+json">{JSON.stringify(PERSON_LD)}</script>
+      <script type="application/ld+json">{JSON.stringify(ORG_LD)}</script>
     </Helmet>
   );
 }
