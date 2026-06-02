@@ -281,13 +281,10 @@ async function main() {
   }
 
   const isWin = process.platform === "win32";
-  const serveCmd = isWin ? "cmd" : "npx";
-  const serveArgs = isWin
-    ? ["/c", "npx", "serve", "-s", "dist", "-l", String(PORT)]
-    : ["serve", "-s", "dist", "-l", String(PORT)];
-
-  console.log(`  Starting local server on :${PORT}...`);
-  const serveProc = spawn(serveCmd, serveArgs, { stdio: VERBOSE ? "inherit" : "pipe", detached: false });
+  const serveCmd = "node";
+  const serveArgs = ["server.cjs"];
+  console.log(`  Starting local server (server.cjs) on :${PORT}...`);
+  const serveProc = spawn(serveCmd, serveArgs, { stdio: VERBOSE ? "inherit" : "pipe", detached: false, env: { ...process.env, PORT: String(PORT) } });
   serveProc.on("error", (e) => { console.error("  X serve failed:", e.message); process.exit(1); });
 
   function killServer() {
