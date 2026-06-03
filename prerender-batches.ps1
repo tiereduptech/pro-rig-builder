@@ -80,7 +80,7 @@ for ($start = $StartAt; $start -lt $total; $start += $BatchSize) {
     "--end=$end",
     "--concurrency=$Concurrency"
   )
-  $args += "--no-static"
+  if ($start -gt 0) { $args += "--no-static" }
   if ($incFlag) { $args += $incFlag }
   if ($verFlag) { $args += $verFlag }
 
