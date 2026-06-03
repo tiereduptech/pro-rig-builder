@@ -301,7 +301,7 @@ function cleanProductName(p){
   const aibBrand = _CLEAN_AIB_BRANDS.includes(brand) ? brand : null;
   let subSeries = null;
   for(const sub of _CLEAN_SUBSERIES){
-    const re = new RegExp('\\b' + sub.replace(/[.*+?^${}()|[\]\\]/g,'\\import { PARTS as RAW_SEED_PARTS } from "./data/parts.js";') + '\\b','i');
+    const re = new RegExp('\\b' + sub.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + '\\b','i');
     if(re.test(name)){ subSeries = sub; break; }
   }
   const hasOC = /\bOC\b/i.test(name);
