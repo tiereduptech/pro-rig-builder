@@ -2318,7 +2318,7 @@ function VariantCTA({go}) {
 }
 
 // ─── /vs-pcpartpicker ────────────────────────────────────────────
-function VsPcPartPickerPage({go}) {
+function VsPcPartPickerPage({go, navTo}) {
   return (
     <div className="fade">
       <SEO title="Pro Rig Builder vs PCPartPicker: A 2026 Feature Comparison" description="How Pro Rig Builder compares to PCPartPicker in 2026. Features, tools, pricing engine, and business model breakdown. Objective, factual comparison." canonical="https://prorigbuilder.com/#vs-pcpartpicker" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Compare",url:"https://prorigbuilder.com/#compare"},{name:"vs PCPartPicker",url:"https://prorigbuilder.com/#vs-pcpartpicker"}]} faq={[{"q":"Should I use Pro Rig Builder or PCPartPicker?","a":"Use Pro Rig Builder if you want modern tools (hardware scanner, FPS estimator, bottleneck calculator), an ad-free experience, or budget-aware upgrade recommendations. Use PCPartPicker if you primarily want access to a large community of user-submitted builds."},{"q":"Is Pro Rig Builder a PCPartPicker clone?","a":"No. Pro Rig Builder is a distinct platform with 8 exclusive features PCPartPicker does not offer. We built our compatibility engine, pricing system, and all tools from scratch."},{"q":"Can I use both Pro Rig Builder and PCPartPicker?","a":"Yes. Many users cross-reference between both platforms. They are complementary."},{"q":"Does Pro Rig Builder have more parts than PCPartPicker?","a":"Pro Rig Builder's catalog contains over 3,400 verified PC components as of April 2026, updated continuously. For current-generation hardware, both platforms have comprehensive coverage."}]}/>
@@ -2355,6 +2355,9 @@ function VsPcPartPickerPage({go}) {
         </ul>
 
         <SectionHeading>What Pro Rig Builder Offers That PCPartPicker Does NOT</SectionHeading>
+        <Para>
+          Try each one directly: <ILink href="/scanner" go={go} page="scanner">Hardware Scanner</ILink>, <ILink href="/tools/fps-estimator" navTo={navTo}>FPS Estimator</ILink>, <ILink href="/tools/bottleneck-calculator" navTo={navTo}>Bottleneck Calculator</ILink>, and <ILink href="/tools/build-wizard" navTo={navTo}>Build Wizard</ILink>. All free, no signup.
+        </Para>
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16,marginBottom:24}} className="how-grid">
           {[
             {i:"🔍", t:"Hardware Scanner App", d:"Download our free Windows app. It detects your hardware automatically and generates upgrade recommendations. PCPartPicker has no equivalent."},
@@ -2394,7 +2397,7 @@ function VsPcPartPickerPage({go}) {
         <div style={{marginTop:32,padding:"20px 24px",background:"var(--bg3)",borderRadius:10,border:"1px solid var(--bdr)"}}>
           <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",fontWeight:600,letterSpacing:1.5,marginBottom:6}}>NOTE</div>
           <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",lineHeight:1.6}}>
-            This comparison is factual and based on features publicly available on both sites as of April 2026. Pro Rig Builder is not affiliated with PCPartPicker. For the full 24-feature comparison including Newegg and Logical Increments, see our <span onClick={()=>go("compare")} style={{color:"var(--accent)",cursor:"pointer",textDecoration:"underline"}}>full comparison page</span>.
+            This comparison is factual and based on features publicly available on both sites as of April 2026. Pro Rig Builder is not affiliated with PCPartPicker. For the full 24-feature comparison including Newegg and Logical Increments, see our <ILink href="/compare" go={go} page="compare">full comparison page</ILink>.
           </div>
         </div>
       </div>
@@ -2404,7 +2407,7 @@ function VsPcPartPickerPage({go}) {
 }
 
 // ─── /pcpartpicker-alternative ───────────────────────────────────
-function PcpAlternativePage({go}) {
+function PcpAlternativePage({go, navTo}) {
   return (
     <div className="fade">
       <SEO title="The Best PCPartPicker Alternative in 2026" description="Looking for a PCPartPicker alternative? Pro Rig Builder offers every feature plus hardware scanner, FPS estimator, bottleneck calculator, and budget-aware upgrade recommendations. Ad-free." canonical="https://prorigbuilder.com/#pcpartpicker-alternative" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"PCPartPicker Alternative",url:"https://prorigbuilder.com/#pcpartpicker-alternative"}]} faq={[{q:"Is there a free PCPartPicker alternative?",a:"Yes. Pro Rig Builder is 100% free with no paywalls. It includes a PC builder, compatibility engine, multi-retailer pricing, and a free Windows hardware scanner — all at no cost."},{q:"What is the best PCPartPicker alternative in 2026?",a:"Pro Rig Builder is the most feature-complete alternative. It matches PCPartPicker's core building and compatibility features and adds a hardware scanner, FPS estimator, bottleneck calculator, and budget-aware upgrade recommendations, with zero ads."},{q:"Does Pro Rig Builder check part compatibility like PCPartPicker?",a:"Yes. Our compatibility engine validates socket, chipset, form factor, memory type, and PSU wattage as you build, the same checks PCPartPicker performs."},{q:"Can I import my PCPartPicker build?",a:"There is no one-click import, but recreating a build in our PC Builder takes a minute, and the hardware scanner can detect your current rig automatically for upgrade suggestions."}]}/>
@@ -2461,7 +2464,10 @@ function PcpAlternativePage({go}) {
 
         <SectionHeading>Quick switch: your PCPartPicker build is portable</SectionHeading>
         <Para>
-          If you have an existing PCPartPicker build list, our <span onClick={()=>go("builder")} style={{color:"var(--accent)",cursor:"pointer",textDecoration:"underline"}}>PC Builder</span> makes it easy to recreate with our features on top. Or, download our <span onClick={()=>go("scanner")} style={{color:"var(--accent)",cursor:"pointer",textDecoration:"underline"}}>hardware scanner</span> and let it detect your current rig, then see our upgrade suggestions.
+          If you have an existing PCPartPicker build list, our <ILink href="/builder" go={go} page="builder">PC Builder</ILink> makes it easy to recreate with our features on top. Or, download our <ILink href="/scanner" go={go} page="scanner">hardware scanner</ILink> and let it detect your current rig, then see our upgrade suggestions.
+        </Para>
+        <Para>
+          Already shopping a specific category? Browse our <ILink href="/parts/gpu" navTo={navTo}>graphics cards</ILink>, <ILink href="/parts/cpu" navTo={navTo}>CPUs</ILink>, or <ILink href="/parts/motherboard" navTo={navTo}>motherboards</ILink> — every page lists live prices across Amazon, Best Buy, and Newegg. Want the numbers first? Try the <ILink href="/tools/fps-estimator" navTo={navTo}>FPS Estimator</ILink> or <ILink href="/tools/bottleneck-calculator" navTo={navTo}>Bottleneck Calculator</ILink> before committing.
         </Para>
       </div>
       <VariantCTA go={go}/>
@@ -2470,7 +2476,7 @@ function PcpAlternativePage({go}) {
 }
 
 // ─── /best-pc-builder-tools ──────────────────────────────────────
-function BestPcBuilderToolsPage({go}) {
+function BestPcBuilderToolsPage({go, navTo}) {
   return (
     <div className="fade">
       <SEO title="Best PC Builder Tools in 2026: Ranked & Reviewed" description="The best PC builder tools of 2026 ranked by features, pricing transparency, and modern UX. See how Pro Rig Builder, PCPartPicker, Newegg PC Builder, and Logical Increments stack up." canonical="https://prorigbuilder.com/#best-pc-builder-tools" breadcrumb={[{name:"Home",url:"https://prorigbuilder.com/"},{name:"Best PC Builder Tools",url:"https://prorigbuilder.com/#best-pc-builder-tools"}]} faq={[{q:"What is the best PC builder tool in 2026?",a:"Pro Rig Builder ranks first for most builders thanks to its hardware scanner, FPS estimator, bottleneck calculator, multi-retailer pricing, and ad-free experience. PCPartPicker remains strong for community builds."},{q:"What is the best free PC building website?",a:"Pro Rig Builder is free with no ads or paywalls. It offers a full PC builder, compatibility checking, and exclusive tools that paid and ad-supported sites often gate or omit."},{q:"Is PCPartPicker still the best PC builder?",a:"PCPartPicker is excellent for browsing user-submitted builds and forums, but it lacks a hardware scanner, FPS estimation, and bottleneck analysis. For modern tooling, Pro Rig Builder leads."},{q:"Which PC builder tool has the best price comparison?",a:"Pro Rig Builder and PCPartPicker both compare live prices across multiple retailers. Pro Rig Builder prioritizes in-stock listings across Amazon, Best Buy, Newegg and more."}]}/>
@@ -2564,6 +2570,9 @@ function BestPcBuilderToolsPage({go}) {
         <Para>
           For most builders in 2026, <strong>Pro Rig Builder</strong> is the recommendation. It matches PCPartPicker on core building features and adds eight more tools you won't find anywhere else. It's ad-free and transparent about its business model. PCPartPicker remains a solid choice if you primarily want community-submitted builds. Newegg PC Builder is only recommended if you're already committed to shopping at Newegg. Logical Increments is a good starting point for absolute beginners who want a "just tell me what to buy" guide.
         </Para>
+        <Para>
+          Try the standout tools yourself: the <ILink href="/tools/fps-estimator" navTo={navTo}>FPS Estimator</ILink>, <ILink href="/tools/bottleneck-calculator" navTo={navTo}>Bottleneck Calculator</ILink>, <ILink href="/tools/power-calculator" navTo={navTo}>PSU Wattage Calculator</ILink>, and <ILink href="/tools/build-wizard" navTo={navTo}>Build Wizard</ILink> are all linked above. Or jump straight to <ILink href="/parts/gpu" navTo={navTo}>GPUs</ILink> and <ILink href="/parts/cpu" navTo={navTo}>CPUs</ILink> if you already know what you need.
+        </Para>
       </div>
       <VariantCTA go={go}/>
     </div>
@@ -2633,9 +2642,24 @@ function LandingHero({badge,title,sub}){
   </div>;
 }
 // Crawlable internal link: real <a href> (Googlebot follows it) that also does
-// SPA navigation via go() when a page name is supplied, avoiding a full reload.
-function ILink({href,go,page,children}){
-  return <a href={href} onClick={e=>{if(go&&page){e.preventDefault();go(page);}}} style={{color:"var(--accent)",textDecoration:"underline",cursor:"pointer",fontWeight:600}}>{children}</a>;
+// SPA navigation, avoiding a full reload. Two modes:
+//   - `go` + `page` → top-level page name routed via setPage (legacy form).
+//   - `navTo` (no page) → path-aware routing through App.navTo, which handles
+//     /parts/{cat}, /parts/{cat}/browse, /parts/{cat}/{slug}-{id}, /tools/{x},
+//     and falls back to setPage for plain top-level paths.
+// Modifier keys (cmd/ctrl/shift/alt) and non-primary mouse buttons fall through
+// to the browser default so cmd-click and middle-click still open in a new tab.
+// Without `go`/`navTo` the link degrades to a raw <a href> — full reload but
+// still crawlable; never silently breaks.
+function ILink({href,go,page,navTo,children,style}){
+  const handle = e => {
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (e.button != null && e.button !== 0) return;
+    if (go && page) { e.preventDefault(); go(page); return; }
+    if (navTo && href) { e.preventDefault(); navTo(href); return; }
+    // No nav helper available → let the browser navigate (full reload).
+  };
+  return <a href={href} onClick={handle} style={{color:"var(--accent)",textDecoration:"underline",cursor:"pointer",fontWeight:600,...(style||{})}}>{children}</a>;
 }
 function FaqSection({items}){
   return <div style={{maxWidth:1180,margin:"0 auto",padding:"0 32px 8px"}}>
@@ -2854,7 +2878,7 @@ const CAT_INTRO={
   CPUCooler:{lead:"A CPU cooler keeps your processor fast and quiet under load. The right cooler clears your case, handles your CPU's heat output, and matches your noise tolerance.",specs:["Cooling capacity (TDP rating) vs your CPU's heat output","Type — capable air cooler vs AIO liquid for the hottest chips","Clearance — air-cooler height vs case limit; radiator size for AIOs","Socket compatibility and noise level (dBA)"],mistake:"Pairing a hot, high-core CPU with a budget cooler. Thermal throttling silently caps performance — match cooling to the chip.",shopNote:"The most common 'why is my PC slow now?' ticket I open is a thermal-throttling CPU on a stock or undersized cooler. Cooling first, then push the chip."},
   Monitor:{lead:"The monitor is what you actually look at, and it defines how good your hardware feels. The right panel matches your GPU's output to a resolution and refresh rate you'll genuinely use.",specs:["Resolution — 1080p, 1440p, or 4K; balance against your GPU's strength","Refresh rate (Hz) — 144Hz+ transforms fast-paced gaming","Panel type — IPS for colour, VA for contrast, OLED for the best of both","Adaptive sync (G-Sync/FreeSync) and response time for smooth motion"],mistake:"Buying a 4K 144Hz monitor your GPU can't drive. Match the panel to the card so you actually hit those frames.",shopNote:"We see brand-new RTX cards plugged into 1080p 60Hz panels constantly. Match the monitor to the GPU so the spend shows on screen."},
 };
-function CategoryIndexPage({catKey,go}){
+function CategoryIndexPage({catKey,go,navTo}){
   const cfg=CAT[catKey]||{};
   const year=new Date().getFullYear();
   const slug=CAT_URL_SLUG[catKey];
@@ -2932,6 +2956,22 @@ function CategoryIndexPage({catKey,go}){
           {top5.map(p=>{const u=productUrl(p);return <a key={p.id} href={u||"#"} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",background:"var(--bg3)",border:"1px solid var(--bdr)",borderRadius:16,padding:"6px 14px",textDecoration:"none"}}>{cleanProductName(p)}</a>;})}
         </div>
       </div>}
+      {/* Related resources row — links each category index to its matching
+          guide page + tool (e.g. GPU → /will-it-fit + /tools/bottleneck-calculator)
+          so Googlebot sees the editorial graph as connected. Both go through
+          ILink: the guide uses go(page) (top-level page name); the tool uses
+          navTo(path) so /tools/* deep-links stay client-side. */}
+      {(CAT_GUIDE[catKey] || CAT_TOOL[catKey]) && (
+        <div style={{display:"flex",flexWrap:"wrap",gap:12,marginBottom:14,alignItems:"center"}}>
+          <span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",fontWeight:700,letterSpacing:1.5}}>USEFUL FOR {NOUN.toUpperCase()}</span>
+          {CAT_GUIDE[catKey] && (
+            <ILink href={CAT_GUIDE[catKey][1]} go={go} page={CAT_GUIDE[catKey][0]}>{CAT_GUIDE[catKey][2]} →</ILink>
+          )}
+          {CAT_TOOL[catKey] && (
+            <ILink href={CAT_TOOL[catKey][0]} navTo={navTo}>{CAT_TOOL[catKey][1]} →</ILink>
+          )}
+        </div>
+      )}
       <div style={{display:"flex",flexWrap:"wrap",gap:8,marginBottom:8}}>
         <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",alignSelf:"center"}}>Related:</span>
         {INDEX_CATS.filter(c=>c!==catKey).map(c=><a key={c} href={`/parts/${CAT_URL_SLUG[c]}`} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",textDecoration:"underline"}}>{{CPU:"CPUs",GPU:"GPUs",Motherboard:"Motherboards",RAM:"RAM",Storage:"Storage",PSU:"PSUs",Case:"Cases",CPUCooler:"Coolers",Monitor:"Monitors"}[c]}</a>)}
@@ -3763,6 +3803,21 @@ function useIsMobile(){
 }
 // Per-category "most relevant tool" for product-page cross-linking (Phase 6).
 const CAT_TOOL={CPU:["/tools/bottleneck-calculator","Bottleneck Calculator"],GPU:["/tools/fps-estimator","FPS Estimator"],Motherboard:["/tools/build-wizard","Build Wizard"],RAM:["/tools/bottleneck-calculator","Bottleneck Calculator"],Storage:["/tools/build-wizard","Build Wizard"],PSU:["/tools/power-calculator","PSU Wattage Calculator"],Case:["/will-it-fit","Will It Fit? (GPU clearance)"],CPUCooler:["/tools/power-calculator","PSU Wattage Calculator"],Monitor:["/tools/fps-estimator","FPS Estimator"]};
+// Per-category "most relevant guide page" — paired with CAT_TOOL on category
+// index pages so each one emits at least one outbound link to a long-form
+// guide. Keeps every editorial index from being a leaf with only product
+// chips. Page keys must exist in App.jsx's setPage routing (line 6073).
+const CAT_GUIDE={
+  CPU:["what-can-i-upgrade","/what-can-i-upgrade","What Can I Upgrade?"],
+  GPU:["will-it-fit","/will-it-fit","Will It Fit? (GPU clearance)"],
+  Motherboard:["pc-hardware-scanner","/pc-hardware-scanner","PC Hardware Scanner"],
+  RAM:["what-can-i-upgrade","/what-can-i-upgrade","What Can I Upgrade?"],
+  Storage:["what-can-i-upgrade","/what-can-i-upgrade","What Can I Upgrade?"],
+  PSU:["will-it-fit","/will-it-fit","Will It Fit? (GPU clearance)"],
+  Case:["will-it-fit","/will-it-fit","Will It Fit? (GPU clearance)"],
+  CPUCooler:["will-it-fit","/will-it-fit","Will It Fit? (GPU clearance)"],
+  Monitor:["best-pc-builder-tools","/best-pc-builder-tools","Best PC Builder Tools"],
+};
 // Product-page internal links: breadcrumb + 3 similar products + category index + a tool.
 function ProductLinks({sp}){
   const catSlug=CAT_URL_SLUG[sp.c];
@@ -5983,6 +6038,59 @@ export default function App(){
     }
   };
 
+  // ── Path-aware SPA navigation ──
+  // setPage above only routes top-level page names ("home", "search", "tools",
+  // "will-it-fit"…); it cannot push /parts/{cat}/{slug}-{id}, /parts/{cat},
+  // /parts/{cat}/browse, or /tools/{x} subroutes. navTo handles those by
+  // parsing the path, setting state directly, pushing the exact URL, and
+  // (for tools) dispatching a popstate so ToolsPage's own pathname listener
+  // picks up the new tool. Used by ILink + ProductPage so internal links
+  // stay client-side instead of triggering a full reload.
+  const navTo = (path) => {
+    if (!path || typeof path !== "string") return;
+    const pm = path.match(/^\/parts\/[^/]+\/.*-(\d+)$/);
+    if (pm) {
+      setProductId(pm[1]); setCatKey(null); setBrowsePage(1); setBc("");
+      setPageRaw("product");
+      window.history.pushState({page:"product", productId:pm[1]}, "", path);
+      window.scrollTo(0, 0);
+      return;
+    }
+    const bm = path.match(/^\/parts\/([^/]+)\/browse(?:\/page-(\d+))?\/?$/);
+    if (bm && SLUG_TO_CATKEY[bm[1]]) {
+      const ck = SLUG_TO_CATKEY[bm[1]];
+      const pn = bm[2] ? Math.max(1, parseInt(bm[2], 10) || 1) : 1;
+      setCatKey(ck); setBrowsePage(pn); setProductId(null); setBc("");
+      setPageRaw("category-browse");
+      window.history.pushState({page:"category-browse", catKey:ck, browsePage:pn}, "", path);
+      window.scrollTo(0, 0);
+      return;
+    }
+    const cm = path.match(/^\/parts\/([^/]+)\/?$/);
+    if (cm && SLUG_TO_CATKEY[cm[1]]) {
+      const ck = SLUG_TO_CATKEY[cm[1]];
+      setCatKey(ck); setProductId(null); setBrowsePage(1); setBc("");
+      setPageRaw("category-index");
+      window.history.pushState({page:"category-index", catKey:ck}, "", path);
+      window.scrollTo(0, 0);
+      return;
+    }
+    const tm = path.match(/^\/tools\/([\w-]+)\/?$/);
+    if (tm) {
+      setProductId(null); setCatKey(null); setBrowsePage(1);
+      setPageRaw("tools");
+      window.history.pushState({page:"tools"}, "", path);
+      // ToolsPage listens for popstate and re-reads pathname → switches tool.
+      window.dispatchEvent(new PopStateEvent("popstate", {state:{page:"tools"}}));
+      window.scrollTo(0, 0);
+      return;
+    }
+    // Top-level page name (e.g. /scanner, /will-it-fit, /search, /).
+    const base = path.replace(/^\//, "").split("?")[0].split("/")[0] || "home";
+    setPage(base);
+    window.scrollTo(0, 0);
+  };
+
   useEffect(() => {
     // Handle browser back/forward buttons
     const onPop = (e) => {
@@ -6070,5 +6178,5 @@ export default function App(){
 
   const handleBrowse=c=>{setBc(c);setPage("search");};
   const handleSearch=(q,cat)=>{setBq(q);setBc(cat||"");setPage("search");};
-  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><PageMeta page={page} category={bc} parts={ACTIVE_SEED_PARTS} product={page==="product"&&productId?ACTIVE_SEED_PARTS.find(x=>String(x.id)===String(productId)):null} /><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} onSearch={handleSearch} th={th} theme={theme} toggleTheme={toggleTheme}/><main style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPageRouter activeCat={bc} initialQuery={bq} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage}/>}{page==="pc-hardware-scanner"&&<PcHardwareScannerPage go={setPage}/>}{page==="what-can-i-upgrade"&&<WhatCanIUpgradePage go={setPage}/>}{page==="will-it-fit"&&<WillItFitPage go={setPage}/>}{page==="category-index"&&catKey&&<CategoryIndexPage catKey={catKey} go={setPage}/>}{page==="category-browse"&&catKey&&<CategoryBrowsePage catKey={catKey} pageNum={browsePage} go={setPage}/>}{page==="product"&&productId&&(()=>{const _sp=ACTIVE_SEED_PARTS.find(x=>String(x.id)===String(productId));return _sp?<SearchPage activeCat={_sp.c} singleProductId={productId} th={th}/>:<ProductPage productId={productId} parts={ACTIVE_SEED_PARTS} go={setPage}/>;})()}</main><Footer go={setPage}/><ScrollToTop /><ScannerPromo go={setPage} page={page}/></div>;
+  return <div data-theme={theme} style={{minHeight:"100vh",background:"var(--bg)",color:"var(--txt)",fontFamily:"var(--ff)",display:"flex",flexDirection:"column",transition:"background .3s, color .3s"}}><style>{css}</style><PageMeta page={page} category={bc} parts={ACTIVE_SEED_PARTS} product={page==="product"&&productId?ACTIVE_SEED_PARTS.find(x=>String(x.id)===String(productId)):null} /><Nav page={page} setPage={p=>{setPage(p);if(p!=="search")setBc("");}} onBrowse={handleBrowse} onSearch={handleSearch} th={th} theme={theme} toggleTheme={toggleTheme}/><main style={{flex:1}}>{page==="home"&&<HomePage go={setPage} browse={handleBrowse} th={th}/>}{page==="search"&&<SearchPageRouter activeCat={bc} initialQuery={bq} th={th}/>}{page==="builder"&&<BuilderPage th={th}/>}{page==="community"&&<CommunityPage th={th}/>}{page==="tools"&&<ToolsPage th={th}/>}{page==="upgrade"&&<UpgradePage/>}{page==="scanner"&&<ScannerPage go={setPage}/>}{page==="about"&&<AboutPage go={setPage}/>}{page==="contact"&&<ContactPage/>}{page==="privacy"&&<PrivacyPage/>}{page==="terms"&&<TermsPage/>}{page==="affiliate"&&<AffiliatePage/>}{page==="compare"&&<ComparePage go={setPage}/>}{page==="vs-pcpartpicker"&&<VsPcPartPickerPage go={setPage} navTo={navTo}/>}{page==="pcpartpicker-alternative"&&<PcpAlternativePage go={setPage} navTo={navTo}/>}{page==="best-pc-builder-tools"&&<BestPcBuilderToolsPage go={setPage} navTo={navTo}/>}{page==="pc-hardware-scanner"&&<PcHardwareScannerPage go={setPage}/>}{page==="what-can-i-upgrade"&&<WhatCanIUpgradePage go={setPage}/>}{page==="will-it-fit"&&<WillItFitPage go={setPage}/>}{page==="category-index"&&catKey&&<CategoryIndexPage catKey={catKey} go={setPage} navTo={navTo}/>}{page==="category-browse"&&catKey&&<CategoryBrowsePage catKey={catKey} pageNum={browsePage} go={setPage}/>}{page==="product"&&productId&&(()=>{const _sp=ACTIVE_SEED_PARTS.find(x=>String(x.id)===String(productId));return _sp?<SearchPage activeCat={_sp.c} singleProductId={productId} th={th}/>:<ProductPage productId={productId} parts={ACTIVE_SEED_PARTS} go={setPage} navTo={navTo}/>;})()}</main><Footer go={setPage}/><ScrollToTop /><ScannerPromo go={setPage} page={page}/></div>;
 }

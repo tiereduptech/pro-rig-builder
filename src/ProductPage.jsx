@@ -168,8 +168,65 @@ const CAT_SLUG = {
   Chair: "chair", Desk: "desk",
 };
 
+// --- Per-category "most relevant tool" — must match CAT_TOOL in App.jsx ----
+// Used for internal cross-linking from product pages → matching tool, so
+// Googlebot has a real outbound link per product (every page gains at least
+// one outbound href instead of being a SEO dead-end).
+const CAT_TOOL = {
+  CPU: ["/tools/bottleneck-calculator", "Bottleneck Calculator"],
+  GPU: ["/tools/fps-estimator", "FPS Estimator"],
+  Motherboard: ["/tools/build-wizard", "Build Wizard"],
+  RAM: ["/tools/bottleneck-calculator", "Bottleneck Calculator"],
+  Storage: ["/tools/build-wizard", "Build Wizard"],
+  PSU: ["/tools/power-calculator", "PSU Wattage Calculator"],
+  Case: ["/will-it-fit", "Will It Fit? (GPU clearance)"],
+  CPUCooler: ["/tools/power-calculator", "PSU Wattage Calculator"],
+  Monitor: ["/tools/fps-estimator", "FPS Estimator"],
+};
+
+// --- productSlug must match productSlug() in App.jsx and scripts/url-slugs.cjs.
+// Used to build sibling /parts/{cat}/{slug}-{id} URLs for related products.
+function productSlug(p) {
+  const norm = String((p && p.n) || "")
+    .toLowerCase().replace(/\s+/g, " ").replace(/[^a-z0-9 ]/g, "").trim();
+  return norm.replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "")
+    .replace(/-+/g, "-").replace(/^-|-$/g, "").slice(0, 80).replace(/-$/, "");
+}
+function productUrl(p) {
+  const cs = CAT_SLUG[p && p.c];
+  if (!cs || !p.id || !p.n) return null;
+  return `/parts/${cs}/${productSlug(p)}-${p.id}`;
+}
+
+// --- Modifier-aware SPA-route handlers ------------------------------------
+// Pattern: real <a href> the crawler can follow; on a plain left-click we
+// preventDefault + call go()/navTo() so the SPA handles it without a full
+// reload. Cmd/ctrl/shift/alt and non-primary buttons fall through to the
+// browser default so new tab / new window still work.
+//
+//   spaClick(go, "home")          → top-level page name via setPage
+//   pathClick(navTo, "/parts/gpu") → arbitrary path via App.navTo
+function spaClick(go, page) {
+  return (e) => {
+    if (!go || !page) return;
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (e.button != null && e.button !== 0) return;
+    e.preventDefault();
+    go(page);
+  };
+}
+function pathClick(navTo, path) {
+  return (e) => {
+    if (!navTo || !path) return;
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (e.button != null && e.button !== 0) return;
+    e.preventDefault();
+    navTo(path);
+  };
+}
+
 // --- Main component ---------------------------------------------------------
-export default function ProductPage({ productId, parts, go }) {
+export default function ProductPage({ productId, parts, go, navTo }) {
   const p = parts && parts.find(x => String(x.id) === String(productId));
 
   // --- Not found state ------------------------------------------------------
@@ -200,9 +257,28 @@ export default function ProductPage({ productId, parts, go }) {
   const catSlug = CAT_SLUG[p.c] || p.c.toLowerCase();
   const categoryLabel = p.c.replace(/([A-Z])/g, " $1").trim();
 
+  // Related products in the same category, closest by price. Real hrefs only —
+  // every product page must emit outbound links Google can follow, otherwise
+  // the ~5k product pages look like crawl dead-ends. Match the pattern used by
+  // App.jsx ProductLinks (raw <a href> for sibling product paths).
+  const related = (parts || [])
+    .filter(x => x && x.c === p.c && x.id !== p.id && x.n && !x.bundle && !x.needsReview)
+    .filter(x => CAT_SLUG[x.c])
+    .sort((a, b) => Math.abs((priceOf(a) || 0) - (price || 0)) - Math.abs((priceOf(b) || 0) - (price || 0)))
+    .slice(0, 4);
+  const tool = CAT_TOOL[p.c]; // [path, label] or undefined for niche cats
+
+  // Linkable breadcrumb styles (kept identical to the previous onClick-only
+  // version visually — only the underlying anchor markup is changing).
+  const crumbA = { color: "var(--dim)", textDecoration: "none", cursor: "pointer" };
+
   return (
     <div style={{ maxWidth: 1100, margin: "0 auto", padding: "24px 20px", fontFamily: "var(--ff)" }}>
-      {/* Breadcrumb (visible, matches BreadcrumbList JSON-LD from PageMeta) */}
+      {/* Breadcrumb (visible, matches BreadcrumbList JSON-LD from PageMeta).
+          Real <a href> on every crumb so Googlebot follows the trail; onClick
+          intercepts plain left-clicks for SPA nav (Home/Parts via go(page),
+          category via navTo(path)) while cmd/ctrl/shift/middle-click fall
+          through to the browser for new tab / new window. */}
       <nav
         aria-label="Breadcrumb"
         style={{
@@ -210,11 +286,11 @@ export default function ProductPage({ productId, parts, go }) {
           color: "var(--dim)", marginBottom: 16, flexWrap: "wrap",
         }}
       >
-        <a onClick={() => go && go("home")} style={{ color: "var(--dim)", cursor: "pointer" }}>Home</a>
+        <a href="/" onClick={spaClick(go, "home")} style={crumbA}>Home</a>
         <ChevronRight size={12} />
-        <a onClick={() => go && go("search")} style={{ color: "var(--dim)", cursor: "pointer" }}>Parts</a>
+        <a href="/search" onClick={spaClick(go, "search")} style={crumbA}>Parts</a>
         <ChevronRight size={12} />
-        <span>{categoryLabel}</span>
+        <a href={`/parts/${catSlug}`} onClick={pathClick(navTo, `/parts/${catSlug}`)} style={crumbA}>{categoryLabel}</a>
         <ChevronRight size={12} />
         <span style={{ color: "var(--txt)", fontWeight: 600 }}>{cleanName(p)}</span>
       </nav>
@@ -307,6 +383,62 @@ export default function ProductPage({ productId, parts, go }) {
           </p>
         )}
       </section>
+
+      {/* Related products + tool/category cross-links. Every link is a real
+          <a href> Googlebot follows, with onClick pathClick(navTo, …) so plain
+          left-clicks stay client-side (no full reload) while cmd/ctrl/shift/
+          middle-click open new tab/window via the browser default. */}
+      {(related.length > 0 || tool) && (
+        <section style={{ marginTop: 40 }}>
+          <h2 style={{ fontSize: 20, fontWeight: 700, color: "var(--txt)", marginBottom: 12 }}>
+            Compare related {categoryLabel.toLowerCase()}s
+          </h2>
+          {related.length > 0 && (
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 12 }}>
+              {related.map(rp => {
+                const u = productUrl(rp);
+                if (!u) return null;
+                const rPrice = priceOf(rp);
+                return (
+                  <a
+                    key={rp.id}
+                    href={u}
+                    onClick={pathClick(navTo, u)}
+                    style={{
+                      fontFamily: "var(--ff)", fontSize: 13, color: "var(--txt)",
+                      background: "var(--bg3)", border: "1px solid var(--border)",
+                      borderRadius: 16, padding: "6px 14px", textDecoration: "none",
+                    }}
+                  >
+                    {cleanName(rp)}
+                    {rPrice != null && (
+                      <span style={{ color: "var(--mint)", marginLeft: 6 }}>${fmtPrice(rPrice)}</span>
+                    )}
+                  </a>
+                );
+              })}
+            </div>
+          )}
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 16, fontSize: 14 }}>
+            <a
+              href={`/parts/${catSlug}`}
+              onClick={pathClick(navTo, `/parts/${catSlug}`)}
+              style={{ color: "var(--accent)", textDecoration: "underline", fontWeight: 600 }}
+            >
+              All {categoryLabel.toLowerCase()}s →
+            </a>
+            {tool && (
+              <a
+                href={tool[0]}
+                onClick={pathClick(navTo, tool[0])}
+                style={{ color: "var(--accent)", textDecoration: "underline", fontWeight: 600 }}
+              >
+                {tool[1]} →
+              </a>
+            )}
+          </div>
+        </section>
+      )}
     </div>
   );
 }
