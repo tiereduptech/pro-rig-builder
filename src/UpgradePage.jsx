@@ -14,7 +14,12 @@
 // =============================================================================
 
 import React, { useState, useEffect, useMemo } from "react";
-import { PARTS as RAW_PARTS } from "./data/parts.js";
+// Lazy parts: PARTS starts empty and grows as category chunks arrive.
+// UpgradePage always needs the full catalog, so the component calls
+// loadAllParts() in a useEffect and re-renders via subscribeToParts.
+// The analysis useMemo includes partsRev in its deps so it re-runs when
+// new categories land.
+import { PARTS as RAW_PARTS, loadAllParts, subscribe as subscribeToParts } from "./data/parts-frontend.js";
 import GAMING_TIERS from "../gaming-cpu-tiers.json";
 
 const isWorkstationGPU = (p) => {
@@ -25,7 +30,15 @@ const isWorkstationGPU = (p) => {
   return false;
 };
 
-const PARTS = RAW_PARTS.filter(p => !p.needsReview && !isWorkstationGPU(p));
+// PARTS is a derived view of RAW_PARTS. Re-derived whenever a new category
+// chunk lands so all the helper functions below (candidateGPUs, etc.) see
+// the fresh data on the next render.
+let PARTS = RAW_PARTS.filter(p => !p.needsReview && !isWorkstationGPU(p));
+let partsRev = 0;
+subscribeToParts(() => {
+  PARTS = RAW_PARTS.filter(p => !p.needsReview && !isWorkstationGPU(p));
+  partsRev++;
+});
 
 // ─── CONFIG ─────────────────────────────────────────────────────────
 const MIN_IMPROVEMENT = 0.10;
@@ -912,6 +925,16 @@ export default function UpgradePage() {
 
   useEffect(() => { setSpecs(parseSpecs()); setLoading(false); }, []);
 
+  // Ensure the entire catalog is in memory before we run the analysis.
+  // loadAllParts is idempotent so this is safe to call on every mount.
+  // _bumpTick forces a re-render whenever a category chunk lands; the
+  // analysis useMemo below has partsRev in its deps so it re-derives.
+  const [, _bumpTick] = useState(0);
+  useEffect(() => {
+    loadAllParts();
+    return subscribeToParts(() => _bumpTick(partsRev));
+  }, []);
+
   const analysis = useMemo(() => {
     if (!specs) return null;
 
@@ -976,7 +999,7 @@ export default function UpgradePage() {
       recommendedBuild, refreshPaths,
       storageWant, storageType,
     };
-  }, [specs]);
+  }, [specs, partsRev]);
 
   if (loading) return <div style={{padding:40, textAlign:"center", color:"var(--dim)"}}>Loading your specs…</div>;
   if (!specs)  return <MissingSpecsView />;

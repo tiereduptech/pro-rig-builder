@@ -3,7 +3,13 @@ import { Box, Cpu, Snowflake, CircuitBoard, MemoryStick, Square, HardDrive, Plug
 import { Helmet } from "react-helmet-async";;
 import PageMeta from "./PageMeta.jsx";
 import ProductPage from "./ProductPage.jsx";
-import { PARTS as RAW_SEED_PARTS } from "./data/parts.js";
+// PARTS comes from parts-frontend.js, which dynamic-imports per-category
+// modules so Vite can ship them as separate chunks. The array starts empty
+// and is mutated in place as categories load — main.jsx awaits an initial
+// load before mounting App so by first paint it's already populated for the
+// current route. Cross-category SPA navigation triggers more loads via the
+// useEffect at the top of App().
+import { PARTS as RAW_SEED_PARTS, loadCategoryParts, loadPartsForPath, subscribe as subscribeToParts } from "./data/parts-frontend.js";
 
 // DISPLAY-TIME NAME CLEANER (GPU only for now)
 // Strips marketing fluff, parentheticals, trademark symbols.
@@ -323,9 +329,19 @@ function cleanProductName(p){
   return parts.join(' ').replace(/\s+/g,' ').trim() || p.n;
 }
 
-// Hide quarantined products from browse/builder/search
-const SEED_PARTS = RAW_SEED_PARTS.filter(p => !p.needsReview);
-const ACTIVE_SEED_PARTS = SEED_PARTS;
+// Hide quarantined products from browse/builder/search.
+//
+// These four arrays are derived from the lazy-loading RAW_SEED_PARTS and need
+// to update whenever a new category chunk arrives. We use `let` + a recompute
+// function called by the parts-frontend subscribe below; functions defined
+// later (fp, uv, isAvailable, etc.) capture the bindings via closure so they
+// always read the current arrays.
+//
+// partsRev is bumped on each successful load so that useMemo deps inside
+// components can include it and re-derive when products appear mid-route.
+let SEED_PARTS = RAW_SEED_PARTS.filter(p => !p.needsReview);
+let ACTIVE_SEED_PARTS = SEED_PARTS;
+let partsRev = 0;
 import { GAMES, GPU_SCORES, CPU_SCORES, RES_SCALE, QUALITY_SCALE, estimateFPS, estimateAllGames, matchGPU, matchCPU } from "./data/fps-engine.js";
 import ReviewStars from "./components/ReviewStars";
 import { CategoryBrowse } from './CategoryBrowse.jsx';
@@ -458,7 +474,7 @@ const isAvailable = p => {
   if (!retailerKeys.length) return true;
   return retailerKeys.some(k => p.deals[k].inStock !== false);
 };
-const P = SEED_PARTS
+let P = SEED_PARTS
   .map(p => p.c === "Cooler" ? {...p, c: "CPUCooler"} : p)
   .filter(isAvailable);
 
@@ -628,11 +644,29 @@ const retailers = p => {
 };
 
 // ── Global list of retailers tracked anywhere in the dataset — for N/A display on missing retailers ──
-const ALL_RETAILERS = [...new Set(SEED_PARTS.flatMap(p =>
+let ALL_RETAILERS = [...new Set(SEED_PARTS.flatMap(p =>
   p.deals && typeof p.deals === "object"
     ? Object.keys(p.deals).filter(k => p.deals[k] && typeof p.deals[k] === "object" && (p.deals[k].price || p.deals[k].saleprice))
     : []
 ))].sort();
+
+// Re-derive the four arrays whenever a new category chunk lands. Called from
+// the parts-frontend subscriber registered just below. Bumping partsRev tells
+// any useMemo whose deps include it to re-run with the fresh data.
+function _refreshDerivedFromRaw() {
+  SEED_PARTS = RAW_SEED_PARTS.filter(p => !p.needsReview);
+  ACTIVE_SEED_PARTS = SEED_PARTS;
+  P = SEED_PARTS
+    .map(p => p.c === "Cooler" ? {...p, c: "CPUCooler"} : p)
+    .filter(isAvailable);
+  ALL_RETAILERS = [...new Set(SEED_PARTS.flatMap(p =>
+    p.deals && typeof p.deals === "object"
+      ? Object.keys(p.deals).filter(k => p.deals[k] && typeof p.deals[k] === "object" && (p.deals[k].price || p.deals[k].saleprice))
+      : []
+  ))].sort();
+  partsRev++;
+}
+subscribeToParts(_refreshDerivedFromRaw);
 
 // ── Addon products (from seed peripherals + extra items for builder) ──
 // Old addon system removed — all categories now live in SEED_PARTS with proper category tags
@@ -2833,7 +2867,7 @@ function CategoryIndexPage({catKey,go}){
     for(const p of inCat){const k=cleanProductName(p).toLowerCase();if(seen.has(k))continue;seen.add(k);uniq.push(p);}
     uniq.sort((a,b)=>{const d=(b.bench||0)-(a.bench||0);return d!==0?d:(($(a)||1e9)-($(b)||1e9));});
     return uniq.slice(0,20);
-  },[catKey]);
+  },[catKey,partsRev]);
   const sorted=useMemo(()=>{
     const r=[...ranked];
     if(sort==="price")r.sort((a,b)=>($(a)||1e9)-($(b)||1e9));
@@ -2927,7 +2961,7 @@ function CategoryBrowsePage({catKey, pageNum, go}){
     }
     uniq.sort((a,b) => { const d = (b.bench||0) - (a.bench||0); return d !== 0 ? d : (($(a)||1e9) - ($(b)||1e9)); });
     return uniq;
-  }, [catKey]);
+  }, [catKey, partsRev]);
   const totalPages = Math.max(1, Math.ceil(all.length / BROWSE_PAGE_SIZE));
   const safePage = Math.min(Math.max(1, pageNum||1), totalPages);
   const startIdx = (safePage - 1) * BROWSE_PAGE_SIZE;
@@ -3437,7 +3471,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
       return sd==="asc"?va-vb:vb-va;
     });
     return r;
-  },[cat,q,brands,marketplaces,maxPr,minPr,minR,sort]);
+  },[cat,q,brands,marketplaces,maxPr,minPr,minR,sort,partsRev]);
 
   const ac=[brands.length,marketplaces.length,minR,maxPr<prMx,minPr>0].filter(Boolean).length;
   const clearFilters=()=>{setBrands([]);setMarketplaces([]);setMaxPr(5000);setMinPr(0);setMinR(0);};
@@ -3740,7 +3774,7 @@ function ProductLinks({sp}){
     for(const p of same){const k=cleanProductName(p).toLowerCase();if(seen.has(k))continue;seen.add(k);uniq.push(p);}
     uniq.sort((a,b)=>Math.abs(($(a)||0)-(price||0))-Math.abs(($(b)||0)-(price||0)));
     return uniq.slice(0,3);
-  },[sp.id]);
+  },[sp.id,partsRev]);
   const tool=CAT_TOOL[sp.c]||["/tools/compare-parts","Compare Parts"];
   return <div style={{marginBottom:16}}>
     <nav aria-label="Breadcrumb" style={{display:"flex",alignItems:"center",gap:6,fontSize:13,color:"var(--dim)",flexWrap:"wrap",marginBottom:12}}>
@@ -3774,7 +3808,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
   const sel=c=>{setCat(c);setBrands([]);setMarketplaces([]);setConditions([]);setSf({});setQ("");setMaxPr(5000);setMinPr(0);setMinR(0);setCpO(false);};
   const catP=cat?P.filter(p=>p.c===cat):P;const allBr=[...new Set(catP.map(p=>resolveBrand(p)).filter(Boolean))].sort();const allMarkets=[...new Set(catP.flatMap(p=>p.deals&&typeof p.deals==="object"?Object.keys(p.deals).filter(k=>p.deals[k]&&typeof p.deals[k]==="object"&&p.deals[k].price).map(marketplaceGroupOf):[]))].sort();const cols=cat?(CAT[cat]?.cols||[]):[];const prMx=Math.max(...catP.map(p=>$(p)),100);
   const togSf=(col,val)=>setSf(pv=>{const c=pv[col]||[];return{...pv,[col]:c.includes(val)?c.filter(v=>v!==val):[...c,val]};});
-  const list=useMemo(()=>{if(singleProductId){const sp=P.find(p=>String(p.id)===String(singleProductId));return sp?[sp]:[];}let r=catP;if(q)r=r.filter(p=>smartMatch(p,q));if(brands.length)r=r.filter(p=>brands.includes(resolveBrand(p)));if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>expandMarketplaceGroup(m).some(rk=>p.deals[rk]&&typeof p.deals[rk]==="object"&&p.deals[rk].price)));if(conditions.length)r=r.filter(p=>{const pc=productConditions(p);return conditions.some(c=>pc.includes(c));});r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);if(minR)r=r.filter(p=>p.r>=minR);if(cpO)r=r.filter(p=>p.cp);Object.entries(sf).forEach(([key,vals])=>{if(key.endsWith("_max")){const field=key.replace("_max","");r=r.filter(p=>p[field]==null||p[field]<=vals);}else if(Array.isArray(vals)&&vals.length){r=r.filter(p=>{const pv=String(p[key]!=null?!!p[key]?p[key]:"false":"false");const cfg=cat&&CAT[cat]?.filters?.[key];const ev=cfg?.extract?cfg.extract(p):null;const evMatch=Array.isArray(ev)?ev.some(x=>vals.includes(x)):(ev!=null&&vals.includes(ev));return vals.includes(pv)||vals.includes(String(p[key]))||evMatch;});}});const [sk,sd]=sort.split("-");r=[...r].sort((a,b)=>{const va=sk==="price"?$(a):sk==="rating"?a.r:sk==="value"?(a.value!=null?a.value:(a.bench||0)/Math.max($(a)/100,1)):(a.bench||0);const vb=sk==="price"?$(b):sk==="rating"?b.r:sk==="value"?(b.value!=null?b.value:(b.bench||0)/Math.max($(b)/100,1)):(b.bench||0);return sd==="asc"?va-vb:vb-va;});/* DEDUPE: one row per model; merge retailer deals across dupes; bundles kept */const mergeDeals=(da,db)=>{if(!da)return db;if(!db)return da;const out={...da};for(const rk of Object.keys(db)){const ex=out[rk],inc=db[rk];if(!ex||typeof ex!=="object"){out[rk]=inc;continue;}if(!inc||typeof inc!=="object")continue;if((inc.inStock?1:0)!==(ex.inStock?1:0)){out[rk]=inc.inStock?inc:ex;}else if(typeof inc.price==="number"&&(typeof ex.price!=="number"||inc.price<ex.price)){out[rk]=inc;}}return out;};const seenModel=new Map();const deduped=[];for(const p of r){if(p.bundle){deduped.push(p);continue;}const key=p.c+"|"+cleanProductName(p).toLowerCase();const prev=seenModel.get(key);if(prev===undefined){seenModel.set(key,deduped.length);deduped.push({...p});}else{const keep=deduped[prev];const base=$(p)<$(keep)?{...p}:{...keep};base.deals=mergeDeals(keep.deals,p.deals);deduped[prev]=base;}}r=deduped;return r;},[cat,q,brands,marketplaces,conditions,maxPr,minPr,minR,cpO,sf,sort,singleProductId]);
+  const list=useMemo(()=>{if(singleProductId){const sp=P.find(p=>String(p.id)===String(singleProductId));return sp?[sp]:[];}let r=catP;if(q)r=r.filter(p=>smartMatch(p,q));if(brands.length)r=r.filter(p=>brands.includes(resolveBrand(p)));if(marketplaces.length)r=r.filter(p=>p.deals&&typeof p.deals==="object"&&marketplaces.some(m=>expandMarketplaceGroup(m).some(rk=>p.deals[rk]&&typeof p.deals[rk]==="object"&&p.deals[rk].price)));if(conditions.length)r=r.filter(p=>{const pc=productConditions(p);return conditions.some(c=>pc.includes(c));});r=r.filter(p=>$(p)<=maxPr&&$(p)>=minPr);if(minR)r=r.filter(p=>p.r>=minR);if(cpO)r=r.filter(p=>p.cp);Object.entries(sf).forEach(([key,vals])=>{if(key.endsWith("_max")){const field=key.replace("_max","");r=r.filter(p=>p[field]==null||p[field]<=vals);}else if(Array.isArray(vals)&&vals.length){r=r.filter(p=>{const pv=String(p[key]!=null?!!p[key]?p[key]:"false":"false");const cfg=cat&&CAT[cat]?.filters?.[key];const ev=cfg?.extract?cfg.extract(p):null;const evMatch=Array.isArray(ev)?ev.some(x=>vals.includes(x)):(ev!=null&&vals.includes(ev));return vals.includes(pv)||vals.includes(String(p[key]))||evMatch;});}});const [sk,sd]=sort.split("-");r=[...r].sort((a,b)=>{const va=sk==="price"?$(a):sk==="rating"?a.r:sk==="value"?(a.value!=null?a.value:(a.bench||0)/Math.max($(a)/100,1)):(a.bench||0);const vb=sk==="price"?$(b):sk==="rating"?b.r:sk==="value"?(b.value!=null?b.value:(b.bench||0)/Math.max($(b)/100,1)):(b.bench||0);return sd==="asc"?va-vb:vb-va;});/* DEDUPE: one row per model; merge retailer deals across dupes; bundles kept */const mergeDeals=(da,db)=>{if(!da)return db;if(!db)return da;const out={...da};for(const rk of Object.keys(db)){const ex=out[rk],inc=db[rk];if(!ex||typeof ex!=="object"){out[rk]=inc;continue;}if(!inc||typeof inc!=="object")continue;if((inc.inStock?1:0)!==(ex.inStock?1:0)){out[rk]=inc.inStock?inc:ex;}else if(typeof inc.price==="number"&&(typeof ex.price!=="number"||inc.price<ex.price)){out[rk]=inc;}}return out;};const seenModel=new Map();const deduped=[];for(const p of r){if(p.bundle){deduped.push(p);continue;}const key=p.c+"|"+cleanProductName(p).toLowerCase();const prev=seenModel.get(key);if(prev===undefined){seenModel.set(key,deduped.length);deduped.push({...p});}else{const keep=deduped[prev];const base=$(p)<$(keep)?{...p}:{...keep};base.deals=mergeDeals(keep.deals,p.deals);deduped[prev]=base;}}r=deduped;return r;},[cat,q,brands,marketplaces,conditions,maxPr,minPr,minR,cpO,sf,sort,singleProductId,partsRev]);
   const ac=[brands.length,marketplaces.length,conditions.length,cpO,minR,maxPr<prMx,minPr>0,...Object.values(sf).map(v=>v.length)].filter(Boolean).length;
 
   if(!cat && !singleProductId) return <CategoryBrowse sel={sel} th={th} CATS={CATS} CAT={CAT} P={P} CatThumb={CatThumb}/>;
@@ -5907,6 +5941,33 @@ export default function App(){
   const th = useThumbs();
   const [theme,setTheme]=useState(()=>{try{return localStorage.getItem("rf-theme")||"light";}catch{return"light";}});
   const toggleTheme=()=>{const next=theme==="dark"?"light":"dark";setTheme(next);try{localStorage.setItem("rf-theme",next);}catch{};};
+
+  // ── Lazy parts data: subscribe for re-renders, fetch needed cats on nav ──
+  // partsRev is a module-level counter incremented inside the parts-frontend
+  // subscriber that re-derives SEED_PARTS / P / ALL_RETAILERS. We mirror it
+  // here so React knows to schedule a re-render whenever new data arrives.
+  // useMemos that touch P include partsRev in their deps so they re-derive.
+  const [, _bumpPartsTick] = useState(0);
+  useEffect(() => {
+    return subscribeToParts(() => _bumpPartsTick(partsRev));
+  }, []);
+  // When the visible category changes (or we land on a page that needs the
+  // whole catalog), make sure its chunk has been requested. loadCategoryParts
+  // is idempotent — same call returns the cached promise.
+  useEffect(() => {
+    if ((page === "category-index" || page === "category-browse") && catKey) {
+      loadCategoryParts(catKey);
+    } else if (page === "product" && productId) {
+      // Product pages can come from any category; load by inspecting the
+      // pathname rather than waiting on a parts lookup that may not exist yet.
+      loadPartsForPath(typeof window !== "undefined" ? window.location.pathname : "/");
+    } else if (page === "builder" || page === "upgrade" || page === "search" ||
+               page === "community" || page === "compare" || page === "scanner" ||
+               page === "home") {
+      // Pages that surface the cross-category catalog need everything.
+      loadPartsForPath("/");
+    }
+  }, [page, catKey, productId]);
 
   // ── Browser history support ──
   const setPage = (p, replaceCurrent) => {

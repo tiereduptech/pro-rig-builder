@@ -9,9 +9,11 @@
 //    chunks at once on HTTP/1.1 and unlimited on HTTP/2, so splitting helps
 //    even when total bytes stay the same.
 //
-//  - parts-data chunk isolates the 3,950-product catalog. When you update a
-//    product price/spec, only this chunk's hash changes — the rest of the app
-//    stays cached in users' browsers.
+//  - Parts data is split BY CATEGORY: each src/data/parts/<cat>.js becomes
+//    its own chunk via dynamic imports in src/data/parts-frontend.js. The
+//    barrel src/data/parts.js (used only server-side by prerender) is never
+//    pulled into the browser graph. Category landing pages only download the
+//    one chunk they need; Builder/Upgrade fan-out to all of them.
 //
 //  - upgrade-page chunk isolates the scanner-facing UpgradePage so first-time
 //    visitors to the homepage don't pay the cost of code only used after a
@@ -65,8 +67,16 @@ export default defineConfig({
           }
 
           // App code splits.
-          if (id.includes('/src/data/parts')) return 'parts-data';
-          if (id.includes('/src/data/asin')) return 'parts-data'; // group with parts
+          // Per-category parts data: each /src/data/parts/<cat>.js gets its
+          // own named chunk. They're dynamic-imported from parts-frontend.js,
+          // so Rollup would split them anyway, but naming them parts-<cat>
+          // makes them easy to spot in dist/assets/ and gives a stable
+          // filename prefix for cache-control rules.
+          {
+            const m = id.match(/[\\/]src[\\/]data[\\/]parts[\\/]([a-z0-9-]+)\.js$/);
+            if (m) return `parts-${m[1]}`;
+          }
+          if (id.includes('/src/data/asin')) return 'parts-data-asin';
           if (id.includes('/src/UpgradePage')) return 'upgrade-page';
           if (id.includes('/src/PageMeta')) return 'page-meta';
 
