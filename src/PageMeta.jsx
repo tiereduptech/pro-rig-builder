@@ -93,13 +93,13 @@ function buildGuideArticleLd({ page, url, title, desc }) {
 const PAGES = {
   home: {
     title: `${BRAND} — Free PC Part Picker & Hardware Scanner`,
-    desc: "Build your PC with 5,290+ verified parts. Compare prices and specs side-by-side. Free PCPartPicker alternative with a hardware scanner.",
+    desc: "Build your PC with 5,500+ verified parts. Compare prices and specs side-by-side. Free PCPartPicker alternative with a hardware scanner.",
     path: "/",
     crumbLabel: null,
   },
   search: {
     title: `Search PC Parts — Specs, Prices & Deals | ${BRAND}`,
-    desc: "Search and compare 5,290+ PC parts with verified specs, live prices, and deals from Amazon, Best Buy, and Newegg. Filter by every spec.",
+    desc: "Search and compare 5,500+ PC parts with verified specs, live prices, and deals from Amazon, Best Buy, and Newegg. Filter by every spec.",
     path: "/search",
     crumbLabel: "Search",
   },
