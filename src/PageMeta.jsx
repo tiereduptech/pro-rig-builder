@@ -663,6 +663,7 @@ export default function PageMeta({ page, category, product, parts }) {
   const primaryLd = buildPrimaryLd({ page: effectivePage, product: resolvedProduct, category: resolvedCategory, url, title: meta.title, desc: meta.desc });
   const breadcrumbLd = buildBreadcrumbLd({ page: effectivePage, product: resolvedProduct, category: resolvedCategory });
   const articleLd = buildGuideArticleLd({ page: effectivePage, url, title: meta.title, desc: meta.desc });
+  if (articleLd) ogType = "article";
 
   return (
     <Helmet>

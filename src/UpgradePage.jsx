@@ -475,13 +475,52 @@ function candidateRAMs(specs, maxPrice) {
   return out;
 }
 
-function candidateStorages(wantGB, wantType, maxPrice) {
+// Map the user's motherboard string to the PCIe generation we can safely assume
+// for an NVMe drive on that board. CONSERVATIVE by design: a board "supports
+// Gen5" only if every SKU on that chipset guarantees a Gen5 M.2 slot; if it's
+// per-board (e.g. Z890, X670, B650), we floor to Gen4 so we never recommend an
+// unusable Gen5 drive on a Gen4-only motherboard. Default Gen3 on any unknown
+// or OEM string (Dell/HP/Lenovo) — same principle: never overpay.
+function inferMoboGen(moboStr) {
+  if (!moboStr || typeof moboStr !== "string") return 3;
+  const s = moboStr.toUpperCase();
+  // Gen4 chipsets — modern AM4/AM5 and recent Intel platforms (conservative floor)
+  // Trailing letter is optional ("B650" / "B650M" / "B650E" / "B650M-A") — a
+  // simple \b boundary won't match because the next char is a word char.
+  const hit = (pat) => new RegExp("\\b(?:" + pat + ")[A-Z]?\\b").test(s);
+  if (hit("B550|X570")) return 4;
+  if (hit("A620|B650|X670|B850")) return 4;
+  if (hit("H510|B560|H570|Z590")) return 4;
+  if (hit("B660|H670|Z690|B760|H770|Z790")) return 4;
+  if (hit("B860|Z890")) return 4;
+  // Gen3 chipsets — older AM4, all LGA1151/1200 entry, and AM5 B840
+  if (hit("A320|B350|X370|B450|X470|A520")) return 3;
+  if (hit("B840")) return 3;
+  if (hit("H110|B150|H170|Z170|B250|H270|Z270")) return 3;
+  if (hit("H310|B360|B365|H370|Z370|Z390")) return 3;
+  if (hit("H410|B460|H470|Z490")) return 3;
+  if (hit("H610")) return 3;
+  return 3;
+}
+
+function candidateStorages(wantGB, wantType, maxPrice, moboGen = 3) {
   if (!wantGB || !wantType) return [];
   const isHDD = wantType === "HDD";
   const isSSD = wantType === "SSD";
   const isAny = wantType === "ANY" || wantType === "";
 
-  const pool = PARTS.filter(p => {
+  // Raw NVMe gen detected from the product name (0 = HDD, 2 = SATA SSD).
+  const nvmeGenOf = (p) => {
+    const n = p.n.toUpperCase();
+    if (/\bHDD\b|hard drive/i.test(p.n)) return 0;
+    if (/\bGEN\s*5\b|PCIE\s*5\.?0/.test(n)) return 5;
+    if (/\bGEN\s*4\b|PCIE\s*4\.?0/.test(n)) return 4;
+    if (/\bGEN\s*3\b|PCIE\s*3\.?0|NVMe/.test(n)) return 3;
+    if (/\bSSD\b/.test(n)) return 2;
+    return 1;
+  };
+
+  const passes = (p) => {
     if (p.c !== "Storage" || p.bundle) return false;
     if (p.cap == null || p.cap < wantGB) return false;
     const price = bestPrice(p);
@@ -492,17 +531,19 @@ function candidateStorages(wantGB, wantType, maxPrice) {
     if (isSSD && !isSsdProduct) return false;
     if (isAny && !isHddProduct && !isSsdProduct) return false;
     return true;
-  });
+  };
 
+  // Conservative gen cap: a drive whose NVMe gen exceeds the board's PCIe gen
+  // is wasted money (it'll throttle to the board's gen anyway). Filter those
+  // out first. Fall back to the unfiltered pool ONLY if the cap empties it.
+  const allEligible = PARTS.filter(passes);
+  const capped = allEligible.filter(p => nvmeGenOf(p) <= moboGen);
+  const pool = capped.length ? capped : allEligible;
+
+  // After the gen filter, tier-order remaining drives normally.
   const tierOf = (p) => {
-    const n = p.n.toUpperCase();
-    const isHddProduct = /\bHDD\b|hard drive/i.test(p.n);
-    if (isHddProduct) return 0;   // HDD always lowest tier
-    if (/\bGEN\s*5\b|PCIE\s*5\.?0/.test(n)) return 5;
-    if (/\bGEN\s*4\b|PCIE\s*4\.?0/.test(n)) return 4;
-    if (/\bGEN\s*3\b|PCIE\s*3\.?0|NVMe/.test(n)) return 3;
-    if (/\bSSD\b/.test(n)) return 2;
-    return 1;
+    const t = nvmeGenOf(p);
+    return t === 0 ? 0 : t; // HDD=0; SATA SSD=2; NVMe gen-N stays its gen
   };
 
   // For ANY type: rank by value-per-dollar (price/GB), with SSDs slightly favored
@@ -951,7 +992,8 @@ export default function UpgradePage() {
     const rams = candidateRAMs(specs, maxBudget);
     const storageWant = Number(specs.add_storage_gb) || 0;
     const storageType = specs.add_storage_type || "";
-    const storages = storageWant > 0 ? candidateStorages(storageWant, storageType, maxBudget) : [];
+    const moboGen = inferMoboGen(specs.mobo);
+    const storages = storageWant > 0 ? candidateStorages(storageWant, storageType, maxBudget, moboGen) : [];
 
     const recommendedBuild = optimizeBuild(currentGPU, currentCPU, { gpus, cpus, rams, storages, useCase }, budget);
     // Brand for refresh targeting: prefer parsed model brand; else infer from raw socket
@@ -997,7 +1039,7 @@ export default function UpgradePage() {
       gpus, cpus, rams, storages, coolerRecs, coolerNeeded,
       userCoolerType, userCoolerCapacity, requiredTDP,
       recommendedBuild, refreshPaths,
-      storageWant, storageType,
+      storageWant, storageType, moboGen,
     };
   }, [specs, partsRev]);
 
@@ -1069,7 +1111,7 @@ export default function UpgradePage() {
   const storageSection = a.storageWant > 0 ? (
     <UpgradeSection key="storage" title="Storage" color="#C084FC" icon="💾"
       selected={rb?.sto} alternatives={stoAlts}
-      description={`You asked for ${a.storageWant >= 1000 ? (a.storageWant/1000)+"TB" : a.storageWant+"GB"}${a.storageType === "ANY" || a.storageType === "" ? " (any type — showing best value)" : " " + a.storageType}.`}
+      description={`You asked for ${a.storageWant >= 1000 ? (a.storageWant/1000)+"TB" : a.storageWant+"GB"}${a.storageType === "ANY" || a.storageType === "" ? " (any type — showing best value)" : " " + a.storageType}. Will run at your board's PCIe Gen${a.moboGen} speed.`}
       warning={a.storageType === "SSD" ? "Your motherboard needs a free M.2 slot for NVMe drives." : null}
       emptyMsg={`No matching storage within budget.`}/>
   ) : null;
