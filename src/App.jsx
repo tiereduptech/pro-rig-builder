@@ -5907,7 +5907,14 @@ function ScannerPromo({ go, page }) {
   const isMobile = useIsMobile();
   const [expanded, setExpanded] = useState(false);
   const [dismissed, setDismissed] = useState(() => {
-    try { return localStorage.getItem("rf_scanner_promo_dismissed") === "1"; } catch { return false; }
+    try {
+      const v = localStorage.getItem("rf_scanner_promo_dismissed");
+      if (!v) return false;
+      const ts = parseInt(v, 10);
+      // Old permanent flag ("1") or any non-timestamp value → treat as expired.
+      if (!Number.isFinite(ts) || ts < 1e12) return false;
+      return Date.now() - ts < 10 * 24 * 60 * 60 * 1000; // dismissed for 10 days
+    } catch { return false; }
   });
   if (dismissed) return null;
   if (isMobile) return null; // hide on mobile — pointless there
@@ -5915,7 +5922,7 @@ function ScannerPromo({ go, page }) {
   const dismiss = e => {
     e.stopPropagation();
     setDismissed(true);
-    try { localStorage.setItem("rf_scanner_promo_dismissed", "1"); } catch {}
+    try { localStorage.setItem("rf_scanner_promo_dismissed", String(Date.now())); } catch {}
   };
   const open = () => { setExpanded(true); };
   const close = () => { setExpanded(false); };
