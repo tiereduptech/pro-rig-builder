@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- WinExe (windows subsystem) so NO console window flashes when the user
+         double-clicks the exe. Console.WriteLine calls are harmless: their
+         output simply goes nowhere when there's no console attached, and is
+         still capturable when stdout is redirected to a file. -->
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <AssemblyName>ProRigScannerLite</AssemblyName>
+    <RootNamespace>ProRigScanner</RootNamespace>
+
+    <!-- No console window pops up: it's a windows-subsystem exe that does its work
+         silently and opens the browser. We still allow Console.WriteLine (it just
+         goes nowhere when launched by double-click, shows when run from a terminal). -->
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+
+    <!-- Smallest self-contained single-file build that still WORKS.
+         NOTE: PublishTrimmed is intentionally OFF. System.Management (WMI) is
+         not trim-safe — its static initializers reflect into types the trimmer
+         removes, which makes every WMI query throw at runtime. Detection
+         accuracy must be byte-identical to the WPF scanner, so we ship the
+         whole framework and rely on single-file compression to keep size down. -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <PublishTrimmed>false</PublishTrimmed>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <Deterministic>true</Deterministic>
+
+    <!-- Versioning / ownership metadata -->
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Authors>Coby / TieredUp Tech, Inc.</Authors>
+    <Company>TieredUp Tech, Inc.</Company>
+    <Product>Pro Rig Builder Scanner Lite</Product>
+    <AssemblyTitle>Pro Rig Builder Scanner Lite</AssemblyTitle>
+    <Description>Lightweight portable scanner — reads PC hardware via WMI and opens prorigbuilder.com/upgrade with the detected specs.</Description>
+    <Copyright>Copyright © 2026 TieredUp Tech, Inc. All rights reserved.</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+</Project>
