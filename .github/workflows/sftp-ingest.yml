@@ -29,6 +29,11 @@ jobs:
           RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
           NODE_OPTIONS: "--max-old-space-size=6144"
         run: node sftp-ingest.cjs
+      # Re-emit the per-category chunk barrel so the frontend (which loads
+      # src/data/parts/<cat>.js, not the literal) never goes stale. Runs after
+      # the literal write, before the commit, so parts.js + chunks commit atomically.
+      - name: Re-split catalog into per-category chunks
+        run: node scripts/split-parts-by-cat.cjs
       - name: Commit and push if changed
         run: |
           if [ -f catalog-build/sftp-ingest-summary.json ]; then
@@ -37,7 +42,7 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             # Commit parts.js (catalog updates) and exclusives meta (small summary file, not the 500MB jsonl)
-            git add src/data/parts.js catalog-build/newegg-exclusives.meta.json catalog-build/sftp-manifest.json 2>/dev/null || true
+            git add src/data/parts.js src/data/parts/ catalog-build/newegg-exclusives.meta.json catalog-build/sftp-manifest.json 2>/dev/null || true
             if git diff --cached --quiet; then
               echo "No changes to commit"
             else

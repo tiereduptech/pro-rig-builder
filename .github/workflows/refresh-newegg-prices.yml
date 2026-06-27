@@ -24,6 +24,12 @@ jobs:
           RAKUTEN_NEWEGG_MID: ${{ secrets.RAKUTEN_NEWEGG_MID }}
         run: node refresh-newegg-prices.cjs
 
+      # Re-emit the per-category chunk barrel so the frontend (which loads
+      # src/data/parts/<cat>.js, not the literal) never goes stale. Runs after
+      # the literal write, before the commit, so parts.js + chunks commit atomically.
+      - name: Re-split catalog into per-category chunks
+        run: node scripts/split-parts-by-cat.cjs
+
       - name: Commit and push if changed
         run: |
           if [ -f newegg-refresh-summary.json ]; then
@@ -31,7 +37,7 @@ jobs:
             REMOVED=$(node -e "console.log(require('./newegg-refresh-summary.json').removed)")
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add src/data/parts.js
+            git add src/data/parts.js src/data/parts/
             if git diff --cached --quiet; then
               echo "No changes"
             else

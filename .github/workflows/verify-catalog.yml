@@ -78,16 +78,25 @@ jobs:
           echo "Running: node verify-catalog-asins.js $ARGS"
           node verify-catalog-asins.js $ARGS
 
+      # Re-emit the per-category chunk barrel so the frontend (which loads
+      # src/data/parts/<cat>.js, not the literal) never goes stale. Runs after
+      # the verifier write, before change-detection, so the barrel + chunks are
+      # what we diff/commit. NOTE: the barrel parts.js is stable across price/ASIN
+      # fixes — the real change shows up in the chunks, so detection below must
+      # include src/data/parts/.
+      - name: Re-split catalog into per-category chunks
+        run: node scripts/split-parts-by-cat.cjs
+
       - name: Check for catalog changes
         id: changes
         run: |
-          if git diff --quiet src/data/parts.js; then
+          if git diff --quiet src/data/parts.js src/data/parts/; then
             echo "changed=false" >> $GITHUB_OUTPUT
-            echo "No changes to parts.js"
+            echo "No catalog changes"
           else
             echo "changed=true" >> $GITHUB_OUTPUT
             echo "Catalog changes detected"
-            git diff --stat src/data/parts.js
+            git diff --stat src/data/parts.js src/data/parts/
           fi
 
       - name: Commit and push changes (with rebase retry)
@@ -97,7 +106,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Stash our changes so rebase doesn't conflict
-          git stash push -m "verifier-changes" -- src/data/parts.js
+          git stash push -m "verifier-changes" -- src/data/parts.js src/data/parts/
 
           # Try up to 3 times in case main keeps moving
           for i in 1 2 3; do
@@ -107,7 +116,7 @@ jobs:
             # Re-apply our changes (may need merge if same file changed)
             git stash pop || { echo "stash pop failed - main has conflicting changes to parts.js"; exit 1; }
 
-            git add src/data/parts.js
+            git add src/data/parts.js src/data/parts/
             git commit -m "chore(catalog): tier ${{ steps.tier.outputs.tier }} auto-verification
 
           Automated price/stock/ASIN updates via DataForSEO.
@@ -120,7 +129,7 @@ jobs:
               echo "Push rejected, retrying..."
               # Reset our local commit so we can re-stash for next attempt
               git reset HEAD~1
-              git stash push -m "verifier-changes" -- src/data/parts.js
+              git stash push -m "verifier-changes" -- src/data/parts.js src/data/parts/
               sleep 5
             fi
           done
