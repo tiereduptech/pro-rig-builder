@@ -1046,6 +1046,24 @@ export default function UpgradePage() {
   if (loading) return <div style={{padding:40, textAlign:"center", color:"var(--dim)"}}>Loading your specs…</div>;
   if (!specs)  return <MissingSpecsView />;
 
+  // Lite scanner omits the user-question fields (budget / add_storage_gb /
+  // add_storage_type / cooler_type) — they're collected here instead. The old
+  // WPF scanner always includes them, so its URLs skip this flow and render
+  // exactly as before. Sentinel = budget TRULY ABSENT (undefined/null). The
+  // scanners serialize every value as a string, so an old-scanner budget of 0
+  // arrives as "0" (not absent) and correctly does NOT trigger questions.
+  const needsQuestions = specs.budget === undefined || specs.budget === null;
+  if (needsQuestions) {
+    return (
+      <div style={{minHeight:"100vh", background:"var(--bg)"}}>
+        <div style={{maxWidth:680, margin:"0 auto", padding:"48px 32px"}}>
+          <Header />
+          <QuestionFlow onComplete={(ans) => setSpecs(prev => ({ ...prev, ...ans }))} />
+        </div>
+      </div>
+    );
+  }
+
   const a = analysis;
   // When a platform refresh applies, the recommendation IS the selected refresh bundle
   // (value vs futureproof). Otherwise use the normal same-socket optimizer build.
@@ -1607,6 +1625,159 @@ function CoolerRow({rec}) {
     </div>
   );
 }
+// ─── QUESTION FLOW (lite scanner) ───────────────────────────────────
+// Collects the four build-context answers the lite scanner no longer gathers:
+// budget, optional extra storage (size + type), and current cooler type.
+// Mirrors the old WPF scanner's pages 1-3 exactly (same budget curve, same
+// type-dependent storage sizes, same six cooler options). On submit it merges
+// the answers into `specs` so the existing analysis runs unchanged.
+
+// Old exe budget curve: $300–$8000, eased so low budgets get finer control.
+function sliderPctToBudget(pct) {
+  const t = pct / 100;
+  const raw = 300 + Math.pow(t, 2.5) * (8000 - 300);
+  return Math.round(raw / 25) * 25;  // snap to $25, matching the exe
+}
+
+const COOLER_OPTIONS = [
+  { tag: "stock",      label: "Stock Cooler",      note: "~65W TDP capacity" },
+  { tag: "budget_air", label: "Budget Air Cooler", note: "~120W TDP capacity" },
+  { tag: "aio_120",    label: "120mm AIO",         note: "~150W TDP capacity" },
+  { tag: "aio_240",    label: "240mm AIO",         note: "~220W TDP capacity" },
+  { tag: "aio_360",    label: "360mm AIO",         note: "~300W TDP capacity" },
+  { tag: "unknown",    label: "Not sure",          note: "We'll recommend options based on your new CPU" },
+];
+
+// Size lists are type-dependent, same as the exe:
+//   HDD / ANY: 1/2/4/8 TB   ·   SSD: 500GB/1/2/4 TB
+const STORAGE_SIZES = {
+  HDD: [{ gb: 1000, label: "1 TB" }, { gb: 2000, label: "2 TB" }, { gb: 4000, label: "4 TB" }, { gb: 8000, label: "8 TB" }],
+  SSD: [{ gb: 500, label: "500 GB" }, { gb: 1000, label: "1 TB" }, { gb: 2000, label: "2 TB" }, { gb: 4000, label: "4 TB" }],
+  ANY: [{ gb: 1000, label: "1 TB" }, { gb: 2000, label: "2 TB" }, { gb: 4000, label: "4 TB" }, { gb: 8000, label: "8 TB" }],
+};
+
+function QFOptionCard({ active, title, sub, onClick }) {
+  return (
+    <button onClick={onClick} style={{flex:1, minWidth:0, textAlign:"center", cursor:"pointer",
+      background: active ? "rgba(255,138,61,.1)" : "var(--bg3)",
+      border: active ? "1px solid var(--accent)" : "1px solid var(--bdr)",
+      borderRadius:10, padding:"12px 10px"}}>
+      <div style={{fontFamily:"var(--ff)", fontSize:14, fontWeight:700, color: active ? "var(--accent)" : "var(--txt)"}}>{title}</div>
+      {sub && <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", marginTop:3, lineHeight:1.4}}>{sub}</div>}
+    </button>
+  );
+}
+
+function QFSectionLabel({ children }) {
+  return <div style={{fontFamily:"var(--mono)", fontSize:11, color:"var(--dim)", fontWeight:700, letterSpacing:1, marginBottom:10}}>{children}</div>;
+}
+
+function QuestionFlow({ onComplete }) {
+  const [sliderVal, setSliderVal]         = useState(383);  // 0-1000 raw; 383 → $1000 default
+  const [storageChoice, setStorageChoice] = useState("no"); // "yes" | "no"
+  const [storageType, setStorageType]     = useState(null); // "HDD" | "SSD" | "ANY"
+  const [storageGB, setStorageGB]         = useState(0);
+  const [coolerType, setCoolerType]       = useState(null);
+
+  const budget = sliderPctToBudget(sliderVal / 10);  // raw 0-1000 → 0-100 pct for the curve
+  const storageReady = storageChoice === "no" || (storageType && storageGB > 0);
+  const canSubmit = budget > 0 && !!coolerType && storageReady;
+
+  const pickStorageType = (t) => { setStorageType(t); setStorageGB(0); };
+  const submit = () => {
+    if (!canSubmit) return;
+    onComplete({
+      budget: String(budget),
+      add_storage_gb: String(storageChoice === "yes" ? storageGB : 0),
+      add_storage_type: storageChoice === "yes" ? storageType : "",
+      cooler_type: coolerType,
+    });
+  };
+
+  const card = { background:"var(--bg2)", borderRadius:16, border:"1px solid var(--bdr)", padding:24, marginBottom:20 };
+
+  return (
+    <div>
+      <div style={{textAlign:"center", marginBottom:24}}>
+        <p style={{fontFamily:"var(--ff)", fontSize:14, color:"var(--dim)", margin:0, lineHeight:1.6}}>
+          A few quick questions so we can tailor your upgrade path to your budget and setup.
+        </p>
+      </div>
+
+      {/* Q1 — BUDGET */}
+      <div style={card}>
+        <QFSectionLabel>YOUR UPGRADE BUDGET</QFSectionLabel>
+        <div style={{fontFamily:"var(--ff)", fontSize:32, fontWeight:800, color:"var(--accent)", textAlign:"center", marginBottom:14}}>
+          ${budget.toLocaleString()}
+        </div>
+        <input type="range" min={0} max={1000} value={sliderVal}
+          onChange={(e) => setSliderVal(Number(e.target.value))}
+          style={{width:"100%", accentColor:"var(--accent)", cursor:"pointer"}} />
+        <div style={{display:"flex", justifyContent:"space-between", fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", marginTop:6}}>
+          <span>$300</span><span>$8,000</span>
+        </div>
+      </div>
+
+      {/* Q2 — EXTRA STORAGE */}
+      <div style={card}>
+        <QFSectionLabel>ADD STORAGE?</QFSectionLabel>
+        <div style={{display:"flex", gap:10, marginBottom: storageChoice === "yes" ? 16 : 0}}>
+          <QFOptionCard active={storageChoice === "yes"} title="Yes" sub="Add a new drive" onClick={() => setStorageChoice("yes")} />
+          <QFOptionCard active={storageChoice === "no"}  title="No"  sub="Keep current drives" onClick={() => { setStorageChoice("no"); setStorageType(null); setStorageGB(0); }} />
+        </div>
+
+        {storageChoice === "yes" && (
+          <>
+            <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:600, letterSpacing:1, margin:"4px 0 8px"}}>TYPE</div>
+            <div style={{display:"flex", gap:10, marginBottom: storageType ? 16 : 0}}>
+              <QFOptionCard active={storageType === "HDD"} title="HDD" sub="cheapest per TB" onClick={() => pickStorageType("HDD")} />
+              <QFOptionCard active={storageType === "SSD"} title="SSD" sub="fastest" onClick={() => pickStorageType("SSD")} />
+              <QFOptionCard active={storageType === "ANY"} title="Any" sub="best value" onClick={() => pickStorageType("ANY")} />
+            </div>
+
+            {storageType && (
+              <>
+                <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:600, letterSpacing:1, margin:"4px 0 8px"}}>SIZE</div>
+                <div style={{display:"flex", gap:10}}>
+                  {STORAGE_SIZES[storageType].map((s) => (
+                    <QFOptionCard key={s.gb} active={storageGB === s.gb} title={s.label}
+                      sub={storageType === "ANY" ? "any type" : storageType}
+                      onClick={() => setStorageGB(s.gb)} />
+                  ))}
+                </div>
+              </>
+            )}
+          </>
+        )}
+      </div>
+
+      {/* Q3 — CPU COOLER */}
+      <div style={card}>
+        <QFSectionLabel>YOUR CURRENT CPU COOLER</QFSectionLabel>
+        <div style={{display:"grid", gridTemplateColumns:"repeat(3, 1fr)", gap:10}}>
+          {COOLER_OPTIONS.map((c) => (
+            <QFOptionCard key={c.tag} active={coolerType === c.tag} title={c.label} sub={c.note} onClick={() => setCoolerType(c.tag)} />
+          ))}
+        </div>
+      </div>
+
+      <button onClick={submit} disabled={!canSubmit}
+        style={{width:"100%", padding:"14px 24px", marginTop:4,
+          background: canSubmit ? "var(--accent)" : "var(--bg3)",
+          color: canSubmit ? "#fff" : "var(--dim)",
+          border:"none", borderRadius:10, fontFamily:"var(--ff)", fontSize:15, fontWeight:700,
+          cursor: canSubmit ? "pointer" : "not-allowed"}}>
+        See my upgrades →
+      </button>
+      {!canSubmit && (
+        <div style={{textAlign:"center", fontFamily:"var(--ff)", fontSize:12, color:"var(--dim)", marginTop:10}}>
+          {!coolerType ? "Select your current cooler to continue." : "Pick a storage size to continue."}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function MissingSpecsView() {
   return (
     <div style={{minHeight:"60vh", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", padding:40, textAlign:"center"}}>
