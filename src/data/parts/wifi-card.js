@@ -72,7 +72,7 @@ export default [
     "interface": "USB",
     "deals": {
       "amazon": {
-        "price": 13.7,
+        "price": 12.99,
         "url": "https://www.amazon.com/dp/B07P5PRK7J?tag=tiereduptech-20",
         "inStock": true
       }
@@ -114,7 +114,7 @@ export default [
     "interface": "USB 3.0",
     "deals": {
       "amazon": {
-        "price": 17.99,
+        "price": 16.99,
         "url": "https://www.amazon.com/dp/B08D72GSMS?tag=tiereduptech-20",
         "inStock": true
       }
@@ -135,7 +135,7 @@ export default [
     "interface": "USB",
     "deals": {
       "amazon": {
-        "price": 24.99,
+        "price": 21.56,
         "url": "https://www.amazon.com/dp/B08KHV7H1S?tag=tiereduptech-20",
         "inStock": true
       }
@@ -198,7 +198,7 @@ export default [
     "interface": "USB 3.0",
     "deals": {
       "amazon": {
-        "price": 24.99,
+        "price": 29.68,
         "url": "https://www.amazon.com/dp/B01IEU7UZ0?tag=tiereduptech-20",
         "inStock": true
       }
@@ -220,7 +220,7 @@ export default [
     "bluetooth": true,
     "deals": {
       "amazon": {
-        "price": 30.36,
+        "price": 28.84,
         "url": "https://www.amazon.com/dp/B07ZV2CJL2?tag=tiereduptech-20",
         "inStock": true
       }
@@ -242,7 +242,7 @@ export default [
     "bluetooth": true,
     "deals": {
       "amazon": {
-        "price": 24.99,
+        "price": 19.99,
         "url": "https://www.amazon.com/dp/B084JPFKQ5?tag=tiereduptech-20",
         "inStock": true
       }
@@ -284,7 +284,7 @@ export default [
     "interface": "PCIe",
     "deals": {
       "amazon": {
-        "price": 23,
+        "price": 24.9,
         "url": "https://www.amazon.com/dp/B07XM6XZ1F?tag=tiereduptech-20",
         "inStock": true
       }

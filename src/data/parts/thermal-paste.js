@@ -35,7 +35,7 @@ export default [
     "type": "Non-conductive",
     "deals": {
       "amazon": {
-        "price": 16.99,
+        "price": 16,
         "url": "https://www.amazon.com/dp/B08W3TK3KS?tag=tiereduptech-20",
         "inStock": true
       }
@@ -54,7 +54,7 @@ export default [
     "asin": "B07L9BDY3T",
     "deals": {
       "amazon": {
-        "price": 5.49,
+        "price": 4.99,
         "url": "https://www.amazon.com/dp/B07L9BDY3T?tag=tiereduptech-20",
         "inStock": true
       }
@@ -168,7 +168,7 @@ export default [
     "asin": "B07LF66ZSV",
     "deals": {
       "amazon": {
-        "price": 6.59,
+        "price": 5.99,
         "url": "https://www.amazon.com/dp/B07LF66ZSV?tag=tiereduptech-20",
         "inStock": true
       }

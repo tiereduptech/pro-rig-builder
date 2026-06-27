@@ -30,7 +30,7 @@ export default [
     },
     "value": 36,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 89,
     "resolution": "1440p"
   },
@@ -94,7 +94,7 @@ export default [
     },
     "value": 34,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 100,
     "resolution": "1440p"
   },
@@ -127,7 +127,7 @@ export default [
     },
     "value": 46,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 82,
     "resolution": "1440p"
   },
@@ -161,7 +161,7 @@ export default [
     },
     "value": 38,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 89,
     "resolution": "1440p"
   },
@@ -195,7 +195,7 @@ export default [
     },
     "value": 24,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 100
   },
   {
@@ -220,7 +220,7 @@ export default [
     ],
     "deals": {
       "amazon": {
-        "price": 499.99,
+        "price": 557.96,
         "url": "https://www.amazon.com/dp/B0DF786923?tag=tiereduptech-20",
         "inStock": true
       }
@@ -259,7 +259,7 @@ export default [
     },
     "value": 17,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 61,
     "resolution": "1440p"
   },
@@ -292,7 +292,7 @@ export default [
     },
     "value": 100,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 74,
     "resolution": "1080p"
   },
@@ -326,7 +326,7 @@ export default [
     },
     "value": 50,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 95,
     "resolution": "1440p"
   },
@@ -359,7 +359,7 @@ export default [
     },
     "value": 30,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 64,
     "resolution": "1080p"
   },
@@ -393,7 +393,7 @@ export default [
     },
     "value": 5,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 54,
     "resolution": "1440p"
   },
@@ -427,7 +427,7 @@ export default [
     },
     "value": 6,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 68,
     "resolution": "4K"
   },
@@ -461,7 +461,7 @@ export default [
     },
     "value": 13,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 100,
     "resolution": "4K"
   },
@@ -494,7 +494,7 @@ export default [
     },
     "value": 17,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 100,
     "resolution": "4K"
   },
@@ -511,7 +511,7 @@ export default [
     "reviews": 1994,
     "deals": {
       "amazon": {
-        "price": 127.39,
+        "price": 109.99,
         "url": "https://www.amazon.com/dp/B0DB9Q5G3R?tag=tiereduptech-20",
         "inStock": true
       },
@@ -553,7 +553,7 @@ export default [
     "reviews": 812,
     "deals": {
       "amazon": {
-        "price": 179.99,
+        "price": 189.99,
         "url": "https://www.amazon.com/dp/B0DD7GPXFH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -625,18 +625,18 @@ export default [
     "reviews": 79,
     "deals": {
       "amazon": {
-        "price": 369.99,
+        "price": 332.98,
         "url": "https://www.amazon.com/dp/B0FTS1KC43?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "445835917314568012731741",
-        "price": 549.99,
+        "sku": "9SIA8X5KW91267",
+        "price": 548.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835917314568012731741&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-001B-00095%3Fitem%3D9SIA8X5KW91267",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S26050919UDYIBC.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.515Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -672,7 +672,7 @@ export default [
     "reviews": 1914,
     "deals": {
       "amazon": {
-        "price": 169.99,
+        "price": 159.99,
         "url": "https://www.amazon.com/dp/B0CD3WJXWH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -705,19 +705,18 @@ export default [
     "reviews": 1293,
     "deals": {
       "amazon": {
-        "price": 290.99,
+        "price": 251.26,
         "url": "https://www.amazon.com/dp/B08LCMYT54?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317274027196300632875",
-        "name": "Asus TUF VG34VQL1B 34 Curved 3440 x 1440 WQHD 165 Hz 1 ms LCD Gaming Monitor, 2-Pack Bundle with Extreme Low Motion Blur, Eye Care, FreeSync...",
-        "price": 1349,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317274027196300632875&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-001P-00N75%3Fitem%3D9SIAA65K5V6766",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V178D2402280KYSEH94.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-15T02:34:16.508Z",
-        "matchMethod": "remediate:strict-token",
+        "sku": "N82E16824281097",
+        "price": 369,
+        "saleprice": 259,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315734784616700352134&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-vg34vql1b-34-uwqhd-165-hz-tuf-gaming-va-black%2Fp%2FN82E16824281097%3Fitem%3DN82E16824281097",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-097-02.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -753,7 +752,7 @@ export default [
     "reviews": 1062,
     "deals": {
       "amazon": {
-        "price": 124.99,
+        "price": 103.98,
         "url": "https://www.amazon.com/dp/B0CH9XR3G4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -788,7 +787,7 @@ export default [
     "reviews": 691,
     "deals": {
       "amazon": {
-        "price": 109.99,
+        "price": 104.49,
         "url": "https://www.amazon.com/dp/B0CQC2WSVJ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -823,7 +822,7 @@ export default [
     "reviews": 265,
     "deals": {
       "amazon": {
-        "price": 139.99,
+        "price": 118.74,
         "url": "https://www.amazon.com/dp/B0B5GRGCX5?tag=tiereduptech-20",
         "inStock": true
       },
@@ -866,7 +865,7 @@ export default [
     "reviews": 443,
     "deals": {
       "amazon": {
-        "price": 400,
+        "price": 324.84,
         "url": "https://www.amazon.com/dp/B0BCXJ7XXM?tag=tiereduptech-20",
         "inStock": true
       },
@@ -907,7 +906,7 @@ export default [
     "reviews": 7600,
     "deals": {
       "amazon": {
-        "price": 125.99,
+        "price": 113.98,
         "url": "https://www.amazon.com/dp/B0DWXLCTGZ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -942,7 +941,7 @@ export default [
     "reviews": 3470,
     "deals": {
       "amazon": {
-        "price": 189.99,
+        "price": 175.29,
         "url": "https://www.amazon.com/dp/B0DMSZLDHM?tag=tiereduptech-20",
         "inStock": true
       }
@@ -979,7 +978,7 @@ export default [
     "reviews": 1146,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 151.99,
         "url": "https://www.amazon.com/dp/B0C9GNMDX3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1015,7 +1014,7 @@ export default [
     "reviews": 435,
     "deals": {
       "amazon": {
-        "price": 259.99,
+        "price": 189.99,
         "url": "https://www.amazon.com/dp/B0FNRNK72C?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1050,7 +1049,7 @@ export default [
     "reviews": 139,
     "deals": {
       "amazon": {
-        "price": 169.99,
+        "price": 149.59,
         "url": "https://www.amazon.com/dp/B0FMXXDK67?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1084,7 +1083,7 @@ export default [
     "reviews": 58,
     "deals": {
       "amazon": {
-        "price": 136.99,
+        "price": 129.99,
         "url": "https://www.amazon.com/dp/B0FP95S9XK?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1120,7 +1119,7 @@ export default [
     "reviews": 56,
     "deals": {
       "amazon": {
-        "price": 189.99,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0FVL7X1TC?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1155,7 +1154,7 @@ export default [
     "reviews": 1230,
     "deals": {
       "amazon": {
-        "price": 114.99,
+        "price": 109.24,
         "url": "https://www.amazon.com/dp/B0FV7H7CP3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1188,7 +1187,7 @@ export default [
     "reviews": 478,
     "deals": {
       "amazon": {
-        "price": 158.99,
+        "price": 129.99,
         "url": "https://www.amazon.com/dp/B0CQSWWGL2?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1198,7 +1197,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837813333421694630138&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2BA-01UX-00198%3Fitem%3D9SIC11SKPY1551",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B38FD2408130N8FS6B6.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -1226,7 +1225,7 @@ export default [
     "reviews": 315,
     "deals": {
       "amazon": {
-        "price": 499.99,
+        "price": 399.99,
         "url": "https://www.amazon.com/dp/B0D682HF6R?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1234,6 +1233,16 @@ export default [
         "price": 519.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592864&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Faoc-27-qd-oled-240hz-0-03ms-gaming-monitor-black-purple%2FJX9GSKP2YP&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8X5KRU9608",
+        "price": 550,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317202596435254829708&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Faoc-ag276qzd2-27-qhd-240-hz-agon-pro-qd-oled-black-purple%2Fp%2FN82E16824160526%3Fitem%3D9SIA8X5KRU9608",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-160-526-11.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -1268,7 +1277,7 @@ export default [
     "reviews": 97,
     "deals": {
       "amazon": {
-        "price": 139.99,
+        "price": 129.98,
         "url": "https://www.amazon.com/dp/B0FCXZVYGN?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1303,7 +1312,7 @@ export default [
     "reviews": 191,
     "deals": {
       "amazon": {
-        "price": 149.99,
+        "price": 135.99,
         "url": "https://www.amazon.com/dp/B0DFQ8V151?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1345,7 +1354,7 @@ export default [
     "reviews": 75,
     "deals": {
       "amazon": {
-        "price": 149.99,
+        "price": 139.98,
         "url": "https://www.amazon.com/dp/B0FCXZ17JQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1419,7 +1428,7 @@ export default [
     "reviews": 2577,
     "deals": {
       "amazon": {
-        "price": 339.98,
+        "price": 189.98,
         "url": "https://www.amazon.com/dp/B0DHCW52VS?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1490,7 +1499,7 @@ export default [
     "reviews": 498,
     "deals": {
       "amazon": {
-        "price": 123.49,
+        "price": 110.49,
         "url": "https://www.amazon.com/dp/B0DTH3SGZD?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1527,7 +1536,7 @@ export default [
     "reviews": 1146,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 151.99,
         "url": "https://www.amazon.com/dp/B0C8J9VB27?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1564,7 +1573,7 @@ export default [
     "reviews": 498,
     "deals": {
       "amazon": {
-        "price": 109.99,
+        "price": 104.49,
         "url": "https://www.amazon.com/dp/B0FJ8BJY2F?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1671,7 +1680,7 @@ export default [
     "reviews": 118,
     "deals": {
       "amazon": {
-        "price": 148.99,
+        "price": 136.79,
         "url": "https://www.amazon.com/dp/B0DL33J9VQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1706,7 +1715,7 @@ export default [
     "reviews": 113,
     "deals": {
       "amazon": {
-        "price": 224.99,
+        "price": 170.99,
         "url": "https://www.amazon.com/dp/B0GHRJWCT9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1728,7 +1737,7 @@ export default [
     "resolution": "1440p",
     "curved": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-04"
   },
   {
     "id": 90048,
@@ -1743,7 +1752,7 @@ export default [
     "reviews": 38,
     "deals": {
       "amazon": {
-        "price": 399.99,
+        "price": 259.99,
         "url": "https://www.amazon.com/dp/B0FJ2H6LK4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1778,7 +1787,7 @@ export default [
     "reviews": 585,
     "deals": {
       "amazon": {
-        "price": 199.99,
+        "price": 189.99,
         "url": "https://www.amazon.com/dp/B08H5L51ZG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1815,7 +1824,7 @@ export default [
     "reviews": 511,
     "deals": {
       "amazon": {
-        "price": 139.98,
+        "price": 132.98,
         "url": "https://www.amazon.com/dp/B0G2LKMBHV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1849,7 +1858,7 @@ export default [
     "reviews": 511,
     "deals": {
       "amazon": {
-        "price": 161.48,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0G2LQWW26?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1886,7 +1895,7 @@ export default [
     "reviews": 184,
     "deals": {
       "amazon": {
-        "price": 189.99,
+        "price": 162.44,
         "url": "https://www.amazon.com/dp/B0FQ9TPBHG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1920,7 +1929,7 @@ export default [
     "reviews": 498,
     "deals": {
       "amazon": {
-        "price": 239.99,
+        "price": 83.99,
         "url": "https://www.amazon.com/dp/B0GB579MFW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1955,7 +1964,7 @@ export default [
     "reviews": 148,
     "deals": {
       "amazon": {
-        "price": 254.99,
+        "price": 249.99,
         "url": "https://www.amazon.com/dp/B0D5QFL6ZL?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2004,7 +2013,7 @@ export default [
     "reviews": 147,
     "deals": {
       "amazon": {
-        "price": 161.48,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0FP4XXRPJ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2038,18 +2047,18 @@ export default [
     "reviews": 128,
     "deals": {
       "amazon": {
-        "price": 463.67,
+        "price": 493.99,
         "url": "https://www.amazon.com/dp/B0DQVP7TNH?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316964076778974350907",
-        "price": 599.99,
+        "sku": "9SIA8X5KRU9598",
+        "price": 598.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316964076778974350907&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-001B-00093%3Fitem%3D9SIA8X5KRU9598",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S26011511ITT0AB.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.513Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -2085,7 +2094,7 @@ export default [
     "reviews": 26,
     "deals": {
       "amazon": {
-        "price": 774.99,
+        "price": 599.99,
         "url": "https://www.amazon.com/dp/B0FL1JYN7C?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2184,7 +2193,7 @@ export default [
     "reviews": 11,
     "deals": {
       "amazon": {
-        "price": 274.99,
+        "price": 261.24,
         "url": "https://www.amazon.com/dp/B0FWC2VGTW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2219,7 +2228,7 @@ export default [
     "reviews": 9,
     "deals": {
       "amazon": {
-        "price": 142.99,
+        "price": 159.99,
         "url": "https://www.amazon.com/dp/B0G7DVWKZX?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2239,7 +2248,9 @@ export default [
     "bench": 75,
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-19"
   },
   {
     "id": 90061,
@@ -2254,9 +2265,19 @@ export default [
     "reviews": 2767,
     "deals": {
       "amazon": {
-        "price": 106.99,
+        "price": 75.05,
         "url": "https://www.amazon.com/dp/B0CPFYVPBG?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16824281359R",
+        "price": 109.99,
+        "saleprice": 67.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837160014032887329494&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-zenscreen-mb169ck-15-6-fhd-60-hz-ips-black%2Fp%2FN82E16824281359R%3Fitem%3DN82E16824281359R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-359-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -2287,7 +2308,7 @@ export default [
     "reviews": 1196,
     "deals": {
       "amazon": {
-        "price": 179.99,
+        "price": 161.49,
         "url": "https://www.amazon.com/dp/B0FR9F8T1J?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2323,7 +2344,7 @@ export default [
     "reviews": 1196,
     "deals": {
       "amazon": {
-        "price": 199.99,
+        "price": 189.99,
         "url": "https://www.amazon.com/dp/B0GHLYTLQC?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2360,7 +2381,7 @@ export default [
     "reviews": 840,
     "deals": {
       "amazon": {
-        "price": 119.99,
+        "price": 94.99,
         "url": "https://www.amazon.com/dp/B0F6LSKP2G?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2395,7 +2416,7 @@ export default [
     "reviews": 712,
     "deals": {
       "amazon": {
-        "price": 695,
+        "price": 758.06,
         "url": "https://www.amazon.com/dp/B09VQ48X5Q?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2437,7 +2458,7 @@ export default [
     "reviews": 651,
     "deals": {
       "amazon": {
-        "price": 199.99,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0FR7QG4RC?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2489,18 +2510,18 @@ export default [
     "reviews": 599,
     "deals": {
       "amazon": {
-        "price": 599.99,
+        "price": 399.99,
         "url": "https://www.amazon.com/dp/B0G6J63X7S?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458315261195697407792510",
+        "sku": "9SIAB71KP39987",
         "price": 599.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315261195697407792510&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpixio-px277oledmaxv2-27-qhd-240-hz-luma-black%2Fp%2F3D4-000Y-00090%3Fitem%3D9SIAB71KP39987",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AB71S2512111E77AF7D.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.718Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -2536,7 +2557,7 @@ export default [
     "reviews": 518,
     "deals": {
       "amazon": {
-        "price": 149.99,
+        "price": 127.49,
         "url": "https://www.amazon.com/dp/B0FFM6Z28R?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2571,7 +2592,7 @@ export default [
     "reviews": 454,
     "deals": {
       "amazon": {
-        "price": 161.49,
+        "price": 179.99,
         "url": "https://www.amazon.com/dp/B0FQJ2QJX3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2590,7 +2611,9 @@ export default [
     "panel": "VA",
     "bench": 59,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-25"
   },
   {
     "id": 90070,
@@ -2655,7 +2678,7 @@ export default [
     "reviews": 294,
     "deals": {
       "amazon": {
-        "price": 246.99,
+        "price": 209.99,
         "url": "https://www.amazon.com/dp/B0FNM7RQ5P?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2692,7 +2715,7 @@ export default [
     "reviews": 235,
     "deals": {
       "amazon": {
-        "price": 424.98,
+        "price": 361.23,
         "url": "https://www.amazon.com/dp/B0FNJQRJRF?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2726,7 +2749,7 @@ export default [
     "reviews": 218,
     "deals": {
       "amazon": {
-        "price": 219.99,
+        "price": 208.98,
         "url": "https://www.amazon.com/dp/B0GDWKLYTH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2762,7 +2785,7 @@ export default [
     "reviews": 218,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 118.99,
         "url": "https://www.amazon.com/dp/B0FR4CL3SK?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2798,7 +2821,7 @@ export default [
     "reviews": 184,
     "deals": {
       "amazon": {
-        "price": 189.99,
+        "price": 180.48,
         "url": "https://www.amazon.com/dp/B0FRMYSKQL?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2834,7 +2857,7 @@ export default [
     "reviews": 174,
     "deals": {
       "amazon": {
-        "price": 439.99,
+        "price": 369.99,
         "url": "https://www.amazon.com/dp/B09VWNTWX6?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2909,7 +2932,7 @@ export default [
     "reviews": 107,
     "deals": {
       "amazon": {
-        "price": 1497.5,
+        "price": 999,
         "url": "https://www.amazon.com/dp/B09568W9GS?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2956,7 +2979,7 @@ export default [
     "reviews": 80,
     "deals": {
       "amazon": {
-        "price": 209.99,
+        "price": 179.99,
         "url": "https://www.amazon.com/dp/B0DMD6T46K?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3003,7 +3026,7 @@ export default [
     "reviews": 75,
     "deals": {
       "amazon": {
-        "price": 129.99,
+        "price": 109.99,
         "url": "https://www.amazon.com/dp/B0F4QNY4BV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3079,7 +3102,7 @@ export default [
     "reviews": 62,
     "deals": {
       "amazon": {
-        "price": 179.98,
+        "price": 99.99,
         "url": "https://www.amazon.com/dp/B0DGGVY46Z?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3116,7 +3139,7 @@ export default [
     "reviews": 57,
     "deals": {
       "amazon": {
-        "price": 129.99,
+        "price": 134.99,
         "url": "https://www.amazon.com/dp/B0DDNW5575?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3262,7 +3285,7 @@ export default [
     "reviews": 27,
     "deals": {
       "amazon": {
-        "price": 259.99,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0F5F8W5X3?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3303,7 +3326,7 @@ export default [
     "reviews": 23,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 127.99,
         "url": "https://www.amazon.com/dp/B0CJLGFCPZ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3338,7 +3361,7 @@ export default [
     "reviews": 13,
     "deals": {
       "amazon": {
-        "price": 109.99,
+        "price": 99.99,
         "url": "https://www.amazon.com/dp/B0F29KYCG2?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3442,7 +3465,7 @@ export default [
     "reviews": 8,
     "deals": {
       "amazon": {
-        "price": 657.49,
+        "price": 624.49,
         "url": "https://www.amazon.com/dp/B0FJ2G1T68?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3546,7 +3569,7 @@ export default [
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "resolution": "4K"
   },
   {
@@ -3682,7 +3705,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837676566862334188149&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-p2419h-24-full-hd%2Fp%2F0JC-0004-00HY1%3Fitem%3D9SIA6ZPKCM7729",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0JC-0004-00HY1-04.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.78
       }
@@ -5868,13 +5891,13 @@ export default [
         "inStock": false
       },
       "newegg": {
-        "sku": "4458317578803886241211625",
+        "sku": "9SIAFJ8KDZ9910",
         "price": 318.22,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317578803886241211625&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fhp-e24mv-g4-23-8-full-hd%2Fp%2FN82E16824276858%3Fitem%3D9SIAFJ8KDZ9910",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-276-858-S01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.964Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -5990,13 +6013,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458311713764424910506868",
+        "sku": "N82E16824117082",
         "price": 159.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311713764424910506868&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fviewsonic-vg2448a-24-full-hd%2Fp%2FN82E16824117082%3Fitem%3DN82E16824117082",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-117-082-S10.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.782Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -6184,14 +6207,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445831877552568684647614",
+        "sku": "0JC-0019-02F10",
         "price": 674.99,
         "saleprice": 621.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831877552568684647614&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fhp-32%2Fp%2F0JC-0019-02F10%3Fitem%3D0JC-0019-02F10",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V1DSD2303220Z4WMYE0.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.123Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -6476,13 +6498,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317492876265457320953",
-        "price": 301.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317492876265457320953&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flg-27gr83q-b-27-qhd-240-hz-ultragear-ips-black%2Fp%2FN82E16824026379%3Fitem%3D9SIABMTKRN3097",
+        "sku": "N82E16824026379",
+        "price": 499,
+        "saleprice": 269,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316708706505909222082&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flg-27gr83q-b-27-qhd-240-hz-ultragear-ips-black%2Fp%2FN82E16824026379%3Fitem%3DN82E16824026379",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-026-379-06.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.755Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -6999,13 +7021,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445833636707460554737857",
+        "sku": "9SIC0T2KU74468",
         "price": 139.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833636707460554737857&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0019-02H28%3Fitem%3D9SIC0T2KU74468",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD2405130VRKF389.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.702Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -7139,13 +7161,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458312597161732011220848",
-        "price": 313.03,
+        "sku": "9SIA0ZXK866662",
+        "price": 312.75,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312597161732011220848&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-00HZ-00022%3Fitem%3D9SIA0ZXK866662",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD2405130VRYU229.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.204Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -9785,13 +9807,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445838095639306007016705",
+        "sku": "0JC-000D-00EC3R",
         "price": 179.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838095639306007016705&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-000D-00EC3%3Fitem%3D0JC-000D-00EC3",
+        "saleprice": 125.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836843124414892941865&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-000D-00EC3R%3Fitem%3D0JC-000D-00EC3R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0JC-000D-00EC3-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.123Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -10160,13 +10182,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583679239504111791612",
-        "price": 249,
+        "sku": "9SIA4P0KEU7446",
+        "price": 199,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583679239504111791612&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flg-32u631a-b-32-qhd-100-hz-ips-black%2Fp%2FN82E16824026478%3Fitem%3D9SIA4P0KEU7446",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-026-478-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.435Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -10201,13 +10223,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445832730069348860867015",
-        "price": 1010.37,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832730069348860867015&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flg-27u631a-b-27-qhd-100-hz-ips-black%2Fp%2FN82E16824026477%3Fitem%3D9SIAD6HKGG9556",
+        "sku": "9SIBSZRKYB7806",
+        "price": 269,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317601294854904708246&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flg-27u631a-b-27-qhd-100-hz-ips-black%2Fp%2FN82E16824026477%3Fitem%3D9SIBSZRKYB7806",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-026-477-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.829Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -10444,13 +10466,13 @@ export default [
         "inStock": false
       },
       "newegg": {
-        "sku": "445837289008359025278643",
-        "price": 799,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837289008359025278643&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16824281343%3Fitem%3DN82E16824281343",
+        "sku": "N82E16824281343R",
+        "price": 799.99,
+        "saleprice": 584.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316548007699654219488&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16824281343R%3Fitem%3DN82E16824281343R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-343-12.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.782Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -11573,14 +11595,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445835862101508443831410",
+        "sku": "9SIC57KKTB7134",
         "price": 724.99,
-        "saleprice": 544.99,
+        "saleprice": 579.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835862101508443831410&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-0006-00B83%3Fitem%3D9SIC57KKTB7134",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2511150H1ZPJ95.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.623Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -11653,15 +11674,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445833479691399594440597",
-        "price": 424.99,
-        "saleprice": 339.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833479691399594440597&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-p2725d-27-qhd-100-hz-pro-27-plus-ips-black%2Fp%2FN82E16824260955%3Fitem%3D9SIC57KKTB7166",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-260-955-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.623Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIABMTKCA9666",
+        "price": 242.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836461258427905646823&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-27%2Fp%2F0JC-0004-00VJ2%3Fitem%3D9SIABMTKCA9666",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABMTD24073013KQU15B.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.5
       }
     },
     "screenSize": 27,
@@ -11790,6 +11810,16 @@ export default [
         "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641767&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641767.p%3FskuId%3D6641767",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16824026451",
+        "price": 349.99,
+        "saleprice": 229.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583333709281605084623&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flg-27us550-w-27-4k-60hz-ultrafine-ips-silver%2Fp%2FN82E16824026451%3Fitem%3DN82E16824026451",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-026-451-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "screenSize": 27,
@@ -11823,13 +11853,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583181741035400026639",
-        "price": 1999.99,
+        "sku": "9SIA4P0KPS1372",
+        "price": 1316.25,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583181741035400026639&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-000W-00DF9%3Fitem%3D9SIA4P0KPS1372",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2512060GZBWC1C.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.449Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12118,13 +12148,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445835055801926162305067",
+        "sku": "9SIAFJ8KTT3100",
         "price": 151.06,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835055801926162305067&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flenovo-s27-4e-27-lcd-100hz-refresh-rate-which-can-be-manually-adjust-to-48hz-thinkvision-ips-raven-black%2Fp%2F0JC-0006-00Y96%3Fitem%3D9SIAFJ8KTT3100",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD2510101BMKVTF6.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.970Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12226,13 +12256,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458311336708361619188787",
-        "price": 269.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311336708361619188787&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmobile-pixels-duex-float-2-pro-16-wqxga-120hz-ips%2Fp%2F0JC-00HZ-00023%3Fitem%3D9SIA1CZKT21593",
+        "sku": "0JC-00HZ-00023",
+        "price": 299.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313600625162678441143&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmobile-pixels-duex-float-2-pro-16-wqxga-120hz-ips%2Fp%2F0JC-00HZ-00023%3Fitem%3D0JC-00HZ-00023",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2603060PS3B247.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.258Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12593,13 +12623,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445833144978447888031302",
+        "sku": "9SIC0T2KWF7872",
         "price": 131.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833144978447888031302&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-000V-000A7%3Fitem%3D9SIC0T2KWF7872",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C0T2S26051211PKC061.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.702Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12745,14 +12775,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458313089851907016395934",
-        "price": 111.15,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313089851907016395934&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00Y92%3Fitem%3D9SIAFJ8KTT4425",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2509300CCLYCAD.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.970Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIACVBM013158",
+        "price": 119.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311574227823065786196&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flenovo-thinkvision-s22-4e-21-5-fhd-100hz-ips-black%2Fp%2F0JC-0006-00YD8%3Fitem%3D9SIACVBM013158",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2602020E7HMX03.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.62
       }
     },
     "screenSize": 21.5,
@@ -13362,7 +13392,7 @@ export default [
       "amazon": {
         "asin": "B0F1GF1KFC",
         "url": "https://www.amazon.com/dp/B0F1GF1KFC?tag=tiereduptech-20",
-        "price": 279.99,
+        "price": 218.49,
         "inStock": true
       }
     },
@@ -13386,8 +13416,18 @@ export default [
       "amazon": {
         "asin": "B0F1GFD44G",
         "url": "https://www.amazon.com/dp/B0F1GFD44G?tag=tiereduptech-20",
-        "price": 316.69,
+        "price": 251.72,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC57KKTB7119",
+        "price": 349.99,
+        "saleprice": 279.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314400160117402379090&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-0006-00B71%3Fitem%3D9SIC57KKTB7119",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C0T2S25061114Y8WYEB.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.83
       }
     },
     "addedAt": "2026-05-15T14:34:31.798Z",
@@ -13432,8 +13472,18 @@ export default [
       "amazon": {
         "asin": "B0CV1V12R7",
         "url": "https://www.amazon.com/dp/B0CV1V12R7?tag=tiereduptech-20",
-        "price": 179,
+        "price": 151.05,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16824281311",
+        "price": 249.99,
+        "saleprice": 159.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583303927953275778388&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-vy27uq-27%2Fp%2FN82E16824281311%3Fitem%3DN82E16824281311",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-311-06.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.798Z",
@@ -13454,7 +13504,7 @@ export default [
       "amazon": {
         "asin": "B0FLL3L9JG",
         "url": "https://www.amazon.com/dp/B0FLL3L9JG?tag=tiereduptech-20",
-        "price": 399.99,
+        "price": 339.99,
         "inStock": true
       }
     },
@@ -13478,7 +13528,7 @@ export default [
       "amazon": {
         "asin": "B0D9HWRQM7",
         "url": "https://www.amazon.com/dp/B0D9HWRQM7?tag=tiereduptech-20",
-        "price": 169.99,
+        "price": 159.99,
         "inStock": true
       }
     },
@@ -13501,7 +13551,7 @@ export default [
       "amazon": {
         "asin": "B0D1DZNL3H",
         "url": "https://www.amazon.com/dp/B0D1DZNL3H?tag=tiereduptech-20",
-        "price": 266,
+        "price": 219.99,
         "inStock": true
       }
     },
@@ -13523,8 +13573,18 @@ export default [
       "amazon": {
         "asin": "B0F765XFX8",
         "url": "https://www.amazon.com/dp/B0F765XFX8?tag=tiereduptech-20",
-        "price": 279.99,
+        "price": 208.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8X5KPY2155",
+        "price": 497,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835143715632023791857&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-000A-000B4%3Fitem%3D9SIA8X5KPY2155",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S2512200A8AME4D.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.96
       }
     },
     "addedAt": "2026-05-15T14:34:31.799Z",
@@ -13546,7 +13606,7 @@ export default [
       "amazon": {
         "asin": "B0DVM3BJHK",
         "url": "https://www.amazon.com/dp/B0DVM3BJHK?tag=tiereduptech-20",
-        "price": 899.99,
+        "price": 699.99,
         "inStock": true
       }
     },
@@ -13570,7 +13630,7 @@ export default [
       "amazon": {
         "asin": "B0DZL719V1",
         "url": "https://www.amazon.com/dp/B0DZL719V1?tag=tiereduptech-20",
-        "price": 349.99,
+        "price": 270.72,
         "inStock": true
       }
     },
@@ -13594,7 +13654,7 @@ export default [
       "amazon": {
         "asin": "B07CS3JGPC",
         "url": "https://www.amazon.com/dp/B07CS3JGPC?tag=tiereduptech-20",
-        "price": 301.23,
+        "price": 191.7,
         "inStock": true
       }
     },
@@ -13617,7 +13677,7 @@ export default [
       "amazon": {
         "asin": "B0F1GD9YFN",
         "url": "https://www.amazon.com/dp/B0F1GD9YFN?tag=tiereduptech-20",
-        "price": 329.99,
+        "price": 284.99,
         "inStock": true
       }
     },
@@ -13640,8 +13700,18 @@ export default [
       "amazon": {
         "asin": "B0C7G6F8BY",
         "url": "https://www.amazon.com/dp/B0C7G6F8BY?tag=tiereduptech-20",
-        "price": 225.99,
+        "price": 170.05,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16824281278",
+        "price": 299,
+        "saleprice": 170.05,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831665298767679570749&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-vp327q-32-uhd%2Fp%2FN82E16824281278%3Fitem%3DN82E16824281278",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-278-03.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.7
       }
     },
     "addedAt": "2026-05-15T14:34:31.799Z",
@@ -13661,7 +13731,7 @@ export default [
       "amazon": {
         "asin": "B0D6CKL4HV",
         "url": "https://www.amazon.com/dp/B0D6CKL4HV?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 149.99,
         "inStock": true
       }
     },
@@ -13683,7 +13753,7 @@ export default [
       "amazon": {
         "asin": "B0FB7QRCS8",
         "url": "https://www.amazon.com/dp/B0FB7QRCS8?tag=tiereduptech-20",
-        "price": 225.99,
+        "price": 171.46,
         "inStock": true
       }
     },
@@ -13707,8 +13777,18 @@ export default [
       "amazon": {
         "asin": "B0F23BB8TW",
         "url": "https://www.amazon.com/dp/B0F23BB8TW?tag=tiereduptech-20",
-        "price": 599,
+        "price": 486.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA4P0KT81277",
+        "price": 486.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311413475164656125334&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16824281369%3Fitem%3D9SIA4P0KT81277",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-369-03.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.63
       }
     },
     "addedAt": "2026-05-15T14:34:31.799Z",
@@ -13753,7 +13833,7 @@ export default [
       "amazon": {
         "asin": "B0F5WLDGLN",
         "url": "https://www.amazon.com/dp/B0F5WLDGLN?tag=tiereduptech-20",
-        "price": 299.99,
+        "price": 229.99,
         "inStock": true
       }
     },
@@ -13869,7 +13949,7 @@ export default [
       "amazon": {
         "asin": "B0GLV9PML4",
         "url": "https://www.amazon.com/dp/B0GLV9PML4?tag=tiereduptech-20",
-        "price": 225,
+        "price": 149.99,
         "inStock": true
       }
     },
@@ -13892,7 +13972,7 @@ export default [
       "amazon": {
         "asin": "B0GD1LMWH3",
         "url": "https://www.amazon.com/dp/B0GD1LMWH3?tag=tiereduptech-20",
-        "price": 189.99,
+        "price": 170.99,
         "inStock": true
       }
     },
@@ -13917,6 +13997,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0GF49PV1T?tag=tiereduptech-20",
         "price": 139.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16824475538",
+        "price": 179.99,
+        "saleprice": 139.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311183109773245878268&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-mp273q-e14-27-wqhd-144-hz-pro-series-ips-matte-black%2Fp%2FN82E16824475538%3Fitem%3DN82E16824475538",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-538-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.55
       }
     },
     "addedAt": "2026-05-15T14:34:31.800Z",
@@ -13939,7 +14029,7 @@ export default [
       "amazon": {
         "asin": "B0D8LH2VSP",
         "url": "https://www.amazon.com/dp/B0D8LH2VSP?tag=tiereduptech-20",
-        "price": 159.99,
+        "price": 134.99,
         "inStock": true
       }
     },
@@ -13963,7 +14053,7 @@ export default [
       "amazon": {
         "asin": "B0FNPSLCFL",
         "url": "https://www.amazon.com/dp/B0FNPSLCFL?tag=tiereduptech-20",
-        "price": 189.99,
+        "price": 179.99,
         "inStock": true
       }
     },
@@ -13986,7 +14076,7 @@ export default [
       "amazon": {
         "asin": "B0FLLKBNY7",
         "url": "https://www.amazon.com/dp/B0FLLKBNY7?tag=tiereduptech-20",
-        "price": 269.99,
+        "price": 218.49,
         "inStock": true
       }
     },
@@ -14010,7 +14100,7 @@ export default [
       "amazon": {
         "asin": "B0D2FZS3JM",
         "url": "https://www.amazon.com/dp/B0D2FZS3JM?tag=tiereduptech-20",
-        "price": 169.99,
+        "price": 141.55,
         "inStock": true
       }
     },
@@ -14034,7 +14124,7 @@ export default [
       "amazon": {
         "asin": "B0BZR9TMBJ",
         "url": "https://www.amazon.com/dp/B0BZR9TMBJ?tag=tiereduptech-20",
-        "price": 242.3,
+        "price": 170.05,
         "inStock": true
       }
     },
@@ -14057,7 +14147,7 @@ export default [
       "amazon": {
         "asin": "B0CY79PH3C",
         "url": "https://www.amazon.com/dp/B0CY79PH3C?tag=tiereduptech-20",
-        "price": 141.95,
+        "price": 123.49,
         "inStock": true
       }
     },
@@ -14081,8 +14171,18 @@ export default [
       "amazon": {
         "asin": "B0C4Z8RFY9",
         "url": "https://www.amazon.com/dp/B0C4Z8RFY9?tag=tiereduptech-20",
-        "price": 169.99,
+        "price": 149.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBKFRK9F3023",
+        "price": 259.9,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837127770220470118415&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-000A-00077%3Fitem%3D9SIBKFRK9F3023",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S2401110V89W5C1.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.95
       }
     },
     "addedAt": "2026-05-15T14:34:31.800Z",
@@ -14129,7 +14229,7 @@ export default [
       "amazon": {
         "asin": "B0FKK8W46F",
         "url": "https://www.amazon.com/dp/B0FKK8W46F?tag=tiereduptech-20",
-        "price": 266.15,
+        "price": 199.99,
         "inStock": true
       }
     },
@@ -14151,7 +14251,7 @@ export default [
       "amazon": {
         "asin": "B0FLLKY158",
         "url": "https://www.amazon.com/dp/B0FLLKY158?tag=tiereduptech-20",
-        "price": 229.99,
+        "price": 199.99,
         "inStock": true
       }
     },
@@ -14175,7 +14275,7 @@ export default [
       "amazon": {
         "asin": "B0D2FSYS5J",
         "url": "https://www.amazon.com/dp/B0D2FSYS5J?tag=tiereduptech-20",
-        "price": 199,
+        "price": 180.49,
         "inStock": true
       }
     },
@@ -14199,7 +14299,7 @@ export default [
       "amazon": {
         "asin": "B0DLGDCN9J",
         "url": "https://www.amazon.com/dp/B0DLGDCN9J?tag=tiereduptech-20",
-        "price": 169.99,
+        "price": 159.97,
         "inStock": true
       }
     },
@@ -14224,8 +14324,18 @@ export default [
       "amazon": {
         "asin": "B0G1DZM5QW",
         "url": "https://www.amazon.com/dp/B0G1DZM5QW?tag=tiereduptech-20",
-        "price": 249.99,
+        "price": 219.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16824027385",
+        "price": 349.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836492625934828313354&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-ls32fg502enxza-32-qhd-max-180-hz-ips-black%2Fp%2FN82E16824027385%3Fitem%3DN82E16824027385",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-027-385-18.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.71
       }
     },
     "addedAt": "2026-05-15T14:34:31.801Z",
@@ -14247,7 +14357,7 @@ export default [
       "amazon": {
         "asin": "B0CRGJC5ZD",
         "url": "https://www.amazon.com/dp/B0CRGJC5ZD?tag=tiereduptech-20",
-        "price": 260.99,
+        "price": 189.99,
         "inStock": true
       }
     },
@@ -14271,7 +14381,7 @@ export default [
       "amazon": {
         "asin": "B0FRJ71FWV",
         "url": "https://www.amazon.com/dp/B0FRJ71FWV?tag=tiereduptech-20",
-        "price": 169.99,
+        "price": 159.99,
         "inStock": true
       }
     },
@@ -14295,8 +14405,18 @@ export default [
       "amazon": {
         "asin": "B088MKF848",
         "url": "https://www.amazon.com/dp/B088MKF848?tag=tiereduptech-20",
-        "price": 283.37,
+        "price": 279.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA4P0DAK4177",
+        "price": 314.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839203184899957302075&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-vg32vq1b-32-wqhd-165-hz-tuf-gaming-va-black%2Fp%2FN82E16824281075%3Fitem%3D9SIA4P0DAK4177",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-075-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.9
       }
     },
     "addedAt": "2026-05-15T14:34:31.801Z",
@@ -14319,7 +14439,7 @@ export default [
       "amazon": {
         "asin": "B0DQ9MMZVV",
         "url": "https://www.amazon.com/dp/B0DQ9MMZVV?tag=tiereduptech-20",
-        "price": 249,
+        "price": 178.6,
         "inStock": true
       }
     },
@@ -14342,7 +14462,7 @@ export default [
       "amazon": {
         "asin": "B0FTT4VH34",
         "url": "https://www.amazon.com/dp/B0FTT4VH34?tag=tiereduptech-20",
-        "price": 230.01,
+        "price": 169.99,
         "inStock": true
       }
     },
@@ -14366,7 +14486,7 @@ export default [
       "amazon": {
         "asin": "B0GKFLQ9SW",
         "url": "https://www.amazon.com/dp/B0GKFLQ9SW?tag=tiereduptech-20",
-        "price": 99.99,
+        "price": 94.99,
         "inStock": true
       }
     },
@@ -14389,7 +14509,7 @@ export default [
       "amazon": {
         "asin": "B0FDDM968S",
         "url": "https://www.amazon.com/dp/B0FDDM968S?tag=tiereduptech-20",
-        "price": 107.97,
+        "price": 99.97,
         "inStock": true
       }
     },
@@ -14410,7 +14530,7 @@ export default [
       "amazon": {
         "asin": "B0FP1FDQ2Y",
         "url": "https://www.amazon.com/dp/B0FP1FDQ2Y?tag=tiereduptech-20",
-        "price": 179,
+        "price": 123.49,
         "inStock": true
       }
     },
@@ -14433,7 +14553,7 @@ export default [
       "amazon": {
         "asin": "B0FLNF14MQ",
         "url": "https://www.amazon.com/dp/B0FLNF14MQ?tag=tiereduptech-20",
-        "price": 119.99,
+        "price": 88.34,
         "inStock": true
       }
     },
@@ -14458,6 +14578,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0C1T35BCF?tag=tiereduptech-20",
         "price": 179.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8X5KB58724",
+        "price": 338.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838608903355963710382&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-000P-00R61%3Fitem%3D9SIA8X5KB58724",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD24060211KX3O44.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.77
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
@@ -14480,7 +14610,7 @@ export default [
       "amazon": {
         "asin": "B0GGRKQ494",
         "url": "https://www.amazon.com/dp/B0GGRKQ494?tag=tiereduptech-20",
-        "price": 149.99,
+        "price": 109.99,
         "inStock": true
       }
     },
@@ -14504,7 +14634,7 @@ export default [
       "amazon": {
         "asin": "B0FPW9V7VK",
         "url": "https://www.amazon.com/dp/B0FPW9V7VK?tag=tiereduptech-20",
-        "price": 109.99,
+        "price": 99.99,
         "inStock": true
       }
     },
@@ -14527,7 +14657,7 @@ export default [
       "amazon": {
         "asin": "B0B45998BM",
         "url": "https://www.amazon.com/dp/B0B45998BM?tag=tiereduptech-20",
-        "price": 169.95,
+        "price": 252.12,
         "inStock": true
       }
     },
@@ -14551,7 +14681,7 @@ export default [
       "amazon": {
         "asin": "B0C63HDHPR",
         "url": "https://www.amazon.com/dp/B0C63HDHPR?tag=tiereduptech-20",
-        "price": 329.95,
+        "price": 269,
         "inStock": true
       }
     },
@@ -14620,8 +14750,18 @@ export default [
       "amazon": {
         "asin": "B0CZSGWLD5",
         "url": "https://www.amazon.com/dp/B0CZSGWLD5?tag=tiereduptech-20",
-        "price": 624.99,
+        "price": 484.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC0T2KHV6606",
+        "price": 625,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317985214492716915215&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-000V-00087%3Fitem%3D9SIC0T2KHV6606",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/3D4-000V-00087-14.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.95
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
@@ -14643,8 +14783,18 @@ export default [
       "amazon": {
         "asin": "B0D7NNK43H",
         "url": "https://www.amazon.com/dp/B0D7NNK43H?tag=tiereduptech-20",
-        "price": 1154.34,
+        "price": 834.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8X5KPX6297",
+        "price": 1459.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583590561993412716687&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-pg32ucdmr-32-uhd-240-hz-rog-swift-oled-black%2Fp%2FN82E16824281376%3Fitem%3D9SIA8X5KPX6297",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-376-07.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.57
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
@@ -14666,8 +14816,18 @@ export default [
       "amazon": {
         "asin": "B0F2349MJT",
         "url": "https://www.amazon.com/dp/B0F2349MJT?tag=tiereduptech-20",
-        "price": 349,
+        "price": 249,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8X5KSK9174",
+        "price": 358.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832452861249481347848&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16824281372%3Fitem%3D9SIA8X5KSK9174",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD25060507C09P89.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.67
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
@@ -14689,8 +14849,18 @@ export default [
       "amazon": {
         "asin": "B0D7NSZRJW",
         "url": "https://www.amazon.com/dp/B0D7NSZRJW?tag=tiereduptech-20",
-        "price": 599,
+        "price": 534,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16824281333",
+        "price": 759.99,
+        "saleprice": 534,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836440430797235238677&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-xg27acdng-26-5-qhd-360-hz-rog-strix-oled-qd-oled-black%2Fp%2FN82E16824281333%3Fitem%3DN82E16824281333",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-333-10.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.5
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
@@ -14712,7 +14882,7 @@ export default [
       "amazon": {
         "asin": "B0DM6PZFHX",
         "url": "https://www.amazon.com/dp/B0DM6PZFHX?tag=tiereduptech-20",
-        "price": 299,
+        "price": 229,
         "inStock": true
       }
     },
@@ -14735,7 +14905,7 @@ export default [
       "amazon": {
         "asin": "B0F72R4KLC",
         "url": "https://www.amazon.com/dp/B0F72R4KLC?tag=tiereduptech-20",
-        "price": 129,
+        "price": 159,
         "inStock": true
       }
     },
@@ -14760,6 +14930,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0C95RWXDL?tag=tiereduptech-20",
         "price": 275,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC0T2KG07929",
+        "price": 359.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836451367879518008230&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-000V-00085%3Fitem%3D9SIC0T2KG07929",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S2401260WHX9905.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.88
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
@@ -14806,7 +14986,7 @@ export default [
       "amazon": {
         "asin": "B0FPFKCSYW",
         "url": "https://www.amazon.com/dp/B0FPFKCSYW?tag=tiereduptech-20",
-        "price": 259.99,
+        "price": 219.99,
         "inStock": true
       }
     },
@@ -14830,7 +15010,7 @@ export default [
       "amazon": {
         "asin": "B0F233D6W1",
         "url": "https://www.amazon.com/dp/B0F233D6W1?tag=tiereduptech-20",
-        "price": 219,
+        "price": 189.05,
         "inStock": true
       }
     },
@@ -14853,7 +15033,7 @@ export default [
       "amazon": {
         "asin": "B0FNQ4B2Z2",
         "url": "https://www.amazon.com/dp/B0FNQ4B2Z2?tag=tiereduptech-20",
-        "price": 477.99,
+        "price": 449,
         "inStock": true
       }
     },
@@ -14877,7 +15057,7 @@ export default [
       "amazon": {
         "asin": "B0GDSC8K2H",
         "url": "https://www.amazon.com/dp/B0GDSC8K2H?tag=tiereduptech-20",
-        "price": 594.67,
+        "price": 384.99,
         "inStock": true
       }
     },
@@ -14901,7 +15081,7 @@ export default [
       "amazon": {
         "asin": "B0FNQDNGXY",
         "url": "https://www.amazon.com/dp/B0FNQDNGXY?tag=tiereduptech-20",
-        "price": 319.95,
+        "price": 349.54,
         "inStock": true
       }
     },
@@ -14924,8 +15104,18 @@ export default [
       "amazon": {
         "asin": "B0G5Z5N274",
         "url": "https://www.amazon.com/dp/B0G5Z5N274?tag=tiereduptech-20",
-        "price": 369.99,
+        "price": 329.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16824011536",
+        "price": 549.99,
+        "saleprice": 314.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315744969718227244126&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Facer-x27u-w1-26-5-wqhd-240hz-x-series-qd-oled-black%2Fp%2FN82E16824011536%3Fitem%3DN82E16824011536",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-011-536-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.67
       }
     },
     "addedAt": "2026-05-15T14:34:31.803Z",
@@ -14947,7 +15137,7 @@ export default [
       "amazon": {
         "asin": "B0F15C7JL2",
         "url": "https://www.amazon.com/dp/B0F15C7JL2?tag=tiereduptech-20",
-        "price": 999.99,
+        "price": 789.53,
         "inStock": true
       }
     },
@@ -14972,7 +15162,7 @@ export default [
       "amazon": {
         "asin": "B0F6724X5N",
         "url": "https://www.amazon.com/dp/B0F6724X5N?tag=tiereduptech-20",
-        "price": 749.99,
+        "price": 614.99,
         "inStock": true
       }
     },
@@ -15020,7 +15210,7 @@ export default [
       "amazon": {
         "asin": "B0CTRXPJMC",
         "url": "https://www.amazon.com/dp/B0CTRXPJMC?tag=tiereduptech-20",
-        "price": 772.2,
+        "price": 670.96,
         "inStock": true
       }
     },
@@ -15046,6 +15236,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0CZWM44QP?tag=tiereduptech-20",
         "price": 605.4,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16824281313",
+        "price": 599,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317344473270158677263&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-xg27aqdmg-27-qhd-240-hz-oled%2Fp%2FN82E16824281313%3Fitem%3DN82E16824281313",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-313-10.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.71
       }
     },
     "addedAt": "2026-05-15T14:34:31.803Z",
@@ -15067,8 +15267,18 @@ export default [
       "amazon": {
         "asin": "B0CV26XVMD",
         "url": "https://www.amazon.com/dp/B0CV26XVMD?tag=tiereduptech-20",
-        "price": 1248.96,
+        "price": 1289.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8X5KPX6297",
+        "price": 1459.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583590561993412716687&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-pg32ucdmr-32-uhd-240-hz-rog-swift-oled-black%2Fp%2FN82E16824281376%3Fitem%3D9SIA8X5KPX6297",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-376-07.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.74
       }
     },
     "addedAt": "2026-05-15T14:34:31.803Z",
@@ -15090,7 +15300,7 @@ export default [
       "amazon": {
         "asin": "B0FWHPY1GJ",
         "url": "https://www.amazon.com/dp/B0FWHPY1GJ?tag=tiereduptech-20",
-        "price": 605.4,
+        "price": 434,
         "inStock": true
       }
     },
@@ -15116,6 +15326,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0CWPXVQJN?tag=tiereduptech-20",
         "price": 589.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA4P0KGS6018",
+        "price": 639.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311309487754448306803&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-271qpx-qd-oled-e2-27-qhd-240-hz-metallic-black%2Fp%2FN82E16824475394%3Fitem%3D9SIA4P0KGS6018",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-394-05.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.65
       }
     },
     "addedAt": "2026-05-15T14:34:31.803Z",
@@ -15137,7 +15357,7 @@ export default [
       "amazon": {
         "asin": "B0CTSC3VS4",
         "url": "https://www.amazon.com/dp/B0CTSC3VS4?tag=tiereduptech-20",
-        "price": 869,
+        "price": 759.99,
         "inStock": true
       }
     },
@@ -15161,7 +15381,7 @@ export default [
       "amazon": {
         "asin": "B0C1KPXPM9",
         "url": "https://www.amazon.com/dp/B0C1KPXPM9?tag=tiereduptech-20",
-        "price": 246.95,
+        "price": 208.99,
         "inStock": true
       }
     },
@@ -15184,7 +15404,7 @@ export default [
       "amazon": {
         "asin": "B0F1H325FN",
         "url": "https://www.amazon.com/dp/B0F1H325FN?tag=tiereduptech-20",
-        "price": 379.99,
+        "price": 314.99,
         "inStock": true
       }
     },
@@ -15208,7 +15428,7 @@ export default [
       "amazon": {
         "asin": "B0C6LSD69F",
         "url": "https://www.amazon.com/dp/B0C6LSD69F?tag=tiereduptech-20",
-        "price": 299,
+        "price": 300,
         "inStock": true
       }
     },
@@ -15231,7 +15451,7 @@ export default [
       "amazon": {
         "asin": "B0CXS8J4Y5",
         "url": "https://www.amazon.com/dp/B0CXS8J4Y5?tag=tiereduptech-20",
-        "price": 329.99,
+        "price": 236.55,
         "inStock": true
       }
     },
@@ -15254,7 +15474,7 @@ export default [
       "amazon": {
         "asin": "B08MVBYWGQ",
         "url": "https://www.amazon.com/dp/B08MVBYWGQ?tag=tiereduptech-20",
-        "price": 279.99,
+        "price": 265.04,
         "inStock": true
       }
     },
@@ -15303,6 +15523,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0F234D8G9?tag=tiereduptech-20",
         "price": 99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAMG8KNM8917",
+        "price": 221.44,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833408809157315861625&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-vg249ql3a-24-fhd-180-hz-tuf-gaming-ips%2Fp%2FN82E16824281289%3Fitem%3D9SIAMG8KNM8917",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-289-03.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.55
       }
     },
     "addedAt": "2026-05-15T14:34:31.804Z",
@@ -15324,7 +15554,7 @@ export default [
       "amazon": {
         "asin": "B0FLL354M2",
         "url": "https://www.amazon.com/dp/B0FLL354M2?tag=tiereduptech-20",
-        "price": 149.99,
+        "price": 94.99,
         "inStock": true
       }
     },
@@ -15347,7 +15577,7 @@ export default [
       "amazon": {
         "asin": "B0G3T4KCTR",
         "url": "https://www.amazon.com/dp/B0G3T4KCTR?tag=tiereduptech-20",
-        "price": 94.99,
+        "price": 82.99,
         "inStock": true
       }
     },
@@ -15414,7 +15644,7 @@ export default [
       "amazon": {
         "asin": "B0FKVGTDWX",
         "url": "https://www.amazon.com/dp/B0FKVGTDWX?tag=tiereduptech-20",
-        "price": 99.99,
+        "price": 105.99,
         "inStock": true
       }
     },
@@ -15438,7 +15668,7 @@ export default [
       "amazon": {
         "asin": "B0B6DFG1FQ",
         "url": "https://www.amazon.com/dp/B0B6DFG1FQ?tag=tiereduptech-20",
-        "price": 102.34,
+        "price": 109.99,
         "inStock": true
       }
     },
@@ -15470,7 +15700,9 @@ export default [
     "resolution": "1080p",
     "refresh": 200,
     "panel": "VA",
-    "curved": true
+    "curved": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 101080,
@@ -15485,7 +15717,7 @@ export default [
       "amazon": {
         "asin": "B0FDC2JBYG",
         "url": "https://www.amazon.com/dp/B0FDC2JBYG?tag=tiereduptech-20",
-        "price": 636.82,
+        "price": 699,
         "inStock": true
       }
     },
@@ -15510,7 +15742,7 @@ export default [
       "amazon": {
         "asin": "B0DFZZHK6X",
         "url": "https://www.amazon.com/dp/B0DFZZHK6X?tag=tiereduptech-20",
-        "price": 189.99,
+        "price": 179.99,
         "inStock": true
       }
     },
@@ -15534,7 +15766,7 @@ export default [
       "amazon": {
         "asin": "B0F14PFFPS",
         "url": "https://www.amazon.com/dp/B0F14PFFPS?tag=tiereduptech-20",
-        "price": 999.99,
+        "price": 899,
         "inStock": true
       }
     },
@@ -15558,7 +15790,7 @@ export default [
       "amazon": {
         "asin": "B0DYG9DKX8",
         "url": "https://www.amazon.com/dp/B0DYG9DKX8?tag=tiereduptech-20",
-        "price": 1499.99,
+        "price": 1337.8,
         "inStock": true
       }
     },
@@ -15583,7 +15815,7 @@ export default [
       "amazon": {
         "asin": "B0F15CGTGW",
         "url": "https://www.amazon.com/dp/B0F15CGTGW?tag=tiereduptech-20",
-        "price": 948.9,
+        "price": 699,
         "inStock": true
       }
     },
@@ -15608,7 +15840,7 @@ export default [
       "amazon": {
         "asin": "B0FDC38XGQ",
         "url": "https://www.amazon.com/dp/B0FDC38XGQ?tag=tiereduptech-20",
-        "price": 999.99,
+        "price": 899.99,
         "inStock": true
       }
     },
@@ -15633,7 +15865,7 @@ export default [
       "amazon": {
         "asin": "B0FLM15Q5L",
         "url": "https://www.amazon.com/dp/B0FLM15Q5L?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 169.99,
         "inStock": true
       }
     },
@@ -15657,7 +15889,7 @@ export default [
       "amazon": {
         "asin": "B0GVT7Q6QG",
         "url": "https://www.amazon.com/dp/B0GVT7Q6QG?tag=tiereduptech-20",
-        "price": 369,
+        "price": 295.2,
         "inStock": true
       }
     },
@@ -15681,7 +15913,7 @@ export default [
       "amazon": {
         "asin": "B0D7NXSQ44",
         "url": "https://www.amazon.com/dp/B0D7NXSQ44?tag=tiereduptech-20",
-        "price": 799,
+        "price": 664,
         "inStock": true
       }
     },
@@ -15704,7 +15936,7 @@ export default [
       "amazon": {
         "asin": "B0DM6SHQTN",
         "url": "https://www.amazon.com/dp/B0DM6SHQTN?tag=tiereduptech-20",
-        "price": 939.99,
+        "price": 934,
         "inStock": true
       }
     },
@@ -15727,7 +15959,7 @@ export default [
       "amazon": {
         "asin": "B0CV24GQ9W",
         "url": "https://www.amazon.com/dp/B0CV24GQ9W?tag=tiereduptech-20",
-        "price": 254.99,
+        "price": 189,
         "inStock": true
       }
     },
@@ -15750,7 +15982,7 @@ export default [
       "amazon": {
         "asin": "B0FP152SJW",
         "url": "https://www.amazon.com/dp/B0FP152SJW?tag=tiereduptech-20",
-        "price": 604.98,
+        "price": 549,
         "inStock": true
       }
     },
@@ -15773,8 +16005,18 @@ export default [
       "amazon": {
         "asin": "B0F7313X8L",
         "url": "https://www.amazon.com/dp/B0F7313X8L?tag=tiereduptech-20",
-        "price": 944.39,
+        "price": 699,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "0JC-001P-00NT6",
+        "price": 999,
+        "saleprice": 699,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835162612506166168842&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-xg32ucwg-32-uhd-165hz-rog-strix-oled-black%2Fp%2F0JC-001P-00NT6%3Fitem%3D0JC-001P-00NT6",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S25102111Q73S05.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.63
       }
     },
     "addedAt": "2026-05-15T14:34:31.805Z",
@@ -15796,8 +16038,18 @@ export default [
       "amazon": {
         "asin": "B0F732KMQQ",
         "url": "https://www.amazon.com/dp/B0F732KMQQ?tag=tiereduptech-20",
-        "price": 996.25,
+        "price": 814,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16824281378",
+        "price": 1099.99,
+        "saleprice": 814,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832888976892554489590&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16824281378%3Fitem%3DN82E16824281378",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-378-17.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.64
       }
     },
     "addedAt": "2026-05-15T14:34:31.805Z",
@@ -15821,6 +16073,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0GR79KXGX?tag=tiereduptech-20",
         "price": 399.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16824281413",
+        "price": 429,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835584556440800449662&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-xg27ucgr-w-27-4k-162-hz-rog-strix-fast-ips%2Fp%2FN82E16824281413%3Fitem%3DN82E16824281413",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-413-12.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.57
       }
     },
     "addedAt": "2026-05-15T14:34:31.805Z",
@@ -15844,6 +16106,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0CZWJG5GZ?tag=tiereduptech-20",
         "price": 389,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16824281413",
+        "price": 429,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835584556440800449662&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-xg27ucgr-w-27-4k-162-hz-rog-strix-fast-ips%2Fp%2FN82E16824281413%3Fitem%3DN82E16824281413",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-413-12.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.74
       }
     },
     "addedAt": "2026-05-15T14:34:31.805Z",
@@ -15865,7 +16137,7 @@ export default [
       "amazon": {
         "asin": "B0F6YDDH6G",
         "url": "https://www.amazon.com/dp/B0F6YDDH6G?tag=tiereduptech-20",
-        "price": 198.37,
+        "price": 168.61,
         "inStock": true
       }
     },
@@ -15889,7 +16161,7 @@ export default [
       "amazon": {
         "asin": "B0GL2M67BV",
         "url": "https://www.amazon.com/dp/B0GL2M67BV?tag=tiereduptech-20",
-        "price": 639.99,
+        "price": 569.97,
         "inStock": true
       }
     },
@@ -15937,7 +16209,7 @@ export default [
       "amazon": {
         "asin": "B0CRGJF7WL",
         "url": "https://www.amazon.com/dp/B0CRGJF7WL?tag=tiereduptech-20",
-        "price": 949.99,
+        "price": 799.99,
         "inStock": true
       }
     },
@@ -15960,7 +16232,7 @@ export default [
       "amazon": {
         "asin": "B0DHJBWY52",
         "url": "https://www.amazon.com/dp/B0DHJBWY52?tag=tiereduptech-20",
-        "price": 899.99,
+        "price": 664.99,
         "inStock": true
       }
     },
@@ -15984,7 +16256,7 @@ export default [
       "amazon": {
         "asin": "B0DWT9XN4D",
         "url": "https://www.amazon.com/dp/B0DWT9XN4D?tag=tiereduptech-20",
-        "price": 749.99,
+        "price": 699.99,
         "inStock": true
       }
     },
@@ -16008,7 +16280,7 @@ export default [
       "amazon": {
         "asin": "B0CDQM55C9",
         "url": "https://www.amazon.com/dp/B0CDQM55C9?tag=tiereduptech-20",
-        "price": 2099.99,
+        "price": 1499.99,
         "inStock": true
       }
     },
@@ -16032,7 +16304,7 @@ export default [
       "amazon": {
         "asin": "B0DSGJRKCR",
         "url": "https://www.amazon.com/dp/B0DSGJRKCR?tag=tiereduptech-20",
-        "price": 1178.21,
+        "price": 799.99,
         "inStock": true
       }
     },
@@ -16057,7 +16329,7 @@ export default [
       "amazon": {
         "asin": "B0D5ZKSR9C",
         "url": "https://www.amazon.com/dp/B0D5ZKSR9C?tag=tiereduptech-20",
-        "price": 189.98,
+        "price": 149.99,
         "inStock": true
       }
     },
@@ -16080,7 +16352,7 @@ export default [
       "amazon": {
         "asin": "B0CZPLQZ8P",
         "url": "https://www.amazon.com/dp/B0CZPLQZ8P?tag=tiereduptech-20",
-        "price": 379,
+        "price": 319.99,
         "inStock": true
       }
     },
@@ -16104,7 +16376,7 @@ export default [
       "amazon": {
         "asin": "B0D5ZZ9G26",
         "url": "https://www.amazon.com/dp/B0D5ZZ9G26?tag=tiereduptech-20",
-        "price": 185.99,
+        "price": 189.99,
         "inStock": true
       }
     },
@@ -16127,7 +16399,7 @@ export default [
       "amazon": {
         "asin": "B0FJYNVR3R",
         "url": "https://www.amazon.com/dp/B0FJYNVR3R?tag=tiereduptech-20",
-        "price": 727.99,
+        "price": 630.23,
         "inStock": true
       }
     },
@@ -16150,7 +16422,7 @@ export default [
       "amazon": {
         "asin": "B0FJYNKQ5T",
         "url": "https://www.amazon.com/dp/B0FJYNKQ5T?tag=tiereduptech-20",
-        "price": 599.99,
+        "price": 469.99,
         "inStock": true
       }
     },
@@ -16173,7 +16445,7 @@ export default [
       "amazon": {
         "asin": "B0D5Z565D5",
         "url": "https://www.amazon.com/dp/B0D5Z565D5?tag=tiereduptech-20",
-        "price": 219.99,
+        "price": 179.99,
         "inStock": true
       }
     },
@@ -16196,7 +16468,7 @@ export default [
       "amazon": {
         "asin": "B0D1DPFZLZ",
         "url": "https://www.amazon.com/dp/B0D1DPFZLZ?tag=tiereduptech-20",
-        "price": 684.16,
+        "price": 629.99,
         "inStock": true
       }
     },
@@ -16219,7 +16491,7 @@ export default [
       "amazon": {
         "asin": "B0GKFQXR3R",
         "url": "https://www.amazon.com/dp/B0GKFQXR3R?tag=tiereduptech-20",
-        "price": 179.99,
+        "price": 151.99,
         "inStock": true
       }
     },
@@ -16245,7 +16517,7 @@ export default [
       "amazon": {
         "asin": "B0GTZTV7TP",
         "url": "https://www.amazon.com/dp/B0GTZTV7TP?tag=tiereduptech-20",
-        "price": 147.52,
+        "price": 119.99,
         "inStock": true
       }
     },
@@ -16341,7 +16613,7 @@ export default [
       "amazon": {
         "asin": "B0GKFW9GCV",
         "url": "https://www.amazon.com/dp/B0GKFW9GCV?tag=tiereduptech-20",
-        "price": 449.99,
+        "price": 399.99,
         "inStock": true
       }
     },
@@ -16365,7 +16637,7 @@ export default [
       "amazon": {
         "asin": "B0D1RL9D39",
         "url": "https://www.amazon.com/dp/B0D1RL9D39?tag=tiereduptech-20",
-        "price": 796.97,
+        "price": 557.99,
         "inStock": true
       }
     },
@@ -16389,7 +16661,7 @@ export default [
       "amazon": {
         "asin": "B0D9HY3JH2",
         "url": "https://www.amazon.com/dp/B0D9HY3JH2?tag=tiereduptech-20",
-        "price": 649.99,
+        "price": 587.75,
         "inStock": true
       }
     },

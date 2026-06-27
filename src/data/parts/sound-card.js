@@ -14,7 +14,7 @@ export default [
     "cardHeight": 1,
     "deals": {
       "amazon": {
-        "price": 161,
+        "price": 104.99,
         "url": "https://www.amazon.com/dp/B086QN3WNX?tag=tiereduptech-20",
         "inStock": true
       }
@@ -52,7 +52,7 @@ export default [
     "asin": "B086QN3WNX",
     "deals": {
       "amazon": {
-        "price": 161.49,
+        "price": 104.99,
         "url": "https://www.amazon.com/dp/B086QN3WNX?tag=tiereduptech-20",
         "inStock": true
       }
@@ -125,7 +125,7 @@ export default [
     "bitDepth": "24-bit",
     "deals": {
       "amazon": {
-        "price": 35.52,
+        "price": 29.89,
         "url": "https://www.amazon.com/dp/B07XJ89KV6?tag=tiereduptech-20",
         "inStock": true
       }
@@ -174,7 +174,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 96305,

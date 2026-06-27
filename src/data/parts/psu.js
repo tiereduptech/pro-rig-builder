@@ -19,7 +19,7 @@ export default [
     "depth": 160,
     "deals": {
       "amazon": {
-        "price": 194.99,
+        "price": 159.99,
         "url": "https://www.amazon.com/dp/B0BP88MYM4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -47,7 +47,7 @@ export default [
     "depth": 160,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 151.49,
         "url": "https://www.amazon.com/dp/B0FLGMTSRQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -75,7 +75,7 @@ export default [
     "depth": 160,
     "deals": {
       "amazon": {
-        "price": 129.99,
+        "price": 109.49,
         "url": "https://www.amazon.com/dp/B0FLFGG1CC?tag=tiereduptech-20",
         "inStock": true
       }
@@ -131,7 +131,7 @@ export default [
     "depth": 170,
     "deals": {
       "amazon": {
-        "price": 449,
+        "price": 479.99,
         "url": "https://www.amazon.com/dp/B0C572JWW9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -159,7 +159,7 @@ export default [
     "depth": 170,
     "deals": {
       "amazon": {
-        "price": 449,
+        "price": 479.99,
         "url": "https://www.amazon.com/dp/B0C572JWW9?tag=tiereduptech-20",
         "inStock": true
       },
@@ -197,7 +197,7 @@ export default [
     "depth": 140,
     "deals": {
       "amazon": {
-        "price": 140,
+        "price": 124.99,
         "url": "https://www.amazon.com/dp/B0DLFMTX12?tag=tiereduptech-20",
         "inStock": true
       }
@@ -253,17 +253,17 @@ export default [
     "depth": 180,
     "deals": {
       "amazon": {
-        "price": 249.9,
+        "price": 229.9,
         "url": "https://www.amazon.com/dp/B0BV6CWS2Z?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "1HU-004H-000R8",
         "price": 329.9,
-        "saleprice": 249.9,
+        "saleprice": 229.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312960447334295269169&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-atx-3-0-compatible-1000-w-80-plus-titanium-certified-power-supplies-black%2Fp%2F1HU-004H-000R8%3Fitem%3D1HU-004H-000R8",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS2301270XTEZS9A.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -299,7 +299,7 @@ export default [
     "color": "Black",
     "value": 29,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "rgb": false,
     "fans": 1
   },
@@ -329,7 +329,7 @@ export default [
     "color": "Black",
     "value": 19,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "rgb": false,
     "fans": 1
   },
@@ -359,7 +359,7 @@ export default [
     "color": "Black",
     "value": 33,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "rgb": false,
     "fans": 1
   },
@@ -409,7 +409,7 @@ export default [
     "depth": 150,
     "deals": {
       "amazon": {
-        "price": 304.99,
+        "price": 265,
         "url": "https://www.amazon.com/dp/B08DZY15CW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -437,17 +437,17 @@ export default [
     "depth": 150,
     "deals": {
       "amazon": {
-        "price": 99.99,
+        "price": 64.48,
         "url": "https://www.amazon.com/dp/B0DJ6DGHCP?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "N82E16817153438",
-        "price": 135.99,
-        "saleprice": 122.99,
+        "price": 129.99,
+        "saleprice": 109.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313790435892450906729&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-gf3-series-atx-12v-v3-0-eps-v2-93-850-w-80-plus-gold-certified-power-supply-ps-tpd-0850fnfagu-4%2Fp%2FN82E16817153438%3Fitem%3DN82E16817153438",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-438-13.png",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -482,10 +482,10 @@ export default [
       "newegg": {
         "sku": "N82E16817153436",
         "price": 199.99,
-        "saleprice": 174.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314381131311387775079&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-gf3-series-atx-12v-v3-0-eps-v2-93-1200-w-80-plus-gold-certified-power-supply-ps-tpd-1200fnfagu-4%2Fp%2FN82E16817153436%3Fitem%3DN82E16817153436",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-436-15.png",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -513,7 +513,7 @@ export default [
     "depth": 140,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B0FJYN5GWD?tag=tiereduptech-20",
         "inStock": true
       }
@@ -549,7 +549,7 @@ export default [
     "color": "Black",
     "value": 43,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "rgb": false,
     "fans": 1
   },
@@ -571,7 +571,7 @@ export default [
     "depth": 100,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 142.49,
         "url": "https://www.amazon.com/dp/B0D45QCZHX?tag=tiereduptech-20",
         "inStock": true
       },
@@ -617,7 +617,7 @@ export default [
     "color": "Black",
     "value": 6,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "rgb": false,
     "fans": 1
   },
@@ -639,17 +639,17 @@ export default [
     "depth": 100,
     "deals": {
       "amazon": {
-        "price": 171.99,
+        "price": 139.98,
         "url": "https://www.amazon.com/dp/B097Q9DB5G?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16817171197",
-        "price": 169.99,
-        "saleprice": 158.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310225729528324808470&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-v850-sfx-gold-white-edition-sfx-12v-ver-3-42-850-w-80-plus-gold-certified-power-supply-mpy-8501-sfhagv-wu%2Fp%2FN82E16817171197%3Fitem%3DN82E16817171197",
+        "sku": "9SIA2W0M034962",
+        "price": 139.98,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839659710963963108976&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-v850-sfx-gold-white-edition-sfx-12v-ver-3-42-850-w-80-plus-gold-certified-power-supply-mpy-8501-sfhagv-wu%2Fp%2FN82E16817171197%3Fitem%3D9SIA2W0M034962",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-171-197-26.png",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -715,7 +715,7 @@ export default [
     "depth": 170,
     "deals": {
       "amazon": {
-        "price": 449,
+        "price": 479.99,
         "url": "https://www.amazon.com/dp/B0C572JWW9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -779,7 +779,7 @@ export default [
     "color": "Black",
     "value": 26,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "rgb": false,
     "fans": 1
   },
@@ -801,17 +801,17 @@ export default [
     "depth": 150,
     "deals": {
       "amazon": {
-        "price": 109.99,
+        "price": 94.99,
         "url": "https://www.amazon.com/dp/B0CB9MSJ5N?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "9SIA8N2KNP6310",
-        "price": 119.4,
+        "price": 125.34,
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310687423622555431870&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-306-7zp8a11-ce0%2Fp%2F1HU-001W-000E3%3Fitem%3D9SIA8N2KNP6310",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD2404091844CFDF.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -839,17 +839,17 @@ export default [
     "depth": 140,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 75.99,
         "url": "https://www.amazon.com/dp/B0CC3QBGDL?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAAY9KW77468",
-        "price": 88.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312981496152576981862&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx12v-750-w-80-plus-gold-certified-power-supplies-black-mag-a750gl-pcie5%2Fp%2FN82E16817701022%3Fitem%3D9SIAAY9KW77468",
+        "sku": "N82E16817701022",
+        "price": 109.99,
+        "saleprice": 79.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835106365202183666303&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx12v-750-w-80-plus-gold-certified-power-supplies-black-mag-a750gl-pcie5%2Fp%2FN82E16817701022%3Fitem%3DN82E16817701022",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-022-36.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -885,7 +885,7 @@ export default [
     "color": "Black",
     "value": 42,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "rgb": false,
     "fans": 1
   },
@@ -915,7 +915,7 @@ export default [
     "color": "Black",
     "value": 54,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "rgb": false,
     "fans": 1
   },
@@ -937,17 +937,17 @@ export default [
     "depth": 140,
     "deals": {
       "amazon": {
-        "price": 39.73,
+        "price": 31.74,
         "url": "https://www.amazon.com/dp/B014W3EMAO?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "N82E16817153232",
         "price": 59.99,
-        "saleprice": 42.99,
+        "saleprice": 32.49,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834502630408599773934&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-smart-series-intel-atx-12v-v2-3-600-w-80-plus-certified-power-supply-ps-spd-0600npcwus-w%2Fp%2FN82E16817153232%3Fitem%3DN82E16817153232",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-232-01.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -983,7 +983,7 @@ export default [
     "color": "Black",
     "value": 98,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "rgb": false,
     "fans": 1
   },
@@ -1013,7 +1013,7 @@ export default [
     "color": "Black",
     "value": 28,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "rgb": false,
     "fans": 1
   },
@@ -1044,7 +1044,7 @@ export default [
     "value": 0,
     "rgb": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "fans": 1
   },
   {
@@ -1093,17 +1093,17 @@ export default [
     "depth": 150,
     "deals": {
       "amazon": {
-        "price": 95.6,
+        "price": 86.06,
         "url": "https://www.amazon.com/dp/B0CCV79718?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "N82E16817987020",
         "price": 199.99,
-        "saleprice": 99.99,
+        "saleprice": 79.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836226668155786670776&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fphanteks-revolt-atx-3-0-compatible-1000-w-80-plus-platinum-certified-power-supplies-black-ph-p1000pr-bk01c%2Fp%2FN82E16817987020%3Fitem%3DN82E16817987020",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-987-020-01.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -1169,7 +1169,7 @@ export default [
     "reviews": 635,
     "deals": {
       "amazon": {
-        "price": 109.99,
+        "price": 103.99,
         "url": "https://www.amazon.com/dp/B0DPR86ZC8?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1179,14 +1179,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317598227208365245199",
-        "price": 144.99,
-        "saleprice": 129.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317598227208365245199&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rmx-series-atx-3-1-compatible-850-w-cybenetics-gold-power-supply-black-rm850e%2Fp%2FN82E16817139336%3Fitem%3DN82E16817139336",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-336-06.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "sku": "N82E16817139341",
+        "price": 154.99,
+        "saleprice": 127.79,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317583474413979691950&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rmx-series-atx-3-1-compatible-850-w-cybenetics-gold-power-supply-white-rm850e%2Fp%2FN82E16817139341%3Fitem%3DN82E16817139341",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-341-08.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
         "matchScore": 1
       }
     },
@@ -1224,20 +1223,19 @@ export default [
     "reviews": 4266,
     "deals": {
       "amazon": {
-        "price": 54.99,
+        "price": 42.55,
         "url": "https://www.amazon.com/dp/B014W3EAX8?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "445838779473257571147226",
-        "price": 69.99,
-        "saleprice": 54.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838779473257571147226&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-smart-series-intel-atx-12v-2-3-700-w-80-plus-certified-power-supply-ps-spd-0700npcwus-w%2Fp%2FN82E16817153231%3Fitem%3DN82E16817153231",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-231-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIA25VFUB1123",
+        "price": 78.43,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837975429422660076137&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-smart-series-intel-atx-12v-2-3-700-w-80-plus-certified-power-supplies-ps-spd-0700npcwus-w%2Fp%2F1HU-0014-005P9%3Fitem%3D9SIA25VFUB1123",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A73MS2109108D10C.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.95
       },
       "bestbuy": {
         "price": 59.49,
@@ -1286,10 +1284,10 @@ export default [
       "newegg": {
         "sku": "9SIBGX1K8T9298",
         "price": 59.99,
-        "saleprice": null,
+        "saleprice": 54.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317137168686578072235&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HU-00Z0-000U1%3Fitem%3D9SIBGX1K8T9298",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1HU-00Z0-000U1-01.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.89
       }
@@ -1325,18 +1323,18 @@ export default [
     "reviews": 137,
     "deals": {
       "amazon": {
-        "price": 49.97,
+        "price": 47.47,
         "url": "https://www.amazon.com/dp/B0FFPQ38QV?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "445835992261356267283584",
+        "sku": "N82E16817182464",
         "price": 59.99,
+        "saleprice": 49.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835992261356267283584&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Frosewill-atx-3-1-compatible-650-w-80-plus-bronze-certified-power-supply-vsb650%2Fp%2FN82E16817182464%3Fitem%3DN82E16817182464",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-182-464-22.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -1372,18 +1370,18 @@ export default [
     "reviews": 124,
     "deals": {
       "amazon": {
-        "price": 69.97,
+        "price": 66.47,
         "url": "https://www.amazon.com/dp/B0FFQC5VGM?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "445831477940565646203828",
+        "sku": "N82E16817182467",
         "price": 79.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831477940565646203828&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Frosewill-atx-3-1-compatible-750-w-80-plus-gold-certified-power-supply-vmg750%2Fp%2FN82E16817182467%3Fitem%3DN82E16817182467",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-182-467-35.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -1419,18 +1417,18 @@ export default [
     "reviews": 92,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 71.22,
         "url": "https://www.amazon.com/dp/B0FFQN6344?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316094050296447977173",
+        "sku": "N82E16817182468",
         "price": 89.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316094050296447977173&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Frosewill-atx-3-1-compatible-850-w-80-plus-gold-certified-power-supply-vmg850%2Fp%2FN82E16817182468%3Fitem%3DN82E16817182468",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-182-468-34.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "newegg_openbox": {
@@ -1478,7 +1476,7 @@ export default [
     "reviews": 82,
     "deals": {
       "amazon": {
-        "price": 99.99,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0FDVKJBML?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1515,18 +1513,18 @@ export default [
     "reviews": 89,
     "deals": {
       "amazon": {
-        "price": 109.99,
+        "price": 80.74,
         "url": "https://www.amazon.com/dp/B0FFQRCM37?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "445837815928741026732474",
+        "sku": "N82E16817182469R",
         "price": 109.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837815928741026732474&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Frosewill-atx-3-1-compatible-1000-w-80-plus-gold-certified-power-supply-vmg1000%2Fp%2FN82E16817182469%3Fitem%3DN82E16817182469",
+        "saleprice": 99.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311610507333691134478&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Frosewill-atx-3-1-compatible-1000-w-80-plus-gold-certified-power-supply-vmg1000%2Fp%2FN82E16817182469R%3Fitem%3DN82E16817182469R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-182-469-34.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "newegg_openbox": {
@@ -1574,7 +1572,7 @@ export default [
     "reviews": 676,
     "deals": {
       "amazon": {
-        "price": 95.99,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0CKY88GMT?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1584,13 +1582,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458315948600433859544499",
-        "price": 109.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315948600433859544499&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-gf1-2024-series-atx-12v-v2-4-eps-v2-92-850-w-80-plus-gold-certified-power-supplies-ps-tpd-0850fnfagu-p%2Fp%2FN82E16817153460%3Fitem%3DN82E16817153460",
+        "sku": "9SIA0ZXK3H7127",
+        "price": 125.49,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316216649451836637326&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-gf1-2024-series-atx-12v-v2-4-eps-v2-92-850-w-80-plus-gold-certified-power-supplies-ps-tpd-0850fnfagu-p%2Fp%2FN82E16817153460%3Fitem%3D9SIA0ZXK3H7127",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-460-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -1678,7 +1676,7 @@ export default [
     "reviews": 378,
     "deals": {
       "amazon": {
-        "price": 147.77,
+        "price": 132.98,
         "url": "https://www.amazon.com/dp/B0DPR5RZ1T?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1743,7 +1741,7 @@ export default [
         "saleprice": 299.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834394250909023333106&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-hx1200i-atx-3-1-compatible-1200-w-up-to-92-efficiency-power-supplies-black%2Fp%2FN82E16817139344%3Fitem%3DN82E16817139344",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-344-02.png",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.94
       }
@@ -1782,7 +1780,7 @@ export default [
     "reviews": 85,
     "deals": {
       "amazon": {
-        "price": 159.9,
+        "price": 135.4,
         "url": "https://www.amazon.com/dp/B0DVJNVW8P?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1817,7 +1815,7 @@ export default [
     "reviews": 65,
     "deals": {
       "amazon": {
-        "price": 99.99,
+        "price": 108.24,
         "url": "https://www.amazon.com/dp/B0FQ69SSM9?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1881,7 +1879,7 @@ export default [
         "saleprice": 49.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318313335088065622511&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-pro-series-atx-3-1-compatible-650-w-80-plus-gold-certified-power-supply-black-pro-650g%2Fp%2FN82E16817955024%3Fitem%3DN82E16817955024",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-024-01.png",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.57
       }
@@ -1916,7 +1914,7 @@ export default [
     "reviews": 2719,
     "deals": {
       "amazon": {
-        "price": 47.99,
+        "price": 44.99,
         "url": "https://www.amazon.com/dp/B0B4MVDRX4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2038,13 +2036,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458313978174766782124356",
+        "sku": "N82E16817139303",
         "price": 234.99,
+        "saleprice": 187.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313978174766782124356&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rm1000x-shift-atx-atx-3-0-compatible-1000-w-80-plus-gold-certified-power-supply-cp-9020253-na%2Fp%2FN82E16817139303%3Fitem%3DN82E16817139303",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-303-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -2087,7 +2085,7 @@ export default [
     "reviews": 1155,
     "deals": {
       "amazon": {
-        "price": 267.78,
+        "price": 249.9,
         "url": "https://www.amazon.com/dp/B0CC8JMDVH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2135,7 +2133,7 @@ export default [
         "saleprice": 99.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836024102785030102930&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fvetroo-atx-3-1-compatible-1000-w-80-plus-gold-certified-power-supplies-white%2Fp%2F1HU-021H-00021%3Fitem%3D9SIBGX1K980266",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGX1S25091002N492D9.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -2228,13 +2226,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317072813074643171568",
-        "price": 110.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317072813074643171568&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-atx-3-1-compatible-850-w-80-plus-gold-certified-power-supplies-black%2Fp%2F1HU-01PP-00013%3Fitem%3D9SIAFSTKE63020",
+        "sku": "1HU-01PP-00013",
+        "price": 120.99,
+        "saleprice": 117.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314835319391566045546&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-atx-3-1-compatible-850-w-80-plus-gold-certified-power-supplies-black%2Fp%2F1HU-01PP-00013%3Fitem%3D1HU-01PP-00013",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS250210EWuri.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.978Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -2285,13 +2283,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458310742503989471895625",
-        "price": 289.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310742503989471895625&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-hxi-series-atx-3-0-compatible-1000-w-80-plus-platinum-certified-power-supply-hx1000i-2023%2Fp%2FN82E16817139313%3Fitem%3DN82E16817139313",
+        "sku": "9SIA2W0KT79714",
+        "price": 255.99,
+        "saleprice": 229.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831765258449276097056&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-hxi-series-atx-3-0-compatible-1000-w-80-plus-platinum-certified-power-supply-hx1000i-2023%2Fp%2FN82E16817139313%3Fitem%3D9SIA2W0KT79714",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-313-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -2329,7 +2327,7 @@ export default [
     "reviews": 185,
     "deals": {
       "amazon": {
-        "price": 102.99,
+        "price": 127.36,
         "url": "https://www.amazon.com/dp/B0CWLWGM67?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2478,14 +2476,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458311587779408914117122",
+        "sku": "N82E16817139326",
         "price": 154.99,
-        "saleprice": 69.99,
+        "saleprice": 79.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311587779408914117122&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rmx-shift-series-atx-3-0-compatible-80-plus-gold-certified-power-supply-rm750-white%2Fp%2FN82E16817139326%3Fitem%3DN82E16817139326",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-326-06.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -2532,14 +2529,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458311613567672493520306",
+        "sku": "9SIBGX1KFB0729",
         "price": 89.99,
         "saleprice": 79.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311613567672493520306&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fvetroo-850w-power-supply-atx-3-1-pcie-5-1-850-w-80-plus-gold-certified-power-supplies-white%2Fp%2F1HU-021H-00025%3Fitem%3D9SIBGX1KFB0729",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGX1S2510130CVN7IBD.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.434Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -2575,7 +2571,7 @@ export default [
     "reviews": 32,
     "deals": {
       "amazon": {
-        "price": 99.9,
+        "price": 94.9,
         "url": "https://www.amazon.com/dp/B0DVJGSK2W?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2617,13 +2613,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445839365373826084371845",
-        "price": 70.27,
+        "sku": "9SIA0ZXAYC5524",
+        "price": 69.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839365373826084371845&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fapevia-corp-prestige-series-atx12v-600-w-80-plus-gold-certified-power-supply-atx-pr600w%2Fp%2FN82E16817148078%3Fitem%3D9SIA0ZXAYC5524",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-148-078-S01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.198Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -2667,6 +2663,16 @@ export default [
         "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586151&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586151.p%3FskuId%3D6586151",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817116059",
+        "price": 199.99,
+        "saleprice": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831222404312764201936&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-atx-3-1-850-w-80-plus-gold-certified-power-supply-ps-8g1bb-us%2Fp%2FN82E16817116059%3Fitem%3DN82E16817116059",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-116-059-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.58
       }
     },
     "discount": 17,
@@ -2703,7 +2709,7 @@ export default [
     "reviews": 152,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 90.42,
         "url": "https://www.amazon.com/dp/B0D7ZD9MLV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2740,7 +2746,7 @@ export default [
     "reviews": 126,
     "deals": {
       "amazon": {
-        "price": 72.79,
+        "price": 77.01,
         "url": "https://www.amazon.com/dp/B0CFXGFQNZ?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2915,18 +2921,18 @@ export default [
     "reviews": 18,
     "deals": {
       "amazon": {
-        "price": 47.99,
+        "price": 45.59,
         "url": "https://www.amazon.com/dp/B0GFH7L16Y?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458314933724554380727505",
+        "sku": "N82E16817182471",
         "price": 59.99,
+        "saleprice": 49.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314933724554380727505&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Frosewill-atx-3-1-compatible-650-w-80-plus-gold-certified-power-supply-vng650%2Fp%2FN82E16817182471%3Fitem%3DN82E16817182471",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-182-471-12.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -3006,19 +3012,19 @@ export default [
     "reviews": 13087,
     "deals": {
       "amazon": {
-        "price": 204.98,
+        "price": 219.99,
         "url": "https://www.amazon.com/dp/B079H5WNXN?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16817139327",
+        "sku": "N82E16817139333",
         "price": 169.99,
-        "saleprice": 149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831440662891355057517&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rmx-shift-series-atx-3-0-compatible-80-plus-gold-certified-power-supply-rm850-white%2Fp%2FN82E16817139327%3Fitem%3DN82E16817139327",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-327-09.png",
-        "matchedAt": "2026-05-13",
+        "saleprice": 129.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834379743297167524435&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rmx-series-atx-3-1-compatible-850-w-cybenetics-gold-power-supply-black-rm850x%2Fp%2FN82E16817139333%3Fitem%3DN82E16817139333",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-333-04.png",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 0.8
       }
     },
     "additionalImages": [
@@ -3054,7 +3060,7 @@ export default [
     "reviews": 5450,
     "deals": {
       "amazon": {
-        "price": 94.99,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0BDKRZM62?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3089,9 +3095,19 @@ export default [
     "reviews": 1379,
     "deals": {
       "amazon": {
-        "price": 165.99,
+        "price": 113.99,
         "url": "https://www.amazon.com/dp/B08LP6WS35?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA2W0M034962",
+        "price": 139.98,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839659710963963108976&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-v850-sfx-gold-white-edition-sfx-12v-ver-3-42-850-w-80-plus-gold-certified-power-supply-mpy-8501-sfhagv-wu%2Fp%2FN82E16817171197%3Fitem%3D9SIA2W0M034962",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-171-197-26.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "discount": 18,
@@ -3127,7 +3143,7 @@ export default [
     "reviews": 5450,
     "deals": {
       "amazon": {
-        "price": 76.33,
+        "price": 71.99,
         "url": "https://www.amazon.com/dp/B0BF5FCB5D?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3163,7 +3179,7 @@ export default [
     "reviews": 1231,
     "deals": {
       "amazon": {
-        "price": 55.99,
+        "price": 52.99,
         "url": "https://www.amazon.com/dp/B08R1QLNPH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3201,7 +3217,7 @@ export default [
     "reviews": 1231,
     "deals": {
       "amazon": {
-        "price": 42.99,
+        "price": 39.99,
         "url": "https://www.amazon.com/dp/B09Y826BQ4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3290,7 +3306,7 @@ export default [
     "reviews": 706,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 69.99,
         "url": "https://www.amazon.com/dp/B096KCD9LD?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3332,12 +3348,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16817171242",
-        "price": 99.99,
-        "saleprice": 79.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839348829784749893708&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-atx-12v-ver-3-0-750-w-80-plus-gold-certified-power-supply-black-mpx-7503-afag-2buv%2Fp%2FN82E16817171242%3Fitem%3DN82E16817171242",
+        "sku": "9SIA4P0KZ48121",
+        "price": 71.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839014075540322548362&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-atx-12v-ver-3-0-750-w-80-plus-gold-certified-power-supply-black-mpx-7503-afag-2buv%2Fp%2FN82E16817171242%3Fitem%3D9SIA4P0KZ48121",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-171-242-01.png",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.58
       },
@@ -3380,7 +3396,7 @@ export default [
     "reviews": 327,
     "deals": {
       "amazon": {
-        "price": 159.61,
+        "price": 128.49,
         "url": "https://www.amazon.com/dp/B0F9YY3R57?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3449,19 +3465,18 @@ export default [
     "reviews": 345,
     "deals": {
       "amazon": {
-        "price": 59.99,
+        "price": 52.48,
         "url": "https://www.amazon.com/dp/B098ZF39QX?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "445837060404712836920709",
-        "price": 64.99,
-        "saleprice": 46.99,
+        "sku": "9SIABW9FD19837",
+        "price": 69.99,
+        "saleprice": 53.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837060404712836920709&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fzalman-atx-600-w-80-plus-bronze-certified-power-supplies-black%2Fp%2F1HU-0011-00024%3Fitem%3D9SIABW9FD19837",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABW9S22021818XN783F.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.765Z",
-        "matchMethod": "sftp:upc",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABW9S26060213U1W731.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -3497,19 +3512,18 @@ export default [
     "reviews": 288,
     "deals": {
       "amazon": {
-        "price": 81.61,
+        "price": 89.98,
         "url": "https://www.amazon.com/dp/B0D68VH8DR?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458314274103775378282360",
-        "price": 109.99,
-        "saleprice": 99.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314274103775378282360&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-atx-12v-ver-3-0-850-w-80-plus-gold-certified-power-supply-black-mpx-8503-afag-2buv%2Fp%2FN82E16817171241%3Fitem%3DN82E16817171241",
+        "sku": "9SIA4P0KM53317",
+        "price": 103.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458399931984530747162&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-atx-12v-ver-3-0-850-w-80-plus-gold-certified-power-supply-black-mpx-8503-afag-2buv%2Fp%2FN82E16817171241%3Fitem%3D9SIA4P0KM53317",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-171-241-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -3631,14 +3645,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316909674234559455735",
-        "price": 74.99,
-        "saleprice": 67.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316909674234559455735&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsilverstone-essential-series-atx12v-v2-4-550-w-80-plus-bronze-certified-power-supply-sst-et550-b%2Fp%2FN82E16817256189%3Fitem%3DN82E16817256189",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-256-189-V01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "sku": "9SIA62VKPK5294",
+        "price": 85.29,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312133100267846291794&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HU-001G-000B7%3Fitem%3D9SIA62VKPK5294",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8W1_1_201811281943233782.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -3678,7 +3691,7 @@ export default [
     "reviews": 161,
     "deals": {
       "amazon": {
-        "price": 139.9,
+        "price": 111.9,
         "url": "https://www.amazon.com/dp/B07ZTW7TSW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3715,17 +3728,17 @@ export default [
     "reviews": 148,
     "deals": {
       "amazon": {
-        "price": 66.99,
+        "price": 56.94,
         "url": "https://www.amazon.com/dp/B0CLMXSXC7?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "9SIBGX1K8T9298",
         "price": 59.99,
-        "saleprice": null,
+        "saleprice": 54.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317137168686578072235&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HU-00Z0-000U1%3Fitem%3D9SIBGX1K8T9298",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1HU-00Z0-000U1-01.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.64
       }
@@ -3760,7 +3773,7 @@ export default [
     "reviews": 148,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 67.99,
         "url": "https://www.amazon.com/dp/B0CLMJ9CR1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3878,7 +3891,7 @@ export default [
     "reviews": 109,
     "deals": {
       "amazon": {
-        "price": 178.99,
+        "price": 156.26,
         "url": "https://www.amazon.com/dp/B0D45PQ8C4?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4042,7 +4055,7 @@ export default [
     "reviews": 67,
     "deals": {
       "amazon": {
-        "price": 79.95,
+        "price": 65.3,
         "url": "https://www.amazon.com/dp/B0DMYCCRV1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4080,7 +4093,7 @@ export default [
     "reviews": 62,
     "deals": {
       "amazon": {
-        "price": 99.99,
+        "price": 73.9,
         "url": "https://www.amazon.com/dp/B0FBGRW29R?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4117,7 +4130,7 @@ export default [
     "reviews": 62,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 66.98,
         "url": "https://www.amazon.com/dp/B0FBGTGMK4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4154,7 +4167,7 @@ export default [
     "reviews": 51,
     "deals": {
       "amazon": {
-        "price": 79.5,
+        "price": 69.95,
         "url": "https://www.amazon.com/dp/B09D39JD1G?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4265,7 +4278,7 @@ export default [
     "reviews": 41,
     "deals": {
       "amazon": {
-        "price": 429.9,
+        "price": 365.4,
         "url": "https://www.amazon.com/dp/B0C6FYQC81?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4302,7 +4315,7 @@ export default [
     "reviews": 39,
     "deals": {
       "amazon": {
-        "price": 66.99,
+        "price": 62.99,
         "url": "https://www.amazon.com/dp/B0CNJQ36H6?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4672,9 +4685,19 @@ export default [
     "reviews": 15,
     "deals": {
       "amazon": {
-        "price": 54.99,
+        "price": 43.99,
         "url": "https://www.amazon.com/dp/B0DLGP93K4?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBNFDKC50839",
+        "price": 59.99,
+        "saleprice": 44.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838392866591256187682&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fraidmax-cobra-atx-3-1-compatible-650-w-80-plus-gold-certified-power-supplies-black-650w%2Fp%2F1HU-0061-000M1%3Fitem%3D9SIBNFDKC50839",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BNFDS2411040DYSVA3E.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -4709,7 +4732,7 @@ export default [
     "reviews": 18,
     "deals": {
       "amazon": {
-        "price": 109.99,
+        "price": 79.9,
         "url": "https://www.amazon.com/dp/B0FTLWLRZS?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4782,7 +4805,7 @@ export default [
     "reviews": 11,
     "deals": {
       "amazon": {
-        "price": 55.99,
+        "price": 44.79,
         "url": "https://www.amazon.com/dp/B0FLPWH7DZ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4817,9 +4840,19 @@ export default [
     "reviews": 11,
     "deals": {
       "amazon": {
-        "price": 61.7,
+        "price": 66.04,
         "url": "https://www.amazon.com/dp/B07SBL6NC3?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA62VKPK5294",
+        "price": 85.29,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312133100267846291794&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HU-001G-000B7%3Fitem%3D9SIA62VKPK5294",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8W1_1_201811281943233782.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.63
       }
     },
     "discount": 7,
@@ -4854,17 +4887,17 @@ export default [
     "reviews": 9,
     "deals": {
       "amazon": {
-        "price": 127.45,
+        "price": 118.2,
         "url": "https://www.amazon.com/dp/B0FNMCM5S1?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "N82E16817139334",
         "price": 209.99,
-        "saleprice": 179.99,
+        "saleprice": 144.2,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458353269413137818452&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rmx-series-atx-3-1-compatible-1000-w-cybenetics-gold-power-supply-black-rm1000x%2Fp%2FN82E16817139334%3Fitem%3DN82E16817139334",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-334-05.png",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.79
       }
@@ -4902,17 +4935,17 @@ export default [
     "reviews": 7,
     "deals": {
       "amazon": {
-        "price": 97.95,
+        "price": 82.3,
         "url": "https://www.amazon.com/dp/B0DBWQ6J11?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "N82E16817139342",
-        "price": 199.99,
-        "saleprice": 179.99,
+        "price": 174.99,
+        "saleprice": 151.49,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312947697440119198874&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rmx-series-atx-3-1-compatible-1000-w-cybenetics-gold-power-supply-white-rm1000e%2Fp%2FN82E16817139342%3Fitem%3DN82E16817139342",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-342-05.png",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.79
       }
@@ -4986,7 +5019,7 @@ export default [
     "reviews": 6,
     "deals": {
       "amazon": {
-        "price": 99.99,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B0FJYN9HP1?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4996,15 +5029,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458310364418083688461725",
-        "price": 99.99,
-        "saleprice": 89.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310364418083688461725&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16817139345%3Fitem%3DN82E16817139345",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-345-09.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "N82E16817139346",
+        "price": 89.99,
+        "saleprice": 79.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314447465949458418345&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16817139346%3Fitem%3DN82E16817139346",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-346-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.83
       }
     },
     "additionalImages": [
@@ -5157,10 +5189,10 @@ export default [
       "newegg": {
         "sku": "N82E16817153231",
         "price": 69.99,
-        "saleprice": 54.99,
+        "saleprice": 44.79,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838779473257571147226&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-smart-series-intel-atx-12v-2-3-700-w-80-plus-certified-power-supply-ps-spd-0700npcwus-w%2Fp%2FN82E16817153231%3Fitem%3DN82E16817153231",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-231-01.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.78
       }
@@ -5234,13 +5266,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458313311798966703522491",
-        "price": 299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313311798966703522491&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-gf3-series-ps-tpd-1650fnfagu-4-1650-w%2Fp%2FN82E16817153434%3Fitem%3D9SIA8EFK657892",
+        "sku": "9SIB0ASKJV3623",
+        "price": 395,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835610274857352416621&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-gf3-series-ps-tpd-1650fnfagu-4-1650-w%2Fp%2FN82E16817153434%3Fitem%3D9SIB0ASKJV3623",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-434-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.449Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -5274,14 +5306,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583105569546302473547",
+        "sku": "N82E16817701021",
         "price": 129.99,
-        "saleprice": 122.55,
+        "saleprice": 94.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583105569546302473547&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx12v-850-w-80-plus-gold-certified-power-supplies-black-mag-a850gl-pcie5%2Fp%2FN82E16817701021%3Fitem%3DN82E16817701021",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-021-39.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "msi": {
@@ -5320,13 +5351,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458312981496152576981862",
-        "price": 88.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312981496152576981862&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx12v-750-w-80-plus-gold-certified-power-supplies-black-mag-a750gl-pcie5%2Fp%2FN82E16817701022%3Fitem%3D9SIAAY9KW77468",
+        "sku": "N82E16817701022",
+        "price": 109.99,
+        "saleprice": 79.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835106365202183666303&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx12v-750-w-80-plus-gold-certified-power-supplies-black-mag-a750gl-pcie5%2Fp%2FN82E16817701022%3Fitem%3DN82E16817701022",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-022-36.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.710Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "msi": {
@@ -5482,14 +5513,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445836611150844822325399",
-        "price": 99.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836611150844822325399&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-atx-3-0-compatible-850-w-meet-80-plus-bronze-at-115vac-input-power-supply-spd-850ah2clb%2Fp%2FN82E16817153454%3Fitem%3DN82E16817153454",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-454-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "N82E16817153455",
+        "price": 89.99,
+        "saleprice": 83.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316758397877777061880&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-atx-3-0-compatible-750-w-meet-80-plus-bronze-at-115vac-input-power-supply-spd-750ah2clb%2Fp%2FN82E16817153455%3Fitem%3DN82E16817153455",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-455-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.71
       }
     },
     "watts": 850,
@@ -5522,14 +5553,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458312626880584533682380",
-        "price": 79.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312626880584533682380&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-atx-3-0-compatible-650-w-meet-80-plus-bronze-at-115vac-input-power-supply-spd-650ah2clb%2Fp%2FN82E16817153456%3Fitem%3DN82E16817153456",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-456-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "N82E16817153455",
+        "price": 89.99,
+        "saleprice": 83.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316758397877777061880&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-atx-3-0-compatible-750-w-meet-80-plus-bronze-at-115vac-input-power-supply-spd-750ah2clb%2Fp%2FN82E16817153455%3Fitem%3DN82E16817153455",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-455-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.71
       }
     },
     "watts": 650,
@@ -5562,13 +5593,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445837960819492298267356",
+        "sku": "N82E16817153461",
         "price": 99.99,
+        "saleprice": 84.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837960819492298267356&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-gf1-2024-series-atx-12v-v2-4-eps-v2-92-750-w-80-plus-gold-certified-power-supplies-ps-tpd-0750fnfagu-p%2Fp%2FN82E16817153461%3Fitem%3DN82E16817153461",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-461-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -5631,15 +5662,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316669895036760590262",
-        "price": 149.99,
-        "saleprice": 124.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316669895036760590262&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-atx12v-v3-1-eps12v-v2-92-850-w-80-plus-gold-certified-power-supplies-white-pa-8g2bw-us%2Fp%2FN82E16817116051%3Fitem%3DN82E16817116051",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-116-051-03.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.774Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "N82E16817116059",
+        "price": 199.99,
+        "saleprice": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831222404312764201936&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-atx-3-1-850-w-80-plus-gold-certified-power-supply-ps-8g1bb-us%2Fp%2FN82E16817116059%3Fitem%3DN82E16817116059",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-116-059-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.73
       }
     },
     "watts": 850,
@@ -5671,15 +5701,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458311279158287480052101",
-        "price": 204.99,
-        "saleprice": 179.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311279158287480052101&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-atx12v-v3-1-eps12v-v2-92-1200-w-80-plus-gold-certified-power-supplies-white-pa-2g2bw-us%2Fp%2FN82E16817116055%3Fitem%3DN82E16817116055",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-116-055-05.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.774Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIBZW0KKU2436",
+        "price": 250.89,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834032263064159084884&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-c-series-atx-3-0-compatible-eps12v-1200-w-80-plus-gold-certified-power-supply-pa-2g1bb-us%2Fp%2FN82E16817116049%3Fitem%3D9SIBZW0KKU2436",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-116-049-02.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.73
       }
     },
     "watts": 1200,
@@ -5711,15 +5740,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445833434507148166530794",
-        "price": 199.99,
-        "saleprice": 169.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833434507148166530794&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-atx12v-v3-1-eps12v-v2-92-1200-w-80-plus-gold-certified-power-supplies-black-pa-2g2bb-us%2Fp%2FN82E16817116054%3Fitem%3DN82E16817116054",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-116-054-05.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.774Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIBZW0KKU2436",
+        "price": 250.89,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834032263064159084884&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-c-series-atx-3-0-compatible-eps12v-1200-w-80-plus-gold-certified-power-supply-pa-2g1bb-us%2Fp%2FN82E16817116049%3Fitem%3D9SIBZW0KKU2436",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-116-049-02.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.73
       }
     },
     "watts": 1200,
@@ -5820,14 +5848,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458353269413137818452",
+        "sku": "N82E16817139334",
         "price": 209.99,
-        "saleprice": 179.99,
+        "saleprice": 144.2,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458353269413137818452&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rmx-series-atx-3-1-compatible-1000-w-cybenetics-gold-power-supply-black-rm1000x%2Fp%2FN82E16817139334%3Fitem%3DN82E16817139334",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-334-05.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -5861,14 +5888,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445834379743297167524435",
+        "sku": "N82E16817139333",
         "price": 169.99,
-        "saleprice": 149.99,
+        "saleprice": 129.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834379743297167524435&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rmx-series-atx-3-1-compatible-850-w-cybenetics-gold-power-supply-black-rm850x%2Fp%2FN82E16817139333%3Fitem%3DN82E16817139333",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-333-04.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -5905,6 +5931,16 @@ export default [
         "price": 149.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2166&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A1000GL-PCIE5&intsrc=APIG_16410",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA2W0KDY3660",
+        "price": 138.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832809060230804811362&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-intel-atx-12v-1000-w-80-plus-gold-certified-power-supply-black-mag-a1000gl-pcie5%2Fp%2FN82E16817701026%3Fitem%3D9SIA2W0KDY3660",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-026-21.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "watts": 1000,
@@ -5978,14 +6014,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445831892074402699255329",
+        "sku": "N82E16817139315",
         "price": 234.99,
         "saleprice": 199.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831892074402699255329&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Frme-atx-3-0-compatible-atx-3-1-compatible-1200-w-80-plus-gold-certified-power-supplies-corsair-rm1200e%2Fp%2FN82E16817139315%3Fitem%3DN82E16817139315",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-315-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -6019,14 +6054,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316226037302919324852",
+        "sku": "N82E16817153467",
         "price": 199.99,
-        "saleprice": 179.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316226037302919324852&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-sfx-atx-12v-3-1-1000-w-80-plus-platinum-certified-power-supply-black-sfx-1000ah8flp%2Fp%2FN82E16817153467%3Fitem%3DN82E16817153467",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-467-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -6334,14 +6368,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445835908786805764340699",
+        "sku": "N82E16817153466",
         "price": 186.99,
         "saleprice": 176.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835908786805764340699&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-sfx-atx-12v-3-1-850-w-80-plus-platinum-certified-power-supply-black-sfx-0850ah8flp%2Fp%2FN82E16817153466%3Fitem%3DN82E16817153466",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-466-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -6372,6 +6405,16 @@ export default [
         "price": 49.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626430&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-smart-w3-500w-80plus-certified-atx-v3-1-spec-power-supply-black%2FJ39ZPC6J2R&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8EFK8Y9872",
+        "price": 64.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316479606617558063992&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-smart-w3-series-sp3-700ah2nlw-700-w%2Fp%2FN82E16817153470%3Fitem%3D9SIA8EFK8Y9872",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-470-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.83
       }
     },
     "watts": 500,
@@ -6404,14 +6447,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445839925289308800300222",
+        "sku": "9SIA8EFK8Y9872",
         "price": 64.99,
-        "saleprice": 59.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839925289308800300222&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-smart-w3-series-sp3-700ah2nlw-700-w%2Fp%2FN82E16817153470%3Fitem%3DN82E16817153470",
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316479606617558063992&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-smart-w3-series-sp3-700ah2nlw-700-w%2Fp%2FN82E16817153470%3Fitem%3D9SIA8EFK8Y9872",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-470-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -6445,14 +6487,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458311043805826938937374",
+        "sku": "9SIA8EFK3K2208",
         "price": 169.99,
-        "saleprice": 149.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311043805826938937374&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-gf-a3-snow-series-atx-atx-3-0-compatible-1050-w-80-plus-gold-certified-power-supplies-ps-tpd-1050fnfagu-n%2Fp%2FN82E16817153458%3Fitem%3D9SIA8EFK3K2208",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-458-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.449Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -6483,6 +6524,16 @@ export default [
         "price": 129.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626444&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-toughpower-sfx-750w-80plus-platinum-atx-3-1-standard-power-supply-black%2FJ39ZPC9V6V&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817153465",
+        "price": 169.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831561131287933011183&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-sfx-atx-12v-3-1-750-w-80-plus-platinum-certified-power-supply-black-sfx-0750ah8flp%2Fp%2FN82E16817153465%3Fitem%3DN82E16817153465",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-465-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "watts": 750,
@@ -6942,14 +6993,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458313098454978105611705",
-        "price": 159.99,
-        "saleprice": 149.99,
+        "sku": "N82E16817153477",
+        "price": 149.99,
+        "saleprice": 109.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313098454978105611705&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-atx-fully-modular-1000-w-80-plus-gold-certified-power-supply-white-ps-tpt-1000fnfagu-w%2Fp%2FN82E16817153477%3Fitem%3DN82E16817153477",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-477-04.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -6983,13 +7033,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458315485478305864622799",
+        "sku": "1HU-0014-006W8",
         "price": 109.99,
+        "saleprice": 84.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315485478305864622799&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-atx-3-1-compatible-850-w-meet-80-plus-gold-at-115vac-input-power-supplies-black-ps-tpt-0850fnfagu-3%2Fp%2F1HU-0014-006W8%3Fitem%3D1HU-0014-006W8",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS2409301F33PS36.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.151Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -7023,14 +7073,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445832106635818576789422",
+        "sku": "1HU-0014-006W7",
         "price": 99.99,
-        "saleprice": 84.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832106635818576789422&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-atx-3-1-compatible-750-w-meet-80-plus-gold-at-115vac-input-power-supplies-black-ps-tpt-0750fnfagu-3%2Fp%2F1HU-0014-006W7%3Fitem%3D1HU-0014-006W7",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS2409301EZCEI07.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.151Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -7064,13 +7113,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458312471213616157071025",
-        "price": 116.3,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312471213616157071025&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-atx-3-1-compatible-850-w-meet-80-plus-gold-at-115vac-input-power-supply-snow-ps-tpt-0850fnfagu-w%2Fp%2FN82E16817153473%3Fitem%3D9SIA6ZPKCM5253",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-473-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.364Z",
-        "matchMethod": "sftp:upc",
+        "sku": "9SIA8EFKCG5213",
+        "price": 119.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312920898225912857630&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HU-0014-006X5%3Fitem%3D9SIA8EFKCG5213",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS2411201529BMB8.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -7104,14 +7153,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445834702665317517506018",
-        "price": 159.99,
-        "saleprice": 149.99,
+        "sku": "N82E16817153475",
+        "price": 149.99,
+        "saleprice": 127.49,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834702665317517506018&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-atx-fully-modular-1000-w-80-plus-gold-certified-power-supply-black-ps-tpt-1000fnfagu-3%2Fp%2FN82E16817153475%3Fitem%3DN82E16817153475",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-475-05.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -7145,13 +7193,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583498003834963610326",
+        "sku": "N82E16817153476",
         "price": 179.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583498003834963610326&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-atx-fully-modular-1200-w-80-plus-gold-certified-power-supply-black-ps-tpt-1200fnfagu-3%2Fp%2FN82E16817153476%3Fitem%3DN82E16817153476",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-476-04.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.775Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -7320,6 +7368,16 @@ export default [
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12141450&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseasonic-vertex-px-1200w-power-supply-atx-3-1-pcie-5-1-12v-2x6-cybenetics-platinum-a-fully-modular-rtx-5090-amd-rx-9000-ready-black%2FC344V32XPK&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC4WSKXN6615",
+        "price": 449.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833257668796551764792&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseasonic-usa-atx-1200-w-80-plus-platinum-certified-power-supply-vertex-px-1200%2Fp%2FN82E16817151266%3Fitem%3D9SIC4WSKXN6615",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-151-266-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.71
       }
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
@@ -7346,6 +7404,16 @@ export default [
         "price": 118.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11064618&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseasonic-core-v2-gx-750-atx3-750w-80-gold-atx-3-0-pcie-5-1-ready-full-modular-atx-form-factor-premium-capacitor%2FC344V3236K&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC6M7KZ12305",
+        "price": 232.09,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315083776755854437326&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseasonic-usa-sfx12v-750-w-80-plus-gold-certified-power-supply-focus-sgx-750%2Fp%2FN82E16817151252%3Fitem%3D9SIC6M7KZ12305",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-151-252-V06.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
@@ -7386,13 +7454,23 @@ export default [
       "amazon": {
         "asin": "B0B7NRSHDP",
         "url": "https://www.amazon.com/dp/B0B7NRSHDP?tag=tiereduptech-20",
-        "price": 451.05,
+        "price": 452.03,
         "inStock": true
       },
       "bestbuy": {
         "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10871690&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseasonic-focus-gx-750w-power-supply-atx-3-1-pcie-5-1-cybenetics-platinum-fully-modular-rtx-5070-ti-amd-rx-9000-ready-white%2FC344V323W7&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBZW0KPB9302",
+        "price": 281.86,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313204914563256668512&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseasonic-usa-sfx12v-750-w-80-plus-platinum-certified-power-supply-focus-spx-750%2Fp%2FN82E16817151251%3Fitem%3D9SIBZW0KPB9302",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-151-251-V03.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
@@ -7437,8 +7515,18 @@ export default [
       "amazon": {
         "asin": "B0F3XW1J16",
         "url": "https://www.amazon.com/dp/B0F3XW1J16?tag=tiereduptech-20",
-        "price": 89.9,
+        "price": 79.9,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817959008",
+        "price": 89.9,
+        "saleprice": 79.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834849186148385208368&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-atx-850-w-80-plus-gold-certified-power-supply-silver-century-ii-850%2Fp%2FN82E16817959008%3Fitem%3DN82E16817959008",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-959-008-08.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "watts": 850,
@@ -7462,7 +7550,7 @@ export default [
       "amazon": {
         "asin": "B0FBY3F1NT",
         "url": "https://www.amazon.com/dp/B0FBY3F1NT?tag=tiereduptech-20",
-        "price": 109.9,
+        "price": 93.4,
         "inStock": true
       },
       "bestbuy": {
@@ -7491,7 +7579,7 @@ export default [
       "amazon": {
         "asin": "B0DVBWP6K8",
         "url": "https://www.amazon.com/dp/B0DVBWP6K8?tag=tiereduptech-20",
-        "price": 89.99,
+        "price": 108.28,
         "inStock": true
       }
     },
@@ -7518,6 +7606,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FSTHTLZT?tag=tiereduptech-20",
         "price": 64.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817955022",
+        "price": 89.99,
+        "saleprice": 59.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838174874378519367559&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-pro-series-atx-3-1-compatible-850-w-80-plus-gold-certified-power-supply-black-pro-850g%2Fp%2FN82E16817955022%3Fitem%3DN82E16817955022",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-022-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.71
       }
     },
     "watts": 850,
@@ -7540,13 +7638,23 @@ export default [
       "amazon": {
         "asin": "B0D68TLYKR",
         "url": "https://www.amazon.com/dp/B0D68TLYKR?tag=tiereduptech-20",
-        "price": 92.99,
+        "price": 71.99,
         "inStock": true
       },
       "bestbuy": {
         "price": 86.49,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11463626&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-mwe-gold-750-v3-atx-3-1-750w-80-gold-90-12vhpwr-japanese-caps-zero-rpm-hex-fan-10y%2FJ3K4GJPQKF&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA4P0KZ48121",
+        "price": 71.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839014075540322548362&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-atx-12v-ver-3-0-750-w-80-plus-gold-certified-power-supply-black-mpx-7503-afag-2buv%2Fp%2FN82E16817171242%3Fitem%3D9SIA4P0KZ48121",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-171-242-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "watts": 750,
@@ -7570,8 +7678,18 @@ export default [
       "amazon": {
         "asin": "B0CT41HW5J",
         "url": "https://www.amazon.com/dp/B0CT41HW5J?tag=tiereduptech-20",
-        "price": 109.99,
+        "price": 94.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817701024",
+        "price": 139.99,
+        "saleprice": 109.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314522281184833913879&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-intel-atx-12v-850-w-80-plus-gold-certified-power-supplies-mag-a850gl-pcie5-white%2Fp%2FN82E16817701024%3Fitem%3DN82E16817701024",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-024-11.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "watts": 850,
@@ -7626,6 +7744,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0991TZ399?tag=tiereduptech-20",
         "price": 59.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817701013",
+        "price": 64.99,
+        "saleprice": 59.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583632951530093606407&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-intel-atx-12v-650-w-80-plus-bronze-certified-power-supply-black-mag-a650bn%2Fp%2FN82E16817701013%3Fitem%3DN82E16817701013",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-013-08.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "watts": 650,
@@ -7649,6 +7777,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0BTJYYTGM?tag=tiereduptech-20",
         "price": 159.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817233039",
+        "price": 159.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583637913006079724833&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-atx12v-1000-w-80-plus-gold-certified-power-supply-gp-ud1000gm-pg5-rev2-0%2Fp%2FN82E16817233039%3Fitem%3DN82E16817233039",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-233-039-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "watts": 1000,
@@ -7673,6 +7811,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0B434DB7Y?tag=tiereduptech-20",
         "price": 169.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC642KZ25552",
+        "price": 148.49,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310980854665078105275&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx-atx-3-0-compatible-atx12v-1000-w-80-plus-gold-certified-power-supplies-black-mpg-a1000g-pcie5%2Fp%2FN82E16817701016%3Fitem%3D9SIC642KZ25552",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-016-19.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.63
       }
     },
     "watts": 1000,
@@ -7693,7 +7841,7 @@ export default [
       "amazon": {
         "asin": "B0FXNTC1S8",
         "url": "https://www.amazon.com/dp/B0FXNTC1S8?tag=tiereduptech-20",
-        "price": 118.57,
+        "price": 123.3,
         "inStock": true
       }
     },
@@ -7718,7 +7866,7 @@ export default [
       "amazon": {
         "asin": "B0GF9JXFKB",
         "url": "https://www.amazon.com/dp/B0GF9JXFKB?tag=tiereduptech-20",
-        "price": 199.9,
+        "price": 161.4,
         "inStock": true
       }
     },
@@ -7742,8 +7890,18 @@ export default [
       "amazon": {
         "asin": "B0F3XV451X",
         "url": "https://www.amazon.com/dp/B0F3XV451X?tag=tiereduptech-20",
-        "price": 119.9,
+        "price": 109.9,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817959010",
+        "price": 159.9,
+        "saleprice": 109.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316141810942646220123&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-atx-atx-3-1-1200-w-80-plus-gold-certified-power-supply-silver-century-ii-1200%2Fp%2FN82E16817959010%3Fitem%3DN82E16817959010",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-959-010-09.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "watts": 1200,
@@ -7767,7 +7925,7 @@ export default [
       "amazon": {
         "asin": "B0GFB83GPM",
         "url": "https://www.amazon.com/dp/B0GFB83GPM?tag=tiereduptech-20",
-        "price": 169.9,
+        "price": 144.4,
         "inStock": true
       },
       "bestbuy": {
@@ -7796,7 +7954,7 @@ export default [
       "amazon": {
         "asin": "B0FKL8L37F",
         "url": "https://www.amazon.com/dp/B0FKL8L37F?tag=tiereduptech-20",
-        "price": 147.99,
+        "price": 137.99,
         "inStock": true
       }
     },
@@ -7844,7 +8002,7 @@ export default [
       "amazon": {
         "asin": "B0FPCFQ8TP",
         "url": "https://www.amazon.com/dp/B0FPCFQ8TP?tag=tiereduptech-20",
-        "price": 168.42,
+        "price": 159.99,
         "inStock": true
       }
     },
@@ -7943,7 +8101,7 @@ export default [
       "amazon": {
         "asin": "B0FGPPM12Q",
         "url": "https://www.amazon.com/dp/B0FGPPM12Q?tag=tiereduptech-20",
-        "price": 165.99,
+        "price": 166.16,
         "inStock": true
       }
     },
@@ -7975,6 +8133,16 @@ export default [
         "price": 237.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11463625&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gaming-1200w-gold-atx-3-0-80-gold-10-year-warranty%2FJJG7VTTLCV&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817320047",
+        "price": 239.99,
+        "saleprice": 226.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836337655032526529397&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-atx12v-1200-w-80-plus-gold-certified-power-supplies-tuf-gaming-1200g%2Fp%2FN82E16817320047%3Fitem%3DN82E16817320047",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-320-047-14.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "watts": 1200,
@@ -8000,6 +8168,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FSVHKKRT?tag=tiereduptech-20",
         "price": 54.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817955026",
+        "price": 74.99,
+        "saleprice": 54.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583766244618229092788&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-pro-series-atx-3-1-compatible-750-w-80-plus-bronze-certified-power-supply-black-pro-750b%2Fp%2FN82E16817955026%3Fitem%3DN82E16817955026",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-026-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.71
       }
     },
     "watts": 750,
@@ -8022,8 +8200,18 @@ export default [
       "amazon": {
         "asin": "B0G3CXRQ67",
         "url": "https://www.amazon.com/dp/B0G3CXRQ67?tag=tiereduptech-20",
-        "price": 64.99,
+        "price": 69.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817701040",
+        "price": 79.99,
+        "saleprice": 69.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315778071062282904207&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16817701040%3Fitem%3DN82E16817701040",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-040-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.82
       }
     },
     "watts": 750,
@@ -8049,6 +8237,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FST7CYPC?tag=tiereduptech-20",
         "price": 54.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817955023",
+        "price": 79.99,
+        "saleprice": 54.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314005262804575162600&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-pro-series-atx-3-1-compatible-750-w-80-plus-gold-certified-power-supply-black-pro-750g%2Fp%2FN82E16817955023%3Fitem%3DN82E16817955023",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-023-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.71
       }
     },
     "watts": 750,
@@ -8071,13 +8269,23 @@ export default [
       "amazon": {
         "asin": "B0CPR1FR7H",
         "url": "https://www.amazon.com/dp/B0CPR1FR7H?tag=tiereduptech-20",
-        "price": 87.54,
+        "price": 99.74,
         "inStock": true
       },
       "bestbuy": {
         "price": 107.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11124256&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-750w-gold-750w-atx-3-0-modular-80-gold-dual-bearings-2-colors-8-year-warranty%2FJJGGLRGL48&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817320045",
+        "price": 119.99,
+        "saleprice": 99.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311779140618196173614&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-atx12v-750-w-80-plus-gold-certified-power-supplies-ap-750g%2Fp%2FN82E16817320045%3Fitem%3DN82E16817320045",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-320-045-12.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "watts": 750,
@@ -8149,7 +8357,7 @@ export default [
       "amazon": {
         "asin": "B0GCKB29XN",
         "url": "https://www.amazon.com/dp/B0GCKB29XN?tag=tiereduptech-20",
-        "price": 78.5,
+        "price": 68.99,
         "inStock": true
       }
     },
@@ -8176,6 +8384,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0BL4VRBWZ?tag=tiereduptech-20",
         "price": 59.9,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817139276",
+        "price": 99.99,
+        "saleprice": 59.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583743056831510623349&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-cx-m-atx-750-w-80-plus-bronze-certified-power-supply-cx750m%2Fp%2FN82E16817139276%3Fitem%3DN82E16817139276",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-276-V15.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T13:17:14.417Z",
@@ -8197,7 +8415,7 @@ export default [
       "amazon": {
         "asin": "B00KYK1CKI",
         "url": "https://www.amazon.com/dp/B00KYK1CKI?tag=tiereduptech-20",
-        "price": 399.99,
+        "price": 429.99,
         "inStock": true
       }
     },
@@ -8220,7 +8438,7 @@ export default [
       "amazon": {
         "asin": "B01LZ3SFB3",
         "url": "https://www.amazon.com/dp/B01LZ3SFB3?tag=tiereduptech-20",
-        "price": 399.99,
+        "price": 429.99,
         "inStock": true
       }
     },
@@ -8243,8 +8461,18 @@ export default [
       "amazon": {
         "asin": "B0GQ1QGCBT",
         "url": "https://www.amazon.com/dp/B0GQ1QGCBT?tag=tiereduptech-20",
-        "price": 49.9,
+        "price": 39.9,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817959015",
+        "price": 49.9,
+        "saleprice": 39.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832953715656611656711&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-atx-550-w-80-plus-bronze-certified-power-supplies-black-beta-2-550w%2Fp%2FN82E16817959015%3Fitem%3DN82E16817959015",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-959-015-13.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "watts": 550,
@@ -8312,7 +8540,7 @@ export default [
       "amazon": {
         "asin": "B014W3EM2W",
         "url": "https://www.amazon.com/dp/B014W3EM2W?tag=tiereduptech-20",
-        "price": 39.99,
+        "price": 37.99,
         "inStock": true
       }
     },
@@ -8335,8 +8563,18 @@ export default [
       "amazon": {
         "asin": "B0991W1HKT",
         "url": "https://www.amazon.com/dp/B0991W1HKT?tag=tiereduptech-20",
-        "price": 52.12,
+        "price": 42.74,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817701012",
+        "price": 54.99,
+        "saleprice": 44.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313539789353632639336&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx12v-550-w-80-plus-bronze-certified-power-supply-black-mag-a550bn%2Fp%2FN82E16817701012%3Fitem%3DN82E16817701012",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-012-07.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.762Z",
@@ -8380,7 +8618,7 @@ export default [
       "amazon": {
         "asin": "B087CDR14Z",
         "url": "https://www.amazon.com/dp/B087CDR14Z?tag=tiereduptech-20",
-        "price": 59.99,
+        "price": 53.98,
         "inStock": true
       }
     },
@@ -8404,8 +8642,18 @@ export default [
       "amazon": {
         "asin": "B0CZC8D44B",
         "url": "https://www.amazon.com/dp/B0CZC8D44B?tag=tiereduptech-20",
-        "price": 169.99,
+        "price": 159.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIABP9KAP0085",
+        "price": 169.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839772705890934199554&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffsp-flex-guru-pro-series-flex-atx-500w-80-plus-gold-certified-power-supplies%2Fp%2F1HU-0095-00111%3Fitem%3D9SIABP9KAP0085",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABP9S26051303GM3O9B.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.762Z",
@@ -8452,6 +8700,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0CWN59YCZ?tag=tiereduptech-20",
         "price": 49.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA0ZXK9P2123",
+        "price": 67.54,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316145964272746125094&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HU-00D9-001K4%3Fitem%3D9SIA0ZXK9P2123",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S2407250I54FY96.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.762Z",
@@ -8475,6 +8733,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0CZFT9P29?tag=tiereduptech-20",
         "price": 446.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIABP9KDJ0254",
+        "price": 569.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317871193998999409862&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffsp-atx-700-w-80-plus-gold-certified-power-supplies-black%2Fp%2F1HU-0095-00119%3Fitem%3D9SIABP9KDJ0254",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABP9S24101613HXQ14D.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.78
       }
     },
     "addedAt": "2026-05-15T14:34:31.762Z",
@@ -8495,7 +8763,7 @@ export default [
       "amazon": {
         "asin": "B0CLQVVHSF",
         "url": "https://www.amazon.com/dp/B0CLQVVHSF?tag=tiereduptech-20",
-        "price": 44.99,
+        "price": 54.99,
         "inStock": true
       }
     },
@@ -8520,6 +8788,16 @@ export default [
         "url": "https://www.amazon.com/dp/B089PZCB7X?tag=tiereduptech-20",
         "price": 31.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA0ZXK415537",
+        "price": 46.9,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312669185250510265361&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HU-00D9-00110%3Fitem%3D9SIA0ZXK415537",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AZF8D210602KIA30.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.763Z",
@@ -8565,8 +8843,18 @@ export default [
       "amazon": {
         "asin": "B01ER2A5X8",
         "url": "https://www.amazon.com/dp/B01ER2A5X8?tag=tiereduptech-20",
-        "price": 56.08,
+        "price": 51.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8EFKCG5213",
+        "price": 119.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312920898225912857630&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HU-0014-006X5%3Fitem%3D9SIA8EFKCG5213",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS2411201529BMB8.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.64
       }
     },
     "addedAt": "2026-05-15T14:34:31.764Z",
@@ -8609,8 +8897,18 @@ export default [
       "amazon": {
         "asin": "B0CGFZVGF9",
         "url": "https://www.amazon.com/dp/B0CGFZVGF9?tag=tiereduptech-20",
-        "price": 96.99,
+        "price": 75.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817701023",
+        "price": 99.99,
+        "saleprice": 79.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317722571247507072272&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx12v-650-w-80-plus-gold-certified-power-supply-black-mag-a650gl%2Fp%2FN82E16817701023%3Fitem%3DN82E16817701023",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-023-16.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.764Z",
@@ -8658,8 +8956,18 @@ export default [
       "amazon": {
         "asin": "B0FF7RW48D",
         "url": "https://www.amazon.com/dp/B0FF7RW48D?tag=tiereduptech-20",
-        "price": 79.99,
+        "price": 99.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC70SM008394",
+        "price": 100.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837662661628772462147&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx12v-650-w-80-plus-gold-certified-power-supply-black-mag-a650gls-pcie5%2Fp%2FN82E16817701034%3Fitem%3D9SIC70SM008394",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A9H5S2508051EF4JA84.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.764Z",
@@ -8731,8 +9039,18 @@ export default [
       "amazon": {
         "asin": "B07SYSLZDR",
         "url": "https://www.amazon.com/dp/B07SYSLZDR?tag=tiereduptech-20",
-        "price": 139.99,
+        "price": 129.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIABP99D18646",
+        "price": 149.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833769087765636741646&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffsp-dagger-pro-series-sfx12v-650-w-80-plus-gold-certified-power-supplies-sda2-650%2Fp%2F1HU-0095-000G7%3Fitem%3D9SIABP99D18646",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1HU-0095-000G7-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.764Z",
@@ -8757,6 +9075,16 @@ export default [
         "url": "https://www.amazon.com/dp/B08P54YC67?tag=tiereduptech-20",
         "price": 569.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIABP9KDJ0254",
+        "price": 569.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317871193998999409862&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffsp-atx-700-w-80-plus-gold-certified-power-supplies-black%2Fp%2F1HU-0095-00119%3Fitem%3D9SIABP9KDJ0254",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABP9S24101613HXQ14D.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.83
       }
     },
     "addedAt": "2026-05-15T14:34:31.764Z",
@@ -8846,7 +9174,7 @@ export default [
       "amazon": {
         "asin": "B0D7ZCT11Q",
         "url": "https://www.amazon.com/dp/B0D7ZCT11Q?tag=tiereduptech-20",
-        "price": 59.99,
+        "price": 47.18,
         "inStock": true
       }
     },
@@ -8869,7 +9197,7 @@ export default [
       "amazon": {
         "asin": "B01ER29BKG",
         "url": "https://www.amazon.com/dp/B01ER29BKG?tag=tiereduptech-20",
-        "price": 56.11,
+        "price": 51.9,
         "inStock": true
       }
     },
@@ -8890,7 +9218,7 @@ export default [
       "amazon": {
         "asin": "B0CBP3C2S9",
         "url": "https://www.amazon.com/dp/B0CBP3C2S9?tag=tiereduptech-20",
-        "price": 174.9,
+        "price": 139.9,
         "inStock": true
       }
     },
@@ -8915,7 +9243,7 @@ export default [
       "amazon": {
         "asin": "B0CZRH68VM",
         "url": "https://www.amazon.com/dp/B0CZRH68VM?tag=tiereduptech-20",
-        "price": 36.99,
+        "price": 36.95,
         "inStock": true
       }
     },
@@ -8960,7 +9288,7 @@ export default [
       "amazon": {
         "asin": "B0BBZSPJV5",
         "url": "https://www.amazon.com/dp/B0BBZSPJV5?tag=tiereduptech-20",
-        "price": 124.99,
+        "price": 93.74,
         "inStock": true
       }
     },
@@ -9074,6 +9402,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0GFVSV779?tag=tiereduptech-20",
         "price": 169.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817116059",
+        "price": 199.99,
+        "saleprice": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831222404312764201936&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-atx-3-1-850-w-80-plus-gold-certified-power-supply-ps-8g1bb-us%2Fp%2FN82E16817116059%3Fitem%3DN82E16817116059",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-116-059-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.768Z",
@@ -9099,6 +9437,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FJD8RSBH?tag=tiereduptech-20",
         "price": 124.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA0ZXKNC3985",
+        "price": 129.27,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838430265183916210096&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-sp-series-atx-atx-3-1-compatible-750w-80-plus-gold-power-supplies-black%2Fp%2F1HU-01PP-00029%3Fitem%3D9SIA0ZXKNC3985",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2605050BCEL0CB.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.88
       }
     },
     "addedAt": "2026-05-15T14:34:31.768Z",
@@ -9145,8 +9493,18 @@ export default [
       "amazon": {
         "asin": "B0GQ1LVS3D",
         "url": "https://www.amazon.com/dp/B0GQ1LVS3D?tag=tiereduptech-20",
-        "price": 69.9,
+        "price": 64.9,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817959018",
+        "price": 69.9,
+        "saleprice": 64.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831703130929266837821&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-atx-850-w-80-plus-bronze-certified-power-supplies-beta-2-850w%2Fp%2FN82E16817959018%3Fitem%3DN82E16817959018",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-959-018-10.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.769Z",
@@ -9171,6 +9529,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FST7VT5D?tag=tiereduptech-20",
         "price": 44.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817955027",
+        "price": 64.99,
+        "saleprice": 44.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313370188755294408411&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-pro-series-atx-3-1-compatible-650-w-80-plus-bronze-certified-power-supply-black-pro-650b%2Fp%2FN82E16817955027%3Fitem%3DN82E16817955027",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-027-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.71
       }
     },
     "addedAt": "2026-05-15T14:34:31.769Z",
@@ -9193,7 +9561,7 @@ export default [
       "amazon": {
         "asin": "B0BZFQZR81",
         "url": "https://www.amazon.com/dp/B0BZFQZR81?tag=tiereduptech-20",
-        "price": 134.99,
+        "price": 144.99,
         "inStock": true
       },
       "bestbuy": {
@@ -9223,7 +9591,7 @@ export default [
       "amazon": {
         "asin": "B097QC3FPZ",
         "url": "https://www.amazon.com/dp/B097QC3FPZ?tag=tiereduptech-20",
-        "price": 137.55,
+        "price": 119.98,
         "inStock": true
       }
     },
@@ -9247,8 +9615,18 @@ export default [
       "amazon": {
         "asin": "B0D2838XV2",
         "url": "https://www.amazon.com/dp/B0D2838XV2?tag=tiereduptech-20",
-        "price": 129.99,
+        "price": 159.79,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817153465",
+        "price": 169.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831561131287933011183&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-sfx-atx-12v-3-1-750-w-80-plus-platinum-certified-power-supply-black-sfx-0750ah8flp%2Fp%2FN82E16817153465%3Fitem%3DN82E16817153465",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-465-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.769Z",
@@ -9272,7 +9650,7 @@ export default [
       "amazon": {
         "asin": "B0D5HT2L96",
         "url": "https://www.amazon.com/dp/B0D5HT2L96?tag=tiereduptech-20",
-        "price": 243.46,
+        "price": 214.21,
         "inStock": true
       }
     },
@@ -9297,7 +9675,7 @@ export default [
       "amazon": {
         "asin": "B0FN7JS7LZ",
         "url": "https://www.amazon.com/dp/B0FN7JS7LZ?tag=tiereduptech-20",
-        "price": 164.99,
+        "price": 155.99,
         "inStock": true
       }
     },
@@ -9321,7 +9699,7 @@ export default [
       "amazon": {
         "asin": "B0BVYCXQY4",
         "url": "https://www.amazon.com/dp/B0BVYCXQY4?tag=tiereduptech-20",
-        "price": 129.86,
+        "price": 99.99,
         "inStock": true
       },
       "bestbuy": {
@@ -9375,7 +9753,7 @@ export default [
       "amazon": {
         "asin": "B0FLG369BK",
         "url": "https://www.amazon.com/dp/B0FLG369BK?tag=tiereduptech-20",
-        "price": 174.99,
+        "price": 151.99,
         "inStock": true
       }
     },
@@ -9429,6 +9807,16 @@ export default [
         "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12641619&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-a1250gs-pcie5-1250w-atx-3-1-pcie-5-1-ready-full-modular-80-plus-gold-gaming-power-supply-black%2FJ3P7TX9CJK&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817701025",
+        "price": 199.99,
+        "saleprice": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838838258698648951672&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-intel-atx-12v-1250-w-80-plus-gold-certified-power-supply-black-mag-a1250gl-pcie5%2Fp%2FN82E16817701025%3Fitem%3DN82E16817701025",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-025-22.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:31:54.658Z",
@@ -9452,7 +9840,7 @@ export default [
       "amazon": {
         "asin": "B0D1VDNCT7",
         "url": "https://www.amazon.com/dp/B0D1VDNCT7?tag=tiereduptech-20",
-        "price": 169.99,
+        "price": 149.99,
         "inStock": true
       }
     },
@@ -9524,8 +9912,18 @@ export default [
       "amazon": {
         "asin": "B0DNNZ9G46",
         "url": "https://www.amazon.com/dp/B0DNNZ9G46?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 189.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817955003",
+        "price": 349.99,
+        "saleprice": 189.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837750206182518715122&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-atx3-1-pcie5-1-1600-w-cybenetics-gold-power-supply-black-pg-1600g%2Fp%2FN82E16817955003%3Fitem%3DN82E16817955003",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-003-20.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.83
       }
     },
     "addedAt": "2026-05-15T16:31:54.658Z",
@@ -9549,8 +9947,18 @@ export default [
       "amazon": {
         "asin": "B0DT2V39K4",
         "url": "https://www.amazon.com/dp/B0DT2V39K4?tag=tiereduptech-20",
-        "price": 89.99,
+        "price": 109.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817701031",
+        "price": 109.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836169499807546455110&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx12v-850-w-up-to-90-power-supplies-black-mpg-a850gs-pcie5%2Fp%2FN82E16817701031%3Fitem%3DN82E16817701031",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-031-02.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:31:54.658Z",
@@ -9599,7 +10007,7 @@ export default [
       "amazon": {
         "asin": "B0BV6FSFL9",
         "url": "https://www.amazon.com/dp/B0BV6FSFL9?tag=tiereduptech-20",
-        "price": 179.9,
+        "price": 159.9,
         "inStock": true
       }
     },
@@ -9732,7 +10140,7 @@ export default [
       "amazon": {
         "asin": "B0BVYCXQY4",
         "url": "https://www.amazon.com/dp/B0BVYCXQY4?tag=tiereduptech-20",
-        "price": 129.86,
+        "price": 99.99,
         "inStock": true
       }
     },
@@ -9781,7 +10189,7 @@ export default [
       "amazon": {
         "asin": "B0FLG369BK",
         "url": "https://www.amazon.com/dp/B0FLG369BK?tag=tiereduptech-20",
-        "price": 174.99,
+        "price": 151.99,
         "inStock": true
       }
     },
@@ -9830,6 +10238,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0CT41F6FV?tag=tiereduptech-20",
         "price": 169.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817701025",
+        "price": 199.99,
+        "saleprice": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838838258698648951672&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-intel-atx-12v-1250-w-80-plus-gold-certified-power-supply-black-mag-a1250gl-pcie5%2Fp%2FN82E16817701025%3Fitem%3DN82E16817701025",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-025-22.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:39:25.981Z",
@@ -9853,7 +10271,7 @@ export default [
       "amazon": {
         "asin": "B0D1VDNCT7",
         "url": "https://www.amazon.com/dp/B0D1VDNCT7?tag=tiereduptech-20",
-        "price": 169.99,
+        "price": 149.99,
         "inStock": true
       }
     },
@@ -9876,8 +10294,8 @@ export default [
     "deals": {
       "amazon": {
         "asin": "B0DHFVYNZC",
-        "url": "https://www.amazon.com/dp/B0CVCG2VPK?tag=tiereduptech-20",
-        "price": 239.99,
+        "url": "https://www.amazon.com/dp/B0DHFVYNZC?tag=tiereduptech-20",
+        "price": 339.99,
         "inStock": true
       }
     },
@@ -9889,7 +10307,7 @@ export default [
     "ff": "SFX-L",
     "atx3": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-07"
   },
   {
     "id": 101349,
@@ -9925,7 +10343,7 @@ export default [
       "amazon": {
         "asin": "B0DNNZ9G46",
         "url": "https://www.amazon.com/dp/B0DNNZ9G46?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 189.99,
         "inStock": true
       }
     },
@@ -9950,7 +10368,7 @@ export default [
       "amazon": {
         "asin": "B0DT2V39K4",
         "url": "https://www.amazon.com/dp/B0DT2V39K4?tag=tiereduptech-20",
-        "price": 89.99,
+        "price": 109.99,
         "inStock": true
       }
     },
@@ -10000,7 +10418,7 @@ export default [
       "amazon": {
         "asin": "B0BV6FSFL9",
         "url": "https://www.amazon.com/dp/B0BV6FSFL9?tag=tiereduptech-20",
-        "price": 179.9,
+        "price": 159.9,
         "inStock": true
       }
     },
@@ -10133,7 +10551,7 @@ export default [
       "amazon": {
         "asin": "B0BVYCXQY4",
         "url": "https://www.amazon.com/dp/B0BVYCXQY4?tag=tiereduptech-20",
-        "price": 129.86,
+        "price": 99.99,
         "inStock": true
       }
     },
@@ -10182,7 +10600,7 @@ export default [
       "amazon": {
         "asin": "B0FLG369BK",
         "url": "https://www.amazon.com/dp/B0FLG369BK?tag=tiereduptech-20",
-        "price": 174.99,
+        "price": 151.99,
         "inStock": true
       }
     },
@@ -10231,6 +10649,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0CT41F6FV?tag=tiereduptech-20",
         "price": 169.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817701025",
+        "price": 199.99,
+        "saleprice": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838838258698648951672&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-intel-atx-12v-1250-w-80-plus-gold-certified-power-supply-black-mag-a1250gl-pcie5%2Fp%2FN82E16817701025%3Fitem%3DN82E16817701025",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-025-22.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T17:05:43.662Z",
@@ -10254,7 +10682,7 @@ export default [
       "amazon": {
         "asin": "B0D1VDNCT7",
         "url": "https://www.amazon.com/dp/B0D1VDNCT7?tag=tiereduptech-20",
-        "price": 169.99,
+        "price": 149.99,
         "inStock": true
       }
     },
@@ -10305,8 +10733,18 @@ export default [
       "amazon": {
         "asin": "B0DNNZ9G46",
         "url": "https://www.amazon.com/dp/B0DNNZ9G46?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 189.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817955003",
+        "price": 349.99,
+        "saleprice": 189.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837750206182518715122&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-atx3-1-pcie5-1-1600-w-cybenetics-gold-power-supply-black-pg-1600g%2Fp%2FN82E16817955003%3Fitem%3DN82E16817955003",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-003-20.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.83
       }
     },
     "addedAt": "2026-05-15T17:05:43.663Z",
@@ -10330,8 +10768,18 @@ export default [
       "amazon": {
         "asin": "B0DT2V39K4",
         "url": "https://www.amazon.com/dp/B0DT2V39K4?tag=tiereduptech-20",
-        "price": 89.99,
+        "price": 109.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16817701031",
+        "price": 109.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836169499807546455110&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx12v-850-w-up-to-90-power-supplies-black-mpg-a850gs-pcie5%2Fp%2FN82E16817701031%3Fitem%3DN82E16817701031",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-031-02.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T17:05:43.663Z",
@@ -10380,7 +10828,7 @@ export default [
       "amazon": {
         "asin": "B0BV6FSFL9",
         "url": "https://www.amazon.com/dp/B0BV6FSFL9?tag=tiereduptech-20",
-        "price": 179.9,
+        "price": 159.9,
         "inStock": true
       }
     },

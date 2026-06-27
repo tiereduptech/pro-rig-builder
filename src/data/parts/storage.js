@@ -21,7 +21,7 @@ export default [
     "dram": true,
     "deals": {
       "amazon": {
-        "price": 400,
+        "price": 379.99,
         "url": "https://www.amazon.com/dp/B0C3K2WRPV?tag=tiereduptech-20",
         "inStock": true
       },
@@ -62,7 +62,7 @@ export default [
     "dram": true,
     "deals": {
       "amazon": {
-        "price": 267.9,
+        "price": 228.49,
         "url": "https://www.amazon.com/dp/B0F9XN4DCC?tag=tiereduptech-20",
         "inStock": true
       },
@@ -96,7 +96,7 @@ export default [
     "dram": true,
     "deals": {
       "amazon": {
-        "price": 411.84,
+        "price": 387.99,
         "url": "https://www.amazon.com/dp/B0DHLCRF91?tag=tiereduptech-20",
         "inStock": true
       },
@@ -135,7 +135,7 @@ export default [
     "dram": true,
     "deals": {
       "amazon": {
-        "price": 254,
+        "price": 239.99,
         "url": "https://www.amazon.com/dp/B0DHLFWBQ1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -233,7 +233,7 @@ export default [
     "dram": true,
     "deals": {
       "amazon": {
-        "price": 389.99,
+        "price": 369.99,
         "url": "https://www.amazon.com/dp/B0BHJJ9Y77?tag=tiereduptech-20",
         "inStock": true
       },
@@ -272,7 +272,7 @@ export default [
     "dram": true,
     "deals": {
       "amazon": {
-        "price": 254,
+        "price": 239.99,
         "url": "https://www.amazon.com/dp/B0DHLFWBQ1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -341,7 +341,7 @@ export default [
     "dram": true,
     "deals": {
       "amazon": {
-        "price": 259.99,
+        "price": 239.99,
         "url": "https://www.amazon.com/dp/B08PBFP4NV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -415,7 +415,7 @@ export default [
     "dram": true,
     "deals": {
       "amazon": {
-        "price": 189.99,
+        "price": 188.57,
         "url": "https://www.amazon.com/dp/B0DN7CYYSD?tag=tiereduptech-20",
         "inStock": true
       }
@@ -484,7 +484,7 @@ export default [
     "dram": true,
     "deals": {
       "amazon": {
-        "price": 216.96,
+        "price": 239.9,
         "url": "https://www.amazon.com/dp/B0CK39YR9V?tag=tiereduptech-20",
         "inStock": true
       }
@@ -513,7 +513,7 @@ export default [
     "dram": false,
     "deals": {
       "amazon": {
-        "price": 184.99,
+        "price": 188.57,
         "url": "https://www.amazon.com/dp/B0DN7CYYSD?tag=tiereduptech-20",
         "inStock": true
       },
@@ -553,7 +553,7 @@ export default [
     "dram": false,
     "deals": {
       "amazon": {
-        "price": 174.45,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DC8VPSHV?tag=tiereduptech-20",
         "inStock": true
       },
@@ -629,7 +629,7 @@ export default [
     "nand": "TLC",
     "value": 87,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "bench": 83
   },
   {
@@ -660,7 +660,7 @@ export default [
     "nand": "TLC",
     "value": 100,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "bench": 83
   },
   {
@@ -683,7 +683,7 @@ export default [
     "dram": true,
     "deals": {
       "amazon": {
-        "price": 124.99,
+        "price": 137.99,
         "url": "https://www.amazon.com/dp/B0DF2DC3R4?tag=tiereduptech-20",
         "inStock": true
       },
@@ -722,7 +722,7 @@ export default [
     "dram": true,
     "deals": {
       "amazon": {
-        "price": 712.07,
+        "price": 499.99,
         "url": "https://www.amazon.com/dp/B08QB93S6R?tag=tiereduptech-20",
         "inStock": true
       },
@@ -763,7 +763,7 @@ export default [
     "dram": true,
     "deals": {
       "amazon": {
-        "price": 124.99,
+        "price": 137.99,
         "url": "https://www.amazon.com/dp/B0DF2DC3R4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -790,7 +790,7 @@ export default [
     "dram": true,
     "deals": {
       "amazon": {
-        "price": 259.98,
+        "price": 245,
         "url": "https://www.amazon.com/dp/B07YD5F561?tag=tiereduptech-20",
         "inStock": true
       },
@@ -828,7 +828,7 @@ export default [
     "dram": false,
     "deals": {
       "amazon": {
-        "price": 106,
+        "price": 104,
         "url": "https://www.amazon.com/dp/B01N0TQPQB?tag=tiereduptech-20",
         "inStock": true
       }
@@ -896,7 +896,7 @@ export default [
     "rpm": 5400,
     "deals": {
       "amazon": {
-        "price": 149.99,
+        "price": 188,
         "url": "https://www.amazon.com/dp/B07D9C7SQH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1054,7 +1054,7 @@ export default [
     "rpm": 7200,
     "deals": {
       "amazon": {
-        "price": 302.84,
+        "price": 354.99,
         "url": "https://www.amazon.com/dp/B0CMQ6SK7W?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1090,7 +1090,7 @@ export default [
     "rpm": 5400,
     "deals": {
       "amazon": {
-        "price": 179.97,
+        "price": 249,
         "url": "https://www.amazon.com/dp/B07H289S79?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1183,7 +1183,7 @@ export default [
     "dram": true,
     "deals": {
       "amazon": {
-        "price": 1395,
+        "price": 1475,
         "url": "https://www.amazon.com/dp/B0B6RMVJ52?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1223,7 +1223,7 @@ export default [
     "nand": "TLC",
     "value": 17,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "bench": 75
   },
   {
@@ -1239,7 +1239,7 @@ export default [
     "reviews": 211088,
     "deals": {
       "amazon": {
-        "price": 201.49,
+        "price": 207.21,
         "url": "https://www.amazon.com/dp/B07VS8QCXC?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1284,7 +1284,7 @@ export default [
     "reviews": 12618,
     "deals": {
       "amazon": {
-        "price": 249.99,
+        "price": 219.99,
         "url": "https://www.amazon.com/dp/B0BHJF2VRN?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1341,7 +1341,7 @@ export default [
     "reviews": 45200,
     "deals": {
       "amazon": {
-        "price": 486.45,
+        "price": 421.63,
         "url": "https://www.amazon.com/dp/B08QBJ2YMG?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1394,7 +1394,7 @@ export default [
     "reviews": 12618,
     "deals": {
       "amazon": {
-        "price": 389.99,
+        "price": 369.99,
         "url": "https://www.amazon.com/dp/B0BHJJ9Y77?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1507,7 +1507,7 @@ export default [
     "reviews": 9137,
     "deals": {
       "amazon": {
-        "price": 288,
+        "price": 246.51,
         "url": "https://www.amazon.com/dp/B0DC8RVRBZ?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1562,7 +1562,7 @@ export default [
     "reviews": 131147,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 75.99,
         "url": "https://www.amazon.com/dp/B07G3YNLJB?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1611,7 +1611,7 @@ export default [
     "reviews": 9137,
     "deals": {
       "amazon": {
-        "price": 174.45,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DC8VPSHV?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1667,7 +1667,7 @@ export default [
     "reviews": 11907,
     "deals": {
       "amazon": {
-        "price": 119.99,
+        "price": 112.99,
         "url": "https://www.amazon.com/dp/B0DBR9RZLV?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1725,7 +1725,7 @@ export default [
     "reviews": 1371,
     "deals": {
       "amazon": {
-        "price": 249.99,
+        "price": 206.99,
         "url": "https://www.amazon.com/dp/B0DX2G349M?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1783,7 +1783,7 @@ export default [
     "reviews": 494,
     "deals": {
       "amazon": {
-        "price": 356.86,
+        "price": 351.71,
         "url": "https://www.amazon.com/dp/B0F9XMYR15?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1833,7 +1833,7 @@ export default [
     "reviews": 432,
     "deals": {
       "amazon": {
-        "price": 169.99,
+        "price": 148.74,
         "url": "https://www.amazon.com/dp/B0FGP7W3NJ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1874,7 +1874,7 @@ export default [
     "reviews": 204108,
     "deals": {
       "amazon": {
-        "price": 106,
+        "price": 104,
         "url": "https://www.amazon.com/dp/B01N0TQPQB?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1927,7 +1927,7 @@ export default [
     "reviews": 131147,
     "deals": {
       "amazon": {
-        "price": 179.99,
+        "price": 174.99,
         "url": "https://www.amazon.com/dp/B07YD579WM?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1980,7 +1980,7 @@ export default [
     "reviews": 45200,
     "deals": {
       "amazon": {
-        "price": 712.07,
+        "price": 499.99,
         "url": "https://www.amazon.com/dp/B08QB93S6R?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2035,7 +2035,7 @@ export default [
     "reviews": 12618,
     "deals": {
       "amazon": {
-        "price": 899,
+        "price": 895,
         "url": "https://www.amazon.com/dp/B0CHGT1KFJ?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2091,7 +2091,7 @@ export default [
     "reviews": 11629,
     "deals": {
       "amazon": {
-        "price": 179.99,
+        "price": 189.51,
         "url": "https://www.amazon.com/dp/B09ZYQ84CM?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2193,7 +2193,7 @@ export default [
     "reviews": 10804,
     "deals": {
       "amazon": {
-        "price": 244.58,
+        "price": 209.99,
         "url": "https://www.amazon.com/dp/B0C48B3RGL?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2248,7 +2248,7 @@ export default [
     "reviews": 10384,
     "deals": {
       "amazon": {
-        "price": 249.99,
+        "price": 212.49,
         "url": "https://www.amazon.com/dp/B0DK74LG91?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2298,7 +2298,7 @@ export default [
     "reviews": 9459,
     "deals": {
       "amazon": {
-        "price": 329.99,
+        "price": 374.99,
         "url": "https://www.amazon.com/dp/B0F4R3YCL6?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2348,7 +2348,7 @@ export default [
     "reviews": 9137,
     "deals": {
       "amazon": {
-        "price": 130,
+        "price": 117.05,
         "url": "https://www.amazon.com/dp/B0DC8K6KQD?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2399,7 +2399,7 @@ export default [
     "reviews": 6996,
     "deals": {
       "amazon": {
-        "price": 136.99,
+        "price": 129.99,
         "url": "https://www.amazon.com/dp/B09WMP5B5N?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2453,7 +2453,7 @@ export default [
     "reviews": 7135,
     "deals": {
       "amazon": {
-        "price": 251.14,
+        "price": 222.44,
         "url": "https://www.amazon.com/dp/B0CGW18S6Y?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2499,7 +2499,7 @@ export default [
     "reviews": 5916,
     "deals": {
       "amazon": {
-        "price": 53.99,
+        "price": 56.99,
         "url": "https://www.amazon.com/dp/B0B55SWRCY?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2541,7 +2541,7 @@ export default [
     "reviews": 5881,
     "deals": {
       "amazon": {
-        "price": 46.99,
+        "price": 43.99,
         "url": "https://www.amazon.com/dp/B087K9L3R5?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2580,7 +2580,7 @@ export default [
     "reviews": 5236,
     "deals": {
       "amazon": {
-        "price": 299.99,
+        "price": 289.99,
         "url": "https://www.amazon.com/dp/B0DN6ZQ3PD?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2637,7 +2637,7 @@ export default [
     "reviews": 6309,
     "deals": {
       "amazon": {
-        "price": 795,
+        "price": 749.99,
         "url": "https://www.amazon.com/dp/B0DHLBDSP7?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2693,7 +2693,7 @@ export default [
     "reviews": 3336,
     "deals": {
       "amazon": {
-        "price": 278.99,
+        "price": 379.99,
         "url": "https://www.amazon.com/dp/B09F5W62N8?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2746,7 +2746,7 @@ export default [
     "reviews": 2224,
     "deals": {
       "amazon": {
-        "price": 79.97,
+        "price": 69.99,
         "url": "https://www.amazon.com/dp/B0BJZLF2FW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2783,7 +2783,7 @@ export default [
     "reviews": 1959,
     "deals": {
       "amazon": {
-        "price": 427.99,
+        "price": 402.83,
         "url": "https://www.amazon.com/dp/B0F334SXSC?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2829,7 +2829,7 @@ export default [
     "reviews": 1444,
     "deals": {
       "amazon": {
-        "price": 86.99,
+        "price": 73.94,
         "url": "https://www.amazon.com/dp/B0D1R5VQRG?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2978,7 +2978,7 @@ export default [
     "reviews": 1371,
     "deals": {
       "amazon": {
-        "price": 426.99,
+        "price": 349.99,
         "url": "https://www.amazon.com/dp/B0DX2DPJZ5?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3205,7 +3205,7 @@ export default [
     "reviews": 12787,
     "deals": {
       "amazon": {
-        "price": 64.97,
+        "price": 59.97,
         "url": "https://www.amazon.com/dp/B07ZGK3K4V?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3257,7 +3257,7 @@ export default [
     "reviews": 5215,
     "deals": {
       "amazon": {
-        "price": 55.99,
+        "price": 54.99,
         "url": "https://www.amazon.com/dp/B082BWY2C2?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3354,7 +3354,7 @@ export default [
     "reviews": 2224,
     "deals": {
       "amazon": {
-        "price": 219.99,
+        "price": 22.99,
         "url": "https://www.amazon.com/dp/B0BJVPS4SB?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3390,7 +3390,7 @@ export default [
     "reviews": 1371,
     "deals": {
       "amazon": {
-        "price": 899,
+        "price": 799.99,
         "url": "https://www.amazon.com/dp/B0DX2GJ1YR?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3486,7 +3486,7 @@ export default [
     "reviews": 1300,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 155.99,
         "url": "https://www.amazon.com/dp/B0CM8RVVG1?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3585,7 +3585,7 @@ export default [
     "reviews": 361,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 55.99,
         "url": "https://www.amazon.com/dp/B0BG5FSPHS?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3622,7 +3622,7 @@ export default [
     "reviews": 119,
     "deals": {
       "amazon": {
-        "price": 99.99,
+        "price": 109.99,
         "url": "https://www.amazon.com/dp/B0FGPJ2BRF?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3664,7 +3664,7 @@ export default [
     "reviews": 17041,
     "deals": {
       "amazon": {
-        "price": 599.99,
+        "price": 698,
         "url": "https://www.amazon.com/dp/B0B7CQ2CHH?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3828,7 +3828,7 @@ export default [
     "reviews": 4913,
     "deals": {
       "amazon": {
-        "price": 498.95,
+        "price": 465,
         "url": "https://www.amazon.com/dp/B0BHJDY57J?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3885,7 +3885,7 @@ export default [
     "reviews": 2254,
     "deals": {
       "amazon": {
-        "price": 117.99,
+        "price": 115.44,
         "url": "https://www.amazon.com/dp/B0CN3PBS2Z?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3927,7 +3927,7 @@ export default [
     "reviews": 2045,
     "deals": {
       "amazon": {
-        "price": 319.9,
+        "price": 314.5,
         "url": "https://www.amazon.com/dp/B0D61SDZD2?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4033,7 +4033,7 @@ export default [
     "reviews": 1412,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 73.09,
         "url": "https://www.amazon.com/dp/B0CP9BZLZ5?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4075,7 +4075,7 @@ export default [
     "reviews": 1196,
     "deals": {
       "amazon": {
-        "price": 345,
+        "price": 369.99,
         "url": "https://www.amazon.com/dp/B0DZ5XQNLM?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4352,7 +4352,7 @@ export default [
     "reviews": 63,
     "deals": {
       "amazon": {
-        "price": 156.99,
+        "price": 160.98,
         "url": "https://www.amazon.com/dp/B0F3XL469M?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4393,7 +4393,7 @@ export default [
     "reviews": 15403,
     "deals": {
       "amazon": {
-        "price": 389,
+        "price": 365.24,
         "url": "https://www.amazon.com/dp/B0B7CKZGN6?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4602,7 +4602,7 @@ export default [
     "reviews": 11488,
     "deals": {
       "amazon": {
-        "price": 86.99,
+        "price": 90,
         "url": "https://www.amazon.com/dp/B07D99KFPK?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4638,7 +4638,7 @@ export default [
     "reviews": 6904,
     "deals": {
       "amazon": {
-        "price": 201,
+        "price": 220,
         "url": "https://www.amazon.com/dp/B01M0AADIX?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4685,7 +4685,7 @@ export default [
     "reviews": 5780,
     "deals": {
       "amazon": {
-        "price": 108.99,
+        "price": 98.99,
         "url": "https://www.amazon.com/dp/B07XJ2P1LK?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4778,7 +4778,7 @@ export default [
     "reviews": 5236,
     "deals": {
       "amazon": {
-        "price": 197.21,
+        "price": 230.94,
         "url": "https://www.amazon.com/dp/B0DN7JK8T4?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4834,7 +4834,7 @@ export default [
     "reviews": 4953,
     "deals": {
       "amazon": {
-        "price": 236.95,
+        "price": 230.47,
         "url": "https://www.amazon.com/dp/B0CCN9QWKT?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5066,7 +5066,7 @@ export default [
     "reviews": 2487,
     "deals": {
       "amazon": {
-        "price": 189,
+        "price": 194.99,
         "url": "https://www.amazon.com/dp/B0D7MLHCQ7?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5123,7 +5123,7 @@ export default [
     "reviews": 2181,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B0C3B18PKT?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5341,7 +5341,7 @@ export default [
     "reviews": 985,
     "deals": {
       "amazon": {
-        "price": 39.99,
+        "price": 37.99,
         "url": "https://www.amazon.com/dp/B0GDWMGZFN?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5379,7 +5379,7 @@ export default [
     "reviews": 885,
     "deals": {
       "amazon": {
-        "price": 276.95,
+        "price": 317.95,
         "url": "https://www.amazon.com/dp/B07H28M89D?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5598,7 +5598,7 @@ export default [
     "reviews": 80,
     "deals": {
       "amazon": {
-        "price": 110.29,
+        "price": 93.49,
         "url": "https://www.amazon.com/dp/B0DMHS9HQ4?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5652,7 +5652,7 @@ export default [
     "reviews": 117,
     "deals": {
       "amazon": {
-        "price": 132.51,
+        "price": 115.99,
         "url": "https://www.amazon.com/dp/B0F481WGTZ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5690,7 +5690,7 @@ export default [
     "reviews": 68609,
     "deals": {
       "amazon": {
-        "price": 364.99,
+        "price": 449.99,
         "url": "https://www.amazon.com/dp/B0F7MJV2X8?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5721,7 +5721,7 @@ export default [
     "reviews": 43252,
     "deals": {
       "amazon": {
-        "price": 148.27,
+        "price": 245.05,
         "url": "https://www.amazon.com/dp/B08PC43D78?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5813,7 +5813,7 @@ export default [
     "reviews": 24401,
     "deals": {
       "amazon": {
-        "price": 229,
+        "price": 269.99,
         "url": "https://www.amazon.com/dp/B0B25NXWC7?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5862,7 +5862,7 @@ export default [
     "reviews": 22938,
     "deals": {
       "amazon": {
-        "price": 80.97,
+        "price": 74.09,
         "url": "https://www.amazon.com/dp/B09XDJPPMB?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6009,7 +6009,7 @@ export default [
     "reviews": 11459,
     "deals": {
       "amazon": {
-        "price": 144.99,
+        "price": 127.99,
         "url": "https://www.amazon.com/dp/B08CKFDPJ3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -6145,7 +6145,7 @@ export default [
     "reviews": 5916,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 95.99,
         "url": "https://www.amazon.com/dp/B0B55R7PYB?tag=tiereduptech-20",
         "inStock": true
       }
@@ -6284,7 +6284,7 @@ export default [
     "reviews": 3316,
     "deals": {
       "amazon": {
-        "price": 140.99,
+        "price": 131.99,
         "url": "https://www.amazon.com/dp/B08GJCS69D?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6332,7 +6332,7 @@ export default [
     "reviews": 2577,
     "deals": {
       "amazon": {
-        "price": 459.24,
+        "price": 370.09,
         "url": "https://www.amazon.com/dp/B07YFG3R5N?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6556,7 +6556,7 @@ export default [
     "reviews": 1412,
     "deals": {
       "amazon": {
-        "price": 159.97,
+        "price": 130.02,
         "url": "https://www.amazon.com/dp/B0CP9CXCXG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -6597,7 +6597,7 @@ export default [
     "reviews": 1300,
     "deals": {
       "amazon": {
-        "price": 95.99,
+        "price": 81.59,
         "url": "https://www.amazon.com/dp/B0CM8Q9X5W?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6789,7 +6789,7 @@ export default [
     "reviews": 1120,
     "deals": {
       "amazon": {
-        "price": 254.99,
+        "price": 305,
         "url": "https://www.amazon.com/dp/B071V6SVK2?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6835,7 +6835,7 @@ export default [
     "reviews": 872,
     "deals": {
       "amazon": {
-        "price": 249.99,
+        "price": 239.99,
         "url": "https://www.amazon.com/dp/B0F3BMBQ75?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6948,7 +6948,7 @@ export default [
     "reviews": 636,
     "deals": {
       "amazon": {
-        "price": 360.99,
+        "price": 249.99,
         "url": "https://www.amazon.com/dp/B0DM23JKXC?tag=tiereduptech-20",
         "inStock": true
       }
@@ -6989,7 +6989,7 @@ export default [
     "reviews": 585,
     "deals": {
       "amazon": {
-        "price": 36.99,
+        "price": 37.99,
         "url": "https://www.amazon.com/dp/B0GHN3NM5Z?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7026,7 +7026,7 @@ export default [
     "reviews": 308,
     "deals": {
       "amazon": {
-        "price": 49.99,
+        "price": 46.99,
         "url": "https://www.amazon.com/dp/B0CF5B2K5Y?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7062,7 +7062,7 @@ export default [
     "reviews": 284,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 83.99,
         "url": "https://www.amazon.com/dp/B0D9YBH157?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7157,7 +7157,7 @@ export default [
     "reviews": 448,
     "deals": {
       "amazon": {
-        "price": 165,
+        "price": 189,
         "url": "https://www.amazon.com/dp/B01LZMUNGR?tag=tiereduptech-20",
         "inStock": true
       },
@@ -7229,7 +7229,7 @@ export default [
     "reviews": 201,
     "deals": {
       "amazon": {
-        "price": 112.99,
+        "price": 101.99,
         "url": "https://www.amazon.com/dp/B0CSFQ24W2?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7270,7 +7270,7 @@ export default [
     "reviews": 162,
     "deals": {
       "amazon": {
-        "price": 519.99,
+        "price": 549,
         "url": "https://www.amazon.com/dp/B0DFDTPR74?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7305,7 +7305,7 @@ export default [
     "reviews": 136,
     "deals": {
       "amazon": {
-        "price": 779.99,
+        "price": 807.74,
         "url": "https://www.amazon.com/dp/B0F9XN5CB5?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7345,7 +7345,7 @@ export default [
     "reviews": 136,
     "deals": {
       "amazon": {
-        "price": 249.99,
+        "price": 233.17,
         "url": "https://www.amazon.com/dp/B0F9XNN7XF?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7386,7 +7386,7 @@ export default [
     "reviews": 117,
     "deals": {
       "amazon": {
-        "price": 218.99,
+        "price": 194.99,
         "url": "https://www.amazon.com/dp/B0F47NQ8HX?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7424,7 +7424,7 @@ export default [
     "reviews": 116,
     "deals": {
       "amazon": {
-        "price": 359.99,
+        "price": 339.99,
         "url": "https://www.amazon.com/dp/B08FQ3VST4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7457,7 +7457,7 @@ export default [
     "reviews": 73,
     "deals": {
       "amazon": {
-        "price": 64.99,
+        "price": 55.99,
         "url": "https://www.amazon.com/dp/B0FLJ2RYXV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7630,7 +7630,7 @@ export default [
     "reviews": 28061,
     "deals": {
       "amazon": {
-        "price": 449.99,
+        "price": 479.99,
         "url": "https://www.amazon.com/dp/B08RK2SR23?tag=tiereduptech-20",
         "inStock": true
       },
@@ -7735,7 +7735,7 @@ export default [
     "reviews": 22938,
     "deals": {
       "amazon": {
-        "price": 229.99,
+        "price": 219.99,
         "url": "https://www.amazon.com/dp/B0BWXK95PY?tag=tiereduptech-20",
         "inStock": true
       },
@@ -7782,7 +7782,7 @@ export default [
     "reviews": 20889,
     "deals": {
       "amazon": {
-        "price": 1529.99,
+        "price": 1439.99,
         "url": "https://www.amazon.com/dp/B089C3TZL9?tag=tiereduptech-20",
         "inStock": true
       },
@@ -7836,7 +7836,7 @@ export default [
     "reviews": 13103,
     "deals": {
       "amazon": {
-        "price": 265,
+        "price": 290,
         "url": "https://www.amazon.com/dp/B0GRBXT4VQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7874,7 +7874,7 @@ export default [
     "reviews": 11982,
     "deals": {
       "amazon": {
-        "price": 179.97,
+        "price": 249,
         "url": "https://www.amazon.com/dp/B07H289S79?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7996,7 +7996,7 @@ export default [
     "reviews": 6996,
     "deals": {
       "amazon": {
-        "price": 242.99,
+        "price": 221.99,
         "url": "https://www.amazon.com/dp/B09WMSVHD4?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8050,7 +8050,7 @@ export default [
     "reviews": 5479,
     "deals": {
       "amazon": {
-        "price": 214.69,
+        "price": 209.99,
         "url": "https://www.amazon.com/dp/B0CM8M8293?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8140,7 +8140,7 @@ export default [
     "reviews": 4953,
     "deals": {
       "amazon": {
-        "price": 219.95,
+        "price": 179.99,
         "url": "https://www.amazon.com/dp/B0CCN9NHTC?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8188,7 +8188,7 @@ export default [
     "reviews": 5780,
     "deals": {
       "amazon": {
-        "price": 166.99,
+        "price": 156.99,
         "url": "https://www.amazon.com/dp/B07XHMBQK3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8229,7 +8229,7 @@ export default [
     "reviews": 3592,
     "deals": {
       "amazon": {
-        "price": 99.99,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B0BNQBD46W?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8365,7 +8365,7 @@ export default [
     "reviews": 3032,
     "deals": {
       "amazon": {
-        "price": 219,
+        "price": 239,
         "url": "https://www.amazon.com/dp/B07H28SY39?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8442,7 +8442,7 @@ export default [
     "reviews": 2487,
     "deals": {
       "amazon": {
-        "price": 294.86,
+        "price": 309.95,
         "url": "https://www.amazon.com/dp/B0D7MKYNLX?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8573,7 +8573,7 @@ export default [
     "reviews": 1939,
     "deals": {
       "amazon": {
-        "price": 31.62,
+        "price": 29.59,
         "url": "https://www.amazon.com/dp/B0CG1QQP3Y?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8667,7 +8667,7 @@ export default [
     "reviews": 1558,
     "deals": {
       "amazon": {
-        "price": 209.99,
+        "price": 178.49,
         "url": "https://www.amazon.com/dp/B09ZRD38D8?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8826,7 +8826,7 @@ export default [
     "reviews": 1230,
     "deals": {
       "amazon": {
-        "price": 264.95,
+        "price": 319.95,
         "url": "https://www.amazon.com/dp/B0CTRV9CVP?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8881,7 +8881,7 @@ export default [
     "reviews": 1196,
     "deals": {
       "amazon": {
-        "price": 224.5,
+        "price": 166.83,
         "url": "https://www.amazon.com/dp/B0DZ5ZK225?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8931,7 +8931,7 @@ export default [
     "reviews": 1118,
     "deals": {
       "amazon": {
-        "price": 260.99,
+        "price": 162.99,
         "url": "https://www.amazon.com/dp/B0C9DPWRZ3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9061,7 +9061,7 @@ export default [
     "reviews": 901,
     "deals": {
       "amazon": {
-        "price": 99.99,
+        "price": 95.99,
         "url": "https://www.amazon.com/dp/B0D5M7C19X?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9113,7 +9113,7 @@ export default [
     "reviews": 872,
     "deals": {
       "amazon": {
-        "price": 789.99,
+        "price": 669.99,
         "url": "https://www.amazon.com/dp/B0F3B6MZM9?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9329,7 +9329,7 @@ export default [
     "reviews": 759,
     "deals": {
       "amazon": {
-        "price": 369.9,
+        "price": 399,
         "url": "https://www.amazon.com/dp/B085ZB51HW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9365,7 +9365,7 @@ export default [
     "reviews": 636,
     "deals": {
       "amazon": {
-        "price": 184.99,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DM1R7KHZ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9595,7 +9595,7 @@ export default [
     "reviews": 291,
     "deals": {
       "amazon": {
-        "price": 154.99,
+        "price": 149.99,
         "url": "https://www.amazon.com/dp/B0FD2NQKQ8?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9635,7 +9635,7 @@ export default [
     "reviews": 213,
     "deals": {
       "amazon": {
-        "price": 269.99,
+        "price": 299.99,
         "url": "https://www.amazon.com/dp/B0F5WDRNX3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9717,7 +9717,7 @@ export default [
     "reviews": 120,
     "deals": {
       "amazon": {
-        "price": 339.99,
+        "price": 359.99,
         "url": "https://www.amazon.com/dp/B07RSFX96W?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9762,7 +9762,7 @@ export default [
     "reviews": 117,
     "deals": {
       "amazon": {
-        "price": 78.99,
+        "price": 70.99,
         "url": "https://www.amazon.com/dp/B0F47GT89V?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9800,7 +9800,7 @@ export default [
     "reviews": 117,
     "deals": {
       "amazon": {
-        "price": 30.49,
+        "price": 24.99,
         "url": "https://www.amazon.com/dp/B0G92L5RRP?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9838,7 +9838,7 @@ export default [
     "reviews": 101,
     "deals": {
       "amazon": {
-        "price": 328.99,
+        "price": 349.99,
         "url": "https://www.amazon.com/dp/B0BR3TXGMW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9913,7 +9913,7 @@ export default [
     "reviews": 79,
     "deals": {
       "amazon": {
-        "price": 154.99,
+        "price": 195,
         "url": "https://www.amazon.com/dp/B0F25F243C?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9962,7 +9962,7 @@ export default [
     "reviews": 77,
     "deals": {
       "amazon": {
-        "price": 260.99,
+        "price": 243.19,
         "url": "https://www.amazon.com/dp/B0F43F9ZKP?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10096,7 +10096,7 @@ export default [
     "reviews": 68,
     "deals": {
       "amazon": {
-        "price": 185,
+        "price": 184.02,
         "url": "https://www.amazon.com/dp/B00B3N18MW?tag=tiereduptech-20",
         "inStock": true
       },
@@ -10137,7 +10137,7 @@ export default [
     "reviews": 73,
     "deals": {
       "amazon": {
-        "price": 95.99,
+        "price": 90.99,
         "url": "https://www.amazon.com/dp/B0F43PS4YR?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10178,7 +10178,7 @@ export default [
     "reviews": 59,
     "deals": {
       "amazon": {
-        "price": 152.99,
+        "price": 129.99,
         "url": "https://www.amazon.com/dp/B09YRY5MDC?tag=tiereduptech-20",
         "inStock": true
       },
@@ -10227,7 +10227,7 @@ export default [
     "reviews": 44,
     "deals": {
       "amazon": {
-        "price": 75.99,
+        "price": 61.19,
         "url": "https://www.amazon.com/dp/B0G3PHPXHR?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10305,7 +10305,7 @@ export default [
     "reviews": 13,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 149.99,
         "url": "https://www.amazon.com/dp/B0FLB5YXLD?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10469,7 +10469,7 @@ export default [
     "reviews": 110345,
     "deals": {
       "amazon": {
-        "price": 349.99,
+        "price": 379.99,
         "url": "https://www.amazon.com/dp/B078211KBB?tag=tiereduptech-20",
         "inStock": true
       },
@@ -10519,7 +10519,7 @@ export default [
     "reviews": 76838,
     "deals": {
       "amazon": {
-        "price": 399,
+        "price": 474.45,
         "url": "https://www.amazon.com/dp/B078DPCY3T?tag=tiereduptech-20",
         "inStock": true
       },
@@ -10568,7 +10568,7 @@ export default [
     "reviews": 40119,
     "deals": {
       "amazon": {
-        "price": 268.88,
+        "price": 190.97,
         "url": "https://www.amazon.com/dp/B07YFFX5MD?tag=tiereduptech-20",
         "inStock": true
       },
@@ -10620,7 +10620,7 @@ export default [
     "reviews": 37550,
     "deals": {
       "amazon": {
-        "price": 349.99,
+        "price": 399.99,
         "url": "https://www.amazon.com/dp/B07BN217QG?tag=tiereduptech-20",
         "inStock": true
       },
@@ -10718,7 +10718,7 @@ export default [
     "reviews": 25853,
     "deals": {
       "amazon": {
-        "price": 229,
+        "price": 325.9,
         "url": "https://www.amazon.com/dp/B09QV692XY?tag=tiereduptech-20",
         "inStock": true
       },
@@ -10808,7 +10808,7 @@ export default [
     "reviews": 24328,
     "deals": {
       "amazon": {
-        "price": 199,
+        "price": 220,
         "url": "https://www.amazon.com/dp/B008JJLZ7G?tag=tiereduptech-20",
         "inStock": true
       },
@@ -10853,7 +10853,7 @@ export default [
     "reviews": 22938,
     "deals": {
       "amazon": {
-        "price": 134.99,
+        "price": 116.44,
         "url": "https://www.amazon.com/dp/B09XDJ673F?tag=tiereduptech-20",
         "inStock": true
       },
@@ -10901,7 +10901,7 @@ export default [
     "reviews": 21509,
     "deals": {
       "amazon": {
-        "price": 299.99,
+        "price": 379.99,
         "url": "https://www.amazon.com/dp/B077SF8KMG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10938,7 +10938,7 @@ export default [
     "reviews": 16439,
     "deals": {
       "amazon": {
-        "price": 279.99,
+        "price": 265.34,
         "url": "https://www.amazon.com/dp/B07CQJBSQL?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10974,7 +10974,7 @@ export default [
     "reviews": 14633,
     "deals": {
       "amazon": {
-        "price": 90,
+        "price": 92,
         "url": "https://www.amazon.com/dp/B01LNJBA2I?tag=tiereduptech-20",
         "inStock": true
       }
@@ -11051,7 +11051,7 @@ export default [
     "reviews": 12472,
     "deals": {
       "amazon": {
-        "price": 249.9,
+        "price": 269.9,
         "url": "https://www.amazon.com/dp/B083XVD1FP?tag=tiereduptech-20",
         "inStock": true
       },
@@ -11097,7 +11097,7 @@ export default [
     "reviews": 11907,
     "deals": {
       "amazon": {
-        "price": 549.99,
+        "price": 519.98,
         "url": "https://www.amazon.com/dp/B0DJ1QC42R?tag=tiereduptech-20",
         "inStock": true
       },
@@ -11145,7 +11145,7 @@ export default [
     "reviews": 9518,
     "deals": {
       "amazon": {
-        "price": 436.9,
+        "price": 393.03,
         "url": "https://www.amazon.com/dp/B0977K2C74?tag=tiereduptech-20",
         "inStock": true
       },
@@ -11286,7 +11286,7 @@ export default [
     "reviews": 6329,
     "deals": {
       "amazon": {
-        "price": 229.99,
+        "price": 235,
         "url": "https://www.amazon.com/dp/B087QTVCHH?tag=tiereduptech-20",
         "inStock": true
       },
@@ -11332,7 +11332,7 @@ export default [
     "reviews": 6223,
     "deals": {
       "amazon": {
-        "price": 311,
+        "price": 326.03,
         "url": "https://www.amazon.com/dp/B0C8WPRM9T?tag=tiereduptech-20",
         "inStock": true
       },
@@ -11437,7 +11437,7 @@ export default [
     "reviews": 5733,
     "deals": {
       "amazon": {
-        "price": 359,
+        "price": 399.99,
         "url": "https://www.amazon.com/dp/B08T1SMTF9?tag=tiereduptech-20",
         "inStock": true
       },
@@ -11483,7 +11483,7 @@ export default [
     "reviews": 5448,
     "deals": {
       "amazon": {
-        "price": 193,
+        "price": 136.06,
         "url": "https://www.amazon.com/dp/B01IEKG402?tag=tiereduptech-20",
         "inStock": true
       }
@@ -11519,7 +11519,7 @@ export default [
     "reviews": 5394,
     "deals": {
       "amazon": {
-        "price": 149,
+        "price": 199,
         "url": "https://www.amazon.com/dp/B07H2549QS?tag=tiereduptech-20",
         "inStock": true
       }
@@ -11685,7 +11685,7 @@ export default [
     "reviews": 4077,
     "deals": {
       "amazon": {
-        "price": 124.99,
+        "price": 201.53,
         "url": "https://www.amazon.com/dp/B01LYFKX41?tag=tiereduptech-20",
         "inStock": true
       }
@@ -11948,7 +11948,7 @@ export default [
     "reviews": 2705,
     "deals": {
       "amazon": {
-        "price": 206.95,
+        "price": 279.99,
         "url": "https://www.amazon.com/dp/B0BQG6JCRP?tag=tiereduptech-20",
         "inStock": true
       },
@@ -12001,7 +12001,7 @@ export default [
     "reviews": 2744,
     "deals": {
       "amazon": {
-        "price": 170,
+        "price": 168,
         "url": "https://www.amazon.com/dp/B0718XQQJ9?tag=tiereduptech-20",
         "inStock": true
       },
@@ -12127,7 +12127,7 @@ export default [
     "reviews": 2674,
     "deals": {
       "amazon": {
-        "price": 149.99,
+        "price": 139,
         "url": "https://www.amazon.com/dp/B08Y1T4CR5?tag=tiereduptech-20",
         "inStock": true
       },
@@ -12171,7 +12171,7 @@ export default [
     "reviews": 2605,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 75.99,
         "url": "https://www.amazon.com/dp/B0BF97YK1L?tag=tiereduptech-20",
         "inStock": true
       }
@@ -12388,7 +12388,7 @@ export default [
     "reviews": 2487,
     "deals": {
       "amazon": {
-        "price": 209.95,
+        "price": 199.99,
         "url": "https://www.amazon.com/dp/B0D7MKQKXZ?tag=tiereduptech-20",
         "inStock": true
       },
@@ -12446,7 +12446,7 @@ export default [
     "reviews": 2487,
     "deals": {
       "amazon": {
-        "price": 459.99,
+        "price": 463.99,
         "url": "https://www.amazon.com/dp/B0D7MLB76V?tag=tiereduptech-20",
         "inStock": true
       },
@@ -12592,7 +12592,7 @@ export default [
     "reviews": 2091,
     "deals": {
       "amazon": {
-        "price": 224.99,
+        "price": 208.99,
         "url": "https://www.amazon.com/dp/B0CXJ1W6F9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -12681,7 +12681,7 @@ export default [
     "reviews": 1708,
     "deals": {
       "amazon": {
-        "price": 459.99,
+        "price": 429.99,
         "url": "https://www.amazon.com/dp/B0B94KSFTH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -12718,7 +12718,7 @@ export default [
     "reviews": 1907,
     "deals": {
       "amazon": {
-        "price": 799,
+        "price": 720,
         "url": "https://www.amazon.com/dp/B0DGH3HBHJ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -12991,7 +12991,7 @@ export default [
     "reviews": 1287,
     "deals": {
       "amazon": {
-        "price": 229.99,
+        "price": 217.7,
         "url": "https://www.amazon.com/dp/B08T1TWQS9?tag=tiereduptech-20",
         "inStock": true
       },
@@ -13041,7 +13041,7 @@ export default [
     "reviews": 1255,
     "deals": {
       "amazon": {
-        "price": 579.99,
+        "price": 569.99,
         "url": "https://www.amazon.com/dp/B0CGKY9K2Y?tag=tiereduptech-20",
         "inStock": true
       }
@@ -13083,7 +13083,7 @@ export default [
     "reviews": 1255,
     "deals": {
       "amazon": {
-        "price": 351.66,
+        "price": 319.99,
         "url": "https://www.amazon.com/dp/B0CGKHGMW5?tag=tiereduptech-20",
         "inStock": true
       }
@@ -13126,7 +13126,7 @@ export default [
     "reviews": 1273,
     "deals": {
       "amazon": {
-        "price": 289.99,
+        "price": 294.99,
         "url": "https://www.amazon.com/dp/B0C58FVB9V?tag=tiereduptech-20",
         "inStock": true
       }
@@ -13167,7 +13167,7 @@ export default [
     "reviews": 1230,
     "deals": {
       "amazon": {
-        "price": 424.95,
+        "price": 399.99,
         "url": "https://www.amazon.com/dp/B0CTRVZKG7?tag=tiereduptech-20",
         "inStock": true
       },
@@ -13221,7 +13221,7 @@ export default [
     "reviews": 1284,
     "deals": {
       "amazon": {
-        "price": 219,
+        "price": 246.48,
         "url": "https://www.amazon.com/dp/B01LNJBA50?tag=tiereduptech-20",
         "inStock": true
       },
@@ -13267,7 +13267,7 @@ export default [
     "reviews": 1118,
     "deals": {
       "amazon": {
-        "price": 467.99,
+        "price": 509.99,
         "url": "https://www.amazon.com/dp/B0C9DPZKZ8?tag=tiereduptech-20",
         "inStock": true
       }
@@ -13309,7 +13309,7 @@ export default [
     "reviews": 1196,
     "deals": {
       "amazon": {
-        "price": 204.99,
+        "price": 217.95,
         "url": "https://www.amazon.com/dp/B0DZ5YFRN5?tag=tiereduptech-20",
         "inStock": true
       },
@@ -13365,7 +13365,7 @@ export default [
     "reviews": 1196,
     "deals": {
       "amazon": {
-        "price": 319.72,
+        "price": 338.9,
         "url": "https://www.amazon.com/dp/B0DZ5TXBJT?tag=tiereduptech-20",
         "inStock": true
       },
@@ -13415,7 +13415,7 @@ export default [
     "reviews": 1068,
     "deals": {
       "amazon": {
-        "price": 272.98,
+        "price": 280.98,
         "url": "https://www.amazon.com/dp/B08SVN8MVP?tag=tiereduptech-20",
         "inStock": true
       },
@@ -13484,7 +13484,7 @@ export default [
     "value": 9,
     "bench": 45,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-27"
   },
   {
     "id": 50306,
@@ -13500,7 +13500,7 @@ export default [
     "reviews": 1073,
     "deals": {
       "amazon": {
-        "price": 422.99,
+        "price": 162.99,
         "url": "https://www.amazon.com/dp/B0CCR7M9P9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -13563,7 +13563,7 @@ export default [
     "value": 1,
     "bench": 45,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-27"
   },
   {
     "id": 50308,
@@ -13601,7 +13601,7 @@ export default [
     "value": 3,
     "bench": 45,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-27"
   },
   {
     "id": 50309,
@@ -13881,7 +13881,7 @@ export default [
     "reviews": 964,
     "deals": {
       "amazon": {
-        "price": 179.97,
+        "price": 269.97,
         "url": "https://www.amazon.com/dp/B0CCD9LBPH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -13960,7 +13960,7 @@ export default [
     "reviews": 957,
     "deals": {
       "amazon": {
-        "price": 1545.75,
+        "price": 1474.45,
         "url": "https://www.amazon.com/dp/B089RD13TX?tag=tiereduptech-20",
         "inStock": true
       },
@@ -14009,7 +14009,7 @@ export default [
     "reviews": 914,
     "deals": {
       "amazon": {
-        "price": 502.89,
+        "price": 662.56,
         "url": "https://www.amazon.com/dp/B09H1D7Y93?tag=tiereduptech-20",
         "inStock": true
       },
@@ -14061,7 +14061,7 @@ export default [
     "reviews": 912,
     "deals": {
       "amazon": {
-        "price": 330,
+        "price": 309.99,
         "url": "https://www.amazon.com/dp/B0CFFKHZCR?tag=tiereduptech-20",
         "inStock": true
       },
@@ -14340,7 +14340,7 @@ export default [
     "reviews": 704,
     "deals": {
       "amazon": {
-        "price": 329.99,
+        "price": 129.99,
         "url": "https://www.amazon.com/dp/B0C69R19Y3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -14381,7 +14381,7 @@ export default [
     "reviews": 692,
     "deals": {
       "amazon": {
-        "price": 465.99,
+        "price": 573.51,
         "url": "https://www.amazon.com/dp/B0CBQ5CVN6?tag=tiereduptech-20",
         "inStock": true
       },
@@ -14432,7 +14432,7 @@ export default [
     "reviews": 618,
     "deals": {
       "amazon": {
-        "price": 329.99,
+        "price": 399.97,
         "url": "https://www.amazon.com/dp/B0B94L4K2J?tag=tiereduptech-20",
         "inStock": true
       }
@@ -14468,7 +14468,7 @@ export default [
     "reviews": 618,
     "deals": {
       "amazon": {
-        "price": 779.99,
+        "price": 698,
         "url": "https://www.amazon.com/dp/B0B94NFYWX?tag=tiereduptech-20",
         "inStock": true
       },
@@ -14509,7 +14509,7 @@ export default [
     "reviews": 618,
     "deals": {
       "amazon": {
-        "price": 569.99,
+        "price": 657.19,
         "url": "https://www.amazon.com/dp/B0B94LJWKY?tag=tiereduptech-20",
         "inStock": true
       },
@@ -14550,7 +14550,7 @@ export default [
     "reviews": 588,
     "deals": {
       "amazon": {
-        "price": 289.97,
+        "price": 272.97,
         "url": "https://www.amazon.com/dp/B0CF1H9SYQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -14590,7 +14590,7 @@ export default [
     "reviews": 569,
     "deals": {
       "amazon": {
-        "price": 574.45,
+        "price": 499.99,
         "url": "https://www.amazon.com/dp/B0719498XY?tag=tiereduptech-20",
         "inStock": true
       },
@@ -14788,7 +14788,7 @@ export default [
     "reviews": 539,
     "deals": {
       "amazon": {
-        "price": 299.97,
+        "price": 279.89,
         "url": "https://www.amazon.com/dp/B0FJ8QMW4H?tag=tiereduptech-20",
         "inStock": true
       },
@@ -14903,7 +14903,7 @@ export default [
     "reviews": 525,
     "deals": {
       "amazon": {
-        "price": 429.99,
+        "price": 469.99,
         "url": "https://www.amazon.com/dp/B08SVPWHZH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -14939,7 +14939,7 @@ export default [
     "reviews": 519,
     "deals": {
       "amazon": {
-        "price": 289.99,
+        "price": 174.99,
         "url": "https://www.amazon.com/dp/B0DP643GFH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -14981,7 +14981,7 @@ export default [
     "reviews": 515,
     "deals": {
       "amazon": {
-        "price": 499.75,
+        "price": 449.99,
         "url": "https://www.amazon.com/dp/B0BPXRY7N2?tag=tiereduptech-20",
         "inStock": true
       }
@@ -15020,7 +15020,7 @@ export default [
     "reviews": 515,
     "deals": {
       "amazon": {
-        "price": 220.99,
+        "price": 198.89,
         "url": "https://www.amazon.com/dp/B0DY7GHSTZ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -15174,7 +15174,7 @@ export default [
     "reviews": 454,
     "deals": {
       "amazon": {
-        "price": 449.99,
+        "price": 427.49,
         "url": "https://www.amazon.com/dp/B0FR4X2P8X?tag=tiereduptech-20",
         "inStock": true
       }
@@ -15214,7 +15214,7 @@ export default [
     "reviews": 386,
     "deals": {
       "amazon": {
-        "price": 959.99,
+        "price": 719,
         "url": "https://www.amazon.com/dp/B07YXG3X27?tag=tiereduptech-20",
         "inStock": true
       }
@@ -15255,7 +15255,7 @@ export default [
     "reviews": 386,
     "deals": {
       "amazon": {
-        "price": 759.99,
+        "price": 839.99,
         "url": "https://www.amazon.com/dp/B0CWH9BX2P?tag=tiereduptech-20",
         "inStock": true
       }
@@ -15820,7 +15820,7 @@ export default [
     "reviews": 239,
     "deals": {
       "amazon": {
-        "price": 658.88,
+        "price": 702.99,
         "url": "https://www.amazon.com/dp/B0CHJG3ZSF?tag=tiereduptech-20",
         "inStock": true
       }
@@ -15861,7 +15861,7 @@ export default [
     "reviews": 237,
     "deals": {
       "amazon": {
-        "price": 120,
+        "price": 160,
         "url": "https://www.amazon.com/dp/B07RH7F14P?tag=tiereduptech-20",
         "inStock": true
       },
@@ -15906,7 +15906,7 @@ export default [
     "reviews": 225,
     "deals": {
       "amazon": {
-        "price": 177.31,
+        "price": 179,
         "url": "https://www.amazon.com/dp/B00A45JEX0?tag=tiereduptech-20",
         "inStock": true
       }
@@ -15939,7 +15939,7 @@ export default [
     "reviews": 222,
     "deals": {
       "amazon": {
-        "price": 450,
+        "price": 491,
         "url": "https://www.amazon.com/dp/B01CHP20MG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -15973,7 +15973,7 @@ export default [
     "reviews": 201,
     "deals": {
       "amazon": {
-        "price": 182.99,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0BW8BMSX5?tag=tiereduptech-20",
         "inStock": true
       }
@@ -16014,7 +16014,7 @@ export default [
     "reviews": 201,
     "deals": {
       "amazon": {
-        "price": 286.99,
+        "price": 269.99,
         "url": "https://www.amazon.com/dp/B0CWQP2VGH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -16093,7 +16093,7 @@ export default [
     "reviews": 191,
     "deals": {
       "amazon": {
-        "price": 379.99,
+        "price": 403,
         "url": "https://www.amazon.com/dp/B084QBB99H?tag=tiereduptech-20",
         "inStock": true
       }
@@ -16130,7 +16130,7 @@ export default [
     "reviews": 188,
     "deals": {
       "amazon": {
-        "price": 389.99,
+        "price": 385,
         "url": "https://www.amazon.com/dp/B08W5TLTL2?tag=tiereduptech-20",
         "inStock": true
       },
@@ -16223,7 +16223,7 @@ export default [
     "reviews": 175,
     "deals": {
       "amazon": {
-        "price": 114.9,
+        "price": 139.99,
         "url": "https://www.amazon.com/dp/B00A45JFJS?tag=tiereduptech-20",
         "inStock": true
       }
@@ -16256,7 +16256,7 @@ export default [
     "reviews": 163,
     "deals": {
       "amazon": {
-        "price": 319.99,
+        "price": 302.99,
         "url": "https://www.amazon.com/dp/B0CZMZQ8MW?tag=tiereduptech-20",
         "inStock": true
       },
@@ -16303,7 +16303,7 @@ export default [
     "reviews": 162,
     "deals": {
       "amazon": {
-        "price": 88.34,
+        "price": 79.97,
         "url": "https://www.amazon.com/dp/B0BR7QMQHV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -16342,7 +16342,7 @@ export default [
     "reviews": 160,
     "deals": {
       "amazon": {
-        "price": 629,
+        "price": 585,
         "url": "https://www.amazon.com/dp/B08SW72NBQ?tag=tiereduptech-20",
         "inStock": true
       },
@@ -16389,7 +16389,7 @@ export default [
     "reviews": 163,
     "deals": {
       "amazon": {
-        "price": 73,
+        "price": 65,
         "url": "https://www.amazon.com/dp/B01LX4E7FM?tag=tiereduptech-20",
         "inStock": true
       },
@@ -16464,7 +16464,7 @@ export default [
     "reviews": 148,
     "deals": {
       "amazon": {
-        "price": 87.37,
+        "price": 73.99,
         "url": "https://www.amazon.com/dp/B0CDWH7W5T?tag=tiereduptech-20",
         "inStock": true
       }
@@ -16506,7 +16506,7 @@ export default [
     "reviews": 148,
     "deals": {
       "amazon": {
-        "price": 319.99,
+        "price": 259.99,
         "url": "https://www.amazon.com/dp/B0F996WHZM?tag=tiereduptech-20",
         "inStock": true
       }
@@ -16609,7 +16609,7 @@ export default [
     "dram": true,
     "value": 6,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "bench": 50
   },
   {
@@ -16704,7 +16704,7 @@ export default [
     "reviews": 120,
     "deals": {
       "amazon": {
-        "price": 559.99,
+        "price": 594.94,
         "url": "https://www.amazon.com/dp/B0DH6PMDY3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -16854,7 +16854,7 @@ export default [
     "reviews": 79,
     "deals": {
       "amazon": {
-        "price": 489.99,
+        "price": 553.38,
         "url": "https://www.amazon.com/dp/B0F25CX4LB?tag=tiereduptech-20",
         "inStock": true
       },
@@ -16908,7 +16908,7 @@ export default [
     "reviews": 77,
     "deals": {
       "amazon": {
-        "price": 574.99,
+        "price": 529.99,
         "url": "https://www.amazon.com/dp/B0F43HHLTC?tag=tiereduptech-20",
         "inStock": true
       }
@@ -16948,7 +16948,7 @@ export default [
     "reviews": 77,
     "deals": {
       "amazon": {
-        "price": 169.99,
+        "price": 178.99,
         "url": "https://www.amazon.com/dp/B0DX22HLQ2?tag=tiereduptech-20",
         "inStock": true
       },
@@ -17022,7 +17022,7 @@ export default [
     "dram": false,
     "value": 100,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-27",
     "bench": 77
   },
   {
@@ -17038,7 +17038,7 @@ export default [
     "reviews": 77,
     "deals": {
       "amazon": {
-        "price": 119.99,
+        "price": 113.99,
         "url": "https://www.amazon.com/dp/B0DYJRC9HX?tag=tiereduptech-20",
         "inStock": true
       },
@@ -17125,7 +17125,7 @@ export default [
     "reviews": 73,
     "deals": {
       "amazon": {
-        "price": 268.99,
+        "price": 239.99,
         "url": "https://www.amazon.com/dp/B0F43VP4XF?tag=tiereduptech-20",
         "inStock": true
       }
@@ -17289,7 +17289,7 @@ export default [
     "reviews": 71,
     "deals": {
       "amazon": {
-        "price": 179.99,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DM9341L3?tag=tiereduptech-20",
         "inStock": true
       },
@@ -17384,18 +17384,18 @@ export default [
     "reviews": 66,
     "deals": {
       "amazon": {
-        "price": 754.05,
+        "price": 699.99,
         "url": "https://www.amazon.com/dp/B0F25CTQN1?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "445839766830358655905321",
-        "price": 729.5,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839766830358655905321&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-003V-000D0%3Fitem%3D9SIC5YTKWD2522",
+        "sku": "9SIA4P0KMG7624",
+        "price": 699.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315463360732793909218&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-003V-000D0%3Fitem%3D9SIA4P0KMG7624",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2509180IX19K4A.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.732Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -17435,18 +17435,18 @@ export default [
     "reviews": 66,
     "deals": {
       "amazon": {
-        "price": 433.51,
+        "price": 419.99,
         "url": "https://www.amazon.com/dp/B0F25B9JJ3?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "445833804449905003481366",
-        "price": 379.6,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833804449905003481366&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-003V-000C6%3Fitem%3D9SIC5YTKWD2459",
+        "sku": "9SIC513KT49737",
+        "price": 454.81,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833682000707202315193&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-003V-000C6%3Fitem%3D9SIC513KT49737",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2509040IS7O84A.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.732Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -17526,9 +17526,19 @@ export default [
     "reviews": 66,
     "deals": {
       "amazon": {
-        "price": 264.83,
+        "price": 240.32,
         "url": "https://www.amazon.com/dp/B0F25F4LLY?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA4P0KKY0219",
+        "price": 239.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314891511266080071974&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-003V-000C9%3Fitem%3D9SIA4P0KKY0219",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2509040IS7DG4A.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -17570,14 +17580,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458311239565170048911895",
+        "sku": "N82E16820329024",
         "price": 479.99,
-        "saleprice": 459.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311239565170048911895&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsk-hynix-2tb-nvme%2Fp%2FN82E16820329024%3Fitem%3DN82E16820329024",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-329-025-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -17663,6 +17672,16 @@ export default [
         "price": 599.99,
         "url": "https://www.amazon.com/dp/B0BWNRPN59?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAADFKPS7807",
+        "price": 789.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833655371646032451046&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-4gb-990-pro-nvme-2-0%2Fp%2FN82E16820147878%3Fitem%3D9SIAADFKPS7807",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-878-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.57
       }
     },
     "additionalImages": [
@@ -17700,7 +17719,7 @@ export default [
     "reviews": 48,
     "deals": {
       "amazon": {
-        "price": 509.99,
+        "price": 482.99,
         "url": "https://www.amazon.com/dp/B0CZLDKDKH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -17782,7 +17801,7 @@ export default [
     "reviews": 47,
     "deals": {
       "amazon": {
-        "price": 659.99,
+        "price": 560.99,
         "url": "https://www.amazon.com/dp/B0FGPDXP1Z?tag=tiereduptech-20",
         "inStock": true
       }
@@ -17821,7 +17840,7 @@ export default [
     "reviews": 47,
     "deals": {
       "amazon": {
-        "price": 229.99,
+        "price": 199.49,
         "url": "https://www.amazon.com/dp/B0FGQ6WD1Q?tag=tiereduptech-20",
         "inStock": true
       }
@@ -17861,7 +17880,7 @@ export default [
     "reviews": 47,
     "deals": {
       "amazon": {
-        "price": 379.99,
+        "price": 322.99,
         "url": "https://www.amazon.com/dp/B0FGQ19H9B?tag=tiereduptech-20",
         "inStock": true
       }
@@ -17939,7 +17958,7 @@ export default [
     "reviews": 46,
     "deals": {
       "amazon": {
-        "price": 126,
+        "price": 148.09,
         "url": "https://www.amazon.com/dp/B00EEJP1N4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -17970,7 +17989,7 @@ export default [
     "reviews": 46,
     "deals": {
       "amazon": {
-        "price": 475.99,
+        "price": 595,
         "url": "https://www.amazon.com/dp/B0F1NK18LK?tag=tiereduptech-20",
         "inStock": true
       }
@@ -18004,6 +18023,16 @@ export default [
         "price": 479.99,
         "url": "https://www.amazon.com/dp/B0D8778W1Y?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC0X3KGY4965",
+        "price": 470,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833043533856016376782&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-4tb-blue-sn5000-nvme%2Fp%2FN82E16820250266%3Fitem%3D9SIC0X3KGY4965",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-266-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.73
       }
     },
     "additionalImages": [
@@ -18079,7 +18108,7 @@ export default [
     "reviews": 44,
     "deals": {
       "amazon": {
-        "price": 295.99,
+        "price": 247.94,
         "url": "https://www.amazon.com/dp/B0F43H8WH7?tag=tiereduptech-20",
         "inStock": true
       }
@@ -18119,7 +18148,7 @@ export default [
     "reviews": 44,
     "deals": {
       "amazon": {
-        "price": 520.99,
+        "price": 504.97,
         "url": "https://www.amazon.com/dp/B0GJ3JMHJR?tag=tiereduptech-20",
         "inStock": true
       }
@@ -18160,17 +18189,17 @@ export default [
     "reviews": 40,
     "deals": {
       "amazon": {
-        "price": 379.99,
+        "price": 419.99,
         "url": "https://www.amazon.com/dp/B09C4BKTRV?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "9SIA6ZPK9V5650",
-        "price": 504.66,
+        "price": 499,
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314514945349055290549&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-2tb-black-sn850x-nvme%2Fp%2FN82E16820250246%3Fitem%3D9SIA6ZPK9V5650",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-246-04.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.73
       }
@@ -18212,7 +18241,7 @@ export default [
     "reviews": 42,
     "deals": {
       "amazon": {
-        "price": 134.99,
+        "price": 159,
         "url": "https://www.amazon.com/dp/B009YQOL9C?tag=tiereduptech-20",
         "inStock": true
       }
@@ -18247,7 +18276,7 @@ export default [
     "reviews": 38,
     "deals": {
       "amazon": {
-        "price": 94.99,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B00AY9ZXJU?tag=tiereduptech-20",
         "inStock": true
       },
@@ -18290,7 +18319,7 @@ export default [
     "reviews": 36,
     "deals": {
       "amazon": {
-        "price": 279.99,
+        "price": 263.99,
         "url": "https://www.amazon.com/dp/B0F93ZM7PZ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -18375,11 +18404,11 @@ export default [
       },
       "newegg": {
         "sku": "9SIBT5SKUP6550",
-        "price": 74.99,
+        "price": 74.9,
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583354055942166037947&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-firecuda-500gb-st500lx025%2Fp%2FN82E16822179112%3Fitem%3D9SIBT5SKUP6550",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-112-S01.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.62
       }
@@ -18417,13 +18446,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445837815318290565786902",
+        "sku": "N82E16820140046",
         "price": 729.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837815318290565786902&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-4tb%2Fp%2FN82E16820140046%3Fitem%3DN82E16820140046",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-140-046-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.777Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -18472,7 +18501,7 @@ export default [
     "reviews": 34,
     "deals": {
       "amazon": {
-        "price": 404.43,
+        "price": 327.97,
         "url": "https://www.amazon.com/dp/B0DMHYRWG1?tag=tiereduptech-20",
         "inStock": true
       },
@@ -18527,7 +18556,7 @@ export default [
     "reviews": 33,
     "deals": {
       "amazon": {
-        "price": 139.99,
+        "price": 103.99,
         "url": "https://www.amazon.com/dp/B0BKFXSVHC?tag=tiereduptech-20",
         "inStock": true
       }
@@ -18565,7 +18594,7 @@ export default [
     "reviews": 32,
     "deals": {
       "amazon": {
-        "price": 499.99,
+        "price": 549.99,
         "url": "https://www.amazon.com/dp/B0FP5B6R9H?tag=tiereduptech-20",
         "inStock": true
       }
@@ -18647,19 +18676,18 @@ export default [
     "reviews": 29,
     "deals": {
       "amazon": {
-        "price": 174.99,
+        "price": 194.99,
         "url": "https://www.amazon.com/dp/B0CSPRDW27?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "44583646495445910951941",
+        "sku": "N82E16820177165",
         "price": 194.99,
-        "saleprice": 174.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583646495445910951941&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-1tb-xlr8-nvme%2Fp%2FN82E16820177165%3Fitem%3DN82E16820177165",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-177-165-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.777Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -18974,7 +19002,7 @@ export default [
     "reviews": 21,
     "deals": {
       "amazon": {
-        "price": 369,
+        "price": 349,
         "url": "https://www.amazon.com/dp/B0B3RQDGL7?tag=tiereduptech-20",
         "inStock": true
       },
@@ -18984,14 +19012,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458315741127343365614106",
-        "price": 450,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315741127343365614106&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1B0-0020-00538%3Fitem%3D9SIBDKWKS09386",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BDKWS2601201E7UPV6E.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.343Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIA6ZPK9V5650",
+        "price": 499,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314514945349055290549&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-2tb-black-sn850x-nvme%2Fp%2FN82E16820250246%3Fitem%3D9SIA6ZPK9V5650",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-246-04.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.82
       }
     },
     "discount": 44,
@@ -19031,7 +19059,7 @@ export default [
     "reviews": 19,
     "deals": {
       "amazon": {
-        "price": 169.99,
+        "price": 144.49,
         "url": "https://www.amazon.com/dp/B0GKZT8D3K?tag=tiereduptech-20",
         "inStock": true
       }
@@ -19069,7 +19097,7 @@ export default [
     "reviews": 21,
     "deals": {
       "amazon": {
-        "price": 218.45,
+        "price": 249.99,
         "url": "https://www.amazon.com/dp/B0FWFC7HRG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -19108,7 +19136,7 @@ export default [
     "reviews": 22,
     "deals": {
       "amazon": {
-        "price": 559.99,
+        "price": 659.99,
         "url": "https://www.amazon.com/dp/B0C9TPFTYT?tag=tiereduptech-20",
         "inStock": true
       }
@@ -19189,7 +19217,7 @@ export default [
     "reviews": 18,
     "deals": {
       "amazon": {
-        "price": 309.99,
+        "price": 280.49,
         "url": "https://www.amazon.com/dp/B0FH26CFDB?tag=tiereduptech-20",
         "inStock": true
       }
@@ -19230,7 +19258,7 @@ export default [
     "reviews": 18,
     "deals": {
       "amazon": {
-        "price": 199.99,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0FH26Q8NH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -19283,14 +19311,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16820156456",
-        "price": 209.99,
-        "saleprice": 199.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315346333004156882849&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-p510-nvme-2-0%2Fp%2FN82E16820156456%3Fitem%3DN82E16820156456",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-456-01.jpg",
-        "matchedAt": "2026-05-13",
+        "sku": "N82E16820156428",
+        "price": 339.99,
+        "saleprice": 334.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310397282675197101065&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-p510-nvme-2-0%2Fp%2FN82E16820156428%3Fitem%3DN82E16820156428",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-427-08.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.8
+        "matchScore": 0.7
       }
     },
     "additionalImages": [
@@ -19368,7 +19396,7 @@ export default [
     "reviews": 14,
     "deals": {
       "amazon": {
-        "price": 149.99,
+        "price": 142.49,
         "url": "https://www.amazon.com/dp/B0FBMB9374?tag=tiereduptech-20",
         "inStock": true
       }
@@ -19572,14 +19600,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16820250271",
-        "price": 679.99,
+        "sku": "9SIC513KV05831",
+        "price": 191,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833279587397904796804&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-4tb-black%2Fp%2FN82E16820250271%3Fitem%3DN82E16820250271",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-271-04.png",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315155542825831998876&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-black-sn850x-nvme%2Fp%2FN82E16820250243%3Fitem%3D9SIC513KV05831",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-243-05.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.8
+        "matchScore": 0.7
       }
     },
     "additionalImages": [
@@ -19658,7 +19686,7 @@ export default [
     "reviews": 10,
     "deals": {
       "amazon": {
-        "price": 629.5,
+        "price": 779.99,
         "url": "https://www.amazon.com/dp/B09XXBQMKN?tag=tiereduptech-20",
         "inStock": true
       }
@@ -19771,20 +19799,19 @@ export default [
     "reviews": 9,
     "deals": {
       "amazon": {
-        "price": 399.99,
+        "price": 439.99,
         "url": "https://www.amazon.com/dp/B08J8JLMFF?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458315687669110145586213",
-        "name": "Seagate Exos X16 ST16000NM003G 16TB 7200 RPM 256MB Cache SATA 6.0Gb/s 3.5' Hard Drives, 512E/4KN, SED",
-        "price": 624.45,
+        "sku": "9SIADU0KA70720",
+        "price": 759.45,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315687669110145586213&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-exos-x16-st16000nm003g-16tb%2Fp%2FN82E16822184978%3Fitem%3D9SIADU0KA70720",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-184-978-S01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-15T02:34:16.508Z",
-        "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.88
       }
     },
     "discount": 6,
@@ -19917,7 +19944,7 @@ export default [
     "value": 22,
     "formFactor": "M.2",
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-27"
   },
   {
     "id": 50460,
@@ -19974,7 +20001,7 @@ export default [
     "reviews": 5,
     "deals": {
       "amazon": {
-        "price": 849.99,
+        "price": 889.99,
         "url": "https://www.amazon.com/dp/B0CY2SZ62P?tag=tiereduptech-20",
         "inStock": true
       }
@@ -20053,7 +20080,7 @@ export default [
     "reviews": 5,
     "deals": {
       "amazon": {
-        "price": 299,
+        "price": 275,
         "url": "https://www.amazon.com/dp/B07DZ5PT29?tag=tiereduptech-20",
         "inStock": true
       },
@@ -20203,13 +20230,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445835974701187687988354",
-        "price": 80.98,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835974701187687988354&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-cs900-250gb%2Fp%2F0D9-002E-000F1%3Fitem%3D9SIA2W0JW42705",
+        "sku": "0D9-002E-000F1",
+        "price": 54.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839199599803337663376&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-cs900-250gb%2Fp%2F0D9-002E-000F1%3Fitem%3D0D9-002E-000F1",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0D9-002E-000F1-V01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.346Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -20240,6 +20267,16 @@ export default [
         "price": 187.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6385543&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-cs900-1tb-internal-ssd-sata%2FJXF2C42GFR&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16820177078",
+        "price": 199.99,
+        "saleprice": 175.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836648791639817075193&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-1tb-cs900%2Fp%2FN82E16820177078%3Fitem%3DN82E16820177078",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-177-078-V09.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "cap": 1000,
@@ -20366,13 +20403,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445839849257310448932125",
-        "price": 899.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839849257310448932125&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-4tb-870-evo-series-sata%2Fp%2FN82E16820147795%3Fitem%3D9SIBFJRJ9V7125",
+        "sku": "N82E16820147795",
+        "price": 2069.99,
+        "saleprice": 1259.37,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834815456360247752220&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-4tb-870-evo-series-sata%2Fp%2FN82E16820147795%3Fitem%3DN82E16820147795",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-795-V01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.378Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -20407,17 +20444,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583423846642927860518",
-        "price": 249.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583423846642927860518&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-500gb-870-evo-series-sata%2Fp%2FN82E16820147792%3Fitem%3D9SIAADFKPC0062",
+        "sku": "9SIBFJRJ9V7033",
+        "price": 259.95,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837789532305718982579&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-500gb-870-evo-series-sata%2Fp%2FN82E16820147792%3Fitem%3D9SIBFJRJ9V7033",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-792-V01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.552Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "amazon": {
-        "price": 287.09,
+        "price": 199.99,
         "url": "https://www.amazon.com/dp/B08QBMD6P4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -20577,13 +20614,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445837200618655168250907",
-        "price": 299.99,
+        "sku": "0D9-002E-000X8",
+        "price": 234.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837200618655168250907&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-2tb-cs900%2Fp%2F0D9-002E-000X8%3Fitem%3D0D9-002E-000X8",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0D9-002E-000X8-V01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.119Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -20617,13 +20654,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445839424723235715504844",
-        "price": 249,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839424723235715504844&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-bx500-sata%2Fp%2FN82E16820156232%3Fitem%3D9SIC0X3KHW9242",
+        "sku": "N82E16820156232",
+        "price": 279.99,
+        "saleprice": 249.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835025488262823789955&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-bx500-sata%2Fp%2FN82E16820156232%3Fitem%3DN82E16820156232",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-232-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.702Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -20690,12 +20727,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBTK0KW07118",
-        "price": 233.6,
+        "sku": "9SIC3DRKXU9109",
+        "price": 269,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583644944496457786120&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-blue-sa510%2Fp%2FN82E16820250232%3Fitem%3D9SIBTK0KW07118",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313464711288694958135&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-blue-sa510%2Fp%2FN82E16820250232%3Fitem%3D9SIC3DRKXU9109",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-232-07.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -20731,12 +20768,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16820250244",
-        "price": 669.99,
+        "sku": "9SIC4RPKUR4483",
+        "price": 606.96,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831749202950568255183&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-4tb-black-sn850x-nvme%2Fp%2FN82E16820250244%3Fitem%3DN82E16820250244",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839065462787582221391&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-4tb-black-sn850x-nvme%2Fp%2FN82E16820250244%3Fitem%3D9SIC4RPKUR4483",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-244-16.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.6
       }
@@ -20774,14 +20811,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445837636860745711884673",
-        "price": 249.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837636860745711884673&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-0006-00629%3Fitem%3D9SIC1TCKSF9648",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD2312160LEWDKF2.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.803Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIC513KVB4860",
+        "price": 200.77,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833527415290614694367&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-black-sn850-nvme%2Fp%2FN82E16820250161%3Fitem%3D9SIC513KVB4860",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-161-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.7
       }
     },
     "cap": 1000,
@@ -20816,13 +20853,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458311641908094496099179",
-        "price": 845.99,
+        "sku": "9SIA4P0KD86637",
+        "price": 699.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311641908094496099179&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-001A-003R3%3Fitem%3D9SIA4P0KD86637",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2501150PDHU7AC.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.423Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -20856,14 +20893,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16820250251",
-        "price": 299.99,
+        "sku": "9SIC3DRKXU9109",
+        "price": 269,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839534573927416163998&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-2tb-sa510-sata%2Fp%2FN82E16820250251%3Fitem%3DN82E16820250251",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-251-01.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313464711288694958135&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-blue-sa510%2Fp%2FN82E16820250232%3Fitem%3D9SIC3DRKXU9109",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-232-07.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 0.86
       }
     },
     "cap": 2000,
@@ -20973,14 +21010,14 @@ export default [
         "inStock": false
       },
       "newegg": {
-        "sku": "4458315404629033031909954",
-        "price": 345.55,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315404629033031909954&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-t500-nvme%2Fp%2FN82E16820156389%3Fitem%3D9SIBFJRK7E7589",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-387-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.378Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIBFJRKA54231",
+        "price": 389.9,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314486925269849937897&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-t705-nvme%2Fp%2FN82E16820156401%3Fitem%3D9SIBFJRKA54231",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-401-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.54
       }
     },
     "cap": 2000,
@@ -21143,13 +21180,13 @@ export default [
         "inStock": false
       },
       "newegg": {
-        "sku": "445835032285924496526057",
-        "price": 488.84,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835032285924496526057&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-1tb-990-evo-nvme-2-0%2Fp%2FN82E16820147886%3Fitem%3D9SIAD6HKHC6539",
+        "sku": "9SIAADFKTR1731",
+        "price": 299.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310655711576114359358&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-1tb-990-evo-nvme-2-0%2Fp%2FN82E16820147886%3Fitem%3D9SIAADFKTR1731",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-886-04.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.836Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -21185,12 +21222,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC0X3KPR3743",
-        "price": 339,
+        "sku": "9SIAADFKY32559",
+        "price": 449.99,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316325585434423994609&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-2tb-990-evo-nvme-2-0%2Fp%2FN82E16820147887%3Fitem%3D9SIC0X3KPR3743",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311066849019636786992&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-2tb-990-evo-nvme-2-0%2Fp%2FN82E16820147887%3Fitem%3D9SIAADFKY32559",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-887-01.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1
       }
@@ -21226,13 +21263,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458314518291357655883027",
-        "price": 501.33,
+        "sku": "9SIBZW0KSB0726",
+        "price": 599,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314518291357655883027&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-2tb-firecuda-530r%2Fp%2FN82E16820248257%3Fitem%3D9SIBZW0KSB0726",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-248-256-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.675Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -21268,13 +21305,13 @@ export default [
         "inStock": false
       },
       "newegg": {
-        "sku": "445836944935131561944781",
+        "sku": "9SIBZW0KN89747",
         "price": 899,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836944935131561944781&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-4tb-firecuda-530r%2Fp%2FN82E16820248258%3Fitem%3D9SIBZW0KN89747",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-248-256-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.675Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -21309,6 +21346,16 @@ export default [
         "price": 236.45,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592976&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-firecuda-530r-1tb-internal-ssd-pcie-gen-4-x4-nvme%2FJ37C5H5TFL&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBZW0KXJ1298",
+        "price": 329,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836865103888394213081&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-1tb-firecuda-530r%2Fp%2FN82E16820248256%3Fitem%3D9SIBZW0KXJ1298",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-248-256-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "cap": 1000,
@@ -21343,14 +21390,14 @@ export default [
         "inStock": false
       },
       "newegg": {
-        "sku": "9SIC0X3KGY4965",
-        "price": 547.43,
+        "sku": "9SIA4P0KDD2481",
+        "price": 1273.5,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833043533856016376782&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-4tb-blue-sn5000-nvme%2Fp%2FN82E16820250266%3Fitem%3D9SIC0X3KGY4965",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-266-01.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.9
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832283743616933305959&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-001A-003R7%3Fitem%3D9SIA4P0KDD2481",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2508260FYAA1E6.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "cap": 4000,
@@ -21451,12 +21498,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC5YTKW71914",
-        "price": 1432.45,
+        "sku": "N82E16820250272",
+        "price": 3799.99,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313882109144874612689&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-8tb-black%2Fp%2FN82E16820250270%3Fitem%3D9SIC5YTKW71914",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-270-09.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837649669311045399472&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-8tb-black%2Fp%2FN82E16820250272%3Fitem%3DN82E16820250272",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-272-05.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.6
       }
@@ -21493,13 +21540,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317035641039787867265",
-        "price": 449,
+        "sku": "9SIBFJRKA88785",
+        "price": 478.95,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317035641039787867265&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-4tb%2Fp%2FN82E16820156405%3Fitem%3D9SIBFJRKA88785",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-405-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.378Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -21534,13 +21581,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316020791360505546395",
-        "price": 255,
+        "sku": "9SIBFJRKFD5541",
+        "price": 249,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316020791360505546395&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-1tb-990-evo-plus-nvme-2-0%2Fp%2FN82E16820147899%3Fitem%3D9SIBFJRKFD5541",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-899-10.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.378Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -21576,13 +21623,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458313557084948076931234",
-        "price": 404.95,
+        "sku": "9SIBFJRKFD5580",
+        "price": 383.4,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313557084948076931234&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-2tb-990-evo-plus-nvme-2-0%2Fp%2FN82E16820147900%3Fitem%3D9SIBFJRKFD5580",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-900-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.378Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -21618,12 +21665,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBTK0KV38030",
-        "price": 187.8,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835946283579689204847&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-sn7100-nvme%2Fp%2FN82E16820250276%3Fitem%3D9SIBTK0KV38030",
+        "sku": "N82E16820250276",
+        "price": 299.99,
+        "saleprice": 209.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831295301876230532483&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-sn7100-nvme%2Fp%2FN82E16820250276%3Fitem%3DN82E16820250276",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-276-05.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.56
       }
@@ -21660,12 +21707,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC0X3KGM9504",
-        "price": 599,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312419815898394097332&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsandisk-4tb-sn7100-nvme%2Fp%2F0D9-001A-003S1%3Fitem%3D9SIC0X3KGM9504",
+        "sku": "0D9-001A-003S1",
+        "price": 589.99,
+        "saleprice": 549.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318284833340300936522&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsandisk-4tb-sn7100-nvme%2Fp%2F0D9-001A-003S1%3Fitem%3D0D9-001A-003S1",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0D9-001A-003S1-15.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.56
       }
@@ -21702,12 +21749,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16820250275",
-        "price": 349.99,
+        "sku": "9SIC0X3KG68651",
+        "price": 289,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836220505555022762679&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-2tb-sn7100-nvme%2Fp%2FN82E16820250275%3Fitem%3DN82E16820250275",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839088116594238880696&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-2tb-sn7100-nvme%2Fp%2FN82E16820250275%3Fitem%3D9SIC0X3KG68651",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-275-04.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.56
       }
@@ -21842,13 +21889,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445832541656493446403779",
-        "price": 219.55,
+        "sku": "9SIBFJRKSM5581",
+        "price": 199.45,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832541656493446403779&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-p510-nvme-2-0%2Fp%2FN82E16820156427%3Fitem%3D9SIBFJRKSM5581",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-427-08.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.378Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -22179,14 +22226,14 @@ export default [
         "inStock": false
       },
       "newegg": {
-        "sku": "445833260251505342850533",
-        "price": 426.5,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833260251505342850533&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-t710-nvme%2Fp%2FN82E16820156444%3Fitem%3D9SIBFJRKUN4730",
+        "sku": "9SIBFJRKT69622",
+        "price": 246,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837012330783942313597&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-t710-nvme%2Fp%2FN82E16820156443%3Fitem%3D9SIBFJRKT69622",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-443-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.378Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.54
       }
     },
     "cap": 2000,
@@ -22222,14 +22269,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBFJRKVC6830",
-        "price": 765,
+        "sku": "9SIBFJRKSV8652",
+        "price": 659,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310058959201149428071&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-4tb-t710-nvme%2Fp%2FN82E16820156448%3Fitem%3D9SIBFJRKVC6830",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-446-02.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.54
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834257069077979460830&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-4tb-t710-nvme%2Fp%2FN82E16820156445%3Fitem%3D9SIBFJRKSV8652",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-443-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "cap": 4000,
@@ -22265,13 +22312,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317523912889682244133",
-        "price": 390.55,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317523912889682244133&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-t710-nvme%2Fp%2FN82E16820156447%3Fitem%3D9SIBFJRKSP0555",
+        "sku": "N82E16820156447",
+        "price": 434,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833692412535570981315&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-t710-nvme%2Fp%2FN82E16820156447%3Fitem%3DN82E16820156447",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-446-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.378Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -22308,13 +22355,13 @@ export default [
         "inStock": false
       },
       "newegg": {
-        "sku": "4458310058959201149428071",
-        "price": 765,
+        "sku": "9SIBFJRKVC6830",
+        "price": 725,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310058959201149428071&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-4tb-t710-nvme%2Fp%2FN82E16820156448%3Fitem%3D9SIBFJRKVC6830",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-446-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.379Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -22556,6 +22603,16 @@ export default [
         "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11256332&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-portable-ssd-1tb-usb-3-2-gen-2-usb-c-sdssde30-1t00-g26%2FJXJ62CRCZC&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16820173716",
+        "price": 299.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839697947457781679453&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsandisk-1tb-optimus-gx-7100m-nvme-2-0%2Fp%2FN82E16820173716%3Fitem%3DN82E16820173716",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-173-716-08.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "cap": 1000,
@@ -22586,6 +22643,16 @@ export default [
         "price": 349.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669300&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669300.p%3FskuId%3D6669300",
         "inStock": false
+      },
+      "newegg": {
+        "sku": "N82E16820173716",
+        "price": 299.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839697947457781679453&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsandisk-1tb-optimus-gx-7100m-nvme-2-0%2Fp%2FN82E16820173716%3Fitem%3DN82E16820173716",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-173-716-08.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.88
       }
     },
     "cap": 1000,
@@ -22646,6 +22713,16 @@ export default [
         "price": 439.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669307&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669307.p%3FskuId%3D6669307",
         "inStock": false
+      },
+      "newegg": {
+        "sku": "N82E16820173706",
+        "price": 329.99,
+        "saleprice": 294.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315167980913073730640&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsandisk-1tb-nvme-1-4%2Fp%2FN82E16820173706%3Fitem%3DN82E16820173706",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2605220C90VO31.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "cap": 1000,
@@ -22678,13 +22755,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317003027515303825812",
+        "sku": "9SIA2W0K1J4415",
         "price": 114.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317003027515303825812&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-500gb-cs2241%2Fp%2FN82E16820177156%3Fitem%3D9SIA2W0K1J4415",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-177-156-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.346Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -22721,14 +22798,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445834519086283339330412",
+        "sku": "N82E16820248263",
         "price": 499.99,
         "saleprice": 459.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834519086283339330412&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-1tb-firecuda-530r%2Fp%2FN82E16820248263%3Fitem%3DN82E16820248263",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-248-263-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.779Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -22762,14 +22838,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583202024701481931371",
+        "sku": "N82E16820248264",
         "price": 899.99,
         "saleprice": 829.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583202024701481931371&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-1tb-firecuda-530r%2Fp%2FN82E16820248264%3Fitem%3DN82E16820248264",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-248-264-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.779Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -22803,14 +22878,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458310203267477092215811",
+        "sku": "N82E16820248262",
         "price": 249.99,
         "saleprice": 239.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310203267477092215811&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-1tb-firecuda-x1070%2Fp%2FN82E16820248262%3Fitem%3DN82E16820248262",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-248-262-05.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.779Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -22844,13 +22918,13 @@ export default [
         "inStock": false
       },
       "newegg": {
-        "sku": "4458318414155613505484744",
-        "price": 229.99,
+        "sku": "9SIA2W0JWU5561",
+        "price": 239.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318414155613505484744&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwd43purz-4tb-for-video-surveillance-5400-rpm%2Fp%2FN82E16822234549%3Fitem%3D9SIA2W0JWU5561",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-549-07.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.346Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -22992,13 +23066,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445838345906439763849509",
-        "price": 217.2,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838345906439763849509&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmodel-wdba2f0040bbl-wesn-4tb-external%2Fp%2FN82E16822234396%3Fitem%3D9SIA6ZPK9V5780",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-396-V01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.334Z",
-        "matchMethod": "sftp:upc",
+        "sku": "N82E16822234393",
+        "price": 249.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317785436519103939505&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmodel-wdbpkj0040bbl-wesn-4tb%2Fp%2FN82E16822234393%3Fitem%3DN82E16822234393",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-393-V05.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
         "matchScore": 1
       }
     },
@@ -23027,13 +23101,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458310160775847489576322",
-        "price": 139.99,
+        "sku": "N82E16822234397",
+        "price": 174.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310160775847489576322&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmodel-wdba2d0020bbl-wesn-2tb-external%2Fp%2FN82E16822234397%3Fitem%3DN82E16822234397",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-397-V05.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.781Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -23062,12 +23136,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC5W4KW63092",
-        "price": 345,
+        "sku": "N82E16822184796",
+        "price": 299.99,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837296278133312815153&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-sns-192-b084zv4dxb%2Fp%2F0ZA-04HH-00006%3Fitem%3D9SIC5W4KW63092",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AB1NS210224mipFK.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315202804772336507926&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-ne-st8000vn004-8tb-7200-rpm-for-nas-systems%2Fp%2FN82E16822184796%3Fitem%3DN82E16822184796",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-184-796-V07.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.62
       }
@@ -23100,11 +23174,11 @@ export default [
       },
       "newegg": {
         "sku": "9SIAAEEKV44136",
-        "price": 250,
+        "price": 279.1,
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839949994005274286935&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1Z4-002P-023C8%3Fitem%3D9SIAAEEKV44136",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHSBD22022707BN2IA1.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.78
       }
@@ -23180,13 +23254,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458313095203959238816777",
-        "price": 564.99,
+        "sku": "N82E16822234430",
+        "price": 734.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313095203959238816777&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fred-pro-wd181kfgx-18tb-enterprise-nas-hard-drives-7200-rpm%2Fp%2FN82E16822234430%3Fitem%3DN82E16822234430",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-430-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.781Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -23219,14 +23293,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458310280151474638195059",
-        "price": 286.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310280151474638195059&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpurple-wd85purz-8tb%2Fp%2F1Z4-0003-001A6%3Fitem%3D1Z4-0003-001A6",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1Z4-0003-001A6-05.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.155Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIA2W0JWU5561",
+        "price": 239.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318414155613505484744&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwd43purz-4tb-for-video-surveillance-5400-rpm%2Fp%2FN82E16822234549%3Fitem%3D9SIA2W0JWU5561",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-549-07.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.86
       }
     },
     "cap": 8000,
@@ -23258,18 +23332,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445834456770010038223850",
-        "price": 319.99,
-        "saleprice": 309.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834456770010038223850&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fred-plus-wd80efpx-8tb%2Fp%2F1Z4-0002-01NP7%3Fitem%3D1Z4-0002-01NP7",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1Z4-0002-01NP7-04.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.155Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIC513KYZ8066",
+        "price": 489.5,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832898454753714409366&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fred-pro-wd8003ffbx-8tb%2Fp%2FN82E16822234348%3Fitem%3D9SIC513KYZ8066",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-348-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.75
       },
       "amazon": {
-        "price": 314.99,
+        "price": 380.99,
         "url": "https://www.amazon.com/dp/B0CP7CFNK4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -23302,14 +23375,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317393078030478526449",
-        "price": 209.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317393078030478526449&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fred-plus-wd60efpx-6tb-hard-drive-for-nas-systems-5400-rpm%2Fp%2FN82E16822234534%3Fitem%3DN82E16822234534",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-534-08.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.781Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIC513KYZ7637",
+        "price": 339.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833622793678329084939&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fred-pro-wd6003ffbx-6tb-enterprise-nas-hard-drives-7200-rpm%2Fp%2FN82E16822234344%3Fitem%3D9SIC513KYZ7637",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-344-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.75
       }
     },
     "cap": 6000,
@@ -23383,7 +23456,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831980749631497323361&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-pro-st20000ne000-20tb%2Fp%2FN82E16822185007%3Fitem%3D9SIAAEEKG84766",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-007-V01.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.62
       }
@@ -23417,12 +23490,12 @@ export default [
         "inStock": false
       },
       "newegg": {
-        "sku": "9SIAG98K634845",
-        "price": 520,
+        "sku": "1JW-001N-00027",
+        "price": 429.99,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316442635472668383004&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-pro-st12000ne0008-12tb%2Fp%2F1JW-001N-00028%3Fitem%3D9SIAG98K634845",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1JW-001N-00028-01.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839313212135797324406&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-st12000vn0008-12tb%2Fp%2F1JW-001N-00027%3Fitem%3D1JW-001N-00027",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1JW-001N-00027-V01.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.58
       }
@@ -23456,14 +23529,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445837296278133312815153",
-        "price": 345,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837296278133312815153&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-sns-192-b084zv4dxb%2Fp%2F0ZA-04HH-00006%3Fitem%3D9SIC5W4KW63092",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AB1NS210224mipFK.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.720Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIAAEEKP58704",
+        "price": 500,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831347664305178272638&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-pro-st8000ne0004-8tb%2Fp%2FN82E16822179131%3Fitem%3D9SIAAEEKP58704",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-131-S08.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.58
       }
     },
     "cap": 8000,
@@ -23495,12 +23568,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAPBJGVS8178",
-        "price": 194.99,
+        "sku": "9SIAAEEKG08061",
+        "price": 94.95,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317197626670562111312&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-5tb-st5000lm000%2Fp%2FN82E16822179104%3Fitem%3D9SIAPBJGVS8178",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-104-S01.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836122686745272732664&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-1tb-st1000lm048%2Fp%2FN82E16822179108%3Fitem%3D9SIAAEEKG08061",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-108-09.png",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.63
       }
@@ -23539,7 +23612,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314191474722375930866&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-4tb-st4000lm024%2Fp%2FN82E16822179105%3Fitem%3D9SIAPBJGVS7935",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-105-Z01.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.75
       }
@@ -23574,11 +23647,11 @@ export default [
       },
       "newegg": {
         "sku": "9SIAAEEKV44136",
-        "price": 250,
+        "price": 279.1,
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839949994005274286935&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1Z4-002P-023C8%3Fitem%3D9SIAAEEKV44136",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHSBD22022707BN2IA1.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.75
       }
@@ -23612,14 +23685,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIADU0K823239",
-        "price": 524.45,
+        "sku": "9SIAG98JHB8652",
+        "price": 635,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317402074749551798324&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-pro-st8000ne001-8tb%2Fp%2FN82E16822184795%3Fitem%3D9SIADU0K823239",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-184-795-01.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833955285306886317889&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1Z4-002P-024K9%3Fitem%3D9SIAG98JHB8652",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B4AMD2206240LF5VO59.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.54
+        "matchScore": 0.62
       }
     },
     "cap": 24000,
@@ -23821,8 +23894,18 @@ export default [
       "amazon": {
         "asin": "B0GV1RCHX2",
         "url": "https://www.amazon.com/dp/B0GV1RCHX2?tag=tiereduptech-20",
-        "price": 219.98,
+        "price": 249.98,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBTK0KTH2252",
+        "price": 300.05,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838413481049319574960&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-2tb-black-sn770-nvme%2Fp%2FN82E16820250218%3Fitem%3D9SIBTK0KTH2252",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-218-V05.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.95
       }
     },
     "cap": 2000,
@@ -23847,7 +23930,7 @@ export default [
       "amazon": {
         "asin": "B0DZK9C789",
         "url": "https://www.amazon.com/dp/B0DZK9C789?tag=tiereduptech-20",
-        "price": 579.98,
+        "price": 578,
         "inStock": true
       }
     },
@@ -23874,6 +23957,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0BD5LWM89?tag=tiereduptech-20",
         "price": 625,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAMG8KZZ4807",
+        "price": 989.77,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833573617786727510823&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-2tb-game-drive-for-ps-nvme-1-4%2Fp%2FN82E16820248248%3Fitem%3D9SIAMG8KZZ4807",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-248-248-12.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.69
       }
     },
     "cap": 4000,
@@ -23902,6 +23995,16 @@ export default [
         "url": "https://www.amazon.com/dp/B07GCL6BR4?tag=tiereduptech-20",
         "price": 149,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBZW0KFS7180",
+        "price": 175.92,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318025582636987834791&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-660p-series-1tb%2Fp%2FN82E16820167462%3Fitem%3D9SIBZW0KFS7180",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-167-462-V01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "cap": 1000,
@@ -23927,6 +24030,16 @@ export default [
         "url": "https://www.amazon.com/dp/B073SBRHH6?tag=tiereduptech-20",
         "price": 269.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC4RPKWF9829",
+        "price": 158.88,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836481555790747792573&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-blue-sn550-nvme-1tb%2Fp%2FN82E16820250135%3Fitem%3D9SIC4RPKWF9829",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-135-05.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.58
       }
     },
     "cap": 2000,
@@ -23949,7 +24062,7 @@ export default [
       "amazon": {
         "asin": "B0BYSKXGJV",
         "url": "https://www.amazon.com/dp/B0BYSKXGJV?tag=tiereduptech-20",
-        "price": 245.99,
+        "price": 216.99,
         "inStock": true
       }
     },
@@ -23974,7 +24087,7 @@ export default [
       "amazon": {
         "asin": "B0B94M13NH",
         "url": "https://www.amazon.com/dp/B0B94M13NH?tag=tiereduptech-20",
-        "price": 299.99,
+        "price": 474.5,
         "inStock": true
       }
     },
@@ -23999,7 +24112,7 @@ export default [
       "amazon": {
         "asin": "B0D1V2K4LJ",
         "url": "https://www.amazon.com/dp/B0D1V2K4LJ?tag=tiereduptech-20",
-        "price": 309.99,
+        "price": 379.99,
         "inStock": true
       }
     },
@@ -24024,7 +24137,7 @@ export default [
       "amazon": {
         "asin": "B07H289S7C",
         "url": "https://www.amazon.com/dp/B07H289S7C?tag=tiereduptech-20",
-        "price": 269.99,
+        "price": 255,
         "inStock": true
       }
     },
@@ -24073,7 +24186,7 @@ export default [
       "amazon": {
         "asin": "B0CMQ8XBBR",
         "url": "https://www.amazon.com/dp/B0CMQ8XBBR?tag=tiereduptech-20",
-        "price": 223.19,
+        "price": 324.99,
         "inStock": true
       }
     },
@@ -24099,6 +24212,16 @@ export default [
         "url": "https://www.amazon.com/dp/B07GSJ7M81?tag=tiereduptech-20",
         "price": 275,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAG98JKB8095",
+        "price": 195,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318118837514331288544&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2BM-002M-00167%3Fitem%3D9SIAG98JKB8095",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG79_1_201907091461823313.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.85
       }
     },
     "cap": 8000,
@@ -24122,6 +24245,16 @@ export default [
         "url": "https://www.amazon.com/dp/B08KTM4SNY?tag=tiereduptech-20",
         "price": 299.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAAEEJZ44195",
+        "price": 430.1,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837781320016871394261&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-st8000ve001-8tb%2Fp%2FN82E16822185034%3Fitem%3D9SIAAEEJZ44195",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-034-S01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "cap": 8000,
@@ -24152,6 +24285,16 @@ export default [
         "price": 643.62,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12611885&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-exos-12tb-enterprise-hdd-sata-6gb-s-512e-4kn-7200-rpm-256mb-cache-3-5-internal-hard-drive-st12000nm001g-oem%2FJ37C5HK2S3&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "1JW-001N-00027",
+        "price": 429.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839313212135797324406&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-st12000vn0008-12tb%2Fp%2F1JW-001N-00027%3Fitem%3D1JW-001N-00027",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1JW-001N-00027-V01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.95
       }
     },
     "cap": 12000,
@@ -24176,8 +24319,18 @@ export default [
       "amazon": {
         "asin": "B07D3MWMNZ",
         "url": "https://www.amazon.com/dp/B07D3MWMNZ?tag=tiereduptech-20",
-        "price": 355,
+        "price": 439,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC513KYZ8066",
+        "price": 489.5,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832898454753714409366&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fred-pro-wd8003ffbx-8tb%2Fp%2FN82E16822234348%3Fitem%3D9SIC513KYZ8066",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-348-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.6
       }
     },
     "cap": 8000,
@@ -24201,7 +24354,7 @@ export default [
       "amazon": {
         "asin": "B0GN498RPM",
         "url": "https://www.amazon.com/dp/B0GN498RPM?tag=tiereduptech-20",
-        "price": 329,
+        "price": 409,
         "inStock": true
       }
     },
@@ -24228,6 +24381,16 @@ export default [
         "url": "https://www.amazon.com/dp/B07YF6DKS2?tag=tiereduptech-20",
         "price": 460.06,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAET8KYJ6860",
+        "price": 637.96,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315659679989192815950&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-sns-192-b084zv4dxb%2Fp%2F0ZA-04HH-00006%3Fitem%3D9SIAET8KYJ6860",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AB1NS210224mipFK.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "cap": 8000,
@@ -24252,8 +24415,18 @@ export default [
       "amazon": {
         "asin": "B07Y5VDNT9",
         "url": "https://www.amazon.com/dp/B07Y5VDNT9?tag=tiereduptech-20",
-        "price": 169.95,
+        "price": 169,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16820177078",
+        "price": 199.99,
+        "saleprice": 175.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836648791639817075193&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-1tb-cs900%2Fp%2FN82E16820177078%3Fitem%3DN82E16820177078",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-177-078-V09.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",
@@ -24276,7 +24449,7 @@ export default [
       "amazon": {
         "asin": "B087KBL5KS",
         "url": "https://www.amazon.com/dp/B087KBL5KS?tag=tiereduptech-20",
-        "price": 152.99,
+        "price": 129.99,
         "inStock": true
       }
     },
@@ -24300,8 +24473,18 @@ export default [
       "amazon": {
         "asin": "B0B7VM4SRX",
         "url": "https://www.amazon.com/dp/B0B7VM4SRX?tag=tiereduptech-20",
-        "price": 239.99,
+        "price": 270.59,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA12KKW09667",
+        "price": 359.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835704613219128133845&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsandisk-1tb-ultra-3d%2Fp%2F0D9-0006-00673%3Fitem%3D9SIA12KKW09667",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A12KS2605010SB7DZCD.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.94
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",
@@ -24325,7 +24508,7 @@ export default [
       "amazon": {
         "asin": "B0B6ZC5MS3",
         "url": "https://www.amazon.com/dp/B0B6ZC5MS3?tag=tiereduptech-20",
-        "price": 103.99,
+        "price": 82.99,
         "inStock": true
       }
     },
@@ -24350,7 +24533,7 @@ export default [
       "amazon": {
         "asin": "B0FNCMY16K",
         "url": "https://www.amazon.com/dp/B0FNCMY16K?tag=tiereduptech-20",
-        "price": 109.49,
+        "price": 100,
         "inStock": true
       }
     },
@@ -24375,13 +24558,23 @@ export default [
       "amazon": {
         "asin": "B01H4J3N58",
         "url": "https://www.amazon.com/dp/B01H4J3N58?tag=tiereduptech-20",
-        "price": 24.99,
+        "price": 36.99,
         "inStock": true
       },
       "bestbuy": {
         "price": 74,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12473912&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-500gb-3-5-internal-hard-drive-st3500414cs-sata2%2FJXXZ9XQXVF&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA6CCA181159",
+        "price": 44,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835972610402924784018&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-pipeline-hd-st3500312cs-500gb%2Fp%2FN82E16822148539%3Fitem%3D9SIA6CCA181159",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-148-539-02.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.8
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",
@@ -24429,8 +24622,18 @@ export default [
       "amazon": {
         "asin": "B09ZYPTXS4",
         "url": "https://www.amazon.com/dp/B09ZYPTXS4?tag=tiereduptech-20",
-        "price": 174.99,
+        "price": 129.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC3DRKXU9136",
+        "price": 177.81,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310105223525609367105&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-blue-sa510%2Fp%2FN82E16820250229%3Fitem%3D9SIC3DRKXU9136",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-229-07.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.9
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",
@@ -24453,8 +24656,18 @@ export default [
       "amazon": {
         "asin": "B07XZLW68F",
         "url": "https://www.amazon.com/dp/B07XZLW68F?tag=tiereduptech-20",
-        "price": 56.99,
+        "price": 54,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "0D9-002E-000F1",
+        "price": 54.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839199599803337663376&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-cs900-250gb%2Fp%2F0D9-002E-000F1%3Fitem%3D0D9-002E-000F1",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0D9-002E-000F1-V01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24477,7 +24690,7 @@ export default [
       "amazon": {
         "asin": "B08QBL36GF",
         "url": "https://www.amazon.com/dp/B08QBL36GF?tag=tiereduptech-20",
-        "price": 1399.99,
+        "price": 1256.85,
         "inStock": true
       }
     },
@@ -24502,8 +24715,18 @@ export default [
       "amazon": {
         "asin": "B0CY7638WZ",
         "url": "https://www.amazon.com/dp/B0CY7638WZ?tag=tiereduptech-20",
-        "price": 444.99,
+        "price": 479,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBFJRKA88785",
+        "price": 478.95,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317035641039787867265&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-4tb%2Fp%2FN82E16820156405%3Fitem%3D9SIBFJRKA88785",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-405-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24525,13 +24748,23 @@ export default [
       "amazon": {
         "asin": "B0CVN88YVG",
         "url": "https://www.amazon.com/dp/B0CVN88YVG?tag=tiereduptech-20",
-        "price": 949.99,
+        "price": 900.47,
         "inStock": true
       },
       "bestbuy": {
         "price": 752.8,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021222&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd_black-sn7100-m-2-2280-4tb-pci-express-4-0-x4-tlc-3d-nand-internal-solid-state-drive-ssd-wds400t4x0e%2FJXTHCC7KKG&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBTK0KV38390",
+        "price": 845.49,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312279517916073165775&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-red-sa500-4tb%2Fp%2FN82E16820250125%3Fitem%3D9SIBTK0KV38390",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-125-V01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.94
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24554,8 +24787,18 @@ export default [
       "amazon": {
         "asin": "B0C14QXKJW",
         "url": "https://www.amazon.com/dp/B0C14QXKJW?tag=tiereduptech-20",
-        "price": 780,
+        "price": 657.39,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16820250252",
+        "price": 749.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314122134570613641642&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-4tb-sa510-sata%2Fp%2FN82E16820250252%3Fitem%3DN82E16820250252",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-252-07.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24579,8 +24822,18 @@ export default [
       "amazon": {
         "asin": "B0BXVVYCRN",
         "url": "https://www.amazon.com/dp/B0BXVVYCRN?tag=tiereduptech-20",
-        "price": 104.99,
+        "price": 96.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBTK0KV37750",
+        "price": 125.98,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834171609450140249665&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-500gb-wd-green-sn350-nvme%2Fp%2FN82E16820250260%3Fitem%3D9SIBTK0KV37750",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-260-06.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.82
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24606,6 +24859,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0BYLG5NCZ?tag=tiereduptech-20",
         "price": 114.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA2W0K1J4415",
+        "price": 114.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317003027515303825812&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-500gb-cs2241%2Fp%2FN82E16820177156%3Fitem%3D9SIA2W0K1J4415",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-177-156-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.86
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24629,8 +24892,18 @@ export default [
       "amazon": {
         "asin": "B07BN4NJ2J",
         "url": "https://www.amazon.com/dp/B07BN4NJ2J?tag=tiereduptech-20",
-        "price": 248,
+        "price": 299.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAADFBAU8250",
+        "price": 249.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318368528045699251224&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-970-evo-500gb%2Fp%2FN82E16820147690%3Fitem%3D9SIAADFBAU8250",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-690-V21.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.72
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24654,8 +24927,18 @@ export default [
       "amazon": {
         "asin": "B0D9WT512W",
         "url": "https://www.amazon.com/dp/B0D9WT512W?tag=tiereduptech-20",
-        "price": 1329.99,
+        "price": 1499.95,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC4RPKUR4483",
+        "price": 606.96,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839065462787582221391&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-4tb-black-sn850x-nvme%2Fp%2FN82E16820250244%3Fitem%3D9SIC4RPKUR4483",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-244-16.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.78
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24680,8 +24963,18 @@ export default [
       "amazon": {
         "asin": "B0DY2TB1TD",
         "url": "https://www.amazon.com/dp/B0DY2TB1TD?tag=tiereduptech-20",
-        "price": 2299.5,
+        "price": 2045.49,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16820147902",
+        "price": 339.99,
+        "saleprice": 206.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315194564439748350358&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-1tb-9100-pro-nvme-2-0%2Fp%2FN82E16820147902%3Fitem%3DN82E16820147902",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-902-17.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.96
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24708,8 +25001,18 @@ export default [
       "amazon": {
         "asin": "B0D9WTM2TH",
         "url": "https://www.amazon.com/dp/B0D9WTM2TH?tag=tiereduptech-20",
-        "price": 1337.34,
+        "price": 1224.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBSZRKV25553",
+        "price": 1365.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314208847665455850729&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-8tb-black%2Fp%2FN82E16820250272%3Fitem%3D9SIBSZRKV25553",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-272-05.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.81
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24736,6 +25039,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0DBQP4F3Z?tag=tiereduptech-20",
         "price": 1299.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8S1KRX3743",
+        "price": 1499.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838720932361744269010&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-8tb-wd-black-sn850p-nvme-ssd-for-ps5-consoles%2Fp%2FN82E16820250273%3Fitem%3D9SIA8S1KRX3743",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A3Z8S2307121E6NIOBC.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.53
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24761,6 +25074,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0DG6Q25M2?tag=tiereduptech-20",
         "price": 1309.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "0D9-003V-000B6",
+        "price": 1549.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312014158924025169693&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flexar-8tb%2Fp%2F0D9-003V-000B6%3Fitem%3D0D9-003V-000B6",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V18MD2505080N3T4Z23.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.82
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24815,7 +25138,7 @@ export default [
       "amazon": {
         "asin": "B0DLK38TR9",
         "url": "https://www.amazon.com/dp/B0DLK38TR9?tag=tiereduptech-20",
-        "price": 810,
+        "price": 709.99,
         "inStock": true
       },
       "bestbuy": {
@@ -24845,7 +25168,7 @@ export default [
       "amazon": {
         "asin": "B0DY2NWFJV",
         "url": "https://www.amazon.com/dp/B0DY2NWFJV?tag=tiereduptech-20",
-        "price": 2586.49,
+        "price": 1939.99,
         "inStock": true
       }
     },
@@ -24875,6 +25198,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0F3GGX4SK?tag=tiereduptech-20",
         "price": 299.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC76YKYA8992",
+        "price": 239.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834673039155809624951&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-nvme%2Fp%2FN82E16820250281%3Fitem%3D9SIC76YKYA8992",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-281-12.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.53
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24925,13 +25258,23 @@ export default [
       "amazon": {
         "asin": "B09ZYNHPW2",
         "url": "https://www.amazon.com/dp/B09ZYNHPW2?tag=tiereduptech-20",
-        "price": 171.72,
+        "price": 189.99,
         "inStock": true
       },
       "bestbuy": {
         "price": 107.6,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12613618&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-wd1002fbys-1tb-32mb-cache-7200rpm-sata2-3-5-hard-drive%2FJ2V4LQVJ86&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC3DRKXU9109",
+        "price": 269,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313464711288694958135&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-blue-sa510%2Fp%2FN82E16820250232%3Fitem%3D9SIC3DRKXU9109",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-232-07.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24955,13 +25298,23 @@ export default [
       "amazon": {
         "asin": "B071F9MLJJ",
         "url": "https://www.amazon.com/dp/B071F9MLJJ?tag=tiereduptech-20",
-        "price": 94.99,
+        "price": 86.99,
         "inStock": true
       },
       "bestbuy": {
         "price": 134.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12502208&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-1tb-wd-purple-surveillance-internal-hard-drive-hdd-sata-6-gb-s-64-mb-cache-3-5-wd11purz%2FJXTHCC7YT9&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA2W0K5V2437",
+        "price": 139.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317755245530493381372&type=15&murl=https%3A%2F%2Fwww.newegg.com%2F1tb-wd10spzx-blue-sata-6-0gb-s%2Fp%2FN82E16822231550%3Fitem%3D9SIA2W0K5V2437",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-231-550-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.85
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24986,8 +25339,18 @@ export default [
       "amazon": {
         "asin": "B0FD2LGBZF",
         "url": "https://www.amazon.com/dp/B0FD2LGBZF?tag=tiereduptech-20",
-        "price": 246.87,
+        "price": 245.89,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA12KKJ12158",
+        "price": 249.95,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836801632629954275357&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-1tb-snv3sm3%2Fp%2F0D9-001B-005C6%3Fitem%3D9SIA12KKJ12158",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A12KS2507020M8SEV7A.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.91
       }
     },
     "addedAt": "2026-05-15T14:34:31.781Z",
@@ -25066,7 +25429,7 @@ export default [
       "amazon": {
         "asin": "B0CYFSR463",
         "url": "https://www.amazon.com/dp/B0CYFSR463?tag=tiereduptech-20",
-        "price": 138.99,
+        "price": 131.99,
         "inStock": true
       }
     },
@@ -25091,8 +25454,18 @@ export default [
       "amazon": {
         "asin": "B0FH5NGWNY",
         "url": "https://www.amazon.com/dp/B0FH5NGWNY?tag=tiereduptech-20",
-        "price": 259.99,
+        "price": 289.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16822185121",
+        "price": 289.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311263209857037551751&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16822185121%3Fitem%3DN82E16822185121",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-121-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25114,8 +25487,18 @@ export default [
       "amazon": {
         "asin": "B093T8P7VZ",
         "url": "https://www.amazon.com/dp/B093T8P7VZ?tag=tiereduptech-20",
-        "price": 389,
+        "price": 412,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIADU0K823046",
+        "price": 454.45,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838649912871457285989&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-purple-wd84purz-8tb%2Fp%2F1Z4-0002-01CK2%3Fitem%3D9SIADU0K823046",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2103074KF56.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.64
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25139,8 +25522,18 @@ export default [
       "amazon": {
         "asin": "B07CRGSR16",
         "url": "https://www.amazon.com/dp/B07CRGSR16?tag=tiereduptech-20",
-        "price": 168.9,
+        "price": 189.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "0XP-00MH-00011",
+        "price": 189.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835743230295730429169&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stgx4000400-4tb%2Fp%2F0XP-00MH-00011%3Fitem%3D0XP-00MH-00011",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0XP-00MH-00011-S02.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.73
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25164,6 +25557,16 @@ export default [
         "url": "https://www.amazon.com/dp/B09NHV3CK9?tag=tiereduptech-20",
         "price": 169.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBT5SKWP2908",
+        "price": 279.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834956150275045678444&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1Z4-002P-022W9%3Fitem%3D9SIBT5SKWP2908",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AZF8D210731XY31W.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.78
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25188,7 +25591,7 @@ export default [
       "amazon": {
         "asin": "B0DW8ZW47C",
         "url": "https://www.amazon.com/dp/B0DW8ZW47C?tag=tiereduptech-20",
-        "price": 529.99,
+        "price": 629.99,
         "inStock": true
       }
     },
@@ -25211,7 +25614,7 @@ export default [
       "amazon": {
         "asin": "B0GJ7CVHR6",
         "url": "https://www.amazon.com/dp/B0GJ7CVHR6?tag=tiereduptech-20",
-        "price": 144.99,
+        "price": 179.99,
         "inStock": true
       }
     },
@@ -25236,8 +25639,18 @@ export default [
       "amazon": {
         "asin": "B0713WPGLL",
         "url": "https://www.amazon.com/dp/B0713WPGLL?tag=tiereduptech-20",
-        "price": 173.67,
+        "price": 189.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16822232982",
+        "price": 239.99,
+        "saleprice": 189.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835324098407049364048&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmodel-wdbu6y0040bbk-wesn-4tb%2Fp%2FN82E16822232982%3Fitem%3DN82E16822232982",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-232-982-V04.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.91
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25284,8 +25697,18 @@ export default [
       "amazon": {
         "asin": "B0G6BSNYZ8",
         "url": "https://www.amazon.com/dp/B0G6BSNYZ8?tag=tiereduptech-20",
-        "price": 141.99,
+        "price": 204.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA0ZXKT88617",
+        "price": 218.31,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312693457206114331270&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1Z4-0002-01R53%3Fitem%3D9SIA0ZXKT88617",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A9H5S26051212T35A61.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25308,8 +25731,18 @@ export default [
       "amazon": {
         "asin": "B01LXCE9W9",
         "url": "https://www.amazon.com/dp/B01LXCE9W9?tag=tiereduptech-20",
-        "price": 164.99,
+        "price": 188,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC2ARKVZ3075",
+        "price": 165,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838927692120948607401&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1Z4-002P-023N1%3Fitem%3D9SIC2ARKVZ3075",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHSBD22030103NVVM71.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25334,6 +25767,16 @@ export default [
         "url": "https://www.amazon.com/dp/B092MM4N6N?tag=tiereduptech-20",
         "price": 119.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAAEEKEH2734",
+        "price": 145,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310713263231643628082&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1Z4-002P-02398%3Fitem%3D9SIAAEEKEH2734",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHSBD220227077AFHDC.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25357,6 +25800,16 @@ export default [
         "url": "https://www.amazon.com/dp/B09NML5T5R?tag=tiereduptech-20",
         "price": 79.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAG98KKZ4453",
+        "price": 115,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831833148230800065807&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-st4000nm0034-4tb%2Fp%2FN82E16822178535%3Fitem%3D9SIAG98KKZ4453",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-178-535-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.64
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25379,7 +25832,7 @@ export default [
       "amazon": {
         "asin": "B0D1TZ4Z34",
         "url": "https://www.amazon.com/dp/B0D1TZ4Z34?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 244.99,
         "inStock": true
       }
     },
@@ -25404,13 +25857,23 @@ export default [
       "amazon": {
         "asin": "B08JYQKVJP",
         "url": "https://www.amazon.com/dp/B08JYQKVJP?tag=tiereduptech-20",
-        "price": 388.99,
+        "price": 429.99,
         "inStock": true
       },
       "bestbuy": {
         "price": 730.96,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11122178&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-exos-16tb-enterprise-hdd-x16-sata-6gb-s-7200-rpm-256mb-cache-3-5-internal-hard-drive-st16000nm001g-oem%2FJ37C5HWFQ5&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAG98KBR3555",
+        "price": 675,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316624877596784850491&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-exos-x16-st16000nm001g-16tb-hard-drive%2Fp%2F1Z4-002P-025V3%3Fitem%3D9SIAG98KBR3555",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B7VES2208050S1DJI90.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25435,6 +25898,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0DG3JB7G5?tag=tiereduptech-20",
         "price": 579.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA4P0K939028",
+        "price": 664.79,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314401809325136218492&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F234-000S-00152%3Fitem%3D9SIA4P0K939028",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD2505210T4T33AF.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.85
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25458,8 +25931,18 @@ export default [
       "amazon": {
         "asin": "B08K3VVKSW",
         "url": "https://www.amazon.com/dp/B08K3VVKSW?tag=tiereduptech-20",
-        "price": 606.2,
+        "price": 654.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA6KXKPZ6196",
+        "price": 739.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839183231763715413059&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fred-pro-wd161kfgx-16tb-enterprise-nas-hard-drives-7200-rpm%2Fp%2FN82E16822234429%3Fitem%3D9SIA6KXKPZ6196",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-429-03.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.86
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25483,7 +25966,7 @@ export default [
       "amazon": {
         "asin": "B0B94PNF7P",
         "url": "https://www.amazon.com/dp/B0B94NFYWX?tag=tiereduptech-20",
-        "price": 777.99,
+        "price": 698,
         "inStock": true
       }
     },
@@ -25495,7 +25978,7 @@ export default [
     "ff": "3.5\"",
     "formFactor": "3.5\"",
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-05"
   },
   {
     "id": 100847,
@@ -25510,8 +25993,18 @@ export default [
       "amazon": {
         "asin": "B08KTRKB6S",
         "url": "https://www.amazon.com/dp/B08KTRKB6S?tag=tiereduptech-20",
-        "price": 484.98,
+        "price": 654.75,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16822234435",
+        "price": 654.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839026636027898361173&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwd-elements-16tb-black-usb-3-0-micro-b%2Fp%2FN82E16822234435%3Fitem%3DN82E16822234435",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-435-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.91
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25557,8 +26050,18 @@ export default [
       "amazon": {
         "asin": "B07XBTS8S1",
         "url": "https://www.amazon.com/dp/B07XBTS8S1?tag=tiereduptech-20",
-        "price": 689.99,
+        "price": 649.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA4P0K939028",
+        "price": 664.79,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314401809325136218492&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F234-000S-00152%3Fitem%3D9SIA4P0K939028",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD2505210T4T33AF.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.69
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25582,8 +26085,18 @@ export default [
       "amazon": {
         "asin": "B08K3TFM92",
         "url": "https://www.amazon.com/dp/B08K3TFM92?tag=tiereduptech-20",
-        "price": 639.9,
+        "price": 734.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16822234430",
+        "price": 734.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313095203959238816777&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fred-pro-wd181kfgx-18tb-enterprise-nas-hard-drives-7200-rpm%2Fp%2FN82E16822234430%3Fitem%3DN82E16822234430",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-430-03.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.88
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25607,8 +26120,18 @@ export default [
       "amazon": {
         "asin": "B0B94MF4LP",
         "url": "https://www.amazon.com/dp/B0B94MF4LP?tag=tiereduptech-20",
-        "price": 669.99,
+        "price": 719.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAAEEKG84766",
+        "price": 896.1,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831980749631497323361&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-pro-st20000ne000-20tb%2Fp%2FN82E16822185007%3Fitem%3D9SIAAEEKG84766",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-007-V01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.59
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25632,7 +26155,7 @@ export default [
       "amazon": {
         "asin": "B0F3J9CB1J",
         "url": "https://www.amazon.com/dp/B0F3J9CB1J?tag=tiereduptech-20",
-        "price": 599,
+        "price": 589.99,
         "inStock": true
       }
     },
@@ -25684,7 +26207,7 @@ export default [
       "amazon": {
         "asin": "B0F9ZXDHDH",
         "url": "https://www.amazon.com/dp/B0F9ZXDHDH?tag=tiereduptech-20",
-        "price": 523.77,
+        "price": 799,
         "inStock": true
       },
       "bestbuy": {
@@ -25738,7 +26261,7 @@ export default [
       "amazon": {
         "asin": "B0FM12ZL28",
         "url": "https://www.amazon.com/dp/B0FM12ZL28?tag=tiereduptech-20",
-        "price": 455.99,
+        "price": 549.99,
         "inStock": true
       }
     },
@@ -25766,6 +26289,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0D9PGXB3P?tag=tiereduptech-20",
         "price": 719.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAG98K7F9982",
+        "price": 900,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583957934677969365855&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-skyhawk-ai-st20000ve002-20tb-for-video-surveillance-7200-rpm%2Fp%2FN82E16822185038%3Fitem%3D9SIAG98K7F9982",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-038-02.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.64
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25789,8 +26322,18 @@ export default [
       "amazon": {
         "asin": "B09VCXWPQG",
         "url": "https://www.amazon.com/dp/B09VCXWPQG?tag=tiereduptech-20",
-        "price": 589.99,
+        "price": 599.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16822234519",
+        "price": 814.99,
+        "saleprice": 599.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837488742117226158289&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwd-elements-20tb-black-usb-3-0%2Fp%2FN82E16822234519%3Fitem%3DN82E16822234519",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-519-V01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.91
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25838,8 +26381,18 @@ export default [
       "amazon": {
         "asin": "B0DNNKNKS4",
         "url": "https://www.amazon.com/dp/B0DNNKNKS4?tag=tiereduptech-20",
-        "price": 579.99,
+        "price": 625,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA4P0K887205",
+        "price": 1023.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836892145100890530233&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-exos-x24-st24000nm002h-24tb-enterprise-nas-hard-drives-7200-rpm%2Fp%2FN82E16822185105%3Fitem%3D9SIA4P0K887205",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-105-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.69
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -25863,7 +26416,7 @@ export default [
       "amazon": {
         "asin": "B0GWHJPWHB",
         "url": "https://www.amazon.com/dp/B0GWHJPWHB?tag=tiereduptech-20",
-        "price": 89.99,
+        "price": 94.99,
         "inStock": true
       },
       "bestbuy": {
@@ -25918,7 +26471,7 @@ export default [
       "amazon": {
         "asin": "B0GXGZ56LR",
         "url": "https://www.amazon.com/dp/B0GXGZ56LR?tag=tiereduptech-20",
-        "price": 598,
+        "price": 639.99,
         "inStock": true
       }
     },
@@ -25964,8 +26517,18 @@ export default [
       "amazon": {
         "asin": "B0F4R6SNJG",
         "url": "https://www.amazon.com/dp/B0F4R6SNJG?tag=tiereduptech-20",
-        "price": 409.99,
+        "price": 525,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC513KYZ8704",
+        "price": 599.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583657890419493508631&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fred-pro-wd121kfbx-12tb-enterprise-nas-hard-drives-7200-rpm%2Fp%2FN82E16822234375%3Fitem%3D9SIC513KYZ8704",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-375-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.67
       }
     },
     "addedAt": "2026-05-15T14:34:31.783Z",
@@ -25989,7 +26552,7 @@ export default [
       "amazon": {
         "asin": "B0G1C1YNN8",
         "url": "https://www.amazon.com/dp/B0G1C1YNN8?tag=tiereduptech-20",
-        "price": 679.99,
+        "price": 639.99,
         "inStock": true
       }
     },
@@ -26013,8 +26576,18 @@ export default [
       "amazon": {
         "asin": "B0D24TQK3Q",
         "url": "https://www.amazon.com/dp/B0D24TQK3Q?tag=tiereduptech-20",
-        "price": 802,
+        "price": 973.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA0ZXJHY0948",
+        "price": 989.46,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583845795124531630200&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fred-pro-wd221kfgx-22tb-enterprise-nas-hard-drives-7200-rpm%2Fp%2FN82E16822234527%3Fitem%3D9SIA0ZXJHY0948",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-527-08.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.89
       }
     },
     "addedAt": "2026-05-15T14:34:31.783Z",
@@ -26038,7 +26611,7 @@ export default [
       "amazon": {
         "asin": "B0D22HGH4N",
         "url": "https://www.amazon.com/dp/B0D22HGH4N?tag=tiereduptech-20",
-        "price": 1369.99,
+        "price": 1207.99,
         "inStock": true
       }
     },
@@ -26063,8 +26636,18 @@ export default [
       "amazon": {
         "asin": "B0C5JQ68FY",
         "url": "https://www.amazon.com/dp/B0C5JQ68FY?tag=tiereduptech-20",
-        "price": 164.9,
+        "price": 159.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16820173637",
+        "price": 179.99,
+        "saleprice": 150.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311772788777256621539&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsandisk-portable-ssd-1tb-usb-3-2-gen-2-usb-c%2Fp%2FN82E16820173637%3Fitem%3DN82E16820173637",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-173-637-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.783Z",
@@ -26110,7 +26693,7 @@ export default [
       "amazon": {
         "asin": "B08LKMQ9T4",
         "url": "https://www.amazon.com/dp/B08LKMQ9T4?tag=tiereduptech-20",
-        "price": 29.99,
+        "price": 27.99,
         "inStock": true
       }
     },
@@ -26160,8 +26743,18 @@ export default [
       "amazon": {
         "asin": "B09WZK8YMY",
         "url": "https://www.amazon.com/dp/B09WZK8YMY?tag=tiereduptech-20",
-        "price": 2399.99,
+        "price": 3199.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBK19JMT6515",
+        "price": 3700,
+        "saleprice": 3419.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311030238670124024775&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsabrent-8tb%2Fp%2F0D9-001Y-000B0%3Fitem%3D9SIBK19JMT6515",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BK19D2303080XGR55B9.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.78
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -26184,7 +26777,7 @@ export default [
       "amazon": {
         "asin": "B0CJRN3LLX",
         "url": "https://www.amazon.com/dp/B0CJRN3LLX?tag=tiereduptech-20",
-        "price": 1399,
+        "price": 1499.99,
         "inStock": true
       }
     },
@@ -26255,7 +26848,7 @@ export default [
       "amazon": {
         "asin": "B08RVC6F9Y",
         "url": "https://www.amazon.com/dp/B08RVC6F9Y?tag=tiereduptech-20",
-        "price": 23.49,
+        "price": 22.29,
         "inStock": true
       }
     },
@@ -26278,7 +26871,7 @@ export default [
       "amazon": {
         "asin": "B0FSC839RG",
         "url": "https://www.amazon.com/dp/B0FSC839RG?tag=tiereduptech-20",
-        "price": 599.99,
+        "price": 499.99,
         "inStock": true
       }
     },
@@ -26327,7 +26920,7 @@ export default [
       "amazon": {
         "asin": "B0DZX34SZN",
         "url": "https://www.amazon.com/dp/B0DZX34SZN?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 103.99,
         "inStock": true
       }
     },
@@ -26354,7 +26947,7 @@ export default [
       "amazon": {
         "asin": "B0FNP68QYR",
         "url": "https://www.amazon.com/dp/B0FNP68QYR?tag=tiereduptech-20",
-        "price": 54.95,
+        "price": 62.95,
         "inStock": true
       }
     },
@@ -26402,7 +26995,7 @@ export default [
       "amazon": {
         "asin": "B0CHJXHVZM",
         "url": "https://www.amazon.com/dp/B0CHJXHVZM?tag=tiereduptech-20",
-        "price": 209.99,
+        "price": 219.99,
         "inStock": true
       }
     },
@@ -26475,7 +27068,7 @@ export default [
       "amazon": {
         "asin": "B0DZ7PJBMX",
         "url": "https://www.amazon.com/dp/B0DZ7PJBMX?tag=tiereduptech-20",
-        "price": 53.95,
+        "price": 61.95,
         "inStock": true
       }
     },
@@ -26500,7 +27093,7 @@ export default [
       "amazon": {
         "asin": "B0FH4P66MZ",
         "url": "https://www.amazon.com/dp/B0FH4P66MZ?tag=tiereduptech-20",
-        "price": 139.99,
+        "price": 118.99,
         "inStock": true
       }
     },
@@ -26693,8 +27286,18 @@ export default [
       "amazon": {
         "asin": "B08GV9M64L",
         "url": "https://www.amazon.com/dp/B08GV9M64L?tag=tiereduptech-20",
-        "price": 209.99,
+        "price": 178.49,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC0ZMKR98378",
+        "price": 169.97,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838268903726788844461&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsandisk-extreme-pro-v2-1tb%2Fp%2FN82E16820173499%3Fitem%3D9SIC0ZMKR98378",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-173-501-V01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:31:54.671Z",
@@ -26718,8 +27321,18 @@ export default [
       "amazon": {
         "asin": "B07ZKB4SLK",
         "url": "https://www.amazon.com/dp/B07ZKB4SLK?tag=tiereduptech-20",
-        "price": 53.99,
+        "price": 42.74,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBTK0KTJ3642",
+        "price": 99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838768552825563196145&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0VN-009H-00031%3Fitem%3D9SIBTK0KTJ3642",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BTK0S2603090UB0B843.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.95
       }
     },
     "addedAt": "2026-05-15T16:31:54.671Z",
@@ -26743,6 +27356,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0DN6DK3X4?tag=tiereduptech-20",
         "price": 999.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16820173501",
+        "price": 739.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310381366407279824577&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsandisk-extreme-pro-v2-4tb-usb-3-2-gen-2x2-usb-c%2Fp%2FN82E16820173501%3Fitem%3DN82E16820173501",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-173-501-V01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.67
       }
     },
     "addedAt": "2026-05-15T16:31:54.671Z",
@@ -26820,7 +27443,7 @@ export default [
       "amazon": {
         "asin": "B0CGFD2GVZ",
         "url": "https://www.amazon.com/dp/B0CGFD2GVZ?tag=tiereduptech-20",
-        "price": 225,
+        "price": 269.98,
         "inStock": true
       }
     },
@@ -26872,8 +27495,18 @@ export default [
       "amazon": {
         "asin": "B09WZK8YMY",
         "url": "https://www.amazon.com/dp/B09WZK8YMY?tag=tiereduptech-20",
-        "price": 2399.99,
+        "price": 3199.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBK19JMT6515",
+        "price": 3700,
+        "saleprice": 3419.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311030238670124024775&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsabrent-8tb%2Fp%2F0D9-001Y-000B0%3Fitem%3D9SIBK19JMT6515",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BK19D2303080XGR55B9.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.78
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
@@ -26896,7 +27529,7 @@ export default [
       "amazon": {
         "asin": "B0CJRN3LLX",
         "url": "https://www.amazon.com/dp/B0CJRN3LLX?tag=tiereduptech-20",
-        "price": 1399,
+        "price": 1499.99,
         "inStock": true
       }
     },
@@ -26967,7 +27600,7 @@ export default [
       "amazon": {
         "asin": "B08RVC6F9Y",
         "url": "https://www.amazon.com/dp/B08RVC6F9Y?tag=tiereduptech-20",
-        "price": 23.49,
+        "price": 22.29,
         "inStock": true
       }
     },
@@ -26990,7 +27623,7 @@ export default [
       "amazon": {
         "asin": "B0FSC839RG",
         "url": "https://www.amazon.com/dp/B0FSC839RG?tag=tiereduptech-20",
-        "price": 599.99,
+        "price": 499.99,
         "inStock": true
       }
     },
@@ -27039,7 +27672,7 @@ export default [
       "amazon": {
         "asin": "B0DZX34SZN",
         "url": "https://www.amazon.com/dp/B0DZX34SZN?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 103.99,
         "inStock": true
       }
     },
@@ -27066,7 +27699,7 @@ export default [
       "amazon": {
         "asin": "B0FNP68QYR",
         "url": "https://www.amazon.com/dp/B0FNP68QYR?tag=tiereduptech-20",
-        "price": 54.95,
+        "price": 62.95,
         "inStock": true
       }
     },
@@ -27114,7 +27747,7 @@ export default [
       "amazon": {
         "asin": "B0CHJXHVZM",
         "url": "https://www.amazon.com/dp/B0CHJXHVZM?tag=tiereduptech-20",
-        "price": 209.99,
+        "price": 219.99,
         "inStock": true
       }
     },
@@ -27187,7 +27820,7 @@ export default [
       "amazon": {
         "asin": "B0DZ7PJBMX",
         "url": "https://www.amazon.com/dp/B0DZ7PJBMX?tag=tiereduptech-20",
-        "price": 53.95,
+        "price": 61.95,
         "inStock": true
       }
     },
@@ -27212,7 +27845,7 @@ export default [
       "amazon": {
         "asin": "B0FH4P66MZ",
         "url": "https://www.amazon.com/dp/B0FH4P66MZ?tag=tiereduptech-20",
-        "price": 139.99,
+        "price": 118.99,
         "inStock": true
       }
     },
@@ -27405,7 +28038,7 @@ export default [
       "amazon": {
         "asin": "B08GV9M64L",
         "url": "https://www.amazon.com/dp/B08GV9M64L?tag=tiereduptech-20",
-        "price": 209.99,
+        "price": 178.49,
         "inStock": true
       }
     },
@@ -27430,7 +28063,7 @@ export default [
       "amazon": {
         "asin": "B07ZKB4SLK",
         "url": "https://www.amazon.com/dp/B07ZKB4SLK?tag=tiereduptech-20",
-        "price": 53.99,
+        "price": 42.74,
         "inStock": true
       }
     },
@@ -27532,7 +28165,7 @@ export default [
       "amazon": {
         "asin": "B0CGFD2GVZ",
         "url": "https://www.amazon.com/dp/B0CGFD2GVZ?tag=tiereduptech-20",
-        "price": 225,
+        "price": 269.98,
         "inStock": true
       }
     },
@@ -27584,8 +28217,18 @@ export default [
       "amazon": {
         "asin": "B09WZK8YMY",
         "url": "https://www.amazon.com/dp/B09WZK8YMY?tag=tiereduptech-20",
-        "price": 2399.99,
+        "price": 3199.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBK19JMT6515",
+        "price": 3700,
+        "saleprice": 3419.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311030238670124024775&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsabrent-8tb%2Fp%2F0D9-001Y-000B0%3Fitem%3D9SIBK19JMT6515",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BK19D2303080XGR55B9.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.78
       }
     },
     "addedAt": "2026-05-15T17:05:43.676Z",
@@ -27608,7 +28251,7 @@ export default [
       "amazon": {
         "asin": "B0CJRN3LLX",
         "url": "https://www.amazon.com/dp/B0CJRN3LLX?tag=tiereduptech-20",
-        "price": 1399,
+        "price": 1499.99,
         "inStock": true
       }
     },
@@ -27679,7 +28322,7 @@ export default [
       "amazon": {
         "asin": "B08RVC6F9Y",
         "url": "https://www.amazon.com/dp/B08RVC6F9Y?tag=tiereduptech-20",
-        "price": 23.49,
+        "price": 22.29,
         "inStock": true
       }
     },
@@ -27702,7 +28345,7 @@ export default [
       "amazon": {
         "asin": "B0FSC839RG",
         "url": "https://www.amazon.com/dp/B0FSC839RG?tag=tiereduptech-20",
-        "price": 599.99,
+        "price": 499.99,
         "inStock": true
       }
     },
@@ -27728,7 +28371,7 @@ export default [
       "amazon": {
         "asin": "B0DZX34SZN",
         "url": "https://www.amazon.com/dp/B0DZX34SZN?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 103.99,
         "inStock": true
       }
     },
@@ -27755,7 +28398,7 @@ export default [
       "amazon": {
         "asin": "B0CHJXHVZM",
         "url": "https://www.amazon.com/dp/B0CHJXHVZM?tag=tiereduptech-20",
-        "price": 209.99,
+        "price": 219.99,
         "inStock": true
       }
     },
@@ -27780,7 +28423,7 @@ export default [
       "amazon": {
         "asin": "B0FH4P66MZ",
         "url": "https://www.amazon.com/dp/B0FH4P66MZ?tag=tiereduptech-20",
-        "price": 139.99,
+        "price": 118.99,
         "inStock": true
       }
     },
@@ -27806,8 +28449,18 @@ export default [
       "amazon": {
         "asin": "B08GV9M64L",
         "url": "https://www.amazon.com/dp/B08GV9M64L?tag=tiereduptech-20",
-        "price": 209.99,
+        "price": 178.49,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC0ZMKR98378",
+        "price": 169.97,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838268903726788844461&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsandisk-extreme-pro-v2-1tb%2Fp%2FN82E16820173499%3Fitem%3D9SIC0ZMKR98378",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-173-501-V01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T17:05:43.679Z",
@@ -27831,8 +28484,18 @@ export default [
       "amazon": {
         "asin": "B07ZKB4SLK",
         "url": "https://www.amazon.com/dp/B07ZKB4SLK?tag=tiereduptech-20",
-        "price": 53.99,
+        "price": 42.74,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBTK0KTJ3642",
+        "price": 99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838768552825563196145&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0VN-009H-00031%3Fitem%3D9SIBTK0KTJ3642",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BTK0S2603090UB0B843.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.95
       }
     },
     "addedAt": "2026-05-15T17:05:43.679Z",
@@ -27856,6 +28519,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0DN6DK3X4?tag=tiereduptech-20",
         "price": 999.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16820173501",
+        "price": 739.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310381366407279824577&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsandisk-extreme-pro-v2-4tb-usb-3-2-gen-2x2-usb-c%2Fp%2FN82E16820173501%3Fitem%3DN82E16820173501",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-173-501-V01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.67
       }
     },
     "addedAt": "2026-05-15T17:05:43.679Z",
@@ -27933,7 +28606,7 @@ export default [
       "amazon": {
         "asin": "B0CGFD2GVZ",
         "url": "https://www.amazon.com/dp/B0CGFD2GVZ?tag=tiereduptech-20",
-        "price": 225,
+        "price": 269.98,
         "inStock": true
       }
     },

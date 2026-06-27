@@ -22,12 +22,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADY76X3131",
-        "price": 34.95,
+        "sku": "9SIBZT7KT42013",
+        "price": 48.4,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831962690862270861962&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-pwm-case-fan%2Fp%2F1YF-000T-000K7%3Fitem%3D9SIAADY76X3131",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060IJ02LB9.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316819516797855610042&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-pwm-chromax-black-swap-case-fan%2Fp%2F1YF-000T-003Y0%3Fitem%3D9SIBZT7KT42013",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B3DAS2111120HJTI04D.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -59,12 +59,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBTVCKEA3411",
-        "price": 29.69,
+        "sku": "9SIAZTUKB86997",
+        "price": 33.6,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312563589157317299265&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-pwm-chromax-black-swap-case-fan-140mm-black-led%2Fp%2F1YF-000T-004J3%3Fitem%3D9SIBTVCKEA3411",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B6P6S2112240GPZNW5E.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837565797899211638391&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-pwm-case-fan%2Fp%2FN82E16835608044%3Fitem%3D9SIAZTUKB86997",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS211108UB13c.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -206,7 +206,7 @@ export default [
     "pwm": true,
     "rgbType": "ARGB",
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 82,
     "fans_inc": 3
   },
@@ -237,7 +237,7 @@ export default [
     "pwm": true,
     "rgbType": "ARGB",
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 70,
     "fans_inc": 3
   },
@@ -292,11 +292,11 @@ export default [
       },
       "newegg": {
         "sku": "9SIA68VK9X5693",
-        "price": 24.5,
-        "saleprice": null,
+        "price": 27.9,
+        "saleprice": 19.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316023939878649901346&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001D-000S6%3Fitem%3D9SIA68VK9X5693",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS2403270YEWJ5D2.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -324,17 +324,17 @@ export default [
     "pack": 1,
     "deals": {
       "amazon": {
-        "price": 24,
+        "price": 21.9,
         "url": "https://www.amazon.com/dp/B0B744J87R?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "9SIA68VJ2B2530",
-        "price": 23.5,
-        "saleprice": null,
+        "price": 27.9,
+        "saleprice": 19.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315782564032517715971&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001D-000P5%3Fitem%3D9SIA68VJ2B2530",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS2207200XDUEIB3.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -362,7 +362,7 @@ export default [
     "pack": 3,
     "deals": {
       "amazon": {
-        "price": 50,
+        "price": 39.6,
         "url": "https://www.amazon.com/dp/B0DGLDGVJH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -402,7 +402,7 @@ export default [
     "rpm": 2000,
     "pwm": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 74
   },
   {
@@ -431,7 +431,7 @@ export default [
     "rpm": 1850,
     "pwm": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 66,
     "fans_inc": 3
   },
@@ -451,7 +451,7 @@ export default [
     "pack": 3,
     "deals": {
       "amazon": {
-        "price": 11.68,
+        "price": 12.98,
         "url": "https://www.amazon.com/dp/B0FQ293XFQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -477,7 +477,7 @@ export default [
     "reviews": 30,
     "deals": {
       "amazon": {
-        "price": 43.99,
+        "price": 39.59,
         "url": "https://www.amazon.com/dp/B0DYNSTXLZ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -513,7 +513,7 @@ export default [
     "reviews": 128,
     "deals": {
       "amazon": {
-        "price": 38.99,
+        "price": 29.49,
         "url": "https://www.amazon.com/dp/B0DP2LDRHT?tag=tiereduptech-20",
         "inStock": true
       }
@@ -646,13 +646,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445831141526464788954399",
-        "price": 16.45,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831141526464788954399&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p12-redux-1700-pwm-case-fan%2Fp%2F1YF-000T-000K3%3Fitem%3D9SIAADY76G1552",
+        "sku": "9SIBZT7KJ95146",
+        "price": 22.8,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311509519322798473990&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p12-redux-1700-pwm-case-fan%2Fp%2F1YF-000T-000K3%3Fitem%3D9SIBZT7KJ95146",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131686839620287107z5okwWnjUy.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.552Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -694,10 +694,10 @@ export default [
       "newegg": {
         "sku": "9SIBGX1KB04881",
         "price": 11.99,
-        "saleprice": null,
+        "saleprice": 9.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839388713640567080484&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0129-00002%3Fitem%3D9SIBGX1KB04881",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGX1S2407240DU5RJ93.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -773,12 +773,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADY76X3131",
-        "price": 34.95,
+        "sku": "9SIBZT7KT42013",
+        "price": 48.4,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831962690862270861962&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-pwm-case-fan%2Fp%2F1YF-000T-000K7%3Fitem%3D9SIAADY76X3131",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060IJ02LB9.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316819516797855610042&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-pwm-chromax-black-swap-case-fan%2Fp%2F1YF-000T-003Y0%3Fitem%3D9SIBZT7KT42013",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B3DAS2111120HJTI04D.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -819,14 +819,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445837181998526065022080",
-        "price": 29.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837181998526065022080&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Farctic-cooling-acfan00135a-case-fan%2Fp%2FN82E16835186207%3Fitem%3D9SIA2W08JE1499",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-186-207-V05.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.346Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIA2W0KTG0997",
+        "price": 36.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833782101125817156696&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-00392%3Fitem%3D9SIA2W0KTG0997",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S2603060AAX5G0A.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.56
       }
     },
     "discount": 18,
@@ -919,7 +919,7 @@ export default [
     "reviews": 1628,
     "deals": {
       "amazon": {
-        "price": 11.61,
+        "price": 12.9,
         "url": "https://www.amazon.com/dp/B0BKKG1ZND?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1004,7 +1004,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310037800771788138391&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006N8%3Fitem%3D9SIAADYKHE0816",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2506070CBW3YEC.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -1044,12 +1044,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAZTUKBH5643",
-        "price": 39.5,
+        "sku": "9SIBZT7KJ95163",
+        "price": 38.9,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583482164827888794151&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006J0%3Fitem%3D9SIAZTUKBH5643",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318344985124429111360&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006J0%3Fitem%3D9SIBZT7KJ95163",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2211150LTJR8FD.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -1137,13 +1137,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458311157065906946590913",
-        "price": 14.99,
+        "sku": "9SIBGX1KDA5051",
+        "price": 16.99,
+        "saleprice": 14.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311157065906946590913&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RH-00003%3Fitem%3D9SIBGX1KDA5051",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGX1D24092703M83M86.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.434Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -1180,7 +1180,7 @@ export default [
     "reviews": 509,
     "deals": {
       "amazon": {
-        "price": 11.7,
+        "price": 9.9,
         "url": "https://www.amazon.com/dp/B0CM41S977?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1268,6 +1268,16 @@ export default [
         "price": 64.95,
         "url": "https://www.amazon.com/dp/B0FC67L17G?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAADYKHE0838",
+        "price": 64.95,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836515283008719832963&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006P0%3Fitem%3D9SIAADYKHE0838",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2506070CIJ3Q38.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -1299,19 +1309,18 @@ export default [
     "reviews": 121,
     "deals": {
       "amazon": {
-        "price": 26.9,
+        "price": 22.86,
         "url": "https://www.amazon.com/dp/B0G39DCF81?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458313457305489459870844",
+        "sku": "9SIBVHXKPS6957",
         "price": 39.9,
-        "saleprice": 29.9,
+        "saleprice": 35.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313457305489459870844&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-0038-000Y5%3Fitem%3D9SIBVHXKPS6957",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2512170D6EBTFC.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.578Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -1496,7 +1505,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314498244802175208304&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006P3%3Fitem%3D9SIAADYKMX4278",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2510290YH4B2FE.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -1535,13 +1544,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458315102067640326009533",
-        "price": 17.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315102067640326009533&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p14s-redux-1500-pwm%2Fp%2FN82E16835608065%3Fitem%3D9SIAADY4AW8188",
+        "sku": "9SIBZT7KT41882",
+        "price": 24.36,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835925574062392517510&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p14s-redux-1500-pwm%2Fp%2FN82E16835608065%3Fitem%3D9SIBZT7KT41882",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A00V_131957053445935799G75QUFfE4k.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.552Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -1579,6 +1588,16 @@ export default [
         "price": 24.95,
         "url": "https://www.amazon.com/dp/B00CP6QLY6?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAZTUKB86997",
+        "price": 33.6,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837565797899211638391&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-pwm-case-fan%2Fp%2FN82E16835608044%3Fitem%3D9SIAZTUKB86997",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS211108UB13c.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -1662,6 +1681,16 @@ export default [
         "price": 18.95,
         "url": "https://www.amazon.com/dp/B009NQM7V2?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBZT7KT56936",
+        "price": 23.74,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317752498527884176836&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a9x14-case-fan%2Fp%2FN82E16835608031%3Fitem%3D9SIBZT7KT56936",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-031-V04.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -1728,7 +1757,7 @@ export default [
     "reviews": 2535,
     "deals": {
       "amazon": {
-        "price": 29.4,
+        "price": 27.9,
         "url": "https://www.amazon.com/dp/B0B746VB2F?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1765,7 +1794,7 @@ export default [
     "reviews": 2465,
     "deals": {
       "amazon": {
-        "price": 12.98,
+        "price": 10.38,
         "url": "https://www.amazon.com/dp/B0BKKFBR9R?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1803,7 +1832,7 @@ export default [
     "reviews": 2156,
     "deals": {
       "amazon": {
-        "price": 109.99,
+        "price": 94.99,
         "url": "https://www.amazon.com/dp/B0C64WLQSK?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1813,15 +1842,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445837509732178239651941",
+        "sku": "N82E16835181363",
         "price": 169.99,
-        "saleprice": 109.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837509732178239651941&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-qx120-rgb-starter-kit-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181359%3Fitem%3DN82E16835181359",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-359-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "saleprice": 93.48,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310820415184601124687&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-qx120-rgb-starter-kit-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181363%3Fitem%3DN82E16835181363",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-363-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.71
       }
     },
     "discount": 35,
@@ -1869,13 +1897,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445835814750045235291567",
+        "sku": "N82E16835146136R",
         "price": 19.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835814750045235291567&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-f120-rgb-core-black-single-pack-case-fan%2Fp%2FN82E16835146136%3Fitem%3DN82E16835146136",
+        "saleprice": 13.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831475251037413601447&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-f120-rgb-core-black-single-pack-case-fan-120mm-rgb-led%2Fp%2FN82E16835146136R%3Fitem%3DN82E16835146136R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-136-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "newegg_openbox": {
@@ -1924,7 +1952,7 @@ export default [
     "reviews": 1628,
     "deals": {
       "amazon": {
-        "price": 12.51,
+        "price": 11.12,
         "url": "https://www.amazon.com/dp/B0BKK2MBWG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1964,6 +1992,16 @@ export default [
         "price": 23.95,
         "url": "https://www.amazon.com/dp/B07ZP6KKKZ?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAZTUKBJ3441",
+        "price": 29.4,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838655594802597348766&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a9x14-hs-pwm-chromax-black-swap-case-fan%2Fp%2F1YF-000T-002G2%3Fitem%3D9SIAZTUKBJ3441",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2206300JNGVA4D.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -2071,7 +2109,7 @@ export default [
     "reviews": 826,
     "deals": {
       "amazon": {
-        "price": 12.99,
+        "price": 10.39,
         "url": "https://www.amazon.com/dp/B08BLTW8RX?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2108,19 +2146,19 @@ export default [
     "reviews": 730,
     "deals": {
       "amazon": {
-        "price": 25.9,
+        "price": 20.49,
         "url": "https://www.amazon.com/dp/B0F6T6GCV8?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458311271482639410781604",
-        "price": 29.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311271482639410781604&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-0038-000X3%3Fitem%3D9SIBVHXKFF8849",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2505280FZJZV2E.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.578Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIBVHXKPS6957",
+        "price": 39.9,
+        "saleprice": 35.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313457305489459870844&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-0038-000Y5%3Fitem%3D9SIBVHXKPS6957",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2512170D6EBTFC.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.83
       }
     },
     "discount": 20,
@@ -2159,7 +2197,7 @@ export default [
     "reviews": 589,
     "deals": {
       "amazon": {
-        "price": 13.5,
+        "price": 10.9,
         "url": "https://www.amazon.com/dp/B0CM3Z39J3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2199,12 +2237,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA0ZXKGS0809",
-        "price": 49.25,
+        "sku": "9SIAFSTKG56109",
+        "price": 31.99,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831550050013978810287&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-12slin1w1w-case-fan-120-mm-argb-led%2Fp%2F1YF-005G-000P7%3Fitem%3D9SIA0ZXKGS0809",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS25052904FNVD68.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838327886787058130410&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-12slin1w1b-case-fan-120-mm-argb-led%2Fp%2F1YF-005G-000P3%3Fitem%3D9SIAFSTKG56109",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS25052905NA8452.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.53
       }
@@ -2240,7 +2278,7 @@ export default [
     "reviews": 509,
     "deals": {
       "amazon": {
-        "price": 32.5,
+        "price": 26,
         "url": "https://www.amazon.com/dp/B0FV3B5K8B?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2272,7 +2310,7 @@ export default [
     "reviews": 299,
     "deals": {
       "amazon": {
-        "price": 35.98,
+        "price": 30.59,
         "url": "https://www.amazon.com/dp/B0CXSRXSXQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2315,13 +2353,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458314119535709419873235",
+        "sku": "9SIA6KXKJ25851",
         "price": 118.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314119535709419873235&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-12rslin1w3w-case-fan-120-mm-argb-led%2Fp%2F1YF-005G-000P5%3Fitem%3D9SIA6KXKJ25851",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS250529052NXZ04.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.315Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -2362,7 +2400,7 @@ export default [
     "reviews": 193,
     "deals": {
       "amazon": {
-        "price": 44.99,
+        "price": 32.99,
         "url": "https://www.amazon.com/dp/B0F8QY1NKY?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2372,14 +2410,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445835814787360504938831",
+        "sku": "N82E16835181489",
         "price": 59.99,
-        "saleprice": 44.99,
+        "saleprice": 39.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835814787360504938831&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835181489%3Fitem%3DN82E16835181489",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-489-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -2519,14 +2556,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADYKMX4254",
+        "sku": "9SIAADYKMX4304",
         "price": 44.95,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317048283466140912447&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006P2%3Fitem%3D9SIAADYKMX4254",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2510290YEAMWF2.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835046418375648595272&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006P4%3Fitem%3D9SIAADYKMX4304",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2510290YKH9560.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 0.92
       }
     },
     "additionalImages": [
@@ -2559,17 +2596,17 @@ export default [
     "reviews": 121,
     "deals": {
       "amazon": {
-        "price": 26.9,
+        "price": 22.86,
         "url": "https://www.amazon.com/dp/B0GC66NV13?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "9SIBVHXKFF8853",
-        "price": 29.9,
+        "price": 35.9,
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314672887504072421524&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-0038-000X6%3Fitem%3D9SIBVHXKFF8853",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2505280FXIWTA0.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.77
       }
@@ -2618,7 +2655,7 @@ export default [
         "saleprice": 34.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832225338219513097557&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RR-00007%3Fitem%3D9SIC25VKT28759",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C25VS2602270HK0DE86.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.94
       }
@@ -2660,12 +2697,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBTVCKEA3412",
-        "price": 27.49,
+        "sku": "9SIBZT7KJ95150",
+        "price": 27.09,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316857166024636576629&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-f12-pwm-case-fan%2Fp%2FN82E16835608026%3Fitem%3D9SIBTVCKEA3412",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834902039109586570339&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-f12-pwm-case-fan%2Fp%2FN82E16835608026%3Fitem%3D9SIBZT7KJ95150",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-026-V01.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -2706,12 +2743,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAZTUKB86950",
-        "price": 38.88,
+        "sku": "9SIBZT7KJ95161",
+        "price": 37.2,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839645251329485493798&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006J2%3Fitem%3D9SIAZTUKB86950",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2211150M5U5722.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583725726679895146523&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-ippc-3000-pwm-case-fan%2Fp%2FN82E16835608048%3Fitem%3D9SIBZT7KJ95161",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B7T1S2201110EMDJB4F.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -2746,7 +2783,7 @@ export default [
     "reviews": 2535,
     "deals": {
       "amazon": {
-        "price": 24.9,
+        "price": 19.9,
         "url": "https://www.amazon.com/dp/B0B6WPZFBX?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2782,7 +2819,7 @@ export default [
     "reviews": 2535,
     "deals": {
       "amazon": {
-        "price": 29.4,
+        "price": 27.9,
         "url": "https://www.amazon.com/dp/B0B74CP6X2?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2903,13 +2940,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445834652354367108786856",
+        "sku": "N82E16835181409",
         "price": 34.99,
+        "saleprice": 29.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834652354367108786856&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rx120-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181409%3Fitem%3DN82E16835181409",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-409-04.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -2993,7 +3030,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838868688972003156223&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-00387%3Fitem%3D9SIA2W0KR89602",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25123007RJADE7.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.54
       }
@@ -3030,7 +3067,7 @@ export default [
     "reviews": 668,
     "deals": {
       "amazon": {
-        "price": 19.39,
+        "price": 15.51,
         "url": "https://www.amazon.com/dp/B0D9YG7JH9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3064,7 +3101,7 @@ export default [
     "reviews": 589,
     "deals": {
       "amazon": {
-        "price": 32.5,
+        "price": 26,
         "url": "https://www.amazon.com/dp/B0FV3BHCM1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3132,7 +3169,7 @@ export default [
     "reviews": 513,
     "deals": {
       "amazon": {
-        "price": 16.79,
+        "price": 13.43,
         "url": "https://www.amazon.com/dp/B0C743H79N?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3171,7 +3208,7 @@ export default [
     "reviews": 507,
     "deals": {
       "amazon": {
-        "price": 39.98,
+        "price": 36.08,
         "url": "https://www.amazon.com/dp/B0C5PY91W9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3254,7 +3291,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316087214692451450956&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006N0%3Fitem%3D9SIAZTUKG02371",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2409170OZHM684.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -3289,7 +3326,7 @@ export default [
     "reviews": 382,
     "deals": {
       "amazon": {
-        "price": 13.5,
+        "price": 11.8,
         "url": "https://www.amazon.com/dp/B0CM3Z4XFB?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3324,17 +3361,17 @@ export default [
     "reviews": 332,
     "deals": {
       "amazon": {
-        "price": 13.5,
+        "price": 10.9,
         "url": "https://www.amazon.com/dp/B0CM43L3J9?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "9SIA68VK8Z7001",
-        "price": 12.9,
-        "saleprice": null,
+        "price": 14.9,
+        "saleprice": 11.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831014544513175077867&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001D-000S0%3Fitem%3D9SIA68VK8Z7001",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS24021414VRL477.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -3379,7 +3416,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316010533021050897096&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006N2%3Fitem%3D9SIAADYKCT4320",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2409170P7IS2F3.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -3412,7 +3449,7 @@ export default [
     "reviews": 299,
     "deals": {
       "amazon": {
-        "price": 39.97,
+        "price": 35.37,
         "url": "https://www.amazon.com/dp/B0F8ZJVZ9T?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3496,19 +3533,19 @@ export default [
     "reviews": 162,
     "deals": {
       "amazon": {
-        "price": 105.89,
+        "price": 107.15,
         "url": "https://www.amazon.com/dp/B0DMVZS6JH?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458315924633064553752320",
-        "price": 109.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315924633064553752320&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-005G-000K1%3Fitem%3D9SIA6KXKJY2307",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS241216igzzu.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.315Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "1YF-005G-000M0",
+        "price": 149.99,
+        "saleprice": 118.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313612755839950500956&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-005G-000M0%3Fitem%3D1YF-005G-000M0",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2412160UMED.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.81
       },
       "bestbuy": {
         "price": 94.99,
@@ -3549,9 +3586,19 @@ export default [
     "reviews": 195,
     "deals": {
       "amazon": {
-        "price": 46.99,
+        "price": 42.22,
         "url": "https://www.amazon.com/dp/B0DMVZGPJQ?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVAJKDR7184",
+        "price": 49.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318344746501879361801&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-005G-000K9%3Fitem%3D9SIBVAJKDR7184",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS241216YyQdw.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -3636,7 +3683,7 @@ export default [
     "reviews": 145,
     "deals": {
       "amazon": {
-        "price": 31.45,
+        "price": 27.98,
         "url": "https://www.amazon.com/dp/B0DQBMZZ2T?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3724,7 +3771,7 @@ export default [
     "reviews": 128,
     "deals": {
       "amazon": {
-        "price": 54.99,
+        "price": 44.4,
         "url": "https://www.amazon.com/dp/B0F38FKS4H?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3760,7 +3807,7 @@ export default [
     "reviews": 125,
     "deals": {
       "amazon": {
-        "price": 27.66,
+        "price": 25.86,
         "url": "https://www.amazon.com/dp/B07XRYM2WC?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3814,13 +3861,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583250318579607191191",
-        "price": 111.42,
+        "sku": "9SIA0ZXKCH4543",
+        "price": 111.14,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583250318579607191191&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-005G-000H7%3Fitem%3D9SIA0ZXKCH4543",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS241017yRUwS.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.205Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -3913,7 +3960,7 @@ export default [
     "reviews": 92,
     "deals": {
       "amazon": {
-        "price": 18.39,
+        "price": 14.71,
         "url": "https://www.amazon.com/dp/B0DGGKQFM6?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4049,7 +4096,7 @@ export default [
     "reviews": 56,
     "deals": {
       "amazon": {
-        "price": 18.47,
+        "price": 16.71,
         "url": "https://www.amazon.com/dp/B0F7H885V6?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4087,7 +4134,7 @@ export default [
     "reviews": 50,
     "deals": {
       "amazon": {
-        "price": 26.99,
+        "price": 19.99,
         "url": "https://www.amazon.com/dp/B0FHH3V861?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4131,14 +4178,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445839470610141514005441",
-        "price": 89.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839470610141514005441&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-005G-000N9%3Fitem%3D9SIBVAJKN10954",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2503060IMPUL97.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.576Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "1YF-005G-000P1",
+        "price": 113.99,
+        "saleprice": 112.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312264994125486177446&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-12rslin1w3b-case-fan-120-mm-argb-led%2Fp%2F1YF-005G-000P1%3Fitem%3D1YF-005G-000P1",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS25052905T3G6D4.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.65
       }
     },
     "additionalImages": [
@@ -4211,6 +4258,16 @@ export default [
         "price": 26.95,
         "url": "https://www.amazon.com/dp/B07654PNFQ?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAZTUK9X2886",
+        "price": 32.38,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312262878092609148697&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-chromax-black-swap-case-fan%2Fp%2F1YF-000T-000D8%3Fitem%3D9SIAZTUK9X2886",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200826id4jI.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -4247,6 +4304,16 @@ export default [
         "price": 16.45,
         "url": "https://www.amazon.com/dp/B07CG2PGVG?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAZTUKBH5645",
+        "price": 22.8,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839936079358486660175&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p12-redux-1300-pwm-case-fan%2Fp%2F1YF-000T-000K2%3Fitem%3D9SIAZTUKBH5645",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS210401kGffu.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -4282,6 +4349,16 @@ export default [
         "price": 21.95,
         "url": "https://www.amazon.com/dp/B00BEZZBFO?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBZT7KJ95150",
+        "price": 27.09,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834902039109586570339&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-f12-pwm-case-fan%2Fp%2FN82E16835608026%3Fitem%3D9SIBZT7KJ95150",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-026-V01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.88
       }
     },
     "additionalImages": [
@@ -4315,7 +4392,7 @@ export default [
     "reviews": 2840,
     "deals": {
       "amazon": {
-        "price": 43.99,
+        "price": 39.99,
         "url": "https://www.amazon.com/dp/B08Y8N5J89?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4365,7 +4442,7 @@ export default [
     "reviews": 2535,
     "deals": {
       "amazon": {
-        "price": 24.9,
+        "price": 19.9,
         "url": "https://www.amazon.com/dp/B0B6WPS232?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4581,7 +4658,7 @@ export default [
     "reviews": 1828,
     "deals": {
       "amazon": {
-        "price": 41.64,
+        "price": 48.99,
         "url": "https://www.amazon.com/dp/B07HCKWF2X?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4618,7 +4695,7 @@ export default [
     "reviews": 608,
     "deals": {
       "amazon": {
-        "price": 46.9,
+        "price": 37.5,
         "url": "https://www.amazon.com/dp/B0DGL2TGRM?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4659,13 +4736,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583140070010638949924",
+        "sku": "9SIAZTUKCV3441",
         "price": 41.5,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583140070010638949924&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-5v-pwm%2Fp%2F1YF-000T-000M4%3Fitem%3D9SIAZTUKCV3441",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060I6LHSB9.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.178Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -4793,7 +4870,7 @@ export default [
     "reviews": 382,
     "deals": {
       "amazon": {
-        "price": 34.5,
+        "price": 27.6,
         "url": "https://www.amazon.com/dp/B0FV39LFN1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4901,7 +4978,7 @@ export default [
     "reviews": 171,
     "deals": {
       "amazon": {
-        "price": 16.91,
+        "price": 15.03,
         "url": "https://www.amazon.com/dp/B0D9NRRZQL?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4939,7 +5016,7 @@ export default [
     "reviews": 195,
     "deals": {
       "amazon": {
-        "price": 8.29,
+        "price": 6.63,
         "url": "https://www.amazon.com/dp/B0CJDQNS9W?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4974,7 +5051,7 @@ export default [
     "reviews": 200,
     "deals": {
       "amazon": {
-        "price": 46.89,
+        "price": 33.99,
         "url": "https://www.amazon.com/dp/B0DP2LRK53?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5127,13 +5204,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458314354169143855646133",
+        "sku": "9SIA2W0KR89532",
         "price": 14.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314354169143855646133&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-00379%3Fitem%3D9SIA2W0KR89532",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A9H5S2512221DI5D036.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.348Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -5220,7 +5297,7 @@ export default [
     "reviews": 79,
     "deals": {
       "amazon": {
-        "price": 20.69,
+        "price": 16.55,
         "url": "https://www.amazon.com/dp/B0DGGHGXGY?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5255,7 +5332,7 @@ export default [
     "reviews": 79,
     "deals": {
       "amazon": {
-        "price": 17.59,
+        "price": 14.07,
         "url": "https://www.amazon.com/dp/B0DGGH9PFV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5302,13 +5379,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317573716210608104773",
+        "sku": "9SIA8EFKBZ8888",
         "price": 29.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317573716210608104773&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001G-004D6%3Fitem%3D9SIA8EFKBZ8888",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS2410241CAMQ275.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.450Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -5346,7 +5423,7 @@ export default [
     "reviews": 44,
     "deals": {
       "amazon": {
-        "price": 54.99,
+        "price": 46.74,
         "url": "https://www.amazon.com/dp/B0FBVT7GNH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5430,7 +5507,7 @@ export default [
     "reviews": 30,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 99.99,
         "url": "https://www.amazon.com/dp/B0F2H3KSGH?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5573,20 +5650,19 @@ export default [
     "reviews": 27,
     "deals": {
       "amazon": {
-        "price": 12.99,
+        "price": 11.87,
         "url": "https://www.amazon.com/dp/B0FNBV1GSG?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "44583329277646603153700",
+        "sku": "N82E16835101129",
         "price": 14.99,
-        "saleprice": 12.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583329277646603153700&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835101127%3Fitem%3DN82E16835101127",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-127-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.795Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "saleprice": 13.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838963472350784828202&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-90da00l3-b08000-case-fan-120mm-addressable-rgb-led%2Fp%2FN82E16835101129%3Fitem%3DN82E16835101129",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-129-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.92
       }
     },
     "discount": 13,
@@ -5660,7 +5736,7 @@ export default [
     "reviews": 16,
     "deals": {
       "amazon": {
-        "price": 16.9,
+        "price": 13.52,
         "url": "https://www.amazon.com/dp/B0DJ7BVJNB?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5696,7 +5772,7 @@ export default [
     "reviews": 10535,
     "deals": {
       "amazon": {
-        "price": 19.19,
+        "price": 28.85,
         "url": "https://www.amazon.com/dp/B075VDGSJ8?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5706,7 +5782,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837749310456603399026&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-co-9050091-ww-case-fan%2Fp%2FN82E16835181167%3Fitem%3D9SIC5BHKST8334",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-167-01.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.94
       }
@@ -5749,13 +5825,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458313110428892698794418",
+        "sku": "9SIC5BHKST8126",
         "price": 49.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313110428892698794418&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-co-9050108-ww-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181235%3Fitem%3D9SIC5BHKST8126",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-235-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.623Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -5838,17 +5914,17 @@ export default [
     "reviews": 2917,
     "deals": {
       "amazon": {
-        "price": 59.9,
+        "price": 47.9,
         "url": "https://www.amazon.com/dp/B09KMFDDYR?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "9SIA68VG9K1886",
-        "price": 59.9,
-        "saleprice": null,
+        "price": 99.9,
+        "saleprice": 47.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311177292881549611565&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-140mm-pwm-triple-pack-case-fan%2Fp%2F1YF-001D-000E2%3Fitem%3D9SIA68VG9K1886",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS2111248gc2L.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -5887,7 +5963,7 @@ export default [
     "reviews": 2917,
     "deals": {
       "amazon": {
-        "price": 49.9,
+        "price": 39.9,
         "url": "https://www.amazon.com/dp/B0C1CP52CF?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5925,17 +6001,17 @@ export default [
     "reviews": 2917,
     "deals": {
       "amazon": {
-        "price": 23.9,
+        "price": 19.1,
         "url": "https://www.amazon.com/dp/B09KMF9H1Z?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "9SIA68VG9K1163",
-        "price": 23.9,
-        "saleprice": null,
+        "price": 34.9,
+        "saleprice": 19.1,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839143138477844651307&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-140mm-pwm-high-speed-case-fan%2Fp%2F1YF-001D-000D9%3Fitem%3D9SIA68VG9K1163",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS211124HovGB.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.95
       }
@@ -5983,7 +6059,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312348338014855287458&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3C6-05XF-00045%3Fitem%3D9SIB38FK775253",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AUS3D210320XGYU1.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -6117,13 +6193,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458314972622154794700157",
-        "price": 35.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314972622154794700157&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-000J0%3Fitem%3D9SIA2W0JSR4941",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6_131898001494944447lv4PMj9tSo.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.346Z",
-        "matchMethod": "sftp:upc",
+        "sku": "9SIC2V8KKS0479",
+        "price": 77.21,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317770522619074998270&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3C6-079K-002B4%3Fitem%3D9SIC2V8KKS0479",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A3TBD201107QNQFL.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
         "matchScore": 1
       }
     },
@@ -6157,9 +6233,19 @@ export default [
     "reviews": 1754,
     "deals": {
       "amazon": {
-        "price": 28.92,
+        "price": 30.75,
         "url": "https://www.amazon.com/dp/B08XY2D47H?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBZW0KPA4798",
+        "price": 49.9,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837914900056531953717&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-co-9050136-ww-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181240%3Fitem%3D9SIBZW0KPA4798",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-240-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -6200,12 +6286,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAZTUKBG6154",
-        "price": 29.3,
+        "sku": "9SIBZT7KT41879",
+        "price": 31.75,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311906294508641638232&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a9-pwm-chromax-black-swap-case-fan%2Fp%2F1YF-000T-002G3%3Fitem%3D9SIAZTUKBG6154",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS191225GMNma.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314867752277912617621&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-chromax-black-swap-case-fan%2Fp%2F1YF-000T-000D7%3Fitem%3D9SIBZT7KT41879",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2206300HUEG1F3.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.82
       }
@@ -6241,7 +6327,7 @@ export default [
     "reviews": 1279,
     "deals": {
       "amazon": {
-        "price": 17.35,
+        "price": 24.99,
         "url": "https://www.amazon.com/dp/B0B1LH4SF3?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6327,6 +6413,16 @@ export default [
         "price": 28.95,
         "url": "https://www.amazon.com/dp/B07654B9MR?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBZT7KT41879",
+        "price": 31.75,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314867752277912617621&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-chromax-black-swap-case-fan%2Fp%2F1YF-000T-000D7%3Fitem%3D9SIBZT7KT41879",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2206300HUEG1F3.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -6360,7 +6456,7 @@ export default [
     "reviews": 1268,
     "deals": {
       "amazon": {
-        "price": 9.9,
+        "price": 7.9,
         "url": "https://www.amazon.com/dp/B07WZPZJRB?tag=tiereduptech-20",
         "inStock": true
       }
@@ -6396,7 +6492,7 @@ export default [
     "reviews": 1268,
     "deals": {
       "amazon": {
-        "price": 9.9,
+        "price": 7.9,
         "url": "https://www.amazon.com/dp/B07WZPY7PF?tag=tiereduptech-20",
         "inStock": true
       }
@@ -6437,12 +6533,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADY4B02908",
-        "price": 17.95,
+        "sku": "9SIBZT7KT41881",
+        "price": 24.4,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831631496028451815556&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p14s-redux-1200%2Fp%2FN82E16835608063%3Fitem%3D9SIAADY4B02908",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831554204625661025458&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p14s-redux-1200%2Fp%2FN82E16835608063%3Fitem%3D9SIBZT7KT41881",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-063-V07.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.71
       }
@@ -6535,7 +6631,7 @@ export default [
         "saleprice": 32.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314194971808890719815&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fvetroo-argb140-bk-case-fan%2Fp%2F1YF-00MH-001S4%3Fitem%3D9SIBGX1KB27804",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGX1S2405220KWWEOC0.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.88
       }
@@ -6577,13 +6673,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458314813497525476585459",
+        "sku": "9SIBZT7KT56935",
         "price": 28.8,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314813497525476585459&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a15-pwm-case-fan%2Fp%2FN82E16835608036%3Fitem%3D9SIAZTUKBG6134",
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312823984215561966320&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a15-pwm-case-fan%2Fp%2FN82E16835608036%3Fitem%3D9SIBZT7KT56935",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS210215FM2Se.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.178Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -6629,7 +6725,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583251268676019719495&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p12-1300-cpu-cooler-and-case-fan%2Fp%2FN82E16835608004%3Fitem%3D9SIAADY8KE0367",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-004-V14.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.88
       }
@@ -6676,7 +6772,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315433276012399258213&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835181464%3Fitem%3D9SIA2W0KT79848",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-464-02.png",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.65
       }
@@ -6720,14 +6816,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAZTUKEK9762",
-        "price": 38.65,
+        "sku": "9SIBZT7KT41898",
+        "price": 39.1,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316841429700348324412&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-ippc-2000-ip67-case-fan%2Fp%2FN82E16835608049%3Fitem%3D9SIAZTUKEK9762",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200826DA6G1.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583429837556673302198&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006J1%3Fitem%3D9SIBZT7KT41898",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2211150M03D422.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.63
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -6758,7 +6854,7 @@ export default [
     "reviews": 799,
     "deals": {
       "amazon": {
-        "price": 33.99,
+        "price": 30.9,
         "url": "https://www.amazon.com/dp/B0D3H5TXPK?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6812,7 +6908,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311755559951611599638&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-uln-case-fan%2Fp%2FN82E16835608035%3Fitem%3D9SIAZTUKB86998",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-035-V02.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -6897,13 +6993,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583612458261403688115",
-        "price": 34.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583612458261403688115&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-flx-case-fan%2Fp%2F1YF-000T-000K6%3Fitem%3D9SIAADY76X3122",
+        "sku": "9SIAZTUKB85426",
+        "price": 41.38,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313355628112256215478&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-flx-case-fan%2Fp%2F1YF-000T-000K6%3Fitem%3D9SIAZTUKB85426",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060IFAMGB9.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.552Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -6983,7 +7079,7 @@ export default [
     "reviews": 608,
     "deals": {
       "amazon": {
-        "price": 18.9,
+        "price": 14.9,
         "url": "https://www.amazon.com/dp/B0DGKQ8F4L?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7023,6 +7119,16 @@ export default [
         "price": 24.95,
         "url": "https://www.amazon.com/dp/B00AEGRGNO?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAZTUKB86796",
+        "price": 29.78,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833706096789215987071&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-flx-case-fan%2Fp%2FN82E16835608034%3Fitem%3D9SIAZTUKB86796",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-034-V02.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -7054,7 +7160,7 @@ export default [
     "reviews": 608,
     "deals": {
       "amazon": {
-        "price": 16.9,
+        "price": 13.5,
         "url": "https://www.amazon.com/dp/B0DGKR8DN5?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7129,17 +7235,17 @@ export default [
     "reviews": 511,
     "deals": {
       "amazon": {
-        "price": 18.99,
+        "price": 9.49,
         "url": "https://www.amazon.com/dp/B0955WB2KL?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "N82E16835101057",
         "price": 29.99,
-        "saleprice": 18.99,
+        "saleprice": 9.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583566599064172844361&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-90da0010-b08000-case-fan-120-mm-non-led-led%2Fp%2FN82E16835101057%3Fitem%3DN82E16835101057",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-057-V01.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -7178,6 +7284,16 @@ export default [
         "price": 31.99,
         "url": "https://www.amazon.com/dp/B098DTPNRV?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIB38FK775218",
+        "price": 42.59,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315719999777872694081&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3C6-05XF-00010%3Fitem%3D9SIB38FK775218",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASSAD2202220E2KWE6F.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -7213,7 +7329,7 @@ export default [
     "reviews": 479,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 60.79,
         "url": "https://www.amazon.com/dp/B0CCQ8PQB8?tag=tiereduptech-20",
         "inStock": true
       },
@@ -7223,14 +7339,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445839508549382186688806",
+        "sku": "N82E16835106740",
         "price": 87.99,
         "saleprice": 80.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839508549382186688806&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-swafan-ex12-case-fan-120-mm-argb-led%2Fp%2FN82E16835106740%3Fitem%3DN82E16835106740",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2309090XYPM997.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.795Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -7267,7 +7382,7 @@ export default [
     "reviews": 452,
     "deals": {
       "amazon": {
-        "price": 82.99,
+        "price": 78.6,
         "url": "https://www.amazon.com/dp/B0B5GVHXH8?tag=tiereduptech-20",
         "inStock": true
       },
@@ -7324,6 +7439,16 @@ export default [
         "price": 32.95,
         "url": "https://www.amazon.com/dp/B00KESSUDW?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBZT7KT42016",
+        "price": 38.9,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832419667008456898022&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-ippc-2000-pwm-case-fan%2Fp%2FN82E16835608047%3Fitem%3D9SIBZT7KT42016",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200812Gi0HV.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.63
       }
     },
     "additionalImages": [
@@ -7404,13 +7529,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316841429700348324412",
-        "price": 38.65,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316841429700348324412&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-ippc-2000-ip67-case-fan%2Fp%2FN82E16835608049%3Fitem%3D9SIAZTUKEK9762",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200826DA6G1.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.178Z",
-        "matchMethod": "sftp:upc",
+        "sku": "9SIBZT7KT41898",
+        "price": 39.1,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583429837556673302198&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006J1%3Fitem%3D9SIBZT7KT41898",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2211150M03D422.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
         "matchScore": 1
       }
     },
@@ -7446,6 +7571,16 @@ export default [
         "price": 34.95,
         "url": "https://www.amazon.com/dp/B092DNHCGT?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAZTUK9Y2138",
+        "price": 41,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833919126117594009775&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-ls-pwm-case-fan%2Fp%2F13C-0005-001N5%3Fitem%3D9SIAZTUK9Y2138",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060J4LHFB9.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -7481,13 +7616,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583754060191622231769",
+        "sku": "9SIAZTUKB85427",
         "price": 41.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583754060191622231769&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-uln-case-fan%2Fp%2F1YF-000T-000K8%3Fitem%3D9SIAZTUKB85427",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060IUXI7B9.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.178Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -7612,19 +7747,19 @@ export default [
     "reviews": 344,
     "deals": {
       "amazon": {
-        "price": 73.92,
+        "price": 73.84,
         "url": "https://www.amazon.com/dp/B08XY3Q64X?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316799101153460199050",
-        "price": 149,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316799101153460199050&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-co-9050139-ww-case-fan%2Fp%2FN82E16835181243%3Fitem%3D9SIC5BHKST3176",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-243-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.623Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIC5BHKST3174",
+        "price": 69,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832136486512913104593&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-co-9050138-ww-case-fan%2Fp%2FN82E16835181242%3Fitem%3D9SIC5BHKST3174",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-242-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.9
       }
     },
     "additionalImages": [
@@ -7661,7 +7796,7 @@ export default [
     "reviews": 347,
     "deals": {
       "amazon": {
-        "price": 45.39,
+        "price": 51.46,
         "url": "https://www.amazon.com/dp/B0D97LXGHX?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7703,13 +7838,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458313555118809001311909",
+        "sku": "9SIAZTUKBH5607",
         "price": 29.52,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313555118809001311909&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-f12-5v-pwm%2Fp%2F1YF-000T-000M6%3Fitem%3D9SIAZTUKBH5607",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ADPT_1_201903231581369444.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.178Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -7742,7 +7877,7 @@ export default [
     "reviews": 332,
     "deals": {
       "amazon": {
-        "price": 14.5,
+        "price": 11.9,
         "url": "https://www.amazon.com/dp/B0CRZF2VRY?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7851,13 +7986,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445831534159123172081191",
+        "sku": "9SIA8EFJT00447",
         "price": 39.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831534159123172081191&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-ct140-argb-sync-pc-cooling-fan-white-case-fan%2Fp%2FN82E16835106717%3Fitem%3D9SIA8EFJT00447",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-717-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.449Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -7894,7 +8029,7 @@ export default [
     "reviews": 271,
     "deals": {
       "amazon": {
-        "price": 8.9,
+        "price": 7.12,
         "url": "https://www.amazon.com/dp/B0CJFHQTSX?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7972,14 +8107,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA4REKMV6230",
-        "price": 15.95,
+        "sku": "9SIAADY7K68688",
+        "price": 24.95,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316076720694993096307&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a4x20-5v-pwm-case-fan%2Fp%2F1YF-000T-00094%3Fitem%3D9SIA4REKMV6230",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200803eaY7j.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.58
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838110682367531106590&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-5v-pwm%2Fp%2F1YF-000T-000M2%3Fitem%3D9SIAADY7K68688",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AC0F_1_201903232014679835.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -8015,14 +8150,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317541971980094524701",
-        "price": 140.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317541971980094524701&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-uf-sl120-3b-case-fan%2Fp%2F1YF-005G-000A8%3Fitem%3D9SIA4REKEH0800",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS221102bJeE4.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.457Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIBZW0KG45862",
+        "price": 129,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312847433333877352393&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01R3-00011%3Fitem%3D9SIBZW0KG45862",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BTZ7S2504240VQYDF52.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.88
       }
     },
     "additionalImages": [
@@ -8056,7 +8191,7 @@ export default [
     "reviews": 223,
     "deals": {
       "amazon": {
-        "price": 15.99,
+        "price": 12.79,
         "url": "https://www.amazon.com/dp/B0C68K1VJT?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8094,7 +8229,7 @@ export default [
     "reviews": 213,
     "deals": {
       "amazon": {
-        "price": 32.99,
+        "price": 24.47,
         "url": "https://www.amazon.com/dp/B07Q9K5LQG?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8104,7 +8239,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838262658295233754243&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3C6-05XF-001E2%3Fitem%3D9SIB38FK775691",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BMYXD2306190A51UK25.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -8140,7 +8275,7 @@ export default [
     "reviews": 209,
     "deals": {
       "amazon": {
-        "price": 13.9,
+        "price": 11.12,
         "url": "https://www.amazon.com/dp/B0CP7LBJP2?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8255,7 +8390,7 @@ export default [
     "pack": 1,
     "bench": 68,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "fanSize": 120
   },
   {
@@ -8271,7 +8406,7 @@ export default [
     "reviews": 201,
     "deals": {
       "amazon": {
-        "price": 39.99,
+        "price": 26.99,
         "url": "https://www.amazon.com/dp/B0CYLTZHXW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8308,7 +8443,7 @@ export default [
     "reviews": 186,
     "deals": {
       "amazon": {
-        "price": 9.99,
+        "price": 7.49,
         "url": "https://www.amazon.com/dp/B0CQM796LP?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8350,14 +8485,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC4CTKT58204",
-        "price": 37.08,
+        "sku": "9SIBZT7KT41898",
+        "price": 39.1,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314400303901767085394&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-ippc-2000-case-fan%2Fp%2FN82E16835608046%3Fitem%3D9SIC4CTKT58204",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060JFVLT22.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583429837556673302198&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006J1%3Fitem%3D9SIBZT7KT41898",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2211150M03D422.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.71
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -8433,17 +8568,17 @@ export default [
     "reviews": 135,
     "deals": {
       "amazon": {
-        "price": 29.99,
+        "price": 23.99,
         "url": "https://www.amazon.com/dp/B0DYZLX4BF?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBZH7KFZ4691",
+        "sku": "1YF-01RK-00001",
         "price": 29.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311114543797829714383&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RK-00001%3Fitem%3D9SIBZH7KFZ4691",
+        "saleprice": 23.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838504223703937360642&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RK-00001%3Fitem%3D1YF-01RK-00001",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BZH7S2508120YQHT4C3.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -8479,7 +8614,7 @@ export default [
     "reviews": 135,
     "deals": {
       "amazon": {
-        "price": 67.39,
+        "price": 63.99,
         "url": "https://www.amazon.com/dp/B0DYZLGNN3?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8489,7 +8624,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315966580487947730683&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RK-00002%3Fitem%3D9SIBZH7KFZ4692",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BZH7S2508120YP8QCD4.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -8526,7 +8661,7 @@ export default [
     "reviews": 135,
     "deals": {
       "amazon": {
-        "price": 34.99,
+        "price": 27.99,
         "url": "https://www.amazon.com/dp/B0DYZM1QKY?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8536,7 +8671,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837978967754452099476&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RK-00003%3Fitem%3D9SIBZH7KFZ4693",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BZH7S2508120YOHLO79.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -8572,7 +8707,7 @@ export default [
     "reviews": 128,
     "deals": {
       "amazon": {
-        "price": 17.99,
+        "price": 14.39,
         "url": "https://www.amazon.com/dp/B0DP2JVNCP?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8608,7 +8743,7 @@ export default [
     "reviews": 117,
     "deals": {
       "amazon": {
-        "price": 36.5,
+        "price": 31.16,
         "url": "https://www.amazon.com/dp/B00KESSI2A?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8654,12 +8789,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAZTUKK39064",
-        "price": 40.4,
+        "sku": "9SIBZT7KT41889",
+        "price": 40,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831307955641621530753&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2BJ-000W-00155%3Fitem%3D9SIAZTUKK39064",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316298566456232501460&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2BJ-000W-00155%3Fitem%3D9SIBZT7KT41889",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS220404eIT5p.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -8692,7 +8827,7 @@ export default [
     "reviews": 112,
     "deals": {
       "amazon": {
-        "price": 14.9,
+        "price": 11.92,
         "url": "https://www.amazon.com/dp/B0DGP1TPR5?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8702,7 +8837,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831960845845697352569&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01P6-00016%3Fitem%3D9SIBRT8KBR8612",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BRT8S2410280DR1QS17.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -8741,7 +8876,7 @@ export default [
     "reviews": 112,
     "deals": {
       "amazon": {
-        "price": 49.9,
+        "price": 39.92,
         "url": "https://www.amazon.com/dp/B0DGGVRBX2?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8751,7 +8886,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836982428168071679306&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01P6-00020%3Fitem%3D9SIBRT8KBR8616",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BRT8S2410280DPRINEC.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.94
       }
@@ -8790,7 +8925,7 @@ export default [
     "reviews": 107,
     "deals": {
       "amazon": {
-        "price": 19,
+        "price": 15.2,
         "url": "https://www.amazon.com/dp/B0DJ86Q2NS?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8826,7 +8961,7 @@ export default [
     "reviews": 89,
     "deals": {
       "amazon": {
-        "price": 18.99,
+        "price": 15.99,
         "url": "https://www.amazon.com/dp/B0D1C4VGFC?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8861,7 +8996,7 @@ export default [
     "reviews": 101,
     "deals": {
       "amazon": {
-        "price": 42.99,
+        "price": 32.28,
         "url": "https://www.amazon.com/dp/B0DFWFSZ6C?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8871,7 +9006,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837091614079089521031&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-00RA-00006%3Fitem%3D9SIAWATKE83029",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AWATS250305081TUU04.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -8909,7 +9044,7 @@ export default [
     "reviews": 88,
     "deals": {
       "amazon": {
-        "price": 37.07,
+        "price": 29.49,
         "url": "https://www.amazon.com/dp/B0DKST5LX5?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8956,7 +9091,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831967147025831546289&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00359%3Fitem%3D9SIAADYKB59226",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2407010JLO5W30.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -9063,6 +9198,16 @@ export default [
         "price": 44.95,
         "url": "https://www.amazon.com/dp/B0DDXLYL36?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBZT7KVE7318",
+        "price": 54.8,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310134221888095844667&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006N1%3Fitem%3D9SIBZT7KVE7318",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2409170P5H8N84.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -9093,7 +9238,7 @@ export default [
     "reviews": 61,
     "deals": {
       "amazon": {
-        "price": 39.99,
+        "price": 14.32,
         "url": "https://www.amazon.com/dp/B0D7VWYRYR?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9170,7 +9315,7 @@ export default [
     "pack": 1,
     "bench": 69,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "fanSize": 140
   },
   {
@@ -9258,6 +9403,16 @@ export default [
         "price": 84.95,
         "url": "https://www.amazon.com/dp/B0D5BC8DWL?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAZTUKRJ6268",
+        "price": 93,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833314909695477352687&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00360%3Fitem%3D9SIAZTUKRJ6268",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2407010JP33577.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -9289,7 +9444,7 @@ export default [
     "reviews": 40,
     "deals": {
       "amazon": {
-        "price": 19.99,
+        "price": 15.93,
         "url": "https://www.amazon.com/dp/B0FX4XBLLL?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9327,7 +9482,7 @@ export default [
     "reviews": 42,
     "deals": {
       "amazon": {
-        "price": 17.98,
+        "price": 7.99,
         "url": "https://www.amazon.com/dp/B0DV1R9L53?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9391,7 +9546,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316888800422156502225&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006N9%3Fitem%3D9SIAADYKHE0833",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2506070CF7LUEC.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -9513,7 +9668,7 @@ export default [
     "reviews": 33,
     "deals": {
       "amazon": {
-        "price": 44.9,
+        "price": 39.9,
         "url": "https://www.amazon.com/dp/B0B8DSWGCR?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9547,7 +9702,7 @@ export default [
     "reviews": 30,
     "deals": {
       "amazon": {
-        "price": 39.99,
+        "price": 24.99,
         "url": "https://www.amazon.com/dp/B0FB38VHX3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9584,7 +9739,7 @@ export default [
     "reviews": 30,
     "deals": {
       "amazon": {
-        "price": 43.99,
+        "price": 39.59,
         "url": "https://www.amazon.com/dp/B0DYNT8YHN?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9594,7 +9749,7 @@ export default [
         "saleprice": 47,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835728100605208901145&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fjonsbo-za-140b-case-fan-140mm-argb-led%2Fp%2F1YF-00EV-000J6%3Fitem%3D9SIAY3SKM11844",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AY3SS2509070980UMD0.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.92
       }
@@ -9702,7 +9857,7 @@ export default [
     "reviews": 26,
     "deals": {
       "amazon": {
-        "price": 142,
+        "price": 169.16,
         "url": "https://www.amazon.com/dp/B0F7HWYNCB?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9733,7 +9888,7 @@ export default [
     "reviews": 26,
     "deals": {
       "amazon": {
-        "price": 8.69,
+        "price": 6.95,
         "url": "https://www.amazon.com/dp/B0DF6Y68Z2?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9771,7 +9926,7 @@ export default [
     "reviews": 24,
     "deals": {
       "amazon": {
-        "price": 30.31,
+        "price": 29.99,
         "url": "https://www.amazon.com/dp/B0CW4X7J91?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9819,7 +9974,7 @@ export default [
     "reviews": 24,
     "deals": {
       "amazon": {
-        "price": 17.9,
+        "price": 14.32,
         "url": "https://www.amazon.com/dp/B0DJ7F1YP4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9855,7 +10010,7 @@ export default [
     "reviews": 22,
     "deals": {
       "amazon": {
-        "price": 19.99,
+        "price": 15.99,
         "url": "https://www.amazon.com/dp/B0F2LNH6JG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9892,7 +10047,7 @@ export default [
     "reviews": 20,
     "deals": {
       "amazon": {
-        "price": 12.54,
+        "price": 8.35,
         "url": "https://www.amazon.com/dp/B0DJ4H9YF1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10004,13 +10159,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458315799433285293578504",
+        "sku": "9SIA2W0KR89667",
         "price": 16.59,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315799433285293578504&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-00381%3Fitem%3D9SIA2W0KR89667",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A9H5S25122300JZHQAA.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.348Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -10120,7 +10275,7 @@ export default [
     "reviews": 12,
     "deals": {
       "amazon": {
-        "price": 9.99,
+        "price": 8.4,
         "url": "https://www.amazon.com/dp/B0FLQ198V9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10157,7 +10312,7 @@ export default [
     "reviews": 8,
     "deals": {
       "amazon": {
-        "price": 29.9,
+        "price": 22.6,
         "url": "https://www.amazon.com/dp/B0CW523QXB?tag=tiereduptech-20",
         "inStock": true
       },
@@ -10245,12 +10400,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAZTUKPY9340",
+        "sku": "9SIBZT7KVE7417",
         "price": 94.5,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838862867627342871868&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006P5%3Fitem%3D9SIAZTUKPY9340",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318035620786845377835&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006P5%3Fitem%3D9SIBZT7KVE7417",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2510290YRBG26C.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -10286,6 +10441,16 @@ export default [
         "price": 34.95,
         "url": "https://www.amazon.com/dp/B0BKGRVK5T?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBZT7KT41898",
+        "price": 39.1,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583429837556673302198&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006J1%3Fitem%3D9SIBZT7KT41898",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2211150M03D422.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -10320,12 +10485,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAZTUKPY9346",
-        "price": 55,
+        "sku": "9SIAADYKMX4304",
+        "price": 44.95,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317702470312456307540&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006P4%3Fitem%3D9SIAZTUKPY9346",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835046418375648595272&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006P4%3Fitem%3D9SIAADYKMX4304",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2510290YKH9560.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -10358,7 +10523,7 @@ export default [
     "reviews": 3,
     "deals": {
       "amazon": {
-        "price": 15.99,
+        "price": 19.99,
         "url": "https://www.amazon.com/dp/B0G58KVZM8?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10394,7 +10559,7 @@ export default [
     "reviews": 2,
     "deals": {
       "amazon": {
-        "price": 6.99,
+        "price": 15.99,
         "url": "https://www.amazon.com/dp/B0FVLFTPZG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10434,14 +10599,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583627969856179782121",
-        "price": 16.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583627969856179782121&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-cl-f038-pl12bu-a-case-fan%2Fp%2FN82E16835106325%3Fitem%3D9SIA8EFK657899",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-325-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.449Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIC73TKYD3394",
+        "price": 33.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313870875909253539758&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001G-000M5%3Fitem%3D9SIC73TKYD3394",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AH9D_1_20180716609519612.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.78
       }
     },
     "cfm": 40.6,
@@ -10475,14 +10640,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458313647145822228144570",
-        "price": 16.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313647145822228144570&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-cl-f038-pl12wt-a-case-fan%2Fp%2FN82E16835106324%3Fitem%3D9SIA8EF5UY0006",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-324-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.449Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIC1JGKS16240",
+        "price": 34.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833799610254400119893&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001G-000M5%3Fitem%3D9SIC1JGKS16240",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AH9D_1_20180716609519612.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.89
       }
     },
     "cfm": 40.6,
@@ -10514,6 +10679,16 @@ export default [
         "price": 13.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6459388&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6459388.p%3FskuId%3D6459388",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8EFK657978",
+        "price": 13.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318167192268187590657&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-cl-f015-pl20bl-a-case-fan%2Fp%2FN82E16835106224%3Fitem%3D9SIA8EFK657978",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-224-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.69
       }
     },
     "cfm": 129,
@@ -10545,6 +10720,16 @@ export default [
         "price": 24.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541179&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6541179.p%3FskuId%3D6541179",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8EFJT00444",
+        "price": 34.99,
+        "saleprice": 24.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835971798883053814035&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-ct120-argb-sync-pc-cooling-fan-case-fan%2Fp%2FN82E16835106714%3Fitem%3D9SIA8EFJT00444",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-714-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "cfm": 57.05,
@@ -10579,14 +10764,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317877494422458095540",
+        "sku": "N82E16835106733",
         "price": 119.99,
-        "saleprice": 117.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317877494422458095540&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-swafan-ex-14-rgb-white-case-fan%2Fp%2FN82E16835106733%3Fitem%3DN82E16835106733",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-733-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.795Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -10661,13 +10845,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445832968106304409706272",
+        "sku": "9SIA8EFJT00440",
         "price": 24.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832968106304409706272&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-ct120-pc-cooling-fan-white-case-fan%2Fp%2FN82E16835106711%3Fitem%3D9SIA8EFJT00440",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-711-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.449Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -10701,14 +10885,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316271043451403378300",
+        "sku": "9SIA8EFJT00444",
         "price": 34.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316271043451403378300&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-ct120-argb-sync-pc-cooling-fan-white-case-fan%2Fp%2FN82E16835106715%3Fitem%3D9SIA8EFJT00445",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-715-11.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.449Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "saleprice": 24.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835971798883053814035&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-ct120-argb-sync-pc-cooling-fan-case-fan%2Fp%2FN82E16835106714%3Fitem%3D9SIA8EFJT00444",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-714-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.89
       }
     },
     "cfm": 57.06,
@@ -10742,15 +10926,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458310820415184601124687",
-        "price": 169.99,
-        "saleprice": 109.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310820415184601124687&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-qx120-rgb-starter-kit-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181363%3Fitem%3DN82E16835181363",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-363-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIBGW7KZS8662",
+        "price": 149.87,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836889540696912392067&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-liquid-cooling-icue-link-277mm-amd-am5-am4-strx4-intel-1700-1200-115x-2066-2011-3-2011-white%2Fp%2FN82E16835181370%3Fitem%3D9SIBGW7KZS8662",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-370-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.5
       }
     },
     "cfm": 63.1,
@@ -10817,14 +11000,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317046436452915509622",
-        "price": 47.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317046436452915509622&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-rf-r12sf-b1-case-fan%2Fp%2F1YF-000Z-00107%3Fitem%3D9SIBHJAKVE2315",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVS23030606RM5650.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.462Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "N82E16835146136R",
+        "price": 19.99,
+        "saleprice": 13.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831475251037413601447&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-f120-rgb-core-black-single-pack-case-fan-120mm-rgb-led%2Fp%2FN82E16835146136R%3Fitem%3DN82E16835146136R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-136-02.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.58
       }
     },
     "cfm": 50.18,
@@ -10934,14 +11117,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445833335370715257980717",
-        "price": 82.17,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833335370715257980717&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-f120-rgb-white-single-pack-case-fan%2Fp%2F1YF-000Z-00102%3Fitem%3D9SIAD6HKJH8599",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1YF-000Z-00102-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.836Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIC3X1KSW2303",
+        "price": 37.88,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583967177520741547782&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00127%3Fitem%3D9SIC3X1KSW2303",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVS2304230GDH1TEE.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.58
       }
     },
     "cfm": 50.18,
@@ -11018,15 +11201,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316401099278757984960",
-        "price": 33.99,
-        "saleprice": 22.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316401099278757984960&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-f120-rgb-core-white-single-pack-case-fan%2Fp%2FN82E16835146137%3Fitem%3DN82E16835146137",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-137-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIC3X1KSW2303",
+        "price": 37.88,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583967177520741547782&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00127%3Fitem%3D9SIC3X1KSW2303",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVS2304230GDH1TEE.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.62
       },
       "newegg_openbox": {
         "sku": "445834652320200618705322",
@@ -11074,10 +11256,10 @@ export default [
       "newegg": {
         "sku": "N82E16835181409",
         "price": 34.99,
-        "saleprice": null,
+        "saleprice": 29.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834652354367108786856&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rx120-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181409%3Fitem%3DN82E16835181409",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-409-04.png",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.67
       }
@@ -11145,14 +11327,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445835834071920721049772",
+        "sku": "N82E16835181410",
         "price": 104.99,
-        "saleprice": 83.1,
+        "saleprice": 84.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835834071920721049772&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rx120-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181410%3Fitem%3DN82E16835181410",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-410-19.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -11188,14 +11369,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445833109183607510918815",
-        "price": 99.99,
+        "sku": "N82E16835181414",
+        "price": 104.99,
         "saleprice": 84.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833109183607510918815&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rx120-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181414%3Fitem%3DN82E16835181414",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-414-02.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -11390,6 +11570,16 @@ export default [
         "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593516&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6593516.p%3FskuId%3D6593516",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8EFK7N9108",
+        "price": 59.99,
+        "saleprice": 44.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313516264223216682233&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-cl-f181-pl12sw-a-case-fan%2Fp%2F13C-001H-00266%3Fitem%3D9SIA8EFK7N9108",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2404240CCGK671.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "cfm": 68,
@@ -11735,14 +11925,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445835821662525757640717",
+        "sku": "N82E16835181467",
         "price": 139.99,
-        "saleprice": 94.99,
+        "saleprice": 102.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835821662525757640717&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835181467%3Fitem%3DN82E16835181467",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-467-17.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -11778,13 +11967,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458315433276012399258213",
+        "sku": "9SIA2W0KT79848",
         "price": 44.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315433276012399258213&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835181464%3Fitem%3D9SIA2W0KT79848",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-464-02.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.348Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -11820,14 +12009,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458310049570878311882600",
+        "sku": "N82E16835181471",
         "price": 114.99,
-        "saleprice": 94.99,
+        "saleprice": 104.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310049570878311882600&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835181471%3Fitem%3DN82E16835181471",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-471-06.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -11905,13 +12093,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458310195116547518230526",
+        "sku": "9SIA8EFKE09190",
         "price": 19.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310195116547518230526&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835106773%3Fitem%3D9SIA8EFKE09190",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2502130EDYHS72.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.450Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12199,13 +12387,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458314552150519993732343",
+        "sku": "9SIA8EFKE09199",
         "price": 19.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314552150519993732343&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835106774%3Fitem%3D9SIA8EFKE09199",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2502130EDYS61B.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.450Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12516,13 +12704,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445832989085196249275227",
-        "price": 46.99,
+        "sku": "9SIAG1PKN15089",
+        "price": 34.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832989085196249275227&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00150%3Fitem%3D9SIAG1PKN15089",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2510311194NF57.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.985Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12558,13 +12746,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445833581464754739263138",
-        "price": 119.99,
+        "sku": "9SIAG1PKN92242",
+        "price": 99.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833581464754739263138&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00153%3Fitem%3D9SIAG1PKN92242",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD251110173GFJC4.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.985Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12600,13 +12788,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445832507787470708910851",
-        "price": 44.99,
+        "sku": "9SIAG1PKNA8597",
+        "price": 29.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832507787470708910851&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00154%3Fitem%3D9SIAG1PKNA8597",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2511120Z5CVU5B.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.985Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12642,13 +12830,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445836336073533735746822",
-        "price": 89.99,
+        "sku": "9SIAG1PKN46911",
+        "price": 74.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836336073533735746822&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00152%3Fitem%3D9SIAG1PKN46911",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2511051ESPZMC4.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.985Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12684,13 +12872,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458311120814200173511732",
-        "price": 46.99,
+        "sku": "9SIAG1PKN15088",
+        "price": 29.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311120814200173511732&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00149%3Fitem%3D9SIAG1PKN15088",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2510311194FX5C.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.985Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12726,13 +12914,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316795696584337765986",
-        "price": 84.99,
+        "sku": "9SIAG1PKNA8598",
+        "price": 69.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316795696584337765986&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00155%3Fitem%3D9SIAG1PKNA8598",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2511120Z5DCI01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.985Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12768,13 +12956,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317832452845884084545",
-        "price": 44.99,
+        "sku": "9SIAG1PKMX8800",
+        "price": 34.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317832452845884084545&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00148%3Fitem%3D9SIAG1PKMX8800",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2510300BGJS3CA.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.985Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12808,6 +12996,16 @@ export default [
         "price": 63.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665525&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665525.p%3FskuId%3D6665525",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8EFKN36944",
+        "price": 79.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314415397989248590125&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-cl-f211-pl12sw-a-case-fan-120mm-argb-led%2Fp%2FN82E16835106794%3Fitem%3D9SIA8EFKN36944",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-794-09.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.7
       }
     },
     "cfm": 59.34,
@@ -12836,7 +13034,7 @@ export default [
       "amazon": {
         "asin": "B0D49QX74S",
         "url": "https://www.amazon.com/dp/B0D49QX74S?tag=tiereduptech-20",
-        "price": 29.99,
+        "price": 42.99,
         "inStock": true
       }
     },
@@ -12858,7 +13056,7 @@ export default [
       "amazon": {
         "asin": "B0BKL1QYP3",
         "url": "https://www.amazon.com/dp/B0BKL1QYP3?tag=tiereduptech-20",
-        "price": 10.71,
+        "price": 11.99,
         "inStock": true
       }
     },
@@ -12880,7 +13078,7 @@ export default [
       "amazon": {
         "asin": "B0D49PNMBD",
         "url": "https://www.amazon.com/dp/B0D49PNMBD?tag=tiereduptech-20",
-        "price": 34.99,
+        "price": 30.65,
         "inStock": true
       }
     },
@@ -12903,7 +13101,7 @@ export default [
       "amazon": {
         "asin": "B0DKSXN58Z",
         "url": "https://www.amazon.com/dp/B0DKSXN58Z?tag=tiereduptech-20",
-        "price": 38.42,
+        "price": 31.99,
         "inStock": true
       }
     },
@@ -12949,7 +13147,7 @@ export default [
       "amazon": {
         "asin": "B0CPJ49NM5",
         "url": "https://www.amazon.com/dp/B0CPJ49NM5?tag=tiereduptech-20",
-        "price": 6.99,
+        "price": 5.59,
         "inStock": true
       }
     },
@@ -12994,8 +13192,18 @@ export default [
       "amazon": {
         "asin": "B0D1RG5ZT1",
         "url": "https://www.amazon.com/dp/B0D1RG5ZT1?tag=tiereduptech-20",
-        "price": 39.99,
+        "price": 24.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835146155",
+        "price": 59.99,
+        "saleprice": 24.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839203076102223061552&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-rf-u28hf-w1-case-fan-280mm-rgb-led%2Fp%2FN82E16835146155%3Fitem%3DN82E16835146155",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-155-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.67
       }
     },
     "addedAt": "2026-05-15T14:34:31.807Z",
@@ -13016,7 +13224,7 @@ export default [
       "amazon": {
         "asin": "B0CPFB1MQD",
         "url": "https://www.amazon.com/dp/B0CPFB1MQD?tag=tiereduptech-20",
-        "price": 7.9,
+        "price": 6.32,
         "inStock": true
       }
     },
@@ -13061,7 +13269,7 @@ export default [
       "amazon": {
         "asin": "B0BKJWMQLW",
         "url": "https://www.amazon.com/dp/B0BKJWMQLW?tag=tiereduptech-20",
-        "price": 11.87,
+        "price": 10.55,
         "inStock": true
       }
     },
@@ -13084,7 +13292,7 @@ export default [
       "amazon": {
         "asin": "B0F87Y8QVR",
         "url": "https://www.amazon.com/dp/B0F87Y8QVR?tag=tiereduptech-20",
-        "price": 25.83,
+        "price": 16.89,
         "inStock": true
       }
     },
@@ -13108,7 +13316,7 @@ export default [
       "amazon": {
         "asin": "B0FNN4MFRJ",
         "url": "https://www.amazon.com/dp/B0FNN4MFRJ?tag=tiereduptech-20",
-        "price": 99.99,
+        "price": 94.99,
         "inStock": true
       }
     },
@@ -13175,6 +13383,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FTHMPJV3?tag=tiereduptech-20",
         "price": 96,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAG1PKN92242",
+        "price": 99.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833581464754739263138&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00153%3Fitem%3D9SIAG1PKN92242",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD251110173GFJC4.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.808Z",
@@ -13198,6 +13416,16 @@ export default [
         "url": "https://www.amazon.com/dp/B09KMBZ7F7?tag=tiereduptech-20",
         "price": 23.9,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA68VG9K0490",
+        "price": 31.9,
+        "saleprice": 23.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314692605577830546277&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-120mm-pwm-high-speed-case-fan%2Fp%2F1YF-001D-000D7%3Fitem%3D9SIA68VG9K0490",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS211124IltuB.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.809Z",
@@ -13219,8 +13447,18 @@ export default [
       "amazon": {
         "asin": "B0D3H8HVMY",
         "url": "https://www.amazon.com/dp/B0D3H8HVMY?tag=tiereduptech-20",
-        "price": 99.99,
+        "price": 72.18,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA2W0KT79848",
+        "price": 44.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315433276012399258213&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835181464%3Fitem%3D9SIA2W0KT79848",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-464-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.67
       }
     },
     "addedAt": "2026-05-15T14:34:31.809Z",
@@ -13244,6 +13482,16 @@ export default [
         "url": "https://www.amazon.com/dp/B09Q82DWNX?tag=tiereduptech-20",
         "price": 69.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC5BHKST8394",
+        "price": 149,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315166955897225517711&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-co-9050092-ww-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181168%3Fitem%3D9SIC5BHKST8394",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-168-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.85
       }
     },
     "addedAt": "2026-05-15T14:34:31.809Z",
@@ -13310,6 +13558,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0D3HBJ6QH?tag=tiereduptech-20",
         "price": 44.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA2W0KT79848",
+        "price": 44.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315433276012399258213&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835181464%3Fitem%3D9SIA2W0KT79848",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-464-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.83
       }
     },
     "addedAt": "2026-05-15T14:34:31.809Z",
@@ -13331,7 +13589,7 @@ export default [
       "amazon": {
         "asin": "B0D1R6ZW8B",
         "url": "https://www.amazon.com/dp/B0D1R6ZW8B?tag=tiereduptech-20",
-        "price": 9.99,
+        "price": 7.99,
         "inStock": true
       }
     },

@@ -33,7 +33,7 @@ export default [
     "connectorType": "24pin+CPU+GPU",
     "deals": {
       "amazon": {
-        "price": 32,
+        "price": 34.65,
         "url": "https://www.amazon.com/dp/B08KD9T7SG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -73,7 +73,7 @@ export default [
     "rgb": true,
     "deals": {
       "amazon": {
-        "price": 120.12,
+        "price": 120.24,
         "url": "https://www.amazon.com/dp/B0DRLD3KV2?tag=tiereduptech-20",
         "inStock": true
       }
@@ -189,7 +189,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/AsiaHorse-Extension-Sleeved-Custom-Braided/dp/B0BVQVYVGW/ref=sr_1_22?crid=GSM9GP4QVL6I&dib=eyJ2IjoiMSJ9.aQmBy6_wwHBiAEI4TAnp082bV_ltyQJw8fjj0KmBAJOiYs3P20xmUy-fVID5SaEBl65MtjBzP8oWUu0OX7UkujWTuI-kvMBf8LX_tPS9fTxAhH66iPV8l3mBI8N9_fOUYJkzVMlWbj9oTq2I0z9j0kjY9_IK9Yo_HGSAIrNvwlNqUqVUhazN4PF76olSTkEwH2g2JpRX-XkXr_rZYUIHi-Nv8Un4Ppa8r15zI33KDDY.OoHmaHm6yMrbFyItUyxHmllC-Ss_Hh047vg1P19iJdU&dib_tag=se&keywords=PCIe+extension+cable&qid=1777131261&sprefix=PCIe%2Bextension%2Bcable%2Caps%2C141&sr=8-22&xpid=Iru0BnAWEJWvn&tag=tiereduptech-20",
-        "price": 19.98,
+        "price": 21.98,
         "inStock": true
       }
     },
@@ -338,7 +338,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Asiahorse-Extension-1x24-PIN-2x8-PORT-Black-Mix/dp/B08KDHGLT6/ref=sr_1_24?crid=XO9QGYMQCZGQ&dib=eyJ2IjoiMSJ9.j8Bym_2wym3qVxBgXMaRxC-yasaw-3eBUTr0cH0stujgomgoVE-T5-14O2Q4F67T3qQ8KX1WDD1WD5X179OFcg6eKhc214013k7QFKOQGYDuAc2BdETXx10LajN6YxBm9hGRUcgGm5jkMBf-xIuo_hdTXqPjglspU-fDegbH7y8cDlpd4zehGc7xrb0D_azwF7sIGf4DN8FlHYRomzcvOYR1-uvW0-Q7gscu6kPK4R0.t6_3ziX2tQbNg4Dr37SJhfgSLnIpHgTXYgURLcv0eDw&dib_tag=se&keywords=CableMod+extension&qid=1777131268&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=CableMod%2Bextension%2Caps%2C266&sr=8-24&xpid=8S58R4a-w5vOn&tag=tiereduptech-20",
-        "price": 32.99,
+        "price": 34.99,
         "inStock": true
       }
     },
@@ -465,7 +465,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Formulamod-Extension-Sleeved-Extensions-Management/dp/B083WFYPX3/ref=sr_1_35?crid=XO9QGYMQCZGQ&dib=eyJ2IjoiMSJ9.sDR2SgjMv3gkNhT9S7n-bpYDdHXdi5oSYuLp8UQep6HAWmzH7H52XbcxtiWSNxghfRyvo96ly0BlIuJQcqpRqq_WIaD4sDXXe6y-jU31jNMMosyBqZHWQIF1YaSozlL5bRaGSP8eX1JF8HkSBqe4FZKZWmPzJiGozAsxp8b35wceLRr6EMjNU0IdeXmNkfWvJuIXERaCrzpy6LQ8bSH7ZDz7r9A07HWLGpZvlvRK2eU.Hw7nl6_NKbLHWjD-O9F_dmJ8yQSyXUr5tc2q9ChBYwY&dib_tag=se&keywords=CableMod+extension&qid=1777131272&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=CableMod%2Bextension%2Caps%2C266&sr=8-35&xpid=8S58R4a-w5vOn&tag=tiereduptech-20",
-        "price": 25.99,
+        "price": 22.59,
         "inStock": true
       }
     },

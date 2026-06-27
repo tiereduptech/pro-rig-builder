@@ -17,7 +17,7 @@ export default [
     "buttons": 5,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 119.99,
         "url": "https://www.amazon.com/dp/B0B6XZLNHQ?tag=tiereduptech-20",
         "inStock": true,
         "bestbuy": {
@@ -54,7 +54,7 @@ export default [
     "value": 30,
     "bench": 92,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 96004,
@@ -85,7 +85,7 @@ export default [
     "value": 0,
     "bench": 88,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 96006,
@@ -116,7 +116,7 @@ export default [
     "value": 12,
     "bench": 85,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 96007,
@@ -147,7 +147,7 @@ export default [
     "value": 7,
     "bench": 81,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 96008,
@@ -173,7 +173,7 @@ export default [
     "value": 3,
     "bench": 53,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 96009,
@@ -191,7 +191,7 @@ export default [
     "buttons": 11,
     "deals": {
       "amazon": {
-        "price": 159,
+        "price": 129.99,
         "url": "https://www.amazon.com/dp/B0DG837JYP?tag=tiereduptech-20",
         "inStock": true,
         "bestbuy": {
@@ -228,7 +228,7 @@ export default [
     "mouseType": "USB",
     "bench": 100,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 96011,
@@ -274,7 +274,7 @@ export default [
     "sensor": "PAW3395",
     "deals": {
       "amazon": {
-        "price": 49.99,
+        "price": 39.99,
         "url": "https://www.amazon.com/dp/B0CH9XHFW8?tag=tiereduptech-20",
         "inStock": true
       }
@@ -309,7 +309,7 @@ export default [
     "mouseType": "Wireless",
     "bench": 100,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 96014,
@@ -335,7 +335,7 @@ export default [
     "mouseType": "Wireless",
     "bench": 90,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 99972,
@@ -349,7 +349,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-G502-Performance-Gaming-Mouse/dp/B07GBZ4Q68/ref=sr_1_21?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.X2Y1WnG2knLziipd2Rafcy4_nCgBD8okJDx0A85ySJoSTZuuMAWTbk7bHe4me1UrR4H-ZkAUdZ97-NieAiU-EIWy9aMd4iL0gE31i7VonSEj1A93y8sEy1OJEn6nt9KvCcm-CKJep1HvMVrw5_ESRiPPl8-W1f8386G3iMmaZtNDE2TaaA7BNbp-e3sLw270-OyD7NHz-caeU9WrNrrjYkb0DKy93OXokJf890rQLh8.rQZqb-WLQTJEtEtgxPH_hZpNYQZ30EDlLQ4lIgu1FtQ&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130429&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-21&xpid=8t0njMCORdC1w&tag=tiereduptech-20",
-        "price": 32.99,
+        "price": 37.99,
         "inStock": true
       }
     },
@@ -371,7 +371,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-LIGHTSPEED-Wireless-Gaming-Mouse/dp/B07CMS5Q6N/ref=sr_1_15?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.qzSxRfgEb8GXM0VPkAEOEViyDp_oN__bDzhVWqVvrzRDyJTwxJeKkk6B6DPdl0cBxwXMvJOzGF9p5GdCSSPQLOx5AE_u8yZGPVnCrmKMDQXjVtyyal_wiMH0hURuFGkOek52LJY9wL-t59j2GXGTRaJQdScgJ-VlXflBEo5Ry8EBAhUpA2mMYw3ovQLXcscFNhazFnRD11zgv06IXjmL3AJquALR_RzbLpR0sISjjIw.utxJFYZ5KmvGiGBG-ZSNePYh57DW5nxvzHjomQLUKMA&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130427&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-15&tag=tiereduptech-20",
-        "price": 37.49,
+        "price": 41.32,
         "inStock": true
       },
       "bestbuy": {
@@ -420,7 +420,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-LIGHTSYNC-Wired-Gaming-Mouse/dp/B07YN82X3B/ref=sr_1_39?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.6_hymEZnb5rt33n4BuhbtzFEtKF51viWFQoBog3Bti7XGuBjgUhWmMq20pQYeo4M5bwG_8sqJEW8ioR0ozbSJs8sY36jTN9NsA0YDdpJ1Di9MuIfRV3U0v04uqq6L90h-Am5UTOUAAGY_gB9uNlju6At6MUS43G_IYsT6xn90245e0sgFhFIp_0HmR9XrCq42ApzibxGXagGa5WPe_xk1bVsN6yXjFcAfuvj9K6SvzM.L-6M5Lp4f2JIUkH31LkVgotTSQPQ6RGP_DuX7W0UZQg&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130430&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-39&xpid=8t0njMCORdC1w&tag=tiereduptech-20",
-        "price": 23.48,
+        "price": 21.99,
         "inStock": true
       },
       "bestbuy": {
@@ -447,7 +447,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-Lightspeed-PowerPlay-Compatible-Lightsync/dp/B07L4BM851/ref=sr_1_20_mod_primary_new?crid=IV29V2MB51EP&dib=eyJ2IjoiMSJ9.C8nOIcZFACVH26Sr4pdsY5LnNovz1_PHMC9qMvK1Bqb_uxdeHTDK2UC1v3DNcuqEspFw1byZz-wYM61vEzRXZUibvDn5qND0SDKO7Wd5W1OcqUt_6DEbd-zrl106mpt9MBMg77-SoGwm9gNKmobx2EUFK9aNoxukxWeBhRhDg8QP95VuwWB5BRHBBNIbz1Ar4T6dCe2UZMO8RYlOfE62C9uvvUCxufpk899QejgKsMQ.2TgkbcjSGKKPl3aKq4d8MM9SOh8yslsSWxAJTnAveA8&dib_tag=se&keywords=lightweight+gaming+mouse&qid=1777130429&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=lightweight%2Bgaming%2Bmouse%2Caps%2C177&sr=8-20&xpid=mwUOBLs-tm-BS&tag=tiereduptech-20",
-        "price": 80.74,
+        "price": 80.95,
         "inStock": true
       },
       "newegg": {
@@ -482,7 +482,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-SUPERLIGHT-Ultra-Lightweight-Programmable-Compatible/dp/B087LXCTFJ/ref=sr_1_2?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.UmsocjleeheWsQ4hrxqG662ywKjHvwfHFEECvF3lyCOuSeDbXR9V0azQarIlD49N47gCs5u2fIABUcvifBz6rutHUxdeBGeQAbq8YAvMzSa6LIR6_zGzt66DhMdVM0LzolQtU0kVC6W9WVl3odv07emU6pTSUdCaOZh5tJ6rv-5YkBklk1U_HjySywxttToCMtcFSA1Va43VRKAEXrMiMvYzCzozApPenzcOOiosgf8.rowg1Xka1E1u3lgVfJ-gRxQeCAqQdnw5fgi4B58kFNw&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130428&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-2&tag=tiereduptech-20",
-        "price": 99.99,
+        "price": 114,
         "inStock": true
       }
     },
@@ -504,7 +504,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Redragon-M612-Predator-Programmable-Software/dp/B08SJ5Z8JL/ref=sr_1_27?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.X2Y1WnG2knLziipd2Rafcy4_nCgBD8okJDx0A85ySJoSTZuuMAWTbk7bHe4me1UrR4H-ZkAUdZ97-NieAiU-EIWy9aMd4iL0gE31i7VonSEj1A93y8sEy1OJEn6nt9KvCcm-CKJep1HvMVrw5_ESRiPPl8-W1f8386G3iMmaZtNDE2TaaA7BNbp-e3sLw270-OyD7NHz-caeU9WrNrrjYkb0DKy93OXokJf890rQLh8.rQZqb-WLQTJEtEtgxPH_hZpNYQZ30EDlLQ4lIgu1FtQ&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130429&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-27&xpid=8t0njMCORdC1w&tag=tiereduptech-20",
-        "price": 16.99,
+        "price": 19.99,
         "inStock": true
       }
     },
@@ -597,7 +597,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-M720-Multi-Device-Programmable-Compatible/dp/B087Z6LSHW/ref=sr_1_41?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.kH4hRlqItMsY8tinVjKoCRsegpm45gct3uvJEuVz7D5cwAM_eBFS02iXxFhbVK1MtsJwGsQG5CNKhE_Vu6rJEyrj3PglT5NTYJT7V3luAkua0pZoNI4tw2-JXxLle26pvyMS-NyfpapI2Fb0DwZfTBb86802uqLAUXQHX6REcmvpxJ6NfwbqBiXcGryVdSEdTYvm2G8MSXb3jLFqNmgsQAAAl_4zrgDkGa1Q9Sb9lnw.Rr36DS6-DSjiftWjvd-5t-g6zYjHrcTRZjhg3fR-Q2A&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130432&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-41&xpid=R0jtZpMReOJWB&tag=tiereduptech-20",
-        "price": 39.99,
+        "price": 44.99,
         "inStock": true
       }
     },
@@ -685,7 +685,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-MX-Vertical-Mini-White/dp/B098JK6G5N/ref=sr_1_21?crid=AI171H1RXE1E&dib=eyJ2IjoiMSJ9.2StnkTC2A_vAmVyIBNH9w1c9bje9FOAfopm4Ki_10DpDM5VyqWhx1QePBo8hfldu00Z66WJ3rVyP72QxHOpLInj2IUXHtiPR71h1LfNdsXc6RkUos7uTgVORqr3H80N3gbX2IZhdZkNuteaiB-gZAa_Acbf-27vELuFrJAYuJ1s_DdbZxonyZNN-kU_fLeMuu4RmS22XLu06Q-z996-N_zPH3fjArLxKMMOqf5AnOMI.q5djaVxzXNUPQSC-7jD9zA9aExeYT7vEn7QFE8nPqRc&dib_tag=se&keywords=Logitech+MX+Master&qid=1777130442&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BMX%2BMaster%2Caps%2C109&sr=8-21&xpid=nNAcQmdnGDW_m&tag=tiereduptech-20",
-        "price": 66.81,
+        "price": 61,
         "inStock": true
       }
     },
@@ -812,7 +812,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Redragon-M602-Ergonomic-High-Precision-Programmable/dp/B011HMDZ0Q/ref=sr_1_43?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.6_hymEZnb5rt33n4BuhbtzFEtKF51viWFQoBog3Bti7XGuBjgUhWmMq20pQYeo4M5bwG_8sqJEW8ioR0ozbSJs8sY36jTN9NsA0YDdpJ1Di9MuIfRV3U0v04uqq6L90h-Am5UTOUAAGY_gB9uNlju6At6MUS43G_IYsT6xn90245e0sgFhFIp_0HmR9XrCq42ApzibxGXagGa5WPe_xk1bVsN6yXjFcAfuvj9K6SvzM.L-6M5Lp4f2JIUkH31LkVgotTSQPQ6RGP_DuX7W0UZQg&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130430&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-43&xpid=8t0njMCORdC1w&tag=tiereduptech-20",
-        "price": 19.99,
+        "price": 16.99,
         "inStock": true
       }
     },
@@ -877,7 +877,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Razer-Orochi-Mobile-Wireless-Gaming/dp/B0916N2LPZ/ref=sr_1_21?crid=IV29V2MB51EP&dib=eyJ2IjoiMSJ9.C8nOIcZFACVH26Sr4pdsY5LnNovz1_PHMC9qMvK1Bqb_uxdeHTDK2UC1v3DNcuqEspFw1byZz-wYM61vEzRXZUibvDn5qND0SDKO7Wd5W1OcqUt_6DEbd-zrl106mpt9MBMg77-SoGwm9gNKmobx2EUFK9aNoxukxWeBhRhDg8QP95VuwWB5BRHBBNIbz1Ar4T6dCe2UZMO8RYlOfE62C9uvvUCxufpk899QejgKsMQ.2TgkbcjSGKKPl3aKq4d8MM9SOh8yslsSWxAJTnAveA8&dib_tag=se&keywords=lightweight+gaming+mouse&qid=1777130429&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=lightweight%2Bgaming%2Bmouse%2Caps%2C177&sr=8-21&xpid=mwUOBLs-tm-BS&tag=tiereduptech-20",
-        "price": 34.99,
+        "price": 39.99,
         "inStock": true
       },
       "bestbuy": {
@@ -960,7 +960,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-Superlight-Wireless-Pro-Grade-Programmable/dp/B09NBWL8J5/ref=sr_1_5?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.UmsocjleeheWsQ4hrxqG662ywKjHvwfHFEECvF3lyCOuSeDbXR9V0azQarIlD49N47gCs5u2fIABUcvifBz6rutHUxdeBGeQAbq8YAvMzSa6LIR6_zGzt66DhMdVM0LzolQtU0kVC6W9WVl3odv07emU6pTSUdCaOZh5tJ6rv-5YkBklk1U_HjySywxttToCMtcFSA1Va43VRKAEXrMiMvYzCzozApPenzcOOiosgf8.rowg1Xka1E1u3lgVfJ-gRxQeCAqQdnw5fgi4B58kFNw&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130428&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-5&tag=tiereduptech-20",
-        "price": 137.99,
+        "price": 137.96,
         "inStock": true
       }
     },
@@ -982,7 +982,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-Scrolling-Any-Surface-Programmable-Bluetooth/dp/B0BPY4ZQXG/ref=sr_1_16?crid=AI171H1RXE1E&dib=eyJ2IjoiMSJ9.fJpmc6iSsthd__AZttTmLtwq0-q1xtKL-sXtIyyfRl2SscfbMnd1HcYuIE5grtAIytoq7zukXlTgu-OWssizRr6ECNR8-JfUUnUlx6WB5UY_mSkNifbzOOHsbEZO89CylqGUR2Aidx1KZ6c29hgCs-oqVlFaTLtIVGjBupYuzoO_EW9_FGq4kyPiJEdcow7KVacmv-ZBo3h8gyS_zHS1J3-2JZq9TR-jv24SrHND3T8.Xz-yovMtaME6O_FwvAh1x7SYdBIlXsh37WfXVct1iCI&dib_tag=se&keywords=Logitech+MX+Master&qid=1777130436&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BMX%2BMaster%2Caps%2C109&sr=8-16&tag=tiereduptech-20",
-        "price": 89.99,
+        "price": 79.99,
         "inStock": true
       }
     },
@@ -1048,7 +1048,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-Lightspeed-Left-Handed-Customizable-Switchable/dp/B0CJ4TPLRM/ref=sr_1_3?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.UmsocjleeheWsQ4hrxqG662ywKjHvwfHFEECvF3lyCOuSeDbXR9V0azQarIlD49N47gCs5u2fIABUcvifBz6rutHUxdeBGeQAbq8YAvMzSa6LIR6_zGzt66DhMdVM0LzolQtU0kVC6W9WVl3odv07emU6pTSUdCaOZh5tJ6rv-5YkBklk1U_HjySywxttToCMtcFSA1Va43VRKAEXrMiMvYzCzozApPenzcOOiosgf8.rowg1Xka1E1u3lgVfJ-gRxQeCAqQdnw5fgi4B58kFNw&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130428&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-3&tag=tiereduptech-20",
-        "price": 115.27,
+        "price": 127.97,
         "inStock": true
       }
     },
@@ -1078,7 +1078,9 @@ export default [
     "weight": 82,
     "mouseType": "Wireless",
     "dpi": 30000,
-    "bench": 81
+    "bench": 81,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 100004,
@@ -2115,7 +2117,7 @@ export default [
       "amazon": {
         "asin": "B0BSKX9V7C",
         "url": "https://www.amazon.com/dp/B0BSKX9V7C?tag=tiereduptech-20",
-        "price": 84.99,
+        "price": 99.99,
         "inStock": true
       }
     },
@@ -2135,7 +2137,7 @@ export default [
       "amazon": {
         "asin": "B0F6NGCDFN",
         "url": "https://www.amazon.com/dp/B0F6NGCDFN?tag=tiereduptech-20",
-        "price": 98.07,
+        "price": 79.99,
         "inStock": true
       }
     },
@@ -2155,7 +2157,7 @@ export default [
       "amazon": {
         "asin": "B0F6NJYMWF",
         "url": "https://www.amazon.com/dp/B0F6NJYMWF?tag=tiereduptech-20",
-        "price": 110.89,
+        "price": 79.99,
         "inStock": true
       }
     },
@@ -2195,7 +2197,7 @@ export default [
       "amazon": {
         "asin": "B0FLH3LP3W",
         "url": "https://www.amazon.com/dp/B0FLH3LP3W?tag=tiereduptech-20",
-        "price": 39.99,
+        "price": 59.99,
         "inStock": true
       }
     },
@@ -2275,7 +2277,7 @@ export default [
       "amazon": {
         "asin": "B0FKJ2J2R8",
         "url": "https://www.amazon.com/dp/B0FKJ2J2R8?tag=tiereduptech-20",
-        "price": 79.99,
+        "price": 69.99,
         "inStock": true
       }
     },
@@ -2295,7 +2297,7 @@ export default [
       "amazon": {
         "asin": "B09KXBJS7N",
         "url": "https://www.amazon.com/dp/B09KXBJS7N?tag=tiereduptech-20",
-        "price": 29.99,
+        "price": 32,
         "inStock": true
       }
     },
@@ -2315,7 +2317,7 @@ export default [
       "amazon": {
         "asin": "B0CTN26P3Z",
         "url": "https://www.amazon.com/dp/B0CTN26P3Z?tag=tiereduptech-20",
-        "price": 57.99,
+        "price": 44.39,
         "inStock": true
       }
     },
@@ -2355,7 +2357,7 @@ export default [
       "amazon": {
         "asin": "B0BSKX9V7C",
         "url": "https://www.amazon.com/dp/B0BSKX9V7C?tag=tiereduptech-20",
-        "price": 84.99,
+        "price": 99.99,
         "inStock": true
       }
     },
@@ -2375,7 +2377,7 @@ export default [
       "amazon": {
         "asin": "B0F6NGCDFN",
         "url": "https://www.amazon.com/dp/B0F6NGCDFN?tag=tiereduptech-20",
-        "price": 98.07,
+        "price": 79.99,
         "inStock": true
       }
     },
@@ -2395,7 +2397,7 @@ export default [
       "amazon": {
         "asin": "B0F6NJYMWF",
         "url": "https://www.amazon.com/dp/B0F6NJYMWF?tag=tiereduptech-20",
-        "price": 110.87,
+        "price": 79.99,
         "inStock": true
       }
     },
@@ -2435,7 +2437,7 @@ export default [
       "amazon": {
         "asin": "B0FLH3LP3W",
         "url": "https://www.amazon.com/dp/B0FLH3LP3W?tag=tiereduptech-20",
-        "price": 39.99,
+        "price": 59.99,
         "inStock": true
       }
     },
@@ -2515,7 +2517,7 @@ export default [
       "amazon": {
         "asin": "B0FKJ2J2R8",
         "url": "https://www.amazon.com/dp/B0FKJ2J2R8?tag=tiereduptech-20",
-        "price": 79.99,
+        "price": 69.99,
         "inStock": true
       }
     },
@@ -2535,7 +2537,7 @@ export default [
       "amazon": {
         "asin": "B09KXBJS7N",
         "url": "https://www.amazon.com/dp/B09KXBJS7N?tag=tiereduptech-20",
-        "price": 29.99,
+        "price": 32,
         "inStock": true
       }
     },
@@ -2555,7 +2557,7 @@ export default [
       "amazon": {
         "asin": "B0CTN26P3Z",
         "url": "https://www.amazon.com/dp/B0CTN26P3Z?tag=tiereduptech-20",
-        "price": 57.99,
+        "price": 44.39,
         "inStock": true
       }
     },
@@ -2595,7 +2597,7 @@ export default [
       "amazon": {
         "asin": "B0CY1PYYNS",
         "url": "https://www.amazon.com/dp/B0CY1PYYNS?tag=tiereduptech-20",
-        "price": 31.99,
+        "price": 36.99,
         "inStock": true
       }
     },
@@ -2635,7 +2637,7 @@ export default [
       "amazon": {
         "asin": "B086PJKVVT",
         "url": "https://www.amazon.com/dp/B086PJKVVT?tag=tiereduptech-20",
-        "price": 34.99,
+        "price": 44.5,
         "inStock": true
       }
     },
@@ -2675,7 +2677,7 @@ export default [
       "amazon": {
         "asin": "B0B66RHD7B",
         "url": "https://www.amazon.com/dp/B0B66RHD7B?tag=tiereduptech-20",
-        "price": 32.99,
+        "price": 29.99,
         "inStock": true
       }
     },
@@ -2695,7 +2697,7 @@ export default [
       "amazon": {
         "asin": "B07P6DMQK3",
         "url": "https://www.amazon.com/dp/B07P6DMQK3?tag=tiereduptech-20",
-        "price": 94.9,
+        "price": 69.99,
         "inStock": true
       }
     },
@@ -2955,7 +2957,7 @@ export default [
       "amazon": {
         "asin": "B0BSKX9V7C",
         "url": "https://www.amazon.com/dp/B0BSKX9V7C?tag=tiereduptech-20",
-        "price": 84.99,
+        "price": 99.99,
         "inStock": true
       }
     },
@@ -3035,7 +3037,7 @@ export default [
       "amazon": {
         "asin": "B09Z66S64T",
         "url": "https://www.amazon.com/dp/B09Z66S64T?tag=tiereduptech-20",
-        "price": 74.66,
+        "price": 65.02,
         "inStock": true
       }
     },
@@ -3115,7 +3117,7 @@ export default [
       "amazon": {
         "asin": "B0F6NGCDFN",
         "url": "https://www.amazon.com/dp/B0F6NGCDFN?tag=tiereduptech-20",
-        "price": 98.07,
+        "price": 79.99,
         "inStock": true
       }
     },
@@ -3135,7 +3137,7 @@ export default [
       "amazon": {
         "asin": "B0F6NJYMWF",
         "url": "https://www.amazon.com/dp/B0F6NJYMWF?tag=tiereduptech-20",
-        "price": 110.89,
+        "price": 79.99,
         "inStock": true
       }
     },
@@ -3155,7 +3157,7 @@ export default [
       "amazon": {
         "asin": "B09726KT4R",
         "url": "https://www.amazon.com/dp/B09726KT4R?tag=tiereduptech-20",
-        "price": 72.56,
+        "price": 149.99,
         "inStock": true
       }
     },
@@ -3175,7 +3177,7 @@ export default [
       "amazon": {
         "asin": "B0FLH3LP3W",
         "url": "https://www.amazon.com/dp/B0FLH3LP3W?tag=tiereduptech-20",
-        "price": 39.99,
+        "price": 59.99,
         "inStock": true
       }
     },
@@ -3255,7 +3257,7 @@ export default [
       "amazon": {
         "asin": "B0DVD5RTZ5",
         "url": "https://www.amazon.com/dp/B0DVD5RTZ5?tag=tiereduptech-20",
-        "price": 119.99,
+        "price": 99.99,
         "inStock": true
       }
     },
@@ -3315,7 +3317,7 @@ export default [
       "amazon": {
         "asin": "B0BBPFCXSZ",
         "url": "https://www.amazon.com/dp/B0BBPFCXSZ?tag=tiereduptech-20",
-        "price": 44.99,
+        "price": 41.99,
         "inStock": true
       }
     },
@@ -3335,7 +3337,7 @@ export default [
       "amazon": {
         "asin": "B0FKJ2J2R8",
         "url": "https://www.amazon.com/dp/B0FKJ2J2R8?tag=tiereduptech-20",
-        "price": 79.99,
+        "price": 69.99,
         "inStock": true
       }
     },
@@ -3355,7 +3357,7 @@ export default [
       "amazon": {
         "asin": "B0916MW7CG",
         "url": "https://www.amazon.com/dp/B0916MW7CG?tag=tiereduptech-20",
-        "price": 32.99,
+        "price": 34.99,
         "inStock": true
       }
     },
@@ -3395,7 +3397,7 @@ export default [
       "amazon": {
         "asin": "B0CJ5W7G41",
         "url": "https://www.amazon.com/dp/B0CJ5W7G41?tag=tiereduptech-20",
-        "price": 99.99,
+        "price": 50.99,
         "inStock": true
       }
     },
@@ -3495,7 +3497,7 @@ export default [
       "amazon": {
         "asin": "B0CTN26P3Z",
         "url": "https://www.amazon.com/dp/B0CTN26P3Z?tag=tiereduptech-20",
-        "price": 57.99,
+        "price": 44.39,
         "inStock": true
       }
     },
@@ -3535,7 +3537,7 @@ export default [
       "amazon": {
         "asin": "B0FD4SXHZW",
         "url": "https://www.amazon.com/dp/B0FD4SXHZW?tag=tiereduptech-20",
-        "price": 16.35,
+        "price": 22.64,
         "inStock": true
       }
     },
@@ -3575,7 +3577,7 @@ export default [
       "amazon": {
         "asin": "B00EO2ECUY",
         "url": "https://www.amazon.com/dp/B00EO2ECUY?tag=tiereduptech-20",
-        "price": 139.99,
+        "price": 146.99,
         "inStock": true
       }
     },
@@ -3595,7 +3597,7 @@ export default [
       "amazon": {
         "asin": "B086PDW7BB",
         "url": "https://www.amazon.com/dp/B086PDW7BB?tag=tiereduptech-20",
-        "price": 34.99,
+        "price": 43.26,
         "inStock": true
       }
     },

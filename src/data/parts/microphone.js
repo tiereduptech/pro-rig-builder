@@ -57,7 +57,7 @@ export default [
     "sampleRate": 96,
     "bench": 83,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 97502,
@@ -81,7 +81,7 @@ export default [
     "sampleRate": 48,
     "bench": 75,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 97503,
@@ -107,7 +107,7 @@ export default [
     "sampleRate": 48,
     "bench": 74,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 100065,
@@ -121,7 +121,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Blue-Microphones-Yeti-Microphone-Blackout/dp/B00N1YPXW2/ref=sr_1_3?crid=UN6YR78FTY9E&dib=eyJ2IjoiMSJ9.5Nodv8VroGXGpVLPiMFvWQW0BgCAurqjcf6dTd0IB6u09PpyDDLSa1JovEevFgXHoe59m997sj3vjhiXhL0WWxp3nw4O5NDX7Wqv7McYCBwpVxvMoh62bsf5xt2LSpomdwkcz4FWT9k2a8l1t6Vmya4F9efAbkxnbaXT2cLw77Z-r0FmoZFzBeoMukVqPlzHn1mQL3sKZOMz_hA4USK8kMWL-MXUGg1J6iCf_dL3cKacK8fEPHdhc1VC71NkOPI0NL7BGRwWsrLzkm62Ihc2OcjHTFz0er4ghzQOyZi5tJw.qLybboGdKcgOfqqKLQW4Dav2m6FznJiImkjYYBJAymQ&dib_tag=se&keywords=Blue+Yeti&qid=1777130680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Blue%2BYeti%2Caps%2C202&sr=8-3&tag=tiereduptech-20",
-        "price": 95,
+        "price": 105.71,
         "inStock": true
       }
     },
@@ -193,7 +193,7 @@ export default [
     "sampleRate": 0,
     "bench": 98,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 100069,
@@ -312,7 +312,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/HyperX-SoloCast-Microphone-Tap-Mute/dp/B08KFL3SFV/ref=sr_1_47?crid=UN6YR78FTY9E&dib=eyJ2IjoiMSJ9.5Nodv8VroGXGpVLPiMFvWQW0BgCAurqjcf6dTd0IB6u09PpyDDLSa1JovEevFgXHoe59m997sj3vjhiXhL0WWxp3nw4O5NDX7Wqv7McYCBwpVxvMoh62bsf5xt2LSpomdwkcz4FWT9k2a8l1t6Vmya4F9efAbkxnbaXT2cLw77Z-r0FmoZFzBeoMukVqPlzHn1mQL3sKZOMz_hA4USK8kMWL-MXUGg1J6iCf_dL3cKacK8fEPHdhc1VC71NkOPI0NL7BGRwWsrLzkm62Ihc2OcjHTFz0er4ghzQOyZi5tJw.qLybboGdKcgOfqqKLQW4Dav2m6FznJiImkjYYBJAymQ&dib_tag=se&keywords=Blue+Yeti&qid=1777130680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Blue%2BYeti%2Caps%2C202&sr=8-47&tag=tiereduptech-20",
-        "price": 49.99,
+        "price": 51.68,
         "inStock": true
       }
     },
@@ -333,7 +333,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Shure-MV7X-Podcast-Microphone-Voice-Isolating/dp/B09BZZCGC8/ref=sr_1_48?crid=YDFC9E45IITB&dib=eyJ2IjoiMSJ9.0CZz4xK-GhEhz9nK1NuSDsnBBAE_bEvtFNfMuuDLWfPjC06FPZXCt8ZcaGVyBCZ5RZbXws10-HK-7l1KMWXFH7prEYAmQMjeRZhQQ-mJqeM7W1aofWrFZoQ5K_UZ5Zq39e7ltIoAGjCTflp4wmh8prl3MTg19tk4Y-jlkGyLUodn0E2jx6QqFOQoDgFcRP6I8aN-rw0Y73e7xPvHKFYvfyI-Y8Un9HNLke3wYgEIzNQ.RhHqq1BwfUkmQfjBOgf7zy-e6P6Acb8J8yd77YMPtkM&dib_tag=se&keywords=Razer+Seiren&qid=1777130683&sprefix=Razer%2BSeiren%2Caps%2C146&sr=8-48&xpid=sQD1ZTDddcDAf&tag=tiereduptech-20",
-        "price": 179,
+        "price": 199,
         "inStock": true
       }
     },
@@ -858,7 +858,7 @@ export default [
       "amazon": {
         "asin": "B078K8S12H",
         "url": "https://www.amazon.com/dp/B078K8S12H?tag=tiereduptech-20",
-        "price": 62.69,
+        "price": 72.99,
         "inStock": true
       }
     },
@@ -938,7 +938,7 @@ export default [
       "amazon": {
         "asin": "B078K8S12H",
         "url": "https://www.amazon.com/dp/B078K8S12H?tag=tiereduptech-20",
-        "price": 62.69,
+        "price": 72.99,
         "inStock": true
       }
     },
@@ -1038,7 +1038,7 @@ export default [
       "amazon": {
         "asin": "B0CTJ8BSWN",
         "url": "https://www.amazon.com/dp/B0CTJ8BSWN?tag=tiereduptech-20",
-        "price": 287,
+        "price": 319,
         "inStock": true
       }
     },
@@ -1138,7 +1138,7 @@ export default [
       "amazon": {
         "asin": "B0FLKJ7FH7",
         "url": "https://www.amazon.com/dp/B0FLKJ7FH7?tag=tiereduptech-20",
-        "price": 58.41,
+        "price": 49,
         "inStock": true
       }
     },
@@ -1278,7 +1278,7 @@ export default [
       "amazon": {
         "asin": "B07QLNYBG9",
         "url": "https://www.amazon.com/dp/B07QLNYBG9?tag=tiereduptech-20",
-        "price": 99.53,
+        "price": 89.99,
         "inStock": true
       }
     },
@@ -1338,7 +1338,7 @@ export default [
       "amazon": {
         "asin": "B07SYKM6NJ",
         "url": "https://www.amazon.com/dp/B07SYKM6NJ?tag=tiereduptech-20",
-        "price": 89,
+        "price": 78,
         "inStock": true
       }
     },
@@ -1358,7 +1358,7 @@ export default [
       "amazon": {
         "asin": "B09CCXPX51",
         "url": "https://www.amazon.com/dp/B09CCXPX51?tag=tiereduptech-20",
-        "price": 86.99,
+        "price": 79.95,
         "inStock": true
       }
     },
@@ -1378,7 +1378,7 @@ export default [
       "amazon": {
         "asin": "B08Y869HXF",
         "url": "https://www.amazon.com/dp/B08Y869HXF?tag=tiereduptech-20",
-        "price": 57.99,
+        "price": 54.99,
         "inStock": true
       }
     },
@@ -1498,7 +1498,7 @@ export default [
       "amazon": {
         "asin": "B0D9CFFCFJ",
         "url": "https://www.amazon.com/dp/B0D9CFFCFJ?tag=tiereduptech-20",
-        "price": 88.99,
+        "price": 82.5,
         "inStock": true
       }
     },
@@ -1718,7 +1718,7 @@ export default [
       "amazon": {
         "asin": "B08R2CZ9VD",
         "url": "https://www.amazon.com/dp/B08R2CZ9VD?tag=tiereduptech-20",
-        "price": 32.99,
+        "price": 35.99,
         "inStock": true
       }
     },
@@ -1938,7 +1938,7 @@ export default [
       "amazon": {
         "asin": "B08XYZGVGS",
         "url": "https://www.amazon.com/dp/B08XYZGVGS?tag=tiereduptech-20",
-        "price": 28.99,
+        "price": 29.99,
         "inStock": true
       }
     },
@@ -2078,7 +2078,7 @@ export default [
       "amazon": {
         "asin": "B0C4YGB5PP",
         "url": "https://www.amazon.com/dp/B0C4YGB5PP?tag=tiereduptech-20",
-        "price": 105.81,
+        "price": 119.99,
         "inStock": true
       }
     },
@@ -2158,7 +2158,7 @@ export default [
       "amazon": {
         "asin": "B0DY59M46T",
         "url": "https://www.amazon.com/dp/B0DY59M46T?tag=tiereduptech-20",
-        "price": 189.99,
+        "price": 179.99,
         "inStock": true
       }
     },
@@ -2258,7 +2258,7 @@ export default [
       "amazon": {
         "asin": "B0CKVD62NX",
         "url": "https://www.amazon.com/dp/B0CKVD62NX?tag=tiereduptech-20",
-        "price": 159,
+        "price": 150,
         "inStock": true
       }
     },
@@ -2298,7 +2298,7 @@ export default [
       "amazon": {
         "asin": "B0D6X93C58",
         "url": "https://www.amazon.com/dp/B0D6X93C58?tag=tiereduptech-20",
-        "price": 109,
+        "price": 99,
         "inStock": true
       }
     },
@@ -2318,7 +2318,7 @@ export default [
       "amazon": {
         "asin": "B0BF98BLRN",
         "url": "https://www.amazon.com/dp/B0BF98BLRN?tag=tiereduptech-20",
-        "price": 248,
+        "price": 212,
         "inStock": true
       }
     },
@@ -2338,7 +2338,7 @@ export default [
       "amazon": {
         "asin": "B0FQK94R99",
         "url": "https://www.amazon.com/dp/B0FQK94R99?tag=tiereduptech-20",
-        "price": 309.99,
+        "price": 329.99,
         "inStock": true
       }
     },
@@ -2438,7 +2438,7 @@ export default [
       "amazon": {
         "asin": "B0B8GRCXB6",
         "url": "https://www.amazon.com/dp/B0B8GRCXB6?tag=tiereduptech-20",
-        "price": 99.74,
+        "price": 79.99,
         "inStock": true
       }
     },
@@ -2478,7 +2478,7 @@ export default [
       "amazon": {
         "asin": "B0BSBV4QG5",
         "url": "https://www.amazon.com/dp/B0BSBV4QG5?tag=tiereduptech-20",
-        "price": 299.99,
+        "price": 379.99,
         "inStock": true
       }
     },
@@ -2558,7 +2558,7 @@ export default [
       "amazon": {
         "asin": "B0D81KDVJQ",
         "url": "https://www.amazon.com/dp/B0D81KDVJQ?tag=tiereduptech-20",
-        "price": 269,
+        "price": 299,
         "inStock": true
       }
     },
@@ -2598,7 +2598,7 @@ export default [
       "amazon": {
         "asin": "B0BQH4KNBR",
         "url": "https://www.amazon.com/dp/B0BQH4KNBR?tag=tiereduptech-20",
-        "price": 215,
+        "price": 228,
         "inStock": true
       }
     },
@@ -2698,7 +2698,7 @@ export default [
       "amazon": {
         "asin": "B0BTPZF6P1",
         "url": "https://www.amazon.com/dp/B0BTPZF6P1?tag=tiereduptech-20",
-        "price": 219,
+        "price": 199,
         "inStock": true
       }
     },
@@ -2818,7 +2818,7 @@ export default [
       "amazon": {
         "asin": "B0BGHZF5ZJ",
         "url": "https://www.amazon.com/dp/B0BGHZF5ZJ?tag=tiereduptech-20",
-        "price": 9.99,
+        "price": 12.99,
         "inStock": true
       }
     },
@@ -2858,7 +2858,7 @@ export default [
       "amazon": {
         "asin": "B0CV196ZCZ",
         "url": "https://www.amazon.com/dp/B0CV196ZCZ?tag=tiereduptech-20",
-        "price": 13.99,
+        "price": 18.49,
         "inStock": true
       }
     },
@@ -2978,7 +2978,7 @@ export default [
       "amazon": {
         "asin": "B01MSKI46R",
         "url": "https://www.amazon.com/dp/B01MSKI46R?tag=tiereduptech-20",
-        "price": 33.99,
+        "price": 35.99,
         "inStock": true
       }
     },
@@ -3318,7 +3318,7 @@ export default [
       "amazon": {
         "asin": "B0FZKL645Z",
         "url": "https://www.amazon.com/dp/B0FZKL645Z?tag=tiereduptech-20",
-        "price": 7.95,
+        "price": 8.95,
         "inStock": true
       }
     },
@@ -3338,7 +3338,7 @@ export default [
       "amazon": {
         "asin": "B0CZ9KQRF9",
         "url": "https://www.amazon.com/dp/B0CZ9KQRF9?tag=tiereduptech-20",
-        "price": 264.97,
+        "price": 244.97,
         "inStock": true
       }
     },

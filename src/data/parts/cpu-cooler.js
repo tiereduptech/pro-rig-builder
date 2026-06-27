@@ -29,13 +29,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445833849288182287092262",
-        "price": 119.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833849288182287092262&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15%2Fp%2FN82E16835608045%3Fitem%3D9SIAADY44C6006",
+        "sku": "9SIBZT7KJ95176",
+        "price": 118.57,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837098108895940628497&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15%2Fp%2FN82E16835608045%3Fitem%3D9SIBZT7KJ95176",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-045-V02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -75,13 +75,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445834871204183147131830",
-        "price": 169.95,
+        "sku": "9SIAADYKB59099",
+        "price": 159.95,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834871204183147131830&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00356%3Fitem%3D9SIAADYKB59099",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2407010J63FDFA.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -121,13 +121,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445839298247233631954106",
-        "price": 131.39,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839298247233631954106&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12a%2Fp%2F13C-0005-00187%3Fitem%3D9SIBTVCKEF8249",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200826CTPyq.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
+        "sku": "9SIBTVCK8B0277",
+        "price": 119.39,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839084376917296090134&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12a-chromax-black%2Fp%2F13C-0005-001S0%3Fitem%3D9SIBTVCK8B0277",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2110088268C.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
         "matchScore": 1
       }
     },
@@ -165,6 +165,16 @@ export default [
         "price": 100,
         "url": "https://www.amazon.com/dp/B07Y88BNYZ?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBZT7KJ95181",
+        "price": 70.17,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838259543689665516375&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p12-redux-1700-pwm%2Fp%2F13C-0005-001N1%3Fitem%3D9SIBZT7KJ95181",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2206300OAKIA1B.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "fans_inc": 1,
@@ -198,14 +208,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316172413943425895268",
-        "name": "Noctua NH-L9a-AM5, Premium Edition CPU Cooler, Applicable To The AM5 Platform",
-        "price": 73.8,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316172413943425895268&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9a-am5%2Fp%2F13C-0005-00321%3Fitem%3D9SIAZTUKFH9280",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4RES2303070JUEW962.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-15T02:34:16.508Z",
-        "matchMethod": "remediate:strict-token",
+        "sku": "9SIAZTUKG69635",
+        "price": 78.79,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833871119281458834924&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9a-am5%2Fp%2F13C-0005-00322%3Fitem%3D9SIAZTUKG69635",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4RES2303070KAV5H62.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
         "matchScore": 1
       }
     },
@@ -240,17 +249,17 @@ export default [
     "height": 168,
     "deals": {
       "amazon": {
-        "price": 89.9,
+        "price": 79.9,
         "url": "https://www.amazon.com/dp/B0CJY3DYQ3?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "13C-001F-00070",
         "price": 124.9,
-        "saleprice": 89.9,
+        "saleprice": 79.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831146887239297320844&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-dark-rock-pro-5%2Fp%2F13C-001F-00070%3Fitem%3D13C-001F-00070",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS23101719JCQRFD.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -284,7 +293,7 @@ export default [
     "height": 159,
     "deals": {
       "amazon": {
-        "price": 69.5,
+        "price": 59.9,
         "url": "https://www.amazon.com/dp/B0D3NXLZ1T?tag=tiereduptech-20",
         "inStock": true
       }
@@ -327,7 +336,7 @@ export default [
     "rgb": false,
     "value": 68,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 75,
     "cfm": 132
   },
@@ -363,7 +372,7 @@ export default [
     "rgb": false,
     "value": 27,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 78,
     "cfm": 145
   },
@@ -397,10 +406,10 @@ export default [
       "newegg": {
         "sku": "9SIBVHXKD66176",
         "price": 59.9,
-        "saleprice": null,
+        "saleprice": 49.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318353536696411896464&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000M8%3Fitem%3D9SIBVHXKD66176",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS25011004VUZLA7.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -513,7 +522,7 @@ export default [
     "rgb": true,
     "value": 10,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 89,
     "height": 52,
     "cfm": 174
@@ -550,7 +559,7 @@ export default [
     "rgb": true,
     "value": 30,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 64,
     "height": 52,
     "cfm": 116
@@ -578,9 +587,19 @@ export default [
     "radSize": 360,
     "deals": {
       "amazon": {
-        "price": 150,
+        "price": 129.99,
         "url": "https://www.amazon.com/dp/B0F5SZK3WX?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAG1PKH07259",
+        "price": 169.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837127124090643770721&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-aio-radiator-size-401-x-120-x-27-mm-intel-socket-lga-1851-1700-1200-115x-amd-socket-am5-am4-black%2Fp%2FN82E16835146171%3Fitem%3D9SIAG1PKH07259",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-171-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "fans_inc": 3,
@@ -703,7 +722,7 @@ export default [
         "saleprice": 98.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839746302777785884695&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Farctic-cooling-liquid-cooling-system-liquid-freezer-ii%2Fp%2F13C-000P-000R0%3Fitem%3D9SIA2W0KFB2645",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S2111100BP6M565.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -773,17 +792,17 @@ export default [
     "radSize": 360,
     "deals": {
       "amazon": {
-        "price": 59.9,
+        "price": 47.9,
         "url": "https://www.amazon.com/dp/B0B7NTFMFD?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "9SIA68VJ2H5043",
-        "price": 54.9,
-        "saleprice": null,
+        "price": 169.9,
+        "saleprice": 47.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315861431754087190689&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-fx-360mm-pure-loop-2%2Fp%2F13C-001F-00067%3Fitem%3D9SIA68VJ2H5043",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS2207220L5F4J1A.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.83
       }
@@ -827,7 +846,7 @@ export default [
     "rgb": false,
     "value": 30,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 86,
     "height": 52,
     "cfm": 180
@@ -855,17 +874,17 @@ export default [
     "radSize": 360,
     "deals": {
       "amazon": {
-        "price": 190.46,
+        "price": 193.34,
         "url": "https://www.amazon.com/dp/B0CDF9WYLY?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAD6HK1Z5404",
-        "price": 348.56,
+        "sku": "9SIAM8DKZB3601",
+        "price": 199.97,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836603686612780990849&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-galahad-ii-trinity-360%2Fp%2FN82E16835353016%3Fitem%3D9SIAD6HK1Z5404",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS230713zSCOJ.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314917816678140943523&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-galahad-ii-trinity-sl-inf-360%2Fp%2FN82E16835353018%3Fitem%3D9SIAM8DKZB3601",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS230713IeWCj.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -909,7 +928,7 @@ export default [
     "rgb": true,
     "value": 32,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 95,
     "height": 52,
     "cfm": 180
@@ -969,14 +988,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445839298247233631954106",
-        "price": 131.39,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839298247233631954106&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12a%2Fp%2F13C-0005-00187%3Fitem%3D9SIBTVCKEF8249",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200826CTPyq.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.572Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIBZT7KJ95150",
+        "price": 27.09,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834902039109586570339&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-f12-pwm-case-fan%2Fp%2FN82E16835608026%3Fitem%3D9SIBZT7KJ95150",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-026-V01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.6
       }
     },
     "additionalImages": [
@@ -1059,6 +1078,16 @@ export default [
         "price": 53.99,
         "url": "https://www.amazon.com/dp/B0FKDBBS3Y?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBGW7KZT0415",
+        "price": 99.87,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314472758395229711691&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fliquid-cooling-corsair-h60x-rgb-elite-157-mm-amd-am5-am4-intel-1700-1200-115x-2066-2011-3-2011-black%2Fp%2FN82E16835181352%3Fitem%3D9SIBGW7KZT0415",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-352-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.94
       }
     },
     "additionalImages": [
@@ -1137,13 +1166,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458314378922567612648591",
+        "sku": "N82E16835103364",
         "price": 29.99,
+        "saleprice": 25.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314378922567612648591&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-212-black-120mm-intel-lga-1700-1200-1151-1150-1155-1156-amd-am5-am4%2Fp%2FN82E16835103364%3Fitem%3DN82E16835103364",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-364-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.795Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -1183,7 +1212,7 @@ export default [
     "reviews": 1679,
     "deals": {
       "amazon": {
-        "price": 129.99,
+        "price": 94.99,
         "url": "https://www.amazon.com/dp/B0DF7C4YPQ?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1193,14 +1222,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458314985996934103841889",
+        "sku": "N82E16835181478",
         "price": 129.99,
-        "saleprice": 109.99,
+        "saleprice": 99.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314985996934103841889&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-series-radiator-size-396-mm-intel-lga-1851-1700-amd-am5-am4%2Fp%2FN82E16835181478%3Fitem%3DN82E16835181478",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-478-02.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -1248,13 +1276,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445834278197751878776852",
-        "price": 119.99,
+        "sku": "9SIA2W0KER9641",
+        "price": 105.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834278197751878776852&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00080%3Fitem%3D9SIA2W0KER9641",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25040809FH7I08.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.347Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -1303,6 +1331,16 @@ export default [
         "price": 36.9,
         "url": "https://www.amazon.com/dp/B09P4M4C7K?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAZTUKED3756",
+        "price": 66,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316997263513608680480&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-011K-003Y4%3Fitem%3D9SIAZTUKED3756",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASSAD2206070SG3EM1E.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "discount": 5,
@@ -1382,14 +1420,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445837869230979864655309",
+        "sku": "9SIBVHXKCK2083",
         "price": 49.9,
-        "saleprice": 45.9,
+        "saleprice": 46.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837869230979864655309&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000M3%3Fitem%3D9SIBVHXKCK2083",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2412020GA34X56.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.578Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -1512,13 +1549,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458313289607910193816241",
-        "price": 129.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313289607910193816241&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-chromax-black%2Fp%2F13C-0005-001H5%3Fitem%3D9SIA4REKHM8164",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_1321448318623154024hVzlOURbe.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
+        "sku": "9SIBZT7KJ95173",
+        "price": 128.59,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312285541967999062349&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-chromax-black%2Fp%2F13C-0005-00324%3Fitem%3D9SIBZT7KJ95173",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVS230413152MJ7CD.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
         "matchScore": 1
       }
     },
@@ -1557,7 +1594,7 @@ export default [
     "reviews": 762,
     "deals": {
       "amazon": {
-        "price": 109.99,
+        "price": 75.98,
         "url": "https://www.amazon.com/dp/B0DF7B7324?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1611,7 +1648,7 @@ export default [
     "reviews": 531,
     "deals": {
       "amazon": {
-        "price": 39.9,
+        "price": 31.92,
         "url": "https://www.amazon.com/dp/B09P4KH7QK?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1649,19 +1686,18 @@ export default [
     "reviews": 10445,
     "deals": {
       "amazon": {
-        "price": 35.56,
+        "price": 19.99,
         "url": "https://www.amazon.com/dp/B07H22TC1N?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316768462662642820017",
-        "price": 34.99,
-        "saleprice": 17.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316768462662642820017&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-212-pro-120mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2FN82E16835103370%3Fitem%3DN82E16835103370",
+        "sku": "9SIA2W0KFK9350",
+        "price": 19.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831953068528655951620&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-212-pro-120mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2FN82E16835103370%3Fitem%3D9SIA2W0KFK9350",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-370-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.795Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -1705,18 +1741,18 @@ export default [
     "reviews": 423,
     "deals": {
       "amazon": {
-        "price": 279.99,
+        "price": 251.99,
         "url": "https://www.amazon.com/dp/B0DQV2CBX1?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458313224118965145824094",
+        "sku": "9SIBWC8KCY3824",
         "price": 279.99,
+        "saleprice": 251.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313224118965145824094&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-se-argb-radiator-size-360-mm-amd-intel-white%2Fp%2F2YM-00BE-00014%3Fitem%3D9SIBWC8KCY3824",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BWC8S2502260LFT258B.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.588Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -1810,7 +1846,7 @@ export default [
     "reviews": 332,
     "deals": {
       "amazon": {
-        "price": 54.9,
+        "price": 43.92,
         "url": "https://www.amazon.com/dp/B0CCNVFXWH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1852,7 +1888,7 @@ export default [
     "reviews": 215,
     "deals": {
       "amazon": {
-        "price": 129.99,
+        "price": 109.48,
         "url": "https://www.amazon.com/dp/B0FL7BXMRR?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1893,7 +1929,7 @@ export default [
     "reviews": 154,
     "deals": {
       "amazon": {
-        "price": 39.9,
+        "price": 31.92,
         "url": "https://www.amazon.com/dp/B0D93R3YY9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1930,7 +1966,7 @@ export default [
     "reviews": 85,
     "deals": {
       "amazon": {
-        "price": 38.9,
+        "price": 30.73,
         "url": "https://www.amazon.com/dp/B0D8RZ65XJ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1973,12 +2009,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADY44C5770",
-        "price": 69.95,
+        "sku": "9SIBZT7KJ95178",
+        "price": 80.17,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832123839912792104701&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u9s%2Fp%2FN82E16835608067%3Fitem%3D9SIAADY44C5770",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831906428592930525727&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u9s%2Fp%2FN82E16835608067%3Fitem%3D9SIBZT7KJ95178",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-067-V02.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -2020,12 +2056,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADY44C6006",
-        "price": 119.95,
+        "sku": "9SIBZT7KJ95176",
+        "price": 118.57,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833849288182287092262&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15%2Fp%2FN82E16835608045%3Fitem%3D9SIAADY44C6006",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837098108895940628497&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15%2Fp%2FN82E16835608045%3Fitem%3D9SIBZT7KJ95176",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-045-V02.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -2064,18 +2100,18 @@ export default [
     "reviews": 1224,
     "deals": {
       "amazon": {
-        "price": 67.99,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B0C4C421RZ?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835103356",
-        "price": 99.99,
+        "sku": "9SIBTVCK875332",
+        "price": 69.99,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314858374649218596803&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-liquid-cooling-394-mm-intel-lga-1700-1200-115x-amd-socket-am5-am4-am3-am3-am2-am2-fm2%2Fp%2FN82E16835103356%3Fitem%3DN82E16835103356",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-356-26.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318239580555997205199&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-liquid-cooling-394-mm-intel-lga-1700-1200-115x-amd-socket-am5-am4-am3-am3-am2-am2-fm2%2Fp%2FN82E16835103355%3Fitem%3D9SIBTVCK875332",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-355-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -2122,7 +2158,7 @@ export default [
     "reviews": 887,
     "deals": {
       "amazon": {
-        "price": 55.39,
+        "price": 44.31,
         "url": "https://www.amazon.com/dp/B0BDDZGLXL?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2171,10 +2207,10 @@ export default [
       "newegg": {
         "sku": "9SIBVHXK987012",
         "price": 69.9,
-        "saleprice": 64.9,
+        "saleprice": 65.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313030306394114655881&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K7%3Fitem%3D9SIBVHXK987012",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2407030G6KMOC1.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -2266,13 +2302,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445839918489154807949398",
-        "price": 79.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839918489154807949398&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-liquid-cooling-system%2Fp%2FN82E16835103322%3Fitem%3DN82E16835103322",
+        "sku": "9SIA4P0KJG9068",
+        "price": 57.49,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583934853692203014211&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-liquid-cooling-system%2Fp%2FN82E16835103322%3Fitem%3D9SIA4P0KJG9068",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-322-05.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.795Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -2319,17 +2355,17 @@ export default [
     "reviews": 423,
     "deals": {
       "amazon": {
-        "price": 279.99,
+        "price": 251.99,
         "url": "https://www.amazon.com/dp/B0F9WV43J1?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "2YM-00BE-00013",
+        "sku": "9SIBWC8KCY3780",
         "price": 279.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836844311812594380634&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-se-argb-radiator-size-360-mm-amd-intel-black%2Fp%2F2YM-00BE-00013%3Fitem%3D2YM-00BE-00013",
+        "saleprice": 251.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311678270232160668988&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-se-argb-radiator-size-360-mm-amd-intel-black%2Fp%2F2YM-00BE-00013%3Fitem%3D9SIBWC8KCY3780",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BWC8S2502260LFE9Z3F.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.94
       }
@@ -2420,7 +2456,7 @@ export default [
     "reviews": 236,
     "deals": {
       "amazon": {
-        "price": 89.9,
+        "price": 76.42,
         "url": "https://www.amazon.com/dp/B0F66J3QPC?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2547,13 +2583,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583763676749832097665",
-        "price": 271.17,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583763676749832097665&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-hydroshift-ii-lcd-s-black%2Fp%2F2YM-002Y-00051%3Fitem%3D9SIA0ZXKPF3658",
+        "sku": "9SIAFSTKK73802",
+        "price": 239.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838739061497643427609&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-hydroshift-ii-lcd-s-black%2Fp%2F2YM-002Y-00051%3Fitem%3D9SIAFSTKK73802",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2511040LB886E3.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.209Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -2599,7 +2635,7 @@ export default [
     "reviews": 3441,
     "deals": {
       "amazon": {
-        "price": 52.24,
+        "price": 54.99,
         "url": "https://www.amazon.com/dp/B0BLS3372N?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2645,12 +2681,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAHCTKJM3314",
-        "price": 115.18,
-        "saleprice": 95.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834063394261103569139&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpccooler-liquid-cooling-system-ds-series-radiator-size-396-mm-intel-lga-20xx-1851-1700-1200-115x-amd-am5-am4-black%2Fp%2F2YM-00BC-00015%3Fitem%3D9SIAHCTKJM3314",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHCTS2507290F8T9U6B.jpg",
-        "matchedAt": "2026-05-13",
+        "sku": "9SIAHCTKC55102",
+        "price": 119.99,
+        "saleprice": 65.51,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312544420109177965755&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpccooler-liquid-cooling-system-radiator-size-394-x-120-x-27-mm-intel-lga-20xx-1851-1700-1200-115x-amd-am5-am4%2Fp%2F2YM-00BC-00002%3Fitem%3D9SIAHCTKC55102",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHCTS2505280K8QUJ3B.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.56
       }
@@ -2695,13 +2731,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583878096547179612925",
-        "price": 80.5,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583878096547179612925&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9x65%2Fp%2FN82E16835608071%3Fitem%3D9SIAZTUKBA4151",
+        "sku": "9SIBZT7KJ95184",
+        "price": 79.3,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313430090345375142411&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9x65%2Fp%2FN82E16835608071%3Fitem%3D9SIBZT7KJ95184",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-071-V02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.178Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -2743,13 +2779,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445831190354103940616445",
-        "price": 74.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831190354103940616445&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u9s-ch-bk-92mm-intel-lga1851-lga1700-lga1200-lga1156-lga1155-lga1151-lga1150-and-amd-am5-am4%2Fp%2F13C-0005-00315%3Fitem%3D9SIAADYCB45974",
+        "sku": "9SIBZT7KJ95186",
+        "price": 85.17,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835685075813372637776&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u9s-ch-bk-92mm-intel-lga1851-lga1700-lga1200-lga1156-lga1155-lga1151-lga1150-and-amd-am5-am4%2Fp%2F13C-0005-00315%3Fitem%3D9SIBZT7KJ95186",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13C-0005-00315-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.552Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -2849,14 +2885,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458310536511761868127329",
+        "sku": "9SIAADYBGR5006",
         "price": 74.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310536511761868127329&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l12s-70mm-low-profile-cpu-cooler-with-quiet-120mm-pwm-fan%2Fp%2F13C-0005-00144%3Fitem%3D9SIAADY6A94509",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131504710147913939dt3BoXTedP.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.552Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835618195475224562414&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l12-ghost-s1-edition%2Fp%2F13C-0005-001K0%3Fitem%3D9SIAADYBGR5006",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200622DKf1i.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -2897,13 +2933,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317872936246998863944",
-        "price": 131.39,
+        "sku": "9SIBTVCKSG5758",
+        "price": 121.29,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317872936246998863944&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15s-chromax-black%2Fp%2F13C-0005-002Y6%3Fitem%3D9SIBTVCKSG5758",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2409040DH15TEA.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.572Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -2947,12 +2983,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBTVCKJC3326",
-        "price": 110.99,
+        "sku": "9SIBZT7KJ95180",
+        "price": 166.2,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317700236370743661937&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u14s-tr4-sp3-premium-grade-140mm-cpu-cooler-for-amd-tr4-sp3%2Fp%2F13C-0005-00140%3Fitem%3D9SIBTVCKJC3326",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313957085736486456376&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u14s-tr4-sp3-premium-grade-140mm-cpu-cooler-for-amd-tr4-sp3%2Fp%2F13C-0005-00140%3Fitem%3D9SIBZT7KJ95180",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131462424114421525y4HbR1MBia.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1
       }
@@ -2991,7 +3027,7 @@ export default [
     "reviews": 887,
     "deals": {
       "amazon": {
-        "price": 53.59,
+        "price": 42.87,
         "url": "https://www.amazon.com/dp/B0BDF5514F?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3033,7 +3069,7 @@ export default [
     "reviews": 762,
     "deals": {
       "amazon": {
-        "price": 74.9,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0DF7DH5Z5?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3096,7 +3132,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317307517172578121862&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00348%3Fitem%3D9SIAADYK916921",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2402190G9CVACB.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.9
       }
@@ -3133,7 +3169,7 @@ export default [
     "reviews": 496,
     "deals": {
       "amazon": {
-        "price": 26.99,
+        "price": 29.99,
         "url": "https://www.amazon.com/dp/B0D1CGL7D1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3175,13 +3211,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445838524361210619545839",
-        "price": 169.95,
+        "sku": "9SIAADYKB59138",
+        "price": 159.95,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838524361210619545839&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-g2-lbc-140mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2F13C-0005-00357%3Fitem%3D9SIAADYKB59138",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2407010J9FJXFA.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -3219,7 +3255,7 @@ export default [
     "reviews": 446,
     "deals": {
       "amazon": {
-        "price": 47.19,
+        "price": 37.75,
         "url": "https://www.amazon.com/dp/B0BLJHRVF5?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3302,7 +3338,7 @@ export default [
     "reviews": 288,
     "deals": {
       "amazon": {
-        "price": 99.99,
+        "price": 109.99,
         "url": "https://www.amazon.com/dp/B0FGDMTHY4?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3312,14 +3348,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458314951952674884611363",
-        "price": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314951952674884611363&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-360-lcd-white-amd-am5-am4-intel-1851-1700%2Fp%2FN82E16835181496%3Fitem%3DN82E16835181496",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-496-02.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIC70SKYH2123",
+        "price": 157,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315595852119163782364&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-360-rs-lcd-amd-am5-am4-intel-1851-1700%2Fp%2FN82E16835181495%3Fitem%3D9SIC70SKYH2123",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-495-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.77
       }
     },
     "discount": 13,
@@ -3371,7 +3407,7 @@ export default [
         "saleprice": 59.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838750195420648520439&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000N6%3Fitem%3D9SIBVHXKK97556",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2508200FG3BA5A.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.77
       }
@@ -3505,7 +3541,7 @@ export default [
     "reviews": 257,
     "deals": {
       "amazon": {
-        "price": 45.9,
+        "price": 36.72,
         "url": "https://www.amazon.com/dp/B0DQFYBSD6?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3515,7 +3551,7 @@ export default [
         "saleprice": 59.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838750195420648520439&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000N6%3Fitem%3D9SIBVHXKK97556",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2508200FG3BA5A.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.64
       }
@@ -3667,13 +3703,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317307517172578121862",
+        "sku": "9SIAADYK916921",
         "price": 109.95,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317307517172578121862&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00348%3Fitem%3D9SIAADYK916921",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2402190G9CVACB.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -3716,13 +3752,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458311406344733952731852",
+        "sku": "9SIAADYK958942",
         "price": 79.95,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311406344733952731852&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00349%3Fitem%3D9SIAADYK958942",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2404090I2DYN41.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -3760,7 +3796,7 @@ export default [
     "reviews": 182,
     "deals": {
       "amazon": {
-        "price": 52.99,
+        "price": 44.98,
         "url": "https://www.amazon.com/dp/B0FHW6Z4TG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3842,7 +3878,7 @@ export default [
     "reviews": 135,
     "deals": {
       "amazon": {
-        "price": 53.9,
+        "price": 43.12,
         "url": "https://www.amazon.com/dp/B0DHX795DV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3966,7 +4002,7 @@ export default [
     "reviews": 79,
     "deals": {
       "amazon": {
-        "price": 22.9,
+        "price": 18.32,
         "url": "https://www.amazon.com/dp/B0DMVY11QR?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4009,13 +4045,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445834989385082620659230",
+        "sku": "9SIAFSTKK73805",
         "price": 239.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834989385082620659230&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-hydroshift-ii-lcd-s-white%2Fp%2F2YM-002Y-00054%3Fitem%3D9SIAFSTKK73805",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2511040LD8YY08.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.978Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -4071,14 +4107,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458315448780282110771242",
+        "sku": "N82E16835146175",
         "price": 99.99,
         "saleprice": 89.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315448780282110771242&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-system-black%2Fp%2FN82E16835146175%3Fitem%3DN82E16835146175",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD25100307XRPZBC.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "newegg_openbox": {
@@ -4137,14 +4172,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAFSTKK73805",
-        "price": 239.99,
+        "sku": "9SIAFSTKK73806",
+        "price": 159.99,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834989385082620659230&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-hydroshift-ii-lcd-s-white%2Fp%2F2YM-002Y-00054%3Fitem%3D9SIAFSTKK73805",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2511040LD8YY08.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.94
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583186795642064681258&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-hydroshift-ii-lcd-s%2Fp%2F2YM-002Y-00055%3Fitem%3D9SIAFSTKK73806",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2511040LAK4Q13.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -4182,7 +4217,7 @@ export default [
     "reviews": 64,
     "deals": {
       "amazon": {
-        "price": 109.99,
+        "price": 99.99,
         "url": "https://www.amazon.com/dp/B0FLTZ2SHM?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4192,14 +4227,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458310506736549065031454",
+        "sku": "N82E16835146176",
         "price": 129.99,
-        "saleprice": 109.99,
+        "saleprice": 99.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310506736549065031454&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-system-black%2Fp%2FN82E16835146176%3Fitem%3DN82E16835146176",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD25100307XIB1B4.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -4264,7 +4298,7 @@ export default [
     "tdp_rating": 280,
     "tdp_rating_est": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01",
+    "quarantinedAt": "2026-06-25",
     "bench": 93,
     "fanSize": 120,
     "height": 52,
@@ -4283,7 +4317,7 @@ export default [
     "reviews": 26,
     "deals": {
       "amazon": {
-        "price": 55.9,
+        "price": 44.72,
         "url": "https://www.amazon.com/dp/B0FHPQBMMD?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4320,7 +4354,7 @@ export default [
     "reviews": 52,
     "deals": {
       "amazon": {
-        "price": 53.9,
+        "price": 43.12,
         "url": "https://www.amazon.com/dp/B0F8HTLRND?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4445,14 +4479,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADY4B02495",
-        "price": 49.95,
+        "sku": "9SIAADYA5G8110",
+        "price": 59.95,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314164860617461697902&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9i%2Fp%2FN82E16835608029%3Fitem%3D9SIAADY4B02495",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2201278BTh8.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312757103571703321120&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9i-chromax-black%2Fp%2F13C-0005-001H7%3Fitem%3D9SIAADYA5G8110",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2206300NVF5VB5.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 0.92
       }
     },
     "additionalImages": [
@@ -4492,14 +4526,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADY44C5851",
-        "price": 84.95,
+        "sku": "9SIBZT7KJ95182",
+        "price": 120.79,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315002010657577620004&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12s%2Fp%2FN82E16835608040%3Fitem%3D9SIAADY44C5851",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-040-V02.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833834166165336419427&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12s-tr4-sp3-premium-grade-120mm-cpu-cooler-for-amd-tr4-sp3%2Fp%2F13C-0005-00141%3Fitem%3D9SIBZT7KJ95182",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS210401tr1c1.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 0.64
       }
     },
     "additionalImages": [
@@ -4578,9 +4612,19 @@ export default [
     "reviews": 3312,
     "deals": {
       "amazon": {
-        "price": 49.99,
+        "price": 42.49,
         "url": "https://www.amazon.com/dp/B0C9PXRK1C?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA9ZHJXK5449",
+        "price": 50.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316740607300282007315&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0004-00098%3Fitem%3D9SIA9ZHJXK5449",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A9ZHS2307070VCZX10C.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -4621,14 +4665,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAADYK5N2732",
-        "price": 84.95,
+        "sku": "9SIBTVCKNG9339",
+        "price": 95.59,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838114484701032267935&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d9l%2Fp%2F13C-0005-00341%3Fitem%3D9SIAADYK5N2732",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2310110KPGTU24.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.91
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835232714880303475237&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d9l%2Fp%2FN82E16835608068%3Fitem%3D9SIBTVCKNG9339",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-068-11.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -4714,14 +4758,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445833257861844816915337",
-        "name": "Noctua NH-L9i-17xx, Premium Low-Profile CPU Cooler for Intel LGA1700 and LGA1851 (Brown)",
-        "price": 59.2,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833257861844816915337&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002Z7%3Fitem%3D9SIAZTUKBT0022",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2304200R60SM67.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-15T02:34:16.508Z",
-        "matchMethod": "remediate:strict-token",
+        "sku": "9SIAZTUKBJ3429",
+        "price": 69.1,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316650059415172071763&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9i-17xx-chromax-black%2Fp%2F13C-0005-001S8%3Fitem%3D9SIAZTUKBJ3429",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS211105B2TVD.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -4758,19 +4801,19 @@ export default [
     "reviews": 486,
     "deals": {
       "amazon": {
-        "price": 168.99,
+        "price": 151.99,
         "url": "https://www.amazon.com/dp/B0BTS2FFWK?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835101092R",
-        "price": 209.99,
-        "saleprice": 89.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314892155520519364099&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-liquid-cooling-system-rog-ryuo-iii-360-argb-wht-radiator-size-399-5-x-120-x-30-mm-amd-am4-am5-tr4-intel-lga-1700-1200-115x-1366-2011-2011-3-2066-white%2Fp%2FN82E16835101092R%3Fitem%3DN82E16835101092R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-092-01.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "sku": "9SIA4REK9A2022",
+        "price": 314.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316364370634965070454&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0024-000C8%3Fitem%3D9SIA4REK9A2022",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BDRDD2306060H7SPWCC.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.63
       },
       "newegg_openbox": {
         "sku": "4458314892155520519364099",
@@ -4902,18 +4945,18 @@ export default [
     "reviews": 327,
     "deals": {
       "amazon": {
-        "price": 359.99,
+        "price": 305.99,
         "url": "https://www.amazon.com/dp/B0DT4FCYMR?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "445834003634045447873973",
+        "sku": "9SIBWC8KD89078",
         "price": 359.99,
+        "saleprice": 305.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834003634045447873973&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-radiator-size-400-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851-black%2Fp%2F2YM-00BE-00015%3Fitem%3D9SIBWC8KD89078",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/2YM-00BE-00015-15.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.588Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -5002,18 +5045,18 @@ export default [
     "reviews": 327,
     "deals": {
       "amazon": {
-        "price": 359.99,
+        "price": 305.99,
         "url": "https://www.amazon.com/dp/B0DT5RDKZT?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458312006717891136329671",
+        "sku": "9SIBWC8KD89766",
         "price": 359.99,
+        "saleprice": 305.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312006717891136329671&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-radiator-size-400-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851-white%2Fp%2F2YM-00BE-00016%3Fitem%3D9SIBWC8KD89766",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/2YM-00BE-00016-12.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.588Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -5111,13 +5154,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583540025719306775679",
-        "price": 149.99,
+        "sku": "N82E16835181493",
+        "price": 139.99,
+        "saleprice": 99.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583540025719306775679&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-240-lcd-amd-am5-am4-intel-1851-1700-black%2Fp%2FN82E16835181493%3Fitem%3DN82E16835181493",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-493-19.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -5200,7 +5243,7 @@ export default [
     "reviews": 214,
     "deals": {
       "amazon": {
-        "price": 24.9,
+        "price": 19.92,
         "url": "https://www.amazon.com/dp/B0DMVVGR2R?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5237,7 +5280,7 @@ export default [
     "reviews": 199,
     "deals": {
       "amazon": {
-        "price": 105.9,
+        "price": 84.9,
         "url": "https://www.amazon.com/dp/B0D4PDPKX5?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5247,7 +5290,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833899472941182890991&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-liquid-cooling-system-intel-lga115x-1200-1700-20xx-amd-am3-am4-am5-white%2Fp%2FN82E16835988005%3Fitem%3D9SIC35VKNH2965",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-988-005-01.png",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -5288,7 +5331,7 @@ export default [
     "reviews": 183,
     "deals": {
       "amazon": {
-        "price": 169.99,
+        "price": 149.99,
         "url": "https://www.amazon.com/dp/B0F5SCHSZQ?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5337,7 +5380,7 @@ export default [
     "reviews": 190,
     "deals": {
       "amazon": {
-        "price": 25.39,
+        "price": 20.31,
         "url": "https://www.amazon.com/dp/B0CJBZXVGY?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5367,7 +5410,7 @@ export default [
     "reviews": 111,
     "deals": {
       "amazon": {
-        "price": 42.39,
+        "price": 33.91,
         "url": "https://www.amazon.com/dp/B0DB861CFX?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5405,7 +5448,7 @@ export default [
     "reviews": 123,
     "deals": {
       "amazon": {
-        "price": 69.99,
+        "price": 55.99,
         "url": "https://www.amazon.com/dp/B0CNR1YGH5?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5447,13 +5490,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445838114484701032267935",
+        "sku": "9SIAADYK5N2732",
         "price": 84.95,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838114484701032267935&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d9l%2Fp%2F13C-0005-00341%3Fitem%3D9SIAADYK5N2732",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2310110KPGTU24.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -5491,7 +5534,7 @@ export default [
     "reviews": 166,
     "deals": {
       "amazon": {
-        "price": 75.23,
+        "price": 66.87,
         "url": "https://www.amazon.com/dp/B0D1K859GT?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5501,7 +5544,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838393370724340115711&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-00AY-00029%3Fitem%3D9SIB7VEKJ78377",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B7VES2507090TP0W952.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.95
       }
@@ -5625,6 +5668,16 @@ export default [
         "price": 139.95,
         "url": "https://www.amazon.com/dp/B0CHRS9RXB?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBTVCKNG9341",
+        "price": 139.69,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839473623805613170661&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u14s-tr5-sp6%2Fp%2F13C-0005-00336%3Fitem%3D9SIBTVCKNG9341",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2309120QL7X724.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -5711,7 +5764,7 @@ export default [
     "reviews": 41,
     "deals": {
       "amazon": {
-        "price": 374.99,
+        "price": 341.24,
         "url": "https://www.amazon.com/dp/B0DPNQS3Q5?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5763,13 +5816,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458315334530916853826230",
-        "price": 79.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315334530916853826230&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-612-apex-lga-1831-1700-1200-sockets-am5-am4-sockets%2Fp%2FN82E16835103377%3Fitem%3DN82E16835103377",
+        "sku": "9SIA0ZXKEE9642",
+        "price": 87.38,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835470693241760427812&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-612-apex-lga-1831-1700-1200-sockets-am5-am4-sockets%2Fp%2FN82E16835103377%3Fitem%3D9SIA0ZXKEE9642",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-377-17.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.795Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -5808,18 +5861,18 @@ export default [
     "reviews": 17,
     "deals": {
       "amazon": {
-        "price": 129.99,
+        "price": 110.49,
         "url": "https://www.amazon.com/dp/B0GGRDL4NG?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "445839468406431217367301",
+        "sku": "9SIBWC8KRV0586",
         "price": 129.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839468406431217367301&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-h-t620n-dm2m-g0k-turris-120mm-intel-lga1851-1700-amd-am5-am4%2Fp%2F13C-0133-00001%3Fitem%3D13C-0133-00001",
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831716636934177551732&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0133-00001%3Fitem%3D9SIBWC8KRV0586",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BWC8S26031604RQQLA1.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.141Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -5907,8 +5960,8 @@ export default [
         "price": 99.9,
         "saleprice": 89.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838899332565290372716&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000N9%3Fitem%3D9SIBVHXKPS6960",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS26010809BNMO90.jpg",
-        "matchedAt": "2026-05-13",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2606030JND8B21.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -5956,13 +6009,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458313763482373840691139",
+        "sku": "N82E16835103384",
         "price": 38.99,
+        "saleprice": 33.98,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313763482373840691139&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835103384%3Fitem%3DN82E16835103384",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-384-11.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.795Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -6001,7 +6054,7 @@ export default [
     "reviews": 6,
     "deals": {
       "amazon": {
-        "price": 60.69,
+        "price": 46.15,
         "url": "https://www.amazon.com/dp/B0GCZV21C7?tag=tiereduptech-20",
         "inStock": true
       }
@@ -6088,7 +6141,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583842225691721381344&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u14s%2Fp%2FN82E16835608041%3Fitem%3D9SIAADY44C5830",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS210211olF7l.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -6132,14 +6185,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445839878497421022595154",
+        "sku": "9SIBW8HKTC7272",
         "price": 149,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839878497421022595154&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-system%2Fp%2FN82E16835146064%3Fitem%3D9SIBW8HKTC7272",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-064-V13.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
-        "matchScore": 0.9444444444444444
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -6185,13 +6238,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445838187596114683334860",
-        "price": 109.95,
+        "sku": "9SIAADY44C6096",
+        "price": 99.95,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838187596114683334860&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15s%2Fp%2FN82E16835608072%3Fitem%3D9SIAADY44C6096",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-072-V02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.552Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -6230,7 +6283,7 @@ export default [
     "reviews": 1171,
     "deals": {
       "amazon": {
-        "price": 145.99,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B0D6BGFVX8?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6278,7 +6331,7 @@ export default [
     "reviews": 1055,
     "deals": {
       "amazon": {
-        "price": 139.99,
+        "price": 194.99,
         "url": "https://www.amazon.com/dp/B0DF7CGGCW?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6290,10 +6343,10 @@ export default [
       "newegg": {
         "sku": "N82E16835181481",
         "price": 199.99,
-        "saleprice": 139.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312039178718712347945&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835181481%3Fitem%3DN82E16835181481",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-481-02.png",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.65
       }
@@ -6382,13 +6435,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458310117642679278262636",
+        "sku": "9SIAADY5BC3600",
         "price": 74.95,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310117642679278262636&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12s-se-am4%2Fp%2F13C-0005-00112%3Fitem%3D9SIAADY5BC3600",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2206300OIY6I5B.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.552Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -6475,14 +6528,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458310635556666159622247",
-        "price": 105.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310635556666159622247&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00084%3Fitem%3D9SIA2W0KHX4753",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S2507231BTO0Y19.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.347Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIA2W0KP98954",
+        "price": 95.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833795822587653180041&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00090%3Fitem%3D9SIA2W0KP98954",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25110702UM0N16.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.71
       },
       "bestbuy": {
         "price": 99.99,
@@ -6528,7 +6581,7 @@ export default [
     "reviews": 799,
     "deals": {
       "amazon": {
-        "price": 129.95,
+        "price": 99.95,
         "url": "https://www.amazon.com/dp/B01NC06ZYT?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6538,7 +6591,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310074195816874490835&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-se-am4%2Fp%2F13C-0005-00111%3Fitem%3D9SIAADY5BC1607",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131315373821117808bUOcz3drmV.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -6582,14 +6635,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445839746302777785884695",
+        "sku": "9SIA2W0KFB2645",
         "price": 109.99,
         "saleprice": 98.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839746302777785884695&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Farctic-cooling-liquid-cooling-system-liquid-freezer-ii%2Fp%2F13C-000P-000R0%3Fitem%3D9SIA2W0KFB2645",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S2111100BP6M565.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.347Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -6642,13 +6694,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317312872387075317144",
-        "price": 97.99,
+        "sku": "9SIA2W0KG06336",
+        "price": 85.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317312872387075317144&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00083%3Fitem%3D9SIA2W0KG06336",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25061009P9ET19.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.347Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -6751,14 +6803,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "44583728192951916065621",
-        "price": 95.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583728192951916065621&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Farctic-cooling-liquid-cooling-system-liquid-freezer-iii-240-a-rgb%2Fp%2FN82E16835186271%3Fitem%3D9SIA2W0K5W2452",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-186-271-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.346Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIA2W0KG06336",
+        "price": 85.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317312872387075317144&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00083%3Fitem%3D9SIA2W0KG06336",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25061009P9ET19.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.92
       },
       "bestbuy": {
         "price": 97.99,
@@ -6808,13 +6860,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445833795822587653180041",
-        "price": 114.99,
+        "sku": "9SIA2W0KP98954",
+        "price": 95.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833795822587653180041&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00090%3Fitem%3D9SIA2W0KP98954",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25110702UM0N16.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.348Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -6866,14 +6918,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445835969562724661910135",
-        "price": 105.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835969562724661910135&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00085%3Fitem%3D9SIA2W0KHX4764",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S2507231DY4IR23.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.347Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIA2W0KP98954",
+        "price": 95.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833795822587653180041&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00090%3Fitem%3D9SIA2W0KP98954",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25110702UM0N16.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.73
       }
     },
     "additionalImages": [
@@ -7036,13 +7088,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445835618195475224562414",
+        "sku": "9SIAADYBGR5006",
         "price": 74.95,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835618195475224562414&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l12-ghost-s1-edition%2Fp%2F13C-0005-001K0%3Fitem%3D9SIAADYBGR5006",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200622DKf1i.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.552Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -7082,6 +7134,16 @@ export default [
         "price": 307.21,
         "url": "https://www.amazon.com/dp/B00B4OCW7K?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC5BHKST3485",
+        "price": 189,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834740185723529124120&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-liquid-cooling-system%2Fp%2FN82E16835181101%3Fitem%3D9SIC5BHKST3485",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-101-04.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.6
       }
     },
     "additionalImages": [
@@ -7127,14 +7189,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445835391474964322709947",
-        "price": 95.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835391474964322709947&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00082%3Fitem%3D9SIA2W0KG06305",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25061008NHHI48.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.347Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIA2W0KN13320",
+        "price": 89.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836166787166750077171&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00089%3Fitem%3D9SIA2W0KN13320",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A9H5S25091214S59738.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.77
       },
       "bestbuy": {
         "price": 82.99,
@@ -7223,12 +7285,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC22JKK95927",
+        "sku": "9SIAZTUKED3756",
         "price": 66,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311002510296217468190&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-011K-003Y4%3Fitem%3D9SIC22JKK95927",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316997263513608680480&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-011K-003Y4%3Fitem%3D9SIAZTUKED3756",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASSAD2206070SG3EM1E.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.93
       }
@@ -7315,10 +7377,10 @@ export default [
       "newegg": {
         "sku": "9SIBVHXKD66176",
         "price": 59.9,
-        "saleprice": null,
+        "saleprice": 49.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318353536696411896464&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000M8%3Fitem%3D9SIBVHXKD66176",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS25011004VUZLA7.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.9
       }
@@ -7431,18 +7493,18 @@ export default [
     "reviews": 257,
     "deals": {
       "amazon": {
-        "price": 299.99,
+        "price": 475.13,
         "url": "https://www.amazon.com/dp/B09GKPZ8YS?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317965627984967861036",
+        "sku": "9SIA4REJX24278",
         "price": 219.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317965627984967861036&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-system%2Fp%2FN82E16835146083%3Fitem%3D9SIA4REJX24278",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-083-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.457Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -7481,17 +7543,17 @@ export default [
     "reviews": 278,
     "deals": {
       "amazon": {
-        "price": 53.99,
+        "price": 49.99,
         "url": "https://www.amazon.com/dp/B0CHMFDCNJ?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "9SIAHCTKC52621",
-        "price": 83.98,
-        "saleprice": 41.99,
+        "price": 59.49,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312453617362195166704&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpccooler-rz620-bk%2Fp%2F13C-012K-00002%3Fitem%3D9SIAHCTKC52621",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHCTS250825057OFU4E.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.65
       }
@@ -7528,17 +7590,17 @@ export default [
     "reviews": 247,
     "deals": {
       "amazon": {
-        "price": 169.99,
+        "price": 148.19,
         "url": "https://www.amazon.com/dp/B0D83QQWDD?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAFSTKAX2522",
+        "sku": "2YM-002Y-00032",
         "price": 179.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831437775735493504829&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-002Y-00033%3Fitem%3D9SIAFSTKAX2522",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS240625UeIWv.jpg",
-        "matchedAt": "2026-05-13",
+        "saleprice": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313401713333438886268&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-002Y-00032%3Fitem%3D2YM-002Y-00032",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS240625xSwJ0.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.88
       }
@@ -7579,17 +7641,17 @@ export default [
     "reviews": 242,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 71.99,
         "url": "https://www.amazon.com/dp/B0DYZJYS2H?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBZH7KFG1800",
+        "sku": "13C-012U-00004",
         "price": 89.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312355160321566614179&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsudokoo-sk700-v-wh-amazon%2Fp%2F13C-012U-00004%3Fitem%3D9SIBZH7KFG1800",
+        "saleprice": 80.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833432648976334155737&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsudokoo-sk700-v-wh-amazon%2Fp%2F13C-012U-00004%3Fitem%3D13C-012U-00004",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BZH7S2508120YRX0WF0.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -7626,7 +7688,7 @@ export default [
     "reviews": 192,
     "deals": {
       "amazon": {
-        "price": 48.68,
+        "price": 43.27,
         "url": "https://www.amazon.com/dp/B0CCP6MX1M?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7667,7 +7729,7 @@ export default [
     "reviews": 183,
     "deals": {
       "amazon": {
-        "price": 119.99,
+        "price": 99.99,
         "url": "https://www.amazon.com/dp/B0F5S84X8P?tag=tiereduptech-20",
         "inStock": true
       },
@@ -7716,7 +7778,7 @@ export default [
     "reviews": 182,
     "deals": {
       "amazon": {
-        "price": 53.99,
+        "price": 45.89,
         "url": "https://www.amazon.com/dp/B0FHW1BXXD?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7757,7 +7819,7 @@ export default [
     "reviews": 182,
     "deals": {
       "amazon": {
-        "price": 52.99,
+        "price": 47.82,
         "url": "https://www.amazon.com/dp/B0FHW333V3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7825,7 +7887,9 @@ export default [
     "height": 52,
     "cfm": 132,
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-25"
   },
   {
     "id": 80170,
@@ -7899,7 +7963,7 @@ export default [
     "reviews": 214,
     "deals": {
       "amazon": {
-        "price": 42.99,
+        "price": 33.99,
         "url": "https://www.amazon.com/dp/B0DHRPB9GP?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7936,7 +8000,7 @@ export default [
     "reviews": 172,
     "deals": {
       "amazon": {
-        "price": 130.46,
+        "price": 109.98,
         "url": "https://www.amazon.com/dp/B0DVNKR4L9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8026,6 +8090,16 @@ export default [
         "price": 84.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12365866&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-masterliquid-core-ii-240mm-aio-cpu-liquid-cooler-black%2FJ3K4GJS2SJ&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA0ZXKGS0774",
+        "price": 101.35,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313920391339998696095&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Falphacool-aio-masterliquid-ml240r-rgb-radiator-size-240-mm-black%2Fp%2F2YM-0004-000X6%3Fitem%3D9SIA0ZXKGS0774",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A9H5D2506261C7EZE34.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "discount": 12,
@@ -8071,14 +8145,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458312544909153170223096",
-        "price": 125.11,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312544909153170223096&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F37B-009H-00003%3Fitem%3D9SIA0ZXKD55865",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS25031303HRXVF4.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.206Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "sku": "9SIA0ZXKD55873",
+        "price": 119.39,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838477450333702774941&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F37B-009H-00002%3Fitem%3D9SIA0ZXKD55873",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2411280FirI.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.75
       },
       "bestbuy": {
         "price": 104.99,
@@ -8128,13 +8202,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458317108635872103029921",
+        "sku": "9SIAFSTKCV3431",
         "price": 84.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317108635872103029921&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F37B-009H-00005%3Fitem%3D9SIAFSTKCV3431",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/37B-009H-00005-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.978Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -8185,12 +8259,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAD6HGRF5339",
-        "price": 186.93,
+        "sku": "9SIC70SKYB6911",
+        "price": 173.94,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316731116955961334531&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-liquid-cooling-272-mm-intel-lga-2066-2011-2011-3-1700-1366-1200-115x-amd-am4-tr4-black%2Fp%2FN82E16835101075%3Fitem%3D9SIAD6HGRF5339",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832500918932725228030&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-liquid-cooling-272-mm-intel-lga-2066-2011-2011-3-1700-1366-1200-115x-amd-am4-tr4-black%2Fp%2FN82E16835101075%3Fitem%3D9SIC70SKYB6911",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-075-V01.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -8232,17 +8306,17 @@ export default [
     "reviews": 142,
     "deals": {
       "amazon": {
-        "price": 87.99,
+        "price": 79.19,
         "url": "https://www.amazon.com/dp/B0CXXTMBG7?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIB7VEKJ78374",
-        "price": 179.99,
+        "sku": "9SIB7VEKJ78373",
+        "price": 175.99,
         "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833733841284319893451&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-00AY-00026%3Fitem%3D9SIB7VEKJ78374",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B7VES2507090TCMW63C.jpg",
-        "matchedAt": "2026-05-13",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831129275067499017932&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-00AY-00025%3Fitem%3D9SIB7VEKJ78373",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B7VES2507090TAR5073.jpg",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.9
       }
@@ -8324,17 +8398,17 @@ export default [
     "reviews": 139,
     "deals": {
       "amazon": {
-        "price": 39.9,
+        "price": 31.92,
         "url": "https://www.amazon.com/dp/B09S38B3JV?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "9SIBVHXKFV5661",
         "price": 59.9,
-        "saleprice": 54.9,
+        "saleprice": 55.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583253514936075810061&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermalright-pa120-d-argb-w%2Fp%2F13C-000Y-000N5%3Fitem%3D9SIBVHXKFV5661",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXD2505300CN8RL58.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.79
       }
@@ -8372,7 +8446,7 @@ export default [
     "reviews": 136,
     "deals": {
       "amazon": {
-        "price": 35.72,
+        "price": 39.69,
         "url": "https://www.amazon.com/dp/B0DQDBSYSQ?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8382,7 +8456,7 @@ export default [
         "saleprice": 59.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838750195420648520439&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000N6%3Fitem%3D9SIBVHXKK97556",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2508200FG3BA5A.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.53
       }
@@ -8420,18 +8494,18 @@ export default [
     "reviews": 134,
     "deals": {
       "amazon": {
-        "price": 44.16,
+        "price": 52.98,
         "url": "https://www.amazon.com/dp/B0C6YQ8DPQ?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458313170495495992688077",
+        "sku": "N82E16835103358",
         "price": 49.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313170495495992688077&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-620s-120mm-intel-lga-1700-1200-1151-1150-1155-1156-amd-am5-am4%2Fp%2FN82E16835103358%3Fitem%3DN82E16835103358",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-358-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.795Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -8474,7 +8548,7 @@ export default [
     "reviews": 128,
     "deals": {
       "amazon": {
-        "price": 59.99,
+        "price": 47.49,
         "url": "https://www.amazon.com/dp/B0DM4CBKFY?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8529,7 +8603,7 @@ export default [
     "reviews": 124,
     "deals": {
       "amazon": {
-        "price": 94.43,
+        "price": 69.98,
         "url": "https://www.amazon.com/dp/B0DQ2LJ9VH?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8577,7 +8651,7 @@ export default [
     "reviews": 119,
     "deals": {
       "amazon": {
-        "price": 43.46,
+        "price": 38.63,
         "url": "https://www.amazon.com/dp/B0BLJGF79V?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8612,7 +8686,7 @@ export default [
     "reviews": 116,
     "deals": {
       "amazon": {
-        "price": 64.99,
+        "price": 51.99,
         "url": "https://www.amazon.com/dp/B0CS6DPJ6J?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8652,7 +8726,7 @@ export default [
     "reviews": 110,
     "deals": {
       "amazon": {
-        "price": 66.42,
+        "price": 59.04,
         "url": "https://www.amazon.com/dp/B0D1JW9MVB?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8662,7 +8736,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839295157379428780196&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-00AY-00027%3Fitem%3D9SIB7VEKJ78375",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B7VES2507090TIR9V30.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.59
       }
@@ -8709,13 +8783,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445834871204183147131830",
-        "price": 169.95,
+        "sku": "9SIAADYKB59099",
+        "price": 159.95,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834871204183147131830&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00356%3Fitem%3D9SIAADYKB59099",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2407010J63FDFA.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -8753,7 +8827,7 @@ export default [
     "reviews": 98,
     "deals": {
       "amazon": {
-        "price": 72.98,
+        "price": 64.87,
         "url": "https://www.amazon.com/dp/B0D1JZXJHH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8795,7 +8869,7 @@ export default [
     "reviews": 110,
     "deals": {
       "amazon": {
-        "price": 43.11,
+        "price": 38.32,
         "url": "https://www.amazon.com/dp/B0BLJGW838?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8829,7 +8903,7 @@ export default [
     "reviews": 94,
     "deals": {
       "amazon": {
-        "price": 119.99,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0DSJ2RDKV?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8839,7 +8913,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311310055436916961978&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-002E-00030%3Fitem%3D9SIA2W0KN02518",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25100207T6ZGAB.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.5
       }
@@ -8879,7 +8953,7 @@ export default [
     "reviews": 95,
     "deals": {
       "amazon": {
-        "price": 85.49,
+        "price": 71.99,
         "url": "https://www.amazon.com/dp/B0CBRFXRFZ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8957,7 +9031,7 @@ export default [
     "reviews": 93,
     "deals": {
       "amazon": {
-        "price": 48.99,
+        "price": 42.83,
         "url": "https://www.amazon.com/dp/B0BWH4PGR7?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8998,7 +9072,7 @@ export default [
     "reviews": 91,
     "deals": {
       "amazon": {
-        "price": 46.07,
+        "price": 51.19,
         "url": "https://www.amazon.com/dp/B0CDPKSTWP?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9131,7 +9205,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839444659218444432568&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000N2%3Fitem%3D9SIBVHXKDW6415",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2502180MMZ3N65.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.7
       }
@@ -9174,12 +9248,12 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBZH7KF35593",
+        "sku": "2YM-00BJ-00003",
         "price": 99.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317711896681249063994&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsudokoo-water-nexaura240-radiator-size-282-120-27-mm-cpu-black%2Fp%2F2YM-00BJ-00003%3Fitem%3D9SIBZH7KF35593",
+        "saleprice": 50,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837151575107503741238&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsudokoo-water-nexaura240-radiator-size-282-120-27-mm-cpu-black%2Fp%2F2YM-00BJ-00003%3Fitem%3D2YM-00BJ-00003",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BZH7S2508120YXZPL5E.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1
       }
@@ -9262,17 +9336,17 @@ export default [
     "reviews": 88,
     "deals": {
       "amazon": {
-        "price": 34.99,
+        "price": 37.99,
         "url": "https://www.amazon.com/dp/B0DRFXH8L8?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "9SIBVHXKD66176",
         "price": 59.9,
-        "saleprice": null,
+        "saleprice": 49.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318353536696411896464&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000M8%3Fitem%3D9SIBVHXKD66176",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS25011004VUZLA7.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.85
       }
@@ -9310,7 +9384,7 @@ export default [
     "reviews": 73,
     "deals": {
       "amazon": {
-        "price": 79.9,
+        "price": 69.9,
         "url": "https://www.amazon.com/dp/B0DY2JT3W5?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9413,7 +9487,7 @@ export default [
     "reviews": 70,
     "deals": {
       "amazon": {
-        "price": 40.22,
+        "price": 35.75,
         "url": "https://www.amazon.com/dp/B0DBFSDPYY?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9534,7 +9608,7 @@ export default [
     "reviews": 63,
     "deals": {
       "amazon": {
-        "price": 47.9,
+        "price": 38.32,
         "url": "https://www.amazon.com/dp/B0D83LB8PB?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9575,7 +9649,7 @@ export default [
     "reviews": 63,
     "deals": {
       "amazon": {
-        "price": 57.04,
+        "price": 81.49,
         "url": "https://www.amazon.com/dp/B0DK6T8THN?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9585,7 +9659,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838393370724340115711&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-00AY-00029%3Fitem%3D9SIB7VEKJ78377",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B7VES2507090TP0W952.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.72
       }
@@ -9626,7 +9700,7 @@ export default [
     "reviews": 62,
     "deals": {
       "amazon": {
-        "price": 29.99,
+        "price": 18.75,
         "url": "https://www.amazon.com/dp/B0DBL67VW8?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9663,7 +9737,7 @@ export default [
     "reviews": 61,
     "deals": {
       "amazon": {
-        "price": 139.99,
+        "price": 76.49,
         "url": "https://www.amazon.com/dp/B0CBRF7N3L?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9703,7 +9777,7 @@ export default [
     "reviews": 58,
     "deals": {
       "amazon": {
-        "price": 199,
+        "price": 179.99,
         "url": "https://www.amazon.com/dp/B0CBV7474S?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9741,9 +9815,19 @@ export default [
     "reviews": 57,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 56.34,
         "url": "https://www.amazon.com/dp/B0DBL8LJ15?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC135KJ72007",
+        "price": 89.99,
+        "saleprice": 69.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310244036203273341256&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdarkflash-aio-radiator-size-15-63-4-72-1-06%2Fp%2F2YM-002E-00021%3Fitem%3D9SIC135KJ72007",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C135S2511130H98WA03.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.5
       }
     },
     "additionalImages": [
@@ -9783,6 +9867,16 @@ export default [
         "price": 32.9,
         "url": "https://www.amazon.com/dp/B0D2VKHY1T?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXK8D7529",
+        "price": 49.9,
+        "saleprice": 46.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310269821976016004255&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000J2%3Fitem%3D9SIBVHXK8D7529",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS24052407KAKNB6.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.6
       }
     },
     "additionalImages": [
@@ -9818,9 +9912,19 @@ export default [
     "reviews": 54,
     "deals": {
       "amazon": {
-        "price": 19.99,
+        "price": 22.99,
         "url": "https://www.amazon.com/dp/B0FJM5X4YX?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAHCTKKH8331",
+        "price": 30.59,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835749815879678410580&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpccooler-rt500-digital-bk-120mm-intel-lga-1851-1700-1200-115x-amd-am5-am4%2Fp%2F13C-012K-00022%3Fitem%3D9SIAHCTKKH8331",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHCTS251209029KZM4D.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.78
       }
     },
     "additionalImages": [
@@ -9855,7 +9959,7 @@ export default [
     "reviews": 49,
     "deals": {
       "amazon": {
-        "price": 259.99,
+        "price": 181.99,
         "url": "https://www.amazon.com/dp/B0DYZLRXSB?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9863,6 +9967,16 @@ export default [
         "price": 259.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10302700&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsudokoo-proteus-360-aio-liquid-cpu-cooler-black%2FJ3R85WPS95&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "2YM-00BJ-00001",
+        "price": 207.99,
+        "saleprice": 181.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310933413870324808045&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsudokoo-liquid-cooler-cpu-black%2Fp%2F2YM-00BJ-00001%3Fitem%3D2YM-00BJ-00001",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BZH7S2508120YZO3B9F.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.57
       }
     },
     "additionalImages": [
@@ -9943,7 +10057,7 @@ export default [
     "reviews": 47,
     "deals": {
       "amazon": {
-        "price": 177.99,
+        "price": 172.92,
         "url": "https://www.amazon.com/dp/B0CD759GSY?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9996,7 +10110,7 @@ export default [
     "reviews": 45,
     "deals": {
       "amazon": {
-        "price": 64.99,
+        "price": 51.99,
         "url": "https://www.amazon.com/dp/B0DYDF5F4Y?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10035,9 +10149,19 @@ export default [
     "reviews": 43,
     "deals": {
       "amazon": {
-        "price": 199.99,
+        "price": 179.99,
         "url": "https://www.amazon.com/dp/B0CBJQ4R9X?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835101099",
+        "price": 219.99,
+        "saleprice": 179.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312571499905431791121&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-liquid-coolin-rog-ryujin-iii-radiator-size-279-mm-intel-lga-1700-1200-115x-amd-am5-am4-white%2Fp%2FN82E16835101099%3Fitem%3DN82E16835101099",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-099-08.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -10076,7 +10200,7 @@ export default [
     "reviews": 43,
     "deals": {
       "amazon": {
-        "price": 96.9,
+        "price": 73.64,
         "url": "https://www.amazon.com/dp/B0DK3C8CWF?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10148,19 +10272,18 @@ export default [
     "reviews": 41,
     "deals": {
       "amazon": {
-        "price": 35.14,
+        "price": 29.86,
         "url": "https://www.amazon.com/dp/B0FCFMX5RN?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458312958248223349120143",
-        "price": 46.99,
-        "saleprice": 34.99,
+        "sku": "N82E16835607011",
+        "price": 49.99,
+        "saleprice": 35.14,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312958248223349120143&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsama-a60b-120mm-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2FN82E16835607011%3Fitem%3DN82E16835607011",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-607-011-03.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -10198,7 +10321,7 @@ export default [
     "reviews": 42,
     "deals": {
       "amazon": {
-        "price": 64.99,
+        "price": 55.99,
         "url": "https://www.amazon.com/dp/B0D97QNVP5?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10238,7 +10361,7 @@ export default [
     "reviews": 40,
     "deals": {
       "amazon": {
-        "price": 84.51,
+        "price": 71.67,
         "url": "https://www.amazon.com/dp/B0DK3PRFN9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10359,9 +10482,19 @@ export default [
     "reviews": 39,
     "deals": {
       "amazon": {
-        "price": 31.09,
+        "price": 25.49,
         "url": "https://www.amazon.com/dp/B0DWDMHYYS?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA2W0KPW8659",
+        "price": 43.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832150892608202230575&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-rr-h410-25pk-r1-411-nano%2Fp%2F13C-000X-004J1%3Fitem%3D9SIA2W0KPW8659",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C27FD2510170Z7I9MF2.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -10492,17 +10625,17 @@ export default [
     "reviews": 38,
     "deals": {
       "amazon": {
-        "price": 69.99,
+        "price": 90.33,
         "url": "https://www.amazon.com/dp/B0DPY1WQMJ?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "N82E16835846071",
         "price": 99.99,
-        "saleprice": null,
+        "saleprice": 89.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315757273679685080878&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-aio-radiator-size-240-mm-amd-socket-am4-amd-socket-am5-intel-lga-1700-intel-lga-1851%2Fp%2FN82E16835846071%3Fitem%3DN82E16835846071",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-071-21.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.79
       }
@@ -10544,17 +10677,17 @@ export default [
     "reviews": 35,
     "deals": {
       "amazon": {
-        "price": 139.99,
+        "price": 129.99,
         "url": "https://www.amazon.com/dp/B0FJL5GZCW?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "9SIAHCTKGH6535",
-        "price": 239.98,
-        "saleprice": 119.99,
+        "price": 169.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832912868951116858706&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpccooler-liquid-cooling-system-dt-radiator-size-394-mm-intel-lga-1851-1700-1200-115x-amd-am5-am4-white%2Fp%2F2YM-00BC-00006%3Fitem%3D9SIAHCTKGH6535",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHCTS2506300DJNF846.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.7
       }
@@ -10595,7 +10728,7 @@ export default [
     "reviews": 34,
     "deals": {
       "amazon": {
-        "price": 19.99,
+        "price": 18.99,
         "url": "https://www.amazon.com/dp/B0FLTBSXW3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10634,7 +10767,7 @@ export default [
     "reviews": 34,
     "deals": {
       "amazon": {
-        "price": 48.23,
+        "price": 42.87,
         "url": "https://www.amazon.com/dp/B0FD3XQ143?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10672,7 +10805,7 @@ export default [
     "reviews": 33,
     "deals": {
       "amazon": {
-        "price": 235.9,
+        "price": 199.99,
         "url": "https://www.amazon.com/dp/B0CL6FN52B?tag=tiereduptech-20",
         "inStock": true
       },
@@ -10730,7 +10863,7 @@ export default [
     "reviews": 32,
     "deals": {
       "amazon": {
-        "price": 49.99,
+        "price": 39.99,
         "url": "https://www.amazon.com/dp/B0F7KFWMM6?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10770,7 +10903,7 @@ export default [
     "reviews": 31,
     "deals": {
       "amazon": {
-        "price": 52.24,
+        "price": 43.99,
         "url": "https://www.amazon.com/dp/B0DPLZH6VP?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10810,7 +10943,7 @@ export default [
     "reviews": 29,
     "deals": {
       "amazon": {
-        "price": 64.9,
+        "price": 51.92,
         "url": "https://www.amazon.com/dp/B0D1K9H3H6?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10851,7 +10984,7 @@ export default [
     "reviews": 28,
     "deals": {
       "amazon": {
-        "price": 69.99,
+        "price": 66.49,
         "url": "https://www.amazon.com/dp/B0DPWXPJQ7?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10891,7 +11024,7 @@ export default [
     "reviews": 29,
     "deals": {
       "amazon": {
-        "price": 323.99,
+        "price": 300.99,
         "url": "https://www.amazon.com/dp/B0CLB7LMCW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10930,7 +11063,7 @@ export default [
     "reviews": 27,
     "deals": {
       "amazon": {
-        "price": 127.39,
+        "price": 95.54,
         "url": "https://www.amazon.com/dp/B0DK37XJWG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -11023,7 +11156,7 @@ export default [
     "reviews": 25,
     "deals": {
       "amazon": {
-        "price": 118.9,
+        "price": 95.12,
         "url": "https://www.amazon.com/dp/B0FHGSM9NK?tag=tiereduptech-20",
         "inStock": true
       }
@@ -11106,7 +11239,7 @@ export default [
     "reviews": 21,
     "deals": {
       "amazon": {
-        "price": 77.9,
+        "price": 62.32,
         "url": "https://www.amazon.com/dp/B0DK3D238Q?tag=tiereduptech-20",
         "inStock": true
       }
@@ -11147,17 +11280,17 @@ export default [
     "reviews": 21,
     "deals": {
       "amazon": {
-        "price": 38.99,
+        "price": 36.09,
         "url": "https://www.amazon.com/dp/B0DY78CKK8?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
         "sku": "9SIBVHXKFV5661",
         "price": 59.9,
-        "saleprice": 54.9,
+        "saleprice": 55.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583253514936075810061&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermalright-pa120-d-argb-w%2Fp%2F13C-000Y-000N5%3Fitem%3D9SIBVHXKFV5661",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXD2505300CN8RL58.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.77
       }
@@ -11227,7 +11360,7 @@ export default [
     "reviews": 19,
     "deals": {
       "amazon": {
-        "price": 100.99,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0F6W6Z669?tag=tiereduptech-20",
         "inStock": true
       }
@@ -11269,19 +11402,18 @@ export default [
     "reviews": 17,
     "deals": {
       "amazon": {
-        "price": 192.57,
+        "price": 194.98,
         "url": "https://www.amazon.com/dp/B0FPBPK5LY?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458314182246207624086000",
-        "price": 219.99,
-        "saleprice": 182.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314182246207624086000&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-aio-radiator-size-394-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2FN82E16835103380%3Fitem%3DN82E16835103380",
+        "sku": "9SIA2W0KPR6253",
+        "price": 194.98,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318410961451218605493&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-aio-radiator-size-394-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2FN82E16835103380%3Fitem%3D9SIA2W0KPR6253",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-380-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.795Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "bestbuy": {
@@ -11329,7 +11461,7 @@ export default [
     "reviews": 19,
     "deals": {
       "amazon": {
-        "price": 74.99,
+        "price": 59.99,
         "url": "https://www.amazon.com/dp/B0FM7PZBP6?tag=tiereduptech-20",
         "inStock": true
       }
@@ -11369,7 +11501,7 @@ export default [
     "reviews": 15,
     "deals": {
       "amazon": {
-        "price": 116.31,
+        "price": 109.04,
         "url": "https://www.amazon.com/dp/B0DP6514B2?tag=tiereduptech-20",
         "inStock": true
       }
@@ -11410,7 +11542,7 @@ export default [
     "reviews": 15,
     "deals": {
       "amazon": {
-        "price": 59.99,
+        "price": 50.99,
         "url": "https://www.amazon.com/dp/B0FMJYX5W1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -11513,7 +11645,7 @@ export default [
         "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837910481277643344548&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-00UE-00005%3Fitem%3D9SIC35VKPJ7123",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C35VD2512160CSUIY87.jpg",
-        "matchedAt": "2026-05-13",
+        "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.88
       }
@@ -11643,7 +11775,7 @@ export default [
     "reviews": 12,
     "deals": {
       "amazon": {
-        "price": 64.99,
+        "price": 74.99,
         "url": "https://www.amazon.com/dp/B0F8CRYJ3P?tag=tiereduptech-20",
         "inStock": true
       },
@@ -11707,7 +11839,7 @@ export default [
     "reviews": 13,
     "deals": {
       "amazon": {
-        "price": 236.06,
+        "price": 173.01,
         "url": "https://www.amazon.com/dp/B0CQ4C265S?tag=tiereduptech-20",
         "inStock": true
       }
@@ -11745,7 +11877,7 @@ export default [
     "reviews": 12,
     "deals": {
       "amazon": {
-        "price": 152.38,
+        "price": 139.99,
         "url": "https://www.amazon.com/dp/B0FG7LGDDL?tag=tiereduptech-20",
         "inStock": true
       },
@@ -11806,6 +11938,16 @@ export default [
         "price": 149.95,
         "url": "https://www.amazon.com/dp/B0BSXNCMHP?tag=tiereduptech-20",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAADYJJH2774",
+        "price": 149.95,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317486102861121681615&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12s-dx-4677%2Fp%2F13C-0005-00318%3Fitem%3D9SIAADYJJH2774",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2302020JHK5Q3D.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -12138,7 +12280,7 @@ export default [
     "reviews": 7,
     "deals": {
       "amazon": {
-        "price": 23.99,
+        "price": 19.19,
         "url": "https://www.amazon.com/dp/B0D3C6ZRQG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -12176,18 +12318,18 @@ export default [
     "reviews": 5,
     "deals": {
       "amazon": {
-        "price": 134.99,
+        "price": 113.99,
         "url": "https://www.amazon.com/dp/B0FM1V3Q3F?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "4458314337799263769700289",
-        "price": 156.98,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314337799263769700289&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-aio-tuf-gaming-lc-iii-radiator-size-397-mm-argb%2Fp%2FN82E16835101134%3Fitem%3D9SIC4G4KVY8079",
+        "sku": "9SIC70SKYB6920",
+        "price": 149.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837827478855885827462&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-aio-tuf-gaming-lc-iii-radiator-size-397-mm-argb%2Fp%2FN82E16835101134%3Fitem%3D9SIC70SKYB6920",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-134-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.609Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12233,13 +12375,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458316016139715996759116",
+        "sku": "9SIA8EF5VJ0374",
         "price": 29.99,
+        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316016139715996759116&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-contac-silent-12-cl-p039-al12bl-a%2Fp%2FN82E16835106372%3Fitem%3D9SIA8EF5VJ0374",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-372-Z01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.449Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -12402,6 +12544,16 @@ export default [
         "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6486421&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6486421.p%3FskuId%3D6486421",
         "inStock": false
+      },
+      "newegg": {
+        "sku": "N82E16835146088",
+        "price": 101.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318038324515954504346&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-152-mm-intel-lga-2066-2011-3-2011-1366-1200-115x-amd-am4-am3-am3-am2-am2-fm2-blk%2Fp%2FN82E16835146088%3Fitem%3DN82E16835146088",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-088-S01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.69
       }
     },
     "coolerType": "AIO",
@@ -13042,14 +13194,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835181482",
-        "price": 219.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316193180280711627293&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-radiator-size-396mm-x-120mm-x-27mm-amd-am5-am4-intel-1851-1700-white%2Fp%2FN82E16835181482%3Fitem%3DN82E16835181482",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-482-87.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.77
+        "sku": "0EZ-00MD-00003",
+        "price": 199.99,
+        "saleprice": 149.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316520423169428724710&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Falphacool-aio-radiator-size-396-mm-amd-socket-am4-amd-socket-am5-intel-lga-1700-intel-lga-1851-green%2Fp%2F0EZ-00MD-00003%3Fitem%3D0EZ-00MD-00003",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD24092519JPJ7D6.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -13220,14 +13372,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "4458315654209091533159137",
+        "sku": "0EZ-00MD-00004",
         "price": 199.99,
         "saleprice": 149.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315654209091533159137&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Falphacool-aio-radiator-size-396-mm-amd-socket-am4-amd-socket-am5-intel-lga-1700-intel-lga-1851-green%2Fp%2F0EZ-00MD-00004%3Fitem%3D0EZ-00MD-00004",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD24092519JPLP40.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.122Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -13665,14 +13816,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445839811790341153821207",
-        "price": 168.99,
-        "saleprice": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839811790341153821207&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-360-rs-lcd-amd-am5-am4-intel-1851-1700%2Fp%2FN82E16835181495%3Fitem%3DN82E16835181495",
+        "sku": "9SIC70SKYH2123",
+        "price": 157,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315595852119163782364&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-360-rs-lcd-amd-am5-am4-intel-1851-1700%2Fp%2FN82E16835181495%3Fitem%3D9SIC70SKYH2123",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-495-02.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       }
     },
@@ -13713,14 +13863,14 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835181493",
-        "price": 149.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583540025719306775679&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-240-lcd-amd-am5-am4-intel-1851-1700-black%2Fp%2FN82E16835181493%3Fitem%3DN82E16835181493",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-493-19.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.89
+        "sku": "N82E16835181494",
+        "price": 139.99,
+        "saleprice": 99.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834252585428532743544&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-240-lcd-amd-am5-am4-intel-1851-1700-black%2Fp%2FN82E16835181494%3Fitem%3DN82E16835181494",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-494-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -13760,14 +13910,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445831320570467464369778",
+        "sku": "N82E16835846074",
         "price": 189.99,
-        "saleprice": 149.99,
+        "saleprice": 129.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831320570467464369778&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-aio-coreliquid-p13-series-radiator-size-394-x-119-6-x-27mm-lga-1700-1851-am5-am4-white%2Fp%2FN82E16835846074%3Fitem%3DN82E16835846074",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-074-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "msi": {
@@ -13813,14 +13962,13 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "445833246132042867632968",
+        "sku": "N82E16835846079",
         "price": 179.99,
-        "saleprice": 139.99,
+        "saleprice": 94.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833246132042867632968&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-aio-radiator-size-394-mm-am5-am4-lga-1700-1851%2Fp%2FN82E16835846079%3Fitem%3DN82E16835846079",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-079-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.796Z",
-        "matchMethod": "sftp:upc",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "upc",
         "matchScore": 1
       },
       "msi": {
@@ -13962,7 +14110,7 @@ export default [
       "amazon": {
         "asin": "B0F5SCG6QC",
         "url": "https://www.amazon.com/dp/B0F5SCG6QC?tag=tiereduptech-20",
-        "price": 169.99,
+        "price": 149.99,
         "inStock": true
       }
     },
@@ -14024,7 +14172,7 @@ export default [
       "amazon": {
         "asin": "B0DM4BRSV5",
         "url": "https://www.amazon.com/dp/B0DM4BRSV5?tag=tiereduptech-20",
-        "price": 88,
+        "price": 66.49,
         "inStock": true
       }
     },
@@ -14057,6 +14205,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FGDJ3QP1?tag=tiereduptech-20",
         "price": 159.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC70SKYH2123",
+        "price": 157,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315595852119163782364&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-360-rs-lcd-amd-am5-am4-intel-1851-1700%2Fp%2FN82E16835181495%3Fitem%3D9SIC70SKYH2123",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-495-02.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.91
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -14089,6 +14247,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FX2XJKX3?tag=tiereduptech-20",
         "price": 85.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAHCTKEZ4478",
+        "price": 73.09,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583418820212169064804&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpccooler-liquid-cooling-system-radiator-size-394-mm-intel-lga-1851-1700-1200-115x-amd-am5-am4-black%2Fp%2F2YM-00BC-00004%3Fitem%3D9SIAHCTKEZ4478",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BYC4S26050806V2DQD9.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.62
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -14228,8 +14396,18 @@ export default [
       "amazon": {
         "asin": "B0DQ5ND3XL",
         "url": "https://www.amazon.com/dp/B0DQ5ND3XL?tag=tiereduptech-20",
-        "price": 41.9,
+        "price": 33.52,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXKK97556",
+        "price": 69.99,
+        "saleprice": 59.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838750195420648520439&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000N6%3Fitem%3D9SIBVHXKK97556",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2508200FG3BA5A.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.75
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -14319,7 +14497,7 @@ export default [
       "amazon": {
         "asin": "B0FD3K27YN",
         "url": "https://www.amazon.com/dp/B0FD3K27YN?tag=tiereduptech-20",
-        "price": 53.09,
+        "price": 42.47,
         "inStock": true
       }
     },
@@ -14377,7 +14555,7 @@ export default [
       "amazon": {
         "asin": "B0FVW7FHW3",
         "url": "https://www.amazon.com/dp/B0FVW7FHW3?tag=tiereduptech-20",
-        "price": 23.9,
+        "price": 19.9,
         "inStock": true
       }
     },
@@ -14405,6 +14583,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0DPHS13XW?tag=tiereduptech-20",
         "price": 112.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA2W0KHX4823",
+        "price": 129.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838677264603766181997&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00088%3Fitem%3D9SIA2W0KHX4823",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25072401DOR67A.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.8
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -14538,7 +14726,7 @@ export default [
       "amazon": {
         "asin": "B0D1RHS6WS",
         "url": "https://www.amazon.com/dp/B0D1RHS6WS?tag=tiereduptech-20",
-        "price": 49.99,
+        "price": 29.99,
         "inStock": true
       }
     },
@@ -14593,6 +14781,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FPWZ5T6B?tag=tiereduptech-20",
         "price": 134.88,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIC5BHKST3422",
+        "price": 329,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314142132321104966114&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-liquid-cooling-system-icue-h150i-elite-capellix%2Fp%2FN82E16835181203%3Fitem%3D9SIC5BHKST3422",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-203-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.69
       }
     },
     "addedAt": "2026-05-15T13:17:14.411Z",
@@ -14615,7 +14813,7 @@ export default [
       "amazon": {
         "asin": "B09JG59MGK",
         "url": "https://www.amazon.com/dp/B09JG59MGK?tag=tiereduptech-20",
-        "price": 49.99,
+        "price": 42.49,
         "inStock": true
       }
     },
@@ -14635,7 +14833,7 @@ export default [
       "amazon": {
         "asin": "B0FZB1BJR1",
         "url": "https://www.amazon.com/dp/B0FZB1BJR1?tag=tiereduptech-20",
-        "price": 13.99,
+        "price": 14.99,
         "inStock": true
       }
     },
@@ -14691,6 +14889,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FF4PD4P2?tag=tiereduptech-20",
         "price": 19.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835607013",
+        "price": 39.99,
+        "saleprice": 28.11,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835138823013316115668&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsama-a60e-120mm-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2FN82E16835607013%3Fitem%3DN82E16835607013",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-607-013-02.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.68
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -14721,6 +14929,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0DCMQFZHQ?tag=tiereduptech-20",
         "price": 15.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBGX1KDX8839",
+        "price": 17.99,
+        "saleprice": 15.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835500896620732602178&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-00F3-00023%3Fitem%3D9SIBGX1KDX8839",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGX1S2501020CN69O6F.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -14749,7 +14967,7 @@ export default [
       "amazon": {
         "asin": "B0DS21WM8H",
         "url": "https://www.amazon.com/dp/B0DS21WM8H?tag=tiereduptech-20",
-        "price": 18.99,
+        "price": 14.43,
         "inStock": true
       }
     },
@@ -14838,8 +15056,18 @@ export default [
       "amazon": {
         "asin": "B07MFMFL7R",
         "url": "https://www.amazon.com/dp/B07MFMFL7R?tag=tiereduptech-20",
-        "price": 11.12,
+        "price": 10.5,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBKCFKVY5874",
+        "price": 16.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838189949185267230795&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-e97379-001%2Fp%2F13C-001X-00003%3Fitem%3D9SIBKCFKVY5874",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V0M5_1_201812281994865129.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -15008,7 +15236,7 @@ export default [
       "amazon": {
         "asin": "B0DS2265RM",
         "url": "https://www.amazon.com/dp/B0DS2265RM?tag=tiereduptech-20",
-        "price": 19.99,
+        "price": 15.99,
         "inStock": true
       }
     },
@@ -15066,7 +15294,7 @@ export default [
       "amazon": {
         "asin": "B0GD1CJ71R",
         "url": "https://www.amazon.com/dp/B0GD1CJ71R?tag=tiereduptech-20",
-        "price": 57.69,
+        "price": 46.15,
         "inStock": true
       }
     },
@@ -15100,6 +15328,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0GQXVHDY3?tag=tiereduptech-20",
         "price": 45.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAHCTKC52621",
+        "price": 59.49,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312453617362195166704&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpccooler-rz620-bk%2Fp%2F13C-012K-00002%3Fitem%3D9SIAHCTKC52621",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHCTS250825057OFU4E.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.52
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -15182,7 +15420,7 @@ export default [
       "amazon": {
         "asin": "B0FMK2WJLR",
         "url": "https://www.amazon.com/dp/B0FMK2WJLR?tag=tiereduptech-20",
-        "price": 69.99,
+        "price": 59.49,
         "inStock": true
       }
     },
@@ -15216,6 +15454,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0CKXB56MS?tag=tiereduptech-20",
         "price": 79.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA2W0KP98954",
+        "price": 95.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833795822587653180041&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00090%3Fitem%3D9SIA2W0KP98954",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25110702UM0N16.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.75
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -15275,7 +15523,7 @@ export default [
       "amazon": {
         "asin": "B0DWZX4SSK",
         "url": "https://www.amazon.com/dp/B0DWZX4SSK?tag=tiereduptech-20",
-        "price": 149.9,
+        "price": 118.9,
         "inStock": true
       }
     },
@@ -15302,8 +15550,18 @@ export default [
       "amazon": {
         "asin": "B0DHXCYKR6",
         "url": "https://www.amazon.com/dp/B0DHXCYKR6?tag=tiereduptech-20",
-        "price": 109.9,
+        "price": 87.92,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBRT8KBT8283",
+        "price": 89.9,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835389475507375586961&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgeometric-future-liquid-cooling-system-black%2Fp%2F2YM-00AM-00006%3Fitem%3D9SIBRT8KBT8283",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BRT8S2410280DJ5IMB3.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.95
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -15332,6 +15590,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0CCX9MKRL?tag=tiereduptech-20",
         "price": 139.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8EFK112170",
+        "price": 139.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836865635728713923644&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th420-v2-argb%2Fp%2FN82E16835106752%3Fitem%3D9SIA8EFK112170",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD23091210A96G0F.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -15416,7 +15684,7 @@ export default [
       "amazon": {
         "asin": "B0CCXDLFZZ",
         "url": "https://www.amazon.com/dp/B0CCXDLFZZ?tag=tiereduptech-20",
-        "price": 209.99,
+        "price": 196.99,
         "inStock": true
       }
     },
@@ -15470,6 +15738,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FDC4KZ46?tag=tiereduptech-20",
         "price": 259.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA8EFKHY7196",
+        "price": 259.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834208064561777118448&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-aio-radiator-size-dimension-456-x-139-x-27-mm-cpu-socket-intel-lga-2066-2011-3-2011-1851-1700-1200-1156-1155-1151-1150-amd-am5-am4-am3-am3-am2-am2-fm2-fm1-black%2Fp%2FN82E16835106785%3Fitem%3D9SIA8EFKHY7196",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-785-07.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.95
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -15498,6 +15776,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FBBH5LL9?tag=tiereduptech-20",
         "price": 449.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835106782",
+        "price": 455.99,
+        "saleprice": 449.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311974620144445403179&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-aio-radiator-size-dimension-456-x-138-5-x-27-mm-intel-lga4677-amd-str5-sp6%2Fp%2FN82E16835106782%3Fitem%3DN82E16835106782",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-782-06.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -15527,8 +15815,18 @@ export default [
       "amazon": {
         "asin": "B0FPCT1SV4",
         "url": "https://www.amazon.com/dp/B0FPCT1SV4?tag=tiereduptech-20",
-        "price": 179.99,
+        "price": 152.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAFSTKK73804",
+        "price": 179.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317731683224508930417&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-hydroshift-ii-lcd-s%2Fp%2F2YM-002Y-00053%3Fitem%3D9SIAFSTKK73804",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2511040LI6OU57.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -15588,7 +15886,7 @@ export default [
       "amazon": {
         "asin": "B0FRMS1T4Y",
         "url": "https://www.amazon.com/dp/B0FRMS1T4Y?tag=tiereduptech-20",
-        "price": 39.99,
+        "price": 25.99,
         "inStock": true
       }
     },
@@ -15647,7 +15945,7 @@ export default [
       "amazon": {
         "asin": "B0CMTPN7NF",
         "url": "https://www.amazon.com/dp/B0CMTPN7NF?tag=tiereduptech-20",
-        "price": 35.9,
+        "price": 28.72,
         "inStock": true
       }
     },
@@ -15735,7 +16033,7 @@ export default [
       "amazon": {
         "asin": "B09TGSCHYV",
         "url": "https://www.amazon.com/dp/B09TGSCHYV?tag=tiereduptech-20",
-        "price": 25.19,
+        "price": 27.99,
         "inStock": true
       }
     },
@@ -15793,6 +16091,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0BNLB8VXS?tag=tiereduptech-20",
         "price": 59.95,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAZTUKBJ3431",
+        "price": 70,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834924715093930052664&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002X7%3Fitem%3D9SIAZTUKBJ3431",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2301160NAJMEE7.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -15846,7 +16154,7 @@ export default [
       "amazon": {
         "asin": "B09CGZKHGR",
         "url": "https://www.amazon.com/dp/B09CGZKHGR?tag=tiereduptech-20",
-        "price": 24.9,
+        "price": 19.92,
         "inStock": true
       }
     },
@@ -15875,7 +16183,7 @@ export default [
       "amazon": {
         "asin": "B0GT94L8KJ",
         "url": "https://www.amazon.com/dp/B0GT94L8KJ?tag=tiereduptech-20",
-        "price": 189.97,
+        "price": 179.99,
         "inStock": true
       }
     },
@@ -15938,8 +16246,18 @@ export default [
       "amazon": {
         "asin": "B0B1DHVJG8",
         "url": "https://www.amazon.com/dp/B0B1DHVJG8?tag=tiereduptech-20",
-        "price": 32.59,
+        "price": 26.07,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAZTUKFH6714",
+        "price": 71.29,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311722291729558290094&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-011K-002Z6%3Fitem%3D9SIAZTUKFH6714",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BCEDD2210050B004FAF.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -16025,6 +16343,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0BRBW94VL?tag=tiereduptech-20",
         "price": 17.9,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835103357",
+        "price": 19.99,
+        "saleprice": 17.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839015575038940717228&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-212-spectrum-v3-120mm-intel-lga-1700-1200-1151-1150-1155-1156-amd-am5-am4%2Fp%2FN82E16835103357%3Fitem%3DN82E16835103357",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-357-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.792Z",
@@ -16053,6 +16381,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0BR5B1S3G?tag=tiereduptech-20",
         "price": 19.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835103357",
+        "price": 19.99,
+        "saleprice": 17.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839015575038940717228&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-212-spectrum-v3-120mm-intel-lga-1700-1200-1151-1150-1155-1156-amd-am5-am4%2Fp%2FN82E16835103357%3Fitem%3DN82E16835103357",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-357-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.55
       }
     },
     "addedAt": "2026-05-15T14:34:31.792Z",
@@ -16135,7 +16473,7 @@ export default [
       "amazon": {
         "asin": "B0CFQC6LCD",
         "url": "https://www.amazon.com/dp/B0CFQC6LCD?tag=tiereduptech-20",
-        "price": 39.99,
+        "price": 31.99,
         "inStock": true
       }
     },
@@ -16168,6 +16506,16 @@ export default [
         "url": "https://www.amazon.com/dp/B00K7809O2?tag=tiereduptech-20",
         "price": 49.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIADFRKKB4517",
+        "price": 49.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837428792089743939105&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-t2-rr-ht2-28pk-r1%2Fp%2FN82E16835103107%3Fitem%3D9SIADFRKKB4517",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-107-06.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.65
       }
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
@@ -16194,7 +16542,7 @@ export default [
       "amazon": {
         "asin": "B0DWZF6VVQ",
         "url": "https://www.amazon.com/dp/B0DWZF6VVQ?tag=tiereduptech-20",
-        "price": 29.9,
+        "price": 23.9,
         "inStock": true
       }
     },
@@ -16222,7 +16570,7 @@ export default [
       "amazon": {
         "asin": "B0CFQ7P8PB",
         "url": "https://www.amazon.com/dp/B0CFQ7P8PB?tag=tiereduptech-20",
-        "price": 26.99,
+        "price": 23.99,
         "inStock": true
       }
     },
@@ -16253,7 +16601,7 @@ export default [
       "amazon": {
         "asin": "B0CYL6KJB7",
         "url": "https://www.amazon.com/dp/B0CYL6KJB7?tag=tiereduptech-20",
-        "price": 33.24,
+        "price": 27.99,
         "inStock": true
       }
     },
@@ -16277,7 +16625,7 @@ export default [
       "amazon": {
         "asin": "B09RF83KDF",
         "url": "https://www.amazon.com/dp/B09RF83KDF?tag=tiereduptech-20",
-        "price": 63.21,
+        "price": 62.96,
         "inStock": true
       }
     },
@@ -16306,7 +16654,7 @@ export default [
       "amazon": {
         "asin": "B0CL4RYKG2",
         "url": "https://www.amazon.com/dp/B0CL4RYKG2?tag=tiereduptech-20",
-        "price": 48.97,
+        "price": 51.73,
         "inStock": true
       }
     },
@@ -16374,7 +16722,7 @@ export default [
       "amazon": {
         "asin": "B0D97Q33GW",
         "url": "https://www.amazon.com/dp/B0D97Q33GW?tag=tiereduptech-20",
-        "price": 79.99,
+        "price": 63.99,
         "inStock": true
       }
     },
@@ -16423,7 +16771,9 @@ export default [
     ],
     "airflow": 76.16,
     "noise": 35.2,
-    "rpm": 1800
+    "rpm": 1800,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-10"
   },
   {
     "id": 100963,
@@ -16438,7 +16788,7 @@ export default [
       "amazon": {
         "asin": "B0FM7MX788",
         "url": "https://www.amazon.com/dp/B0FM7MX788?tag=tiereduptech-20",
-        "price": 89.99,
+        "price": 71.99,
         "inStock": true
       }
     },
@@ -16472,7 +16822,7 @@ export default [
       "amazon": {
         "asin": "B0CFPY9CKZ",
         "url": "https://www.amazon.com/dp/B0CFPY9CKZ?tag=tiereduptech-20",
-        "price": 39.99,
+        "price": 31.99,
         "inStock": true
       }
     },
@@ -16527,7 +16877,7 @@ export default [
       "amazon": {
         "asin": "B0FZG562NX",
         "url": "https://www.amazon.com/dp/B0FZG562NX?tag=tiereduptech-20",
-        "price": 44.99,
+        "price": 35.99,
         "inStock": true
       }
     },
@@ -16584,7 +16934,7 @@ export default [
       "amazon": {
         "asin": "B0FM7RHRPW",
         "url": "https://www.amazon.com/dp/B0FM7RHRPW?tag=tiereduptech-20",
-        "price": 74.99,
+        "price": 89.99,
         "inStock": true
       }
     },
@@ -16648,7 +16998,7 @@ export default [
       "amazon": {
         "asin": "B0BNGVWL98",
         "url": "https://www.amazon.com/dp/B0BNGVWL98?tag=tiereduptech-20",
-        "price": 32.12,
+        "price": 35.69,
         "inStock": true
       }
     },
@@ -16702,7 +17052,7 @@ export default [
       "amazon": {
         "asin": "B0C65FJSKP",
         "url": "https://www.amazon.com/dp/B0C65FJSKP?tag=tiereduptech-20",
-        "price": 55.79,
+        "price": 59.99,
         "inStock": true
       }
     },
@@ -16723,7 +17073,7 @@ export default [
       "amazon": {
         "asin": "B0DCFN8Q6G",
         "url": "https://www.amazon.com/dp/B0DCFN8Q6G?tag=tiereduptech-20",
-        "price": 149.99,
+        "price": 113.1,
         "inStock": true
       }
     },
@@ -16781,7 +17131,7 @@ export default [
       "amazon": {
         "asin": "B0DJBM477F",
         "url": "https://www.amazon.com/dp/B0DJBM477F?tag=tiereduptech-20",
-        "price": 49.99,
+        "price": 42.49,
         "inStock": true
       }
     },
@@ -16836,6 +17186,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FPCSG6J5?tag=tiereduptech-20",
         "price": 159.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAFSTKK73807",
+        "price": 159.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312806527718065464901&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-hydroshift-ii-lcd-s%2Fp%2F2YM-002Y-00056%3Fitem%3D9SIAFSTKK73807",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2511040L7VVD89.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.795Z",
@@ -16862,7 +17222,7 @@ export default [
       "amazon": {
         "asin": "B0GT4QG179",
         "url": "https://www.amazon.com/dp/B0GT4QG179?tag=tiereduptech-20",
-        "price": 189.97,
+        "price": 179.99,
         "inStock": true
       }
     },
@@ -16896,7 +17256,7 @@ export default [
       "amazon": {
         "asin": "B0G5FC9MDX",
         "url": "https://www.amazon.com/dp/B0G5FC9MDX?tag=tiereduptech-20",
-        "price": 71.99,
+        "price": 69.29,
         "inStock": true
       }
     },
@@ -16927,7 +17287,7 @@ export default [
       "amazon": {
         "asin": "B0CK564T94",
         "url": "https://www.amazon.com/dp/B0CK564T94?tag=tiereduptech-20",
-        "price": 128.99,
+        "price": 122.54,
         "inStock": true
       }
     },
@@ -16957,8 +17317,18 @@ export default [
       "amazon": {
         "asin": "B0FPBR3WWH",
         "url": "https://www.amazon.com/dp/B0FPBR3WWH?tag=tiereduptech-20",
-        "price": 149.99,
+        "price": 136.13,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA2W0KP45522",
+        "price": 144.98,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838968303738035735590&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-aio-radiator-size-277-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851-black%2Fp%2FN82E16835103382%3Fitem%3D9SIA2W0KP45522",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-382-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.798Z",
@@ -16989,7 +17359,7 @@ export default [
       "amazon": {
         "asin": "B084LLD3PH",
         "url": "https://www.amazon.com/dp/B084LLD3PH?tag=tiereduptech-20",
-        "price": 40.8,
+        "price": 24.16,
         "inStock": true
       }
     },
@@ -17017,8 +17387,18 @@ export default [
       "amazon": {
         "asin": "B09PWVN9TP",
         "url": "https://www.amazon.com/dp/B09PWVN9TP?tag=tiereduptech-20",
-        "price": 109.95,
+        "price": 125,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA0ZXHGB6806",
+        "price": 153.84,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583371007760348725650&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-liquid-cooling-system-masterliquid-pl360-flux%2Fp%2FN82E16835103333%3Fitem%3D9SIA0ZXHGB6806",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-333-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.65
       }
     },
     "addedAt": "2026-05-15T14:34:31.798Z",
@@ -17080,8 +17460,18 @@ export default [
       "amazon": {
         "asin": "B09463GC4H",
         "url": "https://www.amazon.com/dp/B09463GC4H?tag=tiereduptech-20",
-        "price": 64.99,
+        "price": 54.98,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA4P0KK43055",
+        "price": 57.49,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318332321189368892898&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-liquid-cooling-system%2Fp%2FN82E16835103324%3Fitem%3D9SIA4P0KK43055",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-324-05.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.798Z",
@@ -17112,8 +17502,18 @@ export default [
       "amazon": {
         "asin": "B0FPBRVJP2",
         "url": "https://www.amazon.com/dp/B0FPBRVJP2?tag=tiereduptech-20",
-        "price": 149.99,
+        "price": 137.73,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA2W0KP45522",
+        "price": 144.98,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838968303738035735590&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-aio-radiator-size-277-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851-black%2Fp%2FN82E16835103382%3Fitem%3D9SIA2W0KP45522",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-382-01.png",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.798Z",
@@ -17144,7 +17544,7 @@ export default [
       "amazon": {
         "asin": "B0FD3MRM1B",
         "url": "https://www.amazon.com/dp/B0FD3MRM1B?tag=tiereduptech-20",
-        "price": 190.25,
+        "price": 169.11,
         "inStock": true
       }
     },
@@ -17209,7 +17609,7 @@ export default [
       "amazon": {
         "asin": "B0FJ27YMV5",
         "url": "https://www.amazon.com/dp/B0FJ27YMV5?tag=tiereduptech-20",
-        "price": 49.99,
+        "price": 39.99,
         "inStock": true
       }
     },
@@ -17230,8 +17630,18 @@ export default [
       "amazon": {
         "asin": "B0GSW2RMSK",
         "url": "https://www.amazon.com/dp/B0GSW2RMSK?tag=tiereduptech-20",
-        "price": 99.9,
+        "price": 89.91,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXKTU9130",
+        "price": 99.9,
+        "saleprice": 89.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838400006089428541477&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000P2%3Fitem%3D9SIBVHXKTU9130",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2604150MVLM9D9.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.96
       }
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
@@ -17260,7 +17670,7 @@ export default [
       "amazon": {
         "asin": "B0FVWQZLLP",
         "url": "https://www.amazon.com/dp/B0FVWQZLLP?tag=tiereduptech-20",
-        "price": 55.9,
+        "price": 45.52,
         "inStock": true
       }
     },
@@ -17290,8 +17700,18 @@ export default [
       "amazon": {
         "asin": "B0FQC7XT4M",
         "url": "https://www.amazon.com/dp/B0FQC7XT4M?tag=tiereduptech-20",
-        "price": 81.59,
+        "price": 65.27,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXKTU9130",
+        "price": 99.9,
+        "saleprice": 89.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838400006089428541477&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000P2%3Fitem%3D9SIBVHXKTU9130",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2604150MVLM9D9.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.52
       }
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
@@ -17322,7 +17742,7 @@ export default [
       "amazon": {
         "asin": "B0FHPWQD3J",
         "url": "https://www.amazon.com/dp/B0FHPWQD3J?tag=tiereduptech-20",
-        "price": 56.9,
+        "price": 45.52,
         "inStock": true
       }
     },
@@ -17352,8 +17772,18 @@ export default [
       "amazon": {
         "asin": "B0CL8TJCMZ",
         "url": "https://www.amazon.com/dp/B0CL8TJCMZ?tag=tiereduptech-20",
-        "price": 42.11,
+        "price": 46.79,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXK987012",
+        "price": 69.9,
+        "saleprice": 65.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313030306394114655881&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K7%3Fitem%3D9SIBVHXK987012",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2407030G6KMOC1.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.87
       }
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
@@ -17383,6 +17813,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0C4JK43LQ?tag=tiereduptech-20",
         "price": 37.9,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXK917043",
+        "price": 59.88,
+        "saleprice": 53.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310971248025128268667&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K0%3Fitem%3D9SIBVHXK917043",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS240626042AI56B.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.81
       }
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
@@ -17468,7 +17908,7 @@ export default [
       "amazon": {
         "asin": "B0FJ86XY93",
         "url": "https://www.amazon.com/dp/B0FJ86XY93?tag=tiereduptech-20",
-        "price": 56.9,
+        "price": 45.52,
         "inStock": true
       }
     },
@@ -17498,7 +17938,7 @@ export default [
       "amazon": {
         "asin": "B0C4JH24WW",
         "url": "https://www.amazon.com/dp/B0C4JH24WW?tag=tiereduptech-20",
-        "price": 31.85,
+        "price": 35.99,
         "inStock": true
       }
     },
@@ -17529,6 +17969,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0CYJ6SZ4R?tag=tiereduptech-20",
         "price": 57.9,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXK987012",
+        "price": 69.9,
+        "saleprice": 65.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313030306394114655881&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K7%3Fitem%3D9SIBVHXK987012",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2407030G6KMOC1.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.73
       }
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
@@ -17556,8 +18006,18 @@ export default [
       "amazon": {
         "asin": "B0FKYJV3YN",
         "url": "https://www.amazon.com/dp/B0FKYJV3YN?tag=tiereduptech-20",
-        "price": 45.6,
+        "price": 45.83,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXK917043",
+        "price": 59.88,
+        "saleprice": 53.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310971248025128268667&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K0%3Fitem%3D9SIBVHXK917043",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS240626042AI56B.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.67
       }
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
@@ -17586,7 +18046,7 @@ export default [
       "amazon": {
         "asin": "B0CNVMR478",
         "url": "https://www.amazon.com/dp/B0CNVMR478?tag=tiereduptech-20",
-        "price": 32.69,
+        "price": 26.15,
         "inStock": true
       }
     },
@@ -17615,7 +18075,7 @@ export default [
       "amazon": {
         "asin": "B0F8VX8L7W",
         "url": "https://www.amazon.com/dp/B0F8VX8L7W?tag=tiereduptech-20",
-        "price": 50.9,
+        "price": 40.72,
         "inStock": true
       }
     },
@@ -17678,6 +18138,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0D83M25X5?tag=tiereduptech-20",
         "price": 179.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "2YM-002Y-00032",
+        "price": 179.99,
+        "saleprice": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313401713333438886268&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-002Y-00032%3Fitem%3D2YM-002Y-00032",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS240625xSwJ0.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.9
       }
     },
     "addedAt": "2026-05-15T16:31:54.668Z",
@@ -17708,6 +18178,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0F1MH466S?tag=tiereduptech-20",
         "price": 233.14,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA0ZXKG24970",
+        "price": 233.21,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313005675810145404139&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-hydroshift-ii-radiator-size-15-75-x-4-8-x-0-86-inch-white%2Fp%2F2YM-002Y-00046%3Fitem%3D9SIA0ZXKG24970",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2505260FLVZE96.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:31:54.668Z",
@@ -17769,7 +18249,7 @@ export default [
       "amazon": {
         "asin": "B0D1RKBS7J",
         "url": "https://www.amazon.com/dp/B0D1RKBS7J?tag=tiereduptech-20",
-        "price": 49.99,
+        "price": 29.99,
         "inStock": true
       }
     },
@@ -17821,7 +18301,8 @@ export default [
     "addedAt": "2026-05-15T16:31:54.668Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "bench": 35
+    "bench": 35,
+    "quarantinedAt": "2026-06-25"
   },
   {
     "id": 101242,
@@ -17836,8 +18317,18 @@ export default [
       "amazon": {
         "asin": "B0819NDVX4",
         "url": "https://www.amazon.com/dp/B0819NDVX4?tag=tiereduptech-20",
-        "price": 89.94,
+        "price": 92.51,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835709302",
+        "price": 99.99,
+        "saleprice": 79.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832530012352885721349&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fphanteks-liquid-cooling-system-radiator-size-397-x-120-x-27mm-intel-socket-lga-115x-1200-1700-1851-2011-2011-3-2066-amd-socket-am4-am5-sp3-strx4-tr4-swrx8%2Fp%2FN82E16835709302%3Fitem%3DN82E16835709302",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BJUTS2412261BU9HL84.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -17867,8 +18358,18 @@ export default [
       "amazon": {
         "asin": "B0F4QGP9RX",
         "url": "https://www.amazon.com/dp/B0F4QGP9RX?tag=tiereduptech-20",
-        "price": 143.76,
+        "price": 144.1,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835709305",
+        "price": 149.99,
+        "saleprice": 119.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832262726458645555202&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835709305%3Fitem%3DN82E16835709305",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-709-305-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -17900,6 +18401,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FPVTKC2V?tag=tiereduptech-20",
         "price": 140.92,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835709321",
+        "price": 159.99,
+        "saleprice": 139.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314800201775107052587&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fphanteks-aio-glacier-one-radiator-size-397-mm-white%2Fp%2FN82E16835709321%3Fitem%3DN82E16835709321",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-709-321-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -17923,8 +18434,18 @@ export default [
       "amazon": {
         "asin": "B0F4QGPFBJ",
         "url": "https://www.amazon.com/dp/B0F4QGPFBJ?tag=tiereduptech-20",
-        "price": 145.97,
+        "price": 144.1,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835709305",
+        "price": 149.99,
+        "saleprice": 119.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832262726458645555202&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835709305%3Fitem%3DN82E16835709305",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-709-305-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -17956,6 +18477,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FX3P41R6?tag=tiereduptech-20",
         "price": 56.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAHCTKKH8353",
+        "price": 139.99,
+        "saleprice": 75.59,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315267483137577133988&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpccooler-aio-gt-radiator-size-394-mm-intel-lga1851-1700-1200-115x-amd-am5-am4-black%2Fp%2F2YM-00BC-00018%3Fitem%3D9SIAHCTKKH8353",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHCTS260304026WMX43.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.5
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -18049,7 +18580,7 @@ export default [
       "amazon": {
         "asin": "B0FL7CQX3D",
         "url": "https://www.amazon.com/dp/B0FL7CQX3D?tag=tiereduptech-20",
-        "price": 129.99,
+        "price": 101.99,
         "inStock": true
       }
     },
@@ -18082,7 +18613,7 @@ export default [
       "amazon": {
         "asin": "B0FM7MSNJ4",
         "url": "https://www.amazon.com/dp/B0FM7MSNJ4?tag=tiereduptech-20",
-        "price": 74.99,
+        "price": 59.99,
         "inStock": true
       }
     },
@@ -18116,7 +18647,7 @@ export default [
       "amazon": {
         "asin": "B0DP7D84LL",
         "url": "https://www.amazon.com/dp/B0DP7D84LL?tag=tiereduptech-20",
-        "price": 46.9,
+        "price": 37.52,
         "inStock": true
       }
     },
@@ -18176,7 +18707,7 @@ export default [
       "amazon": {
         "asin": "B0FQ5MF5D5",
         "url": "https://www.amazon.com/dp/B0FQ5MF5D5?tag=tiereduptech-20",
-        "price": 37.9,
+        "price": 30.32,
         "inStock": true
       }
     },
@@ -18206,8 +18737,18 @@ export default [
       "amazon": {
         "asin": "B0G1BRDLX6",
         "url": "https://www.amazon.com/dp/B0G1BRDLX6?tag=tiereduptech-20",
-        "price": 47.99,
+        "price": 43.19,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAY3SKPX3440",
+        "price": 79.99,
+        "saleprice": 42.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835884394794569284953&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-005F-000G1%3Fitem%3D9SIAY3SKPX3440",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AY3SS2601060ONUR39F.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -18237,6 +18778,16 @@ export default [
         "url": "https://www.amazon.com/dp/B09SHV7LZ3?tag=tiereduptech-20",
         "price": 9.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA2W0JCW2919",
+        "price": 10.59,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583933395392433907640&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Farctic-alpine-17%2Fp%2F13C-000P-000W1%3Fitem%3D9SIA2W0JCW2919",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S2205261C04S9B7.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.75
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -18259,8 +18810,18 @@ export default [
       "amazon": {
         "asin": "B0BB88471Y",
         "url": "https://www.amazon.com/dp/B0BB88471Y?tag=tiereduptech-20",
-        "price": 21.49,
+        "price": 24.66,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA4REJVR6197",
+        "price": 27.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583232698259789711041&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-rr-i7c7-18pa-r1-i70c-120mm-intel-lga-1700%2Fp%2FN82E16835103339%3Fitem%3D9SIA4REJVR6197",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-339-S01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -18317,6 +18878,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0B452JNBX?tag=tiereduptech-20",
         "price": 11.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBGX1JAJ2739",
+        "price": 19.99,
+        "saleprice": 9.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583915358797514238787&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-00F3-00015%3Fitem%3D9SIBGX1JAJ2739",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/APNCS2207070FMXHGDA.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.86
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -18341,7 +18912,7 @@ export default [
       "amazon": {
         "asin": "B07NXZL1CL",
         "url": "https://www.amazon.com/dp/B07NXZL1CL?tag=tiereduptech-20",
-        "price": 14,
+        "price": 29.99,
         "inStock": true
       }
     },
@@ -18371,6 +18942,16 @@ export default [
         "url": "https://www.amazon.com/dp/B09HCLB7M3?tag=tiereduptech-20",
         "price": 49.95,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBZT7KVE7181",
+        "price": 59.2,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317505685556482841422&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002Z7%3Fitem%3D9SIBZT7KVE7181",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2304200R60SM67.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -18425,7 +19006,7 @@ export default [
       "amazon": {
         "asin": "B09LTQYNSL",
         "url": "https://www.amazon.com/dp/B09LTQYNSL?tag=tiereduptech-20",
-        "price": 7.99,
+        "price": 6.39,
         "inStock": true
       }
     },
@@ -18447,7 +19028,7 @@ export default [
       "amazon": {
         "asin": "B0CXSH2PXQ",
         "url": "https://www.amazon.com/dp/B0CXSH2PXQ?tag=tiereduptech-20",
-        "price": 21.99,
+        "price": 19.79,
         "inStock": true
       }
     },
@@ -18477,8 +19058,18 @@ export default [
       "amazon": {
         "asin": "B0GSW2RMSK",
         "url": "https://www.amazon.com/dp/B0GSW2RMSK?tag=tiereduptech-20",
-        "price": 99.9,
+        "price": 89.91,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXKTU9130",
+        "price": 99.9,
+        "saleprice": 89.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838400006089428541477&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000P2%3Fitem%3D9SIBVHXKTU9130",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2604150MVLM9D9.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.96
       }
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
@@ -18507,7 +19098,7 @@ export default [
       "amazon": {
         "asin": "B0FVWQZLLP",
         "url": "https://www.amazon.com/dp/B0FVWQZLLP?tag=tiereduptech-20",
-        "price": 55.9,
+        "price": 45.52,
         "inStock": true
       }
     },
@@ -18537,8 +19128,18 @@ export default [
       "amazon": {
         "asin": "B0FQC7XT4M",
         "url": "https://www.amazon.com/dp/B0FQC7XT4M?tag=tiereduptech-20",
-        "price": 81.59,
+        "price": 65.27,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXKTU9130",
+        "price": 99.9,
+        "saleprice": 89.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838400006089428541477&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000P2%3Fitem%3D9SIBVHXKTU9130",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2604150MVLM9D9.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.52
       }
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
@@ -18569,7 +19170,7 @@ export default [
       "amazon": {
         "asin": "B0FHPWQD3J",
         "url": "https://www.amazon.com/dp/B0FHPWQD3J?tag=tiereduptech-20",
-        "price": 56.9,
+        "price": 45.52,
         "inStock": true
       }
     },
@@ -18599,8 +19200,18 @@ export default [
       "amazon": {
         "asin": "B0CL8TJCMZ",
         "url": "https://www.amazon.com/dp/B0CL8TJCMZ?tag=tiereduptech-20",
-        "price": 42.11,
+        "price": 46.79,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXK987012",
+        "price": 69.9,
+        "saleprice": 65.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313030306394114655881&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K7%3Fitem%3D9SIBVHXK987012",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2407030G6KMOC1.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.87
       }
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
@@ -18630,6 +19241,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0C4JK43LQ?tag=tiereduptech-20",
         "price": 37.9,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXK917043",
+        "price": 59.88,
+        "saleprice": 53.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310971248025128268667&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K0%3Fitem%3D9SIBVHXK917043",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS240626042AI56B.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.81
       }
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
@@ -18715,7 +19336,7 @@ export default [
       "amazon": {
         "asin": "B0FJ86XY93",
         "url": "https://www.amazon.com/dp/B0FJ86XY93?tag=tiereduptech-20",
-        "price": 56.9,
+        "price": 45.52,
         "inStock": true
       }
     },
@@ -18745,7 +19366,7 @@ export default [
       "amazon": {
         "asin": "B0C4JH24WW",
         "url": "https://www.amazon.com/dp/B0C4JH24WW?tag=tiereduptech-20",
-        "price": 31.85,
+        "price": 35.99,
         "inStock": true
       }
     },
@@ -18776,6 +19397,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0CYJ6SZ4R?tag=tiereduptech-20",
         "price": 57.9,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXK987012",
+        "price": 69.9,
+        "saleprice": 65.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313030306394114655881&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K7%3Fitem%3D9SIBVHXK987012",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2407030G6KMOC1.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.73
       }
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
@@ -18803,8 +19434,18 @@ export default [
       "amazon": {
         "asin": "B0FKYJV3YN",
         "url": "https://www.amazon.com/dp/B0FKYJV3YN?tag=tiereduptech-20",
-        "price": 45.6,
+        "price": 45.83,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXK917043",
+        "price": 59.88,
+        "saleprice": 53.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310971248025128268667&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K0%3Fitem%3D9SIBVHXK917043",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS240626042AI56B.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.67
       }
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
@@ -18833,7 +19474,7 @@ export default [
       "amazon": {
         "asin": "B0CNVMR478",
         "url": "https://www.amazon.com/dp/B0CNVMR478?tag=tiereduptech-20",
-        "price": 32.69,
+        "price": 26.15,
         "inStock": true
       }
     },
@@ -18862,7 +19503,7 @@ export default [
       "amazon": {
         "asin": "B0F8VX8L7W",
         "url": "https://www.amazon.com/dp/B0F8VX8L7W?tag=tiereduptech-20",
-        "price": 50.9,
+        "price": 40.72,
         "inStock": true
       }
     },
@@ -18925,6 +19566,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0D83M25X5?tag=tiereduptech-20",
         "price": 179.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "2YM-002Y-00032",
+        "price": 179.99,
+        "saleprice": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313401713333438886268&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-002Y-00032%3Fitem%3D2YM-002Y-00032",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS240625xSwJ0.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.9
       }
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
@@ -18955,6 +19606,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0F1MH466S?tag=tiereduptech-20",
         "price": 233.14,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA0ZXKG24970",
+        "price": 233.21,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313005675810145404139&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-hydroshift-ii-radiator-size-15-75-x-4-8-x-0-86-inch-white%2Fp%2F2YM-002Y-00046%3Fitem%3D9SIA0ZXKG24970",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2505260FLVZE96.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:39:25.991Z",
@@ -19016,7 +19677,7 @@ export default [
       "amazon": {
         "asin": "B0D1RKBS7J",
         "url": "https://www.amazon.com/dp/B0D1RKBS7J?tag=tiereduptech-20",
-        "price": 49.99,
+        "price": 29.99,
         "inStock": true
       }
     },
@@ -19068,7 +19729,8 @@ export default [
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "bench": 35
+    "bench": 35,
+    "quarantinedAt": "2026-06-25"
   },
   {
     "id": 101390,
@@ -19083,8 +19745,18 @@ export default [
       "amazon": {
         "asin": "B0819NDVX4",
         "url": "https://www.amazon.com/dp/B0819NDVX4?tag=tiereduptech-20",
-        "price": 98.47,
+        "price": 92.51,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835709302",
+        "price": 99.99,
+        "saleprice": 79.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832530012352885721349&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fphanteks-liquid-cooling-system-radiator-size-397-x-120-x-27mm-intel-socket-lga-115x-1200-1700-1851-2011-2011-3-2066-amd-socket-am4-am5-sp3-strx4-tr4-swrx8%2Fp%2FN82E16835709302%3Fitem%3DN82E16835709302",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BJUTS2412261BU9HL84.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
@@ -19114,8 +19786,18 @@ export default [
       "amazon": {
         "asin": "B0F4QGP9RX",
         "url": "https://www.amazon.com/dp/B0F4QGP9RX?tag=tiereduptech-20",
-        "price": 143.76,
+        "price": 144.1,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835709305",
+        "price": 149.99,
+        "saleprice": 119.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832262726458645555202&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835709305%3Fitem%3DN82E16835709305",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-709-305-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
@@ -19147,6 +19829,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FPVTKC2V?tag=tiereduptech-20",
         "price": 140.92,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835709321",
+        "price": 159.99,
+        "saleprice": 139.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314800201775107052587&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fphanteks-aio-glacier-one-radiator-size-397-mm-white%2Fp%2FN82E16835709321%3Fitem%3DN82E16835709321",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-709-321-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
@@ -19170,8 +19862,18 @@ export default [
       "amazon": {
         "asin": "B0F4QGPFBJ",
         "url": "https://www.amazon.com/dp/B0F4QGPFBJ?tag=tiereduptech-20",
-        "price": 145.97,
+        "price": 144.1,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835709305",
+        "price": 149.99,
+        "saleprice": 119.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832262726458645555202&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835709305%3Fitem%3DN82E16835709305",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-709-305-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
@@ -19203,6 +19905,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FX3P41R6?tag=tiereduptech-20",
         "price": 56.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAHCTKKH8353",
+        "price": 139.99,
+        "saleprice": 75.59,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315267483137577133988&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpccooler-aio-gt-radiator-size-394-mm-intel-lga1851-1700-1200-115x-amd-am5-am4-black%2Fp%2F2YM-00BC-00018%3Fitem%3D9SIAHCTKKH8353",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHCTS260304026WMX43.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.5
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
@@ -19296,7 +20008,7 @@ export default [
       "amazon": {
         "asin": "B0FL7CQX3D",
         "url": "https://www.amazon.com/dp/B0FL7CQX3D?tag=tiereduptech-20",
-        "price": 129.99,
+        "price": 101.99,
         "inStock": true
       }
     },
@@ -19329,7 +20041,7 @@ export default [
       "amazon": {
         "asin": "B0FM7MSNJ4",
         "url": "https://www.amazon.com/dp/B0FM7MSNJ4?tag=tiereduptech-20",
-        "price": 74.99,
+        "price": 59.99,
         "inStock": true
       }
     },
@@ -19363,7 +20075,7 @@ export default [
       "amazon": {
         "asin": "B0DP7D84LL",
         "url": "https://www.amazon.com/dp/B0DP7D84LL?tag=tiereduptech-20",
-        "price": 46.9,
+        "price": 37.52,
         "inStock": true
       }
     },
@@ -19423,7 +20135,7 @@ export default [
       "amazon": {
         "asin": "B0FQ5MF5D5",
         "url": "https://www.amazon.com/dp/B0FQ5MF5D5?tag=tiereduptech-20",
-        "price": 37.9,
+        "price": 30.32,
         "inStock": true
       }
     },
@@ -19453,8 +20165,18 @@ export default [
       "amazon": {
         "asin": "B0G1BRDLX6",
         "url": "https://www.amazon.com/dp/B0G1BRDLX6?tag=tiereduptech-20",
-        "price": 47.99,
+        "price": 43.19,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAY3SKPX3440",
+        "price": 79.99,
+        "saleprice": 42.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835884394794569284953&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-005F-000G1%3Fitem%3D9SIAY3SKPX3440",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AY3SS2601060ONUR39F.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
@@ -19484,6 +20206,16 @@ export default [
         "url": "https://www.amazon.com/dp/B09SHV7LZ3?tag=tiereduptech-20",
         "price": 9.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA2W0JCW2919",
+        "price": 10.59,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583933395392433907640&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Farctic-alpine-17%2Fp%2F13C-000P-000W1%3Fitem%3D9SIA2W0JCW2919",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S2205261C04S9B7.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.75
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
@@ -19506,8 +20238,18 @@ export default [
       "amazon": {
         "asin": "B0BB88471Y",
         "url": "https://www.amazon.com/dp/B0BB88471Y?tag=tiereduptech-20",
-        "price": 21.49,
+        "price": 24.66,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA4REJVR6197",
+        "price": 27.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583232698259789711041&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-rr-i7c7-18pa-r1-i70c-120mm-intel-lga-1700%2Fp%2FN82E16835103339%3Fitem%3D9SIA4REJVR6197",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-339-S01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
@@ -19564,6 +20306,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0B452JNBX?tag=tiereduptech-20",
         "price": 11.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBGX1JAJ2739",
+        "price": 19.99,
+        "saleprice": 9.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583915358797514238787&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-00F3-00015%3Fitem%3D9SIBGX1JAJ2739",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/APNCS2207070FMXHGDA.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.86
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
@@ -19588,7 +20340,7 @@ export default [
       "amazon": {
         "asin": "B07NXZL1CL",
         "url": "https://www.amazon.com/dp/B07NXZL1CL?tag=tiereduptech-20",
-        "price": 14,
+        "price": 29.99,
         "inStock": true
       }
     },
@@ -19618,6 +20370,16 @@ export default [
         "url": "https://www.amazon.com/dp/B09HCLB7M3?tag=tiereduptech-20",
         "price": 49.95,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBZT7KVE7181",
+        "price": 59.2,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317505685556482841422&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002Z7%3Fitem%3D9SIBZT7KVE7181",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2304200R60SM67.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
@@ -19672,7 +20434,7 @@ export default [
       "amazon": {
         "asin": "B09LTQYNSL",
         "url": "https://www.amazon.com/dp/B09LTQYNSL?tag=tiereduptech-20",
-        "price": 7.99,
+        "price": 6.39,
         "inStock": true
       }
     },
@@ -19694,7 +20456,7 @@ export default [
       "amazon": {
         "asin": "B0CXSH2PXQ",
         "url": "https://www.amazon.com/dp/B0CXSH2PXQ?tag=tiereduptech-20",
-        "price": 21.99,
+        "price": 19.79,
         "inStock": true
       }
     },
@@ -19724,8 +20486,18 @@ export default [
       "amazon": {
         "asin": "B0FQC7XT4M",
         "url": "https://www.amazon.com/dp/B0FQC7XT4M?tag=tiereduptech-20",
-        "price": 81.59,
+        "price": 65.27,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXKTU9130",
+        "price": 99.9,
+        "saleprice": 89.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838400006089428541477&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000P2%3Fitem%3D9SIBVHXKTU9130",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2604150MVLM9D9.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.52
       }
     },
     "addedAt": "2026-05-15T17:05:43.673Z",
@@ -19756,7 +20528,7 @@ export default [
       "amazon": {
         "asin": "B0FHPWQD3J",
         "url": "https://www.amazon.com/dp/B0FHPWQD3J?tag=tiereduptech-20",
-        "price": 56.9,
+        "price": 45.52,
         "inStock": true
       }
     },
@@ -19786,8 +20558,18 @@ export default [
       "amazon": {
         "asin": "B0CL8TJCMZ",
         "url": "https://www.amazon.com/dp/B0CL8TJCMZ?tag=tiereduptech-20",
-        "price": 42.11,
+        "price": 46.79,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXK987012",
+        "price": 69.9,
+        "saleprice": 65.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313030306394114655881&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K7%3Fitem%3D9SIBVHXK987012",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2407030G6KMOC1.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.87
       }
     },
     "addedAt": "2026-05-15T17:05:43.673Z",
@@ -19817,6 +20599,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0C4JK43LQ?tag=tiereduptech-20",
         "price": 37.9,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXK917043",
+        "price": 59.88,
+        "saleprice": 53.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310971248025128268667&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K0%3Fitem%3D9SIBVHXK917043",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS240626042AI56B.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.81
       }
     },
     "addedAt": "2026-05-15T17:05:43.673Z",
@@ -19846,6 +20638,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0CYJ6SZ4R?tag=tiereduptech-20",
         "price": 57.9,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBVHXK987012",
+        "price": 69.9,
+        "saleprice": 65.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313030306394114655881&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K7%3Fitem%3D9SIBVHXK987012",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2407030G6KMOC1.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.73
       }
     },
     "addedAt": "2026-05-15T17:05:43.673Z",
@@ -19905,6 +20707,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0D83M25X5?tag=tiereduptech-20",
         "price": 179.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "2YM-002Y-00032",
+        "price": 179.99,
+        "saleprice": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313401713333438886268&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-002Y-00032%3Fitem%3D2YM-002Y-00032",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS240625xSwJ0.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.9
       }
     },
     "addedAt": "2026-05-15T17:05:43.674Z",
@@ -19935,6 +20747,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0F1MH466S?tag=tiereduptech-20",
         "price": 233.14,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA0ZXKG24970",
+        "price": 233.21,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313005675810145404139&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-hydroshift-ii-radiator-size-15-75-x-4-8-x-0-86-inch-white%2Fp%2F2YM-002Y-00046%3Fitem%3D9SIA0ZXKG24970",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2505260FLVZE96.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T17:05:43.674Z",
@@ -19992,7 +20814,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.674Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "bench": 35
+    "bench": 35,
+    "quarantinedAt": "2026-06-25"
   },
   {
     "id": 101911,
@@ -20009,6 +20832,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0FPVTKC2V?tag=tiereduptech-20",
         "price": 140.92,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "N82E16835709321",
+        "price": 159.99,
+        "saleprice": 139.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314800201775107052587&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fphanteks-aio-glacier-one-radiator-size-397-mm-white%2Fp%2FN82E16835709321%3Fitem%3DN82E16835709321",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-709-321-01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T17:05:43.675Z",
@@ -20032,7 +20865,7 @@ export default [
       "amazon": {
         "asin": "B0DP7D84LL",
         "url": "https://www.amazon.com/dp/B0DP7D84LL?tag=tiereduptech-20",
-        "price": 46.9,
+        "price": 37.52,
         "inStock": true
       }
     },
@@ -20092,7 +20925,7 @@ export default [
       "amazon": {
         "asin": "B0FQ5MF5D5",
         "url": "https://www.amazon.com/dp/B0FQ5MF5D5?tag=tiereduptech-20",
-        "price": 37.9,
+        "price": 30.32,
         "inStock": true
       }
     },
@@ -20122,8 +20955,18 @@ export default [
       "amazon": {
         "asin": "B0G1BRDLX6",
         "url": "https://www.amazon.com/dp/B0G1BRDLX6?tag=tiereduptech-20",
-        "price": 47.99,
+        "price": 43.19,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIAY3SKPX3440",
+        "price": 79.99,
+        "saleprice": 42.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835884394794569284953&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-005F-000G1%3Fitem%3D9SIAY3SKPX3440",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AY3SS2601060ONUR39F.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T17:05:43.675Z",
@@ -20153,6 +20996,16 @@ export default [
         "url": "https://www.amazon.com/dp/B09SHV7LZ3?tag=tiereduptech-20",
         "price": 9.99,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA2W0JCW2919",
+        "price": 10.59,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583933395392433907640&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Farctic-alpine-17%2Fp%2F13C-000P-000W1%3Fitem%3D9SIA2W0JCW2919",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S2205261C04S9B7.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 0.75
       }
     },
     "addedAt": "2026-05-15T17:05:43.675Z",
@@ -20175,8 +21028,18 @@ export default [
       "amazon": {
         "asin": "B0BB88471Y",
         "url": "https://www.amazon.com/dp/B0BB88471Y?tag=tiereduptech-20",
-        "price": 21.49,
+        "price": 24.66,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIA4REJVR6197",
+        "price": 27.99,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583232698259789711041&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-rr-i7c7-18pa-r1-i70c-120mm-intel-lga-1700%2Fp%2FN82E16835103339%3Fitem%3D9SIA4REJVR6197",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-339-S01.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T17:05:43.675Z",
@@ -20201,7 +21064,7 @@ export default [
       "amazon": {
         "asin": "B07NXZL1CL",
         "url": "https://www.amazon.com/dp/B07NXZL1CL?tag=tiereduptech-20",
-        "price": 14,
+        "price": 29.99,
         "inStock": true
       }
     },
@@ -20231,6 +21094,16 @@ export default [
         "url": "https://www.amazon.com/dp/B09HCLB7M3?tag=tiereduptech-20",
         "price": 49.95,
         "inStock": true
+      },
+      "newegg": {
+        "sku": "9SIBZT7KVE7181",
+        "price": 59.2,
+        "saleprice": null,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317505685556482841422&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002Z7%3Fitem%3D9SIBZT7KVE7181",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2304200R60SM67.jpg",
+        "matchedAt": "2026-06-27",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T17:05:43.676Z",
@@ -20285,7 +21158,7 @@ export default [
       "amazon": {
         "asin": "B09LTQYNSL",
         "url": "https://www.amazon.com/dp/B09LTQYNSL?tag=tiereduptech-20",
-        "price": 7.99,
+        "price": 6.39,
         "inStock": true
       }
     },
@@ -20307,7 +21180,7 @@ export default [
       "amazon": {
         "asin": "B0CXSH2PXQ",
         "url": "https://www.amazon.com/dp/B0CXSH2PXQ?tag=tiereduptech-20",
-        "price": 21.99,
+        "price": 19.79,
         "inStock": true
       }
     },

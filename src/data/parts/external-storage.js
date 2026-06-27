@@ -36,7 +36,7 @@ export default [
     "speed": 120,
     "deals": {
       "amazon": {
-        "price": 195,
+        "price": 209,
         "url": "https://www.amazon.com/dp/B07VP5X239?tag=tiereduptech-20",
         "inStock": true
       }
@@ -58,7 +58,7 @@ export default [
     "driveType": "HDD",
     "deals": {
       "amazon": {
-        "price": 119.99,
+        "price": 127.26,
         "url": "https://www.amazon.com/dp/B07CRG94G3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -100,7 +100,7 @@ export default [
     "driveType": "SSD",
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 183.98,
         "url": "https://www.amazon.com/dp/B08GTYFC37?tag=tiereduptech-20",
         "inStock": true
       }
@@ -121,7 +121,7 @@ export default [
     "driveType": "SSD",
     "deals": {
       "amazon": {
-        "price": 298.27,
+        "price": 308.9,
         "url": "https://www.amazon.com/dp/B08HN37XC1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -163,7 +163,7 @@ export default [
     "driveType": "SSD",
     "deals": {
       "amazon": {
-        "price": 234.99,
+        "price": 189.98,
         "url": "https://www.amazon.com/dp/B0874XN4D8?tag=tiereduptech-20",
         "inStock": true
       }
@@ -184,7 +184,7 @@ export default [
     "driveType": "SSD",
     "deals": {
       "amazon": {
-        "price": 375.74,
+        "price": 342.2,
         "url": "https://www.amazon.com/dp/B0874XWW23?tag=tiereduptech-20",
         "inStock": true
       }
@@ -205,7 +205,7 @@ export default [
     "driveType": "SSD",
     "deals": {
       "amazon": {
-        "price": 160,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B078SWJ3CF?tag=tiereduptech-20",
         "inStock": true
       }

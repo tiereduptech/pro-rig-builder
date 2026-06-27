@@ -57,7 +57,7 @@ export default [
     "vlan": false,
     "pxe": false,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 99102,
@@ -87,7 +87,7 @@ export default [
     "pxe": true,
     "connector": "RJ45",
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 99103,
@@ -117,7 +117,7 @@ export default [
     "vlan": true,
     "pxe": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-01"
+    "quarantinedAt": "2026-06-22"
   },
   {
     "id": 99104,
@@ -163,7 +163,7 @@ export default [
     "connector": "RJ45",
     "deals": {
       "amazon": {
-        "price": 27,
+        "price": 24.99,
         "url": "https://www.amazon.com/dp/B0BG685PKM?tag=tiereduptech-20",
         "inStock": true
       }
@@ -185,7 +185,7 @@ export default [
     "connector": "RJ45",
     "deals": {
       "amazon": {
-        "price": 19.99,
+        "price": 18.99,
         "url": "https://www.amazon.com/dp/B0C4LB5TY8?tag=tiereduptech-20",
         "inStock": true
       }
@@ -229,7 +229,7 @@ export default [
     "connector": "RJ45",
     "deals": {
       "amazon": {
-        "price": 84.99,
+        "price": 74.99,
         "url": "https://www.amazon.com/dp/B01N5AOWW6?tag=tiereduptech-20",
         "inStock": true
       }
@@ -251,7 +251,7 @@ export default [
     "connector": "RJ45",
     "deals": {
       "amazon": {
-        "price": 19.99,
+        "price": 24.49,
         "url": "https://www.amazon.com/dp/B07SNQ2NQ1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -273,7 +273,7 @@ export default [
     "connector": "SFP+",
     "deals": {
       "amazon": {
-        "price": 67.49,
+        "price": 75.01,
         "url": "https://www.amazon.com/dp/B01N4FYWUN?tag=tiereduptech-20",
         "inStock": true
       }
@@ -405,7 +405,7 @@ export default [
     "connector": "RJ45",
     "deals": {
       "amazon": {
-        "price": 17.98,
+        "price": 19.98,
         "url": "https://www.amazon.com/dp/B09HGRK5XB?tag=tiereduptech-20",
         "inStock": true
       }
