@@ -1058,7 +1058,7 @@ export default function UpgradePage() {
       <div style={{minHeight:"100vh", background:"var(--bg)"}}>
         <div style={{maxWidth:680, margin:"0 auto", padding:"48px 32px"}}>
           <Header />
-          <QuestionFlow onComplete={(ans) => setSpecs(prev => ({ ...prev, ...ans }))} />
+          <QuestionFlow specs={specs} onComplete={(ans) => setSpecs(prev => ({ ...prev, ...ans }))} />
         </div>
       </div>
     );
@@ -1672,7 +1672,81 @@ function QFSectionLabel({ children }) {
   return <div style={{fontFamily:"var(--mono)", fontSize:11, color:"var(--dim)", fontWeight:700, letterSpacing:1, marginBottom:10}}>{children}</div>;
 }
 
-function QuestionFlow({ onComplete }) {
+// Detected-hardware confirmation card — shown only in the question-flow path
+// (lite scanner). Reads the same specs fields already parsed from the URL and
+// omits any row/segment whose data is missing, so a sparse scan never renders
+// "undefined". Matches the design tokens of the question cards below.
+function DHRow({ label, value, detail, color }) {
+  return (
+    <div style={{background:"var(--bg3)", borderRadius:8, padding:"10px 14px"}}>
+      <div style={{fontFamily:"var(--mono)", fontSize:9, color, fontWeight:700, letterSpacing:1, marginBottom:3}}>{label}</div>
+      <div style={{fontFamily:"var(--ff)", fontSize:13, fontWeight:600, color:"var(--txt)", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap"}}>{value}</div>
+      {detail ? <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", marginTop:2}}>{detail}</div> : null}
+    </div>
+  );
+}
+
+function DetectedHardwareCard({ specs }) {
+  // Drop empty/missing segments, join the rest with the middot separator.
+  const dot = (...xs) => xs.filter(x => x != null && String(x).trim() !== "").join(" · ");
+  const sp  = (...xs) => xs.filter(x => x != null && String(x).trim() !== "").join(" ");
+
+  const rows = [];
+  if (specs.cpu) rows.push({ label: "CPU", color: "var(--sky, #38BDF8)", value: specs.cpu,
+    detail: dot(
+      (specs.cpu_cores && specs.cpu_threads) ? `${specs.cpu_cores}C/${specs.cpu_threads}T` : (specs.cpu_cores ? `${specs.cpu_cores}C` : null),
+      specs.cpu_clock ? `${specs.cpu_clock} GHz` : null,
+    ) });
+  if (specs.gpu) rows.push({ label: "GPU", color: "#4ADE80", value: specs.gpu,
+    detail: specs.gpu_vram ? `${specs.gpu_vram} GB VRAM` : "" });
+  if (specs.ram_total) rows.push({ label: "RAM", color: "#FFB020",
+    value: sp(`${specs.ram_total}GB`, specs.ram_type),
+    detail: specs.ram_speed ? `${specs.ram_speed}MHz` : "" });
+  if (specs.mobo) rows.push({ label: "Motherboard", color: "#9090A0", value: specs.mobo, detail: specs.mobo_mfr || "" });
+
+  const disks = [];
+  for (let i = 0; i < 4; i++) {
+    const model = specs[`disk${i}_model`];
+    if (model) disks.push({ model, size: specs[`disk${i}_size`], type: specs[`disk${i}_type`] });
+  }
+
+  // Nothing usable detected → don't render an empty card.
+  if (!rows.length && !disks.length) return null;
+
+  return (
+    <div style={{background:"var(--bg2)", borderRadius:16, border:"1px solid var(--bdr)", padding:24, marginBottom:20}}>
+      <div style={{display:"flex", alignItems:"center", gap:8, marginBottom:6}}>
+        <span style={{fontSize:16}}>🖥️</span>
+        <div style={{fontFamily:"var(--ff)", fontSize:16, fontWeight:700, color:"var(--txt)"}}>Your Detected Hardware</div>
+      </div>
+      <div style={{fontFamily:"var(--ff)", fontSize:12, color:"var(--dim)", marginBottom:14, lineHeight:1.5}}>
+        Here’s what the scanner found — confirm this looks like your machine.
+      </div>
+      {rows.length > 0 && (
+        <div style={{display:"grid", gridTemplateColumns:"repeat(2,1fr)", gap:12}}>
+          {rows.map(r => <DHRow key={r.label} {...r} />)}
+        </div>
+      )}
+      {disks.length > 0 && (
+        <div style={{marginTop:16, paddingTop:14, borderTop:"1px solid var(--bdr)"}}>
+          <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:600, marginBottom:8, letterSpacing:1.5}}>STORAGE</div>
+          <div style={{display:"flex", flexWrap:"wrap", gap:8}}>
+            {disks.map((d, i) => {
+              const meta = dot(d.size ? `${d.size}GB` : null, d.type);
+              return (
+                <div key={i} style={{background:"var(--bg3)", padding:"6px 12px", borderRadius:6, fontFamily:"var(--mono)", fontSize:11, color:"var(--dim)"}}>
+                  <span style={{color:"var(--txt)", fontWeight:600}}>{d.model}</span>{meta ? " · " + meta : ""}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function QuestionFlow({ specs, onComplete }) {
   const [sliderVal, setSliderVal]         = useState(383);  // 0-1000 raw; 383 → $1000 default
   const [storageChoice, setStorageChoice] = useState("no"); // "yes" | "no"
   const [storageType, setStorageType]     = useState(null); // "HDD" | "SSD" | "ANY"
@@ -1703,6 +1777,9 @@ function QuestionFlow({ onComplete }) {
           A few quick questions so we can tailor your upgrade path to your budget and setup.
         </p>
       </div>
+
+      {/* Detected hardware — reassures the user the scan worked before they answer */}
+      <DetectedHardwareCard specs={specs} />
 
       {/* Q1 — BUDGET */}
       <div style={card}>
