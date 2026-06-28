@@ -35,7 +35,7 @@ export default [
     "type": "Non-conductive",
     "deals": {
       "amazon": {
-        "price": 16,
+        "price": 14.1,
         "url": "https://www.amazon.com/dp/B08W3TK3KS?tag=tiereduptech-20",
         "inStock": true
       }

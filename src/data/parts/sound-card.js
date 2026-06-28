@@ -12,13 +12,9 @@ export default [
     "r": 4.3,
     "pciType": "x1",
     "cardHeight": 1,
-    "deals": {
-      "amazon": {
-        "price": 104.99,
-        "url": "https://www.amazon.com/dp/B086QN3WNX?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
+    "deals": {},
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 99001,
@@ -31,13 +27,9 @@ export default [
     "r": 4.2,
     "pciType": "x1",
     "cardHeight": 1,
-    "deals": {
-      "amazon": {
-        "price": 80,
-        "url": "https://www.amazon.com/dp/B077DGQFTF?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
+    "deals": {},
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 99002,
@@ -50,13 +42,7 @@ export default [
     "r": 4.3,
     "reviews": 3100,
     "asin": "B086QN3WNX",
-    "deals": {
-      "amazon": {
-        "price": 104.99,
-        "url": "https://www.amazon.com/dp/B086QN3WNX?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "pciType": "x1",
     "cardHeight": 2,
     "channels": "5.1",
@@ -64,7 +50,9 @@ export default [
     "sampleRate": 384,
     "bitDepth": 32,
     "hasAmp": true,
-    "impedance": 600
+    "impedance": 600,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 96300,
@@ -101,13 +89,9 @@ export default [
     "interface": "PCIe",
     "channels": "5.1",
     "bitDepth": "24-bit",
-    "deals": {
-      "amazon": {
-        "price": 62,
-        "url": "https://www.amazon.com/dp/B07HCX1NY9?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
+    "deals": {},
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 96302,

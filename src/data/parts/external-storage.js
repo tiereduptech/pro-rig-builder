@@ -13,7 +13,9 @@ export default [
     "capacity": 2000,
     "interface": "USB-C 3.2",
     "speed": 1050,
-    "ff": "Portable SSD"
+    "ff": "Portable SSD",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 99801,
@@ -72,7 +74,7 @@ export default [
     "driveType": "HDD",
     "deals": {
       "amazon": {
-        "price": 170,
+        "price": 211.29,
         "url": "https://www.amazon.com/dp/B07VSH3ML6?tag=tiereduptech-20",
         "inStock": true
       }
@@ -114,7 +116,7 @@ export default [
     "driveType": "SSD",
     "deals": {
       "amazon": {
-        "price": 308.9,
+        "price": 275.18,
         "url": "https://www.amazon.com/dp/B08HN37XC1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -177,7 +179,7 @@ export default [
     "driveType": "SSD",
     "deals": {
       "amazon": {
-        "price": 342.2,
+        "price": 359.39,
         "url": "https://www.amazon.com/dp/B0874XWW23?tag=tiereduptech-20",
         "inStock": true
       }

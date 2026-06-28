@@ -1225,7 +1225,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 479.99,
@@ -1288,7 +1289,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -1345,7 +1347,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.163Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -1396,12 +1399,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.909Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 334.75,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592749&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-32gb-kit-2x16gb-ddr4-3200mhz-c22-sodimm-laptop-memory-kit-green%2FJX8PSWVZKT&intsrc=APIG_28060",
-        "inStock": true
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -1425,7 +1424,8 @@ export default [
     "height": 32,
     "form": "SODIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedComp": "2026-06-28"
   },
   {
     "id": 40041,
@@ -1454,7 +1454,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 490.27,
@@ -1555,7 +1556,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -1613,7 +1615,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 5,
@@ -1652,13 +1655,7 @@ export default [
     "r": 4.4,
     "asin": "B0FZHDPC1J",
     "reviews": 852,
-    "deals": {
-      "amazon": {
-        "price": 99.99,
-        "url": "https://www.amazon.com/dp/B0FZHDPC1J?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/61T-DSUgF2L._AC_SL1001_.jpg",
       "https://m.media-amazon.com/images/I/71Wtgtp++oL._AC_SL1500_.jpg",
@@ -1678,7 +1675,9 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40046,
@@ -1748,7 +1747,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.348Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 499.99,
@@ -1811,7 +1811,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -1864,7 +1865,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 129.99,
@@ -1923,7 +1925,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 269.99,
@@ -1986,7 +1989,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -2026,7 +2030,7 @@ export default [
     "reviews": 484,
     "deals": {
       "amazon": {
-        "price": 380.92,
+        "price": 418,
         "url": "https://www.amazon.com/dp/B0FQNB9WBD?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2077,11 +2081,6 @@ export default [
         "url": "https://www.amazon.com/dp/B08C511GQH?tag=tiereduptech-20",
         "inStock": true
       },
-      "bestbuy": {
-        "price": 177.63,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592887&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-16gb-ddr4-3200mhz-c22-sodimm-laptop-memory-green%2FJX8PSWVZK7&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445837243750288734669292",
         "price": 129.19,
@@ -2090,7 +2089,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.274Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -2113,7 +2113,8 @@ export default [
     "height": 32,
     "form": "SODIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedComp": "2026-06-28"
   },
   {
     "id": 40054,
@@ -2129,7 +2130,7 @@ export default [
     "reviews": 3497,
     "deals": {
       "amazon": {
-        "price": 494.99,
+        "price": 449.88,
         "url": "https://www.amazon.com/dp/B0CTHXMYL8?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2147,7 +2148,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -2199,7 +2201,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.985Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 449.99,
@@ -2254,7 +2257,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.989Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -2307,7 +2311,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 259.99,
@@ -2353,7 +2358,7 @@ export default [
     "reviews": 93,
     "deals": {
       "amazon": {
-        "price": 169.14,
+        "price": 198.99,
         "url": "https://www.amazon.com/dp/B0G4BGRL9C?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2393,7 +2398,7 @@ export default [
     "reviews": 5776,
     "deals": {
       "amazon": {
-        "price": 87.49,
+        "price": 81.23,
         "url": "https://www.amazon.com/dp/B097K5J1SB?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2474,7 +2479,7 @@ export default [
     "reviews": 1147,
     "deals": {
       "amazon": {
-        "price": 449.99,
+        "price": 419.99,
         "url": "https://www.amazon.com/dp/B0BFGB2D2Z?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2516,7 +2521,7 @@ export default [
     "reviews": 2479,
     "deals": {
       "amazon": {
-        "price": 549.99,
+        "price": 899.99,
         "url": "https://www.amazon.com/dp/B087T7DWSN?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2528,7 +2533,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.732Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -2568,7 +2574,7 @@ export default [
     "reviews": 1160,
     "deals": {
       "amazon": {
-        "price": 429.99,
+        "price": 464.49,
         "url": "https://www.amazon.com/dp/B0DHFB8BTT?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2585,7 +2591,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -2638,7 +2645,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 720.74,
@@ -2738,7 +2746,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 489.99,
@@ -2784,7 +2793,7 @@ export default [
     "reviews": 398,
     "deals": {
       "amazon": {
-        "price": 107,
+        "price": 99,
         "url": "https://www.amazon.com/dp/B08QR2YGKX?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2796,7 +2805,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A7S6D2402050ZPZMP86.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.7
+        "matchScore": 0.7,
+        "sellerClass": "marketplace"
       }
     },
     "discount": 7,
@@ -2849,7 +2859,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 8,
@@ -2916,7 +2927,9 @@ export default [
     "height": 39,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40070,
@@ -2945,7 +2958,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -3086,7 +3100,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.989Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -3138,7 +3153,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.985Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 389.99,
@@ -3235,7 +3251,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.378Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 899,
@@ -3419,7 +3436,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.461Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 6,
@@ -3514,7 +3532,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 469.99,
@@ -3572,7 +3591,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.163Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -3610,11 +3630,6 @@ export default [
     "asin": "B0BJNTLJ5X",
     "reviews": 942,
     "deals": {
-      "amazon": {
-        "price": 945.99,
-        "url": "https://www.amazon.com/dp/B0BJNTLJ5X?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16820374429",
         "price": 519.99,
@@ -3623,7 +3638,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-429-10.png",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.55
+        "matchScore": 0.55,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -3646,7 +3662,8 @@ export default [
     "height": 44,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "amazonRemovedAnomaly": "2026-06-28"
   },
   {
     "id": 40085,
@@ -3662,7 +3679,7 @@ export default [
     "reviews": 880,
     "deals": {
       "amazon": {
-        "price": 239,
+        "price": 269.59,
         "url": "https://www.amazon.com/dp/B0C79S2CHW?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3674,12 +3691,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.347Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 488.38,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12629552&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-micron-16gb-2-x-8gb-ddr5-sdram-memory-kit-for-desktop-pc-computer-16-gb-2-x-8gb-ddr5-5600-pc5-44800-ddr5-unknown%2FJX8PSKJ9H2&intsrc=APIG_28060",
-        "inStock": true
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -3702,7 +3715,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedComp": "2026-06-28"
   },
   {
     "id": 40086,
@@ -3978,7 +3992,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 479.99,
@@ -4075,7 +4090,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AMBVD23090610W136F6.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.73
+        "matchScore": 0.73,
+        "sellerClass": "marketplace"
       }
     },
     "discount": 6,
@@ -4125,7 +4141,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -4199,13 +4216,7 @@ export default [
     "r": 4.8,
     "asin": "B07D1XCKWW",
     "reviews": 44177,
-    "deals": {
-      "amazon": {
-        "price": 146.95,
-        "url": "https://www.amazon.com/dp/B07D1XCKWW?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/71QFb5yIQCL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81uQa8GiZqL._AC_SL1500_.jpg",
@@ -4227,7 +4238,9 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40098,
@@ -4255,7 +4268,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.274Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -4356,7 +4370,9 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40101,
@@ -4384,7 +4400,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.461Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -4437,7 +4454,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 149.99,
@@ -4500,7 +4518,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -4642,7 +4661,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 15,
@@ -4696,7 +4716,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -4736,7 +4757,7 @@ export default [
     "reviews": 3930,
     "deals": {
       "amazon": {
-        "price": 799.99,
+        "price": 909.98,
         "url": "https://www.amazon.com/dp/B09R7S7PXC?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4754,7 +4775,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -4812,7 +4834,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -4865,7 +4888,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 7,
@@ -4917,7 +4941,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.985Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -4957,7 +4982,7 @@ export default [
     "reviews": 2152,
     "deals": {
       "amazon": {
-        "price": 769.99,
+        "price": 1266.89,
         "url": "https://www.amazon.com/dp/B0C1RGLVZ8?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4970,7 +4995,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 1019,
@@ -5016,7 +5042,7 @@ export default [
     "reviews": 1720,
     "deals": {
       "amazon": {
-        "price": 499.99,
+        "price": 449.07,
         "url": "https://www.amazon.com/dp/B0C3RYHZJQ?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5029,7 +5055,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 542.99,
@@ -5087,7 +5114,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 596.99,
@@ -5132,7 +5160,7 @@ export default [
     "reviews": 1310,
     "deals": {
       "amazon": {
-        "price": 700.02,
+        "price": 756.36,
         "url": "https://www.amazon.com/dp/B097K2KLLM?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5144,7 +5172,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.824Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -5234,7 +5263,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.933Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 1149.99,
@@ -5333,7 +5363,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.125Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 269.99,
@@ -5378,7 +5409,7 @@ export default [
     "reviews": 963,
     "deals": {
       "amazon": {
-        "price": 317.79,
+        "price": 294.22,
         "url": "https://www.amazon.com/dp/B088KSRW4S?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5390,7 +5421,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.060Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -5485,7 +5517,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 249.99,
@@ -5627,7 +5660,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 469.99,
@@ -5727,7 +5761,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.837Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -5779,7 +5814,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.458Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -5831,7 +5867,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 374.99,
@@ -5875,11 +5912,6 @@ export default [
     "asin": "B0CD7VZKN6",
     "reviews": 552,
     "deals": {
-      "amazon": {
-        "price": 1156.99,
-        "url": "https://www.amazon.com/dp/B0CD7VZKN6?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "44583111305975268675191",
         "price": 1220,
@@ -5889,7 +5921,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -5913,7 +5946,9 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "White",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40131,
@@ -6049,13 +6084,7 @@ export default [
     "r": 4.6,
     "asin": "B08N68K55C",
     "reviews": 531,
-    "deals": {
-      "amazon": {
-        "price": 284.99,
-        "url": "https://www.amazon.com/dp/B08N68K55C?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/71MafOE6NdL._AC_SL1200_.jpg",
       "https://m.media-amazon.com/images/I/51y1bHm5yyL._AC_SL1200_.jpg",
@@ -6077,7 +6106,9 @@ export default [
     "height": 44,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40135,
@@ -6313,7 +6344,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 464.99,
@@ -6454,7 +6486,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 899.99,
@@ -6593,7 +6626,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.465Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 1374.31,
@@ -6662,7 +6696,9 @@ export default [
     "height": 32,
     "form": "SODIMM",
     "color": "Red",
-    "ecc": true
+    "ecc": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40148,
@@ -6690,7 +6726,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-423-09.png",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.53
+        "matchScore": 0.53,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -6741,7 +6778,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.606Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -6902,7 +6940,7 @@ export default [
     "reviews": 276,
     "deals": {
       "amazon": {
-        "price": 839.99,
+        "price": 922.99,
         "url": "https://www.amazon.com/dp/B0GGJ4NMS4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -6956,7 +6994,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.933Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 15,
@@ -7183,7 +7222,9 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40160,
@@ -7197,13 +7238,7 @@ export default [
     "r": 4.5,
     "asin": "B085WQXKM2",
     "reviews": 204,
-    "deals": {
-      "amazon": {
-        "price": 1169.99,
-        "url": "https://www.amazon.com/dp/B085WQXKM2?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/51MAvxMzKXS._AC_SL1200_.jpg",
       "https://m.media-amazon.com/images/I/51-D37xqqhS._AC_SL1200_.jpg",
@@ -7225,7 +7260,9 @@ export default [
     "height": 31,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40161,
@@ -7281,7 +7318,7 @@ export default [
     "reviews": 147,
     "deals": {
       "amazon": {
-        "price": 504.99,
+        "price": 605.87,
         "url": "https://www.amazon.com/dp/B0CYM3WSHX?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7498,7 +7535,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 1119.99,
@@ -7556,7 +7594,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.933Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 499.99,
@@ -7615,7 +7654,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.124Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 549.99,
@@ -7659,13 +7699,7 @@ export default [
     "r": 4.6,
     "asin": "B0FNBN56PD",
     "reviews": 117,
-    "deals": {
-      "amazon": {
-        "price": 56.97,
-        "url": "https://www.amazon.com/dp/B0FNBN56PD?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/61akkdaKiRL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71ZzYNoW+pL._AC_SL1500_.jpg",
@@ -7683,7 +7717,9 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40171,
@@ -7712,7 +7748,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.124Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 999.99,
@@ -7768,7 +7805,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.623Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -7792,7 +7830,9 @@ export default [
     "height": 31,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40173,
@@ -7808,7 +7848,7 @@ export default [
     "reviews": 116,
     "deals": {
       "amazon": {
-        "price": 1099,
+        "price": 1299.99,
         "url": "https://www.amazon.com/dp/B0BSP5F4CN?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7849,11 +7889,6 @@ export default [
     "asin": "B09P35J2PQ",
     "reviews": 115,
     "deals": {
-      "amazon": {
-        "price": 398.99,
-        "url": "https://www.amazon.com/dp/B09P35J2PQ?tag=tiereduptech-20",
-        "inStock": true
-      },
       "bestbuy": {
         "price": 429.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12184620&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-team-t-force-vulcan-32gb-2-x-16gb-288-pin-pc-ram-ddr5-5200-pc5-41600-desktop-memory-model-flbd532g5200hc40cdc01-black%2FJ37P83H3H5&intsrc=APIG_28060",
@@ -7996,7 +8031,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.065Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -8244,16 +8280,6 @@ export default [
         "price": 569.99,
         "url": "https://www.amazon.com/dp/B0BZJKC2NJ?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837620646552166378118",
-        "price": 906.23,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837620646552166378118&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-32gb-ddr5-6400-cas-latency-cl32-memory-white-gray%2Fp%2F0RN-001J-01593%3Fitem%3D9SIAD6HKHA5191",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AMW5S24102000ZTLC09.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.834Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -8277,7 +8303,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "White",
-    "ecc": false
+    "ecc": false,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 40184,
@@ -8347,7 +8374,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.124Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 499.99,
@@ -8423,13 +8451,7 @@ export default [
     "r": 4.6,
     "asin": "B092YDGFNH",
     "reviews": 61,
-    "deals": {
-      "amazon": {
-        "price": 119.99,
-        "url": "https://www.amazon.com/dp/B092YDGFNH?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/71JIUhoUcJL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/314ZYX7Wq1L._AC_.jpg",
@@ -8450,7 +8472,9 @@ export default [
     "height": 31,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40188,
@@ -8602,7 +8626,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-386-01.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.65
+        "matchScore": 0.65,
+        "sellerClass": "official"
       }
     },
     "mpn": "Viper Elite 5",
@@ -8673,13 +8698,7 @@ export default [
     "r": 4.6,
     "asin": "B0DF7F6Q9F",
     "reviews": 57,
-    "deals": {
-      "amazon": {
-        "price": 619.99,
-        "url": "https://www.amazon.com/dp/B0DF7F6Q9F?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/71avYGtJlxL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/810xFZjGUFL._AC_SL1500_.jpg",
@@ -8698,7 +8717,9 @@ export default [
     "height": 32,
     "form": "SODIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40194,
@@ -8753,13 +8774,7 @@ export default [
     "r": 4.3,
     "asin": "B0FCLSCVVN",
     "reviews": 55,
-    "deals": {
-      "amazon": {
-        "price": 437.99,
-        "url": "https://www.amazon.com/dp/B0FCLSCVVN?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81gBPw0JO7L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71ibzXX6rTL._AC_SL1500_.jpg",
@@ -8779,7 +8794,9 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40196,
@@ -8793,13 +8810,7 @@ export default [
     "r": 4.7,
     "asin": "B0D52HPN3V",
     "reviews": 55,
-    "deals": {
-      "amazon": {
-        "price": 1199.99,
-        "url": "https://www.amazon.com/dp/B0D52HPN3V?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/71W-szaeZPL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81V3+SVPGsL._AC_SL1500_.jpg",
@@ -8820,7 +8831,9 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40197,
@@ -8888,7 +8901,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BDGPD2504250GKM68C5.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.95
+        "matchScore": 0.95,
+        "sellerClass": "other"
       }
     },
     "discount": 7,
@@ -8926,13 +8940,7 @@ export default [
     "r": 4.1,
     "asin": "B0FN6Z7TJC",
     "reviews": 48,
-    "deals": {
-      "amazon": {
-        "price": 399.99,
-        "url": "https://www.amazon.com/dp/B0FN6Z7TJC?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/71vV-RVgGAL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81mOMOC-zpL._AC_SL1500_.jpg",
@@ -8952,7 +8960,9 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40200,
@@ -8980,7 +8990,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.060Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "upc": "814914029879",
@@ -9055,13 +9066,7 @@ export default [
     "r": 4.8,
     "asin": "B0CRN6YFSM",
     "reviews": 46,
-    "deals": {
-      "amazon": {
-        "price": 437.99,
-        "url": "https://www.amazon.com/dp/B0CRN6YFSM?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81qvUpGPRFL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81Ni4yFGPcL._AC_SL1500_.jpg",
@@ -9082,7 +9087,9 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Red",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40203,
@@ -9192,7 +9199,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.462Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 7,
@@ -9350,13 +9358,7 @@ export default [
     "r": 4.5,
     "asin": "B0CKY3FFX1",
     "reviews": 31,
-    "deals": {
-      "amazon": {
-        "price": 379.99,
-        "url": "https://www.amazon.com/dp/B0CKY3FFX1?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/71jFoOS8zkL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71uGpCFaUeL._AC_SL1500_.jpg",
@@ -9377,7 +9379,7 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-06-23"
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40210,
@@ -9405,7 +9407,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.933Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 1099.99,
@@ -9587,7 +9590,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 264.99,
@@ -9686,7 +9690,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-801-01.png",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.55
+        "matchScore": 0.55,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -9709,7 +9714,9 @@ export default [
     "height": 44,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40217,
@@ -9725,7 +9732,7 @@ export default [
     "reviews": 22,
     "deals": {
       "amazon": {
-        "price": 679.99,
+        "price": 899.99,
         "url": "https://www.amazon.com/dp/B0DL21XXWP?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9764,13 +9771,7 @@ export default [
     "r": 4.2,
     "asin": "B0FDL9F3RM",
     "reviews": 22,
-    "deals": {
-      "amazon": {
-        "price": 485.99,
-        "url": "https://www.amazon.com/dp/B0FDL9F3RM?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/51j3DsWNOOL._AC_SL1200_.jpg",
       "https://m.media-amazon.com/images/I/51mYZa4KJ-L._AC_SL1200_.jpg",
@@ -9790,7 +9791,9 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40219,
@@ -9923,7 +9926,7 @@ export default [
     "reviews": 17,
     "deals": {
       "amazon": {
-        "price": 180.49,
+        "price": 261.99,
         "url": "https://www.amazon.com/dp/B0DF22G7MH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9976,7 +9979,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 489.99,
@@ -10076,7 +10080,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 474.99,
@@ -10129,7 +10134,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.125Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 999.99,
@@ -10157,7 +10163,9 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40227,
@@ -10408,13 +10416,7 @@ export default [
     "r": 4.6,
     "asin": "B0DH4QRR33",
     "reviews": 5,
-    "deals": {
-      "amazon": {
-        "price": 253.99,
-        "url": "https://www.amazon.com/dp/B0DH4QRR33?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/617wU9VI+BL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71shJYQWE3L._AC_SL1500_.jpg",
@@ -10434,7 +10436,9 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "White",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 40234,
@@ -10497,7 +10501,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 32,
@@ -10575,7 +10580,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.623Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 32,
@@ -10619,7 +10625,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 16,
@@ -10664,7 +10671,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 16,
@@ -10709,7 +10717,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 32,
@@ -10754,7 +10763,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 64,
@@ -10798,7 +10808,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.675Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 32,
@@ -10843,7 +10854,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 32,
@@ -10922,7 +10934,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 32,
@@ -10966,7 +10979,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.065Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 64,
@@ -11011,7 +11025,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 32,
@@ -11056,7 +11071,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 32,
@@ -11100,7 +11116,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.985Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 16,
@@ -11145,7 +11162,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 32,
@@ -11190,7 +11208,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 32,
@@ -11235,7 +11254,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 32,
@@ -11280,7 +11300,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 32,
@@ -11460,7 +11481,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.380Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 64,
@@ -11573,7 +11595,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 96,
@@ -11608,16 +11631,6 @@ export default [
         "price": 599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645748&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645748.p%3FskuId%3D6645748",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311900073909932676509",
-        "price": 929.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311900073909932676509&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-2-x-32gb-ddr5-6000-pc5-48000-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982287%3Fitem%3D9SIA2W0KU49127",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-198-04.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.348Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       }
     },
     "cap": 64,
@@ -11633,7 +11646,8 @@ export default [
     "formFactor": "UDIMM",
     "ramType": "DDR5",
     "height": 45,
-    "ecc": false
+    "ecc": false,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 40263,
@@ -11662,7 +11676,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 64,
@@ -11741,7 +11756,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 64,
@@ -11786,7 +11802,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 32,
@@ -11831,7 +11848,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cap": 16,
@@ -12003,16 +12021,11 @@ export default [
     "msrp": 248.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/51BM392zpdL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DCBHBBV3",
-        "url": "https://www.amazon.com/dp/B0DCBHBBV3?tag=tiereduptech-20",
-        "price": 248.99,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T13:17:14.409Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100349,
@@ -12250,7 +12263,7 @@ export default [
       "amazon": {
         "asin": "B0DHFD5625",
         "url": "https://www.amazon.com/dp/B0DHFD5625?tag=tiereduptech-20",
-        "price": 399.99,
+        "price": 499.95,
         "inStock": true
       }
     },
@@ -12412,14 +12425,7 @@ export default [
     "msrp": 464.99,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/71pmMaMPOAL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CS5X4RK4",
-        "url": "https://www.amazon.com/dp/B0CS5X4RK4?tag=tiereduptech-20",
-        "price": 464.99,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "speed": 7200,
     "cap": 32,
     "sticks": 2,
@@ -12428,7 +12434,9 @@ export default [
     "addedAt": "2026-05-15T13:17:14.419Z",
     "source": "amazon-discovery",
     "formFactor": "DIMM",
-    "rgb": true
+    "rgb": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100504,
@@ -12471,7 +12479,7 @@ export default [
       "amazon": {
         "asin": "B0GGJ9YH2D",
         "url": "https://www.amazon.com/dp/B0GGJ9YH2D?tag=tiereduptech-20",
-        "price": 849.99,
+        "price": 926.99,
         "inStock": true
       }
     },
@@ -12499,7 +12507,7 @@ export default [
       "amazon": {
         "asin": "B0DSQMCV8B",
         "url": "https://www.amazon.com/dp/B0DSQMCV8B?tag=tiereduptech-20",
-        "price": 863.99,
+        "price": 999.99,
         "inStock": true
       }
     },
@@ -12686,21 +12694,16 @@ export default [
     "msrp": 399.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/71cqpw-pTVL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B01MS6EL43",
-        "url": "https://www.amazon.com/dp/B01MS6EL43?tag=tiereduptech-20",
-        "price": 399.99,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "speed": 3600,
     "cap": 32,
     "memType": "DDR4",
     "addedAt": "2026-05-15T13:17:14.420Z",
     "source": "amazon-discovery",
     "formFactor": "DIMM",
-    "rgb": true
+    "rgb": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100514,
@@ -12743,7 +12746,7 @@ export default [
       "amazon": {
         "asin": "B0C5M6SJYW",
         "url": "https://www.amazon.com/dp/B0C5M6SJYW?tag=tiereduptech-20",
-        "price": 1117.99,
+        "price": 1194.69,
         "inStock": true
       }
     },
@@ -12770,7 +12773,7 @@ export default [
       "amazon": {
         "asin": "B08C53LL9J",
         "url": "https://www.amazon.com/dp/B08C53LL9J?tag=tiereduptech-20",
-        "price": 112.47,
+        "price": 120,
         "inStock": true
       }
     },
@@ -13002,14 +13005,7 @@ export default [
     "msrp": 329.98,
     "r": 1,
     "img": "https://m.media-amazon.com/images/I/61MoeafmY-L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GS4MTHJ4",
-        "url": "https://www.amazon.com/dp/B0GS4MTHJ4?tag=tiereduptech-20",
-        "price": 329.98,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.778Z",
     "source": "amazon-discovery",
     "cap": 32,
@@ -13017,7 +13013,9 @@ export default [
     "speed": 4800,
     "cl": 38,
     "memType": "DDR5",
-    "formFactor": "DIMM"
+    "formFactor": "DIMM",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100759,
@@ -13564,14 +13562,7 @@ export default [
     "msrp": 4699.99,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/91bVI6DiFoL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0D3TH4CGS",
-        "url": "https://www.amazon.com/dp/B0D3TH4CGS?tag=tiereduptech-20",
-        "price": 4699.99,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.778Z",
     "source": "amazon-discovery",
     "cap": 192,
@@ -13579,7 +13570,9 @@ export default [
     "speed": 6400,
     "cl": 32,
     "memType": "DDR5",
-    "formFactor": "DIMM"
+    "formFactor": "DIMM",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100780,
@@ -13944,14 +13937,7 @@ export default [
     "msrp": 563.58,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/71sKaassekL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CJ91NKMK",
-        "url": "https://www.amazon.com/dp/B0CJ91NKMK?tag=tiereduptech-20",
-        "price": 563.58,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.779Z",
     "source": "amazon-discovery",
     "cap": 32,
@@ -13959,7 +13945,9 @@ export default [
     "speed": 5600,
     "cl": 40,
     "memType": "DDR5",
-    "formFactor": "DIMM"
+    "formFactor": "DIMM",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100794,
@@ -14014,7 +14002,9 @@ export default [
     "cl": 30,
     "memType": "DDR5",
     "formFactor": "UDIMM",
-    "rgb": true
+    "rgb": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100796,

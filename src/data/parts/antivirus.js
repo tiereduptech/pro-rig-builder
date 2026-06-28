@@ -81,7 +81,7 @@ export default [
     "term": "1 Year",
     "deals": {
       "amazon": {
-        "price": 29.99,
+        "price": 24.99,
         "url": "https://www.amazon.com/dp/B07Q6B5YL5?tag=tiereduptech-20",
         "inStock": true
       }
@@ -108,7 +108,9 @@ export default [
         "url": "https://www.amazon.com/dp/B0DN318QCW?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 99108,
@@ -145,7 +147,7 @@ export default [
     "term": "1 Year",
     "deals": {
       "amazon": {
-        "price": 14.99,
+        "price": 19.99,
         "url": "https://www.amazon.com/dp/B0BB2N69J8?tag=tiereduptech-20",
         "inStock": true
       }
@@ -166,7 +168,7 @@ export default [
     "term": "1 Year",
     "deals": {
       "amazon": {
-        "price": 29.99,
+        "price": 19.99,
         "url": "https://www.amazon.com/dp/B07G8SQ2S3?tag=tiereduptech-20",
         "inStock": true
       }

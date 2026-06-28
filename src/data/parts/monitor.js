@@ -637,7 +637,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S26050919UDYIBC.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -717,7 +718,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-097-02.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -834,7 +836,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.702Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -939,13 +942,7 @@ export default [
     "r": 4.4,
     "asin": "B0DMSZLDHM",
     "reviews": 3470,
-    "deals": {
-      "amazon": {
-        "price": 175.29,
-        "url": "https://www.amazon.com/dp/B0DMSZLDHM?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "discount": 23,
     "additionalImages": [
       "https://m.media-amazon.com/images/I/71JDzVsiI9L._AC_SL1500_.jpg",
@@ -963,7 +960,9 @@ export default [
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
-    "curved": true
+    "curved": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 90027,
@@ -1190,16 +1189,6 @@ export default [
         "price": 159.99,
         "url": "https://www.amazon.com/dp/B0CQSWWGL2?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIC11SKPY1551",
-        "price": 319.98,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837813333421694630138&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2BA-01UX-00198%3Fitem%3D9SIC11SKPY1551",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B38FD2408130N8FS6B6.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -1210,7 +1199,8 @@ export default [
     "weight": "13 Pounds",
     "screenSize": "57\"",
     "bench": 32,
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 90034,
@@ -1242,7 +1232,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-160-526-11.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -1461,13 +1452,7 @@ export default [
     "r": 4.3,
     "asin": "B0G2LDW4XW",
     "reviews": 1196,
-    "deals": {
-      "amazon": {
-        "price": 239.99,
-        "url": "https://www.amazon.com/dp/B0G2LDW4XW?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "discount": 21,
     "additionalImages": [
       "https://m.media-amazon.com/images/I/71TcqT7IMmL._AC_SL1500_.jpg",
@@ -1484,7 +1469,9 @@ export default [
     "bench": 63,
     "ports": "1x HDMI, 1x DisplayPort",
     "resolution": "4K",
-    "curved": true
+    "curved": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 90041,
@@ -1641,13 +1628,7 @@ export default [
     "r": 4.4,
     "asin": "B0FFN4XLS5",
     "reviews": 498,
-    "deals": {
-      "amazon": {
-        "price": 161.49,
-        "url": "https://www.amazon.com/dp/B0FFN4XLS5?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "discount": 23,
     "additionalImages": [
       "https://m.media-amazon.com/images/I/717QU4PklDL._AC_SL1500_.jpg",
@@ -1665,7 +1646,7 @@ export default [
     "ports": "1x HDMI, 1x DisplayPort",
     "resolution": "4K",
     "needsReview": true,
-    "quarantinedAt": "2026-05-16"
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 90046,
@@ -1978,7 +1959,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -2059,7 +2041,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S26011511ITT0AB.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -2142,7 +2125,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445832641974753822442609",
@@ -2226,13 +2210,7 @@ export default [
     "r": 3.3,
     "asin": "B0G7DVWKZX",
     "reviews": 9,
-    "deals": {
-      "amazon": {
-        "price": 159.99,
-        "url": "https://www.amazon.com/dp/B0G7DVWKZX?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/71GccctDsqL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71o-csCR94L._AC_SL1500_.jpg",
@@ -2250,7 +2228,7 @@ export default [
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
     "needsReview": true,
-    "quarantinedAt": "2026-06-19"
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 90061,
@@ -2277,7 +2255,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-359-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -2470,7 +2449,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.110Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 199.99,
@@ -2522,7 +2502,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AB71S2512111E77AF7D.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "discount": 29,
@@ -2640,7 +2621,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.110Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 199.99,
@@ -2917,7 +2899,9 @@ export default [
     "hdr": "HDR",
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 90078,
@@ -2935,16 +2919,6 @@ export default [
         "price": 999,
         "url": "https://www.amazon.com/dp/B09568W9GS?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458315557834580574441503",
-        "price": 1929.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315557834580574441503&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-90lm05r0-b013b0-32-uhd-144-hz-rog-swift-ips-black%2Fp%2FN82E16824281129%3Fitem%3D9SIA4P0HWG2551",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-129-V01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.415Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -2964,7 +2938,8 @@ export default [
     "hdr": "HDR",
     "sync": "G-Sync Ultimate",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "4K"
+    "resolution": "4K",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 90079,
@@ -2991,7 +2966,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C16JS2604090K743V73.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.93
+        "matchScore": 0.93,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -3172,13 +3148,7 @@ export default [
     "r": 3.5,
     "asin": "B0DCBC3LDN",
     "reviews": 50,
-    "deals": {
-      "amazon": {
-        "price": 289.99,
-        "url": "https://www.amazon.com/dp/B0DCBC3LDN?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "discount": 21,
     "additionalImages": [
       "https://m.media-amazon.com/images/I/71qbs+3HJBL._AC_SL1500_.jpg",
@@ -3195,7 +3165,9 @@ export default [
     "bench": 82,
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 90085,
@@ -3209,11 +3181,6 @@ export default [
     "asin": "B0F1CTGB4P",
     "reviews": 54,
     "deals": {
-      "amazon": {
-        "price": 548.88,
-        "url": "https://www.amazon.com/dp/B0F1CTGB4P?tag=tiereduptech-20",
-        "inStock": true
-      },
       "bestbuy": {
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619487&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Falienware-aw3225dm-32-va-led-curved-qhd-180hz-1ms-freesync-gaming-monitor-with-hdr-hdmi-displayport-interstellar-indigo%2FJ3K4L636PG&intsrc=APIG_28060",
@@ -3235,7 +3202,8 @@ export default [
     "bench": 73,
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "upc": "00884116492757"
+    "upc": "00884116492757",
+    "amazonRemovedAnomaly": "2026-06-28"
   },
   {
     "id": 90086,
@@ -3428,13 +3396,7 @@ export default [
     "r": 4.3,
     "asin": "B0F6LZMP48",
     "reviews": 11,
-    "deals": {
-      "amazon": {
-        "price": 179.99,
-        "url": "https://www.amazon.com/dp/B0F6LZMP48?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/71iCOWpfigL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71JNRoAGCEL._AC_SL1500_.jpg",
@@ -3503,11 +3465,6 @@ export default [
     "asin": "B0FSRVLVY2",
     "reviews": 6,
     "deals": {
-      "amazon": {
-        "price": 139.86,
-        "url": "https://www.amazon.com/dp/B0FSRVLVY2?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458310681096160839858713",
         "name": "LGLO 27 Inch 4K UHD (3840x2160) Monitor, Dual Mode 4K@60Hz/2K@144Hz, IPS Panel, Borderless Design, HDR400, 99% sRGB, Work & Gaming Monitor for...",
@@ -3518,7 +3475,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -3535,7 +3493,9 @@ export default [
     "bench": 46,
     "ports": "1x HDMI, 1x DisplayPort",
     "upc": "00699838009851",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 90094,
@@ -3548,13 +3508,7 @@ export default [
     "r": 3.4,
     "asin": "B0G5Y7R756",
     "reviews": 5,
-    "deals": {
-      "amazon": {
-        "price": 329.99,
-        "url": "https://www.amazon.com/dp/B0G5Y7R756?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "discount": 9,
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81pJsxk311L._AC_SL1500_.jpg",
@@ -3599,7 +3553,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.269Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -3669,7 +3624,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.490Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 22,
@@ -3700,16 +3656,6 @@ export default [
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6346533&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdell-24-ips-led-fhd-monitor-hdmi-vga-black%2FJ3K4L9KRW9&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIA6ZPKCM7729",
-        "price": 274.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837676566862334188149&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-p2419h-24-full-hd%2Fp%2F0JC-0004-00HY1%3Fitem%3D9SIA6ZPKCM7729",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0JC-0004-00HY1-04.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.78
       }
     },
     "screenSize": 24,
@@ -3722,7 +3668,8 @@ export default [
     "value": 26,
     "bench": 39,
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 90099,
@@ -4343,7 +4290,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.964Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 15.6,
@@ -4889,7 +4837,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.072Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -5144,16 +5093,6 @@ export default [
         "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6455487&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6455487.p%3FskuId%3D6455487",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458314935115687749257513",
-        "price": 199,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314935115687749257513&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fhp-21-5%2Fp%2F0JC-0019-02D31%3Fitem%3D9SIA7ABJJ13399",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0JC-0019-02D31-S01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.378Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       }
     },
     "screenSize": 21.5,
@@ -5166,7 +5105,8 @@ export default [
     "value": 38,
     "bench": 43,
     "sync": "FreeSync",
-    "ports": "HDMI"
+    "ports": "HDMI",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 90144,
@@ -5386,7 +5326,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.380Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 14,
@@ -5711,11 +5652,6 @@ export default [
     "upc": "195713404266",
     "mpn": "62CAUAR1US",
     "deals": {
-      "bestbuy": {
-        "price": 249.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6483954&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6483954.p%3FskuId%3D6483954",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445835006559375112838514",
         "price": 161.92,
@@ -5724,7 +5660,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.201Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 15.6,
@@ -5735,7 +5672,10 @@ export default [
     "contrast": "1000:1",
     "value": 7,
     "bench": 38,
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "bestbuyRemovedComp": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 90162,
@@ -5900,7 +5840,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-276-858-S01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "screenSize": 23.8,
@@ -6022,7 +5963,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-117-082-S10.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "screenSize": 23.8,
@@ -6063,7 +6005,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -6103,7 +6046,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.355Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 34,
@@ -6142,7 +6086,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 34,
@@ -6216,7 +6161,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V1DSD2303220Z4WMYE0.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 31.5,
@@ -6256,7 +6202,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.071Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 16,
@@ -6356,7 +6303,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.578Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 24,
@@ -6507,7 +6455,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-026-379-06.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "screenSize": 27,
@@ -6549,7 +6498,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -6589,7 +6539,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -6658,7 +6609,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.748Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -6698,7 +6650,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.258Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 14.1,
@@ -6736,7 +6689,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.578Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 13.3,
@@ -6774,7 +6728,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.578Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 13.3,
@@ -6813,7 +6768,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.623Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 37.5,
@@ -6853,7 +6809,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.623Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -6952,7 +6909,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 209.99,
@@ -7030,7 +6988,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD2405130VRKF389.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "screenSize": 23.8,
@@ -7130,7 +7089,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.702Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -7170,7 +7130,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD2405130VRYU229.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "screenSize": 15.6,
@@ -7209,7 +7170,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.623Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -7250,7 +7212,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 779.99,
@@ -7298,7 +7261,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 599.99,
@@ -7376,7 +7340,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 799.99,
@@ -7423,7 +7388,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.348Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 34,
@@ -7465,7 +7431,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.123Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -7504,7 +7471,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -7543,7 +7511,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -7602,16 +7571,6 @@ export default [
         "price": 1199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6579916&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6579916.p%3FskuId%3D6579916",
         "inStock": false
-      },
-      "newegg": {
-        "sku": "4458317137285930945968092",
-        "price": 2027.5,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317137285930945968092&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16824026401%3Fitem%3D9SIAD6HK959765",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-026-401-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.823Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       }
     },
     "screenSize": 37.5,
@@ -7625,7 +7584,8 @@ export default [
     "bench": 92,
     "hdr": "HDR",
     "sync": "G-Sync Compatible",
-    "ports": "1x DisplayPort, 2x HDMI"
+    "ports": "1x DisplayPort, 2x HDMI",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 90215,
@@ -7781,7 +7741,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 31.5,
@@ -7969,7 +7930,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.123Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -8010,7 +7972,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.123Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "4458311733130193038301261",
@@ -8061,7 +8024,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.702Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -8101,7 +8065,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.312Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -8142,7 +8107,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 21.5,
@@ -8183,7 +8149,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.623Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 24,
@@ -8402,7 +8369,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.610Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 28.2,
@@ -8531,7 +8499,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 199.99,
@@ -8578,7 +8547,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 219.99,
@@ -8765,16 +8735,6 @@ export default [
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595424&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595424.p%3FskuId%3D6595424",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIAD6HKK34567",
-        "price": 552.68,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835785397803582503257&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flg-34sr63qa-w-34-wqhd-100-hz-smart-va-white%2Fp%2FN82E16824026506%3Fitem%3D9SIAD6HKK34567",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-026-506-01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.58
       }
     },
     "screenSize": 34,
@@ -8788,7 +8748,8 @@ export default [
     "bench": 54,
     "hdr": "HDR10",
     "ports": "HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 90253,
@@ -8845,7 +8806,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -8884,7 +8846,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.362Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -8923,7 +8886,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.294Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -8992,7 +8956,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.123Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -9032,7 +8997,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-026-431-01.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.78
+        "matchScore": 0.78,
+        "sellerClass": "marketplace"
       }
     },
     "screenSize": 34,
@@ -9172,7 +9138,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 129.99,
@@ -9250,7 +9217,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 24,
@@ -9350,7 +9318,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.294Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 21.5,
@@ -9451,7 +9420,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 749.99,
@@ -9536,7 +9506,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 879.99,
@@ -9719,7 +9690,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.424Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 31.5,
@@ -9816,7 +9788,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0JC-000D-00EC3-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 31.5,
@@ -10065,7 +10038,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 279.99,
@@ -10111,7 +10085,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.702Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -10151,7 +10126,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.702Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 24,
@@ -10191,7 +10167,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-026-478-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "screenSize": 31.5,
@@ -10232,7 +10209,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-026-477-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "screenSize": 27,
@@ -10274,7 +10252,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 99.99,
@@ -10319,7 +10298,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.293Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -10360,7 +10340,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.623Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -10402,7 +10383,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.623Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 31.5,
@@ -10475,7 +10457,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-343-12.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "screenSize": 27,
@@ -10571,7 +10554,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.066Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -10612,7 +10596,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "4458313302302168963358123",
@@ -10671,7 +10656,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 289.99,
@@ -10717,7 +10703,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.204Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -10759,7 +10746,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.623Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 31.5,
@@ -10799,7 +10787,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.448Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -10838,7 +10827,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.072Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -11031,7 +11021,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.623Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -11072,7 +11063,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.623Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 31.5,
@@ -11114,7 +11106,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.100Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -11278,7 +11271,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.312Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -11347,7 +11341,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.203Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 31.5,
@@ -11388,7 +11383,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.749Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -11429,7 +11425,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.623Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -11470,7 +11467,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.257Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "4458318209251856026705781",
@@ -11523,7 +11521,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "4458312858687762809260960",
@@ -11604,7 +11603,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2511150H1ZPJ95.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "screenSize": 31.5,
@@ -11643,7 +11643,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.702Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -11683,7 +11684,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABMTD24073013KQU15B.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.5
+        "matchScore": 0.5,
+        "sellerClass": "marketplace"
       }
     },
     "screenSize": 27,
@@ -11722,7 +11724,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.923Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 21.5,
@@ -11821,7 +11824,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-026-451-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "screenSize": 27,
@@ -11862,7 +11866,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2512060GZBWC1C.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "screenSize": 31.5,
@@ -11902,7 +11907,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.436Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 17,
@@ -11940,7 +11946,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.295Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 15.6,
@@ -12040,7 +12047,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 104.99,
@@ -12117,7 +12125,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.804Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -12157,7 +12166,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD2510101BMKVTF6.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "screenSize": 27,
@@ -12197,7 +12207,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.380Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -12265,7 +12276,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2603060PS3B247.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 16,
@@ -12332,7 +12344,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.783Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445837372862523400742544",
@@ -12426,7 +12439,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 119.99,
@@ -12462,16 +12476,6 @@ export default [
         "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6668645&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6668645.p%3FskuId%3D6668645",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIA97TKPY3517",
-        "price": 383.96,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836592127492842381252&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-mb16ahg-15-6-fhd%2Fp%2FN82E16824281249%3Fitem%3D9SIA97TKPY3517",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-249-10.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.71
       }
     },
     "screenSize": 16,
@@ -12484,7 +12488,8 @@ export default [
     "value": 18,
     "bench": 35,
     "ports": "HDMI, USB-C",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 90355,
@@ -12632,7 +12637,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C0T2S26051211PKC061.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "screenSize": 24,
@@ -12704,7 +12710,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.970Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -12744,7 +12751,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.298Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 24,
@@ -12784,7 +12792,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2602020E7HMX03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.62
+        "matchScore": 0.62,
+        "sellerClass": "marketplace"
       }
     },
     "screenSize": 21.5,
@@ -12824,7 +12833,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.372Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 15.6,
@@ -12862,7 +12872,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.804Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "4458314398753134933535920",
@@ -12912,7 +12923,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.297Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -12952,7 +12964,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.970Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 23.8,
@@ -12992,7 +13005,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.783Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 799.99,
@@ -13077,7 +13091,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.783Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 139.99,
@@ -13116,17 +13131,6 @@ export default [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673821&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-mp243l-e14-24-fhd-ips-144hz-1ms-adaptive-sync-hdr-ready-hdmivga-matte-black%2FJ3P7TX6YR3&intsrc=APIG_28060",
         "inStock": true
       },
-      "newegg": {
-        "sku": "4458318086732426520087430",
-        "name": "MSI 23.8' FHD (1920x1080) HDMI VGA 144Hz 1ms Adaptive-Sync IPS Gaming Office Monitor PRO MP243L E14W",
-        "price": 152.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318086732426520087430&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-00B1-001D6%3Fitem%3D9SIA8X5KP75031",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S25110509LHYL52.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-15T02:34:16.508Z",
-        "matchMethod": "remediate:strict-token",
-        "matchScore": 1
-      },
       "msi": {
         "price": 79.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2736&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP243L-E14&intsrc=APIG_16410",
@@ -13144,7 +13148,8 @@ export default [
     "hdr": "HDR",
     "sync": "Adaptive Sync",
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 90372,
@@ -13171,7 +13176,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.297Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -13211,7 +13217,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.450Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 31.5,
@@ -13250,7 +13257,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.449Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "screenSize": 27,
@@ -13429,7 +13437,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C0T2S25061114Y8WYEB.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.83
+        "matchScore": 0.83,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.798Z",
@@ -13485,7 +13494,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-311-06.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.798Z",
@@ -13553,7 +13563,7 @@ export default [
       "amazon": {
         "asin": "B0D1DZNL3H",
         "url": "https://www.amazon.com/dp/B0D1DZNL3H?tag=tiereduptech-20",
-        "price": 183.36,
+        "price": 219.99,
         "inStock": true
       }
     },
@@ -13577,23 +13587,16 @@ export default [
         "url": "https://www.amazon.com/dp/B0F765XFX8?tag=tiereduptech-20",
         "price": 219.99,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIA8X5KPY2155",
-        "price": 497,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835143715632023791857&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-000A-000B4%3Fitem%3D9SIA8X5KPY2155",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S2512200A8AME4D.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.96
       }
     },
     "addedAt": "2026-05-15T14:34:31.799Z",
     "source": "amazon-discovery",
     "resolution": "4K",
     "refresh": 160,
-    "panel": "IPS"
+    "panel": "IPS",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 100997,
@@ -13656,7 +13659,7 @@ export default [
       "amazon": {
         "asin": "B07CS3JGPC",
         "url": "https://www.amazon.com/dp/B07CS3JGPC?tag=tiereduptech-20",
-        "price": 191.7,
+        "price": 277,
         "inStock": true
       }
     },
@@ -13679,7 +13682,7 @@ export default [
       "amazon": {
         "asin": "B0F1GD9YFN",
         "url": "https://www.amazon.com/dp/B0F1GD9YFN?tag=tiereduptech-20",
-        "price": 284.99,
+        "price": 299.99,
         "inStock": true
       }
     },
@@ -13713,7 +13716,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-278-03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.7
+        "matchScore": 0.7,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.799Z",
@@ -13790,7 +13794,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-369-03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.63
+        "matchScore": 0.63,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.799Z",
@@ -13808,19 +13813,14 @@ export default [
     "msrp": 169.99,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/51VzkH6OfCL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DJQ43TXD",
-        "url": "https://www.amazon.com/dp/B0DJQ43TXD?tag=tiereduptech-20",
-        "price": 169.99,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.799Z",
     "source": "amazon-discovery",
     "resolution": "4K",
     "refresh": 60,
-    "screenSize": 32
+    "screenSize": 32,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 101006,
@@ -14008,7 +14008,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-538-02.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.55
+        "matchScore": 0.55,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.800Z",
@@ -14031,7 +14032,7 @@ export default [
       "amazon": {
         "asin": "B0D8LH2VSP",
         "url": "https://www.amazon.com/dp/B0D8LH2VSP?tag=tiereduptech-20",
-        "price": 159.99,
+        "price": 172.36,
         "inStock": true
       }
     },
@@ -14175,16 +14176,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0C4Z8RFY9?tag=tiereduptech-20",
         "price": 149.99,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBKFRK9F3023",
-        "price": 259.9,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837127770220470118415&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-000A-00077%3Fitem%3D9SIBKFRK9F3023",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S2401110V89W5C1.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.95
       }
     },
     "addedAt": "2026-05-15T14:34:31.800Z",
@@ -14192,7 +14183,10 @@ export default [
     "resolution": "1440p",
     "refresh": 180,
     "panel": "IPS",
-    "screenSize": 27
+    "screenSize": 27,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 101021,
@@ -14337,7 +14331,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-027-385-18.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.71
+        "matchScore": 0.71,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.801Z",
@@ -14418,7 +14413,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-075-02.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.9
+        "matchScore": 0.9,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.801Z",
@@ -14488,7 +14484,7 @@ export default [
       "amazon": {
         "asin": "B0GKFLQ9SW",
         "url": "https://www.amazon.com/dp/B0GKFLQ9SW?tag=tiereduptech-20",
-        "price": 99.99,
+        "price": 117.2,
         "inStock": true
       }
     },
@@ -14580,16 +14576,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0C1T35BCF?tag=tiereduptech-20",
         "price": 179.99,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIA8X5KB58724",
-        "price": 338.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838608903355963710382&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-000P-00R61%3Fitem%3D9SIA8X5KB58724",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD24060211KX3O44.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.77
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
@@ -14597,7 +14583,8 @@ export default [
     "resolution": "1440p",
     "refresh": 240,
     "panel": "IPS",
-    "screenSize": 27
+    "screenSize": 27,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 101037,
@@ -14763,7 +14750,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/3D4-000V-00087-14.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.95
+        "matchScore": 0.95,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
@@ -14787,23 +14775,14 @@ export default [
         "url": "https://www.amazon.com/dp/B0D7NNK43H?tag=tiereduptech-20",
         "price": 834.99,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIA8X5KPX6297",
-        "price": 1459.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583590561993412716687&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-pg32ucdmr-32-uhd-240-hz-rog-swift-oled-black%2Fp%2FN82E16824281376%3Fitem%3D9SIA8X5KPX6297",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-376-07.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.57
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
     "source": "amazon-discovery",
     "resolution": "4K",
     "refresh": 240,
-    "panel": "OLED"
+    "panel": "OLED",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 101045,
@@ -14829,7 +14808,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD25060507C09P89.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.67
+        "matchScore": 0.67,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
@@ -14862,7 +14842,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-333-10.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.5
+        "matchScore": 0.5,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
@@ -14941,7 +14922,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S2401260WHX9905.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.88
+        "matchScore": 0.88,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
@@ -14960,20 +14942,15 @@ export default [
     "msrp": 224.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/71KPA2JEU3L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FPFTPPYN",
-        "url": "https://www.amazon.com/dp/B0FPFTPPYN?tag=tiereduptech-20",
-        "price": 169.97,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.802Z",
     "source": "amazon-discovery",
     "resolution": "1440p",
     "refresh": 240,
     "panel": "IPS",
-    "screenSize": 27
+    "screenSize": 27,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 101051,
@@ -15012,7 +14989,7 @@ export default [
       "amazon": {
         "asin": "B0F233D6W1",
         "url": "https://www.amazon.com/dp/B0F233D6W1?tag=tiereduptech-20",
-        "price": 230.99,
+        "price": 209,
         "inStock": true
       }
     },
@@ -15106,7 +15083,7 @@ export default [
       "amazon": {
         "asin": "B0G5Z5N274",
         "url": "https://www.amazon.com/dp/B0G5Z5N274?tag=tiereduptech-20",
-        "price": 329.99,
+        "price": 437.9,
         "inStock": true
       },
       "newegg": {
@@ -15117,7 +15094,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-011-536-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.67
+        "matchScore": 0.67,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.803Z",
@@ -15188,7 +15166,7 @@ export default [
       "amazon": {
         "asin": "B0G4P697M8",
         "url": "https://www.amazon.com/dp/B0G4P697M8?tag=tiereduptech-20",
-        "price": 379.98,
+        "price": 430,
         "inStock": true
       }
     },
@@ -15221,7 +15199,9 @@ export default [
     "resolution": "1440p",
     "refresh": 175,
     "panel": "OLED",
-    "curved": true
+    "curved": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 101061,
@@ -15247,7 +15227,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-313-10.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.71
+        "matchScore": 0.71,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.803Z",
@@ -15280,7 +15261,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-376-07.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.74
+        "matchScore": 0.74,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.803Z",
@@ -15337,7 +15319,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-394-05.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.65
+        "matchScore": 0.65,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.803Z",
@@ -15406,7 +15389,7 @@ export default [
       "amazon": {
         "asin": "B0F1H325FN",
         "url": "https://www.amazon.com/dp/B0F1H325FN?tag=tiereduptech-20",
-        "price": 314.99,
+        "price": 406.99,
         "inStock": true
       }
     },
@@ -15525,23 +15508,14 @@ export default [
         "url": "https://www.amazon.com/dp/B0F234D8G9?tag=tiereduptech-20",
         "price": 99,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIAMG8KNM8917",
-        "price": 221.44,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833408809157315861625&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-vg249ql3a-24-fhd-180-hz-tuf-gaming-ips%2Fp%2FN82E16824281289%3Fitem%3D9SIAMG8KNM8917",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-289-03.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.55
       }
     },
     "addedAt": "2026-05-15T14:34:31.804Z",
     "source": "amazon-discovery",
     "resolution": "1080p",
     "refresh": 144,
-    "panel": "IPS"
+    "panel": "IPS",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 101073,
@@ -15556,7 +15530,7 @@ export default [
       "amazon": {
         "asin": "B0FLL354M2",
         "url": "https://www.amazon.com/dp/B0FLL354M2?tag=tiereduptech-20",
-        "price": 94.99,
+        "price": 85,
         "inStock": true
       }
     },
@@ -15817,7 +15791,7 @@ export default [
       "amazon": {
         "asin": "B0F15CGTGW",
         "url": "https://www.amazon.com/dp/B0F15CGTGW?tag=tiereduptech-20",
-        "price": 636.09,
+        "price": 699,
         "inStock": true
       }
     },
@@ -16018,7 +15992,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S25102111Q73S05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.63
+        "matchScore": 0.63,
+        "sellerClass": "other"
       }
     },
     "addedAt": "2026-05-15T14:34:31.805Z",
@@ -16051,7 +16026,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-378-17.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.64
+        "matchScore": 0.64,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.805Z",
@@ -16084,7 +16060,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-413-12.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.57
+        "matchScore": 0.57,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.805Z",
@@ -16117,7 +16094,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-413-12.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.74
+        "matchScore": 0.74,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.805Z",
@@ -16234,7 +16212,7 @@ export default [
       "amazon": {
         "asin": "B0DHJBWY52",
         "url": "https://www.amazon.com/dp/B0DHJBWY52?tag=tiereduptech-20",
-        "price": 809.89,
+        "price": 939.99,
         "inStock": true
       }
     },
@@ -16258,7 +16236,7 @@ export default [
       "amazon": {
         "asin": "B0DWT9XN4D",
         "url": "https://www.amazon.com/dp/B0DWT9XN4D?tag=tiereduptech-20",
-        "price": 699.99,
+        "price": 749.99,
         "inStock": true
       }
     },
@@ -16635,20 +16613,15 @@ export default [
     "msrp": 745.27,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/71Fk4y2ps4L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0D1RL9D39",
-        "url": "https://www.amazon.com/dp/B0D1RL9D39?tag=tiereduptech-20",
-        "price": 557.99,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.806Z",
     "source": "amazon-discovery",
     "resolution": "1440p",
     "refresh": 360,
     "panel": "OLED",
-    "screenSize": 27
+    "screenSize": 27,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 101118,
@@ -16672,6 +16645,8 @@ export default [
     "screenSize": 32,
     "resolution": "4K",
     "refresh": 165,
-    "panel": "OLED"
+    "panel": "OLED",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   }
 ];

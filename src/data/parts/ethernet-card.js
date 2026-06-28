@@ -163,7 +163,7 @@ export default [
     "connector": "RJ45",
     "deals": {
       "amazon": {
-        "price": 24.99,
+        "price": 29.99,
         "url": "https://www.amazon.com/dp/B0BG685PKM?tag=tiereduptech-20",
         "inStock": true
       }
@@ -185,7 +185,7 @@ export default [
     "connector": "RJ45",
     "deals": {
       "amazon": {
-        "price": 18.99,
+        "price": 19.99,
         "url": "https://www.amazon.com/dp/B0C4LB5TY8?tag=tiereduptech-20",
         "inStock": true
       }
@@ -339,7 +339,7 @@ export default [
     "connector": "RJ45",
     "deals": {
       "amazon": {
-        "price": 69.99,
+        "price": 62.99,
         "url": "https://www.amazon.com/dp/B0FM2DH49B?tag=tiereduptech-20",
         "inStock": true
       }
@@ -361,7 +361,7 @@ export default [
     "connector": "RJ45",
     "deals": {
       "amazon": {
-        "price": 61,
+        "price": 57.84,
         "url": "https://www.amazon.com/dp/B0D7B2WX2T?tag=tiereduptech-20",
         "inStock": true
       }

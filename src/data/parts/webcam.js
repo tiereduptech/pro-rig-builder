@@ -103,7 +103,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "resolution": "1080p",
@@ -187,7 +188,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-C920S-Pro-HD-Webcam/dp/B07K986YLL/ref=sr_1_3?crid=EW1N21FRQ61U&dib=eyJ2IjoiMSJ9.jPNsGEG4koGA9IWUTRKVVtoGAXhh2AFxmylYPBLDCpYxwA8pbFif40Z2-U0yypxvhySTVMa_7EIm1G2_M3TIJN0XOq2WXUvQqFUTgJ7xAsvhA1IeTQDcVYbyG7vw6-BtyckVgb-HVTNfzrQm3c9kMq5rwKjs5SGiwFh2nHTXzI942rrTk83o1nHgAIX2VHWKRIKVq32l7se9y0gi8gmwT0OCLQ90SwU4ZH3NOTQUrnw.W05UqzZZtPz0Id3nuPFxAvBT09KeEtazcm8mdzxHZ24&dib_tag=se&keywords=Logitech+C920&qid=1777130737&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BC920%2Caps%2C251&sr=8-3&tag=tiereduptech-20",
-        "price": 59.99,
+        "price": 56.87,
         "inStock": true
       }
     },
@@ -208,7 +209,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Insta360-Link-2C-Noise-Canceling-Streaming/dp/B0DDTGY8FG/ref=sr_1_1?crid=FSN84WU0UR66&dib=eyJ2IjoiMSJ9.hJSkz3sQocJ_XCbsNwK4Y3temiZftjZIuidlhDIadNoQXKABVsp77EPw6rHnKJx1R-qngsQAdOX0sqTkWeSRhG1izla6v08YK8wrLT1k8iZIvEbkynROzlrFsb0x0w2TYbK-LJJxWKuW_SSc36I4cQRlNOCBcBNsLizYq0fqPaFDqzOCoNGtE5sCtWuOHeLW_4xHVYYgLJGQGg8isGwxuvy6buEL0X_i-P__43l6pgk.mN3Z7VdEXLQJQlwmmIyFQy4QNCEn4e7DcXTHtRZb0pM&dib_tag=se&keywords=Insta360+webcam&qid=1777130736&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Insta360%2Bwebcam%2Caps%2C156&sr=8-1&tag=tiereduptech-20",
-        "price": 149.99,
+        "price": 99.99,
         "inStock": true
       }
     },
@@ -229,7 +230,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-2017-Brio-4K-Webcam/dp/B01N5UOYC4/ref=sr_1_35?crid=HAN2OPTSB7WU&dib=eyJ2IjoiMSJ9.-d6QW9KDdjTdsF-cm_1lKjh8xG2w92PgrZLofe05k9SY5ZVx13HMmxhu3XdfbSqH6gSA9PeoqZXcFmPOdoVCMOKrPw8HsgykwJckKmqG2XUQLdYZg8CsKlHDOx2nFWwdb87Fo3Yq6dpLVRohDzkDlmQkegOcXHUahzJzTakY3DlNeKyBzaVWVF1i0cQVEoQR6PfojgZo3aa1DZb-0-i2PRc3VM53sv4YrLFG_1xdRL4.PXIVAwtxGM2O1IsMdZbDBjZk39iNVF-k2elbeNFUcDQ&dib_tag=se&keywords=Razer+Kiyo+Pro&qid=1777130742&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BKiyo%2BPro%2Caps%2C252&sr=8-35&xpid=paxmvJBrnqNjM&tag=tiereduptech-20",
-        "price": 120.47,
+        "price": 108.6,
         "inStock": true
       }
     },
@@ -250,7 +251,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/AutoFocus-Microphone-NexiGo-Streaming-Compatible/dp/B08931JJLV/ref=sr_1_44?crid=NJ0CRHMHL91P&dib=eyJ2IjoiMSJ9.U4aoqx6hhrpJ-Ohs6nmpufS1aJIpycqBT1bWa9Vbwc-p77zqWCcx4WrJD5ClkA_whZA8g5y3lF5VZQ9TLh57MuKkaI2yRILNkE62lYeAgHGOBG2aHZtplsq0sTmew6VXhZKt7ythJdyv8zdpIkq_gfJcp_DewV7LGROc_-pAOs_CWKuPAaWBxWvbpxCJTwtr1rxZJ5g11xMs22KIdRePgHgK4sBLP6X2N_A_F5RTNU0.Ij3OFqC0PdASzPKwp93PdwGDxsfNsGDCOnExWr8wJ4s&dib_tag=se&keywords=Razer+Kiyo&qid=1777130798&sprefix=Razer%2BKiyo%2Caps%2C101&sr=8-44&xpid=bINkmmP0uMtqX&tag=tiereduptech-20",
-        "price": 33.99,
+        "price": 39.99,
         "inStock": true
       }
     },
@@ -271,7 +272,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Insta360-Link-Tracking-Noise-Canceling-Streaming/dp/B0DDTH3HX8/ref=sr_1_2?crid=FSN84WU0UR66&dib=eyJ2IjoiMSJ9.hJSkz3sQocJ_XCbsNwK4Y3temiZftjZIuidlhDIadNoQXKABVsp77EPw6rHnKJx1R-qngsQAdOX0sqTkWeSRhG1izla6v08YK8wrLT1k8iZIvEbkynROzlrFsb0x0w2TYbK-LJJxWKuW_SSc36I4cQRlNOCBcBNsLizYq0fqPaFDqzOCoNGtE5sCtWuOHeLW_4xHVYYgLJGQGg8isGwxuvy6buEL0X_i-P__43l6pgk.mN3Z7VdEXLQJQlwmmIyFQy4QNCEn4e7DcXTHtRZb0pM&dib_tag=se&keywords=Insta360+webcam&qid=1777130736&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Insta360%2Bwebcam%2Caps%2C156&sr=8-2&tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 149.99,
         "inStock": true
       }
     },
@@ -313,7 +314,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/OBSBOT-Lightweight-Microphone-Space-Grey/dp/B0D9W7J9SK/ref=sr_1_22?crid=FSN84WU0UR66&dib=eyJ2IjoiMSJ9.b2Sz-jyj-WUkz2JGIumihOIPDzhip9843zgZ5SlVjUj5cr_GCnxJkjS9RYWMUt2Nt-Uj0qjyaaQaSBL2CaAtBTAjzRLhrXzSt_IfQ1QrvkdlzLvXF_dlDUDmm7-r3dHo-y2kGsFSkFRPuhtTfs434gDIZTu4fevNK4oiS5By72MjGKqK4-dMyCvfHHxqAhHNM6SAXYogElJ00gHjlE4uhOi6dV1aCmX8SXfrMbdLtmk.RcfsA1j5PovddvFyNz-FEsvDn2GyRtjJEpyMzA5CtwM&dib_tag=se&keywords=Insta360+webcam&qid=1777130738&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Insta360%2Bwebcam%2Caps%2C156&sr=8-22&xpid=8Ae2VxcKgdFGq&tag=tiereduptech-20",
-        "price": 129,
+        "price": 99,
         "inStock": true
       }
     },
@@ -755,7 +756,7 @@ export default [
       "amazon": {
         "asin": "B0G3T1QKWL",
         "url": "https://www.amazon.com/dp/B0G3T1QKWL?tag=tiereduptech-20",
-        "price": 249.99,
+        "price": 199.99,
         "inStock": true
       }
     },
@@ -775,7 +776,7 @@ export default [
       "amazon": {
         "asin": "B0G3SSQMJQ",
         "url": "https://www.amazon.com/dp/B0G3SSQMJQ?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 149.99,
         "inStock": true
       }
     },
@@ -795,7 +796,7 @@ export default [
       "amazon": {
         "asin": "B0G3T1QKWL",
         "url": "https://www.amazon.com/dp/B0G3T1QKWL?tag=tiereduptech-20",
-        "price": 249.99,
+        "price": 199.99,
         "inStock": true
       }
     },
@@ -815,7 +816,7 @@ export default [
       "amazon": {
         "asin": "B0G3SSQMJQ",
         "url": "https://www.amazon.com/dp/B0G3SSQMJQ?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 149.99,
         "inStock": true
       }
     },
@@ -831,16 +832,11 @@ export default [
     "msrp": 21.34,
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/31KUnY4GxYL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CZ2HFV2Z",
-        "url": "https://www.amazon.com/dp/B0CZ2HFV2Z?tag=tiereduptech-20",
-        "price": 23.81,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T17:05:43.652Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 101838,
@@ -935,7 +931,7 @@ export default [
       "amazon": {
         "asin": "B097QZGRCQ",
         "url": "https://www.amazon.com/dp/B097QZGRCQ?tag=tiereduptech-20",
-        "price": 29.99,
+        "price": 51.99,
         "inStock": true
       }
     },

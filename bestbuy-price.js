@@ -41,11 +41,13 @@ export function bestbuySanity(product, candidatePrice, peerOverride = null) {
 export function bestbuyDecision(product, candidatePrice, peerOverride = null) {
   const sanity = bestbuySanity(product, candidatePrice, peerOverride);
   if (sanity.pass) return { action: 'keep', reason: 'sane', sanity };
-  // Only remove when Best Buy is the HIGH side (comp/list signature).
-  const isHigh =
+  // Drop only on a genuine CROSS-RETAILER high outlier (comp/list signature):
+  // SUSPECT_HIGH (>=2 peers) or SUSPECT_PAIR-high (1 peer, BB far above it).
+  // SUSPECT_VS_LIST is sole-retailer (no peers) — that's the separate wrong-baseline
+  // bug; never drop it here, even when it arises after Amazon/Newegg removal.
+  const isCrossRetailerHigh =
     sanity.cls === CLASS.SUSPECT_HIGH ||
-    (sanity.cls === CLASS.SUSPECT_VS_LIST && sanity.deviation != null && sanity.deviation > 0) ||
     (sanity.cls === CLASS.SUSPECT_PAIR && sanity.deviation != null && sanity.deviation > 0);
-  if (isHigh) return { action: 'drop', reason: `comp-signature ${sanity.cls}`, sanity };
-  return { action: 'keep', reason: `flagged ${sanity.cls} (not high-outlier)`, sanity };
+  if (isCrossRetailerHigh) return { action: 'drop', reason: `comp-signature ${sanity.cls}`, sanity };
+  return { action: 'keep', reason: `flagged ${sanity.cls} (sole-retailer / not cross-retailer-high)`, sanity };
 }

@@ -72,7 +72,7 @@ export default [
     "interface": "USB",
     "deals": {
       "amazon": {
-        "price": 12.99,
+        "price": 16.99,
         "url": "https://www.amazon.com/dp/B07P5PRK7J?tag=tiereduptech-20",
         "inStock": true
       }
@@ -93,7 +93,7 @@ export default [
     "interface": "USB",
     "deals": {
       "amazon": {
-        "price": 28.42,
+        "price": 32.99,
         "url": "https://www.amazon.com/dp/B0B5YPK9L1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -114,7 +114,7 @@ export default [
     "interface": "USB 3.0",
     "deals": {
       "amazon": {
-        "price": 16.99,
+        "price": 17.99,
         "url": "https://www.amazon.com/dp/B08D72GSMS?tag=tiereduptech-20",
         "inStock": true
       }
@@ -135,7 +135,7 @@ export default [
     "interface": "USB",
     "deals": {
       "amazon": {
-        "price": 21.56,
+        "price": 26.9,
         "url": "https://www.amazon.com/dp/B08KHV7H1S?tag=tiereduptech-20",
         "inStock": true
       }
@@ -177,7 +177,7 @@ export default [
     "interface": "USB 3.0",
     "deals": {
       "amazon": {
-        "price": 17,
+        "price": 22.99,
         "url": "https://www.amazon.com/dp/B07P6N2TZH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -198,7 +198,7 @@ export default [
     "interface": "USB 3.0",
     "deals": {
       "amazon": {
-        "price": 29.68,
+        "price": 25.99,
         "url": "https://www.amazon.com/dp/B01IEU7UZ0?tag=tiereduptech-20",
         "inStock": true
       }
@@ -220,7 +220,7 @@ export default [
     "bluetooth": true,
     "deals": {
       "amazon": {
-        "price": 28.84,
+        "price": 32.99,
         "url": "https://www.amazon.com/dp/B07ZV2CJL2?tag=tiereduptech-20",
         "inStock": true
       }
@@ -242,7 +242,7 @@ export default [
     "bluetooth": true,
     "deals": {
       "amazon": {
-        "price": 19.99,
+        "price": 26.99,
         "url": "https://www.amazon.com/dp/B084JPFKQ5?tag=tiereduptech-20",
         "inStock": true
       }
@@ -261,13 +261,9 @@ export default [
     "asin": "B07Y82HZV1",
     "wifiStandard": "WiFi 6E",
     "interface": "PCIe",
-    "deals": {
-      "amazon": {
-        "price": 23,
-        "url": "https://www.amazon.com/dp/B07Y82HZV1?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
+    "deals": {},
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 96023,

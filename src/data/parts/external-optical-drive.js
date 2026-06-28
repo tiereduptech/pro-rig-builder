@@ -37,7 +37,7 @@ export default [
     "connection": "USB-C",
     "deals": {
       "amazon": {
-        "price": 30,
+        "price": 28.49,
         "url": "https://www.amazon.com/dp/B0G8ZGCYRT?tag=tiereduptech-20",
         "inStock": true
       }
@@ -100,7 +100,7 @@ export default [
     "connection": "USB-A",
     "deals": {
       "amazon": {
-        "price": 32.99,
+        "price": 27.99,
         "url": "https://www.amazon.com/dp/B006HUMYCO?tag=tiereduptech-20",
         "inStock": true
       }
@@ -125,7 +125,9 @@ export default [
         "url": "https://www.amazon.com/dp/B01A27IUUM?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 99612,
@@ -142,7 +144,7 @@ export default [
     "connection": "USB-A",
     "deals": {
       "amazon": {
-        "price": 39.98,
+        "price": 36.99,
         "url": "https://www.amazon.com/dp/B076CM5SZN?tag=tiereduptech-20",
         "inStock": true
       }

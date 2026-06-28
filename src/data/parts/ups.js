@@ -103,13 +103,9 @@ export default [
     "asin": "B073Q48Z95",
     "va": 400,
     "watts": 255,
-    "deals": {
-      "amazon": {
-        "price": 58.05,
-        "url": "https://www.amazon.com/dp/B073Q48Z95?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
+    "deals": {},
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 99704,

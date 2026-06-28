@@ -350,12 +350,8 @@ export default [
     "asin": "B01MSDDR8A",
     "driveType": "DVD",
     "interface": "SATA",
-    "deals": {
-      "amazon": {
-        "price": 156.24,
-        "url": "https://www.amazon.com/dp/B01MSDDR8A?tag=tiereduptech-20",
-        "inStock": true
-      }
-    }
+    "deals": {},
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   }
 ];

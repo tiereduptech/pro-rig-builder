@@ -75,7 +75,7 @@ export default [
     "depth": 160,
     "deals": {
       "amazon": {
-        "price": 109.49,
+        "price": 129.99,
         "url": "https://www.amazon.com/dp/B0FLFGG1CC?tag=tiereduptech-20",
         "inStock": true
       }
@@ -171,7 +171,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-151-261-12.png",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "color": "Black",
@@ -195,17 +196,13 @@ export default [
     "atx3": true,
     "fanSize": 120,
     "depth": 140,
-    "deals": {
-      "amazon": {
-        "price": 124.99,
-        "url": "https://www.amazon.com/dp/B0DLFMTX12?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "color": "Black",
     "value": 26,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 60007,
@@ -265,7 +262,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS2301270XTEZS9A.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "color": "Black",
@@ -437,7 +435,7 @@ export default [
     "depth": 150,
     "deals": {
       "amazon": {
-        "price": 64.48,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B0DJ6DGHCP?tag=tiereduptech-20",
         "inStock": true
       },
@@ -449,7 +447,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-438-13.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "color": "Black",
@@ -487,7 +486,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-436-15.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "color": "Black",
@@ -583,7 +583,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-330-01.png",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "color": "Black",
@@ -644,14 +645,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA2W0M034962",
-        "price": 139.98,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839659710963963108976&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-v850-sfx-gold-white-edition-sfx-12v-ver-3-42-850-w-80-plus-gold-certified-power-supply-mpy-8501-sfhagv-wu%2Fp%2FN82E16817171197%3Fitem%3D9SIA2W0M034962",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-171-197-26.png",
+        "sku": "N82E16817171238",
+        "price": 179.99,
+        "saleprice": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313753647613221617111&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-atx3-0-sfx-12v-ver-3-42-850-w-80-plus-gold-certified-90-typical-load-power-supply-black-mpy-8501-sfhagv-3u1%2Fp%2FN82E16817171238%3Fitem%3DN82E16817171238",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-171-238-29.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIA2W0M034962"
       }
     },
     "color": "Black",
@@ -680,22 +684,13 @@ export default [
         "price": 125,
         "url": "https://www.amazon.com/dp/B0FJC6FM1C?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIAD6HFVW2903",
-        "price": 288.1,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310752943567588187559&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-sfx-750-w-80-plus-gold-certified-power-supplies-black-sp750%2Fp%2F1HU-01PP-00003%3Fitem%3D9SIAD6HFVW2903",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS210617hdYXa.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 1
       }
     },
     "color": "Black",
     "value": 26,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 60022,
@@ -806,14 +801,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8N2KNP6310",
-        "price": 125.34,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310687423622555431870&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-306-7zp8a11-ce0%2Fp%2F1HU-001W-000E3%3Fitem%3D9SIA8N2KNP6310",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD2404091844CFDF.jpg",
+        "sku": "N82E16817701021",
+        "price": 129.99,
+        "saleprice": 94.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583105569546302473547&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx12v-850-w-80-plus-gold-certified-power-supplies-black-mag-a850gl-pcie5%2Fp%2FN82E16817701021%3Fitem%3DN82E16817701021",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-021-39.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIA8N2KNP6310"
       }
     },
     "color": "Black",
@@ -839,7 +837,7 @@ export default [
     "depth": 140,
     "deals": {
       "amazon": {
-        "price": 75.99,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B0CC3QBGDL?tag=tiereduptech-20",
         "inStock": true
       },
@@ -851,7 +849,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-022-36.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "color": "Black",
@@ -937,7 +936,7 @@ export default [
     "depth": 140,
     "deals": {
       "amazon": {
-        "price": 31.74,
+        "price": 42.99,
         "url": "https://www.amazon.com/dp/B014W3EMAO?tag=tiereduptech-20",
         "inStock": true
       },
@@ -949,7 +948,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-232-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "color": "Black",
@@ -1105,7 +1105,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-987-020-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "color": "Black",
@@ -1169,7 +1170,7 @@ export default [
     "reviews": 635,
     "deals": {
       "amazon": {
-        "price": 103.99,
+        "price": 109.99,
         "url": "https://www.amazon.com/dp/B0DPR86ZC8?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1186,7 +1187,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-341-08.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 14,
@@ -1223,7 +1225,7 @@ export default [
     "reviews": 4266,
     "deals": {
       "amazon": {
-        "price": 42.55,
+        "price": 54.99,
         "url": "https://www.amazon.com/dp/B014W3EAX8?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1235,7 +1237,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A73MS2109108D10C.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.95
+        "matchScore": 0.95,
+        "sellerClass": "marketplace"
       },
       "bestbuy": {
         "price": 59.49,
@@ -1289,7 +1292,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1HU-00Z0-000U1-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.89
+        "matchScore": 0.89,
+        "sellerClass": "marketplace"
       }
     },
     "discount": 9,
@@ -1323,7 +1327,7 @@ export default [
     "reviews": 137,
     "deals": {
       "amazon": {
-        "price": 47.47,
+        "price": 49.99,
         "url": "https://www.amazon.com/dp/B0FFPQ38QV?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1335,7 +1339,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-182-464-22.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 17,
@@ -1370,7 +1375,7 @@ export default [
     "reviews": 124,
     "deals": {
       "amazon": {
-        "price": 66.47,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B0FFQC5VGM?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1382,7 +1387,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-182-467-35.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 13,
@@ -1417,7 +1423,7 @@ export default [
     "reviews": 92,
     "deals": {
       "amazon": {
-        "price": 71.22,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0FFQN6344?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1429,7 +1435,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-182-468-34.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "4458317710888726951535363",
@@ -1525,7 +1532,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-182-469-34.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "4458311610507333691134478",
@@ -1557,7 +1565,9 @@ export default [
     "atx3": true,
     "fanSize": 135,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 60044,
@@ -1572,7 +1582,7 @@ export default [
     "reviews": 676,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 95.99,
         "url": "https://www.amazon.com/dp/B0CKY88GMT?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1589,7 +1599,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-460-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "discount": 13,
@@ -1637,7 +1648,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.978Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 158.99,
@@ -1694,7 +1706,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 22,
@@ -1743,7 +1756,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-344-02.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.94
+        "matchScore": 0.94,
+        "sellerClass": "official"
       }
     },
     "discount": 13,
@@ -1833,7 +1847,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.774Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 29,
@@ -1881,7 +1896,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-024-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.57
+        "matchScore": 0.57,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -2043,7 +2059,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-303-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 253.99,
@@ -2135,7 +2152,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGX1S25091002N492D9.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "discount": 26,
@@ -2182,7 +2200,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.151Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 179.99,
@@ -2233,7 +2252,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS250210EWuri.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 120.49,
@@ -2283,14 +2303,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA2W0KT79714",
-        "price": 255.99,
-        "saleprice": 229.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831765258449276097056&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-hxi-series-atx-3-0-compatible-1000-w-80-plus-platinum-certified-power-supply-hx1000i-2023%2Fp%2FN82E16817139313%3Fitem%3D9SIA2W0KT79714",
+        "sku": "N82E16817139313",
+        "price": 289.99,
+        "saleprice": 244.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310742503989471895625&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-hxi-series-atx-3-0-compatible-1000-w-80-plus-platinum-certified-power-supply-hx1000i-2023%2Fp%2FN82E16817139313%3Fitem%3DN82E16817139313",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-313-01.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIA2W0KT79714"
       }
     },
     "discount": 19,
@@ -2326,11 +2349,6 @@ export default [
     "asin": "B0CWLWGM67",
     "reviews": 185,
     "deals": {
-      "amazon": {
-        "price": 127.36,
-        "url": "https://www.amazon.com/dp/B0CWLWGM67?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445831440662891355057517",
         "price": 169.99,
@@ -2340,7 +2358,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 181.99,
@@ -2384,16 +2403,6 @@ export default [
         "price": 84.99,
         "url": "https://www.amazon.com/dp/B0FJLNZDKJ?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIA8H5KDM5440",
-        "price": 192.93,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835619963793108076621&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpccooler-yn-series-atx-3-1-compatible-850-w-80-plus-gold-certified-power-supplies-black-p5-yn850-g1f%2Fp%2F1HU-038Y-00003%3Fitem%3D9SIA8H5KDM5440",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHCTS2503070JFIIB4C.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.91
       }
     },
     "additionalImages": [
@@ -2412,7 +2421,8 @@ export default [
     "atx3": true,
     "fanSize": 135,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 60062,
@@ -2471,7 +2481,7 @@ export default [
     "reviews": 61,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0CWLTQD5K?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2483,7 +2493,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-326-06.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 75.99,
@@ -2536,7 +2547,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGX1S2510130CVN7IBD.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -2620,7 +2632,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-148-078-S01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -2672,7 +2685,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-116-059-02.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.58
+        "matchScore": 0.58,
+        "sellerClass": "official"
       }
     },
     "discount": 17,
@@ -2764,7 +2778,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 22,
@@ -2887,7 +2902,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.434Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -2921,7 +2937,7 @@ export default [
     "reviews": 18,
     "deals": {
       "amazon": {
-        "price": 45.59,
+        "price": 49.99,
         "url": "https://www.amazon.com/dp/B0GFH7L16Y?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2933,7 +2949,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-182-471-12.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 64.99,
@@ -3011,11 +3028,6 @@ export default [
     "asin": "B079H5WNXN",
     "reviews": 13087,
     "deals": {
-      "amazon": {
-        "price": 219.99,
-        "url": "https://www.amazon.com/dp/B079H5WNXN?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16817139333",
         "price": 169.99,
@@ -3024,7 +3036,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-333-04.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.8
+        "matchScore": 0.8,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -3045,7 +3058,8 @@ export default [
     "ff": "ATX",
     "atx3": false,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "amazonRemovedAnomaly": "2026-06-28"
   },
   {
     "id": 60076,
@@ -3095,19 +3109,22 @@ export default [
     "reviews": 1379,
     "deals": {
       "amazon": {
-        "price": 113.99,
+        "price": 139.98,
         "url": "https://www.amazon.com/dp/B08LP6WS35?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA2W0M034962",
-        "price": 139.98,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839659710963963108976&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-v850-sfx-gold-white-edition-sfx-12v-ver-3-42-850-w-80-plus-gold-certified-power-supply-mpy-8501-sfhagv-wu%2Fp%2FN82E16817171197%3Fitem%3D9SIA2W0M034962",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-171-197-26.png",
+        "sku": "N82E16817171238",
+        "price": 179.99,
+        "saleprice": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313753647613221617111&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-atx3-0-sfx-12v-ver-3-42-850-w-80-plus-gold-certified-90-typical-load-power-supply-black-mpy-8501-sfhagv-3u1%2Fp%2FN82E16817171238%3Fitem%3DN82E16817171238",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-171-238-29.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIA2W0M034962"
       }
     },
     "discount": 18,
@@ -3264,7 +3281,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 97.49,
@@ -3348,14 +3366,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA4P0KZ48121",
-        "price": 71.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839014075540322548362&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-atx-12v-ver-3-0-750-w-80-plus-gold-certified-power-supply-black-mpx-7503-afag-2buv%2Fp%2FN82E16817171242%3Fitem%3D9SIA4P0KZ48121",
+        "sku": "N82E16817171242",
+        "price": 129.99,
+        "saleprice": 94.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839348829784749893708&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-atx-12v-ver-3-0-750-w-80-plus-gold-certified-power-supply-black-mpx-7503-afag-2buv%2Fp%2FN82E16817171242%3Fitem%3DN82E16817171242",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-171-242-01.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.58
+        "matchScore": 0.58,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIA4P0KZ48121"
       },
       "bestbuy": {
         "price": 97.99,
@@ -3465,7 +3486,7 @@ export default [
     "reviews": 345,
     "deals": {
       "amazon": {
-        "price": 52.48,
+        "price": 59.99,
         "url": "https://www.amazon.com/dp/B098ZF39QX?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3477,7 +3498,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABW9S26060213U1W731.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -3512,7 +3534,7 @@ export default [
     "reviews": 288,
     "deals": {
       "amazon": {
-        "price": 89.98,
+        "price": 109.99,
         "url": "https://www.amazon.com/dp/B0D68VH8DR?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3524,7 +3546,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-171-241-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       },
       "bestbuy": {
         "price": 101.99,
@@ -3652,7 +3675,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8W1_1_201811281943233782.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       },
       "bestbuy": {
         "price": 69.49,
@@ -3728,7 +3752,7 @@ export default [
     "reviews": 148,
     "deals": {
       "amazon": {
-        "price": 56.94,
+        "price": 66.99,
         "url": "https://www.amazon.com/dp/B0CLMXSXC7?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3740,7 +3764,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1HU-00Z0-000U1-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.64
+        "matchScore": 0.64,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -3773,7 +3798,7 @@ export default [
     "reviews": 148,
     "deals": {
       "amazon": {
-        "price": 67.99,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B0CLMJ9CR1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3856,7 +3881,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -3904,7 +3930,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 193.49,
@@ -4053,13 +4080,7 @@ export default [
     "r": 4.2,
     "asin": "B0DMYCCRV1",
     "reviews": 67,
-    "deals": {
-      "amazon": {
-        "price": 65.3,
-        "url": "https://www.amazon.com/dp/B0DMYCCRV1?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/514pTuO5U9L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/711fWFP0vPL._AC_SL1500_.jpg",
@@ -4078,7 +4099,9 @@ export default [
     "fanSize": 135,
     "depth": 160,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 60101,
@@ -4165,13 +4188,7 @@ export default [
     "r": 4.6,
     "asin": "B09D39JD1G",
     "reviews": 51,
-    "deals": {
-      "amazon": {
-        "price": 69.95,
-        "url": "https://www.amazon.com/dp/B09D39JD1G?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81wTzu2rd7L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81DF6QzgKcS._AC_SL1500_.jpg",
@@ -4189,7 +4206,9 @@ export default [
     "eff": "Gold",
     "atx3": false,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 60104,
@@ -4386,13 +4405,7 @@ export default [
     "r": 4.1,
     "asin": "B0D6W54FNL",
     "reviews": 39,
-    "deals": {
-      "amazon": {
-        "price": 129.99,
-        "url": "https://www.amazon.com/dp/B0D6W54FNL?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81+PZuDXpPL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71abgdQJw7L._AC_SL1200_.jpg",
@@ -4408,7 +4421,9 @@ export default [
     "atx3": true,
     "fanSize": 140,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 60110,
@@ -4421,13 +4436,7 @@ export default [
     "r": 3.9,
     "asin": "B0G38YYNZ6",
     "reviews": 24,
-    "deals": {
-      "amazon": {
-        "price": 55.99,
-        "url": "https://www.amazon.com/dp/B0G38YYNZ6?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "discount": 7,
     "additionalImages": [
       "https://m.media-amazon.com/images/I/71n-tgYHanL._AC_SL1500_.jpg",
@@ -4445,7 +4454,9 @@ export default [
     "atx3": false,
     "fanSize": 120,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 60111,
@@ -4580,7 +4591,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.202Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -4612,13 +4624,7 @@ export default [
     "r": 3.6,
     "asin": "B0B2X8HLKC",
     "reviews": 21,
-    "deals": {
-      "amazon": {
-        "price": 52.99,
-        "url": "https://www.amazon.com/dp/B0B2X8HLKC?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/61cbKqL4yOL._AC_SL1052_.jpg",
       "https://m.media-amazon.com/images/I/61wQGK+bEJL._AC_SL1029_.jpg",
@@ -4635,7 +4641,9 @@ export default [
     "atx3": false,
     "fanSize": 92,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 60116,
@@ -4685,7 +4693,7 @@ export default [
     "reviews": 15,
     "deals": {
       "amazon": {
-        "price": 43.99,
+        "price": 54.99,
         "url": "https://www.amazon.com/dp/B0DLGP93K4?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4697,7 +4705,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BNFDS2411040DYSVA3E.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -4732,7 +4741,7 @@ export default [
     "reviews": 18,
     "deals": {
       "amazon": {
-        "price": 79.9,
+        "price": 109.99,
         "url": "https://www.amazon.com/dp/B0FTLWLRZS?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4805,7 +4814,7 @@ export default [
     "reviews": 11,
     "deals": {
       "amazon": {
-        "price": 44.79,
+        "price": 55.99,
         "url": "https://www.amazon.com/dp/B0FLPWH7DZ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4852,7 +4861,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8W1_1_201811281943233782.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.63
+        "matchScore": 0.63,
+        "sellerClass": "marketplace"
       }
     },
     "discount": 7,
@@ -4886,11 +4896,6 @@ export default [
     "asin": "B0FNMCM5S1",
     "reviews": 9,
     "deals": {
-      "amazon": {
-        "price": 118.2,
-        "url": "https://www.amazon.com/dp/B0FNMCM5S1?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16817139334",
         "price": 209.99,
@@ -4899,7 +4904,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-334-05.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.79
+        "matchScore": 0.79,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -4934,11 +4940,6 @@ export default [
     "asin": "B0DBWQ6J11",
     "reviews": 7,
     "deals": {
-      "amazon": {
-        "price": 82.3,
-        "url": "https://www.amazon.com/dp/B0DBWQ6J11?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16817139342",
         "price": 174.99,
@@ -4947,7 +4948,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-342-05.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.79
+        "matchScore": 0.79,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -5036,7 +5038,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-346-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.83
+        "matchScore": 0.83,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -5194,7 +5197,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-231-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.78
+        "matchScore": 0.78,
+        "sellerClass": "official"
       }
     },
     "watts": 700,
@@ -5225,16 +5229,6 @@ export default [
         "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6510212&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6510212.p%3FskuId%3D6510212",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIA8N2EVP1514",
-        "price": 96.4,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583957753009301799648&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-gx2-atx12v-eps12v-600-w-80-plus-gold-certified-power-supplies%2Fp%2F1HU-0014-00415%3Fitem%3D9SIA8N2EVP1514",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKDZD2010092XYRE.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.82
       }
     },
     "watts": 600,
@@ -5246,7 +5240,8 @@ export default [
     "ff": "ATX",
     "value": 69,
     "atx3": false,
-    "fanSize": 120
+    "fanSize": 120,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 60131,
@@ -5273,7 +5268,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-434-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "watts": 1650,
@@ -5313,7 +5309,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-021-39.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "msi": {
         "price": 109.99,
@@ -5358,7 +5355,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-022-36.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "msi": {
         "price": 109.99,
@@ -5403,7 +5401,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.449Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 850,
@@ -5442,7 +5441,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 1200,
@@ -5481,7 +5481,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 1050,
@@ -5520,7 +5521,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-455-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.71
+        "matchScore": 0.71,
+        "sellerClass": "official"
       }
     },
     "watts": 850,
@@ -5560,7 +5562,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-455-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.71
+        "matchScore": 0.71,
+        "sellerClass": "official"
       }
     },
     "watts": 650,
@@ -5600,7 +5603,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-461-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 750,
@@ -5669,7 +5673,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-116-059-02.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.73
+        "matchScore": 0.73,
+        "sellerClass": "official"
       }
     },
     "watts": 850,
@@ -5708,7 +5713,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-116-049-02.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.73
+        "matchScore": 0.73,
+        "sellerClass": "marketplace"
       }
     },
     "watts": 1200,
@@ -5747,7 +5753,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-116-049-02.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.73
+        "matchScore": 0.73,
+        "sellerClass": "marketplace"
       }
     },
     "watts": 1200,
@@ -5787,7 +5794,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.774Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 1000,
@@ -5855,7 +5863,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-334-05.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 1000,
@@ -5895,7 +5904,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-333-04.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 850,
@@ -5933,14 +5943,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA2W0KDY3660",
-        "price": 138.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832809060230804811362&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-intel-atx-12v-1000-w-80-plus-gold-certified-power-supply-black-mag-a1000gl-pcie5%2Fp%2FN82E16817701026%3Fitem%3D9SIA2W0KDY3660",
+        "sku": "N82E16817701026",
+        "price": 179.99,
+        "saleprice": 138.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834399374292695770188&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-intel-atx-12v-1000-w-80-plus-gold-certified-power-supply-black-mag-a1000gl-pcie5%2Fp%2FN82E16817701026%3Fitem%3DN82E16817701026",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-026-21.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIA2W0KDY3660"
       }
     },
     "watts": 1000,
@@ -5981,7 +5994,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 750,
@@ -6021,7 +6035,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-315-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 1200,
@@ -6061,7 +6076,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-467-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 1000,
@@ -6101,7 +6117,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 1500,
@@ -6142,7 +6159,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 1200,
@@ -6253,7 +6271,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 1000,
@@ -6294,7 +6313,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 850,
@@ -6335,7 +6355,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 750,
@@ -6375,7 +6396,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-466-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 850,
@@ -6414,7 +6436,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-470-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.83
+        "matchScore": 0.83,
+        "sellerClass": "marketplace"
       }
     },
     "watts": 500,
@@ -6454,7 +6477,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-470-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "watts": 700,
@@ -6487,14 +6511,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFK3K2208",
+        "sku": "N82E16817153448",
         "price": 169.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311043805826938937374&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-gf-a3-snow-series-atx-atx-3-0-compatible-1050-w-80-plus-gold-certified-power-supplies-ps-tpd-1050fnfagu-n%2Fp%2FN82E16817153458%3Fitem%3D9SIA8EFK3K2208",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-458-01.jpg",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839450728729701096399&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-gf-a3-series-atx-atx-3-0-compatible-1050-w-80-plus-gold-certified-power-supply-black-ps-tpd-1050fnfagu-l%2Fp%2FN82E16817153448%3Fitem%3DN82E16817153448",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-448-07.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "matchMethod": "name",
+        "matchScore": 0.87,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIA8EFK3K2208"
       }
     },
     "watts": 1050,
@@ -6533,7 +6559,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-465-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 750,
@@ -6573,7 +6600,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 769.99,
@@ -6618,7 +6646,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 149.99,
@@ -6663,7 +6692,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 650,
@@ -6704,7 +6734,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 99.99,
@@ -6750,7 +6781,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 89.99,
@@ -6795,7 +6827,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.173Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 139.99,
@@ -6841,7 +6874,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 159.99,
@@ -6887,7 +6921,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.774Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 750,
@@ -6956,7 +6991,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 159.99,
@@ -7000,7 +7036,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-477-04.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 1000,
@@ -7040,7 +7077,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS2409301F33PS36.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 850,
@@ -7080,7 +7118,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS2409301EZCEI07.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 750,
@@ -7120,7 +7159,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS2411201529BMB8.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "watts": 850,
@@ -7160,7 +7200,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-475-05.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 1000,
@@ -7200,7 +7241,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-476-04.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 1200,
@@ -7241,7 +7283,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 59.99,
@@ -7287,7 +7330,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.775Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 69.99,
@@ -7333,7 +7377,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.774Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "watts": 850,
@@ -7368,20 +7413,11 @@ export default [
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12141450&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseasonic-vertex-px-1200w-power-supply-atx-3-1-pcie-5-1-12v-2x6-cybenetics-platinum-a-fully-modular-rtx-5090-amd-rx-9000-ready-black%2FC344V32XPK&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIC4WSKXN6615",
-        "price": 449.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833257668796551764792&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseasonic-usa-atx-1200-w-80-plus-platinum-certified-power-supply-vertex-px-1200%2Fp%2FN82E16817151266%3Fitem%3D9SIC4WSKXN6615",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-151-266-02.png",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.71
       }
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 100452,
@@ -7394,30 +7430,16 @@ export default [
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/81gJdU1DGgL._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "asin": "B09TDV18HG",
-        "url": "https://www.amazon.com/dp/B09TDV18HG?tag=tiereduptech-20",
-        "price": 210.99,
-        "inStock": true
-      },
       "bestbuy": {
         "price": 118.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11064618&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseasonic-core-v2-gx-750-atx3-750w-80-gold-atx-3-0-pcie-5-1-ready-full-modular-atx-form-factor-premium-capacitor%2FC344V3236K&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIC6M7KZ12305",
-        "price": 232.09,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315083776755854437326&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseasonic-usa-sfx12v-750-w-80-plus-gold-certified-power-supply-focus-sgx-750%2Fp%2FN82E16817151252%3Fitem%3D9SIC6M7KZ12305",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-151-252-V06.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "amazonRemovedAnomaly": "2026-06-28",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 100453,
@@ -7451,30 +7473,16 @@ export default [
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/71PPiu33M9L._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "asin": "B0B7NRSHDP",
-        "url": "https://www.amazon.com/dp/B0B7NRSHDP?tag=tiereduptech-20",
-        "price": 452.03,
-        "inStock": true
-      },
       "bestbuy": {
         "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10871690&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseasonic-focus-gx-750w-power-supply-atx-3-1-pcie-5-1-cybenetics-platinum-fully-modular-rtx-5070-ti-amd-rx-9000-ready-white%2FC344V323W7&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBZW0KPB9302",
-        "price": 281.86,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313204914563256668512&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseasonic-usa-sfx12v-750-w-80-plus-platinum-certified-power-supply-focus-spx-750%2Fp%2FN82E16817151251%3Fitem%3D9SIBZW0KPB9302",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-151-251-V03.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "amazonRemovedAnomaly": "2026-06-28",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 100455,
@@ -7526,7 +7534,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-959-008-08.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 850,
@@ -7615,7 +7624,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-022-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.71
+        "matchScore": 0.71,
+        "sellerClass": "official"
       }
     },
     "watts": 850,
@@ -7638,7 +7648,7 @@ export default [
       "amazon": {
         "asin": "B0D68TLYKR",
         "url": "https://www.amazon.com/dp/B0D68TLYKR?tag=tiereduptech-20",
-        "price": 71.99,
+        "price": 94.99,
         "inStock": true
       },
       "bestbuy": {
@@ -7654,7 +7664,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-171-242-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "watts": 750,
@@ -7678,7 +7689,7 @@ export default [
       "amazon": {
         "asin": "B0CT41HW5J",
         "url": "https://www.amazon.com/dp/B0CT41HW5J?tag=tiereduptech-20",
-        "price": 94.99,
+        "price": 119,
         "inStock": true
       },
       "newegg": {
@@ -7689,7 +7700,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-024-11.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 850,
@@ -7753,7 +7765,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-013-08.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 650,
@@ -7786,7 +7799,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-233-039-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 1000,
@@ -7809,7 +7823,7 @@ export default [
       "amazon": {
         "asin": "B0B434DB7Y",
         "url": "https://www.amazon.com/dp/B0B434DB7Y?tag=tiereduptech-20",
-        "price": 169.99,
+        "price": 161,
         "inStock": true
       },
       "newegg": {
@@ -7820,7 +7834,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-016-19.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.63
+        "matchScore": 0.63,
+        "sellerClass": "marketplace"
       }
     },
     "watts": 1000,
@@ -7901,7 +7916,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-959-010-09.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 1200,
@@ -7954,7 +7970,7 @@ export default [
       "amazon": {
         "asin": "B0FKL8L37F",
         "url": "https://www.amazon.com/dp/B0FKL8L37F?tag=tiereduptech-20",
-        "price": 137.99,
+        "price": 159.94,
         "inStock": true
       }
     },
@@ -8101,7 +8117,7 @@ export default [
       "amazon": {
         "asin": "B0FGPPM12Q",
         "url": "https://www.amazon.com/dp/B0FGPPM12Q?tag=tiereduptech-20",
-        "price": 166.16,
+        "price": 139.99,
         "inStock": true
       }
     },
@@ -8142,7 +8158,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-320-047-14.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 1200,
@@ -8177,7 +8194,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-026-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.71
+        "matchScore": 0.71,
+        "sellerClass": "official"
       }
     },
     "watts": 750,
@@ -8211,7 +8229,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-040-02.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.82
+        "matchScore": 0.82,
+        "sellerClass": "official"
       }
     },
     "watts": 750,
@@ -8246,7 +8265,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-023-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.71
+        "matchScore": 0.71,
+        "sellerClass": "official"
       }
     },
     "watts": 750,
@@ -8285,7 +8305,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-320-045-12.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 750,
@@ -8353,21 +8374,16 @@ export default [
     "msrp": 78.5,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/61UD4Ag8JiL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GCKB29XN",
-        "url": "https://www.amazon.com/dp/B0GCKB29XN?tag=tiereduptech-20",
-        "price": 68.99,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "modular": "Full",
     "atx3": true,
     "addedAt": "2026-05-15T13:17:14.417Z",
     "source": "amazon-discovery",
     "watts": 750,
     "ff": "ATX",
-    "eff": "80+ Gold"
+    "eff": "80+ Gold",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100486,
@@ -8393,7 +8409,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-276-V15.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T13:17:14.417Z",
@@ -8472,7 +8489,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-959-015-13.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "watts": 550,
@@ -8525,7 +8543,9 @@ export default [
     "watts": 450,
     "addedAt": "2026-05-15T13:17:14.418Z",
     "source": "amazon-discovery",
-    "ff": "SFX"
+    "ff": "SFX",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100542,
@@ -8540,7 +8560,7 @@ export default [
       "amazon": {
         "asin": "B014W3EM2W",
         "url": "https://www.amazon.com/dp/B014W3EM2W?tag=tiereduptech-20",
-        "price": 37.99,
+        "price": 39.99,
         "inStock": true
       }
     },
@@ -8563,7 +8583,7 @@ export default [
       "amazon": {
         "asin": "B0991W1HKT",
         "url": "https://www.amazon.com/dp/B0991W1HKT?tag=tiereduptech-20",
-        "price": 42.74,
+        "price": 44.99,
         "inStock": true
       },
       "newegg": {
@@ -8574,7 +8594,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-012-07.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.762Z",
@@ -8618,7 +8639,7 @@ export default [
       "amazon": {
         "asin": "B087CDR14Z",
         "url": "https://www.amazon.com/dp/B087CDR14Z?tag=tiereduptech-20",
-        "price": 53.98,
+        "price": 59.99,
         "inStock": true
       }
     },
@@ -8642,7 +8663,7 @@ export default [
       "amazon": {
         "asin": "B0CZC8D44B",
         "url": "https://www.amazon.com/dp/B0CZC8D44B?tag=tiereduptech-20",
-        "price": 159.99,
+        "price": 169.99,
         "inStock": true
       },
       "newegg": {
@@ -8653,7 +8674,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABP9S26051303GM3O9B.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.762Z",
@@ -8709,7 +8731,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S2407250I54FY96.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.762Z",
@@ -8742,7 +8765,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABP9S24101613HXQ14D.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.78
+        "matchScore": 0.78,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.762Z",
@@ -8763,7 +8787,7 @@ export default [
       "amazon": {
         "asin": "B0CLQVVHSF",
         "url": "https://www.amazon.com/dp/B0CLQVVHSF?tag=tiereduptech-20",
-        "price": 54.99,
+        "price": 44.99,
         "inStock": true
       }
     },
@@ -8797,7 +8821,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AZF8D210602KIA30.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.763Z",
@@ -8845,21 +8870,12 @@ export default [
         "url": "https://www.amazon.com/dp/B01ER2A5X8?tag=tiereduptech-20",
         "price": 51.99,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIA8EFKCG5213",
-        "price": 119.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312920898225912857630&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HU-0014-006X5%3Fitem%3D9SIA8EFKCG5213",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS2411201529BMB8.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.64
       }
     },
     "addedAt": "2026-05-15T14:34:31.764Z",
     "source": "amazon-discovery",
-    "watts": 600
+    "watts": 600,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 100554,
@@ -8908,7 +8924,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-023-16.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.764Z",
@@ -8967,7 +8984,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A9H5S2508051EF4JA84.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.764Z",
@@ -9050,7 +9068,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1HU-0095-000G7-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.764Z",
@@ -9084,7 +9103,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABP9S24101613HXQ14D.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.83
+        "matchScore": 0.83,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.764Z",
@@ -9353,17 +9373,11 @@ export default [
     "msrp": 13.99,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/61Bnirmtz+L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FGXK3112",
-        "url": "https://www.amazon.com/dp/B0FGXK3112?tag=tiereduptech-20",
-        "price": 13.99,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.768Z",
     "source": "amazon-discovery",
-    "needsReview": true
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100574,
@@ -9411,7 +9425,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-116-059-02.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.768Z",
@@ -9446,7 +9461,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2605050BCEL0CB.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.88
+        "matchScore": 0.88,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.768Z",
@@ -9504,7 +9520,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-959-018-10.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.769Z",
@@ -9538,7 +9555,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-027-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.71
+        "matchScore": 0.71,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.769Z",
@@ -9591,7 +9609,7 @@ export default [
       "amazon": {
         "asin": "B097QC3FPZ",
         "url": "https://www.amazon.com/dp/B097QC3FPZ?tag=tiereduptech-20",
-        "price": 119.98,
+        "price": 160.67,
         "inStock": true
       }
     },
@@ -9626,7 +9644,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-465-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T14:34:31.769Z",
@@ -9803,11 +9822,6 @@ export default [
         "price": 169.99,
         "inStock": true
       },
-      "bestbuy": {
-        "price": 239.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12641619&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-a1250gs-pcie5-1250w-atx-3-1-pcie-5-1-ready-full-modular-80-plus-gold-gaming-power-supply-black%2FJ3P7TX9CJK&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16817701025",
         "price": 199.99,
@@ -9816,7 +9830,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-025-22.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T16:31:54.658Z",
@@ -9825,7 +9840,8 @@ export default [
     "eff": "80+ Gold",
     "modular": "Full",
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "bestbuyRemovedComp": "2026-06-28"
   },
   {
     "id": 101199,
@@ -9923,7 +9939,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-003-20.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.83
+        "matchScore": 0.83,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T16:31:54.658Z",
@@ -9947,7 +9964,7 @@ export default [
       "amazon": {
         "asin": "B0DT2V39K4",
         "url": "https://www.amazon.com/dp/B0DT2V39K4?tag=tiereduptech-20",
-        "price": 109.99,
+        "price": 90.65,
         "inStock": true
       },
       "newegg": {
@@ -9958,7 +9975,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-031-02.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T16:31:54.658Z",
@@ -10247,7 +10265,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-025-22.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T16:39:25.981Z",
@@ -10368,7 +10387,7 @@ export default [
       "amazon": {
         "asin": "B0DT2V39K4",
         "url": "https://www.amazon.com/dp/B0DT2V39K4?tag=tiereduptech-20",
-        "price": 109.99,
+        "price": 90.65,
         "inStock": true
       }
     },
@@ -10658,7 +10677,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-025-22.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T17:05:43.662Z",
@@ -10744,7 +10764,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-003-20.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.83
+        "matchScore": 0.83,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T17:05:43.663Z",
@@ -10768,7 +10789,7 @@ export default [
       "amazon": {
         "asin": "B0DT2V39K4",
         "url": "https://www.amazon.com/dp/B0DT2V39K4?tag=tiereduptech-20",
-        "price": 109.99,
+        "price": 90.65,
         "inStock": true
       },
       "newegg": {
@@ -10779,7 +10800,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-031-02.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "addedAt": "2026-05-15T17:05:43.663Z",

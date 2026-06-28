@@ -38,18 +38,25 @@ for (const p of parts) {
   if (EXCLUDE_IDS.has(p.id)) continue;
   const d = bestbuyDecision(p, p.deals.bestbuy.price);
   if (d.action === 'drop') {
+    // Will the product still have a deal after Best Buy is removed?
+    const hasOther = !!(p.deals?.amazon || p.deals?.newegg);
     drops.push({ id: p.id, name: p.n, cat: p.c, bbPrice: p.deals.bestbuy.price,
       ref: d.sanity.ref, devPct: d.sanity.deviation == null ? null : Math.round(d.sanity.deviation * 1000) / 10,
-      cls: d.sanity.cls, reason: d.reason,
+      cls: d.sanity.cls, reason: d.reason, dealLess: !hasOther,
       peers: { amazon: p.deals?.amazon?.price ?? null, newegg: (p.deals?.newegg?.saleprice ?? p.deals?.newegg?.price) ?? null } });
   } else {
     keeps.push(p.id);
   }
 }
 
+const dealLessCount = drops.filter(d => d.dealLess).length;
+const hasOtherCount = drops.length - dealLessCount;
+
 console.log(`Best Buy deals: ${drops.length + keeps.length}`);
 console.log(`  KEEP: ${keeps.length}`);
 console.log(`  DROP (comp-signature high outlier): ${drops.length}`);
+console.log(`    -> became deal-less (now hidden/needsReview): ${dealLessCount}`);
+console.log(`    -> still have another retailer (stay visible): ${hasOtherCount}`);
 console.log(`\nTop 25 drops:`);
 for (const d of drops.slice(0, 25)) {
   console.log(`  id ${d.id} [${d.cat}] $${d.bbPrice} vs ref $${d.ref} (${d.devPct}% ${d.cls})  a=$${d.peers.amazon} n=$${d.peers.newegg}  ${d.name.slice(0,40)}`);
@@ -62,13 +69,20 @@ if (!APPLY) {
   console.log(`\nDRY RUN — no changes written. Re-run with --apply to remove these Best Buy deals.`);
 } else {
   const dropIds = new Set(drops.map(d => d.id));
+  let hidden = 0;
   for (const p of parts) {
     if (dropIds.has(p.id) && p.deals?.bestbuy) {
       delete p.deals.bestbuy;
       p.bestbuyRemovedComp = stamp.slice(0, 10);
+      // Deal-less after removal → hide (same as the Amazon-only case).
+      if (!p.deals?.amazon && !p.deals?.newegg) {
+        p.needsReview = true;
+        p.quarantinedAt = stamp.slice(0, 10);
+        hidden++;
+      }
     }
   }
   const header = '// Auto-merged catalog. Edit with care.\n';
   writeFileSync(PARTS_PATH, header + 'export const PARTS = ' + JSON.stringify(parts, null, 2) + ';\n\nexport default PARTS;\n');
-  console.log(`\nAPPLIED — removed ${drops.length} Best Buy deals, wrote parts.js.`);
+  console.log(`\nAPPLIED — removed ${drops.length} Best Buy deals (${hidden} became deal-less → hidden), wrote parts.js.`);
 }

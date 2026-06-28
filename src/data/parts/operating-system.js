@@ -18,7 +18,7 @@ export default [
     "licenseType": "Retail",
     "deals": {
       "amazon": {
-        "price": 199,
+        "price": 209.99,
         "url": "https://www.amazon.com/dp/B09V71FYGS?tag=tiereduptech-20",
         "inStock": true
       }

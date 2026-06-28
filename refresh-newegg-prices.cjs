@@ -16,6 +16,9 @@ if (!CLIENT_ID || !CLIENT_SECRET || !SID) {
 const RATE_DELAY_MS = 600;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
+// Newegg matcher (shared ESM) — assigned at startup, used by searchBySku + migration.
+let NEG = null;
+
 let tokenCache = { token: null, expiresAt: 0 };
 async function getToken() {
   if (tokenCache.token && Date.now() < tokenCache.expiresAt - 60000) return tokenCache.token;
@@ -34,14 +37,16 @@ async function getToken() {
 async function searchBySku(sku) {
   const token = await getToken();
   const url = `https://api.linksynergy.com/productsearch/1.0?keyword=${encodeURIComponent(sku)}&mid=${NEWEGG_MID}&max=5`;
-  const res = await fetch(url, { headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/json' } });
+  // productsearch/1.0 returns XML (Accept:json is NOT honored). The previous code
+  // called res.json() on "<result>…" and threw on every product, silently breaking
+  // the daily refresh. Parse the XML with the shared parser instead.
+  const res = await fetch(url, { headers: { 'Authorization': `Bearer ${token}` } });
   if (!res.ok) {
     if (res.status === 429) { await sleep(60000); return searchBySku(sku); }
     throw new Error(`Search: ${res.status}`);
   }
-  const data = await res.json();
-  const items = data?.Link || data?.link || data?.links || [];
-  return Array.isArray(items) ? items : (items ? [items] : []);
+  const xml = await res.text();
+  return NEG.parseItems(xml); // [{ name, sku, upc, price, saleprice, linkurl, imageurl, ... }]
 }
 
 function pickPrice(item) {
@@ -52,7 +57,7 @@ function pickPrice(item) {
 
 (async () => {
   console.log('Loading parts.js...');
-  const NEG = await import(`file://${path.join(__dirname, 'newegg-match.js').replace(/\\/g, '/')}`);
+  NEG = await import(`file://${path.join(__dirname, 'newegg-match.js').replace(/\\/g, '/')}`);
   const partsModule = await import(`file://${PARTS_PATH.replace(/\\/g, '/')}?t=${Date.now()}`);
   const parts = partsModule.PARTS;
   const matched = parts.filter(p => p?.deals?.newegg?.sku);

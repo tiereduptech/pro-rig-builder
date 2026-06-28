@@ -39,7 +39,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 434.99,
@@ -91,7 +92,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445833059761663676043338",
@@ -169,7 +171,7 @@ export default [
     "audio": "Realtek ALC4080",
     "deals": {
       "amazon": {
-        "price": 199.49,
+        "price": 219.19,
         "url": "https://www.amazon.com/dp/B0DG3HK897?tag=tiereduptech-20",
         "inStock": true
       }
@@ -201,11 +203,6 @@ export default [
     "usb_c": true,
     "audio": "Realtek ALC1220",
     "deals": {
-      "amazon": {
-        "price": 739.99,
-        "url": "https://www.amazon.com/dp/B0FFSZ71T6?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445833856259919632890740",
         "price": 384.16,
@@ -214,7 +211,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 392.49,
@@ -225,7 +223,9 @@ export default [
     "value": 17,
     "bench": 100,
     "upc": "00889523044803",
-    "mpn": "X870E AORUS MASTER"
+    "mpn": "X870E AORUS MASTER",
+    "amazonRemovedAnomaly": "2026-06-28",
+    "amazonBundleAsin": true
   },
   {
     "id": 20005,
@@ -251,11 +251,6 @@ export default [
     "usb_c": true,
     "audio": "Realtek ALC897",
     "deals": {
-      "amazon": {
-        "price": 399.99,
-        "url": "https://www.amazon.com/dp/B0D2NY1XMP?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445834417478617563890695",
         "price": 219.99,
@@ -265,13 +260,18 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "value": 17,
     "bench": 92,
     "upc": "00889523033784",
-    "mpn": "B650M AORUS ELITE AX"
+    "mpn": "B650M AORUS ELITE AX",
+    "amazonRemovedAnomaly": "2026-06-28",
+    "amazonBundleAsin": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20006,
@@ -348,7 +348,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-604-09.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "value": 34,
@@ -391,7 +392,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2506190EP0MB40.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "value": 67,
@@ -436,13 +438,16 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-560-08.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "value": 76,
     "bench": 88,
     "upc": "00824142301050",
-    "mpn": "PRO B650-P WIFI"
+    "mpn": "PRO B650-P WIFI",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20010,
@@ -481,7 +486,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-229-03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 105.99,
@@ -517,7 +523,7 @@ export default [
     "audio": "Realtek ALC897",
     "deals": {
       "amazon": {
-        "price": 100,
+        "price": 134.95,
         "url": "https://www.amazon.com/dp/B0C1ZY1ZBH?tag=tiereduptech-20",
         "inStock": true
       },
@@ -529,7 +535,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-115-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "value": 93,
@@ -574,18 +581,15 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-500-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 286.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12645108&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnewegg-asus-rog-strix-b550-f-amd-ryzen-5-5500-team-group-16gb%2FJ3R8FKJQGF&intsrc=APIG_28060",
-        "inStock": true
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "value": 61,
     "bench": 80,
     "upc": "00195553453318",
-    "mpn": "ROG STRIX B550-F GAMING WIFI II"
+    "mpn": "ROG STRIX B550-F GAMING WIFI II",
+    "bestbuyRemovedComp": "2026-06-28"
   },
   {
     "id": 20013,
@@ -612,7 +616,7 @@ export default [
     "audio": "Realtek ALC1200",
     "deals": {
       "amazon": {
-        "price": 128.06,
+        "price": 199.95,
         "url": "https://www.amazon.com/dp/B09ZJ73LDY?tag=tiereduptech-20",
         "inStock": true
       },
@@ -624,7 +628,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-326-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "value": 51,
@@ -727,11 +732,6 @@ export default [
     "usb_c": false,
     "audio": "Realtek ALC892",
     "deals": {
-      "amazon": {
-        "price": 65,
-        "url": "https://www.amazon.com/dp/B08L598DYN?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458310705646183974431144",
         "price": 771.79,
@@ -740,13 +740,16 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "value": 74,
     "bench": 60,
     "upc": "00824142191699",
-    "mpn": "B450 TOMAHAWK MAX II"
+    "mpn": "B450 TOMAHAWK MAX II",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20017,
@@ -778,14 +781,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBP4YKTY1416",
-        "price": 1689.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835760232100611465704&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-maximus-z890-hero-ultra9-285k-atx-motherboards-intel-intel-z890-lga-1851%2Fp%2F1JW-000C-01B47%3Fitem%3D9SIBP4YKTY1416",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS260320026G8W7C.jpg",
+        "sku": "N82E16813119691",
+        "price": 449.99,
+        "saleprice": 429.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839327445260093841950&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-maximus-z890-hero-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813119691%3Fitem%3DN82E16813119691",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-691-12.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIBP4YKTY1416"
       }
     },
     "value": 8,
@@ -828,7 +834,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-673-27.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "msi": {
         "price": 459.99,
@@ -878,7 +885,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-757-02.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 275.99,
@@ -933,7 +941,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-526-05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 275.99,
@@ -981,7 +990,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-695-02.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "value": 22,
@@ -1012,7 +1022,7 @@ export default [
     "audio": "ROG SupremeFX",
     "deals": {
       "amazon": {
-        "price": 449.99,
+        "price": 849,
         "url": "https://www.amazon.com/dp/B0BG6M53DG?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1024,7 +1034,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHEBS2409240IE3CK04.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "value": 0,
@@ -1060,14 +1071,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC7A6KZ54966",
-        "price": 201.59,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314424366792378499294&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-z790-tomahawk-wifi-atx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813144567%3Fitem%3D9SIC7A6KZ54966",
+        "sku": "N82E16813144567R",
+        "price": 229.99,
+        "saleprice": 127.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317033556519271038322&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-z790-tomahawk-wifi-atx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813144567R%3Fitem%3DN82E16813144567R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-567-17.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC7A6KZ54966"
       },
       "bestbuy": {
         "price": 204.99,
@@ -1115,14 +1129,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC4RPKRG4682",
-        "price": 349.15,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831510224242877271100&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z790-aorus-elite-ax-ddr4-atx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813145419%3Fitem%3D9SIC4RPKRG4682",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-419-07.jpg",
+        "sku": "N82E16813145417R",
+        "price": 239.99,
+        "saleprice": 113.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831194301229569670529&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z790-aorus-elite-ax-atx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813145417R%3Fitem%3DN82E16813145417R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-417-01.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "matchMethod": "name",
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC4RPKRG4682"
       }
     },
     "value": 40,
@@ -1155,7 +1172,7 @@ export default [
     "audio": "Realtek ALC897",
     "deals": {
       "amazon": {
-        "price": 100,
+        "price": 299.99,
         "url": "https://www.amazon.com/dp/B0BR8TRLRB?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1167,7 +1184,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD240401140G3Z07.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "value": 93,
@@ -1200,7 +1218,7 @@ export default [
     "audio": "Realtek ALC897",
     "deals": {
       "amazon": {
-        "price": 169.99,
+        "price": 249.95,
         "url": "https://www.amazon.com/dp/B0BPB484K5?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1212,7 +1230,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "value": 47,
@@ -1250,14 +1269,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA4REK8D7842",
-        "price": 172.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836098297105012131017&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b760m-ds3h-ddr4-micro-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813145426%3Fitem%3D9SIA4REK8D7842",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-426-01.jpg",
+        "sku": "N82E16813145425",
+        "price": 139.99,
+        "saleprice": 129.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835701968347352623480&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b760m-ds3h-ax-ddr4-micro-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813145425%3Fitem%3DN82E16813145425",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-425-01.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIA4REK8D7842"
       },
       "bestbuy": {
         "price": 142.49,
@@ -1328,7 +1350,7 @@ export default [
     "audio": null,
     "deals": {
       "amazon": {
-        "price": 1029.21,
+        "price": 1396.49,
         "url": "https://www.amazon.com/dp/B0CQRYXWWQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1365,16 +1387,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0CH92B3S2?tag=tiereduptech-20",
         "inStock": true
       },
-      "newegg": {
-        "sku": "9SIC3DRKN64011",
-        "price": 189.54,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831049243939053075282&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b650m-ds3h-micro-atx-motherboards-amd-amd-b650-am5%2Fp%2FN82E16813145414%3Fitem%3D9SIC3DRKN64011",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-414-01.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1
-      },
       "bestbuy": {
         "price": 131.49,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11941432&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b650m-d3hp-ax-am5-ddr5-pcie-4-0-wi-fi-6e-2-5gbe%2FJ3ZW92VRFY&intsrc=APIG_28060",
@@ -1384,7 +1396,8 @@ export default [
     "value": 83,
     "bench": 67,
     "upc": "00889523034231",
-    "mpn": "B650M DS3H"
+    "mpn": "B650M DS3H",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20034,
@@ -1423,7 +1436,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-736-06.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 213.49,
@@ -1478,7 +1492,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-705-02.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "value": 42,
@@ -1523,7 +1538,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-545-05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "value": 17,
@@ -1568,7 +1584,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-196-11.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 148.49,
@@ -1609,22 +1626,15 @@ export default [
         "price": 129.99,
         "url": "https://www.amazon.com/dp/B0DH6W5M6R?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIC4WSKYA0732",
-        "price": 468.98,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318045205090921138304&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-z890-a-wifi-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813144670%3Fitem%3D9SIC4WSKYA0732",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-670-09.png",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 1
       }
     },
     "value": 41,
     "bench": 100,
     "upc": "00824142386569",
-    "mpn": "Z890-S WIFI"
+    "mpn": "Z890-S WIFI",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20039,
@@ -1663,7 +1673,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-524-05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "value": 26,
@@ -1693,11 +1704,6 @@ export default [
     "usb_c": true,
     "audio": "Realtek ALC4082",
     "deals": {
-      "amazon": {
-        "price": 345.99,
-        "url": "https://www.amazon.com/dp/B0DJRP9CWD?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16813162169",
         "price": 459.99,
@@ -1706,7 +1712,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-169-05.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "445838821075494084114819",
@@ -1728,7 +1735,8 @@ export default [
     "value": 9,
     "bench": 100,
     "upc": "04710483949685",
-    "mpn": "Z890 Taichi"
+    "mpn": "Z890 Taichi",
+    "amazonRemovedAnomaly": "2026-06-28"
   },
   {
     "id": 20041,
@@ -1767,7 +1775,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-570-15.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "value": 40,
@@ -1845,7 +1854,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-375-V03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "value": 67,
@@ -1875,11 +1885,6 @@ export default [
     "usb_c": true,
     "audio": "ROG SupremeFX",
     "deals": {
-      "amazon": {
-        "price": 554.05,
-        "url": "https://www.amazon.com/dp/B09GP7V2W5?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIC70UKZG2301",
         "price": 367,
@@ -1888,13 +1893,17 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-499-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "value": 61,
     "bench": 90,
     "upc": "00195553453448",
-    "mpn": "STRIX X570-E GAM W 2"
+    "mpn": "STRIX X570-E GAM W 2",
+    "amazonRemovedAnomaly": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20045,
@@ -1921,7 +1930,7 @@ export default [
     "audio": "Realtek ALC887",
     "deals": {
       "amazon": {
-        "price": 57.94,
+        "price": 99.99,
         "url": "https://www.amazon.com/dp/B0BTTZFQTP?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1933,7 +1942,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-434-05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 127.49,
@@ -1983,7 +1993,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-157-936-V03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 97.99,
@@ -2033,7 +2044,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-325-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "value": 74,
@@ -2078,7 +2090,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-612-09.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "value": 34,
@@ -2109,7 +2122,7 @@ export default [
     "audio": "Realtek ALC1220",
     "deals": {
       "amazon": {
-        "price": 184.69,
+        "price": 235,
         "url": "https://www.amazon.com/dp/B083R826VW?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2121,7 +2134,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-428-01.png",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 198.49,
@@ -2156,11 +2170,6 @@ export default [
     "usb_c": true,
     "audio": "ROG SupremeFX",
     "deals": {
-      "amazon": {
-        "price": 950.62,
-        "url": "https://www.amazon.com/dp/B0BH94Z782?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIC4WSKYA7016",
         "price": 515.67,
@@ -2169,13 +2178,17 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-609-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "value": 23,
     "bench": 91,
     "upc": "04711387038192",
-    "mpn": "90MB1E10-M0EAY0"
+    "mpn": "90MB1E10-M0EAY0",
+    "amazonRemovedAnomaly": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20051,
@@ -2202,7 +2215,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-567-05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 121.99,
@@ -2252,14 +2266,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC6F8KYT3093",
-        "price": 161.7,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831294876051636648073&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-b650-a-gaming-wifi-atx-motherboards-amd-amd-b650-am5%2Fp%2FN82E16813119606%3Fitem%3D9SIC6F8KYT3093",
+        "sku": "N82E16813119606",
+        "price": 227.99,
+        "saleprice": 184.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317996457892385298931&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-b650-a-gaming-wifi-atx-motherboards-amd-amd-b650-am5%2Fp%2FN82E16813119606%3Fitem%3DN82E16813119606",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-606-09.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC6F8KYT3093"
       }
     },
     "discount": 36,
@@ -2294,7 +2311,7 @@ export default [
     "reviews": 311,
     "deals": {
       "amazon": {
-        "price": 161.49,
+        "price": 200,
         "url": "https://www.amazon.com/dp/B0DQLHVQSF?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2311,7 +2328,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-545-05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 18,
@@ -2363,7 +2381,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-412-11.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 39,
@@ -2403,14 +2422,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBP4YKVN4578",
-        "price": 469.41,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837197362624288711239&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-intel-lga-1851%2Fp%2F1JW-000C-01A20%3Fitem%3D9SIBP4YKVN4578",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2505191FFMLQC1.jpg",
+        "sku": "N82E16813119728",
+        "price": 299.99,
+        "saleprice": 249.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831723791987925865516&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-z890-h-gaming-wifi-atx-motherboards-intel-intel-z890-lga-1851%2Fp%2FN82E16813119728%3Fitem%3DN82E16813119728",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-728-01.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIBP4YKVN4578"
       },
       "bestbuy": {
         "price": 307.49,
@@ -2466,7 +2488,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-666-26.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "4458311437381739544407579",
@@ -2534,7 +2557,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-689-06.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "msi": {
         "price": 179.99,
@@ -2584,14 +2608,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIB319M061184",
-        "price": 179,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832611224832665841700&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b850-eagle-wf7-ice-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813145585%3Fitem%3D9SIB319M061184",
+        "sku": "N82E16813145585",
+        "price": 209.99,
+        "saleprice": 189.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314545036354299317582&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b850-eagle-wf7-ice-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813145585%3Fitem%3DN82E16813145585",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-585-01.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIB319M061184"
       },
       "newegg_openbox": {
         "sku": "4458317375802073692873553",
@@ -2637,7 +2664,7 @@ export default [
     "reviews": 65,
     "deals": {
       "amazon": {
-        "price": 749.99,
+        "price": 789.99,
         "url": "https://www.amazon.com/dp/B0F473X94G?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2707,13 +2734,7 @@ export default [
     "r": 4.8,
     "asin": "B0FDW7Z31S",
     "reviews": 28,
-    "deals": {
-      "amazon": {
-        "price": 313.49,
-        "url": "https://www.amazon.com/dp/B0FDW7Z31S?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/61eKPkUnH3L._AC_SL1155_.jpg",
       "https://m.media-amazon.com/images/I/510V5vHeOAL._AC_SL1500_.jpg",
@@ -2730,7 +2751,9 @@ export default [
     "wifi": "WiFi",
     "value": 15,
     "bundle": true,
-    "bench": 68
+    "bench": 68,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20062,
@@ -2881,7 +2904,7 @@ export default [
     "reviews": 20,
     "deals": {
       "amazon": {
-        "price": 569.99,
+        "price": 599.99,
         "url": "https://www.amazon.com/dp/B0F1FSQ119?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2988,13 +3011,7 @@ export default [
     "r": 4,
     "asin": "B0FDW76NX2",
     "reviews": 11,
-    "deals": {
-      "amazon": {
-        "price": 589.99,
-        "url": "https://www.amazon.com/dp/B0FDW76NX2?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/61J+kPFTieL._AC_SL1155_.jpg",
       "https://m.media-amazon.com/images/I/61aS-UVHIeL._AC_SL1500_.jpg",
@@ -3011,7 +3028,9 @@ export default [
     "wifi": "WiFi",
     "value": 0,
     "bundle": true,
-    "bench": 63
+    "bench": 63,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20070,
@@ -3099,13 +3118,7 @@ export default [
     "r": 5,
     "asin": "B0F47J56S4",
     "reviews": 6,
-    "deals": {
-      "amazon": {
-        "price": 1029.99,
-        "url": "https://www.amazon.com/dp/B0F47J56S4?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/61eyJLrkb-L._AC_SL1155_.jpg",
       "https://m.media-amazon.com/images/I/71nkigvsseL._AC_SL1500_.jpg",
@@ -3122,7 +3135,9 @@ export default [
     "wifi": "WiFi",
     "value": 0,
     "bundle": true,
-    "bench": 81
+    "bench": 81,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20073,
@@ -3173,7 +3188,7 @@ export default [
     "reviews": 794,
     "deals": {
       "amazon": {
-        "price": 57.94,
+        "price": 99.99,
         "url": "https://www.amazon.com/dp/B0BTTZFQTP?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3185,12 +3200,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-434-05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 142.44,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11615584&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b550m-k-am4-amd-b550-micro-atx-motherboard-with-dual-m-2-sata-6gb-s-usb-3-2-gen-1-realtek-gbe-lan-pcie-4-0%2FJ3ZW92VGQ8&intsrc=APIG_28060",
-        "inStock": true
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 30,
@@ -3210,7 +3221,8 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 100,
-    "bench": 59
+    "bench": 59,
+    "bestbuyRemovedComp": "2026-06-28"
   },
   {
     "id": 20075,
@@ -3274,7 +3286,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-518-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "4458316157051897796257477",
@@ -3338,7 +3351,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 99.99,
@@ -3390,7 +3404,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-255-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 101.99,
@@ -3430,7 +3445,7 @@ export default [
     "reviews": 571,
     "deals": {
       "amazon": {
-        "price": 225.98,
+        "price": 254.98,
         "url": "https://www.amazon.com/dp/B0DF12WKQY?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3442,7 +3457,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-684-12.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "445834817109167165204705",
@@ -3493,7 +3509,7 @@ export default [
     "reviews": 477,
     "deals": {
       "amazon": {
-        "price": 219.99,
+        "price": 237,
         "url": "https://www.amazon.com/dp/B0DGB8Q19Y?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3510,7 +3526,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-686-13.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "discount": 33,
@@ -3562,7 +3579,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-547-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 20,
@@ -3582,7 +3600,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 6E",
     "value": 100,
-    "bench": 82
+    "bench": 82,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20082,
@@ -3597,7 +3617,7 @@ export default [
     "reviews": 142,
     "deals": {
       "amazon": {
-        "price": 149.99,
+        "price": 172.42,
         "url": "https://www.amazon.com/dp/B0F25ML4CK?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3609,7 +3629,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-736-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       },
       "newegg_openbox": {
         "sku": "4458315960247567384997287",
@@ -3670,7 +3691,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-580-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -3704,7 +3726,7 @@ export default [
     "reviews": 891,
     "deals": {
       "amazon": {
-        "price": 123.49,
+        "price": 149.99,
         "url": "https://www.amazon.com/dp/B083TZ68H1?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3721,7 +3743,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-491-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -3768,7 +3791,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445834312015098345032926",
@@ -3823,7 +3847,7 @@ export default [
     "reviews": 322,
     "deals": {
       "amazon": {
-        "price": 218.49,
+        "price": 239.95,
         "url": "https://www.amazon.com/dp/B0DPLP33YR?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3840,7 +3864,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-703-17.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 21,
@@ -3911,7 +3936,7 @@ export default [
     "reviews": 373,
     "deals": {
       "amazon": {
-        "price": 204.24,
+        "price": 214.99,
         "url": "https://www.amazon.com/dp/B0DGVC3DDW?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3928,7 +3953,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-519-16.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "445838498309357532532497",
@@ -3973,7 +3999,7 @@ export default [
     "reviews": 114,
     "deals": {
       "amazon": {
-        "price": 493.99,
+        "price": 539.99,
         "url": "https://www.amazon.com/dp/B0DF123GCV?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3985,7 +4011,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-688-12.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 524.99,
@@ -4043,7 +4070,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 27,
@@ -4078,7 +4106,7 @@ export default [
     "reviews": 3855,
     "deals": {
       "amazon": {
-        "price": 145.99,
+        "price": 119.99,
         "url": "https://www.amazon.com/dp/B089CZSQB4?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4090,7 +4118,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.733Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -4124,7 +4153,7 @@ export default [
     "reviews": 286,
     "deals": {
       "amazon": {
-        "price": 213.74,
+        "price": 259.99,
         "url": "https://www.amazon.com/dp/B0DGVGRVLQ?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4141,7 +4170,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-518-06.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "445832385068078830075420",
@@ -4186,7 +4216,7 @@ export default [
     "reviews": 223,
     "deals": {
       "amazon": {
-        "price": 161.49,
+        "price": 229.99,
         "url": "https://www.amazon.com/dp/B0DQLKRXKW?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4196,14 +4226,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC6MKM036201",
-        "price": 177.64,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313621413724324144846&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b850-aorus-elite-wifi7-ice-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813145544%3Fitem%3D9SIC6MKM036201",
+        "sku": "N82E16813145544",
+        "price": 254.99,
+        "saleprice": 239.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312370088221308642167&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b850-aorus-elite-wifi7-ice-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813145544%3Fitem%3DN82E16813145544",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-544-01.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC6MKM036201"
       }
     },
     "discount": 10,
@@ -4254,7 +4287,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-521-06.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "445832652076351950017195",
@@ -4285,7 +4319,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 7",
     "value": 44,
-    "bench": 87
+    "bench": 87,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20095,
@@ -4317,7 +4353,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-517-06.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "44583972083718504275037",
@@ -4362,7 +4399,7 @@ export default [
     "reviews": 209,
     "deals": {
       "amazon": {
-        "price": 151.99,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DQLJGTRM?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4379,7 +4416,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-549-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 15,
@@ -4425,7 +4463,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-680-03.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.93
+        "matchScore": 0.93,
+        "sellerClass": "marketplace"
       }
     },
     "discount": 7,
@@ -4476,7 +4515,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-739-11.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "4458317373425715565760486",
@@ -4522,7 +4562,7 @@ export default [
     "reviews": 30,
     "deals": {
       "amazon": {
-        "price": 99.99,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0FP3MRTC1?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4534,7 +4574,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-744-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "4458314528442285834669772",
@@ -4585,7 +4626,7 @@ export default [
     "reviews": 812,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 80.99,
         "url": "https://www.amazon.com/dp/B089VYCHMG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4621,7 +4662,7 @@ export default [
     "reviews": 734,
     "deals": {
       "amazon": {
-        "price": 128.85,
+        "price": 149.99,
         "url": "https://www.amazon.com/dp/B0BH6XND27?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4633,7 +4674,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-413-06.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 151.99,
@@ -4717,7 +4759,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-525-08.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 112.49,
@@ -4765,16 +4808,6 @@ export default [
         "price": 110.04,
         "url": "https://www.amazon.com/dp/B0CJSJ9TB3?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "44583879645136918750330",
-        "price": 217.76,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583879645136918750330&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-z790-a-max-wifi-atx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813144634%3Fitem%3D9SIC3DRKN75626",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-634-05.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.571Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       }
     },
     "discount": 14,
@@ -4794,7 +4827,10 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 21,
-    "bench": 83
+    "bench": 83,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20105,
@@ -4814,19 +4850,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA6ZPK9Y7136",
-        "price": 216.88,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317897917685974058719&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-b760-plus-wifi-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813119641%3Fitem%3D9SIA6ZPK9Y7136",
+        "sku": "N82E16813119641R",
+        "price": 207.99,
+        "saleprice": 110.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834748447561340224684&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-b760-plus-wifi-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813119641R%3Fitem%3DN82E16813119641R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-641-03.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 221.53,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10953924&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-gaming-b760-plus-wifi-gaming-desktop-motherboard%2FJJGGLRJCX6&intsrc=APIG_28060",
-        "inStock": true
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIA6ZPK9Y7136"
       }
     },
     "discount": 30,
@@ -4846,7 +4880,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 61,
-    "bench": 73
+    "bench": 73,
+    "bestbuyRemovedComp": "2026-06-28"
   },
   {
     "id": 20106,
@@ -4878,7 +4913,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-515-06.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -4923,7 +4959,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-502-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 31,
@@ -4955,13 +4992,7 @@ export default [
     "r": 4.5,
     "asin": "B09KZYMP8P",
     "reviews": 223,
-    "deals": {
-      "amazon": {
-        "price": 99.99,
-        "url": "https://www.amazon.com/dp/B09KZYMP8P?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81GOAbGpJFL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/71rEhEpupzL._AC_SL1290_.jpg",
@@ -4978,7 +5009,9 @@ export default [
     "wifi": "None",
     "value": 100,
     "bench": 51,
-    "upc": "04710483932809"
+    "upc": "04710483932809",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20109,
@@ -5005,7 +5038,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-151-03.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.67
+        "matchScore": 0.67,
+        "sellerClass": "official"
       }
     },
     "discount": 15,
@@ -5038,11 +5072,6 @@ export default [
     "asin": "B0BHJJ6B2H",
     "reviews": 205,
     "deals": {
-      "amazon": {
-        "price": 124.44,
-        "url": "https://www.amazon.com/dp/B0BHJJ6B2H?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIC418KRY2896",
         "price": 212.17,
@@ -5051,7 +5080,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-540-03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.82
+        "matchScore": 0.82,
+        "sellerClass": "marketplace"
       }
     },
     "discount": 28,
@@ -5070,7 +5100,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 72,
-    "bench": 65
+    "bench": 65,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20111,
@@ -5097,7 +5129,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-495-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 24,
@@ -5144,7 +5177,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-522-06.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "4458315705630605767131580",
@@ -5207,7 +5241,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-640-02.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 145.49,
@@ -5264,7 +5299,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-702-09.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 9,
@@ -5316,7 +5352,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-550-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 17,
@@ -5355,14 +5392,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC22WKWN7770",
-        "price": 198.8,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835722957151454258101&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-x870-p-wifi-atx-motherboard-amd-x870-am5%2Fp%2FN82E16813119687%3Fitem%3D9SIC22WKWN7770",
+        "sku": "N82E16813119687",
+        "price": 250.99,
+        "saleprice": 247.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836542659654333525371&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-x870-p-wifi-atx-motherboard-amd-x870-am5%2Fp%2FN82E16813119687%3Fitem%3DN82E16813119687",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-687-12.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC22WKWN7770"
       },
       "bestbuy": {
         "price": 169.99,
@@ -5400,7 +5440,7 @@ export default [
     "reviews": 108,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 222.09,
         "url": "https://www.amazon.com/dp/B0DRTVR12D?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5412,7 +5452,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-201-11.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -5462,7 +5503,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-583-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "4458311064365352754977786",
@@ -5508,7 +5550,7 @@ export default [
     "reviews": 76,
     "deals": {
       "amazon": {
-        "price": 244.76,
+        "price": 222.99,
         "url": "https://www.amazon.com/dp/B0DJP95MGB?tag=tiereduptech-20",
         "inStock": true
       },
@@ -5518,14 +5560,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC7A6KZ69390",
-        "price": 233.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832223266765422542610&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z890-aorus-elite-wifi7-atx-motherboards-intel-intel-z890-lga-1851%2Fp%2FN82E16813145527%3Fitem%3D9SIC7A6KZ69390",
+        "sku": "N82E16813145527",
+        "price": 289.99,
+        "saleprice": 259.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839560756206244701416&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z890-aorus-elite-wifi7-atx-motherboards-intel-intel-z890-lga-1851%2Fp%2FN82E16813145527%3Fitem%3DN82E16813145527",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-527-05.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC7A6KZ69390"
       }
     },
     "additionalImages": [
@@ -5571,7 +5616,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-699-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 480.49,
@@ -5664,7 +5710,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-584-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 23,
@@ -5710,7 +5757,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-706-05.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.82
+        "matchScore": 0.82,
+        "sellerClass": "marketplace"
       },
       "bestbuy": {
         "price": 235.49,
@@ -5789,16 +5837,6 @@ export default [
         "price": 123.9,
         "url": "https://www.amazon.com/dp/B0BR8SGYXP?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBP4YKVZ5782",
-        "price": 199,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837004164851653229426&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-intel-lga-1700%2Fp%2F1JW-000C-01A65%3Fitem%3D9SIBP4YKVZ5782",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2506200FFFA3CF.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.69
       }
     },
     "discount": 5,
@@ -5817,7 +5855,8 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 75,
-    "bench": 67
+    "bench": 67,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20126,
@@ -5844,7 +5883,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-770-04.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -5890,7 +5930,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-744-14.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 5,
@@ -5935,7 +5976,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-489-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -6017,7 +6059,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.746Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 172.99,
@@ -6074,7 +6117,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 192.45,
@@ -6126,7 +6170,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-229-03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.88
+        "matchScore": 0.88,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -6171,7 +6216,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.044Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 213.24,
@@ -6337,7 +6383,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-596-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 381.99,
@@ -6389,7 +6436,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.236Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 123.99,
@@ -6445,7 +6493,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-698-05.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "msi": {
         "price": 289.99,
@@ -6470,7 +6519,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 17,
-    "bench": 86
+    "bench": 86,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20140,
@@ -6497,7 +6548,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-572-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 121.99,
@@ -6536,7 +6588,7 @@ export default [
     "reviews": 157,
     "deals": {
       "amazon": {
-        "price": 151.99,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DG3SSGLF?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6554,7 +6606,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 169.99,
@@ -6611,7 +6664,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-516-07.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -6723,16 +6777,6 @@ export default [
         "price": 119.99,
         "url": "https://www.amazon.com/dp/B0CK582LX5?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIC3DRKN78750",
-        "price": 229.58,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583363672323587528243&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b760m-pg-riptide-wifi-micro-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813162147%3Fitem%3D9SIC3DRKN78750",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-147-07.png",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -6750,7 +6794,8 @@ export default [
     "wifi": "WiFi 6E",
     "value": 74,
     "bench": 76,
-    "upc": "04710483943836"
+    "upc": "04710483943836",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20146,
@@ -6778,7 +6823,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 113.49,
@@ -6820,7 +6866,7 @@ export default [
     "reviews": 104,
     "deals": {
       "amazon": {
-        "price": 142.49,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DQBT2DZ8?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6838,7 +6884,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 169.99,
@@ -6882,17 +6929,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0FBTKJMRJ?tag=tiereduptech-20",
         "inStock": true
       },
-      "newegg": {
-        "sku": "4458312429288811299201815",
-        "name": "MSI A520M-A PRO AM4 AMD A520 SATA 6Gb/s USB 3.0 Micro ATX AMD Motherboard and AMD Ryzen 5 5500 - Ryzen 5 5000 Series 6-Core Socket AM4 65W, AMD...",
-        "price": 540.77,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312429288811299201815&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-motherboards-amd%2Fp%2F2MG-000M-00571%3Fitem%3D9SIC5MUKUT5842",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVS2304240ET29LC8.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-15T02:34:16.508Z",
-        "matchMethod": "remediate:strict-token",
-        "matchScore": 1
-      },
       "msi": {
         "price": 64.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2730&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FA520M-A-PRO-V1&intsrc=APIG_16410",
@@ -6913,7 +6949,8 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 100,
-    "bench": 48
+    "bench": 48,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20149,
@@ -6941,7 +6978,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445831930697274585235803",
@@ -6986,7 +7024,7 @@ export default [
     "reviews": 49,
     "deals": {
       "amazon": {
-        "price": 151.6,
+        "price": 226.99,
         "url": "https://www.amazon.com/dp/B0DH6ZJB9Y?tag=tiereduptech-20",
         "inStock": true
       },
@@ -7004,7 +7042,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 209.99,
@@ -7054,7 +7093,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.200Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 106.27,
@@ -7110,7 +7150,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.236Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 8,
@@ -7158,7 +7199,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 319.99,
@@ -7209,7 +7251,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-748-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 328.99,
@@ -7262,7 +7305,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 183.99,
@@ -7317,7 +7361,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-698-03.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 5,
@@ -7352,7 +7397,7 @@ export default [
     "reviews": 14,
     "deals": {
       "amazon": {
-        "price": 169.99,
+        "price": 239.99,
         "url": "https://www.amazon.com/dp/B0F97MS2W4?tag=tiereduptech-20",
         "inStock": true
       },
@@ -7369,7 +7414,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-740-06.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.82
+        "matchScore": 0.82,
+        "sellerClass": "official"
       },
       "msi": {
         "price": 239.99,
@@ -7413,14 +7459,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAAPKKWN9386",
-        "price": 204.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317193657610282168292&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z890-eagle-wifi7-atx-motherboards-intel-intel-z890-lga-1851%2Fp%2FN82E16813145530%3Fitem%3D9SIAAPKKWN9386",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-530-06.jpg",
+        "sku": "N82E16813145616",
+        "price": 239.99,
+        "saleprice": 235.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310063087526827744973&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z890-eagle-wifi7-plus-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813145616%3Fitem%3DN82E16813145616",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-616-01.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "matchMethod": "name",
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIAAPKKWN9386"
       }
     },
     "discount": 25,
@@ -7477,7 +7526,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-727-06.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 12,
@@ -7555,7 +7605,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -7606,7 +7657,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-733-06.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "msi": {
         "price": 149.99,
@@ -7645,11 +7697,6 @@ export default [
     "asin": "B07SXF8GY3",
     "reviews": 8240,
     "deals": {
-      "amazon": {
-        "price": 217.69,
-        "url": "https://www.amazon.com/dp/B07SXF8GY3?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIBTK0KAS0386",
         "price": 239.2,
@@ -7658,7 +7705,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-197-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -7677,7 +7725,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 15,
-    "bench": 71
+    "bench": 71,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20164,
@@ -7726,11 +7776,6 @@ export default [
     "asin": "B07T5QDRFX",
     "reviews": 3119,
     "deals": {
-      "amazon": {
-        "price": 378.37,
-        "url": "https://www.amazon.com/dp/B07T5QDRFX?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458312926406089611431420",
         "price": 165.72,
@@ -7739,7 +7784,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.571Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -7758,7 +7804,10 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 23,
-    "bench": 70
+    "bench": 70,
+    "amazonRemovedAnomaly": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20166,
@@ -7785,7 +7834,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.570Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -7804,7 +7854,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 5",
     "value": 14,
-    "bench": 76
+    "bench": 76,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20167,
@@ -7818,11 +7870,6 @@ export default [
     "asin": "B089HDJS79",
     "reviews": 2492,
     "deals": {
-      "amazon": {
-        "price": 199.99,
-        "url": "https://www.amazon.com/dp/B089HDJS79?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIC4RPKRD4225",
         "price": 131.31,
@@ -7831,7 +7878,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-315-V04.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.9
+        "matchScore": 0.9,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -7849,7 +7897,10 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 47,
-    "bench": 61
+    "bench": 61,
+    "amazonRemovedAnomaly": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20168,
@@ -7862,13 +7913,7 @@ export default [
     "r": 4.5,
     "asin": "B08MPZ14FY",
     "reviews": 2130,
-    "deals": {
-      "amazon": {
-        "price": 225.51,
-        "url": "https://www.amazon.com/dp/B08MPZ14FY?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/71NgNexSBxL._AC_SL1000_.jpg",
       "https://m.media-amazon.com/images/I/61xeo0bYnGL._AC_SL1000_.jpg",
@@ -7885,7 +7930,9 @@ export default [
     "wifi": "None",
     "ff": "ATX",
     "value": 30,
-    "bench": 66
+    "bench": 66,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20169,
@@ -7917,7 +7964,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-618-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 22,
@@ -8000,7 +8048,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S2507190PRO8O13.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -8039,14 +8088,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC5MUKUT5819",
-        "price": 298.15,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839935637055736220665&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-amd-am5%2Fp%2F2MG-000B-007F1%3Fitem%3D9SIC5MUKUT5819",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2506190EP0MB40.jpg",
+        "sku": "N82E16813119739",
+        "price": 205.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317305950742003841614&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-b650e-plus-wifi-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813119739%3Fitem%3DN82E16813119739",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-739-11.png",
+        "sellerClass": "official",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.92
+        "matchScore": 0.69,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC5MUKUT5819"
       }
     },
     "additionalImages": [
@@ -8149,11 +8200,6 @@ export default [
     "asin": "B07HCVFCGK",
     "reviews": 1024,
     "deals": {
-      "amazon": {
-        "price": 247.99,
-        "url": "https://www.amazon.com/dp/B07HCVFCGK?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445833286258594271146979",
         "price": 145.59,
@@ -8162,7 +8208,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.571Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -8179,7 +8226,10 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 5",
     "value": 33,
-    "bench": 50
+    "bench": 50,
+    "amazonRemovedAnomaly": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20176,
@@ -8194,7 +8244,7 @@ export default [
     "reviews": 990,
     "deals": {
       "amazon": {
-        "price": 59.99,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B08F7HPJ4F?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8207,7 +8257,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -8239,7 +8290,7 @@ export default [
     "reviews": 850,
     "deals": {
       "amazon": {
-        "price": 132.99,
+        "price": 154.95,
         "url": "https://www.amazon.com/dp/B0C15THTK7?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8252,7 +8303,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 169.99,
@@ -8296,7 +8348,7 @@ export default [
     "reviews": 768,
     "deals": {
       "amazon": {
-        "price": 219.99,
+        "price": 290,
         "url": "https://www.amazon.com/dp/B09RKTL5L3?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8308,7 +8360,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.615Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -8341,11 +8394,6 @@ export default [
     "asin": "B0886NPVRJ",
     "reviews": 752,
     "deals": {
-      "amazon": {
-        "price": 260,
-        "url": "https://www.amazon.com/dp/B0886NPVRJ?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIC5VSKV03436",
         "price": 160.95,
@@ -8354,7 +8402,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-302-V01.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.82
+        "matchScore": 0.82,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -8373,7 +8422,10 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 9,
-    "bench": 69
+    "bench": 69,
+    "amazonRemovedAnomaly": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20180,
@@ -8388,7 +8440,7 @@ export default [
     "reviews": 679,
     "deals": {
       "amazon": {
-        "price": 309.99,
+        "price": 355,
         "url": "https://www.amazon.com/dp/B07HS4PQWK?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8437,7 +8489,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 29,
@@ -8518,7 +8571,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.570Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -8564,7 +8618,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.634Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 255.49,
@@ -8609,14 +8664,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3DRKN67641",
-        "price": 427.64,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834544202805822938672&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z790-aorus-elite-ax-ice-atx-z790-motherboard-intel-z790-express-chipset-lga-1700%2Fp%2FN82E16813145480%3Fitem%3D9SIC3DRKN67641",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-480-V01.jpg",
+        "sku": "N82E16813145417",
+        "price": 239.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835088727697317222964&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z790-aorus-elite-ax-atx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813145417%3Fitem%3DN82E16813145417",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-417-01.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.67
+        "matchScore": 0.67,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC3DRKN67641"
       }
     },
     "additionalImages": [
@@ -8686,7 +8743,7 @@ export default [
     "reviews": 528,
     "deals": {
       "amazon": {
-        "price": 118.95,
+        "price": 400,
         "url": "https://www.amazon.com/dp/B0BYB3PGQW?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8739,7 +8796,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-601-V01.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -8773,7 +8831,7 @@ export default [
     "reviews": 446,
     "deals": {
       "amazon": {
-        "price": 119.98,
+        "price": 107.06,
         "url": "https://www.amazon.com/dp/B0BMM7M56F?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8807,11 +8865,6 @@ export default [
     "asin": "B083SRFQPH",
     "reviews": 426,
     "deals": {
-      "amazon": {
-        "price": 179.99,
-        "url": "https://www.amazon.com/dp/B083SRFQPH?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIBTK0KAS0386",
         "price": 231.78,
@@ -8820,7 +8873,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-197-01.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.89
+        "matchScore": 0.89,
+        "sellerClass": "marketplace"
       }
     },
     "discount": 47,
@@ -8840,7 +8894,9 @@ export default [
     "wifi": "WiFi",
     "ff": "ATX",
     "value": 42,
-    "bench": 69
+    "bench": 69,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20191,
@@ -8854,11 +8910,6 @@ export default [
     "asin": "B0BFZYB6QW",
     "reviews": 412,
     "deals": {
-      "amazon": {
-        "price": 205.37,
-        "url": "https://www.amazon.com/dp/B0BFZYB6QW?tag=tiereduptech-20",
-        "inStock": true
-      },
       "bestbuy": {
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6538043&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6538043.p%3FskuId%3D6538043",
@@ -8951,7 +9002,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 12,
-    "bench": 87
+    "bench": 87,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20194,
@@ -8969,16 +9022,6 @@ export default [
         "price": 128.5,
         "url": "https://www.amazon.com/dp/B0CRF81BBC?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317201952770369008618",
-        "price": 515.86,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317201952770369008618&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-x670e-gaming-plus-wifi-atx-motherboards-amd-amd-x670-am5%2Fp%2FN82E16813144647%3Fitem%3D9SIAD6HK8M6542",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-647-09.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.823Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -8996,7 +9039,10 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 22,
-    "bench": 79
+    "bench": 79,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20195,
@@ -9024,7 +9070,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 163.49,
@@ -9067,16 +9114,6 @@ export default [
         "price": 289.99,
         "url": "https://www.amazon.com/dp/B0BMM7NZDX?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458310479299357097885856",
-        "price": 579.41,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310479299357097885856&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-b760-tomahawk-wifi-ddr4-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813144583%3Fitem%3D9SIC5MUKTW3840",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-583-04.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
-        "matchScore": 1
       }
     },
     "discount": 9,
@@ -9096,7 +9133,8 @@ export default [
     "wifi": "WiFi",
     "value": 40,
     "bench": 78,
-    "upc": "00824142305980"
+    "upc": "00824142305980",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20197,
@@ -9146,7 +9184,7 @@ export default [
     "reviews": 309,
     "deals": {
       "amazon": {
-        "price": 109.21,
+        "price": 121.6,
         "url": "https://www.amazon.com/dp/B09P3RV6ZC?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9159,7 +9197,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 10,
@@ -9194,7 +9233,7 @@ export default [
     "reviews": 298,
     "deals": {
       "amazon": {
-        "price": 209,
+        "price": 229.95,
         "url": "https://www.amazon.com/dp/B09WJMC995?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9206,7 +9245,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.607Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -9274,11 +9314,6 @@ export default [
     "asin": "B09S6NQPM6",
     "reviews": 292,
     "deals": {
-      "amazon": {
-        "price": 173,
-        "url": "https://www.amazon.com/dp/B09S6NQPM6?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445833309844667248019321",
         "price": 135,
@@ -9287,7 +9322,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.987Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -9306,7 +9342,9 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 47,
-    "bench": 46
+    "bench": 46,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20202,
@@ -9319,13 +9357,7 @@ export default [
     "r": 4.4,
     "asin": "B0BF5PYZ67",
     "reviews": 287,
-    "deals": {
-      "amazon": {
-        "price": 319,
-        "url": "https://www.amazon.com/dp/B0BF5PYZ67?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81WqeJqo5CL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/8112N3qul-L._AC_SL1500_.jpg",
@@ -9342,7 +9374,9 @@ export default [
     "wifi": "WiFi",
     "value": 15,
     "bench": 76,
-    "upc": "04711081905738"
+    "upc": "04711081905738",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20203,
@@ -9397,16 +9431,6 @@ export default [
         "price": 109,
         "url": "https://www.amazon.com/dp/B0C15SRJNM?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317095448659417309302",
-        "price": 221.85,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317095448659417309302&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-a620m-e-matx-motherboards-amd-amd-a620-am5%2Fp%2FN82E16813144598%3Fitem%3D9SIAD6HJT13979",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-598-07.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.822Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -9425,7 +9449,8 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 77,
-    "bench": 53
+    "bench": 53,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20205,
@@ -9453,7 +9478,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 133.99,
@@ -9568,7 +9594,7 @@ export default [
     "reviews": 249,
     "deals": {
       "amazon": {
-        "price": 138,
+        "price": 149.05,
         "url": "https://www.amazon.com/dp/B0D54QJ9CJ?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9581,7 +9607,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 148.49,
@@ -9620,7 +9647,7 @@ export default [
     "reviews": 208,
     "deals": {
       "amazon": {
-        "price": 259.99,
+        "price": 237.99,
         "url": "https://www.amazon.com/dp/B0BHCRX6K7?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9632,7 +9659,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.646Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 15,
@@ -9715,7 +9743,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B7VES2308130QSMZT80.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.64
+        "matchScore": 0.64,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -9747,11 +9776,6 @@ export default [
     "asin": "B0BVBXT6P1",
     "reviews": 184,
     "deals": {
-      "amazon": {
-        "price": 149.99,
-        "url": "https://www.amazon.com/dp/B0BVBXT6P1?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458313455867599260122246",
         "name": "GIGABYTE H610M S2H DDR4 H610 Intel LGA 1700 Micro ATX Motherboard with DDR4, Single M.2, PCIe 4.0, USB 3.2 Gen1, Realtek GbE LAN",
@@ -9761,7 +9785,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -9779,7 +9804,9 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 69,
-    "bench": 43
+    "bench": 43,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20214,
@@ -9830,7 +9857,7 @@ export default [
     "reviews": 176,
     "deals": {
       "amazon": {
-        "price": 82.62,
+        "price": 155.99,
         "url": "https://www.amazon.com/dp/B0BH4M6ZL9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9938,7 +9965,7 @@ export default [
     "reviews": 166,
     "deals": {
       "amazon": {
-        "price": 220.47,
+        "price": 248.49,
         "url": "https://www.amazon.com/dp/B0DFZQJFC1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9986,7 +10013,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-686-13.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.92
+        "matchScore": 0.92,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -10017,13 +10045,7 @@ export default [
     "r": 3.9,
     "asin": "B0CBLMQ3KB",
     "reviews": 157,
-    "deals": {
-      "amazon": {
-        "price": 119.99,
-        "url": "https://www.amazon.com/dp/B0CBLMQ3KB?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "discount": 45,
     "additionalImages": [
       "https://m.media-amazon.com/images/I/919KesVl45L._AC_SL1500_.jpg",
@@ -10040,7 +10062,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 62,
-    "bench": 73
+    "bench": 73,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20221,
@@ -10130,14 +10154,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBP4YKU97539",
-        "price": 579.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317490736628517446488&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-x870-a-gaming-wifi-s-motherboards-amd-amd-x870-am5%2Fp%2F2MG-000B-008D8%3Fitem%3D9SIBP4YKU97539",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS26032902KJERCA.jpg",
+        "sku": "N82E16813119776",
+        "price": 469.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318054193701746392478&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-x870e-a-gaming-wifi7-neo-atx-motherboard-amd-x870e-am5%2Fp%2FN82E16813119776%3Fitem%3DN82E16813119776",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-776-17.png",
+        "sellerClass": "official",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.77
+        "matchScore": 0.62,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIBP4YKU97539"
       }
     },
     "additionalImages": [
@@ -10182,7 +10208,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.615Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -10228,7 +10255,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.821Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 7,
@@ -10311,7 +10339,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.060Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 37,
@@ -10357,7 +10386,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.615Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -10440,7 +10470,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -10474,7 +10505,7 @@ export default [
     "reviews": 124,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 209.99,
         "url": "https://www.amazon.com/dp/B0DFYZCPYW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10521,7 +10552,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-556-16.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.64
+        "matchScore": 0.64,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -10588,11 +10620,6 @@ export default [
     "asin": "B0BHMTC99Q",
     "reviews": 123,
     "deals": {
-      "amazon": {
-        "price": 373.99,
-        "url": "https://www.amazon.com/dp/B0BHMTC99Q?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16813119612",
         "price": 299.99,
@@ -10601,7 +10628,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-612-09.png",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.89
+        "matchScore": 0.89,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -10620,7 +10648,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 7,
-    "bench": 73
+    "bench": 73,
+    "amazonRemovedAnomaly": "2026-06-28"
   },
   {
     "id": 20235,
@@ -10633,13 +10662,7 @@ export default [
     "r": 4.1,
     "asin": "B08XNGK4BY",
     "reviews": 122,
-    "deals": {
-      "amazon": {
-        "price": 65.99,
-        "url": "https://www.amazon.com/dp/B08XNGK4BY?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/6144XCudfeL._AC_SX679_.jpg",
       "https://m.media-amazon.com/images/I/61lDmWJJjKL._AC_SX679_.jpg",
@@ -10654,7 +10677,9 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 100,
-    "bench": 38
+    "bench": 38,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20236,
@@ -10667,13 +10692,7 @@ export default [
     "r": 4,
     "asin": "B08RBDF9GH",
     "reviews": 120,
-    "deals": {
-      "amazon": {
-        "price": 124.44,
-        "url": "https://www.amazon.com/dp/B08RBDF9GH?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/91AAJgtUCKL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/91JY3KErjdL._AC_SL1500_.jpg",
@@ -10690,7 +10709,9 @@ export default [
     "wifi": "None",
     "ff": "ATX",
     "value": 72,
-    "bench": 63
+    "bench": 63,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20237,
@@ -10705,7 +10726,7 @@ export default [
     "reviews": 114,
     "deals": {
       "amazon": {
-        "price": 363.68,
+        "price": 345,
         "url": "https://www.amazon.com/dp/B0DGWRK1PN?tag=tiereduptech-20",
         "inStock": true
       },
@@ -10722,7 +10743,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445831548556914003983745",
@@ -10768,7 +10790,7 @@ export default [
     "reviews": 114,
     "deals": {
       "amazon": {
-        "price": 151.88,
+        "price": 183.99,
         "url": "https://www.amazon.com/dp/B0DG4FK9HP?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10802,13 +10824,7 @@ export default [
     "r": 4.2,
     "asin": "B0B6Q4X5NF",
     "reviews": 108,
-    "deals": {
-      "amazon": {
-        "price": 699.99,
-        "url": "https://www.amazon.com/dp/B0B6Q4X5NF?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/814hUtYXsTL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81jukd6bX+L._AC_SL1500_.jpg",
@@ -10825,7 +10841,9 @@ export default [
     "ff": "E-ATX",
     "wifi": "None",
     "value": 0,
-    "bench": 91
+    "bench": 91,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20240,
@@ -10887,7 +10905,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-185-07.png",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.5
+        "matchScore": 0.5,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -10919,11 +10938,6 @@ export default [
     "asin": "B0CTTVFWHM",
     "reviews": 103,
     "deals": {
-      "amazon": {
-        "price": 281.31,
-        "url": "https://www.amazon.com/dp/B0CTTVFWHM?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458314276444262477737494",
         "price": 348.54,
@@ -10932,7 +10946,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.646Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 5,
@@ -10951,7 +10966,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 7",
     "value": 22,
-    "bench": 87
+    "bench": 87,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20243,
@@ -11077,7 +11094,7 @@ export default [
     "reviews": 90,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 189.99,
         "url": "https://www.amazon.com/dp/B0DQNY8GCD?tag=tiereduptech-20",
         "inStock": true
       }
@@ -11131,7 +11148,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445835264071978261618615",
@@ -11230,7 +11248,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-459-05.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.71
+        "matchScore": 0.71,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -11276,7 +11295,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.457Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -11330,7 +11350,9 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 81,
-    "bench": 71
+    "bench": 71,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20252,
@@ -11358,7 +11380,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 260.99,
@@ -11410,7 +11433,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -11514,7 +11538,7 @@ export default [
     "reviews": 63,
     "deals": {
       "amazon": {
-        "price": 99.99,
+        "price": 119.79,
         "url": "https://www.amazon.com/dp/B0D3TYXFV7?tag=tiereduptech-20",
         "inStock": true
       },
@@ -11526,7 +11550,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.369Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 144.97,
@@ -11614,7 +11639,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 221.99,
@@ -11689,7 +11715,7 @@ export default [
     "reviews": 63,
     "deals": {
       "amazon": {
-        "price": 199.99,
+        "price": 236.99,
         "url": "https://www.amazon.com/dp/B0FC92LJ8R?tag=tiereduptech-20",
         "inStock": true
       },
@@ -11701,7 +11727,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.745Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 233.49,
@@ -11849,13 +11876,7 @@ export default [
     "r": 4.1,
     "asin": "B0CFWL42ZG",
     "reviews": 54,
-    "deals": {
-      "amazon": {
-        "price": 154.88,
-        "url": "https://www.amazon.com/dp/B0CFWL42ZG?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81BhSjJLjaL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/91oTry5wejL._AC_SL1500_.jpg",
@@ -11872,7 +11893,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 47,
-    "bench": 86
+    "bench": 86,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20265,
@@ -11900,7 +11923,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 242.47,
@@ -11940,7 +11964,7 @@ export default [
     "reviews": 59,
     "deals": {
       "amazon": {
-        "price": 149.99,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DQB3RC4H?tag=tiereduptech-20",
         "inStock": true
       },
@@ -11952,7 +11976,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 183.49,
@@ -12000,17 +12025,6 @@ export default [
         "price": 260.34,
         "url": "https://www.amazon.com/dp/B0D66D6GW9?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837609205509310696761",
-        "name": "ASUS TUF Gaming Z890-PRO WiFi Motherboard & Intel Core Ultra 5 245K CPU Comb, Z890 LGA 1851 ATX,, Advanced AI PC-Ready, 16+1+2+1 Stages, DDR5,...",
-        "price": 719.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837609205509310696761&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-z890-pro-wifi-ultra-5-245k-motherboards-intel-intel-z890%2Fp%2F1JW-000C-01B95%3Fitem%3D9SIBP4YKU26046",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2603230NP9WKAD.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-15T02:34:16.508Z",
-        "matchMethod": "remediate:strict-token",
-        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -12029,7 +12043,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 14,
-    "bench": 85
+    "bench": 85,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20268,
@@ -12056,7 +12071,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.987Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -12090,7 +12106,7 @@ export default [
     "reviews": 50,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 311.62,
         "url": "https://www.amazon.com/dp/B0BJF1H163?tag=tiereduptech-20",
         "inStock": true
       }
@@ -12129,17 +12145,6 @@ export default [
         "price": 1049.99,
         "url": "https://www.amazon.com/dp/B0F8PSWNMV?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838704951083358413783",
-        "name": "ASUS ROG CROSSHAIR X870E EXTREME Motherboard & AMD Ryzen 5 9600X CPU Combo, AMD AM5 E-ATX Gaming - 20+2+2 Power Stages, DDR5, PCIe 5.0, 5x M.2,...",
-        "price": 1859.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838704951083358413783&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-crosshair-x870e-extreme-r5-9600x-extended-atx-motherboards-amd-amd-x870e-am5%2Fp%2F2MG-000B-00867%3Fitem%3D9SIBP4YKU26842",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2603230SPZKK64.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-15T02:34:16.508Z",
-        "matchMethod": "remediate:strict-token",
-        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -12158,7 +12163,8 @@ export default [
     "ff": "E-ATX",
     "wifi": "None",
     "value": 0,
-    "bench": 92
+    "bench": 92,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20271,
@@ -12171,13 +12177,7 @@ export default [
     "r": 4.1,
     "asin": "B0C953W5VM",
     "reviews": 47,
-    "deals": {
-      "amazon": {
-        "price": 110,
-        "url": "https://www.amazon.com/dp/B0C953W5VM?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/918kjsMHr5L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/91DyZEmpFVL._AC_SL1500_.jpg",
@@ -12194,7 +12194,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 67,
-    "bench": 69
+    "bench": 69,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20272,
@@ -12242,13 +12244,7 @@ export default [
     "r": 4.6,
     "asin": "B0F5DHXNSB",
     "reviews": 45,
-    "deals": {
-      "amazon": {
-        "price": 349.99,
-        "url": "https://www.amazon.com/dp/B0F5DHXNSB?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/61pGiQYUdKL._AC_SL1080_.jpg",
       "https://m.media-amazon.com/images/I/71Wb4NHE1EL._AC_SL1500_.jpg",
@@ -12264,7 +12260,9 @@ export default [
     "wifi": "WiFi",
     "value": 4,
     "bundle": true,
-    "bench": 75
+    "bench": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20274,
@@ -12367,7 +12365,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-616-01.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.56
+        "matchScore": 0.56,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -12450,7 +12449,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 131.49,
@@ -12501,7 +12501,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445833245843826349031740",
@@ -12556,11 +12557,6 @@ export default [
     "asin": "B0BVZJTX1G",
     "reviews": 40,
     "deals": {
-      "amazon": {
-        "price": 315.85,
-        "url": "https://www.amazon.com/dp/B0BVZJTX1G?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIC3DRKN75708",
         "price": 239.54,
@@ -12569,7 +12565,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-596-06.png",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.73
+        "matchScore": 0.73,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -12587,7 +12584,9 @@ export default [
     "ff": "Mini-ITX",
     "wifi": "WiFi",
     "value": 15,
-    "bench": 69
+    "bench": 69,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20281,
@@ -12601,11 +12600,6 @@ export default [
     "asin": "B0CV9BTY7B",
     "reviews": 37,
     "deals": {
-      "amazon": {
-        "price": 65.71,
-        "url": "https://www.amazon.com/dp/B0CV9BTY7B?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458316315031150966271675",
         "price": 284.18,
@@ -12614,7 +12608,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.824Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -12632,7 +12627,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 6",
     "value": 57,
-    "bench": 64
+    "bench": 64,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20282,
@@ -12660,7 +12657,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 296.99,
@@ -12712,7 +12710,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-615-01.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.61
+        "matchScore": 0.61,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -12757,7 +12756,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.364Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 221.02,
@@ -12804,16 +12804,6 @@ export default [
         "price": 168.12,
         "url": "https://www.amazon.com/dp/B0F25MB8H2?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458369623780278149570",
-        "price": 367,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458369623780278149570&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-b650e-max-gaming-wifi-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813119735%3Fitem%3D9SIBP4YKW14743",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-735-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.540Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -12831,7 +12821,10 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 40,
-    "bench": 72
+    "bench": 72,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20286,
@@ -12846,7 +12839,7 @@ export default [
     "reviews": 36,
     "deals": {
       "amazon": {
-        "price": 361.99,
+        "price": 339.95,
         "url": "https://www.amazon.com/dp/B0DJPTRFN6?tag=tiereduptech-20",
         "inStock": true
       },
@@ -12858,7 +12851,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 392.49,
@@ -12921,7 +12915,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -13039,7 +13034,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 11,
@@ -13107,7 +13103,7 @@ export default [
     "reviews": 32,
     "deals": {
       "amazon": {
-        "price": 142.49,
+        "price": 189.99,
         "url": "https://www.amazon.com/dp/B0F6H6QQVM?tag=tiereduptech-20",
         "inStock": true
       },
@@ -13120,7 +13116,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 10,
@@ -13153,13 +13150,7 @@ export default [
     "r": 4.1,
     "asin": "B0CTP26DB1",
     "reviews": 32,
-    "deals": {
-      "amazon": {
-        "price": 88.44,
-        "url": "https://www.amazon.com/dp/B0CTP26DB1?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/91BKrs3qvkL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/91VDAnMWQOL._AC_SL1500_.jpg",
@@ -13175,7 +13166,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 100,
-    "bench": 69
+    "bench": 69,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20294,
@@ -13350,7 +13343,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445836975818745100032353",
@@ -13433,7 +13427,7 @@ export default [
     "reviews": 28,
     "deals": {
       "amazon": {
-        "price": 152.99,
+        "price": 172.99,
         "url": "https://www.amazon.com/dp/B0DQBJ64KH?tag=tiereduptech-20",
         "inStock": true
       },
@@ -13446,7 +13440,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445839831627298918548742",
@@ -13499,13 +13494,7 @@ export default [
     "r": 4,
     "asin": "B0DKHV68LY",
     "reviews": 29,
-    "deals": {
-      "amazon": {
-        "price": 109.99,
-        "url": "https://www.amazon.com/dp/B0DKHV68LY?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "discount": 40,
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81+n5nSNHeL._AC_SL1500_.jpg",
@@ -13523,7 +13512,9 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 81,
-    "bench": 63
+    "bench": 63,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20302,
@@ -13574,7 +13565,7 @@ export default [
     "reviews": 28,
     "deals": {
       "amazon": {
-        "price": 129.99,
+        "price": 159.99,
         "url": "https://www.amazon.com/dp/B0FBTFCFMD?tag=tiereduptech-20",
         "inStock": true
       },
@@ -13621,17 +13612,6 @@ export default [
         "price": 100.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6612913&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6612913.p%3FskuId%3D6612913",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838495458978076797783",
-        "price": 205.99,
-        "saleprice": 189.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838495458978076797783&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-b840-plus-wifi-atx-motherboard-amd-b840-am5%2Fp%2FN82E16813119707%3Fitem%3DN82E16813119707",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-707-05.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.771Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       }
     },
     "discount": 37,
@@ -13651,7 +13631,10 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 75,
-    "bench": 68
+    "bench": 68,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20305,
@@ -13737,7 +13720,7 @@ export default [
     "reviews": 27,
     "deals": {
       "amazon": {
-        "price": 399.99,
+        "price": 658.6,
         "url": "https://www.amazon.com/dp/B0DZF28PL4?tag=tiereduptech-20",
         "inStock": true
       },
@@ -13749,7 +13732,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.836Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -13793,7 +13777,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-228-04.png",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.5
+        "matchScore": 0.5,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -13824,13 +13809,7 @@ export default [
     "r": 4.8,
     "asin": "B09GLD6FPY",
     "reviews": 27,
-    "deals": {
-      "amazon": {
-        "price": 299.99,
-        "url": "https://www.amazon.com/dp/B09GLD6FPY?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/9137cTLe17L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81-QOO+jMXL._AC_SL1500_.jpg",
@@ -13846,7 +13825,9 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 21,
-    "bench": 73
+    "bench": 73,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20310,
@@ -13879,7 +13860,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 5,
@@ -13899,7 +13881,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 7",
     "value": 1,
-    "bench": 95
+    "bench": 95,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20311,
@@ -13912,13 +13896,7 @@ export default [
     "r": 4,
     "asin": "B0D8STYFCN",
     "reviews": 26,
-    "deals": {
-      "amazon": {
-        "price": 129.88,
-        "url": "https://www.amazon.com/dp/B0D8STYFCN?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/810gM6rV4ML._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81v8RbTxrBL._AC_SL1500_.jpg",
@@ -13933,7 +13911,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 58,
-    "bench": 76
+    "bench": 76,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20312,
@@ -13961,7 +13941,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -13995,7 +13976,7 @@ export default [
     "reviews": 25,
     "deals": {
       "amazon": {
-        "price": 237.49,
+        "price": 263.37,
         "url": "https://www.amazon.com/dp/B0FC9CZTXL?tag=tiereduptech-20",
         "inStock": true
       },
@@ -14012,7 +13993,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.369Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 289.99,
@@ -14063,7 +14045,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 379.59,
@@ -14151,7 +14134,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 226.99,
@@ -14204,7 +14188,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "4458311942266679894612604",
@@ -14252,7 +14237,7 @@ export default [
     "reviews": 22,
     "deals": {
       "amazon": {
-        "price": 160.1,
+        "price": 267.64,
         "url": "https://www.amazon.com/dp/B0DY9HDDRQ?tag=tiereduptech-20",
         "inStock": true
       },
@@ -14270,7 +14255,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 249.99,
@@ -14328,7 +14314,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 209.99,
@@ -14352,7 +14339,9 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 31,
-    "bench": 80
+    "bench": 80,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20320,
@@ -14367,7 +14356,7 @@ export default [
     "reviews": 21,
     "deals": {
       "amazon": {
-        "price": 269.99,
+        "price": 337.91,
         "url": "https://www.amazon.com/dp/B0DQNRGMWH?tag=tiereduptech-20",
         "inStock": true
       },
@@ -14496,7 +14485,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "4458315829227798642213354",
@@ -14539,13 +14529,7 @@ export default [
     "r": 4,
     "asin": "B0C2ZWVHDF",
     "reviews": 20,
-    "deals": {
-      "amazon": {
-        "price": 149.88,
-        "url": "https://www.amazon.com/dp/B0C2ZWVHDF?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "discount": 25,
     "additionalImages": [
       "https://m.media-amazon.com/images/I/91MvF4TFtSL._AC_SL1500_.jpg",
@@ -14562,7 +14546,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 47,
-    "bench": 83
+    "bench": 83,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20325,
@@ -14645,13 +14631,7 @@ export default [
     "r": 4.6,
     "asin": "B0FH626TJ1",
     "reviews": 19,
-    "deals": {
-      "amazon": {
-        "price": 66.51,
-        "url": "https://www.amazon.com/dp/B0FH626TJ1?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81v0x-eZL8L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81wWy1hU3tL._AC_SL1500_.jpg",
@@ -14668,7 +14648,9 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 69,
-    "bench": 67
+    "bench": 67,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20328,
@@ -14735,7 +14717,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.706Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 222.99,
@@ -14808,13 +14791,7 @@ export default [
     "r": 4,
     "asin": "B0C1FYS2BF",
     "reviews": 15,
-    "deals": {
-      "amazon": {
-        "price": 83.59,
-        "url": "https://www.amazon.com/dp/B0C1FYS2BF?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "discount": 8,
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81QbTpnkCUL._AC_SL1500_.jpg",
@@ -14830,7 +14807,9 @@ export default [
     "ff": "Mini-ITX",
     "wifi": "None",
     "value": 100,
-    "bench": 22
+    "bench": 22,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20332,
@@ -14857,7 +14836,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-203-03.png",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.62
+        "matchScore": 0.62,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -14890,7 +14870,7 @@ export default [
     "reviews": 14,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0FDXJZH66?tag=tiereduptech-20",
         "inStock": true
       }
@@ -14937,7 +14917,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -14982,7 +14963,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 161.49,
@@ -15098,7 +15080,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 164.49,
@@ -15142,16 +15125,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0DT56XZYK?tag=tiereduptech-20",
         "inStock": true
       },
-      "newegg": {
-        "sku": "445836880419169564376970",
-        "price": 319.79,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836880419169564376970&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-b860m-mortar-wifi-micro-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813144701%3Fitem%3D9SIC62TKWE7170",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-701-14.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.745Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
-      },
       "msi": {
         "price": 169.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2655&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMAG-B860M-MORTAR-WIFI&intsrc=APIG_16410",
@@ -15174,7 +15147,8 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi",
     "value": 32,
-    "bench": 77
+    "bench": 77,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20340,
@@ -15202,7 +15176,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 169.99,
@@ -15241,7 +15216,7 @@ export default [
     "reviews": 13,
     "deals": {
       "amazon": {
-        "price": 169.99,
+        "price": 190.28,
         "url": "https://www.amazon.com/dp/B0DQLGCVN3?tag=tiereduptech-20",
         "inStock": true
       },
@@ -15253,7 +15228,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-557-01.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 16,
@@ -15354,13 +15330,7 @@ export default [
     "r": 3.3,
     "asin": "B0CJ3VP1GG",
     "reviews": 13,
-    "deals": {
-      "amazon": {
-        "price": 139.99,
-        "url": "https://www.amazon.com/dp/B0CJ3VP1GG?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "discount": 6,
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81YoLiJImFL._AC_SL1500_.jpg",
@@ -15378,7 +15348,9 @@ export default [
     "wifi": "WiFi",
     "ff": "ATX",
     "value": 36,
-    "bench": 70
+    "bench": 70,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20345,
@@ -15391,13 +15363,7 @@ export default [
     "r": 3.7,
     "asin": "B0D2ZB6362",
     "reviews": 13,
-    "deals": {
-      "amazon": {
-        "price": 188.84,
-        "url": "https://www.amazon.com/dp/B0D2ZB6362?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81+yCyxFC9L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81kma9hW1RL._AC_SL1500_.jpg",
@@ -15413,7 +15379,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 30,
-    "bench": 78
+    "bench": 78,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20346,
@@ -15441,7 +15409,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 29,
@@ -15523,7 +15492,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-553-01.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.61
+        "matchScore": 0.61,
+        "sellerClass": "official"
       }
     },
     "additionalImages": [
@@ -15541,7 +15511,9 @@ export default [
     "wifi": "WiFi 7",
     "ff": "ATX",
     "value": 17,
-    "bench": 88
+    "bench": 88,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20349,
@@ -15556,7 +15528,7 @@ export default [
     "reviews": 12,
     "deals": {
       "amazon": {
-        "price": 170.99,
+        "price": 189.99,
         "url": "https://www.amazon.com/dp/B0CT3HDPPQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -15588,13 +15560,7 @@ export default [
     "r": 4,
     "asin": "B0C2JKZSXD",
     "reviews": 12,
-    "deals": {
-      "amazon": {
-        "price": 159.99,
-        "url": "https://www.amazon.com/dp/B0C2JKZSXD?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81WqeJqo5CL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/8112N3qul-L._AC_SL1500_.jpg",
@@ -15611,7 +15577,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 6E",
     "value": 39,
-    "bench": 80
+    "bench": 80,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20351,
@@ -15638,7 +15606,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AGBAS2510160K1NML87.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.58
+        "matchScore": 0.58,
+        "sellerClass": "marketplace"
       }
     },
     "discount": 17,
@@ -15670,13 +15639,7 @@ export default [
     "r": 4.4,
     "asin": "B0F5D38HCZ",
     "reviews": 12,
-    "deals": {
-      "amazon": {
-        "price": 379.99,
-        "url": "https://www.amazon.com/dp/B0F5D38HCZ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/61DmxPUUWlL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/61A1eZmQSkL._AC_SL1080_.jpg",
@@ -15690,7 +15653,7 @@ export default [
     "bundle": true,
     "bench": 31,
     "needsReview": true,
-    "quarantinedAt": "2026-06-27"
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20353,
@@ -15739,13 +15702,7 @@ export default [
     "r": 5,
     "asin": "B0F5TGYRLP",
     "reviews": 10,
-    "deals": {
-      "amazon": {
-        "price": 218.44,
-        "url": "https://www.amazon.com/dp/B0F5TGYRLP?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "discount": 25,
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81SssZnwkSL._AC_SL1500_.jpg",
@@ -15761,7 +15718,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 38,
-    "bench": 86
+    "bench": 86,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20355,
@@ -15776,7 +15735,7 @@ export default [
     "reviews": 11,
     "deals": {
       "amazon": {
-        "price": 995,
+        "price": 1138.49,
         "url": "https://www.amazon.com/dp/B0BV2F46GC?tag=tiereduptech-20",
         "inStock": true
       },
@@ -15794,7 +15753,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 1099.99,
@@ -15872,16 +15832,6 @@ export default [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B09XJQHN2H?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838968904780685606406",
-        "price": 207.1,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838968904780685606406&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-pro-h610m-ct-d4-csm-micro-atx-intel-motherboard-intel-h610-lga-1700%2Fp%2FN82E16813119570%3Fitem%3D9SIAD6HHZW1837",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-570-V01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:03.821Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -15900,7 +15850,8 @@ export default [
     "wifi": "None",
     "ff": "mATX",
     "value": 83,
-    "bench": 42
+    "bench": 42,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20358,
@@ -15927,7 +15878,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.746Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 233.49,
@@ -16041,7 +15993,7 @@ export default [
     "reviews": 9,
     "deals": {
       "amazon": {
-        "price": 399.99,
+        "price": 469.99,
         "url": "https://www.amazon.com/dp/B0F9FR8M83?tag=tiereduptech-20",
         "inStock": true
       }
@@ -16088,7 +16040,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2505240C2WBDCB.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.82
+        "matchScore": 0.82,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -16133,7 +16086,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AET8D2605071EG3P4D3.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.86
+        "matchScore": 0.86,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -16179,7 +16133,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 144.99,
@@ -16218,7 +16173,7 @@ export default [
     "reviews": 9,
     "deals": {
       "amazon": {
-        "price": 326.84,
+        "price": 377.13,
         "url": "https://www.amazon.com/dp/B0FTPDCM57?tag=tiereduptech-20",
         "inStock": true
       },
@@ -16230,7 +16185,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -16264,7 +16220,7 @@ export default [
     "reviews": 8,
     "deals": {
       "amazon": {
-        "price": 195.29,
+        "price": 183,
         "url": "https://www.amazon.com/dp/B0DQB8VZ2R?tag=tiereduptech-20",
         "inStock": true
       },
@@ -16277,7 +16233,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 223.99,
@@ -16326,16 +16283,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0DRWH2CG2?tag=tiereduptech-20",
         "inStock": true
       },
-      "newegg": {
-        "sku": "4458311402299640435281306",
-        "price": 299.79,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311402299640435281306&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-b860m-gaming-plus-wifi-micro-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813144700%3Fitem%3D9SIC62TKWE7147",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-700-06.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.745Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
-      },
       "msi": {
         "price": 139,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2467&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FB860M-GAMING-PLUS-WIFI&intsrc=APIG_16410",
@@ -16358,7 +16305,10 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi",
     "value": 39,
-    "bench": 78
+    "bench": 78,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20368,
@@ -16456,7 +16406,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.207Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -16502,7 +16453,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.158Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -16684,7 +16636,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.372Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 193.22,
@@ -16727,16 +16680,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0DM4C1MM2?tag=tiereduptech-20",
         "inStock": true
       },
-      "newegg": {
-        "sku": "445832460479602619025180",
-        "price": 829.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832460479602619025180&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-meg-z890-unify-x-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813144683%3Fitem%3D9SIBP4YKVW2018",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-683-20.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.539Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
-      },
       "newegg_openbox": {
         "sku": "4458316398288116049795520",
         "price": 699.99,
@@ -16769,7 +16712,8 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 0,
-    "bench": 79
+    "bench": 79,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20378,
@@ -16831,7 +16775,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.634Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 169.99,
@@ -16883,7 +16828,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C3DRS2603070WKC5UEB.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.58
+        "matchScore": 0.58,
+        "sellerClass": "marketplace"
       }
     },
     "additionalImages": [
@@ -16964,7 +16910,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 171.99,
@@ -17044,7 +16991,7 @@ export default [
     "reviews": 5,
     "deals": {
       "amazon": {
-        "price": 150,
+        "price": 199.99,
         "url": "https://www.amazon.com/dp/B083TZK14Z?tag=tiereduptech-20",
         "inStock": true
       },
@@ -17062,7 +17009,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 6,
@@ -17096,7 +17044,7 @@ export default [
     "reviews": 5,
     "deals": {
       "amazon": {
-        "price": 117.27,
+        "price": 109.95,
         "url": "https://www.amazon.com/dp/B0DRRJ6177?tag=tiereduptech-20",
         "inStock": true
       },
@@ -17108,7 +17056,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.518Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 6,
@@ -17142,11 +17091,6 @@ export default [
     "asin": "B0BSYFV5NL",
     "reviews": 5,
     "deals": {
-      "amazon": {
-        "price": 129.99,
-        "url": "https://www.amazon.com/dp/B0BSYFV5NL?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458311689305419135439240",
         "name": "GIGABYTE Z790 EAGLE AX LGA 1700 Intel Z790 ATX Motherboard with DDR5, M.2, PCIe 5.0, USB 3.2 Gen2X2 Type-C, Intel Wi-Fi 6E, 2.5GbE LAN, Q-Flash...",
@@ -17157,12 +17101,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 279.19,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11422722&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-z790-ud-ac-socket-1700-usb-3-2-gen2-intel-motherboard-black%2FJ3ZW92V32P&intsrc=APIG_28060",
-        "inStock": true
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -17181,7 +17121,10 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 71,
-    "bench": 80
+    "bench": 80,
+    "bestbuyRemovedComp": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20387,
@@ -17209,7 +17152,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 158.99,
@@ -17297,7 +17241,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "4458316644876068195052663",
@@ -17363,7 +17308,9 @@ export default [
     "wifi": "WiFi 7",
     "ff": "mATX",
     "value": 22,
-    "bench": 90
+    "bench": 90,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20391,
@@ -17378,7 +17325,7 @@ export default [
     "reviews": 4,
     "deals": {
       "amazon": {
-        "price": 199.99,
+        "price": 181.82,
         "url": "https://www.amazon.com/dp/B0DRWGJ5B2?tag=tiereduptech-20",
         "inStock": true
       },
@@ -17390,7 +17337,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 242.88,
@@ -17452,7 +17400,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "4458311708793403285836298",
@@ -17534,7 +17483,7 @@ export default [
     "reviews": 4,
     "deals": {
       "amazon": {
-        "price": 139.87,
+        "price": 178.85,
         "url": "https://www.amazon.com/dp/B0CSKHTY1Y?tag=tiereduptech-20",
         "inStock": true
       }
@@ -17568,13 +17517,7 @@ export default [
     "r": 5,
     "asin": "B0CFS6ZST7",
     "reviews": 4,
-    "deals": {
-      "amazon": {
-        "price": 289.99,
-        "url": "https://www.amazon.com/dp/B0CFS6ZST7?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/91IddAhzH-L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/91YQNFemCaL._AC_SL1500_.jpg",
@@ -17591,7 +17534,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 24,
-    "bench": 86
+    "bench": 86,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20396,
@@ -17751,11 +17696,6 @@ export default [
     "asin": "B0D4TSK2PJ",
     "reviews": 3,
     "deals": {
-      "amazon": {
-        "price": 149.95,
-        "url": "https://www.amazon.com/dp/B0D4TSK2PJ?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16813145486",
         "price": 244.99,
@@ -17764,7 +17704,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-486-01.png",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "discount": 36,
@@ -17833,7 +17774,7 @@ export default [
     "reviews": 3,
     "deals": {
       "amazon": {
-        "price": 349.99,
+        "price": 369.99,
         "url": "https://www.amazon.com/dp/B0FKZSMMQK?tag=tiereduptech-20",
         "inStock": true
       }
@@ -17882,7 +17823,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 289.99,
@@ -17934,7 +17876,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.298Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 430.07,
@@ -18013,7 +17956,7 @@ export default [
     "reviews": 2,
     "deals": {
       "amazon": {
-        "price": 99.99,
+        "price": 122.13,
         "url": "https://www.amazon.com/dp/B0DYQ8NPX1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -18130,7 +18073,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445832867650084324151889",
@@ -18225,7 +18169,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -18307,7 +18252,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-512-01.png",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.8
+        "matchScore": 0.8,
+        "sellerClass": "official"
       }
     },
     "discount": 44,
@@ -18389,7 +18335,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "AM4",
@@ -18428,7 +18375,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.607Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 159.99,
@@ -18521,17 +18469,6 @@ export default [
         "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6528249&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-b650-tomahawk-wifi-socket-am5-amd-b650-atx-ddr5-wi-fi-6e-motherboard-black%2FJ3P7TXG8HS&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838883097069734782334",
-        "name": "MSI MAG B650 TOMAHAWK WIFI AM5 AMD B650 SATA 6Gb/s DDR5 Ryzen 7000 ATX Motherboard",
-        "price": 364.8,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838883097069734782334&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-b650-tomahawk-wifi-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813144557%3Fitem%3D9SIAD6HKKM2425",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-557-08.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-15T02:34:16.508Z",
-        "matchMethod": "remediate:strict-token",
-        "matchScore": 1
       }
     },
     "socket": "AM5",
@@ -18543,7 +18480,8 @@ export default [
     "wifi": "WiFi 6",
     "color": "Black",
     "ff": "ATX",
-    "bench": 78
+    "bench": 78,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20420,
@@ -18571,7 +18509,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "AM5",
@@ -18611,7 +18550,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "AM5",
@@ -18651,7 +18591,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "44583681349671910000113",
@@ -18706,7 +18647,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.646Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "LGA1700",
@@ -18746,7 +18688,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445831194301229569670529",
@@ -18796,7 +18739,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "LGA1851",
@@ -18835,7 +18779,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445832971064703428752423",
@@ -18886,7 +18831,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "AM5",
@@ -18916,17 +18862,6 @@ export default [
         "price": 419.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601434&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601434.p%3FskuId%3D6601434",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458316822646012254123863",
-        "name": "ASUS ROG STRIX X870-F GAMING WIFI AMD X870 ATX motherboard AM5,four M.2 slots,2 USB4 ports,USB 10Gbps Type-C with PD 3.0 up to 30W,AI...",
-        "price": 645.21,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316822646012254123863&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-amd-am5%2Fp%2F2MG-000B-007N4%3Fitem%3D9SIC4RPKRU2500",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS25062805B3O317.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-15T02:34:16.508Z",
-        "matchMethod": "remediate:strict-token",
-        "matchScore": 1
       }
     },
     "socket": "AM5",
@@ -18938,7 +18873,8 @@ export default [
     "color": "Black",
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "bench": 91
+    "bench": 91,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20429,
@@ -18965,7 +18901,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.634Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "LGA1851",
@@ -19005,7 +18942,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "LGA1851",
@@ -19045,7 +18983,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 229.99,
@@ -19135,7 +19074,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445837307446262959603190",
@@ -19191,7 +19131,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 209.99,
@@ -19236,7 +19177,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 99.99,
@@ -19280,7 +19222,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-206-008-01.png",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.61
+        "matchScore": 0.61,
+        "sellerClass": "marketplace"
       }
     },
     "socket": "LGA1851",
@@ -19310,16 +19253,6 @@ export default [
         "price": 349.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629603&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629603.p%3FskuId%3D6629603",
         "inStock": false
-      },
-      "newegg": {
-        "sku": "9SIAD6HKK96634",
-        "price": 711.83,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831652264030464276983&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-n9-z89xt-b1-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813206008%3Fitem%3D9SIAD6HKK96634",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-206-008-01.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.69
       }
     },
     "socket": "LGA1851",
@@ -19331,7 +19264,8 @@ export default [
     "wifi": "WiFi 6",
     "color": "Black",
     "ff": "ATX",
-    "bench": 82
+    "bench": 82,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20438,
@@ -19358,7 +19292,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.615Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "AM5",
@@ -19397,7 +19332,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.205Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "AM5",
@@ -19436,7 +19372,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "AM4",
@@ -19475,7 +19412,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "AM5",
@@ -19515,7 +19453,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 249.99,
@@ -19560,7 +19499,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 299.99,
@@ -19604,7 +19544,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "445839914473418983906474",
@@ -19645,16 +19586,6 @@ export default [
         "price": 194.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12349350&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-b850m-a-wifi-csm-gaming-desktop-motherboard%2FJJGHGPC8ZL&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838606188523721311203",
-        "price": 339.79,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838606188523721311203&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-b850m-plus-wifi7-w-micro-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813119765%3Fitem%3D9SIC62VKWE8446",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-765-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.746Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       }
     },
     "socket": "AM5",
@@ -19666,7 +19597,8 @@ export default [
     "color": "White",
     "ff": "mATX",
     "wifi": "WiFi 7",
-    "bench": 78
+    "bench": 78,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20446,
@@ -19694,7 +19626,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "LGA1851",
@@ -19733,7 +19666,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "AM5",
@@ -19772,7 +19706,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 1299.99,
@@ -19816,7 +19751,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 499.99,
@@ -19860,7 +19796,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 2289.99,
@@ -19905,7 +19842,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "msi": {
         "price": 259.99,
@@ -19933,13 +19871,7 @@ export default [
     "msrp": 154.88,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/81LfBZCmvuL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 154.88,
-        "url": "https://www.amazon.com/dp/B0CFWL42ZG?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "socket": "LGA1700",
     "chipset": "Z790",
     "memType": "DDR5",
@@ -19951,7 +19883,9 @@ export default [
     "used": true,
     "condition": "used",
     "bench": 90,
-    "wifi": "WiFi 6E"
+    "wifi": "WiFi 6E",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20456,
@@ -19991,13 +19925,7 @@ export default [
     "msrp": 109,
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/81u+u4BP5+L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 109,
-        "url": "https://www.amazon.com/dp/B09V6J13ZF?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "socket": "LGA1700",
     "chipset": "Z690",
     "memType": "DDR5",
@@ -20009,7 +19937,9 @@ export default [
     "used": true,
     "condition": "used",
     "bench": 82,
-    "wifi": "WiFi 6E"
+    "wifi": "WiFi 6E",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20459,
@@ -20021,11 +19951,6 @@ export default [
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/91xYf9f0S0L._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "price": 85.3,
-        "url": "https://www.amazon.com/dp/B0DXSX1GXK?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458313252404488844918058",
         "price": 149.99,
@@ -20035,7 +19960,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "LGA1700",
@@ -20051,7 +19977,9 @@ export default [
     "bench": 68,
     "upc": "00197105079007",
     "mpn": "PRIME B760M-A AX",
-    "wifi": "WiFi 6"
+    "wifi": "WiFi 6",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20461,
@@ -20089,13 +20017,7 @@ export default [
     "msrp": 86,
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/611CIWe4IHL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 86,
-        "url": "https://www.amazon.com/dp/B0DF8CPSKZ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "socket": "LGA1700",
     "chipset": "B660",
     "memType": "DDR5",
@@ -20107,7 +20029,9 @@ export default [
     "used": true,
     "condition": "used",
     "bench": 68,
-    "wifi": "WiFi"
+    "wifi": "WiFi",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20465,
@@ -20145,13 +20069,7 @@ export default [
     "msrp": 218.44,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/81ZRDFQt4kL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 218.44,
-        "url": "https://www.amazon.com/dp/B0F5TGYRLP?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "socket": "AM5",
     "chipset": "X870E",
     "memType": "DDR5",
@@ -20163,7 +20081,9 @@ export default [
     "used": true,
     "condition": "used",
     "bench": 100,
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20484,
@@ -20203,13 +20123,7 @@ export default [
     "msrp": 149.88,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/816ESNZ4SpL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 139.99,
-        "url": "https://www.amazon.com/dp/B0CLMJ2RCR?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "socket": "AM5",
     "chipset": "X670E",
     "memType": "DDR5",
@@ -20221,7 +20135,9 @@ export default [
     "used": true,
     "condition": "used",
     "bench": 92,
-    "wifi": "WiFi 6E"
+    "wifi": "WiFi 6E",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20488,
@@ -20232,13 +20148,7 @@ export default [
     "msrp": 139.99,
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/81kDPsjQ2FL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 139.99,
-        "url": "https://www.amazon.com/dp/B0D4VS1Y82?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "socket": "AM5",
     "chipset": "X670",
     "memType": "DDR5",
@@ -20250,7 +20160,9 @@ export default [
     "used": true,
     "condition": "used",
     "bench": 78,
-    "wifi": "WiFi 6E"
+    "wifi": "WiFi 6E",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20491,
@@ -20261,13 +20173,7 @@ export default [
     "msrp": 399.99,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/71sFrF2yfjL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 329.99,
-        "url": "https://www.amazon.com/dp/B0G25HLK8N?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "socket": "AM5",
     "chipset": "B850",
     "memType": "DDR5",
@@ -20277,7 +20183,9 @@ export default [
     "sata": 4,
     "ff": "ATX",
     "bench": 82,
-    "wifi": "WiFi 6E"
+    "wifi": "WiFi 6E",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20492,
@@ -20343,11 +20251,6 @@ export default [
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/81r6gJjhzHL._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "price": 109.99,
-        "url": "https://www.amazon.com/dp/B0CM2VZBDL?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445839497739530175839081",
         "name": "MSI PRO B650M-A WIFI AM5 AMD B650 SATA 6Gb/s DDR5 Ryzen 7000 Micro ATX Motherboard",
@@ -20357,7 +20260,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 174.99,
@@ -20390,11 +20294,6 @@ export default [
     "r": 4.5,
     "img": "https://m.media-amazon.com/images/I/71i6SdfjnTL._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "price": 99.99,
-        "url": "https://www.amazon.com/dp/B0DK7XP67K?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445835125406598532254578",
         "price": 159.99,
@@ -20403,7 +20302,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "AM5",
@@ -20419,7 +20319,9 @@ export default [
     "bench": 73,
     "upc": "00889523041376",
     "mpn": "B650 GAMING X AX V2",
-    "wifi": "WiFi 6E"
+    "wifi": "WiFi 6E",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20502,
@@ -20435,16 +20337,6 @@ export default [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0DYS8Z557?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458312784492911107159715",
-        "price": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312784492911107159715&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b650m-c-v3-micro-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813145512%3Fitem%3DN82E16813145512",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-512-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
-        "matchScore": 1
       },
       "newegg_openbox": {
         "sku": "4458311018540330889672673",
@@ -20471,7 +20363,8 @@ export default [
     "bench": 71,
     "upc": "00889523044193",
     "mpn": "B650M C V3-Y1",
-    "wifi": "None"
+    "wifi": "None",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20505,
@@ -20483,11 +20376,6 @@ export default [
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/710hyHWebnL._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "price": 179.99,
-        "url": "https://www.amazon.com/dp/B083SRFQPH?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIBTK0KAS0386",
         "price": 231.78,
@@ -20496,7 +20384,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-197-01.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.71
+        "matchScore": 0.71,
+        "sellerClass": "marketplace"
       }
     },
     "socket": "AM4",
@@ -20510,7 +20399,9 @@ export default [
     "used": true,
     "condition": "used",
     "bench": 71,
-    "wifi": "WiFi"
+    "wifi": "WiFi",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20506,
@@ -20521,13 +20412,7 @@ export default [
     "msrp": 134.97,
     "r": 1,
     "img": "https://m.media-amazon.com/images/I/811la5BES3L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 114.97,
-        "url": "https://www.amazon.com/dp/B0977LNWZM?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "socket": "AM4",
     "chipset": "X570",
     "memType": "DDR4",
@@ -20539,7 +20424,9 @@ export default [
     "used": true,
     "condition": "used",
     "bench": 51,
-    "wifi": "None"
+    "wifi": "None",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20507,
@@ -20551,11 +20438,6 @@ export default [
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/71P3pZUi50L._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "price": 399.99,
-        "url": "https://www.amazon.com/dp/B0GJCTWDDL?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458310718685370055761069",
         "price": 149.99,
@@ -20565,7 +20447,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "newegg_openbox": {
         "sku": "4458316157051897796257477",
@@ -20590,7 +20473,11 @@ export default [
     "bench": 62,
     "upc": "00195553338516",
     "mpn": "TUF GAMING B550-PLUS WIFI II",
-    "wifi": "WiFi 6"
+    "wifi": "WiFi 6",
+    "amazonRemovedAnomaly": "2026-06-28",
+    "amazonBundleAsin": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20508,
@@ -20602,11 +20489,6 @@ export default [
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/51ZUnFrLVVL._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "price": 79.99,
-        "url": "https://www.amazon.com/dp/B0CJH7J89Z?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16813119580",
         "price": 119.99,
@@ -20615,12 +20497,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-580-V01.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 238.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12645124&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnewegg-combo-asus-prime-b550m-a-ac-amd-ryzen-5-5500-team-group-16gb%2FJ3R8FKJQY2&intsrc=APIG_28060",
-        "inStock": true
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "socket": "AM4",
@@ -20634,7 +20512,8 @@ export default [
     "used": true,
     "condition": "used",
     "bench": 53,
-    "wifi": "WiFi 6"
+    "wifi": "WiFi 6",
+    "bestbuyRemovedComp": "2026-06-28"
   },
   {
     "id": 20510,
@@ -20645,13 +20524,7 @@ export default [
     "msrp": 89.88,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/91beeVTo4pL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 84.99,
-        "url": "https://www.amazon.com/dp/B091ML54YP?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "socket": "AM4",
     "chipset": "B550",
     "memType": "DDR4",
@@ -20663,7 +20536,9 @@ export default [
     "used": true,
     "condition": "used",
     "bench": 58,
-    "wifi": "WiFi"
+    "wifi": "WiFi",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 20511,
@@ -20688,7 +20563,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-567-05.jpg",
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
-        "matchScore": 0.95
+        "matchScore": 0.95,
+        "sellerClass": "official"
       }
     },
     "socket": "AM4",
@@ -20767,7 +20643,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/91ce9mEOmLL._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "price": 59.99,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B08F7HPJ4F?tag=tiereduptech-20",
         "inStock": true
       }
@@ -20867,21 +20743,16 @@ export default [
     "msrp": 128.38,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/61+u8uf+bNL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DF5WNFJ2",
-        "url": "https://www.amazon.com/dp/B0DF5WNFJ2?tag=tiereduptech-20",
-        "price": 116.8,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T13:17:14.411Z",
     "source": "amazon-discovery",
     "socket": "LGA1700",
     "chipset": "Z790",
     "ff": "ATX",
     "memType": "DDR5",
-    "wifi": "WiFi 6E"
+    "wifi": "WiFi 6E",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100382,
@@ -21002,7 +20873,9 @@ export default [
     "socket": "LGA1700",
     "ff": "mATX",
     "memType": "DDR5",
-    "wifi": "WiFi"
+    "wifi": "WiFi",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100387,
@@ -21064,7 +20937,7 @@ export default [
       "amazon": {
         "asin": "B0DHCQ1MPZ",
         "url": "https://www.amazon.com/dp/B0DHCQ1MPZ?tag=tiereduptech-20",
-        "price": 282.98,
+        "price": 249.98,
         "inStock": true
       }
     },
@@ -21186,12 +21059,6 @@ export default [
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/81+RJyfYdLL._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "asin": "B07SY8CMTX",
-        "url": "https://www.amazon.com/dp/B07SY8CMTX?tag=tiereduptech-20",
-        "price": 85.2,
-        "inStock": true
-      },
       "bestbuy": {
         "price": 84.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013387&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-b450m-acr2-0-micro-atx-amd-motherboard%2FC34K264T9Y&intsrc=APIG_28060",
@@ -21239,12 +21106,6 @@ export default [
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/81CXTSqmnWL._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "asin": "B0D14FH6Y6",
-        "url": "https://www.amazon.com/dp/B0D14FH6Y6?tag=tiereduptech-20",
-        "price": 69.99,
-        "inStock": true
-      },
       "bestbuy": {
         "price": 119.49,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013042&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-h610m-a-d4-csm-desktop-motherboard%2FJJG7VHVFC4&intsrc=APIG_28060",
@@ -21321,7 +21182,7 @@ export default [
       "amazon": {
         "asin": "B09Q6HXYWQ",
         "url": "https://www.amazon.com/dp/B09Q6HXYWQ?tag=tiereduptech-20",
-        "price": 135.09,
+        "price": 123.78,
         "inStock": true
       }
     },
@@ -21345,7 +21206,7 @@ export default [
       "amazon": {
         "asin": "B09322DLZS",
         "url": "https://www.amazon.com/dp/B09322DLZS?tag=tiereduptech-20",
-        "price": 164.99,
+        "price": 155.99,
         "inStock": true
       }
     },
@@ -21368,7 +21229,7 @@ export default [
       "amazon": {
         "asin": "B0G149KSG7",
         "url": "https://www.amazon.com/dp/B0G149KSG7?tag=tiereduptech-20",
-        "price": 89.09,
+        "price": 111.36,
         "inStock": true
       }
     },
@@ -21389,21 +21250,16 @@ export default [
     "msrp": 199.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/81ZFlUz0rTL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B09NWDQ1TH",
-        "url": "https://www.amazon.com/dp/B09NWDQ1TH?tag=tiereduptech-20",
-        "price": 149.95,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.776Z",
     "source": "amazon-discovery",
     "socket": "LGA1700",
     "chipset": "B660",
     "ff": "ATX",
     "memType": "DDR4",
-    "wifi": "None"
+    "wifi": "None",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100735,

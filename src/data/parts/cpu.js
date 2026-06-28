@@ -29,14 +29,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3U3KUZ2294",
-        "price": 639.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833683951097533251217&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-9-9950x%2Fp%2FN82E16819113896%3Fitem%3D9SIC3U3KUZ2294",
+        "sku": "N82E16819113896",
+        "price": 550.99,
+        "saleprice": 519.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834711746780688572955&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-9-9950x%2Fp%2FN82E16819113896%3Fitem%3DN82E16819113896",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-896-01.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC3U3KUZ2294"
       }
     },
     "igpu": true
@@ -76,7 +79,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS25020507L1797F.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "igpu": true
@@ -104,19 +108,22 @@ export default [
     "bench": 53,
     "deals": {
       "amazon": {
-        "price": 259.23,
+        "price": 294.98,
         "url": "https://www.amazon.com/dp/B0D6NMDNNX?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3U3KNJ4876",
-        "price": 264.97,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310659768796949745151&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-9700x-ryzen-5-9000-series-granite-ridge-socket-am5-processors-desktops%2Fp%2F274-000M-00249%3Fitem%3D9SIC3U3KNJ4876",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C3U3S2511250KRRIDA7.jpg",
+        "sku": "N82E16819113843",
+        "price": 359,
+        "saleprice": 339,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583877074514623128348&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-9000-series-ryzen-7-9700x-granite-ridge-socket-am5-desktop-cpu-processor%2Fp%2FN82E16819113843%3Fitem%3DN82E16819113843",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-843-09.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC3U3KNJ4876"
       }
     },
     "igpu": true
@@ -156,7 +163,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-844-05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "igpu": true
@@ -190,14 +198,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3U3KN47169",
-        "price": 759.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831367371052301521199&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-9-9950x3d-ryzen-9-9000-series-granite-ridge-zen-5-socket-am5-processors-desktops%2Fp%2F274-000M-00240%3Fitem%3D9SIC3U3KN47169",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS25092205Y6C58E.jpg",
+        "sku": "N82E16819113884",
+        "price": 699,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316216955925978166093&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-9-9000-series-ryzen-9-9950x3d-granite-ridge-socket-am5-desktop-cpu-processor%2Fp%2FN82E16819113884%3Fitem%3DN82E16819113884",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-884-01.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC3U3KN47169"
       }
     },
     "igpu": true
@@ -231,14 +241,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3U3KN47145",
-        "price": 586.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833988596161281102176&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-9-9900x3d-ryzen-9-9000-series-granite-ridge-zen-5-socket-am5-processors-desktops%2Fp%2F274-000M-00241%3Fitem%3D9SIC3U3KN47145",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2509220GXWCE66.jpg",
+        "sku": "N82E16819113886",
+        "price": 599,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831552058699300246294&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-9-9000-series-ryzen-9-9900x3d-granite-ridge-socket-am5-desktop-cpu-processor%2Fp%2FN82E16819113886%3Fitem%3DN82E16819113886",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-886-01.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC3U3KN47145"
       }
     },
     "igpu": true
@@ -279,7 +291,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS24110809FD6Y5F.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "igpu": true
@@ -321,7 +334,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-811-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     }
   },
@@ -362,7 +376,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-814-03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     }
   },
@@ -403,7 +418,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-815-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     }
   },
@@ -476,7 +492,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-771-09.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     }
   },
@@ -518,7 +535,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-791-03.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     }
   },
@@ -547,7 +565,7 @@ export default [
     "bench": 73,
     "deals": {
       "amazon": {
-        "price": 289.73,
+        "price": 319.37,
         "url": "https://www.amazon.com/dp/B0BBJ59WJ4?tag=tiereduptech-20",
         "inStock": true
       },
@@ -559,7 +577,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-769-02.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     }
   },
@@ -589,7 +608,7 @@ export default [
     "bench": 72,
     "deals": {
       "amazon": {
-        "price": 426.1,
+        "price": 799.99,
         "url": "https://www.amazon.com/dp/B0BTRRNK7T?tag=tiereduptech-20",
         "inStock": true
       },
@@ -601,7 +620,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-792-03.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     }
   },
@@ -630,7 +650,7 @@ export default [
     "bench": 68,
     "deals": {
       "amazon": {
-        "price": 289.73,
+        "price": 319.37,
         "url": "https://www.amazon.com/dp/B0BBJ59WJ4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -667,14 +687,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3U3KN44060",
-        "price": 335.49,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835714598045685120393&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000M-001Y5%3Fitem%3D9SIC3U3KN44060",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS24041604IV5C7A.jpg",
+        "sku": "N82E16819113793",
+        "price": 449,
+        "saleprice": 416,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836785218245808493291&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-7800x3d-ryzen-7-7000-series-raphael-zen-4-socket-am5%2Fp%2FN82E16819113793%3Fitem%3DN82E16819113793",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-793-03.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC3U3KN44060"
       }
     }
   },
@@ -703,26 +726,25 @@ export default [
     "bench": 51,
     "deals": {
       "amazon": {
-        "price": 199.99,
+        "price": 230.09,
         "url": "https://www.amazon.com/dp/B0BBHHT8LY?tag=tiereduptech-20",
         "inStock": true
       },
-      "bestbuy": {
-        "price": 399.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6519477&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6519477.p%3FskuId%3D6519477",
-        "inStock": true
-      },
       "newegg": {
-        "sku": "9SIC4RPKRF5284",
-        "price": 419.4,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832760118562712241402&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-7700x-ryzen-7-7000-series%2Fp%2FN82E16819113774%3Fitem%3D9SIC4RPKRF5284",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-774-01.jpg",
+        "sku": "N82E16819113768",
+        "price": 399,
+        "saleprice": 284,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313999144574907986936&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-7700x-ryzen-7-7000-series-raphael-zen-4-socket-am5%2Fp%2FN82E16819113768%3Fitem%3DN82E16819113768",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-768-01.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC4RPKRF5284"
       }
-    }
+    },
+    "bestbuyRemovedComp": "2026-06-28"
   },
   {
     "id": 10019,
@@ -749,19 +771,22 @@ export default [
     "bench": 40,
     "deals": {
       "amazon": {
-        "price": 146.99,
+        "price": 166.9,
         "url": "https://www.amazon.com/dp/B0BBJDS62N?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3U3KN47435",
-        "price": 179.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314427546008149459489&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000M-00224%3Fitem%3D9SIC3U3KN47435",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2502170CFUQZ08.jpg",
+        "sku": "N82E16819113770",
+        "price": 299,
+        "saleprice": 210,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836993541884332506771&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-7600x-ryzen-5-7000-series-raphael-zen-4-socket-am5%2Fp%2FN82E16819113770%3Fitem%3DN82E16819113770",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-770-02.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIC3U3KN47435"
       }
     }
   },
@@ -790,7 +815,7 @@ export default [
     "bench": 38,
     "deals": {
       "amazon": {
-        "price": 146.99,
+        "price": 166.9,
         "url": "https://www.amazon.com/dp/B0BBJDS62N?tag=tiereduptech-20",
         "inStock": true
       },
@@ -802,7 +827,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-787-03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     }
   },
@@ -841,10 +867,13 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2408280722CT08.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
-    "igpu": true
+    "igpu": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 10022,
@@ -868,11 +897,6 @@ export default [
     "arch": "Zen 3",
     "bench": 65,
     "deals": {
-      "amazon": {
-        "price": 379,
-        "url": "https://www.amazon.com/dp/B0815Y8J9N?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIC3U3KS66202",
         "price": 489.99,
@@ -881,10 +905,13 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-663-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
-    "igpu": false
+    "igpu": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 10023,
@@ -909,7 +936,7 @@ export default [
     "bench": 55,
     "deals": {
       "amazon": {
-        "price": 329.99,
+        "price": 389,
         "url": "https://www.amazon.com/dp/B08164VTWH?tag=tiereduptech-20",
         "inStock": true
       },
@@ -921,7 +948,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-668-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "igpu": false
@@ -949,7 +977,7 @@ export default [
     "bench": 48,
     "deals": {
       "amazon": {
-        "price": 239.99,
+        "price": 281.29,
         "url": "https://www.amazon.com/dp/B0D6NMCZG1?tag=tiereduptech-20",
         "inStock": true
       }
@@ -991,7 +1019,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-665-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "igpu": false
@@ -1032,7 +1061,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-734-05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "igpu": false
@@ -1102,7 +1132,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-735-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "igpu": false
@@ -1143,7 +1174,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2408140H3E7D23.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "igpu": false
@@ -1176,14 +1208,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA2W0KXX5163",
-        "price": 168.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311699147308594999394&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16819113939%3Fitem%3D9SIA2W0KXX5163",
+        "sku": "N82E16819113939",
+        "price": 179.99,
+        "saleprice": 168.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583883670207667657548&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16819113939%3Fitem%3DN82E16819113939",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-939-02.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIA2W0KXX5163"
       }
     },
     "igpu": false
@@ -1223,7 +1258,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8TKS210309OGtEu.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "igpu": false
@@ -1263,7 +1299,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A25VD2308170HWGSB01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "igpu": false
@@ -1303,7 +1340,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-737-V03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "igpu": false
@@ -1345,9 +1383,12 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-684-S01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 10035,
@@ -1386,7 +1427,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-682-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     }
   },
@@ -1458,7 +1500,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-507-07.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "newegg_openbox": {
         "sku": "445831605705533023021312",
@@ -1506,7 +1549,7 @@ export default [
     "bench": 62,
     "deals": {
       "amazon": {
-        "price": 139.99,
+        "price": 179.99,
         "url": "https://www.amazon.com/dp/B0DFK8HHK4?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1518,7 +1561,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-509-07.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 149.99,
@@ -1555,7 +1599,7 @@ export default [
     "bench": 83,
     "deals": {
       "amazon": {
-        "price": 372.99,
+        "price": 419.99,
         "url": "https://www.amazon.com/dp/B0CGJDBCTK?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1567,7 +1611,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-464-03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "igpu": false,
@@ -1601,19 +1646,22 @@ export default [
     "bench": 64,
     "deals": {
       "amazon": {
-        "price": 389.99,
+        "price": 447.99,
         "url": "https://www.amazon.com/dp/B0CGJDKLB8?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA24GK8K2613",
-        "price": 619.57,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831985972602018976316&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-14th-gen-core-i9-14900-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118474%3Fitem%3D9SIA24GK8K2613",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-474-01.jpg",
+        "sku": "N82E16819118485",
+        "price": 589.99,
+        "saleprice": 560.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583995176247738451799&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-14th-gen-core-i9-14900f-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118485%3Fitem%3DN82E16819118485",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2510200HJH7672.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 0.75,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIA24GK8K2613"
       }
     }
   },
@@ -1654,7 +1702,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2510200HJH7672.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "igpu": false,
@@ -1685,11 +1734,6 @@ export default [
     "arch": "Raptor Lake",
     "bench": 74,
     "deals": {
-      "amazon": {
-        "price": 539.99,
-        "url": "https://www.amazon.com/dp/B0F5DMYKC7?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16819118468",
         "price": 419.99,
@@ -1698,12 +1742,15 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-468-03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "igpu": false,
     "upc": "00735858546942",
-    "mpn": "BX8071514700KF"
+    "mpn": "BX8071514700KF",
+    "amazonRemovedAnomaly": "2026-06-28",
+    "amazonBundleAsin": true
   },
   {
     "id": 10056,
@@ -1732,7 +1779,7 @@ export default [
     "bench": 58,
     "deals": {
       "amazon": {
-        "price": 328.99,
+        "price": 356.49,
         "url": "https://www.amazon.com/dp/B0CQ1P2TRN?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1744,7 +1791,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-476-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     }
   },
@@ -1773,7 +1821,7 @@ export default [
     "bench": 59,
     "deals": {
       "amazon": {
-        "price": 328.99,
+        "price": 356.49,
         "url": "https://www.amazon.com/dp/B0CQ1P2TRN?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1785,7 +1833,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-487-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 348.79,
@@ -1834,7 +1883,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-472-03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 259.99,
@@ -1885,7 +1935,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-472-03.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.75
+        "matchScore": 0.75,
+        "sellerClass": "official"
       }
     }
   },
@@ -1928,7 +1979,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-478-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     }
   },
@@ -1959,19 +2011,22 @@ export default [
     "bench": 36,
     "deals": {
       "amazon": {
-        "price": 210.76,
+        "price": 224.21,
         "url": "https://www.amazon.com/dp/B0CQ1M1YXM?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA6ZPK9V6441",
-        "price": 213.4,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838542229802427386661&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-14th-gen-core-i5-14400-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118480%3Fitem%3D9SIA6ZPK9V6441",
+        "sku": "N82E16819118480",
+        "price": 269.99,
+        "saleprice": 229.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314209169896120731147&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-14th-gen-core-i5-14400-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118480%3Fitem%3DN82E16819118480",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-478-01.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIA6ZPK9V6441"
       }
     }
   },
@@ -2012,7 +2067,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-489-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 191.09,
@@ -2050,22 +2106,21 @@ export default [
     "arch": "Raptor Lake",
     "bench": 22,
     "deals": {
-      "amazon": {
-        "price": 209.99,
-        "url": "https://www.amazon.com/dp/B0CQ1S3L53?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
-        "sku": "9SIBZW0M081747",
-        "price": 220.84,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310679641585264325287&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i3-14th-gen-core-i3-14100-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118483%3Fitem%3D9SIBZW0M081747",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-483-01.jpg",
+        "sku": "N82E16819118492",
+        "price": 119.99,
+        "saleprice": 114.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837303804476050315101&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i3-14th-gen-core-i3-14100f-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118492%3Fitem%3DN82E16819118492",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-492-01.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 0.75,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIBZW0M081747"
       }
-    }
+    },
+    "amazonRemovedAnomaly": "2026-06-28"
   },
   {
     "id": 10065,
@@ -2104,7 +2159,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-492-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 104.99,
@@ -2155,7 +2211,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-412-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "upc": "00735858526616",
@@ -2189,20 +2246,13 @@ export default [
         "price": 259.99,
         "url": "https://www.amazon.com/dp/B0BCFM3CJ4?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIC72YKYJ4628",
-        "price": 401.07,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835800829645620257638&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-13th-gen-core-i9-13900kf-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118419%3Fitem%3D9SIC72YKYJ4628",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVS2303090IK91D94.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 1
       }
     },
     "igpu": false,
-    "mpn": "CM8071505094012"
+    "mpn": "CM8071505094012",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 10068,
@@ -2230,11 +2280,6 @@ export default [
     "arch": "Raptor Lake",
     "bench": 65,
     "deals": {
-      "amazon": {
-        "price": 984.99,
-        "url": "https://www.amazon.com/dp/B0BCF57FL5?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIC72YKYJ4717",
         "price": 478.99,
@@ -2243,16 +2288,16 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-414-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 1195.48,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11233016&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i7-13700k-13th-gen-16-cores-8-p-cores-8-e-cores-30m-cache-3-4-to-5-4-ghz-lga1700-unlocked-desktop-processor-grey-black-gold%2FJXZRJ5ZTT2&intsrc=APIG_28060",
-        "inStock": true
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "upc": "00735858526678",
-    "mpn": "BX8071513700K"
+    "mpn": "BX8071513700K",
+    "bestbuyRemovedComp": "2026-06-28",
+    "amazonRemovedAnomaly": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 10069,
@@ -2278,11 +2323,6 @@ export default [
     "arch": "Raptor Lake",
     "bench": 65,
     "deals": {
-      "amazon": {
-        "price": 249.99,
-        "url": "https://www.amazon.com/dp/B0BCDL7F5W?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIBZW0KFP3561",
         "price": 453.5,
@@ -2291,12 +2331,15 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-415-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "igpu": false,
     "upc": "00735858526685",
-    "mpn": "BX8071513700KF"
+    "mpn": "BX8071513700KF",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 10070,
@@ -2337,16 +2380,13 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-416-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 377.67,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12541875&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i5-13600k-13th-gen-14-cores-6-p-cores-8-e-cores-24m-cache-3-5-to-5-1-ghz-lga1700-unlocked-desktop-processor-grey-black-gold%2FJXZRJ5ZTWQ&intsrc=APIG_28060",
-        "inStock": true
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "upc": "00735858526715",
-    "mpn": "BX8071513600K"
+    "mpn": "BX8071513600K",
+    "bestbuyRemovedComp": "2026-06-28"
   },
   {
     "id": 10071,
@@ -2373,7 +2413,7 @@ export default [
     "bench": 53,
     "deals": {
       "amazon": {
-        "price": 254.88,
+        "price": 267.99,
         "url": "https://www.amazon.com/dp/B0BCF5CZ16?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2385,7 +2425,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-417-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "igpu": false,
@@ -2431,7 +2472,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-429-04.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     }
   },
@@ -2474,7 +2516,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-430-10.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     }
   },
@@ -2506,21 +2549,12 @@ export default [
         "price": 234.59,
         "url": "https://www.amazon.com/dp/B0BN61LYFB?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIAMG8KZZ5981",
-        "price": 396.76,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310091345587756968639&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000A-01P97%3Fitem%3D9SIAMG8KZZ5981",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S2604240PR9F0C7.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1
       }
     },
     "igpu": false,
     "upc": "00735858528337",
-    "mpn": "BX8071513400F"
+    "mpn": "BX8071513400F",
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 10075,
@@ -2561,7 +2595,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-432-05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     }
   },
@@ -2602,12 +2637,15 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-433-02.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "igpu": false,
     "upc": "00735858528375",
-    "mpn": "BX8071513100F"
+    "mpn": "BX8071513100F",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 10077,
@@ -2648,7 +2686,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-339-08.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 466.49,
@@ -2684,19 +2723,22 @@ export default [
     "bench": 58,
     "deals": {
       "amazon": {
-        "price": 299.99,
+        "price": 343.99,
         "url": "https://www.amazon.com/dp/B09FWYK5M9?tag=tiereduptech-20",
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIABT1K3V8994",
-        "price": 359.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317687165322854869243&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-12th-gen-core-i9-12900kf-alder-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118341%3Fitem%3D9SIABT1K3V8994",
+        "sku": "N82E16819118341",
+        "price": 419.99,
+        "saleprice": 399.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831906010534467823939&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-12th-gen-core-i9-12900kf-alder-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118341%3Fitem%3DN82E16819118341",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-341-06.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIABT1K3V8994"
       },
       "bestbuy": {
         "price": 353.99,
@@ -2747,7 +2789,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD2201300WJ2BG61.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "upc": "00735858989633",
@@ -2778,7 +2821,7 @@ export default [
     "bench": 48,
     "deals": {
       "amazon": {
-        "price": 219.99,
+        "price": 263.48,
         "url": "https://www.amazon.com/dp/B09FXKHN7M?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2790,7 +2833,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-345-05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 275.55,
@@ -2839,7 +2883,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-349-05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "bestbuy": {
         "price": 169.99,
@@ -2890,7 +2935,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2407180KHUSF3E.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.75
+        "matchScore": 0.75,
+        "sellerClass": "marketplace"
       }
     }
   },
@@ -2931,7 +2977,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2407180KHUSF3E.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "igpu": false,
@@ -2977,7 +3024,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2203220DB6YE7D.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     }
   },
@@ -3018,7 +3066,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2407180LK97Y3E.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "igpu": false,
@@ -3057,7 +3106,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.776Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -3165,7 +3215,7 @@ export default [
     "reviews": 1448,
     "deals": {
       "amazon": {
-        "price": 213,
+        "price": 299,
         "url": "https://www.amazon.com/dp/B09GYHXDHH?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3178,7 +3228,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "discount": 14,
@@ -3214,13 +3265,7 @@ export default [
     "r": 4.7,
     "asin": "B0BG65D6Z2",
     "reviews": 737,
-    "deals": {
-      "amazon": {
-        "price": 482.17,
-        "url": "https://www.amazon.com/dp/B0BG65D6Z2?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/51xeJaukicL._AC_SL1080_.jpg",
       "https://m.media-amazon.com/images/I/51mmwPyJGFL._AC_SL1080_.jpg",
@@ -3238,7 +3283,9 @@ export default [
     "bench": 65,
     "boostClock": 5400,
     "memType": "DDR5",
-    "igpu": false
+    "igpu": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 10126,
@@ -3278,7 +3325,9 @@ export default [
     "bench": 39,
     "boostClock": 4900,
     "memType": "DDR5",
-    "igpu": false
+    "igpu": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 10127,
@@ -3307,7 +3356,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.776Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 162.49,
@@ -3345,7 +3395,7 @@ export default [
     "reviews": 250,
     "deals": {
       "amazon": {
-        "price": 528.27,
+        "price": 689.95,
         "url": "https://www.amazon.com/dp/B0BG66JH7Q?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3426,7 +3476,7 @@ export default [
     "reviews": 177,
     "deals": {
       "amazon": {
-        "price": 166.42,
+        "price": 275,
         "url": "https://www.amazon.com/dp/B0D2JCMP34?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3438,7 +3488,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.732Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "additionalImages": [
@@ -3469,7 +3520,7 @@ export default [
     "reviews": 107,
     "deals": {
       "amazon": {
-        "price": 269.99,
+        "price": 293.33,
         "url": "https://www.amazon.com/dp/B0CQ3HKJYV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3507,7 +3558,7 @@ export default [
     "reviews": 80,
     "deals": {
       "amazon": {
-        "price": 209.99,
+        "price": 252.99,
         "url": "https://www.amazon.com/dp/B09MSJ29RP?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3519,7 +3570,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:03.357Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "bestbuy": {
         "price": 242.05,
@@ -3592,13 +3644,7 @@ export default [
     "r": 4.5,
     "asin": "B0F1FTSLPK",
     "reviews": 65,
-    "deals": {
-      "amazon": {
-        "price": 699.99,
-        "url": "https://www.amazon.com/dp/B0F1FTSLPK?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/61JZWRuxHlL._AC_SL1155_.jpg",
       "https://m.media-amazon.com/images/I/719Bz+i0zcL._AC_SL1500_.jpg",
@@ -3613,7 +3659,9 @@ export default [
     "cores": 16,
     "threads": 32,
     "bench": 94,
-    "bundle": true
+    "bundle": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 10135,
@@ -3641,7 +3689,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2409130G86MP30.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "mpn": "100-000000592",
@@ -3760,7 +3809,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S2512090792LP88.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       },
       "bestbuy": {
         "price": 299.99,
@@ -4109,16 +4159,6 @@ export default [
         "price": 236.67,
         "url": "https://www.amazon.com/dp/B0FPGM87Y9?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIAMG8KZZ5981",
-        "price": 396.76,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310091345587756968639&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000A-01P97%3Fitem%3D9SIAMG8KZZ5981",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S2604240PR9F0C7.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.89
       }
     },
     "mpn": "Intel Core I5-13400F",
@@ -4133,7 +4173,8 @@ export default [
     "baseClock": 2500,
     "boostClock": 4600,
     "memType": "DDR5",
-    "igpu": false
+    "igpu": false,
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 10150,
@@ -4148,7 +4189,7 @@ export default [
     "reviews": 9,
     "deals": {
       "amazon": {
-        "price": 449.99,
+        "price": 479.99,
         "url": "https://www.amazon.com/dp/B0F5DJJWN4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4216,13 +4257,7 @@ export default [
     "r": 4.7,
     "asin": "B0BQZ8J9VX",
     "reviews": 7,
-    "deals": {
-      "amazon": {
-        "price": 753.82,
-        "url": "https://www.amazon.com/dp/B0BQZ8J9VX?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/51GvHTW0JFL._AC_SL1280_.jpg",
       "https://m.media-amazon.com/images/I/51BuqsuOFgL._AC_SL1280_.jpg"
@@ -4241,7 +4276,9 @@ export default [
     "bench": 83,
     "boostClock": 5800,
     "memType": "DDR5",
-    "igpu": true
+    "igpu": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 10153,
@@ -4394,7 +4431,7 @@ export default [
     "reviews": 5,
     "deals": {
       "amazon": {
-        "price": 409.99,
+        "price": 439.99,
         "url": "https://www.amazon.com/dp/B0FN3SVDFW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4443,7 +4480,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.776Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cores": 6,
@@ -4485,7 +4523,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.732Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cores": 12,
@@ -4528,7 +4567,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:02.346Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cores": 6,
@@ -4571,7 +4611,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:04.702Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cores": 8,
@@ -4616,7 +4657,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.776Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "amazon": {
         "price": 420,
@@ -4666,7 +4708,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-466-04.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "amazon": {
         "price": 499.99,
@@ -4715,7 +4758,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.776Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       },
       "amazon": {
         "price": 257,
@@ -4766,7 +4810,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.776Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cores": 8,
@@ -4809,7 +4854,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.776Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cores": 16,
@@ -4851,7 +4897,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-841-03.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "cores": 16,
@@ -4894,7 +4941,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-842-02.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "cores": 12,
@@ -4937,7 +4985,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-843-09.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "cores": 8,
@@ -4980,7 +5029,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-844-05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "cores": 6,
@@ -5023,7 +5073,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-508-15.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "amazon": {
         "price": 179.89,
@@ -5071,10 +5122,11 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-505-08.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       },
       "amazon": {
-        "price": 459.99,
+        "price": 499.99,
         "url": "https://www.amazon.com/dp/B0DFKC99VL?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5119,7 +5171,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-506-06.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       },
       "amazon": {
         "price": 309,
@@ -5167,7 +5220,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-877-01.png",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "cores": 8,
@@ -5212,7 +5266,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.776Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cores": 12,
@@ -5257,7 +5312,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.776Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cores": 16,
@@ -5302,7 +5358,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.776Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cores": 24,
@@ -5345,7 +5402,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.776Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cores": 32,
@@ -5388,7 +5446,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.776Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "cores": 64,
@@ -5430,7 +5489,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-628-01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "official"
       }
     },
     "cores": 24,
@@ -5459,7 +5519,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/613nf5pLwjL._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "price": 149.99,
+        "price": 171,
         "url": "https://www.amazon.com/dp/B0DT7DXXJT?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5484,7 +5544,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/51JJfDCTQ3L._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "price": 118.99,
+        "price": 157.99,
         "url": "https://www.amazon.com/dp/B0DT7CW7VR?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5521,7 +5581,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2510200HG18T48.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "socket": "LGA1700",
@@ -5851,7 +5912,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD22013008UMB86E.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "socket": "LGA1200",
@@ -5876,11 +5938,6 @@ export default [
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/71J2jBmoOaL._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "price": 455,
-        "url": "https://www.amazon.com/dp/B086ML4XSD?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458314077028104486115908",
         "name": "Intel Core i9-10900 - Core i9 10th Gen Comet Lake 10-Core 2.8 GHz LGA 1200 65W Intel UHD Graphics 630 Desktop CPU Processor - BX8070110900",
@@ -5890,7 +5947,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "LGA1200",
@@ -5902,7 +5960,9 @@ export default [
     "memType": "DDR4",
     "igpu": true,
     "upc": "00735858448178",
-    "mpn": "BX8070110900"
+    "mpn": "BX8070110900",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 10197,
@@ -5942,7 +6002,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/714-1OvyFIL._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "price": 199,
+        "price": 279.9,
         "url": "https://www.amazon.com/dp/B086MMS6FV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5967,11 +6027,6 @@ export default [
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/51PYWQKjDqL._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "price": 199.96,
-        "url": "https://www.amazon.com/dp/B09139KNX2?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458314023894120120430652",
         "name": "Intel Core i7-10700 - Core i7 10th Gen Comet Lake 8-Core 2.9 GHz LGA 1200 65W Intel UHD Graphics 630 Desktop CPU Processor - BX8070110700",
@@ -5981,7 +6036,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "other"
       }
     },
     "socket": "LGA1200",
@@ -5995,7 +6051,9 @@ export default [
     "memType": "DDR4",
     "igpu": true,
     "upc": "00735858447744",
-    "mpn": "BX8070110700"
+    "mpn": "BX8070110700",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 10200,
@@ -6047,7 +6105,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVD2203210IOGO409.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "socket": "LGA1200",
@@ -6073,7 +6132,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/81iQJf4PftL._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "price": 126,
+        "price": 319.87,
         "url": "https://www.amazon.com/dp/B086M8441R?tag=tiereduptech-20",
         "inStock": true
       }
@@ -6097,13 +6156,7 @@ export default [
     "msrp": 130,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/61juA4lrX6L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "price": 119.99,
-        "url": "https://www.amazon.com/dp/B096R3R522?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "socket": "LGA1200",
     "cores": 6,
     "threads": 12,
@@ -6113,7 +6166,9 @@ export default [
     "used": true,
     "condition": "used",
     "memType": "DDR4",
-    "igpu": true
+    "igpu": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 10204,
@@ -6139,7 +6194,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-135-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.5
+        "matchScore": 0.5,
+        "sellerClass": "marketplace"
       }
     },
     "socket": "LGA1200",
@@ -6226,7 +6282,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-248-S02.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.89
+        "matchScore": 0.89,
+        "sellerClass": "marketplace"
       }
     },
     "socket": "LGA1200",
@@ -6376,7 +6433,7 @@ export default [
       "amazon": {
         "asin": "B0D6NNDQ92",
         "url": "https://www.amazon.com/dp/B0D6NNDQ92?tag=tiereduptech-20",
-        "price": 189.99,
+        "price": 218.98,
         "inStock": true
       }
     },
@@ -6538,7 +6595,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVD2203180E9E03A0.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.88
+        "matchScore": 0.88,
+        "sellerClass": "marketplace"
       }
     },
     "cores": 8,
@@ -6574,7 +6632,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-117-992-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.58
+        "matchScore": 0.58,
+        "sellerClass": "marketplace"
       }
     },
     "cores": 8,
@@ -6603,14 +6662,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8N2KBH9394",
-        "price": 804.83,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839657002195831065784&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1B4-008A-00VE2%3Fitem%3D9SIA8N2KBH9394",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/VC17D24062000BZZH12.jpg",
+        "sku": "N82E16819118462",
+        "price": 599,
+        "saleprice": 499.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835276157468505437468&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-14th-gen-core-i9-14900k-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118462%3Fitem%3DN82E16819118462",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-462-03.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.89
+        "matchScore": 0.5,
+        "migratedAt": "2026-06-28",
+        "migratedFrom": "9SIA8N2KBH9394"
       }
     },
     "cores": 24,
@@ -6646,7 +6708,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVD2203210IOMAS7E.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "cores": 8,
@@ -6667,21 +6730,16 @@ export default [
     "msrp": 264.99,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/81eoV5SY8RL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08GRPCWN2",
-        "url": "https://www.amazon.com/dp/B08GRPCWN2?tag=tiereduptech-20",
-        "price": 234.99,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T13:17:14.408Z",
     "source": "amazon-discovery",
     "cores": 8,
     "socket": "LGA1151",
     "tdp": 65,
     "igpu": true,
-    "bench": 23
+    "bench": 23,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100326,
@@ -6697,7 +6755,7 @@ export default [
       "amazon": {
         "asin": "B0DT7JDLDH",
         "url": "https://www.amazon.com/dp/B0DT7JDLDH?tag=tiereduptech-20",
-        "price": 499,
+        "price": 598.95,
         "inStock": true
       }
     },
@@ -6733,7 +6791,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVD2203180E9E03A0.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "cores": 8,
@@ -6781,12 +6840,6 @@ export default [
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/61vkuZN5JsL._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "asin": "B07MMD4DDJ",
-        "url": "https://www.amazon.com/dp/B07MMD4DDJ?tag=tiereduptech-20",
-        "price": 61.99,
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIC72YKYF6860",
         "price": 146.83,
@@ -6795,7 +6848,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVS2204110I9GB49A.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.65
+        "matchScore": 0.65,
+        "sellerClass": "marketplace"
       }
     },
     "cores": 4,
@@ -6805,7 +6859,9 @@ export default [
     "source": "amazon-discovery",
     "boostClock": 4.2,
     "igpu": true,
-    "bench": 12
+    "bench": 12,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100330,
@@ -6831,7 +6887,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVS22071506DV8J17.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.75
+        "matchScore": 0.75,
+        "sellerClass": "marketplace"
       }
     },
     "cores": 8,
@@ -6903,7 +6960,7 @@ export default [
       "amazon": {
         "asin": "B09FX4D72T",
         "url": "https://www.amazon.com/dp/B09FX4D72T?tag=tiereduptech-20",
-        "price": 202.95,
+        "price": 288,
         "inStock": true
       }
     },
@@ -6939,7 +6996,9 @@ export default [
     "cores": 4,
     "tdp": 65,
     "igpu": true,
-    "bench": 8
+    "bench": 8,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100335,
@@ -7084,7 +7143,7 @@ export default [
       "amazon": {
         "asin": "B0DT7FY7P3",
         "url": "https://www.amazon.com/dp/B0DT7FY7P3?tag=tiereduptech-20",
-        "price": 299.99,
+        "price": 359.99,
         "inStock": true
       }
     },
@@ -7328,21 +7387,16 @@ export default [
     "msrp": 84.95,
     "r": null,
     "img": "https://m.media-amazon.com/images/I/91OZjLdueYL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0BZTKGQ85",
-        "url": "https://www.amazon.com/dp/B0BZTKGQ85?tag=tiereduptech-20",
-        "price": 84.95,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.770Z",
     "source": "amazon-discovery",
     "cores": 6,
     "threads": 12,
     "socket": "AM4",
     "tdp": 65,
-    "bench": 23
+    "bench": 23,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100591,
@@ -7377,19 +7431,14 @@ export default [
     "msrp": 18,
     "r": 3.4,
     "img": "https://m.media-amazon.com/images/I/61-XPn0Ri8L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07KYR1Q7V",
-        "url": "https://www.amazon.com/dp/B07KYR1Q7V?tag=tiereduptech-20",
-        "price": 18,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.770Z",
     "source": "amazon-discovery",
     "cores": 2,
     "socket": "LGA1151",
-    "tdp": 54
+    "tdp": 54,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100593,
@@ -7451,7 +7500,7 @@ export default [
       "amazon": {
         "asin": "B000YAB6JK",
         "url": "https://www.amazon.com/dp/B000YAB6JK?tag=tiereduptech-20",
-        "price": 149.95,
+        "price": 189.95,
         "inStock": true
       }
     },
@@ -7467,16 +7516,11 @@ export default [
     "msrp": 173,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/710MSEZdu7L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DHYHWHWX",
-        "url": "https://www.amazon.com/dp/B0DHYHWHWX?tag=tiereduptech-20",
-        "price": 209.99,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.770Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100597,
@@ -7633,7 +7677,7 @@ export default [
       "amazon": {
         "asin": "B0F2GMYLX9",
         "url": "https://www.amazon.com/dp/B0F2GMYLX9?tag=tiereduptech-20",
-        "price": 144.99,
+        "price": 179.99,
         "inStock": true
       },
       "newegg": {
@@ -7644,7 +7688,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-432-05.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 0.77
+        "matchScore": 0.77,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.770Z",
@@ -7669,7 +7714,7 @@ export default [
       "amazon": {
         "asin": "B0FDY4QW8H",
         "url": "https://www.amazon.com/dp/B0FDY4QW8H?tag=tiereduptech-20",
-        "price": 599.99,
+        "price": 739.99,
         "inStock": true
       }
     },
@@ -7718,7 +7763,7 @@ export default [
       "amazon": {
         "asin": "B0F2GJF5D3",
         "url": "https://www.amazon.com/dp/B0F2GJF5D3?tag=tiereduptech-20",
-        "price": 144.99,
+        "price": 179.99,
         "inStock": true
       }
     },
@@ -7740,14 +7785,7 @@ export default [
     "msrp": 75,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/51FmTWmUvxL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B094DT9DX3",
-        "url": "https://www.amazon.com/dp/B094DT9DX3?tag=tiereduptech-20",
-        "price": 75,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.770Z",
     "source": "amazon-discovery",
     "cores": 4,
@@ -7755,7 +7793,9 @@ export default [
     "tdp": 65,
     "boostClock": 4.3,
     "igpu": true,
-    "bench": 12
+    "bench": 12,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100608,
@@ -7770,7 +7810,7 @@ export default [
       "amazon": {
         "asin": "B09MDDX29R",
         "url": "https://www.amazon.com/dp/B09MDDX29R?tag=tiereduptech-20",
-        "price": 164.99,
+        "price": 306.01,
         "inStock": true
       }
     },
@@ -7791,21 +7831,16 @@ export default [
     "msrp": 32.99,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/51unN3DIp-L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07R4PXFRB",
-        "url": "https://www.amazon.com/dp/B07R4PXFRB?tag=tiereduptech-20",
-        "price": 32.99,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.770Z",
     "source": "amazon-discovery",
     "cores": 2,
     "socket": "LGA1150",
     "tdp": 54,
     "igpu": true,
-    "bench": 5
+    "bench": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100610,
@@ -7845,7 +7880,7 @@ export default [
       "amazon": {
         "asin": "B09XN7CYLN",
         "url": "https://www.amazon.com/dp/B09XN7CYLN?tag=tiereduptech-20",
-        "price": 138,
+        "price": 248.27,
         "inStock": true
       }
     },
@@ -8187,20 +8222,15 @@ export default [
     "msrp": 218.9,
     "r": null,
     "img": "https://m.media-amazon.com/images/I/61xuBKOPwXL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0B77VYLZW",
-        "url": "https://www.amazon.com/dp/B0B77VYLZW?tag=tiereduptech-20",
-        "price": 198,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.771Z",
     "source": "amazon-discovery",
     "cores": 8,
     "threads": 16,
     "socket": "LGA2066",
-    "tdp": 155
+    "tdp": 155,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100626,
@@ -8234,20 +8264,15 @@ export default [
     "msrp": 397,
     "r": null,
     "img": "https://m.media-amazon.com/images/I/41VSs6Sz7dL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0C8BT3QD8",
-        "url": "https://www.amazon.com/dp/B0C8BT3QD8?tag=tiereduptech-20",
-        "price": 397,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.771Z",
     "source": "amazon-discovery",
     "cores": 10,
     "threads": 20,
     "socket": "LGA1155",
-    "tdp": 165
+    "tdp": 165,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100628,
@@ -8258,20 +8283,15 @@ export default [
     "msrp": 42.13,
     "r": null,
     "img": "https://m.media-amazon.com/images/I/81eoV5SY8RL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0B77W1WS3",
-        "url": "https://www.amazon.com/dp/B0B77W1WS3?tag=tiereduptech-20",
-        "price": 42.13,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.771Z",
     "source": "amazon-discovery",
     "cores": 4,
     "threads": 8,
     "socket": "LGA2066",
-    "tdp": 120
+    "tdp": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100629,
@@ -8282,18 +8302,13 @@ export default [
     "msrp": 1091,
     "r": null,
     "img": "https://m.media-amazon.com/images/I/41wdKL59olL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0C8BV44TG",
-        "url": "https://www.amazon.com/dp/B0C8BV44TG?tag=tiereduptech-20",
-        "price": 1091,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.771Z",
     "source": "amazon-discovery",
     "cores": 18,
-    "socket": "LGA2066"
+    "socket": "LGA2066",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100630,
@@ -8308,7 +8323,7 @@ export default [
       "amazon": {
         "asin": "B0BYSVKFCR",
         "url": "https://www.amazon.com/dp/B0BYSVKFCR?tag=tiereduptech-20",
-        "price": 2999.95,
+        "price": 4639.89,
         "inStock": true
       }
     },
@@ -8373,20 +8388,15 @@ export default [
     "msrp": 98.22,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/51wEVC8vBaL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07V3SYQ1P",
-        "url": "https://www.amazon.com/dp/B07V3SYQ1P?tag=tiereduptech-20",
-        "price": 98.22,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.771Z",
     "source": "amazon-discovery",
     "cores": 24,
     "threads": 48,
     "socket": "LGA3647",
-    "tdp": 150
+    "tdp": 150,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100634,
@@ -8412,7 +8422,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-311-V01.jpg",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1
+        "matchScore": 1,
+        "sellerClass": "marketplace"
       }
     },
     "addedAt": "2026-05-15T14:34:31.771Z",
@@ -8431,19 +8442,14 @@ export default [
     "msrp": 42.25,
     "r": 4.3,
     "img": "https://m.media-amazon.com/images/I/41tXYgzv8-L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07HPB1N2J",
-        "url": "https://www.amazon.com/dp/B07HPB1N2J?tag=tiereduptech-20",
-        "price": 41,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.771Z",
     "source": "amazon-discovery",
     "cores": 14,
     "socket": "LGA2011",
-    "tdp": 120
+    "tdp": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100636,
@@ -8474,19 +8480,14 @@ export default [
     "msrp": 25,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/61F4bFnyglL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07T3FGR8X",
-        "url": "https://www.amazon.com/dp/B07T3FGR8X?tag=tiereduptech-20",
-        "price": 25,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.771Z",
     "source": "amazon-discovery",
     "cores": 22,
     "socket": "LGA3647",
-    "tdp": 5
+    "tdp": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100638,
@@ -8497,19 +8498,14 @@ export default [
     "msrp": 29.5,
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/91+7v6NWdyL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07JND5X7G",
-        "url": "https://www.amazon.com/dp/B07JND5X7G?tag=tiereduptech-20",
-        "price": 29.5,
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.771Z",
     "source": "amazon-discovery",
     "cores": 14,
     "socket": "LGA2011",
-    "tdp": 145
+    "tdp": 145,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100639,
@@ -8685,7 +8681,7 @@ export default [
       "amazon": {
         "asin": "B0CK2W3WFP",
         "url": "https://www.amazon.com/dp/B0CK2W3WFP?tag=tiereduptech-20",
-        "price": 1399.99,
+        "price": 2154.99,
         "inStock": true
       }
     },
