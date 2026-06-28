@@ -52,12 +52,13 @@ function pickPrice(item) {
 
 (async () => {
   console.log('Loading parts.js...');
+  const NEG = await import(`file://${path.join(__dirname, 'newegg-match.js').replace(/\\/g, '/')}`);
   const partsModule = await import(`file://${PARTS_PATH.replace(/\\/g, '/')}?t=${Date.now()}`);
   const parts = partsModule.PARTS;
   const matched = parts.filter(p => p?.deals?.newegg?.sku);
   console.log(`Found ${matched.length} products with Newegg matches`);
 
-  let updated = 0, unchanged = 0, removed = 0, errored = 0;
+  let updated = 0, unchanged = 0, removed = 0, errored = 0, migrated = 0, flagged = 0;
   const changes = [];
 
   for (let i = 0; i < matched.length; i++) {
@@ -66,6 +67,40 @@ function pickPrice(item) {
     if (i % 50 === 0) console.log(`Progress: ${i}/${matched.length} (updated=${updated} removed=${removed} errored=${errored})`);
 
     try {
+      // B2: if pinned to a marketplace (9SI) listing, try to MIGRATE to a first-party
+      // (N82E) listing via a name search instead of just re-pricing the reseller.
+      if (NEG.isMarketplace(sku)) {
+        const token = await getToken();
+        const search = await NEG.searchNewegg(p, { token, mid: NEWEGG_MID });
+        if (search.ok) {
+          const best = NEG.selectWithFirstPartyPreference(search.candidates);
+          if (best && NEG.isFirstParty(best.item.sku)) {
+            const eff = (best.item.saleprice && best.item.saleprice > 0) ? best.item.saleprice : best.item.price;
+            if (eff > 0 && NEG.neweggSanity(p, eff).pass) {
+              p.deals.newegg = {
+                sku: best.item.sku,
+                price: best.item.price,
+                ...(best.item.saleprice ? { saleprice: best.item.saleprice } : {}),
+                linkurl: best.item.linkurl || p.deals.newegg.linkurl,
+                imageurl: best.item.imageurl || p.deals.newegg.imageurl,
+                sellerClass: 'official',
+                matchedAt: p.deals.newegg.matchedAt || new Date().toISOString().slice(0, 10),
+                matchMethod: best.match.method,
+                matchScore: Number(best.match.score.toFixed(2)),
+                migratedAt: new Date().toISOString(),
+                migratedFrom: sku,
+              };
+              changes.push({ name: p.n, change: 'migrated-to-firstparty', from: sku, to: best.item.sku });
+              migrated++; updated++;
+              await sleep(RATE_DELAY_MS);
+              continue;
+            }
+          }
+        }
+        // No first-party alternative (or it failed the gate) — fall through and
+        // re-price the existing marketplace listing as before.
+      }
+
       const items = await searchBySku(sku);
       const match = items.find(it => String(it.sku || it.SKU || '').trim() === String(sku).trim());
       
@@ -87,7 +122,16 @@ function pickPrice(item) {
         const oldPrice = Number(p.deals.newegg.price);
         const oldSale = Number(p.deals.newegg.saleprice || 0);
         
-        if (price > 0 && (price !== oldPrice || saleprice !== oldSale || newLink !== p.deals.newegg.linkurl)) {
+        const changedPrice = price > 0 && (price !== oldPrice || saleprice !== oldSale || newLink !== p.deals.newegg.linkurl);
+        // Gate the new price: don't write a wild outlier vs other retailers — flag instead.
+        const effNew = saleprice && saleprice > 0 ? saleprice : price;
+        const sane = NEG.neweggSanity(p, effNew).pass;
+        if (changedPrice && !sane) {
+          p.needsReview = true;
+          p.quarantinedAt = new Date().toISOString().slice(0, 10);
+          changes.push({ name: p.n, change: 'price-flagged', from: oldPrice, to: price, sku });
+          flagged++;
+        } else if (changedPrice) {
           p.deals.newegg.price = price;
           if (saleprice) p.deals.newegg.saleprice = saleprice;
           else delete p.deals.newegg.saleprice;
@@ -110,9 +154,9 @@ function pickPrice(item) {
   }
 
   console.log(`\n=== SUMMARY ===`);
-  console.log(`Updated: ${updated} | Unchanged: ${unchanged} | Removed: ${removed} | Errored: ${errored}`);
+  console.log(`Updated: ${updated} (incl. ${migrated} migrated to first-party) | Unchanged: ${unchanged} | Removed: ${removed} | Flagged: ${flagged} | Errored: ${errored}`);
 
-  if (updated === 0 && removed === 0) {
+  if (updated === 0 && removed === 0 && flagged === 0) {
     console.log('No changes to write.');
     return;
   }
@@ -124,7 +168,7 @@ function pickPrice(item) {
 
   fs.writeFileSync('newegg-refresh-summary.json', JSON.stringify({
     timestamp: new Date().toISOString(),
-    updated, unchanged, removed, errored,
+    updated, unchanged, removed, errored, migrated, flagged,
     sampleChanges: changes.slice(0, 20)
   }, null, 2));
 })().catch(e => { console.error(e); process.exit(1); });

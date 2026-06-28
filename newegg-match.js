@@ -1,0 +1,164 @@
+// Newegg matching + first-party preference + sanity gate (Stage B2).
+//
+// Shared by fetch-newegg-via-rakuten.cjs, refresh-newegg-prices.cjs (both .cjs,
+// via dynamic import()), and the B2 sample test, so all exercise identical logic.
+//
+// THE FIX: Newegg's Rakuten feed returns both Newegg-Official ("N82E…") and
+// marketplace-seller ("9SI…") listings for the same product. The old selection
+// broke ties by raw API order, so a marketplace reseller could win. We now PREFER
+// first-party (N82E) regardless of price; marketplace (9SI) is last resort. This
+// is INTENTIONALLY price-independent — most marketplace listings are reasonably
+// priced but are still the wrong seller.
+
+import { parseCapacityGB, capacityCompatible, isHardDrive, isPricePlausibleForCapacity }
+  from './normalize-product-name.js';
+import { classifyDeal, effectivePrice, dispersion, CLASS, neweggSkuClass } from './price-sanity.js';
+
+const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
+const MIN_NAME_SIM = 0.5;
+const MAX_PRICE_MULTIPLIER = 2.5;
+
+// Verified Newegg category filters (from fetch-newegg-via-rakuten.cjs).
+export const CAT_FILTER = {
+  CPU: 'Processors', Motherboard: 'Motherboards', RAM: 'Memory',
+  Storage: 'Storage Devices', PSU: 'Power Supplies',
+  Case: 'Desktop Computer & Server Cases',
+  CPUCooler: 'Computer System Cooling Parts', CaseFan: 'Computer System Cooling Parts',
+  Monitor: 'Monitors',
+};
+
+// ── Seller classification (the heart of B2) ──────────────────────────────────
+// 'official' (N82E…) | 'marketplace' (9SI…) | 'other' (unknown prefix) | 'none'
+export function sellerClass(itemNumber) { return neweggSkuClass({ sku: itemNumber }); }
+export function isFirstParty(itemNumber) { return sellerClass(itemNumber) === 'official'; }
+export function isMarketplace(itemNumber) { return sellerClass(itemNumber) === 'marketplace'; }
+// Lower rank = preferred. Official < other/unknown < marketplace.
+export function sellerRank(itemNumber) {
+  const c = sellerClass(itemNumber);
+  return c === 'official' ? 0 : c === 'marketplace' ? 2 : 1;
+}
+
+// ── XML parsing (copied verbatim from fetch-newegg-via-rakuten.cjs) ───────────
+function xmlField(xml, tag) {
+  const m = xml.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`));
+  return m ? m[1].trim() : null;
+}
+function decodeEntities(s) {
+  return String(s || '')
+    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+}
+export function parseItems(xml) {
+  const items = [];
+  const re = /<item>([\s\S]*?)<\/item>/g;
+  let m;
+  while ((m = re.exec(xml)) !== null) {
+    const b = m[1];
+    items.push({
+      name: decodeEntities(xmlField(b, 'productname') || ''),
+      sku: xmlField(b, 'sku') || '',
+      upc: xmlField(b, 'upccode') || '',
+      price: parseFloat(xmlField(b, 'price')) || null,
+      saleprice: (() => { const v = parseFloat(xmlField(b, 'saleprice')); return v > 0 ? v : null; })(),
+      linkurl: decodeEntities(xmlField(b, 'linkurl') || ''),
+      imageurl: decodeEntities(xmlField(b, 'imageurl') || ''),
+      secondary: decodeEntities(xmlField(b, 'secondary') || ''),
+    });
+  }
+  return items;
+}
+
+// ── Scoring (copied verbatim) ────────────────────────────────────────────────
+function normalizeUpc(upc) { return String(upc || '').replace(/^0+/, '').replace(/\D/g, ''); }
+function nameSimilarity(a, b) {
+  const norm = (s) => new Set(
+    String(s).toLowerCase().replace(/[^\w\s]/g, ' ').split(/\s+/).filter((w) => w.length >= 2));
+  const A = norm(a), B = norm(b);
+  if (A.size === 0 || B.size === 0) return 0;
+  let inter = 0;
+  for (const w of A) if (B.has(w)) inter++;
+  if (inter < 3) return 0;
+  const containment = inter / Math.min(A.size, B.size);
+  const jaccard = inter / (A.size + B.size - inter);
+  return Math.max(containment, jaccard);
+}
+export function extractKeywords(name, brand) {
+  let s = String(name || '')
+    .replace(/Gaming Graphics Card|Graphics Card|Video Card/gi, '')
+    .replace(/PCIe \d+\.\d+|HDMI \d+\.\d+|DisplayPort \d+\.\d+/gi, '')
+    .replace(/GDDR\d+(\s*Memory)?|DDR\d+\s*Memory/gi, '')
+    .replace(/Edition|Memory|Motherboard|Desktop Processor/gi, '')
+    .replace(/[-,()|]/g, ' ').replace(/\s+/g, ' ').trim();
+  const words = s.split(' ').filter(Boolean).slice(0, 8);
+  let q = words.join(' ');
+  if (brand && !q.toLowerCase().includes(brand.toLowerCase())) q = `${brand} ${q}`;
+  return q.slice(0, 100);
+}
+export function scoreMatch(ourProduct, neweggItem) {
+  if (ourProduct.pr && neweggItem.price && neweggItem.price > ourProduct.pr * MAX_PRICE_MULTIPLIER) return null;
+  if (/\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gaming Desktop|Bundle|Combo)\b/i.test(neweggItem.name)) return null;
+  const storedCap = ourProduct.cap != null ? ourProduct.cap : parseCapacityGB(ourProduct.n);
+  if (!capacityCompatible(storedCap, parseCapacityGB(neweggItem.name))) return null;
+  if (STORAGE_CATS.has(ourProduct.c) &&
+      !isPricePlausibleForCapacity(neweggItem.price, storedCap, { isHDD: isHardDrive(ourProduct) })) return null;
+  const ourUpcN = normalizeUpc(ourProduct.upc || ourProduct.UPC);
+  const newUpcN = normalizeUpc(neweggItem.upc);
+  if (ourUpcN && newUpcN && ourUpcN === newUpcN) return { method: 'upc', score: 1.0 };
+  const sim = nameSimilarity(ourProduct.n, neweggItem.name);
+  if (sim >= MIN_NAME_SIM) return { method: 'name', score: sim };
+  return null;
+}
+
+// ── Selection WITH first-party preference ────────────────────────────────────
+// Within a seller tier, rank by method (upc > name) then score.
+function pickWithinTier(scored) {
+  return [...scored].sort((a, b) => {
+    if (a.match.method !== b.match.method) return a.match.method === 'upc' ? -1 : 1;
+    return b.match.score - a.match.score;
+  })[0];
+}
+// Prefer a first-party (N82E) candidate if ANY matched (and passed all gates);
+// otherwise fall back to the best of the rest. Price-independent by design.
+export function selectWithFirstPartyPreference(scored) {
+  if (!scored || !scored.length) return null;
+  const firstParty = scored.filter((x) => isFirstParty(x.item.sku));
+  return firstParty.length ? pickWithinTier(firstParty) : pickWithinTier(scored);
+}
+
+// ── Live search (caller supplies token + mid; uses XML productsearch/1.0) ─────
+export async function searchNewegg(product, { token, mid, fetchImpl = fetch }) {
+  const catFilter = CAT_FILTER[product.c];
+  if (!catFilter) return { ok: false, reason: 'no_cat_mapping', candidates: [] };
+  const keywords = extractKeywords(product.n, product.b);
+  const queries = [
+    { exact: keywords, cat: catFilter, mid, max: '20' },
+    { keyword: keywords, cat: catFilter, mid, max: '20' },
+  ];
+  let items = [];
+  for (const params of queries) {
+    const url = `https://api.linksynergy.com/productsearch/1.0?${new URLSearchParams(params)}`;
+    const res = await fetchImpl(url, { headers: { Authorization: `Bearer ${token}` } });
+    if (!res.ok) continue;
+    items = parseItems(await res.text());
+    if (items.length > 0) break;
+  }
+  if (!items.length) return { ok: false, reason: 'no_results', candidates: [] };
+  const scored = items.map((it) => ({ item: it, match: scoreMatch(product, it) })).filter((x) => x.match);
+  if (!scored.length) return { ok: false, reason: 'no_match', candidates: [] };
+  return { ok: true, candidates: scored };
+}
+
+// ── Cross-retailer sanity gate for a candidate Newegg price (peers: amazon, bestbuy)
+export function neweggSanity(product, candidatePrice) {
+  const deals = (product && product.deals) || {};
+  const peers = ['amazon', 'bestbuy'].map((r) => effectivePrice(deals[r])).filter((v) => v != null);
+  const res = classifyDeal(candidatePrice, peers, product && product.pr, product && product.msrp);
+  const hypo = { deals: { ...deals, newegg: { price: candidatePrice } } };
+  const disp = dispersion(hypo);
+  const perRetailerOk = res.cls === CLASS.OK || res.cls === CLASS.UNVERIFIED;
+  return {
+    pass: perRetailerOk && !disp.conflicting,
+    cls: res.cls, ref: res.ref, deviation: res.deviation,
+    dispConflict: disp.conflicting, spread: disp.spread,
+  };
+}

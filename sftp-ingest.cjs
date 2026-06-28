@@ -32,6 +32,8 @@ const SftpClient = require('ssh2-sftp-client');
 // blocks attaching a deal of a different storage capacity than the product.
 const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
 let CAP = null;
+// Newegg first-party-preference + sanity gate (shared ESM, dynamic-imported at startup).
+let NEG = null;
 
 const ROOT = __dirname;
 const FEED_DIR = path.join(ROOT, 'catalog-build', 'feeds');
@@ -344,8 +346,14 @@ function applyMatchToPart(part, rec, match) {
   const fieldKey = condition === 'new' ? 'newegg' : 'newegg_' + condition;
 
   part.deals = part.deals || {};
+  // The Newegg item number (col `newegg_item_number`, NOT `sku`) is what carries the
+  // N82E (first-party) / 9SI (marketplace) prefix used for seller classification.
+  const itemNumber = rec.newegg_item_number || rec.sku;
+  const sClass = NEG.sellerClass(itemNumber);
   const newListing = {
     sku: rec.sku,
+    itemNumber,
+    sellerClass: sClass,
     price: pricing.price,
     ...(pricing.saleprice ? { saleprice: pricing.saleprice } : {}),
     linkurl: rec.product_url || rec.buy_url,
@@ -356,17 +364,34 @@ function applyMatchToPart(part, rec, match) {
     matchScore: match.confidence
   };
 
-  // For each condition, keep the LOWEST in-stock price (or any price if none in-stock)
+  // Per condition, prefer a FIRST-PARTY (N82E) listing over marketplace (9SI)
+  // regardless of price; only within the same seller tier fall back to
+  // in-stock-then-lowest-price. (B2: marketplace fix is price-independent.)
   const existing = part.deals[fieldKey];
   let shouldReplace = !existing;
   if (existing) {
-    const newPrice = pricing.saleprice || pricing.price;
-    const oldPrice = existing.saleprice || existing.price;
-    // Prefer in-stock over out-of-stock
-    if (inStock && !existing.inStock) shouldReplace = true;
-    else if (existing.inStock && !inStock) shouldReplace = false;
-    // Otherwise prefer lower price
-    else if (newPrice < oldPrice) shouldReplace = true;
+    const newRank = NEG.sellerRank(itemNumber);
+    const oldRank = NEG.sellerRank(existing.itemNumber || existing.sku);
+    if (newRank !== oldRank) {
+      shouldReplace = newRank < oldRank;          // first-party wins outright
+    } else {
+      const newPrice = pricing.saleprice || pricing.price;
+      const oldPrice = existing.saleprice || existing.price;
+      if (inStock && !existing.inStock) shouldReplace = true;
+      else if (existing.inStock && !inStock) shouldReplace = false;
+      else if (newPrice < oldPrice) shouldReplace = true;
+    }
+  }
+
+  // Sanity gate on the primary (new-condition) listing: never attach a price that's
+  // a wild outlier vs the product's other retailers — flag for review instead.
+  if (shouldReplace && fieldKey === 'newegg') {
+    const effPrice = pricing.saleprice || pricing.price;
+    if (!NEG.neweggSanity(part, effPrice).pass) {
+      part.needsReview = true;
+      part.quarantinedAt = new Date().toISOString().slice(0, 10);
+      shouldReplace = false;
+    }
   }
   if (shouldReplace) {
     part.deals[fieldKey] = newListing;
@@ -388,6 +413,7 @@ function writeParts(parts) {
 // â”€â”€â”€ MAIN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 (async () => {
   CAP = await import('file://' + process.cwd().replace(/\\/g, '/') + '/normalize-product-name.js');
+  NEG = await import('file://' + process.cwd().replace(/\\/g, '/') + '/newegg-match.js');
 
   const summary = {
     startedAt: new Date().toISOString(),

@@ -24,6 +24,7 @@ import { join } from 'path';
 import { canonicalizeProductName, extractModelToken,
          parseCapacityGB, capacityCompatible, capacitiesMatch,
          isHardDrive, isPricePlausibleForCapacity } from './normalize-product-name.js';
+import { selectNewOffer, lowestAnyConditionPrice, amazonPriceSanity } from './amazon-price.js';
 
 // Categories where a stated capacity is a hard identity gate.
 const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
@@ -55,6 +56,9 @@ const MAX_POLL_WAIT_MS = 1800000;
 const GET_CONCURRENCY = 8;
 const PRICE_DRIFT_THRESHOLD = 0.05;
 const ASIN_FIX_MIN_SCORE = 0.8;
+// Empirical DataForSEO cost per /merchant/amazon/sellers advanced task (measured
+// from live task_post `cost` in the B1 sample run). The asin endpoint was ~0.0015.
+const COST_PER_SELLERS_TASK = 0.001;
 
 // ═══ STRATEGY 2: Known-good ASIN overrides table ═══
 let ASIN_OVERRIDES = {};
@@ -98,7 +102,17 @@ const flags = {
   autoFix: getFlag('--auto-fix'),
   fixAsins: getFlag('--fix-asins'),
   limit: Number(getFlag('--limit', true)) || null,
+  excludeIds: getFlag('--exclude-ids', true),
 };
+// Optional exclusion set (e.g. the SUSPECT_VS_LIST wrong-baseline cohort, which is
+// a separate bug we must NOT touch in the price sweep). JSON file = array of ids.
+let EXCLUDE_IDS = new Set();
+if (flags.excludeIds) {
+  try {
+    EXCLUDE_IDS = new Set(JSON.parse(readFileSync(flags.excludeIds, 'utf8')).map(Number));
+    console.log(`Excluding ${EXCLUDE_IDS.size} product ids (from ${flags.excludeIds})`);
+  } catch (e) { console.error(`Failed to load --exclude-ids: ${e.message}`); process.exit(1); }
+}
 if (!flags.tier) { console.error('Must specify --tier (1|2|3|4|all)'); process.exit(1); }
 if (!flags.dryRun && !flags.reportOnly && !flags.autoFix) {
   console.error('Must specify mode: --dry-run, --report-only, or --auto-fix');
@@ -169,7 +183,7 @@ function saveCatalog(parts) {
 }
 function selectProducts(parts, tier) {
   const cats = tier === 'all' ? Object.values(TIERS).flat() : (TIERS[tier] || []);
-  const products = parts.filter(p => cats.includes(p.c) && extractASIN(p.deals?.amazon?.url));
+  const products = parts.filter(p => cats.includes(p.c) && extractASIN(p.deals?.amazon?.url) && !EXCLUDE_IDS.has(p.id));
   return flags.limit ? products.slice(0, flags.limit) : products;
 }
 
@@ -184,7 +198,9 @@ async function postTasks(products) {
       location_code: 2840,
       tag: `verify-${p.id}`,
     }));
-    const resp = await dfs('POST', '/merchant/amazon/asin/task_post', payload);
+    // Sellers endpoint (not asin): returns per-offer condition + seller so we can
+    // pick the NEW Buy Box price instead of price_from (lowest offer, any condition).
+    const resp = await dfs('POST', '/merchant/amazon/sellers/task_post', payload);
     for (const t of (resp.tasks || [])) {
       if (t.id) {
         const prodId = Number(t.data?.tag?.replace('verify-', ''));
@@ -212,15 +228,17 @@ async function fetchAllResults(tasks) {
       const batch = taskList.slice(i, i + GET_CONCURRENCY);
       await Promise.all(batch.map(async taskId => {
         try {
-          const resp = await dfs('GET', `/merchant/amazon/asin/task_get/advanced/${taskId}`);
+          const resp = await dfs('GET', `/merchant/amazon/sellers/task_get/advanced/${taskId}`);
           const task = resp.tasks?.[0];
           if (!task) return;
           const isPending = task.status_code === 20100 || task.status_code === 40602 || !task.result;
           if (isPending) return;
           const t = pending.get(taskId);
-          const item = task.result?.[0]?.items?.[0];
-          if (task.status_code === 20000 && item) {
-            results.set(taskId, { ...t, data: item, status: task.status_code });
+          // Sellers result[0] = { asin, title, items:[offers], ... } — keep the whole
+          // object so analyzeResult can read title AND select the New offer.
+          const result0 = task.result?.[0];
+          if (task.status_code === 20000 && result0) {
+            results.set(taskId, { ...t, data: result0, status: task.status_code });
           } else {
             results.set(taskId, { ...t, data: null, status: task.status_code, error: task.status_message });
           }
@@ -289,8 +307,6 @@ function analyzeResult(product, amazonData) {
     return { issues, fixes };
   }
   const azTitle = amazonData.title || amazonData.product_title;
-  const azPrice = amazonData.price?.current || amazonData.price_from;
-  const azInStock = amazonData.is_available !== false;
   const tm = titleMatches(product.n, azTitle, product.cap);
 
   if (!tm.match) {
@@ -306,7 +322,21 @@ function analyzeResult(product, amazonData) {
     return { issues, fixes };
   }
 
+  // Pick the NEW-condition Buy Box price. Never a used/3rd-party-condition offer.
+  const offer = selectNewOffer(amazonData);
   const storedPrice = product.deals?.amazon?.price;
+  if (!offer) {
+    // The listing has offers but NONE are New (used-only / open-box only). Writing
+    // any of those would repeat the original bug, so refuse and flag for review.
+    issues.push({ type: 'no_new_offer', severity: 'high',
+      msg: `No New-condition offer on listing (lowest any-condition $${lowestAnyConditionPrice(amazonData) ?? '?'}); refusing to write a price`,
+      stored: storedPrice ?? null, amazon: null });
+    fixes.needsReview = true;
+    fixes.quarantinedAt = new Date().toISOString().slice(0, 10);
+    return { issues, fixes };
+  }
+  const azPrice = offer.price;
+
   if (azPrice != null && storedPrice != null) {
     const drift = Math.abs(azPrice - storedPrice) / Math.max(storedPrice, 1);
     if (drift > PRICE_DRIFT_THRESHOLD) {
@@ -318,12 +348,42 @@ function analyzeResult(product, amazonData) {
           msg: `Refused price $${azPrice} — $${(azPrice / (cap / 1000)).toFixed(2)}/TB impossible for ${cap}GB; ASIN likely wrong`,
           stored: storedPrice, amazon: azPrice });
       } else {
-        issues.push({ type: 'price_drift', severity: 'medium',
-          msg: `Drift ${(drift * 100).toFixed(1)}%`, stored: storedPrice, amazon: azPrice });
-        fixes.amazonPrice = azPrice;
+        // Cross-retailer sanity gate: only AUTO-WRITE a confirmed-New price that is
+        // not a wild outlier vs the product's other retailers. Drift-detection is
+        // decoupled from the write — failing the gate flags, it does not block detection.
+        const sanity = amazonPriceSanity(product, azPrice);
+        if (sanity.pass) {
+          issues.push({ type: 'price_drift', severity: 'medium',
+            msg: `Drift ${(drift * 100).toFixed(1)}% — New ${offer.source} ($${azPrice}, ${offer.seller || '?'}); sanity OK`,
+            stored: storedPrice, amazon: azPrice });
+          fixes.amazonPrice = azPrice;
+        } else {
+          issues.push({ type: 'price_drift_flagged', severity: 'high',
+            msg: `Drift ${(drift * 100).toFixed(1)}% — New price $${azPrice} FLAGGED (cls=${sanity.cls}` +
+                 `${sanity.dispConflict ? `, spread=${sanity.spread?.toFixed(2)}x` : ''}); not auto-written`,
+            stored: storedPrice, amazon: azPrice });
+          fixes.needsReview = true;
+          fixes.quarantinedAt = new Date().toISOString().slice(0, 10);
+        }
       }
     }
+  } else if (azPrice != null && storedPrice == null) {
+    // No stored price yet — attach the New price only if it passes the gate.
+    const sanity = amazonPriceSanity(product, azPrice);
+    if (sanity.pass) {
+      fixes.amazonPrice = azPrice;
+    } else {
+      issues.push({ type: 'price_attach_flagged', severity: 'high',
+        msg: `New price $${azPrice} FLAGGED on attach (cls=${sanity.cls}); not auto-written`,
+        stored: null, amazon: azPrice });
+      fixes.needsReview = true;
+      fixes.quarantinedAt = new Date().toISOString().slice(0, 10);
+    }
   }
+
+  // Stock: the sellers endpoint has no single is_available flag; a live New offer
+  // implies in-stock. (No New offer is handled above as needsReview.)
+  const azInStock = true;
   const storedStock = product.deals?.amazon?.inStock;
   if (storedStock !== azInStock) {
     issues.push({ type: 'stock_mismatch', severity: 'medium',
@@ -411,7 +471,7 @@ function writeReports(allIssues, asinRepairs, meta) {
   console.log(`━━━ Verifier v2 ━━━`);
   console.log(`  Tier: ${flags.tier}`);
   console.log(`  Products: ${products.length}`);
-  console.log(`  Est cost: $${(products.length * 0.0015).toFixed(2)}${flags.fixAsins ? ' + ASIN searches' : ''}`);
+  console.log(`  Est cost: $${(products.length * COST_PER_SELLERS_TASK).toFixed(2)} (sellers endpoint)${flags.fixAsins ? ' + ASIN searches' : ''}`);
   console.log(`  Mode: ${flags.dryRun ? 'DRY RUN' : flags.autoFix ? 'AUTO-FIX' : 'REPORT-ONLY'}${flags.fixAsins ? ' + ASIN repair' : ''}`);
   if (flags.dryRun) { console.log(`\nDry run complete.`); return; }
 
@@ -489,7 +549,15 @@ function writeReports(allIssues, asinRepairs, meta) {
       if (apply) {
         if (!perProductFixes[entry.productId]) perProductFixes[entry.productId] = {};
         perProductFixes[entry.productId].newAsinUrl = `https://www.amazon.com/dp/${best.asin}?tag=tiereduptech-20`;
-        if (best.price) perProductFixes[entry.productId].newAsinPrice = best.price;
+        // best.price is from products-search — condition UNKNOWN (could be used/3P).
+        // Only carry it over if it passes the sanity gate; otherwise update the URL
+        // and let the next sellers verification pass set the confirmed New price.
+        if (best.price && amazonPriceSanity(product, best.price).pass) {
+          perProductFixes[entry.productId].newAsinPrice = best.price;
+        } else {
+          perProductFixes[entry.productId].needsReview = true;
+          perProductFixes[entry.productId].quarantinedAt = new Date().toISOString().slice(0, 10);
+        }
       }
     }
     if (mismatches.length) {

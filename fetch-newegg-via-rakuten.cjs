@@ -36,6 +36,8 @@ const path = require('path');
 // attaching a deal whose listing is a different storage capacity than the product.
 const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
 let CAP = null;
+// Newegg first-party-preference + sanity gate (shared ESM, dynamic-imported at startup).
+let NEG = null;
 
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes('--dry-run');
@@ -202,12 +204,11 @@ async function findNeweggMatch(product, token) {
 
   const scored = items.map((it) => ({ item: it, match: scoreMatch(product, it) })).filter((x) => x.match);
   if (scored.length === 0) return { ok: false, reason: 'no_match' };
-  scored.sort((a, b) => {
-    if (a.match.method !== b.match.method) return a.match.method === 'upc' ? -1 : 1;
-    return b.match.score - a.match.score;
-  });
-  const best = scored[0];
-  return { ok: true, item: best.item, method: best.match.method, score: best.match.score };
+  // First-party (N82E) preference — never let a marketplace (9SI) listing win when a
+  // Newegg-Official listing also matched. Price-independent (see newegg-match.js).
+  const best = NEG.selectWithFirstPartyPreference(scored);
+  const firstPartyAvailable = scored.some((x) => NEG.isFirstParty(x.item.sku));
+  return { ok: true, item: best.item, method: best.match.method, score: best.match.score, firstPartyAvailable };
 }
 
 function loadParts() {
@@ -239,6 +240,7 @@ function saveProgress(p) {
   console.log('  ═══════════════════════════════════════════════');
 
   CAP = await import('file://' + process.cwd().replace(/\\/g, '/') + '/normalize-product-name.js');
+  NEG = await import('file://' + process.cwd().replace(/\\/g, '/') + '/newegg-match.js');
 
   const { src, parts } = loadParts();
   let active = parts.filter((p) => !p.needsReview && !p.bundle && p.n && CAT_FILTER[p.c]);
@@ -280,7 +282,7 @@ function saveProgress(p) {
     return;
   }
 
-  let matched = 0, noMatch = 0, errors = 0;
+  let matched = 0, noMatch = 0, errors = 0, flagged = 0;
   const delay = 1000 / REQ_PER_SECOND;
   await getToken();
   console.log('  ✓ Token acquired\n');
@@ -296,21 +298,36 @@ function saveProgress(p) {
       const result = await findNeweggMatch(p, token);
 
       if (result.ok) {
-        p.deals = p.deals || {};
-        p.deals.newegg = {
-          sku: result.item.sku,
-          price: result.item.price,
-          saleprice: result.item.saleprice,
-          linkurl: result.item.linkurl,
-          imageurl: result.item.imageurl,
-          matchedAt: new Date().toISOString().slice(0, 10),
-          matchMethod: result.method,
-          matchScore: Number(result.score.toFixed(2)),
-        };
-        matched++;
-        const tag = result.method === 'upc' ? '✓ UPC' : `~ ${(result.score * 100).toFixed(0)}%`;
-        const priceStr = result.item.saleprice ? `$${result.item.saleprice}` : `$${result.item.price}`;
-        console.log(`${tag}  ${priceStr}`);
+        const sClass = NEG.sellerClass(result.item.sku);
+        const effPrice = (result.item.saleprice && result.item.saleprice > 0)
+          ? result.item.saleprice : result.item.price;
+        const sanity = NEG.neweggSanity(p, effPrice);
+        if (!sanity.pass) {
+          // Chosen price is a wild outlier vs the product's other retailers — do not
+          // attach; flag for review (mirrors the Amazon attach gate). The first-party
+          // selection still happened; only the WRITE is withheld.
+          flagged++;
+          p.needsReview = true;
+          p.quarantinedAt = new Date().toISOString().slice(0, 10);
+          console.log(`⚠ flag ${sanity.cls}${sanity.dispConflict ? ` ${sanity.spread.toFixed(2)}x` : ''} (${sClass})`);
+        } else {
+          p.deals = p.deals || {};
+          p.deals.newegg = {
+            sku: result.item.sku,
+            price: result.item.price,
+            saleprice: result.item.saleprice,
+            linkurl: result.item.linkurl,
+            imageurl: result.item.imageurl,
+            sellerClass: sClass,
+            matchedAt: new Date().toISOString().slice(0, 10),
+            matchMethod: result.method,
+            matchScore: Number(result.score.toFixed(2)),
+          };
+          matched++;
+          const tag = result.method === 'upc' ? '✓ UPC' : `~ ${(result.score * 100).toFixed(0)}%`;
+          const priceStr = result.item.saleprice ? `$${result.item.saleprice}` : `$${result.item.price}`;
+          console.log(`${tag}  ${priceStr} [${sClass}]`);
+        }
       } else {
         noMatch++;
         progress.processedIds.push(p.id);
@@ -335,6 +352,7 @@ function saveProgress(p) {
 
   console.log('\n  ═══ DONE ═══');
   console.log(`  Matched:    ${matched}`);
+  console.log(`  Flagged:    ${flagged} (sanity-gate outliers, not attached)`);
   console.log(`  No match:   ${noMatch}`);
   console.log(`  Errors:     ${errors}`);
   console.log(`  Backup:     ${backup}\n`);

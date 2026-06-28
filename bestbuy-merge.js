@@ -20,6 +20,7 @@ import { readFileSync, writeFileSync, copyFileSync, readdirSync, existsSync } fr
 import { join } from 'node:path';
 import { canonicalizeProductName,
          parseCapacityGB, capacityCompatible, isHardDrive, isPricePlausibleForCapacity } from './normalize-product-name.js';
+import { bestbuyDecision } from './bestbuy-price.js';
 
 const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
 
@@ -267,6 +268,7 @@ function serializeParts(parts) {
     let skippedNoGtin = 0;
     let skipped3p = 0;
     let capacityRejected = 0;
+    let compGated = 0;
 
     for (const bb of products) {
       if (FILTER_3P && bb.subCategory === '3P') {
@@ -326,8 +328,20 @@ function serializeParts(parts) {
                    (typeof existing.price !== "number" || incoming.price < existing.price);
         }
         if (better) {
-          if (!existing) { matched++; matchTiers[matchTier] = (matchTiers[matchTier] || 0) + 1; }
-          match.deals.bestbuy = incoming;
+          // ── COMP-PRICE GATE (B3) ──
+          // Best Buy feeds expose only the comp/list price, never the real member
+          // selling price. If this price is a high outlier vs the product's other
+          // retailers, it's the comp value — do NOT attach it (showing it as the
+          // deal misleads buyers). Flag for review instead.
+          const decision = bestbuyDecision(match, incoming.price);
+          if (decision.action === 'drop') {
+            compGated++;
+            match.needsReview = true;
+            match.quarantinedAt = new Date().toISOString().slice(0, 10);
+          } else {
+            if (!existing) { matched++; matchTiers[matchTier] = (matchTiers[matchTier] || 0) + 1; }
+            match.deals.bestbuy = incoming;
+          }
         }
         listingsConsidered++;
       } else if (!MATCH_ONLY) {
@@ -336,14 +350,14 @@ function serializeParts(parts) {
       }
     }
 
-    stats[category] = { total: products.length, matched, added, skippedNoGtin, skipped3p, capacityRejected };
+    stats[category] = { total: products.length, matched, added, skippedNoGtin, skipped3p, capacityRejected, compGated };
     totalMatched += matched;
     totalAdded += added;
     totalSkippedNoGtin += skippedNoGtin;
     totalSkipped3p += skipped3p;
 
     const matchRate = products.length ? ((matched / products.length) * 100).toFixed(1) : '0.0';
-    console.log(`  ${category.padEnd(14)} ${products.length.toString().padStart(5)} items  match ${matched} (${matchRate}%)  +new ${added}  no-gtin ${skippedNoGtin}  3p ${skipped3p}`);
+    console.log(`  ${category.padEnd(14)} ${products.length.toString().padStart(5)} items  match ${matched} (${matchRate}%)  +new ${added}  no-gtin ${skippedNoGtin}  3p ${skipped3p}  comp-gated ${compGated}`);
   }
 
   console.log('\n━━━ TOTALS ━━━');
