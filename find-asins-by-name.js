@@ -22,6 +22,9 @@
  * Usage: railway run node find-asins-by-name.js
  */
 import { writeFileSync } from 'node:fs';
+import { parseCapacityGB, capacityCompatible, isHardDrive, isPricePlausibleForCapacity } from './normalize-product-name.js';
+
+const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
 
 const DFS_LOGIN = process.env.DATAFORSEO_LOGIN;
 const DFS_PASSWORD = process.env.DATAFORSEO_PASSWORD;
@@ -143,11 +146,14 @@ function pickBestMatch(searchItems, product) {
     .filter(w => w.length > 2);
   const productBrand = product.b.toLowerCase();
 
+  const storedCap = product.cap ?? parseCapacityGB(product.n);
   let best = null;
   for (const item of searchItems) {
     if (item.type !== 'amazon_serp' || !item.asin || !item.title) continue;
     // Skip sponsored & ads
     if (/\bsponsored\b|\bads?\b/i.test(item.title)) continue;
+    // Capacity is a hard gate: never let a wrong-size listing become the match.
+    if (!capacityCompatible(storedCap, parseCapacityGB(item.title))) continue;
 
     const title = item.title.toLowerCase();
     const brandMatch = title.includes(productBrand);
@@ -190,7 +196,12 @@ for (let attempt = 1; attempt <= MAX_POLLS && pending.size > 0; attempt++) {
 
       const items = gj?.tasks?.[0]?.result?.[0]?.items || [];
       const best = pickBestMatch(items, product);
-      if (best && best.score >= 30) {
+      // Final guard: reject a match whose price is physically impossible for the
+      // capacity (wrong-size drive), so we never stamp a bad price/ASIN.
+      const storedCap = product.cap ?? parseCapacityGB(product.n);
+      const priceOk = !STORAGE_CATS.has(product.c) ||
+        isPricePlausibleForCapacity(best?.price, storedCap, { isHDD: isHardDrive(product) });
+      if (best && best.score >= 30 && priceOk) {
         matched.set(product.id, {
           asin: best.asin,
           img: best.image_url,

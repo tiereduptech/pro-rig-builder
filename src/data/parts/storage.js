@@ -3350,15 +3350,7 @@ export default [
     "pr": 219.99,
     "msrp": 219.99,
     "r": 4.5,
-    "asin": "B0BJVPS4SB",
     "reviews": 2224,
-    "deals": {
-      "amazon": {
-        "price": 22.99,
-        "url": "https://www.amazon.com/dp/B0BJVPS4SB?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81M+7O5fdaL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/7112-AGf6nL._AC_SL1500_.jpg",
@@ -8569,14 +8561,8 @@ export default [
     "pr": 219.99,
     "msrp": 219.99,
     "r": 4.4,
-    "asin": "B0CG1QQP3Y",
     "reviews": 1939,
     "deals": {
-      "amazon": {
-        "price": 29.59,
-        "url": "https://www.amazon.com/dp/B0CG1QQP3Y?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIA1DSKD93105",
         "price": 299.99,
@@ -22210,7 +22196,7 @@ export default [
   },
   {
     "id": 50519,
-    "n": "Crucial - T710 1TB Internal SSD PCIe Gen 5 x4 NVMe M.2 with 3D NAND Memory",
+    "n": "Crucial - T710 2TB Internal SSD PCIe Gen 5 x4 NVMe M.2 with 3D NAND Memory",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/e0a31627-aca0-4f3e-9462-86979c1260e6.jpg",
     "c": "Storage",
     "b": "Crucial",
@@ -22685,7 +22671,7 @@ export default [
         "inStock": true
       }
     },
-    "cap": 5000,
+    "cap": 500,
     "form": "M.2 2280",
     "interface": "NVMe",
     "pcie": 4,

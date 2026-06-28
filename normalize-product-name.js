@@ -129,4 +129,77 @@ export function extractModelToken(name, category) {
   return parts[parts.length - 1]; // last segment is always the model
 }
 
-export default { canonicalizeProductName, sameCanonicalIdentity, extractModelToken };
+// ═══════════════════════════════════════════════════════════════════
+// Capacity guards — shared by every ASIN-matching / price-copy path so a
+// listing of the wrong capacity can never be attached to a product.
+//
+// Root cause they defend against: storage vendors (KingSpec, ORICO, …) reuse
+// one boilerplate title across every capacity, differing only in the capacity
+// token. Token-overlap scoring therefore "matches" a 128GB listing to a 2TB
+// product. These helpers make capacity a hard gate, not a soft signal.
+// ═══════════════════════════════════════════════════════════════════
+
+/**
+ * Parse the FIRST storage capacity found in free text, normalized to GB.
+ * "2TB 2.5 SSD …" → 2000; "KingSpec 128GB …" → 128; "550MB/s" → ignored.
+ * @returns {number|null} capacity in GB, or null if none present.
+ */
+export function parseCapacityGB(text) {
+  if (!text) return null;
+  const m = String(text).match(/(\d+(?:\.\d+)?)\s*(TB|GB)\b/i);
+  if (!m) return null;
+  const v = parseFloat(m[1]);
+  if (!isFinite(v) || v <= 0) return null;
+  return /tb/i.test(m[2]) ? v * 1000 : v;
+}
+
+/**
+ * Do two capacities refer to the same drive size, allowing marketing rounding?
+ * Matches 500↔512, 240/250↔256, 960↔1000, 1.92TB(1920)↔2000, 120↔128.
+ * Rejects real tier gaps: 128↔2000, 1000↔2000, 500↔5000.
+ * Rule: within 16GB absolute (covers small-cap 240/256) OR within 8%
+ *       (covers 512/500, 1920/2000) — distinct tiers are ≥~2x apart, never <8%.
+ */
+export function capacitiesMatch(a, b) {
+  if (a == null || b == null) return false;
+  const hi = Math.max(a, b), lo = Math.min(a, b);
+  if (hi - lo <= 16) return true;
+  return (hi - lo) / hi <= 0.08;
+}
+
+/**
+ * Non-blocking variant: returns true when capacities agree OR when at least one
+ * side has no parseable capacity (can't compare → don't block non-storage cats).
+ * Use this as the gate; only an ACTIVE conflict (both present, disagree) blocks.
+ */
+export function capacityCompatible(a, b) {
+  if (a == null || b == null) return true;
+  return capacitiesMatch(a, b);
+}
+
+/**
+ * Heuristic: is this product a spinning hard drive (vs SSD/NVMe)?
+ * Drives the $/TB floor — HDD NAND-free media floors lower than SSD.
+ */
+export function isHardDrive(product) {
+  const s = `${product?.storageType || ''} ${product?.form || ''} ${product?.formFactor || ''} ${product?.n || ''}`.toLowerCase();
+  if (/\bnvme\b|\bssd\b|solid state|\bm\.?2\b/.test(s)) return false;
+  return /\bhdd\b|hard drive|hard disk|7200|5400|\brpm\b|barracuda|ironwolf|wd red|surveillance|skyhawk|exos|wd purple|wd black \d/.test(s);
+}
+
+/**
+ * Is a price physically possible for the stated capacity?
+ * SSD retail NAND can't sell below ~$15/TB; HDD below ~$8/TB. A $22.99 "2TB"
+ * SSD ($11.5/TB) is impossible — the price belongs to a smaller drive.
+ * @returns {boolean} true if plausible or not judgeable; false if impossibly cheap.
+ */
+export function isPricePlausibleForCapacity(price, capGB, { isHDD = false } = {}) {
+  if (price == null || !capGB || capGB <= 0) return true; // can't judge → don't block
+  const perTB = price / (capGB / 1000);
+  return perTB >= (isHDD ? 8 : 15);
+}
+
+export default {
+  canonicalizeProductName, sameCanonicalIdentity, extractModelToken,
+  parseCapacityGB, capacitiesMatch, capacityCompatible, isHardDrive, isPricePlausibleForCapacity,
+};

@@ -21,7 +21,12 @@
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
-import { canonicalizeProductName, extractModelToken } from './normalize-product-name.js';
+import { canonicalizeProductName, extractModelToken,
+         parseCapacityGB, capacityCompatible, capacitiesMatch,
+         isHardDrive, isPricePlausibleForCapacity } from './normalize-product-name.js';
+
+// Categories where a stated capacity is a hard identity gate.
+const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
 
 const LOGIN = process.env.DATAFORSEO_LOGIN;
 const PASSWORD = process.env.DATAFORSEO_PASSWORD;
@@ -132,7 +137,7 @@ function normalize(s) {
   return String(s || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
-function titleMatches(storedName, amazonTitle) {
+function titleMatches(storedName, amazonTitle, storedCap = null) {
   if (!storedName || !amazonTitle) return { match: false, score: 0 };
   const a = normalize(storedName);
   const b = normalize(amazonTitle);
@@ -144,7 +149,14 @@ function titleMatches(storedName, amazonTitle) {
   const score = hits / tokensA.size;
   const modelTokensA = [...tokensA].filter(t => /\d/.test(t) && /[a-z]/.test(t));
   const modelMatch = modelTokensA.length === 0 || modelTokensA.some(t => tokensB.has(t));
-  return { match: score >= 0.5 && modelMatch, score: Math.round(score * 100) / 100 };
+  // Capacity is a HARD gate: vendors reuse one title across every capacity, so
+  // token overlap alone "matches" a 128GB listing to a 2TB product. If the
+  // stored capacity (cap field, else parsed from name) and the candidate
+  // title's capacity both exist and disagree beyond rounding → different product.
+  const capA = storedCap ?? parseCapacityGB(storedName);
+  const capB = parseCapacityGB(amazonTitle);
+  const capConflict = !capacityCompatible(capA, capB);
+  return { match: score >= 0.5 && modelMatch && !capConflict, score: Math.round(score * 100) / 100, capConflict };
 }
 
 async function loadCatalog() {
@@ -259,7 +271,9 @@ async function findBestASIN(product) {
     const title = r.title || r.product_title;
     const asin = r.asin || r.data_asin;
     if (!asin || !title) continue;
-    const match = titleMatches(product.n, title);
+    const match = titleMatches(product.n, title, product.cap);
+    // Never let a wrong-capacity listing become the chosen candidate.
+    if (match.capConflict) continue;
     if (!best || match.score > best.score) {
       best = { asin, title, score: match.score, price: r.price?.current || r.price_from };
     }
@@ -277,11 +291,18 @@ function analyzeResult(product, amazonData) {
   const azTitle = amazonData.title || amazonData.product_title;
   const azPrice = amazonData.price?.current || amazonData.price_from;
   const azInStock = amazonData.is_available !== false;
-  const tm = titleMatches(product.n, azTitle);
+  const tm = titleMatches(product.n, azTitle, product.cap);
 
   if (!tm.match) {
-    issues.push({ type: 'title_mismatch', severity: 'high',
-      msg: `Title mismatch (score=${tm.score})`, stored: product.n, amazon: azTitle });
+    // A capacity conflict is a wrong-product attach, not just a renamed listing.
+    if (tm.capConflict) {
+      issues.push({ type: 'capacity_mismatch', severity: 'high',
+        msg: `Capacity mismatch — stored ${product.cap ?? parseCapacityGB(product.n)}GB vs listing ${parseCapacityGB(azTitle)}GB; refusing to trust ASIN`,
+        stored: product.n, amazon: azTitle });
+    } else {
+      issues.push({ type: 'title_mismatch', severity: 'high',
+        msg: `Title mismatch (score=${tm.score})`, stored: product.n, amazon: azTitle });
+    }
     return { issues, fixes };
   }
 
@@ -289,9 +310,18 @@ function analyzeResult(product, amazonData) {
   if (azPrice != null && storedPrice != null) {
     const drift = Math.abs(azPrice - storedPrice) / Math.max(storedPrice, 1);
     if (drift > PRICE_DRIFT_THRESHOLD) {
-      issues.push({ type: 'price_drift', severity: 'medium',
-        msg: `Drift ${(drift * 100).toFixed(1)}%`, stored: storedPrice, amazon: azPrice });
-      fixes.amazonPrice = azPrice;
+      // Defense-in-depth: never copy a price that's physically impossible for the
+      // capacity, even if the title passed. Catches a wrong-ASIN that slipped the gate.
+      const cap = product.cap ?? parseCapacityGB(product.n);
+      if (STORAGE_CATS.has(product.c) && !isPricePlausibleForCapacity(azPrice, cap, { isHDD: isHardDrive(product) })) {
+        issues.push({ type: 'implausible_price', severity: 'high',
+          msg: `Refused price $${azPrice} — $${(azPrice / (cap / 1000)).toFixed(2)}/TB impossible for ${cap}GB; ASIN likely wrong`,
+          stored: storedPrice, amazon: azPrice });
+      } else {
+        issues.push({ type: 'price_drift', severity: 'medium',
+          msg: `Drift ${(drift * 100).toFixed(1)}%`, stored: storedPrice, amazon: azPrice });
+        fixes.amazonPrice = azPrice;
+      }
     }
   }
   const storedStock = product.deals?.amazon?.inStock;
@@ -423,12 +453,19 @@ function writeReports(allIssues, asinRepairs, meta) {
         const searchResult = await findBestASIN(product);
         if (searchResult) {
           const strictMatch = hasExactModelToken(product.n, searchResult.title || '', product.c);
-          if (strictMatch && searchResult.score >= 0.5) {
+          // Capacity must agree, and the candidate's price must be physically
+          // possible for the capacity — never attach a wrong-size/impossible ASIN.
+          const storedCap = product.cap ?? parseCapacityGB(product.n);
+          const capOk = capacityCompatible(storedCap, parseCapacityGB(searchResult.title || ''));
+          const priceOk = !STORAGE_CATS.has(product.c) ||
+            isPricePlausibleForCapacity(searchResult.price, storedCap, { isHDD: isHardDrive(product) });
+          if (strictMatch && capOk && priceOk && searchResult.score >= 0.5) {
             best = searchResult;
             viaSearch++;
             console.log(`  ${i+1}/${mismatches.length}: "${product.n.slice(0, 50)}" -> search hit ${best.asin} (score ${best.score})`);
           } else {
-            console.log(`  ${i+1}/${mismatches.length}: "${product.n.slice(0, 50)}" -> quarantine (score ${searchResult.score}, strict=${strictMatch})`);
+            const why = !capOk ? 'capacity' : !priceOk ? '$/TB' : !strictMatch ? 'model' : 'score';
+            console.log(`  ${i+1}/${mismatches.length}: "${product.n.slice(0, 50)}" -> quarantine (reject=${why}, score ${searchResult.score})`);
           }
         }
       }
