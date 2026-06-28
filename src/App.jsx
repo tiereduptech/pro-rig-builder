@@ -1406,7 +1406,7 @@ function ScannerPage({go}) {
           Run a quick scan and get personalized, budget-aware upgrade recommendations tailored to your exact hardware. Free, no signup.
         </p>
         <div style={{display:"flex",gap:12,flexWrap:"wrap",alignItems:"center"}}>
-          <a href="https://github.com/tiereduptech/pro-rig-builder/releases/latest/download/ProRigScanner.exe" download style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,padding:"13px 24px",background:"var(--accent)",color:"#fff",border:"1px solid var(--accent)",cursor:"pointer",textDecoration:"none",display:"inline-block"}}>Download for Windows</a>
+          <a href="https://github.com/tiereduptech/pro-rig-builder/releases/download/scanner-v2.3.0/ProRigScanner.exe" download style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,padding:"13px 24px",background:"var(--accent)",color:"#fff",border:"1px solid var(--accent)",cursor:"pointer",textDecoration:"none",display:"inline-block"}}>Download for Windows</a>
           <button onClick={()=>go("search")} style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:500,padding:"13px 24px",background:"none",color:"var(--txt)",border:"1px solid var(--bdr)",cursor:"pointer"}}>Browse Parts Manually</button>
         </div>
         <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",marginTop:16,letterSpacing:"0.04em",textTransform:"uppercase"}}>
@@ -1498,7 +1498,7 @@ function ScannerPage({go}) {
           <p style={{fontFamily:"var(--ff)",fontSize:16,color:"var(--dim)",lineHeight:1.6,maxWidth:560,margin:"0 0 28px"}}>
             Download the Pro Rig Scanner and get personalized recommendations in under a minute.
           </p>
-          <a href="https://github.com/tiereduptech/pro-rig-builder/releases/latest/download/ProRigScanner.exe" download style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,padding:"14px 28px",background:"var(--accent)",color:"#fff",border:"1px solid var(--accent)",cursor:"pointer",textDecoration:"none",display:"inline-block"}}>Download Pro Rig Scanner</a>
+          <a href="https://github.com/tiereduptech/pro-rig-builder/releases/download/scanner-v2.3.0/ProRigScanner.exe" download style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,padding:"14px 28px",background:"var(--accent)",color:"#fff",border:"1px solid var(--accent)",cursor:"pointer",textDecoration:"none",display:"inline-block"}}>Download Pro Rig Scanner</a>
           <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",marginTop:16,letterSpacing:"0.04em",textTransform:"uppercase"}}>
             Free &middot; Windows 10/11 &middot; 100% private &middot; No account &middot; No tracking
           </div>

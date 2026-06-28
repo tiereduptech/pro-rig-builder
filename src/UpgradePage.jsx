@@ -1863,7 +1863,7 @@ function MissingSpecsView() {
         This page shows personalized upgrade recommendations based on your PC's hardware.
         Download the Pro Rig Scanner to get started.
       </p>
-      <a href="/downloads/ProRigScanner.exe"
+      <a href="https://github.com/tiereduptech/pro-rig-builder/releases/download/scanner-v2.3.0/ProRigScanner.exe"
          style={{padding:"12px 24px", background:"var(--accent)", color:"#fff", textDecoration:"none", borderRadius:10, fontFamily:"var(--ff)", fontSize:14, fontWeight:700}}>
         Download Pro Rig Scanner →
       </a>
