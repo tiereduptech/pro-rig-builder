@@ -39,6 +39,20 @@ namespace ProRigScanner
         {
             string baseUrl = args.Contains("--dev") ? DEV_URL : PROD_URL;
 
+            // ── Auto-update BEFORE scanning (matches the WPF scanner's flow). ──
+            // Skip in --dev (never replace a local test build), --print (test/CI
+            // output mode), or --no-update (explicit bypass). If an update is
+            // applied, exit now so the swap helper can replace this exe and
+            // relaunch it; the relaunched copy will be current and scan normally.
+            bool skipUpdate = args.Contains("--dev")
+                           || args.Contains("--no-update")
+                           || args.Contains("--print");
+            if (!skipUpdate)
+            {
+                bool willRelaunch = Updater.CheckAndApplyUpdate().GetAwaiter().GetResult();
+                if (willRelaunch) return 0;
+            }
+
             Console.WriteLine("Scanning...");
 
             var specs = new SystemSpecs

@@ -7,7 +7,10 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <AssemblyName>ProRigScannerLite</AssemblyName>
+    <!-- Output exe MUST be ProRigScanner.exe (NOT ...Lite.exe): that is the asset
+         name the in-app auto-updater downloads, so the lite build replaces the
+         WPF scanner in-place. The project file stays named *Lite to mark intent. -->
+    <AssemblyName>ProRigScanner</AssemblyName>
     <RootNamespace>ProRigScanner</RootNamespace>
 
     <!-- No console window pops up: it's a windows-subsystem exe that does its work
@@ -32,10 +35,12 @@
     <InvariantGlobalization>true</InvariantGlobalization>
     <Deterministic>true</Deterministic>
 
-    <!-- Versioning / ownership metadata -->
-    <Version>1.0.0</Version>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <!-- Versioning / ownership metadata.
+         2.3.0 is intentionally higher than the WPF scanner's 2.2.0 so the existing
+         auto-updater sees this lite build as newer and pushes it to current users. -->
+    <Version>2.3.0</Version>
+    <AssemblyVersion>2.3.0.0</AssemblyVersion>
+    <FileVersion>2.3.0.0</FileVersion>
     <Authors>Coby / TieredUp Tech, Inc.</Authors>
     <Company>TieredUp Tech, Inc.</Company>
     <Product>Pro Rig Builder Scanner Lite</Product>
