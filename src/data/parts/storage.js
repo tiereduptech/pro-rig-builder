@@ -448,16 +448,6 @@ export default [
         "price": 371,
         "url": "https://www.amazon.com/dp/B0CK2TC9XQ?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBFJRK7E7585",
-        "price": 269,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836465331712289710103&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-t500-nvme%2Fp%2FN82E16820156388%3Fitem%3D9SIBFJRK7E7585",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-387-01.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.8
       }
     },
     "pcie": 4,
@@ -516,16 +506,6 @@ export default [
         "price": 188.57,
         "url": "https://www.amazon.com/dp/B0DN7CYYSD?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBTK0KUW0405",
-        "price": 129,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317965292383522837329&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-250gb-wd-blue-sn580-nvme-1-4%2Fp%2FN82E16820250256%3Fitem%3D9SIBTK0KUW0405",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-256-01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.83
       }
     },
     "pcie": 4,
@@ -793,16 +773,6 @@ export default [
         "price": 245,
         "url": "https://www.amazon.com/dp/B07YD5F561?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIC5YTKWA4851",
-        "price": 236.9,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312097372677943806442&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-mx500-sata%2Fp%2FN82E16820156174%3Fitem%3D9SIC5YTKWA4851",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-174-V09.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.8
       }
     },
     "nand": "TLC",
@@ -1511,16 +1481,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0DC8RVRBZ?tag=tiereduptech-20",
         "inStock": true
       },
-      "newegg": {
-        "sku": "9SIC0X3KUB9545",
-        "price": 577,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832175779082903938290&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-kc600-4tb%2Fp%2F2U3-000C-00017%3Fitem%3D9SIC0X3KUB9545",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BEC2D2603100FPH6U0B.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.89
-      },
       "bestbuy": {
         "price": 297.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12503865&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-2tb-2280-pcie-gen4-nvme-ssd-up-to-7100-mb-s-3d-nand-acronis-offer%2FJX8PSKCYK6&intsrc=APIG_28060",
@@ -1670,16 +1630,6 @@ export default [
         "price": 112.99,
         "url": "https://www.amazon.com/dp/B0DBR9RZLV?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838719750966214387314",
-        "price": 116,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838719750966214387314&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-1tb-snv2s%2Fp%2FN82E16820242901%3Fitem%3D9SIBFJRKCT1929",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-242-901-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:04.378Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       },
       "bestbuy": {
         "price": 114.99,
@@ -5753,16 +5703,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0B25ML2FH?tag=tiereduptech-20",
         "inStock": true
       },
-      "newegg": {
-        "sku": "9SIBZW0KVP1108",
-        "price": 227,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316616959076972713080&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-p3-plus-nvme%2Fp%2FN82E16820156300%3Fitem%3D9SIBZW0KVP1108",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-299-01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.64
-      },
       "bestbuy": {
         "price": 537.98,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12614506&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p3-plus-2tb-internal-ssd-pcie-gen-4-x4-nvme%2FJX8PSK7Z2Q&intsrc=APIG_28060",
@@ -6181,16 +6121,6 @@ export default [
         "price": 132.99,
         "url": "https://www.amazon.com/dp/B0CM8QWND1?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBSAYK623731",
-        "price": 119.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315495476780050340263&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffanxiang-256gb-s101q%2Fp%2F0D9-00WY-000A0%3Fitem%3D9SIBSAYK623731",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BSAYS2403050D4QNUDD.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.9
       }
     },
     "additionalImages": [
@@ -7730,16 +7660,6 @@ export default [
         "price": 219.99,
         "url": "https://www.amazon.com/dp/B0BWXK95PY?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBSAYK623732",
-        "price": 189.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310421475642990208659&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffanxiang-256gb-s101q%2Fp%2F0D9-00WY-000A1%3Fitem%3D9SIBSAYK623732",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BSAYS2403050D4QNUDD.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.92
       }
     },
     "additionalImages": [
@@ -8045,16 +7965,6 @@ export default [
         "price": 209.99,
         "url": "https://www.amazon.com/dp/B0CM8M8293?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBSAYK623732",
-        "price": 189.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310421475642990208659&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffanxiang-256gb-s101q%2Fp%2F0D9-00WY-000A1%3Fitem%3D9SIBSAYK623732",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BSAYS2403050D4QNUDD.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.9
       }
     },
     "additionalImages": [
@@ -8709,16 +8619,6 @@ export default [
         "price": 249.99,
         "url": "https://www.amazon.com/dp/B0CM941D89?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBSAYK658919",
-        "price": 249.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312581737932755011623&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffanxiang-1tb-s690q%2Fp%2F0D9-00WY-000A8%3Fitem%3D9SIBSAYK658919",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BSAYS2403070FCQN9B5.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.9
       }
     },
     "additionalImages": [
@@ -9706,16 +9606,6 @@ export default [
         "price": 359.99,
         "url": "https://www.amazon.com/dp/B07RSFX96W?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIAAEEK1C2124",
-        "price": 465.1,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314975891686903669324&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-exos-x14-enterprise-st12000nm0008-12tb%2Fp%2F1Z4-002P-00JV2%3Fitem%3D9SIAAEEK1C2124",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A994S200515oSzBc.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.69
       }
     },
     "additionalImages": [
@@ -9902,16 +9792,6 @@ export default [
         "price": 195,
         "url": "https://www.amazon.com/dp/B0F25F243C?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIA4P0KKY0218",
-        "price": 439.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839045209539431464521&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flexar-2tb-nq780%2Fp%2F0D9-003V-000C8%3Fitem%3D9SIA4P0KKY0218",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2509040ISF6R3E.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.56
       }
     },
     "additionalImages": [
@@ -10708,16 +10588,6 @@ export default [
         "url": "https://www.amazon.com/dp/B09QV692XY?tag=tiereduptech-20",
         "inStock": true
       },
-      "newegg": {
-        "sku": "9SIC5YTKWG6550",
-        "price": 335.48,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315890253290993950790&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-2tb-black-sn770-nvme%2Fp%2FN82E16820250218%3Fitem%3D9SIC5YTKWG6550",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-218-V05.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.93
-      },
       "bestbuy": {
         "price": 259.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12225089&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-wds100t3x0e-black-1tb-sn770-nvme-gen4-pcie-m-2-2280-up-to-5150-mb-s-internal-gaming-ssd-solid-state-drive%2FJXTHCJVKWL&intsrc=APIG_28060",
@@ -10842,16 +10712,6 @@ export default [
         "price": 116.44,
         "url": "https://www.amazon.com/dp/B09XDJ673F?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBSAYK623731",
-        "price": 119.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315495476780050340263&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffanxiang-256gb-s101q%2Fp%2F0D9-00WY-000A0%3Fitem%3D9SIBSAYK623731",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BSAYS2403050D4QNUDD.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.75
       }
     },
     "additionalImages": [
@@ -11040,16 +10900,6 @@ export default [
         "price": 269.9,
         "url": "https://www.amazon.com/dp/B083XVD1FP?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "1Z4-0002-01PS8",
-        "price": 374.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833929879245805629505&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-red-pro-wd103kfbx-10tb-enterprise-nas-hard-drives-7200-rpm%2Fp%2F1Z4-0002-01PS8%3Fitem%3D1Z4-0002-01PS8",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2411280ESD3UF2.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.77
       }
     },
     "additionalImages": [
@@ -11275,16 +11125,6 @@ export default [
         "price": 235,
         "url": "https://www.amazon.com/dp/B087QTVCHH?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458312803782353384814625",
-        "price": 239.67,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312803782353384814625&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwd40ezaz-14tb%2Fp%2F1Z4-0002-01CG2%3Fitem%3D9SIC5YTKW67411",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V009D210318DLJQP.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.732Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -11708,16 +11548,6 @@ export default [
         "price": 488.87,
         "url": "https://www.amazon.com/dp/B07B1HX5KN?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "1Z4-0002-01PS8",
-        "price": 374.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833929879245805629505&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-red-pro-wd103kfbx-10tb-enterprise-nas-hard-drives-7200-rpm%2Fp%2F1Z4-0002-01PS8%3Fitem%3D1Z4-0002-01PS8",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2411280ESD3UF2.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.94
       }
     },
     "additionalImages": [
@@ -11754,16 +11584,6 @@ export default [
         "price": 449.99,
         "url": "https://www.amazon.com/dp/B0C6DL33T5?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBSAYKAA8934",
-        "price": 95.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832775557547231845652&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffanxiang-500gb%2Fp%2F0D9-00WY-000B1%3Fitem%3D9SIBSAYKAA8934",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BSAYS2408190EOE7VD0.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.5
       }
     },
     "discount": 8,
@@ -12872,16 +12692,6 @@ export default [
         "price": 469.99,
         "url": "https://www.amazon.com/dp/B0CPPSJ6SY?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBSAYK658918",
-        "price": 149.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832140620784875132744&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffanxiang-1tb-s690q%2Fp%2F0D9-00WY-000A7%3Fitem%3D9SIBSAYK658918",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BSAYS2403070FCQN9B5.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.77
       }
     },
     "additionalImages": [
@@ -13949,16 +13759,6 @@ export default [
         "price": 1474.45,
         "url": "https://www.amazon.com/dp/B089RD13TX?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBFJRJ949566",
-        "price": 479.95,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832644884334702951982&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-2tb-870-qvo-series%2Fp%2FN82E16820147782%3Fitem%3D9SIBFJRJ949566",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-782-V01.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.75
       }
     },
     "additionalImages": [
@@ -14146,16 +13946,6 @@ export default [
         "price": 459.99,
         "url": "https://www.amazon.com/dp/B0DP6Q5ZMX?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBSAYKAA8934",
-        "price": 95.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832775557547231845652&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffanxiang-500gb%2Fp%2F0D9-00WY-000B1%3Fitem%3D9SIBSAYKAA8934",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BSAYS2408190EOE7VD0.jpg",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.71
       }
     },
     "additionalImages": [
@@ -14669,16 +14459,6 @@ export default [
         "price": 286.05,
         "url": "https://www.amazon.com/dp/B0C3K344ZV?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIBFJRKA54231",
-        "price": 399,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314486925269849937897&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-t705-nvme%2Fp%2FN82E16820156401%3Fitem%3D9SIBFJRKA54231",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-401-02.png",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.73
       }
     },
     "additionalImages": [
@@ -20877,16 +20657,6 @@ export default [
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541326&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850p-2tb-internal-ssd-pcie-gen-4-x4-with-heatsink-for-ps5%2FJXJ62C6HFY&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIC3DRKXU9109",
-        "price": 269,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313464711288694958135&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-blue-sa510%2Fp%2FN82E16820250232%3Fitem%3D9SIC3DRKXU9109",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-232-07.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.86
       }
     },
     "cap": 2000,
@@ -22210,16 +21980,6 @@ export default [
         "price": 323.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636632&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636632.p%3FskuId%3D6636632",
         "inStock": false
-      },
-      "newegg": {
-        "sku": "9SIBFJRKT69622",
-        "price": 246,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837012330783942313597&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-t710-nvme%2Fp%2FN82E16820156443%3Fitem%3D9SIBFJRKT69622",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-443-01.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.54
       }
     },
     "cap": 2000,
@@ -22782,16 +22542,6 @@ export default [
         "price": 459.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672831&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672831.p%3FskuId%3D6672831",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16820248263",
-        "price": 499.99,
-        "saleprice": 459.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834519086283339330412&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-1tb-firecuda-530r%2Fp%2FN82E16820248263%3Fitem%3DN82E16820248263",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-248-263-01.png",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1
       }
     },
     "cap": 2000,
@@ -22822,16 +22572,6 @@ export default [
         "price": 829.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672833&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672833.p%3FskuId%3D6672833",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16820248264",
-        "price": 899.99,
-        "saleprice": 829.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583202024701481931371&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-1tb-firecuda-530r%2Fp%2FN82E16820248264%3Fitem%3DN82E16820248264",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-248-264-01.png",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1
       }
     },
     "cap": 4000,
@@ -23277,16 +23017,6 @@ export default [
         "price": 304.49,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013233&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-purple-8tb-surveillance-internal-hard-drive%2FJXTHCJV5KZ&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIA2W0JWU5561",
-        "price": 239.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318414155613505484744&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwd43purz-4tb-for-video-surveillance-5400-rpm%2Fp%2FN82E16822234549%3Fitem%3D9SIA2W0JWU5561",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-549-07.png",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.86
       }
     },
     "cap": 8000,
@@ -23552,16 +23282,6 @@ export default [
         "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616036&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-barracuda-2tb-internal-hard-drive-for-desktops%2FJ37C5HK868&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIAAEEKG08061",
-        "price": 94.95,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836122686745272732664&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-1tb-st1000lm048%2Fp%2FN82E16822179108%3Fitem%3D9SIAAEEKG08061",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-108-09.png",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.63
       }
     },
     "cap": 2000,
@@ -23943,16 +23663,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0BD5LWM89?tag=tiereduptech-20",
         "price": 625,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIAMG8KZZ4807",
-        "price": 989.77,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833573617786727510823&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-2tb-game-drive-for-ps-nvme-1-4%2Fp%2FN82E16820248248%3Fitem%3D9SIAMG8KZZ4807",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-248-248-12.png",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.69
       }
     },
     "cap": 4000,
@@ -24016,16 +23726,6 @@ export default [
         "url": "https://www.amazon.com/dp/B073SBRHH6?tag=tiereduptech-20",
         "price": 269.99,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIC4RPKWF9829",
-        "price": 158.88,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836481555790747792573&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-blue-sn550-nvme-1tb%2Fp%2FN82E16820250135%3Fitem%3D9SIC4RPKWF9829",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-135-05.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.58
       }
     },
     "cap": 2000,
@@ -24610,16 +24310,6 @@ export default [
         "url": "https://www.amazon.com/dp/B09ZYPTXS4?tag=tiereduptech-20",
         "price": 129.99,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIC3DRKXU9136",
-        "price": 177.81,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310105223525609367105&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-blue-sa510%2Fp%2FN82E16820250229%3Fitem%3D9SIC3DRKXU9136",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-229-07.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.9
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",
@@ -24915,16 +24605,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0D9WT512W?tag=tiereduptech-20",
         "price": 1499.95,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIC4RPKUR4483",
-        "price": 606.96,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839065462787582221391&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-4tb-black-sn850x-nvme%2Fp%2FN82E16820250244%3Fitem%3D9SIC4RPKUR4483",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-244-16.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.78
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -24951,16 +24631,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0DY2TB1TD?tag=tiereduptech-20",
         "price": 2045.49,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16820147902",
-        "price": 339.99,
-        "saleprice": 206.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315194564439748350358&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-1tb-9100-pro-nvme-2-0%2Fp%2FN82E16820147902%3Fitem%3DN82E16820147902",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-902-17.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.96
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -26564,16 +26234,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0D24TQK3Q?tag=tiereduptech-20",
         "price": 973.99,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "9SIA0ZXJHY0948",
-        "price": 989.46,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583845795124531630200&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fred-pro-wd221kfgx-22tb-enterprise-nas-hard-drives-7200-rpm%2Fp%2FN82E16822234527%3Fitem%3D9SIA0ZXJHY0948",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-527-08.png",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.89
       }
     },
     "addedAt": "2026-05-15T14:34:31.783Z",

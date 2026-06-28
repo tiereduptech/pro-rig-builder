@@ -20,6 +20,11 @@ const readline = require('readline');
 
 const APPLY = process.argv.includes('--apply');
 
+// Capacity guard (shared, ESM) — loaded at startup. Blocks attaching a Newegg
+// listing of a different storage capacity than the product.
+const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
+let CAP = null;
+
 const FEED_PATH = 'catalog-build/feeds/44583/44583_4681679_mp.txt.gz';
 const ORDER = [
   'sku','product_name','newegg_item_number','primary_category',
@@ -140,6 +145,8 @@ function priceFromRecord(rec) {
   console.log('Phase 2 — Name-match Newegg feed to no-UPC products');
   console.log('Mode:', APPLY ? 'APPLY' : 'REPORT-ONLY');
 
+  CAP = await import('file://' + process.cwd().replace(/\\/g, '/') + '/normalize-product-name.js');
+
   // Load parts.js
   const partsMod = await import('file://' + process.cwd().replace(/\\/g, '/') + '/src/data/parts.js?t=' + Date.now());
   const parts = [...partsMod.PARTS];
@@ -194,8 +201,15 @@ function priceFromRecord(rec) {
       if (!modelTokensMatch(rec.product_name, part.n)) continue;
       if (!distinguishersMatch(rec.product_name, part.n)) continue;
 
+      // Capacity guard — model-token match misses capacity when the product NAME
+      // omits it but the cap field has it; enforce it explicitly here.
+      const storedCap = part.cap != null ? part.cap : CAP.parseCapacityGB(part.n);
+      if (!CAP.capacityCompatible(storedCap, CAP.parseCapacityGB(rec.product_name))) continue;
+
       const pricing = priceFromRecord(rec);
       if (!pricing) continue;
+      if (STORAGE_CATS.has(part.c) &&
+          !CAP.isPricePlausibleForCapacity(pricing.price, storedCap, { isHDD: CAP.isHardDrive(part) })) continue;
 
       productCandidates.get(part.id).matches.push({
         rec,

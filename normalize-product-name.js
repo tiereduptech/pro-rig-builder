@@ -146,11 +146,17 @@ export function extractModelToken(name, category) {
  */
 export function parseCapacityGB(text) {
   if (!text) return null;
-  const m = String(text).match(/(\d+(?:\.\d+)?)\s*(TB|GB)\b/i);
-  if (!m) return null;
-  const v = parseFloat(m[1]);
-  if (!isFinite(v) || v <= 0) return null;
-  return /tb/i.test(m[2]) ? v * 1000 : v;
+  // Scan for capacity tokens, skipping transfer rates: "6Gb/s", "550 GB/s", "6Gbps"
+  // (the optional trailing /s or ps marks a rate, not a size). Return the first real size.
+  const re = /(\d+(?:\.\d+)?)\s*(TB|GB)\b(\s*\/?\s*s\b|ps\b)?/gi;
+  let m;
+  while ((m = re.exec(String(text))) !== null) {
+    if (m[3]) continue; // transfer-rate suffix → not a capacity
+    const v = parseFloat(m[1]);
+    if (!isFinite(v) || v <= 0) continue;
+    return /tb/i.test(m[2]) ? v * 1000 : v;
+  }
+  return null;
 }
 
 /**

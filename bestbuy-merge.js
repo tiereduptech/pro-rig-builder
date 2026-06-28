@@ -18,7 +18,10 @@
 
 import { readFileSync, writeFileSync, copyFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { canonicalizeProductName } from './normalize-product-name.js';
+import { canonicalizeProductName,
+         parseCapacityGB, capacityCompatible, isHardDrive, isPricePlausibleForCapacity } from './normalize-product-name.js';
+
+const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
 
 const PARTS_PATH = join(process.cwd(), 'src', 'data', 'parts.js');
 const BESTBUY_DIR = join(process.cwd(), 'catalog-build', 'bestbuy-enriched');
@@ -263,6 +266,7 @@ function serializeParts(parts) {
     let added = 0;
     let skippedNoGtin = 0;
     let skipped3p = 0;
+    let capacityRejected = 0;
 
     for (const bb of products) {
       if (FILTER_3P && bb.subCategory === '3P') {
@@ -290,6 +294,17 @@ function serializeParts(parts) {
         if (key) { match = nameIndex.get(bbCat + "|" + key.toLowerCase()); if (match) matchTier = "name"; }
       }
       if (match) {
+        // ── CAPACITY GUARD (retailer-agnostic) ──
+        // Never attach a listing whose storage capacity differs from the product,
+        // or whose price is physically impossible for the capacity — even on a
+        // GTIN/MPN match (a reassigned GTIN or feed error must not slip through).
+        const storedCap = match.cap != null ? match.cap : parseCapacityGB(match.n);
+        const bbCap = parseCapacityGB(bb.name);
+        if (!capacityCompatible(storedCap, bbCap) ||
+            (STORAGE_CATS.has(match.c) && !isPricePlausibleForCapacity(bb.price, storedCap, { isHDD: isHardDrive(match) }))) {
+          capacityRejected++;
+          continue;
+        }
         // ── BEST-LISTING PICK ──
         // A catalog product can match many Best Buy listings (different
         // sellers / prices). Keep only the best: in-stock beats
@@ -321,7 +336,7 @@ function serializeParts(parts) {
       }
     }
 
-    stats[category] = { total: products.length, matched, added, skippedNoGtin, skipped3p };
+    stats[category] = { total: products.length, matched, added, skippedNoGtin, skipped3p, capacityRejected };
     totalMatched += matched;
     totalAdded += added;
     totalSkippedNoGtin += skippedNoGtin;

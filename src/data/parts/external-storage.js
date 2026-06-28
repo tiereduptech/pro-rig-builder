@@ -13,13 +13,6 @@ export default [
     "capacity": 2000,
     "interface": "USB-C 3.2",
     "speed": 1050,
-    "deals": {
-      "amazon": {
-        "price": 13.99,
-        "url": "https://www.amazon.com/dp/B0F4D3MFGQ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
     "ff": "Portable SSD"
   },
   {

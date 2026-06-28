@@ -32,6 +32,11 @@
 const fs = require('fs');
 const path = require('path');
 
+// Capacity guard (shared, ESM) — loaded at startup. Retailer-agnostic: prevents
+// attaching a deal whose listing is a different storage capacity than the product.
+const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
+let CAP = null;
+
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes('--dry-run');
 const FORCE = args.includes('--force');
@@ -156,6 +161,14 @@ function scoreMatch(ourProduct, neweggItem) {
   if (ourProduct.pr && neweggItem.price && neweggItem.price > ourProduct.pr * MAX_PRICE_MULTIPLIER) return null;
   if (/\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gaming Desktop|Bundle|Combo)\b/i.test(neweggItem.name)) return null;
 
+  // Capacity is a HARD gate, even for a UPC match: never attach a listing whose
+  // stated capacity differs from the product, and never a storage deal whose
+  // price is physically impossible for the capacity.
+  const storedCap = ourProduct.cap != null ? ourProduct.cap : CAP.parseCapacityGB(ourProduct.n);
+  if (!CAP.capacityCompatible(storedCap, CAP.parseCapacityGB(neweggItem.name))) return null;
+  if (STORAGE_CATS.has(ourProduct.c) &&
+      !CAP.isPricePlausibleForCapacity(neweggItem.price, storedCap, { isHDD: CAP.isHardDrive(ourProduct) })) return null;
+
   const ourUpcN = normalizeUpc(ourProduct.upc || ourProduct.UPC);
   const newUpcN = normalizeUpc(neweggItem.upc);
   if (ourUpcN && newUpcN && ourUpcN === newUpcN) return { method: 'upc', score: 1.0 };
@@ -224,6 +237,8 @@ function saveProgress(p) {
 (async () => {
   console.log('\n  Newegg Catalog Match via Rakuten Product Search');
   console.log('  ═══════════════════════════════════════════════');
+
+  CAP = await import('file://' + process.cwd().replace(/\\/g, '/') + '/normalize-product-name.js');
 
   const { src, parts } = loadParts();
   let active = parts.filter((p) => !p.needsReview && !p.bundle && p.n && CAT_FILTER[p.c]);

@@ -28,6 +28,11 @@ const zlib = require('zlib');
 const readline = require('readline');
 const SftpClient = require('ssh2-sftp-client');
 
+// Capacity guard (shared, ESM) — loaded at startup. Retailer-agnostic guard that
+// blocks attaching a deal of a different storage capacity than the product.
+const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
+let CAP = null;
+
 const ROOT = __dirname;
 const FEED_DIR = path.join(ROOT, 'catalog-build', 'feeds');
 const MANIFEST_PATH = path.join(ROOT, 'catalog-build', 'sftp-manifest.json');
@@ -326,6 +331,14 @@ function applyMatchToPart(part, rec, match) {
   const pricing = priceFromRecord(rec);
   if (!pricing) return false;
 
+  // Capacity guard — never attach a different-size or impossibly-priced listing,
+  // regardless of match method (UPC/MPN/SKU/name). A reassigned UPC or feed error
+  // that disagrees on capacity is rejected here, the single deal-write choke point.
+  const storedCap = part.cap != null ? part.cap : CAP.parseCapacityGB(part.n);
+  if (!CAP.capacityCompatible(storedCap, CAP.parseCapacityGB(rec.product_name))) return false;
+  if (STORAGE_CATS.has(part.c) &&
+      !CAP.isPricePlausibleForCapacity(pricing.price, storedCap, { isHDD: CAP.isHardDrive(part) })) return false;
+
   const inStock = !/out-of-stock|unavailable|no/i.test(rec.availability || '');
   const condition = detectCondition(rec.product_name);
   const fieldKey = condition === 'new' ? 'newegg' : 'newegg_' + condition;
@@ -374,6 +387,8 @@ function writeParts(parts) {
 
 // â”€â”€â”€ MAIN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 (async () => {
+  CAP = await import('file://' + process.cwd().replace(/\\/g, '/') + '/normalize-product-name.js');
+
   const summary = {
     startedAt: new Date().toISOString(),
     dryRun: DRY_RUN,
