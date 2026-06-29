@@ -55,7 +55,9 @@ export default [
     "pcieLane": "x1",
     "heatsink": false,
     "bt": "BT 5.2",
-    "chipset": "Intel AX200"
+    "chipset": "Intel AX200",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-29"
   },
   {
     "id": 96001,
@@ -72,7 +74,7 @@ export default [
     "interface": "USB",
     "deals": {
       "amazon": {
-        "price": 16.99,
+        "price": 14.99,
         "url": "https://www.amazon.com/dp/B07P5PRK7J?tag=tiereduptech-20",
         "inStock": true
       }
@@ -135,7 +137,7 @@ export default [
     "interface": "USB",
     "deals": {
       "amazon": {
-        "price": 26.9,
+        "price": 23.99,
         "url": "https://www.amazon.com/dp/B08KHV7H1S?tag=tiereduptech-20",
         "inStock": true
       }
@@ -177,7 +179,7 @@ export default [
     "interface": "USB 3.0",
     "deals": {
       "amazon": {
-        "price": 22.99,
+        "price": 17.99,
         "url": "https://www.amazon.com/dp/B07P6N2TZH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -242,7 +244,7 @@ export default [
     "bluetooth": true,
     "deals": {
       "amazon": {
-        "price": 26.99,
+        "price": 22.99,
         "url": "https://www.amazon.com/dp/B084JPFKQ5?tag=tiereduptech-20",
         "inStock": true
       }

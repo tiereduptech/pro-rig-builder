@@ -57,7 +57,7 @@ export default [
     "vlan": false,
     "pxe": false,
     "needsReview": true,
-    "quarantinedAt": "2026-06-22"
+    "quarantinedAt": "2026-06-29"
   },
   {
     "id": 99102,
@@ -87,7 +87,7 @@ export default [
     "pxe": true,
     "connector": "RJ45",
     "needsReview": true,
-    "quarantinedAt": "2026-06-22"
+    "quarantinedAt": "2026-06-29"
   },
   {
     "id": 99103,
@@ -117,7 +117,7 @@ export default [
     "vlan": true,
     "pxe": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-22"
+    "quarantinedAt": "2026-06-29"
   },
   {
     "id": 99104,
@@ -163,7 +163,7 @@ export default [
     "connector": "RJ45",
     "deals": {
       "amazon": {
-        "price": 29.99,
+        "price": 27.99,
         "url": "https://www.amazon.com/dp/B0BG685PKM?tag=tiereduptech-20",
         "inStock": true
       }

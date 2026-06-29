@@ -21,7 +21,9 @@ export default [
         "inStock": true
       }
     },
-    "ff": "Tower"
+    "ff": "Tower",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-29"
   },
   {
     "id": 99931,
@@ -67,7 +69,7 @@ export default [
     },
     "ff": "Compact",
     "needsReview": true,
-    "quarantinedAt": "2026-06-22"
+    "quarantinedAt": "2026-06-29"
   },
   {
     "id": 99702,
@@ -126,7 +128,9 @@ export default [
         "url": "https://www.amazon.com/dp/B073Q48YGF?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-06-29"
   },
   {
     "id": 99705,

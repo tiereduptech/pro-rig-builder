@@ -26,7 +26,7 @@ export default [
     "readSpeed": "16x BD / 16x DVD",
     "writeSpeed": "16x BD-R",
     "needsReview": true,
-    "quarantinedAt": "2026-06-22"
+    "quarantinedAt": "2026-06-29"
   },
   {
     "id": 99301,
@@ -51,7 +51,9 @@ export default [
     "formFactor": "5.25\"",
     "mdisc": false,
     "readSpeed": "48x CD / 16x DVD",
-    "writeSpeed": "24x DVD±R"
+    "writeSpeed": "24x DVD±R",
+    "needsReview": true,
+    "quarantinedAt": "2026-06-29"
   },
   {
     "id": 99302,
@@ -104,7 +106,7 @@ export default [
     "formFactor": "5.25\"",
     "mdisc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-06-22"
+    "quarantinedAt": "2026-06-29"
   },
   {
     "id": 96200,

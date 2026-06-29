@@ -67,7 +67,7 @@ export default [
     "touch": true,
     "deals": {
       "amazon": {
-        "price": 39.99,
+        "price": 42.99,
         "url": "https://www.amazon.com/dp/B013JECYF2?tag=tiereduptech-20",
         "inStock": true
       }

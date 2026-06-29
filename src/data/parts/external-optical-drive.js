@@ -20,7 +20,7 @@ export default [
     },
     "storageType": "DVD Writer",
     "needsReview": true,
-    "quarantinedAt": "2026-06-22"
+    "quarantinedAt": "2026-06-29"
   },
   {
     "id": 99607,
@@ -100,7 +100,7 @@ export default [
     "connection": "USB-A",
     "deals": {
       "amazon": {
-        "price": 27.99,
+        "price": 32.99,
         "url": "https://www.amazon.com/dp/B006HUMYCO?tag=tiereduptech-20",
         "inStock": true
       }
@@ -127,7 +127,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-29"
   },
   {
     "id": 99612,

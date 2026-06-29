@@ -109,7 +109,7 @@ export default [
     "bitDepth": "24-bit",
     "deals": {
       "amazon": {
-        "price": 29.89,
+        "price": 33.43,
         "url": "https://www.amazon.com/dp/B07XJ89KV6?tag=tiereduptech-20",
         "inStock": true
       }
@@ -158,7 +158,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-06-22"
+    "quarantinedAt": "2026-06-29"
   },
   {
     "id": 96305,
