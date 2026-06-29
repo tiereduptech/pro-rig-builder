@@ -43,7 +43,7 @@ export default [
     "surface": "Cloth",
     "bench": 59,
     "needsReview": true,
-    "quarantinedAt": "2026-06-22"
+    "quarantinedAt": "2026-06-29"
   },
   {
     "id": 98502,
@@ -1404,7 +1404,7 @@ export default [
       "amazon": {
         "asin": "B01DKTP3PY",
         "url": "https://www.amazon.com/dp/B01DKTP3PY?tag=tiereduptech-20",
-        "price": 24,
+        "price": 26.49,
         "inStock": true
       }
     },
@@ -1544,7 +1544,7 @@ export default [
       "amazon": {
         "asin": "B0GSF5HMNZ",
         "url": "https://www.amazon.com/dp/B0GSF5HMNZ?tag=tiereduptech-20",
-        "price": 49.93,
+        "price": 34.99,
         "inStock": true
       }
     },
