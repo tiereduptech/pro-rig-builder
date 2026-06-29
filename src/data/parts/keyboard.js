@@ -406,7 +406,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:59:02.261Z"
       }
     },
     "switches": "Hall Effect",

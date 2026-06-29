@@ -40,7 +40,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:25:29.125Z"
       },
       "bestbuy": {
         "price": 434.99,
@@ -93,7 +94,8 @@ export default [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:25:29.891Z"
       },
       "newegg_openbox": {
         "sku": "445833059761663676043338",
@@ -212,7 +214,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:25:30.749Z"
       },
       "bestbuy": {
         "price": 392.49,
@@ -261,7 +264,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:25:31.609Z"
       }
     },
     "value": 17,
@@ -349,7 +353,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:25:32.604Z"
       }
     },
     "value": 34,
@@ -393,7 +398,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:25:33.497Z"
       }
     },
     "value": 67,
@@ -439,7 +445,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:34.269Z"
       }
     },
     "value": 76,
@@ -487,7 +494,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:35.024Z"
       },
       "bestbuy": {
         "price": 105.99,
@@ -536,7 +544,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:25:35.978Z"
       }
     },
     "value": 93,
@@ -582,7 +591,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:36.781Z"
       }
     },
     "value": 61,
@@ -629,7 +639,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:25:37.703Z"
       }
     },
     "value": 51,
@@ -741,7 +752,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:25:38.472Z"
       }
     },
     "value": 74,
@@ -791,7 +803,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIBP4YKTY1416"
+        "migratedFrom": "9SIBP4YKTY1416",
+        "staleSince": "2026-06-29T10:25:39.303Z"
       }
     },
     "value": 8,
@@ -835,7 +848,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:40.077Z"
       },
       "msi": {
         "price": 459.99,
@@ -886,7 +900,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:40.906Z"
       },
       "bestbuy": {
         "price": 275.99,
@@ -942,7 +957,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:41.673Z"
       },
       "bestbuy": {
         "price": 275.99,
@@ -991,7 +1007,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:42.422Z"
       }
     },
     "value": 22,
@@ -1035,7 +1052,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:25:43.393Z"
       }
     },
     "value": 0,
@@ -1081,7 +1099,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIC7A6KZ54966"
+        "migratedFrom": "9SIC7A6KZ54966",
+        "staleSince": "2026-06-29T10:25:44.140Z"
       },
       "bestbuy": {
         "price": 204.99,
@@ -1139,7 +1158,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIC4RPKRG4682"
+        "migratedFrom": "9SIC4RPKRG4682",
+        "staleSince": "2026-06-29T10:25:44.922Z"
       }
     },
     "value": 40,
@@ -1185,7 +1205,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:25:45.938Z"
       }
     },
     "value": 93,
@@ -1231,7 +1252,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:25:46.691Z"
       }
     },
     "value": 47,
@@ -1279,7 +1301,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIA4REK8D7842"
+        "migratedFrom": "9SIA4REK8D7842",
+        "staleSince": "2026-06-29T10:25:47.444Z"
       },
       "bestbuy": {
         "price": 142.49,
@@ -1437,7 +1460,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:48.199Z"
       },
       "bestbuy": {
         "price": 213.49,
@@ -1493,7 +1517,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:48.950Z"
       }
     },
     "value": 42,
@@ -1539,7 +1564,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:49.716Z"
       }
     },
     "value": 17,
@@ -1585,7 +1611,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:50.457Z"
       },
       "bestbuy": {
         "price": 148.49,
@@ -1674,7 +1701,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:51.230Z"
       }
     },
     "value": 26,
@@ -1713,7 +1741,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:52.020Z"
       },
       "newegg_openbox": {
         "sku": "445838821075494084114819",
@@ -1776,7 +1805,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:25:53.038Z"
       }
     },
     "value": 40,
@@ -1855,7 +1885,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:25:53.933Z"
       }
     },
     "value": 67,
@@ -1894,7 +1925,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:25:54.952Z"
       }
     },
     "value": 61,
@@ -1943,7 +1975,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:55.779Z"
       },
       "bestbuy": {
         "price": 127.49,
@@ -1994,7 +2027,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:25:56.530Z"
       },
       "bestbuy": {
         "price": 97.99,
@@ -2045,7 +2079,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:26:57.389Z"
       }
     },
     "value": 74,
@@ -2091,7 +2126,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:26:58.164Z"
       }
     },
     "value": 34,
@@ -2135,7 +2171,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:26:58.929Z"
       },
       "bestbuy": {
         "price": 198.49,
@@ -2179,7 +2216,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:26:59.841Z"
       }
     },
     "value": 23,
@@ -2216,7 +2254,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:00.576Z"
       },
       "bestbuy": {
         "price": 121.99,
@@ -2276,7 +2315,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIC6F8KYT3093"
+        "migratedFrom": "9SIC6F8KYT3093",
+        "staleSince": "2026-06-29T10:27:01.353Z"
       }
     },
     "discount": 36,
@@ -2329,7 +2369,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:02.110Z"
       }
     },
     "discount": 18,
@@ -2382,7 +2423,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:02.866Z"
       }
     },
     "discount": 39,
@@ -2432,7 +2474,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIBP4YKVN4578"
+        "migratedFrom": "9SIBP4YKVN4578",
+        "staleSince": "2026-06-29T10:27:03.626Z"
       },
       "bestbuy": {
         "price": 307.49,
@@ -2489,7 +2532,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:04.384Z"
       },
       "newegg_openbox": {
         "sku": "4458311437381739544407579",
@@ -2558,7 +2602,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:05.164Z"
       },
       "msi": {
         "price": 179.99,
@@ -2618,7 +2663,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIB319M061184"
+        "migratedFrom": "9SIB319M061184",
+        "staleSince": "2026-06-29T10:27:05.955Z"
       },
       "newegg_openbox": {
         "sku": "4458317375802073692873553",
@@ -3201,7 +3247,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:06.699Z"
       }
     },
     "discount": 30,
@@ -3287,7 +3334,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:07.451Z"
       },
       "newegg_openbox": {
         "sku": "4458316157051897796257477",
@@ -3352,7 +3400,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:08.227Z"
       },
       "msi": {
         "price": 99.99,
@@ -3405,7 +3454,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:08.987Z"
       },
       "bestbuy": {
         "price": 101.99,
@@ -3458,7 +3508,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:09.743Z"
       },
       "newegg_openbox": {
         "sku": "445834817109167165204705",
@@ -3527,7 +3578,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:27:10.690Z"
       }
     },
     "discount": 33,
@@ -3580,7 +3632,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:11.529Z"
       }
     },
     "discount": 20,
@@ -3630,7 +3683,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:27:12.900Z"
       },
       "newegg_openbox": {
         "sku": "4458315960247567384997287",
@@ -3692,7 +3746,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:13.657Z"
       }
     },
     "additionalImages": [
@@ -3744,7 +3799,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:14.415Z"
       }
     },
     "additionalImages": [
@@ -3792,7 +3848,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:15.180Z"
       },
       "newegg_openbox": {
         "sku": "445834312015098345032926",
@@ -3865,7 +3922,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:15.924Z"
       }
     },
     "discount": 21,
@@ -3954,7 +4012,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:16.685Z"
       },
       "newegg_openbox": {
         "sku": "445838498309357532532497",
@@ -4012,7 +4071,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:17.454Z"
       },
       "bestbuy": {
         "price": 524.99,
@@ -4071,7 +4131,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:18.224Z"
       }
     },
     "discount": 27,
@@ -4119,7 +4180,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.733Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:18.986Z"
       }
     },
     "additionalImages": [
@@ -4171,7 +4233,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:19.741Z"
       },
       "newegg_openbox": {
         "sku": "445832385068078830075420",
@@ -4236,7 +4299,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIC6MKM036201"
+        "migratedFrom": "9SIC6MKM036201",
+        "staleSince": "2026-06-29T10:27:20.468Z"
       }
     },
     "discount": 10,
@@ -4288,7 +4352,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:21.216Z"
       },
       "newegg_openbox": {
         "sku": "445832652076351950017195",
@@ -4354,7 +4419,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:21.966Z"
       },
       "newegg_openbox": {
         "sku": "44583972083718504275037",
@@ -4417,7 +4483,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:22.733Z"
       }
     },
     "discount": 15,
@@ -4464,7 +4531,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.93,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:27:23.913Z"
       }
     },
     "discount": 7,
@@ -4516,7 +4584,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:24.665Z"
       },
       "newegg_openbox": {
         "sku": "4458317373425715565760486",
@@ -4575,7 +4644,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:25.456Z"
       },
       "newegg_openbox": {
         "sku": "4458314528442285834669772",
@@ -4675,7 +4745,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:26.214Z"
       },
       "bestbuy": {
         "price": 151.99,
@@ -4760,7 +4831,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:26.989Z"
       },
       "bestbuy": {
         "price": 112.49,
@@ -4860,7 +4932,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIA6ZPK9Y7136"
+        "migratedFrom": "9SIA6ZPK9Y7136",
+        "staleSince": "2026-06-29T10:27:27.787Z"
       }
     },
     "discount": 30,
@@ -4914,7 +4987,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:28.515Z"
       }
     },
     "additionalImages": [
@@ -4960,7 +5034,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:29.311Z"
       }
     },
     "discount": 31,
@@ -5039,7 +5114,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.67,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:30.066Z"
       }
     },
     "discount": 15,
@@ -5081,7 +5157,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.82,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:27:31.332Z"
       }
     },
     "discount": 28,
@@ -5130,7 +5207,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:32.075Z"
       }
     },
     "discount": 24,
@@ -5178,7 +5256,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:32.830Z"
       },
       "newegg_openbox": {
         "sku": "4458315705630605767131580",
@@ -5242,7 +5321,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:33.577Z"
       },
       "bestbuy": {
         "price": 145.49,
@@ -5300,7 +5380,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:34.335Z"
       }
     },
     "discount": 9,
@@ -5353,7 +5434,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:35.090Z"
       }
     },
     "discount": 17,
@@ -5402,7 +5484,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIC22WKWN7770"
+        "migratedFrom": "9SIC22WKWN7770",
+        "staleSince": "2026-06-29T10:27:35.872Z"
       },
       "bestbuy": {
         "price": 169.99,
@@ -5453,7 +5536,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:36.606Z"
       }
     },
     "additionalImages": [
@@ -5504,7 +5588,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:37.521Z"
       },
       "newegg_openbox": {
         "sku": "4458311064365352754977786",
@@ -5570,7 +5655,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIC7A6KZ69390"
+        "migratedFrom": "9SIC7A6KZ69390",
+        "staleSince": "2026-06-29T10:27:38.301Z"
       }
     },
     "additionalImages": [
@@ -5617,7 +5703,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:39.069Z"
       },
       "bestbuy": {
         "price": 480.49,
@@ -5711,7 +5798,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:39.827Z"
       }
     },
     "discount": 23,
@@ -5758,7 +5846,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.82,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:27:41.018Z"
       },
       "bestbuy": {
         "price": 235.49,
@@ -5884,7 +5973,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:41.775Z"
       }
     },
     "additionalImages": [
@@ -5931,7 +6021,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:42.519Z"
       }
     },
     "discount": 5,
@@ -5977,7 +6068,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:27:43.471Z"
       }
     },
     "additionalImages": [
@@ -6060,7 +6152,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.746Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:44.222Z"
       },
       "bestbuy": {
         "price": 172.99,
@@ -6118,7 +6211,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:44.996Z"
       },
       "bestbuy": {
         "price": 192.45,
@@ -6171,7 +6265,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.88,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:45.823Z"
       }
     },
     "additionalImages": [
@@ -6217,7 +6312,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.044Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:46.570Z"
       },
       "bestbuy": {
         "price": 213.24,
@@ -6384,7 +6480,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:47.326Z"
       },
       "bestbuy": {
         "price": 381.99,
@@ -6437,7 +6534,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.236Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:48.081Z"
       },
       "bestbuy": {
         "price": 123.99,
@@ -6494,7 +6592,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:48.823Z"
       },
       "msi": {
         "price": 289.99,
@@ -6549,7 +6648,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:49.584Z"
       },
       "bestbuy": {
         "price": 121.99,
@@ -6607,7 +6707,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:50.340Z"
       },
       "msi": {
         "price": 169.99,
@@ -6665,7 +6766,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:51.097Z"
       }
     },
     "additionalImages": [
@@ -6824,7 +6926,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:51.889Z"
       },
       "bestbuy": {
         "price": 113.49,
@@ -6885,7 +6988,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:52.641Z"
       },
       "msi": {
         "price": 169.99,
@@ -6979,7 +7083,8 @@ export default [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:53.380Z"
       },
       "newegg_openbox": {
         "sku": "445831930697274585235803",
@@ -7043,7 +7148,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:54.127Z"
       },
       "msi": {
         "price": 209.99,
@@ -7094,7 +7200,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.200Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:54.848Z"
       },
       "bestbuy": {
         "price": 106.27,
@@ -7151,7 +7258,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.236Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:55.602Z"
       }
     },
     "discount": 8,
@@ -7200,7 +7308,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:56.360Z"
       },
       "msi": {
         "price": 319.99,
@@ -7252,7 +7361,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:57.127Z"
       },
       "bestbuy": {
         "price": 328.99,
@@ -7306,7 +7416,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:27:57.854Z"
       },
       "bestbuy": {
         "price": 183.99,
@@ -7362,7 +7473,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:58.628Z"
       }
     },
     "discount": 5,
@@ -7415,7 +7527,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.82,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:27:59.398Z"
       },
       "msi": {
         "price": 239.99,
@@ -7469,7 +7582,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIAAPKKWN9386"
+        "migratedFrom": "9SIAAPKKWN9386",
+        "staleSince": "2026-06-29T10:28:00.133Z"
       }
     },
     "discount": 25,
@@ -7527,7 +7641,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:28:01.010Z"
       }
     },
     "discount": 12,
@@ -7606,7 +7721,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:01.871Z"
       }
     },
     "additionalImages": [
@@ -7658,7 +7774,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:28:02.632Z"
       },
       "msi": {
         "price": 149.99,
@@ -7706,7 +7823,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:28:03.904Z"
       }
     },
     "additionalImages": [
@@ -7785,7 +7903,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.571Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:04.662Z"
       }
     },
     "additionalImages": [
@@ -7835,7 +7954,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.570Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:05.380Z"
       }
     },
     "additionalImages": [
@@ -7879,7 +7999,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.9,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:28:06.597Z"
       }
     },
     "additionalImages": [
@@ -7965,7 +8086,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:28:07.359Z"
       }
     },
     "discount": 22,
@@ -8049,7 +8171,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:28:08.431Z"
       }
     },
     "additionalImages": [
@@ -8097,7 +8220,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.69,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIC5MUKUT5819"
+        "migratedFrom": "9SIC5MUKUT5819",
+        "staleSince": "2026-06-29T10:28:09.196Z"
       }
     },
     "additionalImages": [
@@ -8209,7 +8333,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.571Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:09.964Z"
       }
     },
     "additionalImages": [
@@ -8258,7 +8383,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:10.772Z"
       }
     },
     "additionalImages": [
@@ -8304,7 +8430,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:11.516Z"
       },
       "bestbuy": {
         "price": 169.99,
@@ -8361,7 +8488,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.615Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:12.235Z"
       }
     },
     "additionalImages": [
@@ -8403,7 +8531,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.82,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:28:13.368Z"
       }
     },
     "additionalImages": [
@@ -8490,7 +8619,8 @@ export default [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:14.128Z"
       }
     },
     "discount": 29,
@@ -8572,7 +8702,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.570Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:14.903Z"
       }
     },
     "additionalImages": [
@@ -8619,7 +8750,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.634Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:15.653Z"
       },
       "bestbuy": {
         "price": 255.49,
@@ -8673,7 +8805,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.67,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIC3DRKN67641"
+        "migratedFrom": "9SIC3DRKN67641",
+        "staleSince": "2026-06-29T10:28:16.417Z"
       }
     },
     "additionalImages": [
@@ -8797,7 +8930,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:28:17.492Z"
       }
     },
     "additionalImages": [
@@ -8874,7 +9008,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.89,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:28:18.577Z"
       }
     },
     "discount": 47,
@@ -9071,7 +9206,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:19.471Z"
       },
       "bestbuy": {
         "price": 163.49,
@@ -9198,7 +9334,8 @@ export default [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:20.206Z"
       }
     },
     "discount": 10,
@@ -9246,7 +9383,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.607Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:20.976Z"
       }
     },
     "additionalImages": [
@@ -9323,7 +9461,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.987Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:21.769Z"
       }
     },
     "additionalImages": [
@@ -9479,7 +9618,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:22.537Z"
       },
       "bestbuy": {
         "price": 133.99,
@@ -9608,7 +9748,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:23.293Z"
       },
       "bestbuy": {
         "price": 148.49,
@@ -9660,7 +9801,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.646Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:24.058Z"
       }
     },
     "discount": 15,
@@ -9744,7 +9886,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.64,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:28:25.358Z"
       }
     },
     "additionalImages": [
@@ -9786,7 +9929,8 @@ export default [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:26.092Z"
       }
     },
     "additionalImages": [
@@ -10014,7 +10158,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.92,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:28:26.871Z"
       }
     },
     "additionalImages": [
@@ -10163,7 +10308,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.62,
         "migratedAt": "2026-06-28",
-        "migratedFrom": "9SIBP4YKU97539"
+        "migratedFrom": "9SIBP4YKU97539",
+        "staleSince": "2026-06-29T10:28:27.646Z"
       }
     },
     "additionalImages": [
@@ -10209,7 +10355,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.615Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:28.388Z"
       }
     },
     "additionalImages": [
@@ -10256,7 +10403,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.821Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:29.124Z"
       }
     },
     "discount": 7,
@@ -10340,7 +10488,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.060Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:29.843Z"
       }
     },
     "discount": 37,
@@ -10387,7 +10536,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.615Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:30.591Z"
       }
     },
     "additionalImages": [
@@ -10471,7 +10621,8 @@ export default [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:31.335Z"
       }
     },
     "additionalImages": [
@@ -10553,7 +10704,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.64,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:28:32.458Z"
       }
     },
     "additionalImages": [
@@ -10629,7 +10781,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.89,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:28:33.218Z"
       }
     },
     "additionalImages": [
@@ -10744,7 +10897,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:33.977Z"
       },
       "newegg_openbox": {
         "sku": "445831548556914003983745",
@@ -10906,7 +11060,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.5,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:28:34.746Z"
       }
     },
     "additionalImages": [
@@ -10947,7 +11102,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.646Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:35.475Z"
       }
     },
     "discount": 5,
@@ -11149,7 +11305,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:36.203Z"
       },
       "newegg_openbox": {
         "sku": "445835264071978261618615",
@@ -11249,7 +11406,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.71,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:28:36.979Z"
       }
     },
     "additionalImages": [
@@ -11296,7 +11454,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.457Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:37.721Z"
       }
     },
     "additionalImages": [
@@ -11381,7 +11540,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:38.493Z"
       },
       "bestbuy": {
         "price": 260.99,
@@ -11434,7 +11594,8 @@ export default [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:39.253Z"
       }
     },
     "additionalImages": [
@@ -11551,7 +11712,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.369Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:40.000Z"
       },
       "bestbuy": {
         "price": 144.97,
@@ -11640,7 +11802,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:40.818Z"
       },
       "bestbuy": {
         "price": 221.99,
@@ -11728,7 +11891,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.745Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:41.582Z"
       },
       "bestbuy": {
         "price": 233.49,
@@ -11924,7 +12088,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:42.321Z"
       },
       "bestbuy": {
         "price": 242.47,
@@ -11977,7 +12142,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:43.084Z"
       },
       "bestbuy": {
         "price": 183.49,
@@ -12072,7 +12238,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.987Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:43.816Z"
       }
     },
     "additionalImages": [
@@ -12366,7 +12533,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.56,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:28:44.554Z"
       }
     },
     "additionalImages": [
@@ -12450,7 +12618,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:45.290Z"
       },
       "bestbuy": {
         "price": 131.49,
@@ -12502,7 +12671,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:46.059Z"
       },
       "newegg_openbox": {
         "sku": "445833245843826349031740",
@@ -12566,7 +12736,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.73,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:28:47.171Z"
       }
     },
     "additionalImages": [
@@ -12609,7 +12780,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.824Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:47.922Z"
       }
     },
     "additionalImages": [
@@ -12658,7 +12830,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:48.666Z"
       },
       "bestbuy": {
         "price": 296.99,
@@ -12711,7 +12884,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.61,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:28:49.415Z"
       }
     },
     "additionalImages": [
@@ -12757,7 +12931,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.364Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:50.186Z"
       },
       "bestbuy": {
         "price": 221.02,
@@ -12852,7 +13027,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:50.908Z"
       },
       "bestbuy": {
         "price": 392.49,
@@ -12916,7 +13092,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:51.676Z"
       }
     },
     "additionalImages": [
@@ -13035,7 +13212,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:52.430Z"
       }
     },
     "discount": 11,
@@ -13117,7 +13295,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:53.172Z"
       }
     },
     "discount": 10,
@@ -13344,7 +13523,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:53.941Z"
       },
       "newegg_openbox": {
         "sku": "445836975818745100032353",
@@ -13441,7 +13621,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:54.703Z"
       },
       "newegg_openbox": {
         "sku": "445839831627298918548742",
@@ -13733,7 +13914,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.836Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:55.442Z"
       }
     },
     "additionalImages": [
@@ -13778,7 +13960,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.5,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:28:56.295Z"
       }
     },
     "additionalImages": [
@@ -13861,7 +14044,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:57.025Z"
       }
     },
     "discount": 5,
@@ -13942,7 +14126,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:57.745Z"
       }
     },
     "additionalImages": [
@@ -13994,7 +14179,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.369Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:58.462Z"
       },
       "msi": {
         "price": 289.99,
@@ -14046,7 +14232,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:59.211Z"
       },
       "bestbuy": {
         "price": 379.59,
@@ -14135,7 +14322,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:28:59.966Z"
       },
       "bestbuy": {
         "price": 226.99,
@@ -14189,7 +14377,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:00.770Z"
       },
       "newegg_openbox": {
         "sku": "4458311942266679894612604",
@@ -14256,7 +14445,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:01.538Z"
       },
       "msi": {
         "price": 249.99,
@@ -14315,7 +14505,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:02.302Z"
       },
       "msi": {
         "price": 209.99,
@@ -14486,7 +14677,8 @@ export default [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:03.053Z"
       },
       "newegg_openbox": {
         "sku": "4458315829227798642213354",
@@ -14718,7 +14910,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.706Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:03.778Z"
       },
       "bestbuy": {
         "price": 222.99,
@@ -14837,7 +15030,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.62,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:29:04.684Z"
       }
     },
     "additionalImages": [
@@ -14918,7 +15112,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:05.432Z"
       }
     },
     "additionalImages": [
@@ -14964,7 +15159,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:06.183Z"
       },
       "bestbuy": {
         "price": 161.49,
@@ -15081,7 +15277,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:06.972Z"
       },
       "bestbuy": {
         "price": 164.49,
@@ -15177,7 +15374,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:07.736Z"
       },
       "bestbuy": {
         "price": 169.99,
@@ -15229,7 +15427,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:29:08.518Z"
       }
     },
     "discount": 16,
@@ -15410,7 +15609,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:09.265Z"
       }
     },
     "discount": 29,
@@ -15493,7 +15693,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.61,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:29:10.027Z"
       }
     },
     "additionalImages": [
@@ -15607,7 +15808,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.58,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:29:11.223Z"
       }
     },
     "discount": 17,
@@ -15754,7 +15956,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:11.967Z"
       },
       "msi": {
         "price": 1099.99,
@@ -15879,7 +16082,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.746Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:12.711Z"
       },
       "bestbuy": {
         "price": 233.49,
@@ -16041,7 +16245,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.82,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:29:13.745Z"
       }
     },
     "additionalImages": [
@@ -16087,7 +16292,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.86,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:29:14.849Z"
       }
     },
     "additionalImages": [
@@ -16134,7 +16340,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:15.585Z"
       },
       "bestbuy": {
         "price": 144.99,
@@ -16186,7 +16393,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:16.333Z"
       }
     },
     "additionalImages": [
@@ -16234,7 +16442,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:17.095Z"
       },
       "bestbuy": {
         "price": 223.99,
@@ -16407,7 +16616,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.207Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:17.870Z"
       }
     },
     "additionalImages": [
@@ -16454,7 +16664,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.158Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:18.614Z"
       }
     },
     "additionalImages": [
@@ -16637,7 +16848,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.372Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:19.362Z"
       },
       "bestbuy": {
         "price": 193.22,
@@ -16776,7 +16988,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.634Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:20.115Z"
       },
       "msi": {
         "price": 169.99,
@@ -16829,7 +17042,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.58,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:29:21.223Z"
       }
     },
     "additionalImages": [
@@ -16911,7 +17125,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:21.975Z"
       },
       "bestbuy": {
         "price": 171.99,
@@ -17010,7 +17225,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:22.723Z"
       }
     },
     "discount": 6,
@@ -17057,7 +17273,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.518Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:23.476Z"
       }
     },
     "discount": 6,
@@ -17102,7 +17319,8 @@ export default [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:24.235Z"
       }
     },
     "additionalImages": [
@@ -17153,7 +17371,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:24.992Z"
       },
       "bestbuy": {
         "price": 158.99,
@@ -17242,7 +17461,8 @@ export default [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:25.773Z"
       },
       "newegg_openbox": {
         "sku": "4458316644876068195052663",
@@ -17338,7 +17558,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:26.535Z"
       },
       "bestbuy": {
         "price": 242.88,
@@ -17401,7 +17622,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:27.282Z"
       },
       "newegg_openbox": {
         "sku": "4458311708793403285836298",
@@ -17705,7 +17927,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:29:28.056Z"
       }
     },
     "discount": 36,
@@ -17824,7 +18047,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:28.799Z"
       },
       "msi": {
         "price": 289.99,
@@ -17877,7 +18101,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.298Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:29.566Z"
       },
       "bestbuy": {
         "price": 430.07,
@@ -18074,7 +18299,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:30.323Z"
       },
       "newegg_openbox": {
         "sku": "445832867650084324151889",
@@ -18170,7 +18396,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:31.085Z"
       }
     },
     "additionalImages": [
@@ -18253,7 +18480,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.8,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:29:32.185Z"
       }
     },
     "discount": 44,
@@ -18336,7 +18564,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:32.949Z"
       }
     },
     "socket": "AM4",
@@ -18376,7 +18605,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.607Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:33.701Z"
       },
       "msi": {
         "price": 159.99,
@@ -18510,7 +18740,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:34.465Z"
       }
     },
     "socket": "AM5",
@@ -18551,7 +18782,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:35.219Z"
       }
     },
     "socket": "AM5",
@@ -18592,7 +18824,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:35.970Z"
       },
       "newegg_openbox": {
         "sku": "44583681349671910000113",
@@ -18648,7 +18881,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.646Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:36.758Z"
       }
     },
     "socket": "LGA1700",
@@ -18689,7 +18923,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:37.677Z"
       },
       "newegg_openbox": {
         "sku": "445831194301229569670529",
@@ -18740,7 +18975,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:38.450Z"
       }
     },
     "socket": "LGA1851",
@@ -18780,7 +19016,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:39.239Z"
       },
       "newegg_openbox": {
         "sku": "445832971064703428752423",
@@ -18832,7 +19069,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:40.002Z"
       }
     },
     "socket": "AM5",
@@ -18902,7 +19140,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.634Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:40.841Z"
       }
     },
     "socket": "LGA1851",
@@ -18943,7 +19182,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:41.610Z"
       }
     },
     "socket": "LGA1851",
@@ -18984,7 +19224,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:42.407Z"
       },
       "msi": {
         "price": 229.99,
@@ -19075,7 +19316,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:43.126Z"
       },
       "newegg_openbox": {
         "sku": "445837307446262959603190",
@@ -19132,7 +19374,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:43.878Z"
       },
       "msi": {
         "price": 209.99,
@@ -19178,7 +19421,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:44.636Z"
       },
       "msi": {
         "price": 99.99,
@@ -19223,7 +19467,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.61,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:29:45.843Z"
       }
     },
     "socket": "LGA1851",
@@ -19293,7 +19538,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.615Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:46.620Z"
       }
     },
     "socket": "AM5",
@@ -19333,7 +19579,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.205Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:47.390Z"
       }
     },
     "socket": "AM5",
@@ -19373,7 +19620,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:48.170Z"
       }
     },
     "socket": "AM4",
@@ -19413,7 +19661,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:48.926Z"
       }
     },
     "socket": "AM5",
@@ -19454,7 +19703,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:49.940Z"
       },
       "msi": {
         "price": 249.99,
@@ -19500,7 +19750,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:50.822Z"
       },
       "msi": {
         "price": 299.99,
@@ -19545,7 +19796,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:51.584Z"
       },
       "newegg_openbox": {
         "sku": "445839914473418983906474",
@@ -19627,7 +19879,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:52.378Z"
       }
     },
     "socket": "LGA1851",
@@ -19667,7 +19920,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:53.124Z"
       }
     },
     "socket": "AM5",
@@ -19707,7 +19961,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:53.890Z"
       },
       "msi": {
         "price": 1299.99,
@@ -19752,7 +20007,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:54.643Z"
       },
       "msi": {
         "price": 499.99,
@@ -19797,7 +20053,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:55.416Z"
       },
       "msi": {
         "price": 2289.99,
@@ -19843,7 +20100,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:56.172Z"
       },
       "msi": {
         "price": 259.99,
@@ -19961,7 +20219,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:56.950Z"
       }
     },
     "socket": "LGA1700",
@@ -20261,7 +20520,8 @@ export default [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:57.671Z"
       },
       "bestbuy": {
         "price": 174.99,
@@ -20303,7 +20563,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:29:58.414Z"
       }
     },
     "socket": "AM5",
@@ -20385,7 +20646,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.71,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:29:59.521Z"
       }
     },
     "socket": "AM4",
@@ -20448,7 +20710,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:00.393Z"
       },
       "newegg_openbox": {
         "sku": "4458316157051897796257477",
@@ -20498,7 +20761,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:30:01.265Z"
       }
     },
     "socket": "AM4",
@@ -20564,7 +20828,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.95,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:30:02.021Z"
       }
     },
     "socket": "AM4",

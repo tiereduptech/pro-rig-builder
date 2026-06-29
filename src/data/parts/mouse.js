@@ -456,7 +456,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:59:03.011Z"
       }
     },
     "sensor": "Hero 25K",
@@ -783,7 +784,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:59:03.760Z"
       }
     },
     "dpi": 10000,
@@ -910,7 +912,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 0.9523809523809523,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:59:04.540Z"
       }
     },
     "sensor": "Optical",
@@ -1211,7 +1214,8 @@ export default [
         "matchedAt": "2026-05-14T22:25:47.573Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:59:05.309Z"
       }
     },
     "sensor": "Optical",

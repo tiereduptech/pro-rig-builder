@@ -2084,7 +2084,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:02.781Z"
       }
     },
     "upc": "00727419314855",
@@ -2129,7 +2130,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:03.525Z"
       }
     },
     "upc": "00727419314862",
@@ -3454,7 +3456,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:04.292Z"
       },
       "bestbuy": {
         "price": 265.49,
@@ -3600,7 +3603,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:05.065Z"
       }
     },
     "discount": 21,
@@ -3746,7 +3750,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:05.926Z"
       }
     },
     "discount": 7,
@@ -3875,7 +3880,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:06.686Z"
       }
     },
     "additionalImages": [
@@ -3930,7 +3936,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:07.437Z"
       }
     },
     "additionalImages": [
@@ -4025,7 +4032,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:08.187Z"
       },
       "newegg_openbox": {
         "sku": "4458316281947149435764482",
@@ -4208,7 +4216,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:08.942Z"
       },
       "bestbuy": {
         "price": 414.1,
@@ -4274,7 +4283,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:09.702Z"
       },
       "msi": {
         "price": 569.99,
@@ -5435,7 +5445,8 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:10.449Z"
       },
       "msi": {
         "price": 629.99,
@@ -5997,7 +6008,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:11.206Z"
       },
       "bestbuy": {
         "price": 614.99,
@@ -6182,7 +6194,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:12.007Z"
       }
     },
     "additionalImages": [
@@ -6399,7 +6412,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:12.757Z"
       },
       "bestbuy": {
         "price": 710.49,
@@ -6872,7 +6886,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:13.535Z"
       }
     },
     "discount": 7,
@@ -7372,7 +7387,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:14.280Z"
       },
       "bestbuy": {
         "price": 379.99,
@@ -8170,7 +8186,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:15.027Z"
       },
       "msi": {
         "price": 249.99,
@@ -8324,7 +8341,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:15.872Z"
       }
     },
     "model": "GeForce RTX 5080",
@@ -8368,7 +8386,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:16.618Z"
       }
     },
     "model": "GeForce RTX 5080",
@@ -8539,7 +8558,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:17.381Z"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -8583,7 +8603,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:18.133Z"
       },
       "newegg_openbox": {
         "sku": "4458313137355969489742434",
@@ -8679,7 +8700,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:18.891Z"
       },
       "newegg_openbox": {
         "sku": "445837122812837057574787",
@@ -8734,7 +8756,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:19.652Z"
       },
       "msi": {
         "price": 1599.99,
@@ -8820,7 +8843,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:20.420Z"
       }
     },
     "model": "GeForce RTX 3050",
@@ -8864,7 +8888,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:21.176Z"
       }
     },
     "model": "GeForce RTX 5080",
@@ -8972,7 +8997,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:21.949Z"
       }
     },
     "model": "Arc",
@@ -9053,7 +9079,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:22.696Z"
       },
       "msi": {
         "price": 3999.99,
@@ -9102,7 +9129,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:23.464Z"
       }
     },
     "model": "GeForce RTX 5080",
@@ -9146,7 +9174,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:24.215Z"
       }
     },
     "model": "GeForce RTX 5080",
@@ -9221,7 +9250,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.150Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:24.972Z"
       }
     },
     "model": "GeForce RTX 5090",
@@ -9264,7 +9294,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:25.919Z"
       }
     },
     "model": "GeForce RTX 5090",
@@ -9308,7 +9339,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:26.689Z"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -9383,7 +9415,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:27.436Z"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -9427,7 +9460,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:28.169Z"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -9471,7 +9505,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:28.922Z"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -9515,7 +9550,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:29.680Z"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -9559,7 +9595,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:30.425Z"
       },
       "msi": {
         "price": 669.99,
@@ -9672,7 +9709,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:31.171Z"
       }
     },
     "model": "GeForce RTX 5070",
@@ -9748,7 +9786,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:31.960Z"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -9919,7 +9958,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:32.733Z"
       }
     },
     "model": "Radeon RX 9070",
@@ -9995,7 +10035,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:33.498Z"
       },
       "msi": {
         "price": 989.99,
@@ -10107,7 +10148,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:34.269Z"
       }
     },
     "model": "GeForce RTX 5070",
@@ -10151,7 +10193,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:35.041Z"
       }
     },
     "model": "GeForce RTX 5070",
@@ -10195,7 +10238,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:35.844Z"
       }
     },
     "model": "GeForce RTX 5070",
@@ -10463,7 +10507,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:36.593Z"
       }
     },
     "model": "GeForce RTX 5060",
@@ -10612,7 +10657,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:37.341Z"
       }
     },
     "model": "GeForce RTX 5060",
@@ -10655,7 +10701,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:38.112Z"
       }
     },
     "model": "GeForce RTX 5060",
@@ -10731,7 +10778,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:38.882Z"
       }
     },
     "model": "GeForce RTX 5060",
@@ -10775,7 +10823,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:39.637Z"
       },
       "msi": {
         "price": 364.99,
@@ -10823,7 +10872,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:40.405Z"
       },
       "msi": {
         "price": 369.99,
@@ -10872,7 +10922,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:41.176Z"
       },
       "msi": {
         "price": 359.99,
@@ -10921,7 +10972,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:41.970Z"
       },
       "msi": {
         "price": 369.99,
@@ -10970,7 +11022,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:42.729Z"
       },
       "msi": {
         "price": 359.99,
@@ -11146,7 +11199,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:43.486Z"
       }
     },
     "model": "GeForce RTX 5060",
@@ -11190,7 +11244,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:44.259Z"
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -11233,7 +11288,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:45.032Z"
       },
       "msi": {
         "price": 439.99,
@@ -11314,7 +11370,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:45.819Z"
       },
       "msi": {
         "price": 639.99,
@@ -11437,7 +11494,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:46.543Z"
       },
       "msi": {
         "price": 419.99,
@@ -11549,7 +11607,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:47.291Z"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -11593,7 +11652,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:48.047Z"
       },
       "msi": {
         "price": 304.99,
@@ -11642,7 +11702,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:48.788Z"
       },
       "msi": {
         "price": 314.99,
@@ -11760,7 +11821,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:49.516Z"
       }
     },
     "model": "GeForce RTX 5050",
@@ -11868,7 +11930,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:50.266Z"
       },
       "msi": {
         "price": 409.99,
@@ -12010,7 +12073,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:51.037Z"
       }
     },
     "model": "GeForce RTX 5070",
@@ -12054,7 +12118,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:51.878Z"
       }
     },
     "model": "GeForce RTX 5070",
@@ -12135,7 +12200,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:52.621Z"
       }
     },
     "model": "GeForce RTX 5070 Ti",

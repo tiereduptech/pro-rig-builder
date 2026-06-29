@@ -1226,7 +1226,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:53.354Z"
       },
       "bestbuy": {
         "price": 479.99,
@@ -1290,7 +1291,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:54.114Z"
       }
     },
     "additionalImages": [
@@ -1348,7 +1350,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.163Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:54.837Z"
       }
     },
     "additionalImages": [
@@ -1400,7 +1403,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.909Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:55.606Z"
       }
     },
     "additionalImages": [
@@ -1455,7 +1459,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:56.346Z"
       },
       "bestbuy": {
         "price": 490.27,
@@ -1557,7 +1562,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:57.104Z"
       }
     },
     "additionalImages": [
@@ -1616,7 +1622,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:57.865Z"
       }
     },
     "discount": 5,
@@ -1748,7 +1755,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.348Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:58.615Z"
       },
       "bestbuy": {
         "price": 499.99,
@@ -1812,7 +1820,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:30:59.376Z"
       }
     },
     "additionalImages": [
@@ -1866,7 +1875,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:00.128Z"
       },
       "bestbuy": {
         "price": 129.99,
@@ -1926,7 +1936,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:00.910Z"
       },
       "bestbuy": {
         "price": 269.99,
@@ -1990,7 +2001,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:01.677Z"
       }
     },
     "additionalImages": [
@@ -2090,7 +2102,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.274Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:02.416Z"
       }
     },
     "additionalImages": [
@@ -2149,7 +2162,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:03.248Z"
       }
     },
     "additionalImages": [
@@ -2202,7 +2216,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.985Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:03.996Z"
       },
       "bestbuy": {
         "price": 449.99,
@@ -2258,7 +2273,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.989Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:04.748Z"
       }
     },
     "additionalImages": [
@@ -2312,7 +2328,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:05.514Z"
       },
       "bestbuy": {
         "price": 259.99,
@@ -2534,7 +2551,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.732Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:06.266Z"
       }
     },
     "additionalImages": [
@@ -2592,7 +2610,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:07.014Z"
       }
     },
     "additionalImages": [
@@ -2646,7 +2665,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:07.764Z"
       },
       "bestbuy": {
         "price": 720.74,
@@ -2747,7 +2767,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:08.489Z"
       },
       "bestbuy": {
         "price": 489.99,
@@ -2806,7 +2827,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.7,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:31:09.621Z"
       }
     },
     "discount": 7,
@@ -2860,7 +2882,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:10.377Z"
       }
     },
     "discount": 8,
@@ -2959,7 +2982,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:11.131Z"
       }
     },
     "additionalImages": [
@@ -3101,7 +3125,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.989Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:11.921Z"
       }
     },
     "additionalImages": [
@@ -3154,7 +3179,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.985Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:12.674Z"
       },
       "bestbuy": {
         "price": 389.99,
@@ -3252,7 +3278,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.378Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:13.417Z"
       },
       "bestbuy": {
         "price": 899,
@@ -3437,7 +3464,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.461Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:14.167Z"
       }
     },
     "discount": 6,
@@ -3533,7 +3561,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:14.915Z"
       },
       "bestbuy": {
         "price": 469.99,
@@ -3592,7 +3621,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.163Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:15.890Z"
       }
     },
     "additionalImages": [
@@ -3639,7 +3669,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.55,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:31:16.640Z"
       }
     },
     "additionalImages": [
@@ -3692,7 +3723,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.347Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:17.390Z"
       }
     },
     "additionalImages": [
@@ -3993,7 +4025,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:18.198Z"
       },
       "bestbuy": {
         "price": 479.99,
@@ -4091,7 +4124,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.73,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:31:19.328Z"
       }
     },
     "discount": 6,
@@ -4142,7 +4176,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:20.082Z"
       }
     },
     "additionalImages": [
@@ -4269,7 +4304,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.274Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:20.862Z"
       }
     },
     "additionalImages": [
@@ -4401,7 +4437,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.461Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:21.626Z"
       }
     },
     "additionalImages": [
@@ -4455,7 +4492,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:22.383Z"
       },
       "bestbuy": {
         "price": 149.99,
@@ -4519,7 +4557,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:23.130Z"
       }
     },
     "additionalImages": [
@@ -4662,7 +4701,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:23.896Z"
       }
     },
     "discount": 15,
@@ -4717,7 +4757,8 @@ export default [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:24.633Z"
       }
     },
     "additionalImages": [
@@ -4776,7 +4817,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:25.379Z"
       }
     },
     "additionalImages": [
@@ -4835,7 +4877,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:26.136Z"
       }
     },
     "additionalImages": [
@@ -4889,7 +4932,8 @@ export default [
         "matchedAt": "2026-05-15T02:34:16.508Z",
         "matchMethod": "remediate:strict-token",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:26.919Z"
       }
     },
     "discount": 7,
@@ -4942,7 +4986,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.985Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:27.666Z"
       }
     },
     "additionalImages": [
@@ -4996,7 +5041,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:28.419Z"
       },
       "bestbuy": {
         "price": 1019,
@@ -5056,7 +5102,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:29.152Z"
       },
       "bestbuy": {
         "price": 542.99,
@@ -5115,7 +5162,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:29.900Z"
       },
       "bestbuy": {
         "price": 596.99,
@@ -5173,7 +5221,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.824Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:30.670Z"
       }
     },
     "additionalImages": [
@@ -5264,7 +5313,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.933Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:31.436Z"
       },
       "bestbuy": {
         "price": 1149.99,
@@ -5364,7 +5414,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.125Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:32.187Z"
       },
       "bestbuy": {
         "price": 269.99,
@@ -5422,7 +5473,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.060Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:32.954Z"
       }
     },
     "additionalImages": [
@@ -5518,7 +5570,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:33.711Z"
       },
       "bestbuy": {
         "price": 249.99,
@@ -5661,7 +5714,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:34.460Z"
       },
       "bestbuy": {
         "price": 469.99,
@@ -5762,7 +5816,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.837Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:35.216Z"
       }
     },
     "additionalImages": [
@@ -5815,7 +5870,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.458Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:35.934Z"
       }
     },
     "additionalImages": [
@@ -5868,7 +5924,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:36.746Z"
       },
       "bestbuy": {
         "price": 374.99,
@@ -5922,7 +5979,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:37.502Z"
       }
     },
     "additionalImages": [
@@ -6345,7 +6403,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:38.245Z"
       },
       "bestbuy": {
         "price": 464.99,
@@ -6487,7 +6546,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:38.994Z"
       },
       "bestbuy": {
         "price": 899.99,
@@ -6627,7 +6687,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.465Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:39.741Z"
       },
       "bestbuy": {
         "price": 1374.31,
@@ -6727,7 +6788,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.53,
-        "sellerClass": "marketplace"
+        "sellerClass": "marketplace",
+        "staleSince": "2026-06-29T10:31:40.950Z"
       }
     },
     "additionalImages": [
@@ -6779,7 +6841,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.606Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:41.712Z"
       }
     },
     "additionalImages": [
@@ -6995,7 +7058,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.933Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:42.434Z"
       }
     },
     "discount": 15,
@@ -7536,7 +7600,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:43.187Z"
       },
       "bestbuy": {
         "price": 1119.99,
@@ -7595,7 +7660,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.933Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:43.909Z"
       },
       "bestbuy": {
         "price": 499.99,
@@ -7655,7 +7721,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.124Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:44.661Z"
       },
       "bestbuy": {
         "price": 549.99,
@@ -7749,7 +7816,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.124Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:45.398Z"
       },
       "bestbuy": {
         "price": 999.99,
@@ -7806,7 +7874,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.623Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:46.145Z"
       }
     },
     "additionalImages": [
@@ -8032,7 +8101,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.065Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:46.953Z"
       }
     },
     "additionalImages": [
@@ -8375,7 +8445,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.124Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:47.680Z"
       },
       "bestbuy": {
         "price": 499.99,
@@ -8627,7 +8698,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.65,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:31:48.433Z"
       }
     },
     "mpn": "Viper Elite 5",
@@ -8991,7 +9063,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.060Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:49.892Z"
       }
     },
     "upc": "814914029879",
@@ -9200,7 +9273,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.462Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:50.657Z"
       }
     },
     "discount": 7,
@@ -9408,7 +9482,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.933Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:51.392Z"
       },
       "bestbuy": {
         "price": 1099.99,
@@ -9591,7 +9666,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:52.129Z"
       },
       "bestbuy": {
         "price": 264.99,
@@ -9691,7 +9767,8 @@ export default [
         "matchedAt": "2026-05-13",
         "matchMethod": "name",
         "matchScore": 0.55,
-        "sellerClass": "official"
+        "sellerClass": "official",
+        "staleSince": "2026-06-29T10:31:52.873Z"
       }
     },
     "additionalImages": [
@@ -9980,7 +10057,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:53.596Z"
       },
       "bestbuy": {
         "price": 489.99,
@@ -10081,7 +10159,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:54.350Z"
       },
       "bestbuy": {
         "price": 474.99,
@@ -10135,7 +10214,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.125Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:55.088Z"
       },
       "bestbuy": {
         "price": 999.99,
@@ -10502,7 +10582,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:55.849Z"
       }
     },
     "cap": 32,
@@ -10581,7 +10662,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.623Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:56.614Z"
       }
     },
     "cap": 32,
@@ -10626,7 +10708,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:57.335Z"
       }
     },
     "cap": 16,
@@ -10672,7 +10755,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:58.082Z"
       }
     },
     "cap": 16,
@@ -10718,7 +10802,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:58.842Z"
       }
     },
     "cap": 32,
@@ -10764,7 +10849,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:31:59.590Z"
       }
     },
     "cap": 64,
@@ -10809,7 +10895,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.675Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:00.356Z"
       }
     },
     "cap": 32,
@@ -10855,7 +10942,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:01.100Z"
       }
     },
     "cap": 32,
@@ -10935,7 +11023,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:01.919Z"
       }
     },
     "cap": 32,
@@ -10980,7 +11069,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:04.065Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:02.663Z"
       }
     },
     "cap": 64,
@@ -11026,7 +11116,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:03.436Z"
       }
     },
     "cap": 32,
@@ -11072,7 +11163,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:04.195Z"
       }
     },
     "cap": 32,
@@ -11117,7 +11209,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.985Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:04.951Z"
       }
     },
     "cap": 16,
@@ -11163,7 +11256,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:05.774Z"
       }
     },
     "cap": 32,
@@ -11209,7 +11303,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:06.637Z"
       }
     },
     "cap": 32,
@@ -11255,7 +11350,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:07.398Z"
       }
     },
     "cap": 32,
@@ -11301,7 +11397,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:08.176Z"
       }
     },
     "cap": 32,
@@ -11482,7 +11579,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:03.380Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:08.925Z"
       }
     },
     "cap": 64,
@@ -11596,7 +11694,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:09.676Z"
       }
     },
     "cap": 96,
@@ -11677,7 +11776,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:10.424Z"
       }
     },
     "cap": 64,
@@ -11757,7 +11857,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:11.188Z"
       }
     },
     "cap": 64,
@@ -11803,7 +11904,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:11.979Z"
       }
     },
     "cap": 32,
@@ -11849,7 +11951,8 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.780Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "staleSince": "2026-06-29T10:32:12.736Z"
       }
     },
     "cap": 16,
