@@ -300,7 +300,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "migratedAt": "2026-06-29T10:22:57.128Z",
-        "migratedFrom": "9SIC3U3KN45519"
+        "migratedFrom": "9SIC3U3KN45519",
+        "staleSince": "2026-06-29T19:43:20.422Z"
       }
     },
     "igpu": true

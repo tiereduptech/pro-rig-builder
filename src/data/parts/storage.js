@@ -842,7 +842,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.6,
         "migratedAt": "2026-06-29T10:32:20.232Z",
-        "migratedFrom": "9SIAG98KHU4736"
+        "migratedFrom": "9SIAG98KHU4736",
+        "staleSince": "2026-06-29T19:51:33.640Z"
       }
     },
     "value": 3,
@@ -21664,7 +21665,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.56,
         "migratedAt": "2026-06-29T10:36:07.186Z",
-        "migratedFrom": "9SIC0X3KG68651"
+        "migratedFrom": "9SIC0X3KG68651",
+        "staleSince": "2026-06-29T19:54:43.391Z"
       }
     },
     "cap": 2000,
@@ -21806,7 +21808,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.54,
         "migratedAt": "2026-06-29T10:36:08.072Z",
-        "migratedFrom": "9SIBFJRKSM5581"
+        "migratedFrom": "9SIBFJRKSM5581",
+        "staleSince": "2026-06-29T19:54:44.232Z"
       }
     },
     "cap": 1000,
@@ -23343,7 +23346,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.54,
         "migratedAt": "2026-06-29T10:36:29.778Z",
-        "migratedFrom": "9SIAAEEKG84766"
+        "migratedFrom": "9SIAAEEKG84766",
+        "staleSince": "2026-06-29T19:55:08.297Z"
       }
     },
     "cap": 20000,
@@ -23525,7 +23529,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.75,
         "migratedAt": "2026-06-29T10:36:32.460Z",
-        "migratedFrom": "9SIAAEEKV44136"
+        "migratedFrom": "9SIAAEEKV44136",
+        "staleSince": "2026-06-29T19:55:11.329Z"
       }
     },
     "cap": 8000,
@@ -24588,7 +24593,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "migratedAt": "2026-06-29T10:36:47.309Z",
-        "migratedFrom": "9SIBFJRKA88785"
+        "migratedFrom": "9SIBFJRKA88785",
+        "staleSince": "2026-06-29T19:55:28.812Z"
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",

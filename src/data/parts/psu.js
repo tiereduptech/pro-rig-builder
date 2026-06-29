@@ -7256,7 +7256,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "migratedAt": "2026-06-29T10:40:43.020Z",
-        "migratedFrom": "9SIA8EFKCG5213"
+        "migratedFrom": "9SIA8EFKCG5213",
+        "staleSince": "2026-06-29T19:58:39.930Z"
       }
     },
     "watts": 850,
@@ -7770,7 +7771,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "migratedAt": "2026-06-29T10:40:49.197Z",
-        "migratedFrom": "9SIA4P0KZ48121"
+        "migratedFrom": "9SIA4P0KZ48121",
+        "staleSince": "2026-06-29T19:58:46.795Z"
       }
     },
     "watts": 750,
@@ -7945,7 +7947,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.5,
         "migratedAt": "2026-06-29T10:40:52.484Z",
-        "migratedFrom": "9SIC642KZ25552"
+        "migratedFrom": "9SIC642KZ25552",
+        "staleSince": "2026-06-29T19:58:50.200Z"
       }
     },
     "watts": 1000,
@@ -9113,7 +9116,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "migratedAt": "2026-06-29T10:41:04.735Z",
-        "migratedFrom": "9SIC70SM008394"
+        "migratedFrom": "9SIC70SM008394",
+        "staleSince": "2026-06-29T19:59:04.366Z"
       }
     },
     "addedAt": "2026-05-15T14:34:31.764Z",
