@@ -5852,16 +5852,16 @@ export default [
         "inStock": false
       },
       "newegg": {
-        "sku": "9SIAFJ8KDZ9910",
-        "price": 318.22,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317578803886241211625&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fhp-e24mv-g4-23-8-full-hd%2Fp%2FN82E16824276858%3Fitem%3D9SIAFJ8KDZ9910",
+        "sku": "N82E16824276858",
+        "price": 323.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312380349496782041368&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fhp-e24mv-g4-23-8-full-hd%2Fp%2FN82E16824276858%3Fitem%3DN82E16824276858",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-276-858-S01.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "marketplace",
-        "staleSince": "2026-06-29T10:56:22.030Z"
+        "migratedAt": "2026-06-30T20:17:59.171Z",
+        "migratedFrom": "9SIAFJ8KDZ9910"
       }
     },
     "screenSize": 23.8,

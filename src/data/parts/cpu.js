@@ -83,7 +83,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "migratedAt": "2026-06-30T08:56:49.570Z",
-        "migratedFrom": "9SIC3U3KN45550"
+        "migratedFrom": "9SIC3U3KN45550",
+        "staleSince": "2026-06-30T19:42:56.256Z"
       }
     },
     "igpu": true

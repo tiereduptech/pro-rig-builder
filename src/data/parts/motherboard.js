@@ -3581,7 +3581,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "migratedAt": "2026-06-30T08:59:23.487Z",
-        "migratedFrom": "9SIB319KRU9072"
+        "migratedFrom": "9SIB319KRU9072",
+        "staleSince": "2026-06-30T19:47:09.334Z"
       }
     },
     "discount": 33,
