@@ -73,16 +73,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3U3KN45550",
-        "price": 445,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837836034847027860901&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-9-9000-series-ryzen-9-9900x-granite-ridge-socket-am5-processors-desktops%2Fp%2F274-000M-00216%3Fitem%3D9SIC3U3KN45550",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS25020507L1797F.jpg",
+        "sku": "N82E16819113842",
+        "price": 499,
+        "saleprice": 389,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313764603694254374003&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-9-9000-series-ryzen-9-9900x-granite-ridge-socket-am5-desktop-cpu-processor%2Fp%2FN82E16819113842%3Fitem%3DN82E16819113842",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-842-02.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 1,
-        "sellerClass": "marketplace",
-        "staleSince": "2026-06-29T10:22:53.289Z"
+        "migratedAt": "2026-06-30T08:56:49.570Z",
+        "migratedFrom": "9SIC3U3KN45550"
       }
     },
     "igpu": true

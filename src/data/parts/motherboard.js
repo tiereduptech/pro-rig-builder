@@ -3572,16 +3572,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIB319KRU9072",
-        "price": 211,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583864047961576587923&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-x870-plus-wifi-atx-motherboard-amd-x870-am5%2Fp%2FN82E16813119686%3Fitem%3D9SIB319KRU9072",
+        "sku": "N82E16813119686",
+        "price": 279.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316853172344249856532&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-x870-plus-wifi-atx-motherboard-amd-x870-am5%2Fp%2FN82E16813119686%3Fitem%3DN82E16813119686",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-686-13.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "marketplace",
-        "staleSince": "2026-06-29T10:27:10.690Z"
+        "migratedAt": "2026-06-30T08:59:23.487Z",
+        "migratedFrom": "9SIB319KRU9072"
       }
     },
     "discount": 33,
