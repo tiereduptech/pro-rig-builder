@@ -131,7 +131,7 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 40004,
@@ -195,7 +195,7 @@ export default [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-06-29",
+    "quarantinedAt": "2026-07-01",
     "form": "DIMM",
     "color": "Black"
   },
@@ -229,7 +229,9 @@ export default [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "form": "DIMM",
-    "color": "Black"
+    "color": "Black",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 40007,
@@ -261,7 +263,9 @@ export default [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "form": "DIMM",
-    "color": "Black"
+    "color": "Black",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 40008,
@@ -423,7 +427,9 @@ export default [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "form": "DIMM",
-    "color": "White"
+    "color": "White",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 40013,
@@ -973,7 +979,9 @@ export default [
     "memType": "DDR4",
     "formFactor": "UDIMM",
     "form": "DIMM",
-    "color": "Black"
+    "color": "Black",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 40030,
@@ -1214,7 +1222,7 @@ export default [
     "reviews": 3759,
     "deals": {
       "amazon": {
-        "price": 413.99,
+        "price": 479.99,
         "url": "https://www.amazon.com/dp/B0BZHTVHN5?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1545,7 +1553,7 @@ export default [
     "reviews": 371,
     "deals": {
       "amazon": {
-        "price": 229.99,
+        "price": 249.99,
         "url": "https://www.amazon.com/dp/B0D2P1CVQD?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2954,7 +2962,7 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 40070,
@@ -3154,7 +3162,7 @@ export default [
     "color": "White",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 40074,
@@ -3455,7 +3463,7 @@ export default [
     "reviews": 2578,
     "deals": {
       "amazon": {
-        "price": 103.99,
+        "price": 97.99,
         "url": "https://www.amazon.com/dp/B098TXZY34?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3508,7 +3516,7 @@ export default [
     "reviews": 1681,
     "deals": {
       "amazon": {
-        "price": 449,
+        "price": 479.99,
         "url": "https://www.amazon.com/dp/B09PTGZM6Y?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3768,7 +3776,7 @@ export default [
     "reviews": 869,
     "deals": {
       "amazon": {
-        "price": 119.99,
+        "price": 113.99,
         "url": "https://www.amazon.com/dp/B09T2LCVL7?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4412,7 +4420,7 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 40101,
@@ -6678,7 +6686,7 @@ export default [
     "reviews": 334,
     "deals": {
       "amazon": {
-        "price": 1082.74,
+        "price": 1156.89,
         "url": "https://www.amazon.com/dp/B0BRTJDWYD?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6763,7 +6771,7 @@ export default [
     "color": "Red",
     "ecc": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 40148,
@@ -7264,7 +7272,7 @@ export default [
     "reviews": 236,
     "deals": {
       "amazon": {
-        "price": 459,
+        "price": 507.59,
         "url": "https://www.amazon.com/dp/B0CJ8XQBHY?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7806,7 +7814,7 @@ export default [
     "reviews": 127,
     "deals": {
       "amazon": {
-        "price": 820,
+        "price": 1177.99,
         "url": "https://www.amazon.com/dp/B0BZJB3KSX?tag=tiereduptech-20",
         "inStock": true
       },
@@ -7905,7 +7913,7 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 40173,
@@ -8565,7 +8573,7 @@ export default [
     "reviews": 61,
     "deals": {
       "amazon": {
-        "price": 800,
+        "price": 995.56,
         "url": "https://www.amazon.com/dp/B0BZJBGNDF?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8965,7 +8973,7 @@ export default [
     "reviews": 52,
     "deals": {
       "amazon": {
-        "price": 389.97,
+        "price": 429.97,
         "url": "https://www.amazon.com/dp/B0FZTZD5N1?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9383,7 +9391,7 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 40208,
@@ -9799,7 +9807,7 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 40217,
@@ -10009,7 +10017,7 @@ export default [
     "reviews": 17,
     "deals": {
       "amazon": {
-        "price": 261.99,
+        "price": 189.99,
         "url": "https://www.amazon.com/dp/B0DF22G7MH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -10251,7 +10259,7 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 40227,
@@ -12192,7 +12200,7 @@ export default [
       "amazon": {
         "asin": "B082DH1FZR",
         "url": "https://www.amazon.com/dp/B082DH1FZR?tag=tiereduptech-20",
-        "price": 460.73,
+        "price": 499.07,
         "inStock": true
       }
     },
@@ -12290,7 +12298,7 @@ export default [
       "amazon": {
         "asin": "B0D7LY1NC5",
         "url": "https://www.amazon.com/dp/B0D7LY1NC5?tag=tiereduptech-20",
-        "price": 409.99,
+        "price": 369.99,
         "inStock": true
       }
     },
@@ -12643,7 +12651,7 @@ export default [
       "amazon": {
         "asin": "B08NVQZ9XQ",
         "url": "https://www.amazon.com/dp/B08NVQZ9XQ?tag=tiereduptech-20",
-        "price": 248.99,
+        "price": 219.99,
         "inStock": true
       }
     },
@@ -12828,7 +12836,7 @@ export default [
       "amazon": {
         "asin": "B0GQC6MV6C",
         "url": "https://www.amazon.com/dp/B0GQC6MV6C?tag=tiereduptech-20",
-        "price": 236.99,
+        "price": 254.99,
         "inStock": true
       }
     },
@@ -12959,7 +12967,7 @@ export default [
       "amazon": {
         "asin": "B0736W5BH2",
         "url": "https://www.amazon.com/dp/B0736W5BH2?tag=tiereduptech-20",
-        "price": 189,
+        "price": 176.99,
         "inStock": true
       }
     },
@@ -13025,7 +13033,7 @@ export default [
     "ecc": true,
     "rgb": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 100755,
@@ -13182,7 +13190,7 @@ export default [
     "memType": "DDR5",
     "formFactor": "DIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 100761,
@@ -13266,7 +13274,7 @@ export default [
     "memType": "DDR5",
     "formFactor": "DIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 100764,
@@ -13651,7 +13659,7 @@ export default [
       "amazon": {
         "asin": "B0CFG7F72M",
         "url": "https://www.amazon.com/dp/B0CFG7F72M?tag=tiereduptech-20",
-        "price": 989.98,
+        "price": 929.99,
         "inStock": true
       }
     },
@@ -13954,7 +13962,7 @@ export default [
     "formFactor": "UDIMM",
     "rgb": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 100790,
@@ -14117,7 +14125,7 @@ export default [
     "formFactor": "UDIMM",
     "rgb": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-01"
   },
   {
     "id": 100796,
