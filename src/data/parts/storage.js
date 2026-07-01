@@ -20699,7 +20699,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.6,
         "migratedAt": "2026-07-01T09:41:22.549Z",
-        "migratedFrom": "9SIC4RPKUR4483"
+        "migratedFrom": "9SIC4RPKUR4483",
+        "staleSince": "2026-07-01T19:51:08.348Z"
       }
     },
     "cap": 4000,
