@@ -5861,7 +5861,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "migratedAt": "2026-06-30T20:17:59.171Z",
-        "migratedFrom": "9SIAFJ8KDZ9910"
+        "migratedFrom": "9SIAFJ8KDZ9910",
+        "staleSince": "2026-07-01T10:01:41.682Z"
       }
     },
     "screenSize": 23.8,

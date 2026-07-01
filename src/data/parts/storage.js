@@ -20673,16 +20673,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC4RPKUR4483",
-        "price": 606.96,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839065462787582221391&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-4tb-black-sn850x-nvme%2Fp%2FN82E16820250244%3Fitem%3D9SIC4RPKUR4483",
+        "sku": "N82E16820250244",
+        "price": 1199.99,
+        "saleprice": 599.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831749202950568255183&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-4tb-black-sn850x-nvme%2Fp%2FN82E16820250244%3Fitem%3DN82E16820250244",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-244-16.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.6,
-        "sellerClass": "marketplace",
-        "staleSince": "2026-06-29T10:34:53.701Z"
+        "migratedAt": "2026-07-01T09:41:22.549Z",
+        "migratedFrom": "9SIC4RPKUR4483"
       }
     },
     "cap": 4000,
