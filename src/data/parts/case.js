@@ -10399,16 +10399,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFK579956",
-        "price": 114.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310735925064870126283&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-e-atx-mid-tower-ceres-300-series-spcc-case-matcha-green-ceres-300-tg-argb%2Fp%2FN82E16811133532%3Fitem%3D9SIA8EFK579956",
+        "sku": "N82E16811133532",
+        "price": 120.99,
+        "saleprice": 102.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831664814297187919542&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-e-atx-mid-tower-ceres-300-series-spcc-case-matcha-green-ceres-300-tg-argb%2Fp%2FN82E16811133532%3Fitem%3DN82E16811133532",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD2401270DR9A4EE.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "marketplace",
-        "staleSince": "2026-06-29T10:42:35.452Z"
+        "migratedAt": "2026-07-02T09:01:50.669Z",
+        "migratedFrom": "9SIA8EFK579956"
       }
     },
     "additionalImages": [
@@ -13522,16 +13523,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFKM06354",
+        "sku": "N82E16811133572",
         "price": 169.99,
-        "saleprice": 119.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314883886740105950147&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16811133572%3Fitem%3D9SIA8EFKM06354",
+        "saleprice": 159.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315449548677469535239&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16811133572%3Fitem%3DN82E16811133572",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-133-572-09.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "marketplace",
-        "staleSince": "2026-06-29T10:42:54.927Z"
+        "migratedAt": "2026-07-02T09:02:09.858Z",
+        "migratedFrom": "9SIA8EFKM06354"
       }
     },
     "additionalImages": [
