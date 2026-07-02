@@ -3403,7 +3403,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.77,
         "migratedAt": "2026-07-02T09:05:01.180Z",
-        "migratedFrom": "9SIC70SKYH2123"
+        "migratedFrom": "9SIC70SKYH2123",
+        "staleSince": "2026-07-02T19:29:26.102Z"
       }
     },
     "discount": 13,
@@ -13890,7 +13891,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "migratedAt": "2026-07-02T09:07:28.794Z",
-        "migratedFrom": "9SIC70SKYH2123"
+        "migratedFrom": "9SIC70SKYH2123",
+        "staleSince": "2026-07-02T19:33:05.679Z"
       }
     },
     "coolerType": "AIO",
@@ -14292,7 +14294,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.91,
         "migratedAt": "2026-07-02T09:07:32.603Z",
-        "migratedFrom": "9SIC70SKYH2123"
+        "migratedFrom": "9SIC70SKYH2123",
+        "staleSince": "2026-07-02T19:33:09.802Z"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",

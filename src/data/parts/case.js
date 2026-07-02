@@ -10409,7 +10409,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "migratedAt": "2026-07-02T09:01:50.669Z",
-        "migratedFrom": "9SIA8EFK579956"
+        "migratedFrom": "9SIA8EFK579956",
+        "staleSince": "2026-07-02T19:27:01.519Z"
       }
     },
     "additionalImages": [
@@ -13533,7 +13534,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "migratedAt": "2026-07-02T09:02:09.858Z",
-        "migratedFrom": "9SIA8EFKM06354"
+        "migratedFrom": "9SIA8EFKM06354",
+        "staleSince": "2026-07-02T19:27:23.083Z"
       }
     },
     "additionalImages": [
