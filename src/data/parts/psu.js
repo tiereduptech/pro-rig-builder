@@ -6513,16 +6513,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFK8Y9872",
-        "price": 64.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316479606617558063992&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-smart-w3-series-sp3-700ah2nlw-700-w%2Fp%2FN82E16817153470%3Fitem%3D9SIA8EFK8Y9872",
+        "sku": "N82E16817153470",
+        "price": 72.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839925289308800300222&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-smart-w3-series-sp3-700ah2nlw-700-w%2Fp%2FN82E16817153470%3Fitem%3DN82E16817153470",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-470-01.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.83,
-        "sellerClass": "marketplace",
-        "staleSince": "2026-06-29T10:40:30.371Z"
+        "migratedAt": "2026-07-03T19:18:29.065Z",
+        "migratedFrom": "9SIA8EFK8Y9872"
       }
     },
     "watts": 500,
@@ -6555,16 +6555,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFK8Y9872",
-        "price": 64.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316479606617558063992&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-smart-w3-series-sp3-700ah2nlw-700-w%2Fp%2FN82E16817153470%3Fitem%3D9SIA8EFK8Y9872",
+        "sku": "N82E16817153470",
+        "price": 72.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839925289308800300222&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-smart-w3-series-sp3-700ah2nlw-700-w%2Fp%2FN82E16817153470%3Fitem%3DN82E16817153470",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-470-01.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "upc",
         "matchScore": 1,
-        "sellerClass": "marketplace",
-        "staleSince": "2026-06-29T10:40:31.472Z"
+        "migratedAt": "2026-07-03T19:18:30.028Z",
+        "migratedFrom": "9SIA8EFK8Y9872"
       }
     },
     "watts": 700,

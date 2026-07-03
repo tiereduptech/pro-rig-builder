@@ -12366,7 +12366,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.9,
         "migratedAt": "2026-07-03T09:11:29.819Z",
-        "migratedFrom": "9SIC70SKYB6920"
+        "migratedFrom": "9SIC70SKYB6920",
+        "staleSince": "2026-07-03T19:26:08.465Z"
       }
     },
     "additionalImages": [
