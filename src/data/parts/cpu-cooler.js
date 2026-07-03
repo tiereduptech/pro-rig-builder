@@ -12357,16 +12357,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC70SKYB6920",
-        "price": 149.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837827478855885827462&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-aio-tuf-gaming-lc-iii-radiator-size-397-mm-argb%2Fp%2FN82E16835101134%3Fitem%3D9SIC70SKYB6920",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-134-03.png",
+        "sku": "N82E16835101138",
+        "price": 144.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311214969883654036808&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-aio-tuf-gaming-lc-radiator-size-397-mm-intel-lga-1851-intel-lga-1700-intel-lga-1200-amd-am5-amd-am4-white%2Fp%2FN82E16835101138%3Fitem%3DN82E16835101138",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-138-03.png",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "sellerClass": "marketplace",
-        "staleSince": "2026-06-29T10:47:56.874Z"
+        "matchMethod": "name",
+        "matchScore": 0.9,
+        "migratedAt": "2026-07-03T09:11:29.819Z",
+        "migratedFrom": "9SIC70SKYB6920"
       }
     },
     "additionalImages": [
