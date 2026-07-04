@@ -6522,7 +6522,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.83,
         "migratedAt": "2026-07-03T19:18:29.065Z",
-        "migratedFrom": "9SIA8EFK8Y9872"
+        "migratedFrom": "9SIA8EFK8Y9872",
+        "staleSince": "2026-07-04T08:41:47.550Z"
       }
     },
     "watts": 500,
@@ -6564,7 +6565,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "migratedAt": "2026-07-03T19:18:30.028Z",
-        "migratedFrom": "9SIA8EFK8Y9872"
+        "migratedFrom": "9SIA8EFK8Y9872",
+        "staleSince": "2026-07-04T08:41:48.310Z"
       }
     },
     "watts": 700,
