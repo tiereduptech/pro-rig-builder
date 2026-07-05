@@ -298,7 +298,7 @@ export default [
     "color": "Black",
     "value": 29,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03",
+    "quarantinedAt": "2026-07-05",
     "rgb": false,
     "fans": 1
   },
@@ -328,7 +328,7 @@ export default [
     "color": "Black",
     "value": 19,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03",
+    "quarantinedAt": "2026-07-05",
     "rgb": false,
     "fans": 1
   },
@@ -358,7 +358,7 @@ export default [
     "color": "Black",
     "value": 33,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03",
+    "quarantinedAt": "2026-07-05",
     "rgb": false,
     "fans": 1
   },
@@ -390,7 +390,7 @@ export default [
     "rgb": false,
     "fans": 1,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03"
+    "quarantinedAt": "2026-07-05"
   },
   {
     "id": 60013,
@@ -420,7 +420,7 @@ export default [
     "rgb": false,
     "fans": 1,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03"
+    "quarantinedAt": "2026-07-05"
   },
   {
     "id": 60014,
@@ -556,7 +556,7 @@ export default [
     "color": "Black",
     "value": 43,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03",
+    "quarantinedAt": "2026-07-05",
     "rgb": false,
     "fans": 1
   },
@@ -626,7 +626,7 @@ export default [
     "color": "Black",
     "value": 6,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03",
+    "quarantinedAt": "2026-07-05",
     "rgb": false,
     "fans": 1
   },
@@ -729,7 +729,7 @@ export default [
     "rgb": false,
     "fans": 1,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03"
+    "quarantinedAt": "2026-07-05"
   },
   {
     "id": 60023,
@@ -785,7 +785,7 @@ export default [
     "color": "Black",
     "value": 26,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03",
+    "quarantinedAt": "2026-07-05",
     "rgb": false,
     "fans": 1
   },
@@ -897,7 +897,7 @@ export default [
     "color": "Black",
     "value": 42,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03",
+    "quarantinedAt": "2026-07-05",
     "rgb": false,
     "fans": 1
   },
@@ -927,7 +927,7 @@ export default [
     "color": "Black",
     "value": 54,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03",
+    "quarantinedAt": "2026-07-05",
     "rgb": false,
     "fans": 1
   },
@@ -997,7 +997,7 @@ export default [
     "color": "Black",
     "value": 98,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03",
+    "quarantinedAt": "2026-07-05",
     "rgb": false,
     "fans": 1
   },
@@ -1027,7 +1027,7 @@ export default [
     "color": "Black",
     "value": 28,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03",
+    "quarantinedAt": "2026-07-05",
     "rgb": false,
     "fans": 1
   },
@@ -1058,7 +1058,7 @@ export default [
     "value": 0,
     "rgb": true,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03",
+    "quarantinedAt": "2026-07-05",
     "fans": 1
   },
   {
@@ -1089,7 +1089,7 @@ export default [
     "rgb": false,
     "fans": 1,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03"
+    "quarantinedAt": "2026-07-05"
   },
   {
     "id": 60034,
@@ -2879,7 +2879,9 @@ export default [
     "depth": 160,
     "atx3": true,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-05"
   },
   {
     "id": 60071,
@@ -2978,7 +2980,7 @@ export default [
     "reviews": 18,
     "deals": {
       "amazon": {
-        "price": 53.99,
+        "price": 59.99,
         "url": "https://www.amazon.com/dp/B0GFH7L16Y?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3581,7 +3583,7 @@ export default [
     "reviews": 288,
     "deals": {
       "amazon": {
-        "price": 115.78,
+        "price": 139.99,
         "url": "https://www.amazon.com/dp/B0D68VH8DR?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3711,7 +3713,7 @@ export default [
     "reviews": 159,
     "deals": {
       "amazon": {
-        "price": 67.99,
+        "price": 72.92,
         "url": "https://www.amazon.com/dp/B071HHSY2M?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4853,7 +4855,7 @@ export default [
     "rgb": false,
     "fans": 1,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03"
+    "quarantinedAt": "2026-07-05"
   },
   {
     "id": 60120,
@@ -8090,7 +8092,7 @@ export default [
       "amazon": {
         "asin": "B0FKL8L37F",
         "url": "https://www.amazon.com/dp/B0FKL8L37F?tag=tiereduptech-20",
-        "price": 156.99,
+        "price": 144.03,
         "inStock": true
       }
     },
@@ -8674,7 +8676,7 @@ export default [
     "source": "amazon-discovery",
     "ff": "SFX",
     "needsReview": true,
-    "quarantinedAt": "2026-07-03"
+    "quarantinedAt": "2026-07-05"
   },
   {
     "id": 100542,
@@ -9357,7 +9359,7 @@ export default [
       "amazon": {
         "asin": "B01ER29BKG",
         "url": "https://www.amazon.com/dp/B01ER29BKG?tag=tiereduptech-20",
-        "price": 52.27,
+        "price": 39.99,
         "inStock": true
       }
     },
@@ -9814,7 +9816,7 @@ export default [
       "amazon": {
         "asin": "B0D5HT2L96",
         "url": "https://www.amazon.com/dp/B0D5HT2L96?tag=tiereduptech-20",
-        "price": 214.21,
+        "price": 190.23,
         "inStock": true
       }
     },
@@ -9839,7 +9841,7 @@ export default [
       "amazon": {
         "asin": "B0FN7JS7LZ",
         "url": "https://www.amazon.com/dp/B0FN7JS7LZ?tag=tiereduptech-20",
-        "price": 155.99,
+        "price": 164.99,
         "inStock": true
       }
     },
@@ -9904,7 +9906,7 @@ export default [
     "ff": "ATX",
     "atx3": true,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03"
+    "quarantinedAt": "2026-07-05"
   },
   {
     "id": 101196,
@@ -10344,7 +10346,7 @@ export default [
     "ff": "ATX",
     "atx3": true,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03"
+    "quarantinedAt": "2026-07-05"
   },
   {
     "id": 101344,
@@ -10759,7 +10761,7 @@ export default [
     "ff": "ATX",
     "atx3": true,
     "needsReview": true,
-    "quarantinedAt": "2026-07-03"
+    "quarantinedAt": "2026-07-05"
   },
   {
     "id": 101878,
