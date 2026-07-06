@@ -2081,19 +2081,6 @@ export default [
         "price": 599,
         "url": "https://www.amazon.com/dp/B0CK29X5GV?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445834068072192940506821",
-        "price": 629.99,
-        "saleprice": 599.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834068072192940506821&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-100-300000077-radeon-pro-w7600-8gb-graphics-card%2Fp%2FN82E16814105116%3Fitem%3DN82E16814105116",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-105-116-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:02.781Z"
       }
     },
     "upc": "00727419314855",
@@ -2127,19 +2114,6 @@ export default [
         "price": 428.98,
         "url": "https://www.amazon.com/dp/B0CK2DB8NY?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458310041618304327197098",
-        "price": 429,
-        "saleprice": 428.98,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310041618304327197098&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-100-300000078-radeon-pro-w7500-8gb-graphics-card%2Fp%2FN82E16814105117%3Fitem%3DN82E16814105117",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-105-117-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:03.525Z"
       }
     },
     "upc": "00727419314862",
@@ -3473,18 +3447,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0CVCG2VPK?tag=tiereduptech-20",
         "inStock": true
       },
-      "newegg": {
-        "sku": "44583592661843778831268",
-        "price": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583592661843778831268&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-dual-rtx3050-o6g-geforce-rtx-3050-6gb-graphics-card-double-fans%2Fp%2FN82E16814126708%3Fitem%3DN82E16814126708",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-708-06.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:04.292Z"
-      },
       "bestbuy": {
         "price": 265.49,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12611252&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-dual-rtx-3050-6gb-oc-gaming-gpu-pcie-4-0-gddr6-hdmi-2-1-dp-1-4a-2-slot-axial-tech-fans-0db-tech%2FJJGGLQ727K&intsrc=APIG_28060",
@@ -3618,19 +3580,6 @@ export default [
         "price": 433.41,
         "url": "https://www.amazon.com/dp/B0FLHBFFX4?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445834665670607712624228",
-        "price": 499.99,
-        "saleprice": 479.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834665670607712624228&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-dual-rx9060xt-16g-radeon-rx-9060-xt-16gb-graphics-card-double-fans%2Fp%2FN82E16814126817%3Fitem%3DN82E16814126817",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-817-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:05.065Z"
       }
     },
     "discount": 21,
@@ -3765,19 +3714,6 @@ export default [
         "price": 1299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617114&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5080-argb-16gb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C46ZKT&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458312483729121480322576",
-        "price": 1499.99,
-        "saleprice": 1299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312483729121480322576&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-technologies-inc-argb-oc-vcg508016tfxxpb1-o-geforce-rtx-5080-16gb-graphics-card%2Fp%2FN82E16814133898%3Fitem%3DN82E16814133898",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-133-898-02.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:05.926Z"
       }
     },
     "discount": 7,
@@ -3896,18 +3832,6 @@ export default [
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B0F7W1KVT3?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458318436758363980138017",
-        "price": 489.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318436758363980138017&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-dual-rtx5060ti-o8g-geforce-rtx-5060-ti-8gb-graphics-card-double-fans%2Fp%2FN82E16814126799%3Fitem%3DN82E16814126799",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-799-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:06.686Z"
       }
     },
     "additionalImages": [
@@ -3951,19 +3875,6 @@ export default [
         "price": 743.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671698&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-radeon-rx-9070-xt-gaming-oc-ice-16g-graphics-card-white%2FJ3ZW9X769S&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458314146977636092933972",
-        "price": 759.99,
-        "saleprice": 749.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314146977636092933972&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-r907xgamingocice-16gd-radeon-rx-9070-xt-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932823%3Fitem%3DN82E16814932823",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-823-18.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:07.437Z"
       }
     },
     "additionalImages": [
@@ -4048,18 +3959,6 @@ export default [
         "price": 1861.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613334&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-astral-nvidia-geforce-rtx-5080-16gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLH7RYH&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458314583067850245555496",
-        "price": 1899.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314583067850245555496&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-astral-rog-astral-rtx5080-o16g-gaming-geforce-rtx-5080-16gb-graphics-card%2Fp%2FN82E16814126742%3Fitem%3DN82E16814126742",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-742-04.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:08.187Z"
       },
       "newegg_openbox": {
         "sku": "4458316281947149435764482",
@@ -4232,19 +4131,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0G2B2VTG3?tag=tiereduptech-20",
         "inStock": true
       },
-      "newegg": {
-        "sku": "4458314890148548358863421",
-        "price": 449.99,
-        "saleprice": 379.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314890148548358863421&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-ti-8g-ventus-3x-oc-geforce-rtx-5060-ti-8gb-graphics-card-triple-fans%2Fp%2FN82E16814982007%3Fitem%3DN82E16814982007",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-982-007-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:08.942Z"
-      },
       "bestbuy": {
         "price": 414.1,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592845&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-ti-8gb-gddr7-ventus-3x-oc-edition-pci-express-5-0-graphics-card-black-sliver%2FJ3P7TXRFH8&intsrc=APIG_28060",
@@ -4299,18 +4185,6 @@ export default [
         "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672757&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672757.p%3FskuId%3D6672757",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445836257870980566207110",
-        "price": 599.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836257870980566207110&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-ti-16g-shadow-2x-oc-plus-geforce-rtx-5060-ti-16gb-graphics-card-double-fans%2Fp%2FN82E16814137977%3Fitem%3DN82E16814137977",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-977-06.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:09.702Z"
       },
       "msi": {
         "price": 569.99,
@@ -5463,19 +5337,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0DZCYPFVT?tag=tiereduptech-20",
         "inStock": true
       },
-      "newegg": {
-        "sku": "4458317026312347847304869",
-        "price": 659.99,
-        "saleprice": 629.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317026312347847304869&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5070-12g-shadow-2x-oc-geforce-rtx-5070-12gb-graphics-card-double-fans%2Fp%2FN82E16814137944%3Fitem%3DN82E16814137944",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-944-11.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:10.449Z"
-      },
       "msi": {
         "price": 629.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2572&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-12G-SHADOW-2X-OC&intsrc=APIG_16410",
@@ -6028,19 +5889,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0F45Y77MH?tag=tiereduptech-20",
         "inStock": true
       },
-      "newegg": {
-        "sku": "4458318377676760314423452",
-        "price": 599.99,
-        "saleprice": 579.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318377676760314423452&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-ti-16g-ventus-3x-oc-geforce-rtx-5060-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814137957%3Fitem%3DN82E16814137957",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-957-06.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:11.206Z"
-      },
       "bestbuy": {
         "price": 614.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11064774&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-ti-16g-ventus-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXRFHF&intsrc=APIG_28060",
@@ -6213,19 +6061,6 @@ export default [
         "price": 1499,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12136240&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5080-windforce-sff-16g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X7J7R&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317130178530126016561",
-        "price": 1469.99,
-        "saleprice": 1399.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317130178530126016561&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-windforce-gv-n5080wf3-16gd-geforce-rtx-5080-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932780%3Fitem%3DN82E16814932780",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-780-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:12.007Z"
       }
     },
     "additionalImages": [
@@ -6431,19 +6266,6 @@ export default [
         "price": 669.99,
         "url": "https://www.amazon.com/dp/B0DS2QZC9P?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311279447597446008881",
-        "price": 679.99,
-        "saleprice": 669.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311279447597446008881&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-r9070gaming-oc-16gd-radeon-rx-9070-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932752%3Fitem%3DN82E16814932752",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-752-05.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:12.757Z"
       },
       "bestbuy": {
         "price": 710.49,
@@ -6907,19 +6729,6 @@ export default [
         "price": 379.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630571&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5060-ti-overclocked-8gb-gddr7-pci-express-5-0-graphics-card-with-dual-fan-black%2FJXF2C46FJC&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458312496349902446821089",
-        "price": 429.99,
-        "saleprice": 379.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312496349902446821089&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-technologies-inc-rtx-5060-ti-8gb-dual-fan-oc-geforce-rtx-5060-ti-graphics-card-double-fans%2Fp%2FN82E16814133995%3Fitem%3DN82E16814133995",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-133-995-25.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:13.535Z"
       }
     },
     "discount": 7,
@@ -7412,19 +7221,6 @@ export default [
         "price": 389.99,
         "url": "https://www.amazon.com/dp/B0F4LZ5YG7?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458315676072985151681774",
-        "price": 429.99,
-        "saleprice": 384.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315676072985151681774&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-8g-gaming-oc-geforce-rtx-5060-8gb-graphics-card-double-fans%2Fp%2FN82E16814137971%3Fitem%3DN82E16814137971",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-971-06.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:14.280Z"
       },
       "bestbuy": {
         "price": 379.99,
@@ -8220,19 +8016,6 @@ export default [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6560971&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6560971.p%3FskuId%3D6560971",
         "inStock": true
       },
-      "newegg": {
-        "sku": "445834397359187188858593",
-        "price": 269.99,
-        "saleprice": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834397359187188858593&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-3050-ventus-2x-xs-8g-oc-geforce-rtx-3050-8gb-graphics-card-double-fans%2Fp%2FN82E16814137810%3Fitem%3DN82E16814137810",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-810-02.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:15.027Z"
-      },
       "msi": {
         "price": 249.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2856&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-30-Series%2FGeForce-RTX-3050-VENTUS-2X-XS-8G-OC&intsrc=APIG_16410",
@@ -8374,19 +8157,6 @@ export default [
         "price": 1609.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613333&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gaming-nvidia-geforce-rtx-5080-16gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLH7RLP&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838741269499957287495",
-        "price": 1699.99,
-        "saleprice": 1644.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838741269499957287495&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-tuf-rtx5080-o16g-gaming-geforce-rtx-5080-16gb-graphics-card%2Fp%2FN82E16814126743%3Fitem%3DN82E16814126743",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-743-11.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:15.872Z"
       }
     },
     "model": "GeForce RTX 5080",
@@ -8419,19 +8189,6 @@ export default [
         "price": 1481.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613335&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6613335.p%3FskuId%3D6613335",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445834987036341524085568",
-        "price": 1499.99,
-        "saleprice": 1478.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834987036341524085568&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rtx5080-o16g-geforce-rtx-5080-16gb-graphics-card%2Fp%2FN82E16814126744%3Fitem%3DN82E16814126744",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-744-02.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:16.618Z"
       }
     },
     "model": "GeForce RTX 5080",
@@ -8592,18 +8349,6 @@ export default [
         "price": 999.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614742&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-nvidia-geforce-rtx-5070-ti-oc-edition-16gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLHJX4K&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458316526184115046836758",
-        "price": 1009.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316526184115046836758&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rtx5070ti-o16g-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814126756%3Fitem%3DN82E16814126756",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-756-12.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:17.381Z"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -8636,19 +8381,6 @@ export default [
         "price": 1069.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614743&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614743.p%3FskuId%3D6614743",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445831287179240467417677",
-        "price": 1099.99,
-        "saleprice": 1069.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831287179240467417677&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-tuf-rtx5070ti-o16g-gaming-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814126754%3Fitem%3DN82E16814126754",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-754-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:18.133Z"
       },
       "newegg_openbox": {
         "sku": "4458313137355969489742434",
@@ -8735,18 +8467,6 @@ export default [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614787&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-nvidia-geforce-rtx-5070-12gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLH7TH6&intsrc=APIG_28060",
         "inStock": true
       },
-      "newegg": {
-        "sku": "445832601390906217617414",
-        "price": 669.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832601390906217617414&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rtx5070-12g-geforce-rtx-5070-12gb-graphics-card-triple-fans%2Fp%2FN82E16814126761%3Fitem%3DN82E16814126761",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-761-01.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:18.891Z"
-      },
       "newegg_openbox": {
         "sku": "445837122812837057574787",
         "price": 649.99,
@@ -8789,19 +8509,6 @@ export default [
         "price": 1599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615227&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615227.p%3FskuId%3D6615227",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "44583147897145139876650",
-        "price": 1609.99,
-        "saleprice": 1599.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583147897145139876650&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5080-16g-gaming-trio-oc-geforce-rtx-5080-16gb-graphics-card%2Fp%2FN82E16814137910%3Fitem%3DN82E16814137910",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-910-08.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:19.652Z"
       },
       "msi": {
         "price": 1599.99,
@@ -8876,19 +8583,6 @@ export default [
         "price": 222.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013412&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-3050-windforce-oc-v2-6gb-gddr6-pci-express-4-0-graphics-card-black%2FJ3ZW92VFPX&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838676784629540102766",
-        "price": 219.99,
-        "saleprice": 209.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838676784629540102766&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-windforce-gv-n3050wf2ocv2-6gd-geforce-rtx-3050-6gb-graphics-card-double-fans%2Fp%2FN82E16814932749%3Fitem%3DN82E16814932749",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-749-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:20.420Z"
       }
     },
     "model": "GeForce RTX 3050",
@@ -8921,19 +8615,6 @@ export default [
         "price": 1479,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12491760&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5080-gaming-oc-16g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X7J74&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445833433688408193519454",
-        "price": 1509.99,
-        "saleprice": 1499.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833433688408193519454&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n5080gaming-oc-16gd-geforce-rtx-5080-16gb-graphics-card%2Fp%2FN82E16814932753%3Fitem%3DN82E16814932753",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-753-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:21.176Z"
       }
     },
     "model": "GeForce RTX 5080",
@@ -9030,19 +8711,6 @@ export default [
         "price": 335.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616025&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616025.p%3FskuId%3D6616025",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458314021598184013363696",
-        "price": 263.99,
-        "saleprice": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314021598184013363696&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-challenger-b570-cl-10go-arc-b570-10gb-graphics-card-double-fans%2Fp%2FN82E16814930134%3Fitem%3DN82E16814930134",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-930-134-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:21.949Z"
       }
     },
     "model": "Arc",
@@ -9113,19 +8781,6 @@ export default [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616095&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616095.p%3FskuId%3D6616095",
         "inStock": true
       },
-      "newegg": {
-        "sku": "4458310185341873142672706",
-        "price": 3999.99,
-        "saleprice": 3899.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310185341873142672706&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5090-32g-suprim-liquid-soc-geforce-rtx-5090-32gb-graphics-card-liquid-cooler%2Fp%2FN82E16814137916%3Fitem%3DN82E16814137916",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-914-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:22.696Z"
-      },
       "msi": {
         "price": 3999.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2469&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX%205090-32G-SUPRIM-LIQUID-SOC&intsrc=APIG_16410",
@@ -9162,19 +8817,6 @@ export default [
         "price": 1549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616100&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616100.p%3FskuId%3D6616100",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458316670186518050524674",
-        "price": 1579.99,
-        "saleprice": 1549.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316670186518050524674&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n5080aero-oc-16gd-geforce-rtx-5080-16gb-graphics-card%2Fp%2FN82E16814932756%3Fitem%3DN82E16814932756",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-756-05.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:23.464Z"
       }
     },
     "model": "GeForce RTX 5080",
@@ -9207,19 +8849,6 @@ export default [
         "price": 1355.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616102&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5080-windforce-oc-sff-16g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X7CH2&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445831431106774666636889",
-        "price": 1569.99,
-        "saleprice": 1399.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831431106774666636889&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-windforce-gv-n5080wf3oc-16gd-geforce-rtx-5080-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932754%3Fitem%3DN82E16814932754",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-754-05.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:24.215Z"
       }
     },
     "model": "GeForce RTX 5080",
@@ -9284,18 +8913,6 @@ export default [
         "price": 4299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617115&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617115.p%3FskuId%3D6617115",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445831621237254988521047",
-        "price": 4079.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831621237254988521047&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-epic-x-rgb-vcg509032tfxxpb1-o-nvidia-geforce-rtx-5090-32gb-gddr7%2Fp%2F1FT-000P-00661%3Fitem%3D1FT-000P-00661",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BTK0S2505010UVELRB8.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:02.150Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:24.972Z"
       }
     },
     "model": "GeForce RTX 5090",
@@ -9328,18 +8945,6 @@ export default [
         "price": 3899.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617487&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617487.p%3FskuId%3D6617487",
         "inStock": false
-      },
-      "newegg": {
-        "sku": "445836758097709657137697",
-        "price": 4199.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836758097709657137697&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n5090aorusm-ice-32gd-geforce-rtx-5090-32gb-graphics-card-triple-fans%2Fp%2FN82E16814932765%3Fitem%3DN82E16814932765",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-765-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:25.919Z"
       }
     },
     "model": "GeForce RTX 5090",
@@ -9372,19 +8977,6 @@ export default [
         "price": 739.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617866&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617866.p%3FskuId%3D6617866",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458315790428698873753349",
-        "price": 749.99,
-        "saleprice": 739.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315790428698873753349&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-r9070xtgaming-oc-16gd-radeon-rx-9070-xt-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932751%3Fitem%3DN82E16814932751",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-751-07.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:26.689Z"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -9449,18 +9041,6 @@ export default [
         "price": 1159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618880&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618880.p%3FskuId%3D6618880",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458312199583266327364218",
-        "price": 1299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312199583266327364218&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n507taero-oc-16gd-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932767%3Fitem%3DN82E16814932767",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-767-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:27.436Z"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -9493,19 +9073,6 @@ export default [
         "price": 1119,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10886676&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5070-ti-eagle-oc-ice-sff-16g-gddr7-pci-express-5-0-graphics-card-white%2FJ3ZW9X7CQX&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458315112060008078983284",
-        "price": 1069.99,
-        "saleprice": 1059.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315112060008078983284&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n507teagleoc-ice-16gd-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932769%3Fitem%3DN82E16814932769",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-769-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:28.169Z"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -9538,19 +9105,6 @@ export default [
         "price": 999.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618883&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618883.p%3FskuId%3D6618883",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838282168201662500127",
-        "price": 1109.99,
-        "saleprice": 999.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838282168201662500127&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-windforce-gv-n507twf3oc-16gd-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932771%3Fitem%3DN82E16814932771",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-771-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:28.922Z"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -9583,19 +9137,6 @@ export default [
         "price": 1099.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618884&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618884.p%3FskuId%3D6618884",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837104039445414289179",
-        "price": 1109.99,
-        "saleprice": 1099.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837104039445414289179&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n507tgaming-oc-16gd-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932768%3Fitem%3DN82E16814932768",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-768-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:29.680Z"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -9628,19 +9169,6 @@ export default [
         "price": 669.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619436&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5070-12g-gaming-trio-oc-12gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TX65JH&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445836664794761865727318",
-        "price": 714.99,
-        "saleprice": 669.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836664794761865727318&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5070-12g-gaming-trio-oc-geforce-rtx-5070-12gb-graphics-card-triple-fans%2Fp%2FN82E16814137938%3Fitem%3DN82E16814137938",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-938-04.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:30.425Z"
       },
       "msi": {
         "price": 669.99,
@@ -9742,19 +9270,6 @@ export default [
         "price": 649.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620354&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5070-12gb-argb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C464CQ&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837418631074057476707",
-        "price": 699.99,
-        "saleprice": 649.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837418631074057476707&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-technologies-inc-argb-oc-geforce-rtx-5070-12gb-graphics-card-triple-fans%2Fp%2FN82E16814133903%3Fitem%3DN82E16814133903",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-133-903-02.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:31.171Z"
       }
     },
     "model": "GeForce RTX 5070",
@@ -9819,19 +9334,6 @@ export default [
         "price": 999.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620368&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5070-ti-16gb-argb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C464GZ&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458310552061468811885112",
-        "price": 1039.99,
-        "saleprice": 999.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310552061468811885112&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-technologies-inc-rtx5070-ti-argb-epic-x-rgb-triple-fan-gpu-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814133901%3Fitem%3DN82E16814133901",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-133-901-04.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:31.960Z"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -9992,18 +9494,6 @@ export default [
         "price": 709.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620457&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620457.p%3FskuId%3D6620457",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317182483233325795101",
-        "price": 769.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317182483233325795101&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fxfx-swift-rx-97swfb3b9-radeon-rx-9070-16gb-graphics-card-triple-fans%2Fp%2FN82E16814150901%3Fitem%3DN82E16814150901",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-150-901-05.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:32.733Z"
       }
     },
     "model": "Radeon RX 9070",
@@ -10068,19 +9558,6 @@ export default [
         "price": 979.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620605&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-geforce-rtx-5070-ti-16g-shadow-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXR2RL&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837143012153083211884",
-        "price": 999.99,
-        "saleprice": 989.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837143012153083211884&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5070-ti-16g-shadow-3x-oc-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814137935%3Fitem%3DN82E16814137935",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-935-17.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:33.498Z"
       },
       "msi": {
         "price": 989.99,
@@ -10182,18 +9659,6 @@ export default [
         "price": 679.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621261&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621261.p%3FskuId%3D6621261",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458313406832514703100995",
-        "price": 699.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313406832514703100995&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n5070gaming-oc-12gd-geforce-rtx-5070-12gb-graphics-card-triple-fans%2Fp%2FN82E16814932774%3Fitem%3DN82E16814932774",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-774-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:34.269Z"
       }
     },
     "model": "GeForce RTX 5070",
@@ -10226,19 +9691,6 @@ export default [
         "price": 635.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621265&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621265.p%3FskuId%3D6621265",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458318276972651160204151",
-        "price": 659.99,
-        "saleprice": 649.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318276972651160204151&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-windforce-gv-n5070wf3oc-12gd-geforce-rtx-5070-12gb-graphics-card-triple-fans%2Fp%2FN82E16814932777%3Fitem%3DN82E16814932777",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-777-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:35.041Z"
       }
     },
     "model": "GeForce RTX 5070",
@@ -10271,19 +9723,6 @@ export default [
         "price": 629.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621982&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621982.p%3FskuId%3D6621982",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317026312347847304869",
-        "price": 659.99,
-        "saleprice": 629.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317026312347847304869&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5070-12g-shadow-2x-oc-geforce-rtx-5070-12gb-graphics-card-double-fans%2Fp%2FN82E16814137944%3Fitem%3DN82E16814137944",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-944-11.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:35.844Z"
       }
     },
     "model": "GeForce RTX 5070",
@@ -10540,19 +9979,6 @@ export default [
         "price": 339.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630575&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5060-overclocked-8gb-gddr7-pci-express-5-0-graphics-card-with-dual-fan-black%2FJXF2C4R7LJ&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445836480612040683871930",
-        "price": 359.99,
-        "saleprice": 339.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836480612040683871930&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-technologies-inc-dual-fan-oc-rtx-5060-overclocked-dual-fan-gpu-geforce-rtx-5060-8gb-graphics-card-double-fans%2Fp%2FN82E16814133997%3Fitem%3DN82E16814133997",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-133-997-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:36.593Z"
       }
     },
     "model": "GeForce RTX 5060",
@@ -10691,18 +10117,6 @@ export default [
         "price": 416.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632191&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632191.p%3FskuId%3D6632191",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311169568038019010817",
-        "price": 464.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311169568038019010817&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rtx5060-o8g-geforce-rtx-5060-8gb-graphics-card-triple-fans%2Fp%2FN82E16814126801%3Fitem%3DN82E16814126801",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-801-12.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:37.341Z"
       }
     },
     "model": "GeForce RTX 5060",
@@ -10735,18 +10149,6 @@ export default [
         "price": 389.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632193&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632193.p%3FskuId%3D6632193",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458315900024566987746869",
-        "price": 389.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315900024566987746869&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rtx5060-8g-geforce-rtx-5060-8gb-graphics-card-triple-fans%2Fp%2FN82E16814126802%3Fitem%3DN82E16814126802",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-801-12.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:38.112Z"
       }
     },
     "model": "GeForce RTX 5060",
@@ -10811,19 +10213,6 @@ export default [
         "price": 287.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632706&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632706.p%3FskuId%3D6632706",
         "inStock": false
-      },
-      "newegg": {
-        "sku": "445833038980843481655930",
-        "price": 369.99,
-        "saleprice": 359.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833038980843481655930&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n5060gaming-oc-8gd-geforce-rtx-5060-8gb-graphics-card-triple-fans%2Fp%2FN82E16814932800%3Fitem%3DN82E16814932800",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-800-13.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:38.882Z"
       }
     },
     "model": "GeForce RTX 5060",
@@ -10856,19 +10245,6 @@ export default [
         "price": 364.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632713&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-8g-ventus-3x-oc-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXQ2JJ&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445833245035966210020533",
-        "price": 379.99,
-        "saleprice": 364.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833245035966210020533&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-8g-ventus-3x-oc-geforce-rtx-5060-8gb-graphics-card-triple-fans%2Fp%2FN82E16814137973%3Fitem%3DN82E16814137973",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-973-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:39.637Z"
       },
       "msi": {
         "price": 364.99,
@@ -10907,18 +10283,6 @@ export default [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632715&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632715.p%3FskuId%3D6632715",
         "inStock": true
       },
-      "newegg": {
-        "sku": "445831257091890062833074",
-        "price": 369.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831257091890062833074&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-8g-ventus-2x-oc-white-geforce-rtx-5060-8gb-graphics-card-double-fans%2Fp%2FN82E16814137974%3Fitem%3DN82E16814137974",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-974-03.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:40.405Z"
-      },
       "msi": {
         "price": 369.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2682&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-8G-VENTUS-2X-OC-WHITE&intsrc=APIG_16410",
@@ -10955,19 +10319,6 @@ export default [
         "price": 359.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632716&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-8g-ventus-2x-oc-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXQ229&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311699325815335381725",
-        "price": 400.99,
-        "saleprice": 390.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311699325815335381725&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-8g-ventus-2x-oc-geforce-rtx-5060-8gb-graphics-card-double-fans%2Fp%2FN82E16814137975%3Fitem%3DN82E16814137975",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-975-03.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:41.176Z"
       },
       "msi": {
         "price": 359.99,
@@ -11006,19 +10357,6 @@ export default [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632720&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632720.p%3FskuId%3D6632720",
         "inStock": true
       },
-      "newegg": {
-        "sku": "4458316570467330916128233",
-        "price": 369.99,
-        "saleprice": 359.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316570467330916128233&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-8g-shadow-2x-oc-geforce-rtx-5060-8gb-graphics-card-double-fans%2Fp%2FN82E16814137976%3Fitem%3DN82E16814137976",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-976-03.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:41.970Z"
-      },
       "msi": {
         "price": 369.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2683&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-8G-SHADOW-2X-OC&intsrc=APIG_16410",
@@ -11055,19 +10393,6 @@ export default [
         "price": 359.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632722&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632722.p%3FskuId%3D6632722",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311396046298113625050",
-        "price": 389.99,
-        "saleprice": 359.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311396046298113625050&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-8g-inspire-2x-oc-geforce-rtx-5060-8gb-graphics-card-double-fans%2Fp%2FN82E16814137972%3Fitem%3DN82E16814137972",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-972-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:42.729Z"
       },
       "msi": {
         "price": 359.99,
@@ -11233,18 +10558,6 @@ export default [
         "price": 354.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632993&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632993.p%3FskuId%3D6632993",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445831465555682926391145",
-        "price": 369.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831465555682926391145&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-dual-rtx5060-o8g-geforce-rtx-5060-8gb-graphics-card-double-fans%2Fp%2FN82E16814126807%3Fitem%3DN82E16814126807",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-807-10.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:43.486Z"
       }
     },
     "model": "GeForce RTX 5060",
@@ -11277,19 +10590,6 @@ export default [
         "price": 459.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633162&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633162.p%3FskuId%3D6633162",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311923373654508770322",
-        "price": 469.99,
-        "saleprice": 459.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311923373654508770322&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-r9060xtgaming-oc-16gd-radeon-rx-9060-xt-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932806%3Fitem%3DN82E16814932806",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-806-03.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:44.259Z"
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -11322,18 +10622,6 @@ export default [
         "price": 419.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633165&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-ti-8g-gaming-oc-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXR4CY&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838782536692067231160",
-        "price": 459.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838782536692067231160&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-ti-8g-gaming-oc-geforce-rtx-5060-ti-8gb-graphics-card-double-fans%2Fp%2FN82E16814137963%3Fitem%3DN82E16814137963",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-963-10.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:45.032Z"
       },
       "msi": {
         "price": 439.99,
@@ -11403,19 +10691,6 @@ export default [
         "price": 639.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6634557&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6634557.p%3FskuId%3D6634557",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458310923867219901708438",
-        "price": 679.99,
-        "saleprice": 639.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310923867219901708438&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5070-12g-ventus-3x-oc-geforce-rtx-5070-12gb-graphics-card-triple-fans%2Fp%2FN82E16814137940%3Fitem%3DN82E16814137940",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-940-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:45.819Z"
       },
       "msi": {
         "price": 639.99,
@@ -11528,19 +10803,6 @@ export default [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12629058&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-ti-8g-ventus-2x-oc-plus-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXRFR5&intsrc=APIG_28060",
         "inStock": true
       },
-      "newegg": {
-        "sku": "4458317777153886500395984",
-        "price": 429.99,
-        "saleprice": 419.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317777153886500395984&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-ti-8g-ventus-2x-oc-plus-geforce-rtx-5060-ti-8gb-graphics-card-double-fans%2Fp%2FN82E16814137965%3Fitem%3DN82E16814137965",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-965-12.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:46.543Z"
-      },
       "msi": {
         "price": 419.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2646&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FRTX-5060-Ti-8G-VENTUS-2X-OC-PLUS&intsrc=APIG_16410",
@@ -11641,18 +10903,6 @@ export default [
         "price": 434.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013462&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5060-ti-overclocked-8gb-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C465V4&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445832181352699775361422",
-        "price": 409.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832181352699775361422&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-technologies-inc-rtx-5060-ti-8gb-triple-fan-argb-oc-geforce-rtx-5060-ti-graphics-card-triple-fans%2Fp%2FN82E16814133994%3Fitem%3DN82E16814133994",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-133-994-03.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:47.291Z"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -11685,19 +10935,6 @@ export default [
         "price": 304.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638591&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638591.p%3FskuId%3D6638591",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317719526435493336751",
-        "price": 314.99,
-        "saleprice": 304.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317719526435493336751&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5050-8g-ventus-2x-oc-geforce-rtx-5050-8gb-graphics-card-double-fans%2Fp%2FN82E16814137981%3Fitem%3DN82E16814137981",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-981-03.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:48.047Z"
       },
       "msi": {
         "price": 304.99,
@@ -11735,19 +10972,6 @@ export default [
         "price": 309.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638592&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5050-8g-gaming-oc-8gb-gddr6-pci-express-gen-5-graphics-card-black%2FJ3P7TXHJLW&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445835099811831336012224",
-        "price": 350.99,
-        "saleprice": 314.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835099811831336012224&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-8g-gaming-oc-geforce-rtx-5060-8gb-graphics-card-double-fans%2Fp%2FN82E16814137980%3Fitem%3DN82E16814137980",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-980-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:48.788Z"
       },
       "msi": {
         "price": 314.99,
@@ -11854,19 +11078,6 @@ export default [
         "price": 289.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638853&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638853.p%3FskuId%3D6638853",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317406743207272768799",
-        "price": 299.99,
-        "saleprice": 289.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317406743207272768799&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-windforce-gv-n5050wf2oc-8gd-geforce-rtx-5050-8gb-graphics-card-double-fans%2Fp%2FN82E16814932816%3Fitem%3DN82E16814932816",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-816-06.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:49.516Z"
       }
     },
     "model": "GeForce RTX 5050",
@@ -11963,19 +11174,6 @@ export default [
         "price": 409.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665010&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665010.p%3FskuId%3D6665010",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311313977831943952359",
-        "price": 419.99,
-        "saleprice": 409.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311313977831943952359&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-ti-8g-shadow-2x-oc-plus-geforce-rtx-5060-ti-8gb-graphics-card-double-fans%2Fp%2FN82E16814137978%3Fitem%3DN82E16814137978",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-978-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:50.266Z"
       },
       "msi": {
         "price": 409.99,
@@ -12106,19 +11304,6 @@ export default [
         "price": 699.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672758&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5070-12g-world-of-warcraft-midnight-light-edition-oc-gddr7-pci-express-gen-5-graphics-card-tan%2FJ3P7TXTJGQ&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458313075265500315198478",
-        "price": 759.99,
-        "saleprice": 749.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313075265500315198478&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5070-12g-world-of-warcraft-midnight-light-edition-oc-geforce-rtx-5070-12gb-graphics-triple-fans%2Fp%2FN82E16814982003%3Fitem%3DN82E16814982003",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-982-003-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:51.037Z"
       }
     },
     "model": "GeForce RTX 5070",
@@ -12151,19 +11336,6 @@ export default [
         "price": 639.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676832&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676832.p%3FskuId%3D6676832",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837637983753696028414",
-        "price": 699.99,
-        "saleprice": 649.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837637983753696028414&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-geforce-rtx-5070-12g-ventus-2x-oc-video-card%2Fp%2FN82E16814137994%3Fitem%3DN82E16814137994",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-994-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:51.878Z"
       }
     },
     "model": "GeForce RTX 5070",
@@ -12233,19 +11405,6 @@ export default [
         "price": 979.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676835&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5070-ti-16gb-gddr7-ventus-3x-pz-oc-edition-pci-express-5-0-sff-ready-graphics-card-black%2FJ3P7TXTXSZ&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445839046081871202297170",
-        "price": 1099.99,
-        "saleprice": 979.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839046081871202297170&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5070-ti-16g-ventus-3x-pz-oc-black-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814982006%3Fitem%3DN82E16814982006",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-982-006-03.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.773Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:30:52.621Z"
       }
     },
     "model": "GeForce RTX 5070 Ti",

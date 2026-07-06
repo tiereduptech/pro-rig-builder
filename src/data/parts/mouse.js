@@ -445,19 +445,6 @@ export default [
         "url": "https://www.amazon.com/Logitech-Lightspeed-PowerPlay-Compatible-Lightsync/dp/B07L4BM851/ref=sr_1_20_mod_primary_new?crid=IV29V2MB51EP&dib=eyJ2IjoiMSJ9.C8nOIcZFACVH26Sr4pdsY5LnNovz1_PHMC9qMvK1Bqb_uxdeHTDK2UC1v3DNcuqEspFw1byZz-wYM61vEzRXZUibvDn5qND0SDKO7Wd5W1OcqUt_6DEbd-zrl106mpt9MBMg77-SoGwm9gNKmobx2EUFK9aNoxukxWeBhRhDg8QP95VuwWB5BRHBBNIbz1Ar4T6dCe2UZMO8RYlOfE62C9uvvUCxufpk899QejgKsMQ.2TgkbcjSGKKPl3aKq4d8MM9SOh8yslsSWxAJTnAveA8&dib_tag=se&keywords=lightweight+gaming+mouse&qid=1777130429&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=lightweight%2Bgaming%2Bmouse%2Caps%2C177&sr=8-20&xpid=mwUOBLs-tm-BS&tag=tiereduptech-20",
         "price": 72.18,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445837387769681319473997",
-        "price": 119.99,
-        "saleprice": 104.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837387769681319473997&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flogitech-910-005565-g502-usb-lightspeed-wireless%2Fp%2FN82E16826197336%3Fitem%3DN82E16826197336",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/26-197-336-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:59:03.011Z"
       }
     },
     "sensor": "Hero 25K",
@@ -774,18 +761,6 @@ export default [
         "url": "https://www.amazon.com/Redragon-M810-Wireless-Buttons-Capacity/dp/B09ZY348SY/ref=sr_1_5?crid=OB7AC3XQPE5T&dib=eyJ2IjoiMSJ9.gqhgWBpv6izOCyfMRtq9_xF0J_JYj8GX7tu_WeG3lIpKn9LYGbrRtHBCk9hjqKueCKzxE2w6ne3LzD8Lr3IbMSg3537Y_IYhT42Q9NVgVNUuC2Tjz7XrXoaULCps0KzMgcV0klXG-w7sTY4dJ4xjV7ZhSmbUrgos7Mc3jWeJT3R_sOvrV2rhm-Fj_HcbKCPmdtvg95p62rXYwLcpaNyfd6-hxArAdRlRhaysj0XMbwA.pbUVV5NN12YOKVY3A_2ettxOIbc_Y4WhV8XUHgw54co&dib_tag=se&keywords=wireless+gaming+mouse&qid=1777130428&sprefix=wireless%2Bgaming%2Bmouse%2Caps%2C126&sr=8-5&tag=tiereduptech-20",
         "price": 24.99,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458310675453290739411644",
-        "price": 36.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310675453290739411644&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F32K-005K-000J9%3Fitem%3D9SIAWATK9P5451",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AWATS24072607LZ28A4.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:59:03.760Z"
       }
     },
     "dpi": 10000,
@@ -902,18 +877,6 @@ export default [
         "url": "https://www.amazon.com/Redragon-Wireless-Programmable-Buttons-Battery/dp/B088B3ZM76/ref=sr_1_19?crid=OB7AC3XQPE5T&dib=eyJ2IjoiMSJ9.gA4-awrBjBMmGG_4qLwYlpJTdBnQj5NT1MxEGSmPUUBr2ymHQlgzlC4qAo-m8ys2qO2B0vY5cBTfJe4m5kjNO-xCdAwUnK_h60eAIc31D3SbCQUxeWH8rrD4pKSGjZr0nMOX-KqSXI8ONHLQn4owc5HaoI1j_uvuVAtjpOh469pD8cedIexUBNv54rQ7e3Sn0mNU_8gAy23axkVyY0kP_2Wian_NEBk08prhqLaCeck.kx_mZK-nb050ktbQK2etdFzfYg_ykL-GZEz7qEbwMWQ&dib_tag=se&keywords=wireless+gaming+mouse&qid=1777130429&sprefix=wireless%2Bgaming%2Bmouse%2Caps%2C126&sr=8-19&xpid=aOcyGxvfvyWP6&tag=tiereduptech-20",
         "price": 32.99,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458317741570707972433335",
-        "price": 47.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317741570707972433335&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F32K-005K-000K2%3Fitem%3D9SIAWATK9P5824",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AWATS2407260G1UT16E.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
-        "matchScore": 0.9523809523809523,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:59:04.540Z"
       }
     },
     "sensor": "Optical",
@@ -1203,19 +1166,6 @@ export default [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6333838&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6333838.p%3FskuId%3D6333838",
         "price": 49.99,
         "inStock": false
-      },
-      "newegg": {
-        "sku": "4458310538121367208229815",
-        "price": 59.99,
-        "saleprice": 56.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310538121367208229815&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flogitech-910-005630-g403-usb-wired%2Fp%2FN82E16826197343%3Fitem%3DN82E16826197343",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/26-197-343-Z01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:25:47.573Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:59:05.309Z"
       }
     },
     "sensor": "Optical",

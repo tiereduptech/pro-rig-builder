@@ -441,18 +441,6 @@ export default [
         "url": "https://www.amazon.com/Sony-MDR7506-Professional-Diaphragm-Headphone/dp/B000AJIF4E/ref=sr_1_31?crid=0EJ114Y2XYJW&dib=eyJ2IjoiMSJ9.-LGc1vqFEO4JA4ZWxUxh0uO04Se51BakSANSsNwaz8jz8_LhNoWFIsJfZ0TotbHXrNMGbcS2d2XF_TA_CtwkGbQ8jgvIkFlLr6nf1dlgepSOmAusT5MvcjRYR5CjtiwLK_bOGDxvuO3vuQ65ttP11BGbbMY3BfEFdgUVITrBHq-YEUXegCAm4Vahz-OtIThXlYDitz_oyH9hwdWL5XVCHiO1ldKdBszyBsbMkfYXwRrwOiRij-e_3IpsnC2HyNnXiRM5MiYlHg4TfRcdFOOuexU9oC33wl3WjUuiFmiqo1A.l_EHhYOXS9wTcG_nnyba4jB1gLOmWiUJyvxP2ig9AGM&dib_tag=se&keywords=Beyerdynamic+DT+770&qid=1777130638&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Beyerdynamic%2BDT%2B770%2Caps%2C168&sr=8-31&tag=tiereduptech-20",
         "price": 113,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458313835652375641504274",
-        "price": 109,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313835652375641504274&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsony-mdr7506-headphone-black%2Fp%2F111-000A-002U0%3Fitem%3D9SIC5NBKVF1637",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AEWA_1_201806071674651048.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:59:06.072Z"
       }
     },
     "hsType": "Wired",
@@ -500,18 +488,6 @@ export default [
         "url": "https://www.amazon.com/Audio-Technica-ATH-M20x-Professional-Monitor-Headphones/dp/B00HVLUR18/ref=sr_1_5?crid=BX0L4LEA8PCY&dib=eyJ2IjoiMSJ9.sHW_aInsNKx0gs5U3m6kcovrABKWohtxmUAm7wkCpuhUw5auNE6-C-CspxddVcgjNK5ObYesAiRow9tgytVWpvb0oiQDQXz1E9B3MqePay9f3TL967pvIpjIHoZY2q4JQ-BLdW2DsAx6IXt_-4ek99JwnZh8dq_ULBE7n1JcRPJ9L6YU_x5v9yOLfrW1Kilvn8Tnc8VgOuUfkDyDKyKtzAB09HwrDDF08EG0FLl_6CM.hEeQidgB95L6qCUNKjT3fozBKQFlraCke_Q7A-rdybU&dib_tag=se&keywords=Audio-Technica+gaming&qid=1777130635&sprefix=AudioTechnica%2Bgaming%2Caps%2C270&sr=8-5&tag=tiereduptech-20",
         "price": 58,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "4458311309930792188059185",
-        "price": 69.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311309930792188059185&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-audio-technica-ath-m20x-headphone%2Fp%2F0TH-0045-001X4%3Fitem%3D9SIC5C9KVN2744",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A98Y_1_20160421800938120.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:59:06.844Z"
       }
     },
     "hsType": "Wired",
@@ -668,19 +644,6 @@ export default [
         "url": "https://www.amazon.com/Audio-Technica-ATH-M30x-Professional-Monitor-Headphones/dp/B00HVLUQW8/ref=sr_1_14?crid=BX0L4LEA8PCY&dib=eyJ2IjoiMSJ9.sHW_aInsNKx0gs5U3m6kcovrABKWohtxmUAm7wkCpuhUw5auNE6-C-CspxddVcgjNK5ObYesAiRow9tgytVWpvb0oiQDQXz1E9B3MqePay9f3TL967pvIpjIHoZY2q4JQ-BLdW2DsAx6IXt_-4ek99JwnZh8dq_ULBE7n1JcRPJ9L6YU_x5v9yOLfrW1Kilvn8Tnc8VgOuUfkDyDKyKtzAB09HwrDDF08EG0FLl_6CM.hEeQidgB95L6qCUNKjT3fozBKQFlraCke_Q7A-rdybU&dib_tag=se&keywords=Audio-Technica+gaming&qid=1777130635&sprefix=AudioTechnica%2Bgaming%2Caps%2C270&sr=8-14&tag=tiereduptech-20",
         "price": 79,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445838227136963703888298",
-        "name": "Audio-Technica ATH-M30x Professional Studio Monitor Headphones, Headphone stand",
-        "price": 90.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838227136963703888298&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0TH-0045-008Y4%3Fitem%3D9SIABMTKJH9236",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABMTD250726029E2I8F.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-15T02:34:16.508Z",
-        "matchMethod": "remediate:strict-token",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:59:07.576Z"
       }
     },
     "hsType": "Wired",
@@ -802,18 +765,6 @@ export default [
         "url": "https://www.amazon.com/Sennheiser-HD-Over-Audiophile-Headphones/dp/B08J9MVB6W/ref=sr_1_26?crid=0EJ114Y2XYJW&dib=eyJ2IjoiMSJ9.-LGc1vqFEO4JA4ZWxUxh0uO04Se51BakSANSsNwaz8jz8_LhNoWFIsJfZ0TotbHXrNMGbcS2d2XF_TA_CtwkGbQ8jgvIkFlLr6nf1dlgepSOmAusT5MvcjRYR5CjtiwLK_bOGDxvuO3vuQ65ttP11BGbbMY3BfEFdgUVITrBHq-YEUXegCAm4Vahz-OtIThXlYDitz_oyH9hwdWL5XVCHiO1ldKdBszyBsbMkfYXwRrwOiRij-e_3IpsnC2HyNnXiRM5MiYlHg4TfRcdFOOuexU9oC33wl3WjUuiFmiqo1A.l_EHhYOXS9wTcG_nnyba4jB1gLOmWiUJyvxP2ig9AGM&dib_tag=se&keywords=Beyerdynamic+DT+770&qid=1777130638&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Beyerdynamic%2BDT%2B770%2Caps%2C168&sr=8-26&tag=tiereduptech-20",
         "price": 149.95,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "445835540496585528639916",
-        "price": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835540496585528639916&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsennheiser-hd-560s-over-the-ear-black%2Fp%2FN82E16826106912%3Fitem%3D9SIAB2GKTH8782",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/26-106-912-08.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
-        "matchScore": 1,
-        "sellerClass": "other",
-        "staleSince": "2026-06-29T10:59:08.339Z"
       }
     },
     "hsType": "Wired",
