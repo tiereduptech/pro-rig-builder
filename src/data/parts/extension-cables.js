@@ -396,7 +396,9 @@ export default [
         "inStock": true
       }
     },
-    "cableType": "12VHPWR"
+    "cableType": "12VHPWR",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-06"
   },
   {
     "id": 100127,
@@ -465,7 +467,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Formulamod-Extension-Sleeved-Extensions-Management/dp/B083WFYPX3/ref=sr_1_35?crid=XO9QGYMQCZGQ&dib=eyJ2IjoiMSJ9.sDR2SgjMv3gkNhT9S7n-bpYDdHXdi5oSYuLp8UQep6HAWmzH7H52XbcxtiWSNxghfRyvo96ly0BlIuJQcqpRqq_WIaD4sDXXe6y-jU31jNMMosyBqZHWQIF1YaSozlL5bRaGSP8eX1JF8HkSBqe4FZKZWmPzJiGozAsxp8b35wceLRr6EMjNU0IdeXmNkfWvJuIXERaCrzpy6LQ8bSH7ZDz7r9A07HWLGpZvlvRK2eU.Hw7nl6_NKbLHWjD-O9F_dmJ8yQSyXUr5tc2q9ChBYwY&dib_tag=se&keywords=CableMod+extension&qid=1777131272&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=CableMod%2Bextension%2Caps%2C266&sr=8-35&xpid=8S58R4a-w5vOn&tag=tiereduptech-20",
-        "price": 22.59,
+        "price": 25.99,
         "inStock": true
       }
     },

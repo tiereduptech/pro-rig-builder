@@ -23,7 +23,7 @@ export default [
     },
     "ff": "Tower",
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-06"
   },
   {
     "id": 99931,
@@ -69,7 +69,7 @@ export default [
     },
     "ff": "Compact",
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-06"
   },
   {
     "id": 99702,
@@ -130,7 +130,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "quarantinedAt": "2026-07-06"
   },
   {
     "id": 99705,

@@ -36,7 +36,9 @@ export default [
         "inStock": true
       }
     },
-    "ff": "Portable HDD"
+    "ff": "Portable HDD",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-06"
   },
   {
     "id": 99500,
@@ -57,7 +59,9 @@ export default [
         "url": "https://www.amazon.com/dp/B07CRG94G3?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-07-06"
   },
   {
     "id": 99501,
@@ -137,7 +141,7 @@ export default [
     "driveType": "SSD",
     "deals": {
       "amazon": {
-        "price": 450,
+        "price": 494,
         "url": "https://www.amazon.com/dp/B08RX4QKXS?tag=tiereduptech-20",
         "inStock": true
       }
@@ -158,7 +162,7 @@ export default [
     "driveType": "SSD",
     "deals": {
       "amazon": {
-        "price": 189.98,
+        "price": 219.99,
         "url": "https://www.amazon.com/dp/B0874XN4D8?tag=tiereduptech-20",
         "inStock": true
       }
