@@ -1807,16 +1807,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC4RPKRD3367",
-        "price": 272.93,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315158032478116725053&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-z790-a-wifi-ddr4-atx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813144570%3Fitem%3D9SIC4RPKRD3367",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-570-15.jpg",
+        "sku": "N82E16813144734",
+        "price": 219.99,
+        "saleprice": 189.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317587940476334166171&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16813144734%3Fitem%3DN82E16813144734",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-734-06.jpg",
+        "sellerClass": "official",
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
-        "matchScore": 1,
-        "sellerClass": "marketplace",
-        "staleSince": "2026-06-29T10:25:53.038Z"
+        "matchScore": 0.8,
+        "migratedAt": "2026-07-06T09:58:43.151Z",
+        "migratedFrom": "9SIC4RPKRD3367"
       }
     },
     "value": 40,
