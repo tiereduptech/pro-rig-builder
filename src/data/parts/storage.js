@@ -746,19 +746,6 @@ export default [
         "price": 147.9,
         "url": "https://www.amazon.com/dp/B07H2RR55Q?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16822184773",
-        "price": 119.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837099994042907921926&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-st2000dm008-2tb-for-daily-computing-7200-rpm%2Fp%2FN82E16822184773%3Fitem%3DN82E16822184773",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-184-773-V01.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-05-13",
-        "matchMethod": "name",
-        "matchScore": 0.6,
-        "migratedAt": "2026-06-29T10:32:20.232Z",
-        "migratedFrom": "9SIAG98KHU4736",
-        "staleSince": "2026-06-29T19:51:33.640Z"
       }
     },
     "value": 3,

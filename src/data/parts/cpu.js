@@ -224,20 +224,6 @@ export default [
         "price": 439.99,
         "url": "https://www.amazon.com/dp/B0DKFMSMYK?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16819113877",
-        "price": 519,
-        "saleprice": 459,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839998193130166726200&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-9000-series-ryzen-7-9800x3d-granite-ridge-zen-5-socket-am5-desktop-cpu-processor%2Fp%2FN82E16819113877%3Fitem%3DN82E16819113877",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-877-01.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 1,
-        "migratedAt": "2026-06-29T10:22:57.128Z",
-        "migratedFrom": "9SIC3U3KN45519",
-        "staleSince": "2026-06-29T19:43:20.422Z"
       }
     },
     "igpu": true
