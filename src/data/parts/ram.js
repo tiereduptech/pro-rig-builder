@@ -3054,7 +3054,8 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "quarantinedAt": "2026-07-05"
+    "quarantinedAt": "2026-07-07",
+    "needsReview": true
   },
   {
     "id": 40079,
@@ -6198,7 +6199,9 @@ export default [
     "height": 32,
     "form": "SODIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-07"
   },
   {
     "id": 40153,
@@ -11775,7 +11778,7 @@ export default [
       "amazon": {
         "asin": "B07DNRD3T7",
         "url": "https://www.amazon.com/dp/B07DNRD3T7?tag=tiereduptech-20",
-        "price": 64.5,
+        "price": 60.77,
         "inStock": true
       }
     },

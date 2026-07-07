@@ -2599,7 +2599,8 @@ export default [
     "value": 48,
     "bench": 10,
     "formFactor": "3.5\"",
-    "quarantinedAt": "2026-07-05"
+    "quarantinedAt": "2026-07-07",
+    "needsReview": true
   },
   {
     "id": 50076,
@@ -3009,7 +3010,9 @@ export default [
     "value": 47,
     "read": 4800,
     "pcieGen": 4,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-07"
   },
   {
     "id": 50086,
@@ -5182,7 +5185,7 @@ export default [
     "reviews": 11459,
     "deals": {
       "amazon": {
-        "price": 129.99,
+        "price": 136.99,
         "url": "https://www.amazon.com/dp/B08CKFDPJ3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5892,7 +5895,7 @@ export default [
     "reviews": 872,
     "deals": {
       "amazon": {
-        "price": 269.99,
+        "price": 290.99,
         "url": "https://www.amazon.com/dp/B0F3BMBQ75?tag=tiereduptech-20",
         "inStock": true
       },
@@ -22436,7 +22439,9 @@ export default [
     "storageType": "HDD",
     "interface": "SATA",
     "ff": "3.5\"",
-    "rpm": 5400
+    "rpm": 5400,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-07"
   },
   {
     "id": 100838,
@@ -22619,7 +22624,9 @@ export default [
     "storageType": "HDD",
     "interface": "SATA",
     "ff": "3.5\"",
-    "rpm": 7200
+    "rpm": 7200,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-07"
   },
   {
     "id": 100846,
@@ -23666,7 +23673,9 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4
+    "pcie": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-07"
   },
   {
     "id": 101282,

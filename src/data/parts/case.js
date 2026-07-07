@@ -777,7 +777,9 @@ export default [
     "drive25": 2,
     "drive35": 2,
     "color": "Black",
-    "bench": 74
+    "bench": 74,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-07"
   },
   {
     "id": 70019,
@@ -945,7 +947,9 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 97
+    "bench": 97,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-07"
   },
   {
     "id": 70023,
@@ -3140,7 +3144,8 @@ export default [
       240
     ],
     "bench": 57,
-    "quarantinedAt": "2026-07-05"
+    "quarantinedAt": "2026-07-07",
+    "needsReview": true
   },
   {
     "id": 70065,
@@ -12588,7 +12593,9 @@ export default [
       280,
       240
     ],
-    "bench": 81
+    "bench": 81,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-07"
   },
   {
     "id": 70253,

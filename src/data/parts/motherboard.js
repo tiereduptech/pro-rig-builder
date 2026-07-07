@@ -640,7 +640,7 @@ export default [
     "audio": "ROG SupremeFX",
     "deals": {
       "amazon": {
-        "price": 428.99,
+        "price": 405.73,
         "url": "https://www.amazon.com/dp/B0DGWWRTPV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -758,7 +758,7 @@ export default [
     "audio": "Realtek ALC1220",
     "deals": {
       "amazon": {
-        "price": 274,
+        "price": 259.95,
         "url": "https://www.amazon.com/dp/B0DJP8NFWP?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1162,7 +1162,7 @@ export default [
     "audio": "Realtek ALC4080",
     "deals": {
       "amazon": {
-        "price": 194.98,
+        "price": 206.01,
         "url": "https://www.amazon.com/dp/B0DT58JK2W?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1354,7 +1354,7 @@ export default [
     "audio": "Realtek ALC1220",
     "deals": {
       "amazon": {
-        "price": 274,
+        "price": 259.95,
         "url": "https://www.amazon.com/dp/B0DJP8NFWP?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3758,7 +3758,7 @@ export default [
     "reviews": 87,
     "deals": {
       "amazon": {
-        "price": 169.99,
+        "price": 181.54,
         "url": "https://www.amazon.com/dp/B0F7VZS6FG?tag=tiereduptech-20",
         "inStock": true
       },
@@ -7884,7 +7884,7 @@ export default [
     "reviews": 259,
     "deals": {
       "amazon": {
-        "price": 109,
+        "price": 97.95,
         "url": "https://www.amazon.com/dp/B0C15SRJNM?tag=tiereduptech-20",
         "inStock": true
       }

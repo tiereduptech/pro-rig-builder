@@ -3423,7 +3423,9 @@ export default [
     "atx3": false,
     "fanSize": 140,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-07"
   },
   {
     "id": 60096,
@@ -4176,7 +4178,9 @@ export default [
     "modular": "Non",
     "atx3": false,
     "fanSize": 120,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-07"
   },
   {
     "id": 60117,
@@ -6825,7 +6829,7 @@ export default [
       "amazon": {
         "asin": "B0FKL8L37F",
         "url": "https://www.amazon.com/dp/B0FKL8L37F?tag=tiereduptech-20",
-        "price": 144.03,
+        "price": 156.94,
         "inStock": true
       }
     },
@@ -9440,7 +9444,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.666Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-07"
   },
   {
     "id": 101889,
