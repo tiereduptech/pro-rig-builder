@@ -132,8 +132,8 @@ function pickPrice(item) {
         const effNew = saleprice && saleprice > 0 ? saleprice : price;
         const sane = NEG.neweggSanity(p, effNew).pass;
         if (changedPrice && !sane) {
-          p.needsReview = true;
-          p.quarantinedAt = new Date().toISOString().slice(0, 10);
+          delete p.deals.newegg;
+          if (!p.deals.amazon && !p.deals.bestbuy) { p.needsReview = true; p.quarantinedAt = new Date().toISOString().slice(0,10); }
           changes.push({ name: p.n, change: 'price-flagged', from: oldPrice, to: price, sku });
           flagged++;
         } else if (changedPrice) {
