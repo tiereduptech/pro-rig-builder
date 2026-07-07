@@ -337,7 +337,6 @@ export default [
     "upc": "08809433503070",
     "mpn": "HFS2T0GEJ9X",
     "amazonRemovedAnomaly": "2026-06-28",
-    "needsReview": true,
     "quarantinedAt": "2026-06-28"
   },
   {
@@ -548,7 +547,6 @@ export default [
     "pcie": 4,
     "nand": "TLC",
     "value": 87,
-    "needsReview": true,
     "quarantinedAt": "2026-06-27",
     "bench": 83
   },
@@ -579,7 +577,6 @@ export default [
     "pcie": 4,
     "nand": "TLC",
     "value": 100,
-    "needsReview": true,
     "quarantinedAt": "2026-06-27",
     "bench": 83
   },
@@ -929,7 +926,6 @@ export default [
     },
     "value": 0,
     "bench": 20,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -1883,7 +1879,6 @@ export default [
     "rpm": 5400,
     "value": 25,
     "bench": 10,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05",
     "neweggRemovedOutlier": "2026-06-28"
   },
@@ -1973,7 +1968,6 @@ export default [
     "storageType": "NVMe",
     "value": 43,
     "bench": 82,
-    "needsReview": true,
     "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
@@ -2616,7 +2610,6 @@ export default [
     "value": 48,
     "bench": 10,
     "formFactor": "3.5\"",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -3145,7 +3138,6 @@ export default [
     "read": 7100,
     "pcieGen": 4,
     "formFactor": "M.2 2280",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -3629,7 +3621,6 @@ export default [
     "dram": true,
     "value": 26,
     "formFactor": "M.2 2230",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -4824,7 +4815,6 @@ export default [
     "value": 69,
     "bench": 100,
     "pcieGen": 5,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -8118,7 +8108,6 @@ export default [
     "value": 41,
     "bench": 13,
     "formFactor": "3.5\"",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -8206,7 +8195,6 @@ export default [
     "value": 36,
     "bench": 50,
     "formFactor": "M.2",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -8331,7 +8319,6 @@ export default [
     "value": 2,
     "bench": 40,
     "upc": "04710273773551",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -9139,7 +9126,6 @@ export default [
     "rpm": 7200,
     "value": 39,
     "bench": 13,
-    "needsReview": true,
     "quarantinedAt": "2026-07-03"
   },
   {
@@ -9376,7 +9362,6 @@ export default [
     "rpm": 7200,
     "value": 32,
     "formFactor": "M.2 2280",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -9461,7 +9446,6 @@ export default [
     "rpm": 5400,
     "value": 15,
     "bench": 10,
-    "needsReview": true,
     "quarantinedAt": "2026-07-03"
   },
   {
@@ -10419,7 +10403,6 @@ export default [
     "interface": "USB",
     "value": 13,
     "bench": 10,
-    "needsReview": true,
     "quarantinedAt": "2026-07-03"
   },
   {
@@ -11765,7 +11748,6 @@ export default [
     "dram": false,
     "value": 9,
     "bench": 45,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -11840,7 +11822,6 @@ export default [
     "dram": false,
     "value": 1,
     "bench": 45,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -11878,7 +11859,6 @@ export default [
     "dram": false,
     "value": 3,
     "bench": 45,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -12816,7 +12796,6 @@ export default [
     "rpm": 5400,
     "value": 26,
     "bench": 13,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -14175,7 +14154,6 @@ export default [
     "value": 59,
     "bench": 13,
     "formFactor": "3.5\"",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -14916,7 +14894,6 @@ export default [
     "read": 7300,
     "pcieGen": 4,
     "formFactor": "M.2 2280",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -15665,7 +15642,6 @@ export default [
     "bench": 100,
     "pcieGen": 5,
     "formFactor": "M.2 2280",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -16744,7 +16720,6 @@ export default [
     "value": 20,
     "bench": 10,
     "formFactor": "3.5\"",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -16866,7 +16841,6 @@ export default [
     "value": 4,
     "bench": 50,
     "formFactor": "2.5\"",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -17233,7 +17207,6 @@ export default [
     "bench": 57,
     "pcieGen": 4,
     "formFactor": "M.2 2280",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -17431,7 +17404,6 @@ export default [
     "value": 23,
     "bench": 10,
     "upc": "00763649094402",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -17644,7 +17616,6 @@ export default [
     "seq_w_inferred": true,
     "value": 4,
     "bench": 45,
-    "needsReview": true,
     "quarantinedAt": "2026-05-29",
     "cap": 2000
   },
@@ -18164,7 +18135,6 @@ export default [
     "storageType": "SSD",
     "dram": true,
     "value": 3,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -21088,7 +21058,6 @@ export default [
     "source": "amazon-discovery",
     "interface": "SATA",
     "ff": "2.5\"",
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -21140,7 +21109,6 @@ export default [
     "interface": "SATA",
     "ff": "3.5\"",
     "formFactor": "3.5\"",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -21520,7 +21488,6 @@ export default [
     "interface": "SATA",
     "ff": "2.5\"",
     "formFactor": "2.5\"",
-    "needsReview": true,
     "quarantinedAt": "2026-07-03"
   },
   {
@@ -21651,7 +21618,6 @@ export default [
     "interface": "SATA",
     "ff": "2.5\"",
     "formFactor": "2.5\"",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -21910,7 +21876,6 @@ export default [
     "interface": "NVMe",
     "read": 7200,
     "formFactor": "M.2",
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -22083,8 +22048,7 @@ export default [
     "cap": 250,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "2.5\"",
-    "needsReview": true
+    "ff": "2.5\""
   },
   {
     "id": 100824,
@@ -22116,7 +22080,6 @@ export default [
     "ff": "M.2 2280",
     "formFactor": "M.2 2280",
     "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -22385,7 +22348,6 @@ export default [
     "cap": 22000,
     "storageType": "HDD",
     "interface": "SATA",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -22668,7 +22630,6 @@ export default [
     "interface": "SATA",
     "ff": "3.5\"",
     "formFactor": "3.5\"",
-    "needsReview": true,
     "quarantinedAt": "2026-06-29"
   },
   {
@@ -23348,8 +23309,7 @@ export default [
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe",
-    "needsReview": true
+    "interface": "NVMe"
   },
   {
     "id": 101268,
@@ -23395,8 +23355,7 @@ export default [
     "addedAt": "2026-05-15T16:31:54.670Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe",
-    "needsReview": true
+    "interface": "NVMe"
   },
   {
     "id": 101270,
@@ -23444,8 +23403,7 @@ export default [
     "addedAt": "2026-05-15T16:31:54.671Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe",
-    "needsReview": true
+    "interface": "NVMe"
   },
   {
     "id": 101272,
@@ -23568,8 +23526,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4,
-    "needsReview": true
+    "pcie": 4
   },
   {
     "id": 101277,
@@ -23592,8 +23549,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4,
-    "needsReview": true
+    "pcie": 4
   },
   {
     "id": 101278,
@@ -23666,8 +23622,7 @@ export default [
     "addedAt": "2026-05-15T16:31:54.671Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe",
-    "needsReview": true
+    "interface": "NVMe"
   },
   {
     "id": 101281,
@@ -23690,8 +23645,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4,
-    "needsReview": true
+    "pcie": 4
   },
   {
     "id": 101282,
@@ -23714,8 +23668,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 3,
-    "needsReview": true
+    "pcie": 3
   },
   {
     "id": 101283,
@@ -23738,8 +23691,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4,
-    "needsReview": true
+    "pcie": 4
   },
   {
     "id": 101284,
@@ -23762,8 +23714,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4,
-    "needsReview": true
+    "pcie": 4
   },
   {
     "id": 101285,
@@ -23786,8 +23737,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4,
-    "needsReview": true
+    "pcie": 4
   },
   {
     "id": 101286,
@@ -23810,8 +23760,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 3,
-    "needsReview": true
+    "pcie": 3
   },
   {
     "id": 101287,
@@ -23860,7 +23809,6 @@ export default [
     "storageType": "NVMe",
     "interface": "NVMe",
     "formFactor": "M.2",
-    "needsReview": true,
     "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
@@ -23942,7 +23890,6 @@ export default [
     "write": 9500,
     "pcieGen": 5,
     "formFactor": "M.2",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -23970,7 +23917,6 @@ export default [
     "pcie": 4,
     "read": 7300,
     "pcieGen": 4,
-    "needsReview": true,
     "quarantinedAt": "2026-07-03"
   },
   {
@@ -24022,7 +23968,6 @@ export default [
     "storageType": "NVMe",
     "interface": "NVMe",
     "formFactor": "M.2",
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -24069,8 +24014,7 @@ export default [
     "addedAt": "2026-05-15T16:39:25.993Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe",
-    "needsReview": true
+    "interface": "NVMe"
   },
   {
     "id": 101416,
@@ -24116,8 +24060,7 @@ export default [
     "addedAt": "2026-05-15T16:39:25.993Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe",
-    "needsReview": true
+    "interface": "NVMe"
   },
   {
     "id": 101418,
@@ -24165,8 +24108,7 @@ export default [
     "addedAt": "2026-05-15T16:39:25.994Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe",
-    "needsReview": true
+    "interface": "NVMe"
   },
   {
     "id": 101420,
@@ -24289,8 +24231,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4,
-    "needsReview": true
+    "pcie": 4
   },
   {
     "id": 101425,
@@ -24313,8 +24254,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4,
-    "needsReview": true
+    "pcie": 4
   },
   {
     "id": 101426,
@@ -24387,8 +24327,7 @@ export default [
     "addedAt": "2026-05-15T16:39:25.994Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe",
-    "needsReview": true
+    "interface": "NVMe"
   },
   {
     "id": 101429,
@@ -24411,8 +24350,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4,
-    "needsReview": true
+    "pcie": 4
   },
   {
     "id": 101430,
@@ -24435,8 +24373,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 3,
-    "needsReview": true
+    "pcie": 3
   },
   {
     "id": 101431,
@@ -24459,8 +24396,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4,
-    "needsReview": true
+    "pcie": 4
   },
   {
     "id": 101432,
@@ -24483,8 +24419,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4,
-    "needsReview": true
+    "pcie": 4
   },
   {
     "id": 101433,
@@ -24507,8 +24442,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 4,
-    "needsReview": true
+    "pcie": 4
   },
   {
     "id": 101434,
@@ -24531,8 +24465,7 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "pcie": 3,
-    "needsReview": true
+    "pcie": 3
   },
   {
     "id": 101435,
@@ -24660,7 +24593,6 @@ export default [
     "write": 9500,
     "pcieGen": 5,
     "formFactor": "M.2",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -24688,7 +24620,6 @@ export default [
     "pcie": 4,
     "read": 7300,
     "pcieGen": 4,
-    "needsReview": true,
     "quarantinedAt": "2026-07-03"
   },
   {
@@ -24785,8 +24716,7 @@ export default [
     "addedAt": "2026-05-15T17:05:43.676Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe",
-    "needsReview": true
+    "interface": "NVMe"
   },
   {
     "id": 101927,
@@ -24832,8 +24762,7 @@ export default [
     "addedAt": "2026-05-15T17:05:43.677Z",
     "source": "amazon-discovery",
     "storageType": "NVMe",
-    "interface": "NVMe",
-    "needsReview": true
+    "interface": "NVMe"
   },
   {
     "id": 101929,
@@ -24986,7 +24915,6 @@ export default [
     "storageType": "NVMe",
     "interface": "NVMe",
     "formFactor": "M.2",
-    "needsReview": true,
     "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
@@ -25068,7 +24996,6 @@ export default [
     "write": 9500,
     "pcieGen": 5,
     "formFactor": "M.2",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -25096,7 +25023,6 @@ export default [
     "pcie": 4,
     "read": 7300,
     "pcieGen": 4,
-    "needsReview": true,
     "quarantinedAt": "2026-07-03"
   }
 ];

@@ -42,7 +42,6 @@ export default [
     },
     "surface": "Cloth",
     "bench": 59,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {

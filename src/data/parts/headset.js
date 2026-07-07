@@ -23,7 +23,6 @@ export default [
     },
     "value": 6,
     "bench": 75,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -109,7 +108,6 @@ export default [
     },
     "value": 0,
     "bench": 75,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -186,7 +184,6 @@ export default [
     },
     "value": 28,
     "bench": 75,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -234,7 +231,6 @@ export default [
     },
     "value": 65,
     "bench": 61,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -260,7 +256,6 @@ export default [
     "value": 50,
     "hsType": "Wireless",
     "bench": 84,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -288,7 +283,6 @@ export default [
     "value": 99,
     "hsType": "Wired",
     "bench": 54,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -719,7 +713,6 @@ export default [
     "mic": false,
     "anc": false,
     "bench": 52,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -823,7 +816,6 @@ export default [
     "driver": 30,
     "mic": true,
     "bench": 81,
-    "needsReview": true,
     "quarantinedAt": "2026-06-29"
   },
   {
@@ -2745,7 +2737,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.627Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -2892,7 +2883,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.628Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -3024,7 +3014,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.630Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -3118,7 +3107,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.630Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-06-29"
   },
   {
@@ -3390,7 +3378,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.632Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-06-29"
   },
   {
@@ -3412,7 +3399,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.632Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-06-28"
   },
   {
@@ -3754,7 +3740,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.633Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {

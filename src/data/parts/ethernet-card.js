@@ -56,7 +56,6 @@ export default [
     "wol": true,
     "vlan": false,
     "pxe": false,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -86,7 +85,6 @@ export default [
     "vlan": true,
     "pxe": true,
     "connector": "RJ45",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -116,7 +114,6 @@ export default [
     "wol": true,
     "vlan": true,
     "pxe": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {

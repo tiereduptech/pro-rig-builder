@@ -47,7 +47,6 @@ export default [
     },
     "sampleRate": 96,
     "bench": 83,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -71,7 +70,6 @@ export default [
     },
     "sampleRate": 48,
     "bench": 75,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -97,7 +95,6 @@ export default [
     },
     "sampleRate": 48,
     "bench": 74,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -183,7 +180,6 @@ export default [
     "micType": "XLR",
     "sampleRate": 0,
     "bench": 98,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -2055,7 +2051,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.641Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -2197,7 +2192,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.642Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -2729,7 +2723,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.648Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -3006,7 +2999,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.650Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -3028,7 +3020,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.651Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -3050,7 +3041,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.651Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {

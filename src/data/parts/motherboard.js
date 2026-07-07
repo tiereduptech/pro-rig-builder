@@ -294,7 +294,6 @@ export default [
     },
     "value": 34,
     "bench": 95,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -366,7 +365,6 @@ export default [
     "bench": 88,
     "upc": "00824142301050",
     "mpn": "PRO B650-P WIFI",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -406,7 +404,6 @@ export default [
     },
     "value": 93,
     "bench": 64,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -883,7 +880,6 @@ export default [
     "bench": 100,
     "upc": "00824142305690",
     "mpn": "MAG Z790 TOMAHAWK WIFI",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -920,7 +916,6 @@ export default [
     "bench": 100,
     "upc": "00889523034101",
     "mpn": "Z790 AORUS ELITE AX DDR4",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -992,7 +987,6 @@ export default [
     "bench": 77,
     "upc": "00824142305973",
     "mpn": "PRO B760M-A WIFI DDR4",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -1032,7 +1026,6 @@ export default [
     },
     "value": 100,
     "bench": 61,
-    "needsReview": true,
     "quarantinedAt": "2026-05-23"
   },
   {
@@ -1331,7 +1324,6 @@ export default [
     "bench": 100,
     "upc": "00824142386569",
     "mpn": "Z890-S WIFI",
-    "needsReview": true,
     "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
@@ -1493,7 +1485,6 @@ export default [
       }
     },
     "value": 56,
-    "needsReview": true,
     "quarantinedAt": "2026-06-03",
     "bench": 66
   },
@@ -1601,7 +1592,6 @@ export default [
     "bench": 54,
     "upc": "00889523036006",
     "mpn": "B550M K",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -2288,7 +2278,6 @@ export default [
     "value": 2,
     "bundle": true,
     "bench": 67,
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -2499,7 +2488,6 @@ export default [
     "value": 0,
     "bundle": true,
     "bench": 79,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -2606,7 +2594,6 @@ export default [
     "value": 8,
     "bundle": true,
     "bench": 57,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -3038,7 +3025,6 @@ export default [
     "wifi": "WiFi 6E",
     "value": 100,
     "bench": 82,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -3621,7 +3607,6 @@ export default [
     "wifi": "WiFi 7",
     "value": 44,
     "bench": 87,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -3936,7 +3921,6 @@ export default [
     "wifi": "None",
     "value": 54,
     "bench": 72,
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -4054,7 +4038,6 @@ export default [
     "wifi": "WiFi",
     "value": 21,
     "bench": 83,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05",
     "neweggRemovedOutlier": "2026-06-28"
   },
@@ -4526,7 +4509,6 @@ export default [
     "wifi": "WiFi",
     "value": 47,
     "bench": 77,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -4818,7 +4800,6 @@ export default [
     "wifi": "WiFi",
     "value": 35,
     "bench": 78,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -5445,7 +5426,6 @@ export default [
     "wifi": "WiFi",
     "value": 17,
     "bench": 86,
-    "needsReview": true,
     "quarantinedAt": "2026-06-29"
   },
   {
@@ -5729,7 +5709,6 @@ export default [
     "ff": "mATX",
     "value": 91,
     "bench": 48,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -6469,7 +6448,6 @@ export default [
     "wifi": "None",
     "value": 38,
     "bench": 67,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -6540,7 +6518,6 @@ export default [
     "wifi": "WiFi 5",
     "value": 14,
     "bench": 76,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -6973,7 +6950,6 @@ export default [
     "wifi": "WiFi",
     "value": 32,
     "bench": 79,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -7080,7 +7056,6 @@ export default [
     "wifi": "None",
     "value": 87,
     "bench": 60,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -7518,7 +7493,6 @@ export default [
     "wifi": "WiFi",
     "value": 12,
     "bench": 87,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -7555,7 +7529,6 @@ export default [
     "wifi": "WiFi",
     "value": 22,
     "bench": 79,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05",
     "neweggRemovedOutlier": "2026-06-28"
   },
@@ -8360,7 +8333,6 @@ export default [
     "wifi": "None",
     "value": 28,
     "bench": 80,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -9355,7 +9327,6 @@ export default [
     "ff": "ATX",
     "value": 9,
     "bench": 76,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -9594,7 +9565,6 @@ export default [
     "wifi": "None",
     "value": 81,
     "bench": 71,
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -10881,7 +10851,6 @@ export default [
     "wifi": "WiFi",
     "value": 40,
     "bench": 72,
-    "needsReview": true,
     "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
@@ -11620,7 +11589,6 @@ export default [
     "wifi": "WiFi",
     "value": 75,
     "bench": 68,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05",
     "neweggRemovedOutlier": "2026-06-28"
   },
@@ -11836,7 +11804,6 @@ export default [
     "wifi": "WiFi 7",
     "value": 1,
     "bench": 95,
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -12211,7 +12178,6 @@ export default [
     "wifi": "None",
     "value": 31,
     "bench": 80,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -13266,7 +13232,6 @@ export default [
     "ff": "ATX",
     "value": 17,
     "bench": 88,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -13583,7 +13548,6 @@ export default [
     "value": 83,
     "bench": 42,
     "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -13971,7 +13935,6 @@ export default [
     "wifi": "WiFi",
     "value": 39,
     "bench": 78,
-    "needsReview": true,
     "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
@@ -14616,7 +14579,6 @@ export default [
     "wifi": "None",
     "value": 64,
     "bench": 84,
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -14847,7 +14809,6 @@ export default [
     "ff": "mATX",
     "value": 22,
     "bench": 90,
-    "needsReview": true,
     "quarantinedAt": "2026-06-28"
   },
   {
@@ -15612,7 +15573,6 @@ export default [
     "value": 3,
     "bundle": true,
     "bench": 46,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -17205,7 +17165,6 @@ export default [
     "condition": "used",
     "bench": 94,
     "wifi": "WiFi 6E",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -17307,7 +17266,6 @@ export default [
     "ff": "Micro ATX",
     "bench": 77,
     "wifi": "WiFi 7",
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -17899,7 +17857,6 @@ export default [
     "ff": "mATX",
     "memType": "DDR5",
     "wifi": "WiFi",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -18265,7 +18222,6 @@ export default [
     "ff": "mATX",
     "memType": "DDR4",
     "wifi": "None",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -18359,7 +18315,6 @@ export default [
     "ff": "mITX",
     "memType": "DDR5",
     "wifi": "WiFi 6E",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {

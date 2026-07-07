@@ -68,7 +68,6 @@ export default [
       }
     },
     "ff": "Compact",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -129,7 +128,6 @@ export default [
         "inStock": true
       }
     },
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {

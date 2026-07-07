@@ -29,7 +29,6 @@ export default [
       }
     },
     "value": 36,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 89,
     "resolution": "1440p"
@@ -93,7 +92,6 @@ export default [
       }
     },
     "value": 34,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 100,
     "resolution": "1440p"
@@ -126,7 +124,6 @@ export default [
       }
     },
     "value": 46,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 82,
     "resolution": "1440p"
@@ -160,7 +157,6 @@ export default [
       }
     },
     "value": 38,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 89,
     "resolution": "1440p"
@@ -194,7 +190,6 @@ export default [
       }
     },
     "value": 24,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 100
   },
@@ -258,7 +253,6 @@ export default [
       }
     },
     "value": 17,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 61,
     "resolution": "1440p"
@@ -291,7 +285,6 @@ export default [
       }
     },
     "value": 100,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 74,
     "resolution": "1080p"
@@ -325,7 +318,6 @@ export default [
       }
     },
     "value": 50,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 95,
     "resolution": "1440p"
@@ -358,7 +350,6 @@ export default [
       }
     },
     "value": 30,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 64,
     "resolution": "1080p"
@@ -392,7 +383,6 @@ export default [
       }
     },
     "value": 5,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 54,
     "resolution": "1440p"
@@ -426,7 +416,6 @@ export default [
       }
     },
     "value": 6,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 68,
     "resolution": "4K"
@@ -460,7 +449,6 @@ export default [
       }
     },
     "value": 13,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 100,
     "resolution": "4K"
@@ -493,7 +481,6 @@ export default [
       }
     },
     "value": 17,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 100,
     "resolution": "4K"
@@ -1673,7 +1660,6 @@ export default [
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
     "curved": true,
-    "needsReview": true,
     "quarantinedAt": "2026-06-04"
   },
   {
@@ -1747,7 +1733,6 @@ export default [
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
     "curved": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -2376,7 +2361,6 @@ export default [
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -2484,7 +2468,6 @@ export default [
     "bench": 59,
     "ports": "1x HDMI, 1x DisplayPort",
     "resolution": "4K",
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -2780,7 +2763,6 @@ export default [
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -2853,7 +2835,6 @@ export default [
     "bench": 63,
     "sync": "FreeSync",
     "ports": "HDMI 2.1, DisplayPort",
-    "needsReview": true,
     "quarantinedAt": "2026-06-01",
     "resolution": "1440p",
     "curved": true
@@ -12216,7 +12197,6 @@ export default [
     "resolution": "4K",
     "refresh": 160,
     "panel": "IPS",
-    "needsReview": true,
     "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
@@ -12488,7 +12468,6 @@ export default [
     "resolution": "4K",
     "refresh": 60,
     "panel": "IPS",
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -12775,7 +12754,6 @@ export default [
     "refresh": 180,
     "panel": "IPS",
     "screenSize": 27,
-    "needsReview": true,
     "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
@@ -13642,7 +13620,6 @@ export default [
     "refresh": 240,
     "panel": "OLED",
     "curved": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -13716,7 +13693,6 @@ export default [
     "refresh": 175,
     "panel": "OLED",
     "curved": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -14160,7 +14136,6 @@ export default [
     "refresh": 200,
     "panel": "VA",
     "curved": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -14187,7 +14162,6 @@ export default [
     "refresh": 240,
     "panel": "OLED",
     "curved": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -14287,7 +14261,6 @@ export default [
     "refresh": 240,
     "panel": "OLED",
     "curved": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -14454,7 +14427,6 @@ export default [
     "resolution": "1440p",
     "refresh": 280,
     "panel": "OLED",
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -14937,7 +14909,6 @@ export default [
     "refresh": 200,
     "panel": "IPS",
     "screenSize": 27,
-    "needsReview": true,
     "quarantinedAt": "2026-06-01"
   },
   {
@@ -15102,7 +15073,6 @@ export default [
     "resolution": "4K",
     "refresh": 165,
     "panel": "OLED",
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   }
 ];

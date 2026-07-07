@@ -25,7 +25,6 @@ export default [
     "mdisc": false,
     "readSpeed": "16x BD / 16x DVD",
     "writeSpeed": "16x BD-R",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -105,7 +104,6 @@ export default [
     "writeSpeed": "24x DVD±R",
     "formFactor": "5.25\"",
     "mdisc": false,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {

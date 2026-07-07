@@ -679,7 +679,6 @@ export default [
       }
     },
     "igpu": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -1070,7 +1069,6 @@ export default [
         "inStock": true
       }
     },
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -1738,7 +1736,6 @@ export default [
     },
     "igpu": false,
     "mpn": "CM8071505094012",
-    "needsReview": true,
     "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
@@ -2042,7 +2039,6 @@ export default [
     "igpu": false,
     "upc": "00735858528375",
     "mpn": "BX8071513100F",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -2599,7 +2595,6 @@ export default [
     "boostClock": 4900,
     "memType": "DDR5",
     "igpu": false,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -3051,7 +3046,6 @@ export default [
   },
   {
     "id": 10140,
-    "needsReview": true,
     "bundle": true,
     "n": "CPU Motherboard Kit AMD Ryzen 7 7800X3D Unlocked Desktop Processor with ASUS ROG Strix B650-A Gaming WiFi 6E AM5 Gami...",
     "img": "https://m.media-amazon.com/images/I/714qGFn81UL._AC_SL1500_.jpg",
@@ -3120,7 +3114,6 @@ export default [
   },
   {
     "id": 10142,
-    "needsReview": true,
     "bundle": true,
     "n": "Azure 3 Gaming PC, AMD Ryzen 7 9700X 3.8GHz, NVIDIA RTX 5060",
     "img": "https://m.media-amazon.com/images/I/71XMin+emqL._AC_SL1200_.jpg",
@@ -3188,7 +3181,6 @@ export default [
     "threads": 16,
     "bench": 53,
     "bundle": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -3602,7 +3594,6 @@ export default [
     "threads": 24,
     "bench": 78,
     "bundle": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -3673,7 +3664,6 @@ export default [
     "bench": 37,
     "bundle": true,
     "vcache": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -3845,7 +3835,6 @@ export default [
     "maxMem": "192 gigabytes",
     "unlocked": true,
     "bench": 83,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -3885,7 +3874,6 @@ export default [
     "maxMem": "192 gigabytes",
     "unlocked": true,
     "bench": 74,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -3925,7 +3913,6 @@ export default [
     "maxMem": "192 gigabytes",
     "unlocked": true,
     "bench": 55,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -4199,7 +4186,6 @@ export default [
     "maxMem": "192 gigabytes",
     "unlocked": true,
     "bench": 96,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -5775,7 +5761,6 @@ export default [
     "boostClock": 4.9,
     "igpu": true,
     "bench": 39,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -5802,7 +5787,6 @@ export default [
     "tdp": 65,
     "igpu": true,
     "bench": 8,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -5829,7 +5813,6 @@ export default [
     "tdp": 65,
     "igpu": true,
     "bench": 19,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -6470,7 +6453,6 @@ export default [
     "socket": "LGA1151",
     "tdp": 54,
     "bench": 4,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -6547,7 +6529,6 @@ export default [
     "boostClock": 4.3,
     "igpu": true,
     "bench": 10,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -6714,7 +6695,6 @@ export default [
     "threads": 12,
     "socket": "AM4",
     "bench": 29,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -6787,7 +6767,6 @@ export default [
     "threads": 12,
     "tdp": 65,
     "bench": 35,
-    "needsReview": true,
     "quarantinedAt": "2026-06-23"
   },
   {
@@ -6839,7 +6818,6 @@ export default [
     "tdp": 65,
     "igpu": true,
     "bench": 28,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -6867,7 +6845,6 @@ export default [
     "boostClock": 4.4,
     "igpu": true,
     "bench": 27,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -7018,7 +6995,6 @@ export default [
     "threads": 20,
     "socket": "LGA2066",
     "tdp": 140,
-    "needsReview": true,
     "quarantinedAt": "2026-07-03"
   },
   {

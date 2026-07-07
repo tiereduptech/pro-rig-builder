@@ -53,7 +53,6 @@ export default [
     },
     "value": 30,
     "bench": 92,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -84,7 +83,6 @@ export default [
     },
     "value": 0,
     "bench": 88,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -115,7 +113,6 @@ export default [
     },
     "value": 12,
     "bench": 85,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -146,7 +143,6 @@ export default [
     },
     "value": 7,
     "bench": 81,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -172,7 +168,6 @@ export default [
     },
     "value": 3,
     "bench": 53,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -227,7 +222,6 @@ export default [
     "value": 11,
     "mouseType": "USB",
     "bench": 100,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -304,7 +298,6 @@ export default [
     "value": 70,
     "mouseType": "Wireless",
     "bench": 100,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -1040,7 +1033,6 @@ export default [
     "mouseType": "Wireless",
     "dpi": 30000,
     "bench": 81,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -2908,7 +2900,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.610Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -2960,7 +2951,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.610Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {

@@ -397,7 +397,6 @@ export default [
       }
     },
     "cableType": "12VHPWR",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {

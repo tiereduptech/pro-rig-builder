@@ -166,7 +166,6 @@ export default [
     "rpm": 1800,
     "pwm": true,
     "rgbType": "ARGB",
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 82,
     "fans_inc": 3
@@ -339,7 +338,6 @@ export default [
     "value": 73,
     "rpm": 2000,
     "pwm": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 74
   },
@@ -368,7 +366,6 @@ export default [
     "value": 75,
     "rpm": 1850,
     "pwm": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 66,
     "fans_inc": 3
@@ -1229,7 +1226,6 @@ export default [
     "bench": 83,
     "mpn": "ACFAN00333A",
     "fanSize": 120,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -3429,7 +3425,6 @@ export default [
     "bench": 81,
     "mpn": "ACFAN00326A",
     "fanSize": 120,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -3667,7 +3662,6 @@ export default [
     "pack": 3,
     "bench": 84,
     "mpn": "12RSLIN3B",
-    "needsReview": true,
     "quarantinedAt": "2026-06-28"
   },
   {
@@ -4567,7 +4561,6 @@ export default [
     "pack": 1,
     "bench": 61,
     "fanSize": 120,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -4947,7 +4940,6 @@ export default [
     "bench": 78,
     "mpn": "ACFAN00331A",
     "fanSize": 120,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -5537,7 +5529,6 @@ export default [
     "bench": 71,
     "mpn": "RF-R14SF-B1",
     "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -6305,7 +6296,6 @@ export default [
     "pack": 1,
     "bench": 64,
     "fanSize": 120,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -7217,7 +7207,6 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 66,
-    "needsReview": true,
     "quarantinedAt": "2026-06-01"
   },
   {
@@ -7256,7 +7245,6 @@ export default [
     "rgbType": "ARGB",
     "pack": 1,
     "bench": 68,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "fanSize": 120,
     "bestbuyRemovedComp": "2026-06-28"
@@ -7946,7 +7934,6 @@ export default [
     "pack": 2,
     "bench": 71,
     "fanSize": 140,
-    "needsReview": true,
     "quarantinedAt": "2026-06-28"
   },
   {
@@ -8058,7 +8045,6 @@ export default [
     "rgbType": "ARGB",
     "pack": 1,
     "bench": 69,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "fanSize": 140,
     "bestbuyRemovedComp": "2026-06-28"
@@ -8372,7 +8358,6 @@ export default [
     "value": 4,
     "bench": 73,
     "pack": 3,
-    "needsReview": true,
     "quarantinedAt": "2026-04-28",
     "fanSize": 140
   },
@@ -9077,7 +9062,6 @@ export default [
     "bench": 50,
     "rgb": false,
     "pack": 1,
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -9183,7 +9167,6 @@ export default [
     "pack": 3,
     "bench": 61,
     "fanSize": 120,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {

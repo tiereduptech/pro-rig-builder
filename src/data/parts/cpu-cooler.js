@@ -287,7 +287,6 @@ export default [
     "fans_inc": 2,
     "rgb": false,
     "value": 68,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 75,
     "cfm": 132
@@ -323,7 +322,6 @@ export default [
     "fans_inc": 2,
     "rgb": false,
     "value": 27,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 78,
     "cfm": 145
@@ -463,7 +461,6 @@ export default [
     "fans_inc": 3,
     "rgb": true,
     "value": 10,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 89,
     "height": 52,
@@ -500,7 +497,6 @@ export default [
     "fans_inc": 2,
     "rgb": true,
     "value": 30,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 64,
     "height": 52,
@@ -747,7 +743,6 @@ export default [
     "fans_inc": 3,
     "rgb": false,
     "value": 30,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 86,
     "height": 52,
@@ -815,7 +810,6 @@ export default [
     "fans_inc": 3,
     "rgb": true,
     "value": 32,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 95,
     "height": 52,
@@ -977,7 +971,6 @@ export default [
     "height": 52,
     "cfm": 60,
     "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -1564,7 +1557,6 @@ export default [
     "mpn": "L-P360L-AM3M-G0W",
     "radiator": 360,
     "fanCount": 3,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -1696,7 +1688,6 @@ export default [
     "cfm": 180,
     "radiator": 360,
     "fanCount": 3,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -1735,7 +1726,6 @@ export default [
     "bench": 66,
     "radSize": "120",
     "cfm": 132,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -2076,7 +2066,6 @@ export default [
     "mpn": "ELW-D24M-A21DA-RW",
     "radiator": 240,
     "fanCount": 2,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -2931,7 +2920,6 @@ export default [
     "mpn": "RL-KR24E-W2",
     "radiator": 240,
     "fanCount": 2,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -3820,7 +3808,6 @@ export default [
     "value": 38,
     "tdp_rating": 280,
     "tdp_rating_est": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04",
     "bench": 93,
     "fanSize": 120,
@@ -4622,7 +4609,6 @@ export default [
     "mpn": "CW-9061031-WW",
     "radiator": 240,
     "fanCount": 2,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -5630,7 +5616,6 @@ export default [
     "cfm": 120,
     "radiator": 240,
     "fanCount": 2,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -6029,7 +6014,6 @@ export default [
     "mpn": "ACFRE00186A",
     "radiator": 240,
     "fanCount": 2,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -6549,7 +6533,6 @@ export default [
     "radSize": "120",
     "fanSize": 140,
     "cfm": 132,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -6624,7 +6607,6 @@ export default [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "needsReview": true,
     "quarantinedAt": "2026-05-22"
   },
   {
@@ -6700,7 +6682,6 @@ export default [
     "value": 48,
     "bench": 40,
     "cfm": 65,
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -7016,7 +6997,6 @@ export default [
     "cfm": 132,
     "radiator": 240,
     "fanCount": 2,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -7234,7 +7214,6 @@ export default [
     "cfm": 120,
     "radiator": 240,
     "fanCount": 2,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -8272,7 +8251,6 @@ export default [
     "radiator": 240,
     "fanCount": 2,
     "amazonRemovedAnomaly": "2026-06-28",
-    "needsReview": true,
     "quarantinedAt": "2026-06-28"
   },
   {
@@ -8407,7 +8385,6 @@ export default [
     "mpn": "HyperFlow Silent 360 Black",
     "radiator": 360,
     "fanCount": 3,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -9334,7 +9311,6 @@ export default [
     "fanSize": 140,
     "height": 52,
     "cfm": 220,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -10274,7 +10250,6 @@ export default [
     "mpn": "MLX-D36M-A25SZ-L1",
     "radiator": 360,
     "fanCount": 3,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -10971,7 +10946,6 @@ export default [
     "mpn": "GA2T36B",
     "radiator": 360,
     "fanCount": 3,
-    "needsReview": true,
     "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
@@ -13183,7 +13157,6 @@ export default [
     },
     "addedAt": "2026-05-15T13:17:14.411Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "bench": 33
   },
   {
@@ -13890,7 +13863,6 @@ export default [
     ],
     "airflow": 69.9,
     "rpm": 1900,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -14116,7 +14088,6 @@ export default [
     "fanCount": 1,
     "noise": 30.7,
     "rpm": 1800,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -15396,7 +15367,6 @@ export default [
     "airflow": 78.86,
     "noise": 30,
     "rpm": 1000,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -15627,7 +15597,6 @@ export default [
     "airflow": 190,
     "noise": 38.5,
     "rpm": 2500,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -15747,7 +15716,6 @@ export default [
     "airflow": 84.2,
     "noise": 39.5,
     "rpm": 2100,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -16018,7 +15986,6 @@ export default [
     "airflow": 69,
     "noise": 27,
     "rpm": 2150,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -16254,7 +16221,6 @@ export default [
     "airflow": 70.4,
     "noise": 27,
     "rpm": 1850,
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -16476,7 +16442,6 @@ export default [
     },
     "addedAt": "2026-05-15T16:31:54.668Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "bench": 35,
     "quarantinedAt": "2026-07-04"
   },
@@ -17074,7 +17039,6 @@ export default [
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "bench": 33
   },
   {
@@ -17257,7 +17221,6 @@ export default [
     "airflow": 69,
     "noise": 27,
     "rpm": 2150,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -17713,7 +17676,6 @@ export default [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "bench": 35,
     "quarantinedAt": "2026-07-04"
   },
@@ -18311,7 +18273,6 @@ export default [
     },
     "addedAt": "2026-05-15T16:39:25.992Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "bench": 33
   },
   {
@@ -18434,7 +18395,6 @@ export default [
     "airflow": 69,
     "noise": 27,
     "rpm": 2150,
-    "needsReview": true,
     "quarantinedAt": "2026-07-04"
   },
   {
@@ -18627,7 +18587,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.674Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "bench": 35,
     "quarantinedAt": "2026-07-04"
   },
@@ -18921,7 +18880,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.676Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "bench": 33
   },
   {

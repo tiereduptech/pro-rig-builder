@@ -27,7 +27,6 @@ export default [
       }
     },
     "bench": 99,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -53,7 +52,6 @@ export default [
       }
     },
     "bench": 86,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -906,7 +904,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.653Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {

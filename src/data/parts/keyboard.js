@@ -49,7 +49,6 @@ export default [
     },
     "value": 50,
     "bench": 73,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -109,7 +108,6 @@ export default [
     },
     "value": 16,
     "bench": 65,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -183,7 +181,6 @@ export default [
     },
     "value": 100,
     "bench": 77,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -292,7 +289,6 @@ export default [
     "wireless": false,
     "rgb": true,
     "bench": 71,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -322,7 +318,6 @@ export default [
     "switches": "Mechanical",
     "wireless": false,
     "bench": 62,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -352,7 +347,6 @@ export default [
     "wireless": true,
     "rgb": true,
     "bench": 75,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -784,7 +778,6 @@ export default [
     "layout": "Full-Size",
     "wireless": false,
     "bench": 69,
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -808,7 +801,6 @@ export default [
     "switches": "Mechanical",
     "layout": "Full-Size",
     "bench": 52,
-    "needsReview": true,
     "quarantinedAt": "2026-06-29"
   },
   {
@@ -3181,7 +3173,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.618Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-06-08"
   },
   {
@@ -3608,7 +3599,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.620Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -4125,7 +4115,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.623Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -4367,7 +4356,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.624Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {
@@ -4569,7 +4557,6 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.625Z",
     "source": "amazon-discovery",
-    "needsReview": true,
     "quarantinedAt": "2026-07-06"
   },
   {

@@ -29,7 +29,6 @@ export default [
     "value": 85,
     "memType": "DDR5",
     "formFactor": "UDIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-06-27",
     "form": "DIMM",
     "color": "Black"
@@ -94,7 +93,6 @@ export default [
     "value": 63,
     "memType": "DDR5",
     "formFactor": "UDIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-06-27",
     "form": "DIMM",
     "color": "Black"
@@ -161,7 +159,6 @@ export default [
     "value": 39,
     "memType": "DDR5",
     "formFactor": "UDIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-06-27",
     "form": "DIMM",
     "color": "Black"
@@ -194,7 +191,6 @@ export default [
     "value": 53,
     "memType": "DDR5",
     "formFactor": "UDIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05",
     "form": "DIMM",
     "color": "Black"
@@ -327,7 +323,6 @@ export default [
     "value": 85,
     "memType": "DDR5",
     "formFactor": "UDIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-06-27",
     "form": "DIMM",
     "color": "Black"
@@ -392,7 +387,6 @@ export default [
     "value": 85,
     "memType": "DDR5",
     "formFactor": "UDIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-06-27",
     "form": "DIMM",
     "color": "Black"
@@ -491,7 +485,6 @@ export default [
     "value": 85,
     "memType": "DDR5",
     "formFactor": "UDIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-06-27",
     "form": "DIMM",
     "color": "Black"
@@ -524,7 +517,6 @@ export default [
     "value": 95,
     "memType": "DDR5",
     "formFactor": "UDIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-06-27",
     "form": "DIMM",
     "color": "Black"
@@ -589,7 +581,6 @@ export default [
     "value": 92,
     "memType": "DDR5",
     "formFactor": "UDIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-06-27",
     "form": "DIMM",
     "color": "Black"
@@ -622,7 +613,6 @@ export default [
     "value": 100,
     "memType": "DDR5",
     "formFactor": "UDIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-06-27",
     "form": "DIMM",
     "color": "Black"
@@ -655,7 +645,6 @@ export default [
     "value": 100,
     "memType": "DDR5",
     "formFactor": "UDIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-06-27",
     "form": "DIMM",
     "color": "Black"
@@ -784,7 +773,6 @@ export default [
     "value": 56,
     "memType": "DDR5",
     "formFactor": "UDIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-06-27",
     "form": "DIMM",
     "color": "Black"
@@ -1143,7 +1131,6 @@ export default [
     "value": 93,
     "memType": "DDR4",
     "formFactor": "UDIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-06-27",
     "form": "DIMM",
     "color": "Black"
@@ -2675,7 +2662,6 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -2850,7 +2836,6 @@ export default [
     "form": "DIMM",
     "color": "White",
     "ecc": false,
-    "needsReview": true,
     "quarantinedAt": "2026-07-03"
   },
   {
@@ -3067,7 +3052,6 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -3407,7 +3391,6 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "needsReview": true,
     "quarantinedAt": "2026-05-11"
   },
   {
@@ -3974,7 +3957,6 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -6008,7 +5990,6 @@ export default [
     "form": "SODIMM",
     "color": "Red",
     "ecc": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -6501,7 +6482,6 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "needsReview": true,
     "quarantinedAt": "2026-06-29"
   },
   {
@@ -6581,7 +6561,6 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -7053,7 +7032,6 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -7221,7 +7199,6 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "needsReview": true,
     "quarantinedAt": "2026-07-03"
   },
   {
@@ -7270,7 +7247,6 @@ export default [
     "form": "DIMM",
     "color": "Gray",
     "ecc": false,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -8853,7 +8829,6 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -9047,7 +9022,6 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "needsReview": true,
     "quarantinedAt": "2026-05-03"
   },
   {
@@ -9266,7 +9240,6 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -11904,7 +11877,6 @@ export default [
     "cl": 32,
     "memType": "DDR5",
     "formFactor": "DIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -11933,7 +11905,6 @@ export default [
     "cl": 32,
     "memType": "DDR5",
     "formFactor": "DIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-07-03"
   },
   {
@@ -11963,7 +11934,6 @@ export default [
     "memType": "DDR5",
     "formFactor": "DIMM",
     "rgb": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -11992,7 +11962,6 @@ export default [
     "cl": 32,
     "memType": "DDR5",
     "formFactor": "DIMM",
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
@@ -12680,7 +12649,6 @@ export default [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "rgb": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-01"
   },
   {
@@ -12843,7 +12811,6 @@ export default [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "rgb": true,
-    "needsReview": true,
     "quarantinedAt": "2026-07-05"
   },
   {
