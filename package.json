@@ -12,6 +12,8 @@
     "start": "node server.cjs"
   },
   "dependencies": {
+    "@fontsource/fraunces": "^5.2.9",
+    "@fontsource/inter": "^5.2.8",
     "cheerio": "^1.2.0",
     "express": "^5.2.1",
     "lucide-react": "^1.16.0",
