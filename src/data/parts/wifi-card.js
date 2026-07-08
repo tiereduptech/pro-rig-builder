@@ -35,7 +35,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/513FfctgOBL._AC_SL300_.jpg",
     "c": "WiFiCard",
     "b": "TP-Link",
-    "pr": 29,
+    "pr": 149.98,
     "msrp": 34,
     "r": 4.4,
     "pciType": "x1",
@@ -55,9 +55,7 @@ export default [
     "pcieLane": "x1",
     "heatsink": false,
     "bt": "BT 5.2",
-    "chipset": "Intel AX200",
-    "needsReview": true,
-    "quarantinedAt": "2026-06-29"
+    "chipset": "Intel AX200"
   },
   {
     "id": 96001,
@@ -191,7 +189,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/61WwBsjCpDL._AC_UL640_QL65_.jpg",
     "c": "WiFiCard",
     "b": "BrosTrend",
-    "pr": 25,
+    "pr": 25.99,
     "msrp": 29,
     "r": 4.2,
     "reviews": 13500,
@@ -273,7 +271,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/51tD2bwHh9L._AC_UY218_.jpg",
     "c": "WiFiCard",
     "b": "Intel",
-    "pr": 23,
+    "pr": 24.9,
     "msrp": 26,
     "r": 4.5,
     "reviews": 6000,

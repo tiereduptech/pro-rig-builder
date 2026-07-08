@@ -33,7 +33,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/61SHnK1hFsL._AC_SL300_.jpg",
     "c": "OpticalDrive",
     "b": "ASUS",
-    "pr": 19,
+    "pr": 40,
     "msrp": 24,
     "r": 4.2,
     "iface": "SATA",
@@ -50,9 +50,7 @@ export default [
     "formFactor": "5.25\"",
     "mdisc": false,
     "readSpeed": "48x CD / 16x DVD",
-    "writeSpeed": "24x DVD±R",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-06"
+    "writeSpeed": "24x DVD±R"
   },
   {
     "id": 99302,
@@ -154,7 +152,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/61EKGSQ0cUL._AC_UY218_.jpg",
     "c": "OpticalDrive",
     "b": "Digital",
-    "pr": 55,
+    "pr": 58.95,
     "msrp": 63,
     "r": 4.6,
     "reviews": 1200,

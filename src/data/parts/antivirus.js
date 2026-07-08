@@ -7,7 +7,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/71OFYR9xzUL._AC_SL300_.jpg",
     "c": "Antivirus",
     "b": "Norton",
-    "pr": 40,
+    "pr": 49.99,
     "msrp": 89,
     "r": 4.3,
     "vendor": "Norton",

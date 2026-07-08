@@ -7,7 +7,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/61r5zmzDO8L._AC_SY300_SX300_QL70_FMwebp_.jpg",
     "c": "OS",
     "b": "Microsoft",
-    "pr": 199,
+    "pr": 209.99,
     "msrp": 229,
     "r": 4.2,
     "reviews": 425,

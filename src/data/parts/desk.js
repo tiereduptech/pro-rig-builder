@@ -7,7 +7,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/51wc75lHBcL._AC_SL300_.jpg",
     "c": "Desk",
     "b": "UPLIFT",
-    "pr": 599,
+    "pr": 808,
     "msrp": 699,
     "r": 4.8,
     "deskSize": "60in",

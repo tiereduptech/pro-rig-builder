@@ -99,7 +99,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/81smCP+nFIL._AC_UY218_.jpg",
     "c": "SoundCard",
     "b": "iFi",
-    "pr": 33,
+    "pr": 35.75,
     "msrp": 38,
     "r": 4.3,
     "reviews": 1600,

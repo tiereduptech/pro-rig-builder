@@ -7,7 +7,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/61DfLRc3HjL._AC_SL300_.jpg",
     "c": "UPS",
     "b": "CyberPower",
-    "pr": 209,
+    "pr": 360,
     "msrp": 249,
     "r": 4.6,
     "va": 1500,
@@ -21,9 +21,7 @@ export default [
         "inStock": true
       }
     },
-    "ff": "Tower",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-06"
+    "ff": "Tower"
   },
   {
     "id": 99931,
@@ -31,7 +29,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/617WOwlPeDL._AC_SL300_.jpg",
     "c": "UPS",
     "b": "APC",
-    "pr": 179,
+    "pr": 240,
     "msrp": 219,
     "r": 4.5,
     "va": 1500,
