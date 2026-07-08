@@ -1231,8 +1231,8 @@ function TowerLogo({size=36}){
   // Theme is set on document root via [data-theme]. We pick based on a CSS variable trick:
   // both images are rendered but only one is visible at a time.
   return <span style={{display:"inline-flex",alignItems:"center",height,width,flexShrink:0,position:"relative"}}>
-    <img src="/logo-light.png" alt="Pro Rig Builder" className="logo-light-img" style={{height,width:"auto",maxWidth:"100%",objectFit:"contain",display:"block"}}/>
-    <img src="/logo-dark.png" alt="Pro Rig Builder" className="logo-dark-img" style={{height,width:"auto",maxWidth:"100%",objectFit:"contain",display:"block",position:"absolute",top:0,left:0}}/>
+    <img src="/logo-light.webp" alt="Pro Rig Builder" className="logo-light-img" style={{height,width:"auto",maxWidth:"100%",objectFit:"contain",display:"block"}}/>
+    <img src="/logo-dark.webp" alt="Pro Rig Builder" className="logo-dark-img" style={{height,width:"auto",maxWidth:"100%",objectFit:"contain",display:"block",position:"absolute",top:0,left:0}}/>
   </span>;
 }
 
