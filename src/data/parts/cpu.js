@@ -1039,8 +1039,7 @@ export default [
         "url": "https://www.amazon.com/dp/B092L9GF5N?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "quarantinedAt": "2026-07-05"
+    }
   },
   {
     "id": 10035,
@@ -1707,7 +1706,6 @@ export default [
     },
     "igpu": false,
     "mpn": "CM8071505094012",
-    "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
   {
@@ -3153,8 +3151,7 @@ export default [
     "cores": 8,
     "threads": 16,
     "bench": 53,
-    "bundle": true,
-    "quarantinedAt": "2026-07-01"
+    "bundle": true
   },
   {
     "id": 10144,
@@ -3849,8 +3846,7 @@ export default [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 74,
-    "quarantinedAt": "2026-07-05"
+    "bench": 74
   },
   {
     "id": 10164,
@@ -6677,8 +6673,7 @@ export default [
     "cores": 6,
     "threads": 12,
     "socket": "AM4",
-    "bench": 29,
-    "quarantinedAt": "2026-07-05"
+    "bench": 29
   },
   {
     "id": 100613,
@@ -6749,8 +6744,7 @@ export default [
     "cores": 6,
     "threads": 12,
     "tdp": 65,
-    "bench": 35,
-    "quarantinedAt": "2026-06-23"
+    "bench": 35
   },
   {
     "id": 100616,
@@ -6828,8 +6822,7 @@ export default [
     "tdp": 65,
     "boostClock": 4.4,
     "igpu": true,
-    "bench": 27,
-    "quarantinedAt": "2026-07-05"
+    "bench": 27
   },
   {
     "id": 100619,
@@ -6978,8 +6971,7 @@ export default [
     "cores": 10,
     "threads": 20,
     "socket": "LGA2066",
-    "tdp": 140,
-    "quarantinedAt": "2026-07-03"
+    "tdp": 140
   },
   {
     "id": 100625,

@@ -41,8 +41,7 @@ export default [
       }
     },
     "surface": "Cloth",
-    "bench": 59,
-    "quarantinedAt": "2026-07-06"
+    "bench": 59
   },
   {
     "id": 98502,

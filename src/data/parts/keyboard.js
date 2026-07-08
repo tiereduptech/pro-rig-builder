@@ -48,8 +48,7 @@ export default [
       }
     },
     "value": 50,
-    "bench": 73,
-    "quarantinedAt": "2026-07-06"
+    "bench": 73
   },
   {
     "id": 95002,
@@ -107,8 +106,7 @@ export default [
       }
     },
     "value": 16,
-    "bench": 65,
-    "quarantinedAt": "2026-07-06"
+    "bench": 65
   },
   {
     "id": 95004,
@@ -180,8 +178,7 @@ export default [
       }
     },
     "value": 100,
-    "bench": 77,
-    "quarantinedAt": "2026-07-06"
+    "bench": 77
   },
   {
     "id": 95008,
@@ -288,8 +285,7 @@ export default [
     "switches": "Mechanical",
     "wireless": false,
     "rgb": true,
-    "bench": 71,
-    "quarantinedAt": "2026-07-06"
+    "bench": 71
   },
   {
     "id": 95012,
@@ -317,8 +313,7 @@ export default [
     "rgb": true,
     "switches": "Mechanical",
     "wireless": false,
-    "bench": 62,
-    "quarantinedAt": "2026-07-06"
+    "bench": 62
   },
   {
     "id": 95013,
@@ -346,8 +341,7 @@ export default [
     "switches": "Mechanical",
     "wireless": true,
     "rgb": true,
-    "bench": 75,
-    "quarantinedAt": "2026-07-06"
+    "bench": 75
   },
   {
     "id": 100007,
@@ -777,8 +771,7 @@ export default [
     "rgb": true,
     "layout": "Full-Size",
     "wireless": false,
-    "bench": 69,
-    "quarantinedAt": "2026-07-06"
+    "bench": 69
   },
   {
     "id": 100026,
@@ -800,8 +793,7 @@ export default [
     "rgb": true,
     "switches": "Mechanical",
     "layout": "Full-Size",
-    "bench": 52,
-    "quarantinedAt": "2026-06-29"
+    "bench": 52
   },
   {
     "id": 100027,
@@ -3170,8 +3162,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.618Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-06-08"
+    "source": "amazon-discovery"
   },
   {
     "id": 101540,
@@ -3596,8 +3587,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.620Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-06"
+    "source": "amazon-discovery"
   },
   {
     "id": 101562,
@@ -4112,8 +4102,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.623Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-06"
+    "source": "amazon-discovery"
   },
   {
     "id": 101592,
@@ -4353,8 +4342,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.624Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-06"
+    "source": "amazon-discovery"
   },
   {
     "id": 101605,
@@ -4554,8 +4542,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.625Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-06"
+    "source": "amazon-discovery"
   },
   {
     "id": 101615,

@@ -330,8 +330,7 @@ export default [
     "bench": 47,
     "upc": "08809433503070",
     "mpn": "HFS2T0GEJ9X",
-    "amazonRemovedAnomaly": "2026-06-28",
-    "quarantinedAt": "2026-06-28"
+    "amazonRemovedAnomaly": "2026-06-28"
   },
   {
     "id": 50011,
@@ -537,7 +536,6 @@ export default [
     "pcie": 4,
     "nand": "TLC",
     "value": 87,
-    "quarantinedAt": "2026-06-27",
     "bench": 83
   },
   {
@@ -567,7 +565,6 @@ export default [
     "pcie": 4,
     "nand": "TLC",
     "value": 100,
-    "quarantinedAt": "2026-06-27",
     "bench": 83
   },
   {
@@ -1933,7 +1930,6 @@ export default [
     "storageType": "NVMe",
     "value": 43,
     "bench": 82,
-    "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
   {
@@ -8164,8 +8160,7 @@ export default [
     "dram": false,
     "value": 36,
     "bench": 50,
-    "formFactor": "M.2",
-    "quarantinedAt": "2026-07-05"
+    "formFactor": "M.2"
   },
   {
     "id": 50215,
@@ -9096,8 +9091,7 @@ export default [
     "interface": "SATA",
     "rpm": 7200,
     "value": 39,
-    "bench": 13,
-    "quarantinedAt": "2026-07-03"
+    "bench": 13
   },
   {
     "id": 50239,
@@ -9417,8 +9411,7 @@ export default [
     "interface": "SATA",
     "rpm": 5400,
     "value": 15,
-    "bench": 10,
-    "quarantinedAt": "2026-07-03"
+    "bench": 10
   },
   {
     "id": 50247,
@@ -10374,8 +10367,7 @@ export default [
     "storageType": "HDD",
     "interface": "USB",
     "value": 13,
-    "bench": 10,
-    "quarantinedAt": "2026-07-03"
+    "bench": 10
   },
   {
     "id": 50272,
@@ -17599,7 +17591,6 @@ export default [
     "seq_w_inferred": true,
     "value": 4,
     "bench": 45,
-    "quarantinedAt": "2026-05-29",
     "cap": 2000
   },
   {
@@ -18117,8 +18108,7 @@ export default [
     "heatsink": false,
     "storageType": "SSD",
     "dram": true,
-    "value": 3,
-    "quarantinedAt": "2026-07-05"
+    "value": 3
   },
   {
     "id": 50474,
@@ -21040,8 +21030,7 @@ export default [
     "addedAt": "2026-05-15T13:17:14.420Z",
     "source": "amazon-discovery",
     "interface": "SATA",
-    "ff": "2.5\"",
-    "quarantinedAt": "2026-07-01"
+    "ff": "2.5\""
   },
   {
     "id": 100521,
@@ -21861,8 +21850,7 @@ export default [
     "storageType": "NVMe",
     "interface": "NVMe",
     "read": 7200,
-    "formFactor": "M.2",
-    "quarantinedAt": "2026-07-01"
+    "formFactor": "M.2"
   },
   {
     "id": 100818,
@@ -22621,8 +22609,7 @@ export default [
     "storageType": "HDD",
     "interface": "SATA",
     "ff": "3.5\"",
-    "formFactor": "3.5\"",
-    "quarantinedAt": "2026-06-29"
+    "formFactor": "3.5\""
   },
   {
     "id": 100847,
@@ -23809,7 +23796,6 @@ export default [
     "storageType": "NVMe",
     "interface": "NVMe",
     "formFactor": "M.2",
-    "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
   {
@@ -23917,8 +23903,7 @@ export default [
     "interface": "NVMe",
     "pcie": 4,
     "read": 7300,
-    "pcieGen": 4,
-    "quarantinedAt": "2026-07-03"
+    "pcieGen": 4
   },
   {
     "id": 101412,
@@ -23970,8 +23955,7 @@ export default [
     "cap": 8000,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "formFactor": "M.2",
-    "quarantinedAt": "2026-07-01"
+    "formFactor": "M.2"
   },
   {
     "id": 101414,
@@ -24625,8 +24609,7 @@ export default [
     "interface": "NVMe",
     "pcie": 4,
     "read": 7300,
-    "pcieGen": 4,
-    "quarantinedAt": "2026-07-03"
+    "pcieGen": 4
   },
   {
     "id": 101923,
@@ -24925,7 +24908,6 @@ export default [
     "storageType": "NVMe",
     "interface": "NVMe",
     "formFactor": "M.2",
-    "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
   {
@@ -25033,7 +25015,6 @@ export default [
     "interface": "NVMe",
     "pcie": 4,
     "read": 7300,
-    "pcieGen": 4,
-    "quarantinedAt": "2026-07-03"
+    "pcieGen": 4
   }
 ];

@@ -201,8 +201,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 82,
-    "quarantinedAt": "2026-06-29"
+    "bench": 82
   },
   {
     "id": 70005,
@@ -582,8 +581,7 @@ export default [
       120
     ],
     "color": "Black",
-    "bench": 47,
-    "quarantinedAt": "2026-06-28"
+    "bench": 47
   },
   {
     "id": 70014,
@@ -1160,7 +1158,6 @@ export default [
     ],
     "color": "Black",
     "bench": 72,
-    "quarantinedAt": "2026-06-28",
     "amazonRemovedAnomaly": "2026-06-28"
   },
   {
@@ -5100,8 +5097,7 @@ export default [
       280,
       240
     ],
-    "bench": 92,
-    "quarantinedAt": "2026-07-05"
+    "bench": 92
   },
   {
     "id": 70103,
@@ -5150,8 +5146,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 55,
-    "quarantinedAt": "2026-06-29"
+    "bench": 55
   },
   {
     "id": 70104,
@@ -5199,8 +5194,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 81,
-    "quarantinedAt": "2026-07-05"
+    "bench": 81
   },
   {
     "id": 70105,
@@ -8921,8 +8915,7 @@ export default [
     "rads": [
       120
     ],
-    "bench": 40,
-    "quarantinedAt": "2026-06-28"
+    "bench": 40
   },
   {
     "id": 70179,
@@ -8977,8 +8970,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 87,
-    "quarantinedAt": "2026-05-29"
+    "bench": 87
   },
   {
     "id": 70180,
@@ -9615,8 +9607,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 80,
-    "quarantinedAt": "2026-07-05"
+    "bench": 80
   },
   {
     "id": 70193,
@@ -10691,8 +10682,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 74,
-    "quarantinedAt": "2026-07-05"
+    "bench": 74
   },
   {
     "id": 70215,
@@ -11535,8 +11525,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 54,
-    "quarantinedAt": "2026-07-01"
+    "bench": 54
   },
   {
     "id": 70232,
@@ -12771,8 +12760,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 53,
-    "quarantinedAt": "2026-06-13"
+    "bench": 53
   },
   {
     "id": 70257,
@@ -16667,8 +16655,7 @@ export default [
     "addedAt": "2026-05-15T14:34:31.785Z",
     "source": "amazon-discovery",
     "tg": true,
-    "rgb": true,
-    "quarantinedAt": "2026-06-29"
+    "rgb": true
   },
   {
     "id": 100876,

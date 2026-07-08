@@ -365,8 +365,7 @@ export default [
     "value": 76,
     "bench": 88,
     "upc": "00824142301050",
-    "mpn": "PRO B650-P WIFI",
-    "quarantinedAt": "2026-07-05"
+    "mpn": "PRO B650-P WIFI"
   },
   {
     "id": 20010,
@@ -404,8 +403,7 @@ export default [
       }
     },
     "value": 93,
-    "bench": 64,
-    "quarantinedAt": "2026-07-05"
+    "bench": 64
   },
   {
     "id": 20011,
@@ -880,8 +878,7 @@ export default [
     "value": 37,
     "bench": 100,
     "upc": "00824142305690",
-    "mpn": "MAG Z790 TOMAHAWK WIFI",
-    "quarantinedAt": "2026-07-05"
+    "mpn": "MAG Z790 TOMAHAWK WIFI"
   },
   {
     "id": 20024,
@@ -916,8 +913,7 @@ export default [
     "value": 40,
     "bench": 100,
     "upc": "00889523034101",
-    "mpn": "Z790 AORUS ELITE AX DDR4",
-    "quarantinedAt": "2026-07-05"
+    "mpn": "Z790 AORUS ELITE AX DDR4"
   },
   {
     "id": 20025,
@@ -1027,8 +1023,7 @@ export default [
       }
     },
     "value": 100,
-    "bench": 61,
-    "quarantinedAt": "2026-05-23"
+    "bench": 61
   },
   {
     "id": 20028,
@@ -1326,7 +1321,6 @@ export default [
     "bench": 100,
     "upc": "00824142386569",
     "mpn": "Z890-S WIFI",
-    "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
   {
@@ -1487,7 +1481,6 @@ export default [
       }
     },
     "value": 56,
-    "quarantinedAt": "2026-06-03",
     "bench": 66
   },
   {
@@ -3600,8 +3593,7 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 7",
     "value": 44,
-    "bench": 87,
-    "quarantinedAt": "2026-07-05"
+    "bench": 87
   },
   {
     "id": 20095,
@@ -3914,8 +3906,7 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 54,
-    "bench": 72,
-    "quarantinedAt": "2026-07-01"
+    "bench": 72
   },
   {
     "id": 20102,
@@ -4503,8 +4494,7 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 47,
-    "bench": 77,
-    "quarantinedAt": "2026-07-05"
+    "bench": 77
   },
   {
     "id": 20117,
@@ -5421,8 +5411,7 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 17,
-    "bench": 86,
-    "quarantinedAt": "2026-06-29"
+    "bench": 86
   },
   {
     "id": 20140,
@@ -6515,8 +6504,7 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 5",
     "value": 14,
-    "bench": 76,
-    "quarantinedAt": "2026-07-05"
+    "bench": 76
   },
   {
     "id": 20167,
@@ -9572,8 +9560,7 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 81,
-    "bench": 71,
-    "quarantinedAt": "2026-07-01"
+    "bench": 71
   },
   {
     "id": 20252,
@@ -10859,7 +10846,6 @@ export default [
     "wifi": "WiFi",
     "value": 40,
     "bench": 72,
-    "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
   {
@@ -11812,8 +11798,7 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 7",
     "value": 1,
-    "bench": 95,
-    "quarantinedAt": "2026-07-01"
+    "bench": 95
   },
   {
     "id": 20311,
@@ -12186,8 +12171,7 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 31,
-    "bench": 80,
-    "quarantinedAt": "2026-07-05"
+    "bench": 80
   },
   {
     "id": 20320,
@@ -13240,8 +13224,7 @@ export default [
     "wifi": "WiFi 7",
     "ff": "ATX",
     "value": 17,
-    "bench": 88,
-    "quarantinedAt": "2026-07-05"
+    "bench": 88
   },
   {
     "id": 20349,
@@ -13945,7 +13928,6 @@ export default [
     "wifi": "WiFi",
     "value": 39,
     "bench": 78,
-    "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
   {
@@ -14588,8 +14570,7 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 64,
-    "bench": 84,
-    "quarantinedAt": "2026-07-01"
+    "bench": 84
   },
   {
     "id": 20385,
@@ -14818,8 +14799,7 @@ export default [
     "wifi": "WiFi 7",
     "ff": "mATX",
     "value": 22,
-    "bench": 90,
-    "quarantinedAt": "2026-06-28"
+    "bench": 90
   },
   {
     "id": 20391,
@@ -17277,8 +17257,7 @@ export default [
     "sata": 4,
     "ff": "Micro ATX",
     "bench": 77,
-    "wifi": "WiFi 7",
-    "quarantinedAt": "2026-07-01"
+    "wifi": "WiFi 7"
   },
   {
     "id": 20493,
@@ -17868,8 +17847,7 @@ export default [
     "socket": "LGA1700",
     "ff": "mATX",
     "memType": "DDR5",
-    "wifi": "WiFi",
-    "quarantinedAt": "2026-07-05"
+    "wifi": "WiFi"
   },
   {
     "id": 100387,

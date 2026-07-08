@@ -41,8 +41,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DTKQ5P7B?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "quarantinedAt": "2026-07-06"
+    }
   },
   {
     "id": 99105,
@@ -63,8 +62,7 @@ export default [
         "url": "https://www.amazon.com/dp/B07BFS3G7P?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "quarantinedAt": "2026-07-06"
+    }
   },
   {
     "id": 99106,
@@ -85,8 +83,7 @@ export default [
         "url": "https://www.amazon.com/dp/B07Q6B5YL5?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "quarantinedAt": "2026-06-01"
+    }
   },
   {
     "id": 99107,
@@ -107,8 +104,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DN318QCW?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "quarantinedAt": "2026-06-29"
+    }
   },
   {
     "id": 99108,
@@ -149,8 +145,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BB2N69J8?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "quarantinedAt": "2026-07-06"
+    }
   },
   {
     "id": 99110,
@@ -192,8 +187,7 @@ export default [
         "url": "https://www.amazon.com/dp/B085WWWH3C?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "quarantinedAt": "2026-07-06"
+    }
   },
   {
     "id": 99112,
@@ -213,7 +207,6 @@ export default [
         "url": "https://www.amazon.com/dp/B07BFRVMMN?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "quarantinedAt": "2026-07-06"
+    }
   }
 ];

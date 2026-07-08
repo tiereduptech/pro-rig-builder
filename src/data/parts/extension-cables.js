@@ -396,8 +396,7 @@ export default [
         "inStock": true
       }
     },
-    "cableType": "12VHPWR",
-    "quarantinedAt": "2026-07-06"
+    "cableType": "12VHPWR"
   },
   {
     "id": 100127,

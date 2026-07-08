@@ -57,8 +57,7 @@ export default [
         "url": "https://www.amazon.com/dp/B07CRG94G3?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "quarantinedAt": "2026-07-06"
+    }
   },
   {
     "id": 99501,

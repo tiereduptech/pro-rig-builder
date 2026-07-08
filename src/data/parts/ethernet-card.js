@@ -55,8 +55,7 @@ export default [
     "connector": "RJ45",
     "wol": true,
     "vlan": false,
-    "pxe": false,
-    "quarantinedAt": "2026-07-06"
+    "pxe": false
   },
   {
     "id": 99102,
@@ -84,8 +83,7 @@ export default [
     "wol": true,
     "vlan": true,
     "pxe": true,
-    "connector": "RJ45",
-    "quarantinedAt": "2026-07-06"
+    "connector": "RJ45"
   },
   {
     "id": 99103,
@@ -113,8 +111,7 @@ export default [
     "connector": "SFP+",
     "wol": true,
     "vlan": true,
-    "pxe": true,
-    "quarantinedAt": "2026-07-06"
+    "pxe": true
   },
   {
     "id": 99104,

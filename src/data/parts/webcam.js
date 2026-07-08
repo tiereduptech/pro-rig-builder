@@ -26,8 +26,7 @@ export default [
         }
       }
     },
-    "bench": 99,
-    "quarantinedAt": "2026-07-06"
+    "bench": 99
   },
   {
     "id": 98001,
@@ -51,8 +50,7 @@ export default [
         "inStock": true
       }
     },
-    "bench": 86,
-    "quarantinedAt": "2026-07-06"
+    "bench": 86
   },
   {
     "id": 98002,
@@ -903,8 +901,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.653Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-06"
+    "source": "amazon-discovery"
   },
   {
     "id": 101842,

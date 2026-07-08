@@ -2773,8 +2773,7 @@ export default [
     "cuda": 4352,
     "bench": 61,
     "baseClock": 2310,
-    "boostClock": 2535,
-    "quarantinedAt": "2026-07-05"
+    "boostClock": 2535
   },
   {
     "id": 30086,
@@ -3455,8 +3454,7 @@ export default [
     "boostClock": 1777,
     "pcie": "4.0 x16",
     "slots": 2.5,
-    "memType": "GDDR6",
-    "quarantinedAt": "2026-05-29"
+    "memType": "GDDR6"
   },
   {
     "id": 30108,
@@ -3625,8 +3623,7 @@ export default [
     "boostClock": 2572,
     "pcie": "5.0 x8",
     "slots": 2.5,
-    "memType": "GDDR7",
-    "quarantinedAt": "2026-06-29"
+    "memType": "GDDR7"
   },
   {
     "id": 30112,
@@ -3757,7 +3754,6 @@ export default [
     "boostClock": 2617,
     "pcie": "5.0 x16",
     "slots": 3,
-    "quarantinedAt": "2026-05-03",
     "memType": "GDDR7"
   },
   {
@@ -3829,8 +3825,7 @@ export default [
     "length": 260,
     "bench": 61,
     "pcie": "5.0 x16",
-    "memType": "GDDR7",
-    "quarantinedAt": "2026-05-29"
+    "memType": "GDDR7"
   },
   {
     "id": 30117,
@@ -4769,8 +4764,7 @@ export default [
     "boostClock": 2535,
     "pcie": "4.0 x8",
     "slots": 2.5,
-    "memType": "GDDR6",
-    "quarantinedAt": "2026-07-03"
+    "memType": "GDDR6"
   },
   {
     "id": 30140,
@@ -5773,8 +5767,7 @@ export default [
     "boostClock": 2610,
     "pcie": "4.0 x16",
     "slots": 2.5,
-    "memType": "GDDR6X",
-    "quarantinedAt": "2026-07-01"
+    "memType": "GDDR6X"
   },
   {
     "id": 30167,
@@ -6224,8 +6217,7 @@ export default [
     "baseClock": 1700,
     "boostClock": 2544,
     "pcie": "4.0 x16",
-    "memType": "GDDR6X",
-    "quarantinedAt": "2026-05-29"
+    "memType": "GDDR6X"
   },
   {
     "id": 30178,
@@ -11511,8 +11503,7 @@ export default [
     "boostClock": 1860,
     "pcie": "4.0 x16",
     "slots": 2.5,
-    "memType": "GDDR6X",
-    "quarantinedAt": "2026-07-05"
+    "memType": "GDDR6X"
   },
   {
     "id": 30331,
@@ -12140,8 +12131,7 @@ export default [
     "baseClock": 1605,
     "boostClock": 1770,
     "pcie": "3.0 x16",
-    "memType": "GDDR6",
-    "quarantinedAt": "2026-07-01"
+    "memType": "GDDR6"
   },
   {
     "id": 30355,
@@ -12960,8 +12950,7 @@ export default [
     "source": "amazon-discovery",
     "memType": "GDDR7",
     "bench": 100,
-    "slots": 3.6,
-    "quarantinedAt": "2026-05-29"
+    "slots": 3.6
   },
   {
     "id": 100394,
@@ -13164,8 +13153,7 @@ export default [
     "addedAt": "2026-05-15T13:17:14.412Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 96,
-    "quarantinedAt": "2026-07-05"
+    "bench": 96
   },
   {
     "id": 100403,
@@ -13235,8 +13223,7 @@ export default [
     "source": "amazon-discovery",
     "memType": "GDDR7",
     "bench": 75,
-    "slots": 2.5,
-    "quarantinedAt": "2026-05-29"
+    "slots": 2.5
   },
   {
     "id": 100406,
@@ -13481,8 +13468,7 @@ export default [
     "source": "amazon-discovery",
     "memType": "GDDR7",
     "bench": 56,
-    "slots": 3.1,
-    "quarantinedAt": "2026-05-29"
+    "slots": 3.1
   },
   {
     "id": 100417,
@@ -13641,8 +13627,7 @@ export default [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6X",
-    "bench": 85,
-    "quarantinedAt": "2026-07-01"
+    "bench": 85
   },
   {
     "id": 100424,
@@ -14528,8 +14513,7 @@ export default [
     "source": "amazon-discovery",
     "vram": 6,
     "memType": "GDDR6",
-    "bench": 34,
-    "quarantinedAt": "2026-07-01"
+    "bench": 34
   },
   {
     "id": 100663,
@@ -14617,8 +14601,7 @@ export default [
     "addedAt": "2026-05-15T14:34:31.773Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 34,
-    "quarantinedAt": "2026-07-05"
+    "bench": 34
   },
   {
     "id": 100667,
@@ -14769,8 +14752,7 @@ export default [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 44,
-    "quarantinedAt": "2026-07-05"
+    "bench": 44
   },
   {
     "id": 100674,
@@ -15547,8 +15529,7 @@ export default [
     "vram": 8,
     "memType": "GDDR6",
     "bench": 52,
-    "slots": 2,
-    "quarantinedAt": "2026-07-01"
+    "slots": 2
   },
   {
     "id": 100709,
@@ -15615,8 +15596,7 @@ export default [
     "vram": 8,
     "memType": "GDDR6",
     "bench": 52,
-    "slots": 2.5,
-    "quarantinedAt": "2026-05-29"
+    "slots": 2.5
   },
   {
     "id": 100712,
@@ -15663,8 +15643,7 @@ export default [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6X",
-    "bench": 92,
-    "quarantinedAt": "2026-05-29"
+    "bench": 92
   },
   {
     "id": 100714,
@@ -15873,8 +15852,7 @@ export default [
     "addedAt": "2026-05-15T14:34:31.776Z",
     "source": "amazon-discovery",
     "vram": 2,
-    "memType": "GDDR5",
-    "quarantinedAt": "2026-05-29"
+    "memType": "GDDR5"
   },
   {
     "id": 100723,

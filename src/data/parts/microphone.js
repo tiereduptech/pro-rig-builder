@@ -46,8 +46,7 @@ export default [
       }
     },
     "sampleRate": 96,
-    "bench": 83,
-    "quarantinedAt": "2026-07-06"
+    "bench": 83
   },
   {
     "id": 97502,
@@ -69,8 +68,7 @@ export default [
       }
     },
     "sampleRate": 48,
-    "bench": 75,
-    "quarantinedAt": "2026-07-06"
+    "bench": 75
   },
   {
     "id": 97503,
@@ -94,8 +92,7 @@ export default [
       }
     },
     "sampleRate": 48,
-    "bench": 74,
-    "quarantinedAt": "2026-07-06"
+    "bench": 74
   },
   {
     "id": 100065,
@@ -179,8 +176,7 @@ export default [
     "pattern": "Cardioid",
     "micType": "XLR",
     "sampleRate": 0,
-    "bench": 98,
-    "quarantinedAt": "2026-07-06"
+    "bench": 98
   },
   {
     "id": 100069,
@@ -2050,8 +2046,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.641Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-06"
+    "source": "amazon-discovery"
   },
   {
     "id": 101777,
@@ -2191,8 +2186,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.642Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-06"
+    "source": "amazon-discovery"
   },
   {
     "id": 101784,
@@ -2722,8 +2716,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.648Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-06"
+    "source": "amazon-discovery"
   },
   {
     "id": 101811,
@@ -2998,8 +2991,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.650Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-06"
+    "source": "amazon-discovery"
   },
   {
     "id": 101825,
@@ -3019,8 +3011,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.651Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-06"
+    "source": "amazon-discovery"
   },
   {
     "id": 101826,
@@ -3040,8 +3031,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.651Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-06"
+    "source": "amazon-discovery"
   },
   {
     "id": 101827,

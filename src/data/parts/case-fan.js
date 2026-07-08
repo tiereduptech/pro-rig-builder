@@ -1226,8 +1226,7 @@ export default [
     "pack": 3,
     "bench": 83,
     "mpn": "ACFAN00333A",
-    "fanSize": 120,
-    "quarantinedAt": "2026-07-04"
+    "fanSize": 120
   },
   {
     "id": 85036,
@@ -3425,8 +3424,7 @@ export default [
     "pack": 3,
     "bench": 81,
     "mpn": "ACFAN00326A",
-    "fanSize": 120,
-    "quarantinedAt": "2026-07-04"
+    "fanSize": 120
   },
   {
     "id": 85094,
@@ -3662,8 +3660,7 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 84,
-    "mpn": "12RSLIN3B",
-    "quarantinedAt": "2026-06-28"
+    "mpn": "12RSLIN3B"
   },
   {
     "id": 85100,
@@ -4941,8 +4938,7 @@ export default [
     "pack": 1,
     "bench": 78,
     "mpn": "ACFAN00331A",
-    "fanSize": 120,
-    "quarantinedAt": "2026-07-04"
+    "fanSize": 120
   },
   {
     "id": 85134,
@@ -6300,8 +6296,7 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 64,
-    "fanSize": 120,
-    "quarantinedAt": "2026-07-04"
+    "fanSize": 120
   },
   {
     "id": 85171,
@@ -7211,8 +7206,7 @@ export default [
     "pwm": true,
     "rgb": false,
     "pack": 1,
-    "bench": 66,
-    "quarantinedAt": "2026-06-01"
+    "bench": 66
   },
   {
     "id": 85196,
@@ -7939,8 +7933,7 @@ export default [
     "rgbType": "RGB",
     "pack": 2,
     "bench": 71,
-    "fanSize": 140,
-    "quarantinedAt": "2026-06-28"
+    "fanSize": 140
   },
   {
     "id": 85216,
@@ -8363,7 +8356,6 @@ export default [
     "value": 4,
     "bench": 73,
     "pack": 3,
-    "quarantinedAt": "2026-04-28",
     "fanSize": 140
   },
   {
@@ -9066,8 +9058,7 @@ export default [
     "color": "Black",
     "bench": 50,
     "rgb": false,
-    "pack": 1,
-    "quarantinedAt": "2026-07-01"
+    "pack": 1
   },
   {
     "id": 85248,

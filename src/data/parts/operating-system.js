@@ -46,8 +46,7 @@ export default [
         "url": "https://www.amazon.com/dp/B09V6R9QZZ?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "quarantinedAt": "2026-07-06"
+    }
   },
   {
     "id": 99005,
@@ -70,8 +69,7 @@ export default [
         "url": "https://www.amazon.com/dp/B09MYJ1R6L?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "quarantinedAt": "2026-07-06"
+    }
   },
   {
     "id": 99006,
@@ -94,7 +92,6 @@ export default [
         "url": "https://www.amazon.com/dp/B09MYBD79G?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "quarantinedAt": "2026-07-06"
+    }
   }
 ];

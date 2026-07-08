@@ -18,8 +18,7 @@ export default [
         "inStock": true
       }
     },
-    "storageType": "DVD Writer",
-    "quarantinedAt": "2026-07-06"
+    "storageType": "DVD Writer"
   },
   {
     "id": 99607,
@@ -124,8 +123,7 @@ export default [
         "url": "https://www.amazon.com/dp/B01A27IUUM?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "quarantinedAt": "2026-07-06"
+    }
   },
   {
     "id": 99612,

@@ -1672,8 +1672,7 @@ export default [
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
-    "curved": true,
-    "quarantinedAt": "2026-06-04"
+    "curved": true
   },
   {
     "id": 90048,
@@ -1745,8 +1744,7 @@ export default [
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
-    "curved": true,
-    "quarantinedAt": "2026-07-04"
+    "curved": true
   },
   {
     "id": 90050,
@@ -2373,8 +2371,7 @@ export default [
     "bench": 91,
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p",
-    "quarantinedAt": "2026-07-04"
+    "resolution": "1440p"
   },
   {
     "id": 90067,
@@ -2850,7 +2847,6 @@ export default [
     "bench": 63,
     "sync": "FreeSync",
     "ports": "HDMI 2.1, DisplayPort",
-    "quarantinedAt": "2026-06-01",
     "resolution": "1440p",
     "curved": true
   },
@@ -12199,7 +12195,6 @@ export default [
     "resolution": "4K",
     "refresh": 160,
     "panel": "IPS",
-    "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
   {
@@ -12757,7 +12752,6 @@ export default [
     "refresh": 180,
     "panel": "IPS",
     "screenSize": 27,
-    "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
   {
@@ -13696,8 +13690,7 @@ export default [
     "resolution": "1440p",
     "refresh": 175,
     "panel": "OLED",
-    "curved": true,
-    "quarantinedAt": "2026-07-04"
+    "curved": true
   },
   {
     "id": 101061,
@@ -14433,8 +14426,7 @@ export default [
     "source": "amazon-discovery",
     "resolution": "1440p",
     "refresh": 280,
-    "panel": "OLED",
-    "quarantinedAt": "2026-07-01"
+    "panel": "OLED"
   },
   {
     "id": 101092,
@@ -14915,8 +14907,7 @@ export default [
     "resolution": "1440p",
     "refresh": 200,
     "panel": "IPS",
-    "screenSize": 27,
-    "quarantinedAt": "2026-06-01"
+    "screenSize": 27
   },
   {
     "id": 101112,
@@ -15079,7 +15070,6 @@ export default [
     "screenSize": 32,
     "resolution": "4K",
     "refresh": 165,
-    "panel": "OLED",
-    "quarantinedAt": "2026-07-01"
+    "panel": "OLED"
   }
 ];

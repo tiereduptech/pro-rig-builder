@@ -65,8 +65,7 @@ export default [
         "inStock": true
       }
     },
-    "ff": "Compact",
-    "quarantinedAt": "2026-07-06"
+    "ff": "Compact"
   },
   {
     "id": 99702,
@@ -125,8 +124,7 @@ export default [
         "url": "https://www.amazon.com/dp/B073Q48YGF?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "quarantinedAt": "2026-07-06"
+    }
   },
   {
     "id": 99705,

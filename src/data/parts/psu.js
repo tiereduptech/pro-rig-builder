@@ -1385,8 +1385,7 @@ export default [
     "atx3": true,
     "fanSize": 135,
     "rgb": false,
-    "fans": 1,
-    "quarantinedAt": "2026-07-01"
+    "fans": 1
   },
   {
     "id": 60044,
@@ -7225,8 +7224,7 @@ export default [
     "eff": "80+ Platinum",
     "modular": "Full",
     "addedAt": "2026-05-15T13:17:14.417Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-06-29"
+    "source": "amazon-discovery"
   },
   {
     "id": 100488,
@@ -8499,8 +8497,7 @@ export default [
     "eff": "80+ Titanium",
     "modular": "Full",
     "ff": "SFX-L",
-    "atx3": true,
-    "quarantinedAt": "2026-05-29"
+    "atx3": true
   },
   {
     "id": 101201,
@@ -8897,8 +8894,7 @@ export default [
     "eff": "80+ Titanium",
     "modular": "Full",
     "ff": "SFX-L",
-    "atx3": true,
-    "quarantinedAt": "2026-06-07"
+    "atx3": true
   },
   {
     "id": 101349,
@@ -9295,8 +9291,7 @@ export default [
     "eff": "80+ Titanium",
     "modular": "Full",
     "ff": "SFX-L",
-    "atx3": true,
-    "quarantinedAt": "2026-05-29"
+    "atx3": true
   },
   {
     "id": 101883,

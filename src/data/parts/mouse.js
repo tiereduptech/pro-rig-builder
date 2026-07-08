@@ -52,8 +52,7 @@ export default [
       }
     },
     "value": 30,
-    "bench": 92,
-    "quarantinedAt": "2026-07-06"
+    "bench": 92
   },
   {
     "id": 96004,
@@ -82,8 +81,7 @@ export default [
       }
     },
     "value": 0,
-    "bench": 88,
-    "quarantinedAt": "2026-07-06"
+    "bench": 88
   },
   {
     "id": 96006,
@@ -112,8 +110,7 @@ export default [
       }
     },
     "value": 12,
-    "bench": 85,
-    "quarantinedAt": "2026-07-06"
+    "bench": 85
   },
   {
     "id": 96007,
@@ -142,8 +139,7 @@ export default [
       }
     },
     "value": 7,
-    "bench": 81,
-    "quarantinedAt": "2026-07-06"
+    "bench": 81
   },
   {
     "id": 96008,
@@ -167,8 +163,7 @@ export default [
       }
     },
     "value": 3,
-    "bench": 53,
-    "quarantinedAt": "2026-07-06"
+    "bench": 53
   },
   {
     "id": 96009,
@@ -221,8 +216,7 @@ export default [
     },
     "value": 11,
     "mouseType": "USB",
-    "bench": 100,
-    "quarantinedAt": "2026-07-06"
+    "bench": 100
   },
   {
     "id": 96011,
@@ -297,8 +291,7 @@ export default [
     },
     "value": 70,
     "mouseType": "Wireless",
-    "bench": 100,
-    "quarantinedAt": "2026-07-06"
+    "bench": 100
   },
   {
     "id": 96014,
@@ -1030,8 +1023,7 @@ export default [
     "weight": 82,
     "mouseType": "Wireless",
     "dpi": 30000,
-    "bench": 81,
-    "quarantinedAt": "2026-07-06"
+    "bench": 81
   },
   {
     "id": 100004,
@@ -2897,8 +2889,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.610Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-06"
+    "source": "amazon-discovery"
   },
   {
     "id": 101464,
@@ -2948,8 +2939,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.610Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-06"
+    "source": "amazon-discovery"
   },
   {
     "id": 101467,

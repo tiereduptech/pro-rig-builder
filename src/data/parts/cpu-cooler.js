@@ -1563,8 +1563,7 @@ export default [
     "cfm": 180,
     "mpn": "L-P360L-AM3M-G0W",
     "radiator": 360,
-    "fanCount": 3,
-    "quarantinedAt": "2026-07-04"
+    "fanCount": 3
   },
   {
     "id": 80041,
@@ -4620,8 +4619,7 @@ export default [
     "cfm": 120,
     "mpn": "CW-9061031-WW",
     "radiator": 240,
-    "fanCount": 2,
-    "quarantinedAt": "2026-07-04"
+    "fanCount": 2
   },
   {
     "id": 80113,
@@ -6028,8 +6026,7 @@ export default [
     "cfm": 130,
     "mpn": "ACFRE00186A",
     "radiator": 240,
-    "fanCount": 2,
-    "quarantinedAt": "2026-07-04"
+    "fanCount": 2
   },
   {
     "id": 80147,
@@ -6622,8 +6619,7 @@ export default [
     "bench": 87,
     "fanSize": 120,
     "height": 52,
-    "cfm": 180,
-    "quarantinedAt": "2026-05-22"
+    "cfm": 180
   },
   {
     "id": 80161,
@@ -7231,8 +7227,7 @@ export default [
     "height": 52,
     "cfm": 120,
     "radiator": 240,
-    "fanCount": 2,
-    "quarantinedAt": "2026-07-04"
+    "fanCount": 2
   },
   {
     "id": 80175,
@@ -8268,8 +8263,7 @@ export default [
     "cfm": 120,
     "radiator": 240,
     "fanCount": 2,
-    "amazonRemovedAnomaly": "2026-06-28",
-    "quarantinedAt": "2026-06-28"
+    "amazonRemovedAnomaly": "2026-06-28"
   },
   {
     "id": 80200,
@@ -8402,8 +8396,7 @@ export default [
     "upc": "04710562748482",
     "mpn": "HyperFlow Silent 360 Black",
     "radiator": 360,
-    "fanCount": 3,
-    "quarantinedAt": "2026-07-04"
+    "fanCount": 3
   },
   {
     "id": 80203,
@@ -10966,7 +10959,6 @@ export default [
     "mpn": "GA2T36B",
     "radiator": 360,
     "fanCount": 3,
-    "quarantinedAt": "2026-06-28",
     "neweggRemovedOutlier": "2026-06-28"
   },
   {
@@ -13882,8 +13874,7 @@ export default [
       "LGA1700"
     ],
     "airflow": 69.9,
-    "rpm": 1900,
-    "quarantinedAt": "2026-07-04"
+    "rpm": 1900
   },
   {
     "id": 100921,
@@ -15620,8 +15611,7 @@ export default [
     ],
     "airflow": 190,
     "noise": 38.5,
-    "rpm": 2500,
-    "quarantinedAt": "2026-07-04"
+    "rpm": 2500
   },
   {
     "id": 100982,
@@ -15739,8 +15729,7 @@ export default [
     ],
     "airflow": 84.2,
     "noise": 39.5,
-    "rpm": 2100,
-    "quarantinedAt": "2026-07-04"
+    "rpm": 2100
   },
   {
     "id": 100986,
@@ -16009,8 +15998,7 @@ export default [
     ],
     "airflow": 69,
     "noise": 27,
-    "rpm": 2150,
-    "quarantinedAt": "2026-07-04"
+    "rpm": 2150
   },
   {
     "id": 101226,
@@ -16244,8 +16232,7 @@ export default [
     ],
     "airflow": 70.4,
     "noise": 27,
-    "rpm": 1850,
-    "quarantinedAt": "2026-07-01"
+    "rpm": 1850
   },
   {
     "id": 101234,
@@ -17245,8 +17232,7 @@ export default [
     ],
     "airflow": 69,
     "noise": 27,
-    "rpm": 2150,
-    "quarantinedAt": "2026-07-04"
+    "rpm": 2150
   },
   {
     "id": 101374,
@@ -18420,8 +18406,7 @@ export default [
     ],
     "airflow": 69,
     "noise": 27,
-    "rpm": 2150,
-    "quarantinedAt": "2026-07-04"
+    "rpm": 2150
   },
   {
     "id": 101904,
