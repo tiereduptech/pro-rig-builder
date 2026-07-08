@@ -57,20 +57,6 @@ export default [
         "price": 343.79,
         "url": "https://www.amazon.com/dp/B0D6NN87T8?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16819113842",
-        "price": 499,
-        "saleprice": 389,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313764603694254374003&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-9-9000-series-ryzen-9-9900x-granite-ridge-socket-am5-desktop-cpu-processor%2Fp%2FN82E16819113842%3Fitem%3DN82E16819113842",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-842-02.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 1,
-        "migratedAt": "2026-06-30T08:56:49.570Z",
-        "migratedFrom": "9SIC3U3KN45550",
-        "staleSince": "2026-06-30T19:42:56.256Z"
       }
     },
     "igpu": true
