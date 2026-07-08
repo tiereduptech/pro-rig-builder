@@ -137,5 +137,7 @@ jobs:
           Regenerated $CHANGED files via .github/workflows/prerender.yml
           Triggered by: ${{ github.event_name }}"
 
-          git push origin main
+          # pull latest first - other robots may have pushed while we prerendered
+          git pull --rebase -X ours origin main || (git rebase --abort; git pull -X ours origin main)
+          git push origin main || (git pull --rebase -X ours origin main && git push origin main)
           echo "Pushed prerender update — Railway will redeploy automatically."
