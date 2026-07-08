@@ -5615,19 +5615,6 @@ export default [
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6504299&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6504299.p%3FskuId%3D6504299",
         "inStock": false
-      },
-      "newegg": {
-        "sku": "N82E16824276858",
-        "price": 323.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312380349496782041368&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fhp-e24mv-g4-23-8-full-hd%2Fp%2FN82E16824276858%3Fitem%3DN82E16824276858",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-276-858-S01.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "migratedAt": "2026-06-30T20:17:59.171Z",
-        "migratedFrom": "9SIAFJ8KDZ9910",
-        "staleSince": "2026-07-01T10:01:41.682Z"
       }
     },
     "screenSize": 23.8,
