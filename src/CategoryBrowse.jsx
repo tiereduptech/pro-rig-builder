@@ -155,9 +155,6 @@ export function CategoryBrowse({ sel, th, CATS, CAT, P, CatThumb }) {
         }}>
           What are you looking for?
         </h2>
-        <p style={{ fontFamily: "var(--ff)", fontSize: 11, color: "var(--dim)", marginTop: 4 }}>
-          📷 Hover any thumbnail to upload a custom image
-        </p>
       </div>
       <Section title="Core Components" cats={core} variant="core" />
       {peripherals.length > 0 && <Section title="Peripherals" cats={peripherals} variant="peripherals" />}
