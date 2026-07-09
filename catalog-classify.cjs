@@ -170,6 +170,22 @@ function notBuildableReason(title) {
     // so the drive-word-immediately-before-"heatsink for" phrasing is the tell.
     [/\b(?:ssd|m\.?2|nvme) heatsink for\b/, 'SSD heatsink (accessory)'],
     [/\b(?:m\.?2|nvme|ssd|hdd|sata|usb)\b[^,|]*\benclosure\b/, 'drive enclosure'],
+    // ── Hardened after the Jul-08 category-accuracy cleanup (dropped 83 cross-
+    // category rows). Each pattern rejects a product TYPE that kept landing in the
+    // wrong bucket via nightly ingests. Like the wiper-blade rule above, these run
+    // BEFORE categorize/detectBrand, so the wrong-category source query never gets
+    // to file them. Narrowed on purpose so they reject the STANDALONE accessory but
+    // not a real fan/cooler/mic/headset that merely mentions the part as a feature
+    // ("iCUE Link System Hub Kit", "Built-in Pop Filter", "Memory Foam Ear Pads").
+    // Every pattern verified 0-false-positive against the full live catalog and
+    // matches the exact rows the cleanup removed.
+    [/\bdistro[\s-]?plate\b/, 'distro plate (custom-loop accessory)'],
+    [/\b(?:control|system) hub\s*[-–]\s*(?:connect|digital|control|reduce|up to|rgb|argb|pwm|lighting)\b/, 'RGB/fan control hub (accessory)'],
+    [/\bssd (?:hard drive )?adapter\b|\b22\d0\s+to\s+2280\b/, 'SSD form-factor adapter (accessory)'],
+    [/\be-?gpu\b/, 'eGPU dock/enclosure (accessory)'],
+    [/\bwind\s?screen\b|\bfurry\b|\bdead\s?cat\b|\bpop (?:filter|guard) (?:for|compatible)\b/, 'mic pop filter/windscreen (accessory)'],
+    [/\bear\s?pads?(?:\s+cushions?)?\s+replacement\b|\breplacement\s+(?:ear\s?pads?|ear cushions?)\b/, 'replacement earpads (accessory)'],
+    [/\bmic(?:rophone)? replacement\b|\breplacement (?:lapel |boom |detachable )?mic(?:rophone)?\b|\bcable replacement\b/, 'replacement headset mic/cable (accessory)'],
   ];
   for (const [re, reason] of rules) if (re.test(t)) return reason;
   return null;
