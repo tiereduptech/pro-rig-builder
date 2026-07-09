@@ -161,7 +161,7 @@ function notBuildableReason(title) {
     // (notBuildableReason takes only the title and is brand-agnostic; apply and
     // verify both call it first, so the product-type verdict always wins.)
     [/\bwiper blade\b/, 'wiper blade (automotive)'],
-    [/\b(raised|stand) feet\b/, 'case feet/stand'],
+    [/\b(raised|stand|replacement) feet\b/, 'case feet/stand'],
     [/\b(side )?panel guide\b/i, 'case panel guide (accessory)'],
     [/\bmounting kit\b/, 'cooler mounting kit'],
     [/\b(cpu ?cooler|cooler|mount(?:ing)?) bracket\b/, 'cooler mount bracket'],
