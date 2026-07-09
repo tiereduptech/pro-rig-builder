@@ -15231,33 +15231,6 @@ export default [
     "rpm": 1850
   },
   {
-    "id": 100967,
-    "c": "CPUCooler",
-    "n": "ID-COOLING ID-KIT-AIO Univeral Mounting Kits for FROSTFLOW/AURAFLOW/ZOOMFLOW/PINKFLOW, Support Intel LGA1700/1851/1200; AMD AM5/AM4",
-    "b": "AMD",
-    "pr": 9.99,
-    "msrp": 9.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/71OYCOADm+L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CNVC9RXV",
-        "url": "https://www.amazon.com/dp/B0CNVC9RXV?tag=tiereduptech-20",
-        "price": 9.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.793Z",
-    "source": "amazon-discovery",
-    "coolerType": "AIO",
-    "bench": 26,
-    "sockets": [
-      "AM5",
-      "AM4",
-      "LGA1700"
-    ]
-  },
-  {
     "id": 100968,
     "c": "CPUCooler",
     "n": "ID-COOLING FX360 LCD White Premium 360mm AIO Liquid CPU Cooler with 1.48″ Full-Color LCD Display, 350W TDP, Intel LGA1851/1700 & AMD AM5/AM4 Support",

@@ -163,7 +163,7 @@ function notBuildableReason(title) {
     [/\bwiper blade\b/, 'wiper blade (automotive)'],
     [/\b(raised|stand|replacement) feet\b/, 'case feet/stand'],
     [/\b(side )?panel guide\b/i, 'case panel guide (accessory)'],
-    [/\bmounting kit\b/, 'cooler mounting kit'],
+    [/\bmounting kits?\b/, 'cooler mounting kit'],
     [/\b(cpu ?cooler|cooler|mount(?:ing)?) bracket\b/, 'cooler mount bracket'],
     // Bare SSD heatsink sold by itself: "<drive> Heatsink FOR <models>". Real
     // drives say "SSD WITH Heatsink" / "Heatsink Included" / "Without Heatsink",
