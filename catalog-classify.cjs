@@ -108,7 +108,8 @@ function detectCategory(cleanTitle) {
   if (/\b(ssd|nvme|hard drive|hard disk|hdd)\b/.test(t) && !/\b(cooler|case|fan|enclosure|heatsink)\b/.test(t)) return 'Storage';
   if (/\b(power supply|psu)\b/.test(t)
       || (/\b\d{3,4}\s*w(att)?\b/.test(t) && /\b(80\s*\+?\s*plus|80\+|gold|platinum|bronze|titanium|modular|atx\s*3)\b/.test(t))) return 'PSU';
-  if (/\b(pc case|computer case|mid.?tower|full.?tower|mini.?tower|chassis)\b/.test(t)) return 'Case';
+  if (/\b(pc case|computer case|mid.?tower|full.?tower|mini.?tower|chassis)\b/.test(t)
+      && !/\b(accessory|upgrade kit|replacement|guide|feet|lift stand|riser|vertical gpu)\b/i.test(t)) return 'Case';
   if (/\b(cpu cooler|aio|liquid cooler|air cooler|tower cooler|heatsink|liquid freezer)\b/.test(t)) return 'CPUCooler';
   return null;
 }
@@ -161,6 +162,7 @@ function notBuildableReason(title) {
     // verify both call it first, so the product-type verdict always wins.)
     [/\bwiper blade\b/, 'wiper blade (automotive)'],
     [/\b(raised|stand) feet\b/, 'case feet/stand'],
+    [/\b(side )?panel guide\b/i, 'case panel guide (accessory)'],
     [/\bmounting kit\b/, 'cooler mounting kit'],
     [/\b(cpu ?cooler|cooler|mount(?:ing)?) bracket\b/, 'cooler mount bracket'],
     // Bare SSD heatsink sold by itself: "<drive> Heatsink FOR <models>". Real
