@@ -2,6 +2,143 @@
 // One file per category so Vite can split parts data into per-category chunks.
 export default [
   {
+    "id": 100877,
+    "c": "CPUCooler",
+    "n": "KINGCOOL Iron Wind 120 ARGB CPU Air Cooler, 6 Heat Pipes & Dual Towers, Dual 120mm PWM Fans, 1800 RPM Speed, ARGB Lighting, PC Cooler for AMD AM4 AM5/ Intel LGA 1851/1700, Black",
+    "b": "AMD",
+    "pr": 24.99,
+    "msrp": 19.99,
+    "r": 4.3,
+    "img": "https://m.media-amazon.com/images/I/61rPsGHsTfL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FLTSXNY6",
+        "url": "https://www.amazon.com/dp/B0FLTSXNY6?tag=tiereduptech-20",
+        "price": 24.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.786Z",
+    "source": "amazon-discovery",
+    "rgb": true,
+    "coolerType": "Air",
+    "sockets": [
+      "AM4",
+      "AM5",
+      "LGA1851",
+      "LGA1700"
+    ]
+  },
+  {
+    "id": 100879,
+    "c": "CPUCooler",
+    "n": "Cooler Master 360L Core AIO CPU Liquid Cooler – 360mm Radiator, 3X ARGB PWM Fans, Patented Gen S Dual-Chamber Pump, Quiet Cooling & Easy Installation, AMD AM5/AM4 & Intel LGA 1851/1700, White",
+    "b": "Cooler Master",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/61PQ5Fegq5L._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0C4BQYN6Z",
+        "url": "https://www.amazon.com/dp/B0C4BQYN6Z?tag=tiereduptech-20",
+        "price": 58.89,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.788Z",
+    "source": "amazon-discovery",
+    "rgb": true,
+    "coolerType": "AIO",
+    "radSize": 360,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851",
+      "LGA1700"
+    ]
+  },
+  {
+    "id": 100880,
+    "c": "CPUCooler",
+    "n": "Cooler Master Atmos II 360 LCD AIO CPU Liquid Cooler – 360mm Radiator, Customizable LCD Display, 3X ARGB PWM Fans, Dual-Chamber Pump, Low Noise, AMD AM5/AM4 & Intel LGA 1851/1700, White",
+    "b": "Cooler Master",
+    "pr": 153.23,
+    "msrp": 153.23,
+    "r": 3.5,
+    "img": "https://m.media-amazon.com/images/I/6168BQQ-IaL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FPBQCLFQ",
+        "url": "https://www.amazon.com/dp/B0FPBQCLFQ?tag=tiereduptech-20",
+        "price": 121.37,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.788Z",
+    "source": "amazon-discovery",
+    "rgb": true,
+    "coolerType": "AIO",
+    "radSize": 360,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851",
+      "LGA1700"
+    ]
+  },
+  {
+    "id": 100881,
+    "c": "CPUCooler",
+    "n": "Cooler Master 360 Core II Liquid CPU AIO Cooler – 360mm Radiator, 3X ARGB PWM Fans, Infinity Mirror Dual-Chamber Pump, Low Noise Cooling & Easy Installation, AMD AM5/AM4 & Intel LGA 1851/1700, White",
+    "b": "Cooler Master",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/61nfIxa5lRL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DQ2N7YPK",
+        "url": "https://www.amazon.com/dp/B0DQ2N7YPK?tag=tiereduptech-20",
+        "price": 74.98,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.788Z",
+    "source": "amazon-discovery",
+    "rgb": true,
+    "coolerType": "AIO",
+    "radSize": 360,
+    "sockets": [
+      "AM5",
+      "AM4",
+      "LGA1851",
+      "LGA1700"
+    ]
+  },
+  {
+    "id": 101213,
+    "c": "CPUCooler",
+    "n": "Be Quiet BW028US 280 mm Pure Loop 3 Black CPU Liquid Cooler for Heavily Overclocked Systems & 2X Pure Wings 3 PWM High-Speed Fan",
+    "b": "be quiet!",
+    "pr": 110.23,
+    "msrp": 99.31,
+    "r": 4.9,
+    "img": "https://m.media-amazon.com/images/I/61dS2aWD+UL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0FNMP513T",
+        "url": "https://www.amazon.com/dp/B0FNMP513T?tag=tiereduptech-20",
+        "price": 110.23,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.664Z",
+    "source": "amazon-discovery",
+    "coolerType": "AIO",
+    "radSize": 280
+  },
+  {
     "id": 80000,
     "n": "Noctua NH-D15",
     "img": "https://m.media-amazon.com/images/I/81i9YOlnPEL._AC_SL300_.jpg",

@@ -8781,54 +8781,6 @@ export default [
     "quarantinedAt": "2026-06-28"
   },
   {
-    "id": 70176,
-    "n": "ATX PC Case 4 Slots Vertical GPU Kit (VG4v4) - Premium Gen 5 Riser Cable PCI-E 5.0 x16-200mm, PCIe 3.0/4.0 Compatible...",
-    "img": "https://m.media-amazon.com/images/I/71ZdAjFItGL._AC_SL1500_.jpg",
-    "c": "Case",
-    "b": "Lian Li",
-    "pr": 78.6,
-    "msrp": 78.6,
-    "r": 4.5,
-    "asin": "B0FR54VKJY",
-    "reviews": 124,
-    "deals": {
-      "amazon": {
-        "price": 76.99,
-        "url": "https://www.amazon.com/dp/B0FR54VKJY?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71pOsyzLsrL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/81KumJlsv1L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71sHaQj7tuL._AC_SL1500_.jpg"
-    ],
-    "upc": "840353052680",
-    "mpn": "VG4-5-V4W",
-    "ff": "ATX",
-    "tower": "Mid",
-    "value": 62,
-    "tg": false,
-    "rgb": false,
-    "usb_c": false,
-    "mobo": [
-      "ATX",
-      "mATX",
-      "ITX"
-    ],
-    "maxGPU": 380,
-    "maxCooler": 170,
-    "drive25": 2,
-    "drive35": 2,
-    "rads": [
-      360,
-      280,
-      240
-    ],
-    "color": "Black",
-    "bench": 72
-  },
-  {
     "id": 70177,
     "n": "BGA03 Midi Tower Side Panel Computer case Part",
     "img": "https://m.media-amazon.com/images/I/51ekiCAwJeL._AC_SL1500_.jpg",
@@ -16683,27 +16635,6 @@ export default [
     "rgb": true
   },
   {
-    "id": 100877,
-    "c": "Case",
-    "n": "KINGCOOL Iron Wind 120 ARGB CPU Air Cooler, 6 Heat Pipes & Dual Towers, Dual 120mm PWM Fans, 1800 RPM Speed, ARGB Lighting, PC Cooler for AMD AM4 AM5/ Intel LGA 1851/1700, Black",
-    "b": "AMD",
-    "pr": 24.99,
-    "msrp": 19.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/61rPsGHsTfL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FLTSXNY6",
-        "url": "https://www.amazon.com/dp/B0FLTSXNY6?tag=tiereduptech-20",
-        "price": 24.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.786Z",
-    "source": "amazon-discovery",
-    "rgb": true
-  },
-  {
     "id": 100878,
     "c": "Case",
     "n": "Antec Flux Pro Noctua Edition Ultra-Quiet PC Case (Black, Brown)",
@@ -16722,69 +16653,6 @@ export default [
     },
     "addedAt": "2026-05-15T14:34:31.787Z",
     "source": "amazon-discovery"
-  },
-  {
-    "id": 100879,
-    "c": "Case",
-    "n": "Cooler Master 360L Core AIO CPU Liquid Cooler – 360mm Radiator, 3X ARGB PWM Fans, Patented Gen S Dual-Chamber Pump, Quiet Cooling & Easy Installation, AMD AM5/AM4 & Intel LGA 1851/1700, White",
-    "b": "Cooler Master",
-    "pr": 59.99,
-    "msrp": 59.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/61PQ5Fegq5L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0C4BQYN6Z",
-        "url": "https://www.amazon.com/dp/B0C4BQYN6Z?tag=tiereduptech-20",
-        "price": 58.89,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.788Z",
-    "source": "amazon-discovery",
-    "rgb": true
-  },
-  {
-    "id": 100880,
-    "c": "Case",
-    "n": "Cooler Master Atmos II 360 LCD AIO CPU Liquid Cooler – 360mm Radiator, Customizable LCD Display, 3X ARGB PWM Fans, Dual-Chamber Pump, Low Noise, AMD AM5/AM4 & Intel LGA 1851/1700, White",
-    "b": "Cooler Master",
-    "pr": 153.23,
-    "msrp": 153.23,
-    "r": 3.5,
-    "img": "https://m.media-amazon.com/images/I/6168BQQ-IaL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FPBQCLFQ",
-        "url": "https://www.amazon.com/dp/B0FPBQCLFQ?tag=tiereduptech-20",
-        "price": 121.37,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.788Z",
-    "source": "amazon-discovery",
-    "rgb": true
-  },
-  {
-    "id": 100881,
-    "c": "Case",
-    "n": "Cooler Master 360 Core II Liquid CPU AIO Cooler – 360mm Radiator, 3X ARGB PWM Fans, Infinity Mirror Dual-Chamber Pump, Low Noise Cooling & Easy Installation, AMD AM5/AM4 & Intel LGA 1851/1700, White",
-    "b": "Cooler Master",
-    "pr": 99.99,
-    "msrp": 99.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/61nfIxa5lRL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DQ2N7YPK",
-        "url": "https://www.amazon.com/dp/B0DQ2N7YPK?tag=tiereduptech-20",
-        "price": 74.98,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.788Z",
-    "source": "amazon-discovery",
-    "rgb": true
   },
   {
     "id": 100882,
@@ -17281,48 +17149,6 @@ export default [
     ]
   },
   {
-    "id": 101213,
-    "c": "Case",
-    "n": "Be Quiet BW028US 280 mm Pure Loop 3 Black CPU Liquid Cooler for Heavily Overclocked Systems & 2X Pure Wings 3 PWM High-Speed Fan",
-    "b": "be quiet!",
-    "pr": 110.23,
-    "msrp": 99.31,
-    "r": 4.9,
-    "img": "https://m.media-amazon.com/images/I/61dS2aWD+UL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FNMP513T",
-        "url": "https://www.amazon.com/dp/B0FNMP513T?tag=tiereduptech-20",
-        "price": 110.23,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.664Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101214,
-    "c": "Case",
-    "n": "Side Panel Guide Replacement Compatible with Hyte Y60 and Y70 Guides Panels into Place, Easy Installation, PC Case Upgrade Accessory 2 Pack",
-    "b": "Hyte",
-    "pr": 20,
-    "msrp": 20,
-    "r": null,
-    "img": "https://m.media-amazon.com/images/I/61vt1TvC1XL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GV829Q58",
-        "url": "https://www.amazon.com/dp/B0GV829Q58?tag=tiereduptech-20",
-        "price": 20,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.664Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-07",
-    "needsReview": true
-  },
-  {
     "id": 101215,
     "c": "Case",
     "n": "Lian Li O11 Vision Compact Black-Steel-Tempered Glass ATX Mid Tower Computer Case-Back Connect Support-O11VPX",
@@ -17435,49 +17261,6 @@ export default [
     "rgb": true
   },
   {
-    "id": 101219,
-    "c": "Case",
-    "n": "Lian Li ATX PC Case 4 Slots Vertical GPU Kit (VG4v4) - Premium Gen 5 Riser Cable PCI-E 5.0 x16-200mm, PCIe 3.0/4.0 Compatible, Adjustable Position - Fits Most PC Cases (VG4v4 Black)",
-    "b": "Lian Li",
-    "pr": 76.99,
-    "msrp": 76.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/71CS1htp7bL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FR4TC1M7",
-        "url": "https://www.amazon.com/dp/B0FR4TC1M7?tag=tiereduptech-20",
-        "price": 76.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.664Z",
-    "source": "amazon-discovery",
-    "mobo": [
-      "ATX"
-    ]
-  },
-  {
-    "id": 101220,
-    "c": "Case",
-    "n": "Desktop Raised Feet for Lian Li O11 Dynamic Evo with Front/Side IO Panel(USB), Enhance Airflow & Easy Bottom Cleaning, Sturdy Case Lift Stand for Improved Cooling (Black, + 40mm)",
-    "b": "Lian Li",
-    "pr": 25.98,
-    "msrp": 25.98,
-    "r": null,
-    "img": "https://m.media-amazon.com/images/I/71CT5APhDEL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FCWVNHBM",
-        "url": "https://www.amazon.com/dp/B0FCWVNHBM?tag=tiereduptech-20",
-        "price": 25.98,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.664Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101359,
     "c": "Case",
     "n": "COOLER MASTER MASTERBOX Elite 500 Cabinet with Side ODD Glass – E500-KG5N-S00 - COOLER MASTER",
@@ -17515,48 +17298,6 @@ export default [
       "ATX",
       "mATX"
     ]
-  },
-  {
-    "id": 101361,
-    "c": "Case",
-    "n": "Be Quiet BW028US 280 mm Pure Loop 3 Black CPU Liquid Cooler for Heavily Overclocked Systems & 2X Pure Wings 3 PWM High-Speed Fan",
-    "b": "be quiet!",
-    "pr": 110.23,
-    "msrp": 99.31,
-    "r": 4.9,
-    "img": "https://m.media-amazon.com/images/I/61dS2aWD+UL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FNMP513T",
-        "url": "https://www.amazon.com/dp/B0FNMP513T?tag=tiereduptech-20",
-        "price": 110.23,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.986Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101362,
-    "c": "Case",
-    "n": "Side Panel Guide Replacement Compatible with Hyte Y60 and Y70 Guides Panels into Place, Easy Installation, PC Case Upgrade Accessory 2 Pack",
-    "b": "Hyte",
-    "pr": 20,
-    "msrp": 20,
-    "r": null,
-    "img": "https://m.media-amazon.com/images/I/61vt1TvC1XL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GV829Q58",
-        "url": "https://www.amazon.com/dp/B0GV829Q58?tag=tiereduptech-20",
-        "price": 20,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.987Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-07",
-    "needsReview": true
   },
   {
     "id": 101363,
@@ -17671,49 +17412,6 @@ export default [
     "rgb": true
   },
   {
-    "id": 101367,
-    "c": "Case",
-    "n": "Lian Li ATX PC Case 4 Slots Vertical GPU Kit (VG4v4) - Premium Gen 5 Riser Cable PCI-E 5.0 x16-200mm, PCIe 3.0/4.0 Compatible, Adjustable Position - Fits Most PC Cases (VG4v4 Black)",
-    "b": "Lian Li",
-    "pr": 76.99,
-    "msrp": 76.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/71CS1htp7bL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FR4TC1M7",
-        "url": "https://www.amazon.com/dp/B0FR4TC1M7?tag=tiereduptech-20",
-        "price": 76.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.987Z",
-    "source": "amazon-discovery",
-    "mobo": [
-      "ATX"
-    ]
-  },
-  {
-    "id": 101368,
-    "c": "Case",
-    "n": "Desktop Raised Feet for Lian Li O11 Dynamic Evo with Front/Side IO Panel(USB), Enhance Airflow & Easy Bottom Cleaning, Sturdy Case Lift Stand for Improved Cooling (Black, + 40mm)",
-    "b": "Lian Li",
-    "pr": 25.98,
-    "msrp": 25.98,
-    "r": null,
-    "img": "https://m.media-amazon.com/images/I/71CT5APhDEL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FCWVNHBM",
-        "url": "https://www.amazon.com/dp/B0FCWVNHBM?tag=tiereduptech-20",
-        "price": 25.98,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.987Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101891,
     "c": "Case",
     "n": "COOLER MASTER MASTERBOX Elite 500 Cabinet with Side ODD Glass – E500-KG5N-S00 - COOLER MASTER",
@@ -17751,48 +17449,6 @@ export default [
       "ATX",
       "mATX"
     ]
-  },
-  {
-    "id": 101893,
-    "c": "Case",
-    "n": "Be Quiet BW028US 280 mm Pure Loop 3 Black CPU Liquid Cooler for Heavily Overclocked Systems & 2X Pure Wings 3 PWM High-Speed Fan",
-    "b": "be quiet!",
-    "pr": 110.23,
-    "msrp": 99.31,
-    "r": 4.9,
-    "img": "https://m.media-amazon.com/images/I/61dS2aWD+UL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FNMP513T",
-        "url": "https://www.amazon.com/dp/B0FNMP513T?tag=tiereduptech-20",
-        "price": 110.23,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.668Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101894,
-    "c": "Case",
-    "n": "Side Panel Guide Replacement Compatible with Hyte Y60 and Y70 Guides Panels into Place, Easy Installation, PC Case Upgrade Accessory 2 Pack",
-    "b": "Hyte",
-    "pr": 20,
-    "msrp": 20,
-    "r": null,
-    "img": "https://m.media-amazon.com/images/I/61vt1TvC1XL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GV829Q58",
-        "url": "https://www.amazon.com/dp/B0GV829Q58?tag=tiereduptech-20",
-        "price": 20,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.669Z",
-    "source": "amazon-discovery",
-    "quarantinedAt": "2026-07-07",
-    "needsReview": true
   },
   {
     "id": 101895,
@@ -17905,48 +17561,5 @@ export default [
     ],
     "tg": true,
     "rgb": true
-  },
-  {
-    "id": 101899,
-    "c": "Case",
-    "n": "Lian Li ATX PC Case 4 Slots Vertical GPU Kit (VG4v4) - Premium Gen 5 Riser Cable PCI-E 5.0 x16-200mm, PCIe 3.0/4.0 Compatible, Adjustable Position - Fits Most PC Cases (VG4v4 Black)",
-    "b": "Lian Li",
-    "pr": 76.99,
-    "msrp": 76.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/71CS1htp7bL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FR4TC1M7",
-        "url": "https://www.amazon.com/dp/B0FR4TC1M7?tag=tiereduptech-20",
-        "price": 76.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.669Z",
-    "source": "amazon-discovery",
-    "mobo": [
-      "ATX"
-    ]
-  },
-  {
-    "id": 101900,
-    "c": "Case",
-    "n": "Desktop Raised Feet for Lian Li O11 Dynamic Evo with Front/Side IO Panel(USB), Enhance Airflow & Easy Bottom Cleaning, Sturdy Case Lift Stand for Improved Cooling (Black, + 40mm)",
-    "b": "Lian Li",
-    "pr": 25.98,
-    "msrp": 25.98,
-    "r": null,
-    "img": "https://m.media-amazon.com/images/I/71CT5APhDEL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FCWVNHBM",
-        "url": "https://www.amazon.com/dp/B0FCWVNHBM?tag=tiereduptech-20",
-        "price": 25.98,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.669Z",
-    "source": "amazon-discovery"
   }
 ];
