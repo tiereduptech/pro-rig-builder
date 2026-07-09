@@ -523,12 +523,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/cpu/intel-core-i513600kf-10071</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/cpu/intel-core-i513500-10072</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -1303,12 +1297,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/cpu/ryzen-5-8400f-processor-6core-12thread-4247-ghz-65w-tdp-cpu-air-cooler-pcie-40-s-100615</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/cpu/intel-core-i5-12th-gen-i512400f-hexacore-6-core-250-ghz-processor-oem-pack-100616</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -1430,12 +1418,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/cpu/amd-ryzen-threadripper-7970x-32core-64thread-processor-100646</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/cpu/amd-ryzen-threadripper-pro-5955wx-16core-32thread-desktop-processor-100647</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2659,12 +2641,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/motherboard/pro-h610mg-wifi-motherboard-microatx-supports-intel-core-14th-13th-and-12th-gen-20256</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/motherboard/z890-aorus-elite-wifi7-ice-motherboard-supports-intel-core-ultra-series-2-cpus-1-20257</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -2695,12 +2671,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/motherboard/z790-pro-rs-wifi-lga1700-atx-motherboard-supports-14th13th12th-gen-intel-core-pr-20262</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/motherboard/rog-maximus-z890-hero-intel-z890-lga1851-ddr5-9200-hdmi-2xusb4-6x-m2-usb32-wifi-20263</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -2720,12 +2690,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/motherboard/tuf-gaming-z890pro-wifi-z890-lga-1851-atx-motherboard-intel-core-ultra-series-2-20267</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/motherboard/h610i-ddr4-h610-intel-lga-1700-miniitx-ddr4-single-m2-pcie-40-usb-32-gen1-intel-20268</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2924,12 +2888,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/motherboard/b760-pro-rs-wifi-6e-lga1700-hdmi-displayport-edp-intel-b760-atx-motherboard-ddr5-20308</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/motherboard/rog-strix-x870eh-gaming-wifi7-hatsune-miku-edition-amd-x870e-atx-motherboard-162-20310</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3997,19 +3955,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/gpu/nvidia-geforce-rtx-4090-30008</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/gpu/nvidia-geforce-rtx-4080-30010</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/gpu/nvidia-geforce-rtx-4070-ti-super-30011</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -4249,12 +4195,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/gpu/asus-rog-strix-rtx-5070-ti-oc-30073</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/gpu/msi-rtx-5070-ti-gaming-x-trio-30074</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -4327,12 +4267,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/gpu/xfx-speedster-merc310-rx-7800-xt-30097</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/gpu/powercolor-red-devil-rx-7800-xt-30098</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -4352,12 +4286,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/gpu/msi-rx-7600-mech-2x-30102</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/gpu/sapphire-pulse-rx-7600-30103</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -5545,24 +5473,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/gpu/asus-geforce-rtx-2070-super-overclocked-8g-evo-gddr6-dualfan-edition-vr-ready-hd-30354</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/gpu/msi-gaming-geforce-rtx-2070-8gb-gdrr6-256bit-hdmidpusb-ray-tracing-turing-archit-30358</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/gpu/asus-dual-amd-radeon-rx-6600-xt-oc-edition-8gb-gddr6-gaming-graphics-card-amd-rd-30368</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/gpu/gigabyte-radeon-rx-570-gaming-4gb-graphic-cards-gvrx570gaming4gd-renewed-30382</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -5732,12 +5642,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/gpu/asus-tuf-gaming-nvidia-geforce-rtx-4070-oc-edition-gaming-graphics-card-pcie-40-100422</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/gpu/asus-tuf-gaming-nvidia-geforce-rtx-4070-ti-oc-edition-gaming-graphics-card-pcie-100423</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -5954,12 +5858,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/gpu/amd-radeon-rx-6700-xt-12gb-gddr6-reference-model-graphics-card-renewed-100676</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/gpu/xfx-speedster-qick319-amd-radeon-rx-6700-xt-black-gaming-graphics-card-with-12gb-100677</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -7273,12 +7171,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/ram/fury-beast-32gb-4x8gb-3600mhz-ddr4-cl18-desktop-memory-kit-of-4-kf436c17bbk432-40207</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/ram/fury-beast-8gb-5600mts-ddr5-cl40-xmp-30-ready-computer-memory-single-module-kf55-40208</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -7340,12 +7232,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/ram/32gb-16gbx2-ram-ddr4-3200mhz-pc425600-cl22-12v-288pin-nonecc-unbuffered-dimm-des-40222</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/ram/fury-beast-32gb-2x16gb-6400mts-ddr5-cl32-desktop-memory-amd-expo-kit-of-2-kf564c-40223</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -7825,12 +7711,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/ram/rgb-ddr4-ramgigastone-game-turbo-16gb-kit-2x8gbddr4-3200mhz-pc425600-cl-16181840-100754</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/ram/crucial-ram-8gb-ddr4-2666-mhz-cl19-desktop-memory-ct8g4dfra266-100755</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -8071,12 +7951,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/storage/corsair-mp700-pro-2tb-nvme-gen5-50004</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/storage/wd-black-sn850x-2tb-nvme-gen4-50005</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -8096,12 +7970,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/storage/wd-black-sn850x-1tb-nvme-gen4-50008</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/storage/samsung-980-pro-1tb-nvme-gen4-50009</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -8203,31 +8071,13 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/storage/seagate-barracuda-8tb-5400rpm-hdd-50029</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/storage/wd-blue-1tb-7200rpm-hdd-50030</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/storage/wd-blue-2tb-5400rpm-hdd-50031</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/storage/wd-blue-4tb-5400rpm-hdd-50032</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/storage/wd-red-plus-4tb-nas-hdd-50033</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -8366,12 +8216,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/storage/1tb-sn850p-nvme-m2-ssd-officially-licensed-storage-expansion-for-ps5-consoles-up-50058</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/storage/2tb-c50-storage-expansion-card-officially-licensed-for-xbox-quick-resume-plug-pl-50059</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -8522,12 +8366,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/storage/990-pro-w-heatsink-ssd-2tb-pcie-gen4-m2-2280-internal-solid-state-hard-drive-seq-50092</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/storage/500gb-ssd-plus-m2-nvme-ssd-pcie-gen-30-up-to-2400-mbs-internal-solid-state-drive-50093</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -8888,12 +8726,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/storage/barracuda-mobile-hard-drive-4tb-sata-6gbs-128mb-cache-25inch-15mm-st4000lm024mec-50164</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/storage/exos-7e8-4tb-512n-sata-128mb-cache-35inch-enterprise-hard-drive-st4000nm0035-mec-50165</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -9289,12 +9121,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/storage/2tb-wd-red-plus-nas-internal-hard-drive-hdd-5400-rpm-sata-6-gbs-cmr-50246</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/storage/s101-1tb-ssd-sata-ssd-1tb-internal-solid-state-drive-sata-iii-6gbs-25-ssd-up-to-50247</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -9512,12 +9338,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/storage/barracuda-q5-1tb-internal-ssd-m2-nvme-pcie-gen3-4-3d-qlc-for-desktop-or-laptop-1-50290</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/storage/m2-nvme-ssd-512gb-with-heatsink-up-to-2800mbs-pcie-gen3x4-2280-internal-solid-st-50291</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -10927,12 +10747,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/storage/seagate-ironwolf-pro-8-tb-enterprise-nas-internal-hdd-cmr-35-inch-sata-6-gbs-720-100522</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/storage/western-digital-8tb-wd-red-pro-nas-internal-hard-drive-hdd-7200-rpm-sata-6-gbs-c-100523</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -10952,12 +10766,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/storage/western-digital-8tb-wd-blue-pc-internal-hard-drive-hdd-5640-rpm-sata-6-gbs-256-m-100526</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/storage/seagate-exos-7e8-8tb-512e-sata-256mb-cache-35inch-enterprise-hard-drive-st8000nm-100527</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -11180,12 +10988,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/storage/seagate-skyhawk-ai-16tb-video-internal-hard-drive-hdd-35-inch-sata-6gbs-512mb-ca-100844</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/storage/seagate-ironwolf-pro-16-tb-enterprise-nas-internal-hdd-cmr-35-inch-sata-6-gbs-72-100846</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -11726,18 +11528,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/psu/be-quiet-dark-power-13-1000w-60008</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/psu/be-quiet-pure-power-12-m-750w-60010</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/psu/evga-supernova-850-g7-60012</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -12673,12 +12463,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/psu/seasonic-focus-v4-gx850850w-80-gold-fullmodular-atx-form-factor-premium-japanese-100455</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/psu/montech-century-ii-850w-highend-atx-gaming-power-supply-80-plus-gold-cybenetics-100457</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -13501,12 +13285,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/case/atx-pc-case-3-x-120mm-fans-preinstalled-360mm-rad-support-70032</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/case/lancool-217-genuine-walnut-wood-computer-case-midtower-atx-pc-case-with-5-preins-70033</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -13699,12 +13477,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://prorigbuilder.com/parts/case/white-rgb-gaming-atx-mid-tower-computer-pc-case-with-side-tempered-glass-and-exc-70066</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://prorigbuilder.com/parts/case/f300-2025-pc-case-preinstalled-4-no-rgb-fan-atx-midtower-computer-case-gaming-pc-70067</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -13820,12 +13592,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/case/pc-case-atx-7-pwm-argb-fans-preinstalled-typec-mid-tower-computer-case-with-full-70087</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/case/v100-atx-midtower-pc-case-led-rgb-strip-display-platform-design-with-tempered-gl-70088</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -14186,12 +13952,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/case/micro-atx-case-pc-case-matx-case-mini-pc-itx-desktop-computer-case-support-micro-70156</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/case/mpg-sekira-100r-mid-tower-gaming-pc-case-4-x-120mm-argb-fans-instalight-loop-usb-70157</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -17678,12 +17438,6 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/cpu-cooler/idcooling-is77xt-black-low-profile-cpu-air-cooler-77mm-height-6-heatpipes-120mm-100966</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://prorigbuilder.com/parts/cpu-cooler/idcooling-idkitaio-univeral-mounting-kits-for-frostflowauraflowzoomflowpinkflow-100967</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
