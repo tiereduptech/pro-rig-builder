@@ -17886,20 +17886,6 @@ export default [
         "price": 599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512129&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6512129.p%3FskuId%3D6512129",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16820250244",
-        "price": 1199.99,
-        "saleprice": 599.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831749202950568255183&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-4tb-black-sn850x-nvme%2Fp%2FN82E16820250244%3Fitem%3DN82E16820250244",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-244-16.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.6,
-        "migratedAt": "2026-07-01T09:41:22.549Z",
-        "migratedFrom": "9SIC4RPKUR4483",
-        "staleSince": "2026-07-01T19:51:08.348Z"
       }
     },
     "cap": 4000,
