@@ -7201,26 +7201,6 @@ export default [
     "quarantinedAt": "2026-06-28"
   },
   {
-    "id": 100636,
-    "c": "CPU",
-    "n": "MINISFORUM DEG1 eGPU Dock, External GPU Docking Station for RTX 4090, AMD RX 7900 XTX, eGPU Enclosure Graphics Card Extension Support ATX/SFX Standard Power, Oculink Expansion Graphics Docking Station",
-    "b": "AMD",
-    "pr": 109.9,
-    "msrp": 109.9,
-    "r": 4.2,
-    "img": "https://m.media-amazon.com/images/I/61fZUjmWe+L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DPGYKH7G",
-        "url": "https://www.amazon.com/dp/B0DPGYKH7G?tag=tiereduptech-20",
-        "price": 109.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.771Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 100637,
     "c": "CPU",
     "n": "Intel Xeon Gold 6138 20 Cores 2GHz 27.5MB 10.4 GT/s 125W LGA 3647 CPU SR3B5 (Renewed)",

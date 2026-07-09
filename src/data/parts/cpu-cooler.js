@@ -13288,50 +13288,6 @@ export default [
     "quarantinedAt": "2026-06-28"
   },
   {
-    "id": 100374,
-    "c": "CPUCooler",
-    "n": "LGA1700 CPU Cooler Bracket for NZXT Kraken X41/2/52/53/61/62/63/72/73 Z53/63/73 Series Coolers, Iron Material, Mounting Bracket",
-    "b": "NZXT",
-    "pr": 15.99,
-    "msrp": 15.99,
-    "r": 4.2,
-    "img": "https://m.media-amazon.com/images/I/61ysROaS39L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0D9YFN8Z1",
-        "url": "https://www.amazon.com/dp/B0D9YFN8Z1?tag=tiereduptech-20",
-        "price": 15.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T13:17:14.411Z",
-    "source": "amazon-discovery",
-    "bench": 33
-  },
-  {
-    "id": 100375,
-    "c": "CPUCooler",
-    "n": "NZXT F360 RGB Core - 360mm Single-Frame Fan Unit with 3 x 120mm RGB Fans - Speed & Lighting Control - High Static Pressure & Airflow - Fluid Dynamic Bearings - 8 aRGB LEDs Per Fan - White",
-    "b": "MSI",
-    "pr": 49.99,
-    "msrp": 49.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/41iJB56E1yL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0D1RHS6WS",
-        "url": "https://www.amazon.com/dp/B0D1RHS6WS?tag=tiereduptech-20",
-        "price": 39.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T13:17:14.411Z",
-    "source": "amazon-discovery",
-    "bench": 36,
-    "noise": 30,
-    "rpm": 3600
-  },
-  {
     "id": 100376,
     "c": "CPUCooler",
     "n": "CORSAIR iCUE Link H170i RGB Liquid CPU Cooler - 420mm AIO - QX140 RGB Fans - Fits Intel® LGA 1700, AMD® AM5 - iCUE Link System Hub Included - Black (Renewed)",
@@ -15097,53 +15053,6 @@ export default [
     "rpm": 3600
   },
   {
-    "id": 100959,
-    "c": "CPUCooler",
-    "n": "Akasa Alucia XS12, 120mm PWM Case Fan, High Performance Cooling Fan, 4 Pin, 120 x 15mm Sizing Slim Low-Noice, Up to 2000 RPM & 41.59 CFM, Blue, AK-FN122-BL",
-    "b": "MSI",
-    "pr": 25.38,
-    "msrp": 25.38,
-    "r": 5,
-    "img": "https://m.media-amazon.com/images/I/811lRnBganL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0BNYTFTXZ",
-        "url": "https://www.amazon.com/dp/B0BNYTFTXZ?tag=tiereduptech-20",
-        "price": 25.38,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.793Z",
-    "source": "amazon-discovery",
-    "bench": 39,
-    "airflow": 41.59,
-    "noise": 31.5,
-    "rpm": 2000,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-07"
-  },
-  {
-    "id": 100960,
-    "c": "CPUCooler",
-    "n": "Bykski Distro Plate for DEEPCOOL Space Station - PMMA w/ 5v Addressable RGB(RBW) (RGV-DP-SPC-P-V2-K) - DDC Pump with Armor",
-    "b": "DeepCool",
-    "pr": 347.99,
-    "msrp": 347.99,
-    "r": null,
-    "img": "https://m.media-amazon.com/images/I/61UwtZhN8ML._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0BG3HGKBV",
-        "url": "https://www.amazon.com/dp/B0BG3HGKBV?tag=tiereduptech-20",
-        "price": 347.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.793Z",
-    "source": "amazon-discovery",
-    "bench": 31
-  },
-  {
     "id": 100961,
     "c": "CPUCooler",
     "n": "ID-COOLING FX360 INF 360mm Liquid CPU Cooler, AIO Cooler with ARGB Infinity Mirror Effect, 3x120mm Daisy-Chained Fans Low-Noise Operating 27.2dB(A) Max., Intel LGA1851/1700/1200/115X & AMD AM5/AM4",
@@ -15442,52 +15351,6 @@ export default [
     "rpm": 1500
   },
   {
-    "id": 100971,
-    "c": "CPUCooler",
-    "n": "CORSAIR iCUE Link LX120-R RGB 120mm PWM Reverse Fans – Triple Fan Kit – Low-Noise, Magnetic Dome Bearing, Dual Light Loops, CORSAIR QuikTurn Screws, Zero RPM Mode – Black",
-    "b": "Corsair",
-    "pr": 94.99,
-    "msrp": 94.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/71hbJKB0FsL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DGW2MZDN",
-        "url": "https://www.amazon.com/dp/B0DGW2MZDN?tag=tiereduptech-20",
-        "price": 84.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.794Z",
-    "source": "amazon-discovery",
-    "bench": 36,
-    "fanCount": 3,
-    "airflow": 67,
-    "noise": 37.7,
-    "rpm": 2400
-  },
-  {
-    "id": 100972,
-    "c": "CPUCooler",
-    "n": "CORSAIR iCUE Link System Hub - Connect Up to 24 CORSAIR iCUE Link Devices - Reduce Cable Clutter – Innovative Single-Cable Design - Black",
-    "b": "Corsair",
-    "pr": 59.99,
-    "msrp": 59.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/71GoOu+MkCL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0C65FJSKP",
-        "url": "https://www.amazon.com/dp/B0C65FJSKP?tag=tiereduptech-20",
-        "price": 59.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.795Z",
-    "source": "amazon-discovery",
-    "bench": 33
-  },
-  {
     "id": 100973,
     "c": "CPUCooler",
     "n": "NZXT Kraken Elite 240 RGB 2024 - AIO CPU Liquid Cooler - 240mm Radiator - F240 RGB Core Fan - Customizable 2.72\" IPS LCD - NZXT Turbine Pump - AMD® AM5, AM4 - Intel® LGA 1851/1700, 1200/115X - Black",
@@ -15546,27 +15409,6 @@ export default [
     "fanCount": 2,
     "noise": 34.48,
     "rpm": 2800
-  },
-  {
-    "id": 100975,
-    "c": "CPUCooler",
-    "n": "NZXT Control Hub - Digital RGB Lighting and PWM Fan Speed Controller - Control Up to 5 x PWM Fans or 4 x NZXT Single-Frame Fans - Powered by NZXT CAM Software",
-    "b": "NZXT",
-    "pr": 49.99,
-    "msrp": 49.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/41JlD9qHU9L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DJBM477F",
-        "url": "https://www.amazon.com/dp/B0DJBM477F?tag=tiereduptech-20",
-        "price": 42.49,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.795Z",
-    "source": "amazon-discovery",
-    "bench": 33
   },
   {
     "id": 100976,
@@ -16532,69 +16374,6 @@ export default [
     "rpm": 2000
   },
   {
-    "id": 101239,
-    "c": "CPUCooler",
-    "n": "NZXT F360 RGB Core - 360mm Single-Frame Fan Unit with 3 x 120mm RGB Fans - Speed & Lighting Control - High Static Pressure & Airflow - Fluid Dynamic Bearings - 8 aRGB LEDs Per Fan - Black",
-    "b": "MSI",
-    "pr": 49.99,
-    "msrp": 49.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/41IYLbduRXL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0D1RKBS7J",
-        "url": "https://www.amazon.com/dp/B0D1RKBS7J?tag=tiereduptech-20",
-        "price": 39.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.668Z",
-    "source": "amazon-discovery",
-    "bench": 36,
-    "airflow": 75.12,
-    "noise": 30,
-    "rpm": 2400
-  },
-  {
-    "id": 101240,
-    "c": "CPUCooler",
-    "n": "Corsair CORSAIR Virtuoso RGB Wireless XT High-Fidelity Gaming Headset with Bluetooth and Spatial Audio - Works with Mac, PC, PS5, PS4, Xbox Series X/S - Slate (Renewed)",
-    "b": "Corsair",
-    "pr": 139.95,
-    "msrp": 139.95,
-    "r": 4.2,
-    "img": "https://m.media-amazon.com/images/I/71xK0oPvBLL._AC_UY218_.jpg",
-    "deals": {},
-    "addedAt": "2026-05-15T16:31:54.668Z",
-    "source": "amazon-discovery",
-    "bench": 33,
-    "needsReview": true,
-    "quarantinedAt": "2026-06-28"
-  },
-  {
-    "id": 101241,
-    "c": "CPUCooler",
-    "n": "GSPSCN 11\" Rear Wiper Blade For Lincoln Corsair 24-20, Nautilus 23-19，MKC 19-15，MKX 18-16，Navigator 23-18 /Mini Cooper Paceman 16-13 /VW Passat 11-06 Back Windshield Wiper Blade (11-G / A281H)",
-    "b": "Corsair",
-    "pr": 7.91,
-    "msrp": 7.91,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/71iJBD39fwL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CMZNNS2P",
-        "url": "https://www.amazon.com/dp/B0CMZNNS2P?tag=tiereduptech-20",
-        "price": 7.91,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.668Z",
-    "source": "amazon-discovery",
-    "bench": 35,
-    "quarantinedAt": "2026-07-07",
-    "needsReview": true
-  },
-  {
     "id": 101242,
     "c": "CPUCooler",
     "n": "Phanteks Glacier One 360M25 G2 AIO Liquid CPU Cooler, RGB Pump Cap Design, 3x Performance 120mm M25 G2 PWM RGB Fans, for Intel LGA 1700, 1851, 1200, 115x and AMD AM4/AM5 sockets, Black",
@@ -17168,27 +16947,6 @@ export default [
     "airflow": 42.58,
     "noise": 22.4,
     "rpm": 2700
-  },
-  {
-    "id": 101262,
-    "c": "CPUCooler",
-    "n": "Thermalright LGA 1700-SS2 Mounting Kit for CPU Coolers on Intel's LGA1700 Platform, Mounting Kit for LGA1700 Socket",
-    "b": "Thermalright",
-    "pr": 7.99,
-    "msrp": 7.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/51GdEESt7-L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B09LTQYNSL",
-        "url": "https://www.amazon.com/dp/B09LTQYNSL?tag=tiereduptech-20",
-        "price": 7.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.669Z",
-    "source": "amazon-discovery",
-    "bench": 33
   },
   {
     "id": 101263,
@@ -17766,69 +17524,6 @@ export default [
     "rpm": 2000
   },
   {
-    "id": 101387,
-    "c": "CPUCooler",
-    "n": "NZXT F360 RGB Core - 360mm Single-Frame Fan Unit with 3 x 120mm RGB Fans - Speed & Lighting Control - High Static Pressure & Airflow - Fluid Dynamic Bearings - 8 aRGB LEDs Per Fan - Black",
-    "b": "MSI",
-    "pr": 49.99,
-    "msrp": 49.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/41IYLbduRXL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0D1RKBS7J",
-        "url": "https://www.amazon.com/dp/B0D1RKBS7J?tag=tiereduptech-20",
-        "price": 39.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.991Z",
-    "source": "amazon-discovery",
-    "bench": 36,
-    "airflow": 75.12,
-    "noise": 30,
-    "rpm": 2400
-  },
-  {
-    "id": 101388,
-    "c": "CPUCooler",
-    "n": "Corsair CORSAIR Virtuoso RGB Wireless XT High-Fidelity Gaming Headset with Bluetooth and Spatial Audio - Works with Mac, PC, PS5, PS4, Xbox Series X/S - Slate (Renewed)",
-    "b": "Corsair",
-    "pr": 139.95,
-    "msrp": 139.95,
-    "r": 4.2,
-    "img": "https://m.media-amazon.com/images/I/71xK0oPvBLL._AC_UY218_.jpg",
-    "deals": {},
-    "addedAt": "2026-05-15T16:39:25.992Z",
-    "source": "amazon-discovery",
-    "bench": 33,
-    "needsReview": true,
-    "quarantinedAt": "2026-06-28"
-  },
-  {
-    "id": 101389,
-    "c": "CPUCooler",
-    "n": "GSPSCN 11\" Rear Wiper Blade For Lincoln Corsair 24-20, Nautilus 23-19，MKC 19-15，MKX 18-16，Navigator 23-18 /Mini Cooper Paceman 16-13 /VW Passat 11-06 Back Windshield Wiper Blade (11-G / A281H)",
-    "b": "Corsair",
-    "pr": 7.91,
-    "msrp": 7.91,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/71iJBD39fwL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CMZNNS2P",
-        "url": "https://www.amazon.com/dp/B0CMZNNS2P?tag=tiereduptech-20",
-        "price": 7.91,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.992Z",
-    "source": "amazon-discovery",
-    "bench": 35,
-    "quarantinedAt": "2026-07-07",
-    "needsReview": true
-  },
-  {
     "id": 101390,
     "c": "CPUCooler",
     "n": "Phanteks Glacier One 360M25 G2 AIO Liquid CPU Cooler, RGB Pump Cap Design, 3x Performance 120mm M25 G2 PWM RGB Fans, for Intel LGA 1700, 1851, 1200, 115x and AMD AM4/AM5 sockets, Black",
@@ -18404,27 +18099,6 @@ export default [
     "rpm": 2700
   },
   {
-    "id": 101410,
-    "c": "CPUCooler",
-    "n": "Thermalright LGA 1700-SS2 Mounting Kit for CPU Coolers on Intel's LGA1700 Platform, Mounting Kit for LGA1700 Socket",
-    "b": "Thermalright",
-    "pr": 7.99,
-    "msrp": 7.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/51GdEESt7-L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B09LTQYNSL",
-        "url": "https://www.amazon.com/dp/B09LTQYNSL?tag=tiereduptech-20",
-        "price": 7.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.992Z",
-    "source": "amazon-discovery",
-    "bench": 33
-  },
-  {
     "id": 101411,
     "c": "CPUCooler",
     "n": "JONSBO CR1400 EVO CPU Cooler,ARGB Mute Series air Cooling, CPU Fan Height 130mm,92mm Fan Mini CPU Cooler,4 Copper Heat Pipes Air heatsink Tower Radiator, for AM5/AM4/Intel LGA1700/1851,Black",
@@ -18701,45 +18375,6 @@ export default [
     "rpm": 2400
   },
   {
-    "id": 101909,
-    "c": "CPUCooler",
-    "n": "Corsair CORSAIR Virtuoso RGB Wireless XT High-Fidelity Gaming Headset with Bluetooth and Spatial Audio - Works with Mac, PC, PS5, PS4, Xbox Series X/S - Slate (Renewed)",
-    "b": "Corsair",
-    "pr": 139.95,
-    "msrp": 139.95,
-    "r": 4.2,
-    "img": "https://m.media-amazon.com/images/I/71xK0oPvBLL._AC_UY218_.jpg",
-    "deals": {},
-    "addedAt": "2026-05-15T17:05:43.674Z",
-    "source": "amazon-discovery",
-    "bench": 33,
-    "needsReview": true,
-    "quarantinedAt": "2026-06-28"
-  },
-  {
-    "id": 101910,
-    "c": "CPUCooler",
-    "n": "GSPSCN 11\" Rear Wiper Blade For Lincoln Corsair 24-20, Nautilus 23-19，MKC 19-15，MKX 18-16，Navigator 23-18 /Mini Cooper Paceman 16-13 /VW Passat 11-06 Back Windshield Wiper Blade (11-G / A281H)",
-    "b": "Corsair",
-    "pr": 7.91,
-    "msrp": 7.91,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/71iJBD39fwL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CMZNNS2P",
-        "url": "https://www.amazon.com/dp/B0CMZNNS2P?tag=tiereduptech-20",
-        "price": 7.91,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.674Z",
-    "source": "amazon-discovery",
-    "bench": 35,
-    "quarantinedAt": "2026-07-07",
-    "needsReview": true
-  },
-  {
     "id": 101911,
     "c": "CPUCooler",
     "n": "Phanteks Glacier One 360M25-LCD AIO Liquid CPU Cooler, 6” IPS LCD HD Display, 120mm M25 Gen2 D-RGB Fans, High-Performance Copper Cold Plate, Intel & AMD Compatible, White",
@@ -19009,27 +18644,6 @@ export default [
     "airflow": 42.58,
     "noise": 22.4,
     "rpm": 2700
-  },
-  {
-    "id": 101921,
-    "c": "CPUCooler",
-    "n": "Thermalright LGA 1700-SS2 Mounting Kit for CPU Coolers on Intel's LGA1700 Platform, Mounting Kit for LGA1700 Socket",
-    "b": "Thermalright",
-    "pr": 7.99,
-    "msrp": 7.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/51GdEESt7-L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B09LTQYNSL",
-        "url": "https://www.amazon.com/dp/B09LTQYNSL?tag=tiereduptech-20",
-        "price": 7.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.676Z",
-    "source": "amazon-discovery",
-    "bench": 33
   },
   {
     "id": 101922,

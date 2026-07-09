@@ -1479,46 +1479,6 @@ export default [
     "quarantinedAt": "2026-06-28"
   },
   {
-    "id": 101748,
-    "c": "Microphone",
-    "n": "QuadCast Boom Arm, Mic Arm for Blue Yeti HyperX QuadCast SoloCast Fifine AM8 and Most Microphone, Mic Stand Desk with 3/8\" to 5/8\" Adapter by SUNMON",
-    "b": "HyperX",
-    "pr": 19.99,
-    "msrp": 19.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/71pIO9sveFL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08PYS1YKW",
-        "url": "https://www.amazon.com/dp/B08PYS1YKW?tag=tiereduptech-20",
-        "price": 19.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.638Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101749,
-    "c": "Microphone",
-    "n": "QuadCast 2 Boom Arm, Mic Arm Microphone Arm for HyperX QuadCast 2 with HyperX QuadCast 2 Pop Filter, 3/8\" to 5/8\" Adapter, by SUNMON",
-    "b": "HyperX",
-    "pr": 21.99,
-    "msrp": 21.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/714z2H6AVZL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DM26V4JZ",
-        "url": "https://www.amazon.com/dp/B0DM26V4JZ?tag=tiereduptech-20",
-        "price": 21.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.638Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101750,
     "c": "Microphone",
     "n": "SUNMON HyperX QuadCast Boom Arm - Upgraded Heavy Duty Mic Arm with HyperX QuadCast Pop Filter, 360° Rotatable Microphone Arm for QuadCast S",
@@ -1532,26 +1492,6 @@ export default [
         "asin": "B0C5LGFQJJ",
         "url": "https://www.amazon.com/dp/B0C5LGFQJJ?tag=tiereduptech-20",
         "price": 69.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.639Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101751,
-    "c": "Microphone",
-    "n": "Microphone Windscreen Pop Filter Compatible with HyperX QuadCast - Mic Foam Cover with Furry Windscreen Muff for HyperX QuadCast S，QuadCast S White (2 Pack)",
-    "b": "HyperX",
-    "pr": 15.99,
-    "msrp": 15.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/810whx8sBML._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0B7N9ZCKD",
-        "url": "https://www.amazon.com/dp/B0B7N9ZCKD?tag=tiereduptech-20",
-        "price": 15.99,
         "inStock": true
       }
     },
@@ -1599,26 +1539,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101754,
-    "c": "Microphone",
-    "n": "SUNMON QuadCast 2 Mic Pop Filter, Mic Windscreen Compatible with HyperX QuadCast 2 Microphone - Mic Foam Noise Reduction,Improved Sound Quality",
-    "b": "HyperX",
-    "pr": 9.99,
-    "msrp": 9.99,
-    "r": 4.8,
-    "img": "https://m.media-amazon.com/images/I/71I4ITeqNrL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DM27PH8T",
-        "url": "https://www.amazon.com/dp/B0DM27PH8T?tag=tiereduptech-20",
-        "price": 9.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.639Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101755,
     "c": "Microphone",
     "n": "HyperX SoloCast USB Condenser Microphone Tap-to-Mute Sensor Card for Gaming Streaming Podcasts Twitch YouTube Discord - Black (Renewed)",
@@ -1654,26 +1574,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101757,
-    "c": "Microphone",
-    "n": "Foam Windscreen for HyperX QuadCast S - Microphone Pop Filter for Hyper X Quad Cast USB Mic - Pop Guard Mic Cover Filters Recording Vibrations and White Noises",
-    "b": "HyperX",
-    "pr": 13.99,
-    "msrp": 13.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/81D37ZVwI0L._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0934W4LF3",
-        "url": "https://www.amazon.com/dp/B0934W4LF3?tag=tiereduptech-20",
-        "price": 13.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.639Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101758,
     "c": "Microphone",
     "n": "Microphone Arm,Aokeo AK-55 Desk Low Profile Adjustable Mic Boom Arm Stand,Suitable For Blue Yeti,Snowball iCE, HyperX QuadCast,SoloCast,Elgato Wave,Etc",
@@ -1687,66 +1587,6 @@ export default [
         "asin": "B0DT3RQ4GR",
         "url": "https://www.amazon.com/dp/B0DT3RQ4GR?tag=tiereduptech-20",
         "price": 38.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.639Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101759,
-    "c": "Microphone",
-    "n": "SUNMON HyperX QuadCast Pop Filter Windscreen Compatible with HyperX QuadCast S Microphone - Mic Foam Windscreen Noise Reduction,Improved Sound Quality, Microphone Pop Filter for HyperX QuadCast",
-    "b": "HyperX",
-    "pr": 10.99,
-    "msrp": 10.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/71lL5+SQqgL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B09V12TN54",
-        "url": "https://www.amazon.com/dp/B09V12TN54?tag=tiereduptech-20",
-        "price": 10.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.639Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101760,
-    "c": "Microphone",
-    "n": "SUNMON HyperX QuadCast Microphone Mount Adapter for Hyper x QuadCast, Replacement Kit for HyperX QuadCast S Mount Adapter，Mic Arm Adapter for 3/8 \"HyperX QuadCast Boom Arm",
-    "b": "HyperX",
-    "pr": 8.99,
-    "msrp": 8.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/61LxnmkxTSL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CMTLD3CD",
-        "url": "https://www.amazon.com/dp/B0CMTLD3CD?tag=tiereduptech-20",
-        "price": 8.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.639Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101761,
-    "c": "Microphone",
-    "n": "YOUSHARES QuadCast Microphone Windscreen, Furry Wind Cover Microphone Wind Shield Compatible with HyperX QuadCast Mic and HyperX QuadCast S microfono for Filter Ambient and Breathing Winds",
-    "b": "HyperX",
-    "pr": 9.95,
-    "msrp": 9.95,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/81whP0r1UNL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0B7MM3RS6",
-        "url": "https://www.amazon.com/dp/B0B7MM3RS6?tag=tiereduptech-20",
-        "price": 9.95,
         "inStock": true
       }
     },
@@ -1829,26 +1669,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101766,
-    "c": "Microphone",
-    "n": "InnoGear Microphone Stand Mic Boom Arm for Blue Yeti HyperX QuadCast S SoloCast Snowball Fifine K669B and other Mic, with Shock Mount Windscreen Pop Filter Mic Clip Holder Cable Ties, Large",
-    "b": "HyperX",
-    "pr": 26.99,
-    "msrp": 26.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/71aayhMpdKL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08XYZGVGS",
-        "url": "https://www.amazon.com/dp/B08XYZGVGS?tag=tiereduptech-20",
-        "price": 24.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.640Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101767,
     "c": "Microphone",
     "n": "Shure MV88 USB-C Microphone for Mobile Recording, Portable Mic for Vlogging with Auto Level Mode, Real-Time Denoiser for Smart Noise Cancelling & 4 Polar Patterns, Black",
@@ -1862,26 +1682,6 @@ export default [
         "asin": "B0G175GYX1",
         "url": "https://www.amazon.com/dp/B0G175GYX1?tag=tiereduptech-20",
         "price": 159,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.640Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101768,
-    "c": "Microphone",
-    "n": "MV7 MV7X MV7+ Boom Arm - Mic Arm with Foam Cover Windscreen Compatible with Shure MV7 and Shure MV7X and Shure MV7+ Microphone with Pop Filter by YOUSHARES",
-    "b": "Shure",
-    "pr": 21.99,
-    "msrp": 19.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/718LQkAOcEL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08NVGVZ7V",
-        "url": "https://www.amazon.com/dp/B08NVGVZ7V?tag=tiereduptech-20",
-        "price": 21.99,
         "inStock": true
       }
     },
@@ -2069,66 +1869,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101778,
-    "c": "Microphone",
-    "n": "SUNMON Rode NT-USB Mic Boom Arm - Mic Arm for RODE NT-USB/NT-USB+/NT-USB Mini and Most Microphone, Adjustable Boom Scissor Arm Stand with 3/8\" to 5/8\" Adapter by SUNMON",
-    "b": "Rode",
-    "pr": 18.99,
-    "msrp": 18.99,
-    "r": 4.2,
-    "img": "https://m.media-amazon.com/images/I/715nj5GLZcL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DKNNP8P6",
-        "url": "https://www.amazon.com/dp/B0DKNNP8P6?tag=tiereduptech-20",
-        "price": 18.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.641Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101779,
-    "c": "Microphone",
-    "n": "Rode NT USB Microphone Windscreen - Mic Cover Foam Pop Filter Customized for Rode NT-USB Condenser Microphone",
-    "b": "Rode",
-    "pr": 7.99,
-    "msrp": 7.99,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/71HQEb2mBjL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B083TNCS65",
-        "url": "https://www.amazon.com/dp/B083TNCS65?tag=tiereduptech-20",
-        "price": 7.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.641Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101780,
-    "c": "Microphone",
-    "n": "RØDE PSA1+ Professional Studio Arm with Spring Damping and Cable Management, Black",
-    "b": "Rode",
-    "pr": 117,
-    "msrp": 117,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/41O6NJyDr2L._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B09JBVR5B4",
-        "url": "https://www.amazon.com/dp/B09JBVR5B4?tag=tiereduptech-20",
-        "price": 106.4,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.641Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101781,
     "c": "Microphone",
     "n": "RØDE X XCM-50 Professional USB Condenser Microphone and Virtual Mixing Solution For Streamers and Gamers",
@@ -2166,26 +1906,6 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.641Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101783,
-    "c": "Microphone",
-    "n": "PIAOLGYI Microphone Mount Adapter for Rode NT-USB, Mic Arm Adapter,Boom Arm Adapter,Accessory Compatible with Rode NT-USB",
-    "b": "Rode",
-    "pr": 12.99,
-    "msrp": 12.99,
-    "r": 3.8,
-    "img": "https://m.media-amazon.com/images/I/61Ho1N4pGhL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CYZGSXVH",
-        "url": "https://www.amazon.com/dp/B0CYZGSXVH?tag=tiereduptech-20",
-        "price": 12.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.642Z",
     "source": "amazon-discovery"
   },
   {
@@ -2879,26 +2599,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101819,
-    "c": "Microphone",
-    "n": "Replacement Lapel mic for SHURE BLX188/CVL Wireless Lavalier Microphone, Unidirectional, ta4f 4 Pins, Black",
-    "b": "Shure",
-    "pr": 22.99,
-    "msrp": 22.99,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/41MU4ofUqRL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CQTJ3W97",
-        "url": "https://www.amazon.com/dp/B0CQTJ3W97?tag=tiereduptech-20",
-        "price": 22.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.650Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101820,
     "c": "Microphone",
     "n": "Pair of Lavalier Lapel Mics w/ 4 pin Mini XLR TA4F for Shure Wireless",
@@ -2994,26 +2694,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101825,
-    "c": "Microphone",
-    "n": "Elgato Wave Desk Stand - Adjustable Mounting Arm for Microphones, Works, HyperX, Rode, Fifine, Shure and More Mics, Compatible 1/4, 3/8 & 5/8 Thread, for Recording/Podcasting/Streaming, Black",
-    "b": "HyperX",
-    "pr": 59.99,
-    "msrp": 59.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/51TAndRDdeL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DGQLRP4C",
-        "url": "https://www.amazon.com/dp/B0DGQLRP4C?tag=tiereduptech-20",
-        "price": 59.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.651Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101826,
     "c": "Microphone",
     "n": "Elgato Wave Mic Arm Pro White - 360° Rotatable Low Profile Gas Spring Microphone Arm, Works Mics/Shure SM7B/HyperX QuadCast/Rode/Blue Yeti & More – for Broadcasting/Podcasting/Streaming",
@@ -3074,46 +2754,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101829,
-    "c": "Microphone",
-    "n": "Elgato Shock Mount - Maximum isolation from vibration noise, steel chassis with reinforced elastic suspension, custom built for Elgato Wave:1/3",
-    "b": "Elgato",
-    "pr": 39.99,
-    "msrp": 39.99,
-    "r": 4.8,
-    "img": "https://m.media-amazon.com/images/I/51qfVBdYUoL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B088P2WK3B",
-        "url": "https://www.amazon.com/dp/B088P2WK3B?tag=tiereduptech-20",
-        "price": 39.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.651Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101830,
-    "c": "Microphone",
-    "n": "Wave 3 Pop Filter - Professional Mic Windscreen Foam Cover Compatible with Elgato Wave USB Condenser Microphone to Reduce Pops and Hisses by SUNMON",
-    "b": "Elgato",
-    "pr": 9.47,
-    "msrp": 9.47,
-    "r": 4.2,
-    "img": "https://m.media-amazon.com/images/I/71XupL+SjIL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B091DHY3QS",
-        "url": "https://www.amazon.com/dp/B091DHY3QS?tag=tiereduptech-20",
-        "price": 9.47,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.651Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101831,
     "c": "Microphone",
     "n": "Wave Shock Mount, [Custom Built for Wave Mic] Anti-Vibration Suspension Shock Mount Holder Clip Compatible with Elgato Wave:1 and Wave:3 Microphones",
@@ -3127,86 +2767,6 @@ export default [
         "asin": "B09VBXJS8X",
         "url": "https://www.amazon.com/dp/B09VBXJS8X?tag=tiereduptech-20",
         "price": 29.97,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.651Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101832,
-    "c": "Microphone",
-    "n": "Desk Cookies Microphone Mount for Elgato Wave 3 – Boom Arm Adapter with 3/8\"-16 Threads, Heavy-Duty Replacement U-Mount, Durable 3D Printed Bracket (Black)",
-    "b": "Elgato",
-    "pr": 16.99,
-    "msrp": 16.99,
-    "r": 4.1,
-    "img": "https://m.media-amazon.com/images/I/61h3QbiF1GL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DLZ4QDN9",
-        "url": "https://www.amazon.com/dp/B0DLZ4QDN9?tag=tiereduptech-20",
-        "price": 16.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.651Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101833,
-    "c": "Microphone",
-    "n": "Geekria for Creators Furry Windscreen Compatible with Elgato Wave:1, Wave:3 Mic DeadCat Wind Cover Muff, Fluff Cover Windshield, Wind Noise Reduction (Grey / 2 Pack)",
-    "b": "Elgato",
-    "pr": 16.99,
-    "msrp": 16.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/81WZXdyzUEL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0BN189ST2",
-        "url": "https://www.amazon.com/dp/B0BN189ST2?tag=tiereduptech-20",
-        "price": 16.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.651Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101834,
-    "c": "Microphone",
-    "n": "Microphone Pop Filter - Mic Foam Windscreen Cover Compatible with Elgato Wave:3 Premium USB Condenser Microphone to Blocks Out Plosives by YOUSHARES",
-    "b": "Elgato",
-    "pr": 9.99,
-    "msrp": 9.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/81DU37caC-L._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08R5LSHN5",
-        "url": "https://www.amazon.com/dp/B08R5LSHN5?tag=tiereduptech-20",
-        "price": 9.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.651Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101835,
-    "c": "Microphone",
-    "n": "SOULWIT 2Pcs Microphones Pop Filter for Elgato Wave:3(Wave3), Protective Mic Cover Windscreen Foam - Black",
-    "b": "Elgato",
-    "pr": 8.95,
-    "msrp": 7.95,
-    "r": 3.9,
-    "img": "https://m.media-amazon.com/images/I/71lQJWgGObL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FZKL645Z",
-        "url": "https://www.amazon.com/dp/B0FZKL645Z?tag=tiereduptech-20",
-        "price": 8.95,
         "inStock": true
       }
     },

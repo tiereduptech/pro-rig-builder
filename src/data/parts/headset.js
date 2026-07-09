@@ -2,6 +2,54 @@
 // One file per category so Vite can split parts data into per-category chunks.
 export default [
   {
+    "id": 101240,
+    "c": "Headset",
+    "n": "Corsair CORSAIR Virtuoso RGB Wireless XT High-Fidelity Gaming Headset with Bluetooth and Spatial Audio - Works with Mac, PC, PS5, PS4, Xbox Series X/S - Slate (Renewed)",
+    "b": "Corsair",
+    "pr": 139.95,
+    "msrp": 139.95,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71xK0oPvBLL._AC_UY218_.jpg",
+    "deals": {},
+    "addedAt": "2026-05-15T16:31:54.668Z",
+    "source": "amazon-discovery",
+    "bench": 33,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
+  },
+  {
+    "id": 101388,
+    "c": "Headset",
+    "n": "Corsair CORSAIR Virtuoso RGB Wireless XT High-Fidelity Gaming Headset with Bluetooth and Spatial Audio - Works with Mac, PC, PS5, PS4, Xbox Series X/S - Slate (Renewed)",
+    "b": "Corsair",
+    "pr": 139.95,
+    "msrp": 139.95,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71xK0oPvBLL._AC_UY218_.jpg",
+    "deals": {},
+    "addedAt": "2026-05-15T16:39:25.992Z",
+    "source": "amazon-discovery",
+    "bench": 33,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
+  },
+  {
+    "id": 101909,
+    "c": "Headset",
+    "n": "Corsair CORSAIR Virtuoso RGB Wireless XT High-Fidelity Gaming Headset with Bluetooth and Spatial Audio - Works with Mac, PC, PS5, PS4, Xbox Series X/S - Slate (Renewed)",
+    "b": "Corsair",
+    "pr": 139.95,
+    "msrp": 139.95,
+    "r": 4.2,
+    "img": "https://m.media-amazon.com/images/I/71xK0oPvBLL._AC_UY218_.jpg",
+    "deals": {},
+    "addedAt": "2026-05-15T17:05:43.674Z",
+    "source": "amazon-discovery",
+    "bench": 33,
+    "needsReview": true,
+    "quarantinedAt": "2026-06-28"
+  },
+  {
     "id": 97001,
     "n": "Logitech G Pro X 2 Lightspeed",
     "img": "https://m.media-amazon.com/images/I/51Vqs9NufmL._AC_SL300_.jpg",
@@ -1966,26 +2014,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101172,
-    "c": "Headset",
-    "n": "weishan HS60 Pro Mic Replacement for Corsair HS50, HS60, HS70 Gaming Headset Detachable Microphone Gaming Headset on PS5, PS4, PC, Xbox, Noise Cancelling 3.5mm Black",
-    "b": "Corsair",
-    "pr": 9.99,
-    "msrp": 9.99,
-    "r": 4.1,
-    "img": "https://m.media-amazon.com/images/I/51A3swP81vL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0948TWX72",
-        "url": "https://www.amazon.com/dp/B0948TWX72?tag=tiereduptech-20",
-        "price": 9.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.625Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101173,
     "c": "Headset",
     "n": "Corsair HS55 Stereo Wired Gaming Headset — Carbon (Renewed)",
@@ -1999,26 +2027,6 @@ export default [
     "source": "amazon-discovery",
     "needsReview": true,
     "quarantinedAt": "2026-06-28"
-  },
-  {
-    "id": 101174,
-    "c": "Headset",
-    "n": "SOULWIT Cooling-Gel Earpads Replacement for Corsair HS80 Max/HS80 USB Wired/HS 80 RGB Wireless Gaming Headsets, Ear Pads Cushions with High-Density Noise Isolation Foam - Black",
-    "b": "Corsair",
-    "pr": 18.95,
-    "msrp": 18.95,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/71QzZa3CHAL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0BLHFZQ6N",
-        "url": "https://www.amazon.com/dp/B0BLHFZQ6N?tag=tiereduptech-20",
-        "price": 18.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.625Z",
-    "source": "amazon-discovery"
   },
   {
     "id": 101175,
@@ -2141,26 +2149,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101320,
-    "c": "Headset",
-    "n": "weishan HS60 Pro Mic Replacement for Corsair HS50, HS60, HS70 Gaming Headset Detachable Microphone Gaming Headset on PS5, PS4, PC, Xbox, Noise Cancelling 3.5mm Black",
-    "b": "Corsair",
-    "pr": 9.99,
-    "msrp": 9.99,
-    "r": 4.1,
-    "img": "https://m.media-amazon.com/images/I/51A3swP81vL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0948TWX72",
-        "url": "https://www.amazon.com/dp/B0948TWX72?tag=tiereduptech-20",
-        "price": 9.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.947Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101321,
     "c": "Headset",
     "n": "Corsair HS55 Stereo Wired Gaming Headset — Carbon (Renewed)",
@@ -2174,26 +2162,6 @@ export default [
     "source": "amazon-discovery",
     "needsReview": true,
     "quarantinedAt": "2026-06-28"
-  },
-  {
-    "id": 101322,
-    "c": "Headset",
-    "n": "SOULWIT Cooling-Gel Earpads Replacement for Corsair HS80 Max/HS80 USB Wired/HS 80 RGB Wireless Gaming Headsets, Ear Pads Cushions with High-Density Noise Isolation Foam - Black",
-    "b": "Corsair",
-    "pr": 18.95,
-    "msrp": 18.95,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/71QzZa3CHAL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0BLHFZQ6N",
-        "url": "https://www.amazon.com/dp/B0BLHFZQ6N?tag=tiereduptech-20",
-        "price": 18.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.948Z",
-    "source": "amazon-discovery"
   },
   {
     "id": 101323,
@@ -2691,26 +2659,6 @@ export default [
     "quarantinedAt": "2026-06-28"
   },
   {
-    "id": 101645,
-    "c": "Headset",
-    "n": "weishan G Pro X Cord, Detachable Gaming Headset Cable Replacement for Logitech G Pro / G433 / G233, 3.5mm(1/8\") Nylon Braided Wire with Inline Mute Switch and Volume Controller, 6ft Long",
-    "b": "Logitech",
-    "pr": 13.99,
-    "msrp": 13.99,
-    "r": 3.9,
-    "img": "https://m.media-amazon.com/images/I/61JrHucld4L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0B1PSV5B1",
-        "url": "https://www.amazon.com/dp/B0B1PSV5B1?tag=tiereduptech-20",
-        "price": 13.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.627Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101646,
     "c": "Headset",
     "n": "Logitech G733 Lightspeed RGB Wireless Gaming Headset with Suspension Headband, Kamisato Ayaka Special Edition, LIGHTSYNC RGB, Blue Voce mic Technology and PRO-G Audio Drivers",
@@ -2724,26 +2672,6 @@ export default [
         "asin": "B0FLFXYJWY",
         "url": "https://www.amazon.com/dp/B0FLFXYJWY?tag=tiereduptech-20",
         "price": 127.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.627Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101647,
-    "c": "Headset",
-    "n": "SOULWIT Cooling Gel Earpads Cushions Replacement for Logitech G Pro, G Pro X, G Prox 2, G Pro X SE Headphones, Ear Pads with Noise Isolation Foam, Added Thickness - Black",
-    "b": "Logitech",
-    "pr": 19.95,
-    "msrp": 19.95,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/81GD3n2v6LL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0C6M9W219",
-        "url": "https://www.amazon.com/dp/B0C6M9W219?tag=tiereduptech-20",
-        "price": 19.95,
         "inStock": true
       }
     },
@@ -3126,26 +3054,6 @@ export default [
     "quarantinedAt": "2026-06-28"
   },
   {
-    "id": 101669,
-    "c": "Headset",
-    "n": "LEFXMOPHY Blackshark V2 Mic Replacement for Razer BlackShark V2 and V2 Pro Wireless Gaming Headset 3.5mm Detachable Game Boom Microphone with Foam",
-    "b": "Razer",
-    "pr": 11.69,
-    "msrp": 11.69,
-    "r": 3.8,
-    "img": "https://m.media-amazon.com/images/I/61sge1MZEzS._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B094GL3DZF",
-        "url": "https://www.amazon.com/dp/B094GL3DZF?tag=tiereduptech-20",
-        "price": 11.69,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.630Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101670,
     "c": "Headset",
     "n": "Razer BlackShark V2 HyperSpeed Wireless Gaming Headset - THX Spatial Audio - Bendable Mic - 50mm Drivers - 2.4GHz, Bluetooth or USB - 70 Hr Battery w/USB Type C Charging - White (Renewed)",
@@ -3201,26 +3109,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101673,
-    "c": "Headset",
-    "n": "weishan HS60 Pro Mic Replacement for Corsair HS50, HS60, HS70 Gaming Headset Detachable Microphone Gaming Headset on PS5, PS4, PC, Xbox, Noise Cancelling 3.5mm Black",
-    "b": "Corsair",
-    "pr": 9.99,
-    "msrp": 9.99,
-    "r": 4.1,
-    "img": "https://m.media-amazon.com/images/I/51A3swP81vL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0948TWX72",
-        "url": "https://www.amazon.com/dp/B0948TWX72?tag=tiereduptech-20",
-        "price": 9.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.631Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101674,
     "c": "Headset",
     "n": "Corsair HS55 Stereo Wired Gaming Headset — Carbon (Renewed)",
@@ -3234,26 +3122,6 @@ export default [
     "source": "amazon-discovery",
     "needsReview": true,
     "quarantinedAt": "2026-06-28"
-  },
-  {
-    "id": 101675,
-    "c": "Headset",
-    "n": "SOULWIT Cooling-Gel Earpads Replacement for Corsair HS80 Max/HS80 USB Wired/HS 80 RGB Wireless Gaming Headsets, Ear Pads Cushions with High-Density Noise Isolation Foam - Black",
-    "b": "Corsair",
-    "pr": 18.95,
-    "msrp": 18.95,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/71QzZa3CHAL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0BLHFZQ6N",
-        "url": "https://www.amazon.com/dp/B0BLHFZQ6N?tag=tiereduptech-20",
-        "price": 18.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.631Z",
-    "source": "amazon-discovery"
   },
   {
     "id": 101676,

@@ -1060,40 +1060,6 @@ export default [
     "bench": 75
   },
   {
-    "id": 50040,
-    "n": "Portable 5TB External Hard Drive HDD – USB 3.0 for PC, Mac, PS4",
-    "img": "https://m.media-amazon.com/images/I/41OUh0ZU1NL._AC_SL1500_.jpg",
-    "c": "Storage",
-    "b": "Seagate",
-    "pr": 204.39,
-    "msrp": 189.99,
-    "r": 4.6,
-    "asin": "B07VS8QCXC",
-    "reviews": 211088,
-    "deals": {
-      "amazon": {
-        "price": 204.39,
-        "url": "https://www.amazon.com/dp/B07VS8QCXC?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/41OUh0ZU1NL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61EFaBPAnVL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61sCR6nZkYL._AC_SL1500_.jpg"
-    ],
-    "upc": "763649138168",
-    "mpn": "STGX5000400",
-    "weight": "260 Grams",
-    "cap": 5000,
-    "form": "HDD",
-    "storageType": "HDD",
-    "interface": "USB",
-    "rpm": 5400,
-    "value": 41,
-    "bench": 10
-  },
-  {
     "id": 50041,
     "n": "990 PRO SSD 1TB PCIe 4.0 M.2 2280 Internal Solid State Hard Drive, Seq. Read Speeds Up to 7,450 MB/s for High End Com...",
     "img": "https://m.media-amazon.com/images/I/61ZL9Qpo1-L._AC_SL1320_.jpg",
@@ -1806,45 +1772,6 @@ export default [
     "bench": 50
   },
   {
-    "id": 50057,
-    "n": "Game Drive for Xbox 2 TB External Hard Drive Portable HDD - USB 3.2 Gen 1, Black with built-in green LED bar, Xbox Ce...",
-    "img": "https://m.media-amazon.com/images/I/416kbEX-pVL._AC_SL1500_.jpg",
-    "c": "Storage",
-    "b": "Seagate",
-    "pr": 119.99,
-    "msrp": 139.99,
-    "r": 4.5,
-    "asin": "B08Y1Q2KSZ",
-    "reviews": 20307,
-    "deals": {
-      "amazon": {
-        "price": 119.99,
-        "url": "https://www.amazon.com/dp/B08Y1Q2KSZ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "discount": 14,
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/416kbEX-pVL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61xm4cVM2nL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71xwakLES1L._AC_SL1500_.jpg"
-    ],
-    "upc": "763649161548",
-    "mpn": "STKX2000400",
-    "weight": "167 Grams",
-    "cap": 2000,
-    "form": "HDD",
-    "ff": "2.5\"",
-    "storageType": "HDD",
-    "interface": "USB",
-    "rpm": 5400,
-    "value": 25,
-    "bench": 10,
-    "quarantinedAt": "2026-07-07",
-    "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true
-  },
-  {
     "id": 50058,
     "n": "1TB SN850P NVMe M.2 SSD Officially Licensed Storage Expansion for PS5 Consoles, up to 7,300MB/s",
     "img": "https://m.media-amazon.com/images/I/61RQtAID8sL._AC_SL1500_.jpg",
@@ -2056,42 +1983,6 @@ export default [
     "value": 4,
     "bench": 45,
     "formFactor": "2.5\""
-  },
-  {
-    "id": 50063,
-    "n": "X9 2TB Portable SSD, Up to 1050MB/s, USB 3.2 USB-C",
-    "img": "https://m.media-amazon.com/images/I/41n+bV47yGL._AC_SL1500_.jpg",
-    "c": "Storage",
-    "b": "Crucial",
-    "pr": 238.81,
-    "msrp": 215.93,
-    "r": 4.5,
-    "asin": "B0CGW18S6Y",
-    "reviews": 7135,
-    "deals": {
-      "amazon": {
-        "price": 238.81,
-        "url": "https://www.amazon.com/dp/B0CGW18S6Y?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/61-60csvLgL._AC_SL1080_.jpg",
-      "https://m.media-amazon.com/images/I/71jDeOfT8hL._AC_SL1080_.jpg",
-      "https://m.media-amazon.com/images/I/61RBsORIayL._AC_SL1080_.jpg"
-    ],
-    "upc": "649528939562",
-    "mpn": "CT2000X9SSD902",
-    "weight": "32 Grams",
-    "cap": 2000,
-    "storageType": "SSD",
-    "interface": "USB",
-    "seq_r": 1050,
-    "seq_w": 1050,
-    "nand": "TLC",
-    "value": 6,
-    "bench": 47,
-    "read": 1050
   },
   {
     "id": 50064,
@@ -2344,38 +2235,6 @@ export default [
     "bench": 45
   },
   {
-    "id": 50070,
-    "n": "X10 4TB Portable SSD, Up to 2,100MB/s",
-    "img": "https://m.media-amazon.com/images/I/61HrGLBKpHL._AC_SL1500_.jpg",
-    "c": "Storage",
-    "b": "Crucial",
-    "pr": 427.99,
-    "msrp": 427.99,
-    "r": 4.6,
-    "asin": "B0F334SXSC",
-    "reviews": 1959,
-    "deals": {},
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/81xOUG1GNtL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71JK0IoQY8L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/816Qg46T56L._AC_SL1500_.jpg"
-    ],
-    "upc": "649528946904",
-    "mpn": "CT4000X10SSD9-02",
-    "weight": "32 Grams",
-    "cap": 4000,
-    "ff": "2.5\"",
-    "storageType": "SSD",
-    "seq_r": 2100,
-    "interface": "USB",
-    "seq_w": 2000,
-    "nand": "TLC",
-    "value": 6,
-    "bench": 37,
-    "needsReview": true,
-    "quarantinedAt": "2026-06-28"
-  },
-  {
     "id": 50071,
     "n": "SSD 512GB, M.2 NVMe Gen3x4 SSD 2280 - Up to 2400MB/s, Internal Solid State Drive with 3D NAND Flash",
     "img": "https://m.media-amazon.com/images/I/61AwEi1DPIL._AC_SL1500_.jpg",
@@ -2453,42 +2312,6 @@ export default [
     "amazonRemovedAnomaly": "2026-06-28",
     "needsReview": true,
     "quarantinedAt": "2026-06-28"
-  },
-  {
-    "id": 50073,
-    "n": "X10 8TB Portable SSD, Up to 2,100MB/s",
-    "img": "https://m.media-amazon.com/images/I/41rI1J9FcZL._AC_SL1080_.jpg",
-    "c": "Storage",
-    "b": "Crucial",
-    "pr": 829.99,
-    "msrp": 829.99,
-    "r": 4.6,
-    "asin": "B0F336NLC7",
-    "reviews": 1959,
-    "deals": {
-      "amazon": {
-        "price": 829.99,
-        "url": "https://www.amazon.com/dp/B0F336NLC7?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/61B7MSANAmL._AC_SL1080_.jpg",
-      "https://m.media-amazon.com/images/I/61bAYOoN8QL._AC_SL1080_.jpg",
-      "https://m.media-amazon.com/images/I/71d4cxlEXgL._AC_SL1080_.jpg"
-    ],
-    "upc": "649528946881",
-    "mpn": "CT8000X10SSD9-02",
-    "weight": "32 Grams",
-    "cap": 8000,
-    "ff": "2.5\"",
-    "storageType": "SSD",
-    "seq_r": 2100,
-    "interface": "USB",
-    "seq_w": 2000,
-    "nand": "TLC",
-    "value": 2,
-    "bench": 37
   },
   {
     "id": 50074,
@@ -4153,80 +3976,6 @@ export default [
     "formFactor": "2.5\""
   },
   {
-    "id": 50114,
-    "n": "X10 Pro 4TB Portable SSD, Up to 2100MB/s Read, 2000MB/s Write",
-    "img": "https://m.media-amazon.com/images/I/41zMnGQk9WL._AC_SL1080_.jpg",
-    "c": "Storage",
-    "b": "Crucial",
-    "pr": 524.99,
-    "msrp": 524.99,
-    "r": 4.1,
-    "asin": "B0C9WJQ9GP",
-    "reviews": 3953,
-    "deals": {
-      "amazon": {
-        "price": 524.99,
-        "url": "https://www.amazon.com/dp/B0C9WJQ9GP?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/712SnR4Ua-L._AC_SL1080_.jpg",
-      "https://m.media-amazon.com/images/I/61A5XjWiN4L._AC_SL1080_.jpg",
-      "https://m.media-amazon.com/images/I/61LMvtvVF3L._AC_SL1080_.jpg"
-    ],
-    "upc": "649528939548",
-    "mpn": "CT4000X10PROSSD902",
-    "weight": "42 Grams",
-    "cap": 4000,
-    "storageType": "SSD",
-    "interface": "USB",
-    "seq_r": 2100,
-    "seq_w": 2000,
-    "nand": "TLC",
-    "value": 5,
-    "bench": 37,
-    "read": 2100,
-    "write": 2000
-  },
-  {
-    "id": 50115,
-    "n": "X10 Pro 2TB Portable SSD, Up to 2100MB/s Read, 2000MB/s Write",
-    "img": "https://m.media-amazon.com/images/I/41zMnGQk9WL._AC_SL1080_.jpg",
-    "c": "Storage",
-    "b": "Crucial",
-    "pr": 359.99,
-    "msrp": 359.99,
-    "r": 4.1,
-    "asin": "B0C9WGS6MC",
-    "reviews": 3953,
-    "deals": {
-      "amazon": {
-        "price": 322.52,
-        "url": "https://www.amazon.com/dp/B0C9WGS6MC?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/712SnR4Ua-L._AC_SL1080_.jpg",
-      "https://m.media-amazon.com/images/I/61A5XjWiN4L._AC_SL1080_.jpg",
-      "https://m.media-amazon.com/images/I/61LMvtvVF3L._AC_SL1080_.jpg"
-    ],
-    "upc": "649528939531",
-    "mpn": "CT2000X10PROSSD902",
-    "weight": "42 Grams",
-    "cap": 2000,
-    "storageType": "SSD",
-    "interface": "USB",
-    "seq_r": 2100,
-    "seq_w": 2000,
-    "nand": "TLC",
-    "value": 8,
-    "bench": 37,
-    "read": 2100,
-    "write": 2000
-  },
-  {
     "id": 50116,
     "n": "512GB SSD 3D NAND SATA III 6Gb/s 2.5 Inch 7mm (0.28\") Read Speed Up to 550 MB/s SLC Cache Performance Boost Internal ...",
     "img": "https://m.media-amazon.com/images/I/61UbgsTFB-L._AC_SL1218_.jpg",
@@ -4351,41 +4100,6 @@ export default [
     "bench": 59,
     "pcieGen": 4,
     "formFactor": "M.2 2280"
-  },
-  {
-    "id": 50119,
-    "n": "ESD310 256GB External SSD, Up to 1,050MB/s",
-    "img": "https://m.media-amazon.com/images/I/71bgyX8Q2cL._SL1500_.jpg",
-    "c": "Storage",
-    "b": "Transcend",
-    "pr": 79.99,
-    "msrp": 65.24,
-    "r": 4.6,
-    "asin": "B0C3B18PKT",
-    "reviews": 2181,
-    "deals": {
-      "amazon": {
-        "price": 79.99,
-        "url": "https://www.amazon.com/dp/B0C3B18PKT?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/71a0YE5rZQL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71unb9UYNjL._SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71fmqmkHoFL._SL1500_.jpg"
-    ],
-    "upc": "760557861928",
-    "mpn": "TS256GESD310C",
-    "weight": "0.01 Pounds",
-    "cap": 256,
-    "storageType": "SSD",
-    "interface": "USB",
-    "seq_r": 1050,
-    "seq_w": 950,
-    "nand": "TLC",
-    "value": 24,
-    "bench": 47
   },
   {
     "id": 50120,
@@ -4660,46 +4374,6 @@ export default [
     "read": 7000,
     "pcieGen": 4,
     "formFactor": "M.2"
-  },
-  {
-    "id": 50127,
-    "n": "WD_Black 6TB P10 Game Drive, Portable External Hard Drive, Works with PlayStation",
-    "img": "https://m.media-amazon.com/images/I/71I06Beh3XL._AC_SL1500_.jpg",
-    "c": "Storage",
-    "b": "WD",
-    "pr": 280.99,
-    "msrp": 229.99,
-    "r": 4.5,
-    "asin": "B0D3GXP8NB",
-    "reviews": 210,
-    "deals": {
-      "amazon": {
-        "price": 334.99,
-        "url": "https://www.amazon.com/dp/B0D3GXP8NB?tag=tiereduptech-20",
-        "inStock": true
-      },
-      "bestbuy": {
-        "price": 280.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12608080&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-6tb-p10-game-drive-portable-external-hard-drive-wdbz7d0060bbk-wesn--black%2FJXTHCC74RL&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/81te35DoCUL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/515P1Bu+05L._AC_SL1000_.jpg",
-      "https://m.media-amazon.com/images/I/71Qj5rjgtgL._AC_SL1000_.jpg"
-    ],
-    "upc": "718037904108",
-    "mpn": "WDBZ7D0060BBK-WESN",
-    "weight": "0.55 Pounds",
-    "cap": 6000,
-    "form": "HDD",
-    "ff": "2.5\"",
-    "storageType": "HDD",
-    "interface": "USB",
-    "rpm": 7200,
-    "value": 40,
-    "bench": 10
   },
   {
     "id": 50128,
@@ -7469,42 +7143,6 @@ export default [
     "quarantinedAt": "2026-06-28"
   },
   {
-    "id": 50198,
-    "n": "Backup Plus Portable 4TB External Hard Drive HDD – Black USB 3.0 for PC Laptop and Mac, 1 Year Myliocreate, 2 Months ...",
-    "img": "https://m.media-amazon.com/images/I/9178I-zCAlL._AC_SL1500_.jpg",
-    "c": "Storage",
-    "b": "Seagate",
-    "pr": 205.9,
-    "msrp": 169.45,
-    "r": 4.6,
-    "asin": "B07MY44QBT",
-    "reviews": 1691,
-    "deals": {
-      "amazon": {
-        "price": 205.9,
-        "url": "https://www.amazon.com/dp/B07MY44QBT?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/81W-FZkTdhL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/81Nu41Zr3VL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/81ISBHQOCxL._AC_SL1500_.jpg"
-    ],
-    "upc": "763649132418",
-    "mpn": "STHP4000400",
-    "weight": "0.2 Kilograms",
-    "cap": 4000,
-    "form": "HDD",
-    "ff": "2.5\"",
-    "storageType": "HDD",
-    "interface": "USB",
-    "rpm": 5400,
-    "value": 36,
-    "bench": 10,
-    "neweggRemovedOutlier": "2026-06-28"
-  },
-  {
     "id": 50199,
     "n": "Western Digital 1TB P40 Game Drive SSD - Up to 2,000MB/s, RGB Lighting",
     "img": "https://m.media-amazon.com/images/I/717tkJFZcVL._AC_SL1500_.jpg",
@@ -9489,42 +9127,6 @@ export default [
     "value": 1
   },
   {
-    "id": 50249,
-    "n": "Desktop Drive 8000 GB 8TB external Hard Drive, 3.5 Inch, USB 3.0",
-    "img": "https://m.media-amazon.com/images/I/61yTIonlqxL._AC_SL1500_.jpg",
-    "c": "Storage",
-    "b": "Seagate",
-    "pr": 288.66,
-    "msrp": 249.99,
-    "r": 4.5,
-    "asin": "B07CQJBSQL",
-    "reviews": 16439,
-    "deals": {
-      "amazon": {
-        "price": 288.66,
-        "url": "https://www.amazon.com/dp/B07CQJBSQL?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/81+p-QvqCnL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/91+ystUfQJL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/81ivnKQS7KL._AC_SL1500_.jpg"
-    ],
-    "upc": "763649127322763649161210",
-    "mpn": "STGY8000400",
-    "weight": "2.43 Pounds",
-    "cap": 8000,
-    "form": "HDD",
-    "ff": "2.5\"",
-    "storageType": "HDD",
-    "interface": "USB",
-    "rpm": 5400,
-    "value": 50,
-    "bench": 10,
-    "formFactor": "3.5\""
-  },
-  {
     "id": 50250,
     "n": "BarraCuda 1TB Internal Hard Drive HDD – 3.5 Inch SATA 6 Gb/s 7200 RPM 64MB Cache for Computer Desktop PC (ST1000DM010)",
     "img": "https://m.media-amazon.com/images/I/619Zbk3-e0L._AC_SL1500_.jpg",
@@ -10336,40 +9938,6 @@ export default [
     "neweggRemovedOutlier": "2026-06-28"
   },
   {
-    "id": 50271,
-    "n": "Shuri SE FireCuda External HDD - USB 3.2, Customizable RGB LED Cyan, Works with PC",
-    "img": "https://m.media-amazon.com/images/I/61OJalyqemL._AC_SL1280_.jpg",
-    "c": "Storage",
-    "b": "Seagate",
-    "pr": 329.62,
-    "msrp": 225.46,
-    "r": 4.7,
-    "asin": "B0BFT9B5ZG",
-    "reviews": 2962,
-    "deals": {
-      "amazon": {
-        "price": 329.62,
-        "url": "https://www.amazon.com/dp/B0BFT9B5ZG?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/61PsNGXGHxL._AC_SL1280_.jpg",
-      "https://m.media-amazon.com/images/I/61wug7+oV1L._AC_SL1280_.jpg",
-      "https://m.media-amazon.com/images/I/51psklvRGAL._AC_SL1280_.jpg"
-    ],
-    "upc": "763649177143",
-    "mpn": "STLX2000402",
-    "weight": "167 Grams",
-    "cap": 2000,
-    "form": "HDD",
-    "ff": "2.5\"",
-    "storageType": "HDD",
-    "interface": "USB",
-    "value": 13,
-    "bench": 10
-  },
-  {
     "id": 50272,
     "n": "Rocket 2230 1TB NVMe SSD – PCIe Gen4 M.2 2230 Internal SSD for Steam Deck, Surface Pro, ROG Ally – Up to 5000 MB/s Ge...",
     "img": "https://m.media-amazon.com/images/I/71BVLQNOlmL._AC_SL1500_.jpg",
@@ -10477,75 +10045,6 @@ export default [
     "value": 23,
     "bench": 10,
     "formFactor": "3.5\""
-  },
-  {
-    "id": 50275,
-    "n": "FireCuda Gaming Hard Drive External Hard Drive 5TB - USB 3.2 Gen 1, RGB LED lighting for PC and Mac with Rescue Servi...",
-    "img": "https://m.media-amazon.com/images/I/51CTjsienWS._AC_SL1500_.jpg",
-    "c": "Storage",
-    "b": "Seagate",
-    "pr": 219.32,
-    "msrp": 173.02,
-    "r": 4.3,
-    "asin": "B08Y1S6R1V",
-    "reviews": 2674,
-    "deals": {
-      "amazon": {
-        "price": 219.32,
-        "url": "https://www.amazon.com/dp/B08Y1S6R1V?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/51m6KSWXL9S._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61aDSLcYZBS._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61gkMOvKMUS._AC_SL1500_.jpg"
-    ],
-    "upc": "763649160404",
-    "mpn": "STKL5000400",
-    "weight": "266 Grams",
-    "cap": 5000,
-    "form": "HDD",
-    "ff": "2.5\"",
-    "storageType": "HDD",
-    "interface": "USB",
-    "rpm": 5400,
-    "value": 45,
-    "bench": 10
-  },
-  {
-    "id": 50276,
-    "n": "FireCuda Gaming Hard Drive, 2TB, External Hard Drive HDD",
-    "img": "https://m.media-amazon.com/images/I/51CTjsienWS._AC_SL1500_.jpg",
-    "c": "Storage",
-    "b": "Seagate",
-    "pr": 139.88,
-    "msrp": 120.54,
-    "r": 4.3,
-    "asin": "B08Y1T4CR5",
-    "reviews": 2674,
-    "deals": {
-      "amazon": {
-        "price": 139.88,
-        "url": "https://www.amazon.com/dp/B08Y1T4CR5?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/51m6KSWXL9S._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61aDSLcYZBS._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61gkMOvKMUS._AC_SL1500_.jpg"
-    ],
-    "upc": "763649160343",
-    "mpn": "STKL2000400",
-    "weight": "167 Grams",
-    "cap": 2000,
-    "form": "HDD",
-    "ff": "2.5\"",
-    "storageType": "HDD",
-    "interface": "USB",
-    "value": 25,
-    "bench": 10
   },
   {
     "id": 50277,
@@ -20217,106 +19716,6 @@ export default [
     "bench": 15
   },
   {
-    "id": 50540,
-    "n": "WD - My Passport Ultra for Mac 2TB External USB 3.0 Portable Hard Drive - Silver",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6290/6290662_sd.jpg",
-    "c": "Storage",
-    "b": "WD",
-    "pr": 124.99,
-    "msrp": 124.99,
-    "r": 0,
-    "upc": "718037864143",
-    "mpn": "WDBKYJ0020BSL-WESN",
-    "deals": {
-      "bestbuy": {
-        "price": 124.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6290662&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6290662.p%3FskuId%3D6290662",
-        "inStock": true
-      }
-    },
-    "cap": 2000,
-    "interface": "USB",
-    "storageType": "HDD",
-    "pcie": 3,
-    "value": 24,
-    "bench": 10
-  },
-  {
-    "id": 50541,
-    "n": "WD - My Passport Ultra for Mac 4TB External USB 3.0 Portable Hard Drive - Silver",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6290/6290666_sd.jpg",
-    "c": "Storage",
-    "b": "WD",
-    "pr": 179.99,
-    "msrp": 179.99,
-    "r": 0,
-    "upc": "718037864136",
-    "mpn": "WDBPMV0040BSL-WESN",
-    "deals": {
-      "bestbuy": {
-        "price": 179.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6290666&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6290666.p%3FskuId%3D6290666",
-        "inStock": true
-      }
-    },
-    "cap": 4000,
-    "interface": "USB",
-    "storageType": "HDD",
-    "pcie": 3,
-    "value": 34,
-    "bench": 10
-  },
-  {
-    "id": 50542,
-    "n": "WD - My Passport for Mac 4TB External USB 3.0 Portable Hard Drive - Blue",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6356/6356883_sd.jpg",
-    "c": "Storage",
-    "b": "WD",
-    "pr": 174.99,
-    "msrp": 174.99,
-    "r": 0,
-    "upc": "718037869872",
-    "mpn": "WDBA2F0040BBL-WESN",
-    "deals": {
-      "bestbuy": {
-        "price": 174.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6356883&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6356883.p%3FskuId%3D6356883",
-        "inStock": true
-      }
-    },
-    "cap": 4000,
-    "interface": "USB",
-    "storageType": "HDD",
-    "rpm": 7200,
-    "value": 35,
-    "bench": 10
-  },
-  {
-    "id": 50543,
-    "n": "WD - My Passport for Mac 2TB External USB 3.0 Portable Hard Drive - Blue",
-    "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6356/6356884_sd.jpg",
-    "c": "Storage",
-    "b": "WD",
-    "pr": 119.99,
-    "msrp": 119.99,
-    "r": 0,
-    "upc": "718037869902",
-    "mpn": "WDBA2D0020BBL-WESN",
-    "deals": {
-      "bestbuy": {
-        "price": 119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6356884&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6356884.p%3FskuId%3D6356884",
-        "inStock": true
-      }
-    },
-    "cap": 2000,
-    "interface": "USB",
-    "storageType": "HDD",
-    "rpm": 7200,
-    "value": 25,
-    "bench": 10
-  },
-  {
     "id": 50544,
     "n": "Seagate - IronWolf 8TB Internal SATA NAS Hard Drive with Rescue Data Recovery Services",
     "img": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6387/6387161_sd.jpg",
@@ -21920,31 +21319,6 @@ export default [
     "formFactor": "M.2 2280"
   },
   {
-    "id": 100820,
-    "c": "Storage",
-    "n": "SANDISK 8TB Extreme Portable SSD (Old Model) - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE61-8T00-G25",
-    "b": "SanDisk",
-    "pr": 839.99,
-    "msrp": 810,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/61zuR3UMnWL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DLK38TR9",
-        "url": "https://www.amazon.com/dp/B0DLK38TR9?tag=tiereduptech-20",
-        "price": 839.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.780Z",
-    "source": "amazon-discovery",
-    "cap": 8000,
-    "storageType": "SSD",
-    "interface": "SATA",
-    "read": 1050,
-    "bestbuyRemovedComp": "2026-06-28"
-  },
-  {
     "id": 100821,
     "bench": 94,
     "c": "Storage",
@@ -21999,30 +21373,6 @@ export default [
     "ff": "M.2 2280",
     "pcieGen": 5,
     "formFactor": "M.2 2280"
-  },
-  {
-    "id": 100823,
-    "c": "Storage",
-    "n": "NTQinParts USB 3.0 to 2.5\" SATA III Hard Drive Adapter Cable/UASP Converter for Western Digital 250GB/500GB/1TB/2TB/4TB WD Blue SA510 SATA Internal Solid State Drive SSD",
-    "b": "Western Digital",
-    "pr": 13.99,
-    "msrp": 13.99,
-    "r": 5,
-    "img": "https://m.media-amazon.com/images/I/51LEg1BuzSL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CX1JZP5S",
-        "url": "https://www.amazon.com/dp/B0CX1JZP5S?tag=tiereduptech-20",
-        "price": 13.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.780Z",
-    "source": "amazon-discovery",
-    "cap": 250,
-    "storageType": "HDD",
-    "interface": "SATA",
-    "ff": "2.5\""
   },
   {
     "id": 100824,
@@ -22194,29 +21544,6 @@ export default [
     "formFactor": "2.5\""
   },
   {
-    "id": 100830,
-    "c": "Storage",
-    "n": "Seagate One Touch 8TB External Hard Drive Desktop HDD - USB-C Compatible with Most Windows and macOS, Rescue Recovery (STNB8000400)",
-    "b": "Seagate",
-    "pr": 289.99,
-    "msrp": 259.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/61wt66pbUkL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FH5NGWNY",
-        "url": "https://www.amazon.com/dp/B0FH5NGWNY?tag=tiereduptech-20",
-        "price": 289.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.782Z",
-    "source": "amazon-discovery",
-    "cap": 8000,
-    "storageType": "HDD",
-    "interface": "SATA"
-  },
-  {
     "id": 100831,
     "c": "Storage",
     "n": "Western Digital - WD 8TB Purple Surveillance Internal Hard Drive - 7200 RPM Class, SATA 6 Gb/s, 256MB Cache, 3.5\", Crypto Chia Mining - WD82PURZ - BROAGE HDMI Cable, Solid State Drive",
@@ -22240,40 +21567,6 @@ export default [
     "interface": "SATA",
     "ff": "3.5\"",
     "rpm": 7200
-  },
-  {
-    "id": 100832,
-    "c": "Storage",
-    "n": "Seagate Portable 4TB External Hard Drive HDD – USB 3.0 for PC, Mac, Xbox, & PlayStation - 1-Year Rescue Service (SRD0NF1)",
-    "b": "Seagate",
-    "pr": 189.99,
-    "msrp": 159,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/41OUh0ZU1NL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07CRGSR16",
-        "url": "https://www.amazon.com/dp/B07CRGSR16?tag=tiereduptech-20",
-        "price": 205.49,
-        "inStock": true
-      },
-      "newegg": {
-        "sku": "0XP-00MH-00011",
-        "price": 189.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835743230295730429169&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stgx4000400-4tb%2Fp%2F0XP-00MH-00011%3Fitem%3D0XP-00MH-00011",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0XP-00MH-00011-S02.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.73,
-        "sellerClass": "other"
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.782Z",
-    "source": "amazon-discovery",
-    "cap": 4000,
-    "storageType": "HDD",
-    "interface": "SATA"
   },
   {
     "id": 100833,
@@ -22302,31 +21595,6 @@ export default [
     "rpm": 5400
   },
   {
-    "id": 100834,
-    "c": "Storage",
-    "n": "Seagate Expansion 22TB External Hard Drive HDD - USB 3.0, with Rescue Data Recovery Services (STKP22000400)",
-    "b": "Seagate",
-    "pr": 629.99,
-    "msrp": 499.99,
-    "r": 4,
-    "img": "https://m.media-amazon.com/images/I/61Ctgne-FgL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DW8ZW47C",
-        "url": "https://www.amazon.com/dp/B0DW8ZW47C?tag=tiereduptech-20",
-        "price": 629.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.782Z",
-    "source": "amazon-discovery",
-    "cap": 22000,
-    "storageType": "HDD",
-    "interface": "SATA",
-    "quarantinedAt": "2026-07-07",
-    "needsReview": true
-  },
-  {
     "id": 100835,
     "c": "Storage",
     "n": "Western Digital 4TB WD Blue PC Internal Hard Drive HDD - 5400 RPM, SATA 6 Gb/s, 128 MB Cache, 3.5\" - WD40EZZX",
@@ -22350,29 +21618,6 @@ export default [
     "interface": "SATA",
     "ff": "3.5\"",
     "rpm": 5400
-  },
-  {
-    "id": 100836,
-    "c": "Storage",
-    "n": "WD 4TB Elements Portable External Hard Drive for Windows, USB 3.2 Gen 1/USB 3.0 for PC & Mac, Plug and Play Ready - ‎WDBU6Y0040BBK-WESN",
-    "b": "Western Digital",
-    "pr": 209.95,
-    "msrp": 168.97,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/91mlqrT75WL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0713WPGLL",
-        "url": "https://www.amazon.com/dp/B0713WPGLL?tag=tiereduptech-20",
-        "price": 209.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.782Z",
-    "source": "amazon-discovery",
-    "cap": 4000,
-    "storageType": "HDD",
-    "interface": "SATA"
   },
   {
     "id": 100837,
@@ -22610,29 +21855,6 @@ export default [
     "interface": "SATA",
     "ff": "3.5\"",
     "formFactor": "3.5\""
-  },
-  {
-    "id": 100847,
-    "c": "Storage",
-    "n": "WD 16TB Elements Desktop External Hard Drive, USB 3.0 for plug-and-play storage - WDBWLG0160HBK-NESN",
-    "b": "Western Digital",
-    "pr": 619.96,
-    "msrp": 484.98,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/61108Iz9XEL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08KTRKB6S",
-        "url": "https://www.amazon.com/dp/B08KTRKB6S?tag=tiereduptech-20",
-        "price": 619.96,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.782Z",
-    "source": "amazon-discovery",
-    "cap": 16000,
-    "storageType": "HDD",
-    "interface": "SATA"
   },
   {
     "id": 100848,
@@ -22876,29 +22098,6 @@ export default [
     "formFactor": "3.5\""
   },
   {
-    "id": 100858,
-    "c": "Storage",
-    "n": "WD 20TB Elements Desktop External Hard Drive, USB 3.0 drive for plug-and-play storage - WDBWLG0200HBK-NESN",
-    "b": "Western Digital",
-    "pr": 814.99,
-    "msrp": 555.9,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/41jD2O4Yy6L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B09VCXWPQG",
-        "url": "https://www.amazon.com/dp/B09VCXWPQG?tag=tiereduptech-20",
-        "price": 814.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.782Z",
-    "source": "amazon-discovery",
-    "cap": 20000,
-    "storageType": "HDD",
-    "interface": "SATA"
-  },
-  {
     "id": 100859,
     "c": "Storage",
     "n": "Western Digital Ultrastar DC HC560 WUH722020BLE600 20TB SATA6Gb/s 7200RPM 512MB Cache 3.5inch Enterprise Hard Drive - 5 Year Warranty (Renewed)",
@@ -23125,54 +22324,6 @@ export default [
     "formFactor": "M.2"
   },
   {
-    "id": 100869,
-    "bench": 54,
-    "c": "Storage",
-    "n": "SANDISK 1TB Portable SSD - Up to 800MB/s, USB-C, USB 3.2 Gen 2, Updated Firmware - External Solid State Drive - SDSSDE30-1T00-G26",
-    "b": "SanDisk",
-    "pr": 159.99,
-    "msrp": 154.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/71bBCTIvIIL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0C5JQ68FY",
-        "url": "https://www.amazon.com/dp/B0C5JQ68FY?tag=tiereduptech-20",
-        "price": 159.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.783Z",
-    "source": "amazon-discovery",
-    "cap": 1000,
-    "storageType": "SSD",
-    "interface": "SATA"
-  },
-  {
-    "id": 100870,
-    "c": "Storage",
-    "n": "SANDISK 500GB Extreme Portable SSD (Old Model) - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE61-500G-G25",
-    "b": "SanDisk",
-    "pr": 165.99,
-    "msrp": 165.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/61zuR3UMnWL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08GTXVG9P",
-        "url": "https://www.amazon.com/dp/B08GTXVG9P?tag=tiereduptech-20",
-        "price": 165.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.784Z",
-    "source": "amazon-discovery",
-    "cap": 500,
-    "storageType": "SSD",
-    "interface": "SATA",
-    "read": 1050
-  },
-  {
     "id": 100871,
     "c": "Storage",
     "n": "Patriot Burst Elite 120GB Internal SSD - SATA 3 2.5\" - Solid State Drive - PBE120GS25SSDR",
@@ -23275,74 +22426,6 @@ export default [
     "quarantinedAt": "2026-07-07"
   },
   {
-    "id": 101267,
-    "c": "Storage",
-    "n": "M.2 2280 NVMe SSD Heatsink for Samsung 990 Pro/ 990 EVO Plus/ 9100 Pro/ 970 EVO Plus/ 980 PRO/ 860 EVO, Cooler Heatsink for PC with Thermal Silicone pad, Black",
-    "b": "Samsung",
-    "pr": 9.95,
-    "msrp": 9.95,
-    "r": 5,
-    "img": "https://m.media-amazon.com/images/I/61whZ0vO9FL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GV219MV5",
-        "url": "https://www.amazon.com/dp/B0GV219MV5?tag=tiereduptech-20",
-        "price": 9.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.669Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe"
-  },
-  {
-    "id": 101268,
-    "c": "Storage",
-    "n": "SANDISK 1TB Extreme Portable SSD (New Model) - up to 2000MB/s Transfer speeds, USB Type-C connectivity, Reliable Durability - Black - SDSSDE70-1T00-G25",
-    "b": "SanDisk",
-    "pr": 259.99,
-    "msrp": 259.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/71u6LfJqm-L._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GMWYYRQL",
-        "url": "https://www.amazon.com/dp/B0GMWYYRQL?tag=tiereduptech-20",
-        "price": 256.23,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.670Z",
-    "source": "amazon-discovery",
-    "cap": 1000,
-    "storageType": "SSD",
-    "read": 2000,
-    "interface": "USB"
-  },
-  {
-    "id": 101269,
-    "c": "Storage",
-    "n": "Sabrent USB 3.2 Type-C Tool-Free Enclosure for M.2 PCIe NVMe and SATA SSDs (EC-SNVE)",
-    "b": "Sabrent",
-    "pr": 29.95,
-    "msrp": 24.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/71XNHBZRMpL._AC_UL640_QL65_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08RVC6F9Y",
-        "url": "https://www.amazon.com/dp/B08RVC6F9Y?tag=tiereduptech-20",
-        "price": 29.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.670Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe"
-  },
-  {
     "id": 101270,
     "c": "Storage",
     "n": "WD Blue 4TB SN5100 NVMe SSD - M.2 2280, PCIe Gen 4.0, Internal Solid State Drive - Read Speeds Up to 6,900MB/s, Upgrade Storage for PC/Laptops - WDS400T5B0E",
@@ -23367,28 +22450,6 @@ export default [
     "pcie": 4,
     "pcieGen": 4,
     "formFactor": "M.2 2280"
-  },
-  {
-    "id": 101271,
-    "c": "Storage",
-    "n": "Heatsink Thermal Pad for Steam Deck SSD, M.2 2230 NVME SSD Copper Heat Sink Cooling Thermal Pastes Back Cover Opening Tools Back Screws Replacements Screwdriver Repair Kit for Stream Deck SSD",
-    "b": "AMD",
-    "pr": 9.99,
-    "msrp": 9.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/61rOE+i8ZrL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0C1BQVZW2",
-        "url": "https://www.amazon.com/dp/B0C1BQVZW2?tag=tiereduptech-20",
-        "price": 8.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.671Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe"
   },
   {
     "id": 101272,
@@ -23491,52 +22552,6 @@ export default [
     "formFactor": "M.2 2230"
   },
   {
-    "id": 101276,
-    "c": "Storage",
-    "n": "For Steam Deck OLED Handheld Devices M.2 NVMe PCIe 4.0 2230 to 2280 SSD Adapter Converter Expansion Card,Modification 2230 to 2280 Size SSD Converter Board,OLED Model Expand high capacity memory card",
-    "b": "AMD",
-    "pr": 21.9,
-    "msrp": 21.9,
-    "r": 4.8,
-    "img": "https://m.media-amazon.com/images/I/510p99bbAKL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GF177449",
-        "url": "https://www.amazon.com/dp/B0GF177449?tag=tiereduptech-20",
-        "price": 21.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.671Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 4
-  },
-  {
-    "id": 101277,
-    "c": "Storage",
-    "n": "For Steam Deck LCD Handheld M.2 NVMe PCIe 4.0 2230 to 2280 SSD Hard Drive Adapter Expansion Card,Modified 2280 Replacement 2230 SSD Converter Board,for Steam Deck Handheld Expandable High Storage Card",
-    "b": "AMD",
-    "pr": 19.9,
-    "msrp": 19.9,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/61Dsx931f1L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0G7STJH94",
-        "url": "https://www.amazon.com/dp/B0G7STJH94?tag=tiereduptech-20",
-        "price": 19.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.671Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 4
-  },
-  {
     "id": 101278,
     "c": "Storage",
     "n": "Oemgenuine Kioxi 256GB M.2 PCI-e NVME GEN4X4 SSD Internal Solid State Drive 30mm 2230 Form Factor M Key Steam Deck",
@@ -23586,242 +22601,6 @@ export default [
     "read": 5200,
     "pcieGen": 4,
     "formFactor": "M.2 2230"
-  },
-  {
-    "id": 101280,
-    "c": "Storage",
-    "n": "SSD Heatsink Thermal Pad for Steam Deck: M.2 2230 NVME SSD Copper Heat Sink Cooling Thermal Pastes with Tools Screws",
-    "b": "AMD",
-    "pr": 8.95,
-    "msrp": 8.95,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/611wRwwiU8L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CRRFQVQW",
-        "url": "https://www.amazon.com/dp/B0CRRFQVQW?tag=tiereduptech-20",
-        "price": 8.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.671Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe"
-  },
-  {
-    "id": 101281,
-    "c": "Storage",
-    "n": "For Steam Deck OLED Handheld Devices M.2 NVMe PCIe 4.0 2230 to 2280 SSD Adapter Converter Board,Modified 2230 to 2280 Size SSD Converter Expansion Card,Handheld OLED Model Expandable High Storage Card",
-    "b": "AMD",
-    "pr": 21.9,
-    "msrp": 21.9,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/51AztiFqqbL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0G3K932MF",
-        "url": "https://www.amazon.com/dp/B0G3K932MF?tag=tiereduptech-20",
-        "price": 21.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.671Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 4,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-07"
-  },
-  {
-    "id": 101282,
-    "c": "Storage",
-    "n": "For Steam Deck LCD Handheld Devices M.2 NVMe PCIe 3.0 SSD Extension Card Adapter FPC Cable,Desktop Motherboard 2280 Replacement 2230 SSD Adapter Converter Board,PCIe 3.0 Expandable High Storage Card",
-    "b": "AMD",
-    "pr": 15.9,
-    "msrp": 15.9,
-    "r": 4.1,
-    "img": "https://m.media-amazon.com/images/I/61wOWgcOLpL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GDXZ8RYJ",
-        "url": "https://www.amazon.com/dp/B0GDXZ8RYJ?tag=tiereduptech-20",
-        "price": 15.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.671Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 3
-  },
-  {
-    "id": 101283,
-    "c": "Storage",
-    "n": "For Steam Deck OLED Handheld Modification M.2 NVMe PCIe 4.0 2230 to 2280 SSD Adapter Converter Board,Modified 2230 to 2280 SSD Converter Expansion Card,OLED Model Expand high capacity storage card",
-    "b": "AMD",
-    "pr": 21.9,
-    "msrp": 21.9,
-    "r": 4.8,
-    "img": "https://m.media-amazon.com/images/I/51IdYDbm4DL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GCWKTVL9",
-        "url": "https://www.amazon.com/dp/B0GCWKTVL9?tag=tiereduptech-20",
-        "price": 21.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.671Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 4
-  },
-  {
-    "id": 101284,
-    "c": "Storage",
-    "n": "For Steam Deck LCD Handheld Device M.2 NVMe PCIe 4.0 2230 to 2280 SSD Hard Drive Adapter Expansion Card,Modification 2280 Replacement 2230 SSD Converter Board,Handheld Expand high capacity memory card",
-    "b": "AMD",
-    "pr": 19.9,
-    "msrp": 19.9,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/516IVcs8c+L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GF1JFVTZ",
-        "url": "https://www.amazon.com/dp/B0GF1JFVTZ?tag=tiereduptech-20",
-        "price": 19.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.671Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 4
-  },
-  {
-    "id": 101285,
-    "c": "Storage",
-    "n": "For Steam Deck LCD Handheld M.2 NVMe PCIe 4.0 2230 to 2280 SSD Hard Drive Adapter Expansion Card,Modified 2280 Replacement 2230 SSD Converter Board,for Steam Deck Handheld Expandable High Storage Card",
-    "b": "AMD",
-    "pr": 19.9,
-    "msrp": 19.9,
-    "r": 4.8,
-    "img": "https://m.media-amazon.com/images/I/61AZZwLdwtL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GCB1Y4CB",
-        "url": "https://www.amazon.com/dp/B0GCB1Y4CB?tag=tiereduptech-20",
-        "price": 19.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.671Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 4
-  },
-  {
-    "id": 101286,
-    "c": "Storage",
-    "n": "For Steam Deck LCD or Legion Go Handheld M.2 NVMe PCIe 3.0 SSD Extension Card Adapter FPC Cable,Desktop Motherboard 2230 2242 to 2280 SSD Adapter Plate,PCIe 3.0 Expandable high capacity memory card",
-    "b": "AMD",
-    "pr": 17.9,
-    "msrp": 17.9,
-    "r": 5,
-    "img": "https://m.media-amazon.com/images/I/61PwPLecl3L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0G2BLL88Q",
-        "url": "https://www.amazon.com/dp/B0G2BLL88Q?tag=tiereduptech-20",
-        "price": 17.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.671Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 3
-  },
-  {
-    "id": 101287,
-    "c": "Storage",
-    "n": "SANDISK 1TB Extreme PRO Portable SSD - Up to 2000MB/s - USB-C, USB 3.2 Gen 2x2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE81-1T00-G25",
-    "b": "SanDisk",
-    "pr": 209.99,
-    "msrp": 209.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/71z2lEHwfNL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08GV9M64L",
-        "url": "https://www.amazon.com/dp/B08GV9M64L?tag=tiereduptech-20",
-        "price": 209.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.671Z",
-    "source": "amazon-discovery",
-    "cap": 1000,
-    "storageType": "SSD",
-    "interface": "USB",
-    "read": 2000,
-    "pcieGen": 2
-  },
-  {
-    "id": 101288,
-    "c": "Storage",
-    "n": "ASUS ROG STRIX Arion Aluminum Alloy M.2 NVMe SSD External Portable Enclosure Case Adapter, USB 3.2 Gen 2 Type-C (10 Gbps), USB-C to C and USB-C to A Cables, Fits PCIe 2280/2260/2242/2230 M Key/B+M Key",
-    "b": "ASUS",
-    "pr": 54.99,
-    "msrp": 49.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/51RE3BCyYkL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07ZKB4SLK",
-        "url": "https://www.amazon.com/dp/B07ZKB4SLK?tag=tiereduptech-20",
-        "price": 54.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.671Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "formFactor": "M.2",
-    "neweggRemovedOutlier": "2026-06-28"
-  },
-  {
-    "id": 101289,
-    "c": "Storage",
-    "n": "4TB SANDISK Extreme PRO Portable SSD with USB4, Up to 3800 MB/s Read and 3700MB/s Write, USB-C, USB 3.2, Backwards Compatible, IP65 Water and Dust Resistance - SDSSDE82-4T00-G25",
-    "b": "SanDisk",
-    "pr": 999.5,
-    "msrp": 949.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/81QbofRpHSL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DN6DK3X4",
-        "url": "https://www.amazon.com/dp/B0DN6DK3X4?tag=tiereduptech-20",
-        "price": 999.5,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.671Z",
-    "source": "amazon-discovery",
-    "cap": 4000,
-    "storageType": "SSD",
-    "read": 3800,
-    "write": 3700,
-    "interface": "USB"
   },
   {
     "id": 101290,
@@ -23984,74 +22763,6 @@ export default [
     "quarantinedAt": "2026-07-07"
   },
   {
-    "id": 101415,
-    "c": "Storage",
-    "n": "M.2 2280 NVMe SSD Heatsink for Samsung 990 Pro/ 990 EVO Plus/ 9100 Pro/ 970 EVO Plus/ 980 PRO/ 860 EVO, Cooler Heatsink for PC with Thermal Silicone pad, Black",
-    "b": "Samsung",
-    "pr": 9.95,
-    "msrp": 9.95,
-    "r": 5,
-    "img": "https://m.media-amazon.com/images/I/61whZ0vO9FL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GV219MV5",
-        "url": "https://www.amazon.com/dp/B0GV219MV5?tag=tiereduptech-20",
-        "price": 9.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.993Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe"
-  },
-  {
-    "id": 101416,
-    "c": "Storage",
-    "n": "SANDISK 1TB Extreme Portable SSD (New Model) - up to 2000MB/s Transfer speeds, USB Type-C connectivity, Reliable Durability - Black - SDSSDE70-1T00-G25",
-    "b": "SanDisk",
-    "pr": 259.99,
-    "msrp": 259.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/71u6LfJqm-L._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GMWYYRQL",
-        "url": "https://www.amazon.com/dp/B0GMWYYRQL?tag=tiereduptech-20",
-        "price": 256.23,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.993Z",
-    "source": "amazon-discovery",
-    "cap": 1000,
-    "storageType": "SSD",
-    "read": 2000,
-    "interface": "USB"
-  },
-  {
-    "id": 101417,
-    "c": "Storage",
-    "n": "Sabrent USB 3.2 Type-C Tool-Free Enclosure for M.2 PCIe NVMe and SATA SSDs (EC-SNVE)",
-    "b": "Sabrent",
-    "pr": 29.95,
-    "msrp": 24.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/71XNHBZRMpL._AC_UL640_QL65_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08RVC6F9Y",
-        "url": "https://www.amazon.com/dp/B08RVC6F9Y?tag=tiereduptech-20",
-        "price": 29.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.993Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe"
-  },
-  {
     "id": 101418,
     "c": "Storage",
     "n": "WD Blue 4TB SN5100 NVMe SSD - M.2 2280, PCIe Gen 4.0, Internal Solid State Drive - Read Speeds Up to 6,900MB/s, Upgrade Storage for PC/Laptops - WDS400T5B0E",
@@ -24076,28 +22787,6 @@ export default [
     "pcie": 4,
     "pcieGen": 4,
     "formFactor": "M.2 2280"
-  },
-  {
-    "id": 101419,
-    "c": "Storage",
-    "n": "Heatsink Thermal Pad for Steam Deck SSD, M.2 2230 NVME SSD Copper Heat Sink Cooling Thermal Pastes Back Cover Opening Tools Back Screws Replacements Screwdriver Repair Kit for Stream Deck SSD",
-    "b": "AMD",
-    "pr": 9.99,
-    "msrp": 9.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/61rOE+i8ZrL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0C1BQVZW2",
-        "url": "https://www.amazon.com/dp/B0C1BQVZW2?tag=tiereduptech-20",
-        "price": 8.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.994Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe"
   },
   {
     "id": 101420,
@@ -24200,52 +22889,6 @@ export default [
     "formFactor": "M.2 2230"
   },
   {
-    "id": 101424,
-    "c": "Storage",
-    "n": "For Steam Deck OLED Handheld Devices M.2 NVMe PCIe 4.0 2230 to 2280 SSD Adapter Converter Expansion Card,Modification 2230 to 2280 Size SSD Converter Board,OLED Model Expand high capacity memory card",
-    "b": "AMD",
-    "pr": 21.9,
-    "msrp": 21.9,
-    "r": 4.8,
-    "img": "https://m.media-amazon.com/images/I/510p99bbAKL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GF177449",
-        "url": "https://www.amazon.com/dp/B0GF177449?tag=tiereduptech-20",
-        "price": 21.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.994Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 4
-  },
-  {
-    "id": 101425,
-    "c": "Storage",
-    "n": "For Steam Deck LCD Handheld M.2 NVMe PCIe 4.0 2230 to 2280 SSD Hard Drive Adapter Expansion Card,Modified 2280 Replacement 2230 SSD Converter Board,for Steam Deck Handheld Expandable High Storage Card",
-    "b": "AMD",
-    "pr": 19.9,
-    "msrp": 19.9,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/61Dsx931f1L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0G7STJH94",
-        "url": "https://www.amazon.com/dp/B0G7STJH94?tag=tiereduptech-20",
-        "price": 19.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.994Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 4
-  },
-  {
     "id": 101426,
     "c": "Storage",
     "n": "Oemgenuine Kioxi 256GB M.2 PCI-e NVME GEN4X4 SSD Internal Solid State Drive 30mm 2230 Form Factor M Key Steam Deck",
@@ -24295,239 +22938,6 @@ export default [
     "read": 5200,
     "pcieGen": 4,
     "formFactor": "M.2 2230"
-  },
-  {
-    "id": 101428,
-    "c": "Storage",
-    "n": "SSD Heatsink Thermal Pad for Steam Deck: M.2 2230 NVME SSD Copper Heat Sink Cooling Thermal Pastes with Tools Screws",
-    "b": "AMD",
-    "pr": 8.95,
-    "msrp": 8.95,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/611wRwwiU8L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CRRFQVQW",
-        "url": "https://www.amazon.com/dp/B0CRRFQVQW?tag=tiereduptech-20",
-        "price": 8.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.994Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe"
-  },
-  {
-    "id": 101429,
-    "c": "Storage",
-    "n": "For Steam Deck OLED Handheld Devices M.2 NVMe PCIe 4.0 2230 to 2280 SSD Adapter Converter Board,Modified 2230 to 2280 Size SSD Converter Expansion Card,Handheld OLED Model Expandable High Storage Card",
-    "b": "AMD",
-    "pr": 21.9,
-    "msrp": 21.9,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/51AztiFqqbL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0G3K932MF",
-        "url": "https://www.amazon.com/dp/B0G3K932MF?tag=tiereduptech-20",
-        "price": 21.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.994Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 4
-  },
-  {
-    "id": 101430,
-    "c": "Storage",
-    "n": "For Steam Deck LCD Handheld Devices M.2 NVMe PCIe 3.0 SSD Extension Card Adapter FPC Cable,Desktop Motherboard 2280 Replacement 2230 SSD Adapter Converter Board,PCIe 3.0 Expandable High Storage Card",
-    "b": "AMD",
-    "pr": 15.9,
-    "msrp": 15.9,
-    "r": 4.1,
-    "img": "https://m.media-amazon.com/images/I/61wOWgcOLpL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GDXZ8RYJ",
-        "url": "https://www.amazon.com/dp/B0GDXZ8RYJ?tag=tiereduptech-20",
-        "price": 15.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.994Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 3
-  },
-  {
-    "id": 101431,
-    "c": "Storage",
-    "n": "For Steam Deck OLED Handheld Modification M.2 NVMe PCIe 4.0 2230 to 2280 SSD Adapter Converter Board,Modified 2230 to 2280 SSD Converter Expansion Card,OLED Model Expand high capacity storage card",
-    "b": "AMD",
-    "pr": 21.9,
-    "msrp": 21.9,
-    "r": 4.8,
-    "img": "https://m.media-amazon.com/images/I/51IdYDbm4DL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GCWKTVL9",
-        "url": "https://www.amazon.com/dp/B0GCWKTVL9?tag=tiereduptech-20",
-        "price": 21.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.994Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 4
-  },
-  {
-    "id": 101432,
-    "c": "Storage",
-    "n": "For Steam Deck LCD Handheld Device M.2 NVMe PCIe 4.0 2230 to 2280 SSD Hard Drive Adapter Expansion Card,Modification 2280 Replacement 2230 SSD Converter Board,Handheld Expand high capacity memory card",
-    "b": "AMD",
-    "pr": 19.9,
-    "msrp": 19.9,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/516IVcs8c+L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GF1JFVTZ",
-        "url": "https://www.amazon.com/dp/B0GF1JFVTZ?tag=tiereduptech-20",
-        "price": 19.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.994Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 4
-  },
-  {
-    "id": 101433,
-    "c": "Storage",
-    "n": "For Steam Deck LCD Handheld M.2 NVMe PCIe 4.0 2230 to 2280 SSD Hard Drive Adapter Expansion Card,Modified 2280 Replacement 2230 SSD Converter Board,for Steam Deck Handheld Expandable High Storage Card",
-    "b": "AMD",
-    "pr": 19.9,
-    "msrp": 19.9,
-    "r": 4.8,
-    "img": "https://m.media-amazon.com/images/I/61AZZwLdwtL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GCB1Y4CB",
-        "url": "https://www.amazon.com/dp/B0GCB1Y4CB?tag=tiereduptech-20",
-        "price": 19.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.994Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 4
-  },
-  {
-    "id": 101434,
-    "c": "Storage",
-    "n": "For Steam Deck LCD or Legion Go Handheld M.2 NVMe PCIe 3.0 SSD Extension Card Adapter FPC Cable,Desktop Motherboard 2230 2242 to 2280 SSD Adapter Plate,PCIe 3.0 Expandable high capacity memory card",
-    "b": "AMD",
-    "pr": 17.9,
-    "msrp": 17.9,
-    "r": 5,
-    "img": "https://m.media-amazon.com/images/I/61PwPLecl3L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0G2BLL88Q",
-        "url": "https://www.amazon.com/dp/B0G2BLL88Q?tag=tiereduptech-20",
-        "price": 17.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.994Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "pcie": 3
-  },
-  {
-    "id": 101435,
-    "c": "Storage",
-    "n": "SANDISK 1TB Extreme PRO Portable SSD - Up to 2000MB/s - USB-C, USB 3.2 Gen 2x2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE81-1T00-G25",
-    "b": "SanDisk",
-    "pr": 209.99,
-    "msrp": 209.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/71z2lEHwfNL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08GV9M64L",
-        "url": "https://www.amazon.com/dp/B08GV9M64L?tag=tiereduptech-20",
-        "price": 209.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.994Z",
-    "source": "amazon-discovery",
-    "cap": 1000,
-    "storageType": "SSD",
-    "interface": "USB",
-    "read": 2000,
-    "pcieGen": 2
-  },
-  {
-    "id": 101436,
-    "c": "Storage",
-    "n": "ASUS ROG STRIX Arion Aluminum Alloy M.2 NVMe SSD External Portable Enclosure Case Adapter, USB 3.2 Gen 2 Type-C (10 Gbps), USB-C to C and USB-C to A Cables, Fits PCIe 2280/2260/2242/2230 M Key/B+M Key",
-    "b": "ASUS",
-    "pr": 54.99,
-    "msrp": 49.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/51RE3BCyYkL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07ZKB4SLK",
-        "url": "https://www.amazon.com/dp/B07ZKB4SLK?tag=tiereduptech-20",
-        "price": 54.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.994Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "formFactor": "M.2"
-  },
-  {
-    "id": 101437,
-    "c": "Storage",
-    "n": "4TB SANDISK Extreme PRO Portable SSD with USB4, Up to 3800 MB/s Read and 3700MB/s Write, USB-C, USB 3.2, Backwards Compatible, IP65 Water and Dust Resistance - SDSSDE82-4T00-G25",
-    "b": "SanDisk",
-    "pr": 999.5,
-    "msrp": 949.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/81QbofRpHSL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DN6DK3X4",
-        "url": "https://www.amazon.com/dp/B0DN6DK3X4?tag=tiereduptech-20",
-        "price": 999.5,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.994Z",
-    "source": "amazon-discovery",
-    "cap": 4000,
-    "storageType": "SSD",
-    "read": 3800,
-    "write": 3700,
-    "interface": "USB"
   },
   {
     "id": 101438,
@@ -24690,74 +23100,6 @@ export default [
     "quarantinedAt": "2026-07-07"
   },
   {
-    "id": 101926,
-    "c": "Storage",
-    "n": "M.2 2280 NVMe SSD Heatsink for Samsung 990 Pro/ 990 EVO Plus/ 9100 Pro/ 970 EVO Plus/ 980 PRO/ 860 EVO, Cooler Heatsink for PC with Thermal Silicone pad, Black",
-    "b": "Samsung",
-    "pr": 9.95,
-    "msrp": 9.95,
-    "r": 5,
-    "img": "https://m.media-amazon.com/images/I/61whZ0vO9FL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GV219MV5",
-        "url": "https://www.amazon.com/dp/B0GV219MV5?tag=tiereduptech-20",
-        "price": 9.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.676Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe"
-  },
-  {
-    "id": 101927,
-    "c": "Storage",
-    "n": "SANDISK 1TB Extreme Portable SSD (New Model) - up to 2000MB/s Transfer speeds, USB Type-C connectivity, Reliable Durability - Black - SDSSDE70-1T00-G25",
-    "b": "SanDisk",
-    "pr": 259.99,
-    "msrp": 259.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/71u6LfJqm-L._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GMWYYRQL",
-        "url": "https://www.amazon.com/dp/B0GMWYYRQL?tag=tiereduptech-20",
-        "price": 256.23,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.677Z",
-    "source": "amazon-discovery",
-    "cap": 1000,
-    "storageType": "SSD",
-    "read": 2000,
-    "interface": "USB"
-  },
-  {
-    "id": 101928,
-    "c": "Storage",
-    "n": "Sabrent USB 3.2 Type-C Tool-Free Enclosure for M.2 PCIe NVMe and SATA SSDs (EC-SNVE)",
-    "b": "Sabrent",
-    "pr": 29.95,
-    "msrp": 24.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/71XNHBZRMpL._AC_UL640_QL65_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08RVC6F9Y",
-        "url": "https://www.amazon.com/dp/B08RVC6F9Y?tag=tiereduptech-20",
-        "price": 29.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.677Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe"
-  },
-  {
     "id": 101929,
     "c": "Storage",
     "n": "WD Blue 4TB SN5100 NVMe SSD - M.2 2280, PCIe Gen 4.0, Internal Solid State Drive - Read Speeds Up to 6,900MB/s, Upgrade Storage for PC/Laptops - WDS400T5B0E",
@@ -24860,80 +23202,6 @@ export default [
     "read": 5200,
     "pcieGen": 4,
     "formFactor": "M.2 2230"
-  },
-  {
-    "id": 101933,
-    "c": "Storage",
-    "n": "SANDISK 1TB Extreme PRO Portable SSD - Up to 2000MB/s - USB-C, USB 3.2 Gen 2x2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE81-1T00-G25",
-    "b": "SanDisk",
-    "pr": 209.99,
-    "msrp": 209.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/71z2lEHwfNL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08GV9M64L",
-        "url": "https://www.amazon.com/dp/B08GV9M64L?tag=tiereduptech-20",
-        "price": 209.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.679Z",
-    "source": "amazon-discovery",
-    "cap": 1000,
-    "storageType": "SSD",
-    "interface": "USB",
-    "read": 2000,
-    "pcieGen": 2
-  },
-  {
-    "id": 101934,
-    "c": "Storage",
-    "n": "ASUS ROG STRIX Arion Aluminum Alloy M.2 NVMe SSD External Portable Enclosure Case Adapter, USB 3.2 Gen 2 Type-C (10 Gbps), USB-C to C and USB-C to A Cables, Fits PCIe 2280/2260/2242/2230 M Key/B+M Key",
-    "b": "ASUS",
-    "pr": 54.99,
-    "msrp": 49.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/51RE3BCyYkL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07ZKB4SLK",
-        "url": "https://www.amazon.com/dp/B07ZKB4SLK?tag=tiereduptech-20",
-        "price": 54.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.679Z",
-    "source": "amazon-discovery",
-    "storageType": "NVMe",
-    "interface": "NVMe",
-    "formFactor": "M.2",
-    "neweggRemovedOutlier": "2026-06-28"
-  },
-  {
-    "id": 101935,
-    "c": "Storage",
-    "n": "4TB SANDISK Extreme PRO Portable SSD with USB4, Up to 3800 MB/s Read and 3700MB/s Write, USB-C, USB 3.2, Backwards Compatible, IP65 Water and Dust Resistance - SDSSDE82-4T00-G25",
-    "b": "SanDisk",
-    "pr": 999.5,
-    "msrp": 949.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/81QbofRpHSL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DN6DK3X4",
-        "url": "https://www.amazon.com/dp/B0DN6DK3X4?tag=tiereduptech-20",
-        "price": 999.5,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.679Z",
-    "source": "amazon-discovery",
-    "cap": 4000,
-    "storageType": "SSD",
-    "read": 3800,
-    "write": 3700,
-    "interface": "USB"
   },
   {
     "id": 101936,

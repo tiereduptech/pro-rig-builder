@@ -7994,26 +7994,6 @@ export default [
     "ff": "ATX"
   },
   {
-    "id": 100571,
-    "c": "PSU",
-    "n": "8.2ft Power Cord Replacement for Cooler Master MWE Gold 850 750 V3 V2 V1100 Power Supply AC 3 Prong C13 Cable",
-    "b": "Cooler Master",
-    "pr": 13.98,
-    "msrp": 13.98,
-    "r": null,
-    "img": "https://m.media-amazon.com/images/I/61pROCqZ-ML._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FVX2B3CS",
-        "url": "https://www.amazon.com/dp/B0FVX2B3CS?tag=tiereduptech-20",
-        "price": 13.98,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.768Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 100572,
     "c": "PSU",
     "n": "PCIe 8Pin to 8Pin 6+2Pin GPU Cable 60CM 18AWG for CoolerMaster MWE V2 Gold Fully Modular 550W 650W 750W 850W 1050W 1250W",
@@ -8034,21 +8014,6 @@ export default [
     "source": "amazon-discovery",
     "watts": 550,
     "modular": "Full"
-  },
-  {
-    "id": 100573,
-    "c": "PSU",
-    "n": "AC Power Cable Replacement for Cooler Master MWE Gold 850 750 V3 V2 V850 Power Supply 3 Prong AC 8Ft C13 Cord",
-    "b": "Cooler Master",
-    "pr": 13.99,
-    "msrp": 13.99,
-    "r": 5,
-    "img": "https://m.media-amazon.com/images/I/61Bnirmtz+L._AC_UY218_.jpg",
-    "deals": {},
-    "addedAt": "2026-05-15T14:34:31.768Z",
-    "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-06-28"
   },
   {
     "id": 100574,
@@ -8644,26 +8609,6 @@ export default [
     "ff": "ATX"
   },
   {
-    "id": 101207,
-    "c": "PSU",
-    "n": "CableMod E-Series Classic ModFlex Sleeved Cable Kit for EVGA G/G+ / P/P+ / T (White)",
-    "b": "EVGA",
-    "pr": 69.9,
-    "msrp": 69.9,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/61bj4zYy1NL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07HM6YM6K",
-        "url": "https://www.amazon.com/dp/B07HM6YM6K?tag=tiereduptech-20",
-        "price": 69.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.661Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101208,
     "c": "PSU",
     "n": "PCIe Cable for EVGA Power Supply, PCIe 8 Pin Male to 6+2 Pin Male, 18AWG 10A EVGA Supernova Power Supply Cables -23.6 inch (60cm)",
@@ -8682,27 +8627,6 @@ export default [
     },
     "addedAt": "2026-05-15T16:31:54.661Z",
     "source": "amazon-discovery"
-  },
-  {
-    "id": 101209,
-    "c": "PSU",
-    "n": "Modular Power Cable 10Pin+18Pin to 24Pin 18AWG Black Flat Cable for EVGA Power Supply G+ G2 G3 P2 T2 GS Series, 60cm long",
-    "b": "EVGA",
-    "pr": 19.99,
-    "msrp": 19.99,
-    "r": 3.2,
-    "img": "https://m.media-amazon.com/images/I/71BtcBVatSL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CRR1TKCF",
-        "url": "https://www.amazon.com/dp/B0CRR1TKCF?tag=tiereduptech-20",
-        "price": 19.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.661Z",
-    "source": "amazon-discovery",
-    "modular": "Full"
   },
   {
     "id": 101210,
@@ -9041,26 +8965,6 @@ export default [
     "ff": "ATX"
   },
   {
-    "id": 101355,
-    "c": "PSU",
-    "n": "CableMod E-Series Classic ModFlex Sleeved Cable Kit for EVGA G/G+ / P/P+ / T (White)",
-    "b": "EVGA",
-    "pr": 69.9,
-    "msrp": 69.9,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/61bj4zYy1NL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07HM6YM6K",
-        "url": "https://www.amazon.com/dp/B07HM6YM6K?tag=tiereduptech-20",
-        "price": 69.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.984Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101356,
     "c": "PSU",
     "n": "PCIe Cable for EVGA Power Supply, PCIe 8 Pin Male to 6+2 Pin Male, 18AWG 10A EVGA Supernova Power Supply Cables -23.6 inch (60cm)",
@@ -9079,27 +8983,6 @@ export default [
     },
     "addedAt": "2026-05-15T16:39:25.984Z",
     "source": "amazon-discovery"
-  },
-  {
-    "id": 101357,
-    "c": "PSU",
-    "n": "Modular Power Cable 10Pin+18Pin to 24Pin 18AWG Black Flat Cable for EVGA Power Supply G+ G2 G3 P2 T2 GS Series, 60cm long",
-    "b": "EVGA",
-    "pr": 19.99,
-    "msrp": 19.99,
-    "r": 3.2,
-    "img": "https://m.media-amazon.com/images/I/71BtcBVatSL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CRR1TKCF",
-        "url": "https://www.amazon.com/dp/B0CRR1TKCF?tag=tiereduptech-20",
-        "price": 19.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.984Z",
-    "source": "amazon-discovery",
-    "modular": "Full"
   },
   {
     "id": 101358,
@@ -9394,26 +9277,6 @@ export default [
     "atx3": true
   },
   {
-    "id": 101887,
-    "c": "PSU",
-    "n": "CableMod E-Series Classic ModFlex Sleeved Cable Kit for EVGA G/G+ / P/P+ / T (White)",
-    "b": "EVGA",
-    "pr": 69.9,
-    "msrp": 69.9,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/61bj4zYy1NL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07HM6YM6K",
-        "url": "https://www.amazon.com/dp/B07HM6YM6K?tag=tiereduptech-20",
-        "price": 69.9,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.666Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101888,
     "c": "PSU",
     "n": "PCIe Cable for EVGA Power Supply, PCIe 8 Pin Male to 6+2 Pin Male, 18AWG 10A EVGA Supernova Power Supply Cables -23.6 inch (60cm)",
@@ -9434,27 +9297,6 @@ export default [
     "source": "amazon-discovery",
     "needsReview": true,
     "quarantinedAt": "2026-07-07"
-  },
-  {
-    "id": 101889,
-    "c": "PSU",
-    "n": "Modular Power Cable 10Pin+18Pin to 24Pin 18AWG Black Flat Cable for EVGA Power Supply G+ G2 G3 P2 T2 GS Series, 60cm long",
-    "b": "EVGA",
-    "pr": 19.99,
-    "msrp": 19.99,
-    "r": 3.2,
-    "img": "https://m.media-amazon.com/images/I/71BtcBVatSL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CRR1TKCF",
-        "url": "https://www.amazon.com/dp/B0CRR1TKCF?tag=tiereduptech-20",
-        "price": 19.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.666Z",
-    "source": "amazon-discovery",
-    "modular": "Full"
   },
   {
     "id": 101890,

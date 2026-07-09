@@ -2,6 +2,128 @@
 // One file per category so Vite can split parts data into per-category chunks.
 export default [
   {
+    "id": 100375,
+    "c": "CaseFan",
+    "n": "NZXT F360 RGB Core - 360mm Single-Frame Fan Unit with 3 x 120mm RGB Fans - Speed & Lighting Control - High Static Pressure & Airflow - Fluid Dynamic Bearings - 8 aRGB LEDs Per Fan - White",
+    "b": "MSI",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/41iJB56E1yL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D1RHS6WS",
+        "url": "https://www.amazon.com/dp/B0D1RHS6WS?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T13:17:14.411Z",
+    "source": "amazon-discovery",
+    "bench": 36,
+    "noise": 30,
+    "rpm": 3600
+  },
+  {
+    "id": 100959,
+    "c": "CaseFan",
+    "n": "Akasa Alucia XS12, 120mm PWM Case Fan, High Performance Cooling Fan, 4 Pin, 120 x 15mm Sizing Slim Low-Noice, Up to 2000 RPM & 41.59 CFM, Blue, AK-FN122-BL",
+    "b": "MSI",
+    "pr": 25.38,
+    "msrp": 25.38,
+    "r": 5,
+    "img": "https://m.media-amazon.com/images/I/811lRnBganL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BNYTFTXZ",
+        "url": "https://www.amazon.com/dp/B0BNYTFTXZ?tag=tiereduptech-20",
+        "price": 25.38,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.793Z",
+    "source": "amazon-discovery",
+    "bench": 39,
+    "airflow": 41.59,
+    "noise": 31.5,
+    "rpm": 2000,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-07"
+  },
+  {
+    "id": 100971,
+    "c": "CaseFan",
+    "n": "CORSAIR iCUE Link LX120-R RGB 120mm PWM Reverse Fans – Triple Fan Kit – Low-Noise, Magnetic Dome Bearing, Dual Light Loops, CORSAIR QuikTurn Screws, Zero RPM Mode – Black",
+    "b": "Corsair",
+    "pr": 94.99,
+    "msrp": 94.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71hbJKB0FsL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0DGW2MZDN",
+        "url": "https://www.amazon.com/dp/B0DGW2MZDN?tag=tiereduptech-20",
+        "price": 84.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T14:34:31.794Z",
+    "source": "amazon-discovery",
+    "bench": 36,
+    "fanCount": 3,
+    "airflow": 67,
+    "noise": 37.7,
+    "rpm": 2400
+  },
+  {
+    "id": 101239,
+    "c": "CaseFan",
+    "n": "NZXT F360 RGB Core - 360mm Single-Frame Fan Unit with 3 x 120mm RGB Fans - Speed & Lighting Control - High Static Pressure & Airflow - Fluid Dynamic Bearings - 8 aRGB LEDs Per Fan - Black",
+    "b": "MSI",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/41IYLbduRXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D1RKBS7J",
+        "url": "https://www.amazon.com/dp/B0D1RKBS7J?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.668Z",
+    "source": "amazon-discovery",
+    "bench": 36,
+    "airflow": 75.12,
+    "noise": 30,
+    "rpm": 2400
+  },
+  {
+    "id": 101387,
+    "c": "CaseFan",
+    "n": "NZXT F360 RGB Core - 360mm Single-Frame Fan Unit with 3 x 120mm RGB Fans - Speed & Lighting Control - High Static Pressure & Airflow - Fluid Dynamic Bearings - 8 aRGB LEDs Per Fan - Black",
+    "b": "MSI",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/41IYLbduRXL._AC_UY218_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0D1RKBS7J",
+        "url": "https://www.amazon.com/dp/B0D1RKBS7J?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:39:25.991Z",
+    "source": "amazon-discovery",
+    "bench": 36,
+    "airflow": 75.12,
+    "noise": 30,
+    "rpm": 2400
+  },
+  {
     "id": 85000,
     "n": "Noctua NF-A12x25 PWM",
     "img": "https://m.media-amazon.com/images/I/91mh5IBa9OL._AC_SL300_.jpg",
@@ -11488,27 +11610,6 @@ export default [
     "quarantinedAt": "2026-06-28"
   },
   {
-    "id": 101138,
-    "c": "CaseFan",
-    "n": "Angitu for 2pcs / lot Corsair Fan RGB ARGB Adapter Cable with Black PET Sleeved HD LL120 140 QL 3Pin 4Pin Fan to 5V 3Pin RGB LED Cable 50cm (RGB-4Pin Male Black Sleeved)",
-    "b": "Corsair",
-    "pr": 21,
-    "msrp": 21,
-    "r": 4.8,
-    "img": "https://m.media-amazon.com/images/I/51ifCzTcojL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0BHW3SYHP",
-        "url": "https://www.amazon.com/dp/B0BHW3SYHP?tag=tiereduptech-20",
-        "price": 21,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.809Z",
-    "source": "amazon-discovery",
-    "rgb": true
-  },
-  {
     "id": 101139,
     "c": "CaseFan",
     "n": "CORSAIR iCUE Link LX140-R RGB 140mm PWM Reverse Fan – Single Fan – Low-Noise, Magnetic Dome Bearing, Dual Light Loops, CORSAIR QuikTurn Screws, Zero RPM Mode – White",
@@ -11552,27 +11653,6 @@ export default [
     "source": "amazon-discovery",
     "fanSize": 120,
     "pwm": true,
-    "rgb": true
-  },
-  {
-    "id": 101141,
-    "c": "CaseFan",
-    "n": "COMeap RGB Splitter for Corsair RGB HUB, Lighting Node Core and iCUE Commander CORE XT, 4 Pin Male to Female Fan Extension Cable for Corsair RGB Fan ML/LL/QL/SP/HD 9-in",
-    "b": "Corsair",
-    "pr": 9.99,
-    "msrp": 9.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/61RFdbbB+PL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0D1R6ZW8B",
-        "url": "https://www.amazon.com/dp/B0D1R6ZW8B?tag=tiereduptech-20",
-        "price": 9.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T14:34:31.809Z",
-    "source": "amazon-discovery",
     "rgb": true
   },
   {

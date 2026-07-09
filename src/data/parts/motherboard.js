@@ -13329,33 +13329,6 @@ export default [
     "bench": 94
   },
   {
-    "id": 20352,
-    "n": "CPU Motherbard Combo - Intel core i5-14400 10 cores Desktop Processor with Integrated Intel UHD Graphics 730 and MSI ...",
-    "img": "https://m.media-amazon.com/images/I/7103b-PcbFL._AC_SL1500_.jpg",
-    "c": "Motherboard",
-    "b": "Micro Center",
-    "pr": 359.99,
-    "msrp": 359.99,
-    "r": 4.4,
-    "asin": "B0F5D38HCZ",
-    "reviews": 12,
-    "deals": {},
-    "additionalImages": [
-      "https://m.media-amazon.com/images/I/61DmxPUUWlL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61A1eZmQSkL._AC_SL1080_.jpg",
-      "https://m.media-amazon.com/images/I/71yG8vngQyL._AC_SL1500_.jpg"
-    ],
-    "upc": "618996786503",
-    "mpn": "14400PRO760MPD4",
-    "socket": "LGA1700",
-    "wifi": "None",
-    "value": 11,
-    "bundle": true,
-    "bench": 31,
-    "needsReview": true,
-    "quarantinedAt": "2026-06-28"
-  },
-  {
     "id": 20353,
     "n": "Intel Core Ultra Z890 Pro RS ATX Motherboard LGA1851 RL-ILM DDR5 8666 MHz 256 GB M.2 PCIe 5.0 Thunderbolt",
     "img": "https://m.media-amazon.com/images/I/81IcFC-Ye4L._AC_SL1500_.jpg",
