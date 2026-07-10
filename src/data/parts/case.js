@@ -9331,20 +9331,6 @@ export default [
         "price": 128.49,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12502887&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-ceres-300-series-ceres-300-tg-argb-matcha-green-spcc-e-atx-mid-tower-case-matcha-green%2FJ39ZPC9W5Y&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16811133532",
-        "price": 120.99,
-        "saleprice": 102.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831664814297187919542&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-e-atx-mid-tower-ceres-300-series-spcc-case-matcha-green-ceres-300-tg-argb%2Fp%2FN82E16811133532%3Fitem%3DN82E16811133532",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD2401270DR9A4EE.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "migratedAt": "2026-07-02T09:01:50.669Z",
-        "migratedFrom": "9SIA8EFK579956",
-        "staleSince": "2026-07-02T19:27:01.519Z"
       }
     },
     "additionalImages": [
@@ -12207,20 +12193,6 @@ export default [
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665521&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-view-600-tg-full-tower-atx-pc-case-black%2FJ39TQXR3G5&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16811133572",
-        "price": 169.99,
-        "saleprice": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315449548677469535239&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16811133572%3Fitem%3DN82E16811133572",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-133-572-09.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "migratedAt": "2026-07-02T09:02:09.858Z",
-        "migratedFrom": "9SIA8EFKM06354",
-        "staleSince": "2026-07-02T19:27:23.083Z"
       }
     },
     "additionalImages": [

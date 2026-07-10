@@ -3090,20 +3090,6 @@ export default [
         "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642459&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-nautilus-360-rs-lcd-liquid-cpu-cooler-white%2FJ39TSCPQR6&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16835181495",
-        "price": 168.99,
-        "saleprice": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839811790341153821207&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-360-rs-lcd-amd-am5-am4-intel-1851-1700%2Fp%2FN82E16835181495%3Fitem%3DN82E16835181495",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-495-02.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.77,
-        "migratedAt": "2026-07-02T09:05:01.180Z",
-        "migratedFrom": "9SIC70SKYH2123",
-        "staleSince": "2026-07-02T19:29:26.102Z"
       }
     },
     "discount": 13,
@@ -12493,20 +12479,6 @@ export default [
         "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642460&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642460.p%3FskuId%3D6642460",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16835181495",
-        "price": 168.99,
-        "saleprice": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839811790341153821207&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-360-rs-lcd-amd-am5-am4-intel-1851-1700%2Fp%2FN82E16835181495%3Fitem%3DN82E16835181495",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-495-02.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "migratedAt": "2026-07-02T09:07:28.794Z",
-        "migratedFrom": "9SIC70SKYH2123",
-        "staleSince": "2026-07-02T19:33:05.679Z"
       }
     },
     "coolerType": "AIO",
@@ -12847,20 +12819,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0FGDJ3QP1?tag=tiereduptech-20",
         "price": 159.99,
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16835181495",
-        "price": 168.99,
-        "saleprice": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839811790341153821207&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-360-rs-lcd-amd-am5-am4-intel-1851-1700%2Fp%2FN82E16835181495%3Fitem%3DN82E16835181495",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-495-02.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.91,
-        "migratedAt": "2026-07-02T09:07:32.603Z",
-        "migratedFrom": "9SIC70SKYH2123",
-        "staleSince": "2026-07-02T19:33:09.802Z"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
