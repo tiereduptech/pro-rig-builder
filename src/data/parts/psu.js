@@ -5574,19 +5574,6 @@ export default [
         "price": 49.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626430&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-smart-w3-500w-80plus-certified-atx-v3-1-spec-power-supply-black%2FJ39ZPC6J2R&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16817153470",
-        "price": 72.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839925289308800300222&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-smart-w3-series-sp3-700ah2nlw-700-w%2Fp%2FN82E16817153470%3Fitem%3DN82E16817153470",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-470-01.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.83,
-        "migratedAt": "2026-07-03T19:18:29.065Z",
-        "migratedFrom": "9SIA8EFK8Y9872",
-        "staleSince": "2026-07-04T08:41:47.550Z"
       }
     },
     "watts": 500,
@@ -5617,19 +5604,6 @@ export default [
         "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626436&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-smart-w3-700w-80plus-certified-atx-v3-1-spec-power-supply-black%2FJ39ZPC6J87&intsrc=APIG_28060",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16817153470",
-        "price": 72.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839925289308800300222&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-smart-w3-series-sp3-700ah2nlw-700-w%2Fp%2FN82E16817153470%3Fitem%3DN82E16817153470",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-470-01.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "migratedAt": "2026-07-03T19:18:30.028Z",
-        "migratedFrom": "9SIA8EFK8Y9872",
-        "staleSince": "2026-07-04T08:41:48.310Z"
       }
     },
     "watts": 700,
