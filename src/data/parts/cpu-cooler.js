@@ -11186,19 +11186,6 @@ export default [
         "price": 134.99,
         "url": "https://www.amazon.com/dp/B0FM1V3Q3F?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16835101138",
-        "price": 144.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311214969883654036808&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-aio-tuf-gaming-lc-radiator-size-397-mm-intel-lga-1851-intel-lga-1700-intel-lga-1200-amd-am5-amd-am4-white%2Fp%2FN82E16835101138%3Fitem%3DN82E16835101138",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-138-03.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.9,
-        "migratedAt": "2026-07-03T09:11:29.819Z",
-        "migratedFrom": "9SIC70SKYB6920",
-        "staleSince": "2026-07-03T19:26:08.465Z"
       }
     },
     "additionalImages": [
