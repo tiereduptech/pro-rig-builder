@@ -2,6 +2,26 @@
 // One file per category so Vite can split parts data into per-category chunks.
 export default [
   {
+    "id": 100456,
+    "c": "Case",
+    "n": "JONSBO D31 MESH Black Micro ATX Computer Case, MATX/ITX Mainboard/Support RTX 4090(335-400mm) GPU 360/280AIO,Power ATX/SFX: 100mm-220mm Multiple Tool-Free Design,Black",
+    "b": "Jonsbo",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": 4.6,
+    "img": "https://m.media-amazon.com/images/I/71PhQheXIAL._AC_UL320_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BQJ9TSP3",
+        "url": "https://www.amazon.com/dp/B0BQJ9TSP3?tag=tiereduptech-20",
+        "price": 92.99,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T13:17:14.415Z",
+    "source": "amazon-discovery"
+  },
+  {
     "id": 70000,
     "n": "Corsair iCUE 5000T RGB",
     "img": "https://m.media-amazon.com/images/I/81GtKCrsDEL._AC_SL300_.jpg",

@@ -5319,6 +5319,7 @@ export default [
     "pr": 709.95,
     "msrp": 709.95,
     "r": 4.6,
+    "vram": 12,
     "asin": "B0DZCYPFVT",
     "reviews": 157,
     "deals": {
@@ -5546,6 +5547,7 @@ export default [
     "pr": 1675,
     "msrp": 1675,
     "r": 4.4,
+    "vram": 24,
     "asin": "B0BSN878GR",
     "reviews": 127,
     "deals": {},
@@ -6129,6 +6131,7 @@ export default [
     "pr": 4740.35,
     "msrp": 3849,
     "r": 4,
+    "vram": 32,
     "asin": "B0DT6S77JK",
     "reviews": 62,
     "deals": {
@@ -7587,6 +7590,7 @@ export default [
     "pr": 799,
     "msrp": 799,
     "r": 5,
+    "vram": 16,
     "asin": "B0F38GLLKR",
     "reviews": 7,
     "deals": {
@@ -14114,14 +14118,15 @@ export default [
   },
   {
     "id": 100444,
-    "bench": 10,
-    "c": "GPU",
     "n": "Radeon RX560 2G Graphics Card, with 4 HDMI Monitor Graphics Card,Computer PC GPU GDDR5 128 Bit DirectX 12 PCI Express X16 3.0, 4 Port Video Cards (AMD RX560 2G 4HDMI)",
+    "img": "https://m.media-amazon.com/images/I/51eZflK7yuL._AC_UL320_.jpg",
+    "c": "GPU",
     "b": "AMD",
     "pr": 114.99,
     "msrp": 114.99,
     "r": 4.2,
-    "img": "https://m.media-amazon.com/images/I/51eZflK7yuL._AC_UL320_.jpg",
+    "vram": 2,
+    "bench": 10,
     "deals": {
       "amazon": {
         "asin": "B0DSZL1MBV",
@@ -14258,26 +14263,6 @@ export default [
     "memType": "GDDR6",
     "bench": 36,
     "vram": 16
-  },
-  {
-    "id": 100456,
-    "c": "GPU",
-    "n": "JONSBO D31 MESH Black Micro ATX Computer Case, MATX/ITX Mainboard/Support RTX 4090(335-400mm) GPU 360/280AIO,Power ATX/SFX: 100mm-220mm Multiple Tool-Free Design,Black",
-    "b": "Jonsbo",
-    "pr": 79.99,
-    "msrp": 79.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/71PhQheXIAL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0BQJ9TSP3",
-        "url": "https://www.amazon.com/dp/B0BQJ9TSP3?tag=tiereduptech-20",
-        "price": 92.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T13:17:14.415Z",
-    "source": "amazon-discovery"
   },
   {
     "id": 100651,
@@ -14611,13 +14596,14 @@ export default [
   },
   {
     "id": 100666,
-    "c": "GPU",
     "n": "GIGABYTE GeForce GTX 1660 Ti OC 6G 192-bit GDDR6 DisplayPort 1.4 HDMI 2.0B with Windforce 2X Cooling System Graphic Cards- Gv-N166TOC-6GD (Renewed)",
+    "img": "https://m.media-amazon.com/images/I/71USRvNb9XS._AC_UY218_.jpg",
+    "c": "GPU",
     "b": "Gigabyte",
     "pr": 179.97,
     "msrp": 170.38,
     "r": 3.3,
-    "img": "https://m.media-amazon.com/images/I/71USRvNb9XS._AC_UY218_.jpg",
+    "vram": 6,
     "deals": {
       "amazon": {
         "asin": "B0952D9F1K",
@@ -15903,13 +15889,14 @@ export default [
   },
   {
     "id": 100724,
-    "c": "GPU",
     "n": "maxsun AMD R5 230 Computer Graphics Card, 2G GDDR3, HDMI VGA DVI Video Card ITX SFF Low Profile Ready GPU",
+    "img": "https://m.media-amazon.com/images/I/61nA7lnNXqL._AC_UL320_.jpg",
+    "c": "GPU",
     "b": "AMD",
     "pr": 39.99,
     "msrp": 39.99,
     "r": 4.1,
-    "img": "https://m.media-amazon.com/images/I/61nA7lnNXqL._AC_UL320_.jpg",
+    "vram": 2,
     "deals": {
       "amazon": {
         "asin": "B0DGCX12YB",
