@@ -55,7 +55,9 @@ export default [
     "connector": "RJ45",
     "wol": true,
     "vlan": false,
-    "pxe": false
+    "pxe": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 99102,
@@ -83,7 +85,9 @@ export default [
     "wol": true,
     "vlan": true,
     "pxe": true,
-    "connector": "RJ45"
+    "connector": "RJ45",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 99103,
@@ -111,7 +115,9 @@ export default [
     "connector": "SFP+",
     "wol": true,
     "vlan": true,
-    "pxe": true
+    "pxe": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 99104,
@@ -293,7 +299,9 @@ export default [
         "url": "https://www.amazon.com/dp/B0FMCM78NX?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 96107,

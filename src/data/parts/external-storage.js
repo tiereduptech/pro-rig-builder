@@ -340,7 +340,7 @@ export default [
     "reviews": 1691,
     "deals": {
       "amazon": {
-        "price": 205.9,
+        "price": 229.9,
         "url": "https://www.amazon.com/dp/B07MY44QBT?tag=tiereduptech-20",
         "inStock": true
       }
@@ -376,7 +376,7 @@ export default [
     "reviews": 16439,
     "deals": {
       "amazon": {
-        "price": 288.66,
+        "price": 303.9,
         "url": "https://www.amazon.com/dp/B07CQJBSQL?tag=tiereduptech-20",
         "inStock": true
       }
@@ -640,7 +640,7 @@ export default [
       "amazon": {
         "asin": "B0FH5NGWNY",
         "url": "https://www.amazon.com/dp/B0FH5NGWNY?tag=tiereduptech-20",
-        "price": 289.99,
+        "price": 313.49,
         "inStock": true
       }
     },
@@ -663,7 +663,7 @@ export default [
       "amazon": {
         "asin": "B07CRGSR16",
         "url": "https://www.amazon.com/dp/B07CRGSR16?tag=tiereduptech-20",
-        "price": 205.49,
+        "price": 189.99,
         "inStock": true
       },
       "newegg": {
@@ -706,7 +706,7 @@ export default [
     "cap": 22000,
     "storageType": "HDD",
     "interface": "SATA",
-    "quarantinedAt": "2026-07-07",
+    "quarantinedAt": "2026-07-13",
     "needsReview": true
   },
   {
@@ -768,7 +768,7 @@ export default [
       "amazon": {
         "asin": "B09VCXWPQG",
         "url": "https://www.amazon.com/dp/B09VCXWPQG?tag=tiereduptech-20",
-        "price": 814.99,
+        "price": 740,
         "inStock": true
       }
     },
@@ -1104,7 +1104,9 @@ export default [
         "url": "https://www.amazon.com/dp/B07CRG94G3?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 99501,
@@ -1163,7 +1165,7 @@ export default [
     "driveType": "SSD",
     "deals": {
       "amazon": {
-        "price": 275.18,
+        "price": 299.99,
         "url": "https://www.amazon.com/dp/B08HN37XC1?tag=tiereduptech-20",
         "inStock": true
       }

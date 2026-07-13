@@ -65,7 +65,9 @@ export default [
         "inStock": true
       }
     },
-    "ff": "Compact"
+    "ff": "Compact",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 99702,
@@ -120,7 +122,7 @@ export default [
     "watts": 360,
     "deals": {
       "amazon": {
-        "price": 62,
+        "price": 58.75,
         "url": "https://www.amazon.com/dp/B073Q48YGF?tag=tiereduptech-20",
         "inStock": true
       }
