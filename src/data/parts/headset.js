@@ -70,7 +70,9 @@ export default [
       }
     },
     "value": 6,
-    "bench": 75
+    "bench": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 97002,
@@ -154,7 +156,9 @@ export default [
       }
     },
     "value": 0,
-    "bench": 75
+    "bench": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 97005,
@@ -229,7 +233,9 @@ export default [
       }
     },
     "value": 28,
-    "bench": 75
+    "bench": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 97008,
@@ -275,7 +281,9 @@ export default [
       }
     },
     "value": 65,
-    "bench": 61
+    "bench": 61,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 97010,
@@ -299,7 +307,9 @@ export default [
     },
     "value": 50,
     "hsType": "Wireless",
-    "bench": 84
+    "bench": 84,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 97012,
@@ -325,7 +335,9 @@ export default [
     },
     "value": 99,
     "hsType": "Wired",
-    "bench": 54
+    "bench": 54,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 97013,
@@ -426,7 +438,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Turtle-Stealth-Wireless-Amplified-Headset-Nintendo/dp/B0CYWJJLBY/ref=sr_1_4?crid=MRVPSPTMXZV3&dib=eyJ2IjoiMSJ9.TGUcBFudkT26JpacVPP_qkh5IVdVYiy_Un7lqOx9ARf5ig5CPmtbtiGU-56-2992NPuNC0lDV9lezPZxKomcgHI3t1jGsZCc7jzw3fBa4nlu3TKRoqDjL28bU-70FhukaFDWlXga7v95I_BIIzF2h6IUu9Ssca7C7p0FgBG5LZ5_v9Enjz46FuHhAHLYpWnj3DWfJd8fCKhWLxclkEA_wFV22CFbgJx4XLRtSuHTWsU.ozAVXeiJ7pf-DjIrsg255D0lvCOFz9IzljDQfstezgg&dib_tag=se&keywords=wireless+gaming+headset&qid=1777130635&sprefix=wireless%2Bgaming%2Bheadset%2Caps%2C130&sr=8-4&tag=tiereduptech-20",
-        "price": 85.73,
+        "price": 69.99,
         "inStock": true
       },
       "bestbuy": {
@@ -499,7 +511,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/HyperX-Cloud-Gaming-Headset-KHX-HSCP-RD/dp/B00SAYCXWG/ref=sr_1_39?crid=GS25T10JQ3MC&dib=eyJ2IjoiMSJ9.lj-mOBnkc0mqMiZvd7MH2AdFIgtxslP0Ii9WJjZpr6ToFiRVu5i58h6i1VlLRAdrVTaYNBAFiRvGd3_QQIDIsDbUD0Ktl4jkiaCUYreNN1MTnmU2cJWJZKXdOyZPGs--2fkQDCkbrPWH4NFfR5sWpvVa7BF3n1gAFwJSbnfLAL91msRl788gfAVTqIRkBe5nSeL3P4Xr_FuB7qbuyZn7ZwZsXfpvE-FfVgvQkazHh_o._HwlrRPCoVH43P_tWHUrGFsvlrjeIv1OPMRFRmOKflc&dib_tag=se&keywords=SteelSeries+Arctis+Nova&qid=1777130636&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BArctis%2BNova%2Caps%2C159&sr=8-39&xpid=dGYW4tMVhPqrI&tag=tiereduptech-20",
-        "price": 49.99,
+        "price": 59.99,
         "inStock": true
       }
     },
@@ -545,7 +557,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Razer-BlackShark-V2-Gaming-Headset/dp/B09PZG4R17/ref=sr_1_9?crid=CED7P2DJKA98&dib=eyJ2IjoiMSJ9.x0ppXXru9LXp0mrY-SbYVItpjpE02VLyR0PE9na1CPdwwgCEr45BASxsnO8_r4mO7YUrod8RlfmBiARIoh5hZ9qk6dG5GlsAGvvwWCBoWNfRV3CkbNkcl5ldJr-3SoohXqHFWHkSxerCYz6SkeZB4fp_HMaGuQ2oKoE54XmvKRhtXV02Wh2KbJj0JJwPlQp9IC1LJlRusNn_UFGpqhdZSAWVTVUtchOtSPsRtlbKNJ4.O8MLT6onGo_frPL58BRLWqGep_2h_apSsI2EICztsQg&dib_tag=se&keywords=Razer+Kraken&qid=1777130639&sprefix=Razer%2BKraken%2Caps%2C269&sr=8-9&tag=tiereduptech-20",
-        "price": 39.99,
+        "price": 49.99,
         "inStock": true
       }
     },
@@ -630,7 +642,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-Wireless-Headset-Black-Tico/dp/B081415GCS/ref=sr_1_38?crid=GS25T10JQ3MC&dib=eyJ2IjoiMSJ9.lj-mOBnkc0mqMiZvd7MH2AdFIgtxslP0Ii9WJjZpr6ToFiRVu5i58h6i1VlLRAdrVTaYNBAFiRvGd3_QQIDIsDbUD0Ktl4jkiaCUYreNN1MTnmU2cJWJZKXdOyZPGs--2fkQDCkbrPWH4NFfR5sWpvVa7BF3n1gAFwJSbnfLAL91msRl788gfAVTqIRkBe5nSeL3P4Xr_FuB7qbuyZn7ZwZsXfpvE-FfVgvQkazHh_o._HwlrRPCoVH43P_tWHUrGFsvlrjeIv1OPMRFRmOKflc&dib_tag=se&keywords=SteelSeries+Arctis+Nova&qid=1777130636&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BArctis%2BNova%2Caps%2C159&sr=8-38&xpid=dGYW4tMVhPqrI&tag=tiereduptech-20",
-        "price": 127,
+        "price": 119.99,
         "inStock": true
       },
       "bestbuy": {
@@ -702,7 +714,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/HyperX-Official-Compatible-Detachable-Noise-Cancelling/dp/B08KS397GY/ref=sr_1_48?crid=GS25T10JQ3MC&dib=eyJ2IjoiMSJ9.lj-mOBnkc0mqMiZvd7MH2AdFIgtxslP0Ii9WJjZpr6ToFiRVu5i58h6i1VlLRAdrVTaYNBAFiRvGd3_QQIDIsDbUD0Ktl4jkiaCUYreNN1MTnmU2cJWJZKXdOyZPGs--2fkQDCkbrPWH4NFfR5sWpvVa7BF3n1gAFwJSbnfLAL91msRl788gfAVTqIRkBe5nSeL3P4Xr_FuB7qbuyZn7ZwZsXfpvE-FfVgvQkazHh_o._HwlrRPCoVH43P_tWHUrGFsvlrjeIv1OPMRFRmOKflc&dib_tag=se&keywords=SteelSeries+Arctis+Nova&qid=1777130636&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SteelSeries%2BArctis%2BNova%2Caps%2C159&sr=8-48&xpid=dGYW4tMVhPqrI&tag=tiereduptech-20",
-        "price": 49.99,
+        "price": 59.99,
         "inStock": true
       }
     },
@@ -754,7 +766,9 @@ export default [
     "driver": 38,
     "mic": false,
     "anc": false,
-    "bench": 52
+    "bench": 52,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 100047,
@@ -807,7 +821,9 @@ export default [
     "anc": false,
     "bench": 52,
     "upc": "00615104356146",
-    "mpn": "HD 560S"
+    "mpn": "HD 560S",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 100049,
@@ -962,7 +978,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-G435-Wireless-Gaming-Headset/dp/B08R8DT7X6/ref=sr_1_10?crid=MRVPSPTMXZV3&dib=eyJ2IjoiMSJ9.TGUcBFudkT26JpacVPP_qkh5IVdVYiy_Un7lqOx9ARf5ig5CPmtbtiGU-56-2992NPuNC0lDV9lezPZxKomcgHI3t1jGsZCc7jzw3fBa4nlu3TKRoqDjL28bU-70FhukaFDWlXga7v95I_BIIzF2h6IUu9Ssca7C7p0FgBG5LZ5_v9Enjz46FuHhAHLYpWnj3DWfJd8fCKhWLxclkEA_wFV22CFbgJx4XLRtSuHTWsU.ozAVXeiJ7pf-DjIrsg255D0lvCOFz9IzljDQfstezgg&dib_tag=se&keywords=wireless+gaming+headset&qid=1777130635&sprefix=wireless%2Bgaming%2Bheadset%2Caps%2C130&sr=8-10&tag=tiereduptech-20",
-        "price": 40.42,
+        "price": 42.82,
         "inStock": true
       }
     },
@@ -1011,7 +1027,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-G335-Wired-Gaming-Headset/dp/B08KKBSDTY/ref=sr_1_29?crid=X2H1PUODU33K&dib=eyJ2IjoiMSJ9.JpC-48LRQKGXQDtgfQkrIAYaTBPFrExCzwWvVPt0AWuLx-_QHuPTpuJl2F5KDL9mEaj4VNDAXVU6DH5euc2zhk5yjNFPbz8SVzqDqb9ByFrU5jzKaPvdrcaYr9SrLoevtytadQoLV_nL0xHOxdqI1vi6KTTD5xUT8pGOT6V0jRYIopIYy-b2xflu3CIIqUzNVkH6gVN4mzBM6Qnkn-YIlL_p3Hs1HBjMsi1B9OTV4TY.h-pRS3SsNHEodtNMOe9K8pku550mvwqjoEhYTFfwyMM&dib_tag=se&keywords=HyperX+Cloud+III&qid=1777130636&sprefix=HyperX%2BCloud%2BIII%2Caps%2C215&sr=8-29&xpid=bGwokda90C0g3&tag=tiereduptech-20",
-        "price": 32,
+        "price": 40.35,
         "inStock": true
       }
     },
@@ -1041,7 +1057,9 @@ export default [
     "driver": 38,
     "mic": false,
     "anc": false,
-    "bench": 52
+    "bench": 52,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 100059,
@@ -2061,7 +2079,7 @@ export default [
       "amazon": {
         "asin": "B0G5BMRV63",
         "url": "https://www.amazon.com/dp/B0G5BMRV63?tag=tiereduptech-20",
-        "price": 99.99,
+        "price": 94.99,
         "inStock": true
       }
     },
@@ -2196,7 +2214,7 @@ export default [
       "amazon": {
         "asin": "B0G5BMRV63",
         "url": "https://www.amazon.com/dp/B0G5BMRV63?tag=tiereduptech-20",
-        "price": 99.99,
+        "price": 94.99,
         "inStock": true
       }
     },
@@ -2316,7 +2334,7 @@ export default [
       "amazon": {
         "asin": "B0FFM18D66",
         "url": "https://www.amazon.com/dp/B0FFM18D66?tag=tiereduptech-20",
-        "price": 59.99,
+        "price": 49.99,
         "inStock": true
       }
     },
@@ -2356,7 +2374,7 @@ export default [
       "amazon": {
         "asin": "B0DB96KTGL",
         "url": "https://www.amazon.com/dp/B0DB96KTGL?tag=tiereduptech-20",
-        "price": 149.99,
+        "price": 102.64,
         "inStock": true
       }
     },
@@ -2396,7 +2414,7 @@ export default [
       "amazon": {
         "asin": "B0FFM5SP6M",
         "url": "https://www.amazon.com/dp/B0FFM5SP6M?tag=tiereduptech-20",
-        "price": 129.99,
+        "price": 145.99,
         "inStock": true
       }
     },
@@ -2416,7 +2434,7 @@ export default [
       "amazon": {
         "asin": "B0FRNHBVFY",
         "url": "https://www.amazon.com/dp/B0FRNHBVFY?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 159.99,
         "inStock": true
       }
     },
@@ -2456,7 +2474,7 @@ export default [
       "amazon": {
         "asin": "B0GHZW75GZ",
         "url": "https://www.amazon.com/dp/B0GHZW75GZ?tag=tiereduptech-20",
-        "price": 89.99,
+        "price": 79.99,
         "inStock": true
       }
     },
@@ -2671,7 +2689,7 @@ export default [
       "amazon": {
         "asin": "B0FLFXYJWY",
         "url": "https://www.amazon.com/dp/B0FLFXYJWY?tag=tiereduptech-20",
-        "price": 127.9,
+        "price": 154.99,
         "inStock": true
       }
     },
@@ -2896,7 +2914,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.629Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 101660,
@@ -2966,7 +2986,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.630Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 101664,
@@ -3171,7 +3193,7 @@ export default [
       "amazon": {
         "asin": "B098JGRWFX",
         "url": "https://www.amazon.com/dp/B098JGRWFX?tag=tiereduptech-20",
-        "price": 34.99,
+        "price": 40.99,
         "inStock": true
       }
     },
@@ -3206,7 +3228,7 @@ export default [
       "amazon": {
         "asin": "B0FFXZ9XQ4",
         "url": "https://www.amazon.com/dp/B0FFXZ9XQ4?tag=tiereduptech-20",
-        "price": 159.99,
+        "price": 149.94,
         "inStock": true
       }
     },
@@ -3246,7 +3268,7 @@ export default [
       "amazon": {
         "asin": "B0CW34HBKZ",
         "url": "https://www.amazon.com/dp/B0CW34HBKZ?tag=tiereduptech-20",
-        "price": 79.99,
+        "price": 69.99,
         "inStock": true
       }
     },
@@ -3531,7 +3553,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.633Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 101697,
@@ -3551,7 +3575,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.633Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 101698,
@@ -3591,7 +3617,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.633Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 101700,
@@ -3626,7 +3654,7 @@ export default [
       "amazon": {
         "asin": "B0FRPH94LH",
         "url": "https://www.amazon.com/dp/B0FRPH94LH?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 159.99,
         "inStock": true
       }
     },
@@ -3666,7 +3694,7 @@ export default [
       "amazon": {
         "asin": "B0CYWD9PSM",
         "url": "https://www.amazon.com/dp/B0CYWD9PSM?tag=tiereduptech-20",
-        "price": 89,
+        "price": 109,
         "inStock": true
       }
     },
@@ -3746,7 +3774,7 @@ export default [
       "amazon": {
         "asin": "B0CTKSN97F",
         "url": "https://www.amazon.com/dp/B0CTKSN97F?tag=tiereduptech-20",
-        "price": 140.99,
+        "price": 155.07,
         "inStock": true
       }
     },
@@ -3866,7 +3894,7 @@ export default [
       "amazon": {
         "asin": "B0CTKQJXXG",
         "url": "https://www.amazon.com/dp/B0CTKQJXXG?tag=tiereduptech-20",
-        "price": 149.99,
+        "price": 172.36,
         "inStock": true
       }
     },
@@ -3906,7 +3934,7 @@ export default [
       "amazon": {
         "asin": "B005HWEZGG",
         "url": "https://www.amazon.com/dp/B005HWEZGG?tag=tiereduptech-20",
-        "price": 42.14,
+        "price": 45.95,
         "inStock": true
       }
     },

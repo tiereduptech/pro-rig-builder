@@ -19,7 +19,9 @@ export default [
         "url": "https://www.amazon.com/dp/B07RS4TPVW?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 98901,
@@ -39,7 +41,9 @@ export default [
         "url": "https://www.amazon.com/dp/B0FYPFP25T?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 98902,
@@ -59,7 +63,9 @@ export default [
         "url": "https://www.amazon.com/dp/B0C3WND2QB?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 99304,
@@ -173,7 +179,9 @@ export default [
         "url": "https://www.amazon.com/dp/B0CKHC6JJ2?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 99310,
