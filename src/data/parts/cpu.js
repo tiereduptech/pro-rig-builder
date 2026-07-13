@@ -119,7 +119,9 @@ export default [
         "inStock": true
       }
     },
-    "igpu": true
+    "igpu": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 10005,
@@ -337,7 +339,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-07-11"
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 10012,
@@ -975,7 +977,7 @@ export default [
     "bench": 31,
     "deals": {
       "amazon": {
-        "price": 164.9,
+        "price": 148.95,
         "url": "https://www.amazon.com/dp/B09VCHR1VH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1701,7 +1703,7 @@ export default [
     "bench": 82,
     "deals": {
       "amazon": {
-        "price": 629.9,
+        "price": 525.96,
         "url": "https://www.amazon.com/dp/B0BCFM3CJ4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1843,7 +1845,7 @@ export default [
     "upc": "00735858526739",
     "mpn": "BX8071513600KF",
     "needsReview": true,
-    "quarantinedAt": "2026-07-11"
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 10072,
@@ -3068,7 +3070,7 @@ export default [
     "reviews": 24,
     "deals": {
       "amazon": {
-        "price": 482.98,
+        "price": 457.57,
         "url": "https://www.amazon.com/dp/B0BV3C385D?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3568,7 +3570,7 @@ export default [
     "threads": 24,
     "bench": 78,
     "bundle": true,
-    "quarantinedAt": "2026-07-11",
+    "quarantinedAt": "2026-07-13",
     "needsReview": true
   },
   {
@@ -3811,7 +3813,7 @@ export default [
     "maxMem": "192 gigabytes",
     "unlocked": true,
     "bench": 83,
-    "quarantinedAt": "2026-07-11",
+    "quarantinedAt": "2026-07-13",
     "needsReview": true
   },
   {
@@ -3889,7 +3891,7 @@ export default [
     "maxMem": "192 gigabytes",
     "unlocked": true,
     "bench": 55,
-    "quarantinedAt": "2026-07-11",
+    "quarantinedAt": "2026-07-13",
     "needsReview": true
   },
   {
@@ -4163,7 +4165,7 @@ export default [
     "maxMem": "192 gigabytes",
     "unlocked": true,
     "bench": 96,
-    "quarantinedAt": "2026-07-11",
+    "quarantinedAt": "2026-07-13",
     "needsReview": true
   },
   {
@@ -5380,7 +5382,7 @@ export default [
       "amazon": {
         "asin": "B0BMQJWBDM",
         "url": "https://www.amazon.com/dp/B0BMQJWBDM?tag=tiereduptech-20",
-        "price": 185.06,
+        "price": 209.9,
         "inStock": true
       }
     },
@@ -5766,7 +5768,7 @@ export default [
     "tdp": 65,
     "igpu": true,
     "bench": 8,
-    "quarantinedAt": "2026-07-11",
+    "quarantinedAt": "2026-07-13",
     "needsReview": true
   },
   {
@@ -5793,7 +5795,7 @@ export default [
     "tdp": 65,
     "igpu": true,
     "bench": 19,
-    "quarantinedAt": "2026-07-11",
+    "quarantinedAt": "2026-07-13",
     "needsReview": true
   },
   {
@@ -6233,7 +6235,9 @@ export default [
     "cores": 2,
     "socket": "LGA1200",
     "tdp": 58,
-    "bench": 5
+    "bench": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 100594,
@@ -6434,7 +6438,7 @@ export default [
     "socket": "LGA1151",
     "tdp": 54,
     "bench": 4,
-    "quarantinedAt": "2026-07-11",
+    "quarantinedAt": "2026-07-13",
     "needsReview": true
   },
   {
@@ -6511,7 +6515,7 @@ export default [
     "boostClock": 4.3,
     "igpu": true,
     "bench": 10,
-    "quarantinedAt": "2026-07-11",
+    "quarantinedAt": "2026-07-13",
     "needsReview": true
   },
   {
@@ -6619,7 +6623,7 @@ export default [
       "amazon": {
         "asin": "B0DJLWFRCH",
         "url": "https://www.amazon.com/dp/B0DJLWFRCH?tag=tiereduptech-20",
-        "price": 222.83,
+        "price": 176,
         "inStock": true
       }
     },
@@ -6750,7 +6754,7 @@ export default [
     "tdp": 65,
     "bench": 35,
     "needsReview": true,
-    "quarantinedAt": "2026-07-11"
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 100616,
@@ -6944,7 +6948,7 @@ export default [
       "amazon": {
         "asin": "B0C6YQSN8P",
         "url": "https://www.amazon.com/dp/B0C6YQSN8P?tag=tiereduptech-20",
-        "price": 749,
+        "price": 709.99,
         "inStock": true
       }
     },
@@ -7099,7 +7103,7 @@ export default [
     "socket": "LGA2066",
     "tdp": 165,
     "needsReview": true,
-    "quarantinedAt": "2026-07-11"
+    "quarantinedAt": "2026-07-13"
   },
   {
     "id": 100631,
