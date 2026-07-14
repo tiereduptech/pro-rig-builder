@@ -1431,20 +1431,6 @@ export default [
         "price": 190,
         "url": "https://www.amazon.com/dp/B0G3TWBHYC?tag=tiereduptech-20",
         "inStock": true
-      },
-      "newegg": {
-        "sku": "N82E16813144734",
-        "price": 219.99,
-        "saleprice": 189.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317587940476334166171&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16813144734%3Fitem%3DN82E16813144734",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-734-06.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 0.8,
-        "migratedAt": "2026-07-06T09:58:43.151Z",
-        "migratedFrom": "9SIC4RPKRD3367",
-        "staleSince": "2026-07-06T19:46:01.938Z"
       }
     },
     "value": 40,
