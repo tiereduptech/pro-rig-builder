@@ -29,7 +29,7 @@ export default [
       }
     },
     "value": 36,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 89,
     "resolution": "1440p",
     "needsReview": true
@@ -63,7 +63,9 @@ export default [
     },
     "value": 22,
     "bench": 95,
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 90002,
@@ -93,7 +95,7 @@ export default [
       }
     },
     "value": 34,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 100,
     "resolution": "1440p",
     "needsReview": true
@@ -126,7 +128,7 @@ export default [
       }
     },
     "value": 46,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 82,
     "resolution": "1440p",
     "needsReview": true
@@ -160,7 +162,7 @@ export default [
       }
     },
     "value": 38,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 89,
     "resolution": "1440p",
     "needsReview": true
@@ -194,7 +196,7 @@ export default [
       }
     },
     "value": 24,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 100,
     "needsReview": true
   },
@@ -258,7 +260,7 @@ export default [
       }
     },
     "value": 17,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 61,
     "resolution": "1440p",
     "needsReview": true
@@ -291,7 +293,7 @@ export default [
       }
     },
     "value": 100,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 74,
     "resolution": "1080p",
     "needsReview": true
@@ -325,7 +327,7 @@ export default [
       }
     },
     "value": 50,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 95,
     "resolution": "1440p",
     "needsReview": true
@@ -358,7 +360,7 @@ export default [
       }
     },
     "value": 30,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 64,
     "resolution": "1080p",
     "needsReview": true
@@ -392,7 +394,7 @@ export default [
       }
     },
     "value": 5,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 54,
     "resolution": "1440p",
     "needsReview": true
@@ -426,7 +428,7 @@ export default [
       }
     },
     "value": 6,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 68,
     "resolution": "4K",
     "needsReview": true
@@ -460,7 +462,7 @@ export default [
       }
     },
     "value": 13,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 100,
     "resolution": "4K",
     "needsReview": true
@@ -493,7 +495,7 @@ export default [
       }
     },
     "value": 17,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 100,
     "resolution": "4K",
     "needsReview": true
@@ -553,7 +555,7 @@ export default [
     "reviews": 812,
     "deals": {
       "amazon": {
-        "price": 179.99,
+        "price": 259.99,
         "url": "https://www.amazon.com/dp/B0DD7GPXFH?tag=tiereduptech-20",
         "inStock": true
       }
@@ -647,7 +649,9 @@ export default [
     "hdr": "HDR True Black 400",
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 90019,
@@ -695,7 +699,7 @@ export default [
     "reviews": 1293,
     "deals": {
       "amazon": {
-        "price": 251.26,
+        "price": 279.99,
         "url": "https://www.amazon.com/dp/B08LCMYT54?tag=tiereduptech-20",
         "inStock": true
       }
@@ -835,7 +839,7 @@ export default [
     "reviews": 443,
     "deals": {
       "amazon": {
-        "price": 370,
+        "price": 349.99,
         "url": "https://www.amazon.com/dp/B0BCXJ7XXM?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1049,7 +1053,7 @@ export default [
     "reviews": 58,
     "deals": {
       "amazon": {
-        "price": 139.99,
+        "price": 164.99,
         "url": "https://www.amazon.com/dp/B0FP95S9XK?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1107,7 +1111,7 @@ export default [
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
     "needsReview": true,
-    "quarantinedAt": "2026-07-16"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 90032,
@@ -1226,7 +1230,7 @@ export default [
     "reviews": 97,
     "deals": {
       "amazon": {
-        "price": 139.99,
+        "price": 175.99,
         "url": "https://www.amazon.com/dp/B0FCXZVYGN?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1303,7 +1307,7 @@ export default [
     "reviews": 75,
     "deals": {
       "amazon": {
-        "price": 169.99,
+        "price": 159.99,
         "url": "https://www.amazon.com/dp/B0FCXZ17JQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1397,7 +1401,9 @@ export default [
     "response": "5 Milliseconds",
     "bench": 52,
     "ports": "HDMI, USB-C",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 90040,
@@ -1444,7 +1450,7 @@ export default [
     "reviews": 498,
     "deals": {
       "amazon": {
-        "price": 111.14,
+        "price": 119.99,
         "url": "https://www.amazon.com/dp/B0DTH3SGZD?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1619,7 +1625,7 @@ export default [
     "reviews": 118,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 138.59,
         "url": "https://www.amazon.com/dp/B0DL33J9VQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1689,7 +1695,7 @@ export default [
     "reviews": 38,
     "deals": {
       "amazon": {
-        "price": 349.99,
+        "price": 287.97,
         "url": "https://www.amazon.com/dp/B0FJ2H6LK4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1761,7 +1767,7 @@ export default [
     "reviews": 511,
     "deals": {
       "amazon": {
-        "price": 139.98,
+        "price": 149.99,
         "url": "https://www.amazon.com/dp/B0G2LKMBHV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1888,7 +1894,7 @@ export default [
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "4K",
     "needsReview": true,
-    "quarantinedAt": "2026-07-16"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 90054,
@@ -1998,7 +2004,7 @@ export default [
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
     "needsReview": true,
-    "quarantinedAt": "2026-07-16"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 90057,
@@ -2013,7 +2019,7 @@ export default [
     "reviews": 26,
     "deals": {
       "amazon": {
-        "price": 699.99,
+        "price": 624.99,
         "url": "https://www.amazon.com/dp/B0FL1JYN7C?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2086,7 +2092,9 @@ export default [
     "hdr": "HDR True Black 400",
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 90059,
@@ -2221,7 +2229,9 @@ export default [
     "bench": 89,
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 90063,
@@ -2236,7 +2246,7 @@ export default [
     "reviews": 1196,
     "deals": {
       "amazon": {
-        "price": 188.99,
+        "price": 208.99,
         "url": "https://www.amazon.com/dp/B0GHLYTLQC?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2484,7 +2494,7 @@ export default [
     "bench": 59,
     "ports": "1x HDMI, 1x DisplayPort",
     "resolution": "4K",
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -2540,7 +2550,7 @@ export default [
     "reviews": 294,
     "deals": {
       "amazon": {
-        "price": 246.99,
+        "price": 209.98,
         "url": "https://www.amazon.com/dp/B0FNM7RQ5P?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2577,7 +2587,7 @@ export default [
     "reviews": 235,
     "deals": {
       "amazon": {
-        "price": 399.99,
+        "price": 369.99,
         "url": "https://www.amazon.com/dp/B0FNJQRJRF?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2683,7 +2693,7 @@ export default [
     "reviews": 184,
     "deals": {
       "amazon": {
-        "price": 209.99,
+        "price": 189.98,
         "url": "https://www.amazon.com/dp/B0FRMYSKQL?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2780,7 +2790,7 @@ export default [
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -3296,7 +3306,7 @@ export default [
     "reviews": 8,
     "deals": {
       "amazon": {
-        "price": 799.49,
+        "price": 657.29,
         "url": "https://www.amazon.com/dp/B0FJ2G1T68?tag=tiereduptech-20",
         "inStock": true
       }
@@ -12147,7 +12157,7 @@ export default [
       "amazon": {
         "asin": "B0D9HWRQM7",
         "url": "https://www.amazon.com/dp/B0D9HWRQM7?tag=tiereduptech-20",
-        "price": 194.49,
+        "price": 235.69,
         "inStock": true
       }
     },
@@ -12216,7 +12226,7 @@ export default [
       "amazon": {
         "asin": "B0DVM3BJHK",
         "url": "https://www.amazon.com/dp/B0DVM3BJHK?tag=tiereduptech-20",
-        "price": 799.99,
+        "price": 849.99,
         "inStock": true
       }
     },
@@ -12471,7 +12481,7 @@ export default [
     "resolution": "4K",
     "refresh": 60,
     "panel": "IPS",
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -12487,7 +12497,7 @@ export default [
       "amazon": {
         "asin": "B0DT11T36K",
         "url": "https://www.amazon.com/dp/B0DT11T36K?tag=tiereduptech-20",
-        "price": 299.99,
+        "price": 399.99,
         "inStock": true
       }
     },
@@ -12559,7 +12569,7 @@ export default [
       "amazon": {
         "asin": "B0GD1LMWH3",
         "url": "https://www.amazon.com/dp/B0GD1LMWH3?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 189.99,
         "inStock": true
       }
     },
@@ -12630,7 +12640,7 @@ export default [
       "amazon": {
         "asin": "B0FNPSLCFL",
         "url": "https://www.amazon.com/dp/B0FNPSLCFL?tag=tiereduptech-20",
-        "price": 169.99,
+        "price": 199.99,
         "inStock": true
       }
     },
@@ -12773,7 +12783,7 @@ export default [
       "amazon": {
         "asin": "B0GF4672H9",
         "url": "https://www.amazon.com/dp/B0GF4672H9?tag=tiereduptech-20",
-        "price": 189.99,
+        "price": 205.49,
         "inStock": true
       }
     },
@@ -12892,7 +12902,7 @@ export default [
       "amazon": {
         "asin": "B0G1DZM5QW",
         "url": "https://www.amazon.com/dp/B0G1DZM5QW?tag=tiereduptech-20",
-        "price": 269.99,
+        "price": 219.99,
         "inStock": true
       }
     },
@@ -13336,7 +13346,7 @@ export default [
       "amazon": {
         "asin": "B0F2349MJT",
         "url": "https://www.amazon.com/dp/B0F2349MJT?tag=tiereduptech-20",
-        "price": 249,
+        "price": 287.89,
         "inStock": true
       }
     },
@@ -13542,7 +13552,7 @@ export default [
       "amazon": {
         "asin": "B0GDSC8K2H",
         "url": "https://www.amazon.com/dp/B0GDSC8K2H?tag=tiereduptech-20",
-        "price": 496.99,
+        "price": 582.15,
         "inStock": true
       }
     },
@@ -13589,7 +13599,7 @@ export default [
       "amazon": {
         "asin": "B0G5Z5N274",
         "url": "https://www.amazon.com/dp/B0G5Z5N274?tag=tiereduptech-20",
-        "price": 349.99,
+        "price": 469.17,
         "inStock": true
       }
     },
@@ -13623,7 +13633,7 @@ export default [
     "refresh": 240,
     "panel": "OLED",
     "curved": true,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -13992,7 +14002,7 @@ export default [
       "amazon": {
         "asin": "B0FLL354M2",
         "url": "https://www.amazon.com/dp/B0FLL354M2?tag=tiereduptech-20",
-        "price": 129.99,
+        "price": 139.99,
         "inStock": true
       }
     },
@@ -14139,7 +14149,7 @@ export default [
     "refresh": 200,
     "panel": "VA",
     "curved": true,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -14719,7 +14729,7 @@ export default [
       "amazon": {
         "asin": "B0DSGJRKCR",
         "url": "https://www.amazon.com/dp/B0DSGJRKCR?tag=tiereduptech-20",
-        "price": 949.99,
+        "price": 1199,
         "inStock": true
       }
     },
@@ -14860,7 +14870,7 @@ export default [
       "amazon": {
         "asin": "B0D5Z565D5",
         "url": "https://www.amazon.com/dp/B0D5Z565D5?tag=tiereduptech-20",
-        "price": 207.99,
+        "price": 299.99,
         "inStock": true
       }
     },

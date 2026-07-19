@@ -48,7 +48,7 @@ export default [
     "noise": 31.5,
     "rpm": 2000,
     "needsReview": true,
-    "quarantinedAt": "2026-07-16"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 100971,
@@ -290,7 +290,7 @@ export default [
     "rpm": 1800,
     "pwm": true,
     "rgbType": "ARGB",
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 82,
     "fans_inc": 3,
     "needsReview": true
@@ -324,7 +324,7 @@ export default [
     "bench": 70,
     "fans_inc": 3,
     "needsReview": true,
-    "quarantinedAt": "2026-07-16"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 85007,
@@ -463,7 +463,7 @@ export default [
     "value": 73,
     "rpm": 2000,
     "pwm": true,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 74,
     "needsReview": true
   },
@@ -492,7 +492,7 @@ export default [
     "value": 75,
     "rpm": 1850,
     "pwm": true,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "bench": 66,
     "fans_inc": 3,
     "needsReview": true
@@ -1253,7 +1253,7 @@ export default [
     "reviews": 121,
     "deals": {
       "amazon": {
-        "price": 25.11,
+        "price": 27.9,
         "url": "https://www.amazon.com/dp/B0G39DCF81?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1356,7 +1356,7 @@ export default [
     "mpn": "ACFAN00333A",
     "fanSize": 120,
     "needsReview": true,
-    "quarantinedAt": "2026-07-16"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 85036,
@@ -1984,7 +1984,7 @@ export default [
     "reviews": 730,
     "deals": {
       "amazon": {
-        "price": 21.57,
+        "price": 26.9,
         "url": "https://www.amazon.com/dp/B0F6T6GCV8?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2128,7 +2128,7 @@ export default [
     "reviews": 299,
     "deals": {
       "amazon": {
-        "price": 49.98,
+        "price": 32.39,
         "url": "https://www.amazon.com/dp/B0CXSRXSXQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2364,7 +2364,7 @@ export default [
     "reviews": 121,
     "deals": {
       "amazon": {
-        "price": 23.72,
+        "price": 27.9,
         "url": "https://www.amazon.com/dp/B0GC66NV13?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2916,7 +2916,7 @@ export default [
     "reviews": 507,
     "deals": {
       "amazon": {
-        "price": 49.98,
+        "price": 39.97,
         "url": "https://www.amazon.com/dp/B0C5PY91W9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3127,7 +3127,7 @@ export default [
     "reviews": 299,
     "deals": {
       "amazon": {
-        "price": 49.98,
+        "price": 39.97,
         "url": "https://www.amazon.com/dp/B0F8ZJVZ9T?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3485,7 +3485,7 @@ export default [
     "reviews": 121,
     "deals": {
       "amazon": {
-        "price": 99.75,
+        "price": 105,
         "url": "https://www.amazon.com/dp/B0DJVMKDV1?tag=tiereduptech-20",
         "inStock": true
       },
@@ -3685,7 +3685,7 @@ export default [
     "reviews": 56,
     "deals": {
       "amazon": {
-        "price": 21.99,
+        "price": 18.69,
         "url": "https://www.amazon.com/dp/B0F7H885V6?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3723,7 +3723,7 @@ export default [
     "reviews": 50,
     "deals": {
       "amazon": {
-        "price": 26.99,
+        "price": 22.59,
         "url": "https://www.amazon.com/dp/B0FHH3V861?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4691,7 +4691,7 @@ export default [
     "pack": 1,
     "bench": 61,
     "fanSize": 120,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -5659,7 +5659,7 @@ export default [
     "bench": 71,
     "mpn": "RF-R14SF-B1",
     "neweggRemovedOutlier": "2026-06-28",
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -5982,7 +5982,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "pwm": false,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 85159,
@@ -6074,7 +6076,7 @@ export default [
     "reviews": 799,
     "deals": {
       "amazon": {
-        "price": 30.9,
+        "price": 44.99,
         "url": "https://www.amazon.com/dp/B0D3H5TXPK?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6246,7 +6248,7 @@ export default [
     "mpn": "ACFAN00239A",
     "fanSize": 140,
     "needsReview": true,
-    "quarantinedAt": "2026-07-16"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 85166,
@@ -6842,7 +6844,9 @@ export default [
     "pack": 2,
     "bench": 79,
     "mpn": "CO-9050139-WW",
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 85182,
@@ -7376,7 +7380,7 @@ export default [
     "rgbType": "ARGB",
     "pack": 1,
     "bench": 68,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "fanSize": 120,
     "bestbuyRemovedComp": "2026-06-28",
     "needsReview": true
@@ -7394,7 +7398,7 @@ export default [
     "reviews": 201,
     "deals": {
       "amazon": {
-        "price": 39.99,
+        "price": 26,
         "url": "https://www.amazon.com/dp/B0CYLTZHXW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7692,7 +7696,7 @@ export default [
     "reviews": 117,
     "deals": {
       "amazon": {
-        "price": 31.16,
+        "price": 29.39,
         "url": "https://www.amazon.com/dp/B00KESSI2A?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7939,7 +7943,7 @@ export default [
     "reviews": 88,
     "deals": {
       "amazon": {
-        "price": 36.87,
+        "price": 31.7,
         "url": "https://www.amazon.com/dp/B0DKST5LX5?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8113,7 +8117,7 @@ export default [
     "reviews": 61,
     "deals": {
       "amazon": {
-        "price": 24.03,
+        "price": 25.34,
         "url": "https://www.amazon.com/dp/B0D7VWYRYR?tag=tiereduptech-20",
         "inStock": true
       }
@@ -8174,7 +8178,7 @@ export default [
     "rgbType": "ARGB",
     "pack": 1,
     "bench": 69,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "fanSize": 140,
     "bestbuyRemovedComp": "2026-06-28",
     "needsReview": true
@@ -8717,7 +8721,7 @@ export default [
     "reviews": 24,
     "deals": {
       "amazon": {
-        "price": 19.96,
+        "price": 17.96,
         "url": "https://www.amazon.com/dp/B0CW4X7J91?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9295,7 +9299,7 @@ export default [
     "pack": 3,
     "bench": 61,
     "fanSize": 120,
-    "quarantinedAt": "2026-07-16",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
