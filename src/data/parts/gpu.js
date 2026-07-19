@@ -137,7 +137,7 @@ export default [
     },
     "baseClock": 2295,
     "boostClock": 2452,
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -418,7 +418,7 @@ export default [
     },
     "baseClock": 2310,
     "boostClock": 2610,
-    "quarantinedAt": "2026-07-15",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -544,7 +544,7 @@ export default [
     },
     "baseClock": 2310,
     "boostClock": 2535,
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -1167,7 +1167,7 @@ export default [
     "baseClock": 1295,
     "boostClock": 2430,
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 30036,
@@ -1369,7 +1369,7 @@ export default [
         "inStock": true
       }
     },
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -1475,7 +1475,7 @@ export default [
     },
     "baseClock": 2321,
     "boostClock": 2581,
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -1545,7 +1545,7 @@ export default [
     },
     "baseClock": 1968,
     "boostClock": 2589,
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -1822,7 +1822,7 @@ export default [
     "bench": 62,
     "deals": {
       "amazon": {
-        "price": 2795,
+        "price": 2470,
         "url": "https://www.amazon.com/dp/B0DLWP2KN9?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2063,7 +2063,7 @@ export default [
     "upc": "00727419314992",
     "mpn": "100-300000006",
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 30064,
@@ -2286,7 +2286,7 @@ export default [
     "segment": "gaming",
     "deals": {
       "amazon": {
-        "price": 2168.8,
+        "price": 1749.99,
         "url": "https://www.amazon.com/dp/B0DSXJ5QF4?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2397,7 +2397,7 @@ export default [
     "baseClock": 2295,
     "boostClock": 2452,
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 30074,
@@ -2422,7 +2422,7 @@ export default [
     "segment": "gaming",
     "deals": {
       "amazon": {
-        "price": 1300,
+        "price": 1399.99,
         "url": "https://www.amazon.com/dp/B0DV9GMDLR?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2942,7 +2942,7 @@ export default [
     },
     "sp": 4096,
     "bench": 71,
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -2974,7 +2974,7 @@ export default [
     },
     "sp": 4096,
     "bench": 71,
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -3006,7 +3006,7 @@ export default [
     },
     "sp": 4096,
     "bench": 71,
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -3038,7 +3038,7 @@ export default [
     },
     "sp": 4096,
     "bench": 72,
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -3168,7 +3168,7 @@ export default [
     "sp": 3840,
     "bench": 64,
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 30098,
@@ -3321,7 +3321,7 @@ export default [
     "segment": "gaming",
     "deals": {
       "amazon": {
-        "price": 879,
+        "price": 699,
         "url": "https://www.amazon.com/dp/B0C4F9GSLM?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3364,7 +3364,7 @@ export default [
     "baseClock": 1720,
     "boostClock": 2655,
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 30104,
@@ -3558,7 +3558,7 @@ export default [
     "baseClock": 2400,
     "boostClock": 2970,
     "pcie": "5.0 x16",
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -3994,7 +3994,7 @@ export default [
     "reviews": 89,
     "deals": {
       "amazon": {
-        "price": 1949.99,
+        "price": 1699.99,
         "url": "https://www.amazon.com/dp/B0DYVCGVK4?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4074,7 +4074,7 @@ export default [
     "reviews": 14,
     "deals": {
       "amazon": {
-        "price": 2201.57,
+        "price": 1749.99,
         "url": "https://www.amazon.com/dp/B0DSXJ5QF4?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4157,7 +4157,7 @@ export default [
     "slots": 2.5,
     "memType": "GDDR7",
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 30124,
@@ -4341,7 +4341,7 @@ export default [
     "reviews": 637,
     "deals": {
       "amazon": {
-        "price": 459.99,
+        "price": 548.74,
         "url": "https://www.amazon.com/dp/B0F7HTR8DQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -4485,7 +4485,7 @@ export default [
     "boostClock": 2535,
     "pcie": "4.0 x8",
     "slots": 2.5,
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -4574,7 +4574,7 @@ export default [
     "reviews": 413,
     "deals": {
       "amazon": {
-        "price": 679.22,
+        "price": 929.85,
         "url": "https://www.amazon.com/dp/B0CGHQ32S2?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5055,7 +5055,7 @@ export default [
     "slots": 2.5,
     "memType": "GDDR7",
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 30147,
@@ -5131,7 +5131,7 @@ export default [
     "bench": 51,
     "pcie": "4.0 x16",
     "memType": "GDDR6",
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -5467,7 +5467,7 @@ export default [
     "bench": 59,
     "pcie": "4.0 x16",
     "memType": "GDDR6",
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -5990,7 +5990,7 @@ export default [
     "pcie": "4.0 x16",
     "slots": 2.5,
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 30172,
@@ -6037,7 +6037,7 @@ export default [
     "upc": "00889523049389",
     "memType": "GDDR7",
     "needsReview": true,
-    "quarantinedAt": "2026-07-11"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 30173,
@@ -6924,7 +6924,7 @@ export default [
     "reviews": 23,
     "deals": {
       "amazon": {
-        "price": 799.99,
+        "price": 749.99,
         "url": "https://www.amazon.com/dp/B0F7XHBT13?tag=tiereduptech-20",
         "inStock": true
       },
@@ -7111,7 +7111,7 @@ export default [
     "pcie": "5.0 x16",
     "slots": 3,
     "memType": "GDDR7",
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -7713,7 +7713,7 @@ export default [
     "pcie": "5.0 x8",
     "slots": 2.5,
     "memType": "GDDR7",
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -7754,7 +7754,7 @@ export default [
     "pcie": "5.0 x16",
     "slots": 3.5,
     "memType": "GDDR7",
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -7807,7 +7807,7 @@ export default [
     "reviews": 2,
     "deals": {
       "amazon": {
-        "price": 3299,
+        "price": 3099,
         "url": "https://www.amazon.com/dp/B0CPB3P36K?tag=tiereduptech-20",
         "inStock": true
       }
@@ -11786,7 +11786,7 @@ export default [
     "slots": 2.5,
     "memType": "GDDR6X",
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 30341,
@@ -11865,7 +11865,7 @@ export default [
     "boostClock": 1725,
     "pcie": "4.0 x16",
     "slots": 2.5,
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -11977,7 +11977,7 @@ export default [
     "slots": 2.5,
     "memType": "GDDR6",
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 30348,
@@ -12007,7 +12007,7 @@ export default [
     "pcie": "4.0 x16",
     "slots": 2.5,
     "memType": "GDDR6",
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -12113,7 +12113,7 @@ export default [
     "baseClock": 1650,
     "boostClock": 1815,
     "pcie": "3.0 x16",
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -12272,7 +12272,7 @@ export default [
     "boostClock": 1620,
     "pcie": "3.0 x16",
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 30359,
@@ -12418,7 +12418,7 @@ export default [
     "pcie": "4.0 x16",
     "slots": 2,
     "memType": "GDDR6",
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -12500,7 +12500,7 @@ export default [
     "slots": 2,
     "memType": "GDDR6",
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 30369,
@@ -12854,7 +12854,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/71qcFgjH5zL._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "price": 359.95,
+        "price": 339.49,
         "url": "https://www.amazon.com/dp/B0DR337DJG?tag=tiereduptech-20",
         "inStock": true
       }
@@ -12967,7 +12967,7 @@ export default [
     "length": 165,
     "slots": 1,
     "memType": "GDDR6",
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -13337,7 +13337,7 @@ export default [
     "memType": "GDDR7",
     "bench": 87,
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 100409,
@@ -13600,7 +13600,7 @@ export default [
     "memType": "GDDR6X",
     "bench": 80,
     "vram": 12,
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -13673,7 +13673,7 @@ export default [
     "memType": "GDDR6X",
     "bench": 85,
     "needsReview": true,
-    "quarantinedAt": "2026-07-15"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 100424,
@@ -13734,7 +13734,7 @@ export default [
       "amazon": {
         "asin": "B0DSWL46CF",
         "url": "https://www.amazon.com/dp/B0DSWL46CF?tag=tiereduptech-20",
-        "price": 649.99,
+        "price": 686.85,
         "inStock": true
       }
     },
@@ -13867,7 +13867,7 @@ export default [
       "amazon": {
         "asin": "B0DT7C5ZC7",
         "url": "https://www.amazon.com/dp/B0DT7C5ZC7?tag=tiereduptech-20",
-        "price": 1204.37,
+        "price": 945.99,
         "inStock": true
       }
     },
@@ -13937,7 +13937,7 @@ export default [
       "amazon": {
         "asin": "B0BNLSW23M",
         "url": "https://www.amazon.com/dp/B0BNLSW23M?tag=tiereduptech-20",
-        "price": 1099.99,
+        "price": 1019.99,
         "inStock": true
       }
     },
@@ -14041,7 +14041,7 @@ export default [
     "bench": 76,
     "memType": "GDDR6X",
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 100440,
@@ -14248,7 +14248,7 @@ export default [
       "amazon": {
         "asin": "B09DVN7QWH",
         "url": "https://www.amazon.com/dp/B09DVN7QWH?tag=tiereduptech-20",
-        "price": 139.9,
+        "price": 125.14,
         "inStock": true
       }
     },
@@ -14349,7 +14349,7 @@ export default [
     "memType": "GDDR6",
     "bench": 33,
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 100654,
@@ -14607,7 +14607,7 @@ export default [
     "bench": 31,
     "vram": 6,
     "memType": "GDDR5",
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -14633,7 +14633,7 @@ export default [
     "memType": "GDDR6",
     "bench": 34,
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 100667,
@@ -14666,7 +14666,7 @@ export default [
       "amazon": {
         "asin": "B0C59RVD98",
         "url": "https://www.amazon.com/dp/B0C59RVD98?tag=tiereduptech-20",
-        "price": 319.99,
+        "price": 403.92,
         "inStock": true
       }
     },
@@ -14925,7 +14925,7 @@ export default [
     "vram": 12,
     "memType": "GDDR6",
     "bench": 52,
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -14941,7 +14941,7 @@ export default [
       "amazon": {
         "asin": "B0BV11LHLQ",
         "url": "https://www.amazon.com/dp/B0BV11LHLQ?tag=tiereduptech-20",
-        "price": 394.97,
+        "price": 374.97,
         "inStock": true
       }
     },
@@ -14990,7 +14990,9 @@ export default [
     "source": "amazon-discovery",
     "vram": 12,
     "memType": "GDDR6",
-    "bench": 53
+    "bench": 53,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-19"
   },
   {
     "id": 100683,
@@ -15102,7 +15104,7 @@ export default [
     "memType": "GDDR6",
     "bench": 44,
     "vram": 8,
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -15492,7 +15494,7 @@ export default [
     "vram": 8,
     "memType": "GDDR6",
     "bench": 32,
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
@@ -15701,7 +15703,7 @@ export default [
     "bench": 90,
     "vram": 16,
     "memType": "GDDR6X",
-    "quarantinedAt": "2026-07-17",
+    "quarantinedAt": "2026-07-19",
     "needsReview": true
   },
   {
