@@ -194,20 +194,49 @@ async function findNeweggMatch(product, token) {
   };
 }
 
-function loadParts() {
-  const src = fs.readFileSync(PARTS_PATH, 'utf8');
-  const m = src.match(/export\s+const\s+PARTS\s*=\s*(\[[\s\S]*\]);/);
-  if (!m) throw new Error('PARTS array not found');
-  const parts = new Function('return ' + m[1])();
-  return { src, parts };
+// parts.js is no longer a literal array. scripts/split-parts-by-cat.cjs now
+// generates it as a BARREL of per-category chunk imports:
+//
+//   import _4 from './parts/cpu.js';  ...
+//   export const PARTS = [..._4, ..._17, ...];
+//
+// The old loader regex-matched that bracket expression and eval'd it with
+// `new Function`, where _4 and friends do not exist — so ingest died at
+// startup with "ReferenceError: _4 is not defined" on every invocation, live
+// or dry. Import the module and let ESM resolve the chunks, exactly as
+// refresh-newegg-prices.cjs already does.
+async function loadParts() {
+  const url = 'file://' + path.resolve(PARTS_PATH).replace(/\\/g, '/') + '?t=' + Date.now();
+  const mod = await import(url);
+  const parts = mod.PARTS || mod.default;
+  if (!Array.isArray(parts)) throw new Error(`PARTS is not an array in ${PARTS_PATH}`);
+  return { parts };
 }
-function saveParts(src, parts) {
-  const backup = PARTS_PATH + '.bak.' + Date.now();
-  fs.writeFileSync(backup, src, 'utf8');
-  const newJson = JSON.stringify(parts, null, 2);
-  const newSrc = src.replace(/export\s+const\s+PARTS\s*=\s*\[[\s\S]*\];/, `export const PARTS = ${newJson};`);
-  fs.writeFileSync(PARTS_PATH, newSrc, 'utf8');
-  return backup;
+
+// The WRITE path is worse than broken — it is destructive. It replaced the
+// whole `export const PARTS = [...]` barrel with a JSON literal, which would
+// have wiped the chunk composition and orphaned all 30 imports, leaving the
+// frontend loading stale src/data/parts/<cat>.js files. Refuse loudly instead
+// of corrupting the catalog; a live ingest must write per-category chunks.
+function assertWritePathUsable() {
+  const src = fs.readFileSync(PARTS_PATH, 'utf8');
+  if (/export\s+const\s+PARTS\s*=\s*\[\s*\.\.\./.test(src)) {
+    throw new Error(
+      'LIVE INGEST BLOCKED: src/data/parts.js is an auto-generated barrel of\n' +
+      '  per-category chunk imports (scripts/split-parts-by-cat.cjs), not a literal\n' +
+      '  array. Overwriting it with a JSON literal would destroy the chunk structure\n' +
+      '  and orphan every import. The write path must target src/data/parts/<cat>.js\n' +
+      '  before this script may run live. --dry-run is unaffected and works.',
+    );
+  }
+}
+
+// Late backstop. assertWritePathUsable() fires first at startup; this exists so
+// the call sites below cannot silently become a corrupting write if that guard
+// is ever moved or removed.
+function saveParts() {
+  assertWritePathUsable();
+  throw new Error('saveParts(): no write path implemented for the chunked catalog. Use --dry-run.');
 }
 function loadProgress() {
   if (!fs.existsSync(PROGRESS_PATH)) return { matched: 0, no_match: 0, errors: 0, processedIds: [] };
@@ -224,7 +253,10 @@ function saveProgress(p) {
 
   NEG = await import('file://' + process.cwd().replace(/\\/g, '/') + '/newegg-match.js');
 
-  const { src, parts } = loadParts();
+  // Fail before spending a single API call if this run could not write anyway.
+  if (!DRY_RUN) assertWritePathUsable();
+
+  const { parts } = await loadParts();
   let active = parts.filter((p) => !p.needsReview && !p.bundle && p.n && CAT_FILTER[p.c]);
   if (ONLY_CAT) {
     if (!CAT_FILTER[ONLY_CAT]) {
@@ -363,7 +395,7 @@ function saveProgress(p) {
 
     if (!DRY_RUN && (i + 1) % SAVE_EVERY === 0) {
       saveProgress({ matched, no_match: noMatch, errors, processedIds: progress.processedIds });
-      saveParts(src, parts);
+      saveParts();
       console.log(`  ── checkpoint: ${matched} matched, ${noMatch} no-match, ${errors} errors ──`);
     }
 
@@ -397,7 +429,7 @@ function saveProgress(p) {
   }
 
   saveProgress({ matched, no_match: noMatch, errors, processedIds: progress.processedIds });
-  const backup = saveParts(src, parts);
+  const backup = saveParts();
 
   console.log('\n  ═══ DONE ═══');
   console.log(`  Matched:    ${matched}`);
