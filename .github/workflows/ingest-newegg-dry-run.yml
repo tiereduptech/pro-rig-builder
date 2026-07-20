@@ -20,6 +20,8 @@ on:
       - '.github/workflows/ingest-newegg-dry-run.yml'
       - 'fetch-newegg-via-rakuten.cjs'
       - 'newegg-match.js'
+      - 'package.json'
+      - 'test/**'
   workflow_dispatch:
     inputs:
       limit:
