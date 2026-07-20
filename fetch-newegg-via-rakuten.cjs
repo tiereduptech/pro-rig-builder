@@ -23,6 +23,10 @@
 //
 //  Usage:
 //    railway run node fetch-newegg-via-rakuten.cjs --dry-run
+//      Full live scoring pass that writes NOTHING — no parts.js, no progress
+//      file, no in-memory attach. Emits newegg-ingest-dry-run.json with every
+//      accepted candidate and every variant rejection (both names), so the
+//      shared matcher can be eyeballed on the ingest path before a live write.
 //    railway run node fetch-newegg-via-rakuten.cjs --limit 50
 //    railway run node fetch-newegg-via-rakuten.cjs
 //    railway run node fetch-newegg-via-rakuten.cjs --force
@@ -49,6 +53,7 @@ const ONLY_CAT = arg('category', null);
 
 const PARTS_PATH = './src/data/parts.js';
 const PROGRESS_PATH = './catalog-build/_newegg-progress.json';
+const DRY_REPORT = './newegg-ingest-dry-run.json';
 
 const REQ_PER_SECOND = 2;
 const SAVE_EVERY = 25;
@@ -149,15 +154,44 @@ async function findNeweggMatch(product, token) {
     items = parseItems(xml);
     if (items.length > 0) break;
   }
-  if (items.length === 0) return { ok: false, reason: 'no_results' };
+  if (items.length === 0) {
+    return { ok: false, reason: 'no_results', rawCount: 0, scores: [], variantRejects: [] };
+  }
 
-  const scored = items.map((it) => ({ item: it, match: NEG.scoreMatch(product, it) })).filter((x) => x.match);
-  if (scored.length === 0) return { ok: false, reason: 'no_match' };
+  // Capture WHY each candidate lost, not just that it did. The dry run reports
+  // this verbatim; without it a variant rejection is indistinguishable from
+  // "the feed had nothing", which is the ambiguity that hid the bad matches.
+  const variantRejects = [];
+  const scored = [];
+  for (const it of items) {
+    const notes = {};
+    const match = NEG.scoreMatch(product, it, notes);
+    if (match) scored.push({ item: it, match });
+    else if (notes.reject) {
+      variantRejects.push({ candidateName: it.name, sku: it.sku, reason: notes.reject });
+    }
+  }
+  const detail = {
+    rawCount: items.length,
+    variantRejects,
+    scores: scored.map((x) => ({
+      candidateName: x.item.name, sku: x.item.sku,
+      sellerClass: NEG.sellerClass(x.item.sku),
+      method: x.match.method, score: Number(x.match.score.toFixed(3)),
+    })),
+  };
+
+  if (scored.length === 0) {
+    return { ok: false, reason: variantRejects.length ? 'variant_rejected' : 'no_match', ...detail };
+  }
   // First-party (N82E) preference — never let a marketplace (9SI) listing win when a
   // Newegg-Official listing also matched. Price-independent (see newegg-match.js).
   const best = NEG.selectWithFirstPartyPreference(scored);
   const firstPartyAvailable = scored.some((x) => NEG.isFirstParty(x.item.sku));
-  return { ok: true, item: best.item, method: best.match.method, score: best.match.score, firstPartyAvailable };
+  return {
+    ok: true, item: best.item, method: best.match.method, score: best.match.score,
+    firstPartyAvailable, ...detail,
+  };
 }
 
 function loadParts() {
@@ -220,17 +254,20 @@ function saveProgress(p) {
 
   if (candidates.length === 0) { console.log('  Nothing to do.\n'); return; }
 
+  // --dry-run used to return HERE, before getToken(), so it never scored a
+  // single candidate and could not exercise the shared matcher at all — the
+  // one path that most needed proving, since ingest is how bad matches enter
+  // the catalog. It now runs the full live scoring pass and writes NOTHING:
+  // no parts.js, no progress file, no in-memory mutation of p.deals/needsReview.
   if (DRY_RUN) {
-    console.log('  Sample (first 10):');
-    for (const p of candidates.slice(0, 10)) {
-      console.log(`    [${p.c.padEnd(11)}] ${p.n.slice(0, 55)}`);
-      console.log(`      cat=${CAT_FILTER[p.c]}, search="${NEG.extractKeywords(p.n, p.b)}"`);
-    }
-    console.log('\n  --dry-run: not making API calls.\n');
-    return;
+    console.log('  --dry-run: scoring live responses, writing nothing.\n');
   }
 
   let matched = 0, noMatch = 0, errors = 0, flagged = 0;
+  // Dry-run report accumulators.
+  const dryStats = { scored: 0, accepted: 0, flagged: 0, variantRejected: 0, noMatch: 0, noResults: 0, errors: 0 };
+  const dryAccepts = [];
+  const dryRejects = [];
   const delay = 1000 / REQ_PER_SECOND;
   await getToken();
   console.log('  ✓ Token acquired\n');
@@ -245,11 +282,42 @@ function saveProgress(p) {
       const token = await getToken();
       const result = await findNeweggMatch(p, token);
 
+      if (DRY_RUN) {
+        dryStats.scored += result.scores ? result.scores.length : 0;
+        dryStats.variantRejected += result.variantRejects ? result.variantRejects.length : 0;
+        if (result.variantRejects && result.variantRejects.length) {
+          dryRejects.push({
+            id: p.id, cat: p.c, ourName: p.n,
+            rejected: result.variantRejects,
+            // Whether anything survived matters: a product with rejects AND an
+            // accepted candidate is the guard working; rejects with nothing left
+            // is the guard possibly over-reaching.
+            survivors: result.scores ? result.scores.length : 0,
+          });
+        }
+      }
+
       if (result.ok) {
         const sClass = NEG.sellerClass(result.item.sku);
         const effPrice = (result.item.saleprice && result.item.saleprice > 0)
           ? result.item.saleprice : result.item.price;
         const sanity = NEG.neweggSanity(p, effPrice);
+
+        if (DRY_RUN) {
+          if (sanity.pass) { dryStats.accepted++; } else { dryStats.flagged++; }
+          dryAccepts.push({
+            id: p.id, cat: p.c, ourName: p.n,
+            candidateName: result.item.name, sku: result.item.sku, sellerClass: sClass,
+            method: result.method, score: Number(result.score.toFixed(3)),
+            price: effPrice, wouldAttach: sanity.pass, sanityClass: sanity.cls,
+            firstPartyAvailable: result.firstPartyAvailable,
+          });
+          const tag = result.method === 'upc' ? '✓ UPC' : `~ ${(result.score * 100).toFixed(0)}%`;
+          console.log(`${sanity.pass ? tag : '⚠ flag ' + sanity.cls}  $${effPrice} [${sClass}] (dry)`);
+          if (i < candidates.length - 1) await new Promise((r) => setTimeout(r, delay));
+          continue;
+        }
+
         if (!sanity.pass) {
           // Chosen price is a wild outlier vs the product's other retailers — do not
           // attach; flag for review (mirrors the Amazon attach gate). The first-party
@@ -278,21 +346,54 @@ function saveProgress(p) {
         }
       } else {
         noMatch++;
-        progress.processedIds.push(p.id);
+        if (DRY_RUN) {
+          if (result.reason === 'variant_rejected') { /* already counted above */ }
+          else if (result.reason === 'no_results') dryStats.noResults++;
+          else dryStats.noMatch++;
+        } else {
+          progress.processedIds.push(p.id);
+        }
         console.log(`✗ ${result.reason}`);
       }
     } catch (e) {
       errors++;
+      dryStats.errors++;
       console.log(`! ${e.message.slice(0, 50)}`);
     }
 
-    if ((i + 1) % SAVE_EVERY === 0) {
+    if (!DRY_RUN && (i + 1) % SAVE_EVERY === 0) {
       saveProgress({ matched, no_match: noMatch, errors, processedIds: progress.processedIds });
       saveParts(src, parts);
       console.log(`  ── checkpoint: ${matched} matched, ${noMatch} no-match, ${errors} errors ──`);
     }
 
     if (i < candidates.length - 1) await new Promise((r) => setTimeout(r, delay));
+  }
+
+  if (DRY_RUN) {
+    const report = {
+      timestamp: new Date().toISOString(),
+      dryRun: true,
+      wroteParts: false,
+      wroteProgress: false,
+      processed: candidates.length,
+      ...dryStats,
+      accepts: dryAccepts,
+      variantRejections: dryRejects,
+    };
+    fs.writeFileSync(DRY_REPORT, JSON.stringify(report, null, 2));
+
+    console.log('\n  ═══ DRY RUN — NOTHING WRITTEN ═══');
+    console.log(`  Products probed:     ${candidates.length}`);
+    console.log(`  Candidates scored:   ${dryStats.scored}  (passed every gate)`);
+    console.log(`  Would attach:        ${dryStats.accepted}`);
+    console.log(`  Would flag (sanity): ${dryStats.flagged}  (not attached)`);
+    console.log(`  Variant-rejected:    ${dryStats.variantRejected}  (candidates, across ${dryRejects.length} products)`);
+    console.log(`  No match:            ${dryStats.noMatch}`);
+    console.log(`  No results:          ${dryStats.noResults}`);
+    console.log(`  Errors:              ${dryStats.errors}`);
+    console.log(`  Report:              ${DRY_REPORT}\n`);
+    return;
   }
 
   saveProgress({ matched, no_match: noMatch, errors, processedIds: progress.processedIds });

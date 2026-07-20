@@ -243,7 +243,7 @@ function chooseCandidate(p, candidates) {
     console.log(`Sample by category: ${Object.entries(byCat).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}=${v}`).join(' ')}`);
   }
 
-  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, lookupFailed: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0 };
+  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, lookupFailed: 0, variantRejected: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0 };
   const changes = [];
   const failures = [];
   const removalCandidates = [];
@@ -265,6 +265,7 @@ function chooseCandidate(p, candidates) {
     // important behaviour in this file.
     if (r.outcome === OUTCOME.LOOKUP_FAILED) {
       stats.lookupFailed++;
+      if (r.reason === 'variant_rejected') stats.variantRejected++;
       failures.push({ id: p.id, name: p.n, cat: p.c, sku, reason: r.reason, rawCount: r.rawCount });
       console.log(`  LOOKUP FAILED (no change): ${p.n} — ${r.reason}`);
       await sleep(RATE_DELAY_MS);
@@ -425,11 +426,20 @@ function chooseCandidate(p, candidates) {
 
   // ── Run-level circuit breakers ──────────────────────────────────────────────
   const processed = matched.length;
-  const failureRate = processed ? stats.lookupFailed / processed : 0;
+  // FEED health, not MATCHER strictness. 'variant_rejected' means the feed
+  // answered and we declined the variants it offered — a decision we made, not
+  // a symptom of an unhealthy feed. Counting it here inflated the rate to 56%
+  // and permanently tripped the breaker, which turns a diagnostic into noise.
+  //
+  // 'downgrade_blocked' deliberately STAYS in: it means the feed failed to
+  // surface the official listing we already know exists, which is exactly the
+  // feed defect this breaker is watching for.
+  const feedFailures = stats.lookupFailed - stats.variantRejected;
+  const failureRate = processed ? feedFailures / processed : 0;
   const removalCap = Math.max(MAX_REMOVAL_FLOOR, Math.floor(processed * MAX_REMOVAL_RATE));
   const breakers = [];
   if (failureRate > MAX_LOOKUP_FAILURE_RATE)
-    breakers.push(`lookup failure rate ${(failureRate * 100).toFixed(1)}% > ${(MAX_LOOKUP_FAILURE_RATE * 100)}% — feed unhealthy`);
+    breakers.push(`feed failure rate ${(failureRate * 100).toFixed(1)}% > ${(MAX_LOOKUP_FAILURE_RATE * 100)}% — feed unhealthy (excludes ${stats.variantRejected} variant rejections)`);
   if (stats.ok === 0 && processed > 0)
     breakers.push('zero successful lookups — cannot trust any absence signal');
   if (removalCandidates.length > removalCap)
@@ -450,6 +460,8 @@ function chooseCandidate(p, candidates) {
   console.log(`Matched OK:       ${stats.ok}  (repriced ${stats.priced}, unchanged ${stats.unchanged}, migrated ${stats.migrated}, rematched ${stats.rematched})`);
   console.log(`Price suspect:    ${stats.priceSuspect}  (flagged, deal KEPT)`);
   console.log(`Lookup failed:    ${stats.lookupFailed}  (no change written)`);
+  console.log(`  of which variant-rejected: ${stats.variantRejected}  (matcher decision — EXCLUDED from feed health)`);
+  console.log(`Feed failure rate:${(failureRate * 100).toFixed(1)}%  (${feedFailures}/${processed}, breaker at ${MAX_LOOKUP_FAILURE_RATE * 100}%)`);
   console.log(`Downgrade blocked:${stats.downgradeBlocked}  (seller rank protected, deal KEPT)`);
   console.log(`Weak match blocked:${stats.weakMatchBlocked}  (below ${NEG.MIN_MIGRATE_SIM} migrate floor, deal KEPT)`);
   console.log(`Confirmed absent: ${stats.confirmedAbsent}  (${removalCandidates.length} past removal threshold)`);
@@ -475,6 +487,10 @@ function chooseCandidate(p, candidates) {
     updated: stats.priced,
     removalCandidates: removalCandidates.length,
     removed,
+    // Both numbers, so a rising variant-rejection count stays visible even
+    // though it no longer moves the breaker.
+    feedFailures,
+    feedFailureRate: Number(failureRate.toFixed(3)),
     breakers,
     thresholds: { MIN_ABSENT_STREAK, MIN_STALE_DAYS, MIN_HEALTHY_CANDIDATES, MAX_LOOKUP_FAILURE_RATE, removalCap, MIN_MIGRATE_SIM: NEG.MIN_MIGRATE_SIM },
     failures: failures.slice(0, 50),

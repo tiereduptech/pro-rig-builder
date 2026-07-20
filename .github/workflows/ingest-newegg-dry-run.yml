@@ -1,0 +1,69 @@
+name: Newegg Ingest Dry Run
+
+# Dry run ONLY. This workflow has no write path by construction:
+# fetch-newegg-via-rakuten.cjs --dry-run returns before saveParts/saveProgress,
+# and there is no commit step here. `contents: read` makes that structural.
+#
+# It exists because the ingest path is how bad matches enter the catalog, and
+# the Rakuten credentials live only in Actions secrets — the matcher cannot be
+# exercised against the live feed anywhere else.
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Only probe the first N unmatched products"
+        type: string
+        default: "50"
+      category:
+        description: "Restrict to one category (blank = all)"
+        type: string
+        default: ""
+
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Matcher unit tests
+        run: npm test
+
+      - name: Ingest dry run
+        env:
+          RAKUTEN_CLIENT_ID: ${{ secrets.RAKUTEN_CLIENT_ID }}
+          RAKUTEN_CLIENT_SECRET: ${{ secrets.RAKUTEN_CLIENT_SECRET }}
+          RAKUTEN_SID: ${{ secrets.RAKUTEN_SID }}
+          RAKUTEN_NEWEGG_MID: ${{ secrets.RAKUTEN_NEWEGG_MID }}
+        run: |
+          ARGS="--dry-run"
+          if [ -n "${{ inputs.limit }}" ]; then ARGS="$ARGS --limit ${{ inputs.limit }}"; fi
+          if [ -n "${{ inputs.category }}" ]; then ARGS="$ARGS --category ${{ inputs.category }}"; fi
+          echo "Running: node fetch-newegg-via-rakuten.cjs $ARGS"
+          node fetch-newegg-via-rakuten.cjs $ARGS
+
+      # Proves the claim rather than asserting it: if the dry run touched the
+      # catalog or the progress file, fail the job loudly.
+      - name: Assert nothing was written
+        if: always()
+        run: |
+          if ! git diff --quiet -- src/data/parts.js; then
+            echo "::error::parts.js was modified by a dry run"; git diff --stat -- src/data/parts.js; exit 1
+          fi
+          if [ -n "$(git status --porcelain -- catalog-build/ src/data/)" ]; then
+            echo "::error::dry run wrote into catalog-build/ or src/data/"; git status --porcelain -- catalog-build/ src/data/; exit 1
+          fi
+          echo "Clean: no catalog or progress writes."
+
+      - name: Upload dry-run report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newegg-ingest-dry-run
+          path: newegg-ingest-dry-run.json
+          if-no-files-found: warn
