@@ -9,6 +9,17 @@ name: Newegg Ingest Dry Run
 # exercised against the live feed anywhere else.
 
 on:
+  # TEMPORARY — remove once this file is on the default branch.
+  # GitHub only honours workflow_dispatch for workflows that exist on the
+  # default branch, so until this merges the only way to exercise it is a
+  # branch-scoped push trigger. Safe to leave running meanwhile: the job has
+  # contents: read and no write path.
+  push:
+    branches: [fix/newegg-rematch]
+    paths:
+      - '.github/workflows/ingest-newegg-dry-run.yml'
+      - 'fetch-newegg-via-rakuten.cjs'
+      - 'newegg-match.js'
   workflow_dispatch:
     inputs:
       limit:
