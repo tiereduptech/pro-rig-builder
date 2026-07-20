@@ -69,6 +69,30 @@ const MAX_LOOKUP_FAILURE_RATE = 0.20;  // >20% failing => the feed is sick, not 
 const MAX_REMOVAL_RATE = 0.02;         // never remove >2% of matched products in one run
 const MAX_REMOVAL_FLOOR = 5;           // ...but always allow at least this many
 
+// ── HARD BLOCK ON REMOVALS ───────────────────────────────────────────────────
+// Removals are disabled at the source level. This is deliberately NOT a CLI
+// flag, env var, or workflow input: the 2026-07-06 incident (1,655 deletions,
+// ~904 of them live listings) happened because deletion was reachable from a
+// lookup path that silently never worked. Everything below this line — the
+// absent streak, the stale-days floor, the circuit breakers — is layered ON TOP
+// of a signal we do not yet trust. Safety thresholds on a broken input do not
+// make the input correct; they only slow down the rate at which it does damage.
+//
+// WHAT MUST BE TRUE BEFORE FLIPPING THIS TO true:
+//   1. SKU lookup is proven correct. searchNewegg() resolves by name/UPC, NOT
+//      by item number — the field we actually store. Until a lookup keyed on
+//      the stored SKU round-trips a known-live listing, CONFIRMED_ABSENT is
+//      indistinguishable from "we asked the wrong question."
+//   2. That proof is a checked-in test asserting a known-live SKU resolves,
+//      and a known-dead SKU does not. Not a one-off manual run.
+//   3. A full production dry run shows a removal-candidate list that a human
+//      has spot-checked against live Newegg URLs and found genuinely dead.
+//
+// Until then this script is a re-pricer that records absence evidence. The
+// evidence keeps accruing in `absentStreak` — nothing is lost by waiting, and
+// the candidate list still prints every run so the signal stays observable.
+const REMOVALS_ENABLED = false;
+
 // Per-product outcome classes. Only CONFIRMED_ABSENT can ever lead to removal.
 const OUTCOME = {
   OK: 'ok',                          // feed returned a candidate that matched our product
@@ -448,7 +472,7 @@ function chooseCandidate(p, candidates) {
     breakers.push(`${removalCandidates.length} removal candidates > cap ${removalCap} — refusing mass removal`);
 
   let removed = 0;
-  if (removalCandidates.length && breakers.length === 0 && !DRY_RUN) {
+  if (removalCandidates.length && breakers.length === 0 && !DRY_RUN && REMOVALS_ENABLED) {
     for (const rc of removalCandidates) {
       delete rc.product.deals.newegg;
       changes.push({ name: rc.product.n, change: 'removed-confirmed-absent', sku: rc.sku, streak: rc.streak, staleDays: rc.staleDays });
@@ -471,6 +495,12 @@ function chooseCandidate(p, candidates) {
     console.log(`\n!! CIRCUIT BREAKER TRIPPED — 0 removals this run:`);
     for (const b of breakers) console.log(`   - ${b}`);
   }
+  if (!REMOVALS_ENABLED) {
+    console.log(`\n!! REMOVALS HARD-BLOCKED at source (REMOVALS_ENABLED = false).`);
+    console.log(`   ${removalCandidates.length} candidate(s) met the streak/stale thresholds and were NOT removed.`);
+    console.log(`   Absence evidence is still being recorded. See the block comment for what must`);
+    console.log(`   be fixed (SKU-keyed lookup + a test proving it) before re-enabling.`);
+  }
   console.log(`Removed:          ${removed}${DRY_RUN && removalCandidates.length ? ` (dry run — ${removalCandidates.length} would have been evaluated)` : ''}`);
 
   if (failures.length) {
@@ -489,6 +519,8 @@ function chooseCandidate(p, candidates) {
     updated: stats.priced,
     removalCandidates: removalCandidates.length,
     removed,
+    removalsEnabled: REMOVALS_ENABLED,
+    removalsBlockedBySourceGate: !REMOVALS_ENABLED && removalCandidates.length > 0,
     // Both numbers, so a rising variant-rejection count stays visible even
     // though it no longer moves the breaker.
     feedFailures,

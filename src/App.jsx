@@ -637,10 +637,23 @@ function productConditions(p) {
 // Ingest attaches marketplace only when no first-party listing exists, so these
 // are legitimate offers; they just have to be disclosed.
 //
-// Mirrors neweggSkuClass() in price-sanity.js. Derived from the SKU rather than
-// read from info.sellerClass because every Newegg deal currently in the catalog
-// predates that field — keying on the stored value alone would badge none of
-// them. The stored value wins when present.
+// Mirrors neweggSkuClass() in price-sanity.js, with the stored value winning
+// when present and SKU derivation as the fallback for deals that lack it.
+//
+// NOTE ON THE CURRENT CATALOG (verified 2026-07-20): all 62 Newegg deals DO
+// carry sellerClass, and every one of them is "other" — so the stored branch
+// always wins and the SKU derivation below never actually runs in production
+// today. Those stored values are stale: they were stamped before price-sanity
+// learned that Newegg's dashed format ("2AM-00CN-00060") is FIRST-PARTY, so
+// dashed SKUs were recorded as "other" instead of "official".
+//
+// That staleness is currently harmless — "other" and "official" both render no
+// badge — but it means this badge shows on zero live products right now, and a
+// stale "other" would shadow a corrected classification. Ingest itself is
+// already correct (it calls the fixed classifier); it just never revisits a
+// product that already has a deals.newegg.sku. The backfill for those is
+// restamp-newegg-sellerclass.cjs. Until it has run, do not read a missing
+// badge as "no marketplace listings exist."
 const NEWEGG_DASHED_SKU = /^[0-9A-Z]{3}-[0-9A-Z]{4}-[0-9A-Z]{4,6}$/;
 function neweggSellerClass(key, info) {
   if (!/^newegg/i.test(key)) return null;
@@ -671,10 +684,20 @@ const retailers = p => {
 // "Marketplace" to mean RETAILER (Amazon / Newegg / Best Buy), so reusing that
 // word here would read as a retailer name instead of a warning about who the
 // seller is.
+// Deliberately NOT built on <Tag>, even though Tag's chip rendering is now
+// fixed. Tag is a 9%-tint chip sized for ambient metadata (OPEN BOX, BEST);
+// at that weight this badge read as decoration sitting next to a price, not as
+// "you are not buying from Newegg". This is a disclosure a shopper has to
+// notice before clicking Buy, so it gets a solid fill and explicit colors —
+// louder than everything around it, by design.
 function SellerTag({ r }) {
   if (r.sellerClass !== "marketplace") return null;
-  return <span title="Sold by a third-party seller on Newegg, not by Newegg directly.">
-    <Tag color="var(--violet)">3RD-PARTY</Tag>
+  return <span
+    title="Sold by a third-party seller on Newegg, not by Newegg directly. Returns, warranty and support are handled by that seller."
+    style={{display:"inline-flex",alignItems:"center",gap:4,padding:"3px 8px",borderRadius:5,
+      background:"#6d28d9",color:"#fff",fontFamily:"var(--mono)",fontSize:10,fontWeight:700,
+      letterSpacing:0.4,whiteSpace:"nowrap",flexShrink:0}}>
+    3RD-PARTY SELLER
   </span>;
 }
 
@@ -1183,7 +1206,14 @@ html, body, #root {
 /* ═══ COMPONENTS ═══ */
 function Stars({r,s=11}){return <span style={{fontSize:s,color:"var(--amber)"}}>{"★".repeat(Math.round(r))}<span style={{color:"var(--dim)",fontSize:s-1,marginLeft:2}}>{r}</span></span>}
 function SBar({v,mx=100}){const c=v>=90?"var(--accent)":v>=70?"var(--sky)":"var(--dim)";return <div style={{display:"flex",alignItems:"center",gap:4}}><div style={{flex:1,height:3,background:"var(--bg4)",borderRadius:2,overflow:"hidden"}}><div style={{width:`${(v/mx)*100}%`,height:"100%",background:c,borderRadius:2}}/></div><span style={{fontFamily:"var(--mono)",fontSize:9,color:c,minWidth:24}}>{v}%</span></div>}
-function Tag({children,color="var(--accent)"}){return <span style={{padding:"2px 8px",borderRadius:6,fontSize:9,fontFamily:"var(--mono)",fontWeight:600,background:color+"18",color,border:`1px solid ${color}30`}}>{children}</span>}
+// Fill and border are derived with color-mix(), NOT by concatenating hex alpha
+// onto `color`. The old form (`color+"18"`) only produced valid CSS when the
+// caller passed a hex literal; for a var() token it yielded `var(--violet)18`,
+// which the browser drops entirely — leaving no fill and no border. 20 of the
+// 23 call sites pass var() tokens, so OPEN BOX / REFURBISHED / BEST / OOS and
+// friends had been rendering as bare low-contrast text rather than chips.
+// Percentages match the old intent: 0x18/255 ~= 9%, 0x30/255 ~= 19%.
+function Tag({children,color="var(--accent)"}){return <span style={{padding:"2px 8px",borderRadius:6,fontSize:9,fontFamily:"var(--mono)",fontWeight:600,background:`color-mix(in srgb, ${color} 9%, transparent)`,color,border:`1px solid color-mix(in srgb, ${color} 19%, transparent)`}}>{children}</span>}
 function Btn({children,primary,sm,color="var(--mint)",onClick,style={}}){return <button onClick={onClick} style={{padding:sm?"4px 10px":"9px 20px",borderRadius:7,fontSize:sm?10:12,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:primary?color:"transparent",color:primary?"var(--bg)":color,border:`1.5px solid ${primary?color:color+"55"}`,transition:"all .12s",...style}}>{children}</button>}
 
 /* ═══ FILTER COMPONENTS ═══ */
