@@ -1,8 +1,16 @@
 name: Refresh Newegg Prices
 
 on:
-  schedule:
-    - cron: "0 6,18 * * *"
+  # DISABLED 2026-07-20 — searchBySku looks up Newegg item numbers via
+  # productsearch/1.0 `keyword=`, which does not index SKUs. Every lookup misses,
+  # so the job stamps staleSince and deletes the deal 7 days later. It has a 100%
+  # failure rate (0 of 5,428 products carry refreshedAt) and reported "0 updated"
+  # on every run since 2026-07-06 — it can only delete, never repair. This fuse
+  # already destroyed 1,655 deals on 7/06 (429 of them good first-party N82E
+  # listings) and was eating the surviving 62 twice a day.
+  # Re-enable ONLY after SKU lookup is fixed and verified against the live feed.
+  # schedule:
+  #   - cron: "0 6,18 * * *"
   workflow_dispatch: {}
 
 jobs:
