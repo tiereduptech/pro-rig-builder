@@ -28,7 +28,7 @@ export default [
     },
     "bench": 99,
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 98001,
@@ -54,7 +54,7 @@ export default [
     },
     "bench": 86,
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 98002,
@@ -78,7 +78,9 @@ export default [
         "inStock": true
       }
     },
-    "bench": 85
+    "bench": 85,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 100077,
@@ -135,7 +137,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-C922x-Pro-Stream-Webcam/dp/B01LXCDPPK/ref=sr_1_14?crid=EW1N21FRQ61U&dib=eyJ2IjoiMSJ9.jPNsGEG4koGA9IWUTRKVVtoGAXhh2AFxmylYPBLDCpYxwA8pbFif40Z2-U0yypxvhySTVMa_7EIm1G2_M3TIJN0XOq2WXUvQqFUTgJ7xAsvhA1IeTQDcVYbyG7vw6-BtyckVgb-HVTNfzrQm3c9kMq5rwKjs5SGiwFh2nHTXzI942rrTk83o1nHgAIX2VHWKRIKVq32l7se9y0gi8gmwT0OCLQ90SwU4ZH3NOTQUrnw.W05UqzZZtPz0Id3nuPFxAvBT09KeEtazcm8mdzxHZ24&dib_tag=se&keywords=Logitech+C920&qid=1777130737&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BC920%2Caps%2C251&sr=8-14&tag=tiereduptech-20",
-        "price": 104.97,
+        "price": 116.79,
         "inStock": true
       }
     },
@@ -219,7 +221,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-2017-Brio-4K-Webcam/dp/B01N5UOYC4/ref=sr_1_35?crid=HAN2OPTSB7WU&dib=eyJ2IjoiMSJ9.-d6QW9KDdjTdsF-cm_1lKjh8xG2w92PgrZLofe05k9SY5ZVx13HMmxhu3XdfbSqH6gSA9PeoqZXcFmPOdoVCMOKrPw8HsgykwJckKmqG2XUQLdYZg8CsKlHDOx2nFWwdb87Fo3Yq6dpLVRohDzkDlmQkegOcXHUahzJzTakY3DlNeKyBzaVWVF1i0cQVEoQR6PfojgZo3aa1DZb-0-i2PRc3VM53sv4YrLFG_1xdRL4.PXIVAwtxGM2O1IsMdZbDBjZk39iNVF-k2elbeNFUcDQ&dib_tag=se&keywords=Razer+Kiyo+Pro&qid=1777130742&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BKiyo%2BPro%2Caps%2C252&sr=8-35&xpid=paxmvJBrnqNjM&tag=tiereduptech-20",
-        "price": 116.99,
+        "price": 109.86,
         "inStock": true
       }
     },
@@ -880,7 +882,7 @@ export default [
       "amazon": {
         "asin": "B07TZT4Q89",
         "url": "https://www.amazon.com/dp/B07TZT4Q89?tag=tiereduptech-20",
-        "price": 137.99,
+        "price": 169.99,
         "inStock": true
       }
     },
@@ -907,7 +909,7 @@ export default [
     "addedAt": "2026-05-15T17:05:43.653Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 101842,

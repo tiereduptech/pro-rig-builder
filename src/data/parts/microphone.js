@@ -48,7 +48,7 @@ export default [
     "sampleRate": 96,
     "bench": 83,
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 97502,
@@ -72,7 +72,7 @@ export default [
     "sampleRate": 48,
     "bench": 75,
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 97503,
@@ -98,7 +98,7 @@ export default [
     "sampleRate": 48,
     "bench": 74,
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 100065,
@@ -175,7 +175,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Rode-PODMIC-Dynamic-Podcasting-Microphone/dp/B07MSCRCVK/ref=sr_1_11?crid=82HPG2FOGG2T&dib=eyJ2IjoiMSJ9.RmdIX9qeCx2jmBrUnSwOquwPkLHA5iMwvYSwigJ0-_oKeGNU14eEXZK30-Lt-HznYLutLFKvwXPHjhmkbaT-O97BxYYNJZPpB90tL7lApe111xDD26KtYkebfzTLzi5yp0bsbgQBoBwKfi2VM0PcmmxNlbhLzgiBGQ8g1DlDa3AL4vWR_d4veQk_O12PMAQJ-bckXUHGybWO4h__1ovRFmY82kXZO-crpL_lu8VeSIgRBBXXIDkKgAedvYRDYucEC3nQ_Agq1L7__WIPcaN7G-TbhcDP4TwqHGvCCxEqjHA.Oi8iUEv38LaqHCBkQL0cFoAzI57pXag4yNGB6razDIo&dib_tag=se&keywords=Shure+SM7B&qid=1777130682&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Shure%2BSM7B%2Caps%2C122&sr=8-11&tag=tiereduptech-20",
-        "price": 88,
+        "price": 83,
         "inStock": true
       }
     },
@@ -261,7 +261,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/FIFINE-Microphone-Podcasting-Monitoring-Creation-AmpliGame/dp/B0C74G9RLH/ref=sr_1_23?crid=OL0GS2OWVEE1&dib=eyJ2IjoiMSJ9.qMhoszhy3rKsLo_8s22HexjCPx0ZYRX6l90DNYAQ5_IJJzZC7zeQlSd4qOq-NOhg6xg_IHToLB2ltWvRqfqVqowKOSr6vedCZqpw4xwfuErtFvZGh9smHNHvsZuCmI-iB-EuadSElByA6nI4NzsEK5ScVRkNUife-SPrYqN7cuxWzVlWV2BnI2a3Cpf1Qt8rm0n0iPQ95yRbNIzW2wf8jTipeeASpzmKRaqwUTygCcJTg1Vu5pO_dutSZ-xtWq_maqf16WX1LK90JiCoKuAWXXdcbZDRkiqu4qewVIZADkQ.9LejxMATx5T8XxBrNQtniN_FZI1MfKXo0PKRug1kXlg&dib_tag=se&keywords=USB+microphone&qid=1777130682&sprefix=USB%2Bmicrophone%2Caps%2C271&sr=8-23&tag=tiereduptech-20",
-        "price": 50.14,
+        "price": 58.99,
         "inStock": true
       }
     },
@@ -303,7 +303,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/HyperX-SoloCast-Microphone-Tap-Mute/dp/B08KFL3SFV/ref=sr_1_47?crid=UN6YR78FTY9E&dib=eyJ2IjoiMSJ9.5Nodv8VroGXGpVLPiMFvWQW0BgCAurqjcf6dTd0IB6u09PpyDDLSa1JovEevFgXHoe59m997sj3vjhiXhL0WWxp3nw4O5NDX7Wqv7McYCBwpVxvMoh62bsf5xt2LSpomdwkcz4FWT9k2a8l1t6Vmya4F9efAbkxnbaXT2cLw77Z-r0FmoZFzBeoMukVqPlzHn1mQL3sKZOMz_hA4USK8kMWL-MXUGg1J6iCf_dL3cKacK8fEPHdhc1VC71NkOPI0NL7BGRwWsrLzkm62Ihc2OcjHTFz0er4ghzQOyZi5tJw.qLybboGdKcgOfqqKLQW4Dav2m6FznJiImkjYYBJAymQ&dib_tag=se&keywords=Blue+Yeti&qid=1777130680&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Blue%2BYeti%2Caps%2C202&sr=8-47&tag=tiereduptech-20",
-        "price": 74.99,
+        "price": 69.99,
         "inStock": true
       }
     },
@@ -834,7 +834,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T16:31:54.642Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 101181,
@@ -914,7 +916,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T16:39:25.965Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 101329,
@@ -1009,7 +1013,7 @@ export default [
       "amazon": {
         "asin": "B0BQM4TKF7",
         "url": "https://www.amazon.com/dp/B0BQM4TKF7?tag=tiereduptech-20",
-        "price": 180,
+        "price": 190,
         "inStock": true
       }
     },
@@ -1189,7 +1193,7 @@ export default [
       "amazon": {
         "asin": "B002VA464S",
         "url": "https://www.amazon.com/dp/B002VA464S?tag=tiereduptech-20",
-        "price": 89.99,
+        "price": 65.99,
         "inStock": true
       }
     },
@@ -1254,7 +1258,7 @@ export default [
       "amazon": {
         "asin": "B07QLNYBG9",
         "url": "https://www.amazon.com/dp/B07QLNYBG9?tag=tiereduptech-20",
-        "price": 79.99,
+        "price": 47.99,
         "inStock": true
       }
     },
@@ -1279,7 +1283,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.637Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 101735,
@@ -1499,7 +1505,7 @@ export default [
       "amazon": {
         "asin": "B0C5LGFQJJ",
         "url": "https://www.amazon.com/dp/B0C5LGFQJJ?tag=tiereduptech-20",
-        "price": 59.99,
+        "price": 69.99,
         "inStock": true
       }
     },
@@ -1519,7 +1525,7 @@ export default [
       "amazon": {
         "asin": "B0DHJN12QL",
         "url": "https://www.amazon.com/dp/B0DHJN12QL?tag=tiereduptech-20",
-        "price": 24.99,
+        "price": 21.24,
         "inStock": true
       }
     },
@@ -1539,7 +1545,7 @@ export default [
       "amazon": {
         "asin": "B01L3LL95O",
         "url": "https://www.amazon.com/dp/B01L3LL95O?tag=tiereduptech-20",
-        "price": 19.99,
+        "price": 18.99,
         "inStock": true
       }
     },
@@ -1669,7 +1675,7 @@ export default [
       "amazon": {
         "asin": "B0BJV5S52N",
         "url": "https://www.amazon.com/dp/B0BJV5S52N?tag=tiereduptech-20",
-        "price": 42.99,
+        "price": 39.99,
         "inStock": true
       }
     },
@@ -1709,7 +1715,7 @@ export default [
       "amazon": {
         "asin": "B0GCYS7GGT",
         "url": "https://www.amazon.com/dp/B0GCYS7GGT?tag=tiereduptech-20",
-        "price": 29.69,
+        "price": 34.99,
         "inStock": true
       }
     },
@@ -1729,7 +1735,7 @@ export default [
       "amazon": {
         "asin": "B0F4KMF64P",
         "url": "https://www.amazon.com/dp/B0F4KMF64P?tag=tiereduptech-20",
-        "price": 47.99,
+        "price": 44.99,
         "inStock": true
       }
     },
@@ -1856,7 +1862,7 @@ export default [
     "addedAt": "2026-05-15T17:05:43.641Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 101777,
@@ -1951,7 +1957,7 @@ export default [
       "amazon": {
         "asin": "B0BF98BLRN",
         "url": "https://www.amazon.com/dp/B0BF98BLRN?tag=tiereduptech-20",
-        "price": 200,
+        "price": 241.94,
         "inStock": true
       }
     },
@@ -2038,7 +2044,7 @@ export default [
     "addedAt": "2026-05-15T17:05:43.642Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 101790,
@@ -2080,7 +2086,7 @@ export default [
     "addedAt": "2026-05-15T17:05:43.642Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 101792,
@@ -2115,7 +2121,7 @@ export default [
       "amazon": {
         "asin": "B0BSBV4QG5",
         "url": "https://www.amazon.com/dp/B0BSBV4QG5?tag=tiereduptech-20",
-        "price": 379.99,
+        "price": 299.99,
         "inStock": true
       }
     },
@@ -2230,7 +2236,7 @@ export default [
       "amazon": {
         "asin": "B0BQH4KNBR",
         "url": "https://www.amazon.com/dp/B0BQH4KNBR?tag=tiereduptech-20",
-        "price": 228,
+        "price": 212,
         "inStock": true
       }
     },
@@ -2350,7 +2356,7 @@ export default [
       "amazon": {
         "asin": "B0CTDJ45M4",
         "url": "https://www.amazon.com/dp/B0CTDJ45M4?tag=tiereduptech-20",
-        "price": 129.95,
+        "price": 169.95,
         "inStock": true
       }
     },
@@ -2707,7 +2713,7 @@ export default [
     "addedAt": "2026-05-15T17:05:43.650Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 101826,
@@ -2729,7 +2735,7 @@ export default [
     "addedAt": "2026-05-15T17:05:43.651Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 101827,
@@ -2811,6 +2817,6 @@ export default [
     "addedAt": "2026-05-15T17:05:43.651Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   }
 ];
