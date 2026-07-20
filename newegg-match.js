@@ -121,13 +121,42 @@ const MARKER_NOISE = /\b(80\s*\+?\s*plus|plus\s*gold|plus\s*bronze|plus\s*platin
 // and "AIR 903" are not split by "Series" alone.
 const GENERIC_NOISE = /\b(series|edition|version|model|retail|new|gaming|desktop|computer|pc)\b/gi;
 
+// Multi-word markers, folded to ONE token before tokenization. Without this,
+// "Open Box" tokenizes to <open><box> — two ordinary words that no marker set
+// can safely contain ("box contents", "open air"). Folding makes the phrase
+// addressable without making its halves trigger-happy.
+const PHRASE_MARKERS = [
+  [/\bopen[\s-]*box\b/gi, ' openbox '],
+  [/\breverse[\s-]*blade[sd]?\b/gi, ' reverseblade '],
+  [/\b(?:factory|manufacturer)[\s-]*recertified\b/gi, ' refurbished '],
+  [/\brecertified\b/gi, ' refurbished '],
+  [/\brefurb(?:ished)?\b/gi, ' refurbished '],
+  [/\bgrade\s+[abc]\b/gi, ' refurbished '],
+];
+
 const VARIANT_MARKERS = new Set([
+  // model tier
   'max', 'pro', 'plus', 'se', 'ti', 'super', 'xt', 'xtx', 'elite', 'lite',
   'mini', 'micro', 'ultra', 'extreme', 'premium', 'advanced', 'flow',
   'rgb', 'argb', 'itx', 'matx', 'atx', 'ii', 'iii', 'iv', 'v2', 'v3',
   'xl', 'xxl', 'compact', 'slim',
   // color-as-model — Newegg sells White/Black as separate SKUs
-  'white', 'black', 'silver', 'pink', 'snow',
+  'white', 'black', 'silver', 'pink', 'snow', 'grey', 'gray',
+  // finish-as-model — Noctua ships NH-D15 and NH-D15 chromax.black as distinct SKUs
+  'chromax',
+  // ── ALPHA-ONLY MARKERS ────────────────────────────────────────────────────
+  // Everything above happens to be alpha too, but these exist for a different
+  // reason: they are the words that distinguish listings whose MODEL NUMBERS
+  // are identical, so the digit-token check at the bottom of variantMismatch()
+  // cannot see them. "SL-Infinity 120 Reverse Blade" vs "SL-Infinity Wireless
+  // 120" share every digit token; only these words tell them apart.
+  //
+  // condition — a different condition is a different SKU at a different price
+  'openbox', 'refurbished', 'renewed', 'used', 'oem',
+  // connectivity — Lian Li ships wired and wireless-controller fan packs apart
+  'wireless', 'wired',
+  // blade geometry — reverse-blade fans are a separate SKU, same model number
+  'reverseblade', 'reverse',
 ]);
 
 // Units and spec noise that look model-ish but aren't identity.
@@ -138,11 +167,17 @@ const VARIANT_MARKERS = new Set([
 // to catch, so ambiguous suffixes stay OUT of this list.
 const UNIT_TOKEN = /^\d+(\.\d+)?(mm|cm|ghz|mhz|hz|w|kw|gb|tb|mb|kb|rpm|cfm|pin|v|bit|k|p|nm|db|dba|ms|gbps|mbps)?$/i;
 
+// Shared normalization. Phrase folding runs FIRST so "Open Box" becomes a
+// single token before the noise strippers or the tokenizer can split it.
+function prepare(name) {
+  let s = String(name || '').toLowerCase();
+  for (const [re, to] of PHRASE_MARKERS) s = s.replace(re, to);
+  return s.replace(MARKER_NOISE, ' ').replace(GENERIC_NOISE, ' ');
+}
+
 function markerSet(name) {
-  const cleaned = String(name || '').toLowerCase()
-    .replace(MARKER_NOISE, ' ').replace(GENERIC_NOISE, ' ');
   const out = new Set();
-  for (const w of cleaned.replace(/[^\w\s]/g, ' ').split(/\s+/)) {
+  for (const w of prepare(name).replace(/[^\w\s]/g, ' ').split(/\s+/)) {
     if (VARIANT_MARKERS.has(w)) out.add(w);
   }
   return out;
@@ -150,10 +185,8 @@ function markerSet(name) {
 
 // Tokens that identify a model: contain a digit, aren't a bare unit/measurement.
 function modelTokens(name) {
-  const cleaned = String(name || '').toLowerCase()
-    .replace(MARKER_NOISE, ' ').replace(GENERIC_NOISE, ' ');
   const out = new Set();
-  for (const w of cleaned.replace(/[^\w\s]/g, ' ').split(/\s+/)) {
+  for (const w of prepare(name).replace(/[^\w\s]/g, ' ').split(/\s+/)) {
     if (!/\d/.test(w)) continue;
     if (UNIT_TOKEN.test(w)) continue;
     out.add(w);

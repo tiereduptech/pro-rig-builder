@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "build:fast": "vite build",
     "seo:audit": "node scripts/seo-audit.cjs",
+    "test": "node --test \"test/**/*.test.js\"",
     "start": "node server.cjs"
   },
   "dependencies": {

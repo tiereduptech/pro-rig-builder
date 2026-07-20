@@ -212,6 +212,11 @@ function chooseCandidate(p, candidates) {
   const changes = [];
   const failures = [];
   const removalCandidates = [];
+  // Every gated candidate we scored, selected or not. This is what the accept
+  // floor is calibrated against — without it the artifact only carried scores
+  // for candidates we ALREADY decided to write, which is the one population
+  // that cannot tell you where the floor belongs.
+  const scoreSamples = [];
 
   for (let i = 0; i < matched.length; i++) {
     const p = matched[i];
@@ -250,6 +255,22 @@ function chooseCandidate(p, candidates) {
     // ── OK: we have a real, gated match. ──────────────────────────────────────
     stats.ok++;
     const chosen = chooseCandidate(p, r.candidates);
+    {
+      const selSku = chosen && chosen.pick ? String(chosen.pick.item.sku).trim() : null;
+      for (const c of r.candidates) {
+        const cSku = String(c.item.sku || '').trim();
+        scoreSamples.push({
+          id: p.id, name: p.n, cat: p.c, ourSku: sku,
+          candidateName: c.item.name, candidateSku: cSku,
+          candidateClass: NEG.sellerClass(cSku),
+          method: c.match.method, score: Number(c.match.score.toFixed(3)),
+          selected: selSku != null && cSku === selSku,
+          skuChanged: cSku !== String(sku).trim(),
+          disposition: !chosen ? 'no_candidate_selected'
+            : chosen.downgrade ? 'downgrade_blocked' : chosen.kind,
+        });
+      }
+    }
     if (!chosen) { // defensive: ok implies >=1 candidate, but never assume
       stats.lookupFailed++;
       failures.push({ id: p.id, name: p.n, cat: p.c, sku, reason: 'no_candidate_selected', rawCount: r.rawCount });
@@ -404,6 +425,7 @@ function chooseCandidate(p, candidates) {
     thresholds: { MIN_ABSENT_STREAK, MIN_STALE_DAYS, MIN_HEALTHY_CANDIDATES, MAX_LOOKUP_FAILURE_RATE, removalCap },
     failures: failures.slice(0, 50),
     changes: changes.slice(0, 100),
+    scoreSamples,
   };
   fs.writeFileSync(REPORT, JSON.stringify(report, null, 2));
   console.log(`\nReport -> ${REPORT}`);
