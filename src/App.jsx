@@ -630,6 +630,29 @@ function productConditions(p) {
   return [...conds];
 }
 
+// Newegg's feed carries BOTH first-party listings ("N82E…", or the dashed
+// form) and third-party marketplace resellers ("9SI…"). Showing a marketplace
+// listing as a plain "Newegg" price tells a buyer they are purchasing from
+// Newegg when they are not — different seller, different returns and support.
+// Ingest attaches marketplace only when no first-party listing exists, so these
+// are legitimate offers; they just have to be disclosed.
+//
+// Mirrors neweggSkuClass() in price-sanity.js. Derived from the SKU rather than
+// read from info.sellerClass because every Newegg deal currently in the catalog
+// predates that field — keying on the stored value alone would badge none of
+// them. The stored value wins when present.
+const NEWEGG_DASHED_SKU = /^[0-9A-Z]{3}-[0-9A-Z]{4}-[0-9A-Z]{4,6}$/;
+function neweggSellerClass(key, info) {
+  if (!/^newegg/i.test(key)) return null;
+  if (info.sellerClass) return info.sellerClass;
+  const sku = String(info.sku || "").toUpperCase().trim();
+  if (!sku) return null;
+  if (sku.startsWith("9SI")) return "marketplace";
+  if (sku.startsWith("N82E")) return "official";
+  if (NEWEGG_DASHED_SKU.test(sku)) return "official";
+  return "other";
+}
+
 const retailers = p => {
   if (!p.deals || typeof p.deals !== "object") return [];
   return Object.entries(p.deals)
@@ -637,11 +660,23 @@ const retailers = p => {
     .map(([name, info]) => {
       const url = info.url || info.linkurl;
       const rawPrice = info.saleprice && Number(info.saleprice) > 0 ? Number(info.saleprice) : Number(info.price);
-      return { name, displayName: retailerDisplayName(name), price: rawPrice, url, inStock: info.inStock !== false };
+      return { name, displayName: retailerDisplayName(name), price: rawPrice, url, inStock: info.inStock !== false,
+        sellerClass: neweggSellerClass(name, info) };
     })
     .filter(r => r.url && r.price > 0)
     .sort((a,b) => a.price - b.price);
 };
+
+// "3RD-PARTY" rather than "MARKETPLACE": the filter sidebar already uses
+// "Marketplace" to mean RETAILER (Amazon / Newegg / Best Buy), so reusing that
+// word here would read as a retailer name instead of a warning about who the
+// seller is.
+function SellerTag({ r }) {
+  if (r.sellerClass !== "marketplace") return null;
+  return <span title="Sold by a third-party seller on Newegg, not by Newegg directly.">
+    <Tag color="var(--violet)">3RD-PARTY</Tag>
+  </span>;
+}
 
 // ── Global list of retailers tracked anywhere in the dataset — for N/A display on missing retailers ──
 let ALL_RETAILERS = [...new Set(SEED_PARTS.flatMap(p =>
@@ -697,6 +732,7 @@ function PriceCompare({part}) {
             border:i===0?"1px solid var(--mint)22":"1px solid transparent"}}>
           <div style={{display:"flex",alignItems:"center",gap:6}}>
             <span style={{fontFamily:"var(--ff)",fontSize:10,fontWeight:600,color:"var(--txt)"}}>{r.displayName}</span>
+            <SellerTag r={r}/>
             {i===0 && <Tag color="var(--mint)">BEST</Tag>}
             {!r.inStock && <Tag color="var(--rose)">OOS</Tag>}
           </div>
@@ -3603,6 +3639,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                   <div style={{flex:1,minWidth:0}}>
                     <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}>
                       <span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span>
+                      <SellerTag r={r}/>
                       {ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}
                     </div>
                     <div style={{fontFamily:"var(--ff)",fontSize:10,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
@@ -4032,7 +4069,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                     {rr.length>0?rr.map((r,ri)=>{const histKey=p.id+":"+r.name;const histOpenHere=histOpen===histKey;return <React.Fragment key={r.name}>
                       <a key={r.name} href={r.url} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",padding:"12px 14px",borderRadius:8,textDecoration:"none",gap:12,background:ri===0?"var(--mint3)":"var(--bg4)",border:`1px solid ${ri===0?"var(--mint)33":"var(--bdr)"}`}}>
                         <div style={{flex:1}}>
-                          <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span>{ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}</div>
+                          <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span><SellerTag r={r}/>{ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}</div>
                           <div style={{fontFamily:"var(--ff)",fontSize:13,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
                         </div>
                         <div style={{display:"flex",alignItems:"center",gap:12}}>
@@ -4759,7 +4796,7 @@ function BuyYourBuild({build, multiParts}){
           <div>
             {r.best
               ? <a href={r.best.url} target="_blank" rel="noopener noreferrer sponsored" style={{display:"inline-flex",alignItems:"center",gap:5,fontFamily:"var(--ff)",fontSize:12,fontWeight:600,padding:"7px 14px",background:"var(--accent)",color:"var(--bg)",textDecoration:"none",whiteSpace:"nowrap"}}>
-                  Buy on {r.best.displayName} <ExternalLink size={12} strokeWidth={2.5}/>
+                  Buy on {r.best.displayName}{r.best.sellerClass==="marketplace"&&" (3rd-party)"} <ExternalLink size={12} strokeWidth={2.5}/>
                 </a>
               : <span style={{fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)"}}>No retailer</span>}
           </div>
