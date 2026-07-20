@@ -56,3 +56,9 @@ public/price-history/
 public/reviews/
 !catalog-build/reviews.json
 
+
+# write-catalog.cjs / split-parts-by-cat.cjs transient state (see write-catalog.cjs header).
+# These only exist mid-write; if one survives a run, a write was interrupted.
+src/data/.parts.tmp.js
+src/data/.parts.staging/
+src/data/.parts.old/

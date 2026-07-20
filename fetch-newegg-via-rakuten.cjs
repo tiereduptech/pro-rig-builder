@@ -35,6 +35,14 @@
 
 const fs = require('fs');
 const path = require('path');
+const { writeCatalog } = require('./scripts/write-catalog.cjs');
+
+// Full catalog + its load-time count, captured by loadParts(). saveParts()
+// writes ALL_PARTS (not the filtered `active` subset — writing that would drop
+// every product ingest wasn't looking at), and the count feeds writeCatalog's
+// catastrophic-shrink brake.
+let ALL_PARTS = null;
+let LOADED_COUNT = 0;
 
 // Newegg matching + capacity guard + first-party preference + sanity gate
 // (shared ESM, dynamic-imported at startup). newegg-match.js owns the capacity
@@ -210,33 +218,23 @@ async function loadParts() {
   const mod = await import(url);
   const parts = mod.PARTS || mod.default;
   if (!Array.isArray(parts)) throw new Error(`PARTS is not an array in ${PARTS_PATH}`);
+  ALL_PARTS = parts;
+  LOADED_COUNT = parts.length;
   return { parts };
 }
 
-// The WRITE path is worse than broken — it is destructive. It replaced the
-// whole `export const PARTS = [...]` barrel with a JSON literal, which would
-// have wiped the chunk composition and orphaned all 30 imports, leaving the
-// frontend loading stale src/data/parts/<cat>.js files. Refuse loudly instead
-// of corrupting the catalog; a live ingest must write per-category chunks.
-function assertWritePathUsable() {
-  const src = fs.readFileSync(PARTS_PATH, 'utf8');
-  if (/export\s+const\s+PARTS\s*=\s*\[\s*\.\.\./.test(src)) {
-    throw new Error(
-      'LIVE INGEST BLOCKED: src/data/parts.js is an auto-generated barrel of\n' +
-      '  per-category chunk imports (scripts/split-parts-by-cat.cjs), not a literal\n' +
-      '  array. Overwriting it with a JSON literal would destroy the chunk structure\n' +
-      '  and orphan every import. The write path must target src/data/parts/<cat>.js\n' +
-      '  before this script may run live. --dry-run is unaffected and works.',
-    );
-  }
-}
-
-// Late backstop. assertWritePathUsable() fires first at startup; this exists so
-// the call sites below cannot silently become a corrupting write if that guard
-// is ever moved or removed.
-function saveParts() {
-  assertWritePathUsable();
-  throw new Error('saveParts(): no write path implemented for the chunked catalog. Use --dry-run.');
+// The write path used to be blocked outright: ingest replaced the whole
+// `export const PARTS = [...]` barrel with a JSON literal and stopped there,
+// orphaning all 30 chunk imports. The fix is not a bespoke per-chunk writer —
+// it is routing through scripts/write-catalog.cjs, which writes the literal and
+// then regenerates the chunks in the same call, so the two can never diverge.
+// See that file's header for why the literal itself was never the problem.
+async function saveParts() {
+  const res = await writeCatalog(ALL_PARTS, {
+    loadedCount: LOADED_COUNT,
+    reason: 'newegg ingest',
+  });
+  return res.backup;
 }
 function loadProgress() {
   if (!fs.existsSync(PROGRESS_PATH)) return { matched: 0, no_match: 0, errors: 0, processedIds: [] };
@@ -254,7 +252,6 @@ function saveProgress(p) {
   NEG = await import('file://' + process.cwd().replace(/\\/g, '/') + '/newegg-match.js');
 
   // Fail before spending a single API call if this run could not write anyway.
-  if (!DRY_RUN) assertWritePathUsable();
 
   const { parts } = await loadParts();
   let active = parts.filter((p) => !p.needsReview && !p.bundle && p.n && CAT_FILTER[p.c]);
@@ -395,7 +392,7 @@ function saveProgress(p) {
 
     if (!DRY_RUN && (i + 1) % SAVE_EVERY === 0) {
       saveProgress({ matched, no_match: noMatch, errors, processedIds: progress.processedIds });
-      saveParts();
+      await saveParts();
       console.log(`  ── checkpoint: ${matched} matched, ${noMatch} no-match, ${errors} errors ──`);
     }
 
@@ -429,7 +426,7 @@ function saveProgress(p) {
   }
 
   saveProgress({ matched, no_match: noMatch, errors, processedIds: progress.processedIds });
-  const backup = saveParts();
+  const backup = await saveParts();
 
   console.log('\n  ═══ DONE ═══');
   console.log(`  Matched:    ${matched}`);

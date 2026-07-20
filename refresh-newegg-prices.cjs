@@ -26,6 +26,7 @@
 //
 const fs = require('fs');
 const path = require('path');
+const { writeCatalog } = require('./scripts/write-catalog.cjs');
 
 const CLIENT_ID = process.env.RAKUTEN_CLIENT_ID;
 const CLIENT_SECRET = process.env.RAKUTEN_CLIENT_SECRET;
@@ -39,6 +40,7 @@ const REPORT = (() => { const a = argv.find(x => x.startsWith('--report=')); ret
 // --parts= points the run at a fixture catalog instead of the live one, so the
 // removal path can be exercised against seeded (aged) state without touching
 // real data. Production runs omit it.
+const USING_FIXTURE = argv.some(x => x.startsWith('--parts='));
 const PARTS_PATH = (() => {
   const a = argv.find(x => x.startsWith('--parts='));
   return a ? path.resolve(a.split('=')[1]) : path.join(__dirname, 'src', 'data', 'parts.js');
@@ -505,8 +507,21 @@ function chooseCandidate(p, candidates) {
   const mutating = stats.priced + stats.priceSuspect + stats.confirmedAbsent + removed;
   if (mutating === 0) { console.log('No changes to write.'); return; }
 
-  const header = '// Auto-merged catalog. Edit with care.\n';
-  const body = 'export const PARTS = ' + JSON.stringify(parts, null, 2) + ';\n\nexport default PARTS;\n';
-  fs.writeFileSync(PARTS_PATH, header + body, 'utf8');
-  console.log(`Wrote ${parts.length} products to parts.js`);
+  // Route through the shared writer so the re-split is part of the write
+  // rather than a separate workflow step. Previously this wrote a raw literal
+  // over the barrel and relied on refresh-newegg-prices.yml running
+  // split-parts-by-cat.cjs afterwards — correct in CI, silently corrupting on
+  // any manual/local run.
+  //
+  // --parts= fixture runs are exempt: they point at a standalone literal
+  // catalog with no chunk barrel behind it, so there is nothing to re-split.
+  if (USING_FIXTURE) {
+    const header = '// Auto-merged catalog. Edit with care.\n';
+    const body = 'export const PARTS = ' + JSON.stringify(parts, null, 2) + ';\n\nexport default PARTS;\n';
+    fs.writeFileSync(PARTS_PATH, header + body, 'utf8');
+    console.log(`Wrote ${parts.length} products to fixture ${PARTS_PATH}`);
+    return;
+  }
+
+  await writeCatalog(parts, { loadedCount: parts.length, reason: 'newegg price refresh' });
 })().catch(e => { console.error(e); process.exit(1); });
