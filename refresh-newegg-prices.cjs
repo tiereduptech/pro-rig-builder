@@ -115,6 +115,11 @@ async function lookupProduct(p) {
   // 'no_match' is the only reason that can indicate real absence, and only when
   // the feed handed us a healthy candidate set to have missed our product in.
   // Everything else (http_error, no_results, no_cat_mapping) is a failed lookup.
+  //
+  // 'variant_rejected' is deliberately NOT absence: it means the feed surfaced
+  // our product line and the variant guard declined its variants. That is
+  // evidence the product EXISTS. Falling through to LOOKUP_FAILED below is the
+  // whole point — a stricter guard must never widen the deletion path.
   if (search.reason === 'no_match' && search.rawCount >= MIN_HEALTHY_CANDIDATES) {
     return { outcome: OUTCOME.CONFIRMED_ABSENT, reason: 'no_match', candidates: [], rawCount: search.rawCount };
   }
@@ -161,10 +166,40 @@ function effOf(item) {
 // matched, that is a LOOKUP failure — the feed didn't surface the listing we
 // already know exists — NOT a licence to rematch onto a marketplace reseller.
 // Returns { downgrade: true, ... } for the caller to treat as LOOKUP_FAILED.
+// SCORE FLOOR: a candidate may only REPLACE the SKU we hold on strong evidence.
+// Filtering before selection (rather than vetoing after) means selection falls
+// back to the SKU we already hold when the only alternative is weak — we reprice
+// instead of migrating, rather than failing the whole product. Repricing the
+// held SKU is exempt: identity is settled by the SKU, and a low name score there
+// only reflects a truncated catalog title.
+function applyMigrateFloor(candidates, currentSku) {
+  const weak = [];
+  const eligible = candidates.filter((c) => {
+    if (String(c.item.sku || '').trim() === currentSku) return true;
+    if (c.match.method !== 'name') return true; // UPC identity bypasses the floor
+    if (c.match.score >= NEG.MIN_MIGRATE_SIM) return true;
+    weak.push(c);
+    return false;
+  });
+  return { eligible, weak };
+}
+
 function chooseCandidate(p, candidates) {
   const currentSku = String(p.deals.newegg.sku || '').trim();
-  const exact = candidates.find(c => String(c.item.sku || '').trim() === currentSku);
-  const best = NEG.selectWithFirstPartyPreference(candidates);
+  const { eligible, weak } = applyMigrateFloor(candidates, currentSku);
+  const exact = eligible.find(c => String(c.item.sku || '').trim() === currentSku);
+  const best = NEG.selectWithFirstPartyPreference(eligible);
+
+  // Every candidate that could have changed the SKU was too weak, and we hold
+  // nothing to reprice. Treat as LOOKUP_FAILED — keep the existing deal.
+  if (!eligible.length && weak.length) {
+    return {
+      weakMatch: true,
+      bestWeakScore: Math.max(...weak.map(c => c.match.score)),
+      bestWeakName: weak.slice().sort((a, b) => b.match.score - a.match.score)[0].item.name,
+      floor: NEG.MIN_MIGRATE_SIM,
+    };
+  }
 
   // Rank of what we hold. No stored SKU => nothing to protect (worst rank).
   const currentRank = currentSku ? NEG.sellerRank(currentSku) : 99;
@@ -208,7 +243,7 @@ function chooseCandidate(p, candidates) {
     console.log(`Sample by category: ${Object.entries(byCat).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}=${v}`).join(' ')}`);
   }
 
-  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, lookupFailed: 0, downgradeBlocked: 0, confirmedAbsent: 0 };
+  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, lookupFailed: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0 };
   const changes = [];
   const failures = [];
   const removalCandidates = [];
@@ -267,6 +302,7 @@ function chooseCandidate(p, candidates) {
           selected: selSku != null && cSku === selSku,
           skuChanged: cSku !== String(sku).trim(),
           disposition: !chosen ? 'no_candidate_selected'
+            : chosen.weakMatch ? 'weak_match_blocked'
             : chosen.downgrade ? 'downgrade_blocked' : chosen.kind,
         });
       }
@@ -274,6 +310,23 @@ function chooseCandidate(p, candidates) {
     if (!chosen) { // defensive: ok implies >=1 candidate, but never assume
       stats.lookupFailed++;
       failures.push({ id: p.id, name: p.n, cat: p.c, sku, reason: 'no_candidate_selected', rawCount: r.rawCount });
+      await sleep(RATE_DELAY_MS);
+      continue;
+    }
+
+    // Score floor blocked the only SKU-changing candidates: same treatment as a
+    // downgrade — LOOKUP_FAILED, deal left exactly as found. Better to keep the
+    // existing deal than swap onto a weak match.
+    if (chosen.weakMatch) {
+      stats.ok--;
+      stats.weakMatchBlocked++;
+      stats.lookupFailed++;
+      failures.push({
+        id: p.id, name: p.n, cat: p.c, sku, reason: 'weak_match_blocked',
+        rawCount: r.rawCount, bestScore: Number(chosen.bestWeakScore.toFixed(3)),
+        floor: chosen.floor, candidateName: chosen.bestWeakName,
+      });
+      console.log(`  WEAK MATCH BLOCKED (no change): ${p.n} — best ${chosen.bestWeakScore.toFixed(2)} < ${chosen.floor}`);
       await sleep(RATE_DELAY_MS);
       continue;
     }
@@ -398,6 +451,7 @@ function chooseCandidate(p, candidates) {
   console.log(`Price suspect:    ${stats.priceSuspect}  (flagged, deal KEPT)`);
   console.log(`Lookup failed:    ${stats.lookupFailed}  (no change written)`);
   console.log(`Downgrade blocked:${stats.downgradeBlocked}  (seller rank protected, deal KEPT)`);
+  console.log(`Weak match blocked:${stats.weakMatchBlocked}  (below ${NEG.MIN_MIGRATE_SIM} migrate floor, deal KEPT)`);
   console.log(`Confirmed absent: ${stats.confirmedAbsent}  (${removalCandidates.length} past removal threshold)`);
   if (breakers.length) {
     console.log(`\n!! CIRCUIT BREAKER TRIPPED — 0 removals this run:`);
@@ -422,7 +476,7 @@ function chooseCandidate(p, candidates) {
     removalCandidates: removalCandidates.length,
     removed,
     breakers,
-    thresholds: { MIN_ABSENT_STREAK, MIN_STALE_DAYS, MIN_HEALTHY_CANDIDATES, MAX_LOOKUP_FAILURE_RATE, removalCap },
+    thresholds: { MIN_ABSENT_STREAK, MIN_STALE_DAYS, MIN_HEALTHY_CANDIDATES, MAX_LOOKUP_FAILURE_RATE, removalCap, MIN_MIGRATE_SIM: NEG.MIN_MIGRATE_SIM },
     failures: failures.slice(0, 50),
     changes: changes.slice(0, 100),
     scoreSamples,

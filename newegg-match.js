@@ -16,6 +16,21 @@ import { classifyDeal, effectivePrice, dispersion, CLASS, neweggSkuClass } from 
 
 const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
 const MIN_NAME_SIM = 0.5;
+// Minimum name score to ATTACH A DIFFERENT SKU than the one we already hold.
+//
+// Deliberately higher than MIN_NAME_SIM, and deliberately NOT applied to
+// repricing: once a SKU matches, identity is settled and the name score only
+// reflects how badly our catalog title is truncated. Real repricing matches
+// score as low as 0.571 (IronWolf 12TB) and 0.583 (Proteus 360) for that
+// reason alone — gating those would freeze prices on every truncated title.
+//
+// Calibrated against refresh dry-run 29758284829, not guessed:
+//   legit SKU-changing candidates:  0.765, 0.882, 0.882, 1.0 x6
+//   the variant collapse we caught: 0.59
+// 0.70 clears the collapse with margin while keeping the 0.765 case (a correct
+// match scored low only because our title lacks the "LIAN LI" brand prefix).
+// Anything >= 0.80 starts rejecting that whole brand-prefix-missing class.
+export const MIN_MIGRATE_SIM = 0.70;
 const MAX_PRICE_MULTIPLIER = 2.5;
 
 // Verified Newegg category filters (from fetch-newegg-via-rakuten.cjs).
@@ -216,7 +231,12 @@ export function variantMismatch(ourName, theirName) {
   return false;
 }
 
-export function scoreMatch(ourProduct, neweggItem) {
+// `notes` is an optional out-param: on a variant-guard rejection it receives
+// { reject }. Callers that omit it are unaffected. searchNewegg uses it to tell
+// "the feed had nothing like our product" apart from "the feed had our product
+// line and we rejected every variant of it" — those two must NOT be treated as
+// the same signal, because only the first is evidence of absence.
+export function scoreMatch(ourProduct, neweggItem, notes) {
   if (ourProduct.pr && neweggItem.price && neweggItem.price > ourProduct.pr * MAX_PRICE_MULTIPLIER) return null;
   if (/\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gaming Desktop|Bundle|Combo)\b/i.test(neweggItem.name)) return null;
   const storedCap = ourProduct.cap != null ? ourProduct.cap : parseCapacityGB(ourProduct.n);
@@ -231,7 +251,10 @@ export function scoreMatch(ourProduct, neweggItem) {
   // Name similarity is WEAK evidence — it is exactly what collapses variants.
   // Gate it. (An exact UPC match above is strong evidence and bypasses this.)
   const vm = variantMismatch(ourProduct.n, neweggItem.name);
-  if (vm) return null;
+  if (vm) {
+    if (notes) notes.reject = `variant_${vm.reason}`;
+    return null;
+  }
   return { method: 'name', score: sim };
 }
 
@@ -286,13 +309,37 @@ export async function searchNewegg(product, { token, mid, fetchImpl = fetch }) {
     items = parseItems(await res.text());
     if (items.length > 0) break;
   }
-  const base = { rawCount: items.length, httpErrors, queriesTried };
+  const base = { rawCount: items.length, httpErrors, queriesTried, variantRejects: 0 };
   // Every query we issued errored — we learned nothing about this product.
   if (httpErrors === queriesTried) return { ok: false, reason: 'http_error', candidates: [], ...base };
   if (!items.length) return { ok: false, reason: 'no_results', candidates: [], ...base };
-  const scored = items.map((it) => ({ item: it, match: scoreMatch(product, it) })).filter((x) => x.match);
-  if (!scored.length) return { ok: false, reason: 'no_match', candidates: [], ...base };
-  return { ok: true, candidates: scored, ...base };
+
+  let variantRejects = 0;
+  const scored = items.map((it) => {
+    const notes = {};
+    const match = scoreMatch(product, it, notes);
+    if (!match && notes.reject) variantRejects++;
+    return { item: it, match };
+  }).filter((x) => x.match);
+
+  if (!scored.length) {
+    // THE DISTINCTION THAT KEEPS THE DELETION CLOCK HONEST.
+    //
+    // Callers treat 'no_match' over a healthy candidate set as PROVEN ABSENCE
+    // and start the stale/removal countdown. That inference only holds when the
+    // feed genuinely had nothing resembling our product. If the variant guard
+    // rejected candidates, the feed DID surface our product line and we declined
+    // its variants — which is evidence the product still exists, the exact
+    // opposite of absence. Reporting both as 'no_match' would let a stricter
+    // guard quietly widen the deletion path, which is the same over-inference
+    // that destroyed 1,655 deals on 2026-07-06.
+    return {
+      ok: false,
+      reason: variantRejects ? 'variant_rejected' : 'no_match',
+      candidates: [], ...base, variantRejects,
+    };
+  }
+  return { ok: true, candidates: scored, ...base, variantRejects };
 }
 
 // ── Cross-retailer sanity gate for a candidate Newegg price (peers: amazon, bestbuy)

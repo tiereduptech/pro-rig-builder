@@ -121,6 +121,72 @@ for (const [label, a, b] of ACCEPT) {
   });
 }
 
+// ── The absence distinction ──────────────────────────────────────────────────
+// A variant-guard rejection must never be reported as 'no_match', because
+// callers read 'no_match' over a healthy candidate set as PROVEN ABSENCE and
+// start the removal countdown on it.
+test('scoreMatch reports variant rejection through the notes out-param', () => {
+  const notes = {};
+  const m = scoreMatch(
+    ours('Lian Li UNI Fan SL-Infinity 120 Triple Pack Reverse Blade ARGB Daisy-Chain'),
+    theirs('Open Box - Lian Li UNI Fan SL-Infinity Wireless 120 Triple Pack ARGB Daisy-Chain'),
+    notes,
+  );
+  assert.equal(m, null);
+  assert.match(notes.reject, /^variant_/);
+});
+
+test('a non-variant rejection leaves notes untouched', () => {
+  // Bundle/prebuilt rejection fires before the variant guard — it must not be
+  // miscounted as a variant reject, or genuine absence would stop being provable.
+  const notes = {};
+  assert.equal(scoreMatch(ours('Fractal Design North Black'), theirs('Gaming PC Desktop Bundle North Black'), notes), null);
+  assert.equal(notes.reject, undefined);
+});
+
+test('searchNewegg returns variant_rejected, not no_match, when the guard declined every candidate', async () => {
+  const xml = `<items>
+    <item><productname>Open Box - Lian Li UNI Fan SL-Infinity Wireless 120 - Triple Pack ARGB</productname><sku>9SIABC000001</sku><price>79.99</price></item>
+    <item><productname>Lian Li UNI Fan SL-Infinity Wireless 120 - Triple Pack ARGB</productname><sku>N82E16835000002</sku><price>89.99</price></item>
+    <item><productname>Refurbished: Lian Li UNI Fan SL-Infinity 120 - Triple Pack ARGB</productname><sku>N82E16835000003</sku><price>69.99</price></item>
+  </items>`;
+  const fetchImpl = async () => ({ ok: true, text: async () => xml });
+  const res = await NEG.searchNewegg(
+    { n: 'Lian Li UNI Fan SL-Infinity 120 - Triple Pack (Reverse Blade) ARGB', c: 'CaseFan' },
+    { token: 't', mid: '1', fetchImpl },
+  );
+  assert.equal(res.ok, false);
+  assert.equal(res.reason, 'variant_rejected',
+    'guard rejections reported as no_match would start the deletion clock on a live product');
+  assert.equal(res.variantRejects, 3);
+  assert.equal(res.rawCount, 3);
+});
+
+test('searchNewegg still reports no_match when nothing resembles our product', async () => {
+  // Absence must stay provable, or the removal path can never fire at all.
+  const xml = `<items>
+    <item><productname>Corsair RM850e Power Supply</productname><sku>N82E16817000001</sku><price>99.99</price></item>
+    <item><productname>Seagate Barracuda 2TB Hard Drive</productname><sku>N82E16822000002</sku><price>59.99</price></item>
+    <item><productname>ASUS Prime B650 Motherboard</productname><sku>N82E16813000003</sku><price>149.99</price></item>
+  </items>`;
+  const fetchImpl = async () => ({ ok: true, text: async () => xml });
+  const res = await NEG.searchNewegg(
+    { n: 'Lian Li UNI Fan SL-Infinity 120 - Triple Pack (Reverse Blade) ARGB', c: 'CaseFan' },
+    { token: 't', mid: '1', fetchImpl },
+  );
+  assert.equal(res.reason, 'no_match');
+  assert.equal(res.variantRejects, 0);
+});
+
+// ── The migrate floor ────────────────────────────────────────────────────────
+test('MIN_MIGRATE_SIM sits above the observed collapse and below the observed legit match', () => {
+  // Guards the calibration itself: dry-run 29758284829 showed a 0.59 collapse
+  // and a legitimate 0.765 brand-prefix match. Moving the floor outside that
+  // band silently changes which real matches survive.
+  assert.ok(NEG.MIN_MIGRATE_SIM > 0.59, 'floor must reject the observed collapse');
+  assert.ok(NEG.MIN_MIGRATE_SIM < 0.765, 'floor must keep the observed brand-prefix match');
+});
+
 // ── The UPC bypass ───────────────────────────────────────────────────────────
 test('exact UPC match bypasses the name guard', () => {
   // UPC is strong identity evidence; name similarity is weak. A UPC hit must
