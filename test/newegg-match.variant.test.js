@@ -198,3 +198,84 @@ test('exact UPC match bypasses the name guard', () => {
   );
   assert.deepEqual(m, { method: 'upc', score: 1.0 });
 });
+
+// ── Attach floor vs reprice floor ────────────────────────────────────────────
+// These two floors MUST stay separate. scoreMatch() gates both ingest (first
+// attach) and refresh (repricing); collapsing them to one number breaks one
+// path or the other.
+test('MIN_ATTACH_SIM is stricter than the reprice floor but matches MIN_MIGRATE_SIM', () => {
+  assert.ok(NEG.MIN_ATTACH_SIM > 0.5, 'attach floor must be stricter than the reprice floor');
+  assert.equal(NEG.MIN_ATTACH_SIM, NEG.MIN_MIGRATE_SIM,
+    'first bind and re-bind should require the same confidence');
+});
+
+// Measured, not guessed — both land between the two floors (0.571 and 0.667).
+// 0.571 is the same score the IronWolf repricing match scores in production,
+// which is precisely why the reprice floor cannot be raised to 0.70.
+const BETWEEN_FLOORS = [
+  ['Seagate IronWolf 12TB NAS Hard Drive', 'Seagate IronWolf 12TB SATA Internal Enterprise Drive', 0.667],
+  ['Lian Li Lancool II Mesh Performance Case', 'Lancool II Mesh Performance Mid Tower Chassis', 0.571],
+];
+
+for (const [a, b, expected] of BETWEEN_FLOORS) {
+  test(`a ${expected}-scoring pair reprices but does NOT attach: ${a}`, () => {
+    const o = ours(a), t = theirs(b);
+
+    // Pin the score. If normalization drifts, this fixture stops sitting
+    // between the floors and the asymmetry silently stops being tested.
+    assert.equal(Number(NEG.nameSimilarity(o.n, t.name).toFixed(3)), expected,
+      'fixture drifted out of the band between the two floors');
+
+    const reprice = scoreMatch(o, t);                                     // default floor
+    const attach  = scoreMatch(o, t, {}, { minSim: NEG.MIN_ATTACH_SIM }); // ingest floor
+
+    assert.ok(reprice, 'reprice path must still accept a low-scoring truncated title');
+    assert.equal(attach, null, 'attach path must reject the same pair');
+  });
+}
+
+test('a pair above the attach floor still passes BOTH paths', () => {
+  // Guards the other direction: the raised floor must not reject everything.
+  const o = ours('be quiet Pure Base 500DX Airflow Case');
+  const t = theirs('be quiet Pure Base 500DX Mid Tower Chassis Windowed');
+  assert.ok(NEG.nameSimilarity(o.n, t.name) >= NEG.MIN_ATTACH_SIM);
+  assert.ok(scoreMatch(o, t), 'reprice');
+  assert.ok(scoreMatch(o, t, {}, { minSim: NEG.MIN_ATTACH_SIM }), 'attach');
+});
+
+test('below_attach_floor is reported distinctly from a variant rejection', () => {
+  // The dry-run report separates these buckets; conflating them would make a
+  // floor change look like the variant guard suddenly over-reaching.
+  const notes = {};
+  scoreMatch(ours(BETWEEN_FLOORS[0][0]), theirs(BETWEEN_FLOORS[0][1]),
+    notes, { minSim: NEG.MIN_ATTACH_SIM });
+  assert.equal(notes.reject, 'below_attach_floor');
+});
+
+// ── Seller-rank guard ────────────────────────────────────────────────────────
+const cand = (sku, name, score) => ({ item: { sku, name }, match: { method: 'name', score } });
+
+test('marketplace never wins when a first-party candidate matched', () => {
+  const pick = NEG.selectWithFirstPartyPreference([
+    cand('9SIA1234567', 'x', 0.99),          // marketplace, better score
+    cand('N82E16811000001', 'x', 0.71),      // first-party, worse score
+  ]);
+  assert.ok(NEG.isFirstParty(pick.item.sku), 'first-party must win regardless of score');
+});
+
+test('unknown-prefix beats marketplace when no first-party exists', () => {
+  // The gap the rank walk closes: these two used to compete on raw score, so a
+  // marketplace listing could win by a hundredth of a point.
+  const pick = NEG.selectWithFirstPartyPreference([
+    cand('9SIA1234567', 'x', 0.99),          // marketplace (rank 2)
+    cand('2AM-00CN-00061', 'x', 0.72),       // other/unknown (rank 1)
+  ]);
+  assert.ok(!NEG.isMarketplace(pick.item.sku), 'marketplace must lose to a higher-ranked seller');
+});
+
+test('marketplace is still selected when it is the only option', () => {
+  // The 18/43 firstPartyAvailable:0 population — these must still attach, they
+  // are just labelled sellerClass:'marketplace' so the site can badge them.
+  const pick = NEG.selectWithFirstPartyPreference([cand('9SIA1234567', 'x', 0.85)]);
+  assert.equal(NEG.sellerClass(pick.item.sku), 'marketplace');
+});

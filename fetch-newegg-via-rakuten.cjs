@@ -14,9 +14,15 @@
 //         - Reject if name contains bundle markers (Custom/Workstation/PC/Combo).
 //         - Reject if price > 2.5× our pr (likely a bundle).
 //         - Score: UPC match (normalized) = 1.0; else Jaccard name similarity.
-//    4) Accept best if UPC match OR name sim >= 0.5.
-//    5) Store in deals.newegg = { sku, price, saleprice, linkurl, imageurl,
-//                                  matchedAt, matchMethod, matchScore }.
+//    4) Accept best if UPC match OR name sim >= MIN_ATTACH_SIM (0.70). This is
+//       stricter than the 0.5 floor refresh uses for REPRICING: a first attach
+//       binds a product to a SKU on name evidence alone, and a weak bind shows
+//       a buyer the wrong product. Repricing a settled SKU is safe at 0.5.
+//    5) Seller rank: first-party (N82E) always wins; marketplace (9SI) is only
+//       ever attached when NO higher-ranked candidate matched, and is labelled
+//       sellerClass so the site can badge it.
+//    6) Store in deals.newegg = { sku, price, saleprice, linkurl, imageurl,
+//                                  sellerClass, matchedAt, matchMethod, matchScore }.
 //
 //  Resumable: products with existing deals.newegg.sku are skipped on re-run.
 //  Rate limited: REQ_PER_SECOND requests/sec.
@@ -169,19 +175,34 @@ async function findNeweggMatch(product, token) {
   // Capture WHY each candidate lost, not just that it did. The dry run reports
   // this verbatim; without it a variant rejection is indistinguishable from
   // "the feed had nothing", which is the ambiguity that hid the bad matches.
+  // Kept separate from variantRejects on purpose. Both are "rejected candidate",
+  // but conflating them would make the attach-floor raise read as the variant
+  // guard suddenly over-reaching — and the whole point of a dry run is that a
+  // number moves for exactly one identifiable reason.
+  const floorRejects = [];
   const variantRejects = [];
   const scored = [];
   for (const it of items) {
     const notes = {};
-    const match = NEG.scoreMatch(product, it, notes);
+    // Ingest is a FIRST ATTACH, so it uses the stricter MIN_ATTACH_SIM floor
+    // rather than the repricing floor. See newegg-match.js for why the two
+    // differ: binding a new link on weak name evidence shows a buyer the wrong
+    // product, while repricing a settled SKU at a low score is routine.
+    const match = NEG.scoreMatch(product, it, notes, { minSim: NEG.MIN_ATTACH_SIM });
     if (match) scored.push({ item: it, match });
-    else if (notes.reject) {
+    else if (notes.reject === 'below_attach_floor') {
+      floorRejects.push({
+        candidateName: it.name, sku: it.sku,
+        sim: Number(NEG.nameSimilarity(product.n, it.name).toFixed(3)),
+      });
+    } else if (notes.reject) {
       variantRejects.push({ candidateName: it.name, sku: it.sku, reason: notes.reject });
     }
   }
   const detail = {
     rawCount: items.length,
     variantRejects,
+    floorRejects,
     scores: scored.map((x) => ({
       candidateName: x.item.name, sku: x.item.sku,
       sellerClass: NEG.sellerClass(x.item.sku),
@@ -190,12 +211,25 @@ async function findNeweggMatch(product, token) {
   };
 
   if (scored.length === 0) {
-    return { ok: false, reason: variantRejects.length ? 'variant_rejected' : 'no_match', ...detail };
+    const reason = variantRejects.length ? 'variant_rejected'
+      : floorRejects.length ? 'below_attach_floor'
+      : 'no_match';
+    return { ok: false, reason, ...detail };
   }
   // First-party (N82E) preference — never let a marketplace (9SI) listing win when a
   // Newegg-Official listing also matched. Price-independent (see newegg-match.js).
   const best = NEG.selectWithFirstPartyPreference(scored);
   const firstPartyAvailable = scored.some((x) => NEG.isFirstParty(x.item.sku));
+
+  // Seller-rank guard. Ingest must never CREATE a marketplace attachment when a
+  // first-party candidate was available — selection above already prefers
+  // first-party, so reaching this is a bug in selection rather than a normal
+  // outcome. Assert it at the attach boundary anyway: this is the invariant the
+  // catalog depends on, and it should not be enforced only as a side effect of
+  // how selectWithFirstPartyPreference happens to sort.
+  if (firstPartyAvailable && NEG.isMarketplace(best.item.sku)) {
+    return { ok: false, reason: 'marketplace_over_firstparty', ...detail };
+  }
   return {
     ok: true, item: best.item, method: best.match.method, score: best.match.score,
     firstPartyAvailable, ...detail,
@@ -294,9 +328,10 @@ function saveProgress(p) {
 
   let matched = 0, noMatch = 0, errors = 0, flagged = 0;
   // Dry-run report accumulators.
-  const dryStats = { scored: 0, accepted: 0, flagged: 0, variantRejected: 0, noMatch: 0, noResults: 0, errors: 0 };
+  const dryStats = { scored: 0, accepted: 0, flagged: 0, variantRejected: 0, floorRejected: 0, marketplaceBlocked: 0, noMatch: 0, noResults: 0, errors: 0 };
   const dryAccepts = [];
   const dryRejects = [];
+  const dryFloorRejects = [];
   const delay = 1000 / REQ_PER_SECOND;
   await getToken();
   console.log('  ✓ Token acquired\n');
@@ -314,6 +349,11 @@ function saveProgress(p) {
       if (DRY_RUN) {
         dryStats.scored += result.scores ? result.scores.length : 0;
         dryStats.variantRejected += result.variantRejects ? result.variantRejects.length : 0;
+        dryStats.floorRejected += result.floorRejects ? result.floorRejects.length : 0;
+        if (result.floorRejects && result.floorRejects.length) {
+          dryFloorRejects.push({ id: p.id, cat: p.c, ourName: p.n, rejected: result.floorRejects });
+        }
+        if (result.reason === 'marketplace_over_firstparty') dryStats.marketplaceBlocked++;
         if (result.variantRejects && result.variantRejects.length) {
           dryRejects.push({
             id: p.id, cat: p.c, ourName: p.n,
@@ -409,6 +449,7 @@ function saveProgress(p) {
       ...dryStats,
       accepts: dryAccepts,
       variantRejections: dryRejects,
+      floorRejections: dryFloorRejects,
     };
     fs.writeFileSync(DRY_REPORT, JSON.stringify(report, null, 2));
 
@@ -418,6 +459,8 @@ function saveProgress(p) {
     console.log(`  Would attach:        ${dryStats.accepted}`);
     console.log(`  Would flag (sanity): ${dryStats.flagged}  (not attached)`);
     console.log(`  Variant-rejected:    ${dryStats.variantRejected}  (candidates, across ${dryRejects.length} products)`);
+    console.log(`  Below attach floor:  ${dryStats.floorRejected}  (candidates >=0.5 but <${NEG.MIN_ATTACH_SIM}, across ${dryFloorRejects.length} products)`);
+    console.log(`  Marketplace blocked: ${dryStats.marketplaceBlocked}  (first-party existed)`);
     console.log(`  No match:            ${dryStats.noMatch}`);
     console.log(`  No results:          ${dryStats.noResults}`);
     console.log(`  Errors:              ${dryStats.errors}`);

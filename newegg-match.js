@@ -15,7 +15,25 @@ import { parseCapacityGB, capacityCompatible, isHardDrive, isPricePlausibleForCa
 import { classifyDeal, effectivePrice, dispersion, CLASS, neweggSkuClass } from './price-sanity.js';
 
 const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
+// Floor for a match to be considered AT ALL. Stays at 0.5 because scoreMatch()
+// also gates refresh's REPRICING path, where a low name score usually reflects
+// a truncated catalog title rather than a wrong product — real repricing
+// matches score as low as 0.571 (IronWolf 12TB) and 0.583 (Proteus 360).
+// Raising this globally would freeze prices on every truncated title.
 const MIN_NAME_SIM = 0.5;
+
+// Floor for a FIRST ATTACH (ingest). Higher than MIN_NAME_SIM because the two
+// situations carry different risk: repricing a SKU whose identity is already
+// settled is safe at a low score, but attaching a brand-new link on weak name
+// evidence puts a wrong product in front of a buyer. A weak first attach is
+// worse than no attach — we can always re-attempt next run.
+//
+// Set to 0.70 to match MIN_MIGRATE_SIM: both are "am I confident enough to
+// bind this product to this SKU", and there is no reason for the first bind to
+// be looser than a re-bind. 0.5 was too loose given three false accepts
+// observed at 0.75 — the digit-level variant guard is the real remedy for
+// those, but the floor should not be the thing that lets them through.
+export const MIN_ATTACH_SIM = 0.70;
 // Minimum name score to ATTACH A DIFFERENT SKU than the one we already hold.
 //
 // Deliberately higher than MIN_NAME_SIM, and deliberately NOT applied to
@@ -86,7 +104,9 @@ export function parseItems(xml) {
 
 // ── Scoring (copied verbatim) ────────────────────────────────────────────────
 function normalizeUpc(upc) { return String(upc || '').replace(/^0+/, '').replace(/\D/g, ''); }
-function nameSimilarity(a, b) {
+// Exported so tests and calibration runs can measure real pairs against the
+// floors instead of guessing where a given pair lands.
+export function nameSimilarity(a, b) {
   const norm = (s) => new Set(
     String(s).toLowerCase().replace(/[^\w\s]/g, ' ').split(/\s+/).filter((w) => w.length >= 2));
   const A = norm(a), B = norm(b);
@@ -236,7 +256,10 @@ export function variantMismatch(ourName, theirName) {
 // "the feed had nothing like our product" apart from "the feed had our product
 // line and we rejected every variant of it" — those two must NOT be treated as
 // the same signal, because only the first is evidence of absence.
-export function scoreMatch(ourProduct, neweggItem, notes) {
+// opts.minSim overrides the name floor for callers that need a stricter bar
+// than repricing does — ingest passes MIN_ATTACH_SIM. Defaults to MIN_NAME_SIM
+// so every existing caller keeps its current behavior.
+export function scoreMatch(ourProduct, neweggItem, notes, opts) {
   if (ourProduct.pr && neweggItem.price && neweggItem.price > ourProduct.pr * MAX_PRICE_MULTIPLIER) return null;
   if (/\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gaming Desktop|Bundle|Combo)\b/i.test(neweggItem.name)) return null;
   const storedCap = ourProduct.cap != null ? ourProduct.cap : parseCapacityGB(ourProduct.n);
@@ -247,7 +270,11 @@ export function scoreMatch(ourProduct, neweggItem, notes) {
   const newUpcN = normalizeUpc(neweggItem.upc);
   if (ourUpcN && newUpcN && ourUpcN === newUpcN) return { method: 'upc', score: 1.0 };
   const sim = nameSimilarity(ourProduct.n, neweggItem.name);
-  if (sim < MIN_NAME_SIM) return null;
+  const minSim = (opts && typeof opts.minSim === 'number') ? opts.minSim : MIN_NAME_SIM;
+  if (sim < minSim) {
+    if (notes && sim >= MIN_NAME_SIM) notes.reject = 'below_attach_floor';
+    return null;
+  }
   // Name similarity is WEAK evidence — it is exactly what collapses variants.
   // Gate it. (An exact UPC match above is strong evidence and bypasses this.)
   const vm = variantMismatch(ourProduct.n, neweggItem.name);
@@ -268,10 +295,21 @@ function pickWithinTier(scored) {
 }
 // Prefer a first-party (N82E) candidate if ANY matched (and passed all gates);
 // otherwise fall back to the best of the rest. Price-independent by design.
+//
+// The fallback used to be pickWithinTier(scored) over ALL non-first-party
+// candidates at once, which threw away the distinction sellerRank() exists to
+// draw: an 'other'/unknown-prefix listing (rank 1) and a marketplace reseller
+// (rank 2) competed purely on match score, so a marketplace listing could beat
+// an unknown-prefix one on a hundredth of a point. Now the fallback walks
+// sellerRank in order and returns the best candidate from the FIRST non-empty
+// tier — marketplace is reached only when nothing better exists at all.
 export function selectWithFirstPartyPreference(scored) {
   if (!scored || !scored.length) return null;
-  const firstParty = scored.filter((x) => isFirstParty(x.item.sku));
-  return firstParty.length ? pickWithinTier(firstParty) : pickWithinTier(scored);
+  for (const rank of [0, 1, 2]) {
+    const tier = scored.filter((x) => sellerRank(x.item.sku) === rank);
+    if (tier.length) return pickWithinTier(tier);
+  }
+  return null;
 }
 
 // ── Live search (caller supplies token + mid; uses XML productsearch/1.0) ─────
