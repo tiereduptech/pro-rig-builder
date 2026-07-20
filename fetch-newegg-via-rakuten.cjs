@@ -32,11 +32,9 @@
 const fs = require('fs');
 const path = require('path');
 
-// Capacity guard (shared, ESM) — loaded at startup. Retailer-agnostic: prevents
-// attaching a deal whose listing is a different storage capacity than the product.
-const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
-let CAP = null;
-// Newegg first-party-preference + sanity gate (shared ESM, dynamic-imported at startup).
+// Newegg matching + capacity guard + first-party preference + sanity gate
+// (shared ESM, dynamic-imported at startup). newegg-match.js owns the capacity
+// gate internally, so this file no longer needs its own CAP handle.
 let NEG = null;
 
 const args = process.argv.slice(2);
@@ -52,8 +50,6 @@ const ONLY_CAT = arg('category', null);
 const PARTS_PATH = './src/data/parts.js';
 const PROGRESS_PATH = './catalog-build/_newegg-progress.json';
 
-const MIN_NAME_SIM = 0.5;
-const MAX_PRICE_MULTIPLIER = 2.5;
 const REQ_PER_SECOND = 2;
 const SAVE_EVERY = 25;
 
@@ -125,65 +121,18 @@ function parseItems(xml) {
   return items;
 }
 
-function normalizeUpc(upc) {
-  return String(upc || '').replace(/^0+/, '').replace(/\D/g, '');
-}
-function nameSimilarity(a, b) {
-  const norm = (s) => new Set(
-    String(s).toLowerCase().replace(/[^\w\s]/g, ' ').split(/\s+/).filter((w) => w.length >= 2)
-  );
-  const A = norm(a), B = norm(b);
-  if (A.size === 0 || B.size === 0) return 0;
-  let inter = 0;
-  for (const w of A) if (B.has(w)) inter++;
-  if (inter < 3) return 0;
-  const containment = inter / Math.min(A.size, B.size);
-  const jaccard = inter / (A.size + B.size - inter);
-  return Math.max(containment, jaccard);
-}
-
-function extractKeywords(name, brand) {
-  let s = String(name || '')
-    .replace(/Gaming Graphics Card|Graphics Card|Video Card/gi, '')
-    .replace(/PCIe \d+\.\d+|HDMI \d+\.\d+|DisplayPort \d+\.\d+/gi, '')
-    .replace(/GDDR\d+(\s*Memory)?|DDR\d+\s*Memory/gi, '')
-    .replace(/Edition|Memory|Motherboard|Desktop Processor/gi, '')
-    .replace(/[-,()|]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-  const words = s.split(' ').filter(Boolean).slice(0, 8);
-  let q = words.join(' ');
-  if (brand && !q.toLowerCase().includes(brand.toLowerCase())) {
-    q = `${brand} ${q}`;
-  }
-  return q.slice(0, 100);
-}
-
-function scoreMatch(ourProduct, neweggItem) {
-  if (ourProduct.pr && neweggItem.price && neweggItem.price > ourProduct.pr * MAX_PRICE_MULTIPLIER) return null;
-  if (/\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gaming Desktop|Bundle|Combo)\b/i.test(neweggItem.name)) return null;
-
-  // Capacity is a HARD gate, even for a UPC match: never attach a listing whose
-  // stated capacity differs from the product, and never a storage deal whose
-  // price is physically impossible for the capacity.
-  const storedCap = ourProduct.cap != null ? ourProduct.cap : CAP.parseCapacityGB(ourProduct.n);
-  if (!CAP.capacityCompatible(storedCap, CAP.parseCapacityGB(neweggItem.name))) return null;
-  if (STORAGE_CATS.has(ourProduct.c) &&
-      !CAP.isPricePlausibleForCapacity(neweggItem.price, storedCap, { isHDD: CAP.isHardDrive(ourProduct) })) return null;
-
-  const ourUpcN = normalizeUpc(ourProduct.upc || ourProduct.UPC);
-  const newUpcN = normalizeUpc(neweggItem.upc);
-  if (ourUpcN && newUpcN && ourUpcN === newUpcN) return { method: 'upc', score: 1.0 };
-
-  const sim = nameSimilarity(ourProduct.n, neweggItem.name);
-  if (sim >= MIN_NAME_SIM) return { method: 'name', score: sim };
-  return null;
-}
+// Scoring lives in newegg-match.js (NEG.scoreMatch / NEG.extractKeywords).
+//
+// This file used to carry a verbatim COPY of scoreMatch + nameSimilarity +
+// extractKeywords. The copy is why the variant-collapse guard, added to
+// newegg-match.js, protected the refresh path but not this one — ingest is
+// where the wrong-product deals entered the catalog in the first place.
+// Do not re-fork: one matcher, one place, both paths.
 
 async function findNeweggMatch(product, token) {
   const catFilter = CAT_FILTER[product.c];
   if (!catFilter) return { ok: false, reason: 'no_cat_mapping' };
-  const keywords = extractKeywords(product.n, product.b);
+  const keywords = NEG.extractKeywords(product.n, product.b);
 
   // Try exact= first (more precise), then keyword= fallback.
   const queries = [
@@ -202,7 +151,7 @@ async function findNeweggMatch(product, token) {
   }
   if (items.length === 0) return { ok: false, reason: 'no_results' };
 
-  const scored = items.map((it) => ({ item: it, match: scoreMatch(product, it) })).filter((x) => x.match);
+  const scored = items.map((it) => ({ item: it, match: NEG.scoreMatch(product, it) })).filter((x) => x.match);
   if (scored.length === 0) return { ok: false, reason: 'no_match' };
   // First-party (N82E) preference — never let a marketplace (9SI) listing win when a
   // Newegg-Official listing also matched. Price-independent (see newegg-match.js).
@@ -239,7 +188,6 @@ function saveProgress(p) {
   console.log('\n  Newegg Catalog Match via Rakuten Product Search');
   console.log('  ═══════════════════════════════════════════════');
 
-  CAP = await import('file://' + process.cwd().replace(/\\/g, '/') + '/normalize-product-name.js');
   NEG = await import('file://' + process.cwd().replace(/\\/g, '/') + '/newegg-match.js');
 
   const { src, parts } = loadParts();
@@ -276,7 +224,7 @@ function saveProgress(p) {
     console.log('  Sample (first 10):');
     for (const p of candidates.slice(0, 10)) {
       console.log(`    [${p.c.padEnd(11)}] ${p.n.slice(0, 55)}`);
-      console.log(`      cat=${CAT_FILTER[p.c]}, search="${extractKeywords(p.n, p.b)}"`);
+      console.log(`      cat=${CAT_FILTER[p.c]}, search="${NEG.extractKeywords(p.n, p.b)}"`);
     }
     console.log('\n  --dry-run: not making API calls.\n');
     return;

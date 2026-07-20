@@ -155,17 +155,43 @@ function effOf(item) {
 
 // Choose which candidate to write. Keeps the first-party (N82E) preference:
 // a first-party listing wins even if we currently hold a different SKU.
+//
+// DOWNGRADE GUARD: seller rank may only ever improve (official=0 < other=1 <
+// marketplace=2). If we hold an official listing and no official candidate
+// matched, that is a LOOKUP failure — the feed didn't surface the listing we
+// already know exists — NOT a licence to rematch onto a marketplace reseller.
+// Returns { downgrade: true, ... } for the caller to treat as LOOKUP_FAILED.
 function chooseCandidate(p, candidates) {
   const currentSku = String(p.deals.newegg.sku || '').trim();
   const exact = candidates.find(c => String(c.item.sku || '').trim() === currentSku);
   const best = NEG.selectWithFirstPartyPreference(candidates);
 
-  // Upgrade path: we hold a non-first-party listing and a first-party one matched.
-  if (best && NEG.isFirstParty(best.item.sku) && (!exact || !NEG.isFirstParty(exact.item.sku))) {
-    return { pick: best, kind: currentSku && best.item.sku !== currentSku ? 'migrate' : 'reprice' };
+  // Rank of what we hold. No stored SKU => nothing to protect (worst rank).
+  const currentRank = currentSku ? NEG.sellerRank(currentSku) : 99;
+
+  // Keeping the SKU we already hold is always allowed — same rank by definition.
+  if (exact && (!best || !NEG.isFirstParty(best.item.sku) || NEG.isFirstParty(exact.item.sku))) {
+    return { pick: exact, kind: 'reprice' };
+  }
+
+  const pick = best || exact;
+  if (!pick) return null;
+
+  if (NEG.sellerRank(pick.item.sku) > currentRank) {
+    return {
+      downgrade: true,
+      from: currentSku,
+      fromClass: NEG.sellerClass(currentSku),
+      to: pick.item.sku,
+      toClass: NEG.sellerClass(pick.item.sku),
+    };
+  }
+
+  if (NEG.isFirstParty(pick.item.sku) && (!exact || !NEG.isFirstParty(exact.item.sku))) {
+    return { pick, kind: currentSku && pick.item.sku !== currentSku ? 'migrate' : 'reprice' };
   }
   if (exact) return { pick: exact, kind: 'reprice' };
-  return best ? { pick: best, kind: 'rematch' } : null;
+  return { pick, kind: 'rematch' };
 }
 
 (async () => {
@@ -182,7 +208,7 @@ function chooseCandidate(p, candidates) {
     console.log(`Sample by category: ${Object.entries(byCat).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}=${v}`).join(' ')}`);
   }
 
-  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, lookupFailed: 0, confirmedAbsent: 0 };
+  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, lookupFailed: 0, downgradeBlocked: 0, confirmedAbsent: 0 };
   const changes = [];
   const failures = [];
   const removalCandidates = [];
@@ -227,6 +253,21 @@ function chooseCandidate(p, candidates) {
     if (!chosen) { // defensive: ok implies >=1 candidate, but never assume
       stats.lookupFailed++;
       failures.push({ id: p.id, name: p.n, cat: p.c, sku, reason: 'no_candidate_selected', rawCount: r.rawCount });
+      await sleep(RATE_DELAY_MS);
+      continue;
+    }
+
+    // Seller-rank downgrade blocked: treat exactly like LOOKUP_FAILED — the deal
+    // is left exactly as found (price, staleSince, streak all untouched).
+    if (chosen.downgrade) {
+      stats.ok--;
+      stats.downgradeBlocked++;
+      stats.lookupFailed++;
+      failures.push({
+        id: p.id, name: p.n, cat: p.c, sku, reason: 'downgrade_blocked',
+        rawCount: r.rawCount, fromClass: chosen.fromClass, to: chosen.to, toClass: chosen.toClass,
+      });
+      console.log(`  DOWNGRADE BLOCKED (no change): ${p.n} — ${chosen.fromClass} ${chosen.from} -> ${chosen.toClass} ${chosen.to}`);
       await sleep(RATE_DELAY_MS);
       continue;
     }
@@ -286,7 +327,13 @@ function chooseCandidate(p, candidates) {
       };
       if (kind === 'migrate') stats.migrated++; else stats.rematched++;
       stats.priced++;
-      changes.push({ name: p.n, change: kind === 'migrate' ? 'migrated-to-firstparty' : 'rematched', from: sku, to: item.sku, price: item.price });
+      changes.push({
+        name: p.n, change: kind === 'migrate' ? 'migrated-to-firstparty' : 'rematched',
+        from: sku, fromClass: NEG.sellerClass(sku), to: item.sku, toClass: NEG.sellerClass(item.sku),
+        // Candidate name is what a human needs to spot a variant collapse.
+        candidateName: item.name, method: pick.match.method, score: Number(pick.match.score.toFixed(2)),
+        price: item.price,
+      });
     } else if (priceChanged) {
       d.price = item.price;
       if (newSale) d.saleprice = newSale; else delete d.saleprice;
@@ -329,6 +376,7 @@ function chooseCandidate(p, candidates) {
   console.log(`Matched OK:       ${stats.ok}  (repriced ${stats.priced}, unchanged ${stats.unchanged}, migrated ${stats.migrated}, rematched ${stats.rematched})`);
   console.log(`Price suspect:    ${stats.priceSuspect}  (flagged, deal KEPT)`);
   console.log(`Lookup failed:    ${stats.lookupFailed}  (no change written)`);
+  console.log(`Downgrade blocked:${stats.downgradeBlocked}  (seller rank protected, deal KEPT)`);
   console.log(`Confirmed absent: ${stats.confirmedAbsent}  (${removalCandidates.length} past removal threshold)`);
   if (breakers.length) {
     console.log(`\n!! CIRCUIT BREAKER TRIPPED — 0 removals this run:`);

@@ -301,6 +301,12 @@ function matchRecord(rec, idx) {
   for (const p of candidates) {
     const sim = nameSim(recName, p.n);
     if (sim < 0.7) continue;
+    // Token overlap alone happily merges distinct variants that share most of
+    // their words ("AIR 903 Series" vs "AIR 903 MAX" — one differing token out
+    // of five). Gate name matches on the shared variant guard, same as
+    // NEG.scoreMatch does for the Rakuten/refresh path. UPC/MPN/SKU matches
+    // above are strong evidence and never reach here.
+    if (NEG.variantMismatch(p.n, recName)) continue;
     const brandMatch = recBrand && p.b && recBrand.includes(p.b.toLowerCase());
     const confidence = brandMatch ? Math.min(0.85, sim) : sim * 0.7;
     if (confidence < 0.7) continue;

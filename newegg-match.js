@@ -95,6 +95,94 @@ export function extractKeywords(name, brand) {
   if (brand && !q.toLowerCase().includes(brand.toLowerCase())) q = `${brand} ${q}`;
   return q.slice(0, 100);
 }
+// ── Variant-collapse guard ───────────────────────────────────────────────────
+//
+// Same bug class as the wrong-capacity defect: token-overlap scoring happily
+// merges DISTINCT variants that share most of their words. "Fractal Design AIR
+// 903 Series" and "Fractal Design AIR 903 MAX" overlap on every token except
+// one — nameSimilarity returns ~0.9 and we attach the wrong product's listing.
+//
+// The fix is the same shape as the capacity gate: make the distinguishing token
+// a HARD gate rather than letting it be outvoted by the shared tokens.
+//
+// Two independent checks, either one rejects:
+//   1. Variant markers (MAX, Pro, SE, Ti, Plus, …) must match EXACTLY. Present
+//      on one side and not the other => different product.
+//   2. Every model-ish alphanumeric token in OUR name must appear in theirs
+//      (903 vs 900, A620M vs A620, 5900X vs 5900).
+//
+// Deliberately biased toward rejection: a false reject costs one refresh cycle
+// (LOOKUP_FAILED touches nothing), a false accept corrupts the catalog.
+
+// Phrases where a marker word is NOT a variant — stripped before extraction.
+// "80 PLUS Gold" is a PSU efficiency rating, not a "Plus" model.
+const MARKER_NOISE = /\b(80\s*\+?\s*plus|plus\s*gold|plus\s*bronze|plus\s*platinum|plus\s*titanium)\b/gi;
+// Generic words that carry no model identity — dropped so "AIR 903 Series"
+// and "AIR 903" are not split by "Series" alone.
+const GENERIC_NOISE = /\b(series|edition|version|model|retail|new|gaming|desktop|computer|pc)\b/gi;
+
+const VARIANT_MARKERS = new Set([
+  'max', 'pro', 'plus', 'se', 'ti', 'super', 'xt', 'xtx', 'elite', 'lite',
+  'mini', 'micro', 'ultra', 'extreme', 'premium', 'advanced', 'flow',
+  'rgb', 'argb', 'itx', 'matx', 'atx', 'ii', 'iii', 'iv', 'v2', 'v3',
+  'xl', 'xxl', 'compact', 'slim',
+  // color-as-model — Newegg sells White/Black as separate SKUs
+  'white', 'black', 'silver', 'pink', 'snow',
+]);
+
+// Units and spec noise that look model-ish but aren't identity.
+//
+// NOTE: single letters that are real MODEL suffixes are deliberately absent —
+// x, t, a, c, f. Including 'x' made "5900x" parse as <5900><unit x>, which made
+// 5900X and 5900XT indistinguishable. That is the exact defect this guard exists
+// to catch, so ambiguous suffixes stay OUT of this list.
+const UNIT_TOKEN = /^\d+(\.\d+)?(mm|cm|ghz|mhz|hz|w|kw|gb|tb|mb|kb|rpm|cfm|pin|v|bit|k|p|nm|db|dba|ms|gbps|mbps)?$/i;
+
+function markerSet(name) {
+  const cleaned = String(name || '').toLowerCase()
+    .replace(MARKER_NOISE, ' ').replace(GENERIC_NOISE, ' ');
+  const out = new Set();
+  for (const w of cleaned.replace(/[^\w\s]/g, ' ').split(/\s+/)) {
+    if (VARIANT_MARKERS.has(w)) out.add(w);
+  }
+  return out;
+}
+
+// Tokens that identify a model: contain a digit, aren't a bare unit/measurement.
+function modelTokens(name) {
+  const cleaned = String(name || '').toLowerCase()
+    .replace(MARKER_NOISE, ' ').replace(GENERIC_NOISE, ' ');
+  const out = new Set();
+  for (const w of cleaned.replace(/[^\w\s]/g, ' ').split(/\s+/)) {
+    if (!/\d/.test(w)) continue;
+    if (UNIT_TOKEN.test(w)) continue;
+    out.add(w);
+  }
+  return out;
+}
+
+/**
+ * True when the two names describe DIFFERENT variants of the same base product.
+ * @returns {false|{reason:string, detail:string}}
+ */
+export function variantMismatch(ourName, theirName) {
+  const ourM = markerSet(ourName), theirM = markerSet(theirName);
+  const onlyOurs = [...ourM].filter((w) => !theirM.has(w));
+  const onlyTheirs = [...theirM].filter((w) => !ourM.has(w));
+  if (onlyOurs.length || onlyTheirs.length) {
+    return {
+      reason: 'variant_marker',
+      detail: `ours-only=[${onlyOurs.join(',')}] theirs-only=[${onlyTheirs.join(',')}]`,
+    };
+  }
+  const ourT = modelTokens(ourName), theirT = modelTokens(theirName);
+  const missing = [...ourT].filter((t) => !theirT.has(t));
+  if (missing.length) {
+    return { reason: 'model_token', detail: `missing=[${missing.join(',')}]` };
+  }
+  return false;
+}
+
 export function scoreMatch(ourProduct, neweggItem) {
   if (ourProduct.pr && neweggItem.price && neweggItem.price > ourProduct.pr * MAX_PRICE_MULTIPLIER) return null;
   if (/\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gaming Desktop|Bundle|Combo)\b/i.test(neweggItem.name)) return null;
@@ -106,8 +194,12 @@ export function scoreMatch(ourProduct, neweggItem) {
   const newUpcN = normalizeUpc(neweggItem.upc);
   if (ourUpcN && newUpcN && ourUpcN === newUpcN) return { method: 'upc', score: 1.0 };
   const sim = nameSimilarity(ourProduct.n, neweggItem.name);
-  if (sim >= MIN_NAME_SIM) return { method: 'name', score: sim };
-  return null;
+  if (sim < MIN_NAME_SIM) return null;
+  // Name similarity is WEAK evidence — it is exactly what collapses variants.
+  // Gate it. (An exact UPC match above is strong evidence and bypasses this.)
+  const vm = variantMismatch(ourProduct.n, neweggItem.name);
+  if (vm) return null;
+  return { method: 'name', score: sim };
 }
 
 // ── Selection WITH first-party preference ────────────────────────────────────
