@@ -28,7 +28,8 @@ export const CAT_FILTER = {
 };
 
 // ── Seller classification (the heart of B2) ──────────────────────────────────
-// 'official' (N82E…) | 'marketplace' (9SI…) | 'other' (unknown prefix) | 'none'
+// 'official' (N82E… or dashed 2AM-00CN-00060) | 'marketplace' (9SI…) |
+// 'other' (unknown prefix) | 'none'
 export function sellerClass(itemNumber) { return neweggSkuClass({ sku: itemNumber }); }
 export function isFirstParty(itemNumber) { return sellerClass(itemNumber) === 'official'; }
 export function isMarketplace(itemNumber) { return sellerClass(itemNumber) === 'marketplace'; }
@@ -126,26 +127,47 @@ export function selectWithFirstPartyPreference(scored) {
 }
 
 // ── Live search (caller supplies token + mid; uses XML productsearch/1.0) ─────
+//
+// Returns { ok, reason, candidates, rawCount, httpErrors, queriesTried }.
+//
+// rawCount/httpErrors exist so callers can tell a FAILED LOOKUP apart from a
+// CONFIRMED ABSENCE. Previously both collapsed to reason:'no_results' — a 500
+// from Linkshare and "this product is genuinely delisted" were indistinguishable,
+// and refresh-newegg-prices.cjs treated the pair identically (mark stale -> delete
+// after 7d). That is what removed 1,655 deals on 2026-07-06. Callers MUST NOT
+// treat 'http_error' or 'no_results' as evidence of absence.
 export async function searchNewegg(product, { token, mid, fetchImpl = fetch }) {
   const catFilter = CAT_FILTER[product.c];
-  if (!catFilter) return { ok: false, reason: 'no_cat_mapping', candidates: [] };
+  if (!catFilter) return { ok: false, reason: 'no_cat_mapping', candidates: [], rawCount: 0, httpErrors: 0, queriesTried: 0 };
   const keywords = extractKeywords(product.n, product.b);
   const queries = [
     { exact: keywords, cat: catFilter, mid, max: '20' },
     { keyword: keywords, cat: catFilter, mid, max: '20' },
   ];
   let items = [];
+  let httpErrors = 0;
+  let queriesTried = 0;
   for (const params of queries) {
     const url = `https://api.linksynergy.com/productsearch/1.0?${new URLSearchParams(params)}`;
-    const res = await fetchImpl(url, { headers: { Authorization: `Bearer ${token}` } });
-    if (!res.ok) continue;
+    queriesTried++;
+    let res;
+    try {
+      res = await fetchImpl(url, { headers: { Authorization: `Bearer ${token}` } });
+    } catch {
+      httpErrors++; // network/DNS/timeout — a failure, never an absence
+      continue;
+    }
+    if (!res.ok) { httpErrors++; continue; }
     items = parseItems(await res.text());
     if (items.length > 0) break;
   }
-  if (!items.length) return { ok: false, reason: 'no_results', candidates: [] };
+  const base = { rawCount: items.length, httpErrors, queriesTried };
+  // Every query we issued errored — we learned nothing about this product.
+  if (httpErrors === queriesTried) return { ok: false, reason: 'http_error', candidates: [], ...base };
+  if (!items.length) return { ok: false, reason: 'no_results', candidates: [], ...base };
   const scored = items.map((it) => ({ item: it, match: scoreMatch(product, it) })).filter((x) => x.match);
-  if (!scored.length) return { ok: false, reason: 'no_match', candidates: [] };
-  return { ok: true, candidates: scored };
+  if (!scored.length) return { ok: false, reason: 'no_match', candidates: [], ...base };
+  return { ok: true, candidates: scored, ...base };
 }
 
 // ── Cross-retailer sanity gate for a candidate Newegg price (peers: amazon, bestbuy)

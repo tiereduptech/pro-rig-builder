@@ -118,11 +118,22 @@ export function dispersion(product) {
 }
 
 // Is a Newegg deal a marketplace (3rd-party) listing rather than Newegg-Official?
-// Newegg-Official item numbers start "N82E"; marketplace sellers start "9SI".
+// Newegg-Official item numbers come in TWO first-party formats:
+//   - legacy undashed  "N82E16811102345"
+//   - current dashed   "2AM-00CN-00060"  = <category>-<brand>-<serial>
+// Marketplace sellers are undashed "9SIA…". The dashed format was previously
+// falling through to 'other', which deprioritized first-party listings during
+// selection and — worse — skipped the `cls === 'official'` protection in the
+// C3B cleanup, exposing good first-party deals to marketplace-gouge removal.
+// Verified 2026-07-20 against live pages across cases/PSU/monitor/storage: every
+// dashed SKU sampled reads "Sold by Newegg / Shipped by Newegg", with true
+// marketplace offers listed separately under their own seller names.
+const NEWEGG_DASHED_SKU = /^[0-9A-Z]{3}-[0-9A-Z]{4}-[0-9A-Z]{4,6}$/;
 export function neweggSkuClass(deal) {
   const sku = String((deal && deal.sku) || '').toUpperCase().trim();
   if (!sku) return 'none';
   if (sku.startsWith('9SI')) return 'marketplace';
   if (sku.startsWith('N82E')) return 'official';
+  if (NEWEGG_DASHED_SKU.test(sku)) return 'official';
   return 'other';
 }

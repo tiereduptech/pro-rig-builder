@@ -11,7 +11,16 @@ on:
   # Re-enable ONLY after SKU lookup is fixed and verified against the live feed.
   # schedule:
   #   - cron: "0 6,18 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run — probe the feed, write nothing, commit nothing"
+        type: boolean
+        default: true
+      limit:
+        description: "Only process the first N products (blank = all)"
+        type: string
+        default: "50"
 
 jobs:
   refresh:
@@ -30,15 +39,32 @@ jobs:
           RAKUTEN_CLIENT_SECRET: ${{ secrets.RAKUTEN_CLIENT_SECRET }}
           RAKUTEN_SID: ${{ secrets.RAKUTEN_SID }}
           RAKUTEN_NEWEGG_MID: ${{ secrets.RAKUTEN_NEWEGG_MID }}
-        run: node refresh-newegg-prices.cjs
+        run: |
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ -n "${{ inputs.limit }}" ]; then ARGS="$ARGS --limit=${{ inputs.limit }}"; fi
+          echo "Running: node refresh-newegg-prices.cjs$ARGS"
+          node refresh-newegg-prices.cjs $ARGS
+
+      # The summary is the whole point of a dry run — keep it even though the
+      # commit step below deletes it on real runs.
+      - name: Upload refresh summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newegg-refresh-summary
+          path: newegg-refresh-summary.json
+          if-no-files-found: warn
 
       # Re-emit the per-category chunk barrel so the frontend (which loads
       # src/data/parts/<cat>.js, not the literal) never goes stale. Runs after
       # the literal write, before the commit, so parts.js + chunks commit atomically.
       - name: Re-split catalog into per-category chunks
+        if: ${{ inputs.dry_run != true }}
         run: node scripts/split-parts-by-cat.cjs
 
       - name: Commit and push if changed
+        if: ${{ inputs.dry_run != true }}
         run: |
           if [ -f newegg-refresh-summary.json ]; then
             UPDATED=$(node -e "console.log(require('./newegg-refresh-summary.json').updated)")

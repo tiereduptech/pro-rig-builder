@@ -1,22 +1,80 @@
 #!/usr/bin/env node
+//
+// Daily Newegg re-price / re-match.
+//
+// HISTORY — why this script is shaped the way it is:
+//   The original version looked products up by passing the Newegg item number to
+//   productsearch/1.0 as `keyword=`. That endpoint indexes product NAMES, not item
+//   numbers, so every lookup missed. A miss stamped `staleSince`, and 7 days later
+//   the deal was deleted. On 2026-07-06 that matured into 1,655 removals, ~904 of
+//   which were live, correct listings. Newegg coverage went 1,717 -> 62.
+//
+//   Two independent defects had to line up for that to happen:
+//     1. The lookup never worked  ->  fixed here by using newegg-match.js's
+//        searchNewegg() (name + UPC matching), the same path fetch-newegg-via-
+//        rakuten.cjs uses successfully at ingest time.
+//     2. A failed lookup was treated as evidence of absence  ->  fixed here by
+//        splitting outcomes into LOOKUP_FAILED vs CONFIRMED_ABSENT and making
+//        deletion reachable only from CONFIRMED_ABSENT, repeatedly, over time,
+//        behind run-level circuit breakers.
+//
+//   Defect 2 is the dangerous one. Fixing only defect 1 would leave a script that
+//   still deletes the whole catalog the next time Linkshare has a bad afternoon.
+//
+// Usage:
+//   node refresh-newegg-prices.cjs [--dry-run] [--limit=N] [--report=FILE]
+//
 const fs = require('fs');
 const path = require('path');
 
-const PARTS_PATH = path.join(__dirname, 'src', 'data', 'parts.js');
 const CLIENT_ID = process.env.RAKUTEN_CLIENT_ID;
 const CLIENT_SECRET = process.env.RAKUTEN_CLIENT_SECRET;
 const SID = process.env.RAKUTEN_SID;
 const NEWEGG_MID = process.env.RAKUTEN_NEWEGG_MID || '44583';
 
+const argv = process.argv.slice(2);
+const DRY_RUN = argv.includes('--dry-run');
+const LIMIT = (() => { const a = argv.find(x => x.startsWith('--limit=')); return a ? parseInt(a.split('=')[1], 10) : Infinity; })();
+const REPORT = (() => { const a = argv.find(x => x.startsWith('--report=')); return a ? a.split('=')[1] : 'newegg-refresh-summary.json'; })();
+// --parts= points the run at a fixture catalog instead of the live one, so the
+// removal path can be exercised against seeded (aged) state without touching
+// real data. Production runs omit it.
+const PARTS_PATH = (() => {
+  const a = argv.find(x => x.startsWith('--parts='));
+  return a ? path.resolve(a.split('=')[1]) : path.join(__dirname, 'src', 'data', 'parts.js');
+})();
+
 if (!CLIENT_ID || !CLIENT_SECRET || !SID) {
-  console.error('Missing required env vars');
+  console.error('Missing required env vars (RAKUTEN_CLIENT_ID / _SECRET / _SID)');
   process.exit(1);
 }
 
 const RATE_DELAY_MS = 600;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-// Newegg matcher (shared ESM) — assigned at startup, used by searchBySku + migration.
+// ── Safety thresholds ────────────────────────────────────────────────────────
+// A single confirmed absence means nothing; feeds flap. Deletion requires the
+// product to go missing on MIN_ABSENT_STREAK separate runs spanning at least
+// MIN_STALE_DAYS. At one run/day that is ~2 weeks of consistent evidence.
+const MIN_ABSENT_STREAK = 3;
+const MIN_STALE_DAYS = 14;
+// "The feed answered, with a healthy result set, and our product wasn't in it."
+// Fewer than this many raw candidates back means the QUERY is weak, not that the
+// product is gone — treated as a lookup failure.
+const MIN_HEALTHY_CANDIDATES = 3;
+// Run-level circuit breakers. If any trips, we do not delete anything this run.
+const MAX_LOOKUP_FAILURE_RATE = 0.20;  // >20% failing => the feed is sick, not the catalog
+const MAX_REMOVAL_RATE = 0.02;         // never remove >2% of matched products in one run
+const MAX_REMOVAL_FLOOR = 5;           // ...but always allow at least this many
+
+// Per-product outcome classes. Only CONFIRMED_ABSENT can ever lead to removal.
+const OUTCOME = {
+  OK: 'ok',                          // feed returned a candidate that matched our product
+  LOOKUP_FAILED: 'lookup_failed',    // we learned NOTHING — never mutates the deal
+  CONFIRMED_ABSENT: 'confirmed_absent', // feed healthy, product genuinely not in it
+};
+
+// Newegg matcher (shared ESM) — assigned at startup.
 let NEG = null;
 
 let tokenCache = { token: null, expiresAt: 0 };
@@ -34,146 +92,281 @@ async function getToken() {
   return tokenCache.token;
 }
 
-async function searchBySku(sku) {
-  const token = await getToken();
-  const url = `https://api.linksynergy.com/productsearch/1.0?keyword=${encodeURIComponent(sku)}&mid=${NEWEGG_MID}&max=5`;
-  // productsearch/1.0 returns XML (Accept:json is NOT honored). The previous code
-  // called res.json() on "<result>…" and threw on every product, silently breaking
-  // the daily refresh. Parse the XML with the shared parser instead.
-  const res = await fetch(url, { headers: { 'Authorization': `Bearer ${token}` } });
-  if (!res.ok) {
-    if (res.status === 429) { await sleep(60000); return searchBySku(sku); }
-    throw new Error(`Search: ${res.status}`);
+// ── The lookup ───────────────────────────────────────────────────────────────
+// Replaces the old searchBySku(). Uses the SAME matcher that ingest uses, so a
+// product that could be found at ingest time can be found again here.
+//
+// Returns { outcome, candidates, reason, rawCount }.
+async function lookupProduct(p) {
+  let search;
+  try {
+    const token = await getToken();
+    search = await NEG.searchNewegg(p, { token, mid: NEWEGG_MID });
+  } catch (e) {
+    // Token failure, network death, parser throw — all "we learned nothing".
+    return { outcome: OUTCOME.LOOKUP_FAILED, reason: `exception: ${e.message}`, candidates: [], rawCount: 0 };
   }
-  const xml = await res.text();
-  return NEG.parseItems(xml); // [{ name, sku, upc, price, saleprice, linkurl, imageurl, ... }]
+
+  if (search.ok) {
+    return { outcome: OUTCOME.OK, reason: 'matched', candidates: search.candidates, rawCount: search.rawCount };
+  }
+
+  // ---- The critical branch. Absence must be PROVEN, not assumed. ----
+  // 'no_match' is the only reason that can indicate real absence, and only when
+  // the feed handed us a healthy candidate set to have missed our product in.
+  // Everything else (http_error, no_results, no_cat_mapping) is a failed lookup.
+  if (search.reason === 'no_match' && search.rawCount >= MIN_HEALTHY_CANDIDATES) {
+    return { outcome: OUTCOME.CONFIRMED_ABSENT, reason: 'no_match', candidates: [], rawCount: search.rawCount };
+  }
+  return { outcome: OUTCOME.LOOKUP_FAILED, reason: search.reason, candidates: [], rawCount: search.rawCount };
 }
 
-function pickPrice(item) {
-  const sale = Number(item.saleprice || item.salePrice || 0);
-  const price = Number(item.price || item.Price || 0);
-  return { price: price > 0 ? price : sale, saleprice: sale > 0 && sale < price ? sale : null };
+// Take the first N in catalog order and you get whatever category happens to sit
+// at the top of parts.js (Cases), which tells you nothing about how the matcher
+// behaves on Storage or Monitors. Round-robin across categories so a limited run
+// is a representative probe of the whole catalog, not one aisle of it.
+function sampleAcrossCategories(products, limit) {
+  if (!Number.isFinite(limit) || limit >= products.length) return products;
+  const buckets = new Map();
+  for (const p of products) {
+    const k = p.c || 'unknown';
+    if (!buckets.has(k)) buckets.set(k, []);
+    buckets.get(k).push(p);
+  }
+  // Smallest categories first, so a low limit still touches the rare ones.
+  const lanes = [...buckets.values()].sort((a, b) => a.length - b.length);
+  const out = [];
+  for (let round = 0; out.length < limit; round++) {
+    let placed = false;
+    for (const lane of lanes) {
+      if (round >= lane.length) continue;
+      out.push(lane[round]);
+      placed = true;
+      if (out.length >= limit) break;
+    }
+    if (!placed) break; // every lane exhausted
+  }
+  return out;
+}
+
+function effOf(item) {
+  return (item.saleprice && item.saleprice > 0) ? item.saleprice : item.price;
+}
+
+// Choose which candidate to write. Keeps the first-party (N82E) preference:
+// a first-party listing wins even if we currently hold a different SKU.
+function chooseCandidate(p, candidates) {
+  const currentSku = String(p.deals.newegg.sku || '').trim();
+  const exact = candidates.find(c => String(c.item.sku || '').trim() === currentSku);
+  const best = NEG.selectWithFirstPartyPreference(candidates);
+
+  // Upgrade path: we hold a non-first-party listing and a first-party one matched.
+  if (best && NEG.isFirstParty(best.item.sku) && (!exact || !NEG.isFirstParty(exact.item.sku))) {
+    return { pick: best, kind: currentSku && best.item.sku !== currentSku ? 'migrate' : 'reprice' };
+  }
+  if (exact) return { pick: exact, kind: 'reprice' };
+  return best ? { pick: best, kind: 'rematch' } : null;
 }
 
 (async () => {
-  console.log('Loading parts.js...');
+  console.log(`Loading parts.js...${DRY_RUN ? '  [DRY RUN — no writes]' : ''}`);
   NEG = await import(`file://${path.join(__dirname, 'newegg-match.js').replace(/\\/g, '/')}`);
   const partsModule = await import(`file://${PARTS_PATH.replace(/\\/g, '/')}?t=${Date.now()}`);
   const parts = partsModule.PARTS;
-  const matched = parts.filter(p => p?.deals?.newegg?.sku);
-  console.log(`Found ${matched.length} products with Newegg matches`);
+  const allMatched = parts.filter(p => p?.deals?.newegg?.sku);
+  const matched = sampleAcrossCategories(allMatched, LIMIT);
+  console.log(`Found ${allMatched.length} products with Newegg matches${matched.length !== allMatched.length ? ` (sampling ${matched.length} across categories)` : ''}`);
+  {
+    const byCat = {};
+    for (const p of matched) byCat[p.c] = (byCat[p.c] || 0) + 1;
+    console.log(`Sample by category: ${Object.entries(byCat).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}=${v}`).join(' ')}`);
+  }
 
-  let updated = 0, unchanged = 0, removed = 0, errored = 0, migrated = 0, flagged = 0;
+  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, lookupFailed: 0, confirmedAbsent: 0 };
   const changes = [];
+  const failures = [];
+  const removalCandidates = [];
 
   for (let i = 0; i < matched.length; i++) {
     const p = matched[i];
     const sku = p.deals.newegg.sku;
-    if (i % 50 === 0) console.log(`Progress: ${i}/${matched.length} (updated=${updated} removed=${removed} errored=${errored})`);
+    if (i % 25 === 0) console.log(`Progress: ${i}/${matched.length} (ok=${stats.ok} failed=${stats.lookupFailed} absent=${stats.confirmedAbsent})`);
 
-    try {
-      // B2: if pinned to a marketplace (9SI) listing, try to MIGRATE to a first-party
-      // (N82E) listing via a name search instead of just re-pricing the reseller.
-      if (NEG.isMarketplace(sku)) {
-        const token = await getToken();
-        const search = await NEG.searchNewegg(p, { token, mid: NEWEGG_MID });
-        if (search.ok) {
-          const best = NEG.selectWithFirstPartyPreference(search.candidates);
-          if (best && NEG.isFirstParty(best.item.sku)) {
-            const eff = (best.item.saleprice && best.item.saleprice > 0) ? best.item.saleprice : best.item.price;
-            if (eff > 0 && NEG.neweggSanity(p, eff).pass) {
-              p.deals.newegg = {
-                sku: best.item.sku,
-                price: best.item.price,
-                ...(best.item.saleprice ? { saleprice: best.item.saleprice } : {}),
-                linkurl: best.item.linkurl || p.deals.newegg.linkurl,
-                imageurl: best.item.imageurl || p.deals.newegg.imageurl,
-                sellerClass: 'official',
-                matchedAt: p.deals.newegg.matchedAt || new Date().toISOString().slice(0, 10),
-                matchMethod: best.match.method,
-                matchScore: Number(best.match.score.toFixed(2)),
-                migratedAt: new Date().toISOString(),
-                migratedFrom: sku,
-              };
-              changes.push({ name: p.n, change: 'migrated-to-firstparty', from: sku, to: best.item.sku });
-              migrated++; updated++;
-              await sleep(RATE_DELAY_MS);
-              continue;
-            }
-          }
-        }
-        // No first-party alternative (or it failed the gate) — fall through and
-        // re-price the existing marketplace listing as before.
-      }
+    const r = await lookupProduct(p);
 
-      const items = await searchBySku(sku);
-      const match = items.find(it => String(it.sku || it.SKU || '').trim() === String(sku).trim());
-      
-      if (!match) {
-        if (!p.deals.newegg.staleSince) {
-          p.deals.newegg.staleSince = new Date().toISOString();
-          changes.push({ name: p.n, change: 'marked-stale', sku });
-          updated++;
-        }
-        const staleDays = (Date.now() - new Date(p.deals.newegg.staleSince).getTime()) / 86400000;
-        if (staleDays > 7) {
-          delete p.deals.newegg;
-          changes.push({ name: p.n, change: 'removed-stale-7d', sku });
-          removed++;
-        }
-      } else {
-        const { price, saleprice } = pickPrice(match);
-        const newLink = match.linkurl || match.linkURL || p.deals.newegg.linkurl;
-        const oldPrice = Number(p.deals.newegg.price);
-        const oldSale = Number(p.deals.newegg.saleprice || 0);
-        
-        const changedPrice = price > 0 && (price !== oldPrice || saleprice !== oldSale || newLink !== p.deals.newegg.linkurl);
-        // Gate the new price: don't write a wild outlier vs other retailers — flag instead.
-        const effNew = saleprice && saleprice > 0 ? saleprice : price;
-        const sane = NEG.neweggSanity(p, effNew).pass;
-        if (changedPrice && !sane) {
-          delete p.deals.newegg;
-          if (!p.deals.amazon && !p.deals.bestbuy) { p.needsReview = true; p.quarantinedAt = new Date().toISOString().slice(0,10); }
-          changes.push({ name: p.n, change: 'price-flagged', from: oldPrice, to: price, sku });
-          flagged++;
-        } else if (changedPrice) {
-          p.deals.newegg.price = price;
-          if (saleprice) p.deals.newegg.saleprice = saleprice;
-          else delete p.deals.newegg.saleprice;
-          p.deals.newegg.linkurl = newLink;
-          p.deals.newegg.refreshedAt = new Date().toISOString();
-          delete p.deals.newegg.staleSince;
-          changes.push({ name: p.n, change: 'price-update', from: oldPrice, to: price, sku });
-          updated++;
-        } else {
-          p.deals.newegg.refreshedAt = new Date().toISOString();
-          delete p.deals.newegg.staleSince;
-          unchanged++;
-        }
-      }
-    } catch (e) {
-      console.error(`Error refreshing ${p.n} (sku=${sku}):`, e.message);
-      errored++;
+    // ── LOOKUP FAILED: touch nothing. Not the price, not staleSince, not the
+    // absent streak. The deal is left exactly as found. This is the single most
+    // important behaviour in this file.
+    if (r.outcome === OUTCOME.LOOKUP_FAILED) {
+      stats.lookupFailed++;
+      failures.push({ id: p.id, name: p.n, cat: p.c, sku, reason: r.reason, rawCount: r.rawCount });
+      console.log(`  LOOKUP FAILED (no change): ${p.n} — ${r.reason}`);
+      await sleep(RATE_DELAY_MS);
+      continue;
     }
+
+    // ── CONFIRMED ABSENT: record evidence only. Never deletes inline; removal is
+    // decided after the loop, once run-level health is known.
+    if (r.outcome === OUTCOME.CONFIRMED_ABSENT) {
+      stats.confirmedAbsent++;
+      const d = p.deals.newegg;
+      d.absentStreak = (d.absentStreak || 0) + 1;
+      if (!d.staleSince) d.staleSince = new Date().toISOString();
+      const staleDays = (Date.now() - new Date(d.staleSince).getTime()) / 86400000;
+      changes.push({ name: p.n, change: 'marked-absent', sku, streak: d.absentStreak, staleDays: Number(staleDays.toFixed(1)) });
+      if (d.absentStreak >= MIN_ABSENT_STREAK && staleDays >= MIN_STALE_DAYS) {
+        removalCandidates.push({ product: p, sku, streak: d.absentStreak, staleDays: Number(staleDays.toFixed(1)) });
+      }
+      await sleep(RATE_DELAY_MS);
+      continue;
+    }
+
+    // ── OK: we have a real, gated match. ──────────────────────────────────────
+    stats.ok++;
+    const chosen = chooseCandidate(p, r.candidates);
+    if (!chosen) { // defensive: ok implies >=1 candidate, but never assume
+      stats.lookupFailed++;
+      failures.push({ id: p.id, name: p.n, cat: p.c, sku, reason: 'no_candidate_selected', rawCount: r.rawCount });
+      await sleep(RATE_DELAY_MS);
+      continue;
+    }
+
+    const { pick, kind } = chosen;
+    const item = pick.item;
+    const eff = effOf(item);
+    const d = p.deals.newegg;
+
+    // Capacity/compatibility guards already ran inside scoreMatch(). This is the
+    // cross-retailer price sanity gate.
+    const sanity = NEG.neweggSanity(p, eff);
+    if (!(eff > 0) || !sanity.pass) {
+      // CHANGED: previously this deleted the deal (and quarantined the product).
+      // A suspicious price is a reason to distrust the NEW number, not to destroy
+      // the listing we already have. Keep the old price, flag for review.
+      stats.priceSuspect++;
+      d.priceSuspect = true;
+      d.priceSuspectAt = new Date().toISOString();
+      d.priceSuspectValue = eff;
+      d.priceSuspectClass = sanity.cls;
+      changes.push({ name: p.n, change: 'price-suspect-flagged', kept: d.price, rejected: eff, cls: sanity.cls, sku });
+      await sleep(RATE_DELAY_MS);
+      continue;
+    }
+
+    // Confirmed live: clear any prior absence evidence and suspicion.
+    delete d.staleSince;
+    delete d.absentStreak;
+    delete d.priceSuspect;
+    delete d.priceSuspectAt;
+    delete d.priceSuspectValue;
+    delete d.priceSuspectClass;
+
+    const oldPrice = Number(d.price);
+    const oldSale = Number(d.saleprice || 0);
+    const newSale = item.saleprice && item.saleprice > 0 ? item.saleprice : null;
+    const newLink = item.linkurl || d.linkurl;
+    const skuChanged = String(item.sku).trim() !== String(sku).trim();
+    const priceChanged = item.price !== oldPrice || (newSale || 0) !== oldSale || newLink !== d.linkurl;
+
+    if (skuChanged) {
+      p.deals.newegg = {
+        sku: item.sku,
+        price: item.price,
+        ...(newSale ? { saleprice: newSale } : {}),
+        linkurl: newLink,
+        imageurl: item.imageurl || d.imageurl,
+        sellerClass: NEG.sellerClass(item.sku),
+        matchedAt: d.matchedAt || new Date().toISOString().slice(0, 10),
+        matchMethod: pick.match.method,
+        matchScore: Number(pick.match.score.toFixed(2)),
+        refreshedAt: new Date().toISOString(),
+        ...(kind === 'migrate'
+          ? { migratedAt: new Date().toISOString(), migratedFrom: sku }
+          : { rematchedAt: new Date().toISOString(), rematchedFrom: sku }),
+      };
+      if (kind === 'migrate') stats.migrated++; else stats.rematched++;
+      stats.priced++;
+      changes.push({ name: p.n, change: kind === 'migrate' ? 'migrated-to-firstparty' : 'rematched', from: sku, to: item.sku, price: item.price });
+    } else if (priceChanged) {
+      d.price = item.price;
+      if (newSale) d.saleprice = newSale; else delete d.saleprice;
+      d.linkurl = newLink;
+      d.refreshedAt = new Date().toISOString();
+      stats.priced++;
+      changes.push({ name: p.n, change: 'price-update', from: oldPrice, to: item.price, sku });
+    } else {
+      d.refreshedAt = new Date().toISOString();
+      stats.unchanged++;
+    }
+
     await sleep(RATE_DELAY_MS);
   }
 
-  console.log(`\n=== SUMMARY ===`);
-  console.log(`Updated: ${updated} (incl. ${migrated} migrated to first-party) | Unchanged: ${unchanged} | Removed: ${removed} | Flagged: ${flagged} | Errored: ${errored}`);
+  // ── Run-level circuit breakers ──────────────────────────────────────────────
+  const processed = matched.length;
+  const failureRate = processed ? stats.lookupFailed / processed : 0;
+  const removalCap = Math.max(MAX_REMOVAL_FLOOR, Math.floor(processed * MAX_REMOVAL_RATE));
+  const breakers = [];
+  if (failureRate > MAX_LOOKUP_FAILURE_RATE)
+    breakers.push(`lookup failure rate ${(failureRate * 100).toFixed(1)}% > ${(MAX_LOOKUP_FAILURE_RATE * 100)}% — feed unhealthy`);
+  if (stats.ok === 0 && processed > 0)
+    breakers.push('zero successful lookups — cannot trust any absence signal');
+  if (removalCandidates.length > removalCap)
+    breakers.push(`${removalCandidates.length} removal candidates > cap ${removalCap} — refusing mass removal`);
 
-  if (updated === 0 && removed === 0 && flagged === 0) {
-    console.log('No changes to write.');
-    return;
+  let removed = 0;
+  if (removalCandidates.length && breakers.length === 0 && !DRY_RUN) {
+    for (const rc of removalCandidates) {
+      delete rc.product.deals.newegg;
+      changes.push({ name: rc.product.n, change: 'removed-confirmed-absent', sku: rc.sku, streak: rc.streak, staleDays: rc.staleDays });
+      removed++;
+    }
   }
+
+  // ── Report ──────────────────────────────────────────────────────────────────
+  console.log(`\n=== SUMMARY ${DRY_RUN ? '(DRY RUN)' : ''} ===`);
+  console.log(`Processed:        ${processed}`);
+  console.log(`Matched OK:       ${stats.ok}  (repriced ${stats.priced}, unchanged ${stats.unchanged}, migrated ${stats.migrated}, rematched ${stats.rematched})`);
+  console.log(`Price suspect:    ${stats.priceSuspect}  (flagged, deal KEPT)`);
+  console.log(`Lookup failed:    ${stats.lookupFailed}  (no change written)`);
+  console.log(`Confirmed absent: ${stats.confirmedAbsent}  (${removalCandidates.length} past removal threshold)`);
+  if (breakers.length) {
+    console.log(`\n!! CIRCUIT BREAKER TRIPPED — 0 removals this run:`);
+    for (const b of breakers) console.log(`   - ${b}`);
+  }
+  console.log(`Removed:          ${removed}${DRY_RUN && removalCandidates.length ? ` (dry run — ${removalCandidates.length} would have been evaluated)` : ''}`);
+
+  if (failures.length) {
+    console.log(`\nLookup failures by reason:`);
+    const byReason = {};
+    for (const f of failures) byReason[f.reason] = (byReason[f.reason] || 0) + 1;
+    for (const [k, v] of Object.entries(byReason).sort((a, b) => b[1] - a[1])) console.log(`   ${v.toString().padStart(4)}  ${k}`);
+  }
+
+  const report = {
+    timestamp: new Date().toISOString(),
+    dryRun: DRY_RUN,
+    processed, ...stats,
+    // `updated` is read by .github/workflows/refresh-newegg-prices.yml for the
+    // commit message; kept as an alias of the renamed `priced` counter.
+    updated: stats.priced,
+    removalCandidates: removalCandidates.length,
+    removed,
+    breakers,
+    thresholds: { MIN_ABSENT_STREAK, MIN_STALE_DAYS, MIN_HEALTHY_CANDIDATES, MAX_LOOKUP_FAILURE_RATE, removalCap },
+    failures: failures.slice(0, 50),
+    changes: changes.slice(0, 100),
+  };
+  fs.writeFileSync(REPORT, JSON.stringify(report, null, 2));
+  console.log(`\nReport -> ${REPORT}`);
+
+  if (DRY_RUN) { console.log('DRY RUN — parts.js not written.'); return; }
+
+  const mutating = stats.priced + stats.priceSuspect + stats.confirmedAbsent + removed;
+  if (mutating === 0) { console.log('No changes to write.'); return; }
 
   const header = '// Auto-merged catalog. Edit with care.\n';
   const body = 'export const PARTS = ' + JSON.stringify(parts, null, 2) + ';\n\nexport default PARTS;\n';
   fs.writeFileSync(PARTS_PATH, header + body, 'utf8');
   console.log(`Wrote ${parts.length} products to parts.js`);
-
-  fs.writeFileSync('newegg-refresh-summary.json', JSON.stringify({
-    timestamp: new Date().toISOString(),
-    updated, unchanged, removed, errored, migrated, flagged,
-    sampleChanges: changes.slice(0, 20)
-  }, null, 2));
 })().catch(e => { console.error(e); process.exit(1); });
