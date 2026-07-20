@@ -20,7 +20,7 @@ export default [
     },
     "storageType": "DVD Writer",
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 99607,
@@ -37,7 +37,7 @@ export default [
     "connection": "USB-C",
     "deals": {
       "amazon": {
-        "price": 28.49,
+        "price": 26.99,
         "url": "https://www.amazon.com/dp/B0G8ZGCYRT?tag=tiereduptech-20",
         "inStock": true
       }
@@ -58,7 +58,7 @@ export default [
     "connection": "USB-A",
     "deals": {
       "amazon": {
-        "price": 29.99,
+        "price": 26.99,
         "url": "https://www.amazon.com/dp/B09BC44T8K?tag=tiereduptech-20",
         "inStock": true
       }
@@ -127,7 +127,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 99612,

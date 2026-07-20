@@ -18,7 +18,7 @@ export default [
     "licenseType": "Retail",
     "deals": {
       "amazon": {
-        "price": 190,
+        "price": 219.53,
         "url": "https://www.amazon.com/dp/B09V71FYGS?tag=tiereduptech-20",
         "inStock": true
       }
@@ -48,7 +48,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 99005,
@@ -73,7 +73,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 99006,
@@ -98,6 +98,6 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   }
 ];

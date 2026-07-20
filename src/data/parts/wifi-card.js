@@ -120,7 +120,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 96015,
@@ -158,7 +158,7 @@ export default [
     "interface": "USB",
     "deals": {
       "amazon": {
-        "price": 25.97,
+        "price": 21.73,
         "url": "https://www.amazon.com/dp/B07V4R3QHW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -200,7 +200,7 @@ export default [
     "interface": "USB 3.0",
     "deals": {
       "amazon": {
-        "price": 25.99,
+        "price": 27.99,
         "url": "https://www.amazon.com/dp/B01IEU7UZ0?tag=tiereduptech-20",
         "inStock": true
       }

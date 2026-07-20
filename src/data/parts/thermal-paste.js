@@ -149,7 +149,7 @@ export default [
     "asin": "B07KQ1T158",
     "deals": {
       "amazon": {
-        "price": 8,
+        "price": 7,
         "url": "https://www.amazon.com/dp/B07KQ1T158?tag=tiereduptech-20",
         "inStock": true
       }

@@ -38,7 +38,7 @@ export default [
     "outlets": 6,
     "deals": {
       "amazon": {
-        "price": 240,
+        "price": 219.95,
         "url": "https://www.amazon.com/dp/B00429N19W?tag=tiereduptech-20",
         "inStock": true
       }
@@ -67,7 +67,7 @@ export default [
     },
     "ff": "Compact",
     "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 99702,
@@ -126,7 +126,9 @@ export default [
         "url": "https://www.amazon.com/dp/B073Q48YGF?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-07-20"
   },
   {
     "id": 99705,
