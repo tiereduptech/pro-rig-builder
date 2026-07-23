@@ -125,7 +125,10 @@ function buildRow(rec, id, NEG) {
   };
   if (CATEGORY === 'RAM') {
     row.ramType = specs.memType;
-    row.ecc = /\becc\b|\brdimm\b|\blrdimm\b/i.test(name);
+    // ECC: registered modules (RDIMM/LRDIMM) are always ECC; a bare "ECC" counts
+    // only when it is NOT part of "non-ECC" (the substring match set non-ECC
+    // sticks to ecc:true in the first capped batch).
+    row.ecc = /\b(rdimm|lrdimm)\b/i.test(name) || (/\becc\b/i.test(name) && !/\bnon[-\s]?ecc\b/i.test(name));
     row.rgb = /\brgb\b/i.test(name);
     row.formFactor = /so-?dimm/i.test(name) ? 'SODIMM' : /\blrdimm\b/i.test(name) ? 'LRDIMM' : /\brdimm\b/i.test(name) ? 'RDIMM' : 'UDIMM';
   }

@@ -1,12 +1,12 @@
 name: Newegg Discovery Apply (capped, commits to branch)
 
-# Runs apply-newegg-discoveries.cjs. DRY by default (writes nothing). LIVE only
-# when explicitly asked — via workflow_dispatch mode=live, or a push whose head
-# commit message contains "[apply-live]". A live run writes the capped batch via
-# writeCatalog (atomic promote + re-split + shrink/growth brakes) and commits
-# parts.js + chunks to THIS branch only — never a deploy, always reversible via
-# rollback-discovery.cjs. The live commit touches only src/data, which is NOT a
-# trigger path, so it cannot re-trigger this workflow.
+# Runs apply-newegg-discoveries.cjs. A push ALWAYS runs dry (writes nothing) —
+# there is deliberately no commit-message or file signal that can turn a push
+# live, because a descriptive commit message once did exactly that. LIVE requires
+# an explicit workflow_dispatch with mode=live. A live run writes the capped
+# batch via writeCatalog (atomic promote + re-split + shrink/growth brakes) and
+# commits parts.js + chunks to THIS branch only — never a deploy, always
+# reversible via rollback-discovery.cjs.
 
 on:
   push:
@@ -14,7 +14,6 @@ on:
     paths:
       - 'apply-newegg-discoveries.cjs'
       - '.github/workflows/apply-newegg.yml'
-      - 'apply-live.trigger'
   workflow_dispatch:
     inputs:
       category: { description: "Category", type: string, default: "RAM" }
@@ -44,10 +43,9 @@ jobs:
       - name: Resolve mode
         id: m
         run: |
-          MODE="${{ inputs.mode }}"
-          if [ -z "$MODE" ]; then
-            if git log -1 --pretty=%B | grep -q '\[apply-live\]'; then MODE=live; else MODE=dry; fi
-          fi
+          # A push carries no inputs.mode -> always dry. Only an explicit
+          # workflow_dispatch with mode=live can write.
+          MODE="${{ inputs.mode }}"; [ -z "$MODE" ] && MODE=dry
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
           echo "Resolved mode: $MODE"
       - name: Run apply
