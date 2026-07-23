@@ -28,6 +28,41 @@ const PARTS_DIR  = path.join(ROOT, 'src/data/parts');
 const STAGE_DIR  = path.join(ROOT, 'src/data/.parts.staging');
 const OLD_DIR    = path.join(ROOT, 'src/data/.parts.old');
 
+// ── Windows-safe directory rename ────────────────────────────────────────────
+// On Windows, renaming a directory races with anything holding a transient
+// handle on it or a file inside — Defender real-time scan and Search Indexer
+// both grab freshly-written files for a beat, and a rename in that beat fails
+// with EPERM/EACCES/EBUSY (occasionally ENOTEMPTY on the target). It is timing-
+// dependent: a single isolated swap almost always wins, but the ingest re-splits
+// on every 25-product checkpoint — ~128 swaps for a full run — so the race is a
+// near-certainty across a run even though each swap looks fine in isolation.
+// A full live ingest on 2026-07-21 died at checkpoint 33 for exactly this.
+//
+// The renames ARE the atomic step; the only failure here is "not yet, the OS is
+// busy". So retry with backoff. A synchronous sleep (Atomics.wait on a throwaway
+// buffer) keeps this inside the existing sync control flow, where the swap's
+// crash-recovery invariant lives — going async would reopen the interruption
+// window this function exists to keep closed.
+const RENAME_RETRIES = 12;
+function sleepSync(ms) {
+  Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
+}
+function renameWithRetry(from, to) {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      fs.renameSync(from, to);
+      return;
+    } catch (e) {
+      const transient = e.code === 'EPERM' || e.code === 'EACCES'
+        || e.code === 'EBUSY' || e.code === 'ENOTEMPTY';
+      if (!transient || attempt >= RENAME_RETRIES) throw e;
+      // 30ms, 60, 120 … capped — total budget ~4s, well past a Defender scan of
+      // 30 small files, without hanging a genuinely stuck rename forever.
+      sleepSync(Math.min(30 * 2 ** attempt, 750));
+    }
+  }
+}
+
 // ── Crash recovery ───────────────────────────────────────────────────────────
 // Runs before anything else. The swap below has exactly one window where
 // PARTS_DIR does not exist (between the two renames); if the process dies
@@ -40,7 +75,7 @@ function recoverFromInterruptedSwap() {
   if (!haveLive && haveOld) {
     // Died between rename #1 and rename #2. OLD_DIR is the complete previous
     // catalog — put it back, then proceed with a normal split.
-    fs.renameSync(OLD_DIR, PARTS_DIR);
+    renameWithRetry(OLD_DIR, PARTS_DIR);
     console.log('RECOVERED: interrupted swap — restored src/data/parts/ from .parts.old');
   } else if (haveLive && haveOld) {
     // Died after rename #2, before cleanup. PARTS_DIR is already the NEW
@@ -100,8 +135,8 @@ function swapInChunks(fileNamesAlpha, byCat) {
   // Phase C — swap. The only window where PARTS_DIR is absent is between these
   // two renames; recoverFromInterruptedSwap() above repairs it from OLD_DIR.
   fs.rmSync(OLD_DIR, { recursive: true, force: true });
-  if (fs.existsSync(PARTS_DIR)) fs.renameSync(PARTS_DIR, OLD_DIR);  // ── window opens
-  fs.renameSync(STAGE_DIR, PARTS_DIR);                              // ── window closes
+  if (fs.existsSync(PARTS_DIR)) renameWithRetry(PARTS_DIR, OLD_DIR);  // ── window opens
+  renameWithRetry(STAGE_DIR, PARTS_DIR);                              // ── window closes
   fs.rmSync(OLD_DIR, { recursive: true, force: true });
 
   return perFileTotal;

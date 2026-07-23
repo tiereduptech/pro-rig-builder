@@ -25,7 +25,8 @@
 //                                  sellerClass, matchedAt, matchMethod, matchScore }.
 //
 //  Resumable: products with existing deals.newegg.sku are skipped on re-run.
-//  Rate limited: REQ_PER_SECOND requests/sec.
+//  Rate limited: REQ_PER_SECOND req/sec, under Rakuten's 100/min ceiling,
+//  with retry-after-honouring retries so a 429 never becomes a result.
 //
 //  Usage:
 //    railway run node fetch-newegg-via-rakuten.cjs --dry-run
@@ -69,7 +70,20 @@ const PARTS_PATH = './src/data/parts.js';
 const PROGRESS_PATH = './catalog-build/_newegg-progress.json';
 const DRY_REPORT = './newegg-ingest-dry-run.json';
 
-const REQ_PER_SECOND = 2;
+// Rakuten's documented ceiling, straight from the 429 response headers:
+//   x-ratelimit-limit-minute: 100   retry-after: 17
+// 2/sec was 120/min and sat permanently over it, which is why failures arrived
+// in bursts every ~40 products rather than randomly. 1.5/sec is 90/min, leaving
+// headroom for the token call and for clock skew against their window.
+// 85, not 100: the token call shares the bucket, and their minute boundary is
+// not ours. Measured — 90/min via a fixed gap still drew 429s.
+const REQ_PER_MINUTE = 85;
+const MIN_REQUEST_GAP_MS = 500;
+// A 429 must never become a data outcome. Retries honour the server's own
+// retry-after, so we wait exactly as long as it asks and no longer. 5 attempts
+// because retry-after can be up to a full window and we would rather spend the
+// wall clock than record a throttled lookup as a missing product.
+const MAX_RETRIES = 5;
 const SAVE_EVERY = 25;
 
 const CID = process.env.RAKUTEN_CLIENT_ID;
@@ -148,28 +162,111 @@ function parseItems(xml) {
 // where the wrong-product deals entered the catalog in the first place.
 // Do not re-fork: one matcher, one place, both paths.
 
+// ── Global request throttle ──────────────────────────────────────────────────
+//
+// The delay used to live in the product loop, which was correct only while a
+// product cost exactly two requests. The query cascade made a product cost up
+// to six, fired back-to-back with no spacing, and Rakuten throttled them. The
+// failures were then swallowed by `if (!res.ok) continue`, so a rate-limited
+// product was indistinguishable from a product Newegg does not carry: the
+// 2026-07-20 dry run lost 166 attachments that way, ALL of which came back on a
+// throttled retry.
+//
+// The limiter therefore has to sit at the REQUEST, not at the product. Anything
+// that counts requests per second has to be enforced where requests are made.
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// ROLLING WINDOW, not a fixed gap.
+//
+// A fixed inter-request gap paces the average but not the WINDOW. Rakuten
+// enforces a fixed per-minute bucket (x-ratelimit-limit-minute: 100), so a
+// steady 90/min still overshoots whenever our requests straddle their minute
+// boundary — which is why pacing alone left 13 lookups failed and 20 429s in a
+// 260-product validation. Tracking the actual timestamps and waiting for the
+// oldest to age out is the only thing that respects a bucket we cannot see.
+const REQ_WINDOW_MS = 60_000;
+const requestTimes = [];
+async function throttle() {
+  for (;;) {
+    const cutoff = Date.now() - REQ_WINDOW_MS;
+    while (requestTimes.length && requestTimes[0] < cutoff) requestTimes.shift();
+    if (requestTimes.length < REQ_PER_MINUTE) break;
+    // +250ms so we resume just after the oldest leaves the window, never on the
+    // boundary where their clock and ours can disagree.
+    await sleep(requestTimes[0] + REQ_WINDOW_MS - Date.now() + 250);
+  }
+  // Keep a floor on spacing too, so a fresh window is not spent in one burst.
+  const last = requestTimes[requestTimes.length - 1];
+  const gap = last ? last + MIN_REQUEST_GAP_MS - Date.now() : 0;
+  if (gap > 0) await sleep(gap);
+  requestTimes.push(Date.now());
+}
+
+// Pacing alone is not enough: their minute-window and ours drift, so an
+// occasional 429 is expected however conservative the rate. Retrying on the
+// server's own retry-after is what keeps throttling out of the RESULTS —
+// without it, a 429 silently becomes 'this product does not exist', which is
+// exactly how the previous run lost 166 attachments.
+// Returns { res, httpFail } — httpFail true when every attempt failed.
+let rateLimitHits = 0;
+async function fetchSearch(url, token) {
+  for (let attempt = 0; ; attempt++) {
+    await throttle();
+    let res = null;
+    try {
+      res = await fetch(url, { headers: { 'Authorization': `Bearer ${token}` } });
+    } catch {
+      if (attempt >= MAX_RETRIES) return { res: null, httpFail: true };
+      await sleep(1000 * 2 ** attempt);
+      continue;
+    }
+    if (res.status === 429) {
+      rateLimitHits++;
+      if (attempt >= MAX_RETRIES) return { res, httpFail: true };
+      const ra = parseInt(res.headers.get('retry-after') || '', 10);
+      await sleep((Number.isFinite(ra) && ra > 0 ? ra : 2 ** attempt) * 1000);
+      continue;
+    }
+    if (!res.ok) {
+      if (attempt >= MAX_RETRIES) return { res, httpFail: true };
+      await sleep(1000 * 2 ** attempt);
+      continue;
+    }
+    return { res, httpFail: false };
+  }
+}
+
 async function findNeweggMatch(product, token) {
   const catFilter = CAT_FILTER[product.c];
   if (!catFilter) return { ok: false, reason: 'no_cat_mapping' };
-  const keywords = NEG.extractKeywords(product.n, product.b);
-
-  // Try exact= first (more precise), then keyword= fallback.
-  const queries = [
-    { exact: keywords, cat: catFilter, mid: MID, max: '20' },
-    { keyword: keywords, cat: catFilter, mid: MID, max: '20' },
-  ];
+  // Query CASCADE. The legacy full-title pair (exact, then keyword) runs FIRST
+  // and unchanged; the broadening rungs are reached only when it finds nothing.
+  // See buildQueries() in newegg-match.js for the measurements.
+  const queries = NEG.buildQueries(product.n, product.b,
+    { broaden: !NEG.NO_BROADEN_CATS.has(product.c) })
+    .map((q) => ({ [q.mode]: q.q, cat: catFilter, mid: MID, max: '20' }));
 
   let items = [];
+  let httpErrors = 0;
+  let queriesTried = 0;
   for (const params of queries) {
     const url = `https://api.linksynergy.com/productsearch/1.0?${new URLSearchParams(params)}`;
-    const res = await fetch(url, { headers: { 'Authorization': `Bearer ${token}` } });
-    if (!res.ok) continue;
+    queriesTried++;
+    const { res, httpFail } = await fetchSearch(url, token);
+    if (httpFail) { httpErrors++; continue; } // exhausted retries — never an absence
     const xml = await res.text();
     items = parseItems(xml);
     if (items.length > 0) break;
   }
+  // A FAILED LOOKUP IS NOT AN ABSENCE. searchNewegg() has drawn this distinction
+  // since the 2026-07-06 incident that deleted 1,655 deals; findNeweggMatch
+  // never did, and swallowed every non-200 into 'no_results'. That is precisely
+  // how rate limiting masqueraded as 166 products disappearing from the feed.
+  if (items.length === 0 && httpErrors > 0 && httpErrors === queriesTried) {
+    return { ok: false, reason: 'http_error', rawCount: 0, scores: [], variantRejects: [], httpErrors };
+  }
   if (items.length === 0) {
-    return { ok: false, reason: 'no_results', rawCount: 0, scores: [], variantRejects: [] };
+    return { ok: false, reason: 'no_results', rawCount: 0, scores: [], variantRejects: [], httpErrors };
   }
 
   // Capture WHY each candidate lost, not just that it did. The dry run reports
@@ -181,6 +278,13 @@ async function findNeweggMatch(product, token) {
   // number moves for exactly one identifiable reason.
   const floorRejects = [];
   const variantRejects = [];
+  // Guard rejects (capacity, price multiplier, prebuilt/bundle) used to be
+  // invisible: scoreMatch returned null without a note, so a product whose
+  // every candidate was thrown out by the CAPACITY GATE reported no_match —
+  // the same code as "the feed had nothing". Broken out so the number is
+  // reviewable, and so a capacity gate that starts over-rejecting is legible
+  // as itself rather than as a mysterious rise in no_match.
+  const guardRejects = [];
   const scored = [];
   for (const it of items) {
     const notes = {};
@@ -189,20 +293,24 @@ async function findNeweggMatch(product, token) {
     // differ: binding a new link on weak name evidence shows a buyer the wrong
     // product, while repricing a settled SKU at a low score is routine.
     const match = NEG.scoreMatch(product, it, notes, { minSim: NEG.MIN_ATTACH_SIM });
-    if (match) scored.push({ item: it, match });
-    else if (notes.reject === 'below_attach_floor') {
+    if (match) { scored.push({ item: it, match }); continue; }
+    const kind = NEG.rejectKind(notes.reject);
+    if (kind === 'floor') {
       floorRejects.push({
         candidateName: it.name, sku: it.sku,
         sim: Number(NEG.nameSimilarity(product.n, it.name).toFixed(3)),
       });
-    } else if (notes.reject) {
+    } else if (kind === 'variant') {
       variantRejects.push({ candidateName: it.name, sku: it.sku, reason: notes.reject });
+    } else if (kind === 'guard') {
+      guardRejects.push({ candidateName: it.name, sku: it.sku, reason: notes.reject });
     }
   }
   const detail = {
     rawCount: items.length,
     variantRejects,
     floorRejects,
+    guardRejects,
     scores: scored.map((x) => ({
       candidateName: x.item.name, sku: x.item.sku,
       sellerClass: NEG.sellerClass(x.item.sku),
@@ -213,6 +321,7 @@ async function findNeweggMatch(product, token) {
   if (scored.length === 0) {
     const reason = variantRejects.length ? 'variant_rejected'
       : floorRejects.length ? 'below_attach_floor'
+      : guardRejects.length ? 'guard_rejected'
       : 'no_match';
     return { ok: false, reason, ...detail };
   }
@@ -328,11 +437,11 @@ function saveProgress(p) {
 
   let matched = 0, noMatch = 0, errors = 0, flagged = 0;
   // Dry-run report accumulators.
-  const dryStats = { scored: 0, accepted: 0, flagged: 0, variantRejected: 0, floorRejected: 0, marketplaceBlocked: 0, noMatch: 0, noResults: 0, errors: 0 };
+  const dryStats = { scored: 0, accepted: 0, flagged: 0, variantRejected: 0, floorRejected: 0, guardRejected: 0, guardByCode: {}, marketplaceBlocked: 0, noMatch: 0, noResults: 0, httpErrors: 0, errors: 0 };
   const dryAccepts = [];
   const dryRejects = [];
   const dryFloorRejects = [];
-  const delay = 1000 / REQ_PER_SECOND;
+  const dryGuardRejects = [];
   await getToken();
   console.log('  ✓ Token acquired\n');
 
@@ -352,6 +461,19 @@ function saveProgress(p) {
         dryStats.floorRejected += result.floorRejects ? result.floorRejects.length : 0;
         if (result.floorRejects && result.floorRejects.length) {
           dryFloorRejects.push({ id: p.id, cat: p.c, ourName: p.n, rejected: result.floorRejects });
+        }
+        if (result.guardRejects && result.guardRejects.length) {
+          dryStats.guardRejected += result.guardRejects.length;
+          // Per-code so "the capacity gate rejected N" is answerable directly,
+          // rather than being averaged in with the price and bundle gates.
+          for (const g of result.guardRejects) {
+            dryStats.guardByCode[g.reason] = (dryStats.guardByCode[g.reason] || 0) + 1;
+          }
+          dryGuardRejects.push({
+            id: p.id, cat: p.c, ourName: p.n,
+            rejected: result.guardRejects,
+            survivors: result.scores ? result.scores.length : 0,
+          });
         }
         if (result.reason === 'marketplace_over_firstparty') dryStats.marketplaceBlocked++;
         if (result.variantRejects && result.variantRejects.length) {
@@ -383,7 +505,10 @@ function saveProgress(p) {
           });
           const tag = result.method === 'upc' ? '✓ UPC' : `~ ${(result.score * 100).toFixed(0)}%`;
           console.log(`${sanity.pass ? tag : '⚠ flag ' + sanity.cls}  $${effPrice} [${sClass}] (dry)`);
-          if (i < candidates.length - 1) await new Promise((r) => setTimeout(r, delay));
+          // No per-product sleep: throttle() now paces every request individually,
+    // which is the only place a per-second budget can actually be enforced.
+    // Sleeping here as well would just idle between products that already
+    // waited.
           continue;
         }
 
@@ -416,8 +541,18 @@ function saveProgress(p) {
       } else {
         noMatch++;
         if (DRY_RUN) {
-          if (result.reason === 'variant_rejected') { /* already counted above */ }
+          // Only genuinely-unexplained outcomes may land in noMatch. Every
+          // reason with its own tally is subtracted explicitly, so noMatch
+          // stays a residual we can read rather than a bucket that silently
+          // absorbs whatever gate we add next.
+          if (result.reason === 'variant_rejected'
+            || result.reason === 'guard_rejected'
+            || result.reason === 'below_attach_floor') { /* counted above */ }
           else if (result.reason === 'no_results') dryStats.noResults++;
+          // Lookup FAILURE, tracked apart from absence. A non-zero number here
+          // invalidates the run's no_results figure — it means some products
+          // were never actually asked about.
+          else if (result.reason === 'http_error') dryStats.httpErrors++;
           else dryStats.noMatch++;
         } else {
           progress.processedIds.push(p.id);
@@ -436,7 +571,10 @@ function saveProgress(p) {
       console.log(`  ── checkpoint: ${matched} matched, ${noMatch} no-match, ${errors} errors ──`);
     }
 
-    if (i < candidates.length - 1) await new Promise((r) => setTimeout(r, delay));
+    // No per-product sleep: throttle() now paces every request individually,
+    // which is the only place a per-second budget can actually be enforced.
+    // Sleeping here as well would just idle between products that already
+    // waited.
   }
 
   if (DRY_RUN) {
@@ -450,6 +588,7 @@ function saveProgress(p) {
       accepts: dryAccepts,
       variantRejections: dryRejects,
       floorRejections: dryFloorRejects,
+      guardRejections: dryGuardRejects,
     };
     fs.writeFileSync(DRY_REPORT, JSON.stringify(report, null, 2));
 
@@ -460,9 +599,15 @@ function saveProgress(p) {
     console.log(`  Would flag (sanity): ${dryStats.flagged}  (not attached)`);
     console.log(`  Variant-rejected:    ${dryStats.variantRejected}  (candidates, across ${dryRejects.length} products)`);
     console.log(`  Below attach floor:  ${dryStats.floorRejected}  (candidates >=0.5 but <${NEG.MIN_ATTACH_SIM}, across ${dryFloorRejects.length} products)`);
+    console.log(`  Guard-rejected:      ${dryStats.guardRejected}  (candidates, across ${dryGuardRejects.length} products)`);
+    for (const [code, n] of Object.entries(dryStats.guardByCode).sort((a, b) => b[1] - a[1])) {
+      console.log(`      ${code.replace(/^guard_/, '').padEnd(26)} ${n}`);
+    }
     console.log(`  Marketplace blocked: ${dryStats.marketplaceBlocked}  (first-party existed)`);
-    console.log(`  No match:            ${dryStats.noMatch}`);
+    console.log(`  No match:            ${dryStats.noMatch}  (residual — no gate claimed it)`);
     console.log(`  No results:          ${dryStats.noResults}`);
+    console.log(`  HTTP-failed lookups: ${dryStats.httpErrors}  ${dryStats.httpErrors ? '<-- RUN IS NOT CLEAN: these were never asked' : ''}`);
+    console.log(`  429s absorbed:       ${rateLimitHits}  (retried, did not affect results)`);
     console.log(`  Errors:              ${dryStats.errors}`);
     console.log(`  Report:              ${DRY_REPORT}\n`);
     return;

@@ -51,7 +51,16 @@ if (!CLIENT_ID || !CLIENT_SECRET || !SID) {
   process.exit(1);
 }
 
-const RATE_DELAY_MS = 600;
+// 600ms was 100 req/min — Rakuten's documented ceiling EXACTLY
+// (x-ratelimit-limit-minute: 100), with nothing left for the token call or for
+// the fact that their minute boundary is not ours. Measured on the ingest path:
+// a rate at the ceiling draws 429s in bursts, and this file's own searchNewegg
+// correctly reports those as http_error / no_results — neither of which proves
+// absence, so a deal is never deleted for them. The exposure is therefore not
+// wrong deletions but a THROTTLED RUN LOOKING LIKE A SICK FEED: inflated lookup
+// failures trip the MAX_LOOKUP_FAILURE_RATE breaker and abort the run.
+// 720ms ≈ 83/min leaves real headroom.
+const RATE_DELAY_MS = 720;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 // ── Safety thresholds ────────────────────────────────────────────────────────

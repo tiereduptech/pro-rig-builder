@@ -124,11 +124,155 @@ export function extractKeywords(name, brand) {
     .replace(/PCIe \d+\.\d+|HDMI \d+\.\d+|DisplayPort \d+\.\d+/gi, '')
     .replace(/GDDR\d+(\s*Memory)?|DDR\d+\s*Memory/gi, '')
     .replace(/Edition|Memory|Motherboard|Desktop Processor/gi, '')
+    // Quote marks used to survive into the query, so `27"` was sent to Rakuten
+    // verbatim as a term its index cannot satisfy — and `keyword=` is AND, so
+    // one such term zeroes the whole result. Stripping them can only widen what
+    // this query reaches, never narrow it.
+    .replace(/["'“”‘’″′]/g, ' ')
     .replace(/[-,()|]/g, ' ').replace(/\s+/g, ' ').trim();
   const words = s.split(' ').filter(Boolean).slice(0, 8);
   let q = words.join(' ');
   if (brand && !q.toLowerCase().includes(brand.toLowerCase())) q = `${brand} ${q}`;
   return q.slice(0, 100);
+}
+
+// ── Query construction ───────────────────────────────────────────────────────
+//
+// THE LOOKUP BUG. extractKeywords() takes the first 8 words of our catalog
+// title. Rakuten's `keyword=` is AND across every term, so each extra term can
+// only ever REMOVE results — and our titles carry spec text worded differently
+// than Newegg's ("27in" vs "27 inch", "1440p" vs "QHD 2K 1440P"). Every such
+// token is a term Newegg's index cannot satisfy, so the query returns nothing
+// for a product Newegg plainly carries. Measured live on 2026-07-20:
+//
+//   "Samsung 27" Essential S3 S36GD Series FHD 1800R Curved"  →  0 hits
+//   "Samsung Odyssey G5"                                      → 11 hits
+//   "Corsair Vengeance RGB DDR5 6000MHz CL30 32GB Kit"        →  0 hits
+//   "Corsair Vengeance RGB DDR5 32GB"                         → 20 hits
+//
+// This is why no_results ran at 68% and why Monitors/RAM failed near-totally
+// (90% each) — those categories have the longest, most spec-laden titles. It
+// was never the matcher: we were asking questions the search cannot answer.
+//
+// The fix is a CASCADE, shortest-and-highest-signal first, stopping at the
+// first query that returns anything. Broadening the query costs precision, but
+// precision is the matcher's job — scoreMatch(), the variant guard and the
+// attach floor all still run on whatever comes back. A query that returns 20
+// candidates we then reject is strictly better than one that returns 0.
+
+// Spec vocabulary: true of the product, useless for FINDING it, and frequently
+// worded differently by Newegg. Dropped from the narrowed queries only — the
+// full-title query is kept as the last rung, so nothing that works today stops
+// working.
+const SPEC_NOISE = new RegExp('\\b(' + [
+  // display
+  'curved', 'flat', 'ips', 'va', 'tn', 'oled', 'qled', 'led', 'lcd', 'hdr\\d*',
+  'fhd', 'qhd', 'uhd', 'wqhd', 'uwqhd', '4k', '2k', '1080p', '1440p', '2160p',
+  'freesync', 'gsync', 'g-sync', 'srgb', 'nits', 'ms', 'monitor', 'display',
+  'screen', 'portable', 'ultrawide', 'widescreen', 'borderless', 'frameless',
+  // memory / storage
+  'cl\\d+', 'pc\\d+', 'udimm', 'dimm', 'sodimm', 'unbuffered', 'ecc',
+  'nand', 'tlc', 'qlc', 'mlc', 'slc', 'nvme', 'sata', 'ssd', 'hdd',
+  'internal', 'external', 'solid', 'state', 'drive', 'cache', 'rpm',
+  // generic marketing
+  'gaming', 'desktop', 'computer', 'laptop', 'pc', 'series', 'kit',
+  'high', 'performance', 'premium', 'professional', 'ultra', 'slim',
+  'compatible', 'support', 'supports', 'includes', 'included', 'with', 'for',
+  'and', 'the', 'up', 'to', 'inch', 'in',
+].join('|') + ')\\b', 'gi');
+
+// Dimensional / rate tokens: "27in", "165hz", "6000mhz", "2560x1600", "32gb".
+const MEASURE_TOKEN = /^\d+(\.\d+)?(x\d+)?(in|inch|hz|mhz|ghz|gb|tb|mb|w|mm|cm|bit|v|r)?$/i;
+
+// A manufacturer part number: long, mixed letters+digits. Highest-signal token
+// we have — when Newegg indexes it, it is close to a unique key.
+function mpnTokens(name) {
+  return String(name || '').split(/[\s,()|]+/)
+    .map((w) => w.replace(/[^\w-]/g, ''))
+    .filter((w) => w.length >= 6 && /\d/.test(w) && /[a-z]/i.test(w));
+}
+
+function cleanTokens(name) {
+  return String(name || '')
+    // Quote marks survived the old stripper, so `27"` went to the API verbatim
+    // as a term Newegg's index has no hope of matching.
+    .replace(/["'“”‘’″′]/g, ' ')
+    .replace(/[-,()|/+]/g, ' ')
+    .replace(SPEC_NOISE, ' ')
+    .split(/\s+/).filter(Boolean)
+    .filter((w) => !MEASURE_TOKEN.test(w))
+    .filter((w) => w.length >= 2);
+}
+
+// Categories where the broadening rungs are measured to be worth nothing.
+//
+// Live sample, 12 previously-unfindable products each: Monitor recovered 1 and
+// RAM recovered 0 that would actually attach. Their catalog rows are long-tail
+// Amazon listings ("Portable Monitor for Laptop, IPS USB-C HDMI") that Newegg
+// does not carry at all, plus brand models whose MPN their index does not hold
+// — LG 27GR95QE returns zero on EVERY query form, including the bare part
+// number. Broadening cannot find what the feed does not contain; it just spends
+// four requests per product against a hard 100/min ceiling.
+//
+// This is a COST decision, not a matching one. If Newegg's monitor coverage
+// changes, re-measure and delete the entry — nothing else depends on it.
+export const NO_BROADEN_CATS = new Set(['Monitor', 'RAM']);
+
+/**
+ * Ordered list of queries to try, most specific first. Callers issue them in
+ * order and stop at the first non-empty response.
+ * @param {{broaden?: boolean}} [opts] broaden:false emits only the legacy pair.
+ * @returns {Array<{mode:'exact'|'keyword', q:string}>}
+ */
+export function buildQueries(name, brand, opts) {
+  const out = [];
+  const push = (mode, q) => {
+    const t = String(q || '').trim().slice(0, 100);
+    // Below two terms a query is not identifying anything — it is a category
+    // scan, and its 20 rows of unrelated product waste a request and a rate
+    // limit slot for a result the matcher will reject wholesale.
+    if (t && t.split(/\s+/).length >= 2 && !out.some((x) => x.mode === mode && x.q === t)) {
+      out.push({ mode, q: t });
+    }
+  };
+
+  const toks = cleanTokens(name);
+  const b = brand ? String(brand).trim() : '';
+  const withBrand = (arr) => {
+    const joined = arr.join(' ');
+    return b && !joined.toLowerCase().includes(b.toLowerCase()) ? `${b} ${joined}` : joined;
+  };
+
+  // ORDER IS A SAFETY PROPERTY, NOT A PREFERENCE.
+  //
+  // The legacy full-title queries go FIRST, unchanged, so every product that
+  // resolves today resolves today's way and binds today's SKU. The broadening
+  // rungs are reached ONLY after the legacy pair returns nothing — which is
+  // exactly the no_results population, by definition. That makes this change
+  // strictly additive: it cannot move an existing attachment.
+  //
+  // Putting the short query first was tempting (it returns a wider candidate
+  // pool, so it can surface a better listing than exact= does) but it would
+  // re-open all 606 working attachments to reselection for a speculative gain.
+  // Given how this catalog acquired wrong products in the first place, a
+  // broader pool is not worth re-litigating matches that are already correct.
+  // Widening the candidate pool for products that already match is a separate
+  // question, worth its own dry run.
+  const legacy = extractKeywords(name, brand);
+  push('exact', legacy);
+  push('keyword', legacy);
+
+  if (opts && opts.broaden === false) return out;
+
+  // Broadening rungs — reached only when the legacy pair found nothing.
+  // Brand + the first few identifying tokens, spec text stripped.
+  push('keyword', withBrand(toks.slice(0, 3)));
+  // One token wider, for lines where the model needs a qualifier.
+  push('keyword', withBrand(toks.slice(0, 5)));
+  // MPN. Newegg indexes it inconsistently — CMH32GX5M2B6000C30 resolves,
+  // LS27DG502ENXZA does not — so it is a rung, never the only attempt.
+  for (const m of mpnTokens(name).slice(0, 2)) push('keyword', `${b} ${m}`);
+  return out;
 }
 // ── Variant-collapse guard ───────────────────────────────────────────────────
 //
@@ -151,7 +295,11 @@ export function extractKeywords(name, brand) {
 
 // Phrases where a marker word is NOT a variant — stripped before extraction.
 // "80 PLUS Gold" is a PSU efficiency rating, not a "Plus" model.
-const MARKER_NOISE = /\b(80\s*\+?\s*plus|plus\s*gold|plus\s*bronze|plus\s*platinum|plus\s*titanium)\b/gi;
+// "Core Ultra" is Intel's CPU family, and it appears in the COMPATIBILITY text
+// of nearly every LGA1851 board ("Supports Intel Core Ultra Series 2"). Read as
+// a marker it made "ultra" theirs-only on boards whose titles are otherwise
+// identical to ours — same false-positive shape as "80 PLUS Gold".
+const MARKER_NOISE = /\b(80\s*\+?\s*plus|plus\s*gold|plus\s*bronze|plus\s*platinum|plus\s*titanium|core\s*ultra|ultra\s*core)\b/gi;
 // Generic words that carry no model identity — dropped so "AIR 903 Series"
 // and "AIR 903" are not split by "Series" alone.
 const GENERIC_NOISE = /\b(series|edition|version|model|retail|new|gaming|desktop|computer|pc)\b/gi;
@@ -161,6 +309,24 @@ const GENERIC_NOISE = /\b(series|edition|version|model|retail|new|gaming|desktop
 // can safely contain ("box contents", "open air"). Folding makes the phrase
 // addressable without making its halves trigger-happy.
 const PHRASE_MARKERS = [
+  // Form factor, folded to ONE canonical token. Folding runs before marker
+  // extraction so "Mini-ITX" cannot leave a bare "mini" behind and "Micro ATX"
+  // cannot leave a bare "micro" — those words are markers in their own right
+  // ("Meshify 2 Compact", "H5 Flow Mini"), and letting a form-factor phrase
+  // shed them was manufacturing marker mismatches out of pure spec text.
+  [/\b(?:mini|m)[\s-]*itx\b/gi, ' ff_itx '],
+  [/\bitx\b/gi, ' ff_itx '],
+  [/\b(?:micro|m|u)[\s-]*atx\b/gi, ' ff_matx '],
+  [/\bmatx\b/gi, ' ff_matx '],
+  // E-ATX folds into the SAME bucket as ATX, deliberately. They share a mounting
+  // standard, listings use the words interchangeably for one board ("Extended
+  // ATX", "E-ATX", plain "ATX"), and an E-ATX case accepts ATX boards. Measured
+  // on the 2026-07-21 accepts: keeping them distinct produced 4 false conflicts
+  // out of 6 and caught nothing that collapsing them misses. mATX and ITX are
+  // the genuinely exclusive formats.
+  [/\bextended[\s-]*atx\b/gi, ' ff_atx '],
+  [/\be[\s-]*atx\b/gi, ' ff_atx '],
+  [/\batx\b/gi, ' ff_atx '],
   [/\bopen[\s-]*box\b/gi, ' openbox '],
   [/\breverse[\s-]*blade[sd]?\b/gi, ' reverseblade '],
   [/\b(?:factory|manufacturer)[\s-]*recertified\b/gi, ' refurbished '],
@@ -169,13 +335,40 @@ const PHRASE_MARKERS = [
   [/\bgrade\s+[abc]\b/gi, ' refurbished '],
 ];
 
+// FORM FACTOR IS DELIBERATELY ABSENT (atx / matx / itx / eatx — folded to ff_*
+// above and matched by nothing here, so they are inert).
+//
+// The marker check is symmetric: a marker on either side that the other lacks
+// rejects. That is correct for tier words, because "AIR 903" and "AIR 903 MAX"
+// really are different products. It was catastrophic for form factor, because
+// Newegg spells the form factor out in EVERY title and our catalog titles
+// usually do not — so "MSI MAG X870 Tomahawk WiFi" lost to "MSI MAG X870
+// TOMAHAWK WIFI Motherboard, ATX - ..." on theirs-only=[atx]. Same board.
+//
+// Nothing is given up by dropping them. Where form factor genuinely marks a
+// different product it is already carried by the MODEL NUMBER, which the
+// model-token check gates hard: B650 vs B650M, H610M vs H610. Form factor was
+// never the discriminator — it was the spec text sitting next to it.
+//
+// Measured on dry run 2026-07-20: 83 of 267 theirs-only marker rejections were
+// driven by [atx] alone; the fold+demote clears 38 products that had ZERO
+// surviving candidates. Colors stay markers on purpose — see below.
 const VARIANT_MARKERS = new Set([
   // model tier
   'max', 'pro', 'plus', 'se', 'ti', 'super', 'xt', 'xtx', 'elite', 'lite',
   'mini', 'micro', 'ultra', 'extreme', 'premium', 'advanced', 'flow',
-  'rgb', 'argb', 'itx', 'matx', 'atx', 'ii', 'iii', 'iv', 'v2', 'v3',
+  'rgb', 'argb', 'ii', 'iii', 'iv', 'v2', 'v3',
   'xl', 'xxl', 'compact', 'slim',
-  // color-as-model — Newegg sells White/Black as separate SKUs
+  // color-as-model — Newegg sells White/Black as separate SKUs.
+  //
+  // These STAY, and stay symmetric, even though ablating them would clear 68
+  // more products than the form-factor fix does. That number is a trap: when
+  // our title is silent on color ("Fractal Design North") and Newegg offers
+  // Chalk White and Charcoal Black as distinct SKUs at distinct prices, there
+  // is no evidence in hand for choosing one. Tolerating the asymmetry does not
+  // recover the right listing, it picks an arbitrary one — the wrong-product
+  // failure this guard exists to prevent. Colorless titles need a color on OUR
+  // side to be matchable; that is a catalog fix, not a matcher fix.
   'white', 'black', 'silver', 'pink', 'snow', 'grey', 'gray',
   // finish-as-model — Noctua ships NH-D15 and NH-D15 chromax.black as distinct SKUs
   'chromax',
@@ -229,6 +422,216 @@ function modelTokens(name) {
   return out;
 }
 
+// CONDITION is not identity — and it is the one thing a UPC cannot tell you.
+//
+// An Open Box unit carries the manufacturer's UPC, identical to new stock,
+// because it IS the same manufactured item. scoreMatch() treats UPC equality as
+// strong evidence and returns before the variant guard runs, which is correct
+// for model/tier confusion (a UPC match on a truncated title should not be
+// thrown out over a missing word) and exactly wrong here: the guard identifies
+// these perfectly (theirs-only=[openbox]) and never gets to speak.
+//
+// Result, measured on the 2026-07-20 dry run: 20 accepted attachments were Open
+// Box SKUs, every one of them method='upc'. Nine were already in the pre-fix
+// baseline, so this predates the query cascade — wider coverage only surfaced
+// more of it. A buyer clicking through sees a used unit at the price we quoted
+// for a new one.
+//
+// 'oem' is deliberately NOT here. It usually carries its own UPC, so it does not
+// reach this path, and it is ambiguous enough on the name side that gating the
+// UPC path on it would cost real matches. It stays in VARIANT_MARKERS, where the
+// name path still catches it.
+const CONDITION_MARKERS = new Set(['openbox', 'refurbished', 'renewed', 'used']);
+
+/**
+ * True when the two names describe the same item in a DIFFERENT CONDITION.
+ * Checked even when the UPCs match, because condition never changes the UPC.
+ * @returns {false|{reason:string, detail:string}}
+ */
+export function conditionMismatch(ourName, theirName) {
+  const ourM = markerSet(ourName), theirM = markerSet(theirName);
+  const onlyOurs = [...ourM].filter((w) => CONDITION_MARKERS.has(w) && !theirM.has(w));
+  const onlyTheirs = [...theirM].filter((w) => CONDITION_MARKERS.has(w) && !ourM.has(w));
+  if (onlyOurs.length || onlyTheirs.length) {
+    return {
+      reason: 'condition',
+      detail: `ours-only=[${onlyOurs.join(',')}] theirs-only=[${onlyTheirs.join(',')}]`,
+    };
+  }
+  return false;
+}
+
+// A single trailing letter can be the WHOLE product distinction: ASUS ships
+// B650E-E, B650E-F and B650E-I as three different boards. modelTokens() cannot
+// see it — prepare() turns "b650e-e" into "b650e e", and the lone "e" carries no
+// digit, so it is dropped as noise. The 2026-07-20 run attached our B650E-E to a
+// B650E-I listing at score 0.895 for exactly this reason.
+//
+// Measured: 131 catalog products carry such a suffix, 115 of them motherboards;
+// of the 53 that currently attach, 50 agree, 1 conflicts, 2 cannot be judged.
+//
+// DELIBERATELY CONFLICT-ONLY, not asymmetric like modelTokens. Rejecting when
+// their title merely omits the suffix would break the 2 "cannot judge" cases and
+// every legitimately-truncated Newegg title. We reject only when both sides name
+// a suffix for the SAME base model and the letters disagree — which is not an
+// absence of evidence, it is evidence of difference.
+const MODEL_SUFFIX_RE = /\b([a-z]{1,3}\d{3,4}[a-z]{0,2})-([a-z])\b/gi;
+function modelSuffixes(name) {
+  const out = new Map();
+  const re = new RegExp(MODEL_SUFFIX_RE.source, 'gi');
+  let m;
+  while ((m = re.exec(String(name || ''))) !== null) out.set(m[1].toLowerCase(), m[2].toLowerCase());
+  return out;
+}
+// FORM FACTOR: conflict-only, which is the shape I should have used the first
+// time. Demoting it to inert was half right and half a regression.
+//
+// Right half: Newegg spells the form factor out in every title and our titles
+// usually do not, so a SYMMETRIC marker check rejected correct matches on
+// theirs-only=[atx] alone — 83 of 267 such rejections, 38 products with no
+// surviving candidate.
+//
+// Wrong half: I justified dropping it entirely by claiming the model number
+// already carries the distinction. It does not, because modelTokens() is
+// ASYMMETRIC — it only requires OUR tokens to appear in THEIRS. For product
+// 20171 ours is "B650 … ATX" and theirs is "B650M … micro ATX"; theirs contains
+// both "b650m" AND "b650" (from "AMD B650"), so ours is a strict subset and the
+// check passes. nameSimilarity then returns 1.000 by containment, and we bind an
+// mATX board to an ATX product. The 2026-07-21 run did exactly that.
+//
+// Conflict-only gets both: silence on one side proves nothing, but two
+// DIFFERENT form factors is positive evidence of two different products.
+// Disjointness, not inequality — Newegg writes "ATX mATX" for cases that accept
+// both boards, and that must still intersect our plain "ATX".
+const FORM_FACTOR_TOKENS = new Set(['ff_itx', 'ff_matx', 'ff_atx']);
+function formFactors(name) {
+  const out = new Set();
+  for (const w of prepare(name).replace(/[^\w\s]/g, ' ').split(/\s+/)) {
+    if (FORM_FACTOR_TOKENS.has(w)) out.add(w);
+  }
+  return out;
+}
+export function formFactorConflict(ourName, theirName) {
+  const ours = formFactors(ourName), theirs = formFactors(theirName);
+  if (!ours.size || !theirs.size) return false; // one side silent — proves nothing
+  for (const f of ours) if (theirs.has(f)) return false; // any overlap is agreement
+  return {
+    reason: 'form_factor',
+    detail: `ours=[${[...ours].join(',')}] theirs=[${[...theirs].join(',')}]`,
+  };
+}
+
+export function modelSuffixConflict(ourName, theirName) {
+  const ours = modelSuffixes(ourName), theirs = modelSuffixes(theirName);
+  for (const [base, letter] of ours) {
+    if (theirs.has(base) && theirs.get(base) !== letter) {
+      return { reason: 'model_suffix', detail: `${base}-${letter} vs ${base}-${theirs.get(base)}` };
+    }
+  }
+  return false;
+}
+
+// ── Brand presence ───────────────────────────────────────────────────────────
+//
+// nameSimilarity compares NAMES ONLY. When our catalog title carries no brand
+// (the brand lives in a separate `b` field, or is spec-only — "32GB DDR4 3200
+// CL22 SODIMM"), a DIFFERENT manufacturer's identical-spec product matches at
+// name-score 1.0 on pure commodity tokens. The 2026-07-22 live ingest bound a
+// Micron ECC RDIMM to a NEMIX module, a Samsung SODIMM to an A-Tech, and a
+// Crucial P310 to a Kingston KC600 — all name=1.0, all wrong. It bites only
+// sparse, brand-less, spec-defined names, which is why it clusters in RAM/
+// Storage. UPC matches are immune (barcode is authoritative) and never reach
+// this check.
+//
+// Corporate equivalents that are the SAME maker under different labels. Kept
+// tight on purpose: this list rescues correct matches (WD listed as "Western
+// Digital"), so a wrong entry here would RE-ADMIT a bad match. Crucial/Micron
+// are the same company; SanDisk is WD's flash brand.
+const BRAND_ALIASES = [
+  ['wd', 'western digital', 'sandisk', 'wd_black', 'wdblack', 'wd black'],
+  ['silicon power', 'siliconpower'],
+  ['crucial', 'micron'],
+  ['g skill', 'gskill', 'g.skill'],
+  ['team', 'teamgroup', 'team group'],
+];
+function brandForms(token) {
+  const t = token.toLowerCase().replace(/[^a-z0-9 ]/g, '');
+  for (const group of BRAND_ALIASES) {
+    if (group.some((g) => g.replace(/[^a-z0-9 ]/g, '') === t)) {
+      return group.map((g) => g.replace(/[^a-z0-9 ]/g, ''));
+    }
+  }
+  return [t];
+}
+// Our product's identifying brand tokens: the `b` field AND the first word of
+// the name, because `b` is sometimes MISLABELLED (an OWC part tagged "Crucial").
+// Either identifying the true maker is enough — the check passes if any form of
+// any of them appears in the candidate.
+// The first name-token is only a usable brand when it is NOT itself spec text.
+// "SODIMM 16GB …" leads with a form factor, not a maker; treating it as a brand
+// let an A-Tech module keep a Samsung product because both say "SODIMM".
+const SPECY_FIRST = /^\d|^(the|a|for|with|internal|external|gaming|desktop|laptop|notebook|ddr\d|pc\d|sodimm|dimm|udimm|rdimm|nvme|ssd|hdd|ram|sata|pcie|nand|kit|module|memory|solid|drive|m\.?2|micro|mini)$/i;
+function ourBrandForms(product) {
+  const out = new Set();
+  const add = (tok) => { if (tok) brandForms(tok).forEach((f) => out.add(f)); };
+  if (product.b) add(String(product.b));
+  const first = String(product.n || '').trim().split(/[\s,()|/-]+/)[0] || '';
+  if (first.length >= 2 && !SPECY_FIRST.test(first)) add(first);
+  return [...out].filter((f) => f.length >= 2);
+}
+// Spec / descriptor vocabulary that carries NO product identity. A match that
+// rests only on these tokens is a match on commodity attributes, not on the
+// product. Anything NOT in here (and long enough, non-unit) is "distinctive" —
+// a model line ("lancool", "sn850x"), a part number, a brand.
+const SPEC_STOP = new Set([
+  'ddr', 'ddr3', 'ddr4', 'ddr5', 'ecc', 'rdimm', 'udimm', 'dimm', 'sodimm', 'unbuffered',
+  'nvme', 'ssd', 'hdd', 'sata', 'pcie', 'nand', 'ram', 'memory', 'internal', 'external',
+  'solid', 'state', 'drive', 'cache', 'laptop', 'notebook', 'desktop', 'module', 'kit',
+  'gaming', 'computer', 'tower', 'chassis', 'case', 'mesh', 'airflow', 'tempered', 'glass',
+  'performance', 'mid', 'full', 'mini', 'micro', 'compact', 'atx', 'matx', 'itx', 'eatx',
+  'power', 'supply', 'modular', 'cooler', 'fan', 'rgb', 'argb', 'black', 'white', 'series',
+  'gen', 'high', 'speed', 'low', 'profile', 'dual', 'single', 'triple', 'rank', 'registered',
+  'mhz', 'gbps', 'rpm', 'inch', 'class', 'plus', 'pro', 'max', 'boost', 'ready', 'edition',
+]);
+function distinctiveTokens(name) {
+  const out = new Set();
+  for (const w of String(name || '').toLowerCase().replace(/[^a-z0-9]/g, ' ').split(/\s+/)) {
+    if (w.length < 4) continue;          // too short to identify (cl22, 2280 slip through as noise anyway)
+    if (UNIT_TOKEN.test(w)) continue;    // 32gb, 5600mhz, 3200
+    if (SPEC_STOP.has(w)) continue;
+    out.add(w);
+  }
+  return out;
+}
+
+/**
+ * True when a name match rests ONLY on commodity spec — our brand is
+ * identifiable, absent from the candidate, AND the two names share no
+ * distinctive (non-spec) identifier. Truncation is safe: a candidate that omits
+ * the brand but still shares the MODEL ("Lancool II" ↔ "Lancool II Chassis") is
+ * kept; only a different maker sharing nothing but "32GB DDR5 ECC" is dropped.
+ * Returns false (can't judge → don't gate) when we have no reliable brand token.
+ */
+export function brandMismatch(ourProduct, candidateName) {
+  const forms = ourBrandForms(ourProduct);
+  if (!forms.length) return false;
+  const hay = ' ' + String(candidateName || '').toLowerCase().replace(/[^a-z0-9]/g, '') + ' ';
+  const hayWords = ' ' + String(candidateName || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ') + ' ';
+  for (const f of forms) {
+    // Multi-word forms ("western digital") match on the word-normalized string;
+    // single tokens match as a substring so "wd" catches "wd8005ffbx".
+    if (f.includes(' ') ? hayWords.includes(' ' + f + ' ') || hayWords.includes(f) : hay.includes(f)) {
+      return false; // brand (or a corporate alias) is present — fine
+    }
+  }
+  // Brand absent. Only a mismatch if there is ALSO no shared distinctive token —
+  // otherwise the candidate is a brand-truncated title of the same product.
+  const ourD = distinctiveTokens(ourProduct.n);
+  const theirD = distinctiveTokens(candidateName);
+  for (const t of ourD) if (theirD.has(t)) return false;
+  return { reason: 'brand', detail: `ours=[${forms.join('|')}] absent, no shared model token` };
+}
+
 /**
  * True when the two names describe DIFFERENT variants of the same base product.
  * @returns {false|{reason:string, detail:string}}
@@ -248,7 +651,22 @@ export function variantMismatch(ourName, theirName) {
   if (missing.length) {
     return { reason: 'model_token', detail: `missing=[${missing.join(',')}]` };
   }
-  return false;
+  // Last, because these are the narrowest: both sides must name the thing
+  // before either can say anything at all.
+  return modelSuffixConflict(ourName, theirName)
+    || formFactorConflict(ourName, theirName);
+}
+
+// Classify a notes.reject code into the bucket a caller should count it under.
+// Prefix-based on purpose: adding a gate should not require touching every
+// caller's tally, and a miscategorised guard reject would corrupt either the
+// deletion clock ('variant') or the dry-run's variant numbers.
+export function rejectKind(code) {
+  if (!code) return null;
+  if (code.startsWith('variant_')) return 'variant';
+  if (code.startsWith('guard_')) return 'guard';
+  if (code === 'below_attach_floor') return 'floor';
+  return 'other';
 }
 
 // `notes` is an optional out-param: on a variant-guard rejection it receives
@@ -260,12 +678,32 @@ export function variantMismatch(ourName, theirName) {
 // than repricing does — ingest passes MIN_ATTACH_SIM. Defaults to MIN_NAME_SIM
 // so every existing caller keeps its current behavior.
 export function scoreMatch(ourProduct, neweggItem, notes, opts) {
-  if (ourProduct.pr && neweggItem.price && neweggItem.price > ourProduct.pr * MAX_PRICE_MULTIPLIER) return null;
-  if (/\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gaming Desktop|Bundle|Combo)\b/i.test(neweggItem.name)) return null;
+  // Every gate below now STAMPS notes.reject. They used to return null in
+  // silence, so their rejects were indistinguishable from "the feed had nothing
+  // like our product" and were reported as no_match — the capacity guard in
+  // particular could reject any number of candidates and show up as zero.
+  // Callers classify by PREFIX (see REJECT_KIND); a guard reject must never be
+  // counted as a variant reject, because variantRejects gates the deletion
+  // clock in searchNewegg and inflating it would quietly suppress removals.
+  const set = (r) => { if (notes) notes.reject = r; return null; };
+  if (ourProduct.pr && neweggItem.price && neweggItem.price > ourProduct.pr * MAX_PRICE_MULTIPLIER) {
+    return set('guard_price_multiplier');
+  }
+  if (/\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gaming Desktop|Bundle|Combo)\b/i.test(neweggItem.name)) {
+    return set('guard_prebuilt_or_bundle');
+  }
   const storedCap = ourProduct.cap != null ? ourProduct.cap : parseCapacityGB(ourProduct.n);
-  if (!capacityCompatible(storedCap, parseCapacityGB(neweggItem.name))) return null;
+  if (!capacityCompatible(storedCap, parseCapacityGB(neweggItem.name))) {
+    return set('guard_capacity_mismatch');
+  }
   if (STORAGE_CATS.has(ourProduct.c) &&
-      !isPricePlausibleForCapacity(neweggItem.price, storedCap, { isHDD: isHardDrive(ourProduct) })) return null;
+      !isPricePlausibleForCapacity(neweggItem.price, storedCap, { isHDD: isHardDrive(ourProduct) })) {
+    return set('guard_capacity_price_implausible');
+  }
+  // BEFORE the UPC shortcut, not after: an Open Box unit shares the new unit's
+  // UPC, so this is the one check UPC equality cannot stand in for.
+  const cond = conditionMismatch(ourProduct.n, neweggItem.name);
+  if (cond) return set('variant_condition');
   const ourUpcN = normalizeUpc(ourProduct.upc || ourProduct.UPC);
   const newUpcN = normalizeUpc(neweggItem.upc);
   if (ourUpcN && newUpcN && ourUpcN === newUpcN) return { method: 'upc', score: 1.0 };
@@ -282,6 +720,11 @@ export function scoreMatch(ourProduct, neweggItem, notes, opts) {
     if (notes) notes.reject = `variant_${vm.reason}`;
     return null;
   }
+  // Brand gate — LAST, and name-path only (UPC returned above). A high name
+  // score on commodity spec tokens is not evidence of the same PRODUCT when the
+  // makers differ; require our brand to actually appear in the candidate.
+  const bm = brandMismatch(ourProduct, neweggItem.name);
+  if (bm) return set('variant_brand');
   return { method: 'name', score: sim };
 }
 
@@ -325,11 +768,8 @@ export function selectWithFirstPartyPreference(scored) {
 export async function searchNewegg(product, { token, mid, fetchImpl = fetch }) {
   const catFilter = CAT_FILTER[product.c];
   if (!catFilter) return { ok: false, reason: 'no_cat_mapping', candidates: [], rawCount: 0, httpErrors: 0, queriesTried: 0 };
-  const keywords = extractKeywords(product.n, product.b);
-  const queries = [
-    { exact: keywords, cat: catFilter, mid, max: '20' },
-    { keyword: keywords, cat: catFilter, mid, max: '20' },
-  ];
+  const queries = buildQueries(product.n, product.b, { broaden: !NO_BROADEN_CATS.has(product.c) })
+    .map((q) => ({ [q.mode]: q.q, cat: catFilter, mid, max: '20' }));
   let items = [];
   let httpErrors = 0;
   let queriesTried = 0;
@@ -347,16 +787,21 @@ export async function searchNewegg(product, { token, mid, fetchImpl = fetch }) {
     items = parseItems(await res.text());
     if (items.length > 0) break;
   }
-  const base = { rawCount: items.length, httpErrors, queriesTried, variantRejects: 0 };
+  const base = { rawCount: items.length, httpErrors, queriesTried, variantRejects: 0, guardRejects: 0 };
   // Every query we issued errored — we learned nothing about this product.
   if (httpErrors === queriesTried) return { ok: false, reason: 'http_error', candidates: [], ...base };
   if (!items.length) return { ok: false, reason: 'no_results', candidates: [], ...base };
 
   let variantRejects = 0;
+  let guardRejects = 0;
   const scored = items.map((it) => {
     const notes = {};
     const match = scoreMatch(product, it, notes);
-    if (!match && notes.reject) variantRejects++;
+    if (!match) {
+      const kind = rejectKind(notes.reject);
+      if (kind === 'variant') variantRejects++;
+      else if (kind === 'guard') guardRejects++;
+    }
     return { item: it, match };
   }).filter((x) => x.match);
 
@@ -371,13 +816,17 @@ export async function searchNewegg(product, { token, mid, fetchImpl = fetch }) {
     // opposite of absence. Reporting both as 'no_match' would let a stricter
     // guard quietly widen the deletion path, which is the same over-inference
     // that destroyed 1,655 deals on 2026-07-06.
+    // A guard reject is ALSO evidence of presence, not absence: the capacity
+    // gate only fires on a candidate that got far enough to have a capacity
+    // compared. Ranked below variant so an explicit variant rejection still
+    // reads as one, but either must keep the deletion clock from starting.
     return {
       ok: false,
-      reason: variantRejects ? 'variant_rejected' : 'no_match',
-      candidates: [], ...base, variantRejects,
+      reason: variantRejects ? 'variant_rejected' : guardRejects ? 'guard_rejected' : 'no_match',
+      candidates: [], ...base, variantRejects, guardRejects,
     };
   }
-  return { ok: true, candidates: scored, ...base, variantRejects };
+  return { ok: true, candidates: scored, ...base, variantRejects, guardRejects };
 }
 
 // ── Cross-retailer sanity gate for a candidate Newegg price (peers: amazon, bestbuy)
