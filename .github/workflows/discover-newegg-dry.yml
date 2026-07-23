@@ -12,6 +12,8 @@ on:
     paths:
       - '.github/workflows/discover-newegg-dry.yml'
       - 'discover-newegg-dry.cjs'
+      - 'catalog-classify.cjs'
+      - 'newegg-match.js'
   workflow_dispatch:
     inputs:
       category:
