@@ -18,6 +18,10 @@ on:
       - 'sftp-ingest.cjs'
   workflow_dispatch:
     inputs:
+      measure_first:
+        description: "Stream + parse the first N feed records (early-abort)"
+        type: string
+        default: "300000"
       sample_per_cat:
         description: "Exclusive records to sample per category"
         type: string
@@ -28,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-    timeout-minutes: 60
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -39,15 +43,17 @@ jobs:
       # Deliberately NO manifest cache restore: measurement needs a fresh full
       # download so records are actually parsed (a warm manifest would skip
       # unchanged files and parse nothing).
-      - name: Run SFTP measurement (dry-run, Newegg only)
+      # Streaming early-abort: the full 226MB feed does not download inside the
+      # job budget, so we stream it through gunzip and parse the first N records.
+      - name: Run SFTP streaming measurement (read-only)
         env:
           RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
           NODE_OPTIONS: "--max-old-space-size=6144"
         run: |
-          SAMPLE="${{ inputs.sample_per_cat }}"
-          if [ -z "$SAMPLE" ]; then SAMPLE=150; fi
-          echo "Running: node sftp-ingest.cjs --dry-run --merchant=44583 --sample-exclusives=$SAMPLE"
-          node sftp-ingest.cjs --dry-run --merchant=44583 --sample-exclusives=$SAMPLE
+          N="${{ inputs.measure_first }}"; if [ -z "$N" ]; then N=300000; fi
+          SAMPLE="${{ inputs.sample_per_cat }}"; if [ -z "$SAMPLE" ]; then SAMPLE=150; fi
+          echo "Running: node sftp-ingest.cjs --measure-first=$N --sample-exclusives=$SAMPLE"
+          node sftp-ingest.cjs --measure-first=$N --sample-exclusives=$SAMPLE
       - name: Assert nothing was written to the catalog
         if: always()
         run: |

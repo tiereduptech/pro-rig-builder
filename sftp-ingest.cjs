@@ -59,6 +59,13 @@ const SAMPLE_PER_CAT = parseInt((process.argv.find(a => a.startsWith('--sample-e
 const SAMPLE_PATH = path.join(ROOT, 'catalog-build', 'newegg-exclusives-sample.json');
 // { ourCategory -> [records] }, capped at SAMPLE_PER_CAT each; dry-run only.
 const exclusiveSample = {};
+// Phase 2.0 STREAMING MEASUREMENT (read-only). The full Newegg feed is ~226MB
+// gz and does not finish downloading inside the 60-min CI budget (fastGet at
+// <64KB/s). This mode streams the feed through gunzip, parses the FIRST N data
+// records inline, tallies per-category records/matched/exclusives + a field
+// sample, then ABORTS the stream — no full download, no catalog write. Numbers
+// are a leading-N sample; per-category totals are extrapolated, not exact.
+const MEASURE_FIRST = parseInt((process.argv.find(a => a.startsWith('--measure-first=')) || '').split('=')[1] || '0', 10) || 0;
 
 function ensureDir(p) { if (!fs.existsSync(p)) fs.mkdirSync(p, { recursive: true }); }
 ensureDir(FEED_DIR);
@@ -423,10 +430,133 @@ function writeParts(parts) {
   fs.writeFileSync(PARTS_PATH, header + body, 'utf8');
 }
 
+// â”€â”€â”€ PHASE 2.0: STREAMING MEASUREMENT (read-only, early-abort) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Streams the Newegg product-catalog feed through gunzip, parses the first N
+// data records, and aborts — bypassing the 226MB full download that overruns
+// the CI budget. Writes ONLY the measurement summary + sample, never parts.js.
+async function measureStreamFirst(n) {
+  if (!FTP_PASS) throw new Error('RAKUTEN_FTP_PASSWORD env var required');
+  log(`â”â”â” PHASE 2.0: STREAMING MEASUREMENT (first ${n} records) â”â”â”`);
+  log('Loading catalog for dedupe index...');
+  const partsModule = await import('file://' + PARTS_PATH.replace(/\\/g, '/') + '?t=' + Date.now());
+  const parts = partsModule.PARTS;
+  const idx = buildCatalogIndex(parts);
+  log(`Loaded ${parts.length} products; index ${idx.byUPC.size} UPC / ${idx.byMPN.size} MPN / ${idx.bySKU.size} SKU`);
+
+  const sftp = new SftpClient();
+  const byCategory = {};
+  const bump = (cat, key) => {
+    const c = cat || '(unclassified)';
+    byCategory[c] = byCategory[c] || { records: 0, matched: 0, exclusives: 0, priced: 0 };
+    byCategory[c][key]++;
+  };
+  // Field-presence tally, per our-category, over ALL sampled records (not just
+  // exclusives) so coverage reflects the feed itself.
+  const fieldCov = {};
+  const FIELDS = ['product_name', 'manufacturer', 'brand2', 'primary_category', 'upc', 'mpn', 'retail_price', 'sale_price', 'image_url', 'product_url', 'short_description', 'attr_1'];
+  const covBump = (cat, rec) => {
+    const c = cat || '(unclassified)';
+    fieldCov[c] = fieldCov[c] || { n: 0 };
+    fieldCov[c].n++;
+    for (const f of FIELDS) { if (String(rec[f] || '').trim()) fieldCov[c][f] = (fieldCov[c][f] || 0) + 1; }
+  };
+
+  let dataRecords = 0, deletedOrOOS = 0;
+  try {
+    await sftp.connect({ host: FTP_HOST, port: 22, username: FTP_USER, password: FTP_PASS });
+    log(`Connected to ${FTP_HOST} as ${FTP_USER}`);
+    // Locate the Newegg full product-catalog file (not delta/template) at the root.
+    const rootEntries = await sftp.list('/');
+    const target = rootEntries.find((e) => e.type === '-'
+      && /^44583_\d+_mp\.txt\.gz$/i.test(e.name));
+    if (!target) throw new Error('Newegg _mp.txt.gz not found at SFTP root: ' + rootEntries.filter(e => e.type === '-').map(e => e.name).slice(0, 20).join(', '));
+    const remotePath = '/' + target.name;
+    log(`Streaming ${target.name} (${(target.size / 1024 / 1024).toFixed(1)}MB) — reading first ${n} records`);
+
+    const gunzip = zlib.createGunzip();
+    const readStream = sftp.createReadStream(remotePath);
+    readStream.pipe(gunzip);
+    const rl = readline.createInterface({ input: gunzip, crlfDelay: Infinity });
+
+    await new Promise((resolve, reject) => {
+      let done = false;
+      const finish = () => { if (done) return; done = true; try { rl.close(); } catch {} try { readStream.destroy(); } catch {} resolve(); };
+      readStream.on('error', (e) => { if (!done) { done = true; reject(e); } });
+      gunzip.on('error', (e) => { if (!done) { done = true; reject(e); } });
+      rl.on('line', (line) => {
+        if (done || !line) return;
+        if (line.startsWith('HDR|') || line.startsWith('TRL|')) return;
+        const fields = line.split('|');
+        const rec = {};
+        for (let i = 0; i < DEFAULT_FIELD_ORDER.length; i++) rec[DEFAULT_FIELD_ORDER[i]] = (fields[i] || '').trim();
+        dataRecords++;
+        if (/^(1|true|yes|deleted)$/i.test(rec.is_deleted || '') || /out-of-stock|unavailable|no/i.test(rec.availability || '')) {
+          deletedOrOOS++;
+        } else {
+          const recCat = classifyCategory(rec);
+          bump(recCat, 'records');
+          covBump(recCat, rec);
+          const match = matchRecord(rec, idx);
+          if (match && match.part) {
+            bump(recCat, 'matched');
+          } else {
+            const pricing = priceFromRecord(rec);
+            if (pricing && pricing.price > 0) {
+              bump(recCat, 'exclusives');
+              if (SAMPLE_PER_CAT > 0) {
+                const sc = recCat || '(unclassified)';
+                exclusiveSample[sc] = exclusiveSample[sc] || [];
+                if (exclusiveSample[sc].length < SAMPLE_PER_CAT) {
+                  exclusiveSample[sc].push({
+                    sku: rec.sku, newegg_item_number: rec.newegg_item_number,
+                    sellerClass: NEG.sellerClass(rec.newegg_item_number || rec.sku),
+                    name: rec.product_name, manufacturer: rec.manufacturer, brand2: rec.brand2,
+                    primary_category: rec.primary_category, ourCategory: recCat,
+                    upc: rec.upc, mpn: rec.mpn, retail_price: rec.retail_price, sale_price: rec.sale_price,
+                    availability: rec.availability, image_url: rec.image_url, product_url: rec.product_url,
+                    attrs: [rec.attr_1, rec.attr_2, rec.attr_3, rec.attr_4, rec.attr_5].filter(Boolean),
+                    short_description: (rec.short_description || '').slice(0, 200),
+                  });
+                }
+              }
+            }
+          }
+        }
+        if (dataRecords % 25000 === 0) log(`  …${dataRecords} records parsed`);
+        if (dataRecords >= n) finish();
+      });
+      rl.on('close', finish);
+    });
+  } finally {
+    try { await sftp.end(); } catch {}
+  }
+
+  ensureDir(path.dirname(SAMPLE_PATH));
+  const out = {
+    generatedAt: new Date().toISOString(), mode: 'measure-first', requested: n,
+    dataRecordsParsed: dataRecords, skippedDeletedOrOOS: deletedOrOOS,
+    byCategory, fieldCoverage: fieldCov,
+    exclusiveSampleCap: SAMPLE_PER_CAT, sample: exclusiveSample,
+  };
+  fs.writeFileSync(SAMPLE_PATH, JSON.stringify(out, null, 2));
+  fs.writeFileSync(SUMMARY_PATH, JSON.stringify({ measureFirst: out.byCategory, dataRecordsParsed: dataRecords }, null, 2));
+
+  log(`\nParsed ${dataRecords} data records (${deletedOrOOS} deleted/OOS skipped).`);
+  log('Per-category (records / matched-to-existing / NEW exclusives) in this leading sample:');
+  for (const [cat, c] of Object.entries(byCategory).sort((a, b) => b[1].records - a[1].records)) {
+    log(`  ${cat.padEnd(16)} records ${String(c.records).padStart(6)}  matched ${String(c.matched).padStart(5)}  exclusive ${String(c.exclusives).padStart(6)}`);
+  }
+  log(`\nWrote ${path.relative(ROOT, SAMPLE_PATH)} and ${path.relative(ROOT, SUMMARY_PATH)}`);
+}
+
 // â”€â”€â”€ MAIN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 (async () => {
   CAP = await import('file://' + process.cwd().replace(/\\/g, '/') + '/normalize-product-name.js');
   NEG = await import('file://' + process.cwd().replace(/\\/g, '/') + '/newegg-match.js');
+
+  // Phase 2.0 streaming measurement short-circuits the normal download/parse/apply
+  // flow entirely. Read-only: writes only the measurement summary + sample.
+  if (MEASURE_FIRST > 0) { await measureStreamFirst(MEASURE_FIRST); return; }
 
   const summary = {
     startedAt: new Date().toISOString(),
