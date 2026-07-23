@@ -234,16 +234,44 @@ function extractSpecs(title, category) {
     else if (/semi.?modular/i.test(t)) specs.modular = 'Semi';
     if (/atx\s*3\.[01]/i.test(t)) specs.atx3 = true;
   } else if (category === 'RAM') {
-    const speed = t.match(/(\d{4})\s*(MHz|MT)/i);
-    if (speed) specs.speed = parseInt(speed[1]);
-    const cap = t.match(/(\d+)\s*GB\s*\(/i) || t.match(/(\d+)\s*GB\s+kit/i);
+    // RAM titles come in two dialects. Amazon (curated) writes the specs
+    // adjacently and uniformly: "Corsair Vengeance DDR5 32GB (2x16GB) 6000MHz
+    // CL30". Newegg (raw feed) scatters them and omits the "MHz" suffix:
+    // "Kingston FURY Beast 64GB (2 x 32GB) 288-Pin PC RAM DDR5 5200 (PC5 41600)"
+    // or "64GB 5200MT/s DDR5 CL40". The old patterns only understood the Amazon
+    // dialect (speed required a 4-digit+MHz/MT pair; cap required a trailing "(")
+    // and so failed 594 of 628 real Newegg RAM listings — and also missed Amazon
+    // ECC modules ("32GB ECC 4800MHz", no parenthesis). Each field below tries
+    // the precise Amazon form first, then the looser Newegg forms.
+
+    // memType — DDR generation, or inferred from the PCn marketing class.
+    const ddr = t.match(/\bddr([2345])\b/i) || t.match(/\bpc([2345])[- ]?\d/i);
+    if (ddr) specs.memType = 'DDR' + ddr[1];
+
+    // capacity — the kit TOTAL, which both dialects state as the first "<n>GB"
+    // ("64GB (2 x 32GB)", "32GB (2x16GB)", "32GB ECC"). No longer requires a
+    // trailing "(", so bare "64GB 5200MT/s" and ECC modules now parse.
+    const cap = t.match(/(\d+)\s*GB\b/i);
     if (cap) specs.cap = parseInt(cap[1]);
-    const sticks = t.match(/\((\d+)\s*x\s*\d+gb\)/i);
+
+    // stick count — "(2 x 16GB)" / "(2x16GB)", or Newegg's reversed "(16GBx4)".
+    const sticks = t.match(/\((\d+)\s*x\s*\d+\s*gb\)/i);
     if (sticks) specs.sticks = parseInt(sticks[1]);
+    else { const rev = t.match(/\(\d+\s*gb\s*x\s*(\d+)\)/i); if (rev) specs.sticks = parseInt(rev[1]); }
+
+    // speed in MT/s (the number DDR marketing prints as "MHz"). Priority:
+    //   1. explicit "6000MHz" / "5200MT/s" / "800 MHz"  (3-5 digits)
+    //   2. the bare "DDR5 5200" form Newegg uses (number right after the DDR gen)
+    //   3. the PCn-NNNNN rating, where data rate = PC number / 8
+    //      (PC5-41600 -> 5200, PC4-25600 -> 3200, PC3-6400 -> 800)
+    let sp = t.match(/(\d{3,5})\s*(?:MHz|MT\/?s)\b/i);
+    if (sp) specs.speed = parseInt(sp[1]);
+    if (specs.speed == null && (sp = t.match(/\bddr[2345]\s*-?\s*(\d{4,5})\b/i))) specs.speed = parseInt(sp[1]);
+    if (specs.speed == null && (sp = t.match(/\bpc[2345][- ]?(\d{4,5})\b/i))) specs.speed = Math.round(parseInt(sp[1]) / 8);
+
+    // CAS latency
     const cl = t.match(/\bCL\s?(\d+)/i);
     if (cl) specs.cl = parseInt(cl[1]);
-    if (/ddr5/i.test(t)) specs.memType = 'DDR5';
-    else if (/ddr4/i.test(t)) specs.memType = 'DDR4';
   } else if (category === 'Storage') {
     const cap = t.match(/(\d+)\s*(TB|GB)/i);
     if (cap) {
