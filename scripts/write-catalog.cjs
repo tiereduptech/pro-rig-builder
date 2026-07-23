@@ -164,16 +164,18 @@ async function countFromChunks(chunkNames) {
  * @param {boolean} opts.dryRun     if true, writes nothing and returns null
  * @param {number} opts.maxGrowth   override the default growth ceiling (0.15);
  *                                  a deliberate multi-category sweep raises this
+ * @param {number} opts.maxShrink   override the default shrink floor (0.05); a
+ *                                  deliberate rollback of a large batch raises this
  * @returns {Promise<{count:number, chunks:number, backup:string}|null>}
  */
-async function writeCatalog(parts, { loadedCount, reason = 'catalog write', dryRun = false, maxGrowth = MAX_GROWTH } = {}) {
+async function writeCatalog(parts, { loadedCount, reason = 'catalog write', dryRun = false, maxGrowth = MAX_GROWTH, maxShrink = MAX_SHRINK } = {}) {
   // ── 1. Preflight ───────────────────────────────────────────────────────────
   if (!Array.isArray(parts)) throw new Error('writeCatalog: parts is not an array');
   if (parts.length === 0) throw new Error('writeCatalog: refusing to write an empty catalog');
 
   // Both directions: a cliff DOWN means the caller lost the array; a cliff UP
   // means a discovery bug flooded rows. Either is a bug, not an intent.
-  const bounds = checkSizeBounds(parts.length, loadedCount, { maxGrowth });
+  const bounds = checkSizeBounds(parts.length, loadedCount, { maxGrowth, maxShrink });
   if (!bounds.ok) throw new Error(`writeCatalog: ${bounds.reason}`);
 
   if (dryRun) {
