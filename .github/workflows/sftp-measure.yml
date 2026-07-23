@@ -1,0 +1,66 @@
+name: SFTP Measure (Phase 2.0, read-only)
+
+# Phase 2.0 MEASUREMENT ONLY. No write path by construction:
+#   sftp-ingest.cjs --dry-run never writes parts.js or the exclusives JSONL,
+#   `contents: read` makes that structural, and there is no commit step. It
+#   exists to size the Newegg catalog gap (per-category feed record / matched /
+#   NEW-exclusive counts) and capture a small field-coverage sample, without a
+#   live catalog write and without spending the Product Search quota.
+
+on:
+  # workflow_dispatch only fires from the default branch, so until this merges
+  # the branch-scoped push trigger is the only way to exercise it. Safe: the job
+  # is contents: read with no commit step and asserts nothing was written.
+  push:
+    branches: [fix/newegg-rematch]
+    paths:
+      - '.github/workflows/sftp-measure.yml'
+      - 'sftp-ingest.cjs'
+  workflow_dispatch:
+    inputs:
+      sample_per_cat:
+        description: "Exclusive records to sample per category"
+        type: string
+        default: "150"
+
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Install dependencies
+        run: npm ci
+      # Deliberately NO manifest cache restore: measurement needs a fresh full
+      # download so records are actually parsed (a warm manifest would skip
+      # unchanged files and parse nothing).
+      - name: Run SFTP measurement (dry-run, Newegg only)
+        env:
+          RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
+          NODE_OPTIONS: "--max-old-space-size=6144"
+        run: |
+          SAMPLE="${{ inputs.sample_per_cat }}"
+          if [ -z "$SAMPLE" ]; then SAMPLE=150; fi
+          echo "Running: node sftp-ingest.cjs --dry-run --merchant=44583 --sample-exclusives=$SAMPLE"
+          node sftp-ingest.cjs --dry-run --merchant=44583 --sample-exclusives=$SAMPLE
+      - name: Assert nothing was written to the catalog
+        if: always()
+        run: |
+          if ! git diff --quiet -- src/data/parts.js src/data/parts/; then
+            echo "::error::catalog was modified by a measurement run"; git diff --stat -- src/data/; exit 1
+          fi
+          echo "Clean: no catalog writes."
+      - name: Upload measurement report + exclusives sample
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sftp-measure
+          path: |
+            catalog-build/sftp-ingest-summary.json
+            catalog-build/newegg-exclusives-sample.json
+          if-no-files-found: warn

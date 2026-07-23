@@ -52,6 +52,13 @@ const DRY_RUN = args.has('--dry-run');
 const DOWNLOAD_ONLY = args.has('--download-only');
 const SKIP_DOWNLOAD = args.has('--skip-download');
 const ONLY_MERCHANT = (process.argv.find(a => a.startsWith('--merchant=')) || '').split('=')[1] || null;
+// Phase 2.0 MEASUREMENT ONLY (read-only). In --dry-run, collect up to N exclusive
+// records PER CATEGORY into a small sample file so per-category gap sizing and
+// field-coverage can be reviewed without a live catalog write. 0 = disabled.
+const SAMPLE_PER_CAT = parseInt((process.argv.find(a => a.startsWith('--sample-exclusives=')) || '').split('=')[1] || '0', 10) || 0;
+const SAMPLE_PATH = path.join(ROOT, 'catalog-build', 'newegg-exclusives-sample.json');
+// { ourCategory -> [records] }, capped at SAMPLE_PER_CAT each; dry-run only.
+const exclusiveSample = {};
 
 function ensureDir(p) { if (!fs.existsSync(p)) fs.mkdirSync(p, { recursive: true }); }
 ensureDir(FEED_DIR);
@@ -489,7 +496,14 @@ function writeParts(parts) {
   for (const dl of downloaded) {
     log(`\nâ”€â”€ Merchant ${dl.mid}: ${dl.fileName} â”€â”€`);
     
-    const ms = { matched: 0, updated: 0, exclusives: 0, byMethod: { upc: 0, mpn: 0, sku: 0, 'brand+name': 0, name: 0 } };
+    const ms = { matched: 0, updated: 0, exclusives: 0, byMethod: { upc: 0, mpn: 0, sku: 0, 'brand+name': 0, name: 0 },
+      // Phase 2.0 gap sizing: per-category feed record / match / exclusive counts.
+      byCategory: {} };
+    const bumpCat = (cat, key) => {
+      const c = cat || '(unclassified)';
+      ms.byCategory[c] = ms.byCategory[c] || { records: 0, matched: 0, exclusives: 0 };
+      ms.byCategory[c][key]++;
+    };
     
     let parsed;
     try {
@@ -511,9 +525,13 @@ function writeParts(parts) {
       if (/^(1|true|yes|deleted)$/i.test(rec.is_deleted || '')) continue;
       // Skip out-of-stock
       if (/out-of-stock|unavailable|no/i.test(rec.availability || '')) continue;
-      
+
+      const recCat = classifyCategory(rec);
+      bumpCat(recCat, 'records');
+
       const match = matchRecord(rec, idx);
       if (match && match.part) {
+        bumpCat(recCat, 'matched');
         if (applyMatchToPart(match.part, rec, match)) {
           ms.matched++;
           ms.updated++;
@@ -523,6 +541,27 @@ function writeParts(parts) {
         // Unmatched Newegg product = potential exclusive (only collect for Newegg MID)
         const pricing = priceFromRecord(rec);
         if (pricing && pricing.price > 0) {
+          bumpCat(recCat, 'exclusives');
+          // Phase 2.0: capture a capped, per-category sample of raw exclusive
+          // records so field coverage can be reviewed. Sample only — never a write.
+          if (SAMPLE_PER_CAT > 0) {
+            const sc = recCat || '(unclassified)';
+            exclusiveSample[sc] = exclusiveSample[sc] || [];
+            if (exclusiveSample[sc].length < SAMPLE_PER_CAT) {
+              exclusiveSample[sc].push({
+                sku: rec.sku, newegg_item_number: rec.newegg_item_number,
+                sellerClass: NEG.sellerClass(rec.newegg_item_number || rec.sku),
+                name: rec.product_name, manufacturer: rec.manufacturer, brand2: rec.brand2,
+                primary_category: rec.primary_category, secondary_categories: rec.secondary_categories,
+                ourCategory: recCat, upc: rec.upc, mpn: rec.mpn,
+                retail_price: rec.retail_price, sale_price: rec.sale_price,
+                availability: rec.availability, image_url: rec.image_url,
+                product_url: rec.product_url,
+                attrs: [rec.attr_1, rec.attr_2, rec.attr_3, rec.attr_4, rec.attr_5].filter(Boolean),
+                short_description: (rec.short_description || '').slice(0, 200),
+              });
+            }
+          }
           const exclusiveRec = {
             mid: dl.mid,
             sku: rec.sku,
@@ -551,6 +590,28 @@ function writeParts(parts) {
     summary.totals.matched += ms.matched;
     summary.totals.updated += ms.updated;
     summary.totals.exclusives += ms.exclusives;
+  }
+
+  // Phase 2.0: aggregate per-category gap numbers across merchants (Newegg-only
+  // in practice) into the summary for easy review.
+  summary.byCategory = {};
+  for (const ms of Object.values(summary.perMerchant)) {
+    for (const [cat, c] of Object.entries(ms.byCategory || {})) {
+      const s = summary.byCategory[cat] = summary.byCategory[cat] || { records: 0, matched: 0, exclusives: 0 };
+      s.records += c.records; s.matched += c.matched; s.exclusives += c.exclusives;
+    }
+  }
+  // Phase 2.0: write the capped exclusives SAMPLE (never the catalog). Allowed in
+  // dry-run precisely because it is not a catalog mutation — it is measurement.
+  if (SAMPLE_PER_CAT > 0) {
+    ensureDir(path.dirname(SAMPLE_PATH));
+    const totalSample = Object.values(exclusiveSample).reduce((n, a) => n + a.length, 0);
+    fs.writeFileSync(SAMPLE_PATH, JSON.stringify({
+      generatedAt: new Date().toISOString(), dryRun: DRY_RUN,
+      perCatCap: SAMPLE_PER_CAT, totalSampled: totalSample,
+      byCategory: summary.byCategory, sample: exclusiveSample,
+    }, null, 2));
+    log(`Wrote exclusives sample (${totalSample} records) to ${path.relative(ROOT, SAMPLE_PATH)}`);
   }
 
   // Write outputs
@@ -585,6 +646,10 @@ function writeParts(parts) {
   log(`Matched/updated: ${summary.totals.updated}`);
   log(`Exclusives:      ${summary.totals.exclusives}`);
   log(`Errors:          ${summary.totals.errors}`);
+  log('\nPer-category gap (records / matched-to-existing / NEW exclusives):');
+  for (const [cat, c] of Object.entries(summary.byCategory || {}).sort((a, b) => b[1].exclusives - a[1].exclusives)) {
+    log(`  ${cat.padEnd(16)} records ${String(c.records).padStart(7)}  matched ${String(c.matched).padStart(6)}  exclusive ${String(c.exclusives).padStart(7)}`);
+  }
 })().catch(e => {
   console.error('\nâœ— FATAL:', e.stack || e.message);
   process.exit(1);
