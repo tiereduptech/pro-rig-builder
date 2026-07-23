@@ -561,6 +561,12 @@ async function measureStreamFirst(n) {
     byTitleCategory: byTitleCat,             // classified from title (catalog-classify)
     primaryCategoryTop: topHist(primaryHist, 40),
     secondaryCategoryTop: topHist(secondaryHist, 60),
+    // Full secondary_categories histogram, PC-relevant leaves only, so the exact
+    // leaf→category mapping and clean per-leaf gap counts can be read off.
+    secondaryPcLeaves: Object.entries(secondaryHist)
+      .filter(([s]) => /processor|power suppl|motherboard|memory|storage device|hard drive|cooling|desktop computer & server case|video card|graphic|monitor|solid state/i.test(s))
+      .sort((a, b) => b[1] - a[1])
+      .reduce((o, [k, v]) => (o[k] = v, o), {}),
     fieldCoverage: fieldCov,
     exclusiveSampleCap: SAMPLE_PER_CAT, sample: exclusiveSample,
   };
