@@ -19,9 +19,9 @@ on:
   workflow_dispatch:
     inputs:
       measure_first:
-        description: "Stream + parse the first N feed records (early-abort)"
+        description: "Stream + parse the first N feed records (2M = whole feed)"
         type: string
-        default: "300000"
+        default: "2000000"
       sample_per_cat:
         description: "Exclusive records to sample per category"
         type: string
@@ -50,7 +50,7 @@ jobs:
           RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
           NODE_OPTIONS: "--max-old-space-size=6144"
         run: |
-          N="${{ inputs.measure_first }}"; if [ -z "$N" ]; then N=300000; fi
+          N="${{ inputs.measure_first }}"; if [ -z "$N" ]; then N=2000000; fi
           SAMPLE="${{ inputs.sample_per_cat }}"; if [ -z "$SAMPLE" ]; then SAMPLE=150; fi
           echo "Running: node sftp-ingest.cjs --measure-first=$N --sample-exclusives=$SAMPLE"
           node sftp-ingest.cjs --measure-first=$N --sample-exclusives=$SAMPLE

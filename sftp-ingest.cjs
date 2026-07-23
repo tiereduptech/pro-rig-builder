@@ -436,6 +436,7 @@ function writeParts(parts) {
 // the CI budget. Writes ONLY the measurement summary + sample, never parts.js.
 async function measureStreamFirst(n) {
   if (!FTP_PASS) throw new Error('RAKUTEN_FTP_PASSWORD env var required');
+  const CC = require('./catalog-classify.cjs');
   log(`â”â”â” PHASE 2.0: STREAMING MEASUREMENT (first ${n} records) â”â”â”`);
   log('Loading catalog for dedupe index...');
   const partsModule = await import('file://' + PARTS_PATH.replace(/\\/g, '/') + '?t=' + Date.now());
@@ -450,6 +451,13 @@ async function measureStreamFirst(n) {
     byCategory[c] = byCategory[c] || { records: 0, matched: 0, exclusives: 0, priced: 0 };
     byCategory[c][key]++;
   };
+  // Raw Newegg taxonomy histograms so we can see how coarse primary_category is
+  // and whether the finer signal lives in secondary_categories.
+  const primaryHist = {};
+  const secondaryHist = {};
+  // Title-based classification (catalog-classify.detectCategory) as a comparison
+  // against feed-category classification — which actually finds PC components?
+  const byTitleCat = {};
   // Field-presence tally, per our-category, over ALL sampled records (not just
   // exclusives) so coverage reflects the feed itself.
   const fieldCov = {};
@@ -494,6 +502,14 @@ async function measureStreamFirst(n) {
           deletedOrOOS++;
         } else {
           const recCat = classifyCategory(rec);
+          // Raw taxonomy histograms (bounded — a few hundred distinct values).
+          const pc = rec.primary_category || '(empty)';
+          primaryHist[pc] = (primaryHist[pc] || 0) + 1;
+          const sc0 = (rec.secondary_categories || '').split(/[>|,;]/)[0].trim() || '(empty)';
+          secondaryHist[sc0] = (secondaryHist[sc0] || 0) + 1;
+          // Title-based classification comparison.
+          const tCat = CC.detectCategory(CC.stripCompatClauses(rec.product_name || ''));
+          if (tCat) byTitleCat[tCat] = (byTitleCat[tCat] || 0) + 1;
           bump(recCat, 'records');
           covBump(recCat, rec);
           const match = matchRecord(rec, idx);
@@ -503,15 +519,19 @@ async function measureStreamFirst(n) {
             const pricing = priceFromRecord(rec);
             if (pricing && pricing.price > 0) {
               bump(recCat, 'exclusives');
-              if (SAMPLE_PER_CAT > 0) {
-                const sc = recCat || '(unclassified)';
-                exclusiveSample[sc] = exclusiveSample[sc] || [];
-                if (exclusiveSample[sc].length < SAMPLE_PER_CAT) {
-                  exclusiveSample[sc].push({
+              // Sample keyed by the TITLE category (falls back to feed category),
+              // so real PC-component exclusives are captured even when the coarse
+              // feed primary_category does not resolve to one of our categories.
+              const sampleCat = tCat || recCat;
+              if (SAMPLE_PER_CAT > 0 && sampleCat) {
+                exclusiveSample[sampleCat] = exclusiveSample[sampleCat] || [];
+                if (exclusiveSample[sampleCat].length < SAMPLE_PER_CAT) {
+                  exclusiveSample[sampleCat].push({
                     sku: rec.sku, newegg_item_number: rec.newegg_item_number,
                     sellerClass: NEG.sellerClass(rec.newegg_item_number || rec.sku),
                     name: rec.product_name, manufacturer: rec.manufacturer, brand2: rec.brand2,
-                    primary_category: rec.primary_category, ourCategory: recCat,
+                    primary_category: rec.primary_category, secondary_categories: rec.secondary_categories,
+                    feedCategory: recCat, titleCategory: tCat,
                     upc: rec.upc, mpn: rec.mpn, retail_price: rec.retail_price, sale_price: rec.sale_price,
                     availability: rec.availability, image_url: rec.image_url, product_url: rec.product_url,
                     attrs: [rec.attr_1, rec.attr_2, rec.attr_3, rec.attr_4, rec.attr_5].filter(Boolean),
@@ -532,19 +552,29 @@ async function measureStreamFirst(n) {
   }
 
   ensureDir(path.dirname(SAMPLE_PATH));
+  const topHist = (h, k) => Object.entries(h).sort((a, b) => b[1] - a[1]).slice(0, k)
+    .reduce((o, [key, v]) => (o[key] = v, o), {});
   const out = {
     generatedAt: new Date().toISOString(), mode: 'measure-first', requested: n,
     dataRecordsParsed: dataRecords, skippedDeletedOrOOS: deletedOrOOS,
-    byCategory, fieldCoverage: fieldCov,
+    byCategory,                              // classified from feed primary_category
+    byTitleCategory: byTitleCat,             // classified from title (catalog-classify)
+    primaryCategoryTop: topHist(primaryHist, 40),
+    secondaryCategoryTop: topHist(secondaryHist, 60),
+    fieldCoverage: fieldCov,
     exclusiveSampleCap: SAMPLE_PER_CAT, sample: exclusiveSample,
   };
   fs.writeFileSync(SAMPLE_PATH, JSON.stringify(out, null, 2));
   fs.writeFileSync(SUMMARY_PATH, JSON.stringify({ measureFirst: out.byCategory, dataRecordsParsed: dataRecords }, null, 2));
 
   log(`\nParsed ${dataRecords} data records (${deletedOrOOS} deleted/OOS skipped).`);
-  log('Per-category (records / matched-to-existing / NEW exclusives) in this leading sample:');
+  log('FEED-category (records / matched / NEW exclusives):');
   for (const [cat, c] of Object.entries(byCategory).sort((a, b) => b[1].records - a[1].records)) {
     log(`  ${cat.padEnd(16)} records ${String(c.records).padStart(6)}  matched ${String(c.matched).padStart(5)}  exclusive ${String(c.exclusives).padStart(6)}`);
+  }
+  log('TITLE-category counts (catalog-classify.detectCategory over all records):');
+  for (const [cat, v] of Object.entries(byTitleCat).sort((a, b) => b[1] - a[1])) {
+    log(`  ${cat.padEnd(16)} ${v}`);
   }
   log(`\nWrote ${path.relative(ROOT, SAMPLE_PATH)} and ${path.relative(ROOT, SUMMARY_PATH)}`);
 }
