@@ -285,6 +285,24 @@ function extractSpecs(title, category) {
   return specs;
 }
 
+// Derived RAM attributes that are booleans/enums rather than numeric specs.
+// Pure and unit-tested so the ECC-negation handling in particular can't regress:
+// a bare "ECC" must NOT count when the title actually says the module is non-ECC,
+// in any of the spellings vendors use ("non-ECC", "Non ECC", "NonECC",
+// "without ECC", "no ECC"). Registered modules (RDIMM/LRDIMM) are ECC by
+// definition and win regardless.
+function ramAttributes(title) {
+  const t = title || '';
+  const negEcc = /\b(non[-\s]?ecc|without\s+ecc|no\s+ecc)\b/i.test(t);
+  const ecc = /\b(rdimm|lrdimm)\b/i.test(t) || (/\becc\b/i.test(t) && !negEcc);
+  const rgb = /\brgb\b/i.test(t);
+  const formFactor = /so-?dimm/i.test(t) ? 'SODIMM'
+    : /\blrdimm\b/i.test(t) ? 'LRDIMM'
+    : /\brdimm\b/i.test(t) ? 'RDIMM'
+    : 'UDIMM';
+  return { ecc, rgb, formFactor };
+}
+
 module.exports = {
   stripCompatClauses,
   brandInText,
@@ -297,4 +315,5 @@ module.exports = {
   notBuildableReason,
   implausibleBrandForCategory,
   extractSpecs,
+  ramAttributes,
 };

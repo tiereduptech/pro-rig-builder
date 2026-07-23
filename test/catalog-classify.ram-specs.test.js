@@ -12,7 +12,7 @@ import { test } from 'node:test';
 import assert from 'node:assert';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
-const { extractSpecs } = require('../catalog-classify.cjs');
+const { extractSpecs, ramAttributes } = require('../catalog-classify.cjs');
 
 // Each row: [title, expected-subset]. We assert every named field equals; fields
 // not named must be absent (so a wrong extraction that INVENTS a value fails).
@@ -74,3 +74,31 @@ const UNSPECCED = [
 for (const [title, exp] of AMAZON) test(`amazon: ${title.slice(0, 48)}`, () => check(title, exp));
 for (const [title, exp] of NEWEGG) test(`newegg: ${title.slice(0, 48)}`, () => check(title, exp));
 for (const [title, exp] of UNSPECCED) test(`unspecced: ${title.slice(0, 40)}`, () => check(title, exp));
+
+// ── ramAttributes: ECC must be false for EVERY negation spelling ──────────────
+// The first capped batch set non-ECC modules to ecc:true because a bare "ECC"
+// matched inside "non-ECC". Cover all the forms vendors actually print.
+const ECC_CASES = [
+  ['HP DDR3 1GB SO-DIMM 800 MHz unbuffered non-ECC', false],
+  ['Total Micro 16GB DDR4 2666MHz PC4-21300 Unbuffered Non-ECC 1.2V', false],
+  ['Crucial 16GB DDR4 3200 Non ECC UDIMM', false],
+  ['Some 8GB DDR4 NonECC module', false],
+  ['Kingston 16GB DDR5 without ECC', false],
+  ['Generic 8GB DDR4 no ECC desktop memory', false],
+  ['Kingston Server Premier 32GB DDR5 ECC 4800MHz', true],
+  ['Samsung 64GB DDR5 ECC RDIMM 4800MHz', true],
+  ['Micron 32GB DDR4 LRDIMM 2Rx4 2666', true],          // registered => ECC
+  ['Corsair Vengeance 32GB (2x16GB) DDR5 6000 CL30', false], // no ECC mention
+];
+for (const [title, exp] of ECC_CASES) {
+  test(`ecc: ${title.slice(0, 44)}`, () => assert.strictEqual(ramAttributes(title).ecc, exp, title));
+}
+
+test('ramAttributes: rgb + formFactor', () => {
+  assert.strictEqual(ramAttributes('… SO-DIMM DDR4 …').formFactor, 'SODIMM');
+  assert.strictEqual(ramAttributes('… RDIMM …').formFactor, 'RDIMM');
+  assert.strictEqual(ramAttributes('… LRDIMM …').formFactor, 'LRDIMM');
+  assert.strictEqual(ramAttributes('Corsair Vengeance DDR5 …').formFactor, 'UDIMM');
+  assert.strictEqual(ramAttributes('… RGB DDR5 …').rgb, true);
+  assert.strictEqual(ramAttributes('… DDR5 …').rgb, false);
+});

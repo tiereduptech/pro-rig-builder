@@ -14,6 +14,7 @@ on:
     paths:
       - 'apply-newegg-discoveries.cjs'
       - '.github/workflows/apply-newegg.yml'
+      - 'apply-live.trigger'
   workflow_dispatch:
     inputs:
       category: { description: "Category", type: string, default: "RAM" }
@@ -43,9 +44,14 @@ jobs:
       - name: Resolve mode
         id: m
         run: |
-          # A push carries no inputs.mode -> always dry. Only an explicit
-          # workflow_dispatch with mode=live can write.
-          MODE="${{ inputs.mode }}"; [ -z "$MODE" ] && MODE=dry
+          # Live requires an EXPLICIT signal, never a commit message (which once
+          # misfired). Either workflow_dispatch mode=live, or the tracked file
+          # apply-live.trigger contains exactly "live". The live step resets that
+          # file to "dry" and commits it, so a live run is strictly one-shot.
+          MODE="${{ inputs.mode }}"
+          if [ -z "$MODE" ]; then
+            if [ -f apply-live.trigger ] && grep -qx 'live' apply-live.trigger; then MODE=live; else MODE=dry; fi
+          fi
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
           echo "Resolved mode: $MODE"
       - name: Run apply
@@ -74,11 +80,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/parts.js src/data/parts/
+          # One-shot: reset the live trigger so this can't fire again unattended.
+          echo dry > apply-live.trigger
+          git add src/data/parts.js src/data/parts/ apply-live.trigger
           if git diff --cached --quiet; then
             echo "No catalog changes to commit."
           else
-            git commit -m "feat(newegg): discovery apply ${{ inputs.category || 'RAM' }} capped batch (review before merge)"
+            git commit -m "feat(newegg): discovery apply capped batch (review before merge) [skip apply]"
             git push origin HEAD:${{ github.ref_name }}
           fi
       - name: Upload apply report

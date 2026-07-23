@@ -125,12 +125,8 @@ function buildRow(rec, id, NEG) {
   };
   if (CATEGORY === 'RAM') {
     row.ramType = specs.memType;
-    // ECC: registered modules (RDIMM/LRDIMM) are always ECC; a bare "ECC" counts
-    // only when it is NOT part of "non-ECC" (the substring match set non-ECC
-    // sticks to ecc:true in the first capped batch).
-    row.ecc = /\b(rdimm|lrdimm)\b/i.test(name) || (/\becc\b/i.test(name) && !/\bnon[-\s]?ecc\b/i.test(name));
-    row.rgb = /\brgb\b/i.test(name);
-    row.formFactor = /so-?dimm/i.test(name) ? 'SODIMM' : /\blrdimm\b/i.test(name) ? 'LRDIMM' : /\brdimm\b/i.test(name) ? 'RDIMM' : 'UDIMM';
+    const a = CC.ramAttributes(name);   // ecc (all negation forms), rgb, formFactor
+    row.ecc = a.ecc; row.rgb = a.rgb; row.formFactor = a.formFactor;
   }
   return row;
 }
@@ -165,9 +161,13 @@ function buildRow(rec, id, NEG) {
   }
 
   const stat = { leaf: 0, deletedOOS: 0, marketplace: 0, accessory: 0, prebuilt: 0, condition: 0,
-    dedupeCatalog: { upc: 0, mpn: 0, name: 0 }, dedupeBatch: { upc: 0, mpn: 0 }, specBar: 0, inserted: 0 };
+    dedupeCatalog: { upc: 0, mpn: 0, name: 0 }, dedupeBatch: { upc: 0, mpn: 0 }, specBar: 0, survivors: 0 };
   const seenUpc = new Set(), seenMpn = new Set();
-  const rows = [];
+  // Collect ALL passing records (whole feed, no early stop), then sample ACROSS
+  // the pool — feed order is by item number (oldest first), so stopping at the
+  // first N front-loaded legacy DDR3/OEM modules. Streaming all then striding
+  // gives a representative mix (incl. the modern DDR5 kits later in the feed).
+  const survivorRecs = [];
 
   const sftp = new SftpClient();
   try {
@@ -216,26 +216,37 @@ function buildRow(rec, id, NEG) {
         if (!bar(specs)) { stat.specBar++; return; }
 
         if (u) seenUpc.add(u); if (m) seenMpn.add(m);
-        rows.push(buildRow(rec, allocId(), NEG));
-        stat.inserted++;
-        if (LIMIT && rows.length >= LIMIT) stop();
+        survivorRecs.push(rec);
       });
       rl.on('close', stop);
     });
   } finally { try { await sftp.end(); } catch {} }
+
+  stat.survivors = survivorRecs.length;
+  // Sample ACROSS the pool: pick LIMIT items at an even stride so the batch spans
+  // the whole feed (old → new), not just the front. Deterministic (no RNG).
+  const strideSample = (arr, k) => {
+    if (!k || k >= arr.length) return arr;
+    const out = []; const step = arr.length / k;
+    for (let i = 0; i < k; i++) out.push(arr[Math.floor(i * step)]);
+    return out;
+  };
+  const selected = strideSample(survivorRecs, LIMIT);
+  const rows = selected.map((rec) => buildRow(rec, allocId(), NEG));
 
   // Report
   const report = {
     generatedAt: new Date().toISOString(), category: CATEGORY, batchId: BATCH_ID,
     dryRun: DRY_RUN, limit: LIMIT || null,
     catalogBefore: loadedCount, catalogAfter: DRY_RUN ? loadedCount : loadedCount + rows.length,
-    funnel: stat, insertedCount: rows.length, insertedRows: rows,
+    funnel: stat, totalSurvivors: stat.survivors, sampledAcrossPool: LIMIT && LIMIT < stat.survivors,
+    insertedCount: rows.length, insertedRows: rows,
   };
   fs.mkdirSync(path.dirname(REPORT_PATH), { recursive: true });
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2));
 
   log(`\nFunnel: leaf ${stat.leaf} | mkt ${stat.marketplace} | acc ${stat.accessory} | prebuilt ${stat.prebuilt} | cond ${stat.condition} | dedupCat ${stat.dedupeCatalog.upc + stat.dedupeCatalog.mpn + stat.dedupeCatalog.name} | dedupBatch ${stat.dedupeBatch.upc + stat.dedupeBatch.mpn} | specBar ${stat.specBar}`);
-  log(`Rows to insert: ${rows.length}`);
+  log(`Total distinct survivors: ${stat.survivors} | selected this run: ${rows.length}${LIMIT && LIMIT < stat.survivors ? ' (strided across pool)' : ''}`);
 
   if (DRY_RUN) {
     log(`DRY RUN — nothing written. Report: ${path.relative(ROOT, REPORT_PATH)}`);
@@ -243,6 +254,6 @@ function buildRow(rec, id, NEG) {
   }
   if (rows.length === 0) { log('No rows to insert — not writing.'); return; }
   parts.push(...rows);
-  await writeCatalog(parts, { loadedCount, reason: `newegg discovery ${CATEGORY} (${rows.length}, batch ${BATCH_ID})` });
+  await writeCatalog(parts, { loadedCount, reason: `newegg discovery ${CATEGORY} (${rows.length} of ${stat.survivors}, batch ${BATCH_ID})` });
   log(`\nWROTE ${rows.length} ${CATEGORY} rows. Catalog ${loadedCount} -> ${parts.length}. Report: ${path.relative(ROOT, REPORT_PATH)}`);
 })().catch((e) => { console.error('\n✗ FATAL:', e.stack || e.message); process.exit(1); });
