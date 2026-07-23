@@ -1,0 +1,61 @@
+name: Newegg Discovery Dry Run (Phase 2.1, read-only)
+
+# Read-only by construction: discover-newegg-dry.cjs streams the feed, applies
+# the discovery gate stack, and writes ONLY a report JSON — never parts.js.
+# contents: read + no commit step + an assert-nothing-written step make it
+# structural. Exists to size the true per-category gap and review survivor
+# quality before any discovery WRITE path is designed.
+
+on:
+  push:
+    branches: [feat/newegg-discovery-ram]
+    paths:
+      - '.github/workflows/discover-newegg-dry.yml'
+      - 'discover-newegg-dry.cjs'
+  workflow_dispatch:
+    inputs:
+      category:
+        description: "Category to discover (RAM, PSU, Storage, …)"
+        type: string
+        default: "RAM"
+      sample:
+        description: "Survivors to include in the report sample"
+        type: string
+        default: "60"
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Install dependencies
+        run: npm ci
+      - name: Run discovery dry run (read-only)
+        env:
+          RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
+          NODE_OPTIONS: "--max-old-space-size=6144"
+        run: |
+          CAT="${{ inputs.category }}"; if [ -z "$CAT" ]; then CAT=RAM; fi
+          SAMPLE="${{ inputs.sample }}"; if [ -z "$SAMPLE" ]; then SAMPLE=60; fi
+          echo "Running: node discover-newegg-dry.cjs --category=$CAT --sample=$SAMPLE"
+          node discover-newegg-dry.cjs --category=$CAT --sample=$SAMPLE
+      - name: Assert nothing written to the catalog
+        if: always()
+        run: |
+          if ! git diff --quiet -- src/data/parts.js src/data/parts/; then
+            echo "::error::catalog was modified by a dry run"; git diff --stat -- src/data/; exit 1
+          fi
+          echo "Clean: no catalog writes."
+      - name: Upload discovery report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: discover-dry
+          path: catalog-build/discover-*-dry.json
+          if-no-files-found: warn
