@@ -190,7 +190,9 @@ const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_
         const bar = specBar(specs);
         if (!bar.ok) {
           stat.rej.specBar++;
-          if (specBarSamples.length < 40) specBarSamples.push({ name: name.slice(0, 80), got: bar.got, mpn: rec.mpn });
+          // Capture ALL spec-bar rejects (they are few) so the extractor can be
+          // designed against every real Newegg title format, not a sample.
+          if (specBarSamples.length < 1500) specBarSamples.push({ name, got: bar.got, mpn: rec.mpn });
           return;
         }
 
