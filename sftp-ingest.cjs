@@ -116,7 +116,13 @@ async function walkAndDownload(sftp, manifest) {
         ensureDir(localDir);
         const localPath = path.join(localDir, entry.name);
         log(`  â¬‡  ${entry.name} (${(remoteSize/1024/1024).toFixed(1)}MB) â†’ ${path.relative(ROOT, localPath)}`);
-        await sftp.fastGet(fullPath, localPath);
+        // Streaming get(), NOT fastGet(). fastGet issues many parallel range
+        // reads, which this SFTP endpoint (aftp.linksynergy.com) throttles hard —
+        // measured under 64KB/s, so the 226MB Newegg feed never finished inside
+        // the 60-min job budget and the daily ingest silently timed out. A single
+        // sequential stream measures at MB/s (full feed in ~4 min). See the
+        // 2026-07-23 measurement (300k records parsed in 72s via a streamed read).
+        await sftp.get(fullPath, localPath);
         manifest.files[key] = { size: remoteSize, mtime: remoteMTime, mid, localPath, downloadedAt: new Date().toISOString() };
         downloaded.push({ mid, localPath, remotePath: fullPath, fileName: entry.name });
       }
@@ -251,8 +257,45 @@ function buildCatalogIndex(parts) {
   return { byUPC, byMPN, bySKU, byCat };
 }
 
+// Newegg's feed `primary_category` is coarse Google-taxonomy ("Electronics"
+// covers CPUs AND ink cartridges AND tablets), so keying off it classified 100%
+// of the 1.07M-record Newegg feed as unmatched — the category/name-similarity
+// match fallback never fired and every Newegg product looked "exclusive". The
+// real component taxonomy lives in `secondary_categories`, a "~~"-delimited path
+// whose LEAF names the product type. Classify on the leaf; keep the old
+// primary_category heuristics as a fallback for other merchants' feeds.
+//
+// Leaves verified against the full live Newegg feed on 2026-07-23 (counts are
+// in-stock listings): RAM 29482, Cooling 8856, PSU 5522, Monitors 3869,
+// Motherboards 3687, Storage/Hard Drives ~5500, Cases 1716, Processors 1257,
+// Video Cards 226. Accessory/adjacent leaves (monitor accessories, mounts, USB
+// flash, card readers, enclosures, NAS, optical drives) are deliberately NOT
+// mapped, so they fall through to null rather than polluting a core category.
 function classifyCategory(rec) {
-  // Newegg primary category â†’ our category names
+  const sec = (rec.secondary_categories || '').toLowerCase();
+  if (sec) {
+    // Internal storage only: generic "Storage Devices" (SSDs land here) or the
+    // "Hard Drives" leaf. Deeper leaves (USB Flash Drives, Network Storage
+    // Systems, Optical Drives, Hard Drive Accessories/Enclosures, Card Readers,
+    // Disk Duplicators) are NOT core Storage and are left unmapped.
+    if (/~~storage devices(~~(hard drives|solid state\w*))?$/.test(sec)) return 'Storage';
+    if (/~~memory~~ram$/.test(sec)) return 'RAM';
+    if (/~~computer power supplies\b/.test(sec)) return 'PSU';
+    if (/~~motherboards$/.test(sec)) return 'Motherboard';
+    if (/~~computer processors$/.test(sec)) return 'CPU';
+    if (/~~desktop computer & server cases\b/.test(sec)) return 'Case';
+    if (/~~video cards & adapters\b/.test(sec)) return 'GPU';
+    if (/~~computer system cooling parts\b/.test(sec)) {
+      // Shared cooling leaf covers CPU coolers AND case fans — split on title.
+      const n = (rec.product_name || '').toLowerCase();
+      if (/\b(cpu cooler|aio|liquid cooler|air cooler|heat ?sink|liquid freezer|water cool\w*|tower cooler)\b/.test(n)) return 'CPUCooler';
+      if (/\b(case fan|chassis fan|\d{2,3}mm fan|radiator|fan pack|fans?)\b/.test(n)) return 'CaseFan';
+      return 'CPUCooler';
+    }
+    if (/video~~computer monitors$/.test(sec)) return 'Monitor';
+  }
+  // Fallback: original primary_category heuristics (inert on Newegg, but other
+  // merchants' feeds may populate primary_category).
   const cat = (rec.primary_category || '').toLowerCase();
   if (/processor|cpu/.test(cat) && !/cooler|fan/.test(cat)) return 'CPU';
   if (/motherboard/.test(cat)) return 'Motherboard';
