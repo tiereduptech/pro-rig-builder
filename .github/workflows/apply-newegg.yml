@@ -46,21 +46,27 @@ jobs:
         run: |
           # Live requires an EXPLICIT signal, never a commit message (which once
           # misfired). Either workflow_dispatch mode=live, or the tracked file
-          # apply-live.trigger contains exactly "live". The live step resets that
-          # file to "dry" and commits it, so a live run is strictly one-shot.
-          MODE="${{ inputs.mode }}"
+          # apply-live.trigger contains "live:<limit>" (0 = all). The live step
+          # resets the file to "dry" and commits it, so a run is strictly one-shot.
+          MODE="${{ inputs.mode }}"; LIMIT="${{ inputs.limit }}"
           if [ -z "$MODE" ]; then
-            if [ -f apply-live.trigger ] && grep -qx 'live' apply-live.trigger; then MODE=live; else MODE=dry; fi
+            RAW=$(head -1 apply-live.trigger 2>/dev/null | tr -d '[:space:]')
+            case "$RAW" in
+              live:*) MODE=live; LIMIT="${RAW#live:}" ;;
+              *) MODE=dry ;;
+            esac
           fi
+          [ -z "$LIMIT" ] && LIMIT=50
           echo "mode=$MODE" >> "$GITHUB_OUTPUT"
-          echo "Resolved mode: $MODE"
+          echo "limit=$LIMIT" >> "$GITHUB_OUTPUT"
+          echo "Resolved: mode=$MODE limit=$LIMIT"
       - name: Run apply
         env:
           RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
           NODE_OPTIONS: "--max-old-space-size=6144"
         run: |
           CAT="${{ inputs.category }}"; [ -z "$CAT" ] && CAT=RAM
-          LIMIT="${{ inputs.limit }}"; [ -z "$LIMIT" ] && LIMIT=50
+          LIMIT="${{ steps.m.outputs.limit }}"
           FLAG=""; [ "${{ steps.m.outputs.mode }}" = "dry" ] && FLAG="--dry-run"
           echo "node apply-newegg-discoveries.cjs --category=$CAT --limit=$LIMIT $FLAG"
           node apply-newegg-discoveries.cjs --category=$CAT --limit=$LIMIT $FLAG

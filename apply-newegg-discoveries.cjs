@@ -43,6 +43,18 @@ const has = (k) => argv.includes('--' + k);
 const arg = (k, d) => { const h = argv.find((a) => a.startsWith('--' + k + '=')); return h ? h.split('=')[1] : d; };
 const CATEGORY = arg('category', 'RAM');
 const LIMIT = parseInt(arg('limit', '0'), 10) || 0;      // 0 = no cap
+// Price-plausibility floor: reject a product whose price-per-unit is wildly out
+// of line with the category median (mispriced, legacy overstock, or a bad
+// listing — none belong in a catalog people trust for value comparisons). The
+// unit is category-specific ($/GB for RAM/Storage, $/W for PSU). Default 5x the
+// median; 0 disables. The median is taken over the survivor pool (current market).
+const PRICE_MULT = parseFloat(arg('price-mult', '5')) || 5;
+// $-per-unit for the floor, per category. Returns null when not computable.
+const PRICE_UNIT = {
+  RAM: (specs, price) => (price && specs.cap ? price / specs.cap : null),
+  Storage: (specs, price) => (price && specs.cap ? price / specs.cap : null),
+  PSU: (specs, price) => (price && specs.watts ? price / specs.watts : null),
+};
 const DRY_RUN = has('dry-run');
 const TODAY = new Date().toISOString().slice(0, 10);
 const BATCH_ID = arg('batch', `newegg-${CATEGORY.toLowerCase()}-${TODAY}`);
@@ -237,6 +249,32 @@ function buildRow(rec, id, NEG) {
   } finally { try { await sftp.end(); } catch {} }
 
   stat.survivors = survivorRecs.length;
+
+  // ── Price-plausibility floor ────────────────────────────────────────────────
+  // Compute $/unit for every survivor, take the median, drop anything above
+  // PRICE_MULT × median. All survivors are past the spec bar, so the unit spec
+  // (cap/watts) is present and $/unit is always computable.
+  const priceOf = (rec) => { const s = parseFloat(rec.sale_price); const r2 = parseFloat(rec.retail_price); return s > 0 ? s : r2; };
+  const unitFn = PRICE_UNIT[CATEGORY];
+  let floorInfo = { applied: false, median: null, threshold: null, dropped: 0, unit: null };
+  let pooled = survivorRecs;
+  if (PRICE_MULT > 0 && unitFn) {
+    const withPpu = survivorRecs.map((rec) => ({ rec, ppu: unitFn(CC.extractSpecs(rec.product_name, CATEGORY), priceOf(rec)) }));
+    const vals = withPpu.map((x) => x.ppu).filter((v) => v != null && v > 0).sort((a, b) => a - b);
+    const median = vals.length ? vals[Math.floor(vals.length / 2)] : null;
+    if (median != null) {
+      const threshold = median * PRICE_MULT;
+      const dropped = withPpu.filter((x) => x.ppu != null && x.ppu > threshold);
+      pooled = withPpu.filter((x) => x.ppu == null || x.ppu <= threshold).map((x) => x.rec);
+      floorInfo = {
+        applied: true, unit: CATEGORY === 'PSU' ? '$/W' : '$/GB',
+        median: Number(median.toFixed(3)), threshold: Number(threshold.toFixed(3)),
+        mult: PRICE_MULT, dropped: dropped.length,
+        droppedSamples: dropped.slice(0, 15).map((x) => ({ name: x.rec.product_name.slice(0, 70), ppu: Number(x.ppu.toFixed(2)), price: priceOf(x.rec) })),
+      };
+    }
+  }
+
   // Sample ACROSS the pool: pick LIMIT items at an even stride so the batch spans
   // the whole feed (old → new), not just the front. Deterministic (no RNG).
   const strideSample = (arr, k) => {
@@ -245,22 +283,26 @@ function buildRow(rec, id, NEG) {
     for (let i = 0; i < k; i++) out.push(arr[Math.floor(i * step)]);
     return out;
   };
-  const selected = strideSample(survivorRecs, LIMIT);
+  const selected = strideSample(pooled, LIMIT);
   const rows = selected.map((rec) => buildRow(rec, allocId(), NEG));
 
   // Report
+  const poolAfterFloor = pooled.length;
   const report = {
     generatedAt: new Date().toISOString(), category: CATEGORY, batchId: BATCH_ID,
     dryRun: DRY_RUN, limit: LIMIT || null,
     catalogBefore: loadedCount, catalogAfter: DRY_RUN ? loadedCount : loadedCount + rows.length,
-    funnel: stat, totalSurvivors: stat.survivors, sampledAcrossPool: LIMIT && LIMIT < stat.survivors,
+    funnel: stat, totalSurvivors: stat.survivors, priceFloor: floorInfo,
+    survivorsAfterFloor: poolAfterFloor, sampledAcrossPool: LIMIT && LIMIT < poolAfterFloor,
     insertedCount: rows.length, insertedRows: rows,
   };
   fs.mkdirSync(path.dirname(REPORT_PATH), { recursive: true });
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2));
 
   log(`\nFunnel: leaf ${stat.leaf} | mkt ${stat.marketplace} | acc ${stat.accessory} | prebuilt ${stat.prebuilt} | cond ${stat.condition} | serverEcc ${stat.categoryReject} | dedupCat ${stat.dedupeCatalog.upc + stat.dedupeCatalog.mpn + stat.dedupeCatalog.name} | dedupBatch ${stat.dedupeBatch.upc + stat.dedupeBatch.mpn} | specBar ${stat.specBar}`);
-  log(`Total distinct survivors: ${stat.survivors} | selected this run: ${rows.length}${LIMIT && LIMIT < stat.survivors ? ' (strided across pool)' : ''}`);
+  log(`Distinct survivors: ${stat.survivors}`);
+  if (floorInfo.applied) log(`Price floor (${floorInfo.unit}): median ${floorInfo.median}, threshold ${floorInfo.mult}x = ${floorInfo.threshold} -> dropped ${floorInfo.dropped}, pool ${poolAfterFloor}`);
+  log(`Selected this run: ${rows.length}${LIMIT && LIMIT < poolAfterFloor ? ' (strided across pool)' : ''}`);
 
   if (DRY_RUN) {
     log(`DRY RUN — nothing written. Report: ${path.relative(ROOT, REPORT_PATH)}`);
