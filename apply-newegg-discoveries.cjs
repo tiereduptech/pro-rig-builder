@@ -127,7 +127,14 @@ function buildRow(rec, id, NEG) {
   const priceRetail = parseFloat(rec.retail_price) || null;
   const priceSale = parseFloat(rec.sale_price) || null;
   const pr = priceSale && priceSale > 0 ? priceSale : priceRetail;
-  const brand = CC.detectBrand(name, '') || cleanBrand(rec.manufacturer || rec.brand2) || null;
+  // Brand: prefer the title reading, but a chip-giant result (AMD/Intel/NVIDIA)
+  // for a non-CPU/GPU category is almost always a mis-detect off marketing text
+  // ("AMD EXPO" on a G.Skill kit — 7 such rows branded "AMD" in the 07-24 batch);
+  // fall back to the authoritative feed manufacturer in that case.
+  let brand = CC.detectBrand(name, '');
+  if (!brand || CC.implausibleBrandForCategory(brand, CATEGORY)) {
+    brand = cleanBrand(rec.manufacturer || rec.brand2) || brand || null;
+  }
   const itemNumber = rec.newegg_item_number || rec.sku;
 
   const row = {
