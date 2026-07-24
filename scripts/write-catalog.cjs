@@ -47,6 +47,37 @@ const TEMP_JS     = path.join(ROOT, 'src/data/.parts.tmp.js');
 // far above any legitimate single run, far below "the array got clobbered".
 const MAX_SHRINK = 0.05;
 
+// The symmetric brake for GROWTH. The shrink brake never watched the other
+// direction, so a discovery bug that duplicated or flooded rows would write
+// straight through — the only guards were "non-empty" and "not shrunk". A single
+// legitimate discovery run adds at most one category's worth of products (RAM,
+// the largest, is ~600 = +11% of ~5,400), so 15% leaves headroom for the biggest
+// real run while still catching a runaway. A deliberate multi-category sweep
+// raises this explicitly via opts.maxGrowth, the same escape hatch the shrink
+// brake documents — the point is that uncapped growth is never the DEFAULT.
+const MAX_GROWTH = 0.15;
+
+// Pure size-bounds check, exported so the brake logic is unit-testable without
+// touching the filesystem. Returns { ok } or { ok:false, reason }.
+function checkSizeBounds(nextLen, loadedCount, { maxShrink = MAX_SHRINK, maxGrowth = MAX_GROWTH } = {}) {
+  if (!(typeof loadedCount === 'number' && loadedCount > 0)) return { ok: true };
+  const floor = Math.floor(loadedCount * (1 - maxShrink));
+  if (nextLen < floor) {
+    return { ok: false, kind: 'shrink', reason:
+      `catastrophic shrink — writing ${nextLen} products but loaded ${loadedCount} ` +
+      `(floor ${floor}, max ${(maxShrink * 100).toFixed(0)}% loss). Refusing. If this removal is ` +
+      `intentional, raise the cap deliberately rather than bypassing this brake.` };
+  }
+  const ceil = Math.ceil(loadedCount * (1 + maxGrowth));
+  if (nextLen > ceil) {
+    return { ok: false, kind: 'growth', reason:
+      `catastrophic growth — writing ${nextLen} products but loaded ${loadedCount} ` +
+      `(ceiling ${ceil}, max ${(maxGrowth * 100).toFixed(0)}% gain). Refusing. If this addition is ` +
+      `intentional, pass opts.maxGrowth deliberately rather than bypassing this brake.` };
+  }
+  return { ok: true };
+}
+
 const rel = (p) => path.relative(ROOT, p).replace(/\\/g, '/');
 
 // ── Backup ───────────────────────────────────────────────────────────────────
@@ -127,27 +158,25 @@ async function countFromChunks(chunkNames) {
  *
  * @param {Array}  parts            the full catalog array (already mutated)
  * @param {object} opts
- * @param {number} opts.loadedCount count read at load time — the shrink brake
- *                                  compares against this
+ * @param {number} opts.loadedCount count read at load time — the shrink/growth
+ *                                  brakes compare against this
  * @param {string} opts.reason      short label for logs
  * @param {boolean} opts.dryRun     if true, writes nothing and returns null
+ * @param {number} opts.maxGrowth   override the default growth ceiling (0.15);
+ *                                  a deliberate multi-category sweep raises this
+ * @param {number} opts.maxShrink   override the default shrink floor (0.05); a
+ *                                  deliberate rollback of a large batch raises this
  * @returns {Promise<{count:number, chunks:number, backup:string}|null>}
  */
-async function writeCatalog(parts, { loadedCount, reason = 'catalog write', dryRun = false } = {}) {
+async function writeCatalog(parts, { loadedCount, reason = 'catalog write', dryRun = false, maxGrowth = MAX_GROWTH, maxShrink = MAX_SHRINK } = {}) {
   // ── 1. Preflight ───────────────────────────────────────────────────────────
   if (!Array.isArray(parts)) throw new Error('writeCatalog: parts is not an array');
   if (parts.length === 0) throw new Error('writeCatalog: refusing to write an empty catalog');
 
-  if (typeof loadedCount === 'number' && loadedCount > 0) {
-    const floor = Math.floor(loadedCount * (1 - MAX_SHRINK));
-    if (parts.length < floor) {
-      throw new Error(
-        `writeCatalog: catastrophic shrink — writing ${parts.length} products but loaded ${loadedCount} ` +
-        `(floor ${floor}, max ${MAX_SHRINK * 100}% loss). Refusing. If this removal is intentional, ` +
-        `raise the cap deliberately rather than bypassing this brake.`,
-      );
-    }
-  }
+  // Both directions: a cliff DOWN means the caller lost the array; a cliff UP
+  // means a discovery bug flooded rows. Either is a bug, not an intent.
+  const bounds = checkSizeBounds(parts.length, loadedCount, { maxGrowth, maxShrink });
+  if (!bounds.ok) throw new Error(`writeCatalog: ${bounds.reason}`);
 
   if (dryRun) {
     console.log(`  [dry run] writeCatalog would write ${parts.length} products (${reason}) — nothing written.`);
@@ -211,4 +240,4 @@ async function writeCatalog(parts, { loadedCount, reason = 'catalog write', dryR
   return { count: finalCount, chunks: chunkNames.length, backup };
 }
 
-module.exports = { writeCatalog, MAX_SHRINK };
+module.exports = { writeCatalog, checkSizeBounds, MAX_SHRINK, MAX_GROWTH };

@@ -1,0 +1,104 @@
+name: Newegg Discovery Apply (capped, commits to branch)
+
+# Runs apply-newegg-discoveries.cjs. A push ALWAYS runs dry (writes nothing) —
+# there is deliberately no commit-message or file signal that can turn a push
+# live, because a descriptive commit message once did exactly that. LIVE requires
+# an explicit workflow_dispatch with mode=live. A live run writes the capped
+# batch via writeCatalog (atomic promote + re-split + shrink/growth brakes) and
+# commits parts.js + chunks to THIS branch only — never a deploy, always
+# reversible via rollback-discovery.cjs.
+
+on:
+  push:
+    branches: [feat/newegg-discovery-ram]
+    paths:
+      - 'apply-newegg-discoveries.cjs'
+      - '.github/workflows/apply-newegg.yml'
+      - 'apply-live.trigger'
+  workflow_dispatch:
+    inputs:
+      category: { description: "Category", type: string, default: "RAM" }
+      limit: { description: "Max rows to insert", type: string, default: "50" }
+      mode:
+        description: "dry (no write) or live (write + commit to branch)"
+        type: choice
+        options: [dry, live]
+        default: dry
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - run: npm ci
+      - name: Tests (matcher + brakes + specs)
+        run: npm test
+      - name: Resolve mode
+        id: m
+        run: |
+          # Live requires an EXPLICIT signal, never a commit message (which once
+          # misfired). Either workflow_dispatch mode=live, or the tracked file
+          # apply-live.trigger contains "live:<limit>" (0 = all). The live step
+          # resets the file to "dry" and commits it, so a run is strictly one-shot.
+          MODE="${{ inputs.mode }}"; LIMIT="${{ inputs.limit }}"
+          if [ -z "$MODE" ]; then
+            RAW=$(head -1 apply-live.trigger 2>/dev/null | tr -d '[:space:]')
+            case "$RAW" in
+              live:*) MODE=live; LIMIT="${RAW#live:}" ;;
+              *) MODE=dry ;;
+            esac
+          fi
+          [ -z "$LIMIT" ] && LIMIT=50
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+          echo "limit=$LIMIT" >> "$GITHUB_OUTPUT"
+          echo "Resolved: mode=$MODE limit=$LIMIT"
+      - name: Run apply
+        env:
+          RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
+          NODE_OPTIONS: "--max-old-space-size=6144"
+        run: |
+          CAT="${{ inputs.category }}"; [ -z "$CAT" ] && CAT=RAM
+          LIMIT="${{ steps.m.outputs.limit }}"
+          FLAG=""; [ "${{ steps.m.outputs.mode }}" = "dry" ] && FLAG="--dry-run"
+          echo "node apply-newegg-discoveries.cjs --category=$CAT --limit=$LIMIT $FLAG"
+          node apply-newegg-discoveries.cjs --category=$CAT --limit=$LIMIT $FLAG
+      - name: Assert catalog untouched (dry)
+        if: ${{ steps.m.outputs.mode == 'dry' }}
+        run: |
+          if ! git diff --quiet -- src/data/parts.js src/data/parts/; then
+            echo "::error::dry mode modified the catalog"; git diff --stat -- src/data/; exit 1
+          fi
+          echo "Clean: dry mode wrote nothing."
+      - name: Verify parts.js loads + chunks consistent (live)
+        if: ${{ steps.m.outputs.mode == 'live' }}
+        run: |
+          node -e "(async()=>{const m=await import('file://'+process.cwd().replace(/\\\\/g,'/')+'/src/data/parts.js?t='+Date.now());if(!Array.isArray(m.PARTS)||!m.PARTS.length)throw new Error('parts.js did not load an array');console.log('parts.js loads OK:',m.PARTS.length,'products')})().catch(e=>{console.error(e);process.exit(1)})"
+      - name: Commit batch to branch (live)
+        if: ${{ steps.m.outputs.mode == 'live' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # One-shot: reset the live trigger so this can't fire again unattended.
+          echo dry > apply-live.trigger
+          git add src/data/parts.js src/data/parts/ apply-live.trigger
+          if git diff --cached --quiet; then
+            echo "No catalog changes to commit."
+          else
+            git commit -m "feat(newegg): discovery apply capped batch (review before merge) [skip apply]"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
+      - name: Upload apply report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: apply-report
+          path: catalog-build/apply-*.json
+          if-no-files-found: warn

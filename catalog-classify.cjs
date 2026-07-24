@@ -234,16 +234,44 @@ function extractSpecs(title, category) {
     else if (/semi.?modular/i.test(t)) specs.modular = 'Semi';
     if (/atx\s*3\.[01]/i.test(t)) specs.atx3 = true;
   } else if (category === 'RAM') {
-    const speed = t.match(/(\d{4})\s*(MHz|MT)/i);
-    if (speed) specs.speed = parseInt(speed[1]);
-    const cap = t.match(/(\d+)\s*GB\s*\(/i) || t.match(/(\d+)\s*GB\s+kit/i);
+    // RAM titles come in two dialects. Amazon (curated) writes the specs
+    // adjacently and uniformly: "Corsair Vengeance DDR5 32GB (2x16GB) 6000MHz
+    // CL30". Newegg (raw feed) scatters them and omits the "MHz" suffix:
+    // "Kingston FURY Beast 64GB (2 x 32GB) 288-Pin PC RAM DDR5 5200 (PC5 41600)"
+    // or "64GB 5200MT/s DDR5 CL40". The old patterns only understood the Amazon
+    // dialect (speed required a 4-digit+MHz/MT pair; cap required a trailing "(")
+    // and so failed 594 of 628 real Newegg RAM listings — and also missed Amazon
+    // ECC modules ("32GB ECC 4800MHz", no parenthesis). Each field below tries
+    // the precise Amazon form first, then the looser Newegg forms.
+
+    // memType — DDR generation, or inferred from the PCn marketing class.
+    const ddr = t.match(/\bddr([2345])\b/i) || t.match(/\bpc([2345])[- ]?\d/i);
+    if (ddr) specs.memType = 'DDR' + ddr[1];
+
+    // capacity — the kit TOTAL, which both dialects state as the first "<n>GB"
+    // ("64GB (2 x 32GB)", "32GB (2x16GB)", "32GB ECC"). No longer requires a
+    // trailing "(", so bare "64GB 5200MT/s" and ECC modules now parse.
+    const cap = t.match(/(\d+)\s*GB\b/i);
     if (cap) specs.cap = parseInt(cap[1]);
-    const sticks = t.match(/\((\d+)\s*x\s*\d+gb\)/i);
+
+    // stick count — "(2 x 16GB)" / "(2x16GB)", or Newegg's reversed "(16GBx4)".
+    const sticks = t.match(/\((\d+)\s*x\s*\d+\s*gb\)/i);
     if (sticks) specs.sticks = parseInt(sticks[1]);
+    else { const rev = t.match(/\(\d+\s*gb\s*x\s*(\d+)\)/i); if (rev) specs.sticks = parseInt(rev[1]); }
+
+    // speed in MT/s (the number DDR marketing prints as "MHz"). Priority:
+    //   1. explicit "6000MHz" / "5200MT/s" / "800 MHz"  (3-5 digits)
+    //   2. the bare "DDR5 5200" form Newegg uses (number right after the DDR gen)
+    //   3. the PCn-NNNNN rating, where data rate = PC number / 8
+    //      (PC5-41600 -> 5200, PC4-25600 -> 3200, PC3-6400 -> 800)
+    let sp = t.match(/(\d{3,5})\s*(?:MHz|MT\/?s)\b/i);
+    if (sp) specs.speed = parseInt(sp[1]);
+    if (specs.speed == null && (sp = t.match(/\bddr[2345]\s*-?\s*(\d{4,5})\b/i))) specs.speed = parseInt(sp[1]);
+    if (specs.speed == null && (sp = t.match(/\bpc[2345][- ]?(\d{4,5})\b/i))) specs.speed = Math.round(parseInt(sp[1]) / 8);
+
+    // CAS latency
     const cl = t.match(/\bCL\s?(\d+)/i);
     if (cl) specs.cl = parseInt(cl[1]);
-    if (/ddr5/i.test(t)) specs.memType = 'DDR5';
-    else if (/ddr4/i.test(t)) specs.memType = 'DDR4';
   } else if (category === 'Storage') {
     const cap = t.match(/(\d+)\s*(TB|GB)/i);
     if (cap) {
@@ -255,6 +283,47 @@ function extractSpecs(title, category) {
     else if (/\bssd\b/i.test(t)) specs.storageType = 'SSD';
   }
   return specs;
+}
+
+// Derived RAM attributes that are booleans/enums rather than numeric specs.
+// Pure and unit-tested so the ECC-negation handling in particular can't regress:
+// a bare "ECC" must NOT count when the title actually says the module is non-ECC,
+// in any of the spellings vendors use ("non-ECC", "Non ECC", "NonECC",
+// "without ECC", "no ECC"). Registered modules (RDIMM/LRDIMM) are ECC by
+// definition and win regardless.
+function ramAttributes(title) {
+  const t = title || '';
+  const negEcc = /\b(non[-\s]?ecc|without\s+ecc|no\s+ecc)\b/i.test(t);
+  const ecc = /\b(rdimm|lrdimm)\b/i.test(t) || (/\becc\b/i.test(t) && !negEcc);
+  const rgb = /\brgb\b/i.test(t);
+  // Registered memory is RDIMM even when the title spells it "ECC Registered" /
+  // "ECC REG" rather than the literal "RDIMM" (7 such rows were mis-tagged UDIMM
+  // in the first consumer sample). SO-DIMM and LRDIMM are checked first.
+  const formFactor = /so-?dimm/i.test(t) ? 'SODIMM'
+    : /\blrdimm\b/i.test(t) ? 'LRDIMM'
+    : /\brdimm\b|\bregistered\b|\becc[\s-]*reg\b/i.test(t) ? 'RDIMM'
+    : 'UDIMM';
+  return { ecc, rgb, formFactor };
+}
+
+// Resolve the catalog brand for a DISCOVERED product. Prefer the title reading,
+// but fall back to the authoritative feed manufacturer when detectBrand returns
+// nothing OR an implausible chip-giant for the category (a mis-read off marketing
+// text — "AMD EXPO" / "Intel XMP" on a memory kit). This also covers brand
+// spellings the BRANDS patterns miss ("G. SKILL" / "G SKILL" vs "G.Skill") and
+// brands not in the BRANDS list at all (Silicon Power, V-Color, KLEVV, …), which
+// only ever resolve via the manufacturer field. The manufacturer for a RAM/PSU/
+// etc. product is never a chip giant, so this guarantees no AMD/Intel/NVIDIA
+// brand leaks onto a category those companies don't make.
+function cleanManufacturer(s) {
+  return String(s || '')
+    .replace(/\b(technology|technologies|corp\.?|corporation|inc\.?|co\.?|ltd\.?|memory)\b/gi, '')
+    .replace(/\s+/g, ' ').trim();
+}
+function resolveDiscoveryBrand(title, manufacturer, category) {
+  let b = detectBrand(title, '');
+  if (!b || implausibleBrandForCategory(b, category)) b = cleanManufacturer(manufacturer) || b || null;
+  return b;
 }
 
 module.exports = {
@@ -269,4 +338,7 @@ module.exports = {
   notBuildableReason,
   implausibleBrandForCategory,
   extractSpecs,
+  ramAttributes,
+  cleanManufacturer,
+  resolveDiscoveryBrand,
 };
