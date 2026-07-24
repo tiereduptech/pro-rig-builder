@@ -46,9 +46,14 @@ const LIMIT = parseInt(arg('limit', '0'), 10) || 0;      // 0 = no cap
 // Price-plausibility floor: reject a product whose price-per-unit is wildly out
 // of line with the category median (mispriced, legacy overstock, or a bad
 // listing — none belong in a catalog people trust for value comparisons). The
-// unit is category-specific ($/GB for RAM/Storage, $/W for PSU). Default 5x the
-// median; 0 disables. The median is taken over the survivor pool (current market).
-const PRICE_MULT = parseFloat(arg('price-mult', '5')) || 5;
+// unit is category-specific ($/GB for RAM/Storage, $/W for PSU). 0 disables.
+// The median is taken over the survivor pool (current market).
+//
+// Default 3x, not 5x, chosen from the 2026-07-24 full-pool data: the RAM survivor
+// $/GB p95 is ~$31 (matching the catalog's own known-good max of ~$32), so 5x
+// (~$78) left $50-62/GB listings in; 3x (~$47) drops exactly the handful that
+// exceed the trusted catalog range without touching any legitimate module.
+const PRICE_MULT = parseFloat(arg('price-mult', '3')) || 3;
 // $-per-unit for the floor, per category. Returns null when not computable.
 const PRICE_UNIT = {
   RAM: (specs, price) => (price && specs.cap ? price / specs.cap : null),
