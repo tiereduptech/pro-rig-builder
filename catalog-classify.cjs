@@ -306,6 +306,26 @@ function ramAttributes(title) {
   return { ecc, rgb, formFactor };
 }
 
+// Resolve the catalog brand for a DISCOVERED product. Prefer the title reading,
+// but fall back to the authoritative feed manufacturer when detectBrand returns
+// nothing OR an implausible chip-giant for the category (a mis-read off marketing
+// text — "AMD EXPO" / "Intel XMP" on a memory kit). This also covers brand
+// spellings the BRANDS patterns miss ("G. SKILL" / "G SKILL" vs "G.Skill") and
+// brands not in the BRANDS list at all (Silicon Power, V-Color, KLEVV, …), which
+// only ever resolve via the manufacturer field. The manufacturer for a RAM/PSU/
+// etc. product is never a chip giant, so this guarantees no AMD/Intel/NVIDIA
+// brand leaks onto a category those companies don't make.
+function cleanManufacturer(s) {
+  return String(s || '')
+    .replace(/\b(technology|technologies|corp\.?|corporation|inc\.?|co\.?|ltd\.?|memory)\b/gi, '')
+    .replace(/\s+/g, ' ').trim();
+}
+function resolveDiscoveryBrand(title, manufacturer, category) {
+  let b = detectBrand(title, '');
+  if (!b || implausibleBrandForCategory(b, category)) b = cleanManufacturer(manufacturer) || b || null;
+  return b;
+}
+
 module.exports = {
   stripCompatClauses,
   brandInText,
@@ -319,4 +339,6 @@ module.exports = {
   implausibleBrandForCategory,
   extractSpecs,
   ramAttributes,
+  cleanManufacturer,
+  resolveDiscoveryBrand,
 };

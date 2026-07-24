@@ -12,7 +12,7 @@ import { test } from 'node:test';
 import assert from 'node:assert';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
-const { extractSpecs, ramAttributes } = require('../catalog-classify.cjs');
+const { extractSpecs, ramAttributes, resolveDiscoveryBrand } = require('../catalog-classify.cjs');
 
 // Each row: [title, expected-subset]. We assert every named field equals; fields
 // not named must be absent (so a wrong extraction that INVENTS a value fails).
@@ -104,6 +104,40 @@ test('ramAttributes: rgb + formFactor (incl. Registered/REG -> RDIMM)', () => {
   assert.strictEqual(ramAttributes('Kingston 32GB DDR5 ECC 4800 unbuffered UDIMM').formFactor, 'UDIMM'); // consumer ECC stays UDIMM
   assert.strictEqual(ramAttributes('… RGB DDR5 …').rgb, true);
   assert.strictEqual(ramAttributes('… DDR5 …').rgb, false);
+});
+
+// ── Brand resolution: no chip-giant leaks, spacing/punctuation variants ──────
+// The 07-24 batch branded 7 G.Skill "AMD EXPO" kits as "AMD". Resolution must
+// prefer the title but fall back to the feed manufacturer on a chip-giant/miss,
+// and must NEVER return AMD/Intel/NVIDIA for RAM.
+test('resolveDiscoveryBrand: chip-giant EXPO/XMP mis-reads fall back to manufacturer', () => {
+  // [title, manufacturer, expected]
+  const cases = [
+    ['G. SKILL Trident Z5 Neo AMD EXPO 32GB DDR5 6000', 'G.Skill', 'G.Skill'],   // space after period + AMD EXPO
+    ['G.Skill Ripjaws S5 DDR5 32GB 6000 CL30', 'G.Skill', 'G.Skill'],            // canonical -> detectBrand
+    ['G.SKILL Trident Z5 DDR5 32GB', 'G.Skill', 'G.Skill'],                      // all caps, period
+    ['G SKILL Flare X5 AMD EXPO DDR5 32GB', 'G.Skill', 'G.Skill'],               // space, no period + AMD
+    ['CORSAIR Dominator Intel XMP DDR5 32GB', 'Corsair', 'Corsair'],             // detectBrand finds Corsair
+    ['Team T-Force Delta RGB DDR5 32GB', 'Team Group', 'Team Group'],            // not in BRANDS -> manufacturer
+    ['TEAMGROUP T-Create DDR5 32GB', 'TeamGroup', 'TeamGroup'],
+    ['Silicon Power DDR5 32GB AMD EXPO 6000', 'Silicon Power', 'Silicon Power'], // not in BRANDS + AMD -> mfr
+    ['V-COLOR DDR5 64GB 6400 Intel XMP', 'V-Color', 'V-Color'],
+    ['KLEVV CRAS DDR5 32GB AMD EXPO', 'KLEVV', 'KLEVV'],
+    ['Kingston FURY Beast DDR5 32GB Intel XMP', 'Kingston Technology', 'Kingston'], // mfr cleaned
+  ];
+  for (const [title, mfr, exp] of cases) {
+    assert.strictEqual(resolveDiscoveryBrand(title, mfr, 'RAM'), exp, `${title}`);
+  }
+});
+test('resolveDiscoveryBrand: never returns a chip giant for RAM', () => {
+  for (const [title, mfr] of [
+    ['G. SKILL AMD EXPO 32GB DDR5', 'G.Skill'],
+    ['Corsair Vengeance AMD EXPO / Intel XMP 32GB', 'Corsair'],
+    ['NoName DDR5 AMD EXPO', 'PNY'],
+  ]) {
+    const b = resolveDiscoveryBrand(title, mfr, 'RAM');
+    assert.ok(!['AMD', 'Intel', 'NVIDIA'].includes(b), `${title} -> ${b}`);
+  }
 });
 
 // ── Consumer-RAM gate: exclude registered/server, keep consumer ECC UDIMM ─────

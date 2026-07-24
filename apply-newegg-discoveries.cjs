@@ -117,7 +117,6 @@ const detectCondition = (n) => {
 };
 const normUPC = (u) => String(u || '').replace(/\D/g, '').replace(/^0+/, '');
 const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_/]/g, ''); return (c.length < 5 || /^\d+$/.test(c)) ? '' : c; };
-const cleanBrand = (s) => String(s || '').replace(/\b(technology|technologies|corp\.?|corporation|inc\.?|co\.?|ltd\.?|memory)\b/gi, '').replace(/\s+/g, ' ').trim();
 
 // Build the catalog insert row in the approved shape. Specs from extractSpecs
 // (spread top-level), plus category-specific derived flags.
@@ -127,14 +126,7 @@ function buildRow(rec, id, NEG) {
   const priceRetail = parseFloat(rec.retail_price) || null;
   const priceSale = parseFloat(rec.sale_price) || null;
   const pr = priceSale && priceSale > 0 ? priceSale : priceRetail;
-  // Brand: prefer the title reading, but a chip-giant result (AMD/Intel/NVIDIA)
-  // for a non-CPU/GPU category is almost always a mis-detect off marketing text
-  // ("AMD EXPO" on a G.Skill kit — 7 such rows branded "AMD" in the 07-24 batch);
-  // fall back to the authoritative feed manufacturer in that case.
-  let brand = CC.detectBrand(name, '');
-  if (!brand || CC.implausibleBrandForCategory(brand, CATEGORY)) {
-    brand = cleanBrand(rec.manufacturer || rec.brand2) || brand || null;
-  }
+  const brand = CC.resolveDiscoveryBrand(name, rec.manufacturer || rec.brand2, CATEGORY);
   const itemNumber = rec.newegg_item_number || rec.sku;
 
   const row = {
