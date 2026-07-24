@@ -263,14 +263,18 @@ function buildRow(rec, id, NEG) {
     const vals = withPpu.map((x) => x.ppu).filter((v) => v != null && v > 0).sort((a, b) => a - b);
     const median = vals.length ? vals[Math.floor(vals.length / 2)] : null;
     if (median != null) {
+      const pct = (q) => Number(vals[Math.min(vals.length - 1, Math.floor(vals.length * q))].toFixed(2));
       const threshold = median * PRICE_MULT;
       const dropped = withPpu.filter((x) => x.ppu != null && x.ppu > threshold);
       pooled = withPpu.filter((x) => x.ppu == null || x.ppu <= threshold).map((x) => x.rec);
       floorInfo = {
         applied: true, unit: CATEGORY === 'PSU' ? '$/W' : '$/GB',
-        median: Number(median.toFixed(3)), threshold: Number(threshold.toFixed(3)),
-        mult: PRICE_MULT, dropped: dropped.length,
-        droppedSamples: dropped.slice(0, 15).map((x) => ({ name: x.rec.product_name.slice(0, 70), ppu: Number(x.ppu.toFixed(2)), price: priceOf(x.rec) })),
+        median: Number(median.toFixed(3)), threshold: Number(threshold.toFixed(3)), mult: PRICE_MULT,
+        distribution: { p50: pct(0.50), p75: pct(0.75), p90: pct(0.90), p95: pct(0.95), p99: pct(0.99), max: pct(1) },
+        // What each candidate multiplier would drop, so the choice is on evidence.
+        droppedAt: [2.5, 3, 4, 5].reduce((o, mm) => (o[mm] = withPpu.filter((x) => x.ppu != null && x.ppu > median * mm).length, o), {}),
+        dropped: dropped.length,
+        droppedSamples: dropped.slice(0, 20).map((x) => ({ name: x.rec.product_name.slice(0, 70), ppu: Number(x.ppu.toFixed(2)), price: priceOf(x.rec) })),
       };
     }
   }
