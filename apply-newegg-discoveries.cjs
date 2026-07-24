@@ -79,6 +79,18 @@ const SPEC_BAR = {
   Storage: (sp) => sp.cap != null && sp.storageType != null,
 };
 const PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gaming Desktop|Barebone|Bundle|Combo)\b/i;
+
+// Per-category "wrong class for a consumer/gaming build" rejects — the same class
+// of problem as wrong-category junk. For RAM: registered/server memory (RDIMM,
+// LRDIMM, "ECC Registered", "Server Memory") will not POST in a consumer board.
+// Consumer ECC UDIMM (unbuffered; some AM5 boards accept it) is deliberately NOT
+// rejected — only registered/server modules are.
+// NOTE for later per-category gates: this enterprise/server split recurs —
+// Storage (enterprise SAS drives), PSU (redundant/hot-swap server supplies),
+// Cooling (rackmount/redundant fans). Add an analogous reject when those run.
+const CATEGORY_REJECT = {
+  RAM: (name) => (/\b(rdimm|lrdimm|registered|server\s+memory)\b|\becc[\s-]*reg\b/i.test(name) ? 'server_ecc_ram' : null),
+};
 const detectCondition = (n) => {
   const N = (n || '').toUpperCase();
   if (/\bOPEN[\s-]?BOX\b/.test(N)) return 'openbox';
@@ -160,7 +172,8 @@ function buildRow(rec, id, NEG) {
     }
   }
 
-  const stat = { leaf: 0, deletedOOS: 0, marketplace: 0, accessory: 0, prebuilt: 0, condition: 0,
+  const catReject = CATEGORY_REJECT[CATEGORY] || (() => null);
+  const stat = { leaf: 0, deletedOOS: 0, marketplace: 0, accessory: 0, prebuilt: 0, condition: 0, categoryReject: 0,
     dedupeCatalog: { upc: 0, mpn: 0, name: 0 }, dedupeBatch: { upc: 0, mpn: 0 }, specBar: 0, survivors: 0 };
   const seenUpc = new Set(), seenMpn = new Set();
   // Collect ALL passing records (whole feed, no early stop), then sample ACROSS
@@ -198,6 +211,7 @@ function buildRow(rec, id, NEG) {
         if (CC.notBuildableReason(name)) { stat.accessory++; return; }
         if (PREBUILT_RE.test(name)) { stat.prebuilt++; return; }
         if (detectCondition(name) !== 'new') { stat.condition++; return; }
+        if (catReject(name)) { stat.categoryReject++; return; }   // server/enterprise class
 
         // dedupe vs catalog: UPC -> MPN -> name(variant-guarded)
         const u = normUPC(rec.upc), m = normMPN(rec.mpn);
@@ -245,7 +259,7 @@ function buildRow(rec, id, NEG) {
   fs.mkdirSync(path.dirname(REPORT_PATH), { recursive: true });
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2));
 
-  log(`\nFunnel: leaf ${stat.leaf} | mkt ${stat.marketplace} | acc ${stat.accessory} | prebuilt ${stat.prebuilt} | cond ${stat.condition} | dedupCat ${stat.dedupeCatalog.upc + stat.dedupeCatalog.mpn + stat.dedupeCatalog.name} | dedupBatch ${stat.dedupeBatch.upc + stat.dedupeBatch.mpn} | specBar ${stat.specBar}`);
+  log(`\nFunnel: leaf ${stat.leaf} | mkt ${stat.marketplace} | acc ${stat.accessory} | prebuilt ${stat.prebuilt} | cond ${stat.condition} | serverEcc ${stat.categoryReject} | dedupCat ${stat.dedupeCatalog.upc + stat.dedupeCatalog.mpn + stat.dedupeCatalog.name} | dedupBatch ${stat.dedupeBatch.upc + stat.dedupeBatch.mpn} | specBar ${stat.specBar}`);
   log(`Total distinct survivors: ${stat.survivors} | selected this run: ${rows.length}${LIMIT && LIMIT < stat.survivors ? ' (strided across pool)' : ''}`);
 
   if (DRY_RUN) {

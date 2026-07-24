@@ -94,11 +94,34 @@ for (const [title, exp] of ECC_CASES) {
   test(`ecc: ${title.slice(0, 44)}`, () => assert.strictEqual(ramAttributes(title).ecc, exp, title));
 }
 
-test('ramAttributes: rgb + formFactor', () => {
+test('ramAttributes: rgb + formFactor (incl. Registered/REG -> RDIMM)', () => {
   assert.strictEqual(ramAttributes('… SO-DIMM DDR4 …').formFactor, 'SODIMM');
   assert.strictEqual(ramAttributes('… RDIMM …').formFactor, 'RDIMM');
   assert.strictEqual(ramAttributes('… LRDIMM …').formFactor, 'LRDIMM');
+  assert.strictEqual(ramAttributes('Black Diamond 16GB ECC Registered DDR4 2400').formFactor, 'RDIMM');
+  assert.strictEqual(ramAttributes('Black Diamond 16GB DDR5 5200 ECC REG Memory').formFactor, 'RDIMM');
   assert.strictEqual(ramAttributes('Corsair Vengeance DDR5 …').formFactor, 'UDIMM');
+  assert.strictEqual(ramAttributes('Kingston 32GB DDR5 ECC 4800 unbuffered UDIMM').formFactor, 'UDIMM'); // consumer ECC stays UDIMM
   assert.strictEqual(ramAttributes('… RGB DDR5 …').rgb, true);
   assert.strictEqual(ramAttributes('… DDR5 …').rgb, false);
+});
+
+// ── Consumer-RAM gate: exclude registered/server, keep consumer ECC UDIMM ─────
+// Mirrors CATEGORY_REJECT.RAM in apply-newegg-discoveries.cjs (kept in sync).
+const isServerRam = (name) => /\b(rdimm|lrdimm|registered|server\s+memory)\b|\becc[\s-]*reg\b/i.test(name);
+test('consumer-RAM gate: rejects registered/server, keeps consumer ECC UDIMM', () => {
+  // rejected (won't POST in a consumer board)
+  for (const n of [
+    'Black Diamond Server Memory 16GB DDR3 ECC Registered',
+    'Micron 32GB DDR4 LRDIMM 2Rx4 2666',
+    'Samsung 64GB DDR5 ECC RDIMM 4800',
+    'Black Diamond 16GB DDR5 5200 ECC REG Memory',
+    'Axiom 8GB ECC Unbuffered DDR3 1600 Server Memory',
+  ]) assert.ok(isServerRam(n), `should reject: ${n}`);
+  // kept (consumer)
+  for (const n of [
+    'Corsair Vengeance DDR5 32GB (2x16GB) 6000MHz CL30',
+    'Kingston Server Premier DDR5 32GB ECC 4800MHz UDIMM',   // consumer ECC UDIMM
+    'G.Skill Trident Z5 DDR5 64GB (2x32GB) 6000 CL30',
+  ]) assert.ok(!isServerRam(n), `should keep: ${n}`);
 });

@@ -296,9 +296,12 @@ function ramAttributes(title) {
   const negEcc = /\b(non[-\s]?ecc|without\s+ecc|no\s+ecc)\b/i.test(t);
   const ecc = /\b(rdimm|lrdimm)\b/i.test(t) || (/\becc\b/i.test(t) && !negEcc);
   const rgb = /\brgb\b/i.test(t);
+  // Registered memory is RDIMM even when the title spells it "ECC Registered" /
+  // "ECC REG" rather than the literal "RDIMM" (7 such rows were mis-tagged UDIMM
+  // in the first consumer sample). SO-DIMM and LRDIMM are checked first.
   const formFactor = /so-?dimm/i.test(t) ? 'SODIMM'
     : /\blrdimm\b/i.test(t) ? 'LRDIMM'
-    : /\brdimm\b/i.test(t) ? 'RDIMM'
+    : /\brdimm\b|\bregistered\b|\becc[\s-]*reg\b/i.test(t) ? 'RDIMM'
     : 'UDIMM';
   return { ecc, rgb, formFactor };
 }
