@@ -438,7 +438,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-07-23"
+    "quarantinedAt": "2026-07-25"
   },
   {
     "id": 10012,
@@ -1232,7 +1232,7 @@ export default [
     "bench": 31,
     "deals": {
       "amazon": {
-        "price": 152.98,
+        "price": 164,
         "url": "https://www.amazon.com/dp/B09VCHR1VH?tag=tiereduptech-20",
         "inStock": true
       },
@@ -1316,7 +1316,7 @@ export default [
     "bench": 28,
     "deals": {
       "amazon": {
-        "price": 184.99,
+        "price": 145,
         "url": "https://www.amazon.com/dp/B092L9GF5N?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1711,7 +1711,7 @@ export default [
     "bench": 58,
     "deals": {
       "amazon": {
-        "price": 356.49,
+        "price": 329.99,
         "url": "https://www.amazon.com/dp/B0CQ1P2TRN?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2075,7 +2075,7 @@ export default [
     "bench": 22,
     "deals": {
       "amazon": {
-        "price": 114.23,
+        "price": 104.99,
         "url": "https://www.amazon.com/dp/B0CQ1MN1Y2?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2807,7 +2807,7 @@ export default [
     "bench": 27,
     "deals": {
       "amazon": {
-        "price": 244.99,
+        "price": 210,
         "url": "https://www.amazon.com/dp/B09NMPD8V2?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2896,7 +2896,7 @@ export default [
     "bench": 18,
     "deals": {
       "amazon": {
-        "price": 268.99,
+        "price": 290.42,
         "url": "https://www.amazon.com/dp/B09NPHJLPT?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3163,7 +3163,7 @@ export default [
     "reviews": 712,
     "deals": {
       "amazon": {
-        "price": 250,
+        "price": 179.99,
         "url": "https://www.amazon.com/dp/B09GYKK56H?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3361,7 +3361,7 @@ export default [
     "reviews": 107,
     "deals": {
       "amazon": {
-        "price": 255.42,
+        "price": 291.97,
         "url": "https://www.amazon.com/dp/B0CQ3HKJYV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3836,7 +3836,7 @@ export default [
     "bench": 51,
     "bundle": true,
     "needsReview": true,
-    "quarantinedAt": "2026-07-23"
+    "quarantinedAt": "2026-07-25"
   },
   {
     "id": 10145,
@@ -4215,7 +4215,7 @@ export default [
     "threads": 24,
     "bench": 78,
     "bundle": true,
-    "quarantinedAt": "2026-07-23",
+    "quarantinedAt": "2026-07-25",
     "needsReview": true
   },
   {
@@ -4286,7 +4286,7 @@ export default [
     "bench": 37,
     "bundle": true,
     "vcache": true,
-    "quarantinedAt": "2026-07-23",
+    "quarantinedAt": "2026-07-25",
     "needsReview": true
   },
   {
@@ -4502,7 +4502,7 @@ export default [
     "maxMem": "192 gigabytes",
     "unlocked": true,
     "bench": 83,
-    "quarantinedAt": "2026-07-23",
+    "quarantinedAt": "2026-07-25",
     "needsReview": true
   },
   {
@@ -4591,7 +4591,7 @@ export default [
     "maxMem": "192 gigabytes",
     "unlocked": true,
     "bench": 55,
-    "quarantinedAt": "2026-07-23",
+    "quarantinedAt": "2026-07-25",
     "needsReview": true
   },
   {
@@ -4855,7 +4855,7 @@ export default [
         "inStock": true
       },
       "amazon": {
-        "price": 194.93,
+        "price": 179.99,
         "url": "https://www.amazon.com/dp/B0DFK2P311?tag=tiereduptech-20",
         "inStock": true
       },
@@ -4922,7 +4922,7 @@ export default [
     "maxMem": "192 gigabytes",
     "unlocked": true,
     "bench": 96,
-    "quarantinedAt": "2026-07-23",
+    "quarantinedAt": "2026-07-25",
     "needsReview": true
   },
   {
@@ -5308,7 +5308,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/51JJfDCTQ3L._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "price": 166.87,
+        "price": 157.99,
         "url": "https://www.amazon.com/dp/B0DT7CW7VR?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5455,7 +5455,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/51DY7a--LrL._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "price": 439,
+        "price": 267.75,
         "url": "https://www.amazon.com/dp/B09MDD882B?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5626,7 +5626,7 @@ export default [
     "memType": "DDR4",
     "igpu": true,
     "needsReview": true,
-    "quarantinedAt": "2026-07-23"
+    "quarantinedAt": "2026-07-25"
   },
   {
     "id": 10194,
@@ -5729,7 +5729,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/71P3chRzgNL._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "price": 335.9,
+        "price": 355.16,
         "url": "https://www.amazon.com/dp/B086ML4XSB?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5755,7 +5755,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/714-1OvyFIL._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "price": 348.93,
+        "price": 279.9,
         "url": "https://www.amazon.com/dp/B086MMS6FV?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5807,7 +5807,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/51honjJxV7L._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "price": 319,
+        "price": 295,
         "url": "https://www.amazon.com/dp/B086MN2XYL?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5833,7 +5833,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/81eoV5SY8RL._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "price": 199,
+        "price": 175,
         "url": "https://www.amazon.com/dp/B086MHSH2C?tag=tiereduptech-20",
         "inStock": true
       },
@@ -6138,7 +6138,7 @@ export default [
       "amazon": {
         "asin": "B0BMQK718H",
         "url": "https://www.amazon.com/dp/B0BMQK718H?tag=tiereduptech-20",
-        "price": 459.96,
+        "price": 409.49,
         "inStock": true
       }
     },
@@ -6275,7 +6275,7 @@ export default [
       "amazon": {
         "asin": "B0BMQJWBDM",
         "url": "https://www.amazon.com/dp/B0BMQJWBDM?tag=tiereduptech-20",
-        "price": 209.9,
+        "price": 222.15,
         "inStock": true
       }
     },
@@ -6453,7 +6453,7 @@ export default [
       "amazon": {
         "asin": "B0DT7JDLDH",
         "url": "https://www.amazon.com/dp/B0DT7JDLDH?tag=tiereduptech-20",
-        "price": 678.95,
+        "price": 579.99,
         "inStock": true
       }
     },
@@ -6600,7 +6600,7 @@ export default [
       "amazon": {
         "asin": "B01MSTDS3N",
         "url": "https://www.amazon.com/dp/B01MSTDS3N?tag=tiereduptech-20",
-        "price": 137,
+        "price": 80.98,
         "inStock": true
       }
     },
@@ -6665,7 +6665,7 @@ export default [
     "tdp": 65,
     "igpu": true,
     "bench": 8,
-    "quarantinedAt": "2026-07-23",
+    "quarantinedAt": "2026-07-25",
     "needsReview": true
   },
   {
@@ -6692,7 +6692,7 @@ export default [
     "tdp": 65,
     "igpu": true,
     "bench": 19,
-    "quarantinedAt": "2026-07-19",
+    "quarantinedAt": "2026-07-25",
     "needsReview": true
   },
   {
@@ -7145,7 +7145,7 @@ export default [
     "tdp": 58,
     "bench": 5,
     "needsReview": true,
-    "quarantinedAt": "2026-07-23"
+    "quarantinedAt": "2026-07-25"
   },
   {
     "id": 100594,
@@ -7346,7 +7346,7 @@ export default [
     "socket": "LGA1151",
     "tdp": 54,
     "bench": 4,
-    "quarantinedAt": "2026-07-23",
+    "quarantinedAt": "2026-07-25",
     "needsReview": true
   },
   {
@@ -7411,7 +7411,7 @@ export default [
       "amazon": {
         "asin": "B07S8DWC81",
         "url": "https://www.amazon.com/dp/B07S8DWC81?tag=tiereduptech-20",
-        "price": 68,
+        "price": 80,
         "inStock": true
       }
     },
@@ -7677,7 +7677,7 @@ export default [
     "tdp": 65,
     "bench": 35,
     "needsReview": true,
-    "quarantinedAt": "2026-07-23"
+    "quarantinedAt": "2026-07-25"
   },
   {
     "id": 100616,
@@ -7728,7 +7728,7 @@ export default [
     "tdp": 65,
     "igpu": true,
     "bench": 28,
-    "quarantinedAt": "2026-07-21",
+    "quarantinedAt": "2026-07-25",
     "needsReview": true
   },
   {
@@ -7871,7 +7871,7 @@ export default [
       "amazon": {
         "asin": "B0C6YQSN8P",
         "url": "https://www.amazon.com/dp/B0C6YQSN8P?tag=tiereduptech-20",
-        "price": 629.99,
+        "price": 709.99,
         "inStock": true
       }
     },
@@ -8423,7 +8423,7 @@ export default [
     "socket": "SWRX8",
     "tdp": 280,
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-25"
   },
   {
     "id": 100648,
@@ -8438,7 +8438,7 @@ export default [
       "amazon": {
         "asin": "B0CK2T1HSS",
         "url": "https://www.amazon.com/dp/B0CK2T1HSS?tag=tiereduptech-20",
-        "price": 2701.33,
+        "price": 2837.99,
         "inStock": true
       },
       "newegg": {
