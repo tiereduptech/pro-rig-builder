@@ -293,17 +293,56 @@ function extractSpecs(title, category) {
 // definition and win regardless.
 function ramAttributes(title) {
   const t = title || '';
+  // "On-die ECC" is a STANDARD internal feature of every DDR5 die (a marketing
+  // bullet on consumer gaming kits — Lexar Thor Z "…On-die ECC, PMIC…for Gaming"),
+  // NOT server/ECC-UDIMM memory. It must not set the ecc flag, so strip the phrase
+  // before reading a bare "ECC" as a real ECC signal. (Registered detection below
+  // uses its own explicit tokens and is unaffected.)
+  const tNoOnDie = t.replace(/\bon[-\s]?die\s+ecc\b/ig, '');
   const negEcc = /\b(non[-\s]?ecc|without\s+ecc|no\s+ecc)\b/i.test(t);
-  const ecc = /\b(rdimm|lrdimm)\b/i.test(t) || (/\becc\b/i.test(t) && !negEcc);
+  // Registered memory is ECC by definition. Match HYPHENATED spellings too
+  // ("R-DIMM", "LR-DIMM") — audit §3/§5 leak: the old /\b(rdimm|lrdimm)\b/ missed
+  // the hyphen, so TEAMGROUP "... R-DIMM 192GB" workstation kits were tagged
+  // UDIMM/non-ECC and slipped past the server gate.
+  const registered = /\b(lr-?dimm|r-?dimm|registered|buffered)\b|\becc[\s-]*reg\b/i.test(t);
+  const ecc = registered || (/\becc\b/i.test(tNoOnDie) && !negEcc);
   const rgb = /\brgb\b/i.test(t);
-  // Registered memory is RDIMM even when the title spells it "ECC Registered" /
-  // "ECC REG" rather than the literal "RDIMM" (7 such rows were mis-tagged UDIMM
-  // in the first consumer sample). SO-DIMM and LRDIMM are checked first.
-  const formFactor = /so-?dimm/i.test(t) ? 'SODIMM'
-    : /\blrdimm\b/i.test(t) ? 'LRDIMM'
-    : /\brdimm\b|\bregistered\b|\becc[\s-]*reg\b/i.test(t) ? 'RDIMM'
+  // Laptop memory: literal SO-DIMM spellings PLUS the tokens vendors use when they
+  // OMIT the word "SODIMM" — pin counts (204-pin DDR3, 260-pin DDR4, 262-pin DDR5)
+  // and the words "laptop"/"notebook". Audit §3/§5 leak: the literal-only regex
+  // missed "32GB ... Laptop Memory, 260-Pin" seed rows and tagged them UDIMM.
+  // 288-pin (desktop DIMM) is deliberately NOT matched.
+  const sodimm = /so-?dimm|s\.o\.dimm|\b(204|260|262)[\s-]*pin\b|\b(laptop|notebook)\b/i.test(t);
+  const formFactor = sodimm ? 'SODIMM'
+    : /\blr-?dimm\b/i.test(t) ? 'LRDIMM'
+    : /\br-?dimm\b|\bregistered\b|\becc[\s-]*reg\b/i.test(t) ? 'RDIMM'
     : 'UDIMM';
   return { ecc, rgb, formFactor };
+}
+
+// RAM scope gate — SINGLE SOURCE for "does this RAM belong in a consumer/gaming
+// DESKTOP catalog?". Called by the discovery pipeline (apply-newegg-discoveries)
+// so laptop/server/ECC memory can never be re-added on a future ingest.
+//
+// In scope = unbuffered, non-ECC, desktop DIMM only. Rejected, in order:
+//   • laptop  — SODIMM / SO-DIMM / 204-260-262-pin / "laptop" / "notebook"
+//   • server  — RDIMM / R-DIMM / LRDIMM / LR-DIMM / registered / buffered
+//   • ECC     — any ECC, INCLUDING consumer unbuffered ECC UDIMM (now out of scope)
+// PRIMARY test is the formFactor/ecc that ramAttributes() computes; the raw-name
+// regexes below are only a backstop for titles the attribute pass can't read.
+function ramRejectReason(name) {
+  const t = name || '';
+  const a = ramAttributes(t);
+  // A — form factor: keep only DIMM/UDIMM; anything else is out of scope.
+  if (a.formFactor === 'SODIMM') return 'laptop_sodimm';
+  if (a.formFactor === 'RDIMM' || a.formFactor === 'LRDIMM') return 'server_registered_ram';
+  // B — server/registered name backstop (hyphenated forms + buffered + "server memory")
+  if (/\b(lr-?dimm|r-?dimm|registered|buffered|server\s+memory)\b|\becc[\s-]*reg\b/i.test(t)) return 'server_registered_ram';
+  // B — ECC now out of scope entirely (incl. consumer unbuffered ECC UDIMM)
+  if (a.ecc) return 'ecc_ram';
+  // A — laptop name backstop (defense in depth vs an attribute miss)
+  if (/so-?dimm|s\.o\.dimm|\b(204|260|262)[\s-]*pin\b|\b(laptop|notebook)\b/i.test(t)) return 'laptop_sodimm';
+  return null;
 }
 
 // Resolve the catalog brand for a DISCOVERED product. Prefer the title reading,
@@ -339,6 +378,7 @@ module.exports = {
   implausibleBrandForCategory,
   extractSpecs,
   ramAttributes,
+  ramRejectReason,
   cleanManufacturer,
   resolveDiscoveryBrand,
 };

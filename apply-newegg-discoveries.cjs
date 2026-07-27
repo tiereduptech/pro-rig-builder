@@ -98,15 +98,16 @@ const SPEC_BAR = {
 const PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gaming Desktop|Barebone|Bundle|Combo)\b/i;
 
 // Per-category "wrong class for a consumer/gaming build" rejects — the same class
-// of problem as wrong-category junk. For RAM: registered/server memory (RDIMM,
-// LRDIMM, "ECC Registered", "Server Memory") will not POST in a consumer board.
-// Consumer ECC UDIMM (unbuffered; some AM5 boards accept it) is deliberately NOT
-// rejected — only registered/server modules are.
+// of problem as wrong-category junk. For RAM the scope gate is CC.ramRejectReason
+// (SINGLE SOURCE in catalog-classify.cjs): it rejects laptop (SODIMM/260-262-pin/
+// "laptop"/"notebook"), server (RDIMM/R-DIMM/LRDIMM/LR-DIMM/registered/buffered)
+// AND all ECC — consumer unbuffered ECC UDIMM is now OUT of scope too (2026-07-27
+// audit). It gates primarily on the computed formFactor/ecc, with a name backstop.
 // NOTE for later per-category gates: this enterprise/server split recurs —
 // Storage (enterprise SAS drives), PSU (redundant/hot-swap server supplies),
 // Cooling (rackmount/redundant fans). Add an analogous reject when those run.
 const CATEGORY_REJECT = {
-  RAM: (name) => (/\b(rdimm|lrdimm|registered|server\s+memory)\b|\becc[\s-]*reg\b/i.test(name) ? 'server_ecc_ram' : null),
+  RAM: (name) => CC.ramRejectReason(name),
 };
 const detectCondition = (n) => {
   const N = (n || '').toUpperCase();
@@ -260,10 +261,41 @@ function buildRow(rec, id, NEG) {
   // (cap/watts) is present and $/unit is always computable.
   const priceOf = (rec) => { const s = parseFloat(rec.sale_price); const r2 = parseFloat(rec.retail_price); return s > 0 ? s : r2; };
   const unitFn = PRICE_UNIT[CATEGORY];
-  let floorInfo = { applied: false, median: null, threshold: null, dropped: 0, unit: null };
   let pooled = survivorRecs;
+
+  // ── Absolute price GATE — validatePriceBatch (floor AND ceiling) ─────────────
+  // Anchored to real market, so it catches a systematically inflated feed the
+  // median-relative floor below cannot. Fresh-discovery policy (2026-07-27): a
+  // row that misses the real-market band is QUARANTINED — inserted needsReview:
+  // true + quarantinedAt (held, hidden until a human clears it), NEVER silently
+  // dropped and NEVER published. Runs BEFORE the relative floor; both apply to
+  // the live-eligible pool. validatePriceBatch also emits the loud stale-ceiling /
+  // table-age warnings (non-fatal). See priceValidate in normalize-product-name.js.
+  const gate = CAP.validatePriceBatch(
+    pooled.map((rec) => ({ category: CATEGORY, specs: CC.extractSpecs(rec.product_name, CATEGORY), price: priceOf(rec), rec })),
+    { today: TODAY },
+  );
+  const quarantinedRecs = gate.quarantined.map((e) => ({ rec: e.row.rec, verdict: e.verdict }));
+  const ceilInfo = {
+    applied: true,
+    quarantined: gate.quarantined.length,
+    failureRate: gate.failureRate,
+    calibratedAt: gate.calibratedAt,
+    ceilAgeDays: gate.ceilingAgeDays,
+    warnings: gate.warnings,
+    samples: quarantinedRecs.slice(0, 20).map(({ rec, verdict }) => ({
+      name: rec.product_name.slice(0, 70), ppu: verdict.ppu, reason: verdict.reason,
+      floor: verdict.floor, ceiling: verdict.ceiling, unit: verdict.unit, key: verdict.key,
+    })),
+  };
+  // Live-eligible pool = ok + skipped (unguarded categories / $/unit not computable
+  // admit through — fail-open on missing data). Quarantined rows leave the pool.
+  pooled = [...gate.ok, ...gate.skipped].map((e) => e.row.rec);
+
+  // ── Relative price-plausibility floor (ADDITIONAL intra-pool outlier check) ──
+  let floorInfo = { applied: false, median: null, threshold: null, dropped: 0, unit: null };
   if (PRICE_MULT > 0 && unitFn) {
-    const withPpu = survivorRecs.map((rec) => ({ rec, ppu: unitFn(CC.extractSpecs(rec.product_name, CATEGORY), priceOf(rec)) }));
+    const withPpu = pooled.map((rec) => ({ rec, ppu: unitFn(CC.extractSpecs(rec.product_name, CATEGORY), priceOf(rec)) }));
     const vals = withPpu.map((x) => x.ppu).filter((v) => v != null && v > 0).sort((a, b) => a - b);
     const median = vals.length ? vals[Math.floor(vals.length / 2)] : null;
     if (median != null) {
@@ -292,7 +324,18 @@ function buildRow(rec, id, NEG) {
     return out;
   };
   const selected = strideSample(pooled, LIMIT);
-  const rows = selected.map((rec) => buildRow(rec, allocId(), NEG));
+  const liveRows = selected.map((rec) => buildRow(rec, allocId(), NEG));
+  // Quarantined discoveries: inserted HELD, and NEVER sampled away — the safety
+  // net must not silently drop rows. Stamped with the same needsReview/quarantinedAt
+  // convention the rest of the catalog uses, plus the failing price verdict.
+  const quarantineRows = quarantinedRecs.map(({ rec, verdict }) => {
+    const r = buildRow(rec, allocId(), NEG);
+    r.needsReview = true;
+    r.quarantinedAt = TODAY;
+    r.priceQuarantine = { reason: verdict.reason, ppu: verdict.ppu, unit: verdict.unit, floor: verdict.floor, ceiling: verdict.ceiling };
+    return r;
+  });
+  const rows = [...liveRows, ...quarantineRows];
 
   // Report
   const poolAfterFloor = pooled.length;
@@ -300,17 +343,21 @@ function buildRow(rec, id, NEG) {
     generatedAt: new Date().toISOString(), category: CATEGORY, batchId: BATCH_ID,
     dryRun: DRY_RUN, limit: LIMIT || null,
     catalogBefore: loadedCount, catalogAfter: DRY_RUN ? loadedCount : loadedCount + rows.length,
-    funnel: stat, totalSurvivors: stat.survivors, priceFloor: floorInfo,
+    funnel: stat, totalSurvivors: stat.survivors,
+    priceGate: ceilInfo, priceFloor: floorInfo,
     survivorsAfterFloor: poolAfterFloor, sampledAcrossPool: LIMIT && LIMIT < poolAfterFloor,
-    insertedCount: rows.length, insertedRows: rows,
+    insertedCount: rows.length, insertedLive: liveRows.length, insertedQuarantined: quarantineRows.length,
+    insertedRows: rows,
   };
   fs.mkdirSync(path.dirname(REPORT_PATH), { recursive: true });
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2));
 
   log(`\nFunnel: leaf ${stat.leaf} | mkt ${stat.marketplace} | acc ${stat.accessory} | prebuilt ${stat.prebuilt} | cond ${stat.condition} | serverEcc ${stat.categoryReject} | dedupCat ${stat.dedupeCatalog.upc + stat.dedupeCatalog.mpn + stat.dedupeCatalog.name} | dedupBatch ${stat.dedupeBatch.upc + stat.dedupeBatch.mpn} | specBar ${stat.specBar}`);
   log(`Distinct survivors: ${stat.survivors}`);
+  if (ceilInfo.applied) log(`Price gate (absolute table, calibrated ${ceilInfo.calibratedAt}): quarantined ${ceilInfo.quarantined} (needsReview, held), failureRate ${(ceilInfo.failureRate * 100).toFixed(1)}%`);
+  for (const w of ceilInfo.warnings || []) log(`  !! ${w}`);
   if (floorInfo.applied) log(`Price floor (${floorInfo.unit}): median ${floorInfo.median}, threshold ${floorInfo.mult}x = ${floorInfo.threshold} -> dropped ${floorInfo.dropped}, pool ${poolAfterFloor}`);
-  log(`Selected this run: ${rows.length}${LIMIT && LIMIT < poolAfterFloor ? ' (strided across pool)' : ''}`);
+  log(`Selected this run: ${liveRows.length} live${quarantineRows.length ? ` + ${quarantineRows.length} quarantined (held)` : ''}${LIMIT && LIMIT < poolAfterFloor ? ' (live strided across pool)' : ''}`);
 
   if (DRY_RUN) {
     log(`DRY RUN — nothing written. Report: ${path.relative(ROOT, REPORT_PATH)}`);
@@ -319,5 +366,5 @@ function buildRow(rec, id, NEG) {
   if (rows.length === 0) { log('No rows to insert — not writing.'); return; }
   parts.push(...rows);
   await writeCatalog(parts, { loadedCount, reason: `newegg discovery ${CATEGORY} (${rows.length} of ${stat.survivors}, batch ${BATCH_ID})` });
-  log(`\nWROTE ${rows.length} ${CATEGORY} rows. Catalog ${loadedCount} -> ${parts.length}. Report: ${path.relative(ROOT, REPORT_PATH)}`);
+  log(`\nWROTE ${rows.length} ${CATEGORY} rows (${liveRows.length} live, ${quarantineRows.length} held/needsReview). Catalog ${loadedCount} -> ${parts.length}. Report: ${path.relative(ROOT, REPORT_PATH)}`);
 })().catch((e) => { console.error('\n✗ FATAL:', e.stack || e.message); process.exit(1); });

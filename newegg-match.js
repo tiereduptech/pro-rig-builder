@@ -10,7 +10,7 @@
 // is INTENTIONALLY price-independent — most marketplace listings are reasonably
 // priced but are still the wrong seller.
 
-import { parseCapacityGB, capacityCompatible, isHardDrive, isPricePlausibleForCapacity }
+import { parseCapacityGB, capacityCompatible, isHardDrive, isPricePlausibleForCapacity, priceValidate }
   from './normalize-product-name.js';
 import { classifyDeal, effectivePrice, dispersion, CLASS, neweggSkuClass } from './price-sanity.js';
 
@@ -831,6 +831,26 @@ export async function searchNewegg(product, { token, mid, fetchImpl = fetch }) {
 
 // ── Cross-retailer sanity gate for a candidate Newegg price (peers: amazon, bestbuy)
 export function neweggSanity(product, candidatePrice) {
+  // Absolute per-type band FIRST — floor AND ceiling. A systematically inflated
+  // feed sails past the relative peer check below (peers may be missing, or
+  // equally inflated), and a mispriced/mismatched module can fall clean through
+  // the floor; gate on the real-market band regardless of peers. See priceValidate
+  // in normalize-product-name.js. This protects the ingest/refresh/fetch paths the
+  // same way the discovery batch's absolute stage protects fresh rows.
+  const av = priceValidate(product && product.c, {
+    memType: product && (product.memType || product.ramType),
+    ramType: product && product.ramType,
+    ecc: product && product.ecc,
+    cap: product && product.cap,
+    storageType: product && product.storageType,
+    isHDD: isHardDrive(product || {}),
+    watts: product && (product.watts || product.wattage),
+  }, candidatePrice);
+  if (av.status === 'quarantine') {
+    return { pass: false, cls: av.reason === 'below_floor' ? 'ABSOLUTE_FLOOR' : 'ABSOLUTE_CEILING',
+      ref: av.reason === 'below_floor' ? av.floor : av.ceiling, deviation: av.ppu,
+      unit: av.unit, dispConflict: false, spread: null };
+  }
   const deals = (product && product.deals) || {};
   const peers = ['amazon', 'bestbuy'].map((r) => effectivePrice(deals[r])).filter((v) => v != null);
   const res = classifyDeal(candidatePrice, peers, product && product.pr, product && product.msrp);

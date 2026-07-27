@@ -69,6 +69,10 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 // MIN_STALE_DAYS. At one run/day that is ~2 weeks of consistent evidence.
 const MIN_ABSENT_STREAK = 3;
 const MIN_STALE_DAYS = 14;
+// Reprice-in-place quarantine: withhold a bad price write and keep the last good
+// price, but after this many CONSECUTIVE failed repricings the price is genuinely
+// wrong (not a feed blip) — quarantine the product. Reset on any good price.
+const PRICE_SUSPECT_QUARANTINE_STREAK = 3;
 // "The feed answered, with a healthy result set, and our product wasn't in it."
 // Fewer than this many raw candidates back means the QUERY is weak, not that the
 // product is gone — treated as a lookup failure.
@@ -278,7 +282,7 @@ function chooseCandidate(p, candidates) {
     console.log(`Sample by category: ${Object.entries(byCat).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}=${v}`).join(' ')}`);
   }
 
-  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, lookupFailed: 0, variantRejected: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0 };
+  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, lookupFailed: 0, variantRejected: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0 };
   const changes = [];
   const failures = [];
   const removalCandidates = [];
@@ -391,26 +395,55 @@ function chooseCandidate(p, candidates) {
     // cross-retailer price sanity gate.
     const sanity = NEG.neweggSanity(p, eff);
     if (!(eff > 0) || !sanity.pass) {
-      // CHANGED: previously this deleted the deal (and quarantined the product).
-      // A suspicious price is a reason to distrust the NEW number, not to destroy
-      // the listing we already have. Keep the old price, flag for review.
+      // REPRICE-IN-PLACE policy (2026-07-27): a suspicious price is a reason to
+      // distrust the NEW number, not to destroy the listing we already have —
+      // withhold the bad write, KEEP the live product and its last known good
+      // price. One bad feed tick must not hide a good product.
+      //
+      // BUT track it: three CONSECUTIVE failed repricings mean the price is
+      // genuinely wrong, not a blip, so on the 3rd strike the PRODUCT is
+      // quarantined (needsReview) — still keeping the last good price. The streak
+      // resets the moment a good price validates (below), so isolated flaps never
+      // accumulate to a quarantine.
       stats.priceSuspect++;
       d.priceSuspect = true;
       d.priceSuspectAt = new Date().toISOString();
       d.priceSuspectValue = eff;
       d.priceSuspectClass = sanity.cls;
-      changes.push({ name: p.n, change: 'price-suspect-flagged', kept: d.price, rejected: eff, cls: sanity.cls, sku });
+      d.priceSuspectStreak = (d.priceSuspectStreak || 0) + 1;
+      const changeRec = { name: p.n, change: 'price-suspect-flagged', kept: d.price, rejected: eff, cls: sanity.cls, streak: d.priceSuspectStreak, sku };
+      if (d.priceSuspectStreak >= PRICE_SUSPECT_QUARANTINE_STREAK && !p.needsReview) {
+        // Three strikes — quarantine the product. Mark WHY (priceQuarantined) so a
+        // later recovery only lifts a price-quarantine, never one set for another
+        // reason (bench backfill, category audit, …).
+        p.needsReview = true;
+        p.quarantinedAt = new Date().toISOString().slice(0, 10);
+        p.priceQuarantined = true;
+        stats.priceQuarantined++;
+        changeRec.change = 'price-quarantined-3strikes';
+      }
+      changes.push(changeRec);
       await sleep(RATE_DELAY_MS);
       continue;
     }
 
-    // Confirmed live: clear any prior absence evidence and suspicion.
+    // Confirmed live: clear any prior absence evidence and suspicion, and reset the
+    // consecutive-failure streak. Only lift a quarantine WE set for price (never
+    // un-hide a product quarantined for some other reason).
     delete d.staleSince;
     delete d.absentStreak;
     delete d.priceSuspect;
     delete d.priceSuspectAt;
     delete d.priceSuspectValue;
     delete d.priceSuspectClass;
+    delete d.priceSuspectStreak;
+    if (p.priceQuarantined) {
+      delete p.needsReview;
+      delete p.quarantinedAt;
+      delete p.priceQuarantined;
+      stats.priceUnquarantined++;
+      changes.push({ name: p.n, change: 'price-unquarantined-recovered', price: eff, sku });
+    }
 
     const oldPrice = Number(d.price);
     const oldSale = Number(d.saleprice || 0);
@@ -493,7 +526,9 @@ function chooseCandidate(p, candidates) {
   console.log(`\n=== SUMMARY ${DRY_RUN ? '(DRY RUN)' : ''} ===`);
   console.log(`Processed:        ${processed}`);
   console.log(`Matched OK:       ${stats.ok}  (repriced ${stats.priced}, unchanged ${stats.unchanged}, migrated ${stats.migrated}, rematched ${stats.rematched})`);
-  console.log(`Price suspect:    ${stats.priceSuspect}  (flagged, deal KEPT)`);
+  console.log(`Price suspect:    ${stats.priceSuspect}  (bad price withheld, last good price KEPT)`);
+  console.log(`Price quarantined:${stats.priceQuarantined}  (${PRICE_SUSPECT_QUARANTINE_STREAK}+ consecutive strikes -> needsReview, price KEPT)`);
+  if (stats.priceUnquarantined) console.log(`Price recovered:  ${stats.priceUnquarantined}  (good price -> quarantine lifted)`);
   console.log(`Lookup failed:    ${stats.lookupFailed}  (no change written)`);
   console.log(`  of which variant-rejected: ${stats.variantRejected}  (matcher decision — EXCLUDED from feed health)`);
   console.log(`Feed failure rate:${(failureRate * 100).toFixed(1)}%  (${feedFailures}/${processed}, breaker at ${MAX_LOOKUP_FAILURE_RATE * 100}%)`);
@@ -545,7 +580,7 @@ function chooseCandidate(p, candidates) {
 
   if (DRY_RUN) { console.log('DRY RUN — parts.js not written.'); return; }
 
-  const mutating = stats.priced + stats.priceSuspect + stats.confirmedAbsent + removed;
+  const mutating = stats.priced + stats.priceSuspect + stats.priceUnquarantined + stats.confirmedAbsent + removed;
   if (mutating === 0) { console.log('No changes to write.'); return; }
 
   // Route through the shared writer so the re-split is part of the write

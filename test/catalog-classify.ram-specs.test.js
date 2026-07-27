@@ -12,7 +12,7 @@ import { test } from 'node:test';
 import assert from 'node:assert';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
-const { extractSpecs, ramAttributes, resolveDiscoveryBrand } = require('../catalog-classify.cjs');
+const { extractSpecs, ramAttributes, ramRejectReason, resolveDiscoveryBrand } = require('../catalog-classify.cjs');
 
 // Each row: [title, expected-subset]. We assert every named field equals; fields
 // not named must be absent (so a wrong extraction that INVENTS a value fails).
@@ -140,22 +140,34 @@ test('resolveDiscoveryBrand: never returns a chip giant for RAM', () => {
   }
 });
 
-// ── Consumer-RAM gate: exclude registered/server, keep consumer ECC UDIMM ─────
-// Mirrors CATEGORY_REJECT.RAM in apply-newegg-discoveries.cjs (kept in sync).
-const isServerRam = (name) => /\b(rdimm|lrdimm|registered|server\s+memory)\b|\becc[\s-]*reg\b/i.test(name);
-test('consumer-RAM gate: rejects registered/server, keeps consumer ECC UDIMM', () => {
-  // rejected (won't POST in a consumer board)
-  for (const n of [
-    'Black Diamond Server Memory 16GB DDR3 ECC Registered',
-    'Micron 32GB DDR4 LRDIMM 2Rx4 2666',
-    'Samsung 64GB DDR5 ECC RDIMM 4800',
-    'Black Diamond 16GB DDR5 5200 ECC REG Memory',
-    'Axiom 8GB ECC Unbuffered DDR3 1600 Server Memory',
-  ]) assert.ok(isServerRam(n), `should reject: ${n}`);
-  // kept (consumer)
+// ── RAM scope gate (ramRejectReason): consumer/gaming DESKTOP DIMM only ────────
+// The gate is CC.ramRejectReason itself (no local mirror to drift). Scope after
+// the 2026-07-27 audit: reject laptop (SODIMM/pin-count/"laptop"/"notebook"),
+// server (RDIMM/R-DIMM/LRDIMM/LR-DIMM/registered/buffered), AND all ECC incl.
+// consumer unbuffered ECC UDIMM. Keep only non-ECC desktop DIMM/UDIMM.
+test('RAM scope gate: rejects laptop/server/ECC, keeps non-ECC desktop DIMM', () => {
+  const rejects = {
+    'Black Diamond Server Memory 16GB DDR3 ECC Registered': 'server_registered_ram',
+    'Micron 32GB DDR4 LRDIMM 2Rx4 2666': 'server_registered_ram',
+    'Samsung 64GB DDR5 ECC RDIMM 4800': 'server_registered_ram',
+    'TEAMGROUP T-Create Master DDR5 R-DIMM 192GB Kit (8 x 24GB) 6400': 'server_registered_ram', // hyphenated
+    'Black Diamond 16GB DDR5 5200 ECC REG Memory': 'server_registered_ram',
+    'Kingston Server Premier DDR5 32GB ECC 4800MHz UDIMM': 'ecc_ram',                 // consumer ECC UDIMM now OUT
+    'NEMIX 48GB DDR5 5600 ECC Unbuffered UDIMM': 'ecc_ram',
+    'Corsair Vengeance SODIMM DDR5 16GB 4800 Laptop Memory': 'laptop_sodimm',
+    '32GB DDR5 RAM, 5600MHz Laptop Memory, 262-Pin': 'laptop_sodimm',
+    'Black Diamond Memory 16GB 260-Pin DDR4 SO-DIMM 3200 Notebook': 'laptop_sodimm',
+  };
+  for (const [n, reason] of Object.entries(rejects)) {
+    assert.strictEqual(ramRejectReason(n), reason, `should reject ${reason}: ${n}`);
+  }
+  // kept (in scope) → null
   for (const n of [
     'Corsair Vengeance DDR5 32GB (2x16GB) 6000MHz CL30',
-    'Kingston Server Premier DDR5 32GB ECC 4800MHz UDIMM',   // consumer ECC UDIMM
     'G.Skill Trident Z5 DDR5 64GB (2x32GB) 6000 CL30',
-  ]) assert.ok(!isServerRam(n), `should keep: ${n}`);
+    'CORSAIR Vengeance 32GB (2 x 16GB) 288-Pin DDR5 6400 Desktop Memory',
+    // "On-die ECC" is a standard DDR5 feature on consumer gaming kits, NOT ECC
+    // memory — must NOT be flagged (Lexar Thor Z false-positive, 2026-07-27 audit).
+    'Lexar Thor Z Series RGB DDR5 RAM 32GB Kit (2x16GB) 6000 MHz, 288-Pin UDIMM Intel XMP 3.0 & AMD EXPO, On-die ECC, PMIC, 1.35V, for Gaming',
+  ]) assert.strictEqual(ramRejectReason(n), null, `should keep: ${n}`);
 });

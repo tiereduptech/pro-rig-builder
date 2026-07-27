@@ -205,7 +205,147 @@ export function isPricePlausibleForCapacity(price, capGB, { isHDD = false } = {}
   return perTB >= (isHDD ? 8 : 15);
 }
 
+// ── ABSOLUTE per-type price TABLE (floors AND ceilings) ──────────────────────
+// WHY ABSOLUTE, NOT RELATIVE: the discovery pipeline's relative floor drops rows
+// above PRICE_MULT × the pool MEDIAN. That is structurally blind to a
+// systematically inflated feed — when a whole category's feed prices run ~10x
+// reality, the median inflates WITH them, so the threshold lands ~10x too high
+// and nothing is dropped. A table anchored to real market cannot be moved by the
+// bad data. The relative floor stays on as an additional intra-pool outlier check.
+//
+// WHY IT ALSO GOES STALE: the market moves under a fixed table. The prior DDR5
+// ceiling of $10/GB was chosen when "real DDR5 tops ~$5/GB"; after the 2025–26
+// DRAM price surge the live consumer catalog runs p50 ~$15/GB, p95 ~$21/GB, so
+// $10 rejected 95% of REAL DDR5 — a stale ceiling silently gutting the catalog.
+// That failure mode is why this table carries a calibration date and why
+// validatePriceBatch() WARNS (failure-rate + age) and QUARANTINES rather than
+// hard-dropping: a stale ceiling should never push bad data live, and never nuke
+// good data either — flagged rows go to needsReview, never silently in or out.
+//
+// Recalibrated 2026-07-27 against live TRUSTED retail $/unit (Amazon/BestBuy
+// anchored; Newegg feed excluded as the inflated source). RAM is keyed by
+// memType × ECC: server/workstation RDIMM legitimately runs to ~$30/GB and must
+// not be false-rejected by a consumer-UDIMM ceiling. Ceilings sit just above real
+// p99 + headroom; floors just below real min (a $59 "32GB DDR5" at $1.84/GB or a
+// mispriced/mismatched module falls through the floor).
+export const PRICE_TABLE_CALIBRATED_AT = '2026-07-27';
+export const PRICE_TABLE = {
+  RAM: {
+    'DDR5':     { floor: 2.0, ceiling: 22 },   // consumer UDIMM/SODIMM; real p95 20.8
+    'DDR5-ECC': { floor: 3.0, ceiling: 35 },   // server RDIMM; real max 30.5
+    'DDR4':     { floor: 0.6, ceiling: 20 },   // real body p95 14.2
+    'DDR4-ECC': { floor: 1.5, ceiling: 20 },
+    'DDR3':     { floor: 0.5, ceiling: 18 },   // real max 14.25
+  },
+  Storage: {
+    'SSD': { floor: 0.012, ceiling: 1.0 },     // real p99 0.48; 0% loss at 1.0
+    'HDD': { floor: 0.006, ceiling: 0.35 },    // real p99 0.29; old 0.1 killed 17.8%
+  },
+  PSU: {
+    'W': { floor: 0.008, ceiling: 0.8 },       // real p99 0.59
+  },
+};
+// Above this fraction of graded rows hitting a bound, suspect the TABLE is stale
+// (not the data bad): warn loudly, quarantine the flagged rows, keep running.
+export const STALE_CEILING_FAILURE_RATE = 0.30;
+// Recalibrate the table at least this often; past it, the age warning fires.
+export const PRICE_TABLE_MAX_AGE_DAYS = 90;
+
+// Back-compat: the old flat ceiling exports, re-derived from PRICE_TABLE so any
+// external reference keeps resolving. New code should read PRICE_TABLE directly.
+export const RAM_PRICE_CEILING_PER_GB = { DDR5: PRICE_TABLE.RAM.DDR5.ceiling, DDR4: PRICE_TABLE.RAM.DDR4.ceiling, DDR3: PRICE_TABLE.RAM.DDR3.ceiling };
+export const STORAGE_PRICE_CEILING_PER_GB = { SSD: PRICE_TABLE.Storage.SSD.ceiling, HDD: PRICE_TABLE.Storage.HDD.ceiling };
+export const PSU_PRICE_CEILING_PER_W = PRICE_TABLE.PSU.W.ceiling;
+
+// Resolve (category, specs, price) → { group, key, ppu, unit }. ppu is null when
+// $/unit isn't computable (missing cap/watts) so callers SKIP (never block on
+// missing data). RAM key gets a '-ECC' suffix when specs.ecc is true and an ECC
+// band exists (ecc is what ramAttributes() computes, carried on catalog rows).
+function resolvePriceKey(category, specs, price) {
+  const s = specs || {};
+  if (category === 'RAM') {
+    const gen = String(s.memType || s.ramType || '').toUpperCase();
+    const eccKey = gen + '-ECC';
+    const key = s.ecc === true && PRICE_TABLE.RAM[eccKey] ? eccKey : gen;
+    return { group: 'RAM', key, ppu: s.cap > 0 ? price / s.cap : null, unit: '$/GB' };
+  }
+  if (category === 'Storage' || category === 'ExternalStorage') {
+    const key = (/HDD/i.test(s.storageType || '') || s.isHDD === true) ? 'HDD' : 'SSD';
+    return { group: 'Storage', key, ppu: s.cap > 0 ? price / s.cap : null, unit: '$/GB' };
+  }
+  if (category === 'PSU') {
+    const w = s.watts || s.wattage;
+    return { group: 'PSU', key: 'W', ppu: w > 0 ? price / w : null, unit: '$/W' };
+  }
+  return { group: null, key: null, ppu: null, unit: null };
+}
+
+/**
+ * Row-level price gate — the SHARED HELPER every price-write path calls.
+ * Fail-open on missing data, QUARANTINE (never drop, never publish) on a bounds
+ * miss. Returns { status, reason, ppu, unit, key, floor, ceiling } where status is
+ *   'ok'         — within [floor, ceiling]
+ *   'quarantine' — above ceiling or below floor → caller sets needsReview + quarantinedAt, KEEPS row
+ *   'skip'       — not guarded, or $/unit not computable → admit unguarded
+ */
+export function priceValidate(category, specs, price) {
+  const none = { status: 'skip', reason: null, ppu: null, unit: null, key: null, floor: null, ceiling: null };
+  if (price == null || !(price > 0)) return none;
+  const { group, key, ppu, unit } = resolvePriceKey(category, specs, price);
+  const band = group && PRICE_TABLE[group] ? PRICE_TABLE[group][key] : null;
+  if (!band || ppu == null) return { ...none, unit, key, floor: band ? band.floor : null, ceiling: band ? band.ceiling : null };
+  const p = Number(ppu.toFixed(3));
+  const reason = p > band.ceiling ? 'above_ceiling' : p < band.floor ? 'below_floor' : null;
+  return { status: reason ? 'quarantine' : 'ok', reason, ppu: p, unit, key, floor: band.floor, ceiling: band.ceiling };
+}
+
+// Back-compat shim: the old boolean-reject shape, sourced from priceValidate.
+// reject=true ONLY for above_ceiling, preserving the historical "ceiling" meaning
+// for any caller not yet migrated to the richer priceValidate verdict.
+export function absolutePriceCeiling(category, specs, price) {
+  const v = priceValidate(category, specs, price);
+  return { reject: v.reason === 'above_ceiling', ceiling: v.ceiling, unit: v.unit, ppu: v.ppu, key: v.key };
+}
+
+// Whole-number day gap between two 'YYYY-MM-DD' strings; null if either is unparseable.
+function daysBetweenISO(fromISO, toISO) {
+  const a = Date.parse(fromISO + 'T00:00:00Z'), b = Date.parse(toISO + 'T00:00:00Z');
+  return (isNaN(a) || isNaN(b)) ? null : Math.round((b - a) / 86400000);
+}
+
+/**
+ * Batch gate. Runs priceValidate over rows: [{ category, specs, price }] and, on a
+ * bounds miss, QUARANTINES (caller stamps needsReview:true + quarantinedAt, KEEPS
+ * the row). Fail-open in liveness (never throws/aborts), fail-closed in publishing.
+ * Emits LOUD, NON-FATAL warnings:
+ *   - failureRate > STALE_CEILING_FAILURE_RATE → ceiling suspected stale
+ *   - table age    > PRICE_TABLE_MAX_AGE_DAYS  → recalibrate
+ * failureRate = quarantined / (ok + quarantined); skipped rows aren't graded.
+ * opts.today: 'YYYY-MM-DD' supplied by the caller — this module never reads a clock.
+ */
+export function validatePriceBatch(rows, opts) {
+  const today = (opts && opts.today) || null;
+  const ok = [], quarantined = [], skipped = [];
+  for (const row of rows || []) {
+    const verdict = priceValidate(row.category, row.specs, row.price);
+    const entry = { row, verdict };
+    (verdict.status === 'quarantine' ? quarantined : verdict.status === 'skip' ? skipped : ok).push(entry);
+  }
+  const graded = ok.length + quarantined.length;
+  const failureRate = graded ? quarantined.length / graded : 0;
+  const ceilingAgeDays = today ? daysBetweenISO(PRICE_TABLE_CALIBRATED_AT, today) : null;
+  const warnings = [];
+  if (failureRate > STALE_CEILING_FAILURE_RATE)
+    warnings.push(`STALE-CEILING SUSPECTED: ${(failureRate * 100).toFixed(1)}% of ${graded} graded rows hit a bound (> ${STALE_CEILING_FAILURE_RATE * 100}%). Flagged rows QUARANTINED (needsReview), never published — recalibrate PRICE_TABLE.`);
+  if (ceilingAgeDays != null && ceilingAgeDays > PRICE_TABLE_MAX_AGE_DAYS)
+    warnings.push(`PRICE TABLE STALE: calibrated ${PRICE_TABLE_CALIBRATED_AT}, ${ceilingAgeDays}d ago (> ${PRICE_TABLE_MAX_AGE_DAYS}d). Bound-flagged rows QUARANTINED — recalibrate.`);
+  return { ok, quarantined, skipped, failureRate: Number(failureRate.toFixed(4)), ceilingAgeDays, calibratedAt: PRICE_TABLE_CALIBRATED_AT, warnings };
+}
+
 export default {
   canonicalizeProductName, sameCanonicalIdentity, extractModelToken,
   parseCapacityGB, capacitiesMatch, capacityCompatible, isHardDrive, isPricePlausibleForCapacity,
+  RAM_PRICE_CEILING_PER_GB, STORAGE_PRICE_CEILING_PER_GB, PSU_PRICE_CEILING_PER_W, absolutePriceCeiling,
+  PRICE_TABLE, PRICE_TABLE_CALIBRATED_AT, PRICE_TABLE_MAX_AGE_DAYS, STALE_CEILING_FAILURE_RATE,
+  priceValidate, validatePriceBatch,
 };
