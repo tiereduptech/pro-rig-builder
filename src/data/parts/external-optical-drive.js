@@ -20,7 +20,7 @@ export default [
     },
     "storageType": "DVD Writer",
     "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "quarantinedAt": "2026-07-27"
   },
   {
     "id": 99607,
@@ -127,7 +127,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "quarantinedAt": "2026-07-27"
   },
   {
     "id": 99612,

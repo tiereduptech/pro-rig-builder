@@ -77,7 +77,9 @@ export default [
         "url": "https://www.amazon.com/dp/B0DRLD3KV2?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-07-27"
   },
   {
     "id": 99604,
@@ -308,7 +310,7 @@ export default [
     "cableType": "PCIe Power",
     "cableLength": "10in",
     "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "quarantinedAt": "2026-07-27"
   },
   {
     "id": 100122,
@@ -400,7 +402,7 @@ export default [
     },
     "cableType": "12VHPWR",
     "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "quarantinedAt": "2026-07-27"
   },
   {
     "id": 100127,
@@ -439,7 +441,7 @@ export default [
     "cableType": "Full Kit",
     "cableLength": "30cm",
     "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "quarantinedAt": "2026-07-27"
   },
   {
     "id": 100129,

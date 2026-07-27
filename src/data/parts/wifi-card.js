@@ -93,7 +93,7 @@ export default [
     "interface": "USB",
     "deals": {
       "amazon": {
-        "price": 28.42,
+        "price": 32.99,
         "url": "https://www.amazon.com/dp/B0B5YPK9L1?tag=tiereduptech-20",
         "inStock": true
       }
