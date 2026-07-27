@@ -28,7 +28,7 @@ export default [
     },
     "bench": 99,
     "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "quarantinedAt": "2026-07-27"
   },
   {
     "id": 98001,
@@ -54,7 +54,7 @@ export default [
     },
     "bench": 86,
     "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "quarantinedAt": "2026-07-27"
   },
   {
     "id": 98002,
@@ -80,7 +80,7 @@ export default [
     },
     "bench": 85,
     "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "quarantinedAt": "2026-07-27"
   },
   {
     "id": 100077,
@@ -144,7 +144,9 @@ export default [
     "resolution": "1080p",
     "fps": 30,
     "autofocus": true,
-    "bench": 66
+    "bench": 66,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-27"
   },
   {
     "id": 100080,
@@ -221,7 +223,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-2017-Brio-4K-Webcam/dp/B01N5UOYC4/ref=sr_1_35?crid=HAN2OPTSB7WU&dib=eyJ2IjoiMSJ9.-d6QW9KDdjTdsF-cm_1lKjh8xG2w92PgrZLofe05k9SY5ZVx13HMmxhu3XdfbSqH6gSA9PeoqZXcFmPOdoVCMOKrPw8HsgykwJckKmqG2XUQLdYZg8CsKlHDOx2nFWwdb87Fo3Yq6dpLVRohDzkDlmQkegOcXHUahzJzTakY3DlNeKyBzaVWVF1i0cQVEoQR6PfojgZo3aa1DZb-0-i2PRc3VM53sv4YrLFG_1xdRL4.PXIVAwtxGM2O1IsMdZbDBjZk39iNVF-k2elbeNFUcDQ&dib_tag=se&keywords=Razer+Kiyo+Pro&qid=1777130742&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BKiyo%2BPro%2Caps%2C252&sr=8-35&xpid=paxmvJBrnqNjM&tag=tiereduptech-20",
-        "price": 109.86,
+        "price": 116.99,
         "inStock": true
       }
     },
@@ -242,7 +244,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/AutoFocus-Microphone-NexiGo-Streaming-Compatible/dp/B08931JJLV/ref=sr_1_44?crid=NJ0CRHMHL91P&dib=eyJ2IjoiMSJ9.U4aoqx6hhrpJ-Ohs6nmpufS1aJIpycqBT1bWa9Vbwc-p77zqWCcx4WrJD5ClkA_whZA8g5y3lF5VZQ9TLh57MuKkaI2yRILNkE62lYeAgHGOBG2aHZtplsq0sTmew6VXhZKt7ythJdyv8zdpIkq_gfJcp_DewV7LGROc_-pAOs_CWKuPAaWBxWvbpxCJTwtr1rxZJ5g11xMs22KIdRePgHgK4sBLP6X2N_A_F5RTNU0.Ij3OFqC0PdASzPKwp93PdwGDxsfNsGDCOnExWr8wJ4s&dib_tag=se&keywords=Razer+Kiyo&qid=1777130798&sprefix=Razer%2BKiyo%2Caps%2C101&sr=8-44&xpid=bINkmmP0uMtqX&tag=tiereduptech-20",
-        "price": 33.99,
+        "price": 39.99,
         "inStock": true
       }
     },
@@ -284,7 +286,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Webcam-Streaming-Recording-Built-Correction/dp/B07M6Y7355/ref=sr_1_20?crid=2YLWT04NN0AX&dib=eyJ2IjoiMSJ9.wFokn-eKRu9L3nRf8EvVLlftN9vnyOPxV0aOnhOh7idInPFVKRIVV0Uu46poJmBwwSQgB0IdWlSn2cRE6UG040OJzr-uuiSlcCD7MNsdPT2F-YvFIFyHorIaBs5-JDpLFu9LS05stx8i95YLvqWc4nWRF1ItyjMDOMwOA6Mc1vIPKlXup_NZdftDP-yFS0QgBEFDZ5s9RrnOPijOA4SUksOCeX3BFC6O3rnE24LQ_e4.HU_k5xG3BmNJxtaSsInvJg82ppnktuwczcI-AC9PWJA&dib_tag=se&keywords=Aukey+webcam&qid=1777130752&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Aukey%2Bwebcam%2Caps%2C211&sr=8-20&xpid=s7TLFTCwXxRia&tag=tiereduptech-20",
-        "price": 33.14,
+        "price": 37.99,
         "inStock": true
       }
     },
@@ -375,7 +377,9 @@ export default [
     "resolution": "4K",
     "fps": 60,
     "autofocus": true,
-    "bench": 94
+    "bench": 94,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-27"
   },
   {
     "id": 100091,
@@ -452,7 +456,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Razer-Kiyo-Streaming-Webcam-Built/dp/B0FNBLG4SD/ref=sr_1_1?crid=HAN2OPTSB7WU&dib=eyJ2IjoiMSJ9.Wl4OzbK7PbovGDEpt0A0YRlXjA_R2y1EfjSc2XZ7PgXK-auJOzFXZ4WrbMmXlSb8-dAklfQ4KXQLgkX89mre5txqmA0S-sJFfIEvtcGs_XltJgFZVQg0KSVI8q2OfntZAa_32ZNqycCB5Wzf4BjmtbrG6Mt-yFQThT_iFYxlml4MbQYUoS_2xVtzZ_Z2PSLTOsvDu2TUOBl7TCxyJNml7aAy2kHEGyHJeEexD_yUDE0.tvExa4wigJswBvBqR88KkTqQaQLQaCNJMaF6IkvreTQ&dib_tag=se&keywords=Razer+Kiyo+Pro&qid=1777130737&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BKiyo%2BPro%2Caps%2C252&sr=8-1&tag=tiereduptech-20",
-        "price": 96,
+        "price": 65,
         "inStock": true
       }
     },
@@ -924,7 +928,7 @@ export default [
       "amazon": {
         "asin": "B097QZGRCQ",
         "url": "https://www.amazon.com/dp/B097QZGRCQ?tag=tiereduptech-20",
-        "price": 58.99,
+        "price": 54.31,
         "inStock": true
       }
     },
