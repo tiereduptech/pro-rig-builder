@@ -222,18 +222,32 @@ export function isPricePlausibleForCapacity(price, capGB, { isHDD = false } = {}
 // hard-dropping: a stale ceiling should never push bad data live, and never nuke
 // good data either — flagged rows go to needsReview, never silently in or out.
 //
-// Recalibrated 2026-07-27 against live TRUSTED retail $/unit (Amazon/BestBuy
-// anchored; Newegg feed excluded as the inflated source). RAM is keyed by
-// memType × ECC: server/workstation RDIMM legitimately runs to ~$30/GB and must
-// not be false-rejected by a consumer-UDIMM ceiling. Ceilings sit just above real
-// p99 + headroom; floors just below real min (a $59 "32GB DDR5" at $1.84/GB or a
-// mispriced/mismatched module falls through the floor).
+// Recalibrated 2026-07-27 against live PER-SKU retail. RAM is keyed by memType ×
+// ECC; ceilings sit above the real max + headroom, floors just below real min (a
+// $59 "32GB DDR5" at $1.84/GB, or a mispriced/mismatched module, falls through).
+//
+// DDR5 ceiling RAISED 22 -> 40 on 2026-07-27: a 47-SKU live audit found $22 was
+// ITSELF too tight for the DRAM shortage. Real premium DDR5 lists at $30-36/GB —
+// G.SKILL Trident Z5 Royal 32GB @ $1149.99 = $35.9/GB, matched to the cent on
+// Newegg; 128GB kits ~$26/GB. Of 47 rows the old ceiling flagged, only ONE was
+// truly corrupt (a $796 single 32GB DDR4-3600 stick, ~9x its ~$85 market); the
+// other 46 were real and the ceiling — not the data — was wrong. This is the SAME
+// stale-ceiling failure the block above warns about, and it was caught precisely
+// because the table QUARANTINES rather than drops: the 46 real rows went to review,
+// not the bin. $40 clears the real ~$36 max with headroom and still catches absurd.
+// DDR4 stays 20: it cleanly isolated the one corrupt stick; a real-but-stale DDR4
+// kit ($766, ~2x market) sits just under it and is left live (reprice, not corrupt).
+//
+// VERIFICATION SOURCE: use NeweggBusiness product pages (neweggbusiness.com) as the
+// clean exact-SKU price source. Newegg CONSUMER pages interleave "Sponsored" items,
+// so naive scrapes grab the WRONG number (a $469 Team T-Force / $739 GPU bleeding
+// into the buy box). The NEXT recalibration MUST verify against NeweggBusiness.
 export const PRICE_TABLE_CALIBRATED_AT = '2026-07-27';
 export const PRICE_TABLE = {
   RAM: {
-    'DDR5':     { floor: 2.0, ceiling: 22 },   // consumer UDIMM/SODIMM; real p95 20.8
-    'DDR5-ECC': { floor: 3.0, ceiling: 35 },   // server RDIMM; real max 30.5
-    'DDR4':     { floor: 0.6, ceiling: 20 },   // real body p95 14.2
+    'DDR5':     { floor: 2.0, ceiling: 40 },   // consumer UDIMM; real max ~36/GB (2026-07-27 shortage, NeweggBusiness-verified)
+    'DDR5-ECC': { floor: 3.0, ceiling: 35 },   // server RDIMM (now rejected pre-price; kept for completeness)
+    'DDR4':     { floor: 0.6, ceiling: 20 },   // real body p95 14.2; isolates the one corrupt 9x stick
     'DDR4-ECC': { floor: 1.5, ceiling: 20 },
     'DDR3':     { floor: 0.5, ceiling: 18 },   // real max 14.25
   },

@@ -2658,7 +2658,17 @@ export default [
     "height": 35,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-27",
+    "priceQuarantined": true,
+    "priceQuarantineReason": {
+      "reason": "corrupt_price",
+      "storedPerGB": 24.9,
+      "liveRetail": 89.99,
+      "ratio": 8.85,
+      "note": "Kingston KF436C18BB/32 single 32GB DDR4-3600; ~9x live retail (2026-07-27 live audit)"
+    }
   },
   {
     "id": 40119,
