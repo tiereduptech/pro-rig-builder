@@ -14,6 +14,7 @@
  */
 
 const fs = require('fs');
+const { ramAttributes } = require('./catalog-classify.cjs');
 
 const LOGIN = process.env.DATAFORSEO_LOGIN;
 const PASSWORD = process.env.DATAFORSEO_PASSWORD;
@@ -193,8 +194,8 @@ function extractSpecs(product, flat) {
     if (/sodimm/i.test(title)) specs.formFactor = 'SODIMM';
     else if (/udimm/i.test(title)) specs.formFactor = 'UDIMM';
     else specs.formFactor = 'DIMM';
-    // ECC
-    if (/\becc\b/i.test(title)) specs.ecc = true;
+    // ECC — negation-aware detector (bare "ECC" inside "Non-ECC" must not count)
+    if (ramAttributes(title).ecc) specs.ecc = true;
     // RGB
     if (/\brgb\b/i.test(title)) specs.rgb = true;
   }

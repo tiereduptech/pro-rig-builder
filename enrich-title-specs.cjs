@@ -11,6 +11,7 @@
  */
 
 const fs = require('fs');
+const { ramAttributes } = require('./catalog-classify.cjs');
 const APPLY = process.argv.includes('--apply');
 
 // Strip trademark/special symbols + normalize whitespace
@@ -126,7 +127,7 @@ const enrichers = {
       else if (/\budimm\b/i.test(t)) out.formFactor = 'UDIMM';
       else out.formFactor = 'DIMM';
     }
-    if (p.ecc == null && /\becc\b/i.test(t)) out.ecc = true;
+    if (p.ecc == null && ramAttributes(t).ecc) out.ecc = true;  // negation-aware: skips "Non-ECC"
     if (p.rgb == null && /\brgb\b/i.test(t)) out.rgb = true;
     return out;
   },

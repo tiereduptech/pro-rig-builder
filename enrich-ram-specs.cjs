@@ -1,6 +1,7 @@
 // enrich-ram-specs.cjs
 
 const fs = require('fs');
+const { ramAttributes } = require('./catalog-classify.cjs');
 const PARTS_PATH = './src/data/parts.js';
 
 // Known module heights (mm) by series - low-profile is critical for big air coolers
@@ -65,8 +66,10 @@ function extractColor(p) {
 
 function extractECC(p) {
   if (p.ecc != null) return null;
-  if (/ecc|registered|rdimm|server/i.test(p.n)) return true;
-  return false;
+  // Delegate to the single negation-aware detector so bare "ECC" inside
+  // "Non-ECC" no longer counts (was: /ecc|registered|rdimm|server/i on the
+  // raw name, which matched the substring anywhere and mis-flagged non-ECC).
+  return ramAttributes(p.n).ecc;
 }
 
 function setFields(s, id, fields) {
