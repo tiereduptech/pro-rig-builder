@@ -25,9 +25,10 @@ import { canonicalizeProductName, extractModelToken,
          parseCapacityGB, capacityCompatible, capacitiesMatch,
          isHardDrive, isPricePlausibleForCapacity } from './normalize-product-name.js';
 import { selectNewOffer, lowestAnyConditionPrice, amazonPriceSanity } from './amazon-price.js';
-
-// Categories where a stated capacity is a hard identity gate.
-const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
+// The price-drift gate lives in ONE place. Threshold, titleMatches, and
+// analyzeResult are imported — never re-declared here (see drift-gate.js).
+import { STORAGE_CATS, titleMatches, analyzeResult,
+         driftGateStaleness, DRIFT_GRADED_TYPES, DRIFT_FLAGGED_TYPES } from './drift-gate.js';
 
 const LOGIN = process.env.DATAFORSEO_LOGIN;
 const PASSWORD = process.env.DATAFORSEO_PASSWORD;
@@ -54,11 +55,11 @@ const TASK_POLL_DELAY_MS = 30000;
 const TASK_POLL_INTERVAL_MS = 10000;
 const MAX_POLL_WAIT_MS = 1800000;
 const GET_CONCURRENCY = 8;
-const PRICE_DRIFT_THRESHOLD = 0.05;
 const ASIN_FIX_MIN_SCORE = 0.8;
-// Empirical DataForSEO cost per /merchant/amazon/sellers advanced task (measured
-// from live task_post `cost` in the B1 sample run). The asin endpoint was ~0.0015.
-const COST_PER_SELLERS_TASK = 0.001;
+// Empirical DataForSEO cost per /merchant/amazon/sellers advanced task. MEASURED
+// from the 604-row re-verify's live task_post `cost`: $0.906 / 604 = $0.00150/call.
+// The old 0.001 undershot every estimate by 33% (a $8.60 job read as $5.75).
+const COST_PER_SELLERS_TASK = 0.0015;
 
 // ═══ STRATEGY 2: Known-good ASIN overrides table ═══
 let ASIN_OVERRIDES = {};
@@ -145,32 +146,6 @@ function extractASIN(url) {
   if (!url) return null;
   const m = url.match(/\/dp\/([A-Z0-9]{10})/i);
   return m ? m[1].toUpperCase() : null;
-}
-
-function normalize(s) {
-  return String(s || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
-}
-
-function titleMatches(storedName, amazonTitle, storedCap = null) {
-  if (!storedName || !amazonTitle) return { match: false, score: 0 };
-  const a = normalize(storedName);
-  const b = normalize(amazonTitle);
-  const tokensA = new Set(a.split(' ').filter(t => t.length >= 3));
-  const tokensB = new Set(b.split(' ').filter(t => t.length >= 3));
-  if (!tokensA.size) return { match: false, score: 0 };
-  let hits = 0;
-  for (const t of tokensA) if (tokensB.has(t)) hits++;
-  const score = hits / tokensA.size;
-  const modelTokensA = [...tokensA].filter(t => /\d/.test(t) && /[a-z]/.test(t));
-  const modelMatch = modelTokensA.length === 0 || modelTokensA.some(t => tokensB.has(t));
-  // Capacity is a HARD gate: vendors reuse one title across every capacity, so
-  // token overlap alone "matches" a 128GB listing to a 2TB product. If the
-  // stored capacity (cap field, else parsed from name) and the candidate
-  // title's capacity both exist and disagree beyond rounding → different product.
-  const capA = storedCap ?? parseCapacityGB(storedName);
-  const capB = parseCapacityGB(amazonTitle);
-  const capConflict = !capacityCompatible(capA, capB);
-  return { match: score >= 0.5 && modelMatch && !capConflict, score: Math.round(score * 100) / 100, capConflict };
 }
 
 async function loadCatalog() {
@@ -299,99 +274,6 @@ async function findBestASIN(product) {
   return best;
 }
 
-function analyzeResult(product, amazonData) {
-  const issues = [];
-  const fixes = {};
-  if (!amazonData) {
-    issues.push({ type: 'no_data', severity: 'high', msg: 'No data returned' });
-    return { issues, fixes };
-  }
-  const azTitle = amazonData.title || amazonData.product_title;
-  const tm = titleMatches(product.n, azTitle, product.cap);
-
-  if (!tm.match) {
-    // A capacity conflict is a wrong-product attach, not just a renamed listing.
-    if (tm.capConflict) {
-      issues.push({ type: 'capacity_mismatch', severity: 'high',
-        msg: `Capacity mismatch — stored ${product.cap ?? parseCapacityGB(product.n)}GB vs listing ${parseCapacityGB(azTitle)}GB; refusing to trust ASIN`,
-        stored: product.n, amazon: azTitle });
-    } else {
-      issues.push({ type: 'title_mismatch', severity: 'high',
-        msg: `Title mismatch (score=${tm.score})`, stored: product.n, amazon: azTitle });
-    }
-    return { issues, fixes };
-  }
-
-  // Pick the NEW-condition Buy Box price. Never a used/3rd-party-condition offer.
-  const offer = selectNewOffer(amazonData);
-  const storedPrice = product.deals?.amazon?.price;
-  if (!offer) {
-    // The listing has offers but NONE are New (used-only / open-box only). Writing
-    // any of those would repeat the original bug, so refuse and flag for review.
-    issues.push({ type: 'no_new_offer', severity: 'high',
-      msg: `No New-condition offer on listing (lowest any-condition $${lowestAnyConditionPrice(amazonData) ?? '?'}); refusing to write a price`,
-      stored: storedPrice ?? null, amazon: null });
-    fixes.needsReview = true;
-    fixes.quarantinedAt = new Date().toISOString().slice(0, 10);
-    return { issues, fixes };
-  }
-  const azPrice = offer.price;
-
-  if (azPrice != null && storedPrice != null) {
-    const drift = Math.abs(azPrice - storedPrice) / Math.max(storedPrice, 1);
-    if (drift > PRICE_DRIFT_THRESHOLD) {
-      // Defense-in-depth: never copy a price that's physically impossible for the
-      // capacity, even if the title passed. Catches a wrong-ASIN that slipped the gate.
-      const cap = product.cap ?? parseCapacityGB(product.n);
-      if (STORAGE_CATS.has(product.c) && !isPricePlausibleForCapacity(azPrice, cap, { isHDD: isHardDrive(product) })) {
-        issues.push({ type: 'implausible_price', severity: 'high',
-          msg: `Refused price $${azPrice} — $${(azPrice / (cap / 1000)).toFixed(2)}/TB impossible for ${cap}GB; ASIN likely wrong`,
-          stored: storedPrice, amazon: azPrice });
-      } else {
-        // Cross-retailer sanity gate: only AUTO-WRITE a confirmed-New price that is
-        // not a wild outlier vs the product's other retailers. Drift-detection is
-        // decoupled from the write — failing the gate flags, it does not block detection.
-        const sanity = amazonPriceSanity(product, azPrice);
-        if (sanity.pass) {
-          issues.push({ type: 'price_drift', severity: 'medium',
-            msg: `Drift ${(drift * 100).toFixed(1)}% — New ${offer.source} ($${azPrice}, ${offer.seller || '?'}); sanity OK`,
-            stored: storedPrice, amazon: azPrice });
-          fixes.amazonPrice = azPrice;
-        } else {
-          issues.push({ type: 'price_drift_flagged', severity: 'high',
-            msg: `Drift ${(drift * 100).toFixed(1)}% — New price $${azPrice} FLAGGED (cls=${sanity.cls}` +
-                 `${sanity.dispConflict ? `, spread=${sanity.spread?.toFixed(2)}x` : ''}); not auto-written`,
-            stored: storedPrice, amazon: azPrice });
-          fixes.needsReview = true;
-          fixes.quarantinedAt = new Date().toISOString().slice(0, 10);
-        }
-      }
-    }
-  } else if (azPrice != null && storedPrice == null) {
-    // No stored price yet — attach the New price only if it passes the gate.
-    const sanity = amazonPriceSanity(product, azPrice);
-    if (sanity.pass) {
-      fixes.amazonPrice = azPrice;
-    } else {
-      issues.push({ type: 'price_attach_flagged', severity: 'high',
-        msg: `New price $${azPrice} FLAGGED on attach (cls=${sanity.cls}); not auto-written`,
-        stored: null, amazon: azPrice });
-      fixes.needsReview = true;
-      fixes.quarantinedAt = new Date().toISOString().slice(0, 10);
-    }
-  }
-
-  // Stock: the sellers endpoint has no single is_available flag; a live New offer
-  // implies in-stock. (No New offer is handled above as needsReview.)
-  const azInStock = true;
-  const storedStock = product.deals?.amazon?.inStock;
-  if (storedStock !== azInStock) {
-    issues.push({ type: 'stock_mismatch', severity: 'medium',
-      msg: `Stock changed`, stored: storedStock, amazon: azInStock });
-    fixes.amazonInStock = azInStock;
-  }
-  return { issues, fixes };
-}
 
 function applyFixes(parts, perProductFixes) {
   let changed = 0;
@@ -488,6 +370,21 @@ function writeReports(allIssues, asinRepairs, meta) {
     const { issues, fixes } = analyzeResult(product, r.data);
     allIssues.push({ productId: r.productId, asin: r.asin, name: product.n, category: product.c, issues });
     if (Object.keys(fixes).length) perProductFixes[r.productId] = fixes;
+  }
+
+  // Drift-gate staleness: if a whole category drift-quarantines an implausible
+  // share, the GATE is stale (the market moved), not the data. Warn, never drop.
+  const perCat = {};
+  for (const e of allIssues) {
+    if (!e.issues.some(i => DRIFT_GRADED_TYPES.has(i.type))) continue;
+    const c = (perCat[e.category] ||= { graded: 0, flagged: 0 });
+    c.graded++;
+    if (e.issues.some(i => DRIFT_FLAGGED_TYPES.has(i.type))) c.flagged++;
+  }
+  const { warnings: driftWarnings } = driftGateStaleness(perCat, new Date().toISOString().slice(0, 10));
+  if (driftWarnings.length) {
+    console.log(`\n⚠ DRIFT GATE STALENESS (${driftWarnings.length}):`);
+    driftWarnings.forEach(w => console.log(`  ${w}`));
   }
 
   const asinRepairs = [];

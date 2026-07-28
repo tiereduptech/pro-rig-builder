@@ -73,13 +73,11 @@ export default [
     "rgb": true,
     "deals": {
       "amazon": {
-        "price": 120.24,
+        "price": 119.92,
         "url": "https://www.amazon.com/dp/B0DRLD3KV2?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    }
   },
   {
     "id": 99604,
@@ -310,7 +308,10 @@ export default [
     "cableType": "PCIe Power",
     "cableLength": "10in",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100122,
@@ -396,13 +397,11 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Corsair-Premium-600W-12VHPWR-Cable/dp/B0BLY1B362/ref=sr_1_20?crid=CLGNG5F6BXH4&dib=eyJ2IjoiMSJ9.rzpIuGOeIYlcpgYHYeAwFOFFlpvdPSjR1oGBHMR5Yzi1lg4gwmpV1JHMfj2MkuXbXshCxJTYugZrlcoWf48ixxfdN9AtRX034_E8FD_4j0ncqMBiTD6XE9bSdQvoVvEw5VYphwT6_EAfl92P-wHy__2uLKxjwQuoLEnVKMa_wLA7U1KBau27xVhLJz_9zWb88x0zQXPLzs5WTpN7ngwx_9SEG3JS_ui17HnXlgGjlts.LVWLZuLHahHIfKUmV14H_bqoaMCi-QNwEjBx_ZHAUjo&dib_tag=se&keywords=12VHPWR+adapter+cable&qid=1777131263&sprefix=12VHPWR%2Badapter%2Bcable%2Caps%2C190&sr=8-20&xpid=Tmqc8k551LZJu&tag=tiereduptech-20",
-        "price": 29.99,
+        "price": 27.55,
         "inStock": true
       }
     },
-    "cableType": "12VHPWR",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "cableType": "12VHPWR"
   },
   {
     "id": 100127,
@@ -441,7 +440,10 @@ export default [
     "cableType": "Full Kit",
     "cableLength": "30cm",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100129,

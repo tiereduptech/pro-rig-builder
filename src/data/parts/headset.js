@@ -72,7 +72,10 @@ export default [
     "value": 6,
     "bench": 75,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 97002,
@@ -158,7 +161,10 @@ export default [
     "value": 0,
     "bench": 75,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 97005,
@@ -222,7 +228,7 @@ export default [
     "anc": false,
     "deals": {
       "amazon": {
-        "price": 39.99,
+        "price": 29.99,
         "url": "https://www.amazon.com/dp/B0B8PGDMWK?tag=tiereduptech-20",
         "inStock": true,
         "bestbuy": {
@@ -233,9 +239,7 @@ export default [
       }
     },
     "value": 28,
-    "bench": 75,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "bench": 75
   },
   {
     "id": 97008,
@@ -283,7 +287,10 @@ export default [
     "value": 65,
     "bench": 61,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 97010,
@@ -337,7 +344,10 @@ export default [
     "hsType": "Wired",
     "bench": 54,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 97013,
@@ -403,9 +413,7 @@ export default [
     },
     "hsType": "Wired",
     "driver": 50,
-    "bench": 56,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "bench": 56
   },
   {
     "id": 100031,
@@ -567,7 +575,10 @@ export default [
     "driver": 50,
     "bench": 56,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100038,
@@ -772,7 +783,10 @@ export default [
     "anc": false,
     "bench": 52,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100047,
@@ -827,7 +841,10 @@ export default [
     "upc": "00615104356146",
     "mpn": "HD 560S",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100049,
@@ -982,7 +999,7 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-G435-Wireless-Gaming-Headset/dp/B08R8DT7X6/ref=sr_1_10?crid=MRVPSPTMXZV3&dib=eyJ2IjoiMSJ9.TGUcBFudkT26JpacVPP_qkh5IVdVYiy_Un7lqOx9ARf5ig5CPmtbtiGU-56-2992NPuNC0lDV9lezPZxKomcgHI3t1jGsZCc7jzw3fBa4nlu3TKRoqDjL28bU-70FhukaFDWlXga7v95I_BIIzF2h6IUu9Ssca7C7p0FgBG5LZ5_v9Enjz46FuHhAHLYpWnj3DWfJd8fCKhWLxclkEA_wFV22CFbgJx4XLRtSuHTWsU.ozAVXeiJ7pf-DjIrsg255D0lvCOFz9IzljDQfstezgg&dib_tag=se&keywords=wireless+gaming+headset&qid=1777130635&sprefix=wireless%2Bgaming%2Bheadset%2Caps%2C130&sr=8-10&tag=tiereduptech-20",
-        "price": 45.83,
+        "price": 60.47,
         "inStock": true
       }
     },
@@ -990,9 +1007,7 @@ export default [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 64,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "bench": 64
   },
   {
     "id": 100056,
@@ -1065,7 +1080,10 @@ export default [
     "anc": false,
     "bench": 52,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100059,
@@ -2695,14 +2713,12 @@ export default [
       "amazon": {
         "asin": "B0FLFXYJWY",
         "url": "https://www.amazon.com/dp/B0FLFXYJWY?tag=tiereduptech-20",
-        "price": 154.99,
+        "price": 249,
         "inStock": true
       }
     },
     "addedAt": "2026-05-15T17:05:43.627Z",
-    "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "source": "amazon-discovery"
   },
   {
     "id": 101648,
@@ -2739,7 +2755,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.627Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101650,
@@ -2926,7 +2945,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.629Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101660,
@@ -2963,7 +2985,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.630Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101662,
@@ -3000,7 +3025,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.630Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101664,
@@ -3057,7 +3085,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.630Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101667,
@@ -3269,7 +3300,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.632Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101682,
@@ -3291,7 +3325,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.632Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101683,
@@ -3411,9 +3448,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.633Z",
-    "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "source": "amazon-discovery"
   },
   {
     "id": 101689,
@@ -3575,7 +3610,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.633Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101697,
@@ -3597,7 +3635,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.633Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101698,
@@ -3637,9 +3678,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.633Z",
-    "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "source": "amazon-discovery"
   },
   {
     "id": 101700,

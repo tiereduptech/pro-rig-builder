@@ -26,7 +26,10 @@ export default [
     "readSpeed": "16x BD / 16x DVD",
     "writeSpeed": "16x BD-R",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 99301,
@@ -40,7 +43,7 @@ export default [
     "iface": "SATA",
     "deals": {
       "amazon": {
-        "price": 48,
+        "price": 59.99,
         "url": "https://www.amazon.com/dp/B0033Z2BAQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -51,9 +54,7 @@ export default [
     "formFactor": "5.25\"",
     "mdisc": false,
     "readSpeed": "48x CD / 16x DVD",
-    "writeSpeed": "24x DVD±R",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "writeSpeed": "24x DVD±R"
   },
   {
     "id": 99302,
@@ -106,7 +107,10 @@ export default [
     "formFactor": "5.25\"",
     "mdisc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 96200,

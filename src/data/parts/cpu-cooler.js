@@ -460,7 +460,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 75,
     "cfm": 132,
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 80008,
@@ -496,7 +499,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 78,
     "cfm": 145,
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 80009,
@@ -648,7 +654,10 @@ export default [
     "bench": 89,
     "height": 52,
     "cfm": 174,
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 80013,
@@ -685,7 +694,10 @@ export default [
     "bench": 64,
     "height": 52,
     "cfm": 116,
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 80014,
@@ -825,9 +837,7 @@ export default [
     "value": 28,
     "bench": 91,
     "height": 52,
-    "cfm": 180,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-19"
+    "cfm": 180
   },
   {
     "id": 80018,
@@ -862,9 +872,7 @@ export default [
     "value": 34,
     "bench": 81,
     "height": 52,
-    "cfm": 130,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-19"
+    "cfm": 130
   },
   {
     "id": 80019,
@@ -1004,7 +1012,10 @@ export default [
     "bench": 95,
     "height": 52,
     "cfm": 180,
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 80023,
@@ -1161,9 +1172,7 @@ export default [
     "fanSize": 120,
     "height": 52,
     "cfm": 60,
-    "neweggRemovedOutlier": "2026-06-28",
-    "quarantinedAt": "2026-07-22",
-    "needsReview": true
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 80027,
@@ -1957,9 +1966,7 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3,
-    "quarantinedAt": "2026-07-25",
-    "needsReview": true
+    "fanCount": 3
   },
   {
     "id": 80044,
@@ -1996,9 +2003,7 @@ export default [
     "value": 82,
     "bench": 66,
     "radSize": "120",
-    "cfm": 132,
-    "quarantinedAt": "2026-07-07",
-    "needsReview": true
+    "cfm": 132
   },
   {
     "id": 80045,
@@ -2250,7 +2255,7 @@ export default [
     "reviews": 451,
     "deals": {
       "amazon": {
-        "price": 46.9,
+        "price": 42.21,
         "url": "https://www.amazon.com/dp/B0CL9W968Y?tag=tiereduptech-20",
         "inStock": true
       },
@@ -2284,9 +2289,7 @@ export default [
     "value": 67,
     "bench": 65,
     "radSize": "120",
-    "cfm": 132,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "cfm": 132
   },
   {
     "id": 80051,
@@ -2721,9 +2724,7 @@ export default [
     "height": 52,
     "cfm": 120,
     "radiator": 240,
-    "fanCount": 2,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-16"
+    "fanCount": 2
   },
   {
     "id": 80060,
@@ -2765,7 +2766,10 @@ export default [
     "radiator": 360,
     "fanCount": 3,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 80061,
@@ -4349,7 +4353,10 @@ export default [
     "fanSize": 120,
     "height": 52,
     "cfm": 180,
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 80094,
@@ -5493,9 +5500,7 @@ export default [
     "bench": 58,
     "radSize": "140",
     "fanSize": 140,
-    "cfm": 75,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-07"
+    "cfm": 75
   },
   {
     "id": 80119,
@@ -5883,7 +5888,10 @@ export default [
     "cfm": 60,
     "mpn": "MAP-T6PN-225PK-R1",
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 80128,
@@ -7328,7 +7336,10 @@ export default [
     "fanSize": 140,
     "cfm": 132,
     "quarantinedAt": "2026-07-28",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 80159,
@@ -7403,7 +7414,10 @@ export default [
     "height": 52,
     "cfm": 180,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 80161,
@@ -7479,7 +7493,10 @@ export default [
     "bench": 40,
     "cfm": 65,
     "quarantinedAt": "2026-07-28",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 80163,
@@ -7795,7 +7812,10 @@ export default [
     "radiator": 240,
     "fanCount": 2,
     "quarantinedAt": "2026-07-28",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 80170,
@@ -8202,9 +8222,7 @@ export default [
     "height": 52,
     "cfm": 120,
     "radiator": 240,
-    "fanCount": 2,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-25"
+    "fanCount": 2
   },
   {
     "id": 80178,
@@ -8713,9 +8731,7 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "fanCount": 3
   },
   {
     "id": 80190,
@@ -8869,7 +8885,10 @@ export default [
     "radSize": "120",
     "cfm": 60,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 80194,
@@ -8912,7 +8931,10 @@ export default [
     "radiator": 240,
     "fanCount": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 80195,
@@ -9179,7 +9201,7 @@ export default [
     "reviews": 88,
     "deals": {
       "amazon": {
-        "price": 39.99,
+        "price": 37.99,
         "url": "https://www.amazon.com/dp/B0DRFXH8L8?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9213,9 +9235,7 @@ export default [
     "bench": 61,
     "radSize": "120",
     "fanSize": 140,
-    "cfm": 132,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "cfm": 132
   },
   {
     "id": 80202,
@@ -9512,9 +9532,7 @@ export default [
     "cfm": 180,
     "radiator": 360,
     "fanCount": 3,
-    "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 80209,
@@ -10028,9 +10046,7 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-25"
+    "fanCount": 3
   },
   {
     "id": 80221,
@@ -10222,7 +10238,10 @@ export default [
     "height": 52,
     "cfm": 220,
     "quarantinedAt": "2026-07-28",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 80226,
@@ -10492,9 +10511,7 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "fanCount": 3
   },
   {
     "id": 80232,
@@ -10535,7 +10552,10 @@ export default [
     "radSize": "120",
     "cfm": 60,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 80233,
@@ -10575,7 +10595,10 @@ export default [
     "fanSize": 140,
     "cfm": 75,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 80234,
@@ -10784,9 +10807,7 @@ export default [
     "height": 52,
     "cfm": 120,
     "radiator": 240,
-    "fanCount": 2,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "fanCount": 2
   },
   {
     "id": 80239,
@@ -10825,9 +10846,7 @@ export default [
     "height": 52,
     "cfm": 165,
     "radiator": 360,
-    "fanCount": 3,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "fanCount": 3
   },
   {
     "id": 80240,
@@ -10951,9 +10970,7 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-10"
+    "fanCount": 3
   },
   {
     "id": 80243,
@@ -11432,7 +11449,10 @@ export default [
     "bench": 39,
     "cfm": 65,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 80254,
@@ -13827,7 +13847,10 @@ export default [
     "noise": 33.88,
     "rpm": 2800,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100357,
@@ -13916,7 +13939,7 @@ export default [
       "amazon": {
         "asin": "B0FX2XJKX3",
         "url": "https://www.amazon.com/dp/B0FX2XJKX3?tag=tiereduptech-20",
-        "price": 87.99,
+        "price": 89.99,
         "inStock": true
       }
     },
@@ -13932,9 +13955,7 @@ export default [
     ],
     "airflow": 227.4,
     "noise": 36,
-    "rpm": 2100,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "rpm": 2100
   },
   {
     "id": 100360,
@@ -14265,7 +14286,10 @@ export default [
     "airflow": 110,
     "rpm": 2500,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100371,
@@ -14296,7 +14320,10 @@ export default [
     ],
     "rpm": 1600,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100372,
@@ -14390,7 +14417,10 @@ export default [
     "rpm": 1850,
     "neweggRemovedOutlier": "2026-06-28",
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 100578,
@@ -14412,7 +14442,10 @@ export default [
     "addedAt": "2026-05-15T14:34:31.769Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100900,
@@ -14496,9 +14529,7 @@ export default [
     ],
     "airflow": 74.9,
     "noise": 25.6,
-    "rpm": 2000,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-25"
+    "rpm": 2000
   },
   {
     "id": 100903,
@@ -14619,7 +14650,10 @@ export default [
     "noise": 29.8,
     "rpm": 2000,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 100907,
@@ -14747,7 +14781,10 @@ export default [
     "noise": 29,
     "rpm": 2000,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 100911,
@@ -14925,7 +14962,10 @@ export default [
     "noise": 28.4,
     "rpm": 2150,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100917,
@@ -15043,7 +15083,10 @@ export default [
     "airflow": 69.9,
     "rpm": 1900,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100921,
@@ -15256,7 +15299,7 @@ export default [
       "amazon": {
         "asin": "B0D4WQHWD2",
         "url": "https://www.amazon.com/dp/B0D4WQHWD2?tag=tiereduptech-20",
-        "price": 214.86,
+        "price": 225.11,
         "inStock": true
       }
     },
@@ -15267,9 +15310,7 @@ export default [
     "radiator": 140,
     "fanCount": 1,
     "noise": 30.7,
-    "rpm": 1800,
-    "quarantinedAt": "2026-07-07",
-    "needsReview": true
+    "rpm": 1800
   },
   {
     "id": 100929,
@@ -15418,9 +15459,7 @@ export default [
     ],
     "airflow": 66.17,
     "noise": 25.6,
-    "rpm": 1550,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "rpm": 1550
   },
   {
     "id": 100934,
@@ -15810,9 +15849,7 @@ export default [
       "AM3"
     ],
     "noise": 14.4,
-    "rpm": 1800,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-16"
+    "rpm": 1800
   },
   {
     "id": 100947,
@@ -16289,9 +16326,7 @@ export default [
     "bench": 26,
     "airflow": 79.7,
     "noise": 33.9,
-    "rpm": 2500,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-19"
+    "rpm": 2500
   },
   {
     "id": 100966,
@@ -16446,9 +16481,7 @@ export default [
     ],
     "airflow": 78.86,
     "noise": 30,
-    "rpm": 1000,
-    "quarantinedAt": "2026-07-22",
-    "needsReview": true
+    "rpm": 1000
   },
   {
     "id": 100974,
@@ -17191,7 +17224,10 @@ export default [
     "noise": 25.6,
     "rpm": 1500,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101231,
@@ -17852,7 +17888,10 @@ export default [
     "airflow": 40,
     "rpm": 2000,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101256,
@@ -18369,7 +18408,10 @@ export default [
     "noise": 25.6,
     "rpm": 1500,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101379,
@@ -19028,7 +19070,10 @@ export default [
     "airflow": 40,
     "rpm": 2000,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101404,
@@ -19655,7 +19700,10 @@ export default [
     "airflow": 40,
     "rpm": 2000,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101917,

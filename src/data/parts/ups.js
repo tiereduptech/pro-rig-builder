@@ -128,7 +128,10 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "quarantinedAt": "2026-07-20",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 99705,

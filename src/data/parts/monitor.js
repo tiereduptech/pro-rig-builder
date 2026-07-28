@@ -32,7 +32,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 89,
     "resolution": "1440p",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90001,
@@ -65,7 +68,10 @@ export default [
     "bench": 95,
     "resolution": "4K",
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 90002,
@@ -98,7 +104,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 100,
     "resolution": "1440p",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90003,
@@ -131,7 +140,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 82,
     "resolution": "1440p",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90004,
@@ -165,7 +177,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 89,
     "resolution": "1440p",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90005,
@@ -198,7 +213,10 @@ export default [
     "value": 24,
     "quarantinedAt": "2026-07-28",
     "bench": 100,
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90006,
@@ -263,7 +281,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 61,
     "resolution": "1440p",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90008,
@@ -296,7 +317,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 74,
     "resolution": "1080p",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90009,
@@ -330,7 +354,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 95,
     "resolution": "1440p",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90010,
@@ -363,7 +390,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 64,
     "resolution": "1080p",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90011,
@@ -397,7 +427,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 54,
     "resolution": "1440p",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90012,
@@ -431,7 +464,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 68,
     "resolution": "4K",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90013,
@@ -465,7 +501,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 100,
     "resolution": "4K",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90014,
@@ -498,7 +537,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 100,
     "resolution": "4K",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90015,
@@ -649,9 +691,7 @@ export default [
     "hdr": "HDR True Black 400",
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-19"
+    "resolution": "1440p"
   },
   {
     "id": 90019,
@@ -1124,7 +1164,10 @@ export default [
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 90032,
@@ -1139,7 +1182,7 @@ export default [
     "reviews": 1230,
     "deals": {
       "amazon": {
-        "price": 114.99,
+        "price": 114.98,
         "url": "https://www.amazon.com/dp/B0FV7H7CP3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -1157,9 +1200,7 @@ export default [
     "panel": "IPS",
     "response": "1 Milliseconds",
     "bench": 47,
-    "ports": "1x HDMI, 1x DisplayPort",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-25"
+    "ports": "1x HDMI, 1x DisplayPort"
   },
   {
     "id": 90033,
@@ -1394,9 +1435,7 @@ export default [
     "ports": "DisplayPort",
     "upc": "00792343334224",
     "resolution": "1440p",
-    "curved": true,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "curved": true
   },
   {
     "id": 90039,
@@ -1433,7 +1472,10 @@ export default [
     "ports": "HDMI, USB-C",
     "resolution": "1080p",
     "needsReview": true,
-    "quarantinedAt": "2026-07-19"
+    "quarantinedAt": "2026-07-19",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90040,
@@ -1935,7 +1977,10 @@ export default [
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "4K",
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 90054,
@@ -2045,7 +2090,10 @@ export default [
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 90057,
@@ -2283,7 +2331,10 @@ export default [
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 90063,
@@ -2558,7 +2609,10 @@ export default [
     "ports": "1x HDMI, 1x DisplayPort",
     "resolution": "4K",
     "quarantinedAt": "2026-07-28",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90070,
@@ -2830,7 +2884,7 @@ export default [
     "reviews": 151,
     "deals": {
       "amazon": {
-        "price": 670.72,
+        "price": 949,
         "url": "https://www.amazon.com/dp/B0BHK7LLZD?tag=tiereduptech-20",
         "inStock": true
       }
@@ -2852,9 +2906,7 @@ export default [
     "hdr": "HDR",
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p",
-    "quarantinedAt": "2026-07-28",
-    "needsReview": true
+    "resolution": "1440p"
   },
   {
     "id": 90078,
@@ -3053,7 +3105,10 @@ export default [
     "resolution": "1440p",
     "curved": true,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 90083,
@@ -3406,7 +3461,10 @@ export default [
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "4K",
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 90093,
@@ -12339,7 +12397,10 @@ export default [
     "refresh": 120,
     "panel": "IPS",
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100990,
@@ -12364,7 +12425,10 @@ export default [
     "resolution": "4K",
     "refresh": 120,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100991,
@@ -12598,7 +12662,10 @@ export default [
     "refresh": 120,
     "panel": "VA",
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101001,
@@ -12727,9 +12794,7 @@ export default [
     },
     "addedAt": "2026-05-15T14:34:31.799Z",
     "source": "amazon-discovery",
-    "resolution": "4K",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-25"
+    "resolution": "4K"
   },
   {
     "id": 101007,
@@ -12777,7 +12842,10 @@ export default [
     "refresh": 60,
     "panel": "IPS",
     "quarantinedAt": "2026-07-28",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101009,
@@ -12920,9 +12988,7 @@ export default [
     "screenSize": 27,
     "resolution": "1440p",
     "refresh": 180,
-    "panel": "IPS",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-25"
+    "panel": "IPS"
   },
   {
     "id": 101015,
@@ -13207,9 +13273,7 @@ export default [
     "source": "amazon-discovery",
     "resolution": "1440p",
     "refresh": 180,
-    "panel": "IPS",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-25"
+    "panel": "IPS"
   },
   {
     "id": 101027,
@@ -13330,7 +13394,10 @@ export default [
     "refresh": 100,
     "curved": true,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101032,
@@ -13933,9 +14000,7 @@ export default [
     "resolution": "1440p",
     "refresh": 240,
     "panel": "OLED",
-    "curved": true,
-    "quarantinedAt": "2026-07-19",
-    "needsReview": true
+    "curved": true
   },
   {
     "id": 101058,
@@ -14173,7 +14238,10 @@ export default [
     "panel": "VA",
     "curved": true,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101068,
@@ -14453,7 +14521,10 @@ export default [
     "panel": "VA",
     "curved": true,
     "quarantinedAt": "2026-07-28",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101080,
@@ -14468,7 +14539,7 @@ export default [
       "amazon": {
         "asin": "B0FDC2JBYG",
         "url": "https://www.amazon.com/dp/B0FDC2JBYG?tag=tiereduptech-20",
-        "price": 699.99,
+        "price": 679.99,
         "inStock": true
       }
     },
@@ -14478,9 +14549,7 @@ export default [
     "resolution": "1440p",
     "refresh": 240,
     "panel": "OLED",
-    "curved": true,
-    "quarantinedAt": "2026-07-10",
-    "needsReview": true
+    "curved": true
   },
   {
     "id": 101081,
@@ -14568,7 +14637,7 @@ export default [
       "amazon": {
         "asin": "B0F15CGTGW",
         "url": "https://www.amazon.com/dp/B0F15CGTGW?tag=tiereduptech-20",
-        "price": 799,
+        "price": 799.99,
         "inStock": true
       }
     },
@@ -14578,9 +14647,7 @@ export default [
     "resolution": "1440p",
     "refresh": 240,
     "panel": "OLED",
-    "curved": true,
-    "quarantinedAt": "2026-07-07",
-    "needsReview": true
+    "curved": true
   },
   {
     "id": 101085,
@@ -15004,7 +15071,10 @@ export default [
     "refresh": 144,
     "curved": true,
     "needsReview": true,
-    "quarantinedAt": "2026-07-10"
+    "quarantinedAt": "2026-07-10",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101102,
@@ -15393,7 +15463,7 @@ export default [
       "amazon": {
         "asin": "B0D9HY3JH2",
         "url": "https://www.amazon.com/dp/B0D9HY3JH2?tag=tiereduptech-20",
-        "price": 779.99,
+        "price": 801.78,
         "inStock": true
       }
     },
@@ -15402,8 +15472,6 @@ export default [
     "screenSize": 32,
     "resolution": "4K",
     "refresh": 165,
-    "panel": "OLED",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-16"
+    "panel": "OLED"
   }
 ];

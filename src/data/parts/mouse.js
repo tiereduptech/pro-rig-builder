@@ -54,7 +54,10 @@ export default [
     "value": 30,
     "bench": 92,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 96004,
@@ -85,7 +88,10 @@ export default [
     "value": 0,
     "bench": 88,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 96006,
@@ -116,7 +122,10 @@ export default [
     "value": 12,
     "bench": 85,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 96007,
@@ -147,7 +156,10 @@ export default [
     "value": 7,
     "bench": 81,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 96008,
@@ -173,7 +185,10 @@ export default [
     "value": 3,
     "bench": 53,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 96009,
@@ -228,7 +243,10 @@ export default [
     "mouseType": "USB",
     "bench": 100,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 96011,
@@ -305,7 +323,10 @@ export default [
     "mouseType": "Wireless",
     "bench": 100,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 96014,
@@ -331,7 +352,10 @@ export default [
     "mouseType": "Wireless",
     "bench": 90,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 99972,
@@ -404,7 +428,10 @@ export default [
     "weight": 134,
     "bench": 30,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 99975,
@@ -479,7 +506,10 @@ export default [
     "weight": 63,
     "bench": 88,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 99978,
@@ -503,7 +533,10 @@ export default [
     "weight": 110,
     "bench": 41,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 99979,
@@ -753,7 +786,10 @@ export default [
     "weight": 158,
     "bench": 39,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 99990,
@@ -897,7 +933,10 @@ export default [
     "upc": "00816617021815",
     "mpn": "M913W",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 99996,
@@ -1031,7 +1070,10 @@ export default [
     "weight": 80,
     "bench": 86,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100003,
@@ -1053,9 +1095,7 @@ export default [
     "weight": 82,
     "mouseType": "Wireless",
     "dpi": 30000,
-    "bench": 81,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "bench": 81
   },
   {
     "id": 100004,
@@ -2208,7 +2248,10 @@ export default [
     "addedAt": "2026-05-15T16:31:54.593Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101153,
@@ -2270,7 +2313,10 @@ export default [
     "addedAt": "2026-05-15T16:31:54.595Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101156,
@@ -2452,7 +2498,10 @@ export default [
     "addedAt": "2026-05-15T16:39:25.916Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101301,
@@ -2514,7 +2563,10 @@ export default [
     "addedAt": "2026-05-15T16:39:25.918Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101304,
@@ -2576,7 +2628,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.603Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101443,
@@ -2618,7 +2673,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.603Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101445,
@@ -2985,7 +3043,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.610Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101467,
@@ -3122,7 +3183,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.611Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101474,
@@ -3162,9 +3226,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.612Z",
-    "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "source": "amazon-discovery"
   },
   {
     "id": 101476,
@@ -3324,9 +3386,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.614Z",
-    "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "source": "amazon-discovery"
   },
   {
     "id": 101484,
@@ -3428,7 +3488,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.615Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101489,
@@ -3510,6 +3573,9 @@ export default [
     "addedAt": "2026-05-15T17:05:43.616Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   }
 ];

@@ -48,7 +48,10 @@ export default [
     "noise": 31.5,
     "rpm": 2000,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 100971,
@@ -234,9 +237,7 @@ export default [
     "pwm": true,
     "bench": 71,
     "fans_inc": 5,
-    "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 85004,
@@ -295,7 +296,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 82,
     "fans_inc": 3,
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 85006,
@@ -326,7 +330,10 @@ export default [
     "bench": 70,
     "fans_inc": 3,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 85007,
@@ -478,7 +485,10 @@ export default [
     "pwm": true,
     "quarantinedAt": "2026-07-28",
     "bench": 74,
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:drift"
+    ]
   },
   {
     "id": 85012,
@@ -508,7 +518,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "bench": 66,
     "fans_inc": 3,
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 85013,
@@ -820,9 +833,7 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 55,
-    "fanSize": 120,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-10"
+    "fanSize": 120
   },
   {
     "id": 85021,
@@ -1294,9 +1305,7 @@ export default [
     "pack": 1,
     "bench": 58,
     "mpn": "ACFAN00309A",
-    "fanSize": 120,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "fanSize": 120
   },
   {
     "id": 85032,
@@ -1428,9 +1437,7 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 53,
-    "fanSize": 120,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "fanSize": 120
   },
   {
     "id": 85035,
@@ -1470,9 +1477,7 @@ export default [
     "pack": 3,
     "bench": 83,
     "mpn": "ACFAN00333A",
-    "fanSize": 120,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-25"
+    "fanSize": 120
   },
   {
     "id": 85036,
@@ -1679,9 +1684,7 @@ export default [
     "bench": 73,
     "mpn": "ACFAN00120A",
     "fanSize": 120,
-    "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 85041,
@@ -2144,9 +2147,7 @@ export default [
     "rgb": false,
     "pack": 2,
     "bench": 42,
-    "fanSize": 120,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-25"
+    "fanSize": 120
   },
   {
     "id": 85052,
@@ -2489,7 +2490,10 @@ export default [
     "mpn": "ACFAN00315A",
     "fanSize": 140,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 85060,
@@ -3466,7 +3470,10 @@ export default [
     "mpn": "ACFAN00314A",
     "fanSize": 140,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 85085,
@@ -3597,9 +3604,7 @@ export default [
     "pack": 3,
     "bench": 72,
     "mpn": "ACFAN00320A",
-    "fanSize": 140,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "fanSize": 140
   },
   {
     "id": 85088,
@@ -3871,9 +3876,7 @@ export default [
     "pack": 3,
     "bench": 81,
     "mpn": "ACFAN00326A",
-    "fanSize": 120,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "fanSize": 120
   },
   {
     "id": 85094,
@@ -3989,9 +3992,7 @@ export default [
     "pack": 3,
     "bench": 90,
     "mpn": "ACFAN00327A",
-    "fanSize": 140,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "fanSize": 140
   },
   {
     "id": 85097,
@@ -4217,9 +4218,7 @@ export default [
     "rpm": 1300,
     "rgb": false,
     "pack": 1,
-    "bench": 66,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-10"
+    "bench": 66
   },
   {
     "id": 85103,
@@ -4296,9 +4295,7 @@ export default [
     "bench": 82,
     "mpn": "ACFAN00232A",
     "fanSize": 120,
-    "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 85105,
@@ -4420,7 +4417,10 @@ export default [
     "bench": 78,
     "fanSize": 120,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 85108,
@@ -4532,9 +4532,7 @@ export default [
     "rgb": false,
     "pack": 5,
     "bench": 81,
-    "fanSize": 140,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "fanSize": 140
   },
   {
     "id": 85111,
@@ -5018,7 +5016,7 @@ export default [
     "reviews": 110,
     "deals": {
       "amazon": {
-        "price": 11.5,
+        "price": 23.79,
         "url": "https://www.amazon.com/dp/B0CM6XNXP6?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5039,9 +5037,7 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 61,
-    "fanSize": 120,
-    "quarantinedAt": "2026-07-28",
-    "needsReview": true
+    "fanSize": 120
   },
   {
     "id": 85124,
@@ -5080,9 +5076,7 @@ export default [
     "pack": 1,
     "bench": 80,
     "mpn": "ACFAN00322A",
-    "fanSize": 120,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "fanSize": 120
   },
   {
     "id": 85125,
@@ -5123,7 +5117,10 @@ export default [
     "mpn": "ACFAN00318A",
     "fanSize": 140,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 85126,
@@ -5324,9 +5321,7 @@ export default [
     "pack": 1,
     "bench": 51,
     "mpn": "ACFAN00312A",
-    "fanSize": 120,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "fanSize": 120
   },
   {
     "id": 85131,
@@ -5399,9 +5394,7 @@ export default [
     "bench": 82,
     "mpn": "ACFAN00330A",
     "fanSize": 140,
-    "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 85133,
@@ -5438,9 +5431,7 @@ export default [
     "pack": 1,
     "bench": 78,
     "mpn": "ACFAN00331A",
-    "fanSize": 120,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "fanSize": 120
   },
   {
     "id": 85134,
@@ -5827,9 +5818,7 @@ export default [
     "pack": 3,
     "bench": 54,
     "fanSize": 120,
-    "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 85144,
@@ -5866,9 +5855,7 @@ export default [
     "pack": 5,
     "mpn": "ACFAN00248A",
     "fanSize": 120,
-    "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 85145,
@@ -5966,7 +5953,7 @@ export default [
     "reviews": 1754,
     "deals": {
       "amazon": {
-        "price": 30.75,
+        "price": 30.48,
         "url": "https://www.amazon.com/dp/B08XY2D47H?tag=tiereduptech-20",
         "inStock": true
       }
@@ -5990,9 +5977,7 @@ export default [
     "pack": 1,
     "bench": 76,
     "fanSize": 120,
-    "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 85148,
@@ -6054,7 +6039,7 @@ export default [
     "reviews": 1279,
     "deals": {
       "amazon": {
-        "price": 24.99,
+        "price": 39.99,
         "url": "https://www.amazon.com/dp/B0B1LH4SF3?tag=tiereduptech-20",
         "inStock": true
       }
@@ -6078,9 +6063,7 @@ export default [
     "pack": 1,
     "bench": 71,
     "mpn": "RF-R14SF-B1",
-    "neweggRemovedOutlier": "2026-06-28",
-    "quarantinedAt": "2026-07-28",
-    "needsReview": true
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 85150,
@@ -6396,7 +6379,7 @@ export default [
     "reviews": 764,
     "deals": {
       "amazon": {
-        "price": 21.95,
+        "price": 37.05,
         "url": "https://www.amazon.com/dp/B000YSONMO?tag=tiereduptech-20",
         "inStock": true
       }
@@ -6413,9 +6396,7 @@ export default [
     "rgb": false,
     "pack": 1,
     "pwm": false,
-    "fanSize": 120,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "fanSize": 120
   },
   {
     "id": 85159,
@@ -6689,7 +6670,7 @@ export default [
     "reviews": 625,
     "deals": {
       "amazon": {
-        "price": 21.74,
+        "price": 32.25,
         "url": "https://www.amazon.com/dp/B09LR6KV3S?tag=tiereduptech-20",
         "inStock": true
       }
@@ -6710,9 +6691,7 @@ export default [
     "bench": 68,
     "pack": 1,
     "mpn": "ACFAN00239A",
-    "fanSize": 140,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "fanSize": 140
   },
   {
     "id": 85166,
@@ -6896,7 +6875,10 @@ export default [
     "bench": 64,
     "fanSize": 120,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 85171,
@@ -7293,9 +7275,7 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 57,
-    "fanSize": 140,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "fanSize": 140
   },
   {
     "id": 85180,
@@ -7365,7 +7345,7 @@ export default [
     "reviews": 344,
     "deals": {
       "amazon": {
-        "price": 73.84,
+        "price": 71.56,
         "url": "https://www.amazon.com/dp/B08XY3Q64X?tag=tiereduptech-20",
         "inStock": true
       }
@@ -7389,9 +7369,7 @@ export default [
     "pack": 2,
     "bench": 79,
     "mpn": "CO-9050139-WW",
-    "fanSize": 140,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-19"
+    "fanSize": 140
   },
   {
     "id": 85182,
@@ -7541,7 +7519,10 @@ export default [
     "bench": 56,
     "fanSize": 120,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 85186,
@@ -7697,9 +7678,7 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 59,
-    "fanSize": 140,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-25"
+    "fanSize": 140
   },
   {
     "id": 85190,
@@ -7850,9 +7829,7 @@ export default [
     "pack": 1,
     "bench": 43,
     "fanSize": 140,
-    "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 85194,
@@ -7928,7 +7905,10 @@ export default [
     "pack": 1,
     "bench": 66,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 85196,
@@ -7969,7 +7949,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "fanSize": 120,
     "bestbuyRemovedComp": "2026-06-28",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 85197,
@@ -8844,7 +8827,10 @@ export default [
     "quarantinedAt": "2026-07-28",
     "fanSize": 140,
     "bestbuyRemovedComp": "2026-06-28",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 85219,
@@ -9018,7 +9004,7 @@ export default [
     "reviews": 42,
     "deals": {
       "amazon": {
-        "price": 13.99,
+        "price": 7.98,
         "url": "https://www.amazon.com/dp/B0DV1R9L53?tag=tiereduptech-20",
         "inStock": true
       },
@@ -9054,9 +9040,7 @@ export default [
     "mpn": "MFW-B2NN-17NPK-R1",
     "fanSize": 120,
     "bestbuyRemovedComp": "2026-06-28",
-    "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 85224,
@@ -9359,7 +9343,7 @@ export default [
     "reviews": 26,
     "deals": {
       "amazon": {
-        "price": 16.23,
+        "price": 15.9,
         "url": "https://www.amazon.com/dp/B0CR1CBYZQ?tag=tiereduptech-20",
         "inStock": true
       }
@@ -9379,9 +9363,7 @@ export default [
     "pwm": true,
     "rgbType": "ARGB",
     "pack": 1,
-    "bench": 53,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "bench": 53
   },
   {
     "id": 85232,
@@ -9486,7 +9468,10 @@ export default [
     "mpn": "14RSLIN1B",
     "bestbuyRemovedComp": "2026-06-28",
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 85235,
@@ -9597,7 +9582,10 @@ export default [
     "pack": 1,
     "bench": 58,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 85238,
@@ -9854,7 +9842,10 @@ export default [
     "mpn": "14RSLIN1W",
     "bestbuyRemovedComp": "2026-06-28",
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 85245,
@@ -10070,9 +10061,7 @@ export default [
     "rgb": false,
     "pack": 3,
     "bench": 61,
-    "fanSize": 120,
-    "quarantinedAt": "2026-07-22",
-    "needsReview": true
+    "fanSize": 120
   },
   {
     "id": 85251,
@@ -12391,9 +12380,7 @@ export default [
     "addedAt": "2026-05-15T14:34:31.807Z",
     "source": "amazon-discovery",
     "fanSize": 120,
-    "pwm": true,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-25"
+    "pwm": true
   },
   {
     "id": 101120,

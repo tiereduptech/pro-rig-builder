@@ -48,7 +48,10 @@ export default [
     "sampleRate": 96,
     "bench": 83,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 97502,
@@ -72,7 +75,10 @@ export default [
     "sampleRate": 48,
     "bench": 75,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 97503,
@@ -98,7 +104,10 @@ export default [
     "sampleRate": 48,
     "bench": 74,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100065,
@@ -175,16 +184,14 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Rode-PODMIC-Dynamic-Podcasting-Microphone/dp/B07MSCRCVK/ref=sr_1_11?crid=82HPG2FOGG2T&dib=eyJ2IjoiMSJ9.RmdIX9qeCx2jmBrUnSwOquwPkLHA5iMwvYSwigJ0-_oKeGNU14eEXZK30-Lt-HznYLutLFKvwXPHjhmkbaT-O97BxYYNJZPpB90tL7lApe111xDD26KtYkebfzTLzi5yp0bsbgQBoBwKfi2VM0PcmmxNlbhLzgiBGQ8g1DlDa3AL4vWR_d4veQk_O12PMAQJ-bckXUHGybWO4h__1ovRFmY82kXZO-crpL_lu8VeSIgRBBXXIDkKgAedvYRDYucEC3nQ_Agq1L7__WIPcaN7G-TbhcDP4TwqHGvCCxEqjHA.Oi8iUEv38LaqHCBkQL0cFoAzI57pXag4yNGB6razDIo&dib_tag=se&keywords=Shure+SM7B&qid=1777130682&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Shure%2BSM7B%2Caps%2C122&sr=8-11&tag=tiereduptech-20",
-        "price": 83,
+        "price": 86,
         "inStock": true
       }
     },
     "pattern": "Cardioid",
     "micType": "XLR",
     "sampleRate": 0,
-    "bench": 98,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "bench": 98
   },
   {
     "id": 100069,
@@ -270,7 +277,10 @@ export default [
     "sampleRate": 192,
     "bench": 69,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100073,
@@ -838,7 +848,10 @@ export default [
     "addedAt": "2026-05-15T16:31:54.642Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101181,
@@ -920,7 +933,10 @@ export default [
     "addedAt": "2026-05-15T16:39:25.965Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101329,
@@ -1287,7 +1303,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.637Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101735,
@@ -1554,7 +1573,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.639Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101755,
@@ -1866,7 +1888,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.641Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101777,
@@ -2048,7 +2073,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.642Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101790,
@@ -2088,9 +2116,7 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.642Z",
-    "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "source": "amazon-discovery"
   },
   {
     "id": 101792,
@@ -2717,7 +2743,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.650Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101826,
@@ -2739,7 +2768,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.651Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 101827,
@@ -2821,6 +2853,9 @@ export default [
     "addedAt": "2026-05-15T17:05:43.651Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   }
 ];

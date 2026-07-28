@@ -158,7 +158,10 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 96305,
@@ -221,9 +224,7 @@ export default [
         "url": "https://www.amazon.com/dp/B08ZD59L8H?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    }
   },
   {
     "id": 96308,
@@ -246,7 +247,10 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 96310,

@@ -72,7 +72,10 @@ export default [
     "bench": 10,
     "quarantinedAt": "2026-07-20",
     "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 50063,
@@ -215,7 +218,10 @@ export default [
     "read": 2100,
     "write": 2000,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 50115,
@@ -433,9 +439,7 @@ export default [
     "storageType": "HDD",
     "interface": "USB",
     "value": 13,
-    "bench": 10,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "bench": 10
   },
   {
     "id": 50275,
@@ -709,9 +713,7 @@ export default [
     "source": "amazon-discovery",
     "cap": 22000,
     "storageType": "HDD",
-    "interface": "SATA",
-    "quarantinedAt": "2026-07-13",
-    "needsReview": true
+    "interface": "SATA"
   },
   {
     "id": 100836,
@@ -1104,13 +1106,11 @@ export default [
     "driveType": "HDD",
     "deals": {
       "amazon": {
-        "price": 139.99,
+        "price": 149.99,
         "url": "https://www.amazon.com/dp/B07CRG94G3?tag=tiereduptech-20",
         "inStock": true
       }
-    },
-    "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    }
   },
   {
     "id": 99501,

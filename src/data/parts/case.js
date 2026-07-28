@@ -404,9 +404,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 72,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-15"
+    "bench": 72
   },
   {
     "id": 70009,
@@ -492,7 +490,10 @@ export default [
     "color": "Black",
     "bench": 100,
     "quarantinedAt": "2026-07-27",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 70011,
@@ -650,9 +651,7 @@ export default [
       120
     ],
     "color": "Black",
-    "bench": 33,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-19"
+    "bench": 33
   },
   {
     "id": 70015,
@@ -819,9 +818,7 @@ export default [
     "drive25": 2,
     "drive35": 2,
     "color": "Black",
-    "bench": 74,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-07"
+    "bench": 74
   },
   {
     "id": 70019,
@@ -865,7 +862,10 @@ export default [
     ],
     "color": "Black",
     "bench": 97,
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 70020,
@@ -947,9 +947,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 90,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "bench": 90
   },
   {
     "id": 70022,
@@ -965,7 +963,7 @@ export default [
     "tg": true,
     "deals": {
       "amazon": {
-        "price": 138.85,
+        "price": 138.87,
         "url": "https://www.amazon.com/dp/B0BN3SY5XW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -991,9 +989,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 97,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-15"
+    "bench": 97
   },
   {
     "id": 70023,
@@ -1036,9 +1032,7 @@ export default [
     ],
     "color": "Black",
     "bench": 100,
-    "neweggRemovedOutlier": "2026-06-28",
-    "quarantinedAt": "2026-07-07",
-    "needsReview": true
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 70024,
@@ -1118,7 +1112,10 @@ export default [
     ],
     "color": "Black",
     "bench": 64,
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 70026,
@@ -1329,7 +1326,10 @@ export default [
     "upc": "04710562741421",
     "bundle": false,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 70030,
@@ -1505,7 +1505,10 @@ export default [
     "color": "Black",
     "bench": 63,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 70033,
@@ -1620,9 +1623,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 64,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-19"
+    "bench": 64
   },
   {
     "id": 70035,
@@ -1671,9 +1672,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 66,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-19"
+    "bench": 66
   },
   {
     "id": 70036,
@@ -2034,7 +2033,10 @@ export default [
     "color": "Black",
     "bench": 64,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 70042,
@@ -3222,7 +3224,10 @@ export default [
     "bench": 70,
     "bundle": false,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 70062,
@@ -3371,7 +3376,10 @@ export default [
     ],
     "bench": 57,
     "quarantinedAt": "2026-07-27",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 70065,
@@ -3434,7 +3442,7 @@ export default [
     "reviews": 755,
     "deals": {
       "amazon": {
-        "price": 49.99,
+        "price": 59.99,
         "url": "https://www.amazon.com/dp/B0BQBGRDQB?tag=tiereduptech-20",
         "inStock": true
       }
@@ -3467,9 +3475,7 @@ export default [
       280,
       240
     ],
-    "bench": 57,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "bench": 57
   },
   {
     "id": 70067,
@@ -5309,7 +5315,10 @@ export default [
     "bench": 64,
     "bundle": false,
     "quarantinedAt": "2026-07-27",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 70101,
@@ -5516,9 +5525,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 81,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "bench": 81
   },
   {
     "id": 70105,
@@ -5956,7 +5963,10 @@ export default [
     "bench": 64,
     "upc": "00198715087321",
     "quarantinedAt": "2026-07-27",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 70113,
@@ -7613,9 +7623,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 64,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-07"
+    "bench": 64
   },
   {
     "id": 70144,
@@ -7714,9 +7722,7 @@ export default [
       280,
       240
     ],
-    "bench": 70,
-    "quarantinedAt": "2026-07-17",
-    "needsReview": true
+    "bench": 70
   },
   {
     "id": 70146,
@@ -8075,7 +8081,7 @@ export default [
     "reviews": 347,
     "deals": {
       "amazon": {
-        "price": 183.12,
+        "price": 208.46,
         "url": "https://www.amazon.com/dp/B0DJT8L32B?tag=tiereduptech-20",
         "inStock": true
       },
@@ -8119,9 +8125,7 @@ export default [
       280,
       240
     ],
-    "bench": 77,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "bench": 77
   },
   {
     "id": 70154,
@@ -8317,9 +8321,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 75,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "bench": 75
   },
   {
     "id": 70158,
@@ -9407,7 +9409,10 @@ export default [
     ],
     "bench": 40,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 70179,
@@ -9677,7 +9682,10 @@ export default [
     "color": "Black",
     "bench": 65,
     "quarantinedAt": "2026-07-27",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 70184,
@@ -10118,9 +10126,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 80,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "bench": 80
   },
   {
     "id": 70193,
@@ -10573,7 +10579,10 @@ export default [
     "bench": 64,
     "bundle": false,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 70202,
@@ -11600,9 +11609,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 80,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-11"
+    "bench": 80
   },
   {
     "id": 70222,
@@ -11811,7 +11818,10 @@ export default [
     ],
     "bench": 58,
     "bundle": false,
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 70226,
@@ -11910,9 +11920,7 @@ export default [
       280,
       240
     ],
-    "bench": 76,
-    "quarantinedAt": "2026-07-21",
-    "needsReview": true
+    "bench": 76
   },
   {
     "id": 70228,
@@ -12973,7 +12981,10 @@ export default [
     "bench": 21,
     "upc": "00882508000221",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 70248,
@@ -13215,9 +13226,7 @@ export default [
       280,
       240
     ],
-    "bench": 81,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-07"
+    "bench": 81
   },
   {
     "id": 70253,
@@ -13305,7 +13314,10 @@ export default [
     "bench": 27,
     "upc": "00859300007673",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 70255,
@@ -17782,7 +17794,10 @@ export default [
     "tg": true,
     "rgb": true,
     "quarantinedAt": "2026-07-27",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 100872,
@@ -17881,7 +17896,10 @@ export default [
     ],
     "maxGPU": 120,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100875,
@@ -17903,9 +17921,7 @@ export default [
     "addedAt": "2026-05-15T14:34:31.785Z",
     "source": "amazon-discovery",
     "tg": true,
-    "rgb": true,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "rgb": true
   },
   {
     "id": 100876,

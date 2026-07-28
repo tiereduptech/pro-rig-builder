@@ -28,7 +28,10 @@ export default [
     },
     "bench": 99,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 98001,
@@ -54,7 +57,10 @@ export default [
     },
     "bench": 86,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 98002,
@@ -80,7 +86,10 @@ export default [
     },
     "bench": 85,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100077,
@@ -144,9 +153,7 @@ export default [
     "resolution": "1080p",
     "fps": 30,
     "autofocus": true,
-    "bench": 66,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "bench": 66
   },
   {
     "id": 100080,
@@ -379,7 +386,10 @@ export default [
     "autofocus": true,
     "bench": 94,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "relink:mismatch"
+    ]
   },
   {
     "id": 100091,
@@ -913,7 +923,10 @@ export default [
     "addedAt": "2026-05-15T17:05:43.653Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-20"
+    "quarantinedAt": "2026-07-20",
+    "reviewFlags": [
+      "relink:no-price"
+    ]
   },
   {
     "id": 101842,
