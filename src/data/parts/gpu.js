@@ -15559,7 +15559,10 @@ export default [
     "vram": 8,
     "memType": "GDDR6",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "detector:stale-pr"
+    ]
   },
   {
     "id": 100708,

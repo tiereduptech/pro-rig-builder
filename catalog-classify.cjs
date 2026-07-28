@@ -33,6 +33,14 @@ function stripCompatClauses(title) {
     /\b(?:pcie\s*[\d.]+\s*)?(?:\d+\s*series\s*)?gpu\s+support\b/gi, // "PCIe 5.1 GPU Support", "50 Series GPU Support"
     /\bgpu-first\b/gi,                                     // "GPU-First Intelligent Voltage Stabilizer"
     /\b\d+\s*series\s+(?:gpu|graphics)\b/gi,
+    // Feature/standard names that EMBED a chip-giant brand but do NOT indicate the
+    // maker. These are the ~170-row brand-pollution source from the §3 audit: a
+    // Dell monitor reads "AMD" off "AMD FreeSync"; a RAM kit reads "AMD"/"Intel"
+    // off "AMD EXPO"/"Intel XMP". Strip the whole feature phrase before brand scan.
+    /\bamd\s+free\s?sync\b/gi,                             // "AMD FreeSync (Premium)"
+    /\bnvidia\s+g-?sync\b|\bg-?sync\s+compatible\b/gi,     // "NVIDIA G-Sync", "G-Sync Compatible"
+    /\bamd\s+expo\b|\bexpo\s+(?:ready|profile|technology)\b/gi, // "AMD EXPO", "EXPO Ready"
+    /\bintel\s+xmp\b|\bxmp\s+(?:ready|profile|\d(?:\.\d)?)\b/gi, // "Intel XMP", "XMP 3.0"
   ];
   for (const re of clauses) s = s.replace(re, ' ');
   return s.replace(/\s+/g, ' ').trim();
@@ -345,6 +353,46 @@ function ramRejectReason(name) {
   return null;
 }
 
+// Storage scope gate — "does this drive belong in a consumer/gaming DESKTOP
+// catalog?". Modeled on ramRejectReason: the PRIMARY test is the COMPUTED form-
+// factor / interface fields the catalog already carries (ff/form/formFactor +
+// interface); the raw-name regex is only a backstop for rows missing those.
+//
+// Out of scope:
+//   • enterprise/server — SAS interface, or U.2 / U.3 / EDSFF form factor
+//   • external          — USB interface (belongs in ExternalStorage, not internal)
+// In scope: internal SATA/NVMe desktop drives (M.2, 2.5", 3.5"). A 3.5" NAS/
+// surveillance HDD has a DESKTOP-valid computed form factor and is deliberately
+// NOT rejected here — gating it would be a name-regex policy call, not a form
+// factor one, and is left to a separate decision.
+function storageRejectReason(product) {
+  const p = product || {};
+  const ff = `${p.ff || ''} ${p.form || ''} ${p.formFactor || ''}`;
+  const iface = String(p.interface || '').toUpperCase().trim();
+  // A — computed interface / form factor (PRIMARY)
+  if (iface === 'SAS') return 'enterprise_sas';
+  if (/\bU\.2\b|\bU\.3\b|\bEDSFF\b/i.test(ff)) return 'enterprise_form';
+  if (iface === 'USB') return 'external_usb';
+  // B — raw-name backstop (only for rows whose fields didn't carry the signal)
+  const t = p.n || '';
+  if (/\b(sas|u\.2|u\.3|edsff)\b/i.test(t)) return 'enterprise_sas';
+  return null;
+}
+
+// CPU scope gate — server/HEDT parts do not belong in a consumer/gaming desktop
+// catalog. PRIMARY test is the COMPUTED socket field; name is the backstop.
+const CPU_SERVER_SOCKETS = new Set([
+  'SP3', 'SP5', 'SP6', 'STRX4', 'SWRX8', 'TR4', 'TR5', 'STR5',
+  'LGA2066', 'LGA2011', 'LGA3647', 'LGA4189', 'LGA4677', 'LGA1366',
+]);
+function cpuRejectReason(product) {
+  const p = product || {};
+  const sock = String(p.socket || '').toUpperCase().replace(/\s+/g, '');
+  if (CPU_SERVER_SOCKETS.has(sock)) return 'server_hedt_socket';
+  if (/\b(epyc|xeon|threadripper)\b/i.test(p.n || '')) return 'server_hedt_name';
+  return null;
+}
+
 // Resolve the catalog brand for a DISCOVERED product. Prefer the title reading,
 // but fall back to the authoritative feed manufacturer when detectBrand returns
 // nothing OR an implausible chip-giant for the category (a mis-read off marketing
@@ -379,6 +427,8 @@ module.exports = {
   extractSpecs,
   ramAttributes,
   ramRejectReason,
+  storageRejectReason,
+  cpuRejectReason,
   cleanManufacturer,
   resolveDiscoveryBrand,
 };

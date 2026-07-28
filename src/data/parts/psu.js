@@ -7205,7 +7205,12 @@ export default [
     "addedAt": "2026-05-15T13:17:14.415Z",
     "source": "amazon-discovery",
     "amazonRemovedAnomaly": "2026-06-28",
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "detector:stale-pr"
+    ]
   },
   {
     "id": 100455,

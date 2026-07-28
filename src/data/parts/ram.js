@@ -130,7 +130,7 @@ export default [
   {
     "id": 40034,
     "n": "TeamGroup T-Force Vulcan Z DDR4 32GB (2x16GB) 3200MHz CL16",
-    "img": "https://m.media-amazon.com/images/I/71xyaY6wuLL._AC_SL300_.jpg",
+    "img": "",
     "c": "RAM",
     "b": "TeamGroup",
     "pr": 39,
@@ -145,18 +145,18 @@ export default [
     "ecc": false,
     "rgb": false,
     "height": 32,
-    "deals": {
-      "amazon": {
-        "price": 39,
-        "url": "https://www.amazon.com/dp/B0B9Y24ZM5?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "value": 93,
     "memType": "DDR4",
     "formFactor": "UDIMM",
     "form": "DIMM",
-    "color": "Black"
+    "color": "Black",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "detector:wrong-asin",
+      "wrong-asin:ssd-purged"
+    ]
   },
   {
     "id": 40037,

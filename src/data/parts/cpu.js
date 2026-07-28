@@ -3766,7 +3766,12 @@ export default [
     "series": "Ryzen 7",
     "tdp": 65,
     "threads": 16,
-    "bench": 53
+    "bench": 53,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "detector:wrong-asin"
+    ]
   },
   {
     "id": 10143,
@@ -5150,7 +5155,12 @@ export default [
     "memType": "DDR5",
     "maxMem": "1000 gigabytes",
     "unlocked": true,
-    "bench": 72
+    "bench": 72,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 10178,
@@ -5193,7 +5203,13 @@ export default [
     "memType": "DDR5",
     "maxMem": "1000 gigabytes",
     "unlocked": true,
-    "bench": 82
+    "bench": 82,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket",
+      "cpu_price:above_ceiling(2499$)"
+    ]
   },
   {
     "id": 10179,
@@ -5225,7 +5241,13 @@ export default [
     "memType": "DDR5",
     "maxMem": "1000 gigabytes",
     "unlocked": true,
-    "bench": 92
+    "bench": 92,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket",
+      "cpu_price:above_ceiling(4999$)"
+    ]
   },
   {
     "id": 10180,
@@ -6585,7 +6607,12 @@ export default [
     "socket": "LGA1366",
     "addedAt": "2026-05-15T13:17:14.408Z",
     "source": "amazon-discovery",
-    "tdp": 65
+    "tdp": 65,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100332,
@@ -7034,7 +7061,12 @@ export default [
     },
     "addedAt": "2026-05-15T14:34:31.769Z",
     "source": "amazon-discovery",
-    "cores": 2
+    "cores": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_price:below_floor(24.95$)"
+    ]
   },
   {
     "id": 100589,
@@ -7121,7 +7153,10 @@ export default [
     "socket": "LGA1151",
     "tdp": 54,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "reviewFlags": [
+      "cpu_price:below_floor(18$)"
+    ]
   },
   {
     "id": 100593,
@@ -7229,7 +7264,12 @@ export default [
     "cores": 2,
     "socket": "LGA1151",
     "tdp": 54,
-    "bench": 4
+    "bench": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_price:below_floor(14.99$)"
+    ]
   },
   {
     "id": 100598,
@@ -7349,7 +7389,10 @@ export default [
     "tdp": 54,
     "bench": 4,
     "quarantinedAt": "2026-07-27",
-    "needsReview": true
+    "needsReview": true,
+    "reviewFlags": [
+      "detector:stale-pr"
+    ]
   },
   {
     "id": 100603,
@@ -7906,7 +7949,12 @@ export default [
     "cores": 10,
     "threads": 20,
     "socket": "LGA2066",
-    "tdp": 140
+    "tdp": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100625,
@@ -7925,7 +7973,10 @@ export default [
     "socket": "LGA2066",
     "tdp": 155,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100626,
@@ -7948,7 +7999,13 @@ export default [
     "source": "amazon-discovery",
     "cores": 18,
     "socket": "LGA2066",
-    "tdp": 65
+    "tdp": 65,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket",
+      "cpu_price:above_ceiling(1932.45$)"
+    ]
   },
   {
     "id": 100627,
@@ -7967,7 +8024,10 @@ export default [
     "socket": "LGA1155",
     "tdp": 165,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_name"
+    ]
   },
   {
     "id": 100628,
@@ -7986,7 +8046,10 @@ export default [
     "socket": "LGA2066",
     "tdp": 120,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100629,
@@ -8003,7 +8066,10 @@ export default [
     "cores": 18,
     "socket": "LGA2066",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100630,
@@ -8028,7 +8094,11 @@ export default [
     "socket": "LGA2066",
     "tdp": 165,
     "needsReview": true,
-    "quarantinedAt": "2026-07-19"
+    "quarantinedAt": "2026-07-19",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket",
+      "cpu_price:above_ceiling(4599.99$)"
+    ]
   },
   {
     "id": 100631,
@@ -8051,7 +8121,12 @@ export default [
     "source": "amazon-discovery",
     "cores": 14,
     "socket": "LGA2066",
-    "tdp": 65
+    "tdp": 65,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100632,
@@ -8074,7 +8149,12 @@ export default [
     "source": "amazon-discovery",
     "cores": 22,
     "socket": "LGA2011",
-    "tdp": 145
+    "tdp": 145,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100633,
@@ -8093,7 +8173,10 @@ export default [
     "socket": "LGA3647",
     "tdp": 150,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100634,
@@ -8128,7 +8211,12 @@ export default [
     "cores": 28,
     "threads": 56,
     "socket": "LGA4189",
-    "tdp": 165
+    "tdp": 165,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100635,
@@ -8146,7 +8234,10 @@ export default [
     "socket": "LGA2011",
     "tdp": 120,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100637,
@@ -8164,7 +8255,10 @@ export default [
     "socket": "LGA3647",
     "tdp": 5,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100638,
@@ -8182,7 +8276,10 @@ export default [
     "socket": "LGA2011",
     "tdp": 145,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100639,
@@ -8205,7 +8302,13 @@ export default [
     "source": "amazon-discovery",
     "cores": 64,
     "socket": "TR5",
-    "tdp": 350
+    "tdp": 350,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket",
+      "cpu_price:above_ceiling(4399$)"
+    ]
   },
   {
     "id": 100640,
@@ -8228,7 +8331,12 @@ export default [
     "source": "amazon-discovery",
     "cores": 24,
     "socket": "TR5",
-    "tdp": 350
+    "tdp": 350,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100641,
@@ -8262,7 +8370,13 @@ export default [
     "source": "amazon-discovery",
     "cores": 96,
     "threads": 192,
-    "tdp": 350
+    "tdp": 350,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_name",
+      "cpu_price:above_ceiling(9587.99$)"
+    ]
   },
   {
     "id": 100642,
@@ -8296,7 +8410,13 @@ export default [
     "source": "amazon-discovery",
     "cores": 24,
     "socket": "TR5",
-    "tdp": 350
+    "tdp": 350,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket",
+      "cpu_price:above_ceiling(2699.99$)"
+    ]
   },
   {
     "id": 100643,
@@ -8319,7 +8439,13 @@ export default [
     "source": "amazon-discovery",
     "cores": 32,
     "socket": "TR5",
-    "tdp": 350
+    "tdp": 350,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket",
+      "cpu_price:above_ceiling(2299.99$)"
+    ]
   },
   {
     "id": 100644,
@@ -8342,7 +8468,12 @@ export default [
     "source": "amazon-discovery",
     "cores": 24,
     "threads": 48,
-    "tdp": 350
+    "tdp": 350,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_name"
+    ]
   },
   {
     "id": 100645,
@@ -8376,7 +8507,13 @@ export default [
     "source": "amazon-discovery",
     "cores": 32,
     "threads": 64,
-    "tdp": 350
+    "tdp": 350,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_name",
+      "cpu_price:above_ceiling(3799.99$)"
+    ]
   },
   {
     "id": 100646,
@@ -8399,7 +8536,13 @@ export default [
     "source": "amazon-discovery",
     "cores": 32,
     "threads": 64,
-    "tdp": 350
+    "tdp": 350,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_name",
+      "cpu_price:above_ceiling(1994.99$)"
+    ]
   },
   {
     "id": 100647,
@@ -8425,7 +8568,10 @@ export default [
     "socket": "SWRX8",
     "tdp": 280,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100648,
@@ -8459,7 +8605,13 @@ export default [
     "source": "amazon-discovery",
     "cores": 24,
     "threads": 48,
-    "tdp": 350
+    "tdp": 350,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_name",
+      "cpu_price:above_ceiling(2701.33$)"
+    ]
   },
   {
     "id": 100649,
@@ -8485,7 +8637,10 @@ export default [
     "socket": "STRX4",
     "tdp": 280,
     "needsReview": true,
-    "quarantinedAt": "2026-07-17"
+    "quarantinedAt": "2026-07-17",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket"
+    ]
   },
   {
     "id": 100650,
@@ -8520,6 +8675,12 @@ export default [
     "cores": 32,
     "threads": 64,
     "socket": "TR4",
-    "tdp": 280
+    "tdp": 280,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "cpu_ff:server_hedt_socket",
+      "cpu_price:above_ceiling(1800$)"
+    ]
   }
 ];

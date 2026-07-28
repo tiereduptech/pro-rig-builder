@@ -258,6 +258,14 @@ export const PRICE_TABLE = {
   PSU: {
     'W': { floor: 0.008, ceiling: 0.8 },       // real p99 0.59
   },
+  // CPU has no natural per-unit ($/core is meaningless across arch), so it is
+  // gated on TOTAL price. A consumer/gaming desktop CPU floors ~$25 (budget
+  // Athlon/Celeron) and ceilings ~$1500 (halo consumer parts top ~$700; the
+  // headroom clears them and still isolates a mis-attached deal or a server/HEDT
+  // part). Added 2026-07-28 — CPU previously had NO absolute bound (audit §2).
+  CPU: {
+    'TOTAL': { floor: 25, ceiling: 1500 },
+  },
 };
 // Above this fraction of graded rows hitting a bound, suspect the TABLE is stale
 // (not the data bad): warn loudly, quarantine the flagged rows, keep running.
@@ -290,6 +298,10 @@ function resolvePriceKey(category, specs, price) {
   if (category === 'PSU') {
     const w = s.watts || s.wattage;
     return { group: 'PSU', key: 'W', ppu: w > 0 ? price / w : null, unit: '$/W' };
+  }
+  if (category === 'CPU') {
+    // Gated on TOTAL price (no meaningful per-unit); ppu carries the raw price.
+    return { group: 'CPU', key: 'TOTAL', ppu: price > 0 ? price : null, unit: '$' };
   }
   return { group: null, key: null, ppu: null, unit: null };
 }

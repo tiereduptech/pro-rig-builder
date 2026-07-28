@@ -1599,7 +1599,10 @@ export default [
     "mpn": "Z890 Taichi",
     "amazonRemovedAnomaly": "2026-06-28",
     "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "quarantinedAt": "2026-07-22",
+    "reviewFlags": [
+      "detector:stale-pr"
+    ]
   },
   {
     "id": 20041,
@@ -19023,7 +19026,12 @@ export default [
     "color": "Black/Sliver",
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "bench": 85
+    "bench": 85,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "detector:stale-pr"
+    ]
   },
   {
     "id": 20451,
@@ -19630,7 +19638,10 @@ export default [
     "amazonRemovedAnomaly": "2026-06-28",
     "amazonBundleAsin": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "reviewFlags": [
+      "detector:stale-pr"
+    ]
   },
   {
     "id": 20508,

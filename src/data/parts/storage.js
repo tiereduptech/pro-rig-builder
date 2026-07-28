@@ -1193,7 +1193,12 @@ export default [
     "pcie": 4,
     "nand": "TLC",
     "value": 33,
-    "bench": 75
+    "bench": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_ff:enterprise_form"
+    ]
   },
   {
     "id": 50039,
@@ -1222,7 +1227,12 @@ export default [
     "pcie": 4,
     "nand": "TLC",
     "value": 17,
-    "bench": 75
+    "bench": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_ff:enterprise_form"
+    ]
   },
   {
     "id": 50041,
@@ -1652,7 +1662,12 @@ export default [
     "value": 84,
     "read": 5000,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "detector:wrong-asin"
+    ]
   },
   {
     "id": 50049,
@@ -8008,7 +8023,12 @@ export default [
     "nand": "TLC",
     "rpm": 7200,
     "value": 12,
-    "bench": 37
+    "bench": 37,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_ff:external_usb"
+    ]
   },
   {
     "id": 50200,
@@ -8060,7 +8080,12 @@ export default [
     "value": 27,
     "read": 5000,
     "pcieGen": 4,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "detector:wrong-asin"
+    ]
   },
   {
     "id": 50201,
@@ -8778,7 +8803,12 @@ export default [
     "interface": "SATA",
     "rpm": 7200,
     "value": 45,
-    "bench": 15
+    "bench": 15,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_ff:enterprise_sas"
+    ]
   },
   {
     "id": 50217,
@@ -11762,7 +11792,12 @@ export default [
     "nand": "TLC",
     "storageType": "SSD",
     "value": 1,
-    "bench": 32
+    "bench": 32,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_ff:external_usb"
+    ]
   },
   {
     "id": 50293,
@@ -11898,7 +11933,12 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 4,
-    "bench": 30
+    "bench": 30,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_price:above_ceiling(0.85$/GB)"
+    ]
   },
   {
     "id": 50296,
@@ -16933,7 +16973,12 @@ export default [
     "interface": "SAS",
     "rpm": 7200,
     "value": 50,
-    "bench": 10
+    "bench": 10,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_ff:enterprise_sas"
+    ]
   },
   {
     "id": 50420,
@@ -21247,7 +21292,12 @@ export default [
     "nand": "TLC",
     "dram": false,
     "value": 24,
-    "bench": 80
+    "bench": 80,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "detector:wrong-asin"
+    ]
   },
   {
     "id": 50536,
@@ -21288,7 +21338,12 @@ export default [
     "nand": "TLC",
     "dram": false,
     "value": 12,
-    "bench": 80
+    "bench": 80,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "detector:wrong-asin"
+    ]
   },
   {
     "id": 50537,
@@ -22163,7 +22218,12 @@ export default [
     "source": "amazon-discovery",
     "interface": "NVMe",
     "ff": "M.2 2280",
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_brand:Intel"
+    ]
   },
   {
     "id": 100520,
@@ -22328,7 +22388,10 @@ export default [
     "interface": "SATA",
     "rpm": 7200,
     "needsReview": true,
-    "quarantinedAt": "2026-07-23"
+    "quarantinedAt": "2026-07-23",
+    "reviewFlags": [
+      "storage_brand:AMD"
+    ]
   },
   {
     "id": 100526,
@@ -23342,7 +23405,13 @@ export default [
     "addedAt": "2026-05-15T14:34:31.781Z",
     "source": "amazon-discovery",
     "cap": 16,
-    "interface": "USB"
+    "interface": "USB",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_ff:external_usb",
+      "storage_price:above_ceiling(6.562$/GB)"
+    ]
   },
   {
     "id": 100828,
@@ -23600,7 +23669,10 @@ export default [
     "interface": "SATA",
     "rpm": 7200,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "reviewFlags": [
+      "storage_ff:enterprise_sas"
+    ]
   },
   {
     "id": 100842,
@@ -23746,7 +23818,10 @@ export default [
     "interface": "SATA",
     "rpm": 7200,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "reviewFlags": [
+      "storage_brand:AMD"
+    ]
   },
   {
     "id": 100849,
@@ -24127,7 +24202,10 @@ export default [
     "source": "amazon-discovery",
     "cap": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "reviewFlags": [
+      "storage_price:above_ceiling(521.015$/GB)"
+    ]
   },
   {
     "id": 100865,
@@ -24178,7 +24256,13 @@ export default [
     "cap": 8,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_price:above_ceiling(89.999$/GB)",
+      "storage_brand:Intel"
+    ]
   },
   {
     "id": 100867,
@@ -24222,7 +24306,13 @@ export default [
     "cap": 8,
     "storageType": "NVMe",
     "interface": "NVMe",
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_price:above_ceiling(171.249$/GB)",
+      "storage_brand:Intel"
+    ]
   },
   {
     "id": 100871,
@@ -24404,7 +24494,12 @@ export default [
     "storageType": "NVMe",
     "interface": "NVMe",
     "pcieGen": 4,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_brand:AMD"
+    ]
   },
   {
     "id": 101274,
@@ -24427,7 +24522,12 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_brand:AMD"
+    ]
   },
   {
     "id": 101275,
@@ -24488,7 +24588,12 @@ export default [
     "storageType": "NVMe",
     "interface": "NVMe",
     "pcieGen": 4,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_brand:AMD"
+    ]
   },
   {
     "id": 101279,
@@ -24754,7 +24859,12 @@ export default [
     "storageType": "NVMe",
     "interface": "NVMe",
     "pcieGen": 4,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_brand:AMD"
+    ]
   },
   {
     "id": 101422,
@@ -24777,7 +24887,12 @@ export default [
     "source": "amazon-discovery",
     "storageType": "NVMe",
     "interface": "NVMe",
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_brand:AMD"
+    ]
   },
   {
     "id": 101423,
@@ -24838,7 +24953,12 @@ export default [
     "storageType": "NVMe",
     "interface": "NVMe",
     "pcieGen": 4,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "storage_brand:AMD"
+    ]
   },
   {
     "id": 101427,
