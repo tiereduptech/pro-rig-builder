@@ -13,6 +13,7 @@
 import { parseCapacityGB, capacityCompatible, isHardDrive, isPricePlausibleForCapacity, priceValidate }
   from './normalize-product-name.js';
 import { classifyDeal, effectivePrice, dispersion, CLASS, neweggSkuClass } from './price-sanity.js';
+import { CONDITION_MARKERS } from './condition.cjs';
 
 const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
 // Floor for a match to be considered AT ALL. Stays at 0.5 because scoreMatch()
@@ -441,7 +442,8 @@ function modelTokens(name) {
 // reach this path, and it is ambiguous enough on the name side that gating the
 // UPC path on it would cost real matches. It stays in VARIANT_MARKERS, where the
 // name path still catches it.
-const CONDITION_MARKERS = new Set(['openbox', 'refurbished', 'renewed', 'used']);
+// CONDITION_MARKERS now lives in the shared ./condition.cjs (imported above) so the
+// Amazon relink gate and this feed matcher share one source of truth. Values unchanged.
 
 /**
  * True when the two names describe the same item in a DIFFERENT CONDITION.

@@ -13,6 +13,7 @@
  */
 
 const fs = require('fs');
+const { isRenewedTitle } = require('./condition.cjs');
 const APPLY = process.argv.includes('--apply');
 
 // Better brand detection with priority
@@ -187,7 +188,7 @@ function isBundle(title) {
   }
 
   const added = [];
-  const skipped = { bundle: 0, noBrand: 0, noPrice: 0 };
+  const skipped = { bundle: 0, noBrand: 0, noPrice: 0, renewed: 0 };
   let nextNewId = maxId + 1;
 
   for (const [cat, list] of Object.entries(staging.discoveries)) {
@@ -197,6 +198,11 @@ function isBundle(title) {
       if (excluded) { skipped[excluded] = (skipped[excluded] || 0) + 1; continue; }
       // Skip bundles
       if (isBundle(d.title)) { skipped.bundle++; continue; }
+      // CONDITION GATE: a renewed/refurbished/used listing is a different-condition
+      // SKU — never attach it to a New-product catalog row (see condition.cjs). This
+      // is the gate the Newegg feed already has (conditionMismatch) and the Amazon
+      // discovery path was missing.
+      if (isRenewedTitle(d.title)) { skipped.renewed++; continue; }
       // Re-detect brand with better logic
       const brand = detectBrand(d.title);
       if (!brand) { skipped.noBrand++; continue; }

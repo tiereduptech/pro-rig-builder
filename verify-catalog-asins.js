@@ -30,6 +30,7 @@ import { selectNewOffer, lowestAnyConditionPrice, amazonPriceSanity } from './am
 import { STORAGE_CATS, titleMatches, analyzeResult,
          driftGateStaleness, DRIFT_GRADED_TYPES, DRIFT_FLAGGED_TYPES,
          linkVerificationCurrent, lastDealChangedAt, stampDealChange } from './drift-gate.js';
+import { isRenewedTitle } from './condition.cjs';
 
 const LOGIN = process.env.DATAFORSEO_LOGIN;
 const PASSWORD = process.env.DATAFORSEO_PASSWORD;
@@ -491,6 +492,23 @@ function writeReports(allIssues, asinRepairs, meta) {
         viaQuarantine++;
         asinRepairs.push({ productId: entry.productId, category: entry.category, name: product.n,
           oldAsin: entry.asin, newAsin: null, score: 0, applied: false, quarantined: true });
+        if (flags.autoFix) {
+          if (!perProductFixes[entry.productId]) perProductFixes[entry.productId] = {};
+          perProductFixes[entry.productId].needsReview = true;
+          perProductFixes[entry.productId].quarantinedAt = new Date().toISOString().slice(0, 10);
+        }
+        continue;
+      }
+
+      // CONDITION GATE: a search hit whose TITLE advertises renewed/refurbished/used
+      // is a different-condition SKU, not a New match — never swap the live link onto
+      // it, even if best.price passes the sanity band. Quarantine for human relink.
+      // (Mirrors newegg-match.js conditionMismatch; shared markers in condition.cjs.)
+      if (isRenewedTitle(best.title)) {
+        viaQuarantine++;
+        asinRepairs.push({ productId: entry.productId, category: entry.category, name: product.n,
+          oldAsin: entry.asin, newAsin: best.asin, score: best.score, title: best.title,
+          applied: false, quarantined: true, rejected: 'renewed-title' });
         if (flags.autoFix) {
           if (!perProductFixes[entry.productId]) perProductFixes[entry.productId] = {};
           perProductFixes[entry.productId].needsReview = true;
