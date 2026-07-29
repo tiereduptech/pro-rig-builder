@@ -33,7 +33,10 @@ import { STORAGE_CATS, titleMatches, analyzeResult,
 
 const LOGIN = process.env.DATAFORSEO_LOGIN;
 const PASSWORD = process.env.DATAFORSEO_PASSWORD;
-if (!LOGIN || !PASSWORD) {
+// A --dry-run posts ZERO tasks and never calls the API — it exists to PROVE the
+// scope before anyone spends, so it must run without credentials. Only a real
+// (task-posting) run requires them.
+if (!process.argv.includes('--dry-run') && (!LOGIN || !PASSWORD)) {
   console.error('ERROR: Missing DATAFORSEO_LOGIN or DATAFORSEO_PASSWORD env vars.');
   process.exit(1);
 }
@@ -105,6 +108,8 @@ const flags = {
   fixAsins: getFlag('--fix-asins'),
   limit: Number(getFlag('--limit', true)) || null,
   excludeIds: getFlag('--exclude-ids', true),
+  onlyIds: getFlag('--only-ids', true),
+  expectCount: getFlag('--expect-count', true) != null ? Number(getFlag('--expect-count', true)) : null,
 };
 // Optional exclusion set (e.g. the SUSPECT_VS_LIST wrong-baseline cohort, which is
 // a separate bug we must NOT touch in the price sweep). JSON file = array of ids.
@@ -114,6 +119,19 @@ if (flags.excludeIds) {
     EXCLUDE_IDS = new Set(JSON.parse(readFileSync(flags.excludeIds, 'utf8')).map(Number));
     console.log(`Excluding ${EXCLUDE_IDS.size} product ids (from ${flags.excludeIds})`);
   } catch (e) { console.error(`Failed to load --exclude-ids: ${e.message}`); process.exit(1); }
+}
+// Optional INCLUSION allowlist — an explicit id list (JSON array). Unlike a category
+// or reviewFlag filter, an id list cannot silently WIDEN scope: if the file fails to
+// load we abort (never fall back to the full tier), and the resolved count is printed
+// + asserted (see --expect-count) so a mis-apply is caught before a single task posts.
+// This is the guard against the "billed 2,782 rows instead of the subset" failure.
+let ONLY_IDS = null;
+if (flags.onlyIds) {
+  try {
+    ONLY_IDS = new Set(JSON.parse(readFileSync(flags.onlyIds, 'utf8')).map(Number));
+    if (!ONLY_IDS.size) throw new Error('id list is empty');
+    console.log(`Scoping to ${ONLY_IDS.size} product ids (from ${flags.onlyIds})`);
+  } catch (e) { console.error(`Failed to load --only-ids: ${e.message}`); process.exit(1); }
 }
 if (!flags.tier) { console.error('Must specify --tier (1|2|3|4|all)'); process.exit(1); }
 if (!flags.dryRun && !flags.reportOnly && !flags.autoFix) {
@@ -159,7 +177,8 @@ function saveCatalog(parts) {
 }
 function selectProducts(parts, tier) {
   const cats = tier === 'all' ? Object.values(TIERS).flat() : (TIERS[tier] || []);
-  const candidates = parts.filter(p => cats.includes(p.c) && extractASIN(p.deals?.amazon?.url) && !EXCLUDE_IDS.has(p.id));
+  const candidates = parts.filter(p => cats.includes(p.c) && extractASIN(p.deals?.amazon?.url) && !EXCLUDE_IDS.has(p.id)
+    && (!ONLY_IDS || ONLY_IDS.has(p.id)));
   // Skip rows a human verified whose deal has NOT changed since (see
   // linkVerificationCurrent in drift-gate.js — it invalidates the moment the deal's
   // link identity changes, so this is not a permanent bypass). REPORT-ONLY, never
@@ -366,12 +385,36 @@ function writeReports(allIssues, asinRepairs, meta) {
 (async () => {
   const parts = await loadCatalog();
   const products = selectProducts(parts, flags.tier);
+  const ids = products.map(p => p.id);
   console.log(`━━━ Verifier v2 ━━━`);
-  console.log(`  Tier: ${flags.tier}`);
+  console.log(`  Tier: ${flags.tier}${ONLY_IDS ? ` (scoped to ${ONLY_IDS.size}-id allowlist)` : ''}`);
   console.log(`  Products: ${products.length}`);
   console.log(`  Est cost: $${(products.length * COST_PER_SELLERS_TASK).toFixed(2)} (sellers endpoint)${flags.fixAsins ? ' + ASIN searches' : ''}`);
+  console.log(`  Bills: sellers-task only${flags.fixAsins ? ' + products-endpoint ASIN searches (!!)' : ' — NO products-endpoint ASIN searches'}`);
+  console.log(`  First 5 ids: ${ids.slice(0, 5).join(', ')}`);
+  console.log(`  Last 5 ids:  ${ids.slice(-5).join(', ')}`);
   console.log(`  Mode: ${flags.dryRun ? 'DRY RUN' : flags.autoFix ? 'AUTO-FIX' : 'REPORT-ONLY'}${flags.fixAsins ? ' + ASIN repair' : ''}`);
-  if (flags.dryRun) { console.log(`\nDry run complete.`); return; }
+
+  // Scope assertion (applies to EVERY mode, dry-run included): if the resolved count
+  // is not exactly what the caller expected, the scope filter did not apply. Abort —
+  // never silently fall back to a wider tier. This is the check the 2,782-row overbill
+  // needed and did not have.
+  if (flags.expectCount != null && products.length !== flags.expectCount) {
+    console.error(`\nSCOPE MISMATCH: resolved ${products.length} rows, expected ${flags.expectCount}. ` +
+      `The scope filter did not apply as intended. Aborting — no fallback to a wider tier, no spend.`);
+    process.exit(1);
+  }
+
+  if (flags.dryRun) { console.log(`\nDry run complete — ZERO tasks posted, $0 spent.`); return; }
+
+  // Hard cap in CODE, not a flag anyone has to remember: a run that resolves more
+  // than this many rows is treated as a broken scope, not intent. Refuse to post.
+  const POST_HARD_CAP = 200;
+  if (products.length > POST_HARD_CAP) {
+    console.error(`\nHARD CAP: resolved ${products.length} rows > ${POST_HARD_CAP}. ` +
+      `Refusing to post tasks — scope looks wrong. Aborting, no spend.`);
+    process.exit(1);
+  }
 
   const tasks = await postTasks(products);
   const results = await fetchAllResults(tasks);
