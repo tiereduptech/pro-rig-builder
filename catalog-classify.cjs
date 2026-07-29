@@ -365,6 +365,10 @@ function ramRejectReason(name) {
 // surveillance HDD has a DESKTOP-valid computed form factor and is deliberately
 // NOT rejected here — gating it would be a name-regex policy call, not a form
 // factor one, and is left to a separate decision.
+//
+// Out of scope ALSO: a whole NAS APPLIANCE (a networked storage SYSTEM with its
+// own CPU / OS / enclosure — Synology DiskStation, QNAP, UGREEN NASync) rides into
+// Storage on the word "NAS" but is a complete machine, not a drive a build selects.
 function storageRejectReason(product) {
   const p = product || {};
   const ff = `${p.ff || ''} ${p.form || ''} ${p.formFactor || ''}`;
@@ -376,6 +380,13 @@ function storageRejectReason(product) {
   // B — raw-name backstop (only for rows whose fields didn't carry the signal)
   const t = p.n || '';
   if (/\b(sas|u\.2|u\.3|edsff)\b/i.test(t)) return 'enterprise_sas';
+  // C — whole NAS APPLIANCE, not a drive. Signal: a drive-BAY count on a NAS /
+  //     NASync / DiskStation / Network-Attached-Storage unit. NAS-rated internal
+  //     drives say "NAS Internal Hard Drive / NAS SSD" and never carry an "N-Bay"
+  //     enclosure descriptor — that count is what separates the machine from the disk.
+  if (/\b\d+[\s-]?bay\b/i.test(t)
+      && /\b(nas|nasync|diskstation|network[\s-]attached\s+storage)\b/i.test(t)
+      && !/\binternal\s+(hard\s+drive|solid[\s-]state|ssd|hdd)\b/i.test(t)) return 'nas_appliance';
   return null;
 }
 
@@ -385,11 +396,72 @@ const CPU_SERVER_SOCKETS = new Set([
   'SP3', 'SP5', 'SP6', 'STRX4', 'SWRX8', 'TR4', 'TR5', 'STR5',
   'LGA2066', 'LGA2011', 'LGA3647', 'LGA4189', 'LGA4677', 'LGA1366',
 ]);
+// Whole-SYSTEM detector — a complete prebuilt PC / laptop / AIO is not a component
+// and breaks builds if it sits in a component category (a "Business Desktop" listed
+// as a CPU, a laptop listed as a GPU). Category-agnostic: the same title test that
+// rejects a prebuilt from CPU also finds one wrongly filed under GPU/Motherboard/etc.
+//
+// The false positives this MUST avoid (all verified against the live catalog):
+//   • "Gaming Desktop Motherboard/Processor/Memory" — marketing on a real component
+//   • "for Laptop & Desktop" / "Laptop Memory" — compatibility text on RAM/SSD
+//   • "All-in-One CPU Liquid Cooler" (AIO) — a cooler, not an all-in-one PC
+//   • "Liquid Freezer WS360 … Workstation" — a WS-series cooler, not a workstation PC
+function prebuiltSystemReason(name) {
+  const t = String(name || '');
+  // (1) SPEC-BUNDLE — the decisive, low-false-positive signal. A whole machine lists a
+  //     CPU model AND (an installed Windows edition OR both a RAM capacity and a storage
+  //     capacity). No single component carries all of these: a RAM stick has no CPU +
+  //     SSD, a bare CPU has no "8GB RAM + 512GB SSD + Windows 11 Home". Keyword tests on
+  //     "desktop"/"laptop" alone are hopeless here — they hit "Desktop Computer Memory"
+  //     and "for Pc or Laptop" compat text; this does not.
+  const hasCPU = /\bcore\s+(i[3579]|ultra)\b|\bi[3579]-\d{4,5}[a-z]{0,2}\b|\bryzen\s+[3579]\b|\bintel\s+processor\b|\b(pentium|celeron|athlon)\b/i.test(t);
+  const hasOSEdition = /\bwindows\s*1[01]\s+(home|pro|enterprise)\b/i.test(t);
+  const hasRAM = /\b\d{1,3}\s?gb\b[^.|]{0,30}\b(ddr[45]|ram)\b/i.test(t) || /\bddr[45]\b[^.|]{0,20}\b\d{1,3}\s?gb\s*(ram)?\b/i.test(t);
+  const hasStorage = /\b\d{2,4}\s?(gb|tb)\b[^.|]{0,30}\b(ssd|nvme|hdd|hard\s+drive|emmc|ufs)\b/i.test(t);
+  if (hasCPU && (hasOSEdition || (hasRAM && hasStorage))) return 'prebuilt_system';
+  // (2) explicit prebuilt brand model lines — unambiguously whole machines even without
+  //     a full spec list.
+  if (/\b(prodesk|elitedesk|optiplex|thinkcentre|thinkstation|ideacentre|inspiron\s+desktop|pavilion\s+desktop|aspire\s+(tc|xc|c\d)|legion\s+tower|predator\s+orion|alienware\s+aurora|omen\s+\d+\s+desktop)\b/i.test(t)) return 'prebuilt_brand';
+  // (3) explicit system nouns as the PRODUCT — backstop for spec-less listings. Kept
+  //     TIGHT: "Desktop Computer" and "Mini PC" are EXCLUDED (they ride along in case
+  //     titles / "Desktop Computer Memory"), and a "for/compatible-with ... Desktop"
+  //     COMPAT clause is excluded ("Low Profile Video Card for Slim Desktop PC" is a GPU).
+  //     Real prebuilts almost always also trip the spec-bundle above; this only helps a
+  //     spec-less "HP Business Desktop"-style title.
+  if (/\bbusiness\s+desktop\b|\bslim\s+desktop\b|\ball[- ]in[- ]one\s+(pc|computer|desktop)\b/i.test(t)
+      && !/\b(for|compatible|supports?|fits?|works?\s+with|in\s+a)\b[^.|]{0,24}\bdesktop\b/i.test(t)) return 'prebuilt_noun';
+  return null;
+}
+
 function cpuRejectReason(product) {
   const p = product || {};
   const sock = String(p.socket || '').toUpperCase().replace(/\s+/g, '');
   if (CPU_SERVER_SOCKETS.has(sock)) return 'server_hedt_socket';
+  const pre = prebuiltSystemReason(p.n);        // a prebuilt PC is not a CPU
+  if (pre) return pre;
   if (/\b(epyc|xeon|threadripper)\b/i.test(p.n || '')) return 'server_hedt_name';
+  return null;
+}
+
+// PSU scope gate — a UPS / battery backup is NOT a power supply. Left in the PSU
+// category it surfaces as a selectable build PSU and breaks builds (a 1500VA UPS
+// has no ATX rail a build can draw from). Unlike RAM/Storage/CPU there is no
+// computed field that separates a UPS from a PSU — both are "power" — so the NAME
+// is the primary signal: a UPS is rated in VA and self-describes as UPS / battery
+// backup / uninterruptible, none of which a real ATX PSU title carries.
+//
+// Second out-of-scope class: a REDUNDANT / hot-swap SERVER supply (a 1+1 / N+1
+// dual-module or CRPS unit) is a paired enterprise part, not a single-rail ATX
+// PSU a desktop build can select. Keyed on the REDUNDANCY signal (redundant /
+// hot-swap / CRPS), never on a bare "1U/2U" — that appears as compat text on
+// legit Flex-ATX SFF supplies ("Perfect for SFF PC, 1U IPC, and NAS", "Mini ITX/
+// Flex ATX / 1U 500W ... PSU") which stay in scope.
+function psuRejectReason(product) {
+  const t = typeof product === 'string' ? product : (product && (product.n || product.name)) || '';
+  if (/\buninterruptible\b|\bups\b|battery[\s-]?backup\b|\b\d{3,4}\s*va\b/i.test(t)) return 'ups_not_psu';
+  if (/\bredundant\b/i.test(t) && /\b(power\s*supply|psu|module|\d\s*\+\s*\d)\b/i.test(t)) return 'server_redundant';
+  if (/\bhot[\s-]?swap\b/i.test(t) && /\b(power\s*supply|psu|redundant|crps)\b/i.test(t)) return 'server_redundant';
+  if (/\bcrps\b/i.test(t)) return 'server_redundant';
   return null;
 }
 
@@ -429,6 +501,8 @@ module.exports = {
   ramRejectReason,
   storageRejectReason,
   cpuRejectReason,
+  psuRejectReason,
+  prebuiltSystemReason,
   cleanManufacturer,
   resolveDiscoveryBrand,
 };

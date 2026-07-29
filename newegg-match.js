@@ -531,6 +531,70 @@ export function modelSuffixConflict(ourName, theirName) {
   return false;
 }
 
+// ── Model-LINE / wattage / modularity conflicts (added 2026-07-28) ────────────
+//
+// These close two false-accept classes the token-overlap + suffix gate let through
+// on the 2026-07-28 feed relink pass:
+//
+//   (1) same-family model-line defeat — "be quiet! Straight Power 12 850W" scored
+//       0.833 against "Pure Power 12 850W": same brand, same wattage, same "12";
+//       the only difference (Straight vs Pure) is an alpha word, so neither the
+//       digit-only modelTokens check nor the variant-marker set could see it.
+//   (2) modularity-tier defeat — "Pure Power 12 M 750W" (modular) scored 1.0 against
+//       "Pure Power 12 750W Non-Modular": the distinguishing "M" is one char, dropped
+//       by the tokenizer.
+//
+// All three are CONFLICT-ONLY and SYMMETRIC — they fire only when BOTH sides state
+// the attribute and the two disagree. Silence on one side proves nothing (truncation),
+// so a bare/short candidate title is never rejected by these. That is why they are
+// safe to run even before the UPC shortcut: a barcode cannot change a product's
+// wattage or family, so a stated conflict is positive evidence the UPC is wrong.
+
+// The model line lives in the HEAD of a title, before the first model number. Collect
+// distinctive alpha words (>=4, non-brand, non-commodity) that appear before the first
+// digit-bearing token, cap 2. Tail spec/description text ("for Small to Medium Hands",
+// a truncated "…Copp") is excluded by design — comparing it produced false rejects.
+function headLineWords(name, brandToks) {
+  const out = new Set();
+  for (const t of String(name || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().split(/\s+/)) {
+    if (/\d/.test(t)) break;                    // reached the model number → the line is stated before it
+    if (!/^[a-z]{4,}$/.test(t)) continue;
+    if (SPEC_STOP.has(t)) continue;
+    if (brandToks && brandToks.has(t)) continue;
+    out.add(t);
+    if (out.size >= 2) break;
+  }
+  return out;
+}
+export function lineConflict(ourName, theirName, brandToks) {
+  const o = headLineWords(ourName, brandToks), t = headLineWords(theirName, brandToks);
+  const ourResid = [...o].filter((w) => !t.has(w));
+  const theirResid = [...t].filter((w) => !o.has(w));
+  if (ourResid.length && theirResid.length) {
+    return { reason: 'model_line', detail: `${ourResid[0]} vs ${theirResid[0]}` };
+  }
+  return false;
+}
+
+function wattage(name) { const m = String(name || '').match(/\b(\d{3,4})\s*w\b/i); return m ? Number(m[1]) : null; }
+export function wattageConflict(ourName, theirName) {
+  const a = wattage(ourName), b = wattage(theirName);
+  return a != null && b != null && a !== b ? { reason: 'wattage', detail: `${a}W vs ${b}W` } : false;
+}
+
+function modularity(name) {
+  const s = ' ' + String(name || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' ';
+  if (/\bnon\s*modular\b/.test(s) || /\bnonmodular\b/.test(s)) return 'NONMOD';
+  if (/\bsemi\s*modular\b/.test(s)) return 'SEMI';
+  if (/\bmodular\b/.test(s)) return 'MOD';
+  if (/\b\d{2,3}\s*m\s+\d/.test(s)) return 'MOD';   // "Pure Power 12 M 750W" — lone M between model and wattage
+  return null;
+}
+export function modularityConflict(ourName, theirName) {
+  const a = modularity(ourName), b = modularity(theirName);
+  return a && b && a !== b ? { reason: 'modularity', detail: `${a} vs ${b}` } : false;
+}
+
 // ── Brand presence ───────────────────────────────────────────────────────────
 //
 // nameSimilarity compares NAMES ONLY. When our catalog title carries no brand
@@ -592,6 +656,12 @@ const SPEC_STOP = new Set([
   'power', 'supply', 'modular', 'cooler', 'fan', 'rgb', 'argb', 'black', 'white', 'series',
   'gen', 'high', 'speed', 'low', 'profile', 'dual', 'single', 'triple', 'rank', 'registered',
   'mhz', 'gbps', 'rpm', 'inch', 'class', 'plus', 'pro', 'max', 'boost', 'ready', 'edition',
+  // PSU / power marketing — added 2026-07-28 to close the shared-commodity-word brand
+  // defeat (a Montech PSU rescued a match to an NZXT one because both said "Fully
+  // Modular"). These words carry no product identity; they must not count as a shared
+  // distinctive token in brandMismatch().
+  'fully', 'semi', 'gold', 'bronze', 'platinum', 'titanium', 'cybenetics', 'efficiency',
+  'certified', 'compatible', 'coverage', 'warranty', 'watt', 'watts',
 ]);
 function distinctiveTokens(name) {
   const out = new Set();
@@ -704,6 +774,12 @@ export function scoreMatch(ourProduct, neweggItem, notes, opts) {
   // UPC, so this is the one check UPC equality cannot stand in for.
   const cond = conditionMismatch(ourProduct.n, neweggItem.name);
   if (cond) return set('variant_condition');
+  // Model-line / wattage / modularity conflicts (2026-07-28). Conflict-only and
+  // symmetric, so — like conditionMismatch above — they run BEFORE the UPC shortcut:
+  // a barcode cannot change a product's wattage or family, so a stated disagreement
+  // is positive evidence the UPC (or the name match) is wrong, not just truncation.
+  if (wattageConflict(ourProduct.n, neweggItem.name)) return set('variant_wattage');
+  if (modularityConflict(ourProduct.n, neweggItem.name)) return set('variant_modularity');
   const ourUpcN = normalizeUpc(ourProduct.upc || ourProduct.UPC);
   const newUpcN = normalizeUpc(neweggItem.upc);
   if (ourUpcN && newUpcN && ourUpcN === newUpcN) return { method: 'upc', score: 1.0 };
@@ -718,6 +794,16 @@ export function scoreMatch(ourProduct, neweggItem, notes, opts) {
   const vm = variantMismatch(ourProduct.n, neweggItem.name);
   if (vm) {
     if (notes) notes.reject = `variant_${vm.reason}`;
+    return null;
+  }
+  // Model-line conflict runs HERE, after the similarity floor: it is a same-family
+  // discriminator (Straight Power vs Pure Power), meaningful only between products
+  // that are otherwise similar. Two unrelated products differ on every head word and
+  // must be rejected as no_match by the floor above, never counted as a variant reject
+  // (that would falsely signal the feed carries our product line — see searchNewegg).
+  const brandToks = new Set(String(ourProduct.b || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().split(/\s+/).filter(Boolean));
+  if (lineConflict(ourProduct.n, neweggItem.name, brandToks)) {
+    if (notes) notes.reject = 'variant_model_line';
     return null;
   }
   // Brand gate — LAST, and name-path only (UPC returned above). A high name

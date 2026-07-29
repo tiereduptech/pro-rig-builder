@@ -8372,17 +8372,11 @@ export default [
     "c": "PSU",
     "n": "Apevia ITX-PFC500W Mini ITX/Flex ATX / 1U 500W Fully Modular Power Supply, Full Range Active PFC 90-264V, AC for POS AIO System Desktop Gaming Server Small Form Factor (Flex ITX) Computer PSU",
     "b": "Apevia",
-    "pr": 49.99,
+    "pr": 68.28,
     "msrp": 49.99,
     "r": 4.1,
     "img": "https://m.media-amazon.com/images/I/615CCzUoV2L._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "asin": "B0CWN59YCZ",
-        "url": "https://www.amazon.com/dp/B0CWN59YCZ?tag=tiereduptech-20",
-        "price": 49.99,
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIA0ZXK9P2123",
         "price": 68.28,
@@ -8399,12 +8393,7 @@ export default [
     "source": "amazon-discovery",
     "watts": 500,
     "modular": "Full",
-    "ff": "Flex ATX",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-29",
-    "reviewFlags": [
-      "relink:mismatch"
-    ]
+    "ff": "Flex ATX"
   },
   {
     "id": 100549,
@@ -8437,7 +8426,12 @@ export default [
     "addedAt": "2026-05-15T14:34:31.762Z",
     "source": "amazon-discovery",
     "watts": 500,
-    "ff": "ATX"
+    "ff": "ATX",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-29",
+    "reviewFlags": [
+      "server_redundant"
+    ]
   },
   {
     "id": 100550,
@@ -8775,7 +8769,12 @@ export default [
     "addedAt": "2026-05-15T14:34:31.764Z",
     "source": "amazon-discovery",
     "watts": 700,
-    "ff": "ATX"
+    "ff": "ATX",
+    "needsReview": true,
+    "quarantinedAt": "2026-07-29",
+    "reviewFlags": [
+      "server_redundant"
+    ]
   },
   {
     "id": 100562,
@@ -9522,27 +9521,6 @@ export default [
     "atx3": true
   },
   {
-    "id": 101201,
-    "c": "PSU",
-    "n": "CyberPower CP1500AVRLCD3 Intelligent LCD UPS Battery Backup and Surge Protector, 1500VA/900W, 12 Outlets, 2 USB Ports, AVR, Mini Tower, UL Certified",
-    "b": "Intel",
-    "pr": 199.95,
-    "msrp": 199.95,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/71TRxMH7XWL._AC_UL640_QL65_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0BCMLLSHL",
-        "url": "https://www.amazon.com/dp/B0BCMLLSHL?tag=tiereduptech-20",
-        "price": 199.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:31:54.658Z",
-    "source": "amazon-discovery",
-    "watts": 900
-  },
-  {
     "id": 101202,
     "c": "PSU",
     "n": "ASRock PG 1600G ATX 3.1 1600W Power Supply PCle5.1 10 Years Warranty Fully Modular Japanese Capacitor Phantom Gaming PG-1600G 80 Plus Gold Cybenetics Platinum 12V-2x6 Cables",
@@ -9907,27 +9885,6 @@ export default [
     "modular": "Full",
     "ff": "SFX-L",
     "atx3": true
-  },
-  {
-    "id": 101349,
-    "c": "PSU",
-    "n": "CyberPower CP1500AVRLCD3 Intelligent LCD UPS Battery Backup and Surge Protector, 1500VA/900W, 12 Outlets, 2 USB Ports, AVR, Mini Tower, UL Certified",
-    "b": "Intel",
-    "pr": 199.95,
-    "msrp": 199.95,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/71TRxMH7XWL._AC_UL640_QL65_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0BCMLLSHL",
-        "url": "https://www.amazon.com/dp/B0BCMLLSHL?tag=tiereduptech-20",
-        "price": 199.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.982Z",
-    "source": "amazon-discovery",
-    "watts": 900
   },
   {
     "id": 101350,

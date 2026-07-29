@@ -28,25 +28,20 @@ export default [
     "img": "https://m.media-amazon.com/images/I/31AROTdFEzL._AC_SL300_.jpg",
     "c": "MousePad",
     "b": "SteelSeries",
-    "pr": 29,
+    "pr": 39.99,
     "msrp": 39,
     "r": 4.6,
     "padSize": "XXL (900x400mm)",
     "material": "Cloth",
     "deals": {
-      "amazon": {
-        "price": 29,
-        "url": "https://www.amazon.com/dp/B0D1Y45577?tag=tiereduptech-20",
+      "bestbuy": {
+        "price": 39.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671122&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsteelseries-qck-heavy-gaming-mousepad-xxl-magenta%2FJ3GWPZ3XV5&intsrc=APIG_28060",
         "inStock": true
       }
     },
     "surface": "Cloth",
-    "bench": 59,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27",
-    "reviewFlags": [
-      "relink:no-price"
-    ]
+    "bench": 59
   },
   {
     "id": 98502,

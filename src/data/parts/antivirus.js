@@ -27,7 +27,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/61LKM7+acPL._AC_SL300_.jpg",
     "c": "Antivirus",
     "b": "Bitdefender",
-    "pr": 24,
+    "pr": 54.99,
     "msrp": 89,
     "r": 4.5,
     "vendor": "Bitdefender",
@@ -36,17 +36,12 @@ export default [
     "cp": "SALE",
     "off": 65,
     "deals": {
-      "amazon": {
-        "price": 24,
-        "url": "https://www.amazon.com/dp/B0DTKQ5P7B?tag=tiereduptech-20",
+      "bestbuy": {
+        "price": 54.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643522&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbitdefender-total-security-individual-5-device-1-year-windows-apple-ios-mac-os-android-linux-digital%2FJ3LXGJL7RS&intsrc=APIG_28060",
         "inStock": true
       }
-    },
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27",
-    "reviewFlags": [
-      "relink:mismatch"
-    ]
+    }
   },
   {
     "id": 99105,

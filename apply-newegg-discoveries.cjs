@@ -108,6 +108,7 @@ const PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gamin
 // Cooling (rackmount/redundant fans). Add an analogous reject when those run.
 const CATEGORY_REJECT = {
   RAM: (name) => CC.ramRejectReason(name),
+  PSU: (name) => CC.psuRejectReason(name),   // UPS / battery-backup is not a PSU
 };
 const detectCondition = (n) => {
   const N = (n || '').toUpperCase();

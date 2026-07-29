@@ -18497,7 +18497,10 @@ export default [
     "value": 15,
     "bench": 13,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "reviewFlags": [
+      "nas_appliance"
+    ]
   },
   {
     "id": 50458,
@@ -24191,7 +24194,8 @@ export default [
     "needsReview": true,
     "quarantinedAt": "2026-07-27",
     "reviewFlags": [
-      "storage_price:above_ceiling(521.015$/GB)"
+      "storage_price:above_ceiling(521.015$/GB)",
+      "nas_appliance"
     ]
   },
   {
@@ -24246,7 +24250,8 @@ export default [
     "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "storage_price:above_ceiling(89.999$/GB)",
-      "storage_brand:Intel"
+      "storage_brand:Intel",
+      "nas_appliance"
     ]
   },
   {
@@ -24296,7 +24301,8 @@ export default [
     "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "storage_price:above_ceiling(171.249$/GB)",
-      "storage_brand:Intel"
+      "storage_brand:Intel",
+      "nas_appliance"
     ]
   },
   {

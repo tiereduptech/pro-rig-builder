@@ -5854,16 +5854,21 @@ export default [
     "img": "https://m.media-amazon.com/images/I/816jgLeXLiL._SL1500_.jpg",
     "c": "CPUCooler",
     "b": "Cooler Master",
-    "pr": 79.99,
+    "pr": 89.84,
     "msrp": 79.99,
     "r": 4.5,
     "asin": "B0DWF7SX2J",
     "reviews": 26,
     "deals": {
-      "amazon": {
-        "price": 92.99,
-        "url": "https://www.amazon.com/dp/B0DWF7SX2J?tag=tiereduptech-20",
-        "inStock": true
+      "newegg": {
+        "sku": "9SIA6ZPKFZ0957",
+        "price": 89.84,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835214060401563366164&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-612-apex-lga-1831-1700-1200-sockets-am5-am4-sockets%2Fp%2FN82E16835103377%3Fitem%3D9SIA6ZPKFZ0957",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-377-17.png",
+        "sellerClass": "marketplace",
+        "matchedAt": "2026-07-28",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "discount": 37,
@@ -5886,12 +5891,7 @@ export default [
     "bench": 43,
     "radSize": "120",
     "cfm": 60,
-    "mpn": "MAP-T6PN-225PK-R1",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28",
-    "reviewFlags": [
-      "relink:mismatch"
-    ]
+    "mpn": "MAP-T6PN-225PK-R1"
   },
   {
     "id": 80128,
@@ -11408,17 +11408,12 @@ export default [
     "img": "https://m.media-amazon.com/images/I/81iKSkUJqCL._SL1500_.jpg",
     "c": "CPUCooler",
     "b": "Montech",
-    "pr": 39.98,
+    "pr": 34.9,
     "msrp": 39.98,
     "r": 4.8,
     "asin": "B0G1QZ9BXT",
     "reviews": 14,
     "deals": {
-      "amazon": {
-        "price": 34.99,
-        "url": "https://www.amazon.com/dp/B0G1QZ9BXT?tag=tiereduptech-20",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIC35VKPJ7123",
         "price": 34.9,
@@ -11447,12 +11442,7 @@ export default [
     "rgb": true,
     "value": 82,
     "bench": 39,
-    "cfm": 65,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28",
-    "reviewFlags": [
-      "relink:mismatch"
-    ]
+    "cfm": 65
   },
   {
     "id": 80254,
@@ -14248,17 +14238,11 @@ export default [
     "c": "CPUCooler",
     "n": "ARCTIC Liquid Freezer III Pro 420 A-RGB - AIO CPU Cooler, 3 x 140 mm Water Cooling, 38 mm Radiator, PWM Pump, VRM Fan, AMD AM5/AM4, Intel LGA1851/1700 Contact Frame - White",
     "b": "Arctic",
-    "pr": 112.99,
+    "pr": 118.99,
     "msrp": 112.99,
     "r": 4.2,
     "img": "https://m.media-amazon.com/images/I/618JegaRw5L._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "asin": "B0DPHS13XW",
-        "url": "https://www.amazon.com/dp/B0DPHS13XW?tag=tiereduptech-20",
-        "price": 93.99,
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIA2W0KHX4823",
         "price": 118.99,
@@ -14284,28 +14268,27 @@ export default [
       "LGA1851"
     ],
     "airflow": 110,
-    "rpm": 2500,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28",
-    "reviewFlags": [
-      "relink:mismatch"
-    ]
+    "rpm": 2500
   },
   {
     "id": 100371,
     "c": "CPUCooler",
     "n": "ARCTIC Liquid Freezer WS360-SP6: Workstation AIO Liquid Cooler, AMD SP6/sTR5, 3 x P12 Pro CO Fans, Dual Ball Bearing, High Static Pressure, 360 mm Thick Radiator, PWM Pump, Fixed mounting",
     "b": "Arctic",
-    "pr": 109.99,
+    "pr": 145.56,
     "msrp": 109.99,
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/611LZ8fzfVL._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "asin": "B0FVXP5JPK",
-        "url": "https://www.amazon.com/dp/B0FVXP5JPK?tag=tiereduptech-20",
-        "price": 96.79,
-        "inStock": true
+      "newegg": {
+        "sku": "9SIAMG8KWD0112",
+        "price": 145.56,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838309151060003193009&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00091%3Fitem%3D9SIAMG8KWD0112",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C3SYD2604150QA0JQ50.jpg",
+        "sellerClass": "marketplace",
+        "matchedAt": "2026-07-28",
+        "matchMethod": "name",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -14318,12 +14301,7 @@ export default [
     "sockets": [
       "sTR5"
     ],
-    "rpm": 1600,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28",
-    "reviewFlags": [
-      "relink:mismatch"
-    ]
+    "rpm": 1600
   },
   {
     "id": 100372,

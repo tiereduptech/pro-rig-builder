@@ -5451,7 +5451,12 @@ export default [
     "baseClock": 2100,
     "memType": "DDR4",
     "igpu": true,
-    "bundle": true
+    "bundle": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "prebuilt-system"
+    ]
   },
   {
     "id": 10187,
@@ -7227,7 +7232,10 @@ export default [
     "addedAt": "2026-05-15T14:34:31.770Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "prebuilt-system"
+    ]
   },
   {
     "id": 100597,
@@ -7428,7 +7436,12 @@ export default [
     "source": "amazon-discovery",
     "socket": "LGA1700",
     "igpu": true,
-    "bench": 22
+    "bench": 22,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "prebuilt-system"
+    ]
   },
   {
     "id": 100605,
@@ -7866,7 +7879,12 @@ export default [
     "socket": "LGA1700",
     "boostClock": 4.6,
     "igpu": true,
-    "bench": 34
+    "bench": 34,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "prebuilt-system"
+    ]
   },
   {
     "id": 100622,
@@ -7890,7 +7908,12 @@ export default [
     "cores": 10,
     "socket": "LGA1700",
     "igpu": true,
-    "bench": 34
+    "bench": 34,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "prebuilt-system"
+    ]
   },
   {
     "id": 100623,
@@ -7914,7 +7937,12 @@ export default [
     "cores": 10,
     "socket": "LGA1700",
     "igpu": true,
-    "bench": 34
+    "bench": 34,
+    "needsReview": true,
+    "quarantinedAt": "2026-07-28",
+    "reviewFlags": [
+      "prebuilt-system"
+    ]
   },
   {
     "id": 100624,

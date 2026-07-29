@@ -31,7 +31,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/61fUMcLzmgL._AC_SY300_SX300_QL70_FMwebp_.jpg",
     "c": "OS",
     "b": "Microsoft",
-    "pr": 139,
+    "pr": 134.99,
     "msrp": 160,
     "r": 4.4,
     "reviews": 1167,
@@ -41,17 +41,12 @@ export default [
     "edition": "Home",
     "licenseType": "Retail",
     "deals": {
-      "amazon": {
-        "price": 139,
-        "url": "https://www.amazon.com/dp/B09V6R9QZZ?tag=tiereduptech-20",
+      "bestbuy": {
+        "price": 134.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6499300&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmicrosoft-windows-11-home-usb-flash-drive-physical-english%2FJ3ZKK5V4QQ&intsrc=APIG_28060",
         "inStock": true
       }
-    },
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27",
-    "reviewFlags": [
-      "relink:mismatch"
-    ]
+    }
   },
   {
     "id": 99005,

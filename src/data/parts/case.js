@@ -17889,10 +17889,9 @@ export default [
     "r": 4.8,
     "img": "https://m.media-amazon.com/images/I/61qXVfHQBAL._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "asin": "B0DQPNLC65",
-        "url": "https://www.amazon.com/dp/B0DQPNLC65?tag=tiereduptech-20",
-        "price": 80.09,
+      "bestbuy": {
+        "price": 59.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629604&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-h3-flow-micro-atx-high-airflow-pc-case-white%2FJ3GWJHQ84R&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -17902,12 +17901,7 @@ export default [
       "ATX",
       "mATX"
     ],
-    "maxGPU": 120,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-29",
-    "reviewFlags": [
-      "relink:mismatch"
-    ]
+    "maxGPU": 120
   },
   {
     "id": 100875,

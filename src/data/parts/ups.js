@@ -2,6 +2,48 @@
 // One file per category so Vite can split parts data into per-category chunks.
 export default [
   {
+    "id": 101201,
+    "c": "UPS",
+    "n": "CyberPower CP1500AVRLCD3 Intelligent LCD UPS Battery Backup and Surge Protector, 1500VA/900W, 12 Outlets, 2 USB Ports, AVR, Mini Tower, UL Certified",
+    "b": "Intel",
+    "pr": 199.95,
+    "msrp": 199.95,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71TRxMH7XWL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BCMLLSHL",
+        "url": "https://www.amazon.com/dp/B0BCMLLSHL?tag=tiereduptech-20",
+        "price": 199.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:31:54.658Z",
+    "source": "amazon-discovery",
+    "watts": 900
+  },
+  {
+    "id": 101349,
+    "c": "UPS",
+    "n": "CyberPower CP1500AVRLCD3 Intelligent LCD UPS Battery Backup and Surge Protector, 1500VA/900W, 12 Outlets, 2 USB Ports, AVR, Mini Tower, UL Certified",
+    "b": "Intel",
+    "pr": 199.95,
+    "msrp": 199.95,
+    "r": 4.5,
+    "img": "https://m.media-amazon.com/images/I/71TRxMH7XWL._AC_UL640_QL65_.jpg",
+    "deals": {
+      "amazon": {
+        "asin": "B0BCMLLSHL",
+        "url": "https://www.amazon.com/dp/B0BCMLLSHL?tag=tiereduptech-20",
+        "price": 199.95,
+        "inStock": true
+      }
+    },
+    "addedAt": "2026-05-15T16:39:25.982Z",
+    "source": "amazon-discovery",
+    "watts": 900
+  },
+  {
     "id": 99930,
     "n": "CyberPower CP1500PFCLCD 1500VA UPS",
     "img": "https://m.media-amazon.com/images/I/61DfLRc3HjL._AC_SL300_.jpg",

@@ -2303,20 +2303,14 @@ export default [
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/71+UaxBYWpL._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "asin": "B09KXBJS7N",
-        "url": "https://www.amazon.com/dp/B09KXBJS7N?tag=tiereduptech-20",
-        "price": 26.99,
+      "bestbuy": {
+        "price": 29.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6491145&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flogitech-signature-m650-wireless-optical-mouse-with-silent-clicks-wireless-rose%2FJ7H7ZY3W3K&intsrc=APIG_28060",
         "inStock": true
       }
     },
     "addedAt": "2026-05-15T16:31:54.595Z",
-    "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27",
-    "reviewFlags": [
-      "relink:mismatch"
-    ]
+    "source": "amazon-discovery"
   },
   {
     "id": 101156,
@@ -2553,20 +2547,14 @@ export default [
     "r": 4.7,
     "img": "https://m.media-amazon.com/images/I/71+UaxBYWpL._AC_UY218_.jpg",
     "deals": {
-      "amazon": {
-        "asin": "B09KXBJS7N",
-        "url": "https://www.amazon.com/dp/B09KXBJS7N?tag=tiereduptech-20",
-        "price": 26.99,
+      "bestbuy": {
+        "price": 29.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6491145&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flogitech-signature-m650-wireless-optical-mouse-with-silent-clicks-wireless-rose%2FJ7H7ZY3W3K&intsrc=APIG_28060",
         "inStock": true
       }
     },
     "addedAt": "2026-05-15T16:39:25.918Z",
-    "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27",
-    "reviewFlags": [
-      "relink:mismatch"
-    ]
+    "source": "amazon-discovery"
   },
   {
     "id": 101304,
