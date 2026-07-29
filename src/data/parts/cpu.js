@@ -6453,7 +6453,8 @@ export default [
     "igpu": true,
     "bench": 23,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100326,
@@ -6552,7 +6553,8 @@ export default [
     "igpu": true,
     "bench": 12,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100330,
@@ -6606,7 +6608,8 @@ export default [
     "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "cpu_ff:server_hedt_socket"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100332,
@@ -7105,7 +7108,8 @@ export default [
     "tdp": 65,
     "bench": 23,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100591,
@@ -7150,7 +7154,8 @@ export default [
     "quarantinedAt": "2026-06-28",
     "reviewFlags": [
       "cpu_price:below_floor(18$)"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100593,
@@ -7235,7 +7240,8 @@ export default [
     "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "prebuilt-system"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100597,
@@ -7264,7 +7270,8 @@ export default [
     "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "cpu_price:below_floor(14.99$)"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100598,
@@ -7516,7 +7523,8 @@ export default [
     "igpu": true,
     "bench": 12,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100608,
@@ -7561,7 +7569,8 @@ export default [
     "igpu": true,
     "bench": 5,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100610,
@@ -7971,7 +7980,8 @@ export default [
     "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "cpu_ff:server_hedt_socket"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100625,
@@ -7993,7 +8003,8 @@ export default [
     "quarantinedAt": "2026-06-28",
     "reviewFlags": [
       "cpu_ff:server_hedt_socket"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100626,
@@ -8044,7 +8055,8 @@ export default [
     "quarantinedAt": "2026-06-28",
     "reviewFlags": [
       "cpu_ff:server_hedt_name"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100628,
@@ -8066,7 +8078,8 @@ export default [
     "quarantinedAt": "2026-06-28",
     "reviewFlags": [
       "cpu_ff:server_hedt_socket"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100629,
@@ -8086,7 +8099,8 @@ export default [
     "quarantinedAt": "2026-06-28",
     "reviewFlags": [
       "cpu_ff:server_hedt_socket"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100630,
@@ -8193,7 +8207,8 @@ export default [
     "quarantinedAt": "2026-06-28",
     "reviewFlags": [
       "cpu_ff:server_hedt_socket"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100634,
@@ -8254,7 +8269,8 @@ export default [
     "quarantinedAt": "2026-06-28",
     "reviewFlags": [
       "cpu_ff:server_hedt_socket"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100637,
@@ -8275,7 +8291,8 @@ export default [
     "quarantinedAt": "2026-06-28",
     "reviewFlags": [
       "cpu_ff:server_hedt_socket"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100638,
@@ -8296,7 +8313,8 @@ export default [
     "quarantinedAt": "2026-06-28",
     "reviewFlags": [
       "cpu_ff:server_hedt_socket"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100639,

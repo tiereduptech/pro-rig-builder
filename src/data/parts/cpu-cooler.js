@@ -10241,7 +10241,8 @@ export default [
     "needsReview": true,
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 80226,
@@ -14368,7 +14369,8 @@ export default [
     "noise": 37,
     "rpm": 2000,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100377,
@@ -14398,7 +14400,8 @@ export default [
     "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100578,

@@ -2752,7 +2752,8 @@ export default [
     "depth": 160,
     "atx3": true,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "condition": "refurbished"
   },
   {
     "id": 60071,
@@ -8073,7 +8074,8 @@ export default [
     "ff": "ATX",
     "eff": "80+ Gold",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100486,
@@ -8101,7 +8103,8 @@ export default [
     "quarantinedAt": "2026-07-29",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100487,
@@ -8205,7 +8208,8 @@ export default [
     "eff": "80+ Gold",
     "addedAt": "2026-05-15T13:17:14.418Z",
     "source": "amazon-discovery",
-    "modular": "Full"
+    "modular": "Full",
+    "condition": "refurbished"
   },
   {
     "id": 100491,

@@ -882,7 +882,8 @@ export default [
     "addedAt": "2026-05-15T16:31:54.654Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101191,
@@ -1037,7 +1038,8 @@ export default [
     "addedAt": "2026-05-15T16:39:25.977Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101339,
@@ -1277,7 +1279,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.659Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101853,

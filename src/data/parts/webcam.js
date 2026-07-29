@@ -841,7 +841,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.652Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101838,
@@ -926,7 +927,8 @@ export default [
     "quarantinedAt": "2026-07-20",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 101842,

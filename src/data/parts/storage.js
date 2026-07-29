@@ -6676,7 +6676,8 @@ export default [
     "value": 76,
     "bench": 15,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 50168,
@@ -6835,7 +6836,8 @@ export default [
     "value": 65,
     "bench": 13,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 50172,
@@ -8988,7 +8990,8 @@ export default [
     "value": 76,
     "bench": 13,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 50222,
@@ -12947,7 +12950,8 @@ export default [
     "bench": 13,
     "formFactor": "3.5\"",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 50320,
@@ -14537,7 +14541,8 @@ export default [
     "bench": 10,
     "formFactor": "3.5\"",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 50358,
@@ -14651,7 +14656,8 @@ export default [
     "interface": "SATA",
     "formFactor": "3.5\"",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 50361,
@@ -15179,7 +15185,8 @@ export default [
     "bench": 10,
     "formFactor": "3.5\"",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 50376,
@@ -15461,7 +15468,8 @@ export default [
     "bench": 15,
     "formFactor": "3.5\"",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 50384,
@@ -15970,7 +15978,8 @@ export default [
     "bench": 10,
     "formFactor": "2.5\"",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 50397,
@@ -17108,7 +17117,8 @@ export default [
     "value": 2,
     "bench": 15,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 50424,
@@ -17527,7 +17537,8 @@ export default [
     "bench": 10,
     "formFactor": "3.5\"",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 50434,
@@ -18467,7 +18478,8 @@ export default [
     "bench": 15,
     "formFactor": "3.5\"",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 50457,
@@ -22125,7 +22137,8 @@ export default [
     "source": "amazon-discovery",
     "interface": "NVMe",
     "ff": "M.2 2280",
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "condition": "refurbished"
   },
   {
     "id": 100517,
@@ -22389,7 +22402,8 @@ export default [
     "quarantinedAt": "2026-07-23",
     "reviewFlags": [
       "storage_brand:AMD"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100526,
@@ -22441,7 +22455,8 @@ export default [
     "quarantinedAt": "2026-07-29",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100528,
@@ -22742,7 +22757,8 @@ export default [
     "formFactor": "3.5\"",
     "bestbuyRemovedComp": "2026-06-28",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100804,
@@ -23639,7 +23655,8 @@ export default [
     "storageType": "HDD",
     "interface": "SATA",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100841,
@@ -23661,7 +23678,8 @@ export default [
     "quarantinedAt": "2026-06-28",
     "reviewFlags": [
       "storage_ff:enterprise_sas"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100842,
@@ -23709,7 +23727,8 @@ export default [
     "cap": 16000,
     "storageType": "HDD",
     "interface": "SATA",
-    "rpm": 7200
+    "rpm": 7200,
+    "condition": "refurbished"
   },
   {
     "id": 100844,
@@ -23806,7 +23825,8 @@ export default [
     "quarantinedAt": "2026-06-28",
     "reviewFlags": [
       "storage_brand:AMD"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100849,
@@ -23920,7 +23940,8 @@ export default [
     "interface": "SATA",
     "ff": "3.5\"",
     "formFactor": "3.5\"",
-    "rpm": 7200
+    "rpm": 7200,
+    "condition": "refurbished"
   },
   {
     "id": 100853,
@@ -23988,7 +24009,8 @@ export default [
     "interface": "SATA",
     "formFactor": "3.5\"",
     "needsReview": true,
-    "quarantinedAt": "2026-07-29"
+    "quarantinedAt": "2026-07-29",
+    "condition": "refurbished"
   },
   {
     "id": 100855,
@@ -24008,7 +24030,8 @@ export default [
     "formFactor": "3.5\"",
     "rpm": 7200,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100856,
@@ -24029,7 +24052,8 @@ export default [
     "formFactor": "3.5\"",
     "rpm": 7200,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100857,
@@ -24075,7 +24099,8 @@ export default [
     "formFactor": "3.5\"",
     "rpm": 7200,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100860,
@@ -24095,7 +24120,8 @@ export default [
     "formFactor": "3.5\"",
     "rpm": 7200,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100861,
@@ -24119,7 +24145,8 @@ export default [
     "storageType": "HDD",
     "interface": "SATA",
     "ff": "3.5\"",
-    "formFactor": "3.5\""
+    "formFactor": "3.5\"",
+    "condition": "refurbished"
   },
   {
     "id": 100862,
@@ -24139,7 +24166,8 @@ export default [
     "ff": "3.5\"",
     "formFactor": "3.5\"",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100863,
@@ -24169,7 +24197,8 @@ export default [
     "quarantinedAt": "2026-07-29",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100864,

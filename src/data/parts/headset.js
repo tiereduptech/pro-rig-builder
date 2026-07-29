@@ -15,7 +15,8 @@ export default [
     "source": "amazon-discovery",
     "bench": 33,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101388,
@@ -31,7 +32,8 @@ export default [
     "source": "amazon-discovery",
     "bench": 33,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101909,
@@ -47,7 +49,8 @@ export default [
     "source": "amazon-discovery",
     "bench": 33,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 97001,
@@ -2068,7 +2071,8 @@ export default [
     "addedAt": "2026-05-15T16:31:54.625Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101175,
@@ -2203,7 +2207,8 @@ export default [
     "addedAt": "2026-05-15T16:39:25.947Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101323,
@@ -2518,7 +2523,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.627Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101634,
@@ -2553,7 +2559,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.627Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101636,
@@ -2608,7 +2615,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.627Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101639,
@@ -2623,7 +2631,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.627Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101640,
@@ -2638,7 +2647,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.627Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101641,
@@ -2653,7 +2663,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.627Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101642,
@@ -2668,7 +2679,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.627Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101643,
@@ -2683,7 +2695,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.627Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101644,
@@ -2698,7 +2711,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.627Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101646,
@@ -2733,7 +2747,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.627Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101649,
@@ -2813,7 +2828,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.628Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101653,
@@ -2828,7 +2844,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.628Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101654,
@@ -2923,7 +2940,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.629Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101659,
@@ -2948,7 +2966,8 @@ export default [
     "quarantinedAt": "2026-07-27",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 101660,
@@ -2963,7 +2982,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.629Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101661,
@@ -3003,7 +3023,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.630Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101663,
@@ -3028,7 +3049,8 @@ export default [
     "quarantinedAt": "2026-07-27",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 101664,
@@ -3063,7 +3085,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.630Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101666,
@@ -3088,7 +3111,8 @@ export default [
     "quarantinedAt": "2026-07-27",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 101667,
@@ -3103,7 +3127,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.630Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101668,
@@ -3118,7 +3143,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.630Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101670,
@@ -3133,7 +3159,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.630Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101671,
@@ -3188,7 +3215,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.631Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101676,
@@ -3223,7 +3251,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.631Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101678,
@@ -3258,7 +3287,8 @@ export default [
     "addedAt": "2026-05-15T17:05:43.631Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101680,

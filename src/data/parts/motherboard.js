@@ -19906,7 +19906,8 @@ export default [
     "memType": "DDR5",
     "wifi": "WiFi 6E",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100382,
@@ -20493,7 +20494,8 @@ export default [
     "memType": "DDR4",
     "wifi": "WiFi",
     "needsReview": true,
-    "quarantinedAt": "2026-07-07"
+    "quarantinedAt": "2026-07-07",
+    "condition": "refurbished"
   },
   {
     "id": 100737,
@@ -20522,7 +20524,8 @@ export default [
     "needsReview": true,
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100738,

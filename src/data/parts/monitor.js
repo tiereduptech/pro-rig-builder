@@ -12773,7 +12773,8 @@ export default [
     "refresh": 60,
     "screenSize": 32,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101006,
@@ -13321,7 +13322,8 @@ export default [
     "resolution": "1440p",
     "refresh": 165,
     "curved": true,
-    "screenSize": 32
+    "screenSize": 32,
+    "condition": "refurbished"
   },
   {
     "id": 101029,

@@ -7826,7 +7826,8 @@ export default [
     "baseClock": 2235,
     "boostClock": 2520,
     "pcie": "4.0 x16",
-    "slots": 3
+    "slots": 3,
+    "condition": "refurbished"
   },
   {
     "id": 30218,
@@ -13369,7 +13370,8 @@ export default [
     "bench": 75,
     "slots": 2.5,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100410,
@@ -13387,7 +13389,8 @@ export default [
     "memType": "GDDR7",
     "bench": 87,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100411,
@@ -13477,7 +13480,8 @@ export default [
     "bench": 56,
     "slots": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100415,
@@ -13589,7 +13593,8 @@ export default [
     "memType": "GDDR7",
     "bench": 61,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100420,
@@ -13617,7 +13622,8 @@ export default [
     "needsReview": true,
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100421,
@@ -13692,7 +13698,8 @@ export default [
     "quarantinedAt": "2026-07-29",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100424,
@@ -14066,7 +14073,8 @@ export default [
     "bench": 76,
     "memType": "GDDR6X",
     "needsReview": true,
-    "quarantinedAt": "2026-07-29"
+    "quarantinedAt": "2026-07-29",
+    "condition": "refurbished"
   },
   {
     "id": 100440,
@@ -14380,7 +14388,8 @@ export default [
     "quarantinedAt": "2026-07-19",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100654,
@@ -14441,7 +14450,8 @@ export default [
     "bench": 54,
     "slots": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100657,
@@ -14489,7 +14499,8 @@ export default [
     "memType": "GDDR6",
     "bench": 53,
     "needsReview": true,
-    "quarantinedAt": "2026-07-29"
+    "quarantinedAt": "2026-07-29",
+    "condition": "refurbished"
   },
   {
     "id": 100659,
@@ -14507,7 +14518,8 @@ export default [
     "vram": 6,
     "memType": "GDDR6",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100660,
@@ -14525,7 +14537,8 @@ export default [
     "memType": "GDDR6",
     "bench": 33,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100661,
@@ -14612,7 +14625,8 @@ export default [
     "vram": 6,
     "memType": "GDDR6",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100665,
@@ -14635,7 +14649,8 @@ export default [
     "source": "amazon-discovery",
     "bench": 31,
     "vram": 6,
-    "memType": "GDDR5"
+    "memType": "GDDR5",
+    "condition": "refurbished"
   },
   {
     "id": 100666,
@@ -14663,7 +14678,8 @@ export default [
     "quarantinedAt": "2026-07-29",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100667,
@@ -14681,7 +14697,8 @@ export default [
     "memType": "GDDR6",
     "bench": 40,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100668,
@@ -14745,7 +14762,8 @@ export default [
     "memType": "GDDR6",
     "bench": 40,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100671,
@@ -14888,7 +14906,8 @@ export default [
     "quarantinedAt": "2026-07-29",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100677,
@@ -14911,7 +14930,8 @@ export default [
     "source": "amazon-discovery",
     "vram": 12,
     "memType": "GDDR6",
-    "bench": 52
+    "bench": 52,
+    "condition": "refurbished"
   },
   {
     "id": 100678,
@@ -14962,7 +14982,8 @@ export default [
     "needsReview": true,
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "condition": "refurbished"
   },
   {
     "id": 100680,
@@ -14985,7 +15006,8 @@ export default [
     "source": "amazon-discovery",
     "vram": 12,
     "memType": "GDDR6",
-    "bench": 52
+    "bench": 52,
+    "condition": "refurbished"
   },
   {
     "id": 100681,
@@ -15003,7 +15025,8 @@ export default [
     "memType": "GDDR6",
     "bench": 52,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100682,
@@ -15269,7 +15292,8 @@ export default [
     "memType": "GDDR6",
     "bench": 58,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100694,
@@ -15287,7 +15311,8 @@ export default [
     "memType": "GDDR6",
     "bench": 58,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100695,
@@ -15328,7 +15353,8 @@ export default [
     "memType": "GDDR6",
     "bench": 58,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100697,
@@ -15374,7 +15400,8 @@ export default [
     "source": "amazon-discovery",
     "vram": 16,
     "memType": "GDDR6",
-    "bench": 66
+    "bench": 66,
+    "condition": "refurbished"
   },
   {
     "id": 100699,
@@ -15415,7 +15442,8 @@ export default [
     "memType": "GDDR6",
     "bench": 58,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100701,
@@ -15456,7 +15484,8 @@ export default [
     "memType": "GDDR6",
     "bench": 58,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 100703,
@@ -15600,7 +15629,8 @@ export default [
     "vram": 8,
     "memType": "GDDR6",
     "bench": 52,
-    "slots": 2
+    "slots": 2,
+    "condition": "refurbished"
   },
   {
     "id": 100709,
@@ -15641,7 +15671,8 @@ export default [
     "source": "amazon-discovery",
     "vram": 8,
     "memType": "GDDR6",
-    "bench": 61
+    "bench": 61,
+    "condition": "refurbished"
   },
   {
     "id": 100711,
@@ -15735,7 +15766,8 @@ export default [
     "source": "amazon-discovery",
     "bench": 90,
     "vram": 16,
-    "memType": "GDDR6X"
+    "memType": "GDDR6X",
+    "condition": "refurbished"
   },
   {
     "id": 100715,

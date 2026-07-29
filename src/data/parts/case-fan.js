@@ -12781,7 +12781,8 @@ export default [
     "fanSize": 120,
     "rgb": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "condition": "refurbished"
   },
   {
     "id": 101139,
