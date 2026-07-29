@@ -2066,7 +2066,7 @@ export default [
       "amazon": {
         "asin": "B0FPMV26N7",
         "url": "https://www.amazon.com/dp/B0FPMV26N7?tag=tiereduptech-20",
-        "price": 99.99,
+        "price": 89,
         "inStock": true
       }
     },

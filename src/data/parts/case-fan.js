@@ -6852,7 +6852,7 @@ export default [
     "reviews": 511,
     "deals": {
       "amazon": {
-        "price": 14.99,
+        "price": 29.99,
         "url": "https://www.amazon.com/dp/B0955WB2KL?tag=tiereduptech-20",
         "inStock": true
       }
