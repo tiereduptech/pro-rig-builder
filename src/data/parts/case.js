@@ -17901,7 +17901,10 @@ export default [
       "ATX",
       "mATX"
     ],
-    "maxGPU": 120
+    "maxGPU": 120,
+    "linkVerifiedAt": "2026-07-29",
+    "linkVerifiedSource": "verified",
+    "linkVerifiedBy": "coby"
   },
   {
     "id": 100875,

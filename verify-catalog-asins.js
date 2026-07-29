@@ -28,7 +28,8 @@ import { selectNewOffer, lowestAnyConditionPrice, amazonPriceSanity } from './am
 // The price-drift gate lives in ONE place. Threshold, titleMatches, and
 // analyzeResult are imported — never re-declared here (see drift-gate.js).
 import { STORAGE_CATS, titleMatches, analyzeResult,
-         driftGateStaleness, DRIFT_GRADED_TYPES, DRIFT_FLAGGED_TYPES } from './drift-gate.js';
+         driftGateStaleness, DRIFT_GRADED_TYPES, DRIFT_FLAGGED_TYPES,
+         linkVerificationCurrent, lastDealChangedAt, stampDealChange } from './drift-gate.js';
 
 const LOGIN = process.env.DATAFORSEO_LOGIN;
 const PASSWORD = process.env.DATAFORSEO_PASSWORD;
@@ -158,7 +159,19 @@ function saveCatalog(parts) {
 }
 function selectProducts(parts, tier) {
   const cats = tier === 'all' ? Object.values(TIERS).flat() : (TIERS[tier] || []);
-  const products = parts.filter(p => cats.includes(p.c) && extractASIN(p.deals?.amazon?.url) && !EXCLUDE_IDS.has(p.id));
+  const candidates = parts.filter(p => cats.includes(p.c) && extractASIN(p.deals?.amazon?.url) && !EXCLUDE_IDS.has(p.id));
+  // Skip rows a human verified whose deal has NOT changed since (see
+  // linkVerificationCurrent in drift-gate.js — it invalidates the moment the deal's
+  // link identity changes, so this is not a permanent bypass). REPORT-ONLY, never
+  // silent: an over-used or stuck marker must be visible, not quietly shrink coverage.
+  const skipped = candidates.filter(linkVerificationCurrent);
+  if (skipped.length) {
+    console.log(`\nLink-verified skip: ${skipped.length} row(s) (human-verified, deal unchanged since verification):`);
+    for (const p of skipped) {
+      console.log(`  #${p.id}  linkVerifiedAt=${p.linkVerifiedAt}  dealChanged<=${lastDealChangedAt(p)}  "${(p.n || '').slice(0, 48)}"`);
+    }
+  }
+  const products = candidates.filter(p => !linkVerificationCurrent(p));
   return flags.limit ? products.slice(0, flags.limit) : products;
 }
 
@@ -290,6 +303,9 @@ function applyFixes(parts, perProductFixes) {
     if (fix.newAsinUrl) {
       p.deals.amazon.url = fix.newAsinUrl;
       if (fix.newAsinPrice != null) p.deals.amazon.price = fix.newAsinPrice;
+      // The link identity changed → invalidate any prior human link verification, so
+      // a swapped ASIN goes back through the gate instead of riding a stale marker.
+      stampDealChange(p, new Date().toISOString().slice(0, 10));
       productChanged = true;
     }
     if (fix.needsReview) {

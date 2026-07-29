@@ -44,6 +44,73 @@ export const DRIFT_STALE_FAILURE_RATE = 0.30;     // > this share of a category 
 // review. Governs WHETHER WE REFRESH the stored price only — never quarantine.
 export const PRICE_REFRESH_MIN = 0.05;
 
+// ── Link-verification marker (mirrors asin-overrides "source: verified" / verifiedAt) ──
+//
+// A human-verified deal LINK carries `linkVerifiedAt` (YYYY-MM-DD) and, by the
+// asin-overrides vocabulary, `linkVerifiedSource: 'verified'`. The nightly SKIPS
+// re-verifying such a row — but ONLY while the verification is still current.
+//
+// CURRENCY RULE (the whole point): the marker INVALIDATES the moment the deal's
+// link identity changes. It is compared against lastDealChangedAt(), never trusted
+// as a bare boolean — a hand-verified row whose ASIN is later swapped by an ingest
+// goes straight back through the gate. And a marker with NO deal-change baseline to
+// compare against is NOT honored (re-verify), so it can never become a permanent
+// bypass that hides later corruption forever.
+export const LINK_VERIFIED_SOURCE = 'verified';
+
+// Most-recent date this row's deal LINK identity (ASIN / URL / SKU / vendor) last
+// changed, from every signal we keep: the canonical `dealChangedAt` an ingest stamps
+// on a swap, the newegg feed's matchedAt / rematchedAt, and the row's creation stamps
+// (addedAt / discoveredAt). Returns a YYYY-MM-DD string, or null if nothing is known.
+// Lexical comparison of YYYY-MM-DD equals chronological order, so a plain max works.
+export function lastDealChangedAt(product) {
+  const p = product || {};
+  const dates = [];
+  const push = v => { if (v) dates.push(String(v).slice(0, 10)); };
+  push(p.dealChangedAt);
+  for (const d of Object.values(p.deals || {})) {
+    if (!d) continue;
+    push(d.linkedAt); push(d.matchedAt); push(d.rematchedAt);
+  }
+  push(p.addedAt); push(p.discoveredAt);
+  return dates.length ? dates.sort().pop() : null;
+}
+
+// Is this row's link verification still valid RIGHT NOW? Requires a marker AND a
+// known deal-change baseline AND the marker to be at least as new as that baseline
+// (day granularity, matching asin-overrides' date-only verifiedAt). No baseline →
+// not current: we cannot prove the deal is unchanged since verification, so we never
+// blindly trust it.
+export function linkVerificationCurrent(product) {
+  const p = product || {};
+  if (!p.linkVerifiedAt) return false;
+  const changed = lastDealChangedAt(p);
+  if (!changed) return false;
+  return String(p.linkVerifiedAt).slice(0, 10) >= changed;
+}
+
+// Stamp a deal-identity change. Every ingest that swaps an ASIN / URL / SKU / vendor
+// MUST call this so any prior linkVerifiedAt goes stale on the next gate pass.
+export function stampDealChange(product, isoDate) {
+  if (!product) return product;
+  const day = String(isoDate || '').slice(0, 10);
+  if (day) product.dealChangedAt = day;
+  return product;
+}
+
+// Record a human link verification. Sets the marker AND guarantees a deal-change
+// baseline exists (so the marker is comparable, never a bare boolean). Vocabulary
+// mirrors asin-overrides: source 'verified' + a date.
+export function markLinkVerified(product, { at, by } = {}) {
+  if (!product) return product;
+  const day = String(at || '').slice(0, 10);
+  product.linkVerifiedAt = day;
+  product.linkVerifiedSource = LINK_VERIFIED_SOURCE;
+  if (by) product.linkVerifiedBy = by;
+  if (!lastDealChangedAt(product)) product.dealChangedAt = day;
+  return product;
+}
+
 export function normalize(s) {
   return String(s || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
 }

@@ -8393,7 +8393,10 @@ export default [
     "source": "amazon-discovery",
     "watts": 500,
     "modular": "Full",
-    "ff": "Flex ATX"
+    "ff": "Flex ATX",
+    "linkVerifiedAt": "2026-07-29",
+    "linkVerifiedSource": "verified",
+    "linkVerifiedBy": "coby"
   },
   {
     "id": 100549,
