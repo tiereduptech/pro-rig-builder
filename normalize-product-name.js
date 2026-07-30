@@ -250,7 +250,7 @@ export const CEILINGS_LAST_REVIEWED = {
   RAM:     '2026-07-27',   // DRAM shortage recalibration (47-SKU live audit)
   CPU:     '2026-07-28',   // absolute TOTAL band added
   Storage: '2026-07-30',   // NeweggBusiness re-verify amid 2026 NAND shortage — bounds confirmed, unchanged
-  PSU:     '2026-07-27',   // pending re-verify in this PSU discovery pass
+  PSU:     '2026-07-30',   // NeweggBusiness re-verify: 850 Gold 0.153/W, 1000 Platinum 0.280/W, 550 Bronze 0.175/W; high ~0.28/W, 0.8 ceiling = 2.9x headroom — confirmed, unchanged
 };
 export const PRICE_TABLE = {
   RAM: {

@@ -542,6 +542,11 @@ function psuRejectReason(product) {
   if (/\bredundant\b/i.test(t) && /\b(power\s*supply|psu|module|\d\s*\+\s*\d)\b/i.test(t)) return 'server_redundant';
   if (/\bhot[\s-]?swap\b/i.test(t) && /\b(power\s*supply|psu|redundant|crps)\b/i.test(t)) return 'server_redundant';
   if (/\bcrps\b/i.test(t)) return 'server_redundant';
+  // 1U/2U rackmount server PSU — but a consumer SFF PSU (Flex-ATX/SFX/SFF/
+  // Mini-ITX) legitimately advertises "1U" CHASSIS COMPATIBILITY (see the
+  // psu-scope test), so only reject when no consumer SFF form factor is present.
+  if (/\b[12]U\b/.test(t) && !/\b(flex[\s-]?atx|sfx|sff|mini[\s-]?itx)\b/i.test(t)) return 'server_rackmount';
+  if (/\b\d{2,3}\s?VDC\b/i.test(t)) return 'server_dc_module';   // 12/48/54 VDC telecom / network-switch PSU module (not consumer ATX AC)
   return null;
 }
 

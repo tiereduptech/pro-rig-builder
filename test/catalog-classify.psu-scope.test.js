@@ -30,6 +30,15 @@ test('psuRejectReason rejects redundant / hot-swap server supplies', () => {
   }
 });
 
+test('psuRejectReason rejects rackmount 1U/2U + DC-module server PSUs', () => {
+  // genuine rackmount server PSU (no consumer SFF form factor)
+  assert.strictEqual(psuRejectReason('Supermicro PWS-920P-1R 920W 1U Server Power Supply'), 'server_rackmount');
+  assert.strictEqual(psuRejectReason('HP 2U 800W Common Slot Platinum Power Supply'), 'server_rackmount');
+  // real held rows from the PSU dry run: DC-input telecom/network-switch modules
+  assert.strictEqual(psuRejectReason('HPE Aruba X372 54VDC 1600W PS'), 'server_dc_module');
+  assert.strictEqual(psuRejectReason('HP Aruba X371 12VDC 250W 100-240VAC Power Supply (JL085A)'), 'server_dc_module');
+});
+
 test('psuRejectReason keeps real ATX power supplies', () => {
   for (const n of [
     'Corsair RM850e 850W 80 Plus Gold Fully Modular ATX Power Supply',
